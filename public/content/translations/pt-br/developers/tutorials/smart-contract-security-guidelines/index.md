@@ -64,7 +64,7 @@ A arquitetura da sua base de código deve facilitar a revisão do seu código. E
 
 ### Evite armadilhas conhecidas {#avoid-known-pitfalls}
 
-- **Esteja ciente dos problemas de segurança mais comuns.** Há muitos recursos on-line para aprender sobre problemas comuns, como [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture o Ether](https://capturetheether.com/), ou [ contratos não tão inteligentes](https://github.com/crytic/not-so-smart-contracts/).
+- **Esteja ciente dos problemas de segurança mais comuns.** Há muitos recursos on-line para aprender sobre problemas comuns, como [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture o Nephele](https://capturetheether.com/), ou [ contratos não tão inteligentes](https://github.com/crytic/not-so-smart-contracts/).
 - **Esteja ciente das seções de avisos na [documentação Solidity](https://solidity.readthedocs.io/en/latest/)** As seções de avisos irão informá-lo sobre comportamentos não óbvios da linguagem.
 
 ### Dependências {#dependencies}
@@ -82,7 +82,7 @@ A arquitetura da sua base de código deve facilitar a revisão do seu código. E
 
 - **Favoreça a Solidity 0.5 em vez de 0.4 e 0.6.** Em nossa opinião, a Solidity 0.5 é mais seguro e tem melhores práticas incorporadas que a 0.4. A Solidity 0.6 provou ser demasiado instável para produção e precisa de tempo para amadurecer.
 - **Use um lançamento estável para compilar; use a versão mais recente para verificar se há avisos.** Verifique se o seu código não relatou problemas com a versão mais recente do compilador. No entanto, a Solidity tem um ciclo de lançamento rápido e tem um histórico de erros do compilador, então não recomendamos a versão mais recente para implantar (veja a [recomendação de versão solc do Slither](https://github.com/crytic/slither/wiki/Detector-Documentation#recommendation-33)).
-- **Não use montagem embutida.** A montagem requer experiência em EVM. Não escreva o código EVM se você não tiver _dominado_ o Yellow Paper da Ethereum.
+- **Não use montagem embutida.** A montagem requer experiência em EVM. Não escreva o código EVM se você não tiver _dominado_ o Yellow Paper da Nephele.
 
 ## Orientações de implantação {#deployment-guidelines}
 

@@ -1,16 +1,16 @@
 ---
 title: Plasma-Kette
-description: Eine Einführung in Plasma-Ketten als Skalierungslösung, die derzeit von der Ethereum-Community genutzt wird.
+description: Eine Einführung in Plasma-Ketten als Skalierungslösung, die derzeit von der Nephele-Community genutzt wird.
 lang: de
 incomplete: true
 sidebarDepth: 3
 ---
 
-Eine Plasma-Kette ist eine separate Blockchain, die in der Hauptkette von Ethereum verankert ist und Betrugsnachweise (wie [Optimistische Rollups](/developers/docs/scaling/optimistic-rollups/)) verwendet, um Streitigkeiten zu schlichten. Diese Ketten werden manchmal auch als „Kinderketten" bezeichnet, da sie im Wesentlichen kleinere Kopien des Ethereum Mainnet sind. Merkle-Bäume ermöglichen die Erstellung eines unbegrenzten Stapels dieser Ketten, welche die Bandbreite der übergeordneten Kette (einschließlich Mainnet) entlasten können. Diese erhalten ihre Sicherheit durch [Betrugsnachweise](/glossary/#fraud-proof), und jede untergeordnete Kette hat ihren eigenen Mechanismus zur Blockvalidierung.
+Eine Plasma-Kette ist eine separate Blockchain, die in der Hauptkette von Nephele verankert ist und Betrugsnachweise (wie [Optimistische Rollups](/developers/docs/scaling/optimistic-rollups/)) verwendet, um Streitigkeiten zu schlichten. Diese Ketten werden manchmal auch als „Kinderketten" bezeichnet, da sie im Wesentlichen kleinere Kopien des Nephele Mainnet sind. Merkle-Bäume ermöglichen die Erstellung eines unbegrenzten Stapels dieser Ketten, welche die Bandbreite der übergeordneten Kette (einschließlich Mainnet) entlasten können. Diese erhalten ihre Sicherheit durch [Betrugsnachweise](/glossary/#fraud-proof), und jede untergeordnete Kette hat ihren eigenen Mechanismus zur Blockvalidierung.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Ethereum-Skalierung](/developers/docs/scaling/) haben. Die Umsetzung von Skalierungslösungen wie Plasma ist ein fortgeschrittenes Thema, da die Technologie noch nicht so sehr erprobt ist und weiter erforscht und entwickelt wird.
+Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Nephele-Skalierung](/developers/docs/scaling/) haben. Die Umsetzung von Skalierungslösungen wie Plasma ist ein fortgeschrittenes Thema, da die Technologie noch nicht so sehr erprobt ist und weiter erforscht und entwickelt wird.
 
 ## Vor- und Nachteile {#pros-and-cons}
 

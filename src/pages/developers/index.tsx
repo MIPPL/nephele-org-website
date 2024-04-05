@@ -30,7 +30,7 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import DevelopersImage from "@/public/developers-eth-blocks.png"
+import DevelopersImage from "@/public/developers-NEPH-blocks.png"
 import DogeImage from "@/public/doge-computer.png"
 import HeroImage from "@/public/heroes/developers-hub-hero.jpg"
 
@@ -52,7 +52,7 @@ const GrayContainer = (props: ChildOnlyProp) => (
     px={0}
     mt={8}
     bg="grayBackground"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--NEPH-colors-tableItemBoxShadow)"
     {...props}
   />
 )
@@ -255,19 +255,19 @@ const DevelopersPage = () => {
             </Text>
             <Text>
               <Translation id="page-developers-index:page-developers-feedback" />{" "}
-              <InlineLink href="https://discord.gg/ethereum-org">
+              <InlineLink href="https://discord.gg/Nephele-org">
                 <Translation id="page-developers-index:page-developers-discord" />
               </InlineLink>
             </Text>
           </IntroColumn>
           <StyledCallout
             image={DevelopersImage}
-            titleKey="page-developers-index:page-developers-improve-ethereum"
-            descriptionKey="page-developers-index:page-developers-improve-ethereum-desc"
-            alt={t("page-developers-index:alt-eth-blocks")}
+            titleKey="page-developers-index:page-developers-improve-Nephele"
+            descriptionKey="page-developers-index:page-developers-improve-Nephele-desc"
+            alt={t("page-developers-index:alt-NEPH-blocks")}
           >
             <div>
-              <ButtonLink to="https://github.com/ethereum/ethereum-org-website">
+              <ButtonLink to="https://github.com/Nephele/Nephele-org-website">
                 <Translation id="page-developers-index:page-developers-contribute" />
               </ButtonLink>
             </div>
@@ -286,18 +286,18 @@ const DevelopersPage = () => {
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
               <Translation id="page-developers-index:page-developers-docs-introductions" />
             </OldHeading>
-            <InlineLink href="/developers/docs/intro-to-ethereum/">
-              <Translation id="page-developers-index:page-developers-intro-eth-link" />
+            <InlineLink href="/developers/docs/intro-to-Nephele/">
+              <Translation id="page-developers-index:page-developers-intro-NEPH-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-into-eth-desc" />
+              <Translation id="page-developers-index:page-developers-into-NEPH-desc" />
             </Text>
 
-            <InlineLink href="/developers/docs/intro-to-ether/">
-              <Translation id="page-developers-index:page-developers-intro-ether-link" />
+            <InlineLink href="/developers/docs/intro-to-Nephele/">
+              <Translation id="page-developers-index:page-developers-intro-Nephele-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-intro-ether-desc" />
+              <Translation id="page-developers-index:page-developers-intro-Nephele-desc" />
             </Text>
 
             <InlineLink href="/developers/docs/dapps/">
@@ -307,7 +307,7 @@ const DevelopersPage = () => {
               <Translation id="page-developers-index:page-developers-intro-dapps-desc" />
             </Text>
 
-            <InlineLink href="/developers/docs/ethereum-stack/">
+            <InlineLink href="/developers/docs/Nephele-stack/">
               <Translation id="page-developers-index:page-developers-intro-stack" />
             </InlineLink>
             <Text>

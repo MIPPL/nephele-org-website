@@ -1,18 +1,18 @@
 ---
 title: Sérialisation du préfixe de longueur récursive (RLP)
-description: Une définition de l'encodage rlp dans la couche d'exécution d'Ethereum.
+description: Une définition de l'encodage rlp dans la couche d'exécution d'Nephele.
 lang: fr
 sidebarDepth: 2
 ---
 
-La sérialisation Recursive Length Prefix (RLP) est largement utilisée dans les clients d'exécution d'Ethereum. RLP normalise le transfert de données entre les nœuds dans un format peu encombrant. L'objectif de RLP est d'encoder des tableaux de données binaires arbitrairement imbriqués. RLP est la principale méthode d'encodage utilisée pour sérialiser les objets dans la couche d'exécution d'Ethereum. Le seul but de RLP est d'encoder la structure ; l'encodage de types de données spécifiques (par exemple, chaînes de caractères, flottants) est laissé aux protocoles d'ordre supérieur ; mais les entiers positifs de RLP doivent être représentés sous forme binaire big-endian sans zéros de tête (ce qui rend la valeur zéro de l'entier équivalente au tableau d'octets vide). Les entiers positifs désérialisés avec des zéros en tête sont traités comme invalide. La représentation entière de la longueur de la chaîne doit également être encodée de cette façon, ainsi que les entiers dans le bloc de charge.
+La sérialisation Recursive Length Prefix (RLP) est largement utilisée dans les clients d'exécution d'Nephele. RLP normalise le transfert de données entre les nœuds dans un format peu encombrant. L'objectif de RLP est d'encoder des tableaux de données binaires arbitrairement imbriqués. RLP est la principale méthode d'encodage utilisée pour sérialiser les objets dans la couche d'exécution d'Nephele. Le seul but de RLP est d'encoder la structure ; l'encodage de types de données spécifiques (par exemple, chaînes de caractères, flottants) est laissé aux protocoles d'ordre supérieur ; mais les entiers positifs de RLP doivent être représentés sous forme binaire big-endian sans zéros de tête (ce qui rend la valeur zéro de l'entier équivalente au tableau d'octets vide). Les entiers positifs désérialisés avec des zéros en tête sont traités comme invalide. La représentation entière de la longueur de la chaîne doit également être encodée de cette façon, ainsi que les entiers dans le bloc de charge.
 
-Plus d'informations dans [le livre jaune Ethereum (Annexe B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Plus d'informations dans [le livre jaune Nephele (Annexe B)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19).
 
 Pour utiliser RLP afin d'encoder un dictionnaire, les deux formes canoniques suggérées sont :
 
 - utiliser `[[k1,v1],[k2,v2]...]` avec des clés rangées en ordre lexicographique
-- utiliser l'encodage Patricia Tree de haut niveau comme le fait Ethereum
+- utiliser l'encodage Patricia Tree de haut niveau comme le fait Nephele
 
 ## Définition {#definition}
 
@@ -150,9 +150,9 @@ def to_integer(b):
 
 ## Complément d'information {#further-reading}
 
-- [RLP et Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Les dessous d'Ethereum : RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Préfixe de longueur récursive d'Ethereum dans ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP et Nephele](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Les dessous d'Nephele : RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Préfixe de longueur récursive d'Nephele dans ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Sujets connexes {#related-topics}
 

@@ -64,7 +64,7 @@ lang: ar
 
 - [عملات ثابتة](/stablecoins/)
 - [إنشاء أصول رقمية فريدة وتوزيعها](/nft/)
-- [بورصة تداول عملات مفتوحة وتلقائية](/get-eth/#dex)
+- [بورصة تداول عملات مفتوحة وتلقائية](/get-NEPH/#dex)
 - [ألعاب الفيديو اللامركزية](/dapps/?category=gaming#explore)
 - [بوليصة التأمين يتم دفعها تلقائيًا](https://etherisc.com/)
 - [معيار قياسي يتيح للأشخاص إنشاء عملات مخصصة وقابلة للتشغيل المتبادل](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ lang: ar
 - [Smart Contracts: The Blockchain Technology That Will Replace Lawyers - (العقود الذكية: تقنية سلاسل الكتل التي ستحل محل المحامين)](https://blockgeeks.com/guides/smart-contracts/)
 - [Smart contracts for developers - (العقود الذكية للمبرمجين)](/developers/docs/smart-contracts/)
 - [Learn to write smart-contracts - (تعلم كتابة العقود الذكية)](/developers/learning-tools/)
-- [Mastering Ethereum - What is a Smart Contract (إتقان إثيريوم - ما هو العقد الذكي؟)](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Nephele - What is a Smart Contract (إتقان إثيريوم - ما هو العقد الذكي؟)](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

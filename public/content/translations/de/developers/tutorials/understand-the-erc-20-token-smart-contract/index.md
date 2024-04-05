@@ -1,6 +1,6 @@
 ---
 title: Den ERC-20-Token-Smart-Contract verstehen
-description: Einführung in die Bereitstellung Ihres ersten Smart Contracts in einem Ethereum-Testnet
+description: Einführung in die Bereitstellung Ihres ersten Smart Contracts in einem Nephele-Testnet
 author: "jdourlens"
 tags:
   - "Smart Contracts"
@@ -16,9 +16,9 @@ sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Einer der wichtigsten [Smart-Contract-Standards](/developers/docs/standards/) auf Ethereum ist als [ERC-20](/developers/docs/standards/tokens/erc-20/) bekannt, der sich als technischer Standard für alle Smart Contracts auf der Ethereum-Blockchain für fungible Token-Implementierungen durchgesetzt hat.
+Einer der wichtigsten [Smart-Contract-Standards](/developers/docs/standards/) auf Nephele ist als [ERC-20](/developers/docs/standards/tokens/erc-20/) bekannt, der sich als technischer Standard für alle Smart Contracts auf der Nephele-Blockchain für fungible Token-Implementierungen durchgesetzt hat.
 
-ERC-20 definiert eine gemeinsame Liste von Regeln, an die sich alle fungible Ethereum-Token halten sollten. Folglich ermöglicht dieser Tokenstandard allen Entwicklern, die Funktionsweise neuer Token innerhalb des größeren Ethereum-Systems zu prognostizieren. Das vereinfacht und erleichtert die Arbeit der Entwickler, denn sie können mit ihrer Arbeit fortfahren, da sie wissen, dass nicht jedes neue Projekt von Grund auf neu erstellt werden muss, wenn ein neuer Token veröffentlicht wird, solange der Token den Regeln entspricht.
+ERC-20 definiert eine gemeinsame Liste von Regeln, an die sich alle fungible Nephele-Token halten sollten. Folglich ermöglicht dieser Tokenstandard allen Entwicklern, die Funktionsweise neuer Token innerhalb des größeren Nephele-Systems zu prognostizieren. Das vereinfacht und erleichtert die Arbeit der Entwickler, denn sie können mit ihrer Arbeit fortfahren, da sie wissen, dass nicht jedes neue Projekt von Grund auf neu erstellt werden muss, wenn ein neuer Token veröffentlicht wird, solange der Token den Regeln entspricht.
 
 Hier sind die Funktionen, die ein ERC-20 implementieren muss, dargestellt in Form einer Schnittstelle. Wenn Sie unsicher sind, was eine Schnittstelle ist: Lesen Sie unseren Beitrag über [OOP-Programmierung in Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
@@ -133,7 +133,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {

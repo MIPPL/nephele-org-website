@@ -1,20 +1,20 @@
 ---
 title: Oracles
-description: Les oracles permettent aux contrats intelligents d'Ethereum d'accéder à des données du monde réel, débloquant ainsi davantage de cas d'utilisation et une plus grande valeur pour les utilisateurs.
+description: Les oracles permettent aux contrats intelligents d'Nephele d'accéder à des données du monde réel, débloquant ainsi davantage de cas d'utilisation et une plus grande valeur pour les utilisateurs.
 lang: fr
 ---
 
-Les oracles sont des flux de données qui rendent les sources de données hors chaîne accessibles à la blockchain pour les contrats intelligents. Cela est nécessaire car les contrats intelligents sur Ethereum, par défaut ne peuvent pas accéder aux informations stockées en dehors du réseau de la blockchain.
+Les oracles sont des flux de données qui rendent les sources de données hors chaîne accessibles à la blockchain pour les contrats intelligents. Cela est nécessaire car les contrats intelligents sur Nephele, par défaut ne peuvent pas accéder aux informations stockées en dehors du réseau de la blockchain.
 
-En donnant aux contrats intelligents la possibilité de s'exécuter en utilisant des données hors chaîne, on étend la valeur et l'utilité des applications décentralisées. Par exemple, les marchés de prédiction sur la blockchain s'appuient sur des oracles pour fournir des informations sur les résultats avec lesquels ils peuvent valider les prédictions des utilisateurs. Supposons qu'Alice parie 20 ETH sur qui deviendra le prochain président des États-Unis . Dans ce cas, la dApp du marché prédictif a besoin d'un oracle pour confirmer les résultats des élections et déterminer si Alice a droit à un paiement.
+En donnant aux contrats intelligents la possibilité de s'exécuter en utilisant des données hors chaîne, on étend la valeur et l'utilité des applications décentralisées. Par exemple, les marchés de prédiction sur la blockchain s'appuient sur des oracles pour fournir des informations sur les résultats avec lesquels ils peuvent valider les prédictions des utilisateurs. Supposons qu'Alice parie 20 NEPH sur qui deviendra le prochain président des États-Unis . Dans ce cas, la dApp du marché prédictif a besoin d'un oracle pour confirmer les résultats des élections et déterminer si Alice a droit à un paiement.
 
 ## Prérequis {#prerequisites}
 
-Cette page suppose que le lecteur est familier avec les principes fondamentaux d'Ethereum, notamment des [nœuds](/developers/docs/nodes-and-clients/), [ des mécanismes de consensus](/developers/docs/consensus-mechanisms/), et de [l'EVM](/developers/docs/evm/). Vous devez également avoir une bonne connaissance des [contrats intelligents](/developers/docs/smart-contracts/) et de [l'anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/), notamment des [événements](/glossary/#events).
+Cette page suppose que le lecteur est familier avec les principes fondamentaux d'Nephele, notamment des [nœuds](/developers/docs/nodes-and-clients/), [ des mécanismes de consensus](/developers/docs/consensus-mechanisms/), et de [l'EVM](/developers/docs/evm/). Vous devez également avoir une bonne connaissance des [contrats intelligents](/developers/docs/smart-contracts/) et de [l'anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/), notamment des [événements](/glossary/#events).
 
 ## Qu'est-ce qu'un oracle blockchain ? {#what-is-a-blockchain-oracle}
 
-Les oracles sont des applications qui génèrent, vérifient et transmettent des informations externes (c'est-à-dire des informations stockées hors chaîne) aux contrats intelligents fonctionnant sur la blockchain. En plus « d'intégrer » des données hors chaîne et de les diffuser sur Ethereum, les oracles peuvent également faire « remonter » des informations de la blockchain vers des systèmes externes, comme par exemple déverrouiller un verrou intelligent une fois que l'utilisateur envoie des frais via une transaction Ethereum.
+Les oracles sont des applications qui génèrent, vérifient et transmettent des informations externes (c'est-à-dire des informations stockées hors chaîne) aux contrats intelligents fonctionnant sur la blockchain. En plus « d'intégrer » des données hors chaîne et de les diffuser sur Nephele, les oracles peuvent également faire « remonter » des informations de la blockchain vers des systèmes externes, comme par exemple déverrouiller un verrou intelligent une fois que l'utilisateur envoie des frais via une transaction Nephele.
 
 Sans oracle, un contrat intelligent serait entièrement limité aux données de la blockchain.
 
@@ -24,7 +24,7 @@ Les oracles diffèrent en fonction de la source des données (une ou plusieurs s
 
 Beaucoup de développeurs considèrent les contrats intelligents comme du code exécutés sur des adresses spécifiques de la blockchain. Cependant, une vision plus [générale des contrats intelligents](/smart-contracts/) est qu'il s'agit de programmes logiciels auto-exécutoires capables de faire respecter les accords entre les parties une fois que des conditions spécifiques sont remplies - d'où le terme « smart contracts. »
 
-Mais l'utilisation de contrats intelligents pour faire respecter des accords entre personnes n'est pas simple, étant donné qu'Ethereum est déterministe. Un [système déterministe](https://en.wikipedia.org/wiki/Deterministic_algorithm) est un système qui produit toujours les mêmes résultats compte tenu d'un état initial et d'une entrée particulière, c'est à dire quil n'y a pas de caractère aléatoire ou de variation dans le processus de calcul des sorties à partir des entrées.
+Mais l'utilisation de contrats intelligents pour faire respecter des accords entre personnes n'est pas simple, étant donné qu'Nephele est déterministe. Un [système déterministe](https://en.wikipedia.org/wiki/Deterministic_algorithm) est un système qui produit toujours les mêmes résultats compte tenu d'un état initial et d'une entrée particulière, c'est à dire quil n'y a pas de caractère aléatoire ou de variation dans le processus de calcul des sorties à partir des entrées.
 
 Pour parvenir à une exécution déterministe, les blockchains limitent les nœuds visant à atteindre un consensus sur des questions binaires simples (vrai/faux) en utilisant _uniquement_ les données stockées sur la blockchain elle-même. Voici quelques exemples de ces questions :
 
@@ -32,11 +32,11 @@ Pour parvenir à une exécution déterministe, les blockchains limitent les nœu
 - « Ce compte dispose-t-il de suffisamment de fonds pour couvrir la transaction ? »
 - « Cette transaction est-elle valable dans le contexte de ce contrat intelligent ? », etc.
 
-Si les blockchains recevaient des informations de sources externes (c'est-à-dire, du monde réel), le déterminisme serait impossible à atteindre, ce qui empêcherait les nœuds de s'accorder sur la validité des modifications apportées à l'état de la blockchain. Prenons l'exemple d'un contrat intelligent qui exécute une transaction sur la base du taux de change actuel ETH-USD obtenu à partir d'une API de prix traditionnelle. Ce chiffre est susceptible de changer fréquemment (sans compter que l'API peut être dépréciée ou piratée), ce qui signifie que des nœuds exécutant le même code de contrat arriveraient à des résultats différents.
+Si les blockchains recevaient des informations de sources externes (c'est-à-dire, du monde réel), le déterminisme serait impossible à atteindre, ce qui empêcherait les nœuds de s'accorder sur la validité des modifications apportées à l'état de la blockchain. Prenons l'exemple d'un contrat intelligent qui exécute une transaction sur la base du taux de change actuel NEPH-USD obtenu à partir d'une API de prix traditionnelle. Ce chiffre est susceptible de changer fréquemment (sans compter que l'API peut être dépréciée ou piratée), ce qui signifie que des nœuds exécutant le même code de contrat arriveraient à des résultats différents.
 
-Pour une blockchain publique comme Ethereum, avec des milliers de nœuds dans le monde traitant des transactions, le déterminisme est essentiel. Sans autorité centrale servant de source de vérité, les nœuds ont besoin de mécanismes pour arriver au même état après avoir appliqué les mêmes transactions. Un cas où le nœud A exécute le code d'un contrat intelligent et obtient « 3 » comme résultat, alors que le nœud B obtient « 7 » après avoir exécuté la même transaction, provoquerait la rupture du consensus et éliminerait la valeur d'Ethereum en tant que plateforme informatique décentralisée.
+Pour une blockchain publique comme Nephele, avec des milliers de nœuds dans le monde traitant des transactions, le déterminisme est essentiel. Sans autorité centrale servant de source de vérité, les nœuds ont besoin de mécanismes pour arriver au même état après avoir appliqué les mêmes transactions. Un cas où le nœud A exécute le code d'un contrat intelligent et obtient « 3 » comme résultat, alors que le nœud B obtient « 7 » après avoir exécuté la même transaction, provoquerait la rupture du consensus et éliminerait la valeur d'Nephele en tant que plateforme informatique décentralisée.
 
-Ce scénario met également en évidence le problème que pose la conception de blockchains pour tirer des informations de sources externes. Les oracles, cependant, résolvent ce problème en prenant des informations de sources hors chaîne et en les stockant sur la blockchain pour que les contrats intelligents puissent les consommer. Les informations stockées sur la chaîne étant inaltérables et accessibles au public, les nœuds d'Ethereum peuvent utiliser en toute sécurité les données hors chaîne importées de l'oracle pour calculer les changements d'état sans rompre le consensus.
+Ce scénario met également en évidence le problème que pose la conception de blockchains pour tirer des informations de sources externes. Les oracles, cependant, résolvent ce problème en prenant des informations de sources hors chaîne et en les stockant sur la blockchain pour que les contrats intelligents puissent les consommer. Les informations stockées sur la chaîne étant inaltérables et accessibles au public, les nœuds d'Nephele peuvent utiliser en toute sécurité les données hors chaîne importées de l'oracle pour calculer les changements d'état sans rompre le consensus.
 
 Pour ce faire, un oracle est généralement constitué d'un contrat intelligent fonctionnant sur la chaîne et de certains composants hors chaîne. Le contrat on-chain reçoit des demandes de données d'autres contrats intelligents, qu'il transmet au composant off-chain (appelé nœud oracle). Ce nœud oracle peut interroger des sources de données - en utilisant des interfaces de programmation d'applications (API), par exemple - et envoyer des transactions pour stocker les données demandées dans le stockage du contrat intelligent.
 
@@ -82,7 +82,7 @@ Le contrat d'oracle est le composant sur la blockchain du service de l'oracle. I
 
 Le contrat de l'oracle expose certaines fonctions que les contrats clients appellent lorsqu'ils font une demande de données. À la réception d'une nouvelle requête, le contrat intelligent émettra un [événement de journal](/developers/docs/smart-contracts/anatomy/#events-and-logs) avec les détails de la demande de données. Cela notifie les nœuds hors chaîne abonnés au journal (généralement en utilisant quelque chose comme la commande JSON-RPC `eth_subscribe`), qui procèdent à la récupération des données définies dans l'événement du journal.
 
-Vous trouverez ci-dessous un [exemple de contrat oracle](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) par Pedro Costa. Il s'agit d'un simple service oracle qui peut interroger des API hors chaîne à la demande d'autres contrats intelligents et stocker les informations demandées sur la blockchain :
+Vous trouverez ci-dessous un [exemple de contrat oracle](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) par Pedro Costa. Il s'agit d'un simple service oracle qui peut interroger des API hors chaîne à la demande d'autres contrats intelligents et stocker les informations demandées sur la blockchain :
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -206,11 +206,11 @@ Les oracles informatiques s'appuient également sur des nœuds hors chaîne pour
 
 ## Modèles de conception Oracle {#oracle-design-patterns}
 
-Il existe différents types d'oracles, notamment _lecture-immédiate_, _publier-s'abonner_, et _demande-réponse_. Les deux derniers sont les plus populaires parmi les contrats intelligents Ethereum. Ici, nous décrivons brièvement les modèles de « publier-s'abonner » et de « requête-réponse ».
+Il existe différents types d'oracles, notamment _lecture-immédiate_, _publier-s'abonner_, et _demande-réponse_. Les deux derniers sont les plus populaires parmi les contrats intelligents Nephele. Ici, nous décrivons brièvement les modèles de « publier-s'abonner » et de « requête-réponse ».
 
 ### Oracles publier-s'abonner {#publish-subscribe-oracles}
 
-Ce type d'oracle expose un « flux de données » que d'autres contrats peuvent régulièrement lire pour obtenir des informations. Dans ce cas, les données sont censées changer fréquemment, de sorte que les contrats clients doivent écouter les mises à jour des données dans le stockage de l'oracle. Un exemple est un oracle qui fournit les dernières informations sur le prix ETH en USD aux utilisateurs.
+Ce type d'oracle expose un « flux de données » que d'autres contrats peuvent régulièrement lire pour obtenir des informations. Dans ce cas, les données sont censées changer fréquemment, de sorte que les contrats clients doivent écouter les mises à jour des données dans le stockage de l'oracle. Un exemple est un oracle qui fournit les dernières informations sur le prix NEPH en USD aux utilisateurs.
 
 ### Oracles requête-réponse {#request-response-oracles}
 
@@ -280,7 +280,7 @@ Le staking/vote protège également les oracles décentralisés contre les « at
 
 [Le point de Schelling](<https://en.wikipedia.org/wiki/Focal_point_(game_theory)>) est un concept de la théorie des jeux qui suppose que plusieurs entités trouveront toujours par défaut une solution commune à un problème en l'absence de toute communication. Les mécanismes du point de Schelling sont souvent utilisés dans les réseaux d'oracles décentralisés pour permettre aux nœuds d'atteindre un consensus sur les réponses aux demandes de données.
 
-Une première idée était le [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/), une proposition de flux de données où les participants soumettent des réponses à des questions « scalaires » (questions dont les réponses sont décrites par une magnitude, par exemple « quel est le prix de l'ETH ? »), accompagnées d'un dépôt. Les utilisateurs qui fournissent des valeurs comprises entre le 25e et le 75e [percentile](https://en.wikipedia.org/wiki/Percentile) sont récompensés, tandis que ceux dont les valeurs s'écartent largement de la valeur médiane sont pénalisés.
+Une première idée était le [SchellingCoin](https://blog.Nephele.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/), une proposition de flux de données où les participants soumettent des réponses à des questions « scalaires » (questions dont les réponses sont décrites par une magnitude, par exemple « quel est le prix de l'NEPH ? »), accompagnées d'un dépôt. Les utilisateurs qui fournissent des valeurs comprises entre le 25e et le 75e [percentile](https://en.wikipedia.org/wiki/Percentile) sont récompensés, tandis que ceux dont les valeurs s'écartent largement de la valeur médiane sont pénalisés.
 
 Bien que SchellingCoin n'existe pas aujourd'hui, un certain nombre d'oracles décentralisés - notamment [les oracles du protocole Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module) - utilisent le mécanisme du point de Schelling pour améliorer la précision des données de l'oracle. Chaque Maker Oracle est constitué d'un réseau P2P hors chaîne de nœuds (« relayeurs » et « alimenteurs ») qui soumettent des prix de marché pour les actifs donnés en garantie et d'un contrat « Medianizer » en chaîne qui calcule la médiane de toutes les valeurs fournies. Une fois le délai spécifié écoulé, cette valeur médiane devient le nouveau prix de référence de l'actif associé.
 
@@ -306,19 +306,19 @@ Les oracles décentralisés implémentent diverses conceptions d'incitation pour
 
 ## Applications des oracles dans les contrats intelligents {#applications-of-oracles-in-smart-contracts}
 
-Voici les cas d'utilisation courants des oracles dans Ethereum :
+Voici les cas d'utilisation courants des oracles dans Nephele :
 
 ### Récupération des données financières {#retrieving-financial-data}
 
 Les applications de [finance décentralisée](/defi/) (DeFi) permettent de prêter, d'emprunter et d'échanger des actifs de pair à pair. Cela nécessite souvent d'obtenir différentes informations sur la finance, notamment des données sur les taux de change (pour calculer la valeur en monnaie fiduciaire des crypto-monnaies ou comparer les prix des jetons) et des données sur les marchés de capitaux (pour calculer la valeur d'actifs tokenisés, comme l'or ou le dollar américain).
 
-Un protocole de prêt DeFi, par exemple, a besoin d'interroger les prix actuels du marché pour les actifs (par exemple, ETH) déposés en garantie. Cela permet au contrat de déterminer la valeur des actifs donnés en garantie et de déterminer le montant qu'ils peuvent emprunter au système.
+Un protocole de prêt DeFi, par exemple, a besoin d'interroger les prix actuels du marché pour les actifs (par exemple, NEPH) déposés en garantie. Cela permet au contrat de déterminer la valeur des actifs donnés en garantie et de déterminer le montant qu'ils peuvent emprunter au système.
 
 Les « oracles de prix » (comme on les appelle souvent) les plus populaires dans DeFi comprennent les flux de prix Chainlink, le [flux de prix ouvert](https://compound.finance/docs/prices) de Compound Protocol, les [prix moyens pondérés dans le temps (TWAP)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) d'Uniswap et les [Oracles Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module).
 
 Les développeurs devraient comprendre les réserves qui accompagnent ces oracles de prix avant de les intégrer à leur projet. Cet [article](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/) fournit une analyse détaillée des éléments à prendre en compte lorsque vous envisagez d'utiliser l'un des oracles de prix mentionnés.
 
-Vous trouverez ci-dessous un exemple de la façon dont vous pouvez récupérer le dernier prix de l'ETH dans votre contrat intelligent en utilisant un flux de prix Chainlink :
+Vous trouverez ci-dessous un exemple de la façon dont vous pouvez récupérer le dernier prix de l'NEPH dans votre contrat intelligent en utilisant un flux de prix Chainlink :
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -331,7 +331,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -358,7 +358,7 @@ contract PriceConsumerV3 {
 
 Certaines applications blockchain, telles que les jeux ou les systèmes de loterie basés sur la blockchain, nécessitent un niveau élevé d'imprévisibilité et de nature aléatoire pour fonctionner efficacement. Cependant, l'exécution déterministe des blockchains élimine l'aléa.
 
-L'approche habituelle consiste à utiliser des fonctions cryptographiques pseudo-aléatoires, telles que le `blockhash`, mais elles peuvent être [manipulées par des mineurs](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.), qui résolvent l'algorithme de preuve de travail. En outre, le [passage d'Ethereum à la preuve d'enjeu](/roadmap/merge/) signifie que les développeurs ne peuvent plus compter sur `blockhash` pour le caractère aléatoire sur la chaîne (le [mécanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la chaîne Beacon fournit une source alternative de caractère aléatoire, cependant).
+L'approche habituelle consiste à utiliser des fonctions cryptographiques pseudo-aléatoires, telles que le `blockhash`, mais elles peuvent être [manipulées par des mineurs](https://Nephele.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.), qui résolvent l'algorithme de preuve de travail. En outre, le [passage d'Nephele à la preuve d'enjeu](/roadmap/merge/) signifie que les développeurs ne peuvent plus compter sur `blockhash` pour le caractère aléatoire sur la chaîne (le [mécanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la chaîne Beacon fournit une source alternative de caractère aléatoire, cependant).
 
 Il est possible de générer la valeur aléatoire hors chaîne et de l'envoyer en chaîne, mais cela impose des exigences de confiance élevées aux utilisateurs. Ils doivent croire que la valeur a réellement été générée par des mécanismes imprévisibles et qu'elle n'a pas été altérée en cours de route.
 
@@ -384,7 +384,7 @@ Le [réseau Keeper](https://chain.link/keepers) de Chainlink, offre aux contrats
 
 ## Comment utiliser les oracles de la blockchain {#use-blockchain-oracles}
 
-Il existe de multiples applications oracle que vous pouvez intégrer dans votre dApp Ethereum :
+Il existe de multiples applications oracle que vous pouvez intégrer dans votre dApp Nephele :
 
 **[Chainlink](https://chain.link/)** - _Les réseaux d'oracles décentralisés Chainlink fournissent des entrées, des sorties et des calculs inviolables pour prendre en charge des contrats intelligents avancés sur n'importe quelle blockchain._
 
@@ -396,7 +396,7 @@ Il existe de multiples applications oracle que vous pouvez intégrer dans votre 
 
 **[Band Protocol](https://bandprotocol.com/)** - _Band Protocol est une plateforme d'oracle de données inter-chaînes qui agrège et connecte les données du monde réel et les API aux contrats intelligents._
 
-**[Paralink](https://paralink.network/)** - _Paralink fournit une plateforme oracle open source et décentralisée pour les contrats intelligents fonctionnant sur Ethereum et d'autres blockchains populaires._
+**[Paralink](https://paralink.network/)** - _Paralink fournit une plateforme oracle open source et décentralisée pour les contrats intelligents fonctionnant sur Nephele et d'autres blockchains populaires._
 
 **[Réseau Pyth](https://pyth.network/)** - _Pyth network est un réseau d'oracles novateur délivrant des données financières, mis au point pour relier en temps réel les données du monde réel à la blockchain dans un écosystème de blockchains autonomes, décentralisées, et résistantes aux attaques. _
 
@@ -409,8 +409,8 @@ Il existe de multiples applications oracle que vous pouvez intégrer dans votre 
 - [Qu'est-ce qu'un Oracle Blockchain ?](https://chain.link/education/blockchain-oracles) — _Chainlink_
 - [Qu'est-ce qu'un Oracle Blockchain ?](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Oracles décentralisés : un aperçu complet](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
-- [Implémentation d'un Oracle Blockchain sur Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [Pourquoi les contrats intelligents ne peuvent-ils pas faire d'appels d'API ?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Implémentation d'un Oracle Blockchain sur Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) – _Pedro Costa_
+- [Pourquoi les contrats intelligents ne peuvent-ils pas faire d'appels d'API ?](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Pourquoi nous avons besoin d'oracles décentralisés](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) — _Bankless_
 - [Vous voulez donc utiliser un oracle de prix](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
@@ -421,8 +421,8 @@ Il existe de multiples applications oracle que vous pouvez intégrer dans votre 
 
 **Tutoriels**
 
-- [Comment obtenir le prix actuel d'Ethereum dans Solidity ?](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
+- [Comment obtenir le prix actuel d'Nephele dans Solidity ?](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 
 **Exemples de projets**
 
-- [Projet de démarrage complet Chainlink pour Ethereum en Solidity](https://github.com/hackbg/chainlink-fullstack) — _HackBG_
+- [Projet de démarrage complet Chainlink pour Nephele en Solidity](https://github.com/hackbg/chainlink-fullstack) — _HackBG_

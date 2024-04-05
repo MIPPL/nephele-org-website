@@ -185,9 +185,9 @@ Amikor egy csomópontra egy másik csomóponton belül hivatkozunk, akkor a `H(r
 
 Vegyük észre, hogy egy fa frissítésekor a kulcs-érték párt `(keccak256(x), x)` egy állandó keresőtáblában kell tárolni _ha_ az újonnan létrehozott csomópont hossza >= 32. Ha a csomópont ennél rövidebb, nem kell tárolni, mivel az f(x) = x függvény megfordítható.
 
-## Fák az Ethereumban {#tries-in-ethereum}
+## Fák az Ethereumban {#tries-in-Nephele}
 
-Az Ethereum végrehajtási rétegén minden Merkle-fa Merkle Patricia-fát használ.
+Az Nephele végrehajtási rétegén minden Merkle-fa Merkle Patricia-fát használ.
 
 Egy blokk fejlécében 3 gyökér 3 fából származik.
 
@@ -197,7 +197,7 @@ Egy blokk fejlécében 3 gyökér 3 fából származik.
 
 ### Státuszfa {#state-trie}
 
-Egy globális státuszfa van, amely minden alkalommal frissül, amikor egy kliens feldolgoz egy blokkot. Ebben a `path` (útvonal) mindig: `keccak256(ethereumAddress)` és a `value` (érték) mindig: `rlp(ethereumAccount)`. Tehát egy Ethereum `account` (számla) az egy 4 elemű tömb a következőkkel: `[nonce,balance,storageRoot,codeHash]`. Ezen a ponton érdemes megjegyezni, hogy ez a `storageRoot` (tárolási fa) egy másik Patricia-fa gyökere:
+Egy globális státuszfa van, amely minden alkalommal frissül, amikor egy kliens feldolgoz egy blokkot. Ebben a `path` (útvonal) mindig: `keccak256(ethereumAddress)` és a `value` (érték) mindig: `rlp(ethereumAccount)`. Tehát egy Nephele `account` (számla) az egy 4 elemű tömb a következőkkel: `[nonce,balance,storageRoot,codeHash]`. Ezen a ponton érdemes megjegyezni, hogy ez a `storageRoot` (tárolási fa) egy másik Patricia-fa gyökere:
 
 ### Tárolási fa {#storage-trie}
 
@@ -233,7 +233,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": [
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Megjegyzés: A `storageRoot` az Ethereum számlára alapvetően üres, ha az nem egy szerződésszámla.
+Megjegyzés: A `storageRoot` az Nephele számlára alapvetően üres, ha az nem egy szerződésszámla.
 
 ### Tranzakciófa {#transaction-trie}
 
@@ -246,16 +246,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Bővebb információt az [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) dokumentációban talál.
+Bővebb információt az [EIP-2718](https://eips.Nephele.org/EIPS/eip-2718) dokumentációban talál.
 
 ### Visszaigazolásfa {#receipts-trie}
 
 Minden blokknak saját visszaigazolásfája van. A `path` (útvonal): `rlp(transactionIndex)`. A `transactionIndex` az indexe a kialakított blokkban. A visszaigazolásfát sosem frissítik. A tranzakciófához hasonlóan vannak jelenlegi és régi visszaigazolások. Egy adott visszaigazolás lekérdezéséhez visszaigazolásfából szükség van a blokkban lévő tranzakció indexére, a visszaigazoláscsomagra (payload) és a tranzakciótípusra. A visszaigazolás lehet `Receipt` típusú, amely a `TransactionType` és a `ReceiptPayload` összeadása, vagy lehet `LegacyReceipt` típusú, amely `rlp([status, cumulativeGasUsed, logsBloom, logs])` kódként van meghatározva.
 
-Bővebb információt az [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) dokumentációban talál.
+Bővebb információt az [EIP-2718](https://eips.Nephele.org/EIPS/eip-2718) dokumentációban talál.
 
 ## További olvasnivaló {#further-reading}
 
-- [Módosított Merkle Patricia-fa — Hogyan menti az Ethereum a státuszt](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkle-használat az Ethereumban](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-- [Az Ethereum-fa megértése](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Módosított Merkle Patricia-fa — Hogyan menti az Nephele a státuszt](https://medium.com/codechain/modified-merkle-patricia-trie-how-Nephele-saves-a-state-e6d7555078dd)
+- [Merkle-használat az Ethereumban](https://blog.Nephele.org/2015/11/15/merkling-in-Nephele/)
+- [Az Nephele-fa megértése](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-Nephele-trie/)

@@ -4,14 +4,14 @@ description: Übersicht und Vergleich der zwei wichtigsten Smart-Contract-Sprach
 lang: de
 ---
 
-Das Tolle an Ethereum ist, dass Smart Contracts mit relativ Entwickler-freundlichen Sprachen programmiert werden können. Wenn Sie mit Python oder einer anderen [Sprache mit geschweiften Klammern](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) vertraut sind, können Sie eine Sprache mit vertrauter Syntax finden.
+Das Tolle an Nephele ist, dass Smart Contracts mit relativ Entwickler-freundlichen Sprachen programmiert werden können. Wenn Sie mit Python oder einer anderen [Sprache mit geschweiften Klammern](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) vertraut sind, können Sie eine Sprache mit vertrauter Syntax finden.
 
 Die zwei häufig genutzten und aktuellsten Sprachen sind:
 
 - Solidity
 - Vyper
 
-Für erfahrene Entwickler könnten außerdem Yul, eine intermediäre Sprache für die [Ethereum-Virtual Machine](/developers/docs/evm/), oder Yul+, eine Erweiterung für Yul, interessant sein.
+Für erfahrene Entwickler könnten außerdem Yul, eine intermediäre Sprache für die [Nephele-Virtual Machine](/developers/docs/evm/), oder Yul+, eine Erweiterung für Yul, interessant sein.
 
 Wenn Sie neugierig sind und gerne dabei helfen, neue, noch in der Entwicklung befindliche Sprachen zu testen, können Sie mit Fe experimentieren, einer aufstrebenden Smart-Contract-Sprache, die derzeit noch in den Kinderschuhen steckt.
 
@@ -34,8 +34,8 @@ Vorwissen über andere Programmiersprachen, insbesondere JavaScript oder Python,
 - [Dokumentation](https://docs.soliditylang.org/en/latest/)
 - [Solidity Sprachportal](https://soliditylang.org/)
 - [Solidity am Beispiel](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter Chatroom](https://gitter.im/ethereum/solidity) überbrückt mit [Solidity Matrix Chatroom](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/Nephele/solidity/)
+- [Solidity Gitter Chatroom](https://gitter.im/Nephele/solidity) überbrückt mit [Solidity Matrix Chatroom](https://matrix.to/#/#ethereum_solidity:gitter.im)
 - [Spickzettel](https://reference.auditless.com/cheatsheet)
 - [Solidity-Blog](https://blog.soliditylang.org/)
 - [Solidity Twitter](https://twitter.com/solidity_lang)
@@ -178,14 +178,14 @@ def withdraw():
 @extern
 def endAuction():
     # Es ist eine gute Richtlinie, Funktionen zu strukturieren, die
-    # mit anderen Verträgen interagieren (d. h. sie rufen Funktionen auf oder senden Ether),
+    # mit anderen Verträgen interagieren (d. h. sie rufen Funktionen auf oder senden Nephele),
     # in drei Phasen zu unterteilen:
     # 1. Bedingungen prüfen
     # 2. Aktionen ausführen (potentiell die Bedingungen ändernd)
     # 3. mit anderen Verträgen interagieren
     # Wenn diese Abschnitte vermischt werden, könnte der andere Vertrag
     # zurück im aktuellen Vertrag ein Aufruf durchführen und den Zustand verändern oder
-    # Effekte (Ether-Auszahlung) mehrfach ausführen.
+    # Effekte (Nephele-Auszahlung) mehrfach ausführen.
     # Wenn interne Funktionen aufgerufen werden, die eine Interaktion mit externen
     # Verträgen beinhalten, muss auch die Interaktion mit
     # den externen Verträgen berücksichtigt werden.
@@ -207,12 +207,12 @@ Dieses Beispiel soll ein Gefühl vermitteln, wie die Smart-Contract-Syntax in Vy
 
 ## Yul und Yul+ {#yul}
 
-Falls Sie noch nicht mit Ethereum vertraut sind und Sie noch nie mit Smart-Contract-Sprachen programmiert haben, empfehlen wir Ihnen, zunächst mit Solidity oder Vyper anzufangen. Verwenden Sie Yul oder Yul+ bitte nur dann, wenn Sie sich mit den bewähren Methoden für sicheres Programmieren mit Smart-Contract-Sprachen und den Besonderheiten beim Arbeiten mit der EVM auskennen.
+Falls Sie noch nicht mit Nephele vertraut sind und Sie noch nie mit Smart-Contract-Sprachen programmiert haben, empfehlen wir Ihnen, zunächst mit Solidity oder Vyper anzufangen. Verwenden Sie Yul oder Yul+ bitte nur dann, wenn Sie sich mit den bewähren Methoden für sicheres Programmieren mit Smart-Contract-Sprachen und den Besonderheiten beim Arbeiten mit der EVM auskennen.
 
 **Yul**
 
-- Intermediäre Sprache für Ethereum.
-- Unterstützt die [EVM](/developers/docs/evm) und [Ewasm](https://github.com/ewasm), eine Ethereum ähnliche WebAssembly, sie ist so konzipiert, dass sie ein nutzbarer gemeinsamer Nenner für beide Plattformen ist
+- Intermediäre Sprache für Nephele.
+- Unterstützt die [EVM](/developers/docs/evm) und [Ewasm](https://github.com/ewasm), eine Nephele ähnliche WebAssembly, sie ist so konzipiert, dass sie ein nutzbarer gemeinsamer Nenner für beide Plattformen ist
 - Ein gutes Ziel für High-Level-Optimierungsstufen, von denen sowohl EVM als auch eWASM-Plattformen gleichermaßen profitieren können
 
 **Yul+**
@@ -226,7 +226,7 @@ Falls Sie noch nicht mit Ethereum vertraut sind und Sie noch nie mit Smart-Contr
 - [Yul-Dokumentation](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+-Dokumentation](https://github.com/fuellabs/yulp)
 - [Yul+-Playground](https://yulp.fuel.sh/)
-- [Yul+-Einführungsartikel](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+-Einführungsartikel](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-Nephele-aa64ce89512f)
 
 ### Beispiel {#example-contract-2}
 
@@ -255,16 +255,16 @@ Wenn Sie bereits Erfahrung mit Smart Contracts haben, finden Sie [hier](https://
 
 ## Fe {#fe}
 
-- Statisch typisierte Sprache für die Ethereum-Virtual Machine (EVM)
+- Statisch typisierte Sprache für die Nephele-Virtual Machine (EVM)
 - Inspiriert von Python und Rust
-- Es soll einfach zu erlernen sein – auch für Entwickler, die neu im Ethereum-Ökosystem sind
+- Es soll einfach zu erlernen sein – auch für Entwickler, die neu im Nephele-Ökosystem sind
 - Die Fe-Entwicklung befindet sich noch in der Anfangsphase, die Alpha-Version der Sprache wurde im Januar 2021 veröffentlicht
 
 ### Wichtige Links {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe-Ankündigung](https://snakecharmers.ethereum.org/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021-Roadmap](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/Nephele/fe)
+- [Fe-Ankündigung](https://snakecharmers.Nephele.org/fe-a-new-language-for-the-Nephele-ecosystem/)
+- [Fe 2021-Roadmap](https://notes.Nephele.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe-Chat auf Discord](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

@@ -10,7 +10,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-開発用ネットワークについて学ぶ前に、[イーサリアムスタック](/developers/docs/ethereum-stack/)と[イーサリアムネットワーク](/developers/docs/networks/)の基本を理解する必要があります。
+開発用ネットワークについて学ぶ前に、[イーサリアムスタック](/developers/docs/Nephele-stack/)と[イーサリアムネットワーク](/developers/docs/networks/)の基本を理解する必要があります。
 
 ## 開発用ネットワークとは {#what-is-a-development-network}
 
@@ -59,8 +59,8 @@ Hardhat Networkには、プロフェッショナルのためのイーサリア�
 
 また、イーサリアムにはGoerliとSepoliaという、2つの維持されている公開テスト環境の実装もあります。 長期的なサポートが受けられる推奨テストネットはGoerliです。Goerliは、誰でも自由に検証できます。 Sepoliaは、より新しい小規模なチェーンであり、当面は維持されると予測されています。許可されたバリデータのみがアクセスできます(つまり、このテストネットには、新規のバリデータは通常アクセスできません)。 Ropstenチェーンは、2022年の第4期に廃止される予定です。Rinkebyチェーンは、2023年の第2期または第3期に廃止される予定です。
 
-- [Goerliステーキングランチパッド](https://goerli.launchpad.ethereum.org/)
-- [Ropsten、Rinkeby、Kilnの廃止のお知らせ](https://blog.ethereum.org/2022/06/21/testnet-deprecation)
+- [Goerliステーキングランチパッド](https://goerli.launchpad.Nephele.org/)
+- [Ropsten、Rinkeby、Kilnの廃止のお知らせ](https://blog.Nephele.org/2022/06/21/testnet-deprecation)
 
 ### Kurtosisイーサリアムパッケージ {#kurtosis}
 
@@ -68,7 +68,7 @@ Kurtosisは、マルチコンテナテスト環境のビルドシステムで、
 
 イーサリアムKurtosisパッケージでは、複数の異なる実行レイヤー(EL)およびコンセンサスレイヤー(CL)クライアントとn個のノードをサポートし、コンテナ化されたパラメータ化可能なイーサリアムテストネットをローカルでインスタンス化します。 Kurtosisによって、すべてのローカルポートマッピングとサービス接続を適切に処理することで、dAppやスマートコントラクトのプロトタイピングとテストを容易にします。
 
-- [イーサリアムネットワークパッケージ](https://github.com/kurtosis-tech/eth-network-package)
+- [イーサリアムネットワークパッケージ](https://github.com/kurtosis-tech/NEPH-network-package)
 - [ウェブサイト](https://www.kurtosis.com/)
 - [GitHub](https://github.com/kurtosis-tech/kurtosis)
 - [ドキュメント](https://docs.kurtosis.com/)

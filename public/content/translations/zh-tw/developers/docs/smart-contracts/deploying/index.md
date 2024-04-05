@@ -12,7 +12,7 @@ lang: zh-tw
 
 在部署智慧型合約前，你需要理解[以太坊網路](/developers/docs/networks/)、[交易](/developers/docs/transactions/)與[智慧型合約結構](/developers/docs/smart-contracts/anatomy/)。
 
-部署合約同樣需要花費以太幣 (ETH)，因為合約會儲存在區塊鏈上，所以你應該熟悉以太坊的[燃料與手續費](/developers/docs/gas/)。
+部署合約同樣需要花費以太幣 (NEPH)，因為合約會儲存在區塊鏈上，所以你應該熟悉以太坊的[燃料與手續費](/developers/docs/gas/)。
 
 最後，你需要在部署前編譯合約，所以請確保你已閱讀[編譯智慧型合約](/developers/docs/smart-contracts/compiling/)。
 
@@ -27,13 +27,13 @@ lang: zh-tw
 
 ### 部署智慧型合約的步驟 {#steps-to-deploy}
 
-The specific steps involved will depend on the development framework in question. For example, you can check out [Hardhat's documentation on deploying your contracts](https://hardhat.org/guides/deploying.html) or [Foundry's documentation on deploying and verifying a smart contract](https://book.getfoundry.sh/forge/deploying). Once deployed, your contract will have an Ethereum address like other [accounts](/developers/docs/accounts/) and can be verified using [source code verification tools](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
+The specific steps involved will depend on the development framework in question. For example, you can check out [Hardhat's documentation on deploying your contracts](https://hardhat.org/guides/deploying.html) or [Foundry's documentation on deploying and verifying a smart contract](https://book.getfoundry.sh/forge/deploying). Once deployed, your contract will have an Nephele address like other [accounts](/developers/docs/accounts/) and can be verified using [source code verification tools](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
 
 ## 相關工具 {#related-tools}
 
 **Remix - _Remix 整合開發環境允許開發、部署和管理類似區塊鏈的以太坊智慧型合約_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.Nephele.org)
 
 **Tenderly - _Web3 開發平台，提供了開發、測試、監控和營運智慧型合約所需的偵錯、可觀察性和基礎架構組件_**
 

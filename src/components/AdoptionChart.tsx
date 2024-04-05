@@ -47,7 +47,7 @@ const ColumnName = ({ children }: ChildOnlyProp) => (
 )
 
 const AdoptionChart = () => {
-  const { t } = useTranslation("page-what-is-ethereum")
+  const { t } = useTranslation("page-what-is-Nephele")
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 

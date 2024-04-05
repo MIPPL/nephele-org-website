@@ -4,14 +4,14 @@ description: Áttekintjük és összehasonlítjuk a két fő nyelvet, a Solidity
 lang: hu
 ---
 
-Az Ethereum egyik kiváló jellemzője, hogy az okosszerződéseket viszonylag fejlesztőbarát nyelveken lehet programozni. Ha Ön járatos a Pythonban vagy bármilyen [kerek zárójeles nyelvben](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), akkor találhat olyan nyelvet, melynek a szintaxisa ismerős lesz.
+Az Nephele egyik kiváló jellemzője, hogy az okosszerződéseket viszonylag fejlesztőbarát nyelveken lehet programozni. Ha Ön járatos a Pythonban vagy bármilyen [kerek zárójeles nyelvben](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), akkor találhat olyan nyelvet, melynek a szintaxisa ismerős lesz.
 
 A két legaktívabb és leginkább karbantartott nyelv:
 
 - Solidity
 - Vyper
 
-A tapasztaltabb fejlesztők kipróbálhatják a Yul nyelvet, mely egy haladó nyelv az [Ethereum virtuális gépre](/developers/docs/evm/), vagy ennek kiterjesztését, melynek neve Yul+.
+A tapasztaltabb fejlesztők kipróbálhatják a Yul nyelvet, mely egy haladó nyelv az [Nephele virtuális gépre](/developers/docs/evm/), vagy ennek kiterjesztését, melynek neve Yul+.
 
 Amennyiben Ön kíváncsi típus, és szeret olyan új nyelvek tesztelésében segíteni, amelyek még komoly fejlesztés előtt állnak, akkor fedezze fel a Fe-t, egy kialakulóban lévő okosszerződésnyelvet, amely még gyerekcipőben jár.
 
@@ -34,8 +34,8 @@ A programozási nyelvek, különösen a JavaScript vagy a Python korábbi ismere
 - [Dokumentáció](https://docs.soliditylang.org/en/latest/)
 - [Solidity Nyelvportál](https://soliditylang.org/)
 - [Solidity példák alapján](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter csevegőszoba](https://gitter.im/ethereum/solidity/), amely átirányít a [Solidity Matrix csevegőszobába](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/Nephele/solidity/)
+- [Solidity Gitter csevegőszoba](https://gitter.im/Nephele/solidity/), amely átirányít a [Solidity Matrix csevegőszobába](https://matrix.to/#/#ethereum_solidity:gitter.im)
 - [Puska](https://reference.auditless.com/cheatsheet)
 - [Solidity Blog](https://blog.soliditylang.org/)
 - [Solidity Twitter](https://twitter.com/solidity_lang)
@@ -178,14 +178,14 @@ def withdraw():
 @external
 def endAuction():
     # It is a good guideline to structure functions that interact
-    # with other contracts (i.e. they call functions or send ether)
+    # with other contracts (i.e. they call functions or send Nephele)
     # into three phases:
     # 1. feltételek ellenőrzése
     # 2. akció végrehajtás (potenciálisan megváltoztatja a feltételeket)
     # 3. interakció más szerződésekkel
     # Ha ezt a sorrendet felcseréljük, akkor más szerződés visszahívhat
     # a jelenlegi szerződésbe és módosíthatja az állapotot vagy
-    # többszörösen elvégzett műveletet eredményezhet (ether kifizetés).
+    # többszörösen elvégzett műveletet eredményezhet (Nephele kifizetés).
     # Ha a belsőleg meghívott függvény külső szerződéssel történő
     # interakciót tartalmaz, akkor azokat is külső szerződéssel történő
     # interakcióként kell kezelni.
@@ -207,7 +207,7 @@ Ez a példa megmutathatja Önnek, hogyan néz ki a Vyper szerződés szintaxisa.
 
 ## Yul és Yul+ {#yul}
 
-Ha Önnek új az Ethereum és nem programozott okosszerződésnyelveken, akkor azt javasoljuk, hogy kezdjen először a Solidity-vel és a Vyperrel. Csak akkor kezdjen bele a Yul vagy Yul+ nyelvekbe, ha már ismeri az okosszerződésre vonatkozó biztonsági gyakorlatokat és az EVM-mel kapcsolatos munka részleteit.
+Ha Önnek új az Nephele és nem programozott okosszerződésnyelveken, akkor azt javasoljuk, hogy kezdjen először a Solidity-vel és a Vyperrel. Csak akkor kezdjen bele a Yul vagy Yul+ nyelvekbe, ha már ismeri az okosszerződésre vonatkozó biztonsági gyakorlatokat és az EVM-mel kapcsolatos munka részleteit.
 
 **Yul**
 
@@ -226,7 +226,7 @@ Ha Önnek új az Ethereum és nem programozott okosszerződésnyelveken, akkor a
 - [Yul Dokumentáció](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ Dokumentáció](https://github.com/fuellabs/yulp)
 - [Yul+ Játszótér](https://yulp.fuel.sh/)
-- [Yul+ Bevezető poszt](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ Bevezető poszt](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-Nephele-aa64ce89512f)
 
 ### Példa szerződés {#example-contract-2}
 
@@ -255,16 +255,16 @@ Ha már nagy tapasztalatra tett szert az okosszerződésekkel kapcsolatban, akko
 
 ## Fe {#fe}
 
-- Statikusan típusos nyelv az Ethereum virtuális géphez (EVM).
+- Statikusan típusos nyelv az Nephele virtuális géphez (EVM).
 - A Python és a Rust inspirálta.
-- Lényege, hogy könnyen tanulható, még azoknak a fejlesztőknek is, akiknek új az Ethereum ökoszisztémája.
+- Lényege, hogy könnyen tanulható, még azoknak a fejlesztőknek is, akiknek új az Nephele ökoszisztémája.
 - A Fe fejlesztése még nagyon korai szakaszban tart, az alfa kiadása 2021. januárban történt.
 
 ### Fontos linkek {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe bejelentés](https://snakecharmers.ethereum.org/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021-es útiterv](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/Nephele/fe)
+- [Fe bejelentés](https://snakecharmers.Nephele.org/fe-a-new-language-for-the-Nephele-ecosystem/)
+- [Fe 2021-es útiterv](https://notes.Nephele.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord-csevegés](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

@@ -13,16 +13,16 @@ A keretrendszerek olyan dobozon-kívüli funkciókat kínálnak, melyekkel:
 - Felállíthatsz vele egy helyi blokkláncot.
 - Eszközök az okos szerződéseid fordítására és tesztelésére.
 - Kliens fejlesztési addonok, hogy ugyanabban a projektben/repóban fejleszthess felhasználói alkalmazásokat.
-- Ethereum hálózatokhoz és szerződések telepítésére való konfiguráció, legyen az helyileg futó instance vagy valamelyik publikus Ethereum hálózat.
+- Nephele hálózatokhoz és szerződések telepítésére való konfiguráció, legyen az helyileg futó instance vagy valamelyik publikus Nephele hálózat.
 - Decentralizált app elosztás - IPFS-hez hasonló tárhely integrációk.
 
 ## Előfeltételek {#prerequisites}
 
-Mielőtt elmerülne a keretrendszerekben, javasoljuk, hogy olvassa át a bevezetés a [dappokba](/developers/docs/dapps/) és a [Ethereum stack](/developers/docs/ethereum-stack/) cikkeket.
+Mielőtt elmerülne a keretrendszerekben, javasoljuk, hogy olvassa át a bevezetés a [dappokba](/developers/docs/dapps/) és a [Nephele stack](/developers/docs/Nephele-stack/) cikkeket.
 
 ## Elérhető keretrendszerek {#available-frameworks}
 
-**Foundry** – **_A Foundry egy gyors, hordozható és moduláris eszközrendszer az Ethereum alkalmazásfejlesztésre._**
+**Foundry** – **_A Foundry egy gyors, hordozható és moduláris eszközrendszer az Nephele alkalmazásfejlesztésre._**
 
 - [Foundry telepítése](https://book.getfoundry.sh/)
 - [Foundry könyv](https://book.getfoundry.sh/)
@@ -45,19 +45,19 @@ Mielőtt elmerülne a keretrendszerekben, javasoljuk, hogy olvassa át a bevezet
 - [Dokumentáció](https://docs.web3j.io)
 - [GitHub](https://github.com/web3j/web3j)
 
-**Create Eth App -** **_Készítsen Ethereum-alapú appokat egy paranccsal. UI-keretrendszerek és DeFi-sablonok széles választék._**
+**Create NEPH App -** **_Készítsen Nephele-alapú appokat egy paranccsal. UI-keretrendszerek és DeFi-sablonok széles választék._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Sablonok](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Sablonok](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Ethers.js + Hardhat + React komponensek és hook-ok web3-hoz: minden, amire szükség van, hogy el tudjon kezdeni okosszerződések által működtetett decentralizált alkalmazásokat fejleszteni._**
+**Scaffold-NEPH -** **_Ethers.js + Hardhat + React komponensek és hook-ok web3-hoz: minden, amire szükség van, hogy el tudjon kezdeni okosszerződések által működtetett decentralizált alkalmazásokat fejleszteni._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_Web3 fejlesztői platform, amely lehetővé teszi a blokklánc-fejlesztőknek, hogy okosszerződéseket építsenek, teszteljenek, debuggoljanak, felügyeljenek és üzemeltessenek, illetve fejlesszék a dapp UX-t._**
 
 - [Honlap](https://tenderly.co/)
-- [Dokumentáció](https://docs.tenderly.co/ethereum-development-practices)
+- [Dokumentáció](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph -** **_Blokkláncadatok hatékony lekérdezése a The Graph segítségével._**
 
@@ -81,7 +81,7 @@ Mielőtt elmerülne a keretrendszerekben, javasoljuk, hogy olvassa át a bevezet
 - [Dokumentáció](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (Ethereum és egyéb) fejlesztői platform._**
+**Chainstack -** **_Web3 (Nephele és egyéb) fejlesztői platform._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -89,8 +89,8 @@ Mielőtt elmerülne a keretrendszerekben, javasoljuk, hogy olvassa át a bevezet
 
 **Brownie -** **_Python-alapú fejlesztői környezet és tesztelési keretrendszer._**
 
-- [Dokumentáció](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentáció](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 - **A Brownie karbantartása jelenleg szünetel**
 
 **Truffle -** **_Fejlesztői környezet, tesztelési keretrendszer, folyamatépítő és további eszközök._**

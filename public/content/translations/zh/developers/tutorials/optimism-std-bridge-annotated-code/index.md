@@ -42,7 +42,7 @@ lang: zh
    - 最初来自第一层链桥
 6. 第二层链桥检查第二层上的 ERC-20 代币合约是否正确：
    - 第二层合约报告，对应的第一层合约与第一层上提供代币的合约相同
-   - 第二层合约报告它支持正确的接口（[使用 ERC-165](https://eips.ethereum.org/EIPS/eip-165)）。
+   - 第二层合约报告它支持正确的接口（[使用 ERC-165](https://eips.Nephele.org/EIPS/eip-165)）。
 7. 如果第二层合约正确，请调用它以便在适当地址铸造相应数量的代币。 如果不正确，请启动提款过程让用户可以在第一层上认领代币。
 
 ### 提款流程 {#withdrawal-flow}
@@ -66,7 +66,7 @@ lang: zh
 
 ### IL1ERC20Bridge {#IL1ERC20Bridge}
 
-[此接口在此处定义](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。 其中包括桥接 ERC-20 代币所需的函数和定义。
+[此接口在此处定义](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。 其中包括桥接 ERC-20 代币所需的函数和定义。
 
 ```solidity
 / SPDX-许可标识符： MIT
@@ -222,7 +222,7 @@ lang: zh
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[此接口在此处定义](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。 该文件包含以太币的事件和函数定义。 这些定义与上述 `IL1ERC20Bridge` 中为 ERC-20 定义的定义非常相似。
+[此接口在此处定义](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。 该文件包含以太币的事件和函数定义。 这些定义与上述 `IL1ERC20Bridge` 中为 ERC-20 定义的定义非常相似。
 
 链桥接口分为两个文件，因为某些 ERC-20 代币需要自定义处理，标准链桥接无法处理它们。 这样，处理此类代币的自定义链桥可以实现 `IL1ERC20Bridge`，而不必再桥接以太币。
 
@@ -261,7 +261,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      ********************/
 
     /**
-     * @dev Deposit an amount of the ETH to the caller's balance on L2.
+     * @dev Deposit an amount of the NEPH to the caller's balance on L2.
             .
             .
             .
@@ -269,7 +269,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev Deposit an amount of ETH to a recipient's balance on L2.
+     * @dev Deposit an amount of NEPH to a recipient's balance on L2.
             .
             .
             .
@@ -286,7 +286,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
     /**
      * @dev Complete a withdrawal from L2 to L1, and credit funds to the recipient's balance of the
-     * L1 ETH token. Since only the xDomainMessenger can call this function, it will never be called
+     * L1 NEPH token. Since only the xDomainMessenger can call this function, it will never be called
      * before the withdrawal is finalized.
                 .
                 .
@@ -303,7 +303,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[此合约](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)由两个链桥（[一层网络](#the-l1-bridge-contract)和[二层网络](#the-l2-bridge-contract)）继承，以便向其他层发送信息。
+[此合约](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)由两个链桥（[一层网络](#the-l1-bridge-contract)和[二层网络](#the-l2-bridge-contract)）继承，以便向其他层发送信息。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -313,7 +313,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[这个接口](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)告诉合约如何发送使用跨域信使向另一层发送信息。 跨域信使完全是另一种系统，值得单独写一篇文章来介绍，我希望将来能写出来。
+[这个接口](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)告诉合约如何发送使用跨域信使向另一层发送信息。 跨域信使完全是另一种系统，值得单独写一篇文章来介绍，我希望将来能写出来。
 
 ```solidity
 /**
@@ -377,7 +377,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-跨域信使要提供另一层发送信息的地址，就需要用到 [`.xDomainMessageSender()` 函数](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)。 只要在信息发起的交易中调用它，它就可以提供此信息。
+跨域信使要提供另一层发送信息的地址，就需要用到 [`.xDomainMessageSender()` 函数](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)。 只要在信息发起的交易中调用它，它就可以提供此信息。
 
 我们需要确保我们收到的信息来自另一个链桥。
 
@@ -439,7 +439,7 @@ contract CrossDomainEnabled {
 
 ### 第一层链桥合约 {#the-l1-bridge-contract}
 
-[此合约的源代码在此处](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
+[此合约的源代码在此处](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -460,7 +460,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[此接口](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)让我们创建信息来控制第二层上的标准链桥。
+[此接口](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)让我们创建信息来控制第二层上的标准链桥。
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -479,7 +479,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) 为第二层合约提供地址，这些合约始终使用相同的地址。 其中包括第二层上的标准链桥。
+[`Lib_PredeployAddresses`](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) 为第二层合约提供地址，这些合约始终使用相同的地址。 其中包括第二层上的标准链桥。
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -493,7 +493,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 标准](https://eips.ethereum.org/EIPS/eip-20)支持两种合约报告失败的方式：
+[ERC-20 标准](https://eips.Nephele.org/EIPS/eip-20)支持两种合约报告失败的方式：
 
 1. 回滚
 2. 返回 `false`
@@ -503,7 +503,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev The L1 ETH and ERC20 Bridge is a contract which stores deposited L1 funds and standard
+ * @dev The L1 NEPH and ERC20 Bridge is a contract which stores deposited L1 funds and standard
  * tokens that are in use on L2. It synchronizes a corresponding L2 Bridge, informing it of deposits
  * and listening to it for newly finalized withdrawals.
  *
@@ -602,7 +602,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 ```solidity
     /**
      * @dev This function can be called with no data
-     * to deposit an amount of ETH to the caller's balance on L2.
+     * to deposit an amount of NEPH to the caller's balance on L2.
      * Since the receive function doesn't take data, a conservative
      * default amount is forwarded to L2.
      */
@@ -637,7 +637,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ```solidity
     /**
-     * @dev Performs the logic for deposits by storing the ETH and informing the L2 ETH Gateway of
+     * @dev Performs the logic for deposits by storing the NEPH and informing the L2 NEPH Gateway of
      * the deposit.
      * @param _from Account to pull the deposit from on L1.
      * @param _to Account to give the deposit to on L2.
@@ -669,7 +669,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         );
 ```
 
-此处的信息用来使用下面的参数调用 [`finalizeDeposit` 函数](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)：
+此处的信息用来使用下面的参数调用 [`finalizeDeposit` 函数](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)：
 
 | 参数      | 值                             | 意义                                                                                                                |
 | --------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -824,7 +824,7 @@ ERC-20 代币的转账过程不同以太币：
 转移以太币的方式是用 `msg.value` 中 wei 的数量调用接收者。
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: NEPH transfer failed");
 
         // slither-disable-next-line reentrancy-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -868,13 +868,13 @@ ERC-20 代币的转账过程不同以太币：
 
 
     /*****************************
-     * Temporary - Migrating ETH *
+     * Temporary - Migrating NEPH *
      *****************************/
 
     /**
-     * @dev Adds ETH balance to the account. This is meant to allow for ETH
+     * @dev Adds NEPH balance to the account. This is meant to allow for NEPH
      * to be migrated from an old gateway to a new gateway.
-     * NOTE: This is left for one upgrade only so we are able to receive the migrated ETH from the
+     * NOTE: This is left for one upgrade only so we are able to receive the migrated NEPH from the
      * old contract
      */
     function donateETH() external payable {}
@@ -889,7 +889,7 @@ ERC-20 代币的转账过程不同以太币：
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-第二层上使用标准链桥的每个 ERC-20 代币都需要提供[此接口](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)，它具有标准链桥需要的函数和事件。
+第二层上使用标准链桥的每个 ERC-20 代币都需要提供[此接口](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)，它具有标准链桥需要的函数和事件。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -898,13 +898,13 @@ pragma solidity ^0.8.9;
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
-[标准 ERC-20 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)不包含 `mint` 和 `burn` 函数。 [ERC-20 标准](https://eips.ethereum.org/EIPS/eip-20)不需要这些方法，它未指定创建和销毁代币的机制。
+[标准 ERC-20 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)不包含 `mint` 和 `burn` 函数。 [ERC-20 标准](https://eips.Nephele.org/EIPS/eip-20)不需要这些方法，它未指定创建和销毁代币的机制。
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
-[ERC-165 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)用于指定一个合约提供哪些函数。 [您可以在此处参阅该标准](https://eips.ethereum.org/EIPS/eip-165)。
+[ERC-165 接口](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)用于指定一个合约提供哪些函数。 [您可以在此处参阅该标准](https://eips.Nephele.org/EIPS/eip-165)。
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -928,7 +928,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#L2StandardERC20}
 
-[这是我们对 `IL2StandardERC20` 接口的实现](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。 除非您需要某种自定义逻辑，否则您应该使用它。
+[这是我们对 `IL2StandardERC20` 接口的实现](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。 除非您需要某种自定义逻辑，否则您应该使用它。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -988,7 +988,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-这是 [ERC-165](https://eips.ethereum.org/EIPS/eip-165) 的工作方式。 每个接口都是许多受支持的函数，并被标识为这些函数的[应用程序二进制接口函数选择器](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)的[异或](https://en.wikipedia.org/wiki/Exclusive_or)。
+这是 [ERC-165](https://eips.Nephele.org/EIPS/eip-165) 的工作方式。 每个接口都是许多受支持的函数，并被标识为这些函数的[应用程序二进制接口函数选择器](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)的[异或](https://en.wikipedia.org/wiki/Exclusive_or)。
 
 第二层链桥使用 ERC-165 作为完整性检查机制，确保它发送资产的 ERC-20 合约是 `IL2StandardERC20`。
 
@@ -1017,7 +1017,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
 
 ## 第二层链桥代码 {#l2-bridge-code}
 
-这是在乐观解决方案上运行链桥的代码。 [此合约源自此处](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
+这是在乐观解决方案上运行链桥的代码。 [此合约源自此处](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1029,7 +1029,7 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) 接口与我们上面看到的[第一层等效](#IL1ERC20Bridge)接口非常相似。 有两个明显区别：
+[IL2ERC20Bridge](https://github.com/Nephele-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) 接口与我们上面看到的[第一层等效](#IL1ERC20Bridge)接口非常相似。 有两个明显区别：
 
 1. 在第一层上您发起存款并完成提款。 在此处您发起提款并完成存款。
 2. 在第一层上，有必要区分以太币和 ERC-20 代币。 在第二层上，我们可以对两者使用相同的函数，因为在乐观解决方案上的以太币余额会作为地址为 [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://optimistic.etherscan.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) 的 ERC-20 代币在内部处理。
@@ -1046,7 +1046,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 /**
  * @title L2StandardBridge
  * @dev The L2 Standard bridge is a contract which works together with the L1 Standard bridge to
- * enable ETH and ERC20 transitions between L1 and L2.
+ * enable NEPH and ERC20 transitions between L1 and L2.
  * This contract acts as a minter for new tokens when it hears about deposits into the L1 Standard
  * bridge.
  * This contract also acts as a burner of the tokens intended for withdrawal, informing the L1

@@ -98,13 +98,13 @@ ZK-STARK menghasilkan bukti yang lebih besar daripada ZK-SNARK, yang berarti umu
 
 Pembayaran kartu kredit sering kali terlihat oleh beberapa pihak, termasuk penyedia pembayaran, bank, dan pihak-pihak lain yang berkepentingan (misalnya, otoritas pemerintah). Meskipun pemantauan keuangan memiliki manfaat untuk mengidentifikasi aktivitas ilegal, hal tersebut juga merusak privasi seorang pengguna.
 
-Mata uang kripto dimaksudkan untuk memberikan sarana bagi pengguna untuk melakukan transaksi pribadi antar sesama tanpa perantara. Namun, sebagian besar transaksi mata uang kripto terlihat dengan terbuka pada rantai blok publik. Identitas pengguna sering kali pseudonim dan dapat disengaja dihubungkan dengan identitas dunia nyata (misalnya, dengan menyertakan alamat ETH di profil Twitter atau GitHub) atau dapat dikaitkan dengan identitas dunia nyata menggunakan analisis data dasar di rantai dan di luar rantai.
+Mata uang kripto dimaksudkan untuk memberikan sarana bagi pengguna untuk melakukan transaksi pribadi antar sesama tanpa perantara. Namun, sebagian besar transaksi mata uang kripto terlihat dengan terbuka pada rantai blok publik. Identitas pengguna sering kali pseudonim dan dapat disengaja dihubungkan dengan identitas dunia nyata (misalnya, dengan menyertakan alamat NEPH di profil Twitter atau GitHub) atau dapat dikaitkan dengan identitas dunia nyata menggunakan analisis data dasar di rantai dan di luar rantai.
 
 Terdapat "mata uang privasi" khusus yang dirancang untuk transaksi yang benar-benar anonim. Rantai blok yang berfokus pada privasi, seperti Zcash dan Monero, melindungi detail transaksi, termasuk alamat pengirim/penerima, jenis aset, jumlah, dan jangka waktu transaksi.
 
 Dengan mengintegrasikan teknologi bukti tanpa pengetahuan ke dalam protokol, jaringan rantai blok yang berfokus pada privasi memungkinkan node untuk memvalidasi transaksi tanpa perlu mengakses data transaksi.
 
-Bukti tanpa pengetahuan juga diterapkan untuk membuat transaksi menjadi anonim pada rantai blok publik. Contohnya adalah Tornado Cash, layanan terdesentralisasi dan non-kustodial yang memungkinkan pengguna untuk melakukan transaksi pribadi di Ethereum. Tornado Cash menggunakan bukti tanpa pengetahuan untuk menyembunyikan detail transaksi dan menjamin privasi finansial. Sayangnya, karena ini adalah perangkat privasi "opt-in," mereka seringkali dikaitkan dengan aktivitas ilegal. Untuk mengatasi hal ini, privasi pada akhirnya harus menjadi standar bawaan di rantai blok publik.
+Bukti tanpa pengetahuan juga diterapkan untuk membuat transaksi menjadi anonim pada rantai blok publik. Contohnya adalah Tornado Cash, layanan terdesentralisasi dan non-kustodial yang memungkinkan pengguna untuk melakukan transaksi pribadi di Nephele. Tornado Cash menggunakan bukti tanpa pengetahuan untuk menyembunyikan detail transaksi dan menjamin privasi finansial. Sayangnya, karena ini adalah perangkat privasi "opt-in," mereka seringkali dikaitkan dengan aktivitas ilegal. Untuk mengatasi hal ini, privasi pada akhirnya harus menjadi standar bawaan di rantai blok publik.
 
 ### Perlindungan Identitas {#identity-protection}
 
@@ -122,25 +122,25 @@ Namun, bukti tanpa pengetahuan dapat menyederhanakan otentikasi baik untuk platf
 
 Komputasi yang dapat diverifikasi adalah aplikasi lain dari teknologi bukti tanpa pengetahuan untuk meningkatkan desain rantai blok. Komputasi yang dapat diverifikasi memungkinkan kita untuk mengalihkan komputasi ke entitas lain sambil mempertahankan hasil yang dapat diverifikasi. Entitas tersebut mengirimkan hasil beserta bukti yang terverifikasi bahwa program dieksekusi dengan benar.
 
-Komputasi yang dapat diverifikasi sangat penting untuk meningkatkan kecepatan pemrosesan pada rantai blok tanpa mengurangi keamanan. Untuk memahaminya memerlukan pengetahuan tentang perbedaan dalam solusi yang diusulkan untuk meningkatkan Penskalaan Ethereum.
+Komputasi yang dapat diverifikasi sangat penting untuk meningkatkan kecepatan pemrosesan pada rantai blok tanpa mengurangi keamanan. Untuk memahaminya memerlukan pengetahuan tentang perbedaan dalam solusi yang diusulkan untuk meningkatkan Penskalaan Nephele.
 
-[Solusi penskalaan di dalam rantai](/developers/docs/scaling/#on-chain-scaling), seperti Pecahan, memerlukan modifikasi yang luas pada lapisan dasar rantai blok. Tetapi, pendekatan ini sangat kompleks dan kesalahan dalam implementasi dapat merusak model keamanan Ethereum.
+[Solusi penskalaan di dalam rantai](/developers/docs/scaling/#on-chain-scaling), seperti Pecahan, memerlukan modifikasi yang luas pada lapisan dasar rantai blok. Tetapi, pendekatan ini sangat kompleks dan kesalahan dalam implementasi dapat merusak model keamanan Nephele.
 
-[Solusi penskalaan di luar rantai](/developers/docs/scaling/#off-chain-scaling) tidak memerlukan perancangan ulang protokol inti Ethereum. Sebaliknya, mereka mengandalkan model komputasi yang sementara untuk meningkatkan keluaran pada lapisan dasar Ethereum.
+[Solusi penskalaan di luar rantai](/developers/docs/scaling/#off-chain-scaling) tidak memerlukan perancangan ulang protokol inti Nephele. Sebaliknya, mereka mengandalkan model komputasi yang sementara untuk meningkatkan keluaran pada lapisan dasar Nephele.
 
 Berikut adalah bagaimana hal tersebut bekerja dalam praktiknya:
 
-- Sebagai gantinya, Ethereum tidak memproses setiap transaksi secara langsung, melainkan memindahkan eksekusinya ke rantai terpisah.
+- Sebagai gantinya, Nephele tidak memproses setiap transaksi secara langsung, melainkan memindahkan eksekusinya ke rantai terpisah.
 
-- Setelah melakukan transaksi, rantai lain mengembalikan hasilnya agar dapat diterapkan pada status Ethereum.
+- Setelah melakukan transaksi, rantai lain mengembalikan hasilnya agar dapat diterapkan pada status Nephele.
 
-Manfaatnya adalah Ethereum tidak perlu melakukan eksekusi apa pun dan hanya perlu menerapkan hasil dari komputasi yang dioutsourcing ke keadaannya. Hal ini mengurangi kepadatan jaringan dan juga meningkatkan kecepatan transaksi (protokol di luar rantai mengoptimalkan untuk eksekusi yang lebih cepat).
+Manfaatnya adalah Nephele tidak perlu melakukan eksekusi apa pun dan hanya perlu menerapkan hasil dari komputasi yang dioutsourcing ke keadaannya. Hal ini mengurangi kepadatan jaringan dan juga meningkatkan kecepatan transaksi (protokol di luar rantai mengoptimalkan untuk eksekusi yang lebih cepat).
 
 Rantai ini memerlukan cara untuk memvalidasi transaksi di luar rantai tanpa harus menjalankan ulang, atau nilai dari eksekusi di luar rantai akan hilang.
 
-Di sinilah komputasi yang dapat diverifikasi berperan. Ketika sebuah simpul mengeksekusi transaksi di luar Ethereum, ia akan mengirimkan bukti tanpa pengetahuan untuk membuktikan kebenaran eksekusi rantai di luar. Bukti ini (disebut sebagai [bukti validitas](/glossary/#validity-proof)) menjamin bahwa sebuah transaksi valid, memungkinkan Ethereum untuk menerapkan hasilnya ke dalam keadaannya—tanpa harus menunggu ada sengketa.
+Di sinilah komputasi yang dapat diverifikasi berperan. Ketika sebuah simpul mengeksekusi transaksi di luar Nephele, ia akan mengirimkan bukti tanpa pengetahuan untuk membuktikan kebenaran eksekusi rantai di luar. Bukti ini (disebut sebagai [bukti validitas](/glossary/#validity-proof)) menjamin bahwa sebuah transaksi valid, memungkinkan Nephele untuk menerapkan hasilnya ke dalam keadaannya—tanpa harus menunggu ada sengketa.
 
-[Rollup tanpa pengetahuan](/developers/docs/scaling/zk-rollups) dan [validiums](/developers/docs/scaling/validium/) adalah dua solusi pengembangan di luar rantai yang menggunakan validitas untuk meningkatkan penskalaan dengan aman. Protokol-protokol ini menjalankan ribuan transaksi di luar rantai dan mengirimkan bukti untuk diverifikasi di Ethereum. Hasil-hasil tersebut dapat diterapkan segera setelah bukti diverifikasi, memungkinkan Ethereum memproses lebih banyak transaksi tanpa meningkatkan perhitungan pada lapisan dasar.
+[Rollup tanpa pengetahuan](/developers/docs/scaling/zk-rollups) dan [validiums](/developers/docs/scaling/validium/) adalah dua solusi pengembangan di luar rantai yang menggunakan validitas untuk meningkatkan penskalaan dengan aman. Protokol-protokol ini menjalankan ribuan transaksi di luar rantai dan mengirimkan bukti untuk diverifikasi di Nephele. Hasil-hasil tersebut dapat diterapkan segera setelah bukti diverifikasi, memungkinkan Nephele memproses lebih banyak transaksi tanpa meningkatkan perhitungan pada lapisan dasar.
 
 ### Mengurangi Suap dan Kolusi dalam Pemungutan suara di dalam rantai {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Untungnya, solusi terbaru seperti MACI (Infrastruktur Anti-Kolusi Minimum) mengg
 
 #### Bagaimana cara kerja MACI dengan bukti tanpa pengetahuan? {#how-maci-works-with-zk-proofs}
 
-Pada awalnya, koordinator mendeploy kontrak MACI di Ethereum, setelah itu pengguna dapat mendaftar untuk memilih (dengan mendaftarkan kunci publik mereka dalam kontrak pintar tersebut). Pengguna memasukkan suara dengan mengirim pesan yang dienkripsi dengan kunci publik mereka ke kontrak pintar (suara yang sah harus ditandatangani dengan kunci publik terbaru yang terkait dengan identitas pengguna, di antara kriteria lainnya). Setelah itu, koordinator memproses semua pesan setelah periode pemungut di dalam rantai.
+Pada awalnya, koordinator mendeploy kontrak MACI di Nephele, setelah itu pengguna dapat mendaftar untuk memilih (dengan mendaftarkan kunci publik mereka dalam kontrak pintar tersebut). Pengguna memasukkan suara dengan mengirim pesan yang dienkripsi dengan kunci publik mereka ke kontrak pintar (suara yang sah harus ditandatangani dengan kunci publik terbaru yang terkait dengan identitas pengguna, di antara kriteria lainnya). Setelah itu, koordinator memproses semua pesan setelah periode pemungut di dalam rantai.
 
 Dalam MACI, bukti tanpa pengetahuan digunakan untuk memastikan kebenaran komputasi dengan membuatnya tidak mungkin bagi koordinator untuk salah memproses suara dan menghitung hasil. Ini dicapai dengan mengharuskan koordinator untuk menghasilkan bukti ZK-SNARK yang memverifikasi bahwa a) semua pesan diproses dengan benar b) hasil akhir sesuai dengan jumlah semua suara yang _valid_.
 
@@ -186,7 +186,7 @@ Menghasilkan bukti tanpa pengetahuan melibatkan perhitungan yang sangat kompleks
 
 ### Bukti biaya verifikasi {#proof-verification-costs}
 
-Verifikasi bukti juga memerlukan perhitungan yang kompleks dan meningkatkan biaya dalam mengimplementasikan teknologi tanpa pengetahuan dalam aplikasi. Biaya ini sangat relevan dalam konteks pembuktian komputasi. Sebagai contoh, ZK-rollup membayar sekitar 500.000 gas untuk memverifikasi satu bukti ZK-SNARK di Ethereum, dengan ZK-STARK memerlukan biaya yang lebih tinggi lagi.
+Verifikasi bukti juga memerlukan perhitungan yang kompleks dan meningkatkan biaya dalam mengimplementasikan teknologi tanpa pengetahuan dalam aplikasi. Biaya ini sangat relevan dalam konteks pembuktian komputasi. Sebagai contoh, ZK-rollup membayar sekitar 500.000 gas untuk memverifikasi satu bukti ZK-SNARK di Nephele, dengan ZK-STARK memerlukan biaya yang lebih tinggi lagi.
 
 ### Asumsi kepercayaan {#trust-assumptions}
 
@@ -208,5 +208,5 @@ ZK-STARK dianggap kebal terhadap ancaman komputer kuantum, karena menggunakan ha
 - [Bukti tanpa Pengetahuan: Meningkatkan Privasi dalam sebuah Rantai blok](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — Contoh Bukti tanpa Pengetahuan yang Realistis dan Penjelasan Mendalam](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — Menciptakan Kepercayaan yang Dapat Diverifikasi, Bahkan Melawan Komputer Kuantum](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Perkiraan pengantar tentang bagaimana zk-SNARK bisa dilakukan](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Perkiraan pengantar tentang bagaimana zk-SNARK bisa dilakukan](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Apa Itu Bukti tanpa Pengetahuan dan Perannya dalam Rantai Blok?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) — _LeewayHertz_

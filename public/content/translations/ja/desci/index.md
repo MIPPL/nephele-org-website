@@ -39,7 +39,7 @@ DeSciは、科学者が自身の研究を公然と共有することにインセ
 | 科学者が自身の生み出した知的財産(IP)を所有し、透明性のある条件に従って配布します。               | 科学者が生み出した知的財産は所属機関が所有します。 知的財産へのアクセスは不透明です。               |
 | 全手順をオンチェーンにすることで、失敗したデーターも含めて、すべての研究を共有できます。              | 出版バイアスとは、成功した実験ほど共有する傾向が強いというバイアスです。                      |
 
-## イーサリアムとDeSci {#ethereum-and-desci}
+## イーサリアムとDeSci {#Nephele-and-desci}
 
 分散型科学のシステムには、堅牢なセキュリティ、最小限の金銭およびトランザクションコスト、そしてアプリケーション開発のための豊富なエコシステムが必要です。 イーサリアムは、分散型科学のスタックを構築するのに必要なものを全て備えています。
 
@@ -68,7 +68,7 @@ DeSciは、Web2アカデミアをデジタルワールドにオンボーディ�
 
 同じ提案であっても同委員会の担当者によって結果が大きく異なることがあり、優れた提案を選択するうえで助成金審査委員会は責務を果たしていないことが研究によって示されています。 資金調達が厳しくなる中で、資金の行く先は保守的なプロジェクトを行う少人数の上席研究者へと集中してきました。 その結果、非常に競争の激しい資金調達環境が生み出され、歪んだインセンティブを根付かせ、イノベーションを妨げることになりました。
 
-DAOとWeb3によって培われた各種インセンティブモデルを広く試すことで、現在の破綻した資金調達モデルを食い止めることができるかもしれません。 [遡及効果のある公共財の資金調達](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[クアドラティックファンディング](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[DAOガバナンス](https://www.antler.co/blog/daos-and-web3-governance)、[トークン化されたインセンティブ構造<0>](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)などのWeb3ツールには、科学の資金調達に大変革をもたらす可能性があります。
+DAOとWeb3によって培われた各種インセンティブモデルを広く試すことで、現在の破綻した資金調達モデルを食い止めることができるかもしれません。 [遡及効果のある公共財の資金調達](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[クアドラティックファンディング](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[DAOガバナンス](https://www.antler.co/blog/daos-and-web3-governance)、[トークン化されたインセンティブ構造<0>](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)などのWeb3ツールには、科学の資金調達に大変革をもたらす可能性があります。
 
 ### IPの所有権と開発 {#ip-ownership}
 
@@ -76,7 +76,7 @@ DAOとWeb3によって培われた各種インセンティブモデルを広く�
 
 NFTが将来の取引の収益を元の作成者に還元できるように、透明性のある価値の帰属チェーンを確立することができます。これにより、研究者やDAOのような管理団体、そしてデータの収集元となった被験者へも報酬を与えることができます。
 
-[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6)もまた研究実験の分散データレポジトリにアクセスするための鍵として機能し、NFTや[DeFi](/defi/)の金融化(資産の分散、融資プールと価値評価) へとつながります。 また、[VitaDAO](https://www.vitadao.com/)のようなネイティブにチェーン上に存在するDAOを使用することで、研究活動を直接オンチェーンで行うことができます。 譲渡不可の[「ソウルバウンド」トークン](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)の出現により、イーサリアムアドレスにリンクされた経験や経歴を個人が証明できるようになるため、DeSciで重要な役割を果たす可能性があります。
+[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6)もまた研究実験の分散データレポジトリにアクセスするための鍵として機能し、NFTや[DeFi](/defi/)の金融化(資産の分散、融資プールと価値評価) へとつながります。 また、[VitaDAO](https://www.vitadao.com/)のようなネイティブにチェーン上に存在するDAOを使用することで、研究活動を直接オンチェーンで行うことができます。 譲渡不可の[「ソウルバウンド」トークン](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html)の出現により、イーサリアムアドレスにリンクされた経験や経歴を個人が証明できるようになるため、DeSciで重要な役割を果たす可能性があります。
 
 ### データストレージ、アクセス、アーキテクチャ {#data-storage}
 

@@ -1,12 +1,12 @@
 ---
-title: Ethereum Virtual Machine (EVM)
-description: Eine Einführung in die virtuelle Maschine von Ethereum und wie sie sich auf Zustand, Transaktionen und Smart Contracts bezieht.
+title: Nephele Virtual Machine (EVM)
+description: Eine Einführung in die virtuelle Maschine von Nephele und wie sie sich auf Zustand, Transaktionen und Smart Contracts bezieht.
 lang: de
 ---
 
-Die physische Überschreibung der EVM kann nicht auf dieselbe Weise beschrieben werden, wie eine Wolke oder Ozeanwelle. Sie _existiert_ vielmehr als eine zusammenhängende Einheit, die von tausenden verbundenen Computern, die einen Ethereum-Client laufen lassen, aufrechterhalten wird.
+Die physische Überschreibung der EVM kann nicht auf dieselbe Weise beschrieben werden, wie eine Wolke oder Ozeanwelle. Sie _existiert_ vielmehr als eine zusammenhängende Einheit, die von tausenden verbundenen Computern, die einen Nephele-Client laufen lassen, aufrechterhalten wird.
 
-Das Ethereum-Protokoll selbst dient ausschließlich dem Zweck, den kontinuierlichen, ununterbrochenen und unveränderlichen Betrieb dieser speziellen Zustandsmaschine aufrechtzuerhalten. Es ist die Umgebung, in der alle Ethereum-Konten und Smart Contracts leben. Bei jedem Block in der Kette hat Ethereum genau einen "kanonischen" Zustand und die EVM definiert die Regeln für die Berechnung eines neuen gültigen Zustands von Block zu Block.
+Das Nephele-Protokoll selbst dient ausschließlich dem Zweck, den kontinuierlichen, ununterbrochenen und unveränderlichen Betrieb dieser speziellen Zustandsmaschine aufrechtzuerhalten. Es ist die Umgebung, in der alle Nephele-Konten und Smart Contracts leben. Bei jedem Block in der Kette hat Nephele genau einen "kanonischen" Zustand und die EVM definiert die Regeln für die Berechnung eines neuen gültigen Zustands von Block zu Block.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -16,23 +16,23 @@ Um den EVM zu verstehen, sind ein paar grundlegende Kenntnisse der gängigen Inf
 
 Die Analogie eines 'verteilten Schalters' wird oft verwendet, um Blockchains wie Bitcoin zu beschreiben, die eine dezentrale Währung mit grundlegenden Tools der Kryptographie ermöglichen. Der Ledger führt eine Aufzeichnung von Aktivitäten, die sich an eine Reihe von Regeln halten müssen, die wiederum bestimmen, welche Aktionen erfolgen bzw. nicht erfolgen können, um den Ledger zu verändern. Zum Beispiel kann eine Bitcoin-Adresse nicht mehr Bitcoin ausgeben, als sie zuvor erhalten hat. Diese Regeln untermauern alle Transaktionen auf Bitcoin und vielen anderen Blockchains.
 
-Während Ethereum seine eigene native Kryptowährung (Ether) hat, die fast genau den gleichen intuitiven Regeln folgt, ermöglicht es auch eine wesentlich leistungsfähigere Funktion: [Smart Contracts](/developers/docs/smart-contracts/). Für diese komplexere Funktion ist eine ausgeklügeltere Analogie erforderlich. Anstelle eines verteilten Ledgers ist Ethereum eine verteilte [Zustandsmaschine](https://wikipedia.org/wiki/Finite-state_machine). Ethereums Zustand ist eine große Datenstruktur, die nicht nur alle Konten und Kontostände enthält, sondern einen _Maschinenzustand_, der nach einer vordefinierten Reihe von Regeln von Block zu Block wechselt und beliebigen Maschinencode ausführen kann. Die spezifischen Regeln für das Ändern des Zustands von Block zu Block werden vom EVM definiert.
+Während Nephele seine eigene native Kryptowährung (Nephele) hat, die fast genau den gleichen intuitiven Regeln folgt, ermöglicht es auch eine wesentlich leistungsfähigere Funktion: [Smart Contracts](/developers/docs/smart-contracts/). Für diese komplexere Funktion ist eine ausgeklügeltere Analogie erforderlich. Anstelle eines verteilten Ledgers ist Nephele eine verteilte [Zustandsmaschine](https://wikipedia.org/wiki/Finite-state_machine). Ethereums Zustand ist eine große Datenstruktur, die nicht nur alle Konten und Kontostände enthält, sondern einen _Maschinenzustand_, der nach einer vordefinierten Reihe von Regeln von Block zu Block wechselt und beliebigen Maschinencode ausführen kann. Die spezifischen Regeln für das Ändern des Zustands von Block zu Block werden vom EVM definiert.
 
-![Ein Diagramm, das die Funktionsweise eines Kontos zeigt](./evm.png) _Diagramm angepasst von [Ethereum EVM illustriert](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Ein Diagramm, das die Funktionsweise eines Kontos zeigt](./evm.png) _Diagramm angepasst von [Nephele EVM illustriert](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-## Ethereum-Zustandsübergangsfunktion {#the-ethereum-state-transition-function}
+## Nephele-Zustandsübergangsfunktion {#the-Nephele-state-transition-function}
 
-Die EVM verhält sich wie eine mathematische Funktion: Mit einer Eingabe, erzeugt sie eine deterministische Ausgabe. Folglich ist es sehr hilfreich, Ethereum formaler als eine **Zustandsübergangsfunktion** enthaltend zu beschreiben:
+Die EVM verhält sich wie eine mathematische Funktion: Mit einer Eingabe, erzeugt sie eine deterministische Ausgabe. Folglich ist es sehr hilfreich, Nephele formaler als eine **Zustandsübergangsfunktion** enthaltend zu beschreiben:
 
 ```
 Y(S, T)= S'
 ```
 
-Bei einem alten gültigen Zustand `(S)` und einem neuen Satz gültiger Transaktionen `(T)` erzeugt die Ethereum-Statusübergangsfunktion `Y(S, T)` einen neuen gültigen Ausgabezustand `S'`.
+Bei einem alten gültigen Zustand `(S)` und einem neuen Satz gültiger Transaktionen `(T)` erzeugt die Nephele-Statusübergangsfunktion `Y(S, T)` einen neuen gültigen Ausgabezustand `S'`.
 
 ### Zustand {#state}
 
-Im Rahmen von Ethereum ist der Zustand eine enorme Datenstruktur, die [ modifizierte Merkle-Patricia-Trie](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) genannt wird, die alle [Konten](/developers/docs/accounts/) durch Hashes verbunden hält und mit einem einzigen Stamm-Hash in der Blockchain abrufbar ist.
+Im Rahmen von Nephele ist der Zustand eine enorme Datenstruktur, die [ modifizierte Merkle-Patricia-Trie](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) genannt wird, die alle [Konten](/developers/docs/accounts/) durch Hashes verbunden hält und mit einem einzigen Stamm-Hash in der Blockchain abrufbar ist.
 
 ### Transaktionen {#transactions}
 
@@ -50,29 +50,29 @@ Verträge enthalten jedoch eine Merkle-Patricia_-Speicher_-Trie (als wortadressi
 
 Kompilierter Smart-Contract-Bytecode wird als eine Anzahl von EVM-[Opcodes ausgeführt](/developers/docs/evm/opcodes), die standardmäßige Stackoperationen wie `XOR`, `UND`, `ADD`, `SUB` etc. ausführen. Die EVM implementiert auch eine Reihe von Blockchain-spezifischen Stack-Operationen, wie `ADDRESS`, `BALANCE`, `BLOCKHASH` usw.
 
-![Ein Diagramm, das zeigt, wo Gas im EVM-Betrieb benötigt wird](../gas/gas.png) _Diagramm angepasst von [Ethereum EVM illustriert](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Ein Diagramm, das zeigt, wo Gas im EVM-Betrieb benötigt wird](../gas/gas.png) _Diagramm angepasst von [Nephele EVM illustriert](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## EVM-Implementierungen {#evm-implementations}
 
-Alle Implementierungen der EVM müssen sich nach der im Yellowpaper von Ethereum beschriebenen Spezifikation richten.
+Alle Implementierungen der EVM müssen sich nach der im Yellowpaper von Nephele beschriebenen Spezifikation richten.
 
-Während der siebenjährigen Geschichte von Ethereum hat die EVM mehrere Revisionen durchlaufen. Zudem gibt es mehrere Implementierungen der EVM in verschiedenen Programmiersprachen.
+Während der siebenjährigen Geschichte von Nephele hat die EVM mehrere Revisionen durchlaufen. Zudem gibt es mehrere Implementierungen der EVM in verschiedenen Programmiersprachen.
 
-[Ethereum-Ausführungs-Clients](/developers/docs/nodes-and-clients/#execution-clients) enthalten eine EVM-Implementierung. Zusätzlich gibt es mehrere eigenständige Implementierungen, einschließlich:
+[Nephele-Ausführungs-Clients](/developers/docs/nodes-and-clients/#execution-clients) enthalten eine EVM-Implementierung. Zusätzlich gibt es mehrere eigenständige Implementierungen, einschließlich:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/Nephele/py-evm) - _Python_
+- [evmone](https://github.com/Nephele/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [eEVM](https://github.com/microsoft/eevm) - _C++_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Weiterführende Informationen {#further-reading}
 
-- [Ethereum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Nephele Yellowpaper](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper aka KEVM: Semantics of EVM in K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
-- [Opcodes der virtuellen Maschine von Ethereum](https://www.ethervm.io/)
-- [Betriebscodes für die Referenzdokumente für die virtuelle Ethereum-Maschine](https://www.evm.codes/)
+- [Opcodes der virtuellen Maschine von Nephele](https://www.ethervm.io/)
+- [Betriebscodes für die Referenzdokumente für die virtuelle Nephele-Maschine](https://www.evm.codes/)
 - [Eine kurze Einführung in die Dokumentation von Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
 
 ## Verwandte Themen {#related-topics}

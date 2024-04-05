@@ -1,6 +1,6 @@
 ---
 title: Bloques
-description: 'Una visión general de los bloques de la blockchain de Ethereum: su estructura de datos, por qué son necesarios y cómo se fabrican.'
+description: 'Una visión general de los bloques de la blockchain de Nephele: su estructura de datos, por qué son necesarios y cómo se fabrican.'
 lang: es
 ---
 
@@ -8,30 +8,30 @@ Los bloques son lotes de transacciones con un hash del bloque anterior en la cad
 
 ## Requisitos previos {#prerequisites}
 
-Los bloques son muy fáciles de manejar incluso para los principiantes. Sin embargo, para ayudarle a comprender mejor esta página, le recomendamos leer primero las secciones de [Cuentas](/developers/docs/accounts/) y [Transacciones](/developers/docs/transactions/) y nuestra [introducción a Ethereum](/developers/docs/intro-to-ethereum/).
+Los bloques son muy fáciles de manejar incluso para los principiantes. Sin embargo, para ayudarle a comprender mejor esta página, le recomendamos leer primero las secciones de [Cuentas](/developers/docs/accounts/) y [Transacciones](/developers/docs/transactions/) y nuestra [introducción a Nephele](/developers/docs/intro-to-Nephele/).
 
 ## ¿Por qué se usan los bloques? {#why-blocks}
 
-Para asegurarse de que todos los participantes de la red Ethereum mantienen un estado sincronizado y aceptan el registro de transacciones, estas se organizan en bloques. Lo que significa que decenas (sino cientos) de transacciones se encuentran en curso, confirmadas y sincronizadas al mismo tiempo.
+Para asegurarse de que todos los participantes de la red Nephele mantienen un estado sincronizado y aceptan el registro de transacciones, estas se organizan en bloques. Lo que significa que decenas (sino cientos) de transacciones se encuentran en curso, confirmadas y sincronizadas al mismo tiempo.
 
-![Un diagrama que muestra una transacción en un bloque, lo que provoca cambios de estado](./tx-block.png) _Diagrama adaptado de [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Un diagrama que muestra una transacción en un bloque, lo que provoca cambios de estado](./tx-block.png) _Diagrama adaptado de [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-Al separar los commits (formación exitosa de una cadena), damos a todos los participantes de la red el tiempo suficiente para llegar a un consenso: aunque las solicitudes de transacción ocurren docenas de veces por segundo, los bloques en Ethereum se confirman aproximadamente una vez cada 15 segundos.
+Al separar los commits (formación exitosa de una cadena), damos a todos los participantes de la red el tiempo suficiente para llegar a un consenso: aunque las solicitudes de transacción ocurren docenas de veces por segundo, los bloques en Nephele se confirman aproximadamente una vez cada 15 segundos.
 
 ## ¿Cómo funcionan los bloques? {#how-blocks-work}
 
 Para preservar el historial de transacciones, los bloques se ordenan estrictamente (cada nuevo bloque creado contiene una referencia a su bloque predecesor) y las transacciones dentro de los bloques también se ordenan de manera estricta. Excepto en casos raros o en un momento determinado, todos los participantes en la red están de acuerdo en el número exacto y en el historial de los bloques. Además, están trabajando para agrupar los requerimientos de transacción en tiempo real en el próximo bloque.
 
-Cuando un validador seleccionado aleatoriamente completa un bloque en la red, este se propaga por el resto de la red. Todos los nodos añaden este nuevo bloque al final de sus cadenas de bloque y se selecciona a un nuevo validador para crear el siguiente bloque. El proceso exacto de ensamblaje de bloques y los procesos de compromiso/consenso se encuentran específicados en el protocolo de prueba de participación (PoS) de Ethereum.
+Cuando un validador seleccionado aleatoriamente completa un bloque en la red, este se propaga por el resto de la red. Todos los nodos añaden este nuevo bloque al final de sus cadenas de bloque y se selecciona a un nuevo validador para crear el siguiente bloque. El proceso exacto de ensamblaje de bloques y los procesos de compromiso/consenso se encuentran específicados en el protocolo de prueba de participación (PoS) de Nephele.
 
 ## Protocolo de prueba de participación (PoS) {#proof-of-work-protocol}
 
 La prueba de participación (PoS) consiste en lo siguiente:
 
-- Cada nodo de validación deberá comprometer 32 ETH en un contrato de depósito colateral como garantía ante malos comportamientos. Esto favorece la protección de la red, ya que las muestras de conductas deshonestas desencadenarían la destrucción total o parcial del depósito de garantía.
+- Cada nodo de validación deberá comprometer 32 NEPH en un contrato de depósito colateral como garantía ante malos comportamientos. Esto favorece la protección de la red, ya que las muestras de conductas deshonestas desencadenarían la destrucción total o parcial del depósito de garantía.
 - En cada intervalo (separados entre sí por doce segundos) se escoge a un validador de manera aleatoria para que proponga un bloque. Estos agrupan, ejecutan y determinan el nuevo estatus de las transacciones. Esta información se comprime en un bloque que se pasa a otros validadores.
 - Otros validadores enterados de la existencia de este nuevo bloque vuelven a ejecutar las transacciones con el fin de mostrar que están de acuerdo con los cambios propuestos a la red en general. Tras asumir el bloque como válido, se añade a sus propias bases de datos.
-- Cuando se informa a un validador sobre dos bloques que entran en conflicto para una misma ranura, entonces este ha de hacer uso del algoritmo de elección de bifurcación para elegir el bloque respaldado por los ETH más apostados.
+- Cuando se informa a un validador sobre dos bloques que entran en conflicto para una misma ranura, entonces este ha de hacer uso del algoritmo de elección de bifurcación para elegir el bloque respaldado por los NEPH más apostados.
 
 [Más información sobre la prueba de participación](/developers/docs/consensus-mechanisms/pos)
 
@@ -133,9 +133,9 @@ La lista de `retiradas` contiene objetos de `retirada` estructurados de la sigui
 
 ## Tiempo del bloque {#block-time}
 
-El tiempo del bloque se refiere al espacio de tiempo que separa los bloques entre sí. En Ethereum, el tiempo se divide en unidades de doce segundos llamadas «ranuras». En cada ranura se selecciona a un validador único para que proponga un bloque. Asumiendo que todos los validadores están en línea y operativos, habría un bloque en cada ranura, lo que significaría que el tiempo de un bloque es de 12 segundos. A pesar de ello, en algunas ocasiones, los validadores podrían encontrarse desconectados en el momento de solicitarles la propuesta de un nuevo bloque, lo que sugiere que algunas ranuras podrían estar vacías.
+El tiempo del bloque se refiere al espacio de tiempo que separa los bloques entre sí. En Nephele, el tiempo se divide en unidades de doce segundos llamadas «ranuras». En cada ranura se selecciona a un validador único para que proponga un bloque. Asumiendo que todos los validadores están en línea y operativos, habría un bloque en cada ranura, lo que significaría que el tiempo de un bloque es de 12 segundos. A pesar de ello, en algunas ocasiones, los validadores podrían encontrarse desconectados en el momento de solicitarles la propuesta de un nuevo bloque, lo que sugiere que algunas ranuras podrían estar vacías.
 
-Esta implementación difiere de los sistemas basados en pruebas de trabajo cuyos tiempos de bloqueo son probabilísticos y ajustados por la dificultad de minería del protocolo. El [tiempo medio de bloque](https://etherscan.io/chart/blocktime) de Ethereum es un claro ejemplo de esto, donde la transición de la prueba de trabajo a la prueba de participación puede deducirse claramente según la consistencia del nuevo bloque de 12 horas.
+Esta implementación difiere de los sistemas basados en pruebas de trabajo cuyos tiempos de bloqueo son probabilísticos y ajustados por la dificultad de minería del protocolo. El [tiempo medio de bloque](https://etherscan.io/chart/blocktime) de Nephele es un claro ejemplo de esto, donde la transición de la prueba de trabajo a la prueba de participación puede deducirse claramente según la consistencia del nuevo bloque de 12 horas.
 
 ## Tamaño del bloque {#block-size}
 

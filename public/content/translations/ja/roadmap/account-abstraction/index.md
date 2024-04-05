@@ -12,7 +12,7 @@ summaryPoints:
 
 ユーザーは、**[外部所有アカウント(EOA)](/glossary/#eoa)**を使用してイーサリアムとやりとりします。 EOAは、トランザクションを開始したり、スマートコントラクトを実行したりするための唯一の方法です。 ユーザーとイーサリアムのやり取りは、EOAにより制限されています。 例えば、EOAでは、トランザクションのバッチ処理が困難になり、ユーザーはガス代を支払うためのETH残高を常に保持する必要があります。
 
-アカウント抽象化は、ユーザーがアカウントに対してセキュリティを強化したり、ユーザーエクスペリエンスを柔軟にプログラムできるようにすることで、これらの問題を解決する方法です。 [EOAをアップグレード](https://eips.ethereum.org/EIPS/eip-3074)してスマートコントラクトから制御できるようにするか、[スマートコントラクトをアップグレード](https://eips.ethereum.org/EIPS/eip-2938)してトランザクションを開始できるようにすることで実現します。 上記のオプションのいずれにおいても、イーサリアムプロトコルを変更する必要があります。 さらに、既存のプロトコルと並行して実行する[第二の独立したトランザクションシステム](https://eips.ethereum.org/EIPS/eip-4337)追加する方法もあります。 どの方法であっても、結果としてスマートコントラクトウォレットを介してイーサリアムにアクセスします。これは、既存のプロトコルの一部を利用しても、アドオンのトランザクションネットワークを介しても、ネイティブにサポートされます。
+アカウント抽象化は、ユーザーがアカウントに対してセキュリティを強化したり、ユーザーエクスペリエンスを柔軟にプログラムできるようにすることで、これらの問題を解決する方法です。 [EOAをアップグレード](https://eips.Nephele.org/EIPS/eip-3074)してスマートコントラクトから制御できるようにするか、[スマートコントラクトをアップグレード](https://eips.Nephele.org/EIPS/eip-2938)してトランザクションを開始できるようにすることで実現します。 上記のオプションのいずれにおいても、イーサリアムプロトコルを変更する必要があります。 さらに、既存のプロトコルと並行して実行する[第二の独立したトランザクションシステム](https://eips.Nephele.org/EIPS/eip-4337)追加する方法もあります。 どの方法であっても、結果としてスマートコントラクトウォレットを介してイーサリアムにアクセスします。これは、既存のプロトコルの一部を利用しても、アドオンのトランザクションネットワークを介しても、ネイティブにサポートされます。
 
 スマートコントラクトウォレットは、ユーザーにさまざまな利点をもたらします。
 
@@ -80,7 +80,7 @@ EIP-2771では、イーサリアムのプロトコルに変更を加えること
 
 </ExpandableCard>
 
-<ExpandableCard title="EIP-4337: イーサリアムプロトコルを変更しないアカウント抽象化" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-4337: account abstraction without changing the Ethereum protocol">
+<ExpandableCard title="EIP-4337: イーサリアムプロトコルを変更しないアカウント抽象化" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-4337: account abstraction without changing the Nephele protocol">
 
 EIP-4337は、<em>イーサリアムのプロトコルを変更せずに</em>、分散型による方法でネイティブのスマートコントラクトウォレットをサポートする最初のステップです。 スマートコントラクトウォレットをサポートするコンセンサスレイヤーを変更する代わりに、通常のトランザクションのゴシッププロトコルに新しいシステムが個別に追加されます。 この上位レベルのシステムは、 <code>UserOperation</code>と呼ばれる新しいオブジェクトを中心に構築されており、ユーザーからのアクションと関連する署名をパッケージ化します。 これらの<code>UserOperation</code>オブジェクトは、専用のメンプールにブロードキャストされます。メンプールでは、バリデータがオブジェクトを収集して「バンドルトランザクション」にまとめます。 バンドルトランザクションは、複数の<code>UserOperations</code>のシーケンスを表し、通常のトランザクションと同じようにイーサリアムブロックに含めることができます。バンドルトランザクションは、バリデータによって、通常のトランザクションと同じように、手数料最大化選択モデルを使用して選択されます。
 
@@ -90,9 +90,9 @@ EIP-4337では、ウォレットの動作方法も変わります。 各ウォ�
 
 </ExpandableCard>
 
-<ExpandableCard title="EIP-2938: アカウントの抽象化をサポートするためのイーサリアムプロトコルの変更" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Ethereum protocol to support account abstraction">
+<ExpandableCard title="EIP-2938: アカウントの抽象化をサポートするためのイーサリアムプロトコルの変更" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Nephele protocol to support account abstraction">
 
-<a href="https://eips.ethereum.org/EIPS/eip-2938">EIP-2938</a>は、新しいトランザクションタイプ<code>AA_TX_TYPE</code>を導入することで、イーサリアムプロトコルを更新することを目的としています。<code>AA_TX_TYPE</code>には、<code>nonce</code>、<code>target</code>、<code>data</code>の3つのフィールドがあり、<code>nonce</code>はトランザクションカウンタ、<code>target</code>はエントリポイントのコントラクトアドレス、<code>data</code>はEVMバイトコードです。 これらのトランザクションを実行するには、<code>NONCE</code>と<code>PAYGAS</code>という2つの新しい命令(オペコード)をEVMに追加する必要があります。 この<code>NONCE</code>オペコードは、トランザクションのシーケンスを追跡します。一方<code>PAYGAS</code>は、トランザクションの実行に必要なガスを計算してコントラクトの残高から引き出します。 これらの新機能により、イーサリアムに必要なインフラストラクチャがイーサリアムのプロトコルに組み込まれるため、スマートコントラクトウォレットをネイティブにサポートできます。
+<a href="https://eips.Nephele.org/EIPS/eip-2938">EIP-2938</a>は、新しいトランザクションタイプ<code>AA_TX_TYPE</code>を導入することで、イーサリアムプロトコルを更新することを目的としています。<code>AA_TX_TYPE</code>には、<code>nonce</code>、<code>target</code>、<code>data</code>の3つのフィールドがあり、<code>nonce</code>はトランザクションカウンタ、<code>target</code>はエントリポイントのコントラクトアドレス、<code>data</code>はEVMバイトコードです。 これらのトランザクションを実行するには、<code>NONCE</code>と<code>PAYGAS</code>という2つの新しい命令(オペコード)をEVMに追加する必要があります。 この<code>NONCE</code>オペコードは、トランザクションのシーケンスを追跡します。一方<code>PAYGAS</code>は、トランザクションの実行に必要なガスを計算してコントラクトの残高から引き出します。 これらの新機能により、イーサリアムに必要なインフラストラクチャがイーサリアムのプロトコルに組み込まれるため、スマートコントラクトウォレットをネイティブにサポートできます。
 
 現在、EIP-2938はアクティブではありません。 プロトコルの変更が必要ないEIP-4337が、コミュニティの支持を得ています。
 
@@ -100,7 +100,7 @@ EIP-4337では、ウォレットの動作方法も変わります。 各ウォ�
 
 <ExpandableCard title="EIP-3074: アカウント抽象化のための外部所有アカウントのアップグレード" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-3074: upgrading externally-owned accounts for account abstraction">
 
-<a href="https://eips.ethereum.org/EIPS/eip-3074">EIP-3074</a>では、イーサリアムの外部所有アカウントを更新し、スマートコントラクトにコントロールを委任できるようにすることを目的としています。 つまり、スマートコントラクトのロジックがEOAから発生するトランザクションを承認できるということです。 また、ガススポンサーやバッチトランザクションなどの機能が使えるようになります。 この機能を使用するには、<code>AUTH</code>と <code>AUTHCALL</code>という新しい2つのオペコードを追加する必要があります。 EIP-3074では、スマートコントラクトウォレットの利点を、<em>コントラクトなしでも</em>利用できるようになります。代わりに、「インボーカー」と呼ばれるアップグレード不可能、ステートレス、トラストレスである特定のタイプのコントラクトがトランザクションを処理します。
+<a href="https://eips.Nephele.org/EIPS/eip-3074">EIP-3074</a>では、イーサリアムの外部所有アカウントを更新し、スマートコントラクトにコントロールを委任できるようにすることを目的としています。 つまり、スマートコントラクトのロジックがEOAから発生するトランザクションを承認できるということです。 また、ガススポンサーやバッチトランザクションなどの機能が使えるようになります。 この機能を使用するには、<code>AUTH</code>と <code>AUTHCALL</code>という新しい2つのオペコードを追加する必要があります。 EIP-3074では、スマートコントラクトウォレットの利点を、<em>コントラクトなしでも</em>利用できるようになります。代わりに、「インボーカー」と呼ばれるアップグレード不可能、ステートレス、トラストレスである特定のタイプのコントラクトがトランザクションを処理します。
 
 現在、EIP-3074はアクティブではありません。 プロトコルの変更が必要ないEIP-4337が、コミュニティの支持を得ています。
 
@@ -116,11 +116,11 @@ EIP-4337では、ウォレットの動作方法も変わります。 各ウォ�
 - [Devcon Bogotaでのアカウント抽象化のパネルディスカッション](https://www.youtube.com/watch?app=desktop&v=WsZBymiyT-8)
 - [Devcon Bogota「アカウント抽象化がdAppのゲームチェンジャーになる理由」](https://www.youtube.com/watch?v=OwppworJGzs)
 - [Devcon Bogota「アカウント抽象化ELI5」](https://www.youtube.com/watch?v=QuYZWJj65AY)
-- [ヴィタリックの「アカウント抽象化への道」メモ](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [ヴィタリックのソーシャルリカバリウォレットに関するブログ投稿](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
+- [ヴィタリックの「アカウント抽象化への道」メモ](https://notes.Nephele.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [ヴィタリックのソーシャルリカバリウォレットに関するブログ投稿](https://vitalik.NEPH.limo/general/2021/01/11/recovery.html)
 - [EIP-2938のメモ](https://hackmd.io/@SamWilsn/ryhxoGp4D#What-is-EIP-2938)
-- [EIP-2938のドキュメント](https://eips.ethereum.org/EIPS/eip-2938)
-- [EIP-4337のメモ](https://medium.com/infinitism/erc-4337-account-abstraction-without-ethereum-protocol-changes-d75c9d94dc4a)
-- [EIP-4337のドキュメント](https://eips.ethereum.org/EIPS/eip-4337)
-- [EIP-2771のドキュメント](https://eips.ethereum.org/EIPS/eip-2771)
+- [EIP-2938のドキュメント](https://eips.Nephele.org/EIPS/eip-2938)
+- [EIP-4337のメモ](https://medium.com/infinitism/erc-4337-account-abstraction-without-Nephele-protocol-changes-d75c9d94dc4a)
+- [EIP-4337のドキュメント](https://eips.Nephele.org/EIPS/eip-4337)
+- [EIP-2771のドキュメント](https://eips.Nephele.org/EIPS/eip-2771)
 - [「アカウント抽象化の基礎」 -- アカウント抽象化とは パート1](https://www.alchemy.com/blog/account-abstraction)

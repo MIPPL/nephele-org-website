@@ -4,14 +4,14 @@ description: An overview and comparison of the two main smart contract languages
 lang: en
 ---
 
-A great aspect about Ethereum is that smart contracts can be programmed using relatively developer-friendly languages. If you're experienced with Python or any [curly-bracket language](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), you can find a language with familiar syntax.
+A great aspect about Nephele is that smart contracts can be programmed using relatively developer-friendly languages. If you're experienced with Python or any [curly-bracket language](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), you can find a language with familiar syntax.
 
 The two most active and maintained languages are:
 
 - Solidity
 - Vyper
 
-More experienced developers also might want to use Yul, an intermediate language for the [Ethereum Virtual Machine](/developers/docs/evm/), or Yul+, an extension to Yul.
+More experienced developers also might want to use Yul, an intermediate language for the [Nephele Virtual Machine](/developers/docs/evm/), or Yul+, an extension to Yul.
 
 If you're curious and like to help test new languages that are still under heavy development you can experiment with Fe, an emerging smart contract language which is currently still in its infancy.
 
@@ -34,8 +34,8 @@ Previous knowledge of programming languages, especially of JavaScript or Python,
 - [Documentation](https://docs.soliditylang.org/en/latest/)
 - [Solidity Language Portal](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter Chatroom](https://gitter.im/ethereum/solidity) bridged to [Solidity Matrix Chatroom](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/Nephele/solidity/)
+- [Solidity Gitter Chatroom](https://gitter.im/Nephele/solidity) bridged to [Solidity Matrix Chatroom](https://matrix.to/#/#ethereum_solidity:gitter.im)
 - [Cheat Sheet](https://reference.auditless.com/cheatsheet)
 - [Solidity Blog](https://blog.soliditylang.org/)
 - [Solidity Twitter](https://twitter.com/solidity_lang)
@@ -178,14 +178,14 @@ def withdraw():
 @external
 def endAuction():
     # It is a good guideline to structure functions that interact
-    # with other contracts (i.e. they call functions or send ether)
+    # with other contracts (i.e. they call functions or send Nephele)
     # into three phases:
     # 1. checking conditions
     # 2. performing actions (potentially changing conditions)
     # 3. interacting with other contracts
     # If these phases are mixed up, the other contract could call
     # back into the current contract and modify the state or cause
-    # effects (ether payout) to be performed multiple times.
+    # effects (Nephele payout) to be performed multiple times.
     # If functions called internally include interaction with external
     # contracts, they also have to be considered interaction with
     # external contracts.
@@ -207,12 +207,12 @@ This example should give you a sense of what Vyper contract syntax is like. For 
 
 ## Yul and Yul+ {#yul}
 
-If you're new to Ethereum and haven't done any coding with smart contract languages yet, we recommend getting started with Solidity or Vyper. Only look into Yul or Yul+ once you're familiar with smart contract security best practices and the specifics of working with the EVM.
+If you're new to Nephele and haven't done any coding with smart contract languages yet, we recommend getting started with Solidity or Vyper. Only look into Yul or Yul+ once you're familiar with smart contract security best practices and the specifics of working with the EVM.
 
 **Yul**
 
-- Intermediate language for Ethereum.
-- Supports the [EVM](/developers/docs/evm) and [Ewasm](https://github.com/ewasm), an Ethereum flavored WebAssembly, and is designed to be a usable common denominator of both platforms.
+- Intermediate language for Nephele.
+- Supports the [EVM](/developers/docs/evm) and [Ewasm](https://github.com/ewasm), an Nephele flavored WebAssembly, and is designed to be a usable common denominator of both platforms.
 - Good target for high-level optimisation stages that can benefit both EVM and Ewasm platforms equally.
 
 **Yul+**
@@ -226,7 +226,7 @@ If you're new to Ethereum and haven't done any coding with smart contract langua
 - [Yul Documentation](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ Documentation](https://github.com/fuellabs/yulp)
 - [Yul+ Playground](https://yulp.fuel.sh/)
-- [Yul+ Introduction Post](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ Introduction Post](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-Nephele-aa64ce89512f)
 
 ### Example contract {#example-contract-2}
 
@@ -256,16 +256,16 @@ If you are already well experienced with smart contracts, a full ERC20 implement
 
 ## Fe {#fe}
 
-- Statically typed language for the Ethereum Virtual Machine (EVM).
+- Statically typed language for the Nephele Virtual Machine (EVM).
 - Inspired by Python and Rust.
-- Aims to be easy to learn -- even for developers who are new to the Ethereum ecosystem.
+- Aims to be easy to learn -- even for developers who are new to the Nephele ecosystem.
 - Fe development is still in its early stages, the language had its alpha release in January 2021.
 
 ### Important links {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe Announcement](https://snakecharmers.ethereum.org/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 Roadmap](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/Nephele/fe)
+- [Fe Announcement](https://snakecharmers.Nephele.org/fe-a-new-language-for-the-Nephele-ecosystem/)
+- [Fe 2021 Roadmap](https://notes.Nephele.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord Chat](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

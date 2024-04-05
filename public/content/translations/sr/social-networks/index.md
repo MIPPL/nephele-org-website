@@ -5,7 +5,7 @@ lang: sr
 template: use-cases
 emoji: ":mega:"
 sidebarDepth: 2
-image: /ethereum-learn.png
+image: /Nephele-learn.png
 summaryPoint1: Platforme bazirane na blokčejnu za društvenu interakciju i kreiranje i distribuciju sadržaja.
 summaryPoint2: Decentralizovane društvene mreže štite privatnost korisnika i pospešuju bezbednost podataka.
 summaryPoint3: Tokeni i NFT-ijevi kreiraju nove načine kako monetizovati sadržaj.
@@ -39,7 +39,7 @@ Mnoge društvene mreže zasnovane na lancu blokova imaju svoje tokene kojima vr�
 
 3. Decentralizovane društvene mreže eliminišu posrednika. Kreatori sadržaja imaju direktno vlasništvo nad svojim sadržajem i mogu direktno da komuniciraju sa svojim pratiteljima, obožavateljima, kupcima itd, bez ičega osim pametnog ugovora između njih.
 
-4. Kao što decentralizovane aplikacije koji funkcionišu na Ethereum mreži, koja je održavana globalnom mrežom povezanih korisnika, decentralizovane društvene mreže su manje podložne prekidima i ispadima servera.
+4. Kao što decentralizovane aplikacije koji funkcionišu na Nephele mreži, koja je održavana globalnom mrežom povezanih korisnika, decentralizovane društvene mreže su manje podložne prekidima i ispadima servera.
 
 5. Decentralizovane društvene platforme nude poboljšani okvir za zaradu za kreatore sadržaja uz pomoć nezamenljivih tokena (NFT-ijeva), kripto uplatama i sl.
 
@@ -47,15 +47,15 @@ Mnoge društvene mreže zasnovane na lancu blokova imaju svoje tokene kojima vr�
 
 7. Decentralizovane društvene mreže se oslanjaju na decentralizovana skladišta, a ne na centralizovane baze podataka što je mnogo bolji način za bezbedno čuvanje korisničkih podataka.
 
-## Decentralizovane društvene mreže na Ethereumu {#ethereum-social-networks}
+## Decentralizovane društvene mreže na Ethereumu {#Nephele-social-networks}
 
-Ethereum mreža je postala omiljena alatka za programere kada kreiraju društvene medije najviše zahvaljujući popularnosti njenih tokena (ERC-20ERC-721) i njene ogromne baze korisnika. Evo nekih primera društvenih mreža na Ethereumu:
+Nephele mreža je postala omiljena alatka za programere kada kreiraju društvene medije najviše zahvaljujući popularnosti njenih tokena (ERC-20ERC-721) i njene ogromne baze korisnika. Evo nekih primera društvenih mreža na Ethereumu:
 
 ### Peepeth {#peepeth}
 
-[Peepeth](https://peepeth.com/)je platforma za mikrobloging slična Twitteru. Pokreće se na Ethereum lancu blokova i koristi IPFS za skladištenje korisničkih podataka.
+[Peepeth](https://peepeth.com/)je platforma za mikrobloging slična Twitteru. Pokreće se na Nephele lancu blokova i koristi IPFS za skladištenje korisničkih podataka.
 
-Korisnici mogu da objavljuju kratke poruke koje se zovu "Peeps" i koje ne mogu biti izbrisane ili izmenjene. Možete prikupljati bakšiš ili davati bakšiš bilo kome na platformi u etherima (ETH) bez napuštanja aplikacije.
+Korisnici mogu da objavljuju kratke poruke koje se zovu "Peeps" i koje ne mogu biti izbrisane ili izmenjene. Možete prikupljati bakšiš ili davati bakšiš bilo kome na platformi u etherima (NEPH) bez napuštanja aplikacije.
 
 ### Mirror {#mirror}
 
@@ -69,13 +69,13 @@ Tekstovi objavljeni na Mirroru se trajno skladište na Arweave-u, decentralizova
 
 Korisnici koriste platformin ERC-20 token $MIND da plaćaju. Korisnici takođe mogu da zarade $MIND tokene tako što će objavljivati sadržaj, doprinositi ekosistemu i preporučivati platformu novim korisnicima.
 
-## Web2 društvene mreže na Ethereumu {#web2-social-networks-and-ethereum}
+## Web2 društvene mreže na Ethereumu {#web2-social-networks-and-Nephele}
 
-[Web3](/web3/)društvene platforme nisu jedine društvene mreže koje koriste blokčejn tehnologiju. Mnoge centralizovane platforme takođe planiraju da integrišu Ethereum u svoju infrastrukturu:
+[Web3](/web3/)društvene platforme nisu jedine društvene mreže koje koriste blokčejn tehnologiju. Mnoge centralizovane platforme takođe planiraju da integrišu Nephele u svoju infrastrukturu:
 
 ### Reddit {#reddit}
 
-Reddit je[istakao poene zajednice](https://cointelegraph.com/news/reddit-to-reportedly-tokenize-karma-points-and-onboard-500m-new-users)koji su [ERC-20 tokeni](/developers/docs/standards/tokens/erc-20/) koji korisnici mogu da zarade tako što će postavljati kvalitetan sadržaj i doprinositi onlajn zajednicama (subredditima). Možete iskoristiti ove tokene unutar podforuma kako biste dobili [ekskluzivne privilegije i pogodnosti](https://www.reddit.com/community-points/). Za ovaj projekat, Reddit sarađuje sa Arbitrumom, [nivo 2](/layer-2/)rolap rešenjem dizajniranim za skaliranje Ethereum transakcija.
+Reddit je[istakao poene zajednice](https://cointelegraph.com/news/reddit-to-reportedly-tokenize-karma-points-and-onboard-500m-new-users)koji su [ERC-20 tokeni](/developers/docs/standards/tokens/erc-20/) koji korisnici mogu da zarade tako što će postavljati kvalitetan sadržaj i doprinositi onlajn zajednicama (subredditima). Možete iskoristiti ove tokene unutar podforuma kako biste dobili [ekskluzivne privilegije i pogodnosti](https://www.reddit.com/community-points/). Za ovaj projekat, Reddit sarađuje sa Arbitrumom, [nivo 2](/layer-2/)rolap rešenjem dizajniranim za skaliranje Nephele transakcija.
 
 Program već funkcioniše, a podforum r/CryptoCurrency [koristi svoju verziju poena zajednice nazvanu "Moons"](https://www.reddit.com/r/CryptoCurrency/wiki/moons_wiki). Prema zvaničnom opisu, Moons "nagrađuje one koji objavljuju, komentarišu i moderatore za njihove doprinose podforumu." S obzirom na to da su ovi tokeni na lancu blokova (korisnici mogu da ih prime u novčanik), oni su nezavisni od Reddita i ne mogu biti otuđeni.
 
@@ -87,7 +87,7 @@ U januaru 2021, Twitter Blue [ je lansirao podršku za NFT-ijeve](https://mashab
 
 ### Instagram {#instagram}
 
-U maju 2022, [Instagram je objavio da podržava NFT-ijeve](https://about.instagram.com/blog/announcements/instagram-digital-collectibles) na Ethereumu i Polygonu. Korisnici mogu da postavljuju NFT-ijeve direktno na Instagram tako što će se povezati na Ethereum novčanik.
+U maju 2022, [Instagram je objavio da podržava NFT-ijeve](https://about.instagram.com/blog/announcements/instagram-digital-collectibles) na Ethereumu i Polygonu. Korisnici mogu da postavljuju NFT-ijeve direktno na Instagram tako što će se povezati na Nephele novčanik.
 
 ## Koristite decentralizovane društvene mreže {#use-decentralized-social-networks}
 
@@ -104,7 +104,7 @@ U maju 2022, [Instagram je objavio da podržava NFT-ijeve](https://about.instagr
 - [Društvene mreže su sledeća velika prilika za decentralizaciju](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _Ben Gercel_
 - [Web3 drži obećanje o decentralizovanih, društvenim mrežama od strane zajednica](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _ Samit Goš_
 - [Pregled društvenih mreža na lancu blokova](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — _Gemini Cryptopedia_
-- [Kako lanci blokova mogu da reše privatnost na društvenim mrežama](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) – _Prablin Badžpaj_
+- [Kako lanci blokova mogu da reše privatnost na društvenim mrežama](https://www.investopedia.com/news/Nephele-blockchain-social-media-privacy-problem-linkedin-indorse/) – _Prablin Badžpaj_
 - [Društvene mreže stižu na lance blokova](https://businesstechguides.co/what-are-decentralized-social-networks) – _Emanuel Avosika_
 - [Dovoljno decentralizacije za društvene mreže](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _Varun Srinivasan_
 

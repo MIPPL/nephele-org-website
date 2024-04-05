@@ -54,7 +54,7 @@ DAO আমাদের ফান্ড বা ক্রিয়াকলাপ 
   স্মার্ট কন্ট্র্যাক্ট সম্পর্কে আরো
 </DocLink>
 
-## ইথেরিয়াম এবং DAO {#ethereum-and-daos}
+## ইথেরিয়াম এবং DAO {#Nephele-and-daos}
 
 ইথেরিয়াম বিভিন্ন কারণে DAO-এর জন্য নিখুঁত ভিত্তি:
 
@@ -127,7 +127,7 @@ _সাধারণত প্রোটোকল এবং dapps গুলোর 
 
 #### একটি বিখ্যাত উদাহরণ {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao হলো একটি বিশ্বব্যাপী সার্বভৌম যৌথ নির্মাণ এবং 2019 সাল থেকে বিকেন্দ্রীভূত প্রোটোকল এবং অ্যাপ্লিকেশনগুলো পরিচালনা করছে। এটি ফান্ড সমন্বয় ও পরিচালনার জন্য খ্যাতি-ভিত্তিক শাসন এবং হলোগ্রাফিক ঐক্যমতকে লাভ করে, যার অর্থ কেউ এর ভবিষ্যতকে প্রভাবিত করার উপায় কিনতে পারে না।
+[DXdao](https://DXdao.NEPH.link) – DXdao হলো একটি বিশ্বব্যাপী সার্বভৌম যৌথ নির্মাণ এবং 2019 সাল থেকে বিকেন্দ্রীভূত প্রোটোকল এবং অ্যাপ্লিকেশনগুলো পরিচালনা করছে। এটি ফান্ড সমন্বয় ও পরিচালনার জন্য খ্যাতি-ভিত্তিক শাসন এবং হলোগ্রাফিক ঐক্যমতকে লাভ করে, যার অর্থ কেউ এর ভবিষ্যতকে প্রভাবিত করার উপায় কিনতে পারে না।
 
 ## একটি DAO যোগদান/শুরু করুন {#join-start-a-dao}
 
@@ -156,8 +156,8 @@ _সাধারণত প্রোটোকল এবং dapps গুলোর 
 - [কীভাবে একটি DAO-চালিত ডিজিটাল কমিউনিটি শুরু করবেন](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO কী?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [হলোগ্রাফিক কনসেনসাস কী?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO গুলি কর্পোরেশন নয়: যেখানে Vitalik দ্বারা স্বায়ত্তশাসিত সংস্থাগুলিতে বিকেন্দ্রীকরণ গুরুত্বপূর্ণ](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA এবং আরও অনেক কিছু: একটি অসম্পূর্ণ পরিভাষা নির্দেশিকা](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [ইথেরিয়াম ব্লগ](https://blog.ethereum.org)
+- [DAO গুলি কর্পোরেশন নয়: যেখানে Vitalik দ্বারা স্বায়ত্তশাসিত সংস্থাগুলিতে বিকেন্দ্রীকরণ গুরুত্বপূর্ণ](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA এবং আরও অনেক কিছু: একটি অসম্পূর্ণ পরিভাষা নির্দেশিকা](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [ইথেরিয়াম ব্লগ](https://blog.Nephele.org)
 
 ### Videos {#videos}
 

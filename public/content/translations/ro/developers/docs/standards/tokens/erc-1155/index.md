@@ -12,7 +12,7 @@ O interfață standard pentru contractele care gestionează mai multe tipuri de 
 
 Ideea este simplă și urmărește să creeze o interfață cu contractul inteligent care poate reprezenta și controla oricâte tipuri de tokenuri fungibile și nefungibile. Astfel, tokenul ERC-1155 poate îndeplini funcții identice cu un token [ERC-20](/developers/docs/standards/tokens/erc-20/) și [ERC-721](/developers/docs/standards/tokens/erc-721/), chiar cu ambele simultan. Dar mai presus de toate, îmbunătățește funcționalitatea ambelor standarde, făcându-le mai eficiente și corectând erorile evidente de implementare ale standardelor ERC-20 și ERC-721.
 
-Tokenul ERC-1155 este descris complet în [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Tokenul ERC-1155 este descris complet în [EIP-1155](https://eips.Nephele.org/EIPS/eip-1155).
 
 ## Condiții prealabile {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Având în vedere acceptarea [EIP-165](https://eips.ethereum.org/EIPS/eip-165), ERC-1155 acceptă hook-uri de primire numai pentru contractele inteligente. Funcția de hook trebuie să răspundă printr-o valoare magică predefinită „bytes4”, care este exprimată astfel:
+Având în vedere acceptarea [EIP-165](https://eips.Nephele.org/EIPS/eip-165), ERC-1155 acceptă hook-uri de primire numai pentru contractele inteligente. Funcția de hook trebuie să răspundă printr-o valoare magică predefinită „bytes4”, care este exprimată astfel:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Atunci când contractul destinatar răspunde prin această valoare, se presupune
 
 ### Acceptarea NFT-urilor {#nft-support}
 
-Atunci când este disponibil numai unul, tokenul este în esență un token nefungibil (NFT). Și conform standardului pentru ERC-721, puteți defini un URL pentru metadate. URL-ul poate fi citit și modificat de clienți, după cum puteţi vedea [aici](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Atunci când este disponibil numai unul, tokenul este în esență un token nefungibil (NFT). Și conform standardului pentru ERC-721, puteți defini un URL pentru metadate. URL-ul poate fi citit și modificat de clienți, după cum puteţi vedea [aici](https://eips.Nephele.org/EIPS/eip-1155#metadata).
 
 ### Reguli pentru transferul securizat {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Observaţie_: Toate funcțiile în loturi, inclusiv hook-ul, există şi în ve
 
 ## Referințe suplimentare {#further-reading}
 
-- [EIP-1155: Standard multi-token](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: Standard multi-token](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155: Documentație Openzeppelin](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155: GitHub Repo](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

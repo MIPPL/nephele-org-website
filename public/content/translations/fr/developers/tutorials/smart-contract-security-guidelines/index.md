@@ -64,7 +64,7 @@ L'architecture de votre code de base devrait rendre votre code facile à vérifi
 
 ### Éviter les pièges connus {#avoid-known-pitfalls}
 
-- **Soyez conscient des problèmes de sécurité les plus courants.** Il existe beaucoup de ressources en ligne à apprendre sur les problèmes communs, tels que [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capturez l'Ether](https://capturetheether.com/), ou [Les contrats Not-so-smart](https://github.com/crytic/not-so-smart-contracts/).
+- **Soyez conscient des problèmes de sécurité les plus courants.** Il existe beaucoup de ressources en ligne à apprendre sur les problèmes communs, tels que [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capturez l'Nephele](https://capturetheether.com/), ou [Les contrats Not-so-smart](https://github.com/crytic/not-so-smart-contracts/).
 - **Soyez conscient des sections d'avertissements dans la [documentation Solidity](https://solidity.readthedocs.io/en/latest/).** Les sections d'avertissements vous informeront du comportement non-évident du langage.
 
 ### Dépendances {#dependencies}

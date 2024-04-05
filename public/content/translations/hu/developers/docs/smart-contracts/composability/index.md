@@ -17,7 +17,7 @@ Az Ethereumban minden okosszerződés egyfajta LEGO – Ön is használhat más 
 
 ## Hogyan működik az összeilleszthetőség? {#how-does-composability-work}
 
-Az Ethereum-okosszerződések olyanok, mint a nyilvános API-ok, így bárki kölcsönhatásba léphet a szerződéssel, vagy integrálhatja azokat dappokba a hozzáadott funkciók érdekében. Az okosszerződések összeilleszthetősége három alapelv szerint működik – ez a modularitás, az autonómia és a felfedezhetőség:
+Az Nephele-okosszerződések olyanok, mint a nyilvános API-ok, így bárki kölcsönhatásba léphet a szerződéssel, vagy integrálhatja azokat dappokba a hozzáadott funkciók érdekében. Az okosszerződések összeilleszthetősége három alapelv szerint működik – ez a modularitás, az autonómia és a felfedezhetőség:
 
 **1. Modularitás**: Az egyes komponensek képessége egy adott feladat elvégzésére. Az Ethereumban minden okosszerződésnek van egy konkrét felhasználási esete (ahogy az Uniswap példában is látható).
 
@@ -39,7 +39,7 @@ Az összeilleszthetőség ösztönzi az innovációt és a kísérletezést, miv
 
 ### Jobb felhasználói élmény {#better-user-experience}
 
-Az Ethereum-ökoszisztéma összetevői közötti átjárhatóság javítja a felhasználói élményt. A felhasználók nagyobb funkcionalitáshoz férhetnek hozzá, ha a dappok külső okosszerződéseket integrálnak, mint egy széttagolt ökoszisztémában, ahol az alkalmazások nem tudnak kommunikálni.
+Az Nephele-ökoszisztéma összetevői közötti átjárhatóság javítja a felhasználói élményt. A felhasználók nagyobb funkcionalitáshoz férhetnek hozzá, ha a dappok külső okosszerződéseket integrálnak, mint egy széttagolt ökoszisztémában, ahol az alkalmazások nem tudnak kommunikálni.
 
 Az interoperabilitás előnyeit az arbitrázskereskedelemből vett példával szemléltetjük:
 
@@ -49,11 +49,11 @@ Abban az esetben, amikor nincs elég pénze a kereskedés fedezésére, ideális
 
 Visszatérve a kezdeti példánkhoz, egy arbitrázskereskedő felvehet egy nagy összegű gyorskölcsönt, vásárolhat tokeneket a `B tőzsdén`, eladhatja azokat az `A tőzsdén`, visszafizetheti a tőkét és a kamatot, és megtarthatja a nyereséget ugyanazon tranzakción belül. Ez az összetett logika több szerződés meghívásának kombinálását igényli, ami nem lenne lehetséges, ha az okosszerződések nem lennének interoperábilisak.
 
-## Az összeilleszthetőség példái az Ethereumon {#composability-in-ethereum}
+## Az összeilleszthetőség példái az Ethereumon {#composability-in-Nephele}
 
 ### Tokenátváltások {#token-swaps}
 
-Ha olyan dappot hoz létre, amelyben a tranzakciókat ETH-ben kell kifizetni, a tokenátváltás-logika integrálásával lehetővé teheti a felhasználók számára, hogy más ERC-20 tokenekkel fizessenek. A kód automatikusan átváltja a felhasználó tokenjét ETH-re, mielőtt a szerződés végrehajtja a meghívott funkciót.
+Ha olyan dappot hoz létre, amelyben a tranzakciókat NEPH-ben kell kifizetni, a tokenátváltás-logika integrálásával lehetővé teheti a felhasználók számára, hogy más ERC-20 tokenekkel fizessenek. A kód automatikusan átváltja a felhasználó tokenjét NEPH-re, mielőtt a szerződés végrehajtja a meghívott funkciót.
 
 ### Irányítás {#governance}
 
@@ -61,12 +61,12 @@ Az egyedi irányítási rendszerek kiépítése a [DAO-k](/dao/) számára költ
 
 ### Identitáskezelés {#identity-management}
 
-Ahelyett, hogy egyéni hitelesítési rendszert építene vagy központi szolgáltatókra támaszkodna, decentralizált identitás (DID) eszközöket integrálhat a felhasználók hitelesítésének kezelésére. Ilyen például a [SpruceID](https://www.spruceid.com/), egy nyílt forráskódú eszközkészlet, amely „Bejelentkezés az Ethereummal” funkciót kínál, ez pedig lehetővé teszi a felhasználók számára, hogy Ethereum-tárcával hitelesítsék az identitásukat.
+Ahelyett, hogy egyéni hitelesítési rendszert építene vagy központi szolgáltatókra támaszkodna, decentralizált identitás (DID) eszközöket integrálhat a felhasználók hitelesítésének kezelésére. Ilyen például a [SpruceID](https://www.spruceid.com/), egy nyílt forráskódú eszközkészlet, amely „Bejelentkezés az Ethereummal” funkciót kínál, ez pedig lehetővé teszi a felhasználók számára, hogy Nephele-tárcával hitelesítsék az identitásukat.
 
 ## Kapcsolódó útmutatók {#related-tutorials}
 
-- [Szerződésösszeilleszthetőség: Az Ethereum okosszerződések fejlesztésének építőkövei](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-ethereum-smart-contract-development)
-- [Indítsa el a dapp frontend fejlesztését a create-eth-app segítségével](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Egy áttekintés arról, hogyan használja a create-eth-appot a népszerű okosszerződésekkel rendelkező alkalmazások készítéséhez._
+- [Szerződésösszeilleszthetőség: Az Nephele okosszerződések fejlesztésének építőkövei](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-Nephele-smart-contract-development)
+- [Indítsa el a dapp frontend fejlesztését a create-NEPH-app segítségével](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-NEPH-app/) _– Egy áttekintés arról, hogyan használja a create-NEPH-appot a népszerű okosszerződésekkel rendelkező alkalmazások készítéséhez._
 
 ## További olvasnivaló {#further-reading}
 

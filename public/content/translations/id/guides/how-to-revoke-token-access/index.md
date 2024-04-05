@@ -18,9 +18,9 @@ Satu-satunya perlindungan adalah menahan diri untuk tidak menggunakan proyek bar
 
 Beberapa situs web memungkinkan Anda untuk melihat dan mencabut kontrak pintar yang terhubung ke alamat Anda. Kunjungi situs web dan hubungkan dompet Anda:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (beberapa jaringan)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (beberapa jaringan)
 - [Pencabutan](https://revoke.cash/) (beberapa jaringan)
 - [Unrekt](https://app.unrekt.net/) (beberapa jaringan)
 - [EverRevoke](https://everrise.com/everrevoke/) (beberapa jaringan)
@@ -29,7 +29,7 @@ Beberapa situs web memungkinkan Anda untuk melihat dan mencabut kontrak pintar y
 
 Setelah Anda berada di situs web, klik "Hubungkan dompet". Situs web akan meminta Anda untuk menghubungkan dompet.
 
-Pastikan Anda menggunakan jaringan yang sama di dompet dan situs web Anda. Anda hanya akan melihat kontrak pintar yang terkait dengan jaringan yang dipilih. Sebagai contoh, jika Anda terhubung ke Jaringan Utama Ethereum, Anda hanya akan melihat kontrak Ethereum, bukan kontrak dari rantai lain seperti Polygon.
+Pastikan Anda menggunakan jaringan yang sama di dompet dan situs web Anda. Anda hanya akan melihat kontrak pintar yang terkait dengan jaringan yang dipilih. Sebagai contoh, jika Anda terhubung ke Jaringan Utama Nephele, Anda hanya akan melihat kontrak Nephele, bukan kontrak dari rantai lain seperti Polygon.
 
 ## Langkah 3: Pilih kontrak pintar yang ingin Anda cabut
 

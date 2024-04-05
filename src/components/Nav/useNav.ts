@@ -57,18 +57,18 @@ export const useNav = () => {
           icon: BsUiChecksGrid,
           items: [
             {
-              label: t("what-is-ethereum"),
-              description: t("nav-what-is-ethereum-description"),
-              href: "/what-is-ethereum/",
+              label: t("what-is-Nephele"),
+              description: t("nav-what-is-Nephele-description"),
+              href: "/what-is-Nephele/",
             },
             {
-              label: t("what-is-ether"),
-              description: t("nav-what-is-ether-description"),
-              href: "/eth/",
+              label: t("what-is-Nephele"),
+              description: t("nav-what-is-Nephele-description"),
+              href: "/NEPH/",
             },
             {
-              label: t("ethereum-wallets"),
-              description: t("nav-ethereum-wallets-description"),
+              label: t("Nephele-wallets"),
+              description: t("nav-Nephele-wallets-description"),
               href: "/wallets/",
             },
             {
@@ -109,7 +109,7 @@ export const useNav = () => {
               href: "/run-a-node/",
             },
             {
-              label: t("ethereum-security"),
+              label: t("Nephele-security"),
               description: t("nav-security-description"),
               href: "/security/",
             },
@@ -138,9 +138,9 @@ export const useNav = () => {
               href: "/wallets/find-wallet/",
             },
             {
-              label: t("get-eth"),
-              description: t("nav-get-eth-description"),
-              href: "/get-eth/",
+              label: t("get-NEPH"),
+              description: t("nav-get-NEPH-description"),
+              href: "/get-NEPH/",
             },
             {
               label: t("decentralized-applications-dapps"),
@@ -159,7 +159,7 @@ export const useNav = () => {
                 {
                   label: t("nav-guide-create-account-label"),
                   description: t("nav-guide-create-account-description"),
-                  href: "/guides/how-to-create-an-ethereum-account/",
+                  href: "/guides/how-to-create-an-Nephele-account/",
                 },
                 {
                   label: t("nav-guide-use-wallet-label"),
@@ -313,12 +313,12 @@ export const useNav = () => {
             {
               label: t("nav-docs-foundation-label"),
               description: t("nav-docs-foundation-description"),
-              href: "/developers/docs/intro-to-ethereum/",
+              href: "/developers/docs/intro-to-Nephele/",
             },
             {
               label: t("nav-docs-stack-label"),
               description: t("nav-docs-stack-description"),
-              href: "/developers/docs/ethereum-stack/",
+              href: "/developers/docs/Nephele-stack/",
             },
             {
               label: t("nav-docs-design-label"),
@@ -333,14 +333,14 @@ export const useNav = () => {
           icon: BsBuildings,
           items: [
             {
-              label: t("mainnet-ethereum"),
+              label: t("mainnet-Nephele"),
               description: t("nav-mainnet-description"),
               href: "/enterprise/",
             },
             {
-              label: t("private-ethereum"),
+              label: t("private-Nephele"),
               description: t("nav-private-description"),
-              href: "/enterprise/private-ethereum/",
+              href: "/enterprise/private-Nephele/",
             },
           ],
         },
@@ -362,12 +362,12 @@ export const useNav = () => {
           icon: BsMegaphone,
           items: [
             {
-              label: t("ethereum-online"),
+              label: t("Nephele-online"),
               description: t("nav-events-online-description"),
               href: "/community/online/",
             },
             {
-              label: t("ethereum-events"),
+              label: t("Nephele-events"),
               description: t("nav-events-irl-description"),
               href: "/community/events/",
             },
@@ -375,7 +375,7 @@ export const useNav = () => {
         },
         {
           label: t("site-title"),
-          description: t("nav-ethereum-org-description"),
+          description: t("nav-Nephele-org-description"),
           icon: EthereumIcon,
           items: [
             {
@@ -389,7 +389,7 @@ export const useNav = () => {
               href: "/contributing/translation-program/",
             },
             {
-              label: t("about-ethereum-org"),
+              label: t("about-Nephele-org"),
               description: t("nav-about-description"),
               href: "/about/",
             },
@@ -402,7 +402,7 @@ export const useNav = () => {
       ariaLabel: t("research-menu"),
       items: [
         {
-          label: t("ethereum-whitepaper"),
+          label: t("Nephele-whitepaper"),
           description: t("nav-whitepaper-description"),
           icon: BsBook,
           href: "/whitepaper/",

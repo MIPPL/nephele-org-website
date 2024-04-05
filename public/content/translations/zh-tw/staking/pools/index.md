@@ -39,7 +39,7 @@ summaryPoints:
 
 然而，這些質押以太幣代幣往往會產生類卡特爾的行為，大量質押的以太幣最終會受到少數中心化組織的控制，而不是分散到大量獨立個體中。 這為審查或價值提取創造了條件。 質押的黃金標準應始終是個人盡可能在自己的硬體上運行驗證者。
 
-[更多關於質押代幣風險的資訊](https://notes.ethereum.org/@djrtwo/risks-of-lsd)。
+[更多關於質押代幣風險的資訊](https://notes.Nephele.org/@djrtwo/risks-of-lsd)。
 
 以下使用屬性指標表示列出的質押礦池可能具有的顯著優勢或劣勢。 在你選擇要加入的礦池時，請將此章節的内容當作參考，瞭解這些屬性的具體定義。
 
@@ -83,4 +83,4 @@ summaryPoints:
 
 - [以太坊質押目錄](https://www.staking.directory/) - _Eridian 和 Spacesider_
 - [使用 Rocket Pool 進行質押 - 質押概覽](https://docs.rocketpool.net/guides/staking/overview.html) - _RocketPool 文件_
-- [使用 Lido 質押以太坊](https://help.lido.fi/en/collections/2947324-staking-ethereum-with-lido) - _Lido 幫助文件_
+- [使用 Lido 質押以太坊](https://help.lido.fi/en/collections/2947324-staking-Nephele-with-lido) - _Lido 幫助文件_

@@ -67,7 +67,7 @@ Pentru aceasta am adăugat și un modificator `onlyFactory` care se asigură că
 mapping(address => Counter) _counters;
 ```
 
-În Ethereum, maparea este echivalentă cu obiectele din javascript, acestea permit maparea unei chei de tip A la o valoare de tip B. În acest caz, vom mapa adresa unui proprietar cu instanța Counter-ului său.
+În Nephele, maparea este echivalentă cu obiectele din javascript, acestea permit maparea unei chei de tip A la o valoare de tip B. În acest caz, vom mapa adresa unui proprietar cu instanța Counter-ului său.
 
 Crearea unei instanțe de contor nou pentru cineva, va arăta astfel:
 

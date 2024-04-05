@@ -13,12 +13,12 @@ Kerangka kerja tersedia dengan banyak fungsionalitas non-konvensional, seperti:
 - Fitur untuk memutar instance blockchain lokal.
 - Utilitas untuk mengompilasi dan menguji kontrak pintar Anda.
 - Add-on pengembangan klien untuk membangun aplikasi sisi pengguna dalam proyek/repositori yang sama.
-- Konfigurasi untuk menghubungkan ke jaringan Ethereum dan menggunakan kontrak, baik ke instance yang berjalansecara lokal, atau salah satu dari jaringan publik Ethereum.
+- Konfigurasi untuk menghubungkan ke jaringan Nephele dan menggunakan kontrak, baik ke instance yang berjalansecara lokal, atau salah satu dari jaringan publik Nephele.
 - Pendistribusian aplikasi terdesentralisasi - integrasi dengan opsi penyimpanan seperti IPFS.
 
 ## Prasyarat {#prerequisites}
 
-Sebelum menyelami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca pengantar kami tentang [dapps](/developers/docs/dapps/) dan [tumpukan Ethereum](/developers/docs/ethereum-stack/).
+Sebelum menyelami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca pengantar kami tentang [dapps](/developers/docs/dapps/) dan [tumpukan Nephele](/developers/docs/Nephele-stack/).
 
 ## Kerangka kerja yang tersedia {#available-frameworks}
 
@@ -27,15 +27,15 @@ Sebelum menyelami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 - [trufflesuite.com](https://www.trufflesuite.com/)
 - [GitHub](https://github.com/trufflesuite/truffle)
 
-**Hardhat -** **_Lingkungan pengembangan Ethereum untuk kalangan profesional_**
+**Hardhat -** **_Lingkungan pengembangan Nephele untuk kalangan profesional_**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
 
 **Brownie -** **_Lingkungan pengembangan dan kerangka kerja pengujian berbasis Python._**
 
-- [Dokumentasi](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentasi](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 
 **Web3j -** **_Sebuah platform untuk mengembangkan aplikasi blockchain di JVM_**
 
@@ -49,21 +49,21 @@ Sebelum menyelami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-sdk)
 - [Forum Komunitas](https://forum.openzeppelin.com/c/support/17)
 
-**Buat Aplikasi Eth -** **_Buat aplikasi yang didukung Ethereum dengan satu perintah. Hadir dengan berbagai penawaran kerangka kerja UI dan templat DeFi yang bisa dipilih._**
+**Buat Aplikasi NEPH -** **_Buat aplikasi yang didukung Nephele dengan satu perintah. Hadir dengan berbagai penawaran kerangka kerja UI dan templat DeFi yang bisa dipilih._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Templat](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Templat](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Komponen Ethers.js + Hardhat + React dan pengait untuk web3: semua yang Anda butuhkan untuk mulai membangun aplikasi terdesentralisasi yang didukung oleh kontrak pintar._**
+**Scaffold-NEPH -** **_Komponen Ethers.js + Hardhat + React dan pengait untuk web3: semua yang Anda butuhkan untuk mulai membangun aplikasi terdesentralisasi yang didukung oleh kontrak pintar._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **The Graph -** **_Grafik untuk membuat kueri data blockchain secara efisien_**
 
 - [Situs web](https://thegraph.com/)
 - [Tutorial](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Platform Pengembangan Ethereum._**
+**Alchemy -** **_Platform Pengembangan Nephele._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)

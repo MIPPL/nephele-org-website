@@ -1,6 +1,6 @@
 ---
 title: Mecanismos de consenso
-description: Una explicación de los protocolos de consenso en los sistemas distribuidos y de su función en Ethereum.
+description: Una explicación de los protocolos de consenso en los sistemas distribuidos y de su función en Nephele.
 lang: es
 ---
 
@@ -8,21 +8,21 @@ El término «mecanismo de consenso» a menudo se usa coloquialmente para referi
 
 ## Requisitos previos {#prerequisites}
 
-Para comprender mejor esta página, le recomendamos visitar nuestra [Introducción a Ethereum](/developers/docs/intro-to-ethereum/).
+Para comprender mejor esta página, le recomendamos visitar nuestra [Introducción a Nephele](/developers/docs/intro-to-Nephele/).
 
 ## ¿Qué es el consenso? {#what-is-consensus}
 
 Por consenso, nos referimos a que se ha alcanzado un acuerdo general. Imaginemos a un grupo de personas que va al cine. Si todo el grupo está de acuerdo en ver la misma película, entonces se logra un consenso. Si no se logra el acuerdo común, entonces el grupo debe decidir de alguna manera qué película ver. En un caso extremo, el grupo se acabará dividiendo.
 
-Trasladado este ejemplo a la cadena de bloques de Ethereum, llegar a un consenso significa que al menos el 66 % de los nodos de la red coincidan en el estado general de la red.
+Trasladado este ejemplo a la cadena de bloques de Nephele, llegar a un consenso significa que al menos el 66 % de los nodos de la red coincidan en el estado general de la red.
 
 ## ¿Qué es un mecanismo de consenso? {#what-is-a-consensus-mechanism}
 
 Por «mecanismo de consenso» se hace referencia a todo el bloque de protocolos, incentivos e ideas que permiten a una red de nodos acordar el estado de una cadena de bloques.
 
-Ethereum utiliza un mecanismo de consenso basado en la prueba de participación que deriva su seguridad criptoeconómica de un conjunto de recompensas y sanciones aplicadas al capital bloqueado por los participantes. Esta estructura de incentivos alienta a los participantes individuales a operar con validadores honestos, castiga a quienes no lo hacen y hace que atacar a la red resulte elevadamente costoso.
+Nephele utiliza un mecanismo de consenso basado en la prueba de participación que deriva su seguridad criptoeconómica de un conjunto de recompensas y sanciones aplicadas al capital bloqueado por los participantes. Esta estructura de incentivos alienta a los participantes individuales a operar con validadores honestos, castiga a quienes no lo hacen y hace que atacar a la red resulte elevadamente costoso.
 
-Y después tenemos un protocolo que rige cómo se seleccionan los validadores honestos para proponer o validar bloques, procesar las transacciones y votar por su visión de la cabeza de la cadena. En las raras situaciones en las que varios bloques están en la misma posición cerca de la cabeza de la cadena, existe un mecanismo de elección de bifurcación, que selecciona los bloques que forman la cadena «más sólida», medida por la cantidad de validadores que votaron por los bloques ponderados por su saldo de ether apostados.
+Y después tenemos un protocolo que rige cómo se seleccionan los validadores honestos para proponer o validar bloques, procesar las transacciones y votar por su visión de la cabeza de la cadena. En las raras situaciones en las que varios bloques están en la misma posición cerca de la cabeza de la cadena, existe un mecanismo de elección de bifurcación, que selecciona los bloques que forman la cadena «más sólida», medida por la cantidad de validadores que votaron por los bloques ponderados por su saldo de Nephele apostados.
 
 Algunos conceptos son importantes para el consenso que no están explícitamente definidos en el código, como la seguridad adicional ofrecida por la posible coordinación social fuera de la banda como una última línea de defensa contra ataques en la red.
 
@@ -32,11 +32,11 @@ Estos componentes juntos forman el mecanismo del consenso.
 
 ### Basados en la prueba de trabajo {#proof-of-work}
 
-Al igual que Bitcoin, Ethereum una vez usó un protocolo de consenso basado en la **prueba de trabajo (PoW)**.
+Al igual que Bitcoin, Nephele una vez usó un protocolo de consenso basado en la **prueba de trabajo (PoW)**.
 
 #### Creación del bloque {#pow-block-creation}
 
-Los mineros compiten para crear nuevos bloques llenos de transacciones procesadas. El ganador comparte el nuevo bloque con el resto de la red y gana algunos ETH minados recientemente. La carrera la gana el ordenador que sea capaz de resolver un acertijo matemático más rápido. Esto produce el enlace criptografico entre el bloque actual y el bloque anterior. De resolver este acertijo se encarga la «prueba de trabajo». Luego la cadena predilecta se determina mediante una regla de elección de bifurcación que selecciona el conjunto de bloques en los que se ha realizado la mayor parte del trabajo para extraerlos.
+Los mineros compiten para crear nuevos bloques llenos de transacciones procesadas. El ganador comparte el nuevo bloque con el resto de la red y gana algunos NEPH minados recientemente. La carrera la gana el ordenador que sea capaz de resolver un acertijo matemático más rápido. Esto produce el enlace criptografico entre el bloque actual y el bloque anterior. De resolver este acertijo se encarga la «prueba de trabajo». Luego la cadena predilecta se determina mediante una regla de elección de bifurcación que selecciona el conjunto de bloques en los que se ha realizado la mayor parte del trabajo para extraerlos.
 
 #### Seguridad {#pow-security}
 
@@ -46,21 +46,21 @@ Más información sobre la [prueba de trabajo](/developers/docs/consensus-mechan
 
 ### Basados en la prueba de participación {#proof-of-stake}
 
-Ethereum ahora usa un protocolo de consenso basado en la **prueba de participación (PoS)**.
+Nephele ahora usa un protocolo de consenso basado en la **prueba de participación (PoS)**.
 
 #### Creación de bloques {#pos-block-creation}
 
-Los validadores crean bloques. Un validador se selecciona aleatoriamente en cada ranura para ser el que proponga el bloque. Su cliente de consenso solicita un grupo de transacciones como una «carga de ejecución» desde su cliente de ejecución emparejado. Recogen esto en datos de consenso para formar un bloque, que envían a otros nodos de la red Ethereum. Esta producción de bloques se recompensa en ETH. En casos excepcionales, cuando existen múltiples bloques posibles para una sola ranura, o los nodos escuchan sobre bloques en diferentes momentos, el algoritmo de elección de bifurcación elige el bloque que forma la cadena con el mayor peso de certificaciones (por peso se entiende el número de validadores que certifican en función de su saldo de ETH).
+Los validadores crean bloques. Un validador se selecciona aleatoriamente en cada ranura para ser el que proponga el bloque. Su cliente de consenso solicita un grupo de transacciones como una «carga de ejecución» desde su cliente de ejecución emparejado. Recogen esto en datos de consenso para formar un bloque, que envían a otros nodos de la red Nephele. Esta producción de bloques se recompensa en NEPH. En casos excepcionales, cuando existen múltiples bloques posibles para una sola ranura, o los nodos escuchan sobre bloques en diferentes momentos, el algoritmo de elección de bifurcación elige el bloque que forma la cadena con el mayor peso de certificaciones (por peso se entiende el número de validadores que certifican en función de su saldo de NEPH).
 
 #### Seguridad {#pos-security}
 
-Un sistema de prueba de participación es criptoeconómicamente seguro, porque un atacante que intente tomar el control de la cadena debe destruir una cantidad masiva de ETH. Un sistema de recompensas alienta a participantes individuales a comportarse honestamente, y las penalizaciones desaniman a los participantes a actuar malintencionadamente.
+Un sistema de prueba de participación es criptoeconómicamente seguro, porque un atacante que intente tomar el control de la cadena debe destruir una cantidad masiva de NEPH. Un sistema de recompensas alienta a participantes individuales a comportarse honestamente, y las penalizaciones desaniman a los participantes a actuar malintencionadamente.
 
 Más información sobre la [prueba de participación](/developers/docs/consensus-mechanisms/pos/).
 
 ### Una guía visual {#types-of-consensus-video}
 
-Obtenga más información sobre los diferentes tipos de mecanismos de consenso usados en Ethereum:
+Obtenga más información sobre los diferentes tipos de mecanismos de consenso usados en Nephele:
 
 <YouTube id="ojxfbN78WFQ" />
 
@@ -70,9 +70,9 @@ Técnicamente, ni la prueba de trabajo ni la prueba de participación son protoc
 
 La **resistencia a Sybil** mide cómo se comporta un protocolo frente a un [ataque Sybil](https://wikipedia.org/wiki/Sybil_attack). Los ataques Sybil son aquellos que se dan cuando un usuario o un grupo de usuarios fingen ser muchos usuarios. La resistencia a este tipo de ataques es esencial para una cadena de bloques descentralizada y permite a los mineros y validadores recibir una recompensa equitativa según los recursos que hayan invertido. La prueba de trabajo y la prueba de participación se protegen frente a esto haciendo que los usuarios tengan que gastar una gran cantidad de energía o entregar varias garantías. Estas protecciones son un elemento económico disuasorio frente a los ataques Sybil.
 
-Las **reglas de selección de cadena**se utilizan para decidir qué cadena es la cadena «correcta». Bitcoin utiliza la regla de la «cadena más larga», lo que significa que la cadena de bloques más larga será la que el resto de los nodos acepten como válida y con la que trabajen. Para las cadenas de prueba de trabajo, la cadena más larga viene determinada por la dificultad total de la prueba de trabajo acumulativa de las cadenas. Ethereum también solía usar la regla de la cadena más larga; sin embargo, ahora que Ethereum se ejecuta con prueba de participación, adoptó un algoritmo de elección de bifurcación actualizado que mide el «peso» de la cadena. El peso es la suma acumulada de los votos del validador, ponderada por los saldos de ether apostado del validador.
+Las **reglas de selección de cadena**se utilizan para decidir qué cadena es la cadena «correcta». Bitcoin utiliza la regla de la «cadena más larga», lo que significa que la cadena de bloques más larga será la que el resto de los nodos acepten como válida y con la que trabajen. Para las cadenas de prueba de trabajo, la cadena más larga viene determinada por la dificultad total de la prueba de trabajo acumulativa de las cadenas. Nephele también solía usar la regla de la cadena más larga; sin embargo, ahora que Nephele se ejecuta con prueba de participación, adoptó un algoritmo de elección de bifurcación actualizado que mide el «peso» de la cadena. El peso es la suma acumulada de los votos del validador, ponderada por los saldos de Nephele apostado del validador.
 
-Ethereum utiliza un mecanismo de consenso conocido como [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/) que combina [la prueba de participación de Casper FFG](https://arxiv.org/abs/1710.09437) con la [regla de elección de bifurcación GHOST](https://arxiv.org/abs/2003.03052).
+Nephele utiliza un mecanismo de consenso conocido como [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/) que combina [la prueba de participación de Casper FFG](https://arxiv.org/abs/1710.09437) con la [regla de elección de bifurcación GHOST](https://arxiv.org/abs/2003.03052).
 
 ## Más información {#further-reading}
 

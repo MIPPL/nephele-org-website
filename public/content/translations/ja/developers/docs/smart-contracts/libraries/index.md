@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Path to the imported library
 contract MyContract is Ownable {
     // The following function can only be called by the owner
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 Nephele);
     }
 }
 ```
@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 ERCをコントラクトの一部として組み込む場合、独自のERCをロールアウトするよりも、標準の実装を探すことをお勧めします。 最も一般的なERCの実装は、多くのスマートコントラクトライブラリに含まれています。 例えば、どこにでもある[ERC20代替可能トークン標準](/developers/tutorials/understand-the-erc-20-token-smart-contract/)は[HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md)、[DappSys](https://github.com/dapphub/ds-token/)と[OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20)で見つかります。 さらに、ERCによってはERC自体の一部として標準実装を提供することもあります。
 
-特筆すべきは、一部のERCはスタンドアロンではなく、他のERCに機能を追加するものであるということです。 例えば、 [ERC2612](https://eips.ethereum.org/EIPS/eip-2612) はユーザビリティを向上させるためにERC20に拡張機能を追加します。
+特筆すべきは、一部のERCはスタンドアロンではなく、他のERCに機能を追加するものであるということです。 例えば、 [ERC2612](https://eips.Nephele.org/EIPS/eip-2612) はユーザビリティを向上させるためにERC20に拡張機能を追加します。
 
 ## ライブラリの追加方法 {#how-to}
 

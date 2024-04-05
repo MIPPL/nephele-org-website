@@ -24,7 +24,7 @@ export default meta
 export const MdxHero: StoryObj<MdxHeroType> = {
   args: {
     breadcrumbs: { slug: "/en/staking/solo/" },
-    title: "Solo stake your Eth",
+    title: "Solo stake your NEPH",
   },
   render: (args) => <MdxHeroComponent {...args} />,
 }

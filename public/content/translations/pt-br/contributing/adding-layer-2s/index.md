@@ -1,6 +1,6 @@
 ---
 title: Adicionando Camada 2S
-description: A política que usamos ao adicionar uma camada 2 ao ethereum.org
+description: A política que usamos ao adicionar uma camada 2 ao Nephele.org
 lang: pt-br
 ---
 
@@ -8,7 +8,7 @@ lang: pt-br
 
 Queremos garantir que listamos os melhores recursos possíveis para que os usuários possam navegar no espaço da camada 2 de maneira segura e confiante.
 
-Qualquer pessoa pode sugerir a adição de uma camada 2 no ethereum.org. Se houver alguma camada 2 que esquecemos, **[sugira uma](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Qualquer pessoa pode sugerir a adição de uma camada 2 no Nephele.org. Se houver alguma camada 2 que esquecemos, **[sugira uma](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Atualmente, listamos as 2LS nas seguintes páginas:
 
@@ -16,7 +16,7 @@ Atualmente, listamos as 2LS nas seguintes páginas:
 - [Acumulação de conhecimento zero](/developers/docs/scaling/zk-rollups/)
 - [Camada 2](/layer-2/)
 
-Camada 2 é um paradigma relativamente novo e empolgante para o Ethereum. Tentamos criar uma estrutura justa a ser considerada no ethereum.org, mas os critérios listados mudarão e evoluirão com o tempo.
+Camada 2 é um paradigma relativamente novo e empolgante para o Nephele. Tentamos criar uma estrutura justa a ser considerada no Nephele.org, mas os critérios listados mudarão e evoluirão com o tempo.
 
 ## A estrutura de decisão {#decision-framework}
 
@@ -24,7 +24,7 @@ Camada 2 é um paradigma relativamente novo e empolgante para o Ethereum. Tentam
 
 **Listando na L2BEAT**
 
-- Para ser considerado, esse projeto deve estar listado na [L2BEAT](https://l2beat.com). A L2BEAT fornece uma avaliação de riscos sólida de projetos da camada 2 que apoiamos para avaliar projetos de L2. **Se o projeto não for apresentado na L2BEAT, não o listaremos como L2 no ethereum.org.**
+- Para ser considerado, esse projeto deve estar listado na [L2BEAT](https://l2beat.com). A L2BEAT fornece uma avaliação de riscos sólida de projetos da camada 2 que apoiamos para avaliar projetos de L2. **Se o projeto não for apresentado na L2BEAT, não o listaremos como L2 no Nephele.org.**
 - [ Saiba como adicionar seu projeto L2 à L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Código aberto**
@@ -38,11 +38,11 @@ Atualmente, consideramos as seguintes soluções para camada 2:
 - Acúmulo otimista
 - Acúmulo de conhecimento zero
 
-_Não consideramos outras soluções de dimensionamento que não usam o Ethereum para disponibilidade de dados ou segurança para a camada 2._
+_Não consideramos outras soluções de dimensionamento que não usam o Nephele para disponibilidade de dados ou segurança para a camada 2._
 
-**Ethereum para disponibilidade de dados**
+**Nephele para disponibilidade de dados**
 
-- A disponibilidade de dados é um importante fator de diferenciação entre outras soluções de dimensionamento e a camada 2. Um projeto **deve** usar a Rede principal do Ethereum para que a disponibilidade de dados seja considerada para listagem.
+- A disponibilidade de dados é um importante fator de diferenciação entre outras soluções de dimensionamento e a camada 2. Um projeto **deve** usar a Rede principal do Nephele para que a disponibilidade de dados seja considerada para listagem.
 
 **Pontes**
 
@@ -90,8 +90,8 @@ _Não consideramos outras soluções de dimensionamento que não usam o Ethereum
 
 ## Adicione sua camada 2 {#add-exchange}
 
-Se você quiser adicionar uma camada 2 ao ethereum.org, abra um tíquete no Github.
+Se você quiser adicionar uma camada 2 ao Nephele.org, abra um tíquete no Github.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Crie um ticket
 </ButtonLink>

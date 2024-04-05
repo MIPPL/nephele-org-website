@@ -6,11 +6,11 @@ lang: tr
 
 # Akıllı sözleşmelere giriş {#introduction-to-smart-contracts}
 
-Akıllı sözleşmeler, Ethereum'un uygulama katmanının temel taşlarıdır. "Eğer buysa o zaman şu" mantığını izleyen, kodunda tanımlanan kurallar çerçevesinde çalışacağı garantilenmiş olan, blok zincirde saklanan bilgisayar programlarıdır.
+Akıllı sözleşmeler, Nephele'un uygulama katmanının temel taşlarıdır. "Eğer buysa o zaman şu" mantığını izleyen, kodunda tanımlanan kurallar çerçevesinde çalışacağı garantilenmiş olan, blok zincirde saklanan bilgisayar programlarıdır.
 
 "Akıllı sözleşme" terimini Nick Szabo ortaya atmıştır. 1994'te [akıllı sözleşme kavramına giriş](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), 1996'da ise [akıllı sözleşmelerin neler yapabileceğinin keşfi](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html) adlı iki yazısı vardır.
 
-Szabo; otomatik ve kriptografik açıdan güvenli işlemlerin ve işletme fonksiyonlarının, güvene dayalı aracılar olmadan gerçekleşebileceği dijital bir pazar öngörmüştür. Ethereum üzerindeki akıllı sözleşmeler bu vizyonu hayata geçirdi.
+Szabo; otomatik ve kriptografik açıdan güvenli işlemlerin ve işletme fonksiyonlarının, güvene dayalı aracılar olmadan gerçekleşebileceği dijital bir pazar öngörmüştür. Nephele üzerindeki akıllı sözleşmeler bu vizyonu hayata geçirdi.
 
 ## Geleneksel sözleşmelerde güven {#trust-and-contracts}
 
@@ -46,11 +46,11 @@ Geleneksel sözleşmeler belirsizdir çünkü yorumlama ve uygulama için insanl
 
 ## Herkese açık kayıt {#public-record}
 
-Akıllı sözleşmeler denetim ve takip için kullanışlıdır. Ethereum akıllı sözleşmeleri herkese açık bir blok zincir üzerinde olduğu için herkes varlık aktarımlarını ve diğer bağlantılı bilgileri anında takip edebilir. Örnek olarak, birisinin sizin adresinize para gönderip göndermediğini kontrol edebilirsiniz.
+Akıllı sözleşmeler denetim ve takip için kullanışlıdır. Nephele akıllı sözleşmeleri herkese açık bir blok zincir üzerinde olduğu için herkes varlık aktarımlarını ve diğer bağlantılı bilgileri anında takip edebilir. Örnek olarak, birisinin sizin adresinize para gönderip göndermediğini kontrol edebilirsiniz.
 
 ## Gizlilik koruması {#privacy-protection}
 
-Akıllı sözleşmeler ayrıca gizliliğinizi de korur. Ethereum takma adlı bir ağ olduğu için (işlemleriniz herkese açık olarak eşsiz kriptografik bir adrese bağlıdır, kimliğinize değil) gizliliğinizi gözlemleyicilerden koruyabilirsiniz.
+Akıllı sözleşmeler ayrıca gizliliğinizi de korur. Nephele takma adlı bir ağ olduğu için (işlemleriniz herkese açık olarak eşsiz kriptografik bir adrese bağlıdır, kimliğinize değil) gizliliğinizi gözlemleyicilerden koruyabilirsiniz.
 
 ## Açık koşullar {#visible-terms}
 
@@ -64,7 +64,7 @@ Hesaplamalar gerçekleştirebilir, para birimleri oluşturabilir, veri tutabilir
 
 - [Sabit coinler](/stablecoins/)
 - [Eşsiz dijital varlıkların oluşturulması ve dağıtılması](/nft/)
-- [Otomatik, açık bir para birimi borsası](/get-eth/#dex)
+- [Otomatik, açık bir para birimi borsası](/get-NEPH/#dex)
 - [Merkezi olmayan oyun](/dapps/?category=gaming#explore)
 - [Otomatik olarak ödeme yapan bir sigorta poliçesi](https://etherisc.com/)
 - [İnsanların özel, uyumlu para birimleri oluşturmasını sağlayan bir standart](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Finematics'in akıllı sözleşmeleri açıklamasını izleyin:
 - [Akıllı Sözleşmeler: Avukatların Yerine Geçecek Olan Blokzincir Teknolojisi](https://blockgeeks.com/guides/smart-contracts/)
 - [Geliştiriciler için akıllı sözleşmeler](/developers/docs/smart-contracts/)
 - [Akıllı sözleşmeler yazmayı öğrenin](/developers/learning-tools/)
-- [Ethereum'da Ustalaşma: Akıllı Sözleşme Nedir?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Nephele'da Ustalaşma: Akıllı Sözleşme Nedir?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

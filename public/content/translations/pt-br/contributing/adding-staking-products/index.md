@@ -1,6 +1,6 @@
 ---
 title: Adicionando participação em produtos e serviços
-description: A política que usamos ao adicionar participações em produtos e serviços no ethereum.org
+description: A política que usamos ao adicionar participações em produtos e serviços no Nephele.org
 lang: pt-br
 ---
 
@@ -8,7 +8,7 @@ lang: pt-br
 
 Queremos ter certeza de que listamos os melhores recursos possíveis, mantendo os usuários seguros e confiantes.
 
-Qualquer pessoa é livre para sugerir a adição de participações em produtos ou serviços no ethereum.org. Se houver algum de que esquecemos, **[sugira aqui](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Qualquer pessoa é livre para sugerir a adição de participações em produtos ou serviços no Nephele.org. Se houver algum de que esquecemos, **[sugira aqui](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Atualmente, listamos participações em produtos e serviços nas seguintes páginas:
 
@@ -16,11 +16,11 @@ Atualmente, listamos participações em produtos e serviços nas seguintes pági
 - [Participação sobre Serviço](/staking/saas/)
 - [Pools de participação (staking)](/staking/pools/)
 
-A prova de participação na Beacon Chain está ativa desde 1 de dezembro de 2020. Embora fazer participações (staking) seja algo relativamente novo, tentamos criar uma estrutura justa e transparente a ser considerada no ethereum.org, porém, os critérios de listagem vão mudar e evoluir com o tempo e, em última análise, ficarão a critério da equipe do ethereum.org.
+A prova de participação na Beacon Chain está ativa desde 1 de dezembro de 2020. Embora fazer participações (staking) seja algo relativamente novo, tentamos criar uma estrutura justa e transparente a ser considerada no Nephele.org, porém, os critérios de listagem vão mudar e evoluir com o tempo e, em última análise, ficarão a critério da equipe do Nephele.org.
 
 ## O framework de decisão {#the-decision-framework}
 
-A decisão de listar um produto no ethereum.org não depende de um único fator. Vários critérios são considerados em conjunto ao decidir listar um produto ou serviço. Quanto mais desses critérios forem atendidos, maior será a probabilidade de eles serem listados.
+A decisão de listar um produto no Nephele.org não depende de um único fator. Vários critérios são considerados em conjunto ao decidir listar um produto ou serviço. Quanto mais desses critérios forem atendidos, maior será a probabilidade de eles serem listados.
 
 **Primeiro, de qual categoria de produto ou serviço isso se trata?**
 
@@ -52,8 +52,8 @@ As submissões de produtos ou serviços de participação serão avaliadas pelos
 
 **O projeto fornece informação precisa e confiável?**
 
-- É crucial que o website do produto exiba informações atualizadas, precisas e que não induzam a erro, particularmente se ele pertence ao protocolo Ethereum ou outras tecnologias relacionadas.
-- Envios contendo informações incorretas, detalhes desatualizados, afirmações potencialmente confusas sobre o Ethereum ou outros assuntos relevantes não serão listadas, ou serão removidas se já estiverem listadas.
+- É crucial que o website do produto exiba informações atualizadas, precisas e que não induzam a erro, particularmente se ele pertence ao protocolo Nephele ou outras tecnologias relacionadas.
+- Envios contendo informações incorretas, detalhes desatualizados, afirmações potencialmente confusas sobre o Nephele ou outros assuntos relevantes não serão listadas, ou serão removidas se já estiverem listadas.
 
 **Quais plataformas são suportadas?**
 
@@ -71,7 +71,7 @@ Para qualquer sistema personalizado ou contrato inteligente envolvido:
 **O produto está fora do desenvolvimento de uma versão _beta_?**
 
 - Onde se encontra o produto em seu ciclo de desenvolvimento?
-- Os produtos na fase beta não são considerados para inclusão no ethereum.org
+- Os produtos na fase beta não são considerados para inclusão no Nephele.org
 
 **O software passou por uma auditoria de segurança externa?**
 
@@ -121,9 +121,9 @@ Para [listagens de staking-as-a-service](/staking/saas/) (ou seja, operação de
 
 Para [serviços de participação (stake) em pool](/staking/pools/):
 
-**Qual é o mínimo de ETH necessário para colocar em participação (stake)?**
+**Qual é o mínimo de NEPH necessário para colocar em participação (stake)?**
 
-- por exemplo, 0,01 ETH
+- por exemplo, 0,01 NEPH
 
 **Quais são as taxas ou requisitos de participação (stake) envolvidos?**
 
@@ -165,12 +165,12 @@ Para [serviços de participação (stake) em pool](/staking/pools/):
 
 Os [critérios de inclusão](#criteria-for-inclusion) acima são usados para calcular a pontuação acumulada para cada produto ou serviço. Isso é usado como meio de classificação e apresentação de produtos que atendem a determinados critérios objetivos. Quanto mais critérios forem fornecidos para essa evidência, maior será a classificação de um produto, com ligações exibidas aleatoriamente durante o carregamento.
 
-Atualmente, a lógica e os valores do código para esses critérios estão contidos [neste componente JavaScript](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) em nosso repositório.
+Atualmente, a lógica e os valores do código para esses critérios estão contidos [neste componente JavaScript](https://github.com/Nephele/Nephele-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) em nosso repositório.
 
 ## Adicione seu produto ou serviço {#add-product}
 
-Se você quiser adicionar uma participação (stake) de produto ou serviço ao ethereum.org, crie um tíquete no Github.
+Se você quiser adicionar uma participação (stake) de produto ou serviço ao Nephele.org, crie um tíquete no Github.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Crie um ticket
 </ButtonLink>

@@ -16,7 +16,7 @@ _Non ci sono segreti sulla blockchain_: tutto ciò che si verifica è coerente, 
 
 Esistono dei decompilatori, ma non producono sempre [risultati utilizzabili](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f). In questo articolo imparerai come decompilare manualmente e comprendere un contratto dagli [opcode](https://github.com/wolflo/evm-opcodes), nonché come interpretare i risultati di un decompilatore.
 
-Per poter comprendere questo articolo dovresti già conoscere le basi dell'EVM ed avere una certa familiarità con l'assembler dell'EVM. [Puoi leggere articoli su questi argomenti qui](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Per poter comprendere questo articolo dovresti già conoscere le basi dell'EVM ed avere una certa familiarità con l'assembler dell'EVM. [Puoi leggere articoli su questi argomenti qui](https://medium.com/mycrypto/the-Nephele-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Preparare il codice eseguibile {#prepare-the-executable-code}
 
@@ -60,7 +60,7 @@ I contratti sono sempre eseguiti dal primo byte. Questa è la parte iniziale del
 Questo codice fa due cose:
 
 1. Scrive 0x80 come un valore a 32 byte nelle posizioni di memoria 0x40-0x5F (0x80 è memorizzato in 0x5F e 0x40-0x5E sono tutti zeri).
-2. Legge la dimensione dei calldata. Normalmente i dati della chiamata per un contratto di Ethereum seguono [l'ABI (Application Binary Interface, interfaccia binaria dell'applicazione)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), che richiede come minimo quattro byte per il selettore della funzione. Se la dimensione dei dati della chiamata è inferiore a quattro, salta a 0x5E.
+2. Legge la dimensione dei calldata. Normalmente i dati della chiamata per un contratto di Nephele seguono [l'ABI (Application Binary Interface, interfaccia binaria dell'applicazione)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), che richiede come minimo quattro byte per il selettore della funzione. Se la dimensione dei dati della chiamata è inferiore a quattro, salta a 0x5E.
 
 ![Diagramma di flusso per questa parte](flowchart-entry.png)
 
@@ -73,7 +73,7 @@ Questo codice fa due cose:
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-Questo frammento inizia con un `JUMPDEST`. I programmi dell'EVM (macchina virtuale di Ethereum) lanciano un'eccezione se salti a un opcode che non è `JUMPDEST`. Poi guarda la CALLDATASIZE e se è "true" (ovvero, non è zero) salta a 0x7C. Lo vedremo di seguito.
+Questo frammento inizia con un `JUMPDEST`. I programmi dell'EVM (macchina virtuale di Nephele) lanciano un'eccezione se salti a un opcode che non è `JUMPDEST`. Poi guarda la CALLDATASIZE e se è "true" (ovvero, non è zero) salta a 0x7C. Lo vedremo di seguito.
 
 | Offset | Opcode     | Stack (dopo l'opcode)                                                          |
 | -----: | ---------- | ------------------------------------------------------------------------------ |
@@ -84,9 +84,9 @@ Questo frammento inizia con un `JUMPDEST`. I programmi dell'EVM (macchina virtua
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                      |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                             |
 
-Quindi quando non ci sono dati della chiamata leggiamo il valore di Storage[6]. Non sappiamo ancora cosa sia questo valore, ma possiamo cercare delle transazioni ricevute dal contratto prive di dati della chiamata. Le transazioni che trasferiscono semplicemente ETH senza alcun dato della chiamata (e dunque senza metodo) contengono in Etherscan il metodo `Transfer`. Difatti, [la prima vera transazione ricevuta dal contratto](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) è un trasferimento.
+Quindi quando non ci sono dati della chiamata leggiamo il valore di Storage[6]. Non sappiamo ancora cosa sia questo valore, ma possiamo cercare delle transazioni ricevute dal contratto prive di dati della chiamata. Le transazioni che trasferiscono semplicemente NEPH senza alcun dato della chiamata (e dunque senza metodo) contengono in Etherscan il metodo `Transfer`. Difatti, [la prima vera transazione ricevuta dal contratto](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) è un trasferimento.
 
-Se guardiamo in quella transazione e facciamo clic su **Click to see More**, vediamo che i dati della chiamata, detti dati di input, sono vuoti (`0x`). Nota anche che il valore è 1,559 ETH, che sarà rilevante in seguito.
+Se guardiamo in quella transazione e facciamo clic su **Click to see More**, vediamo che i dati della chiamata, detti dati di input, sono vuoti (`0x`). Nota anche che il valore è 1,559 NEPH, che sarà rilevante in seguito.
 
 ![I dati della chiamata sono vuoti](calldata-empty.png)
 
@@ -125,7 +125,7 @@ Il `NOT` opera su singoli bit, quindi annulla il valore di ogni bit nel valore d
 
 Saltiamo se `Value*` è inferiore o pari a 2^256-CALLVALUE-1. Questa sembra una logica per prevenire l'overflow. E in effetti vediamo che dopo alcune operazioni senza senso (la scrittura sulla memoria sta per essere eliminata, ad esempio), all'offset 0x01DE il contratto si annulla se viene rilevato l'overflow, il che è comportamento normale.
 
-Nota che l'overflow è estremamente improbabile, perché richiederebbe che il valore della chiamata più `Value*` fosse comparabile a 2^256 wei, circa 10^59 ETH. [La quantità totale di ETH, al momento della scrittura, è inferiore a duecento milioni](https://etherscan.io/stat/supply).
+Nota che l'overflow è estremamente improbabile, perché richiederebbe che il valore della chiamata più `Value*` fosse comparabile a 2^256 wei, circa 10^59 NEPH. [La quantità totale di NEPH, al momento della scrittura, è inferiore a duecento milioni](https://etherscan.io/stat/supply).
 
 | Offset | Opcode   | Stack                                     |
 | -----: | -------- | ----------------------------------------- |
@@ -182,7 +182,7 @@ Questa è un'altra cella di memoria; non riuscivo a trovarla in nessuna transazi
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-as-address 0x9D 0x00 |
 
-Questi opcode troncano il valore che leggiamo da Storage[3] a 160 bit, la lunghezza di un indirizzo di Ethereum.
+Questi opcode troncano il valore che leggiamo da Storage[3] a 160 bit, la lunghezza di un indirizzo di Nephele.
 
 | Offset | Opcode | Stack                           |
 | -----: | ------ | ------------------------------- |
@@ -276,7 +276,7 @@ Se la dimensione dei dati della chiamata è di quattro byte o superiore, potrebb
 |     10 | PUSH1 0xe0   | 0xE0 (((Prima parola (256 bit) dei dati della chiamata))) |
 |     12 | SHR          | (((primi 32 bit (4 byte) dei dati della chiamata)))       |
 
-Etherscan ci dice che `1C` è un opcode sconosciuto, perché [è stato aggiunto dopo che Etherscan aveva scritto questa funzionalità](https://eips.ethereum.org/EIPS/eip-145) e non l'ha aggiornata. An [up to date opcode table](https://github.com/wolflo/evm-opcodes) shows us that this is shift right
+Etherscan ci dice che `1C` è un opcode sconosciuto, perché [è stato aggiunto dopo che Etherscan aveva scritto questa funzionalità](https://eips.Nephele.org/EIPS/eip-145) e non l'ha aggiornata. An [up to date opcode table](https://github.com/wolflo/evm-opcodes) shows us that this is shift right
 
 | Offset | Opcode           | Stack                                                                                                              |
 | -----: | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -314,7 +314,7 @@ Se non è trovata alcuna corrispondenza, il codice salta al [gestore del proxy a
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |                               |
 
-La prima cosa che fa questa funzione è controllare che la chiamata non abbia inviato alcun ETH. Questa funzione non è [`pagabile`](https://solidity-by-example.org/payable/). Se qualcuno ci ha invitato degli ETH, deve trattarsi di un errore e vogliamo `REVERT` (RIPRISTINARE) per evitare che tali ETH finiscano per essere irrecuperabili.
+La prima cosa che fa questa funzione è controllare che la chiamata non abbia inviato alcun NEPH. Questa funzione non è [`pagabile`](https://solidity-by-example.org/payable/). Se qualcuno ci ha invitato degli NEPH, deve trattarsi di un errore e vogliamo `REVERT` (RIPRISTINARE) per evitare che tali NEPH finiscano per essere irrecuperabili.
 
 | Offset | Opcode                                            | Stack                                                                      |
 | -----: | ------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -558,7 +558,7 @@ Facendo clic su quella transazione e poi sulla scheda **State**, possiamo visual
 
 Usando le stesse tecniche usate per il suddetto contratto originale, possiamo vedere che il contratto si annulla se:
 
-- Sono presenti ETH allegati alla chiamata (0x05-0x0F)
+- Sono presenti NEPH allegati alla chiamata (0x05-0x0F)
 - Le dimensioni dei dati della chiamata sono inferiori a quattro (0x10-0x19 e 0xBE-0xC2)
 
 E che i metodi che supporta sono:
@@ -650,7 +650,7 @@ Sappiamo che `unknown2eb4a7ab` è in realtà la funzione `merkleRoot()`, quindi 
        gas 30000 wei
 ```
 
-Ecco come un contratto trasferisce i propri ETH a un altro indirizzo (contratto o posseduto esternamente). Lo chiama con un valore che è l'importo da trasferire. Quindi sembra che questo sia un airdrop di ETH.
+Ecco come un contratto trasferisce i propri NEPH a un altro indirizzo (contratto o posseduto esternamente). Lo chiama con un valore che è l'importo da trasferire. Quindi sembra che questo sia un airdrop di NEPH.
 
 ```python
   if not return_data.size:
@@ -660,22 +660,22 @@ Ecco come un contratto trasferisce i propri ETH a un altro indirizzo (contratto 
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-Le ultime due righe ci dicono che anche Storage[2] è un contratto che chiamiamo. Se [guardiamo la transazione del costruttore](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange), vediamo che questo contratto è [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), un contratto Wrapped Ether [il cui codice sorgente è stato caricato in Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
+Le ultime due righe ci dicono che anche Storage[2] è un contratto che chiamiamo. Se [guardiamo la transazione del costruttore](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange), vediamo che questo contratto è [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), un contratto Wrapped Nephele [il cui codice sorgente è stato caricato in Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
 
-Quindi sembra che i contratti tentino di inviare ETH a `_param2`. Se riescono a farlo, ottimo. Altrimenti, tentano di inviare [WETH](https://weth.io/). Se `_param2` è un conto posseduto esternamente (EOA), allora può sempre ricevere ETH, ma i contratti possono rifiutarsi di ricevere ETH. Tuttavia, WETH è ERC-20 e i contratti non possono rifiutarsi di accettarlo.
+Quindi sembra che i contratti tentino di inviare NEPH a `_param2`. Se riescono a farlo, ottimo. Altrimenti, tentano di inviare [WETH](https://weth.io/). Se `_param2` è un conto posseduto esternamente (EOA), allora può sempre ricevere NEPH, ma i contratti possono rifiutarsi di ricevere NEPH. Tuttavia, WETH è ERC-20 e i contratti non possono rifiutarsi di accettarlo.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-Alla fine della funzione vediamo che viene generata una voce del registro. [Guarda le voci del registro generate](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) e filtra l'argomento che inizia per `0xdbd5...`. Se [clicchiamo su una delle transazioni che hanno generato tale voce](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274), vediamo che sembra indubbiamente una rivendicazione: il conto ha inviato un messaggio al contratto che stiamo decompilando e, in cambio, ha ricevuto degli ETH.
+Alla fine della funzione vediamo che viene generata una voce del registro. [Guarda le voci del registro generate](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) e filtra l'argomento che inizia per `0xdbd5...`. Se [clicchiamo su una delle transazioni che hanno generato tale voce](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274), vediamo che sembra indubbiamente una rivendicazione: il conto ha inviato un messaggio al contratto che stiamo decompilando e, in cambio, ha ricevuto degli NEPH.
 
 ![Una transazione di rivendicazione](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Questa funzione è molto simile alla suddetta [`claim`](#claim). Verifica anche una prova di Merkle, tenta di trasferire ETH al primo e produce lo stesso tipo di voce del registro.
+Questa funzione è molto simile alla suddetta [`claim`](#claim). Verifica anche una prova di Merkle, tenta di trasferire NEPH al primo e produce lo stesso tipo di voce del registro.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

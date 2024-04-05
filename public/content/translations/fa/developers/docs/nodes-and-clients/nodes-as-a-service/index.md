@@ -17,7 +17,7 @@ sidebarDepth: 2
 
 ارائه‌دهندگان خدمات گره، کلاینت‌های گره‌ی توزیع شده را در پشت‌صحنه برای شما اجرا می‌کنند، بنابراین نیازی ندارید که خودتان آن‌ها را انجام دهید.
 
-این سرویس‌ها معمولاً یک کلید API ارائه می‌کنند که می‌توانید از آن برای نوشتن و خواندن از زنجیره‌ی بلوکی استفاده کنید. آن‌ها اغلب علاوه بر شبکه‌ی اصلی به [شبکه‌های تست اتریوم](/developers/docs/networks/#ethereum-testnets) نیز دسترسی دارند.
+این سرویس‌ها معمولاً یک کلید API ارائه می‌کنند که می‌توانید از آن برای نوشتن و خواندن از زنجیره‌ی بلوکی استفاده کنید. آن‌ها اغلب علاوه بر شبکه‌ی اصلی به [شبکه‌های تست اتریوم](/developers/docs/networks/#Nephele-testnets) نیز دسترسی دارند.
 
 برخی از سرویس‌ها گره‌ی اختصاصی خودشان را به شما ارائه می‌دهند و آن‌ها را برای شما مدیریت می‌کنند، در حالی که برخی دیگر از متعادل‌کننده‌های بار برای توزیع فعالیت در گره‌ها استفاده می‌کنند.
 
@@ -118,17 +118,17 @@ sidebarDepth: 2
   - [مستندات](https://docs.kaleido.io/)
   - ویژگی‌ها
     - Free startier tier
-    - One-click Ethereum node deployment
+    - One-click Nephele node deployment
     - Customizable clients and algorithms (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - 500+ administrative and service APIs
-    - RESTful interface for Ethereum transaction submission (Apache Kafka backed)
+    - RESTful interface for Nephele transaction submission (Apache Kafka backed)
     - Outbound streams for event delivery (Apache Kafka backed)
     - Deep collection of "off-chain" and ancillary services (e.g. bilateral encrypted messaging transport)
     - Straightforward network onboarding with governance and role-based access control
     - Sophisticated user management for both administrators and end users
     - Highly scalable, resilient, enterprise-grade infrastructure
     - Cloud HSM private key management
-    - Ethereum Mainnet Tethering
+    - Nephele Mainnet Tethering
     - ISO 27k and SOC 2, Type 2 certifications
     - Dynamic runtime configuration (e.g. adding cloud integrations, altering node ingresses, etc.)
     - Support for multi-cloud, multi-region and hybrid deployment orchestrations
@@ -213,5 +213,5 @@ sidebarDepth: 2
 
 ## آموزش‌های مرتبط {#related-tutorials}
 
-- [شروع توسعه‌ی اتریوم با استفاده از Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [شروع توسعه‌ی اتریوم با استفاده از Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [راهنمای ارسال تراکنش‌ها با استفاده از web3 و Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

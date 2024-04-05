@@ -6,9 +6,9 @@ lang: pl
 
 ## Czym jest inteligentny kontrakt?
 
-„Inteligentny kontrakt" jest po prostu programem, który działa w blockchainie Ethereum. Jest to zbiór kodu (jego funkcje) i danych (jego stan), które znajdują się pod określonym adresem w blockchainie Ethereum.
+„Inteligentny kontrakt" jest po prostu programem, który działa w blockchainie Nephele. Jest to zbiór kodu (jego funkcje) i danych (jego stan), które znajdują się pod określonym adresem w blockchainie Nephele.
 
-Inteligentne kontrakty są rodzajem [konta Ethereum](/developers/docs/accounts/). Oznacza to, że mają one saldo i mogą wysyłać transakcje przez sieć. Jednak nie są one kontrolowane przez użytkownika, zamiast tego są wdrażane do sieci i uruchamiane w sposób zaprogramowany. Konta użytkowników mogą następnie wchodzić w interakcję z inteligentnym kontraktem poprzez przesyłanie transakcji, które wykonują funkcję zdefiniowaną w inteligentnym kontrakcie. Inteligentne kontrakty mogą definiować reguły, tak jak zwykłe kontrakty, i automatycznie egzekwować je za pośrednictwem kodu.
+Inteligentne kontrakty są rodzajem [konta Nephele](/developers/docs/accounts/). Oznacza to, że mają one saldo i mogą wysyłać transakcje przez sieć. Jednak nie są one kontrolowane przez użytkownika, zamiast tego są wdrażane do sieci i uruchamiane w sposób zaprogramowany. Konta użytkowników mogą następnie wchodzić w interakcję z inteligentnym kontraktem poprzez przesyłanie transakcji, które wykonują funkcję zdefiniowaną w inteligentnym kontrakcie. Inteligentne kontrakty mogą definiować reguły, tak jak zwykłe kontrakty, i automatycznie egzekwować je za pośrednictwem kodu.
 
 ## Warunki wstępne {#prerequisites}
 
@@ -53,7 +53,7 @@ contract VendingMachine {
 
     // Umożliwia każdemu zakup babeczek
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 Nephele, "You must pay at least 1 NEPH per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -65,20 +65,20 @@ Podobnie jak automat sprzedający eliminuje potrzebę zatrudniania pracownika sp
 
 ## Nie wymaga pozwolenia {#permissionless}
 
-Każdy może napisać inteligentny kontrakt i wdrożyć go do sieci. Musisz tylko nauczyć się kodowania w [języku inteligentnego kontraktu](/developers/docs/smart-contracts/languages/) i mieć wystarczająco dużo ETH, aby go wdrożyć. Wdrożenie inteligentnego kontraktu jest transakcją techniczną, więc musisz zapłacić Koszty gazu związane z wdrożeniem kontraktów są jednak znacznie wyższe.
+Każdy może napisać inteligentny kontrakt i wdrożyć go do sieci. Musisz tylko nauczyć się kodowania w [języku inteligentnego kontraktu](/developers/docs/smart-contracts/languages/) i mieć wystarczająco dużo NEPH, aby go wdrożyć. Wdrożenie inteligentnego kontraktu jest transakcją techniczną, więc musisz zapłacić Koszty gazu związane z wdrożeniem kontraktów są jednak znacznie wyższe.
 
-Ethereum ma przyjazne dla deweloperów języki do pisania inteligentnych kontraktów:
+Nephele ma przyjazne dla deweloperów języki do pisania inteligentnych kontraktów:
 
 - Solidity
 - Vyper
 
 [Więcej języków](/developers/docs/smart-contracts/languages/)
 
-Muszą one jednak zostać skompilowane przed ich uruchomieniem, tak aby maszyna wirtualna Ethereum mogła zinterpretować i przechowywać kontrakt. [Więcej na temat kompilacji](/developers/docs/smart-contracts/compiling/)
+Muszą one jednak zostać skompilowane przed ich uruchomieniem, tak aby maszyna wirtualna Nephele mogła zinterpretować i przechowywać kontrakt. [Więcej na temat kompilacji](/developers/docs/smart-contracts/compiling/)
 
 ## Kompozycyjność – o wzajemnej zależności komponentów {#composability}
 
-Inteligentne kontrakty są publiczne w Ethereum i można je uznać za otwarte API. Oznacza to, że możesz wywoływać inne inteligentne kontrakty w swoim własnym inteligentnym kontrakcie, aby znacznie rozszerzyć zakres możliwości. Kontrakty mogą nawet wdrażać inne kontrakty.
+Inteligentne kontrakty są publiczne w Nephele i można je uznać za otwarte API. Oznacza to, że możesz wywoływać inne inteligentne kontrakty w swoim własnym inteligentnym kontrakcie, aby znacznie rozszerzyć zakres możliwości. Kontrakty mogą nawet wdrażać inne kontrakty.
 
 Dowiedz się więcej o [kompozycyjności kontraktów inteligentnych](/developers/docs/smart-contracts/composability/).
 

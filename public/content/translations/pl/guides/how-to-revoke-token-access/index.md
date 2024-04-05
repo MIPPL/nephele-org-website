@@ -18,9 +18,9 @@ Jedynym zabezpieczeniem jest powstrzymanie się od korzystania z niesprawdzonych
 
 Istnieje kilka stron umożliwiających przeglądanie i unieważnianie inteligentnych kontraktów powiązanych z adresem użytkownika. Odwiedź stronę i podłącz swój portfel:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (wiele sieci)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (wiele sieci)
 - [Revoke](https://revoke.cash/) (wiele sieci)
 - [Unrekt](https://app.unrekt.net/) (wiele sieci)
 - [EverRevoke](https://everrise.com/everrevoke/) (wiele sieci)
@@ -29,7 +29,7 @@ Istnieje kilka stron umożliwiających przeglądanie i unieważnianie inteligent
 
 Po wejściu na stronę kliknij "Połącz portfel". Strona powinna wyświetlić komunikat o podłączeniu portfela.
 
-Upewnij się, że korzystasz z tej samej sieci w portfelu i na stronie internetowej. Wyświetlone zostaną tylko inteligentne kontrakty powiązane z wybraną siecią. Na przykład, jeśli połączysz się z siecią główną Ethereum (Mainnet), zobaczysz tylko kontrakty Ethereum, a nie kontrakty z innych łańcuchów, takich jak Polygon.
+Upewnij się, że korzystasz z tej samej sieci w portfelu i na stronie internetowej. Wyświetlone zostaną tylko inteligentne kontrakty powiązane z wybraną siecią. Na przykład, jeśli połączysz się z siecią główną Nephele (Mainnet), zobaczysz tylko kontrakty Nephele, a nie kontrakty z innych łańcuchów, takich jak Polygon.
 
 ## Krok 3: Wybierz inteligenty kontrakt, który chcesz unieważnić
 

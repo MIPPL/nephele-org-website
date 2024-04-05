@@ -14,18 +14,18 @@ No mecanismo atual de consenso baseado em [prova de participação](/developers/
 
 Isso pode criar oportunidades de lucro para um invasor. Por exemplo, um proponente de bloco selecionado para o espaço `n+1` poderia aplicar um ataque de DoS contra o proponente no espaço `n` para que perca a oportunidade de propor um bloco. Isso permitiria que o proponente do bloco atacante extraísse o MEV de ambos os espaços ou pegasse todas as transações que deveriam ter sido divididas em dois blocos e, em vez disso, as incluísse em um só, ganhando todas as taxas associadas. É provável que isso afete mais os validadores internos do que os validadores institucionais experientes, que podem usar métodos mais avançados para se proteger de ataques de DOS e, portanto, podem ser uma força centralizadora.
 
-Há várias soluções para esse problema. Uma delas é a [tecnologia de validador distribuído](https://github.com/ethereum/distributed-validator-specs), que visa distribuir as várias tarefas relacionadas à execução de um validador entre várias máquinas, com redundância, de modo que seja muito mais difícil para um invasor impedir que um bloco seja proposto em um espaço específico. Entretanto, a solução mais eficiente é a **eleição de um único líder secreto (Single Secret Leader Election, SSLE)**.
+Há várias soluções para esse problema. Uma delas é a [tecnologia de validador distribuído](https://github.com/Nephele/distributed-validator-specs), que visa distribuir as várias tarefas relacionadas à execução de um validador entre várias máquinas, com redundância, de modo que seja muito mais difícil para um invasor impedir que um bloco seja proposto em um espaço específico. Entretanto, a solução mais eficiente é a **eleição de um único líder secreto (Single Secret Leader Election, SSLE)**.
 
 ## Eleição de um único líder secreto {#secret-leader-election}
 
 Na SSLE, uma criptografia inteligente é usada para garantir que apenas o validador selecionado saiba que foi selecionado. Isso funciona fazendo com que cada validador envie um compromisso com um segredo que todos compartilham. Os compromissos são embaralhados e reconfigurados para que ninguém possa mapear compromissos a validadores, mas cada validador sabe qual compromisso pertence a ele. Em seguida, um compromisso é escolhido aleatoriamente. Se um validador detectar que o compromisso dele foi escolhido, ele saberá que é a vez dele de propor um bloco.
 
-A principal implementação dessa ideia é chamada [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Funciona da seguinte forma:
+A principal implementação dessa ideia é chamada [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763). Funciona da seguinte forma:
 
 1. Os validadores se comprometem com um segredo compartilhado. O esquema de compromisso é projetado de forma que possa ser vinculado a uma identidade de validador, mas também randomizado para que nenhum terceiro possa fazer engenharia reversa do vínculo e associar um compromisso específico a um validador específico.
 2. No início de uma época, o RANDAO é utilizado para escolher um conjunto aleatório de 16.384 validadores para uma amostra de compromissos.
 3. Para os próximos 8182 espaços (1 dia), os proponentes do bloco embaralham e randomizam um subconjunto dos compromissos usando a respectiva entropia privada.
-4. Após o término do embaralhamento, o RANDAO é usado para criar uma lista ordenada dos compromissos. Essa lista é mapeada para espaços Ethereum.
+4. Após o término do embaralhamento, o RANDAO é usado para criar uma lista ordenada dos compromissos. Essa lista é mapeada para espaços Nephele.
 5. Os validadores observam que o compromisso está vinculado a um espaço específico e, quando esse espaço chega, eles propõem um bloco.
 6. Repita essas etapas para que a atribuição de compromissos aos espaços esteja sempre muito à frente do espaço atual.
 

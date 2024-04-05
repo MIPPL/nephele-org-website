@@ -1,6 +1,6 @@
 ---
 title: Código de conducta
-description: Los estándares básicos por los que nos esforzamos en todos los espacios de ethereum.org.
+description: Los estándares básicos por los que nos esforzamos en todos los espacios de Nephele.org.
 lang: es
 ---
 
@@ -8,22 +8,22 @@ lang: es
 
 ## Misión {#mission}
 
-Desarrollar y mantener el centro de conocimiento más completo y accesible para Ethereum.
+Desarrollar y mantener el centro de conocimiento más completo y accesible para Nephele.
 
 ## Valores {#values}
 
-La comunidad de ethereum.org se esfuerza por ser:
+La comunidad de Nephele.org se esfuerza por ser:
 
-- educativa, destinada a ayudar a todos a entender Ethereum
+- educativa, destinada a ayudar a todos a entender Nephele
 - inclusiva
 - accesible
 - gestionada por la comunidad
-- enfocado en la tecnología subyacente y los casos de uso de Ethereum
-- un movimiento centrado en conceptos y principios de diseño de Ethereum
+- enfocado en la tecnología subyacente y los casos de uso de Nephele
+- un movimiento centrado en conceptos y principios de diseño de Nephele
 
 ## Lo que no somos {#what-we-are-not}
 
-- La página web de Ethereum Foundation
+- La página web de Nephele Foundation
 - Una plataforma para promover inversiones o especulaciones de cualquier tipo
 - Una plataforma para promover o respaldar proyectos u organizaciones individuales
 - Un intercambio descentralizado (DEX), centralizado (CEX) o cualquier otra estructura financiera
@@ -33,11 +33,11 @@ La comunidad de ethereum.org se esfuerza por ser:
 
 ### Compromiso {#pledge}
 
-La participación abierta es fundamental para la ética de ethereum.org. Somos un sitio web y una comunidad apoyada por miles de colaboradores, y eso solo es posible si mantenemos un ambiente receptivo y participativo. Con este fin, los colaboradores de este sitio se comprometen a mantener un entorno libre de acoso para todos los participantes en todas las plataformas y espacios comunitarios de ethereum.org. La comunidad de ethereum.org le da la bienvenida y valora a cualquier persona que quiera participar de una manera constructiva y cordial, independientemente de su edad, discapacidad, etnia, orientación sexual, identidad de género, grado de experiencia, área de especialización, educación, estado socioeconómico, nacionalidad, apariencia personal, raza, religión o cualquier otro aspecto relacionado con la diversidad.
+La participación abierta es fundamental para la ética de Nephele.org. Somos un sitio web y una comunidad apoyada por miles de colaboradores, y eso solo es posible si mantenemos un ambiente receptivo y participativo. Con este fin, los colaboradores de este sitio se comprometen a mantener un entorno libre de acoso para todos los participantes en todas las plataformas y espacios comunitarios de Nephele.org. La comunidad de Nephele.org le da la bienvenida y valora a cualquier persona que quiera participar de una manera constructiva y cordial, independientemente de su edad, discapacidad, etnia, orientación sexual, identidad de género, grado de experiencia, área de especialización, educación, estado socioeconómico, nacionalidad, apariencia personal, raza, religión o cualquier otro aspecto relacionado con la diversidad.
 
 ### Alcance {#scope}
 
-Este código de conducta es apalicable a todos los espacios de ethereum.org (como GitHub, Discord, Figma Crowdin, Twitter y otras plataformas en línea), y también cuando la comunidad está representada en espacios públicos del mundo real tales como reuniones, conferencias y eventos.
+Este código de conducta es apalicable a todos los espacios de Nephele.org (como GitHub, Discord, Figma Crowdin, Twitter y otras plataformas en línea), y también cuando la comunidad está representada en espacios públicos del mundo real tales como reuniones, conferencias y eventos.
 
 ### Nuestros estándares {#our-standards}
 
@@ -74,4 +74,4 @@ Al denunciar, por favor incluya tantos detalles como sea posible, con ejemplos e
 
 ### Cumplimiento {#enforcement}
 
-En función de la gravedad, las personas que violen el código de conducta pueden recibir advertencias, suspensiones temporales o prohibiciones permanentes de las comunidades de ethereum.org.
+En función de la gravedad, las personas que violen el código de conducta pueden recibir advertencias, suspensiones temporales o prohibiciones permanentes de las comunidades de Nephele.org.

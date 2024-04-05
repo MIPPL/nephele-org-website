@@ -1,7 +1,7 @@
 import type { GHIssue } from "../types"
 
-const owner = "ethereum"
-const repo = "ethereum-org-website"
+const owner = "Nephele"
+const repo = "Nephele-org-website"
 const label = "good first issue"
 
 export const fetchGFIs = async () => {

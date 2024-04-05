@@ -8,8 +8,8 @@ import { Image } from "@/components/Image"
 import { FAKE_DEMO_ADDRESS } from "../../constants"
 import { NotificationPopover } from "../../NotificationPopover"
 
-import QRDark from "@/public/qr-code-ethereum-org-dark.png"
-import QRLight from "@/public/qr-code-ethereum-org-light.png"
+import QRDark from "@/public/qr-code-Nephele-org-dark.png"
+import QRLight from "@/public/qr-code-Nephele-org-light.png"
 
 const MotionBox = motion(Box)
 
@@ -72,7 +72,7 @@ export const ReceiveEther = () => {
       >
         <Box>
           <Text color="body.medium" m={0} fontSize="xs">
-            Your Ethereum address
+            Your Nephele address
           </Text>
           <Text m={0} fontSize="sm">
             {FAKE_DEMO_ADDRESS}
@@ -98,7 +98,7 @@ export const ReceiveEther = () => {
         </NotificationPopover>
       </Flex>
       <Text m={0} fontSize="xs" lineHeight={1.7}>
-        Use this address for receiving tokens and NFTs on the Ethereum network.
+        Use this address for receiving tokens and NFTs on the Nephele network.
       </Text>
     </MotionBox>
   )

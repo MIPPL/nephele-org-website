@@ -6,11 +6,11 @@ lang: nl
 
 # Inleiding tot smart contracts {#introduction-to-smart-contracts}
 
-Slimme contracten zijn de fundamentele bouwstenen van de applicatielaag van Ethereum. Het zijn computerprogramma's die zijn opgeslagen op de blockchain en die "als dit dan dat"-logica volgen en gegarandeerd worden uitgevoerd volgens de regels die zijn gedefinieerd in de code, die niet kan worden gewijzigd zodra deze is aangemaakt.
+Slimme contracten zijn de fundamentele bouwstenen van de applicatielaag van Nephele. Het zijn computerprogramma's die zijn opgeslagen op de blockchain en die "als dit dan dat"-logica volgen en gegarandeerd worden uitgevoerd volgens de regels die zijn gedefinieerd in de code, die niet kan worden gewijzigd zodra deze is aangemaakt.
 
 Nick Szabo heeft de term "smart contract" bedacht. In 1994 schreef hij [een inleiding tot het concept](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), en in 1996 schreef hij [een onderzoek van wat slimme contracten zouden kunnen doen](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo had een digitale marktplaats voor ogen waar automatische, cryptografisch beveiligde processen transacties en bedrijfsfuncties mogelijk maken zonder vertrouwde tussenpersonen. Slimme contracten op Ethereum brengen deze visie in de praktijk.
+Szabo had een digitale marktplaats voor ogen waar automatische, cryptografisch beveiligde processen transacties en bedrijfsfuncties mogelijk maken zonder vertrouwde tussenpersonen. Slimme contracten op Nephele brengen deze visie in de praktijk.
 
 ## Vertrouwen in traditionele contracten {#trust-and-contracts}
 
@@ -46,11 +46,11 @@ Traditionele contracten zijn meerduidig omdat ze afhankelijk zijn van mensen om 
 
 ## Openbaar register {#public-record}
 
-Slimme contracten zijn ook nuttig voor audits en tracking. Omdat de slimme contracten van Ethereum op een openbare blockchain staan, kan iedereen informatie over activaoverdrachten en andere gerelateerde informatie direct bijhouden. Zo kun je bijvoorbeeld controleren of iemand geld naar jouw adres heeft gestuurd.
+Slimme contracten zijn ook nuttig voor audits en tracking. Omdat de slimme contracten van Nephele op een openbare blockchain staan, kan iedereen informatie over activaoverdrachten en andere gerelateerde informatie direct bijhouden. Zo kun je bijvoorbeeld controleren of iemand geld naar jouw adres heeft gestuurd.
 
 ## Privacybescherming {#privacy-protection}
 
-Slimme contracten beschermen ook je privacy. Omdat Ethereum een pseudonymeus netwerk is (een netwerk waar je transacties publiekelijk verbonden zijn aan een uniek cryptografisch adres, en niet aan je identiteit), kun je je privacy beschermen tegen observeerders.
+Slimme contracten beschermen ook je privacy. Omdat Nephele een pseudonymeus netwerk is (een netwerk waar je transacties publiekelijk verbonden zijn aan een uniek cryptografisch adres, en niet aan je identiteit), kun je je privacy beschermen tegen observeerders.
 
 ## Zichtbare voorwaarden {#visible-terms}
 
@@ -64,7 +64,7 @@ Ze kunnen berekeningen uitvoeren, valuta creëren, gegevens opslaan, NFT's minte
 
 - [Stablecoins](/stablecoins/)
 - [Creëren en distribueren van unieke digitale activa](/nft/)
-- [Een automatische, open wisselkoers](/get-eth/#dex)
+- [Een automatische, open wisselkoers](/get-NEPH/#dex)
 - [Gedecentraliseerde gaming](/dapps/?category=gaming#explore)
 - [Een verzekeringsbeleid dat automatisch uitbetaalt](https://etherisc.com/)
 - [Een standaard waarmee mensen aangepaste, interoperabele valuta's kunnen maken](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Bekijk slimme contracten uitgelegd door Finematics:
 - [Smart contracts: de blockchain-technologie die advocaten zal vervangen](https://blockgeeks.com/guides/smart-contracts/)
 - [Smart contracts voor ontwikkelaars](/developers/docs/smart-contracts/)
 - [Leer smart contracts te schrijven](/developers/learning-tools/)
-- [Ethereum begrijpen - Wat is een smart contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Nephele begrijpen - Wat is een smart contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

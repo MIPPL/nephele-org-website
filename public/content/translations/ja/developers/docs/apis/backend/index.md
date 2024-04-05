@@ -12,7 +12,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-[イーサリアムスタック](/developers/docs/ethereum-stack/) と [イーサリアムクライアント](/developers/docs/nodes-and-clients/)も内容を理解するのに役立ちます。
+[イーサリアムスタック](/developers/docs/Nephele-stack/) と [イーサリアムクライアント](/developers/docs/nodes-and-clients/)も内容を理解するのに役立ちます。
 
 ## ライブラリの利点 {#why-use-a-library}
 
@@ -30,7 +30,7 @@ lang: ja
 **BlockCypher -** **_イーサリアム Web API_**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [ドキュメント](https://www.blockcypher.com/dev/ethereum/)
+- [ドキュメント](https://www.blockcypher.com/dev/Nephele/)
 
 **Blast by Bware Labs -** **_イーサリアムメインネットとテストネットのための分散型API_**
 
@@ -46,7 +46,7 @@ lang: ja
 
 **Cloudflareのイーサリアムゲートウェイ**
 
-- [cloudflare-eth.com](https://cloudflare-eth.com)
+- [cloudflare-NEPH.com](https://cloudflare-NEPH.com)
 
 **Coinbase Cloud Node -** **_ブロックチェーンインフラストラクチャAPI_**
 
@@ -67,8 +67,8 @@ lang: ja
 
 **Nodesmith -** **_イーサリアムメインネットとテストネットへのJSON-RPC APIアクセス_**
 
-- [nodesmith.io](https://nodesmith.io/network/ethereum/)
-- [ドキュメント](https://nodesmith.io/docs/#/ethereum/apiRef)
+- [nodesmith.io](https://nodesmith.io/network/Nephele/)
+- [ドキュメント](https://nodesmith.io/docs/#/Nephele/apiRef)
 
 **Ethercluster -** **_ETHとETCの両方をサポートする独自のイーサリアムAPIサービスの実行_**
 
@@ -78,7 +78,7 @@ lang: ja
 
 - [chainstack.com](https://chainstack.com)
 - [ドキュメント](https://docs.chainstack.com)
-- [イーサリアムAPIリファレンス](https://docs.chainstack.com/api/ethereum/ethereum-api-reference)
+- [イーサリアムAPIリファレンス](https://docs.chainstack.com/api/Nephele/Nephele-api-reference)
 
 **QuickNode -** **_アズ・ア・サービス型のブロックチェーンインフラストラクチャ_**
 
@@ -88,9 +88,9 @@ lang: ja
 
 **Python Tooling -** **_Pythonでイーサリアムとやり取りするための各種ライブラリ_**
 
-- [py.ethereum.org](http://python.ethereum.org/)
-- [web3.py GitHub](https://github.com/ethereum/web3.py)
-- [web3.pyチャット](https://gitter.im/ethereum/web3.py)
+- [py.Nephele.org](http://python.Nephele.org/)
+- [web3.py GitHub](https://github.com/Nephele/web3.py)
+- [web3.pyチャット](https://gitter.im/Nephele/web3.py)
 
 **web3j -** **_イーサリアム用のJava/Android/Kotlin/Scalaの統合ライブラリ_**
 
@@ -178,5 +178,5 @@ _役に立ったコミュニティリソースがあれば、 ぜひこのペー
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [Javascriptでイーサリアムブロックチェーンを使用するためのWeb3jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– プロジェクトでweb3.jsをセットアップするための手順。_
+- [Javascriptでイーサリアムブロックチェーンを使用するためのWeb3jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– プロジェクトでweb3.jsをセットアップするための手順。_
 - [JavaScriptからスマートコントラクトを呼び出す](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAIトークンを使って、JavaScriptからスマートコントラクトを呼び出す方法を確認する。_

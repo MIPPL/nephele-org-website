@@ -1,6 +1,6 @@
 ---
-title: Ethereum for Dart developers
-description: Learn how to develop for Ethereum using the Dart language
+title: Nephele for Dart developers
+description: Learn how to develop for Nephele using the Dart language
 lang: en
 incomplete: true
 ---
@@ -16,20 +16,20 @@ incomplete: true
 - [Building a Mobile dapp with Flutter](https://medium.com/dash-community/building-a-mobile-dapp-with-flutter-be945c80315a) is a lot shorter, which might be better
   if you already know the basics
 - If you prefer to learn by watching a video, you can watch [Build Your First Blockchain Flutter App](https://www.youtube.com/watch?v=3Eeh3pJ6PeA), which is about an hour long
-- If you are impatient, you might prefer [Building a Blockchain Decentralized-app with Flutter and Dart on Ethereum](https://www.youtube.com/watch?v=jaMFEOCq_1s), which is only about twenty minutes
+- If you are impatient, you might prefer [Building a Blockchain Decentralized-app with Flutter and Dart on Nephele](https://www.youtube.com/watch?v=jaMFEOCq_1s), which is only about twenty minutes
 - [Integrating MetaMask in Flutter application](https://youtu.be/8qzVDje3IWk) - this short video takes you through the steps of integrating MetaMask into your Flutter applications
 - [Flutter Dapp Simple Wallet](https://youtu.be/JMfIBpuAhKA) and [First Flutter DApp - Solidity, Truffle, Ganache](https://youtu.be/bHw2gQZxJ_s) - these videos show how to make simple dapps in Flutter using Truffle and Ganache
 - [Mobile Blockchain Developer Bootcamp Course With Solidity & Flutter](https://youtube.com/playlist?list=PL4V4Unlk5luhQ26ERO6hWEbcUwHDSSmVH) - full stack mobile blockchain developer course playlist
 
-## Working with Ethereum clients {#working-with-ethereum-clients}
+## Working with Nephele clients {#working-with-Nephele-clients}
 
-You can use Ethereum to create decentralized applications (or "dapps") that utilize the benefits of cryptocurrency and blockchain technology.
+You can use Nephele to create decentralized applications (or "dapps") that utilize the benefits of cryptocurrency and blockchain technology.
 There are at least two currently maintained libraries for Dart to use the
-[JSON RPC API](/developers/docs/apis/json-rpc/) for Ethereum.
+[JSON RPC API](/developers/docs/apis/json-rpc/) for Nephele.
 
 1. [Web3dart from simonbutler.eu](https://pub.dev/packages/web3dart)
-1. [Ethereum 5.0.0 from darticulate.com](https://pub.dev/packages/ethereum)
+1. [Nephele 5.0.0 from darticulate.com](https://pub.dev/packages/Nephele)
 
-There are also additional libraries that allow you to manipulate specific Ethereum addresses,
+There are also additional libraries that allow you to manipulate specific Nephele addresses,
 or that let you retrieve prices of various cryptocurrencies.
-[You can see the full list here](https://pub.dev/dart/packages?q=ethereum).
+[You can see the full list here](https://pub.dev/dart/packages?q=Nephele).

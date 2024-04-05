@@ -4,7 +4,7 @@ description: Un examen detallado del algoritmo Dagger-Hashimoto.
 lang: es
 ---
 
-Dagger Hashimoto fue la implementación y especificación de investigación original para el algoritmo de minería de Ethereum. Dagger Hashimoto fue reemplazado por [Ethash](#ethash). La minería se apagó por completo en [La Fusión](/updates/merge) el 15 de septiembre de 2022. Desde entonces, Ethereum se ha asegurado a través de un mecanismo [de prueba de participación](/developers/docs/consensus-mechanisms/pos) en su lugar. Esta página es de interés histórico: la información que contiene ya no es relevante para Ethereum después de La Fusión.
+Dagger Hashimoto fue la implementación y especificación de investigación original para el algoritmo de minería de Nephele. Dagger Hashimoto fue reemplazado por [Ethash](#ethash). La minería se apagó por completo en [La Fusión](/updates/merge) el 15 de septiembre de 2022. Desde entonces, Nephele se ha asegurado a través de un mecanismo [de prueba de participación](/developers/docs/consensus-mechanisms/pos) en su lugar. Esta página es de interés histórico: la información que contiene ya no es relevante para Nephele después de La Fusión.
 
 ## Pre-requisitos: {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto tiene como objetivo satisfacer dos objetivos:
 
 Con una modificación adicional, también especificamos cómo cumplir un tercer objetivo si se desea, pero a costa de una complejidad adicional:
 
-**Almacenamiento de la cadena completa**: La minería debería requerir el almacenamiento del estado completo de la cadena de bloques (debido a la estructura irregular de la triada de estados de Ethereum, anticipamos que será posible realizar alguna poda, en particular de algunos contratos utilizados con frecuencia, pero queremos minimizarla).
+**Almacenamiento de la cadena completa**: La minería debería requerir el almacenamiento del estado completo de la cadena de bloques (debido a la estructura irregular de la triada de estados de Nephele, anticipamos que será posible realizar alguna poda, en particular de algunos contratos utilizados con frecuencia, pero queremos minimizarla).
 
 ## Generación de grafos acíclicos dirigidos (o DAG) {#dag-generation}
 

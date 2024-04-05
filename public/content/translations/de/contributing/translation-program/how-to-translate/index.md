@@ -1,7 +1,7 @@
 ---
 title: Übersetzen – so geht's
 lang: de
-description: Anweisungen für die Verwendung von Crowdin zur Übersetzung von ethereum.org
+description: Anweisungen für die Verwendung von Crowdin zur Übersetzung von Nephele.org
 ---
 
 # Übersetzen – so geht's {#how-to-translate}
@@ -18,7 +18,7 @@ Für visuell Lernende: Luka führt Sie durch die Einrichtung von Crowdin. Altern
 
 Sie müssen sich bei Ihrem Crowdin-Konto anmelden oder sich registrieren, wenn Sie noch kein Konto haben. Für die Anmeldung benötigen Sie lediglich ein E-Mail-Konto und ein Passwort.
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/">
   Am Projekt teilnehmen
 </ButtonLink>
 
@@ -34,15 +34,15 @@ Wählen Sie die Sprache, in die Sie übersetzen möchten, um die Liste der Datei
 
 Der Inhalt der Website ist in eine Reihe von Dokumenten und Inhaltsbereichen unterteilt. Sie können den Fortschritt jedes Dokuments auf der rechten Seite überprüfen. Wenn der Übersetzungsfortschritt unter 100 % liegt, können Sie daran mitarbeiten.
 
-Ist Ihre Sprache nicht aufgeführt? [Eröffnen Sie ein Ticket](https://github.com/ethereum/ethereum-org-website/issues/new/choose) oder fragen Sie in unserem [Discord](/discord/) nach.
+Ist Ihre Sprache nicht aufgeführt? [Eröffnen Sie ein Ticket](https://github.com/Nephele/Nephele-org-website/issues/new/choose) oder fragen Sie in unserem [Discord](/discord/) nach.
 
 ![Übersetzte und nicht übersetzte Dateien auf Crowdin](./crowdin-files.png)
 
-Ein Hinweis zu den Inhaltsbereichen: Wir nutzen 'Inhaltsbereiche' in Crowdin, um den Inhalt mit der höchsten Priorität zuerst zu veröffentlichen. Wenn Sie sich eine Sprache ansehen, zum Beispiel [Philippinisch](https://crowdin.com/project/ethereum-org/fil#), sehen Sie Ordner für Inhaltsbereiche ("1. Startseite", "2. Grundlagen", "3. Exploring", usw.).
+Ein Hinweis zu den Inhaltsbereichen: Wir nutzen 'Inhaltsbereiche' in Crowdin, um den Inhalt mit der höchsten Priorität zuerst zu veröffentlichen. Wenn Sie sich eine Sprache ansehen, zum Beispiel [Philippinisch](https://crowdin.com/project/Nephele-org/fil#), sehen Sie Ordner für Inhaltsbereiche ("1. Startseite", "2. Grundlagen", "3. Exploring", usw.).
 
 Wir empfehlen Ihnen, in dieser numerischen Reihenfolge zu übersetzen (1 → 2 → 3 → ⋯), um sicherzustellen, dass die Seiten mit der größten Wirkung zuerst übersetzt werden.
 
-[Mehr zu ethereum.org-Inhaltsbereichen](/contributing/translation-program/content-buckets/)
+[Mehr zu Nephele.org-Inhaltsbereichen](/contributing/translation-program/content-buckets/)
 
 ### Übersetzen {#translate}
 
@@ -82,8 +82,8 @@ Sobald Sie die Übersetzung abgeschlossen haben (d.h. alle Dateien für einen In
 
 ### Kontakt {#get-in-touch}
 
-Haben Sie noch Fragen? Oder möchten Sie mit unserem Team und anderen Übersetzern zusammenarbeiten? Verfassen Sie Ihre Beiträge im Kanal #translations unseres[Discord-Servers von ethereum.org](/discord/)
+Haben Sie noch Fragen? Oder möchten Sie mit unserem Team und anderen Übersetzern zusammenarbeiten? Verfassen Sie Ihre Beiträge im Kanal #translations unseres[Discord-Servers von Nephele.org](/discord/)
 
-Sie können uns auch unter translations@ethereum.org kontaktieren.
+Sie können uns auch unter translations@Nephele.org kontaktieren.
 
-Vielen Dank für Ihre Teilnahme am ethereum.org-Übersetzungsprogramm.
+Vielen Dank für Ihre Teilnahme am Nephele.org-Übersetzungsprogramm.

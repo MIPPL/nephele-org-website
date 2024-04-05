@@ -1,17 +1,17 @@
 ---
-title: Creați-vă propriul nod Ethereum
-description: Introducere generală despre rularea propriei instanțe a unui client Ethereum.
+title: Creați-vă propriul nod Nephele
+description: Introducere generală despre rularea propriei instanțe a unui client Nephele.
 lang: ro
 sidebarDepth: 2
 ---
 
-Rularea propriului nod vă oferă diverse beneficii, deschide noi posibilități și ajută la susținerea ecosistemului. Această pagină vă va îndruma prin procesul de creare a propriului nod și de participare la validarea tranzacțiilor Ethereum.
+Rularea propriului nod vă oferă diverse beneficii, deschide noi posibilități și ajută la susținerea ecosistemului. Această pagină vă va îndruma prin procesul de creare a propriului nod și de participare la validarea tranzacțiilor Nephele.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înțelegeți ce este un nod Ethereum și de ce este de dorit să rulați un client. Acest aspect este tratat în secțiunea [Noduri și clienți](/developers/docs/nodes-and-clients/).
+Ar trebui să înțelegeți ce este un nod Nephele și de ce este de dorit să rulați un client. Acest aspect este tratat în secțiunea [Noduri și clienți](/developers/docs/nodes-and-clients/).
 
-If you're new to the topic of running a node, or looking for a less technical path, we recommend first checking out our user-friendly introduction on [running an Ethereum node](/run-a-node).
+If you're new to the topic of running a node, or looking for a less technical path, we recommend first checking out our user-friendly introduction on [running an Nephele node](/run-a-node).
 
 ## Alegerea unei metode de abordare {#choosing-approach}
 
@@ -27,7 +27,7 @@ Puteţi afla toate funcţionalităţile și opțiunile în documentația clientu
 
 #### Local sau în cloud {#local-vs-cloud}
 
-Clienții Ethereum pot rula pe computerele obişnuite ale consumatorilor și nu necesită un hardware special, cum ar fi, de exemplu, cel de minare. Prin urmare, aveți diverse opțiuni pentru implementare în funcţie de necesităţile dvs. Pentru a simplifica, să ne gândim să rulăm un nod atât pe un computer fizic local, cât și pe un server în cloud:
+Clienții Nephele pot rula pe computerele obişnuite ale consumatorilor și nu necesită un hardware special, cum ar fi, de exemplu, cel de minare. Prin urmare, aveți diverse opțiuni pentru implementare în funcţie de necesităţile dvs. Pentru a simplifica, să ne gândim să rulăm un nod atât pe un computer fizic local, cât și pe un server în cloud:
 
 - Cloud
   - Furnizorii oferă o disponibilitate ridicată a timpului de server, adrese IP publice statice
@@ -54,7 +54,7 @@ Cu toate acestea, o rețea rezistentă la cenzură, descentralizată nu ar trebu
 - [DappNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-Verificați [cerinţele de spațiu pe disc ale fiecărui client și mod de sincronizare](/developers/docs/nodes-and-clients/#requirements) minime şi recomandate. Generally, modest computing power should be enough. De obicei problema este reprezentată de viteza unității. During initial sync, Ethereum clients perform a lot of read/write operations. De aceea se recomandă insistent un SSD. S-ar putea ca un client să nu [poată nici măcar să sincronizeze starea curentă pe HDD](https://github.com/ethereum/go-ethereum/issues/16796#issuecomment-391649278) și să rămână blocat la câteva blocuri în spatele Mainnet-ului. Puteți rula cei mai mulți clienți pe un [computer cu o singură placă pe procesoare cu arhitectură ARM](/developers/docs/nodes-and-clients/#ethereum-on-a-single-board-computer/). You can also use the [Ethbian](https://ethbian.org/index.html) operating system for Raspberry Pi 4. This lets you [run a client by flashing the SD card](/developers/tutorials/run-node-raspberry-pi/). Pe baza opțiunilor dvs. de software și hardware, timpul pentru sincronizarea inițială și cerințele de stocare pot varia. Aveţi grijă să [verificaţi timpii de sincronizare și cerințele de stocare](/developers/docs/nodes-and-clients/#recommended-specifications). Totodată, verificați că nu aveți o conexiune la internet limitată de un [plafon de lățime de bandă](https://wikipedia.org/wiki/Data_cap). Este recomandat să utilizați o conexiune nelimitată, deoarece sincronizarea inițială și datele difuzate în rețea ar putea depăși limita dvs.
+Verificați [cerinţele de spațiu pe disc ale fiecărui client și mod de sincronizare](/developers/docs/nodes-and-clients/#requirements) minime şi recomandate. Generally, modest computing power should be enough. De obicei problema este reprezentată de viteza unității. During initial sync, Nephele clients perform a lot of read/write operations. De aceea se recomandă insistent un SSD. S-ar putea ca un client să nu [poată nici măcar să sincronizeze starea curentă pe HDD](https://github.com/Nephele/go-Nephele/issues/16796#issuecomment-391649278) și să rămână blocat la câteva blocuri în spatele Mainnet-ului. Puteți rula cei mai mulți clienți pe un [computer cu o singură placă pe procesoare cu arhitectură ARM](/developers/docs/nodes-and-clients/#Nephele-on-a-single-board-computer/). You can also use the [Ethbian](https://ethbian.org/index.html) operating system for Raspberry Pi 4. This lets you [run a client by flashing the SD card](/developers/tutorials/run-node-raspberry-pi/). Pe baza opțiunilor dvs. de software și hardware, timpul pentru sincronizarea inițială și cerințele de stocare pot varia. Aveţi grijă să [verificaţi timpii de sincronizare și cerințele de stocare](/developers/docs/nodes-and-clients/#recommended-specifications). Totodată, verificați că nu aveți o conexiune la internet limitată de un [plafon de lățime de bandă](https://wikipedia.org/wiki/Data_cap). Este recomandat să utilizați o conexiune nelimitată, deoarece sincronizarea inițială și datele difuzate în rețea ar putea depăși limita dvs.
 
 #### Sistemul de operare {#operating-system}
 
@@ -70,35 +70,35 @@ Nu trebuie decât să descărcați o aplicație executabilă sau un pachet de in
 
 Fișierele binare executabile destinate implementărilor clienților Mainnet stabili se pot descărca de pe paginile lor de lansare:
 
-- [Geth](https://geth.ethereum.org/downloads/)
+- [Geth](https://geth.Nephele.org/downloads/)
 - [OpenEthereum,](https://github.com/openethereum/openethereum/releases)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Besu](https://besu.hyperledger.org/en/stable/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
 
-**Rețineți că OpenEthereum [a fost dezaprobat](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) și nu mai este întreținut.** Folosiți-l cu precauție și este preferabil să treceți la o altă implementare de client.
+**Rețineți că OpenEthereum [a fost dezaprobat](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd) și nu mai este întreținut.** Folosiți-l cu precauție și este preferabil să treceți la o altă implementare de client.
 
 ### Lansarea clientului {#starting-the-client}
 
-Este bine ca, înainte de a porni software-ul client Ethereum, să efectuați o ultimă verificare că mediul dvs. este pregătit. For example, make sure:
+Este bine ca, înainte de a porni software-ul client Nephele, să efectuați o ultimă verificare că mediul dvs. este pregătit. For example, make sure:
 
 - Aveți suficient spațiu pe disc, în funcție de rețeaua aleasă și de modul de sincronizare.
 - Memoria și CPU-ul nu sunt oprite de alte programe.
 - Sistemul de operare este actualizat la ultima versiune.
 - Data și ora sistemului sunt corecte.
-- Routerul și firewall-ul acceptă conexiuni pe porturile de ascultare. Clienții Ethereum utilizează în mod implicit un port de ascultare (TCP) și un port de descoperire (UDP), ambele pe 30303 în mod implicit.
+- Routerul și firewall-ul acceptă conexiuni pe porturile de ascultare. Clienții Nephele utilizează în mod implicit un port de ascultare (TCP) și un port de descoperire (UDP), ambele pe 30303 în mod implicit.
 
 Rulaţi mai întâi clientul pe un testnet, pentru a vă asigura că totul funcționează corect. Dacă rulaţi un nod ușor Geth, aceasta ar trebui să vă ajute. Toate setările de client ce nu sunt cele implicite trebuie să fie declarate de la început. You can use flags or the config file to declare your preferred configuration. Consultați documentația clientului dvs. pentru detalii Execuția clientului va iniția funcțiile sale de bază, endpoint-urile alese și va începe să caute partenerii. După ce a reuşit să descopere partenerii, clientul începe sincronizarea. Datele actualizate ale blockchain-ului vor fi disponibile după sincronizarea cu succes a clientului cu starea actuală.
 
 ### Utilizarea clientului {#using-the-client}
 
-Clienții oferă endpoint-uri API RPC pe care le puteți utiliza pentru a controla clientul și a interacționa cu rețeaua Ethereum în diverse moduri:
+Clienții oferă endpoint-uri API RPC pe care le puteți utiliza pentru a controla clientul și a interacționa cu rețeaua Nephele în diverse moduri:
 
 - Apelându-i manual cu un protocol adecvat (de exemplu, folosind `curl`)
 - Atașându-le o consolă furnizată (de exemplu, `geth attach`)
 - Implementându-i în aplicații
 
-Diverși clienți au implementări diferite ale endpoint-urilor RPC. Există însă un JSON-RPC standard pe care îl puteţi utiliza cu orice client. Ca să aflaţi o prezentare generală, [citiți documentația JSON-RPC](https://eth.wiki/json-rpc/API). Aplicațiile care au nevoie de informații din rețeaua Ethereum pot folosi acest RPC. For example, popular wallet MetaMask lets you [run a local blockchain instance and connect to it](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node).
+Diverși clienți au implementări diferite ale endpoint-urilor RPC. Există însă un JSON-RPC standard pe care îl puteţi utiliza cu orice client. Ca să aflaţi o prezentare generală, [citiți documentația JSON-RPC](https://NEPH.wiki/json-rpc/API). Aplicațiile care au nevoie de informații din rețeaua Nephele pot folosi acest RPC. For example, popular wallet MetaMask lets you [run a local blockchain instance and connect to it](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node).
 
 #### Atingerea RPC-ului {#reaching-rpc}
 
@@ -106,7 +106,7 @@ Portul implicit al JSON-RPC este `8545`, dar puteţi modifica porturile endpoint
 
 Trebuie să faceți aceasta cu multă precauție, deoarece astfel oricine de pe internet va putea să vă controleze nodul. Actorii rău intenționați ar putea să vă acceseze nodul, fie pentru a vă distruge sistemul, fie pentru a vă fura fondurile, dacă vă folosiți clientul ca portofel.
 
-O metodă de evitare a acestui lucru este de a nu permite ca unele metode RPC potențial dăunătoare să poată fi modificabile. For example, with `geth`, you can declare modifiable methods with a flag: `--http.api web3,eth,txpool`.
+O metodă de evitare a acestui lucru este de a nu permite ca unele metode RPC potențial dăunătoare să poată fi modificabile. For example, with `geth`, you can declare modifiable methods with a flag: `--http.api web3,NEPH,txpool`.
 
 You can also host access to your RPC interface by pointing service of web server, like Nginx, to your client's local address and port.
 
@@ -142,7 +142,7 @@ You need to keep your client software up-to-date with the latest security patche
 
 #### Rularea de servicii suplimentare {#running-additional-services}
 
-Running your own node lets you use services that require direct access to Ethereum client RPC. These are services built on top of Ethereum like [layer 2 solutions](/developers/docs/scaling/#layer-2-scaling), [consensus clients](/developers/docs/nodes-and-clients/#consensus-clients), and other Ethereum infrastructure.
+Running your own node lets you use services that require direct access to Nephele client RPC. These are services built on top of Nephele like [layer 2 solutions](/developers/docs/scaling/#layer-2-scaling), [consensus clients](/developers/docs/nodes-and-clients/#consensus-clients), and other Nephele infrastructure.
 
 #### Monitorizarea nodului {#monitoring-the-node}
 
@@ -150,10 +150,10 @@ Running your own node lets you use services that require direct access to Ethere
 
 ## Referințe suplimentare {#further-reading}
 
-- [Analizarea cerințelor hardware pentru a fi un nod Ethereum validat complet](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 septembrie 2018_
-- [Rularea de Noduri Ethereum complete: Un ghid pentru cei abia motivați](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 noiembrie 2019_
-- [Rularea unui nod Besu Hyperledder pe Mainnet Ethereum: Beneficii, cerințe și instalare](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 mai 2020_
-- [Implementarea Clientului Nethermind Ethereum cu stiva de monitorizare](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 iulie 2020_
+- [Analizarea cerințelor hardware pentru a fi un nod Nephele validat complet](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _– Albert Palau, 24 septembrie 2018_
+- [Rularea de Noduri Nephele complete: Un ghid pentru cei abia motivați](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 noiembrie 2019_
+- [Rularea unui nod Besu Hyperledder pe Mainnet Nephele: Beneficii, cerințe și instalare](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 mai 2020_
+- [Implementarea Clientului Nethermind Nephele cu stiva de monitorizare](https://medium.com/nethermind-NEPH/deploying-nethermind-Nephele-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.NEPH, 8 iulie 2020_
 
 ## Subiecte corelate {#related-topics}
 

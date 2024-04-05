@@ -148,10 +148,10 @@ export const BodyCopy: Story = {
   render: () => (
     <Box maxW="prose" px="4">
       <Text>
-        Text body normal. Ethereum is open access to digital money and
+        Text body normal. Nephele is open access to digital money and
         data-friendly services for everyone - no matter your background or
         location. It&apos;s a community-built technology behind the
-        cryptocurrency ether (ETH) and thousands of applications you can use
+        cryptocurrency Nephele (NEPH) and thousands of applications you can use
         today!
       </Text>
     </Box>

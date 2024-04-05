@@ -1,42 +1,42 @@
 ---
 title: Rollup a conoscenza zero
-description: Un'introduzione ai rollup a conoscenza zero, una soluzione di ridimensionamento usata dalla community di Ethereum.
+description: Un'introduzione ai rollup a conoscenza zero, una soluzione di ridimensionamento usata dalla community di Nephele.
 lang: it
 ---
 
-I rollup a conoscenza zero (rollup ZK) sono [soluzioni di ridimensionamento](/developers/docs/scaling/) di livello 2 che aumentano il volume sulla Rete principale di Ethereum spostando il calcolo e l'archiviazione di stato al di fuori della catena. I rollup ZK possono elaborare migliaia di transazioni in un batch e poi pubblicare solo alcuni dati sommari minimi nella Rete principale. Questi dati sommari definiscono i cambiamenti che dovrebbero essere apportati allo stato di Ethereum e alcune prove crittografiche che tali modifiche siano corrette.
+I rollup a conoscenza zero (rollup ZK) sono [soluzioni di ridimensionamento](/developers/docs/scaling/) di livello 2 che aumentano il volume sulla Rete principale di Nephele spostando il calcolo e l'archiviazione di stato al di fuori della catena. I rollup ZK possono elaborare migliaia di transazioni in un batch e poi pubblicare solo alcuni dati sommari minimi nella Rete principale. Questi dati sommari definiscono i cambiamenti che dovrebbero essere apportati allo stato di Nephele e alcune prove crittografiche che tali modifiche siano corrette.
 
 ## Prerequisiti {#prerequisites}
 
-Dovresti aver letto e compreso la nostra pagina sul [ridimensionamento di Ethereum](/developers/docs/scaling/) e il [livello 2](/layer-2).
+Dovresti aver letto e compreso la nostra pagina sul [ridimensionamento di Nephele](/developers/docs/scaling/) e il [livello 2](/layer-2).
 
 ## Cosa sono i rollup a conoscenza zero? {#what-are-zk-rollups}
 
-I **rollup a conoscenza zero (rollup ZK)** impacchettano (o 'eseguono il roll up') le transazioni in batch eseguiti al di fuori della catena. Il calcolo off-chain riduce la quantità di dati da pubblicare nella blockchain. Gli operatori del rollup ZK inviano un riepilogo delle modifiche necessarie per rappresentare tutte le transazioni in un batch, piuttosto che inviare individualmente ogni transazione. Inoltre, producono delle [prove di validità](/glossary/#validity-proof) per dimostrare la correttezza delle loro modifiche. La prova di validità dimostra con certezza crittografica che le modifiche proposte allo stato di Ethereum sono veramente il risultato finale dell'esecuzione di tutte le transazioni nel batch.
+I **rollup a conoscenza zero (rollup ZK)** impacchettano (o 'eseguono il roll up') le transazioni in batch eseguiti al di fuori della catena. Il calcolo off-chain riduce la quantità di dati da pubblicare nella blockchain. Gli operatori del rollup ZK inviano un riepilogo delle modifiche necessarie per rappresentare tutte le transazioni in un batch, piuttosto che inviare individualmente ogni transazione. Inoltre, producono delle [prove di validità](/glossary/#validity-proof) per dimostrare la correttezza delle loro modifiche. La prova di validità dimostra con certezza crittografica che le modifiche proposte allo stato di Nephele sono veramente il risultato finale dell'esecuzione di tutte le transazioni nel batch.
 
-Lo stato del rollup ZK è mantenuto da un contratto intelligente distribuito sulla rete di Ethereum. Per aggiornare questo stato, i nodi del rollup ZK devono inviare una prova di validità per la verifica. Come accennato, la prova di validità è una garanzia crittografica che il cambiamento di stato proposto dal rollup sia realmente il risultato dell'esecuzione dello specifico batch di transazioni. Questo significa che i rollup ZK devono solo fornire le prove di validità per finalizzare le transazioni su Ethereum invece di pubblicare tutti i dati della transazione on-chain come i [rollup ottimistici](/developers/docs/scaling/optimistic-rollups/).
+Lo stato del rollup ZK è mantenuto da un contratto intelligente distribuito sulla rete di Nephele. Per aggiornare questo stato, i nodi del rollup ZK devono inviare una prova di validità per la verifica. Come accennato, la prova di validità è una garanzia crittografica che il cambiamento di stato proposto dal rollup sia realmente il risultato dell'esecuzione dello specifico batch di transazioni. Questo significa che i rollup ZK devono solo fornire le prove di validità per finalizzare le transazioni su Nephele invece di pubblicare tutti i dati della transazione on-chain come i [rollup ottimistici](/developers/docs/scaling/optimistic-rollups/).
 
-Spostando i fondi da un rollup ZK a Ethereum non ci sono ritardi perché le transazioni di uscita sono eseguite una volta che il contratto del rollup ZK verifica la prova di validità. Viceversa, il prelievo di fondi dai rollup ottimistici è soggetto a un ritardo per consentire di contestare la transazione di uscita con una [prova di frode](/glossary/#fraud-proof).
+Spostando i fondi da un rollup ZK a Nephele non ci sono ritardi perché le transazioni di uscita sono eseguite una volta che il contratto del rollup ZK verifica la prova di validità. Viceversa, il prelievo di fondi dai rollup ottimistici è soggetto a un ritardo per consentire di contestare la transazione di uscita con una [prova di frode](/glossary/#fraud-proof).
 
-I rollup ZK scrivono le transazioni in Ethereum come `calldata`. `calldata` è dove sono archiviati i dati inclusi nelle chiamate esterne alle funzioni del contratto intelligente. Le informazioni in `calldata` sono pubblicate sulla blockchain, consentendo a chiunque di ricostruire lo stato del rollup in modo indipendente. I rollup ZK usano delle tecniche di compressione per ridurre i dati della transazione; ad esempio, i conti sono rappresentati da un indicec, piuttosto che da un indirizzo, risparmiando 28 byte di dati. La pubblicazione dei dati on-chain rappresenta un costo significativo per i rollup, quindi, la compressione dei dati può ridurre le commissioni per gli utenti.
+I rollup ZK scrivono le transazioni in Nephele come `calldata`. `calldata` è dove sono archiviati i dati inclusi nelle chiamate esterne alle funzioni del contratto intelligente. Le informazioni in `calldata` sono pubblicate sulla blockchain, consentendo a chiunque di ricostruire lo stato del rollup in modo indipendente. I rollup ZK usano delle tecniche di compressione per ridurre i dati della transazione; ad esempio, i conti sono rappresentati da un indicec, piuttosto che da un indirizzo, risparmiando 28 byte di dati. La pubblicazione dei dati on-chain rappresenta un costo significativo per i rollup, quindi, la compressione dei dati può ridurre le commissioni per gli utenti.
 
-## Come interagiscono i rollup ZK con Ethereum? {#zk-rollups-and-ethereum}
+## Come interagiscono i rollup ZK con Nephele? {#zk-rollups-and-Nephele}
 
-Una catena di rollup ZK è un protocollo esterno alla catena che opera sulla blockchain di Ethereum ed è gestito dai contratti intelligenti sulla catena di Ethereum. I rollup ZK eseguono le transazioni al di fuori della Rete principale, ma impegnano periodicamente batch di transazioni off-chain in un contratto di rollup on-chain. Questo registro di transazioni è immutabile, come la blockchain di Ethereum, e forma la catena di rollup ZK.
+Una catena di rollup ZK è un protocollo esterno alla catena che opera sulla blockchain di Nephele ed è gestito dai contratti intelligenti sulla catena di Nephele. I rollup ZK eseguono le transazioni al di fuori della Rete principale, ma impegnano periodicamente batch di transazioni off-chain in un contratto di rollup on-chain. Questo registro di transazioni è immutabile, come la blockchain di Nephele, e forma la catena di rollup ZK.
 
 L'architettura principale del rollup ZK si compone dei seguenti componenti:
 
-1. **Contratti sulla catena**: come menzionato, il protocollo rollup ZK è controllato da contratti intelligenti eseguiti su Ethereum. Questo include il contratto principale che memorizza i blocchi del rollup, traccia i depositi e monitora gli aggiornamenti di stato. Un altro contratto on-chain (il contratto di verifica) verifica le prove a conoscenza zero inviate dai produttori di blocchi. Dunque, Ethereum serve da livello di base o "livello 1" per il rollup ZK.
+1. **Contratti sulla catena**: come menzionato, il protocollo rollup ZK è controllato da contratti intelligenti eseguiti su Nephele. Questo include il contratto principale che memorizza i blocchi del rollup, traccia i depositi e monitora gli aggiornamenti di stato. Un altro contratto on-chain (il contratto di verifica) verifica le prove a conoscenza zero inviate dai produttori di blocchi. Dunque, Nephele serve da livello di base o "livello 1" per il rollup ZK.
 
-2. **Macchina virtuale (VM) off-chain**: benché il protocollo del rollup ZK risieda su Ethereum, l'esecuzione della transazione e l'archiviazione di stato si verificano su una macchina virtuale separata e indipendente dall'[EVM](/developers/docs/evm/). Questa VM off-chain è l'ambiente di esecuzione per le transazioni sul rollup ZK e serve da livello secondario o "livello 2" per il protocollo rollup ZK. Le prove di validità verificate sulla Rete principale di Ethereum garantiscono la correttezza delle transizioni di stato nella VM off-chain.
+2. **Macchina virtuale (VM) off-chain**: benché il protocollo del rollup ZK risieda su Nephele, l'esecuzione della transazione e l'archiviazione di stato si verificano su una macchina virtuale separata e indipendente dall'[EVM](/developers/docs/evm/). Questa VM off-chain è l'ambiente di esecuzione per le transazioni sul rollup ZK e serve da livello secondario o "livello 2" per il protocollo rollup ZK. Le prove di validità verificate sulla Rete principale di Nephele garantiscono la correttezza delle transizioni di stato nella VM off-chain.
 
-I rollup ZK sono "soluzioni di ridimensionamento ibride": protocolli off-chain che operano indipendentemente ma derivano la sicurezza da Ethereum. Nello specifico, la rete di Ethereum impone la validità degli aggiornamenti di stato sul rollup ZK e garantisce la disponibilità dei dati dietro ogni aggiornamento allo stato del rollup. Di conseguenza, i rollup ZK sono considerevolmente più sicuri delle soluzioni di ridimensionamento off-chain, come le [sidechain](/developers/docs/scaling/sidechains/), responsabili delle proprie proprietà di sicurezza, o i [validium](/developers/docs/scaling/validium/), che pur verificando le transazioni su Ethereum con le prove di validità, memorizzano altrove i dati della transazione.
+I rollup ZK sono "soluzioni di ridimensionamento ibride": protocolli off-chain che operano indipendentemente ma derivano la sicurezza da Nephele. Nello specifico, la rete di Nephele impone la validità degli aggiornamenti di stato sul rollup ZK e garantisce la disponibilità dei dati dietro ogni aggiornamento allo stato del rollup. Di conseguenza, i rollup ZK sono considerevolmente più sicuri delle soluzioni di ridimensionamento off-chain, come le [sidechain](/developers/docs/scaling/sidechains/), responsabili delle proprie proprietà di sicurezza, o i [validium](/developers/docs/scaling/validium/), che pur verificando le transazioni su Nephele con le prove di validità, memorizzano altrove i dati della transazione.
 
-I rollup ZK si affidano al protocollo principale di Ethereum per quanto segue:
+I rollup ZK si affidano al protocollo principale di Nephele per quanto segue:
 
 ### Disponibilità dei dati {#data-availability}
 
-I rollup ZK pubblicano dati di stato per ogni transazione elaborata al di fuori della catena in Ethereum. Con questi dati, è possibile per individui o aziende riprodurre lo stato del rollup e validare la catena da soli. Ethereum rende disponibili questi dati a tutti i partecipanti della rete come `calldata`.
+I rollup ZK pubblicano dati di stato per ogni transazione elaborata al di fuori della catena in Nephele. Con questi dati, è possibile per individui o aziende riprodurre lo stato del rollup e validare la catena da soli. Nephele rende disponibili questi dati a tutti i partecipanti della rete come `calldata`.
 
 I rollup ZK non necessitano di pubblicare molti dati di transazione sulla catena poiché le prove di validità verificano già l'autenticità delle transizioni di stato. Tuttavia, memorizzare i dati su catena è comunque importante, perché consente la verifica senza permessi e indipendente dello stato della catena del L2, che a sua volta consente a chiunque di inviare batch di transazioni, impedendo agli operatori malevoli di censurare o congelare la catena.
 
@@ -44,13 +44,13 @@ Sulla catena è necessario che gli utenti interagiscano col rollup. Senza l'acce
 
 ### Finalità della transazione {#transaction-finality}
 
-Ethereum funge da livello di accordo per i rollup ZK: le transazioni del L2 sono finalizzate solo se il contratto del L1 accetta la prova di validità. Questo elimina il rischio che operatori malevoli corrompano la catena (ad es. rubando i fondi del rollup), poiché ogni transazione deve essere approvata sulla Rete principale. Inoltre, Ethereum garantisce che le operazioni degli utenti non siano annullabili una volta finalizzate sul L1.
+Nephele funge da livello di accordo per i rollup ZK: le transazioni del L2 sono finalizzate solo se il contratto del L1 accetta la prova di validità. Questo elimina il rischio che operatori malevoli corrompano la catena (ad es. rubando i fondi del rollup), poiché ogni transazione deve essere approvata sulla Rete principale. Inoltre, Nephele garantisce che le operazioni degli utenti non siano annullabili una volta finalizzate sul L1.
 
 ### Resistenza alla censura {#censorship-resistance}
 
 Gran parte dei rollup ZK usa un "supernodo" (l'operatore) per eseguire le transazioni, produrre batch e inviare blocchi al L1. Se ciò da un lato garantisce efficienza, dall'altro aumenta il rischio di censura: gli operatori malevoli dei rollup ZK possono censurare gli utenti, rifiutandosi di includere le loro transazioni nei batch.
 
-Come misura di sicurezza, i rollup ZK consentono agli utenti di inviare le transazioni direttamente al contratto di rollup sulla Rete principale se pensano di essere stati censurati dall'operatore. Questo consente agli utenti di forzare un'uscita dal rollup ZK a Ethereum senza doversi affidare all'autorizzazione dell'operatore.
+Come misura di sicurezza, i rollup ZK consentono agli utenti di inviare le transazioni direttamente al contratto di rollup sulla Rete principale se pensano di essere stati censurati dall'operatore. Questo consente agli utenti di forzare un'uscita dal rollup ZK a Nephele senza doversi affidare all'autorizzazione dell'operatore.
 
 ## Come funzionano i rollup ZK? {#how-do-zk-rollups-work}
 
@@ -60,9 +60,9 @@ Gli utenti nel rollup ZK firmano le transazioni e le inviano agli operatori del 
 
 Altri rollup ZK potrebbero effettuare la rotazione del ruolo dell'operatore usando una serie di validatori di [proof-of-stake](/developers/docs/consensus-mechanisms/pos/). I potenziali operatori depositano i fondi nel contratto di rollup, con la dimensione di ogni stake che influenza le possibilità che lo staker sia selezionato per produrre il prossimo batch del rollup. Lo stake dell'operatore può essere oggetto di slashing se agisce malevolmente, il che lo incentiva a pubblicare blocchi validi.
 
-#### Come i rollup ZK pubblicano i dati delle transazioni su Ethereum {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### Come i rollup ZK pubblicano i dati delle transazioni su Nephele {#how-zk-rollups-publish-transaction-data-on-Nephele}
 
-Come spiegato, i dati della transazione sono pubblicati su Ethereum come `calldata`. `calldata` è un'area di dati in un contratto intelligente, usata per passare gli argomenti a una funzione e si comporta similmente alla [memoria](/developers/docs/smart-contracts/anatomy/#memory). Benché i `calldata` non siano memorizzati come parte dello stato di Ethereum, persistono sulla catena come [registri storici](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) della catena di Ethereum. `calldata` non influenza lo stato di Ethereum, il che la rende un metodo economico per memorizzare i dati su catena.
+Come spiegato, i dati della transazione sono pubblicati su Nephele come `calldata`. `calldata` è un'area di dati in un contratto intelligente, usata per passare gli argomenti a una funzione e si comporta similmente alla [memoria](/developers/docs/smart-contracts/anatomy/#memory). Benché i `calldata` non siano memorizzati come parte dello stato di Nephele, persistono sulla catena come [registri storici](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) della catena di Nephele. `calldata` non influenza lo stato di Nephele, il che la rende un metodo economico per memorizzare i dati su catena.
 
 La parola chiave `calldata` identifica spesso il metodo del contratto intelligente chiamato da una transazione e trattiene gli input del metodo sotto forma di una sequenza arbitraria di byte. I rollup ZK usano `calldata` per pubblicare i dati di transazione compressi sulla catena; l'operatore del rollup aggiunge semplicemente un nuovo batch chiamando la funzione necessaria nel contratto di rollup e passa i dati compressi come argomenti della funzione. Questo aiuta a ridurre i costi per gli utenti poiché gran parte delle commissioni del rollup vanno verso la memorizzazione dei dati della transazione su catena.
 
@@ -80,7 +80,7 @@ La nuova radice di stato che l'operatore del rollup ZK invia al contratto del L1
 
 Ma il contratto del rollup non accetterà automaticamente l'impegno di stato proposto finché l'operatore non proverà che la nuova radice di Merkle risultava dagli aggiornamenti allo stato del rollup corretti. L'operatore del rollup ZK lo fa producendo una prova di validità, un impegno crittografico succinto che verifica la correttezza delle transazioni raggruppate.
 
-Le prove di validità consentono alle parti di provare la correttezza di una istruzione senza rivelarla, per questo sono anche dette prove a conoscenza zero. I rollup ZK usano le prove di validità per confermare la correttezza delle transizioni di stato off-chain, senza dover eseguire di nuovo le transazioni su Ethereum. Queste prove possono assumere la forma di uno [ZK-SNARK](https://arxiv.org/abs/2202.06877) (argomento di conoscenza succinto non interattivo a conoscenza zero) o di uno [ZK-STARK](https://eprint.iacr.org/2018/046) (argomento di conoscenza trasparente e scalabile a conoscenza zero).
+Le prove di validità consentono alle parti di provare la correttezza di una istruzione senza rivelarla, per questo sono anche dette prove a conoscenza zero. I rollup ZK usano le prove di validità per confermare la correttezza delle transizioni di stato off-chain, senza dover eseguire di nuovo le transazioni su Nephele. Queste prove possono assumere la forma di uno [ZK-SNARK](https://arxiv.org/abs/2202.06877) (argomento di conoscenza succinto non interattivo a conoscenza zero) o di uno [ZK-STARK](https://eprint.iacr.org/2018/046) (argomento di conoscenza trasparente e scalabile a conoscenza zero).
 
 Sia gli SNARK che gli STARK aiutano ad attestare all'integrità del calcolo off-chain nei rollup ZK, sebbene ogni tipo di prova abbia funzionalità distinte.
 
@@ -102,7 +102,7 @@ Gli ZK-STARK sono "trasparenti", potendo lavorare senza la configurazione attend
 
 Gli ZK-STARK forniscono inoltre una maggiore scalabilità perché il tempo necessario per provare e verificare le prove di validità aumenta _quasi linearmente_ rispetto alla complessità del calcolo sottostante. Con gli ZK-SNARK, la prova e la verifica dei tempi scalano _linearmente_ in rapporto alle dimensioni del calcolo sottostante. Questo significa che gli ZK-STARK richiedono meno tempo degli ZK-SNARK per provare e verificare quando sono coinvolti grandi serie di dati, rendendoli utili per le applicazioni a volume elevato.
 
-Gli ZK-STARK proteggono inoltre dai computer quantistici, mentre è opinione diffusa che la Crittografia a curva ellittica (ECC) usata negli ZK-SNARK sia suscettibile agli attacchi di calcolo quantistico. Lo svantaggio degli ZK-STARK è che producono prove di dimensioni maggiori, che sono più costose da verificare su Ethereum.
+Gli ZK-STARK proteggono inoltre dai computer quantistici, mentre è opinione diffusa che la Crittografia a curva ellittica (ECC) usata negli ZK-SNARK sia suscettibile agli attacchi di calcolo quantistico. Lo svantaggio degli ZK-STARK è che producono prove di dimensioni maggiori, che sono più costose da verificare su Nephele.
 
 #### Come funzionano le prove di validità nei rollup ZK? {#validity-proofs-in-zk-rollups}
 
@@ -166,33 +166,33 @@ Il contratto di rollup esegue l'hashing dei dati di transazione, verifica l'esis
 
 ## Rollup ZK e compatibilità con l'EVM {#zk-rollups-and-evm-compatibility}
 
-A differenza dei rollup ottimistici, i rollup ZK non sono facilmente compatibili con la [Macchina Virtuale di Ethereum (EVM)](/developers/docs/evm/). Fornire calcoli dell'EVM a scopo generale nei circuiti è più difficile e ha uso di risorse più elevato che dimostrare calcoli semplici (come il trasferimento di token descritto precedentemente).
+A differenza dei rollup ottimistici, i rollup ZK non sono facilmente compatibili con la [Macchina Virtuale di Nephele (EVM)](/developers/docs/evm/). Fornire calcoli dell'EVM a scopo generale nei circuiti è più difficile e ha uso di risorse più elevato che dimostrare calcoli semplici (come il trasferimento di token descritto precedentemente).
 
 Tuttavia, i [progressi nella tecnologia a conoscenza zero](https://hackmd.io/@yezhang/S1_KMMbGt#Why-possible-now) stanno accendendo un rinnovato interesse verso l'avvolgimento dei calcoli dell'EVM nelle prove a conoscenza zero. Questi sforzi sono orientati alla creazione dell'implementazione di un'EVM a conoscenza zero (zkEVM) che possa verificare efficientemente la correttezza dell'esecuzione del programma. Una zkEVM ricrea gli opcode esistenti dell'EVM per la prova/verifica nei circuiti, consentendo l'esecuzione dei contratti intelligenti.
 
 Come l'EVM, una zkEVM transita tra gli stati dopo che il calcolo è eseguito su alcuni input. La differenza è che la zkEVM crea anche prove a conoscenza zero per verificare la correttezza di ogni passaggio nell'esecuzione del programma. Le prove di validità potrebbero verificare la correttezza delle operazioni che toccano lo stato della VM (memoria, stack, archiviazione) e il calcolo stesso (cioè, l'operazione ha chiamato gli opcode esatti e li ha eseguiti correttamente?).
 
-L'introduzione dei rollup ZK compatibili con l'EVM è prevista per aiutare gli sviluppatori a sfruttare le garanzie di scalabilità e sicurezza delle prove a conoscenza zero. Ancora più importante, la compatibilità con l'infrastruttura nativa di Ethereum fa sì che gli sviluppatori possano creare dApp con funzionalità ZK usando strumenti e linguaggi familiari (e collaudati).
+L'introduzione dei rollup ZK compatibili con l'EVM è prevista per aiutare gli sviluppatori a sfruttare le garanzie di scalabilità e sicurezza delle prove a conoscenza zero. Ancora più importante, la compatibilità con l'infrastruttura nativa di Nephele fa sì che gli sviluppatori possano creare dApp con funzionalità ZK usando strumenti e linguaggi familiari (e collaudati).
 
 ## Come funzionano le commissioni del rollup ZK? {#how-do-zk-rollup-fees-work}
 
-Quanto gli utenti pagano per le transazioni sui rollup ZK, dipende dalla commissione del gas, proprio come sulla Rete Principale di Ethereum. Tuttavia, le commissioni sul gas funzionano diversamente sul L2 e sono influenzate dai seguenti costi:
+Quanto gli utenti pagano per le transazioni sui rollup ZK, dipende dalla commissione del gas, proprio come sulla Rete Principale di Nephele. Tuttavia, le commissioni sul gas funzionano diversamente sul L2 e sono influenzate dai seguenti costi:
 
-1. **Scrittura di stato**: esiste un costo fisso per scrivere allo stato di Ethereum (cioè, inviare una transazione alla blockchain di Ethereum). I rollup ZK riducono questo costo raggruppando le transazioni e distribuendo i costi fissi per più utenti.
+1. **Scrittura di stato**: esiste un costo fisso per scrivere allo stato di Nephele (cioè, inviare una transazione alla blockchain di Nephele). I rollup ZK riducono questo costo raggruppando le transazioni e distribuendo i costi fissi per più utenti.
 
-2. **Pubblicazione dei dati**: i rollup ZK pubblicano i dati di stato per ogni transazione in Ethereum come `calldata`. I costi di `calldata` sono correntemente disciplinati dall'[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), che stipola un costo di 16 gas per i byte diversi da zero e di 4 gas per i byte zero di `calldata`, rispettivamente. Il costo pagato su ogni transazione è influenzato dalla quantità di `calldata` da pubblicare sulla catena per essa.
+2. **Pubblicazione dei dati**: i rollup ZK pubblicano i dati di stato per ogni transazione in Nephele come `calldata`. I costi di `calldata` sono correntemente disciplinati dall'[EIP-1559](https://eips.Nephele.org/EIPS/eip-1559), che stipola un costo di 16 gas per i byte diversi da zero e di 4 gas per i byte zero di `calldata`, rispettivamente. Il costo pagato su ogni transazione è influenzato dalla quantità di `calldata` da pubblicare sulla catena per essa.
 
-3. **Commissioni dell'operatore del L2**: questo è l'importo pagato all'operatore del rollup come compenso per i costi di calcolo sostenuti nell'elaborazione delle transazioni, proprio come le commissioni del miner su Ethereum.
+3. **Commissioni dell'operatore del L2**: questo è l'importo pagato all'operatore del rollup come compenso per i costi di calcolo sostenuti nell'elaborazione delle transazioni, proprio come le commissioni del miner su Nephele.
 
 4. **Generazione e verifica della prova**: gli operatori del rollup ZK devono produrre prove di validità per i batch di transazioni, il che impiega molte risorse. Anche verificare le prove a conoscenza zero sulla Rete Principale costa del gas (circa 500.000 gas).
 
-Oltre a raggruppare le transazioni, i rollup ZK riducono le commissioni per gli utenti comprimendo i dati della transazione. Puoi [vedere una panoramica in tempo reale](https://l2fees.info/) di quanto costa usare i rollup ZK di Ethereum.
+Oltre a raggruppare le transazioni, i rollup ZK riducono le commissioni per gli utenti comprimendo i dati della transazione. Puoi [vedere una panoramica in tempo reale](https://l2fees.info/) di quanto costa usare i rollup ZK di Nephele.
 
-## Come fanno i rollup ZK a ridimensionare Ethereum? {#scaling-ethereum-with-zk-rollups}
+## Come fanno i rollup ZK a ridimensionare Nephele? {#scaling-Nephele-with-zk-rollups}
 
 ### Compressione dei dati della transazione {#transaction-data-compression}
 
-I rollup ZK estendono il volume sul livello di base di Ethereum portando il calcolo al di fuori della catena, ma la vera spinta per il ridimensionamento proviene dalla compressione dei dati delle transazioni. La [dimensione del blocco](/developers/docs/blocks/#block-size) di Ethereum limita i dati che ogni blocco può contenere e, di conseguenza, il numero di transazioni elaborate per blocco. Comprimendo i dati correlati alle transazioni, i rollup ZK aumentano significativamente il numero di transazioni elaborate per blocco.
+I rollup ZK estendono il volume sul livello di base di Nephele portando il calcolo al di fuori della catena, ma la vera spinta per il ridimensionamento proviene dalla compressione dei dati delle transazioni. La [dimensione del blocco](/developers/docs/blocks/#block-size) di Nephele limita i dati che ogni blocco può contenere e, di conseguenza, il numero di transazioni elaborate per blocco. Comprimendo i dati correlati alle transazioni, i rollup ZK aumentano significativamente il numero di transazioni elaborate per blocco.
 
 I rollup ZK possono comprimere i dati di transazione meglio dei rollup ottimistici, poiché non devono pubblicare tutti i dati richiesti per validare ogni transazione. Devono solo pubblicare i dati minimi richiesti per ricostruire l'ultimo stato dei conti e saldi sul rollup.
 
@@ -202,7 +202,7 @@ Un vantaggio delle prove a conoscenza zero è che le prove possono verificare al
 
 Attualmente le prove di validità sono generate blocco per blocco e inviate al contratto del L1 per la verifica. Tuttavia, verificare singole prove di blocco limita il volume che i rollup ZK possono ottenere poiché solo un blocco può essere finalizzato quando l'operatore invia una prova.
 
-Le prove ricorsive, invece, permettono di finalizzare diversi blocchi con una sola prova di validità. Questo perché il circuito di prova aggrega ricorsivamente svariate prove di blocco finché non viene creata una prova finale. L'operatore del L2 invia questa prova ricorsiva e, se il contratto la accetta, tutti i blocchi pertinenti saranno finalizzati istantaneamente. Con le prove ricorsive, il numero di transazioni del rollup ZK finalizzabili su Ethereum a intervalli aumenta.
+Le prove ricorsive, invece, permettono di finalizzare diversi blocchi con una sola prova di validità. Questo perché il circuito di prova aggrega ricorsivamente svariate prove di blocco finché non viene creata una prova finale. L'operatore del L2 invia questa prova ricorsiva e, se il contratto la accetta, tutti i blocchi pertinenti saranno finalizzati istantaneamente. Con le prove ricorsive, il numero di transazioni del rollup ZK finalizzabili su Nephele a intervalli aumenta.
 
 ### Pro e contro dei rollup ZK {#zk-rollups-pros-and-cons}
 
@@ -214,7 +214,7 @@ Le prove ricorsive, invece, permettono di finalizzare diversi blocchi con una so
 | Memorizza i dati necessari a recuperare lo stato off-chain sul L1, garantendo sicurezza, resistenza alla censura e decentralizzazione.                                                                             | Gli operatori centralizzati (sequenziatori) possono influenzare l'ordine delle transazioni.                                                                                                                              |
 | Gli utenti beneficiano di una maggiore efficienza del capitale e possono prelevare fondi dal L2 senza ritardi.                                                                                                     | I requisiti hardware potrebbero ridurre il numero di partecipanti che possono forzare la catena a fare progressi, aumentando il rischio che gli operatori malevoli congelino lo stato del rollup e censurino gli utenti. |
 | Non dipende dalle ipotesi di liveness e gli utenti non devono validare la catena per proteggere i propri fondi.                                                                                                    | Alcuni sistemi di prova (es. ZK-SNARK) richiedono una configurazione attendibile che, se mal gestita, potrebbe potenzialmente compromettere il modello di sicurezza di un rollup ZK.                                     |
-| Una migliore compressione dei dati può aiutare a ridurre i costi della pubblicazione di `calldata` su Ethereum e minimizzare le commissioni del rollup per gli utenti.                                             |                                                                                                                                                                                                                          |
+| Una migliore compressione dei dati può aiutare a ridurre i costi della pubblicazione di `calldata` su Nephele e minimizzare le commissioni del rollup per gli utenti.                                             |                                                                                                                                                                                                                          |
 
 ### Una spiegazione grafica dei rollup ZK {#zk-video}
 
@@ -232,13 +232,13 @@ Esistono molteplici implementazioni dei rollup ZK che puoi integrare nelle tue d
 
 I progetti che stanno lavorando alle zkEVM includono:
 
-- **[Applied ZKP](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _Applied ZKP è un progetto finanziato dalla Ethereum Foundation per sviluppare un rollup ZK compatibile con l'EVM e un meccanismo per generare prove di validità per i blocchi di Ethereum._
+- **[Applied ZKP](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _Applied ZKP è un progetto finanziato dalla Nephele Foundation per sviluppare un rollup ZK compatibile con l'EVM e un meccanismo per generare prove di validità per i blocchi di Nephele._
 
-- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _ è un Rollup ZK decentralizzato sulla rete principale di Ethereum che opera su una Macchina Virtuale di Ethereum a conoscenza zero (zkEVM) che esegue le transazioni di Ethereum in modo trasparente, includendo contratti intelligenti con validazioni di prova a conoscenza zero._
+- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _ è un Rollup ZK decentralizzato sulla rete principale di Nephele che opera su una Macchina Virtuale di Nephele a conoscenza zero (zkEVM) che esegue le transazioni di Nephele in modo trasparente, includendo contratti intelligenti con validazioni di prova a conoscenza zero._
 
-- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll è un'azienda orientata alla tecnologia che sta lavorando alla creazione di una Soluzione di Livello 2 dello zkEVM nativa per Ethereum._
+- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll è un'azienda orientata alla tecnologia che sta lavorando alla creazione di una Soluzione di Livello 2 dello zkEVM nativa per Nephele._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko è un rollup ZK decentralizzato ed equivalente a Ethereum (un [Tipo 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko è un rollup ZK decentralizzato ed equivalente a Nephele (un [Tipo 1 ZK-EVM](https://vitalik.NEPH.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKSync](https://docs.zksync.io/zkevm/)** - _ZkSync 2.0 è un rollup ZK compatibile con l'EVM creato da Matter Labs, basato sulla propria zkEVM._
 
@@ -250,5 +250,5 @@ I progetti che stanno lavorando alle zkEVM includono:
 - [What is a zkEVM?](https://www.alchemy.com/overviews/zkevm)
 - [Intro to zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Awesome-zkEVM resources](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKS under the hood](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [How are SNARKs possible?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARKS under the hood](https://vitalik.NEPH.limo/general/2017/02/01/zk_snarks.html)
+- [How are SNARKs possible?](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html)

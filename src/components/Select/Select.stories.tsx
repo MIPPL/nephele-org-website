@@ -26,7 +26,7 @@ export const Dropdown: Story = {
     options: [
       {
         options: [
-          { label: "Ethereum", value: "eth" },
+          { label: "Nephele", value: "NEPH" },
           { label: "Bitcoin", value: "bit" },
           { label: "Dogecoin", value: "doge" },
         ],

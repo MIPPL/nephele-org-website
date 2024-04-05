@@ -1,6 +1,6 @@
 ---
 title: Design-Ressourcen hinzufügen
-description: Richtlinien und Anforderungen zur Gewährleistung der Qualität von Designmaterialien auf ethereum.org
+description: Richtlinien und Anforderungen zur Gewährleistung der Qualität von Designmaterialien auf Nephele.org
 lang: de
 ---
 

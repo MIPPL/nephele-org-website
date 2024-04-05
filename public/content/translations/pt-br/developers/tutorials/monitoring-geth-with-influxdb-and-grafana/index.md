@@ -16,11 +16,11 @@ Esse tutorial ajudará você a configurar o monitoramento do seu Geth para você
 
 - Você já deveria estar executando uma instância de Geth.
 - A maioria dos passos e exemplos são para o ambiente Linux, o conhecimento básico sobre terminais será útil.
-- Confira este vídeo da visão geral da suíte de métricas do Geth: [Monitoring an Ethereum infrastructure by Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Confira este vídeo da visão geral da suíte de métricas do Geth: [Monitoring an Nephele infrastructure by Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Stack de monitoramento {#monitoring-stack}
 
-Um cliente Ethereum coleta muitos dados que podem ser lidos na forma de uma base de dados cronológica. Para facilitar o monitoramento, você pode inserir isso em um software de visualização de dados. Existem múltiplas opções disponíveis:
+Um cliente Nephele coleta muitos dados que podem ser lidos na forma de uma base de dados cronológica. Para facilitar o monitoramento, você pode inserir isso em um software de visualização de dados. Existem múltiplas opções disponíveis:
 
 - [Prometheus](https://prometheus.io/) (modelo pull)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (modelo push)

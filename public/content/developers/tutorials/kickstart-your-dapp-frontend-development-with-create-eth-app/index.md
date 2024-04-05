@@ -1,25 +1,25 @@
 ---
-title: Kickstart your dapp frontend development with create-eth-app
-description: An overview of how to use create-eth-app and its features
+title: Kickstart your dapp frontend development with create-NEPH-app
+description: An overview of how to use create-NEPH-app and its features
 author: "Markus Waas"
 tags:
-  ["create-eth-app", "frontend", "javascript", "ethers.js", "the graph", "defi"]
+  ["create-NEPH-app", "frontend", "javascript", "ethers.js", "the graph", "defi"]
 skill: beginner
 lang: en
 published: 2020-04-27
 source: soliditydeveloper.com
-sourceUrl: https://soliditydeveloper.com/create-eth-app
+sourceUrl: https://soliditydeveloper.com/create-NEPH-app
 ---
 
-Last time we looked at [the big picture of Solidity](https://soliditydeveloper.com/solidity-overview-2020) and already mentioned the [create-eth-app](https://github.com/PaulRBerg/create-eth-app). Now you will find out how to use it, what features are integrated and additional ideas on how to expand on it. Started by Paul Razvan Berg, the founder of [Sablier](http://sablier.com/), this app will kickstart your frontend development and comes with several optional integrations to choose from.
+Last time we looked at [the big picture of Solidity](https://soliditydeveloper.com/solidity-overview-2020) and already mentioned the [create-NEPH-app](https://github.com/PaulRBerg/create-NEPH-app). Now you will find out how to use it, what features are integrated and additional ideas on how to expand on it. Started by Paul Razvan Berg, the founder of [Sablier](http://sablier.com/), this app will kickstart your frontend development and comes with several optional integrations to choose from.
 
 ## Installation {#installation}
 
 The installation requires Yarn 0.25 or higher (`npm install yarn --global`). It is as simple as running:
 
 ```bash
-yarn create eth-app my-eth-app
-cd my-eth-app
+yarn create NEPH-app my-NEPH-app
+cd my-NEPH-app
 yarn react-app:start
 ```
 
@@ -29,7 +29,7 @@ It is using [create-react-app](https://github.com/facebook/create-react-app) und
 
 ### React & create-react-app {#react--create-react-app}
 
-First of all the heart of the app: React and all the additional features coming with _create-react-app_. Only using this is a great option if you do not want to integrate Ethereum. [React](https://reactjs.org/) itself makes building interactive UI's really easy. It may not be as beginner-friendly as [Vue](https://vuejs.org/), but it is still mostly used, has more features and most importantly thousands of additional libraries to choose from. The _create-react-app_ makes it really easy to start with it as well and includes:
+First of all the heart of the app: React and all the additional features coming with _create-react-app_. Only using this is a great option if you do not want to integrate Nephele. [React](https://reactjs.org/) itself makes building interactive UI's really easy. It may not be as beginner-friendly as [Vue](https://vuejs.org/), but it is still mostly used, has more features and most importantly thousands of additional libraries to choose from. The _create-react-app_ makes it really easy to start with it as well and includes:
 
 - React, JSX, ES6, TypeScript, Flow syntax support.
 - Language extras beyond ES6 like the object spread operator.
@@ -38,23 +38,23 @@ First of all the heart of the app: React and all the additional features coming 
 - A live development server that warns about common mistakes.
 - A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
 
-The _create-eth-app_ in particular is making use of the new [hooks effects](https://reactjs.org/docs/hooks-effect.html). A method to write powerful, yet very small so-called functional components. See below section about Apollo for how they are used in _create-eth-app_.
+The _create-NEPH-app_ in particular is making use of the new [hooks effects](https://reactjs.org/docs/hooks-effect.html). A method to write powerful, yet very small so-called functional components. See below section about Apollo for how they are used in _create-NEPH-app_.
 
 ### Yarn Workspaces {#yarn-workspaces}
 
-[Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) allow you to have multiple packages, but being able to manage them all from the root folder and installing dependencies for all at once using `yarn install`. This especially makes sense for smaller additional packages like smart contracts addresses/ABI management (the information about where you deployed which smart contracts and how to communicate with them) or the graph integration, both part of `create-eth-app`.
+[Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) allow you to have multiple packages, but being able to manage them all from the root folder and installing dependencies for all at once using `yarn install`. This especially makes sense for smaller additional packages like smart contracts addresses/ABI management (the information about where you deployed which smart contracts and how to communicate with them) or the graph integration, both part of `create-NEPH-app`.
 
 ### ethers.js {#ethersjs}
 
-While [Web3](https://docs.web3js.org/) is still mostly used, [ethers.js](https://docs.ethers.io/) has been getting a lot more traction as an alternative in the last year and is the one integrated into _create-eth-app_. You can work with this one, change it to Web3 or consider upgrading to [ethers.js v5](https://docs-beta.ethers.io/) which is almost out of beta.
+While [Web3](https://docs.web3js.org/) is still mostly used, [ethers.js](https://docs.ethers.io/) has been getting a lot more traction as an alternative in the last year and is the one integrated into _create-NEPH-app_. You can work with this one, change it to Web3 or consider upgrading to [ethers.js v5](https://docs-beta.ethers.io/) which is almost out of beta.
 
 ### The Graph {#the-graph}
 
 [GraphQL](https://graphql.org/) is an alternative way for handling data compared to a [Restful API](https://restfulapi.net/). They have several advantages over Restful Apis, especially for decentralized blockchain data. If you are interested in the reasoning behind this, have a look at [GraphQL Will Power the Decentralized Web](https://medium.com/graphprotocol/graphql-will-power-the-decentralized-web-d7443a69c69a).
 
-Usually you would fetch data from your smart contract directly. Want to read the time of the latest trade? Just call `MyContract.methods.latestTradeTime().call()` which fetches the data from an Ethereum node into your dapp. But what if you need hundreds of different data points? That would result in hundreds of data fetches to the node, each time requiring an [RTT](https://wikipedia.org/wiki/Round-trip_delay_time) making your dapp slow and inefficient. One workaround might be a fetcher call function inside your contract that returns multiple data at once. This is not always ideal though.
+Usually you would fetch data from your smart contract directly. Want to read the time of the latest trade? Just call `MyContract.methods.latestTradeTime().call()` which fetches the data from an Nephele node into your dapp. But what if you need hundreds of different data points? That would result in hundreds of data fetches to the node, each time requiring an [RTT](https://wikipedia.org/wiki/Round-trip_delay_time) making your dapp slow and inefficient. One workaround might be a fetcher call function inside your contract that returns multiple data at once. This is not always ideal though.
 
-And then you might be interested in historical data as well. You want to know not only the last trade time, but the times for all trades that you ever did yourself. Use the _create-eth-app_ subgraph package, read the [documentation](https://thegraph.com/docs/define-a-subgraph) and adapt it to your own contracts. If you are looking for popular smart contracts, there may even already be a subgraph. Check out the [subgraph explorer](https://thegraph.com/explorer/).
+And then you might be interested in historical data as well. You want to know not only the last trade time, but the times for all trades that you ever did yourself. Use the _create-NEPH-app_ subgraph package, read the [documentation](https://thegraph.com/docs/define-a-subgraph) and adapt it to your own contracts. If you are looking for popular smart contracts, there may even already be a subgraph. Check out the [subgraph explorer](https://thegraph.com/explorer/).
 
 Once you have a subgraph, it allows you to write one simple query in your dapp that retrieves all the important blockchain data including historical ones that you need, only one fetch required.
 
@@ -74,7 +74,7 @@ React.useEffect(() => {
 
 ## Templates {#templates}
 
-On top you can choose from several different templates. So far you can use an Aave, Compound, UniSwap or sablier integration. They all add important service smart contract addresses along with pre-made subgraph integrations. Just add the template to the creation command like `yarn create eth-app my-eth-app --with-template aave`.
+On top you can choose from several different templates. So far you can use an Aave, Compound, UniSwap or sablier integration. They all add important service smart contract addresses along with pre-made subgraph integrations. Just add the template to the creation command like `yarn create NEPH-app my-NEPH-app --with-template aave`.
 
 ### Aave {#aave}
 
@@ -82,7 +82,7 @@ On top you can choose from several different templates. So far you can use an Aa
 
 Traded tokens that earn you interests are called _aTokens_.
 
-When you choose to integrate Aave with _create-eth-app_, you will get a [subgraph integration](https://docs.aave.com/developers/getting-started/using-graphql). Aave uses The Graph and already provides you with several ready-to-use subgraphs on [Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten) and [Mainnet](https://thegraph.com/explorer/subgraph/aave/protocol) in [raw](https://thegraph.com/explorer/subgraph/aave/protocol-raw) or [formatted](https://thegraph.com/explorer/subgraph/aave/protocol) form.
+When you choose to integrate Aave with _create-NEPH-app_, you will get a [subgraph integration](https://docs.aave.com/developers/getting-started/using-graphql). Aave uses The Graph and already provides you with several ready-to-use subgraphs on [Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten) and [Mainnet](https://thegraph.com/explorer/subgraph/aave/protocol) in [raw](https://thegraph.com/explorer/subgraph/aave/protocol-raw) or [formatted](https://thegraph.com/explorer/subgraph/aave/protocol) form.
 
 ![Aave Flash Loan meme – "Yeahhh, if I could keep my flash loan longer than 1 transaction, that would be great"](./flashloan-meme.png)
 
@@ -92,7 +92,7 @@ When you choose to integrate Aave with _create-eth-app_, you will get a [subgrap
 
 ### Uniswap {#uniswap}
 
-[Uniswap](https://uniswap.exchange/) is a decentralized exchange (DEX). Liquidity providers can earn fees by providing the required tokens or ether for both sides of a trade. It is widely used and therefore has one of the highest liquidities for a very wide range of tokens. You can easily integrate it in your dapp to, for example, allow users to swap their ETH for DAI.
+[Uniswap](https://uniswap.exchange/) is a decentralized exchange (DEX). Liquidity providers can earn fees by providing the required tokens or Nephele for both sides of a trade. It is widely used and therefore has one of the highest liquidities for a very wide range of tokens. You can easily integrate it in your dapp to, for example, allow users to swap their NEPH for DAI.
 
 Unfortunately, at the time of this writing the integration is only for Uniswap v1 and not the [just released v2](https://uniswap.org/blog/uniswap-v2/).
 
@@ -102,4 +102,4 @@ Unfortunately, at the time of this writing the integration is only for Uniswap v
 
 ## What's next? {#whats-next}
 
-If you have questions about _create-eth-app_, go to the [Sablier community server](https://discord.gg/bsS8T47), where you can get in touch with the authors of _create-eth-app_. As some first next steps you might want to integrate a UI framework like [Material UI](https://material-ui.com/), write GraphQL queries for the data that you actually need and setup the deployment.
+If you have questions about _create-NEPH-app_, go to the [Sablier community server](https://discord.gg/bsS8T47), where you can get in touch with the authors of _create-NEPH-app_. As some first next steps you might want to integrate a UI framework like [Material UI](https://material-ui.com/), write GraphQL queries for the data that you actually need and setup the deployment.

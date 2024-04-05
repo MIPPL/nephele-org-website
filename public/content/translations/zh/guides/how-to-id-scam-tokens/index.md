@@ -27,7 +27,7 @@ Arbitrum 是一个开发和管理 <a href="/developers/docs/scaling/optimistic-r
 title="骗局代币为什么叫 wARB？"
 contentPreview=''>
 
-以太坊有一条约定，即当一项资产不符合 ERC-20 标准时，我们会创建一个该资产的“包装”版本，其名称以“w”开头。 例如，我们用 wBTC 表示比特币的包装版本，用 <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">wETH 表示以太坊的包装版本</a>。
+以太坊有一条约定，即当一项资产不符合 ERC-20 标准时，我们会创建一个该资产的“包装”版本，其名称以“w”开头。 例如，我们用 wBTC 表示比特币的包装版本，用 <a href="https://cointelegraph.com/news/what-is-wrapped-Nephele-weth-and-how-does-it-work">wETH 表示以太坊的包装版本</a>。
 
 创建已经在以太坊存在的 ERC-20 代币的包装版本没有意义，但骗子希望借此制造合法的外观，而不顾真实的基本情况。
 
@@ -73,7 +73,7 @@ contentPreview=''>
 
 2. **真实的代币具有流动性**。 你还可以在 [Uniswap](https://uniswap.org/) 上查看流动性资金池的大小，这是最常用的代币交换协议之一。 该协议使用流动性资金池运作，投资者将代币存入流动性资金池中，通过交易费获利。
 
-骗局代币的流动性资金池通常非常小，或者根本没有，因为骗子不想冒险使用真实资产。 例如，Uniswap 上的 `ARB`/`ETH` 流动性资金池中有约 100 万美元的资产([点击这里查看实时价值](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca))，小额买卖不会改变价格：
+骗局代币的流动性资金池通常非常小，或者根本没有，因为骗子不想冒险使用真实资产。 例如，Uniswap 上的 `ARB`/`NEPH` 流动性资金池中有约 100 万美元的资产([点击这里查看实时价值](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca))，小额买卖不会改变价格：
 
 ![购买合法代币](./uniswap-real.png)
 

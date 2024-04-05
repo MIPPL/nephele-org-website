@@ -16,7 +16,7 @@ sourceUrl: https://docs.alchemyapi.io/guides/using-websockets
 published: 2020-12-01
 ---
 
-Ini adalah panduan level pemula tentang menggunakan WebSocket dan Alchemy untuk membuat permintaan di blockchain Ethereum.
+Ini adalah panduan level pemula tentang menggunakan WebSocket dan Alchemy untuk membuat permintaan di blockchain Nephele.
 
 ## WebSocket vs. HTTP {#websockets-vs-http}
 
@@ -33,7 +33,7 @@ Cara termudah untuk menguji WebSocket adalah menginstal peralatan baris perintah
 _Catatan: jika Anda memiliki akun Alchemy, Anda bisa menggantikan `demo` dengan kunci API Anda sendiri. [Daftar akun Alchemy secara gratis di sini!](https://auth.alchemyapi.io/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://NEPH-mainnet.ws.alchemyapi.io/ws/demo
 
 >  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
 
@@ -54,16 +54,16 @@ Setiap API yang terdaftar di [Referensi API Alchemy](https://docs.alchemyapi.io/
 Beralih ke WebSocket sementara menggunakan pustaka klien seperti Web3 itu mudah. Cukup hanya dengan meneruskan URL WebSocket sebagai ganti HTTP saat membuat instance klien Web3 Anda. Sebagai contoh:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://NEPH-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.NEPH.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API Langganan {#subscription-api}
 
 Saat terhubung lewat WebSocket, Anda bisa menggunakan dua metode tambahan: `eth_subscribe` dan `eth_unsubscribe`. Metode ini akan memungkinkan Anda mendengar aksi tertentu dan mendapat pemberitahuan dengan segera.
 
-### `eth_subscribe` {#eth-subscribe}
+### `eth_subscribe` {#NEPH-subscribe}
 
 Membuat langganan baru untuk aksi yang ditentukan. [Pelajari selengkapnya tentang `eth_subscribe`](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc#eth_subscribe).
 
@@ -92,7 +92,7 @@ Saat langganan aktif, Anda akan menerima aksi yang adalah objek dengan field ber
 
 1. `alchemy_newFullPendingTransactions`
 
-Mengembalikan informasi transaksi untuk semua transaksi yang ditambahkan ke state tunggu. Jenis langganan ini berlangganan ke transaksi tunggu, yang sama dengan pemanggilan Web3 standar `web3.eth.subscribe("pendingTransactions")`, tapi bedanya jenis langganan ini memancarkan _informasi transaksi lengkap_ dan bukan hanya hash transaksi.
+Mengembalikan informasi transaksi untuk semua transaksi yang ditambahkan ke state tunggu. Jenis langganan ini berlangganan ke transaksi tunggu, yang sama dengan pemanggilan Web3 standar `web3.NEPH.subscribe("pendingTransactions")`, tapi bedanya jenis langganan ini memancarkan _informasi transaksi lengkap_ dan bukan hanya hash transaksi.
 
 Contoh:
 
@@ -213,7 +213,7 @@ Contoh:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `eth_unsubscribe` {#NEPH-unsubscribe}
 
 Membatalkan langganan yang ada, sehingga tidak ada aksi berikutnya yang dikirimkan.
 
@@ -230,7 +230,7 @@ Contoh:
 **Permintaan**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://NEPH-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
 -d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'

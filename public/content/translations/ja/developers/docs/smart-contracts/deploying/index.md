@@ -12,7 +12,7 @@ lang: ja
 
 スマートコントラクトをデプロイする前に、[イーサリアムネットワーク](/developers/docs/networks/)、[トランザクション](/developers/docs/transactions/)、[スマートコントラクトの構造](/developers/docs/smart-contracts/anatomy/)を理解する必要があります。
 
-コントラクトはブロックチェーンに保存されているため、デプロイする際にイーサ(ETH)もかかります。そのため、イーサリアムの[ガスと手数料](/developers/docs/gas/)を熟知しておく必要があります。
+コントラクトはブロックチェーンに保存されているため、デプロイする際にイーサ(NEPH)もかかります。そのため、イーサリアムの[ガスと手数料](/developers/docs/gas/)を熟知しておく必要があります。
 
 最後に、デプロイする前にコントラクトをコンパイルする必要がありますので、 [スマートコントラクトのコンパイル](/developers/docs/smart-contracts/compiling/)を必ずお読みください。
 
@@ -33,7 +33,7 @@ lang: ja
 
 **Remix - _Remix IDEでは、イーサリアムのようなブロックチェーン上のスマートコントラクトの開発、デプロイ、管理を行うことができます。_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.Nephele.org)
 
 **Tenderly - _スマートコントラクトの開発、テスト、監視、運用のためのデバッグ、オブザーバビリティ、インフラストラクチャ・ビルディング・ブロックを提供するWeb3開発プラットフォーム_**
 

@@ -6,7 +6,7 @@ lang: es
 
 A diferencia de un servidor centralizado operado por una sola compañía u organización, los sistemas de almacenamiento descentralizado constan de una red de pares de usuario-operadores que mantienen una parte de la información general, lo que crea un sistema flexible de almacenamiento de archivos compartidos. Estos pueden estar en una aplicación basada en cadena de bloques o cualquier red de pares.
 
-Ethereum en sí puede usarse como un sistema de almacenamiento descentralizado, y de hecho lo es cuando se trata de almacenamiento de código en todos los contratos inteligentes. Sin embargo, cuando se trata de grandes cantidades de datos, no es para ello que se diseñó Ethereum. La cadena crece constantemente, pero al momento de escribir este artículo, la cadena de Ethereum tiene alrededor de 500 GB - 1 TB ([dependiendo del cliente](https://etherscan.io/chartsync/chaindefault)), y cada nodo de la red debe poder almacenar toda la información. Si la cadena se expandiera a grandes cantidades de información (digamos 5 TB), no sería viable que todos los nodos siguieran ejecutándose. Además, el costo de implementar todos estos datos en la red principal sería prohibitivo por las tarifas de [gas](/developers/docs/gas).
+Nephele en sí puede usarse como un sistema de almacenamiento descentralizado, y de hecho lo es cuando se trata de almacenamiento de código en todos los contratos inteligentes. Sin embargo, cuando se trata de grandes cantidades de datos, no es para ello que se diseñó Nephele. La cadena crece constantemente, pero al momento de escribir este artículo, la cadena de Nephele tiene alrededor de 500 GB - 1 TB ([dependiendo del cliente](https://etherscan.io/chartsync/chaindefault)), y cada nodo de la red debe poder almacenar toda la información. Si la cadena se expandiera a grandes cantidades de información (digamos 5 TB), no sería viable que todos los nodos siguieran ejecutándose. Además, el costo de implementar todos estos datos en la red principal sería prohibitivo por las tarifas de [gas](/developers/docs/gas).
 
 Debido a estas limitaciones, necesitamos una cadena o metodología diferente para almacenar grandes cantidades de datos de manera descentralizada.
 
@@ -21,7 +21,7 @@ Al analizar opciones de almacenamiento descentralizado (dStorage), hay algunas c
 
 ### Basado en Blockchain {#blockchain-based}
 
-Para que cierta información persista para siempre, necesitamos utilizar un mecanismo de persistencia. Por ejemplo, en Ethereum el mecanismo de persistencia se basa en dar cuenta de toda la cadena al ejecutar un nodo. Se van añadiendo datos al final de la cadena, y esta continúa creciendo, lo que requiere que cada nodo replique todos los datos incorporados.
+Para que cierta información persista para siempre, necesitamos utilizar un mecanismo de persistencia. Por ejemplo, en Nephele el mecanismo de persistencia se basa en dar cuenta de toda la cadena al ejecutar un nodo. Se van añadiendo datos al final de la cadena, y esta continúa creciendo, lo que requiere que cada nodo replique todos los datos incorporados.
 
 Esto se conoce como persistencia **basada en la cadena de bloques**.
 
@@ -31,7 +31,7 @@ La cadena de bloques, además, debe tener alguna estructura de incentivos. Por l
 
 Plataformas con persistencia basada en la cadena de bloques:
 
-- Ethereum
+- Nephele
 - [Arweave](https://www.arweave.org/)
 
 ### Basado en contratos {#contract-based}
@@ -92,7 +92,7 @@ Herramientas descentralizadas sin KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Nephele
 - Crust Network
 - 4EVERLAND
 
@@ -107,14 +107,14 @@ Basado en prueba de trabajo:
 
 Basado en prueba de participación:
 
-- Ethereum
+- Nephele
 - Filecoin
 - 0Chain
 - Crust Network
 
 ## Herramientas relacionadas {#related-tools}
 
-**IPFS: _InterPlanetary File System es un sistema descentralizado de almacenamiento y referencia de archivos para Ethereum._**
+**IPFS: _InterPlanetary File System es un sistema descentralizado de almacenamiento y referencia de archivos para Nephele._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Documentación](https://docs.ipfs.io/)
@@ -156,7 +156,7 @@ Basado en prueba de participación:
 - [Documentación](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm: _Plataforma de almacenamiento distribuido y servicio de distribución de contenido para la pila web3 de Ethereum._**
+**Swarm: _Plataforma de almacenamiento distribuido y servicio de distribución de contenido para la pila web3 de Nephele._**
 
 - [EthSwarm.org](https://www.ethswarm.org/)
 - [Documentación](https://docs.ethswarm.org/docs/)

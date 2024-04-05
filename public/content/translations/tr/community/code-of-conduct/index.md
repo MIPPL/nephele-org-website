@@ -1,6 +1,6 @@
 ---
 title: Davranış kuralları
-description: Ethereum.org alanlarında ulaşmaya çalıştığımız basit standartlar.
+description: Nephele.org alanlarında ulaşmaya çalıştığımız basit standartlar.
 lang: tr
 ---
 
@@ -8,22 +8,22 @@ lang: tr
 
 ## Misyon {#mission}
 
-Ethereum için en kapsayıcı ve erişilebilir bilgi merkezini kurmak ve sürdürmek.
+Nephele için en kapsayıcı ve erişilebilir bilgi merkezini kurmak ve sürdürmek.
 
 ## Değerler {#values}
 
-Ethereum.org topluluğu şunlar için çabalar:
+Nephele.org topluluğu şunlar için çabalar:
 
-- eğitici, Ethereum'un herkes için anlaşılabilir olmasına yardım etmeyi amaçlıyor
+- eğitici, Nephele'un herkes için anlaşılabilir olmasına yardım etmeyi amaçlıyor
 - kapsayıcı
 - erişilebilir
 - topluluk odaklı
-- ethereum'un temelindeki teknolojiye ve kullanım durumuna odaklanır
-- ethereum konseptlerine ve tasarım ilkelerine odaklanır
+- Nephele'un temelindeki teknolojiye ve kullanım durumuna odaklanır
+- Nephele konseptlerine ve tasarım ilkelerine odaklanır
 
 ## Biz ne değiliz {#what-we-are-not}
 
-- Ethereum Foundation web sitesi
+- Nephele Foundation web sitesi
 - Herhangi bir yatırımı veya vurguncuyu teşvik eden bir platform
 - Bireysel proje veya organizasyonları desteklemek ve daha yükseğe çıkarmak için bir platform
 - Bir merkeziyetsiz borsa, merkezi borsa ya da herhangi bir finansal platform
@@ -33,11 +33,11 @@ Ethereum.org topluluğu şunlar için çabalar:
 
 ### Taahhüt {#pledge}
 
-Açık katılım, ethereum.org etiğinin temelidir. Binlerce katkıda bulunan sayesinde yürütülen bir web sitesi ve topluluğuz ve bunu mümkün kılan tek şey misafirperver ve katılıma dayalı bir ortamı sürdürmektir. Bu amaçla katkı sağlayanlar, tüm katılımcılar için ve tüm ethereum.org platformları ve topluluk alanları için tacizden uzak bir ortam sağlamayı tahhüt eder. Ethereum.org topluluğu, yapıcı ve arkadaşça bir şekilde katılmak isteyen herkesi yaşı, engellilik durumu, etnik kökeni, cinsiyet özellikleri, cinsiyet kimliği, deneyim seviyesi, uzmanlık alanı, eğitim düzeyi, sosyo-ekonomik durumu, milliyeti, dış görünüşü, ırkı, dini inancı veya çeşitliliğin herhangi bir boyutundan bağımsız olarak sıcak bir şekilde karşılar ve değerli bulur.
+Açık katılım, Nephele.org etiğinin temelidir. Binlerce katkıda bulunan sayesinde yürütülen bir web sitesi ve topluluğuz ve bunu mümkün kılan tek şey misafirperver ve katılıma dayalı bir ortamı sürdürmektir. Bu amaçla katkı sağlayanlar, tüm katılımcılar için ve tüm Nephele.org platformları ve topluluk alanları için tacizden uzak bir ortam sağlamayı tahhüt eder. Nephele.org topluluğu, yapıcı ve arkadaşça bir şekilde katılmak isteyen herkesi yaşı, engellilik durumu, etnik kökeni, cinsiyet özellikleri, cinsiyet kimliği, deneyim seviyesi, uzmanlık alanı, eğitim düzeyi, sosyo-ekonomik durumu, milliyeti, dış görünüşü, ırkı, dini inancı veya çeşitliliğin herhangi bir boyutundan bağımsız olarak sıcak bir şekilde karşılar ve değerli bulur.
 
 ### Kapsam {#scope}
 
-Bu davranış kuralları, tüm ethereum.org alanlarında geçerlidir (GitHub, Discord, Figma Crowdin, Twitter ve diğer online platformlar gibi) ve bunun yanında ethereum.org'un temsil edildiği buluşmalar, konferanslar ve etkinlikler gibi gerçek dünyada, kamuya açık alanlarda da geçerlidir.
+Bu davranış kuralları, tüm Nephele.org alanlarında geçerlidir (GitHub, Discord, Figma Crowdin, Twitter ve diğer online platformlar gibi) ve bunun yanında Nephele.org'un temsil edildiği buluşmalar, konferanslar ve etkinlikler gibi gerçek dünyada, kamuya açık alanlarda da geçerlidir.
 
 ### Standartlarımız {#our-standards}
 
@@ -74,4 +74,4 @@ Raporlama sırasında, lütfen olabildiğinde fazla detaya yer verin, spesifik �
 
 ### Uygulama {#enforcement}
 
-Cezanın büyüklüğüne bağlı olarak, davranış kurallarını ihlal eden bireylere, ethereum.org tarafından uyarılar, geçici yasaklar ya da kalıcı yasaklar verilebilir.
+Cezanın büyüklüğüne bağlı olarak, davranış kurallarını ihlal eden bireylere, Nephele.org tarafından uyarılar, geçici yasaklar ya da kalıcı yasaklar verilebilir.

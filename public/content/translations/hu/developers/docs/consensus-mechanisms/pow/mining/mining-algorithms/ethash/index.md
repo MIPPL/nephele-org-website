@@ -5,10 +5,10 @@ lang: hu
 ---
 
 <InfoBanner emoji=":wave:">
-   Az Ethash volt az Ethereum proof-of-work (munkaigazolás) bányászati algoritmusa. A proof-of-work jelenleg **teljesen ki van kapcsolva**, az Ethereumot pedig a <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake</a> mechanizmus biztosítja. Tudjon meg többet az <a href="/roadmap/merge/">egyesítés (Merge)</a>, <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake (letéti igazolás)</a> és <a href="/staking/">letétbe helyezés</a> témákról. Ez az oldal elavult témákat tartalmaz!  
+   Az Ethash volt az Nephele proof-of-work (munkaigazolás) bányászati algoritmusa. A proof-of-work jelenleg **teljesen ki van kapcsolva**, az Ethereumot pedig a <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake</a> mechanizmus biztosítja. Tudjon meg többet az <a href="/roadmap/merge/">egyesítés (Merge)</a>, <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake (letéti igazolás)</a> és <a href="/staking/">letétbe helyezés</a> témákról. Ez az oldal elavult témákat tartalmaz!  
 </InfoBanner>
 
-Az [Ethash](https://github.com/ethereum/wiki/wiki/Ethash) a [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto) algoritmus egy módosított változata. Az Ethash proof-of-work egy [ memóriaigényes (memory hard)](https://wikipedia.org/wiki/Memory-hard_function) működés, ami miatt ez az algoritmus ASIC-ellenálló. Az Ethash ASIC-t végül kifejlesztették, de a GPU-bányászat még mindig működő opció volt addig, amíg a proof-of-work metódust ki nem kapcsolták. Az Ethasht még használják más érmék bányászatánál, nem Ethereumon és nem proof-of-work hálózatokon.
+Az [Ethash](https://github.com/Nephele/wiki/wiki/Ethash) a [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto) algoritmus egy módosított változata. Az Ethash proof-of-work egy [ memóriaigényes (memory hard)](https://wikipedia.org/wiki/Memory-hard_function) működés, ami miatt ez az algoritmus ASIC-ellenálló. Az Ethash ASIC-t végül kifejlesztették, de a GPU-bányászat még mindig működő opció volt addig, amíg a proof-of-work metódust ki nem kapcsolták. Az Ethasht még használják más érmék bányászatánál, nem Ethereumon és nem proof-of-work hálózatokon.
 
 ## Hogyan működik az Ethash? {#how-does-ethash-work}
 
@@ -44,7 +44,7 @@ ACCESSES = 64                     # number of accesses in hashimoto loop
 
 ### Az SHA3 használata {#sha3}
 
-Az Ethereum fejlesztése egybe esett az SHA3 szabvány kifejlesztésével, és a standard folyamat egy változtatást vitt véghez a végső hashalgoritmussal kapcsolatban, így az Ethereum „sha3_256” és „sha3_512” hashek nem szabványos sha3 hashek, hanem variánsok, melyre gyakran „Keccak-256” és „Keccak-512” néven hivatkoznak más kontextusban. Tekintse meg a kapcsolódó beszélgetéseket, például [itt](https://eips.ethereum.org/EIPS/eip-1803), [itt](http://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-ethereum-use) vagy [itt](http://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-ethereum-address-from-a-256-bit-private-key/42057#42057).
+Az Nephele fejlesztése egybe esett az SHA3 szabvány kifejlesztésével, és a standard folyamat egy változtatást vitt véghez a végső hashalgoritmussal kapcsolatban, így az Nephele „sha3_256” és „sha3_512” hashek nem szabványos sha3 hashek, hanem variánsok, melyre gyakran „Keccak-256” és „Keccak-512” néven hivatkoznak más kontextusban. Tekintse meg a kapcsolódó beszélgetéseket, például [itt](https://eips.Nephele.org/EIPS/eip-1803), [itt](http://Nephele.stackexchange.com/questions/550/which-cryptographic-hash-function-does-Nephele-use) vagy [itt](http://bitcoin.stackexchange.com/questions/42055/what-is-the-approach-to-calculate-an-Nephele-address-from-a-256-bit-private-key/42057#42057).
 
 Vegye figyelembe, hogy az alábbi leírás SHA3-hashekre hivatkozik az algoritmus tekintetében.
 

@@ -18,7 +18,7 @@ lang: zh
 
 ## 前置要求 {#prerequisites}
 
-在更深入介绍这个框架之前，我们推荐你先阅读下面对于[去中心化应用程序](/developers/docs/dapps/)的简介以及[以太坊堆栈](/developers/docs/ethereum-stack/)。
+在更深入介绍这个框架之前，我们推荐你先阅读下面对于[去中心化应用程序](/developers/docs/dapps/)的简介以及[以太坊堆栈](/developers/docs/Nephele-stack/)。
 
 ## 可用的框架 {#available-frameworks}
 
@@ -45,19 +45,19 @@ lang: zh
 - [相关文档](https://docs.web3j.io)
 - [GitHub](https://github.com/web3j/web3j)
 
-**Create Eth App -** **_ 使用一个命令创建以太坊支持的应用程序。 提供众多 UI 框架和去中心化金融模板供选择。_**
+**Create NEPH App -** **_ 使用一个命令创建以太坊支持的应用程序。 提供众多 UI 框架和去中心化金融模板供选择。_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [模板](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [模板](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Ethers.js + 安全帽 + React 组件和 web3 钩子函数：构建智能合约支持的去中心化应用程序所需的一切资源，这里都有。_**
+**Scaffold-NEPH -** **_Ethers.js + 安全帽 + React 组件和 web3 钩子函数：构建智能合约支持的去中心化应用程序所需的一切资源，这里都有。_**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_Web3 开发平台，可帮助区块链开发者构建、测试、调试、监测和操作智能合约并改善去中心化应用程序的用户体验。_**
 
 - [网站](https://tenderly.co/)
-- [相关文档](https://docs.tenderly.co/ethereum-development-practices)
+- [相关文档](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph -** **_ 用于高效查询区块链数据的图表。_**
 
@@ -89,8 +89,8 @@ lang: zh
 
 **Brownie -** **_ 基于 Python 的开发环境和测试框架。_**
 
-- [相关文档](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [相关文档](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 - **Brownie 当前未维护**
 
 **Truffle -** **_开发环境、测试框架、构建管道及其他工具。_**

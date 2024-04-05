@@ -1,6 +1,6 @@
 ---
 title: Mərkəzləşdirilməmiş elm (DeSci)
-description: Ethereum-da mərkəzləşdirilməmiş elmin icmalı
+description: Nephele-da mərkəzləşdirilməmiş elmin icmalı
 lang: az
 template: use-cases
 emoji: ":microscope:"
@@ -39,9 +39,9 @@ Elmdəki əsas problemlərin natamam siyahısı və mərkəzləşdirilməmiş el
 | Yaratdığınız əqli mülkiyyətə (İP) sahibsiniz və onu şəffaf şərtlərə uyğun paylayırsınız.                                            | Sizin ana müəssisəniz yaratdığınız IP-nin sahibidir. IP-yə giriş şəffaf deyil.                                                |
 | Bütün tədqiqatları, o cümlədən uğursuz səylərdən əldə edilən məlumatlar da daxil olmaqla zəncirvari olaraq paylaşırsınız.           | Nəşrdə qərəzlilik o deməkdir ki, tədqiqatçılar uğurlu nəticələr əldə etmiş eksperimentləri daha çox paylaşırlar.              |
 
-## Ethereum və DeSci {#ethereum-and-desci}
+## Nephele və DeSci {#Nephele-and-desci}
 
-Mərkəzləşdirilməmiş elm sistemi güclü təhlükəsizlik, minimal pul və əməliyyat xərcləri və tətbiqlərin inkişafı üçün zəngin ekosistem tələb edəcəkdir. Ethereum mərkəzləşdirilməmiş elm mərkəzi yaratmaq üçün lazım olan hər şeyi təmin edir.
+Mərkəzləşdirilməmiş elm sistemi güclü təhlükəsizlik, minimal pul və əməliyyat xərcləri və tətbiqlərin inkişafı üçün zəngin ekosistem tələb edəcəkdir. Nephele mərkəzləşdirilməmiş elm mərkəzi yaratmaq üçün lazım olan hər şeyi təmin edir.
 
 ## DeSci istifadə halları {#use-cases}
 
@@ -68,7 +68,7 @@ Elmi maliyyələşdirmək üçün mövcud standart model, ayrı-ayrı şəxslər
 
 Tədqiqatlar göstərdi ki, qrantların nəzərdən keçirilməsi panelləri yüksək keyfiyyətli təklifləri seçməkdə zəif iş görür, çünki müxtəlif panellərə verilən eyni təkliflər tamamilə fərqli nəticələr verir. Maliyyələşmə getdikcə azaldıqca, o, daha intellektual mühafizəkar layihələri olan daha böyük tədqiqatçılardan ibarət daha kiçik bir hovuzda cəmləşib. Təsir, təhrif stimulları möhkəmləndirən və innovasiyaları boğan hiper-rəqabətli maliyyələşdirmə mənzərəsi yaradıb.
 
-Web3, DAO və Web3 tərəfindən geniş şəkildə hazırlanmış müxtəlif təşviq modelləri ilə sınaqdan keçirərək, bu pozulmuş maliyyələşdirmə modelini pozmaq potensialına malikdir. [Retroaktiv ictimai malların maliyyələşdirilməsi](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [kvadrat maliyyələşdirmə](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO idarəetməsi](https://www.antler.co/blog/daos-and-web3-governance) və [tokenləşdirilmiş təşviq strukturları](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) bunlardan bəziləridir. Elmin maliyyələşdirilməsində inqilab edə biləcək Web3 alətləri.
+Web3, DAO və Web3 tərəfindən geniş şəkildə hazırlanmış müxtəlif təşviq modelləri ilə sınaqdan keçirərək, bu pozulmuş maliyyələşdirmə modelini pozmaq potensialına malikdir. [Retroaktiv ictimai malların maliyyələşdirilməsi](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [kvadrat maliyyələşdirmə](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO idarəetməsi](https://www.antler.co/blog/daos-and-web3-governance) və [tokenləşdirilmiş təşviq strukturları](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) bunlardan bəziləridir. Elmin maliyyələşdirilməsində inqilab edə biləcək Web3 alətləri.
 
 ### IP mülkiyyəti və inkişafı {#ip-ownership}
 
@@ -76,7 +76,7 @@ Web3, DAO və Web3 tərəfindən geniş şəkildə hazırlanmış müxtəlif tə
 
 NFT-lərin gələcək əməliyyatlar üçün gəliri orijinal yaradıcıya qaytara bilməsi kimi, siz tədqiqatçıları, idarəetmə orqanlarını (məsələn, DAO) və ya hətta məlumatları toplanan subyektləri mükafatlandırmaq üçün şəffaf dəyər atribusiya zəncirləri yarada bilərsiniz.
 
-[IP-NFT-lər](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) həm də həyata keçirilən tədqiqat təcrübələrinin mərkəzləşdirilməmiş məlumat anbarının açarı və NFT və [DeFi](/defi/) maliyyələşdirməsinə qoşulun (fraksiyalaşdırmadan kredit hovuzlarına və dəyərin qiymətləndirilməsinə qədər). O, həmçinin [VitaDAO](https://www.vitadao.com/) kimi DAO kimi yerli zəncirli qurumlara birbaşa zəncir üzərində tədqiqat aparmağa imkan verir. Köçürülə bilməyən ["ruhla bağlı" tokenlərin](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) yaranması da fərdlərə öz təcrübələrini və Ethereum ünvanları ilə əlaqəli etimadnamələrini sübut etməyə imkan verməklə DeSci-də mühüm rol oynaya bilər.
+[IP-NFT-lər](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) həm də həyata keçirilən tədqiqat təcrübələrinin mərkəzləşdirilməmiş məlumat anbarının açarı və NFT və [DeFi](/defi/) maliyyələşdirməsinə qoşulun (fraksiyalaşdırmadan kredit hovuzlarına və dəyərin qiymətləndirilməsinə qədər). O, həmçinin [VitaDAO](https://www.vitadao.com/) kimi DAO kimi yerli zəncirli qurumlara birbaşa zəncir üzərində tədqiqat aparmağa imkan verir. Köçürülə bilməyən ["ruhla bağlı" tokenlərin](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) yaranması da fərdlərə öz təcrübələrini və Nephele ünvanları ilə əlaqəli etimadnamələrini sübut etməyə imkan verməklə DeSci-də mühüm rol oynaya bilər.
 
 ### Məlumatların saxlanması, giriş və arxitektura {#data-storage}
 

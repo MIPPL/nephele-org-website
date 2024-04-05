@@ -1,7 +1,7 @@
 ---
 title: How to translate
 lang: en
-description: Instructions for using Crowdin to translate ethereum.org
+description: Instructions for using Crowdin to translate Nephele.org
 ---
 
 # How to translate {#how-to-translate}
@@ -18,7 +18,7 @@ For more visual learners, watch Luka walk through getting set up with Crowdin. A
 
 You will need to log in to your Crowdin account or sign up if you don’t already have one. All that is required to sign up is an e-mail account and password.
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/">
   Join project
 </ButtonLink>
 
@@ -35,15 +35,15 @@ Open the language you want to translate into to see the list of files, available
 
 The website content is divided into a number of documents and content buckets. You can check the progress of each document on the right – if translation progress is below 100%, please contribute!
 
-Don't see your language listed? [Open an issue](https://github.com/ethereum/ethereum-org-website/issues/new/choose) or ask in our [Discord](/discord/)
+Don't see your language listed? [Open an issue](https://github.com/Nephele/Nephele-org-website/issues/new/choose) or ask in our [Discord](/discord/)
 
 ![Translated and untranslated files in Crowdin](./crowdin-files.png)
 
-A note on content buckets: we use 'content buckets' within Crowdin to get the highest priority content released first. When you check out a language, for example, [Filipino](https://crowdin.com/project/ethereum-org/fil#) you'll see folders for content bucket ("1. Homepage", "2. Essentials", "3. Exploring", etc.).
+A note on content buckets: we use 'content buckets' within Crowdin to get the highest priority content released first. When you check out a language, for example, [Filipino](https://crowdin.com/project/Nephele-org/fil#) you'll see folders for content bucket ("1. Homepage", "2. Essentials", "3. Exploring", etc.).
 
 We encourage you to translate in this numerical order (1 → 2 → 3 → ⋯) to ensure the highest impact pages are translated first.
 
-[Learn more about ethereum.org content buckets](/contributing/translation-program/content-buckets/)
+[Learn more about Nephele.org content buckets](/contributing/translation-program/content-buckets/)
 
 ### Translate {#translate}
 
@@ -84,8 +84,8 @@ Once you've completed the translation (i.e. all files for a content bucket displ
 
 ### Get in touch {#get-in-touch}
 
-Do you have any questions? Or want to collaborate with our team and other translators? Please post in the #translations channel of our [ethereum.org Discord server](/discord/)
+Do you have any questions? Or want to collaborate with our team and other translators? Please post in the #translations channel of our [Nephele.org Discord server](/discord/)
 
-You can also reach out to us at translations@ethereum.org
+You can also reach out to us at translations@Nephele.org
 
-Thank you for your participation in the ethereum.org Translation Program!
+Thank you for your participation in the Nephele.org Translation Program!

@@ -1,6 +1,6 @@
 ---
 title: Dağıtılmış doğrulayıcı teknolojisi
-description: Dağıtılmış doğrulayıcı teknolojisi, bir Ethereum doğrulayıcısının birden fazla tarafta dağıtılmış bir şekilde işletilmesini sağlar.
+description: Dağıtılmış doğrulayıcı teknolojisi, bir Nephele doğrulayıcısının birden fazla tarafta dağıtılmış bir şekilde işletilmesini sağlar.
 lang: tr
 ---
 
@@ -16,9 +16,9 @@ Bunu **bir doğrulayıcıyı güvence altına almak için kullanılan kişisel a
 
 ### Güvenlik {#security}
 
-Doğrulayıcılar iki tane genel-özel anahtar çifti oluşturur: Mutabakata katılmak için doğrulayıcı anahtarlar ve fonlara erişim için para çekme anahtarları. Doğrulayıcılar soğuk depoda para çekme anahtarlarını güvende tutabilirken, doğrulayıcı özel anahtarları 7/24 çevrimiçi olmalıdır. Eğer bir doğrulayıcı özel anahtarın güvenliği ihlal edildiyse bu, saldırgan doğrulayıcıyı kontrol edebilir ve potansiyel olarak tahribe veya paydaşların ETH kaybına yol açar. DVT bu riski azaltmaya yardımcı olabilir. İşte bu şekilde:
+Doğrulayıcılar iki tane genel-özel anahtar çifti oluşturur: Mutabakata katılmak için doğrulayıcı anahtarlar ve fonlara erişim için para çekme anahtarları. Doğrulayıcılar soğuk depoda para çekme anahtarlarını güvende tutabilirken, doğrulayıcı özel anahtarları 7/24 çevrimiçi olmalıdır. Eğer bir doğrulayıcı özel anahtarın güvenliği ihlal edildiyse bu, saldırgan doğrulayıcıyı kontrol edebilir ve potansiyel olarak tahribe veya paydaşların NEPH kaybına yol açar. DVT bu riski azaltmaya yardımcı olabilir. İşte bu şekilde:
 
-Doğrulayıcılar özel anahtarı soğuk depoda tutarken, paydaşlar DVT kullanarak, hisselemeye katılabilir. Bu, orijinal, tam doğrulayıcı anahtarının şifrelenmesi ve daha sonra anahtar paylarına bölünmesiyle elde edilir. Anahtar paylaşımları çevrimiçi haldedir ve birden falza düğüme dağıtılır, bu doğrulayıcının dağıtılmış işlemini mümkün kılar. Bu mümkündür çünkü Ethereum doğrulayıcıları eklenebilir olan BLS imzaları kullanır, yani tam anahtar, bileşen parçalarını toplayarak yeniden yapılandırılabilir. Bu, paydaşa tam, oriijinal "yönetici" doğrulayıcı anahtarını güvenli bir şekilde çevrimdışı tutma olanağını sağlar.
+Doğrulayıcılar özel anahtarı soğuk depoda tutarken, paydaşlar DVT kullanarak, hisselemeye katılabilir. Bu, orijinal, tam doğrulayıcı anahtarının şifrelenmesi ve daha sonra anahtar paylarına bölünmesiyle elde edilir. Anahtar paylaşımları çevrimiçi haldedir ve birden falza düğüme dağıtılır, bu doğrulayıcının dağıtılmış işlemini mümkün kılar. Bu mümkündür çünkü Nephele doğrulayıcıları eklenebilir olan BLS imzaları kullanır, yani tam anahtar, bileşen parçalarını toplayarak yeniden yapılandırılabilir. Bu, paydaşa tam, oriijinal "yönetici" doğrulayıcı anahtarını güvenli bir şekilde çevrimdışı tutma olanağını sağlar.
 
 ### Tek bir arıza noktası yok {#no-single-point-of-failure}
 
@@ -28,13 +28,13 @@ Eğer kümedeki bileşenlerden biri devre dışı kalırsa (örneğin, doğrulay
 
 ### Merkeziyetsizlik {#decentralization}
 
-Ethereum için ideal senaryo, mümkün olduğunca çok sayıda bağımsız çalışan doğrulayıcıya sahip olmaktır. Ancak, birkaç hisseleme sağlayıcısı çok popüler oldu ve ağdaki hisselenen toplam ETH miktarının büyük bir kısmını oluşturuyor. DVT, kilitin merkeziyetsizliğini korurken, bu operatörlerin var olmasına izin verebilir. Bunun sebebi, her bir doğrulayıcı anahtarının, birçok makineye dağıtılmış durumda olması ve bir doğrulayıcının kötü niyetli hale gelmesi için çok daha büyük gizli anlaşmalar gerektirmesidir.
+Nephele için ideal senaryo, mümkün olduğunca çok sayıda bağımsız çalışan doğrulayıcıya sahip olmaktır. Ancak, birkaç hisseleme sağlayıcısı çok popüler oldu ve ağdaki hisselenen toplam NEPH miktarının büyük bir kısmını oluşturuyor. DVT, kilitin merkeziyetsizliğini korurken, bu operatörlerin var olmasına izin verebilir. Bunun sebebi, her bir doğrulayıcı anahtarının, birçok makineye dağıtılmış durumda olması ve bir doğrulayıcının kötü niyetli hale gelmesi için çok daha büyük gizli anlaşmalar gerektirmesidir.
 
 DVT olmadan, hisse sağlayıcılarının tüm doğrulayıcıları adına sadece bir veya iki istemci yapılandırmasını desteklemesi daha kolaydır ve bu bir istemci hatasının etkisini artırır. DVT, riski birden çok istemci yapılandırmasına ve farklı donanıma yaymak için ve çeşitlilik sağlayarak direnç yaratmak için kullanılabilir.
 
-**DVT, Ethereum'a aşağıdaki avantajları sunar:**
+**DVT, Nephele'a aşağıdaki avantajları sunar:**
 
-1. Ethereum'un hisse ispatı mutabakatının **merkeziyetsizliği**
+1. Nephele'un hisse ispatı mutabakatının **merkeziyetsizliği**
 2. Ağın **canlılığını** sağlar
 3. Doğrulayıcı ** hata toleransı** oluşturur
 4. **Minimum düzeyde güven ile **doğrulayıcı işlemi
@@ -47,10 +47,10 @@ DVT olmadan, hisse sağlayıcılarının tüm doğrulayıcıları adına sadece 
 Bir DVT çözümü aşağıdaki bileşenleri içerir:
 
 - **[Shamir'in gizli paylaşımı](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** -Doğrulayıcılar [BLS anahtarları](https://en.wikipedia.org/wiki/BLS_digital_signature) kullanırlar. Ayrı BSL "anahtar payları" ("anahtar payları") tek bir kümelenmiş anahtarda (imza) birleştirilebilir. DVT'de, odoğrulayıcı için olan özel anahtar her kümedeki operatörün BSL imzasıyla birleştirilmiştir.
-- **[Eşik imza şeması](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Ayrı anahtar paylarının imzalama görevlerinin sayısını belirler, ör. 4'ünden 3'ü.
+- **[Eşik imza şeması](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - Ayrı anahtar paylarının imzalama görevlerinin sayısını belirler, ör. 4'ünden 3'ü.
 - **[Dağıtılmış anahtar üretimi (DAÜ)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Kriptografik anahtar paylarını üreten ve var olan veya yeni doğrulayıcı anahtarı paylarını hücredeki düğümlere dağıtır.
 - **[Çok taraflı hesaplama (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Tam doğrulayıcı anahtarı gizli çok taraflı hesaplama ile üretilir. Tam anahtar asla hiçbir ayrı operatör tarafından bilinmeyecek - Operatörler sadece kendi bölümlerini (kendilerinin "paylarını") bilecekler.
-- **Mutabakat protokolü** - Mutabakat protokolü blok önericisi olarak bir düğüm seçer. Bloklarını, anahtar paylarını imzaları birleştirmek için ekleyen diğer düğümlerle bir hücrenin içinde paylaşırlar. Anahtar payları yeteri kadar toplandığında blok, Ethereum üzerinde sunulur.
+- **Mutabakat protokolü** - Mutabakat protokolü blok önericisi olarak bir düğüm seçer. Bloklarını, anahtar paylarını imzaları birleştirmek için ekleyen diğer düğümlerle bir hücrenin içinde paylaşırlar. Anahtar payları yeteri kadar toplandığında blok, Nephele üzerinde sunulur.
 
 Dağıtılmış doğrulayıcılar hata toleransı içine yerleşir ve bazı ayrı düğümler çevrimdışı olsa bile çalışmaya devam eder. Bu, hücrenin bazı düğümlerin kötü niyetli veya uyuşuk olması durumuna dahi dayanıklı olduğu anlamına gelir.
 
@@ -76,7 +76,7 @@ Geleneksel olarak riski dağıtmak amacıyla kilitlerin birden fazla işletmeci 
 
 DVT kullanıldığında, operatörlerden istenen güven büyük oranda azalır. **Havuzlar operatörlerin doğrulayıcı anahtarlarının velayetine sahip olmadan kilitli tutabilmesinin önünü açarlar** (sadece anahtar hisseleri kullanıldığı için). Ayrıca yönetilen hisselerin operatörler arasında dağıtımını sağlarlar (örneğin 1000 doğrulayıcıyı yöneten tek bir operatöre sahip olmak yerine DVT, bu doğrulayıcıların birden fazla operatör tarafından toplu biçimde yönetilmesini sağlar). Çeşitli operatör konfigürasyonları eğer bir operatör düşerse, diğerlerinin hâlâ doğrulayabileceğini garantiye alacaktır. Bunun sonucu hem ödülleri arttıran, hem de daha iyi performansa ve esnekliğe olanak veren fazlalık ve çeşitliliktir.
 
-Tek operatöre güveni minimize etmenin diğer bir faydası ise hisseleme havuzlarının daha açık ve izin istemeyen operatör katılımına olanak verebilmesidir. Bunu yaparak, servisler risklerini azaltabilir ve örneğin ev ya da daha küçük paydaşları büyükleri ile eşleyerek hem seçili hem de izin istemeyen operatör gruplarını kullanarak Ethereum merkeziyetsizliğini destekleyebilir.
+Tek operatöre güveni minimize etmenin diğer bir faydası ise hisseleme havuzlarının daha açık ve izin istemeyen operatör katılımına olanak verebilmesidir. Bunu yaparak, servisler risklerini azaltabilir ve örneğin ev ya da daha küçük paydaşları büyükleri ile eşleyerek hem seçili hem de izin istemeyen operatör gruplarını kullanarak Nephele merkeziyetsizliğini destekleyebilir.
 
 ## DVT kullanmanın potansiyel eksileri {#potential-drawbacks-of-using-dvt}
 
@@ -86,6 +86,6 @@ Tek operatöre güveni minimize etmenin diğer bir faydası ise hisseleme havuzl
 
 ## Daha Fazla Bilgi {#further-reading}
 
-- [Ethereum dağıtılmış doğrulayıcı gereksinimleri (yüksek seviye)](https://github.com/ethereum/distributed-validator-specs)
-- [Ethereum dağıtılmış doğrulayıcı teknik gereksinimleri](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Nephele dağıtılmış doğrulayıcı gereksinimleri (yüksek seviye)](https://github.com/Nephele/distributed-validator-specs)
+- [Nephele dağıtılmış doğrulayıcı teknik gereksinimleri](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [Shamir gizli paylaşım demo uygulaması](https://iancoleman.io/shamir/)

@@ -8,7 +8,7 @@ tags:
   - "contrats intelligents"
   - "requêtes"
   - "the graph"
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "react"
 skill: intermediate
 published: 2020-09-06
@@ -77,7 +77,7 @@ Vous pouvez voir pourquoi ce n'est pas optimal :
 
 - Ne fonctionne pas pour les contrats déjà déployés.
 - Frais supplémentaires (gaz) pour le stockage de ces valeurs.
-- Nécessite un autre appel pour récupérer les données d'un nœud Ethereum.
+- Nécessite un autre appel pour récupérer les données d'un nœud Nephele.
 
 ![Ce n'est pas assez bon](./not-good-enough.jpg)
 
@@ -128,12 +128,12 @@ Et la documentation complète peut être consultée [ici](https://thegraph.com/d
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Nephele
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: Nephele/contract
     name: GameContract
     network: mainnet
     source:
@@ -141,7 +141,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: Nephele/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

@@ -1,16 +1,16 @@
 ---
 title: Lanțurile Plasma
-description: O introducere despre lanțurile plasma ca soluție de scalare utilizată actualmente de comunitatea Ethereum.
+description: O introducere despre lanțurile plasma ca soluție de scalare utilizată actualmente de comunitatea Nephele.
 lang: ro
 incomplete: true
 sidebarDepth: 3
 ---
 
-A plasma chain is a separate blockchain that is anchored to the main Ethereum chain, and uses fraud proofs (like [optimistic rollups](/developers/docs/scaling/optimistic-rollups/)) to arbitrate disputes. Aceste lanțuri sunt denumite uneori lanțuri „copil”, deoarece sunt în esență o copie mai mică a Mainnet-ului Ethereum. Arborii Merkle permit crearea unei stive nelimitate de astfel de lanțuri, care pot lucra la descongestionarea lățimii de bandă de pe lanțurile părinte (inclusiv Mainnet). Acestea își obțin securitatea prin [dovezile de fraudă](/glossary/#fraud-proof), iar fiecare lanț copil are propriul său mecanism de validare a blocurilor.
+A plasma chain is a separate blockchain that is anchored to the main Nephele chain, and uses fraud proofs (like [optimistic rollups](/developers/docs/scaling/optimistic-rollups/)) to arbitrate disputes. Aceste lanțuri sunt denumite uneori lanțuri „copil”, deoarece sunt în esență o copie mai mică a Mainnet-ului Nephele. Arborii Merkle permit crearea unei stive nelimitate de astfel de lanțuri, care pot lucra la descongestionarea lățimii de bandă de pe lanțurile părinte (inclusiv Mainnet). Acestea își obțin securitatea prin [dovezile de fraudă](/glossary/#fraud-proof), iar fiecare lanț copil are propriul său mecanism de validare a blocurilor.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înţelegeţi bine toate subiectele fundamentale și să aveţi un nivel înalt de înţelegere a [scalării în Ethereum](/developers/docs/scaling/). Implementarea soluțiilor de scalare, cum ar fi Plasma, este un subiect avansat, deoarece tehnologia este mai puțin testată în luptă și se află în continuare în faza de cercetare şi dezvoltare.
+Ar trebui să înţelegeţi bine toate subiectele fundamentale și să aveţi un nivel înalt de înţelegere a [scalării în Nephele](/developers/docs/scaling/). Implementarea soluțiilor de scalare, cum ar fi Plasma, este un subiect avansat, deoarece tehnologia este mai puțin testată în luptă și se află în continuare în faza de cercetare şi dezvoltare.
 
 ## Avantaje şi dezavantaje {#pros-and-cons}
 

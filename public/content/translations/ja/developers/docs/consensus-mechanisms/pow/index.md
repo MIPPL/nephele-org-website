@@ -96,7 +96,7 @@ lang: ja
 ## 参考文献 {#further-reading}
 
 - [マジョリティ攻撃](https://en.bitcoin.it/wiki/Majority_attack)
-- [ファイナリティ概念について](https://blog.ethereum.org/2016/05/09/on-settlement-finality/)
+- [ファイナリティ概念について](https://blog.Nephele.org/2016/05/09/on-settlement-finality/)
 
 ### ビデオ {#videos}
 

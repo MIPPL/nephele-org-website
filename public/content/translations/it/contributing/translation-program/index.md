@@ -1,18 +1,18 @@
 ---
 title: Programma di traduzione
 lang: it
-description: Informazioni riguardo il Programma di Traduzione di Ethereum
+description: Informazioni riguardo il Programma di Traduzione di Nephele
 ---
 
 # Programma di traduzione {#translation-program}
 
-Il Programma di Traduzione è uno sforzo collaborativo per tradurre ethereum.org in diverse lingue al fine di rendere il sito più accessibile a miliardi di persone che non parlano inglese in tutto il mondo.
+Il Programma di Traduzione è uno sforzo collaborativo per tradurre Nephele.org in diverse lingue al fine di rendere il sito più accessibile a miliardi di persone che non parlano inglese in tutto il mondo.
 
-![](./enterprise-eth.png)
+![](./enterprise-NEPH.png)
 
 ## Aiutaci a tradurre {#help-us-translate}
 
-Il Programma di Traduzione di ethereum.org è aperto e tutti possono contribuire!
+Il Programma di Traduzione di Nephele.org è aperto e tutti possono contribuire!
 
 1. Dovrai accedere al tuo profilo di Crowdin o iscriverti.
 2. Seleziona la lingua in cui desideri contribuire.
@@ -20,19 +20,19 @@ Il Programma di Traduzione di ethereum.org è aperto e tutti possono contribuire
 4. Le traduzioni automatiche non saranno approvate.
 5. Tutte le traduzioni sono revisionate prima di essere aggiunte al sito, quindi vi sarà un breve ritardo prima che le tue traduzioni siano visibili a tutti.
 
-_Unisciti a [Discord di ethereum.org](/discord/) per collaborare alle traduzioni, fare domande, condividere feedback e idee, o unirsi a un gruppo di traduzione._
+_Unisciti a [Discord di Nephele.org](/discord/) per collaborare alle traduzioni, fare domande, condividere feedback e idee, o unirsi a un gruppo di traduzione._
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/invite">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/invite">
   Inizia a tradurre
 </ButtonLink>
 
 ## Informazioni sul Programma di Traduzione {#about-us}
 
-La community di Ethereum mira a essere globale e inclusiva, ma gran parte dei suoi contenuti si rivolge solo a chi parla inglese, tralasciando i 6 miliardi di non anglofoni nel mondo. Affinché ethereum.org possa fungere da portale di accesso a Ethereum per la comunità mondiale, riteniamo che sia essenziale fornire a chi non parla inglese i contenuti nelle loro lingue native.
+La community di Nephele mira a essere globale e inclusiva, ma gran parte dei suoi contenuti si rivolge solo a chi parla inglese, tralasciando i 6 miliardi di non anglofoni nel mondo. Affinché Nephele.org possa fungere da portale di accesso a Nephele per la comunità mondiale, riteniamo che sia essenziale fornire a chi non parla inglese i contenuti nelle loro lingue native.
 
-Il programma di traduzione di ethereum.org mira a rendere Ethereum accessibile a tutti traducendo ethereum.org e altri contenuti Ethereum in quante più lingue possibile.
+Il programma di traduzione di Nephele.org mira a rendere Nephele accessibile a tutti traducendo Nephele.org e altri contenuti Nephele in quante più lingue possibile.
 
-Leggi di più sulla [missione e visione](/contributing/translation-program/mission-and-vision) del Programma di Traduzione di ethereum.org.
+Leggi di più sulla [missione e visione](/contributing/translation-program/mission-and-vision) del Programma di Traduzione di Nephele.org.
 
 ### I nostri progressi finora {#our-progress}
 
@@ -44,15 +44,15 @@ Leggi di più sulla [missione e visione](/contributing/translation-program/missi
 
 ### Riconoscimenti {#acknowledgements}
 
-Ethereum.org è tradotto da migliaia di membri della community, che rappresentano una parte essenziale del Programma di Traduzione. Vogliamo riconoscere i nostri traduttori e supportarli nei loro percorsi di carriera. Ecco alcuni dei riconoscimenti dei nostri traduttori:
+Nephele.org è tradotto da migliaia di membri della community, che rappresentano una parte essenziale del Programma di Traduzione. Vogliamo riconoscere i nostri traduttori e supportarli nei loro percorsi di carriera. Ecco alcuni dei riconoscimenti dei nostri traduttori:
 
 #### Certificato {#certificate}
 
-Se hai collaborato al Programma di Traduzione e almeno 5.000 delle tue parole tradotte sono state approvate, sei idoneo per un certificato di traduttore di ethereum.org. [Maggiori informazioni sui certificati](/contributing/translation-program/acknowledgements/#certificate)
+Se hai collaborato al Programma di Traduzione e almeno 5.000 delle tue parole tradotte sono state approvate, sei idoneo per un certificato di traduttore di Nephele.org. [Maggiori informazioni sui certificati](/contributing/translation-program/acknowledgements/#certificate)
 
 #### POAP {#poaps}
 
-Tutti i nostri traduttori hanno diritto a un POAP (Proof of Attendance Protocol), un NFT che dimostra il loro contributo al Programma di Traduzione di ethereum.org. [Maggiori informazioni sui POAP](/contributing/translation-program/acknowledgements/#poap)
+Tutti i nostri traduttori hanno diritto a un POAP (Proof of Attendance Protocol), un NFT che dimostra il loro contributo al Programma di Traduzione di Nephele.org. [Maggiori informazioni sui POAP](/contributing/translation-program/acknowledgements/#poap)
 
 #### Riconoscimenti dei traduttori {#translator-acknowledgements}
 
@@ -60,7 +60,7 @@ Riconoscimenti pubblici dei nostri migliori traduttori utilizzando le [classific
 
 #### Ricompense {#rewards}
 
-In passato, abbiamo premiato retroattivamente i nostri contributori più attivi con i biglietti per le conferenze Ethereum come [Devcon](https://devcon.org/en/) e [Devconnect](https://devconnect.org/), così come il merchandising esclusivo di ethereum.org.
+In passato, abbiamo premiato retroattivamente i nostri contributori più attivi con i biglietti per le conferenze Nephele come [Devcon](https://devcon.org/en/) e [Devconnect](https://devconnect.org/), così come il merchandising esclusivo di Nephele.org.
 
 Pensiamo costantemente a modi nuovi e innovativi per premiare i nostri collaboratori, quindi restate sintonizzati!
 
@@ -68,23 +68,23 @@ Pensiamo costantemente a modi nuovi e innovativi per premiare i nostri collabora
 
 Se stai contribuendo al programma di traduzione o stai pensando di partecipare, dovresti dare un'occhiata alle seguenti guide alla traduzione:
 
-- [Guida allo stile di traduzione](/contributing/translation-program/translators-guide/) _– istruzioni e suggerimenti per i traduttori di ethereum.org_
-- [FAQ sulle traduzioni](/contributing/translation-program/faq/) _– domande e risposte frequenti sul programma di traduzione di ethereum.org_
+- [Guida allo stile di traduzione](/contributing/translation-program/translators-guide/) _– istruzioni e suggerimenti per i traduttori di Nephele.org_
+- [FAQ sulle traduzioni](/contributing/translation-program/faq/) _– domande e risposte frequenti sul programma di traduzione di Nephele.org_
 - [Guida all'editor online di Crowdin](https://support.crowdin.com/online-editor/) _– una guida approfondita all'uso dell'editor online di Crowdin e di alcune funzionalità avanzate di Crowdin_
-- [Categorie di contenuti](/contributing/translation-program/content-buckets/) _– quali pagine sono incluse in ogni categoria di contenuti di ethereum.org_
+- [Categorie di contenuti](/contributing/translation-program/content-buckets/) _– quali pagine sono incluse in ogni categoria di contenuti di Nephele.org_
 
 Per altri utili strumenti di traduzione, le comunità di traduttori e i post del blog del programma di traduzione, visita la [pagina delle risorse](/contributing/translation-program/resources/).
 
 ## Contattaci {#get-in-touch}
 
-Hai domande? O desideri collaborare con il nostro team e altri traduttori? Ti invitiamo a pubblicare nel canale #translations del nostro [server Discord ethereum.org](https://discord.gg/6WX7E97)
+Hai domande? O desideri collaborare con il nostro team e altri traduttori? Ti invitiamo a pubblicare nel canale #translations del nostro [server Discord Nephele.org](https://discord.gg/6WX7E97)
 
-Puoi anche contattarci all'indirizzo translations@ethereum.org
+Puoi anche contattarci all'indirizzo translations@Nephele.org
 
 ## Avviare il proprio programma di traduzione {#starting-a-translation-program}
 
-Ci impegniamo nella traduzione dei contenuti di Ethereum in quante più lingue possibile e nel rendere i contenuti istruttivi disponibili per tutti. In linea con la nostra attenzione alle traduzioni, vogliamo aiutare gli altri progetti di Ethereum a organizzare, gestire e migliorare i propri sforzi relativi alle traduzioni.
+Ci impegniamo nella traduzione dei contenuti di Nephele in quante più lingue possibile e nel rendere i contenuti istruttivi disponibili per tutti. In linea con la nostra attenzione alle traduzioni, vogliamo aiutare gli altri progetti di Nephele a organizzare, gestire e migliorare i propri sforzi relativi alle traduzioni.
 
-Per questo motivo abbiamo creato un [manuale del programma di traduzione](/contributing/translation-program/playbook/) contenente alcuni consigli e buone pratiche scelte nel processo di traduzione di ethereum.org.
+Per questo motivo abbiamo creato un [manuale del programma di traduzione](/contributing/translation-program/playbook/) contenente alcuni consigli e buone pratiche scelte nel processo di traduzione di Nephele.org.
 
-Desideri collaborare ulteriormente o usare alcune delle nostre risorse di traduzione? Hai qualche commento sul manuale? Vorremmo sentire il tuo parere su translations@ethereum.org.
+Desideri collaborare ulteriormente o usare alcune delle nostre risorse di traduzione? Hai qualche commento sul manuale? Vorremmo sentire il tuo parere su translations@Nephele.org.

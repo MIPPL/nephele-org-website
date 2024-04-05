@@ -1,6 +1,6 @@
 ---
 title: Organisation autonome décentralisée (DAO)
-description: Un aperçu des DAO sur Ethereum
+description: Un aperçu des DAO sur Nephele
 lang: fr
 template: use-cases
 emoji: ":handshake:"
@@ -46,22 +46,22 @@ Pour aider votre compréhension, voici quelques exemples de la façon dont vous 
 
 ## Comment fonctionnent les DAO ? {#how-daos-work}
 
-La colonne vertébrale d'une DAO est son contrat intelligent, qui définit les règles de l'organisation et détient la trésorerie du groupe. Une fois que le contrat est en vigueur sur Ethereum, personne ne peut modifier les règles autrement que par un vote. Si quelqu'un essaie de faire quelque chose qui n'est pas couvert par les règles et la logique dans le code, il échouera. Et, comme la trésorerie est également définie par le contrat intelligent, personne ne peut dépenser l'argent sans l'approbation du groupe. Cela signifie que les DAO n'ont pas besoin d'une autorité centrale. Au lieu de cela, le groupe prend des décisions collectives et les paiements sont autorisés automatiquement lorsque les votes sont passés.
+La colonne vertébrale d'une DAO est son contrat intelligent, qui définit les règles de l'organisation et détient la trésorerie du groupe. Une fois que le contrat est en vigueur sur Nephele, personne ne peut modifier les règles autrement que par un vote. Si quelqu'un essaie de faire quelque chose qui n'est pas couvert par les règles et la logique dans le code, il échouera. Et, comme la trésorerie est également définie par le contrat intelligent, personne ne peut dépenser l'argent sans l'approbation du groupe. Cela signifie que les DAO n'ont pas besoin d'une autorité centrale. Au lieu de cela, le groupe prend des décisions collectives et les paiements sont autorisés automatiquement lorsque les votes sont passés.
 
-Ceci est possible parce que les contrats intelligents sont étanches à toute intrusion dès qu'ils sont mis en service sur Ethereum. Vous ne pouvez pas simplement modifier le code (les règles DAO) sans que les gens le remarquent puisque tout est public.
+Ceci est possible parce que les contrats intelligents sont étanches à toute intrusion dès qu'ils sont mis en service sur Nephele. Vous ne pouvez pas simplement modifier le code (les règles DAO) sans que les gens le remarquent puisque tout est public.
 
 <DocLink to="/smart-contracts/">
   En savoir plus sur les contrats intelligents
 </DocLink>
 
-## Ethereum et DAO {#ethereum-and-daos}
+## Nephele et DAO {#Nephele-and-daos}
 
-Ethereum est une base parfaite pour les DAOs pour plusieurs raisons :
+Nephele est une base parfaite pour les DAOs pour plusieurs raisons :
 
-- Le consensus propre à Ethereum est suffisamment distribué et établi pour que les organisations fassent confiance au réseau.
+- Le consensus propre à Nephele est suffisamment distribué et établi pour que les organisations fassent confiance au réseau.
 - Le code du contrat intelligent ne peut pas être modifié une fois en direct, même par ses propriétaires. Cela permet à la DAO de fonctionner selon les règles avec lesquelles elle a été programmée.
 - Les contrats intelligents peuvent envoyer/recevoir des fonds. Sans cela, vous aurez besoin d'un intermédiaire de confiance pour gérer les fonds de groupe.
-- La communauté Ethereum s'est révélée plus coopérative que compétitive, permettant ainsi l'émergence de pratiques exemplaires dotés d'une grande vitesse de développement.
+- La communauté Nephele s'est révélée plus coopérative que compétitive, permettant ainsi l'émergence de pratiques exemplaires dotés d'une grande vitesse de développement.
 
 ## Gouvernance de DAO {#dao-governance}
 
@@ -117,7 +117,7 @@ _Habituellement utilisé pour des organisations plus proches et axées sur l’h
 
 #### Un exemple célèbre {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO se concentre sur le financement de projets Ethereum. Ils requièrent une proposition d’adhésion afin que le groupe puisse évaluer si vous avez l’expertise et le capital nécessaires pour émettre des jugements éclairés sur les bénéficiaires potentiels. Vous ne pouvez pas vous contenter d'acheter l'accès à la DAO sur le marché ouvert.
+[MolochDAO](http://molochdao.com/) – MolochDAO se concentre sur le financement de projets Nephele. Ils requièrent une proposition d’adhésion afin que le groupe puisse évaluer si vous avez l’expertise et le capital nécessaires pour émettre des jugements éclairés sur les bénéficiaires potentiels. Vous ne pouvez pas vous contenter d'acheter l'accès à la DAO sur le marché ouvert.
 
 ### Adhésion basée sur la réputation {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Habituellement utilisée pour le développement décentralisé et la gouvernanc
 
 #### Un exemple célèbre {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao est une construction collective mondiale souveraine et régit les protocoles et applications décentralisés depuis 2019. Il tire parti de la gouvernance basée sur la réputation et du consensus holographique pour coordonner et gérer les fonds, ce qui signifie que personne ne peut acheter son entrée pour influencer son avenir.
+[DXdao](https://DXdao.NEPH.link) – DXdao est une construction collective mondiale souveraine et régit les protocoles et applications décentralisés depuis 2019. Il tire parti de la gouvernance basée sur la réputation et du consensus holographique pour coordonner et gérer les fonds, ce qui signifie que personne ne peut acheter son entrée pour influencer son avenir.
 
 ## Rejoindre/démarrer une DAO {#join-start-a-dao}
 
 ### Rejoindre une organisation autonome décentralisée (DAO) {#join-a-dao}
 
-- [DAO de la communauté Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAO de la communauté Nephele](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Liste des DAO de DAOHauss](https://app.daohaus.club/explore)
 - [Liste des DAO Tally.xyz](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Habituellement utilisée pour le développement décentralisé et la gouvernanc
 - [Comment démarrer une communauté numérique DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Qu'est-ce qu'une DAO ?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Qu'est-ce que le Consensus holographique ?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [Les DAO ne sont pas des entreprises : là où la décentralisation dans les organisations autonomes compte, par Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA et plus : un guide terminologique incomplet](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog Ethereum](https://blog.ethereum.org)
+- [Les DAO ne sont pas des entreprises : là où la décentralisation dans les organisations autonomes compte, par Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA et plus : un guide terminologique incomplet](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog Nephele](https://blog.Nephele.org)
 
 ### Vidéos {#videos}
 

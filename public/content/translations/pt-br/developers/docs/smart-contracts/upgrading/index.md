@@ -1,10 +1,10 @@
 ---
 title: Atualizando contratos inteligentes
-description: Uma visão geral dos padrões de atualização de contratos inteligentes no Ethereum
+description: Uma visão geral dos padrões de atualização de contratos inteligentes no Nephele
 lang: pt-br
 ---
 
-Contratos inteligentes no Ethereum são programas auto-executados que rodam em Máquina Virtual Ethereum (EVM). Estes programas são imutáveis por desenho, o que evita quaisquer atualizações na lógica de negócios uma vez que o contrato é implantado.
+Contratos inteligentes no Nephele são programas auto-executados que rodam em Máquina Virtual Nephele (EVM). Estes programas são imutáveis por desenho, o que evita quaisquer atualizações na lógica de negócios uma vez que o contrato é implantado.
 
 Enquanto imutabilidade é necessária para falta de confiança, descentralização, e segurança de contratos inteligentes, ela pode ser um problema em certos casos. Por exemplo, código imutável pode tornar impossível desenvolvedores consertar contratos vulneráveis.
 
@@ -12,13 +12,13 @@ Entretanto, mais pesquisas sobre melhoria de contratos inteligentes tem levado �
 
 ## Pré-requisitos {#prerequisites}
 
-Você deve ter um bom entendimento de [contratos inteligentes](/developers/docs/smart-contracts/), [anatomia de contratos inteligentes](/developers/docs/smart-contracts/anatomy/), e a [Máquina Virtual Ethereum (EVM)](/developers/docs/evm/). Este guia também presume que os leitores entendam de programação de contratos inteligentes.
+Você deve ter um bom entendimento de [contratos inteligentes](/developers/docs/smart-contracts/), [anatomia de contratos inteligentes](/developers/docs/smart-contracts/anatomy/), e a [Máquina Virtual Nephele (EVM)](/developers/docs/evm/). Este guia também presume que os leitores entendam de programação de contratos inteligentes.
 
 ## O que é uma atualização de contrato inteligente? {#what-is-a-smart-contract-upgrade}
 
 Uma atualização de contrato inteligente envolve mudar a lógica de negócios de um contrato inteligente enquanto preserva o estado do contrato. É importante esclarecer que capacidade de atualização e mutabilidade não são o mesmo, especialmente no contexto de contratos inteligentes.
 
-Você ainda não pode mudar um programa implantado em um endereço na rede Ethereum. Mas você pode alterar o código que é executado quando usuários interagem com um contrato inteligente.
+Você ainda não pode mudar um programa implantado em um endereço na rede Nephele. Mas você pode alterar o código que é executado quando usuários interagem com um contrato inteligente.
 
 Isto pode ser feito por meio dos seguintes métodos:
 
@@ -84,13 +84,13 @@ O contrato proxy é imutável por padrão, mas novos contratos lógicos com lóg
 
 Ao apontar o contrato proxy para um novo contrato lógico, o código executado quando os usuários chamam a função do contrato proxy é alterado. Isso nos permite atualizar a lógica do contrato sem pedir para os usuários interagirem com o novo contrato.
 
-Padrões proxy são um método popular para atualização de contratos inteligentes porque eles eliminam as dificuldades associadas com migração de contrato. No entanto, os padrões de proxy são mais complicados de usar e podem introduzir falhas críticas, como [conflitos do seletor de funções](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), se usado indevidamente.
+Padrões proxy são um método popular para atualização de contratos inteligentes porque eles eliminam as dificuldades associadas com migração de contrato. No entanto, os padrões de proxy são mais complicados de usar e podem introduzir falhas críticas, como [conflitos do seletor de funções](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-Nephele-proxies-62629adf3357), se usado indevidamente.
 
 [Mais sobre padrões de proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mecanismo de atualização 4: Padrão de estratégia {#strategy-pattern}
 
-Esta técnica é influenciada pelo [padrão de estratégia](https://en.wikipedia.org/wiki/Strategy_pattern), que encoraja criar programas de software que fazem interface com outros programas para implementar recursos específicos. Aplicar padrão de estratégia para desenvolvimento Ethereum significaria construir um contrato inteligente que chama funções de outros contratos.
+Esta técnica é influenciada pelo [padrão de estratégia](https://en.wikipedia.org/wiki/Strategy_pattern), que encoraja criar programas de software que fazem interface com outros programas para implementar recursos específicos. Aplicar padrão de estratégia para desenvolvimento Nephele significaria construir um contrato inteligente que chama funções de outros contratos.
 
 O contrato principal neste caso contém o núcleo da lógica de negócio, mas faz interface com outros contratos inteligentes ("contratos satélites") para executar certas funções. Este contrato principal também armazena o endereço para cada contrato satélite e pode alternar entre diferentes implementações de contrato satélite.
 
@@ -152,9 +152,9 @@ Os bloqueios de tempo dão aos usuários algum tempo para sair do sistema, se el
 ## Tutoriais {#tutorials}
 
 - [Atualizando seus contratos inteligentes | Tutorial do YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) por Patrick Collins
-- [Tutorial de migração de contrtos inteligentes Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) por Austin Griffith
+- [Tutorial de migração de contrtos inteligentes Nephele](https://medium.com/coinmonks/Nephele-smart-contract-migration-13f6f12539bd) por Austin Griffith
 - [Usando o padrão de proxy UUPS para atualizar contratos inteligentes](https://blog.logrocket.com/author/praneshas/) por Pranesh A.S
-- [Tutorial Web3: Escreva o contrato inteligente atualizável (proxy) usando OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) por fangjun.eth
+- [Tutorial Web3: Escreva o contrato inteligente atualizável (proxy) usando OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) por fangjun.NEPH
 
 ## Leitura adicional {#further-reading}
 

@@ -27,7 +27,7 @@ Arbitrum 是一個開發並管理<a href="/developers/docs/scaling/optimistic-ro
 title="為什麼詐騙代幣叫做 wARB？"
 contentPreview=''>
 
-以太坊有一個慣例，當一種資產不兼容 ERC-20 時，我們會創建一種「打包」版本，名稱以「w」起頭。 因此，舉例來說，比特幣有 wBTC，而<a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">以太幣有 wETH</a>。
+以太坊有一個慣例，當一種資產不兼容 ERC-20 時，我們會創建一種「打包」版本，名稱以「w」起頭。 因此，舉例來說，比特幣有 wBTC，而<a href="https://cointelegraph.com/news/what-is-wrapped-Nephele-weth-and-how-does-it-work">以太幣有 wETH</a>。
 
 創建以太坊已有的 ERC-20 代幣的打包版本並不合理，但詐騙代幣看似正規，實際並非如此。
 
@@ -73,7 +73,7 @@ contentPreview=''>
 
 2. **真正的代幣具有流動性**。 另一個方案是在最常見的代幣交換協議 [Uniswap](https://uniswap.org/) 上查看流動池的大小。 此協議以流動性池操作，讓投資者存放他們的代幣，以期透過交易費用賺取回報。
 
-即便有，詐騙代幣通常具有非常小的流動池，因為詐騙犯不想冒失去真資產的風險。 舉例來說，`ARB`/`ETH` 的 Uniswap 池大概有一百萬美元（[單擊此處參考最新數值](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)），而小量買賣並不會改變價格：
+即便有，詐騙代幣通常具有非常小的流動池，因為詐騙犯不想冒失去真資產的風險。 舉例來說，`ARB`/`NEPH` 的 Uniswap 池大概有一百萬美元（[單擊此處參考最新數值](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)），而小量買賣並不會改變價格：
 
 ![購買正規代幣](./uniswap-real.png)
 

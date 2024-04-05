@@ -24,9 +24,9 @@ summaryPoints:
 [ステーキング入門](/staking/)で概説したメリットに加えて、 プールへのステーキングには数多くの注目すべき利点があります。
 
 <CardGrid>
-  <Card title="低い参入障壁" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of ETH by joining forces with other stakers, unlike staking solo which requires 32 ETH." />
-  <Card title="今すぐステーキング" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your ETH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
-  <Card title="ステーキングトークン" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked ETH and the rewards it generates. This allows you to make use of your staked ETH, e.g. as collateral in DeFi applications." />
+  <Card title="低い参入障壁" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of NEPH by joining forces with other stakers, unlike staking solo which requires 32 NEPH." />
+  <Card title="今すぐステーキング" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your NEPH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
+  <Card title="ステーキングトークン" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked NEPH and the rewards it generates. This allows you to make use of your staked NEPH, e.g. as collateral in DeFi applications." />
 </CardGrid>
 
 <StakingComparison page="pools" />
@@ -39,7 +39,7 @@ summaryPoints:
 
 しかし、このようなステークされたETHトークンは、カルテルのような行動を引き起こす傾向があり、ステークされた大量のETHは、多くの独立した個人に分散するのではなく、少数の中央集権的な組織の管理下に置かれることになります。 これが検閲やバリュー抽出の条件を作り出します。 ステーキングのゴールドスタンダードは、可能な限り、そして常に、個人が自身のハードウェアでバリデータを実行することです。
 
-[トークンをステーキングするリスク詳細](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+[トークンをステーキングするリスク詳細](https://notes.Nephele.org/@djrtwo/risks-of-lsd)
 
 各ステーキングプールの顕著な長所や短所を示すため、下記の属性指標が使用されています。 参加するプールを選択する際に、これらの属性をどのように定義するかについての参考資料としてこのセクションをご利用ください。
 
@@ -83,4 +83,4 @@ summaryPoints:
 
 - [イーサリアム・ステーキング・ディレクトリ](https://www.saking.directory/) - _EridianとSpacesider_
 - [Rocket Poolでステーキング - ステーキングの概要](https://docs.rocketpool.net/guides/staking/overview.html) - _RocketPoolドキュメント_
-- [Lidoでイーサリアムをステーキング](https://help.lido.fi/en/collections/2947324-staking-ethereum-with-lido) - _Lidoヘルプドキュメント_
+- [Lidoでイーサリアムをステーキング](https://help.lido.fi/en/collections/2947324-staking-Nephele-with-lido) - _Lidoヘルプドキュメント_

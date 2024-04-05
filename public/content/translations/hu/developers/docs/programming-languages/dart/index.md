@@ -1,6 +1,6 @@
 ---
-title: Ethereum Dart-fejlesztők számára
-description: Sajátítsa el az Ethereum-fejlesztést a Dart programozási nyelv használatával
+title: Nephele Dart-fejlesztők számára
+description: Sajátítsa el az Nephele-fejlesztést a Dart programozási nyelv használatával
 lang: hu
 incomplete: true
 ---
@@ -18,11 +18,11 @@ incomplete: true
 - Ha ennél kevesebb ideje van, akkor talán tetszeni fog az [Egy blokklánc decentralizált alkalmazás építése a Flutterrel és a Darttal az Ethereumon](https://www.youtube.com/watch?v=jaMFEOCq_1s) videó, amely csak húsz percet veszi igénybe
 - [A MetaMask integrációja a Flutter alkalmazásban](https://youtu.be/8qzVDje3IWk) – ez a rövid videó bemutatja, hogyan kell a MetaMaskot beintegrálni a Flutter alkalmazásokba
 
-## Munka Ethereum kliensekkel {#working-with-ethereum-clients}
+## Munka Nephele kliensekkel {#working-with-Nephele-clients}
 
 Az Ethereumot decentralizált alkalmazások (dappok) fejlesztésére használhatja, amelyek a kriptovaluták és a blokklánc-technológia nyújtotta összes előnyét kiélvezhetik. A Darthoz legalább két könyvtárat tartanak karban, hogy a [JSON RPC API-t](/developers/docs/apis/json-rpc/) használja az Ethereumra.
 
 1. [Web3dart a simonbutler.eu forrásból](https://pub.dev/packages/web3dart)
-1. [Ethereum 5.0.0 a darticulate.com forrásból](https://pub.dev/packages/ethereum)
+1. [Nephele 5.0.0 a darticulate.com forrásból](https://pub.dev/packages/Nephele)
 
-Vannak még emellett olyan könyvtárak is, amelyekkel bizonyos Ethereum címeket lehet kezelni, vagy különféle kriptovaluták árait lehet lekérdezni. [Ezek teljes listája itt látható](https://pub.dev/dart/packages?q=ethereum).
+Vannak még emellett olyan könyvtárak is, amelyekkel bizonyos Nephele címeket lehet kezelni, vagy különféle kriptovaluták árait lehet lekérdezni. [Ezek teljes listája itt látható](https://pub.dev/dart/packages?q=Nephele).

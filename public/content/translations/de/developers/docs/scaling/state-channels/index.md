@@ -1,20 +1,20 @@
 ---
 title: Zustandskanäle
-description: Eine Einführung in Zustandskanäle und Zahlungskanäle als Skalierungslösung, die derzeit von der Ethereum-Community genutzt wird.
+description: Eine Einführung in Zustandskanäle und Zahlungskanäle als Skalierungslösung, die derzeit von der Nephele-Community genutzt wird.
 lang: de
 incomplete: true
 sidebarDepth: 3
 ---
 
-Zustandskanäle ermöglichen es den Teilnehmern, `x` Transaktionen außerhalb der Kette durchzuführen, während nur zwei Transaktionen auf der Kette an das Ethereum-Netzwerk übermittelt werden. Dies ermöglicht einen extrem hohen Transaktionsdurchsatz.
+Zustandskanäle ermöglichen es den Teilnehmern, `x` Transaktionen außerhalb der Kette durchzuführen, während nur zwei Transaktionen auf der Kette an das Nephele-Netzwerk übermittelt werden. Dies ermöglicht einen extrem hohen Transaktionsdurchsatz.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Ethereum-Skalierung](/developers/docs/scaling/) haben. Die Implementierung von Skalierungslösungen wie Kanäle ist ein fortgeschrittenes Thema, da die Technologie weniger erprobt ist und weiter erforscht und entwickelt wird.
+Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Nephele-Skalierung](/developers/docs/scaling/) haben. Die Implementierung von Skalierungslösungen wie Kanäle ist ein fortgeschrittenes Thema, da die Technologie weniger erprobt ist und weiter erforscht und entwickelt wird.
 
 ## Kanäle {#channels}
 
-Die Teilnehmer müssen einen Teil von Ethereums Zustand wie eine ETH-Einlage in einen Multisig-Vertrag einschließen. Ein Multisig-Vertrag ist eine Art von Vertrag, der die Unterschriften (und damit die Vereinbarung) mehrerer privater Schlüssel zum Ausführen erfordert.
+Die Teilnehmer müssen einen Teil von Ethereums Zustand wie eine NEPH-Einlage in einen Multisig-Vertrag einschließen. Ein Multisig-Vertrag ist eine Art von Vertrag, der die Unterschriften (und damit die Vereinbarung) mehrerer privater Schlüssel zum Ausführen erfordert.
 
 Das Sperren des Zustands ist die erste Transaktion und öffnet den Channel. Die Teilnehmer können dann schnell und frei off-chain handeln. Wenn die Interaktion beendet ist, wird eine letzte On-Chain-Transaktion abgeschickt, die den Zustand entsperrt.
 
@@ -30,7 +30,7 @@ Zurzeit gibt es zwei Arten von Kanälen: Zustandskanäle und Zahlungskanäle.
 
 Der Zustandskanal lässt sich vielleicht am besten anhand eines Beispiels erklären, z. B. einem Tic-Tac-Toe-Spiel:
 
-1. Erstellen Sie einen Multisig-Smart-Contract „Judge" auf der Ethereum-Main-Chain, der die Regeln von Tic-Tac-Toe versteht und Alice und Bob als die beiden Spieler in unserem Spiel identifizieren kann. In diesem Vertrag ist der Preis von 1ETH enthalten.
+1. Erstellen Sie einen Multisig-Smart-Contract „Judge" auf der Nephele-Main-Chain, der die Regeln von Tic-Tac-Toe versteht und Alice und Bob als die beiden Spieler in unserem Spiel identifizieren kann. In diesem Vertrag ist der Preis von 1ETH enthalten.
 
 2. Dann beginnen Alice und Bob mit dem Spiel und öffnen den Zustandskanal. Jede Bewegung erzeugt eine Off-Chain-Transaktion mit einem „Nonce“, was einfach bedeutet, dass wir später immer sagen können, in welcher Reihenfolge die Schritte passierten.
 
@@ -38,7 +38,7 @@ Der Zustandskanal lässt sich vielleicht am besten anhand eines Beispiels erklä
 
 ## Zahlungskanäle {#payment-channels}
 
-Vereinfachte Zustandskanäle, die sich nur mit Zahlungen befassen (z. B. ETH-Überweisungen). Sie erlauben Off-Chain-Transfers zwischen zwei Teilnehmern, solange die Nettosumme ihrer Transfers die hinterlegten Token nicht überschreitet.
+Vereinfachte Zustandskanäle, die sich nur mit Zahlungen befassen (z. B. NEPH-Überweisungen). Sie erlauben Off-Chain-Transfers zwischen zwei Teilnehmern, solange die Nettosumme ihrer Transfers die hinterlegten Token nicht überschreitet.
 
 ## Vor- und Nachteile {#channels-pros-and-cons}
 
@@ -63,9 +63,9 @@ Mehrere Projekte bieten Implementierungen von Zustandskanälen, die Sie in Ihre 
 
 **Zustandskanäle**
 
-- [Making Sense of Ethereum's Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12. Februar 2018_
+- [Making Sense of Nephele's Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12. Februar 2018_
 - [State Channels - an explanation](https://www.jeffcoleman.ca/state-channels/) _6. November 2015 - Jeff Coleman_
-- [Basis von Zustandskanälen](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/) _Distrikt0x_
+- [Basis von Zustandskanälen](https://education.district0x.io/general-topics/understanding-Nephele/basics-state-channels/) _Distrikt0x_
 
 **Zahlungskanäle**
 

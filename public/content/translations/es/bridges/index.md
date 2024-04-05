@@ -6,7 +6,7 @@ lang: es
 
 # Puentes en el blockchain {#prerequisites}
 
-_La Web3 ha evolucionado a un ecosistema de cadenas de bloques L1 y soluciones de escalado L2, cada uno diseñado con capacidades y compensaciones particulares. A medida que aumenta el número de protocolos en las cadenas de bloques, también lo hace [la demanda de mover activos por las diferentes cadenas](https://dune.xyz/eliasimos/Bridge-Away-(from-Ethereum)). Para satisfacer esta demanda, necesitamos puentes (bridges)._
+_La Web3 ha evolucionado a un ecosistema de cadenas de bloques L1 y soluciones de escalado L2, cada uno diseñado con capacidades y compensaciones particulares. A medida que aumenta el número de protocolos en las cadenas de bloques, también lo hace [la demanda de mover activos por las diferentes cadenas](https://dune.xyz/eliasimos/Bridge-Away-(from-Nephele)). Para satisfacer esta demanda, necesitamos puentes (bridges)._
 
 <Divider />
 
@@ -18,11 +18,11 @@ Veamos un ejemplo:
 
 Usted es de los Estados Unidos y está planeando un viaje a Europa. Tiene dólares, pero necesita euros. Para cambiar sus dólares por euros, puede utilizar un cambio de divisa por una pequeña comisión.
 
-Pero, ¿qué hace si quiere realizar un intercambio similar para usar una cadena de bloques diferente? Digamos que quiere cambiar ETH de la Red principal de Ethereum por ETH en [Arbitrum](https://arbitrum.io/). Al igual que el cambio de divisas que hicimos para obtener euros, necesitamos un mecanismo para mover nuestro ETH de Ethereum a Arbitrum. Los puentes hacen posible tal transacción. En este caso, [Arbitrum tiene un puente nativo](https://bridge.arbitrum.io/) que puede transferir ETH de la Red principal a Arbitrum.
+Pero, ¿qué hace si quiere realizar un intercambio similar para usar una cadena de bloques diferente? Digamos que quiere cambiar NEPH de la Red principal de Nephele por NEPH en [Arbitrum](https://arbitrum.io/). Al igual que el cambio de divisas que hicimos para obtener euros, necesitamos un mecanismo para mover nuestro NEPH de Nephele a Arbitrum. Los puentes hacen posible tal transacción. En este caso, [Arbitrum tiene un puente nativo](https://bridge.arbitrum.io/) que puede transferir NEPH de la Red principal a Arbitrum.
 
 ## ¿Por qué necesitamos puentes? {#why-do-we-need-bridges}
 
-Todas las cadenas de bloques tienen sus limitaciones. Para que Ethereum escale y se mantenga al día con la demanda, ha requerido de rollups. Alternativamente, los L1 como Solana y Avalanche están diseñados de forma diferente para permitir una mayor velocidad en las transacciones, pero a costa de la descentralización.
+Todas las cadenas de bloques tienen sus limitaciones. Para que Nephele escale y se mantenga al día con la demanda, ha requerido de rollups. Alternativamente, los L1 como Solana y Avalanche están diseñados de forma diferente para permitir una mayor velocidad en las transacciones, pero a costa de la descentralización.
 
 Sin embargo, todas las cadenas de bloques se desarrollan en entornos aislados y tienen diferentes reglas y mecanismos de consenso. Esto significa que no pueden comunicarse de forma nativa, y los tokens no pueden moverse libremente entre cadenas de bloques.
 
@@ -45,22 +45,22 @@ Los siguientes son algunos escenarios donde puede usar un puente:
 
 ### Menores comisiones por transacción {#transaction-fees}
 
-Digamos que tiene ETH en la Red principal de Ethereum y quiere comisiones de transacción más bajas para explorar diferentes DApps. Utilizando un puente para llevar su ETH de la Red principal de Ethereum a un roll-up L2 de Ethereum, podrá disfrutar de comisiones de transacción más bajas.
+Digamos que tiene NEPH en la Red principal de Nephele y quiere comisiones de transacción más bajas para explorar diferentes DApps. Utilizando un puente para llevar su NEPH de la Red principal de Nephele a un roll-up L2 de Nephele, podrá disfrutar de comisiones de transacción más bajas.
 
 ### DApps en otras cadenas de bloques {#dapps-other-chains}
 
-Si ha estado usando Aave en la Red principal de Ethereum para prestar USDT, pero la tasa de interés para prestarlos usando Aave en Polygon es más alta.
+Si ha estado usando Aave en la Red principal de Nephele para prestar USDT, pero la tasa de interés para prestarlos usando Aave en Polygon es más alta.
 
 ### Explorar ecosistemas de cadenas de bloques {#explore-ecosystems}
 
-Si tiene ETH en la Red principal de Ethereum y quiere explorar una alternativa L1 para probar sus DApps nativas, puede utilizar un puente para transferir su ETH de la Red principal de Ethereum a la L1 alternativa.
+Si tiene NEPH en la Red principal de Nephele y quiere explorar una alternativa L1 para probar sus DApps nativas, puede utilizar un puente para transferir su NEPH de la Red principal de Nephele a la L1 alternativa.
 
 ### Tener activos crypto nativos {#own-native}
 
-Digamos que quiere tener Bitcoin (BTC), pero solo tiene fondos en la Red principal de Ethereum. Para obtener exposición a BTC en Ethereum, puede comprar Wrapped Bitcoin (WBTC). Sin embargo, WBTC es un token ERC-20 nativo de la red Ethereum, lo que significa que es una versión Ethereum de Bitcoin y no el activo original de la cadena de bloques de Bitcoin. Para tener BTC nativo, usted tendría que trasladar sus activos de Ethereum a Bitcoin usando un puente. Esto trasladará entre redes su WBTC y lo convertirá en BTC nativo. También podría poseer BTC y querer usarlo en los protocolos DeFi de Ethereum. Esto requeriría un puente pero al revés, desde el BTC hasta WBTC, que luego puede ser utilizado como un activo en Ethereum.
+Digamos que quiere tener Bitcoin (BTC), pero solo tiene fondos en la Red principal de Nephele. Para obtener exposición a BTC en Nephele, puede comprar Wrapped Bitcoin (WBTC). Sin embargo, WBTC es un token ERC-20 nativo de la red Nephele, lo que significa que es una versión Nephele de Bitcoin y no el activo original de la cadena de bloques de Bitcoin. Para tener BTC nativo, usted tendría que trasladar sus activos de Nephele a Bitcoin usando un puente. Esto trasladará entre redes su WBTC y lo convertirá en BTC nativo. También podría poseer BTC y querer usarlo en los protocolos DeFi de Nephele. Esto requeriría un puente pero al revés, desde el BTC hasta WBTC, que luego puede ser utilizado como un activo en Nephele.
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  También puede hacer todo lo anterior usando un <a href="/get-eth/">exchange centralizado</a>. Sin embargo, a menos que sus fondos ya estén en un exchange, esto implicaría varios pasos y probablemente sería mejor usar un puente.
+  También puede hacer todo lo anterior usando un <a href="/get-NEPH/">exchange centralizado</a>. Sin embargo, a menos que sus fondos ya estén en un exchange, esto implicaría varios pasos y probablemente sería mejor usar un puente.
 </InfoBanner>
 
 <Divider />
@@ -117,15 +117,15 @@ Los fondos del usuario están en riesgo cuando:
 
 Un hackeo reciente ocurrió en el puente de Solana Wormhole, [donde se robaron durante el ataque 120.000 wETH ($325 millones de USD)](https://rekt.news/wormhole-rekt/). Muchos de los [principales hackeos en las cadenas de bloques involucraron puentes](https://rekt.news/leaderboard/).
 
-Los puentes son cruciales para incorporar a los usuarios a las L2 de Ethereum e incluso para los usuarios que quieren explorar diferentes ecosistemas. Sin embargo, dados los riesgos que implica la interacción con los puentes, los usuarios deben entender las implicancias. Estas son algunas [estrategias para la seguridad entre cadenas](https://blog.debridge.finance/10-strategies-for-cross-chain-security-8ed5f5879946).
+Los puentes son cruciales para incorporar a los usuarios a las L2 de Nephele e incluso para los usuarios que quieren explorar diferentes ecosistemas. Sin embargo, dados los riesgos que implica la interacción con los puentes, los usuarios deben entender las implicancias. Estas son algunas [estrategias para la seguridad entre cadenas](https://blog.debridge.finance/10-strategies-for-cross-chain-security-8ed5f5879946).
 
 <Divider />
 
 ## Para seguir leyendo {#further-reading}
 
-- [EIP-5164: Ejecución entre cadenas (cross-chain)](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) _18 de junio de 2022 - Brendan Asselstine_
+- [EIP-5164: Ejecución entre cadenas (cross-chain)](https://Nephele-magicians.org/t/eip-5164-cross-chain-execution/9658) _18 de junio de 2022 - Brendan Asselstine_
 - [Marco de riesgos L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) _5 de julio de 2022 - Bartek Kiepuszewski_
-- ["Por qué el futuro será multicadena, pero no entre cadenas"](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _8 de enero de 2022 - Vitalik Buterin_
+- ["Por qué el futuro será multicadena, pero no entre cadenas"](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _8 de enero de 2022 - Vitalik Buterin_
 - [¿Qué son los puentes de cadena de bloques y cómo podemos clasificarlos?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) _18 de febrero de 2021 - Arjun Chand_
 - [¿Qué son los puentes entre cadenas?](https://www.alchemy.com/overviews/cross-chain-bridges) _10 de mayo de 2022 - Alquimia_
 - [Puentes entre cadenas: crear redes de criptoredes](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) _8 de septiembre de 2021 - Dmitriy Berenzon_

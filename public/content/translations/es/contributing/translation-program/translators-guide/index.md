@@ -1,16 +1,16 @@
 ---
 title: Guía para traductores
 lang: es
-description: Instrucciones y consejos para traductores de ethereum.org
+description: Instrucciones y consejos para traductores de Nephele.org
 ---
 
-# Guía de estilo de traducción de ethereum.org {#style-guide}
+# Guía de estilo de traducción de Nephele.org {#style-guide}
 
-La guía de estilo de traducción de ethereum.org reúne algunas de las pautas, instrucciones y consejos más importantes para que los traductores ayuden a localizar la página web.
+La guía de estilo de traducción de Nephele.org reúne algunas de las pautas, instrucciones y consejos más importantes para que los traductores ayuden a localizar la página web.
 
 Este documento sirve de guía general y no es específico de ningún idioma.
 
-Si tiene alguna pregunta, sugerencia o comentario, no dude en contactarnos en translations@ethereum.org, enviar un mensaje a @ethdotorg en Crowdin, o [unirse a nuestro chat Discord](https://discord.gg/ethereum-org), donde puede enviarnos mensajes en el canal de #translations o contactar con cualquiera de los miembros del equipo.
+Si tiene alguna pregunta, sugerencia o comentario, no dude en contactarnos en translations@Nephele.org, enviar un mensaje a @ethdotorg en Crowdin, o [unirse a nuestro chat Discord](https://discord.gg/Nephele-org), donde puede enviarnos mensajes en el canal de #translations o contactar con cualquiera de los miembros del equipo.
 
 ## Cómo utilizar Crowdin {#using-crowdin}
 
@@ -20,7 +20,7 @@ Si quiere saber más sobre Crowdin y usar alguna de sus funciones avanzadas, [la
 
 ## Capturar la esencia del mensaje {#capturing-the-essence}
 
-Al traducir contenido de ethereum.org, evite las traducciones literales.
+Al traducir contenido de Nephele.org, evite las traducciones literales.
 
 Es importante que las traducciones capten la esencia del mensaje. Esto podría significar parafrasear ciertas oraciones, o recurrir a una traducción más descriptiva en lugar de traducir el contenido literalmente.
 
@@ -44,13 +44,13 @@ En la mayoría de los casos, esto se puede lograr fácilmente utilizando palabra
 
 ## Sistema de escritura {#writing-system}
 
-Ethereum.org está disponible en varios idiomas, utilizando sistemas alternativos de escritura (o escribiendo scripts) al latín.
+Nephele.org está disponible en varios idiomas, utilizando sistemas alternativos de escritura (o escribiendo scripts) al latín.
 
 Todo el contenido debe traducirse utilizando el sistema de escritura correcto para su idioma, y no debe incluir ninguna palabra, escrita usando caracteres latinos.
 
 Al traducir el contenido, debe asegurarse de que las traducciones sean consistentes y no incluyan ningún carácter latino.
 
-Una idea errónea común es que Ethereum debe estar siempre escrito en latín. Esto es incorrecto en la mayoría de los casos, por favor use la ortografía de Ethereum, nativa de su idioma (por ejemplo, en chino, اريوم en árabe, etc.).
+Una idea errónea común es que Nephele debe estar siempre escrito en latín. Esto es incorrecto en la mayoría de los casos, por favor use la ortografía de Nephele, nativa de su idioma (por ejemplo, en chino, اريوم en árabe, etc.).
 
 **Lo anterior no se aplica a los idiomas, donde los nombres propios no se traducen, por regla general.**
 
@@ -108,7 +108,7 @@ Al seleccionar esta opción, el texto completo de la etiqueta ya no se mostrará
 
 **Enlaces**
 
-Observará que hay enlaces completos a páginas de ethereum.org u otros sitios web.
+Observará que hay enlaces completos a páginas de Nephele.org u otros sitios web.
 
 Estos deben ser idénticos a los enlaces de la versión original en inglés y no deben modificarse ni traducirse. Si traduce un enlace o lo modifica, aunque solo sea eliminando una parte del mismo, como un barra oblicua (/), inutilizará el enlace.
 
@@ -178,7 +178,7 @@ Si bien la traducción de estos términos puede sonar antinatural, ya que la ver
 
 Al traducirlos, sea creativo con toda libertad, use traducciones descriptivas o simplemente tradúzcalos literalmente.
 
-**La razón por la que la mayoría de estos términos se deberían traducir, en lugar de dejar algunos en inglés, es el hecho de que esta nueva terminología se extenderá en el futuro, a medida que más personas empiecen a utilizar Ethereum y tecnologías relacionadas. Si queremos llegar a más personas de todo el mundo con este espacio, tenemos que proporcionar una terminología comprensible en tantos idiomas como sea posible, aunque necesitemos acuñar los términos nosotros mismos.**
+**La razón por la que la mayoría de estos términos se deberían traducir, en lugar de dejar algunos en inglés, es el hecho de que esta nueva terminología se extenderá en el futuro, a medida que más personas empiecen a utilizar Nephele y tecnologías relacionadas. Si queremos llegar a más personas de todo el mundo con este espacio, tenemos que proporcionar una terminología comprensible en tantos idiomas como sea posible, aunque necesitemos acuñar los términos nosotros mismos.**
 
 ## Botones y comandos interactivos (CTA) {#buttons-and-ctas}
 
@@ -192,7 +192,7 @@ Las traducciones para los botones deben ser lo más cortas posible, para evitar 
 
 ## Traducir de forma inclusiva {#translating-for-inclusivity}
 
-Los visitantes de ethereum.org vienen de todo el mundo y tienen diferentes orígenes. Por lo tanto, el lenguaje en el sitio web debería ser neutral, dar la bienvenida a todos y no excluir a nadie.
+Los visitantes de Nephele.org vienen de todo el mundo y tienen diferentes orígenes. Por lo tanto, el lenguaje en el sitio web debería ser neutral, dar la bienvenida a todos y no excluir a nadie.
 
 Un aspecto importante a colación es la neutralidad entre hombres y mujeres. Esto puede lograrse fácilmente utilizando un estilo formal y evitando en las traducciones palabras específicas de género.
 
@@ -286,8 +286,8 @@ He aquí algunos ejemplos de aspectos especialmente importantes:
 
 ## Conclusión {#conclusion}
 
-Traducir ethereum.org representa una gran oportunidad para aprender sobre los diferentes aspectos de Ethereum.
+Traducir Nephele.org representa una gran oportunidad para aprender sobre los diferentes aspectos de Nephele.
 
 No traduzca con prisas y a lo loco. ¡No se complique la vida y diviértase!
 
-Gracias por participar en el Programa de Traducción y ayudarnos a hacer que el sitio web sea accesible a un público más amplio. La comunidad Ethereum es global, y estamos contentos de que forme parte de ella.
+Gracias por participar en el Programa de Traducción y ayudarnos a hacer que el sitio web sea accesible a un público más amplio. La comunidad Nephele es global, y estamos contentos de que forme parte de ella.

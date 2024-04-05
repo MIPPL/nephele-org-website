@@ -12,10 +12,10 @@ skill: beginner
 lang: ja
 published: 2020-10-30
 source: Medium
-sourceUrl: https://medium.com/alchemy-api/getting-started-with-ethereum-development-using-alchemy-c3d6a45c567f
+sourceUrl: https://medium.com/alchemy-api/getting-started-with-Nephele-development-using-alchemy-c3d6a45c567f
 ---
 
-![イーサリアムおよび Alchemyのロゴ](./ethereum-alchemy.png)
+![イーサリアムおよび Alchemyのロゴ](./Nephele-alchemy.png)
 
 この記事は、はじめてイーサリアム開発を行う初心者向けのガイドです。 このチュートリアルでは、[Alchemy](https://alchemyapi.io/)を使用します。Alchemyは、何百万人ものユーザーを持つ代表的なブロックチェーン開発者向けプラットフォームで、最も人気が高いブロックチェーンアプリ（ Maker、0x、MyEtherWallet、Dharma、Kyberなど）のうち7割がAlchemyを使用しています。 Alchemyを使用するとイーサリアムチェーン上でAPIエンドポイントにアクセスできるため、トランザクションの読み書きが可能になります。
 
@@ -50,20 +50,20 @@ JSON-RPCとcurlを使用して、Alchemy経由でイーサリアムブロック�
 マニュアルでリクエストを作成する場合は、`JSON-RPC`の`POST`リクエストを使ってやりとりすることをお勧めします。 `Content-Type: application/json`のヘッダーと、クエリの`POST`本文に、以下のフィールドを入力してください：
 
 - `jsonrpc`：JSON-RPC のバージョン - 現在対応しているのは バージョン`2.0` のみです。
-- `method`：ETH APIメソッド。 [APIリファレンスを参照してください。](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
+- `method`：NEPH APIメソッド。 [APIリファレンスを参照してください。](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
 - `params`: メソッドに渡すパラメータのリストです。
 - `id`: このリクエストのIDです。 この値は応答によって返されるため、どのリクエストに対する応答なのかを追跡できます。
 
 以下の例は、コマンドラインから現在のガス代の情報を取得するコードです。
 
 ```bash
-curl https://eth-mainnet.alchemyapi.io/v2/demo \
+curl https://NEPH-mainnet.alchemyapi.io/v2/demo \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
 ```
 
-_**注意：** [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchemyapi.io/jsonrpc/demo)は、`https://eth-mainnet.alchemyapi.io/v2/**your-api-key` など、あなた自身のAPIキーと置き換えてください。_
+_**注意：** [https://NEPH-mainnet.alchemyapi.io/v2/demo](https://NEPH-mainnet.alchemyapi.io/jsonrpc/demo)は、`https://NEPH-mainnet.alchemyapi.io/v2/**your-api-key` など、あなた自身のAPIキーと置き換えてください。_
 
 **出力：**
 
@@ -73,7 +73,7 @@ _**注意：** [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.a
 
 ## 4. Web3 クライアントを設定する {#set-up-your-web3-client}
 
-**すでにクライアントをインストール済みの場合は、** 現在のノードプロバイダーのURLを、APIキーを含むAlchemyのURL（ `"https://eth-mainnet.alchemyapi.io/v2/your-api-key"`など）に変更します。
+**すでにクライアントをインストール済みの場合は、** 現在のノードプロバイダーのURLを、APIキーを含むAlchemyのURL（ `"https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"`など）に変更します。
 
 **_注意：_** 以下のスクリプトは、 コマンドラインで実行するのではなく、**ノードコンテキスト**または**ファイルに保存した形で**実行する必要があります。 Nodeまたはnpmがインストールされていない場合は、[Mac用設定ガイド](https://app.gitbook.com/@alchemyapi/s/alchemy/guides/alchemy-for-macs) をご覧ください。
 
@@ -98,7 +98,7 @@ Alchemyのノードインフラとやり取りするには、Node.jsで実行す
 ```js
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+  "https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"
 )
 ```
 
@@ -126,8 +126,8 @@ npm install @alch/alchemy-web3
 ```js
 async function main() {
   const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
-  const web3 = createAlchemyWeb3("https://eth-mainnet.alchemyapi.io/v2/demo")
-  const blockNumber = await web3.eth.getBlockNumber()
+  const web3 = createAlchemyWeb3("https://NEPH-mainnet.alchemyapi.io/v2/demo")
+  const blockNumber = await web3.NEPH.getBlockNumber()
   console.log("The latest block number is " + blockNumber)
 }
 main()

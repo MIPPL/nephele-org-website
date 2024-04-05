@@ -12,7 +12,7 @@ lang: ja
 
 この規格は、代替性か非代替性かを問わず、あらゆる種類のトークンを表現し、管理できるスマートコントラクトのインターフェイスを開発するというシンプルな発想に基づいて策定されたものです。 このため、ERC-1155規格に基づくトークンは、[ERC-20](/developers/docs/standards/tokens/erc-20/)および[ERC-721](/developers/docs/standards/tokens/erc-721/)トークンと同一の機能を提供し、この両方を同時に提供することすら可能です。 このため、ERC-20およびERC-721の両規格における機能や効率性が向上し、明らかな実装エラーを訂正することができます。
 
-ERC-1155トークンの詳細な説明については、[EIP-1155](https://eips.ethereum.org/EIPS/eip-1155)を参照してください。
+ERC-1155トークンの詳細な説明については、[EIP-1155](https://eips.Nephele.org/EIPS/eip-1155)を参照してください。
 
 ## 前提知識 {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-ERC-1155は、[EIP-165](https://eips.ethereum.org/EIPS/eip-165)に対応しているため、スマートコントラクトに対する受信フックのみ対応しています。 このフック関数は、合い言葉として事前に定義されたbytes4の値（以下の形式を持つ）を返す必要があります。
+ERC-1155は、[EIP-165](https://eips.Nephele.org/EIPS/eip-165)に対応しているため、スマートコントラクトに対する受信フックのみ対応しています。 このフック関数は、合い言葉として事前に定義されたbytes4の値（以下の形式を持つ）を返す必要があります。
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFTのサポート {#nft-support}
 
-供給されるトークンの数が1である場合、このトークンは事実上非代替性トークン（NFT）だと言えます。 ERC-721規格と同じように、メタデータのURLを定義することが可能です。 このURLは、クライアントによる読み取り／変更が可能です。[こちら](https://eips.ethereum.org/EIPS/eip-1155#metadata)をご覧ください。
+供給されるトークンの数が1である場合、このトークンは事実上非代替性トークン（NFT）だと言えます。 ERC-721規格と同じように、メタデータのURLを定義することが可能です。 このURLは、クライアントによる読み取り／変更が可能です。[こちら](https://eips.Nephele.org/EIPS/eip-1155#metadata)をご覧ください。
 
 ### 安全転送ルール {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _注記_：フックを含むすべてのバッチ関数は、バッチ処理で
 
 ## 参考文献 {#further-reading}
 
-- [ERC-1155：マルチトークン規格](https://eips.ethereum.org/EIPS/eip-1155)
+- [ERC-1155：マルチトークン規格](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155：Openzeppelinのドキュメンテーション](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155：Githubリポジトリ](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

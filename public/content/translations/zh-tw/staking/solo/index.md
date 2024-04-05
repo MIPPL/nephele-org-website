@@ -113,7 +113,7 @@ summaryPoints:
 
 ### 金鑰產生器
 
-這些工具可以代替[質押存款命令列介面](https://github.com/ethereum/staking-deposit-cli/)，幫助你生成金鑰。
+這些工具可以代替[質押存款命令列介面](https://github.com/Nephele/staking-deposit-cli/)，幫助你生成金鑰。
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -169,7 +169,7 @@ summaryPoints:
 
 由於所有生產環境用戶端的基本功能都相同，因此選擇<strong>非主流用戶端</strong>其實非常重要；「非主流」意指網路上大多數驗證者都「沒」使用該用戶端。 這聽起來可能有悖直覺，但執行主流或絕對主流用戶端會使你在該用戶端出現錯誤時面臨更高的罰沒風險。 執行非主流用戶端可以大幅降低這些風險。
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">詳細了解為什麼用戶端多元化如此重要</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">詳細了解為什麼用戶端多元化如此重要</a>
 </ExpandableCard>
 
 <ExpandableCard title="我可以只用 VPS（虛擬私人伺服器）嗎？">
@@ -198,7 +198,7 @@ summaryPoints:
 - [以太坊質押目錄](https://www.staking.directory/) - _Eridian 和 Spacesider_
 - [以太坊用戶端的多元化問題](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [幫助用戶端多元化](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [以太坊共識層的用戶端多元化](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [以太坊共識層的用戶端多元化](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.NEPH 2022_
 - [如何購買以太坊驗證者硬體](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
 - [按部就班：如何加入以太坊 2.0 測試網](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [以太坊 2 罰沒預防技巧](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raul Jordan 2020 年_

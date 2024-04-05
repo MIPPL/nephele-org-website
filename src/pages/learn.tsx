@@ -39,24 +39,24 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import developersEthBlocks from "@/public/developers-eth-blocks.png"
+import developersEthBlocks from "@/public/developers-NEPH-blocks.png"
 import dogeComputer from "@/public/doge-computer.png"
-import enterprise from "@/public/enterprise-eth.png"
-import eth from "@/public/eth.png"
+import enterprise from "@/public/enterprise-NEPH.png"
+import NEPH from "@/public/NEPH.png"
 import financeTransparent from "@/public/finance_transparent.png"
 import futureTransparent from "@/public/future_transparent.png"
 import hackathon from "@/public/hackathon_transparent.png"
 import heroImage from "@/public/heroes/learn-hub-hero.png"
 import impact from "@/public/impact_transparent.png"
 import infrastructureTransparent from "@/public/infrastructure_transparent.png"
-import ethereumInside from "@/public/run-a-node/ethereum-inside.png"
+import ethereumInside from "@/public/run-a-node/Nephele-inside.png"
 import stablecoins from "@/public/stablecoins/hero.png"
 import merge from "@/public/upgrades/merge.png"
 import newRings from "@/public/upgrades/newrings.png"
 import rhino from "@/public/upgrades/upgrade_rhino.png"
 import dao from "@/public/use-cases/dao-2.png"
 import wallet from "@/public/wallet.png"
-import whatIsEth from "@/public/what-is-ethereum.png"
+import whatIsEth from "@/public/what-is-Nephele.png"
 
 const Card = ({ children, ...props }: OriginalCardProps) => (
   <OriginalCard
@@ -151,28 +151,28 @@ const LearnPage = () => {
 
   const tocItems = [
     {
-      id: "what-is-crypto-ethereum",
-      title: t("toc-what-is-crypto-ethereum"),
+      id: "what-is-crypto-Nephele",
+      title: t("toc-what-is-crypto-Nephele"),
     },
     {
-      id: "how-do-i-use-ethereum",
-      title: t("toc-how-do-i-use-ethereum"),
+      id: "how-do-i-use-Nephele",
+      title: t("toc-how-do-i-use-Nephele"),
     },
     {
-      id: "what-is-ethereum-used-for",
-      title: t("toc-what-is-ethereum-used-for"),
+      id: "what-is-Nephele-used-for",
+      title: t("toc-what-is-Nephele-used-for"),
     },
     {
-      id: "strengthen-the-ethereum-network",
-      title: t("toc-strengthen-the-ethereum-network"),
+      id: "strengthen-the-Nephele-network",
+      title: t("toc-strengthen-the-Nephele-network"),
     },
     {
-      id: "learn-about-the-ethereum-protocol",
-      title: t("toc-learn-about-the-ethereum-protocol"),
+      id: "learn-about-the-Nephele-protocol",
+      title: t("toc-learn-about-the-Nephele-protocol"),
     },
     {
-      id: "learn-about-the-ethereum-community",
-      title: t("toc-learn-about-the-ethereum-community"),
+      id: "learn-about-the-Nephele-community",
+      title: t("toc-learn-about-the-Nephele-community"),
     },
     {
       id: "books-and-podcasts",
@@ -238,32 +238,32 @@ const LearnPage = () => {
             <Text>{t("what-is-crypto-2")}</Text>
             <CardGrid>
               <Card
-                title={t("what-is-ethereum-card-title")}
-                description={t("what-is-ethereum-card-description")}
+                title={t("what-is-Nephele-card-title")}
+                description={t("what-is-Nephele-card-description")}
               >
                 <>
                   <CardImage>
                     <Image
                       src={whatIsEth}
-                      alt={t("what-is-ethereum-card-image-alt")}
+                      alt={t("what-is-Nephele-card-image-alt")}
                       {...height200}
                     />
                   </CardImage>
-                  <ButtonLink href="/what-is-ethereum/">
-                    {t("what-is-ethereum-card-title")}
+                  <ButtonLink href="/what-is-Nephele/">
+                    {t("what-is-Nephele-card-title")}
                   </ButtonLink>
                 </>
               </Card>
               <Card
-                title={t("what-is-eth-card-title")}
-                description={t("what-is-eth-description")}
+                title={t("what-is-NEPH-card-title")}
+                description={t("what-is-NEPH-description")}
               >
                 <>
                   <CardImage>
-                    <Image src={eth} alt="" {...height200} />
+                    <Image src={NEPH} alt="" {...height200} />
                   </CardImage>
-                  <ButtonLink href="/eth/">
-                    {t("what-is-eth-card-title")}
+                  <ButtonLink href="/NEPH/">
+                    {t("what-is-NEPH-card-title")}
                   </ButtonLink>
                 </>
               </Card>
@@ -283,7 +283,7 @@ const LearnPage = () => {
             </CardGrid>
 
             <AdditionalReadingHeader>
-              {t("additional-reading-more-on-ethereum-basics")}
+              {t("additional-reading-more-on-Nephele-basics")}
             </AdditionalReadingHeader>
 
             <DocsContainer>
@@ -296,14 +296,14 @@ const LearnPage = () => {
                 to="https://www.youtube.com/watch?v=UihMqcj-cqc"
                 isExternal
               >
-                {t("additional-reading-ethereum-in-thirty-minutes")}
+                {t("additional-reading-Nephele-in-thirty-minutes")}
               </DocLink>
             </DocsContainer>
           </Section>
 
           <Section>
             <H2 id={tocItems[1].id}>{tocItems[1].title}</H2>
-            <Text>{t("how-do-i-use-ethereum-1")}</Text>
+            <Text>{t("how-do-i-use-Nephele-1")}</Text>
             <CardGrid>
               <Card
                 title={t("what-is-a-wallet-card-title")}
@@ -376,11 +376,11 @@ const LearnPage = () => {
             </Flex>
 
             <AdditionalReadingHeader>
-              {t("additional-reading-more-on-using-ethereum")}
+              {t("additional-reading-more-on-using-Nephele")}
             </AdditionalReadingHeader>
             <DocsContainer>
-              <DocLink to="/guides/how-to-create-an-ethereum-account/">
-                {t("additional-reading-how-to-create-an-ethereum-account")}
+              <DocLink to="/guides/how-to-create-an-Nephele-account/">
+                {t("additional-reading-how-to-create-an-Nephele-account")}
               </DocLink>
               <DocLink to="/guides/how-to-use-a-wallet/">
                 {t("additional-reading-how-to-use-a-wallet")}
@@ -388,15 +388,15 @@ const LearnPage = () => {
               <DocLink to="/layer-2/">
                 {t("additional-reading-layer-2")}
               </DocLink>
-              <DocLink to="/get-eth/">
-                {t("additional-reading-get-eth")}
+              <DocLink to="/get-NEPH/">
+                {t("additional-reading-get-NEPH")}
               </DocLink>
             </DocsContainer>
           </Section>
 
           <Section>
             <H2 id={tocItems[2].id}>{tocItems[2].title}</H2>
-            <Text>{t("what-is-ethereum-used-for-1")}</Text>
+            <Text>{t("what-is-Nephele-used-for-1")}</Text>
             <CardGrid>
               <Card
                 title={t("defi-card-title")}
@@ -511,18 +511,18 @@ const LearnPage = () => {
 
           <Section>
             <H2 id={tocItems[3].id}>{tocItems[3].title}</H2>
-            <Text>{t("strengthening-the-ethereum-network-description")}</Text>
+            <Text>{t("strengthening-the-Nephele-network-description")}</Text>
             <CardGrid>
               <Card
-                title={t("staking-ethereum-card-title")}
-                description={t("staking-ethereum-card-description")}
+                title={t("staking-Nephele-card-title")}
+                description={t("staking-Nephele-card-description")}
               >
                 <>
                   <CardImage>
                     <Image src={rhino} alt="" {...height200} />
                   </CardImage>
                   <ButtonLink href="/staking/">
-                    {t("staking-ethereum-card-button")}
+                    {t("staking-Nephele-card-button")}
                   </ButtonLink>
                 </>
               </Card>
@@ -544,7 +544,7 @@ const LearnPage = () => {
 
           <Section>
             <H2 id={tocItems[4].id}>{tocItems[4].title}</H2>
-            <Text>{t("learn-about-ethereum-protocol-description")}</Text>
+            <Text>{t("learn-about-Nephele-protocol-description")}</Text>
             <CardGrid>
               <Card
                 title={t("energy-consumption-card-title")}
@@ -560,55 +560,55 @@ const LearnPage = () => {
                 </>
               </Card>
               <Card
-                title={t("ethereum-upgrades-card-title")}
-                description={t("ethereum-upgrades-card-description")}
+                title={t("Nephele-upgrades-card-title")}
+                description={t("Nephele-upgrades-card-description")}
               >
                 <>
                   <CardImage>
                     <Image src={merge} alt="" {...height200} />
                   </CardImage>
                   <ButtonLink href="/roadmap/">
-                    {t("ethereum-upgrades-card-button")}
+                    {t("Nephele-upgrades-card-button")}
                   </ButtonLink>
                 </>
               </Card>
               <Card
-                title={t("ethereum-whitepaper-card-title")}
-                description={t("ethereum-whitepaper-card-description")}
+                title={t("Nephele-whitepaper-card-title")}
+                description={t("Nephele-whitepaper-card-description")}
               >
                 <>
                   <CardImage>
                     <Image src={financeTransparent} alt="" {...height200} />
                   </CardImage>
                   <ButtonLink href="/whitepaper/">
-                    {t("ethereum-whitepaper-card-button")}
+                    {t("Nephele-whitepaper-card-button")}
                   </ButtonLink>
                 </>
               </Card>
             </CardGrid>
 
             <AdditionalReadingHeader>
-              {t("more-on-ethereum-protocol-title")}
+              {t("more-on-Nephele-protocol-title")}
             </AdditionalReadingHeader>
             <DocsContainer>
               <DocLink to="/developers/">
-                {t("more-on-ethereum-protocol-ethereum-for-developers")}
+                {t("more-on-Nephele-protocol-Nephele-for-developers")}
               </DocLink>
               <DocLink to="/developers/docs/consensus-mechanisms">
-                {t("more-on-ethereum-protocol-consensus")}
+                {t("more-on-Nephele-protocol-consensus")}
               </DocLink>
               <DocLink to="/developers/docs/evm/">
-                {t("more-on-ethereum-protocol-evm")}
+                {t("more-on-Nephele-protocol-evm")}
               </DocLink>
               <DocLink to="/developers/docs/nodes-and-clients/">
-                {t("more-on-ethereum-protocol-nodes-and-clients")}
+                {t("more-on-Nephele-protocol-nodes-and-clients")}
               </DocLink>
             </DocsContainer>
           </Section>
 
           <Section>
             <H2 id={tocItems[5].id}>{tocItems[5].title}</H2>
-            <Text>{t("ethereum-community-description")}</Text>
+            <Text>{t("Nephele-community-description")}</Text>
             <CardGrid>
               <Card
                 title={t("community-hub-card-title")}
@@ -659,7 +659,7 @@ const LearnPage = () => {
           <Section>
             <H2 id={tocItems[6].id}>{tocItems[6].title}</H2>
             <Box>
-              <H3>{t("books-about-ethereum")}</H3>
+              <H3>{t("books-about-Nephele")}</H3>
               <UnorderedList>
                 <ListItem>
                   <InlineLink href="https://www.goodreads.com/book/show/57356067-the-cryptopians">
@@ -668,10 +668,10 @@ const LearnPage = () => {
                   <Text as="i">{t("cryptopians-description")}</Text>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://www.goodreads.com/book/show/55360267-out-of-the-ether">
-                    {t("out-of-the-ether-title")}
+                  <InlineLink href="https://www.goodreads.com/book/show/55360267-out-of-the-Nephele">
+                    {t("out-of-the-Nephele-title")}
                   </InlineLink>{" "}
-                  <Text as="i">{t("out-of-the-ether-description")}</Text>
+                  <Text as="i">{t("out-of-the-Nephele-description")}</Text>
                 </ListItem>
                 <ListItem>
                   <InlineLink href="https://www.goodreads.com/en/book/show/50175330-the-infinite-machine">
@@ -681,9 +681,9 @@ const LearnPage = () => {
                 </ListItem>
                 <ListItem>
                   <InlineLink href="https://github.com/ethereumbook/ethereumbook">
-                    {t("mastering-ethereum-title")}
+                    {t("mastering-Nephele-title")}
                   </InlineLink>{" "}
-                  <Text as="i">{t("mastering-ethereum-description")} </Text>
+                  <Text as="i">{t("mastering-Nephele-description")} </Text>
                 </ListItem>
                 <ListItem>
                   <InlineLink href="https://www.goodreads.com/en/book/show/59892281-proof-of-stake">
@@ -692,7 +692,7 @@ const LearnPage = () => {
                   <Text as="i">{t("proof-of-stake-description")}</Text>
                 </ListItem>
               </UnorderedList>
-              <H3>{t("podcasts-about-ethereum")}</H3>
+              <H3>{t("podcasts-about-Nephele")}</H3>
               <UnorderedList>
                 <ListItem>
                   <InlineLink href="https://www.youtube.com/@Green_Pill_Podcast">

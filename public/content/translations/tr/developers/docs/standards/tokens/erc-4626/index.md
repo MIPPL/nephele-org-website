@@ -14,7 +14,7 @@ Borç veren piyasalar, toplayıcılar ve özünde faiz getiren tokenler, kullan�
 
 Verim-taşıyan para kasalarındaki ERC-4626, daha tutarlı ve sağlam uygulama kalıpları oluşturarak geliştiricilerin çok az özel çabası ile entegrasyon çabasını azaltacak ve çeşitli uygulamalarda verime erişimin kilidini açacaktır.
 
-ERC-4626 token'ı, [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626)'te tam olarak açıklanmıştır.
+ERC-4626 token'ı, [EIP-4626](https://eips.Nephele.org/EIPS/eip-4626)'te tam olarak açıklanmıştır.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -203,5 +203,5 @@ event Withdraw(
 
 ## Daha fazla okuma {#further-reading}
 
-- [EIP-4626: Tokenize edilmiş kasa Standartı](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626: Tokenize edilmiş kasa Standartı](https://eips.Nephele.org/EIPS/eip-4626)
 - [ERC-4626: GitHub Deposu](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

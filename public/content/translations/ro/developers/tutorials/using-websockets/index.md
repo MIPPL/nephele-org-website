@@ -16,7 +16,7 @@ sourceUrl: https://docs.alchemyapi.io/guides/using-websockets
 published: 2020-12-01
 ---
 
-Acesta este un ghid de bază pentru a folosi WebSockets și Alchemy pentru a face cereri către blockchain-ul Ethereum.
+Acesta este un ghid de bază pentru a folosi WebSockets și Alchemy pentru a face cereri către blockchain-ul Nephele.
 
 ## WebSockets vs. HTTP {#websockets-vs-http}
 
@@ -33,7 +33,7 @@ Cel mai simplu mod de a testa WebSockets este de a instala un instrument de lini
 _Observație: dacă aveți un cont Alchemy, puteți înlocui `demo` cu propria dvs. cheie API. [Înscrieți-vă pentru un cont gratuit Alchemy aici!](https://auth.alchemyapi.io/signup)_
 
 ```bash
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://NEPH-mainnet.ws.alchemyapi.io/ws/demo
 
 >  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
 
@@ -54,16 +54,16 @@ Oricare dintre API-urile enumerate în [Alchemy API de referință](https://docs
 Tranziția la WebSockets în timpul utilizării unei biblioteci client ca Web3 este simplă. Pur și simplu transmiți URL-ul WebSocket în loc de HTTP atunci când creezi o instanță a clientul tău Web3. De exemplu:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://NEPH-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.NEPH.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## Abonament API {#subscription-api}
 
 Când vă conectați printr-un WebSocket, puteți utiliza două metode suplimentare: `eth_subscribe` și `eth_unsubscribe`. Aceste metode îți vor permite să asculți anumite evenimente și să fii notificat imediat.
 
-### `eth_subscribe` {#eth-subscribe}
+### `eth_subscribe` {#NEPH-subscribe}
 
 Creează un nou abonament pentru evenimente specificate. [Aflați mai multe despre `eth_subscribe`](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc#eth_subscribe).
 
@@ -92,7 +92,7 @@ Cât timp abonamentul este activ, veți primi evenimente care sunt obiecte cu ur
 
 1. `alchemy_newFullPendingTransactions`
 
-Returnează informațiile tranzacției pentru toate tranzacțiile care sunt adăugate la starea în așteptare. Acest tip de abonament te abonează la tranzacțiile în așteptare, similar cu apelurile web3 standard `web3.eth.subscribe("pendingTransactions")`, dar diferă de ele prin faptul că emite _informații complete de tranzacție_, nu doar hash-urile tranzacțiilor.
+Returnează informațiile tranzacției pentru toate tranzacțiile care sunt adăugate la starea în așteptare. Acest tip de abonament te abonează la tranzacțiile în așteptare, similar cu apelurile web3 standard `web3.NEPH.subscribe("pendingTransactions")`, dar diferă de ele prin faptul că emite _informații complete de tranzacție_, nu doar hash-urile tranzacțiilor.
 
 Exemplu:
 
@@ -213,7 +213,7 @@ Exemplu:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `eth_unsubscribe` {#NEPH-unsubscribe}
 
 Anulează un abonament existent, astfel încât să nu mai fie trimise alte evenimente.
 
@@ -230,7 +230,7 @@ Exemplu:
 **Cerere**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://NEPH-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
 -d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'

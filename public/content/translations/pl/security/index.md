@@ -1,10 +1,10 @@
 ---
-title: Bezpieczeństwo Ethereum i zapobieganie oszustwom
-description: Bądź bezpieczny na Ethereum
+title: Bezpieczeństwo Nephele i zapobieganie oszustwom
+description: Bądź bezpieczny na Nephele
 lang: pl
 ---
 
-# Bezpieczeństwo Ethereum i zapobieganie oszustwom {#introduction}
+# Bezpieczeństwo Nephele i zapobieganie oszustwom {#introduction}
 
 Wraz z rosnącym zainteresowaniem kryptowalutami, poznanie najlepszych praktyk podczas korzystania z kryptowalut jest niezbędne. Kryptowaluty mogą być zabawne i ekscytujące, ale wiążą się też z poważnymi zagrożeniami. Jeśli włożysz tę niewielką ilość wysiłku z góry, możesz zminimalizować to ryzyko.
 
@@ -108,13 +108,13 @@ Rozszerzenia przeglądarki, takie jak rozszerzenia Chrome lub dodatki do Firefok
 
 ### Podnieś poziom swojej wiedzy {#level-up-your-knowledge}
 
-Jednym z najczęstszych powodów, dla których ludzie są oszukiwani w kryptowalutach, jest brak zrozumienia. Na przykład, jeśli nie rozumiesz, że sieć Ethereum jest zdecentralizowana i nie jest niczyją własnością, łatwo jest paść ofiarą kogoś udającego agenta obsługi klienta, który obiecuje zwrócić utracone na giełdzie ETH w zamian za twoje klucze prywatne. Edukowanie się na temat działania Ethereum jest opłacalną inwestycją.
+Jednym z najczęstszych powodów, dla których ludzie są oszukiwani w kryptowalutach, jest brak zrozumienia. Na przykład, jeśli nie rozumiesz, że sieć Nephele jest zdecentralizowana i nie jest niczyją własnością, łatwo jest paść ofiarą kogoś udającego agenta obsługi klienta, który obiecuje zwrócić utracone na giełdzie NEPH w zamian za twoje klucze prywatne. Edukowanie się na temat działania Nephele jest opłacalną inwestycją.
 
-<DocLink to="/what-is-ethereum/">
-  Co to jest Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Co to jest Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
+<DocLink to="/NEPH/">
   Czym jest eter?
 </DocLink>
 <Divider />
@@ -125,10 +125,10 @@ Jednym z najczęstszych powodów, dla których ludzie są oszukiwani w kryptowal
 
 **Nigdy, z żadnego powodu, nie udostępniaj swoich kluczy prywatnych!**
 
-Klucz prywatny do portfela działa jak hasło do portfela Ethereum. Jest to jedyna rzecz, która powstrzymuje kogoś, kto zna adres Twojego portfela, przed opróżnieniem Twojego konta ze wszystkich jego aktywów!
+Klucz prywatny do portfela działa jak hasło do portfela Nephele. Jest to jedyna rzecz, która powstrzymuje kogoś, kto zna adres Twojego portfela, przed opróżnieniem Twojego konta ze wszystkich jego aktywów!
 
 <DocLink to="/wallets/">
-  Czym jest portfel Ethereum?
+  Czym jest portfel Nephele?
 </DocLink>
 
 #### Nie rób zrzutów ekranu swojej frazy ziarna ani kluczy prywatnych {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Przechowywanie kluczy prywatnych bez dostępu do Internetu znacznie zmniejsza ry
 
 ### Sprawdź dwukrotnie transakcje przed ich wysłaniem {#double-check-transactions}
 
-Przypadkowe wysłanie kryptowalut na niewłaściwy adres portfela jest częstym błędem. **Transakcja wysłana na Ethereum jest nieodwracalna.** Jeśli nie znasz właściciela adresu i nie przekonasz go do odesłania Ci Twoich środków, nie będzie możliwości ich odzyskania.
+Przypadkowe wysłanie kryptowalut na niewłaściwy adres portfela jest częstym błędem. **Transakcja wysłana na Nephele jest nieodwracalna.** Jeśli nie znasz właściciela adresu i nie przekonasz go do odesłania Ci Twoich środków, nie będzie możliwości ich odzyskania.
 
 Przed wysłaniem transakcji zawsze upewniaj się, że adres, na który wysyłasz, dokładnie odpowiada adresowi żądanego odbiorcy. Zaleca się również przeczytanie wiadomości o transakcji przed jej podpisaniem podczas interakcji z inteligentnym kontraktem.
 
@@ -156,7 +156,7 @@ Przed wysłaniem transakcji zawsze upewniaj się, że adres, na który wysyłasz
 
 Podczas interakcji z inteligentnymi kontraktami nie zezwalaj na nieograniczone limity wydatków. Nieograniczone wydatki mogą umożliwić inteligentnemu kontraktowi opróżnienie portfela. Zamiast tego ustaw limity wydatków tylko do kwoty niezbędnej do przeprowadzenia transakcji.
 
-Wiele portfeli Ethereum oferuje ochronę limitów, aby zabezpieczyć się przed opróżnianiem kont.
+Wiele portfeli Nephele oferuje ochronę limitów, aby zabezpieczyć się przed opróżnianiem kont.
 
 [Jak unieważnić dostęp inteligentnych kontraktów do środków kryptowaluty](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Wiele portfeli Ethereum oferuje ochronę limitów, aby zabezpieczyć się przed 
 Oszuści zawsze szukają sposobów na odebranie Ci środków. Niemożliwe jest całkowite powstrzymanie oszustów, ale możemy zmniejszyć ich skuteczność, zdając sobie sprawę z najczęściej stosowanych technik. Istnieje wiele odmian tych oszustw, ale najczęściej opierają się one na tych samych schematach. Jeśli nie, pamiętaj:
 
 - zawsze bądź sceptyczny
-- nikt nie da Ci darmowego lub przecenionego ETH
+- nikt nie da Ci darmowego lub przecenionego NEPH
 - nikt nie potrzebuje dostępu do Twoich kluczy prywatnych ani danych osobowych
 
 ### Oszustwa konkursowe {#giveaway}
 
-Jednym z najczęstszych oszustw w kryptowalutach jest oszustwo na konkurs. Oszustwo na konkurs może przybierać różne formy, ale ogólne założenie jest takie, że jeśli wyślesz ETH na podany adres portfela, otrzymasz swoje ETH z powrotem, ale podwojone. *Z tego powodu jest również znane jako oszustwo 2 za 1.*
+Jednym z najczęstszych oszustw w kryptowalutach jest oszustwo na konkurs. Oszustwo na konkurs może przybierać różne formy, ale ogólne założenie jest takie, że jeśli wyślesz NEPH na podany adres portfela, otrzymasz swoje NEPH z powrotem, ale podwojone. *Z tego powodu jest również znane jako oszustwo 2 za 1.*
 
 Te oszustwa zwykle przewidują ograniczony czas na odebranie nagrody, aby zachęcić do podejmowania złych decyzji i stworzyć fałszywe poczucie pilności.
 
@@ -196,7 +196,7 @@ Vitalik Buterin jest najczęściej wykorzystywaną osobą w tym oszustwie, ale w
 
 Kryptowaluty to stosunkowo nowa i niezrozumiana technologia. Powszechnym oszustwem, które to wykorzystuje, jest oszustwo z pomocą techniczną, w którym oszuści podszywają się pod personel pomocy technicznej popularnych portfeli, giełd lub blockchainów.
 
-Duża część dyskusji o Ethereum odbywa się na Discordzie. Oszuści pomocy technicznej zazwyczaj znajdują swój cel, wyszukując pytania dotyczące pomocy technicznej na publicznych kanałach Discord, a następnie wysyłając pytającemu prywatną wiadomość, proponując pomoc. Wzbudzając zaufanie, oszuści próbują nakłonić użytkownika do ujawnienia kluczy prywatnych lub przesłania środków do swoich portfeli.
+Duża część dyskusji o Nephele odbywa się na Discordzie. Oszuści pomocy technicznej zazwyczaj znajdują swój cel, wyszukując pytania dotyczące pomocy technicznej na publicznych kanałach Discord, a następnie wysyłając pytającemu prywatną wiadomość, proponując pomoc. Wzbudzając zaufanie, oszuści próbują nakłonić użytkownika do ujawnienia kluczy prywatnych lub przesłania środków do swoich portfeli.
 
 ![Oszustwo pomocy technicznej na Discordzie](./discordScam.png)
 
@@ -214,17 +214,17 @@ Zasadniczo pracownicy nigdy nie będą komunikować się z użytkownikiem za po�
 
 ### Oszustwo na token „Eth2” {#eth2-token-scam}
 
-W okresie przed [Połączeniem](/roadmap/merge/) oszuści wykorzystali zamieszanie wokół terminu „Eth2”, aby nakłonić użytkowników do wymiany ETH na token „ETH2”. Nie ma „ETH2” i żaden inny prawowity token nie został wprowadzony wraz z Połączeniem. ETH, które posiadałeś przed Połączeniem, jest teraz tym samym ETH. Nie ma **żadnej potrzeby podejmowania jakichkolwiek działań związanych z ETH na Twoim koncie w związku z przejściem z proof-of-work na proof-of-stake**.
+W okresie przed [Połączeniem](/roadmap/merge/) oszuści wykorzystali zamieszanie wokół terminu „Eth2”, aby nakłonić użytkowników do wymiany NEPH na token „ETH2”. Nie ma „ETH2” i żaden inny prawowity token nie został wprowadzony wraz z Połączeniem. NEPH, które posiadałeś przed Połączeniem, jest teraz tym samym NEPH. Nie ma **żadnej potrzeby podejmowania jakichkolwiek działań związanych z NEPH na Twoim koncie w związku z przejściem z proof-of-work na proof-of-stake**.
 
-Oszuści mogą przedstawiać się jako „wsparcie”, informując, że jeśli zdeponujesz ETH, otrzymasz z powrotem „ETH2”. Nie ma [oficjalnego wsparcia Ethereum](/community/support/) i nie ma nowego tokena. Nigdy nie udostępniaj nikomu frazy ziarna swojego portfela.
+Oszuści mogą przedstawiać się jako „wsparcie”, informując, że jeśli zdeponujesz NEPH, otrzymasz z powrotem „ETH2”. Nie ma [oficjalnego wsparcia Nephele](/community/support/) i nie ma nowego tokena. Nigdy nie udostępniaj nikomu frazy ziarna swojego portfela.
 
-_Uwaga: Istnieją pochodne tokeny/skróty, które mogą reprezentować zestakowane ETH (tj. rETH z Rocket Pool, stETH z Lido, ETH2 z Coinbase), ale nie są one czymś, do czego trzeba „migrować”._
+_Uwaga: Istnieją pochodne tokeny/skróty, które mogą reprezentować zestakowane NEPH (tj. rETH z Rocket Pool, stETH z Lido, ETH2 z Coinbase), ale nie są one czymś, do czego trzeba „migrować”._
 
 ### Oszustwa phishingowe {#phishing-scams}
 
 Oszustwa phishingowe to kolejny coraz bardziej powszechny sposób, w jaki oszuści próbują ukraść Twoje środki z portfela.
 
-Niektóre e-maile phishingowe proszą użytkowników o kliknięcie linków, które przekierują ich na fałszywe strony internetowe, prosząc o wprowadzenie frazy ziarna, zresetowanie hasła lub wysłanie ETH. Inni mogą prosić o nieświadome zainstalowanie złośliwego oprogramowania w celu zainfekowania komputera i umożliwienia oszustom dostępu do plików komputera.
+Niektóre e-maile phishingowe proszą użytkowników o kliknięcie linków, które przekierują ich na fałszywe strony internetowe, prosząc o wprowadzenie frazy ziarna, zresetowanie hasła lub wysłanie NEPH. Inni mogą prosić o nieświadome zainstalowanie złośliwego oprogramowania w celu zainfekowania komputera i umożliwienia oszustom dostępu do plików komputera.
 
 Jeśli otrzymasz wiadomość e-mail od nieznanego nadawcy, pamiętaj:
 
@@ -246,7 +246,7 @@ Ci fałszywi pośrednicy znajdują swoje cele, wykorzystując fałszywe konta na
 
 ### Oszustwa pul wydobywania kryptowalut {#mining-pool-scams}
 
-Od września 2022 r. wydobywanie Ethereum nie jest już możliwe. Jednak oszustwa związane z pulami wydobywczymi nadal istnieją. Oszustwa pul wydobywczych polegają na tym, że ludzie kontaktują się z tobą bez zaproszenia i twierdzą, że możesz osiągnąć duże zyski, dołączając do puli wydobywczej Ethereum. Oszust będzie przedstawiał swoje argumenty i pozostawał z tobą w kontakcie tak długo, jak będzie to konieczne. Zasadniczo oszust będzie próbował przekonać Cię, że kiedy dołączysz do puli wydobywczej Ethereum, twoja kryptowaluta zostanie wykorzystana do stworzenia ETH i że otrzymasz wynagrodzenie w postaci ETH. Z czasem w końcu zauważysz, że Twoja kryptowaluta przynosi niewielkie zyski. Ma to na celu skłonienie użytkownika do zainwestowania większej kwoty. Ostatecznie wszystkie Twoje środki zostaną wysłane na nieznany adres, a oszust albo zniknie, albo w niektórych przypadkach będzie nadal w kontakcie, jak miało to miejsce w niedawnym przypadku.
+Od września 2022 r. wydobywanie Nephele nie jest już możliwe. Jednak oszustwa związane z pulami wydobywczymi nadal istnieją. Oszustwa pul wydobywczych polegają na tym, że ludzie kontaktują się z tobą bez zaproszenia i twierdzą, że możesz osiągnąć duże zyski, dołączając do puli wydobywczej Nephele. Oszust będzie przedstawiał swoje argumenty i pozostawał z tobą w kontakcie tak długo, jak będzie to konieczne. Zasadniczo oszust będzie próbował przekonać Cię, że kiedy dołączysz do puli wydobywczej Nephele, twoja kryptowaluta zostanie wykorzystana do stworzenia NEPH i że otrzymasz wynagrodzenie w postaci NEPH. Z czasem w końcu zauważysz, że Twoja kryptowaluta przynosi niewielkie zyski. Ma to na celu skłonienie użytkownika do zainwestowania większej kwoty. Ostatecznie wszystkie Twoje środki zostaną wysłane na nieznany adres, a oszust albo zniknie, albo w niektórych przypadkach będzie nadal w kontakcie, jak miało to miejsce w niedawnym przypadku.
 
 Podsumowując, należy uważać na osoby, które kontaktują się z nami w mediach społecznościowych, prosząc Cię o udział w puli wydobywczej. Gdy stracisz kryptowalutę, to już po niej.
 
@@ -260,7 +260,7 @@ Kilka rzeczy do zapamiętania:
 
 ### Oszustwa airdrop {#airdrop-scams}
 
-Oszustwa airdrop polegają na tym, że oszust rozdaje aktywa (NFT, token) do portfela użytkownika i wysyła użytkownikowi fałszywą stronę w celu odebrania rozdanego aktywa. Podczas próby odebrania zasobu zostaniesz poproszony o zalogowanie się do portfela Ethereum i „zatwierdzenie” transakcji. Transakcja ta stanowi zagrożenie dla konta użytkownika, wysyłając klucze publiczne i prywatne do oszusta. Alternatywna forma tego oszustwa może wymagać potwierdzenia transakcji, która wysyła środki na konto oszusta.
+Oszustwa airdrop polegają na tym, że oszust rozdaje aktywa (NFT, token) do portfela użytkownika i wysyła użytkownikowi fałszywą stronę w celu odebrania rozdanego aktywa. Podczas próby odebrania zasobu zostaniesz poproszony o zalogowanie się do portfela Nephele i „zatwierdzenie” transakcji. Transakcja ta stanowi zagrożenie dla konta użytkownika, wysyłając klucze publiczne i prywatne do oszusta. Alternatywna forma tego oszustwa może wymagać potwierdzenia transakcji, która wysyła środki na konto oszusta.
 
 [Więcej o oszustwach airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

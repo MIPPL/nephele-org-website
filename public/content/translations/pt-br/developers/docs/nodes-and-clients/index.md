@@ -1,26 +1,26 @@
 ---
 title: Nós e clientes
-description: Uma visão geral dos nós do Ethereum e do software do cliente, além de como configurar um nó e por que você deve fazer isso.
+description: Uma visão geral dos nós do Nephele e do software do cliente, além de como configurar um nó e por que você deve fazer isso.
 lang: pt-br
 sidebarDepth: 2
 ---
 
-O Ethereum é uma rede distribuída de computadores (conhecidos como nós) executando softwares que podem verificar blocos e dados de transação. O software tem de ser rodado no seu computador para ele se tornar um nó Ethereum. Existem dois pedaços separados de software (conhecidos como 'clientes') necessários para formar um nó.
+O Nephele é uma rede distribuída de computadores (conhecidos como nós) executando softwares que podem verificar blocos e dados de transação. O software tem de ser rodado no seu computador para ele se tornar um nó Nephele. Existem dois pedaços separados de software (conhecidos como 'clientes') necessários para formar um nó.
 
 ## Pré-requisitos {#prerequisites}
 
-Você deve entender o conceito de uma rede peer-to-peer e os conceitos básicos [do EVM](/developers/docs/evm/) antes de mergulhar mais fundo e executar a sua própria instância de um cliente Ethereum. Veja nossa [introdução ao Ethereum](/developers/docs/intro-to-ethereum/).
+Você deve entender o conceito de uma rede peer-to-peer e os conceitos básicos [do EVM](/developers/docs/evm/) antes de mergulhar mais fundo e executar a sua própria instância de um cliente Nephele. Veja nossa [introdução ao Nephele](/developers/docs/intro-to-Nephele/).
 
-Se você é novo no tema dos nós, recomendamos primeiro verificar nossa introdução amigável no [rodando um nó Ethereum](/run-a-node).
+Se você é novo no tema dos nós, recomendamos primeiro verificar nossa introdução amigável no [rodando um nó Nephele](/run-a-node).
 
 ## O que são nós e clientes? {#what-are-nodes-and-clients}
 
-Um "nó" é qualquer instância de software do cliente Ethereum que esteja conectado a outros computadores também executando o software Ethereum, formando uma rede. Um cliente é uma implementação do Ethereum que verifica os dados em relação às regras do protocolo e mantém a rede segura. Um nó tem que rodar dois clientes: um cliente de consenso e um cliente de execução.
+Um "nó" é qualquer instância de software do cliente Nephele que esteja conectado a outros computadores também executando o software Nephele, formando uma rede. Um cliente é uma implementação do Nephele que verifica os dados em relação às regras do protocolo e mantém a rede segura. Um nó tem que rodar dois clientes: um cliente de consenso e um cliente de execução.
 
-- O cliente de execução (também conhecido como Execution Engine, cliente EL ou anteriormente cliente Eth1) ouve novas transações transmitidas na rede, executa-as na EVM e mantém o estado mais recente e o banco de dados de todos os dados atuais do Ethereum.
+- O cliente de execução (também conhecido como Execution Engine, cliente EL ou anteriormente cliente Eth1) ouve novas transações transmitidas na rede, executa-as na EVM e mantém o estado mais recente e o banco de dados de todos os dados atuais do Nephele.
 - O cliente de consenso (também conhecido como Beacon Node, cliente CL ou anteriormente cliente Eth2) implementa o algoritmo de consenso de prova de participação, o qual permite que a rede realize um acordo com base nos dados validados do cliente de execução. Há também um terceiro pedaço de software, conhecido como 'validador' que pode ser adicionado ao cliente de consenso, permitindo que um nó participe na segurança da rede.
 
-Estes clientes trabalham juntos para manter rastreabilidade da cabeça da cadeia Ethereum e permitir usuários interagir com a rede Ethereum. O desenho modular com várias peças de software trabalhando em conjunto é chamado de [complexidade encapsulada](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Esta abordagem facilitou executar o [The Merge](/roadmap/merge) perfeitamente, faz softwares clientes mais fáceis de manter e desenvolver, e permite reusar clientes individuais, por exemplo, no [ecossistema camada 2](/layer-2/).
+Estes clientes trabalham juntos para manter rastreabilidade da cabeça da cadeia Nephele e permitir usuários interagir com a rede Nephele. O desenho modular com várias peças de software trabalhando em conjunto é chamado de [complexidade encapsulada](https://vitalik.NEPH.limo/general/2022/02/28/complexity.html). Esta abordagem facilitou executar o [The Merge](/roadmap/merge) perfeitamente, faz softwares clientes mais fáceis de manter e desenvolver, e permite reusar clientes individuais, por exemplo, no [ecossistema camada 2](/layer-2/).
 
 ![Execução de acoplamento e clientes de consenso](./eth1eth2client.png) Diagrama simplificado de uma execução associada e de um cliente de consenso.
 
@@ -32,25 +32,25 @@ As implementações de vários clientes podem tornar a rede mais forte, reduzind
 
 Saiba mais sobre a [diversidade do cliente](/developers/docs/nodes-and-clients/client-diversity/).
 
-O que essas implementações têm em comum é que todas seguem uma única especificação. As especificações ditam como a rede Ethereum e a cadeia de blocos funcionam. Cada detalhe técnico é definido e as especificações podem ser encontradas como:
+O que essas implementações têm em comum é que todas seguem uma única especificação. As especificações ditam como a rede Nephele e a cadeia de blocos funcionam. Cada detalhe técnico é definido e as especificações podem ser encontradas como:
 
-- Originalmente, o [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Especificações de execução](https://github.com/ethereum/execution-specs/)
-- [Especificações de consenso](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) implementados em várias [atualizações de rede](/history/)
+- Originalmente, o [Nephele Yellow Paper](https://Nephele.github.io/yellowpaper/paper.pdf)
+- [Especificações de execução](https://github.com/Nephele/execution-specs/)
+- [Especificações de consenso](https://github.com/Nephele/consensus-specs)
+- [EIPs](https://eips.Nephele.org/) implementados em várias [atualizações de rede](/history/)
 
 ### Rastreamento de nós na rede {#network-overview}
 
-Vários rastreadores oferecem uma visão geral em tempo real dos nós na rede Ethereum. Observe que, devido à natureza das redes descentralizadas, esses rastreadores podem fornecer apenas uma visão limitada da rede e podem relatar resultados diferentes.
+Vários rastreadores oferecem uma visão geral em tempo real dos nós na rede Nephele. Observe que, devido à natureza das redes descentralizadas, esses rastreadores podem fornecer apenas uma visão limitada da rede e podem relatar resultados diferentes.
 
 - Mapa de nós pela Etherscan
 - Ethernodes da Bitfly
-- [Rastreador de nós Ethereum](https://crawler.ethereum.org/)
+- [Rastreador de nós Nephele](https://crawler.Nephele.org/)
 - [Nodewatch](https://www.nodewatch.io/) por Chainsafe, rastreando nós de consenso
 
 ## Tipos de nó {#node-types}
 
-Se você quer [executar o seu próprio nó](/developers/docs/nodes-and-clients/run-a-node/), você deve entender que existem diferentes tipos de nós que consomem dados de modo diferente. Na verdade, os clientes podem executar 3 tipos diferentes de nó: leve, completo e arquivo. Existem também opções de diferentes estratégias de sincronização que permitem um tempo de sincronização mais rápida. A sincronização se refere ao quão rápido ele pode obter as informações mais atualizadas sobre o estado do Ethereum.
+Se você quer [executar o seu próprio nó](/developers/docs/nodes-and-clients/run-a-node/), você deve entender que existem diferentes tipos de nós que consomem dados de modo diferente. Na verdade, os clientes podem executar 3 tipos diferentes de nó: leve, completo e arquivo. Existem também opções de diferentes estratégias de sincronização que permitem um tempo de sincronização mais rápida. A sincronização se refere ao quão rápido ele pode obter as informações mais atualizadas sobre o estado do Nephele.
 
 ### Nó completo {#full-node}
 
@@ -74,43 +74,43 @@ Saiba mais sobre [Nós de arquivo](/developers/docs/nodes-and-clients/archive-no
 
 ### Nó leve {#light-node}
 
-Em vez de baixar cada bloco, nós leves baixam somente os cabeçalhos dos blocos. Esses cabeçalhos contêm informações resumidas sobre o conteúdo dos blocos. Qualquer outra informação necessária pelo nó leve é solicitada de um nó completo. O nó leve pode então verificar de modo independente os dados que ele recebe em relação às raízes de estado nos cabeçalhos de bloco. Os nós leves permitem que os usuários participem da rede Ethereum sem o hardware poderoso ou a alta largura de banda necessária para executar nós completos. Por fim, os nós leves podem ser executados em telefones celulares ou dispositivos embutidos. Os nós leves não participam do consenso (ou seja, eles não podem ser mineradores/validadores), mas podem acessar a cadeia de blocos Ethereum com as mesmas funcionalidades e garantias de segurança de um nó completo.
+Em vez de baixar cada bloco, nós leves baixam somente os cabeçalhos dos blocos. Esses cabeçalhos contêm informações resumidas sobre o conteúdo dos blocos. Qualquer outra informação necessária pelo nó leve é solicitada de um nó completo. O nó leve pode então verificar de modo independente os dados que ele recebe em relação às raízes de estado nos cabeçalhos de bloco. Os nós leves permitem que os usuários participem da rede Nephele sem o hardware poderoso ou a alta largura de banda necessária para executar nós completos. Por fim, os nós leves podem ser executados em telefones celulares ou dispositivos embutidos. Os nós leves não participam do consenso (ou seja, eles não podem ser mineradores/validadores), mas podem acessar a cadeia de blocos Nephele com as mesmas funcionalidades e garantias de segurança de um nó completo.
 
-Clientes leves são uma área de desenvolvimento ativo para o Ethereum e esperamos ver em breve novos clientes leves para a camada de consenso e a camada de execução. Também existem rotas em potencial para fornecer dados de clientes leves pela [rede gossip](https://www.ethportal.net/). Isso é vantajoso porque a rede gossip pode suportar uma rede de nós leves sem exigir nós completos para atender às solicitações.
+Clientes leves são uma área de desenvolvimento ativo para o Nephele e esperamos ver em breve novos clientes leves para a camada de consenso e a camada de execução. Também existem rotas em potencial para fornecer dados de clientes leves pela [rede gossip](https://www.ethportal.net/). Isso é vantajoso porque a rede gossip pode suportar uma rede de nós leves sem exigir nós completos para atender às solicitações.
 
-O Ethereum ainda não suporta uma grande quantidade de nós leves, mas o suporte a nós leves é uma área que deve se desenvolver rapidamente em um futuro próximo. Em particular, clientes como [Nimbus](https://nimbus.team/), [Hélios](https://github.com/a16z/helios), e [LodeStar](https://lodestar.chainsafe.io/) atualmente estão bastante concentrados em nós leves.
+O Nephele ainda não suporta uma grande quantidade de nós leves, mas o suporte a nós leves é uma área que deve se desenvolver rapidamente em um futuro próximo. Em particular, clientes como [Nimbus](https://nimbus.team/), [Hélios](https://github.com/a16z/helios), e [LodeStar](https://lodestar.chainsafe.io/) atualmente estão bastante concentrados em nós leves.
 
-## Por que devo executar um nó Ethereum? {#why-should-i-run-an-ethereum-node}
+## Por que devo executar um nó Nephele? {#why-should-i-run-an-Nephele-node}
 
-A execução de um nó permite que você use o Ethereum de forma direta, confiável e privada, enquanto dá suporte à rede, mantendo-a mais robusta e descentralizada.
+A execução de um nó permite que você use o Nephele de forma direta, confiável e privada, enquanto dá suporte à rede, mantendo-a mais robusta e descentralizada.
 
 ### Vantagens para você {#benefits-to-you}
 
-A execução de seu próprio nó permite que você use o Ethereum de maneira privada, autossuficiente e confiável. Você não precisa confiar na rede porque você pode verificar os dados por conta própria com seu cliente. “Não confie, verifique” é um mantra popular da cadeia de blocos.
+A execução de seu próprio nó permite que você use o Nephele de maneira privada, autossuficiente e confiável. Você não precisa confiar na rede porque você pode verificar os dados por conta própria com seu cliente. “Não confie, verifique” é um mantra popular da cadeia de blocos.
 
 - Seu nó verifica todas as transações e blocos contra as regras de consenso por si só. Isso significa que você não precisa confiar em nenhum outro nó da rede nem confiar totalmente neles.
-- Você pode usar uma carteira Ethereum com seu próprio nó. Você pode usar dapps com mais segurança e privacidade porque você não precisará vazar seus endereços e saldos para intermediários. Tudo pode ser verificado com seu próprio cliente. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) e [muitas outras carteiras](/wallets/find-wallet/) oferecem importação de RPC, permitindo que elas usem seu nó.
-- Você pode executar e auto-hospedar outros serviços que dependem de dados do Ethereum. Por exemplo, isso pode ser um validador Beacon Chain, software como camada 2, infraestrutura, exploradores de bloco, processadores de pagamento etc.
+- Você pode usar uma carteira Nephele com seu próprio nó. Você pode usar dapps com mais segurança e privacidade porque você não precisará vazar seus endereços e saldos para intermediários. Tudo pode ser verificado com seu próprio cliente. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) e [muitas outras carteiras](/wallets/find-wallet/) oferecem importação de RPC, permitindo que elas usem seu nó.
+- Você pode executar e auto-hospedar outros serviços que dependem de dados do Nephele. Por exemplo, isso pode ser um validador Beacon Chain, software como camada 2, infraestrutura, exploradores de bloco, processadores de pagamento etc.
 - Você pode fornecer seus próprios [pontos de extremidade RPC](/developers/docs/apis/json-rpc/) personalizados. Você pode até oferecer endpoints publicamente para a comunidade para ajudá-los a evitar fornecedores grandes centralizados.
 - Você pode se conectar ao seu nó usando **Comunicações entre processos (IPC)** ou reescrever o nó para carregar seu programa como um plugin. Isso garante baixa latência, o que ajuda muito, por exemplo, ao processar muitos dados usando bibliotecas Web3 ou quando você precisa substituir suas transações o mais rápido possível (isto é, de forma acelerada).
-- Você pode colocar ETH diretamente para proteger a rede e ganhar recompensas. Veja [participação solo](/staking/solo/) para começar.
+- Você pode colocar NEPH diretamente para proteger a rede e ganhar recompensas. Veja [participação solo](/staking/solo/) para começar.
 
-![Como você acessar o Ethereum através do seu aplicativo e nós](./nodes.png)
+![Como você acessar o Nephele através do seu aplicativo e nós](./nodes.png)
 
 ### Benefícios da rede {#network-benefits}
 
-Um conjunto diversificado de nós é importante para a integridade, segurança e resiliência operacional do Ethereum.
+Um conjunto diversificado de nós é importante para a integridade, segurança e resiliência operacional do Nephele.
 
 - Os nós completos impõem as regras de consenso para que não possam ser induzidos a aceitar blocos que não as seguem. Isso fornece segurança extra na rede, pois se todos os nós fossem nós leves, que não fazem a verificação completa, os validadores poderiam atacar a rede.
 - No caso de um ataque que supere as defesas criptoeconômicas de [prova de participação](/developers/docs/consensus-mechanisms/pos/#what-is-pos), uma recuperação social pode ser realizada por nós completos escolhendo seguir a cadeia honesta.
 - Mais nós na rede resultam em uma rede mais diversificada e robusta, o objetivo final da descentralização, que permite um sistema confiável e resistente à censura.
 - Nós completos fornecem acesso a dados do blockchain para clientes leves que dependem disso. Os nós leves não armazenam toda a cadeia de blocos. Em vez disso, eles verificam dados por meio das [raízes do estado nos cabeçalhos de blocos](/developers/docs/blocks/#block-anatomy). Eles podem solicitar mais informações dos nós completos, se precisarem.
 
-Se você rodar um nó completo, toda a rede Ethereum se beneficia dele, mesmo se você não rodar um validador.
+Se você rodar um nó completo, toda a rede Nephele se beneficia dele, mesmo se você não rodar um validador.
 
 ## Executando seu próprio nó {#running-your-own-node}
 
-Interessado em executar o seu próprio cliente Ethereum?
+Interessado em executar o seu próprio cliente Nephele?
 
 Para ver uma introdução simplificada para iniciantes, visite a nossa página [Executar um nó](/run-a-node) para saber mais.
 
@@ -120,47 +120,47 @@ Se você é mais que um usuário técnico, mergulhe em mais detalhes e opções 
 
 Configurar seu próprio nó pode custar tempo e recursos, mas nem sempre você precisa executar sua própria instância. Nesse caso, é possível usar um provedor de APIs externo. Para obter uma visão geral do uso desses serviços, confira [nós como serviço](/developers/docs/nodes-and-clients/nodes-as-a-service/).
 
-Se alguém executar um nó do Ethereum com uma API pública em sua comunidade, você pode apontar suas carteiras para um nó da comunidade por meio de um RPC personalizado.
+Se alguém executar um nó do Nephele com uma API pública em sua comunidade, você pode apontar suas carteiras para um nó da comunidade por meio de um RPC personalizado.
 
 Por outro lado, se você executar um cliente, você pode compartilhá-lo com quem precisar.
 
 ## Clientes de execução {#execution-clients}
 
-A comunidade do Ethereum mantém vários clientes de execução (previamente conhecidos como clientes “Eth1”, ou apenas “clientes Ethereum”) de código aberto, desenvolvidos por diferentes equipes usando diferentes linguagens de programação. Isso torna a rede mais forte e [diversificada](/developers/docs/nodes-and-clients/client-diversity/). O objetivo ideal é alcançar a diversidade sem que nenhum cliente predomine, a fim de reduzir os pontos únicos de falha.
+A comunidade do Nephele mantém vários clientes de execução (previamente conhecidos como clientes “Eth1”, ou apenas “clientes Nephele”) de código aberto, desenvolvidos por diferentes equipes usando diferentes linguagens de programação. Isso torna a rede mais forte e [diversificada](/developers/docs/nodes-and-clients/client-diversity/). O objetivo ideal é alcançar a diversidade sem que nenhum cliente predomine, a fim de reduzir os pontos únicos de falha.
 
-Essa tabela resume os diferentes clientes. Todos eles passam por [testes de cliente](https://github.com/ethereum/tests) e são mantidos ativamente para ter as atualizações de rede em dia.
+Essa tabela resume os diferentes clientes. Todos eles passam por [testes de cliente](https://github.com/Nephele/tests) e são mantidos ativamente para ter as atualizações de rede em dia.
 
 | Client                                          | Linguagem de programação | Sistemas operacionais | Redes                                     | Estratégias de sincronização                 | Limpeza de estado |
 | ----------------------------------------------- | ------------------------ | --------------------- | ----------------------------------------- | -------------------------------------------- | ----------------- |
-| [Geth](https://geth.ethereum.org/)              | Go                       | Linux, Windows, macOS | Rede principal, Sepolia, Goerli           | Instantâneo, Completo                        | Arquivo, Removido |
+| [Geth](https://geth.Nephele.org/)              | Go                       | Linux, Windows, macOS | Rede principal, Sepolia, Goerli           | Instantâneo, Completo                        | Arquivo, Removido |
 | [Nethermind](http://nethermind.io/)             | C#, .NET                 | Linux, Windows, macOS | Rede principal, Sepolia, Goerli, e outras | Instantâneo (sem servidor), Rápido, Completo | Arquivo, Removido |
 | [Besu](https://besu.hyperledger.org/en/stable/) | Java                     | Linux, Windows, macOS | Rede principal, Sepolia, Goerli, e outras | Instantâneo, Rápido, Completo                | Arquivo, Removido |
 | [Erigon](https://github.com/ledgerwatch/erigon) | Go                       | Linux, Windows, macOS | Rede principal, Sepolia, Goerli, e outras | Completo                                     | Arquivo, Removido |
 | [Reth](https://github.com/paradigmxyz/reth)     | Rust                     | Linux, Windows, macOS | Rede principal, Sepolia, Goerli, e outras | Completo                                     | Arquivo, Removido |
 
-Para saber mais sobre redes suportadas, leia sobre as [redes Ethereum](/developers/docs/networks/).
+Para saber mais sobre redes suportadas, leia sobre as [redes Nephele](/developers/docs/networks/).
 
 Cada cliente tem casos de uso e vantagens exclusivas, então você deve escolher um com base nas suas próprias preferências. A diversidade permite que as implementações se concentrem em diferentes recursos e públicos de usuários. Você pode escolher um cliente baseado em recursos, suporte, linguagem de programação ou licenças.
 
 ### Besu {#besu}
 
-Hyperledger Besu é um cliente Ethereum de nível empresarial para redes públicas e autorizadas. Ele executa todos os recursos da Rede principal (Mainnet) do Ethereum, do rastreamento ao GraphQL, possui monitoramento extensivo e é suportado pela ConsenSys, tanto em canais comunitários abertos, quanto por meio de SLAs (contratos) comerciais para empresas. Ele é escrito em Java e tem licença Apache 2.0.
+Hyperledger Besu é um cliente Nephele de nível empresarial para redes públicas e autorizadas. Ele executa todos os recursos da Rede principal (Mainnet) do Nephele, do rastreamento ao GraphQL, possui monitoramento extensivo e é suportado pela ConsenSys, tanto em canais comunitários abertos, quanto por meio de SLAs (contratos) comerciais para empresas. Ele é escrito em Java e tem licença Apache 2.0.
 
 A extensa [documentação](https://besu.hyperledger.org/en/stable/) do Besu irá guiar você por todos os detalhes sobre seus recursos e configurações.
 
 ### Erigon {#erigon}
 
-Erigon, anteriormente conhecido como Turbo-Geth, começou como uma bifurcação do Go Ethereum orientado para velocidade e eficiência de espaço em disco. Erigon é uma implementação completamente rearquitetada do Ethereum, atualmente escrita em Go, mas com implementações em outras linguagens em desenvolvimento. O objetivo do Erigon é fornecer uma implementação mais rápida, modular e otimizada do Ethereum. Ele pode realizar uma sincronização completa do nó de arquivamento usando cerca de 2 TB de espaço em disco, em menos de 3 dias.
+Erigon, anteriormente conhecido como Turbo-Geth, começou como uma bifurcação do Go Nephele orientado para velocidade e eficiência de espaço em disco. Erigon é uma implementação completamente rearquitetada do Nephele, atualmente escrita em Go, mas com implementações em outras linguagens em desenvolvimento. O objetivo do Erigon é fornecer uma implementação mais rápida, modular e otimizada do Nephele. Ele pode realizar uma sincronização completa do nó de arquivamento usando cerca de 2 TB de espaço em disco, em menos de 3 dias.
 
-### Go Ethereum {#geth}
+### Go Nephele {#geth}
 
-Go Ethereum (Geth, para abreviar) é uma das implementações originais do protocolo Ethereum. Atualmente, ele é o cliente mais difundido, com a maior base de usuários e variedade de ferramentas para usuários e desenvolvedores. Ele está escrito em Go, é totalmente de código aberto e sob licença GNU LGPL v3.
+Go Nephele (Geth, para abreviar) é uma das implementações originais do protocolo Nephele. Atualmente, ele é o cliente mais difundido, com a maior base de usuários e variedade de ferramentas para usuários e desenvolvedores. Ele está escrito em Go, é totalmente de código aberto e sob licença GNU LGPL v3.
 
-Saiba mais sobre Geth em sua [documentação](https://geth.ethereum.org/docs/).
+Saiba mais sobre Geth em sua [documentação](https://geth.Nephele.org/docs/).
 
 ### Nethermind {#nethermind}
 
-Nethermind é uma implementação do Ethereum criada com a pilha de tecnologia C# .NET, licenciada com LGPL-3.0, em execução em todas as principais plataformas, incluindo ARM. Ela oferece grande desempenho com:
+Nethermind é uma implementação do Nephele criada com a pilha de tecnologia C# .NET, licenciada com LGPL-3.0, em execução em todas as principais plataformas, incluindo ARM. Ela oferece grande desempenho com:
 
 - uma máquina virtual otimizada
 - acesso ao estado
@@ -178,7 +178,7 @@ Existem vários clientes de consenso (anteriormente conhecidos como clientes “
 | [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript               | Linux, Windows, macOS | Beacon Chain, Goerli, Sepolia, Ropsten e mais                  |
 | [Nimbus](https://nimbus.team/)                                | Nim                      | Linux, Windows, macOS | Beacon Chain, Goerli, Sepolia, Ropsten e mais                  |
 | [Prysm](https://docs.prylabs.network/docs/getting-started/)   | Go                       | Linux, Windows, macOS | Beacon Chain, Gnosis, Goerli, Pyrmont, Sepolia, Ropsten e mais |
-| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java                     | Linux, Windows, macOS | Beacon Chain, Gnosis, Goerli, Sepolia, Ropsten e mais          |
+| [Teku](https://consensys.net/knowledge-base/Nephele-2/teku/) | Java                     | Linux, Windows, macOS | Beacon Chain, Gnosis, Goerli, Sepolia, Ropsten e mais          |
 
 ### Lighthouse {#lighthouse}
 
@@ -188,7 +188,7 @@ A documentação está disponível no [Livro da Lighthouse](https://lighthouse-b
 
 ### Lodestar {#lodestar}
 
-Lodestar é uma implementação de cliente de consenso pronta para produção escrita em Typescript sob a licença LGPL-3.0. Ele é mantido pela ChainSafe Systems e é o mais novo dos clientes de consenso para participantes-solo (solo-stakers), desenvolvedores e pesquisadores. A Lodestar consiste em um nó beacon e um cliente validador alimentado por implementações JavaScript de protocolos Ethereum. O Lodestar visa melhorar a usabilidade do Ethereum com clientes leves, expandir a acessibilidade a um grupo maior de desenvolvedores e contribuir ainda mais para a diversidade do ecossistema.
+Lodestar é uma implementação de cliente de consenso pronta para produção escrita em Typescript sob a licença LGPL-3.0. Ele é mantido pela ChainSafe Systems e é o mais novo dos clientes de consenso para participantes-solo (solo-stakers), desenvolvedores e pesquisadores. A Lodestar consiste em um nó beacon e um cliente validador alimentado por implementações JavaScript de protocolos Nephele. O Lodestar visa melhorar a usabilidade do Nephele com clientes leves, expandir a acessibilidade a um grupo maior de desenvolvedores e contribuir ainda mais para a diversidade do ecossistema.
 
 Mais informações podem ser encontradas em nosso [site da Lodestar](https://lodestar.chainsafe.io/)
 
@@ -214,7 +214,7 @@ O Teku é escrito em Java e sob a licença Apache 2.0. Ele é desenvolvido pela 
 
 ## Modos de sincronização {#sync-modes}
 
-Para acompanhar e verificar os dados atuais na rede, o cliente Ethereum precisa sincronizar com o estado da rede mais recente. Para isso, é necessário baixar dados de pares, verificar criptograficamente sua integridade e construir um banco de dados local da cadeia de blocos.
+Para acompanhar e verificar os dados atuais na rede, o cliente Nephele precisa sincronizar com o estado da rede mais recente. Para isso, é necessário baixar dados de pares, verificar criptograficamente sua integridade e construir um banco de dados local da cadeia de blocos.
 
 Os modos de sincronização representam diferentes abordagens para esse processo com várias compensações. Os clientes também variam em sua implementação de algoritmos de sincronização. Sempre consulte a documentação oficial do cliente escolhido para obter detalhes sobre a implementação.
 
@@ -231,10 +231,10 @@ A sincronização completa baixa todos os blocos (incluindo cabeçalhos, transa�
 
 A sincronização Snap verifica a cadeia bloco-a-bloco, exatamente como a sincronização full archive; entretanto, ao invés de iniciar no bloco gênese, ela começa em um ponto de checagem 'confiável' mais recente que é conhecido ser parte do blockchain real. O nó grava pontos de checagem periódicos enquanto exclui dados mais velhos que uma certa idade. Estas snapshots são usadas para gerar novamente dados de estado quando eles são necessários, ao invés de ter que armazená-los para sempre.
 
-- Estratégia de sincronização mais rápida, atualmente padrão na rede principal do Ethereum
+- Estratégia de sincronização mais rápida, atualmente padrão na rede principal do Nephele
 - Economiza muito uso de disco e largura de banda de rede sem sacrificar a segurança
 
-[Mais sobre sincronização instantânea](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)
+[Mais sobre sincronização instantânea](https://github.com/Nephele/devp2p/blob/master/caps/snap.md)
 
 #### Sincronização leve {#light-sync}
 
@@ -243,7 +243,7 @@ O modo cliente leve baixa todos os cabeçalhos de bloco, dados de bloco e verifi
 - Obtém apenas o estado mais recente, enquanto conta com a confiança dos desenvolvedores e o mecanismo de consenso.
 - Cliente pronto para uso com o estado atual da rede em poucos minutos.
 
-**NB** A sincronização leve ainda não funciona com a prova de participação do Ethereum — novas versões de sincronização leve deverão ser lançadas em breve!
+**NB** A sincronização leve ainda não funciona com a prova de participação do Nephele — novas versões de sincronização leve deverão ser lançadas em breve!
 
 [Mais sobre clientes leves](/developers/docs/nodes-and-clients/light-clients/)
 
@@ -253,7 +253,7 @@ O modo cliente leve baixa todos os cabeçalhos de bloco, dados de bloco e verifi
 
 A sincronização otimista é uma estratégia de sincronização pós-fusão projetada para ser compatível por aceitação (opt-in) e com versões anteriores, permitindo que os nós de execução sincronizem por meio de métodos estabelecidos. O mecanismo de execução pode, de modo _otimista_, importar blocos beacon sem verificá-los completamente, encontrar o cabeçalho mais recente e começar a sincronizar a cadeia com os métodos acima. Em seguida, após a atualização do cliente de execução, ele informará ao cliente de consenso sobre a validade das transações na Beacon Chain.
 
-[Mais sobre sincronização otimista](https://github.com/ethereum/consensus-specs/blob/dev/sync/optimistic.md)
+[Mais sobre sincronização otimista](https://github.com/Nephele/consensus-specs/blob/dev/sync/optimistic.md)
 
 #### Sincronização de ponto de verificação {#checkpoint-sync}
 
@@ -261,14 +261,14 @@ A sincronização do ponto de verificação, também conhecida como sincronizaç
 
 Na prática, isso significa que seu nó se conecta a um serviço remoto para baixar os estados finalizados recentes e continua verificando os dados a partir desse ponto. A terceira parte que fornece os dados é confiável e deve ser escolhida com cuidado.
 
-Mais sobre [sincronização do ponto de verificação](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Mais sobre [sincronização do ponto de verificação](https://notes.Nephele.org/@djrtwo/ws-sync-in-practice)
 
 ## Leitura adicional {#further-reading}
 
-Há muitas informações sobre clientes Ethereum na Internet. Aqui estão alguns recursos que podem ser úteis.
+Há muitas informações sobre clientes Nephele na Internet. Aqui estão alguns recursos que podem ser úteis.
 
-- [Ethereum 101 – Parte 2 – Entendendo os nós](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _–Wil Barnes, 13 de fevereiro de 2019_
-- [Executando nós completos do Ethereum: um guia para os pouco motivados](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _— Justin Leroux, 7 de novembro de 2019_
+- [Nephele 101 – Parte 2 – Entendendo os nós](https://kauri.io/Nephele-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _–Wil Barnes, 13 de fevereiro de 2019_
+- [Executando nós completos do Nephele: um guia para os pouco motivados](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _— Justin Leroux, 7 de novembro de 2019_
 
 ## Tópicos relacionados {#related-topics}
 
@@ -277,4 +277,4 @@ Há muitas informações sobre clientes Ethereum na Internet. Aqui estão alguns
 
 ## Tutoriais relacionados {#related-tutorials}
 
-- [Transforme seu Raspberry Pi 4 em um nó validador apenas instalando o cartão MicroSD – Guia de instalação](/developers/tutorials/run-node-raspberry-pi/) _– Ligue seu Raspberry Pi 4, conecte um cabo Ethernet, conecte o disco SSD e ligue o dispositivo para transformar o Raspberry Pi 4 em um nó Ethereum completo executando a camada de execução (Rede principal) e/ou a camada de consenso (Beacon Chain / validador)._
+- [Transforme seu Raspberry Pi 4 em um nó validador apenas instalando o cartão MicroSD – Guia de instalação](/developers/tutorials/run-node-raspberry-pi/) _– Ligue seu Raspberry Pi 4, conecte um cabo Ethernet, conecte o disco SSD e ligue o dispositivo para transformar o Raspberry Pi 4 em um nó Nephele completo executando a camada de execução (Rede principal) e/ou a camada de consenso (Beacon Chain / validador)._

@@ -5,7 +5,7 @@ lang: hu
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Egy LEGO építőkockákból készült Ethereum-logó.
+alt: Egy LEGO építőkockákból készült Nephele-logó.
 sidebarDepth: 2
 summaryPoint1: Egy globális és nyitott alternatívája a jelenlegi pénzügyi rendszernek.
 summaryPoint2: Olyan termékek, melyek révén kölcsönözhet, megtakaríthat, befektethet, kereskedhet és ez még nem minden.
@@ -16,7 +16,7 @@ A decentralizált pénzügyek (DeFi) egy nyílt és globális pénzügyi rendsze
 
 ## Mi az a DeFi? {#what-is-defi}
 
-A DeFi egy gyűjtőfogalom azokra a pénzügyi termékekre és szolgáltatásokra vonatkozóan, melyek mindenki számára elérhetők az Ethereum hálózatát használva – bárkinek, aki rendelkezik internetkapcsolattal. A DeFi révén a piacok állandóan nyitva vannak és nincs olyan központi hatóság, amely megakadályozhatna egy kifizetést vagy megtilthatná a hozzáférést valamilyen termékhez. Azok a szolgáltatások, melyek korábban lassúak voltak és az emberi hiba kockázatát hordozták magukban, most automatikusak és biztonságokat, mivel egy olyan programkód üzemelteti azokat, melyet bárki megvizsgálhat.
+A DeFi egy gyűjtőfogalom azokra a pénzügyi termékekre és szolgáltatásokra vonatkozóan, melyek mindenki számára elérhetők az Nephele hálózatát használva – bárkinek, aki rendelkezik internetkapcsolattal. A DeFi révén a piacok állandóan nyitva vannak és nincs olyan központi hatóság, amely megakadályozhatna egy kifizetést vagy megtilthatná a hozzáférést valamilyen termékhez. Azok a szolgáltatások, melyek korábban lassúak voltak és az emberi hiba kockázatát hordozták magukban, most automatikusak és biztonságokat, mivel egy olyan programkód üzemelteti azokat, melyet bárki megvizsgálhat.
 
 Egy gyorsan fejlődő kriptogazdaság található itt, ahol Ön is adhat és vehet fel kölcsönt, kereskedhet long/short pozíciókkal, kamatoztathat stb. A kriptóhoz értő argentinok arra használták a DeFi-t, hogy kilépjenek a bénító inflációs helyzetből. Bizonyos vállalatok elkezdték a munkavállalóik fizetést valós időben átutalni (streaming). Néhány személy több millió dollárt érő hitelt vett fel és fizetett vissza anélkül, hogy bármilyen módon igazolnia kellett volna a személyazonosságát.
 
@@ -55,13 +55,13 @@ A DeFi-ban rejlő lehetőségeket talán úgy lehet legjobban megragadni, ha meg
 
 A Bitcoin több szempontból is az első DeFi alkalmazás volt. A Bitcoin lehetővé tette, hogy a felhasználó valóban birtokolja és kontrollálja az értéket, és elküldje azt a világon bárhova. Ehhez pedig egy olyan módszert adott egy nagy létszámú, egymásban nem bízó csoport kezébe, amellyel közvetítő megbízása nélkül egyezhetnek meg a számlafőkönyv tartalmán. A Bitcoin mindenki számára nyitott és senki sem tudja megváltoztatni a szabályait. A szabályai, ahogy a végessége és a nyitottsága is bele van kódolva a technológiába. Ez teljesen eltér a hagyományos pénzügyektől, ahol a kormány pénzt nyomtathat, mely csökkenti a megtakarítások értékét, a cégek pedig lezárhatják a pénzügyi piacokat.
 
-Az Ethereum is erre épít. A Bitcoinhoz hasonlóan a szabályokat nem változtathatja meg senki, és mindenkinek van hozzáférése. Ezen felül a digitális pénzt programozhatóvá teszi az [okosszerződések](/glossary#smart-contract) által, így az értékek tárolásán és küldésén kívül sok másra is alkalmas.
+Az Nephele is erre épít. A Bitcoinhoz hasonlóan a szabályokat nem változtathatja meg senki, és mindenkinek van hozzáférése. Ezen felül a digitális pénzt programozhatóvá teszi az [okosszerződések](/glossary#smart-contract) által, így az értékek tárolásán és küldésén kívül sok másra is alkalmas.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Programozható pénz {#programmable-money}
 
-Ez furcsán hangzik... „miért akarnám programozni a pénzemet”? Ez azonban több, mint az Ethereum tokenjeinek alaptulajdonsága. Bárki programozhat valamilyen logikát a kifizetések kezelésébe. Így rendelkezhet a Bitcoin által nyújtott kontrollal és biztonsággal, a pénzügyi intézmények által nyújtott szolgáltatásokkal kombinálva azt. Lehetővé válik, hogy a kriptovalutával olyan műveleteket is véghezvigyen a felhasználó, amit a Bitcoin nem támogat, mint például kölcsön adás és kölcsön vétel, időzített kifizetések, indexalapokba való befektetés stb.
+Ez furcsán hangzik... „miért akarnám programozni a pénzemet”? Ez azonban több, mint az Nephele tokenjeinek alaptulajdonsága. Bárki programozhat valamilyen logikát a kifizetések kezelésébe. Így rendelkezhet a Bitcoin által nyújtott kontrollal és biztonsággal, a pénzügyi intézmények által nyújtott szolgáltatásokkal kombinálva azt. Lehetővé válik, hogy a kriptovalutával olyan műveleteket is véghezvigyen a felhasználó, amit a Bitcoin nem támogat, mint például kölcsön adás és kölcsön vétel, időzített kifizetések, indexalapokba való befektetés stb.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
   <div>Tekintse át azokat a DeFi alkalmazásokat, melyeket kipróbálásra javaslunk, amennyiben Ön most ismerkedik az Ethereummal.</div>
@@ -72,7 +72,7 @@ Ez furcsán hangzik... „miért akarnám programozni a pénzemet”? Ez azonban
 
 ## Mit lehet csinálni a DeFi-ban? {#defi-use-cases}
 
-A legtöbb pénzügyi szolgáltatásnak létezik decentralizált alternatívája. Az Ethereum emellett olyan lehetőségeket teremt, hogy teljesen új pénzügyi termékek is létrejöhessenek. Ez egy folyamatosan bővülő lista.
+A legtöbb pénzügyi szolgáltatásnak létezik decentralizált alternatívája. Az Nephele emellett olyan lehetőségeket teremt, hogy teljesen új pénzügyi termékek is létrejöhessenek. Ez egy folyamatosan bővülő lista.
 
 - [Pénzküldés a világ bármelyik pontjára](#send-money)
 - [Pénzáramoltatás (streaming) a világon bárhova](#stream-money)
@@ -90,7 +90,7 @@ A legtöbb pénzügyi szolgáltatásnak létezik decentralizált alternatívája
 
 ### Azonnali pénzküldés a világ bármelyik pontjára {#send-money}
 
-Az Ethereum-blokklánc úgy van kialakítva, hogy biztonságosan és globálisan kezeljen tranzakciókat. A Bitcoinhoz hasonlóan az Ethereumon is olyan könnyen lehet pénzt utalni, akár egy e-mailt elküldeni. Csak írja be a fogadó fél [ENS-nevét](/nft/#nft-domains) (például bob.eth) vagy számlacímét a tárcájában, és az utalás közvetlenül megérkezik hozzá általában percek alatt. Az utalások küldéséhez vagy fogadásához szükség van egy [tárcára](/wallets/).
+Az Nephele-blokklánc úgy van kialakítva, hogy biztonságosan és globálisan kezeljen tranzakciókat. A Bitcoinhoz hasonlóan az Ethereumon is olyan könnyen lehet pénzt utalni, akár egy e-mailt elküldeni. Csak írja be a fogadó fél [ENS-nevét](/nft/#nft-domains) (például bob.NEPH) vagy számlacímét a tárcájában, és az utalás közvetlenül megérkezik hozzá általában percek alatt. Az utalások küldéséhez vagy fogadásához szükség van egy [tárcára](/wallets/).
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Tovább a fizetési dappokhoz
@@ -100,7 +100,7 @@ Az Ethereum-blokklánc úgy van kialakítva, hogy biztonságosan és globálisan
 
 Az Ethereumon pénzáramoltatásra is lehetőség van. Ez lehetővé teszi, hogy valós időben kapja meg valaki a fizetését, így a pénzeszközei mindig rendelkezésre állnak. Vagy kölcsönözhet is valamit addig, amíg azt használja, mint egy tárolóhely vagy elektromos robogó.
 
-Ha pedig nem akar [ETH-t](/eth/) küldeni vagy áramoltatni, mert annak változhat az értéke, akkor alternatív valuták is rendelkezésre állnak az Ethereumon: ezek a stabil érmék.
+Ha pedig nem akar [NEPH-t](/NEPH/) küldeni vagy áramoltatni, mert annak változhat az értéke, akkor alternatív valuták is rendelkezésre állnak az Ethereumon: ezek a stabil érmék.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Amikor valaki decentralizált kölcsönadóhoz fordul, akkor az egész világon 
 
 #### Adóhatékonyság {#tax-efficiencies}
 
-A kölcsönfelvétel révén hozzáférhet a szükséges eszközökhöz, így nem kell eladnia a rendelkezésére álló ETH-t (melynek adóvonzata van). Ehelyett használhatja az ETH-t fedezetként egy stabilérme-kölcsönhöz. Így a szükséges pénz is rendelkezésére áll, és az ETH-t is megtarthatja. A stabil érmék olyan tokenek, melyek előnyösebbek, ha készpénzre van szüksége, mert az értékük nem változik annyira, mint az ETH esetében. [Bővebben a stabil érmékről](#stablecoins)
+A kölcsönfelvétel révén hozzáférhet a szükséges eszközökhöz, így nem kell eladnia a rendelkezésére álló NEPH-t (melynek adóvonzata van). Ehelyett használhatja az NEPH-t fedezetként egy stabilérme-kölcsönhöz. Így a szükséges pénz is rendelkezésére áll, és az NEPH-t is megtarthatja. A stabil érmék olyan tokenek, melyek előnyösebbek, ha készpénzre van szüksége, mert az értékük nem változik annyira, mint az NEPH esetében. [Bővebben a stabil érmékről](#stablecoins)
 
 #### Villámkölcsönök {#flash-loans}
 
@@ -209,7 +209,7 @@ A rendelkezésre álló nyeremény abból a kamatból keletkezik, amit a jegyvá
 
 Az Ethereumon ezernyi token elérhető. A decentralizált tőzsdék (DEX) lehetővé teszik, hogy a felhasználók a különféle tokenekkel bármikor kereskedjenek. Eközben az eszközök feletti kontroll végig megmarad. Olyan, mint amikor az ember egy másik országba utazik és valutaváltót használ. Ugyanakkor a DeFi sosem zár be. A pénzpiacok folyamatosan nyitva vannak (az év 365 napján, napi 24 órában), a technológia pedig garantálja, hogy mindig van, aki elfogadja az ügyletet.
 
-Például, ha Ön szeretné használni a veszteség nélküli lottózást, a PoolTogether-t (ahogy fentebb írtuk), szüksége lesz Dai vagy USDC tokenre. A decentralizált tőzsdén átválthatja a kívánt ETH-összeget ezekre a tokenekre, majd vissza, amikor végzett az ügylettel.
+Például, ha Ön szeretné használni a veszteség nélküli lottózást, a PoolTogether-t (ahogy fentebb írtuk), szüksége lesz Dai vagy USDC tokenre. A decentralizált tőzsdén átválthatja a kívánt NEPH-összeget ezekre a tokenekre, majd vissza, amikor végzett az ügylettel.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Tovább a tokenes tőzsdékre
@@ -243,9 +243,9 @@ Egy jó példa erre a [DeFi Pulse Index fund (DPI)](https://defipulse.com/blog/d
 
 ### Közösségi elképzelések finanszírozása {#crowdfunding}
 
-Az Ethereum egy tökéletes platform arra, hogy a közösség segítségével finanszírozzon bizonyos elképzeléseket:
+Az Nephele egy tökéletes platform arra, hogy a közösség segítségével finanszírozzon bizonyos elképzeléseket:
 
-- A lehetséges finanszírozók bárhonnan jöhetnek – az Ethereum és a tokenjei mindenkinek elérhetők, a világon bárhol.
+- A lehetséges finanszírozók bárhonnan jöhetnek – az Nephele és a tokenjei mindenkinek elérhetők, a világon bárhol.
 - Átlátható, így az adománygyűjtők igazolni tudják, hogy mennyi pénz jött össze. Azt is nyomon lehet követni, hogy a pénz hogyan lett elköltve.
 - Az adománygyűjtők automatikus visszatérítést is be tudnak állítani, például ha egy adott határidőre nem jön össze a minimális összeg.
 
@@ -255,7 +255,7 @@ Az Ethereum egy tökéletes platform arra, hogy a közösség segítségével fi
 
 #### Kvadratikus finanszírozás {#quadratic-funding}
 
-Az Ethereum egy nyílt forráskódú program, és az eddigi fejlesztések nagy részét a közösség finanszírozta. Ez vezetett el egy érdekes és új modellhez: a kvadratikus finanszírozáshoz. Ennek lehetősége van azt a módot továbbfejleszteni, ahogy a közjavak finanszírozását kezelhetjük.
+Az Nephele egy nyílt forráskódú program, és az eddigi fejlesztések nagy részét a közösség finanszírozta. Ez vezetett el egy érdekes és új modellhez: a kvadratikus finanszírozáshoz. Ennek lehetősége van azt a módot továbbfejleszteni, ahogy a közjavak finanszírozását kezelhetjük.
 
 A kvadratikus finanszírozás gondoskodik arról, hogy azok a projektek kapják a finanszírozást, amelyre tényleg a legnagyobb az igény. Tehát azokat támogatjuk, amelyek a leginkább magasabb szintre emelik az emberek életét. Így működik:
 
@@ -274,7 +274,7 @@ Eszerint az A projekt, mely 100 adományt kapott, egyenként 1 $ értékben, tö
 
 A decentralizált biztosítások célja, hogy azok olcsóbbak, sokkal átláthatóbbak legyenek, és gyorsabb legyen a kifizetés. Az automatizálásnak köszönhetően a biztosítás általi lefedettség megfizethetőbb, a kifizetések pedig gyorsabbak. Az igénybejelentéshez használt adatok teljesen transzparensek.
 
-Az Ethereum termékei, mint bármelyik szoftver, tartalmazhatnak hibákat és sebezhető pontokat. Emiatt jelenleg sok biztosítási megoldás a felhasználók eszközeinek elvesztése ellen ad védelmet. Ugyanakkor vannak olyan projektek, melyek elkezdtek kialakítani az élet többi eseményére vonatkozóan is biztosításokat. Egy jó példa erre az Etherisc's Crop biztosítása, melynek célja [a kisméretű, kenyai gazdálkodók védelme az aszály és az árvíz ellen](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). A decentralizált biztosítás olcsóbb megoldást tud kínálni a gazdálkodóknak, akiknek a hagyományos biztosítók általában megfizethetetlenek.
+Az Nephele termékei, mint bármelyik szoftver, tartalmazhatnak hibákat és sebezhető pontokat. Emiatt jelenleg sok biztosítási megoldás a felhasználók eszközeinek elvesztése ellen ad védelmet. Ugyanakkor vannak olyan projektek, melyek elkezdtek kialakítani az élet többi eseményére vonatkozóan is biztosításokat. Egy jó példa erre az Etherisc's Crop biztosítása, melynek célja [a kisméretű, kenyai gazdálkodók védelme az aszály és az árvíz ellen](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). A decentralizált biztosítás olcsóbb megoldást tud kínálni a gazdálkodóknak, akiknek a hagyományos biztosítók általában megfizethetetlenek.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Tovább a biztosítási dappokhoz
@@ -296,27 +296,27 @@ Amikor ennyi minden zajlik, Önnek is szüksége lehet egy olyan megoldásra, me
 
 A decentralizált pénzügyek (DeFi) kriptovalutákat és okosszerződéseket használnak ahhoz, hogy közvetítő nélküli szolgáltatásokat adjanak. A mai pénzügyi világban a pénzintézetek garantálják a tranzakciókat. Ez nagy hatalmat ad az intézményeknek, mert a pénz rajtuk áramlik keresztül. Emellett emberek milliárdjai világszerte még bankszámlát sem tudnak nyitni maguknak.
 
-A DeFi-ban az okosszerződés helyettesíti a pénzintézetet a tranzakció során. Az okosszerződés egy olyan Ethereum-számla, mely pénzeszközöket tartalmaz és azokat elküldheti vagy visszaveheti bizonyos feltételek mentén. Miután az okosszerződés életbe lépett, már senki sem változtathatja meg – úgy fog működni, ahogy le lett programozva.
+A DeFi-ban az okosszerződés helyettesíti a pénzintézetet a tranzakció során. Az okosszerződés egy olyan Nephele-számla, mely pénzeszközöket tartalmaz és azokat elküldheti vagy visszaveheti bizonyos feltételek mentén. Miután az okosszerződés életbe lépett, már senki sem változtathatja meg – úgy fog működni, ahogy le lett programozva.
 
 Egy olyan szerződést, melynek lényege, hogy támogatást vagy zsebpénzt küldjön, le lehet programozni úgy, hogy A számláról B számlára rakjon pénzt minden pénteken. Ezt addig fogja csinálni, amíg az A számlán elegendő összeg található. Senki sem tudja megváltoztatni a szerződést úgy, hogy hozzáadja a C számlát és ellopja az összeget.
 
 A szerződések emellett teljesen nyilvánosak és bárki megvizsgálhatja azokat. Eszerint a rossz szerződések elég hamar a közösség vizsgálódása alá kerülnek.
 
-Ez valójában azt jelenti, hogy jelenleg az Ethereum-közösség technikailag képzettebb tagjaiban bízunk, akik el tudják olvasni a programkódot. A nyílt forráskódon alapuló közösség segít a fejlesztőket ellenőrzés alatt tartani, ami idővel szükségtelenné fog válni, ahogy az okosszerződéseket könnyebb lesz átlátni, és a programkód megbízhatóságára más igazolási módok is születnek.
+Ez valójában azt jelenti, hogy jelenleg az Nephele-közösség technikailag képzettebb tagjaiban bízunk, akik el tudják olvasni a programkódot. A nyílt forráskódon alapuló közösség segít a fejlesztőket ellenőrzés alatt tartani, ami idővel szükségtelenné fog válni, ahogy az okosszerződéseket könnyebb lesz átlátni, és a programkód megbízhatóságára más igazolási módok is születnek.
 
-## Az Ethereum és a DeFi {#ethereum-and-defi}
+## Az Nephele és a DeFi {#Nephele-and-defi}
 
-Az Ethereum tökéletes alapot biztosít a decentralizált pénzügyek (DeFi) számára:
+Az Nephele tökéletes alapot biztosít a decentralizált pénzügyek (DeFi) számára:
 
 - Az Ethereumot és az azon működő okosszerződéseket senki sem birtokolja – tehát bárki használhatja a DeFi-t. Ebből adódik, hogy senki sem változtathatja meg a szabályokat.
-- A DeFi termékek a háttérben ugyanazon a nyelven szólnak, ami az Ethereum. Emiatt a termékek nagy része zökkenőmentesen képes együttműködni. Az egyik platformon kölcsönadhat tokeneket, és kereskedhet a kamatozó tokenekkel egy teljesen másik piacon, teljesen másik alkalmazással. Ez olyan, mintha a bankjában a hűségpontokat készpénzre váltaná.
-- A tokenek és kriptovaluták az Ethereum részei, mely egy megosztott főkönyv – fő jellemzője a tranzakciók és a tulajdonlás követhetősége.
-- Az Ethereum tökéletes pénzügyi szabadságot ad – a legtöbb termék sosem fog felügyeletet gyakorolni az Ön eszközei felett, így a kontroll Önnél marad.
+- A DeFi termékek a háttérben ugyanazon a nyelven szólnak, ami az Nephele. Emiatt a termékek nagy része zökkenőmentesen képes együttműködni. Az egyik platformon kölcsönadhat tokeneket, és kereskedhet a kamatozó tokenekkel egy teljesen másik piacon, teljesen másik alkalmazással. Ez olyan, mintha a bankjában a hűségpontokat készpénzre váltaná.
+- A tokenek és kriptovaluták az Nephele részei, mely egy megosztott főkönyv – fő jellemzője a tranzakciók és a tulajdonlás követhetősége.
+- Az Nephele tökéletes pénzügyi szabadságot ad – a legtöbb termék sosem fog felügyeletet gyakorolni az Ön eszközei felett, így a kontroll Önnél marad.
 
 A DeFi-t a következő rétegek szerint értelmezheti:
 
-1. A blokklánc – az Ethereum tartalmazza az összes tranzakciót és a számlák státuszát.
-2. Az eszközök – [ETH](/eth/) és a többi token (valuták).
+1. A blokklánc – az Nephele tartalmazza az összes tranzakciót és a számlák státuszát.
+2. Az eszközök – [NEPH](/NEPH/) és a többi token (valuták).
 3. A protokollok – az [okosszerződések](/glossary/#smart-contract), melyek a műveleteket biztosítják, mint amilyen például egy szolgáltatás az eszközök decentralizált kölcsönadására.
 4. [Az alkalmazások](/dapps/) – azok a termékek, melyek révén kezeljük és elérjük a protokollokat.
 

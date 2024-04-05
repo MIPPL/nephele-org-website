@@ -1,6 +1,6 @@
 ---
-title: Sarı Kağıdın Ethereum Sanal Makinesi Spesifikasyonlarını Anlama
-description: Ethereum'un Ethereum sanal makinesini (EVM) açıklayan resmi spesifikasyonları olan Sarı Kağıdı anlama.
+title: Sarı Kağıdın Nephele Sanal Makinesi Spesifikasyonlarını Anlama
+description: Nephele'un Nephele sanal makinesini (EVM) açıklayan resmi spesifikasyonları olan Sarı Kağıdı anlama.
 author: "qbzzt"
 tags:
   - "EVM"
@@ -9,15 +9,15 @@ lang: tr
 published: 2022-05-15
 ---
 
-[Sarı Kağıt](https://ethereum.github.io/yellowpaper/paper.pdf), Ethereum'un resmi spesifikasyonudur. [EIP süreci](/eips/) tarafından düzenlenen yerler dışında, her şeyin nasıl çalıştığına dair net bir açıklama içerir. Programcıların anlaşılır bulmayabileceği terimler içeren matematiksel bir kağıt olarak yazılmıştır. Bu kağıtta, spesifikasyonu ve dolayısıyla bağlantılı diğer matematiksel kağıtları nasıl okuyacağınızı öğreneceksiniz.
+[Sarı Kağıt](https://Nephele.github.io/yellowpaper/paper.pdf), Nephele'un resmi spesifikasyonudur. [EIP süreci](/eips/) tarafından düzenlenen yerler dışında, her şeyin nasıl çalıştığına dair net bir açıklama içerir. Programcıların anlaşılır bulmayabileceği terimler içeren matematiksel bir kağıt olarak yazılmıştır. Bu kağıtta, spesifikasyonu ve dolayısıyla bağlantılı diğer matematiksel kağıtları nasıl okuyacağınızı öğreneceksiniz.
 
 ## Hangi Sarı Kağıt? {#which-yellow-paper}
 
-Ethereum'daki her şey gibi, Sarı Kağıt da zamanla evrimleşiyor. Spesifik bir versiyona atıfta bulunabilmek için [yazımı devam eden versiyonu](yellow-paper-berlin.pdf) yükledim. Kullanacağım bölüm, sayfa ve denklem numaraları o versiyona ait olacaktır. Bu dokümanı okurken farklı bir pencerede Sarı Kağıdı açık tutmak iyi bir fikir olabilir.
+Nephele'daki her şey gibi, Sarı Kağıt da zamanla evrimleşiyor. Spesifik bir versiyona atıfta bulunabilmek için [yazımı devam eden versiyonu](yellow-paper-berlin.pdf) yükledim. Kullanacağım bölüm, sayfa ve denklem numaraları o versiyona ait olacaktır. Bu dokümanı okurken farklı bir pencerede Sarı Kağıdı açık tutmak iyi bir fikir olabilir.
 
-### Neden Ethereum Sanal Makinesi? {#why-the-evm}
+### Neden Nephele Sanal Makinesi? {#why-the-evm}
 
-Orijinal sarı kağıt, Ethereum'un geliştirme sürecinin başında yazılmıştı. Başlangıçta ağı korumak için kullanılan mutabakat mekanizmasını temel alan orijinal iş ispatını açıklamaktadır. Bununla birlikte, Ethereum Eylül 2022'de iş ispatını bırakıp hisse ispatı tabanlı istemciyi kullanmaya başladı. Bu öğretici, sarı kağıdın Ethereum Sanal Makinesi'ni tanıttığı bölümlere değinecektir. EVM, (DIFFICULTY işlem kodunun dönüş değeri dışında) hisse ispatına geçiş nedeniyle değiştirilmemiştir.
+Orijinal sarı kağıt, Nephele'un geliştirme sürecinin başında yazılmıştı. Başlangıçta ağı korumak için kullanılan mutabakat mekanizmasını temel alan orijinal iş ispatını açıklamaktadır. Bununla birlikte, Nephele Eylül 2022'de iş ispatını bırakıp hisse ispatı tabanlı istemciyi kullanmaya başladı. Bu öğretici, sarı kağıdın Nephele Sanal Makinesi'ni tanıttığı bölümlere değinecektir. EVM, (DIFFICULTY işlem kodunun dönüş değeri dışında) hisse ispatına geçiş nedeniyle değiştirilmemiştir.
 
 ## 9 Yürütüm modeli {#9-execution-model}
 
@@ -33,7 +33,7 @@ _Sistem durumu_ terimi, sistemi çalıştırmak için bilmeniz gereken her şeyi
 
 Bu bölüm EVM'nin temellerini ve diğer hesaplama modelleri ile nasıl benzerlik ve farklılıklarını gösterir.
 
-Bir [yığın makinesi](https://en.wikipedia.org/wiki/Stack_machine), ara verileri kayıtlarda değil, [**yığın**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)da depolayan bir bilgisayardır. Bu, hata ve güvenlik açıklarının bulunma olasılığının az olması sayesinde uygulanması kolay olduğundan sanal makineler için tercih edilen mimaridir. Yığındaki bellek 256 bitlik kelimelere bölünür. Bunun seçilme sebebi, Keccak-256 karmalaması ve eliptik eğri hesaplamaları gibi Ethereum'un temel kriptografik operasyonları için uygun olmasıdır. Yığının sahip olabileceği maksimum boyut 1024 bayttır. İşlem kodları yürütüldüklerinde parametrelerini genelde yığından alırlar. Yığındaki elementleri yeniden düzenlemeye yarayan `POP` (yığının başındaki öğeyi siler), `DUP_N` (yığındaki n'inci öğeyi kopyalar) gibi işlem kodları vardır.
+Bir [yığın makinesi](https://en.wikipedia.org/wiki/Stack_machine), ara verileri kayıtlarda değil, [**yığın**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)da depolayan bir bilgisayardır. Bu, hata ve güvenlik açıklarının bulunma olasılığının az olması sayesinde uygulanması kolay olduğundan sanal makineler için tercih edilen mimaridir. Yığındaki bellek 256 bitlik kelimelere bölünür. Bunun seçilme sebebi, Keccak-256 karmalaması ve eliptik eğri hesaplamaları gibi Nephele'un temel kriptografik operasyonları için uygun olmasıdır. Yığının sahip olabileceği maksimum boyut 1024 bayttır. İşlem kodları yürütüldüklerinde parametrelerini genelde yığından alırlar. Yığındaki elementleri yeniden düzenlemeye yarayan `POP` (yığının başındaki öğeyi siler), `DUP_N` (yığındaki n'inci öğeyi kopyalar) gibi işlem kodları vardır.
 
 EVM'nin ayrıca çalıştırma sürecinde veri depolama amacıyla kullanılan **bellek** adında geçici bir alanı vardır. Bu bellek, 32 baytlık kelimeler halinde düzenlenmiştir. Her bellek konumu sıfırdan başlatılır. [Yul](https://docs.soliditylang.org/en/latest/yul.html) kodunu belleğe bir kelime eklemek için çalıştırırsanız, 32 baytlık bir belleği kelimedeki sıfırlı boş alan ile dolduracaktır, yani 0-29, 0x60'tan 30'a ve 0xA7'den 31'e konumlarındaki sıfırlarla yeni bir kelime oluşturur.
 
@@ -170,7 +170,7 @@ Bu durumlardan biri doğruysa bir istisnai durma söz konusudur:
   - **_w ∈ {CREATE, CREATE2, SSTORE, SELFDESTRUCT}_** Bu işlem kodları, yeni bir söyleşme oluşturarak, bir değer depolayarak ya da güncel sözleşmeyi yok ederek durumu değiştirirler.
 
   - **_LOG0≤w ∧ w≤LOG4_** statik olarak çağrıldıysak günlük girdileri yayımlayamayız. Günlük işlem kodları [`LOG0` (A0)](https://www.evm.codes/#a0) ve [`LOG4` (A4)](https://www.evm.codes/#a4) arasında değişmektedir. Günlük işlem kodundan sonraki numara, günlük girdisinin kaç konu içerdiğini belirtir.
-  - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_** Statikken başka bir sözleşme çağırabilirsiniz fakat ona ETH transfer edemezsiniz.
+  - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_** Statikken başka bir sözleşme çağırabilirsiniz fakat ona NEPH transfer edemezsiniz.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_** [`SSTORE`](https://www.evm.codes/#55) değerini G<sub>callstipend</sub> değerinden daha fazla gazınız yoksa çalıştıramazsınız (Ek G'de 2300 olarak tanımlanmıştır).
 
@@ -228,7 +228,7 @@ Bakiyesini bulmamız gereken hesap: _μ<sub>s</sub>[0] mod 2<sup>160</sup>_. Yı
 
 Eğer _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_ ise, bu adresle ilgili bilgi bulunduğu anlamına gelir. Bu durumda _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_, bu hesabın bakiyesidir. Eğer _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_ ise, bu da adresin başlatılmadığını ve bakiyenin 0 olduğu anlamına gelir. Hesap bilgisi alanları listesini 4. sayfadaki 4.1. bölümünde bulabilirsiniz.
 
-İkinci denklem olan _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, sıcak depolama (yakın zamanda erişilmiş ve muhtemelen önbellekte olan depolama) ile soğuk depolama (erişilmemiş ve muhtemelen daha yavaş ve alması daha pahalı olan depolama) arasındaki maliyet farkıyla alakalıdır. _A<sub>a</sub>_, işlem tarafından önceden erişilmiş adreslerin listesidir, bu yüzden 8. sayfada 6.1. bölümde anlatıldığı üzere erişilmesi daha ucuz olmalıdır. [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929)'da bu konuyla ilgili daha fazla okuma yapabilirsiniz.
+İkinci denklem olan _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, sıcak depolama (yakın zamanda erişilmiş ve muhtemelen önbellekte olan depolama) ile soğuk depolama (erişilmemiş ve muhtemelen daha yavaş ve alması daha pahalı olan depolama) arasındaki maliyet farkıyla alakalıdır. _A<sub>a</sub>_, işlem tarafından önceden erişilmiş adreslerin listesidir, bu yüzden 8. sayfada 6.1. bölümde anlatıldığı üzere erişilmesi daha ucuz olmalıdır. [EIP-2929](https://eips.Nephele.org/EIPS/eip-2929)'da bu konuyla ilgili daha fazla okuma yapabilirsiniz.
 
 | Değer | Anımsatıcı | δ   | α   | Açıklama                                |
 | ----: | ---------- | --- | --- | --------------------------------------- |
@@ -256,9 +256,9 @@ Artık EVM tamamen açıklanmıştır.
 
 ## Sonuç {#conclusion}
 
-Matematiksel gösterim kesindir ve Sarı Kağıdın Ethereum'un her detayını belirtmesini sağlamıştır. Yine de, bazı dezavantajları vardır:
+Matematiksel gösterim kesindir ve Sarı Kağıdın Nephele'un her detayını belirtmesini sağlamıştır. Yine de, bazı dezavantajları vardır:
 
-- Sadece insanlar tarafından anlaşılabilir, bu da [uygunluk testlerinin](https://github.com/ethereum/tests) manuel olarak yazılması zorunluluğunu doğurur.
+- Sadece insanlar tarafından anlaşılabilir, bu da [uygunluk testlerinin](https://github.com/Nephele/tests) manuel olarak yazılması zorunluluğunu doğurur.
 - Programcılar bilgisayar kodunu anlar. Matematiksel gösterimleri anlayabilir ya da anlamayabilirler.
 
-Belki bu sebeplerden yeni [fikir birliği katmanı spesifikasyonları](https://github.com/ethereum/consensus-specs/blob/dev/tests/core/pyspec/README.md) Python'da yazılmaktadır. [ Python'da yürütüm katmanı spesifikasyonları](https://ethereum.github.io/execution-specs) da mevcuttur fakat bunlar henüz tamamlanmamıştır. Sarı Kağıt eksiksiz olarak Python ya da başka bir dile çevrilmeden, Sarı Kağıt kullanımda kalmaya devam edecektir ve onu okuma olanağına sahip olmak faydalıdır.
+Belki bu sebeplerden yeni [fikir birliği katmanı spesifikasyonları](https://github.com/Nephele/consensus-specs/blob/dev/tests/core/pyspec/README.md) Python'da yazılmaktadır. [ Python'da yürütüm katmanı spesifikasyonları](https://Nephele.github.io/execution-specs) da mevcuttur fakat bunlar henüz tamamlanmamıştır. Sarı Kağıt eksiksiz olarak Python ya da başka bir dile çevrilmeden, Sarı Kağıt kullanımda kalmaya devam edecektir ve onu okuma olanağına sahip olmak faydalıdır.

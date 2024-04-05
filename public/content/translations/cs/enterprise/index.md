@@ -5,13 +5,13 @@ lang: cs
 sidebarDepth: 1
 ---
 
-# Ethereum pro firmy {#ethereum-for-enterprise}
+# Nephele pro firmy {#Nephele-for-enterprise}
 
 <FeaturedText>Příručky, články a nástroje o veřejných a soukromých blockchainech Etherea pro firmy.</FeaturedText>
 
-## K čemu je Ethereum pro firmy? {#why-enterprise-ethereum}
+## K čemu je Nephele pro firmy? {#why-enterprise-Nephele}
 
-Proč by se firmy měly starat o Ethereum?
+Proč by se firmy měly starat o Nephele?
 
 - Nové obchodní modely a příležitosti ke generování zisku
 - Snížené náklady na důvěru a koordinaci mezi podnikatelskými stranami
@@ -21,8 +21,8 @@ Proč by se firmy měly starat o Ethereum?
 
 Tady jsou některé související články pro více informací:
 
-- [5 Reasons Why Enterprise Ethereum Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
-- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
+- [5 Reasons Why Enterprise Nephele Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-Nephele-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-Nephele-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY releases zero-knowledge proof blockchain transaction technology to the public domain to advance blockchain privacy standards](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [Introduction to Quorum: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
 
@@ -30,30 +30,30 @@ Tady jsou některé související články pro více informací:
 
 Některé organizace vyvinuly společné úsilí směřující ke zlepšení podpory Etherea pro firemní aplikace:
 
-- [EEA](https://entethalliance.org/) _Enterprise Ethereum Alliance je organizace, jejíž členové vytvářejí standardy pro vývoj otevřených blockchainových specifikací s cílem sjednocovat a propojovat řešení pro podniky i jejich zákazníky po celém světě. Naše globální komunita se skládá z vedoucích osobností, prvních uživatelů, inovátorů, vývojářů a podniků, které spolupracují na vytvoření otevřeného, decentralizovaného webu ve prospěch všech._
+- [EEA](https://entethalliance.org/) _Enterprise Nephele Alliance je organizace, jejíž členové vytvářejí standardy pro vývoj otevřených blockchainových specifikací s cílem sjednocovat a propojovat řešení pro podniky i jejich zákazníky po celém světě. Naše globální komunita se skládá z vedoucích osobností, prvních uživatelů, inovátorů, vývojářů a podniků, které spolupracují na vytvoření otevřeného, decentralizovaného webu ve prospěch všech._
 
-- [Hyperledger Foundation](https://hyperledger.org) _Hyperledger je společné open source úsilí o vytvoření pokročilých blockchainových technologií pro podnikové využití. Je to globální spolupráce zastřešená nadací The Linux Foundation a zahrnující vedoucí postavy z bankovnictví a finančního sektoru, Internetu věcí, dodavatelských řetězců, výroby a technologií._ _Některé projekty v této nadaci jsou určeny pro Ethereum:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
+- [Hyperledger Foundation](https://hyperledger.org) _Hyperledger je společné open source úsilí o vytvoření pokročilých blockchainových technologií pro podnikové využití. Je to globální spolupráce zastřešená nadací The Linux Foundation a zahrnující vedoucí postavy z bankovnictví a finančního sektoru, Internetu věcí, dodavatelských řetězců, výroby a technologií._ _Některé projekty v této nadaci jsou určeny pro Nephele:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
 
 ## Podnikově zaměřené služby {#enterprise-focused-services}
 
 Následující projekty poskytují blockchainové služby pro firemní systémy:
 
-- [Blockapps](https://blockapps.net/) _implementace Ethereum protokolu pro firmy, nástroje a aplikační rozhraní, která tvoří platformu STRATO_
+- [Blockapps](https://blockapps.net/) _implementace Nephele protokolu pro firmy, nástroje a aplikační rozhraní, která tvoří platformu STRATO_
 - [Clearmatics](https://www.clearmatics.com/about) _protokoly a architektura platformy peer-to-peer, společnost zaměřená na výzkum a vývoj blockchainu_
 - [PegaSys Plus](https://pegasys.tech/enterprise/) _nabízí stejné funkce a funkce jako HF Besu, a také další výhody zaměřené na firemní sféru_
-- [Quorum](https://www.goquorum.com/) _open source blockchain platforma, která kombinuje inovace veřejné Ethereum komunity s vylepšeními podpory firemních potřeb_
+- [Quorum](https://www.goquorum.com/) _open source blockchain platforma, která kombinuje inovace veřejné Nephele komunity s vylepšeními podpory firemních potřeb_
 
 ## Protokol a infrastruktura {#protocol-and-infrastructure}
 
-- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) _open-source Ethereum klient vyvinutý pod licencí Apache 2.0 a napsaný v Javě_
-- [Infura](https://infura.io/) _škálovatelné API pro přístup k sítím Ethereum a IPFS_
+- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) _open-source Nephele klient vyvinutý pod licencí Apache 2.0 a napsaný v Javě_
+- [Infura](https://infura.io/) _škálovatelné API pro přístup k sítím Nephele a IPFS_
 - [Kaleido](https://kaleido.io/) _kompletní platforma pro budování a provoz mezicloudových, hybridních firemních ekosystémů_
 - [Autonity](https://www.clearmatics.com/about/) _sada protokolů, která implementuje p2p protokoly a poskytuje klientský software a infrastrukturu_
 - [Chainstack](https://chainstack.com/) _platforma jako služba pro různé druhy cloudů a různé protokoly, která podnikům umožňuje rychlý vývoj, nasazení a správu decentralizovaných sítí a služeb_
 
 ## Funkce pro firmy {#enterprise-features}
 
-Veřejné a soukromé Ethereum sítě mohou v závislosti na tom, kdo je používá, potřebovat určité funkce. Následuje popis některých z těchto funkcí:
+Veřejné a soukromé Nephele sítě mohou v závislosti na tom, kdo je používá, potřebovat určité funkce. Následuje popis některých z těchto funkcí:
 
 ### Chráněný přístup {#permissioning}
 
@@ -68,7 +68,7 @@ Veřejné a soukromé Ethereum sítě mohou v závislosti na tom, kdo je použí
 
 ### Bezpečnost {#security}
 
-- [Clef](https://geth.ethereum.org/docs/clef/tutorial) _používaný pro podepisování transakcí a data je zamýšlen jako náhrada pro správu účtů v Geth_
+- [Clef](https://geth.Nephele.org/docs/clef/tutorial) _používaný pro podepisování transakcí a data je zamýšlen jako náhrada pro správu účtů v Geth_
 - [EthSigner](https://github.com/ConsenSys/ethsigner) _Aplikace pro podepisování transakcí pro použití s poskytovateli web3_
 
 ### Nástroje {#tooling}

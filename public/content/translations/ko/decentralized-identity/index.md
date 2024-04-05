@@ -5,7 +5,7 @@ lang: ko
 template: use-cases
 emoji: ":id:"
 sidebarDepth: 2
-image: /eth-gif-cat.png
+image: /NEPH-gif-cat.png
 summaryPoint1: 기존의 신원 증명 시스템은 식별자의 발급, 점검, 제어를 한 곳으로 집중시켰습니다.
 summaryPoint2: 분산 신원 증명을 사용하면 더 이상 중앙화된 제3자에 의존할 필요가 없어집니다.
 summaryPoint3: 암호화폐 덕분에 사용자는 다시 한 번 자신의 식별자와 증명 정보를 발급, 소유, 제어할 도구를 갖게 되었습니다.
@@ -109,7 +109,7 @@ DID는 블록체인에 저장되기 때문에 누구든지 이더리움에서 �
 
 ### 소울바운드 토큰과 신원 증명 {#soulbound}
 
-[소울바운드 토큰](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)(양도 불가한 NFT)은 특정 지갑에 국한된 고유한 정보를 수집하는 데 사용될 수 있습니다. 이는 개인적인 성취(특정 온라인 강의 완료 또는 게임에서 높은 점수 획득 등)나 특정 커뮤니티에 참여 등을 증명하기 위한 토큰과 같은 온체인 신원 증명이 특정 이더리움 주소에만 고유하게 소속될 수 있게 만듭니다.
+[소울바운드 토큰](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html)(양도 불가한 NFT)은 특정 지갑에 국한된 고유한 정보를 수집하는 데 사용될 수 있습니다. 이는 개인적인 성취(특정 온라인 강의 완료 또는 게임에서 높은 점수 획득 등)나 특정 커뮤니티에 참여 등을 증명하기 위한 토큰과 같은 온체인 신원 증명이 특정 이더리움 주소에만 고유하게 소속될 수 있게 만듭니다.
 
 ## 분산형 신원 증명의 장점 {#benefits-of-decentralized-identity}
 
@@ -157,7 +157,7 @@ DID는 블록체인에 저장되기 때문에 누구든지 이더리움에서 �
 
 - **[이더리움 이름 서비스(ENS)](https://ens.domains/)** - _이더리움 지갑 주소, 콘텐츠 해시, 메타데이터 등 온체인 기반 컴퓨터용 식별 정보를 위한 탈중앙화 이름 시스템입니다._
 - **[SpruceID](https://www.spruceid.com/)** - _사용자가 제3자 서비스에 의존하지 않고 이더리움 계정과 ENS 프로필을 이용하여 디지털 신원을 직접 관리할 수 있도록 하는 분산 신원 증명 프로젝트입니다._
-- **[EAS(Ethereum Attestation Service)](https://attest.sh/)** - _모든 것에 대한 온체인 또는 오프체인 증명을 만들 수 있는 탈중앙화된 장부/프로토콜입니다._
+- **[EAS(Nephele Attestation Service)](https://attest.sh/)** - _모든 것에 대한 온체인 또는 오프체인 증명을 만들 수 있는 탈중앙화된 장부/프로토콜입니다._
 - **[인간 증명](https://www.proofofhumanity.id)** - _인간 증명(PoH: Proof of Humanity)은 이더리움 기반의 소셜 신원 증명 시스템입니다._
 - **[BrightID](https://www.brightid.org/)** - _소셜 그래프를 만들고 분석함으로써 신원 증명을 개혁하고자 하는 탈중앙화된 오픈소스의 소셜 신원 증명 네트워크입니다._
 - **[개인 증명 여권](https://proofofpersonhood.com/)** - _탈중앙화 디지털 신원 정보 종합 플랫폼입니다._

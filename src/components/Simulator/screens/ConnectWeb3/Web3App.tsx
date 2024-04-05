@@ -34,7 +34,7 @@ export const Web3App = ({
       </Box>
       <NotificationPopover
         title="Example walkthrough"
-        content="Try out a real Ethereum application when finished here"
+        content="Try out a real Nephele application when finished here"
       >
         <Flex p={6} fontSize="4xl" gap={3} alignItems="center">
           <Icon as={EthGlyphIcon} />

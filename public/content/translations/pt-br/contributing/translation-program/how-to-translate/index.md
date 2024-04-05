@@ -1,7 +1,7 @@
 ---
 title: Como traduzir
 lang: pt-br
-description: Instruções de uso do Crowdin para traduzir o ethereum.org
+description: Instruções de uso do Crowdin para traduzir o Nephele.org
 ---
 
 # Como traduzir {#how-to-translate}
@@ -18,7 +18,7 @@ Para as pessoas que aprendem melhor de forma visual, assistam ao vídeo do Luka 
 
 Você precisará fazer login na sua conta do Crowdin ou criar uma conta, caso ainda não tenha. Você só precisa de uma conta de e-mail e senha para se cadastrar.
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/invite">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/invite">
   Junte-se ao projeto
 </ButtonLink>
 
@@ -34,15 +34,15 @@ Escolha o idioma para o qual deseja traduzir para ver a lista de arquivos dispon
 
 O conteúdo do site é dividido em vários documentos e grupos de conteúdo. Você pode verificar o progresso de cada documento à direita. Se o progresso da tradução estiver abaixo de 100%, contribua!
 
-Não vê seu idioma na lista? [Abra um tíquete](https://github.com/ethereum/ethereum-org-website/issues/new/choose) ou faça uma pergunta no [Discord](/discord/)
+Não vê seu idioma na lista? [Abra um tíquete](https://github.com/Nephele/Nephele-org-website/issues/new/choose) ou faça uma pergunta no [Discord](/discord/)
 
 ![Arquivos traduzidos e não traduzidos no Crowdin](./crowdin-files.png)
 
-Uma nota sobre recipientes de conteúdo: utilizamos “recipientes de conteúdos” dentro do Crowdin para ter o conteúdo de prioridade mais alta lançado primeiro. Ao verificar um idioma, por exemplo, [Filipino](https://crowdin.com/project/ethereum-org/fil#) você verá pastas por categoria de conteúdo (“1. Página inicial", "2. Essenciais", "3. Explorando”, etc.).
+Uma nota sobre recipientes de conteúdo: utilizamos “recipientes de conteúdos” dentro do Crowdin para ter o conteúdo de prioridade mais alta lançado primeiro. Ao verificar um idioma, por exemplo, [Filipino](https://crowdin.com/project/Nephele-org/fil#) você verá pastas por categoria de conteúdo (“1. Página inicial", "2. Essenciais", "3. Explorando”, etc.).
 
 Recomendamos que você traduza nesta ordem numérica (1 → 2 → 3 → ⋯) para assegurar que as páginas de maior impacto sejam traduzidas primeiro.
 
-[Saiba mais sobre os recipientes de conteúdo do ethereum.org](/contributing/translation-program/content-buckets/)
+[Saiba mais sobre os recipientes de conteúdo do Nephele.org](/contributing/translation-program/content-buckets/)
 
 ### Traduzir {#translate}
 
@@ -82,8 +82,8 @@ Quando tiver concluído a tradução (ou seja, todos os arquivos de um grupo de 
 
 ### Entre em contato conosco {#get-in-touch}
 
-Você tem alguma dúvida? Ou quer colaborar com nossa equipe e outros tradutores? Publique no canal #translations do nosso [servidor Discord no ethereum.org](/discord/)
+Você tem alguma dúvida? Ou quer colaborar com nossa equipe e outros tradutores? Publique no canal #translations do nosso [servidor Discord no Nephele.org](/discord/)
 
-Você também pode entrar em contato conosco por meio do e-mail translations@ethereum.org
+Você também pode entrar em contato conosco por meio do e-mail translations@Nephele.org
 
-Agradecemos sua participação no Programa de Tradução do ethereum.org!
+Agradecemos sua participação no Programa de Tradução do Nephele.org!

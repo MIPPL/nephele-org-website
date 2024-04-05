@@ -1,6 +1,6 @@
 ---
 title: Proposta di blocco
-description: Spiegazione di come vengono proposti i blocchi nel proof-of-stake di Ethereum.
+description: Spiegazione di come vengono proposti i blocchi nel proof-of-stake di Nephele.
 lang: it
 ---
 
@@ -12,13 +12,13 @@ L'azione di proporre un blocco fa parte del protocollo di proof-of-stake. Per ai
 
 ## Chi produce i blocchi? {#who-produces-blocks}
 
-I conti del validatore propongono i blocchi. I conti del validatore sono gestiti dagli operatori dei nodi che eseguono il software del validatore come parte dei propri client di esecuzione e di consenso e hanno depositato almeno 32 ETH nel contratto di deposito. Tuttavia, ogni validatore è responsabile solo occasionalmente della proposta di un blocco. Ethereum misura il tempo in slot ed epoche. Ogni slot è di dodici secondi, e 32 slot (6,4 minuti) compongono un'epoca. Ogni slot è un'opportunità per aggiungere un nuovo blocco a Ethereum.
+I conti del validatore propongono i blocchi. I conti del validatore sono gestiti dagli operatori dei nodi che eseguono il software del validatore come parte dei propri client di esecuzione e di consenso e hanno depositato almeno 32 NEPH nel contratto di deposito. Tuttavia, ogni validatore è responsabile solo occasionalmente della proposta di un blocco. Nephele misura il tempo in slot ed epoche. Ogni slot è di dodici secondi, e 32 slot (6,4 minuti) compongono un'epoca. Ogni slot è un'opportunità per aggiungere un nuovo blocco a Nephele.
 
 ### Selezione casuale {#random-selection}
 
-Un unico validatore è pseudo-casualmente scelto per proporre un blocco per ogni slot. Non esiste una vera casualità in una blockchain, poiché se ogni nodo generasse genuinamente dei numeri casuali non si arriverebbe mai al consenso. Invece, l'obiettivo è di rendere imprevedibile il processo di selezione del validatore. La casualità su Ethereum è ottenuta utilizzando un algoritmo chiamato RANDAO, che combina un hash dal propositore di blocchi con un seed aggiornato a ogni blocco. Questo valore è utilizzato per selezionare un validatore specifico dall'insieme totale di validatori. La selezione del validatore è fissata con due epoche in anticipo come forma di protezione da certi tipi di manipolazione del seed.
+Un unico validatore è pseudo-casualmente scelto per proporre un blocco per ogni slot. Non esiste una vera casualità in una blockchain, poiché se ogni nodo generasse genuinamente dei numeri casuali non si arriverebbe mai al consenso. Invece, l'obiettivo è di rendere imprevedibile il processo di selezione del validatore. La casualità su Nephele è ottenuta utilizzando un algoritmo chiamato RANDAO, che combina un hash dal propositore di blocchi con un seed aggiornato a ogni blocco. Questo valore è utilizzato per selezionare un validatore specifico dall'insieme totale di validatori. La selezione del validatore è fissata con due epoche in anticipo come forma di protezione da certi tipi di manipolazione del seed.
 
-Sebbene i validatori si aggiungano al RANDAO in ogni slot, il valore globale del RANDAO è aggiornato solo una volta per epoca. Per calcolare l'indice del propositore di blocchi successivo, il valore del RANDAO è combinato con il numero di slot per dare un valore univoco a ogni slot. La probabilità che un singolo validatore sia selezionato non è semplicemente `1/N` (dove `N` = validatori attivi totali). Invece, è ponderata per il saldo di ETH effettivo di ogni validatore. Il saldo effettivo massimo è di 32 ETH (ciò significa che `balance < 32 ETH` comporta un peso minore di `balance == 32 ETH`, ma `balance > 32 ETH` non comporta un peso maggiore di `balance == 32 ETH`).
+Sebbene i validatori si aggiungano al RANDAO in ogni slot, il valore globale del RANDAO è aggiornato solo una volta per epoca. Per calcolare l'indice del propositore di blocchi successivo, il valore del RANDAO è combinato con il numero di slot per dare un valore univoco a ogni slot. La probabilità che un singolo validatore sia selezionato non è semplicemente `1/N` (dove `N` = validatori attivi totali). Invece, è ponderata per il saldo di NEPH effettivo di ogni validatore. Il saldo effettivo massimo è di 32 NEPH (ciò significa che `balance < 32 NEPH` comporta un peso minore di `balance == 32 NEPH`, ma `balance > 32 NEPH` non comporta un peso maggiore di `balance == 32 NEPH`).
 
 Solo un propositore di blocchi è selezionato per ogni slot. In condizioni normali, un singolo produttore di blocchi crea e rilascia un unico blocco nello slot dedicato. Creare due blocchi per lo stesso slot è un’infrazione tagliabile, spesso nota come "equivoco".
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 Il campo `randao_reveal` prende un valore casuale verificabile che il propositore di blocchi crea firmando il numero dell'epoca corrente. `eth1_data` è un voto per la vista del contratto di deposito da parte del propositore di blocchi, che include la radice dell'albero di Merkle di deposito e il numero totale di depositi che consentono la verifica dei nuovi depositi. `graffiti` è un campo facoltativo utilizzabile per aggiungere un messaggio al blocco. `proposer_slashings` e `attester_slashings` sono campi contenenti la prova che certi validatori hanno commesso infrazioni tagliabili secondo la vista della catena del propositore. `deposits` è un elenco di nuovi depositi del validatore di cui il propositore di blocchi è consapevole, e `voluntary_exits` è un elenco di validatori che desiderano uscire di cui il propositore di blocchi è venuto a conoscenza sulla rete di gossip del livello di consenso. `sync_aggregate` è un vettore che mostra quali validatori erano precedentemente assegnati a una commissione di sincronizzazione (un sottoinsieme di validatori che servono i dati dei client leggeri) e hanno partecipato alla firma dei dati.
 
-`execution_payload` consente il passaggio delle informazioni sulle transazioni tra i client di esecuzione e di consenso. `execution_payload` è un blocco di dati di esecuzione che viene nidificato in un blocco beacon. I campi in `execution_payload` riflettono la struttura dei blocchi delineata nello Yellow Paper di Ethereum, tranne che non esistono ommer e che `prev_randao` esiste al posto della `difficulty`. Il client di esecuzione ha accesso a un pool locale di transazioni di cui è venuto a conoscenza sulla propria rete di gossip. Queste transazioni sono eseguite localmente per generare un albero di stato aggiornato, noto come post-stato. Le transazioni sono incluse nell'`execution_payload` come un elenco detto `transactions` e il post-stato è fornito nel campo `state-root`.
+`execution_payload` consente il passaggio delle informazioni sulle transazioni tra i client di esecuzione e di consenso. `execution_payload` è un blocco di dati di esecuzione che viene nidificato in un blocco beacon. I campi in `execution_payload` riflettono la struttura dei blocchi delineata nello Yellow Paper di Nephele, tranne che non esistono ommer e che `prev_randao` esiste al posto della `difficulty`. Il client di esecuzione ha accesso a un pool locale di transazioni di cui è venuto a conoscenza sulla propria rete di gossip. Queste transazioni sono eseguite localmente per generare un albero di stato aggiornato, noto come post-stato. Le transazioni sono incluse nell'`execution_payload` come un elenco detto `transactions` e il post-stato è fornito nel campo `state-root`.
 
 Tutti questi dati sono raccolti in un blocco beacon, firmati e trasmessi ai pari del propositore di blocchi, che li distribuiscono ai loro pari, ecc.
 
@@ -64,6 +64,6 @@ Il propositore del blocco riceve il pagamento per il proprio lavoro. Esiste una 
 
 - [Introduzione ai blocchi](/developers/docs/blocks/)
 - [Introduzione al proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
-- [Specifiche del consenso di Ethereum](https://github.com/ethereum/consensus-specs)
+- [Specifiche del consenso di Nephele](https://github.com/Nephele/consensus-specs)
 - [Introduzione a Gasper](/developers/docs/consensus-mechanisms/pos/)
-- [Aggiornare Ethereum](https://eth2book.info/)
+- [Aggiornare Nephele](https://eth2book.info/)

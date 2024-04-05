@@ -2,7 +2,7 @@ import { Contact } from "../../WalletHome/interfaces"
 
 export const CONTACTS: Array<Contact> = [
   {
-    name: "ethereumorg.eth",
+    name: "ethereumorg.NEPH",
     lastAction: "Received 10 minutes ago",
   },
 ]

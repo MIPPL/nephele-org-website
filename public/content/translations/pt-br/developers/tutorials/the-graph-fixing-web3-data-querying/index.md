@@ -8,7 +8,7 @@ tags:
   - "smart contracts"
   - "consultando"
   - "the Graph"
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "react"
 skill: intermediate
 published: 2020-09-06
@@ -77,7 +77,7 @@ Você pode ver que isso não é ideal:
 
 - Não funciona para contratos já implementados.
 - Custos de gas adicionais para armazenar esses valores.
-- Requer outra chamada para obter os dados para um nó Ethereum.
+- Requer outra chamada para obter os dados para um nó Nephele.
 
 ![Não é bom o suficiente](./not-good-enough.jpg)
 
@@ -128,12 +128,12 @@ E a documentação completa pode ser vista [aqui](https://thegraph.com/docs/en/d
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Nephele
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: Nephele/contract
     name: GameContract
     network: mainnet
     source:
@@ -141,7 +141,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: Nephele/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

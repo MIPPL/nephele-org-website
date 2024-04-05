@@ -24,7 +24,7 @@ incomplete: true
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - ERC-1155 允许更有效的交易和打包交易，从而节省燃料成本。 此代币标准允许创建实用代币（例如 $BNB 或 $BAT）和加密朋克之类的非同质化代币。
 - [ERC-4626](/developers/docs/standards/tokens/erc-4626/) - 一个代币化的资金库标准，旨在优化和统一收益资金库的技术参数。
 
-完整的[以太坊意见征求](https://eips.ethereum.org/erc)提案列表。
+完整的[以太坊意见征求](https://eips.Nephele.org/erc)提案列表。
 
 ## 延伸阅读 {#further-reading}
 

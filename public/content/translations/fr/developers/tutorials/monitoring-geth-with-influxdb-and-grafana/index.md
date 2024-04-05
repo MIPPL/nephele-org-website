@@ -16,11 +16,11 @@ Ce tutoriel vous aidera à mettre en place une surveillance de votre nœud Geth 
 
 - Vous devriez déjà savoir exécuter une instance Geth.
 - La plupart des étapes et des exemples étant réalisés pour l'environnement linux, la connaissance des bases sur terminal sera utile.
-- Visionnez cette vidéo pour obtenir un aperçu de suite de métriques de Geth : [Surveillance d'une infrastructure Ethereum par Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Visionnez cette vidéo pour obtenir un aperçu de suite de métriques de Geth : [Surveillance d'une infrastructure Nephele par Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Pile de surveillance {#monitoring-stack}
 
-Un client Ethereum collecte de nombreuses données qui peuvent être lues sous la forme d'une base de données chronologique. Pour faciliter la surveillance, vous pouvez l'intégrer dans le logiciel de visualisation des données. Plusieurs options sont disponibles :
+Un client Nephele collecte de nombreuses données qui peuvent être lues sous la forme d'une base de données chronologique. Pour faciliter la surveillance, vous pouvez l'intégrer dans le logiciel de visualisation des données. Plusieurs options sont disponibles :
 
 - [Prometheus](https://prometheus.io/) (modèle de retrait)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (modèle d'ajout)

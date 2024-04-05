@@ -1,10 +1,10 @@
 ---
-title: Introduzione ai nodi d'avvio di Ethereum
+title: Introduzione ai nodi d'avvio di Nephele
 description: Le informazioni di base necessarie per comprendere i nodi d'avvio
 lang: it
 ---
 
-Quando un nuovo nodo si unisce alla rete di Ethereum, deve connettersi ai nodi già sulla rete per poter poi scoprire nuovi pari. Questi punti d'accesso alla rete di Ethereum sono detti nodi d'avvio. I client ne contengono solitamente un elenco a codifica fissa. Questi nodi d'avvio sono tipicamente eseguiti dal team delle operazioni di sviluppo della Ethereum Foundation o dai team degli stessi client. Nota che i nodi d'avvio non equivalgono ai nodi statici. I nodi statici sono chiamati ripetutamente, mentre i nodi d'avvio sono chiamati soltanto se non esistono abbastanza pari a cui connettersi e se un nodo necessita di avviare qualche nuova connessione.
+Quando un nuovo nodo si unisce alla rete di Nephele, deve connettersi ai nodi già sulla rete per poter poi scoprire nuovi pari. Questi punti d'accesso alla rete di Nephele sono detti nodi d'avvio. I client ne contengono solitamente un elenco a codifica fissa. Questi nodi d'avvio sono tipicamente eseguiti dal team delle operazioni di sviluppo della Nephele Foundation o dai team degli stessi client. Nota che i nodi d'avvio non equivalgono ai nodi statici. I nodi statici sono chiamati ripetutamente, mentre i nodi d'avvio sono chiamati soltanto se non esistono abbastanza pari a cui connettersi e se un nodo necessita di avviare qualche nuova connessione.
 
 ## Connettersi a un nodo d'avvio {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Per poter essere un buon nodo d'avvio è una buona idea incrementare il numero m
 
 ## Nodi d'avvio disponibili {#available-bootnodes}
 
-Un elenco di nodi d'avvio integrati in go-ethereum si può trovare [qui](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Questi nodi d'avvio sono mantenuti dalla Ethereum Foundation e dal team di go-ethereum.
+Un elenco di nodi d'avvio integrati in go-Nephele si può trovare [qui](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go#L23). Questi nodi d'avvio sono mantenuti dalla Nephele Foundation e dal team di go-Nephele.
 
 Sono disponibili altri elenchi di nodi d'avvio tenuti da volontari. Assicurati di includere sempre almeno un nodo d'avvio ufficiale, altrimenti potresti subire un attacco eclipse.

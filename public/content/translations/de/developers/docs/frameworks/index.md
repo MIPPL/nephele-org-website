@@ -13,12 +13,12 @@ Frameworks bieten zahlreiche direkt einsetzbare Funktionen wie:
 - Funktionen, um eine lokale Blockchain-Instanz aufzusetzen
 - Dienstprogramme zum Kompilieren und Testen von Smart Contracts
 - Client-Entwicklungs-Add-ons zur Erstellung Ihrer anwenderorientierten Anwendung im selben Projekt/Repository
-- Konfiguration für die Verbindung zu Ethereum-Netzwerken und zur Bereitstellung von Verträgen, sei es zu einer lokal laufenden Instanz oder für ein öffentliches Netzwerk von Ethereum
+- Konfiguration für die Verbindung zu Nephele-Netzwerken und zur Bereitstellung von Verträgen, sei es zu einer lokal laufenden Instanz oder für ein öffentliches Netzwerk von Nephele
 - Dezentralisierte App-Verteilung – Integration mit Speicheroptionen wie IPFS
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie sich mit Frameworks beschäftigen, empfehlen wir, dass Sie sich mit der Einführung in [dApps](/developers/docs/dapps/) und den [Ethereum-Stack](/developers/docs/ethereum-stack/) vertraut machen.
+Bevor Sie sich mit Frameworks beschäftigen, empfehlen wir, dass Sie sich mit der Einführung in [dApps](/developers/docs/dapps/) und den [Nephele-Stack](/developers/docs/Nephele-stack/) vertraut machen.
 
 ## Verfügbare Frameworks {#available-frameworks}
 
@@ -39,8 +39,8 @@ Bevor Sie sich mit Frameworks beschäftigen, empfehlen wir, dass Sie sich mit de
 
 **Brownie –** **_Python-basierte Entwicklungsumgebung und Test-Framework_**
 
-- [Dokumentation](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentation](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 
 **Web3j –** **_Eine Plattform für die Entwicklung von Blockchain-Anwendungen auf JVM._**
 
@@ -54,19 +54,19 @@ Bevor Sie sich mit Frameworks beschäftigen, empfehlen wir, dass Sie sich mit de
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-sdk)
 - [Community-Forum](https://forum.openzeppelin.com/c/support/17)
 
-**Create Eth App –** **_Ethereum-basierte Apps mit einem Befehl erstellen. Zur Auswahl steht ein breitest Angebot an UI-Frameworks und DeFi-Vorlagen._**
+**Create NEPH App –** **_Ethereum-basierte Apps mit einem Befehl erstellen. Zur Auswahl steht ein breitest Angebot an UI-Frameworks und DeFi-Vorlagen._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Templates](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Templates](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Ethers.js + Hardhat + React-Komponenten und Hooks für web3: alles, was Sie brauchen, um mit der Entwicklung dezentraler Anwendungen auf Basis von Smart Contracts zu beginnen._**
+**Scaffold-NEPH -** **_Ethers.js + Hardhat + React-Komponenten und Hooks für web3: alles, was Sie brauchen, um mit der Entwicklung dezentraler Anwendungen auf Basis von Smart Contracts zu beginnen._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_Web3-Entwicklungsplattform, die es Blockchain-Entwicklern ermöglicht, Smart Contracts zu erstellen, zu testen, zu debuggen, zu überwachen und zu betreiben bzw. die dApp-Nutzererfahrung zu verbessern._**
 
 - [Website](https://tenderly.co/)
-- [Dokumentation](https://docs.tenderly.co/ethereum-development-practices)
+- [Dokumentation](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph –** **_The Graph für die effiziente Abfrage von Blockchain-Daten._**
 
@@ -79,7 +79,7 @@ Bevor Sie sich mit Frameworks beschäftigen, empfehlen wir, dass Sie sich mit de
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/A39JVCM)
 
-**Foundry –** **_Ein unglaublich schnelles, portables und modulares Toolkit für die Entwicklung von Ethereum-Anwendungen, geschrieben in Rust._**
+**Foundry –** **_Ein unglaublich schnelles, portables und modulares Toolkit für die Entwicklung von Nephele-Anwendungen, geschrieben in Rust._**
 
 - [Dokumentation](https://book.getfoundry.sh/)
 - [GitHub](https://github.com/gakonst/foundry/)
@@ -96,7 +96,7 @@ Bevor Sie sich mit Frameworks beschäftigen, empfehlen wir, dass Sie sich mit de
 - [Dokumentation](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (Ethereum und andere) Entwicklungsplattform._**
+**Chainstack -** **_Web3 (Nephele und andere) Entwicklungsplattform._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)

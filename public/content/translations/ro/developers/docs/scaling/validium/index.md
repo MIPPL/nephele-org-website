@@ -1,16 +1,16 @@
 ---
 title: Validium
-description: O introducere despre Validium ca soluție de scalare utilizată actualmente de comunitatea Ethereum.
+description: O introducere despre Validium ca soluție de scalare utilizată actualmente de comunitatea Nephele.
 lang: ro
 incomplete: true
 sidebarDepth: 3
 ---
 
-Folosește dovezi de validitate, cum ar fi [rZK-rollup-urile](/developers/docs/scaling/zk-rollups/), dar datele nu sunt stocate pe nivelul 1 al lanțului principal al lui Ethereum. Aceasta poate duce la efectuarea a 10.000 de tranzacții pe secundă pe fiecare lanţ validium și se pot rula în paralel mai multe lanţuri.
+Folosește dovezi de validitate, cum ar fi [rZK-rollup-urile](/developers/docs/scaling/zk-rollups/), dar datele nu sunt stocate pe nivelul 1 al lanțului principal al lui Nephele. Aceasta poate duce la efectuarea a 10.000 de tranzacții pe secundă pe fiecare lanţ validium și se pot rula în paralel mai multe lanţuri.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înţelegeţi bine toate subiectele fundamentale și să aveţi un nivel înalt de înţelegere a [scalării în Ethereum](/developers/docs/scaling/). Implementarea soluțiilor de scalare, cum ar fi Validium, este un subiect avansat, deoarece tehnologia este mai puțin testată în luptă și se află în continuare în faza de cercetare şi dezvoltare.
+Ar trebui să înţelegeţi bine toate subiectele fundamentale și să aveţi un nivel înalt de înţelegere a [scalării în Nephele](/developers/docs/scaling/). Implementarea soluțiilor de scalare, cum ar fi Validium, este un subiect avansat, deoarece tehnologia este mai puțin testată în luptă și se află în continuare în faza de cercetare şi dezvoltare.
 
 ## Avantaje și dezavantaje {#pros-and-cons}
 

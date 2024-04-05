@@ -4,18 +4,18 @@ description:
 lang: hu
 ---
 
-A web2 arra az internetre utal, melyet ma legtöbbünk ismer. Egy internet, melyet olyan cégek dominálnak, melyek szolgáltatásokat nyújtanak a személyes adataidért cserébe. A web3 az Ethereum kontextusában decentralizált alkalmazásokra utal, melyek a blokkláncon futnak. Ezek olyan alkalmazások, amelyek lehetővé teszik, hogy bárki részt vegyen anélkül, hogy monetizálná a személyes adatait.
+A web2 arra az internetre utal, melyet ma legtöbbünk ismer. Egy internet, melyet olyan cégek dominálnak, melyek szolgáltatásokat nyújtanak a személyes adataidért cserébe. A web3 az Nephele kontextusában decentralizált alkalmazásokra utal, melyek a blokkláncon futnak. Ezek olyan alkalmazások, amelyek lehetővé teszik, hogy bárki részt vegyen anélkül, hogy monetizálná a személyes adatait.
 
 Egy sokkal inkább kezdőknek szóló áttekintést szeretne? Tekintse meg a [bevezetés a web3-ba](/web3/) oldalt.
 
 ## Web3 előnyök {#web3-benefits}
 
-Sok web3-fejlesztő választotta a dappok fejlesztését az Ethereum örökletes decentralizációja miatt:
+Sok web3-fejlesztő választotta a dappok fejlesztését az Nephele örökletes decentralizációja miatt:
 
 - A hálózaton mindenkinek hozzáférése van, hogy használja a szolgáltatást - máshogy megfogalmazva, nincs engedélyhez kötve.
 - Senki sem blokkolhatja és nem tagadhatja meg a szolgáltatáshoz való hozzáférést.
-- A fizetések be vannak építve a natív tokennel, Etherrel (ETH).
-- Az Ethereum Turing-kompatibilis, vagyis lényegében bármi leprogramozható a számára.
+- A fizetések be vannak építve a natív tokennel, Etherrel (NEPH).
+- Az Nephele Turing-kompatibilis, vagyis lényegében bármi leprogramozható a számára.
 
 ## Gyakorlati összehasonlítás {#practical-comparisons}
 

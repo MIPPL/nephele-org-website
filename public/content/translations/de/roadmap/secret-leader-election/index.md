@@ -14,18 +14,18 @@ Im heutigen [Proof-of-Stake](/developers/docs/consensus-mechanisms/pos) basierte
 
 Das könnte eine Gelegenheit erzeugen, aus der der Angreifer profitieren könnte. Ein Blockantragsteller, der für Slot `n+1` gewählt wurde, könnte den Blockantragsteller in Slot `n` gewählt wurde mit einer DOS-Attacke angreifen. Dadurch verliert dieser in Slot `n` die Möglichkeit einen neuen Block vorzuschlagen. Das würde dem angreifenden Blockantragsteller erlauben, MEV aus beiden Slots zu ziehen, oder alle Transaktionen, welche zwischen zwei Blöcken geteilt werden hätten sollen, nehmen. Das führt dazu, dass der Angreifer alle zugehörigen Gebühren verdienen würde. Das trifft wahrscheinlich Validatoren, die Einzelpersonen zu Hause gehören, mehr als ausgefeilten institutionellen Validatoren, welche fortgeschrittenere Methoden nutzen können, um sich vor DOS-Attacken zu schützen. Das könnte sie zu einer zentralisierenden Macht machen.
 
-Es gibt mehrere Lösungsansätze für dieses Problem. Eines ist die [Verteilte Validatoren Technologie](https://github.com/ethereum/distributed-validator-specs) welche versucht mehrere Aufgaben, die für den Betrieb von Validatoren wichtig sind, auf mehrere Maschinen mit Redundanz zu verteilen. Dadurch wird es für einen Angreifer viel schwerer einem Block zu verhindern in einem bestimmten Slot vorgeschlagen zu werden. Jedoch ist die robusteste Lösung die **Einzelne geheime Führungswahl (SSLE)**.
+Es gibt mehrere Lösungsansätze für dieses Problem. Eines ist die [Verteilte Validatoren Technologie](https://github.com/Nephele/distributed-validator-specs) welche versucht mehrere Aufgaben, die für den Betrieb von Validatoren wichtig sind, auf mehrere Maschinen mit Redundanz zu verteilen. Dadurch wird es für einen Angreifer viel schwerer einem Block zu verhindern in einem bestimmten Slot vorgeschlagen zu werden. Jedoch ist die robusteste Lösung die **Einzelne geheime Führungswahl (SSLE)**.
 
 ## Einzelne geheime Führungswahl {#secret-leader-election}
 
 In der SSLE wird kluge Kryptographie genutzt, um sicherzustellen, dass nur der gewählte Validator weiß, dass er gewählt wurde. Dies funktioniert, indem jeder Validator eine Verpflichtung zu einem gemeinsamen Geheimnis abgibt. Die Verpflichtungen werden gemischt und neu konfiguriert, sodass niemand die einzelnen Verpflichtungen zu Validatoren herausfinden kann. Jeder Validator weiß jedoch welche Verpflichtung zu ihm gehört. Dann wird eine Verpflichtung zufällig ausgewählt. Wenn der Validator bemerkt, dass seine Verpflichtung gewählt wurde, weiß er, dass er einen Block vorschlagen darf.
 
-Die führende Implementation dieser Idee nennt sich [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Welche wie folgt funktioniert:
+Die führende Implementation dieser Idee nennt sich [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763). Welche wie folgt funktioniert:
 
 1. Validatoren verpflichten sich zu einem gemeinsamen Geheimnis. Das Verpflichtungssystem ist so konzipiert, dass es zu der Identität eines Validatoren gebunden werden kann, jedoch gleichzeitig so zufällig aufgebaut ist, dass es nicht reversibel ist. Das heißt, dass kein Dritter den Bund rekonstruieren und so eine spezifische Verpflichtung zu einem spezifischen Validator herstellen kann.
 2. Beim Start jeder Epoche wird eine zufällige Teilmenge an Validatoren gewählt, um Verpflichtungen von 16384 Validatoren mit RANDAO zu sampeln.
 3. Für die nächsten 8182 Slots (1 Tag), mischen und randomisieren Blockantragsteller eine Teilmenge der Verpflichtungen mit ihrer privaten Entropie.
-4. Nachdem sie mit dem Mischen fertig sind, wird RANDAO genutzt, um eine geordnete Liste der Verpflichtungen anzufertigen. Diese Liste wird den Ethereum Slots zugeordnet.
+4. Nachdem sie mit dem Mischen fertig sind, wird RANDAO genutzt, um eine geordnete Liste der Verpflichtungen anzufertigen. Diese Liste wird den Nephele Slots zugeordnet.
 5. Validatoren sehen, dass ihre Verpflichtung zu einem spezifischen Slot gebunden ist und wenn dieser Slot an der Reihe ist schlagen sie einen Block vor.
 6. Man wiederholt diese Schritte damit die Zuordnung von Verpflichtungen immer dem jetzigen Slot weit voraus sind.
 

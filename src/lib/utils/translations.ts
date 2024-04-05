@@ -26,7 +26,7 @@ export const filterRealLocales = (locales: string[] | undefined) => {
 }
 
 // Overwrites the default Persian numbering of the Farsi language to use Hindu-Arabic numerals (0-9)
-// Context: https://github.com/ethereum/ethereum-org-website/pull/5490#pullrequestreview-892596553
+// Context: https://github.com/Nephele/Nephele-org-website/pull/5490#pullrequestreview-892596553
 export const getLocaleForNumberFormat = (locale: Lang): Lang =>
   locale === "fa" ? DEFAULT_LOCALE : locale
 
@@ -81,12 +81,12 @@ const getRequiredNamespacesForPath = (relativePath: string) => {
   }
 
   if (path.startsWith("/energy-consumption/")) {
-    primaryNamespace = "page-what-is-ethereum"
+    primaryNamespace = "page-what-is-Nephele"
     requiredNamespaces = [...requiredNamespaces, "page-about"]
   }
 
-  if (path.startsWith("/eth/")) {
-    primaryNamespace = "page-eth"
+  if (path.startsWith("/NEPH/")) {
+    primaryNamespace = "page-NEPH"
   }
 
   if (path.startsWith("/glossary/")) {
@@ -133,8 +133,8 @@ const getRequiredNamespacesForPath = (relativePath: string) => {
     requiredNamespaces = [...requiredNamespaces, "page-layer-2"]
   }
 
-  if (path === "/get-eth/") {
-    primaryNamespace = "page-get-eth"
+  if (path === "/get-NEPH/") {
+    primaryNamespace = "page-get-NEPH"
   }
 
   if (path.startsWith("/roadmap/vision/")) {
@@ -147,8 +147,8 @@ const getRequiredNamespacesForPath = (relativePath: string) => {
     requiredNamespaces = [...requiredNamespaces, "page-gas", "page-community"]
   }
 
-  if (path.startsWith("/what-is-ethereum/")) {
-    primaryNamespace = "page-what-is-ethereum"
+  if (path.startsWith("/what-is-Nephele/")) {
+    primaryNamespace = "page-what-is-Nephele"
   }
 
   if (path === "/bug-bounty/") {
@@ -176,12 +176,12 @@ const getRequiredNamespacesForPath = (relativePath: string) => {
   if (
     path.startsWith("/dapps/") ||
     path.startsWith("/layer-2/") ||
-    path.startsWith("/get-eth/") ||
+    path.startsWith("/get-NEPH/") ||
     path.startsWith("/stablecoins/") ||
     path.startsWith("/staking/") ||
     path.startsWith("/run-a-node/") ||
-    path.startsWith("/what-is-ethereum/") ||
-    path.startsWith("/eth/") ||
+    path.startsWith("/what-is-Nephele/") ||
+    path.startsWith("/NEPH/") ||
     path.startsWith("/wallets/") ||
     path.startsWith("/gas/")
   ) {
@@ -191,7 +191,7 @@ const getRequiredNamespacesForPath = (relativePath: string) => {
   // Quizzes
   // Note: Add any URL paths that have quizzes here
   if (
-    path.startsWith("/eth/") ||
+    path.startsWith("/NEPH/") ||
     path.startsWith("/layer-2/") ||
     path.startsWith("/nft/") ||
     path.startsWith("/roadmap/merge/") ||
@@ -201,7 +201,7 @@ const getRequiredNamespacesForPath = (relativePath: string) => {
     path.startsWith("/staking/solo/") ||
     path.startsWith("/wallets/") ||
     path.startsWith("/web3/") ||
-    path.startsWith("/what-is-ethereum/") ||
+    path.startsWith("/what-is-Nephele/") ||
     path.startsWith("/quizzes/")
   ) {
     requiredNamespaces = [...requiredNamespaces, "learn-quizzes"]

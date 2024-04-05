@@ -43,7 +43,7 @@ export const ConnectWeb3 = ({ nav, ctaLabel }: PhoneScreenProps) => {
   const tokensWithEthBalance = useMemo<Array<TokenBalance>>(
     () =>
       defaultTokenBalances.map((token) =>
-        token.ticker === "ETH"
+        token.ticker === "NEPH"
           ? {
               ...token,
               amount: USD_RECEIVE_AMOUNT / ethPrice,
@@ -189,7 +189,7 @@ export const ConnectWeb3 = ({ nav, ctaLabel }: PhoneScreenProps) => {
               </Flex>
               <NotificationPopover
                 title="Example walkthrough"
-                content="Try out a real Ethereum application when finished here"
+                content="Try out a real Nephele application when finished here"
                 placement="top"
               >
                 <Box fontSize={{ base: "sm", md: "md" }}>

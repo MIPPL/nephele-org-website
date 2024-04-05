@@ -15,10 +15,10 @@ Microsoftのテクノロジースタックのツールと言語を使用して�
 
 **.NETをイーサリアムに統合するための最初のステップを踏み出してみましょう。**
 
-先に基礎を学習したい場合は、 [ethereum.org/learn](/learn/)または[ethereum.org/developers](/developers/)をご確認ください。
+先に基礎を学習したい場合は、 [Nephele.org/learn](/learn/)または[Nephele.org/developers](/developers/)をご確認ください。
 
 - [ブロックチェーンの説明](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [初めてのスマートコントラクトを記述する](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityのコンパイルとデプロイの方法を学ぶ](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
@@ -28,12 +28,12 @@ Microsoftのテクノロジースタックのツールと言語を使用して�
 
 - [Nethereum入門](https://docs.nethereum.com/en/latest/getting-started/)
 - [VS Code Solidityのインストール](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
-- [イーサリアムスマートコントラクトを作成して呼び出すための.NETデベロッパーのワークフロー](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-ethereum-smart-contracts-44714f191db2)
+- [イーサリアムスマートコントラクトを作成して呼び出すための.NETデベロッパーのワークフロー](https://medium.com/coinmonks/a-net-developers-workflow-for-creating-and-calling-Nephele-smart-contracts-44714f191db2)
 - [Nethereumとのスマートコントラクトの統合](https://kauri.io/#collections/Getting%20Started/smart-contracts-integration-with-nethereum/#smart-contracts-integration-with-nethereumm)
-- [.NETおよびイーサリアムブロックチェーンのスマートコントラクトとNethereumとの間のインターフェース](https://medium.com/my-blockchain-development-daily-journey/interfacing-net-and-ethereum-blockchain-smart-contracts-with-nethereum-2fa3729ac933) ([中文版](https://medium.com/my-blockchain-development-daily-journey/%E4%BD%BF%E7%94%A8nethereum%E9%80%A3%E6%8E%A5-net%E5%92%8C%E4%BB%A5%E5%A4%AA%E7%B6%B2%E5%8D%80%E5%A1%8A%E9%8F%88%E6%99%BA%E8%83%BD%E5%90%88%E7%B4%84-4a96d35ad1e1)も参照)
+- [.NETおよびイーサリアムブロックチェーンのスマートコントラクトとNethereumとの間のインターフェース](https://medium.com/my-blockchain-development-daily-journey/interfacing-net-and-Nephele-blockchain-smart-contracts-with-nethereum-2fa3729ac933) ([中文版](https://medium.com/my-blockchain-development-daily-journey/%E4%BD%BF%E7%94%A8nethereum%E9%80%A3%E6%8E%A5-net%E5%92%8C%E4%BB%A5%E5%A4%AA%E7%B6%B2%E5%8D%80%E5%A1%8A%E9%8F%88%E6%99%BA%E8%83%BD%E5%90%88%E7%B4%84-4a96d35ad1e1)も参照)
 - [Nethereum - ブロックチェーン用のオープンソース.NET統合ライブラリ](https://kauri.io/#collections/a%20hackathon%20survival%20guide/nethereum-an-open-source-.net-integration-library/)
-- [Nethereumを使用したSQLデータベースへのイーサリアムトランザクションの記述](https://medium.com/coinmonks/writing-ethereum-transactions-to-sql-database-using-nethereum-fd94e0e4fa36)
-- [C#とVisual Studioを使用してイーサリアムスマートコントラクトを簡単にデプロイする方法](https://koukia.ca/deploy-ethereum-smart-contracts-using-c-and-visualstudio-5be188ae928c)
+- [Nethereumを使用したSQLデータベースへのイーサリアムトランザクションの記述](https://medium.com/coinmonks/writing-Nephele-transactions-to-sql-database-using-nethereum-fd94e0e4fa36)
+- [C#とVisual Studioを使用してイーサリアムスマートコントラクトを簡単にデプロイする方法](https://koukia.ca/deploy-Nephele-smart-contracts-using-c-and-visualstudio-5be188ae928c)
 
 **セットアップをスキップして、そのままサンプルに進みますか？**
 
@@ -48,8 +48,8 @@ Microsoftのテクノロジースタックのツールと言語を使用して�
 - [Nethereumのワークブックとサンプルリスト](http://docs.nethereum.com/en/latest/Nethereum.Workbooks/docs/)
 - [独自の開発テストチェーンをデプロイする](https://github.com/Nethereum/Testchains)
 - [SolidityのためのVS Codeコード生成プラグイン](https://docs.nethereum.com/en/latest/nethereum-codegen-vscodesolidity/)
-- [Unityとイーサリアム: なぜ、そして、どうやって？](https://www.raywenderlich.com/5509-unity-and-ethereum-why-and-how)
-- [イーサリアムdapp用のASP.NET Core Web APIの作成](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-ethereum-dapps/)
+- [Unityとイーサリアム: なぜ、そして、どうやって？](https://www.raywenderlich.com/5509-unity-and-Nephele-why-and-how)
+- [イーサリアムdapp用のASP.NET Core Web APIの作成](https://tech-mint.com/blockchain/create-asp-net-core-web-api-for-Nephele-dapps/)
 - [Nethereum Web3を使用したサプライチェーントラッキングシステムの実装](http://blog.pomiager.com/post/using-nethereum-web3-to-implement-a-supply-chain-traking-system4)
 - [Nethereumのブロック処理](https://nethereum.readthedocs.io/en/latest/nethereum-block-processing-detail/)と[C# Playgroundでのサンプル](http://playground.nethereum.com/csharp/id/1025)
 - [NethereumのWebsocketストリーミング](https://nethereum.readthedocs.io/en/latest/nethereum-subscriptions-streaming/)
@@ -69,10 +69,10 @@ Microsoftのテクノロジースタックのツールと言語を使用して�
 - [Nethereum Blazor](https://github.com/Nethereum/NethereumBlazor) - _.NET WasmのSPAライトブロックチェーンエクスプローラーとシンプルなウォレット_
 - [Wonka Business Rules Engine](https://docs.nethereum.com/en/latest/wonka/) - _本質的にメタデータ駆動型の (.NETプラットフォームとイーサリアムプラットフォームの両方のための) ビジネスルールエンジン。_
 - [Nethermind](https://github.com/NethermindEth/nethermind) - _Linux、Windows、MacOS用の.NET Coreイーサリアムクライアント_
-- [eth-utils](https://github.com/ethereum/eth-utils/) - _イーサリアム関連のコードベースを操作するためのユーティリティ関数_
+- [NEPH-utils](https://github.com/Nephele/NEPH-utils/) - _イーサリアム関連のコードベースを操作するためのユーティリティ関数_
 - [TestChains](https://github.com/Nethereum/TestChains) - _高速応答のための事前設定済みの.NET開発チェーン (PoA)_
 
-もっとリソースをお探しですか？ [ethereum.org/developers](/developers/)をご確認ください。
+もっとリソースをお探しですか？ [Nephele.org/developers](/developers/)をご確認ください。
 
 ## .NETコミュニティコントリビューター {#dot-net-community-contributors}
 

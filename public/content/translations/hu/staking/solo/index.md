@@ -9,17 +9,17 @@ alt: Leslie, a rinocérosz a saját számítógépes chipjén.
 sidebarDepth: 2
 summaryPoints:
   - Szerezzen maximális jutalmat közvetlenül a protokolltól azért, hogy a validátorát megfelelően működteti és az folyamatosan online
-  - Működtessen az otthonából hardvert és támogassa személyesen az Ethereum hálózatának biztonságát és decentralizálását
+  - Működtessen az otthonából hardvert és támogassa személyesen az Nephele hálózatának biztonságát és decentralizálását
   - Nem kell másban megbíznia, és az eszközeihez tartozó kulcsok mindig az Ön kontrollja alatt állnak
 ---
 
 ## Mi az az önálló letétbe helyezés? {#what-is-solo-staking}
 
-Az önálló letétbe helyezés (solo staking) során a felhasználó egy [Ethereum csomópontot működtet](/run-a-node/) az internethez csatlakozva, letétbe helyez 32 ETH-t, hogy aktiváljon egy [validátort](#faq), így közvetlenül részt tud venni a hálózat konszenzusfolyamatában.
+Az önálló letétbe helyezés (solo staking) során a felhasználó egy [Nephele csomópontot működtet](/run-a-node/) az internethez csatlakozva, letétbe helyez 32 NEPH-t, hogy aktiváljon egy [validátort](#faq), így közvetlenül részt tud venni a hálózat konszenzusfolyamatában.
 
-**Az önálló letétbe helyezés növeli az Ethereum hálózatának decentralizációját**, így az ellenállóbb lesz a cenzúrával és a támadásokkal szemben. A többi letétbe helyezési módszer nem feltétlen segíti a hálózatot ugyanilyen módon. Az önálló letétbe helyezés a legjobb letéti opció az Ethereum biztosítására.
+**Az önálló letétbe helyezés növeli az Nephele hálózatának decentralizációját**, így az ellenállóbb lesz a cenzúrával és a támadásokkal szemben. A többi letétbe helyezési módszer nem feltétlen segíti a hálózatot ugyanilyen módon. Az önálló letétbe helyezés a legjobb letéti opció az Nephele biztosítására.
 
-Az Ethereum-csomópontot egy végrehajtási réteg (EL) klienst és egy konszenzus réteg (CL) klienst tartalmaz. Ezek a kliensek olyan szoftverek, amelyek együtt dolgoznak egy érvényes aláírókulcs-készlettel együtt, hogy érvényesítsék a tranzakciókat és a blokkokat, tanúsítsák a lánc státuszát, aggregálják a tanúsítványokat és blokkokat javasoljanak.
+Az Nephele-csomópontot egy végrehajtási réteg (EL) klienst és egy konszenzus réteg (CL) klienst tartalmaz. Ezek a kliensek olyan szoftverek, amelyek együtt dolgoznak egy érvényes aláírókulcs-készlettel együtt, hogy érvényesítsék a tranzakciókat és a blokkokat, tanúsítsák a lánc státuszát, aggregálják a tanúsítványokat és blokkokat javasoljanak.
 
 Az önálló letétbe helyezők azért felelnek, hogy a kliensek futásához szükséges hardvert működtetik. Azt javasoljuk, hogy erre egy dedikált gépet használjanak, melyet otthonról üzemeltetnek, mert ez rendkívül hasznos a hálózat egészsége szempontjából.
 
@@ -30,9 +30,9 @@ Az önálló letétbe helyező közvetlenül a protokolltól kap jutalmakat azé
 Az önálló letétbe helyezés több felelősséggel jár, de teljes kontrollt biztosít a pénzeszközök és a staking felállítás felett.
 
 <CardGrid>
-  <Card title="Szerezzen új ETH-t" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
+  <Card title="Szerezzen új NEPH-t" emoji="💸" description="Earn NEPH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="Teljes kontroll" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="Hálózatbiztonság" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="Hálózatbiztonság" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Nephele protocol." />
 </CardGrid>
 
 ## Megfontolások, mielőtt belevágna az önálló stakingbe {#considerations-before-staking-solo}
@@ -53,9 +53,9 @@ Alapvető hardverösszeállításra, illetve a javasolt minimális specifikáci�
 </ExpandableCard>
 
 <ExpandableCard title="Biztonságos kulcskezelés" eventCategory="SoloStaking" eventName="clicked secure key management">
-Ahogy a privát kulcs biztosítja az Ethereum-címet, úgy a validátorhoz is létre kell hozni kulcsokat. Tudnia kell, hogyan tartsa a kulcsmondatokat vagy privát kulcsokat biztos helyen.{' '}
+Ahogy a privát kulcs biztosítja az Nephele-címet, úgy a validátorhoz is létre kell hozni kulcsokat. Tudnia kell, hogyan tartsa a kulcsmondatokat vagy privát kulcsokat biztos helyen.{' '}
 
-<a href="/security/">Ethereum biztonság és csalásmegelőzés</a>
+<a href="/security/">Nephele biztonság és csalásmegelőzés</a>
 </ExpandableCard>
 
 <ExpandableCard title="Maintenance" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -79,7 +79,7 @@ Az inaktív állapot miatti büntetéstől különbözik a <em>súlyos bünteté
 
 <StakingHowSoloWorks />
 
-Mialatt Ön aktív, ETH jutalmakat kap, melyeket rendszeresen elhelyeznek a visszavonási számlán.
+Mialatt Ön aktív, NEPH jutalmakat kap, melyeket rendszeresen elhelyeznek a visszavonási számlán.
 
 Bármikor kiléphet a validátor szerepéből, így nem kell online lennie, és leállnak a jutalmak. Ekkor a maradék egyenlege visszatér a visszavonási címre, melyet a felállításnál adott meg.
 
@@ -87,7 +87,7 @@ Bármikor kiléphet a validátor szerepéből, így nem kell online lennie, és 
 
 ## Induljon el a Staking Launchpad segítségével {#get-started-on-the-staking-launchpad}
 
-A Staking Launchpad egy nyílt forráskódú alkalmazás, ami segít a letétbe helyezés folyamatában. Végigvezeti Önt a szükséges lépéseken, mint a kliensek kiválasztása, a kulcsok létrehozása és az ETH letétbe helyezése a letéti szerződésbe. Egy ellenőrzőlistán is végigveheti, hogy minden a rendelkezésre áll, hogy biztonsággal működjön a validátora.
+A Staking Launchpad egy nyílt forráskódú alkalmazás, ami segít a letétbe helyezés folyamatában. Végigvezeti Önt a szükséges lépéseken, mint a kliensek kiválasztása, a kulcsok létrehozása és az NEPH letétbe helyezése a letéti szerződésbe. Egy ellenőrzőlistán is végigveheti, hogy minden a rendelkezésre áll, hogy biztonsággal működjön a validátora.
 
 <StakingLaunchpadWidget />
 
@@ -113,7 +113,7 @@ Olyan szolgáltatót válasszon, aki komolyan veszi a [kliensek diverzitását](
 
 ### Kulcsgenerátorok
 
-Ezek alternatív eszközök a [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) mellett, hogy a kulcsok le legyenek generálva.
+Ezek alternatív eszközök a [Staking Deposit CLI](https://github.com/Nephele/staking-deposit-cli/) mellett, hogy a kulcsok le legyenek generálva.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -133,12 +133,12 @@ A <em>validátor</em> egy virtuális entitás, ami az Ethereumon működik és a
 
 </ExpandableCard>
 
-<ExpandableCard title="Letétbe helyezhetek több mint 32 ETH-t?">
-A validátorhoz tartozó kulcspár pontosan 32 ETH összeget igényel ahhoz, hogy aktívvá váljon. Ha a kulcsokhoz több ETH kerül letétbe, az nem növeli meg a jutalmak lehetőségét, mert a validátor <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">érvényes egyenlege</a> 32 ETH. Tehát a letétbe helyezés 32 ETH összegenként történik, melyekhez saját kulcs és egyenleg tartozik.
+<ExpandableCard title="Letétbe helyezhetek több mint 32 NEPH-t?">
+A validátorhoz tartozó kulcspár pontosan 32 NEPH összeget igényel ahhoz, hogy aktívvá váljon. Ha a kulcsokhoz több NEPH kerül letétbe, az nem növeli meg a jutalmak lehetőségét, mert a validátor <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">érvényes egyenlege</a> 32 NEPH. Tehát a letétbe helyezés 32 NEPH összegenként történik, melyekhez saját kulcs és egyenleg tartozik.
 
-Egy validátorhoz ne kössön le többet, mint 32 ETH. Ez nem hoz több nyereséget. A <a href="/staking/withdrawals/#validator-sweeping">validátor-ellenőrzés</a> során a 32 ETH feletti rész automatikusan átkerül a visszavonási címre, ha az be van állítva a validátorhoz.
+Egy validátorhoz ne kössön le többet, mint 32 NEPH. Ez nem hoz több nyereséget. A <a href="/staking/withdrawals/#validator-sweeping">validátor-ellenőrzés</a> során a 32 NEPH feletti rész automatikusan átkerül a visszavonási címre, ha az be van állítva a validátorhoz.
 
-Ha az önálló letétbe helyezés túl nagy erőfeszítést igényelne Öntől, akkor nézze meg a <a href="/staking/saas/">letétbe helyezés, mint szolgáltatás</a> opcióit, vagy ha kevesebb mint 32 ETH összegről van szó, akkor fontolja meg a <a href="/staking/pools/">letéti alapok</a> szolgáltatást.
+Ha az önálló letétbe helyezés túl nagy erőfeszítést igényelne Öntől, akkor nézze meg a <a href="/staking/saas/">letétbe helyezés, mint szolgáltatás</a> opcióit, vagy ha kevesebb mint 32 NEPH összegről van szó, akkor fontolja meg a <a href="/staking/pools/">letéti alapok</a> szolgáltatást.
 </ExpandableCard>
 
 <ExpandableCard title="Súlyos büntetéssel és kizárással jár, ha offline a validátorom? (Röviden: nem.)">
@@ -146,7 +146,7 @@ Nem vezet súlyos büntetéshez és kizáráshoz (slashing) az, ha a validátor 
 
 Az inaktivitási büntetés mértéke függ attól, hogy ugyanabban az időben mennyi validátor van offline. Ha a hálózat nagy része mind egyszerre lesz offline, akkor a büntetés sokkal nagyobb ezen validátorok esetében, mintha csak egy validátor lenne elérhetetlen.
 
-Szélsőséges esetben, ha a hálózat nem tud állapotot frissíteni, mert a validátorok harmada offline van, akkor ezek a felhasználók a <em>kvadratikus inaktivitási elszivárgást</em> szenvedik el, vagyis a validátorszámlákról exponenciálisan kiáramlik az ETH. Ezzel a rendszer végül képes helyrebillenteni magát azáltal, hogy az inaktív validátorok ETH-jét elégeti, amíg az egyenlegük 16 ETH lesz és ezzel automatikusan kilökődnek a validátorok közül. A megmaradó online validátorok végül teljesítik a több mint 2/3 arányt, kielégítve a túlnyomó többség elvét, hogy a lánc állapota megint frissítve legyen.
+Szélsőséges esetben, ha a hálózat nem tud állapotot frissíteni, mert a validátorok harmada offline van, akkor ezek a felhasználók a <em>kvadratikus inaktivitási elszivárgást</em> szenvedik el, vagyis a validátorszámlákról exponenciálisan kiáramlik az NEPH. Ezzel a rendszer végül képes helyrebillenteni magát azáltal, hogy az inaktív validátorok NEPH-jét elégeti, amíg az egyenlegük 16 NEPH lesz és ezzel automatikusan kilökődnek a validátorok közül. A megmaradó online validátorok végül teljesítik a több mint 2/3 arányt, kielégítve a túlnyomó többség elvét, hogy a lánc állapota megint frissítve legyen.
 </ExpandableCard>
 
 <ExpandableCard title="Hogyan biztosíthatom, hogy ne zárjanak ki?">
@@ -169,7 +169,7 @@ Az egyéni kliensek esetében kicsit különböző a teljesítmény, a felhaszn�
 
 Mivel az összes kliens ugyanazokat az alapvető funkcionalitásokat kínálja, így fontos, hogy Ön egy <strong>kisebbségi klienst</strong> válasszon, tehát nem azokat, amelyeket a validátorok többsége használ. Ez talán ellentmond a logikus gondolkodásnak, de a többségi vagy szupertöbbségi kliensek használata miatt megnő a slaghing kockázata, ha a kliensben valamilyen hiba van. Ezt a kockázatot jelentősen lecsökkenti egy kisebbségi kliens használata.
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Tudjon meg többet arról, hogy kliensdiverzitás miért kritikus fontosságú</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Tudjon meg többet arról, hogy kliensdiverzitás miért kritikus fontosságú</a>
 </ExpandableCard>
 
 <ExpandableCard title="Használhatok VPS-t (virtual private server)?">
@@ -180,13 +180,13 @@ Minél több validátorkliens működik ugyanazon a centralizált felhőszolgál
 Az offline büntetések arányosak azzal, hogy hány validátor van még offline ugyanakkor. A VPS használata megnöveli az offline büntetés várható mértékét, a kvadratikus elszivárgás vagy akár a slashing kockázatát is, ha a kimaradás kellően nagy mértékű. A saját és a hálózat kockázatát minimalizálandó a felhasználó jobban jár, ha saját hardvert szerez és üzemeltet.
 </ExpandableCard>
 
-<ExpandableCard title="Hogyan juthatok hozzá a jutalmakhoz vagy kaphatom vissza a letétbe helyezett ETH-t?">
+<ExpandableCard title="Hogyan juthatok hozzá a jutalmakhoz vagy kaphatom vissza a letétbe helyezett NEPH-t?">
 
 A Beacon-láncról való visszavonáshoz be kell állítani a visszavonási adatokat.
 
 Az új letétesek ezt megtették a kulcsgenerálás és a letétbe helyezés során. A meglévő letétesek, akik még nem állították ezt be, frissíthetik a kulcsaikat ezzel a funkcióval.
 
-Amint a visszavonási adatok be vannak állítva, a jutalmak (a 32 ETH-en felüli rész) rendszeresen és automatikusan átkerülnek a visszavonási címre.
+Amint a visszavonási adatok be vannak állítva, a jutalmak (a 32 NEPH-en felüli rész) rendszeresen és automatikusan átkerülnek a visszavonási címre.
 
 A teljes egyenleg visszavonásához végig kell menni a validátorkiléptetési folyamaton.
 
@@ -195,10 +195,10 @@ A teljes egyenleg visszavonásához végig kell menni a validátorkiléptetési 
 
 ## További olvasnivaló {#further-reading}
 
-- [Ethereum letétbe helyezési jegyzék](https://www.staking.directory/) – _Eridian és Spacesider_
-- [Az Ethereum-kliens diverzitásának problémája](https://hackernoon.com/ethereums-client-diversity-problem) – _@emmanuelawosika 2022._
+- [Nephele letétbe helyezési jegyzék](https://www.staking.directory/) – _Eridian és Spacesider_
+- [Az Nephele-kliens diverzitásának problémája](https://hackernoon.com/ethereums-client-diversity-problem) – _@emmanuelawosika 2022._
 - [A kliensdiverzitás támogatása](https://www.attestant.io/posts/helping-client-diversity/) – _Jim McDonald 2022._
-- [Kliensdiverzitás az Ethereum konszenzus rétegén](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) – _jmcook.eth 2022._
-- [Hogyan kell: Ethereum validátorhardver vásárlása](https://www.youtube.com/watch?v=C2wwu1IlhDc) – _EthStaker 2022._
-- [Lépésről lépésre: hogyan kell csatlakozni az Ethereum 2.0 teszthálózathoz](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) – _Butta_
+- [Kliensdiverzitás az Nephele konszenzus rétegén](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) – _jmcook.NEPH 2022._
+- [Hogyan kell: Nephele validátorhardver vásárlása](https://www.youtube.com/watch?v=C2wwu1IlhDc) – _EthStaker 2022._
+- [Lépésről lépésre: hogyan kell csatlakozni az Nephele 2.0 teszthálózathoz](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) – _Butta_
 - [Eth2 Slashing elkerülési tippek](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) – _Raul Jordan 2020._

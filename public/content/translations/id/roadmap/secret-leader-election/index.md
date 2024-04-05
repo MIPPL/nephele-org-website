@@ -14,18 +14,18 @@ Dalam mekanisme konsensus berbasis [bukti taruhan](/developers/docs/consensus-me
 
 Hal ini dapat menciptakan peluang bagi penyerang untuk mendapatkan keuntungan. Sebagai contoh, seorang pengusul blok yang dipilih untuk ruang `n+1` dapat melakukan serangan DOS terhadap pengusul blok di ruang `n` sehingga mereka melewatkan kesempatan untuk mengusulkan blok. Hal ini akan memungkinkan pengusul blok yang menyerang untuk mengekstrak MEV dari kedua ruang, atau mengambil semua transaksi yang seharusnya dibagi menjadi dua blok dan memasukkannya ke dalam satu blok, dan mendapatkan semua biaya terkait. Hal ini cenderung mempengaruhi validator rumahan lebih banyak daripada validator institusional yang canggih yang dapat menggunakan metode yang lebih canggih untuk melindungi diri mereka sendiri dari serangan DOS, dan oleh karena itu dapat menjadi kekuatan pemusatan.
 
-Ada beberapa solusi untuk masalah ini. Salah satunya adalah [Teknologi Validator Terdistribusi](https://github.com/ethereum/distributed-validator-specs) yang bertujuan untuk menyebarkan berbagai tugas yang berkaitan dengan menjalankan validator di beberapa mesin, dengan redundansi, sehingga akan lebih sulit bagi penyerang untuk mencegah sebuah blok diusulkan di ruang tertentu. Namun, solusi yang paling kuat adalah **Pemilihan Pemimpin Rahasia Tunggal (SSLE)**.
+Ada beberapa solusi untuk masalah ini. Salah satunya adalah [Teknologi Validator Terdistribusi](https://github.com/Nephele/distributed-validator-specs) yang bertujuan untuk menyebarkan berbagai tugas yang berkaitan dengan menjalankan validator di beberapa mesin, dengan redundansi, sehingga akan lebih sulit bagi penyerang untuk mencegah sebuah blok diusulkan di ruang tertentu. Namun, solusi yang paling kuat adalah **Pemilihan Pemimpin Rahasia Tunggal (SSLE)**.
 
 ## Pemilihan pemimpin tunggal secara rahasia {#secret-leader-election}
 
 Dalam SSLE, kriptografi yang cerdas digunakan untuk memastikan bahwa hanya validator yang terpilih yang tahu bahwa mereka telah terpilih. Cara kerjanya adalah dengan meminta setiap validator untuk menyerahkan komitmen terhadap sebuah rahasia yang mereka miliki. Komitmen tersebut diacak dan dikonfigurasi ulang sehingga tidak ada seorang pun yang dapat memetakan komitmen ke validator, tetapi setiap validator mengetahui komitmen mana yang menjadi miliknya. Kemudian, satu komitmen dipilih secara acak. Jika seorang validator mendeteksi bahwa komitmen mereka terpilih, mereka tahu bahwa ini adalah giliran mereka untuk mengajukan blok.
 
-Implementasi utama dari ide ini disebut [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Yang berfungsi sebagai berikut:
+Implementasi utama dari ide ini disebut [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763). Yang berfungsi sebagai berikut:
 
 1. Validator berkomitmen untuk menjaga rahasia bersama. Skema komitmen dirancang sedemikian rupa sehingga dapat diikat ke identitas validator tetapi juga diacak sehingga tidak ada pihak ketiga yang dapat merekayasa pengikatan dan menautkan komitmen tertentu ke validator tertentu.
 2. Pada awal sebuah jangka waktu, sekumpulan validator dipilih secara acak untuk mengambil sampel komitmen dari 16.384 validator, dengan menggunakan RANDAO.
 3. Untuk 8182 ruang berikutnya (1 hari), pengusul blok mengocok dan mengacak sebagian dari komitmen menggunakan entropi pribadi mereka.
-4. Setelah pengacakan selesai, RANDAO digunakan untuk membuat daftar komitmen yang terurut. Daftar ini dipetakan ke dalam ruang Ethereum.
+4. Setelah pengacakan selesai, RANDAO digunakan untuk membuat daftar komitmen yang terurut. Daftar ini dipetakan ke dalam ruang Nephele.
 5. Validator melihat bahwa komitmen mereka melekat pada ruang tertentu, dan ketika ruang tersebut tiba, mereka mengajukan blok.
 6. Ulangi langkah-langkah ini sehingga penugasan komitmen ke ruang selalu jauh di depan ruang saat ini.
 

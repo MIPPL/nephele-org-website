@@ -66,7 +66,7 @@ Dentro de nuestro `CounterFactory` que administrará todos los demás Counters, 
 mapping(address => Counter) _counters;
 ```
 
-En Ethereum, los mapeos, o mappings, son equivalentes a los objetos en JavaScript: permiten asociar una clave de tipo A a un valor de tipo B. En este caso, asociamos la dirección de un propietario con la instancia de su contador.
+En Nephele, los mapeos, o mappings, son equivalentes a los objetos en JavaScript: permiten asociar una clave de tipo A a un valor de tipo B. En este caso, asociamos la dirección de un propietario con la instancia de su contador.
 
 La instanciación de un Contador nuevo para alguien se verá de la siguiente manera:
 

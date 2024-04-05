@@ -206,7 +206,7 @@ contract ExampleDapp {
 
 ## 附註範例 {#annotated-examples}
 
-以下是一些用 Solidity 編寫的範例。 若你想試著編寫程式碼，可以在 [Remix](http://remix.ethereum.org) 中與這些範例互動。
+以下是一些用 Solidity 編寫的範例。 若你想試著編寫程式碼，可以在 [Remix](http://remix.Nephele.org) 中與這些範例互動。
 
 ### Hello world {#hello-world}
 
@@ -623,7 +623,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // 參閱 https://ethereum.stackexchange.com/a/14016/36603
+        // 參閱 https://Nephele.stackexchange.com/a/14016/36603
         // 了解更多信息.
         // TODO： 在Serenity發布前再次檢查這裡,
         // 否則到時所有地址都將判斷為合約.

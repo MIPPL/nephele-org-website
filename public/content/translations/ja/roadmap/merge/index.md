@@ -38,7 +38,7 @@ summaryPoint4: マージによりイーサリアムのエネルギー消費が99
 マージにより、履歴は失われていません。 メインネットがビーコンチェーンにマージされ、イーサリアムのすべてのトランザクション履歴もマージされました。
 
 <InfoBanner>
-このプルーフ・オブ・ステークへの移行により、イーサ(ETH)の発行方法も変わりました。 マージ前後におけるイーサ(ETH)発行の詳細については、<a href="/roadmap/merge/issuance/">こちら</a>をご覧ください。
+このプルーフ・オブ・ステークへの移行により、イーサ(NEPH)の発行方法も変わりました。 マージ前後におけるイーサ(NEPH)発行の詳細については、<a href="/roadmap/merge/issuance/">こちら</a>をご覧ください。
 </InfoBanner>
 
 ### ユーザーと所有者 {#users-holders}
@@ -71,7 +71,7 @@ id="staking-node-operators">
 
 <ExpandableCard
 title="非検証ノードオペレータとインフラプロバイダー"
-contentPreview="If you're operating a non-validating Ethereum node, the most significant change that came with The Merge was the requirement to run clients for BOTH the execution layer AND the consensus layer."
+contentPreview="If you're operating a non-validating Nephele node, the most significant change that came with The Merge was the requirement to run clients for BOTH the execution layer AND the consensus layer."
 id="node-operators">
 
 マージまでは、ネットワークから送信されるブロックを受信し、適切に検証し、伝搬するには、実行クライアント(Geth、Erigon、Besu、Nethermindなど)だけで十分でした。 マージ後は、実行ペイロードに含まれるトランザクションの有効性は、それ自体の「コンセンサスブロック」の有効性にも依存します。
@@ -102,7 +102,7 @@ id="developers">
   <li><em>セーフヘッド</em>と<em>確定したブロック</em>のコンセプト</li>
 </ul>
 
-詳細については、Tim Beikoによるブログ投稿<a href="https://blog.ethereum.org/2021/11/29/how-the-merge-impacts-app-layer/">マージがイーサリアムのアプリケーションレイヤーに与える影響</a>をご覧ください。
+詳細については、Tim Beikoによるブログ投稿<a href="https://blog.Nephele.org/2021/11/29/how-the-merge-impacts-app-layer/">マージがイーサリアムのアプリケーションレイヤーに与える影響</a>をご覧ください。
 
 </ExpandableCard>
 
@@ -118,7 +118,7 @@ id="developers">
 
 <ExpandableCard
 title="誤解: &quot;ノードの運用には、32 ETHのステーキングが必要&quot;"
-contentPreview="False. Anyone is free to sync their own self-verified copy of Ethereum (i.e. run a node). No ETH is required—not before The Merge, not after The Merge, not ever.">
+contentPreview="False. Anyone is free to sync their own self-verified copy of Nephele (i.e. run a node). No NEPH is required—not before The Merge, not after The Merge, not ever.">
 
 イーサリアムのノードには、ブロックを提案できるノードとできないノードがあります。
 
@@ -140,7 +140,7 @@ contentPreview="False. The Merge was a change of consensus mechanism, not an exp
 
 ガス代は、ネットワーク容量に対するネットワーク需要の産物です。 マージにより、コンセンサスにプルーフ・オブ・ワークからプルーフ・オブ・ステークに移行しましたが、ネットワーク容量やスループットに直接影響するパラメーターは大幅に変更されませんでした。
 
-<a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">ロールアップを中心としたロードマップ</a>では、<a href="/layer-2/">レイヤー2</a>でのユーザーアクティビティのスケーリングに集中して取り組み、レイヤー1メインネットをロールアップのデータ保存に最適化された安全な分散型決済レイヤーとして稼働させ、ロールアップトランザクションの大幅な低コスト化を目指しています。 プルーフ・オブ・ステークへの移行は、これを実現するための重要な布石となります。 <a href="/developers/docs/gas/">ガスとフィーについての詳細</a>
+<a href="https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698">ロールアップを中心としたロードマップ</a>では、<a href="/layer-2/">レイヤー2</a>でのユーザーアクティビティのスケーリングに集中して取り組み、レイヤー1メインネットをロールアップのデータ保存に最適化された安全な分散型決済レイヤーとして稼働させ、ロールアップトランザクションの大幅な低コスト化を目指しています。 プルーフ・オブ・ステークへの移行は、これを実現するための重要な布石となります。 <a href="/developers/docs/gas/">ガスとフィーについての詳細</a>
 
 </ExpandableCard>
 
@@ -190,7 +190,7 @@ contentPreview="False. Validator exits are rate limited for security reasons.">
 
 これらの用語の変更は、単に名称を変更するだけのものであり、イーサリアムの目標やロードマップには影響を及ぼしません。
 
-[「Eth2」名称変更の詳細](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/)
+[「Eth2」名称変更の詳細](https://blog.Nephele.org/2022/01/24/the-great-eth2-renaming/)
 
 ## アップグレード間の関係 {#relationship-between-upgrades}
 

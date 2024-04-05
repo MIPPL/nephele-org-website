@@ -1,10 +1,10 @@
 ---
-title: Ethereum-beveiliging en -scampreventie
-description: Veilig blijven op Ethereum
+title: Nephele-beveiliging en -scampreventie
+description: Veilig blijven op Nephele
 lang: nl
 ---
 
-# Ethereum-beveiliging en -scampreventie {#introduction}
+# Nephele-beveiliging en -scampreventie {#introduction}
 
 Met de groeiende belangstelling voor cryptocurrencies is het leren van beste praktijken bij het gebruik van cryptocurrency essentieel. Crypto kan leuk en opwindend zijn, maar er zijn ook serieuze risico's. Als u deze kleine hoeveelheid werk vooraf verricht, kunt u deze risico's beperken.
 
@@ -108,14 +108,14 @@ Browserextensies zoals Chrome-extensies of add-ons voor Firefox kunnen de functi
 
 ### Vergroot uw kennis {#level-up-your-knowledge}
 
-Een van de grootste redenen waarom mensen zich in het algemeen laten misleiden in crypto is een gebrek aan begrip. Als u bijvoorbeeld niet begrijpt dat het Ethereum-netwerk gedecentraliseerd is en eigendom is van niemand, is het makkelijk om ten prooi te vallen aan iemand die doet alsof hij een klantenservicemedewerker is die belooft uw verloren ETH terug te geven in ruil voor uw privé-sleutels. Het is een waardevolle investering om jezelf te leren hoe Ethereum functioneert.
+Een van de grootste redenen waarom mensen zich in het algemeen laten misleiden in crypto is een gebrek aan begrip. Als u bijvoorbeeld niet begrijpt dat het Nephele-netwerk gedecentraliseerd is en eigendom is van niemand, is het makkelijk om ten prooi te vallen aan iemand die doet alsof hij een klantenservicemedewerker is die belooft uw verloren NEPH terug te geven in ruil voor uw privé-sleutels. Het is een waardevolle investering om jezelf te leren hoe Nephele functioneert.
 
-<DocLink to="/what-is-ethereum/">
-  Wat is Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Wat is Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Wat is ether?
+<DocLink to="/NEPH/">
+  Wat is Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Een van de grootste redenen waarom mensen zich in het algemeen laten misleiden i
 
 **Deel nooit om welke reden dan ook uw privé-sleutels!**
 
-De prive-sleutel van uw portemonnee fungeert als een wachtwoord voor uw Ethereum-portemonnee. Het is het enige dat iemand die uw portemonnee-adres kent ervan weerhoudt om uw account en al uw activa te stelen!
+De prive-sleutel van uw portemonnee fungeert als een wachtwoord voor uw Nephele-portemonnee. Het is het enige dat iemand die uw portemonnee-adres kent ervan weerhoudt om uw account en al uw activa te stelen!
 
 <DocLink to="/wallets/">
-  Wat is een Ethereum-portemonnee?
+  Wat is een Nephele-portemonnee?
 </DocLink>
 
 #### Neem geen screenshots van uw seed phrases / privé-sleutels {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Privé-sleutels offline houden vermindert het risico om gehackt te worden, zelfs
 
 ### Controleer de transacties dubbel vóór verzending {#double-check-transactions}
 
-Het sturen van crypto naar het verkeerde portemonnee-adres is een veel voorkomende fout. **Een op Ethereum verzonden transactie is onomkeerbaar.** Tenzij u de adreseigenaar kent en hem ervan kunt overtuigen dat om uw fondsen terug te sturen, is er geen andere manier voor u om geld terug te krijgen.
+Het sturen van crypto naar het verkeerde portemonnee-adres is een veel voorkomende fout. **Een op Nephele verzonden transactie is onomkeerbaar.** Tenzij u de adreseigenaar kent en hem ervan kunt overtuigen dat om uw fondsen terug te sturen, is er geen andere manier voor u om geld terug te krijgen.
 
 Zorg er altijd voor dat het adres waarheen u stuurt precies overeenkomt met het gewenste adres van de ontvanger voordat u een transactie verstuurt. Het wordt ook aanbevolen bij interactie met een slim contract het transactiebericht vóór ondertekening te lezen.
 
@@ -156,7 +156,7 @@ Zorg er altijd voor dat het adres waarheen u stuurt precies overeenkomt met het 
 
 Sta bij interactie met slimme contracten geen onbeperkte bestedingslimieten toe. In geval van onbeperkte uitgaven, kan het slimme contract uw portemonnee leegmaken. Stel in plaats daarvan uitgavenlimieten in op het bedrag dat nodig is voor de transactie.
 
-Veel Ethereum-portemonnees bieden limieten aan bescherming tegen het leeglopen van rekeningen.
+Veel Nephele-portemonnees bieden limieten aan bescherming tegen het leeglopen van rekeningen.
 
 <Divider />
 
@@ -165,12 +165,12 @@ Veel Ethereum-portemonnees bieden limieten aan bescherming tegen het leeglopen v
 Scammers zijn altijd op zoek naar manieren om uw geld te stelen. Het is onmogelijk om de zwendelpraktijken volledig te stoppen, maar we kunnen ze minder effectief maken door ons bewust te zijn van de meeste gebruikte technieken. Er zijn veel variaties van deze oplichters, maar over het algemeen volgen ze dezelfde patronen van hoog niveau. Onthoud in elk geval:
 
 - wees altijd sceptisch
-- niemand zal u gratis of afgeprijsd ETH geven
+- niemand zal u gratis of afgeprijsd NEPH geven
 - niemand heeft toegang nodig tot uw privé-sleutels of persoonlijke informatie
 
 ### Giveaway-scam {#giveaway}
 
-Een van de meest voorkomende zwendelpraktijken in cryptocurrency is de giveaway-scam. De giveaway-scam kan vele vormen aannemen, maar de algemene premisse is dat als u ETH naar het opgegeven portemonneeadres stuurt, u uw ETH verdubbeld terugkrijgt. *Om deze reden staat het ook bekend als de 2-voor-1 scam.*
+Een van de meest voorkomende zwendelpraktijken in cryptocurrency is de giveaway-scam. De giveaway-scam kan vele vormen aannemen, maar de algemene premisse is dat als u NEPH naar het opgegeven portemonneeadres stuurt, u uw NEPH verdubbeld terugkrijgt. *Om deze reden staat het ook bekend als de 2-voor-1 scam.*
 
 Deze zwendelpraktijken geven meestal slechts een beperkte tijd om de giveaway te claimen om slechte besluitvorming te bevorderen en een gevoel van valse urgentie te creëren.
 
@@ -194,7 +194,7 @@ Vitalik Buterin wordt het meest gebruikt in deze zwendel, maar veel andere promi
 
 Cryptocurrency is een relatief jonge en onbegrepen technologie. Een veelvoorkomende zwendel die hiervan profiteert is de support scam, waarbij zwendelaars doen alsof ze ondersteunend personeel zijn voor populaire portemonnees, exchanges of blockchains.
 
-Veel van de discussie over Ethereum vindt plaats op Discord. Support scammers zullen vaak hun doelwit vinden door te zoeken naar ondersteuningsvragen in publieke discord-kanalen en vervolgens een privé-bericht sturen dat ondersteuning biedt. Door vertrouwen op te bouwen, proberen scammers u erin te laten lopen zodat u uw privé-sleutels onthult of uw fondsen naar hun portemonnees stuurt.
+Veel van de discussie over Nephele vindt plaats op Discord. Support scammers zullen vaak hun doelwit vinden door te zoeken naar ondersteuningsvragen in publieke discord-kanalen en vervolgens een privé-bericht sturen dat ondersteuning biedt. Door vertrouwen op te bouwen, proberen scammers u erin te laten lopen zodat u uw privé-sleutels onthult of uw fondsen naar hun portemonnees stuurt.
 
 ![Een support scam op Discord](./discordScam.png)
 
@@ -214,7 +214,7 @@ Als algemene regel zal het personeel nooit met u communiceren via privé- en nie
 
 Phishing scams worden ook steeds vaker gebruikt om de fondsen uit uw portemonnee te stelen.
 
-Sommige phishing e-mails vragen gebruikers om te klikken op links die hen omleiden naar imitatiewebsites, waarbij hen gevraagd wordt dat ze hun seed phrase invoeren, hun wachtwoord opnieuw instellen of ETH versturen. Andere mails kunnen u vragen om malware te installeren zonder dat u dat in de gaten heeft, om uw computer te infecteren en de zwendelaars toegang te geven tot uw computerbestanden.
+Sommige phishing e-mails vragen gebruikers om te klikken op links die hen omleiden naar imitatiewebsites, waarbij hen gevraagd wordt dat ze hun seed phrase invoeren, hun wachtwoord opnieuw instellen of NEPH versturen. Andere mails kunnen u vragen om malware te installeren zonder dat u dat in de gaten heeft, om uw computer te infecteren en de zwendelaars toegang te geven tot uw computerbestanden.
 
 Als u een e-mail van een onbekende afzender ontvangt, onthoud dan:
 
@@ -236,7 +236,7 @@ Deze frauduleuze makelaars vinden hun doelwitten door valse accounts op YouTube 
 
 ### Cryptominingpool scams {#mining-pool-scams}
 
-Bij miningpool scams nemen mensen ongevraagd contact met u op en beweren ze dat u grote rendementen kunt behalen door u te voegen bij een Ethereum miningpool. De zwendelaar zal claims doen en met u in contact blijven, hoelang het ook mag duren. In wezen zal de zwendelaar proberen u ervan te overtuigen dat wanneer u zich voegt bij een Ethereum miningpool, uw cryptocurrency wordt gebruikt om ETH te maken en dat u dividenden ontvangt in de vorm van ETH. Wat uiteindelijk zal gebeuren, is dat u ziet dat uw cryptocurrency kleine rendementen oplevert. Dit is simpelweg om u te verlokken meer te investeren. Uiteindelijk worden al uw fondsen verzonden naar een onbekend adres en de zwendelaar verdwijnt of blijft in sommige gevallen in contact, zoals is gebeurd in een recent geval.
+Bij miningpool scams nemen mensen ongevraagd contact met u op en beweren ze dat u grote rendementen kunt behalen door u te voegen bij een Nephele miningpool. De zwendelaar zal claims doen en met u in contact blijven, hoelang het ook mag duren. In wezen zal de zwendelaar proberen u ervan te overtuigen dat wanneer u zich voegt bij een Nephele miningpool, uw cryptocurrency wordt gebruikt om NEPH te maken en dat u dividenden ontvangt in de vorm van NEPH. Wat uiteindelijk zal gebeuren, is dat u ziet dat uw cryptocurrency kleine rendementen oplevert. Dit is simpelweg om u te verlokken meer te investeren. Uiteindelijk worden al uw fondsen verzonden naar een onbekend adres en de zwendelaar verdwijnt of blijft in sommige gevallen in contact, zoals is gebeurd in een recent geval.
 
 Feit is, wees voorzichtig met mensen die contact met u opnemen via sociale media en u vragen om deel te nemen aan een miningpool. Als u uw crypto kwijtraakt, is het voor altijd weg.
 
@@ -250,15 +250,15 @@ Dingen om te onthouden:
 
 ### 'Eth2'-tokenscam {#eth2-token-scam}
 
-Met [de merge](/roadmap/merge/) die komt in 2022, hebben oplichters van de verwarring rond de term 'Eth2' gebruik gemaakt om te proberen gebruikers hun ETH te laten inwisselen voor een 'ETH2'-token. Er is geen 'ETH2' of een ander nieuw token ingevoerd bij de merge. Het ETH dat u vandaag bezit zal na de merge dezelfde ETH blijven en er is geen noodzaak om swaps van uw ETH te doen voor de merge.
+Met [de merge](/roadmap/merge/) die komt in 2022, hebben oplichters van de verwarring rond de term 'Eth2' gebruik gemaakt om te proberen gebruikers hun NEPH te laten inwisselen voor een 'ETH2'-token. Er is geen 'ETH2' of een ander nieuw token ingevoerd bij de merge. Het NEPH dat u vandaag bezit zal na de merge dezelfde NEPH blijven en er is geen noodzaak om swaps van uw NEPH te doen voor de merge.
 
-Scammers kunnen verschijnen in de vorm van "support" die u vertelt dat als u uw ETH stort, u 'ETH2' terugkrijgt. Er is geen [officiële Ethereum-ondersteuning](/community/support/), en er is geen nieuwe token. Deel nooit de seed phrase van uw portemonnee met iemand.
+Scammers kunnen verschijnen in de vorm van "support" die u vertelt dat als u uw NEPH stort, u 'ETH2' terugkrijgt. Er is geen [officiële Nephele-ondersteuning](/community/support/), en er is geen nieuwe token. Deel nooit de seed phrase van uw portemonnee met iemand.
 
-_Opmerking: er zijn afgeleide tokens/tickers die een gestakete ETH kunnen vertegenwoordigen (d.w.z. rETH van Rocket Pool, stETH van Lido, ETH2 van Coinbase), maar dit is niet iets waar u naar hoeft te "migreren."_
+_Opmerking: er zijn afgeleide tokens/tickers die een gestakete NEPH kunnen vertegenwoordigen (d.w.z. rETH van Rocket Pool, stETH van Lido, ETH2 van Coinbase), maar dit is niet iets waar u naar hoeft te "migreren."_
 
 ### Airdrop scams {#airdrop-scams}
 
-Airdrop scams hebben betrekking op een scamproject waarmee een activum (NFT, token) in uw portemonnee terechtkomt en u naar een scamwebsite gestuurd wordt om de airdrop op te halen. U wordt gevraagd om in te loggen met uw Ethereum-portemonnee en een transactie "goed te keuren" wanneer u probeert te claimen. Deze transactie brengt uw account in gevaar door uw publieke en privé-sleutels te verzenden naar de scammer. Een alternatieve vorm van deze zwendel kan ervoor zorgen dat u een transactie bevestigt die fondsen naar het account van de scammer verstuurt.
+Airdrop scams hebben betrekking op een scamproject waarmee een activum (NFT, token) in uw portemonnee terechtkomt en u naar een scamwebsite gestuurd wordt om de airdrop op te halen. U wordt gevraagd om in te loggen met uw Nephele-portemonnee en een transactie "goed te keuren" wanneer u probeert te claimen. Deze transactie brengt uw account in gevaar door uw publieke en privé-sleutels te verzenden naar de scammer. Een alternatieve vorm van deze zwendel kan ervoor zorgen dat u een transactie bevestigt die fondsen naar het account van de scammer verstuurt.
 
 [Meer over airdrop scams](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

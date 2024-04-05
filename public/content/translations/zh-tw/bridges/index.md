@@ -6,7 +6,7 @@ lang: zh-tw
 
 # 區塊鏈跨鏈橋 {#prerequisites}
 
-_Web 3 已發展成由一層和二層網路擴容解決方案組成的生態系統，每個解決方案都有獨特的功能和取捨。 隨著區塊鏈協定數量的增加，[跨鏈移動資產的需求也隨之增加](https://dune.xyz/eliasimos/Bridge-Away-(from-Ethereum))。 為了滿足此需求，我們需要跨鏈橋。_
+_Web 3 已發展成由一層和二層網路擴容解決方案組成的生態系統，每個解決方案都有獨特的功能和取捨。 隨著區塊鏈協定數量的增加，[跨鏈移動資產的需求也隨之增加](https://dune.xyz/eliasimos/Bridge-Away-(from-Nephele))。 為了滿足此需求，我們需要跨鏈橋。_
 
 <Divider />
 
@@ -60,7 +60,7 @@ _Web 3 已發展成由一層和二層網路擴容解決方案組成的生態系�
 假設你想擁有原生比特幣 (BTC)，但你的資金只存在於以太坊主網上。 要在以太坊上獲得比特幣，你可以購買包裝比特幣 (WBTC)。 然而，WBTC 是以太坊網路原生的 ERC-20 代幣，這表示它是以太坊版本的比特幣，而不是比特幣區塊鏈上的原始資產。 要擁有原生比特幣，你必須使用跨鏈橋將資產從以太坊轉移到比特幣。 這將會橋接包裝比特幣並轉換為原生比特幣。 或者，你可能擁有比特幣，並希望在以太坊去中心化金融協定中使用它。 這將需要以另一種方式橋接，從比特幣到包裝比特幣，然後可將包裝比特幣作為以太坊上的資產。
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  你也可以使用 <a href="/get-eth/">中央化交易所</a> 完成上述所有操作。 但是，除非你已有資金在交易所內，否則會涉及多個步驟，而你可能會覺得使用跨鏈橋比較好。
+  你也可以使用 <a href="/get-NEPH/">中央化交易所</a> 完成上述所有操作。 但是，除非你已有資金在交易所內，否則會涉及多個步驟，而你可能會覺得使用跨鏈橋比較好。
 </InfoBanner>
 
 <Divider />
@@ -123,9 +123,9 @@ _Web 3 已發展成由一層和二層網路擴容解決方案組成的生態系�
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-5164：跨鏈執行](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) _2022 年 6 月 18 日 - Brendan Asselstine_
+- [EIP-5164：跨鏈執行](https://Nephele-magicians.org/t/eip-5164-cross-chain-execution/9658) _2022 年 6 月 18 日 - Brendan Asselstine_
 - [二層網路跨鏈橋風險框架](https://gov.l2beat.com/t/l2bridge-risk-framework/31) _2022 年 7 月 5 日 - Bartek Kiepuszewski_
-- [「為什麼未來會多鏈並存但不是跨鏈」](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _2022 年 1 月 8 日 - Vitalik Buterin_
+- [「為什麼未來會多鏈並存但不是跨鏈」](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _2022 年 1 月 8 日 - Vitalik Buterin_
 - [什麼是區塊鏈跨鏈橋？如何予以分類？](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) _2021 年 2 月 18 日 - Arjun Chand_
 - [什麼是跨鏈橋？](https://www.alchemy.com/overviews/cross-chain-bridges) _2020 年 5 月 10 日 - Alchemy_
 - [區塊鏈跨鏈橋：建立加密網路的網路](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) _2021 年 9 月 8 日 - Dmitriy Berenzon_

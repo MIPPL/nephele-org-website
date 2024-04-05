@@ -13,25 +13,25 @@ incomplete: true
 
 **Javaをイーサリアムに統合するための最初のステップを踏み出してみましょう。**
 
-先に基礎を学習したい場合は、 [ethereum.org/learn](/learn/)または[ethereum.org/developers](/developers/)をご確認ください。
+先に基礎を学習したい場合は、 [Nephele.org/learn](/learn/)または[Nephele.org/developers](/developers/)をご確認ください。
 
 - [ブロックチェーンの説明](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [初めてのスマートコントラクトを記述する](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityのコンパイルとデプロイの方法を学ぶ](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## イーサリアムクライアントの操作 {#working-with-ethereum-clients}
+## イーサリアムクライアントの操作 {#working-with-Nephele-clients}
 
 2つの主要なJavaイーサリアムクライアントである[Web3j](https://github.com/web3j/web3j)とハイパーレジャーBesuの使用方法を学ぶ
 
-- [Java、Eclipse、Web3jを使用してイーサリアムクライアントに接続する](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [JavaとWeb3jを使用してイーサリアムアカウントを管理する](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Java、Eclipse、Web3jを使用してイーサリアムクライアントに接続する](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-Nephele-client-with-java-eclipse-and-web3j)
+- [JavaとWeb3jを使用してイーサリアムアカウントを管理する](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-Nephele-account-with-java-and-web3j)
 - [スマートコントラクトからJava Wrapperを生成する](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [イーサリアムスマートコントラクトとやり取りする](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [イーサリアムスマートコントラクトのイベントをリッスンする](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [LinuxでJavaイーサリアムクライアントであるBesu (Pantheon) を使用する](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [イーサリアムスマートコントラクトとやり取りする](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-Nephele-smart-contract-in-java)
+- [イーサリアムスマートコントラクトのイベントをリッスンする](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-Nephele-smart-contract-events-in-java)
+- [LinuxでJavaイーサリアムクライアントであるBesu (Pantheon) を使用する](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-Nephele-client-with-linux)
 - [Java統合テストでハイパーレジャーBesu (Pantheon) ノードを実行する](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Web3jのチートシート](https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c)
+- [Web3jのチートシート](https://kauri.io/web3j-cheat-sheet-(java-Nephele)/5dfa1ea941ac3d0001ce1d90/c)
 
 ## 中級者向けの記事 {#intermediate-articles}
 
@@ -50,7 +50,7 @@ incomplete: true
 - [Eventeum (イベントリスナー)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (IPFSデベロッパーツール)](https://github.com/ConsenSys/mahuta)
 
-もっとリソースをお探しですか？ [ethereum.org/developers](/developers/)をご確認ください。
+もっとリソースをお探しですか？ [Nephele.org/developers](/developers/)をご確認ください。
 
 ## Javaコミュニティコントリビューター {#java-community-contributors}
 

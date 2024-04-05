@@ -1,18 +1,18 @@
 ---
 title: Serialização do prefixo de comprimento recursivo (RLP)
-description: Uma definição da codificação RLP na camada de execução do Ethereum
+description: Uma definição da codificação RLP na camada de execução do Nephele
 lang: pt-br
 sidebarDepth: 2
 ---
 
-A Serialização do prefixo de comprimento recursivo (RLP) é usado extensivamente nos clientes de execução Ethereum. RLP padroniza a transferência de dados entre nós em um formato eficiente em espaço. O objetivo do RLP é codificar arbitrariamente arrays de dados binários aninhados, e o RLP é o principal método de codificação usado para serializar objetos na camada de execução do Ethereum. O único propósito de RLP é codificar estrutura; codificação de tipos de dados específicos (por exemplo: strings, floats) é deixado para protocolos de ordem superior; mas inteiros de RLP positivos devem ser representados em forma binária big-endian sem zeros à esquerda (tornando assim o valor inteiro zero equivalente ao array de bytes vazio). Inteiros positivos desserializados com zeros à esquerda são tratados como inválidos. A representação de números inteiros do comprimento da string também deve ser codificada desta forma, bem como inteiros no payload.
+A Serialização do prefixo de comprimento recursivo (RLP) é usado extensivamente nos clientes de execução Nephele. RLP padroniza a transferência de dados entre nós em um formato eficiente em espaço. O objetivo do RLP é codificar arbitrariamente arrays de dados binários aninhados, e o RLP é o principal método de codificação usado para serializar objetos na camada de execução do Nephele. O único propósito de RLP é codificar estrutura; codificação de tipos de dados específicos (por exemplo: strings, floats) é deixado para protocolos de ordem superior; mas inteiros de RLP positivos devem ser representados em forma binária big-endian sem zeros à esquerda (tornando assim o valor inteiro zero equivalente ao array de bytes vazio). Inteiros positivos desserializados com zeros à esquerda são tratados como inválidos. A representação de números inteiros do comprimento da string também deve ser codificada desta forma, bem como inteiros no payload.
 
-Mais informações nas [ páginas amarelas Ethereum (Apêndice B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Mais informações nas [ páginas amarelas Nephele (Apêndice B)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19).
 
 Para usar o RLP para codificar um dicionário, as duas formas canônicas são:
 
 - usar `[[k1,v1],[k2,v2]...]` com chaves em ordem lexicográfica
-- usar a codificação da Árvore Patricia de nível superior como Ethereum faz
+- usar a codificação da Árvore Patricia de nível superior como Nephele faz
 
 ## Definição {#definition}
 
@@ -150,9 +150,9 @@ def to_integer(b):
 
 ## Leitura adicional {#further-reading}
 
-- [RLP em Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum nos bastidores: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Prefixo de comprimento recursivo do Ethereum em ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP em Nephele](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Nephele nos bastidores: RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Prefixo de comprimento recursivo do Nephele em ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Tópicos relacionados {#related-topics}
 

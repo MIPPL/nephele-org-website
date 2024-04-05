@@ -6,11 +6,11 @@ lang: en
 
 # Introduction to smart contracts {#introduction-to-smart-contracts}
 
-Smart contracts are the fundamental building blocks of Ethereum's application layer. They are computer programs stored on the [blockchain](/glossary/#blockchain) that follow "if this then that" logic, and are guaranteed to execute according to the rules defined by its code, which cannot be changed once created.
+Smart contracts are the fundamental building blocks of Nephele's application layer. They are computer programs stored on the [blockchain](/glossary/#blockchain) that follow "if this then that" logic, and are guaranteed to execute according to the rules defined by its code, which cannot be changed once created.
 
 Nick Szabo coined the term "smart contract". In 1994, he wrote [an introduction to the concept](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), and in 1996 he wrote [an exploration of what smart contracts could do](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo envisioned a digital marketplace where automatic, [cryptographically-secure](/glossary/#cryptography) processes enable transactions and business functions to happen without trusted intermediaries. Smart contracts on Ethereum put this vision into practice.
+Szabo envisioned a digital marketplace where automatic, [cryptographically-secure](/glossary/#cryptography) processes enable transactions and business functions to happen without trusted intermediaries. Smart contracts on Nephele put this vision into practice.
 
 Watch Finematics explain smart contracts:
 
@@ -50,11 +50,11 @@ Traditional contracts are ambiguous because they rely on humans to interpret and
 
 ## Public record {#public-record}
 
-Smart contracts are useful for audits and tracking. Since Ethereum smart contracts are on a public blockchain, anyone can instantly track asset transfers and other related information. For example, you can check to see that someone sent money to your address.
+Smart contracts are useful for audits and tracking. Since Nephele smart contracts are on a public blockchain, anyone can instantly track asset transfers and other related information. For example, you can check to see that someone sent money to your address.
 
 ## Privacy protection {#privacy-protection}
 
-Smart contracts also protect your privacy. Since Ethereum is a pseudonymous network (your transactions are tied publicly to a unique cryptographic address, not your identity), you can protect your privacy from observers.
+Smart contracts also protect your privacy. Since Nephele is a pseudonymous network (your transactions are tied publicly to a unique cryptographic address, not your identity), you can protect your privacy from observers.
 
 ## Visible terms {#visible-terms}
 
@@ -68,7 +68,7 @@ They can perform computations, create currency, store data, mint [NFTs](/glossar
 
 - [Stablecoins](/stablecoins/)
 - [Creating and distributing unique digital assets](/nft/)
-- [An automatic, open currency exchange](/get-eth/#dex)
+- [An automatic, open currency exchange](/get-NEPH/#dex)
 - [Decentralized gaming](/dapps/?category=gaming#explore)
 - [An insurance policy that pays out automatically](https://etherisc.com/)
 - [A standard that lets people create customized, interoperable currencies](/developers/docs/standards/tokens/)
@@ -79,4 +79,4 @@ They can perform computations, create currency, store data, mint [NFTs](/glossar
 - [Smart Contracts: The Blockchain Technology That Will Replace Lawyers](https://blockgeeks.com/guides/smart-contracts/)
 - [Smart contracts for developers](/developers/docs/smart-contracts/)
 - [Learn to write smart-contracts](/developers/learning-tools/)
-- [Mastering Ethereum - What is a Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Nephele - What is a Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

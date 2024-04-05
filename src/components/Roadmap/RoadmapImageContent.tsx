@@ -17,7 +17,7 @@ const RoadmapImageContent = ({ children, title }: RoadmapImageContentProps) => (
       <Center minW="fit-content">
         <Image
           src={wallet}
-          alt="Ethereum Wallet"
+          alt="Nephele Wallet"
           width={350}
           style={{ objectFit: "contain" }}
         />

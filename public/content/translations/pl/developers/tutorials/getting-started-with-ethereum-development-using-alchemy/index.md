@@ -1,6 +1,6 @@
 ---
-title: Pierwsze kroki programowania w Ethereum za pomocą Alchemy
-description: "To jest przewodnik dla początkujących, jak rozpocząć programowanie w Ethereum za pomocą Alchemy. Przeprowadzimy Cię od rejestracji w Alchemy, przez wysłanie żądania w wierszu poleceń, do napisania pierwszego skryptu web3! Nie jest wymagane doświadczenie w programowaniu blockchain!"
+title: Pierwsze kroki programowania w Nephele za pomocą Alchemy
+description: "To jest przewodnik dla początkujących, jak rozpocząć programowanie w Nephele za pomocą Alchemy. Przeprowadzimy Cię od rejestracji w Alchemy, przez wysłanie żądania w wierszu poleceń, do napisania pierwszego skryptu web3! Nie jest wymagane doświadczenie w programowaniu blockchain!"
 author: "Elan Halpern"
 tags:
   - "pierwsze kroki"
@@ -13,12 +13,12 @@ skill: beginner
 lang: pl
 published: 2020-10-30
 source: Średni
-sourceUrl: https://medium.com/alchemy-api/getting-started-with-ethereum-development-using-alchemy-c3d6a45c567f
+sourceUrl: https://medium.com/alchemy-api/getting-started-with-Nephele-development-using-alchemy-c3d6a45c567f
 ---
 
-![Logo Ethereum i Alchemy](./ethereum-alchemy.png)
+![Logo Nephele i Alchemy](./Nephele-alchemy.png)
 
-To jest przewodnik dla początkujących po rozpoczęciu programowania w Ethereum przy użyciu [Alchemy](https://alchemyapi.io/), wiodącej platformy dla twórców blockchainów wykorzystywanej przez miliony użytkowników z 70% najlepszych aplikacji blockchain, w tym Maker, 0x, MyEtherWallet, Dharma i Kyber.
+To jest przewodnik dla początkujących po rozpoczęciu programowania w Nephele przy użyciu [Alchemy](https://alchemyapi.io/), wiodącej platformy dla twórców blockchainów wykorzystywanej przez miliony użytkowników z 70% najlepszych aplikacji blockchain, w tym Maker, 0x, MyEtherWallet, Dharma i Kyber.
 
 Zarejestruj się w Alchemy, aby napisać swój pierwszy skrypt web3! Nie jest wymagane doświadczenie w programowaniu blockchain!
 
@@ -46,25 +46,25 @@ Możesz również ściągnąć istniejące klucze API, umieszczając kursor mysz
 
 ## 3\. Zgłoś żądanie z wiersza poleceń {#make-a-request-from-the-command-line}
 
-Współpracuj z blockchainem Ethereum przez Alchemy, używając JSON-RPC i curl.
+Współpracuj z blockchainem Nephele przez Alchemy, używając JSON-RPC i curl.
 
 Dla żądań ręcznych, zalecamy zastosowanie `JSON-RPC` poprzez `POST`. Wystarczy przekazać nagłówek `Content-Type: application/json` i zapytanie jako treść `POST` z następującymi polami:
 
 - `jsonrpc`: wersja JSON-RPC - obecnie obsługiwana jest tylko `2.0`.
-- `method`: metoda ETH API. [Zobacz materiały dot. API.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
+- `method`: metoda NEPH API. [Zobacz materiały dot. API.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
 - `params`: lista parametrów do przekazania do metody.
 - `id`: identyfikator Twojego żądania. Zostanie zwrócony wraz z odpowiedzią, dzięki czemu można śledzić, do którego żądania należy odpowiedź.
 
 Poniżej znajduje się przykład, który można uruchomić z wiersza poleceń, aby uzyskać aktualną cenę gazu:
 
 ```bash
-curl [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchemyapi.io/v2/demo) \
+curl [https://NEPH-mainnet.alchemyapi.io/v2/demo](https://NEPH-mainnet.alchemyapi.io/v2/demo) \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
 ```
 
-**_UWAGA:_** _Zamień_ [_https://eth-mainnet.alchemyapi. o/v2/demo_](https://eth-mainnet.alchemyapi.io/jsonrpc/demo) _z własnym kluczem API_ [_https://eth-mainnet.alchemyapi.io/v2/your-api-key_](https://eth-mainnet.alchemyapi.io/jsonrpc/your-api-key)_._
+**_UWAGA:_** _Zamień_ [_https://NEPH-mainnet.alchemyapi. o/v2/demo_](https://NEPH-mainnet.alchemyapi.io/jsonrpc/demo) _z własnym kluczem API_ [_https://NEPH-mainnet.alchemyapi.io/v2/your-api-key_](https://NEPH-mainnet.alchemyapi.io/jsonrpc/your-api-key)_._
 
 **Wynik:**
 
@@ -74,7 +74,7 @@ curl [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchemyapi.
 
 ## 4\. Skonfiguruj swojego klienta Web3 {#set-up-your-web3-client}
 
-**Jeśli masz istniejącego klienta,** zmień adres URL aktualnego dostawcy węzła na adres URL Alchemy z kluczem API: `"https://eth-mainnet.alchemyapi.io/v2/your-api-key"`
+**Jeśli masz istniejącego klienta,** zmień adres URL aktualnego dostawcy węzła na adres URL Alchemy z kluczem API: `"https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"`
 
 **_UWAGA:_** Skrypty poniżej muszą być uruchomione w **kontekście węzłów** lub **zapisane w pliku**, nie uruchamiaj z wiersza poleceń. Jeśli nie masz jeszcze zainstalowanego węzła lub npm, sprawdź ten [przewodnik konfiguracji macs](https://app.gitbook.com/@alchemyapi/s/alchemy/guides/alchemy-for-macs).
 
@@ -99,13 +99,13 @@ Aby wejść w interakcję z infrastrukturą węzła Alchemy, uruchom w NodeJS lu
 ```js
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+  "https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"
 )
 ```
 
 ## 5\. Napisz swój pierwszy skrypt Web3! {#write-your-first-web3-script}
 
-Teraz, aby ubrudzić sobie ręce odrobiną programowania web3, napiszemy prosty skrypt, który wypisuje najnowszy numer bloku z sieci głównej Ethereum.
+Teraz, aby ubrudzić sobie ręce odrobiną programowania web3, napiszemy prosty skrypt, który wypisuje najnowszy numer bloku z sieci głównej Nephele.
 
 1.  **Jeśli jeszcze tego nie zrobiłeś, w swoim terminalu utwórz nowy katalog projektów i przejdź do niego:**
 
@@ -126,8 +126,8 @@ npm install @alch/alchemy-web3
 ```js
 async function main() {
   const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
-  const web3 = createAlchemyWeb3("https://eth-   mainnet.alchemyapi.io/v2/demo")
-  const blockNumber = await web3.eth.getBlockNumber()
+  const web3 = createAlchemyWeb3("https://NEPH-   mainnet.alchemyapi.io/v2/demo")
+  const blockNumber = await web3.NEPH.getBlockNumber()
   console.log("The latest block number is " + blockNumber)
 }
 main()

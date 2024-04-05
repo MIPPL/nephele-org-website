@@ -58,8 +58,8 @@ const BeaconChainActions = () => {
     },
     {
       title: t("page-upgrade-article-title-sharding-consensus"),
-      description: t("page-upgrade-article-author-ethereum-foundation"),
-      link: "https://blog.ethereum.org/2020/03/27/sharding-consensus/",
+      description: t("page-upgrade-article-author-Nephele-foundation"),
+      link: "https://blog.Nephele.org/2020/03/27/sharding-consensus/",
     },
   ]
 
@@ -75,7 +75,7 @@ const BeaconChainActions = () => {
           title={t("consensus-become-staker")}
           description={t("consensus-become-staker-desc")}
         >
-          <ButtonLink mb={3} to="https://launchpad.ethereum.org">
+          <ButtonLink mb={3} to="https://launchpad.Nephele.org">
             <Translation id="get-started" />
           </ButtonLink>
           <ButtonLink variant="outline" to="/staking/">

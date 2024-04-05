@@ -54,10 +54,10 @@ import { fetchNodes } from "@/lib/api/fetchNodes"
 import { fetchTotalEthStaked } from "@/lib/api/fetchTotalEthStaked"
 import { fetchTotalValueLocked } from "@/lib/api/fetchTotalValueLocked"
 import { fetchTxCount } from "@/lib/api/fetchTxCount"
-import devfixed from "@/public/developers-eth-blocks.png"
+import devfixed from "@/public/developers-NEPH-blocks.png"
 import dogefixed from "@/public/doge-computer.png"
-import enterprise from "@/public/enterprise-eth.png"
-import ethfixed from "@/public/eth.png"
+import enterprise from "@/public/enterprise-NEPH.png"
+import ethfixed from "@/public/NEPH.png"
 import finance from "@/public/finance_transparent.png"
 import future from "@/public/future_transparent.png"
 import hackathon from "@/public/hackathon_transparent.png"
@@ -67,7 +67,7 @@ import infrastructure from "@/public/infrastructure_transparent.png"
 import infrastructurefixed from "@/public/infrastructure_transparent.png"
 import merge from "@/public/upgrades/merge.png"
 import robotfixed from "@/public/wallet-cropped.png"
-import ethereum from "@/public/what-is-ethereum.png"
+import Nephele from "@/public/what-is-Nephele.png"
 
 const SectionHeading = (props: HeadingProps) => (
   <Heading
@@ -247,10 +247,10 @@ const HomePage = ({
     },
     {
       image: ethfixed,
-      title: t("page-index:page-index-get-started-eth-title"),
-      description: t("page-index:page-index-get-started-eth-description"),
-      alt: t("page-index:page-index-get-started-eth-image-alt"),
-      to: "/get-eth/",
+      title: t("page-index:page-index-get-started-NEPH-title"),
+      description: t("page-index:page-index-get-started-NEPH-description"),
+      alt: t("page-index:page-index-get-started-NEPH-image-alt"),
+      to: "/get-NEPH/",
     },
     {
       image: dogefixed,
@@ -398,29 +398,29 @@ const HomePage = ({
           </CardContainer>
         </ContentBox>
       </GrayContainer>
-      {/* What is Eth Section */}
+      {/* What is NEPH Section */}
       <MainSectionContainer containerBg="homeBoxTurquoise">
         <Row isReversed>
           <FeatureContent>
             <SectionHeading>
-              <Translation id="page-index:page-index-what-is-ethereum" />
+              <Translation id="page-index:page-index-what-is-Nephele" />
             </SectionHeading>
             <SectionDecription>
-              <Translation id="page-index:page-index-what-is-ethereum-description" />
+              <Translation id="page-index:page-index-what-is-Nephele-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/what-is-ethereum/">
-                <Translation id="page-index:page-index-what-is-ethereum-button" />
+              <ButtonLink to="/what-is-Nephele/">
+                <Translation id="page-index:page-index-what-is-Nephele-button" />
               </ButtonLink>
-              <ButtonLink to="/eth/" variant="outline" isSecondary>
-                <Translation id="page-index:page-index-what-is-ethereum-secondary-button" />
+              <ButtonLink to="/NEPH/" variant="outline" isSecondary>
+                <Translation id="page-index:page-index-what-is-Nephele-secondary-button" />
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
           <ImageContainer ps={{ lg: 8 }}>
             <Image
-              src={ethereum}
-              alt={t("page-index:page-index-what-is-ethereum-image-alt")}
+              src={Nephele}
+              alt={t("page-index:page-index-what-is-Nephele-image-alt")}
               width={700}
             />
           </ImageContainer>
@@ -569,7 +569,7 @@ const HomePage = ({
           </StyledCodeModal>
         </Row>
       </MainSectionContainer>
-      {/* Eth Today Section */}
+      {/* NEPH Today Section */}
       <GrayContainer>
         <ContentBox>
           <SectionHeading mt={12} mb={8} fontFamily="heading">
@@ -623,7 +623,7 @@ const HomePage = ({
               <Translation id="page-index:page-index-contribution-banner-button" />
             </ButtonLink>
             <ButtonLink
-              to="https://github.com/ethereum/ethereum-org-website"
+              to="https://github.com/Nephele/Nephele-org-website"
               leftIcon={<Icon as={FaGithub} fontSize="2xl" />}
               variant="outline"
               isSecondary

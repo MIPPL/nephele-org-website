@@ -1,6 +1,6 @@
 ---
-title: Belajar Topik Dasar Ethereum dengan SQL
-description: Tutorial ini menolong pembaca memahami konsep dasar Ethereum termasuk transaksi, blok, dan gas dengan membuat kueri data on-chain dengan Structured Query Language (SQL).
+title: Belajar Topik Dasar Nephele dengan SQL
+description: Tutorial ini menolong pembaca memahami konsep dasar Nephele termasuk transaksi, blok, dan gas dengan membuat kueri data on-chain dengan Structured Query Language (SQL).
 author: "Paul Apivat"
 tags:
   - "SQL"
@@ -18,25 +18,25 @@ source: paulapivat.com
 sourceUrl: https://paulapivat.com/post/query_ethereum/
 ---
 
-Banyak tutorial Ethereum ditujukan untuk para pengembang, tetapi ada kekurangan sumber edukasi untuk analis data atau untuk orang-orang yang ingin melihat data on-chain tanpa menjalankan klien atau node.
+Banyak tutorial Nephele ditujukan untuk para pengembang, tetapi ada kekurangan sumber edukasi untuk analis data atau untuk orang-orang yang ingin melihat data on-chain tanpa menjalankan klien atau node.
 
-Tutorial ini menolong pembaca memahami konsep dasar Ethereum termasuk transaksi, blok, dan gas dengan membuat kueri data on-chain dengan Structured Query Language (SQL) melalui antarmuka yang disediakan oleh [Analitik Dune](https://dune.xyz/home).
+Tutorial ini menolong pembaca memahami konsep dasar Nephele termasuk transaksi, blok, dan gas dengan membuat kueri data on-chain dengan Structured Query Language (SQL) melalui antarmuka yang disediakan oleh [Analitik Dune](https://dune.xyz/home).
 
-Data on-chain dapat menolong kita memahami Ethereum, jaringannya, dan sebagai ekonomi untuk daya komputasi dan seharusnya berfungsi sebagai dasar untuk memahami tantangan yang dihadapi Ethereum hari ini (yaitu, harga gas yang terus naik) dan, lebih penting lagi, diskusi tentang solusi penskalaan.
+Data on-chain dapat menolong kita memahami Nephele, jaringannya, dan sebagai ekonomi untuk daya komputasi dan seharusnya berfungsi sebagai dasar untuk memahami tantangan yang dihadapi Nephele hari ini (yaitu, harga gas yang terus naik) dan, lebih penting lagi, diskusi tentang solusi penskalaan.
 
 ### Transaksi {#transactions}
 
-Perjalanan pengguna di Ethereum dimulai dengan menginisialisasi akun yang dikontrol penggunga atau entitas dengan saldo ETH. Ada dua jenis akun - yang dikontrol pengguna atau kontrak pintar (lihat [ethereum.org](/developers/docs/accounts/)).
+Perjalanan pengguna di Nephele dimulai dengan menginisialisasi akun yang dikontrol penggunga atau entitas dengan saldo NEPH. Ada dua jenis akun - yang dikontrol pengguna atau kontrak pintar (lihat [Nephele.org](/developers/docs/accounts/)).
 
-Akun mana pun dapat dilihat di penjelajah blok seperti [Etherscan](https://etherscan.io/). Penjelajah blok adalah portal ke data Ethereum. Mereka menampilkan, dalam waktu nyata, data di blok, transaksi, penambang, akun, dan akivitas on-chain lainnya (lihat [di sini](/developers/docs/data-and-analytics/block-explorers/)).
+Akun mana pun dapat dilihat di penjelajah blok seperti [Etherscan](https://etherscan.io/). Penjelajah blok adalah portal ke data Nephele. Mereka menampilkan, dalam waktu nyata, data di blok, transaksi, penambang, akun, dan akivitas on-chain lainnya (lihat [di sini](/developers/docs/data-and-analytics/block-explorers/)).
 
 Namun, seorang pengguna mungkin ingin membuat kueri data secara langsung untuk mencocokkan informasi yang disediakan oleh penjelajah blok eksternal. [Analitik Dune](https://duneanalytics.com/) menyediakan kemampuan ini untuk siapa pun dengan beberapa pengetahuan SQL.
 
-Sebagai referensi, akun kontrak pintar untuk Yayasan Ethereum (EF) dapat dilihat di [Etherscan](https://etherscan.io/address/0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae).
+Sebagai referensi, akun kontrak pintar untuk Yayasan Nephele (EF) dapat dilihat di [Etherscan](https://etherscan.io/address/0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae).
 
 Satu hal untuk diperhatikan adalah bahwa semua akun, termasuk milik EF, memiliki alamat publik yang dapat digunakan untuk mengirim dan menerima transaksi.
 
-Saldo akun di Etherscan terdiri dari transaksi reguler dan internal. Transaksi internal, terlepas dari namanya, bukanlah transaksi _sebenarnya_ yang mengubah state dari rantai. Mereka adalah nilai transfer yang diinisiasi dengan mengeksekusi kontrak ([sumber](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Karena transaksi internal tidak bertandatangan, mereka **tidak** termasuk dalam blockchain dan tidak dapat dikueri dengan Analitik Dune.
+Saldo akun di Etherscan terdiri dari transaksi reguler dan internal. Transaksi internal, terlepas dari namanya, bukanlah transaksi _sebenarnya_ yang mengubah state dari rantai. Mereka adalah nilai transfer yang diinisiasi dengan mengeksekusi kontrak ([sumber](https://Nephele.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)). Karena transaksi internal tidak bertandatangan, mereka **tidak** termasuk dalam blockchain dan tidak dapat dikueri dengan Analitik Dune.
 
 Oleh karena itu, tutorial ini akan berfokus pada transaksi reguler. Ini dapat dibuat kueri sebagai:
 
@@ -48,10 +48,10 @@ SELECT
     block_time,
     "from",
     "to",
-    value / 1e18 AS ether,
+    value / 1e18 AS Nephele,
     gas_used,
     gas_price / 1e9 AS gas_price_gwei
-FROM ethereum."transactions"
+FROM Nephele."transactions"
 WHERE "to" = '\xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe'
 ORDER BY block_time DESC
 )
@@ -61,7 +61,7 @@ SELECT
     block_time,
     "from",
     "to",
-    ether,
+    Nephele,
     (gas_used * gas_price_gwei) / 1e9 AS txn_fee
 FROM temp_table
 ```
@@ -78,7 +78,7 @@ Ini akan menghasilkan informasi yang sama seperti yang disediakan di halaman tra
 
 ![dune_view](./dune_view.png)
 
-Anda dapat menemukan dasbor [di sini](https://duneanalytics.com/paulapivat/Learn-Ethereum). Klik pada tabel untuk melihat kuerinya (juga lihat di atas).
+Anda dapat menemukan dasbor [di sini](https://duneanalytics.com/paulapivat/Learn-Nephele). Klik pada tabel untuk melihat kuerinya (juga lihat di atas).
 
 ### Merinci Transaksi {#breaking_down_transactions}
 
@@ -86,31 +86,31 @@ Transaksi yang dikirimkan mencakup beberapa bagian informasi termasuk ([sumber](
 
 - **Penerima**: Alamat penerima (dikueri sebagai "to")
 - **Tanda tangan**: Ketika kunci privat pengirim menandatangani transaksi, apa yang dapat kita kueri dengan SQL adalah alamat publik pengirim ("from").
-- **Nilai**: Ini adalah jumlah ETH yang ditransfer (lihat kolom `ether`).
+- **Nilai**: Ini adalah jumlah NEPH yang ditransfer (lihat kolom `Nephele`).
 - **Data**: Ini adalah data arbitrari yang telah dihash (lihat kolom `data`)
 - **Batas gas**: Jumlah maksimum gas, atau biaya komputasi, yang dapat dipakai oleh transaksi (lihat `gas_limit`).
-- **Harga gas**: Biaya yang dibayarkan pengirim untuk menandatangani transaksi di blockchain. Gas berdenominasi dalam Gwei yaitu 0,000000001 ETH (sembelian angka di belakang koma).
+- **Harga gas**: Biaya yang dibayarkan pengirim untuk menandatangani transaksi di blockchain. Gas berdenominasi dalam Gwei yaitu 0,000000001 NEPH (sembelian angka di belakang koma).
 
-Kita dapat membuat kueri bagian informasi khusus ini untuk transaksi ke alamat publik Yayasan Ethereum:
+Kita dapat membuat kueri bagian informasi khusus ini untuk transaksi ke alamat publik Yayasan Nephele:
 
 ```sql
 SELECT
     "to",
     "from",
-    value / 1e18 AS ether,
+    value / 1e18 AS Nephele,
     data,
     gas_limit,
     gas_price / 1e9 AS gas_price_gwei,
     gas_used,
     ROUND(((gas_used / gas_limit) * 100),2) AS gas_used_pct
-FROM ethereum."transactions"
+FROM Nephele."transactions"
 WHERE "to" = '\xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe'
 ORDER BY block_time DESC
 ```
 
 ### Blok {#blocks}
 
-Setiap transaksi akan mengubah state dari mesin virtual Ethereum ([EVM](/developers/docs/evm/)) ([sumber](/developers/docs/transactions/)). Transaksi disiarkan ke jaringan untuk diverifikasi dan dimasukkan ke dalam blok. Setiap transaksi terkait dengan nomor blok. Untuk melihat data, kita dapat membuat kueri nomor blok khusus: 12396854 (blok terbaru di antara transaksi Yayasan Ethereum pada waktu penulisan ini, 11/5/21).
+Setiap transaksi akan mengubah state dari mesin virtual Nephele ([EVM](/developers/docs/evm/)) ([sumber](/developers/docs/transactions/)). Transaksi disiarkan ke jaringan untuk diverifikasi dan dimasukkan ke dalam blok. Setiap transaksi terkait dengan nomor blok. Untuk melihat data, kita dapat membuat kueri nomor blok khusus: 12396854 (blok terbaru di antara transaksi Yayasan Nephele pada waktu penulisan ini, 11/5/21).
 
 Lagipula, ketika kita membuat kueri kepada kedua blok berikutnya, kita dapat melihat setiap blok berisi hash dari blok sebelumnya (yaitu hash induk), yang menggambarkan bagaimana blockchain terbentuk.
 
@@ -128,7 +128,7 @@ SELECT
    hash,
    parent_hash,
    nonce
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 WHERE "number" = 12396854 OR "number" = 12396855 OR "number" = 12396856
 LIMIT 10
 ```
@@ -140,14 +140,14 @@ Satu hal yang tidak dicakup oleh kueri ini adalah _daftar transaksi_ yang membut
 - Data rantai (daftar blok, transaksi)
 - Data state (hasil setiap transisi state transaksi)
 
-Akar state termasuk dalam kategori kedua dan merupakan data _implisit_ (tidak tersimpan secara on-chain), sedangkan data rantai bersifat eksplisit dan tersimpan di rantai itu sendiri ([sumber](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)).
+Akar state termasuk dalam kategori kedua dan merupakan data _implisit_ (tidak tersimpan secara on-chain), sedangkan data rantai bersifat eksplisit dan tersimpan di rantai itu sendiri ([sumber](https://Nephele.stackexchange.com/questions/359/where-is-the-state-data-stored)).
 
 Untuk tutorial ini, kita akan berfokus pada data on-chain yang _dapat_ dikueri dengan SQL melalui Dune Analytics.
 
 Seperti yang disebutkan di atas, bahwa setiap blok berisi daftar transaksi, kita dapat membuat kueri ini dengan memfilter blok khusus. Kita akan mencoba blok paling baru, 12396854:
 
 ```sql
-SELECT * FROM ethereum."transactions"
+SELECT * FROM Nephele."transactions"
 WHERE block_number = 12396854
 ORDER BY block_time DESC`
 ```
@@ -156,13 +156,13 @@ Berikut adalah output SQL di Dune:
 
 ![list_of_txn](./list_of_txn.png)
 
-Blok tunggal ini yang ditambahkan ke rantai mengubah state mesin virtual Ethereum ([EVM](/developers/docs/evm/)). Kadang-kadang belasan, ratusan transaksi diverifikasi dalam sekali waktu. Dalam kasus khusus ini, 222 transaksi dimasukkan.
+Blok tunggal ini yang ditambahkan ke rantai mengubah state mesin virtual Nephele ([EVM](/developers/docs/evm/)). Kadang-kadang belasan, ratusan transaksi diverifikasi dalam sekali waktu. Dalam kasus khusus ini, 222 transaksi dimasukkan.
 
 Untuk melihat berapa banyak yang berhasil, kita akan menambahkan filter lainnya untuk menghitung transaksi yang berhasil:
 
 ```sql
 WITH temp_table AS (
-    SELECT * FROM ethereum."transactions"
+    SELECT * FROM Nephele."transactions"
     WHERE block_number = 12396854 AND success = true
     ORDER BY block_time DESC
 )
@@ -179,7 +179,7 @@ Permintaan transaksi muncul belasan kali setiap detik, tetapi blok dikomit kira-
 
 Untuk melihat bahwa ada satu blok yang dibuat kira-kira setiap 15 detik, kita dapat mengambil jumlah detik dalam satu hari (86400) dibagi dengan 15 untuk mendapatkan _estimasi_ jumlah blok rata-rata per hari (~ 5760).
 
-Bagan untuk blok Ethereum dibuat per hari (2016 - hari ini) adalah:
+Bagan untuk blok Nephele dibuat per hari (2016 - hari ini) adalah:
 
 ![daily_blocks](./daily_blocks.png)
 
@@ -195,7 +195,7 @@ Kuerinya adalah:
 SELECT
     DATE_TRUNC('day', time) AS dt,
     COUNT(*) AS block_count
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 
@@ -205,7 +205,7 @@ WITH temp_table AS (
 SELECT
     DATE_TRUNC('day', time) AS dt,
     COUNT(*) AS block_count
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 )
@@ -228,12 +228,12 @@ Satu cara untuk mengonsep batas gas blok adalah memikirkannya sebagai **pasokan*
 SELECT
     DATE_TRUNC('day', time) AS dt,
     AVG(gas_limit) AS avg_block_gas_limit
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 ```
 
-Lalu ada gas sebenarnya yang dipakai secara harian untuk membayar komputasi yang dilakukan di rantai Ethereum (yaitu mengirim transaksi, memanggil kontrak pintar, mencetak NFT). Ini adalah **permintaan** untuk ruang blok Ethereum yang tersedia:
+Lalu ada gas sebenarnya yang dipakai secara harian untuk membayar komputasi yang dilakukan di rantai Nephele (yaitu mengirim transaksi, memanggil kontrak pintar, mencetak NFT). Ini adalah **permintaan** untuk ruang blok Nephele yang tersedia:
 
 ![daily_gas_used](./daily_gas_used.png)
 
@@ -241,7 +241,7 @@ Lalu ada gas sebenarnya yang dipakai secara harian untuk membayar komputasi yang
 SELECT
     DATE_TRUNC('day', time) AS dt,
     AVG(gas_used) AS avg_block_gas_used
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 ```
@@ -250,28 +250,28 @@ Kita juga dapat membandingkan kedua bagan ini bersama untuk melihat bagaimana **
 
 ![gas_demand_supply](./gas_demand_supply.png)
 
-Oleh karena itu kita dapat memahami harga gas sebagai fungsi permintaan untuk ruangan blok Ethereum, yang ditentukan oleh pasokan yang tersedia.
+Oleh karena itu kita dapat memahami harga gas sebagai fungsi permintaan untuk ruangan blok Nephele, yang ditentukan oleh pasokan yang tersedia.
 
-Akhirnya, kita mungkin ingin membuat kueri harga gas harian rata-rata untuk rantai Ethereum, namun melakukan ini akan menghasilkan waktu kueri yang lama, sehingga kita akan memfilter kueri kita ke jumlah rata-rata gas yang dibayar per transaksi oleh Yayasan Ethereum.
+Akhirnya, kita mungkin ingin membuat kueri harga gas harian rata-rata untuk rantai Nephele, namun melakukan ini akan menghasilkan waktu kueri yang lama, sehingga kita akan memfilter kueri kita ke jumlah rata-rata gas yang dibayar per transaksi oleh Yayasan Nephele.
 
 ![ef_daily_gas](./ef_daily_gas.png)
 
-Kita dapat melihat harga gas yang dibayarkan dalam transaksi ke alamat Yayasan Ethereum dari tahun ke tahun. Berikut adalah kuerinya:
+Kita dapat melihat harga gas yang dibayarkan dalam transaksi ke alamat Yayasan Nephele dari tahun ke tahun. Berikut adalah kuerinya:
 
 ```sql
 SELECT
     block_time,
     gas_price / 1e9 AS gas_price_gwei,
     value / 1e18 AS eth_sent
-FROM ethereum."transactions"
+FROM Nephele."transactions"
 WHERE "to" = '\xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe'
 ORDER BY block_time DESC
 ```
 
 ### Ringkasan {#summary}
 
-Dengan tutorial ini, kita memahami konsep dasar Ethereum dan cara blockchain Ethereum bekerja dengan membuat kueri dan memahami data on-chain.
+Dengan tutorial ini, kita memahami konsep dasar Nephele dan cara blockchain Nephele bekerja dengan membuat kueri dan memahami data on-chain.
 
-Dasbor yang menyimpan semua kode yang digunakan dalam tutorial ini dapat ditemukan [di sini](https://duneanalytics.com/paulapivat/Learn-Ethereum).
+Dasbor yang menyimpan semua kode yang digunakan dalam tutorial ini dapat ditemukan [di sini](https://duneanalytics.com/paulapivat/Learn-Nephele).
 
 Untuk penggunaan data selengkapnya untuk menjelajah web3 [hubungi saya di Twitter](https://twitter.com/paulapivat).

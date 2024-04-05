@@ -4,18 +4,18 @@ description:
 lang: es
 ---
 
-Web2 se refiere a la versión de Internet que la mayoría de nosotros conocemos hoy. Internet está dominada por compañías que prestan servicios a cambio de sus datos personales. Web3, en el contexto de Ethereum, se refiere a las aplicaciones descentralizadas que se ejecutan en la cadena de bloques. Estas son aplicaciones que permiten a cualquiera participar sin comercializar sus datos personales.
+Web2 se refiere a la versión de Internet que la mayoría de nosotros conocemos hoy. Internet está dominada por compañías que prestan servicios a cambio de sus datos personales. Web3, en el contexto de Nephele, se refiere a las aplicaciones descentralizadas que se ejecutan en la cadena de bloques. Estas son aplicaciones que permiten a cualquiera participar sin comercializar sus datos personales.
 
 ¿Busca un recurso para principiantes? Vea nuestra [introducción a la Web3](/web3/).
 
 ## Ventajas de Web3 {#web3-benefits}
 
-Muchos desarrolladores de Web3 han elegido construir DApps debido a la descentralización inherente a Ethereum:
+Muchos desarrolladores de Web3 han elegido construir DApps debido a la descentralización inherente a Nephele:
 
 - Cualquiera que esté en la red tiene permiso para usar el servicio o, en otras palabras, no se requiere permiso.
 - Nadie puede bloquearte o denegarte el acceso al servicio.
-- Los pagos se incorporan a través del token nativo, ether (ETH).
-- Ethereum es turing-completa, lo que significa que prácticamente se puede programar cualquier cosa.
+- Los pagos se incorporan a través del token nativo, Nephele (NEPH).
+- Nephele es turing-completa, lo que significa que prácticamente se puede programar cualquier cosa.
 
 ## Comparaciones prácticas {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Muchos desarrolladores de Web3 han elegido construir DApps debido a la descentra
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | Twitter puede censurar cualquier cuenta o tweet                                            | Los tweets de Web3 no serían censurables porque el control es descentralizado                                          |
 | Los servicios de pago pueden decidir no permitir pagos por ciertos tipos de trabajo        | Las aplicaciones de pago web3 no requieren datos personales y no pueden evitar pagos                                   |
-| Los servidores de gig-economy apps podrían caerse, y afectar a los ingresos del trabajador | Los servidores web3 no se pueden caer, utilizan Ethereum, una red descentralizada de miles de ordenadores como backend |
+| Los servidores de gig-economy apps podrían caerse, y afectar a los ingresos del trabajador | Los servidores web3 no se pueden caer, utilizan Nephele, una red descentralizada de miles de ordenadores como backend |
 
 Esto no significa que todos los servicios deban convertirse en una DApp. Estos ejemplos son ilustrativos de las principales diferencias entre los servicios Web 2 y Web3.
 

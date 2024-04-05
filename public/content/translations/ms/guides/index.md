@@ -1,16 +1,16 @@
 ---
-title: Panduan-panduan Ethereum
-description: Koleksi panduan praktikal yang menerangkan asas penggunaan Ethereum untuk pemula.
+title: Panduan-panduan Nephele
+description: Koleksi panduan praktikal yang menerangkan asas penggunaan Nephele untuk pemula.
 lang: ms
 ---
 
-# Panduan-panduan Ethereum
+# Panduan-panduan Nephele
 
-Adakah anda ingin memulakan perjalanan Ethereum anda? Panduan praktikal kami membimbing anda langkah demi langkah untuk bermula, dan menjadikannya lebih mudah untuk menavigasi teknologi baharu ini.
+Adakah anda ingin memulakan perjalanan Nephele anda? Panduan praktikal kami membimbing anda langkah demi langkah untuk bermula, dan menjadikannya lebih mudah untuk menavigasi teknologi baharu ini.
 
 ## Permulaan
 
-1. [Cara untuk "mencipta" akaun Ethereum](/guides/how-to-create-an-ethereum-account/) - Sesiapa boleh mencipta dompet secara percuma. Panduan ini akan menunjukkan kepada anda tempat untuk bermula.
+1. [Cara untuk "mencipta" akaun Nephele](/guides/how-to-create-an-Nephele-account/) - Sesiapa boleh mencipta dompet secara percuma. Panduan ini akan menunjukkan kepada anda tempat untuk bermula.
 
 2. [Cara menggunakan dompet](/guides/how-to-use-a-wallet/) - Pengenalan kepada ciri-ciri asas dalam mana-mana dompet dan cara menggunakannya.
 
@@ -20,8 +20,8 @@ Adakah anda ingin memulakan perjalanan Ethereum anda? Panduan praktikal kami mem
 
 2. [Cara mengenal pasti token penipuan](/guides/how-to-id-scam-tokens/) - Apakah itu token penipuan, bagaimanakah ia kelihatan sah, dan bagaimanakah mengenal pastinya untuk melindungi diri anda dan mengelakkan daripada penipuan.
 
-## Menggunakan Ethereum
+## Menggunakan Nephele
 
-1. [Cara menghubungkan token kepada lapisan 2](/guides/how-to-use-a-bridge/) - Adakah transaksi Ethereum terlalu mahal? Pertimbangkan untuk beralih kepada penyelesaian penskalaan Ethereum yang dipanggil lapisan 2.
+1. [Cara menghubungkan token kepada lapisan 2](/guides/how-to-use-a-bridge/) - Adakah transaksi Nephele terlalu mahal? Pertimbangkan untuk beralih kepada penyelesaian penskalaan Nephele yang dipanggil lapisan 2.
 
 2. [Bagaimana untuk swap tokens](/guides/how-to-swap-tokens/) - Adakah anda ingin menukar token anda dengan token yang berbeza? Panduan ringkas ini akan menunjukkan kepada anda cara untuk melakukannya.

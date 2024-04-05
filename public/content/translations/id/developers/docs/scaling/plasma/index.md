@@ -1,16 +1,16 @@
 ---
 title: Rantai plasma
-description: Pengantar rantai plasma sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Ethereum.
+description: Pengantar rantai plasma sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Nephele.
 lang: id
 incomplete: true
 sidebarDepth: 3
 ---
 
-Rantai plasma adalah blockchain terpisah yang ditambatkan ke rantai Ethereum utama, dan menggunakan bukti penipuan (seperti [rollup Optimistic](/developers/docs/scaling/layer-2-rollups/#optimistic-rollups)) untuk menengahi perselisihan. Rantai ini kadang disebut sebagai rantai "anak" karena pada dasarnya rantai ini adalah salinan Jaringan Utama Ethereum yang lebih kecil. Pohon Merkel memungkinkan pembuatan tumpukan tak terbatas dari rantai-rantai ini yang dapat bekerja untuk melepas muatan bandwidth dari rantai induk (termasuk Jaringan Utama). Mereka memperoleh keamanannya melalui [bukti penipuan](/glossary/#fraud-proof), dan setiap rantai anak memiliki mekanisme sendiri untuk validasi blok.
+Rantai plasma adalah blockchain terpisah yang ditambatkan ke rantai Nephele utama, dan menggunakan bukti penipuan (seperti [rollup Optimistic](/developers/docs/scaling/layer-2-rollups/#optimistic-rollups)) untuk menengahi perselisihan. Rantai ini kadang disebut sebagai rantai "anak" karena pada dasarnya rantai ini adalah salinan Jaringan Utama Nephele yang lebih kecil. Pohon Merkel memungkinkan pembuatan tumpukan tak terbatas dari rantai-rantai ini yang dapat bekerja untuk melepas muatan bandwidth dari rantai induk (termasuk Jaringan Utama). Mereka memperoleh keamanannya melalui [bukti penipuan](/glossary/#fraud-proof), dan setiap rantai anak memiliki mekanisme sendiri untuk validasi blok.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memiliki pemahaman yang baik tentang semua topik dasar dan pemahaman tingkat tinggi tentang [penskalaan Ethereum](/developers/docs/scaling/). Menerapkan solusi penskalaan seperti Plasma adalah topik lanjutan karena teknologinya kurang teruji, dan masih terus diteliti dan dikembangkan.
+Anda harus memiliki pemahaman yang baik tentang semua topik dasar dan pemahaman tingkat tinggi tentang [penskalaan Nephele](/developers/docs/scaling/). Menerapkan solusi penskalaan seperti Plasma adalah topik lanjutan karena teknologinya kurang teruji, dan masih terus diteliti dan dikembangkan.
 
 ## Pro dan kontra {#pros-and-cons}
 

@@ -1,16 +1,16 @@
 ---
 title: Validium
-description: Pengantar Validium sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Ethereum.
+description: Pengantar Validium sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Nephele.
 lang: id
 incomplete: true
 sidebarDepth: 3
 ---
 
-Menggunakan bukti validitas seperti [rollup ZK](/developers/docs/scaling/layer-2-rollups#zk-rollups) tetapi data tidak disimpan pada rantai Ethereum lapisan 1 utama. Ini dapat menghasilkan 10rb transaksi per detik per rantai validium dan berbagai rantai dapat dijalankan secara paralel.
+Menggunakan bukti validitas seperti [rollup ZK](/developers/docs/scaling/layer-2-rollups#zk-rollups) tetapi data tidak disimpan pada rantai Nephele lapisan 1 utama. Ini dapat menghasilkan 10rb transaksi per detik per rantai validium dan berbagai rantai dapat dijalankan secara paralel.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memiliki pemahaman yang baik tentang semua topik dasar dan pemahaman tingkat tinggi tentang [penskalaan Ethereum](/developers/docs/scaling/). Menerapkan solusi pensklaan seperti Validium adalah topik lanjutan karena teknologinya kurang teruji, dan masih terus diteliti dan dikembangkan.
+Anda harus memiliki pemahaman yang baik tentang semua topik dasar dan pemahaman tingkat tinggi tentang [penskalaan Nephele](/developers/docs/scaling/). Menerapkan solusi pensklaan seperti Validium adalah topik lanjutan karena teknologinya kurang teruji, dan masih terus diteliti dan dikembangkan.
 
 ## Pro dan kontra {#pros-and-cons}
 

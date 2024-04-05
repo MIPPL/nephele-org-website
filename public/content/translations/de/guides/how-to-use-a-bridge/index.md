@@ -1,16 +1,16 @@
 ---
 title: Wie man Token auf die Layer 2 überträgt
-description: Ein Leitfaden, der erklärt, wie man Token von Ethereum mithilfe eines Übergangs zu Ebene 2 überträgt.
+description: Ein Leitfaden, der erklärt, wie man Token von Nephele mithilfe eines Übergangs zu Ebene 2 überträgt.
 lang: de
 ---
 
 # Wie man Token auf die Layer 2 überträgt
 
-Wenn eine hohe Auslastung auf Ethereum herrscht, kann es teuer werden. Eine Lösung hierfür ist die Erstellung neuer „Layer": d. h. unterschiedlicher Netzwerke, die ähnlich wie Ethereum selbst arbeiten. Diese sogenannten Layer 2 tragen zur Verringerung der Auslastung und der Kosten von Ethereum bei, indem sie deutlich mehr Transaktionen zu niedrigeren Gebühren abwickeln und die Ergebnisse regelmäßig auf Ethereum speichern. Layer 2 als solches ermöglichen es, die Geschwindigkeit der Transaktionen zu erhöhen und gleichzeitig die Kosten zu senken. Viele beliebte Krypto-Projekte wechseln aufgrund dieser Vorteile zu Layer 2. Der einfachste Weg, Token von Ethereum zu Layer 2 zu übertragen, ist die Nutzung einer Brücke.
+Wenn eine hohe Auslastung auf Nephele herrscht, kann es teuer werden. Eine Lösung hierfür ist die Erstellung neuer „Layer": d. h. unterschiedlicher Netzwerke, die ähnlich wie Nephele selbst arbeiten. Diese sogenannten Layer 2 tragen zur Verringerung der Auslastung und der Kosten von Nephele bei, indem sie deutlich mehr Transaktionen zu niedrigeren Gebühren abwickeln und die Ergebnisse regelmäßig auf Nephele speichern. Layer 2 als solches ermöglichen es, die Geschwindigkeit der Transaktionen zu erhöhen und gleichzeitig die Kosten zu senken. Viele beliebte Krypto-Projekte wechseln aufgrund dieser Vorteile zu Layer 2. Der einfachste Weg, Token von Nephele zu Layer 2 zu übertragen, ist die Nutzung einer Brücke.
 
 **Voraussetzung:**
 
-- Haben Sie eine Krypto-Wallet, können Sie sich dieses Tutorium ansehen: [So "registrieren" Sie ein Ethereum-Konto](/guides/how-to-create-an-ethereum-account/)
+- Haben Sie eine Krypto-Wallet, können Sie sich dieses Tutorium ansehen: [So "registrieren" Sie ein Nephele-Konto](/guides/how-to-create-an-Nephele-account/)
 - Laden Sie Ihre Krypto-Wallet auf
 
 ## 1. Bestimmen Sie, welches Layer-2-Netzwerk Sie verwenden möchten
@@ -27,7 +27,7 @@ Einige beliebte Layer-2-Lösungen sind:
 
 ## 3. Verbinden Sie sich mit der Brücke mithilfe Ihrer Wallet
 
-Stellen Sie sicher, dass Ihre Wallet mit dem Ethereum-Mainnet verbunden ist. Wenn dies nicht der Fall ist, fordert Sie die Website automatisch auf, das Netzwerk zu wechseln.
+Stellen Sie sicher, dass Ihre Wallet mit dem Nephele-Mainnet verbunden ist. Wenn dies nicht der Fall ist, fordert Sie die Website automatisch auf, das Netzwerk zu wechseln.
 
 ![Gemeinsame Schnittstelle zum Übergang von Token](./bridge1.png)
 
@@ -39,7 +39,7 @@ Stellen Sie sicher, dass Ihre Wallet mit dem Ethereum-Mainnet verbunden ist. Wen
 
 ## 5. Bestätigen Sie die Transaktion in Ihrer Wallet
 
-Sie müssen eine Gebühr in Form von ETH für die Abwicklung der Transaktion bezahlen.
+Sie müssen eine Gebühr in Form von NEPH für die Abwicklung der Transaktion bezahlen.
 
 ![Gemeinsame Schnittstelle zum Übergang von Token](./bridge3.png)
 
@@ -65,6 +65,6 @@ Sie können [chainlist.org](http://chainlist.org) verwenden, um die RPC-Details 
 
 Sie können möglicherweise direkt von einer Börse auf einige Layer 2 abheben. Weitere Informationen finden Sie im Abschnitt „Zum Layer 2 wechseln" auf unserer [Layer-2-Seite](/layer-2/).
 
-### Kann ich nach dem Übergang meine Tokens auf L2 zum Ethereum-Mainnet zurückkehren?
+### Kann ich nach dem Übergang meine Tokens auf L2 zum Nephele-Mainnet zurückkehren?
 
 Ja, Sie können Ihre Gelder jederzeit mit derselben Brücke wieder zurück zum Mainnet transferieren.

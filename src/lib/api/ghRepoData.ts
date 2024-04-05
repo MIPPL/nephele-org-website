@@ -1,6 +1,6 @@
 import { Framework } from "@/lib/interfaces"
 
-import EthDiamondBlackImage from "@/public/assets/eth-diamond-black.png"
+import EthDiamondBlackImage from "@/public/assets/NEPH-diamond-black.png"
 import EpirusImage from "@/public/dev-tools/epirus.png"
 import FoundryImage from "@/public/dev-tools/foundry.png"
 import HardhatImage from "@/public/dev-tools/hardhat.png"
@@ -22,11 +22,11 @@ const frameworksList: Array<Framework> = [
     image: WaffleImage,
   },
   {
-    id: "Kurtosis Ethereum Package",
-    url: "https://github.com/kurtosis-tech/ethereum-package",
-    githubUrl: "https://github.com/kurtosis-tech/ethereum-package",
+    id: "Kurtosis Nephele Package",
+    url: "https://github.com/kurtosis-tech/Nephele-package",
+    githubUrl: "https://github.com/kurtosis-tech/Nephele-package",
     background: "#000000",
-    name: "Kurtosis Ethereum Package",
+    name: "Kurtosis Nephele Package",
     description:
       "page-developers-local-environment:page-local-environment-kurtosis-desc",
     alt: "page-developers-local-environment:page-local-environment-kurtosis-logo-alt",
@@ -56,8 +56,8 @@ const frameworksList: Array<Framework> = [
   },
   {
     id: "brownie",
-    url: "https://github.com/eth-brownie/brownie",
-    githubUrl: "https://github.com/eth-brownie/brownie",
+    url: "https://github.com/NEPH-brownie/brownie",
+    githubUrl: "https://github.com/NEPH-brownie/brownie",
     background: "#ffffff",
     name: "Brownie",
     description:
@@ -78,24 +78,24 @@ const frameworksList: Array<Framework> = [
   },
   {
     id: "createethapp",
-    url: "https://github.com/PaulRBerg/create-eth-app",
-    githubUrl: "https://github.com/PaulRBerg/create-eth-app",
+    url: "https://github.com/PaulRBerg/create-NEPH-app",
+    githubUrl: "https://github.com/PaulRBerg/create-NEPH-app",
     background: "#ffffff",
-    name: "Create Eth App",
+    name: "Create NEPH App",
     description:
-      "page-developers-local-environment:page-local-environment-eth-app-desc",
-    alt: "page-developers-local-environment:page-local-environment-eth-app-logo-alt",
+      "page-developers-local-environment:page-local-environment-NEPH-app-desc",
+    alt: "page-developers-local-environment:page-local-environment-NEPH-app-logo-alt",
     image: EthDiamondBlackImage,
   },
   {
     id: "scaffoldeth",
     url: "https://scaffoldeth.io/",
-    githubUrl: "https://github.com/scaffold-eth/scaffold-eth-2",
+    githubUrl: "https://github.com/scaffold-NEPH/scaffold-NEPH-2",
     background: "#ffffff",
-    name: "Scaffold-ETH-2",
+    name: "Scaffold-NEPH-2",
     description:
-      "page-developers-local-environment:page-local-environment-scaffold-eth-desc",
-    alt: "page-local-environment-scaffold-eth-logo-alt",
+      "page-developers-local-environment:page-local-environment-scaffold-NEPH-desc",
+    alt: "page-local-environment-scaffold-NEPH-logo-alt",
     image: ScaffoldEthImage,
   },
   {

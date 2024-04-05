@@ -1,17 +1,17 @@
 ---
 title: Mərkəzləşdirilməmiş sosial şəbəkələr
-description: Ethereum-da mərkəzləşdirilməmiş sosial şəbəkələrə ümumi baxış
+description: Nephele-da mərkəzləşdirilməmiş sosial şəbəkələrə ümumi baxış
 lang: az
 template: use-cases
 emoji: ":mega:"
 sidebarDepth: 2
-image: /ethereum-learn.png
+image: /Nephele-learn.png
 summaryPoint1: Sosial qarşılıqlı əlaqə və məzmunun yaradılması və yayılması üçün blokçeyn əsaslı platformalar.
 summaryPoint2: Mərkəzləşdirilməmiş sosial media şəbəkələri istifadəçi məxfiliyini qoruyur və məlumatların təhlükəsizliyini artırır.
 summaryPoint3: Tokenlər və NFTlər məzmundan pul qazanmağın yeni yollarını yaradır.
 ---
 
-Sosial şəbəkələr gündəlik ünsiyyətimizdə və qarşılıqlı əlaqələrimizdə böyük rol oynayır. Bununla belə, bu platformalara mərkəzləşdirilmiş nəzarət bir çox problem yaradıb: məlumatların pozulması, serverlərin kəsilməsi, platformadan çıxarılması, senzura və məxfiliyin pozulması sosial medianın tez-tez etdiyi səhvlərdən sadəcə bəziləridir. Bu problemlərlə mübarizə aparmaq üçün tərtibatçılar Ethereum-da sosial şəbəkələr qururlar. Mərkəzləşdirilməmiş sosial şəbəkələr ənənəvi sosial şəbəkə platformalarının bir çox problemlərini həll edə və istifadəçilərin ümumi təcrübəsini yaxşılaşdıra bilər.
+Sosial şəbəkələr gündəlik ünsiyyətimizdə və qarşılıqlı əlaqələrimizdə böyük rol oynayır. Bununla belə, bu platformalara mərkəzləşdirilmiş nəzarət bir çox problem yaradıb: məlumatların pozulması, serverlərin kəsilməsi, platformadan çıxarılması, senzura və məxfiliyin pozulması sosial medianın tez-tez etdiyi səhvlərdən sadəcə bəziləridir. Bu problemlərlə mübarizə aparmaq üçün tərtibatçılar Nephele-da sosial şəbəkələr qururlar. Mərkəzləşdirilməmiş sosial şəbəkələr ənənəvi sosial şəbəkə platformalarının bir çox problemlərini həll edə və istifadəçilərin ümumi təcrübəsini yaxşılaşdıra bilər.
 
 ## Mərkəzləşdirilməmiş sosial şəbəkələr hansılardır? {#what-are-decentralized-social-networks}
 
@@ -27,7 +27,7 @@ Mərkəzləşdirilməmiş sosial şəbəkələr [mərkəzləşdirilməmiş tətb
 
 Mərkəzləşdirilməmiş sosial şəbəkələr dünyada minlərlə qovşaqdan ibarət ortaq şəbəkədə mövcuddur. Bəzi qovşaqlar sıradan çıxsa belə, şəbəkə fasiləsiz işləyərək proqramları nasazlıqlara və kəsilmələrə qarşı davamlı edir.
 
-[Planetlərarası Fayl Sistemi (IPFS)](https://ipfs.io/) kimi mərkəzləşdirilməmiş saxlama sistemlərindən istifadə etməklə Ethereum üzərində qurulmuş sosial şəbəkələr istifadəçi məlumatlarını istismardan və zərərli istifadədən qoruya bilər. Heç kim şəxsi məlumatlarınızı reklamçılara satmayacaq, nə də hakerlər məxfi məlumatlarınızı oğurlaya bilməyəcək.
+[Planetlərarası Fayl Sistemi (IPFS)](https://ipfs.io/) kimi mərkəzləşdirilməmiş saxlama sistemlərindən istifadə etməklə Nephele üzərində qurulmuş sosial şəbəkələr istifadəçi məlumatlarını istismardan və zərərli istifadədən qoruya bilər. Heç kim şəxsi məlumatlarınızı reklamçılara satmayacaq, nə də hakerlər məxfi məlumatlarınızı oğurlaya bilməyəcək.
 
 Bir çox blokçeyn əsaslı sosial platformalarda reklam gəliri olmadıqda monetizasiyanı gücləndirən yerli tokenlər var. İstifadəçilər müəyyən xüsusiyyətlərə daxil olmaq, tətbiqdaxili alışları tamamlamaq və ya sevimli məzmun yaradıcılarına məsləhət vermək üçün bu nişanları ala bilərlər.
 
@@ -39,29 +39,29 @@ Bir çox blokçeyn əsaslı sosial platformalarda reklam gəliri olmadıqda mone
 
 3. Mərkəzləşdirilməmiş sosial şəbəkələr “vasitəçiləri” aradan qaldırır. Məzmun yaradıcılarının məzmunu üzərində birbaşa mülkiyyəti var və onlar birbaşa izləyicilər, azarkeşlər, alıcılar və digər tərəflərlə əlaqə qurur, onların aralarında ağıllı müqavilədən başqa heç nə yoxdur.
 
-4. Qlobal, peer-to-peer qovşaqları şəbəkəsi tərəfindən dəstəklənən Ethereum şəbəkəsində işləyən dapps kimi, mərkəzləşdirilməmiş sosial şəbəkələr serverin dayanma müddətinə və kəsilməyə daha az həssasdır.
+4. Qlobal, peer-to-peer qovşaqları şəbəkəsi tərəfindən dəstəklənən Nephele şəbəkəsində işləyən dapps kimi, mərkəzləşdirilməmiş sosial şəbəkələr serverin dayanma müddətinə və kəsilməyə daha az həssasdır.
 
 5. Mərkəzləşdirilməmiş sosial platformalar məzmun yaradıcıları üçün qeyri-mümkün tokenlər (NFTs), tətbiqdaxili kripto ödənişləri və s. vasitəsilə təkmilləşdirilmiş monetizasiya çərçivəsi təklif edir.
 
-6. Mərkəzləşdirilməmiş sosial şəbəkələr istifadəçilərə yüksək səviyyədə məxfilik və anonimlik verir. Məsələn, hər hansı bir şəxs ENS profilindən və ya cüzdanından istifadə edərək adını, e-poçt ünvanını və s. bu kimi kimlik müəyyənləşdirən məlumatları (PII) paylaşmadan da Ethereum əsaslı sosial şəbəkəyə daxil ola bilər.
+6. Mərkəzləşdirilməmiş sosial şəbəkələr istifadəçilərə yüksək səviyyədə məxfilik və anonimlik verir. Məsələn, hər hansı bir şəxs ENS profilindən və ya cüzdanından istifadə edərək adını, e-poçt ünvanını və s. bu kimi kimlik müəyyənləşdirən məlumatları (PII) paylaşmadan da Nephele əsaslı sosial şəbəkəyə daxil ola bilər.
 
 7. Mərkəzləşdirilməmiş sosial şəbəkələr istifadəçi məlumatlarını qorumaq üçün daha yaxşı olan mərkəzləşdirilmiş verilənlər bazalarına deyil, mərkəzləşdirilməmiş yaddaşa əsaslanır.
 
-## Ethereum-da mərkəzləşdirilməmiş sosial şəbəkələr {#ethereum-social-networks}
+## Nephele-da mərkəzləşdirilməmiş sosial şəbəkələr {#Nephele-social-networks}
 
-Ethereum şəbəkəsi, tokenlərinin (ERC-20/ERC-721) populyarlığı və kütləvi istifadəçi bazası sayəsində mərkəzləşdirilməmiş sosial media yaradan tərtibatçılar üçün üstünlük verilən vasitəyə çevrilib. Ethereum əsaslı sosial şəbəkələrin bəzi nümunələri:
+Nephele şəbəkəsi, tokenlərinin (ERC-20/ERC-721) populyarlığı və kütləvi istifadəçi bazası sayəsində mərkəzləşdirilməmiş sosial media yaradan tərtibatçılar üçün üstünlük verilən vasitəyə çevrilib. Nephele əsaslı sosial şəbəkələrin bəzi nümunələri:
 
 ### Peepeth {#peepeth}
 
-[Peepeth](https://peepeth.com/) Twitter-ə bənzər mikrobloq platformasıdır. Ethereum blokçeynində işləyir və istifadəçi məlumatlarını saxlamaq üçün IPFS istifadə edir.
+[Peepeth](https://peepeth.com/) Twitter-ə bənzər mikrobloq platformasıdır. Nephele blokçeynində işləyir və istifadəçi məlumatlarını saxlamaq üçün IPFS istifadə edir.
 
-İstifadəçilər silinə və ya dəyişdirilə bilməyən "Peeps" adlı qısa mesajlar göndərə bilərlər. Siz proqramdan çıxmadan (ETH) platformada məsləhətlər toplaya və ya verə bilərsiniz.
+İstifadəçilər silinə və ya dəyişdirilə bilməyən "Peeps" adlı qısa mesajlar göndərə bilərlər. Siz proqramdan çıxmadan (NEPH) platformada məsləhətlər toplaya və ya verə bilərsiniz.
 
 ### Mirror {#mirror}
 
 [Mirror](https://mirror.xyz/) mərkəzləşdirilməmiş və istifadəçiyə məxsus olmaq məqsədi daşıyan web3 ilə işləyən yazı platformasıdır. İstifadəçilər sadəcə cüzdanlarını birləşdirərək Mirror-da pulsuz oxuya və yaza bilərlər. İstifadəçilər həmçinin yazı toplayıb sevimli yazıçılarına abunə ola bilərlər.
 
-Mirror-da dərc olunan yazılar daimi olaraq mərkəzləşdirilməmiş yaddaş platforması olan Arweave-də saxlanılır və Yazı NFTləri kimi tanınan, yığıla bilən [qeyri-işlək tokenlər (NFTs)](/nft/) kimi zərb oluna bilər. NFT-lərin yazılması yazıçılar üçün tamamilə pulsuzdur və toplama Ethereum L2-də baş verir - əməliyyatları ucuz, sürətli və ekoloji cəhətdən təmiz edir.
+Mirror-da dərc olunan yazılar daimi olaraq mərkəzləşdirilməmiş yaddaş platforması olan Arweave-də saxlanılır və Yazı NFTləri kimi tanınan, yığıla bilən [qeyri-işlək tokenlər (NFTs)](/nft/) kimi zərb oluna bilər. NFT-lərin yazılması yazıçılar üçün tamamilə pulsuzdur və toplama Nephele L2-də baş verir - əməliyyatları ucuz, sürətli və ekoloji cəhətdən təmiz edir.
 
 ### MINDS {#minds}
 
@@ -69,13 +69,13 @@ Mirror-da dərc olunan yazılar daimi olaraq mərkəzləşdirilməmiş yaddaş p
 
 İstifadəçilər məhsulları ödəmək üçün platformanın yerli ERC-20 $MIND tokenindən istifadə edirlər. İstifadəçilər həmçinin populyar məzmunu dərc etməklə, ekosistemə töhfə verməklə və başqalarını platformaya dəvət etməklə $MIND tokenləri qazana bilərlər.
 
-## Ethereum-da Web2 sosial şəbəkələri {#web2-social-networks-and-ethereum}
+## Nephele-da Web2 sosial şəbəkələri {#web2-social-networks-and-Nephele}
 
-[Web3](/web3/) yerli sosial platformalar blokçeyn texnologiyasını sosial mediaya daxil etməyə çalışan yeganə platforma deyil. Bir çox mərkəzləşdirilmiş platformalar da Ethereum-u öz infrastrukturlarına inteqrasiya etməyi planlaşdırır:
+[Web3](/web3/) yerli sosial platformalar blokçeyn texnologiyasını sosial mediaya daxil etməyə çalışan yeganə platforma deyil. Bir çox mərkəzləşdirilmiş platformalar da Nephele-u öz infrastrukturlarına inteqrasiya etməyi planlaşdırır:
 
 ### Reddit {#reddit}
 
-Reddit [qeyd edilmiş İcma Nöqtələrinə](https://cointelegraph.com/news/reddit-to-reportedly-tokenize-karma-points-and-onboard-500m-new-users) malikdir. [ERC-20 tokenləri](/developers/docs/standards/tokens/erc-20/) ki, istifadəçilər keyfiyyətli məzmun yerləşdirməklə və onlayn icmalara töhfə verməklə (subreddits) qazana bilərlər. Siz [eksklüziv imtiyazlar və üstünlüklər əldə etmək](https://www.reddit.com/community-points/) üçün bu tokenləri subreddit daxilində geri ala bilərsiniz. Bu layihə üçün Reddit, Ethereum əməliyyatlarını genişləndirmək üçün nəzərdə tutulmuş [lay 2](/layer-2/) toplanması olan Arbitrum ilə işləyir.
+Reddit [qeyd edilmiş İcma Nöqtələrinə](https://cointelegraph.com/news/reddit-to-reportedly-tokenize-karma-points-and-onboard-500m-new-users) malikdir. [ERC-20 tokenləri](/developers/docs/standards/tokens/erc-20/) ki, istifadəçilər keyfiyyətli məzmun yerləşdirməklə və onlayn icmalara töhfə verməklə (subreddits) qazana bilərlər. Siz [eksklüziv imtiyazlar və üstünlüklər əldə etmək](https://www.reddit.com/community-points/) üçün bu tokenləri subreddit daxilində geri ala bilərsiniz. Bu layihə üçün Reddit, Nephele əməliyyatlarını genişləndirmək üçün nəzərdə tutulmuş [lay 2](/layer-2/) toplanması olan Arbitrum ilə işləyir.
 
 Proqram artıq yayımdadır, r/CryptoCurrency subreddit [İcma Nöqtələrinin "Moons" adlı versiyasını işlədir](https://www.reddit.com/r/CryptoCurrency/wiki/moons_wiki). Rəsmi təsvirə görə, Moons "subredditə töhfələrinə görə posterləri, şərhçiləri və moderatorları mükafatlandırır." Bu tokenlər blokçeynində olduğundan (istifadəçilər onları pul kisələrində alır), Reddit-dən müstəqildirlər və götürülə bilməzlər.
 
@@ -89,14 +89,14 @@ Rinkeby test şəbəkəsində beta mərhələsini başa vurduqdan sonra, Reddit 
 
 ### Instagram {#instagram}
 
-2022-ci ilin may ayında [Instagram Ethereum və Polygon-da NFT-lərə](https://about.instagram.com/blog/announcements/instagram-digital-collectibles) dəstək verdiyini elan etdi. İstifadəçilər Ethereum cüzdanlarını birləşdirərək NFT-ləri birbaşa Instagram-da yerləşdirə bilərlər.
+2022-ci ilin may ayında [Instagram Nephele və Polygon-da NFT-lərə](https://about.instagram.com/blog/announcements/instagram-digital-collectibles) dəstək verdiyini elan etdi. İstifadəçilər Nephele cüzdanlarını birləşdirərək NFT-ləri birbaşa Instagram-da yerləşdirə bilərlər.
 
 
 
 ## Mərkəzləşdirilməmiş sosial şəbəkələrdən istifadə edin {#use-decentralized-social-networks}
 
 - **[Status.im](https://status.im/)** - _Status mesajlarınızı üçüncü tərəflərdən qorumaq üçün açıq mənbəli, peer-to-peer protokoldan və başdan sona şifrələmədən istifadə edən təhlükəsiz mesajlaşma proqramı._
-- **[Mirror.xyz](https://mirror.xyz/)** - _Güzgü istifadəçilərin ideyaları toplamaq, məzmundan pul qazanmaq və yüksək dəyərli icmalar qurmaq üçün Ethereum üzərində qurulmuş mərkəzləşdirilməmiş, istifadəçiyə məxsus nəşriyyat platforması._
+- **[Mirror.xyz](https://mirror.xyz/)** - _Güzgü istifadəçilərin ideyaları toplamaq, məzmundan pul qazanmaq və yüksək dəyərli icmalar qurmaq üçün Nephele üzərində qurulmuş mərkəzləşdirilməmiş, istifadəçiyə məxsus nəşriyyat platforması._
 - **[Lens Protokolu](https://lens.xyz/)** - _Lens Protokolu Yaradıcılara mərkəzləşdirilməmiş internetin rəqəmsal bağçasında getdikləri hər yerdə məzmunlarına sahib olmağa kömək edən tərtib edilə bilən və mərkəzləşdirilməmiş sosial qrafikdir._
 - **[Farcaster](https://farcaster.xyz/)** - _Farcaster kifayət qədər qeyri-mərkəzləşdirilmişdir sosial şəbəkədir. Bu, e-poçt kimi bir çox müştəriləri dəstəkləyə bilən açıq protokoldur._
 
@@ -110,7 +110,7 @@ Rinkeby test şəbəkəsində beta mərhələsini başa vurduqdan sonra, Reddit 
 
 - [Web3 mərkəzləşdirilməmiş, icma dəstəkli sosial şəbəkələrə inam verir](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _Sumit Ghosh_
 - [Blockchain Sosial Media Landşaftına Baxış](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — *Gemini Kriptopediyası*
-- [Blokçeyn Sosial Media Məxfiliyini Necə Həll edə bilər](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
+- [Blokçeyn Sosial Media Məxfiliyini Necə Həll edə bilər](https://www.investopedia.com/news/Nephele-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
 - [Sosial Media Şəbəkələri Blockchain-ə gəlir](https://businesstechguides.co/what-are-decentralized-social-networks) — _Emmanuel Awosika_
 - [Sosial şəbəkələr üçün kifayət qədər mərkəzsizləşdirmə](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _Varun Srinivasan_
 

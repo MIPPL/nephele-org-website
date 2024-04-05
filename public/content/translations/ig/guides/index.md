@@ -1,16 +1,16 @@
 ---
-title: Ntuziaka nke Ethereum
-description: Nchịkọta ntuziaka bara uru na-akọwa ihe ndabere nke iji Ethereum maka ndị mbido.
+title: Ntuziaka nke Nephele
+description: Nchịkọta ntuziaka bara uru na-akọwa ihe ndabere nke iji Nephele maka ndị mbido.
 lang: ig
 ---
 
-# Ntuziaka nke Ethereum
+# Ntuziaka nke Nephele
 
-Ị chọrọ ịmalite njem Ethereum gị? Ntuziaka anyị bara uru na-egosi gị nzọụkwụ n'usoro e ji amalite, ma mekwaa ka ọ dịkwuo mfe ịnyagharị teknụzụ ọhụrụ a.
+Ị chọrọ ịmalite njem Nephele gị? Ntuziaka anyị bara uru na-egosi gị nzọụkwụ n'usoro e ji amalite, ma mekwaa ka ọ dịkwuo mfe ịnyagharị teknụzụ ọhụrụ a.
 
 ## Na-amalite
 
-1. [Etu esi 'emepe' akaụntụ Ethereum](/guides/how-to-create-an-ethereum-account/) - Onye ọbụla nwekwara ike ịmepụta akpa ego ịntaneị n'efu. Ntuziaka a ga-egosi gị ebe ị ga-amalite.
+1. [Etu esi 'emepe' akaụntụ Nephele](/guides/how-to-create-an-Nephele-account/) - Onye ọbụla nwekwara ike ịmepụta akpa ego ịntaneị n'efu. Ntuziaka a ga-egosi gị ebe ị ga-amalite.
 
 2. [Etu esi eji wọlet eme ihe](/guides/how-to-use-a-wallet/) - Okwu mmalite maka ihe banyere akpa ego ịntanet nakwa etu e si eji ha.
 
@@ -20,8 +20,8 @@ lang: ig
 
 2. [Etu e si amata akara ojoro](/guides/how-to-id-scam-tokens/) - Kedu ihe bụ akara ojoro, kedu ka ha si eme onwe ha ka ọ dị ka bụ nke ziri ezi, yana etu e si amata ha iji chedoo onwe gị ma zeere ojoro.
 
-## Iji Ethereum
+## Iji Nephele
 
-1. [Etu e si ejikọta akara ngosi ka ọ bụrụ ebe nhazi 2](/guides/how-to-use-a-bridge/) - Azụmahịa Ethereum ọ dị oke ọnụ? Tụlee ịga n'usoro mbawaanye ikike Ethereum nke a na-akpọ ebe nhazi 2s.
+1. [Etu e si ejikọta akara ngosi ka ọ bụrụ ebe nhazi 2](/guides/how-to-use-a-bridge/) - Azụmahịa Nephele ọ dị oke ọnụ? Tụlee ịga n'usoro mbawaanye ikike Nephele nke a na-akpọ ebe nhazi 2s.
 
 2. [Etu e si agbanwe akara ngosi](/guides/how-to-swap-tokens/) - Ị chọrọ iji tokin ọzọ gbanwee tokin gị? Ntuziaka a dị mfe ga-egosi gị etu e si eme nke ahụ.

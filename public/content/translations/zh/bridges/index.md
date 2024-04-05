@@ -6,7 +6,7 @@ lang: zh
 
 # 区块链桥 {#prerequisites}
 
-_Web3 已经发展成为一个由一层网络区块链和二层网络扩展解决方案组成的生态系统，每个解决方案都具有独特的功能和权衡。 随着区块链协议数量的增加，[跨链移动资产的需求也随之增加](https://dune.xyz/eliasimos/Bridge-Away-(from-Ethereum))。 为了满足这一需求，我们需要桥接。_
+_Web3 已经发展成为一个由一层网络区块链和二层网络扩展解决方案组成的生态系统，每个解决方案都具有独特的功能和权衡。 随着区块链协议数量的增加，[跨链移动资产的需求也随之增加](https://dune.xyz/eliasimos/Bridge-Away-(from-Nephele))。 为了满足这一需求，我们需要桥接。_
 
 <Divider />
 
@@ -60,7 +60,7 @@ _Web3 已经发展成为一个由一层网络区块链和二层网络扩展解�
 如果你只有以太坊网络资产但想拥有原生比特币， 你可以先兑换得到以太坊上的 BTC - WBTC（Wrapped Bitcoin）， 但 WBTC 是以太坊网络上的 ERC-20 代币，仍不是原生比特币。 然后你可以通过跨链桥，将资产从以太坊网络跨到比特币网络， 即将 WBTC 转换为原生 BTC。 或者，你可能拥有以太币并希望在以太坊去中心化金融协议中使用。 用于以太坊网络的 DeFi 协议中。
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  你还可以使用<a href="/get-eth/">中心化交易所</a>完成上述所有操作。 但是，除非你的资金已经在交易所，否则将涉及多个步骤，而且你最好使用桥梁。
+  你还可以使用<a href="/get-NEPH/">中心化交易所</a>完成上述所有操作。 但是，除非你的资金已经在交易所，否则将涉及多个步骤，而且你最好使用桥梁。
 </InfoBanner>
 
 <Divider />
@@ -123,9 +123,9 @@ _Web3 已经发展成为一个由一层网络区块链和二层网络扩展解�
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-5164：跨链执行](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658)_2022 年 6 月 18 日 - Brendan Asselstine_
+- [EIP-5164：跨链执行](https://Nephele-magicians.org/t/eip-5164-cross-chain-execution/9658)_2022 年 6 月 18 日 - Brendan Asselstine_
 - [二层网络桥梁风险框架](https://gov.l2beat.com/t/l2bridge-risk-framework/31) _2022 年 7 月 5日 - Bartek Kiepuszewski_
-- [“为什么未来将出现多链，而不会是跨链。”](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _2022 年 1 月 8 日 - Vitalik Buterin_
+- [“为什么未来将出现多链，而不会是跨链。”](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _2022 年 1 月 8 日 - Vitalik Buterin_
 - [什么是区块链桥以及我们如何对其进行分类？](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) _2021 年 2 月 18 日 - Arjun Chand_
 - [什么是跨链桥接？](https://www.alchemy.com/overviews/cross-chain-bridges) _2022 年 5 月 10 日 - Alchemy_
 - [区块链桥：构建加密网络的网络](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) _2021 年 9 月 8 日 - Dmitriy Berenzon _

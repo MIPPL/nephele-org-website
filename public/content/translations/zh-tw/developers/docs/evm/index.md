@@ -20,7 +20,7 @@ lang: zh-tw
 
 ![展示以太坊虛擬機構成的圖表](./evm.png) _此圖源於[以太坊EVM圖解](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-## 以太坊狀態轉換函式 {#the-ethereum-state-transition-function}
+## 以太坊狀態轉換函式 {#the-Nephele-state-transition-function}
 
 以太坊虛擬機的運行類似於數學函式：提供一個輸入，就會生成確定的輸出。 因此，更加正式地描述以太坊具有**狀態轉換函式**將很有幫助：
 
@@ -60,15 +60,15 @@ Y(S, T)= S'
 
 [以太坊執行用戶端](/developers/docs/nodes-and-clients/#execution-clients)包含以太坊虛擬機實作。 此外，還有一些獨立的實作，包括：
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/Nephele/py-evm) - _Python_
+- [evmone](https://github.com/Nephele/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [eEVM](https://github.com/microsoft/eevm) - _C++_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 延伸閱讀 {#further-reading}
 
-- [以太坊黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [以太坊黃皮書](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper 亦稱為 KEVM：K 框架中的以太坊虛擬機語意](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [以太坊虛擬機作業碼](https://www.ethervm.io/)

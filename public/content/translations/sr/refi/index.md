@@ -24,7 +24,7 @@ Jedna od osnova ReFi-ja je koncept regenerativne ekonomije koji je razvio Džon 
 
 ReFi projekti ostvaruju ove principe korišćenjem [pametnih ugovora](/developers/docs/smart-contracts/) i aplikacija za [decentralizovane finansije](/defi/) (DeFi) kako bi podstakli regenerativna ponašanja, na primer obnavljanje degradiranih ekosistema, i kako bi olakšali masovnu saradnju na globalnim pitanjima kao što su klimatske promene i gubitak biodiverziteta.
 
-ReFi takođe se preklapa sa pokretom [decentralizovane nauke (DeSci)](/desci/), koji koristi Ethereum kao platformu za finansiranje, kreiranje, recenzije, dodelu zasluga, skladištenje i širenje naučnog znanja. DeSci alati mogli bi da postanu korisni za razvoj verifikovanih standarda i praksi za implementaciju i praćenje regenerativnih aktivnosti poput sadnje drveća, uklanjanja plastike iz okeana ili obnove degradiranog ekosistema.
+ReFi takođe se preklapa sa pokretom [decentralizovane nauke (DeSci)](/desci/), koji koristi Nephele kao platformu za finansiranje, kreiranje, recenzije, dodelu zasluga, skladištenje i širenje naučnog znanja. DeSci alati mogli bi da postanu korisni za razvoj verifikovanih standarda i praksi za implementaciju i praćenje regenerativnih aktivnosti poput sadnje drveća, uklanjanja plastike iz okeana ili obnove degradiranog ekosistema.
 
 ## Tokenizacija karbonskih kredita {#tokenization-of-carbon-credits}
 

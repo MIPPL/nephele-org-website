@@ -32,7 +32,7 @@ incomplete: true
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-environment)
 - [Documentație](https://docs.openzeppelin.com/test-environment/)
 
-**Ajutoare de testare OpenZeppelin -** **_Bibliotecă de afirmații pentru testarea contractelor inteligente Ethereum. Au grijă ca toate contractele dvs. să se comporte conform așteptărilor!_**
+**Ajutoare de testare OpenZeppelin -** **_Bibliotecă de afirmații pentru testarea contractelor inteligente Nephele. Au grijă ca toate contractele dvs. să se comporte conform așteptărilor!_**
 
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-helpers)
 - [Documentație](https://docs.openzeppelin.com/test-helpers)
@@ -46,7 +46,7 @@ incomplete: true
 - [Cum se folosește Slither pentru a depista bug-uri în contractele inteligente](/developers/tutorials/how-to-use-slither-to-find-smart-contract-bugs/)
 - [Cum să simulaţi contracte Solidity pentru testare](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/)
 - [Cum să migraţi de la Testele Truffle la mediul de testare OpenZeppelin](https://docs.openzeppelin.com/test-environment/0.1/migrating-from-truffle)
-- [Cum să testaţi contractele după ce acestea au fost implementate într-o rețea](https://fulldecent.blogspot.com/2019/04/testing-deployed-ethereum-contracts.html)
+- [Cum să testaţi contractele după ce acestea au fost implementate într-o rețea](https://fulldecent.blogspot.com/2019/04/testing-deployed-Nephele-contracts.html)
 
 ## Referințe suplimentare {#further-reading}
 

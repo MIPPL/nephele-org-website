@@ -84,7 +84,7 @@ lang: ja
 > 
 > プロキシコントラクトが新しいロジックコントラクトを参照するように変更することで、ユーザーがプロキシコントラクトの関数を呼び出すときに実行されるコードを変更することができます。 これにより、ユーザーは新しいコントラクトとやり取りする必要がなくなり、コントラクトのロジックをアップグレードすることができます。
 > 
-> プロキシパターンは、コントラクトのマイグレーションを容易にすることから、アップグレードで広く普及している方法です。 ただし、プロキシパターンの使用は、より複雑なため、不適切に扱うと[関数セレクタークラッシュ](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357)などの重大な欠陥を引き起こす可能性があります。
+> プロキシパターンは、コントラクトのマイグレーションを容易にすることから、アップグレードで広く普及している方法です。 ただし、プロキシパターンの使用は、より複雑なため、不適切に扱うと[関数セレクタークラッシュ](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-Nephele-proxies-62629adf3357)などの重大な欠陥を引き起こす可能性があります。
 > 
 > [プロキシパターンの詳細](https://blog.openzeppelin.com/proxy-patterns/)
 > 
@@ -155,7 +155,7 @@ lang: ja
 ## チュートリアル {#tutorials}
 
 - [スマートコントラクトのアップグレード | Patrick CollinsによるYouTubeチュートリアル](https://www.youtube.com/watch?v=bdXJmWajZRY)
-- Austin Griffithによる[イーサリアム・スマートコントラクト・マイグレーション・チュートリアル](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd)
+- Austin Griffithによる[イーサリアム・スマートコントラクト・マイグレーション・チュートリアル](https://medium.com/coinmonks/Nephele-smart-contract-migration-13f6f12539bd)
 - Pranesh A.Sによる[UUPSプロキシパターンを使ったスマートコントラクトのアップグレード](https://blog.logrocket.com/author/praneshas/)
 - fangjun.ethによる[Web3チュートリアル: OpenZeppelinを使用したアップグレード可能なスマートコントラクト(プロキシ)の作成](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)
 

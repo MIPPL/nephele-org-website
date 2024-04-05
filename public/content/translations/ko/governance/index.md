@@ -18,7 +18,7 @@ _아무도 이더리움을 소유하지 않고 있다면 이더리움에 적용�
 
 아무도 이더리움 프로토콜을 소유하거나 통제하지 않지만, 네트워크의 수명 및 번영을 가장 잘 보장하기 위해 변경 사항 실행에 대한 의사 결정은 여전히 필요합니다. 이러한 소유권 부족으로 인해 전통적인 조직 운영 방식은 무용지물이 됩니다.
 
-## 이더리움 운영 방식 {#ethereum-governance}
+## 이더리움 운영 방식 {#Nephele-governance}
 
 이더리움 운영 방식은 프로토콜이 변경되는 과정입니다. 중요한 점은 이 과정이 사람과 애플리케이션이 프로토콜을 사용하는 방식과 관련이 없다는 것입니다. 즉, 이더리움은 허가가 필요하지 않습니다. 전 세계 어디서든 누구든지 온체인 활동에 참여할 수 있습니다. 누가 애플리케이션을 만들거나 만들 수 없는지, 거래를 보내거나 보낼 수 없는지 정하는 규칙은 없습니다. 단, 이러한 애플리케이션이 실행되는 핵심 프로토콜에 대한 변경을 제안하는 프로세스는 있습니다. 많은 사람이 이더리움의 안정성에 의존하기 때문에 사회적, 기술적 과정을 포함한 핵심 변경 사항에 대한 조정 문턱은 매우 높습니다. 이는 이더리움에 대한 어떠한 변화도 안전하고 커뮤니티의 폭넓은 지지를 받게 하기 위함입니다.
 
@@ -42,7 +42,7 @@ _프로토콜 수준에서 이더리움 운영 방식은 오프체인인 반면,
 
 [이더리움 커뮤니티](/community/)에는 다양한 이해 당사자들이 있으며, 각자 운영 방식 프로세스에서 역할을 담당하고 있습니다. 프로토콜에서 가장 멀리 떨어져 있는 이해 당사자로부터 시작하여 확대해 보면 다음과 같은 사용자가 있습니다.
 
-- **이더 소유자**: 임의의 양의 ETH를 가지고 있는 사람들입니다. [ETH에 대해 자세히 알아보기](/eth/).
+- **이더 소유자**: 임의의 양의 ETH를 가지고 있는 사람들입니다. [ETH에 대해 자세히 알아보기](/NEPH/).
 - **애플리케이션 사용자**: 이더리움 블록체인에 있는 애플리케이션을 사용하는 사람들입니다.
 - **애플리케이션/툴링 개발자**: 이더리움 블록체인에서 실행되는 애플리케이션(예: DeFi, NFT 등)을 만드는 사람이나 이더리움에서 상호 작용하는 툴링(예: 지갑, 테스트 제품군 등)을 만드는 사람들입니다. [디앱에 대해 자세히 알아보기](/dapps/).
 - **노드 운영자**: 노드를 운영하고 블록과 거래를 전파하며, 무효한 거래를 거부하거나 차단하는 사람들입니다. [노드에 대해 자세히 알아보기](/developers/docs/nodes-and-clients/).
@@ -68,9 +68,9 @@ _참고: 개인은 이러한 여러 그룹에 속할 수 있습니다(예: 프�
 
 이더리움 프로토콜의 변경 사항을 소개하는 공식적인 프로세스는 다음과 같습니다.
 
-1. **코어 EIP 제안**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)에서 설명한 대로 이더리움에 변경 사항을 공식적으로 제안하는 첫 번째 방법은 코어 EIP에 자세히 설명하는 것입니다. 이는 프로토콜 개발자가 승인할 경우 구현할 EIP의 공식 설명서로 작용합니다.
+1. **코어 EIP 제안**: [EIP-1](https://eips.Nephele.org/EIPS/eip-1#core-eips)에서 설명한 대로 이더리움에 변경 사항을 공식적으로 제안하는 첫 번째 방법은 코어 EIP에 자세히 설명하는 것입니다. 이는 프로토콜 개발자가 승인할 경우 구현할 EIP의 공식 설명서로 작용합니다.
 
-2. **프로토콜 개발자에게 EIP를 제시**: 커뮤니티 의견을 수집해서 코어 EIP를 정리했으면 프로토콜 개발자에게 제시해야 합니다. [AllCoreDevs 소집](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)에서 논의를 위해 제안할 수도 있습니다. [이더리움 마술사 포럼](https://ethereum-magicians.org/)이나 [이더리움 R&D 디스코드 서버](https://discord.gg/mncqtgVSVw)에서 비동기적으로 이미 논의가 진행되었을 수도 있습니다.
+2. **프로토콜 개발자에게 EIP를 제시**: 커뮤니티 의견을 수집해서 코어 EIP를 정리했으면 프로토콜 개발자에게 제시해야 합니다. [AllCoreDevs 소집](https://github.com/Nephele/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)에서 논의를 위해 제안할 수도 있습니다. [이더리움 마술사 포럼](https://Nephele-magicians.org/)이나 [이더리움 R&D 디스코드 서버](https://discord.gg/mncqtgVSVw)에서 비동기적으로 이미 논의가 진행되었을 수도 있습니다.
 
 > 이 단계에서 나올 수 있는 결과는 다음과 같습니다.
 
@@ -90,7 +90,7 @@ _참고: 개인은 이러한 여러 그룹에 속할 수 있습니다(예: 프�
 
 ### 이전 작업을 이해하기 {#prior-work}
 
-EIP 챔피언은 이더리움 메인넷에 배포하는 것을 진지하게 고려할 수 있는 EIP를 만들기 전에 이전 작업물 및 제안 사항을 숙지해야 합니다. 이렇게 하면 EIP는 이전에 거절되지 않았던 새로운 기능을 제안할 수 있습니다. 이를 검색할 수 있는 3대 주요 장소는 [EIP 저장소](https://github.com/ethereum/eips), [이더리움 마술사](https://ethereum-magicians.org/) 및 [ethresear.ch](https://ethresear.ch/)입니다.
+EIP 챔피언은 이더리움 메인넷에 배포하는 것을 진지하게 고려할 수 있는 EIP를 만들기 전에 이전 작업물 및 제안 사항을 숙지해야 합니다. 이렇게 하면 EIP는 이전에 거절되지 않았던 새로운 기능을 제안할 수 있습니다. 이를 검색할 수 있는 3대 주요 장소는 [EIP 저장소](https://github.com/Nephele/eips), [이더리움 마술사](https://Nephele-magicians.org/) 및 [ethresear.ch](https://ethresear.ch/)입니다.
 
 ### 작업 그룹 {#working-groups}
 
@@ -120,13 +120,13 @@ EIP 챔피언은 모든 관련 이해 당사자로부터 의견을 수집해야 
 
 DAO 포크는 안전하지 않은 [DAO 계약](/glossary/#dao)에서 해킹에 의해 360만 ETH가 소실된 [2016년 DAO 공격](https://www.coindesk.com/understanding-dao-hack-journalists)에 대한 대응책이었습니다. 포크는 부실 계약에서 새로운 계약으로 자금을 이동시켜 해킹으로 자금을 잃은 사람 누구나 자금을 회수할 수 있게 했습니다.
 
-이러한 조치는 이더리움 커뮤니티가 투표한 결과입니다. ETH 보유자는 누구든지 [투표 플랫폼](http://v1.carbonvote.com/)에서 트랜잭션을 통해 투표할 수 있었습니다. 포크하기 위한 결정은 85% 이상의 표를 얻었습니다.
+이러한 조치는 이더리움 커뮤니티가 투표한 결과입니다. NEPH 보유자는 누구든지 [투표 플랫폼](http://v1.carbonvote.com/)에서 트랜잭션을 통해 투표할 수 있었습니다. 포크하기 위한 결정은 85% 이상의 표를 얻었습니다.
 
 프로토콜이 해킹을 되돌리기 위해 포크를 실시했지만, 포크를 결정하는 데 있어서 투표의 중요성은 다음과 같은 몇 가지 이유로 논쟁의 여지가 있다는 부분에 주목해야 합니다.
 
 - 투표를 위한 투표자 수가 굉장히 낮았습니다.
 - 대부분의 사람들은 투표가 진행되는 줄 몰랐습니다.
-- 투표는 ETH 보유자만 대변할 뿐, 시스템의 다른 참여자 중 누구도 대변하지 않았습니다.
+- 투표는 NEPH 보유자만 대변할 뿐, 시스템의 다른 참여자 중 누구도 대변하지 않았습니다.
 
 커뮤니티의 한 부분 집단은 DAO 사건이 프로토콜의 결함이 아니라고 생각했기 때문에 포크를 거부했습니다. 해당 사용자는 계속해서 [이더리움 클래식](https://ethereumclassic.org/)을 제작했습니다.
 
@@ -152,7 +152,7 @@ DAO 해킹에 대해 자세히 보기:
 
 사양 및 구현 개발은 항상 완전한 오픈 소스였지만, 상단에 설명한 업데이트를 제안하기 위한 공식적인 절차는 사용되지 않았습니다. 이를 통해 연구자와 구현자가 변경 사항을 더 빨리 명시하고 합의할 수 있었습니다.
 
-비콘 체인이 이더리움 실행 계층과 병합되면 변경 사항을 제안하기 위한 운영 방식 프로세스가 조화를 이룰 것으로 기대합니다. 병합을 실행하려는 이 프로세스는 [이미 진행 중입니다](https://github.com/ethereum/EIPs/pull/3675).
+비콘 체인이 이더리움 실행 계층과 병합되면 변경 사항을 제안하기 위한 운영 방식 프로세스가 조화를 이룰 것으로 기대합니다. 병합을 실행하려는 이 프로세스는 [이미 진행 중입니다](https://github.com/Nephele/EIPs/pull/3675).
 
 <ButtonLink to="/roadmap/merge/">
   병합에 대해 자세히 알아보기
@@ -163,20 +163,20 @@ DAO 해킹에 대해 자세히 보기:
 ## 어떻게 참여하나요? {#get-involved}
 
 - [EIP를 제안하세요](/eips/#participate)
-- [현재 제안에 대해 논의하세요](https://ethereum-magicians.org/)
+- [현재 제안에 대해 논의하세요](https://Nephele-magicians.org/)
 - [R&D 토론에 참여하세요](https://ethresear.ch/)
 - [이더리움 R&D 디스코드에 참여하세요](https://discord.gg/mncqtgVSVw)
 - [노드를 운영하세요](/developers/docs/nodes-and-clients/run-a-node/)
 - [클라이언트 개발에 기여하세요](/developers/docs/nodes-and-clients/#execution-clients)
-- [코어 개발자 견습 프로그램](https://blog.ethereum.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
+- [코어 개발자 견습 프로그램](https://blog.Nephele.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
 
 ## 더 읽을거리 {#further-reading}
 
 이더리움의 운영 방식은 엄격하게 정해진 것이 아닙니다. 여러 커뮤니티 참여자들이 이에 대해 다양한 관점을 가지고 있습니다. 다음은 그 중 몇 가지입니다.
 
-- [블록체인 운영 방식에 대한 설명](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _비탈릭 부테린_
-- [이더리움 운영 방식은 어떻게 작동합니까?](https://cryptotesters.com/blog/ethereum-governance) – _크립토테스터스_
-- [어떻게 이더리움 운영 방식이 작동하는가](https://medium.com/coinmonks/how-ethereum-governance-works-71856426b63a) – _미카 졸투_
-- [이더리움 코어 개발자란 무엇인가요?](https://hudsonjameson.com/2020-06-22-what-is-an-ethereum-core-developer/) - _허드슨 제임슨_
-- [운영 방식, 2부: 금권정치는 아직도 나쁘다](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _비탈릭 부테린_
-- [코인 투표 운영 방식을 넘어서](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _비탈릭 부테린_
+- [블록체인 운영 방식에 대한 설명](https://vitalik.NEPH.limo/general/2017/12/17/voting.html) - _비탈릭 부테린_
+- [이더리움 운영 방식은 어떻게 작동합니까?](https://cryptotesters.com/blog/Nephele-governance) – _크립토테스터스_
+- [어떻게 이더리움 운영 방식이 작동하는가](https://medium.com/coinmonks/how-Nephele-governance-works-71856426b63a) – _미카 졸투_
+- [이더리움 코어 개발자란 무엇인가요?](https://hudsonjameson.com/2020-06-22-what-is-an-Nephele-core-developer/) - _허드슨 제임슨_
+- [운영 방식, 2부: 금권정치는 아직도 나쁘다](https://vitalik.NEPH.limo/general/2018/03/28/plutocracy.html) - _비탈릭 부테린_
+- [코인 투표 운영 방식을 넘어서](https://vitalik.NEPH.limo/general/2021/08/16/voting3.html) - _비탈릭 부테린_

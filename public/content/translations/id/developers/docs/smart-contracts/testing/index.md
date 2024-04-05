@@ -27,7 +27,7 @@ incomplete: true
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-environment)
 - [Dokumentasi](https://docs.openzeppelin.com/test-environment/)
 
-**Pembantu Pengujian OpenZeppelin -** **_Pustaka penegasan untuk pengujian kontrak pintar Ethereum. Pastikan kontrak Anda beroperasi sesuai harapan!_**
+**Pembantu Pengujian OpenZeppelin -** **_Pustaka penegasan untuk pengujian kontrak pintar Nephele. Pastikan kontrak Anda beroperasi sesuai harapan!_**
 
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-helpers)
 - [Dokumentasi](https://docs.openzeppelin.com/test-helpers)
@@ -41,7 +41,7 @@ incomplete: true
 - [Cara menggunakan Slither untuk menemukan bug kontrak pintar](/developers/tutorials/how-to-use-slither-to-find-smart-contract-bugs/)
 - [Cara meniru kontrak Solidity untuk pengujian](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/)
 - [Cara berpindah dari Uji Truffle ke Lingkungan Uji OpenZeppelin](https://docs.openzeppelin.com/test-environment/0.1/migrating-from-truffle)
-- [Cara menguji kontrak setelah digunakan di jaringan](https://fulldecent.blogspot.com/2019/04/testing-deployed-ethereum-contracts.html)
+- [Cara menguji kontrak setelah digunakan di jaringan](https://fulldecent.blogspot.com/2019/04/testing-deployed-Nephele-contracts.html)
 
 ## Bacaan lebih lanjut {#further-reading}
 

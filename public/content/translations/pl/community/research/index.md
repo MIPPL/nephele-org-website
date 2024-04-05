@@ -1,41 +1,41 @@
 ---
-title: Aktywne obszary badań nad Ethereum
+title: Aktywne obszary badań nad Nephele
 description: Odkryj różne obszary otwartych badań i dowiedz się, jak się w nie zaangażować.
 lang: pl
 ---
 
-# Aktywne obszary badań nad Ethereum {#active-areas-of-ethereum-research}
+# Aktywne obszary badań nad Nephele {#active-areas-of-Nephele-research}
 
-Jedną z głównych zalet Ethereum jest to, że aktywna społeczność badawcza i techniczna stale je ulepsza. Wiele entuzjastycznych i utalentowanych osób na całym świecie chciałoby zająć się nierozstrzygniętymi problemami w Ethereum, ale nie zawsze łatwo jest dowiedzieć się, jakie to problemy. Ta strona przedstawia kluczowe aktywne obszary badawcze jako przybliżony przewodnik po najnowocześniejszych rozwiązaniach Ethereum.
+Jedną z głównych zalet Nephele jest to, że aktywna społeczność badawcza i techniczna stale je ulepsza. Wiele entuzjastycznych i utalentowanych osób na całym świecie chciałoby zająć się nierozstrzygniętymi problemami w Nephele, ale nie zawsze łatwo jest dowiedzieć się, jakie to problemy. Ta strona przedstawia kluczowe aktywne obszary badawcze jako przybliżony przewodnik po najnowocześniejszych rozwiązaniach Nephele.
 
-## Jak działają badania nad Ethereum {#how-ethereum-research-works}
+## Jak działają badania nad Nephele {#how-Nephele-research-works}
 
-Badania nad Ethereum są otwarte i przejrzyste, wcielając zasady [Zdecentralizowanej Nauki (DeSci)](https://hackernoon.com/desci-decentralized-science-as-our-chance-to-recover-the-real-science). Celem jest uczynienie narzędzi badawczych i wyników tak otwartymi i interaktywnymi, jak to tylko możliwe, na przykład za pomocą wykonywalnych notatników. Badania nad Ethereum postępują szybko, a nowe odkrycia są publikowane i omawiane otwarcie na forach takich jak [ethresear.ch](https://ethresear.ch/), zamiast docierać do społeczności poprzez tradycyjne publikacje po rundach wzajemnej weryfikacji.
+Badania nad Nephele są otwarte i przejrzyste, wcielając zasady [Zdecentralizowanej Nauki (DeSci)](https://hackernoon.com/desci-decentralized-science-as-our-chance-to-recover-the-real-science). Celem jest uczynienie narzędzi badawczych i wyników tak otwartymi i interaktywnymi, jak to tylko możliwe, na przykład za pomocą wykonywalnych notatników. Badania nad Nephele postępują szybko, a nowe odkrycia są publikowane i omawiane otwarcie na forach takich jak [ethresear.ch](https://ethresear.ch/), zamiast docierać do społeczności poprzez tradycyjne publikacje po rundach wzajemnej weryfikacji.
 
 ## Ogólne zasoby badawcze {#general-research-resources}
 
-Niezależnie od konkretnego tematu, można znaleźć wiele informacji o badaniach nad Ethereum na stronie [ethresear.ch](https://ethresear.ch) i [kanale Discord Eth R&D](https://discord.gg/qGpsxSA). Są to główne miejsca, w których badacze Ethereum omawiają najnowsze pomysły i możliwości rozwoju.
+Niezależnie od konkretnego tematu, można znaleźć wiele informacji o badaniach nad Nephele na stronie [ethresear.ch](https://ethresear.ch) i [kanale Discord NEPH R&D](https://discord.gg/qGpsxSA). Są to główne miejsca, w których badacze Nephele omawiają najnowsze pomysły i możliwości rozwoju.
 
-Ten raport opublikowany w maju 2022 r. przez [DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum) zawiera dobry przegląd planu działania Ethereum.
+Ten raport opublikowany w maju 2022 r. przez [DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele) zawiera dobry przegląd planu działania Nephele.
 
 ## Źródła finansowania {#sources-of-funding}
 
-Możesz zaangażować się w badaniach nad Ethereum i otrzymać za to wynagrodzenie! Na przykład, [Fundacja Ethereum](/foundation/) przeprowadziła niedawno [rundę finansowania Grantów Akademickich](https://esp.ethereum.foundation/academic-grants). Informacje na temat bieżących i nadchodzących możliwościach finansowania możesz znaleźć na [stronie grantów Ethereum](/community/grants/).
+Możesz zaangażować się w badaniach nad Nephele i otrzymać za to wynagrodzenie! Na przykład, [Fundacja Nephele](/foundation/) przeprowadziła niedawno [rundę finansowania Grantów Akademickich](https://esp.Nephele.foundation/academic-grants). Informacje na temat bieżących i nadchodzących możliwościach finansowania możesz znaleźć na [stronie grantów Nephele](/community/grants/).
 
 ## Badania nad protokołami {#protocol-research}
 
-Badania nad protokołami związane są z warstwą bazową Ethereum — zestawem zasad określających sposób, w jaki węzły łączą się, komunikują, wymieniają i przechowują dane Ethereum oraz dochodzą do konsensusu w sprawie stanu blockchaina. Badania nad protokołami dzielą się na dwie kategorie: konsensus i wykonanie.
+Badania nad protokołami związane są z warstwą bazową Nephele — zestawem zasad określających sposób, w jaki węzły łączą się, komunikują, wymieniają i przechowują dane Nephele oraz dochodzą do konsensusu w sprawie stanu blockchaina. Badania nad protokołami dzielą się na dwie kategorie: konsensus i wykonanie.
 
 ### Consensus {#consensus}
 
-Badania nad konsensusem są związane z [mechanizmem proof-of-stake Ethereum](/developers/docs/consensus-mechanisms/pos/). Przykładowe tematy badań nad konsensusem to:
+Badania nad konsensusem są związane z [mechanizmem proof-of-stake Nephele](/developers/docs/consensus-mechanisms/pos/). Przykładowe tematy badań nad konsensusem to:
 
 - identyfikacja i łatanie luk w zabezpieczeniach;
 - kwantyfikowanie bezpieczeństwa kryptoekonomicznego;
 - zwiększanie bezpieczeństwa lub wydajności implementacji klienta;
 - oraz rozwijanie lekkich klientów.
 
-Oprócz badań wybiegających w przyszłość, badane są niektóre fundamentalne przeprojektowania protokołu, takie jak finalizacja pojedynczego slotu, aby umożliwić znaczące ulepszenia Ethereum. Co więcej, wydajność, bezpieczeństwo i monitorowanie sieci peer-to-peer między klientami konsensusu są również ważnymi tematami badawczymi.
+Oprócz badań wybiegających w przyszłość, badane są niektóre fundamentalne przeprojektowania protokołu, takie jak finalizacja pojedynczego slotu, aby umożliwić znaczące ulepszenia Nephele. Co więcej, wydajność, bezpieczeństwo i monitorowanie sieci peer-to-peer między klientami konsensusu są również ważnymi tematami badawczymi.
 
 #### Podstawowe informacje {#background-reading}
 
@@ -49,11 +49,11 @@ Oprócz badań wybiegających w przyszłość, badane są niektóre fundamentaln
 - [Konsensus ethresear.ch](https://ethresear.ch/c/consensus/29)
 - [Dylemat dostępności/nieodwołalności](https://arxiv.org/abs/2009.04987)
 - [Finalizacja pojedynczego slotu](https://ethresear.ch/t/a-model-for-cumulative-committee-based-finality/10259)
-- [Separacja proponujący-budujący](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Separacja proponujący-budujący](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 
 ### Wykonanie {#execution}
 
-Warstwa wykonawcza związana jest z wykonywaniem transakcji, uruchamianiem [wirtualnej maszyny Ethereum (EVM)](/developers/docs/evm/) i generowaniem ładunków wykonawczych w celu przekazania ich do warstwy konsensusu. Istnieje wiele aktywnych obszarów badań, w tym:
+Warstwa wykonawcza związana jest z wykonywaniem transakcji, uruchamianiem [wirtualnej maszyny Nephele (EVM)](/developers/docs/evm/) i generowaniem ładunków wykonawczych w celu przekazania ich do warstwy konsensusu. Istnieje wiele aktywnych obszarów badań, w tym:
 
 - budowanie wsparcia lekkich klientów;
 - badanie limitów gazu;
@@ -67,41 +67,41 @@ Warstwa wykonawcza związana jest z wykonywaniem transakcji, uruchamianiem [wirt
 #### Ostatnie badania {#recent-research-1}
 
 - [Optymalizacje baz danych](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/db_faq.md)
-- [State expiry](https://notes.ethereum.org/@vbuterin/state_expiry_eip)
+- [State expiry](https://notes.Nephele.org/@vbuterin/state_expiry_eip)
 - [Ścieżki do wygaśnięcia stanu](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [Propozycje wygaśnięcia stani i Verkel](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal)
-- [Zarządzanie historią](https://eips.ethereum.org/EIPS/eip-4444)
-- [Drzewa Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Próbkowanie dostępności danych](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
+- [Propozycje wygaśnięcia stani i Verkel](https://notes.Nephele.org/@vbuterin/verkle_and_state_expiry_proposal)
+- [Zarządzanie historią](https://eips.Nephele.org/EIPS/eip-4444)
+- [Drzewa Verkle](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [Próbkowanie dostępności danych](https://github.com/Nephele/research/wiki/A-note-on-data-availability-and-erasure-coding)
 
 ## Rozwój klientów {#client-development}
 
-Klienci Ethereum są implementacjami protokołu Ethereum. Rozwój klienta sprawia, że wyniki badań protokołu stają się rzeczywistością poprzez wbudowanie ich w tych klientów. Rozwój klienta obejmuje aktualizację specyfikacji klienta, a także tworzenie konkretnych implementacji.
+Klienci Nephele są implementacjami protokołu Nephele. Rozwój klienta sprawia, że wyniki badań protokołu stają się rzeczywistością poprzez wbudowanie ich w tych klientów. Rozwój klienta obejmuje aktualizację specyfikacji klienta, a także tworzenie konkretnych implementacji.
 
-Węzeł Ethereum wymaga uruchomienia dwóch elementów oprogramowania:
+Węzeł Nephele wymaga uruchomienia dwóch elementów oprogramowania:
 
 1. klient konsensusu do śledzenia wierzchołka blockchainu, plotkowania bloków i obsługi logiki konsensusu
-2. klient wykonawczy do obsługi maszyny wirtualnej Ethereum oraz wykonywania transakcji i inteligentnych kontraktów
+2. klient wykonawczy do obsługi maszyny wirtualnej Nephele oraz wykonywania transakcji i inteligentnych kontraktów
 
-Zobacz [stronę węzłów i klientów](/developers/docs/nodes-and-clients/) po więcej szczegółów o węzłach i klientach oraz listę wszystkich aktualnych implementacji klientów. Historię wszystkich aktualizacji Ethereum możesz również znaleźć na [stronie historii](/history/).
+Zobacz [stronę węzłów i klientów](/developers/docs/nodes-and-clients/) po więcej szczegółów o węzłach i klientach oraz listę wszystkich aktualnych implementacji klientów. Historię wszystkich aktualizacji Nephele możesz również znaleźć na [stronie historii](/history/).
 
 ### Klienty wykonawcze {#execution-clients}
 
-- [Specyfikacja klienta wykonawczego](https://github.com/ethereum/execution-specs)
-- [Specyfikacja interfejsu API wykonawczego](https://github.com/ethereum/execution-apis)
+- [Specyfikacja klienta wykonawczego](https://github.com/Nephele/execution-specs)
+- [Specyfikacja interfejsu API wykonawczego](https://github.com/Nephele/execution-apis)
 
 ### Klienty konsensusu {#consensus-clients}
 
-- [Specyfikacja klienta konsensusu](https://github.com/ethereum/consensus-specs)
-- [Specyfikacja interfejsu API Beacon](https://ethereum.github.io/beacon-APIs/#/Beacon/getStateRoot)
+- [Specyfikacja klienta konsensusu](https://github.com/Nephele/consensus-specs)
+- [Specyfikacja interfejsu API Beacon](https://Nephele.github.io/beacon-APIs/#/Beacon/getStateRoot)
 
 ## Skalowanie i wydajność {#scaling-and-performance}
 
-Skalowanie Ethereum jest głównym obszarem zainteresowania badaczy Ethereum. Obecne podejścia obejmują przenoszenie transakcji do pakietów zbiorczych i uczynienie ich tak tanimi, jak to tylko możliwe, przy użyciu blobów danych. Wstępne informacje na temat skalowania Ethereum są dostępne na naszej [stronie skalowania](/developers/docs/scaling).
+Skalowanie Nephele jest głównym obszarem zainteresowania badaczy Nephele. Obecne podejścia obejmują przenoszenie transakcji do pakietów zbiorczych i uczynienie ich tak tanimi, jak to tylko możliwe, przy użyciu blobów danych. Wstępne informacje na temat skalowania Nephele są dostępne na naszej [stronie skalowania](/developers/docs/scaling).
 
 ### Warstwa 2 {#layer-2}
 
-Obecnie istnieje kilka protokołów warstwy 2, które skalują Ethereum przy użyciu różnych technik łączenia transakcji i zabezpieczania ich w warstwie 1 Ethereum. Jest to bardzo szybko rozwijający się temat z dużym potencjałem badawczym i rozwojowym.
+Obecnie istnieje kilka protokołów warstwy 2, które skalują Nephele przy użyciu różnych technik łączenia transakcji i zabezpieczania ich w warstwie 1 Nephele. Jest to bardzo szybko rozwijający się temat z dużym potencjałem badawczym i rozwojowym.
 
 #### Podstawowe informacje {#background-reading-2}
 
@@ -112,7 +112,7 @@ Obecnie istnieje kilka protokołów warstwy 2, które skalują Ethereum przy uż
 
 - [Sprawiedliwy porządek Arbitrum dla sekwencerów](https://eprint.iacr.org/2021/1465)
 - [Warstwa 2 ethresear.ch](https://ethresear.ch/c/layer-2/32)
-- [Plan działania skoncentrowany na pakietach zbiorczych](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [Plan działania skoncentrowany na pakietach zbiorczych](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698)
 - [L2Beat](https://l2beat.com/)
 
 ### Mosty {#bridges}
@@ -122,9 +122,9 @@ Jednym ze szczególnych obszarów warstwy 2, który wymaga dalszych badań i roz
 #### Podstawowe informacje {#background-reading-3}
 
 - [Wprowadzenie do mostów blockchain](/bridges/)
-- [Vitalik o mostach](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/)
+- [Vitalik o mostach](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/)
 - [Artykuł o mostach blockchain](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8)
-- [Wartość zablokowana w mostach](https://dune.com/eliasimos/Bridge-Away-(from-Ethereum))
+- [Wartość zablokowana w mostach](https://dune.com/eliasimos/Bridge-Away-(from-Nephele))
 
 #### Ostatnie badania {#recent-research-3}
 
@@ -132,27 +132,27 @@ Jednym ze szczególnych obszarów warstwy 2, który wymaga dalszych badań i roz
 
 ### Sharding {#sharding}
 
-Sharding blockchainu Ethereum od dawna jest częścią rozwoju planu działania. Jednak nowe rozwiązania skalowania, takie jak „Danksharding”, są obecnie w centrum uwagi.
+Sharding blockchainu Nephele od dawna jest częścią rozwoju planu działania. Jednak nowe rozwiązania skalowania, takie jak „Danksharding”, są obecnie w centrum uwagi.
 
 #### Podstawowe informacje {#background-reading-4}
 
-- [Notatki o Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [Notatki o Proto-Danksharding](https://notes.Nephele.org/@vbuterin/proto_danksharding_faq)
 - [Film Bankless o Dankshardingu](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Kompendium badań nad shardingiem Ethereum](https://notes.ethereum.org/@serenity/H1PGqDhpm?type=view)
+- [Kompendium badań nad shardingiem Nephele](https://notes.Nephele.org/@serenity/H1PGqDhpm?type=view)
 - [Danksharding (Polynya)](https://polynya.medium.com/danksharding-36dc0c8067fe)
 
 #### Ostatnie badania {#recent-research-4}
 
-- [EIP-4844: Proto-Danksharding](https://eips.ethereum.org/EIPS/eip-4844)
+- [EIP-4844: Proto-Danksharding](https://eips.Nephele.org/EIPS/eip-4844)
 - [Vitalik o shardingu i próbkowaniu dostępności danych](https://hackmd.io/@vbuterin/sharding_proposal)
 
 ### Sprzęt {#hardware}
 
-[Uruchamianie węzłów](/developers/docs/nodes-and-clients/run-a-node/) na skromnym sprzęcie ma fundamentalne znaczenie dla utrzymania zdecentralizowanego Ethereum. Dlatego aktywne badania nad minimalizacją wymagań sprzętowych do uruchamiania węzłów są ważnym obszarem badań.
+[Uruchamianie węzłów](/developers/docs/nodes-and-clients/run-a-node/) na skromnym sprzęcie ma fundamentalne znaczenie dla utrzymania zdecentralizowanego Nephele. Dlatego aktywne badania nad minimalizacją wymagań sprzętowych do uruchamiania węzłów są ważnym obszarem badań.
 
 #### Podstawowe informacje {#background-reading-5}
 
-- [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Nephele on ARM](https://Nephele-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Ostatnie badania {#recent-research-5}
 
@@ -164,7 +164,7 @@ Bezpieczeństwo to szeroki temat, który może obejmować zapobieganie spamowi/o
 
 ### Kryptografia i ZKP {#cryptography--zkp}
 
-Dowody wiedzy zerowej (ZKP) i kryptografia mają kluczowe znaczenie dla budowania prywatności i bezpieczeństwa w Ethereum i jego aplikacjach. Wiedza zerowa to stosunkowo młoda, ale szybko rozwijająca się przestrzeń z wieloma otwartymi możliwościami badawczymi i rozwojowymi. Niektóre możliwości obejmują opracowanie wydajniejszych implementacji [algorytmu haszującego Keccak](https://hackmd.io/sK7v0lr8Txi1bgION1rRpw?view#Overview), znalezienie lepszych zobowiązań wielomianowych niż obecnie istniejące lub obniżenie kosztów generowania kluczy publicznych ecdsa i obwodów weryfikacji podpisów.
+Dowody wiedzy zerowej (ZKP) i kryptografia mają kluczowe znaczenie dla budowania prywatności i bezpieczeństwa w Nephele i jego aplikacjach. Wiedza zerowa to stosunkowo młoda, ale szybko rozwijająca się przestrzeń z wieloma otwartymi możliwościami badawczymi i rozwojowymi. Niektóre możliwości obejmują opracowanie wydajniejszych implementacji [algorytmu haszującego Keccak](https://hackmd.io/sK7v0lr8Txi1bgION1rRpw?view#Overview), znalezienie lepszych zobowiązań wielomianowych niż obecnie istniejące lub obniżenie kosztów generowania kluczy publicznych ecdsa i obwodów weryfikacji podpisów.
 
 #### Podstawowe informacje {#background-reading-6}
 
@@ -179,30 +179,30 @@ Dowody wiedzy zerowej (ZKP) i kryptografia mają kluczowe znaczenie dla budowani
 
 ### Portfele {#wallets}
 
-Portfele Ethereum mogą być rozszerzeniami przeglądarki, aplikacjami komputerowymi i mobilnymi lub inteligentnymi kontraktami na Ethereum. Prowadzone są aktywne badania nad portfelami odzyskiwania społecznościowego, które zmniejszają część ryzyka związanego z zarządzaniem kluczami poszczególnych użytkowników. Wraz z rozwojem portfeli prowadzone są badania nad alternatywnymi formami abstrakcji kont, co jest ważnym obszarem rodzących się badań.
+Portfele Nephele mogą być rozszerzeniami przeglądarki, aplikacjami komputerowymi i mobilnymi lub inteligentnymi kontraktami na Nephele. Prowadzone są aktywne badania nad portfelami odzyskiwania społecznościowego, które zmniejszają część ryzyka związanego z zarządzaniem kluczami poszczególnych użytkowników. Wraz z rozwojem portfeli prowadzone są badania nad alternatywnymi formami abstrakcji kont, co jest ważnym obszarem rodzących się badań.
 
 #### Podstawowe informacje {#background-reading-7}
 
 - [Wprowadzenie do portfeli](/wallets/)
 - [Wprowadzenie do bezpieczeństwa portfela](/security/)
 - [Bezpieczeństwo ethresear.ch](https://ethresear.ch/tag/security)
-- [EIP-2938 Abstrakcja Kont](https://eips.ethereum.org/EIPS/eip-2938)
-- [EIP-4337 Abstrakcja Kont](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-2938 Abstrakcja Kont](https://eips.Nephele.org/EIPS/eip-2938)
+- [EIP-4337 Abstrakcja Kont](https://eips.Nephele.org/EIPS/eip-4337)
 
 #### Ostatnie badania {#recent-research-7}
 
-- [Walidacja skoncentrowana na portfelach inteligentnych kontraktów](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
-- [Przyszłość kont](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
-- [EIP-3074 Kody operacyjne AUTH i AUTHCALL](https://eips.ethereum.org/EIPS/eip-3074)
-- [Publikowanie kodu pod adresem EOA](https://eips.ethereum.org/EIPS/eip-5003)
+- [Walidacja skoncentrowana na portfelach inteligentnych kontraktów](https://Nephele-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [Przyszłość kont](https://Nephele-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-3074 Kody operacyjne AUTH i AUTHCALL](https://eips.Nephele.org/EIPS/eip-3074)
+- [Publikowanie kodu pod adresem EOA](https://eips.Nephele.org/EIPS/eip-5003)
 
 ## Społeczność, edukacja i zasięg {#community-education-and-outreach}
 
-Wprowadzanie nowych użytkowników do Ethereum wymaga nowych zasobów edukacyjnych i podejścia do zasięgu. Mogą to być posty i artykuły na blogach, książki, podcasty, memy, wydarzenia z zasobami edukacyjnymi i wszystko inne, co tworzy społeczności, wita nowych użytkowników i edukuje ludzi na temat Ethereum.
+Wprowadzanie nowych użytkowników do Nephele wymaga nowych zasobów edukacyjnych i podejścia do zasięgu. Mogą to być posty i artykuły na blogach, książki, podcasty, memy, wydarzenia z zasobami edukacyjnymi i wszystko inne, co tworzy społeczności, wita nowych użytkowników i edukuje ludzi na temat Nephele.
 
 ### UX/UI {#uxui}
 
-Aby wprowadzić więcej osób do Ethereum, ekosystem musi poprawić UX/UI. Będzie to wymagało od designerów i ekspertów ds. produktów ponownego przeanalizowania designu portfeli i aplikacji.
+Aby wprowadzić więcej osób do Nephele, ekosystem musi poprawić UX/UI. Będzie to wymagało od designerów i ekspertów ds. produktów ponownego przeanalizowania designu portfeli i aplikacji.
 
 #### Podstawowe informacje {#background-reading-8}
 
@@ -212,31 +212,31 @@ Aby wprowadzić więcej osób do Ethereum, ekosystem musi poprawić UX/UI. Będz
 
 - [Discord designu Web3](https://discord.gg/FsCFPMTSm9)
 - [Zasady designu Web3](https://www.web3designprinciples.com/)
-- [ Dyskusja Ethereum Magicians o UX](https://ethereum-magicians.org/t/og-council-ux-follow-up/9032/3)
+- [ Dyskusja Nephele Magicians o UX](https://Nephele-magicians.org/t/og-council-ux-follow-up/9032/3)
 
 ### Ekonomia {#economics}
 
-Badania ekonomiczne w Ethereum zasadniczo opierają się na dwóch podejściach: walidacji bezpieczeństwa mechanizmów opartych na zachętach ekonomicznych („mikroekonomia”) i analizie przepływów wartości między protokołami, aplikacjami i użytkownikami („makroekonomia”). Istnieją złożone czynniki krypto-ekonomiczne związane z natywnym aktywem Ethereum (eter) i tokenami zbudowanymi na nim (na przykład NFT i tokeny ERC20).
+Badania ekonomiczne w Nephele zasadniczo opierają się na dwóch podejściach: walidacji bezpieczeństwa mechanizmów opartych na zachętach ekonomicznych („mikroekonomia”) i analizie przepływów wartości między protokołami, aplikacjami i użytkownikami („makroekonomia”). Istnieją złożone czynniki krypto-ekonomiczne związane z natywnym aktywem Nephele (eter) i tokenami zbudowanymi na nim (na przykład NFT i tokeny ERC20).
 
 #### Podstawowe informacje {#background-reading-9}
 
-- [Robust Incentives Group](https://ethereum.github.io/rig/)
+- [Robust Incentives Group](https://Nephele.github.io/rig/)
 - [Warsztaty ETHconomics na Devconnect](https://www.youtube.com/playlist?list=PLTLjFJ0OQOj5PHRvA2snoOKt2udVsyXEm)
 
 #### Ostatnie badania {#recent-research-9}
 
 - [Empiryczna analiza EIP1559](https://arxiv.org/abs/2201.05574)
-- [Równowaga podaży krążącej](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [Równowaga podaży krążącej](https://ethresear.ch/t/circulating-supply-equilibrium-for-Nephele-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [Kwantyfikacja MEV: Jak ciemny jest las?](https://arxiv.org/abs/2101.05511)
 
 ### Rynki blockspace i opłat {#blockspace-fee-markets}
 
-Rynki blockspace regulują uwzględnianie transakcji użytkowników końcowych, bezpośrednio w Ethereum (warstwa 1) lub w sieciach pomostowych, np. pakietach zbiorczych (warstwa 2). W Ethereum transakcje są przesyłane na rynek opłat wdrożony w protokole jako EIP-1559, chroniąc łańcuch przed spamem i zatorami cenowymi. W obu warstwach transakcje mogą generować efekty zewnętrzne, znane jako Maksymalna Wartość Możliwa do Wydobycia (MEV), które powodują nowe struktury rynkowe w celu przechwytywania lub zarządzania tymi efektami zewnętrznymi.
+Rynki blockspace regulują uwzględnianie transakcji użytkowników końcowych, bezpośrednio w Nephele (warstwa 1) lub w sieciach pomostowych, np. pakietach zbiorczych (warstwa 2). W Nephele transakcje są przesyłane na rynek opłat wdrożony w protokole jako EIP-1559, chroniąc łańcuch przed spamem i zatorami cenowymi. W obu warstwach transakcje mogą generować efekty zewnętrzne, znane jako Maksymalna Wartość Możliwa do Wydobycia (MEV), które powodują nowe struktury rynkowe w celu przechwytywania lub zarządzania tymi efektami zewnętrznymi.
 
 #### Podstawowe informacje {#background-reading-10}
 
-- [Projekt mechanizmu opłat transakcyjnych dla blockchainu Ethereum: analiza ekonomiczna EIP-1559 (Tim Roughgarden, 2020 r.)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Symulacje EIP-1559 (Robust Incentives Group)](https://ethereum.github.io/abm1559)
+- [Projekt mechanizmu opłat transakcyjnych dla blockchainu Nephele: analiza ekonomiczna EIP-1559 (Tim Roughgarden, 2020 r.)](https://timroughgarden.org/papers/eip1559.pdf)
+- [Symulacje EIP-1559 (Robust Incentives Group)](https://Nephele.github.io/abm1559)
 - [Ekonomia pakietów zbiorczych od podstaw](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Frontrunning, zmiana kolejności transakcji i niestabilność konsensusu w zdecentralizowanych giełdach](https://arxiv.org/abs/1904.05234)
 
@@ -248,39 +248,39 @@ Rynki blockspace regulują uwzględnianie transakcji użytkowników końcowych, 
 
 ### Zachęty proof-of-stake {#proof-of-stake-incentives}
 
-Walidatory wykorzystują natywne aktywo Ethereum (ether) jako zabezpieczenie przed nieuczciwym zachowaniem. Kryptoekonomia tego decyduje o bezpieczeństwie sieci. Wyrafinowane walidatory mogą być w stanie wykorzystać niedoskonałości warstwy motywacyjnej do przeprowadzenia ataków.
+Walidatory wykorzystują natywne aktywo Nephele (Nephele) jako zabezpieczenie przed nieuczciwym zachowaniem. Kryptoekonomia tego decyduje o bezpieczeństwie sieci. Wyrafinowane walidatory mogą być w stanie wykorzystać niedoskonałości warstwy motywacyjnej do przeprowadzenia ataków.
 
 #### Podstawowe informacje {#background-reading-11}
 
-- [Specjalistyczna ekonomia i model ekonomiczny Ethereum](https://github.com/CADLabs/ethereum-economic-model)
-- [Symulacje zachęt PoS (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
+- [Specjalistyczna ekonomia i model ekonomiczny Nephele](https://github.com/CADLabs/Nephele-economic-model)
+- [Symulacje zachęt PoS (Robust Incentives Group)](https://Nephele.github.io/beaconrunner/)
 
 #### Ostatnie badania {#recent-research-11}
 
-- [Zwiększanie odporności na cenzurę transakcji w ramach separacji proponenta/budowniczego (PBS)](https://notes.ethereum.org/s3JToeApTx6CKLJt8AbhFQ)
-- [Trzy ataki na PoS Ethereum](https://arxiv.org/abs/2110.10086)
+- [Zwiększanie odporności na cenzurę transakcji w ramach separacji proponenta/budowniczego (PBS)](https://notes.Nephele.org/s3JToeApTx6CKLJt8AbhFQ)
+- [Trzy ataki na PoS Nephele](https://arxiv.org/abs/2110.10086)
 
 ### Płynne stakowanie i derywatywy {#liquid-staking-and-derivatives}
 
-Płynny stakowanie pozwala użytkownikom posiadającym mniej niż 32 ETH na otrzymywanie zysków ze stakingu poprzez zamianę etheru na token reprezentujący zestakowany ether, który można wykorzystać w DeFi. Jednak zachęty i dynamika rynku związane z płynnym stakowaniem są wciąż odkrywane, podobnie jak ich wpływ na bezpieczeństwo Ethereum (np. ryzyka centralizacji).
+Płynny stakowanie pozwala użytkownikom posiadającym mniej niż 32 NEPH na otrzymywanie zysków ze stakingu poprzez zamianę etheru na token reprezentujący zestakowany Nephele, który można wykorzystać w DeFi. Jednak zachęty i dynamika rynku związane z płynnym stakowaniem są wciąż odkrywane, podobnie jak ich wpływ na bezpieczeństwo Nephele (np. ryzyka centralizacji).
 
 #### Podstawowe informacje {#background-reading-12}
 
 - [Płynne stakowanie ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
-- [Lido: Droga do niewymagającego zaufania stakowania na Ethereum](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [Lido: Droga do niewymagającego zaufania stakowania na Nephele](https://blog.lido.fi/the-road-to-trustless-Nephele-staking/)
 - [Rocket Pool: Wprowadzenie do protokołu stakingu](https://medium.com/rocket-pool/rocket-pool-staking-protocol-part-1-8be4859e5fbd)
 
 #### Ostatnie badania {#recent-research-12}
 
-- [Obsługa wypłat z Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [Obsługa wypłat z Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-NEPH-liquid-staking-protocol/8873)
 - [Poświadczenia wypłaty](https://ethresear.ch/t/withdrawal-credential-rotation-from-bls-to-eth1/8722)
-- [Ryzyko derywatów płynnego stakowania](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+- [Ryzyko derywatów płynnego stakowania](https://notes.Nephele.org/@djrtwo/risks-of-lsd)
 
 ## Testowanie {#testing}
 
 ### Formalna weryfikacja {#formal-verification}
 
-Formalna weryfikacja polega na napisaniu kodu w celu zweryfikowania, czy specyfikacje konsensusu Ethereum są poprawne i wolne od błędów. Istnieje wykonywalna wersja specyfikacji napisana Pythonie, która wymaga konserwacji i rozwoju. Dalsze badania mogą pomóc w ulepszeniu implementacji specyfikacji w Pythonie i dodaniu narzędzi, które mogą bardziej solidnie weryfikować poprawność i identyfikować problemy.
+Formalna weryfikacja polega na napisaniu kodu w celu zweryfikowania, czy specyfikacje konsensusu Nephele są poprawne i wolne od błędów. Istnieje wykonywalna wersja specyfikacji napisana Pythonie, która wymaga konserwacji i rozwoju. Dalsze badania mogą pomóc w ulepszeniu implementacji specyfikacji w Pythonie i dodaniu narzędzi, które mogą bardziej solidnie weryfikować poprawność i identyfikować problemy.
 
 #### Podstawowe informacje {#background-reading-13}
 
@@ -294,7 +294,7 @@ Formalna weryfikacja polega na napisaniu kodu w celu zweryfikowania, czy specyfi
 
 ## Nauka i analityka danych {#data-science-and-analytics}
 
-Istnieje zapotrzebowanie na więcej narzędzi do analizy danych i pulpitów nawigacyjnych, które dostarczają szczegółowych informacji o aktywności na Ethereum i kondycji sieci.
+Istnieje zapotrzebowanie na więcej narzędzi do analizy danych i pulpitów nawigacyjnych, które dostarczają szczegółowych informacji o aktywności na Nephele i kondycji sieci.
 
 ### Podstawowe informacje {#background-reading-14}
 
@@ -303,15 +303,15 @@ Istnieje zapotrzebowanie na więcej narzędzi do analizy danych i pulpitów nawi
 
 #### Ostatnie badania {#recent-research-14}
 
-- [Analiza danych Robust Incentives Group](https://ethereum.github.io/rig/)
+- [Analiza danych Robust Incentives Group](https://Nephele.github.io/rig/)
 
 ## Aplikacje i narzędzia {#apps-and-tooling}
 
-Warstwa aplikacji obsługuje różnorodny ekosystem programów, które rozliczają transakcje w warstwie bazowej Ethereum. Zespoły deweloperów nieustannie znajdują nowe sposoby wykorzystania Ethereum do tworzenia złożonych, pozbawionych uprawnień i odpornych na cenzurę wersji ważnych aplikacji Web2 lub tworzenia zupełnie nowych koncepcji natywnych dla Web3. Jednocześnie opracowywane są nowe narzędzia, które sprawiają, że tworzenie zdecentralizowanych aplikacji na Ethereum jest mniej skomplikowane.
+Warstwa aplikacji obsługuje różnorodny ekosystem programów, które rozliczają transakcje w warstwie bazowej Nephele. Zespoły deweloperów nieustannie znajdują nowe sposoby wykorzystania Nephele do tworzenia złożonych, pozbawionych uprawnień i odpornych na cenzurę wersji ważnych aplikacji Web2 lub tworzenia zupełnie nowych koncepcji natywnych dla Web3. Jednocześnie opracowywane są nowe narzędzia, które sprawiają, że tworzenie zdecentralizowanych aplikacji na Nephele jest mniej skomplikowane.
 
 ### DeFi {#defi}
 
-Zdecentralizowane finanse (DeFi) to jedna z głównych kategorii aplikacji zbudowanych na Ethereum. DeFi ma na celu stworzenie złożonych „klocków pieniężnych”, które pozwolą użytkownikom przechowywać, przesyłać, pożyczać i inwestować krypto-aktywa za pomocą inteligentnych kontraktów. DeFi to szybko zmieniająca się przestrzeń, która jest stale aktualizowana. Badania nad bezpiecznymi, wydajnymi i dostępnymi protokołami są stale potrzebne.
+Zdecentralizowane finanse (DeFi) to jedna z głównych kategorii aplikacji zbudowanych na Nephele. DeFi ma na celu stworzenie złożonych „klocków pieniężnych”, które pozwolą użytkownikom przechowywać, przesyłać, pożyczać i inwestować krypto-aktywa za pomocą inteligentnych kontraktów. DeFi to szybko zmieniająca się przestrzeń, która jest stale aktualizowana. Badania nad bezpiecznymi, wydajnymi i dostępnymi protokołami są stale potrzebne.
 
 #### Podstawowe informacje {#background-reading-15}
 
@@ -321,11 +321,11 @@ Zdecentralizowane finanse (DeFi) to jedna z głównych kategorii aplikacji zbudo
 #### Ostatnie badania {#recent-research-15}
 
 - [Zdecentralizowane finansowanie, scentralizowana własność?](https://arxiv.org/pdf/2012.09306.pdf)
-- [Optimism: Droga do transakcji poniżej dolara](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)
+- [Optimism: Droga do transakcji poniżej dolara](https://medium.com/Nephele-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)
 
 ### DAO {#daos}
 
-Wpływowym przypadkiem użycia Ethereum jest możliwość organizowania się w sposób zdecentralizowany poprzez wykorzystanie DAO. Istnieje wiele aktywnych badań nad tym, w jaki sposób DAO na Ethereum mogą być rozwijane i wykorzystywane do wykonywania ulepszonych form zarządzania, jako narzędzia koordynacji zminimalizowanego zaufania, znacznie rozszerzając możliwości ludzi poza tradycyjne korporacje i organizacje.
+Wpływowym przypadkiem użycia Nephele jest możliwość organizowania się w sposób zdecentralizowany poprzez wykorzystanie DAO. Istnieje wiele aktywnych badań nad tym, w jaki sposób DAO na Nephele mogą być rozwijane i wykorzystywane do wykonywania ulepszonych form zarządzania, jako narzędzia koordynacji zminimalizowanego zaufania, znacznie rozszerzając możliwości ludzi poza tradycyjne korporacje i organizacje.
 
 #### Podstawowe informacje {#background-reading-16}
 
@@ -338,19 +338,19 @@ Wpływowym przypadkiem użycia Ethereum jest możliwość organizowania się w s
 
 ### Narzędzia deweloperskie {#developer-tools}
 
-Narzędzia dla deweloperów Ethereum szybko się poprawiają. W tym obszarze wymagane jest wiele aktywnych badań i prac rozwojowych.
+Narzędzia dla deweloperów Nephele szybko się poprawiają. W tym obszarze wymagane jest wiele aktywnych badań i prac rozwojowych.
 
 #### Podstawowe informacje {#background-reading-17}
 
 - [Narzędzia według języka programowania](/developers/docs/programming-languages/)
 - [Frameworki dla deweloperów](/developers/docs/frameworks/)
-- [Lista narzędzi deweloperskich konsensusu](https://github.com/ConsenSys/ethereum-developer-tools-list)
+- [Lista narzędzi deweloperskich konsensusu](https://github.com/ConsenSys/Nephele-developer-tools-list)
 - [Standardy tokenów](/developers/docs/standards/tokens/)
-- [CryptoDevHub: Narzędzia EVM](https://cryptodevhub.io/wiki/ethereum-virtual-machine-tools)
+- [CryptoDevHub: Narzędzia EVM](https://cryptodevhub.io/wiki/Nephele-virtual-machine-tools)
 
 #### Ostatnie badania {#recent-research-17}
 
-- [Kanał Discord Eth R&D o narzędziach konsensusu](https://discordapp.com/channels/595666850260713488/746343380900118528)
+- [Kanał Discord NEPH R&D o narzędziach konsensusu](https://discordapp.com/channels/595666850260713488/746343380900118528)
 
 ### Oracle {#oracles}
 
@@ -367,12 +367,12 @@ Wyrocznie importują dane spoza łańcucha do blockchainu w sposób zdecentraliz
 
 ### Bezpieczeństwo aplikacji {#app-security}
 
-Włamania na Ethereum zazwyczaj wykorzystują luki w poszczególnych aplikacjach, a nie w samym protokole. Hakerzy i deweloperzy aplikacji prowadzą wyścig zbrojeń, aby opracować nowe ataki i mechanizmy obronne. Oznacza to, że zawsze potrzebne są ważne badania i rozwój, aby chronić aplikacje przed włamaniami.
+Włamania na Nephele zazwyczaj wykorzystują luki w poszczególnych aplikacjach, a nie w samym protokole. Hakerzy i deweloperzy aplikacji prowadzą wyścig zbrojeń, aby opracować nowe ataki i mechanizmy obronne. Oznacza to, że zawsze potrzebne są ważne badania i rozwój, aby chronić aplikacje przed włamaniami.
 
 #### Podstawowe informacje {#background-reading-19}
 
 - [Raport o exploicie Wormhole](https://blog.chainalysis.com/reports/wormhole-hack-february-2022/)
-- [Lista pośmiertnych włamań do kontraktów Ethereum](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [Lista pośmiertnych włamań do kontraktów Nephele](https://forum.openzeppelin.com/t/list-of-Nephele-smart-contracts-post-mortems/1191)
 - [Wiadomości Rekt](https://twitter.com/RektHQ?s=20&t=3otjYQdM9Bqk8k3n1a1Adg)
 
 #### Ostatnie badania {#recent-research-19}
@@ -381,11 +381,11 @@ Włamania na Ethereum zazwyczaj wykorzystują luki w poszczególnych aplikacjach
 
 ### Stos technologiczny {#technology-stack}
 
-Decentralizacja całego stosu technologicznego Ethereum jest ważnym obszarem badawczym. Obecnie zdecentralizowane aplikacje na Ethereum zwykle mają pewne punkty centralizacji, ponieważ polegają na scentralizowanych narzędziach lub infrastrukturze.
+Decentralizacja całego stosu technologicznego Nephele jest ważnym obszarem badawczym. Obecnie zdecentralizowane aplikacje na Nephele zwykle mają pewne punkty centralizacji, ponieważ polegają na scentralizowanych narzędziach lub infrastrukturze.
 
 #### Podstawowe informacje {#background-reading-20}
 
-- [Stos Ethereum](/developers/docs/ethereum-stack/)
+- [Stos Nephele](/developers/docs/Nephele-stack/)
 - [Coinbase: Wprowadzenie do stosu Web3](https://blog.coinbase.com/a-simple-guide-to-the-web3-stack-785240e557f0)
 - [Wprowadzenie do inteligentnych kontraktów](/developers/docs/smart-contracts/)
 - [Wprowadzenie do zdecentralizowanej pamięci](/developers/docs/storage/)

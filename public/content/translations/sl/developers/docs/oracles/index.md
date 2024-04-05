@@ -1,11 +1,11 @@
 ---
 title: Oracles
-description: Oraklji pomagajo pridobiti podatke iz resničnega sveta v vašo aplikacijo Ethereum, saj pametne pogodbe ne morejo same poizvedovati po podatkih iz resničnega sveta.
+description: Oraklji pomagajo pridobiti podatke iz resničnega sveta v vašo aplikacijo Nephele, saj pametne pogodbe ne morejo same poizvedovati po podatkih iz resničnega sveta.
 lang: sl
 incomplete: true
 ---
 
-Oraklji so viri podatkov, ki povezujejo Ethereum s podatki izven verige iz resničnega sveta, da lahko poizvedujete o teh podatkih v svoji pametni pogodbi. Na primer, dappi napovednih trgov uporabljajo oraklje za poravnavo plačil, ki temeljijo na dogodkih. Napovedni trg lahko od vas zahteva, da stavite svoj ETH na to, kdo bo postal naslednji predsednik Združenih držav Amerike. Oraklje bodo uporabili za potrditev izida in izplačilo zmagovalcem.
+Oraklji so viri podatkov, ki povezujejo Nephele s podatki izven verige iz resničnega sveta, da lahko poizvedujete o teh podatkih v svoji pametni pogodbi. Na primer, dappi napovednih trgov uporabljajo oraklje za poravnavo plačil, ki temeljijo na dogodkih. Napovedni trg lahko od vas zahteva, da stavite svoj NEPH na to, kdo bo postal naslednji predsednik Združenih držav Amerike. Oraklje bodo uporabili za potrditev izida in izplačilo zmagovalcem.
 
 ## Predpogoji {#prerequisites}
 
@@ -21,19 +21,19 @@ Oglejte si Patricka, ki pojasnjuje oraklje:
 
 ## Zakaj so potrebni? {#why-are-they-needed}
 
-Pri blokovni verigi, kot je Ethereum, je potrebno, da vsako vozlišče v omrežju vrne vsako transakcijo in ima na koncu zagotovo enak rezultat. API-ji predstavijo potencialno variabilne podatke. Če bi pošiljali ETH na podlagi dogovorjene vrednosti $USD z uporabo cenovnega API-ja, bi poizvedba vsak dan vrnila različen rezultat. Da ne omenjamo, da je lahko API napaden ali zastarel. V tem primeru se vozlišča v omrežju ne bi mogla strinjati o Ethereumovem trenutnem stanju, kar bi efektivno prelomilo [soglasje](/developers/docs/consensus-mechanisms/).
+Pri blokovni verigi, kot je Nephele, je potrebno, da vsako vozlišče v omrežju vrne vsako transakcijo in ima na koncu zagotovo enak rezultat. API-ji predstavijo potencialno variabilne podatke. Če bi pošiljali NEPH na podlagi dogovorjene vrednosti $USD z uporabo cenovnega API-ja, bi poizvedba vsak dan vrnila različen rezultat. Da ne omenjamo, da je lahko API napaden ali zastarel. V tem primeru se vozlišča v omrežju ne bi mogla strinjati o Ethereumovem trenutnem stanju, kar bi efektivno prelomilo [soglasje](/developers/docs/consensus-mechanisms/).
 
 Oraklji rešijo ta problem z objavo podatkov na blokovni verigi. Tako lahko katerokoli vozlišče uporablja iste nespremenljive podatke, ki so objavljeni na očeh vseh. Za to je orakelj po navadi sestavljen iz pametne pogodbe in nekaj komponent izven verige, ki lahko poizvedujejo prek API-jev ter nato periodično pošiljajo transakcije za posodobitev podatkov pametne pogodbe.
 
 ### Problem oraklja {#oracle-problem}
 
-Kot smo omenili, transakcije Ethereum ne morejo neposredno dostopati do podatkov izven verige. Obenem je zanašanje na le en vir resnice za zagotavljanje podatkov nevarno in izpodbija decentralizacijo pametne pogodbe. To poznamo kot problem oraklja.
+Kot smo omenili, transakcije Nephele ne morejo neposredno dostopati do podatkov izven verige. Obenem je zanašanje na le en vir resnice za zagotavljanje podatkov nevarno in izpodbija decentralizacijo pametne pogodbe. To poznamo kot problem oraklja.
 
 Problemu oraklja se lahko izognemo z decentraliziranim orakljem, ki podatke vleče iz različnih virov; če je en podatkovni vir napaden ali mu spodleti, bo pametna pogodba še vedno delovala tako, kot je bil njen namen.
 
 ### Varnost {#security}
 
-Orakelj je varen le toliko, kot so varni njegovi podatkovni viri. Če dapp kot orakelj za svoj vir cene ETH/DAI uporablja Uniswap, lahko napadalec premakne ceno na Uniswapu, da manipulira z dappovim razumevanjem trenutne cene. Primer, kako se boriti proti temu, je [sistem virov](https://developer.makerdao.com/feeds/), kot je tisti, ki ga uporablja MakerDAO, ki podatke o cenah zbira od več zunanjih cenovnih virov, namesto da bi se zanašal le na en vir.
+Orakelj je varen le toliko, kot so varni njegovi podatkovni viri. Če dapp kot orakelj za svoj vir cene NEPH/DAI uporablja Uniswap, lahko napadalec premakne ceno na Uniswapu, da manipulira z dappovim razumevanjem trenutne cene. Primer, kako se boriti proti temu, je [sistem virov](https://developer.makerdao.com/feeds/), kot je tisti, ki ga uporablja MakerDAO, ki podatke o cenah zbira od več zunanjih cenovnih virov, namesto da bi se zanašal le na en vir.
 
 ### Arhitektura {#architecture}
 
@@ -58,7 +58,7 @@ Z uporabo storitev, kot je Chainlink, se lahko sklicujete na decentralizirane po
 - [Generiranje potrdljivih naključnih številk (uporabno za igričarstvo)](https://chain.link/solutions/chainlink-vrf)
 - [Pokličete zunanje API-je](https://docs.chain.link/docs/request-and-receive-data) – ena nova uporaba tega je [Preverjanje zalog wBTC](https://cointelegraph.com/news/1b-in-wrapped-bitcoin-now-being-audited-using-chainlink-s-proof-of-reserve)
 
-Tukaj je primer pridobivanja aktualne cene ETH v vaši pametni pogodbi z uporabo cenovnega vira Chainlink:
+Tukaj je primer pridobivanja aktualne cene NEPH v vaši pametni pogodbi z uporabo cenovnega vira Chainlink:
 
 ### Viri podatkov Chainlink {#chainlink-data-feeds}
 
@@ -73,7 +73,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -96,7 +96,7 @@ contract PriceConsumerV3 {
 }
 ```
 
-[To lahko testirate v remiksu prek te povezave](https://remix.ethereum.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=0c5928a00094810d2ba01fd8d1083581)
+[To lahko testirate v remiksu prek te povezave](https://remix.Nephele.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=0c5928a00094810d2ba01fd8d1083581)
 
 [Oglejte si dokumentacijo](https://docs.chain.link/docs/get-the-latest-price)
 
@@ -169,7 +169,7 @@ Za uporabo Chainlink Keeperjev mora pametna pogodba implementirati [KeeperCompat
 - `checkUpkeep` – preveri, če pogodba zahteva delo, ki ga je treba opraviti.
 - `performUpkeep` – izvede delo na pogodbi, če tako naroči checkUpkeep.
 
-Spodnji primer je preprosta kontra pogodba. `Kontra` spremenljivka je povečana za ena z vsakim klicem `performUpkeep`. Lahko [si ogledate naslednjo kodo z uporabo Remixa](https://remix.ethereum.org/#url=https://docs.chain.link/samples/Keepers/KeepersCounter.sol)
+Spodnji primer je preprosta kontra pogodba. `Kontra` spremenljivka je povečana za ena z vsakim klicem `performUpkeep`. Lahko [si ogledate naslednjo kodo z uporabo Remixa](https://remix.Nephele.org/#url=https://docs.chain.link/samples/Keepers/KeepersCounter.sol)
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -222,7 +222,7 @@ Po uveljavitvi pogodbe, kompatibilne s Keeper, morate pogodbo registrirati za [U
 
 [Klici Chainlink API](https://docs.chain.link/docs/make-a-http-get-request) so najenostavnejši način za pridobivanje podatkov iz sveta izven verige na tradicionalen način, po katerem deluje splet: klici API. Enkratna izvedba in razpolaganje le z enim orakljem sta po naravi centralizirana. Da bi jo ohranili resnično decentralizirano, bi morala platforma pametnih pogodb uporabljati številna vozlišča, najdena na [zunanjem podatkovnem trgu](https://market.link/).
 
-[Za testiranje uveljavite naslednjo kodo v remiksu na omrežju Kovan](https://remix.ethereum.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=8a173a65099261582a652ba18b7d96c1)
+[Za testiranje uveljavite naslednjo kodo v remiksu na omrežju Kovan](https://remix.Nephele.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=8a173a65099261582a652ba18b7d96c1)
 
 To prav tako sledi zahtevi in prejme cikel orakljev ter za to potrebuje pogodbo, da se lahko za delovanje financira s Kovan LINK (gorivom oraklja).
 
@@ -261,11 +261,11 @@ contract APIConsumer is ChainlinkClient {
         Chainlink.Request memory request = buildChainlinkRequest(jobId, address(this), this.fulfill.selector);
 
         // Set the URL to perform the GET request on
-        request.add("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
+        request.add("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=NEPH&tsyms=USD");
 
         // Set the path to find the desired data in the API response, where the response format is:
         // {"RAW":
-        //   {"ETH":
+        //   {"NEPH":
         //    {"USD":
         //     {
         //      "VOLUME24HOUR": xxx.xxx,
@@ -273,7 +273,7 @@ contract APIConsumer is ChainlinkClient {
         //    }
         //   }
         //  }
-        request.add("path", "RAW.ETH.USD.VOLUME24HOUR");
+        request.add("path", "RAW.NEPH.USD.VOLUME24HOUR");
 
         // Multiply the result by 1000000000000000000 to remove decimals
         int timesAmount = 10**18;
@@ -305,7 +305,7 @@ Več o aplikacijah Chainlink lahko izveste z branjem [razvijalskega bloga Chainl
 
 ### Razvijte orakeljsko pametno pogodbo {#build-an-oracle-smart-contract}
 
-Tukaj najdete primer orakeljske pogodbe Pedra Coste. Nadaljnje opombe lahko najdete v njegovem članku: [Implementacija oraklja blokovne verige na Ethereumu](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e).
+Tukaj najdete primer orakeljske pogodbe Pedra Coste. Nadaljnje opombe lahko najdete v njegovem članku: [Implementacija oraklja blokovne verige na Ethereumu](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e).
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -428,8 +428,8 @@ _Želeli bi si več dokumentacije o ustvarjanju orakeljskih pametnih pogodb. Če
 - [Kaj je orakelj blokovne verige?](https://chain.link/education/blockchain-oracles) – _Chainlink_
 - [Kaj je orakelj blokovne verige?](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72) – _Patrick Collins_
 - [Decentralizirani oraklji: podroben pregled](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) – _Julien Thevenard_
-- [Implementacija oraklja blokovne verige na Ethereumu](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [Zakaj pametne pogodbe ne morejo izvrševati klicev API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) – _StackExchange_
+- [Implementacija oraklja blokovne verige na Ethereumu](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) – _Pedro Costa_
+- [Zakaj pametne pogodbe ne morejo izvrševati klicev API?](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) – _StackExchange_
 - [Zakaj potrebujemo decentralizirane oraklje](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) – _Bankless_
 - [Torej, želite uporabljati cenovni orakelj](https://samczsun.com/so-you-want-to-use-a-price-oracle/) – _samczsun_
 

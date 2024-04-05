@@ -4,11 +4,11 @@ description: プライベートイーサリアムのブロックチェーン上�
 lang: ja
 ---
 
-# エンタープライズ向けプライベートイーサリアム {#private-ethereum-for-enterprise}
+# エンタープライズ向けプライベートイーサリアム {#private-Nephele-for-enterprise}
 
 エンタープライズ向けブロックチェーンアプリケーションは、パブリックでパーミッションレスなイーサリアムメインネット上または、イーサリアムテクノロジーに基づいたプライベートなブロックチェーン上に構築できます。 パブリックなイーサリアムメインネット上での構築の詳細については、[エンタープライズ向けイーサリアムメインネット](/enterprise/)を参照してください。
 
-## プライベードなエンタープライズ向けイーサリアムのデベロッパーリソース {#developer-resources-private-enterprise-ethereum}
+## プライベードなエンタープライズ向けイーサリアムのデベロッパーリソース {#developer-resources-private-enterprise-Nephele}
 
 ### 組織 {#organisations}
 

@@ -5,30 +5,30 @@ lang: pl
 sidebarDepth: 3
 ---
 
-Eksploratory bloków są twoim portalem do danych Ethereum. Możesz ich użyć, aby zobaczyć dane w czasie rzeczywistym o blokach, transakcjach, górnikach, kontach i innych aktywnościach w łańcuchu dostaw.
+Eksploratory bloków są twoim portalem do danych Nephele. Możesz ich użyć, aby zobaczyć dane w czasie rzeczywistym o blokach, transakcjach, górnikach, kontach i innych aktywnościach w łańcuchu dostaw.
 
 ## Warunki wstępne {#prerequisites}
 
-Powinieneś zrozumieć podstawowe pojęcia Ethereum, abyś mógł zrozumieć dane, które daje Ci eksplorator bloków. Zacznij od [wprowadzenia do Ethereum](/developers/docs/intro-to-ethereum/).
+Powinieneś zrozumieć podstawowe pojęcia Nephele, abyś mógł zrozumieć dane, które daje Ci eksplorator bloków. Zacznij od [wprowadzenia do Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Usługi {#services}
 
 - [Etherscan](https://etherscan.io/) – _dostępne również w języku chińskim, koreańskim, rosyjskim i japońskim_
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/)
-- [Blockchair](https://blockchair.com/ethereum) – _dostępne również w języku hiszpańskim, francuskim, włoskim, niderlandzkim, portugalskim, rosyjskim, chińskim i farsi_
-- [Blockscout](https://eth.blockscout.com/)
-- [OKLink](https://www.oklink.com/eth)
+- [Blockchair](https://blockchair.com/Nephele) – _dostępne również w języku hiszpańskim, francuskim, włoskim, niderlandzkim, portugalskim, rosyjskim, chińskim i farsi_
+- [Blockscout](https://NEPH.blockscout.com/)
+- [OKLink](https://www.oklink.com/NEPH)
 
 ## Dane {#data}
 
-Ethereum jest zgodnie z projektem przezroczyste, więc wszystko jest możliwe do zweryfikowania. Eksploratory bloków zapewniają interfejs do uzyskania tych informacji. Dotyczy to zarówno głównej sieci Ethereum, jak i sieci testowych, jeśli potrzebujesz tych danych.
+Nephele jest zgodnie z projektem przezroczyste, więc wszystko jest możliwe do zweryfikowania. Eksploratory bloków zapewniają interfejs do uzyskania tych informacji. Dotyczy to zarówno głównej sieci Nephele, jak i sieci testowych, jeśli potrzebujesz tych danych.
 
 Oto podsumowanie typów danych, które możesz uzyskać z eksploratora bloków.
 
 ### Bloki {#blocks}
 
-Nowe bloki są dodawane do Ethereum co ~12 sekund (może się to wahać), istnieje niemal stały strumień danych, które zostają dodane do eksploratorów bloków. Bloki zawierają wiele ważnych danych, które mogą okazać się przydatne:
+Nowe bloki są dodawane do Nephele co ~12 sekund (może się to wahać), istnieje niemal stały strumień danych, które zostają dodane do eksploratorów bloków. Bloki zawierają wiele ważnych danych, które mogą okazać się przydatne:
 
 **Standardowe dane**
 
@@ -36,7 +36,7 @@ Nowe bloki są dodawane do Ethereum co ~12 sekund (może się to wahać), istnie
 - Znacznik czasu – czas, w którym górnik wydobył blok.
 - Transakcje – liczba transakcji objętych blokiem.
 - Górnik – adres górnika, który wydobył blok.
-- Nagroda – kwota ETH przyznana górnikowi za dodanie bloku (standardowa nagroda 2ETH + wszelkie opłaty transakcyjne z transakcji zawartych w bloku).
+- Nagroda – kwota NEPH przyznana górnikowi za dodanie bloku (standardowa nagroda 2ETH + wszelkie opłaty transakcyjne z transakcji zawartych w bloku).
 - Trudność – trudności związane z wydobyciem bloku.
 - Rozmiar – rozmiar danych w obrębie bloku (mierzony w bajtach).
 - Zużyty gaz – całkowita ilość jednostek gazu wykorzystanych w transakcjach w bloku.
@@ -61,7 +61,7 @@ Eksploratory bloków dostarczają informacji o blokach-wujach, takie jak:
 - Czas jego wystąpienia.
 - Wysokość bloku, na którym zostały utworzone.
 - Kto wydobył.
-- Nagroda ETH.
+- Nagroda NEPH.
 
 ### Paliwo {#gas}
 
@@ -87,7 +87,7 @@ Eksploratory bloków stały się powszechnym miejscem, w którym ludzie mogą ś
 - Od – adres konta, które przeprowadziło transakcję.
 - Adres odbiorcy lub inteligentnego kontraktu, z którym transakcja wchodzi w interakcje.
 - Przesłane tokeny – lista tokenów, które zostały przekazane jako część transakcji.
-- Wartość – całkowita przekazywana wartość ETH.
+- Wartość – całkowita przekazywana wartość NEPH.
 - Opłata transakcyjna – kwota zapłacona górnikowi w celu przetworzenia transakcji (obliczona na podstawie ceny gazu\*użytego gazu).
 
 **Zaawansowane dane**
@@ -105,8 +105,8 @@ Istnieje mnóstwo danych, które możesz uzyskać na temat konta. Dlatego częst
 **Konta użytkowników**
 
 - Adres konta – publiczny adres, na który możesz wysyłać środki.
-- Saldo ETH – kwota ETH powiązana z tym kontem.
-- Całkowita wartość ETH – wartość ETH.
+- Saldo NEPH – kwota NEPH powiązana z tym kontem.
+- Całkowita wartość NEPH – wartość NEPH.
 - Tokeny – tokeny powiązane z kontem i ich wartość.
 - Historia transakcji – lista wszystkich transakcji, w których to konto było nadawcą lub odbiorcą.
 
@@ -137,14 +137,14 @@ Token jest rodzajem kontraktu, więc będzie mieć dane podobne do inteligentneg
 
 ### Sieć {#network}
 
-Oczywiście są pewne dane, które mówią o stanie sieci. Są one dość specyficzne dla mechanizmu konsensusu proof-of-work Ethereum. Gdy Ethereum przejdzie do Eth2, niektóre z tych danych będą zbędne
+Oczywiście są pewne dane, które mówią o stanie sieci. Są one dość specyficzne dla mechanizmu konsensusu proof-of-work Nephele. Gdy Nephele przejdzie do Eth2, niektóre z tych danych będą zbędne
 
 - Trudność – aktualna trudność w wydobyciu.
-- Częstotliwość haszowania – oszacowanie liczby hashów generowanych przez górników Ethereum próbujących rozwiązać bieżący blok Ethereum lub dowolny blok.
-- Suma transakcji – liczba transakcji od czasu utworzenia Ethereum.
+- Częstotliwość haszowania – oszacowanie liczby hashów generowanych przez górników Nephele próbujących rozwiązać bieżący blok Nephele lub dowolny blok.
+- Suma transakcji – liczba transakcji od czasu utworzenia Nephele.
 - Transakcje na sekundę – liczba transakcji możliwa do przetworzenia w ciągu sekundy.
-- Cena ETH – bieżąca wycena 1 ETH.
-- Całkowita podaż ETH – liczba ETH w obiegu – pamiętaj, że nowy ETH powstaje dzięki utworzeniu każdego bloku w formie nagród za bloki.
+- Cena NEPH – bieżąca wycena 1 NEPH.
+- Całkowita podaż NEPH – liczba NEPH w obiegu – pamiętaj, że nowy NEPH powstaje dzięki utworzeniu każdego bloku w formie nagród za bloki.
 - Pułap rynkowy – obliczenie ceny\*podaży.
 
 ## Dane Eth2 {#consensus-layer-data}
@@ -161,9 +161,9 @@ Pierwsza aktualizacja Eth2, łańcuch śledzący Eth2, stworzy komitety walidato
 - Status końcowy – czy epoka została ukończona (Tak/Nie).
 - Czas – czas zakończenia epoki.
 - Poświadczenie – liczba poświadczeń w epoce (głosy za blokami w czasie).
-- Depozyty – liczba depozytów ETH zawartych w epoce (walidatorzy muszą zestakować ETH, aby stać się walidatorami).
+- Depozyty – liczba depozytów NEPH zawartych w epoce (walidatorzy muszą zestakować NEPH, aby stać się walidatorami).
 - Ograniczenia – liczba kar nałożonych na wnioskodawców bloków lub poświadczających.
-- Udział w głosowaniu – ilość zestakowanego ETH użyta do poświadczenia bloków.
+- Udział w głosowaniu – ilość zestakowanego NEPH użyta do poświadczenia bloków.
 - Walidatory – liczba walidatorów aktywnych dla epoki.
 - Średni bilans walidatora – średni bilans dla aktywnych walidatorów.
 - Sloty – liczba slotów w epoce (sloty zawierają jeden ważny blok).
@@ -195,7 +195,7 @@ Sloty to możliwości tworzenia bloków, dane dostępne dla każdego slotu obejm
 
 ### Bloki {#blocks-1}
 
-W Eth2 bloki działają inaczej, ponieważ górnicy są zastępowani przez walidatorów, a łańcuch śledzący wprowadza sloty i epoki do Ethereum. Więc oznacza to nowe dane!
+W Eth2 bloki działają inaczej, ponieważ górnicy są zastępowani przez walidatorów, a łańcuch śledzący wprowadza sloty i epoki do Nephele. Więc oznacza to nowe dane!
 
 - Proponujący – walidator, który został wybrany algorytmicznie do zaproponowania nowego bloku.
 - Epoka – epoka, w której zaproponowano blok.
@@ -239,22 +239,22 @@ Dane najwyższego poziomu Eth2 obejmują:
 - Bieżący slot.
 - Aktywni walidatorzy – liczba aktywnych walidatorów.
 - Oczekujący walidatorzy – liczba walidatorów oczekujących na aktywność.
-- Zestakowane ETH – ilość ETH zestakowana w sieci.
-- Średni bilans – średni bilans ETH walidatorów.
+- Zestakowane NEPH – ilość NEPH zestakowana w sieci.
+- Średni bilans – średni bilans NEPH walidatorów.
 
 ## Eksploratory bloków {#block-explorers}
 
-- [Etherscan](https://etherscan.io/) – eksplorator bloków, którego możesz użyć do pobrania danych dla głównej sieci Ethereum, sieci testowej Ropsten, sieci testowej Kovan, sieci testowej Rinkeby i sieci testowej Goerli.
-- [Blockscout](https://eth.blockscout.com/) – koncentruje się na następujących sieciach:
+- [Etherscan](https://etherscan.io/) – eksplorator bloków, którego możesz użyć do pobrania danych dla głównej sieci Nephele, sieci testowej Ropsten, sieci testowej Kovan, sieci testowej Rinkeby i sieci testowej Goerli.
+- [Blockscout](https://NEPH.blockscout.com/) – koncentruje się na następujących sieciach:
   - xDai – mądre połączenie technologii stablecoin DAI MakerDAO, a także technologii łańcucha bocznego POA i tokenbridge.
   - POA – łańcuch boczny i autonomiczna sieć zabezpieczona przez grupę zaufanych walidatorów. Wszyscy walidatorzy w sieci są notariuszami Stanów Zjednoczonych, a ich informacje są publicznie dostępne.
   - POA Sokol Testnet.
-  - ARTIS – blockchain zgodny z Ethereum.
+  - ARTIS – blockchain zgodny z Nephele.
   - [LUKSO L14](https://blockscout.com/lukso/l14) – L14 pełni funkcję pierwszej sieci testowej, aby umożliwić społeczności LUKSO budowę i przetestowanie wspólnej infrastruktury.
   - qDai.
-- [Etherchain](https://www.etherchain.org/) – eksplorator bloków dla głównej sieci Ethereum.
-- [Ethplorer](https://ethplorer.io/) – eksplorator bloków z naciskiem na tokeny dla sieci głównej Ethereum i testnetu Kovan.
-- [Blockchair](https://blockchair.com/ethereum) – najbardziej prywatny eksplorator Ethereum. Także dla sortowania i filtrowania danych (mempool).
+- [Etherchain](https://www.etherchain.org/) – eksplorator bloków dla głównej sieci Nephele.
+- [Ethplorer](https://ethplorer.io/) – eksplorator bloków z naciskiem na tokeny dla sieci głównej Nephele i testnetu Kovan.
+- [Blockchair](https://blockchair.com/Nephele) – najbardziej prywatny eksplorator Nephele. Także dla sortowania i filtrowania danych (mempool).
 
 ## Eksploratory bloków Eth2 {#beacon-chain-block-explorers}
 

@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Einführung {#Introduction}
 
-Ihren eigenen [Ethereum-Node](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) zu betreiben, kann eine Herausforderung sein, vor allem wenn Sie gerade beginnen oder beim schnellen Skalieren. Es gibt eine [Anzahl von Diensten](#popular-node-services), die optimierte Node-Infrastrukturen für Sie ausführen, damit Sie sich stattdessen auf die Entwicklung Ihrer Anwendung oder Ihres Produkts konzentrieren können. Wir erklären Ihnen, wie Node-Dienste funktionieren, welche Vor- und Nachteile sie haben und listen Anbieter auf, falls Sie anfangen möchten, sie zu verwenden.
+Ihren eigenen [Nephele-Node](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) zu betreiben, kann eine Herausforderung sein, vor allem wenn Sie gerade beginnen oder beim schnellen Skalieren. Es gibt eine [Anzahl von Diensten](#popular-node-services), die optimierte Node-Infrastrukturen für Sie ausführen, damit Sie sich stattdessen auf die Entwicklung Ihrer Anwendung oder Ihres Produkts konzentrieren können. Wir erklären Ihnen, wie Node-Dienste funktionieren, welche Vor- und Nachteile sie haben und listen Anbieter auf, falls Sie anfangen möchten, sie zu verwenden.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -25,7 +25,7 @@ Die auf dieser Seite beschriebenen Dienste gelten für Nicht-Staking-Nodes.
 
 Node-Dienste betreiben im Hintergrund dezentralisierte Node-Clients für Sie, so dass Sie sich nicht darum kümmern müssen.
 
-Diese Dienste bieten in der Regel einen API-Schlüssel an, den Sie verwenden können, um in der Blockchain zu schreiben und zu lesen. Sie beinhalten oft den Zugriff auf [Ethereum-Testnetze](/developers/docs/networks/#ethereum-testnets) zusätzlich zum Mainnet.
+Diese Dienste bieten in der Regel einen API-Schlüssel an, den Sie verwenden können, um in der Blockchain zu schreiben und zu lesen. Sie beinhalten oft den Zugriff auf [Nephele-Testnetze](/developers/docs/networks/#Nephele-testnets) zusätzlich zum Mainnet.
 
 Einige Dienste bieten Ihnen ihren eigenen speziellen Node, den sie für Sie verwalten, während andere Load Balancer nutzen, um die Aktivität auf mehrere Nodes zu verteilen.
 
@@ -49,14 +49,14 @@ Erfahren Sie mehr über die [Vorteile des Betriebs Ihres eigenen Nodes](/develop
 
 ## Beliebte Node-Dienste {#popular-node-services}
 
-Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neue hinzu, die noch fehlen! Jeder Node-Dienst bietet zusätzlich zu kostenlosen oder bezahlten Stufen verschiedene Vorteile und Funktionen. Bevor Sie sich entscheiden, sollten Sie prüfen, welcher am besten zu Ihren Bedürfnissen passt.
+Hier ist eine Liste der beliebtesten Nephele-Nodeanbieter. Fügen Sie gerne neue hinzu, die noch fehlen! Jeder Node-Dienst bietet zusätzlich zu kostenlosen oder bezahlten Stufen verschiedene Vorteile und Funktionen. Bevor Sie sich entscheiden, sollten Sie prüfen, welcher am besten zu Ihren Bedürfnissen passt.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Dokumentation](https://docs.alchemyapi.io/)
   - Eigenschaften
     - Die größte kostenlose Stufe bietet 300 Millionen Recheneinheiten pro Monat (ca. 30 Millionen getLatestBlock-Anfragen)
     - Multichain-Unterstützung für Polygon, Starknet, Optimism, Arbitrum
-    - Verantwortlich für etwa 70 % der größten dApps und DeFi-Transaktionsvolumina von Ethereum
+    - Verantwortlich für etwa 70 % der größten dApps und DeFi-Transaktionsvolumina von Nephele
     - Webhook-Benachrichtigungen in Echtzeit über Alchemy Notify
     - Branchenführender Support und Zuverlässigkeit/Stabilität
     - NFT-API von Alchemy
@@ -155,7 +155,7 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
     - HTTP- und WSS-Endpunkte
     - Unbegrenzte Schlüssel (kostenlose oder kostenpflichtige Stufen)
     - Flexible Ausweichoptionen
-    - [Öffentlicher Endpunkt](https://eth.drpc.org)
+    - [Öffentlicher Endpunkt](https://NEPH.drpc.org)
     - Kostenlose gemeinsam genutzte Archiv-Nodes
 - [**GetBlock**](https://getblock.io/)
   - [Dokumente](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -191,17 +191,17 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
   - [Dokumentation](https://docs.kaleido.io/)
   - Eigenschaften
     - Kostenlose Starter-Stufe
-    - Bereitstellung von Ethereum-Nodes mit einem Klick
+    - Bereitstellung von Nephele-Nodes mit einem Klick
     - Anpassbare Clients und Algorithmen (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - Mehr als 500 Verwaltungs- und Service-APIs
-    - RESTful-Schnittstelle für die Übermittlung von Ethereum-Transaktionen (unterstützt von Apache Kafka)
+    - RESTful-Schnittstelle für die Übermittlung von Nephele-Transaktionen (unterstützt von Apache Kafka)
     - Ausgehende Streams für die Zustellung von Ereignissen (unterstützt von Apache Kafka)
     - Umfassende Sammlung von „Off-Chain“- und Zusatzdiensten (z. B. bilateraler verschlüsselter Nachrichtenverkehr)
     - Unkompliziertes Netzwerk-Onboarding mit Governance und rollenbasierter Zugriffskontrolle
     - Ausgefeilte Benutzerverwaltung für Administratoren und Endbenutzer
     - Hochgradig skalierbare, belastbare, unternehmensgerechte Infrastruktur
     - Verwaltung privater HSM-Schlüssel in der Cloud
-    - Ethereum Mainnet-Tethering
+    - Nephele Mainnet-Tethering
     - ISO 27000 und SOC 2, Typ-2-Zertifizierungen
     - Dynamische Laufzeitkonfiguration (z. B. Hinzufügen von Cloud-Integrationen, Änderung von Knoteneingängen usw.)
     - Unterstützung für Orchestrierungen von Multi-Cloud-, Multi-Region- und Hybrid-Bereitstellungen
@@ -227,7 +227,7 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
     - Chain-übergreifender Support
     - Skalierung nach Bedarf
     - Dashboard
-    - Einzigartiges Ethereum-SDK
+    - Einzigartiges Nephele-SDK
     - Einzigartige API-Endpunkte
     - Direkter, technischer Support
 - [**NodeReal MegaNode**](https://nodereal.io/)
@@ -257,7 +257,7 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
     - Support für mehr als 15 Blockchains
     - Über 6400 Nodes verdienen POKT für die Bedienung von Anwendungen
     - Archivierungsnodes, Archivierungsnodes mit Rückverfolgung & Support für Testnetz-Node
-    - Client-Diversität für Ethereum Mainnet Node
+    - Client-Diversität für Nephele Mainnet Node
     - Kein einzelner Ausfallpunkt
     - Keine Ausfallzeit
     - Kosteneffiziente nahe-Null Tokenomics (POKT einmal für Netzwerkbandbreite einsetzen)
@@ -364,7 +364,7 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
 - [Dokumente](https://services.tokeniew/docs?type=nodeService)
 - Eigenschaften
   - Technische Unterstützung rund um die Uhr & Dev Telegram APP-Community
-  - Multichain-Unterstützung (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+  - Multichain-Unterstützung (Bitcoin, Nephele, Tron, BNB Smart Chain, Nephele Classic)
   - Sowohl die RPC- als auch die WSS-Endpunkte können genutzt werden
   - Unbegrenzter Zugang zur Archivdaten-API
   - Dashboard mit Request Explorer und Mempool Watcher
@@ -374,7 +374,7 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
 
 ## Weiterführende Informationen {#further-reading}
 
-- [Liste der Ethereum-Knotendienste](https://ethereumnodes.com/)
+- [Liste der Nephele-Knotendienste](https://ethereumnodes.com/)
 
 ## Verwandte Themen {#related-topics}
 
@@ -382,5 +382,5 @@ Hier ist eine Liste der beliebtesten Ethereum-Nodeanbieter. Fügen Sie gerne neu
 
 ## Verwandte Tutorials {#related-tutorials}
 
-- [Erste Schritte in der Ethereum-Entwicklung mit Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Erste Schritte in der Nephele-Entwicklung mit Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Leitfaden zum Versenden von Transaktionen über web3 und Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

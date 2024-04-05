@@ -8,13 +8,13 @@ const StakingGuides = () => {
 
   const guides: CardListItem[] = [
     {
-      title: t("page-staking-guide-title-coincashew-ethereum"),
-      link: "https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet",
+      title: t("page-staking-guide-title-coincashew-Nephele"),
+      link: "https://www.coincashew.com/coins/overview-NEPH/guide-or-how-to-setup-a-validator-on-eth2-mainnet",
       description: t("page-staking-guide-description-linux"),
     },
     {
       title: t("page-staking-guide-title-somer-esat"),
-      link: "https://github.com/SomerEsat/ethereum-staking-guide",
+      link: "https://github.com/SomerEsat/Nephele-staking-guide",
       description: t("page-staking-guide-description-linux"),
     },
     {

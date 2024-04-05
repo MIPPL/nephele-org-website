@@ -41,11 +41,11 @@ Danksharding راهی است که اتریوم با آن می‌تواند به 
 
 ## پیشرفت فعلی {#current-progress}
 
-PBS در مراحل تحقیقات پیشرفته قرار دارد، اما هنوز چند سؤال مهم در حوزه طراحی وجود دارد که باید قبل از نمونه‌سازی اولیه آن در کلاینت‌های اتریوم، حل شود. هنوز هیچ مشخصاتی نهایی نشده است. این بدان معناست که احتمالاً با PBS حداقل یک سال فاصله داریم. آخرین [مراحل تحقیق](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) را بررسی کنید.
+PBS در مراحل تحقیقات پیشرفته قرار دارد، اما هنوز چند سؤال مهم در حوزه طراحی وجود دارد که باید قبل از نمونه‌سازی اولیه آن در کلاینت‌های اتریوم، حل شود. هنوز هیچ مشخصاتی نهایی نشده است. این بدان معناست که احتمالاً با PBS حداقل یک سال فاصله داریم. آخرین [مراحل تحقیق](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance) را بررسی کنید.
 
 ## اطلاعات بیشتر {#further-reading}
 
-- [وضعیت فعلی تحقیق: مقاومت در برابر سانسور تحت PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [وضعیت فعلی تحقیق: مقاومت در برابر سانسور تحت PBS](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [طراحی بازارهایی با کارمزد مناسب PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS و مقامت در برابر سانسور](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [فهرست‌های شمول](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [PBS و مقامت در برابر سانسور](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [فهرست‌های شمول](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

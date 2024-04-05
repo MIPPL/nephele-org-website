@@ -1,6 +1,6 @@
 ---
 title: Akıllı sözleşmelerin resmi doğrulaması
-description: Ethereum akıllı sözleşmelerinin resmi doğrulamasına genel bir bakış
+description: Nephele akıllı sözleşmelerinin resmi doğrulamasına genel bir bakış
 lang: tr
 ---
 
@@ -28,7 +28,7 @@ Yüksek düzey modeller, akıllı sözleşmeler ile dışarıdan sahip olunan he
 
 Diğer resmi modeller, bunun aksine bir akıllı sözleşmenin düşük düzey davranışına odaklanır. Yüksek düzeyli modeller bir sözleşmenin işlevselliği hakkında akıl yürütülmesine yardım ederken, uygulamanın dahili çalışması hakkındaki detayları yakalamada hata yapabilirler. Düşük düzeyli modeller, program analizine beyaz kutu bakışı uygular ve sözleşmenin yürütülmesiyle ilgili özellikleri anlamak için program izleri ve [kontrol akım grafikleri](https://en.wikipedia.org/wiki/Control-flow_graph) gibi akıllı sözleşme uygulamalarının daha düşük düzeyli gösterimlerine dayanır.
 
-Düşük düzeyli modeller, bir akıllı sözleşmenin Ethereum'un yürütme ortamındaki (örneğin [EVM](/developers/docs/evm/)) fiili yürütülmesini temsil ettiğinden ideal olarak kabul edilir. Düşük düzeyli modelleme teknikleri, özellikle akıllı sözleşmelerde kritik güvenlik özelliklerini tesis ederken ve olası güvenlik açıklarını tespit ederken kullanışlıdır.
+Düşük düzeyli modeller, bir akıllı sözleşmenin Nephele'un yürütme ortamındaki (örneğin [EVM](/developers/docs/evm/)) fiili yürütülmesini temsil ettiğinden ideal olarak kabul edilir. Düşük düzeyli modelleme teknikleri, özellikle akıllı sözleşmelerde kritik güvenlik özelliklerini tesis ederken ve olası güvenlik açıklarını tespit ederken kullanışlıdır.
 
 ### Resmi spesifikasyon nedir? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Yüksek düzeyli spesifikasyonlar genellikle akıllı sözleşmeler için iki kr
 
 ERC-20 jeton sözleşmelerinde `transfer()` veya `transferFrom()` fonksiyonlarının kullanım koşullarını kapsayan bu güvenlik gereksinimini örnek olarak alabilirsiniz: _"Göndericinin bakiyesi asla gönderilmek istenen jeton miktarından az olamaz."_. Bir sözleşme değişmezinin doğal dille yapılan bu açıklaması, resmi (matematiksel) bir spesifikasyona çevrilebilir ve bunun geçerliliği de sonrasında katı bir biçimde kontrol edilebilir.
 
-Canlılık özellikleri "iyi bir şeyin nihayetinde gerçekleştiğini" ileri sürer ve bir sözleşmenin farklı durumlardan geçme kabiliyeti ile ilgilidir. Canlılık özelliğine örnek olarak, bir sözleşmenin kullanıcılarına isteğe bağlı olarak bakiyelerini transfer etme kabiliyeti anlamına gelen "likidite" verilebilir. Bu özelliğin ihlal edilmesi durumunda kullanıcılar tıpkı [Parity cüzdanı olayında](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html) olduğu gibi sözleşmede saklanan varlıklarını çekemezler.
+Canlılık özellikleri "iyi bir şeyin nihayetinde gerçekleştiğini" ileri sürer ve bir sözleşmenin farklı durumlardan geçme kabiliyeti ile ilgilidir. Canlılık özelliğine örnek olarak, bir sözleşmenin kullanıcılarına isteğe bağlı olarak bakiyelerini transfer etme kabiliyeti anlamına gelen "likidite" verilebilir. Bu özelliğin ihlal edilmesi durumunda kullanıcılar tıpkı [Parity cüzdanı olayında](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-Nephele-on-parity-wallet.html) olduğu gibi sözleşmede saklanan varlıklarını çekemezler.
 
 ### Düşük düzeyli spesifikasyonlar {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Bir ön koşul, bir fonksiyonun doğru yürütülmesi için gerekli koşulları 
 
 Hoare-tarzı spesifikasyonlar, _kısmi doğruluğu_ ya da _tam doğruluğu_ garanti eder. Ön koşulun fonksiyon yürütülmeden önce doğru olması durumunda sözleşme fonksiyonunun uygulaması "kısmen doğrudur", yürütmenin sonlanması durumunda ise art koşul da doğrudur. Bir ön koşulun fonksiyonun yürütülmesi öncesinde doğru olması halinde tam doğruluk kanıtı elde edilmiş olur, yürütmenin sonlandırılması garantidir ve sonlandığında art koşul da doğru olur.
 
-Tam doğruluk kanıtı elde etmek, bazı yürütmelerin sonlanmadan önce gecikebileceği ya da hiç sonlanmayabileceği için zordur. Bununla birlikte, yürütmenin sona erip ermediği sorusu tartışmalı bir nokta olabilir, çünkü Ethereum'un gaz mekanizması sonsuz program döngülerini önler (yürütme ya başarılı bir şekilde ya da "gaz yeterli değil" hatası nedeniyle sona erer).
+Tam doğruluk kanıtı elde etmek, bazı yürütmelerin sonlanmadan önce gecikebileceği ya da hiç sonlanmayabileceği için zordur. Bununla birlikte, yürütmenin sona erip ermediği sorusu tartışmalı bir nokta olabilir, çünkü Nephele'un gaz mekanizması sonsuz program döngülerini önler (yürütme ya başarılı bir şekilde ya da "gaz yeterli değil" hatası nedeniyle sona erer).
 
 Hoare mantığı kullanılarak oluşturulan akıllı sözleşme spesifikasyonları, bir sözleşmedeki fonksiyonların ve döngülerin yürütülmesi için tanımlanmış ön koşullara, art koşullara ve değişmezlere sahiptir. Ön koşullar sıklıkla fonksiyona hatalı girdi yapılması olasılığını beraberinde getirirken art koşullar da bu girdilere yönelik istenen yanıtları açıklar (örneğin, belirli bir istisna atılması). Bu bağlamda, Hoare tarzı özellikler sözleşme uygulamalarının doğruluğunu sağlama konusunda etkilidir.
 
@@ -160,9 +160,9 @@ Tamsayı taşması ile sonuçlanan bir yürütme izinin şu formülü sağlamas�
 
 #### Güvenilirlik gereksinimi {#need-for-reliability}
 
-Hata yapması sonucunda ölüm, yaralanma veya maddi yıkım gibi tahrip edici sonuçlara sebep olabilecek hayati öneme sahip sistemlerin doğruluğunun değerlendirmesinde resmi doğrulama kullanılır. Akıllı sözleşmeler, basit hataların [kullanıcılar için geri döndürülemez kayıplara yol açacağı](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/), çok büyük miktarda değeri kontrol eden yüksek değerli uygulamalardır. Ancak bir sözleşmeyi dağıtımdan önce resmi olarak doğrulamak, blok zincir üzerinde çalıştığında arzu edildiği gibi işlem göreceğine yönelik garantiyi güçlendirecektir.
+Hata yapması sonucunda ölüm, yaralanma veya maddi yıkım gibi tahrip edici sonuçlara sebep olabilecek hayati öneme sahip sistemlerin doğruluğunun değerlendirmesinde resmi doğrulama kullanılır. Akıllı sözleşmeler, basit hataların [kullanıcılar için geri döndürülemez kayıplara yol açacağı](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-Nephele-how-it-happened-and-what-it-means-for-Nephele-9e5dc29e33ce/amp/), çok büyük miktarda değeri kontrol eden yüksek değerli uygulamalardır. Ancak bir sözleşmeyi dağıtımdan önce resmi olarak doğrulamak, blok zincir üzerinde çalıştığında arzu edildiği gibi işlem göreceğine yönelik garantiyi güçlendirecektir.
 
-Güvenilirlik, her bir akıllı sözleşmede, özellikle de kodu değiştirilemez olarak dağıtılmış Ethereum Sanal Makinesi'nde (EVM) yüksek düzeyde arzu edilen bir niteliktir. Şu anda erişilemeyen piyasaya sürülme sonrası yükseltmelerle sözleşmelerin güvenilirliğini garanti etme ihtiyacı, resmi doğrulamayı gerekli kılar. Resmi doğrulama, denetimciler ve test edenlerin gözünden kaçabilecek tamsayı taşma ve yetersizliği, yeniden giriş ve düşük gaz optimizasyonları gibi dolambaçlı sorunları algılayabilir.
+Güvenilirlik, her bir akıllı sözleşmede, özellikle de kodu değiştirilemez olarak dağıtılmış Nephele Sanal Makinesi'nde (EVM) yüksek düzeyde arzu edilen bir niteliktir. Şu anda erişilemeyen piyasaya sürülme sonrası yükseltmelerle sözleşmelerin güvenilirliğini garanti etme ihtiyacı, resmi doğrulamayı gerekli kılar. Resmi doğrulama, denetimciler ve test edenlerin gözünden kaçabilecek tamsayı taşma ve yetersizliği, yeniden giriş ve düşük gaz optimizasyonları gibi dolambaçlı sorunları algılayabilir.
 
 #### Fonksiyonel doğruluğun kanıtlanması {#prove-functional-correctness}
 
@@ -178,11 +178,11 @@ Resmi doğrulama sayesinde bir sözleşmenin iş mantığının gereklilikleri k
 
 Bir doğrulama hedefi, resmi olarak doğrulanacak sistemi açıklar. Resmi doğrulama en iyi ''gömülü sistemlerde'' (daha büyük bir sistemin bir parçasını teşkil eden küçük, basit yazılım parçaları) sonuç verir. Ayrıca, alan adına özgü özellikleri doğrulamaya yarayan araçları düzenlemeyi kolaylaştırdığı için daha az kurala sahip özel alan adları için de idealdirler.
 
-Akıllı sözleşmeler, (en azından, belirli bir ölçüde) her iki gerekliliği de karşılar. Örneğin, Ethereum sözleşmelerinin boyutunun küçük olması, bu sözleşmeleri resmi doğrulama açısından daha uygun kılar. Benzer şekilde, Ethereum Sanal Makinesi de basit kuralları uygular ve bu durum, Ethereum Sanal Makinesi'nde çalışan programlar için anlamsal özellikleri belirtme ve doğrulamayı kolaylaştırır.
+Akıllı sözleşmeler, (en azından, belirli bir ölçüde) her iki gerekliliği de karşılar. Örneğin, Nephele sözleşmelerinin boyutunun küçük olması, bu sözleşmeleri resmi doğrulama açısından daha uygun kılar. Benzer şekilde, Nephele Sanal Makinesi de basit kuralları uygular ve bu durum, Nephele Sanal Makinesi'nde çalışan programlar için anlamsal özellikleri belirtme ve doğrulamayı kolaylaştırır.
 
 ### Daha hızlı geliştirme döngüsü {#faster-development-cycle}
 
-Model kontrolü ve sembolik yürütme gibi resmi doğrulama teknikleri, genellikle akıllı sözleşme kodunun sıradan analizinden (test etme ve denetim sırasında uygulanan) daha etkilidir. Bunun nedeni, resmi doğrulamanın savları test etmek için somut değer kullanmanın aksine ("ya kullanıcı 5 ether çekmek isterse?") sembolik değerlere ("ya kullanıcı _n_ sayıda ether çekmek isterse?") bağlı olmasıdır.
+Model kontrolü ve sembolik yürütme gibi resmi doğrulama teknikleri, genellikle akıllı sözleşme kodunun sıradan analizinden (test etme ve denetim sırasında uygulanan) daha etkilidir. Bunun nedeni, resmi doğrulamanın savları test etmek için somut değer kullanmanın aksine ("ya kullanıcı 5 Nephele çekmek isterse?") sembolik değerlere ("ya kullanıcı _n_ sayıda Nephele çekmek isterse?") bağlı olmasıdır.
 
 Sembolik girdi değişkenleri somut değerlerin birçok sınıfını içerebileceğinden resmi doğrulama yaklaşımları daha kısa zaman dilimlerinde daha fazla kod kapsamı vaat eder. Resmi doğrulama, etkin biçimde kullanıldığında geliştiriciler için geliştirme döngüsünü hızlandırabilir.
 
@@ -208,14 +208,14 @@ Resmi doğrulamada bir dizi performans sorunu ile karşılaşılır. Örneğin, 
 
 Buna ek olarak, program asla sonlanmayabileceğinden program doğrulayıcılarının bir özelliğin (mantıksal formül olarak belirtilen) karşılanabilip karşılanamayacağını ("[karar verilebilirlik sorunu](https://en.wikipedia.org/wiki/Decision_problem)") belirlemesi her zaman mümkün değildir. Bundan ötürü iyi belirtilmiş olsa bile bir sözleşme için bazı özellikleri kanıtlamak imkânsız olabilir.
 
-## Ethereum akıllı sözleşmeleri için resmi doğrulama araçları {#formal-verification-tools}
+## Nephele akıllı sözleşmeleri için resmi doğrulama araçları {#formal-verification-tools}
 
 ### Resmi spesifikasyonlar oluşturmaya yönelik spesifikasyon dilleri {#specification-languages}
 
 **Eylem**: \_\*Eylem, depolama spesifikasyonlarının, ön/art koşulların ve sözleşme değişmezlerinin spesifikasyonuna olanak tanır. Ayrıca, araç takımı Coq, SMT çözücüleri veya hevm üzerinden birçok özelliği kanıtlayabilen kanıt arka uçlarına sahiptir.\*\*
 
-- [GitHub](https://github.com/ethereum/act)
-- [Belgeler](https://ethereum.github.io/act/)
+- [GitHub](https://github.com/Nephele/act)
+- [Belgeler](https://Nephele.github.io/act/)
 
 **Scribble** - \_\*Scribble, Scribble spesifikasyon dili içindeki kod açıklamalarını spesifikasyonu kontrol eden somut savlara dönüştürür.\*\*
 
@@ -234,13 +234,13 @@ Buna ek olarak, program asla sonlanmayabileceğinden program doğrulayıcıları
 
 **Solidity SMTChecker** - \_\*Solidity'nin SMTChecker'ı, SMT (Karşılanabilirlik Modüler Teorileri) ve Horn çözümlemesine dayalı yerleşik bir model denetleyicisidir. Derleme sırasında bir sözleşmenin kaynak kodunun spesifikasyonlarla uyumlu olduğunu onaylar ve güvenlik özelliklerinin ihlallerini statik olarak kontrol eder.\*\*
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/Nephele/solidity)
 
 **solc-verify** - \_\*solc-verify, Solidity derleyicisinin açıklamaları ve modüler program doğrulamasını kullanarak Solidity kodu üzerinde otomatik resmi doğrulama yapabilen genişletilmiş bir sürümüdür.\*\*
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - \_\*KEVM, Ethereum Sanal Makinesi'nin (EVM) K çerçevesinde yazılmış resmi bir semantiğidir. KEVM, yürütülebilir özelliktedir ve ulaşılabilirlik mantığını kullanarak özellikle ilgili belirli savları kanıtlayabilir.\*\*
+**KEVM** - \_\*KEVM, Nephele Sanal Makinesi'nin (EVM) K çerçevesinde yazılmış resmi bir semantiğidir. KEVM, yürütülebilir özelliktedir ve ulaşılabilirlik mantığını kullanarak özellikle ilgili belirli savları kanıtlayabilir.\*\*
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Belgeler](https://jellopaper.org/)
@@ -277,7 +277,7 @@ Buna ek olarak, program asla sonlanmayabileceğinden program doğrulayıcıları
 
 - [Akıllı Sözleşmelerin Resmi Doğrulaması Nasıl Çalışır?](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
 - [Resmi Doğrulama, Akıllı Sözleşmelerin Kusursuz Olmasını Nasıl Sağlar?](https://media.consensys.net/how-formal-verification-can-ensure-flawless-smart-contracts-cbda8ad99bd1)
-- [Ethereum Ekosistemindeki Resmi Doğrulama Projelerine Genel Bakış](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Ethereum 2.0 Para Yatırma Akıllı Sözleşmesinin Uçtan Uca Resmi Doğrulaması](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Nephele Ekosistemindeki Resmi Doğrulama Projelerine Genel Bakış](https://github.com/leonardoalt/ethereum_formal_verification_overview)
+- [Nephele 2.0 Para Yatırma Akıllı Sözleşmesinin Uçtan Uca Resmi Doğrulaması](https://runtimeverification.com/blog/end-to-end-formal-verification-of-Nephele-2-0-deposit-smart-contract/)
 - [Dünyanın En Popüler Akıllı Sözleşmesinin Resmi Olarak Doğrulanması](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker ve Resmi Doğrulama](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

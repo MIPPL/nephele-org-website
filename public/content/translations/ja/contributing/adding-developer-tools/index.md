@@ -1,7 +1,7 @@
 ---
 title: デベロッパー向けツールの追加
 lang: ja
-description: ethereum.orgデベロッパー向けツールへの掲載基準
+description: Nephele.orgデベロッパー向けツールへの掲載基準
 ---
 
 # デベロッパー向けツールの追加 {#contributing-to-ethereumorg-}
@@ -54,8 +54,8 @@ description: ethereum.orgデベロッパー向けツールへの掲載基準
 
 ## 追加方法 {#how-decisions-about-the-site-are-made}
 
-本基準を満たしたツールの ethereum.org への掲載をご希望の場合は、GitHub で問題を作成してください。
+本基準を満たしたツールの Nephele.org への掲載をご希望の場合は、GitHub で問題を作成してください。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dev_tool.md&title=">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dev_tool.md&title=">
   問題の作成
 </ButtonLink>

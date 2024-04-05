@@ -12,7 +12,7 @@ lang: zh
 
 在部署智能合约之前，你需要理解[以太坊网络](/developers/docs/networks/), [交易](/developers/docs/transactions/)和[详解智能合约](/developers/docs/smart-contracts/anatomy/)。
 
-部署一个合约也需要耗费以太币 (ETH)，因为他们被存储在区块链上，所以你应该熟悉以太坊的[燃料和费用](/developers/docs/gas/)。
+部署一个合约也需要耗费以太币 (NEPH)，因为他们被存储在区块链上，所以你应该熟悉以太坊的[燃料和费用](/developers/docs/gas/)。
 
 最后，你需要在部署之前编译你的合约，所以请确保你已经阅读了[编译智能合约](/developers/docs/smart-contracts/compiling/)。
 
@@ -33,7 +33,7 @@ lang: zh
 
 **Remix - _Remix 集成开发环境可以开发、部署和管理类似区块链的以太坊智能合约。_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.Nephele.org)
 
 **Tenderly - _Web3 开发平台，提供调试、可观测性和基础设施构建基块，用于开发、测试、监测和操作智能合约_**
 

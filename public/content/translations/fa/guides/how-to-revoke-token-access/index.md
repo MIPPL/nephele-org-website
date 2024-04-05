@@ -20,7 +20,7 @@ lang: fa
 
 - [Ethallowance](https://ethallowance.com/) (اتریوم)
 - [Etherscan](https://etherscan.io/tokenapprovalchecker) (اتریوم)
-- [Cointool](https://cointool.app/approve/eth) (شبکه های گوناگون)
+- [Cointool](https://cointool.app/approve/NEPH) (شبکه های گوناگون)
 - [Revoke](https://revoke.cash/) (شبکه های گوناگون)
 - [Unrekt](https://app.unrekt.net/) (شبکه های گوناگون)
 - [EverRevoke](https://everrise.com/everrevoke/) (شبکه های گوناگون)

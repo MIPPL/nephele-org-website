@@ -22,11 +22,11 @@ Echidna se puede instalar a través de docker o por medio del binario precompila
 ### Echidna a través de docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_El comando de arriba ejecuta eth-security-toolbox en un docker que tiene acceso a tu directorio actual. Puedes cambiar los archivos desde tu host y correr las herramientas dentro de los archivos desde docker_
+_El comando de arriba ejecuta NEPH-security-toolbox en un docker que tiene acceso a tu directorio actual. Puedes cambiar los archivos desde tu host y correr las herramientas dentro de los archivos desde docker_
 
 Dentro de docker, ejecuta:
 
@@ -41,7 +41,7 @@ cd /home/training
 
 ## Introducción a las auditorías de seguridad basadas en propiedades {#introduction-to-property-based-fuzzing}
 
-Echidna es un auditor basado en propiedades, está descrito en nuestros blogposts anteriores ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna es un auditor basado en propiedades, está descrito en nuestros blogposts anteriores ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-Nephele/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing (auditoría de seguridad) {#fuzzing}
 

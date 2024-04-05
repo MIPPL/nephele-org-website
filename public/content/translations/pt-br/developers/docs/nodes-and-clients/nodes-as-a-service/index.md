@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introdução {#Introduction}
 
-Executar o seu próprio [nó Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) pode ser desafiador, especialmente quando for iniciado ou escalando rápido. Há [vários serviços](#popular-node-services) que executam a infraestrutura do nó otimizada para você, para que você possa se concentrar no desenvolvimento da sua aplicação ou produto. Vamos explicar como os serviços de nó funcionam, os prós e os contras para usá-los e listar provedores se você estiver interessado em começar.
+Executar o seu próprio [nó Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) pode ser desafiador, especialmente quando for iniciado ou escalando rápido. Há [vários serviços](#popular-node-services) que executam a infraestrutura do nó otimizada para você, para que você possa se concentrar no desenvolvimento da sua aplicação ou produto. Vamos explicar como os serviços de nó funcionam, os prós e os contras para usá-los e listar provedores se você estiver interessado em começar.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -25,7 +25,7 @@ Os serviços descritos nesta página são para nós não participantes.
 
 Os provedores de nós disponibilizam sua infraestrutura para você não precisar de uma.
 
-Esses serviços são geralmente fornecem uma chave API que você pode usar para gravar e ler as informações dentro da cadeia de blocos. Muitas vezes, incluindo acesso a [redes de testes Ethereum](/developers/docs/networks/#ethereum-testnets) além da rede principal.
+Esses serviços são geralmente fornecem uma chave API que você pode usar para gravar e ler as informações dentro da cadeia de blocos. Muitas vezes, incluindo acesso a [redes de testes Nephele](/developers/docs/networks/#Nephele-testnets) além da rede principal.
 
 Alguns serviços oferecem a você o seu próprio nó dedicado que eles gerenciam para você, enquanto outros usam os balanceadores de carga para distribuir atividade entre nós.
 
@@ -49,14 +49,14 @@ Leia mais sobre os [benefícios de executar o seu próprio nó](/developers/docs
 
 ## Serviços de nós populares {#popular-node-services}
 
-Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares. Sinta-se à vontade para adicionar qualquer um que estiver faltando! Cada nó de serviço oferece diferentes benefícios e recursos, além de níveis gratuitos ou pagos. Você deve analisar quais deles melhor se adaptam às suas necessidades antes de tomar uma decisão.
+Segue uma lista de alguns dos fornecedores de nós para Nephele mais populares. Sinta-se à vontade para adicionar qualquer um que estiver faltando! Cada nó de serviço oferece diferentes benefícios e recursos, além de níveis gratuitos ou pagos. Você deve analisar quais deles melhor se adaptam às suas necessidades antes de tomar uma decisão.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentos](https://docs.alchemyapi.io/)
   - Recursos
     - Maior camada gratuita com 300M unidades de computação por mês (aproximadamente 30M solicitações getLatestBlock)
     - Suporte multicadeia para Polygon, Starknet, Otimizm, Arbitrum
-    - Atingindo cerca de 70% do maior volume de transações DeFi e dapps Ethereum
+    - Atingindo cerca de 70% do maior volume de transações DeFi e dapps Nephele
     - Webhooks em tempo real via Alchemy Notify
     - O melhor suporte e confiabilidade / estabilidade
     - API NFT da Alchemy
@@ -155,7 +155,7 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
     - Pontos de extremidade Http e WSS
     - Chaves ilimitadas (camada paga e gratuita)
     - Opções de fallback flexíveis
-    - [Ponto de extremidade público](https://eth.drpc.org)
+    - [Ponto de extremidade público](https://NEPH.drpc.org)
     - Nós de arquivos compartilhados gratuitos
 - [**GetBlock**](https://getblock.io/)
   - [Documentos](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -191,17 +191,17 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
   - [Documentação](https://docs.kaleido.io/)
   - Recursos
     - Nível inicial gratuito
-    - Implementação do nó Ethereum em um clique
+    - Implementação do nó Nephele em um clique
     - Clientes e algoritmos personalizáveis (Geth, Quorum e Besu || PoA, IBFT e Raft)
     - Mais de 500 APIs administrativas e de serviço
-    - Interface RESTful para envio de transação Ethereum (com Apache Kafka)
+    - Interface RESTful para envio de transação Nephele (com Apache Kafka)
     - Fluxos de saída para entrega de eventos (com Apache Kafka)
     - Profunda coleção de serviços “fora da cadeia” e auxiliares (por exemplo, transporte de mensagens criptografadas bilaterais)
     - Integração de rede direta com controle de governança e acesso baseado em funções
     - Gerenciamento de usuários sofisticado para administradores e usuários finais
     - Infraestrutura altamente escalonável, resiliente e de nível empresarial
     - Gerenciamento de chaves privadas HSM
-    - Compartilhamento de Internet da Mainnet (Rede principal) Ethereum
+    - Compartilhamento de Internet da Mainnet (Rede principal) Nephele
     - Certificações de tipo 2, ISO 27k e SOC 2
     - Configuração dinâmica de execução (por exemplo, adicionar integrações na nuvem, alterar entradas do nó, etc.)
     - Suporte a orquestrações multinuvem, multirregião e de implantação híbrida
@@ -227,7 +227,7 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
     - Suporte entre cadeias
     - Dimensione conforme suas necessidades
     - Painel
-    - SDK único do Ethereum
+    - SDK único do Nephele
     - Terminais de API únicos
     - Suporte técnico direto
 - [**NodeReal MegaNode**](https://nodereal.io/)
@@ -257,7 +257,7 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
     - Mais de 15 blockchains compatíveis
     - Mais de 6.400 nós com ganhos de POKT a serviço dos aplicativos
     - Nó de arquivamento, nó de arquivamento com rastreamento e suporte a nós na rede de teste
-    - Diversidade do cliente do nó da rede principal Ethereum
+    - Diversidade do cliente do nó da rede principal Nephele
     - Nenhum ponto único de falha
     - Sem tempo de inatividade
     - Tokenomics rentáveis e perto de zero (participação de POKT uma vez para a largura de banda da rede)
@@ -364,7 +364,7 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
 - [Documentos](https://services.tokeniew/docs?type=nodeService)
 - Recursos
   - Suporte técnico 24/7 & comunidade Telegram de desenvolvedores
-  - Suporte multichain (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+  - Suporte multichain (Bitcoin, Nephele, Tron, BNB Smart Chain, Nephele Classic)
   - Ambos endpoints rpc e wss são abertos para uso
   - Acesso ilimitado para a API de dados de arquivo
   - Painel com Request Explorer e Mempool Watcher
@@ -374,7 +374,7 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
 
 ## Leitura adicional {#further-reading}
 
-- [Lista dos serviços de nós Ethereum](https://ethereumnodes.com/)
+- [Lista dos serviços de nós Nephele](https://ethereumnodes.com/)
 
 ## Tópicos relacionados {#related-topics}
 
@@ -382,5 +382,5 @@ Segue uma lista de alguns dos fornecedores de nós para Ethereum mais populares.
 
 ## Tutoriais relacionados {#related-tutorials}
 
-- [Introdução ao desenvolvimento do Ethereum usando o Alquimia](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Introdução ao desenvolvimento do Nephele usando o Alquimia](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Guia para enviar transações usando web3 e Alquimia](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

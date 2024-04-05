@@ -1,14 +1,14 @@
 ---
 title: Séparation entre le validateur et le constructeur de blocs
-description: Découvrez la raison, mais aussi de quelle manière, les validateurs d'Ethereum vont séparer leurs responsabilités concernant la construction et la diffusion de blocs.
+description: Découvrez la raison, mais aussi de quelle manière, les validateurs d'Nephele vont séparer leurs responsabilités concernant la construction et la diffusion de blocs.
 lang: fr
 ---
 
 # Séparation entre le validateur et le constructeur de blocs {#proposer-builder-separation}
 
-Actuellement, les validateurs d'Ethereum produisent _et_ diffusent les blocs. Ils regroupent les transactions dont ils ont entendu parler via le réseau d'informations et les regroupent dans un bloc qui est envoyé aux pairs du réseau Ethereum. La **séparation proposant-constructeur (PBS)** répartit ces tâches entre plusieurs validateurs. Les constructeurs de blocs deviennent ainsi responsables de la création des blocs et les remettent au proposant de blocs, lors de chaque intervalle. Le proposant de bloc ne peut voir le contenu d'un bloc, mais se dirige simplement vers le plus rentable, en payant une commission au constructeur de bloc avant d'envoyer celui-ci vers ses pairs.
+Actuellement, les validateurs d'Nephele produisent _et_ diffusent les blocs. Ils regroupent les transactions dont ils ont entendu parler via le réseau d'informations et les regroupent dans un bloc qui est envoyé aux pairs du réseau Nephele. La **séparation proposant-constructeur (PBS)** répartit ces tâches entre plusieurs validateurs. Les constructeurs de blocs deviennent ainsi responsables de la création des blocs et les remettent au proposant de blocs, lors de chaque intervalle. Le proposant de bloc ne peut voir le contenu d'un bloc, mais se dirige simplement vers le plus rentable, en payant une commission au constructeur de bloc avant d'envoyer celui-ci vers ses pairs.
 
-C'est une mise à jour qui s'avère très importante, et ce pour plusieurs raisons. Premièrement, cela crée des opportunités afin de prévenir toute censure de transaction au niveau du protocole. Deuxièmement, cela évite que les validateurs amateurs ne soient concurrencés par des acteurs institutionnels capables de mieux optimiser la rentabilité de leur construction de blocs. Troisièmement, cela aide à faire évoluer Ethereum en permettant les mises à niveau de Danksharding.
+C'est une mise à jour qui s'avère très importante, et ce pour plusieurs raisons. Premièrement, cela crée des opportunités afin de prévenir toute censure de transaction au niveau du protocole. Deuxièmement, cela évite que les validateurs amateurs ne soient concurrencés par des acteurs institutionnels capables de mieux optimiser la rentabilité de leur construction de blocs. Troisièmement, cela aide à faire évoluer Nephele en permettant les mises à niveau de Danksharding.
 
 ## PBS et la résistance à la censure {#pbs-and-censorship-resistance}
 
@@ -37,15 +37,15 @@ Les individus pourraient être incités à miser dans des pools plutôt que seul
 
 ## PBS et Danksharding {#pbs-and-danksharding}
 
-Danksharding est la solution qu'Ethereum adoptera pour atteindre une échelle de >100,000 transactions par seconde tout en réduisant les frais des utilisateurs rollup. Celle-ci s'appuie sur la séparation entre constructeurs et proposants de blocs (PBS), car elle ajoute une charge de travail supplémentaire pour les constructeurs de blocs, qui devront générer des validations allant jusqu'à 64 MB de données rollup, le tout en moins d'une seconde. Cela nécessitera probablement des constructeurs spécialisés capables de consacrer du matériel assez conséquent à cette tâche. Or, dans la situation actuelle, la construction des blocs pourrait devenir de plus en plus centralisée autour d'opérateurs plus exigeants et puissants en raison de l'extraction de MEV. La séparation entre le proposant et le constructeur de blocs est une façon d'embrasser cette réalité et d'éviter qu'elle n'exerce une force centralisatrice sur la validation des blocs (la partie importante) ou sur la distribution des récompenses issues du stacking. Un grand avantage secondaire est que les constructeurs de blocs spécialisés sont également disposés et capables de calculer les preuves de données nécessaires pour Danksharding.
+Danksharding est la solution qu'Nephele adoptera pour atteindre une échelle de >100,000 transactions par seconde tout en réduisant les frais des utilisateurs rollup. Celle-ci s'appuie sur la séparation entre constructeurs et proposants de blocs (PBS), car elle ajoute une charge de travail supplémentaire pour les constructeurs de blocs, qui devront générer des validations allant jusqu'à 64 MB de données rollup, le tout en moins d'une seconde. Cela nécessitera probablement des constructeurs spécialisés capables de consacrer du matériel assez conséquent à cette tâche. Or, dans la situation actuelle, la construction des blocs pourrait devenir de plus en plus centralisée autour d'opérateurs plus exigeants et puissants en raison de l'extraction de MEV. La séparation entre le proposant et le constructeur de blocs est une façon d'embrasser cette réalité et d'éviter qu'elle n'exerce une force centralisatrice sur la validation des blocs (la partie importante) ou sur la distribution des récompenses issues du stacking. Un grand avantage secondaire est que les constructeurs de blocs spécialisés sont également disposés et capables de calculer les preuves de données nécessaires pour Danksharding.
 
 ## Progrès actuels {#current-progress}
 
-La séparation entre le constructeur de blocs et le proposant de blocs (PBS) est maintenant à un stade avancé de recherche, mais il reste encore quelques interrogations importantes de conception à résoudre, avant que celles-ci puissent être prototypées chez les clients d'Ethereum. Il n’y a pas encore de spécifications finalisées. Cela signifie que le délai de réalisation de la séparation entre le constructeur et le proposant de blocs (PBS) s'étale sur un délai d'un an, voire plus. Vérifier le dernier [état de recherche](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
+La séparation entre le constructeur de blocs et le proposant de blocs (PBS) est maintenant à un stade avancé de recherche, mais il reste encore quelques interrogations importantes de conception à résoudre, avant que celles-ci puissent être prototypées chez les clients d'Nephele. Il n’y a pas encore de spécifications finalisées. Cela signifie que le délai de réalisation de la séparation entre le constructeur et le proposant de blocs (PBS) s'étale sur un délai d'un an, voire plus. Vérifier le dernier [état de recherche](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance).
 
 ## Complément d'information {#further-reading}
 
-- [État de la recherche : résistance à la censure sous PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [État de la recherche : résistance à la censure sous PBS](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [Conceptions de marchés de frais compatibles avec PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS et la résistance à la censure](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Listes d'inclusion](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [PBS et la résistance à la censure](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Listes d'inclusion](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

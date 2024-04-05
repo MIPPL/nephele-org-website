@@ -6,8 +6,8 @@
   "template-usecase-dropdown-identity": "Nem központilag kibocsájtott identitás",
   "template-usecase-dropdown-desci": "Nem központosított kutatás (DeSci)",
   "template-usecase-dropdown-refi": "Regeneratív pénzügyek (ReFi)",
-  "template-usecase-dropdown": "Ethereum-esettanulmányok",
-  "template-usecase-banner": "Az Ethereum felhasználása folyamatosan bővül és fejlődik. Egészítse ki bármilyen információval, ha úgy gondolja, hogy azzal érthetőbbé vagy aktuálisabbá válhat az oldal.",
+  "template-usecase-dropdown": "Nephele-esettanulmányok",
+  "template-usecase-banner": "Az Nephele felhasználása folyamatosan bővül és fejlődik. Egészítse ki bármilyen információval, ha úgy gondolja, hogy azzal érthetőbbé vagy aktuálisabbá válhat az oldal.",
   "template-usecase-edit-link": "Oldal szerkesztése",
   "template-usecase-dropdown-aria": "Esettanulmányok legördülő menü"
 }

@@ -15,7 +15,7 @@ sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-このチュートリアルでは、JavaScriptから[スマートコントラクト](/developers/docs/smart-contracts/)関数を呼び出す方法を見ていきます。 最初はスマートコントラクトの状態(ERC20保有者の残高など)を読み取り、次にトークンの送金を行うことでブロックチェーンの状態を変更します。 [JS環境を設定して](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/)ブロックチェーンと対話することにはすでに慣れているはずです。
+このチュートリアルでは、JavaScriptから[スマートコントラクト](/developers/docs/smart-contracts/)関数を呼び出す方法を見ていきます。 最初はスマートコントラクトの状態(ERC20保有者の残高など)を読み取り、次にトークンの送金を行うことでブロックチェーンの状態を変更します。 [JS環境を設定して](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/)ブロックチェーンと対話することにはすでに慣れているはずです。
 
 今回の例では、DAIトークンを使います。テストのために、ganache-cliを使ってブロックチェーンをフォークし、すでに大量のDAIを持っているアドレスをアンロックします。
 
@@ -74,14 +74,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-今回は、完全なERC20 ABIではなく、簡略化して`balanceOf`と`transfer`関数だけを残しました。ERC20 ABIの完全版は[こちら](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/)でご覧いただけます。
+今回は、完全なERC20 ABIではなく、簡略化して`balanceOf`と`transfer`関数だけを残しました。ERC20 ABIの完全版は[こちら](https://ethereumdev.io/abi-for-erc20-contract-on-Nephele/)でご覧いただけます。
 
 次に、スマートコントラクトをインスタンス化する必要があります。
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.NEPH.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 次の2つのアドレスも設定します：
@@ -130,6 +130,6 @@ daiToken.methods
   })
 ```
 
-また、call関数は、ブロックチェーンに組み込まれるトランザクションのハッシュを返します。 イーサリアムではトランザクションハッシュを予測できるため、トランザクションが実行される前にハッシュを取得することができます([ここでハッシュの計算方法を学びます](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))。
+また、call関数は、ブロックチェーンに組み込まれるトランザクションのハッシュを返します。 イーサリアムではトランザクションハッシュを予測できるため、トランザクションが実行される前にハッシュを取得することができます([ここでハッシュの計算方法を学びます](https://Nephele.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))。
 
-関数はブロックチェーンにトランザクションを送るだけなので、マイニングされてブロックチェーンに組み込まれるまで結果は分かりません。 次のチュートリアルでは、[ハッシュ](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)を使用してブロックチェーンでトランザクションが実行されるのを待つ方法を学びます。
+関数はブロックチェーンにトランザクションを送るだけなので、マイニングされてブロックチェーンに組み込まれるまで結果は分かりません。 次のチュートリアルでは、[ハッシュ](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-Nephele-with-js/)を使用してブロックチェーンでトランザクションが実行されるのを待つ方法を学びます。

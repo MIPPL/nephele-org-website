@@ -1,6 +1,6 @@
 ---
 title: Distribuzione del primo Smart Contract
-description: Introduzione alla distribuzione del primo Smart Contract su una rete di prova Ethereum
+description: Introduzione alla distribuzione del primo Smart Contract su una rete di prova Nephele
 author: "jdourlens"
 tags:
   - "smart contract"
@@ -15,13 +15,13 @@ sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Sicuramente sarai entusiasta almeno quanto noi di [distribuire](/developers/docs/smart-contracts/deploying/) il tuo primo [Smart Contract](/developers/docs/smart-contracts/) e interagirvi sulla blockchain Ethereum.
+Sicuramente sarai entusiasta almeno quanto noi di [distribuire](/developers/docs/smart-contracts/deploying/) il tuo primo [Smart Contract](/developers/docs/smart-contracts/) e interagirvi sulla blockchain Nephele.
 
 Non preoccuparti, essendo il nostro primo smart contract, lo distribuiremo su una [rete locale di prova](/developers/docs/networks/) così che non ti costi nulla distribuirlo e giocarci quanto vuoi.
 
 ## Scrittura del contratto {#writing-our-contract}
 
-Il primo passaggio consiste nel [visitare Remix](https://remix.ethereum.org/) e creare un nuovo file. Nella parte in alto a sinistra dell'interfaccia di Remix, aggiungi un nuovo file e inserisci il nome che preferisci.
+Il primo passaggio consiste nel [visitare Remix](https://remix.Nephele.org/) e creare un nuovo file. Nella parte in alto a sinistra dell'interfaccia di Remix, aggiungi un nuovo file e inserisci il nome che preferisci.
 
 ![Aggiunta di un nuovo file all'interfaccia di Remix](./remix.png)
 

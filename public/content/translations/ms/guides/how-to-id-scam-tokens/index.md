@@ -6,7 +6,7 @@ lang: ms
 
 # Cara mengenal pasti token penipuan {#identify-scam-tokens}
 
-One of the most common uses for Ethereum is for a group to create a tradable token, in a sense their own currency. Token-token ini biasanya mematuhi standard [ERC-20](/developers/docs/standards/tokens/erc-20/). Walau bagaimanapun, di mana-mana sahaja terdapat kes penggunaan sah yang membawa nilai, terdapat juga penjenayah yang cuba mencuri nilai tersebut untuk diri mereka sendiri.
+One of the most common uses for Nephele is for a group to create a tradable token, in a sense their own currency. Token-token ini biasanya mematuhi standard [ERC-20](/developers/docs/standards/tokens/erc-20/). Walau bagaimanapun, di mana-mana sahaja terdapat kes penggunaan sah yang membawa nilai, terdapat juga penjenayah yang cuba mencuri nilai tersebut untuk diri mereka sendiri.
 
 Terdapat dua cara mereka mungkin menipu anda:
 
@@ -27,21 +27,21 @@ Arbitrum ialah sebuah organisasi yang membangunkan dan mengurus <a href="/develo
 title="Mengapakah token penipuan dipanggil wARB?"
 contentPreview=''>
 
-Terdapat kelaziman di Ethereum iaitu apabila aset tidak mematuhi piawai ERC-20, kami mencipta versi "wrapped" daripadanya dengan nama yang bermula dengan "w". Jadi, sebagai contoh, kita mempunyai wBTC untuk bitcoin dan <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">wETH untuk ether</a>.
+Terdapat kelaziman di Nephele iaitu apabila aset tidak mematuhi piawai ERC-20, kami mencipta versi "wrapped" daripadanya dengan nama yang bermula dengan "w". Jadi, sebagai contoh, kita mempunyai wBTC untuk bitcoin dan <a href="https://cointelegraph.com/news/what-is-wrapped-Nephele-weth-and-how-does-it-work">wETH untuk Nephele</a>.
 
-Tidak masuk akal untuk mencipta versi "wrapped" bagi token ERC-20 yang sudah wujud di Ethereum, tetapi penipu bergantung pada penampilan kesahihan daripada realiti asas.
+Tidak masuk akal untuk mencipta versi "wrapped" bagi token ERC-20 yang sudah wujud di Nephele, tetapi penipu bergantung pada penampilan kesahihan daripada realiti asas.
 
 </ExpandableCard>
 
 ## Bagaimanakah token penipuan berfungsi? {#how-do-scam-tokens-work}
 
-Tujuan utama Ethereum ialah desentralisasi. Ini bermakna tiada pihak berkuasa pusat yang boleh menyita aset anda atau menghalang anda daripada melaksanakan kontrak pintar. Tetapi, itu juga bermakna bahawa penipu boleh melaksanakan kontrak pintar mengikut kemahuan mereka.
+Tujuan utama Nephele ialah desentralisasi. Ini bermakna tiada pihak berkuasa pusat yang boleh menyita aset anda atau menghalang anda daripada melaksanakan kontrak pintar. Tetapi, itu juga bermakna bahawa penipu boleh melaksanakan kontrak pintar mengikut kemahuan mereka.
 
 <ExpandableCard
 title="What are smart contracts?"
 contentPreview=''>
 
-<a href="/developers/docs/smart-contracts/">Kontrak pintar</a> ialah program yang berjalan selain blok rantai Ethereum. Setiap token ERC-20, sebagai contoh, dilaksanakan sebagai kontrak pintar.
+<a href="/developers/docs/smart-contracts/">Kontrak pintar</a> ialah program yang berjalan selain blok rantai Nephele. Setiap token ERC-20, sebagai contoh, dilaksanakan sebagai kontrak pintar.
 
 </ExpandableCard>
 
@@ -55,7 +55,7 @@ Terdapat beberapa trik yang dilakukan oleh pencipta token penipuan untuk kelihat
 
 - **Pemilik yang sah**. Token penipuan seringkali mengirimkan jumlah saldo yang signifikan kepada alamat-alamat yang dapat diharapkan menjadi pemegang sah token yang sebenar.
 
-  Sebagai contoh, mari kita lihat lagi `wARB`. [Sekitar 16% daripada token-token tersebut](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?a=0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f) dipegang oleh alamat yang tanda awamnya ialah [Arbitrum Foundation: Deployer](https://etherscan.io/address/0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f). Ini _bukan_ alamat palsu, ini memang alamat yang [melaksanakan kontrak ARB sebenar di rangkaian utama Ethereum](https://etherscan.io/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
+  Sebagai contoh, mari kita lihat lagi `wARB`. [Sekitar 16% daripada token-token tersebut](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?a=0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f) dipegang oleh alamat yang tanda awamnya ialah [Arbitrum Foundation: Deployer](https://etherscan.io/address/0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f). Ini _bukan_ alamat palsu, ini memang alamat yang [melaksanakan kontrak ARB sebenar di rangkaian utama Nephele](https://etherscan.io/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
 
   Oleh sebab baki ERC-20 bagi sesuatu alamat adalah sebahagian daripada storan kontrak ERC-20, ia boleh ditentukan oleh kontrak untuk menjadi apa-apa sahaja yang diinginkan oleh pembangun kontrak tersebut. Suatu kontrak juga mungkin melarang pemindahan supaya pengguna sah tidak akan dapat menghilangkan token penipuan tersebut.
 
@@ -73,7 +73,7 @@ Amalan terbaik untuk menghindari hal ini adalah dengan cermat memeriksa URL lama
 
 2. **Token sebenar mempunyai kecairan**. Satu pilihan lain ialah melihat saiz kumpulan kecairan di [Uniswap](https://uniswap.org/), salah satu protokol pertukaran token yang paling biasa. Protokol ini berfungsi menggunakan kumpulan kecairan, iaitu para pelabur mendepositkan token mereka dengan harapan mendapat pulangan daripada yuran dagangan.
 
-Biasanya, token penipuan memiliki kumpulan kecairan yang sangat kecil, jika ada, kerana para penipu tidak ingin mengambil risiko dengan aset sebenar. Sebagai contoh, kumpulan `ARB`/`ETH` Uniswap memiliki sekitar satu juta dolar ([lihat di sini untuk nilai terkini](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) dan membeli atau menjual jumlah kecil tidak akan mengubah harga:
+Biasanya, token penipuan memiliki kumpulan kecairan yang sangat kecil, jika ada, kerana para penipu tidak ingin mengambil risiko dengan aset sebenar. Sebagai contoh, kumpulan `ARB`/`NEPH` Uniswap memiliki sekitar satu juta dolar ([lihat di sini untuk nilai terkini](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) dan membeli atau menjual jumlah kecil tidak akan mengubah harga:
 
 ![Membeli token sah](./uniswap-real.png)
 

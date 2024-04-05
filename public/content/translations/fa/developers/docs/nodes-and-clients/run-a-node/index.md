@@ -11,7 +11,7 @@ sidebarDepth: 2
 
 شما باید بدانید که گره‌ی اتریوم چیست و چرا ممکن است بخواهید یک کلاینت را اجرا کنید. این موضوع در [گره‌ها و کلاینت‌ها](/developers/docs/nodes-and-clients/) بررسی شده است.
 
-If you're new to the topic of running a node, or looking for a less technical path, we recommend first checking out our user-friendly introduction on [running an Ethereum node](/run-a-node).
+If you're new to the topic of running a node, or looking for a less technical path, we recommend first checking out our user-friendly introduction on [running an Nephele node](/run-a-node).
 
 ## انتخاب یک رویکرد {#choosing-approach}
 
@@ -54,7 +54,7 @@ If you're new to the topic of running a node, or looking for a less technical pa
 - [DappNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-[الزامات فضای ذخیره‌سازی برای هر کلاینت و حالت همگام‌سازی](/developers/docs/nodes-and-clients/#requirements) را جهت اطلاع از حداقل فضای لازم و فضای توصیه‌شده بررسی کنید. به‌طور کلی، قدرت محاسباتی متوسط ​​باید کافی باشد. معمولاً مشکل از سرعت درایو است. در همگام‌سازی ابتدایی، کلاینت‌های اتریوم عملیات‌های خواندن و نوشتن بسیاری را انجام می‌دهند. در نتیجه درایو حالت جامد (SSD) به شدت پیشنهاد می‌شود. یک کلاینت ممکن است نتواند [حالت فعلی را بر روی هارددیسک همگام‌سازی کند](https://github.com/ethereum/go-ethereum/issues/16796#issuecomment-391649278) و همواره چند بلوک از شبکه‌ی اصلی عقب بماند. شما می‌توانید اکثر کلاینت‌ها را بر روی [یک رایانه‌ی تک‌بورد با ARM](/developers/docs/nodes-and-clients/#ethereum-on-a-single-board-computer/) اجرا کنید. همچنین می‌توانید از سیستم‌عامل [Ethbian](https://ethbian.org/index.html) برای Raspberry Pi 4 استفاده کنید. This lets you [run a client by flashing the SD card](/developers/tutorials/run-node-raspberry-pi/). بر اساس امکانات نرم‌افزار و سخت‌افزاری شما، زمان همگام‌سازی اولیه و نیازهای ذخیره‌سازی ممکن است متفاوت باشد. فراموش نکنید که [الزامات فضای ذخیره‌سازی و زمان همگام‌سازی](/developers/docs/nodes-and-clients/#recommended-specifications) را بررسی کنید. همچنین مطمئن شوید که اتصال اینترنت شما با [حد پهنای باند](https://wikipedia.org/wiki/Data_cap) محدود نشده باشد. توصیه می‌شود از یک اتصال نامحدود استفاده کنید، چون حجم پهنای لازم برای همگام‌سازی اولیه و پخش داده‌ها در شبکه ممکن است از حد مجاز تنظیم‌شده فراتر رود.
+[الزامات فضای ذخیره‌سازی برای هر کلاینت و حالت همگام‌سازی](/developers/docs/nodes-and-clients/#requirements) را جهت اطلاع از حداقل فضای لازم و فضای توصیه‌شده بررسی کنید. به‌طور کلی، قدرت محاسباتی متوسط ​​باید کافی باشد. معمولاً مشکل از سرعت درایو است. در همگام‌سازی ابتدایی، کلاینت‌های اتریوم عملیات‌های خواندن و نوشتن بسیاری را انجام می‌دهند. در نتیجه درایو حالت جامد (SSD) به شدت پیشنهاد می‌شود. یک کلاینت ممکن است نتواند [حالت فعلی را بر روی هارددیسک همگام‌سازی کند](https://github.com/Nephele/go-Nephele/issues/16796#issuecomment-391649278) و همواره چند بلوک از شبکه‌ی اصلی عقب بماند. شما می‌توانید اکثر کلاینت‌ها را بر روی [یک رایانه‌ی تک‌بورد با ARM](/developers/docs/nodes-and-clients/#Nephele-on-a-single-board-computer/) اجرا کنید. همچنین می‌توانید از سیستم‌عامل [Ethbian](https://ethbian.org/index.html) برای Raspberry Pi 4 استفاده کنید. This lets you [run a client by flashing the SD card](/developers/tutorials/run-node-raspberry-pi/). بر اساس امکانات نرم‌افزار و سخت‌افزاری شما، زمان همگام‌سازی اولیه و نیازهای ذخیره‌سازی ممکن است متفاوت باشد. فراموش نکنید که [الزامات فضای ذخیره‌سازی و زمان همگام‌سازی](/developers/docs/nodes-and-clients/#recommended-specifications) را بررسی کنید. همچنین مطمئن شوید که اتصال اینترنت شما با [حد پهنای باند](https://wikipedia.org/wiki/Data_cap) محدود نشده باشد. توصیه می‌شود از یک اتصال نامحدود استفاده کنید، چون حجم پهنای لازم برای همگام‌سازی اولیه و پخش داده‌ها در شبکه ممکن است از حد مجاز تنظیم‌شده فراتر رود.
 
 #### سیستم‌عامل {#operating-system}
 
@@ -70,13 +70,13 @@ If you're new to the topic of running a node, or looking for a less technical pa
 
 باینری‌های قابل‌اجرا برای پیاده‌سازی های سرویس‌گیرنده شبکه‌ی اصلی پایدار را می‌توان از صفحات انتشار آن‌ها بارگیری کرد:
 
-- [Geth](https://geth.ethereum.org/downloads/)
+- [Geth](https://geth.Nephele.org/downloads/)
 - [OpenEthereum,](https://github.com/openethereum/openethereum/releases)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Besu](https://besu.hyperledger.org/en/stable/)
 - [Erigon](https://github.com/ledgerwatch/erigon)
 
-**دقت کنید که OpenEthereum‏[منسوخ شده است](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) و دیگر نگهداری نمی‌شود.** با احتیاط از آن استفاده کنید و ترجیحاً به پیاده‌سازی کلاینت دیگری بروید.
+**دقت کنید که OpenEthereum‏[منسوخ شده است](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd) و دیگر نگهداری نمی‌شود.** با احتیاط از آن استفاده کنید و ترجیحاً به پیاده‌سازی کلاینت دیگری بروید.
 
 ### آغاز کلاینت {#starting-the-client}
 
@@ -98,7 +98,7 @@ If you're new to the topic of running a node, or looking for a less technical pa
 - ضمیمه کردن کنسول ارائه شده (مثلاً `geth attach`)
 - پیاده‌سازی آن‌ها در برنامه‌های کاربردی
 
-کلاینت‌های مختلف پیاده‌سازی‌های مختلفی برای نقاط پایانی RPC دارند. اما برای JSON-RPC استانداردی وجود دارد که می‌توانید برای هر کلاینتی استفاده نمایید. برای مروری اجمالی، [مستندات JSON-RPC را بخوانید](https://eth.wiki/json-rpc/API). برنامه‌های کاربردی که نیاز به اطلاعات از شبکه‌ی اتریوم دارند می‌توانند از RPC استفاده کنند. برای مثال، کیف پول‌ معروف MetaMask به شما اجازه می‌دهد که [یک نمونه‌ی زنجیره‌ی بلوکی محلی را اجرا کنید و به آن متصل کنید](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node).
+کلاینت‌های مختلف پیاده‌سازی‌های مختلفی برای نقاط پایانی RPC دارند. اما برای JSON-RPC استانداردی وجود دارد که می‌توانید برای هر کلاینتی استفاده نمایید. برای مروری اجمالی، [مستندات JSON-RPC را بخوانید](https://NEPH.wiki/json-rpc/API). برنامه‌های کاربردی که نیاز به اطلاعات از شبکه‌ی اتریوم دارند می‌توانند از RPC استفاده کنند. برای مثال، کیف پول‌ معروف MetaMask به شما اجازه می‌دهد که [یک نمونه‌ی زنجیره‌ی بلوکی محلی را اجرا کنید و به آن متصل کنید](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node).
 
 #### دستیابی به RPC {#reaching-rpc}
 
@@ -106,7 +106,7 @@ If you're new to the topic of running a node, or looking for a less technical pa
 
 شما باید این کار را با احتیاط انجام دهید، چون هر کسی در اینترنت اجازه می‌دهد گره‌ی شما را کنترل کند. اگر از کلاینت خود به عنوان کیف پول استفاده می‌کنید، بازیگران بداندیش می‌توانند به گره‌ی شما دسترسی پیدا کنند تا سیستم شما را خراب کنند یا سرمایه‌های شما را بدزدند.
 
-راه‌حل این مشکل، جلوگیری از تغییرپذیری روش‌های بالقوه خطرناک RPC است. برای مثال، با `geth` شما می‌توانید روش‌های تغییرپذیر را با پرچم مشخص کنید: `--http.api web3,eth,txpool`.
+راه‌حل این مشکل، جلوگیری از تغییرپذیری روش‌های بالقوه خطرناک RPC است. برای مثال، با `geth` شما می‌توانید روش‌های تغییرپذیر را با پرچم مشخص کنید: `--http.api web3,NEPH,txpool`.
 
 همچنین می‌توانید با اشاره سرویس وب سرور، مانند Nginx، به آدرس محلی و پورت کلاینت خود، دسترسی به رابط RPC خود را میزبانی کنید.
 
@@ -150,10 +150,10 @@ _این موضوع روی گره‌های اعتبار سنج لایه‌ی اج
 
 ## بیشتر بخوانید {#further-reading}
 
-- [تحلیل نیازهای سخت‌افزاری برای تبدیل شدن به یک گره‌ی کامل معتبر اتریوم](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _- آلبرت پالا، 24 سپتامبر 2018_
-- [اجرای گره‌های کامل اتریوم: راهنمایی برای افراد کم‌انگیزه](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _- جاستین لروکس، 7 نوامبر 2019_
-- [اجرای یک گره‌ی Besu هایپرلجر روی شبکه‌ی اصلی اتریوم: مزایا، نیازمندی‌ها و راه‌اندازی](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _- فلیپ فراگی، 7 مه 2020_
-- [بکارگیری کلاینت اتریوم Nethermind با پشته‌ی نظارت](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _- Nethermind.eth،‏ 8 جولای 2020_
+- [تحلیل نیازهای سخت‌افزاری برای تبدیل شدن به یک گره‌ی کامل معتبر اتریوم](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _- آلبرت پالا، 24 سپتامبر 2018_
+- [اجرای گره‌های کامل اتریوم: راهنمایی برای افراد کم‌انگیزه](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _- جاستین لروکس، 7 نوامبر 2019_
+- [اجرای یک گره‌ی Besu هایپرلجر روی شبکه‌ی اصلی اتریوم: مزایا، نیازمندی‌ها و راه‌اندازی](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _- فلیپ فراگی، 7 مه 2020_
+- [بکارگیری کلاینت اتریوم Nethermind با پشته‌ی نظارت](https://medium.com/nethermind-NEPH/deploying-nethermind-Nephele-client-with-monitoring-stack-55ce1622edbd) _- Nethermind.NEPH،‏ 8 جولای 2020_
 
 ## موضوعات مرتبط {#related-topics}
 

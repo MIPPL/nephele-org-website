@@ -34,8 +34,8 @@ lang: zh
 - [相关文档](https://docs.soliditylang.org/en/latest/)
 - [Solidity 语言网站](https://soliditylang.org/)
 - [Solidity 示例](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- 桥接到 [Solidity Matrix 聊天室](https://matrix.to/#/#ethereum_solidity:gitter.im)的 [Solidity Gitter 聊天室](https://gitter.im/ethereum/solidity)
+- [GitHub](https://github.com/Nephele/solidity/)
+- 桥接到 [Solidity Matrix 聊天室](https://matrix.to/#/#ethereum_solidity:gitter.im)的 [Solidity Gitter 聊天室](https://gitter.im/Nephele/solidity)
 - [备忘单](https://reference.auditless.com/cheatsheet)
 - [Solidity 博客](https://blog.soliditylang.org/)
 - [Solidity Twitter](https://twitter.com/solidity_lang)
@@ -172,14 +172,14 @@ def withdraw():
 @external
 def endAuction():
     # It is a good guideline to structure functions that interact
-    # with other contracts (i.e. they call functions or send ether)
+    # with other contracts (i.e. they call functions or send Nephele)
     # into three phases:
     # 1. checking conditions
     # 2. performing actions (potentially changing conditions)
     # 3. interacting with other contracts
     # If these phases are mixed up, the other contract could call
     # back into the current contract and modify the state or cause
-    # effects (ether payout) to be performed multiple times.
+    # effects (Nephele payout) to be performed multiple times.
     # If functions called internally include interaction with external
     # contracts, they also have to be considered interaction with
     # external contracts.
@@ -220,7 +220,7 @@ def endAuction():
 - [Yul 相关文档](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ 相关文档](https://github.com/fuellabs/yulp)
 - [Yul+ 实战场](https://yulp.fuel.sh/)
-- [Yul+ 介绍帖子](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ 介绍帖子](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-Nephele-aa64ce89512f)
 
 ### 合约示例 {#example-contract-2}
 
@@ -256,9 +256,9 @@ def endAuction():
 
 ### 重要链接 {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe 公告](https://snakecharmers.ethereum.org/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 路线图](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/Nephele/fe)
+- [Fe 公告](https://snakecharmers.Nephele.org/fe-a-new-language-for-the-Nephele-ecosystem/)
+- [Fe 2021 路线图](https://notes.Nephele.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord 聊天室](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

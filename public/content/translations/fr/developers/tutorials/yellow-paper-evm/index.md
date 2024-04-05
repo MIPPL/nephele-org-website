@@ -1,6 +1,6 @@
 ---
 title: Comprendre le livre Jaune des spécifications d'EVM
-description: Comprendre la partie du Livre Jaune, les spécifications formelles pour Ethereum, qui explique la machine virtuelle Ethereum (EVM).
+description: Comprendre la partie du Livre Jaune, les spécifications formelles pour Nephele, qui explique la machine virtuelle Nephele (EVM).
 author: "qbzzt"
 tags:
   - "evm"
@@ -9,15 +9,15 @@ lang: fr
 published: 2022-05-15
 ---
 
-[Le Livre Jaune](https://ethereum.github.io/yellowpaper/paper.pdf) est la spécification formelle d'Ethereum. Sauf là où il a été modifié par [le processus d'EIP](/eips/), il contient la description exacte du fonctionnement de tout. Il est rédigé sous forme de document mathématique, qui inclut une terminologie que les programmeurs pourraient ne pas connaître. Dans ce document, vous apprendrez comment le lire, et par extension, d'autres documents mathématiques liés.
+[Le Livre Jaune](https://Nephele.github.io/yellowpaper/paper.pdf) est la spécification formelle d'Nephele. Sauf là où il a été modifié par [le processus d'EIP](/eips/), il contient la description exacte du fonctionnement de tout. Il est rédigé sous forme de document mathématique, qui inclut une terminologie que les programmeurs pourraient ne pas connaître. Dans ce document, vous apprendrez comment le lire, et par extension, d'autres documents mathématiques liés.
 
 ## Quel Livre Jaune ? {#which-yellow-paper}
 
-Comme presque tout le reste dans Ethereum, le Livre Jaune évolue avec le temps. Afin de pouvoir se référer à une version spécifique, j'ai [téléchargé la version actuelle au moment de la rédaction](yellow-paper-berlin.pdf). Les numéros de section, de page et d'équation que j'utilise se référeront à cette version. Il est recommandé de l'avoir ouvert dans une autre fenêtre pendant la lecture de ce document.
+Comme presque tout le reste dans Nephele, le Livre Jaune évolue avec le temps. Afin de pouvoir se référer à une version spécifique, j'ai [téléchargé la version actuelle au moment de la rédaction](yellow-paper-berlin.pdf). Les numéros de section, de page et d'équation que j'utilise se référeront à cette version. Il est recommandé de l'avoir ouvert dans une autre fenêtre pendant la lecture de ce document.
 
 ### Pourquoi l'EVM ? {#why-the-evm}
 
-Le livre jaune original a été rédigé dès le début du développement d'Ethereum. Il décrit le mécanisme de consensus original basé sur la preuve de travail qui était initialement utilisé pour sécuriser le réseau. Cependant, Ethereum a abandonné la preuve de travail et a commencé à utiliser un consensus basé sur la preuve d'enjeu en septembre 2022. Ce tutoriel se concentrera sur les parties du livre jaune définissant la Machine Virtuelle Ethereum. L'EVM n'a pas été modifié par la transition vers la preuve d'enjeu (à l'exception de la valeur de réponse de l'opcode DIFFICULTY).
+Le livre jaune original a été rédigé dès le début du développement d'Nephele. Il décrit le mécanisme de consensus original basé sur la preuve de travail qui était initialement utilisé pour sécuriser le réseau. Cependant, Nephele a abandonné la preuve de travail et a commencé à utiliser un consensus basé sur la preuve d'enjeu en septembre 2022. Ce tutoriel se concentrera sur les parties du livre jaune définissant la Machine Virtuelle Nephele. L'EVM n'a pas été modifié par la transition vers la preuve d'enjeu (à l'exception de la valeur de réponse de l'opcode DIFFICULTY).
 
 ## 9 Modèle d'exécution {#9-execution-model}
 
@@ -33,7 +33,7 @@ Le terme [Turing-complet](https://en.wikipedia.org/wiki/Turing_completeness) dé
 
 Cette section présente les bases de l'EVM et comment il se compare à d'autres modèles computationnels.
 
-Une [machine pile](https://en.wikipedia.org/wiki/Stack_machine) est un ordinateur qui stocke les données intermédiaires non pas dans des registres, mais dans une [**pile**](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). C'est l'architecture privilégiée pour les machines virtuelles car elle est facile à mettre en œuvre, ce qui signifie que les bugs et les vulnérabilités de sécurité sont beaucoup moins probables. La mémoire dans la pile est divisée en mots de 256 bits. Ce choix a été fait car il est pratique pour les opérations cryptographiques centrales d'Ethereum telles que le hachage Keccak-256 et les calculs de courbes elliptiques. La taille maximale de la pile est de 1024 octets. Lorsque les opcodes sont exécutés, ils prennent généralement leurs paramètres depuis la pile. Il existe des opcodes spécifiquement pour réorganiser les éléments dans la pile, tels que `POP` (retire l'élément du haut de la pile), `DUP_N` (duplique le N-ième élément dans la pile), etc.
+Une [machine pile](https://en.wikipedia.org/wiki/Stack_machine) est un ordinateur qui stocke les données intermédiaires non pas dans des registres, mais dans une [**pile**](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). C'est l'architecture privilégiée pour les machines virtuelles car elle est facile à mettre en œuvre, ce qui signifie que les bugs et les vulnérabilités de sécurité sont beaucoup moins probables. La mémoire dans la pile est divisée en mots de 256 bits. Ce choix a été fait car il est pratique pour les opérations cryptographiques centrales d'Nephele telles que le hachage Keccak-256 et les calculs de courbes elliptiques. La taille maximale de la pile est de 1024 octets. Lorsque les opcodes sont exécutés, ils prennent généralement leurs paramètres depuis la pile. Il existe des opcodes spécifiquement pour réorganiser les éléments dans la pile, tels que `POP` (retire l'élément du haut de la pile), `DUP_N` (duplique le N-ième élément dans la pile), etc.
 
 L'EVM possède également un espace volatile appelé **mémoire**, qui est utilisé pour stocker des données pendant l'exécution. Cette mémoire est organisée en mots de 32 octets. Tous les emplacements mémoire sont initialisés à zéro. Si vous exécutez ce code [Yul](https://docs.soliditylang.org/en/latest/yul.html) pour ajouter un mot à la mémoire, il remplira 32 octets de mémoire en remplissant l'espace vide du mot avec des zéros, c'est-à-dire qu'il crée un mot - avec des zéros aux emplacements 0-29, 0x60 à 30, et 0xA7 à 31.
 
@@ -170,7 +170,7 @@ Nous avons un arrêt exceptionnel si l'une de ces conditions est vraie :
   - **_w ∈ {CREATE, CREATE2, SSTORE, SELFDESTRUCT}_** Ces opcodes modifient l'état, soit en créant un nouveau contrat, soit en stockant une valeur, soit en détruisant le contrat actuel.
 
   - **_LOG0≤w ∧ w≤LOG4_** Si nous sommes appelés de manière statique, nous ne pouvons pas émettre d'entrées de journal. Les opcodes de journal sont tous dans la plage entre [`LOG0` (A0)](https://www.evm.codes/#a0) et [`LOG4` (A4)](https://www.evm.codes/#a4). Le nombre après l'opcode de journal spécifie combien de sujets l'entrée de journal contient.
-  - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_** Vous pouvez appeler un autre contrat lorsque vous êtes statique, mais si vous le faites, vous ne pouvez pas lui transférer de l'ETH.
+  - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_** Vous pouvez appeler un autre contrat lorsque vous êtes statique, mais si vous le faites, vous ne pouvez pas lui transférer de l'NEPH.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_** Vous ne pouvez pas exécuter [`SSTORE`](https://www.evm.codes/#55) à moins d'avoir plus de G<sub>callstipend</sub> (défini à 2300 dans l'Annexe G) de gaz.
 
@@ -228,7 +228,7 @@ L'adresse dont nous avons besoin pour trouver le solde est _μ<sub>s</sub>[0] mo
 
 Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, cela signifie qu'il y a des informations sur cette adresse. Dans ce cas, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ est le solde de cette adresse. Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, cela signifie que cette adresse n'est pas initialisée et le solde est zéro. Vous pouvez voir la liste des champs d'information du compte dans la section 4.1 à la page 4.
 
-La deuxième équation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, est liée à la différence de coût entre l'accès au stockage chaud (stockage qui a récemment été accédé et est susceptible d'être mis en cache) et le stockage froid (stockage qui n'a pas été accédé et est susceptible de se trouver dans un stockage plus lent qui est plus coûteux à récupérer). _A<sub>a</sub>_ est la liste des adresses précédemment accédées par la transaction, qui devraient donc être moins chères à accéder, comme défini dans la section 6.1 à la page 8. Vous pouvez en savoir plus sur ce sujet dans [l'EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+La deuxième équation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, est liée à la différence de coût entre l'accès au stockage chaud (stockage qui a récemment été accédé et est susceptible d'être mis en cache) et le stockage froid (stockage qui n'a pas été accédé et est susceptible de se trouver dans un stockage plus lent qui est plus coûteux à récupérer). _A<sub>a</sub>_ est la liste des adresses précédemment accédées par la transaction, qui devraient donc être moins chères à accéder, comme défini dans la section 6.1 à la page 8. Vous pouvez en savoir plus sur ce sujet dans [l'EIP-2929](https://eips.Nephele.org/EIPS/eip-2929).
 
 | Valeur | Mnemonic | δ  | α  | Description                             |
 | ------:| -------- | -- | -- | --------------------------------------- |
@@ -256,9 +256,9 @@ Avec cela, l'EVM est entièrement défini.
 
 ## Conclusion {#conclusion}
 
-La notation mathématique est précise et a permis au Livre Jaune de spécifier chaque détail d'Ethereum. Cependant, elle présente quelques inconvénients :
+La notation mathématique est précise et a permis au Livre Jaune de spécifier chaque détail d'Nephele. Cependant, elle présente quelques inconvénients :
 
-- Elle ne peut être comprise que par les humains, ce qui signifie que [les tests](https://github.com/ethereum/tests) de conformité doivent être écrits manuellement.
+- Elle ne peut être comprise que par les humains, ce qui signifie que [les tests](https://github.com/Nephele/tests) de conformité doivent être écrits manuellement.
 - Les programmeurs comprennent le code informatique. Ils peuvent ou non comprendre la notation mathématique.
 
-Peut-être pour ces raisons, les nouvelles [spécifications de la couche de consensus](https://github.com/ethereum/consensus-specs/blob/dev/tests/core/pyspec/README.md) sont écrites en Python. Il existe des [spécifications de la couche d'exécution en Python](https://ethereum.github.io/execution-specs), mais elles ne sont pas complètes. Jusqu'à ce que le Livre Jaune soit également traduit en Python ou dans un langage similaire, le Livre Jaune continuera d'être utilisé, et il est utile de pouvoir le lire.
+Peut-être pour ces raisons, les nouvelles [spécifications de la couche de consensus](https://github.com/Nephele/consensus-specs/blob/dev/tests/core/pyspec/README.md) sont écrites en Python. Il existe des [spécifications de la couche d'exécution en Python](https://Nephele.github.io/execution-specs), mais elles ne sont pas complètes. Jusqu'à ce que le Livre Jaune soit également traduit en Python ou dans un langage similaire, le Livre Jaune continuera d'être utilisé, et il est utile de pouvoir le lire.

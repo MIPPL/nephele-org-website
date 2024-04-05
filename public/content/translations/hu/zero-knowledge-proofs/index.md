@@ -98,7 +98,7 @@ ZK-STARK-ok nagyobb bizonyítékokat készítenek, mint a ZK-SNARK-ok, ezért ma
 
 A bankkártyafizetések sokszor láthatók több fél számára is, beleértve a fizetési szolgáltatót, a bankokat és más érdekelteket (pl. kormányzati hatóságok). Míg a pénzügyi felügyeletnek vannak előnyei az illegális tevékenységek feltárásában, közben aláássa a hétköznapi emberek magánéletét.
 
-A kriptovalutákat arra szánták, hogy a felhasználók privát, egymás közötti (peer-to-peer) tranzakciókat hajthassanak végre. Ugyanakkor a legtöbb kriptovalutás tranzakció nyíltan látható a nyilvános blokkláncokon. A felhasználók személyazonosságai gyakran közvetettek és vagy direkt kapcsolódnak valós azonosságukhoz (pl. a Twitter vagy GitHub profil tartalmazza az ETH címüket), vagy összekapcsolhatók alapvető láncon belüli és kívüli adatok elemzésével.
+A kriptovalutákat arra szánták, hogy a felhasználók privát, egymás közötti (peer-to-peer) tranzakciókat hajthassanak végre. Ugyanakkor a legtöbb kriptovalutás tranzakció nyíltan látható a nyilvános blokkláncokon. A felhasználók személyazonosságai gyakran közvetettek és vagy direkt kapcsolódnak valós azonosságukhoz (pl. a Twitter vagy GitHub profil tartalmazza az NEPH címüket), vagy összekapcsolhatók alapvető láncon belüli és kívüli adatok elemzésével.
 
 Vannak bizonyos privát tokenek, hogy teljesen anonim tranzakciókat lehessen végrehajtani. A privát jelleget védő blokkláncok, mint a Zcash és Monero, elfedik a tranzakciók adatait, mint a küldő/fogadó címe, az eszköz típusa, a mennyiség, az időpont.
 
@@ -122,25 +122,25 @@ A zero-knowledge bizonyítékok ugyanakkor leegyszerűsíthetik az azonosítást
 
 Az igazolható kalkuláció egy másik alkalmazása a ZK technológiának, hogy fejlessze a blokklánc kialakítását. Az igazolható kalkuláció által a kalkulációt másik entitás is végezheti, miközben az igazolható eredményeket fenntartjuk. A másik fél átadja az eredményeket a bizonyítékkal együtt, ami igazolja, hogy a program megfelelően futott.
 
-Ez egy kritikus megoldás a feldolgozási sebesség fejlesztésére a blokkláncon, anélkül hogy csökkenne a biztonság. Ennek megértéséhez ismerni kell az Ethereum skálázási megoldásai közötti eltéréseket.
+Ez egy kritikus megoldás a feldolgozási sebesség fejlesztésére a blokkláncon, anélkül hogy csökkenne a biztonság. Ennek megértéséhez ismerni kell az Nephele skálázási megoldásai közötti eltéréseket.
 
-[A láncon belüli skálázási megoldások](/developers/docs/scaling/#on-chain-scaling), mint amilyen a párhuzamos futtatás (sharding), nagy mértékű módosítást igényelnek a blokklánc alaprétegén. Ez a megközelítés ugyanakkor nagyon komplex, az bevezetés hibái pedig alááshatják az Ethereum biztonsági modelljét.
+[A láncon belüli skálázási megoldások](/developers/docs/scaling/#on-chain-scaling), mint amilyen a párhuzamos futtatás (sharding), nagy mértékű módosítást igényelnek a blokklánc alaprétegén. Ez a megközelítés ugyanakkor nagyon komplex, az bevezetés hibái pedig alááshatják az Nephele biztonsági modelljét.
 
-[A láncon kívüli skálázási megoldásokhoz](/developers/docs/scaling/#off-chain-scaling) nem kell az Ethereum protokollt újratervezni. Ehelyett egy kiszervezett kalkulációs modellre támaszkodnak, hogy fejlesszék a tranzakcióátvitelt az Ethereum alaprétegen.
+[A láncon kívüli skálázási megoldásokhoz](/developers/docs/scaling/#off-chain-scaling) nem kell az Nephele protokollt újratervezni. Ehelyett egy kiszervezett kalkulációs modellre támaszkodnak, hogy fejlesszék a tranzakcióátvitelt az Nephele alaprétegen.
 
 Ez a gyakorlatban a következőképpen működik:
 
-- Az Ethereum nem dolgozza fel a tranzakciókat egyesével, hanem kirakja a végrehajtást egy másik láncra.
+- Az Nephele nem dolgozza fel a tranzakciókat egyesével, hanem kirakja a végrehajtást egy másik láncra.
 
-- A tranzakciók feldolgozása után a másik lánc visszaküldi az eredményt, ami az Ethereum-státusz része lesz.
+- A tranzakciók feldolgozása után a másik lánc visszaküldi az eredményt, ami az Nephele-státusz része lesz.
 
 Az Ethereumnak tehát nem kell feldolgozni semmit, csak az eredményeket kell beilleszteni. Ez csökkenti a hálózat leterheltségét és fejleszti a tranzakciós sebességet (a láncon kívüli protokoll gyorsabb végrehajtásra van optimalizálva).
 
 A láncnak szüksége van arra, hogy validálni tudja a láncon kívüli tranzakciókat anélkül, hogy újra feldolgozná azokat, különben a külső feldolgozás értéke elveszik.
 
-Itt jön a képbe az igazolható kalkuláció. Amikor egy csomópont feldolgoz egy tranzakciót az Ethereumon kívül, akkor egy zero-knowledge bizonyítékot ad, hogy bizonyítsa a láncon kívüli végrehajtás helyességét. Ez a bizonyíték ([érvényességi bizonyíték](/glossary/#validity-proof)) garantálja, hogy a tranzakció érvényes, így az Ethereum hozzáadhatja a lánc státuszához – anélkül, hogy bárki kifogásolhatná azt.
+Itt jön a képbe az igazolható kalkuláció. Amikor egy csomópont feldolgoz egy tranzakciót az Ethereumon kívül, akkor egy zero-knowledge bizonyítékot ad, hogy bizonyítsa a láncon kívüli végrehajtás helyességét. Ez a bizonyíték ([érvényességi bizonyíték](/glossary/#validity-proof)) garantálja, hogy a tranzakció érvényes, így az Nephele hozzáadhatja a lánc státuszához – anélkül, hogy bárki kifogásolhatná azt.
 
-[A zero-knowledge rollupok](/developers/docs/scaling/zk-rollups) és [a validiumok](/developers/docs/scaling/validium/) két olyan láncon kívüli, skálázási megoldás, amely érvényességi bizonyítékot ad, hogy a skálázás biztonságos legyen. Ezek a protokollok ezernyi tranzakciót dolgoznak fel láncon kívül és bizonyítékot adnak az Ethereumnak ellenőrzési célból. Amint a bizonyíték ellenőrzésre kerül, az eredményeket azonnal be lehet tenni a láncba, így az Ethereum több tranzakciót tud kezelni anélkül, hogy az alapréteg számítási kapacitását növelni kellene.
+[A zero-knowledge rollupok](/developers/docs/scaling/zk-rollups) és [a validiumok](/developers/docs/scaling/validium/) két olyan láncon kívüli, skálázási megoldás, amely érvényességi bizonyítékot ad, hogy a skálázás biztonságos legyen. Ezek a protokollok ezernyi tranzakciót dolgoznak fel láncon kívül és bizonyítékot adnak az Ethereumnak ellenőrzési célból. Amint a bizonyíték ellenőrzésre kerül, az eredményeket azonnal be lehet tenni a láncba, így az Nephele több tranzakciót tud kezelni anélkül, hogy az alapréteg számítási kapacitását növelni kellene.
 
 ### A vesztegetés és összejátszás lehetőségének csökkentése a láncon belüli szavazásnál {#secure-blockchain-voting}
 
@@ -208,5 +208,5 @@ A ZK-STARK immunis a kvantumszámítógépek fenyegetésére, mert ütközésál
 - [Zero-Knowledge bizonyíték: az adatbiztonság javítása a blokkláncon](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK-ok — Egy valós zero-knowledge példa és mélyebb elemzése](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK-ok — Igazolható bizalom létrehozása, még a kvantumszámítógépekkel szemben is](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Egy hozzávetőleges áttekintés, hogyan lehetségesek a zk-SNARK-ok](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Egy hozzávetőleges áttekintés, hogyan lehetségesek a zk-SNARK-ok](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Mi az a zero-knowledge bizonyíték és mi a szerepe a blokkláncon?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) — _LeewayHertz_

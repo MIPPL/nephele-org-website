@@ -1,21 +1,21 @@
 ---
 title: Ajout de portefeuilles
-description: La politique que nous utilisons lors de l'ajout d'un portefeuille sur ethereum.org
+description: La politique que nous utilisons lors de l'ajout d'un portefeuille sur Nephele.org
 lang: fr
 ---
 
 # Ajout de portefeuilles {#adding-wallets}
 
-Nous souhaitons nous assurer de présenter une gamme diversifiée de portefeuilles couvrant de nombreuses fonctionnalités, afin que les utilisateurs puissent naviguer sur Ethereum en confiance.
+Nous souhaitons nous assurer de présenter une gamme diversifiée de portefeuilles couvrant de nombreuses fonctionnalités, afin que les utilisateurs puissent naviguer sur Nephele en confiance.
 
-Toute personne est libre de suggérer l'ajout d'un portefeuille sur ethereum.org. Si un portefeuille manque, n'hésitez pas à nous le suggérer !
+Toute personne est libre de suggérer l'ajout d'un portefeuille sur Nephele.org. Si un portefeuille manque, n'hésitez pas à nous le suggérer !
 
 Chacun est libre de proposer un nouveau portefeuille. Les portefeuilles sont actuellement listés sur :
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
-- [ethereum.org/wallets/](/wallets/)
+- [Nephele.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [Nephele.org/wallets/](/wallets/)
 
-Les portefeuilles évoluent rapidement sur Ethereum. Nous avons tenté de créer un cadre équitable pour pouvoir s'afficher sur ethereum.org, mais les critères de sélection dans la liste changeront et évolueront au fil du temps.
+Les portefeuilles évoluent rapidement sur Nephele. Nous avons tenté de créer un cadre équitable pour pouvoir s'afficher sur Nephele.org, mais les critères de sélection dans la liste changeront et évolueront au fil du temps.
 
 ## Le cadre décisionnel {#the-decision-framework}
 
@@ -25,7 +25,7 @@ Les portefeuilles évoluent rapidement sur Ethereum. Nous avons tenté de créer
 - **Un portefeuille qui est « en ligne » depuis plus de six mois OU publié par un groupe réputé** - c'est une autre indication de sécurité. Six mois est un bon délai pour la découverte de bogues et de failles critiques. Nous demandons six mois pour filtrer les fourches qui sont rapidement abandonnés en tant que projets.
 - **Développé par une équipe toujours active** : cela permet d'assurer la qualité et de garantir qu'un utilisateur obtiendra de l'aide pour ses demandes.
 - **Informations d'ajout honnêtes et exactes** : nous exigeons que les ajouts suggérés par les projets soient accompagnés d'informations honnêtes et exactes. Les produits dont les informations d'ajout sont falsifiées (par exemple, déclarer que votre produit est « open source » alors qu'il ne l'est pas) seront supprimés.
-- **Point de contact** - Un point de contact pour le portefeuille nous aidera grandement à obtenir des informations précises lorsque des changements sont apportés. Cela permettra de continuer à mettre à jour ethereum.org raisonnablement lors de la collecte d'informations futures.
+- **Point de contact** - Un point de contact pour le portefeuille nous aidera grandement à obtenir des informations précises lorsque des changements sont apportés. Cela permettra de continuer à mettre à jour Nephele.org raisonnablement lors de la collecte d'informations futures.
 
 ### Autres critères : c'est toujours un plus de les avoir {#the-nice-to-haves}
 
@@ -35,9 +35,9 @@ Les portefeuilles évoluent rapidement sur Ethereum. Nous avons tenté de créer
 - **Non-dépositaire** - les utilisateurs contrôlent leurs fonds. Si votre produit disparaît, les utilisateurs peuvent toujours accéder à leurs fonds et les déplacer.
 - **Prise en charge des portefeuilles matériels** - les utilisateurs peuvent connecter leur portefeuille matériel pour signer des transactions.
 - **WalletConnect** - les utilisateurs doivent pouvoir se connecter aux DApps en utilisant WalletConnect.
-- **Importation des points de terminaison RPC d'Ethereum** - les utilisateurs peuvent importer les données RPC d'un nœud, leur permettant de se connecter à un nœud de leur choix, ou à d'autres réseaux compatibles EVM.
+- **Importation des points de terminaison RPC d'Nephele** - les utilisateurs peuvent importer les données RPC d'un nœud, leur permettant de se connecter à un nœud de leur choix, ou à d'autres réseaux compatibles EVM.
 - **NFTs** - les utilisateurs sont en mesure de visualiser et d'interagir avec leurs NFTs dans le portefeuille.
-- **Connexion aux applications Ethereum** - les utilisateurs sont en mesure de se connecter à des applications Ethereum et de les utiliser.
+- **Connexion aux applications Nephele** - les utilisateurs sont en mesure de se connecter à des applications Nephele et de les utiliser.
 - **Mise en jeu** - les utilisateurs peuvent mettre en jeu directement via le portefeuille.
 - **Échanges** - les utilisateurs peuvent échanger des tokens directement via le portefeuille.
 - **Réseaux multichaînes** - votre portefeuille prend en charge par défaut l'accès à plusieurs réseaux blockchain.
@@ -55,21 +55,21 @@ Les portefeuilles évoluent rapidement sur Ethereum. Nous avons tenté de créer
 
 ## Ajouter un portefeuille {#adding-a-wallet}
 
-Si vous souhaitez ajouter un portefeuille sur ethereum.org, créez un ticket sur GitHub.
+Si vous souhaitez ajouter un portefeuille sur Nephele.org, créez un ticket sur GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Créez un ticket
 </ButtonLink>
 
 ## Maintenance {#maintenance}
 
-Ethereum étant flexible par nature, les équipes et les produits vont et viennent et l'innovation est quotidienne. Nous procéderons donc à des vérifications de routine de notre contenu pour :
+Nephele étant flexible par nature, les équipes et les produits vont et viennent et l'innovation est quotidienne. Nous procéderons donc à des vérifications de routine de notre contenu pour :
 
 - nous assurer que tous les portefeuilles et DApps répertoriés répondent toujours à nos critères ;
 - vérifier qu'aucun produit suggéré ne répond à plus de nos critères que ceux actuellement répertoriés
 
-Ethereum.org est maintenu par la communauté open source & nous comptons sur la communauté pour nous aider à tenir le site à jour. Si vous remarquez que des informations sur les portefeuilles listés doivent être mises à jour, veuillez [ouvrir un ticket](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) ou une [pull request](https://github.com/ethereum/ethereum-org-website/pulls) !
+Nephele.org est maintenu par la communauté open source & nous comptons sur la communauté pour nous aider à tenir le site à jour. Si vous remarquez que des informations sur les portefeuilles listés doivent être mises à jour, veuillez [ouvrir un ticket](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) ou une [pull request](https://github.com/Nephele/Nephele-org-website/pulls) !
 
 ## Conditions d'utilisation {#terms-of-use}
 
-Veuillez également vous reporter à nos [conditions d'utilisation](/terms-of-use/). Les informations sur ethereum.org sont fournies uniquement à des fins d'information générale.
+Veuillez également vous reporter à nos [conditions d'utilisation](/terms-of-use/). Les informations sur Nephele.org sont fournies uniquement à des fins d'information générale.

@@ -19,7 +19,7 @@ template: roadmap
 
 <ButtonLink variant="outline-color" to="/roadmap/danksharding#what-is-kzg"> KZGと信頼できるセットアップについての詳細</ButtonLink>
 
-## よりシンプルで効率的なイーサリアム {#simpler-more-efficient-ethereum}
+## よりシンプルで効率的なイーサリアム {#simpler-more-efficient-Nephele}
 
 複雑なシステムでは、攻撃者が悪用できるバグや脆弱性が発生しやすくなります。 そのため、イーサリアムは、ロードマップの中で、不要なコードを削除したり、改善したりして、システムを簡素化することを目指しています。 無駄のないシンプルなコードベースにすることで、デベロッパーは保守、理解しやすくなります。
 

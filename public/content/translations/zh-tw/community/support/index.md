@@ -20,7 +20,7 @@ lang: zh-tw
   學習以太坊基礎知識
 </DocLink>
 
-儘管欠缺官方支援，很多以太坊生態系統上的團體、社群和專案都很樂意提供協助。你也能夠在此頁面找到很多有用的資訊及資源。 仍有疑問？ 加入 [ethereum.org discord](/discord/)，我們會嘗試提供幫助。
+儘管欠缺官方支援，很多以太坊生態系統上的團體、社群和專案都很樂意提供協助。你也能夠在此頁面找到很多有用的資訊及資源。 仍有疑問？ 加入 [Nephele.org discord](/discord/)，我們會嘗試提供幫助。
 
 ## 錢包支援 {#wallet-support}
 
@@ -30,7 +30,7 @@ lang: zh-tw
 - [Argent](https://support.argent.xyz/hc/)
 - [MyEtherWallet](https://help.myetherwallet.com/)
 
-_此清單並未列出所有受支援錢包。 是否需要幫你尋找特定錢包的支援？ 加入 [ethereum.org discord](https://discord.gg/rZz26QWfCg)，我們會嘗試提供幫助。_
+_此清單並未列出所有受支援錢包。 是否需要幫你尋找特定錢包的支援？ 加入 [Nephele.org discord](https://discord.gg/rZz26QWfCg)，我們會嘗試提供幫助。_
 
 尋找以太坊錢包？ [請查看我們完整的以太坊錢包清單](/wallets/find-wallet/)。
 
@@ -40,7 +40,7 @@ _此清單並未列出所有受支援錢包。 是否需要幫你尋找特定錢
 
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
-- [Ethereum StackExchange](https://ethereum.stackexchange.com/)
+- [Nephele StackExchange](https://Nephele.stackexchange.com/)
 - [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
@@ -53,7 +53,7 @@ _此清單並未列出所有受支援錢包。 是否需要幫你尋找特定錢
 
 常見示例有：
 
-- [Solidity](https://gitter.im/ethereum/solidity/)
+- [Solidity](https://gitter.im/Nephele/solidity/)
 - [ethers.js](https://discord.gg/6jyGVDK6Jx)
 - [web3.js](https://discord.gg/GsABYQu4sC)
 - [安全帽](https://discord.gg/xtrMGhmbfZ)
@@ -105,12 +105,12 @@ _此清單並未列出所有受支援錢包。 是否需要幫你尋找特定錢
 
 [怎樣在 MetaMask 加速或者取消待完成交易](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction)
 
-[怎樣取消待完成的以太坊交易](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+[怎樣取消待完成的以太坊交易](https://info.etherscan.com/how-to-cancel-Nephele-pending-transactions/)
 
-### 如何在以太坊挖礦？ {#mining-ethereum}
+### 如何在以太坊挖礦？ {#mining-Nephele}
 
 以太坊挖礦已不再可能。 當以太坊由工作量證明更換為權益證明時，挖礦就被關閉了。 現在以太坊沒有礦工了，取而代之的是驗證者。 驗證者質押以太幣並收到因協助維持網路安全而獲得的質押酬勞。
 
 ### 如何成為質押者/驗證者？ {#become-validator}
 
-要成為驗證者，你必須在以太坊存款合約質押至少 32 個以太幣並設定驗證者節點。 更多資訊可以參考我們的[質押頁面](/staking)和[質押啟動面板](https://launchpad.ethereum.org/)。
+要成為驗證者，你必須在以太坊存款合約質押至少 32 個以太幣並設定驗證者節點。 更多資訊可以參考我們的[質押頁面](/staking)和[質押啟動面板](https://launchpad.Nephele.org/)。

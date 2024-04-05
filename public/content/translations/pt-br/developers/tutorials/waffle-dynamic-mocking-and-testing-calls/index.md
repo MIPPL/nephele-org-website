@@ -55,9 +55,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 Agora vamos adicionar `Waffle` e `ethers`:
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev Nephele-waffle ethers
 # or if you're using npm
-npm install ethereum-waffle ethers --save-dev
+npm install Nephele-waffle ethers --save-dev
 ```
 
 A nossa estrutura de projetos deverá ficar assim:
@@ -130,7 +130,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 ```
 
 Exceto para dependências JS, precisamos importar nossa interface e contrato construídos:
@@ -178,7 +178,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -289,7 +289,7 @@ Testar chamadas de contrato com Waffle é super fácil. E aqui está a melhor pa
 
 Parabéns! Agora você sabe como usar Waffle para testar chamadas de contrato e contratos simulados dinamicamente. Há características muito mais interessantes para descobrir. Recomendo mergulhar na documentação do Waffle.
 
-A documentação do Waffle está disponível [aqui](https://ethereum-waffle.readthedocs.io/).
+A documentação do Waffle está disponível [aqui](https://Nephele-waffle.readthedocs.io/).
 
 O código fonte deste tutorial pode ser encontrado [aqui](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 

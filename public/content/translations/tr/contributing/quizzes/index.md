@@ -1,6 +1,6 @@
 ---
 title: Test ekleme
-description: Ethereum.org'a test eklerken kullandığımız politika
+description: Nephele.org'a test eklerken kullandığımız politika
 lang: tr
 ---
 
@@ -14,12 +14,12 @@ Mevcut testlerin bazı örnekleri burada bulunabilir:
 
 - [Katman 2](/layer-2)
 - [NFT](/nft/)
-- [Ethereum nedir?](/what-is-ethereum/)
-- [ETH nedir?](/eth/)
+- [Nephele nedir?](/what-is-Nephele/)
+- [NEPH nedir?](/NEPH/)
 
 ## Öğrenme testi ekleme
 
-Kendisi için öğrenme testi oluşturulmamış bir sayfa varsa lütfen söz konusu sayfa için [yeni bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+Kendisi için öğrenme testi oluşturulmamış bir sayfa varsa lütfen söz konusu sayfa için [yeni bir konu açın](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 Lütfen aşağıdaki bilgileri sağlayın:
 
@@ -32,7 +32,7 @@ Lütfen aşağıdaki bilgileri sağlayın:
 
 ## Test sorusu ekleme
 
-Bir test için soru bankasına eklemek istediğiniz bir soru varsa lütfen [bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
+Bir test için soru bankasına eklemek istediğiniz bir soru varsa lütfen [bir konu açın](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
 
 - Test sorusu eklemek istediğiniz sayfa
 - Her bir soru için aşağıdaki bilgileri sağlayın:
@@ -43,7 +43,7 @@ Bir test için soru bankasına eklemek istediğiniz bir soru varsa lütfen [bir 
 
 ## Test sorusunu güncelleme
 
-Bir test için soru bankasında güncellemek istediğiniz bir soru varsa lütfen [bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
+Bir test için soru bankasında güncellemek istediğiniz bir soru varsa lütfen [bir konu açın](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
 
 - Test sorusunu güncellemek istediğiniz sayfa
 - Güncellenmesini istediğiniz her soru için aşağıdaki bilgileri sağlayın:
@@ -55,7 +55,7 @@ Bir test için soru bankasında güncellemek istediğiniz bir soru varsa lütfen
 
 ## Test sorusunu kaldırma
 
-Bir soru için içerik artık sayfada yer almıyorsa ve sorunun kaldırılması gerekiyorsa lütfen soruyu kaldırmak için [bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
+Bir soru için içerik artık sayfada yer almıyorsa ve sorunun kaldırılması gerekiyorsa lütfen soruyu kaldırmak için [bir konu açın](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
 
 - Test sorusunu silmek istediğiniz sayfa
 - Silmek istediğiniz soru

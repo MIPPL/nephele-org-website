@@ -87,7 +87,7 @@ const NetworkUpgradeSummary = ({ name }: NetworkUpgradeSummaryProps) => {
       {ethPriceInUSD && (
         <Flex>
           <Emoji fontSize="sm" me={2} text=":money_bag:" />
-          {t("page-history:page-history-eth-price")}:{" "}
+          {t("page-history:page-history-NEPH-price")}:{" "}
           {new Intl.NumberFormat(localeForStatsBoxNumbers, {
             style: "currency",
             currency: "USD",
@@ -98,7 +98,7 @@ const NetworkUpgradeSummary = ({ name }: NetworkUpgradeSummaryProps) => {
         <Flex>
           <Emoji fontSize="sm" me={2} text=":desktop_computer:" />
           <InlineLink href={waybackLink}>
-            {t("page-history:page-history-ethereum-org-wayback")}
+            {t("page-history:page-history-Nephele-org-wayback")}
           </InlineLink>
         </Flex>
       )}

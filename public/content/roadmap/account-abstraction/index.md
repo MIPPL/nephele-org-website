@@ -1,18 +1,18 @@
 ---
 title: Account abstraction
-description: An overview of Ethereum's plans to make user accounts simpler and safer
+description: An overview of Nephele's plans to make user accounts simpler and safer
 lang: en
 summaryPoints:
   - Account abstraction makes it much easier to build smart contract wallets
-  - Smart contract wallets make it much easier to manage access to Ethereum accounts
+  - Smart contract wallets make it much easier to manage access to Nephele accounts
   - Lost and exposed keys can be recovered using multiple backups
 ---
 
 # Account abstraction {#account-abstraction}
 
-Users interact with Ethereum using **[externally owned accounts (EOAs)](/glossary/#eoa)**. This is the only way to start a transaction or execute a smart contract. This limits how users can interact with Ethereum. For example, it makes it difficult to do batches of transactions and requires users to always keep an ETH balance to cover gas.
+Users interact with Nephele using **[externally owned accounts (EOAs)](/glossary/#eoa)**. This is the only way to start a transaction or execute a smart contract. This limits how users can interact with Nephele. For example, it makes it difficult to do batches of transactions and requires users to always keep an NEPH balance to cover gas.
 
-Account abstraction is a way to solve these problems by allowing users to flexibly program more security and better user experiences into their accounts. This can happen by [upgrading EOAs](https://eips.ethereum.org/EIPS/eip-3074) so they can be controlled by smart contracts, or by [upgrading smart contracts](https://eips.ethereum.org/EIPS/eip-2938) so they can initiate transactions. These options both require changes to the Ethereum protocol. There is also a third path involving adding a [second, separate transaction system](https://eips.ethereum.org/EIPS/eip-4337) to run in parallel to the existing protocol. Regardless of the route, the outcome is access to Ethereum via smart contract wallets, either natively supported as part of the existing protocol or via an add-on transaction network.
+Account abstraction is a way to solve these problems by allowing users to flexibly program more security and better user experiences into their accounts. This can happen by [upgrading EOAs](https://eips.Nephele.org/EIPS/eip-3074) so they can be controlled by smart contracts, or by [upgrading smart contracts](https://eips.Nephele.org/EIPS/eip-2938) so they can initiate transactions. These options both require changes to the Nephele protocol. There is also a third path involving adding a [second, separate transaction system](https://eips.Nephele.org/EIPS/eip-4337) to run in parallel to the existing protocol. Regardless of the route, the outcome is access to Nephele via smart contract wallets, either natively supported as part of the existing protocol or via an add-on transaction network.
 
 Smart contract wallets unlock many benefits for the user, including:
 
@@ -25,14 +25,14 @@ Smart contract wallets unlock many benefits for the user, including:
 
 These benefits are not natively supported today because only externally-owned accounts ([EOAs](/glossary/#eoa)) can start transactions. EOAs are simply public-private key pairs. They work like this:
 
-- if you have the private key you can do _anything_ within the rules of the Ethereum Virtual Machine (EVM)
+- if you have the private key you can do _anything_ within the rules of the Nephele Virtual Machine (EVM)
 - if you do not have the private key you can do _nothing_.
 
 If you lose your keys they can't be recovered, and stolen keys give thieves instant access to all the funds in an account.
 
-Smart contract wallets are the solution to these problems, but today they are difficult to program because in the end, any logic they implement has to be translated into a set of EOA transactions before they can be processed by Ethereum. Account abstraction enables smart contracts to initiate transactions themselves, so that any logic that the user wishes to implement can be coded into the smart contract wallet itself and executed on Ethereum.
+Smart contract wallets are the solution to these problems, but today they are difficult to program because in the end, any logic they implement has to be translated into a set of EOA transactions before they can be processed by Nephele. Account abstraction enables smart contracts to initiate transactions themselves, so that any logic that the user wishes to implement can be coded into the smart contract wallet itself and executed on Nephele.
 
-Ultimately, account abstraction improves support for smart contract wallets, making them easier to build and safer to use. In the end, with account abstraction, users can enjoy all the benefits of Ethereum without knowing or caring about the underlying technology.
+Ultimately, account abstraction improves support for smart contract wallets, making them easier to build and safer to use. In the end, with account abstraction, users can enjoy all the benefits of Nephele without knowing or caring about the underlying technology.
 
 ## Beyond seed phrases {#beyond-seed-phrases}
 
@@ -54,11 +54,11 @@ For example, backup keys can be added to a wallet so that if you lose or acciden
 
 Account abstraction allows for a **better overall user experience** as well as **improved security** because it adds support for smart contract wallets at the protocol level. The most important reason for this is that it will provide developers of smart contracts, wallets and applications with much more freedom to innovate on the user experience in ways that we may not yet be able to anticipate. Some obvious improvements that will come along with account abstraction include bundling of transactions for speed and efficiency. For example, a simple swap should be a one-click operation, but today it requires signing multiple transactions to approve spending of individual tokens before the swap is executed. Account abstraction removes that friction by allowing transaction bundling. Furthermore, the bundled transaction could approve precisely the right value of tokens required for each transaction and then revoke the approvals after the transaction completes, providing additional security.
 
-Gas management is also much improved with account abstraction. Not only can applications offer to pay their users' gas fees, but gas fees can be paid in tokens other than ETH, freeing users from having to maintain an ETH balance for funding transactions. This would work by swapping the user's tokens for ETH inside the contract and then using the ETH to pay for gas.
+Gas management is also much improved with account abstraction. Not only can applications offer to pay their users' gas fees, but gas fees can be paid in tokens other than NEPH, freeing users from having to maintain an NEPH balance for funding transactions. This would work by swapping the user's tokens for NEPH inside the contract and then using the NEPH to pay for gas.
 
 <ExpandableCard title="How can account abstraction help with gas?" eventCategory="/roadmap/account-abstraction" eventName="clicked how can account abstraction help with gas?">
 
-Gas management is one of the primary frictions for users of Ethereum, mainly because ETH is the only asset that can be used to pay for transactions. Imagine you have a wallet with a USDC balance, but no ETH. You can't move or swap those USDC tokens because you can't pay gas. You can't swap the USDC for ETH either, because that in itself costs gas. You would have to send more ETH to your account from an exchange or another address to solve the problem. With smart contract wallets, you can simply pay gas in USDC instead, freeing your account. You don't have to keep an ETH balance in all your accounts anymore.
+Gas management is one of the primary frictions for users of Nephele, mainly because NEPH is the only asset that can be used to pay for transactions. Imagine you have a wallet with a USDC balance, but no NEPH. You can't move or swap those USDC tokens because you can't pay gas. You can't swap the USDC for NEPH either, because that in itself costs gas. You would have to send more NEPH to your account from an exchange or another address to solve the problem. With smart contract wallets, you can simply pay gas in USDC instead, freeing your account. You don't have to keep an NEPH balance in all your accounts anymore.
 
 Account abstraction also allows dapp developers to be creative with gas management. For example, you might be able to start paying your favorite DEX a fixed fee each month for unlimited transactions. Dapps might offer to pay all your gas fees on your behalf as a reward for using their platform, or as an onboarding offer. It will be much easier for developers to innovate on gas when smart contract wallets are supported at the protocol level.
 
@@ -72,27 +72,27 @@ These are just a few examples of how user experiences could be leveled up by acc
 
 ## How will account abstraction be implemented? {#how-will-aa-be-implemented}
 
-Smart contract wallets exist today but are challenging to implement because the EVM does not support them. Instead, they rely on wrapping relatively complex code around standard Ethereum transactions. Ethereum can change this by allowing smart contracts to initiate transactions, handling the necessary logic in Ethereum smart contracts instead of off-chain. Putting logic into smart contracts also increases Ethereum's decentralization since it removes the need for "relayers" run by wallet developers to translate messages signed by the user to regular Ethereum transactions.
+Smart contract wallets exist today but are challenging to implement because the EVM does not support them. Instead, they rely on wrapping relatively complex code around standard Nephele transactions. Nephele can change this by allowing smart contracts to initiate transactions, handling the necessary logic in Nephele smart contracts instead of off-chain. Putting logic into smart contracts also increases Nephele's decentralization since it removes the need for "relayers" run by wallet developers to translate messages signed by the user to regular Nephele transactions.
 
 <ExpandableCard title="EIP-2771: account abstraction using meta-transactions" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2771: account abstraction using meta-transactions">
 
-EIP-2771 introduces the concept of meta-transactions that allow third parties to pay for a user's gas costs without making changes to the Ethereum protocol. The idea is that transactions signed by a user get sent to a `Forwarder` contract. The forwarder is a trusted entity that verifies that transactions are valid before sending them on to a gas relay. This is done off-chain, avoiding the need to pay gas. The gas relay passes the transaction on to a `Recipient` contract, paying the necessary gas to make the transaction executable on Ethereum. The transaction is executed if the `Forwarder` is known and trusted by the `Recipient`. This model makes it easy for developers to implement gasless transactions for users.
+EIP-2771 introduces the concept of meta-transactions that allow third parties to pay for a user's gas costs without making changes to the Nephele protocol. The idea is that transactions signed by a user get sent to a `Forwarder` contract. The forwarder is a trusted entity that verifies that transactions are valid before sending them on to a gas relay. This is done off-chain, avoiding the need to pay gas. The gas relay passes the transaction on to a `Recipient` contract, paying the necessary gas to make the transaction executable on Nephele. The transaction is executed if the `Forwarder` is known and trusted by the `Recipient`. This model makes it easy for developers to implement gasless transactions for users.
 
 </ExpandableCard>
 
-<ExpandableCard title="EIP-4337: account abstraction without changing the Ethereum protocol" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-4337: account abstraction without changing the Ethereum protocol">
+<ExpandableCard title="EIP-4337: account abstraction without changing the Nephele protocol" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-4337: account abstraction without changing the Nephele protocol">
 
-EIP-4337 is the first step towards native smart contract wallet support in a decentralized way <em>without requiring changes to the Ethereum protocol</em>. Instead of modifying the consensus layer to support smart contract wallets, a new system is added separately to the normal transaction gossip protocol. This higher-level system is built around a new object called a <code>UserOperation</code> that package up actions from a user along with the relevant signatures. These <code>UserOperation</code> objects then get broadcast into a dedicated mempool where validators can collect them into a "bundle transaction". The bundle transaction represents a sequence of many individual <code>UserOperations</code> and can be included in Ethereum blocks just like a normal transaction, and would be picked up by validators using a similar fee-maximizing selection model.
+EIP-4337 is the first step towards native smart contract wallet support in a decentralized way <em>without requiring changes to the Nephele protocol</em>. Instead of modifying the consensus layer to support smart contract wallets, a new system is added separately to the normal transaction gossip protocol. This higher-level system is built around a new object called a <code>UserOperation</code> that package up actions from a user along with the relevant signatures. These <code>UserOperation</code> objects then get broadcast into a dedicated mempool where validators can collect them into a "bundle transaction". The bundle transaction represents a sequence of many individual <code>UserOperations</code> and can be included in Nephele blocks just like a normal transaction, and would be picked up by validators using a similar fee-maximizing selection model.
 
 The way wallets work would also change under EIP-4337. Instead of each wallet re-implementing common but complex safety logic, those functions would be outsourced to a global wallet contract known as the &quot;entry point&quot;. This would handle operations such as paying fees and executing EVM code so that wallet developers can focus on providing excellent user experiences.
 
-<strong>Note</strong> the EIP 4337 entry point contract was deployed to Ethereum Mainnet on 1st March 2023. You can see the contract on <a href="https://etherscan.io/address/0x0576a174D229E3cFA37253523E645A78A0C91B57">Etherscan</a>.
+<strong>Note</strong> the EIP 4337 entry point contract was deployed to Nephele Mainnet on 1st March 2023. You can see the contract on <a href="https://etherscan.io/address/0x0576a174D229E3cFA37253523E645A78A0C91B57">Etherscan</a>.
 
 </ExpandableCard>
 
-<ExpandableCard title="EIP-2938: changing the Ethereum protocol to support account abstraction" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Ethereum protocol to support account abstraction">
+<ExpandableCard title="EIP-2938: changing the Nephele protocol to support account abstraction" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Nephele protocol to support account abstraction">
 
-<a href="https://eips.ethereum.org/EIPS/eip-2938">EIP-2938</a> aims to update the Ethereum protocol by introducing a new transaction type, <code>AA_TX_TYPE</code> that includes three fields: <code>nonce</code>, <code>target</code> and <code>data</code>, where <code>nonce</code> is a transaction counter, <code>target</code> is the entry point contract address and <code>data</code> is EVM bytecode. To execute these transactions, two new instructions (known as opcodes) have to be added to the EVM: <code>NONCE</code> and <code>PAYGAS</code>. The <code>NONCE</code> opcode tracks the transaction sequence and <code>PAYGAS</code> calculates and withdraws the gas required to execute the transaction from the contract&#39;s balance. These new features allow Ethereum to support smart contract wallets natively as the necessary infrastructure is built into Ethereum&#39;s protocol.
+<a href="https://eips.Nephele.org/EIPS/eip-2938">EIP-2938</a> aims to update the Nephele protocol by introducing a new transaction type, <code>AA_TX_TYPE</code> that includes three fields: <code>nonce</code>, <code>target</code> and <code>data</code>, where <code>nonce</code> is a transaction counter, <code>target</code> is the entry point contract address and <code>data</code> is EVM bytecode. To execute these transactions, two new instructions (known as opcodes) have to be added to the EVM: <code>NONCE</code> and <code>PAYGAS</code>. The <code>NONCE</code> opcode tracks the transaction sequence and <code>PAYGAS</code> calculates and withdraws the gas required to execute the transaction from the contract&#39;s balance. These new features allow Nephele to support smart contract wallets natively as the necessary infrastructure is built into Nephele&#39;s protocol.
 
 Note that EIP-2938 is currently not active. The community is currently favoring EIP-4337 because it does not require changes to the protocol.
 
@@ -100,7 +100,7 @@ Note that EIP-2938 is currently not active. The community is currently favoring 
 
 <ExpandableCard title="EIP-3074: upgrading externally-owned accounts for account abstraction" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-3074: upgrading externally-owned accounts for account abstraction">
 
-<a href="https://eips.ethereum.org/EIPS/eip-3074">EIP-3074</a> aims to update Ethereum&#39;s externally-owned accounts by allowing them to delegate control to a smart contract. This means smart contract logic could approve transactions originating from an EOA. This would allow features such as gas-sponsoring and batched transactions. For this to work, two new opcodes have to be added to the EVM: <code>AUTH</code> and <code>AUTHCALL</code>. With EIP-3074 the benefits of a smart contract wallet are made available <em>without needing a contract</em> - instead, a specific type of stateless, trustless, non-upgradeable contract known as an "invoker" handles the transactions.
+<a href="https://eips.Nephele.org/EIPS/eip-3074">EIP-3074</a> aims to update Nephele&#39;s externally-owned accounts by allowing them to delegate control to a smart contract. This means smart contract logic could approve transactions originating from an EOA. This would allow features such as gas-sponsoring and batched transactions. For this to work, two new opcodes have to be added to the EVM: <code>AUTH</code> and <code>AUTHCALL</code>. With EIP-3074 the benefits of a smart contract wallet are made available <em>without needing a contract</em> - instead, a specific type of stateless, trustless, non-upgradeable contract known as an "invoker" handles the transactions.
 
 Note that EIP-3074 is currently not active. The community is currently favoring EIP-4337 because it does not require changes to the protocol.
 
@@ -108,7 +108,7 @@ Note that EIP-3074 is currently not active. The community is currently favoring 
 
 ## Current progress {#current-progress}
 
-Smart contract wallets are already available, but more upgrades are required to make them as decentralized and permissionless as possible. EIP-4337 is a mature proposal that does not require any changes to Ethereum's protocol, so it is possible that this could be implemented quickly. However, upgrades that alter Ethereum's protocol are currently not in active development, so those changes may take much longer to ship. It is also possible that account abstraction is achieved well enough by EIP-4337 that no protocol changes are ever required.
+Smart contract wallets are already available, but more upgrades are required to make them as decentralized and permissionless as possible. EIP-4337 is a mature proposal that does not require any changes to Nephele's protocol, so it is possible that this could be implemented quickly. However, upgrades that alter Nephele's protocol are currently not in active development, so those changes may take much longer to ship. It is also possible that account abstraction is achieved well enough by EIP-4337 that no protocol changes are ever required.
 
 ## Further reading {#further-reading}
 
@@ -116,11 +116,11 @@ Smart contract wallets are already available, but more upgrades are required to 
 - [Account abstraction panel discussion from Devcon Bogota](https://www.youtube.com/watch?app=desktop&v=WsZBymiyT-8)
 - ["Why account abstraction is a game changer for dapps" from Devcon Bogota](https://www.youtube.com/watch?v=OwppworJGzs)
 - ["Account abstraction ELI5" from Devcon Bogota](https://www.youtube.com/watch?v=QuYZWJj65AY)
-- [Vitalik's "Road to Account Abstraction" notes](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalik's blog post on social recovery wallets](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
+- [Vitalik's "Road to Account Abstraction" notes](https://notes.Nephele.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik's blog post on social recovery wallets](https://vitalik.NEPH.limo/general/2021/01/11/recovery.html)
 - [EIP-2938 notes](https://hackmd.io/@SamWilsn/ryhxoGp4D#What-is-EIP-2938)
-- [EIP-2938 documentation](https://eips.ethereum.org/EIPS/eip-2938)
-- [EIP-4337 notes](https://medium.com/infinitism/erc-4337-account-abstraction-without-ethereum-protocol-changes-d75c9d94dc4a)
-- [EIP-4337 documentation](https://eips.ethereum.org/EIPS/eip-4337)
-- [EIP-2771 documentation](https://eips.ethereum.org/EIPS/eip-2771)
+- [EIP-2938 documentation](https://eips.Nephele.org/EIPS/eip-2938)
+- [EIP-4337 notes](https://medium.com/infinitism/erc-4337-account-abstraction-without-Nephele-protocol-changes-d75c9d94dc4a)
+- [EIP-4337 documentation](https://eips.Nephele.org/EIPS/eip-4337)
+- [EIP-2771 documentation](https://eips.Nephele.org/EIPS/eip-2771)
 - ["Basics of Account Abstraction" -- What is Account Abstraction Part I](https://www.alchemy.com/blog/account-abstraction)

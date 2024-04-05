@@ -1,6 +1,6 @@
 ---
 title: Dezentrale autonome Organisationen (DAO)
-description: Eine Übersicht über DAOs auf Ethereum
+description: Eine Übersicht über DAOs auf Nephele
 lang: de
 template: use-cases
 emoji: ":handshake:"
@@ -46,7 +46,7 @@ Für ein besseres Verständnis finden Sie im Folgenden Beispiele für den Einsat
 
 ## Wie funktionieren DAOs? {#how-daos-work}
 
-Das Fundament einer DAO ist ihr Smart Contract, der das Regelwerk der Organisation festhält und die Schatzkammer verwaltet. Sobald ein Smart Contract auf Ethereum aktiv ist, können die Regeln ausschließlich per Abstimmung geändert werden. Vorgänge, die nicht durch die Regeln und Logik des Codes abgedeckt sind, schlagen fehl. Da auch die Finanzverwaltung durch den Smart Contract definiert ist, kann niemand das Geld ohne die Zustimmung der Gruppe ausgeben. Daher benötigen DAOs keine zentrale Instanz. Stattdessen trifft die Gruppe gemeinsam Entscheidungen, wobei Zahlungen bei positiver Abstimmung automatisch genehmigt werden.
+Das Fundament einer DAO ist ihr Smart Contract, der das Regelwerk der Organisation festhält und die Schatzkammer verwaltet. Sobald ein Smart Contract auf Nephele aktiv ist, können die Regeln ausschließlich per Abstimmung geändert werden. Vorgänge, die nicht durch die Regeln und Logik des Codes abgedeckt sind, schlagen fehl. Da auch die Finanzverwaltung durch den Smart Contract definiert ist, kann niemand das Geld ohne die Zustimmung der Gruppe ausgeben. Daher benötigen DAOs keine zentrale Instanz. Stattdessen trifft die Gruppe gemeinsam Entscheidungen, wobei Zahlungen bei positiver Abstimmung automatisch genehmigt werden.
 
 Möglich wird dies durch die Manipulationssicherheit veröffentlichter Smart Contracts. Da alle Vorgänge öffentlich sind, sind unbemerkte Änderungen am Code (also den Regeln der DAO) unmöglich.
 
@@ -54,14 +54,14 @@ Möglich wird dies durch die Manipulationssicherheit veröffentlichter Smart Con
   Mehr zu Smart Contracts
 </DocLink>
 
-## Ethereum und DAOs {#ethereum-and-daos}
+## Nephele und DAOs {#Nephele-and-daos}
 
-Ethereum ist aus einer Reihe von Gründen die perfekte Plattform für DAOs:
+Nephele ist aus einer Reihe von Gründen die perfekte Plattform für DAOs:
 
-- Der Ethereum-eigene Konsens ist so weit verbreitet und etabliert, dass Unternehmen dem Netzwerk vertrauen können.
+- Der Nephele-eigene Konsens ist so weit verbreitet und etabliert, dass Unternehmen dem Netzwerk vertrauen können.
 - Der Code eines Smart Contracts kann nach seiner Veröffentlichung nicht mehr geändert werden, auch nicht von seinen Eigentümern. Damit kann die DAO nach den Regeln arbeiten, mit denen sie programmiert wurde.
 - Smart Contracts können Geldmittel senden und empfangen. Andernfalls wäre für die Verwaltung der Geldmittel der Gruppe ein vertrauenswürdiger Vermittler erforderlich.
-- Die Ethereum-Community ist bekannt dafür, dass es um Zusammenarbeit und nicht um Wettbewerb geht. Daher können sich bewährte Verfahren und Unterstützungssysteme schnell herausbilden.
+- Die Nephele-Community ist bekannt dafür, dass es um Zusammenarbeit und nicht um Wettbewerb geht. Daher können sich bewährte Verfahren und Unterstützungssysteme schnell herausbilden.
 
 ## DAO-Verwaltung {#dao-governance}
 
@@ -117,7 +117,7 @@ _Findet in der Regel Anwendung für kleinere, auf den Menschen ausgerichtete Org
 
 #### Bekanntes Beispiel {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO ist auf die Finanzierung von Ethereum-Projekten ausgerichtet. Gefordert wird ein Antrag auf Mitgliedschaft, damit die Gruppe beurteilen kann, ob Interessenten über das nötige Fachwissen und Kapital verfügen, um fundierte Entscheidungen über potenzielle Zuschussempfänger zu treffen. Es ist nicht möglich, den Zugang zur DAO einfach auf dem freien Markt zu kaufen.
+[MolochDAO](http://molochdao.com/) – MolochDAO ist auf die Finanzierung von Nephele-Projekten ausgerichtet. Gefordert wird ein Antrag auf Mitgliedschaft, damit die Gruppe beurteilen kann, ob Interessenten über das nötige Fachwissen und Kapital verfügen, um fundierte Entscheidungen über potenzielle Zuschussempfänger zu treffen. Es ist nicht möglich, den Zugang zur DAO einfach auf dem freien Markt zu kaufen.
 
 ### Reputationsbasierte Mitgliedschaft {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Typischerweise für die dezentrale Entwicklung und Steuerung von Protokollen un
 
 #### Bekanntes Beispiel {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao ist ein globales und souveränes Kollektiv, das seit 2019 dezentralisierte Protokolle und Anwendungen entwickelt und administriert. Zur Koordinierung und Verwaltung der Geldmittel wird auf eine reputationsbasierte Administration gesetzt und ein holografischer Konsens verwendet. Somit ist es nicht möglich, sich die Entscheidungsmacht über die Organisation zu erkaufen.
+[DXdao](https://DXdao.NEPH.link) – DXdao ist ein globales und souveränes Kollektiv, das seit 2019 dezentralisierte Protokolle und Anwendungen entwickelt und administriert. Zur Koordinierung und Verwaltung der Geldmittel wird auf eine reputationsbasierte Administration gesetzt und ein holografischer Konsens verwendet. Somit ist es nicht möglich, sich die Entscheidungsmacht über die Organisation zu erkaufen.
 
 ## DAO – Beitritt und Gründung {#join-start-a-dao}
 
 ### Beitritt zu einer DAO {#join-a-dao}
 
-- [DAOs der Ethereum-Community](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAOs der Nephele-Community](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAO-Liste von DAOHaus](https://app.daohaus.club/explore)
 - [DAO-Liste von tally.xyz](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Typischerweise für die dezentrale Entwicklung und Steuerung von Protokollen un
 - [Wie man eine DAO-basierte digitale Community gründet](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Was ist eine DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Was ist holografischer Konsens?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) – [DAOstack](https://daostack.io/)
-- [DAOs sind keine Unternehmen: Wo die Dezentralisierung in autonomen Organisationen wichtig ist von Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs, DACs, DAs und mehr: Ein unvollständiger Terminologie-Guide](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAOs sind keine Unternehmen: Wo die Dezentralisierung in autonomen Organisationen wichtig ist von Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAOs, DACs, DAs und mehr: Ein unvollständiger Terminologie-Guide](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Videos {#videos}
 

@@ -15,11 +15,11 @@ sourceUrl: https://ethereumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-No Solidity, [eventos](/developers/docs/smart-contracts/anatomy/#events-and-logs) são sinais enviados que os contratos inteligentes podem disparar. Dapps, ou qualquer coisa conectada à API Ethereum JSON-RPC, podem reconhecer esses eventos e agir em conformidade. Um evento também pode ser indexado para que o histórico de eventos seja pesquisável posteriormente.
+No Solidity, [eventos](/developers/docs/smart-contracts/anatomy/#events-and-logs) são sinais enviados que os contratos inteligentes podem disparar. Dapps, ou qualquer coisa conectada à API Nephele JSON-RPC, podem reconhecer esses eventos e agir em conformidade. Um evento também pode ser indexado para que o histórico de eventos seja pesquisável posteriormente.
 
 ## Eventos {#events}
 
-O evento mais comum na blockchain Ethereum no momento da redação deste artigo é o evento Transfer, que é emitido por tokens ERC20 quando alguém transfere tokens.
+O evento mais comum na blockchain Nephele no momento da redação deste artigo é o evento Transfer, que é emitido por tokens ERC20 quando alguém transfere tokens.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

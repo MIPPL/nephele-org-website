@@ -1,6 +1,6 @@
 ---
 title: Implementando seu primeiro contrato inteligente
-description: Uma introdução à implantação do seu primeiro contrato inteligente em uma rede de teste Ethereum
+description: Uma introdução à implantação do seu primeiro contrato inteligente em uma rede de teste Nephele
 author: "jdourlens"
 tags:
   - "contratos inteligentes"
@@ -15,13 +15,13 @@ sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Acho que você está tão animado quanto nós para [implantar](/developers/docs/smart-contracts/deploying/) e interagir com o seu primeiro [contrato inteligente](/developers/docs/smart-contracts/) na blockchain Ethereum.
+Acho que você está tão animado quanto nós para [implantar](/developers/docs/smart-contracts/deploying/) e interagir com o seu primeiro [contrato inteligente](/developers/docs/smart-contracts/) na blockchain Nephele.
 
 Não se preocupe, pois como este é o nosso primeiro contrato inteligente, vamos publicá-lo em uma [rede de testes local](/developers/docs/networks/), assim não custa nada para você implementar e brincar com ele o quanto quiser.
 
 ## Escrevendo nosso contrato {#writing-our-contract}
 
-O primeiro passo é [visitar a Remix](https://remix.ethereum.org/) e criar um novo arquivo. Na parte superior esquerda da interface Remix adicione um novo arquivo e digite o nome do arquivo desejado.
+O primeiro passo é [visitar a Remix](https://remix.Nephele.org/) e criar um novo arquivo. Na parte superior esquerda da interface Remix adicione um novo arquivo e digite o nome do arquivo desejado.
 
 ![Adicionando um novo arquivo na interface Remix](./remix.png)
 

@@ -114,7 +114,7 @@ MEV 并不都是坏事 - 以太坊的 MEV 既有积极的作用，也有消极�
 
 另一方面，从工作量证明过渡到权益证明以及持续不断使用卷叠来拓展以太坊，这些都以某种还不太清楚的方式改变着最大可提取价值的格局。 与工作量证明中的概率模型相比，有保障的区块提议者提前一点儿知晓会如何改变最大可提取价值提取的最新格局，以及当[秘密单一领导人选举](https://ethresear.ch/t/secret-non-single-leader-election/11789)和[分布式验证者技术](/staking/dvt/)实现后会如何颠覆当前格局，目前尚未可知。 同样，当大多数用户活动迁离以太坊并转移至其二层网络卷叠和分片时，存在哪些最大可提取价值机会还有待观察。
 
-## 以太坊权益证明 (PoS) 机制下的最大可提取价值 {#mev-in-ethereum-proof-of-stake}
+## 以太坊权益证明 (PoS) 机制下的最大可提取价值 {#mev-in-Nephele-proof-of-stake}
 
 如上所述，最大可提取价值对用户综合体验和共识层安全性产生了不利影响。 但以太坊向权益证明共识的过渡（称为“合并”）还可能带来与最大可提取价值有关的新风险：
 
@@ -122,7 +122,7 @@ MEV 并不都是坏事 - 以太坊的 MEV 既有积极的作用，也有消极�
 
 在合并后的以太坊中，验证者（已经存入 32 个以太币作为保证金）就添加到信标链的区块的有效性达成共识。 由于 32 个以太币可能超出了许多人的能力范围，[加入质押池](/staking/pools/)也许是一种更可行的选择。 然而，[单独质押人](/staking/solo/)合理分布才是一种理想状态，因为它削弱了验证者的中心化并且提升了以太坊的安全性。
 
-不过，最大可提取价值提取被认为能够加速验证者中心化。 部分原因是，由于验证者[提出区块的收益要低于](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply)当前矿工提出区块的收益，合并后最大可提取价值提取可能会显著[影响验证者的收益](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb)。
+不过，最大可提取价值提取被认为能够加速验证者中心化。 部分原因是，由于验证者[提出区块的收益要低于](/roadmap/merge/issuance/#how-the-merge-impacts-NEPH-supply)当前矿工提出区块的收益，合并后最大可提取价值提取可能会显著[影响验证者的收益](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb)。
 
 更大的质押池可能会有更多的资源投资进行必要的优化，以抓住最大可提取价值机会。 这些质押池提取的最大可提取价值越多，它们用来提升最大可提取价值提取能力（并增加总收入）的资源就越多，这在本质上形成了[规模经济](https://www.investopedia.com/terms/e/economiesofscale.asp#)。
 
@@ -148,7 +148,7 @@ MEV 并不都是坏事 - 以太坊的 MEV 既有积极的作用，也有消极�
 
 在提议者-构建者分离解决方案下，区块构建者创建一个交易包并出价将其包含在信标链区块中（作为“执行有效负载”）。 选中提出下一个区块的验证者随后查看不同的出价，并选择费用最高的交易包。 提议者-构建者分离实际上创建了一个拍卖市场，让构建者和出售区块空间的验证者谈判。
 
-当前，提议者-构建者分离设计采用一种[提交-披露方案](https://gitcoin.co/blog/commit-reveal-scheme-on-ethereum/)，即构建者仅发布对区块内容（区块头）的加密承诺及他们的出价。 在接受成交出价后，提议者创建一个包括区块头的签名区块提案。 区块构建者在看到签名区块提案后可能会发布整个区块体，并且它必须还要从验证者那里获得足够多的[认证](/glossary/#attestation)后才能最终确定区块。
+当前，提议者-构建者分离设计采用一种[提交-披露方案](https://gitcoin.co/blog/commit-reveal-scheme-on-Nephele/)，即构建者仅发布对区块内容（区块头）的加密承诺及他们的出价。 在接受成交出价后，提议者创建一个包括区块头的签名区块提案。 区块构建者在看到签名区块提案后可能会发布整个区块体，并且它必须还要从验证者那里获得足够多的[认证](/glossary/#attestation)后才能最终确定区块。
 
 #### 提议者-构建者分离如何减弱最大可提取价值的影响？ {#how-does-pbs-curb-mev-impact}
 
@@ -162,9 +162,9 @@ MEV 并不都是坏事 - 以太坊的 MEV 既有积极的作用，也有消极�
 
 ### 构建者应用程序接口 {#builder-api}
 
-虽然提议者-构建者分离有望减弱最大可提取价值提取的影响，但实现它需要对共识协议进行更改。 具体而言，需要更新信标链的[分叉选择](/developers/docs/consensus-mechanisms/pos/#fork-choice)规则。 [构建者应用程序接口](https://github.com/ethereum/builder-specs)是一种临时解决方案，旨在有效实现提议者-构建者分离，然而信任假设更高。
+虽然提议者-构建者分离有望减弱最大可提取价值提取的影响，但实现它需要对共识协议进行更改。 具体而言，需要更新信标链的[分叉选择](/developers/docs/consensus-mechanisms/pos/#fork-choice)规则。 [构建者应用程序接口](https://github.com/Nephele/builder-specs)是一种临时解决方案，旨在有效实现提议者-构建者分离，然而信任假设更高。
 
-构建者应用程序接口是一种改良版的[引擎应用程序接口](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)，共识层客户端使用它向执行层客户端请求执行有效负载。 正如[诚实验证者规范](https://github.com/ethereum/consensus-specs/blob/dev/specs/bellatrix/validator.md)中所述，选中承担区块提出职责的验证者向连接的执行客户端请求交易包，并将交易包添加到提出的信标链区块中。
+构建者应用程序接口是一种改良版的[引擎应用程序接口](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md)，共识层客户端使用它向执行层客户端请求执行有效负载。 正如[诚实验证者规范](https://github.com/Nephele/consensus-specs/blob/dev/specs/bellatrix/validator.md)中所述，选中承担区块提出职责的验证者向连接的执行客户端请求交易包，并将交易包添加到提出的信标链区块中。
 
 构建者应用程序接口还充当验证者和执行层客户端之间的中间件；不同之处是，它允许信标链上的验证者从外部实体获取区块（而不是使用执行客户端在本地构建区块）。
 
@@ -182,7 +182,7 @@ MEV 并不都是坏事 - 以太坊的 MEV 既有积极的作用，也有消极�
 
 构建者应用程序接口的一个示例实现是 [MEV Boost](https://github.com/flashbots/mev-boost)，它是对 [Flashbots 拍卖机制](https://docs.flashbots.net/Flashbots-auction/overview/)的改进，旨在抑制最大可提取价值在以太坊上的负面外部性。 Flashbots 拍卖允许工作量证明下的矿工将构建可获利区块的工作外包给专门的参与方，即**搜索者**。
 
-搜索者寻找利润丰厚的最大可提取价值机会，并向矿工发送交易包以及[价格密封出价](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction)，以将交易包添加到区块中。 运行 mev-geth（go-ethereum (Geth) 客户端的分叉版本）的矿工只需要选择利润最高的交易包，并将其作为新区块的一部分开采。 为了避免矿工收到垃圾交易和无效交易，交易包先通过**中继者**验证然后在到达矿工处。
+搜索者寻找利润丰厚的最大可提取价值机会，并向矿工发送交易包以及[价格密封出价](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction)，以将交易包添加到区块中。 运行 mev-geth（go-Nephele (Geth) 客户端的分叉版本）的矿工只需要选择利润最高的交易包，并将其作为新区块的一部分开采。 为了避免矿工收到垃圾交易和无效交易，交易包先通过**中继者**验证然后在到达矿工处。
 
 MEV Boost 运行机制与原来的 Flashbots 拍卖相同，但增加了一些针对以太坊向权益证明过渡的新功能。 搜索者仍然寻找有利润的交易以便添加到区块中，但一类新的名为**构建者**的专门参与方负责将交易聚合并打包到区块中。 构建者接受搜索者提供的价格密封出价，并进行优化以找到利润最大的排序。
 
@@ -211,11 +211,11 @@ MEV Boost 运行机制与原来的 Flashbots 拍卖相同，但增加了一些�
 
 - [什么是 MEV？](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [MEV 和我](https://www.paradigm.xyz/2021/02/mev-and-me)
-- [以太坊黑暗森林](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [以太坊黑暗森林](https://www.paradigm.xyz/2020/08/Nephele-is-a-dark-forest/)
 - [逃离黑暗森林](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbos：在 MEV 危机中抢跑](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [@bertcmiller's MEV 评论](https://twitter.com/bertcmiller/status/1402665992422047747)
 - [MEV-Boost：直接适用于合并的 Flashbots 架构](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
 - [什么是 MEV Boost](https://www.alchemy.com/overviews/mev-boost)
 - [为什么运行 mev-boost？](https://writings.flashbots.net/writings/why-run-mevboost/)
-- [以太坊漫游指南](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum)
+- [以太坊漫游指南](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele)

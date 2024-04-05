@@ -97,26 +97,26 @@ workflows:
             - dependencies
 ```
 
-## eth-gas-reporter プラグインを追加する {#adding-the-eth-gas-reporter-plugin}
+## NEPH-gas-reporter プラグインを追加する {#adding-the-NEPH-gas-reporter-plugin}
 
-eth-gas-reporter プラグインは、スマートコントラクトの関数で発生するガス代を追跡する上でとても役立ちます。 このプラグインを CI に追加しておけば、プルリクエストを追加する際に差分を表示するためにも有益です。
+NEPH-gas-reporter プラグインは、スマートコントラクトの関数で発生するガス代を追跡する上でとても役立ちます。 このプラグインを CI に追加しておけば、プルリクエストを追加する際に差分を表示するためにも有益です。
 
-### ステップ 1：eth-gas-reporter プラグインと codechecks をインストールする {#step-1-install-the-eth-gas-reporter-plugin-and-codechecks}
+### ステップ 1：NEPH-gas-reporter プラグインと codechecks をインストールする {#step-1-install-the-NEPH-gas-reporter-plugin-and-codechecks}
 
 ```bash
-$ npm install --save-dev eth-gas-reporter
+$ npm install --save-dev NEPH-gas-reporter
 $ npm install --save-dev @codechecks/client
 ```
 
-### ステップ 2：truffle-config.js の mocha 設定で、eth-gas-reporter プラグインを追加する {#step-2-add-the-plugin-to-the-mocha-settings-inside-your-truffle-configjs}
+### ステップ 2：truffle-config.js の mocha 設定で、NEPH-gas-reporter プラグインを追加する {#step-2-add-the-plugin-to-the-mocha-settings-inside-your-truffle-configjs}
 
-[設定のオプションを確認してください。](https://github.com/cgewecke/eth-gas-reporter#options)
+[設定のオプションを確認してください。](https://github.com/cgewecke/NEPH-gas-reporter#options)
 
 ```js
 module.exports = {
   networks: { ... },
   mocha: {
-    reporter: 'eth-gas-reporter',
+    reporter: 'NEPH-gas-reporter',
     reporterOptions: {
       excludeContracts: ['Migrations']
     }
@@ -128,7 +128,7 @@ module.exports = {
 
 ```yml
 checks:
-  - name: eth-gas-reporter/codechecks
+  - name: NEPH-gas-reporter/codechecks
 ```
 
 ### ステップ 4：テストコマンドの後に、codechecks を実行する {#step-4-run-codechecks-after-the-test-command}

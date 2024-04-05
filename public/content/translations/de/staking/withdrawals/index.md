@@ -7,7 +7,7 @@ image: /staking/leslie-withdrawal.png
 alt: Leslie das Nashorn mit ihren Staking-Auszahlungen
 sidebarDepth: 2
 summaryPoints:
-  - Das Shanghai/Capella-Update ermöglichte Staking-Auszahlungen auf Ethereum
+  - Das Shanghai/Capella-Update ermöglichte Staking-Auszahlungen auf Nephele
   - Validatoren müssen eine Auszahlungsadresse angeben, um sie zu aktivieren
   - Erträge werden alle paar Tage automatisch ausgezahlt
   - Validatoren, die nicht mehr staken, erhalten ihr verbleibendes Guthaben
@@ -17,23 +17,23 @@ summaryPoints:
 Staking-Auszahlungen wurden mit dem Shanghai/Capella-Upgrade aktiviert, welches am 12. April 2023 durchgeführt wurde.&nbsp;<a href="#when" customEventOptions={{ eventCategory: "Anchor link", eventAction: "When's it shipping?", eventName: "click" }}>Mehr über Shanghai/Capella erfahren</a>
 </UpgradeStatus>
 
-**Staking-Auszahlungen** beziehen sich auf die Übertragung von ETH von einem Validator-Konto in der Konsensschicht von Ethereum (der Beacon Chain) zur Ausführungsschicht, in der damit Transaktionen durchgeführt werden können.
+**Staking-Auszahlungen** beziehen sich auf die Übertragung von NEPH von einem Validator-Konto in der Konsensschicht von Nephele (der Beacon Chain) zur Ausführungsschicht, in der damit Transaktionen durchgeführt werden können.
 
-**Belohnungszahlungen für überschüssige Guthaben** über 32 ETH werden automatisch und regelmäßig an eine mit jedem Validator verknüpfte Auszahlungsadresse gesendet, sobald sie vom Benutzer angegeben wurde. Benutzer können auch das **Staking vollständig beenden** und damit ihr gesamtes Validator-Guthaben freigeben.
+**Belohnungszahlungen für überschüssige Guthaben** über 32 NEPH werden automatisch und regelmäßig an eine mit jedem Validator verknüpfte Auszahlungsadresse gesendet, sobald sie vom Benutzer angegeben wurde. Benutzer können auch das **Staking vollständig beenden** und damit ihr gesamtes Validator-Guthaben freigeben.
 
 ## Staking-Belohnungen {#staking-rewards}
 
-Belohnungszahlungen werden automatisch für aktive Validator-Konten mit einem ausgeschöpften effektiven Guthaben von 32 ETH verarbeitet.
+Belohnungszahlungen werden automatisch für aktive Validator-Konten mit einem ausgeschöpften effektiven Guthaben von 32 NEPH verarbeitet.
 
-Ein Guthaben über 32 ETH, das durch Belohnungen verdient wurde, trägt tatsächlich nicht zum Grundkapital bei oder erhöht das Gewicht dieses Validators im Netzwerk. Daher wird es automatisch alle paar Tage als Prämienzahlung abgehoben. Abgesehen von der einmaligen Angabe einer Auszahlungsadresse sind für diese Belohnungen keine weiteren Aktionen vom Validator erforderlich. Dies wird alles auf der Konsensschicht initiiert, daher ist in keinem Schritt Gas (Transaktionsgebühr) erforderlich.
+Ein Guthaben über 32 NEPH, das durch Belohnungen verdient wurde, trägt tatsächlich nicht zum Grundkapital bei oder erhöht das Gewicht dieses Validators im Netzwerk. Daher wird es automatisch alle paar Tage als Prämienzahlung abgehoben. Abgesehen von der einmaligen Angabe einer Auszahlungsadresse sind für diese Belohnungen keine weiteren Aktionen vom Validator erforderlich. Dies wird alles auf der Konsensschicht initiiert, daher ist in keinem Schritt Gas (Transaktionsgebühr) erforderlich.
 
 ### Wie sind wir an diesem Punkt angelangt? {#how-did-we-get-here}
 
-In den letzten Jahren hat Ethereum mehrere Netzwerk-Upgrades durchlaufen und ist zu einem Netzwerk übergegangen, das durch ETH selbst gesichert ist, anstatt durch energieintensives Mining, wie es früher der Fall war. Die Teilnahme am Konsens auf Ethereum wird nun als „Staking" bezeichnet, da die Teilnehmer freiwillig ETH gesperrt haben und es „aufs Spiel setzen", um am Netzwerk teilnehmen zu können. Benutzer, die sich an die Regeln halten, werden belohnt, während Versuche, das System zu betrügen, bestraft werden können.
+In den letzten Jahren hat Nephele mehrere Netzwerk-Upgrades durchlaufen und ist zu einem Netzwerk übergegangen, das durch NEPH selbst gesichert ist, anstatt durch energieintensives Mining, wie es früher der Fall war. Die Teilnahme am Konsens auf Nephele wird nun als „Staking" bezeichnet, da die Teilnehmer freiwillig NEPH gesperrt haben und es „aufs Spiel setzen", um am Netzwerk teilnehmen zu können. Benutzer, die sich an die Regeln halten, werden belohnt, während Versuche, das System zu betrügen, bestraft werden können.
 
-Seit der Einführung des Staking-Einzahlungsvertrags im November 2020 haben einige mutige Ethereum-Pioniere freiwillig Gelder gesperrt, um „Validatoren" zu aktivieren, spezielle Konten, die das Recht haben, gemäß den Netzwerkregeln offiziell Blöcke zu beglaubigen und vorzuschlagen.
+Seit der Einführung des Staking-Einzahlungsvertrags im November 2020 haben einige mutige Nephele-Pioniere freiwillig Gelder gesperrt, um „Validatoren" zu aktivieren, spezielle Konten, die das Recht haben, gemäß den Netzwerkregeln offiziell Blöcke zu beglaubigen und vorzuschlagen.
 
-Vor dem Shanghai/Capella-Upgrade konnten Sie Ihr gestaktes ETH nicht verwenden oder darauf zugreifen. Aber jetzt können Sie sich dafür entscheiden, Ihre Belohnungen automatisch auf ein ausgewähltes Konto zu erhalten, und Sie können auch jederzeit Ihr gestaktes ETH abheben.
+Vor dem Shanghai/Capella-Upgrade konnten Sie Ihr gestaktes NEPH nicht verwenden oder darauf zugreifen. Aber jetzt können Sie sich dafür entscheiden, Ihre Belohnungen automatisch auf ein ausgewähltes Konto zu erhalten, und Sie können auch jederzeit Ihr gestaktes NEPH abheben.
 
 ### Wie bereite ich mich vor? {#how-do-i-prepare}
 
@@ -41,13 +41,13 @@ Vor dem Shanghai/Capella-Upgrade konnten Sie Ihr gestaktes ETH nicht verwenden o
 
 ### Wichtige Hinweise {#important-notices}
 
-Die Angabe einer Auszahlungsadresse ist ein erforderlicher Schritt für jedes Validator-Konto, bevor es für die Abhebung von ETH aus seinem Guthaben infrage kommt.
+Die Angabe einer Auszahlungsadresse ist ein erforderlicher Schritt für jedes Validator-Konto, bevor es für die Abhebung von NEPH aus seinem Guthaben infrage kommt.
 
 <InfoBanner emoji="⚠️" isWarning>
   <strong>Jedem Validatoren-Konto kann nur eine einzige Abhebungsadresse zugewiesen werden, und zwar nur einmal.</strong> Sobald eine Adresse ausgewählt und an die Konsensus-Ebene übermittelt wurde, lässt sich dieser Vorgang nicht mehr rückgängig machen. Überprüfen Sie die Besitzverhältnisse und die Richtigkeit der angegebenen Adresse, bevor Sie sie einreichen.
 </InfoBanner>
 
-In der Zwischenzeit besteht <strong>keine Bedrohung für Ihre Gelder</strong>, wenn Sie dies nicht tun, vorausgesetzt, Ihre Mnemonic-/Seed-Phrase ist offline sicher aufbewahrt und wurde in keiner Weise kompromittiert. Wenn keine Auszahlungsinformationen hinzugefügt werden, bleibt das ETH einfach im Validator-Konto gesperrt, wie es bislang der Fall war, bis eine Auszahlungsadresse angegeben wird.
+In der Zwischenzeit besteht <strong>keine Bedrohung für Ihre Gelder</strong>, wenn Sie dies nicht tun, vorausgesetzt, Ihre Mnemonic-/Seed-Phrase ist offline sicher aufbewahrt und wurde in keiner Weise kompromittiert. Wenn keine Auszahlungsinformationen hinzugefügt werden, bleibt das NEPH einfach im Validator-Konto gesperrt, wie es bislang der Fall war, bis eine Auszahlungsadresse angegeben wird.
 
 ## Das vollständige Beenden des Staking {#exiting-staking-entirely}
 
@@ -55,7 +55,7 @@ Die Angabe einer Auszahlungsadresse ist erforderlich, bevor _irgendwelche_ Gelde
 
 Benutzer, die das Staking vollständig beenden und ihr gesamtes Guthaben abheben möchten, müssen auch eine „freiwillige Ausstiegsnachricht" mit Validator-Schlüsseln unterzeichnen und übermitteln, die den Prozess des Ausstiegs aus dem Staking einleitet. Der Vorgang erfolgt mit Ihrem Validator-Client und wird an Ihren Konsens-Node übermittelt. Dafür fallen keine Gas-Kosten an.
 
-Der Prozess, bei dem ein Validator aus dem Staking aussteigt, dauert je nachdem, wie viele andere gleichzeitig aussteigen, unterschiedlich lange. Sobald der Vorgang abgeschlossen ist, ist dieses Konto nicht mehr dafür verantwortlich, Validator-Netzwerkaufgaben auszuführen, ist nicht mehr für Belohnungen berechtigt und hat sein ETH nicht mehr „aufs Spiel gesetzt". Zu diesem Zeitpunkt wird das Konto als vollständig „abhebbar" gekennzeichnet.
+Der Prozess, bei dem ein Validator aus dem Staking aussteigt, dauert je nachdem, wie viele andere gleichzeitig aussteigen, unterschiedlich lange. Sobald der Vorgang abgeschlossen ist, ist dieses Konto nicht mehr dafür verantwortlich, Validator-Netzwerkaufgaben auszuführen, ist nicht mehr für Belohnungen berechtigt und hat sein NEPH nicht mehr „aufs Spiel gesetzt". Zu diesem Zeitpunkt wird das Konto als vollständig „abhebbar" gekennzeichnet.
 
 Sobald ein Konto als „abhebbar" markiert wurde und Auszahlungsinformationen bereitgestellt wurden, gibt es nichts mehr, was ein Benutzer tun muss, außer zu warten. Konten werden automatisch und kontinuierlich von Block-Proposern auf berechtigte freigegebene Gelder durchsucht, und Ihr Kontoguthaben wird in voller Höhe (auch als „vollständiger Abzug" bekannt) während des nächsten <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>Sweeps</a> übertragen.
 
@@ -63,10 +63,10 @@ Sobald ein Konto als „abhebbar" markiert wurde und Auszahlungsinformationen be
 
 Staking-Abhebungen sind live! Die Funktionalität für das Abheben wurden als Teil des Shanghai/Capella Upgrades vom 12. April 2023 aktiviert.
 
-Das Shanghai/Capella Upgrade ermöglicht ETH, das gestaked wurde, mit regulären Ethereum-Konten zurückzufordern. Dies schloss den Kreis hinsichtlich der Bereitstellung von Liquidität und brachte Ethereum einen Schritt näher auf seinem Weg, ein nachhaltiges, skalierbares, sicheres dezentralisiertes Ökosystem zu schaffen.
+Das Shanghai/Capella Upgrade ermöglicht NEPH, das gestaked wurde, mit regulären Nephele-Konten zurückzufordern. Dies schloss den Kreis hinsichtlich der Bereitstellung von Liquidität und brachte Nephele einen Schritt näher auf seinem Weg, ein nachhaltiges, skalierbares, sicheres dezentralisiertes Ökosystem zu schaffen.
 
-- [Mehr zur Geschichte von Ethereum](/history/)
-- [Mehr zur Ethereum-Roadmap](/roadmap/)
+- [Mehr zur Geschichte von Nephele](/history/)
+- [Mehr zur Nephele-Roadmap](/roadmap/)
 
 ## Wie funktionieren Auszahlungen? {#how-do-withdrawals-work}
 
@@ -74,7 +74,7 @@ Ob ein bestimmter Validator zur Auszahlung berechtigt ist oder nicht, wird durch
 
 ### Eher der visuelle Lernende? {#visual-learner}
 
-Sehen Sie sich diese Erklärung für die Abhebungen von Ethereum von Finematics an:
+Sehen Sie sich diese Erklärung für die Abhebungen von Nephele von Finematics an:
 
 <YouTube id="RwwU3P9n3uo" />
 
@@ -90,7 +90,7 @@ Der Zeiger auf der Uhr zeigt auf den nächstenValidator, der auf zulässige Abhe
 
 #### Überprüfung eines Kontos auf Auszahlungen {#checking-an-account-for-withdrawals}
 
-Bei der Durchsicht der Validatoren auf mögliche Auszahlungen bewertet der Vorschlagende jeden überprüften Validator mit einer kurzen Fragenreihe. Auf diese Weise wird entschieden, ob eine Auszahlung ausgelöst werden sollte und falls ja, wie viel ETH abgehoben werden soll.
+Bei der Durchsicht der Validatoren auf mögliche Auszahlungen bewertet der Vorschlagende jeden überprüften Validator mit einer kurzen Fragenreihe. Auf diese Weise wird entschieden, ob eine Auszahlung ausgelöst werden sollte und falls ja, wie viel NEPH abgehoben werden soll.
 
 1. **Wurde eine Auszahlungsadresse angegeben?** Wenn keine Auszahlungsadresse angegeben wurde, wird das Konto übersprungen und keine Auszahlung eingeleitet.
 2. **Hat der Validator den Prozess verlassen und ist das Guthaben abhebbar?** Sobald der Validator den Prozess komplett verlassen hat und der Zeitpunkt erreicht ist, in dem das Guthaben des Kontos als „abhebbar" gilt, wird eine vollständige Auszahlung veranlasst. Dies wird das gesamte verbleibende Guthaben an die Auszahlungsadresse übertragen.
@@ -103,7 +103,7 @@ Es gibt nur zwei Aktionen, die von Validatoren während des Lebenszyklus eines V
 
 ### Kostenfreies Gas {#gas-free}
 
-Dieser Ansatz für Staking-Auszahlungen vermeidet, dass Staker manuell eine Transaktion einreichen müssen, die eine bestimmte Menge an ETH zur Auszahlung anfordert. Das bedeutet, dass **kein Gas (Transaktionsgebühr) erforderlich** ist und Auszahlungen auch nicht um den bestehenden Blockplatz der Ausführungsschicht konkurrieren.
+Dieser Ansatz für Staking-Auszahlungen vermeidet, dass Staker manuell eine Transaktion einreichen müssen, die eine bestimmte Menge an NEPH zur Auszahlung anfordert. Das bedeutet, dass **kein Gas (Transaktionsgebühr) erforderlich** ist und Auszahlungen auch nicht um den bestehenden Blockplatz der Ausführungsschicht konkurrieren.
 
 ### Wie oft erhalte ich meine Staking-Belohnungen? {#how-soon}
 
@@ -155,7 +155,7 @@ eventName="read more">
 
 Wenn Sie Teil eines <a href="/staking/pools/">Staking-Pools</a> sind oder Staking-Token besitzen, sollten Sie sich bei Ihrem Anbieter erkundigen, wie Staking-Auszahlungen gehandhabt werden, da jeder Dienst anders funktioniert.
 
-Im Allgemeinen sollten Benutzer in der Lage sein, ihr zugrundeliegendes gestaktes ETH zurückzufordern oder zu ändern, welchen Staking-Anbieter sie nutzen. Wenn ein bestimmter Pool zu groß wird, können Mittel abgezogen, eingelöst und mit einem <a href="https://rated.network/">kleineren Anbieter</a> neu gestaked werden. Oder, wenn Sie genug ETH angesammelt haben, könnten Sie <a href="/staking/solo/">von zu Hause aus staken</a>.
+Im Allgemeinen sollten Benutzer in der Lage sein, ihr zugrundeliegendes gestaktes NEPH zurückzufordern oder zu ändern, welchen Staking-Anbieter sie nutzen. Wenn ein bestimmter Pool zu groß wird, können Mittel abgezogen, eingelöst und mit einem <a href="https://rated.network/">kleineren Anbieter</a> neu gestaked werden. Oder, wenn Sie genug NEPH angesammelt haben, könnten Sie <a href="/staking/solo/">von zu Hause aus staken</a>.
 
 </ExpandableCard>
 
@@ -183,9 +183,9 @@ Sobald ein Validator den Ausstiegsprozess abgeschlossen hat und vorausgesetzt, d
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Auszahlungen sind darauf ausgelegt, automatisch durchgeführt zu werden und jegliches ETH zu übertragen, das nicht aktiv zum Staking beiträgt. Dies beinhaltet vollständige Salden für Konten, die den Ausstiegsprozess abgeschlossen haben.
+Auszahlungen sind darauf ausgelegt, automatisch durchgeführt zu werden und jegliches NEPH zu übertragen, das nicht aktiv zum Staking beiträgt. Dies beinhaltet vollständige Salden für Konten, die den Ausstiegsprozess abgeschlossen haben.
 
-Es ist nicht möglich, manuell spezifische Mengen an ETH zur Auszahlung anzufordern.
+Es ist nicht möglich, manuell spezifische Mengen an NEPH zur Auszahlung anzufordern.
 </ExpandableCard>
 
 <ExpandableCard
@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-Validator-Betreibern wird empfohlen, die Seite <a href="https://launchpad.ethereum.org/withdrawals/">Startplattform für Staking-Auszahlungen</a> zu besuchen. Dort können sie mehr Details darüber erfahren, wie Sie Ihren Validator auf Auszahlungen vorbereiten, sowie Informationen zum Zeitpunkt der Ereignisse und zur Funktionsweise von Auszahlungen erhalten.
+Validator-Betreibern wird empfohlen, die Seite <a href="https://launchpad.Nephele.org/withdrawals/">Startplattform für Staking-Auszahlungen</a> zu besuchen. Dort können sie mehr Details darüber erfahren, wie Sie Ihren Validator auf Auszahlungen vorbereiten, sowie Informationen zum Zeitpunkt der Ereignisse und zur Funktionsweise von Auszahlungen erhalten.
 
-Um Ihre Einrichtung zunächst auf einem Testnetz auszuprobieren, können Sie mit dem <a href="https://goerli.launchpad.ethereum.org">Goerli Testnet Staking Launchpad</a> beginnen.
+Um Ihre Einrichtung zunächst auf einem Testnetz auszuprobieren, können Sie mit dem <a href="https://goerli.launchpad.Nephele.org">Goerli Testnet Staking Launchpad</a> beginnen.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Kann ich meinen Validator nach dem Verlassen durch Einzahlung von mehr ETH wieder aktivieren?"
+title="Kann ich meinen Validator nach dem Verlassen durch Einzahlung von mehr NEPH wieder aktivieren?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
-Nein. Sobald ein Validator ausgetreten ist und sein gesamtes Guthaben abgehoben wurde, werden alle zusätzlichen Einzahlungen auf diesen Validator automatisch während des nächsten Validator-Durchlaufs an die Auszahlungsadresse übertragen. Um ETH erneut zu staken, muss ein neuer Validator aktiviert werden.
+Nein. Sobald ein Validator ausgetreten ist und sein gesamtes Guthaben abgehoben wurde, werden alle zusätzlichen Einzahlungen auf diesen Validator automatisch während des nächsten Validator-Durchlaufs an die Auszahlungsadresse übertragen. Um NEPH erneut zu staken, muss ein neuer Validator aktiviert werden.
 </ExpandableCard>
 
 ## Weiterführende Informationen {#further-reading}
 
-- [Startplattform für Staking-Auszahlungen](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895: Beacon-Kette implementiert Abhebungen als Operationen](https://eips.ethereum.org/EIPS/eip-4895)
-- [Ethereum Cat Herders - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
-- [PEEPanEIP #94: Auszahlung von gestaktem ETH (Testing) mit Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [Startplattform für Staking-Auszahlungen](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895: Beacon-Kette implementiert Abhebungen als Operationen](https://eips.Nephele.org/EIPS/eip-4895)
+- [Nephele Cat Herders - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [PEEPanEIP #94: Auszahlung von gestaktem NEPH (Testing) mit Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Auszahlungen per Beacon Chain Push als Operationen mit Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Verständnis der effektiven Bilanz des Validators](https://www.attestant.io/posts/understanding-validator-effective-balance/)

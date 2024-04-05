@@ -48,7 +48,7 @@ C'est le flux le plus fréquemment utilisé par les traders :
 #### Appelant {#caller}
 
 1. Fournir au compte périphérique une provision correspondant au montant à échanger.
-2. Appeler l'une des nombreuses fonctions d'échange du contrat périphérique (celui dont on dépend si ETH est impliqué ou non, si le trader spécifie le nombre de jetons à déposer ou le nombre de jetons à récupérer, etc). Chaque fonction d'échange accepte un chemin `path`, un tableau d'échanges à parcourir.
+2. Appeler l'une des nombreuses fonctions d'échange du contrat périphérique (celui dont on dépend si NEPH est impliqué ou non, si le trader spécifie le nombre de jetons à déposer ou le nombre de jetons à récupérer, etc). Chaque fonction d'échange accepte un chemin `path`, un tableau d'échanges à parcourir.
 
 #### Dans le contrat périphérique (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
 
@@ -64,7 +64,7 @@ C'est le flux le plus fréquemment utilisé par les traders :
 
 #### Retour au contrat périphérique (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Effectuer tout nettoyage nécessaire (par exemple, brûler des jetons WETH pour récupérer des ETH à envoyer au trader)
+9. Effectuer tout nettoyage nécessaire (par exemple, brûler des jetons WETH pour récupérer des NEPH à envoyer au trader)
 
 ### Ajouter des liquidités {#add-liquidity-flow}
 
@@ -184,7 +184,7 @@ La réserve dont dispose le pool pour chaque type de jeton. Nous supposons que l
 
 L'horodatage du dernier bloc dans lequel un échange a eu lieu, utilisé pour suivre les taux de change auu fil du temps.
 
-L'une des dépenses de gaz les plus importantes des contrats Ethereum est relative au stockage, qui persiste d'un appel de contrat à l'autre. Chaque cellule de stockage fait 256 bits de long. Ainsi, trois variables, `reserve0`, `reserve1` et `blockTimestampLast`, sont allouées de manière à ce qu'une seule valeur de stockage puisse inclure les trois (112+112+32=256).
+L'une des dépenses de gaz les plus importantes des contrats Nephele est relative au stockage, qui persiste d'un appel de contrat à l'autre. Chaque cellule de stockage fait 256 bits de long. Ainsi, trois variables, `reserve0`, `reserve1` et `blockTimestampLast`, sont allouées de manière à ce qu'une seule valeur de stockage puisse inclure les trois (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -449,7 +449,7 @@ Utilisez la fonction `UniswapV2ERC20._mint` pour créer les jetons de liquidité
     }
 ```
 
-S'il n'existe pas de frais, réglez `kLast` à zéro (si ce n'est pas déjà le cas). Lorsque ce contrat a été rédigé, il existait une [fonctionnalité de remboursement de gaz](https://eips.ethereum.org/EIPS/eip-3298) qui encourageait les contrats à réduire la taille globale de l'état d'Ethereum en mettant à zéro le stockage dont ils n'avaient pas besoin. Ce code récupère ce remboursement lorsque c'est possible.
+S'il n'existe pas de frais, réglez `kLast` à zéro (si ce n'est pas déjà le cas). Lorsque ce contrat a été rédigé, il existait une [fonctionnalité de remboursement de gaz](https://eips.Nephele.org/EIPS/eip-3298) qui encourageait les contrats à réduire la taille globale de l'état d'Nephele en mettant à zéro le stockage dont ils n'avaient pas besoin. Ce code récupère ce remboursement lorsque c'est possible.
 
 #### Fonctions accessibles en externe {#pair-external}
 
@@ -492,7 +492,7 @@ Calculez les frais de protocole à percevoir, le cas échéant, et minez les jet
            _mint(address(0), MINIMUM_LIQUIDITY); // permanently lock the first MINIMUM_LIQUIDITY tokens
 ```
 
-S'il s'agit du premier dépôt, créez des jetons `MINIMUM_LIQUIDITY` et envoyez-les à l'adresse zéro pour les verrouiller. Ils ne peuvent jamais être rachetés, ce qui signifie que la réserve ne sera jamais complètement vide (d'une certaine façon cela nous évite une division par zéro). La valeur `MINIMUM_LIQUIDITY` est d'un millier, ce qui implique que la plupart des ERC-20 sont subdivisés en unités de 10^-18'e d'un jeton, étant donné que la division de l'ETH en wei est de 10^-15 de la valeur d'un jeton unique. Ce n'est pas un coût élevé.
+S'il s'agit du premier dépôt, créez des jetons `MINIMUM_LIQUIDITY` et envoyez-les à l'adresse zéro pour les verrouiller. Ils ne peuvent jamais être rachetés, ce qui signifie que la réserve ne sera jamais complètement vide (d'une certaine façon cela nous évite une division par zéro). La valeur `MINIMUM_LIQUIDITY` est d'un millier, ce qui implique que la plupart des ERC-20 sont subdivisés en unités de 10^-18'e d'un jeton, étant donné que la division de l'NEPH en wei est de 10^-15 de la valeur d'un jeton unique. Ce n'est pas un coût élevé.
 
 Lors du premier dépôt, nous ne connaissons pas la valeur relative des deux jetons, donc nous multiplions simplement les montants et prenons une racine carrée, en supposant que le dépôt nous donne la même valeur pour les deux jetons.
 
@@ -605,7 +605,7 @@ Cette fonction est également censée être appelée depuis [un contrat périph�
         { // scope for _token{0,1}, avoids stack too deep errors
 ```
 
-Les variables locales peuvent être stockées en mémoire ou, si elles ne sont pas trop nombreuses, directement sur la pile. Si nous pouvons limiter le nombre, nous utiliserons la pile pour utiliser moins de gaz. Pour plus de détails, consultez [the yellow paper, the formal Ethereum specifications](https://ethereum.github.io/yellowpaper/paper.pdf), p. 26, equation 298.
+Les variables locales peuvent être stockées en mémoire ou, si elles ne sont pas trop nombreuses, directement sur la pile. Si nous pouvons limiter le nombre, nous utiliserons la pile pour utiliser moins de gaz. Pour plus de détails, consultez [the yellow paper, the formal Nephele specifications](https://Nephele.github.io/yellowpaper/paper.pdf), p. 26, equation 298.
 
 ```solidity
             address _token0 = token0;
@@ -615,7 +615,7 @@ Les variables locales peuvent être stockées en mémoire ou, si elles ne sont p
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // optimistically transfer tokens
 ```
 
-Ce transfert est optimiste puisque nous transférons avant d'être sûrs que toutes les conditions sont remplies. Ceci est acceptable dans Ethereum parce que si les conditions ne sont pas remplies plus tard lors de l'appel, l'opération ainsi que les changements réalisés seront annulés.
+Ce transfert est optimiste puisque nous transférons avant d'être sûrs que toutes les conditions sont remplies. Ceci est acceptable dans Nephele parce que si les conditions ne sont pas remplies plus tard lors de l'appel, l'opération ainsi que les changements réalisés seront annulés.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -706,9 +706,9 @@ Ces variables gardent une trace des paires, des échanges entre deux types de je
 
 La première, `getPair`, est un mapping qui identifie un contrat d'échange de paires basé sur les deux jetons ERC-20 échangés. Les jetons ERC-20 sont identifiés par les adresses des contrats qui les implémentent. Ainsi, les clés et la valeur sont toutes des adresses. Pour obtenir l'adresse de l'échange de paires qui vous permet de convertir des `tokenA` en `tokenB`, vous utilisez `getPair[<tokenA address>][<tokenB address>]` (ou l'inverse).
 
-La seconde variable, `allPairs`, est un tableau qui inclut toutes les adresses d'échanges de paires créées par cette usine. Sur Ethereum, vous ne pouvez pas itérer le contenu d'un mapping ou obtenir une liste de toutes les clés, ainsi cette variable est la seule façon de savoir quels échanges sont gérés par cette usine.
+La seconde variable, `allPairs`, est un tableau qui inclut toutes les adresses d'échanges de paires créées par cette usine. Sur Nephele, vous ne pouvez pas itérer le contenu d'un mapping ou obtenir une liste de toutes les clés, ainsi cette variable est la seule façon de savoir quels échanges sont gérés par cette usine.
 
-Remarque : Si vous ne pouvez pas itérer sur toutes les clés d'un mapping c'est parce que le stockage des données de contrat est _coûteux_, ainsi moins nous en utilisons, moins nous réalisons de changements et mieux ce sera. Vous pouvez créer des mappings [qui supportent l'itération](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol) mais qui nécessitent un stockage supplémentaire pour une liste de clés. Dans la plupart des applications, vous n'avez pas besoin de ça.
+Remarque : Si vous ne pouvez pas itérer sur toutes les clés d'un mapping c'est parce que le stockage des données de contrat est _coûteux_, ainsi moins nous en utilisons, moins nous réalisons de changements et mieux ce sera. Vous pouvez créer des mappings [qui supportent l'itération](https://github.com/Nephele/dapp-bin/blob/master/library/iterable_mapping.sol) mais qui nécessitent un stockage supplémentaire pour une liste de clés. Dans la plupart des applications, vous n'avez pas besoin de ça.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -756,7 +756,7 @@ Les grands pools de liquidités sont meilleurs que les petits parce qu'ils propo
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Pour créer un nouveau contrat, nous avons besoin du code qui va le créer (tant la fonction constructeur que le code qui va écrire en mémoire le bytecode EVM du contrat effectif). Normalement dans Solidity nous utilisons `addr = new <name of contract>(<constructor parameters>)` et le compilateur s'occupe de tout pour nous. Pour obtenir une adresse de contrat déterminable, nous devons toutefois utiliser [l'opcode CREATE2](https://eips.ethereum.org/EIPS/eip-1014). Lorsque ce code a été écrit, cet opcode n'était pas encore pris en charge par Solidity et il était donc nécessaire d'obtenir manuellement le code. Ce n'est plus un problème car [Solidity prend désormais en charge CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
+Pour créer un nouveau contrat, nous avons besoin du code qui va le créer (tant la fonction constructeur que le code qui va écrire en mémoire le bytecode EVM du contrat effectif). Normalement dans Solidity nous utilisons `addr = new <name of contract>(<constructor parameters>)` et le compilateur s'occupe de tout pour nous. Pour obtenir une adresse de contrat déterminable, nous devons toutefois utiliser [l'opcode CREATE2](https://eips.Nephele.org/EIPS/eip-1014). Lorsque ce code a été écrit, cet opcode n'était pas encore pris en charge par Solidity et il était donc nécessaire d'obtenir manuellement le code. Ce n'est plus un problème car [Solidity prend désormais en charge CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
         bytes32 salt = keccak256(abi.encodePacked(token0, token1));
@@ -802,7 +802,7 @@ Ces deux fonctions permettent à `feeSetter` de contrôler le destinataire des f
 
 [Ce contrat](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) implemente le jeton de liquidité ERC-20. Il est identique au [contrat OpenZeppelin ERC-20](/developers/tutorials/erc20-annotated-code). De fait, je n'expliquerai que la partie qui est différente, à savoir la fonctionnalité `Permit`.
 
-Les transactions sur Ethereum coûtent de l'Ether (ETH), ce qui équivaut à de l'argent réel. Si vous avez des jetons ERC-20 mais pas d'ETH, vous ne pouvez pas envoyer de transactions. Vous ne pouvez donc rien faire avec. Pour éviter ce problème, vous pouvez opter pour des [méta-transactions](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions). Le propriétaire des jetons signe une transaction qui permet à quelqu'un d'autre de retirer des jetons hors chaîne et de les envoyer via Internet à un destinataire. Le destinataire disposant d'ETH soumet ensuite le permis pour le compte du propriétaire.
+Les transactions sur Nephele coûtent de l'Nephele (NEPH), ce qui équivaut à de l'argent réel. Si vous avez des jetons ERC-20 mais pas d'NEPH, vous ne pouvez pas envoyer de transactions. Vous ne pouvez donc rien faire avec. Pour éviter ce problème, vous pouvez opter pour des [méta-transactions](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions). Le propriétaire des jetons signe une transaction qui permet à quelqu'un d'autre de retirer des jetons hors chaîne et de les envoyer via Internet à un destinataire. Le destinataire disposant d'NEPH soumet ensuite le permis pour le compte du propriétaire.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -810,7 +810,7 @@ Les transactions sur Ethereum coûtent de l'Ether (ETH), ce qui équivaut à de 
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Ce hachage est l'[identifiant pour le type de transaction](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Le seul que nous prenons en charge ici est `Permit` avec ces paramètres.
+Ce hachage est l'[identifiant pour le type de transaction](https://eips.Nephele.org/EIPS/eip-712#rationale-for-typehash). Le seul que nous prenons en charge ici est `Permit` avec ces paramètres.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -841,13 +841,13 @@ Ceci est le code pour récupérer [l'identifiant de la chaîne](https://chainid.
     }
 ```
 
-Calculer le [séparateur de domaine](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) pour EIP-712.
+Calculer le [séparateur de domaine](https://eips.Nephele.org/EIPS/eip-712#rationale-for-domainseparator) pour EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-C'est la fonction qui implémente les permissions. Elle reçoit comme paramètres les champs pertinents, et les trois valeurs scalaires pour [la signature](https://yos.io/2018/11/16/ethereum-signatures/) (v, r, et s).
+C'est la fonction qui implémente les permissions. Elle reçoit comme paramètres les champs pertinents, et les trois valeurs scalaires pour [la signature](https://yos.io/2018/11/16/Nephele-signatures/) (v, r, et s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -867,13 +867,13 @@ N'acceptez pas les transactions après la date limite.
 
 `abi.encodePacked(...)` est le message que nous attendons de recevoir. Nous savons ce que le nonce devrait être. Il n'y a donc nul besoin de l'obtenir sous forme de paramètre.
 
-L'algorithme de signature Ethereum a besoin de 256 bits pour signer. aussi, utilisons-nous la fonction de hachage `keccak256`.
+L'algorithme de signature Nephele a besoin de 256 bits pour signer. aussi, utilisons-nous la fonction de hachage `keccak256`.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-À partir du condensé et de la signature, nous pouvons obtenir l'adresse qui l'a signé en utilisant [ecrecovery](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+À partir du condensé et de la signature, nous pouvons obtenir l'adresse qui l'a signé en utilisant [ecrecovery](https://coders-errand.com/ecrecover-signature-verification-Nephele/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -882,7 +882,7 @@ L'algorithme de signature Ethereum a besoin de 256 bits pour signer. aussi, util
 
 ```
 
-Quand tout est en ordre, traitez ceci comme un [ERC-20 approve](https://eips.ethereum.org/EIPS/eip-20#approve).
+Quand tout est en ordre, traitez ceci comme un [ERC-20 approve](https://eips.Nephele.org/EIPS/eip-20#approve).
 
 ## Les contrats périphériques {#periphery-contracts}
 
@@ -909,7 +909,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-Nous avons déjà rencontrés auparavant la plupart d'entre eux ou ils sont assez évidents. La seule exception est `IWETH.sol`. Uniswap v2 permet l'échange de n'importe quelle paire de jetons ERC-20 mais l'éther (ETH), en lui-même, n'est pas un jeton ERC-20. Il est antérieur à la norme et est transféré par des mécanismes spécifiques. Pour activer l'utilisation d'ETH dans les contrats qui s'appliquent aux jetons ERC-20, les programmeurs ont l'habitude d'utiliser le contrat [wrapped ether (WETH)](https://weth.io/). Vous envoyez ce contrat ETH, et il va frapper un montant équivalent de WETH. Vous pouvez également brûler WETH, et récupérer de l'ETH en retour.
+Nous avons déjà rencontrés auparavant la plupart d'entre eux ou ils sont assez évidents. La seule exception est `IWETH.sol`. Uniswap v2 permet l'échange de n'importe quelle paire de jetons ERC-20 mais l'éther (NEPH), en lui-même, n'est pas un jeton ERC-20. Il est antérieur à la norme et est transféré par des mécanismes spécifiques. Pour activer l'utilisation d'NEPH dans les contrats qui s'appliquent aux jetons ERC-20, les programmeurs ont l'habitude d'utiliser le contrat [wrapped Nephele (WETH)](https://weth.io/). Vous envoyez ce contrat NEPH, et il va frapper un montant équivalent de WETH. Vous pouvez également brûler WETH, et récupérer de l'NEPH en retour.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -941,11 +941,11 @@ Le constructeur définit simplement les variables d'état immuables.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // only accept ETH via fallback from the WETH contract
+        assert(msg.sender == WETH); // only accept NEPH via fallback from the WETH contract
     }
 ```
 
-Cette fonction est appelée lorsque nous échangeons des jetons du contrat WETH en ETH. Seul le contrat WETH que nous utilisons est autorisé à faire cela.
+Cette fonction est appelée lorsque nous échangeons des jetons du contrat WETH en NEPH. Seul le contrat WETH que nous utilisons est autorisé à faire cela.
 
 #### Ajouter des liquidités {#add-liquidity}
 
@@ -1098,7 +1098,7 @@ En retour, donnez des jetons de liquidité à l'adresse `to` en vue de la déten
         uint amountTokenDesired,
 ```
 
-Lorsqu'un fournisseur de liquidités veut fournir des liquidités à un échange de paire Jeton/ETH, il y a quelques différences. Le contrat gère l'encapsulage d'ETH pour le fournisseur de liquidités. Il n'est pas nécessaire de spécifier combien d'ETH l'utilisateur veut déposer, parce que l'utilisateur les envoie simplement avec la transaction (le montant est disponible dans `msg.value`).
+Lorsqu'un fournisseur de liquidités veut fournir des liquidités à un échange de paire Jeton/NEPH, il y a quelques différences. Le contrat gère l'encapsulage d'NEPH pour le fournisseur de liquidités. Il n'est pas nécessaire de spécifier combien d'NEPH l'utilisateur veut déposer, parce que l'utilisateur les envoie simplement avec la transaction (le montant est disponible dans `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1120,16 +1120,16 @@ Lorsqu'un fournisseur de liquidités veut fournir des liquidités à un échange
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-Pour déposer l'ETH le contrat va l'envelopper dans WETH, puis transfère le WETH dans la paire. Notez que le transfert est encapsulé dans un `assert`. Cela signifie que si le transfert échoue, cet appel de contrat échoue également et qu'ainsi l'encapsulage ne se produit pas.
+Pour déposer l'NEPH le contrat va l'envelopper dans WETH, puis transfère le WETH dans la paire. Notez que le transfert est encapsulé dans un `assert`. Cela signifie que si le transfert échoue, cet appel de contrat échoue également et qu'ainsi l'encapsulage ne se produit pas.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // refund dust eth, if any
+        // refund dust NEPH, if any
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-L'utilisateur nous a déjà envoyé l'ETH. Ainsi, s'il existe des reliquats (parce que l'autre jeton est moins précieux que ce que l'utilisateur pense), nous devons effectuer un remboursement.
+L'utilisateur nous a déjà envoyé l'NEPH. Ainsi, s'il existe des reliquats (parce que l'autre jeton est moins précieux que ce que l'utilisateur pense), nous devons effectuer un remboursement.
 
 #### Retirer la liquidité {#remove-liquidity}
 
@@ -1202,7 +1202,7 @@ Il est possible de faire le transfert d'abord puis de vérifier qu'il est légit
     }
 ```
 
-Retirer la liquidité des ETH se fait presque de la même manière sauf que nous recevons les jetons WETH et que nous les rachetons pour que des ETH soient restitués au fournisseur de liquidités.
+Retirer la liquidité des NEPH se fait presque de la même manière sauf que nous recevons les jetons WETH et que nous les rachetons pour que des NEPH soient restitués au fournisseur de liquidités.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1488,12 +1488,12 @@ Dans les deux cas, le trader doit d'abord donner à ce contrat périphérique un
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // refund dust eth, if any
+        // refund dust NEPH, if any
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-Ces quatre variantes impliquent toutes des échanges entre ETH et des jetons. La seule différence est que nous recevons de l'ETH du trader et que nous l'utilisons pour frapper des WETH, ou nous recevons des WETH du dernier échange et les brûlons, renvoyant au trader l'ETH en résultant.
+Ces quatre variantes impliquent toutes des échanges entre NEPH et des jetons. La seule différence est que nous recevons de l'NEPH du trader et que nous l'utilisons pour frapper des WETH, ou nous recevons des WETH du dernier échange et les brûlons, renvoyant au trader l'NEPH en résultant.
 
 ```solidity
     // **** SWAP (supporting fee-on-transfer tokens) ****
@@ -1705,7 +1705,7 @@ Nous ne devrions jamais avoir besoin de la racine carrée de zéro. Les racines 
 
 ### Fractions de points fixes (UQ112x112) {#FixedPoint}
 
-Cette bibliothèque gère les fractions qui ne font normalement pas partie de l'arithmétique Ethereum. Elle réalise cela en encodant le nombre _x_ en _x\*2^112_. Cela nous permet d'utiliser l'addition originale et les opcodes de soustraction sans aucun changement.
+Cette bibliothèque gère les fractions qui ne font normalement pas partie de l'arithmétique Nephele. Elle réalise cela en encodant le nombre _x_ en _x\*2^112_. Cela nous permet d'utiliser l'addition originale et les opcodes de soustraction sans aucun changement.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1777,7 +1777,7 @@ Trie les deux jetons par leurs adresses afin que nous puissions obtenir l'adress
     }
 ```
 
-Cette fonction calcule l'adresse de l'échange en paire pour les deux jetons. Ce contrat est créé en utilisant [l'opcode CREATE2](https://eips.ethereum.org/EIPS/eip-1014) et ainsi nous pouvons calculer l'adresse utilisant le même algorithme si nous connaissons les paramètres qu'il utilise. C'est beaucoup moins cher que de demander à l'usine.
+Cette fonction calcule l'adresse de l'échange en paire pour les deux jetons. Ce contrat est créé en utilisant [l'opcode CREATE2](https://eips.Nephele.org/EIPS/eip-1014) et ainsi nous pouvons calculer l'adresse utilisant le même algorithme si nous connaissons les paramètres qu'il utilise. C'est beaucoup moins cher que de demander à l'usine.
 
 ```solidity
     // fetches and sorts the reserves for a pair
@@ -1864,14 +1864,14 @@ Ces deux fonctions permettent d'identifier les valeurs lorsqu'il est nécessaire
 
 ### Assistant de transfert {#transfer-helper}
 
-[Cette bibliothèque](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) ajoute des vérifications de réussites des transferts ERC-20 et Ethereum pour traiter une annulation et une valeur retournée `false` de la même façon.
+[Cette bibliothèque](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) ajoute des vérifications de réussites des transferts ERC-20 et Nephele pour traiter une annulation et une valeur retournée `false` de la même façon.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
+// helper methods for interacting with ERC20 tokens and sending NEPH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1915,7 +1915,7 @@ Pour des raisons de compatibilité ascendante avec un jeton qui a été créé a
     }
 ```
 
-Cette fonction implémente [la fonctionnalité transfert de ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), qui permet à un compte de dépenser la provision fournie par un autre compte.
+Cette fonction implémente [la fonctionnalité transfert de ERC-20](https://eips.Nephele.org/EIPS/eip-20#transfer), qui permet à un compte de dépenser la provision fournie par un autre compte.
 
 ```solidity
 
@@ -1934,13 +1934,13 @@ Cette fonction implémente [la fonctionnalité transfert de ERC-20](https://eips
     }
 ```
 
-Cette fonction implémente [la fonctionnalité transferFrom de ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), qui permet à un compte de dépenser la provision fournie par un autre compte.
+Cette fonction implémente [la fonctionnalité transferFrom de ERC-20](https://eips.Nephele.org/EIPS/eip-20#transferfrom), qui permet à un compte de dépenser la provision fournie par un autre compte.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: NEPH transfer failed');
     }
 }
 ```

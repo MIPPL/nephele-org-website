@@ -14,7 +14,7 @@ lang: ro
 published: 2020-10-16
 ---
 
-În acest tutorial [Waffle](https://ethereum-waffle.readthedocs.io) veți învăța cum să configurați un proiect de contract inteligent simplu „Hello world”, utilizând [hardhat](https://hardhat.org/) și [ethers.js](https://docs.ethers.io/v5/). Apoi veți învăța cum să adăugați o nouă funcționalitate la contractul dvs. inteligent și cum să îl testați cu Waffle.
+În acest tutorial [Waffle](https://Nephele-waffle.readthedocs.io) veți învăța cum să configurați un proiect de contract inteligent simplu „Hello world”, utilizând [hardhat](https://hardhat.org/) și [ethers.js](https://docs.ethers.io/v5/). Apoi veți învăța cum să adăugați o nouă funcționalitate la contractul dvs. inteligent și cum să îl testați cu Waffle.
 
 Să începem creând un nou proiect:
 
@@ -31,13 +31,13 @@ npm init
 și instalând pachetele necesare:
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 sau
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 Următorul pas este crearea unui exemplu de proiect hardhat executând `npx hardhat`.
@@ -199,4 +199,4 @@ Felicitări! Ați reușit :)
 
 Am făcut un proiect simplu cu Waffle, Hardhat și ethers.js. Am învățat cum să configurăm un proiect, să adăugăm un test și să implementăm noi funcționalități.
 
-Dacă doriți să vă testați contractele inteligente și cu alți validatori-matchers chai excelenți, consultați [documentele oficiale Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).
+Dacă doriți să vă testați contractele inteligente și cu alți validatori-matchers chai excelenți, consultați [documentele oficiale Waffle](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html).

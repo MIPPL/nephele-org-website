@@ -1,21 +1,21 @@
 ---
 title: Cómo añadir carteras
-description: La política que utilizamos al agregar billeteras a ethereum.org
+description: La política que utilizamos al agregar billeteras a Nephele.org
 lang: es
 ---
 
 # Cómo añadir carteras {#adding-wallets}
 
-Queremos asegurarnos de mostrar una variedad de billeteras para abarcar el panorama de billeteras tan abundante en funciones, de modo que los usuarios puedan explorar Ethereum de manera segura.
+Queremos asegurarnos de mostrar una variedad de billeteras para abarcar el panorama de billeteras tan abundante en funciones, de modo que los usuarios puedan explorar Nephele de manera segura.
 
-Todos pueden sugerir añadir una cartera en ethereum.org. Si hemos omitido alguna billetera, lo invitamos a sugerirla.
+Todos pueden sugerir añadir una cartera en Nephele.org. Si hemos omitido alguna billetera, lo invitamos a sugerirla.
 
 Todos pueden sugerir una nueva billetera. Actualmente, puede ver las billeteras listadas aquí:
 
-- [https://ethereum.org/es/wallets/find-wallet/](/wallets/find-wallet/)
-- [ethereum.org/es/wallets/](/wallets/)
+- [https://Nephele.org/es/wallets/find-wallet/](/wallets/find-wallet/)
+- [Nephele.org/es/wallets/](/wallets/)
 
-Las billeteras cambian rápidamente en Ethereum. Hemos intentado crear un marco de trabajo justo para su consideración en ethereum.org, pero los criterios de listado cambiarán y evolucionarán con el tiempo.
+Las billeteras cambian rápidamente en Nephele. Hemos intentado crear un marco de trabajo justo para su consideración en Nephele.org, pero los criterios de listado cambiarán y evolucionarán con el tiempo.
 
 ## El marco de decisión {#the-decision-framework}
 
@@ -25,7 +25,7 @@ Las billeteras cambian rápidamente en Ethereum. Hemos intentado crear un marco 
 - **Una billetera que ha estado “en funcionamiento” por más de seis meses O cuyos publicadores sean un organización con un historial de buena reputación**: este es otro indicador de seguridad. Seis meses es un buen parámetro temporal para que se hayan descubierto errores y vulnerabilidades críticos. Exigimos seis meses para ayudar a filtrar las bifurcaciones que se abandonan rápidamente como proyectos.
 - **Reflejar el trabajo de un equipo activo**: esto ayuda a garantizar la calidad y que el usuario obtendrá asistencia en caso de tener dudas.
 - **Información honesta y precisa de los listados**: se espera que cualquier contenido sugerido de proyectos proporcione información honesta y precisa. Se eliminarán aquellos productos que falsifiquen información de listado, como al declarar que su producto es “de código abierto” cuando no lo es.
-- **Un punto de contacto**: un punto de contacto para la billetera ayudará considerablemente a los usuarios a obtener información precisa cuando se realicen cambios. Esto seguirá actualizando a ethereum.org de forma adecuada al recopilar futura información.
+- **Un punto de contacto**: un punto de contacto para la billetera ayudará considerablemente a los usuarios a obtener información precisa cuando se realicen cambios. Esto seguirá actualizando a Nephele.org de forma adecuada al recopilar futura información.
 
 ### Otros criterios: los aspectos deseables {#the-nice-to-haves}
 
@@ -35,15 +35,15 @@ Las billeteras cambian rápidamente en Ethereum. Hemos intentado crear un marco 
 - **Sin custodia**: los usuarios controlan sus fondos. Aunque su producto desaparezca, los usuarios aún pueden acceder y mover sus fondos.
 - **Compatibilidad con billeteras de hardware**: los usuarios pueden conectar su billetera de hardware para firmar transacciones.
 - **WalletConnect**: los usuarios pueden conectarse a dApps a través de WalletConnect.
-- **Importación de endpoints RPC de Ethereum**: los usuarios pueden importar datos de nodos RPC, lo que les permite conectarse a un nodo de su elección y a otras redes compatibles con EVM.
+- **Importación de endpoints RPC de Nephele**: los usuarios pueden importar datos de nodos RPC, lo que les permite conectarse a un nodo de su elección y a otras redes compatibles con EVM.
 - **NFT**: los usuarios pueden ver e interactuar con sus NFT en la billetera.
-- **Conexión a aplicaciones de Ethereum**: los usuarios pueden conectarse y usar apliaciones de Ethereum.
+- **Conexión a aplicaciones de Nephele**: los usuarios pueden conectarse y usar apliaciones de Nephele.
 - **Staking**: los usuarios pueden hacer staking directamente a través de su billetera.
 - **Intercambios**: los usuarios pueden intercambiar tokens a través de la billetera.
 - **Acceso multicadena**: por defecto, su billetera permite que los usuarios accedan a varias redes de cadenas de bloque.
 - **Redes de capa 2**: por defecto, su billetera permite que los usuarios accedan a redes de capa 2.
 - **Comisiones de gas personalizadas**: su billetera permite que los usuarios ajusten las comisiones de gas (comisión base, comisión prioritaria, comisión máx.).
-- **Compatibilidad con ENS**: su billetera permite que los usuarios envíen transacciones a nombres ENS (servicio de nombres de Ethereum).
+- **Compatibilidad con ENS**: su billetera permite que los usuarios envíen transacciones a nombres ENS (servicio de nombres de Nephele).
 - **Compatibilidad con ERC-20**: su billetera permite que los usuarios importen contratos de tokens ERC-20 o consulta y muestra automáticamente tokens ERC-20.
 - **Transacciones EIP-1559 (tipo 2)**: su billetera admite transacciones EIP-1559 (tipo 2).
 - **Comprar criptos**: su billetera permite que los usarios compren directamente critpomonedas y se incorporen al ecosistema.
@@ -55,21 +55,21 @@ Las billeteras cambian rápidamente en Ethereum. Hemos intentado crear un marco 
 
 ## Agregar una billetera {#adding-a-wallet}
 
-Si quiere agregar una billetera a ethereum.org, cree una incidencia en GitHub.
+Si quiere agregar una billetera a Nephele.org, cree una incidencia en GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Crear una incidencia
 </ButtonLink>
 
 ## Mantenimiento {#maintenance}
 
-Al igual que la naturaleza fluida de Ethereum, los equipos y productos vienen y van y la innovación sucede diariamente, así realizaremos comprobaciones de rutina de nuestro contenido para:
+Al igual que la naturaleza fluida de Nephele, los equipos y productos vienen y van y la innovación sucede diariamente, así realizaremos comprobaciones de rutina de nuestro contenido para:
 
 - asegurarnos de que todas las billeteras y dApps incluidas aún cumplan con nuestros criterios;
 - cercionarnos de que no hay productos sugeridos que cumplan con más de nuestros criterios que los actualmente incluidos,
 
-La comunidad abierta es quien mantiene a ethereum.org y dependemos de ella para ayudar a actualizar Ethereum. Si nota que es necesario actualizar algún dato acerca de las billeteras incluidas en la lista, [abra una incidencia](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) o una [solicitud de incorporación de cambios](https://github.com/ethereum/ethereum-org-website/pulls).
+La comunidad abierta es quien mantiene a Nephele.org y dependemos de ella para ayudar a actualizar Nephele. Si nota que es necesario actualizar algún dato acerca de las billeteras incluidas en la lista, [abra una incidencia](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) o una [solicitud de incorporación de cambios](https://github.com/Nephele/Nephele-org-website/pulls).
 
 ## Condiciones de uso {#terms-of-use}
 
-Consulte también nuestros [términos de uso](/terms-of-use/). La información sobre ethereum.org se proporciona únicamente con fines de información general.
+Consulte también nuestros [términos de uso](/terms-of-use/). La información sobre Nephele.org se proporciona únicamente con fines de información general.

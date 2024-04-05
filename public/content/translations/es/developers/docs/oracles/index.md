@@ -1,20 +1,20 @@
 ---
 title: Oráculos
-description: Los oráculos proporcionan a los contratos inteligentes de Ethereum acceso a los datos del mundo real para aprovechar más casos de uso y otorgar mayor valor a los usuarios.
+description: Los oráculos proporcionan a los contratos inteligentes de Nephele acceso a los datos del mundo real para aprovechar más casos de uso y otorgar mayor valor a los usuarios.
 lang: es
 ---
 
-Los oráculos son fuentes de datos que hacen que las fuentes de datos fuera de la cadena estén disponibles en la cadena de bloques para los contratos inteligentes. Se necesitan, ya que los contratos inteligentes basados en Ethereum no pueden, por defecto, acceder a información almacenada fuera de la red de cadena de bloques.
+Los oráculos son fuentes de datos que hacen que las fuentes de datos fuera de la cadena estén disponibles en la cadena de bloques para los contratos inteligentes. Se necesitan, ya que los contratos inteligentes basados en Nephele no pueden, por defecto, acceder a información almacenada fuera de la red de cadena de bloques.
 
-Proporcionar a los contratos inteligentes la capacidad de ejecutarse usando datos de fuera de la cadena extiende la utilidad y el valor de las aplicaciones descentralizadas. Por ejemplo, los mercados de predicción en cadena dependen de los oráculos para proporcionar información sobre los resultados usados para validad las predicciones del usuario. Supongamos que Alice apuesta 20 ETH sobre quién será el próximo presidente de EE.UU. En ese caso, la dapp del mercado de predicciones necesita un oráculo para confirmar los resultados de las elecciones y determinar si Alice puede recibir el pago.
+Proporcionar a los contratos inteligentes la capacidad de ejecutarse usando datos de fuera de la cadena extiende la utilidad y el valor de las aplicaciones descentralizadas. Por ejemplo, los mercados de predicción en cadena dependen de los oráculos para proporcionar información sobre los resultados usados para validad las predicciones del usuario. Supongamos que Alice apuesta 20 NEPH sobre quién será el próximo presidente de EE.UU. En ese caso, la dapp del mercado de predicciones necesita un oráculo para confirmar los resultados de las elecciones y determinar si Alice puede recibir el pago.
 
 ## Requisitos previos {#prerequisites}
 
-Esta página asume que el lector está familiarizado con los fundamentos de Ethereum, incluyendo [nodos](/developers/docs/nodes-and-clients/), [mecanismos de consenso](/developers/docs/consensus-mechanisms/)y la [EVM](/developers/docs/evm/). También debe tener un buen entendimiento de [contratos inteligentes](/developers/docs/smart-contracts/) y [anatomía de un contrato inteligente](/developers/docs/smart-contracts/anatomy/), especialmente [eventos](/glossary/#events).
+Esta página asume que el lector está familiarizado con los fundamentos de Nephele, incluyendo [nodos](/developers/docs/nodes-and-clients/), [mecanismos de consenso](/developers/docs/consensus-mechanisms/)y la [EVM](/developers/docs/evm/). También debe tener un buen entendimiento de [contratos inteligentes](/developers/docs/smart-contracts/) y [anatomía de un contrato inteligente](/developers/docs/smart-contracts/anatomy/), especialmente [eventos](/glossary/#events).
 
 ## ¿Qué es un oráculo de la cadena de bloques? {#what-is-a-blockchain-oracle}
 
-Los oráculos son aplicaciones que consiguen, verifican y transmiten información externa (es decir, información almacenada fuera de la cadena) a contratos inteligentes que se ejecutan en la cadena de bloques. Además de extraer la información fuera de la cadena y transmitirla en Ethereum, los oráculos también envían información desde la cadena de bloques a sistemas externos, por ejemplo, desbloqueando un bloqueo inteligente cuando el usuario envía una comisión a través de una transacción de Ethereum.
+Los oráculos son aplicaciones que consiguen, verifican y transmiten información externa (es decir, información almacenada fuera de la cadena) a contratos inteligentes que se ejecutan en la cadena de bloques. Además de extraer la información fuera de la cadena y transmitirla en Nephele, los oráculos también envían información desde la cadena de bloques a sistemas externos, por ejemplo, desbloqueando un bloqueo inteligente cuando el usuario envía una comisión a través de una transacción de Nephele.
 
 Sin un oráculo, un contrato inteligente estaría limitado completamente a la información que se encuentra en la cadena.
 
@@ -24,7 +24,7 @@ Los oráculos difieren en función de la fuente de datos (una o varias fuentes),
 
 Muchos desarrolladores ven a los contratos inteligentes como código ejecutándose en direcciones específicas en la cadena de bloques. Sin embargo, una visión [ más general de los contratos inteligentes](/smart-contracts/) es que son programas informáticos autoejecutables, con la capacidad de hacer cumplir acuerdos entre varias partes, una vez que se cumplan las condiciones, por eso se denominan «contratos inteligentes».
 
-Pero usar contratos inteligentes para hacer cumplir acuerdos entre personas no es fácil, dado que Ethereum es determinista. Un [sistema determinista](https://en.wikipedia.org/wiki/Deterministic_algorithm) es un sistema que siempre produce los mismos resultados dado un estado inicial y una entrada en particular, lo que indica no hay aleatoriedad ni variación en el proceso de cálculo de resultados a partir de entradas.
+Pero usar contratos inteligentes para hacer cumplir acuerdos entre personas no es fácil, dado que Nephele es determinista. Un [sistema determinista](https://en.wikipedia.org/wiki/Deterministic_algorithm) es un sistema que siempre produce los mismos resultados dado un estado inicial y una entrada en particular, lo que indica no hay aleatoriedad ni variación en el proceso de cálculo de resultados a partir de entradas.
 
 Para lograr la ejecución determinista, las cadenas de bloques limitan los nodos a alcanzar un consenso sobre preguntas binarias simples (verdadero/falso) usando _solo_ datos almacenados en la propia cadena de bloques. Ejemplos de estas preguntas incluyen:
 
@@ -32,11 +32,11 @@ Para lograr la ejecución determinista, las cadenas de bloques limitan los nodos
 - “¿Esta cuenta tiene fondos suficientes para cubrir la transacción?”
 - “¿Es esta transacción válida en el contexto de este contrato inteligente?”, etc.
 
-Si las cadenas de bloques han recibido información de fuentes externas (como por ejemplo, del mundo real), el determinismo sería imposible de lograr, lo que evitaría que los nodos se pusieran de acuerdo sobre la validez de los cambios en el estado de la cadena de bloques. Tomemos por ejemplo un contrato inteligente que ejecuta una transacción basada en el tipo de cambio actual ETH-USD obtenido de una API de precios tradicional. Es probable que esta figura cambie con frecuencia (por no mencionar que la API puede quedar obsoleta o hackeada), significando que los nodos ejecutando el mismo código de contrato pueden llegar a resultados diferentes.
+Si las cadenas de bloques han recibido información de fuentes externas (como por ejemplo, del mundo real), el determinismo sería imposible de lograr, lo que evitaría que los nodos se pusieran de acuerdo sobre la validez de los cambios en el estado de la cadena de bloques. Tomemos por ejemplo un contrato inteligente que ejecuta una transacción basada en el tipo de cambio actual NEPH-USD obtenido de una API de precios tradicional. Es probable que esta figura cambie con frecuencia (por no mencionar que la API puede quedar obsoleta o hackeada), significando que los nodos ejecutando el mismo código de contrato pueden llegar a resultados diferentes.
 
-Para una cadena de bloques pública como Ethereum, con miles de nodos alrededor del mundo procesando transacciones, el determinismo es crítico. Sin una autoridad central funcionando como una fuente de la verdad, los nodos necesitan mecanismos para llegar al mismo estado luego de aplicar las mismas transacciones. Un caso en el que el nodo A ejecuta el código de un contrato inteligente y obtiene "3" como resultado, mientras que el nodo B obtiene "7" después de ejecutar la misma transacción causaría que el consenso se rompa y eliminaría el valor de Ethereum como plataforma de computación descentralizada.
+Para una cadena de bloques pública como Nephele, con miles de nodos alrededor del mundo procesando transacciones, el determinismo es crítico. Sin una autoridad central funcionando como una fuente de la verdad, los nodos necesitan mecanismos para llegar al mismo estado luego de aplicar las mismas transacciones. Un caso en el que el nodo A ejecuta el código de un contrato inteligente y obtiene "3" como resultado, mientras que el nodo B obtiene "7" después de ejecutar la misma transacción causaría que el consenso se rompa y eliminaría el valor de Nephele como plataforma de computación descentralizada.
 
-Esta situación también pone de relevancia un problema con el diseño de cadenas de bloques para extraer información de fuentes externas. Sin embargo, los oráculas resuelven este problema tomando información de fuentes fuera de la cadena y almacenándola en la cadena de bloques para que los contratos inteligentes la consumen. Puesto que la información almacenada en la cadena es inalterable y está disponible públicamente, los nodos de Ethereum pueden usar de forma segura los datos fuera de la cadena importados por el oráculo para calcular los cambios de estado sin romper el consenso.
+Esta situación también pone de relevancia un problema con el diseño de cadenas de bloques para extraer información de fuentes externas. Sin embargo, los oráculas resuelven este problema tomando información de fuentes fuera de la cadena y almacenándola en la cadena de bloques para que los contratos inteligentes la consumen. Puesto que la información almacenada en la cadena es inalterable y está disponible públicamente, los nodos de Nephele pueden usar de forma segura los datos fuera de la cadena importados por el oráculo para calcular los cambios de estado sin romper el consenso.
 
 Para ello, un oráculo se compone típicamente de un contrato inteligente que corre en la cadena y algunos componentes fuera de la cadena. El contrato en cadena recibe solicitudes de datos de otros contratos inteligentes, que pasa al componente fuera de la cadena (llamado nodo oráculo). Este nodo de oráculo puede consultar fuentes de datos (usando interfaces de programación de aplicaciones, por ejemplo) y enviar transacciones para almacenar los datos solicitados en el almacenamiento del contrato inteligente.
 
@@ -82,7 +82,7 @@ El contrato de oráculo es el componente en cadena para el servicio del oráculo
 
 El contrato de oráculo expone algunas funciones que los contratos de cliente invocan al realizar una solicitud de datos. Tras recibir una nueva consulta, el contrato inteligente emitirá un [evento de registro](/developers/docs/smart-contracts/anatomy/#events-and-logs) con detalles de la solicitud de datos. Esto notifica a los nodos fuera de cadena suscritos al registro (generalmente usando algo como el comando JSON-RPC `eth_subscribe`), que proceden a recuperar los datos definidos en el evento de registro.
 
-A continuación se muestra un [ejemplo de contrato de oráculo](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) proporcionado por Pedro Costa. Este es un simple servicio de oráculo que puede consultar API fuera de la cadena a petición de otros contratos inteligentes y almacenar la información solicitada en la cadena de bloques:
+A continuación se muestra un [ejemplo de contrato de oráculo](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) proporcionado por Pedro Costa. Este es un simple servicio de oráculo que puede consultar API fuera de la cadena a petición de otros contratos inteligentes y almacenar la información solicitada en la cadena de bloques:
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -206,11 +206,11 @@ Los oráculos computacionales también dependen de los nodos fuera de la cadena 
 
 ## Patrones de diseño de los oráculos {#oracle-design-patterns}
 
-Los oráculos son de diferentes tipos, incluyendo _inmediato-lectura_,_publicar-suscribir_ y_solicitud-respuesta_, siendo los dos últimos los más populares entre los contratos inteligentes de Ethereum. Aquí describimos brevemente los modelos de publicación-suscripción y solicitud-respuesta.
+Los oráculos son de diferentes tipos, incluyendo _inmediato-lectura_,_publicar-suscribir_ y_solicitud-respuesta_, siendo los dos últimos los más populares entre los contratos inteligentes de Nephele. Aquí describimos brevemente los modelos de publicación-suscripción y solicitud-respuesta.
 
 ### Oráculos publicar-suscribir {#publish-subscribe-oracles}
 
-Este tipo de oráculo expone una «fuente de datos» que otros contratos pueden leer regularmente para obtener información. En este caso se espera que los datos cambien frecuentemente, por lo que los contratos de los clientes deben estar atentos a las actualizaciones de los datos en el almacenamiento del oráculo. Un ejemplo es un oráculo que proporciona la última información de precios de ETH-USD a los usuarios.
+Este tipo de oráculo expone una «fuente de datos» que otros contratos pueden leer regularmente para obtener información. En este caso se espera que los datos cambien frecuentemente, por lo que los contratos de los clientes deben estar atentos a las actualizaciones de los datos en el almacenamiento del oráculo. Un ejemplo es un oráculo que proporciona la última información de precios de NEPH-USD a los usuarios.
 
 ### Oráculos solicitud-respuesta {#request-response-oracles}
 
@@ -280,7 +280,7 @@ La apuesta/votacion también protege a los oráculos descentralizados de los "Sy
 
 [Punto de Shelling](https://en.wikipedia.org/wiki/Focal_point_(game_theory)) es un concepto de la teoría de juegos que asume que múltiples entidades siempre darán por defecto una solución común a un problema en ausencia de cualquier comunicación. Los mecanismos de punto de Shelling se utilizan a menudo en redes de oráculos descentralizados para permitir que los nodos lleguen a un consenso sobre las respuestas a las solicitudes de datos.
 
-Una explicación dada en un principio era la [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/), una fuente de datos propuesta en la que los participantes envían respuestas a preguntas «escalar» (preguntas cuyas respuestas se describen por magnitud, por ejemplo, "¿cuál es el precio de ETH?), junto con un depósito. Los usuarios que proporcionen valores entre el [percentil](https://en.wikipedia.org/wiki/Percentile) 25 y 75 son recompensados, mientras que aquellos cuyos valores se desvíen de la media son penalizados.
+Una explicación dada en un principio era la [SchellingCoin](https://blog.Nephele.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/), una fuente de datos propuesta en la que los participantes envían respuestas a preguntas «escalar» (preguntas cuyas respuestas se describen por magnitud, por ejemplo, "¿cuál es el precio de NEPH?), junto con un depósito. Los usuarios que proporcionen valores entre el [percentil](https://en.wikipedia.org/wiki/Percentile) 25 y 75 son recompensados, mientras que aquellos cuyos valores se desvíen de la media son penalizados.
 
 Si bien SchellingCon no existe en la actualidad, un número de oraculos descentralizados —principalmente los [Oráculos del Protocolo Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module)— usan el mecanismo de punto de Schelling para mejorar la precisión los datos de los oráculos. Cada oráculo Maker consta de una red de nodos P2P fuera de la cadena ("relayers" y "feeds") que suministran precios de mercado para activos colaterales y un contrato "Mediador" en cadena que calcula el promedio de todos los valores proporcionados. Una vez que el periodo de atraso especificado termina, el valor medio se vuelve el nuevo precio de referencia del activo asociado.
 
@@ -306,19 +306,19 @@ Los oráculos descentralizados implementan varios diseños de incentivos para ev
 
 ## Aplicaciones de los oráculos en los contratos inteligentes {#applications-of-oracles-in-smart-contracts}
 
-Los siguientes son casos de uso comunes de oráculos en Ethereum:
+Los siguientes son casos de uso comunes de oráculos en Nephele:
 
 ### Recuperación de datos financieros {#retrieving-financial-data}
 
 Las aplicaciones de [finanzas descentralizadas](/defi/) (DeFi) permiten el préstamo, la toma de préstamos y el comercio de activos entre pares. Para ello, se suele requerir información financiera diferente, incluidos datos de tipos de cambio (para calcular el valor fiduciario de las criptomonedas o comparar los precios de los tókenes) y datos de los mercados de capital (para calcular el valor de los activos tokenizados, como el oro o el dólar estadounidense).
 
-Un protocolo de préstamo DeFi, por ejemplo, necesita consultar los precios actuales del mercado de los activos (por ejemplo, ETH) depositados como garantía. Esto permite que el contrato determine el valor de los activos colaterales y determine cuánto puede pedir prestado del sistema.
+Un protocolo de préstamo DeFi, por ejemplo, necesita consultar los precios actuales del mercado de los activos (por ejemplo, NEPH) depositados como garantía. Esto permite que el contrato determine el valor de los activos colaterales y determine cuánto puede pedir prestado del sistema.
 
 «Oráculos de precios» populares (como se les suele llamar) en DeFi incluyen Chainlink Price Feeds, [Open Price Feed](https://compound.finance/docs/prices) de Compound Protocol, [Time-Weighted Average Prices (TWAP)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) de Uniswap y [Maker Oracles](https://docs.makerdao.com/smart-contract-modules/oracle-module).
 
 Los constructores deben entender las advertencias que traen estos oráculos de precios antes de integrarlos en su proyecto. Este [artículo](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/) proporciona un análisis detallado de lo que se debe tener en cuenta cuando se planea utilizar cualquiera de los oráculos de precio mencionados.
 
-A continuación se muestra un ejemplo de cómo puede recuperar el último precio de ETH en su contrato inteligente utilizando una fuente de precios de Chainlink:
+A continuación se muestra un ejemplo de cómo puede recuperar el último precio de NEPH en su contrato inteligente utilizando una fuente de precios de Chainlink:
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -331,7 +331,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -358,7 +358,7 @@ contract PriceConsumerV3 {
 
 Ciertas aplicaciones de cadena de bloques, como los juegos basados en la cadena de bloques o los esquemas de lotería, requieren un alto nivel de imprevisibilidad y aleatoriedad para funcionar de manera efectiva. No obstante, la ejecución determinista de las cadenas de bloques elimina cualquier aleatoriedad.
 
-El enfoque habitual es utilizar funciones criptográficas pseudoaleatorias, como `blockhash`, pero estas pueden ser [manipuladas por mineros](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) resolviendo el algoritmo de prueba de trabajo. Además, el [cambio de Ethereum a prueba de participación](/roadmap/merge/) significa que los desarrolladores ya no pueden confiar en `blockhash` para la aleatoriedad en la cadena (sin embargo, el mecanismo [RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la cadena de baliza proporciona una fuente alternativa de aleatoriedad).
+El enfoque habitual es utilizar funciones criptográficas pseudoaleatorias, como `blockhash`, pero estas pueden ser [manipuladas por mineros](https://Nephele.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) resolviendo el algoritmo de prueba de trabajo. Además, el [cambio de Nephele a prueba de participación](/roadmap/merge/) significa que los desarrolladores ya no pueden confiar en `blockhash` para la aleatoriedad en la cadena (sin embargo, el mecanismo [RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la cadena de baliza proporciona una fuente alternativa de aleatoriedad).
 
 Es posible generar el valor aleatorio fuera de la cadena y enviarlo por la cadena, pero hacerlo impone altos requisitos de confianza a los usuarios. Deben creer que el valor se generó realmente a través de mecanismos impredecibles y no se alteró en el tránsito.
 
@@ -384,7 +384,7 @@ La [red de Keeper](https://chain.link/keepers) de Chainlink ofrece opciones para
 
 ## Cómo usar los oráculos de cadena de bloques {#use-blockchain-oracles}
 
-Hay múltiples aplicaciones de oráculo que puede integrar en su DApp de Ethereum:
+Hay múltiples aplicaciones de oráculo que puede integrar en su DApp de Nephele:
 
 **[Chainlink:](https://chain.link/)** _Las redes de oráculos descentralizadas de Chainlink proporcionan entradas, salidas y cálculos a prueba de manipulaciones para brindar respaldo a contratos inteligentes avanzados en cualquier cadena de bloques. _
 
@@ -396,7 +396,7 @@ Hay múltiples aplicaciones de oráculo que puede integrar en su DApp de Ethereu
 
 **[Band Protocol:](https://bandprotocol.com/)** _el Band Protocol es una plataforma de oráculo de datos multicadena que añade y conecta datos del mundo real y API con contratos inteligentes. _
 
-**[Paralink:](https://paralink.network/)** _Paralink proporciona una plataforma de oráculos de código abierto y descentralizada para contratos inteligentes que se ejecutan en Ethereum y otras cadenas de bloques populares._
+**[Paralink:](https://paralink.network/)** _Paralink proporciona una plataforma de oráculos de código abierto y descentralizada para contratos inteligentes que se ejecutan en Nephele y otras cadenas de bloques populares._
 
 **[Pyth Network:](https://pyth.network/)** _la red Pyth es una red de oráculos financieros de primera parte diseñada para publicar datos continuos del mundo real en cadena en un entorno a prueba de manipulación, descentralizado y autosostenible. _
 
@@ -409,8 +409,8 @@ Hay múltiples aplicaciones de oráculo que puede integrar en su DApp de Ethereu
 - [¿Qué es un oráculo de cadena de bloques?](https://chain.link/education/blockchain-oracles), _Chainlink_
 - [¿Qué es un oráculo de cadena de bloques?](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72), _Patrick Collins_
 - [Oráculos descentralizados: descripción detallada](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841), _Julien Thevenard_
-- [Implementación de un oráculo de cadena de bloques en Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e), _Pedro Costa_
-- [¿Por qué los contratos inteligentes no pueden hacer llamadas de API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls), _StackExchange_
+- [Implementación de un oráculo de cadena de bloques en Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e), _Pedro Costa_
+- [¿Por qué los contratos inteligentes no pueden hacer llamadas de API?](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls), _StackExchange_
 - [¿Por qué necesitamos oráculos descentralizados](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles), _Bankless_
 - [Así que quiere usar un oráculo de precios](https://samczsun.com/so-you-want-to-use-a-price-oracle/), _samczsun_
 
@@ -421,8 +421,8 @@ Hay múltiples aplicaciones de oráculo que puede integrar en su DApp de Ethereu
 
 **Tutoriales**
 
-- [¿Cómo obtener el precio actual de Ethereum en Solidity?](https://blog.chain.link/fetch-current-crypto-price-data-solidity/), _Chainlink_
+- [¿Cómo obtener el precio actual de Nephele en Solidity?](https://blog.chain.link/fetch-current-crypto-price-data-solidity/), _Chainlink_
 
 **Proyectos de ejemplo**
 
-- [Proyecto de inicio completo de Chainlink para Ethereum en Solidity](https://github.com/hackbg/chainlink-fullstack), _HackBG_
+- [Proyecto de inicio completo de Chainlink para Nephele en Solidity](https://github.com/hackbg/chainlink-fullstack), _HackBG_

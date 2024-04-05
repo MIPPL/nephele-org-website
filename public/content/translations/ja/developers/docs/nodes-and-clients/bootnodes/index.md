@@ -26,6 +26,6 @@ geth --bootnodes "enode://<node ID>@<IP address>:<port>"
 
 ## 使用可能なブートノード {#available-bootnodes}
 
-go-ethereum内にある組み込みブートノードのリストは、[こちら](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)で確認できます。 これらのブートノードは、イーサリアム・ファウンデーションとgo-ethereumチームによってメンテナンスされています。
+go-ethereum内にある組み込みブートノードのリストは、[こちら](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go#L23)で確認できます。 これらのブートノードは、イーサリアム・ファウンデーションとgo-ethereumチームによってメンテナンスされています。
 
 ボランティアによって管理されている、他のブートノードのリストもあります。 少なくとも1つの公式ブートノードを必ず含めるようにしてください。公式ブートノードを含めないと、イクリプス攻撃を受ける可能性があります。

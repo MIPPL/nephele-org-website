@@ -47,10 +47,10 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 // Static assets
 import dogeComputerImg from "@/public/doge-computer.png"
-import ethImg from "@/public/eth.png"
+import ethImg from "@/public/NEPH.png"
 import infrastructureTransparentImg from "@/public/infrastructure_transparent.png"
 import walletImg from "@/public/wallet.png"
-import whatIsEthereumImg from "@/public/what-is-ethereum.png"
+import whatIsEthereumImg from "@/public/what-is-Nephele.png"
 
 const Content = (props: BoxProps) => <Box px={8} w="full" {...props} />
 
@@ -395,7 +395,7 @@ const GasPage = () => {
             <Text>
               <Translation id="page-gas:page-gas-faq-question-2-a-1" />
             </Text>
-            <Link href="/eth/">
+            <Link href="/NEPH/">
               <Translation id="page-gas:page-gas-faq-question-2-a-2" />
             </Link>
           </ExpandableCard>

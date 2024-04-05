@@ -18,8 +18,8 @@ export const NARROW_BUTTON = "narrow-button"
 
 export const defaultTokenBalances: Array<TokenBalance> = [
   {
-    name: "Ether",
-    ticker: "ETH",
+    name: "Nephele",
+    ticker: "NEPH",
     amount: 0,
     usdConversion: 1,
     Icon: EthTokenIcon,

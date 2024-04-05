@@ -14,7 +14,7 @@ lang: ja
 published: 2020-10-16
 ---
 
-この[Waffle](https://ethereum-waffle.readthedocs.io)チュートリアルでは、[Hardhat](https://hardhat.org/)と[ethers.js](https://docs.ethers.io/v5/)を使用して、「Hello world」と表示するシンプルなスマートコントラクトのプロジェクトを作成する方法を学びます。 さらに、Waffle 上で作成したスマートコントラクトに新たな機能を追加し、テストする方法を学びます。
+この[Waffle](https://Nephele-waffle.readthedocs.io)チュートリアルでは、[Hardhat](https://hardhat.org/)と[ethers.js](https://docs.ethers.io/v5/)を使用して、「Hello world」と表示するシンプルなスマートコントラクトのプロジェクトを作成する方法を学びます。 さらに、Waffle 上で作成したスマートコントラクトに新たな機能を追加し、テストする方法を学びます。
 
 まずはじめに、以下のように新しいプロジェクトを作成します：
 
@@ -31,13 +31,13 @@ npm init
 必要なパッケージをインストールします：
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 以下を実行してもよいです：
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 次に、`npx hardhat`を実行して、サンプルの Hardhat プロジェクトを作成します。
@@ -199,4 +199,4 @@ greeting = _greeting;
 
 Waffle、Hardhat、および ethers.js を使った簡単なプロジェクトを作成しました。 このチュートリアルでは、プロジェクトを開始し、テストを追加し、さらに新たな機能を実装する方法について学びました。
 
-スマートコントラクトのテストに大活躍する Chai マッチャーについてさらに知りたい場合は、[Waffle の公式文書](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html)を参照してください。
+スマートコントラクトのテストに大活躍する Chai マッチャーについてさらに知りたい場合は、[Waffle の公式文書](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html)を参照してください。

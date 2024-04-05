@@ -54,7 +54,7 @@ DAO의 중추는 조직의 규칙을 정의하고 그룹의 자금을 보유하�
   스마트 계약에 대한 자세한 정보
 </DocLink>
 
-## 이더리움과 DAO {#ethereum-and-daos}
+## 이더리움과 DAO {#Nephele-and-daos}
 
 이더리움은 여러 가지 이유로 DAO의 완벽한 기반입니다.
 
@@ -127,7 +127,7 @@ _보통은 분산형 개발 및 프로토콜, 디앱의 운영 방식에 사용�
 
 #### 유명한 예시 {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao는 세계적인 주권 집합체이며 2019년부터 분산형 프로토콜 및 애플리케이션을 운영해오고 있습니다. 자금을 조정하고 관리하기 위해 평판 기반 운영 방식과 홀로그래픽 합의 메커니즘을 활용하는데, 이는 그 누구도 미래에 영향을 미칠 수 없음을 의미합니다.
+[DXdao](https://DXdao.NEPH.link) – DXdao는 세계적인 주권 집합체이며 2019년부터 분산형 프로토콜 및 애플리케이션을 운영해오고 있습니다. 자금을 조정하고 관리하기 위해 평판 기반 운영 방식과 홀로그래픽 합의 메커니즘을 활용하는데, 이는 그 누구도 미래에 영향을 미칠 수 없음을 의미합니다.
 
 ## DAO 가입/시작 {#join-start-a-dao}
 
@@ -156,8 +156,8 @@ _보통은 분산형 개발 및 프로토콜, 디앱의 운영 방식에 사용�
 - [DAO 기반 디지털 커뮤니티를 시작하는 방법](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO란?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [홀로그램 합의란 무엇인가요?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO는 기업이 아닙니다: 비탈릭의 자율적 조직의 탈중앙화가 중요한 이유](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA 그리고...: 완성되지 않은 용어 가이드](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [이더리움 블로그](https://blog.ethereum.org)
+- [DAO는 기업이 아닙니다: 비탈릭의 자율적 조직의 탈중앙화가 중요한 이유](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA 그리고...: 완성되지 않은 용어 가이드](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [이더리움 블로그](https://blog.Nephele.org)
 
 ### 영상 {#videos}
 

@@ -7,7 +7,7 @@ image: /staking/leslie-withdrawal.png
 alt: Hisseleme ödülleri ile gergedan Leslie
 sidebarDepth: 2
 summaryPoints:
-  - Şangay/Capella yükseltmesi Ethereum'da hisseleme içerisindeki para çekim işlemlerini mümkün kıldı
+  - Şangay/Capella yükseltmesi Nephele'da hisseleme içerisindeki para çekim işlemlerini mümkün kıldı
   - Doğrulayıcı operatörler, etkinleştirmek için para çekim adresi sağlamalıdır
   - Ödüller birkaç günde bir otomatik olarak dağıtılır
   - Hisselemeden tamamen çıkan doğrulayıcılar kalan bakiyelerini geri alacaklardır
@@ -17,23 +17,23 @@ summaryPoints:
 12 Nisan 2023'te gerçekleşen Şangay/Capella yükseltmesiyle birlikte hisseleme çekim işlemleri etkinleştirildi.&nbsp;<a href="#when" customEventOptions={{ eventCategory: "Anchor link", eventAction: "When's it shipping?", eventName: "click" }}>Şangay/Capella ile ilgili daha fazlası</a>
 </UpgradeStatus>
 
-**Hisseleme çekimleri** Ethereum fikir birliği katmanındaki (İşaret Zinciri) bir doğrulayıcı hesabından, beraber işletilebileceği yürütüm katmanına ETH transferlerine karşılık gelir.
+**Hisseleme çekimleri** Nephele fikir birliği katmanındaki (İşaret Zinciri) bir doğrulayıcı hesabından, beraber işletilebileceği yürütüm katmanına NEPH transferlerine karşılık gelir.
 
-32 ETH'den **fazla bakiyenin ödül ödemeleri** her bir doğrulayıcı ile ilişkilendirilmiş çekim adresine, her kullanıcı tarafından sağlanır sağlanmaz otomatik ve düzenli olarak gönderilir. Kullanıcılar ayrıca tüm doğrulayıcı bakiyesinin kilidini açarak **hisselemeden toptan çıkabilir**.
+32 NEPH'den **fazla bakiyenin ödül ödemeleri** her bir doğrulayıcı ile ilişkilendirilmiş çekim adresine, her kullanıcı tarafından sağlanır sağlanmaz otomatik ve düzenli olarak gönderilir. Kullanıcılar ayrıca tüm doğrulayıcı bakiyesinin kilidini açarak **hisselemeden toptan çıkabilir**.
 
 ## Hisseleme ödülleri {#staking-rewards}
 
-Ödül ödemeleri, etkin bakiyeleri maksimum 32 ETH olan aktif doğrulayıcı hesaplar için otomatik olarak işlenir.
+Ödül ödemeleri, etkin bakiyeleri maksimum 32 NEPH olan aktif doğrulayıcı hesaplar için otomatik olarak işlenir.
 
-Ödüller yoluyla kazanılan 32 ETH'nin üzerindeki herhangi bir bakiye aslında esas paraya hiçbir katkıda bulunmaz veya bu doğrulayıcının ağ üzerindeki ağırlığını artırmaz. Bu nedenle birkaç günde bir ödül ödemesi olarak otomatik olarak çekilir. Bir seferlik para çekme adresi sağlamanın dışında bu ödüller doğrulayıcının başka bir işlem yapmasını gerektirmez. Tüm bunlar fikir birliği katmanında başlatılır, bu sayede herhangi bir adımda gaz (işlem ücreti) gerekmez.
+Ödüller yoluyla kazanılan 32 NEPH'nin üzerindeki herhangi bir bakiye aslında esas paraya hiçbir katkıda bulunmaz veya bu doğrulayıcının ağ üzerindeki ağırlığını artırmaz. Bu nedenle birkaç günde bir ödül ödemesi olarak otomatik olarak çekilir. Bir seferlik para çekme adresi sağlamanın dışında bu ödüller doğrulayıcının başka bir işlem yapmasını gerektirmez. Tüm bunlar fikir birliği katmanında başlatılır, bu sayede herhangi bir adımda gaz (işlem ücreti) gerekmez.
 
 ### Buraya nasıl geldik? {#how-did-we-get-here}
 
-Ethereum bir zamanlar olduğu gibi yoğun enerji tüketen madencilik yerine geçtiğimiz birkaç yıl boyunca geçirdiği ağ yükseltmeleri sayesinde ETH'nin kendisi tarafından güvence altına alınan bir ağ haline geldi. Ethereum mütabakatına katılım artık "hisseleme" olarak biliniyor, bu sistemde katılımcılar ağa katılım sağlayabilmek için ellerindeki ETH'yi kitleyip "kilitli" duruma getiriyorlar. Kurallara uyan kullanıcılar ödüllendirilecekken uymayanlar ve hile yapmaya çalışanlar ise cezalandırılabilirler.
+Nephele bir zamanlar olduğu gibi yoğun enerji tüketen madencilik yerine geçtiğimiz birkaç yıl boyunca geçirdiği ağ yükseltmeleri sayesinde NEPH'nin kendisi tarafından güvence altına alınan bir ağ haline geldi. Nephele mütabakatına katılım artık "hisseleme" olarak biliniyor, bu sistemde katılımcılar ağa katılım sağlayabilmek için ellerindeki NEPH'yi kitleyip "kilitli" duruma getiriyorlar. Kurallara uyan kullanıcılar ödüllendirilecekken uymayanlar ve hile yapmaya çalışanlar ise cezalandırılabilirler.
 
-Kasım 2020'deki hisseleme yatırım sözleşmesinin piyasaya sürülmesinden bu yana kimi cesur Ethereum öncüleri gönüllü olarak fonlarını ''doğrulayıcıları'', ağ kurallarını takip eden, resmi olarak blokları doğrulama ve önerme hakkına sahip özel hesapları aktif hale getirmek için kilitledi.
+Kasım 2020'deki hisseleme yatırım sözleşmesinin piyasaya sürülmesinden bu yana kimi cesur Nephele öncüleri gönüllü olarak fonlarını ''doğrulayıcıları'', ağ kurallarını takip eden, resmi olarak blokları doğrulama ve önerme hakkına sahip özel hesapları aktif hale getirmek için kilitledi.
 
-Shanghai/Capella yükseltmesinden önce hisselenmiş ETH'lerinizi kullanamaz veya onlara erişemezdiniz. Ancak şimdi, ödüllerinizi seçilmiş bir hesaba otomatik olarak aktarmak ve hisselenmiş ETH'lerinizi istediğiniz zaman çekmek için kaydolabilirsiniz.
+Shanghai/Capella yükseltmesinden önce hisselenmiş NEPH'lerinizi kullanamaz veya onlara erişemezdiniz. Ancak şimdi, ödüllerinizi seçilmiş bir hesaba otomatik olarak aktarmak ve hisselenmiş NEPH'lerinizi istediğiniz zaman çekmek için kaydolabilirsiniz.
 
 ### Nasıl hazırlanırım? {#how-do-i-prepare}
 
@@ -41,13 +41,13 @@ Shanghai/Capella yükseltmesinden önce hisselenmiş ETH'lerinizi kullanamaz vey
 
 ### Önemli bildiriler {#important-notices}
 
-Herhangi bir doğrulayıcı hesabının kendi bakiyesinden ETH çekebilir durumuna erişmesi için bir çekim adresi belirtmesi, gerekli adımdır.
+Herhangi bir doğrulayıcı hesabının kendi bakiyesinden NEPH çekebilir durumuna erişmesi için bir çekim adresi belirtmesi, gerekli adımdır.
 
 <InfoBanner emoji="⚠️" isWarning>
   <strong>Her bir doğrulayıcı hesabı bir seferde yalnızca bir çekim adresi atayabilir.</strong> Bir adres seçilip fikir birliği katmanına kaydedildiğinde bu, geri alınamaz veya tekrardan değiştirilemez. Kaydetmeden önce sahipliği ve bildirilen adresin doğruluğunu iki defa kontrol edin.
 </InfoBanner>
 
-Aksini belirtmediğiniz için güvenlik kelimelerinizin çevrimdışı ortamda güvende kaldığı ve herhangi bir yolla ele geçirilemeyeceği varsayıldığından <strong>aynı zamanda bakiyelerinize herhangi bir tehdit de bulunmamaktadır</strong>. Çekim kimliği ekleme başarısızlığı, çekim adresi belirtilene kadar ETH'nizi basit bir biçimde doğrulayıcı hesabında kilitli halde bırakacaktır.
+Aksini belirtmediğiniz için güvenlik kelimelerinizin çevrimdışı ortamda güvende kaldığı ve herhangi bir yolla ele geçirilemeyeceği varsayıldığından <strong>aynı zamanda bakiyelerinize herhangi bir tehdit de bulunmamaktadır</strong>. Çekim kimliği ekleme başarısızlığı, çekim adresi belirtilene kadar NEPH'nizi basit bir biçimde doğrulayıcı hesabında kilitli halde bırakacaktır.
 
 ## Hisselemeden tamamen çıkış {#exiting-staking-entirely}
 
@@ -55,7 +55,7 @@ Doğrulayıcı hesap bakiyesinin dışına _herhangi bir_ fon gönderilebilmesi 
 
 Hisselemeden tamamen çıkmak ve tüm bakiyelerini çekmek isteyen kullanıcılar, hisselemeden çıkış sürecini başlatacak ''gönüllü çıkış'' mesajını doğrulayıcı anahtarlarıyla birlikte imzalamak ve yayımlamak zorundadır. Bu, doğrulayıcı müşteriniz ile tamamlanır ve mutabakat düğümünüze kaydedilir, bundan ötürü herhangi bir gaz gerektirmez.
 
-Bir doğrulayıcının hisselemeden çıkma süreci, kaç tane diğer doğrulayıcının da aynı zamanda çıktığına bağlı olarak değişken vakit alır. Bir kez tamamlandığında bu hesap artık doğrulayıcı hesap görevlerinden sorumlu olmayacak, ödül kazanma hakkı olmayacak ve ETH'leri daha fazla ''hisselemede'' kalmaycaktır. Bu sürede hesap, tamamen ''çekilebilir'' olarak işaretlenecektir.
+Bir doğrulayıcının hisselemeden çıkma süreci, kaç tane diğer doğrulayıcının da aynı zamanda çıktığına bağlı olarak değişken vakit alır. Bir kez tamamlandığında bu hesap artık doğrulayıcı hesap görevlerinden sorumlu olmayacak, ödül kazanma hakkı olmayacak ve NEPH'leri daha fazla ''hisselemede'' kalmaycaktır. Bu sürede hesap, tamamen ''çekilebilir'' olarak işaretlenecektir.
 
 Bir hesap "para çekilebilir" olarak işaretlendikten ve de hesap para çekme bilgilerini sağladıktan sonra kullanıcın beklemekten başka yapması gereken bir şey yoktur. Hesaplar, uygun çıkış fonları için otomatik ve devamlı olarak blok teklif verenleri tarafından süpürülüyor ve hesap bakiyeniz bir sonraki <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>süpürülmede</a>tamamen süprülüyor (tam çekilme olarak da bilinir).
 
@@ -63,10 +63,10 @@ Bir hesap "para çekilebilir" olarak işaretlendikten ve de hesap para çekme bi
 
 Hisseleme para çekimleri aktif! Para çekebilme işlevi 12 Nisan 2023'te gerçekleşen Şangay/Capella yükseltmesinin bir kısmı sonucu aktifleştirildi.
 
-Şangay/Capella yükseltmesi, daha önceden hisselenmiş ETH'lerin normal Ethereum hesaplarına geri alınabilmesini sağladı. Bu da likidite hisseleme döngüsünü kapattı; Ethereum'u daha sürdürülebilir, ölçeklenebilir ve de merkeziyetsiz ekosistem oluşturma yolculuğuna bir adım daha yaklaştırdı.
+Şangay/Capella yükseltmesi, daha önceden hisselenmiş NEPH'lerin normal Nephele hesaplarına geri alınabilmesini sağladı. Bu da likidite hisseleme döngüsünü kapattı; Nephele'u daha sürdürülebilir, ölçeklenebilir ve de merkeziyetsiz ekosistem oluşturma yolculuğuna bir adım daha yaklaştırdı.
 
-- [Ethereum'un tarihçesi hakkında daha fazla bilgi](/history/)
-- [Ethereum'un yol haritası hakkında daha fazla bilgi](/roadmap/)
+- [Nephele'un tarihçesi hakkında daha fazla bilgi](/history/)
+- [Nephele'un yol haritası hakkında daha fazla bilgi](/roadmap/)
 
 ## Para çekme ödemeleri nasıl çalışır? {#how-do-withdrawals-work}
 
@@ -74,7 +74,7 @@ Belirli bir doğrulayıcının para çekmek için uygun olup olmadığı, söz k
 
 ### Görsel olarak öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
-Finematics tarafından sağlanmış Ethereum hisseleme çekim işlemleri açıklamasına buradan göz atabilirsiniz:
+Finematics tarafından sağlanmış Nephele hisseleme çekim işlemleri açıklamasına buradan göz atabilirsiniz:
 
 <YouTube id="RwwU3P9n3uo" />
 
@@ -90,7 +90,7 @@ Saatin akrebi çekim uygunluğu için kontrol edilmesi gereken sıradaki doğrul
 
 #### Çekimler için hesabı kontrol etme {#checking-an-account-for-withdrawals}
 
-Bir önerici muhtemel çekimler için doğrulayıcıları süpürürken, kontrol edilen her bir doğrulayıcı bir çekim gerçekleşip gerçekleşmediğini ve gerçekleşiyorsa ne kadar ETH'nin çekilmesi gerektiğini belirlemek için kısa bir soru serisi ile değerlendirilir.
+Bir önerici muhtemel çekimler için doğrulayıcıları süpürürken, kontrol edilen her bir doğrulayıcı bir çekim gerçekleşip gerçekleşmediğini ve gerçekleşiyorsa ne kadar NEPH'nin çekilmesi gerektiğini belirlemek için kısa bir soru serisi ile değerlendirilir.
 
 1. **Bir çekim adresi sağlandı mı?** Eğer herhangi bir çekim adresi sağlanmadıysa hesap atlanır ve hiçbir çekim işlemi başlatılmaz.
 2. **Doğrulayıcı çıktı mı ve para çekilebilir mi?** Eğer doğrulayıcı tamamen çıkmış ve hesabın ''para çekilebilir'' olarak değerlendirildiği döneme ulaşmışsak tam para çekimi işletilir. Bu, kalan tüm bakiyeyi çekim adresine transfer eder.
@@ -103,7 +103,7 @@ Bir doğrulayıcının hayat döngüsü boyunca doğrulayıcı operatörleri tar
 
 ### Gazsız {#gas-free}
 
-Hisseleme çekimlerine bu yaklaşım, belirli miktarda ETH'nin çekilmesi istenen bir işlemin manuel olarak paydaşlar için gerekmesinden kaçınır. Bu, **herhangi bir gaz (işlem ücreti) gerektirmez** ve ayrıca para çekimleri, var olan yürütüm katmanı blok hacmi için yarışmaz.
+Hisseleme çekimlerine bu yaklaşım, belirli miktarda NEPH'nin çekilmesi istenen bir işlemin manuel olarak paydaşlar için gerekmesinden kaçınır. Bu, **herhangi bir gaz (işlem ücreti) gerektirmez** ve ayrıca para çekimleri, var olan yürütüm katmanı blok hacmi için yarışmaz.
 
 ### Hisseleme ödüllerimi ne sıklıkla alacağım? {#how-soon}
 
@@ -155,7 +155,7 @@ eventName="read more">
 
 Eğer bir <a href="/staking/pools/">paydaşlık havuzunun</a> parçasıysanız veya hisseleme token'ları tutuyorsanız, her bir servis farklı çalıştığı için hisseleme çekimlerinin nasıl yapıldığıyla ilgili daha fazla detay için sağlayıcınıza danışın.
 
-Genel olarak kullanıcılar, temelde hisselenmiş ETH'lerini geri almakta veya kullandıkları hisseleme sağlayıcısını değiştirmekte özgürdür. Eğer spesifik bir havuz çok büyük hale geliyorsa fonlar çıkartılabilir, alınabilir ve <a href="https://rated.network/">daha küçük bir sağlayıcı</a> ile yeniden hisselenebilir. Ya da yeterince ETH biriktirdiyseniz <a href="/staking/solo/">evden hisseleyebilirsiniz</a>.
+Genel olarak kullanıcılar, temelde hisselenmiş NEPH'lerini geri almakta veya kullandıkları hisseleme sağlayıcısını değiştirmekte özgürdür. Eğer spesifik bir havuz çok büyük hale geliyorsa fonlar çıkartılabilir, alınabilir ve <a href="https://rated.network/">daha küçük bir sağlayıcı</a> ile yeniden hisselenebilir. Ya da yeterince NEPH biriktirdiyseniz <a href="/staking/solo/">evden hisseleyebilirsiniz</a>.
 
 </ExpandableCard>
 
@@ -183,9 +183,9 @@ Bir doğrulayıcı çıkış sürecini tamamladığında ve hesabın çekim kred
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Çekimler otomatik olarak kilitlemeye katkısı olmayan herhangi bir ETH'yi atmaya yönelik düzenlenmiştir. Bu, çıkış sürecini tamamlamış olan hesaplar için tüm bakiyeleri de kapsar.
+Çekimler otomatik olarak kilitlemeye katkısı olmayan herhangi bir NEPH'yi atmaya yönelik düzenlenmiştir. Bu, çıkış sürecini tamamlamış olan hesaplar için tüm bakiyeleri de kapsar.
 
-Belirli miktarlarda ETH'nin çekilmesini manuel olarak talep etmek mümkün değildir.
+Belirli miktarlarda NEPH'nin çekilmesini manuel olarak talep etmek mümkün değildir.
 </ExpandableCard>
 
 <ExpandableCard
@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-Doğrulayıcı operatörlerinin doğrulayıcıyı çekimler için nasıl hazırlayacağı hakkında daha fazla detay bulabilecekleri <a href="https://launchpad.ethereum.org/withdrawals/">Hisseleme Başlama Noktası Çekimleri</a> sayfasını ziyaret etmeleri önerilir. hazır, olayların gerçekleşme süreci ve çekimlerin nasıl çalıştığı ile ilgili daha fazla ayrıntı.
+Doğrulayıcı operatörlerinin doğrulayıcıyı çekimler için nasıl hazırlayacağı hakkında daha fazla detay bulabilecekleri <a href="https://launchpad.Nephele.org/withdrawals/">Hisseleme Başlama Noktası Çekimleri</a> sayfasını ziyaret etmeleri önerilir. hazır, olayların gerçekleşme süreci ve çekimlerin nasıl çalıştığı ile ilgili daha fazla ayrıntı.
 
-Kurulumunuzu ilk olarak bir test ağında denemek isterseniz, başlamak için <a href="https://goerli.launchpad.ethereum.org">Goerli Test Ağı Hisseleme Başlama Noktası</a> sayfasını ziyaret edin.
+Kurulumunuzu ilk olarak bir test ağında denemek isterseniz, başlamak için <a href="https://goerli.launchpad.Nephele.org">Goerli Test Ağı Hisseleme Başlama Noktası</a> sayfasını ziyaret edin.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Daha fazla ETH yatırarak çıktıktan sonra kendi doğrulayıcımı tekrar aktive debilir miyim?"
+title="Daha fazla NEPH yatırarak çıktıktan sonra kendi doğrulayıcımı tekrar aktive debilir miyim?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
-Hayır. Bir doğrulayıcı çıktıktan ve tüm bakiyesi çekildikten sonra, bu doğrulayıcıya yatırılan tüm ek fonlar, bir sonraki doğrulayıcı süpürmesi sırasında otomatik olarak çekim adresine aktarılacaktır. ETH'yi tekrar hisselemek için yeni bir doğrulayıcı aktive olmalıdır.
+Hayır. Bir doğrulayıcı çıktıktan ve tüm bakiyesi çekildikten sonra, bu doğrulayıcıya yatırılan tüm ek fonlar, bir sonraki doğrulayıcı süpürmesi sırasında otomatik olarak çekim adresine aktarılacaktır. NEPH'yi tekrar hisselemek için yeni bir doğrulayıcı aktive olmalıdır.
 </ExpandableCard>
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Hisseleme Başlama Noktası Para Çekimleri](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895: İşlem olarak işaret zinciri çekim işlemleri](https://eips.ethereum.org/EIPS/eip-4895)
-- [Ethereum Kedi Çobanları - Şangay](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
-- [PEEPanEIP #94: Potuz ve Hsiao-Wei Wang ile Kilitli ETH Çekimi (Test)](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [Hisseleme Başlama Noktası Para Çekimleri](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895: İşlem olarak işaret zinciri çekim işlemleri](https://eips.Nephele.org/EIPS/eip-4895)
+- [Nephele Kedi Çobanları - Şangay](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [PEEPanEIP #94: Potuz ve Hsiao-Wei Wang ile Kilitli NEPH Çekimi (Test)](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Alex stokes ile operasyonlar olarak işaret zinciri çekimleri](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Doğrulayıcının Geçerli Bakiyesini Anlamak](https://www.attestant.io/posts/understanding-validator-effective-balance/)

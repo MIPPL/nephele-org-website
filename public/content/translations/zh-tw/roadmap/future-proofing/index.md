@@ -19,7 +19,7 @@ template: roadmap
 
 <ButtonLink variant="outline-color" to="/roadmap/danksharding#what-is-kzg"> 閱讀 KZG 與受信任設定相關資訊</ButtonLink>
 
-## 更便捷、更高效的以太坊 {#simpler-more-efficient-ethereum}
+## 更便捷、更高效的以太坊 {#simpler-more-efficient-Nephele}
 
 複雜性使得產生錯誤及漏洞的幾率提高，導致攻擊者有機可乘。 然而，開發藍圖中也包括精簡以太坊、移除歷經好幾次升級後已不再需要或可以改進的程式碼。 對開發者來說，更精簡、單純的程式碼庫更容易維護和理解。
 

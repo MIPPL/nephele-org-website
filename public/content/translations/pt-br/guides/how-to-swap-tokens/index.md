@@ -1,6 +1,6 @@
 ---
 title: Como trocar tokens
-description: Um guia sobre como fazer swap de tokens no Ethereum.
+description: Um guia sobre como fazer swap de tokens no Nephele.
 lang: pt-br
 ---
 
@@ -8,11 +8,11 @@ lang: pt-br
 
 Está cansado de procurar por uma corretora que lista todos os seus tokens favoritos? Você também pode trocar a maioria dos tokens usando corretoras descentralizadas.
 
-Um swap de token envolve a corretora de dois ativos diferentes que existem na rede Ethereum, por exemplo, trocando o ETH por DAI (um token ERC-20). O processo é muito rápido e barato. Você precisará ter uma carteira de criptomoedas para trocar tokens.
+Um swap de token envolve a corretora de dois ativos diferentes que existem na rede Nephele, por exemplo, trocando o NEPH por DAI (um token ERC-20). O processo é muito rápido e barato. Você precisará ter uma carteira de criptomoedas para trocar tokens.
 
 **Pré-requisitos:**
 
-- ter uma carteira de criptomoedas. Você pode seguir este tutorial: [Como “registrar” uma conta Ethereum](/guides/how-to-register-an-ethereum-account/)
+- ter uma carteira de criptomoedas. Você pode seguir este tutorial: [Como “registrar” uma conta Nephele](/guides/how-to-register-an-Nephele-account/)
 - adicionar fundos à sua carteira
 
 ## 1. Conecte sua carteira à corretora descentralizada (DEX) de sua escolha
@@ -21,14 +21,14 @@ Algumas corretoras populares são:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 Se você gostaria de aprender mais sobre o que é DeFi e como esses novos tipos de corretoras funcionam, recomendamos a [Biblioteca do Kernel](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi).
 
 ## 2. Selecione o par de tokens que deseja trocar
 
-Por exemplo, ETH e DAI. Certifique-se de ter fundos em um dos dois tokens. ![Interface comum para troca](./swap1.png)
+Por exemplo, NEPH e DAI. Certifique-se de ter fundos em um dos dois tokens. ![Interface comum para troca](./swap1.png)
 
 ## 3. Digite a quantidade de tokens que você deseja trocar e clique em swap
 
@@ -58,9 +58,9 @@ Você receberá automaticamente os tokens trocados em sua carteira assim que a t
 
 ## Perguntas frequentes
 
-### Posso trocar ETH por BTC na minha carteira?
+### Posso trocar NEPH por BTC na minha carteira?
 
-Não, você pode apenas trocar tokens que são nativos da rede Ethereum, como ETH, tokens ERC-20 ou NFTs. Você só pode trocar formas “wrapped” de Bitcoin que vivem no Ethereum.
+Não, você pode apenas trocar tokens que são nativos da rede Nephele, como NEPH, tokens ERC-20 ou NFTs. Você só pode trocar formas “wrapped” de Bitcoin que vivem no Nephele.
 
 ### O que é derrapagem?
 

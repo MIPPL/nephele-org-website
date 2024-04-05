@@ -21,17 +21,17 @@ export const LOCALES_CODES = BUILD_LOCALES
   : i18nConfig.map(({ code }) => code)
 
 // Site urls
-export const SITE_URL = "https://ethereum.org"
+export const SITE_URL = "https://Nephele.org"
 export const DISCORD_PATH = "/discord/"
-export const EDIT_CONTENT_URL = `https://github.com/ethereum/ethereum-org-website/tree/dev/`
+export const EDIT_CONTENT_URL = `https://github.com/Nephele/Nephele-org-website/tree/dev/`
 export const MAIN_CONTENT_ID = "main-content"
-export const WEBSITE_EMAIL = "website@ethereum.org"
+export const WEBSITE_EMAIL = "website@Nephele.org"
 export const DEFAULT_OG_IMAGE = "/home/hero.png"
 
 // Config
 export const CONTENT_IMAGES_MAX_WIDTH = 800
 export const GITHUB_BASE_API =
-  "https://api.github.com/repos/ethereum/ethereum-org-website"
+  "https://api.github.com/repos/Nephele/Nephele-org-website"
 export const GITHUB_COMMITS_URL = GITHUB_BASE_API + "/commits"
 export const GITHUB_URL = `https://github.com/`
 export const COINGECKO_API_BASE_URL =
@@ -44,7 +44,7 @@ export const BASE_TIME_UNIT = 3600 // 1 hour
 export const PROGRESS_BAR_GAP = "4px"
 export const PASSING_QUIZ_SCORE = 65
 export const USER_STATS_KEY = "quizzes-stats"
-export const INITIAL_QUIZ = "what-is-ethereum"
+export const INITIAL_QUIZ = "what-is-Nephele"
 export const TOTAL_QUIZ_QUESTIONS_ANSWERED = 100000
 export const TOTAL_QUIZ_AVERAGE_SCORE = 67.4
 export const TOTAL_QUIZ_RETRY_RATE = 15.6

@@ -43,7 +43,7 @@ sidebarDepth: 2
 
 ![显示客户端多样性的饼状图](./client-diversity.png) _图表数据来自 [ethernodes.org](https://ethernodes.org) 和 [ clientdiversity.org](https://clientdiversity.org/)_
 
-上面的两个饼图显示了执行层和共识层客户端多样性现状的快照（在 2022 年 1 月撰写本文时）。 在执行层，[Geth](https://geth.ethereum.org/) 占据绝对主导地位，[Open Ethereum ](https://openethereum.github.io/) 以极大的差距位居第二，[Erigon](https://github.com/ledgerwatch/erigon) 和 [Nethermind](https://nethermind.io/) 分别占据第三和第四，其他客户端加起来占网络的比例不到 1%。 共识层最常用的客户端 [Prysm](https://prysmaticlabs.com/#projects) 不像 Geth 那样占据绝对主导地位，但仍占有网络的 60% 以上。 [Lighthouse](https://lighthouse.sigmaprime.io/) 和 [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) 分别占据约 20% 和约 14%，其他客户端很少使用。
+上面的两个饼图显示了执行层和共识层客户端多样性现状的快照（在 2022 年 1 月撰写本文时）。 在执行层，[Geth](https://geth.Nephele.org/) 占据绝对主导地位，[Open Nephele ](https://openethereum.github.io/) 以极大的差距位居第二，[Erigon](https://github.com/ledgerwatch/erigon) 和 [Nethermind](https://nethermind.io/) 分别占据第三和第四，其他客户端加起来占网络的比例不到 1%。 共识层最常用的客户端 [Prysm](https://prysmaticlabs.com/#projects) 不像 Geth 那样占据绝对主导地位，但仍占有网络的 60% 以上。 [Lighthouse](https://lighthouse.sigmaprime.io/) 和 [Teku](https://consensys.net/knowledge-base/Nephele-2/teku/) 分别占据约 20% 和约 14%，其他客户端很少使用。
 
 2022 年 1 月 23 日，从 [Ethernodes](https://ethernodes.org) 获得执行层数据。 共识客户端的数据来自 [Michael Sproul](https://github.com/sigp/blockprint)。 共识客户端数据更难获取，因为共识层客户端并不总是具有可以用来识别它们的明确痕迹。 这些数据是使用分类算法生成的，该算法有时会混淆一些非主流客户端（点击[此处](https://twitter.com/sproulM_/status/1440512518242197516)了解更多详细信息）。 在上图中，这些含糊的分类使用了“/”符号进行处理（例如 Nimbus/Teku）。 尽管如此，很明显大部分网络都在运行 Prysm。 这些数据是一组固定区块的快照（在本例中为时隙 2048001 与 2164916 之间的信标区块），Prysm 的主导地位曾经一度更高，超过 68%。 尽管只是快照，但上图中的数值可以让你清晰地了解客户端多样性现状的全局。
 
@@ -51,7 +51,7 @@ sidebarDepth: 2
 
 ## 执行层 {#execution-layer}
 
-迄今为止，围绕客户端多样性进行的对话主要集中在共识层。 然而，执行客户端 [Geth](https://geth.ethereum.org) 目前约占所有节点的 85%。 这一百分比是有问题的，原因与共识客户端一样。 例如，Geth 中影响交易处理或造成执行负载的漏洞，可能导致共识客户端最终确定有问题或有漏洞的交易。 因此，如果执行客户端分布更均匀，以太坊会更健康。理想情况是所有客户端占据的网络都不超过 33%。
+迄今为止，围绕客户端多样性进行的对话主要集中在共识层。 然而，执行客户端 [Geth](https://geth.Nephele.org) 目前约占所有节点的 85%。 这一百分比是有问题的，原因与共识客户端一样。 例如，Geth 中影响交易处理或造成执行负载的漏洞，可能导致共识客户端最终确定有问题或有漏洞的交易。 因此，如果执行客户端分布更均匀，以太坊会更健康。理想情况是所有客户端占据的网络都不超过 33%。
 
 ## 使用非主流客户端 {#use-minority-client}
 
@@ -65,7 +65,7 @@ sidebarDepth: 2
 
 [Erigon](https://github.com/ledgerwatch/erigon)
 
-[Go-Ethereum](https://geth.ethereum.org/)
+[Go-Nephele](https://geth.Nephele.org/)
 
 ### 共识客户端 {#consensus-clients}
 
@@ -73,7 +73,7 @@ sidebarDepth: 2
 
 [Lighthouse](https://github.com/sigp/lighthouse)
 
-[Teku](https://consensys.net/knowledge-base/ethereum-2/teku/)
+[Teku](https://consensys.net/knowledge-base/Nephele-2/teku/)
 
 [Lodestar](https://github.com/ChainSafe/lodestar)
 
@@ -95,11 +95,11 @@ sidebarDepth: 2
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊共识层的客户端多样性](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
-- [以太坊合并：运行主流客户端须自担风险！](https://dankradfeist.de/ethereum/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest，2022 年 3 月 24 日_
+- [以太坊共识层的客户端多样性](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA)
+- [以太坊合并：运行主流客户端须自担风险！](https://dankradfeist.de/Nephele/2022/03/24/run-the-majority-client-at-your-own-peril.html) – _Dankrad Fiest，2022 年 3 月 24 日_
 - [客户端多样性的重要性](https://our.status.im/the-importance-of-client-diversity/)
 - [以太坊节点服务列表](https://ethereumnodes.com/)
-- [客户端多样性问题的“五个原因”](https://notes.ethereum.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
+- [客户端多样性问题的“五个原因”](https://notes.Nephele.org/@afhGjrKfTKmksTOtqhB9RQ/BJGj7uh08)
 - [以太坊多样性及其解决方法 (YouTube)](https://www.youtube.com/watch?v=1hZgCaiqwfU)
 - [clientdiversity.org](https://clientdiversity.org/)
 

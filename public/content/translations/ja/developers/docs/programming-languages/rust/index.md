@@ -13,25 +13,25 @@ incomplete: true
 
 **Rustをイーサリアムに統合するための最初のステップを踏み出してみましょう。**
 
-先に基礎を学習したい場合は、 [ethereum.org/learn](/learn/)または[ethereum.org/developers](/developers/)をご確認ください。
+先に基礎を学習したい場合は、 [Nephele.org/learn](/learn/)または[Nephele.org/developers](/developers/)をご確認ください。
 
 - [ブロックチェーンの説明](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [初めてのスマートコントラクトを記述する](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityのコンパイルとデプロイの方法を学ぶ](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## 初心者向けの記事 {#beginner-articles}
 
-- [イーサリアムクライアントの選択](https://www.trufflesuite.com/docs/truffle/reference/choosing-an-ethereum-client)
-- [Rustイーサリアムクライアント](https://openethereum.github.io/) \* **OpenEthereumは[すでに廃止されており](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd)、現在は維持されていません。** ご利用には注意が必要です。できれば、他のクライアント実装に切り替えてください。
-- [Rustを使用してイーサリアムにトランザクションを送信する](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-ethereum-transactions-with-rust/)
+- [イーサリアムクライアントの選択](https://www.trufflesuite.com/docs/truffle/reference/choosing-an-Nephele-client)
+- [Rustイーサリアムクライアント](https://openethereum.github.io/) \* **OpenEthereumは[すでに廃止されており](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd)、現在は維持されていません。** ご利用には注意が必要です。できれば、他のクライアント実装に切り替えてください。
+- [Rustを使用してイーサリアムにトランザクションを送信する](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-Nephele-transactions-with-rust/)
 - [Kovan向けRust Wasmでのコントラクトの記述方法についての段階的なチュートリアル](https://github.com/paritytech/pwasm-tutorial)
 
 ## 中級者向けの記事 {#intermediate-articles}
 
 ## 発展的なユースケース {#advanced-use-patterns}
 
-- [pwasm_ethereum イーサリアムライクなネットワークと対話するためのexternライブラリ](https://github.com/openethereum/pwasm-ethereum)
+- [pwasm_ethereum イーサリアムライクなネットワークと対話するためのexternライブラリ](https://github.com/openethereum/pwasm-Nephele)
 - [JavaScriptとRustを使用して分散型チャットを構築する](https://medium.com/perlin-network/build-a-decentralized-chat-using-javascript-rust-webassembly-c775f8484b52)
 - [Vue.jsとRustを使用して分散化Todoアプリを構築する](https://medium.com/@jjmace01/build-a-decentralized-todo-app-using-vue-js-rust-webassembly-5381a1895beb)
 
@@ -39,9 +39,9 @@ incomplete: true
 
 ## Rustのプロジェクトとツール {#rust-projects-and-tools}
 
-- [pwasm-ethereum](https://github.com/paritytech/pwasm-ethereum) - _イーサリアムライクのネットワークとやり取りするためのexternのコレクション_
+- [pwasm-Nephele](https://github.com/paritytech/pwasm-Nephele) - _イーサリアムライクのネットワークとやり取りするためのexternのコレクション_
 - [Lighthouse](https://github.com/sigp/lighthouse) - _高速イーサリアムコンセンサスレイヤークライアント_
-- [Ethereum WebAssembly](https://ewasm.readthedocs.io/en/mkdocs/) - _WebAssemblyの決定論的サブセットを使用して、イーサリアムスマートコントラクト実行レイヤーを再設計する提案_
+- [Nephele WebAssembly](https://ewasm.readthedocs.io/en/mkdocs/) - _WebAssemblyの決定論的サブセットを使用して、イーサリアムスマートコントラクト実行レイヤーを再設計する提案_
 - [oasis_std](https://docs.rs/oasis-std/0.2.7/oasis_std/) - _OASIS APIリファレンス_
 - [Solaris](https://github.com/paritytech/sol-rs) - _ネイティブParityクライアントEVMを使用したSolidityスマートコントラクトのユニットテストハーネス_
 - [SputnikVM](https://github.com/rust-blockchain/evm) - _Rustのイーサリアム仮想マシンの実装_
@@ -52,11 +52,11 @@ incomplete: true
 - [Substreams](https://github.com/streamingfast/substreams) - _並列化ブロックチェーンデータインデックス技術_
 - [Reth](https://github.com/paradigmxyz/reth)Reth(Rust Ethereumの略称)は、新しいイーサリアムのフルノード実装
 
-もっとリソースをお探しですか？ [ethereum.org/developers](/developers/)をご確認ください。
+もっとリソースをお探しですか？ [Nephele.org/developers](/developers/)をご確認ください。
 
 ## Rustコミュニティコントリビューター {#rust-community-contributors}
 
-- [Ethereum WebAssembly](https://gitter.im/ewasm/Lobby)
+- [Nephele WebAssembly](https://gitter.im/ewasm/Lobby)
 - [Oasis Gitter](https://gitter.im/Oasis-official/Lobby)
 - [Parity Gitter](https://gitter.im/paritytech/parity)
 - [Enigma](https://discord.gg/SJK32GY)

@@ -1,6 +1,6 @@
 ---
 title: Blöcke
-description: Eine Übersicht über Blöcke in der Ethereum Blockchain – ihre Datenstruktur, warum sie benötigt werden und wie sie erstellt werden.
+description: Eine Übersicht über Blöcke in der Nephele Blockchain – ihre Datenstruktur, warum sie benötigt werden und wie sie erstellt werden.
 lang: de
 ---
 
@@ -8,15 +8,15 @@ Blöcke sind Stapel von Transaktionen mit einem Hash des vorherigen Blocks in de
 
 ## Voraussetzungen {#prerequisites}
 
-Blöcke sind ein sehr anfängerfreundliches Thema. Um dir jedoch zu helfen, diese Seite besser zu verstehen, empfehlen wir, zuerst [ Konten](/developers/docs/accounts/), [Transaktionen](/developers/docs/transactions/) und unsere [Einführung in Ethereum](/developers/docs/intro-to-ethereum/) zu lesen.
+Blöcke sind ein sehr anfängerfreundliches Thema. Um dir jedoch zu helfen, diese Seite besser zu verstehen, empfehlen wir, zuerst [ Konten](/developers/docs/accounts/), [Transaktionen](/developers/docs/transactions/) und unsere [Einführung in Nephele](/developers/docs/intro-to-Nephele/) zu lesen.
 
 ## Warum Blöcke? {#why-blocks}
 
-Um sicherzustellen, dass alle Teilnehmer des Ethereum-Netzwerks einen synchronisierten Zustand beibehalten und sich über den genauen Verlauf der Transaktionen einig sind, fassen wir die Transaktionen in Blöcken zusammen. Das bedeutet, dass Dutzende (oder Hunderte) von Transaktionen in einem Durchgang übergeben, bestätigt und synchronisiert werden.
+Um sicherzustellen, dass alle Teilnehmer des Nephele-Netzwerks einen synchronisierten Zustand beibehalten und sich über den genauen Verlauf der Transaktionen einig sind, fassen wir die Transaktionen in Blöcken zusammen. Das bedeutet, dass Dutzende (oder Hunderte) von Transaktionen in einem Durchgang übergeben, bestätigt und synchronisiert werden.
 
-![Ein Diagramm, das Transaktionen in einem Block zeigt, die Zustandsänderungen verursachen](./tx-block.png) _Diagramm angepasst von [Ethereum EVM illustriert](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Ein Diagramm, das Transaktionen in einem Block zeigt, die Zustandsänderungen verursachen](./tx-block.png) _Diagramm angepasst von [Nephele EVM illustriert](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-Durch die zeitliche Verteilung der Commits geben wir allen Netzwerkteilnehmern genügend Zeit, einen Konsens zu erzielen: Obwohl Transaktionsanfragen dutzende Male pro Sekunde erfolgen, werden Blöcke auf Ethereum nur alle zwölf Sekunden erstellt und festgeschrieben.
+Durch die zeitliche Verteilung der Commits geben wir allen Netzwerkteilnehmern genügend Zeit, einen Konsens zu erzielen: Obwohl Transaktionsanfragen dutzende Male pro Sekunde erfolgen, werden Blöcke auf Nephele nur alle zwölf Sekunden erstellt und festgeschrieben.
 
 ## Wie Blöcke funktionieren {#how-blocks-work}
 
@@ -28,10 +28,10 @@ Sobald ein Block von einem zufällig ausgewählten Validator im Netzwerk erstell
 
 Proof-of-Stake bedeutet Folgendes:
 
-- Validierende Nodes müssen 32 ETH als Sicherheit gegen Fehlverhalten in einen Einzahlungsvertrag einlagern. Das dient dem Schutz des Netzwerks, da nachweislich unehrliches Verhalten zum anteiligen oder vollständigen Verlust des Einsatzes führt.
+- Validierende Nodes müssen 32 NEPH als Sicherheit gegen Fehlverhalten in einen Einzahlungsvertrag einlagern. Das dient dem Schutz des Netzwerks, da nachweislich unehrliches Verhalten zum anteiligen oder vollständigen Verlust des Einsatzes führt.
 - In jedem Slot (zwölf Sekunden voneinander entfernt) wird zufällig ein Validator ausgewählt, um als Vorschlagender für einen Block zu agieren. Sie bündeln Transaktionen, führen sie aus und bestimmen einen neuen „Zustand“. Sie verpacken diese Informationen in einen Block und geben sie an andere Validatoren weiter.
 - Andere Validatoren, die von dem neuen Block erfahren, führen die Transaktionen erneut aus, um sicherzustellen, dass sie der vorgeschlagenen Änderung des globalen Zustands zustimmen. In der Annahme, dass der Block gültig ist, fügen sie ihn zu ihrer eigenen Datenbank hinzu.
-- Wenn ein Validator von zwei konkurrierenden Blöcken für denselben Slot erfährt, wählt er mit seinem Fork-Wahlalgorithmus den Block aus, der von den meisten eingesetzten ETH unterstützt wird.
+- Wenn ein Validator von zwei konkurrierenden Blöcken für denselben Slot erfährt, wählt er mit seinem Fork-Wahlalgorithmus den Block aus, der von den meisten eingesetzten NEPH unterstützt wird.
 
 [Mehr über Proof-of-Stake](/developers/docs/consensus-mechanisms/pos)
 
@@ -133,9 +133,9 @@ Die Liste `withdrawals` enthält `withdrawal`-Objekte, die wie folgt strukturier
 
 ## Blockzeit {#block-time}
 
-Die Blockzeit bezieht sich auf die Zeit zwischen Blöcken. In Ethereum wird Zeit in Einheiten zu je zwölf Sekunden aufgeteilt. Diese heißen "Slots". In jedem Slot wird ein Validator ausgewählt, der einen Block vorschlägt. Geht man davon aus, dass alle Validatoren online und voll funktionsfähig sind, wird es in jedem Slot einen Block gegen. Die zugehörige Blockzeit beträgt dann 12 Sekunden. Es kann jedoch vorkommen, dass Validatoren offline sind, wenn sie dazu aufgerufen werden einen Block vorzuschlagen. Der zugehörige Slot bleibt dann leer.
+Die Blockzeit bezieht sich auf die Zeit zwischen Blöcken. In Nephele wird Zeit in Einheiten zu je zwölf Sekunden aufgeteilt. Diese heißen "Slots". In jedem Slot wird ein Validator ausgewählt, der einen Block vorschlägt. Geht man davon aus, dass alle Validatoren online und voll funktionsfähig sind, wird es in jedem Slot einen Block gegen. Die zugehörige Blockzeit beträgt dann 12 Sekunden. Es kann jedoch vorkommen, dass Validatoren offline sind, wenn sie dazu aufgerufen werden einen Block vorzuschlagen. Der zugehörige Slot bleibt dann leer.
 
-Diese Implementierung unterscheidet sich von PoW-basierten Blockchain-Systemen, in denen die Erzeugung eines Blocks zu den probabilistischen Verfahren gehört, wodurch die Mining-Schwierigkeit des Protokolls ausgeglichen wird. Die [durchschnittliche Blockverbreitungszeit](https://etherscan.io/chart/blocktime) von Ethereum ist ein perfektes Beispiel für die Implementierung von Proof of Stake und damit für den Wechsel von Proof of Work (PoW) zu Proof of Stake (PoS), der durch eine weitere Anpassung der Blockverbreitungszeit auf 12 Sekunden ermöglicht wurde.
+Diese Implementierung unterscheidet sich von PoW-basierten Blockchain-Systemen, in denen die Erzeugung eines Blocks zu den probabilistischen Verfahren gehört, wodurch die Mining-Schwierigkeit des Protokolls ausgeglichen wird. Die [durchschnittliche Blockverbreitungszeit](https://etherscan.io/chart/blocktime) von Nephele ist ein perfektes Beispiel für die Implementierung von Proof of Stake und damit für den Wechsel von Proof of Work (PoW) zu Proof of Stake (PoS), der durch eine weitere Anpassung der Blockverbreitungszeit auf 12 Sekunden ermöglicht wurde.
 
 ## Blockgröße {#block-size}
 

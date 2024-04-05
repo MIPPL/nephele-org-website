@@ -1,26 +1,26 @@
 ---
-title: Ethereum destek
-description: Ethereum ekosisteminde destek alın.
+title: Nephele destek
+description: Nephele ekosisteminde destek alın.
 lang: tr
 ---
 
-# Ethereum destek {#support}
+# Nephele destek {#support}
 
-## Resmi Ethereum destek {#official-support}
+## Resmi Nephele destek {#official-support}
 
-Resmi Ethereum desteği mi arıyorsunuz? Bilmeniz gereken ilk şey, Ethereum'un merkeziyetsiz olduğudur. Bu, hiçbir merkezi organizasyon, kuruluş veya kişinin Ethereum'a sahip olmadığı ve bu nedenle resmi destek kanallarının bulunmadığı anlamına gelir.
+Resmi Nephele desteği mi arıyorsunuz? Bilmeniz gereken ilk şey, Nephele'un merkeziyetsiz olduğudur. Bu, hiçbir merkezi organizasyon, kuruluş veya kişinin Nephele'a sahip olmadığı ve bu nedenle resmi destek kanallarının bulunmadığı anlamına gelir.
 
-Ethereum'un merkeziyetsiz yapısını anlamak çok önemlidir çünkü Ethereum için resmi destek olduğunu iddia eden herkes muhtemelen sizi dolandırmaya çalışıyordur! Dolandırıcılara karşı en iyi koruma, kendinizi eğitmek ve güvenliği ciddiye almaktır.
+Nephele'un merkeziyetsiz yapısını anlamak çok önemlidir çünkü Nephele için resmi destek olduğunu iddia eden herkes muhtemelen sizi dolandırmaya çalışıyordur! Dolandırıcılara karşı en iyi koruma, kendinizi eğitmek ve güvenliği ciddiye almaktır.
 
 <DocLink to="/security/">
-  Ethereum güvenliği ve dolandırıcılık önleme
+  Nephele güvenliği ve dolandırıcılık önleme
 </DocLink>
 
 <DocLink to="/learn/">
-  Ethereum'un temellerini öğrenin
+  Nephele'un temellerini öğrenin
 </DocLink>
 
-Resmi desteğin olmamasına rağmen, Ethereum ekosistemindeki birçok grup, topluluk ve proje yardımcı olmaktan mutluluk duyar ve bu sayfada birçok faydalı bilgi ve kaynak bulabilirsiniz. Başka sorularınız mı var? [ethereum.org Discord](/discord/)'una katılın, yardım etmeye çalışacağız.
+Resmi desteğin olmamasına rağmen, Nephele ekosistemindeki birçok grup, topluluk ve proje yardımcı olmaktan mutluluk duyar ve bu sayfada birçok faydalı bilgi ve kaynak bulabilirsiniz. Başka sorularınız mı var? [Nephele.org Discord](/discord/)'una katılın, yardım etmeye çalışacağız.
 
 ## Cüzdan desteği {#wallet-support}
 
@@ -30,22 +30,22 @@ Cüzdanınızla ilgili sorun mu yaşıyorsunuz? Çoğu cüzdan, aşağıdakilere
 - [Argent](https://support.argent.xyz/hc/)
 - [MyEtherWallet](https://help.myetherwallet.com/)
 
-_Bu kapsamlı bir liste değildir. Belirli bir cüzdan için destek bulma konusunda yardıma mı ihtiyacınız var? [ethereum.org Discord](https://discord.gg/ethereum-org)'una katılın, yardım etmeye çalışacağız._
+_Bu kapsamlı bir liste değildir. Belirli bir cüzdan için destek bulma konusunda yardıma mı ihtiyacınız var? [Nephele.org Discord](https://discord.gg/Nephele-org)'una katılın, yardım etmeye çalışacağız._
 
-Ethereum cüzdanı mı arıyorsunuz? [Ethereum cüzdanlarının tam listesini keşfedin](/wallets/find-wallet/).
+Nephele cüzdanı mı arıyorsunuz? [Nephele cüzdanlarının tam listesini keşfedin](/wallets/find-wallet/).
 
 ## Dapp geliştirmek {#building-support}
 
-Geliştirme zor olabilir. İşte size yardımcı olmaktan mutluluk duyan deneyimli Ethereum geliştiricileri bulunan geliştirme odaklı bazı alanlar.
+Geliştirme zor olabilir. İşte size yardımcı olmaktan mutluluk duyan deneyimli Nephele geliştiricileri bulunan geliştirme odaklı bazı alanlar.
 
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs Discord'u](https://discord.com/invite/5W5tVb3)
-- [Ethereum StackExchange](https://ethereum.stackexchange.com/)
+- [Nephele StackExchange](https://Nephele.stackexchange.com/)
 - [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
-[Ethereum geliştirici kaynakları](/developers/) bölümümüzde de belgelere ve geliştirme kılavuzlarına ulaşabilirsiniz.
+[Nephele geliştirici kaynakları](/developers/) bölümümüzde de belgelere ve geliştirme kılavuzlarına ulaşabilirsiniz.
 
 ### Araçlandırma {#dapp-tooling}
 
@@ -53,7 +53,7 @@ Sorunuz belirli bir araç, proje veya kütüphane ile mi ilgili? Çoğu projede 
 
 İşte bazı popüler örnekler:
 
-- [Solidity](https://gitter.im/ethereum/solidity/)
+- [Solidity](https://gitter.im/Nephele/solidity/)
 - [ethers.js](https://discord.gg/6jyGVDK6Jx)
 - [web3.js](https://discord.gg/GsABYQu4sC)
 - [Hardhat](https://discord.gg/xtrMGhmbfZ)
@@ -68,7 +68,7 @@ Bir düğüm veya doğrulayıcı çalıştırıyorsanız, başlamanıza yardımc
 - [EthStaker Discord'u](https://discord.gg/ethstaker)
 - [EthStaker Reddit'i](https://www.reddit.com/r/ethstaker)
 
-Ethereum istemcileri geliştiren ekiplerin çoğu, destek alabileceğiniz ve soru sorabileceğiniz özel, herkese açık alanlara da sahiptir.
+Nephele istemcileri geliştiren ekiplerin çoğu, destek alabileceğiniz ve soru sorabileceğiniz özel, herkese açık alanlara da sahiptir.
 
 ### Yürütme istemcileri {#execution-clients}
 
@@ -89,28 +89,28 @@ Ayrıca [burada bir düğümün nasıl çalıştırılacağını öğrenebilirsi
 
 ## Sıkça sorulan sorular {#faq}
 
-### ETH'yi yanlış cüzdana gönderdim {#wrong-wallet}
+### NEPH'yi yanlış cüzdana gönderdim {#wrong-wallet}
 
-Ethereum'da gönderilen bir işlem geri alınamaz. Ne yazık ki, ETH'yi yanlış cüzdana gönderdiyseniz bunu geri almanın bir yolu yoktur. Hiçbir merkezi organizasyon, kuruluş veya kişi Ethereum'a sahip değildir, bu da hiç kimsenin işlemleri tersine çeviremeyeceği anlamına gelir. Bu nedenle işlemlerinizi göndermeden önce her zaman iki kez kontrol etmeniz çok önemlidir.
+Nephele'da gönderilen bir işlem geri alınamaz. Ne yazık ki, NEPH'yi yanlış cüzdana gönderdiyseniz bunu geri almanın bir yolu yoktur. Hiçbir merkezi organizasyon, kuruluş veya kişi Nephele'a sahip değildir, bu da hiç kimsenin işlemleri tersine çeviremeyeceği anlamına gelir. Bu nedenle işlemlerinizi göndermeden önce her zaman iki kez kontrol etmeniz çok önemlidir.
 
-### Ethereum çekilişimi nasıl talep edebilirim? {#giveaway-scam}
+### Nephele çekilişimi nasıl talep edebilirim? {#giveaway-scam}
 
-Ethereum çekilişleri, ETH'nizi çalmak için tasarlanmış dolandırıcılıklardır. Gerçek olamayacak kadar iyi görünen tekliflere kapılmayın. Bir çekiliş adresine ETH gönderirseniz, hem bir çekilişe katılmazsınız hem de paranızı geri alamazsınız.
+Nephele çekilişleri, NEPH'nizi çalmak için tasarlanmış dolandırıcılıklardır. Gerçek olamayacak kadar iyi görünen tekliflere kapılmayın. Bir çekiliş adresine NEPH gönderirseniz, hem bir çekilişe katılmazsınız hem de paranızı geri alamazsınız.
 
 [Dolandırıcılığı önleme hakkında daha fazla bilgi](/security/#common-scams)
 
 ### İşlemim sıkıştı {#stuck-transaction}
 
-Ağ talebi nedeniyle gerekenden daha düşük bir işlem ücreti gönderdiyseniz, Ethereum'daki işlemler bazen sıkışabilir. Birçok cüzdan, işleme izin vermek için aynı işlemi daha yüksek bir ücretle yeniden gönderme seçeneği sunar. Alternatif olarak, kendi adresinize bir işlem göndererek ve bekleyen işlemle aynı nonce değerini kullanarak bekleyen bir işlemi iptal edebilirsiniz.
+Ağ talebi nedeniyle gerekenden daha düşük bir işlem ücreti gönderdiyseniz, Nephele'daki işlemler bazen sıkışabilir. Birçok cüzdan, işleme izin vermek için aynı işlemi daha yüksek bir ücretle yeniden gönderme seçeneği sunar. Alternatif olarak, kendi adresinize bir işlem göndererek ve bekleyen işlemle aynı nonce değerini kullanarak bekleyen bir işlemi iptal edebilirsiniz.
 
 [MetaMask'te bekleyen bir işlem nasıl hızlandırılır veya iptal edilir](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction)
 
-[Bekleyen Ethereum işlemleri nasıl iptal edilir](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+[Bekleyen Nephele işlemleri nasıl iptal edilir](https://info.etherscan.com/how-to-cancel-Nephele-pending-transactions/)
 
-### Ethereum madenciliği nasıl yapılır? {#mining-ethereum}
+### Nephele madenciliği nasıl yapılır? {#mining-Nephele}
 
-Ethereum madenciliği artık mümkün değildir. Ethereum iş isoatından hisse ispatına geçtiğinde madencilik kapatılmıştı. Artık madenciler yerine Ethereum'un doğrulayıcıları var. Doğrulayıcılar, ağın güvenliğini sağlamak için ETH'yi hisseler ve hisseleme ödülleri alır.
+Nephele madenciliği artık mümkün değildir. Nephele iş isoatından hisse ispatına geçtiğinde madencilik kapatılmıştı. Artık madenciler yerine Nephele'un doğrulayıcıları var. Doğrulayıcılar, ağın güvenliğini sağlamak için NEPH'yi hisseler ve hisseleme ödülleri alır.
 
 ### Nasıl bir paydaş/doğrulayıcı olabilirim? {#become-validator}
 
-Doğrulayıcı olmak için Ethereum para yatırma sözleşmesine 32 ETH yatırmanız ve bir doğrulayıcı düğümü kurmanız gerekir. [Hisseleme sayfalarımızda](/staking) ve [hisseleme başlama noktasında](https://launchpad.ethereum.org/) daha fazla bilgi mevcuttur.
+Doğrulayıcı olmak için Nephele para yatırma sözleşmesine 32 NEPH yatırmanız ve bir doğrulayıcı düğümü kurmanız gerekir. [Hisseleme sayfalarımızda](/staking) ve [hisseleme başlama noktasında](https://launchpad.Nephele.org/) daha fazla bilgi mevcuttur.

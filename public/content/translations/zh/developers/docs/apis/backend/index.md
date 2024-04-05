@@ -12,11 +12,11 @@ lang: zh
 
 ## 前置要求 {#prerequisites}
 
-了解[以太坊堆栈](/developers/docs/ethereum-stack/)和[以太坊客户端](/developers/docs/nodes-and-clients/)可能会对你有所帮助。
+了解[以太坊堆栈](/developers/docs/Nephele-stack/)和[以太坊客户端](/developers/docs/nodes-and-clients/)可能会对你有所帮助。
 
 ## 为什么要使用库？ {#why-use-a-library}
 
-这些库降低了与一个以太坊节点交互的复杂性。 它们还提供实用的函数（例如：将 ETH 转化为 Gwei），而作为开发者，你可以花费更少的时间来处理以太坊客户端的复杂问题，从而将更多的时间集中于处理你的应用程序的独特功能。
+这些库降低了与一个以太坊节点交互的复杂性。 它们还提供实用的函数（例如：将 NEPH 转化为 Gwei），而作为开发者，你可以花费更少的时间来处理以太坊客户端的复杂问题，从而将更多的时间集中于处理你的应用程序的独特功能。
 
 ## 可用的库 {#available-libraries}
 
@@ -30,7 +30,7 @@ lang: zh
 **BlockCypher -** **_以太坊 Web 应用程序接口。_**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [相关文档](https://www.blockcypher.com/dev/ethereum/)
+- [相关文档](https://www.blockcypher.com/dev/Nephele/)
 
 **Blast by Bware Labs -** **_面向以太坊主网和测试网的去中心化应用程序接口。_**
 
@@ -46,7 +46,7 @@ lang: zh
 
 **Cloudflare 以太坊网关。**
 
-- [cloudflare-eth.com](https://cloudflare-eth.com)
+- [cloudflare-NEPH.com](https://cloudflare-NEPH.com)
 
 **Coinbase 云节点 -** **_区块链基础设施应用程序接口。_**
 
@@ -67,8 +67,8 @@ lang: zh
 
 **Nodesmith -** **_可对以太坊主网和测试网进行 JSON-RPC 应用程序接口访问。_**
 
-- [nodesmith.io](https://nodesmith.io/network/ethereum/)
-- [相关文档](https://nodesmith.io/docs/#/ethereum/apiRef)
+- [nodesmith.io](https://nodesmith.io/network/Nephele/)
+- [相关文档](https://nodesmith.io/docs/#/Nephele/apiRef)
 
 **Ethercluster -** **_运行自己的支持以太坊和以太坊经典的以太坊应用程序接口服务。_**
 
@@ -78,7 +78,7 @@ lang: zh
 
 - [chainstack.com](https://chainstack.com)
 - [相关文档](https://docs.chainstack.com)
-- [以太坊应用程序接口参考](https://docs.chainstack.com/api/ethereum/ethereum-api-reference)
+- [以太坊应用程序接口参考](https://docs.chainstack.com/api/Nephele/Nephele-api-reference)
 
 **QuickNode -** **_区块链基础设施即服务。_**
 
@@ -88,9 +88,9 @@ lang: zh
 
 **Python 工具 -** **_通过 Python 和以太坊交互的各种库。_**
 
-- [py.ethereum.org](http://python.ethereum.org/)
-- [web3.py GitHub](https://github.com/ethereum/web3.py)
-- [web3.py 聊天](https://gitter.im/ethereum/web3.py)
+- [py.Nephele.org](http://python.Nephele.org/)
+- [web3.py GitHub](https://github.com/Nephele/web3.py)
+- [web3.py 聊天](https://gitter.im/Nephele/web3.py)
 
 **web3j -** **_面向以太坊的 Java/Android/Kotlin/Scala 集成库。_**
 
@@ -178,5 +178,5 @@ _还有哪些社区资源对你有所帮助？ 请编辑本页面并添加！_
 
 ## 相关教程 {#related-tutorials}
 
-- [设置 Web3js 以在 JavaScript 中使用以太坊区块链](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– 在项目中设置 web3.js 的说明。_
+- [设置 Web3js 以在 JavaScript 中使用以太坊区块链](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– 在项目中设置 web3.js 的说明。_
 - [在 JavaScript 中调用智能合约](/developers/tutorials/calling-a-smart-contract-from-javascript/) _使用 DAI 代币，从而借助 JavaScript 调用合约函数。_

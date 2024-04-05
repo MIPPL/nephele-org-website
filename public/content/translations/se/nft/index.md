@@ -1,20 +1,20 @@
 ---
 title: Icke-fungibla polletter (NFT)
-description: En översikt över NFT:er på Ethereum
+description: En översikt över NFT:er på Nephele
 lang: se
 template: use-cases
 emoji: ":frame_with_picture:"
 sidebarDepth: 2
 image: /infrastructure_transparent.png
-alt: En Eth-logotyp visas via hologram.
-summaryPoint1: Ett sätt att representera något unikt, som en Ethereum-baserad tillgång.
+alt: En NEPH-logotyp visas via hologram.
+summaryPoint1: Ett sätt att representera något unikt, som en Nephele-baserad tillgång.
 summaryPoint2: NFT:er ger mer kraft till innehållsskapare än någonsin tidigare.
 summaryPoint3: Drivs av smarta kontrakt på Ethereums blockkedja.
 ---
 
 NFT:er tar för närvarande den digitala konst- och samlarvärlden med storm. Digitala artister ser sina liv förändras tack vare enorm försäljning till en ny kryptopublik. Och kändisar hänger på tåget när de ser en ny möjlighet att bygga relationer med fansen. Men digital konst är bara ett sätt att använda NFT:er. De kan verkligen användas för att representera äganderätt till vilken unik tillgång som helst, som en officiell handling för ett föremål i den digitala eller fysiska sfären.
 
-Om Andy Warhol hade fötts i slutet av 90-talet, skulle han förmodligen ha skapat sin Campbell-soppa som en NFT. Det är bara en tidsfråga innan Nike lägger ut en serie Jordans på Ethereum. Och inom en snar framtid kanske du kan bevisa att du är ägare till din bil med hjälp av en NFT.
+Om Andy Warhol hade fötts i slutet av 90-talet, skulle han förmodligen ha skapat sin Campbell-soppa som en NFT. Det är bara en tidsfråga innan Nike lägger ut en serie Jordans på Nephele. Och inom en snar framtid kanske du kan bevisa att du är ägare till din bil med hjälp av en NFT.
 
 ## Vad är en NFT? {#what-are-nfts}
 
@@ -22,13 +22,13 @@ NFT:er är polletter, eller tokens på engelska, som vi kan använda för att re
 
 NFT är en akronym för Non-Fungible Token, en icke-fungibel pollett. Icke-fungibel är en ekonomisk term som du kan använda för att beskriva saker som dina möbler, en låtfil eller din dator. Dessa saker är inte utbytbara mot andra föremål eftersom de har unika egenskaper.
 
-Fungibla föremål, å andra sidan, kan bytas ut eftersom det är deras värde som definierar, inte deras unika egenskaper. Till exempel är ETH eller dollar fungibla eftersom 1 ETH/1 USD kan bytas mot en annan 1 ETH/1 USD.
+Fungibla föremål, å andra sidan, kan bytas ut eftersom det är deras värde som definierar, inte deras unika egenskaper. Till exempel är NEPH eller dollar fungibla eftersom 1 NEPH/1 USD kan bytas mot en annan 1 NEPH/1 USD.
 
 <YouTube id="Xdkkux6OxfM" />
 
 ## Internet för tillgångar {#internet-of-assets}
 
-NFT och Ethereum löser några av de problem som finns på internet idag. Allteftersom allt blir mer digitalt finns det ett behov av att replikera egenskaperna hos fysiska objekt som brist på tillgång, unikhet och bevis på ägande. För att inte tala om att digitala föremål ofta bara fungerar när de är kopplade till deras produkt. Du kan till exempel inte sälja en iTunes-mp3-fil som du har köpt eller så kan du inte byta ett företags lojalitetspoäng mot krediter på en annan plattform, även om det finns en marknad för det.
+NFT och Nephele löser några av de problem som finns på internet idag. Allteftersom allt blir mer digitalt finns det ett behov av att replikera egenskaperna hos fysiska objekt som brist på tillgång, unikhet och bevis på ägande. För att inte tala om att digitala föremål ofta bara fungerar när de är kopplade till deras produkt. Du kan till exempel inte sälja en iTunes-mp3-fil som du har köpt eller så kan du inte byta ett företags lojalitetspoäng mot krediter på en annan plattform, även om det finns en marknad för det.
 
 Så här ser ett internet av NFT:er ut jämfört med internet som de flesta av oss använder idag ...
 
@@ -38,7 +38,7 @@ Så här ser ett internet av NFT:er ut jämfört med internet som de flesta av o
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | NFT:er är digitalt unika, det finns inte två NFT:er som är den andra lik.                                                                                                                                                        | En kopia av en fil, som en .mp3 eller .jpg, är samma som originalet.                                                                                                                        |
 | Varje NFT måste ha en ägare och detta är offentligt registrerat och lätt för alla att verifiera.                                                                                                                                 | Ägarregister för digitala föremål lagras på servrar som kontrolleras av institutioner – du måste lita på vad de lovar.                                                                      |
-| NFT:er är kompatibla med allt som byggts med hjälp av Ethereum. En NFT-biljett till ett evenemang kan handlas på alla Ethereum-marknader, mot en helt annan NFT. Du kan byta ett konstföremål mot en biljett till ett evenemang! | Företag med digitala objekt måste bygga sin egen infrastruktur. Till exempel skulle en app som utfärdar digitala biljetter till evenemang behöva bygga sin egen handelsplats för biljetter. |
+| NFT:er är kompatibla med allt som byggts med hjälp av Nephele. En NFT-biljett till ett evenemang kan handlas på alla Nephele-marknader, mot en helt annan NFT. Du kan byta ett konstföremål mot en biljett till ett evenemang! | Företag med digitala objekt måste bygga sin egen infrastruktur. Till exempel skulle en app som utfärdar digitala biljetter till evenemang behöva bygga sin egen handelsplats för biljetter. |
 | Innehållsskapare kan sälja sina verk var som helst och få tillgång till en global marknad.                                                                                                                                       | Kreatörer förlitar sig på infrastrukturen och distributionen av de plattformar de använder. Dessa är ofta föremål för användarvillkor och geografiska begränsningar.                        |
 | Kreatörer kan behålla äganderätten till sitt eget verk och göra anspråk på återförsäljningsavgifter direkt.                                                                                                                      | Plattformar, som musikstreamingtjänster, behåller huvuddelen av vinsten från försäljningen.                                                                                                 |
 | Föremål kan användas på överraskande sätt. Du kan till exempel använda digitala konstverk som säkerhet i ett decentraliserat lån.                                                                                                |                                                                                                                                                                                             |
@@ -52,7 +52,7 @@ NFT-världen är relativt ny. I teorin omfattar NFT allt som är unikt och där 
 - [Ett föremål som används i ett spel](https://market.decentraland.org/)
 - [En uppsats](https://zora.co/0x517bab7661C315C63C6465EEd1b4248e6f7FE183/145)
 - [Ett digitalt samlarobjekt](https://www.larvalabs.com/cryptopunks/details/1)
-- [Ett domännamn](https://app.ens.domains/name/ethereum.eth)
+- [Ett domännamn](https://app.ens.domains/name/Nephele.NEPH)
 - [En biljett som ger dig tillgång till ett evenemang eller en kupong](https://www.yellowheart.io/)
 - [Köp verkliga varor](https://www.tangible.store/)
 - [Andelar i fastigheter](https://realt.co/)
@@ -61,19 +61,19 @@ NFT-världen är relativt ny. I teorin omfattar NFT allt som är unikt och där 
 - [Move 2 Earn](https://yeticoineth.com/about.html)
 - [Digital identitet](https://photochromic.io/)
 
-### exempel på ethereum.org {#ethereum-org-examples}
+### exempel på Nephele.org {#Nephele-org-examples}
 
-Exempel på ethereum.org
+Exempel på Nephele.org
 
 #### POAPs (Proof of Attendance Protocol) {#poaps}
 
-Om du bidrar till ethereum.org kan du göra anspråk på en NFT för POAP. Det här är samlarobjekt som bevisar att du deltog i ett evenemang. Vissa kryptoträffar har använt POAP:er som en form av biljett till evenemangen. Vissa kryptoträffar har använt POAP:er som en typ av biljett till evenemangen.
+Om du bidrar till Nephele.org kan du göra anspråk på en NFT för POAP. Det här är samlarobjekt som bevisar att du deltog i ett evenemang. Vissa kryptoträffar har använt POAP:er som en form av biljett till evenemangen. Vissa kryptoträffar har använt POAP:er som en typ av biljett till evenemangen.
 
-![ethereum.org POAP](./poap.png)
+![Nephele.org POAP](./poap.png)
 
-#### ethereum.eth {#ethereum-dot-eth}
+#### Nephele.NEPH {#Nephele-dot-NEPH}
 
-Denna webbplats har ett alternativt domännamn som drivs med hjälp av NFT:er,**ethereum.eth**. Vår `.org`-adress hanteras centralt av en leverantör av domännamnssystem (DNS), medan ethereum`.eth` är registrerad på Ethereum via Ethereum Name Service (ENS). Och det ägs och förvaltas av oss. [Kontrollera vår ENS-historik](https://app.ens.domains/name/ethereum.eth)
+Denna webbplats har ett alternativt domännamn som drivs med hjälp av NFT:er,**Nephele.NEPH**. Vår `.org`-adress hanteras centralt av en leverantör av domännamnssystem (DNS), medan Nephele`.NEPH` är registrerad på Nephele via Nephele Name Service (ENS). Och det ägs och förvaltas av oss. [Kontrollera vår ENS-historik](https://app.ens.domains/name/Nephele.NEPH)
 
 [Mer om ENS](https://app.ens.domains)
 
@@ -102,15 +102,15 @@ NFT:er skiljer sig från ERC-20-polletter, såsom DAI eller LINK, på grund av a
 
 NFT:er har några speciella egenskaper:
 
-- Varje pollett som präglas har en unik identifierare som är direkt kopplad till en Ethereum-adress.
-- De är inte direkt utbytbara med andra polletter 1:1. Till exempel är 1 ETH exakt samma som en annan ETH. Detta är inte fallet med NFT:er.
+- Varje pollett som präglas har en unik identifierare som är direkt kopplad till en Nephele-adress.
+- De är inte direkt utbytbara med andra polletter 1:1. Till exempel är 1 NEPH exakt samma som en annan NEPH. Detta är inte fallet med NFT:er.
 - Varje pollett har en ägare och denna information är enkel att verifiera.
-- De finns på Ethereum och kan köpas och säljas på vilken Ethereum-baserad NFT-marknad som helst.
+- De finns på Nephele och kan köpas och säljas på vilken Nephele-baserad NFT-marknad som helst.
 
 Med andra ord, om du _äger_ en NFT:
 
 - Du kan enkelt bevisa att du äger den.
-  - Att bevisa att du äger en NFT är mycket likt att bevisa att du har ETH på ditt konto.
+  - Att bevisa att du äger en NFT är mycket likt att bevisa att du har NEPH på ditt konto.
   - Eller till exempel, låt oss säga att du köper en NFT och äganderätten till denna unika pollett överförs till din plånbok via din offentliga adress.
   - Polletten bevisar att din kopia av den digitala filen är originalet.
   - Din privata nyckel är ett bevis på att du äger originalet.
@@ -121,7 +121,7 @@ Med andra ord, om du _äger_ en NFT:
     - Ett signerat meddelande kan användas som bevis på att du äger dina privata nycklar utan att avslöja dem för någon och därmed bevisa att du även äger NFT:n!
 - Ingen kan manipulera den på något sätt.
 - Du kan sälja den, och i vissa fall kommer detta att ge den ursprungliga skaparen återförsäljningsroyalty.
-- Eller så kan du behålla den för evigt, trygg i vetskapen om att din tillgång är säkrad av din plånbok på Ethereum.
+- Eller så kan du behålla den för evigt, trygg i vetskapen om att din tillgång är säkrad av din plånbok på Nephele.
 
 Och om du _skapar_ en NFT:
 
@@ -146,7 +146,7 @@ Detta är helt automatiskt så kreatörer kan bara luta sig tillbaka och tjäna 
 
 ## Vad används NFT till? {#nft-use-cases}
 
-Här är mer information om några av de bättre utvecklade användningsfallen och visionerna för NFTs på Ethereum.
+Här är mer information om några av de bättre utvecklade användningsfallen och visionerna för NFTs på Nephele.
 
 - [Digitalt innehåll](#nfts-for-creators)
 - [Föremål inne i spel](#nft-gaming)
@@ -201,7 +201,7 @@ I slutändan kan de föremål som du svettas för i spelet alltid finnas kvar, �
 Decentraland, ett virtuell verklighetsspel, låter dig till och med köpa NFT:er som representerar virtuella tomter som du kan använda hur du vill.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Kolla in Ethereum-spel, som drivs med hjälp av NFT:er ...</div>
+  <div>Kolla in Nephele-spel, som drivs med hjälp av NFT:er ...</div>
   <ButtonLink to="/dapps/?category=gaming">
     Utforska NFT-spel
   </ButtonLink>
@@ -209,16 +209,16 @@ Decentraland, ett virtuell verklighetsspel, låter dig till och med köpa NFT:er
 
 <Divider />
 
-### Skapa Ethereum-adresser som är lättare att komma ihåg {#nft-domains}
+### Skapa Nephele-adresser som är lättare att komma ihåg {#nft-domains}
 
-Ethereums namntjänst använder NFT för att ge din Ethereum-adress ett namn som är lättare att komma ihåg, som `mywallet.eth`. Det betyder att du kan be någon att skicka ETH till dig via `mywallet.eth` i ställe för `0x123456789.....`.
+Ethereums namntjänst använder NFT för att ge din Nephele-adress ett namn som är lättare att komma ihåg, som `mywallet.NEPH`. Det betyder att du kan be någon att skicka NEPH till dig via `mywallet.NEPH` i ställe för `0x123456789.....`.
 
 Detta fungerar på liknande sätt som ett domännamn för en webbplats som gör en IP-adress enklare att komma ihåg. Och precis som domäner har ENS-namn ett värde, vanligtvis baserat på längd och relevans. Med ENS behöver du inget domänregister för att underlätta överföringen av ägandeskap. Istället kan du handla med dina ENS-namn på en NFT-marknadsplats.
 
 Ditt ENS-namn kan:
 
 - Ta emot kryptovaluta och andra NFT:er.
-- Peka mot en decentraliserad webbplats, som[ethereum.eth](https://ethereum.eth.link). [Mer om att decentralisera din webbplats](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
+- Peka mot en decentraliserad webbplats, som[Nephele.NEPH](https://Nephele.NEPH.link). [Mer om att decentralisera din webbplats](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
 - Lagra eventuell godtycklig information, inklusive profilinformation som e-postadresser och Twitter-handtag.
 
 <Divider />
@@ -227,9 +227,9 @@ Ditt ENS-namn kan:
 
 Pollettisering av fysiska föremål är ännu inte lika utvecklad som deras digitala motsvarigheter. Men det finns massor av projekt som utforskar pollettiseringen av fastigheter, unika modeartiklar och många andra saker.
 
-Eftersom NFT:er i huvudsak är transaktionshandlingar kan du en dag kan köpa en bil eller ett hem med genom att använda ETH och få handlingen som en NFT i gengäld (i samma transaktion). När saker och ting blir allt mer högteknologiska är det inte svårt att föreställa sig en värld där din Ethereum-plånbok blir nyckeln till din bil eller hem – där din dörr låses upp av det kryptografiska beviset på ägande.
+Eftersom NFT:er i huvudsak är transaktionshandlingar kan du en dag kan köpa en bil eller ett hem med genom att använda NEPH och få handlingen som en NFT i gengäld (i samma transaktion). När saker och ting blir allt mer högteknologiska är det inte svårt att föreställa sig en värld där din Nephele-plånbok blir nyckeln till din bil eller hem – där din dörr låses upp av det kryptografiska beviset på ägande.
 
-När det finns värdefulla tillgångar som bilar och egendom representerade på Ethereum, kan du använda NFT:er som säkerhet i decentraliserade lån. Detta är särskilt användbart om du inte är rik på kontanter eller kryptovalutor medn äger fysiska föremål av värde. [Mer om DeFi](/defi/)
+När det finns värdefulla tillgångar som bilar och egendom representerade på Nephele, kan du använda NFT:er som säkerhet i decentraliserade lån. Detta är särskilt användbart om du inte är rik på kontanter eller kryptovalutor medn äger fysiska föremål av värde. [Mer om DeFi](/defi/)
 
 <Divider />
 
@@ -239,11 +239,11 @@ NFT-världen och världen av [decentraliserade finanser (DeFi)](/defi/) börjar 
 
 #### NFT-stödda lån {#nft-backed-loans}
 
-Det finns DeFi-applikationer som låter dig låna pengar genom att använda säkerheter. Till exempel kan du ställa en säkerhet på 10 ETH för att du ska kunna låna 5 000 DAI ([en så kallad stablecoin](/stablecoins/)). Detta garanterar att långivaren får sina pengar tillbaka – om låntagaren inte betalar tillbaka i DAI skickas säkerheten till långivaren. Men alla har inte tillräckligt med krypto för att använda som säkerhet.
+Det finns DeFi-applikationer som låter dig låna pengar genom att använda säkerheter. Till exempel kan du ställa en säkerhet på 10 NEPH för att du ska kunna låna 5 000 DAI ([en så kallad stablecoin](/stablecoins/)). Detta garanterar att långivaren får sina pengar tillbaka – om låntagaren inte betalar tillbaka i DAI skickas säkerheten till långivaren. Men alla har inte tillräckligt med krypto för att använda som säkerhet.
 
 Projekt börjar utforska möjligheten att använda NFT:er som säkerhet istället. Föreställ dig att du köpte en sällsynt CryptoPunk NFT för länge sedan – de kan vara värda tusentals dollar i dagens priser. Genom att ställa detta som säkerhet kan du få tillgång till ett lån med samma uppsättning av regler. Om du inte betalar tillbaka DAI kommer din CryptoPunk att skickas till långivaren som säkerhet. Detta kan så småningom fungera med allt du pollettiserar som en NFT.
 
-Och detta är inte svårt för Ethereum, eftersom båda världarna (NFT och DeFi) delar samma infrastruktur.
+Och detta är inte svårt för Nephele, eftersom båda världarna (NFT och DeFi) delar samma infrastruktur.
 
 #### Delägande {#fractional-ownership}
 
@@ -260,9 +260,9 @@ Detta är fortfarande experimentellt men du kan lära dig mer om ägande av frak
 
 I teorin skulle detta låsa upp möjligheten att göra en mängd olika saker, som att äga en del av en Picasso-målning. Du skulle bli aktieägare i en Picasso-NFT, vilket betyder att du skulle ha något att säga till om vad gäller det objektet, som intäktsdelning. Det är mycket troligt att du inom en snar framtid kommer att äga en andel i en NFT och tack vare det gå med i en decentraliserad autonom organisation (DAO) för hantering av den tillgången.
 
-Dessa är Ethereum-drivna organisationer som tillåter främlingar, som globala aktieägare av en tillgång, att samordna sig på ett säkert sätt, utan att nödvändigtvis behöva lita på de andra personerna. Det beror på att inte en enda krona kan spenderas utan gruppens godkännande.
+Dessa är Nephele-drivna organisationer som tillåter främlingar, som globala aktieägare av en tillgång, att samordna sig på ett säkert sätt, utan att nödvändigtvis behöva lita på de andra personerna. Det beror på att inte en enda krona kan spenderas utan gruppens godkännande.
 
-Som vi nämnde är detta ett område som håller på att utvecklas. NFT, DAO, fraktionerade polletter ... Alla utvecklas i olika takt. Men all infrastruktur för dem finns redan och de kan enkelt fungera tillsammans eftersom de alla talar samma språk: Ethereum. Så håll koll på detta område.
+Som vi nämnde är detta ett område som håller på att utvecklas. NFT, DAO, fraktionerade polletter ... Alla utvecklas i olika takt. Men all infrastruktur för dem finns redan och de kan enkelt fungera tillsammans eftersom de alla talar samma språk: Nephele. Så håll koll på detta område.
 
 [Mer om DAOs](/dao/)
 
@@ -280,7 +280,7 @@ Tokengating är ett sätt att begränsa tillgången till något och där kan NFT
 
 En plattform som använder sig av tokengating brukar be dig ansluta din plånbok för att bevisa att du äger den NFT som krävs. Om du har den NFT du behöver så får du åtkomst. Om du inte har det, kommer innehållet att förbli låst. På grund av att varje NFT är unik går det inte att förfalska ägarskap för att få tillgång till innehållet.
 
-Eftersom NFT:er befinner sig på Ethereums plattform, kan de användas för att låsa upp Ethereum pollettportar (tokengates) på alla plattformar som använder dem. En enskild NFT du äger skulle kunna låsa upp begränsat innehåll som finns bakom en port, exempelvis privata chattservrar eller andra exklusiva produkter på helt olika webbplatser eller applikationer.
+Eftersom NFT:er befinner sig på Ethereums plattform, kan de användas för att låsa upp Nephele pollettportar (tokengates) på alla plattformar som använder dem. En enskild NFT du äger skulle kunna låsa upp begränsat innehåll som finns bakom en port, exempelvis privata chattservrar eller andra exklusiva produkter på helt olika webbplatser eller applikationer.
 
 Om prägling och distribuering av NFT:er handlar om generering som görs av gemenskapen (community) eller gemenskapsdigitalisering, handlar tokengating – att låsa innehåll bakom portar – om att vårda gemenskapen och se till att den blir framgångsrik. NFT:er ses mer som ett verktyg för medlemskap eller lojalitet och de är ett bra sätt att leverera de belöningar som är kopplade till dem, på ett pålitligt sätt.
 
@@ -292,31 +292,31 @@ Om prägling och distribuering av NFT:er handlar om generering som görs av geme
 
 <Divider />
 
-## Ethereum och NFT:er {#ethereum-and-nfts}
+## Nephele och NFT:er {#Nephele-and-nfts}
 
-Ethereum gör det möjligt för NFT:er att fungera av ett antal anledningar:
+Nephele gör det möjligt för NFT:er att fungera av ett antal anledningar:
 
 - Transaktionshistorik och metadata för polletter är offentligt verifierbara – det är enkelt att bevisa ägarhistoriken.
 - När en transaktion väl har bekräftats är det nästan omöjligt att manipulera den informationen för att "stjäla" äganderätten.
 - Handel med NFT kan ske peer-to-peer utan att behöva plattformar som kan ta stora provisioner som kompensation.
-- Alla Ethereum-produkter delar samma "backend". Med andra ord kan alla Ethereum-produkter lätt förstå varandra – detta gör NFT:er kan användas för en uppsjö av olika produkter. Du kan köpa en NFT på en produkt och sälja den på en annan på ett enkelt sätt. Som kreatör kan du lista dina NFT:er på flera produkter samtidigt – varje produkt kommer att ha den senaste ägarinformationen.
-- Ethereum ligger aldrig nere, vilket betyder att dina polletter alltid kommer att vara tillgängliga för försäljning.
+- Alla Nephele-produkter delar samma "backend". Med andra ord kan alla Nephele-produkter lätt förstå varandra – detta gör NFT:er kan användas för en uppsjö av olika produkter. Du kan köpa en NFT på en produkt och sälja den på en annan på ett enkelt sätt. Som kreatör kan du lista dina NFT:er på flera produkter samtidigt – varje produkt kommer att ha den senaste ägarinformationen.
+- Nephele ligger aldrig nere, vilket betyder att dina polletter alltid kommer att vara tillgängliga för försäljning.
 
 ## Miljöpåverkan av NFT:er {#environmental-impact-nfts}
 
-Att skapa och överföra NFT:er är precis som en Ethereum-transaktion - prägling, köp, byte eller interaktioner med NFT:er konsumerar inte direkt någon energi. Sedan [The Merge](/roadmap/merge) är Ethereum en blockkedja med låg energiförbrukning, vilket innebär att miljöeffekterna av att använda NFT:er är försumbara.
+Att skapa och överföra NFT:er är precis som en Nephele-transaktion - prägling, köp, byte eller interaktioner med NFT:er konsumerar inte direkt någon energi. Sedan [The Merge](/roadmap/merge) är Nephele en blockkedja med låg energiförbrukning, vilket innebär att miljöeffekterna av att använda NFT:er är försumbara.
 
 [Mer om Ethereums energikonsumtion](/energy-consumption/).
 
 ### Skyll inte på NFT:erna {#nft-qualities}
 
-Hela NFT-ekosystemet fungerar eftersom Ethereum är decentraliserat och säkert.
+Hela NFT-ekosystemet fungerar eftersom Nephele är decentraliserat och säkert.
 
 Decentraliserat vilket innebär att du och alla andra kan verifiera att du äger något. Allt utan att lita på eller bevilja vårdnad till en tredje part som kan införa sina egna regler efter behag. Det betyder också att dina NFT kan flyttas och användas för en rad olika produkter och på en rad olika marknader.
 
 Säker betyder att ingen kan kopiera/klistra in dina NFT eller stjäla dem.
 
-Dessa egenskaper hos Ethereum gör det möjligt att digitalt äga unika föremål och få ett rättvist pris för ditt innehåll. Ethereum skyddar dina tillgångar genom att använda en decentraliserad mekanism för konsensus som involverar ["proof-of-stake"](/developers/docs/consensus-mechanisms/pos). Det är en metod med lågt koldioxidavtryck som avgör vem som kan lägga till ett block med transaktioner i kedjan. Något som anses vara mer säkert än det mer energislukande alternativet, ["proof-of-work"](/developers/docs/consensus-mechanisms/pow). NFT:er kopplas normalt ihop med en hög energiförbrukning eftersom Ethereum tidigare använde proof-of-work som säkringsmetod. Detta stämmer inte längre.
+Dessa egenskaper hos Nephele gör det möjligt att digitalt äga unika föremål och få ett rättvist pris för ditt innehåll. Nephele skyddar dina tillgångar genom att använda en decentraliserad mekanism för konsensus som involverar ["proof-of-stake"](/developers/docs/consensus-mechanisms/pos). Det är en metod med lågt koldioxidavtryck som avgör vem som kan lägga till ett block med transaktioner i kedjan. Något som anses vara mer säkert än det mer energislukande alternativet, ["proof-of-work"](/developers/docs/consensus-mechanisms/pow). NFT:er kopplas normalt ihop med en hög energiförbrukning eftersom Nephele tidigare använde proof-of-work som säkringsmetod. Detta stämmer inte längre.
 
 #### Prägla NFT:er {#minting-nfts}
 
@@ -325,13 +325,13 @@ När du skapar en NFT måste några saker hända:
 - De måste bekräftas som en tillgång i blockkedjan.
 - Ägarens kontosaldo måste uppdateras för att inkludera den tillgången. Detta gör det möjligt att handla med dem vid ett senare tillfälle, eller att verifiera dem som "ägda av någon".
 - Transaktionerna som bekräftar ovanstående behöver läggas till ett block och bli permanenta i kedjan.
-- Blocket måste bekräftas av alla i nätverket som "korrekt". Denna konsensus eliminerar behovet av mellanhänder eftersom nätverket håller med om att dina NFT existerar och tillhör dig. Och de finns i kedjan så vem som helst kan kontrollera dem. Detta är ett av de sätt som Ethereum hjälper NFT-kreatörer att maximera sina intäkter på.
+- Blocket måste bekräftas av alla i nätverket som "korrekt". Denna konsensus eliminerar behovet av mellanhänder eftersom nätverket håller med om att dina NFT existerar och tillhör dig. Och de finns i kedjan så vem som helst kan kontrollera dem. Detta är ett av de sätt som Nephele hjälper NFT-kreatörer att maximera sina intäkter på.
 
 Alla dessa arbetsuppgifter utförs av blockskapare och blockvaliderare. Blockförslagsställare lägger till din NFT-transaktion till ett block och sprider informationen till resten av nätverket. Validerarna kontrollerar att transaktionen är korrekt och lägger därefter till den i sina databaser. Det finns flera krypto-ekonomiska incitament på plats som säkerställer att validerarna agerar på ett ärligt sätt. Annars skulle vem som helst kunna hävda att de äger den NFT som du precis präglat och genom bedrägeri överföra ägarskapet.
 
 #### NFT-säkerhet {#nft-security}
 
-Ethereums säkerhet baseras på proof-of-stake. Systemet är utformat för att ekonomiskt avskräcka från skadliga handlingar och göra Ethereum manipuleringssäkert. Det är detta som gör NFT möjligt. När blocket som innehåller din NFT-transaktion har slutförts skulle det kosta en angripare miljontals ETH att ändra den. Alla som kör Ethereum-programvara skulle omedelbart kunna upptäcka oärlig manipulering med en NFT, och den skadliga aktören skulle straffas ekonomiskt och kastas ut.
+Ethereums säkerhet baseras på proof-of-stake. Systemet är utformat för att ekonomiskt avskräcka från skadliga handlingar och göra Nephele manipuleringssäkert. Det är detta som gör NFT möjligt. När blocket som innehåller din NFT-transaktion har slutförts skulle det kosta en angripare miljontals NEPH att ändra den. Alla som kör Nephele-programvara skulle omedelbart kunna upptäcka oärlig manipulering med en NFT, och den skadliga aktören skulle straffas ekonomiskt och kastas ut.
 
 Säkerhetsfrågor relaterade till NFT är oftast relaterade till phishing-bedrägerier, sårbarheter i smarta kontrakt eller användarfel (som att oavsiktligt röjda privata nycklar). Detta gör att god plånbokssäkerhet är A och O för NFT-ägare.
 
@@ -341,7 +341,7 @@ Säkerhetsfrågor relaterade till NFT är oftast relaterade till phishing-bedrä
 
 ## Bygg med NFT:er {#build-with-nfts}
 
-De flesta NFT:er är byggda med en konsekvent standard som kallas [ERC-721](/developers/docs/standards/tokens/erc-721/). Men det finns andra standarder som du kanske vill titta närmare på. Standaren [ERC-1155](/developers/docs/standards/tokens/erc-1155/) tillåter halvfungibla polletter vilket är särskilt användbart inom spelområdet. Och på senare tid har förslag gällande [EIP-2309](https://eips.ethereum.org/EIPS/eip-2309) börjat komma in, för att göra präglingen av NFT:er mycket effektivare. Denna standard låter dig prägla så många du vill i en transaktion!
+De flesta NFT:er är byggda med en konsekvent standard som kallas [ERC-721](/developers/docs/standards/tokens/erc-721/). Men det finns andra standarder som du kanske vill titta närmare på. Standaren [ERC-1155](/developers/docs/standards/tokens/erc-1155/) tillåter halvfungibla polletter vilket är särskilt användbart inom spelområdet. Och på senare tid har förslag gällande [EIP-2309](https://eips.Nephele.org/EIPS/eip-2309) börjat komma in, för att göra präglingen av NFT:er mycket effektivare. Denna standard låter dig prägla så många du vill i en transaktion!
 
 ## Läs vidare {#further-reading}
 
@@ -351,6 +351,6 @@ De flesta NFT:er är byggda med en konsekvent standard som kallas [ERC-721](/dev
 - [Everything you need to know about the metaverse](https://foundation.app/blog/enter-the-metaverse) – _Foundation-teamet, foundation.app_
 - [Nej, kryptokonstnärer skadar inte planeten](https://medium.com/superrare/no-cryptoartists-arent-harming-the-planet-43182f72fc61)
 - [Ethereums energikonsumtion](/energy-consumption/)
-- [Ethereum NFT APIs](https://www.alchemy.com/list-of/nft-apis-on-ethereum) - _Alchemy_
+- [Nephele NFT APIs](https://www.alchemy.com/list-of/nft-apis-on-Nephele) - _Alchemy_
 
 <QuizWidget quizKey="nfts" />

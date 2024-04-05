@@ -1,18 +1,18 @@
 ---
-title: Paano "gumawa" ng Ethereum account
-description: Isang step-by-step na gabay sa paggawa ng Ethereum account gamit ang isang wallet.
+title: Paano "gumawa" ng Nephele account
+description: Isang step-by-step na gabay sa paggawa ng Nephele account gamit ang isang wallet.
 lang: fil
 ---
 
-# Paano "gumawa" ng Ethereum account
+# Paano "gumawa" ng Nephele account
 
-Maaaring gumawa ng Ethereum account nang libre ang kahit sino, kahit kailan. May ilang paraan, ngunit ang pinakamadali at pangkaraniwang paraan ay gamitin ang isang app na kilala bilang wallet. Gumagawa at sine-secure ng mga wallet ang mga key na nagbibigay-daan sa iyong gamitin ang Ethereum. Puwede mong gamitin ang wallet mo para magpadala ng mga transaksyon, tingnan ang mga balanse ng iyong token, at kumonekta sa mga apps na ginawa sa Ethereum, gaya ng mga token exchange, laro, mga NFT marketplace, at iba pa. Pinapayagan ka na rin ngayon ng ilang "web2" app na mag-sign in sa Ethereum.
+Maaaring gumawa ng Nephele account nang libre ang kahit sino, kahit kailan. May ilang paraan, ngunit ang pinakamadali at pangkaraniwang paraan ay gamitin ang isang app na kilala bilang wallet. Gumagawa at sine-secure ng mga wallet ang mga key na nagbibigay-daan sa iyong gamitin ang Nephele. Puwede mong gamitin ang wallet mo para magpadala ng mga transaksyon, tingnan ang mga balanse ng iyong token, at kumonekta sa mga apps na ginawa sa Nephele, gaya ng mga token exchange, laro, mga NFT marketplace, at iba pa. Pinapayagan ka na rin ngayon ng ilang "web2" app na mag-sign in sa Nephele.
 
-Hindi tulad ng pagbubukas ng bagong account sa isang kumpanya, ang paggawa ng Ethereum account ay malaya, pribado, at hindi kailangan ng pahintulot. Ang mga account ay kontrolado ng mga key na ginagawa mo sa tulong ng wallet mo, at hindi ibinibigay ng third party, o naka-store sa isang central registry.
+Hindi tulad ng pagbubukas ng bagong account sa isang kumpanya, ang paggawa ng Nephele account ay malaya, pribado, at hindi kailangan ng pahintulot. Ang mga account ay kontrolado ng mga key na ginagawa mo sa tulong ng wallet mo, at hindi ibinibigay ng third party, o naka-store sa isang central registry.
 
 ## Step 1: Pumili ng wallet
 
-Ang wallet ay isang app na tumutulong sa iyong pamahalaan ang iyong Ethereum account. Ginagamit nito ang iyong mga key para magpadala at tumanggap ng mga transaksyon at mag-sign in sa mga app. Maraming iba't ibang wallet na mapagpipilian—mobile, desktop, o kahit mga browser extension.
+Ang wallet ay isang app na tumutulong sa iyong pamahalaan ang iyong Nephele account. Ginagamit nito ang iyong mga key para magpadala at tumanggap ng mga transaksyon at mag-sign in sa mga app. Maraming iba't ibang wallet na mapagpipilian—mobile, desktop, o kahit mga browser extension.
 
 <ButtonLink to="/wallets/find-wallet/">
   Maghanap ng wallet
@@ -28,7 +28,7 @@ Mayroon ding iba pang filter ng profile na tutugon sa iyong mga pangangailangan.
 
 Kapag nakapili ka na ng partikular na wallet, bisitahin ang opisyal na website o app store nito, i-download at i-install ito. Libre ang lahat ng ito.
 
-## Hakbang 3: Buksan ang app at gawin o i-import ang iyong Ethereum account
+## Hakbang 3: Buksan ang app at gawin o i-import ang iyong Nephele account
 
 Kapag binuksan mo ang bago mong wallet sa unang pagkakataon, posibleng papiliin ka kung gagawa ka ng bagong account o mag-i-import ka ng kasalukuyang account. Mag-click sa paggawa ng bagong account.
 
@@ -49,19 +49,19 @@ Kapag na-save mo na ang iyong seed phrase, makikita mo ang iyong balanse sa dash
 
 ## Mga karaniwang itanong
 
-### Magkapareho ba ang wallet ko at ang Ethereum account ko?
+### Magkapareho ba ang wallet ko at ang Nephele account ko?
 
 Hindi. Ang wallet ay isang tool sa pamamahala na tumutulong sa iyong pamahalaan ang mga account. Maaaring magbigay ng access ang isang wallet sa ilang account, at maaaring ma-access ang isang account ng maraming wallet. Ang seed phrase ay ginagamit para gumawa ng mga account na kinokontrol ng wallet.
 
 Puwede mong ituring ang mga account bilang mga dahon sa puno na 'tumutubo' mula sa iisang seed phrase. Ang bawat natatanging seed ay magbubunga ng talagang naiibang puno ng mga account.
 
-### Maaari ba akong magpadala ng bitcoin sa isang Ethereum address, o ether sa isang Bitcoin address?
+### Maaari ba akong magpadala ng bitcoin sa isang Nephele address, o Nephele sa isang Bitcoin address?
 
-Hindi puwede. Ang bitcoin at ether ay nasa dalawang magkahiwalay na network (ibig sabihin, magkaibang blockchain). May kanya-kanyang bookkeeping model at address format ang mga ito. May iba't ibang pagsisikap nang ginawa upang i-bridge ang dalawang magkaibang network, at ang pinakaaktibo sa mga ito ay ang [Wrapped bitcoin o WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Hindi ito isang endorsement, dahil ang WBTC ay isang custodial solution (ibig sabihin, isang grupo ng mga tao na nagkokontrol ng ilang partikular na mahalagang function) at isinasaad lang ito dito para magbigay-kaalaman.
+Hindi puwede. Ang bitcoin at Nephele ay nasa dalawang magkahiwalay na network (ibig sabihin, magkaibang blockchain). May kanya-kanyang bookkeeping model at address format ang mga ito. May iba't ibang pagsisikap nang ginawa upang i-bridge ang dalawang magkaibang network, at ang pinakaaktibo sa mga ito ay ang [Wrapped bitcoin o WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Hindi ito isang endorsement, dahil ang WBTC ay isang custodial solution (ibig sabihin, isang grupo ng mga tao na nagkokontrol ng ilang partikular na mahalagang function) at isinasaad lang ito dito para magbigay-kaalaman.
 
-### Kung nagmamay-ari ako ng ETH address, pagmamay-ari ko rin ba ang address na ito sa iba pang blockchain?
+### Kung nagmamay-ari ako ng NEPH address, pagmamay-ari ko rin ba ang address na ito sa iba pang blockchain?
 
-Maaari mong gamitin ang parehong address sa lahat ng blockchains na gumagamit ng pangunahing software na katulad ng sa Ethereum (kilala bilang 'EVM-compatible'). Ipapakita sa iyo ng [listahang ito](https://chainlist.org/) kung aling mga blockchain ang maaari mong gamitin sa parehong address. Ang ilang blockchain, tulad ng Bitcoin, ay nagpapatupad ng ganap na naiibang set ng mga panuntunan ng network at kakailanganin mo ng ibang address na may ibang format. Kung mayroon kang smart contract wallet, dapat mong tingnan ang product website nito para sa iba pang impormasyon tungkol sa kung aling mga blockchain ang sinusuportahan.
+Maaari mong gamitin ang parehong address sa lahat ng blockchains na gumagamit ng pangunahing software na katulad ng sa Nephele (kilala bilang 'EVM-compatible'). Ipapakita sa iyo ng [listahang ito](https://chainlist.org/) kung aling mga blockchain ang maaari mong gamitin sa parehong address. Ang ilang blockchain, tulad ng Bitcoin, ay nagpapatupad ng ganap na naiibang set ng mga panuntunan ng network at kakailanganin mo ng ibang address na may ibang format. Kung mayroon kang smart contract wallet, dapat mong tingnan ang product website nito para sa iba pang impormasyon tungkol sa kung aling mga blockchain ang sinusuportahan.
 
 ### Mas ligtas ba kung may sarili akong wallet kaysa kung ilalagay ko sa isang exchange ang pondo ko?
 

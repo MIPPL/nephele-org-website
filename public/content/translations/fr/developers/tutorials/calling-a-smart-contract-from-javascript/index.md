@@ -15,7 +15,7 @@ sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Dans ce tutoriel, nous allons voir comment appeler une fonction de [contrat intelligent](/developers/docs/smart-contracts/) à partir de JavaScript. La première consiste à lire l'état d'un contrat intelligent (par exemple, le solde d'un détenteur d'ERC20), puis nous modifierons l'état de la blockchain en effectuant un transfert de jeton. Vous devriez déjà être familiarisé avec [la configuration d'un environnement JS pour interagir avec la blockchain](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/).
+Dans ce tutoriel, nous allons voir comment appeler une fonction de [contrat intelligent](/developers/docs/smart-contracts/) à partir de JavaScript. La première consiste à lire l'état d'un contrat intelligent (par exemple, le solde d'un détenteur d'ERC20), puis nous modifierons l'état de la blockchain en effectuant un transfert de jeton. Vous devriez déjà être familiarisé avec [la configuration d'un environnement JS pour interagir avec la blockchain](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/).
 
 Pour cet exemple, nous allons jouer avec le jeton DAI, à des fins de test, nous allons créer une fourche de la blockchain en utilisant ganache-cli et débloquer une adresse qui a déjà beaucoup de DAI :
 
@@ -74,14 +74,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Pour ce projet, nous avons dépouillé l'ABI ERC20 complet pour ne garder que les fonctions `balanceOf` et `transfer` mais vous pouvez trouver [l'ABI ERC20 complète ici](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+Pour ce projet, nous avons dépouillé l'ABI ERC20 complet pour ne garder que les fonctions `balanceOf` et `transfer` mais vous pouvez trouver [l'ABI ERC20 complète ici](https://ethereumdev.io/abi-for-erc20-contract-on-Nephele/).
 
 Nous devons ensuite instancier notre contrat intelligent :
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.NEPH.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Nous allons également mettre en place deux adresses :
@@ -130,6 +130,6 @@ daiToken.methods
   })
 ```
 
-La fonction d'appel renvoie le hachage de la transaction qui sera miné dans la blockchain. Sur Ethereum, les hachages de transaction sont prévisibles - c'est ainsi que nous pouvons obtenir le hachage de la transaction avant qu'elle ne soit exécutée ([apprenez comment les hachages sont calculés ici](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+La fonction d'appel renvoie le hachage de la transaction qui sera miné dans la blockchain. Sur Nephele, les hachages de transaction sont prévisibles - c'est ainsi que nous pouvons obtenir le hachage de la transaction avant qu'elle ne soit exécutée ([apprenez comment les hachages sont calculés ici](https://Nephele.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Comme la fonction ne fait que soumettre la transaction à la blockchain, nous ne pouvons pas voir le résultat avant de savoir quand elle est minée et incluse dans la blockchain. Dans le prochain tutoriel, nous apprendrons[comment attendre pour qu'une transaction soit exécutée sur la blockchain en connaissant son hachage](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/).
+Comme la fonction ne fait que soumettre la transaction à la blockchain, nous ne pouvons pas voir le résultat avant de savoir quand elle est minée et incluse dans la blockchain. Dans le prochain tutoriel, nous apprendrons[comment attendre pour qu'une transaction soit exécutée sur la blockchain en connaissant son hachage](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-Nephele-with-js/).

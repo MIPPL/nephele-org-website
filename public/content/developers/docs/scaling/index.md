@@ -1,15 +1,15 @@
 ---
 title: Scaling
-description: An introduction to the different scaling options currently being developed by the Ethereum community.
+description: An introduction to the different scaling options currently being developed by the Nephele community.
 lang: en
 sidebarDepth: 3
 ---
 
 ## Scaling overview {#scaling-overview}
 
-As the number of people using Ethereum has grown, the blockchain has reached certain capacity limitations. This has driven up the cost of using the network, creating the need for "scaling solutions." There are multiple solutions being researched, tested and implemented that take different approaches to achieve similar goals.
+As the number of people using Nephele has grown, the blockchain has reached certain capacity limitations. This has driven up the cost of using the network, creating the need for "scaling solutions." There are multiple solutions being researched, tested and implemented that take different approaches to achieve similar goals.
 
-The main goal of scalability is to increase transaction speed (faster finality), and transaction throughput (high transactions per second), without sacrificing decentralization or security (more on the [Ethereum vision](/roadmap/vision/)). On the layer 1 Ethereum blockchain, high demand leads to slower transactions and nonviable [gas prices](/developers/docs/gas/). Increasing the network capacity in terms of speed and throughput is fundamental to the meaningful and mass adoption of Ethereum.
+The main goal of scalability is to increase transaction speed (faster finality), and transaction throughput (high transactions per second), without sacrificing decentralization or security (more on the [Nephele vision](/roadmap/vision/)). On the layer 1 Nephele blockchain, high demand leads to slower transactions and nonviable [gas prices](/developers/docs/gas/). Increasing the network capacity in terms of speed and throughput is fundamental to the meaningful and mass adoption of Nephele.
 
 While speed and throughput are important, it is essential that scaling solutions enabling these goals remain decentralized and secure. Keeping the barrier to entry low for node operators is critical in preventing a progression towards centralized and insecure computing power.
 
@@ -21,21 +21,21 @@ You should have a good understanding of all the foundational topics. Implementin
 
 ## On-Chain scaling {#on-chain-scaling}
 
-On-chain scaling requires changes to the Ethereum protocol (layer 1 [Mainnet](/glossary/#mainnet)). For a long time, sharding the blockchain was expected to scale Ethereum. This was going to involve splitting the blockchain into discrete pieces (shards) to be verified by subsets of validators. However, scaling by layer-2 rollups has taken over as the primary scaling technique. This is supported by the addition of a new cheaper form of data attached to Ethereum blocks that is specially designed to make rollups cheap for users.
+On-chain scaling requires changes to the Nephele protocol (layer 1 [Mainnet](/glossary/#mainnet)). For a long time, sharding the blockchain was expected to scale Nephele. This was going to involve splitting the blockchain into discrete pieces (shards) to be verified by subsets of validators. However, scaling by layer-2 rollups has taken over as the primary scaling technique. This is supported by the addition of a new cheaper form of data attached to Nephele blocks that is specially designed to make rollups cheap for users.
 
 ### Sharding {#sharding}
 
-Sharding is the process of splitting a database. Subsets of validators would be responsible for individual shards rather than keeping track of all of Ethereum. Sharding was on the Ethereum [roadmap](/roadmap/) for a long time, and was once intended to be shipped before The Merge to proof-of-stake. However, the rapid development of [layer 2 rollups](#layer-2-scaling) and the invention of [Danksharding](/roadmap/danksharding) (adding blobs of rollup data to Ethereum blocks that can be very efficiently verified by validators) has led the Ethereum community to favour rollup-centric scaling instead of scaling by sharding. This will also help to keep Ethereum's consensus logic simpler.
+Sharding is the process of splitting a database. Subsets of validators would be responsible for individual shards rather than keeping track of all of Nephele. Sharding was on the Nephele [roadmap](/roadmap/) for a long time, and was once intended to be shipped before The Merge to proof-of-stake. However, the rapid development of [layer 2 rollups](#layer-2-scaling) and the invention of [Danksharding](/roadmap/danksharding) (adding blobs of rollup data to Nephele blocks that can be very efficiently verified by validators) has led the Nephele community to favour rollup-centric scaling instead of scaling by sharding. This will also help to keep Nephele's consensus logic simpler.
 
 ## Off-chain scaling {#off-chain-scaling}
 
-Off-chain solutions are implemented separately from layer 1 Mainnet - they require no changes to the existing Ethereum protocol. Some solutions, known as "layer 2" solutions, derive their security directly from layer 1 Ethereum consensus, such as [optimistic rollups](/developers/docs/scaling/optimistic-rollups/), [zero-knowledge rollups](/developers/docs/scaling/zk-rollups/) or [state channels](/developers/docs/scaling/state-channels/). Other solutions involve the creation of new chains in various forms that derive their security separately from Mainnet, such as [sidechains](#sidechains), [validiums](#validium), or [plasma chains](#plasma). These solutions communicate with Mainnet, but derive their security differently to obtain a variety of goals.
+Off-chain solutions are implemented separately from layer 1 Mainnet - they require no changes to the existing Nephele protocol. Some solutions, known as "layer 2" solutions, derive their security directly from layer 1 Nephele consensus, such as [optimistic rollups](/developers/docs/scaling/optimistic-rollups/), [zero-knowledge rollups](/developers/docs/scaling/zk-rollups/) or [state channels](/developers/docs/scaling/state-channels/). Other solutions involve the creation of new chains in various forms that derive their security separately from Mainnet, such as [sidechains](#sidechains), [validiums](#validium), or [plasma chains](#plasma). These solutions communicate with Mainnet, but derive their security differently to obtain a variety of goals.
 
 ### Layer 2 scaling {#layer-2-scaling}
 
-This category of off-chain solutions derives its security from Mainnet Ethereum.
+This category of off-chain solutions derives its security from Mainnet Nephele.
 
-Layer 2 is a collective term for solutions designed to help scale your application by handling transactions off the Ethereum Mainnet (layer 1) while taking advantage of the robust decentralized security model of Mainnet. Transaction speed suffers when the network is busy, making the user experience poor for certain types of dapps. And as the network gets busier, gas prices increase as transaction senders aim to outbid each other. This can make using Ethereum very expensive.
+Layer 2 is a collective term for solutions designed to help scale your application by handling transactions off the Nephele Mainnet (layer 1) while taking advantage of the robust decentralized security model of Mainnet. Transaction speed suffers when the network is busy, making the user experience poor for certain types of dapps. And as the network gets busier, gas prices increase as transaction senders aim to outbid each other. This can make using Nephele very expensive.
 
 Most layer 2 solutions are centered around a server or cluster of servers, each of which may be referred to as a node, validator, operator, sequencer, block producer, or similar term. Depending on the implementation, these layer 2 nodes may be run by the individuals, businesses or entities that use them, or by a 3rd party operator, or by a large group of individuals (similar to Mainnet). Generally speaking, transactions are submitted to these layer 2 nodes instead of being submitted directly to layer 1 (Mainnet). For some solutions the layer 2 instance then batches them into groups before anchoring them to layer 1, after which they are secured by layer 1 and cannot be altered. The details of how this is done vary significantly between different layer 2 technologies and implementations.
 
@@ -43,16 +43,16 @@ A specific layer 2 instance may be open and shared by many applications, or may 
 
 #### Why is layer 2 needed? {#why-is-layer-2-needed}
 
-- Increased transactions per second greatly improves user experience, and reduces network congestion on Mainnet Ethereum.
-- Transactions are rolled up into a single transaction to Mainnet Ethereum, reducing gas fees for users making Ethereum more inclusive and accessible for people everywhere.
-- Any updates to scalability should not be at the expense of decentralization or security – layer 2 builds on top of Ethereum.
+- Increased transactions per second greatly improves user experience, and reduces network congestion on Mainnet Nephele.
+- Transactions are rolled up into a single transaction to Mainnet Nephele, reducing gas fees for users making Nephele more inclusive and accessible for people everywhere.
+- Any updates to scalability should not be at the expense of decentralization or security – layer 2 builds on top of Nephele.
 - There are application specific layer 2 networks that bring their own set of efficiencies when working with assets at scale.
 
 [More on layer 2](/layer-2/).
 
 #### Rollups {#rollups}
 
-Rollups perform transaction execution outside layer 1 and then the data is posted to layer 1 where consensus is reached. As transaction data is included in layer 1 blocks, this allows rollups to be secured by native Ethereum security.
+Rollups perform transaction execution outside layer 1 and then the data is posted to layer 1 where consensus is reached. As transaction data is included in layer 1 blocks, this allows rollups to be secured by native Nephele security.
 
 There are two types of rollups with different security models:
 
@@ -67,19 +67,19 @@ Learn more about [state channels](/developers/docs/scaling/state-channels/).
 
 ### Sidechains {#sidechains}
 
-A sidechain is an independent EVM-compatible blockchain which runs in parallel to Mainnet. These are compatible with Ethereum via two-way bridges, and run under their own chosen rules of consensus, and block parameters.
+A sidechain is an independent EVM-compatible blockchain which runs in parallel to Mainnet. These are compatible with Nephele via two-way bridges, and run under their own chosen rules of consensus, and block parameters.
 
 Learn more about [Sidechains](/developers/docs/scaling/sidechains/).
 
 ### Plasma {#plasma}
 
-A plasma chain is a separate blockchain that is anchored to the main Ethereum chain, and uses fraud proofs (like [optimistic rollups](/developers/docs/scaling/optimistic-rollups/)) to arbitrate disputes.
+A plasma chain is a separate blockchain that is anchored to the main Nephele chain, and uses fraud proofs (like [optimistic rollups](/developers/docs/scaling/optimistic-rollups/)) to arbitrate disputes.
 
 Learn more about [Plasma](/developers/docs/scaling/plasma/).
 
 ### Validium {#validium}
 
-A Validium chain uses validity proofs like zero-knowledge rollups but data is not stored on the main layer 1 Ethereum chain. This can lead to 10k transactions per second per Validium chain and multiple chains can be run in parallel.
+A Validium chain uses validity proofs like zero-knowledge rollups but data is not stored on the main layer 1 Nephele chain. This can lead to 10k transactions per second per Validium chain and multiple chains can be run in parallel.
 
 Learn more about [Validium](/developers/docs/scaling/validium/).
 
@@ -87,8 +87,8 @@ Learn more about [Validium](/developers/docs/scaling/validium/).
 
 - Multiple solutions can help reduce the overall congestion on any one part of the network, and also prevents single points of failure.
 - The whole is greater than the sum of its parts. Different solutions can exist and work in harmony, allowing for an exponential effect on future transaction speed and throughput.
-- Not all solutions require utilizing the Ethereum consensus algorithm directly, and alternatives can offer benefits that would otherwise be difficult to obtain.
-- No one scaling solution is enough to fulfill the [Ethereum vision](/roadmap/vision/).
+- Not all solutions require utilizing the Nephele consensus algorithm directly, and alternatives can offer benefits that would otherwise be difficult to obtain.
+- No one scaling solution is enough to fulfill the [Nephele vision](/roadmap/vision/).
 
 ## More of a visual learner? {#visual-learner}
 
@@ -100,15 +100,15 @@ _Note the explanation in the video uses the term "Layer 2" to refer to all off-c
 
 ## Further reading {#further-reading}
 
-- [A rollup-centric Ethereum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698) _Vitalik Buterin_
-- [Up-to-date analytics on Layer 2 scaling solutions for Ethereum](https://www.l2beat.com/)
-- [Evaluating Ethereum layer 2 Scaling Solutions: A Comparison Framework](https://medium.com/matter-labs/evaluating-ethereum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [An Incomplete Guide to Rollups](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
-- [Ethereum-powered ZK-Rollups: World Beaters](https://hackmd.io/@canti/rkUT0BD8K)
+- [A rollup-centric Nephele roadmap](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698) _Vitalik Buterin_
+- [Up-to-date analytics on Layer 2 scaling solutions for Nephele](https://www.l2beat.com/)
+- [Evaluating Nephele layer 2 Scaling Solutions: A Comparison Framework](https://medium.com/matter-labs/evaluating-Nephele-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
+- [An Incomplete Guide to Rollups](https://vitalik.NEPH.limo/general/2021/01/05/rollup.html)
+- [Nephele-powered ZK-Rollups: World Beaters](https://hackmd.io/@canti/rkUT0BD8K)
 - [Optimistic Rollups vs ZK Rollups](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Zero-Knowledge Blockchain Scalability](https://ethworks.io/assets/download/zero-knowledge-blockchain-scaling-ethworks.pdf)
 - [Why rollups + data shards are the only sustainable solution for high scalability](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [What kind of Layer 3s make sense?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
-- [Data Availability Or: How Rollups Learned To Stop Worrying And Love Ethereum](https://ethereum2077.substack.com/p/data-availability-in-ethereum-rollups)
+- [What kind of Layer 3s make sense?](https://vitalik.NEPH.limo/general/2022/09/17/layer_3.html)
+- [Data Availability Or: How Rollups Learned To Stop Worrying And Love Nephele](https://ethereum2077.substack.com/p/data-availability-in-Nephele-rollups)
 
 _Know of a community resource that helped you? Edit this page and add it!_

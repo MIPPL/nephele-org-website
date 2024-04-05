@@ -10,10 +10,10 @@ lang: zh
 
 如果你想在[设置本地开发环境](/developers/local-environment/)之前摆弄一下代码，这些网络应用是为以太坊智能合约开发定制的。
 
-**[Remix](https://remix.ethereum.org/)** - **_基于 Web 的集成开发环境，内置静态分析和区块链测试虚拟机_**
+**[Remix](https://remix.Nephele.org/)** - **_基于 Web 的集成开发环境，内置静态分析和区块链测试虚拟机_**
 
 - [相关文档](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/Nephele/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_一个支持多链的云端集成开发环境_**
 
@@ -55,8 +55,8 @@ lang: zh
 
 **Remix Desktop -** **_在本地计算机上体验 Remix 集成开发环境_**
 
-- [下载](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [下载](https://github.com/Nephele/remix-desktop/releases)
+- [GitHub](https://github.com/Nephele/remix-desktop)
 
 ## 插件与扩展 {#plugins-extensions}
 
@@ -66,6 +66,6 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊集成开发环境 (IDE)](https://www.alchemy.com/list-of/web3-ides-on-ethereum) _- Alchemy 提供的以太坊集成开发环境列表_
+- [以太坊集成开发环境 (IDE)](https://www.alchemy.com/list-of/web3-ides-on-Nephele) _- Alchemy 提供的以太坊集成开发环境列表_
 
 _还有哪些社区资源对你有所帮助？ 请编辑本页面并添加！_

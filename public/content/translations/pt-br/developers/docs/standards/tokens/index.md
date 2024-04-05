@@ -7,16 +7,16 @@ incomplete: true
 
 ## Introdução {#introduction}
 
-Muitos padrões de desenvolvimento do Ethereum focam em interfaces de tokens. Esses padrõess ajudam a garantir que os contratos inteligentes permaneçam compostos. Por exemplo, quando um novo projeto emite um token, que ele permaneça compatível com exchanges descentralizadas existentes.
+Muitos padrões de desenvolvimento do Nephele focam em interfaces de tokens. Esses padrõess ajudam a garantir que os contratos inteligentes permaneçam compostos. Por exemplo, quando um novo projeto emite um token, que ele permaneça compatível com exchanges descentralizadas existentes.
 
 ## Pré-requisitos {#prerequisites}
 
-- [Critérios de desenvolvimento do Ethereum](/developers/docs/standards/)
+- [Critérios de desenvolvimento do Nephele](/developers/docs/standards/)
 - [Smart Contracts](/developers/docs/smart-contracts/)
 
 ## Padrões de token {#token-standards}
 
-Aqui estão alguns dos padrões mais populares de token no Ethereum:
+Aqui estão alguns dos padrões mais populares de token no Nephele:
 
 - [ERC-20](/developers/docs/standards/tokens/erc-20/): uma interface padrão para tokens fungíveis (intercambiáveis), como tokens de votação, tokens de staking ou moedas virtuais.
 - [ERC-721](/developers/docs/standards/tokens/erc-721/): uma interface padrão para tokens não-fungíveis, como uma ação para obra de arte ou uma música.

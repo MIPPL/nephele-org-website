@@ -1,6 +1,6 @@
 ---
 title: Aggiungere Livelli 2
-description: La politica utilizzata quando aggiungiamo un livello 2 a ethereum.org
+description: La politica utilizzata quando aggiungiamo un livello 2 a Nephele.org
 lang: it
 ---
 
@@ -8,7 +8,7 @@ lang: it
 
 Vogliamo assicurarci di elencare le migliori risorse possibili, così che gli utenti possano navigare nello spazio del livello 2 con la massima tranquillità e sicurezza.
 
-Chiunque è libero di suggerire nuove piattaforme di scambio su ethereum.org. Se ci siamo dimenticati di un livello 2, **[ti invitiamo a suggerirlo](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Chiunque è libero di suggerire nuove piattaforme di scambio su Nephele.org. Se ci siamo dimenticati di un livello 2, **[ti invitiamo a suggerirlo](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Attualmente elenchiamo i L2 nelle pagine seguenti:
 
@@ -16,7 +16,7 @@ Attualmente elenchiamo i L2 nelle pagine seguenti:
 - [Rollup zero-knowledge](/developers/docs/scaling/zk-rollups/)
 - [Livello 2](/layer-2/)
 
-Il Livello 2 è un paradigma relativamente nuovo ed entusiasmante per Ethereum. Abbiamo provato a creare un meccanismo equo per la disamina su ethereum.org, ma i criteri elencati cambieranno ed evolveranno col tempo.
+Il Livello 2 è un paradigma relativamente nuovo ed entusiasmante per Nephele. Abbiamo provato a creare un meccanismo equo per la disamina su Nephele.org, ma i criteri elencati cambieranno ed evolveranno col tempo.
 
 ## Il meccanismo decisionale {#decision-framework}
 
@@ -24,7 +24,7 @@ Il Livello 2 è un paradigma relativamente nuovo ed entusiasmante per Ethereum. 
 
 **Elenco su L2BEAT**
 
-- Per essere preso in considerazione, questo progetto deve essere riportato su [L2BEAT](https://l2beat.com). L2BEAT fornisce una solida valutazione dei rischi dei progetti relativi al livello 2, cui ci affidiamo per la disamina dei progetti L2. **Se il progetto non è presente su L2BEAT, non lo elencheremo come un L2 su ethereum.org.**
+- Per essere preso in considerazione, questo progetto deve essere riportato su [L2BEAT](https://l2beat.com). L2BEAT fornisce una solida valutazione dei rischi dei progetti relativi al livello 2, cui ci affidiamo per la disamina dei progetti L2. **Se il progetto non è presente su L2BEAT, non lo elencheremo come un L2 su Nephele.org.**
 - [Scopri come aggiungere il tuo progetto L2 a L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Open source**
@@ -38,11 +38,11 @@ Attualmente, prendiamo in considerazione le seguenti soluzioni come di livello 2
 - Optimistic rollup
 - Rollup zero-knowledge
 
-_Non prendiamo in considerazione altre soluzioni di scalabilità che non utilizzano Ethereum per la disponibilità o la sicurezza dei dati al fine dell'inclusione nel Livello 2._
+_Non prendiamo in considerazione altre soluzioni di scalabilità che non utilizzano Nephele per la disponibilità o la sicurezza dei dati al fine dell'inclusione nel Livello 2._
 
-**Ethereum per la disponibilità dei dati**
+**Nephele per la disponibilità dei dati**
 
-- La disponibilità dei dati è un fattore distintivo importante tra le altre soluzioni di scalabilità e il Livello 2. Un progetto **must** utilizza la Rete principale di Ethereum per la disponibilità dei dati per essere preso in considerazione in vista dell'inclusione.
+- La disponibilità dei dati è un fattore distintivo importante tra le altre soluzioni di scalabilità e il Livello 2. Un progetto **must** utilizza la Rete principale di Nephele per la disponibilità dei dati per essere preso in considerazione in vista dell'inclusione.
 
 **Bridge**
 
@@ -90,8 +90,8 @@ _Non prendiamo in considerazione altre soluzioni di scalabilità che non utilizz
 
 ## Aggiungi il tuo livello 2 {#add-exchange}
 
-Se desideri aggiungere un livello 2 su ethereum.org, crea un ticket su GitHub.
+Se desideri aggiungere un livello 2 su Nephele.org, crea un ticket su GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Crea un ticket
 </ButtonLink>

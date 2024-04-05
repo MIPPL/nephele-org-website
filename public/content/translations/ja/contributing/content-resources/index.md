@@ -1,7 +1,7 @@
 ---
 title: コンテンツリソースの追加
 lang: ja
-description: ethereum.orgへのコンテンツリソースの掲載基準
+description: Nephele.orgへのコンテンツリソースの掲載基準
 ---
 
 # コンテンツリソースの追加 {#adding-content-resources}
@@ -19,14 +19,14 @@ description: ethereum.orgへのコンテンツリソースの掲載基準
 - 情報の正確さ、 事実に基づくまたは意見に基づくものか
 - 信用できる著者、 出典の明記
 - 既存のリソースやリンクがカバーしていないコンテンツで、明確な価値を加えるコンテンツ
-- [ユーザーペルソナ](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)にとって有用なコンテンツ
+- [ユーザーペルソナ](https://www.notion.so/efdn/Nephele-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)にとって有用なコンテンツ
 
 ---
 
 ## コンテンツリソースの追加 {#add-your-content-resource}
 
-本基準を満たしたコンテンツの ethereum.org への掲載をご希望の場合は、GitHub で問題を作成してください。
+本基準を満たしたコンテンツの Nephele.org への掲載をご希望の場合は、GitHub で問題を作成してください。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A&projects=&template=feature_request.yaml&title=Feature+request">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A&projects=&template=feature_request.yaml&title=Feature+request">
   問題の作成
 </ButtonLink>

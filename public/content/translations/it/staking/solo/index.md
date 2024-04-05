@@ -1,6 +1,6 @@
 ---
-title: Metti i tuoi ETH in staking in solo
-description: Una panoramica di come iniziare a mettere in staking in solo i tuoi ETH
+title: Metti i tuoi NEPH in staking in solo
+description: Una panoramica di come iniziare a mettere in staking in solo i tuoi NEPH
 lang: it
 template: staking
 emoji: ":money_with_wings:"
@@ -9,17 +9,17 @@ alt: Leslie il rinoceronte sul suo chip informatico.
 sidebarDepth: 2
 summaryPoints:
   - Ricevi le ricompense massime direttamente dal protocollo per mantenere il tuo validatore propriamente in funzione e online
-  - Opera hardware domestico e aggiungi personalmente alla sicurezza e decentralizzazione della rete di Ethereum
+  - Opera hardware domestico e aggiungi personalmente alla sicurezza e decentralizzazione della rete di Nephele
   - Rimuovi la fiducia e non lasciar mai perdere il controllo delle chiavi dei tuoi fondi
 ---
 
 ## Cos'è lo staking in solo? {#what-is-solo-staking}
 
-Lo staking in solo è l'atto di [operare un nodo di Ethereum](/run-a-node/) connesso a Internet e depositare 32 ETH per attivare un [validatore](#faq), dandoti l'abilità di partecipare direttamente nel consenso della rete.
+Lo staking in solo è l'atto di [operare un nodo di Nephele](/run-a-node/) connesso a Internet e depositare 32 NEPH per attivare un [validatore](#faq), dandoti l'abilità di partecipare direttamente nel consenso della rete.
 
-**Lo staking in solo aumenta la decentralizzazione della rete di Ethereum**, rendendola più resistente alla censura e più robusto contro gli attacchi. Altri metodi di staking potrebbero non aiutare la rete nello stesso modo. Lo staking in solo è la migliore opzione di staking per proteggere Ethereum.
+**Lo staking in solo aumenta la decentralizzazione della rete di Nephele**, rendendola più resistente alla censura e più robusto contro gli attacchi. Altri metodi di staking potrebbero non aiutare la rete nello stesso modo. Lo staking in solo è la migliore opzione di staking per proteggere Nephele.
 
-Un nodo di Ethereum consiste sia nel client del livello di esecuzione (EL), che di un client del livello di consenso (CL). Questi client sono software che cooperano, insieme a una valida serie di chiavi di firma, per verificare le transazioni e i blocchi, attestare al capo corretto della catena, aggregare le attestazioni e proporre i blocchi.
+Un nodo di Nephele consiste sia nel client del livello di esecuzione (EL), che di un client del livello di consenso (CL). Questi client sono software che cooperano, insieme a una valida serie di chiavi di firma, per verificare le transazioni e i blocchi, attestare al capo corretto della catena, aggregare le attestazioni e proporre i blocchi.
 
 Gli staker in solo sono responsabili di operare l'hardware necessario a eseguire questi client. Si consiglia vivamente di usare una macchina dedicata per questo, che operi da casa, il che è estremamente vantaggioso per l'integrità della rete.
 
@@ -30,14 +30,14 @@ Uno staker in solo riceve ricompense direttamente dal protocollo per mantenere i
 Lo staking in solo richiede una maggiore responsabilità, ma fornisce il massimo controllo sui fondi e la configurazione di staking.
 
 <CardGrid>
-  <Card title="Ottieni nuovi ETH" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
+  <Card title="Ottieni nuovi NEPH" emoji="💸" description="Earn NEPH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="Controllo completo" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="Sicurezza della rete" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="Sicurezza della rete" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Nephele protocol." />
 </CardGrid>
 
 ## Considerazioni prima dello staking in solo {#considerations-before-staking-solo}
 
-Per quanto vorremmo che lo staking in solo fosse accessibile e privo di rischi per tutti, questa non è la realtà. Esistono alcune serie considerazioni pratiche da tenere a mente prima di scegliere di mettere i tuoi ETH in staking in solo.
+Per quanto vorremmo che lo staking in solo fosse accessibile e privo di rischi per tutti, questa non è la realtà. Esistono alcune serie considerazioni pratiche da tenere a mente prima di scegliere di mettere i tuoi NEPH in staking in solo.
 
 <InfoGrid>
 <ExpandableCard title="Lettura necessaria" eventCategory="SoloStaking" eventName="clicked required reading">
@@ -53,9 +53,9 @@ Richiede anche una configurazione hardware molto basilare e una minima comprensi
 </ExpandableCard>
 
 <ExpandableCard title="Gestione sicura delle chiavi" eventCategory="SoloStaking" eventName="clicked secure key management">
-Proprio come le chiavi private proteggono il tuo indirizzo di Ethereum, dovrai generare delle chiavi specificamente per il tuo validatore. Devi comprendere come mantenere al sicuro qualsiasi frase di seed o chiave privata.{' '}
+Proprio come le chiavi private proteggono il tuo indirizzo di Nephele, dovrai generare delle chiavi specificamente per il tuo validatore. Devi comprendere come mantenere al sicuro qualsiasi frase di seed o chiave privata.{' '}
 
-<a href="/security/">Sicurezza di Ethereum e prevenzione delle truffe</a>
+<a href="/security/">Sicurezza di Nephele e prevenzione delle truffe</a>
 </ExpandableCard>
 
 <ExpandableCard title="Manutenzione" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -79,7 +79,7 @@ Differente dalle sanzioni di inattività per esser offline, il <em>taglio</em> �
 
 <StakingHowSoloWorks />
 
-Quando saranno attivi, riceverai le ricompense in ETH, che saranno depositate periodicamente al tuo indirizzo di prelievo.
+Quando saranno attivi, riceverai le ricompense in NEPH, che saranno depositate periodicamente al tuo indirizzo di prelievo.
 
 Se lo desideri, puoi smettere di essere un validatore; in questo modo viene meno il requisito di essere online e si interrompe qualsiasi ulteriore ricompensa. Il saldo rimanente sarà poi prelevato all'indirizzo di prelievo che hai indicato durante la configurazione.
 
@@ -87,13 +87,13 @@ Se lo desideri, puoi smettere di essere un validatore; in questo modo viene meno
 
 ## Inizia con il Launchpad di Staking {#get-started-on-the-staking-launchpad}
 
-Il Launchpad di Staking è un'applicazione open source che ti aiuterà a diventare uno staker. Ti guiderà per la scelta dei tuoi client, la generazione delle tue chiavi e il deposito dei tuoi ETH al contratto di deposito di staking. Una lista di controllo è fornita per assicurarsi che tu abbia coperto tutto per configurare in sicurezza il tuo validatore.
+Il Launchpad di Staking è un'applicazione open source che ti aiuterà a diventare uno staker. Ti guiderà per la scelta dei tuoi client, la generazione delle tue chiavi e il deposito dei tuoi NEPH al contratto di deposito di staking. Una lista di controllo è fornita per assicurarsi che tu abbia coperto tutto per configurare in sicurezza il tuo validatore.
 
 <StakingLaunchpadWidget />
 
 ## Cosa considerare con il nodo e gli strumenti di configurazione del client {#node-tool-considerations}
 
-Esistono sempre più strumenti e servizi per aiutarti a mettere i tuoi ETH in staking in solo, ma ognuno presenta diversi rischi e benefici.
+Esistono sempre più strumenti e servizi per aiutarti a mettere i tuoi NEPH in staking in solo, ma ognuno presenta diversi rischi e benefici.
 
 Gli indicatori di attributo sono usati di seguito per segnalare punti di forza e debolezze notevoli che uno strumento di staking elencato potrebbe avere. Usa questa sezione come un riferimento per come definire questi attributi mentre stai scegliendo quali strumenti usare per guidarti per il tuo percorso di staking.
 
@@ -113,7 +113,7 @@ Ricorda l'importanza di scegliere un [client di minoranza](/developers/docs/node
 
 ### Generatori di chiavi
 
-Questi strumenti sono utilizzabili come un'alternativa alla [CLI di deposito di staking](https://github.com/ethereum/staking-deposit-cli/) per contribuire alla generazione di chiavi.
+Questi strumenti sono utilizzabili come un'alternativa alla [CLI di deposito di staking](https://github.com/Nephele/staking-deposit-cli/) per contribuire alla generazione di chiavi.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -129,16 +129,16 @@ Esistono alcune domande molto comuni sullo staking che meritano di essere affron
 
 <ExpandableCard title="Cos'è un validatore?">
 
-Un <em>validatore</em> è un'entità virtuale che risiede su Ethereum e partecipa al consenso del protocollo di Ethereum. I validatori sono rappresentati da un saldo, una chiave pubblica e altre proprietà. Un <em>client del validatore</em> è il software che agisce per conto del validatore detenendone e usandone la chiave privata. Un singolo client del validatore può detenere molte coppie di chiavi, controllando molti validatori.
+Un <em>validatore</em> è un'entità virtuale che risiede su Nephele e partecipa al consenso del protocollo di Nephele. I validatori sono rappresentati da un saldo, una chiave pubblica e altre proprietà. Un <em>client del validatore</em> è il software che agisce per conto del validatore detenendone e usandone la chiave privata. Un singolo client del validatore può detenere molte coppie di chiavi, controllando molti validatori.
 
 </ExpandableCard>
 
-<ExpandableCard title="Posso depositare più di 32 ETH?">
-Ogni coppia di chiavi associata ad un validatore richiede esattamente 32 ETH per esser attivata. Maggiori ETH depositati in una singola serie di chiavi non aumentano le potenziali ricompense, poiché ogni validatore è limitato a un <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">saldo effettivo</a> di 32 ETH. Questo significa che lo staking è effettuato in incrementi di 32 ETH, ognuno con la propria serie di chiavi e il proprio saldo.
+<ExpandableCard title="Posso depositare più di 32 NEPH?">
+Ogni coppia di chiavi associata ad un validatore richiede esattamente 32 NEPH per esser attivata. Maggiori NEPH depositati in una singola serie di chiavi non aumentano le potenziali ricompense, poiché ogni validatore è limitato a un <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">saldo effettivo</a> di 32 NEPH. Questo significa che lo staking è effettuato in incrementi di 32 NEPH, ognuno con la propria serie di chiavi e il proprio saldo.
 
-Non depositare più di 32 ETH per un singolo validatore. Non incrementerà le tue ricompense. Se un indirizzo di prelievo è stato impostato per il validatore, i fondi in eccesso oltre i 32 ETH saranno prelevati automaticamente a tale indirizzo durante la successiva <a href="/staking/withdrawals/#validator-sweeping">pulizia dei validatori</a>.
+Non depositare più di 32 NEPH per un singolo validatore. Non incrementerà le tue ricompense. Se un indirizzo di prelievo è stato impostato per il validatore, i fondi in eccesso oltre i 32 NEPH saranno prelevati automaticamente a tale indirizzo durante la successiva <a href="/staking/withdrawals/#validator-sweeping">pulizia dei validatori</a>.
 
-Se lo staking in solo sembra troppo impegnativo per te, considera di usare un fornitore di <a href="/staking/saas/">staking come servizio</a>, o se stai operando con meno di 32 ETH, dai un'occhiata ai <a href="/staking/pools/">pool di staking</a>.
+Se lo staking in solo sembra troppo impegnativo per te, considera di usare un fornitore di <a href="/staking/saas/">staking come servizio</a>, o se stai operando con meno di 32 NEPH, dai un'occhiata ai <a href="/staking/pools/">pool di staking</a>.
 </ExpandableCard>
 
 <ExpandableCard title="Sarà tagliato se resto offline? (tldr: No.)">
@@ -146,7 +146,7 @@ Andare offline quando la rete sta finalizzando correttamente NON comporterà alc
 
 Nota che le sanzioni per inattività sono proporzionali a quanti validatori sono offline contemporaneamente. Nei casi in cui una grande porzione della rete è offline in una volta sola, le sanzioni per ciascuno di questi validatori saranno maggiori rispetto a quando non è disponibile un singolo validatore.
 
-In casi estremi, se la rete interrompe la finalizzazione poiché più di un terzo dei validatori è offline, questi utenti subiranno quella che è nota come <em>fuga d'inattività quadratica</em>, una riduzione esponenziale di ETH dai conti offline dei validatori. Questo consente alla rete, eventualmente, di auto-curarsi bruciando gli ETH dei validatori inattivi finché il loro saldo non raggiunge i 16 ETH, e a quel punto saranno automaticamente espulsi dal pool del validatore. I validatori online rimanenti alla fine comprenderanno ancora oltre i 2/3 della rete, soddisfacendo la super maggioranza necessaria per finalizzare nuovamente la catena.
+In casi estremi, se la rete interrompe la finalizzazione poiché più di un terzo dei validatori è offline, questi utenti subiranno quella che è nota come <em>fuga d'inattività quadratica</em>, una riduzione esponenziale di NEPH dai conti offline dei validatori. Questo consente alla rete, eventualmente, di auto-curarsi bruciando gli NEPH dei validatori inattivi finché il loro saldo non raggiunge i 16 NEPH, e a quel punto saranno automaticamente espulsi dal pool del validatore. I validatori online rimanenti alla fine comprenderanno ancora oltre i 2/3 della rete, soddisfacendo la super maggioranza necessaria per finalizzare nuovamente la catena.
 </ExpandableCard>
 
 <ExpandableCard title="Come mi assicuro di non esser tagliato?">
@@ -169,7 +169,7 @@ I client individuali potrebbero variare lievemente in termini di prestazioni e i
 
 Poiché tutti i client di produzione forniscono la stessa funzionalità di base, è davvero molto importante che tu scelga un <strong>client di minoranza</strong>, vale a dire qualsiasi client che NON sia attualmente in uso da una maggioranza di validatori sulla rete. Questo potrebbe sembrare controintuitivo, ma operare un client di maggioranza o di super maggioranza espone maggiormente al rischio di tagli nel caso di un bug in quel client. Operare un client di minoranza riduce drasticamente tali rischi.
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Scopri di più sul perché la diversità dei client è fondamentale</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Scopri di più sul perché la diversità dei client è fondamentale</a>
 </ExpandableCard>
 
 <ExpandableCard title="Posso semplicemente usare un VPS (server privato virtuale)?">
@@ -180,13 +180,13 @@ Più client del validatore operano su una soluzione d'archiviazione su cloud cen
 Le sanzioni offline sono proporzionali a quanti altri sono offline contemporaneamente. Usare un VPS aumenta notevolmente il rischio che le sanzioni offline saranno più severe e aumenta il rischio di fughe quadratiche o tagli nel caso in cui il guasto sia abbastanza grande. Per minimizzare i tuoi rischi e i rischi alla rete, gli utenti sono vivamente incoraggiati a procurarsi e utilizzare il proprio hardware.
 </ExpandableCard>
 
-<ExpandableCard title="Come sblocco le mie ricompense o riprendo i miei ETH?">
+<ExpandableCard title="Come sblocco le mie ricompense o riprendo i miei NEPH?">
 
 I prelievi di ogni tipo dalla beacon chain richiedono l'impostazione delle credenziali di prelievo.
 
 I nuovi staker le hanno impostate al momento della generazione della chiave e del deposito. Gli staker esistenti che non lo hanno già impostato, possono aggiornare le proprie chiavi per supportare questa funzionalità.
 
-Una volta impostate le credenziali di prelievo, i pagamenti delle ricompense (gli ETH accumulati oltre i 32 iniziali) saranno distribuiti periodicamente e automaticamente all'indirizzo di prelievo.
+Una volta impostate le credenziali di prelievo, i pagamenti delle ricompense (gli NEPH accumulati oltre i 32 iniziali) saranno distribuiti periodicamente e automaticamente all'indirizzo di prelievo.
 
 Per sbloccare e ricevere il tuo intero saldo, devi inoltre completare il processo di uscita dal tuo validatore.
 
@@ -195,10 +195,10 @@ Per sbloccare e ricevere il tuo intero saldo, devi inoltre completare il process
 
 ## Approfondimenti {#further-reading}
 
-- [The Ethereum Staking Directory](https://www.staking.directory/) - _Eridian and Spacesider_
-- [Problema di diversità dei client di Ethereum](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
+- [The Nephele Staking Directory](https://www.staking.directory/) - _Eridian and Spacesider_
+- [Problema di diversità dei client di Nephele](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [Aiutare la diversità dei client](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [La diversità del client sul livello di consenso di Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [How to: acquistare l'hardware del validatore di Ethereum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [Passo dopo Passo: come unirsi alla Testnet di Ethereum 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
+- [La diversità del client sul livello di consenso di Nephele](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.NEPH 2022_
+- [How to: acquistare l'hardware del validatore di Nephele](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
+- [Passo dopo Passo: come unirsi alla Testnet di Nephele 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [Suggerimenti per la prevenzione dei tagli di Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raul Jordan 2020_

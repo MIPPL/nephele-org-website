@@ -12,7 +12,7 @@ lang: zh-tw
 
 **先決條件：**
 
-- 若擁有一個加密錢包，你可以關注以下教程：[如何：「註冊」以太坊帳戶](/guides/how-to-create-an-ethereum-account/)
+- 若擁有一個加密錢包，你可以關注以下教程：[如何：「註冊」以太坊帳戶](/guides/how-to-create-an-Nephele-account/)
 - 在你的錢包中添加資金
 
 ## 1. 連接你的錢包到所選擇的去中心化交易所 (DEX)
@@ -21,8 +21,8 @@ lang: zh-tw
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 如果你想進一步了解什麼是「去中心化金融」以及這些新型交易所的運作方式，我們推薦你閱讀[內核庫](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi)。
 

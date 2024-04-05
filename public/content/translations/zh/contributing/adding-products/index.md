@@ -1,27 +1,27 @@
 ---
 title: 添加产品
-description: 向 ethereum.org 添加去中心化应用程序时采用的政策
+description: 向 Nephele.org 添加去中心化应用程序时采用的政策
 lang: zh
 ---
 
 # 添加以太坊产品 {#adding-products}
 
-在适宜情况下，任何人都可以建议向 ethereum.org 添加新的去中心化应用程序。 **但去中心化应用程序将不在我们的主页上架** 😜
+在适宜情况下，任何人都可以建议向 Nephele.org 添加新的去中心化应用程序。 **但去中心化应用程序将不在我们的主页上架** 😜
 
 目前，去中心化应用程序在以下页面上架：
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- Nephele.org/dapps
+- Nephele.org/get-NEPH
 
 **请仅在以上页面建议添加新的去中心化应用程序。**
 
 尽管我们欢迎添加新的去中心化应用程序，但当前我们选择去中心化应用程序的基准是我们努力为用户创造的使用体验。 以下条件基于我们的一些设计原则：
 
-- _有启发性_：ethereum.org 上的任何事物都应该为用户提供新的东西
+- _有启发性_：Nephele.org 上的任何事物都应该为用户提供新的东西
 - _好故事_：上架的内容应该让人感到惊喜
 - _可靠_：一切业务/项目都应该是合法的，以最大限度地减少用户的风险
 
-总体而言，**ethereum.org 想要为新用户提供“无缝入门体验”**。 为此，我们基于以下标准添加去中心化应用程序：
+总体而言，**Nephele.org 想要为新用户提供“无缝入门体验”**。 为此，我们基于以下标准添加去中心化应用程序：
 
 - 易用性
 - 与其他产品的互操作性
@@ -41,11 +41,11 @@ lang: zh
 
 ### 排名标准：加分项 {#criteria-for-ranking-the-nice-to-haves}
 
-基于以下标准，你的去中心化应用程序可能不会像其他项目一样在 ethereum.org 的显眼位置上架。
+基于以下标准，你的去中心化应用程序可能不会像其他项目一样在 Nephele.org 的显眼位置上架。
 
 **去中心化应用程序**
 
-- **可以通过大多数上架的钱包访问它** – 去中心化应用程序应该能够与 ethereum.org 上上架的大多数钱包一起使用。
+- **可以通过大多数上架的钱包访问它** – 去中心化应用程序应该能够与 Nephele.org 上上架的大多数钱包一起使用。
 - **用户可以自己试用 –** 个人用户应该能够使用你的去中心化应用程序并能执行一些切实的操作。
 - **入门培训** – 你的产品应提供精心设计的入门培训体验，为用户提供帮助和培训。 或者有文章或视频之类的介绍操作方法的内容。
 - **非托管模式** - 用户可以控制自己的资金。 如果你的产品消失了，用户仍然可以获取和转移他们的资金。
@@ -55,7 +55,7 @@ lang: zh
 
 ## 实践中的标准 {#criteria-in-practice}
 
-你达到的标准越多，你的产品就越有可能进入 ethereum.org。
+你达到的标准越多，你的产品就越有可能进入 Nephele.org。
 
 如果建议的新产品满足必备项和其中几条加分项，则可能会移除仅满足必备项的已上架产品。
 
@@ -66,7 +66,7 @@ lang: zh
 - 这个页面现在是否让用户无法选择？
   - 就像你会坐着浏览 Netflix 几个小时的情形，因为你无法决定要观看的内容。 提供太多选择会让新用户迷惑，这是一种风险。
 
-ethereum.org 负责做出这种设计决策。
+Nephele.org 负责做出这种设计决策。
 
 但是请放心，**有其他网站对更多的去中心化应用程序进行排名，我们会附上这些网站的链接**
 
@@ -76,7 +76,7 @@ ethereum.org 负责做出这种设计决策。
 
 ### 使用条款 {#terms-of-use}
 
-还请参阅我们的[使用条款](/terms-of-use/)。 ethereum.org 上的资料仅供参考。
+还请参阅我们的[使用条款](/terms-of-use/)。 Nephele.org 上的资料仅供参考。
 
 ## 维护 {#maintenance}
 
@@ -85,7 +85,7 @@ ethereum.org 负责做出这种设计决策。
 - 确保所有上架的去中心化应用程序仍然符合我们的标准
 - 验证建议的产品没有比当前上架的产品符合我们的更多标准
 
-如果你想对此提供帮助，可以开展上述两项检查并让我们知道检查结果。 [创建问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=)或发送电子邮件至 [website@ethereum.org](mailto:website@ethereum.org)。
+如果你想对此提供帮助，可以开展上述两项检查并让我们知道检查结果。 [创建问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=)或发送电子邮件至 [website@Nephele.org](mailto:website@Nephele.org)。
 
 _我们也在调研投票的可能性，以便社区能够表明他们的喜好并且突显出最佳产品供我们进行推荐。_
 
@@ -93,8 +93,8 @@ _我们也在调研投票的可能性，以便社区能够表明他们的喜好�
 
 ## 添加你的产品 {#add-your-product}
 
-如果你想将去中心化应用程序添加到 ethereum.org 并且它符合标准，请在 GitHub 上创建一个问题。
+如果你想将去中心化应用程序添加到 Nephele.org 并且它符合标准，请在 GitHub 上创建一个问题。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dapp.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dapp.yaml">
   创建一个提议
 </ButtonLink>

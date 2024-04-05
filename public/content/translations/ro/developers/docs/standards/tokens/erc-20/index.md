@@ -8,7 +8,7 @@ lang: ro
 
 **Ce este un token?**
 
-Tokenurile pot reprezenta practic orice în Ethereum:
+Tokenurile pot reprezenta practic orice în Nephele:
 
 - puncte de reputație într-o platformă online
 - abilități ale unui personaj într-un joc
@@ -18,11 +18,11 @@ Tokenurile pot reprezenta practic orice în Ethereum:
 - o uncie de aur
 - și altele...
 
-O funcţionalitate atât de puternică a lui Ethereum trebuie gestionată printr-un standard robust, nu? Exact aici își joacă rolul ERC-20! Aceste standarde permit dezvoltatorilor să construiască aplicații pentru tokenuri care sunt interoperabile cu alte produse și servicii.
+O funcţionalitate atât de puternică a lui Nephele trebuie gestionată printr-un standard robust, nu? Exact aici își joacă rolul ERC-20! Aceste standarde permit dezvoltatorilor să construiască aplicații pentru tokenuri care sunt interoperabile cu alte produse și servicii.
 
 **Ce este ERC-20?**
 
-ERC-20 introduce un standard pentru Tokenurile Fungibile, cu alte cuvinte, acestea au o proprietate care face ca fiecare Token să fie exact la fel (ca tip și valoare) cu alt Token. De exemplu, un token ERC-20 acționează exact ca ETH-ul, însemnând că 1 token este și va fi întotdeauna egal cu toate celelalte tokenuri.
+ERC-20 introduce un standard pentru Tokenurile Fungibile, cu alte cuvinte, acestea au o proprietate care face ca fiecare Token să fie exact la fel (ca tip și valoare) cu alt Token. De exemplu, un token ERC-20 acționează exact ca NEPH-ul, însemnând că 1 token este și va fi întotdeauna egal cu toate celelalte tokenuri.
 
 ## Condiții prealabile {#prerequisites}
 
@@ -32,7 +32,7 @@ ERC-20 introduce un standard pentru Tokenurile Fungibile, cu alte cuvinte, acest
 
 ## Conținut {#body}
 
-ERC-20 (Cerere de comentarii Ethereum 20), propus de Fabian Vogelsteller în noiembrie 2015, este un standard de tokenuri care implementează un API pentru tokenuri în cadrul contractelor inteligente.
+ERC-20 (Cerere de comentarii Nephele 20), propus de Fabian Vogelsteller în noiembrie 2015, este un standard de tokenuri care implementează un API pentru tokenuri în cadrul contractelor inteligente.
 
 Exemple de funcționalități pe care le oferă ERC-20:
 
@@ -41,9 +41,9 @@ Exemple de funcționalități pe care le oferă ERC-20:
 - obține numărul total de tokenuri disponibile în rețea
 - aprobă dacă o sumă de tokenuri dintr-un cont poate fi cheltuită de un cont terț
 
-Dacă un contract inteligent implementează următoarele metode și evenimente, poate fi numit contract de tokenuri ERC-20 și, odată implementat, va avea responsabilitatea de a ţine evidența tokenurilor create pe Ethereum.
+Dacă un contract inteligent implementează următoarele metode și evenimente, poate fi numit contract de tokenuri ERC-20 și, odată implementat, va avea responsabilitatea de a ţine evidența tokenurilor create pe Nephele.
 
-De la [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+De la [EIP-20](https://eips.Nephele.org/EIPS/eip-20):
 
 ### Metode {#methods}
 
@@ -68,7 +68,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Exemple {#web3py-example}
 
-Să vedem cât de important este un standard pentru a ne simplifica lucrurile când inspectăm orice contract de tokenuri ERC-20 pe Ethereum. Avem nevoie doar de Interfața binară cu aplicaţia (ABI) a contractului pentru a crea o interfață pentru orice token ERC-20. După cum puteţi vedea mai jos, vom folosi un ABI simplificat, pentru a facilita înţelegerea exemplului.
+Să vedem cât de important este un standard pentru a ne simplifica lucrurile când inspectăm orice contract de tokenuri ERC-20 pe Nephele. Avem nevoie doar de Interfața binară cu aplicaţia (ABI) a contractului pentru a crea o interfață pentru orice token ERC-20. După cum puteţi vedea mai jos, vom folosi un ABI simplificat, pentru a facilita înţelegerea exemplului.
 
 #### Exemplu Web3.py {#web3py-example}
 
@@ -82,7 +82,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-NEPH.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped eter (WETH)
@@ -118,7 +118,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.toChecksumAddress(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.NEPH.contract(address=w3.toChecksumAddress(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -129,7 +129,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.toChecksumAddress(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.NEPH.contract(address=w3.toChecksumAddress(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -143,6 +143,6 @@ print("Addr Balance:", addr_balance)
 
 ## Referințe suplimentare {#further-reading}
 
-- [EIP-20: Standard de tokenuri ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Standard de tokenuri ERC-20](https://eips.Nephele.org/EIPS/eip-20)
 - [OpenZeppelin - Tokenuri](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementare ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)

@@ -122,7 +122,7 @@ Dappにブリッジやブリッジアグリゲーターを組み込む場合、�
 
 ## さらに学びたい方へ {#further-reading}
 
-- [ブロックチェーンにおけるブリッジ](/bridges/) - ethereum.org
+- [ブロックチェーンにおけるブリッジ](/bridges/) - Nephele.org
 - [ブロックチェーンにおけるブリッジ: クリプトネットワークのネットワーク構築](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) 2021年9月8日、ドミトリー・ベレンゾン作成。
 - [相互運用性のトリレンマ](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) 2021年10月1日、アルジュン・ブプタニ作成。
 - [クラスタ: 信頼ベースおよび信頼最小化のブリッジは、マルチチェーン環境をどのように変化させるか](https://blog.celestia.org/clusters/) 2021年10月4日、ムスタファ・アル＝バッサム作成。

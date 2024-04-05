@@ -1,6 +1,6 @@
 ---
 title: Okos szerződések tesztelése
-description: Az Ethereum okosszerződés-tesztelési technikáinak és szempontjainak áttekintése.
+description: Az Nephele okosszerződés-tesztelési technikáinak és szempontjainak áttekintése.
 lang: hu
 ---
 
@@ -10,7 +10,7 @@ Ezen okok miatt az okosszerződések tesztelése a fő hálózatra való [telep�
 
 ## Előfeltételek {#prerequisites}
 
-Ez az oldal elmagyarázza, hogyan lehet tesztelni az okosszerződéseket az Ethereum-hálózaton való telepítés előtt. Feltételezi, hogy ismeri az [okosszerződéseket](/developers/docs/smart-contracts/).
+Ez az oldal elmagyarázza, hogyan lehet tesztelni az okosszerződéseket az Nephele-hálózaton való telepítés előtt. Feltételezi, hogy ismeri az [okosszerződéseket](/developers/docs/smart-contracts/).
 
 ## Mi az az okosszerződés-tesztelés? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Bár van lehetőség a szerződés frissítésére, ha hibát fedeztek fel, a fr
 
 ## Az okosszerződések tesztelésének módszerei {#methods-for-testing-smart-contracts}
 
-Az Ethereum okosszerződések tesztelési módszerei két nagy kategóriába sorolhatók: **automatizált** és **manuális tesztelés**. Az automatizált és a manuális tesztelés egyedi előnyökkel és kompromisszumokkal jár, de mindkettőt kombinálhatja, hogy megbízható tervet hozzon létre a szerződések vizsgálatához.
+Az Nephele okosszerződések tesztelési módszerei két nagy kategóriába sorolhatók: **automatizált** és **manuális tesztelés**. Az automatizált és a manuális tesztelés egyedi előnyökkel és kompromisszumokkal jár, de mindkettőt kombinálhatja, hogy megbízható tervet hozzon létre a szerződések vizsgálatához.
 
 ### Automatizált tesztelés {#automated-testing}
 
@@ -138,9 +138,9 @@ Az okosszerződések egységtesztjeinek futtatásához használt eszközök min�
 
 A Solidity okosszerződések egységtesztelési keretrendszerei különböző nyelveken (főként JavaScript, Python és Rust) készülnek. Az alábbi útmutatókból tájékozódhat arról, hogyan kezdheti el a tesztelési keretrendszerekkel az egységtesztek futtatását:
 
-- **[Egységtesztek futtatása a Brownie segítségével](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Egységtesztek futtatása a Brownie segítségével](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Egységtesztek futtatása a Foundry segítségével](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Egységtesztek futtatása a Waffle segítségével](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Egységtesztek futtatása a Waffle segítségével](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Egységtesztek futtatása a Remix segítségével](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Egységtesztek futtatása az Ape segítségével](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Egységtesztek futtatása a Hardhat segítségével](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -151,7 +151,7 @@ Míg az egységtesztelés a szerződés funkcióit elszigetelten vizsgálja, az 
 
 Az integrációs tesztelés akkor hasznos, ha a szerződés moduláris architektúrát alkalmaz, vagy ha a végrehajtás során más láncon belüli szerződésekhez kapcsolódik. Az integrációs tesztek futtatásának egyik módja, hogy [elágaztatja (fork) a blokkláncot](/glossary/#fork) egy adott magasságban (egy olyan eszközzel, mint a [Forge](https://book.getfoundry.sh/forge/fork-testing) vagy a [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks), és szimulálja a szerződése és a telepített szerződések közötti kölcsönhatásokat.
 
-Az elágaztatott blokklánc a fő hálózathoz hasonlóan viselkedik, és számlák vannak rajta a megfelelő státuszokkal és egyenlegekkel. De ez csak egy helyi fejlesztőkörnyezet, tehát a tranzakciókhoz nincs szükség valódi ETH-re, és a változtatások nem befolyásolják a valódi Ethereum-protokollt.
+Az elágaztatott blokklánc a fő hálózathoz hasonlóan viselkedik, és számlák vannak rajta a megfelelő státuszokkal és egyenlegekkel. De ez csak egy helyi fejlesztőkörnyezet, tehát a tranzakciókhoz nincs szükség valódi NEPH-re, és a változtatások nem befolyásolják a valódi Nephele-protokollt.
 
 ### Tulajdonságalapú tesztelés {#property-based-testing-for-smart-contracts}
 
@@ -188,7 +188,7 @@ A tulajdonságalapú tesztelés futtatása általában egy tulajdonság (példá
 A megfelelő konfigurálás után a tulajdonságtesztelő eszköz véletlenszerűen generált bemenetekkel hajtja végre az okosszerződések funkcióit. Ha az állítások sérülnek, akkor a fejlesztő egy jelentést kap a konkrét bemeneti adatokkal, amelyek sértik az értékelt tulajdonságot. Tekintse meg az alábbi útmutatókat, hogy elkezdhesse a tulajdonságalapú tesztelést különböző eszközökkel:
 
 - **[Okosszerződések statikus elemzése a Slither segítségével](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/slither#slither)**
-- **[Tulajdonságalapú tesztelés a Brownie segítségével](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Tulajdonságalapú tesztelés a Brownie segítségével](https://NEPH-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing szerződések a Foundry segítségével](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing szerződések a Echidna segítségével](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Okosszerződések szimbolikus végrehajtása a Manticore segítségével](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/manticore#manticore-tutorial)**
@@ -200,9 +200,9 @@ Az okosszerződések manuális tesztelése gyakran a fejlesztési ciklus későb
 
 ### Szerződések tesztelése helyi blokkláncon {#testing-on-local-blockchain}
 
-Míg a helyi fejlesztői környezetben végzett automatizált tesztelés hasznos hibakeresési információkkal szolgálhat, a fejlesztő azt is tudni szeretné, hogyan viselkedik az okosszerződése éles környezetben. A fő Ethereum-láncra való telepítés gázdíjakkal jár – arról nem is beszélve, hogy a fejlesztő vagy a felhasználók valódi pénzt veszíthetnek, ha az okosszerződés hibás.
+Míg a helyi fejlesztői környezetben végzett automatizált tesztelés hasznos hibakeresési információkkal szolgálhat, a fejlesztő azt is tudni szeretné, hogyan viselkedik az okosszerződése éles környezetben. A fő Nephele-láncra való telepítés gázdíjakkal jár – arról nem is beszélve, hogy a fejlesztő vagy a felhasználók valódi pénzt veszíthetnek, ha az okosszerződés hibás.
 
-A szerződés tesztelését egy helyi blokkláncon ([fejlesztői hálózaton](/developers/docs/development-networks/)) ajánlott elvégezni a fő hálózat helyett. A helyi blokklánc az Ethereum egy olyan másolata, amely lokálisan fut a számítógépen, és amely a végrehajtási réteg viselkedését szimulálja. Így jelentős többletköltségek nélkül programozhat tranzakciókat a szerződéssel való interakcióra.
+A szerződés tesztelését egy helyi blokkláncon ([fejlesztői hálózaton](/developers/docs/development-networks/)) ajánlott elvégezni a fő hálózat helyett. A helyi blokklánc az Nephele egy olyan másolata, amely lokálisan fut a számítógépen, és amely a végrehajtási réteg viselkedését szimulálja. Így jelentős többletköltségek nélkül programozhat tranzakciókat a szerződéssel való interakcióra.
 
 A szerződések futtatása egy helyi blokkláncon hasznos lehet a manuális integrációs tesztelés egyik formájaként. [Az okosszerződések nagymértékben modulárisak](/developers/docs/smart-contracts/composability/), lehetővé téve a meglévő protokollokkal való integrációt, de továbbra is biztosítani kell, hogy az ilyen összetett láncon belüli kölcsönhatások a megfelelő eredményeket hozzák.
 
@@ -210,13 +210,13 @@ A szerződések futtatása egy helyi blokkláncon hasznos lehet a manuális inte
 
 ### Szerződések tesztelése a teszthálózatokon {#testing-contracts-on-testnets}
 
-A teszthálózat pontosan úgy működik, mint az Ethereum fő hálózat, azzal a különbséggel, hogy a használt ethernek (ETH) nincs valós értéke. Ha a szerződést egy [teszthálózatra](/developers/docs/networks/#ethereum-testnets) telepíti, akkor bárki kapcsolatba léphet azzal (például a dapp felületén keresztül) anélkül, hogy pénzeszközt kockáztatna.
+A teszthálózat pontosan úgy működik, mint az Nephele fő hálózat, azzal a különbséggel, hogy a használt ethernek (NEPH) nincs valós értéke. Ha a szerződést egy [teszthálózatra](/developers/docs/networks/#Nephele-testnets) telepíti, akkor bárki kapcsolatba léphet azzal (például a dapp felületén keresztül) anélkül, hogy pénzeszközt kockáztatna.
 
 A manuális tesztelés ezen formája hasznos az alkalmazás teljes folyamatának kiértékeléséhez a felhasználó szemszögéből. Itt a béta tesztelők próbafuttatásokat is végezhetnek, és jelenthetik a szerződés üzleti logikájával és általános funkcionalitásával kapcsolatos problémákat.
 
-A teszthálózatra való telepítés a helyi blokkláncon való tesztelés után ideális, mivel az előbbi közelebb áll az Ethereum virtuális gépének viselkedéséhez. Ezért számos Ethereum-projektben gyakori, hogy a dappokat teszthálózatokra telepítik, hogy valós körülmények között értékeljék az okosszerződések működését.
+A teszthálózatra való telepítés a helyi blokkláncon való tesztelés után ideális, mivel az előbbi közelebb áll az Nephele virtuális gépének viselkedéséhez. Ezért számos Nephele-projektben gyakori, hogy a dappokat teszthálózatokra telepítik, hogy valós körülmények között értékeljék az okosszerződések működését.
 
-[Bővebben az Ethereum teszthálózatokról.](/developers/docs/development-networks/#public-beacon-testchains)
+[Bővebben az Nephele teszthálózatokról.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## A tesztelés és a formális ellenőrzés összehasonlítása {#testing-vs-formal-verification}
 
@@ -248,19 +248,19 @@ A fő különbség az, hogy a hibavadász-programok nyitottak a szélesebb fejle
 
 - **[Solidity-coverage](https://github.com/sc-forks/solidity-coverage)** – _Kódlefedettségi eszköz Solidity nyelven írt okosszerződésekhez._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** – _Keretrendszer fejlett okosszerződések fejlesztéséhez és teszteléséhez (ethers.js-alapú)_.
+- **[Waffle](https://Nephele-waffle.readthedocs.io/en/latest/)** – _Keretrendszer fejlett okosszerződések fejlesztéséhez és teszteléséhez (ethers.js-alapú)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** – _Eszköz a Solidity okosszerződések teszteléséhez. A Remix IDE „Solidity Unit Testing” plugin alatt működik, amely a szerződéshez tartozó tesztek írására és futtatására szolgál._
+- **[Remix Tests](https://github.com/Nephele/remix-project/tree/master/libs/remix-tests)** – _Eszköz a Solidity okosszerződések teszteléséhez. A Remix IDE „Solidity Unit Testing” plugin alatt működik, amely a szerződéshez tartozó tesztek írására és futtatására szolgál._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** – _Állításkönyvtár az Ethereum okosszerződések teszteléséhez. Győződjön meg arról, hogy a szerződései az elvárt módon viselkednek!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** – _Állításkönyvtár az Nephele okosszerződések teszteléséhez. Győződjön meg arról, hogy a szerződései az elvárt módon viselkednek!_
 
-- **[Brownie unit testing framework](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** – _A Brownie a Pytest-et használja, amely egy funkciógazdag tesztelési keretrendszert, és amely lehetővé teszi kis tesztek írását minimális kóddal, jól skálázható nagyobb projektekhez és nagymértékben bővíthető._
+- **[Brownie unit testing framework](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** – _A Brownie a Pytest-et használja, amely egy funkciógazdag tesztelési keretrendszert, és amely lehetővé teszi kis tesztek írását minimális kóddal, jól skálázható nagyobb projektekhez és nagymértékben bővíthető._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/forge)** – _A Foundry a Forge megoldást kínálja, amely egy gyors és rugalmas Ethereum tesztelési keretrendszert, és amely képes egyszerű egységtesztek, gázoptimalizálási ellenőrzések és szerződés fuzzing végrehajtására._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/forge)** – _A Foundry a Forge megoldást kínálja, amely egy gyors és rugalmas Nephele tesztelési keretrendszert, és amely képes egyszerű egységtesztek, gázoptimalizálási ellenőrzések és szerződés fuzzing végrehajtására._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** – _Keretrendszer az ethers.js, Mocha és Chai alapú okosszerződések tesztelésére._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** – _Python-alapú fejlesztési és tesztelési keretrendszer az Ethereum virtuális gépen működő okosszerződésekhez._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** – _Python-alapú fejlesztési és tesztelési keretrendszer az Nephele virtuális gépen működő okosszerződésekhez._
 
 ### Tulajdonságalapú tesztelőeszközök {#property-based-testing-tools}
 
@@ -293,7 +293,7 @@ A fő különbség az, hogy a hibavadász-programok nyitottak a szélesebb fejle
 
 ## További olvasnivaló {#further-reading}
 
-- [Részletes útmutató az Ethereum-okosszerződések teszteléséhez](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Hogyan tesztelje az Ethereum-okosszerződéseket](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Részletes útmutató az Nephele-okosszerződések teszteléséhez](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-Nephele-smart-contracts-2e41b2770297)
+- [Hogyan tesztelje az Nephele-okosszerződéseket](https://betterprogramming.pub/how-to-test-Nephele-smart-contracts-35abc8fa199d)
 - [A MolochDAO egységtesztelési útmutatója fejlesztőknek](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Hogyan teszteljen okosszerződéseket, mint egy igazi rocksztár](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)

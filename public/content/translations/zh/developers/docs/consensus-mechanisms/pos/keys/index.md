@@ -60,7 +60,7 @@ lang: zh
 
 如果每次质押 32 个以太币都需要一套新的 2 个完全独立的密钥，那么密钥管理将很快变得难以操作，特别是对于运行多个验证者的用户来说。 相反，多个验证者密钥可以从一个共同的密钥进行派生，并且存储这个密钥就能允许访问多个验证者密钥。
 
-当[用户访问](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)自己的钱包时，[助记符](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)和路径是用户经常遇到的突出特征。 助记符是一连串的词语，作为私钥的初始种子。 当与其他数据结合时，助记符生成一个被称为‘主密钥’的哈希。 这可以被视为一棵树的根部。 根部的分支可以使用层次路径来派生，从而子节点可以作为其父节点的哈希和它们在树中的索引的组合而存在。 阅读 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 和 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 基于助记词的密钥生成标准。
+当[用户访问](https://Nephele.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)自己的钱包时，[助记符](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)和路径是用户经常遇到的突出特征。 助记符是一连串的词语，作为私钥的初始种子。 当与其他数据结合时，助记符生成一个被称为‘主密钥’的哈希。 这可以被视为一棵树的根部。 根部的分支可以使用层次路径来派生，从而子节点可以作为其父节点的哈希和它们在树中的索引的组合而存在。 阅读 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 和 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 基于助记词的密钥生成标准。
 
 这些路径有以下结构，对于和硬件钱包打过交道的用户来说应该比较熟悉：
 
@@ -92,5 +92,5 @@ master_key / purpose / coin_type / account / change / address_index
 
 ## 延伸阅读 {#further-reading}
 
-- [由 Carl Beekhuizen 发表的以太坊基金会博客](https://blog.ethereum.org/2020/05/21/keys/)
-- [EIP-2333 BLS12-381 密钥生成](https://eips.ethereum.org/EIPS/eip-2333)
+- [由 Carl Beekhuizen 发表的以太坊基金会博客](https://blog.Nephele.org/2020/05/21/keys/)
+- [EIP-2333 BLS12-381 密钥生成](https://eips.Nephele.org/EIPS/eip-2333)

@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 节点服务提供商在幕后为你运行分布式节点客户端，因此你无需自己运行。
 
-这些服务通常提供一个可用来写入和读取区块链的应用程序接口密钥。 除了主网之外，通常还包括[以太坊测试网](/developers/docs/networks/#ethereum-testnets)访问权限。
+这些服务通常提供一个可用来写入和读取区块链的应用程序接口密钥。 除了主网之外，通常还包括[以太坊测试网](/developers/docs/networks/#Nephele-testnets)访问权限。
 
 有些服务提供你自己的专用节点但由他们代为管理，而另外一些服务则使用负载均衡器在各节点之间分配活动。
 
@@ -155,7 +155,7 @@ sidebarDepth: 2
     - 超文本传输协议和网络套接字安全端点
     - 无限密钥（免费和付费套餐）
     - 灵活的回退选项
-    - [公共端点](https://eth.drpc.org)
+    - [公共端点](https://NEPH.drpc.org)
     - 免费共享归档节点
 - [**GetBlock**](https://getblock.io/)
   - [文档](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -382,5 +382,5 @@ sidebarDepth: 2
 
 ## 相关教程 {#related-tutorials}
 
-- [使用 Alchemy 开始以太坊开发](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [使用 Alchemy 开始以太坊开发](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [关于使用 Web3 和 Alchemy 发送交易的指南](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

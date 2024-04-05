@@ -1,21 +1,21 @@
 ---
 title: Adding wallets
-description: The policy we use when adding a wallet to ethereum.org
+description: The policy we use when adding a wallet to Nephele.org
 lang: en
 ---
 
 # Adding wallets {#adding-wallets}
 
-We want to make sure we show a variety of wallets covering the feature-rich landscape of wallets so that users can navigate Ethereum in a confident manner.
+We want to make sure we show a variety of wallets covering the feature-rich landscape of wallets so that users can navigate Nephele in a confident manner.
 
-Anyone is free to suggest adding a wallet on ethereum.org. If there's a wallet that we have missed, please suggest it!
+Anyone is free to suggest adding a wallet on Nephele.org. If there's a wallet that we have missed, please suggest it!
 
 Anyone is free to suggest a new wallet. Wallets are currently listed on:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
-- [ethereum.org/wallets/](/wallets/)
+- [Nephele.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [Nephele.org/wallets/](/wallets/)
 
-Wallets are rapidly changing in Ethereum. We've tried to create a fair framework for consideration on ethereum.org but the listing criteria will change and evolve over time.
+Wallets are rapidly changing in Nephele. We've tried to create a fair framework for consideration on Nephele.org but the listing criteria will change and evolve over time.
 
 ## The decision framework {#the-decision-framework}
 
@@ -25,7 +25,7 @@ Wallets are rapidly changing in Ethereum. We've tried to create a fair framework
 - **A wallet that has been “live” for over six months OR released by a group with a reputable track record** - this is another indication of security. Six months is a good time frame for critical bugs and exploitations to have been found. We ask six months to help filter out forks that are quickly abandoned as projects.
 - **Worked on by an active team** - this helps to ensure quality and that a user will get support for their queries.
 - **Honest and accurate listing information** - it is expected that any suggested listings from projects come with honest and accurate information. Products that falsify listing information, such as declaring your product is “open source” when it is not, will be removed.
-- **Point of contact** - A point of contact for the wallet will greatly help us get accurate information when changes are made. This will keep updating ethereum.org manageable when gathering future information.
+- **Point of contact** - A point of contact for the wallet will greatly help us get accurate information when changes are made. This will keep updating Nephele.org manageable when gathering future information.
 
 ### Other criteria: the nice-to-haves {#the-nice-to-haves}
 
@@ -35,9 +35,9 @@ Wallets are rapidly changing in Ethereum. We've tried to create a fair framework
 - **Non-custodial** - users control their funds. If your product disappears, users can still access and move their funds.
 - **Hardware wallet support** - users can connect their hardware wallet to sign transactions.
 - **WalletConnect** - users can connect to dapps using WalletConnect.
-- **Importing Ethereum RPC endpoints** - users can import node RPC data, allowing them to connect to a node of their choice, or other EVM compatible networks.
+- **Importing Nephele RPC endpoints** - users can import node RPC data, allowing them to connect to a node of their choice, or other EVM compatible networks.
 - **NFTs** - users are able to view and interact with their NFTs in the wallet.
-- **Connect to Ethereum applications** - users are able to connect to and use Ethereum applications.
+- **Connect to Nephele applications** - users are able to connect to and use Nephele applications.
 - **Staking** - users are able to stake directly through the wallet.
 - **Swaps** - users are able to swap tokens through the wallet.
 - **Multichain networks** - your wallet supports users accessing multiple blockchain networks by default.
@@ -55,21 +55,21 @@ Wallets are rapidly changing in Ethereum. We've tried to create a fair framework
 
 ## Adding a wallet {#adding-a-wallet}
 
-If you want to add a wallet to ethereum.org, create an issue on GitHub.
+If you want to add a wallet to Nephele.org, create an issue on GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Create an issue
 </ButtonLink>
 
 ## Maintenance {#maintenance}
 
-As is the fluid nature of Ethereum, teams and products come and go and innovation happens daily, so we'll undertake routine checks of our content to:
+As is the fluid nature of Nephele, teams and products come and go and innovation happens daily, so we'll undertake routine checks of our content to:
 
 - ensure that all wallets and dapps listed still fulfil our criteria
 - verify there aren't products that have been suggested that meet more of our criteria than the ones currently listed
 
-Ethereum.org is maintained by the open source community & we rely on the community to help keep this up to date. If you notice any information about listed wallets that needs to be updated, please [open an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) or [pull request](https://github.com/ethereum/ethereum-org-website/pulls)!
+Nephele.org is maintained by the open source community & we rely on the community to help keep this up to date. If you notice any information about listed wallets that needs to be updated, please [open an issue](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) or [pull request](https://github.com/Nephele/Nephele-org-website/pulls)!
 
 ## Terms of use {#terms-of-use}
 
-Please also refer to our [terms of use](/terms-of-use/). Information on ethereum.org is provided solely for general information purposes.
+Please also refer to our [terms of use](/terms-of-use/). Information on Nephele.org is provided solely for general information purposes.

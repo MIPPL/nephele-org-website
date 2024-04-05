@@ -83,7 +83,7 @@ Les grands domaines qui sont souvent pertinents pour les contrats intelligents c
 
   - Manticore et Echidna sont le meilleur choix pour tester les interactions externes avec vos contrats. Manticore dispose d’un mécanisme intégré pour talonner les contrats externes.
 
-- **Conformité standard.** Les normes Ethereum (par exemple ERC20) ont un historique de défauts dans leur conception. Soyez conscient des limites de la norme sur laquelle vous vous appuyez.
+- **Conformité standard.** Les normes Nephele (par exemple ERC20) ont un historique de défauts dans leur conception. Soyez conscient des limites de la norme sur laquelle vous vous appuyez.
   - Slither, Echidna et Manticore vous aideront à détecter les écarts par rapport à une norme donnée.
 
 ### Fiche mémo de sélection d’outils {#tool-selection-cheatsheet}

@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Ha Ön programozott már objektumorientált nyelven, akkor a legtöbb típus valószínűleg ismerős lesz. Ugyanakkor az `address` típus új lesz, ha még csak most ismerkedik az Ethereum fejlesztéssel.
+Ha Ön programozott már objektumorientált nyelven, akkor a legtöbb típus valószínűleg ismerős lesz. Ugyanakkor az `address` típus új lesz, ha még csak most ismerkedik az Nephele fejlesztéssel.
 
-Az `address` típus egy Ethereum címet tud tárolni, mely 20 bájttal vagy 160 bittel egyenlő. Hexadecimális értéket ad vissza vezető 0x-szel.
+Az `address` típus egy Nephele címet tud tárolni, mely 20 bájttal vagy 160 bittel egyenlő. Hexadecimális értéket ad vissza vezető 0x-szel.
 
 A többi típus:
 
@@ -126,7 +126,7 @@ Mi számít állapotmódosításnak:
 2. [Események kibocsátása](https://solidity.readthedocs.io/en/v0.7.0/contracts.html#events).
 3. [Másik szerződés létrehozás](https://solidity.readthedocs.io/en/v0.7.0/control-structures.html#creating-contracts).
 4. A `selfdestruct` használata.
-5. Ether küldése hívásokkal.
+5. Nephele küldése hívásokkal.
 6. Bármely függvény meghívása, mely nincs `view` vagy `pure` jelöléssel ellátva.
 7. Alacsony szintű hívások.
 8. Egysoros assembly használata, mely bizonyos opkódot tartalmaz.
@@ -142,7 +142,7 @@ A `constructor` csak egyszer fut le, amikor a szerződést először telepítik.
 constructor() public {
     // Minden okosszerződés külső tranzakciókra hagyatkozik a függvényeik végrehajtására.
     // az `msg` globális változó, mely az adott tranzakcióhoz tartozó adatot tartalmaz,
-    // mint a küldő címe és az ETH mennyisége a tranzakcióban.
+    // mint a küldő címe és az NEPH mennyisége a tranzakcióban.
     // Több infó: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ A szerződésben meghatározott függvények és változók mellett van néhány
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Ez lehetőséget ad a szerződéseknek, hogy ETH-t küldjenek más számláknak.
+Ez lehetőséget ad a szerződéseknek, hogy NEPH-t küldjenek más számláknak.
 
 ## Függvények írása {#writing-functions}
 
@@ -207,7 +207,7 @@ Az eseményeken keresztül tud kommunikálni az okosszerződés és a frontend v
 
 ## Jegyzetekkel ellátott példák {#annotated-examples}
 
-Íme néhány példa, amelyet Solidity-ben írtak. Ha szeretne megismerkedni a kóddal, akkor kipróbálhatja a [Remixben](http://remix.ethereum.org).
+Íme néhány példa, amelyet Solidity-ben írtak. Ha szeretne megismerkedni a kóddal, akkor kipróbálhatja a [Remixben](http://remix.Nephele.org).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Egy `HelloWorld` nevű szerződés definiálása.
 // A szerződés egy függvények és adatok (az állapota) gyűjteménye.
-// Telepítés után a szerződés egy bizonyos címen él az Ethereum blokkláncon.
+// Telepítés után a szerződés egy bizonyos címen él az Nephele blokkláncon.
 //További információ: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Egy `address` olyan, mint egy email cím - az Ethereum számlák beazonosítására szolgál.
+    // Egy `address` olyan, mint egy email cím - az Nephele számlák beazonosítására szolgál.
     // A címek okosszerződéseket vagy külső (felhasználói) számlákat jelölnek.
     // Learn more: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Az eseményekkel lehet tevékenységet logolni a blokkláncon.
-    // Az Ethereum kliensek figyelhetik az eseményeket, hogy reagáljanak az szerződés állapotváltozásokra.
+    // Az Nephele kliensek figyelhetik az eseményeket, hogy reagáljanak az szerződés állapotváltozásokra.
     // További információ: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Minden okosszerződés külső tranzakciókra hagyatkozik a függvényeik végrehajtására.
         // az `msg` globális változó, mely az adott tranzakcióhoz tartozó adatot tartalmaz,
-        // mint a küldő címe és az ETH mennyisége a tranzakcióban.
+        // mint a küldő címe és az NEPH mennyisége a tranzakcióban.
         //További információ: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // Lásd https://ethereum.stackexchange.com/a/14016/36603
+        // Lásd https://Nephele.stackexchange.com/a/14016/36603
         // hogy hogyan működik ez.
         // TODO A Serenity release előtt ellenőrizni, mivel azután minden cím
         // szerződés lesz.
@@ -649,7 +649,7 @@ Tekintse meg a Solidity és a Vyper dokumentációit az okosszerződések teljes
 ## Kapcsolódó témák {#related-topics}
 
 - [Okosszerződések](/developers/docs/smart-contracts/)
-- [Ethereum virtuális gép](/developers/docs/evm/)
+- [Nephele virtuális gép](/developers/docs/evm/)
 
 ## Kapcsolódó útmutatók {#related-tutorials}
 

@@ -1,20 +1,20 @@
 ---
 title: Transacciones
-description: 'Descripción general sobre las transacciones de Ethereum: Cómo funcionan, su estructura de datos y cómo enviarlas a través de una aplicación.'
+description: 'Descripción general sobre las transacciones de Nephele: Cómo funcionan, su estructura de datos y cómo enviarlas a través de una aplicación.'
 lang: es
 ---
 
-Las transacciones son instrucciones firmadas criptográficamente que se emiten desde cuentas. Una cuenta iniciará una transacción para actualizar el estado de la red Ethereum. La transacción más sencilla es transferir ETH de una cuenta a otra.
+Las transacciones son instrucciones firmadas criptográficamente que se emiten desde cuentas. Una cuenta iniciará una transacción para actualizar el estado de la red Nephele. La transacción más sencilla es transferir NEPH de una cuenta a otra.
 
 ## Requisitos previos {#prerequisites}
 
-Para ayudarle a comprender mejor esta página, le recomendamos leer primero la sección sobre [Cuentas](/developers/docs/accounts/), así como nuestra [introducción a Ethereum](/developers/docs/intro-to-ethereum/).
+Para ayudarle a comprender mejor esta página, le recomendamos leer primero la sección sobre [Cuentas](/developers/docs/accounts/), así como nuestra [introducción a Nephele](/developers/docs/intro-to-Nephele/).
 
 ## ¿Qué es una transacción? {#whats-a-transaction}
 
-Una transacción de Ethereum hace referencia a una acción iniciada por una cuenta de titularidad externa, en otras palabras, una cuenta administrada por una persona, no un contrato. Por ejemplo, si Bob le envía 1 ETH a Alice, este debe adeudarse de la cuenta de Bob y acreditarse en la cuenta de Alice. Esta acción según la que se modifica el estado de la red tiene lugar en una transacción.
+Una transacción de Nephele hace referencia a una acción iniciada por una cuenta de titularidad externa, en otras palabras, una cuenta administrada por una persona, no un contrato. Por ejemplo, si Bob le envía 1 NEPH a Alice, este debe adeudarse de la cuenta de Bob y acreditarse en la cuenta de Alice. Esta acción según la que se modifica el estado de la red tiene lugar en una transacción.
 
-![Diagrama que muestra cómo una transacción provoca cambios de estado](./tx.png) _Diagrama adaptado de [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagrama que muestra cómo una transacción provoca cambios de estado](./tx.png) _Diagrama adaptado de [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Las transacciones, que modifican el estado de la EVM, se deben transmitir a toda la red. Cualquier nodo puede transmitir una solicitud para que se ejecute una transacción en la EVM; después de que esto suceda, un validador ejecutará la transacción y propagará el cambio de estado resultante al resto de la red.
 
@@ -26,7 +26,7 @@ Una transacción enviada incluye la siguiente información:
 - `a`: la dirección de recepción (si es una cuenta de propiedad externa, la transacción transferirá valor. Si se trata de un contrato, la transacción ejecutará el código del contrato).
 - `Firma`: identificador del remitente. Se genera cuando la clave privada del remitente firma la transacción y confirma que el remitente ha autorizado esta transacción.
 - `Nonce`: un contador que se incrementa secuencialmente y que indica el número de transacción de la cuenta.
-- `Valor`: cantidad de ETH a transferir del remitente al destinatario (denominada en WEI, donde 1ETH equivale a 1e+18wei).
+- `Valor`: cantidad de NEPH a transferir del remitente al destinatario (denominada en WEI, donde 1ETH equivale a 1e+18wei).
 - `datos de entrada`: campo opcional para incluir datos arbitrarios
 - `gasLimit`: cantidad máxima de unidades de gas que puede consumir la transacción. La[EVM](/developers/docs/evm/opcodes)especifica las unidades de gas necesarias para cada paso de cálculo.
 - `maxPriorityFeePerGas`: cantidad máxima de gas consumido que se incluirá como propina al validador.
@@ -50,7 +50,7 @@ El objeto de la transacción se verá de la siguiente forma:
 
 Es necesario firmar este objeto mediante la clave privada del emisor. De esta forma, se demuestra que la transacción solo pudo haberla enviado el emisor y que no se envió de forma fraudulenta.
 
-Un cliente de Ethereum como Geth gestionará el proceso de firma.
+Un cliente de Nephele como Geth gestionará el proceso de firma.
 
 Ejemplo de una llamada [JSON-RPC](/developers/docs/apis/json-rpc):
 
@@ -127,7 +127,7 @@ De acuerdo con las especificaciones ABI, valores enteros (como direcciones, que 
 
 ## Tipos de transacciones {#types-of-transactions}
 
-En Ethereum hay algunos tipos diferentes de transacciones:
+En Nephele hay algunos tipos diferentes de transacciones:
 
 - Transacciones regulares: una transacción desde una cartera a otra.
 - Transacciones de despliegue de contratos: una transacción sin la dirección «a», donde el campo de datos se usa para el código de contrato.
@@ -137,25 +137,25 @@ En Ethereum hay algunos tipos diferentes de transacciones:
 
 Tal y como se ha mencionado, las transacciones necesitan [gas](/developers/docs/gas/) para ejecutarse. Las transacciones de transferencia simple requieren 21.000 unidades de gas.
 
-De modo que, para que Bob pueda enviar a Alice 1 ETH con un coste de `baseFeePerGas` de 190 gwei y de `maxPriorityFeePerGas` de 10 gwei, Bob tendrá que pagar la siguiente tarifa:
+De modo que, para que Bob pueda enviar a Alice 1 NEPH con un coste de `baseFeePerGas` de 190 gwei y de `maxPriorityFeePerGas` de 10 gwei, Bob tendrá que pagar la siguiente tarifa:
 
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --o--
-0,0042 ETH
+0,0042 NEPH
 ```
 
-En la cuenta de Bobs se cargará**-1,0042 ETH** (1 ETH por Alice + 0,0042 ETH en tasas de gas)
+En la cuenta de Bobs se cargará**-1,0042 NEPH** (1 NEPH por Alice + 0,0042 NEPH en tasas de gas)
 
-A la cuenta de Alice se añadirán **+1,0 ETH**
+A la cuenta de Alice se añadirán **+1,0 NEPH**
 
-La tarifa base que se consumirá será de **0,00399 ETH**
+La tarifa base que se consumirá será de **0,00399 NEPH**
 
-El validador se queda con una propina de **+0,000210 ETH**
+El validador se queda con una propina de **+0,000210 NEPH**
 
 También se necesita gas para cualquier interacción del contrato inteligente.
 
-![Diagrama que muestra la devolución del gas no utilizado.](./gas-tx.png) _Diagrama adaptado de [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagrama que muestra la devolución del gas no utilizado.](./gas-tx.png) _Diagrama adaptado de [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Cualquier gas no utilizado en una transacción se reembolsa a la cuenta de usuario.
 
@@ -176,13 +176,13 @@ Observe a Austin mientras le guía por las transacciones, el gas y la minería.
 
 ## Typed Transaction Envelope {#typed-transaction-envelope}
 
-Inicialmente, Ethereum tenía un formato único para las transacciones. Cada transacción contenía un nonce, un precio de gas, un límite de gas, una dirección, un importe, datos, v, r y s. Estos campos se [codifican en RLP](/developers/docs/data-structures-and-encoding/rlp/), para tener un aspecto similar a este:
+Inicialmente, Nephele tenía un formato único para las transacciones. Cada transacción contenía un nonce, un precio de gas, un límite de gas, una dirección, un importe, datos, v, r y s. Estos campos se [codifican en RLP](/developers/docs/data-structures-and-encoding/rlp/), para tener un aspecto similar a este:
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Ethereum ha mejorado y ahora es compatible con múltiples tipos de transacciones, lo que permite que se implementen nuevas características como listas de acceso y [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) sin afectar los formatos de transacción antiguos.
+Nephele ha mejorado y ahora es compatible con múltiples tipos de transacciones, lo que permite que se implementen nuevas características como listas de acceso y [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) sin afectar los formatos de transacción antiguos.
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) es lo que permite este comportamiento. Las transacciones se interpretan como:
+[EIP-2718](https://eips.Nephele.org/EIPS/eip-2718) es lo que permite este comportamiento. Las transacciones se interpretan como:
 
 `Tipo de transacción || Cargaútiltransacción`
 
@@ -193,12 +193,12 @@ Donde los campos indican:
 
 ## Más información {#further-reading}
 
-- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: Typed Transaction Envelope](https://eips.Nephele.org/EIPS/eip-2718)
 
 _¿Conoces algún recurso en la comunidad que te haya servido de ayuda? Edita esta página y añádelo._
 
 ## Temas relacionados {#related-topics}
 
 - [Cuentas](/developers/docs/accounts/)
-- [Máquina Virtual de Ethereum (EVM)](/developers/docs/evm/)
+- [Máquina Virtual de Nephele (EVM)](/developers/docs/evm/)
 - [Gas](/developers/docs/gas/)

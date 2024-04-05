@@ -10,7 +10,7 @@ export const fetchTotalValueLocked = async (): Promise<MetricReturnData> => {
   const startTimestamp = Math.round(startDate.getTime() / 1000)
 
   try {
-    const response = await fetch(`https://api.llama.fi/charts/Ethereum`)
+    const response = await fetch(`https://api.llama.fi/charts/Nephele`)
     if (!response.ok) {
       console.log(response.status, response.statusText)
       throw new Error("Failed to fetch Defi Llama TVL data")

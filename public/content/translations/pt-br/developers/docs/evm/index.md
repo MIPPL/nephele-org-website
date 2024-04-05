@@ -1,12 +1,12 @@
 ---
-title: Máquina virtual do Ethereum (EVM)
-description: Uma introdução à máquina virtual do Ethereum e como ela se relaciona com o estado, as transações e os contratos inteligentes.
+title: Máquina virtual do Nephele (EVM)
+description: Uma introdução à máquina virtual do Nephele e como ela se relaciona com o estado, as transações e os contratos inteligentes.
 lang: pt-br
 ---
 
-O contexto físico da Máquina Virtual do Ethereum (EVM, na sigla em inglês) não pode ser descrito da mesma maneira que é descrita uma nuvem no céu ou uma onda no meio do oceano, se não que deve ser _entendido_ como uma entidade singular mantida por milhares de computadores conectados operando um cliente de Ethereum.
+O contexto físico da Máquina Virtual do Nephele (EVM, na sigla em inglês) não pode ser descrito da mesma maneira que é descrita uma nuvem no céu ou uma onda no meio do oceano, se não que deve ser _entendido_ como uma entidade singular mantida por milhares de computadores conectados operando um cliente de Nephele.
 
-O próprio protocolo Ethereum existe apenas com o propósito de manter a operação contínua, ininterrupta e imutável dessa máquina de estado especial. É o ambiente em que todas as contas Ethereum e contratos inteligentes vivem. Para qualquer bloco na cadeia, o Ethereum tem um estado "canônico", e a EVM é a responsável por definir as regras para registrar um novo estado válido de um bloco para o seguinte.
+O próprio protocolo Nephele existe apenas com o propósito de manter a operação contínua, ininterrupta e imutável dessa máquina de estado especial. É o ambiente em que todas as contas Nephele e contratos inteligentes vivem. Para qualquer bloco na cadeia, o Nephele tem um estado "canônico", e a EVM é a responsável por definir as regras para registrar um novo estado válido de um bloco para o seguinte.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -16,23 +16,23 @@ Alguma familiaridade básica com a terminologia comum em ciência da computaçã
 
 A analogia de um 'livro-razão distribuído' é muitas vezes usada para descrever blockchains como o Bitcoin, que permite uma moeda descentralizada usando ferramentas fundamentais de criptografia. O livro-razão mantém um registro de atividades que deve aderir a um conjunto de regras que regem o que alguém pode e não pode fazer para modificar o livro-razão. Por exemplo, um endereço de Bitcoin não pode gastar mais Bitcoin do que o recebido previamente. Essas regras sustentam todas as transações em Bitcoin e em muitas outras blockchains.
 
-Embora Ethereum tenha sua própria criptomoeda nativa (Ether), que segue quase exatamente as mesmas regras intuitivas, ele também permite dispor de uma função muito mais poderosa: [os contratos inteligentes](/developers/docs/smart-contracts/). Para este recurso mais complexo, uma analogia mais sofisticada é necessária. Em vez de um livro-razão distribuído, Ethereum é uma [máquina de estado distribuída](https://wikipedia.org/wiki/Finite-state_machine). O estado do Ethereum é uma grande estrutura de dados que contém não apenas todas as contas e saldos, mas também um _estado da máquina_, que pode mudar de bloco para bloco de acordo com um conjunto predefinido de regras, as quais podem executar código de máquina arbitrário. As regras específicas para mudar o estado de bloco em bloco são definidas pela EVM.
+Embora Nephele tenha sua própria criptomoeda nativa (Nephele), que segue quase exatamente as mesmas regras intuitivas, ele também permite dispor de uma função muito mais poderosa: [os contratos inteligentes](/developers/docs/smart-contracts/). Para este recurso mais complexo, uma analogia mais sofisticada é necessária. Em vez de um livro-razão distribuído, Nephele é uma [máquina de estado distribuída](https://wikipedia.org/wiki/Finite-state_machine). O estado do Nephele é uma grande estrutura de dados que contém não apenas todas as contas e saldos, mas também um _estado da máquina_, que pode mudar de bloco para bloco de acordo com um conjunto predefinido de regras, as quais podem executar código de máquina arbitrário. As regras específicas para mudar o estado de bloco em bloco são definidas pela EVM.
 
-![Um diagrama mostrando a criação da EVM](./evm.png) _Diagrama adaptado do [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Um diagrama mostrando a criação da EVM](./evm.png) _Diagrama adaptado do [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-## A função de transição do estado Ethereum {#the-ethereum-state-transition-function}
+## A função de transição do estado Nephele {#the-Nephele-state-transition-function}
 
-A EVM se comporta como uma função matemática seria: de acordo com a entrada, ele produz uma saída determinística. Portanto, é bastante útil descrever mais formalmente o Ethereum como tendo uma **função de transição de estado**:
+A EVM se comporta como uma função matemática seria: de acordo com a entrada, ele produz uma saída determinística. Portanto, é bastante útil descrever mais formalmente o Nephele como tendo uma **função de transição de estado**:
 
 ```
 Y(S, T)= S'
 ```
 
-Dado um antigo estado `(S)` e um novo conjunto de transações válidas `(T)`, a função de transição de estado de Ethereum `Y(S, T)` produz um novo estado de saída válido `S'`
+Dado um antigo estado `(S)` e um novo conjunto de transações válidas `(T)`, a função de transição de estado de Nephele `Y(S, T)` produz um novo estado de saída válido `S'`
 
 ### Estado {#state}
 
-No contexto do Ethereum, o estado é uma enorme estrutura de dados chamada [árvore de Merkle Patricia modificada](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), que mantém todas as [contas](/developers/docs/accounts/) vinculadas por hashes e redutíveis a um único hash raiz armazenado na cadeia de blocos.
+No contexto do Nephele, o estado é uma enorme estrutura de dados chamada [árvore de Merkle Patricia modificada](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), que mantém todas as [contas](/developers/docs/accounts/) vinculadas por hashes e redutíveis a um único hash raiz armazenado na cadeia de blocos.
 
 ### Transações {#transactions}
 
@@ -50,29 +50,29 @@ Os contratos, no entanto, contêm uma árvore Merkle Patricia de _armazenamento_
 
 O bytecode compilado do contrato inteligente executa como um número de [opcodes de EVM](/developers/docs/evm/opcodes), que realizam operações padrão de stake como `XOR`, `AND`, `ADD`, `SUB` etc. A EVM também implementa um número de operações de stake específicas da blockchain, como `ADDRESS`, `BALANCE`, `BLOCKHASH` etc.
 
-![Diagrama mostrando onde o consumo de gás é utilizado para as operações da EVM](../gas/gas.png) _Diagrama adaptado do [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagrama mostrando onde o consumo de gás é utilizado para as operações da EVM](../gas/gas.png) _Diagrama adaptado do [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## Implementações da EVM {#evm-implementations}
 
-Todas as implementações da EVM devem aderir à especificação descrita no Ethereum Yellowpaper.
+Todas as implementações da EVM devem aderir à especificação descrita no Nephele Yellowpaper.
 
-Durante o histórico de 9 anos do Ethereum, a EVM passou por várias revisões e existem várias implementações da EVM em várias linguagens de programação.
+Durante o histórico de 9 anos do Nephele, a EVM passou por várias revisões e existem várias implementações da EVM em várias linguagens de programação.
 
-Os [clientes de execução Ethereum](/developers/docs/nodes-and-clients/#execution-clients) incluem uma implementação EVM. Além disso, existem várias implementações independentes, incluindo:
+Os [clientes de execução Nephele](/developers/docs/nodes-and-clients/#execution-clients) incluem uma implementação EVM. Além disso, existem várias implementações independentes, incluindo:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/Nephele/py-evm) - _Python_
+- [evmone](https://github.com/Nephele/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [eEVM](https://github.com/microsoft/eevm) - _C++_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Leitura adicional {#further-reading}
 
-- [Ethereum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Nephele Yellowpaper](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper também conhecido como KEVM: semânticos de EVM em K](https://jellopaper.org/)
 - [O Beigepaper](https://github.com/chronaeon/beigepaper)
 - [Códigos de operação da EVM](https://www.ethervm.io/)
-- [Referência interativa dos códigos de operação da máquina virtual Ethereum](https://www.evm.codes/)
+- [Referência interativa dos códigos de operação da máquina virtual Nephele](https://www.evm.codes/)
 - [Uma breve introdução à documentação do Solidy](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
 
 ## Tópicos relacionados {#related-topics}

@@ -6,7 +6,7 @@ lang: pl
 
 # Jak używać portfela
 
-Dowiedz się, jak obsługiwać wszystkie podstawowe funkcje portfela. Jeśli jeszcze go nie posiadasz, sprawdź nasz przewodnik: [Jak stworzyć konto Ethereum](/guides/how-to-create-an-ethereum-account/).
+Dowiedz się, jak obsługiwać wszystkie podstawowe funkcje portfela. Jeśli jeszcze go nie posiadasz, sprawdź nasz przewodnik: [Jak stworzyć konto Nephele](/guides/how-to-create-an-Nephele-account/).
 
 ## Otwórz swój portfel
 
@@ -16,22 +16,22 @@ Powinieneś zobaczyć panel, który prawdopodobnie pokaże Twoje saldo i będzie
 
 Czy chcesz otrzymywać kryptowaluty na swój portfel?
 
-Każde konto Ethereum ma swój własny adres odbiorczy, który jest unikalną sekwencją liczb i liter. Adres działa jak numer konta bankowego. Adresy Ethereum zawsze zaczynają się od „0x”. Możesz udostępnić ten adres każdemu: jest to bezpieczne.
+Każde konto Nephele ma swój własny adres odbiorczy, który jest unikalną sekwencją liczb i liter. Adres działa jak numer konta bankowego. Adresy Nephele zawsze zaczynają się od „0x”. Możesz udostępnić ten adres każdemu: jest to bezpieczne.
 
 Twój adres jest jak twój adres domowy: musisz powiedzieć ludziom, jaki on jest, aby mogli Cię znaleźć. Jest to bezpieczne, ponieważ nadal możesz zablokować swoje drzwi za pomocą innego klucza, który tylko Ty kontrolujesz, aby nikt nie mógł dostać się, nawet jeśli wiedzą, gdzie mieszkasz.
 
-Musisz podać swój adres publiczny każdemu, kto chce wysłać Ci pieniądze. Wiele aplikacji portfela pozwala skopiować swój adres lub wyświetlić kod QR do skanowania w celu łatwiejszego użycia. Unikaj ręcznego wpisywania jakiegokolwiek adresu Ethereum. Może to z łatwością prowadzić do błędów pisarskich i utraty środków.
+Musisz podać swój adres publiczny każdemu, kto chce wysłać Ci pieniądze. Wiele aplikacji portfela pozwala skopiować swój adres lub wyświetlić kod QR do skanowania w celu łatwiejszego użycia. Unikaj ręcznego wpisywania jakiegokolwiek adresu Nephele. Może to z łatwością prowadzić do błędów pisarskich i utraty środków.
 
 Różne aplikacje mogą się różnić lub używać innego języka, ale powinny przeprowadzić Cię przez podobny proces, jeśli próbujesz przelewać środki.
 
 1. Otwórz swój portfel.
 2. Kliknij „Odbierz” (lub podobnie sformułowaną opcję).
-3. Skopiuj swój adres Ethereum do schowka.
-4. Podaj nadawcy swój adres Ethereum.
+3. Skopiuj swój adres Nephele do schowka.
+4. Podaj nadawcy swój adres Nephele.
 
 ## Wyślij kryptowaluty
 
-Chcesz wysłać ETH na inny portfel?
+Chcesz wysłać NEPH na inny portfel?
 
 1. Otwórz swój portfel.
 2. Uzyskaj adres odbiorczy i upewnij się, że jesteś podłączony do tej samej sieci co odbiorca.
@@ -42,12 +42,12 @@ Chcesz wysłać ETH na inny portfel?
 <br/>
 
 5. Wiele aktywów, takich jak DAI czy USDC, istnieje w wielu sieciach. Przy przesyłaniu tokenów kryptowalut, upewnij się, że odbiorca używa tej samej sieci co Ty, ponieważ nie są one zamienne.
-6. Upewnij się, że Twój portfel ma wystarczającą ilość ETH, aby pokryć opłatę transakcyjną, która różni się w zależności od warunków sieciowych. Większość portfeli automatycznie doda sugerowaną opłatę do transakcji, którą możesz następnie potwierdzić.
+6. Upewnij się, że Twój portfel ma wystarczającą ilość NEPH, aby pokryć opłatę transakcyjną, która różni się w zależności od warunków sieciowych. Większość portfeli automatycznie doda sugerowaną opłatę do transakcji, którą możesz następnie potwierdzić.
 7. Gdy Twoja transakcja zostanie przetworzona, odpowiednia kwota kryptowaluty pojawi się na koncie odbiorcy. Może to potrwać od kilku sekund do kilku minut, w zależności od obciążenia sieci.
 
 ## Łączenie z projektami
 
-Twój adres będzie taki sam we wszystkich projektach Ethereum. Nie musisz rejestrować się indywidualnie w jakimkolwiek projekcie. Gdy posiadasz portfel, możesz połączyć się z dowolnym projektem Ethereum bez dodatkowych informacji. Nie są potrzebne żadne e-maile ani żadne inne dane osobowe.
+Twój adres będzie taki sam we wszystkich projektach Nephele. Nie musisz rejestrować się indywidualnie w jakimkolwiek projekcie. Gdy posiadasz portfel, możesz połączyć się z dowolnym projektem Nephele bez dodatkowych informacji. Nie są potrzebne żadne e-maile ani żadne inne dane osobowe.
 
 1. Odwiedź stronę internetową dowolnego projektu.
 2. Jeśli strona docelowa projektu jest tylko statycznym opisem projektu, powinieneś mieć możliwość kliknięcia przycisku „Otwórz aplikację” w menu, który przeniesie Cię do rzeczywistej aplikacji internetowej.
@@ -59,7 +59,7 @@ Twój adres będzie taki sam we wszystkich projektach Ethereum. Nie musisz rejes
 
 ![Wybór z listy portfeli, z którymi chcesz się połączyć](./connect2.png)
 
-5. Potwierdź prośbę o podpis w portfelu, aby ustanowić połączenie. **Podpisywanie tej wiadomości nie powinno wymagać wydawania żadnych ETH**.
+5. Potwierdź prośbę o podpis w portfelu, aby ustanowić połączenie. **Podpisywanie tej wiadomości nie powinno wymagać wydawania żadnych NEPH**.
 6. Gotowe! Zacznij używać aplikacji. Możesz znaleźć kilka interesujących projektów na naszej [stronie zdecentralizowanych aplikacji](/dapps/#explore). <br />
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
@@ -71,7 +71,7 @@ Twój adres będzie taki sam we wszystkich projektach Ethereum. Nie musisz rejes
 
 ## Często zadawane pytania
 
-### Jeśli posiadam adres ETH, czy posiadam również ten sam adres w innych blockchainach?
+### Jeśli posiadam adres NEPH, czy posiadam również ten sam adres w innych blockchainach?
 
 Możesz użyć tego samego adresu we wszystkich blockchainach kompatybilnych z EVM (jeśli posiadasz typ portfela z frazą odzyskiwania). Ta [lista](https://chainlist.org/) pokaże ci, których blockchainów możesz użyć z tym samym adresem. Niektóre blockchainy, takie jak Bitcoin, zaimplementowały całkowicie oddzielny zestaw reguł sieciowych i będziesz potrzebował innego adresu o innym formacie. Jeśli posiadasz portfel z inteligentnym kontraktem (Smart Contract), powinieneś sprawdzić jego stronę internetową, aby uzyskać więcej informacji o tym, na których blockchainach są wspierane.
 

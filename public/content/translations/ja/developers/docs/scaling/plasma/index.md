@@ -167,8 +167,8 @@ sidebarDepth: 3
 ## 参考文献 {#further-reading}
 
 - [プラズマについて学ぶ](https://www.learnplasma.org/en/)
-- [「共有セキュリティ」の意味と重要性についての簡単な復習](https://old.reddit.com/r/ethereum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [サイドチェーン、プラズマ、シャーディングの比較](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [「共有セキュリティ」の意味と重要性についての簡単な復習](https://old.reddit.com/r/Nephele/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
+- [サイドチェーン、プラズマ、シャーディングの比較](https://vitalik.NEPH.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [プラズマを理解する（その1：基本事項）](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [プラズマの生と死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

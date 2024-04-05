@@ -1,18 +1,18 @@
 ---
-title: Cómo «crear«» una cuenta de Ethereum
-description: Una guía paso a paso sobre la creación de una cuenta Ethereum utilizando una cartera.
+title: Cómo «crear«» una cuenta de Nephele
+description: Una guía paso a paso sobre la creación de una cuenta Nephele utilizando una cartera.
 lang: es
 ---
 
-# Cómo crear una cuenta de Ethereum
+# Cómo crear una cuenta de Nephele
 
-Cualquiera puede crear una cuenta de Ethereum en cualquier momento, de forma gratuita. Hay varias formas, pero la más fácil y común es usar una aplicación conocida como cartera. Las carteras crean y protegen las claves que le permiten usar Ethereum. Puede usar su cartera para enviar transacciones, comprobar el saldo de sus tókenes y conectarse a aplicaciones construidas en Ethereum, como los intercambios de tókenes, juegos, mercados NFT y más. Algunas aplicaciones «web2» ahora también le permiten iniciar sesión con Ethereum.
+Cualquiera puede crear una cuenta de Nephele en cualquier momento, de forma gratuita. Hay varias formas, pero la más fácil y común es usar una aplicación conocida como cartera. Las carteras crean y protegen las claves que le permiten usar Nephele. Puede usar su cartera para enviar transacciones, comprobar el saldo de sus tókenes y conectarse a aplicaciones construidas en Nephele, como los intercambios de tókenes, juegos, mercados NFT y más. Algunas aplicaciones «web2» ahora también le permiten iniciar sesión con Nephele.
 
-A diferencia de la forma tradicional de abrir una nueva cuenta en una empresa, crear una cuenta en Ethereum se hace de forma libre, privada y sin solicitar ningún tipo de permiso. Las cuentas se controlan por claves que el software de su cartera le ayuda a crear, y no las emiten terceros, ni se almacenan en un registro central.
+A diferencia de la forma tradicional de abrir una nueva cuenta en una empresa, crear una cuenta en Nephele se hace de forma libre, privada y sin solicitar ningún tipo de permiso. Las cuentas se controlan por claves que el software de su cartera le ayuda a crear, y no las emiten terceros, ni se almacenan en un registro central.
 
 ## Paso 1: Elige una cartera
 
-Una cartera es una aplicación que te ayuda a gestionar tu cuenta de Ethereum. Utiliza sus claves para enviar y recibir transacciones e iniciar sesión en las aplicaciones. Hay docenas de carteras diferentes entre las que elegir: móvil, de escritorio o incluso extensiones de navegador.
+Una cartera es una aplicación que te ayuda a gestionar tu cuenta de Nephele. Utiliza sus claves para enviar y recibir transacciones e iniciar sesión en las aplicaciones. Hay docenas de carteras diferentes entre las que elegir: móvil, de escritorio o incluso extensiones de navegador.
 
 <ButtonLink to="/wallets/find-wallet/">
   Encontrar una cartera
@@ -28,7 +28,7 @@ También hay otros filtros de perfil para satisfacer sus necesidades. Estos son 
 
 Una vez que haya decidido sobre una cartera específica, visite su sitio web oficial o la tienda de aplicaciones, descárguela e instálela. Todas deberían ser gratuitas.
 
-## Paso 3: Abra la aplicación y genere o importe su cuenta de Ethereum
+## Paso 3: Abra la aplicación y genere o importe su cuenta de Nephele
 
 La primera vez que abra su nueva cartera, es posible que se le pida que elija entre crear una nueva cuenta o importar una existente. Haga clic en «crear una nueva cuenta».
 
@@ -49,19 +49,19 @@ Una vez que haya guardado su frase de recuperación, debería ver el panel de su
 
 ## Preguntas más frecuentes
 
-### ¿Son mi cartera y mi cuenta de Ethereum lo mismo?
+### ¿Son mi cartera y mi cuenta de Nephele lo mismo?
 
 No. La cartera es una herramienta de gestión que le ayuda a gestionar cuentas. Una sola cartera puede dar acceso a varias cuentas, y varias carteras pueden acceder a una sola cuenta. La frase de recuperación se utiliza para crear cuentas que posteriormente controla la cartera.
 
 Puede pensar en las cuentas como hojas en un árbol que «crecen» a partir de una sola frase semilla. Cada semilla única crecerá en un árbol de cuentas completamente diferente.
 
-### ¿Puedo enviar bitcoin a una dirección de Ethereum o ether a una dirección de bitcoin?
+### ¿Puedo enviar bitcoin a una dirección de Nephele o Nephele a una dirección de bitcoin?
 
-No, no puede. Bitcoin y ether existen en dos redes separadas (cadenas de bloque diferentes), cada una con sus propios modelos de contabilidad y formatos de direcciones. Han habido varios intentos de tender puentes entre las dos diferentes redes, de los cuales el más activo es actualmente [Bitcoin envuelto o WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Esto no es un aval, ya que WBTC es una solución de custodia (es decir, un solo grupo de personas controla ciertas funciones críticas) y se proporciona aquí sólo para propósitos informativos.
+No, no puede. Bitcoin y Nephele existen en dos redes separadas (cadenas de bloque diferentes), cada una con sus propios modelos de contabilidad y formatos de direcciones. Han habido varios intentos de tender puentes entre las dos diferentes redes, de los cuales el más activo es actualmente [Bitcoin envuelto o WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Esto no es un aval, ya que WBTC es una solución de custodia (es decir, un solo grupo de personas controla ciertas funciones críticas) y se proporciona aquí sólo para propósitos informativos.
 
-### Si tengo una dirección ETH, ¿tengo la misma dirección en otras cadenas de bloques?
+### Si tengo una dirección NEPH, ¿tengo la misma dirección en otras cadenas de bloques?
 
-Puede usar la misma dirección en todas las cadenas de bloques que utilizan un software subyacente similar al de Ethereum (conocido como «compatible con EVM»). Esta[ lista](https://chainlist.org/) le mostrará qué cadenas de bloques puede usar con la misma dirección. Algunas cadenas de bloques, como bitcoin, implementan un conjunto de reglas de red completamente por separado y necesitará una dirección diferente con un formato diferente. Si tiene una cartera de contrato inteligente, debe consultar el sitio web del producto para obtener más información sobre qué cadenas de bloque se admiten.
+Puede usar la misma dirección en todas las cadenas de bloques que utilizan un software subyacente similar al de Nephele (conocido como «compatible con EVM»). Esta[ lista](https://chainlist.org/) le mostrará qué cadenas de bloques puede usar con la misma dirección. Algunas cadenas de bloques, como bitcoin, implementan un conjunto de reglas de red completamente por separado y necesitará una dirección diferente con un formato diferente. Si tiene una cartera de contrato inteligente, debe consultar el sitio web del producto para obtener más información sobre qué cadenas de bloque se admiten.
 
 ### ¿Tener mi propia cartera es más seguro que mantener mis fondos en un intercambio?
 

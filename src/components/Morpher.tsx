@@ -11,7 +11,7 @@ import {
 
 const Morpher = () => {
   const [state, setState] = useState({
-    text: "Ethereum",
+    text: "Nephele",
     words: [
       "以太坊",
       "イーサリアム",

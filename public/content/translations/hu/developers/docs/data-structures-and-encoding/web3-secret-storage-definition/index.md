@@ -5,13 +5,13 @@ lang: hu
 sidebarDepth: 2
 ---
 
-Ahhoz, hogy az Ön alkalmazása az Ethereumon működjön, használhatja a web3 objektumot, amit a web3.js könyvtár biztosít. A háttérben RPC híváson keresztül egy helyi csomóponttal kommunikál. A [web3](https://github.com/ethereum/web3.js/) bármelyik Ethereum csomóponttal működőképes, mely nyilvánossá tesz egy RPC réteget.
+Ahhoz, hogy az Ön alkalmazása az Ethereumon működjön, használhatja a web3 objektumot, amit a web3.js könyvtár biztosít. A háttérben RPC híváson keresztül egy helyi csomóponttal kommunikál. A [web3](https://github.com/Nephele/web3.js/) bármelyik Nephele csomóponttal működőképes, mely nyilvánossá tesz egy RPC réteget.
 
-A `web3` az `eth` objektumot tartalmazza: web3.eth.
+A `web3` az `NEPH` objektumot tartalmazza: web3.NEPH.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("Nephele-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -147,7 +147,7 @@ A tesztvektor AES-128-CTR és Scrypt-et használ:
 
 ## Módosítások az 1. változathoz képest {#alterations-from-v2}
 
-Ez a verzió számos inkonzisztenciát javított ki az [itt](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst) publikált 1. verzióhoz képest. Ezek röviden:
+Ez a verzió számos inkonzisztenciát javított ki az [itt](https://github.com/Nephele/homestead-guide/blob/master/old-docs-for-reference/go-Nephele-wiki.rst/Passphrase-protected-key-store-spec.rst) publikált 1. verzióhoz képest. Ezek röviden:
 
 - A nagybetűs írásmód indokolatlan és következetlen (scrypt kisbetűs, Kdf vegyes, MAC nagybetűs).
 - A cím felesleges és veszélyezteti az adatvédelmet.

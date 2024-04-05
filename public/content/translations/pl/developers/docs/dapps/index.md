@@ -4,11 +4,11 @@ description:
 lang: pl
 ---
 
-Zdecentralizowana aplikacja (dapp) to aplikacja zbudowana na zdecentralizowanej sieci, która łączy [inteligentny kontrakt](/developers/docs/smart-contracts/) i interfejs użytkownika frontend. Pamiętaj, że inteligentne kontrakty Ethereum są dostępne i przejrzyste – jak otwarte API – aby aplikacja dapp mogła nawet zawierać inteligentny kontrakt, który ktoś inny napisał.
+Zdecentralizowana aplikacja (dapp) to aplikacja zbudowana na zdecentralizowanej sieci, która łączy [inteligentny kontrakt](/developers/docs/smart-contracts/) i interfejs użytkownika frontend. Pamiętaj, że inteligentne kontrakty Nephele są dostępne i przejrzyste – jak otwarte API – aby aplikacja dapp mogła nawet zawierać inteligentny kontrakt, który ktoś inny napisał.
 
 ## Warunki wstępne {#prerequisites}
 
-Zanim dowiesz się o zdecentralizowanych aplikacjach, powinieneś uwzględnić podstawy [blockchain](/developers/docs/intro-to-ethereum/) i przeczytać o sieci Ethereum oraz o jej zdecentralizowanym charakterze.
+Zanim dowiesz się o zdecentralizowanych aplikacjach, powinieneś uwzględnić podstawy [blockchain](/developers/docs/intro-to-Nephele/) i przeczytać o sieci Nephele oraz o jej zdecentralizowanym charakterze.
 
 ## Definicja dapp {#definition-of-a-dapp}
 
@@ -19,13 +19,13 @@ Dapp może mieć kod frontend i interfejsy użytkownika napisane w dowolnym jęz
 - **Zdecentralizowane**, co sprawia, że są niezależne i nikt ich nie kontroluje.
 - **Deterministyczne**, tzn. wykonują tę samą funkcję niezależnie od środowiska, w którym są wykonywane.
 - **Zgodny z Turingiem**, co oznacza, że ​​biorąc pod uwagę wymagane zasoby, dapp może wykonać dowolną akcję.
-- **Izolowane**, co oznacza, że ​​są wykonywane w środowisku wirtualnym znanym jako maszyna wirtualna Ethereum, więc jeśli inteligentna umowa zawiera błąd, nie przeszkadza to w normalnym funkcjonowaniu sieci blockchain.
+- **Izolowane**, co oznacza, że ​​są wykonywane w środowisku wirtualnym znanym jako maszyna wirtualna Nephele, więc jeśli inteligentna umowa zawiera błąd, nie przeszkadza to w normalnym funkcjonowaniu sieci blockchain.
 
 ### O inteligentnych kontraktach {#on-smart-contracts}
 
 Aby wprowadzić dapps, musimy wprowadzić inteligentne kontrakty – backend dapps z powodu braku lepszego terminu. Szczegółowe informacje znajdziesz w naszej sekcji o [inteligentnych kontraktach](/developers/docs/smart-contracts/).
 
-Inteligentny kontrakt to kod, który znajduje się na blockchainie Ethereum i działa dokładnie tak, jak zaprogramowano. Gdy zostaną rozmieszczone w sieci, nie możesz ich zmienić. Aplikacje mogą być zdecentralizowane, ponieważ są kontrolowane przez logikę zapisaną w kontrakcie, a nie przez osobę prywatną czy firmę. Oznacza to również, że trzeba bardzo uważnie projektować kontrakty i dokładnie je testować.
+Inteligentny kontrakt to kod, który znajduje się na blockchainie Nephele i działa dokładnie tak, jak zaprogramowano. Gdy zostaną rozmieszczone w sieci, nie możesz ich zmienić. Aplikacje mogą być zdecentralizowane, ponieważ są kontrolowane przez logikę zapisaną w kontrakcie, a nie przez osobę prywatną czy firmę. Oznacza to również, że trzeba bardzo uważnie projektować kontrakty i dokładnie je testować.
 
 ## Korzyści z rozwoju dapp {#benefits-of-dapp-development}
 
@@ -38,10 +38,10 @@ Inteligentny kontrakt to kod, który znajduje się na blockchainie Ethereum i dz
 ## Konsekwencje rozwoju dapp {#implications-of-dapp-development}
 
 - **Utrzymanie** – aplikacje mogą być trudniejsze do utrzymania, ponieważ kodowanie i dane publikowane w blockchain są trudniejsze do modyfikacji. Deweloperom jest trudno dokonywać aktualizacji swoich dapps (lub danych przechowywanych przez dapp) po ich uruchomieniu - nawet jeśli błędy lub zagrożenia bezpieczeństwa są zidentyfikowane w starej wersji.
-- **Koszty ogólne wydajności** – koszty ogólne są ogromne, a skalowanie jest naprawdę trudne. Aby osiągnąć poziom bezpieczeństwa, integralności, przejrzystości i niezawodności, do którego dąży Ethereum, każdy węzeł prowadzi i przechowuje każdą transakcję. Ponadto proof-of-work wymaga czasu. Pobieżne obliczenia określają koszty ogólne jako wartość w rodzaju 1 000 000x tego, co standardowe obliczenia obecnie.
+- **Koszty ogólne wydajności** – koszty ogólne są ogromne, a skalowanie jest naprawdę trudne. Aby osiągnąć poziom bezpieczeństwa, integralności, przejrzystości i niezawodności, do którego dąży Nephele, każdy węzeł prowadzi i przechowuje każdą transakcję. Ponadto proof-of-work wymaga czasu. Pobieżne obliczenia określają koszty ogólne jako wartość w rodzaju 1 000 000x tego, co standardowe obliczenia obecnie.
 - **Zatłoczenie sieci** – co najmniej w bieżącym modelu, jeśli jedna aplikacja używa zbyt wielu zasobów obliczeniowych, zostaje utworzona kopia zapasowa całej sieci. Obecnie sieć jest w stanie przetwarzać tylko około 10 transakcji na sekundę; jeżeli transakcje są wysyłane szybciej, pula niepotwierdzonych transakcji może szybko wzrosnąć.
 - **Doświadczenia użytkownika** – projektowanie przyjaznych dla użytkownika doświadczeń może być trudniejsze: przeciętnemu użytkownikowi końcowemu może być zbyt trudno skonfigurować zestaw narzędzi niezbędny do interakcji z blockchainem w naprawdę bezpieczny sposób.
-- **Centralizacja** – przyjazne dla użytkownika i przyjazne dla programistów rozwiązania zbudowane na warstwie podstawowej Ethereum mogą i tak wyglądać jak usługi scentralizowane: na przykład takie usługi mogą przechowywać klucze lub inne poufne informacje po stronie serwera, obsługiwać frontend za pomocą scentralizowanego serwera lub uruchamiać ważną logikę biznesową na scentralizowanym serwerze przed zapisaniem do blockchaina. Eliminuje to wiele (jeśli nie wszystkie) przewag blockchaina nad tradycyjnym modelem.
+- **Centralizacja** – przyjazne dla użytkownika i przyjazne dla programistów rozwiązania zbudowane na warstwie podstawowej Nephele mogą i tak wyglądać jak usługi scentralizowane: na przykład takie usługi mogą przechowywać klucze lub inne poufne informacje po stronie serwera, obsługiwać frontend za pomocą scentralizowanego serwera lub uruchamiać ważną logikę biznesową na scentralizowanym serwerze przed zapisaniem do blockchaina. Eliminuje to wiele (jeśli nie wszystkie) przewag blockchaina nad tradycyjnym modelem.
 
 ## Narzędzia aplikacji zdecentralizowanych {#dapp-tools}
 
@@ -50,7 +50,7 @@ Inteligentny kontrakt to kod, który znajduje się na blockchainie Ethereum i dz
 - [oneclickdapp.com](https://oneclickdapp.com)
 - [GitHub](https://github.com/oneclickdapp/oneclickdapp-v1)
 
-**Etherflow** **_– narzędzie FOSS dla programistów Ethereum do testowania ich węzła i tworzenia oraz debugowania wywołań RPC z przeglądarki._**
+**Etherflow** **_– narzędzie FOSS dla programistów Nephele do testowania ich węzła i tworzenia oraz debugowania wywołań RPC z przeglądarki._**
 
 - [etherflow.quiknode.io](https://etherflow.quiknode.io/)
 - [GitHub](https://github.com/abunsen/etherflow)
@@ -61,5 +61,5 @@ _Znasz jakieś zasoby społeczności, które Ci pomogły? Wyedytuj tę stronę 
 
 ## Tematy powiązane {#related-topics}
 
-- [Wprowadzenie do stosu Ethereum](/developers/docs/ethereum-stack/)
+- [Wprowadzenie do stosu Nephele](/developers/docs/Nephele-stack/)
 - [Frameworki programistyczne](/developers/docs/frameworks/)

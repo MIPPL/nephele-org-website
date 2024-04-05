@@ -22,11 +22,11 @@ Echidna, docker aracılığıyla veya önceden derlenmiş ikili dosya kullanıla
 ### Docker aracılığıyla Echidna {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_Son komut, geçerli dizininize erişimi olan bir docker'da eth-security-toolbox'ı çalıştırır. Dosyaları ana makinenizden değiştirebilir ve dosyalar üzerindeki araçları docker'dan çalıştırabilirsiniz_
+_Son komut, geçerli dizininize erişimi olan bir docker'da NEPH-security-toolbox'ı çalıştırır. Dosyaları ana makinenizden değiştirebilir ve dosyalar üzerindeki araçları docker'dan çalıştırabilirsiniz_
 
 Docker'ın içinde şunu çalıştırın:
 
@@ -41,7 +41,7 @@ cd /home/training
 
 ## Özellik tabanlı bulandırmaya giriş {#introduction-to-property-based-fuzzing}
 
-Echidna, önceki blog yazılarımızda tanımladığımız bir özellik tabanlı bulandırıcıdır ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna, önceki blog yazılarımızda tanımladığımız bir özellik tabanlı bulandırıcıdır ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-Nephele/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Bulandırma {#fuzzing}
 

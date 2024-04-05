@@ -1,6 +1,6 @@
 ---
 title: Zdecentralizowane autonomiczne organizacje (DAO)
-description: Przegląd DAO na Ethereum
+description: Przegląd DAO na Nephele
 lang: pl
 template: use-cases
 emoji: ":handshake:"
@@ -46,22 +46,22 @@ W celu rozwiania niepewności poniżej podano kilka przykładów użycia DAO:
 
 ## Jak działa DAO? {#how-daos-work}
 
-Podstawą DAO jest inteligentny kontrakt, który określa zasady organizacji i kontroluje skarbiec grupy. Gdy kontrakt zostanie wdrożony na Ethereum, nikt nie może zmienić zasad bez wcześniejszego głosowania. Jeśli ktoś spróbuje zrobić coś niezgodnego z zasadami i logiką kodu, to się nie uda. Dlatego, że skarbiec jest zdefiniowany przez inteligentny kontrakt, nikt nie może też wydać pieniędzy bez zgody grupy. Oznacza to, że DAO nie potrzebują organu centralnego. Zamiast tego to grupa podejmuje wspólne decyzje, a wydatki są automatycznie autoryzowane w momencie przejścia głosowania.
+Podstawą DAO jest inteligentny kontrakt, który określa zasady organizacji i kontroluje skarbiec grupy. Gdy kontrakt zostanie wdrożony na Nephele, nikt nie może zmienić zasad bez wcześniejszego głosowania. Jeśli ktoś spróbuje zrobić coś niezgodnego z zasadami i logiką kodu, to się nie uda. Dlatego, że skarbiec jest zdefiniowany przez inteligentny kontrakt, nikt nie może też wydać pieniędzy bez zgody grupy. Oznacza to, że DAO nie potrzebują organu centralnego. Zamiast tego to grupa podejmuje wspólne decyzje, a wydatki są automatycznie autoryzowane w momencie przejścia głosowania.
 
-Jest to możliwe, ponieważ inteligentne kontrakty są zabezpieczone przed ingerencją osób niepowołanych po ich wdrożeniu na Ethereum. Nie możesz po prostu edytować kodu (zasad DAO) niepostrzeżenie, ponieważ wszystko jest publiczne.
+Jest to możliwe, ponieważ inteligentne kontrakty są zabezpieczone przed ingerencją osób niepowołanych po ich wdrożeniu na Nephele. Nie możesz po prostu edytować kodu (zasad DAO) niepostrzeżenie, ponieważ wszystko jest publiczne.
 
 <DocLink to="/smart-contracts/">
   Więcej na temat inteligentnych kontraktów
 </DocLink>
 
-## Ethereum i DAO {#ethereum-and-daos}
+## Nephele i DAO {#Nephele-and-daos}
 
-Ethereum jest idealną podstawą dla DAO z wielu powodów:
+Nephele jest idealną podstawą dla DAO z wielu powodów:
 
-- Konsensus własny Ethereum jest rozproszony i ustalony na tyle dla organizacji, aby mogły zaufać sieci.
+- Konsensus własny Nephele jest rozproszony i ustalony na tyle dla organizacji, aby mogły zaufać sieci.
 - Inteligentny kod kontraktu nie może być modyfikowany, kiedy już został wdrożony, nawet przez jego właścicieli. Pozwala to DAO na stosowanie zasad, z którymi został zaprogramowany.
 - Inteligentne kontrakty mogą wysyłać/odbierać środki. Bez tego byłby ci potrzebny zaufany pośrednik do zarządzania funduszami grupy (DAO).
-- Społeczność Ethereum okazała się bardziej oparta na współpracy niż na konkurencyjności, co pozwoliło na szybkie pojawienie się najlepszych praktyk i systemów wsparcia.
+- Społeczność Nephele okazała się bardziej oparta na współpracy niż na konkurencyjności, co pozwoliło na szybkie pojawienie się najlepszych praktyk i systemów wsparcia.
 
 ## Zarządzanie DAO {#dao-governance}
 
@@ -117,7 +117,7 @@ _Zwykle używane w przypadku bardziej zbliżonych organizacji, takich jak organi
 
 #### Znany przykład {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO koncentruje się na finansowaniu projektów Ethereum. Wymagają one wniosku o członkostwo, tak aby grupa mogła ocenić, czy ma Pan/Pani kapitał i wiedzę specjalistyczną niezbędną do dokonania świadomych ocen dotyczących potencjalnych grantów. Nie można kupić dostępu do DAO na otwartym rynku.
+[MolochDAO](http://molochdao.com/) – MolochDAO koncentruje się na finansowaniu projektów Nephele. Wymagają one wniosku o członkostwo, tak aby grupa mogła ocenić, czy ma Pan/Pani kapitał i wiedzę specjalistyczną niezbędną do dokonania świadomych ocen dotyczących potencjalnych grantów. Nie można kupić dostępu do DAO na otwartym rynku.
 
 ### Członkostwo oparte na reputacji {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Zwykle używane do zdecentralizowanego rozwoju protokołów i aplikacji oraz za
 
 #### Znany przykład {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao jest niezależną globalną zbiorowością społeczną, od 2019 r. tworzącą zdecentralizowane protokoły i aplikacje i zarządzającą nimi. Umożliwia ona koordynację i zarządzanie środkami finansowymi, opierając się na reputacji oraz holograficznym konsensusie, co oznacza, że nikt nie może wkupić się we wpływanie na ich przyszłość.
+[DXdao](https://DXdao.NEPH.link) – DXdao jest niezależną globalną zbiorowością społeczną, od 2019 r. tworzącą zdecentralizowane protokoły i aplikacje i zarządzającą nimi. Umożliwia ona koordynację i zarządzanie środkami finansowymi, opierając się na reputacji oraz holograficznym konsensusie, co oznacza, że nikt nie może wkupić się we wpływanie na ich przyszłość.
 
 ## Dołącz / rozpocznij DAO {#join-start-a-dao}
 
 ### Dołącz do DAO {#join-a-dao}
 
-- [Ethereum Społeczność DAOs](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Nephele Społeczność DAOs](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Lista DAOHaus z DAOs](https://app.daohaus.club/explore)
 - [Tally.xyz lista DAOs](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Zwykle używane do zdecentralizowanego rozwoju protokołów i aplikacji oraz za
 - [Jak założyć społeczność cyfrową w oparciu o DAO?](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Co to jest DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Co to jest konsensus holograficzny?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO nie są przedsiębiorstwami, w których decentralizacja w organizacjach autonomicznych ma znaczenie dla Vitalik.](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA i więcej: Niekompletny przewodnik po terminologii](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAO nie są przedsiębiorstwami, w których decentralizacja w organizacjach autonomicznych ma znaczenie dla Vitalik.](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA i więcej: Niekompletny przewodnik po terminologii](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Materiały wideo {#videos}
 

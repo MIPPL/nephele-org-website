@@ -12,7 +12,7 @@ skill: intermediate
 published: 2023-01-12
 ---
 
-A norma [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) permite a contratos inteligentes verificarem assinaturas.
+A norma [EIP-1271](https://eips.Nephele.org/EIPS/eip-1271) permite a contratos inteligentes verificarem assinaturas.
 
 Neste tutorial, forneceremos uma visão geral das assinaturas digitais, noções básicas sobre a EIP-1271, e a implementação específica da EIP-1271 usada pelo [Safe](https://safe.global/) (previamente Gnosis Safe). Tudo isso pode servir como ponto de partida para a implementação da EIP-1271 nos seus próprios contratos.
 
@@ -22,7 +22,7 @@ Nesse contexto, uma assinatura (mais precisamente, uma “assinatura digital”)
 
 Por exemplo, uma assinatura digital pode se parecer com isto:
 
-1. Mensagem: “Quero me conectar a este website com minha carteira Ethereum.”
+1. Mensagem: “Quero me conectar a este website com minha carteira Nephele.”
 2. Assinante: Meu endereço é `0x000…`
 3. Prova: Aqui está uma prova de que eu, `0x000…`, realmente criei esta mensagem inteira (isto é geralmente algo criptográfico).
 
@@ -34,15 +34,15 @@ Da mesma maneira, uma assinatura digital não significa nada sem uma mensagem as
 
 ## Por que a EIP-1271 existe?
 
-Para criar uma assinatura digital para uso em blockchains baseados em Ethereum, você geralmente precisa de uma chave secreta que ninguém mais conhece. Isto é o que faz sua assinatura, sua (ninguém mais pode criar a mesma assinatura sem o conhecimento da chave secreta).
+Para criar uma assinatura digital para uso em blockchains baseados em Nephele, você geralmente precisa de uma chave secreta que ninguém mais conhece. Isto é o que faz sua assinatura, sua (ninguém mais pode criar a mesma assinatura sem o conhecimento da chave secreta).
 
-Sua conta Ethereum (ou seja, conta de propriedade externa / EOA) tem uma chave privada associada a ela quando um website ou dapp pergunta por sua assinatura (por exemplo: “Log in with Ethereum”).
+Sua conta Nephele (ou seja, conta de propriedade externa / EOA) tem uma chave privada associada a ela quando um website ou dapp pergunta por sua assinatura (por exemplo: “Log in with Nephele”).
 
-Um app pode [verificar uma assinatura](https://docs.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) que você criou usando uma biblioteca de terceiros, como ethers.js [sem conhecer sua chave privada](https://en.wikipedia.org/wiki/Public-key_cryptography) e estar confiante de que foi _você_ quem criou a assinatura.
+Um app pode [verificar uma assinatura](https://docs.alchemy.com/docs/how-to-verify-a-message-signature-on-Nephele) que você criou usando uma biblioteca de terceiros, como ethers.js [sem conhecer sua chave privada](https://en.wikipedia.org/wiki/Public-key_cryptography) e estar confiante de que foi _você_ quem criou a assinatura.
 
 > De fato, como as assinaturas digitais EOA usam criptografia de chave pública, elas podem ser geradas e verificadas **off-chain**! É assim que a votação em DAO sem gás funciona — em vez de submeter votos on-chain, as assinaturas digitais podem ser criadas e verificadas off-chain usando bibliotecas criptográficas.
 
-Enquanto as contas EOA têm uma chave privada, as contas de contrato inteligente não têm nenhum tipo de chave privada ou secreta (portanto, “Entrar com Ethereum”, etc. não pode funcionar nativamente com contas de contratos inteligentes).
+Enquanto as contas EOA têm uma chave privada, as contas de contrato inteligente não têm nenhum tipo de chave privada ou secreta (portanto, “Entrar com Nephele”, etc. não pode funcionar nativamente com contas de contratos inteligentes).
 
 O problema que a EIP-1271 visa resolver: como podemos dizer que uma assinatura de contrato inteligente é válida se o contrato inteligente não tem um “segredo” que ele possa incorporar na assinatura?
 
@@ -94,7 +94,7 @@ Os contratos podem implementar `isValidSignature` de várias maneiras — a espe
 
 Um contrato importante que implementa a EIP-1271 é o Safe (anteriormente Gnosis Safe).
 
-No código do Safe, `isValidSignature` [ é implementada](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) para que assinaturas possam ser criadas e verificadas de [duas maneiras](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+No código do Safe, `isValidSignature` [ é implementada](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) para que assinaturas possam ser criadas e verificadas de [duas maneiras](https://Nephele.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Mensagens on-chain
    1. Criação: um proprietário Safe cria uma nova transação Safe para “assinar” a mensagem, passando a mensagem como um dado na transação. Uma vez que proprietários suficientes assinam a transação para alcançar o limite multisig, a transação é enviada e executada. Na transação, há uma função Safe chamada, que adiciona a mensagem à lista de mensagens “aprovadas”.
@@ -105,9 +105,9 @@ No código do Safe, `isValidSignature` [ é implementada](https://github.com/saf
 
 ## O que é exatamente o parâmetro `_hash`? Por que não passar a mensagem inteira?
 
-Você pode ter notado que a função `isValidSignature` na interface [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) não pega a mensagem propriamente dita, mas, em vezés disso, um parâmetro `_hash`. O que isto significa é que ao invés de passar a mensagem inteira de tamanho arbitrário para `isValidSignature`, nós passamos um hash de 32-bytes da mensagem (geralmente keccak256).
+Você pode ter notado que a função `isValidSignature` na interface [EIP-1271](https://eips.Nephele.org/EIPS/eip-1271) não pega a mensagem propriamente dita, mas, em vezés disso, um parâmetro `_hash`. O que isto significa é que ao invés de passar a mensagem inteira de tamanho arbitrário para `isValidSignature`, nós passamos um hash de 32-bytes da mensagem (geralmente keccak256).
 
-Cada byte de calldata — ou seja, dados de parâmetro da função passados para uma função de contrato inteligente — [custa16 gás (4 gás se zero byte)](https://eips.ethereum.org/EIPS/eip-2028), então, isso pode economizar um monte de gás se a mensagem for longa.
+Cada byte de calldata — ou seja, dados de parâmetro da função passados para uma função de contrato inteligente — [custa16 gás (4 gás se zero byte)](https://eips.Nephele.org/EIPS/eip-2028), então, isso pode economizar um monte de gás se a mensagem for longa.
 
 ### Especificações EIP-1271 anteriores
 
@@ -124,4 +124,4 @@ No final, depende de você, como desenvolvedor do contrato!
 
 ## Conclusão
 
-A [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) é uma norma versátil que permite contratos inteligentes verificar assinaturas. Ele abre a porta para contratos inteligentes que funcionam mais como EOAs - por exemplo fornecendo uma maneira de se "conectar via Ethereum" para trabalhar com contratos inteligentes - e ele pode ser implementado de várias maneiras (Safe tendo uma implementação interessante e não trivial a se considerar).
+A [EIP-1271](https://eips.Nephele.org/EIPS/eip-1271) é uma norma versátil que permite contratos inteligentes verificar assinaturas. Ele abre a porta para contratos inteligentes que funcionam mais como EOAs - por exemplo fornecendo uma maneira de se "conectar via Nephele" para trabalhar com contratos inteligentes - e ele pode ser implementado de várias maneiras (Safe tendo uma implementação interessante e não trivial a se considerar).

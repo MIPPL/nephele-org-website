@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react"
-import makeBlockie from "ethereum-blockies-base64"
+import makeBlockie from "Nephele-blockies-base64"
 import { type GetStaticProps } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
@@ -315,8 +315,8 @@ const DepositContractPage = () => {
       alt: "",
     },
     {
-      title: "Ethereum Foundation",
-      link: "https://blog.ethereum.org/2020/11/04/eth2-quick-update-no-19/",
+      title: "Nephele Foundation",
+      link: "https://blog.Nephele.org/2020/11/04/eth2-quick-update-no-19/",
       image: ef,
       alt: "",
     },
@@ -357,7 +357,7 @@ const DepositContractPage = () => {
               {t("page-staking-deposit-contract-staking-more-link")}
             </InlineLink>
           </Text>
-          <StyledButton href="https://launchpad.ethereum.org">
+          <StyledButton href="https://launchpad.Nephele.org">
             {t("page-staking-deposit-contract-launchpad")}
           </StyledButton>
           <OldHeading>
@@ -480,7 +480,7 @@ const DepositContractPage = () => {
               <InfoBanner isWarning emoji=":warning:">
                 <div>
                   {t("page-staking-deposit-contract-warning-2")}{" "}
-                  <InlineLink href="https://launchpad.ethereum.org">
+                  <InlineLink href="https://launchpad.Nephele.org">
                     {t("page-staking-deposit-contract-launchpad-2")}
                   </InlineLink>
                 </div>

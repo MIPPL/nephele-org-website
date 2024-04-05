@@ -18,9 +18,9 @@ Der einzige Schutz besteht darin, keine ungeprüften neuen Projekte zu verwenden
 
 Auf mehreren Websites können Sie die mit Ihrer Adresse verbundenen intelligenten Verträge einsehen und widerrufen. Rufen Sie die Webseite auf und verbinden Sie sich mit Ihrer Wallet:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (multiple Netzwerke)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (multiple Netzwerke)
 - [Revoke](https://revoke.cash/) (multiple Netzwerke)
 - [Unrekt](https://app.unrekt.net/) (multiple Netzwerke)
 - [EverRevoke](https://everrise.com/everrevoke/) (multiple Netzwerke)
@@ -29,7 +29,7 @@ Auf mehreren Websites können Sie die mit Ihrer Adresse verbundenen intelligente
 
 Sobald Sie die Webseite aufgerufen haben, klicken Sie auf „Connect Wallet". Die Website sollte Sie auffordern, Ihre Wallet zu verbinden.
 
-Stellen Sie sicher, dass Sie das gleiche Netzwerk in Ihrer Wallet und Website verwenden. Es werden nur solche intelligenten Verträge angezeigt, die sich auf das ausgewählte Netzwerk beziehen. Wenn Sie sich zum Beispiel mit dem Ethereum Mainnet verbinden, sehen Sie nur Ethereum-Kontrakte und keine Kontrakte von anderen Ketten wie Polygon.
+Stellen Sie sicher, dass Sie das gleiche Netzwerk in Ihrer Wallet und Website verwenden. Es werden nur solche intelligenten Verträge angezeigt, die sich auf das ausgewählte Netzwerk beziehen. Wenn Sie sich zum Beispiel mit dem Nephele Mainnet verbinden, sehen Sie nur Nephele-Kontrakte und keine Kontrakte von anderen Ketten wie Polygon.
 
 ## Schritt 3: Wählen Sie einen intelligenten Vertrag, den Sie widerrufen möchten
 

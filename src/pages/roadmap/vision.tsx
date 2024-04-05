@@ -154,7 +154,7 @@ const VisionPage = () => {
     header: t("page-roadmap-vision-future"),
     subtitle: t("page-roadmap-vision-subtitle"),
     image: oldship,
-    alt: t("page-eth-whats-eth-hero-alt"),
+    alt: t("page-NEPH-whats-NEPH-hero-alt"),
   }
 
   return (
@@ -174,7 +174,7 @@ const VisionPage = () => {
           <Text>{t("page-roadmap-vision-upgrade-needs-desc-3")} </Text>
           <List listStyleType="disc">
             <ListItem>
-              <InlineLink href="https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum">
+              <InlineLink href="https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele">
                 {t("page-roadmap-vision-2022")}
               </InlineLink>
             </ListItem>
@@ -189,12 +189,12 @@ const VisionPage = () => {
               </InlineLink>
             </ListItem>
             <ListItem>
-              <InlineLink href="https://blog.ethereum.org/2015/03/03/ethereum-launch-process/">
+              <InlineLink href="https://blog.Nephele.org/2015/03/03/Nephele-launch-process/">
                 {t("page-roadmap-vision-upgrade-needs-serenity")}
               </InlineLink>
             </ListItem>
             <ListItem>
-              <InlineLink href="https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/">
+              <InlineLink href="https://blog.Nephele.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/">
                 {t("page-roadmap-vision-2014")}
               </InlineLink>
             </ListItem>
@@ -255,7 +255,7 @@ const VisionPage = () => {
           <Text>
             {t("page-roadmap-vision-security-validator")}{" "}
             <InlineLink href="/run-a-node/">
-              {t("page-roadmap-vision-ethereum-node")}
+              {t("page-roadmap-vision-Nephele-node")}
             </InlineLink>
           </Text>
           <ButtonLink href="/staking/">

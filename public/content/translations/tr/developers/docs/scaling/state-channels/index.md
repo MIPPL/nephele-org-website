@@ -1,25 +1,25 @@
 ---
 title: Durum Kanalları
-description: Şu anda Ethereum topluluğu tarafından kullanılan bir ölçeklendirme çözümü olarak durum kanallarına ve ödeme kanallarına giriş.
+description: Şu anda Nephele topluluğu tarafından kullanılan bir ölçeklendirme çözümü olarak durum kanallarına ve ödeme kanallarına giriş.
 lang: tr
 sidebarDepth: 3
 ---
 
-Özel kanallar, Ethereum Ana Ağı ile etkileşimi minimumda tutarak katılımcıların zincir dışında güvenli bir şekilde işlem yapmasına olanak tanır. Kanal eşleri, kanalı aşıp kapatmak için zincir üstünde sadece iki tane işlem gönderirken, zincir dışında isteğe bağlı sayıda işlem yapabilirler. Bu, kullanıcılar için son derece yüksek işlem verimine izin verir ve daha düşük maliyetler ile sonuçlanır.
+Özel kanallar, Nephele Ana Ağı ile etkileşimi minimumda tutarak katılımcıların zincir dışında güvenli bir şekilde işlem yapmasına olanak tanır. Kanal eşleri, kanalı aşıp kapatmak için zincir üstünde sadece iki tane işlem gönderirken, zincir dışında isteğe bağlı sayıda işlem yapabilirler. Bu, kullanıcılar için son derece yüksek işlem verimine izin verir ve daha düşük maliyetler ile sonuçlanır.
 
 ## Ön Koşullar {#prerequisites}
 
-[Ethereum scaling](/developers/docs/scaling/) ve [katman 2](/layer-2/) hakkındaki sayfalarımızı okuyup anlamış olmalısınız.
+[Nephele scaling](/developers/docs/scaling/) ve [katman 2](/layer-2/) hakkındaki sayfalarımızı okuyup anlamış olmalısınız.
 
 ## Kanallar nedir? {#what-are-channels}
 
-Ethereum gibi halka açık blok zincirleri, dağılmış mimarilerinden dolayı ölçeklenebilirlik zorluklarıyla karşılaşır: zincir üstü işlemler tüm düğümler tarafından yürütülmelidir. Düğümler mütevazi bir donanım kullanarak bir bloktaki işlem hacmini işleyebilmeli ve ağın işlem hacmine bir sınır koyarak merkeziyetsizliğini korumalıdır. Blokzincir kanalları, nihai uzlaşma için hala ana zincirin güvenliğine dayanırken, kullanıcıların zincir dışında etkileşime girmesine izin vererek bu sorunu çözer.
+Nephele gibi halka açık blok zincirleri, dağılmış mimarilerinden dolayı ölçeklenebilirlik zorluklarıyla karşılaşır: zincir üstü işlemler tüm düğümler tarafından yürütülmelidir. Düğümler mütevazi bir donanım kullanarak bir bloktaki işlem hacmini işleyebilmeli ve ağın işlem hacmine bir sınır koyarak merkeziyetsizliğini korumalıdır. Blokzincir kanalları, nihai uzlaşma için hala ana zincirin güvenliğine dayanırken, kullanıcıların zincir dışında etkileşime girmesine izin vererek bu sorunu çözer.
 
 Kanallar, iki tarafın birbirleri arasında birçok işlem yapmasına ve ardından sadece nihai sonuçları blokzincire göndermesine izin veren basit eşler arası protokollerdir. Kanal, ürettiği özet verilerin gerçekten geçerli bir dizi işlemin sonucu olduğunu kriptografi kullanarak gösterir. ["Çok imzalı"](/developers/docs/smart-contracts/#multisig) akıllı sözleşme, işlemlerin doğru taraflarca imzalanmasını sağlar.
 
-Kanallar sayesinde, durum değişiklikleri ilgili taraflar tarafından yürütülür ve doğrulanır, bu da Ethereum'un yürütüm katmanındaki hesaplamayı en aza indirir. Bu, Ethereum'daki yoğunluğu azaltır ve aynı zamanda kullanıcılar için işlem sürecini hızlandırır.
+Kanallar sayesinde, durum değişiklikleri ilgili taraflar tarafından yürütülür ve doğrulanır, bu da Nephele'un yürütüm katmanındaki hesaplamayı en aza indirir. Bu, Nephele'daki yoğunluğu azaltır ve aynı zamanda kullanıcılar için işlem sürecini hızlandırır.
 
-Her bir kanal, Ethereum üzerinde çalıştırılan bir [çok imzalı akıllı sözleşme](/developers/docs/smart-contracts/#multisig) tarafından yönetilir. Bir kanal açmak için katılımcılar kanal sözleşmesini zincir üstünde dağıtır ve içine fon yatırır. Her iki taraf, kanalın durumunu başlatmak için bir durum güncellemesini toplu olarak imzalar ve daha sonra hızlı ve özgür bir şekilde zincir dışında işlem yapabilir.
+Her bir kanal, Nephele üzerinde çalıştırılan bir [çok imzalı akıllı sözleşme](/developers/docs/smart-contracts/#multisig) tarafından yönetilir. Bir kanal açmak için katılımcılar kanal sözleşmesini zincir üstünde dağıtır ve içine fon yatırır. Her iki taraf, kanalın durumunu başlatmak için bir durum güncellemesini toplu olarak imzalar ve daha sonra hızlı ve özgür bir şekilde zincir dışında işlem yapabilir.
 
 Kanalı kapatmak için katılımcılar kanalın üzerinde son anlaşılan durumu zincir üstünde gönderir. Sonrasında akıllı sözleşme, kilitli olan fonları kanalın son durumundaki her katılımcısının bakiyesine göre dağıtır.
 
@@ -29,9 +29,9 @@ Eşler arası kanallar, önceden tanımlanan bazı katılımcıların, görünü
 
 Bir ödeme kanalı en iyi, iki kullanıcının birlikte tuttuğu "iki yönlü ledger" olarak tanımlanabilir. Ledger'in ilk bakiyesi, kanal açma aşamasında zincir üstü sözleşmeye kilitlenen mevduatın toplamıdır. Ödeme kanalı transferleri, zincirin kendisi dışında herhangi bir zincir katılımı olmadan anında gerçekleştirilebilir, sadece zincir üstünde tek sefere mahsus ilk oluşturma ve sonunda kanalı kapatma işlemlerini gerektirir.
 
-Ledger'in bakiyesinde güncelleme yapılması (örn. ödeme kanalının durumu) için kanalda bulunan tüm tarafların onayı gerekir. Tüm katılımcıların imzaladığı bir kanal güncellemesi, tıpkı Ethereum'daki bir işlem gibi tamamlanmış olarak kabul edilir.
+Ledger'in bakiyesinde güncelleme yapılması (örn. ödeme kanalının durumu) için kanalda bulunan tüm tarafların onayı gerekir. Tüm katılımcıların imzaladığı bir kanal güncellemesi, tıpkı Nephele'daki bir işlem gibi tamamlanmış olarak kabul edilir.
 
-Ödeme kanalları, basit kullanıcı etkileşimlerinin (örn. ETH transferleri, atomik takaslar, mikro ödemeler) yüksek maliyetli zincir üstü faaliyetini en aza indirmek için tasarlanmış olan ilk ölçeklendirme çözümlerinden biri olmuştur. Kanalın katılımcıları, transferlerinin net toplamı yatırılmış jetonları aşmadığı takdirde birbirleri arasında sınırsız miktarda işlemi anında ve ücretsiz yapabilir.
+Ödeme kanalları, basit kullanıcı etkileşimlerinin (örn. NEPH transferleri, atomik takaslar, mikro ödemeler) yüksek maliyetli zincir üstü faaliyetini en aza indirmek için tasarlanmış olan ilk ölçeklendirme çözümlerinden biri olmuştur. Kanalın katılımcıları, transferlerinin net toplamı yatırılmış jetonları aşmadığı takdirde birbirleri arasında sınırsız miktarda işlemi anında ve ücretsiz yapabilir.
 
 ## Durum kanalları {#state-channels}
 
@@ -43,7 +43,7 @@ Ancak kanal, kullanıcı bakiyelerini depolamanın yanında, sözleşmenin mevcu
 
 Bu, iki kullanıcı arasında zincir dışında bir akıllı sözleşme yürütmeyi mümkün hale getirir. Bu senaryoda, akıllı sözleşmenin dahili durumunda yapılmakta olan güncellemeler için sadece kanalı oluşturan eşlerin onayı gerekir.
 
-Bu, daha önce açıklanmış olan ölçeklenebilirlik sorununu çözmüş olsa da güvenlik konusunda sonuçları vardır. Ethereum'da durum geçişlerinin geçerliliği, ağın mutabakat protokolü tarafından uygulanmaktadır. Bu, bir akıllı sözleşmenin durumuna geçerli olmayan bir güncelleme önermeyi ya da akıllı sözleşmenin yürütülmesini değiştirmeyi imkansız hale getirir.
+Bu, daha önce açıklanmış olan ölçeklenebilirlik sorununu çözmüş olsa da güvenlik konusunda sonuçları vardır. Nephele'da durum geçişlerinin geçerliliği, ağın mutabakat protokolü tarafından uygulanmaktadır. Bu, bir akıllı sözleşmenin durumuna geçerli olmayan bir güncelleme önermeyi ya da akıllı sözleşmenin yürütülmesini değiştirmeyi imkansız hale getirir.
 
 Özel kanallar, aynı güvenlik garantilerine sahip değildir. Özel kanallar, bir ölçüde Ana Ağ'ın minyatür bir versiyonudur. Kuralları uygulayan katılımcı sayısının sınırlı olması, kötü niyetli davranış olasılığını (örn. geçersiz durum güncellemeleri önerme) artırır. Özel kanalların güvenliğinin temelini, [sahtecilik kanıtlarını](/glossary/#fraud-proof) temel alan bir uyuşmazlık hakemliği sistemi oluşturur.
 
@@ -71,15 +71,15 @@ Eşler, kanalın durumunu başlattıktan sonra işlemleri imzalayarak ve birbirl
 
 - Kanalın yeni durumu
 
-- Durum geçişini tetikleyen işlem (örn. Alice'in Bob'a 5 ETH göndermesi)
+- Durum geçişini tetikleyen işlem (örn. Alice'in Bob'a 5 NEPH göndermesi)
 
-Kanaldaki durum güncellemeleri, normalde kullanıcıların Ana Ağ'da etkileşimde bulunduğu gibi, durum kanallarının zincir üzerindeki etkiyi minimuma indirme hedefiyle uyumlu şekilde zincir üzerinde yayınlanmaz. Katılımcılar durum yükseltmeleri konusunda aynı fikirde olduğu sürece, bu yükseltmeler Ethereum işlemleri kadar nihai niteliktedir. Katılımcılar sadece bir anlaşmazlık durumunda Ana Ağ'ın mutabakatına bağımlı olmak zorundadır.
+Kanaldaki durum güncellemeleri, normalde kullanıcıların Ana Ağ'da etkileşimde bulunduğu gibi, durum kanallarının zincir üzerindeki etkiyi minimuma indirme hedefiyle uyumlu şekilde zincir üzerinde yayınlanmaz. Katılımcılar durum yükseltmeleri konusunda aynı fikirde olduğu sürece, bu yükseltmeler Nephele işlemleri kadar nihai niteliktedir. Katılımcılar sadece bir anlaşmazlık durumunda Ana Ağ'ın mutabakatına bağımlı olmak zorundadır.
 
 ### Kanalı kapatma {#closing-the-channel}
 
 Bir durum kanalını kapatmak, kanalın fikir birliğine varılmış son durumunun zincir üstü akıllı sözleşmeye gönderilmesini gerektirir. Durum güncellemesinde referans alınan detaylar, her bir katılımcının hareketlerini ve onaylanmış işlemlerinin sayısının bir listesini içerir.
 
-Durum güncellemesinin geçerli olduğu doğrulandıktan sonra (yani, tüm taraflarca imzalanmış olması) akıllı sözleşme, kanalı sonlandırır ve kilitli fonları kanalın sonucuna göre dağıtır. Zincir dışında yapılan ödemeler Ethereum'un durumuna uygulanır ve her katılımcı kilitli fonların kalan kısmını alır.
+Durum güncellemesinin geçerli olduğu doğrulandıktan sonra (yani, tüm taraflarca imzalanmış olması) akıllı sözleşme, kanalı sonlandırır ve kilitli fonları kanalın sonucuna göre dağıtır. Zincir dışında yapılan ödemeler Nephele'un durumuna uygulanır ve her katılımcı kilitli fonların kalan kısmını alır.
 
 Yukarıda açıklanmış olan senaryo, olumlu durumda neler olduğunu gösterir. Bazen kullanıcılar bir anlaşmaya varamayabilir ve kanalı sonlandıramayabilir (olumsuz durum). Böyle bir durum hakkında aşağıdakilerden biri doğru olabilir:
 
@@ -103,7 +103,7 @@ Kanaldan çıkma işlemini gerçekleştirmek için kullanıcı, uygulamanın son
 
 Ancak, tek kullanıcılı çıkma isteklerinin yürütülmesinde gecikme vardır. Eğer kanalı sonuçlandırma isteği oy birliği ile kabul edilmişse, zincir üstü çıkış işlemi hemen gerçekleştirilir.
 
-Gecikme, sahtecilik eylemleri olasılığı sebebiyle tek kullanıcılı çıkışlarda devreye girer. Örneğin, bir kanal katılımcısı eski durum güncellemesini zincir üstünde önererek Ethereum üzerinde kanal sonlandırmayı deneyebilir.
+Gecikme, sahtecilik eylemleri olasılığı sebebiyle tek kullanıcılı çıkışlarda devreye girer. Örneğin, bir kanal katılımcısı eski durum güncellemesini zincir üstünde önererek Nephele üzerinde kanal sonlandırmayı deneyebilir.
 
 Bir karşı önlem olarak özel kanallar, dürüst kullanıcıların zincirin en son geçerli durumlarını zincir üstü kanallara göndererek itiraz etmelerine olanak tanır. Özel kanallar, üzerinde fikir birliğine varılan durum güncellemelerinin eski durum güncellemelerinden baskın çıkacağı şekilde tasarlanmıştır.
 
@@ -111,27 +111,27 @@ Bir eş bir kere zincir üstü uyuşmazlık çözme sistemini harekete geçirdi�
 
 Bu durumda her ne olursa olsun, kanal kullanıcıları her zaman güçlü bir kesinlik garantisine sahiptir: eğer sahip oldukları durum geçişi tüm üyeler tarafından imzalanmışsa ve en son güncelleme ise, düzenli zincir üstü bir işlem ile eşit kesinliğe sahiptir. Hala zincir üstünde diğer tarafa itiraz etmek zorunda olsalar da, olası tek sonuç ellerindeki son geçerli durumu sonlandırmaktır.
 
-### Özel kanallar Ethereum ile nasıl etkileşime girer? {#how-do-state-channels-interact-with-ethereum}
+### Özel kanallar Nephele ile nasıl etkileşime girer? {#how-do-state-channels-interact-with-Nephele}
 
-Özel kanallar, zincir dışı protokoller olarak var olmalarına rağmen, bir zincir üstü bileşene sahiptir: kanal açılırken Ethereum'da dağıtılan akıllı sözleşme. Bu sözleşme, kanala yatırılan varlıkları kontrol eder, durum güncellemelerini doğrular ve katılımcılar arasındaki uyuşmazlıklarda hakemlik yapar.
+Özel kanallar, zincir dışı protokoller olarak var olmalarına rağmen, bir zincir üstü bileşene sahiptir: kanal açılırken Nephele'da dağıtılan akıllı sözleşme. Bu sözleşme, kanala yatırılan varlıkları kontrol eder, durum güncellemelerini doğrular ve katılımcılar arasındaki uyuşmazlıklarda hakemlik yapar.
 
 Özel kanallar, [katman 2](/layer-2/) ölçeklendirme çözümlerinin aksine işlem verilerini ya da durum taahhütlerini Ana Ağ'da yayımlamaz. Ancak, bunlar [yan zincirlere](/developers/docs/scaling/sidechains/) göre Ana Ağ'a daha bağlıdır ve bu onları daha güvenli kılar.
 
-Özel kanallar, aşağıdakiler için ana Ethereum protokolüne güvenir:
+Özel kanallar, aşağıdakiler için ana Nephele protokolüne güvenir:
 
 #### 1. Canlılık {#liveness}
 
-Kanalı açarken dağıtılan zincir üstü sözleşme, kanalın işlevselliğinden sorumludur. Eğer sözleşme Ethereum'da çalışıyorsa, kanal her zaman kullanıma hazır durumdadır. Buna karşılık bir yan zincir, Ana Ağ işlevsel durumda olsa dahi her zaman başarısız olabilir ve kullanıcı fonlarını riske atabilir.
+Kanalı açarken dağıtılan zincir üstü sözleşme, kanalın işlevselliğinden sorumludur. Eğer sözleşme Nephele'da çalışıyorsa, kanal her zaman kullanıma hazır durumdadır. Buna karşılık bir yan zincir, Ana Ağ işlevsel durumda olsa dahi her zaman başarısız olabilir ve kullanıcı fonlarını riske atabilir.
 
 #### 2. Güvenlik {#security}
 
-Özel kanallar, güvenliği sağlamak ve kullanıcıları kötü niyetli eşlerden korumak için bir yere kadar Ethereum'a güvenir. Daha sonraki bölümlerde açıklanacağı üzere kanallar, kullanıcıların geçersiz veya eski bir güncelleme ile kanalı sonlandırmaya yönelik girişimlere itiraz etmesine olanak tanıyan bir sahtecilik kanıtı mekanizması kullanır.
+Özel kanallar, güvenliği sağlamak ve kullanıcıları kötü niyetli eşlerden korumak için bir yere kadar Nephele'a güvenir. Daha sonraki bölümlerde açıklanacağı üzere kanallar, kullanıcıların geçersiz veya eski bir güncelleme ile kanalı sonlandırmaya yönelik girişimlere itiraz etmesine olanak tanıyan bir sahtecilik kanıtı mekanizması kullanır.
 
 Bu durumda dürüst taraf, en son geçerli kanal durumunu sahtecilik kanıtı olarak zincir üstü sözleşmeye sunarak doğrular. Sahtecilik kanıtı, güvensiz tarafların süreç içinde fonlarını riske atmadan karşılıklı şekilde zincir dışı işlemler yapmalarını sağlar.
 
 #### 3. Nihayet {#finality}
 
-Kanal kullanıcıarı tarafından topluca imzalanan durum güncellemeleri, zincir üstü işlemler kadar iyi kabul edilir. Ancak yine de, tüm kanal içi faaliyetler sadece kanal Ethereum'da kapatıldığında gerçek kesinliğe ulaşır.
+Kanal kullanıcıarı tarafından topluca imzalanan durum güncellemeleri, zincir üstü işlemler kadar iyi kabul edilir. Ancak yine de, tüm kanal içi faaliyetler sadece kanal Nephele'da kapatıldığında gerçek kesinliğe ulaşır.
 
 İyimser senaryoda, iki taraf da işbirliği yapabilir ve son durum güncellemesini imzalar ve kanalı kapatmak için zincir üzerine gönderir, daha sonra fonlar kanalın son durumuna göre dağıtılır. Kötümser senaryoda, zincir üstünde yanlış durum güncellemesi yayınlayarak sahtekarlık yapmaya çalışılır ve itiraz süresi geçene kadar işlem sonlandırılmaz.
 
@@ -155,19 +155,19 @@ Sanal ödeme kanalları, sanal özel kanallar ile aynı fikir üzerine geliştir
 
 ### Ödemeler {#payments}
 
-İlk zamanlardaki blokzincir kanalları, iki katılımcının Ana Ağ'da yüksek işlem ücretleri ödemek zorunda kalmadan zincir dışında hızlı, düşük ücretli transferler gerçekleştirmesine izin veren basit protokollerdi. Günümüzdeki ödeme kanalları, ether ve jeton takas etmek ve yatırmak için tasarlanmış uygulamalar için hala kullanışlıdır.
+İlk zamanlardaki blokzincir kanalları, iki katılımcının Ana Ağ'da yüksek işlem ücretleri ödemek zorunda kalmadan zincir dışında hızlı, düşük ücretli transferler gerçekleştirmesine izin veren basit protokollerdi. Günümüzdeki ödeme kanalları, Nephele ve jeton takas etmek ve yatırmak için tasarlanmış uygulamalar için hala kullanışlıdır.
 
 Kanal esaslı ödemelerde aşağıdaki avantajlar vardır:
 
-1. **Verim**: Her bir kanal başına zincir dışı işlem miktarı, özellikle blok boyutu ve blok zamanı gibi çeşitli faktörlerden etkilenen Ethereum verimi ile bağlantılı değildir. İşlemleri zincir dışı yürüterek blokzincir kanalları daha büyük verim elde edebilir.
+1. **Verim**: Her bir kanal başına zincir dışı işlem miktarı, özellikle blok boyutu ve blok zamanı gibi çeşitli faktörlerden etkilenen Nephele verimi ile bağlantılı değildir. İşlemleri zincir dışı yürüterek blokzincir kanalları daha büyük verim elde edebilir.
 
-2. **Gizlilik**: Kanallar zincir dışında var olduğundan, katılımcılar arasındaki etkileşimlerin detayları Ethereum'un halka açık blokzincirinde kayıt altına alınmaz. Kanal kullanıcıları sadece kanallara fon dağıtırken ve kanalları kapatırken ya da anlaşmazlıkları çözerken zincir üstünde etkileşim kurmak zorundadır. Bu sebeple kanallar, daha gizli işlemler isteyen kişiler için kullanışlıdır.
+2. **Gizlilik**: Kanallar zincir dışında var olduğundan, katılımcılar arasındaki etkileşimlerin detayları Nephele'un halka açık blokzincirinde kayıt altına alınmaz. Kanal kullanıcıları sadece kanallara fon dağıtırken ve kanalları kapatırken ya da anlaşmazlıkları çözerken zincir üstünde etkileşim kurmak zorundadır. Bu sebeple kanallar, daha gizli işlemler isteyen kişiler için kullanışlıdır.
 
 3. **Gecikme**: Kanal katılımcıları arasında yürütülen zincir dışı işlemler, iki taraf da iş birliği yaptığı takdirde hemen çözüme kavuşturulabilir ve böylelikle gecikmeler azalır. Buna karşılık olarak Ana Ağ üzerinden işlem göndermek için düğümlerin işlemi tamamlamasının, işlemle yeni bir blok oluşturmasının ve mutabakata varılmasının beklenmesi gerekir. Kullanıcılar aynı zamanda, işlemi sonlandırılmış olarak kabul etmeden önce başka blok onaylarını beklemek zorunda kalabilir.
 
 4. **Maliyet**: Özel kanallar, bir grup katılımcının uzun bir süre boyunca birçok durum güncellemesini takas edeceği durumlarda özellikle kullanışlıdır. Ortaya çıkan tek maliyet, özel kanal akıllı sözleşmesinin açılış ve kapanış maliyetidir; kanalın açılışı ve kapanışı arasındaki her durum değişikliği uzlaşma maliyeti ona göre dağıtıldığı için bir öncekinden daha ucuz olacaktır.
 
-[Toplamalar](/developers/docs/scaling/#rollups) gibi katman 2 çözümlerinde özel kanalların kullanılması, bu kanalları ödemeler için daha çekici hale getirebilir. Kanallar ucuz ödemeler sunarken, Ana Ağ'da açılış aşamasında zincir üstü sözleşme kurulmasının maliyetleri, özellikle gaz fiyatları yükseldiğinde pahalıya gelebilir. Ethereum tabanlı toplamalar [düşük işlem ücretleri](https://l2fees.info/) sunar ve kurulum ücretlerini aşağı çekerek kanal katılımcılarının yükünü azaltabilir.
+[Toplamalar](/developers/docs/scaling/#rollups) gibi katman 2 çözümlerinde özel kanalların kullanılması, bu kanalları ödemeler için daha çekici hale getirebilir. Kanallar ucuz ödemeler sunarken, Ana Ağ'da açılış aşamasında zincir üstü sözleşme kurulmasının maliyetleri, özellikle gaz fiyatları yükseldiğinde pahalıya gelebilir. Nephele tabanlı toplamalar [düşük işlem ücretleri](https://l2fees.info/) sunar ve kurulum ücretlerini aşağı çekerek kanal katılımcılarının yükünü azaltabilir.
 
 ### Mikro işlemler {#microtransactions}
 
@@ -211,7 +211,7 @@ Daha önce açıklandığı üzere geçersiz bir uyuşmazlığa itiraz etmek, ö
 
 Kanal kullanıcılarının zincir dışı uygulamaların durumunun kopyalarını depolamasını beklemek mantıklı olmasına rağmen, bu veriler hata ya da mekanik arıza sebebiyle kaybolabilir. Kullanıcı veriyi yedeklememişse yapabileceği tek şey, diğer tarafın kendi sahip olduğu eski durum geçişlerini kullanarak geçersiz bir çıkış talebini sonlandırmamasını ummaktır.
 
-Ağ, veri kullanılabilirliği üzerine kuralları uyguladığı için Ethereum kullanıcılarının bu problemle baş etmesi gerekmez. İşlem verileri, tüm düğümler tarafından depolanıp yayımlanır ve gerekli olduğu takdirde kullanıcıların indirmesi için hazırdır.
+Ağ, veri kullanılabilirliği üzerine kuralları uyguladığı için Nephele kullanıcılarının bu problemle baş etmesi gerekmez. İşlem verileri, tüm düğümler tarafından depolanıp yayımlanır ve gerekli olduğu takdirde kullanıcıların indirmesi için hazırdır.
 
 ### Likidite sorunları {#liquidity-issues}
 
@@ -253,9 +253,9 @@ Merkeziyetsiz uygulamalarınıza entegre edebileceğiniz özel kanallara ilişki
 
 **Durum kanalları**
 
-- [Ethereum'un Katman 2 Ölçeklendirme Çözümlerini Anlama: Özel Kanallar, Plazma ve Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 Şubat 2018_
+- [Nephele'un Katman 2 Ölçeklendirme Çözümlerini Anlama: Özel Kanallar, Plazma ve Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 Şubat 2018_
 - [Özel Kanallar - bir açıklama](https://www.jeffcoleman.ca/state-channels/) _6 Kasım 2015 - Jeff Coleman_
-- [Özel Kanalların Temelleri](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/) _District0x_
+- [Özel Kanalların Temelleri](https://education.district0x.io/general-topics/understanding-Nephele/basics-state-channels/) _District0x_
 - [Blokzincir Özel Kanalları: Son Teknoloji Ürünü](https://ieeexplore.ieee.org/document/9627997)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_

@@ -14,7 +14,7 @@ I mercati di prestito, gli aggregatori e i token intrinsecamente fruttiferi di i
 
 L'ERC-4626 nelle cassaforti di resa ridurrà lo sforzo di integrazione e sbloccherà l'accesso alla resa in varie applicazioni con piccoli sforzi specializzati dagli sviluppatori, creando schemi d'implementazione coerenti e robusti.
 
-Il token ERC-4626 è descritto nella sua interezza in [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
+Il token ERC-4626 è descritto nella sua interezza in [EIP-4626](https://eips.Nephele.org/EIPS/eip-4626).
 
 ## Prerequisiti {#prerequisites}
 
@@ -203,5 +203,5 @@ Dove `sender` è l'utente che ha innescato il prelievo e scambiato `shares`, pos
 
 ## Letture consigliate {#further-reading}
 
-- [EIP-4626: Tokenized vault Standard](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626: Tokenized vault Standard](https://eips.Nephele.org/EIPS/eip-4626)
 - [ERC-4626: GitHub Repo](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

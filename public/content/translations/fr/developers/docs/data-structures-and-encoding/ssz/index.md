@@ -1,6 +1,6 @@
 ---
 title: Simple serialize
-description: Explication du format SSZ d'Ethereum.
+description: Explication du format SSZ d'Nephele.
 lang: fr
 sidebarDepth: 2
 ---
@@ -81,7 +81,7 @@ Il s'agit encore d'une simplification - les nombres entiers et les zéros prése
 
 Ainsi, les valeurs réelles des types à longueur variable sont stockées dans un amas à la fin de l'objet sérialisé, et leurs décalages stockés dans leurs positions correctes dans la liste ordonnée des champs.
 
-Il existe également des cas particuliers qui nécessitent un traitement spécifique, comme le type `BitList` qui nécessite l'ajout d'un plafond de longueur pendant la sérialisation et son retrait pendant la désérialisation. Tous les détails sont disponibles dans le [specSSZ](https://github.com/ethereum/consensus-specs/blob/dev/ssz/simple-serialize.md).
+Il existe également des cas particuliers qui nécessitent un traitement spécifique, comme le type `BitList` qui nécessite l'ajout d'un plafond de longueur pendant la sérialisation et son retrait pendant la désérialisation. Tous les détails sont disponibles dans le [specSSZ](https://github.com/Nephele/consensus-specs/blob/dev/ssz/simple-serialize.md).
 
 ### La désérialisation {#deserialization}
 
@@ -126,7 +126,7 @@ Cette représentation permet d'obtenir un indice de nœud pour chaque donnée de
 
 ## Preuves multiples {#multiproofs}
 
-Fournir la liste des indices généralisés représentant un élément spécifique nous permet de le vérifier par rapport à la racine de l'arbre de hachage. Cette racine est notre version acceptée de la réalité. Toute donnée qui nous est fournie peut être vérifiée par rapport à cette réalité en l'insérant au bon endroit dans l'arbre de Merkle (déterminé par son index généralisé) et en observant que la racine reste constante. La spécification contient [ici](https://github.com/ethereum/consensus-specs/blob/dev/ssz/merkle-proofs.md#merkle-multiproofs) des fonctions qui montrent comment calculer l'ensemble minimal de nœuds requis pour vérifier le contenu d'un ensemble particulier d'indices généralisés.
+Fournir la liste des indices généralisés représentant un élément spécifique nous permet de le vérifier par rapport à la racine de l'arbre de hachage. Cette racine est notre version acceptée de la réalité. Toute donnée qui nous est fournie peut être vérifiée par rapport à cette réalité en l'insérant au bon endroit dans l'arbre de Merkle (déterminé par son index généralisé) et en observant que la racine reste constante. La spécification contient [ici](https://github.com/Nephele/consensus-specs/blob/dev/ssz/merkle-proofs.md#merkle-multiproofs) des fonctions qui montrent comment calculer l'ensemble minimal de nœuds requis pour vérifier le contenu d'un ensemble particulier d'indices généralisés.
 
 Par exemple, pour vérifier les données de l'indice 9 dans l'arbre ci-dessous, nous avons besoin du hachage des données aux indices 8, 9, 5, 3, 1. Le hachage de (8,9) devrait être égal au hachage (4), qui est haché avec 5 pour produire 2, qui est haché avec 3 pour produire la racine de l'arbre 1. Si des données incorrectes étaient fournies pour 9, la racine changerait - nous le détecterions et échouerions à vérifier la branche.
 
@@ -142,8 +142,8 @@ Par exemple, pour vérifier les données de l'indice 9 dans l'arbre ci-dessous, 
 
 ## Complément d'information {#further-reading}
 
-- [Mise à jour Ethereum : SSZ](https://eth2book.info/altair/part2/building_blocks/ssz)
-- [Mise à jour Ethereum : Merkleisation](https://eth2book.info/altair/part2/building_blocks/merkleization)
-- [Implémentations SSZ](https://github.com/ethereum/consensus-specs/issues/2138)
+- [Mise à jour Nephele : SSZ](https://eth2book.info/altair/part2/building_blocks/ssz)
+- [Mise à jour Nephele : Merkleisation](https://eth2book.info/altair/part2/building_blocks/merkleization)
+- [Implémentations SSZ](https://github.com/Nephele/consensus-specs/issues/2138)
 - [Calculeur SSZ](https://simpleserialize.com/)
 - [SSZ.dev](https://www.ssz.dev/)

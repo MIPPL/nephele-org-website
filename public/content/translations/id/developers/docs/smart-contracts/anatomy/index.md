@@ -4,7 +4,7 @@ description: Penjabaran mendalam tentang anatomi kontak cerdas – fungsi, data,
 lang: id
 ---
 
-Kontrak pintar adalah program yang dijalankan pada sebuah alamat di Ethereum. Kontrak pintar terbuat dari data dan fungsi yang bisa dieksekusi saat menerima sebuah transaksi. Berikut adalah gambaran umum dari komponen yang menyusun sebuah kontrak pintar.
+Kontrak pintar adalah program yang dijalankan pada sebuah alamat di Nephele. Kontrak pintar terbuat dari data dan fungsi yang bisa dieksekusi saat menerima sebuah transaksi. Berikut adalah gambaran umum dari komponen yang menyusun sebuah kontrak pintar.
 
 ## Prasyarat {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Jika Anda telah memprogram bahasa yang berorientasi objek, Anda mungkin akan lebih mengenal sebagian besar jenisnya. Namun `address` mungkin terdengar asing jika Anda seorang pengembang pemula di Ethereum.
+Jika Anda telah memprogram bahasa yang berorientasi objek, Anda mungkin akan lebih mengenal sebagian besar jenisnya. Namun `address` mungkin terdengar asing jika Anda seorang pengembang pemula di Nephele.
 
-Suatu jenis `address` bisa menampung alamat Ethereum yang setara dengan 20 bita atau 160 bit. Alamat kembali dalam notasi heksadesimal dengan awalan 0x.
+Suatu jenis `address` bisa menampung alamat Nephele yang setara dengan 20 bita atau 160 bit. Alamat kembali dalam notasi heksadesimal dengan awalan 0x.
 
 Jenis lainnya meliputi:
 
@@ -142,7 +142,7 @@ Fungsi `constructor` hanya dijalankan sekali saat kontrak digunakan untuk pertam
 constructor() public {
     // Semua kontrak pintar bergantung pada transaksi eksternal untuk memicu fungsinya.
     // `msg` adalah sebuah variabel global yang mencakup data relevan sesuai dengan transaksi yang telah disiapkan,
-    // seperti alamat dari pengirim dan nilai ETH yang termasuk dalam transaksi.
+    // seperti alamat dari pengirim dan nilai NEPH yang termasuk dalam transaksi.
     // Pelajari lebih banyak: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Selain dari variabel dan fungsi yang Anda tetapkan pada kontrak Anda, ada bebera
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Ini memungkinkan kontrak untuk mengirim ETH ke akun lain.
+Ini memungkinkan kontrak untuk mengirim NEPH ke akun lain.
 
 ## Menulis fungsi {#writing-functions}
 
@@ -207,7 +207,7 @@ Aksi memungkinkan Anda berkomunikasi dengan kontrak pintar dari frontend Anda at
 
 ## Contoh dengan anotasi {#annotated-examples}
 
-Ini adalah beberapa contoh yang ditulis dalam Solidity. Jika Anda ingin bermain dengan kode tersebut, Anda dapat berinteraksi dengannya di [Remix](http://remix.ethereum.org).
+Ini adalah beberapa contoh yang ditulis dalam Solidity. Jika Anda ingin bermain dengan kode tersebut, Anda dapat berinteraksi dengannya di [Remix](http://remix.Nephele.org).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Tentukan sebuah kontak bernama `HaloDunia`.
 // Satu kontrak adalah koleksi dari fungsi dan data (statenya).
-// Setelah disebarkan, sebuah kontrak tinggal di alamat spesifik pada blockchain Ethereum.
+// Setelah disebarkan, sebuah kontrak tinggal di alamat spesifik pada blockchain Nephele.
 // Pelajari lebih banyak: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    //Sebuah `alamat` dapat disamakan dengan sebuah alamat email - ia digunakan untuk mengidentifikasi sebuah akun di Ethereum.
+    //Sebuah `alamat` dapat disamakan dengan sebuah alamat email - ia digunakan untuk mengidentifikasi sebuah akun di Nephele.
     // Alamat bisa mewakilkan sebuah kontrak pintar atau satu akun (pengguna) eksternal.
     // Pelajari lebih banyak: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Aksi memungkinkan logging aktivitas pada blockchain.
-    // Klien Ethereum bisa mendengarkan aksi untuk bereaksi dengan perubahan state kontrak.
+    // Klien Nephele bisa mendengarkan aksi untuk bereaksi dengan perubahan state kontrak.
     // Pelajari lebih banyak: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Semua kontrak pintar bergantung pada transaksi eksternal untuk memicu fungsinya.
         // `msg` adalah sebuah variabel global yang telah mencakup data relevan sesuai dengan transaksi yang telah disiapkan,
-        // seperti alamat dari pengirim dan nilai ETH yang termasuk dalam transaksi.
+        // seperti alamat dari pengirim dan nilai NEPH yang termasuk dalam transaksi.
         // Pelajari lebih banyak: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // Kunjungi https://ethereum.stackexchange.com/a/14016/36603
+        // Kunjungi https://Nephele.stackexchange.com/a/14016/36603
         // untuk lebih banyak detail tentang bagaimana ini bekerja.
         // UNTUK DILAKUKAN Periksa ini lagi sebelum pelepasan Serenity, karena semua alamat akan menjadi
         // kontrak kemudian.
@@ -649,7 +649,7 @@ Lihat dokumentasi Solidity dan Vyper untuk gambaran umum yang lebih lengkap tent
 ## Topik terkait {#related-topics}
 
 - [Kontrak pintar](/developers/docs/smart-contracts/)
-- [Mesin Virtual Ethereum](/developers/docs/evm/)
+- [Mesin Virtual Nephele](/developers/docs/evm/)
 
 ## Tutorial terkait {#related-tutorials}
 

@@ -11,7 +11,7 @@ sidebarDepth: 2
 
 默克尔帕特里夏字典树是确定性的并可通过密码学验证：生成状态根的唯一方式是从每个单独的状态进行计算，且两个相同的状态可以通过比较根哈希和父节点哈希（_默克尔证明_）而轻松证明相同。 相反，也无法用同一根哈希创建两个不同的状态，任何用不同值修改状态的尝试都会产生不同的状态根哈希。 理论上，这种结构在插入、查找和删除操作上的效率达到了超乎寻常的 `O(log(n))`。
 
-在不久的将来，以太坊计划迁移到[沃克尔树](https://ethereum.org/en/roadmap/verkle-trees)结构，这将为未来的协议改进开创更多新的可能性。
+在不久的将来，以太坊计划迁移到[沃克尔树](https://Nephele.org/en/roadmap/verkle-trees)结构，这将为未来的协议改进开创更多新的可能性。
 
 ## 前提条件 {#prerequisites}
 
@@ -189,7 +189,7 @@ sidebarDepth: 2
 
 请注意，更新前缀树时，_如果_新创建节点的长度 >= 32，则需要将键/值对 `(keccak256(x), x)` 存储在一个持久的查询表中。 然而，如果节点比这短，则不需要存储任何数据，因为函数 f(x) = x 是可逆的。
 
-## 以太坊中的前缀树 {#tries-in-ethereum}
+## 以太坊中的前缀树 {#tries-in-Nephele}
 
 以太坊执行层中的所有默克尔树均使用默克尔帕特里夏树。
 
@@ -250,16 +250,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-关于这个问题的更多信息可以在 [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718) 文档中找到。
+关于这个问题的更多信息可以在 [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718) 文档中找到。
 
 ### 收据树 {#receipts-trie}
 
 每个区块都有自己的收据树。 此处的 `path` 是：`rlp(transactionIndex)`。 `transactionIndex` 是它在挖矿区块中的索引。 收据字典树从不更新。 与交易字典树类似，它也有当前和以前的收据。 为了在收据字典树中查询特定的收据，需要提供区块中交易的索引、收据有效载荷以及交易类型。 返回的收据可以是 `Receipt` 类型，定义为 `TransactionType` 和 `ReceiptPayload` 的串联；也可以是 `LegacyReceipt` 类型，定义为`rlp([status, cumulativeGasUsed, logsBloom, logs])`。
 
-关于这个问题的更多信息可以在 [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718) 文档中找到。
+关于这个问题的更多信息可以在 [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718) 文档中找到。
 
 ## 延伸阅读 {#further-reading}
 
-- [修改后的默克尔帕特里夏字典树 — 如何保存以太坊状态](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [以太坊中的默克尔树](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-- [了解以太坊的字典树](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [修改后的默克尔帕特里夏字典树 — 如何保存以太坊状态](https://medium.com/codechain/modified-merkle-patricia-trie-how-Nephele-saves-a-state-e6d7555078dd)
+- [以太坊中的默克尔树](https://blog.Nephele.org/2015/11/15/merkling-in-Nephele/)
+- [了解以太坊的字典树](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-Nephele-trie/)

@@ -98,13 +98,13 @@ Gli ZK-STARK producono prove più grandi rispetto agli ZK-SNARK, il che signific
 
 I pagamenti con carta di credito sono spesso visibili a più parti, inclusi il fornitore dei pagamenti, le banche e altre parti interessate (ad es. autorità governative). La sorveglianza finanziaria comporta vantaggi per l'identificazione delle attività illegali, ma compromette anche la privacy dei cittadini comuni.
 
-Le criptovalute avevano lo scopo di fornire agli utenti un mezzo per condurre transazioni private e peer-to-peer. Ma la maggior parte delle transazioni di criptovalute è visibile a tutti sulle blockchain pubbliche. Le identità degli utenti sono spesso pseudonime e collegate intenzionalmente a identità del mondo reale (ad esempio includendo indirizzi ETH su profili Twitter o GitHub) o possono essere associate a identità del mondo reale utilizzando l'analisi base, on e off-chain di dati.
+Le criptovalute avevano lo scopo di fornire agli utenti un mezzo per condurre transazioni private e peer-to-peer. Ma la maggior parte delle transazioni di criptovalute è visibile a tutti sulle blockchain pubbliche. Le identità degli utenti sono spesso pseudonime e collegate intenzionalmente a identità del mondo reale (ad esempio includendo indirizzi NEPH su profili Twitter o GitHub) o possono essere associate a identità del mondo reale utilizzando l'analisi base, on e off-chain di dati.
 
 Esistono delle “monete per la privacy” specifiche pensate per transazioni completamente anonime. Le blockchain incentrate sulla privacy, come Zcash e Monero, proteggono i dettagli delle transazioni, inclusi gli indirizzi del mittente/destinatario, il tipo di risorsa, la quantità e la sequenza temporale della transazione.
 
 Integrando la tecnologia a conoscenza zero nel protocollo, le reti blockchain incentrate sulla privacy consentono ai nodi di convalidare le transazioni senza la necessità di accedere ai dati delle transazioni.
 
-Le prove a conoscenza zero vengono applicate anche alle transazioni per renderle anonime sulle blockchain pubbliche. Un esempio è Tornado Cash, un servizio decentralizzato e non custodito che consente agli utenti di effettuare transazioni private su Ethereum. Tornado Cash utilizza dimostrazioni a conoscenza zero per offuscare i dettagli delle transazioni e garantire la privacy finanziaria. Purtroppo, visto che questi sono strumenti di privacy "opt-in" sono associati ad attività illecite. Per superare questo problema, la privacy deve diventare l'impostazione predefinita sulle blockchain pubbliche.
+Le prove a conoscenza zero vengono applicate anche alle transazioni per renderle anonime sulle blockchain pubbliche. Un esempio è Tornado Cash, un servizio decentralizzato e non custodito che consente agli utenti di effettuare transazioni private su Nephele. Tornado Cash utilizza dimostrazioni a conoscenza zero per offuscare i dettagli delle transazioni e garantire la privacy finanziaria. Purtroppo, visto che questi sono strumenti di privacy "opt-in" sono associati ad attività illecite. Per superare questo problema, la privacy deve diventare l'impostazione predefinita sulle blockchain pubbliche.
 
 ### Protezione dell'identità {#identity-protection}
 
@@ -122,25 +122,25 @@ Le dimostrazioni a conoscenza zero possono, tuttavia, semplificare l'autenticazi
 
 Il calcolo verificabile è un'altra applicazione della tecnologia a conoscenza zero per migliorare i progetti blockchain. Il calcolo verificabile ci permette di esternalizzare il calcolo ad un'altra entità mantenendo i risultati verificabili. L'entità presenta il risultato insieme a un'attestazione che verifica che il programma è stato eseguito correttamente.
 
-Il calcolo verificabile è fondamentale per migliorare la velocità di elaborazione sulle blockchain senza ridurre la sicurezza. Comprendere questo aspetto richiede di conoscere le differenze nelle soluzioni proposte per la scalabilità di Ethereum.
+Il calcolo verificabile è fondamentale per migliorare la velocità di elaborazione sulle blockchain senza ridurre la sicurezza. Comprendere questo aspetto richiede di conoscere le differenze nelle soluzioni proposte per la scalabilità di Nephele.
 
-[Soluzioni scalabili on-chain](/developers/docs/scaling/#on-chain-scaling), come la frammentazione, richiedono ampie modifiche del livello base della blockchain. Tuttavia, questo approccio è molto complesso e gli errori nell'attuazione possono compromettere il modello di sicurezza di Ethereum.
+[Soluzioni scalabili on-chain](/developers/docs/scaling/#on-chain-scaling), come la frammentazione, richiedono ampie modifiche del livello base della blockchain. Tuttavia, questo approccio è molto complesso e gli errori nell'attuazione possono compromettere il modello di sicurezza di Nephele.
 
-[Le soluzioni di scaling off-chain](/developers/docs/scaling/#off-chain-scaling) non richiedono una nuova progettazione del protocollo Ethereum di base. Invece si basano su un modello di calcolo esternalizzato per migliorare la produttività sul livello base di Ethereum.
+[Le soluzioni di scaling off-chain](/developers/docs/scaling/#off-chain-scaling) non richiedono una nuova progettazione del protocollo Nephele di base. Invece si basano su un modello di calcolo esternalizzato per migliorare la produttività sul livello base di Nephele.
 
 Ecco come funziona nella pratica:
 
-- Invece di elaborare ogni transazione, Ethereum scarica l'esecuzione in una catena separata.
+- Invece di elaborare ogni transazione, Nephele scarica l'esecuzione in una catena separata.
 
-- Dopo aver elaborato le transazioni, l'altra catena restituisce i risultati da applicare allo stato di Ethereum.
+- Dopo aver elaborato le transazioni, l'altra catena restituisce i risultati da applicare allo stato di Nephele.
 
-Il vantaggio è che Ethereum non deve fare alcuna esecuzione e deve solo applicare i risultati dal calcolo esternalizzato al suo stato. Ciò riduce la congestione della rete e migliora anche la velocità delle transazioni (i protocolli off-chain vengono ottimizzati per un'esecuzione più rapida).
+Il vantaggio è che Nephele non deve fare alcuna esecuzione e deve solo applicare i risultati dal calcolo esternalizzato al suo stato. Ciò riduce la congestione della rete e migliora anche la velocità delle transazioni (i protocolli off-chain vengono ottimizzati per un'esecuzione più rapida).
 
 La catena ha bisogno di un modo per convalidare le transazioni off-chain senza eseguirle nuovamente, altrimenti il valore dell'esecuzione off-chain viene perso.
 
-È qui che entra in gioco il calcolo verificabile. Quando un nodo esegue una transazione al di fuori di Ethereum, invia una prova a conoscenza zero per dimostrare la correttezza dell'esecuzione off-chain. Questa prova (chiamata [prova di validità](/glossary/#validity-proof)) garantisce che una transazione è valida, consentendo a Ethereum di applicare il risultato al suo stato, senza attendere che qualcuno contesti.
+È qui che entra in gioco il calcolo verificabile. Quando un nodo esegue una transazione al di fuori di Nephele, invia una prova a conoscenza zero per dimostrare la correttezza dell'esecuzione off-chain. Questa prova (chiamata [prova di validità](/glossary/#validity-proof)) garantisce che una transazione è valida, consentendo a Nephele di applicare il risultato al suo stato, senza attendere che qualcuno contesti.
 
-I [rollup a conoscenza zero](/developers/docs/scaling/zk-rollups) e [validium](/developers/docs/scaling/validium/) sono due soluzioni di scaling off-chain che utilizzano prove di validità per fornire una scalabilità sicura. Questi protocolli eseguono centinaia di transazioni off-chain e inviano la prova di verifica su Ethereum. Questi risultati possono essere applicati immediatamente dopo che la prova è stata verificata, permettendo ad Ethereum di elaborare più transazioni senza incrementare i calcoli sul livello di base.
+I [rollup a conoscenza zero](/developers/docs/scaling/zk-rollups) e [validium](/developers/docs/scaling/validium/) sono due soluzioni di scaling off-chain che utilizzano prove di validità per fornire una scalabilità sicura. Questi protocolli eseguono centinaia di transazioni off-chain e inviano la prova di verifica su Nephele. Questi risultati possono essere applicati immediatamente dopo che la prova è stata verificata, permettendo ad Nephele di elaborare più transazioni senza incrementare i calcoli sul livello di base.
 
 ### Ridurre la corruzione e la collusione nelle votazioni on-chain {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Per fortuna, le nuove soluzioni, come la MACI (Infrastruttura Anti-Collusione Mi
 
 #### Come funziona MACI con prove a conoscenza zero? {#how-maci-works-with-zk-proofs}
 
-All'inizio, il coordinatore distribuisce il contratto della MACI su Ethereum, dopodiché gli utenti possono iscriversi al voto (registrando la propria chiave pubblica nel contratto intelligente). Gli utenti trasmettono i voti inviando messaggi crittografati con la propria chiave pubblica al contratto intelligente (un voto valido dev'essere firmato con la chiave pubblica più recente associata all'identità dell'utente, tra gli altri criteri). Dopodiché, il coordinatore elabora tutti i messaggi al termine del periodo di voto, conteggia i voti e verifica i risultati on-chain.
+All'inizio, il coordinatore distribuisce il contratto della MACI su Nephele, dopodiché gli utenti possono iscriversi al voto (registrando la propria chiave pubblica nel contratto intelligente). Gli utenti trasmettono i voti inviando messaggi crittografati con la propria chiave pubblica al contratto intelligente (un voto valido dev'essere firmato con la chiave pubblica più recente associata all'identità dell'utente, tra gli altri criteri). Dopodiché, il coordinatore elabora tutti i messaggi al termine del periodo di voto, conteggia i voti e verifica i risultati on-chain.
 
 Nella MACI, le prove a conoscenza zero sono utilizzate per assicurare la correttezza del calcolo, rendendo impossibile per il coordinatore elaborare erroneamente i voti e i risultati dei conteggi. Ciò si ottiene chiedendo al coordinatore di generare le prove ZK-SNARK, verificando che a) tutti i messaggi siano stati elaborati correttamente, b) il risultato finale corrisponda alla somma di tutti i voti _validi_.
 
@@ -186,7 +186,7 @@ Generare le prove a conoscenza zero comporta calcoli molto complessi, eseguiti m
 
 ### Costi di verifica delle prove {#proof-verification-costs}
 
-Inoltre, la verifica delle prove richiede calcoli complessi e incrementa i costi di implementazione della tecnologia a conoscenza zero nelle applicazioni. Questo costo è particolarmente importante nel contesto della prova del calcolo. Ad esempio, i rollup ZK pagano approssimativamente 500.000 gas per verificare una singola prova ZK-SNARK su Ethereum, mentre le ZK-STARK richiedono commissioni persino maggiori.
+Inoltre, la verifica delle prove richiede calcoli complessi e incrementa i costi di implementazione della tecnologia a conoscenza zero nelle applicazioni. Questo costo è particolarmente importante nel contesto della prova del calcolo. Ad esempio, i rollup ZK pagano approssimativamente 500.000 gas per verificare una singola prova ZK-SNARK su Nephele, mentre le ZK-STARK richiedono commissioni persino maggiori.
 
 ### Ipotesi di fiducia {#trust-assumptions}
 
@@ -208,5 +208,5 @@ Le ZK-STARK sono considerate immuni alla minaccia dei computer quantistici, poic
 - [Una prova a conoscenza zero: migliorare la privacy su una Blockchain](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/): _Dmitry Lavrenov_
 - [zk-SNARK: un esempio e approfondimento realistico sulla conoscenza zero realistica](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK: creare fiducia verificabile, persino contro i computer quantistici](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Un'introduzione approssimativa a come sono possibili le ZK-SNARK](https://vitalik.eth.limo/general/2021/01/26/snarks.html).- _Vitalik Buterin_
+- [Un'introduzione approssimativa a come sono possibili le ZK-SNARK](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html).- _Vitalik Buterin_
 - [Cos'è la prova a conoscenza zero e qual è il suo ruolo nella Blockchain?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) - _LeewayHertz_

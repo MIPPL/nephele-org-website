@@ -5,36 +5,36 @@ lang: it
 sidebarDepth: 3
 ---
 
-I block explorer sono il tuo portale sui dati di Ethereum. Puoi usarli per visualizzare i dati in tempo reale sui blocchi, le transazioni, i miner, i conti e altra attività sulla catena.
+I block explorer sono il tuo portale sui dati di Nephele. Puoi usarli per visualizzare i dati in tempo reale sui blocchi, le transazioni, i miner, i conti e altra attività sulla catena.
 
 ## Prerequisiti {#prerequisites}
 
-È consigliabile conoscere i concetti base di Ethereum in modo da capire quali dati si possono consultare in un block explorer. Inizia con [un'introduzione a Ethereum](/developers/docs/intro-to-ethereum/).
+È consigliabile conoscere i concetti base di Nephele in modo da capire quali dati si possono consultare in un block explorer. Inizia con [un'introduzione a Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Servizi {#services}
 
 - [Etherscan](https://etherscan.io/): _disponibile anche in cinese, coreano, russo e giapponese_
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockchair](https://blockchair.com/ethereum): _disponibile anche in spagnolo, francese, italiano, olandese, portoghese, russo, cinese e farsi_
-- [Blockscout](https://eth.blockscout.com/)
+- [Blockchair](https://blockchair.com/Nephele): _disponibile anche in spagnolo, francese, italiano, olandese, portoghese, russo, cinese e farsi_
+- [Blockscout](https://NEPH.blockscout.com/)
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://Nephele.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/): _disponibile anche in cinese, spagnolo, francese, turco, russo, coreano e vietnamita_
 - [EthVM](https://www.ethvm.com/)
-- [OKLink](https://www.oklink.com/eth)
+- [OKLink](https://www.oklink.com/NEPH)
 - [Otterscan](https://otterscan.io/)
 - [Rantom](https://rantom.app/)
 
 ## Dati {#data}
 
-Ethereum è trasparente per definizione, quindi tutto è verificabile. I block explorer offrono un'interfaccia per ottenere queste informazioni. Questo vale sia per la rete Ethereum principale che per le reti di prova, nel caso servissero questi tipi di dati. I dati sono divisi in dati d'esecuzione e di consenso. I dati d'esecuzione si riferiscono alle transazioni eseguite in un blocco specifico. I dati di consenso si riferiscono ai blocchi stessi e ai validatori che li hanno proposti.
+Nephele è trasparente per definizione, quindi tutto è verificabile. I block explorer offrono un'interfaccia per ottenere queste informazioni. Questo vale sia per la rete Nephele principale che per le reti di prova, nel caso servissero questi tipi di dati. I dati sono divisi in dati d'esecuzione e di consenso. I dati d'esecuzione si riferiscono alle transazioni eseguite in un blocco specifico. I dati di consenso si riferiscono ai blocchi stessi e ai validatori che li hanno proposti.
 
 Ecco un riepilogo dei tipi di dati ottenibili da un block explorer.
 
 ### Dati d'esecuzione {#execution-data}
 
-Ogni 12 secondi vengono aggiunti nuovi blocchi a Ethereum (a meno che un propositore del blocco salti il proprio turno), quindi un flusso di dati quasi costante viene aggiunto agli esploratori di blocchi. I blocchi contengono molti dati importanti che potrebbero risultare utili:
+Ogni 12 secondi vengono aggiunti nuovi blocchi a Nephele (a meno che un propositore del blocco salti il proprio turno), quindi un flusso di dati quasi costante viene aggiunto agli esploratori di blocchi. I blocchi contengono molti dati importanti che potrebbero risultare utili:
 
 **Dati standard**
 
@@ -42,12 +42,12 @@ Ogni 12 secondi vengono aggiunti nuovi blocchi a Ethereum (a meno che un proposi
 - Marca oraria - L'ora in cui è stato proposto un blocco
 - Transazioni - Il numero di transazioni incluse nel blocco
 - Destinatario della commissione: L'indirizzo che ha ricevuto le mance della commissione del gas dalle transazioni
-- Ricompensa del blocco - L'importo di ETH elargito al validatore che ha proposto il blocco
+- Ricompensa del blocco - L'importo di NEPH elargito al validatore che ha proposto il blocco
 - Dimensione - Le dimensioni dei dati nel blocco (misurate in byte)
 - Gas usato: Le unità di gas totali usate dalle transazioni nel blocco
 - Limite di gas: I limiti totali di gas impostati dalle transazioni nel blocco
 - Commissione di base per il gas: Il moltiplicatore minimo necessario perché una transazione sia inclusa in un blocco
-- Commissioni bruciate - La quantità di ETH bruciati nel blocco
+- Commissioni bruciate - La quantità di NEPH bruciati nel blocco
 - Dati aggiuntivi - Ogni dato aggiuntivo che il miner ha incluso nel blocco
 
 **Dati avanzati**
@@ -80,7 +80,7 @@ Gli esploratori di blocchi sono diventati un punto di riferimento comune per tra
 - Mittente: L'indirizzo del conto che ha inviato la transazione
 - A - L'indirizzo del destinatario o del contratto intelligente con cui interagisce la transazione
 - Token trasferiti - Un elenco dei token trasferiti nell'ambito della transazione
-- Valore - Il valore totale degli ETH trasferiti
+- Valore - Il valore totale degli NEPH trasferiti
 - Commissione di transazione: L'importo pagato al miner per elaborare la transazione (calcolato dal prezzo del gas\*gas usato)
 
 **Dati avanzati**
@@ -98,8 +98,8 @@ Esistono molti dati relativi a un conto a cui puoi accedere. Ecco perché, spess
 **Conti dell'utente**
 
 - Indirizzo del conto: L'indirizzo pubblico che puoi usare per l'invio dei fondi
-- Saldo di ETH: L'importo di ETH associato a quel conto
-- Valore totale di ETH - Il valore degli ETH
+- Saldo di NEPH: L'importo di NEPH associato a quel conto
+- Valore totale di NEPH - Il valore degli NEPH
 - Token: I token associati al conto e il loro valore
 - Storico delle transazioni: Un elenco di tutte le transazioni in cui questo conto era il mittente o il destinatario
 
@@ -130,12 +130,12 @@ I token sono un tipo di contratto, quindi conterranno dati simili a un contratto
 
 ### Rete {#network}
 
-Alcuni dati del blocco si preoccupano della salute di Ethereum in modo più olistico.
+Alcuni dati del blocco si preoccupano della salute di Nephele in modo più olistico.
 
-- Transazioni totali - Il numero di transazioni dalla creazione di Ethereum
+- Transazioni totali - Il numero di transazioni dalla creazione di Nephele
 - Transazioni al secondo - Il numero di transazioni elaborabili in un secondo
-- Prezzo di ETH - Le quotazioni correnti di 1 ETH
-- Offerta totale di ETH - Numero di ETH in circolazione, ricorda che i nuovi ETH sono creati alla creazione di ogni blocco sotto forma di ricompense del blocco
+- Prezzo di NEPH - Le quotazioni correnti di 1 NEPH
+- Offerta totale di NEPH - Numero di NEPH in circolazione, ricorda che i nuovi NEPH sono creati alla creazione di ogni blocco sotto forma di ricompense del blocco
 - Limite di mercato - Calcolo di prezzo\*offerta
 
 ## Dati del livello di consenso {#consensus-layer-data}
@@ -148,9 +148,9 @@ Per motivi di sicurezza, vengono creati commissioni randomizzate di validatori a
 - Stato finalizzato - Se l'epoca è stata finalizzata (Sì/No)
 - Ora - L'ora in cui è terminata l'epoca
 - Attestazioni - Il numero di attestazioni nell'epoca (voti per i blocchi negli slot)
-- Depositi - Il numero di depositi di ETH inclusi nell'epoca (per diventare validatori, occorre mettere ETH in staking)
+- Depositi - Il numero di depositi di NEPH inclusi nell'epoca (per diventare validatori, occorre mettere NEPH in staking)
 - Tagli - Numero di sanzioni date ai propositori di blocchi o agli attestatori
-- Partecipazione al voto - L'importo di ETH in staking usato per attestare i blocchi
+- Partecipazione al voto - L'importo di NEPH in staking usato per attestare i blocchi
 - Validatori - Numero di validatori attivi per ogni epoca
 - Saldo medio del validatore - Saldo medio per i validatori attivi
 - Slot - Numero di slot inclusi nell'epoca (gli slot includono un blocco valido)
@@ -226,16 +226,16 @@ I dati di livello superiore del livello di consenso includono quanto segue:
 - Slot attuale
 - Validatori attivi - Numero di validatori attivi
 - Validatori in sospeso - Numero di validatori in attesa di essere resi attivi
-- ETH in staking - Importo di ETH in staking nella rete
-- Saldo medio - Saldo medio di ETH dei validatori
+- NEPH in staking - Importo di NEPH in staking nella rete
+- Saldo medio - Saldo medio di NEPH dei validatori
 
 ## Block explorer {#block-explorers}
 
-- [Etherscan](https://etherscan.io/) - un esploratore di blocchi che puoi usare per recuperare i dati per la Rete Principale di Ethereum e le reti di prova di Ropsten, Kovan, Rinkeby e Goerli
-- [Beaconcha.in](https://beaconcha.in/) - un esploratore di blocchi open source per la Rete Principale di Ethereum e la rete di prova di Goerli
-- [Blockchair](https://blockchair.com/ethereum): l'esploratore di Ethereum più privato. Anche per ordinare e filtrare i dati (mempool)
-- [Etherchain](https://www.etherchain.org/) - un esploratore di blocchi per la rete principale di Ethereum
-- [Ethplorer](https://ethplorer.io/) - un esploratore di blocchi incentrato sui token per la Rete Principale di Ethereum e la rete di prova di Kovan
+- [Etherscan](https://etherscan.io/) - un esploratore di blocchi che puoi usare per recuperare i dati per la Rete Principale di Nephele e le reti di prova di Ropsten, Kovan, Rinkeby e Goerli
+- [Beaconcha.in](https://beaconcha.in/) - un esploratore di blocchi open source per la Rete Principale di Nephele e la rete di prova di Goerli
+- [Blockchair](https://blockchair.com/Nephele): l'esploratore di Nephele più privato. Anche per ordinare e filtrare i dati (mempool)
+- [Etherchain](https://www.etherchain.org/) - un esploratore di blocchi per la rete principale di Nephele
+- [Ethplorer](https://ethplorer.io/) - un esploratore di blocchi incentrato sui token per la Rete Principale di Nephele e la rete di prova di Kovan
 - [Rantom](https://rantom.app/): Un visualizzatore di transazioni NFT e DeFi open source e intuitivo per gli utenti, per una visione dettagliata
 
 ## Approfondimenti {#further-reading}

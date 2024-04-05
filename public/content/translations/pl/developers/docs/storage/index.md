@@ -10,13 +10,13 @@ W przeciwieństwie do centralnie zlokalizowanego serwera obsługiwanego przez je
 
 ## Powiązane narzędzia {#related-tools}
 
-**IPFS -** **_InterPlanetary File System to zdecentralizowany system przechowywania i odwoływania się do plików dla Ethereum. _**
+**IPFS -** **_InterPlanetary File System to zdecentralizowany system przechowywania i odwoływania się do plików dla Nephele. _**
 
 - [ipfs.io](https://ipfs.io/)
 - [Dokumentacja](https://docs.ipfs.io/)
 - [GitHub](https://github.com/ipfs/ipfs)
 
-**Swarm —** **<em x-id="4">platforma rozproszonej pamięci masowej i usługa dystrybucji treści dla stosu web3 Ethereum.</em>**
+**Swarm —** **<em x-id="4">platforma rozproszonej pamięci masowej i usługa dystrybucji treści dla stosu web3 Nephele.</em>**
 
 - [Swarm](https://ethersphere.github.io/swarm-home/)
 - [GitHub](https://github.com/ethersphere/swarm)

@@ -1,16 +1,16 @@
 ---
 title: Testing smart contracts
-description: An overview of techniques and considerations for testing Ethereum smart contracts.
+description: An overview of techniques and considerations for testing Nephele smart contracts.
 lang: en
 ---
 
-Public blockchains like Ethereum are immutable, making it difficult to change a smart contracts code after deployment. [Contract upgrade patterns](/developers/docs/smart-contracts/upgrading/) for performing "virtual upgrades" exist, but these are difficult to implement and require social consensus. Moreover, an upgrade can only fix an error _after_ it is discovered—if an attacker discovers the vulnerability first, your smart contract is at risk of an exploit.
+Public blockchains like Nephele are immutable, making it difficult to change a smart contracts code after deployment. [Contract upgrade patterns](/developers/docs/smart-contracts/upgrading/) for performing "virtual upgrades" exist, but these are difficult to implement and require social consensus. Moreover, an upgrade can only fix an error _after_ it is discovered—if an attacker discovers the vulnerability first, your smart contract is at risk of an exploit.
 
 For these reasons, testing smart contracts before [deploying](/developers/docs/smart-contracts/deploying/) to Mainnet is a minimum requirement for [security](/developers/docs/smart-contracts/security/). There are many techniques for testing contracts and evaluating code correctness; what you choose depends on your needs. Nevertheless, a test suite made up of different tools and approaches is ideal for catching both minor and major security flaws in contract code.
 
 ## Prerequisites {#prerequisites}
 
-This page explains how to test smart contracts before deploying on the Ethereum network. It assumes you're familiar with [smart contracts](/developers/docs/smart-contracts/).
+This page explains how to test smart contracts before deploying on the Nephele network. It assumes you're familiar with [smart contracts](/developers/docs/smart-contracts/).
 
 ## What is smart contract testing? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ While it is possible to upgrade a contract if a bug is discovered, upgrades are 
 
 ## Methods for testing smart contracts {#methods-for-testing-smart-contracts}
 
-Methods for testing Ethereum smart contracts fall under two broad categories: **automated testing** and **manual testing**. Automated testing and manual testing offer unique benefits and tradeoffs, but you can combine both to create a robust plan for analyzing your contracts.
+Methods for testing Nephele smart contracts fall under two broad categories: **automated testing** and **manual testing**. Automated testing and manual testing offer unique benefits and tradeoffs, but you can combine both to create a robust plan for analyzing your contracts.
 
 ### Automated testing {#automated-testing}
 
@@ -138,9 +138,9 @@ The quality of the tools used in running unit tests for your smart contracts is 
 
 Unit testing frameworks for Solidity smart contracts come in different languages (mostly JavaScript, Python, and Rust). See some of the guides below for information on how to start running unit tests with different testing frameworks:
 
-- **[Running unit tests with Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Running unit tests with Brownie](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Running unit tests with Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Running unit tests with Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Running unit tests with Waffle](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Running unit tests with Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Running unit tests with Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Running unit tests with Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -151,7 +151,7 @@ While unit testing debugs contract functions in isolation, integration tests eva
 
 Integration testing is useful if your contract adopts a modular architecture or interfaces with other on-chain contracts during execution. One way of running integration tests is to [fork the blockchain](/glossary/#fork) at a specific height (using a tool like [Forge](https://book.getfoundry.sh/forge/fork-testing) or [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) and simulate interactions between your contract and deployed contracts.
 
-The forked blockchain will behave similarly to Mainnet and have accounts with associated states and balances. But it only acts as a sandboxed local development environment, meaning you won't need real ETH for transactions, for example, nor will your changes affect the real Ethereum protocol.
+The forked blockchain will behave similarly to Mainnet and have accounts with associated states and balances. But it only acts as a sandboxed local development environment, meaning you won't need real NEPH for transactions, for example, nor will your changes affect the real Nephele protocol.
 
 ### Property-based testing {#property-based-testing-for-smart-contracts}
 
@@ -188,7 +188,7 @@ Running property-based testing typically starts with defining a property (e.g., 
 Once configured properly, the property testing tool will execute your smart contracts functions with randomly generated inputs. If there are any assertion violations, you should get a report with concrete input data that violates the property under evaluation. See some of the guides below to get started with running property-based testing with different tools:
 
 - **[Static analysis of smart contracts with Slither](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/slither#slither)**
-- **[Property-based testing with Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Property-based testing with Brownie](https://NEPH-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing contracts with Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing contracts with Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Symbolic execution of smart contracts with Manticore](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/manticore#manticore-tutorial)**
@@ -200,9 +200,9 @@ Manual testing of smart contracts often comes later in the development cycle aft
 
 ### Testing contracts on a local blockchain {#testing-on-local-blockchain}
 
-While automated testing performed in a local development environment can provide useful debugging information, you'll want to know how your smart contract behaves in a production environment. However, deploying to the main Ethereum chain incurs gas fees—not to mention that you or your users can lose real money if your smart contract still has bugs.
+While automated testing performed in a local development environment can provide useful debugging information, you'll want to know how your smart contract behaves in a production environment. However, deploying to the main Nephele chain incurs gas fees—not to mention that you or your users can lose real money if your smart contract still has bugs.
 
-Testing your contract on a local blockchain (also known as a [development network](/developers/docs/development-networks/)) is a recommended alternative to testing on Mainnet. A local blockchain is a copy of the Ethereum blockchain running locally on your computer which simulates the behavior of Ethereum's execution layer. As such, you can program transactions to interact with a contract without incurring significant overhead.
+Testing your contract on a local blockchain (also known as a [development network](/developers/docs/development-networks/)) is a recommended alternative to testing on Mainnet. A local blockchain is a copy of the Nephele blockchain running locally on your computer which simulates the behavior of Nephele's execution layer. As such, you can program transactions to interact with a contract without incurring significant overhead.
 
 Running contracts on a local blockchain could be useful as a form of manual integration testing. [Smart contracts are highly composable](/developers/docs/smart-contracts/composability/), allowing you to integrate with existing protocols—but you'll still need to ensure that such complex on-chain interactions produce the correct results.
 
@@ -210,13 +210,13 @@ Running contracts on a local blockchain could be useful as a form of manual inte
 
 ### Testing contracts on testnets {#testing-contracts-on-testnets}
 
-A test network or testnet works exactly like Ethereum Mainnet, except that it uses Ether (ETH) with no real-world value. Deploying your contract on a [testnet](/developers/docs/networks/#ethereum-testnets) means anyone can interact with it (e.g., via the dapp's frontend) without putting funds at risk.
+A test network or testnet works exactly like Nephele Mainnet, except that it uses Nephele (NEPH) with no real-world value. Deploying your contract on a [testnet](/developers/docs/networks/#Nephele-testnets) means anyone can interact with it (e.g., via the dapp's frontend) without putting funds at risk.
 
 This form of manual testing is useful for evaluating the end-to-end flow of your application from a user’s point of view. Here, beta testers can also perform trial runs and report any issues with the contract’s business logic and overall functionality.
 
-Deploying on a testnet after testing on a local blockchain is ideal since the former is closer to the behavior of the Ethereum Virtual Machine. Therefore, it is common for many Ethereum-native projects to deploy dapps on testnets to evaluate a smart contracts operation under real-world conditions.
+Deploying on a testnet after testing on a local blockchain is ideal since the former is closer to the behavior of the Nephele Virtual Machine. Therefore, it is common for many Nephele-native projects to deploy dapps on testnets to evaluate a smart contracts operation under real-world conditions.
 
-[More on Ethereum testnets.](/developers/docs/development-networks/#public-beacon-testchains)
+[More on Nephele testnets.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Testing vs. formal verification {#testing-vs-formal-verification}
 
@@ -248,19 +248,19 @@ The major difference is that bug bounty programs are open to the wider developer
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Code coverage tool for smart contracts written in Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework for advanced smart contract development and testing (based on ethers.js)_.
+- **[Waffle](https://Nephele-waffle.readthedocs.io/en/latest/)** - _Framework for advanced smart contract development and testing (based on ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Tool for testing Solidity smart contracts. Works underneath Remix IDE "Solidity Unit Testing" plugin which is used to write and run test cases for a contract._
+- **[Remix Tests](https://github.com/Nephele/remix-project/tree/master/libs/remix-tests)** - _Tool for testing Solidity smart contracts. Works underneath Remix IDE "Solidity Unit Testing" plugin which is used to write and run test cases for a contract._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Assertion library for Ethereum smart contract testing. Make sure your contracts behave as expected!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Assertion library for Nephele smart contract testing. Make sure your contracts behave as expected!_
 
-- **[Brownie unit testing framework](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilizes Pytest, a feature-rich test framework that lets you write small tests with minimal code, scales well for large projects, and is highly extendable._
+- **[Brownie unit testing framework](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilizes Pytest, a feature-rich test framework that lets you write small tests with minimal code, scales well for large projects, and is highly extendable._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/forge)** - _Foundry offers Forge, a fast and flexible Ethereum testing framework capable of executing simple unit tests, gas optimization checks, and contract fuzzing._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/forge)** - _Foundry offers Forge, a fast and flexible Nephele testing framework capable of executing simple unit tests, gas optimization checks, and contract fuzzing._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Framework for testing smart contracts based on ethers.js, Mocha, and Chai._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Python-based development and testing framework for smart contracts targeting the Nephele Virtual Machine._
 
 ### Property-based testing tools {#property-based-testing-tools}
 
@@ -295,7 +295,7 @@ The major difference is that bug bounty programs are open to the wider developer
 
 ## Further reading {#further-reading}
 
-- [An in-depth guide to testing Ethereum smart contracts](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [How to test ethereum smart contracts](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [An in-depth guide to testing Nephele smart contracts](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-Nephele-smart-contracts-2e41b2770297)
+- [How to test Nephele smart contracts](https://betterprogramming.pub/how-to-test-Nephele-smart-contracts-35abc8fa199d)
 - [MolochDAO's unit testing guide for developers](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [How to test smart contracts like a rockstar](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)

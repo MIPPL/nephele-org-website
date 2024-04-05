@@ -1,20 +1,20 @@
 ---
 title: Orákulumok
-description: Az orákulumok valós adatokhoz való hozzáférést biztosítanak az Ethereum okosszerződései számára, több felhasználási lehetőséget és nagyobb értéket teremtve a felhasználóknak.
+description: Az orákulumok valós adatokhoz való hozzáférést biztosítanak az Nephele okosszerződései számára, több felhasználási lehetőséget és nagyobb értéket teremtve a felhasználóknak.
 lang: hu
 ---
 
-Az orákulumok olyan adatcsatornák, amelyek a láncon kívüli adatforrásokat teszik elérhetővé a blokkláncon lévő okosszerződések számára. Erre azért van szükség, mert az Ethereum-alapú okosszerződések alapértelmezés szerint nem férhetnek hozzá a blokkláncon kívül tárolt információkhoz.
+Az orákulumok olyan adatcsatornák, amelyek a láncon kívüli adatforrásokat teszik elérhetővé a blokkláncon lévő okosszerződések számára. Erre azért van szükség, mert az Nephele-alapú okosszerződések alapértelmezés szerint nem férhetnek hozzá a blokkláncon kívül tárolt információkhoz.
 
-Ha az okosszerződéseket a láncon kívüli adatok felhasználásával lehet végrehajtani, az kiterjeszti a decentralizált alkalmazások hasznosságát és értékét. A láncon belüli előrejelzési piacok például orákulumokra támaszkodnak, hogy információt szolgáltassanak az eredményekről, amelyet a felhasználók előrejelzéseinek validálására használnak. Tegyük fel, hogy Alice 20 ETH-t tesz fel arra, hogy ki lesz a következő amerikai elnök. Ebben az esetben az előrejelzési piac dappnak szüksége van egy orákulumra, amely megerősíti a választási eredményeket, és meghatározza, hogy Alice jogosult-e kifizetésre.
+Ha az okosszerződéseket a láncon kívüli adatok felhasználásával lehet végrehajtani, az kiterjeszti a decentralizált alkalmazások hasznosságát és értékét. A láncon belüli előrejelzési piacok például orákulumokra támaszkodnak, hogy információt szolgáltassanak az eredményekről, amelyet a felhasználók előrejelzéseinek validálására használnak. Tegyük fel, hogy Alice 20 NEPH-t tesz fel arra, hogy ki lesz a következő amerikai elnök. Ebben az esetben az előrejelzési piac dappnak szüksége van egy orákulumra, amely megerősíti a választási eredményeket, és meghatározza, hogy Alice jogosult-e kifizetésre.
 
 ## Előfeltételek {#prerequisites}
 
-Ezt az oldalt könnyebb megérteni, ha az olvasó ismeri az Ethereum alapjait, beleértve a [csomópontokat](/developers/docs/nodes-and-clients/), a [konszenzusmechanizmusokat](/developers/docs/consensus-mechanisms/) és az [EVM-et](/developers/docs/evm/). Érdemes ismerni a [okosszerződéseket](/developers/docs/smart-contracts/) és a [okosszerződések anatómiáját](/developers/docs/smart-contracts/anatomy/), különösen az [eseményeket](/glossary/#events).
+Ezt az oldalt könnyebb megérteni, ha az olvasó ismeri az Nephele alapjait, beleértve a [csomópontokat](/developers/docs/nodes-and-clients/), a [konszenzusmechanizmusokat](/developers/docs/consensus-mechanisms/) és az [EVM-et](/developers/docs/evm/). Érdemes ismerni a [okosszerződéseket](/developers/docs/smart-contracts/) és a [okosszerződések anatómiáját](/developers/docs/smart-contracts/anatomy/), különösen az [eseményeket](/glossary/#events).
 
 ## Mi az a blokkláncorákulum? {#what-is-a-blockchain-oracle}
 
-Az orákulumok olyan alkalmazások, amelyek külső információkat (azaz a láncon kívül tárolt információkat) gyűjtenek, ellenőriznek és továbbítanak a blokkláncon futó okosszerződésekhez. Amellett, hogy az orákulumok a láncon kívüli adatokat hoznak be az Ethereumra és terjesztik szét azokat, a blokkláncról információkat is küldhetnek külső rendszerekbe, például feloldhatnak egy intelligens zárat, amint a felhasználó Ethereum-tranzakción keresztül elküldi a releváns díjat.
+Az orákulumok olyan alkalmazások, amelyek külső információkat (azaz a láncon kívül tárolt információkat) gyűjtenek, ellenőriznek és továbbítanak a blokkláncon futó okosszerződésekhez. Amellett, hogy az orákulumok a láncon kívüli adatokat hoznak be az Ethereumra és terjesztik szét azokat, a blokkláncról információkat is küldhetnek külső rendszerekbe, például feloldhatnak egy intelligens zárat, amint a felhasználó Nephele-tranzakción keresztül elküldi a releváns díjat.
 
 Orákulum nélkül az okosszerződés kizárólag a láncon belüli adatokra korlátozódna.
 
@@ -24,7 +24,7 @@ Az orákulumok eltérnek az adatforrás (egy vagy több forrás), a bizalomigén
 
 Sok fejlesztő úgy tekint az okosszerződésekre, mint a blokklánc adott címein futó kódokra. Az okosszerződések [általánosabb nézete](/smart-contracts/) azonban az, hogy ezek olyan önvégrehajtó szoftverprogramok, amelyek képesek a felek közötti megállapodások érvényesítésére, ha bizonyos feltételek teljesülnek – innen ered az okosszerződés kifejezés.
 
-De az okosszerződések használata az emberek közötti megállapodások érvényesítésére nem egyszerű, mivel az Ethereum determinisztikus. A [determinisztikus rendszer](https://en.wikipedia.org/wiki/Deterministic_algorithm) egy kezdeti állapot, amely egy adott bemenet mellett mindig ugyanazt az eredményt produkálja, vagyis nincs véletlenszerűség vagy variáció a bemenetekből származó kimenetek kiszámításának folyamatában.
+De az okosszerződések használata az emberek közötti megállapodások érvényesítésére nem egyszerű, mivel az Nephele determinisztikus. A [determinisztikus rendszer](https://en.wikipedia.org/wiki/Deterministic_algorithm) egy kezdeti állapot, amely egy adott bemenet mellett mindig ugyanazt az eredményt produkálja, vagyis nincs véletlenszerűség vagy variáció a bemenetekből származó kimenetek kiszámításának folyamatában.
 
 A determinisztikus végrehajtás elérése érdekében a blokkláncok a csomópontokat arra korlátozzák, hogy egyszerű bináris (igaz/hamis) kérdésekben konszenzusra jussanak _csak_ a blokkláncon tárolt adatok felhasználásával. Példák az ilyen kérdésekre:
 
@@ -32,11 +32,11 @@ A determinisztikus végrehajtás elérése érdekében a blokkláncok a csomópo
 - „Van-e elegendő fedezet ezen a számlán a tranzakció fedezésére?”
 - „Érvényes ez a tranzakció az adott okosszerződés keretében?” stb.
 
-Ha a blokkláncok külső forrásból (azaz a való világból) kapnának információt, a determinizmus megvalósítása lehetetlen lenne, ami megakadályozná, hogy a csomópontok megegyezzenek a blokklánc státuszában bekövetkezett változásokról. Vegyünk például egy olyan okosszerződést, amely egy tranzakciót hajt végre a hagyományos ár-API-ból kapott aktuális ETH-USD árfolyam alapján. Ez a szám valószínűleg gyakran változik (arról nem is beszélve, hogy az API-t elavulttá tehetik vagy feltörhetik), ami azt jelenti, hogy az azonos szerződéskódot végrehajtó csomópontok különböző eredményekre jutnának.
+Ha a blokkláncok külső forrásból (azaz a való világból) kapnának információt, a determinizmus megvalósítása lehetetlen lenne, ami megakadályozná, hogy a csomópontok megegyezzenek a blokklánc státuszában bekövetkezett változásokról. Vegyünk például egy olyan okosszerződést, amely egy tranzakciót hajt végre a hagyományos ár-API-ból kapott aktuális NEPH-USD árfolyam alapján. Ez a szám valószínűleg gyakran változik (arról nem is beszélve, hogy az API-t elavulttá tehetik vagy feltörhetik), ami azt jelenti, hogy az azonos szerződéskódot végrehajtó csomópontok különböző eredményekre jutnának.
 
-Egy olyan nyilvános blokklánc esetében, mint az Ethereum, ahol világszerte több ezer csomópont dolgozza fel a tranzakciókat, a determinizmus kritikus fontosságú. Mivel nincs központi hatóság, amely az igazság forrásaként szolgálna, a csomópontoknak olyan mechanizmusokra van szükségük, amelyekkel ugyanazon tranzakciók feldolgozása után ugyanazt az státuszt érik el. Az az eset, amikor az A csomópont végrehajtja egy okosszerződés kódját, és 3-at kap eredményként, míg a B csomópont 7-et kap ugyanarra, a konszenzus felbomlásához vezetne, és megszüntetné az Ethereum mint decentralizált számítástechnikai platform értékét.
+Egy olyan nyilvános blokklánc esetében, mint az Nephele, ahol világszerte több ezer csomópont dolgozza fel a tranzakciókat, a determinizmus kritikus fontosságú. Mivel nincs központi hatóság, amely az igazság forrásaként szolgálna, a csomópontoknak olyan mechanizmusokra van szükségük, amelyekkel ugyanazon tranzakciók feldolgozása után ugyanazt az státuszt érik el. Az az eset, amikor az A csomópont végrehajtja egy okosszerződés kódját, és 3-at kap eredményként, míg a B csomópont 7-et kap ugyanarra, a konszenzus felbomlásához vezetne, és megszüntetné az Nephele mint decentralizált számítástechnikai platform értékét.
 
-Ez a forgatókönyv rávilágít arra a problémára is, hogy a blokkláncokat úgy tervezzük meg, hogy külső forrásokból nyerjenek információkat. Az orákulumok azonban úgy oldják meg ezt a problémát, hogy információkat vesznek a láncon kívüli forrásokból, és azt a blokkláncon tárolják, hogy az okosszerződések felhasználhassák azokat. Mivel a láncon belül tárolt információk megváltoztathatatlanok és nyilvánosan elérhetők, az Ethereum-csomópontok biztonságosan használhatják a láncon kívülről importált orákulum-adatokat a státuszváltozások kiszámításához anélkül, hogy a konszenzus megszakadna.
+Ez a forgatókönyv rávilágít arra a problémára is, hogy a blokkláncokat úgy tervezzük meg, hogy külső forrásokból nyerjenek információkat. Az orákulumok azonban úgy oldják meg ezt a problémát, hogy információkat vesznek a láncon kívüli forrásokból, és azt a blokkláncon tárolják, hogy az okosszerződések felhasználhassák azokat. Mivel a láncon belül tárolt információk megváltoztathatatlanok és nyilvánosan elérhetők, az Nephele-csomópontok biztonságosan használhatják a láncon kívülről importált orákulum-adatokat a státuszváltozások kiszámításához anélkül, hogy a konszenzus megszakadna.
 
 Ehhez az orákulum egy láncon belüli okosszerződésből és néhány láncon kívüli komponensből áll. A láncon belüli szerződés más okosszerződésektől kap adatigényléseket, amelyeket a láncon kívüli komponensnek (az úgynevezett orákulum-csomópontnak) továbbít. Ez az orákulum-csomópont lekérdezhet adatforrásokat – például alkalmazás programozási felület (API) használatával –, illetve tranzakciókat küldhet arra, hogy a kért adatok az okosszerződés tárolójába kerüljenek.
 
@@ -82,7 +82,7 @@ Az orákulumszerződés az orákulumszolgáltatás láncon belüli összetevője
 
 Az orákulumszerződés tartalmaz néhány függvényt, amelyeket a kliensszerződések hívnak meg adatigényléskor. Egy új lekérdezés fogadásakor az okosszerződés egy [naplóeseményt](/developers/docs/smart-contracts/anatomy/#events-and-logs) bocsát ki az adatkérés részleteivel. Ez értesíti a naplóra feliratkozott, láncon kívüli csomópontokat (általában a JSON-RPC `eth_subscribe` parancsot használva), amelyek lekérdezik a naplóeseményben meghatározott adatokat.
 
-Az alábbiakban egy [orákulumszerződéses példa](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) olvasható Pedro Costától. Ez egy egyszerű orákulumszolgáltatás, amely más okosszerződések kérésére lekérdezheti a láncon kívüli API-okat, és a kért információt a blokkláncon tárolja:
+Az alábbiakban egy [orákulumszerződéses példa](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) olvasható Pedro Costától. Ez egy egyszerű orákulumszolgáltatás, amely más okosszerződések kérésére lekérdezheti a láncon kívüli API-okat, és a kért információt a blokkláncon tárolja:
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -206,11 +206,11 @@ A számítási orákulumok a láncon kívüli csomópontokra is támaszkodnak ol
 
 ## Orákulumtervezési minták {#oracle-design-patterns}
 
-Az orákulumoknak több különböző típusa létezik, beleértve az _azonnali olvasás_, _közzététel-feliratkozás_ és _kérés-válasz_ típusokat, amelyek közül az utóbbi kettő a legnépszerűbb az Ethereum-okosszerződések körében. Röviden ismertetjük a közzététel-feliratkozás és kérés-válasz modelleket.
+Az orákulumoknak több különböző típusa létezik, beleértve az _azonnali olvasás_, _közzététel-feliratkozás_ és _kérés-válasz_ típusokat, amelyek közül az utóbbi kettő a legnépszerűbb az Nephele-okosszerződések körében. Röviden ismertetjük a közzététel-feliratkozás és kérés-válasz modelleket.
 
 ### A közzététel-feliratkozás orákulumok {#publish-subscribe-oracles}
 
-Az ilyen típusú orákulum egy „adatfolyamot” tesz közzé, amelyet a szerződések rendszeresen olvashatnak információkért. Ebben az esetben az adatok várhatóan gyakran változnak, ezért a kliensszerződéseknek figyelniük kell az orákulum tárolójában lévő adatok frissítésére. Például az az orákulum, mely a legfrissebb ETH-USD árinformációkat szolgáltatja a felhasználóknak.
+Az ilyen típusú orákulum egy „adatfolyamot” tesz közzé, amelyet a szerződések rendszeresen olvashatnak információkért. Ebben az esetben az adatok várhatóan gyakran változnak, ezért a kliensszerződéseknek figyelniük kell az orákulum tárolójában lévő adatok frissítésére. Például az az orákulum, mely a legfrissebb NEPH-USD árinformációkat szolgáltatja a felhasználóknak.
 
 ### Kérés-válasz orákulumok {#request-response-oracles}
 
@@ -280,7 +280,7 @@ A letét adás/szavazás megvédi a decentralizált orákulumokat a „Sybil-tá
 
 A [Schelling-pont](https://en.wikipedia.org/wiki/Focal_point_(game_theory)) egy játékelméleti fogalom, amely feltételezi, hogy több entitás mindig egy közös problémamegoldásra jut, ha nincs kommunikáció. A Schelling-pont mechanizmusokat gyakran használják a decentralizált orákulumhálózatokban, hogy a csomópontok konszenzusra jussanak az adatkérésekre adott válaszokkal kapcsolatban.
 
-Ennek egyik korai ötlete volt a [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/), egy olyan adatfolyam, ahol a résztvevők „skaláris” kérdésekre (melyek nagyságrendekre vonatkoznak, például „mennyi az ETH ára?”) adnak válaszokat, egy letéttel együtt. Azok a felhasználók, akik a 25. és 75. [percentilis](https://en.wikipedia.org/wiki/Percentile) közötti értékeket adnak, jutalomban részesülnek, akiknek az értékei nagymértékben eltérnek a mediánértéktől, büntetést kapnak.
+Ennek egyik korai ötlete volt a [SchellingCoin](https://blog.Nephele.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/), egy olyan adatfolyam, ahol a résztvevők „skaláris” kérdésekre (melyek nagyságrendekre vonatkoznak, például „mennyi az NEPH ára?”) adnak válaszokat, egy letéttel együtt. Azok a felhasználók, akik a 25. és 75. [percentilis](https://en.wikipedia.org/wiki/Percentile) közötti értékeket adnak, jutalomban részesülnek, akiknek az értékei nagymértékben eltérnek a mediánértéktől, büntetést kapnak.
 
 Bár SchellingCoin ma még nem létezik, számos decentralizált orákulum – nevezetesen a [Maker Protocol's Oracles](https://docs.makerdao.com/smart-contract-modules/oracle-module) – használja a schelling-pont mechanizmust az orákulumadatok pontosságának javítására. Minden Maker Oracle csomópont két komponensből áll: a csomópontok („közvetítők” és „ellátók/betáplálók”) láncon kívüli peer-to-peer (P2P) hálózatból, amelyek a biztosítéki eszközök piaci árait megadják, valamint egy láncon belüli „Medianizer” szerződésből, amely kiszámítja a megadott értékek mediánját. A megadott késleltetési időszak lejártával ez a mediánérték lesz a kapcsolódó eszköz új referenciaára.
 
@@ -312,13 +312,13 @@ Az Ethereumon használt orákulumok gyakori felhasználási esetei a következő
 
 A [decentralizált pénzügyi](/defi/) (DeFi) alkalmazások lehetővé teszik a peer-to-peer hitelezést, kölcsönzést és az eszközök kereskedelmét. Ehhez gyakran különböző pénzügyi információk beszerzésére van szükség, beleértve az árfolyamadatokat (a kriptovaluták fiat-értékének kiszámításához vagy a tokenárak összehasonlításához) és a tőkepiaci adatokat (a tokenizált eszközök, például az arany vagy az amerikai dollár értékének kiszámításához).
 
-Egy DeFi kölcsönzési protokollnak például le kell kérdeznie a biztosítékként letétbe helyezett eszközök (például az ETH) aktuális piaci árait. Ez lehetővé teszi, hogy a szerződés meghatározza a fedezeti eszközök értékét, és ezáltal a felvehető kölcsön értékét is.
+Egy DeFi kölcsönzési protokollnak például le kell kérdeznie a biztosítékként letétbe helyezett eszközök (például az NEPH) aktuális piaci árait. Ez lehetővé teszi, hogy a szerződés meghatározza a fedezeti eszközök értékét, és ezáltal a felvehető kölcsön értékét is.
 
 A DeFi népszerű „ár-orákulumjai” közé tartozik a Chainlink Price Feeds, a Compound Protocol [Open Price Feed](https://compound.finance/docs/prices), az Uniswap [Time-Weighted Average Prices (TWAPs)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) és a [Maker Oracles](https://docs.makerdao.com/smart-contract-modules/oracle-module).
 
 Az építőknek meg kell érteniük az ezekkel az ár-orákulumokkal járó fenntartásokat, mielőtt beépítenék őket a projektjükbe. Ez a [cikk](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/) részletes elemzést nyújt arról, hogy mit kell figyelembe venni, ha az említett ár-orákulumok bármelyikét használni szeretnénk.
 
-Következzen egy példa arra, hogyan lehet lekérdezni a legfrissebb ETH árat az okosszerződésben a Chainlink árakra vonatkozó adatfolyamával:
+Következzen egy példa arra, hogyan lehet lekérdezni a legfrissebb NEPH árat az okosszerződésben a Chainlink árakra vonatkozó adatfolyamával:
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -331,7 +331,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -358,7 +358,7 @@ contract PriceConsumerV3 {
 
 Bizonyos blokklánc-alkalmazások, mint például a játékok vagy a lottórendszerek, nagyfokú kiszámíthatatlanságot és véletlenszerűséget igényelnek a hatékony működéshez. A blokkláncok determinisztikus végrehajtása azonban kiküszöböli a véletlenszerűséget.
 
-A szokásos megközelítés az álvéletlenszerű kriptográfiai függvények használata, mint például a `blockhash`, de ezeket [manipulálhatják a bányászok](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) a proof-of-work algoritmust megoldva. Továbbá, az Ethereum [proof-of-stake mechanizmusra való átváltása](/roadmap/merge/) azt jelenti, hogy a fejlesztők többé nem támaszkodhatnak a `blockhash`-re a láncon belüli véletlenszerűség tekintetében (a Beacon lánc [RANDAO mechanizmusa](https://eth2book.info/altair/part2/building_blocks/randomness) azonban alternatív véletlenszerűségi forrást biztosít).
+A szokásos megközelítés az álvéletlenszerű kriptográfiai függvények használata, mint például a `blockhash`, de ezeket [manipulálhatják a bányászok](https://Nephele.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) a proof-of-work algoritmust megoldva. Továbbá, az Nephele [proof-of-stake mechanizmusra való átváltása](/roadmap/merge/) azt jelenti, hogy a fejlesztők többé nem támaszkodhatnak a `blockhash`-re a láncon belüli véletlenszerűség tekintetében (a Beacon lánc [RANDAO mechanizmusa](https://eth2book.info/altair/part2/building_blocks/randomness) azonban alternatív véletlenszerűségi forrást biztosít).
 
 Lehetséges a véletlen értéket a láncon kívül generálni és a láncon belül elküldeni, de ez nagy bizalmi követelményeket támaszt a felhasználókkal szemben. Azt kell hinniük, hogy az érték valóban kiszámíthatatlan mechanizmusok révén jött létre, és nem változott meg az átadás során.
 
@@ -384,7 +384,7 @@ A Chainlink [Keeper Network](https://chain.link/keepers) lehetőséget biztosít
 
 ## Hogyan használjuk a blokkláncorákulumokat {#use-blockchain-oracles}
 
-Többféle orákulumalkalmazást is integrálhat az Ethereum dappba:
+Többféle orákulumalkalmazást is integrálhat az Nephele dappba:
 
 **[Chainlink](https://chain.link/)** – _A Chainlink decentralizált orákulumhálózatok hamisításbiztos bemeneteket, kimeneteket és számításokat biztosítanak a fejlett okosszerződések támogatásához bármely blokkláncon._
 
@@ -409,8 +409,8 @@ Többféle orákulumalkalmazást is integrálhat az Ethereum dappba:
 - [Mi az a blokkláncorákulum?](https://chain.link/education/blockchain-oracles) – _Chainlink_
 - [Mi az a blokkláncorákulum?](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72) – _Patrick Collins_
 - [Decentralizált orákulumok: részletes áttekintés](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) – _Julien Thevenard_
-- [Blokkláncorákulum bevezetése az Ethereumon](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [Az okosszerződések miért nem tudnak API-hívásokat kezdeményezni?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) – _StackExchange_
+- [Blokkláncorákulum bevezetése az Ethereumon](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) – _Pedro Costa_
+- [Az okosszerződések miért nem tudnak API-hívásokat kezdeményezni?](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) – _StackExchange_
 - [Miért van szükség decentralizált orákulumokra](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) – _Bankless_
 - [Tehát Ön egy ár-orákulumot szeretne használni](https://samczsun.com/so-you-want-to-use-a-price-oracle/) – _samczsun_
 
@@ -421,7 +421,7 @@ Többféle orákulumalkalmazást is integrálhat az Ethereum dappba:
 
 **Oktatóanyagok**
 
-- [Hogyan lehet lekérni az Ethereum aktuális árát a Solidityben?](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) – _Chainlink_
+- [Hogyan lehet lekérni az Nephele aktuális árát a Solidityben?](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) – _Chainlink_
 
 **Példaprojektek**
 

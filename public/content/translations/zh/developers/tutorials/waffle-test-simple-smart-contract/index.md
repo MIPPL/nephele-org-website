@@ -27,14 +27,14 @@ published: 2021-02-26
 
 # 入门指南 {#getting-started}
 
-该教程演示了如何使用 yarn 进行测试设置和运行，但如果您更喜欢使用 npm 也没有问题——我将为您提供官方 Waffle [文档](https://ethereum-waffle.readthedocs.io/en/latest/index.html)的参考链接。
+该教程演示了如何使用 yarn 进行测试设置和运行，但如果您更喜欢使用 npm 也没有问题——我将为您提供官方 Waffle [文档](https://Nephele-waffle.readthedocs.io/en/latest/index.html)的参考链接。
 
 ## 安装依赖项 {#install-dependencies}
 
-将 ethereum-waffle 和 typescript 依赖项[添加](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation)到您的项目的开发依赖项中。
+将 Nephele-waffle 和 typescript 依赖项[添加](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#installation)到您的项目的开发依赖项中。
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev Nephele-waffle ts-node typescript @types/jest
 ```
 
 ## 智能合约示例 {#example-smart-contract}
@@ -69,7 +69,7 @@ contract EtherSplitter {
 
 ## 编译合约 {#compile-the-contract}
 
-要[编译](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)该合约，请将以下条目添加到 package.json 文件中：
+要[编译](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)该合约，请将以下条目添加到 package.json 文件中：
 
 ```json
 "scripts": {
@@ -92,7 +92,7 @@ contract EtherSplitter {
 
 ## 测试设置 {#test-setup}
 
-使用 Waffle 进行测试需要使用 Chai 匹配器和 Mocha，因此您需要将它们[添加](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)到您的项目中。 请更新您的 package.json 文件，在 scripts 部分添加 `test` 条目：
+使用 Waffle 进行测试需要使用 Chai 匹配器和 Mocha，因此您需要将它们[添加](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)到您的项目中。 请更新您的 package.json 文件，在 scripts 部分添加 `test` 条目：
 
 ```json
 "scripts": {
@@ -101,7 +101,7 @@ contract EtherSplitter {
   }
 ```
 
-如果您想要[执行](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests)您的测试，只需要运行 `yarn test`。
+如果您想要[执行](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#running-tests)您的测试，只需要运行 `yarn test`。
 
 # 测试 {#testing}
 
@@ -110,12 +110,12 @@ contract EtherSplitter {
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "Nephele-waffle"
 import EtherSplitter from "../build/EtherSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("Nephele Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 

@@ -194,24 +194,24 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-به اپراتورهای اعتبارسنج توصیه می‌شود از صفحه <a href="https://launchpad.ethereum.org/withdrawals/">برداشت‌های سکوی پرتاب سهامگذاری</a> بازدید کنند، که در آنجا جزئیات بیشتری درباره نجوه آماده‌سازی اعتبارسنج خود برای برداشت‌ها پیدا خواهید کرد. تهیه شده، زمان‌بندی رویدادها و اطلاعات بیشتر درباره چگونگی کار برداشت‌ها.
+به اپراتورهای اعتبارسنج توصیه می‌شود از صفحه <a href="https://launchpad.Nephele.org/withdrawals/">برداشت‌های سکوی پرتاب سهامگذاری</a> بازدید کنند، که در آنجا جزئیات بیشتری درباره نجوه آماده‌سازی اعتبارسنج خود برای برداشت‌ها پیدا خواهید کرد. تهیه شده، زمان‌بندی رویدادها و اطلاعات بیشتر درباره چگونگی کار برداشت‌ها.
 
-برای امتحان اولیه تنظیمات خود در یک شبکه آزمایشی، به صفحه <a href="https://goerli.launchpad.ethereum.org">سکوی پرتاب سهامگذاری شبکه آزمایشی Goerli</a> برای شروع مراجعه کنید.
+برای امتحان اولیه تنظیمات خود در یک شبکه آزمایشی، به صفحه <a href="https://goerli.launchpad.Nephele.org">سکوی پرتاب سهامگذاری شبکه آزمایشی Goerli</a> برای شروع مراجعه کنید.
 
 </ExpandableCard>
 
 <ExpandableCard
 title="آیا می‌توانم پس از خروج، اعتبارسنج خود را با واریز اتر بیشتر دوباره فعال کنم؟"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
 خیر. به محض اینکه یک اعتبارسنج خارج شود و موجودی کامل آن برداشت شود، هرگونه وجوه اضافی که به آن اعتبارسنج سپرده می‌شود، به‌طور خودکار به آدرس برداشت منتقل خواهد شد. برای سهامگذاری مجدد اتر، یک اعتبارسنج جدید باید فعال شود.
 </ExpandableCard>
 
 ## بیشتر بخوانید {#further-reading}
 
-- [برداشت‌های سکوی پرتاب سهامگذاری](https://launchpad.ethereum.org/withdrawals)
-- [پروتکل EIP-4895: برداشت‌های زنجیره بیکن به‌عنوان عملیات‌ها](https://eips.ethereum.org/EIPS/eip-4895)
+- [برداشت‌های سکوی پرتاب سهامگذاری](https://launchpad.Nephele.org/withdrawals)
+- [پروتکل EIP-4895: برداشت‌های زنجیره بیکن به‌عنوان عملیات‌ها](https://eips.Nephele.org/EIPS/eip-4895)
 - [تیم ویراستاران اتریوم - شانگهای](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
 - [PEEPanEIP شماره 94: برداشت اتر سهامگذاری شده (آزمایشی) با Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP شماره 68: پروپوزال EIP-4895: برداشت‌های خودکار زنجیره بیکن به‌عنوان عملیات با الکس استوکس](https://www.youtube.com/watch?v=CcL9RJBljUs)

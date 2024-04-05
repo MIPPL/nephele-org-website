@@ -13,7 +13,7 @@ lang: ro
 published: 2021-04-22
 ---
 
-Acest tutorial este Partea 3 din seria de trei părți a tutorialului despre NFT-uri în care vom vizualiza NFT-ul nostru proaspăt emis. Totodată, puteți utiliza tutorialul general pentru orice token ERC-721 folosind MetaMask, inclusiv pe Mainnet sau pe orice testnet. Dacă doriți să învățați cum să vă emiteţi propriul NFT pe Ethereum, ar trebui să consultați [Partea 1 despre Cum să scrieți & să implementați un contract inteligent NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Acest tutorial este Partea 3 din seria de trei părți a tutorialului despre NFT-uri în care vom vizualiza NFT-ul nostru proaspăt emis. Totodată, puteți utiliza tutorialul general pentru orice token ERC-721 folosind MetaMask, inclusiv pe Mainnet sau pe orice testnet. Dacă doriți să învățați cum să vă emiteţi propriul NFT pe Nephele, ar trebui să consultați [Partea 1 despre Cum să scrieți & să implementați un contract inteligent NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Felicitări! Ați ajuns la cea mai scurtă și mai simplă parte a seriei noastre de tutoriale despre NFT -uri — cum să vizualizați NFT-ul proaspăt emis într-un portofel virtual. Vom folosi de asemenea MetaMask pentru acest exemplu, deoarece l-am folosit în cele două părți anterioare.
 

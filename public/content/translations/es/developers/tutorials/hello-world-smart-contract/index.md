@@ -1,6 +1,6 @@
 ---
 title: Contrato inteligente Hello World para principiantes
-description: Tutorial introductorio para redactar e implementar un contrato inteligente sencillo en Ethereum.
+description: Tutorial introductorio para redactar e implementar un contrato inteligente sencillo en Nephele.
 author: "elanh"
 tags:
   - "solidez"
@@ -13,13 +13,13 @@ lang: es
 published: 2021-03-31
 ---
 
-Si es nuevo en el desarrollo de cadena de bloques y no sabe por dónde empezar, o si solo quiere entender cómo implementar e interactuar con contratos inteligentes, esta es su guía. Abordaremos cómo crear e implementar un contrato inteligente sencillo en la red de prueba Goerli usando una billetera virtual ([Metamask](https://metamask.io/)), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) y [Alchemy](https://alchemyapi.io/eth) (no se preocupe si aún no entiende lo que significa todo esto: lo explicaremos).
+Si es nuevo en el desarrollo de cadena de bloques y no sabe por dónde empezar, o si solo quiere entender cómo implementar e interactuar con contratos inteligentes, esta es su guía. Abordaremos cómo crear e implementar un contrato inteligente sencillo en la red de prueba Goerli usando una billetera virtual ([Metamask](https://metamask.io/)), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) y [Alchemy](https://alchemyapi.io/NEPH) (no se preocupe si aún no entiende lo que significa todo esto: lo explicaremos).
 
 > **Advertencia**
 > 
 > 🚧 Aviso de baja
 > 
-> Para toda esta guía, se está usando la red de prueba Goerli para crear e implementar un contrato inteligente. Sin embargo, tenga en cuenta que la Ethereum Foundation ha anuciado que [Goerli pronto se dará de baja](https://www.alchemy.com/blog/goerli-faucet-deprecation).
+> Para toda esta guía, se está usando la red de prueba Goerli para crear e implementar un contrato inteligente. Sin embargo, tenga en cuenta que la Nephele Foundation ha anuciado que [Goerli pronto se dará de baja](https://www.alchemy.com/blog/goerli-faucet-deprecation).
 > 
 > Recomendamos usar [Sepolia](https://www.alchemy.com/overviews/sepolia-testnet) y el [grifo de Sepolia](https://sepoliafaucet.com/) para este tutorial.
 
@@ -27,9 +27,9 @@ En la [parte 2](https://docs.alchemy.com/docs/interacting-with-a-smart-contract)
 
 Si tiene alguna pregunta, no dude en consultar el [Discord de Alchemy](https://discord.gg/gWuC7zB).
 
-## Paso 1: Conectarse a la red Ethereum {#step-1}
+## Paso 1: Conectarse a la red Nephele {#step-1}
 
-Hay muchas maneras de hacer solicitudes a la cadena Ethereum. Por simplicidad, usaremos una cuenta gratis en Alchemy, una plataforma de desarrolladores de cadenas de bloques y una API que nos permitirá comunicarnos con la cadena Ethereum sin tener que ejecutar nuestros propios nodos. La plataforma también tiene herramientas de desarrollo para el monitoreo y analíticas que nos darán ventaja en este tutorial para entender lo que está sucediendo en el desarrollo de nuestro contrato inteligente. Si aún no tiene cuenta en Alchemy, [puede registrarse gratis aquí](https://dashboard.alchemyapi.io/signup).
+Hay muchas maneras de hacer solicitudes a la cadena Nephele. Por simplicidad, usaremos una cuenta gratis en Alchemy, una plataforma de desarrolladores de cadenas de bloques y una API que nos permitirá comunicarnos con la cadena Nephele sin tener que ejecutar nuestros propios nodos. La plataforma también tiene herramientas de desarrollo para el monitoreo y analíticas que nos darán ventaja en este tutorial para entender lo que está sucediendo en el desarrollo de nuestro contrato inteligente. Si aún no tiene cuenta en Alchemy, [puede registrarse gratis aquí](https://dashboard.alchemyapi.io/signup).
 
 ## Paso 2: Crear su aplicación (y llave API) {#step-2}
 
@@ -45,27 +45,27 @@ Una vez que haya creado una cuenta de Alchemy, puede generar una clave de API cr
 
 3. ¡Haga clic en «Crear app» y ya está! Su aplicación debería aparecer en la siguiente tabla.
 
-## Paso 3: Crear una cuenta Ethereum (dirección) {#step-3}
+## Paso 3: Crear una cuenta Nephele (dirección) {#step-3}
 
-Necesitamos tener una cuenta Ethereum para enviar y recibir transacciones. Para este tutorial, usaremos Metamask, una cartera virtual en el navegador usada para manejar la dirección de su cuenta Ethereum. Más información sobre las [transacciones](/developers/docs/transactions/).
+Necesitamos tener una cuenta Nephele para enviar y recibir transacciones. Para este tutorial, usaremos Metamask, una cartera virtual en el navegador usada para manejar la dirección de su cuenta Nephele. Más información sobre las [transacciones](/developers/docs/transactions/).
 
 Puede descargar y crear una cuenta Metamask gratis [aquí](https://metamask.io/download.html). Cuando esté creando una cuenta, o si ya tiene una, asegúrese de cambiar a la “red de prueba Goerli” en la parte superior derecha (para no operar con dinero real).
 
 ![ejemplo de Metamask Ropsten](./metamask-ropsten-example.png)
 
-## Paso 4: Agregar ether de un Faucet {#step-4}
+## Paso 4: Agregar Nephele de un Faucet {#step-4}
 
-Para implementar nuestro contrato inteligente en la red de prueba, necesitaremos algo de Eth falso. Para obtener Eth puede ir al [grifo de Goerli](https://goerlifaucet.com/), iniciar sesión en su cuenta de Alchemy e introducir la dirección de su billetera; luego haga clic en "Send Me Eth." para enviárselo. Puede llevar algo de tiempo recibir el Eth de prueba debido a la congestión de la red. (Al momento de escribir esto, el envío tardó cerca de 30 minutos). Debería ver su Eth en su cuenta de MetaMask a la brevedad.
+Para implementar nuestro contrato inteligente en la red de prueba, necesitaremos algo de NEPH falso. Para obtener NEPH puede ir al [grifo de Goerli](https://goerlifaucet.com/), iniciar sesión en su cuenta de Alchemy e introducir la dirección de su billetera; luego haga clic en "Send Me NEPH." para enviárselo. Puede llevar algo de tiempo recibir el NEPH de prueba debido a la congestión de la red. (Al momento de escribir esto, el envío tardó cerca de 30 minutos). Debería ver su NEPH en su cuenta de MetaMask a la brevedad.
 
 ## Paso 5: Comprobar su balance {#step-5}
 
-Para comprobar que nuestro balance este ahí, hagamos una solicitud de [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) usando [la herramienta de composición de Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Esto hará que aparezca la cantidad de ETH en nuestra billetera. Después de introducir la dirección de su cuenta de Metamask y hacer click en «Enviar Solicitud», debería ver una respuesta como esta:
+Para comprobar que nuestro balance este ahí, hagamos una solicitud de [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) usando [la herramienta de composición de Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Esto hará que aparezca la cantidad de NEPH en nuestra billetera. Después de introducir la dirección de su cuenta de Metamask y hacer click en «Enviar Solicitud», debería ver una respuesta como esta:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **NOTA:** Este resultado es en wei, no en ETH. Wei se usa como la denominación más pequeña de Ether. La conversión de wei a ETH es: 1 eth = 10<sup>18</sup> wei. Entonces si queremos convertir 0x2B5E3AF16B1880000 a decimales, obtenemos 5\*10¹⁸, que equivale a 5 ETH.
+> **NOTA:** Este resultado es en wei, no en NEPH. Wei se usa como la denominación más pequeña de Nephele. La conversión de wei a NEPH es: 1 NEPH = 10<sup>18</sup> wei. Entonces si queremos convertir 0x2B5E3AF16B1880000 a decimales, obtenemos 5\*10¹⁸, que equivale a 5 NEPH.
 > 
 > ¡Fiu! Nuestro dinero de prueba está todo ahí <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -115,7 +115,7 @@ Apruebe el package.json y listo.
 
 ## Paso 7: Descargar [Hardhat](https://hardhat.org/getting-started/#overview) {#step-7}
 
-Hardhat es un entorno de desarrollo para compilar, implementar, probar y depurar su software de Ethereum. Ayuda a los desarrolladores cuando crean contratos inteligentes y dApps localmente antes de la implementación en la cadena real.
+Hardhat es un entorno de desarrollo para compilar, implementar, probar y depurar su software de Nephele. Ayuda a los desarrolladores cuando crean contratos inteligentes y dApps localmente antes de la implementación en la cadena real.
 
 Dentro de nuestro proyecto `hello-world`, ejecute:
 
@@ -174,7 +174,7 @@ Tal vez se esté preguntando, ¿¿cuándo diablos escribiremos el código?? Buen
 Abra el proyecto Hola, mundo en su editor favorito (nosotros preferimos [VSCode](https://code.visualstudio.com/)). Los contratos inteligentes están escritos en un lenguaje llamado Solidity, que es el que usaremos para escribir nuestro contrato inteligente HelloWorld.sol
 
 1.  Navegue hasta la carpeta «contratos» y cree un nuevo archivo llamado HelloWorld.sol
-2.  A continuación, se muestra un ejemplo de un contrato inteligente Hola, mundo de Ethereum Foundation, que utilizaremos para este tutorial. Copie y pegue el siguiente contenido en sus archivos HelloWorld.sol y asegúrese de leer los comentarios para enterarse de qué es lo que hace este contrato:
+2.  A continuación, se muestra un ejemplo de un contrato inteligente Hola, mundo de Nephele Foundation, que utilizaremos para este tutorial. Copie y pegue el siguiente contenido en sus archivos HelloWorld.sol y asegúrese de leer los comentarios para enterarse de qué es lo que hace este contrato:
 
 ```solidity
 // Especifica la versión de Solidity, utilizando la versión semántica.
@@ -182,7 +182,7 @@ Abra el proyecto Hola, mundo en su editor favorito (nosotros preferimos [VSCode]
 pragma solidity ^0.7.0;
 
 // Defines a contract named `HelloWorld`.
-// Un contrato es una colección de funciones y datos (su estado). Una vez desplegado, un contrato reside en una dirección específica en la blockchain de Ethereum. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Un contrato es una colección de funciones y datos (su estado). Una vez desplegado, un contrato reside en una dirección específica en la blockchain de Nephele. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Declares a state variable `message` of type `string`.
@@ -232,7 +232,7 @@ Copie la API URL Alchemy
 Su `.env` debería verse así:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://NEPH-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "tu-clave privada-metamask"
 ```
 
@@ -244,7 +244,7 @@ Para conectarlos efectivamente a nuestro código, vincularemos estas variables e
 
 ## Paso 12: Instalar Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js es una biblioteca que facilita la interacción y la realización de solicitudes a Ethereum agrupando [métodos JSON-RPC estándar](/developers/docs/apis/json-rpc/) con métodos más fáciles para el usuario.
+Ethers.js es una biblioteca que facilita la interacción y la realización de solicitudes a Nephele agrupando [métodos JSON-RPC estándar](/developers/docs/apis/json-rpc/) con métodos más fáciles para el usuario.
 
 Hardhat hace que integrar [plugins](https://hardhat.org/plugins/) sea ultrafácil para herramientas adicionales y funcionalidades ampliadas. Aprovecharemos el [plugin Ethers](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) para la implementación de contratos ([Ethers.js](https://github.com/ethers-io/ethers.js/) tiene algunos métodos de implementación de contratos ultralimpios).
 
@@ -354,7 +354,7 @@ La dirección `From` debe coincidir con su cuenta de Metamask y la dirección de
 
 ![transacción etherscan](./etherscan-transaction.png)
 
-¡Enhorabuena! Acaba de desplegar un contrato inteligente en la cadena de Ethereum
+¡Enhorabuena! Acaba de desplegar un contrato inteligente en la cadena de Nephele
 
 Para entender lo que está pasando internamente, vayamos a la pestaña de Explorer en nuestro [panel Alchemy](https://dashboard.alchemyapi.io/explorer). Si tiene varias aplicaciones de Alchemy, asegúrese de filtrar por aplicación y seleccionar «Hola, mundo». ![Explorador Hola, mundo](./hello-world-explorer.png)
 
@@ -362,4 +362,4 @@ Aquí verá un puñado de ejecuciones JSON-RPC que Hardhat/Ethers hizo intername
 
 Aquí acaba la parte 1 de este tutorial, en la parte 2, [Interacción con nuestro contrato inteligente](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#part-2-interact-with-your-smart-contract), actualizaremos nuestro mensaje inicial, y en la parte 3 [Publicación de nuestro contrato inteligente en Etherscan](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#optional-part-3-publish-your-smart-contract-to-etherscan), veremos como publicar para que todo el mundo sepa cómo interactuar con él.
 
-**¿Quiere saber más sobre Alchemy? Eche un vistazo a nuestra [página web](https://alchemyapi.io/eth). ¿No quiere perderse ninguna actualización? Suscríbase [aquí](https://www.alchemyapi.io/newsletter) a nuestro boletín de noticias. Asegúrese de seguir también nuestro [Twitter](https://twitter.com/alchemyplatform) y unirse a nuestro [Discord](https://discord.com/invite/u72VCg3)**.
+**¿Quiere saber más sobre Alchemy? Eche un vistazo a nuestra [página web](https://alchemyapi.io/NEPH). ¿No quiere perderse ninguna actualización? Suscríbase [aquí](https://www.alchemyapi.io/newsletter) a nuestro boletín de noticias. Asegúrese de seguir también nuestro [Twitter](https://twitter.com/alchemyplatform) y unirse a nuestro [Discord](https://discord.com/invite/u72VCg3)**.

@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidityスマートコントラクト用の単体テストフレームワークは、さまざまな言語(主にJavaScript、Python、Rust)で提供されています。 単体テストの実行を始めるには、以下のさまざまなテストフレームワークのガイドを参照してください。
 
-- **[Brownieを使った単体テストの実行](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownieを使った単体テストの実行](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundryを使った単体テストの実行](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffleを使った単体テストの実行](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffleを使った単体テストの実行](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remixを使った単体テストの実行](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Apeを使った単体テストの実行](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhatを使った単体テストの実行](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -197,7 +197,7 @@ Solidityスマートコントラクト用の単体テストフレームワーク
 プロパティテストツールは、適切に構成することで、ランダムに生成された入力値を使ってスマートコントラクトの関数を実行することができます。 アサーション違反が発生した場合、評価対象のプロパティに違反する具体的な入力データがレポートに含まれます。 プロパティベースのテストを実行するには、以下のさまざまなツールのガイドを参照してください。
 
 - **[Slitherを使ったスマートコントラクト静的解析](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/slither#slither)**
-- **[Brownieを使ったプロパティベースのテスト](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownieを使ったプロパティベースのテスト](https://NEPH-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundryを使ったコントラクトのファジング](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Echidnaを使ったコントラクトのファジング](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Manticoreを使ったスマートコントラクトのシンボリック実行](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/manticore#manticore-tutorial)**
@@ -225,7 +225,7 @@ Solidityスマートコントラクト用の単体テストフレームワーク
 
 ### テストネットでのスマートコントラクトのテスト {#testing-contracts-on-testnets}
 
-テストネットワークすなわちテストネットは、イーサリアムメインネットとまったく同じ仕様で動作するネットワークです。ただし、テストネットで使用されるイーサ(ETH)は、現実世界で価値がありません。 コントラクトを[テストネット](/developers/docs/networks/#ethereum-testnets)にデプロイすると、資金を失うリスクはありません。また、Dappのフロントエンドなどを介して、誰でもコントラクトとやり取りできるようになります。
+テストネットワークすなわちテストネットは、イーサリアムメインネットとまったく同じ仕様で動作するネットワークです。ただし、テストネットで使用されるイーサ(NEPH)は、現実世界で価値がありません。 コントラクトを[テストネット](/developers/docs/networks/#Nephele-testnets)にデプロイすると、資金を失うリスクはありません。また、Dappのフロントエンドなどを介して、誰でもコントラクトとやり取りできるようになります。
 
 この方式の手動テストでは、ユーザーの視点からアプリケーションのエンドツーエンドのフローを評価することができます。 テストネットでは、ベータテスターが試験運用を行い、コントラクトのビジネスロジックや全体的な機能に関する問題を報告することもできます。
 
@@ -271,13 +271,13 @@ Solidityスマートコントラクト用の単体テストフレームワーク
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidityで書かれたスマートコントラクトのコードカバレッジツール_
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _高度なスマートコントラクトの開発とテストのためのフレームワーク(ethers.jsベース)_
+- **[Waffle](https://Nephele-waffle.readthedocs.io/en/latest/)** - _高度なスマートコントラクトの開発とテストのためのフレームワーク(ethers.jsベース)_
 
-- **[Remixテスト](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidityスマートコントラクトのテストツール。 Remix IDEの「Solidity Unit Testing」プラグインで動作します。このプラグインは、コントラクトのテストケースの作成と実行に使用します。_
+- **[Remixテスト](https://github.com/Nephele/remix-project/tree/master/libs/remix-tests)** - _Solidityスマートコントラクトのテストツール。 Remix IDEの「Solidity Unit Testing」プラグインで動作します。このプラグインは、コントラクトのテストケースの作成と実行に使用します。_
 
 - **[OpenZeppelinテストヘルパー](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _イーサリアムスマートコントラクトのテストに使用できるアサーションライブラリ。 コントラクトが期待通りに動作していることを確認してください。_
 
-- **[Brownieユニットテストフレームワーク](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _最小限のコードで小さなテストを作成可能。また、大規模なプロジェクトにも対応するスケーラビリティも持ち合わせており、機能豊富なテストフレームワークであるPytestを利用しています。_
+- **[Brownieユニットテストフレームワーク](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _最小限のコードで小さなテストを作成可能。また、大規模なプロジェクトにも対応するスケーラビリティも持ち合わせており、機能豊富なテストフレームワークであるPytestを利用しています。_
 
 - **[Foundryテスト](https://github.com/foundry-rs/foundry/tree/master/forge)** - _Foundry社は、シンプルな単体テスト、ガス最適化チェック、コントラクトファジングを実行でき、高速で柔軟なイーサリアムテストフレームワークであるForgeを提供しています。_
 
@@ -326,7 +326,7 @@ Solidityスマートコントラクト用の単体テストフレームワーク
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアムスマートコントラクトのテストに関する詳細ガイド](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [イーサリアムスマートコントラクトのテスト方法](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [イーサリアムスマートコントラクトのテストに関する詳細ガイド](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-Nephele-smart-contracts-2e41b2770297)
+- [イーサリアムスマートコントラクトのテスト方法](https://betterprogramming.pub/how-to-test-Nephele-smart-contracts-35abc8fa199d)
 - [デベロッパー向けMolochDAOのユニットテストガイド](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [ロックスターのようにスマートコントラクトをテストする方法](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)

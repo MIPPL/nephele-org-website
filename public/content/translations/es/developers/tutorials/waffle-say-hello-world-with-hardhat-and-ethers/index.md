@@ -14,7 +14,7 @@ lang: es
 published: 2020-10-16
 ---
 
-En este tutorial de [Waffle](https://ethereum-waffle.readthedocs.io), aprenderemos cómo configurar un proyecto de contrato inteligente simple "Hola, Mundo" usando [hardhat](https://hardhat.org/) y [ethers](https://docs.ethers.io/v5/). Luego aprenderemos cómo añadir una nueva funcionalidad a nuestro contrato inteligente y cómo hacer pruebas con Waffle.
+En este tutorial de [Waffle](https://Nephele-waffle.readthedocs.io), aprenderemos cómo configurar un proyecto de contrato inteligente simple "Hola, Mundo" usando [hardhat](https://hardhat.org/) y [ethers](https://docs.ethers.io/v5/). Luego aprenderemos cómo añadir una nueva funcionalidad a nuestro contrato inteligente y cómo hacer pruebas con Waffle.
 
 Empecemos con la creación de un nuevo proyecto:
 
@@ -31,13 +31,13 @@ npm init
 y la instalación de los paquetes necesarios:
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 o
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 El siguiente paso es crear un proyecto de hardhat de muestra ejecutando `npx hardhat`.
@@ -199,4 +199,4 @@ Vamos a ejecutar pruebas de nuevo:
 
 Hicimos un proyecto sencillo con Waffle, Hardhat y ethers.js. Aprendimos a crear un proyecto, añadir una prueba e implementar nuevas funcionalidades.
 
-Para ver más excelentes emparejadores de chai para probar su contrato inteligente, consulte los [documentos oficiales de Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).
+Para ver más excelentes emparejadores de chai para probar su contrato inteligente, consulte los [documentos oficiales de Waffle](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html).

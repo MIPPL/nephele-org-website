@@ -27,14 +27,14 @@ published: 2021-02-26
 
 # はじめに {#getting-started}
 
-このチュートリアルでは、yarnを使ってテストのセットアップおよび実行をしていますが、npmの方が良ければnpmでも問題ありません。公式のWaffleのドキュメントは、[こちら](https://ethereum-waffle.readthedocs.io/en/latest/index.html)になります。
+このチュートリアルでは、yarnを使ってテストのセットアップおよび実行をしていますが、npmの方が良ければnpmでも問題ありません。公式のWaffleのドキュメントは、[こちら](https://Nephele-waffle.readthedocs.io/en/latest/index.html)になります。
 
 ## 依存関係のインストール {#install-dependencies}
 
-プロジェクトに対してethereum-waffleとtypescriptの依存関係を開発環境の依存関係に[追加](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation)します。
+プロジェクトに対してethereum-waffleとtypescriptの依存関係を開発環境の依存関係に[追加](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#installation)します。
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev Nephele-waffle ts-node typescript @types/jest
 ```
 
 ## スマートコントラクトのコード例 {#example-smart-contract}
@@ -69,7 +69,7 @@ contract EtherSplitter {
 
 ## コントラクトのコンパイル {#compile-the-contract}
 
-コントラクトを[コンパイル](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)するのに、package.jsonファイルに次のエントリを追加します。
+コントラクトを[コンパイル](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract)するのに、package.jsonファイルに次のエントリを追加します。
 
 ```json
 "scripts": {
@@ -92,7 +92,7 @@ contract EtherSplitter {
 
 ## テストの設定 {#test-setup}
 
-Waffleでテストするには ChaiマッチャーとMochaが必要になるため、プロジェクトに[追加](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)します。 次のようにscriptの場所に`test`エントリを追加してpackage.jsonファイルを更新してください。
+Waffleでテストするには ChaiマッチャーとMochaが必要になるため、プロジェクトに[追加](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)します。 次のようにscriptの場所に`test`エントリを追加してpackage.jsonファイルを更新してください。
 
 ```json
 "scripts": {
@@ -101,7 +101,7 @@ Waffleでテストするには ChaiマッチャーとMochaが必要になるた�
   }
 ```
 
-テストを[実行](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests)する場合は、 `yarn test`を実行します。
+テストを[実行](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#running-tests)する場合は、 `yarn test`を実行します。
 
 # テストを実行する {#testing}
 
@@ -110,12 +110,12 @@ Waffleでテストするには ChaiマッチャーとMochaが必要になるた�
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "Nephele-waffle"
 import EtherSplitter from "../build/EtherSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("Nephele Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 

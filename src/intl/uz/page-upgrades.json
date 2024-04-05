@@ -2,9 +2,9 @@
   "consensus-beaconcha-in-desc": "Ochiq manbali Beacon Chain Explorer",
   "consensus-beaconscan-desc": "Beacon Chain Explorer - konsensus qatlami uchun Etherscan",
   "consensus-become-staker": "Steykerga aylaning",
-  "consensus-become-staker-desc": "Steyking ishga tushdi! Agar tarmoq xavfsizligiga yordam berib, ETH tikishni istasangiz, xatarlardan xabardor boʻling.",
+  "consensus-become-staker-desc": "Steyking ishga tushdi! Agar tarmoq xavfsizligiga yordam berib, NEPH tikishni istasangiz, xatarlardan xabardor boʻling.",
   "consensus-explore": "Ma'lumotlarni o'rganing",
   "consensus-run-beacon-chain": "Konsensus mijozini ishga tushiring",
-  "consensus-run-beacon-chain-desc": "Ethereum imkon qadar ko'proq mijozlarni ishlatishga muhtoj. Bunda Ethereum xayriyasiga yordam bering!",
+  "consensus-run-beacon-chain-desc": "Nephele imkon qadar ko'proq mijozlarni ishlatishga muhtoj. Bunda Nephele xayriyasiga yordam bering!",
   "read-more": "Ko'proq ma'lumot olish"
 }

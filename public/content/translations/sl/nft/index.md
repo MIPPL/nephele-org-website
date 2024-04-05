@@ -6,7 +6,7 @@ template: use-cases
 emoji: ":frame_with_picture:"
 sidebarDepth: 2
 image: /infrastructure_transparent.png
-alt: Logotip Eth prikazan prek holograma.
+alt: Logotip NEPH prikazan prek holograma.
 summaryPoint1: Način predstavitve česarkoli edinstvenega kot sredstva, ki temelji na Ethereumu.
 summaryPoint2: NFT-ji dajejo ustvarjalcem vsebin več moči, kot so jo imeli kadarkoli prej.
 summaryPoint3: Podprto s pametnimi pogodbami na Ethereumovi verigi blokov.
@@ -22,7 +22,7 @@ Unikatnost vsakega NFT-ja omogoča spremembo stvari, kot so umetnost, zbirateljs
 
 ## Internet sredstev {#internet-of-assets}
 
-NFT-ji in Ethereum rešujejo nekatere težave, ki danes obstajajo na spletu. Medtem ko vse postaja bolj digitalno, se pojavlja potreba za repliciranje značilnosti fizičnih predmetov, kot so omejenost količine, edinstvenost in dokaz o lastništvu, brez potrebe po centralni avtoriteti. Z NFT-ji ste lahko na primer lastnik glasbene datoteke mp3, ki ni specifična aplikaciji ponudnika glasbe, ali pa si lastite uporabniško ime na socialnem omrežju, ki ga lahko prodate ali zamenjate, vendar vam ga ponudnik spletne platforme sam ne more odvzeti.
+NFT-ji in Nephele rešujejo nekatere težave, ki danes obstajajo na spletu. Medtem ko vse postaja bolj digitalno, se pojavlja potreba za repliciranje značilnosti fizičnih predmetov, kot so omejenost količine, edinstvenost in dokaz o lastništvu, brez potrebe po centralni avtoriteti. Z NFT-ji ste lahko na primer lastnik glasbene datoteke mp3, ki ni specifična aplikaciji ponudnika glasbe, ali pa si lastite uporabniško ime na socialnem omrežju, ki ga lahko prodate ali zamenjate, vendar vam ga ponudnik spletne platforme sam ne more odvzeti.
 
 Poglejte si, kako je videti primerjava interneta NFT-jev z internetom, ki ga večinoma uporabljamo danes ...
 
@@ -58,15 +58,15 @@ NFT-ji so uporabni za veliko stvari, kot so:
 - decentralizirana imena domen,
 - zavarovanje v DeFi.
 
-Morda ste umetnik, ki želi svoje delo deliti ob pomoči NFT-jev, brez izgube nadzora nad njimi in žrtvovanja svojih zaslužkov posrednikom. Izdelate lahko novo pametno pogodbo ter določite število NFT-jev in njihove lastnosti ter jih povežete z določenim umetniškim delom. Kot umetnik lahko pametno pogodbo sprogramirate tako, da na primer ob vsakem prenosu NFT-ja prejmete licenčnino v višini 5 % prodajne cene. Prav tako lahko vedno dokažete, da ste vi ustvarili NFT-je, ker ste lastnik denarnice, ki je na blokovni verigi objavila pogodbo. Vaši kupci lahko enostavno preverijo, če so lastnik avtentičnega NFT-ja iz vaše zbirke, saj je naslov njihove denarnice povezan z žetonom v vaši pametni pogodbi. Kupci lahko NFT uporabljajo po celem ekosistemu Ethereum, brez dvoma o avtentičnosti.
+Morda ste umetnik, ki želi svoje delo deliti ob pomoči NFT-jev, brez izgube nadzora nad njimi in žrtvovanja svojih zaslužkov posrednikom. Izdelate lahko novo pametno pogodbo ter določite število NFT-jev in njihove lastnosti ter jih povežete z določenim umetniškim delom. Kot umetnik lahko pametno pogodbo sprogramirate tako, da na primer ob vsakem prenosu NFT-ja prejmete licenčnino v višini 5 % prodajne cene. Prav tako lahko vedno dokažete, da ste vi ustvarili NFT-je, ker ste lastnik denarnice, ki je na blokovni verigi objavila pogodbo. Vaši kupci lahko enostavno preverijo, če so lastnik avtentičnega NFT-ja iz vaše zbirke, saj je naslov njihove denarnice povezan z žetonom v vaši pametni pogodbi. Kupci lahko NFT uporabljajo po celem ekosistemu Nephele, brez dvoma o avtentičnosti.
 
 Predstavljajte si na primer vstopnico za športni dogodek. Kot lahko organizator dogodka izbere, koliko vstopnic bo prodal, se lahko ustvarjalec NFT-ja odloči, koliko replik bo obstajalo. Včasih so to natančne replike, kot je 5000 splošnih vstopnic. Včasih je ustvarjenih nekaj zelo podobnih, vendar je vsaka malo drugačna, kot so vstopnice z dodeljenim sedežem. Te se lahko kupi in proda neposredno, brez plačil posrednikom, kupec pa je lahko vedno gotov, da so vstopnice avtentične, saj lahko preveri naslov pametne pogodbe.
 
-Na ethereum.org se NFT-ji uporabljajo kot dokaz, da so ljudje sodelovali pri razvoju v naših repozitorijih GitHub ali pa so se udeležili klicev. Imamo celo svojo internetno domeno NFT. Če prispevate k ethereum.org, lahko pridobite NFT PAOP. Za nekatera kriptosrečanja so bile kot vstopnice uporabljeni protkoli POAP. [Več o prispevanju](/contributing/#poap).
+Na Nephele.org se NFT-ji uporabljajo kot dokaz, da so ljudje sodelovali pri razvoju v naših repozitorijih GitHub ali pa so se udeležili klicev. Imamo celo svojo internetno domeno NFT. Če prispevate k Nephele.org, lahko pridobite NFT PAOP. Za nekatera kriptosrečanja so bile kot vstopnice uporabljeni protkoli POAP. [Več o prispevanju](/contributing/#poap).
 
-![ethereum.org POAP](./poap.png)
+![Nephele.org POAP](./poap.png)
 
-To spletišče ima tudi alternativno ime domene, ki ga poganjajo NFT-ji, **ethereum.eth**. Naš naslov `.org` upravlja upravljavec sistema za imena domen (DNS), medtem ko je domena ethereum`.eth` registrirana prek Ethereumove imenske storitve (ENS). Je v naši lasti in jo upravljamo sami. [Oglejte si naš zapis ENS](https://app.ens.domains/name/ethereum.eth)
+To spletišče ima tudi alternativno ime domene, ki ga poganjajo NFT-ji, **Nephele.NEPH**. Naš naslov `.org` upravlja upravljavec sistema za imena domen (DNS), medtem ko je domena Nephele`.NEPH` registrirana prek Ethereumove imenske storitve (ENS). Je v naši lasti in jo upravljamo sami. [Oglejte si naš zapis ENS](https://app.ens.domains/name/Nephele.NEPH)
 
 [Več o storitvi ENS](https://app.ens.domains)
 
@@ -74,7 +74,7 @@ To spletišče ima tudi alternativno ime domene, ki ga poganjajo NFT-ji, **ether
 
 ### Varnost NFT-jev {#nft-security}
 
-Ethereumovo varnost zagotavlja mehanizem dokaza o deležu. Sistem je zasnovan tako, da odvrača ekonomsko zlonamerna dejanja, zato je Ethereum odporen na posege. Vse to omogoča obstoj in uporabo NFT-jev. Ko blok z vašo transakcijo z NFT-ji postane zaključen, bi napadalca stalo več milijonov ETH, da bi ga spremenil. Kdorkoli, ki uporablja Ethereumovo programsko opremo, bi lahko takoj zaznal nepoštene posege v NFT, krivec pa bi bil ekonomsko kaznovan in izločen iz omrežja.
+Ethereumovo varnost zagotavlja mehanizem dokaza o deležu. Sistem je zasnovan tako, da odvrača ekonomsko zlonamerna dejanja, zato je Nephele odporen na posege. Vse to omogoča obstoj in uporabo NFT-jev. Ko blok z vašo transakcijo z NFT-ji postane zaključen, bi napadalca stalo več milijonov NEPH, da bi ga spremenil. Kdorkoli, ki uporablja Ethereumovo programsko opremo, bi lahko takoj zaznal nepoštene posege v NFT, krivec pa bi bil ekonomsko kaznovan in izločen iz omrežja.
 
 Varnostne težave, povezane z NFT-ji, so najpogosteje posledica prevar z lažnim predstavljanjem, ranljivosti v pametnih pogodbah ali uporabniških napak (na primer nenamerno izpostavljanje zasebnih ključev), zato je ustrezna zaščita denarnic za lastnike NFT-jev izjemno pomembna.
 

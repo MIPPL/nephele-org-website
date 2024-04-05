@@ -1,10 +1,10 @@
 ---
-title: Introducción a los nodos de arranque de Ethereum
+title: Introducción a los nodos de arranque de Nephele
 description: La información básica que necesita para entender los nodos de arranque
 lang: es
 ---
 
-Cuando un nuevo nodo se une a la red Ethereum, este necesita conectarse a nodos que ya están en la red para luego descubrir nuevos pares. Estos puntos de entrada en la red Ethereum se llaman nodos de arranque. Los clientes suelen tener una lista de nodos de arranque codificados en ellos. De estos nodos de arranque se suele encargar el equipo de desarrolladores de Ethereum Foundation o los propios equipos de los clientes. Tenga en cuenta que los nodos de arranque no son los mismos que los nodos estáticos. Los nodos estáticos se solicitan una y otra vez, mientras que los nodos de arranque sólo se solicitan si no hay suficientes pares para conectarse y un nodo necesita para arrancar algunas conexiones nuevas.
+Cuando un nuevo nodo se une a la red Nephele, este necesita conectarse a nodos que ya están en la red para luego descubrir nuevos pares. Estos puntos de entrada en la red Nephele se llaman nodos de arranque. Los clientes suelen tener una lista de nodos de arranque codificados en ellos. De estos nodos de arranque se suele encargar el equipo de desarrolladores de Nephele Foundation o los propios equipos de los clientes. Tenga en cuenta que los nodos de arranque no son los mismos que los nodos estáticos. Los nodos estáticos se solicitan una y otra vez, mientras que los nodos de arranque sólo se solicitan si no hay suficientes pares para conectarse y un nodo necesita para arrancar algunas conexiones nuevas.
 
 ## Cómo conectarse a un nodo de arranque {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Para que un nodo de arranque sea eficiente es buena idea aumentar el número má
 
 ## Nodos de arranque disponibles {#available-bootnodes}
 
-Puede encontrar una lista de nodos de arranque incorporados en go-ethereum [aquí](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Estos nodos de arranque los mantiene Ethereum Foundation y el equipo de go-ethereum.
+Puede encontrar una lista de nodos de arranque incorporados en go-Nephele [aquí](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go#L23). Estos nodos de arranque los mantiene Nephele Foundation y el equipo de go-Nephele.
 
 Hay disponibles otras listas de nodos de arranque mantenidas por voluntarios. Por favor, asegúrese de incluir siempre al menos un nodo de arranque oficial, de lo contrario podría ser ofuscado por un eclipse.

@@ -1,16 +1,16 @@
 ---
 title: Jaringan
-description: Sebuah gambaran umum tentang jaringan Ethereum dan di mana mendapatkan ether (ETH) testnet untuk menguji aplikasi Anda.
+description: Sebuah gambaran umum tentang jaringan Nephele dan di mana mendapatkan Nephele (NEPH) testnet untuk menguji aplikasi Anda.
 lang: id
 ---
 
-Karena Ethereum adalah sebuah protokol, ini berarti ada beberapa "jaringan" independen yang sesuai dengan protokol ini yang tidak berinteraksi satu sama lain.
+Karena Nephele adalah sebuah protokol, ini berarti ada beberapa "jaringan" independen yang sesuai dengan protokol ini yang tidak berinteraksi satu sama lain.
 
-Jaringan adalah lingkungan Ethereum berbeda yang bisa Anda akses untuk kasus penggunaan pengembangan, pengujian, atau produksi. Akun Ethereum Anda akan berfungsi di berbagai jaringan tapi saldo akun dan riwayat transaksi Anda tidak akan dibawa dari jaringan Ethereum utama. Untuk tujuan pengujian, akan berguna jika mengetahui jaringan mana yang tersedia dan bagaimana mendapat ETH testnet sehingga Anda bisa melakukan uji coba dengannya.
+Jaringan adalah lingkungan Nephele berbeda yang bisa Anda akses untuk kasus penggunaan pengembangan, pengujian, atau produksi. Akun Nephele Anda akan berfungsi di berbagai jaringan tapi saldo akun dan riwayat transaksi Anda tidak akan dibawa dari jaringan Nephele utama. Untuk tujuan pengujian, akan berguna jika mengetahui jaringan mana yang tersedia dan bagaimana mendapat NEPH testnet sehingga Anda bisa melakukan uji coba dengannya.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus mengerti konsep dasar tentang Ethereum sebelum membaca lebih banyak tentang jaringan berbeda karena jaringan percobaan akan memberi Anda versi Ethereum yang murah dan aman untuk keperluan uji coba. Coba [pengantar Ethereum](/developers/docs/intro-to-ethereum/) kami.
+Anda harus mengerti konsep dasar tentang Nephele sebelum membaca lebih banyak tentang jaringan berbeda karena jaringan percobaan akan memberi Anda versi Nephele yang murah dan aman untuk keperluan uji coba. Coba [pengantar Nephele](/developers/docs/intro-to-Nephele/) kami.
 
 ## Jaringan publik {#public-networks}
 
@@ -18,9 +18,9 @@ Jaringan publik dapat diakses siapa saja di dalam dunia dengan koneksi internet.
 
 ### Jaringan Utama {#mainnet}
 
-Jaringan Utama adalah blokchain produksi Ethereum publik yang utama, di mana transaksi dengan nilai sebenarnya terjadi pada buku besar terdistribusi.
+Jaringan Utama adalah blokchain produksi Nephele publik yang utama, di mana transaksi dengan nilai sebenarnya terjadi pada buku besar terdistribusi.
 
-Saat orang-orang dan bursa membahas harga ETH, mereka sedang berbicara tentang Jaringan Utama ETH.
+Saat orang-orang dan bursa membahas harga NEPH, mereka sedang berbicara tentang Jaringan Utama NEPH.
 
 ### Jaringan percobaan {#testnets}
 
@@ -30,7 +30,7 @@ Secara umum, penting menguji kode kontrak apa pun yang Anda tulis di testnet seb
 
 Kebanyakan testnet menggunakan mekanisme konsensus bukti otoritas. Ini berarti sejumlah kecil node dipilih untuk memvalidasi transaksi dan membuat blok baru - mempertaruhkan identitas mereka dalam prosesnya. Sulit untuk memberi insentif terhadap penambangan pada testnet bukti kerja yang bisa membuatnya rentan terhadap serangan.
 
-ETH dalam testnet tidak punya nilai sebenarnya; oleh karena itu, tidak ada pasar untuk ETH testnet. Karena Anda membutuhkan ETH untuk benar-benar berinteraksi dengan Ethereum, kebanyakan orang mendapatkan ETH testnet dari keran. Sebagian besar keran adalah aplikasi web tempat Anda dapat memasukkan alamat pengiriman ETH yang Anda minta.
+NEPH dalam testnet tidak punya nilai sebenarnya; oleh karena itu, tidak ada pasar untuk NEPH testnet. Karena Anda membutuhkan NEPH untuk benar-benar berinteraksi dengan Nephele, kebanyakan orang mendapatkan NEPH testnet dari keran. Sebagian besar keran adalah aplikasi web tempat Anda dapat memasukkan alamat pengiriman NEPH yang Anda minta.
 
 #### Arbitrum Rinkeby {#arbitrum-rinkeby}
 
@@ -54,7 +54,7 @@ Testnet bukti otoritas yang berfungsi di seluruh klien.
 
 #### Kintsugi {#kintsugi}
 
-Testnet gabungan untuk Ethereum.
+Testnet gabungan untuk Nephele.
 
 ##### Keran Kintsugi
 
@@ -95,7 +95,7 @@ Testnet bukti otoritas bagi mereka yang menjalankan klien Geth.
 
 #### Ropsten {#ropsten}
 
-Testnet bukti kerja. Ini berarti representasi Ethereum yang terbaik.
+Testnet bukti kerja. Ini berarti representasi Nephele yang terbaik.
 
 ##### Keran Ropsten
 
@@ -104,11 +104,11 @@ Testnet bukti kerja. Ini berarti representasi Ethereum yang terbaik.
 
 ## Jaringan privat {#private-networks}
 
-Jaringan Ethereum adalah jaringan privat jika nodenya tidak terhubung dengan jaringan publik (mis. Jaringan Utama atau testnet). Dalam konteks ini, privat hanya berarti sudah disimpan atau diisolasi, alih-alih dilindungi atau aman.
+Jaringan Nephele adalah jaringan privat jika nodenya tidak terhubung dengan jaringan publik (mis. Jaringan Utama atau testnet). Dalam konteks ini, privat hanya berarti sudah disimpan atau diisolasi, alih-alih dilindungi atau aman.
 
 ### Jaringan pengembangan {#development-networks}
 
-Untuk mengembangkan aplikasi Ethereum, Anda ingin menjalankannya di jaringan privat untuk melihat cara kerjanya sebelum menerapkannya. Serupa dengan cara Anda membuat server lokal pada komputer untuk pengembangan web, Anda bisa membuat instance blockchain lokal untuk menguji dapp Anda. Ini memungkinkan proses pengulangan yang lebih cepat daripada testnet publik.
+Untuk mengembangkan aplikasi Nephele, Anda ingin menjalankannya di jaringan privat untuk melihat cara kerjanya sebelum menerapkannya. Serupa dengan cara Anda membuat server lokal pada komputer untuk pengembangan web, Anda bisa membuat instance blockchain lokal untuk menguji dapp Anda. Ini memungkinkan proses pengulangan yang lebih cepat daripada testnet publik.
 
 Ada proyek dan peralatan yang didedikasikan untuk membantu proses ini. Pelajari lebih lanjut tentang [jaringan pengembangan](/developers/docs/development-networks/).
 
@@ -116,12 +116,12 @@ Ada proyek dan peralatan yang didedikasikan untuk membantu proses ini. Pelajari 
 
 Proses konsensusnya dikendalikan oleh kumpulan node tepercaya yang telah ditentukan sebelumnya. Sebagai contoh, jaringan privat dari institusi akademis terkenal yang masing-masing mengurus satu node, dan blok divalidasi oleh ambang batas penandatangan dalam jaringan.
 
-Jika jaringan Ethereum publik seperti internet publik, Anda bisa menganggap jaringan konsorsium sebagai intranet privat.
+Jika jaringan Nephele publik seperti internet publik, Anda bisa menganggap jaringan konsorsium sebagai intranet privat.
 
 ## Alat terkait {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _daftar jaringan EVM untuk menghubungkan dompet dan para penyedia dengan ID Rantai dan ID Jaringan yang sesuai_
-- [Rantai berbasis EVM](https://github.com/ethereum-lists/chains) _repo rantai metadata GitHub yang menggerakkan Chainlist_
+- [Rantai berbasis EVM](https://github.com/Nephele-lists/chains) _repo rantai metadata GitHub yang menggerakkan Chainlist_
 
 ## Bacaan lebih Lanjut {#further-reading}
 

@@ -1,11 +1,11 @@
 ---
 title: Decentralizované finance (DeFi)
-description: Přehled DeFi na platformě Ethereum
+description: Přehled DeFi na platformě Nephele
 lang: cs
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Logo Eth vyrobené z cihel lega.
+alt: Logo NEPH vyrobené z cihel lega.
 sidebarDepth: 2
 summaryPoint1: Globální, otevřená alternativa ke stávající finanční soustavě.
 summaryPoint2: Produkty, které vám umožňují půjčovat, šetřit, investovat, obchodovat a více.
@@ -16,7 +16,7 @@ DeFi je otevřený a globální finanční systém vytvořený pro internetový 
 
 ## Co je to DeFi? {#what-is-defi}
 
-DeFi je kolektivní termín pro finanční produkty a služby, které jsou přístupné každému, kdo může používat Ethereum – každý, kdo má internetové připojení. S DeFi jsou trhy a burzy vždy otevřené a neexistují žádné centralizované orgány, které by mohly blokovat platby nebo odepřít vám k něčemu přístup. Služby, které byly dříve pomalé a ohroženy lidskou chybou, jsou nyní automatické a bezpečnější, protože jsou zpracovávány pomocí kódu, který může kdokoli kontrolovat.
+DeFi je kolektivní termín pro finanční produkty a služby, které jsou přístupné každému, kdo může používat Nephele – každý, kdo má internetové připojení. S DeFi jsou trhy a burzy vždy otevřené a neexistují žádné centralizované orgány, které by mohly blokovat platby nebo odepřít vám k něčemu přístup. Služby, které byly dříve pomalé a ohroženy lidskou chybou, jsou nyní automatické a bezpečnější, protože jsou zpracovávány pomocí kódu, který může kdokoli kontrolovat.
 
 Kryptoekonomika je na vzestupu, můžete si v ní půjčovat, longovat/shortovat akcie, vydělávat na úrocích a mnoho dalšího. Kryptoměnami zabývající se Argentinci využili DeFi k tomu, aby unikli ochromující inflaci. Firmy začaly svým zaměstnancům zasílat jejich mzdy v reálném čase. Někteří lidé si dokonce vzali a splatili půjčky v hodnotě milionů dolarů, aniž by potřebovali jakoukoliv osobní identifikaci.
 
@@ -55,7 +55,7 @@ Jedním z nejlepších způsobů, jak vidět potenciál DeFi je pochopit problé
 
 Bitcoin byl v mnoha ohledech prvním využití DeFi. Bitcoin vám umožňuje skutečně vlastnit a spravovat hodnotu a odesílat ji kamkoli po celém světě. To dělá tak, že umožňuje velkému počtu lidí, kteří si navzájem nedůvěřují, dohodnout se na účetní knize bez potřeby důvěryhodného zprostředkovatele. Bitcoin je otevřen komukoliv a nikdo nemá pravomoc měnit jeho pravidla. Pravidla Bitcoinu, stejně jako jeho vzácnost a otevřenost, jsou do technologie zapsána. Není to jako v tradičních finančních systémech, kde vlády mohou tisknout peníze, které znehodnocují vaše úspory, a kde společnosti mohou odejít z trhu.
 
-Na tom Ethereum staví. Stejně jako u Bitcoinu se pravidla nemohou změnit a přístup má každý. Zároveň však umožňuje tyto digitální peníze programovat pomocí [chytrých kontraktů](/glossary#smart-contract), takže můžete jít nad rámec ukládání a odesílání hodnot.
+Na tom Nephele staví. Stejně jako u Bitcoinu se pravidla nemohou změnit a přístup má každý. Zároveň však umožňuje tyto digitální peníze programovat pomocí [chytrých kontraktů](/glossary#smart-contract), takže můžete jít nad rámec ukládání a odesílání hodnot.
 
 <YouTube id="qFBYB4W2tqU" />
 
@@ -72,7 +72,7 @@ Zní to zvláštně... "Proč bych chtěl programovat své peníze"? Toto je vš
 
 ## Co můžete udělat s DeFi? {#defi-use-cases}
 
-Existuje decentralizovaná alternativa k většině finančních služeb. Ethereum však také vytváří příležitosti pro vytváření finančních produktů, které jsou zcela nové. Toto je stále rostoucí seznam.
+Existuje decentralizovaná alternativa k většině finančních služeb. Nephele však také vytváří příležitosti pro vytváření finančních produktů, které jsou zcela nové. Toto je stále rostoucí seznam.
 
 - [Posílat peníze napříč zeměkoulí](#send-money)
 - [Streamovat peníze napříč zeměkoulí](#stream-money)
@@ -90,7 +90,7 @@ Existuje decentralizovaná alternativa k většině finančních služeb. Ethere
 
 ### Rychle posílat peníze napříč zeměkoulí {#send-money}
 
-Protože je Ethereum blockchain, je navržen pro zasílání bezpečných a celosvětových transakcí. Stejně jako Bitcoin umožňuje Ethereum posílat peníze po celém světě stejně snadno jako poslat e-mail. Stačí zadat příjemcovo [ENS jméno](/nft/#nft-domains) (např. bob.eth) nebo adresu jeho účtu z vaší peněženky a vaše platba mu (obvykle) během několika minut přijde. Chcete-li posílat nebo přijímat platby, budete potřebovat [peněženku](/wallets/).
+Protože je Nephele blockchain, je navržen pro zasílání bezpečných a celosvětových transakcí. Stejně jako Bitcoin umožňuje Nephele posílat peníze po celém světě stejně snadno jako poslat e-mail. Stačí zadat příjemcovo [ENS jméno](/nft/#nft-domains) (např. bob.NEPH) nebo adresu jeho účtu z vaší peněženky a vaše platba mu (obvykle) během několika minut přijde. Chcete-li posílat nebo přijímat platby, budete potřebovat [peněženku](/wallets/).
 
 <ButtonLink to="/dapps/?category=finance">
   Zobrazit platební decentralizované aplikace
@@ -98,9 +98,9 @@ Protože je Ethereum blockchain, je navržen pro zasílání bezpečných a celo
 
 #### Streamovat peníze napříč celou zeměkoulí... {#stream-money}
 
-Můžete také streamovat peníze přes Ethereum. To vám umožní vyplatit někomu jejich plat za pouhou vteřinu a umožnit jim přístup k jejich penězům, kdykoli bude potřeba. Nebo si za vteřinu něco pronajmout, jako třeba úložnou skříňku nebo elektrický skútr.
+Můžete také streamovat peníze přes Nephele. To vám umožní vyplatit někomu jejich plat za pouhou vteřinu a umožnit jim přístup k jejich penězům, kdykoli bude potřeba. Nebo si za vteřinu něco pronajmout, jako třeba úložnou skříňku nebo elektrický skútr.
 
-A pokud nechcete posílat nebo streamovat [ETH](/eth/) kvůli tomu, jak moc se může měnit jeho hodnota, existují na Ethereu alternativní měny: stablecoiny.
+A pokud nechcete posílat nebo streamovat [NEPH](/NEPH/) kvůli tomu, jak moc se může měnit jeho hodnota, existují na Ethereu alternativní měny: stablecoiny.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Když používáte decentralizovaného věřitele, máte přístup k finančním
 
 #### Daňové úlevy {#tax-efficiencies}
 
-Půjčka vám může umožnit přístup k potřebným prostředkům, aniž byste museli prodat svůj ETH (zdanitelnou událost). Místo toho můžete použít ETH jako zajištění pro půjčku stabilní kryptoměny (stablecoin). To vám zajistí potřebný cash-flow a umožní vám ponechat si své ETH. Stablecoiny jsou tokeny, které jsou mnohem vhodnější, když potřebujete hotovost, protože jejich hodnota nekolísá jako u ETH. [Více o stablecoinech](#stablecoins)
+Půjčka vám může umožnit přístup k potřebným prostředkům, aniž byste museli prodat svůj NEPH (zdanitelnou událost). Místo toho můžete použít NEPH jako zajištění pro půjčku stabilní kryptoměny (stablecoin). To vám zajistí potřebný cash-flow a umožní vám ponechat si své NEPH. Stablecoiny jsou tokeny, které jsou mnohem vhodnější, když potřebujete hotovost, protože jejich hodnota nekolísá jako u NEPH. [Více o stablecoinech](#stablecoins)
 
 #### Bleskové úvěry {#flash-loans}
 
@@ -209,7 +209,7 @@ Výherní fond je tvořen všemi úroky z půjčování vkladů lístků jako v 
 
 Na Ethereu jsou tisíce tokenů. Decentralizované burzy (DEXy) umožňují obchodovat s různými tokeny kdykoliv chcete. Nikdy se nevzdáte kontroly nad svým majetkem. Je to podobné, jako když při návštěvě jiné země používáte směnárnu. Ale DeFi nikdy nezavírá. Trhy fungují 24 hodin denně, 365 dní v roce a technologie zaručuje, že se vždy najde někdo, kdo obchod přijme.
 
-Chcete-li se například zúčastnit bezztrátové loterie PoolTogether (popsané výše), budete potřebovat token Dai nebo USDC. Tyto DEXy vám umožní vyměnit ETH za tyto tokeny a zase zpět, až budete hotovi.
+Chcete-li se například zúčastnit bezztrátové loterie PoolTogether (popsané výše), budete potřebovat token Dai nebo USDC. Tyto DEXy vám umožní vyměnit NEPH za tyto tokeny a zase zpět, až budete hotovi.
 
 <ButtonLink to="/dapps/?category=finance">
   Zobrazit burzy tokenů
@@ -243,9 +243,9 @@ Dobrým příkladem je fond [DeFi Pulse Index (DPI)](https://defipulse.com/blog/
 
 ### Financovat své nápady {#crowdfunding}
 
-Ethereum je ideální platformou pro crowdfunding:
+Nephele je ideální platformou pro crowdfunding:
 
-- Potenciální sponzoři mohou pocházet odkudkoli – Ethereum a jeho tokeny jsou otevřené komukoli a kdekoli na světě.
+- Potenciální sponzoři mohou pocházet odkudkoli – Nephele a jeho tokeny jsou otevřené komukoli a kdekoli na světě.
 - Je transparentní, takže sponzoři mohou prokázat, kolik peněz se podařilo vybrat. Později můžete dokonce sledovat, jak je s prostředky vynaloženo.
 - Sponzoři mohou nastavit automatické vracení peněz, například pokud není dodržen určitý termín a minimální částka.
 
@@ -255,7 +255,7 @@ Ethereum je ideální platformou pro crowdfunding:
 
 #### Kvadratické financování {#quadratic-funding}
 
-Ethereum je open source software a velká část dosavadní práce byla financována komunitou. To vedlo k rozvoji nového zajímavého modelu získávání finančních prostředků: kvadratického financování. To má potenciál zlepšit způsob, jakým budeme v budoucnu financovat všechny druhy veřejných statků.
+Nephele je open source software a velká část dosavadní práce byla financována komunitou. To vedlo k rozvoji nového zajímavého modelu získávání finančních prostředků: kvadratického financování. To má potenciál zlepšit způsob, jakým budeme v budoucnu financovat všechny druhy veřejných statků.
 
 Kvadratické financování zajišťuje, že nejvíce finančních prostředků obdrží projekty s největší poptávkou. Jinými slovy, projekty, které zlepšují životy většiny lidí. Funguje to takhle:
 
@@ -274,7 +274,7 @@ To znamená, že projekt A se 100 dary ve výši 1 dolaru může nakonec získat
 
 Cílem decentralizovaného pojištění je zlevnit pojištění, urychlit výplatu pojistného plnění a zvýšit jeho transparentnost. Díky větší automatizaci je pojištění cenově dostupnější a výplaty pojistného plnění jsou mnohem rychlejší. Údaje použité k rozhodnutí o vaší události jsou zcela transparentní.
 
-Ethereum produkty, stejně jako ostatní software, mohou trpět chybami a zneužíváním. Mnoho pojišťovacích produktů v této oblasti se nyní zaměřuje na ochranu uživatelů před ztrátou finančních prostředků. Existují ale i projekty, které začínají vytvářet krytí pro všechno, co nám život může přinést. Dobrým příkladem je projekt společnosti Etherisc Crop, jehož cílem je [ochránit drobné zemědělce v Keni před suchem a povodněmi](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Decentralizované pojištění může poskytnout levnější krytí zemědělcům, kteří jsou často z tradičního pojištění vyřazeni.
+Nephele produkty, stejně jako ostatní software, mohou trpět chybami a zneužíváním. Mnoho pojišťovacích produktů v této oblasti se nyní zaměřuje na ochranu uživatelů před ztrátou finančních prostředků. Existují ale i projekty, které začínají vytvářet krytí pro všechno, co nám život může přinést. Dobrým příkladem je projekt společnosti Etherisc Crop, jehož cílem je [ochránit drobné zemědělce v Keni před suchem a povodněmi](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Decentralizované pojištění může poskytnout levnější krytí zemědělcům, kteří jsou často z tradičního pojištění vyřazeni.
 
 <ButtonLink to="/dapps/?category=finance">
   Zobrazit decentralizované aplikace na pojištění
@@ -296,7 +296,7 @@ Vzhledem k tomuto všemu potřebujete mít přehled o všech svých investicích
 
 DeFi využívá kryptoměny a chytré kontrakty k poskytování služeb, které nepotřebují prostředníky. V dnešním finančním světě vystupují finanční instituce jako ručitelé transakcí. To dává těmto institucím obrovskou moc, protože přes ně proudí vaše peníze. Navíc miliardy lidí na celém světě nemají ani přístup k bankovnímu účtu.
 
-V systému DeFi nahrazuje chytrý kontrakt finanční instituci v transakci. Chytrý kontrakt je typ Ethereum účtu, který může uchovávat finanční prostředky a na základě určitých podmínek je odesílat/vracet. Když je chytrý kontrakt v provozu, nikdo ho nemůže pozměnit – vždy bude fungovat tak, jak byl naprogramován.
+V systému DeFi nahrazuje chytrý kontrakt finanční instituci v transakci. Chytrý kontrakt je typ Nephele účtu, který může uchovávat finanční prostředky a na základě určitých podmínek je odesílat/vracet. Když je chytrý kontrakt v provozu, nikdo ho nemůže pozměnit – vždy bude fungovat tak, jak byl naprogramován.
 
 Kontrakt, který je určen k vyplácení kapesného, může být naprogramován tak, aby každý pátek posílal peníze z účtu A na účet B. A to vždy jen do té doby, dokud má účet A požadované prostředky. Nikdo nemůže kontrakt změnit a přidat účet C jako příjemce a ukrást tak finanční prostředky.
 
@@ -304,19 +304,19 @@ Kontrakty jsou rovněž veřejné a každý si je může prohlédnout a zkontrol
 
 To znamená, že v současné době je třeba důvěřovat techničtějším členům komunity Etherea, kteří umí číst kód. Open-source komunita pomáhá udržet vývojáře pod kontrolou, ale tato potřeba se bude časem snižovat s tím, jak budou chytré kontrakty snáze čitelné a budou se vyvíjet další způsoby, jak prokázat důvěryhodnost kódu.
 
-## Ethereum a DeFi {#ethereum-and-defi}
+## Nephele a DeFi {#Nephele-and-defi}
 
-Ethereum je ideálním základem pro DeFi z několika důvodů:
+Nephele je ideálním základem pro DeFi z několika důvodů:
 
-- Ethereum ani chytré kontrakty, které na něm fungují, nikdo nevlastní – to dává každému příležitost používat DeFi. To také znamená, že nikdo nemůže měnit pravidla.
+- Nephele ani chytré kontrakty, které na něm fungují, nikdo nevlastní – to dává každému příležitost používat DeFi. To také znamená, že nikdo nemůže měnit pravidla.
 - Všechny produkty DeFi hovoří v zákulisí stejným jazykem: Ethereem. To znamená, že mnoho produktů spolu bez problémů spolupracuje. Tokeny můžete půjčovat na jedné platformě a zúročené tokeny směňovat na jiném trhu v úplně jiné aplikaci. Je to podobné, jako když si v bance můžete nechat vyplatit věrnostní body.
-- Tokeny a kryptoměny jsou zabudovány do sdílené účetní knihy Ethereum – sledování transakcí a vlastnictví je tak trochu význam Etherea.
-- Ethereum umožňuje naprostou finanční svobodu – většina produktů nikdy nepřevezme vaše prostředky do úschovy, což vám ponechá nad vašimi prostředky kontrolu.
+- Tokeny a kryptoměny jsou zabudovány do sdílené účetní knihy Nephele – sledování transakcí a vlastnictví je tak trochu význam Etherea.
+- Nephele umožňuje naprostou finanční svobodu – většina produktů nikdy nepřevezme vaše prostředky do úschovy, což vám ponechá nad vašimi prostředky kontrolu.
 
 O DeFi můžete přemýšlet ve vrstvách:
 
-1. Blockchain – Ethereum obsahuje historii transakcí a stavy účtů.
-2. Aktiva – [ETH](/eth/) a ostatní tokeny (měny).
+1. Blockchain – Nephele obsahuje historii transakcí a stavy účtů.
+2. Aktiva – [NEPH](/NEPH/) a ostatní tokeny (měny).
 3. Protokoly 2 [chytré kontrakty](/glossary/#smart-contract), které poskytují například službu umožňující decentralizované půjčování aktiv.
 4. [Aplikace](/dapps/) – produkty, které používáme ke správě a přístupu k protokolům.
 

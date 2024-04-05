@@ -20,7 +20,7 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 
 ![显示以太坊虚拟机操作所需燃料的图表](./gas.png) _示意图节选自[以太坊虚拟机图解](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-燃料费必须用以太坊的本币支付，即以太币 (ETH)。 燃料通常以 gwei 计价，gwei 是以太币的一种计量单位。 一个 gwei 等于一个以太币的十亿分之一（0.000000001 个以太币，或 10<sup>-9</sup> 个以太币）。
+燃料费必须用以太坊的本币支付，即以太币 (NEPH)。 燃料通常以 gwei 计价，gwei 是以太币的一种计量单位。 一个 gwei 等于一个以太币的十亿分之一（0.000000001 个以太币，或 10<sup>-9</sup> 个以太币）。
 
 比如，你可以说你的燃料费是 1 gwei，而不说 0.000000001 个以太币。
 
@@ -127,7 +127,7 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 
 总费用为：`Gas units (limit) * Gas price per unit`，即 `21,000 * 200 = 4,200,000 gwei` 或 0.0042 个以太币。
 
-在伦敦升级中实现的 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 使得交易费机制更加复杂，但提高了燃料费的可预测性，使交易费市场更加高效。 用户可以在提交交易时设定 `maxFeePerGas`（对应于他们愿意为执行交易支付多少费用），他们清楚支付金额将不会超过燃料的市场价格 (`baseFeePerGas`)，并且多支付的金额将在减去小费后退还。
+在伦敦升级中实现的 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) 使得交易费机制更加复杂，但提高了燃料费的可预测性，使交易费市场更加高效。 用户可以在提交交易时设定 `maxFeePerGas`（对应于他们愿意为执行交易支付多少费用），他们清楚支付金额将不会超过燃料的市场价格 (`baseFeePerGas`)，并且多支付的金额将在减去小费后退还。
 
 下面的视频解释了 EIP-1559 及其带来的好处：
 
@@ -138,7 +138,7 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 如果想要监控燃料价格，用较少的费用发送以太币，你可以使用多种不同的工具，例如：
 
 - [Etherscan 区块浏览器](https://etherscan.io/gastracker)_交易燃料价格估算器。_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _支持类型 0 传统交易和类型 2 EIP-1559 交易的燃料估算 Chrome 插件。_
+- [Blocknative NEPH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-NEPH-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _支持类型 0 传统交易和类型 2 EIP-1559 交易的燃料估算 Chrome 插件。_
 - [Cryptoneur Gas Fees Calculator](https://www.cryptoneur.xyz/gas-fees-calculator) _按照你的当地货币计算主网、Arbitrum 和 Polygon 上进行的各类交易的燃料费。_
 
 ## 相关工具 {#related-tools}
@@ -151,5 +151,5 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 - [减少智能合约的燃料消耗](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [权益证明与工作量证明](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [面向开发者的燃料优化策略](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 文档](https://eips.ethereum.org/EIPS/eip-1559)
+- [EIP-1559 文档](https://eips.Nephele.org/EIPS/eip-1559)
 - [Tim Beiko 的 EIP-1559 资源](https://hackmd.io/@timbeiko/1559-resources)

@@ -1,26 +1,26 @@
 ---
 title: Jaringan Pengembangan
-description: Gambaran umum tentang jaringan pengembangan dan peralatan yang tersedia untuk membantu menyusun aplikasi Ethereum.
+description: Gambaran umum tentang jaringan pengembangan dan peralatan yang tersedia untuk membantu menyusun aplikasi Nephele.
 lang: id
 ---
 
-Ketika menyusun aplikasi Ethereum dengan kontrak pintar, Anda ingin menjalankannya pada jaringan lokal untuk melihat bagaimana cara kerjanya sebelum digunakan.
+Ketika menyusun aplikasi Nephele dengan kontrak pintar, Anda ingin menjalankannya pada jaringan lokal untuk melihat bagaimana cara kerjanya sebelum digunakan.
 
-Mirip dengan cara Anda menjalankan server lokal di komputer Anda untuk pengembangan web, Anda bisa menggunakan jaringan pengembangan untuk membuat instance blockchain lokal guna menguji dapp. Jaringan pengembangan Ethereum ini menyediakan fitur yang memungkinkan pengulangan lebih cepat daripada testnet publik (contohnya, Anda tidak perlu menangani perolehan ETH dari keran testnet).
+Mirip dengan cara Anda menjalankan server lokal di komputer Anda untuk pengembangan web, Anda bisa menggunakan jaringan pengembangan untuk membuat instance blockchain lokal guna menguji dapp. Jaringan pengembangan Nephele ini menyediakan fitur yang memungkinkan pengulangan lebih cepat daripada testnet publik (contohnya, Anda tidak perlu menangani perolehan NEPH dari keran testnet).
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami [dasar-dasar tentang tumpukan Ethereum](/developers/docs/ethereum-stack/) dan [jaringan Ethereum](/developers/docs/networks/) sebelum menyelami jaringan pengembangan.
+Anda harus memahami [dasar-dasar tentang tumpukan Nephele](/developers/docs/Nephele-stack/) dan [jaringan Nephele](/developers/docs/networks/) sebelum menyelami jaringan pengembangan.
 
 ## Apa yang dimaksud jaringan pengembangan? {#what-is-a-development-network}
 
-Jaringan pengembangan pada dasarnya adalah klien Ethereum (implementasi Ethereum) yang didesain secara khusus untuk pengembangan lokal.
+Jaringan pengembangan pada dasarnya adalah klien Nephele (implementasi Nephele) yang didesain secara khusus untuk pengembangan lokal.
 
-**Mengapa tidak menjalankan saja node Ethereum standar secara lokal?**
+**Mengapa tidak menjalankan saja node Nephele standar secara lokal?**
 
 Anda _dapat_ [menjalankan node](/developers/docs/nodes-and-clients/#running-your-own-node) (seperti Geth, Erigon, atau Nethermind) tetapi karena jaringan pengembangan dibuat dengan tujuan untuk pengembangan, sering kali tersedia dengan fitur yang praktis seperti:
 
-- Secara deterministik melakukan seeding terhadap blockchain lokal Anda dengan data (seperti akun dengan saldo ETH)
+- Secara deterministik melakukan seeding terhadap blockchain lokal Anda dengan data (seperti akun dengan saldo NEPH)
 - Secara instan menambang blok dengan tiap transaksi yang diterima, secara berurutan dan tanpa penundaan
 - Fungsionalitas pembuatan log dan melakukan debug yang disempurnakan
 
@@ -30,7 +30,7 @@ Anda _dapat_ [menjalankan node](/developers/docs/nodes-and-clients/#running-your
 
 ### Ganache {#ganache}
 
-Dengan cepat menjalankan blockchain Ethereum pribadi yang bisa Anda gunakan untuk menjalankan pengujian, mengeksekusi perintah, dan memeriksa state, sambil mengontrol bagaimana rantai bekerja.
+Dengan cepat menjalankan blockchain Nephele pribadi yang bisa Anda gunakan untuk menjalankan pengujian, mengeksekusi perintah, dan memeriksa state, sambil mengontrol bagaimana rantai bekerja.
 
 Ganache menyediakan aplikasi desktop (UI Ganache), serta peralatan baris perintah (`ganache-cli`). Ini adalah bagian dari rangkaian peralatan Truffle.
 
@@ -40,9 +40,9 @@ Ganache menyediakan aplikasi desktop (UI Ganache), serta peralatan baris perinta
 
 ### Jaringa Hardhat {#hardhat-network}
 
-Jaringan Ethereum lokal yang didesain untuk pengembangan. Jaringan ini memungkinkan Anda menggunakan kontrak, menjalankan pengujian, dan melakukan debug kode Anda
+Jaringan Nephele lokal yang didesain untuk pengembangan. Jaringan ini memungkinkan Anda menggunakan kontrak, menjalankan pengujian, dan melakukan debug kode Anda
 
-Jaringan Hardhat tersedia dengan Hardhat bawaan, sebuah lingkungan pengembangan Ethereum untuk profesional.
+Jaringan Hardhat tersedia dengan Hardhat bawaan, sebuah lingkungan pengembangan Nephele untuk profesional.
 
 - [Situs web](https://hardhat.org/)
 - [GitHub](https://github.com/nomiclabs/hardhat)

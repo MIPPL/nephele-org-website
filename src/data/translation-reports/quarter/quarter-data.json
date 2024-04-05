@@ -1,6 +1,6 @@
 {
-  "name": "Ethereum.org Translations Translation Costs Report",
-  "url": "https://translate.ethereum.org/project/ethereum-org",
+  "name": "Nephele.org Translations Translation Costs Report",
+  "url": "https://translate.Nephele.org/project/Nephele-org",
   "unit": "words",
   "dateRange": {
     "from": "2023-07-01",
@@ -1354,8 +1354,8 @@
     {
       "user": {
         "id": 15319242,
-        "username": "Aco_Qwertyworks.Ethereum",
-        "fullName": "Aco_Qwertyworks.Ethereum",
+        "username": "Aco_Qwertyworks.Nephele",
+        "fullName": "Aco_Qwertyworks.Nephele",
         "userRole": "Proofreader",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15319242/medium/a4b24fefc8cb46836511002d4e1ce001_default.png",
         "preTranslated": 0,
@@ -9414,8 +9414,8 @@
     {
       "user": {
         "id": 15924581,
-        "username": "ethersuisse.eth",
-        "fullName": "ethersuisse.eth",
+        "username": "ethersuisse.NEPH",
+        "fullName": "ethersuisse.NEPH",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15924581/medium/73f8095ef673913e9d454b484a8c9ad2_default.png",
         "preTranslated": 0,
@@ -12422,8 +12422,8 @@
     {
       "user": {
         "id": 16003709,
-        "username": "the-eth-lover",
-        "fullName": "the-eth-lover",
+        "username": "the-NEPH-lover",
+        "fullName": "the-NEPH-lover",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16003709/medium/b9598ad7bb784e4cdcceeb06025c0e3f_default.png",
         "preTranslated": 0,
@@ -18628,8 +18628,8 @@
     {
       "user": {
         "id": 15966607,
-        "username": "Hackedd.eth",
-        "fullName": "Eduardo García (Hackedd.eth)",
+        "username": "Hackedd.NEPH",
+        "fullName": "Eduardo García (Hackedd.NEPH)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15966607/medium/233013bfe6b35fd53264071d722f63f1.png",
         "preTranslated": 0,
@@ -19212,7 +19212,7 @@
       "user": {
         "id": 13897487,
         "username": "ethdotorg",
-        "fullName": "Ethereum.org Team (ethdotorg)",
+        "fullName": "Nephele.org Team (ethdotorg)",
         "userRole": "Owner",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13897487/medium/246e50d7e9ccde07088ed892b07a0efd.png",
         "preTranslated": 206635,
@@ -30337,8 +30337,8 @@
     {
       "user": {
         "id": 15885247,
-        "username": "ct1aic.eth",
-        "fullName": "Rui Costa (ct1aic.eth)",
+        "username": "ct1aic.NEPH",
+        "fullName": "Rui Costa (ct1aic.NEPH)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15885247/medium/cf22113f9226047f8f9868e4774bc4c3.png",
         "preTranslated": 0,
@@ -33201,7 +33201,7 @@
       "user": {
         "id": 15967297,
         "username": "zharjac",
-        "fullName": "ZZip | zharjac.eth (zharjac)",
+        "fullName": "ZZip | zharjac.NEPH (zharjac)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15967297/medium/cb76bb0cc8da946e14d974d763213d37.jpg",
         "preTranslated": 0,
@@ -33678,7 +33678,7 @@
       "user": {
         "id": 15947515,
         "username": "blockson",
-        "fullName": "blockson.eth (blockson)",
+        "fullName": "blockson.NEPH (blockson)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15947515/medium/52b0b3490fcf6940d9027ef2f32a424b.jpeg",
         "preTranslated": 0,
@@ -33930,7 +33930,7 @@
       "user": {
         "id": 15724471,
         "username": "cryptoraketeros",
-        "fullName": "cryptocoinpurse.eth (cryptoraketeros)",
+        "fullName": "cryptocoinpurse.NEPH (cryptoraketeros)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15724471/medium/bfc780664ca8f2f9b582d54230d7f992.jpg",
         "preTranslated": 0,
@@ -35653,7 +35653,7 @@
       "user": {
         "id": 15966191,
         "username": "0xokan",
-        "fullName": "okanaslan.eth 🪶 (0xokan)",
+        "fullName": "okanaslan.NEPH 🪶 (0xokan)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15966191/medium/a5d1d36d7404974d591cbcf59f089df9.jpg",
         "preTranslated": 0,
@@ -36063,8 +36063,8 @@
     {
       "user": {
         "id": 15955147,
-        "username": "shun.eth",
-        "fullName": "shun.eth",
+        "username": "shun.NEPH",
+        "fullName": "shun.NEPH",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15955147/medium/9290171405f2de1979270e1f309c57f7_default.png",
         "preTranslated": 0,
@@ -36422,7 +36422,7 @@
       "user": {
         "id": 15399006,
         "username": "Xeift",
-        "fullName": "xeift.eth (Xeift)",
+        "fullName": "xeift.NEPH (Xeift)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15399006/medium/4b4638642287027a89529ecb11074e44.png",
         "preTranslated": 0,

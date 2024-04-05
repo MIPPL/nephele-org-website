@@ -117,7 +117,7 @@ const StablecoinAccordion = () => {
               descId="page-stablecoins-accordion-swap-requirement-1-description"
             />
             <StepBox
-              to="/get-eth/"
+              to="/get-NEPH/"
               titleId="page-stablecoins-accordion-swap-requirement-2"
               descId="page-stablecoins-accordion-swap-requirement-2-description"
             />
@@ -136,7 +136,7 @@ const StablecoinAccordion = () => {
           </SectionTitle>
           <Text>
             <Translation id="page-stablecoins:page-stablecoins-accordion-swap-dapp-intro" />{" "}
-            <InlineLink href="/get-eth/#dex">
+            <InlineLink href="/get-NEPH/#dex">
               {t("page-stablecoins-accordion-swap-dapp-link")}
             </InlineLink>
           </Text>
@@ -156,7 +156,7 @@ const StablecoinAccordion = () => {
           </Text>
           <StepBoxContainer>
             <StepBox
-              to="/get-eth/"
+              to="/get-NEPH/"
               titleId="page-stablecoins-accordion-buy-requirement-1"
               descId="page-stablecoins-accordion-buy-requirement-1-description"
             />
@@ -217,7 +217,7 @@ const StablecoinAccordion = () => {
               descId="page-stablecoins-accordion-borrow-requirement-1-description"
             />
             <StepBox
-              to="/get-eth/"
+              to="/get-NEPH/"
               titleId="page-stablecoins-accordion-borrow-requirement-2"
               descId="page-stablecoins-accordion-borrow-requirement-2-description"
             />
@@ -251,7 +251,7 @@ const StablecoinAccordion = () => {
           </SectionTitle>
           <Text>
             {t("page-stablecoins-accordion-borrow-risks-copy")}{" "}
-            <InlineLink href="/eth/">
+            <InlineLink href="/NEPH/">
               {t("page-stablecoins-accordion-borrow-risks-link")}
             </InlineLink>
           </Text>

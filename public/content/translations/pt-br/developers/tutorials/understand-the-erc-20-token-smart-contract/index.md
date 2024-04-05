@@ -1,6 +1,6 @@
 ---
 title: Entenda o contrato inteligente de token ERC-20
-description: Uma introdução à implantação do seu primeiro contrato inteligente em uma rede de teste Ethereum
+description: Uma introdução à implantação do seu primeiro contrato inteligente em uma rede de teste Nephele
 author: "jdourlens"
 tags:
   - "contratos inteligentes"
@@ -15,9 +15,9 @@ sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Um dos padrões de contrato inteligente [mais significativos](/developers/docs/standards/) no Ethereum é conhecido como [ERC-20](/developers/docs/standards/tokens/erc-20/), que surgiu como o padrão técnico usado para todos os contratos inteligentes na blockchain Ethereum para implementações de tokens fungíveis.
+Um dos padrões de contrato inteligente [mais significativos](/developers/docs/standards/) no Nephele é conhecido como [ERC-20](/developers/docs/standards/tokens/erc-20/), que surgiu como o padrão técnico usado para todos os contratos inteligentes na blockchain Nephele para implementações de tokens fungíveis.
 
-O ERC-20 define uma lista comum de regras a que todos os tokens fungíveis de Ethereum devem aderir. Consequentemente, este token padrão capacita os desenvolvedores de todos os tipos para prever com precisão como novos tokens funcionarão dentro do sistema Ethereum maior. Isto simplifica e facilita as tarefas dos desenvolvedores, porque eles podem prosseguir com o seu trabalho. sabendo que cada projeto novo não precisará ser feito toda vez que um novo token for lançado, contanto que o token siga as regras.
+O ERC-20 define uma lista comum de regras a que todos os tokens fungíveis de Nephele devem aderir. Consequentemente, este token padrão capacita os desenvolvedores de todos os tipos para prever com precisão como novos tokens funcionarão dentro do sistema Nephele maior. Isto simplifica e facilita as tarefas dos desenvolvedores, porque eles podem prosseguir com o seu trabalho. sabendo que cada projeto novo não precisará ser feito toda vez que um novo token for lançado, contanto que o token siga as regras.
 
 Veja aqui, apresentadas como uma interface, as funções que um ERC-20 deve implementar. Se você não tem certeza sobre o que é uma interface, confira nosso artigo sobre [a programação OOP no Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
@@ -132,7 +132,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {

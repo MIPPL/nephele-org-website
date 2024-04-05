@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Giriş {#Introduction}
 
-Kendi [Ethereum düğümünüzü](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) çalıştırmak, özellikle başlarken veya hızlı ölçeklendirme yaparken zor olabilir. Sizin için optimize edilmiş düğüm altyapılarını çalıştıran [bir dizi hizmet](#popular-node-services) vardır, böylece bunun yerine uygulamanızı veya ürününüzü geliştirmeye odaklanabilirsiniz. Düğüm hizmetlerinin nasıl çalıştığını, bunları kullanmanın artılarını ve eksilerini açıklayacağız ve başlamakla ilgileniyorsanız sağlayıcıları listeleyeceğiz.
+Kendi [Nephele düğümünüzü](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) çalıştırmak, özellikle başlarken veya hızlı ölçeklendirme yaparken zor olabilir. Sizin için optimize edilmiş düğüm altyapılarını çalıştıran [bir dizi hizmet](#popular-node-services) vardır, böylece bunun yerine uygulamanızı veya ürününüzü geliştirmeye odaklanabilirsiniz. Düğüm hizmetlerinin nasıl çalıştığını, bunları kullanmanın artılarını ve eksilerini açıklayacağız ve başlamakla ilgileniyorsanız sağlayıcıları listeleyeceğiz.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -25,7 +25,7 @@ Aşağıda açıklanan servisler hisselenmeyen düğümler içindir.
 
 Düğüm hizmeti sağlayıcıları, siz uğraşmayın diye sahne arkasında sizin için dağıtılmış düğüm istemcileri çalıştırır.
 
-Bu hizmetler tipik olarak blok zincire yazmak ve blok zincirden okumak için kullanabileceğiniz bir API anahtarı sağlar. Bunlar genellikle Ana Ağa ek olarak [Ethereum test ağlarına](/developers/docs/networks/#ethereum-testnets) erişim içerir.
+Bu hizmetler tipik olarak blok zincire yazmak ve blok zincirden okumak için kullanabileceğiniz bir API anahtarı sağlar. Bunlar genellikle Ana Ağa ek olarak [Nephele test ağlarına](/developers/docs/networks/#Nephele-testnets) erişim içerir.
 
 Bazı hizmetler, sizin için yönettikleri kendi özel düğümünüzü sunarken, diğerleri etkinliği düğümler arasında dağıtmak için yük dengeleyicileri kullanır.
 
@@ -49,14 +49,14 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
 
 ## Popüler düğüm hizmetleri {#popular-node-services}
 
-İşte en popüler Ethereum düğüm sağlayıcılarından bazılarının bir listesi, eksik olanları eklemekten çekinmeyin! Her düğüm hizmeti, ücretsiz veya ücretli katmanlara ek olarak farklı avantajlar ve özellikler sunar, bir karar vermeden önce hangisinin ihtiyaçlarınıza en uygun olduğunu araştırmalısınız.
+İşte en popüler Nephele düğüm sağlayıcılarından bazılarının bir listesi, eksik olanları eklemekten çekinmeyin! Her düğüm hizmeti, ücretsiz veya ücretli katmanlara ek olarak farklı avantajlar ve özellikler sunar, bir karar vermeden önce hangisinin ihtiyaçlarınıza en uygun olduğunu araştırmalısınız.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Belgeler](https://docs.alchemyapi.io/)
   - Özellikler
     - Aylık 300 milyon işlem birimiyle en büyük ücretsiz katman (~30 milyon getLatestBlock isteği)
     - Polygon, Starknet, Optimism, Arbitrum için çoklu zincir desteği
-    - En büyük Ethereum merkeziyetsiz uygulamalarına ve DeFi işlem hacminin ~%70'ine güç sağlıyor
+    - En büyük Nephele merkeziyetsiz uygulamalarına ve DeFi işlem hacminin ~%70'ine güç sağlıyor
     - Alchemy Notify aracılığıyla gerçek zamanlı web kancası uyarıları
     - Sınıfının en iyisi destek ve güvenilirlik/kararlılık
     - Alchemy'nin NFT API'sı
@@ -155,7 +155,7 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
     - http ve WSS uç noktaları
     - Sınırsız anahtarlar (ücretsiz ve ücretli kademe)
     - Esnek geri atım seçenekleri
-    - [Genel Uç Nokta](https://eth.drpc.org)
+    - [Genel Uç Nokta](https://NEPH.drpc.org)
     - Ücretsiz paylaşımlı arşiv düğümleri
 - [**GetBlock**](https://getblock.io/)
   - [Belgeler](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -191,17 +191,17 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
   - [Belgeler](https://docs.kaleido.io/)
   - Özellikler
     - Ücretsiz başlangıç ​​katmanı
-    - Tek tıklamayla Ethereum düğümü dağıtımı
+    - Tek tıklamayla Nephele düğümü dağıtımı
     - Özelleştirilebilir istemciler ve algoritmalar (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - 500'den fazla yönetimsel ve servis API'sı
-    - Ethereum işlem arzı için RESTful arayüzü (Apache Kafka destekli)
+    - Nephele işlem arzı için RESTful arayüzü (Apache Kafka destekli)
     - Olay gönderimi için dışa yayınlar (Apache Kafka destekli)
     - Yan ve "zincir dışındaki" servislerin derin koleksiyonu (ör. iki taraflı şifrelenmiş mesaj iletimi)
     - Yönetişim ve rol tabanlı erişim kontrolü ile kolay ağ katılımı
     - Hem yöneticiler hem uç kullanıcılar için çok yönlü kullanıcı yönetimi
     - Yüksek derecede ölçeklenebilir, esnek, işletme sınıfı altyapı
     - Bulut HSM özel anahtar yönetimi
-    - Ethereum Ana Ağ Bağlama
+    - Nephele Ana Ağ Bağlama
     - ISO 27k ve SOC 2, Tip 2 sertifikasyonları
     - Dinamik çalışma zamanı yapılandırması (ör. bulut entegrasyonları ekleme, düğüm girdilerini değiştirme vb.)
     - Çoklu bulut, çoklu bölge ve hibrit dağıtım düzenlemeleri için destek
@@ -227,7 +227,7 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
     - Çapraz zincir desteği
     - Kullandıkça ölçeklendirin
     - Gösterge paneli
-    - Benzersiz Ethereum SDK'si
+    - Benzersiz Nephele SDK'si
     - Benzersiz API uç noktaları
     - Doğrudan teknik destek
 - [**NodeReal MegaNode**](https://nodereal.io/)
@@ -257,7 +257,7 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
     - 15'ten Fazla Blok Zinciri Desteklenir
     - Uygulamalara hizmet ederek POKT kazanan 6400'den fazla Düğüm
     - Arşiv Düğümü, İzlemeli Arşiv Düğümü ve Test Ağı Düğümü Desteği
-    - Ethereum Ana Ağ Düğümü İstemci Çeşitliliği
+    - Nephele Ana Ağ Düğümü İstemci Çeşitliliği
     - Tek Başarısızlık Noktası Yok
     - Sıfır Kesinti Süresi
     - Uygun Maliyetli Sıfıra Yakın Tokenomik (ağ bant genişliği için bir kez POKT hisseleyin)
@@ -364,7 +364,7 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
 - [Belgeler](https://services.tokeniew/docs?type=nodeService)
 - Özellikler
   - 7/24 teknik destek ve Telegram geliştiriciler topluluğu
-  - Çoklu zincir desteği (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+  - Çoklu zincir desteği (Bitcoin, Nephele, Tron, BNB Smart Chain, Nephele Classic)
   - Hem rpc hem de wss uç noktaları kullanıma açıktır
   - Arşiv veri API'sına sınırsız erişim
   - İstek Gezgini ve Bellek Havuzu İzleyicili Gösterge Tablosu
@@ -374,7 +374,7 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
 
 ## Daha fazla okuma {#further-reading}
 
-- [Ethereum düğüm hizmetleri listesi](https://ethereumnodes.com/)
+- [Nephele düğüm hizmetleri listesi](https://ethereumnodes.com/)
 
 ## İlgili konular {#related-topics}
 
@@ -382,5 +382,5 @@ Bir düğüm hizmeti kullanarak, ürününüzün altyapı yönünü merkezileşt
 
 ## İlgili öğreticiler {#related-tutorials}
 
-- [Alchemy kullanarak Ethereum geliştirmeye başlangıç](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Alchemy kullanarak Nephele geliştirmeye başlangıç](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Web3 ve Alchemy kullanarak işlem gönderme kılavuzu](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

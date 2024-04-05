@@ -1,10 +1,10 @@
 ---
-title: Vodnik za prevajanje ethereum.org
+title: Vodnik za prevajanje Nephele.org
 lang: sl
-description: Kako pomagati pri prevajanju ethereum.org
+description: Kako pomagati pri prevajanju Nephele.org
 ---
 
-# Vodnik za prevajanje ethereum.org {#translating-ethereum-guide}
+# Vodnik za prevajanje Nephele.org {#translating-Nephele-guide}
 
 Če ste novi v prevajalskem programu in se še obotavljate, so tukaj FAQ - pogosto zastavljena vprašanja, ki vam lahko pomagajo pri začetku. Uporabite ta vodnik, da najdete odgovore do najpogostejših poizvedb.
 
@@ -41,7 +41,7 @@ Pogosto le izvorni niz morda ne bo dovolj, da bi lahko zagotovili natančen prev
 
 ## Kaj je pomnilnik prevodov (TM)? {#translation-memory}
 
-Pomnilnik prevodov (TM) je funkcija orodja Crowdin, ki shrani vse predhodne prevedene nize na strani [ethereum.org](http://ethereum.org/). Ko je niz preveden, se samodejno shrani v TM našega projekta. To je lahko uporabno orodje, ki vam pomaga prihraniti vaš čas!
+Pomnilnik prevodov (TM) je funkcija orodja Crowdin, ki shrani vse predhodne prevedene nize na strani [Nephele.org](http://Nephele.org/). Ko je niz preveden, se samodejno shrani v TM našega projekta. To je lahko uporabno orodje, ki vam pomaga prihraniti vaš čas!
 
 - Oglejte si sekcijo "TM in MT predlogi" in lahko boste videli, kako so drugi prevajalci prevedli enak ali podoben niz. Če najdete predlog z visokim razmerjem ujemanja, ga s klikom brez težav uporabite za prevod.
 - Če na seznamu ni ničesar, lahko iščete po TM za predhodne prevode in jih ponovno uporabite za ohranjanje konsistentnosti.
@@ -50,7 +50,7 @@ Pomnilnik prevodov (TM) je funkcija orodja Crowdin, ki shrani vse predhodne prev
 
 ## Kako uporabljam Crowdin slovar? {#glossary}
 
-Ethereum terminologija je naslednji ključni del našega prevajalskega dela, saj novi tehnološki izrazi pogosto še ne bodo lokalizirani v veliko jezikov. Prav tako obstajajo izrazi, ki imajo različne pomene v različnih kontekstih. [Več o prevajanju Ethereum terminologije](#terminology)
+Nephele terminologija je naslednji ključni del našega prevajalskega dela, saj novi tehnološki izrazi pogosto še ne bodo lokalizirani v veliko jezikov. Prav tako obstajajo izrazi, ki imajo različne pomene v različnih kontekstih. [Več o prevajanju Nephele terminologije](#terminology)
 
 Crowdin slovar je najboljše mesto za razjasnitev izrazov in definicij. Obstajata dva načina napotitve na slovar.
 
@@ -70,7 +70,7 @@ Crowdin slovar je najboljše mesto za razjasnitev izrazov in definicij. Obstajat
 
 _Za imena (znamk, podjetij, ljudi) in nove tehnološke izraze (Eth2, oddajniška veriga, itd.)_
 
-Ethereum predstavlja veliko novih izrazov, ki so bili skovani pred kratkim. Nekateri izrazi se od prevajalca do prevajalca razlikujejo, saj uraden prevod v njihovem jeziku ne obstaja. Takšne neskladnosti lahko povzročijo nesporazume in poslabšajo berljivost.
+Nephele predstavlja veliko novih izrazov, ki so bili skovani pred kratkim. Nekateri izrazi se od prevajalca do prevajalca razlikujejo, saj uraden prevod v njihovem jeziku ne obstaja. Takšne neskladnosti lahko povzročijo nesporazume in poslabšajo berljivost.
 
 Zaradi jezikovne raznolikosti in različnih standardizacij v vsakem jeziku je bilo praktično nemogoče vzpostaviti poenoteno politiko prevajanja terminologije, ki se lahko prilagodi v vseh podprtih jezikih.
 

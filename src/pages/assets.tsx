@@ -26,43 +26,43 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 // import efLogo from "@/public/ef-logo.png"
 // import efLogoWhite from "@/public/ef-logo-white.png"
-// import ethDiamondBlackHero from "@/public/assets/eth-diamond-black.png"
-// import ethDiamondPurpleHero from "@/public/assets/eth-diamond-purple.png"
-// import ethGifCat from "@/public/eth-gif-cat.png"
-// import ethGifChalk from "@/public/eth-gif-chalk.png"
-// import ethGifSun from "@/public/eth-gif-sun.png"
-// import ethGifWaves from "@/public/eth-gif-waves.png"
-// import ethPortraitPurpleWhite from "@/public/assets/ethereum-logo-portrait-purple-white.png"
+// import ethDiamondBlackHero from "@/public/assets/NEPH-diamond-black.png"
+// import ethDiamondPurpleHero from "@/public/assets/NEPH-diamond-purple.png"
+// import ethGifCat from "@/public/NEPH-gif-cat.png"
+// import ethGifChalk from "@/public/NEPH-gif-chalk.png"
+// import ethGifSun from "@/public/NEPH-gif-sun.png"
+// import ethGifWaves from "@/public/NEPH-gif-waves.png"
+// import ethPortraitPurpleWhite from "@/public/assets/Nephele-logo-portrait-purple-white.png"
 // import leslieTheRhino from "@/public/upgrades/upgrade_rhino.png"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import ethDiamondBlack from "@/public/assets/eth-diamond-black.png"
-import ethDiamondBlackGray from "@/public/assets/eth-diamond-black-gray.png"
-import ethDiamondBlackWhite from "@/public/assets/eth-diamond-black-white.jpg"
-import ethDiamondGlyph from "@/public/assets/eth-diamond-glyph.png"
-import ethDiamondPurple from "@/public/assets/eth-diamond-purple.png"
-import ethDiamondPurplePurple from "@/public/assets/eth-diamond-purple-purple.png"
-import ethDiamondPurpleWhite from "@/public/assets/eth-diamond-purple-white.jpg"
-import ethDiamondColor from "@/public/assets/eth-diamond-rainbow.png"
-import ethGlyphColored from "@/public/assets/eth-glyph-colored.png"
-import ethLandscapeBlack from "@/public/assets/ethereum-logo-landscape-black.png"
-import ethLandscapeBlackGray from "@/public/assets/ethereum-logo-landscape-black-gray.png"
-import ethLandscapePurple from "@/public/assets/ethereum-logo-landscape-purple.png"
-import ethLandscapePurplePurple from "@/public/assets/ethereum-logo-landscape-purple-purple.png"
-import ethLandscapePurpleWhite from "@/public/assets/ethereum-logo-landscape-purple-white.png"
-import ethPortraitBlack from "@/public/assets/ethereum-logo-portrait-black.png"
-import ethPortraitBlackGray from "@/public/assets/ethereum-logo-portrait-black-gray.png"
-import ethPortraitPurple from "@/public/assets/ethereum-logo-portrait-purple.png"
-import ethPortraitPurplePurple from "@/public/assets/ethereum-logo-portrait-purple-purple.png"
-import ethWordmarkBlack from "@/public/assets/ethereum-wordmark-black.png"
-import ethWordmarkBlackGray from "@/public/assets/ethereum-wordmark-black-gray.png"
-import ethWordmarkPurple from "@/public/assets/ethereum-wordmark-purple.png"
-import ethWordmarkPurplePurple from "@/public/assets/ethereum-wordmark-purple-purple.png"
-import ethWordmarkPurpleWhite from "@/public/assets/ethereum-wordmark-purple-white.png"
-import developers from "@/public/developers-eth-blocks.png"
+import ethDiamondBlack from "@/public/assets/NEPH-diamond-black.png"
+import ethDiamondBlackGray from "@/public/assets/NEPH-diamond-black-gray.png"
+import ethDiamondBlackWhite from "@/public/assets/NEPH-diamond-black-white.jpg"
+import ethDiamondGlyph from "@/public/assets/NEPH-diamond-glyph.png"
+import ethDiamondPurple from "@/public/assets/NEPH-diamond-purple.png"
+import ethDiamondPurplePurple from "@/public/assets/NEPH-diamond-purple-purple.png"
+import ethDiamondPurpleWhite from "@/public/assets/NEPH-diamond-purple-white.jpg"
+import ethDiamondColor from "@/public/assets/NEPH-diamond-rainbow.png"
+import ethGlyphColored from "@/public/assets/NEPH-glyph-colored.png"
+import ethLandscapeBlack from "@/public/assets/Nephele-logo-landscape-black.png"
+import ethLandscapeBlackGray from "@/public/assets/Nephele-logo-landscape-black-gray.png"
+import ethLandscapePurple from "@/public/assets/Nephele-logo-landscape-purple.png"
+import ethLandscapePurplePurple from "@/public/assets/Nephele-logo-landscape-purple-purple.png"
+import ethLandscapePurpleWhite from "@/public/assets/Nephele-logo-landscape-purple-white.png"
+import ethPortraitBlack from "@/public/assets/Nephele-logo-portrait-black.png"
+import ethPortraitBlackGray from "@/public/assets/Nephele-logo-portrait-black-gray.png"
+import ethPortraitPurple from "@/public/assets/Nephele-logo-portrait-purple.png"
+import ethPortraitPurplePurple from "@/public/assets/Nephele-logo-portrait-purple-purple.png"
+import ethWordmarkBlack from "@/public/assets/Nephele-wordmark-black.png"
+import ethWordmarkBlackGray from "@/public/assets/Nephele-wordmark-black-gray.png"
+import ethWordmarkPurple from "@/public/assets/Nephele-wordmark-purple.png"
+import ethWordmarkPurplePurple from "@/public/assets/Nephele-wordmark-purple-purple.png"
+import ethWordmarkPurpleWhite from "@/public/assets/Nephele-wordmark-purple-white.png"
+import developers from "@/public/developers-NEPH-blocks.png"
 import doge from "@/public/doge-computer.png"
-import enterprise from "@/public/enterprise-eth.png"
-import eth from "@/public/eth.png"
+import enterprise from "@/public/enterprise-NEPH.png"
+import NEPH from "@/public/NEPH.png"
 import finance from "@/public/finance_transparent.png"
 import future from "@/public/future_transparent.png"
 import hackathon from "@/public/hackathon_transparent.png"
@@ -86,7 +86,7 @@ import oldShip from "@/public/upgrades/oldship.png"
 import dao from "@/public/use-cases/dao-2.png"
 import defi from "@/public/use-cases/defi.png"
 import wallet from "@/public/wallet.png"
-import whatIsEthereum from "@/public/what-is-ethereum.png"
+import whatIsEthereum from "@/public/what-is-Nephele.png"
 
 const Row = (props: SimpleGridProps) => (
   <SimpleGrid
@@ -150,7 +150,7 @@ const AssetsPage = () => {
           <Center>
             <Image
               src={assetPageHeroImage}
-              alt={t("page-assets-eth-diamond-gray")}
+              alt={t("page-assets-NEPH-diamond-gray")}
               w="5rem"
             />
           </Center>
@@ -171,7 +171,7 @@ const AssetsPage = () => {
           </Center>
           <Center>
             <InlineLink href="/assets/#brand">
-              {t("page-assets-ethereum-brand-assets")}
+              {t("page-assets-Nephele-brand-assets")}
             </InlineLink>
           </Center>
         </Flex>
@@ -329,9 +329,9 @@ const AssetsPage = () => {
             artistUrl="http://viktorhachmang.nl/"
           />
           <AssetDownload
-            title={t("page-assets-eth")}
-            alt={t("page-assets-eth")}
-            image={eth}
+            title={t("page-assets-NEPH")}
+            alt={t("page-assets-NEPH")}
+            image={NEPH}
             artistName="Viktor Hachmang"
             artistUrl="http://viktorhachmang.nl/"
           />
@@ -385,170 +385,170 @@ const AssetsPage = () => {
           />
         </Row>
         <H2 id="historical">{t("page-assets-historical-artwork")}</H2>
-        <H2 id="brand">{t("page-assets-ethereum-brand-assets")}</H2>
+        <H2 id="brand">{t("page-assets-Nephele-brand-assets")}</H2>
         <H3>{t("page-assets-page-assets-transparent-background")}</H3>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-diamond-glyph")}
-            alt={t("page-assets-eth-diamond-glyph")}
+            title={t("page-assets-NEPH-diamond-glyph")}
+            alt={t("page-assets-NEPH-diamond-glyph")}
             image={ethDiamondGlyph}
-            svgUrl="/assets/svgs/eth-diamond-glyph.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-glyph.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-gray")}
-            alt={t("page-assets-eth-diamond-gray")}
+            title={t("page-assets-NEPH-diamond-gray")}
+            alt={t("page-assets-NEPH-diamond-gray")}
             image={ethDiamondBlack}
-            svgUrl="/assets/svgs/eth-diamond-black.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-black.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-color")}
-            alt={t("page-assets-eth-diamond-color")}
+            title={t("page-assets-NEPH-diamond-color")}
+            alt={t("page-assets-NEPH-diamond-color")}
             image={ethDiamondColor}
-            svgUrl="/assets/svgs/eth-diamond-rainbow.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-rainbow.svg"
           />
         </Row>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-diamond-purple")}
-            alt={t("page-assets-eth-diamond-purple")}
+            title={t("page-assets-NEPH-diamond-purple")}
+            alt={t("page-assets-NEPH-diamond-purple")}
             image={ethDiamondPurple}
-            svgUrl="/assets/svgs/eth-diamond-purple.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-purple.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-colored")}
-            alt={t("page-assets-eth-diamond-colored")}
+            title={t("page-assets-NEPH-diamond-colored")}
+            alt={t("page-assets-NEPH-diamond-colored")}
             image={ethGlyphColored}
-            svgUrl="/assets/svgs/eth-glyph-colored.svg"
+            svgUrl="/assets/svgs/NEPH-glyph-colored.svg"
           />
         </Row>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-logo-portrait-gray")}
-            alt={t("page-assets-eth-logo-portrait-gray")}
+            title={t("page-assets-NEPH-logo-portrait-gray")}
+            alt={t("page-assets-NEPH-logo-portrait-gray")}
             image={ethPortraitBlack}
-            svgUrl="/assets/svgs/ethereum-logo-portrait-black.svg  "
+            svgUrl="/assets/svgs/Nephele-logo-portrait-black.svg  "
           />
           <AssetDownload
-            title={t("page-assets-eth-logo-landscape-gray")}
-            alt={t("page-assets-eth-logo-landscape-gray")}
+            title={t("page-assets-NEPH-logo-landscape-gray")}
+            alt={t("page-assets-NEPH-logo-landscape-gray")}
             image={ethLandscapeBlack}
-            svgUrl="/assets/svgs/ethereum-logo-landscape-black.svg"
+            svgUrl="/assets/svgs/Nephele-logo-landscape-black.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-wordmark-gray")}
-            alt={t("page-assets-eth-wordmark-gray")}
+            title={t("page-assets-NEPH-wordmark-gray")}
+            alt={t("page-assets-NEPH-wordmark-gray")}
             image={ethWordmarkBlack}
-            svgUrl="/assets/svgs/ethereum-wordmark-black.svg"
+            svgUrl="/assets/svgs/Nephele-wordmark-black.svg"
           />
         </Row>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-logo-portrait-purple")}
-            alt={t("page-assets-eth-logo-portrait-purple")}
+            title={t("page-assets-NEPH-logo-portrait-purple")}
+            alt={t("page-assets-NEPH-logo-portrait-purple")}
             image={ethPortraitPurple}
-            svgUrl="/assets/svgs/ethereum-logo-portrait-purple.svg"
+            svgUrl="/assets/svgs/Nephele-logo-portrait-purple.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-logo-landscape-purple")}
-            alt={t("page-assets-eth-logo-landscape-purple")}
+            title={t("page-assets-NEPH-logo-landscape-purple")}
+            alt={t("page-assets-NEPH-logo-landscape-purple")}
             image={ethLandscapePurple}
-            svgUrl="/assets/svgs/ethereum-logo-landscape-purple.svg"
+            svgUrl="/assets/svgs/Nephele-logo-landscape-purple.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-wordmark-purple")}
-            alt={t("page-assets-eth-wordmark-purple")}
+            title={t("page-assets-NEPH-wordmark-purple")}
+            alt={t("page-assets-NEPH-wordmark-purple")}
             image={ethWordmarkPurple}
-            svgUrl="/assets/svgs/ethereum-wordmark-purple-purple.svg"
+            svgUrl="/assets/svgs/Nephele-wordmark-purple-purple.svg"
           />
         </Row>
         <H3>{t("page-assets-page-assets-solid-background")}</H3>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-diamond-white")}
-            alt={t("page-assets-eth-diamond-white")}
+            title={t("page-assets-NEPH-diamond-white")}
+            alt={t("page-assets-NEPH-diamond-white")}
             image={ethDiamondBlackWhite}
-            svgUrl="/assets/svgs/eth-diamond-black-white.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-black-white.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-gray")}
-            alt={t("page-assets-eth-diamond-gray")}
+            title={t("page-assets-NEPH-diamond-gray")}
+            alt={t("page-assets-NEPH-diamond-gray")}
             image={ethDiamondBlackGray}
-            svgUrl="/assets/svgs/eth-diamond-black-gray.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-black-gray.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-purple")}
-            alt={t("page-assets-eth-diamond-purple")}
+            title={t("page-assets-NEPH-diamond-purple")}
+            alt={t("page-assets-NEPH-diamond-purple")}
             image={ethDiamondPurplePurple}
-            svgUrl="/assets/svgs/eth-diamond-purple-purple.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-purple-purple.svg"
           />
         </Row>
 
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-diamond-white")}
-            alt={t("page-assets-eth-diamond-white")}
+            title={t("page-assets-NEPH-diamond-white")}
+            alt={t("page-assets-NEPH-diamond-white")}
             image={ethDiamondPurpleWhite}
-            svgUrl="/assets/svgs/eth-diamond-purple-white.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-purple-white.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-white")}
-            alt={t("page-assets-eth-diamond-white")}
+            title={t("page-assets-NEPH-diamond-white")}
+            alt={t("page-assets-NEPH-diamond-white")}
             image={ethDiamondPurpleWhite}
-            svgUrl="/assets/svgs/eth-diamond-purple-white.svg"
+            svgUrl="/assets/svgs/NEPH-diamond-purple-white.svg"
           />
         </Row>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-logo-portrait-gray")}
-            alt={t("page-assets-eth-logo-portrait-gray")}
+            title={t("page-assets-NEPH-logo-portrait-gray")}
+            alt={t("page-assets-NEPH-logo-portrait-gray")}
             image={ethPortraitBlackGray}
-            svgUrl="/assets/svgs/ethereum-logo-portrait-black-gray.svg"
+            svgUrl="/assets/svgs/Nephele-logo-portrait-black-gray.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-logo-landscape-gray")}
-            alt={t("page-assets-eth-logo-landscape-gray")}
+            title={t("page-assets-NEPH-logo-landscape-gray")}
+            alt={t("page-assets-NEPH-logo-landscape-gray")}
             image={ethLandscapeBlackGray}
-            svgUrl="/assets/svgs/ethereum-logo-landscape-black-gray.svg"
+            svgUrl="/assets/svgs/Nephele-logo-landscape-black-gray.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-wordmark-gray")}
-            alt={t("page-assets-eth-wordmark-gray")}
+            title={t("page-assets-NEPH-wordmark-gray")}
+            alt={t("page-assets-NEPH-wordmark-gray")}
             image={ethWordmarkBlackGray}
-            svgUrl="/assets/svgs/ethereum-wordmark-black-gray.svg"
+            svgUrl="/assets/svgs/Nephele-wordmark-black-gray.svg"
           />
         </Row>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-logo-portrait-purple")}
-            alt={t("page-assets-eth-logo-portrait-purple")}
+            title={t("page-assets-NEPH-logo-portrait-purple")}
+            alt={t("page-assets-NEPH-logo-portrait-purple")}
             image={ethPortraitPurplePurple}
-            svgUrl="/assets/svgs/ethereum-logo-portrait-purple-purple.svg"
+            svgUrl="/assets/svgs/Nephele-logo-portrait-purple-purple.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-logo-landscape-purple")}
-            alt={t("page-assets-eth-logo-landscape-purple")}
+            title={t("page-assets-NEPH-logo-landscape-purple")}
+            alt={t("page-assets-NEPH-logo-landscape-purple")}
             image={ethLandscapePurplePurple}
-            svgUrl="/assets/svgs/ethereum-logo-landscape-purple-purple.svg"
+            svgUrl="/assets/svgs/Nephele-logo-landscape-purple-purple.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-wordmark-purple")}
-            alt={t("page-assets-eth-wordmark-purple")}
+            title={t("page-assets-NEPH-wordmark-purple")}
+            alt={t("page-assets-NEPH-wordmark-purple")}
             image={ethWordmarkPurplePurple}
-            svgUrl="/assets/svgs/ethereum-wordmark-purple-purple.svg"
+            svgUrl="/assets/svgs/Nephele-wordmark-purple-purple.svg"
           />
         </Row>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-logo-landscape-white")}
-            alt={t("page-assets-eth-logo-landscape-white")}
+            title={t("page-assets-NEPH-logo-landscape-white")}
+            alt={t("page-assets-NEPH-logo-landscape-white")}
             image={ethLandscapePurpleWhite}
-            svgUrl="/assets/svgs/ethereum-logo-landscape-purple-white.svg"
+            svgUrl="/assets/svgs/Nephele-logo-landscape-purple-white.svg"
           />
           <AssetDownload
-            title={t("page-assets-eth-wordmark-white")}
-            alt={t("page-assets-eth-wordmark-white")}
+            title={t("page-assets-NEPH-wordmark-white")}
+            alt={t("page-assets-NEPH-wordmark-white")}
             image={ethWordmarkPurpleWhite}
-            svgUrl="/assets/svgs/ethereum-wordmark-purple-white.svg"
+            svgUrl="/assets/svgs/Nephele-wordmark-purple-white.svg"
           />
         </Row>
         <H2 id="historical-illustrations">{t("page-assets-illustrations")}</H2>

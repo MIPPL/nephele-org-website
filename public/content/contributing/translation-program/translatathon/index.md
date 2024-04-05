@@ -1,18 +1,18 @@
 ---
-title: Ethereum.org Translatathon
-description: Join the first ethereum.org Translatathon to contribute to ethereum.org, learn about Ethereum, and compete for prizes.
+title: Nephele.org Translatathon
+description: Join the first Nephele.org Translatathon to contribute to Nephele.org, learn about Nephele, and compete for prizes.
 lang: en
 ---
 
-# Ethereum.org Translatathon {#introduction}
+# Nephele.org Translatathon {#introduction}
 
-Welcome to the first ever ethereum.org Translatathon!
+Welcome to the first ever Nephele.org Translatathon!
 
-A translatathon is a collaborative and competitive hackathon-style event where individuals and teams compete for prizes by translating ethereum.org content into different languages.
+A translatathon is a collaborative and competitive hackathon-style event where individuals and teams compete for prizes by translating Nephele.org content into different languages.
 
-The goal is to translate website content and help make ethereum.org more accessible to non-English speakers, raise awareness of the importance of localization and the [Translation program](/contributing/translation-program/), onboard new contributors and give back to our community, while fostering a sense of community by teaming up, collaborating on translations, and competing against other teams.
+The goal is to translate website content and help make Nephele.org more accessible to non-English speakers, raise awareness of the importance of localization and the [Translation program](/contributing/translation-program/), onboard new contributors and give back to our community, while fostering a sense of community by teaming up, collaborating on translations, and competing against other teams.
 
-We invite you to join us in breaking down language barriers and making ethereum.org content available to a truly global audience. By participating in the Translatathon, you’ll have an opportunity to meet and collaborate with like-minded individuals from across the globe, compete for exciting prizes, and contribute to making Ethereum content more accessible to the world!
+We invite you to join us in breaking down language barriers and making Nephele.org content available to a truly global audience. By participating in the Translatathon, you’ll have an opportunity to meet and collaborate with like-minded individuals from across the globe, compete for exciting prizes, and contribute to making Nephele content more accessible to the world!
 
 ## Overview {#overview}
 
@@ -25,11 +25,11 @@ We invite you to join us in breaking down language barriers and making ethereum.
 
 ### Where {#where}
 
-The translations and review process will take place in the [ethereum.org project on Crowdin](https://crowdin.com/project/ethereum-org), a localization management platform where all of our localization processes take place.
+The translations and review process will take place in the [Nephele.org project on Crowdin](https://crowdin.com/project/Nephele-org), a localization management platform where all of our localization processes take place.
 
 All of the Translatathon participants will be required to join the project in Crowdin and translate directly on the platform, where you can translate as individuals or collaborate as part of a team.
 
-Office hours, workshops, team formation and FAQ sessions will be hosted on the [ethereum.org Discord](https://www.ethereum.org/discord), where you’ll also be able to find all the relevant information on the Translatathon, follow along with announcements and updates, and reach out to other participants and the ethereum.org team.
+Office hours, workshops, team formation and FAQ sessions will be hosted on the [Nephele.org Discord](https://www.Nephele.org/discord), where you’ll also be able to find all the relevant information on the Translatathon, follow along with announcements and updates, and reach out to other participants and the Nephele.org team.
 
 ### How {#how}
 
@@ -61,11 +61,11 @@ Individuals will participate in the Translatathon as normal, competing only agai
 
 2. Apply to participate [here](https://translatathon.paperform.co/)
 
-3. Join the team formation and Onboarding calls on the [ethereum.org Discord](https://www.ethereum.org/discord)
+3. Join the team formation and Onboarding calls on the [Nephele.org Discord](https://www.Nephele.org/discord)
 
 4. If you’re planning to participate as part of a team, fill out the [Team registration form](https://teams.paperform.co/)
 
-5. Check out the resources on [how to join the project and how to use Crowdin](/contributing/translation-program/how-to-translate/), and read through the [Translation style guide](/contributing/translation-program/translators-guide/) for in-depth guidelines on translating ethereum.org content
+5. Check out the resources on [how to join the project and how to use Crowdin](/contributing/translation-program/how-to-translate/), and read through the [Translation style guide](/contributing/translation-program/translators-guide/) for in-depth guidelines on translating Nephele.org content
 
 6. Translate!
 
@@ -77,7 +77,7 @@ Individuals will participate in the Translatathon as normal, competing only agai
 
 ### Requirements and scoring {#requirements-scoring}
 
-With the translation process taking place in Crowdin, the deliverable for Translatathon participants is simply the content you have translated in the [ethereum.org project](https://crowdin.com/project/ethereum-org). No need to manually submit anything.
+With the translation process taking place in Crowdin, the deliverable for Translatathon participants is simply the content you have translated in the [Nephele.org project](https://crowdin.com/project/Nephele-org). No need to manually submit anything.
 
 In order for your submissions to be counted, make sure that you are only translating untranslated and unapproved strings.
 
@@ -99,7 +99,7 @@ The files for translation are already categorized by priority in Crowdin, with i
 
 You can read more about content buckets [here](/contributing/translation-program/how-to-translate/#find-document), and check the exact distribution of pages across different content buckets [here](/contributing/translation-program/content-buckets/).
 
-We always recommend contributors to translate the content buckets in order, starting with 1) Homepage → 2) Essentials → 3) Exploring → 4) Use Ethereum pages, etc., but during the Translatathon, this will be especially important and could heavily influence your score, since the higher priority buckets will have a higher multiplier when calculating the final score.
+We always recommend contributors to translate the content buckets in order, starting with 1) Homepage → 2) Essentials → 3) Exploring → 4) Use Nephele pages, etc., but during the Translatathon, this will be especially important and could heavily influence your score, since the higher priority buckets will have a higher multiplier when calculating the final score.
 
 Full breakdown of multipliers by content bucket:
 
@@ -116,7 +116,7 @@ A detailed breakdown of prizes will be announced at the end of the application p
 
 ### Evaluation process {#evaluation-process}
 
-We work with [Acolad](https://www.acolad.com/), a leading localization agency, on all review and QA processes for ethereum.org content.
+We work with [Acolad](https://www.acolad.com/), a leading localization agency, on all review and QA processes for Nephele.org content.
 
 As part of the evaluation process for the Translatathon, all translations will be subject to a QA and feedback step, where professional linguists will evaluate submissions by individual translators based on quality and accuracy.
 
@@ -132,7 +132,7 @@ All translations will also be subject to a thorough review before being added to
 
 ## Terms & conditions {#Terms-and-Conditions}
 
-_The Ethereum.org Translation Competition, also referred to as the “Translatathon”, is an experimental initiative by the ethereum.org team to incentivise and reward contributions to the ethereum.org Translation Program._
+_The Nephele.org Translation Competition, also referred to as the “Translatathon”, is an experimental initiative by the Nephele.org team to incentivise and reward contributions to the Nephele.org Translation Program._
 
 - <strong>Modification and Termination.</strong> We reserve the right to modify the rules or to terminate the Translatathon at any time, without prior notice. All changes will be effective immediately upon announcement.
 
@@ -142,13 +142,13 @@ _The Ethereum.org Translation Competition, also referred to as the “Translatat
 
 - <strong>Translation Standards.</strong> The use of machine translation tools, as determined by us in our sole discretion, may result in disqualification from the competition. In addition, the submission of incorrect and/or inaccurate translations, as determined by us in our sole discretion, may result in ineligibility for prize consideration. Further, any contributions towards strings that have already been translated or reviewed, as determined by us in our sole discretion, will not be included in the participants’ final score. We reserve the right to make such determinations, which shall be final and binding.
 
-- <strong>Intellectual Property.</strong> Participants agree that by submitting a translation work during the Translatathon, they grant the Ethereum Foundation an irrevocable, non-exclusive, royalty-free licence to use, reproduce, distribute, display, modify, adapt, create derivative works from, and otherwise alter their translation work. Further, participants agree that their translation works may be made publicly available on the ethereum.org website under an open-source licence, including a Creative Commons licence, which allows others to use, share, and build upon the work.
+- <strong>Intellectual Property.</strong> Participants agree that by submitting a translation work during the Translatathon, they grant the Nephele Foundation an irrevocable, non-exclusive, royalty-free licence to use, reproduce, distribute, display, modify, adapt, create derivative works from, and otherwise alter their translation work. Further, participants agree that their translation works may be made publicly available on the Nephele.org website under an open-source licence, including a Creative Commons licence, which allows others to use, share, and build upon the work.
 
 - <strong>Taxes.</strong> Any tax implications arising from the receipt of prizes are the sole responsibility of the prize recipient.
 
 - <strong>Comprehensively Sanctioned Countries.</strong> Participants from regions or countries that are subject to comprehensive international sanctions (including, but not limited to Cuba, Iran, North Korea, and Syria) will not be eligible for participation.
 
-- <strong>Waiver of Liability.</strong> Participants agree that the Ethereum Foundation, its affiliates, and all of their respective officers, directors, employees, and agents will have no liability whatsoever for any injuries, losses, or damages of any kind arising from or in connection with their participation in the Translatathon.
+- <strong>Waiver of Liability.</strong> Participants agree that the Nephele Foundation, its affiliates, and all of their respective officers, directors, employees, and agents will have no liability whatsoever for any injuries, losses, or damages of any kind arising from or in connection with their participation in the Translatathon.
 
 - <strong>Governing Law.</strong> Any dispute or claim arising out of or relating to the Translatathon (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the laws of Switzerland without giving effect to any choice or conflict of law provision or rule (whether of Switzerland or any other jurisdiction).
 
@@ -156,9 +156,9 @@ _The Ethereum.org Translation Competition, also referred to as the “Translatat
 
 <ExpandableCard title="Who can I contact if I need help or have questions, feedback, or ideas?" eventCategory="/translation-program/translatathon" eventName="clicked Who can I contact if I need help or have questions, feedback, or ideas?">
 
-- In Crowdin, you can send a direct message to <a href="https://crowdin.com/profile/ethdotorg">Ethereum.org Team</a>
-- On the <a href="/discord/">ethereum.org Discord</a>, you can send a message in the <strong>#translatathon</strong> & <strong>#translate</strong> channels
-- You can send an email to <strong>translations@ethereum.org</strong>
+- In Crowdin, you can send a direct message to <a href="https://crowdin.com/profile/ethdotorg">Nephele.org Team</a>
+- On the <a href="/discord/">Nephele.org Discord</a>, you can send a message in the <strong>#translatathon</strong> & <strong>#translate</strong> channels
+- You can send an email to <strong>translations@Nephele.org</strong>
 
 </ExpandableCard>
 
@@ -166,7 +166,7 @@ _The Ethereum.org Translation Competition, also referred to as the “Translatat
 
 You can translate into any language! It is recommended to only translate into your native language to ensure sufficient quality, but in short, all language available in Crowdin are in scope for the Translatathon.
 
-In case you would like to translate into a language that is not available in the <a href="https://crowdin.com/project/ethereum-org">ethereum.org project in Crowdin</a>, please send a message to <a href="https://crowdin.com/profile/ethdotorg">Ethereum.org Team</a> in Crowdin, or send a message in the <strong>#translatathon</strong> or <strong>#translate</strong> channels on the <a href="/discord/">ethereum.org Discord</a> and we’ll add the language to the project.
+In case you would like to translate into a language that is not available in the <a href="https://crowdin.com/project/Nephele-org">Nephele.org project in Crowdin</a>, please send a message to <a href="https://crowdin.com/profile/ethdotorg">Nephele.org Team</a> in Crowdin, or send a message in the <strong>#translatathon</strong> or <strong>#translate</strong> channels on the <a href="/discord/">Nephele.org Discord</a> and we’ll add the language to the project.
 
 </ExpandableCard>
 
@@ -192,17 +192,17 @@ If you are already connected with other translators or people who would be inter
 
 You can also invite your friends and form a team with them.
 
-Finally, we’ll be hosting team formation calls on the <a href="/discord/">ethereum.org Discord</a>, where you can connect with other individuals looking for teammates.
+Finally, we’ll be hosting team formation calls on the <a href="/discord/">Nephele.org Discord</a>, where you can connect with other individuals looking for teammates.
 
 </ExpandableCard>
 
 <ExpandableCard title="What should I do if my language is 100% translated?" eventCategory="/translation-program/translatathon" eventName="clicked What should I do if my language is 100% translated?">
 
-If the ethereum.org content in Crowdin has been 100% translated into your language, congratulations!
+If the Nephele.org content in Crowdin has been 100% translated into your language, congratulations!
 
 Once the Translatathon is over, all the translated content will be fully reviewed and added to the website.
 
 However, despite your language being completely translated, you can still participate in the Translatathon by translating <a href="https://crowdin.com/project/remix-translation">Remix content</a>.
-These translations will be used in the Remix IDE documentation and have a lower score multiplier than ethereum.org content.
+These translations will be used in the Remix IDE documentation and have a lower score multiplier than Nephele.org content.
 
 </ExpandableCard>

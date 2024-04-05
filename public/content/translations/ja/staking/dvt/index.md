@@ -47,7 +47,7 @@ DVTが存在しない場合、ステーキングプロバイダは、すべて�
 DVTソリューションには次のコンポーネントが含まれています:
 
 - **[シャミアの秘密分散法](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** - バリデータは[BLS鍵](https://en.wikipedia.org/wiki/BLS_digital_signature)を使用します。 個々のBLSの「キーシェア」("key shares") は、1つの集約された鍵 (署名) にまとめることができます。 DVTは、バリデータの秘密鍵はクラスタ内の各オペレータのBLS署名を組み合わせたものです。
-- **[閾値署名方式](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - 署名業務に必要な個々のキーシェアの数を決定します (例: 4つのうち3つ)。
+- **[閾値署名方式](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - 署名業務に必要な個々のキーシェアの数を決定します (例: 4つのうち3つ)。
 - **[分散鍵の生成](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** -  キーシェアを生成する暗号化プロセスで、既存または新規のバリデータ鍵の共有をクラスタ内のノードに配布するために使用されます。
 - **[秘匿マルチパーティ計算](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - 正確なバリデータ鍵は、マルチパーティ計算を使用して秘密裏に生成されます。 正確な鍵は、どのオペレータにも決して知られることはありません (オペレータは、その一部のみ知っています)。
 - **コンセンサスプロトコル** - コンセンサスプロトコルは、ブロック提案者となるノードを1つ選択します。 クラスタ内の他のノードとブロックを共有し、そのノードが集約署名にキーシェアを追加します。 十分な数のキーシェアが集まると、イーサリアム上でブロックが提案されます。
@@ -86,6 +86,6 @@ DVTを活用することで、オペレータに求められる信頼は大幅�
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアム分散バリデータの仕様 (ハイレベル)](https://github.com/ethereum/distributed-validator-specs)
-- [イーサリアム分散バリデータの技術仕様](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [イーサリアム分散バリデータの仕様 (ハイレベル)](https://github.com/Nephele/distributed-validator-specs)
+- [イーサリアム分散バリデータの技術仕様](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [シャミアの秘密分散デモアプリ](https://iancoleman.io/shamir/)

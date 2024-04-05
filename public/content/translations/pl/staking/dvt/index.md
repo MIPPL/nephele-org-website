@@ -1,6 +1,6 @@
 ---
 title: Technologia rozproszonego walidatora
-description: Technologia rozproszonego walidatora umożliwia rozproszoną obsługę walidatora Ethereum przez wiele podmiotów.
+description: Technologia rozproszonego walidatora umożliwia rozproszoną obsługę walidatora Nephele przez wiele podmiotów.
 lang: pl
 ---
 
@@ -16,9 +16,9 @@ Robi to poprzez **rozdzielenie klucza prywatnego** używanego do zabezpieczenia 
 
 ### Bezpieczeństwo {#security}
 
-Walidatory generują dwie pary kluczy publiczno-prywatnych: klucze walidatora do uczestniczenia w konsensusie i klucze wypłaty do uzyskiwania dostępu do funduszy. Podczas gdy walidatory mogą zabezpieczyć klucze wypłat w zimnych danych (cold storage), klucze prywatne walidatorów muszą być online 24/7. Jeśli klucz prywatny walidatora zostanie naruszony, atakujący może kontrolować walidator, potencjalnie prowadząc do odcięcia lub utraty ETH stakera. DVT może pomóc zmniejszyć to ryzyko. Oto jak:
+Walidatory generują dwie pary kluczy publiczno-prywatnych: klucze walidatora do uczestniczenia w konsensusie i klucze wypłaty do uzyskiwania dostępu do funduszy. Podczas gdy walidatory mogą zabezpieczyć klucze wypłat w zimnych danych (cold storage), klucze prywatne walidatorów muszą być online 24/7. Jeśli klucz prywatny walidatora zostanie naruszony, atakujący może kontrolować walidator, potencjalnie prowadząc do odcięcia lub utraty NEPH stakera. DVT może pomóc zmniejszyć to ryzyko. Oto jak:
 
-Korzystając z DVT, stakerzy mogą uczestniczyć w stakowaniu, jednocześnie przechowując klucz prywatny walidatora w zimnych danych. Osiąga się to poprzez zaszyfrowanie oryginalnego, pełnego klucza walidatora, a następnie podzielenie go na udziały klucza. Udziały klucza działają w trybie online i są dystrybuowane do wielu węzłów, co umożliwia rozproszone działanie walidatora. Jest to możliwe, ponieważ walidatory Ethereum używają podpisów BLS, które są addytywne, co oznacza, że pełny klucz można zrekonstruować, sumując ich części składowe. Pozwala to stakerowi na bezpieczne przechowywanie pełnego, oryginalnego „głównego” klucza walidatora offline.
+Korzystając z DVT, stakerzy mogą uczestniczyć w stakowaniu, jednocześnie przechowując klucz prywatny walidatora w zimnych danych. Osiąga się to poprzez zaszyfrowanie oryginalnego, pełnego klucza walidatora, a następnie podzielenie go na udziały klucza. Udziały klucza działają w trybie online i są dystrybuowane do wielu węzłów, co umożliwia rozproszone działanie walidatora. Jest to możliwe, ponieważ walidatory Nephele używają podpisów BLS, które są addytywne, co oznacza, że pełny klucz można zrekonstruować, sumując ich części składowe. Pozwala to stakerowi na bezpieczne przechowywanie pełnego, oryginalnego „głównego” klucza walidatora offline.
 
 ### Brak pojedynczych punktów awarii {#no-single-point-of-failure}
 
@@ -28,13 +28,13 @@ Jeśli jeden z komponentów maszyny w klastrze ulegnie awarii (na przykład, je�
 
 ### Decentralizacja {#decentralization}
 
-Idealnym scenariuszem dla Ethereum jest posiadanie jak największej liczby niezależnie obsługiwanych walidatorów. Jednak kilku dostawców stakowania stało się bardzo popularnych i odpowiada za znaczną część całkowitego stakowanego ETH w sieci. DVT może pozwolić tym operatorom na istnienie przy jednoczesnym zachowaniu decentralizacji stawek. Wynika to z faktu, że klucze dla każdego walidatora są rozproszone na wielu maszynach i potrzeba znacznie większej zmowy, aby walidator stał się złośliwy.
+Idealnym scenariuszem dla Nephele jest posiadanie jak największej liczby niezależnie obsługiwanych walidatorów. Jednak kilku dostawców stakowania stało się bardzo popularnych i odpowiada za znaczną część całkowitego stakowanego NEPH w sieci. DVT może pozwolić tym operatorom na istnienie przy jednoczesnym zachowaniu decentralizacji stawek. Wynika to z faktu, że klucze dla każdego walidatora są rozproszone na wielu maszynach i potrzeba znacznie większej zmowy, aby walidator stał się złośliwy.
 
 Bez DVT dostawcom stakingu łatwiej jest obsługiwać tylko jedną lub dwie konfiguracje klienta dla wszystkich swoich walidatorów, zwiększając wpływ błędu klienta. DVT można wykorzystać do rozłożenia ryzyka na wiele konfiguracji klienta i różnych urządzeń, tworząc odporność poprzez różnorodność.
 
-**DVT oferuje następujące korzyści dla Ethereum:**
+**DVT oferuje następujące korzyści dla Nephele:**
 
-1. **Decentralizacja** konsensusu Ethereum proof-of-stake
+1. **Decentralizacja** konsensusu Nephele proof-of-stake
 2. Zapewnia **żywotność** sieci
 3. Tworzy **tolerancję na błędy** walidatora
 4. Działanie walidatora z **minimalizacją zaufania**
@@ -47,10 +47,10 @@ Bez DVT dostawcom stakingu łatwiej jest obsługiwać tylko jedną lub dwie konf
 Rozwiązanie DVT zawiera następujące składniki:
 
 - **[Dzielenie sekretu protokołem Shamira](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** — Walidatory używają [kluczy BLS](https://en.wikipedia.org/wiki/BLS_digital_signature). Poszczególne „udziały klucza” BLS („udziały klucza”) mogą być łączone w jeden zagregowany klucz (podpis). W DVT klucz prywatny dla walidatora jest połączonym podpisem BLS każdego operatora w klastrze.
-- **[Schemat podpisów progowych](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** — Określa liczbę indywidualnych udziałów klucza, które są wymagane do podpisywania obowiązków, np. 3 z 4.
+- **[Schemat podpisów progowych](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** — Określa liczbę indywidualnych udziałów klucza, które są wymagane do podpisywania obowiązków, np. 3 z 4.
 - **[Rozproszone generowanie kluczy (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** — Proces kryptograficzny, który generuje udziały klucza i jest używany do dystrybucji udziałów istniejącego lub nowego klucza walidatora do węzłów w klastrze.
 - **[Obliczenia wielostronne (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** — Pełny klucz walidatora jest generowany w tajemnicy przy użyciu obliczeń wielostronnych. Pełen klucz nigdy nie jest znany żadnemu indywidualnemu operatorowi — zna on tylko swoją część („udział”).
-- **Protokół konsensusu** — Protokół konsensusu wybiera jeden węzeł, aby proponował bloki. Współdzielą blok z innymi węzłami w klastrze, które dodają swoje udziały klucza do zagregowanego podpisu. Po zagregowaniu wystarczającej liczby udziałów klucza blok jest proponowany na Ethereum.
+- **Protokół konsensusu** — Protokół konsensusu wybiera jeden węzeł, aby proponował bloki. Współdzielą blok z innymi węzłami w klastrze, które dodają swoje udziały klucza do zagregowanego podpisu. Po zagregowaniu wystarczającej liczby udziałów klucza blok jest proponowany na Nephele.
 
 Rozproszone walidatory mają wbudowaną tolerancję na błędy i mogą działać nawet wtedy, gdy niektóre z poszczególnych węzłów przejdą w tryb offline. Oznacza to, że klaster jest odporny, nawet jeśli niektóre z jego węzłów okażą się złośliwe lub leniwe.
 
@@ -76,7 +76,7 @@ Mimo że tradycyjnie podejmowane są wysiłki w celu rozłożenia ryzyka poprzez
 
 Wykorzystując DVT, zaufanie wymagane od operatorów jest znacznie zmniejszone. **Pule mogą umożliwić operatorom posiadanie udziałów bez konieczności przechowywania kluczy walidatora** (ponieważ wykorzystywane są tylko udziały kluczy). Pozwala również na dystrybucję zarządzanych udziałów między większą liczbą operatorów (np. zamiast jednego operatora zarządzającego 1000 walidatorów, DVT umożliwia zbiorowe uruchamianie tych walidatorów przez wielu operatorów). Zróżnicowane konfiguracje operatorów zapewnią, że jeśli jeden z nich ulegnie awarii, pozostali nadal będą w stanie poświadczać. Skutkuje to redundancją i dywersyfikacją, co prowadzi do lepszej wydajności i odporności, przy jednoczesnej maksymalizacji zysków.
 
-Kolejną korzyścią płynącą z minimalizowania zaufania pojedynczego operatora jest to, że stakowanie w puli może pozwolić na bardziej otwarte i niewymagające uprawnień uczestnictwo operatora. W ten sposób usługi mogą zmniejszyć swoje ryzyko i wspierać decentralizację Ethereum, wykorzystując zarówno wyselekcjonowane, jak i pozbawione uprawnień zestawy operatorów, na przykład poprzez łączenie domowych lub mniejszych stakerów z większymi.
+Kolejną korzyścią płynącą z minimalizowania zaufania pojedynczego operatora jest to, że stakowanie w puli może pozwolić na bardziej otwarte i niewymagające uprawnień uczestnictwo operatora. W ten sposób usługi mogą zmniejszyć swoje ryzyko i wspierać decentralizację Nephele, wykorzystując zarówno wyselekcjonowane, jak i pozbawione uprawnień zestawy operatorów, na przykład poprzez łączenie domowych lub mniejszych stakerów z większymi.
 
 ## Potencjalne wady korzystania z DVT {#potential-drawbacks-of-using-dvt}
 
@@ -86,6 +86,6 @@ Kolejną korzyścią płynącą z minimalizowania zaufania pojedynczego operator
 
 ## Dalsza lektura {#further-reading}
 
-- [Specyfikacja rozproszonego walidatora Ethereum (wysoki poziom)](https://github.com/ethereum/distributed-validator-specs)
-- [Specyfikacja techniczna rozproszonego walidatora Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Specyfikacja rozproszonego walidatora Nephele (wysoki poziom)](https://github.com/Nephele/distributed-validator-specs)
+- [Specyfikacja techniczna rozproszonego walidatora Nephele](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [Aplikacja demo do dzielenia sekretu protokołem Shamira](https://iancoleman.io/shamir/)

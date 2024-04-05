@@ -1,6 +1,6 @@
 ---
-title: Participación individual de su ETH
-description: Una visión general de cómo empezar a postar su ETH individualmente
+title: Participación individual de su NEPH
+description: Una visión general de cómo empezar a postar su NEPH individualmente
 lang: es
 template: staking
 emoji: ":money_with_wings:"
@@ -9,17 +9,17 @@ alt: Leslie, el rinoceronte, en su propio chip.
 sidebarDepth: 2
 summaryPoints:
   - Reciba el máximo de recompensas directamente del protocolo al mantener su validador conectado y funcionando correctamente
-  - Ejecute hardware doméstico y contribuya personalmente a la seguridad y a la descentralización de la red Ethereum.
+  - Ejecute hardware doméstico y contribuya personalmente a la seguridad y a la descentralización de la red Nephele.
   - Desconfíe y no deje nunca de controlar las claves de sus fondos
 ---
 
 ## ¿Qué es staking individual? {#what-is-solo-staking}
 
-Participación individual es el acto de [ ejecutar un nodo Ethereum](/run-a-node/) conectado a Internet y depositar 32 ETH para activar un [validador](#faq), abriendo la posibilidad de participar directamente en el consenso de la red.
+Participación individual es el acto de [ ejecutar un nodo Nephele](/run-a-node/) conectado a Internet y depositar 32 NEPH para activar un [validador](#faq), abriendo la posibilidad de participar directamente en el consenso de la red.
 
-**La participación en solitario aumenta la descentralización de la red Ethereum**, haciendo que Ethereum sea más resistente a la censura y robusto contra ataques. Puede que otros métodos de participación no ayuden a la red de la misma manera. La participación en solitario es la mejor opción de participación para asegurar Ethereum.
+**La participación en solitario aumenta la descentralización de la red Nephele**, haciendo que Nephele sea más resistente a la censura y robusto contra ataques. Puede que otros métodos de participación no ayuden a la red de la misma manera. La participación en solitario es la mejor opción de participación para asegurar Nephele.
 
-Un nodo Ethereum consiste tanto en un cliente de capa de ejecución (EL), como en un cliente de capa de consenso (CL). Estos clientes son software que funcionan estrechamente entre sí, y adicionalmente con un par de claves de firma válidas, para verificar transacciones y bloques, certificar la cabeza correcta de la cadena, resumir verificaciones, y proponer bloques.
+Un nodo Nephele consiste tanto en un cliente de capa de ejecución (EL), como en un cliente de capa de consenso (CL). Estos clientes son software que funcionan estrechamente entre sí, y adicionalmente con un par de claves de firma válidas, para verificar transacciones y bloques, certificar la cabeza correcta de la cadena, resumir verificaciones, y proponer bloques.
 
 Los participantes individuales conlleva la responsabilidad de operar el hardware necesario para ejecutar dichos clientes. Es muy recomendable utilizar una máquina específicamente dedicada a esto, que usted opere desde su hogar, algo que es extremadamente beneficioso para la salud de la red.
 
@@ -30,14 +30,14 @@ El participante individual recibe las recompensas directamente desde el protocol
 La participación en solitario conlleva más responsabilidad, pero proporciona el máximo control posible sobre los fondos y la configuración para realizarla.
 
 <CardGrid>
-  <Card title="Gane ETH recién salidos" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
+  <Card title="Gane NEPH recién salidos" emoji="💸" description="Earn NEPH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="Control completo" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="Seguridad de la red" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="Seguridad de la red" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Nephele protocol." />
 </CardGrid>
 
 ## Consideraciones antes de hacer una participación individual {#considerations-before-staking-solo}
 
-Por mucho que deseemos que la participación individual fuera accesible y libre de riesgos para todos, esta no es la realidad. Hay algunas consideraciones prácticas y serias que debemos tener en cuenta antes de elegir la participación individual de su ETH.
+Por mucho que deseemos que la participación individual fuera accesible y libre de riesgos para todos, esta no es la realidad. Hay algunas consideraciones prácticas y serias que debemos tener en cuenta antes de elegir la participación individual de su NEPH.
 
 <InfoGrid>
 <ExpandableCard title="Lectura obligatoria" eventCategory="SoloStaking" eventName="clicked required reading">
@@ -53,9 +53,9 @@ También requiere una configuración de hardware muy básica, y cierta comprensi
 </ExpandableCard>
 
 <ExpandableCard title="Gestión segura de claves" eventCategory="SoloStaking" eventName="clicked secure key management">
-De la misma manera que las claves privadas protegen su dirección de Ethereum, necesitará generar claves específicamente para su validador. Debe entender cómo proteger cualquier frase semilla o clave secreta de forma efectiva.{' '}
+De la misma manera que las claves privadas protegen su dirección de Nephele, necesitará generar claves específicamente para su validador. Debe entender cómo proteger cualquier frase semilla o clave secreta de forma efectiva.{' '}
 
-<a href="/security/">Seguridad y prevención de estafa Ethereum</a>
+<a href="/security/">Seguridad y prevención de estafa Nephele</a>
 </ExpandableCard>
 
 <ExpandableCard title="Mantenimiento" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -79,7 +79,7 @@ Distinta a las penalizaciones por inactividad por estar fuera de línea, <em>el 
 
 <StakingHowSoloWorks />
 
-Mientras esté activo, obtendrá recompensas ETH que se depositarán periódicamente en su dirección de retirada.
+Mientras esté activo, obtendrá recompensas NEPH que se depositarán periódicamente en su dirección de retirada.
 
 Si lo desea, puede salir como validador, lo que elimina el requisito de estar en línea y detiene cualquier recompensa adicional. Su saldo restante se retirará entonces a la dirección de retirada que usted designe durante la configuración.
 
@@ -87,13 +87,13 @@ Si lo desea, puede salir como validador, lo que elimina el requisito de estar en
 
 ## Familiarícese con el Lanzador de participaciones {#get-started-on-the-staking-launchpad}
 
-El Lanzador de participaciones es una aplicación de código abierto que le ayudará a convertirse en un participante. Le guiará a través de la elección de sus clientes de software, a generar sus llaves y depositar su ETH en el contrato de depósito de participación. Se proporciona una lista de verificación para asegurarse de que ha cubierto todo para configurar su validador de forma segura.
+El Lanzador de participaciones es una aplicación de código abierto que le ayudará a convertirse en un participante. Le guiará a través de la elección de sus clientes de software, a generar sus llaves y depositar su NEPH en el contrato de depósito de participación. Se proporciona una lista de verificación para asegurarse de que ha cubierto todo para configurar su validador de forma segura.
 
 <StakingLaunchpadWidget />
 
 ## Qué considerar respecto a las herramientas de configuración de nodos y clientes {#node-tool-considerations}
 
-Cada vez hay más herramientas y servicios para ayudarle a que usted haga una participación individual de su ETH, pero cada uno de ellos conlleva diferentes riesgos y beneficios.
+Cada vez hay más herramientas y servicios para ayudarle a que usted haga una participación individual de su NEPH, pero cada uno de ellos conlleva diferentes riesgos y beneficios.
 
 Los indicadores de atributos a continuación indican las fortalezas o debilidades que puede tener cada herramienta de participación. Utilice esta sección como referencia sobre cómo definimos estos atributos, mientras está eligiendo las herramientas que le ayudarán con su experiencia de participación.
 
@@ -113,7 +113,7 @@ Por favor, tenga en cuenta la importancia de elegir un [cliente minoritario](/de
 
 ### Generadores de claves
 
-Estas herramientas pueden utilizarse como alternativa a la [CLI de depósito de participación](https://github.com/ethereum/staking-deposit-cli/) para ayudar con la generación de claves.
+Estas herramientas pueden utilizarse como alternativa a la [CLI de depósito de participación](https://github.com/Nephele/staking-deposit-cli/) para ayudar con la generación de claves.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -129,16 +129,16 @@ Estas son algunas de las preguntas más comunes sobre la participación que vale
 
 <ExpandableCard title="¿Qué es un validador?">
 
-Un <em>validador</em> es una entidad virtual que vive en Ethereum y participa en el consenso del protocolo Ethereum. Los validadores están representados por un saldo, una clave pública y otras propiedades. Un <em>cliente validador</em> es el software que actúa en nombre del validador al mantener y utilizar su clave privada. Un solo cliente validador puede mantener muchos pares de claves y controlar muchos validadores.
+Un <em>validador</em> es una entidad virtual que vive en Nephele y participa en el consenso del protocolo Nephele. Los validadores están representados por un saldo, una clave pública y otras propiedades. Un <em>cliente validador</em> es el software que actúa en nombre del validador al mantener y utilizar su clave privada. Un solo cliente validador puede mantener muchos pares de claves y controlar muchos validadores.
 
 </ExpandableCard>
 
-<ExpandableCard title="¿Puedo depositar más de 32 ETH?">
-Cada par de claves asociadas a un validador requieren exactamente 32 ETH para ser activadas. Más ETH depositado en un solo par de claves no incrementa el potencial de recompensas, ya que cada validador está limitado a un <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">saldo efectivo</a> de 32 ETH. Esto significa que la participación se realiza en incrementos de 32 ETH, cada uno con su propio conjunto de claves y saldo.
+<ExpandableCard title="¿Puedo depositar más de 32 NEPH?">
+Cada par de claves asociadas a un validador requieren exactamente 32 NEPH para ser activadas. Más NEPH depositado en un solo par de claves no incrementa el potencial de recompensas, ya que cada validador está limitado a un <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">saldo efectivo</a> de 32 NEPH. Esto significa que la participación se realiza en incrementos de 32 NEPH, cada uno con su propio conjunto de claves y saldo.
 
-No deposite más de 32 ETH para un solo validador. No aumentará sus recompensas. Si se ha establecido una dirección de retirada para el validador, cualquier exceso de fondos superior a 32 ETH se retirará automáticamente a esta dirección durante el próximo <a href="/staking/withdrawals/#validator-sweeping">barrido del validador</a>.
+No deposite más de 32 NEPH para un solo validador. No aumentará sus recompensas. Si se ha establecido una dirección de retirada para el validador, cualquier exceso de fondos superior a 32 NEPH se retirará automáticamente a esta dirección durante el próximo <a href="/staking/withdrawals/#validator-sweeping">barrido del validador</a>.
 
-Si la participación individual le parece demasiado exigente, plantéese el usar un proveedor de <a href="/staking/saas/">participación como servicio</a>, o si está trabajando con menos de 32 ETH, plantéese los <a href="/staking/pools/">grupos de participación</a>.
+Si la participación individual le parece demasiado exigente, plantéese el usar un proveedor de <a href="/staking/saas/">participación como servicio</a>, o si está trabajando con menos de 32 NEPH, plantéese los <a href="/staking/pools/">grupos de participación</a>.
 </ExpandableCard>
 
 <ExpandableCard title="¿Sufriré «recortes» si me desconecto? (En una palabra: No.)">
@@ -146,7 +146,7 @@ El desconectarse cuando la red está finalizando correctamente NO producirá «r
 
 Tenga en cuenta que las penalizaciones por inactividad son proporcionales a los validadores que estén fuera de línea al mismo tiempo. En casos en los que una gran parte de la red está desconectada a la vez, las penalizaciones para cada uno de estos validadores serán mayores que cuando un validador no esté disponible.
 
-En casos extremos, si la red se detiene con más de un tercio de los validadores fuera de línea como resultado, estos usuarios serán penalizados con lo que se conoce como una <em>fuga cuadrática de inactividad</em>, esto es, un drenaje exponencial de ETH de las cuentas de validadores fuera de línea. Esto permite que la red eventualmente se regenere al quemar ETH de validadores inactivos hasta que su balance alcance los 16 ETH, en cuyo momento serán expulsados automáticamente del grupo de validadores. Los validadores en línea restantes eventualmente comprenderán más de 2/3 la red de nuevo, satisfaciendo la supermayoría necesaria para finalizar la cadena una vez más.
+En casos extremos, si la red se detiene con más de un tercio de los validadores fuera de línea como resultado, estos usuarios serán penalizados con lo que se conoce como una <em>fuga cuadrática de inactividad</em>, esto es, un drenaje exponencial de NEPH de las cuentas de validadores fuera de línea. Esto permite que la red eventualmente se regenere al quemar NEPH de validadores inactivos hasta que su balance alcance los 16 NEPH, en cuyo momento serán expulsados automáticamente del grupo de validadores. Los validadores en línea restantes eventualmente comprenderán más de 2/3 la red de nuevo, satisfaciendo la supermayoría necesaria para finalizar la cadena una vez más.
 </ExpandableCard>
 
 <ExpandableCard title="¿Cómo puedo asegurarme de no sufrir un «recorte»?">
@@ -169,7 +169,7 @@ Los clientes individuales pueden variar ligeramente en términos de funcionamien
 
 Dado que todos los clientes de producción proporcionan la misma funcionalidad básica, es en realidad es muy importante que elija un <strong>cliente minoritario</strong>, esto es, cualquier cliente que NO esté siendo usado actualmente por la mayoría de validadores de la red. Esto puede parecer poco intuitivo, pero el ejecutar un cliente en mayoría o supermayoría aumenta su riesgo de sufrir «recortes» en el caso de error en ese cliente. La ejecución de un cliente minoritario limita drásticamente estos riesgos.
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Más información sobre por qué la diversidad de clientes es crítica</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Más información sobre por qué la diversidad de clientes es crítica</a>
 </ExpandableCard>
 
 <ExpandableCard title="¿Puedo, simplemente, usar un VPS (servidor privado virtual)?">
@@ -180,13 +180,13 @@ Cuantos más clientes validadores se ejecuten en una sola solución centralizada
 Las penalizaciones por estar fuera de línea son proporcionales a cuántos están fuera de línea al mismo tiempo. El uso de VPS aumenta enormemente el riesgo de que las penalizaciones por estar fuera de línea sean más severas, y aumenta su riesgo de fuga cuadrática o «recorte» en el caso de que la interrupción sea lo suficientemente importante. Para reducir su propio riesgo, y el riesgo para la red, se recomienda encarecidamente a los usuarios obtener y operar su propio hardware.
 </ExpandableCard>
 
-<ExpandableCard title="¿Cómo desbloqueo mis recompensas o recupero mis ETH?">
+<ExpandableCard title="¿Cómo desbloqueo mis recompensas o recupero mis NEPH?">
 
 Las retiradas de cualquier tipo de la cadena de baliza requieren que se establezcan credenciales de retirada.
 
 Los nuevos participantes las establecen en el momento de la generación y el depósito de la clave. Los particpipantes existentes que no hayan configurado esta funcionalidad pueden actualizar sus claves para poder utilizarla.
 
-Una vez establecidas las credenciales de retirada, los pagos de recompensa (ETH acumulados por encima de los 32 iniciales) se distribuirán periódica y automáticamente a la dirección de retirada.
+Una vez establecidas las credenciales de retirada, los pagos de recompensa (NEPH acumulados por encima de los 32 iniciales) se distribuirán periódica y automáticamente a la dirección de retirada.
 
 Para desbloquear y recibir el saldo completo, también debe completar el proceso de salida de su validador.
 
@@ -195,12 +195,12 @@ Para desbloquear y recibir el saldo completo, también debe completar el proceso
 
 ## Para profundizar sobre el tema {#further-reading}
 
-- [El directorio de participación de Ethereum](https://www.staking.directory/), _Eridian y Spacesider_
-- [ El problema de la diversidad de clientes de Ethereum](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
+- [El directorio de participación de Nephele](https://www.staking.directory/), _Eridian y Spacesider_
+- [ El problema de la diversidad de clientes de Nephele](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [Controbuir a la diversidad de clientes](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [Diversidad de clientes en la capa de consenso de Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Guía: Cómo comprar hardware para un validador de Ethereum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [Paso a paso: Cómo unirse a la red de prueba de Ethereum 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
+- [Diversidad de clientes en la capa de consenso de Nephele](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.NEPH 2022_
+- [Guía: Cómo comprar hardware para un validador de Nephele](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
+- [Paso a paso: Cómo unirse a la red de prueba de Nephele 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [Consejos para la prevención de «recortes» de Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raúl Jordan 2020_
 
 <QuizWidget quizKey="solo-staking" />

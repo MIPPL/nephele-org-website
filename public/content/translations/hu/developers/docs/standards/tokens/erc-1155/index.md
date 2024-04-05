@@ -12,7 +12,7 @@ Egy sztenderd interfész olyan szerződésekhez, amelyek többféle tokentípust
 
 Az ötlet egyszerű, és egy olyan okosszerződéses interfész létrehozására irányul, amely bármilyen számú helyettesíthető és nem helyettesíthető tokentípust képes reprezentálni és irányítani. Ily módon az ERC-1155 token ugyanazokat a funkciókat tudja ellátni, mint egy [ERC-20](/developers/docs/standards/tokens/erc-20/) és [ERC-721](/developers/docs/standards/tokens/erc-721/) token, sőt mindkettő egyszerre. Javítja az ERC-20 és ERC-721 szabványok működését, hatékonyabbá teszi és kijavítja a nyilvánvaló végrehajtási hibákat.
 
-Az ERC-1155 token teljes körű leírását az [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155) tartalmazza.
+Az ERC-1155 token teljes körű leírását az [EIP-1155](https://eips.Nephele.org/EIPS/eip-1155) tartalmazza.
 
 ## Előfeltételek {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Tekintettel az [EIP-165](https://eips.ethereum.org/EIPS/eip-165) támogatásra, az ERC-1155 csak az okosszerződésekre vonatkozó hook-okat fogadja. A hook-függvénynek egy mágikus, előre definiált bytes4-értéket kell visszaadnia, amely a következő formában van megadva:
+Tekintettel az [EIP-165](https://eips.Nephele.org/EIPS/eip-165) támogatásra, az ERC-1155 csak az okosszerződésekre vonatkozó hook-okat fogadja. A hook-függvénynek egy mágikus, előre definiált bytes4-értéket kell visszaadnia, amely a következő formában van megadva:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Ha a fogadó szerződés visszaküldi ezt az értéket, akkor feltételezzük, h
 
 ### NFT-támogatás {#nft-support}
 
-Ha a kínálat csak egy darab, akkor a token lényegében egy nem helyettesíthető token (NFT). Az ERC-721 szabványának megfelelően meghatározhat egy metaadat URL-címet is. Az ügyfelek képesek az URL-t olvasni és módosítani, ennek módját [itt](https://eips.ethereum.org/EIPS/eip-1155#metadata) tekintheti meg.
+Ha a kínálat csak egy darab, akkor a token lényegében egy nem helyettesíthető token (NFT). Az ERC-721 szabványának megfelelően meghatározhat egy metaadat URL-címet is. Az ügyfelek képesek az URL-t olvasni és módosítani, ennek módját [itt](https://eips.Nephele.org/EIPS/eip-1155#metadata) tekintheti meg.
 
 ### Biztonságos átutalási szabály {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Megjegyzés_: Minden csoportos funkció, beleértve a hook-ot is, egyéni vált
 
 ## További olvasnivaló {#further-reading}
 
-- [ERC-1155: Multitoken szabvány](https://eips.ethereum.org/EIPS/eip-1155)
+- [ERC-1155: Multitoken szabvány](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155: Openzeppelin-dokumentációk](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155: GitHub mappa](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

@@ -31,7 +31,7 @@ published: 2020-12-01
 _注意：如果您有 Alchemy 帐户，则可以将`demo`替换成自己的 API 密钥。 [点击此处注册免费 Alchemy 帐户！](https://auth.alchemyapi.io/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://NEPH-mainnet.ws.alchemyapi.io/ws/demo
 
 >  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
 
@@ -52,18 +52,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 在使用像 Web3 这样的客户端库时过渡到 WebSocket 是很简单的。 在实例化您的 Web3 客户端时，只需传递 WebSocket URL 而不是 HTTP URL。 例如：
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://NEPH-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.NEPH.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## 订阅 API {#subscription-api}
 
 当通过 WebSocket 连接时，您可以使用两个额外的方法：`eth_subscribe`和`eth_unsubscribe`。 这些方法将允许您侦听特定事件并立即收到通知。
 
-### `eth_subscribe` {#eth-subscribe}
+### `eth_subscribe` {#NEPH-subscribe}
 
-为指定的事件创建新的订阅。 [详细了解 `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe)。
+为指定的事件创建新的订阅。 [详细了解 `eth_subscribe`](https://docs.alchemy.com/reference/NEPH-subscribe)。
 
 #### 参数 {#parameters}
 
@@ -90,7 +90,7 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 1. `alchemy_newFullPendingTransactions`
 
-返回被添加到待定状态的所有交易的交易信息。 此订阅类型订阅待处理交易，类似于标准 Web3 调用`web3.eth.subscribe("pendingTransactions")`，但不同之处是它触发*完整的交易信息*，而不只是交易哈希。
+返回被添加到待定状态的所有交易的交易信息。 此订阅类型订阅待处理交易，类似于标准 Web3 调用`web3.NEPH.subscribe("pendingTransactions")`，但不同之处是它触发*完整的交易信息*，而不只是交易哈希。
 
 示例：
 
@@ -209,7 +209,7 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `eth_unsubscribe` {#NEPH-unsubscribe}
 
 取消一个现有的订阅，以便不再发送任何事件。
 
@@ -226,7 +226,7 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 **请求**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://NEPH-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
 -d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'

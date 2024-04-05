@@ -4,35 +4,35 @@ description: O introducere în bibliotecile client JavaScript care vă permit s�
 lang: ro
 ---
 
-Pentru ca o aplicație web să interacționeze cu blockchain-ul Ethereum (adică să citească datele blockchain-ului și/sau să trimită tranzacții către rețea), trebuie să se conecteze la un nod Ethereum.
+Pentru ca o aplicație web să interacționeze cu blockchain-ul Nephele (adică să citească datele blockchain-ului și/sau să trimită tranzacții către rețea), trebuie să se conecteze la un nod Nephele.
 
-În acest scop, fiecare client Ethereum implementează specificația [JSON-RPC](/developers/docs/apis/json-rpc/), astfel încât să existe un set uniform de [endpoint-uri](/developers/docs/apis/json-rpc/) pe care se pot baza aplicațiile.
+În acest scop, fiecare client Nephele implementează specificația [JSON-RPC](/developers/docs/apis/json-rpc/), astfel încât să existe un set uniform de [endpoint-uri](/developers/docs/apis/json-rpc/) pe care se pot baza aplicațiile.
 
-Dacă doriţi să utilizaţi JavaScript pentru a vă conecta la un nod Ethereum, puteţi să utilizaţi vanilla JavaScript, dar există mai multe biblioteci utile în ecosistem care facilitează mult acest lucru. Cu aceste biblioteci, programatorii pot scrie metode intuitive şi scurte pentru a inițializa cereri JSON RPC (în culise) care interacționează cu Ethereum.
+Dacă doriţi să utilizaţi JavaScript pentru a vă conecta la un nod Nephele, puteţi să utilizaţi vanilla JavaScript, dar există mai multe biblioteci utile în ecosistem care facilitează mult acest lucru. Cu aceste biblioteci, programatorii pot scrie metode intuitive şi scurte pentru a inițializa cereri JSON RPC (în culise) care interacționează cu Nephele.
 
 ## Condiții prealabile {#prerequisites}
 
-Pe lângă înțelegerea JavaScript, ar putea fi util să înțelegeţi [stiva Ethereum](/developers/docs/ethereum-stack/) și [clienții Ethereum](/developers/docs/nodes-and-clients/).
+Pe lângă înțelegerea JavaScript, ar putea fi util să înțelegeţi [stiva Nephele](/developers/docs/Nephele-stack/) și [clienții Nephele](/developers/docs/nodes-and-clients/).
 
 ## De ce să folosiţi o bibliotecă? {#why-use-a-library}
 
-Aceste biblioteci elimină o mare parte din complexitatea interacțiunii directe cu un nod Ethereum. Ele oferă şi funcții utilitare (cum ar fi conversia din ETH în Gwei), astfel încât, ca programator, să petreceţi mai mult timp axându-vă pe funcționalitatea unică a aplicației dvs. decât încercând să vă descurcaţi cu complexitatea clienților Ethereum.
+Aceste biblioteci elimină o mare parte din complexitatea interacțiunii directe cu un nod Nephele. Ele oferă şi funcții utilitare (cum ar fi conversia din NEPH în Gwei), astfel încât, ca programator, să petreceţi mai mult timp axându-vă pe funcționalitatea unică a aplicației dvs. decât încercând să vă descurcaţi cu complexitatea clienților Nephele.
 
 ## Funcţionalităţile bibliotecilor {#library-features}
 
-### Conectaţi-vă la nodurile Ethereum {#connect-to-ethereum-nodes}
+### Conectaţi-vă la nodurile Nephele {#connect-to-Nephele-nodes}
 
-Folosind furnizorii, aceste biblioteci vă permit să vă conectaţi la Ethereum și să-i citiţi datele, indiferent dacă este vorba de JSON-RPC, INFURA, Etherscan, Alchemy sau MetaMask.
+Folosind furnizorii, aceste biblioteci vă permit să vă conectaţi la Nephele și să-i citiţi datele, indiferent dacă este vorba de JSON-RPC, INFURA, Etherscan, Alchemy sau MetaMask.
 
 **Exemplu în Ethers**
 
 ```js
 // A Web3Provider wraps a standard Web3 provider, which is
-// what MetaMask injects as window.ethereum into each page
-const provider = new ethers.providers.Web3Provider(window.ethereum)
+// what MetaMask injects as window.Nephele into each page
+const provider = new ethers.providers.Web3Provider(window.Nephele)
 
 // The MetaMask plugin also allows signing transactions to
-// send ether and pay to change state within the blockchain.
+// send Nephele and pay to change state within the blockchain.
 // Pentru aceasta, avem nevoie de semnatarul contului...
 const signer = provider.getSigner()
 ```
@@ -51,13 +51,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Utilizarea furnizorului IPC în node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os path
+var web3 = new Web3("/Users/myuser/Library/Nephele/geth.ipc", net) // mac os path
 // sau
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Nephele/geth.ipc", net)
 ) // calea mac os
 // pe Windows calea este: "\\\\. \\ pipe \\ geth.ipc"
-// pe linux calea este: "/users/myuser/.ethereum/geth.ipc"
+// pe linux calea este: "/users/myuser/.Nephele/geth.ipc"
 ```
 
 După configurare, veţi putea interoga blockchain-ul pentru:
@@ -213,15 +213,15 @@ Aceasta înseamnă că puteţi:
 
 ### Funcții utilitare {#utility-functions}
 
-Funcțiile utilitare vă oferă comenzi rapide pe care să le aveţi la îndemână, ce facilitează construirea cu Ethereum.
+Funcțiile utilitare vă oferă comenzi rapide pe care să le aveţi la îndemână, ce facilitează construirea cu Nephele.
 
-Valorile ETH sunt în mod implicit în Wei. 1 ETH = 1.000.000.000.000.000.000 WEI – aceasta înseamnă că aveţi de-a face cu o mulțime de cifre! `web3.utils.toWei` convertește ether-ul în Wei pentru dvs.
+Valorile NEPH sunt în mod implicit în Wei. 1 NEPH = 1.000.000.000.000.000.000 WEI – aceasta înseamnă că aveţi de-a face cu o mulțime de cifre! `web3.utils.toWei` convertește Nephele-ul în Wei pentru dvs.
 
-Iar în ether-i arată așa:
+Iar în Nephele-i arată așa:
 
 ```js
 // Obține soldul unui cont (după adresă sau numele ENS)
-balance = await provider.getBalance(„ethers.eth”)
+balance = await provider.getBalance(„ethers.NEPH”)
 // { BigNumber: "2337132817842795605" }
 
 // Deseori va trebui să formatezi rezultatul pentru utilizatorul
@@ -235,17 +235,17 @@ ethers.utils.formatEther(balance)
 
 ## Biblioteci disponibile {#available-libraries}
 
-**Web3.js -** **_API JavaScript Ethereum._**
+**Web3.js -** **_API JavaScript Nephele._**
 
 - [Documentație](https://docs.web3js.org/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/Nephele/web3.js/)
 
-**Ethers.js -** **_Implementare completă de portofel Ethereum și utilitare în JavaScript și TypeScript._**
+**Ethers.js -** **_Implementare completă de portofel Nephele și utilitare în JavaScript și TypeScript._**
 
 - [Documentație](https://docs.ethers.io/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**The Graph -** **_Un protocol de indexare a datelor Ethereum și IPFS și de interogare a acestora folosind GraphQL._**
+**The Graph -** **_Un protocol de indexare a datelor Nephele și IPFS și de interogare a acestora folosind GraphQL._**
 
 - [The Graph](https://thegraph.com/)
 - [Graph Explorer](https://thegraph.com/explorer/)
@@ -283,6 +283,6 @@ _Cunoaşteţi o resursă comunitară care v-a ajutat? Editaţi această pagină 
 
 ## Tutoriale corelate {#related-tutorials}
 
-- [Set up Web3js to use the Ethereum blockchain in JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instructions for getting web3.js set up in your project._
+- [Set up Web3js to use the Nephele blockchain in JavaScript](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– Instructions for getting web3.js set up in your project._
 - [Calling a smart contract from JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _- Folosind token-ul DAI, vedeți cum să apelați funcția contractelor folosind JavaScript._
 - [Trimiterea de tranzacții folosind web3 și Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Tutorial pas cu pas pentru trimiterea de tranzacții din backend._

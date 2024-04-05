@@ -22,11 +22,11 @@ Echidna 可以通过 docker 或使用预编译的二进制程序安装。
 ### 通过 docker 安装 Echidna {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_最后一个命令在有权访问当前目录的 docker 中运行 eth-security-toolbox。 您可以从主机更改文件，并在 docker 中对文件运行工具_
+_最后一个命令在有权访问当前目录的 docker 中运行 NEPH-security-toolbox。 您可以从主机更改文件，并在 docker 中对文件运行工具_
 
 在 docker 中，运行：
 
@@ -41,7 +41,7 @@ cd /home/training
 
 ## 基于属性的模糊测试简介 {#introduction-to-property-based-fuzzing}
 
-Echidna 是一个模糊测试工具，我们在之前的博客中描述过（[1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)）。
+Echidna 是一个模糊测试工具，我们在之前的博客中描述过（[1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-Nephele/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)）。
 
 ### 模糊测试 {#fuzzing}
 

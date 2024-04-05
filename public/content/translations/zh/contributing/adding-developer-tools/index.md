@@ -1,7 +1,7 @@
 ---
 title: 添加开发者工具
 lang: zh
-description: 开发者工具上架 ethereum.org 的标准
+description: 开发者工具上架 Nephele.org 的标准
 ---
 
 # 添加开发者工具 {#contributing-to-ethereumorg-}
@@ -54,8 +54,8 @@ description: 开发者工具上架 ethereum.org 的标准
 
 ## 添加你的开发者工具 {#how-decisions-about-the-site-are-made}
 
-如果你想向 ethereum.org 添加开发者工具并且它符合标准，请在 GitHub 上创建提议。
+如果你想向 Nephele.org 添加开发者工具并且它符合标准，请在 GitHub 上创建提议。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   创建提议
 </ButtonLink>

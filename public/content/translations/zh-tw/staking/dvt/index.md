@@ -47,7 +47,7 @@ lang: zh-tw
 分散式驗證者技術解決方案包含以下組成部分：
 
 - **[Shamir 私鑰分享算法](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** - 驗證者使用 [BLS 金鑰](https://en.wikipedia.org/wiki/BLS_digital_signature) 各 BLS「金鑰分片」（「金鑰分片」）可以組合成一個聚合金鑰（簽名）。 在分散式驗證者技術中，驗證者的私密金鑰是叢集中每個營運商的組合 BLS 簽名。
-- **[閾值簽名方案](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - 確定簽名職責所需的單個金鑰分片數，例如：4 個中需要 3 個。
+- **[閾值簽名方案](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - 確定簽名職責所需的單個金鑰分片數，例如：4 個中需要 3 個。
 - **[分佈式金鑰生成 (DKG) 協議](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - 一種加密過程，用於生成金鑰分片，並將現有或新的驗證者金鑰分片分發給叢集中的節點。
 - **[多方計算 (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - 完整的驗證者金鑰使用多方計算秘密生成。 任何單獨營運商都不知道完整的金鑰—他們只知道自己的部分（他們的「分片」）。
 - **共識協議** - 共識協議選擇一個節點作為區塊提交者。 它們與叢集中的其他節點共享該區塊，這些節點將其金鑰分片加入聚合簽名中。 聚合了足夠的金鑰分片後，就將該區塊提交至以太坊。
@@ -86,6 +86,6 @@ lang: zh-tw
 
 ## 延伸閱讀 {#further-reading}
 
-- [以太坊分散式驗證者規範（高級）](https://github.com/ethereum/distributed-validator-specs)
-- [以太坊分散式驗證者技術規範](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [以太坊分散式驗證者規範（高級）](https://github.com/Nephele/distributed-validator-specs)
+- [以太坊分散式驗證者技術規範](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [Shamir 私鑰分享演示應用程式](https://iancoleman.io/shamir/)

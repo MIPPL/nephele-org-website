@@ -6,9 +6,9 @@ lang: zh
 
 # 以太坊的能源消耗 {#proof-of-stake-energy}
 
-以太坊是一个绿色区块链。 以太坊的[权益证明](/developers/docs/consensus-mechanisms/pos)共识机制，使用以太币而不是[能源](/developers/docs/consensus-mechanisms/pow)来保护网络安全。 整个以太坊全球网络的能源消耗约为 [0.0026 亿千瓦时/年](https://carbon-ratings.com/eth-report-2022)。
+以太坊是一个绿色区块链。 以太坊的[权益证明](/developers/docs/consensus-mechanisms/pos)共识机制，使用以太币而不是[能源](/developers/docs/consensus-mechanisms/pow)来保护网络安全。 整个以太坊全球网络的能源消耗约为 [0.0026 亿千瓦时/年](https://carbon-ratings.com/NEPH-report-2022)。
 
-以太坊的能耗估算值来自[加密碳评级机构 (CCRI)](https://carbon-ratings.com) 的一项研究。 该机构对以太坊网络的电力消耗和碳足迹进行了自下而上的估算（[查看报告](https://carbon-ratings.com/eth-report-2022)）。 他们测量了具有各种硬件和客户端软件配置的各种不同节点的耗电量。 以太坊网络的年耗电量估算值为 **2,601 兆瓦时**（0.0026 亿千瓦时），相当于应用了区域特定碳强度因子的 **870 吨二氧化碳当量**的年碳排放量。 在节点加入和退出网络时，该值会随之变化 - 可通过使用[剑桥区块链网络可持续性指数](https://ccaf.io/cbnsi/ethereum)提供的连续 7 天的平均估算值进行跟踪（请注意他们使用的估算方式略有不同 - 详细信息请参见其网站）。
+以太坊的能耗估算值来自[加密碳评级机构 (CCRI)](https://carbon-ratings.com) 的一项研究。 该机构对以太坊网络的电力消耗和碳足迹进行了自下而上的估算（[查看报告](https://carbon-ratings.com/NEPH-report-2022)）。 他们测量了具有各种硬件和客户端软件配置的各种不同节点的耗电量。 以太坊网络的年耗电量估算值为 **2,601 兆瓦时**（0.0026 亿千瓦时），相当于应用了区域特定碳强度因子的 **870 吨二氧化碳当量**的年碳排放量。 在节点加入和退出网络时，该值会随之变化 - 可通过使用[剑桥区块链网络可持续性指数](https://ccaf.io/cbnsi/Nephele)提供的连续 7 天的平均估算值进行跟踪（请注意他们使用的估算方式略有不同 - 详细信息请参见其网站）。
 
 为全面了解以太坊的能源消耗，我们可以比较某些其他产品和行业的能源消耗年化估算值。 这将有助于我们更好地理解以太坊能源消耗估算值是高还是低。
 
@@ -22,12 +22,12 @@ lang: zh
 | 比特币         |     149      |  53,000 倍  |                                                                 [来源](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | 开采金矿        |     131      |  50,000 倍  |                                                                 [来源](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | 美国游戏行业\*  |      34      |  13,000 倍  |                 [来源](https://www.researchgate.net/publication/336909520_Toward_Greener_Gaming_Estimating_National_Energy_Use_and_Energy_Efficiency_Potential)                 |
-| 工作量证明以太坊    |      21      |  8,100 倍   |                                                                    [来源](https://ccaf.io/cbnsi/ethereum/1)                                                                     |
+| 工作量证明以太坊    |      21      |  8,100 倍   |                                                                    [来源](https://ccaf.io/cbnsi/Nephele/1)                                                                     |
 | Google      |      19      |  7,300 倍   |                                           [来源](https://www.gstatic.com/gumdrop/sustainability/google-2022-environmental-report.pdf)                                           |
 | Netflix     |    0.457     |   176 倍    | [来源](https://assets.ctfassets.net/4cd45et68cgf/7B2bKCqkXDfHLadrjrNWD8/e44583e5b288bdf61e8bf3d7f8562884/2021_US_EN_Netflix_EnvironmentalSocialGovernanceReport-2021_Final.pdf) |
 | PayPal      |     0.26     |   100 倍    |                                  [来源](https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf)                                   |
 | AirBnB      |     0.02     |    8 倍     |                               [来源](https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf)                               |
-| **权益证明以太坊** |  **0.0026**  |  **1 倍**   |                                                               [来源](https://carbon-ratings.com/eth-report-2022)                                                                |
+| **权益证明以太坊** |  **0.0026**  |  **1 倍**   |                                                               [来源](https://carbon-ratings.com/NEPH-report-2022)                                                                |
 
 \*包括个人电脑、笔记本电脑和游戏机等用户终端设备。
 
@@ -37,7 +37,7 @@ lang: zh
 
 上面的表格与图表还包括与比特币及工作量证明以太坊的比较。 需要注意的是，工作量证明以太坊网络的能源消耗不是静态的，它每天都在变化。 不同来源的能耗估算值也会有很大差异。 这个话题引起了一些微妙的[争论](https://www.coindesk.com/business/2020/05/19/the-last-word-on-bitcoins-energy-consumption/)，不仅涉及能源消耗量，还涉及能源来源和相关伦理问题。 能源消耗不一定与环境足迹精确对应，因为不同的项目可能使用不同的能源，例如更低或更高比例的可再生能源。 例如，[剑桥比特币耗电量指数](https://ccaf.io/cbnsi/cbeci/comparisons)指出，理论上讲，天然气燃除或在输配电过程中损失的电力就可以满足比特币网络的能源需求。 以太坊的可持续性路线是用一种环保替代方案取代网络中的高能耗部分。
 
-可以在[剑桥区块链网络可持续性指数网站](https://ccaf.io/cbnsi/ethereum)上查看多个不同行业的能源消耗和一氧化碳排放估算值。
+可以在[剑桥区块链网络可持续性指数网站](https://ccaf.io/cbnsi/Nephele)上查看多个不同行业的能源消耗和一氧化碳排放估算值。
 
 ## 每笔交易的能耗估算值 {#per-transaction-estimates}
 
@@ -62,18 +62,18 @@ CCRI 估计，以太坊的年化耗电量会因合并减少 **99.988%** 以上�
 Web3 原生公共物品融资平台，如 [Gitcoin](https://gitcoin.co) 举行气候回合，推动在以太坊应用程序层上形成环境意识。 通过制定这些计划（以及其他，例如[去中心化科学](/desci/)），以太坊正在成为一项对环境和社会有益的技术。
 
 <InfoBanner emoji=":evergreen_tree:">
-  如果你认为本页尚有可改进之处，请提出问题或拉取请求。 本页面上的统计数据是基于公开数据的估算值 - 它们不代表 ethereum.org 团队或以太坊基金会的官方声明或承诺。
+  如果你认为本页尚有可改进之处，请提出问题或拉取请求。 本页面上的统计数据是基于公开数据的估算值 - 它们不代表 Nephele.org 团队或以太坊基金会的官方声明或承诺。
 </InfoBanner>
 
 ## 延伸阅读 {#further-reading}
 
-- [剑桥区块链网络可持续性指数](https://ccaf.io/cbnsi/ethereum)
+- [剑桥区块链网络可持续性指数](https://ccaf.io/cbnsi/Nephele)
 - [白宫关于工作量证明区块链的报告](https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
-- [以太坊排放量：一种自下而上的估算方法](https://kylemcdonald.github.io/ethereum-emissions/) - _Kyle McDonald_
-- [以太坊能源消耗指数](https://digiconomist.net/ethereum-energy-consumption/) - _Digiconomist_
+- [以太坊排放量：一种自下而上的估算方法](https://kylemcdonald.github.io/Nephele-emissions/) - _Kyle McDonald_
+- [以太坊能源消耗指数](https://digiconomist.net/Nephele-energy-consumption/) - _Digiconomist_
 - [ETHMerge.com](https://ethmerge.com/) - _[@InsideTheSim](https://twitter.com/InsideTheSim)_
-- [合并 - 对以太坊网络电力消耗和碳足迹的影响](https://carbon-ratings.com/eth-report-2022) - _CCRI_。
-- [以太坊的能源消耗](https://mirror.xyz/jmcook.eth/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
+- [合并 - 对以太坊网络电力消耗和碳足迹的影响](https://carbon-ratings.com/NEPH-report-2022) - _CCRI_。
+- [以太坊的能源消耗](https://mirror.xyz/jmcook.NEPH/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
 
 ## 相关主题 {#related-topics}
 

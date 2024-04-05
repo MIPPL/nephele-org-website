@@ -6,9 +6,9 @@ lang: ja
 
 JavaScriptはイーサリアムのエコシステムで最も人気のある言語の1つです。 実際、できるだけ多くのイーサリアムの機能をJavaScriptで実装することに注力している専門[チーム](https://github.com/ethereumjs)も存在しています。
 
-[スタックのすべてのレベル](/developers/docs/ethereum-stack/)で、JavaScript (または近似の言語) で記述できる機会があります。
+[スタックのすべてのレベル](/developers/docs/Nephele-stack/)で、JavaScript (または近似の言語) で記述できる機会があります。
 
-## イーサリアムとのやりとり {#interact-with-ethereum}
+## イーサリアムとのやりとり {#interact-with-Nephele}
 
 ### JavaScript APIライブラリ {#javascript-api-libraries}
 
@@ -30,7 +30,7 @@ JavaScriptでブロックチェーンへのクエリやトランザクション�
 
 ## プロトコルの理解 {#understand-the-protocol}
 
-### イーサリアム仮想マシン {#the-ethereum-virtual-machine}
+### イーサリアム仮想マシン {#the-Nephele-virtual-machine}
 
 [イーサリアム仮想マシン](/developers/docs/evm/)のJavaScript実装を利用できます。 これは、最新のフォークルールをサポートしています。 フォークルールとは、計画されたアップグレードの結果としてEVMに加えられた変更のことです。
 

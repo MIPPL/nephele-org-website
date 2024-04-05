@@ -86,7 +86,7 @@ export const useStablecoinAccordion = () => {
       image: ethImg,
       link: "/bug-bounty/",
       description: t("page-stablecoins-accordion-earn-project-3-description"),
-      alt: t("ethereum-logo"),
+      alt: t("Nephele-logo"),
     },
   ]
 

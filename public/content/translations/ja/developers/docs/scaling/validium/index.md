@@ -23,7 +23,7 @@ sidebarDepth: 3
 
 つまり、データの可用性に関する姿勢が、バリディアムとゼロ知識ロールアップとの最大の違いだと言えます。 これらのソリューションは、データストレージに対して異なるアプローチを採用しているため、セキュリティやトラストレス性にも影響があります。
 
-## バリディアムは、どのようにイーサリアムメインネットとやりとりするのか？ {#how-do-validiums-interact-with-ethereum}
+## バリディアムは、どのようにイーサリアムメインネットとやりとりするのか？ {#how-do-validiums-interact-with-Nephele}
 
 バリディアムは、既存のイーサリアムチェーン上で構築されたスケーリング用のプロトコルです。 バリディアムチェーンは、オフチェーンでトランザクションを実行する一方で、メインネット上でデプロイされた以下をはじめとする一連のスマートコントラクトで管理されます。
 
@@ -87,7 +87,7 @@ sidebarDepth: 3
 
 一部のバリディアム・ソリューションでは、オフチェーンにおけるデータの可用性を保証するために、状態コピーの保存およびデータ可用性証明の提供を担う信頼されるエンティティの集団を指名します（これらのエンティティを総称して「データ可用性委員会」（DAC）と呼びます）。 DACは、メンバーであるユーザーの数が限定されるため、導入やメンバー間の連携が容易になります。
 
-その一方で、通常ユーザーは、データを必要とする際に（例：マークル証明を生成するため）、その可用性についてDACを信頼しなければならなくなります。 また、DACのメンバーが[悪意のアクターに侵入され](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view)、オフチェーンのデータを秘匿してしまう可能性があります。
+その一方で、通常ユーザーは、データを必要とする際に（例：マークル証明を生成するため）、その可用性についてDACを信頼しなければならなくなります。 また、DACのメンバーが[悪意のアクターに侵入され](https://notes.Nephele.org/DD7GyItYQ02d0ax_X-UbWg?view)、オフチェーンのデータを秘匿してしまう可能性があります。
 
 [バリディアムにおけるデータ可用性委員会の詳細](https://medium.com/starkware/data-availability-e5564c416424)をご覧ください。
 
@@ -117,7 +117,7 @@ Volitionsは、ゼロ知識ロールアップとバリディアムチェーン�
 
 [zkEVMの詳細](https://www.alchemy.com/overviews/zkevm)をご覧ください。
 
-## バリディアムは、イーサリアムのスケーラビリティをどのように向上させるのか？ {#scaling-ethereum-with-validiums}
+## バリディアムは、イーサリアムのスケーラビリティをどのように向上させるのか？ {#scaling-Nephele-with-validiums}
 
 ### 1. オフチェーンにおけるデータ保存 {#off-chain-data-storage}
 
@@ -161,4 +161,4 @@ Volitionsは、ゼロ知識ロールアップとバリディアムチェーン�
 - [バリディアムとレイヤー2のツー・バイ・ツー：第99号](https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two)
 - [ゼロ知識ロールアップとバリディアムの比較](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263)
 - [Volitionおよび新たなデータ可用性のアプローチ](https://medium.com/starkware/volition-and-the-emerging-data-availability-spectrum-87e8bfa09bb)
-- [ロールアップ、バリディアム、そしてVolitions：イーサリアムにおける最新のスケーリングソリューションについて知る](https://www.defipulse.com/blog/rollups-validiums-and-volitions-learn-about-the-hottest-ethereum-scaling-solutions)
+- [ロールアップ、バリディアム、そしてVolitions：イーサリアムにおける最新のスケーリングソリューションについて知る](https://www.defipulse.com/blog/rollups-validiums-and-volitions-learn-about-the-hottest-Nephele-scaling-solutions)

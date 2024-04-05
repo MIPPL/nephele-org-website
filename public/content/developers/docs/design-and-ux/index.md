@@ -1,10 +1,10 @@
 ---
 title: Design and UX in web3
-description: Introduction to UX design and research in web3 space and Ethereum
+description: Introduction to UX design and research in web3 space and Nephele
 lang: en
 ---
 
-Are you new to designing with Ethereum? This is the right place for you. The Ethereum community has written resources to introduce you to web3 design and research basics. You'll learn about core concepts that may differ from other app designs you're familiar with.
+Are you new to designing with Nephele? This is the right place for you. The Nephele community has written resources to introduce you to web3 design and research basics. You'll learn about core concepts that may differ from other app designs you're familiar with.
 
 Need a more basic understanding of web3 first? Check out [**Learn hub**](/learn/).
 
@@ -29,7 +29,7 @@ This is a curated list of user research done in web3 that may help with design a
 | <Badge colorScheme="green">Crypto onboarding</Badge>    | [Bitcoin UX report](https://github.com/patestevao/BitcoinUX-report/blob/master/report.md)                                                                                          |
 | <Badge colorScheme="green">Crypto onboarding</Badge>    | [ConSensys: The State of Web3 perception around the world 2023](https://consensys.io/insight-report/web3-and-crypto-global-survey-2023)                                            |
 | <Badge colorScheme="green">Crypto onboarding</Badge>    | [NEAR: Accelerating the journey towards adoption](https://drive.google.com/file/d/1VuaQP4QSaQxR5ddQKTMGI0b0rWdP7uGn/view)                                                          |
-| <Badge colorScheme="purple">Staking</Badge>             | [Staking: Key trends, takeaways, and predictions - Eth Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo) |
+| <Badge colorScheme="purple">Staking</Badge>             | [Staking: Key trends, takeaways, and predictions - NEPH Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo) |
 | <Badge colorScheme="purple">Staking</Badge>             | [Multi App Staking](<https://github.com/threshold-network/UX-User-Research/blob/main/Multi-App%20Staking%20(MAS)/iterative-user-study/MAS%20Iterative%20User%20Study.pdf>)         |
 | <Badge colorScheme="red">DAO</Badge>                    | [2022 DAO Research Update: What do DAO Builders Need?](https://blog.aragon.org/2022-dao-research-update/)                                                                          |
 | <Badge colorScheme="pink">DeFi</Badge>                  | [The state of Defi 2023](https://stateofdefi.org/)                                                                                                                                 |
@@ -37,7 +37,7 @@ This is a curated list of user research done in web3 that may help with design a
 | <Badge colorScheme="pink">DeFi</Badge>                  | [ConSensys: DeFi User Research Report 2022](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                            |
 | <Badge colorScheme="gray">Metaverse</Badge>             | [Metaverse: User Research Report](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                             |
 | <Badge colorScheme="gray">Metaverse</Badge>             | [Going on Safari: Researching Users in the Metaverse](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (video, 27 min)  |
-| <Badge colorScheme="blue">Ethereum.org UX stats</Badge> | [Usability and user satisfaction survey dashboard - Ethereum.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                  |
+| <Badge colorScheme="blue">Nephele.org UX stats</Badge> | [Usability and user satisfaction survey dashboard - Nephele.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                  |
 
 ## Design for web3 {#design-for-web3}
 
@@ -80,7 +80,7 @@ Get involved in professional community-driven organizations or join design group
 ## Design Systems {#design-systems}
 
 - [Optimism Design](https://www.figma.com/@oplabs) (Figma)
-- [Ethereum.org Design system](https://www.figma.com/@ethdotorg) (Figma)
+- [Nephele.org Design system](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, a design system by Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros Design System](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe Design System](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -88,4 +88,4 @@ Get involved in professional community-driven organizations or join design group
 - [Mirror Design System](https://degen-xyz.vercel.app/)
 
 **Articles and projects listed on this page are not official endorsements**, and are provided for informational purposes only.
-We add links to this page based on criteria in our [listing policy](/contributing/design/adding-design-resources). If you'd like us to add a project/article, edit this page on [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+We add links to this page based on criteria in our [listing policy](/contributing/design/adding-design-resources). If you'd like us to add a project/article, edit this page on [GitHub](https://github.com/Nephele/Nephele-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

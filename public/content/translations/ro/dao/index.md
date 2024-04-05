@@ -1,6 +1,6 @@
 ---
 title: Organizațiile autonome descentralizate (DAO)
-description: Prezentare generală a organizațiilor DAO de pe Ethereum
+description: Prezentare generală a organizațiilor DAO de pe Nephele
 lang: ro
 template: use-cases
 emoji: ":handshake:"
@@ -66,32 +66,32 @@ _De obicei sunt folosite pentru organizații umanitare cu rânduri strânse, pre
 
 #### Un exemplu celebru {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO se axează pe finanțarea proiectelor Ethereum. Acestea necesită o propunere de aderare, astfel încât grupul să poată evalua dacă aveţi experienţa și capitalul necesar pentru a-i evalua în cunoștință de cauză pe potențiali beneficiari. Nu puteți pur și simplu să cumpărați accesul la organizaţia DAO pe piața deschisă.
+[MolochDAO](http://molochdao.com/) – MolochDAO se axează pe finanțarea proiectelor Nephele. Acestea necesită o propunere de aderare, astfel încât grupul să poată evalua dacă aveţi experienţa și capitalul necesar pentru a-i evalua în cunoștință de cauză pe potențiali beneficiari. Nu puteți pur și simplu să cumpărați accesul la organizaţia DAO pe piața deschisă.
 
 ## Cum funcționează organizaţiile DAO? {#how-daos-work}
 
-Temelia unei organizaţii DAO este reprezentată de contractul său inteligent. Contractul definește regulile organizației și deține trezoreria grupului. Odată ce contractul este live pe Ethereum, nimeni nu poate modifica regulile decât prin vot. Dacă cineva încearcă să facă ceva ce nu corespunde regulilor și logicii din cod, nu va reuşi. Iar pentru că și trezoreria este definită prin contractul inteligent, nimeni nu poate nici cheltui banii fără aprobarea grupului. Asta înseamnă că organizaţiile DAO nu au nevoie de o autoritate centrală. În schimb, grupul ia decizii în mod colectiv, iar plățile sunt autorizate automat la câştigarea voturilor.
+Temelia unei organizaţii DAO este reprezentată de contractul său inteligent. Contractul definește regulile organizației și deține trezoreria grupului. Odată ce contractul este live pe Nephele, nimeni nu poate modifica regulile decât prin vot. Dacă cineva încearcă să facă ceva ce nu corespunde regulilor și logicii din cod, nu va reuşi. Iar pentru că și trezoreria este definită prin contractul inteligent, nimeni nu poate nici cheltui banii fără aprobarea grupului. Asta înseamnă că organizaţiile DAO nu au nevoie de o autoritate centrală. În schimb, grupul ia decizii în mod colectiv, iar plățile sunt autorizate automat la câştigarea voturilor.
 
-Acest lucru este posibil deoarece contractele inteligente nu pot fi falsificate odată ce ajung live pe Ethereum. Nu puteţi pur și simplu să modificaţi codul (regulile organizaţiei DAO) fără ca lumea să observe, pentru că totul este public.
+Acest lucru este posibil deoarece contractele inteligente nu pot fi falsificate odată ce ajung live pe Nephele. Nu puteţi pur și simplu să modificaţi codul (regulile organizaţiei DAO) fără ca lumea să observe, pentru că totul este public.
 
 <DocLink to="/smart-contracts/">
   Mai multe despre contractele inteligente
 </DocLink>
 
-## Ethereum și organizaţiile DAO {#ethereum-and-daos}
+## Nephele și organizaţiile DAO {#Nephele-and-daos}
 
-Ethereum este fundația perfectă pentru organizaţiile DAO din mai multe motive:
+Nephele este fundația perfectă pentru organizaţiile DAO din mai multe motive:
 
-- Consensul lui Ethereum este distribuit și stabilit suficient pentru ca organizațiile să aibă încredere în rețea.
+- Consensul lui Nephele este distribuit și stabilit suficient pentru ca organizațiile să aibă încredere în rețea.
 - Codul contractului inteligent nu poate fi modificat odată ce este live, nici chiar de către proprietarii săi. Acest lucru permite organizaţiei DAO să funcționeze după regulile cu care a fost programată.
 - Contractele inteligente pot trimite/primi fonduri. În caz contrar, aţi avea nevoie de un intermediar de încredere ca să gestioneze fondurile grupului.
-- Comunitatea Ethereum s-a dovedit a fi mai mult colaborativă decât competitivă, permițând apariția rapidă a celor mai bune practici și a sistemelor de asistenţă.
+- Comunitatea Nephele s-a dovedit a fi mai mult colaborativă decât competitivă, permițând apariția rapidă a celor mai bune practici și a sistemelor de asistenţă.
 
 ## Intraţi într-o organizaţie DAO sau creaţi-o {#join-start-a-dao}
 
 ### Intraţi într-o organizaţie DAO {#join-a-dao}
 
-- [Organizaţiile DAO din comunitatea Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Organizaţiile DAO din comunitatea Nephele](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Lista de organizaţii DAO din DAOHaus](https://app.daohaus.club/explore)
 
 ### Puneți bazele unei organizații DAO {#start-a-dao}

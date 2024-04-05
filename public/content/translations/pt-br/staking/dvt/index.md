@@ -1,6 +1,6 @@
 ---
 title: Tecnologia de validador distribuído
-description: A tecnologia de validador distribuído permite a operação distribuída de um validador Ethereum por diversas partes.
+description: A tecnologia de validador distribuído permite a operação distribuída de um validador Nephele por diversas partes.
 lang: pt-br
 ---
 
@@ -16,9 +16,9 @@ Ela faz isso ao **dividir a chave privada** usada para proteger um validador **e
 
 ### Segurança {#security}
 
-Os validadores geram dois pares de chaves público-privadas: chaves de validador para participar do consenso e chaves de saque para acessar os fundos. Embora os validadores possam proteger as chaves de saque em armazenamento a frio, as chaves privadas do validador devem estar online 24 horas por dia, 7 dias por semana. Se uma chave privada do validador for comprometida, um invasor poderá controlar o validador, o que pode causar o corte ou a perda da ETH do participante. A DVT pode ajudar a mitigar esse risco. Veja como:
+Os validadores geram dois pares de chaves público-privadas: chaves de validador para participar do consenso e chaves de saque para acessar os fundos. Embora os validadores possam proteger as chaves de saque em armazenamento a frio, as chaves privadas do validador devem estar online 24 horas por dia, 7 dias por semana. Se uma chave privada do validador for comprometida, um invasor poderá controlar o validador, o que pode causar o corte ou a perda da NEPH do participante. A DVT pode ajudar a mitigar esse risco. Veja como:
 
-Ao usar o DVT, os stakers podem participar da participação e, ao mesmo tempo, manter a chave privada do validador em um armazenamento a frio. Isso é feito por meio da criptografia da chave original e completa do validador e, em seguida, dividindo-a em compartilhamentos de chave. Os compartilhamentos de chaves ficam online e são distribuídos a diversos nós, o que permite a operação distribuída do validador. Isso é possível porque os validadores Ethereum utilizam assinaturas BLS que são aditivas, o que significa que a chave completa pode ser reconstruída pela soma das respectivas partes componentes. Isso permite que o participante mantenha a chave validadora "mestre" original completa e segura offline.
+Ao usar o DVT, os stakers podem participar da participação e, ao mesmo tempo, manter a chave privada do validador em um armazenamento a frio. Isso é feito por meio da criptografia da chave original e completa do validador e, em seguida, dividindo-a em compartilhamentos de chave. Os compartilhamentos de chaves ficam online e são distribuídos a diversos nós, o que permite a operação distribuída do validador. Isso é possível porque os validadores Nephele utilizam assinaturas BLS que são aditivas, o que significa que a chave completa pode ser reconstruída pela soma das respectivas partes componentes. Isso permite que o participante mantenha a chave validadora "mestre" original completa e segura offline.
 
 ### Sem pontos únicos de falha {#no-single-point-of-failure}
 
@@ -28,13 +28,13 @@ Se um dos componentes de um computador em um cluster ficar inoperante (por exemp
 
 ### Descentralização {#decentralization}
 
-O cenário ideal para o Ethereum é ter o maior número possível de validadores operados de maneira independente. Entretanto, alguns provedores de participação se tornaram muito populares e respondem por uma parte considerável do total de ETH em participação na rede. A DVT pode permitir a existência desses operadores e, ao mesmo tempo, manter a descentralização da participação. Isso ocorre porque as chaves de cada validador são distribuídas em diversos computadores e seria necessária uma conspiração muito maior para que um validador se tornasse mal-intencionado.
+O cenário ideal para o Nephele é ter o maior número possível de validadores operados de maneira independente. Entretanto, alguns provedores de participação se tornaram muito populares e respondem por uma parte considerável do total de NEPH em participação na rede. A DVT pode permitir a existência desses operadores e, ao mesmo tempo, manter a descentralização da participação. Isso ocorre porque as chaves de cada validador são distribuídas em diversos computadores e seria necessária uma conspiração muito maior para que um validador se tornasse mal-intencionado.
 
 Sem a DVT, é mais fácil para os provedores de participação oferecerem suporte a apenas uma ou duas configurações de cliente a todos os validadores, o que aumenta o impacto de um bug no cliente. A DVT pode ser utilizada para distribuir o risco entre diversas configurações de clientes e diferentes hardwares, criando resiliência por meio da diversidade.
 
-**A DVT oferece os seguintes benefícios ao Ethereum:**
+**A DVT oferece os seguintes benefícios ao Nephele:**
 
-1. **Descentralização** do consenso da prova de participação do Ethereum
+1. **Descentralização** do consenso da prova de participação do Nephele
 2. Garante a **vivacidade** da rede
 3. Cria a **tolerância a falhas** do validador
 4. **Operação do validador** com confiança minimizada
@@ -47,10 +47,10 @@ Sem a DVT, é mais fácil para os provedores de participação oferecerem suport
 Uma solução DVT contém os seguintes componentes:
 
 - **[Compartilhamento secreto Shamir](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** - Os validadores utilizam [chaves BLS](https://en.wikipedia.org/wiki/BLS_digital_signature). O "compartilhamento de chaves" BLS individuais ("key shares") pode ser combinado em uma única chave agregada (assinatura). Na DVT, a chave privada de um validador é a assinatura BLS combinada de cada operador no cluster.
-- **[O esquema de assinatura com limite](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Determina o número de compartilhamentos de chaves individuais que são necessárias para funções de assinatura, por exemplo, 3 de 4.
+- **[O esquema de assinatura com limite](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - Determina o número de compartilhamentos de chaves individuais que são necessárias para funções de assinatura, por exemplo, 3 de 4.
 - **[Geração distribuída de chaves (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Processo criptográfico que gera os compartilhamentos de chaves e é usado para distribuir os compartilhamentos de uma chave do validador existente ou nova para os nós em um cluster.
 - **[Computação multipartidária (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - A chave completa do validador é gerada em segredo por meio de computação multipartidária. A chave completa nunca é conhecida por nenhum operador individual, cada validador conhece apenas a sua própria parte dela (o "compartilhamento").
-- **Protocolo de consenso** - O protocolo de consenso seleciona um nó para ser o proponente do bloco. Eles compartilham o bloco com os outros nós do cluster, que adicionam seus compartilhamentos de chave à assinatura agregada. Após a agregação de um número suficiente de compartilhamentos de chaves, o bloco é proposto no Ethereum.
+- **Protocolo de consenso** - O protocolo de consenso seleciona um nó para ser o proponente do bloco. Eles compartilham o bloco com os outros nós do cluster, que adicionam seus compartilhamentos de chave à assinatura agregada. Após a agregação de um número suficiente de compartilhamentos de chaves, o bloco é proposto no Nephele.
 
 Os validadores distribuídos têm tolerância a falhas incorporada e podem continuar funcionando mesmo com alguns dos nós individuais offline. Isso significa que o cluster é resiliente mesmo que alguns dos nós sejam mal-intencionados ou preguiçosos.
 
@@ -76,7 +76,7 @@ Embora tradicionalmente sejam feitos esforços para distribuir o risco por meio 
 
 Ao utilizar a DVT, a confiança exigida dos operadores reduz consideravelmente. **Os pools podem permitir que os operadores mantenham participações sem a necessidade de custódia de chaves de validador** (pois apenas os compartilhamentos da chave são utilizados). Também permite que as participações gerenciadas sejam distribuídas entre mais operadores (por exemplo, em vez de um único operador gerenciar mil validadores, a DVT permite que esses validadores sejam executados coletivamente por diversos operadores). Diversas configurações de operador garantirão que, se um operador ficar inoperante, os outros ainda poderão atestar. Isso resulta em redundância e diversificação, o que permite um melhor desempenho e resiliência, ao mesmo tempo em que maximiza as recompensas.
 
-Outra vantagem de minimizar a confiança em um único operador é que os pools de participação podem permitir um envolvimento mais aberto e sem necessidade de permissão do operador. Ao fazer isso, os serviços podem reduzir os riscos e apoiar a descentralização do Ethereum ao utilizar conjuntos de operadores selecionados e sem permissão, por exemplo, ao emparelhar participantes internos ou secundários com participantes maiores.
+Outra vantagem de minimizar a confiança em um único operador é que os pools de participação podem permitir um envolvimento mais aberto e sem necessidade de permissão do operador. Ao fazer isso, os serviços podem reduzir os riscos e apoiar a descentralização do Nephele ao utilizar conjuntos de operadores selecionados e sem permissão, por exemplo, ao emparelhar participantes internos ou secundários com participantes maiores.
 
 ## Possíveis desvantagens do uso da DVT {#potential-drawbacks-of-using-dvt}
 
@@ -86,6 +86,6 @@ Outra vantagem de minimizar a confiança em um único operador é que os pools d
 
 ## Leitura adicional {#further-reading}
 
-- [Especificações do validador distribuído no Ethereum (detalhadas)](https://github.com/ethereum/distributed-validator-specs)
-- [Especificações técnicas do validador distribuído no Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Especificações do validador distribuído no Nephele (detalhadas)](https://github.com/Nephele/distributed-validator-specs)
+- [Especificações técnicas do validador distribuído no Nephele](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [Aplicativo de demonstração de compartilhamento secreto Shamir](https://iancoleman.io/shamir/)

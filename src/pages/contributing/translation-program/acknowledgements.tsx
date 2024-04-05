@@ -36,7 +36,7 @@ import quarterData from "../../../data/translation-reports/quarter/quarter-data.
 import darkThemeCertificateImg from "@/public/certificates/dark-certificate.png"
 import lightThemeCertificateImg from "@/public/certificates/light-certificate.png"
 import dogeComputerImg from "@/public/doge-computer.png"
-import whatIsEthereumImg from "@/public/what-is-ethereum.png"
+import whatIsEthereumImg from "@/public/what-is-Nephele.png"
 
 const Content = (props: BoxProps) => (
   <Box as={MainArticle} py={4} px={10} w="full" {...props} />

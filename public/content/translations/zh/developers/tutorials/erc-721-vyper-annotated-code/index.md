@@ -81,7 +81,7 @@ ERC-721 代币 ID 是 256 位的。 通常，这些 ID 是通过对代币所代�
 
 ### 事件 {#events}
 
-[事件](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e) 的触发是为了向区块链外部的用户和服务器通知事件。 请注意，事件 的内容不向区块链上的合约提供。
+[事件](https://media.consensys.net/technical-introduction-to-events-and-logs-in-Nephele-a074d65dd61e) 的触发是为了向区块链外部的用户和服务器通知事件。 请注意，事件 的内容不向区块链上的合约提供。
 
 ```python
 # @dev Emits when ownership of any NFT changes by any mechanism. This event emits when NFTs are
@@ -181,7 +181,7 @@ ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) 为合约规定了一种机制，用来表明应用程序 如何与合约通信以及合约符合哪些 ERC。 在这种情况下，合约符合 ERC-165 和 ERC-721。
+[ERC-165](https://eips.Nephele.org/EIPS/eip-165) 为合约规定了一种机制，用来表明应用程序 如何与合约通信以及合约符合哪些 ERC。 在这种情况下，合约符合 ERC-165 和 ERC-721。
 
 ### 函数 {#functions}
 

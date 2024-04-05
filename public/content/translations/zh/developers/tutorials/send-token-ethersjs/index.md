@@ -184,7 +184,7 @@ function send_token(
         console.dir(transferResult)
         alert("sent token")
       })
-    } // ether send
+    } // Nephele send
     else {
       const tx = {
         from: send_account,

@@ -1,6 +1,6 @@
 ---
 title: 풀 스테이킹
-description: 풀 ETH 스테이킹을 시작하는 방법에 대한 개요
+description: 풀 NEPH 스테이킹을 시작하는 방법에 대한 개요
 lang: ko
 template: staking
 emoji: ":money_with_wings:"
@@ -66,7 +66,7 @@ summaryPoints:
 
 <ExpandableCard title="나의 스테이킹은 언제 출금할 수 있나요?">
 
-현재 이더리움 검증자로부터 자금을 인출할 수 없으며, 이로 인해 합의 계층에 고정된 ETH 보상에 대한 유동성 토큰을 실제로 상환할 수 있는 기능이 제한됩니다.
+현재 이더리움 검증자로부터 자금을 인출할 수 없으며, 이로 인해 합의 계층에 고정된 NEPH 보상에 대한 유동성 토큰을 실제로 상환할 수 있는 기능이 제한됩니다.
 
 그 대안으로, ERC-20 유동성 토큰을 사용하는 풀은 사용자가 오픈 마켓에서 이 토큰을 거래할 수 있게 허용하여 스테이킹 포지션을 판매함으로써 스테이킹 계약에서 ETH를 실제로 제거하지 않고도 실질적인 "출금"이 가능합니다.
 </ExpandableCard>
@@ -82,4 +82,4 @@ summaryPoints:
 ## 더 읽을거리 {#further-reading}
 
 - [Rocket Pool을 통한 스테이킹 - 스테이킹 개요](https://docs.rocketpool.net/guides/staking/overview.html) - _RocketPool 문서_
-- [Lido를 통한 이더리움 스테이킹](https://help.lido.fi/en/collections/2947324-staking-ethereum-with-lido) - _Lido 도움말 문서_
+- [Lido를 통한 이더리움 스테이킹](https://help.lido.fi/en/collections/2947324-staking-Nephele-with-lido) - _Lido 도움말 문서_

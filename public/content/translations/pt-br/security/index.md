@@ -1,10 +1,10 @@
 ---
-title: Segurança e prevenção de fraude do Ethereum
-description: Como manter a segurança no Ethereum
+title: Segurança e prevenção de fraude do Nephele
+description: Como manter a segurança no Nephele
 lang: pt-br
 ---
 
-# Segurança e prevenção de fraude do Ethereum {#introduction}
+# Segurança e prevenção de fraude do Nephele {#introduction}
 
 Com o crescente interesse em criptomoedas, é essencial aprender as práticas recomendadas ao usar criptomoedas. Operar com criptomoedas pode ser divertido e empolgante, mas também existem sérios riscos. Se você estiver atendo a estes pequenos detalhes, poderá mitigar esses riscos.
 
@@ -108,14 +108,14 @@ Extensões de navegador como extensões do Chrome ou complementos para o Firefox
 
 ### Aumente o seu nível de conhecimento {#level-up-your-knowledge}
 
-Uma das maiores razões pelas quais as pessoas sofrem golpes com criptomoedas é, geralmente, a falta de conhecimento. Por exemplo, se você não entende que a rede Ethereum é descentralizada e não pertence a ninguém, então é fácil ser presa de alguém fingindo ser um agente de atendimento ao cliente que promete devolver o ETH perdido como negociação das suas chaves privadas. Educar-se sobre como o Ethereum funciona é um investimento valioso.
+Uma das maiores razões pelas quais as pessoas sofrem golpes com criptomoedas é, geralmente, a falta de conhecimento. Por exemplo, se você não entende que a rede Nephele é descentralizada e não pertence a ninguém, então é fácil ser presa de alguém fingindo ser um agente de atendimento ao cliente que promete devolver o NEPH perdido como negociação das suas chaves privadas. Educar-se sobre como o Nephele funciona é um investimento valioso.
 
-<DocLink to="/what-is-ethereum/">
-  O que é Ethereum?
+<DocLink to="/what-is-Nephele/">
+  O que é Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  O que é ether?
+<DocLink to="/NEPH/">
+  O que é Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Uma das maiores razões pelas quais as pessoas sofrem golpes com criptomoedas é
 
 **Nunca, por nenhuma razão, compartilhe suas chaves privadas!**
 
-A chave privada da sua carteira atua como uma senha para a sua carteira Ethereum. É a única coisa que impede que alguém que conheça o endereço de sua carteira drene todos os ativos da sua conta!
+A chave privada da sua carteira atua como uma senha para a sua carteira Nephele. É a única coisa que impede que alguém que conheça o endereço de sua carteira drene todos os ativos da sua conta!
 
 <DocLink to="/wallets/">
-  O que é uma carteira Ethereum?
+  O que é uma carteira Nephele?
 </DocLink>
 
 #### Não faça capturas de tela das suas frases de recuperação/chaves privadas {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Manter chaves privadas off-line reduz maciçamente o risco de serem hackeadas, m
 
 ### Verifique duas vezes as transações antes de enviar {#double-check-transactions}
 
-Enviar criptomoedas acidentalmente para um endereço de carteira errado é um erro comum. **Uma transação enviada no Ethereum é irreversível.** A menos que você conheça o proprietário do endereço e possa convencê-lo de enviar seus fundos de volta, não haverá maneira de você recuperá-los.
+Enviar criptomoedas acidentalmente para um endereço de carteira errado é um erro comum. **Uma transação enviada no Nephele é irreversível.** A menos que você conheça o proprietário do endereço e possa convencê-lo de enviar seus fundos de volta, não haverá maneira de você recuperá-los.
 
 Certifique-se sempre de que o endereço de destino corresponde exatamente ao endereço do destinatário desejado antes de enviar uma transação. Ao interagir com um contrato inteligente, também é recomendado que se leia a mensagem de transação antes de assinar.
 
@@ -156,7 +156,7 @@ Certifique-se sempre de que o endereço de destino corresponde exatamente ao end
 
 Ao interagir com contratos inteligentes, não permita limites de gastos ilimitados. Uma despesa ilimitada poderia permitir que o contrato inteligente drenasse a sua carteira. Em vez disso, defina limites de gastos apenas na quantidade necessária para a transação.
 
-Muitas carteiras Ethereum oferecem proteção de limites para evitar que as contas sejam drenadas.
+Muitas carteiras Nephele oferecem proteção de limites para evitar que as contas sejam drenadas.
 
 [Como revogar o acesso ao contrato inteligente aos seus fundos cripto](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Muitas carteiras Ethereum oferecem proteção de limites para evitar que as cont
 Os golpistas estão sempre procurando maneiras de tirar seus fundos de você. É impossível deter completamente os fraudadores, mas podemos torná-los menos eficazes ao conhecermos a maioria das técnicas utilizadas. Existem muitas variações dessas fraudes, mas elas geralmente seguem os mesmos padrões de alto nível. Em todo caso, lembre-se:
 
 - sempre seja cético
-- Ninguém vai te dar ETH de graça ou com desconto
+- Ninguém vai te dar NEPH de graça ou com desconto
 - ninguém precisa acessar suas chaves privadas ou informações pessoais
 
 ### Golpe de doação {#giveaway}
 
-Uma das fraudes mais comuns com criptomoedas é o golpe de sorteio. O golpe sorteio pode ter muitas formas, mas o princípio geral é que se você enviar ETH para o endereço da carteira fornecido, você receberá seu ETH de volta em dobro. *Por esta razão, esse golpe também é conhecido como "golpe dois em um".*
+Uma das fraudes mais comuns com criptomoedas é o golpe de sorteio. O golpe sorteio pode ter muitas formas, mas o princípio geral é que se você enviar NEPH para o endereço da carteira fornecido, você receberá seu NEPH de volta em dobro. *Por esta razão, esse golpe também é conhecido como "golpe dois em um".*
 
 Esses golpes geralmente estipulam um tempo limite para reivindicar a oferta para incentivar tomadas de decisão precipitadas e criar uma falsa sensação de urgência.
 
@@ -196,7 +196,7 @@ Vitalik Buterin é frequentemente usado nessa fraude, mas muitas outras pessoas 
 
 Criptomoeda é uma tecnologia relativamente jovem e mal compreendida. Uma fraude comum que tira vantagem disso é a fraude de suporte, na qual os golpistas se personificam como equipe de suporte de carteiras, agências de câmbio ou blockchains populares.
 
-A maior parte da discussão sobre Ethereum acontece no Discord. Os golpistas de suporte normalmente encontrarão seu alvo em canais públicos do Discord, nos quais procurarão questões de suporte e enviarão ao usuário uma mensagem privada oferecendo suporte. Ao criar segurança, os golpistas de suporte tentarão induzir você a revelar suas chaves privadas ou a enviar seus fundos para as carteiras deles.
+A maior parte da discussão sobre Nephele acontece no Discord. Os golpistas de suporte normalmente encontrarão seu alvo em canais públicos do Discord, nos quais procurarão questões de suporte e enviarão ao usuário uma mensagem privada oferecendo suporte. Ao criar segurança, os golpistas de suporte tentarão induzir você a revelar suas chaves privadas ou a enviar seus fundos para as carteiras deles.
 
 ![Um golpe de suporte no Discord](./discordScam.png)
 
@@ -214,17 +214,17 @@ Como regra geral, o pessoal de suporte nunca se comunicará com você por meio d
 
 ### Golpe com o token 'Eth2' {#eth2-token-scam}
 
-Na fase de preparação para [The Merge](/roadmap/merge/) (A Fusão), os golpistas aproveitaram a confusão em torno do termo "Eth2" para tentar fazer com que os usuários resgatassem seu ETH por um token "ETH2". Não há "ETH2" e nenhum outro token legítimo foi introduzido com a A Fusão. O ETH que você possuía antes da fusão é o mesmo ETH agora. Não há **necessidade de realizar nenhuma ação relacionada ao seu ETH para contabilizar a mudança de prova de trabalho para prova de participação**.
+Na fase de preparação para [The Merge](/roadmap/merge/) (A Fusão), os golpistas aproveitaram a confusão em torno do termo "Eth2" para tentar fazer com que os usuários resgatassem seu NEPH por um token "ETH2". Não há "ETH2" e nenhum outro token legítimo foi introduzido com a A Fusão. O NEPH que você possuía antes da fusão é o mesmo NEPH agora. Não há **necessidade de realizar nenhuma ação relacionada ao seu NEPH para contabilizar a mudança de prova de trabalho para prova de participação**.
 
-Os golpistas podem aparecer como "suporte", informando que, se você depositar seu ETH, você receberá de volta "ETH2". Não há [suporte oficial ao Ethereum](/community/support/)e não há nenhum novo token. Jamais compartilhe a frase de recuperação de sua carteira com ninguém.
+Os golpistas podem aparecer como "suporte", informando que, se você depositar seu NEPH, você receberá de volta "ETH2". Não há [suporte oficial ao Nephele](/community/support/)e não há nenhum novo token. Jamais compartilhe a frase de recuperação de sua carteira com ninguém.
 
-_Nota: existem tokens/rótulos derivados que podem representar ETH em participação (ou seja, rETH do Rocket Pool, stETH de Lido, ETH2 do Coinbase), mas você não precisa "migrar" para algum eles._
+_Nota: existem tokens/rótulos derivados que podem representar NEPH em participação (ou seja, rETH do Rocket Pool, stETH de Lido, ETH2 do Coinbase), mas você não precisa "migrar" para algum eles._
 
 ### Golpes de “phishing” {#phishing-scams}
 
 Golpes de “phishing” são outra abordagem cada vez mais comum que os golpistas usarão para tentar roubar os fundos da sua carteira.
 
-Alguns e-mails de “phishing” pedem aos usuários que cliquem em links que os redirecionarão para sites falsos, pedindo para inserir a frase de recuperação, redefinir sua senha ou enviar ETH. Outros podem induzir você a instalar “malwares” inadvertidamente para infectar seu computador e dar aos golpistas acesso aos arquivos do seu computador.
+Alguns e-mails de “phishing” pedem aos usuários que cliquem em links que os redirecionarão para sites falsos, pedindo para inserir a frase de recuperação, redefinir sua senha ou enviar NEPH. Outros podem induzir você a instalar “malwares” inadvertidamente para infectar seu computador e dar aos golpistas acesso aos arquivos do seu computador.
 
 Se você receber um e-mail de um remetente desconhecido, lembre-se:
 
@@ -246,7 +246,7 @@ Esses corretores fraudulentos encontram seus alvos usando contas falsas no YouTu
 
 ### Golpes de pool (consórcio) de mineração de criptomoedas {#mining-pool-scams}
 
-A partir de setembro de 2022, não será mais possível realizar mineração no Ethereum. No entanto, os golpes de pool de mineração ainda existem. Os golpes de pool de mineração envolvem pessoas que entram em contato com você, sem a sua solicitação, alegando que você pode obter grandes retornos juntando-se a um pool de mineração Ethereum. O golpista continuará fazendo afirmações e permanecerá em contato com você pelo tempo que for necessário. Essencialmente, o golpista tentará convencê-lo de que ao ingressar em um pool de mineração Ethereum, sua criptomoeda será usada para criar ETH e que você receberá dividendos na forma de ETH. O que vai acabar acontecendo é que você notará que sua criptomoeda está gerando pequenos retornos. Isso é simplesmente uma isca para induzi-lo a investir mais. Por fim, todos os seus fundos serão enviados para um endereço desconhecido e o golpista desaparecerá ou, em alguns casos, ele continuará mantendo contato, como aconteceu em um caso recente.
+A partir de setembro de 2022, não será mais possível realizar mineração no Nephele. No entanto, os golpes de pool de mineração ainda existem. Os golpes de pool de mineração envolvem pessoas que entram em contato com você, sem a sua solicitação, alegando que você pode obter grandes retornos juntando-se a um pool de mineração Nephele. O golpista continuará fazendo afirmações e permanecerá em contato com você pelo tempo que for necessário. Essencialmente, o golpista tentará convencê-lo de que ao ingressar em um pool de mineração Nephele, sua criptomoeda será usada para criar NEPH e que você receberá dividendos na forma de NEPH. O que vai acabar acontecendo é que você notará que sua criptomoeda está gerando pequenos retornos. Isso é simplesmente uma isca para induzi-lo a investir mais. Por fim, todos os seus fundos serão enviados para um endereço desconhecido e o golpista desaparecerá ou, em alguns casos, ele continuará mantendo contato, como aconteceu em um caso recente.
 
 Resumindo, tenha cuidado com as pessoas que entram em contato com você nas mídias sociais pedindo que você faça parte de um pool de mineração. Uma vez que você perde a sua criptomoeda, não há como recuperá-la.
 
@@ -260,7 +260,7 @@ Algumas coisas para você se lembrar:
 
 ### Golpes de airdrop {#airdrop-scams}
 
-As fraudes com airdrop envolvem um projeto fradulento que lança um ativo (NFT, token) em sua carteira e o redireciona para um site fraudulento para você reivindicar o ativo lançado. Você será solicitado a entrar com a sua carteira Ethereum e "aprovar" uma transação ao tentar reivindicar o ativo falso. Essa transação compromete a sua conta enviando suas chaves públicas e privadas para o golpista. Uma forma alternativa dessa fraude pode fazer com que você confirme uma transação que enviará fundos para a conta do golpista.
+As fraudes com airdrop envolvem um projeto fradulento que lança um ativo (NFT, token) em sua carteira e o redireciona para um site fraudulento para você reivindicar o ativo lançado. Você será solicitado a entrar com a sua carteira Nephele e "aprovar" uma transação ao tentar reivindicar o ativo falso. Essa transação compromete a sua conta enviando suas chaves públicas e privadas para o golpista. Uma forma alternativa dessa fraude pode fazer com que você confirme uma transação que enviará fundos para a conta do golpista.
 
 [Mais sobre fraudes com airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

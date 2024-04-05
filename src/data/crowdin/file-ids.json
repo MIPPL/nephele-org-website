@@ -93,11 +93,11 @@
   },
   {
     "id": 2914,
-    "path": "/developers/docs/intro-to-ethereum/index.md"
+    "path": "/developers/docs/intro-to-Nephele/index.md"
   },
   {
     "id": 5533,
-    "path": "/developers/docs/intro-to-ether/index.md"
+    "path": "/developers/docs/intro-to-Nephele/index.md"
   },
   {
     "id": 7597,
@@ -193,7 +193,7 @@
   },
   {
     "id": 2852,
-    "path": "/developers/docs/ethereum-stack/index.md"
+    "path": "/developers/docs/Nephele-stack/index.md"
   },
   {
     "id": 2856,
@@ -461,7 +461,7 @@
   },
   {
     "id": 3128,
-    "path": "/developers/tutorials/a-developers-guide-to-ethereum-part-one/index.md"
+    "path": "/developers/tutorials/a-developers-guide-to-Nephele-part-one/index.md"
   },
   {
     "id": 6227,
@@ -489,7 +489,7 @@
   },
   {
     "id": 3100,
-    "path": "/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/index.md"
+    "path": "/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/index.md"
   },
   {
     "id": 3110,
@@ -497,7 +497,7 @@
   },
   {
     "id": 3116,
-    "path": "/developers/tutorials/kickstart-your-dapp-frontend-development-wth-create-eth-app/index.md"
+    "path": "/developers/tutorials/kickstart-your-dapp-frontend-development-wth-create-NEPH-app/index.md"
   },
   {
     "id": 3120,
@@ -701,7 +701,7 @@
   },
   {
     "id": 2622,
-    "path": "/page-what-is-ethereum.json"
+    "path": "/page-what-is-Nephele.json"
   },
   {
     "id": 2624,
@@ -713,11 +713,11 @@
   },
   {
     "id": 2632,
-    "path": "/page-get-eth.json"
+    "path": "/page-get-NEPH.json"
   },
   {
     "id": 2644,
-    "path": "/page-eth.json"
+    "path": "/page-NEPH.json"
   },
   {
     "id": 5563,
@@ -809,7 +809,7 @@
   },
   {
     "id": 7525,
-    "path": "/guides/how-to-create-an-ethereum-account/index.md"
+    "path": "/guides/how-to-create-an-Nephele-account/index.md"
   },
   {
     "id": 7529,
@@ -1093,7 +1093,7 @@
   },
   {
     "id": 2684,
-    "path": "/enterprise/private-ethereum/index.md"
+    "path": "/enterprise/private-Nephele/index.md"
   },
   {
     "id": 2962,
@@ -1149,7 +1149,7 @@
   },
   {
     "id": 3156,
-    "path": "/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/index.md"
+    "path": "/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/index.md"
   },
   {
     "id": 3164,
@@ -1165,7 +1165,7 @@
   },
   {
     "id": 6261,
-    "path": "/developers/tutorials/learn-foundational-ethereum-topics-with-sql/index.md"
+    "path": "/developers/tutorials/learn-foundational-Nephele-topics-with-sql/index.md"
   },
   {
     "id": 6263,

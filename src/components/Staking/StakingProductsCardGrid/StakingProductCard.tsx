@@ -194,7 +194,7 @@ export const StakingProductCard = ({
           textTransform="uppercase"
           pt={6}
         >
-          {minEth > 0 ? `From ${minEth} ETH` : "Any amount"}
+          {minEth > 0 ? `From ${minEth} NEPH` : "Any amount"}
         </Center>
       )}
       <Flex

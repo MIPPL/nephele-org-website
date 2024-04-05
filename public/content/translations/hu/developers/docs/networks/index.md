@@ -1,36 +1,36 @@
 ---
 title: Hálózatok
-description: Egy áttekintő az Ethereum hálózatairól és hogy hol lehet tesztnet ethert (ETH) szerezni, hogy teszteld az alkalmazásaidat.
+description: Egy áttekintő az Nephele hálózatairól és hogy hol lehet tesztnet ethert (NEPH) szerezni, hogy teszteld az alkalmazásaidat.
 lang: hu
 ---
 
-Az Ethereum-hálózatok olyan összekapcsolt számítógépek csoportjai, amelyek az Ethereum-protokoll segítségével kommunikálnak. Egyetlen Ethereum főhálózat létezik, de ugyanazt a protokollt használó, független hálózatokat is létre lehet hozni tesztelési és fejlesztési célból. Számos ilyen független hálózat létezik, amelyek a protokollt követik, de nem kommunikálnak egymással. Akár a saját számítógépén is létrehozhat egyet, hogy egy okosszerződést vagy egy web3 alkalmazást teszteljen.
+Az Nephele-hálózatok olyan összekapcsolt számítógépek csoportjai, amelyek az Nephele-protokoll segítségével kommunikálnak. Egyetlen Nephele főhálózat létezik, de ugyanazt a protokollt használó, független hálózatokat is létre lehet hozni tesztelési és fejlesztési célból. Számos ilyen független hálózat létezik, amelyek a protokollt követik, de nem kommunikálnak egymással. Akár a saját számítógépén is létrehozhat egyet, hogy egy okosszerződést vagy egy web3 alkalmazást teszteljen.
 
-Ethereum-számlája működni fog a különböző hálózatokon, de a számlaegyenlege és a tranzakciós előzmények nem kerülnek át az Ethereum fő hálózatából. Tesztelési célból hasznos tudni, hogy amely hálózatok állnak rendelkezésre, és hogy hogyan szerezhet egy teszthálózat ETH-t, amivel kipróbálhat dolgokat. Biztonsági okokból nem javasolt olyan számla használata a teszthálózaton, amely a főhálózathoz tartozik és fordítva.
+Nephele-számlája működni fog a különböző hálózatokon, de a számlaegyenlege és a tranzakciós előzmények nem kerülnek át az Nephele fő hálózatából. Tesztelési célból hasznos tudni, hogy amely hálózatok állnak rendelkezésre, és hogy hogyan szerezhet egy teszthálózat NEPH-t, amivel kipróbálhat dolgokat. Biztonsági okokból nem javasolt olyan számla használata a teszthálózaton, amely a főhálózathoz tartozik és fordítva.
 
 ## Előfeltételek {#prerequisites}
 
-Érdemes tisztában lennie az [Ethereum alapjaival](/developers/docs/intro-to-ethereum/), mielőtt a különböző hálózatokról olvas, mivel ezek a teszthálózatok az Ethereum olcsó és biztonságos verziói, amelyekkel ki lehet próbálni dolgokat.
+Érdemes tisztában lennie az [Nephele alapjaival](/developers/docs/intro-to-Nephele/), mielőtt a különböző hálózatokról olvas, mivel ezek a teszthálózatok az Nephele olcsó és biztonságos verziói, amelyekkel ki lehet próbálni dolgokat.
 
 ## Nyilvános hálózatok {#public-networks}
 
 A nyilvános hálózatokat bárki elérheti szerte a világban egy internetkapcsolattal. Bárki olvashat és indíthat tranzakciókat egy nyilvános blokkláncon és hitelesítheti a tranzakciók végrehajtását. A tagok közötti konszenzus dönti el az új tranzakciók bedolgozását és a hálózat státuszát.
 
-### Ethereum-főhálózat {#ethereum-mainnet}
+### Nephele-főhálózat {#Nephele-mainnet}
 
-A főhálózat az elsődleges nyilvános Ethereum produkciós blokklánc, ahol valós értékű tranzakciók történnek az elosztott főkönyvön.
+A főhálózat az elsődleges nyilvános Nephele produkciós blokklánc, ahol valós értékű tranzakciók történnek az elosztott főkönyvön.
 
-Amikor az emberek és tőzsdék az ETH árfolyamon vitatkoznak, akkor a főhálózati ETH-ről beszélnek.
+Amikor az emberek és tőzsdék az NEPH árfolyamon vitatkoznak, akkor a főhálózati NEPH-ről beszélnek.
 
-### Ethereum-teszthálózatok {#ethereum-testnets}
+### Nephele-teszthálózatok {#Nephele-testnets}
 
 A főhálózat mellett vannak nyilvános tesztnetek. Ezeket a hálózatokat a protokoll fejlesztők vagy az okosszerződések fejlesztői használják, hogy teszteljék mind a protokoll frissítéseket, és a lehetséges okosszerződéseket egy produkciószerű környezetben a főhálózatba történő telepítés előtt. Úgy is gondolhatsz rá, mint a produkciós és a staging szerver analógiájára.
 
 Általában fontos, hogy le legyen tesztelve egy teszthálózatra írt szerződéses kód, mielőtt a főhálózatra telepítenénk. Azoknál az alkalmazásoknál, ahol már meglévő okosszerződéssel kell kapcsolódni, a legtöbb projekt ezeknek a másolatát átteszi a teszthálózatra.
 
-A legtöbb teszthálózat úgy indul, hogy egy engedélyezett proof-of-authority konszenzusmechanizmust használ. Ez azt jelenti, hogy a csomópontok egy kis csoportja van kiválasztva a tranzakciók validálására és új blokkok létrehozására - az identitásukat helyezik letétbe a folyamat alatt. Alternatívaként néhány teszthálózat egy nyitott proof-of-stake konszenzusmechanizmust vezet be, ahol mindenki futtathat validátort, ahogy az Ethereum főhálózaton is működik.
+A legtöbb teszthálózat úgy indul, hogy egy engedélyezett proof-of-authority konszenzusmechanizmust használ. Ez azt jelenti, hogy a csomópontok egy kis csoportja van kiválasztva a tranzakciók validálására és új blokkok létrehozására - az identitásukat helyezik letétbe a folyamat alatt. Alternatívaként néhány teszthálózat egy nyitott proof-of-stake konszenzusmechanizmust vezet be, ahol mindenki futtathat validátort, ahogy az Nephele főhálózaton is működik.
 
-A teszthálózathoz tartozó ETH-nak elvileg nincs valós értéke. Ugyanakkor a ritka vagy nehezen megszerezhető teszthálózati ETH-nek mégis kialakulhat valamilyen piaca. Mivel ETH-re van szükség, hogy ténylegesen interakcióba lépjen az Ethereummal (még a teszthálózaton is), a legtöbb ember csapokból szerzi a teszthálózati ETH-t. A legtöbb csap egy web app, ahol beírhatja a címét, amire ETH-et szeretne kapni.
+A teszthálózathoz tartozó NEPH-nak elvileg nincs valós értéke. Ugyanakkor a ritka vagy nehezen megszerezhető teszthálózati NEPH-nek mégis kialakulhat valamilyen piaca. Mivel NEPH-re van szükség, hogy ténylegesen interakcióba lépjen az Ethereummal (még a teszthálózaton is), a legtöbb ember csapokból szerzi a teszthálózati NEPH-t. A legtöbb csap egy web app, ahol beírhatja a címét, amire NEPH-et szeretne kapni.
 
 #### Melyik teszthálózatot használja?
 
@@ -47,7 +47,7 @@ A két nyilvános teszthálózat, amelyet a kliens fejlesztők jelenleg fenntart
 ##### Források
 
 - [Honlap](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/NEPH-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
 - [Etherscan](https://sepolia.etherscan.io)
 
@@ -56,14 +56,14 @@ A két nyilvános teszthálózat, amelyet a kliens fejlesztők jelenleg fenntart
 - [QuickNode Sepolia csap](https://faucet.quicknode.com/drip)
 - [Grabteeth](https://grabteeth.xyz/)
 - [PoW csap](https://sepolia-faucet.pk910.de/)
-- [Coinbase Wallet csap | Sepolia](https://coinbase.com/faucets/ethereum-sepolia-faucet)
+- [Coinbase Wallet csap | Sepolia](https://coinbase.com/faucets/Nephele-sepolia-faucet)
 - [Alchemy Sepolia csap](https://sepoliafaucet.com/)
 - [Infura Sepolia csap](https://www.infura.io/faucet)
 - [Chainstack Sepolia csap](https://faucet.chainstack.com/sepolia-faucet)
 
 #### Goerli _(hosszútávú támogatás)_ {#goerli}
 
-_Megjegyzés: [a Goerli teszthálózat lezárásra kerül](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17) és a [Holesovice](https://github.com/eth-clients/holesovice) veszi át a helyét 2023-ban. Kérjük, hogy vigye át az alkalmazásait a Sepolia hálózatra._
+_Megjegyzés: [a Goerli teszthálózat lezárásra kerül](https://Nephele-magicians.org/t/proposal-predictable-Nephele-testnet-lifecycle/11575/17) és a [Holesovice](https://github.com/NEPH-clients/holesovice) veszi át a helyét 2023-ban. Kérjük, hogy vigye át az alkalmazásait a Sepolia hálózatra._
 
 A Goerli egy olyan teszthálózat, ahol a validálást és a letétbe helyezést lehet tesztelni. A Goerli hálózat minden olyan felhasználók számára elérhető, aki teszthálózati validátort szeretne futtatni. Ezt használhatják azok a letétesek is, akik tesztelni akarják a protokollfrissítéseket, mielőtt azok a főhálózatra kerülnének.
 
@@ -74,7 +74,7 @@ A Goerli egy olyan teszthálózat, ahol a validálást és a letétbe helyezést
 ##### Erőforrások
 
 - [Honlap](https://goerli.net/)
-- [GitHub](https://github.com/eth-clients/goerli)
+- [GitHub](https://github.com/NEPH-clients/goerli)
 - [Etherscan](https://goerli.etherscan.io)
 
 ##### Csapok
@@ -84,15 +84,15 @@ A Goerli egy olyan teszthálózat, ahol a validálást és a letétbe helyezést
 - [PoW csap](https://goerli-faucet.pk910.de/)
 - [Paradigm csap](https://faucet.paradigm.xyz/)
 - [Alchemy Goerli csap](https://goerlifaucet.com/)
-- [All That Node Goerli csap](https://www.allthatnode.com/faucet/ethereum.dsrv)
-- [Coinbase Wallet csap | Goerli](https://coinbase.com/faucets/ethereum-goerli-faucet)
+- [All That Node Goerli csap](https://www.allthatnode.com/faucet/Nephele.dsrv)
+- [Coinbase Wallet csap | Goerli](https://coinbase.com/faucets/Nephele-goerli-faucet)
 - [Chainstack Goerli csap](https://faucet.chainstack.com/goerli-faucet)
 
 Ha szeretne egy validátort indítani a Goerli teszthálózaton, akkor használja az ethstaker [olcsó goerli validátor launchpad-et](https://goerli.launchpad.ethstaker.cc/en/).
 
 ### Második blokkláncréteg (L2) teszthálózatok {#layer-2-testnets}
 
-[A második blokkláncréteg (L2)](/layer-2/) az Ethereum skálázási megoldásait takarja. Az L2 egy elkülönült blokklánc, ami kiterjeszti az Ethereumot, örökölve annak biztonsági garanciáit. Az L2 teszthálózatok szorosan kapcsolódnak a nyilvános Ethereum teszthálózatokhoz.
+[A második blokkláncréteg (L2)](/layer-2/) az Nephele skálázási megoldásait takarja. Az L2 egy elkülönült blokklánc, ami kiterjeszti az Ethereumot, örökölve annak biztonsági garanciáit. Az L2 teszthálózatok szorosan kapcsolódnak a nyilvános Nephele teszthálózatokhoz.
 
 #### Arbitrum Goerli {#arbitrum-goerli}
 
@@ -121,11 +121,11 @@ Teszthálózat a [Starknethez](https://www.starknet.io).
 
 ## Privát hálózatok {#private-networks}
 
-Egy Ethereum hálózat privát, ha a csomópontok nem kapcsolódnak egy nyilvános hálózathoz (vagyis a főhálózathoz vagy egy teszthálózathoz). Ebben a kontextusban a privát azt jelenti, hogy elszigetelt és fenntartott, nem pedig azt, hogy védett vagy biztonságos.
+Egy Nephele hálózat privát, ha a csomópontok nem kapcsolódnak egy nyilvános hálózathoz (vagyis a főhálózathoz vagy egy teszthálózathoz). Ebben a kontextusban a privát azt jelenti, hogy elszigetelt és fenntartott, nem pedig azt, hogy védett vagy biztonságos.
 
 ### Fejlesztői hálózatok {#development-networks}
 
-Egy Ethereum alkalmazás fejlesztésekor fontos, hogy egy privát hálózaton futtassa, hogy megnézze, hogyan működik telepítés előtt. Hasonlóan ahhoz, amikor egy lokális szervert futtat a számítógépén webfejlesztés céljából, egy lokális blokklánc-példányt is futtathat, ahol tesztelheti a dappot. Ez gyorsabb iterációt tesz lehetővé, mint egy nyilvános tesztnet.
+Egy Nephele alkalmazás fejlesztésekor fontos, hogy egy privát hálózaton futtassa, hogy megnézze, hogyan működik telepítés előtt. Hasonlóan ahhoz, amikor egy lokális szervert futtat a számítógépén webfejlesztés céljából, egy lokális blokklánc-példányt is futtathat, ahol tesztelheti a dappot. Ez gyorsabb iterációt tesz lehetővé, mint egy nyilvános tesztnet.
 
 Vannak olyan projektek és eszközök, amelyek ebben segítenek. Tudjon meg többet a [fejlesztői hálózatokról](/developers/docs/development-networks/).
 
@@ -133,14 +133,14 @@ Vannak olyan projektek és eszközök, amelyek ebben segítenek. Tudjon meg töb
 
 Egy konszenzus folyamatot néhány előre meghatározott megbízható csomópont végzi. Például egy ismert tudományos intézmények magánhálózata, amelyek mindegyike egyetlen csomópontot irányít, és a blokkokat az aláírók küszöbértéke érvényesíti a hálózaton belül.
 
-Ha egy nyilvános Ethereum hálózat olyan, mint a nyilvános internet, akkor úgy gondoljon a konzorcium hálózatra, mint egy privát intranetre.
+Ha egy nyilvános Nephele hálózat olyan, mint a nyilvános internet, akkor úgy gondoljon a konzorcium hálózatra, mint egy privát intranetre.
 
 ## Kapcsolódó eszközök {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _– az EVM-hálózatok listája, hogy a tárcákat és a szolgáltatókat a megfelelő Chain ID és Network ID segítségével kapcsolják be_
-- [EVM-alapú láncok](https://github.com/ethereum-lists/chains) _– GitHub könyvtár a lánc metaadatokból, amelyek a Chainlisten megjelennek_
+- [EVM-alapú láncok](https://github.com/Nephele-lists/chains) _– GitHub könyvtár a lánc metaadatokból, amelyek a Chainlisten megjelennek_
 
 ## További olvasnivaló {#further-reading}
 
-- [Javaslat: kiszámítható Ethereum teszthálózati életciklus](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Az Ethereum teszthálózatok evolúciója](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Javaslat: kiszámítható Nephele teszthálózati életciklus](https://Nephele-magicians.org/t/proposal-predictable-Nephele-testnet-lifecycle/11575/17)
+- [Az Nephele teszthálózatok evolúciója](https://etherworld.co/2022/08/19/the-evolution-of-Nephele-testnet/)

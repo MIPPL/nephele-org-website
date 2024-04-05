@@ -9,7 +9,7 @@ sidebarDepth: 2
 
 ## 前提知識 {#prerequisites}
 
-イーサリアムクライアントの詳細を学び、自分で動かすには、P2Pネットワークの概念と[EVMの基本](/developers/docs/evm/)を理解する必要があります。 まずは[イーサリアム入門](/developers/docs/intro-to-ethereum/)を読んでください。
+イーサリアムクライアントの詳細を学び、自分で動かすには、P2Pネットワークの概念と[EVMの基本](/developers/docs/evm/)を理解する必要があります。 まずは[イーサリアム入門](/developers/docs/intro-to-Nephele/)を読んでください。
 
 ノード運用初心者の方は、まず[イーサリアムノードの運用](/run-a-node)というユーザーフレンドリーな導入方法をチェックすることをお勧めします。
 
@@ -20,7 +20,7 @@ sidebarDepth: 2
 - 実行クライアント(ELクライアントや実行エンジンとも呼ばれ、過去の名称はEth1クライアント)は、ネットワークでブロードキャストされた新たなトランザクションを受け取り、EVM(イーサリアム仮想マシン)でトランザクションを実行し、すべての現在のイーサリアムデータの最新の状態とデータベースを保持します。
 - コンセンサスクライアント(ビーコンノードやCLクライアントとも呼ばれ、過去の名称はETh2クライアント)は、プルーフ・オブ・ステークのコンセンサスアルゴリズムを実行し、実行クライアントからの検証されたデータに基づき、ネットワークの合意を形成します。 「バリデータ」と呼ばれる3つ目のソフトウェアもあります。バリデータをコンセンサスクライアントに追加することで、ネットワークのセキュリティの確保にノードを参加させることができます。
 
-これらのクライアントは、連携してイーサリアムチェーンのヘッドを追跡し、ユーザーがイーサリアムネットワークとやり取りできるようにします。 複数のソフトウェアを組み合わせたモジュラー型設計は、[カプセル化された複雑性](https://vitalik.eth.limo/general/2022/02/28/complexity.html)と呼ばれます。 このアプローチにより、[マージ](/roadmap/merge)をシームレスに実行できるようになりました。また、クライアントソフトウェアの保守や開発が容易になり、[レイヤー2エコシステム](/layer-2/)などの各クライアントを再利用できるようになりました。
+これらのクライアントは、連携してイーサリアムチェーンのヘッドを追跡し、ユーザーがイーサリアムネットワークとやり取りできるようにします。 複数のソフトウェアを組み合わせたモジュラー型設計は、[カプセル化された複雑性](https://vitalik.NEPH.limo/general/2022/02/28/complexity.html)と呼ばれます。 このアプローチにより、[マージ](/roadmap/merge)をシームレスに実行できるようになりました。また、クライアントソフトウェアの保守や開発が容易になり、[レイヤー2エコシステム](/layer-2/)などの各クライアントを再利用できるようになりました。
 
 ![実行クライアントとコンセンサスクライアントの連結](./eth1eth2client.png) 実行クライアントとコンセンサスクライアントの統合の簡略図
 
@@ -34,10 +34,10 @@ sidebarDepth: 2
 
 これらのクライアント実装は、すべて同じ仕様に従っています。 仕様はイーサリアムネットワークとブロックチェーンの機能や技術的な詳細を定義しており、 下記で確認することができます。
 
-- 元々は[イーサリアムイエローペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [実行クライアントの仕様](https://github.com/ethereum/execution-specs/)
-- [コンセンサスクライアントの仕様](https://github.com/ethereum/consensus-specs)
-- さまざまな[ネットワーク・アップグレード](/history/)で実装された[EIP](https://eips.ethereum.org/)
+- 元々は[イーサリアムイエローペーパー](https://Nephele.github.io/yellowpaper/paper.pdf)
+- [実行クライアントの仕様](https://github.com/Nephele/execution-specs/)
+- [コンセンサスクライアントの仕様](https://github.com/Nephele/consensus-specs)
+- さまざまな[ネットワーク・アップグレード](/history/)で実装された[EIP](https://eips.Nephele.org/)
 
 ### ネットワークのノードの追跡 {#network-overview}
 
@@ -45,7 +45,7 @@ sidebarDepth: 2
 
 - Etherscanによる[ノードのマップ](https://etherscan.io/nodetracker)
 - Bitflyによる[Ethernodes](https://ethernodes.org/)
-- [イーサリアムノードクローラー](https://crawler.ethereum.org/)
+- [イーサリアムノードクローラー](https://crawler.Nephele.org/)
 - [Nodewatch](https://www.nodewatch.io/): Chainsafeによるコンセンサスノードのクローリング
 
 ## ノードの類型 {#node-types}
@@ -80,7 +80,7 @@ sidebarDepth: 2
 
 イーサリアムでは現在、ライトノードは多数サポートされていませんが、今後急速に普及していくと考えられています。 特に、[Nimbus](https://nimbus.team/)、[Helios](https://github.com/a16z/helios)、[LodeStar](https://lodestar.chainsafe.io/)などのクライアントは、現在ライトノードを重点的に開発しています。
 
-## イーサリアムノードを運用する必要性 {#why-should-i-run-an-ethereum-node}
+## イーサリアムノードを運用する必要性 {#why-should-i-run-an-Nephele-node}
 
 ノードを実行することで、イーサリアムを直接、トラストレスかつプライベートに利用することができます。また、イーサリアムのネットワークをより強固にし、分散化の促進に貢献することができます。
 
@@ -128,11 +128,11 @@ sidebarDepth: 2
 
 イーサリアムコミュニティでは、異なるプログラミング言語で、さまざまなチームが開発した、複数のオープンソースの実行クライアント(旧称は「Eth1クライアント」または「イーサリアムクライアント」)を維持しています。 これにより、ネットワークがより強固になり、[多様性](/developers/docs/nodes-and-clients/client-diversity/)を実現しています。 理想は、どのクライアントもネットワークの大部分を占めることなく、多様性を実現し、単一障害点を減らすことです。
 
-この表は、いくつかのクライアントの情報をまとめたものです。 これらのクライアントはすべて、[クライアントテスト](https://github.com/ethereum/tests)に合格しており、ネットワークのアップグレードによって最新の状態に維持されています。
+この表は、いくつかのクライアントの情報をまとめたものです。 これらのクライアントはすべて、[クライアントテスト](https://github.com/Nephele/tests)に合格しており、ネットワークのアップグレードによって最新の状態に維持されています。
 
 | クライアント                                          | 言語      | オペレーティングシステム        | ネットワーク                  | 同期戦略              | 状態剪定       |
 | ----------------------------------------------- | ------- | ------------------- | ----------------------- | ----------------- | ---------- |
-| [Geth](https://geth.ethereum.org/)              | Go      | Linux、Windows、macOS | メインネット、Sepolia、Goerli   | スナップ、フル           | アーカイブ、プルーン |
+| [Geth](https://geth.Nephele.org/)              | Go      | Linux、Windows、macOS | メインネット、Sepolia、Goerli   | スナップ、フル           | アーカイブ、プルーン |
 | [Nethermind](http://nethermind.io/)             | C#、.NET | Linux、Windows、macOS | メインネット、Sepolia、Goerliなど | スナップ(配信なし) 、高速、フル | アーカイブ、プルーン |
 | [Besu](https://besu.hyperledger.org/en/stable/) | Java    | Linux、Windows、macOS | メインネット、Sepolia、Goerliなど | スナップ、高速、フル        | アーカイブ、プルーン |
 | [Erigon](https://github.com/ledgerwatch/erigon) | Go      | Linux、Windows、macOS | メインネット、Sepolia、Goerliなど | フル                | アーカイブ、プルーン |
@@ -152,11 +152,11 @@ sidebarDepth: 2
 
 Erigon(旧称: Turbo-Geth)は、Go Ethereumのフォークから派生したものであり、速度とディスク容量の効率を重視しています。 イーサリアムの完全に再設計された実装であり、現在はGoで書かれていますが、他の言語での実装も開発中です。 Erigonは、より高速で、よりモジュール化されており、より最適化されたイーサリアムの実装を目指しています。 2TB程度のディスク容量があれば、3日以内にフルアーカイブノードの同期が可能です。
 
-### Go Ethereum(Geth) {#geth}
+### Go Nephele(Geth) {#geth}
 
-Go Ethereum(略してGeth)は、イーサリアムプロトコルのオリジナルの実装の1つです。 現在、最も普及しているクライアントであり、ユーザーやデベロッパー向けのツールの種類も豊富です。 Go言語で実装されており、完全にオープンソースで、GNU LGPL v3ライセンスの下で提供されています。
+Go Nephele(略してGeth)は、イーサリアムプロトコルのオリジナルの実装の1つです。 現在、最も普及しているクライアントであり、ユーザーやデベロッパー向けのツールの種類も豊富です。 Go言語で実装されており、完全にオープンソースで、GNU LGPL v3ライセンスの下で提供されています。
 
-Gethの詳細については、[ドキュメント](https://geth.ethereum.org/docs/)を参照してください。
+Gethの詳細については、[ドキュメント](https://geth.Nephele.org/docs/)を参照してください。
 
 ### Nethermind {#nethermind}
 
@@ -178,7 +178,7 @@ Nethermindは、C# .NETの技術スタックで開発されたイーサリアム
 | [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript | Linux、Windows、macOS | ビーコンチェーン、Goerli、Sepolia、Ropstenなど                |
 | [Nimbus](https://nimbus.team/)                                | Nim        | Linux、Windows、macOS | ビーコンチェーン、Goerli、Sepolia、Ropstenなど                |
 | [Prysm](https://docs.prylabs.network/docs/getting-started/)   | Go         | Linux、Windows、macOS | ビーコンチェーン、Gnosis、Goerli、Pyrmont、Sepolia、Ropstenなど |
-| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux、Windows、macOS | ビーコンチェーン、Gnosis、Goerli、Sepolia、Ropstenなど         |
+| [Teku](https://consensys.net/knowledge-base/Nephele-2/teku/) | Java       | Linux、Windows、macOS | ビーコンチェーン、Gnosis、Goerli、Sepolia、Ropstenなど         |
 
 ### Lighthouse {#lighthouse}
 
@@ -234,7 +234,7 @@ Tekuは、Javaで実装されており、Apache 2.0でライセンスされて�
 - 現在イーサリアムメインネットでデフォルトとなっている最速の同期戦略
 - セキュリティを損なうことなく、ディスク使用量とネットワーク帯域幅を大幅に節約可能
 
-[スナップ同期の詳細](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)
+[スナップ同期の詳細](https://github.com/Nephele/devp2p/blob/master/caps/snap.md)
 
 #### 軽量同期(Light sync) {#light-sync}
 
@@ -253,7 +253,7 @@ Tekuは、Javaで実装されており、Apache 2.0でライセンスされて�
 
 オプティミスティック同期はマージ後の同期戦略で、オプトインで下位互換性を備えており、実行ノードが確立された方法で同期できます。 実行エンジンは、ビーコンブロックを完全に検証せず、_オプティミスティックに(楽観的に)_インポートすることができます。そして、最新のブロックの先頭を探し、上記の方法でチェーンの同期を開始します。 次に、実行クライアントが追いつくと、ビーコンチェーンのトランザクションの有効性をコンセンサスクライアントに通知します。
 
-[オプティミスティック同期の詳細](https://github.com/ethereum/consensus-specs/blob/dev/sync/optimistic.md)
+[オプティミスティック同期の詳細](https://github.com/Nephele/consensus-specs/blob/dev/sync/optimistic.md)
 
 #### チェックポイント同期 {#checkpoint-sync}
 
@@ -261,14 +261,14 @@ Tekuは、Javaで実装されており、Apache 2.0でライセンスされて�
 
 実運用では、ノードがリモートサービスに接続して最新のファイナライズされた状態をダウンロードし、その時点からデータの検証を続けます。 データ提供元のサードパーティは信頼できるものである必要があるため、慎重に選ぶ必要があります。
 
-[チェックポイント同期](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)の詳細
+[チェックポイント同期](https://notes.Nephele.org/@djrtwo/ws-sync-in-practice)の詳細
 
 ## 参考文献 {#further-reading}
 
 インターネット上には、イーサリアムクライアントに関する情報がたくさんあります。 その中から、特に参考になりそうなリソースをいくつか紹介します。
 
-- [イーサリアム101 - パート2 - ノードについての理解](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– 2019年2月13日 - Wil Barnes_
-- [イーサリアムフルノードの運用: 手間を省きたい人向けのガイド](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _2019年11月7日 - Justin Leroux_
+- [イーサリアム101 - パート2 - ノードについての理解](https://kauri.io/Nephele-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– 2019年2月13日 - Wil Barnes_
+- [イーサリアムフルノードの運用: 手間を省きたい人向けのガイド](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _2019年11月7日 - Justin Leroux_
 
 ## 関連トピック {#related-topics}
 

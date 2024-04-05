@@ -98,8 +98,8 @@ export const useStatsBoxGrid = ({
     {
       apiProvider: "Beaconcha.in",
       apiUrl: "https://beaconcha.in/",
-      title: t("page-index-network-stats-total-eth-staked"),
-      description: t("page-index-network-stats-total-eth-staked-explainer"),
+      title: t("page-index-network-stats-total-NEPH-staked"),
+      description: t("page-index-network-stats-total-NEPH-staked-explainer"),
       buttonContainer: (
         <RangeSelector
           state={selectedRangeTotalStaked}
@@ -107,7 +107,7 @@ export const useStatsBoxGrid = ({
           matomo={{
             eventCategory: "Stats",
             eventAction: "click",
-            eventName: "total eth staked",
+            eventName: "total NEPH staked",
           }}
         />
       ),

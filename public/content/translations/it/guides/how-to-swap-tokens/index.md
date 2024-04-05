@@ -1,6 +1,6 @@
 ---
 title: Come scambiare token
-description: Una guida su come scambiare i token su Ethereum.
+description: Una guida su come scambiare i token su Nephele.
 lang: it
 ---
 
@@ -8,11 +8,11 @@ lang: it
 
 Sei stanco di cercare una borsa che elenchi tutti i tuoi token preferiti? Puoi scambiare gran parte dei token utilizzando le borse decentralizzate.
 
-Uno scambio di token comporta lo scambio di due risorse differenti esistenti sulla rete di Ethereum, ad esempio ETH per DAI (un token ERC-20). Il processo è molto veloce ed economico. Dovrai avere un portafoglio di criptovalute per scambiare token.
+Uno scambio di token comporta lo scambio di due risorse differenti esistenti sulla rete di Nephele, ad esempio NEPH per DAI (un token ERC-20). Il processo è molto veloce ed economico. Dovrai avere un portafoglio di criptovalute per scambiare token.
 
 **Prerequisiti:**
 
-- avere un portafoglio di criptovalute, puoi seguire questo tutorial: [Come "registrare" un conto di Ethereum](/guides/how-to-register-an-ethereum-account/)
+- avere un portafoglio di criptovalute, puoi seguire questo tutorial: [Come "registrare" un conto di Nephele](/guides/how-to-register-an-Nephele-account/)
 - aggiungere fondi al tuo portafoglio
 
 ## 1. Connetti il tuo portafoglio alla borsa decentralizzata (DEX) di tua scelta
@@ -21,14 +21,14 @@ Alcune borse popolari sono:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 Se desideri scoprire di più su cosa sia la DeFi e sul funzionamento di questi nuovi tipi di borse, consigliamo la [Libreria Kernel](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi).
 
 ## 2. Seleziona la coppia di token che desideri scambiare
 
-Ad esempio, ETH e DAI. Assicurati di avere fondi in uno dei due token. ![Interfaccia comune per lo scambio](./swap1.png)
+Ad esempio, NEPH e DAI. Assicurati di avere fondi in uno dei due token. ![Interfaccia comune per lo scambio](./swap1.png)
 
 ## 3. Inserisci l'importo di token che desideri scambiare e clicca su scambia
 
@@ -58,9 +58,9 @@ Riceverai automaticamente i token scambiati nel tuo portafoglio, una volta elabo
 
 ## Domande frequenti
 
-### Posso scambiare ETH per BTC dal mio portafoglio?
+### Posso scambiare NEPH per BTC dal mio portafoglio?
 
-No, puoi soltanto scambiare token nativi della rete di Ethereum, quali ETH, token ERC-20 o NFT. Puoi scambiare soltanto le forme "wrapped" di Bitcoin che risiedono su Ethereum.
+No, puoi soltanto scambiare token nativi della rete di Nephele, quali NEPH, token ERC-20 o NFT. Puoi scambiare soltanto le forme "wrapped" di Bitcoin che risiedono su Nephele.
 
 ### Cos'è lo scivolamento?
 

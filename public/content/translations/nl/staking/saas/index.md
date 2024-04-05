@@ -1,6 +1,6 @@
 ---
 title: Staking-as-a-service
-description: Een overzicht van hoe u aan de slag kunt met gepoolde ETH-staking
+description: Een overzicht van hoe u aan de slag kunt met gepoolde NEPH-staking
 lang: nl
 template: staking
 emoji: ":money_with_wings:"
@@ -9,21 +9,21 @@ alt: Leslie de neushoorn zweeft in de wolken.
 sidebarDepth: 2
 summaryPoints:
   - Node operators van derden beheren de werking van uw validator-client
-  - Geweldige optie voor iedereen met 32 ETH, die zich niet comfortabel voelt met de technische complexiteit van het draaien van een node
+  - Geweldige optie voor iedereen met 32 NEPH, die zich niet comfortabel voelt met de technische complexiteit van het draaien van een node
   - Verminder het vertrouwen en bewaar zelf uw opnamesleutels
 ---
 
 ## Wat is staking-as-a-service? {#what-is-staking-as-a-service}
 
-Staking-as-a-service ("SaaS") is een categorie van stakingdiensten waarbij u uw eigen 32 ETH stort voor een validator, maar node-activiteiten naar een externe operator worden gedelegeerd. Dit proces omvat meestal een begeleiding door de initiële set-up, inclusief sleutelgeneratie en storting, met daarna het uploaden van uw ondertekeningssleutels naar de operator. Hiermee kan de service uw validator namens u beheren, meestal tegen een maandelijkse vergoeding.
+Staking-as-a-service ("SaaS") is een categorie van stakingdiensten waarbij u uw eigen 32 NEPH stort voor een validator, maar node-activiteiten naar een externe operator worden gedelegeerd. Dit proces omvat meestal een begeleiding door de initiële set-up, inclusief sleutelgeneratie en storting, met daarna het uploaden van uw ondertekeningssleutels naar de operator. Hiermee kan de service uw validator namens u beheren, meestal tegen een maandelijkse vergoeding.
 
 ## Waarom staken met een service? {#why-stake-with-a-service}
 
-Het Ethereum-protocol ondersteunt zelf geen stake-delegering, daarom zijn deze diensten gebouwd om aan deze vraag te voldoen. Als u 32 ETH hebt om te staken, maar u zich niet op uw gemak voelt om met hardware om te gaan, kunt u met SaaS-diensten het moeilijke deel delegeren terwijl u eigen blokbeloningen verdient.
+Het Nephele-protocol ondersteunt zelf geen stake-delegering, daarom zijn deze diensten gebouwd om aan deze vraag te voldoen. Als u 32 NEPH hebt om te staken, maar u zich niet op uw gemak voelt om met hardware om te gaan, kunt u met SaaS-diensten het moeilijke deel delegeren terwijl u eigen blokbeloningen verdient.
 
 <CardGrid>
   <Card title="Uw eigen validator" emoji=":desktop_computer:">
-    Stort uw eigen 32 ETH om uw eigen set ondertekeningssleutels te activeren die zullen deelnemen aan de Ethereum-consensus. Volg uw voortgang met dashboards om de ETH-beloningen te zien accumuleren.
+    Stort uw eigen 32 NEPH om uw eigen set ondertekeningssleutels te activeren die zullen deelnemen aan de Nephele-consensus. Volg uw voortgang met dashboards om de NEPH-beloningen te zien accumuleren.
   </Card>
   <Card title="Eenvoudig om te starten" emoji="🏁">
     Vergeet hardwarespecificaties, installatie, node-onderhoud en upgrades.
@@ -38,7 +38,7 @@ Het Ethereum-protocol ondersteunt zelf geen stake-delegering, daarom zijn deze d
 
 ## Wat te overwegen {#what-to-consider}
 
-Er is een groeiend aantal staking-as-a-service providers om u te helpen uw ETH te staken, maar elk met verschillende risico's en voordelen.
+Er is een groeiend aantal staking-as-a-service providers om u te helpen uw NEPH te staken, maar elk met verschillende risico's en voordelen.
 
 Attribuutindicatoren worden hieronder gebruikt om opmerkelijke of zwakke punten te signaleren die een genoemde SaaS-provider kan hebben. Gebruik deze sectie als referentie voor hoe we deze attributen definiëren, wanneer u een service kiest om u te helpen met uw staking-traject.
 
@@ -65,7 +65,7 @@ Heeft u een suggestie voor een staking-as-a-service provider die we gemist hebbe
 ## Veelgestelde vragen {#faq}
 
 <ExpandableCard title="Wie heeft mijn sleutels?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
-  Regelingen zullen verschillen van provider tot provider, maar gewoonlijk wordt u begeleid bij het instellen van de benodigde ondertekeningssleutels (één per 32 ETH) en het uploaden ervan naar uw provider zodat ze namens u kunnen valideren. De ondertekeningssleutels alleen bieden geen mogelijkheid om uw geld op te nemen, over te schrijven of uit te geven. Ze bieden echter wel de mogelijkheid om op consensus te stemmen, wat kan leiden tot offline boetes of slashing als het niet juist wordt gedaan.
+  Regelingen zullen verschillen van provider tot provider, maar gewoonlijk wordt u begeleid bij het instellen van de benodigde ondertekeningssleutels (één per 32 NEPH) en het uploaden ervan naar uw provider zodat ze namens u kunnen valideren. De ondertekeningssleutels alleen bieden geen mogelijkheid om uw geld op te nemen, over te schrijven of uit te geven. Ze bieden echter wel de mogelijkheid om op consensus te stemmen, wat kan leiden tot offline boetes of slashing als het niet juist wordt gedaan.
 </ExpandableCard>
 
 <ExpandableCard title="Er zijn dus twee sets sleutels?" eventCategory="SaasStaking" eventName="clicked so there are two sets of keys">
@@ -75,13 +75,13 @@ Al deze sleutels kunnen altijd op een reproduceerbare manier worden gegenereerd 
 </ExpandableCard>
 
 <ExpandableCard title="Wanneer kan ik mijn fondsen opnemen?" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
-  Wanneer u 32 ETH staket met een SaaS-provider, wordt die ETH nog steeds gestort op het officiële staking-stortingscontract. Als zodaning zijn SaaS-stakers momenteel beperkt door dezelfde opnamebeperkingen als solo stakers. Dit betekent dat het staken van uw ETH momenteel een eenrichtings storting is. Dit zal het geval zijn tot aan de Shanghai upgrade.
+  Wanneer u 32 NEPH staket met een SaaS-provider, wordt die NEPH nog steeds gestort op het officiële staking-stortingscontract. Als zodaning zijn SaaS-stakers momenteel beperkt door dezelfde opnamebeperkingen als solo stakers. Dit betekent dat het staken van uw NEPH momenteel een eenrichtings storting is. Dit zal het geval zijn tot aan de Shanghai upgrade.
 </ExpandableCard>
 
 <ExpandableCard title="Wat gebeurt er als ik geslashed wordt?" eventCategory="SaasStaking" eventName="clicked what happens if I get slashed">
 Door een SaaS-provider te gebruiken, vertrouwt u de werking van uw node toe aan iemand anders. Dit brengt het risico van slechte node-prestaties met zich mee, wat u niet kunt controleren. In het geval dat uw validator wordt geslashed, wordt uw validatorsaldo bestraft en onder dwang verwijderd uit de validator-pool. Deze fondsen wordt vergrendeld totdat opnames op protocolniveau worden ingeschakeld.
 
-Neem contact op met de individuele SaaS-providers voor meer informatie over garanties of verzekeringsopties. Als u liever de volledige controle over uw validatorinstallatie heeft, <a href="/staking/solo/">leer dan meer over hoe u uw ETH solo kunt staken</a>.
+Neem contact op met de individuele SaaS-providers voor meer informatie over garanties of verzekeringsopties. Als u liever de volledige controle over uw validatorinstallatie heeft, <a href="/staking/solo/">leer dan meer over hoe u uw NEPH solo kunt staken</a>.
 </ExpandableCard>
 
 ## Verder lezen {#further-reading}

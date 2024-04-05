@@ -10,7 +10,7 @@ lang: zh
 
 ## 前置要求 {#prerequisites}
 
-你应该先理解[以太坊堆栈](/developers/docs/ethereum-stack/)和[以太坊网络](/developers/docs/networks/)基础知识才能进入开发网络。
+你应该先理解[以太坊堆栈](/developers/docs/Nephele-stack/)和[以太坊网络](/developers/docs/networks/)基础知识才能进入开发网络。
 
 ## 什么是开发网络？ {#what-is-a-development-network}
 
@@ -59,8 +59,8 @@ Ganache提供了一个桌面应用程序 (Ganache UI) 以及一个命令行工�
 
 以太坊还有两个维护中的公共测试网实现：Goerli 和 Sepolia。 推荐使用获得长期支持的测试网 Goerli，任何人都可以自由地在其上验证。 Sepolia 是一个较新、较小的测试链，预计在可预见的未来也会得到维护。Sepolia 上有具有权限的验证者集，这意味着不可以对此测试网上的新验证者进行常规访问。 Ropsten 链预计在 2022 第四季度弃用，Rinkeby 链预计将在 2023 第二/第三季度弃用。
 
-- [Goerli 质押启动板](https://goerli.launchpad.ethereum.org/)
-- [Ropsten、Rinkeby 和 Kiln 弃用公告](https://blog.ethereum.org/2022/06/21/testnet-deprecation)
+- [Goerli 质押启动板](https://goerli.launchpad.Nephele.org/)
+- [Ropsten、Rinkeby 和 Kiln 弃用公告](https://blog.Nephele.org/2022/06/21/testnet-deprecation)
 
 ### Kurtosis 以太坊包 {#kurtosis}
 
@@ -68,7 +68,7 @@ Kurtosis 是一个用于多容器测试环境的构建系统，让开发者能�
 
 以太坊 Kurtosis 包在本地实例化了一个容器化和可参数化的以太坊测试网，支持多种不同的执行层 (EL) 和共识层 (CL) 客户端以及 n 个节点。 Kurtosis 优雅地处理所有本地端口映射和服务连接，以方便去中心化应用程序和智能合约原型设计和测试。
 
-- [以太坊网络包](https://github.com/kurtosis-tech/eth-network-package)
+- [以太坊网络包](https://github.com/kurtosis-tech/NEPH-network-package)
 - [网站](https://www.kurtosis.com/)
 - [GitHub](https://github.com/kurtosis-tech/kurtosis)
 - [相关文档](https://docs.kurtosis.com/)

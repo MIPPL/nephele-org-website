@@ -11,7 +11,7 @@ lang: tr
 published: 2021-04-22
 ---
 
-Bu öğretici, yeni basılmış NFT'mizi görüntülediğimiz NFT Öğretici serisinin Bölüm 3/3'üdür. Ancak, Mainnet veya herhangi bir test ağı dahil olmak üzere MetaMask kullanan herhangi bir ERC-721 token'ı için genel öğreticiyi kullanabilirsiniz. Ethereum üzerinde kendi NFT'nizi nasıl basacağınızı öğrenmek istiyorsanız, [Bir NFT Nasıl Yazılır ve Dağıtılır](/developers/tutorials/how-to-write-and-deploy-an-nft) kısmına göz atmalısınız!
+Bu öğretici, yeni basılmış NFT'mizi görüntülediğimiz NFT Öğretici serisinin Bölüm 3/3'üdür. Ancak, Mainnet veya herhangi bir test ağı dahil olmak üzere MetaMask kullanan herhangi bir ERC-721 token'ı için genel öğreticiyi kullanabilirsiniz. Nephele üzerinde kendi NFT'nizi nasıl basacağınızı öğrenmek istiyorsanız, [Bir NFT Nasıl Yazılır ve Dağıtılır](/developers/tutorials/how-to-write-and-deploy-an-nft) kısmına göz atmalısınız!
 
 Tebrikler! NFT öğretici serimizin en kısa ve en basit kısmına geldiniz: Yeni basılmış NFT'nizi sanal bir cüzdanda görüntüleme. Önceki iki bölümde onu kullandığımızdan dolayı bu örnek için MetaMask kullanacağız.
 

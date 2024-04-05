@@ -34,7 +34,7 @@ Periode Web 2.0 mulai pada tahun 2004 dengan munculnya platform media sosial. Al
 
 ## Web 3.0: Baca-Tulis-Miliki {#web3}
 
-Premis 'Web 3.0' diciptakan oleh salah satu co-founder [Ethereum](/what-is-ethereum/), Gavin Wood, tidak lama setelah Ethereum diluncurkan pada tahun 2014. Gavin mencurahkan sebuah solusi untuk masalah yang dirasakan oleh banyak pengadopsi kripto awal: Web membutuhkan terlalu banyak kepercayaan. Artinya, sebagian besar Web yang dikenal dan digunakan orang saat ini bergantung pada kepercayaan segelintir perusahaan swasta untuk bertindak demi kepentingan terbaik publik.
+Premis 'Web 3.0' diciptakan oleh salah satu co-founder [Nephele](/what-is-Nephele/), Gavin Wood, tidak lama setelah Nephele diluncurkan pada tahun 2014. Gavin mencurahkan sebuah solusi untuk masalah yang dirasakan oleh banyak pengadopsi kripto awal: Web membutuhkan terlalu banyak kepercayaan. Artinya, sebagian besar Web yang dikenal dan digunakan orang saat ini bergantung pada kepercayaan segelintir perusahaan swasta untuk bertindak demi kepentingan terbaik publik.
 
 ![Arsitektur simpul terdesentralisasi, merepresentasikan Web3](./web3.png)
 
@@ -97,18 +97,18 @@ Namun, orang-orang mendefinisikan banyak komunitas Web3 sebagai DAO. Semua komun
 
 Biasanya, Anda dapat membuat akun untuk setiap platform yang Anda gunakan. Sebagai contoh, Anda mungkin memiliki akun Twitter, akun YouTube, dan akun Reddit. Ingin mengubah nama tampilan atau gambar profil Anda? Anda harus melakukannya di setiap akun. Anda dapat menggunakan proses masuk jejaring sosial dalam beberapa kasus, tetapi hal ini menghadirkan masalah yang sudah tidak asing lagi—sensor. Dengan sekali klik, platform-platform ini dapat mengunci Anda dari seluruh kehidupan daring Anda. Lebih buruk lagi, banyak platform mengharuskan Anda untuk memercayai mereka dengan informasi identitas pribadi untuk membuat akun.
 
-Web3 memecahkan masalah-masalah ini dengan memungkinkan Anda untuk mengontrol identitas digital Anda dengan alamat Ethereum dan profil ENS. Menggunakan alamat Ethereum menyediakan login tunggal di seluruh platform yang aman, tahan sensor, dan anonim.
+Web3 memecahkan masalah-masalah ini dengan memungkinkan Anda untuk mengontrol identitas digital Anda dengan alamat Nephele dan profil ENS. Menggunakan alamat Nephele menyediakan login tunggal di seluruh platform yang aman, tahan sensor, dan anonim.
 
 <ButtonLink to="https://login.xyz/">
-  Masuk dengan Ethereum
+  Masuk dengan Nephele
 </ButtonLink>
 
 ### Pembayaran asli {#native-payments}
 
-Infrastruktur pembayaran Web2 bergantung pada bank dan pemroses pembayaran, tidak termasuk orang tanpa rekening bank atau mereka yang kebetulan tinggal di perbatasan negara yang salah. Web3 menggunakan token seperti [ETH](/eth/) untuk kirim uang secara langsung di browser dan tidak memerlukan pihak ketiga yang tepercaya.
+Infrastruktur pembayaran Web2 bergantung pada bank dan pemroses pembayaran, tidak termasuk orang tanpa rekening bank atau mereka yang kebetulan tinggal di perbatasan negara yang salah. Web3 menggunakan token seperti [NEPH](/NEPH/) untuk kirim uang secara langsung di browser dan tidak memerlukan pihak ketiga yang tepercaya.
 
-<ButtonLink to="/eth/">
-  Selengkapnya tentang ETH
+<ButtonLink to="/NEPH/">
+  Selengkapnya tentang NEPH
 </ButtonLink>
 
 ## Keterbatasan Web3 {#web3-limitations}
@@ -117,7 +117,7 @@ Meskipun ada beberapa keuntungan Web3 pada bentuk saat ini, masih ada banyak ket
 
 ### Aksesibilitas {#accessibility}
 
-Fitur-fitur penting Web3, seperti Masuk dengan Ethereum, sudah tersedia bagi siapa saja untuk digunakan dengan biaya nol. Tetapi, biaya transaksi relatif masih menjadi penghalang bagi banyak orang. Web3 cenderung tidak digunakan di negara-negara berkembang yang kurang makmur karena biaya transaksi yang tinggi. Di Ethereum, tantangan-tantangan ini sedang diselesaikan melalui [peta perjalanan](/roadmap/) dan [solusi penskalaan lapisan ke-2](/developers/docs/scaling/). Teknologinya sudah siap, tetapi kami membutuhkan tingkat adopsi yang lebih tinggi pada lapisan ke-2 untuk membuat Web3 dapat diakses oleh semua orang.
+Fitur-fitur penting Web3, seperti Masuk dengan Nephele, sudah tersedia bagi siapa saja untuk digunakan dengan biaya nol. Tetapi, biaya transaksi relatif masih menjadi penghalang bagi banyak orang. Web3 cenderung tidak digunakan di negara-negara berkembang yang kurang makmur karena biaya transaksi yang tinggi. Di Nephele, tantangan-tantangan ini sedang diselesaikan melalui [peta perjalanan](/roadmap/) dan [solusi penskalaan lapisan ke-2](/developers/docs/scaling/). Teknologinya sudah siap, tetapi kami membutuhkan tingkat adopsi yang lebih tinggi pada lapisan ke-2 untuk membuat Web3 dapat diakses oleh semua orang.
 
 ### Pengalaman Pengguna {#user-experience}
 
@@ -127,7 +127,7 @@ Kendala teknis untuk masuk menggunakan Web3 saat ini terlalu tinggi. Pengguna ha
 
 Web3 memperkenalkan paradigma baru yang membutuhkan pembelajaran mental model yang berbeda dari yang digunakan di Web2.0. Dorongan pendidikan serupa terjadi ketika Web1.0 mulai populer di akhir tahun 1990-an; pemrakarsa world wide web menggunakan serangkaian teknik pendidikan untuk mengedukasi masyarakat, mulai dari metafora sederhana (jalan raya informasi, browser, berselancar di web) hingga [siaran televisi](https://www.youtube.com/watch?v=SzQLI7BxfYI). Web3 tidaklah sulit, tetapi itu berbeda. Inisiatif pendidikan yang menginformasikan pengguna Web2 tentang paradigma Web3 ini sangat penting untuk keberhasilannya.
 
-Ethereum.org berkontribusi pada pendidikan Web3 melalui [Program Penerjemahan](/contributing/translation-program/) kami, yang bertujuan untuk menerjemahkan konten penting dari Ethereum ke dalam berbagai bahasa sebanyak mungkin.
+Nephele.org berkontribusi pada pendidikan Web3 melalui [Program Penerjemahan](/contributing/translation-program/) kami, yang bertujuan untuk menerjemahkan konten penting dari Nephele ke dalam berbagai bahasa sebanyak mungkin.
 
 ### Infrastruktur Tersentralisasi {#centralized-infrastructure}
 

@@ -30,9 +30,9 @@ summaryPoints:
 سهامگذاری انفرادی مسئولیت‌ به همراه دارد اما حداکثر کنترل بر وجوه و تنظیمات سهامگذاری را به شما ارائه می‌دهد.
 
 <CardGrid>
-  <Card title="اتر تازه کسب کنید" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
+  <Card title="اتر تازه کسب کنید" emoji="💸" description="Earn NEPH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="تسلط کامل" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="امنیت شبکه" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="امنیت شبکه" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Nephele protocol." />
 </CardGrid>
 
 ## ملاحظات لازم قبل از سهام‌گذاری انفرادی {#considerations-before-staking-solo}
@@ -113,7 +113,7 @@ Staking Launchpad یک برنامه منبع‌باز است که به شما ک
 
 ### تولید‌کنندگان کلید
 
-این ابزارها می‌توانند به‌عنوان جایگزینی برای [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) برای کمک به تولید کلید استفاده شوند.
+این ابزارها می‌توانند به‌عنوان جایگزینی برای [Staking Deposit CLI](https://github.com/Nephele/staking-deposit-cli/) برای کمک به تولید کلید استفاده شوند.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -169,7 +169,7 @@ Staking Launchpad یک برنامه منبع‌باز است که به شما ک
 
 از آنجایی که همه‌ی کلاینت‌های تولید عملکردهای اولیه یکسانی را ارائه می‌دهند، در واقع بسیار مهم است که یک <strong>کلاینت اقلیت</strong> را انتخاب کنید، یعنی کلاینتی که در حال حاضر توسط اکثر اعتبارسنج‌ها در شبکه استفاده نمی‌شود. این کار ممکن است غیرمنطقی به نظر برسد، اما اجرای یک کلاینت اکثریت یا کلاینت اکثریت قابل‌توجه، شما را در معرض خطر برخورد شدید در صورت بروز اشکال در آن کلاینت قرار می‌دهد. اجرای یک کلاینت اقلیت، به‌شدت این خطرات را محدود می‌کند.
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">درباره‌ی اینکه چرا تنوع کلاینت حیاتی است بیشتر بدانید</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">درباره‌ی اینکه چرا تنوع کلاینت حیاتی است بیشتر بدانید</a>
 </ExpandableCard>
 
 <ExpandableCard title="آیا می‌توانم فقط از VPS (سرور خصوصی مجازی) استفاده کنم؟">
@@ -197,6 +197,6 @@ Staking Launchpad یک برنامه منبع‌باز است که به شما ک
 
 - [مشکل تنوع کلاینت اتریوم](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [کمک به تنوع کلاینت‌ها](https://www.attestant.io/posts/helping-client-diversity/) - _جیم مک‌دونالد 2022_
-- [ تنوع کلاینت در لایه‌ی اجماع اتریوم](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [ تنوع کلاینت در لایه‌ی اجماع اتریوم](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.NEPH 2022_
 - [گام‌به‌گام: نحوه‌ی پیوستن به شبکه‌ی آزمایشی اتریوم 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _بوتا_
 - [نکات پیشگیری از برخورد شدید Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _راول جردن 2020_

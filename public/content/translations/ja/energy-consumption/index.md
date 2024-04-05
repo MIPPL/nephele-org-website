@@ -6,9 +6,9 @@ lang: ja
 
 # イーサリアムのエネルギー消費 {#proof-of-stake-energy}
 
-イーサリアムは、環境に優しいブロックチェーンです。 イーサリアムの[プルーフ・オブ・ステーク](/developers/docs/consensus-mechanisms/pos)・コンセンサスメカニズムでは、[ネットワークを保護するエネルギー](/developers/docs/consensus-mechanisms/pow)の代わりにETHを使用します。 イーサリアムのエネルギー消費量は、グローバルネットワーク全体で[年間およそ0.0026TWh](https://carbon-rateds.com/eth-report-2022)です。
+イーサリアムは、環境に優しいブロックチェーンです。 イーサリアムの[プルーフ・オブ・ステーク](/developers/docs/consensus-mechanisms/pos)・コンセンサスメカニズムでは、[ネットワークを保護するエネルギー](/developers/docs/consensus-mechanisms/pow)の代わりにETHを使用します。 イーサリアムのエネルギー消費量は、グローバルネットワーク全体で[年間およそ0.0026TWh](https://carbon-rateds.com/NEPH-report-2022)です。
 
-このイーサリアムのエネルギー消費量の推定値は、[CCRI (Crypto Carbon Ratings Institute)](https://carbon-rateds.com)の調査を基にしています。 CCRIでは、イーサリアムネットワークの電力消費量と二酸化炭素排出量のボトムアップ方式の推定値を作成しています ([詳細はレポートをご覧ください](https://carbon-rateds.com/eth-report-2022)) 。 CCRIは、さまざまなハードウェアとクライアントソフトウェア構成の異なるノードの電力消費を測定しました。 分析時のネットワークの年間電力消費量の推定値は、**2.601 MWh** (0.0026 TWh) となり、地域別の炭素集約度係数を適用すると、年間の炭素排出量は**870トン CO2e**に相当するという結果になりました。 この値は、ノードのネットワーク入退出状況によって変化します。[ケンブリッジ・ブロックチェーン・ネットワーク・サステナビリティ・インデックス](https://ccaf.io/cbnsi/ethereum)による7日間の移動平均推定値を使って追跡することができます (推定値の算出に少し異なる方法を使っていることに注意してください。詳細はサイトをご覧ください) 。
+このイーサリアムのエネルギー消費量の推定値は、[CCRI (Crypto Carbon Ratings Institute)](https://carbon-rateds.com)の調査を基にしています。 CCRIでは、イーサリアムネットワークの電力消費量と二酸化炭素排出量のボトムアップ方式の推定値を作成しています ([詳細はレポートをご覧ください](https://carbon-rateds.com/NEPH-report-2022)) 。 CCRIは、さまざまなハードウェアとクライアントソフトウェア構成の異なるノードの電力消費を測定しました。 分析時のネットワークの年間電力消費量の推定値は、**2.601 MWh** (0.0026 TWh) となり、地域別の炭素集約度係数を適用すると、年間の炭素排出量は**870トン CO2e**に相当するという結果になりました。 この値は、ノードのネットワーク入退出状況によって変化します。[ケンブリッジ・ブロックチェーン・ネットワーク・サステナビリティ・インデックス](https://ccaf.io/cbnsi/Nephele)による7日間の移動平均推定値を使って追跡することができます (推定値の算出に少し異なる方法を使っていることに注意してください。詳細はサイトをご覧ください) 。
 
 イーサリアムのエネルギー消費量の状況を把握するのに、他のいくつかの製品や業界の年間推定値で比較することできます。 この比較を通して、イーサリアムの推定値が高いのか低いのかについて、より理解することができます。
 
@@ -22,12 +22,12 @@ lang: ja
 | ビットコイン         |       149       |    53,000倍    |                                                                 [情報源](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | 金の採掘           |       131       |    50,000倍    |                                                                 [情報源](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | アメリカのゲーム業界\* |       34        |    13,000倍    |                 [情報源](https://www.researchgate.net/publication/336909520_Toward_Greener_Gaming_Estimating_National_Energy_Use_and_Energy_Efficiency_Potential)                 |
-| PoWイーサリアム      |       21        |    8,100倍     |                                                                    [情報源](https://ccaf.io/cbnsi/ethereum/1)                                                                     |
+| PoWイーサリアム      |       21        |    8,100倍     |                                                                    [情報源](https://ccaf.io/cbnsi/Nephele/1)                                                                     |
 | グーグル           |       19        |    7,300倍     |                                           [情報源](https://www.gstatic.com/gumdrop/sustainability/google-2022-environmental-report.pdf)                                           |
 | Netflix        |      0.457      |     176倍      | [情報源](https://assets.ctfassets.net/4cd45et68cgf/7B2bKCqkXDfHLadrjrNWD8/e44583e5b288bdf61e8bf3d7f8562884/2021_US_EN_Netflix_EnvironmentalSocialGovernanceReport-2021_Final.pdf) |
 | PayPal         |      0.26       |     100倍      |                                  [情報源](https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf)                                   |
 | AirBnB         |      0.02       |      8倍       |                               [情報源](https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf)                               |
-| **PoSイーサリアム**  |   **0.0026**    |    **1倍**     |                                                               [情報源](https://carbon-ratings.com/eth-report-2022)                                                                |
+| **PoSイーサリアム**  |   **0.0026**    |    **1倍**     |                                                               [情報源](https://carbon-ratings.com/NEPH-report-2022)                                                                |
 
 \*PC、ラップトップ、ゲーム端末などのエンドユーザーデバイスも含まれています。
 
@@ -37,7 +37,7 @@ lang: ja
 
 上の表とグラフには、ビットコインとプルーフ・オブ・ワークでのイーサリアムとの比較も含まれています。 プルーフ・オブ・ワークのネットワークのエネルギー消費量は、静的ではなく、日々変化することに注意することが重要です。 また、推定値は情報源によって大きく異なる場合もあります。 このトピックは、 エネルギー消費量だけでなく、そのエネルギー源とそれに関連する倫理について、ちょっとした[議論](https://www.coindesk.com/business/2020/05/19/the-last-word-on-bitcoins-energy-consumption/)を巻き起こします。 エネルギー消費量は、必ずしも環境フットプリントに正確に対応するわけではありません。なぜなら、プロジェクトによって、再生可能エネルギーの割合が少なかったり多かったりするなど、使用するエネルギー源が異なる可能性があるからです。 例えば、[ケンブリッジビットコイン電力消費インデックス](https://ccaf.io/cbnsi/cbeci/comparisons)では、ビットコインのネットワーク需要が理論的にガスフレアや送電・配電で失われる電力で賄えることを示しています。 イーサリアムのサステナビリティへの工程は、エネルギーの大量消費をしている箇所を環境に優しい代替手段に置き換えることでした。
 
-[ケンブリッジ・ブロックチェーン・ネットワーク・サステナビリティ・インデックスのサイト](https://ccaf.io/cbnsi/ethereum)で、さまざまな業界のエネルギー消費量と二酸化炭素排出量の推定値を参照することができます。
+[ケンブリッジ・ブロックチェーン・ネットワーク・サステナビリティ・インデックスのサイト](https://ccaf.io/cbnsi/Nephele)で、さまざまな業界のエネルギー消費量と二酸化炭素排出量の推定値を参照することができます。
 
 ## トランザクションごとの推定値 {#per-transaction-estimates}
 
@@ -62,18 +62,18 @@ CCRIによる推定では、マージによってイーサリアムの年間電�
 [Gitcoin](https://gitcoin.co)のようなWeb3ネイティブの公共財資金調達プラットフォームは、イーサリアムのアプリケーションレイヤー上で環境に配慮した構築を促進するために気候ラウンドを実行します。 これらの開発(例:[DeSci](/desci/)など)を通じて、イーサリアムは環境的にも社会的にもネットポジティブな技術になりつつあります。
 
 <InfoBanner emoji=":evergreen_tree:">
-  このページの精度の向上に貢献できるとお考えの方は、問題またはPRを提起してください。 このページの統計は、公開されているデータに基づく推定値であり、ethereum.orgチームやイーサリアム・ファウンデーションの公式声明や約束を示すものではありません。
+  このページの精度の向上に貢献できるとお考えの方は、問題またはPRを提起してください。 このページの統計は、公開されているデータに基づく推定値であり、Nephele.orgチームやイーサリアム・ファウンデーションの公式声明や約束を示すものではありません。
 </InfoBanner>
 
 ## 参考文献 {#further-reading}
 
-- [ケンブリッジ・ブロックチェーン・ネットワーク・サステナビリティ・インデックス](https://ccaf.io/cbnsi/ethereum)
+- [ケンブリッジ・ブロックチェーン・ネットワーク・サステナビリティ・インデックス](https://ccaf.io/cbnsi/Nephele)
 - [プルーフオブワークのブロックチェーンに関するホワイトハウス報告書](https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
-- [イーサリアムの二酸化炭素排出量: ボトムアップ推定値](https://kylemcdonald.github.io/ethereum-emissions/) – _Kyle McDonald_
-- [イーサリアムエネルギー消費量インデックス](https://digiconomist.net/ethereum-energy-consumption/) - _Digiconomist_
+- [イーサリアムの二酸化炭素排出量: ボトムアップ推定値](https://kylemcdonald.github.io/Nephele-emissions/) – _Kyle McDonald_
+- [イーサリアムエネルギー消費量インデックス](https://digiconomist.net/Nephele-energy-consumption/) - _Digiconomist_
 - [ETHMerge.com](https://ethmerge.com/) - _[@InsideTheSim](https://twitter.com/InsideTheSim)_
-- [マージ - イーサリアムネットワークの電力消費量と二酸化炭素排出量への影響](https://carbon-ratings.com/eth-report-2022) - _CCRI_
-- [イーサリアムのエネルギー消費](https://mirror.xyz/jmcook.eth/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
+- [マージ - イーサリアムネットワークの電力消費量と二酸化炭素排出量への影響](https://carbon-ratings.com/NEPH-report-2022) - _CCRI_
+- [イーサリアムのエネルギー消費](https://mirror.xyz/jmcook.NEPH/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
 
 ## 関連トピック {#related-topics}
 

@@ -54,7 +54,7 @@ export const SendSummary = ({
           </Text>
         </Flex>
         <Text fontSize="xs" color="body.medium" m={0}>
-          {formatEth(chosenAmount / ethPrice)} ETH
+          {formatEth(chosenAmount / ethPrice)} NEPH
         </Text>
       </Box>
       {/* Bottom section */}
@@ -96,7 +96,7 @@ export const SendSummary = ({
               {Intl.NumberFormat("en", {
                 maximumFractionDigits: 6,
               }).format(ETH_TRANSFER_FEE)}{" "}
-              ETH)
+              NEPH)
             </Text>
           </Text>
         </Box>

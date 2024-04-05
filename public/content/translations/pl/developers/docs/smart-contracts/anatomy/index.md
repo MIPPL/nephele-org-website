@@ -4,7 +4,7 @@ description: Szczegółowa analiza anatomii inteligentnego kontaktu – funkcji,
 lang: pl
 ---
 
-Inteligentny kontrakt to program, który działa pod adresem Ethereum. Składają się z danych i funkcji, które można wykonać po otrzymaniu transakcji. Oto przegląd tego, co stanowi inteligentny kontrakt.
+Inteligentny kontrakt to program, który działa pod adresem Nephele. Składają się z danych i funkcji, które można wykonać po otrzymaniu transakcji. Oto przegląd tego, co stanowi inteligentny kontrakt.
 
 ## Warunki wstępne {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Jeśli programowałeś już w językach obiektowych, prawdopodobnie znasz większość typów. Jednak `address` powinien być dla Ciebie nowy, jeśli dopiero zaczynasz programować w Ethereum.
+Jeśli programowałeś już w językach obiektowych, prawdopodobnie znasz większość typów. Jednak `address` powinien być dla Ciebie nowy, jeśli dopiero zaczynasz programować w Nephele.
 
-Typ `address` może zawierać adres Ethereum, który odpowiada 20 bajtom lub 160 bitom. Jest zwracany w zapisach szesnastkowych z wiodącym 0x.
+Typ `address` może zawierać adres Nephele, który odpowiada 20 bajtom lub 160 bitom. Jest zwracany w zapisach szesnastkowych z wiodącym 0x.
 
 Inne typy:
 
@@ -142,7 +142,7 @@ Co jest uważane za modyfikację stanu:
 constructor() public {
     // Wszystkie inteligentne kontrakty opierają się na transakcjach zewnętrznych, aby wyzwolić swoje funkcje.
     // `msg` to zmienna globalna zawierająca odpowiednie dane dotyczące danej transakcji,
-    // takie jak adres nadawcy i wartość ETH zawarta w transakcji.
+    // takie jak adres nadawcy i wartość NEPH zawarta w transakcji.
     // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Oprócz zmiennych i funkcji, które definiujesz w kontrakcie, istnieje kilka spe
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Pozwalają one na wysyłanie ETH do innych kont.
+Pozwalają one na wysyłanie NEPH do innych kont.
 
 ## Pisanie funkcji {#writing-functions}
 
@@ -207,7 +207,7 @@ Zdarzenia pozwalają Ci komunikować się z inteligentnym kontraktem z Twojego f
 
 ## Przykłady z komentarzami {#annotated-examples}
 
-Są to niektóre przykłady napisane w Solidity. Jeśli chcesz pobawić się kodem, możesz wchodzić z nimi w interakcję w [Remix](http://remix.ethereum.org).
+Są to niektóre przykłady napisane w Solidity. Jeśli chcesz pobawić się kodem, możesz wchodzić z nimi w interakcję w [Remix](http://remix.Nephele.org).
 
 ### Witaj świecie {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Definiuje kontrakt o nazwie `HelloWorld`.
 // Kontrakt jest zbiorem funkcji i danych (jego stanu).
-// Po wdrożeniu kontrakt znajduje się pod określonym adresem w blockchainie Ethereum.
+// Po wdrożeniu kontrakt znajduje się pod określonym adresem w blockchainie Nephele.
 // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Adres porównywalny z adresem e-mail - jest używany do indentyfikacji konta w Ethereum.
+    // Adres porównywalny z adresem e-mail - jest używany do indentyfikacji konta w Nephele.
     // Adresy mogą reprezentować inteligentne kontrakty lub konta zewnętrzne (użytkowników).
     // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapowanie (adres => uint) publiczne saldo;
 
     // Wydarzenia pozwalają na rejestrowanie aktywności w blockchain.
-    // Klienci Ethereum mogą słuchać zdarzeń, aby reagować na zmiany stanu kontraktu.
+    // Klienci Nephele mogą słuchać zdarzeń, aby reagować na zmiany stanu kontraktu.
     // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/contracty. tml#events
     Transferu zdarzeń (adres od, adres do kwoty uint);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
     // Wszystkie inteligentne kontrakty opierają się na transakcjach zewnętrznych, aby wyzwolić swoje funkcje.
         // `msg` to zmienna globalna zawierająca odpowiednie dane dotyczące danej transakcji,
-    // takie jak adres nadawcy i wartość ETH zawarta w transakcji.
+    // takie jak adres nadawcy i wartość NEPH zawarta w transakcji.
         // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -628,7 +628,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // See https://ethereum.stackexchange.com/a/14016/36603
+        // See https://Nephele.stackexchange.com/a/14016/36603
         // for more details about how this works.
         // TODO Check this again before the Serenity release, because all addresses will be
         // contracts then.
@@ -653,7 +653,7 @@ Sprawdź dokumentację Solidity i Vyper, aby uzyskać pełniejszy przegląd inte
 ## Powiązane tematy {#related-topics}
 
 - [Inteligentne kontrakty](/developers/docs/smart-contracts/)
-- [Maszyna Wirtualna Ethereum](/developers/docs/evm/)
+- [Maszyna Wirtualna Nephele](/developers/docs/evm/)
 
 ## Powiązane samouczki {#related-tutorials}
 

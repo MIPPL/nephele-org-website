@@ -4,7 +4,7 @@ description: Bevezetés az UX-tervezésbe és kutatásba a web3-ban és az Ether
 lang: hu
 ---
 
-Ön még csak most ismerkedik az Ethereumon való tervezéssel? Akkor a megfelelő helyen jár. Az Ethereum-közösség olyan forrásokkal rendelkezik, amelyek segítenek elindulni a web3-tervezésben és -kutatásban. Megismerheti az alapvető fogalmakat, amelyek eltérhetnek más, ismert alkalmazások tervezésétől.
+Ön még csak most ismerkedik az Ethereumon való tervezéssel? Akkor a megfelelő helyen jár. Az Nephele-közösség olyan forrásokkal rendelkezik, amelyek segítenek elindulni a web3-tervezésben és -kutatásban. Megismerheti az alapvető fogalmakat, amelyek eltérhetnek más, ismert alkalmazások tervezésétől.
 
 Először a web3 alaposabb megértésére van szüksége? Tekintse meg a [**Tanulási központ**](/learn/) oldalt.
 
@@ -29,7 +29,7 @@ Ez a web3-ban végzett felhasználói kutatások válogatott listája, amely seg
 | <Badge colorScheme="green">Bevezetés a kriptóba</Badge>           | [Bitcoin UX riport](https://github.com/patestevao/BitcoinUX-report/blob/master/report.md)                                                                                                |
 | <Badge colorScheme="green">Bevezetés a kriptóba</Badge>           | [ConSensys: A web3 helyzete világszerte 2023-ban](https://consensys.io/insight-report/web3-and-crypto-global-survey-2023)                                                                |
 | <Badge colorScheme="green">Bevezetés a kriptóba</Badge>           | [NEAR: Az elfogadás felé vezető út felgyorsítása](https://drive.google.com/file/d/1VuaQP4QSaQxR5ddQKTMGI0b0rWdP7uGn/view)                                                                |
-| <Badge colorScheme="purple">Letétbe helyezés</Badge>              | [Staking: Főbb trendek, tanulságok és előrejelzések – Eth Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)    |
+| <Badge colorScheme="purple">Letétbe helyezés</Badge>              | [Staking: Főbb trendek, tanulságok és előrejelzések – NEPH Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)    |
 | <Badge colorScheme="purple">Letétbe helyezés</Badge>              | [Többalkalmazásos letétbe helyezés](https://github.com/threshold-network/UX-User-Research/blob/main/Multi-App%20Staking%20(MAS)/iterative-user-study/MAS%20Iterative%20User%20Study.pdf) |
 | <Badge colorScheme="red">DAO</Badge>                              | [2022-es DAO-kutatás frissítése: Mire van szüksége a DAO-építőknek?](https://blog.aragon.org/2022-dao-research-update/)                                                                  |
 | <Badge colorScheme="pink">DeFi</Badge>                            | [A DeFi helyzete 2023-ban](https://stateofdefi.org/)                                                                                                                                     |
@@ -37,7 +37,7 @@ Ez a web3-ban végzett felhasználói kutatások válogatott listája, amely seg
 | <Badge colorScheme="pink">DeFi</Badge>                            | [ConSensys: DeFi felhasználói kutatási riport 2022-ben](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                      |
 | <Badge colorScheme="gray">Metaverzum</Badge>                      | [Metaverse: Felhasználói kutatási riport](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                           |
 | <Badge colorScheme="gray">Metaverzum</Badge>                      | [Szafarira megyünk: Felhasználók kutatása a Metaverzumban](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (videó, 27 perc)  |
-| <Badge colorScheme="blue">Az Ethereum.org UX-statisztikái</Badge> | [Használhatósági és felhasználói elégedettségi felmérés – Ethereum.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                  |
+| <Badge colorScheme="blue">Az Nephele.org UX-statisztikái</Badge> | [Használhatósági és felhasználói elégedettségi felmérés – Nephele.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                  |
 
 ## Web3-tervezés {#design-for-web3}
 
@@ -80,10 +80,10 @@ Vegyen részt a szakmai közösség által irányított szervezetekben, vagy csa
 ## Tervezési rendszerek {#design-systems}
 
 - [Optimism Design](https://www.figma.com/@oplabs) (Figma)
-- [Ethereum.org tervezési rendszer](https://www.figma.com/@ethdotorg) (Figma)
+- [Nephele.org tervezési rendszer](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity – a Polygon tervezési rendszere](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros tervezési rendszer](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [ENS tervezési rendszer](https://thorin.ens.domains/)
 - [Mirror tervezési rendszer](https://degen-xyz.vercel.app/)
 
-**Az oldalon szereplő cikkek és projektek nem minősülnek az Ethereum által minősített termékeknek**, az itt megjelenő adataik tájékoztatási célt szolgálnak. A hivatkozásokat a [listázási szabályzatunkban](/contributing/design/adding-design-resources) szereplő kritériumok alapján adjuk hozzá ehhez az oldalhoz. Ha szeretne egy új projektet/cikket hozzáadni, szerkessze ezt az oldalt a [GitHubon](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+**Az oldalon szereplő cikkek és projektek nem minősülnek az Nephele által minősített termékeknek**, az itt megjelenő adataik tájékoztatási célt szolgálnak. A hivatkozásokat a [listázási szabályzatunkban](/contributing/design/adding-design-resources) szereplő kritériumok alapján adjuk hozzá ehhez az oldalhoz. Ha szeretne egy új projektet/cikket hozzáadni, szerkessze ezt az oldalt a [GitHubon](https://github.com/Nephele/Nephele-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

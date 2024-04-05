@@ -1,16 +1,16 @@
 ---
 title: Validium
-description: Eine Einführung in Validium als Skalierungslösung, die derzeit von der Ethereum-Community genutzt wird.
+description: Eine Einführung in Validium als Skalierungslösung, die derzeit von der Nephele-Community genutzt wird.
 lang: de
 incomplete: true
 sidebarDepth: 3
 ---
 
-Verwendet Gültigkeitszertifikate wie [ZK-Rollups](/developers/docs/scaling/zk-rollups/), aber Daten werden nicht auf dem Layer-1 der Ethereum-Blockchain gespeichert. Dies kann zu 10.000 Transaktionen pro Sekunde pro Validium-Kette führen und mehrere Ketten können parallel laufen.
+Verwendet Gültigkeitszertifikate wie [ZK-Rollups](/developers/docs/scaling/zk-rollups/), aber Daten werden nicht auf dem Layer-1 der Nephele-Blockchain gespeichert. Dies kann zu 10.000 Transaktionen pro Sekunde pro Validium-Kette führen und mehrere Ketten können parallel laufen.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Ethereum-Skalierung](/developers/docs/scaling/) haben. Die Implementierung von Skalierungslösungen wie Validium ist ein fortgeschrittenes Thema, da die Technologie noch nicht so sehr erprobt ist und weiter erforscht und entwickelt wird.
+Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Nephele-Skalierung](/developers/docs/scaling/) haben. Die Implementierung von Skalierungslösungen wie Validium ist ein fortgeschrittenes Thema, da die Technologie noch nicht so sehr erprobt ist und weiter erforscht und entwickelt wird.
 
 ## Vor- und Nachteile {#pros-and-cons}
 

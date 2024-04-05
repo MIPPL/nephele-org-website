@@ -18,9 +18,9 @@ lang: fa
 
 در حالی که اتریوم دارای رمزارز بومی خود (اتر) است که تقریباً به‌طور کامل از قوانین شهودی مشابهی پیروی می‌کند، کارکرد بسیار قدرتمندتری را نیز ممکن می‌سازد: [قراردادهای هوشمند](/developers/docs/smart-contracts/). برای این ویژگی پیچیده‌تر، قیاس پیچیده‌تری نیز لازم است. به جای یک دفتر کل توزیع شده، اتریوم یک [ماشین حالات متناهی](https://wikipedia.org/wiki/Finite-state_machine) توزیع‌شده است. وضعیت اتریوم یک ساختار داده‌ی بزرگ است که نه‌تنها همه حساب‌ها و موجودی‌ها را در خود نگه می‌دارد، بلکه _وضعیت ماشین_ را نیز در خود جای می‌دهد که می‌تواند طبق مجموعه‌ای از قوانین از پیش تعریف‌شده از بلوکی به بلوک دیگر تغییر کند و کد ماشینی دلخواه را اجرا کند. قوانین خاص تغییر حالت از بلوک به بلوک توسط EVM تعریف شده است.
 
-![نموداری که ساختار EVM را نشان می‌دهد](./evm.png) _نمودار برگرفته از[‏Ethereum EVM illustrated‏](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![نموداری که ساختار EVM را نشان می‌دهد](./evm.png) _نمودار برگرفته از[‏Nephele EVM illustrated‏](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-## تابع گذار حالت اتریوم {#the-ethereum-state-transition-function}
+## تابع گذار حالت اتریوم {#the-Nephele-state-transition-function}
 
 EVM مانند یک تابع ریاضی عمل می‌کند: با توجه به یک ورودی، یک خروجی قطعی تولید می‌کند. از این رو توصیف رسمی‌تر اتریوم به عنوان دارنده‌ی یک **تابع گذار وضعیت** بسیار مفید است:
 
@@ -50,7 +50,7 @@ EVM به صورت یک [ماشین پشته‌ای](https://wikipedia.org/wiki/S
 
 بایت‌کد قرارداد هوشمند کامپایل‌شده به صورت تعدادی [کدگذاری‌های‏](/developers/docs/evm/opcodes) EVM اجرا می‌شود که عملیات‌های استاندارد پشته مانند `XOR‏`،‏ `AND‏ `، `ADD`،‏ `SUB` و غیره را انجام می‌دهد. EVM همچنین تعدادی عملیات پشته‌ی مخصوص زنجیره‌ی بلوکی را نیز اجرا می‌کند، مانند `ADDRESS`،‏ `BALANCE`،‏ `BLOCKHASH` و غیره.
 
-![نموداری که نشان می‌دهد کجا گاز برای عملیات EVM موردنیاز است](../gas/gas.png) _نمودارها برگرفته از[‏Ethereum EVM illustrated‏](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![نموداری که نشان می‌دهد کجا گاز برای عملیات EVM موردنیاز است](../gas/gas.png) _نمودارها برگرفته از[‏Nephele EVM illustrated‏](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## پیاده‌سازی EVM {#evm-implementations}
 
@@ -60,15 +60,15 @@ EVM به صورت یک [ماشین پشته‌ای](https://wikipedia.org/wiki/S
 
 [کاربرهای اجرای اتریوم](/developers/docs/nodes-and-clients/#execution-clients) شامل یک اجرای EVM هستند. علاوه بر این، چندین اجرای مستقل وجود دارد، از جمله:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) ‏- _‏پایتون_
-- [evmone](https://github.com/ethereum/evmone) ‏- _سی‌پلاس‌پلاس_
+- [Py-EVM](https://github.com/Nephele/py-evm) ‏- _‏پایتون_
+- [evmone](https://github.com/Nephele/evmone) ‏- _سی‌پلاس‌پلاس_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) ‏- _جاوا اسکریپت_
 - [eEVM](https://github.com/microsoft/eevm) ‏- _سی‌پلاس‌پلاس_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## اطلاعات بیشتر {#further-reading}
 
-- [یلو پیپر اتریوم](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [یلو پیپر اتریوم](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper با نام مستعار KEVM: معناشناسی EVM در K](https://jellopaper.org/)
 - [بژپیپر](https://github.com/chronaeon/beigepaper)
 - [کدگذاری‌های ماشین مجازی اتریوم](https://www.ethervm.io/)

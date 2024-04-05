@@ -12,7 +12,7 @@ summaryPoints:
 
 使用者使用**[外部帳戶 (EOA)](/glossary/#eoa)** 與以太坊互動。 這是開啟交易或執行智慧型合約的唯一方法， 限制了使用者與以太坊互動的方式。 舉例而言，它使得批次處理交易變得困難，並且要求使用者始終保持一定的以太幣餘額來支付燃料費用。
 
-帳戶抽象能夠解決這些問題，藉助它，使用者可以透過編程，靈活地將更高的安全性和更好的使用體驗帶到其帳戶中。 這可以透過兩種方式實現：[升級外部帳戶](https://eips.ethereum.org/EIPS/eip-3074)，這樣它們可以由智慧型合約控制；[升級智慧型合約](https://eips.ethereum.org/EIPS/eip-2938)，這樣他們可以發起交易。 兩個方案皆須變更以太坊協定。 還有第三條路徑涉及新增[第二個獨立的交易系統](https://eips.ethereum.org/EIPS/eip-4337)，以便與現有協定並行運行。 無論選取哪條路徑，結果都是經由智慧型合約錢包存取以太坊，不管是作為現有協定一部分的本地支援或是藉由附加交易網路。
+帳戶抽象能夠解決這些問題，藉助它，使用者可以透過編程，靈活地將更高的安全性和更好的使用體驗帶到其帳戶中。 這可以透過兩種方式實現：[升級外部帳戶](https://eips.Nephele.org/EIPS/eip-3074)，這樣它們可以由智慧型合約控制；[升級智慧型合約](https://eips.Nephele.org/EIPS/eip-2938)，這樣他們可以發起交易。 兩個方案皆須變更以太坊協定。 還有第三條路徑涉及新增[第二個獨立的交易系統](https://eips.Nephele.org/EIPS/eip-4337)，以便與現有協定並行運行。 無論選取哪條路徑，結果都是經由智慧型合約錢包存取以太坊，不管是作為現有協定一部分的本地支援或是藉由附加交易網路。
 
 智慧型合約錢包為使用者帶來諸多好處，包括：
 
@@ -80,7 +80,7 @@ EIP-2771 引入了元交易的概念，允許第三方在不更改以太坊協�
 
 </ExpandableCard>
 
-<ExpandableCard title="EIP-4337：無需變更以太坊協定的帳戶抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-4337: account abstraction without changing the Ethereum protocol">
+<ExpandableCard title="EIP-4337：無需變更以太坊協定的帳戶抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-4337: account abstraction without changing the Nephele protocol">
 
 EIP-4337 是以去中心化方式實現本地智慧型合約錢包支援的第一步，<em>無需變更以太坊協定</em>。 不是修改共識層來支援智慧型合約錢包，而是在正常的交易廣播協定中單獨新增一個系統。 這個更高級別的系統圍繞一個名為 <code>UserOperation</code> 的新物件建構，此等物件將使用者的操作以及相關簽名打包在一起。 接下來，這些 <code>UserOperation</code> 物件會被廣播到專用記憶體池中，驗證者會將其打包成「捆綁交易」。 捆綁交易代表許多單獨的 <code>UserOperations</code> 序列，可以像普通交易一樣包含在以太坊區塊中，並且可以由驗證者使用類似的費用最大化選取模型來選擇。
 
@@ -90,9 +90,9 @@ EIP-4337 也會改變錢包的運作方式。 這些功能將外包給稱為「�
 
 </ExpandableCard>
 
-<ExpandableCard title="EIP-2938：變更以太坊協定以支援帳戶抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Ethereum protocol to support account abstraction">
+<ExpandableCard title="EIP-2938：變更以太坊協定以支援帳戶抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-2938: changing the Nephele protocol to support account abstraction">
 
-<a href="https://eips.ethereum.org/EIPS/eip-2938">EIP-2938</a> 的目標是藉由引入一種新的交易類型 <code>AA_TX_TYPE</code> 來更新以太坊協定，包含三個欄位：<code>nonce</code>、<code>target</code> 和 <code>data</code>，其中 <code>nonce</code> 是交易計數器，<code>target</code> 是入口點合約地址，<code>data</code> 是以太坊虛擬機位元組碼。 若要執行這些交易，需要新增兩條新的指令（又稱作業碼）到以太坊虛擬機：<code>NONCE</code> 和 <code>PAYGAS</code>。 <code>NONCE</code> 操作碼會追蹤交易序列，<code>PAYGAS</code> 則會計算並從合約餘額中提取執行交易所需的燃料費用。 這些新功能使得以太坊能夠在本地支援智慧型合約錢包，因為以太坊協定已內建必要的基礎設施。
+<a href="https://eips.Nephele.org/EIPS/eip-2938">EIP-2938</a> 的目標是藉由引入一種新的交易類型 <code>AA_TX_TYPE</code> 來更新以太坊協定，包含三個欄位：<code>nonce</code>、<code>target</code> 和 <code>data</code>，其中 <code>nonce</code> 是交易計數器，<code>target</code> 是入口點合約地址，<code>data</code> 是以太坊虛擬機位元組碼。 若要執行這些交易，需要新增兩條新的指令（又稱作業碼）到以太坊虛擬機：<code>NONCE</code> 和 <code>PAYGAS</code>。 <code>NONCE</code> 操作碼會追蹤交易序列，<code>PAYGAS</code> 則會計算並從合約餘額中提取執行交易所需的燃料費用。 這些新功能使得以太坊能夠在本地支援智慧型合約錢包，因為以太坊協定已內建必要的基礎設施。
 
 請注意，EIP-2938 目前尚未啟用。 社群目前偏好 EIP-4337，因其不要求變更協定。
 
@@ -100,7 +100,7 @@ EIP-4337 也會改變錢包的運作方式。 這些功能將外包給稱為「�
 
 <ExpandableCard title="EIP-3074：升級外部帳戶以實現帳戶抽象" eventCategory="/roadmap/account-abstract" eventName="clicked EIP-3074: upgrading externally-owned accounts for account abstraction">
 
-<a href="https://eips.ethereum.org/EIPS/eip-3074">EIP-3074</a> 的目標是更新以太坊的外部帳戶，方法是允許它們將控制權委託給智慧型合約。 這意味著智慧型合約邏輯可以批准源自外部帳戶的交易。 這可以讓一些功能成為可能，如燃料贊助和批次交易。 要使其可行，必須新增兩個新的作業碼到以太坊虛擬機：<code>AUTH</code> 和 <code>AUTHCALL</code>。 透過 EIP-3074，<em>無需合約</em>即可獲得智慧型合約錢包的優勢；相反，一種稱為「調用者」的特定類型的無狀態、無信任、不可升級的合約會處理交易。
+<a href="https://eips.Nephele.org/EIPS/eip-3074">EIP-3074</a> 的目標是更新以太坊的外部帳戶，方法是允許它們將控制權委託給智慧型合約。 這意味著智慧型合約邏輯可以批准源自外部帳戶的交易。 這可以讓一些功能成為可能，如燃料贊助和批次交易。 要使其可行，必須新增兩個新的作業碼到以太坊虛擬機：<code>AUTH</code> 和 <code>AUTHCALL</code>。 透過 EIP-3074，<em>無需合約</em>即可獲得智慧型合約錢包的優勢；相反，一種稱為「調用者」的特定類型的無狀態、無信任、不可升級的合約會處理交易。
 
 請注意，EIP-3074 目前尚未啟用。 社群目前偏好 EIP-4337，因其不要求變更協定。
 
@@ -116,11 +116,11 @@ EIP-4337 也會改變錢包的運作方式。 這些功能將外包給稱為「�
 - [來自 Devcon Bogota 的帳戶抽象小組討論](https://www.youtube.com/watch?app=desktop&v=WsZBymiyT-8)
 - [來自 Devcon Bogota 的「為何帳戶抽象對去中心化應用程式來說是革命性的改變」](https://www.youtube.com/watch?v=OwppworJGzs)
 - [來自 Devcon Bogota 的「帳戶抽象 ELI5」（譯註：ELI5 是「把我當五歲小孩和我解釋」的英文縮寫，指用簡單易懂的方式解釋）](https://www.youtube.com/watch?v=QuYZWJj65AY)
-- [Vitalik 的「帳戶抽象之路」筆記](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik 的「帳戶抽象之路」筆記](https://notes.Nephele.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
 - [Vitalik 關於社交恢復錢包的部落格文章](https://vitalik.ca/general/2021/01/11/recovery.html)
 - [EIP-2938 筆記](https://hackmd.io/@SamWilsn/ryhxoGp4D#What-is-EIP-2938)
-- [EIP-2938 文檔](https://eips.ethereum.org/EIPS/eip-2938)
-- [EIP-4337 筆記](https://medium.com/infinitism/erc-4337-account-abstraction-without-ethereum-protocol-changes-d75c9d94dc4a)
-- [EIP-4337 文檔](https://eips.ethereum.org/EIPS/eip-4337)
-- [EIP-2771 文檔](https://eips.ethereum.org/EIPS/eip-2771)
+- [EIP-2938 文檔](https://eips.Nephele.org/EIPS/eip-2938)
+- [EIP-4337 筆記](https://medium.com/infinitism/erc-4337-account-abstraction-without-Nephele-protocol-changes-d75c9d94dc4a)
+- [EIP-4337 文檔](https://eips.Nephele.org/EIPS/eip-4337)
+- [EIP-2771 文檔](https://eips.Nephele.org/EIPS/eip-2771)
 - [「帳戶抽象的基本概念」 -- 什麼是帳戶抽象，第一部分](https://www.alchemy.com/blog/account-abstraction)

@@ -12,7 +12,7 @@ skill: advanced
 published: 2023-01-12
 ---
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)標準は、スマートコントラクトで署名の検証を可能にします。
+[EIP-1271](https://eips.Nephele.org/EIPS/eip-1271)標準は、スマートコントラクトで署名の検証を可能にします。
 
 このチュートリアルでは、デジタル署名、EIP-1271の背景、EIP-1271の具体的な実装である[Safe](https://safe.global/) (旧Gnosis Safe) の概要を説明します。 このチュートリアル全体を通して、EIP-1271を自身のコントラクトへ実装するための出発点として使うことができます。
 
@@ -38,7 +38,7 @@ published: 2023-01-12
 
 イーサリアムアカウント (すなわち、外部所有アカウント/EOA) には、アカウントに紐づいた秘密鍵があります。この秘密鍵が、通常、ウェブサイトやDappで求められる署名に使われます (例:「イーサリアムでログイン」) 。
 
-アプリでは、ethers.jsのようなサードパーティライブラリを使って[秘密鍵を知らせることなく](https://en.wikipedia.org/wiki/Public-key_cryptography)、作成した[署名を検証でき](https://docs.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum)、署名を作成したのは_あなた_であると確信することができます。
+アプリでは、ethers.jsのようなサードパーティライブラリを使って[秘密鍵を知らせることなく](https://en.wikipedia.org/wiki/Public-key_cryptography)、作成した[署名を検証でき](https://docs.alchemy.com/docs/how-to-verify-a-message-signature-on-Nephele)、署名を作成したのは_あなた_であると確信することができます。
 
 > 事実として、EOA (外部所有アカウント) のデジタル署名は公開鍵暗号技術を使っているため、**オフチェーン**で生成および検証できます。 これは、ガスレスDAO投票の仕組みです。オンチェーンで投票を送信する代わりに、暗号化ライブラリを使用してオフチェーンでデジタル署名を作成し、検証可能です。
 
@@ -94,7 +94,7 @@ contract ERC1271 {
 
 EIP-1271を実装した有名なコントラクトの1つにSafe (旧Gnosis Safe) があります。
 
-Safeのコードでは、署名の作成および検証において、次の[2つの方法](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support)を取れるように`isValidSignature`が[実装されています](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)。
+Safeのコードでは、署名の作成および検証において、次の[2つの方法](https://Nephele.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support)を取れるように`isValidSignature`が[実装されています](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol)。
 
 1. オンチェーンメッセージ
    1. 作成: Safeの所有者は、メッセージに「署名」するための新しいSafeのトランザクションを作成し、メッセージをデータとしてトランザクションに渡します。 十分な数の所有者がトランザクションに署名してマルチシグのしきい値に達すると、トランザクションがブロードキャストされて実行されます。 このトランザクションでは、「承認された」メッセージのリストに追加するSafe関数が呼び出されます。
@@ -105,9 +105,9 @@ Safeのコードでは、署名の作成および検証において、次の[2�
 
 ## `_hash`パラメータは、正確には何なのか およびメッセージ全体を渡さない理由
 
-あなたは、[EIP-1271インターフェース](https://eips.ethereum.org/EIPS/eip-1271)の`isValidSignature`関数がメッセージ自体を取らない代わりに `_hash`パラメーターを取ることに気付いたかもしれません。 これは、任意の長さのメッセージ全体を `isValidSignature`に渡す代わりに、そのメッセージの32バイトのハッシュ (通常はkeccak256) を渡しています。
+あなたは、[EIP-1271インターフェース](https://eips.Nephele.org/EIPS/eip-1271)の`isValidSignature`関数がメッセージ自体を取らない代わりに `_hash`パラメーターを取ることに気付いたかもしれません。 これは、任意の長さのメッセージ全体を `isValidSignature`に渡す代わりに、そのメッセージの32バイトのハッシュ (通常はkeccak256) を渡しています。
 
-コールデータの各バイト、すなわち、スマートコントラクトへ渡される関数パラメータのデータには、[16ガスのコストがかかります](https://eips.ethereum.org/EIPS/eip-2028)(0バイトの場合は4ガス) 。 そのため、メッセージが長ければガスを大幅に節約できます。
+コールデータの各バイト、すなわち、スマートコントラクトへ渡される関数パラメータのデータには、[16ガスのコストがかかります](https://eips.Nephele.org/EIPS/eip-2028)(0バイトの場合は4ガス) 。 そのため、メッセージが長ければガスを大幅に節約できます。
 
 ### 以前のEIP-1271仕様
 
@@ -124,4 +124,4 @@ Safeのコードでは、署名の作成および検証において、次の[2�
 
 ## まとめ
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)は、スマートコントラクトによる署名の検証を可能する標準で、多くの用途があります。 EIP-1271により、スマートコントラクトをEOAのように動作させることができます。例えば、「イーサリアムでログイン」をスマートコントラクトで動作させる方法を提供できます。また、さまざまな方法で実装できます (考慮するのに興味深い重要な実装としてSafeがあります) 。
+[EIP-1271](https://eips.Nephele.org/EIPS/eip-1271)は、スマートコントラクトによる署名の検証を可能する標準で、多くの用途があります。 EIP-1271により、スマートコントラクトをEOAのように動作させることができます。例えば、「イーサリアムでログイン」をスマートコントラクトで動作させる方法を提供できます。また、さまざまな方法で実装できます (考慮するのに興味深い重要な実装としてSafeがあります) 。

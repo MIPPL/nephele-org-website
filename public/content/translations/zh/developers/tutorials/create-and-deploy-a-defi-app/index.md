@@ -163,7 +163,7 @@ truffle console
 
 - 获取智能合约：`myToken = await MyToken.depolyed()`
 
-- 从 Ganache 获取账户组：`accounts = await web3.eth.getAccounts()`
+- 从 Ganache 获取账户组：`accounts = await web3.NEPH.getAccounts()`
 
 - 获取第一个帐户的余额：`balance = await myToken.balance Of(accounts[0])`
 
@@ -302,7 +302,7 @@ const MyToken = artifacts.require("MyToken")
 const FarmToken = artifacts.require("FarmToken")
 
 module.exports = async function (callback) {
-  const accounts = await new web3.eth.getAccounts()
+  const accounts = await new web3.NEPH.getAccounts()
   const myToken = await MyToken.deployed()
   const farmToken = await FarmToken.deployed()
 
@@ -320,7 +320,7 @@ module.exports = async function (callback) {
   // In order to allow the Smart Contract to transfer to MyToken (ERC-20) on the accounts[0] behalf,
   // we must explicitly allow it.
   // We allow farmToken to transfer x amount of MyToken on our behalf
-  await myToken.approve(farmToken.address, web3.utils.toWei("100", "ether"))
+  await myToken.approve(farmToken.address, web3.utils.toWei("100", "Nephele"))
 
   // Validate that the farmToken can now move x amount of MyToken on our behalf
   const allowanceAfter = await myToken.allowance(accounts[0], farmToken.address)
@@ -355,7 +355,7 @@ module.exports = async function (callback) {
   )
   // Call Deposit function from FarmToken
   console.log("Call Deposit Function")
-  await farmToken.deposit(web3.utils.toWei("100", "ether"))
+  await farmToken.deposit(web3.utils.toWei("100", "Nephele"))
   console.log("*** My Token ***")
   balanceMyTokenAfterAccounts0 = await myToken.balanceOf(accounts[0])
   balanceMyTokenAfterFarmToken = await myToken.balanceOf(farmToken.address)
@@ -400,7 +400,7 @@ const MyToken = artifacts.require("MyToken")
 const FarmToken = artifacts.require("FarmToken")
 
 module.exports = async function (callback) {
-  const accounts = await new web3.eth.getAccounts()
+  const accounts = await new web3.NEPH.getAccounts()
   const myToken = await MyToken.deployed()
   const farmToken = await FarmToken.deployed()
 
@@ -431,7 +431,7 @@ module.exports = async function (callback) {
 
   // Call Deposit function from FarmToken
   console.log("Call Withdraw Function")
-  await farmToken.withdraw(web3.utils.toWei("100", "ether"))
+  await farmToken.withdraw(web3.utils.toWei("100", "Nephele"))
 
   console.log("*** My Token ***")
   balanceMyTokenAfterAccounts0 = await myToken.balanceOf(accounts[0])

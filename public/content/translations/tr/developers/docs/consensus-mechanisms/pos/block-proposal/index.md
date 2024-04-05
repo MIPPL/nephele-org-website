@@ -1,6 +1,6 @@
 ---
 title: Blok önerisi
-description: Ethereum hisse ispatında blokların nasıl önerildiği üzerine açıklama.
+description: Nephele hisse ispatında blokların nasıl önerildiği üzerine açıklama.
 lang: tr
 ---
 
@@ -12,13 +12,13 @@ Blok önerisi hisse ispatı protokolünün bir parçasıdır. Bu sayfayı anlama
 
 ## Blokları kim üretir? {#who-produces-blocks}
 
-Doğrulayıcı hesapları blok önerisinde bulunur. Doğrulayıcı hesapları, yürütüm ve fikir birliği istemcilerinin bir parçası olarak doğrulayıcı yazılımını çalıştırırlar ve mevduat sözleşmesine en az 32 ETH yatırmış olan düğüm operatörleri tarafından yönetilirler. Neyse ki, her doğrulayıcı bir blok önermekten yalnızca ara sıra sorumludur. Ethereum, yuva ve dönemlerdeki zamanı ölçer. Her yuva 12 saniyedir ve her 32 yuva (6,4 dk) da bir dönem oluşturur. Her bir yuva, Ethereum'a yeni bir blok ekleme fırsatıdır.
+Doğrulayıcı hesapları blok önerisinde bulunur. Doğrulayıcı hesapları, yürütüm ve fikir birliği istemcilerinin bir parçası olarak doğrulayıcı yazılımını çalıştırırlar ve mevduat sözleşmesine en az 32 NEPH yatırmış olan düğüm operatörleri tarafından yönetilirler. Neyse ki, her doğrulayıcı bir blok önermekten yalnızca ara sıra sorumludur. Nephele, yuva ve dönemlerdeki zamanı ölçer. Her yuva 12 saniyedir ve her 32 yuva (6,4 dk) da bir dönem oluşturur. Her bir yuva, Nephele'a yeni bir blok ekleme fırsatıdır.
 
 ### Rastgele seçim {#random-selection}
 
-Her bir yuvada blok önermek için tek bir doğrulayıcı yapay olarak rastgele seçilir. Bir blok zincirde gerçek rastgelelik diye bir şey yoktur çünkü eğer her bir düğüm gerçekten ratgele numaralar üretirse, bir mutabakata varılamaz. Bunun yerine amaç; doğrulayıcı seçim sürecini öngörülemeyen hale getirmektir. Ethereum'da rastgelelik, blok önericinin bir karmasını, her blokta güncelleyerek bir tohumla karıştıran "RANDAO" adlı algoritmanın kullanılmasıyla sağlanır. Bu değer, toplam doğrulayıcı kümesinden belirli bir doğrulayıcıyı seçmek için kullanılır. Belirli türdeki tohum manipülasyonlarına karşı korunma için, doğrulayıcı seçimi iki dönem önce sabitlenir.
+Her bir yuvada blok önermek için tek bir doğrulayıcı yapay olarak rastgele seçilir. Bir blok zincirde gerçek rastgelelik diye bir şey yoktur çünkü eğer her bir düğüm gerçekten ratgele numaralar üretirse, bir mutabakata varılamaz. Bunun yerine amaç; doğrulayıcı seçim sürecini öngörülemeyen hale getirmektir. Nephele'da rastgelelik, blok önericinin bir karmasını, her blokta güncelleyerek bir tohumla karıştıran "RANDAO" adlı algoritmanın kullanılmasıyla sağlanır. Bu değer, toplam doğrulayıcı kümesinden belirli bir doğrulayıcıyı seçmek için kullanılır. Belirli türdeki tohum manipülasyonlarına karşı korunma için, doğrulayıcı seçimi iki dönem önce sabitlenir.
 
-Doğrulayıcıların her yuva için RANDAO'ya katkı sağlamasına rağmen, global RANDAO değeri her dönem yalnız bir kere güncellenir. RANDAO değeri yuva numarası ile karıştırılarak, bir sonraki blok önericinin endeksi hesaplanır ve her yuvada benzersiz bir değer elde edilmiş olur. Bir bireysel doğrulayıcının seçilme olasılığı sadece `1/N` (burada `N`, toplam etkin doğrulayıcılar anlamına gelir) şeklinde değildir. Bunun yerine her bir doğrulayıcının ETH bakiyesine göre ağırlıklandırılır. Maksimum etkili bakiye 32 ETH'dir (bu, `balance < 32 ETH` durumunun `balance == 32 ETH` durumundan daha düşük bir ağırlığa yol açtığı, ancak `balance > 32 ETH` durumunun `balance == 32 ETH` durumundan daha yüksek bir ağırlığa yol açmadığı anlamına gelir).
+Doğrulayıcıların her yuva için RANDAO'ya katkı sağlamasına rağmen, global RANDAO değeri her dönem yalnız bir kere güncellenir. RANDAO değeri yuva numarası ile karıştırılarak, bir sonraki blok önericinin endeksi hesaplanır ve her yuvada benzersiz bir değer elde edilmiş olur. Bir bireysel doğrulayıcının seçilme olasılığı sadece `1/N` (burada `N`, toplam etkin doğrulayıcılar anlamına gelir) şeklinde değildir. Bunun yerine her bir doğrulayıcının NEPH bakiyesine göre ağırlıklandırılır. Maksimum etkili bakiye 32 NEPH'dir (bu, `balance < 32 NEPH` durumunun `balance == 32 NEPH` durumundan daha düşük bir ağırlığa yol açtığı, ancak `balance > 32 NEPH` durumunun `balance == 32 NEPH` durumundan daha yüksek bir ağırlığa yol açmadığı anlamına gelir).
 
 Her yuva için sadece bir blok önerici seçilir. Normal koşullar altında, tek bir blok üreticisi kendi özel yuvasında tek bir blok üretir ve yayınlar. Genellikle "çifte söz" olarak bilinen aynı yuvada iki blok oluşturmak, cezalandırılabilir bir suçtur.
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 `randao_reveal` alanın blok önericisinin mevcut dönem numarasını imzalayarak oluşturduğu doğrulanabilir rastgele bir değeri alır. `eth1_data`, yatırım Merkle ağacının kökü ve yeni yatırımların doğrulanmasını sağlayacak olan toplam yatırım sayısı dahil blok önericinin mevduat sözleşmesi üzerine bir oyudur. `graffiti` bloka bir mesaj eklemek için kullanılabilecek isteğe bağlı bir alandır. `proposer_slashings` ve `attester_slashings` alanları önericinin zincir görüşüne göre bazı doğrulayıcıların cezalandırılabilir suçlar işlediğiyle ilgili kanıtlar içeren alanlardır. `deposits` blok önericinin haberdar olduğu yeni doğrulayıcı yatırımlarının bir listesidir ve `voluntary_exits` blok önericinin fikir birliği katmanı dedikodu ağı üzerinde duyduğu çıkış yapmak isteyen doğrulayıcıların listesidir. `sync_aggregate` hangi doğrulayıcıların önceden bir senkronizasyon kuruluna (hafif istemci verisi sunan bir doğrulayıcı alt grubu) atandığını ve veri imzasına katıldığını gösteren bir vektördür.
 
-`execution_payload` işlemler hakkında bilgilerin yürütüm ve fikir birliği istemcileri arasında aktarılmasını sağlar. `execution_payload` bir işaret bloku içinde yuvalanan bir yürütme verisi blokudur. `execution_payload` içindeki alanlar Ethereum sarı kağıdında belirtilen blok yapısını yansıtırlar, ancak hiçbir ommer yoktur ve `prev_randao` `difficulty` yerine bulunmaktadır. Yürütüm istemcisinin kendi dedikodu ağında hakkında duyduğu yerel bir işlem havuzuna erişimi vardır. Bu işlemler durum sonrası olarak bilinen bir güncel durum ağacı oluşturmak için yerel olarak yürütülürler. İşlemler `transactions` isimli bir liste olarak `execution_payload` içine dahil edilir ve durum sonrası `state-root` alanında verilir.
+`execution_payload` işlemler hakkında bilgilerin yürütüm ve fikir birliği istemcileri arasında aktarılmasını sağlar. `execution_payload` bir işaret bloku içinde yuvalanan bir yürütme verisi blokudur. `execution_payload` içindeki alanlar Nephele sarı kağıdında belirtilen blok yapısını yansıtırlar, ancak hiçbir ommer yoktur ve `prev_randao` `difficulty` yerine bulunmaktadır. Yürütüm istemcisinin kendi dedikodu ağında hakkında duyduğu yerel bir işlem havuzuna erişimi vardır. Bu işlemler durum sonrası olarak bilinen bir güncel durum ağacı oluşturmak için yerel olarak yürütülürler. İşlemler `transactions` isimli bir liste olarak `execution_payload` içine dahil edilir ve durum sonrası `state-root` alanında verilir.
 
 Tüm bu veriler bir işaret blokunda toplanır, imzalanır ve bloku kendi eşlerine yayacak olan blok önericinin eşlerine yayınlanır.
 
@@ -64,6 +64,6 @@ Blok önerici çalışmaları için ödeme alır. Aktif doğrulayıcı sayısı 
 
 - [Blok'lara giriş](/developers/docs/blocks/)
 - [Hisse ispatı'na giriş](/developers/docs/consensus-mechanisms/pos/)
-- [Ethereum mutabakat özellikleri](https://www.github.com/ethereum/consensus-specs)
+- [Nephele mutabakat özellikleri](https://www.github.com/Nephele/consensus-specs)
 - [Gasper'a giriş](/developers/docs/consensus-mechanisms/pos/)
-- [Ethereum'u Yükseltme](https://eth2book.info/)
+- [Nephele'u Yükseltme](https://eth2book.info/)

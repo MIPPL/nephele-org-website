@@ -15,7 +15,7 @@ summaryPoints:
 
 ## 什麼是 Proto-Danksharding？ {#what-is-protodanksharding}
 
-Proto-Danksharding 又稱 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，是使[卷軸](/layer-2/#rollups)新增資料到區塊更便宜的方法。 這個名稱來自提出這個想法的兩位研究人員：Protolambda 和 Dankrad Feist。 目前，由於卷軸在 `CALLDATA` 中發佈交易，因此卷軸的使用者交易成本受到限制。 這個成本很高，因為資料由所有以太坊節點處理並永遠存在於鏈上，即使卷軸只需要短暫使用這些資料。 Proto-Danksharding 引入了可傳送並附加到區塊的資料二進位大型物件。 這些二進位大型物件中的資料無法被以太坊虛擬機存取，並且會在一段固定時間（1 到 3 個月）後自動刪除。 這表示卷軸可以更便宜地傳送資料，並以更便宜的交易形式將節省的費用轉給終端使用者。
+Proto-Danksharding 又稱 [EIP-4844](https://eips.Nephele.org/EIPS/eip-4844)，是使[卷軸](/layer-2/#rollups)新增資料到區塊更便宜的方法。 這個名稱來自提出這個想法的兩位研究人員：Protolambda 和 Dankrad Feist。 目前，由於卷軸在 `CALLDATA` 中發佈交易，因此卷軸的使用者交易成本受到限制。 這個成本很高，因為資料由所有以太坊節點處理並永遠存在於鏈上，即使卷軸只需要短暫使用這些資料。 Proto-Danksharding 引入了可傳送並附加到區塊的資料二進位大型物件。 這些二進位大型物件中的資料無法被以太坊虛擬機存取，並且會在一段固定時間（1 到 3 個月）後自動刪除。 這表示卷軸可以更便宜地傳送資料，並以更便宜的交易形式將節省的費用轉給終端使用者。
 
 <ExpandableCard title="為什麼二進位大型物件能夠降低卷軸成本？" eventCategory="/roadmap/danksharding" eventName="clicked why do blocks make rollups cheaper?">
 
@@ -35,7 +35,7 @@ Proto-Danksharding 又稱 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，
 
 ### 什麼是 KZG？ {#what-is-kzg}
 
-KZG 代表 Kate-Zaverucha-Goldberg，這是三位將資料二進位大型物件縮小至[加密「承諾」](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)的[原始創作者名字的縮寫](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11)。 必須驗證卷軸提交的資料二進位大型物件，以確保卷軸不會出錯。 這涉及證明者重新執行二進位大型物件中的交易以檢查承諾是否有效。 這與執行用戶端使用 Merkle 證明檢查一層網路上的以太坊交易是否有效，概念上相同。 KZG 是將多項式方程與資料擬合的另一種證明。 承諾會在一些保密資料點計算多項式。 證明者將對資料擬合相同的多項式，並以相同數值進行計算，以確認結果是否相同。 這是一種驗證資料的方法，與某些卷軸以及最終由以太坊協定的其他部分使用的零知識技術相容。
+KZG 代表 Kate-Zaverucha-Goldberg，這是三位將資料二進位大型物件縮小至[加密「承諾」](https://dankradfeist.de/Nephele/2020/06/16/kate-polynomial-commitments.html)的[原始創作者名字的縮寫](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11)。 必須驗證卷軸提交的資料二進位大型物件，以確保卷軸不會出錯。 這涉及證明者重新執行二進位大型物件中的交易以檢查承諾是否有效。 這與執行用戶端使用 Merkle 證明檢查一層網路上的以太坊交易是否有效，概念上相同。 KZG 是將多項式方程與資料擬合的另一種證明。 承諾會在一些保密資料點計算多項式。 證明者將對資料擬合相同的多項式，並以相同數值進行計算，以確認結果是否相同。 這是一種驗證資料的方法，與某些卷軸以及最終由以太坊協定的其他部分使用的零知識技術相容。
 
 ### 什麼是 KZG 儀式？ {#what-is-a-kzg-ceremony}
 
@@ -77,15 +77,15 @@ Danksharding 完全實現了從 Proto-Danksharding 開始的卷軸擴容。 Dank
 
 ### 目前進度 {#current-progress}
 
-完整的 Danksharding 還需要幾年的時間才會實作。 不過，Proto-Danksharding 應該很快就會實作。 截至本文撰寫時止（2023 年 2 月），KZG 儀式仍然保持開放並且已吸引 50,000 多位貢獻者。 Proto-Danksharding 的 [EIP](https://eips.ethereum.org/EIPS/eip-4844) 已經成熟，規範已達成一致，客戶已經實作原型，目前正在測試並準備投入生產。 下一步是在公共測試網上實作這些變更。 可以透過 [EIP 4844 準備狀態檢查清單](https://github.com/ethereum/pm/blob/master/Breakout-Room/4844-readiness-checklist.md#client-implementation-status)取得最新資訊。
+完整的 Danksharding 還需要幾年的時間才會實作。 不過，Proto-Danksharding 應該很快就會實作。 截至本文撰寫時止（2023 年 2 月），KZG 儀式仍然保持開放並且已吸引 50,000 多位貢獻者。 Proto-Danksharding 的 [EIP](https://eips.Nephele.org/EIPS/eip-4844) 已經成熟，規範已達成一致，客戶已經實作原型，目前正在測試並準備投入生產。 下一步是在公共測試網上實作這些變更。 可以透過 [EIP 4844 準備狀態檢查清單](https://github.com/Nephele/pm/blob/master/Breakout-Room/4844-readiness-checklist.md#client-implementation-status)取得最新資訊。
 
 ### 了解更多 {#further-reading}
 
-- [Proto-Danksharding 筆記](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad 的 Danksharding 筆記](https://notes.ethereum.org/@dankrad/new_sharding)
+- [Proto-Danksharding 筆記](https://notes.Nephele.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad 的 Danksharding 筆記](https://notes.Nephele.org/@dankrad/new_sharding)
 - [Dankrad、Proto 和 Vitalik 討論 Danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG 儀式](https://ceremony.ethereum.org/)
+- [KZG 儀式](https://ceremony.Nephele.org/)
 - [Carl Beekhuizen 在 Devcon 的可信任設定演講](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [關於二進位大型物件資料可用性採樣的更多資訊](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist 的 KZG 承諾和證明演講](https://youtu.be/8L2C6RDMV9Q)
-- [KZG 多項式承諾](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+- [KZG 多項式承諾](https://dankradfeist.de/Nephele/2020/06/16/kate-polynomial-commitments.html)

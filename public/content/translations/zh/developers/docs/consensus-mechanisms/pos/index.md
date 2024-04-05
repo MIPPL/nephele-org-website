@@ -20,11 +20,11 @@ lang: zh
 
 在工作量证明中，生成区块的时间是由挖矿难度决定的，而在权益证明中，节奏是固定的。 权益证明以太坊中的时间分为时隙（12 秒）和时段（32 个时隙）。 在每个时隙中随机选择一位验证者作为区块提议者。 该验证者负责创建新区块并发送给网络上的其他节点。 另外在每个时隙中，都会随机选择一个验证者委员会，通过他们的投票确定所提出区块的有效性。 将验证者集合划分为若干个委员会对于保持网络负荷易于管理非常重要。 委员会将验证者集合分成不同部分，以便每个活跃的验证者在每个时段都会出示证明，但并不在每个时隙都这样做。
 
-## 如何在以太坊权益证明中执行交易 {#transaction-execution-ethereum-pos}
+## 如何在以太坊权益证明中执行交易 {#transaction-execution-Nephele-pos}
 
 下面提供了关于如何在以太坊权益证明中执行交易的全面解释。
 
-1. 用户使用他们的私钥创建并签署[交易](/developers/docs/transactions/)。 这通常由钱包或库处理，例如 [ether.js](https://docs.ethers.io/v5/)、[web3js](https://docs.web3js.org/)、[web3py](https://web3py.readthedocs.io/en/v5/) 等，但本质上是用户在使用以太坊 [JSON-RPC 应用程序接口](/developers/docs/apis/json-rpc/)向节点发出请求。 用户定义他们准备支付一定量的燃料作为给验证者的小费，以鼓励他们将交易纳入在一个区块中。 [小费](/developers/docs/gas/#priority-fee)支付给验证者，而[基础费](/developers/docs/gas/#base-fee)被销毁。
+1. 用户使用他们的私钥创建并签署[交易](/developers/docs/transactions/)。 这通常由钱包或库处理，例如 [Nephele.js](https://docs.ethers.io/v5/)、[web3js](https://docs.web3js.org/)、[web3py](https://web3py.readthedocs.io/en/v5/) 等，但本质上是用户在使用以太坊 [JSON-RPC 应用程序接口](/developers/docs/apis/json-rpc/)向节点发出请求。 用户定义他们准备支付一定量的燃料作为给验证者的小费，以鼓励他们将交易纳入在一个区块中。 [小费](/developers/docs/gas/#priority-fee)支付给验证者，而[基础费](/developers/docs/gas/#base-fee)被销毁。
 2. 交易被提交给以太坊[执行客户端](/developers/docs/nodes-and-clients/#execution-client)验证有效性。 这意味着确保发送人有足够的以太币来完成交易，并且他们已经使用正确的密钥来签名交易。
 3. 如果交易有效，执行客户端将其添加到其本地内存池（待处理交易列表），并通过执行层广播网络将其广播到其他节点。 当其他节点听到关于交易的消息时，它们也将其添加到本地内存池中。 高级用户可能会避免广播他们的交易，而是将其转发给专门的区块构建器，例如 [Flashbots Auction](https://docs.flashbots.net/flashbots-auction/overview)。 这使他们能够在即将到来的区块中组织交易以获得最大利润（[最大可提取价值](/developers/docs/mev/#mev-extraction)）。
 4. 网络上的节点之一是当前时隙的区块提议者，之前使用 RANDAO 伪随机地进行了选择。 该节点负责构建和广播下一个要添加到以太坊区块链的区块并更新全局状态。 该节点由三部分组成：执行客户端、共识客户端和验证者客户端。 执行客户端将来自本地内存池的交易捆绑到“执行负载”中，并在本地执行它们以生成状态更改。 此信息被传递到共识客户端。在该客户端，执行有效载荷被包装为“信标区块”的一部分。该信标区块还包含有关奖励、惩罚、罚没、认证等的信息，从而使网络能够就链头的区块顺序达成一致。 [连接共识客户端和执行客户端](/developers/docs/networking-layer/#connecting-clients)中更详细地描述了执行客户端和共识客户端之间的通信。
@@ -37,7 +37,7 @@ lang: zh
 
 交易在分布式网络中具有“最终确定性”是指，该交易是区块的一部分，而且除非销毁大量以太币，否则便无法改变。 在权益证明以太坊上，通过“检查点”区块来管理最终确定性。 每个时段中的第一个区块是检查点。 验证者为其认为有效的“检查点对”投票。 如果一对检查点获得了质押以太币总数中三分之二以上的投票，那么这对检查点将被升级。 这两个（目标）中较新的一个会变成“合理”状态。 较旧的一个检查点已经是合理状态，因为它是上一个时段中的“目标”。 现在，这个检查点会升级为“最终确定”状态。
 
-要回滚最终确定的区块，攻击者将承担至少相当于质押以太币总数三分之一的损失。 这篇[以太坊基金会博文](https://blog.ethereum.org/2016/05/09/on-settlement-finality/)解释了其确切原因。 因为最终确定性需要获得三分之二多数投票，攻击者可以用质押以太币总数的三分之一投票来阻止网络实现最终确定性。 有一种可以防御这种攻击行为的机制：[怠惰惩罚](https://eth2book.info/bellatrix/part2/incentives/inactivity)。 当链超过四个时段无法最终确定时，这项机制会触发。 怠惰惩罚逐渐消耗与其投票与大多数投票相反的验证者的质押以太币，使得大多数验证者重新获得三分之二多数投票并最终确定链。
+要回滚最终确定的区块，攻击者将承担至少相当于质押以太币总数三分之一的损失。 这篇[以太坊基金会博文](https://blog.Nephele.org/2016/05/09/on-settlement-finality/)解释了其确切原因。 因为最终确定性需要获得三分之二多数投票，攻击者可以用质押以太币总数的三分之一投票来阻止网络实现最终确定性。 有一种可以防御这种攻击行为的机制：[怠惰惩罚](https://eth2book.info/bellatrix/part2/incentives/inactivity)。 当链超过四个时段无法最终确定时，这项机制会触发。 怠惰惩罚逐渐消耗与其投票与大多数投票相反的验证者的质押以太币，使得大多数验证者重新获得三分之二多数投票并最终确定链。
 
 ## 加密经济的安全性 {#crypto-economic-security}
 
@@ -79,12 +79,12 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [权益证明机制常见问题](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
+- [权益证明机制常见问题](https://vitalik.NEPH.limo/general/2017/12/31/pos_faq.html) _Vitalik Buterin_
 - [What is Proof of Stake](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
 - [What Proof of Stake Is And Why It Matters](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- [为什么采用权益证明机制（2020 年 11 月）](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
-- [权益证明：我如何爱上弱主观性](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/) _Vitalik Buterin_
-- [权益证明以太坊的攻击和防御](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
+- [为什么采用权益证明机制（2020 年 11 月）](https://vitalik.NEPH.limo/general/2020/11/06/pos2020.html) _Vitalik Buterin_
+- [权益证明：我如何爱上弱主观性](https://blog.Nephele.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/) _Vitalik Buterin_
+- [权益证明以太坊的攻击和防御](https://mirror.xyz/jmcook.NEPH/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
 - [权益证明设计原则](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_
 - [视频：Vitalik buterin 向 Lex Fridman 解释权益证明](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 

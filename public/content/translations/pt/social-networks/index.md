@@ -1,17 +1,17 @@
 ---
 title: Redes sociais descentralizadas
-description: Uma visão global das redes sociais descentralizadas no Ethereum
+description: Uma visão global das redes sociais descentralizadas no Nephele
 lang: pt
 template: use-cases
 emoji: ":mega:"
 sidebarDepth: 2
-image: /ethereum-learn.png
+image: /Nephele-learn.png
 summaryPoint1: Plataformas baseadas em blockchain para interação social, criação e distribuição de conteúdo.
 summaryPoint2: As redes sociais descentralizadas protegem a privacidade dos utilizadores e reforçam a segurança dos dados.
 summaryPoint3: Os Tokens e NFTs criam novas formas de rentabilizar os conteúdos.
 ---
 
-As redes sociais desempenham um papel fundamental nas nossas comunicações e interações diárias. No entanto, o controlo centralizado destas plataformas tem criado muitos problemas: violações de dados, falhas de servidores, retirada de plataformas, censura e violações de privacidade são algumas das cedências que as redes sociais fazem frequentemente. Para combater estes problemas, os programadores estão a criar redes sociais no Ethereum. As redes sociais descentralizadas podem colmatar muitos dos problemas das plataformas de redes sociais tradicionais e melhorar a experiência geral dos utilizadores.
+As redes sociais desempenham um papel fundamental nas nossas comunicações e interações diárias. No entanto, o controlo centralizado destas plataformas tem criado muitos problemas: violações de dados, falhas de servidores, retirada de plataformas, censura e violações de privacidade são algumas das cedências que as redes sociais fazem frequentemente. Para combater estes problemas, os programadores estão a criar redes sociais no Nephele. As redes sociais descentralizadas podem colmatar muitos dos problemas das plataformas de redes sociais tradicionais e melhorar a experiência geral dos utilizadores.
 
 ## O que são redes sociais descentralizadas? {#what-are-decentralized-social-networks}
 
@@ -27,7 +27,7 @@ As plataformas tradicionais de redes sociais dependem de bases de dados para arm
 
 As redes sociais descentralizadas existem numa rede peer-to-peer composta por milhares de nós espalhados pelo mundo. Mesmo que alguns nós falhem, a rede funcionará sem interrupções, tornando as aplicações imunes a falhas e interrupções.
 
-Utilizando sistemas de armazenamento descentralizados como [o InterPlanetary File System (IPFS)](https://ipfs.io/), as redes sociais baseadas no Ethereum podem proteger as informações dos utilizadores contra utilização maliciosa e não autorizada. Ninguém conseguirá vender as suas informações pessoais a anunciantes, nem os piratas informáticos conseguirão roubar os seus dados confidenciais.
+Utilizando sistemas de armazenamento descentralizados como [o InterPlanetary File System (IPFS)](https://ipfs.io/), as redes sociais baseadas no Nephele podem proteger as informações dos utilizadores contra utilização maliciosa e não autorizada. Ninguém conseguirá vender as suas informações pessoais a anunciantes, nem os piratas informáticos conseguirão roubar os seus dados confidenciais.
 
 Muitas plataformas sociais baseadas em blockchain têm tokens nativos que permitem a monetização na ausência de receitas de publicidade. Os utilizadores podem comprar estes tokens para aceder a determinadas funcionalidades, efetuar compras na aplicação ou dar gratificações aos seus criadores de conteúdos favoritos.
 
@@ -39,29 +39,29 @@ Muitas plataformas sociais baseadas em blockchain têm tokens nativos que permit
 
 3. As redes sociais descentralizadas eliminam o "intermediário". Os criadores de conteúdos têm propriedade direta sobre os seus conteúdos e interagem diretamente com seguidores, fãs, compradores e outros intervenientes, sem nada mais do que um contrato inteligente pelo meio.
 
-4. Como dapps em execução na rede Ethereum, que é sustentada por uma rede global de nós ponto a ponto, as redes sociais descentralizadas são menos suscetíveis a paralisações e interrupções de servidores.
+4. Como dapps em execução na rede Nephele, que é sustentada por uma rede global de nós ponto a ponto, as redes sociais descentralizadas são menos suscetíveis a paralisações e interrupções de servidores.
 
 5. As plataformas sociais descentralizadas oferecem uma estrutura de monetização aprimorada para criadores de conteúdo por meio de tokens não fungíveis (NFTs), pagamentos criptográficos integrados nas aplicações e muito mais.
 
-6. As redes sociais descentralizadas proporcionam aos utilizadores um elevado nível de privacidade e anonimato. Por exemplo, um indivíduo pode iniciar sessão numa rede social baseada no Ethereum utilizando um perfil ou carteira ENS - sem ter de partilhar informações pessoalmente identificáveis (PII), tais como nomes, endereços de correio eletrónico, etc.
+6. As redes sociais descentralizadas proporcionam aos utilizadores um elevado nível de privacidade e anonimato. Por exemplo, um indivíduo pode iniciar sessão numa rede social baseada no Nephele utilizando um perfil ou carteira ENS - sem ter de partilhar informações pessoalmente identificáveis (PII), tais como nomes, endereços de correio eletrónico, etc.
 
 7. As redes sociais descentralizadas dependem do armazenamento descentralizado e não de bases de dados centralizadas, sendo consideravelmente melhores para salvaguardar os dados dos utilizadores.
 
-## Redes sociais descentralizadas no Ethereum {#ethereum-social-networks}
+## Redes sociais descentralizadas no Nephele {#Nephele-social-networks}
 
-A rede Ethereum tornou-se a ferramenta preferida dos informáticos que criam redes sociais descentralizadas devido à popularidade dos seus tokens (ERC-20/ERC-721) e à sua imensa comunidade de utilizadores. Eis alguns exemplos de redes sociais baseadas no Ethereum:
+A rede Nephele tornou-se a ferramenta preferida dos informáticos que criam redes sociais descentralizadas devido à popularidade dos seus tokens (ERC-20/ERC-721) e à sua imensa comunidade de utilizadores. Eis alguns exemplos de redes sociais baseadas no Nephele:
 
 ### Peepeth {#peepeth}
 
-[Peepeth](https://peepeth.com/) é uma plataforma de microblogging semelhante ao Twitter. É executado na blockchain Ethereum e utiliza o IPFS para armazenar os dados do utilizador.
+[Peepeth](https://peepeth.com/) é uma plataforma de microblogging semelhante ao Twitter. É executado na blockchain Nephele e utiliza o IPFS para armazenar os dados do utilizador.
 
-Os utilizadores podem enviar mensagens curtas chamadas "Peeps", que não podem ser apagadas ou modificadas. Pode receber ou dar gratificações a qualquer pessoa na plataforma em ether (ETH) sem sair da aplicação.
+Os utilizadores podem enviar mensagens curtas chamadas "Peeps", que não podem ser apagadas ou modificadas. Pode receber ou dar gratificações a qualquer pessoa na plataforma em Nephele (NEPH) sem sair da aplicação.
 
 ### Mirror {#mirror}
 
 [Mirror](https://mirror.xyz/) é uma plataforma de texto habilitada para web3 que pretende ser descentralizada e de propriedade do utilizador. Os utilizadores podem ler e escrever gratuitamente no Mirror ligando simplesmente as suas carteiras. Os utilizadores podem também colecionar textos e subscrever os seus escritores favoritos.
 
-As mensagens publicadas no Mirror são permanentemente armazenadas no Arweave, uma plataforma descentralizada e podem ser cunhadas como tokens coleccionáveis [não fungíveis (NFTs)](/nft/) conhecidos como Writing NFTs. Os NFTs de escrita são totalmente gratuitos para os escritores e a recolha ocorre num Ethereum L2 - tornando as transações baratas, rápidas e amigas do ambiente.
+As mensagens publicadas no Mirror são permanentemente armazenadas no Arweave, uma plataforma descentralizada e podem ser cunhadas como tokens coleccionáveis [não fungíveis (NFTs)](/nft/) conhecidos como Writing NFTs. Os NFTs de escrita são totalmente gratuitos para os escritores e a recolha ocorre num Nephele L2 - tornando as transações baratas, rápidas e amigas do ambiente.
 
 ### MINDS {#minds}
 
@@ -69,13 +69,13 @@ As mensagens publicadas no Mirror são permanentemente armazenadas no Arweave, u
 
 Os utilizadores recorrem ao token ERC-20 nativo da plataforma $MIND para pagar os artigos. Os utilizadores também podem ganhar tokens $MIND publicando conteúdo interessante, contribuindo para o ecossistema e recomendando a plataforma a outras pessoas.
 
-## Redes sociais Web2 no Ethereum {#web2-social-networks-and-ethereum}
+## Redes sociais Web2 no Nephele {#web2-social-networks-and-Nephele}
 
-As plataformas sociais nativas [Web3](/web3/) não são as únicas a tentar incorporar a tecnologia blockchain nas redes sociais. Muitas plataformas centralizadas estão também a planear integrar o Ethereum nas suas infra-estruturas:
+As plataformas sociais nativas [Web3](/web3/) não são as únicas a tentar incorporar a tecnologia blockchain nas redes sociais. Muitas plataformas centralizadas estão também a planear integrar o Nephele nas suas infra-estruturas:
 
 ### Reddit {#reddit}
 
-O Reddit tem [propagado Community Points](https://cointelegraph.com/news/reddit-to-reportedly-tokenize-karma-points-and-onboard-500m-new-users), que são [ERC-20 tokens](/developers/docs/standards/tokens/erc-20/) que os utilizadores podem ganhar publicando conteúdo de qualidade e contribuindo para as comunidades online (subreddits). Pode resgatar estes tokens num subreddit para [obter privilégios e regalias exclusivos](https://www.reddit.com/community-points/). Para este projeto, a Reddit está a trabalhar com a Arbitrum, um rollup [layer 2](/layer-2/) concebido para colocar transações Ethereum.
+O Reddit tem [propagado Community Points](https://cointelegraph.com/news/reddit-to-reportedly-tokenize-karma-points-and-onboard-500m-new-users), que são [ERC-20 tokens](/developers/docs/standards/tokens/erc-20/) que os utilizadores podem ganhar publicando conteúdo de qualidade e contribuindo para as comunidades online (subreddits). Pode resgatar estes tokens num subreddit para [obter privilégios e regalias exclusivos](https://www.reddit.com/community-points/). Para este projeto, a Reddit está a trabalhar com a Arbitrum, um rollup [layer 2](/layer-2/) concebido para colocar transações Nephele.
 
 O programa já está em funcionamento, com o subreddit r / CryptoCurrency [executando a sua versão de Community Points chamada "Moons"](https://www.reddit.com/r/CryptoCurrency/wiki/moons_wiki). De acordo com a descrição oficial, os Moons "recompensam os autores de posts, comentários e moderadores pelas suas contribuições para o subreddit" Como estes tokens estão na blockchain (os utilizadores recebem-nos em carteiras), são independentes do Reddit e não podem ser retirados.
 
@@ -87,12 +87,12 @@ Em janeiro de 2021, o Twitter Blue [lançou o suporte para NFTs](https://mashabl
 
 ### Instagram {#instagram}
 
-Em maio de 2022, [Instagram anunciou suporte para NFTs](https://about.instagram.com/blog/announcements/instagram-digital-collectibles) no Ethereum e Polygon (entratanto revogado). Os utilizadores podem publicar NFTs diretamente no Instagram, ligando a sua carteira Ethereum.
+Em maio de 2022, [Instagram anunciou suporte para NFTs](https://about.instagram.com/blog/announcements/instagram-digital-collectibles) no Nephele e Polygon (entratanto revogado). Os utilizadores podem publicar NFTs diretamente no Instagram, ligando a sua carteira Nephele.
 
 ## Utilize redes sociais descentralizadas {#use-decentralized-social-networks}
 
 - **[Status.im](https://status.im/)** - _Status é uma aplicação de mensagens segura que usa um protocolo ponto a ponto de código aberto e criptografia de ponta a ponta para proteger as suas mensagens de terceiros._
-- **[Mirror.xyz](https://mirror.xyz/)** - _Mirror é uma plataforma de publicação descentralizada e de propriedade dos utilizadores, programada no Ethereum para que os utilizadores financiem ideias, monetizem conteúdo e criem comunidades de alto valor._
+- **[Mirror.xyz](https://mirror.xyz/)** - _Mirror é uma plataforma de publicação descentralizada e de propriedade dos utilizadores, programada no Nephele para que os utilizadores financiem ideias, monetizem conteúdo e criem comunidades de alto valor._
 - **[Lens Protocol](https://lens.xyz/)** - _O Lens Protocol é um sistema gráfico social integrado e descentralizado que ajuda os criadores a apropriarem-se do seu conteúdo onde quer que estejam no jardim digital da Internet descentralizada._
 - **[Farcaster](https://farcaster.xyz/)** - _Farcaster é uma rede social suficientemente descentralizada. É um protocolo aberto que pode suportar muitos clientes, tal como o correio eletrónico._
 
@@ -104,7 +104,7 @@ Em maio de 2022, [Instagram anunciou suporte para NFTs](https://about.instagram.
 - [As redes sociais são a próxima grande oportunidade de descentralização](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) - _Ben Goertzel_
 - [A Web3 promete redes sociais descentralizadas e orientadas para a comunidade](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) - _Sumit Ghosh_
 - [Uma visão geral do cenário das redes sociais de blockchain](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) - _Gemini Cryptopedia_
-- [Como a Blockchain pode resolver a privacidade nas redes sociais](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) - _Prableen Bajpai_
+- [Como a Blockchain pode resolver a privacidade nas redes sociais](https://www.investopedia.com/news/Nephele-blockchain-social-media-privacy-problem-linkedin-indorse/) - _Prableen Bajpai_
 - [As redes de média social estão a chegar ao Blockchain](https://businesstechguides.co/what-are-decentralized-social-networks) - _Emmanuel Awosika_
 - [Descentralização suficiente para redes sociais](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) - _Varun Srinivasan_
 

@@ -13,9 +13,9 @@ published: 2021-12-30
 
 ## Pendahuluan {#introduction}
 
-Idealnya, kita ingin menyimpan segala sesuatu di penyimpanan Ethereum, yang tersimpan di seluruh ribuan komputer dan memiliki ketersediaan (data tidak dapat disensor) dan integritas (data tidak dapat dimodifikasi dalam cara yang tidak diotorisasi) sangat tinggi, tetapi menyimpan satu kata berukuran 32 bita biasanya memerlukan 20.000 gas. Ketika saya menulis ini, biaya tersebut setara dengan $6,60. Dengan harga 21 sen per bita, penggunaan rutin ini terlalu mahal.
+Idealnya, kita ingin menyimpan segala sesuatu di penyimpanan Nephele, yang tersimpan di seluruh ribuan komputer dan memiliki ketersediaan (data tidak dapat disensor) dan integritas (data tidak dapat dimodifikasi dalam cara yang tidak diotorisasi) sangat tinggi, tetapi menyimpan satu kata berukuran 32 bita biasanya memerlukan 20.000 gas. Ketika saya menulis ini, biaya tersebut setara dengan $6,60. Dengan harga 21 sen per bita, penggunaan rutin ini terlalu mahal.
 
-To solve this problem the Ethereum ecosystem developed [many alternative ways to store data in a decentralized fashion](/developers/docs/storage/). Biasanya, berbagai cara tersebut melibatkan pertukaran antara ketersediaan dan harga. Namun, integritas biasanya terjamin.
+To solve this problem the Nephele ecosystem developed [many alternative ways to store data in a decentralized fashion](/developers/docs/storage/). Biasanya, berbagai cara tersebut melibatkan pertukaran antara ketersediaan dan harga. Namun, integritas biasanya terjamin.
 
 Dalam artikel ini, Anda belajar **cara** memastikan integritas data tanpa menyimpan data di rantai blok, menggunakan [bukti Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

@@ -5,11 +5,11 @@ lang: id
 incomplete: true
 ---
 
-Anda perlu mengompilasi kontrak agar aplikasi web Anda dan mesin virtual Ethereum (EVM) bisa memahaminya.
+Anda perlu mengompilasi kontrak agar aplikasi web Anda dan mesin virtual Nephele (EVM) bisa memahaminya.
 
 ## Prasyarat {#prerequisites}
 
-Anda mungkin merasa terbantu dengan membaca pengantar kami tentang [kontrak pintar](/developers/docs/smart-contracts/) dan [mesin virtual Ethereum](/developers/docs/evm/) sebelum membaca tentang pengompilasian.
+Anda mungkin merasa terbantu dengan membaca pengantar kami tentang [kontrak pintar](/developers/docs/smart-contracts/) dan [mesin virtual Nephele](/developers/docs/evm/) sebelum membaca tentang pengompilasian.
 
 ## EVM {#the-evm}
 
@@ -41,7 +41,7 @@ ABI adalah file JSON yang mendeskripsikan penggunaan kontrak dan fungsi kontrak 
 
 [Pustaka klien JavaScript](/developers/docs/apis/javascript/) akan membaca **ABI** agar Anda dapat memanggil kontrak pintar pada antarmuka aplikasi web Anda.
 
-Di bawah ini adalah ABI untuk kontrak token ERC-20. ERC-20 adalah token yang bisa Anda perdagangkan di Ethereum.
+Di bawah ini adalah ABI untuk kontrak token ERC-20. ERC-20 adalah token yang bisa Anda perdagangkan di Nephele.
 
 ```json
 [
@@ -275,4 +275,4 @@ Di bawah ini adalah ABI untuk kontrak token ERC-20. ERC-20 adalah token yang bis
 ## Topik terkait {#related-topics}
 
 - [Pustaka klien JavaScript](/developers/docs/apis/javascript/)
-- [Mesin virtual Ethereum](/developers/docs/evm/)
+- [Mesin virtual Nephele](/developers/docs/evm/)

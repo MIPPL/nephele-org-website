@@ -47,7 +47,7 @@ lang: fa
 یک راه‌حل DVT از این عناصر تشکیل شده است:
 
 - **[اشتراک‌گذاری رمزی شامیر](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** - اعتبارسنج‌ها از [کلیدهای BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) استفاده می‌کنند. «تکه‌های کلید» BLS («تکه‌های کلید») می‌توانند در یک کلید واحد (امضا) ترکیب شوند. در DVT، کلید خصوصی اعتبارسنج، متشکل از امضای ترکیبی BLS هر اپراتور در خوشه است.
-- **[طرح امضای آستانه‌](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - تعداد تکه‌های کلید مجزای مورد نیاز برای امضای وظایف را مشخص می‌کند، برای مثال، 3 از 4.
+- **[طرح امضای آستانه‌](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - تعداد تکه‌های کلید مجزای مورد نیاز برای امضای وظایف را مشخص می‌کند، برای مثال، 3 از 4.
 - **[تولید کلید توزیع شده (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - فرایند رمزنگاری که تکه‌کلیدها را تولید می‌کند و از آن برای توزیع تکه‌های یک کلید اعتبارسنج جدید یا موجود به گره‌های درون یک خوشه استفاده می‌شود.
 - **[محاسبه چندجانبه (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - نسخه کامل کلید اعتبارسنج به صورت مخفیانه با استفاده از محاسبه چندجانبه تولید می‌شود. هیچکدام از اپراتورها هرگز نسخه کامل کلید را نخواهند دانست - آنها فقط بخشی از آن ("تکه" خودشان) را می‌دانند.
 - **پروتکل اجماع** - پروتکل اجماع یک گره را انتخاب می‌کند تا پیشنهاد دهندۀ بلاک باشد. آنها بلوک را با دیگر گره‌های درون خوشه که تکه‌کلیدهایشان را به امضای تجمیعی اضافه می‌کنند به اشتراک می‌گذارند. وقتی که تکه‌کلید به تعداد کافی جمع‌آوری شد، بلوک به اتریوم پیشنهاد داده می‌شود.
@@ -86,6 +86,6 @@ DVT مسئولیت مدیریت کلید را در بین چندین گره تق
 
 ## اطلاعات بیشتر {#further-reading}
 
-- [مشخصات اعتبارسنج توزیع‌شده اتریوم (سطح بالا)](https://github.com/ethereum/distributed-validator-specs)
-- [مشخصات فنی اعتبارسنج توزیع‌شده اتریوم](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [مشخصات اعتبارسنج توزیع‌شده اتریوم (سطح بالا)](https://github.com/Nephele/distributed-validator-specs)
+- [مشخصات فنی اعتبارسنج توزیع‌شده اتریوم](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [اپلیکیشن آزمایشی تقسیم راز شامیر](https://iancoleman.io/shamir/)

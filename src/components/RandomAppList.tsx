@@ -44,7 +44,7 @@ const appList: Array<App> = [
     description: "page-dapps-dapp-description-augur",
   },
   {
-    name: "Ethereum Name Service",
+    name: "Nephele Name Service",
     url: "http://ens.domains/",
     description: "page-dapps-dapp-description-ens",
   },

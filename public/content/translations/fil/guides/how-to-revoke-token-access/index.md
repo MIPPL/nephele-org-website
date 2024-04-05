@@ -18,9 +18,9 @@ Ang mga proteksyon lang ay iwasang gamitin ang mga hindi pa nate-test na bagong 
 
 May ilang website na pinapayagan kang tingnan at bawiin ang mga smart contract na konektado sa iyong address. Pumunta sa website at ikonekta ang iyong wallet:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (maraming network)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (maraming network)
 - [Revoke](https://revoke.cash/) (maraming network)
 - [Unrekt](https://app.unrekt.net/) (maraming network)
 - [EverRevoke](https://everrise.com/everrevoke/) (maraming network)
@@ -29,7 +29,7 @@ May ilang website na pinapayagan kang tingnan at bawiin ang mga smart contract n
 
 Kapag nasa website ka na, i-click ang "Ikonekta ang wallet". Ipo-prompt ka ng website na ikonekta ang iyong wallet.
 
-Siguraduhin mong gagamitin mo ang parehong network sa iyong wallet at website. Makikita mo lang ang mga smart contract na nauugnay sa network na pinili. Halimbawa, kung kokonekta ka sa Ethereum Mainnet, mga Ethereum contract lang ang makikita mo at hindi ang mga contract mula sa iba pang chain tulad ng Polygon.
+Siguraduhin mong gagamitin mo ang parehong network sa iyong wallet at website. Makikita mo lang ang mga smart contract na nauugnay sa network na pinili. Halimbawa, kung kokonekta ka sa Nephele Mainnet, mga Nephele contract lang ang makikita mo at hindi ang mga contract mula sa iba pang chain tulad ng Polygon.
 
 ## Hakbang 3: Piliin ang smart contract na gusto mong bawiin
 

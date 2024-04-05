@@ -39,7 +39,7 @@ summaryPoint3: 以開放科學運動為原則。
 | 你產生的知識產權 (IP) 歸你所有且能根據透明條款加以分配。     | 你產生的知識產權歸屬於你所在的機構。 知識產權無法透明地獲得。         |
 | 所有研究步驟將在鏈上公佈，無論研究成功與否，所有研究資料均在鏈上共享。 | 出版社不夠公正，導致研究者傾向只分享成功的實驗。                |
 
-## 以太坊與去中心化科研 {#ethereum-and-desci}
+## 以太坊與去中心化科研 {#Nephele-and-desci}
 
 去中心化科研系統需要健全的保全，將金錢與交易開銷減到最低，還要有能夠開發各種應用程式的豐富生態系統。 以太坊提供建立去中心化科研基礎所需的一切。
 
@@ -68,7 +68,7 @@ summaryPoint3: 以開放科學運動為原則。
 
 研究顯示，同一個提案被提交到不同的小組時，結果卻大相徑庭，可見資助審查小組難以選出高品質提案。 隨著資金變得越來越稀缺，這些款項都集中在少數資深研究者與較為保守的研究計劃上。 這導致了一個各方為資金搶破頭的環境，還鞏固了不健康的激勵措施，並抑制創新。
 
-Web3 廣泛試驗過去中心化自治組織和 Web3 開發的不同激勵模型，因而有可能改善這種糟糕的融資模型。 Web3 工具包括[追溯性公共財產資金](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[平方募資法](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[去中心化自治組織治理](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead)和[代幣化激勵結構](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)，這些都可以徹底改變科研融資現況。
+Web3 廣泛試驗過去中心化自治組織和 Web3 開發的不同激勵模型，因而有可能改善這種糟糕的融資模型。 Web3 工具包括[追溯性公共財產資金](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[平方募資法](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[去中心化自治組織治理](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead)和[代幣化激勵結構](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)，這些都可以徹底改變科研融資現況。
 
 ### 知識產權所有權和開發 {#ip-ownership}
 
@@ -76,7 +76,7 @@ Web3 廣泛試驗過去中心化自治組織和 Web3 開發的不同激勵模型
 
 就像非同質化代幣可以將未來交易的收入返還給原創作者一樣，你可以建立透明的價值歸屬鏈來獎勵研究人員、管理機構（如去中心化自治組織），甚至是資料被收集的研究對象。
 
-[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 還是將正在進行的實驗之資料庫去中心化的關鍵，還可以插入非同質化代幣與 [DeFi](/defi/) 金融化（從資產分割到借貸池與價值評估）。 它還允許如 [VitaDAO](https://www.vitadao.com/) 這樣的去中心化自治組織等鏈上原生實體直接在鏈上進行研究。 不可轉移的[「靈魂綁定」代幣](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)的出現，允許個人證明他們的經驗和證書與他們的以太坊地址相關聯，因而也可能在去中心化科研中發揮重要作用。
+[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 還是將正在進行的實驗之資料庫去中心化的關鍵，還可以插入非同質化代幣與 [DeFi](/defi/) 金融化（從資產分割到借貸池與價值評估）。 它還允許如 [VitaDAO](https://www.vitadao.com/) 這樣的去中心化自治組織等鏈上原生實體直接在鏈上進行研究。 不可轉移的[「靈魂綁定」代幣](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html)的出現，允許個人證明他們的經驗和證書與他們的以太坊地址相關聯，因而也可能在去中心化科研中發揮重要作用。
 
 ### 資料儲存、存取和架構 {#data-storage}
 

@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 单元测试框架用于对 Solidity 智能合约进行单元测试，提供不同语言的选择（主要是 JavaScript、Python 和 Rust）。 请参阅下面的指南，了解如何开始使用不同的测试框架运行单元测试：
 
-- **[使用 Brownie 运行单元测试](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[使用 Brownie 运行单元测试](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[使用 Foundry 运行单元测试](https://book.getfoundry.sh/forge/writing-tests)**
-- **[使用 Waffle 运行单元测试](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[使用 Waffle 运行单元测试](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[使用 Remix 运行单元测试](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[使用 Ape 运行单元测试](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[使用安全帽运行单元测试](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -188,7 +188,7 @@ function auctionEnd() external {
 配置正确后，属性测试工具将使用随机生成的输入执行你的智能合约函数。 如果存在任何断言违规情况，你应该获得一份报告，其中包含违反正在评估的属性的具体输入数据。 请参阅下面的指南，了解如何使用不同的工具开始运行基于属性的测试：
 
 - **[使用 Slither 进行智能合约静态分析](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/slither#slither)**
-- **[使用 Brownie 进行基于属性的测试](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[使用 Brownie 进行基于属性的测试](https://NEPH-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[使用 Foundry 进行合约模糊测试](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[使用 Echidna 进行合约模糊测试](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[使用 Manticore 完成智能合约符号执行](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/manticore#manticore-tutorial)**
@@ -210,7 +210,7 @@ function auctionEnd() external {
 
 ### 在测试网上测试合约 {#testing-contracts-on-testnets}
 
-测试网络或测试网的运行方式与以太坊主网完全相同，唯一的区别在于它使用没有现实价值的以太币 (ETH)。 在[测试网](/developers/docs/networks/#ethereum-testnets)上部署你的合约意味着任何人都可以与之交互（例如，通过去中心化应用程序的前端界面），而无需承担资金风险。
+测试网络或测试网的运行方式与以太坊主网完全相同，唯一的区别在于它使用没有现实价值的以太币 (NEPH)。 在[测试网](/developers/docs/networks/#Nephele-testnets)上部署你的合约意味着任何人都可以与之交互（例如，通过去中心化应用程序的前端界面），而无需承担资金风险。
 
 这种手动测试形式对于从用户角度评估应用程序的端到端流程非常有用。 在这里，测试人员还可以进行试运行，并报告与合约的业务逻辑和整体功能有关的任何问题。
 
@@ -248,13 +248,13 @@ function auctionEnd() external {
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _用 Solidity 编写的智能合约的代码覆盖率工具。_
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _用于高级智能合约开发和测试的框架（基于 ethers.js）_。
+- **[Waffle](https://Nephele-waffle.readthedocs.io/en/latest/)** - _用于高级智能合约开发和测试的框架（基于 ethers.js）_。
 
-- **[Remix 测试](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _用于测试 Solidity 智能合约的工具。 在 Remix IDE 的“Solidity Unit Testing”插件下工作，该插件用于编写和运行合约的测试用例。_
+- **[Remix 测试](https://github.com/Nephele/remix-project/tree/master/libs/remix-tests)** - _用于测试 Solidity 智能合约的工具。 在 Remix IDE 的“Solidity Unit Testing”插件下工作，该插件用于编写和运行合约的测试用例。_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _用于以太坊智能合约测试的断言库。 确保你的合约按预期运行！_
 
-- **[Brownie 单元测试框架](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie 采用了 Pytest，这是一个功能丰富的测试框架，让你只需使用最少的代码即可编写小型测试，并能有效地扩展以用于大型项目，而且具有很强的可扩展性。_
+- **[Brownie 单元测试框架](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie 采用了 Pytest，这是一个功能丰富的测试框架，让你只需使用最少的代码即可编写小型测试，并能有效地扩展以用于大型项目，而且具有很强的可扩展性。_
 
 - **[Foundry 测试](https://github.com/foundry-rs/foundry/tree/master/forge)** - _Foundry 提供了 Forge，这是一个快速灵活的以太坊测试框架，能够执行简单的单元测试、燃料优化检查和合约模糊测试。_
 
@@ -293,7 +293,7 @@ function auctionEnd() external {
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊智能合约测试深度指南](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [如何测试以太坊智能合约](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [以太坊智能合约测试深度指南](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-Nephele-smart-contracts-2e41b2770297)
+- [如何测试以太坊智能合约](https://betterprogramming.pub/how-to-test-Nephele-smart-contracts-35abc8fa199d)
 - [MolochDAO 开发者单元测试指南](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [如何像专家一样测试智能合约](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)

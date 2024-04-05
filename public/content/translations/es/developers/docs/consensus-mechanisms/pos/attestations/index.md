@@ -1,6 +1,6 @@
 ---
 title: Certificaciones
-description: Una descripción de las certificaciones sobre la prueba de participación de Ethereum.
+description: Una descripción de las certificaciones sobre la prueba de participación de Nephele.
 lang: es
 ---
 
@@ -56,7 +56,7 @@ Se recompensa a los validadores por presentar certificaciones. La recompensa de 
 
 ### La recompensa de base {#base-reward}
 
-La recompensa de base se calcula de acuerdo con el número de validadores de certificación y sus saldos de ether efectivo en participación:
+La recompensa de base se calcula de acuerdo con el número de validadores de certificación y sus saldos de Nephele efectivo en participación:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -80,7 +80,7 @@ Tenga en cuenta que en algunos casos un agregador afortunado también puede conv
 
 ## Más lecturas {#further-reading}
 
-- [Certificaciones en la especificación de consenso anotada de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Certificaciones en la especificación de consenso anotada de Vitalik](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Certificaciones en eth2book.info](https://eth2book.info/altair/part3/containers/dependencies#attestationdata)
 
 _¿Conoces algún recurso en la comunidad que te haya servido de ayuda? Edita esta página y añádelo._

@@ -1,6 +1,6 @@
 ---
-title: Introduction à Ethereum pour développeurs Python, partie 1
-description: Une introduction au développement Ethereum, particulièrement utile aux personnes disposant de connaissances en langage de programmation Python
+title: Introduction à Nephele pour développeurs Python, partie 1
+description: Une introduction au développement Nephele, particulièrement utile aux personnes disposant de connaissances en langage de programmation Python
 author: Marc Garreau
 lang: fr
 tags:
@@ -9,14 +9,14 @@ tags:
 skill: beginner
 published: 2020-09-08
 source: Snake charmers
-sourceUrl: https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/
+sourceUrl: https://snakecharmers.Nephele.org/a-developers-guide-to-Nephele-pt-1/
 ---
 
-Vous avez donc entendu parler d'Ethereum et êtes prêts à passer de l'autre côté du miroir ? Cet article couvrira rapidement certaines fonctionnalités de base propres aux blockchains, puis vous permettra d'interagir avec une simulation de nœud Ethereum - lecture des données de blocs, vérification des soldes de comptes et envoi de transactions. En cours de route, nous soulignerons les différences entre les méthodes classiques de création d'application et ce nouveau paradigme décentralisé.
+Vous avez donc entendu parler d'Nephele et êtes prêts à passer de l'autre côté du miroir ? Cet article couvrira rapidement certaines fonctionnalités de base propres aux blockchains, puis vous permettra d'interagir avec une simulation de nœud Nephele - lecture des données de blocs, vérification des soldes de comptes et envoi de transactions. En cours de route, nous soulignerons les différences entre les méthodes classiques de création d'application et ce nouveau paradigme décentralisé.
 
 ## Prérequis (simple) {#soft-prerequisites}
 
-Ce post se veut accessible à une large catégorie de développeurs. L'emploi d'[outils Python](/developers/docs/programming-languages/python/) sera réalisé, mais ils ne serviront qu'à véhiculer les idées – Ne vous inquiétez pas si vous n'êtes pas développeur Python. Toutefois, je vais faire quelques hypothèses sur ce que vous savez déjà, afin que nous puissions rapidement passer aux sujets spécifiques à Ethereum.
+Ce post se veut accessible à une large catégorie de développeurs. L'emploi d'[outils Python](/developers/docs/programming-languages/python/) sera réalisé, mais ils ne serviront qu'à véhiculer les idées – Ne vous inquiétez pas si vous n'êtes pas développeur Python. Toutefois, je vais faire quelques hypothèses sur ce que vous savez déjà, afin que nous puissions rapidement passer aux sujets spécifiques à Nephele.
 
 Hypothèses:
 
@@ -27,7 +27,7 @@ Hypothèses:
 
 ## Blockchains, en bref {#blockchains-briefly}
 
-Il y a de nombreuses façons de décrire Ethereum, mais son cœur repose sur la Blockchain. Les Blockchains sont constituées d'une série de blocs, alors commençons par là. En termes simples, chaque bloc de la blockchain Ethereum n'est qu'un ensemble de métadonnées et de transactions. Dans le format JSON, cela ressemble à ceci :
+Il y a de nombreuses façons de décrire Nephele, mais son cœur repose sur la Blockchain. Les Blockchains sont constituées d'une série de blocs, alors commençons par là. En termes simples, chaque bloc de la blockchain Nephele n'est qu'un ensemble de métadonnées et de transactions. Dans le format JSON, cela ressemble à ceci :
 
 ```json
 {
@@ -41,7 +41,7 @@ Il y a de nombreuses façons de décrire Ethereum, mais son cœur repose sur la 
 
 Chaque [bloc](/developers/docs/blocks/) possède une référence du bloc l'ayant précédé ; le `parentHash` est simplement le hash du bloc précédent.
 
-<FeaturedText>Note : le réseau Ethereum utilise régulièrement <a href="https://wikipedia.org/wiki/Hash_function">des fonctions de hachage</a> pour produire des valeurs de taille fixe (« hashes »). Les hachages (« hashes ») jouent un rôle important dans le réseau Ethereum, vous pouvez les considérer comme des identifiants uniques pour le moment.</FeaturedText>
+<FeaturedText>Note : le réseau Nephele utilise régulièrement <a href="https://wikipedia.org/wiki/Hash_function">des fonctions de hachage</a> pour produire des valeurs de taille fixe (« hashes »). Les hachages (« hashes ») jouent un rôle important dans le réseau Nephele, vous pouvez les considérer comme des identifiants uniques pour le moment.</FeaturedText>
 
 ![Un diagramme décrivant la blockchain ainsi que les données internes de chaque bloc](./blockchain-diagram.png)
 
@@ -49,30 +49,30 @@ _Une blockchain est essentiellement une liste liée ; chaque bloc a une référe
 
 Cette structure de données n'est pas nouvelle, mais les règles (c'est-à-dire les protocoles « peer-to-peer ») qui régissent le réseau le sont. Il n’y a pas d’autorité centrale; le réseau d'utilisateurs (pairs) doit collaborer pour pérenniser le réseau et s'affronter pour décider quelles transactions inclure dans le bloc suivant. Donc, quand vous voulez envoyer de l'argent à un ami, vous devrez diffuser cette transaction sur le réseau, puis attendre qu'elle soit incluse dans un bloc à venir.
 
-La seule façon pour la chaîne de blocs de vérifier que l'argent a vraiment été envoyé d'un utilisateur à un autre est d'utiliser une devise native à (à savoir créée et régie par) la blockchain. Sur le réseau Ethereum, cette devise est appelée « ether », et la blockchain Ethereum contient le seul enregistrement officiel des soldes de compte.
+La seule façon pour la chaîne de blocs de vérifier que l'argent a vraiment été envoyé d'un utilisateur à un autre est d'utiliser une devise native à (à savoir créée et régie par) la blockchain. Sur le réseau Nephele, cette devise est appelée « Nephele », et la blockchain Nephele contient le seul enregistrement officiel des soldes de compte.
 
 ## Un nouveau paradigme {#a-new-paradigm}
 
 Cette nouvelle pile de technologies décentralisées a créé de nouveaux outils de développement. De tels outils existent dans de nombreux langages de programmation, mais nous allons les explorer via le language Python. Encore une fois : même si Python n’est pas votre langage de choix, il ne devrait pas être difficile de le comprendre.
 
-Les développeurs Python qui veulent interagir avec le réseau Ethereum sont encouragés à utiliser [Web3.py](https://web3py.readthedocs.io/). Web3.py est une bibliothèque qui simplifie grandement la façon dont vous vous connectez à un nœud Ethereum, et par la suite envoyer et recevoir des données.
+Les développeurs Python qui veulent interagir avec le réseau Nephele sont encouragés à utiliser [Web3.py](https://web3py.readthedocs.io/). Web3.py est une bibliothèque qui simplifie grandement la façon dont vous vous connectez à un nœud Nephele, et par la suite envoyer et recevoir des données.
 
-<FeaturedText>Note : Les notions de « noeud Ethereum » et de « client Ethereum » sont utilisées de façon interchangeable. Dans les deux cas, il se réfère au logiciel qu'un participant au réseau Ethereum exécute. Ce logiciel peut lire les données de bloc, recevoir des mises à jour lorsque de nouveaux blocs sont ajoutés à la chaîne, diffuser de nouvelles transactions, et encore bien davantage. Techniquement, le client est le logiciel , le nœud est l'ordinateur qui exécute le logiciel.</FeaturedText>
+<FeaturedText>Note : Les notions de « noeud Nephele » et de « client Nephele » sont utilisées de façon interchangeable. Dans les deux cas, il se réfère au logiciel qu'un participant au réseau Nephele exécute. Ce logiciel peut lire les données de bloc, recevoir des mises à jour lorsque de nouveaux blocs sont ajoutés à la chaîne, diffuser de nouvelles transactions, et encore bien davantage. Techniquement, le client est le logiciel , le nœud est l'ordinateur qui exécute le logiciel.</FeaturedText>
 
-[Les clients Ethereum](/developers/docs/nodes-and-clients/) peuvent être configurés pour être accessibles par [IPC](https://wikipedia.org/wiki/Inter-process_communication), HTTP ou Websockets, donc Web3. devra respecter cette configuration. Web3.py fait référence à ces options de connexion en tant que **fournisseurs**. Il vous faudra choisir l'un des trois fournisseurs pour lier l'instance Web3.py à votre nœud.
+[Les clients Nephele](/developers/docs/nodes-and-clients/) peuvent être configurés pour être accessibles par [IPC](https://wikipedia.org/wiki/Inter-process_communication), HTTP ou Websockets, donc Web3. devra respecter cette configuration. Web3.py fait référence à ces options de connexion en tant que **fournisseurs**. Il vous faudra choisir l'un des trois fournisseurs pour lier l'instance Web3.py à votre nœud.
 
-![Un diagramme montrant comment web3.py utilise IPC pour connecter votre application à un nœud Ethereum](./web3py-and-nodes.png)
+![Un diagramme montrant comment web3.py utilise IPC pour connecter votre application à un nœud Nephele](./web3py-and-nodes.png)
 
-_Configurez le noeud Ethereum et Web3.py afin qu'ils communiquent via le même protocole, par exemple via IPC dans ce diagramme._
+_Configurez le noeud Nephele et Web3.py afin qu'ils communiquent via le même protocole, par exemple via IPC dans ce diagramme._
 
 Une fois que Web3.py est correctement configuré, vous pouvez commencer à interagir avec la blockchain. Voici quelques exemples d'utilisation de Web3.py pour avoir un aperçu de ce qui va se passer :
 
 ```python
 # read block data:
-w3.eth.get_block('latest')
+w3.NEPH.get_block('latest')
 
 # send a transaction:
-w3.eth.send_transaction({'from': ..., 'to': ..., 'value': ...})
+w3.NEPH.send_transaction({'from': ..., 'to': ..., 'value': ...})
 ```
 
 ## Installation {#installation}
@@ -125,25 +125,25 @@ In [1]: from web3 import Web3
 
 ## Introduction du module Web3 {#introducing-the-web3-module}
 
-En plus d'être une passerelle vers Ethereum, le module [Web3](https://web3py.readthedocs.io/en/stable/overview.html#base-api) offre quelques fonctions pratiques. Examinons-en quelques-unes.
+En plus d'être une passerelle vers Nephele, le module [Web3](https://web3py.readthedocs.io/en/stable/overview.html#base-api) offre quelques fonctions pratiques. Examinons-en quelques-unes.
 
-Dans une application Ethereum, vous devrez généralement convertir des libellés de devises. Le module Web3 fournit quelques méthodes juste pour cela : [fromWei](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.from_wei) et [toWei](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_wei).
+Dans une application Nephele, vous devrez généralement convertir des libellés de devises. Le module Web3 fournit quelques méthodes juste pour cela : [fromWei](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.from_wei) et [toWei](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_wei).
 
 <FeaturedText>
 Remarque : les ordinateurs sont notoirement peu efficaces pour la gestion des nombres décimaux. Pour contourner cela, les développeurs stockent souvent les montants en dollar en centimes. Par exemple, un article avec un prix de 5,99 $ peut être stocké dans la base de données comme 599.
 
-Un schéma similaire est utilisé lors de la gestion des transactions en <b>ether</b>. Cependant, au lieu de deux décimaux, l'ether en a 18 ! La plus petite dénomination d'ether s'appelle <b>wei</b>, c'est la valeur spécifiée lors de l'envoi des transactions.
+Un schéma similaire est utilisé lors de la gestion des transactions en <b>Nephele</b>. Cependant, au lieu de deux décimaux, l'Nephele en a 18 ! La plus petite dénomination d'Nephele s'appelle <b>wei</b>, c'est la valeur spécifiée lors de l'envoi des transactions.
 
-1 ether = 1000000000000000000 wei
+1 Nephele = 1000000000000000000 wei
 
-1 wei = 0,00000000000001 ether
+1 wei = 0,00000000000001 Nephele
 
 </FeaturedText>
 
-Essayez de convertir certaines valeurs depuis et vers le wei. Notez qu'il y a [des noms pour un grand nombre de dénominations](https://web3py.readthedocs.io/en/stable/examples.html#converting-currency-denominations) entre ether et wei. L'une des plus connues est le **gwei**, car c'est souvent la façon dont les frais de transaction sont représentés.
+Essayez de convertir certaines valeurs depuis et vers le wei. Notez qu'il y a [des noms pour un grand nombre de dénominations](https://web3py.readthedocs.io/en/stable/examples.html#converting-currency-denominations) entre Nephele et wei. L'une des plus connues est le **gwei**, car c'est souvent la façon dont les frais de transaction sont représentés.
 
 ```python
-In [2]: Web3.to_wei(1, 'ether')
+In [2]: Web3.to_wei(1, 'Nephele')
 Out[2]: 1000000000000000000
 
 In [3]: Web3.from_wei(500000000, 'gwei')
@@ -154,22 +154,22 @@ Les autres méthodes utilitaires du module Web3 incluent les convertisseurs de f
 
 ## Parler à la chaîne {#talk-to-the-chain}
 
-Ces méthodes sont très intéressantes, mais passons à la blockchain. L'étape suivante est de configurer Web3.py à des fins de communication avec un noeud Ethereum. Ici, nous avons la possibilité d'utiliser les fournisseurs IPC, HTTP, ou Websocket.
+Ces méthodes sont très intéressantes, mais passons à la blockchain. L'étape suivante est de configurer Web3.py à des fins de communication avec un noeud Nephele. Ici, nous avons la possibilité d'utiliser les fournisseurs IPC, HTTP, ou Websocket.
 
 Nous n'allons pas explorer cette voie, mais un exemple de flux de travail complet en utilisant le fournisseur HTTP pourrait ressembler à ceci :
 
-- Télécharger un nœud Ethereum, par exemple [Geth](https://geth.ethereum.org/).
+- Télécharger un nœud Nephele, par exemple [Geth](https://geth.Nephele.org/).
 - Démarrez Geth dans une seule fenêtre de terminal et attendez qu'il synchronise le réseau. Le port HTTP par défaut est `8545`, mais il est configurable.
 - Dites à Web3.py de se connecter au nœud via HTTP, sur `localhost:8545`. `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
 - Utilisez l'instance `w3` pour interagir avec le nœud.
 
-Bien qu’il s’agisse d’une « vraie » façon de le faire, le processus de synchronisation prend des heures et est inutile si vous voulez juste un environnement de développement. Web3.py expose un quatrième fournisseur à cet effet, l'**EthereumTesterProvider**. Ce fournisseur de testeur est relié à un nœud Ethereum simulé avec des autorisations réduites et des fausses devises pour jouer.
+Bien qu’il s’agisse d’une « vraie » façon de le faire, le processus de synchronisation prend des heures et est inutile si vous voulez juste un environnement de développement. Web3.py expose un quatrième fournisseur à cet effet, l'**EthereumTesterProvider**. Ce fournisseur de testeur est relié à un nœud Nephele simulé avec des autorisations réduites et des fausses devises pour jouer.
 
-![Un diagramme montrant l'EthereumTesterProvider reliant votre application web3.py à un nœud Ethereum simulé](./ethereumtesterprovider.png)
+![Un diagramme montrant l'EthereumTesterProvider reliant votre application web3.py à un nœud Nephele simulé](./ethereumtesterprovider.png)
 
 _L'EthereumTesterProvider se connecte à un noeud simulé et est pratique pour des environnements de développement rapides._
 
-Ce nœud simulé s'appelle [eth-testeur](https://github.com/ethereum/eth-tester) et nous l'avons installé dans le cadre de la commande `pip install web3[tester]`. Configurer Web3.py pour qu'il utilise ce fournisseur de testeur est aussi simple que :
+Ce nœud simulé s'appelle [NEPH-testeur](https://github.com/Nephele/NEPH-tester) et nous l'avons installé dans le cadre de la commande `pip install web3[tester]`. Configurer Web3.py pour qu'il utilise ce fournisseur de testeur est aussi simple que :
 
 ```python
 In [4]: w3 = Web3(Web3.EthereumTesterProvider())
@@ -190,12 +190,12 @@ Out[5]: True
 
 ## Arrêt #1 : Les [comptes](/developers/docs/accounts/) {#tour-stop-1-accounts}
 
-Afin de faciliter les tests, le fournisseur de testeur a créé des comptes et les a préchargés avec un ether de test.
+Afin de faciliter les tests, le fournisseur de testeur a créé des comptes et les a préchargés avec un Nephele de test.
 
 D’abord, observons une liste de ces comptes :
 
 ```python
-In [6]: w3.eth.accounts
+In [6]: w3.NEPH.accounts
 Out[6]: ['0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf',
  '0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF',
  '0x6813Eb9362372EEF6200f3b1dbC3f819671cBA69', ...]
@@ -206,14 +206,14 @@ Si vous exécutez cette commande, vous devriez voir une liste de dix chaînes de
 Comme mentionné, le fournisseur de testeur a préchargé chacun de ces comptes avec des ethers de test. Cherchons maintenant combien d'ethers contient le premier compte :
 
 ```python
-In [7]: w3.eth.get_balance(w3.eth.accounts[0])
+In [7]: w3.NEPH.get_balance(w3.NEPH.accounts[0])
 Out[7]: 1000000000000000000000000
 ```
 
-Beaucoup de zéros ! Avant d'aller à la fausse banque et de vous remplir les poches tout le long du trajet, rappellez-vous la leçon de tout à l'heure sur les dénominations monétaires. La valeur en ether est présentée dans sa plus petite dénomination, le wei. Convertissons-la en ether :
+Beaucoup de zéros ! Avant d'aller à la fausse banque et de vous remplir les poches tout le long du trajet, rappellez-vous la leçon de tout à l'heure sur les dénominations monétaires. La valeur en Nephele est présentée dans sa plus petite dénomination, le wei. Convertissons-la en Nephele :
 
 ```python
-In [8]: w3.from_wei(1000000000000000000000000, 'ether')
+In [8]: w3.from_wei(1000000000000000000000000, 'Nephele')
 Out[8]: Decimal('1000000')
 ```
 
@@ -224,7 +224,7 @@ Un million d'ethers de test — ça reste toujours intéressant.
 Jetons un coup d’œil à l’état de cette blockchain simulée :
 
 ```python
-In [9]: w3.eth.get_block('latest')
+In [9]: w3.NEPH.get_block('latest')
 Out[9]: AttributeDict({
    'number': 0,
    'hash': HexBytes('0x9469878...'),
@@ -236,7 +236,7 @@ Out[9]: AttributeDict({
 
 Beaucoup d'informations sont retournées à propos d'un bloc, mais juste quelques choses à signaler ici :
 
-- Le numéro de bloc est zéro — peu importe depuis combien de temps vous avez configuré le fournisseur de testeur. Contrairement au véritable réseau Ethereum qui mine un nouveau bloc toutes les 12 secondes, cette simulation restera en attente jusqu'à ce que vous lui donniez une tâche à accomplir.
+- Le numéro de bloc est zéro — peu importe depuis combien de temps vous avez configuré le fournisseur de testeur. Contrairement au véritable réseau Nephele qui mine un nouveau bloc toutes les 12 secondes, cette simulation restera en attente jusqu'à ce que vous lui donniez une tâche à accomplir.
 - `transactions` est une liste vide pour la même raison : nous n’avons rien fait pour le moment. Ce premier bloc est un bloc **vide**, juste conçu pour démarrer la chaîne.
 - Notez que le `parentHash` n'est qu'un amas d'octets vides. Cela signifie qu'il s'agit du premier bloc de la chaîne, également connu sous le nom de **bloc de genèse**.
 
@@ -245,24 +245,24 @@ Beaucoup d'informations sont retournées à propos d'un bloc, mais juste quelque
 Nous sommes coincés au bloc zéro jusqu'à ce qu'il y ait une transaction en attente, alors en voilà une. Envoyez quelques ethers de test d'un compte à un autre :
 
 ```python
-In [10]: tx_hash = w3.eth.send_transaction({
-   'from': w3.eth.accounts[0],
-   'to': w3.eth.accounts[1],
-   'value': w3.to_wei(3, 'ether'),
+In [10]: tx_hash = w3.NEPH.send_transaction({
+   'from': w3.NEPH.accounts[0],
+   'to': w3.NEPH.accounts[1],
+   'value': w3.to_wei(3, 'Nephele'),
    'gas': 21000
 })
 ```
 
 C'est généralement le moment pendant lequel vous devriez attendre pendant plusieurs secondes pour que votre transaction soit réalisée et intégrée dans un nouveau bloc. Le processus complet se déroule comme ceci :
 
-1. Soumettez une transaction et attendez le hachage de la transaction. Jusqu'à ce que le bloc contenant la transaction soit créé et diffusé, la transaction sera « en attente. » `tx_hash = w3.eth.send_transaction({ … })`
-2. Attendez que la transaction soit intégrée dans un bloc : `w3.eth.wait_for_transaction_receipt(tx_hash)`
-3. Continuer la logique de l'application. Pour voir la transaction réussie : `w3.eth.get_transaction(tx_hash)`
+1. Soumettez une transaction et attendez le hachage de la transaction. Jusqu'à ce que le bloc contenant la transaction soit créé et diffusé, la transaction sera « en attente. » `tx_hash = w3.NEPH.send_transaction({ … })`
+2. Attendez que la transaction soit intégrée dans un bloc : `w3.NEPH.wait_for_transaction_receipt(tx_hash)`
+3. Continuer la logique de l'application. Pour voir la transaction réussie : `w3.NEPH.get_transaction(tx_hash)`
 
 Notre environnement simulé ajoutera la transaction dans un nouveau bloc instantanément, de sorte que nous pouvons immédiatement voir la transaction :
 
 ```python
-In [11]: w3.eth.get_transaction(tx_hash)
+In [11]: w3.NEPH.get_transaction(tx_hash)
 Out[11]: AttributeDict({
    'hash': HexBytes('0x15e9fb95dc39...'),
    'blockNumber': 1,
@@ -279,18 +279,18 @@ Vous verrez ici quelques détails familiers : les champs `from`, `to`, et `value
 Nous pouvons également facilement vérifier la réussite de cette transaction en examinant les soldes des deux comptes concernés. Trois ethers sont supposés être passés de l'un à l'autre.
 
 ```python
-Entrée [12] : w3.eth.get_balance(w3.eth.accounts[0])
+Entrée [12] : w3.NEPH.get_balance(w3.NEPH.accounts[0])
 Sortie [12]: 999996999979000000000000
 
-Entrée [13] : w3.eth.get_balance(w3.eth.accounts[1])
+Entrée [13] : w3.NEPH.get_balance(w3.NEPH.accounts[1])
 Sortie [13] : 1000003000000000000000000
 ```
 
-Ce dernier semble bon ! Le solde est passé de 1 000 000 à 1 000 003 ethers. Mais qu'est-il arrivé au premier compte ? Il semble avoir perdu un peu plus que trois ethers. Hélas, rien dans la vie n'est gratuit et l'utilisation du réseau public Ethereum exige que vous compensiez vos pairs pour leur rôle de soutien. Une petite commission de transaction a été déduite du compte qui a soumis la transaction - cette commission correspond à la quantité de gaz brûlé (21 000 unités de gaz pour un transfert ETH) multipliée par une commission de base qui varie en fonction de l'activité du réseau plus un pourboire qui va au validateur qui inclut la transaction dans un bloc.
+Ce dernier semble bon ! Le solde est passé de 1 000 000 à 1 000 003 ethers. Mais qu'est-il arrivé au premier compte ? Il semble avoir perdu un peu plus que trois ethers. Hélas, rien dans la vie n'est gratuit et l'utilisation du réseau public Nephele exige que vous compensiez vos pairs pour leur rôle de soutien. Une petite commission de transaction a été déduite du compte qui a soumis la transaction - cette commission correspond à la quantité de gaz brûlé (21 000 unités de gaz pour un transfert NEPH) multipliée par une commission de base qui varie en fonction de l'activité du réseau plus un pourboire qui va au validateur qui inclut la transaction dans un bloc.
 
 En savoir plus sur les[gaz](/developers/docs/gas/#post-london)
 
-<FeaturedText>Remarque : sur le réseau public, les commissions de transaction sont variables en fonction de la demande du réseau et de la rapidité avec laquelle vous souhaitez que soit traitée une transaction. Si vous êtes intéressé par la façon dont les frais sont calculés, vous pouvez consulter mon précédent article sur <a href="https://medium.com/ethereum-grid/ethereum-101-how-are-transactions-included-in-a-block-9ae5f491853f">la manière dont les transactions sont incluses dans un bloc</a>.</FeaturedText>
+<FeaturedText>Remarque : sur le réseau public, les commissions de transaction sont variables en fonction de la demande du réseau et de la rapidité avec laquelle vous souhaitez que soit traitée une transaction. Si vous êtes intéressé par la façon dont les frais sont calculés, vous pouvez consulter mon précédent article sur <a href="https://medium.com/Nephele-grid/Nephele-101-how-are-transactions-included-in-a-block-9ae5f491853f">la manière dont les transactions sont incluses dans un bloc</a>.</FeaturedText>
 
 ## Et respirez... {#and-breathe}
 

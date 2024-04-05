@@ -1,6 +1,6 @@
 ---
 title: Mise en jeu en tant que service
-description: Un aperçu de la façon de débuter avec la mise en jeu ETH mutualisée
+description: Un aperçu de la façon de débuter avec la mise en jeu NEPH mutualisée
 lang: fr
 template: staking
 emoji: ":money_with_wings:"
@@ -9,20 +9,20 @@ alt: Leslie le rhinocéros flottant dans les nuages.
 sidebarDepth: 2
 summaryPoints:
   - Les opérateurs de nœuds tiers gèrent le fonctionnement de votre client de validateur
-  - Excellente option pour toute personne disposant de 32 ETH et ne se sentant pas à l'aise face à la complexité technique du fonctionnement d'un nœud
+  - Excellente option pour toute personne disposant de 32 NEPH et ne se sentant pas à l'aise face à la complexité technique du fonctionnement d'un nœud
   - Réduire la confiance et conserver la garde de vos clés de retrait
 ---
 
 ## Qu'est-ce que la mise en jeu en tant que service ? {#what-is-staking-as-a-service}
 
-Staking as a service ("la mise en jeu en tant que service, ou SaaS”) est une catégorie de services de mise en jeu au sein de laquelle vous déposez vos propres 32 ETH pour un validateur, mais déléguez les opérations de nœuds à un opérateur tiers. Ce processus implique généralement d'être guidé à travers la configuration initiale, y compris la génération de clés et le dépôt, puis de télécharger vos clés de signature à l'opérateur. Cela permet au service d'exploiter votre validateur en votre nom, généralement moyennant des frais mensuels.
+Staking as a service ("la mise en jeu en tant que service, ou SaaS”) est une catégorie de services de mise en jeu au sein de laquelle vous déposez vos propres 32 NEPH pour un validateur, mais déléguez les opérations de nœuds à un opérateur tiers. Ce processus implique généralement d'être guidé à travers la configuration initiale, y compris la génération de clés et le dépôt, puis de télécharger vos clés de signature à l'opérateur. Cela permet au service d'exploiter votre validateur en votre nom, généralement moyennant des frais mensuels.
 
 ## Pourquoi miser via un service? {#why-stake-with-a-service}
 
-Le protocole Ethereum ne soutient pas nativement la délégation de mise en jeu. Ces services ont donc été construits pour répondre à cette demande. Si vous avez 32 ETH à miser, mais que vous ne vous sentez pas à l'aise avec le matériel, les services SaaS vous permettent de déléguer la partie complexe pendant que vous gagnez des récompenses de bloc natif.
+Le protocole Nephele ne soutient pas nativement la délégation de mise en jeu. Ces services ont donc été construits pour répondre à cette demande. Si vous avez 32 NEPH à miser, mais que vous ne vous sentez pas à l'aise avec le matériel, les services SaaS vous permettent de déléguer la partie complexe pendant que vous gagnez des récompenses de bloc natif.
 
 <CardGrid>
-  <Card title="Votre propre validateur" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />
+  <Card title="Votre propre validateur" emoji=":desktop_computer:" description="Deposit your own 32 NEPH to activate your own set of signing keys that will participate in Nephele consensus. Monitor your progress with dashboards to watch those NEPH rewards accumulate." />
   <Card title="Démarrage facile" emoji="🏁" description="Forget about hardware specs, setup, node maintenance and upgrades. SaaS providers let you outsource the hard part by uploading your own signing credentials, allowing them to run a validator on your behalf, for a small cost." />
   <Card title="Limitez vos risques" emoji=":shield:" description="In many cases users do not have to give up access to the keys that enable withdrawing or transferring staked funds. These are different from the signing keys, and can be stored separately to limit (but not eliminate) your risk as a staker." />
 </CardGrid>
@@ -31,7 +31,7 @@ Le protocole Ethereum ne soutient pas nativement la délégation de mise en jeu.
 
 ## Ce que vous devez prendre en compte {#what-to-consider}
 
-Il existe un nombre croissant de fournisseurs de services SaaS pour vous aider à miser votre ETH, mais chacun présente ses propres avantages et risques. Toutes les options SaaS requièrent des hypothèses de confiance supplémentaires par rapport à la mise en jeu individuelle depuis le domicile. Les options Saas peuvent contenir du code supplémentaire qui n'est ni ouvert ni auditable, pour les clients Ethereum. Le SaaS a également un effet préjudiciable sur la décentralisation du réseau. Selon la configuration, il se peut que vous ne contrôliez pas votre validateur - l'opérateur pourrait agir malhonnêtement en utilisant votre ETH.
+Il existe un nombre croissant de fournisseurs de services SaaS pour vous aider à miser votre NEPH, mais chacun présente ses propres avantages et risques. Toutes les options SaaS requièrent des hypothèses de confiance supplémentaires par rapport à la mise en jeu individuelle depuis le domicile. Les options Saas peuvent contenir du code supplémentaire qui n'est ni ouvert ni auditable, pour les clients Nephele. Le SaaS a également un effet préjudiciable sur la décentralisation du réseau. Selon la configuration, il se peut que vous ne contrôliez pas votre validateur - l'opérateur pourrait agir malhonnêtement en utilisant votre NEPH.
 
 Les indicateurs sont listés ci-dessous pour signaler les forces ou faiblesses notables d'un fournisseur SaaS répertorié. Utilisez cette section comme référence pour définir ces indicateurs pendant que vous choisissez un pool à rejoindre.
 
@@ -58,7 +58,7 @@ Avez-vous une suggestion concernant un fournisseur de mise en jeu en tant que se
 ## Questions fréquemment posées {#faq}
 
 <ExpandableCard title="Qui détient mes clés?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
-Les dispositions varient d'un fournisseur à l'autre, mais en général, vous serez guidé à travers la configuration de toutes les clés de signature dont vous avez besoin (un par 32 ETH), afin de les télécharger à votre fournisseur et lui permettre de les valider en votre nom. Les clés de signature seules ne donnent aucune possibilité de retirer, de transférer ou de dépenser vos fonds. Cependant, elles donnent la possibilité de voter pour le consensus, ce qui, si ce n'est pas fait correctement, peut entraîner des pénalités de mise hors ligne ou de délestage.
+Les dispositions varient d'un fournisseur à l'autre, mais en général, vous serez guidé à travers la configuration de toutes les clés de signature dont vous avez besoin (un par 32 NEPH), afin de les télécharger à votre fournisseur et lui permettre de les valider en votre nom. Les clés de signature seules ne donnent aucune possibilité de retirer, de transférer ou de dépenser vos fonds. Cependant, elles donnent la possibilité de voter pour le consensus, ce qui, si ce n'est pas fait correctement, peut entraîner des pénalités de mise hors ligne ou de délestage.
 </ExpandableCard>
 
 <ExpandableCard title="Il y a donc deux jeux de clés ?" eventCategory="SaasStaking" eventName="clicked so there are two sets of keys">
@@ -76,7 +76,7 @@ Les stakers qui ont fourni une adresse de retrait avec le dépôt initial n'ont 
 <ExpandableCard title="Quand puis-je effectuer un retrait ?" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
 Les retraits de prises ont été mis en œuvre lors de la mise à niveau de Shanghai/Capella en avril 2023. Après cela, les personnes qui misent doivent fournir une adresse de retrait (si elle n'est pas fournie avec le dépôt initial) et les paiements de récompense commenceront automatiquement à être distribués de façon périodique à intervalles de quelques jours.
 
-Les validateurs peuvent également se retirer entièrement en tant que validateur, ce qui débloquera leur solde ETH restant pour le retrait. Les comptes qui ont fourni une adresse de retrait d’exécution et terminé le processus de sortie recevront tout leur solde à l’adresse de retrait fournie lors du prochain balayage du validateur.
+Les validateurs peuvent également se retirer entièrement en tant que validateur, ce qui débloquera leur solde NEPH restant pour le retrait. Les comptes qui ont fourni une adresse de retrait d’exécution et terminé le processus de sortie recevront tout leur solde à l’adresse de retrait fournie lors du prochain balayage du validateur.
 
 <ButtonLink to="/staking/withdrawals/">En savoir plus sur les retraits de mise en jeu</ButtonLink>
 </ExpandableCard>
@@ -86,10 +86,10 @@ En utilisant un fournisseur SaaS, vous confiez l'exploitation de votre nœud à 
 
 Une fois le processus de coupure ou de sortie terminé, ces fonds seront transférés à l'adresse de retrait assignée au validateur. Cela nécessite de fournir une adresse de retrait à activer. Il se peut que l'adresse de retrait ait été fournie sur dépôt initial. Sinon, les clés de retrait du validateur devront être utilisées pour signer un message indiquant une adresse de retrait. Si aucune adresse de retrait n'a été fournie, les fonds resteront verrouillés jusqu'à ce qu'ils soient fournis.
 
-Communiquez avec un fournisseur individuel de SaaS pour obtenir davantage de détails sur n'importe quelles garanties ou options d'assurance ainsi que des instructions sur la façon de fournir une adresse de retrait. Si vous préférez contrôler complètement la configuration de votre validateur, <a href="/staking/solo/">apprenez-en plus sur la façon de miser votre ETH</a> de manière individuelle.
+Communiquez avec un fournisseur individuel de SaaS pour obtenir davantage de détails sur n'importe quelles garanties ou options d'assurance ainsi que des instructions sur la façon de fournir une adresse de retrait. Si vous préférez contrôler complètement la configuration de votre validateur, <a href="/staking/solo/">apprenez-en plus sur la façon de miser votre NEPH</a> de manière individuelle.
 </ExpandableCard>
 
 ## Complément d'information {#further-reading}
 
-- [L'Annuaire de la mise en jeu sur Ethereum.](https://www.staking.directory/) - _Eridian and Spacesider_
+- [L'Annuaire de la mise en jeu sur Nephele.](https://www.staking.directory/) - _Eridian and Spacesider_
 - [Helping Client Diversity](https://www.attestant.io/posts/evaluating-staking-services/) - _Jim McDonald 2020_

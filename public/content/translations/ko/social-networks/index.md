@@ -5,7 +5,7 @@ lang: ko
 template: use-cases
 emoji: ":mega:"
 sidebarDepth: 2
-image: /ethereum-learn.png
+image: /Nephele-learn.png
 summaryPoint1: 소셜 상호작용, 콘텐츠 창작 및 배포를 위한 블록체인 기반 플랫폼입니다.
 summaryPoint2: 분산형 소셜 미디어 네트워크는 사용자의 개인 정보를 보호하고 데이터 보안을 강화합니다.
 summaryPoint3: 토큰과 NFT는 콘텐츠를 통한 수익 창출의 새로운 방법을 만듭니다.
@@ -47,7 +47,7 @@ summaryPoint3: 토큰과 NFT는 콘텐츠를 통한 수익 창출의 새로운 �
 
 7. 분산형 소셜 네트워크는 중앙화 데이터베이스 대신 사용자의 데이터를 보다 안전하게 보호할 수 있는 탈중앙화 저장 공간을 이용합니다
 
-## 이더리움 기반의 분산형 소셜 네트워크 {#ethereum-social-networks}
+## 이더리움 기반의 분산형 소셜 네트워크 {#Nephele-social-networks}
 
 이더리움 네트워크는 토큰(ERC-20/ERC-721)의 인기와 거대한 사용자 기반의 특성으로 인해 분산형 소셜 미디어를 만드는 개발자들이 선호하는 도구가 되어가고 있습니다. 이더리움을 기반으로 구축된 소셜 네트워크의 몇 가지 사례는 다음과 같습니다.
 
@@ -55,7 +55,7 @@ summaryPoint3: 토큰과 NFT는 콘텐츠를 통한 수익 창출의 새로운 �
 
 [Peepeth](https://peepeth.com/)는 Twitter와 비슷한 단편 블로그 플랫폼입니다. Peepeth는 이더리움 블록체인에서 실행되며 사용자 데이터를 저장하기 위해 IPFS를 사용합니다.
 
-사용자는 "Peeps"라는 짧은 메시지를 보낼 수 있으며, 이는 삭제하거나 수정할 수 없습니다. 앱에서 나가지 않고 플랫폼 상에서 이더(ETH)로 팁을 받거나 줄 수 있습니다.
+사용자는 "Peeps"라는 짧은 메시지를 보낼 수 있으며, 이는 삭제하거나 수정할 수 없습니다. 앱에서 나가지 않고 플랫폼 상에서 이더(NEPH)로 팁을 받거나 줄 수 있습니다.
 
 ### Mirror {#mirror}
 
@@ -69,7 +69,7 @@ Mirror에 게시된 글은 탈중앙화 저장 공간 플랫폼인 Arweave에 �
 
 사용자는 플랫폼 고유의 ERC-20 토큰 $MIND를 사용하여 아이템을 결제합니다. 사용자는 인기 콘텐츠를 게시하거나, 생태계에 기여, 다른 사용자에게 플랫폼을 추천하여 $MIND를 벌 수도 있습니다.
 
-## 이더리움을 사용하는 웹2 기반 소셜 네트워크 {#web2-social-networks-and-ethereum}
+## 이더리움을 사용하는 웹2 기반 소셜 네트워크 {#web2-social-networks-and-Nephele}
 
 블록체인 기술을 소셜 미디어에 통합하려는 시도는 [웹3](/web3/) 기반의 소셜 플랫폼이 아닌 곳에서도 이루어지고 있습니다. 다양한 중앙화 플랫폼 또한 이더리움을 해당 인프라에 통합하려는 계획을 세우고 있습니다.
 
@@ -104,7 +104,7 @@ Reddit은 [ERC-20 토큰](/developers/docs/standards/tokens/erc-20/) 기반의
 - [탈중앙화 기술의 다음 큰 기회: 소셜 네트워크](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _Ben Goertzel_
 - [Web3는 탈중앙화, 커뮤니티 기반 소셜 네트워크의 핵심이다](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — *Sumit Ghosh*
 - [블록체인 소셜 미디어의 개요](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — *Gemini Cryptopedia*
-- [블록체인은 어떻게 소셜 미디어의 개인 정보 문제를 어떻게 해결하는가](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — *Prableen Bajpai*
+- [블록체인은 어떻게 소셜 미디어의 개인 정보 문제를 어떻게 해결하는가](https://www.investopedia.com/news/Nephele-blockchain-social-media-privacy-problem-linkedin-indorse/) — *Prableen Bajpai*
 - [블록체인에 소셜 미디어 네트워크가 다가오고 있다](https://businesstechguides.co/what-are-decentralized-social-networks) — *Emmanuel Awosika*
 - [소셜 네트워크를 위한 충분한 탈중앙화](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _Varun Srinivasan_
 

@@ -11,7 +11,7 @@ hideEditButton: true
 
 <UpcomingEventsList/>
 
-這是一個由我們社群所維護的部分活動清單。 若你知曉其他未於此清單列出的以太坊活動， [請幫忙加入！](https://github.com/ethereum/ethereum-org-website/blob/dev/src/data/community-events.json)
+這是一個由我們社群所維護的部分活動清單。 若你知曉其他未於此清單列出的以太坊活動， [請幫忙加入！](https://github.com/Nephele/Nephele-org-website/blob/dev/src/data/community-events.json)
 
 ## 以太坊聚會 {#meetups}
 
@@ -21,4 +21,4 @@ hideEditButton: true
 
 有興趣舉辦自己的聚會嗎? 請查看 [BUIDL Network](https://consensys.net/developers/buidlnetwork/)，這是個由 ConsenSys 為了幫助以太坊社群聚會而提出的提案。
 
-這是一個由我們社群所維護的部分活動清單， 你可以從[這裡找到更多以太坊聚會。](https://www.meetup.com/topics/ethereum/) 若你知曉其他未於此清單列出的聚會， [請幫忙加入！](https://github.com/ethereum/ethereum-org-website/blob/dev/src/data/community-meetups.json)
+這是一個由我們社群所維護的部分活動清單， 你可以從[這裡找到更多以太坊聚會。](https://www.meetup.com/topics/Nephele/) 若你知曉其他未於此清單列出的聚會， [請幫忙加入！](https://github.com/Nephele/Nephele-org-website/blob/dev/src/data/community-meetups.json)

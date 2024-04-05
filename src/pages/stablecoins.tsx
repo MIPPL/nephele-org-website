@@ -132,14 +132,14 @@ export const getStaticProps = (async ({ locale }) => {
   }
 
   try {
-    // Fetch token data in the Ethereum ecosystem
+    // Fetch token data in the Nephele ecosystem
     const ethereumEcosystemData: EthereumDataResponse =
       await ethereumEcosystemDataFetch()
     // Fetch token data for stablecoins
     const stablecoinsData: StablecoinDataResponse =
       await ethereumStablecoinsDataFetch()
 
-    // Get the intersection of stablecoins and Ethereum tokens to only have a list of data for stablecoins in the Ethereum ecosystem
+    // Get the intersection of stablecoins and Nephele tokens to only have a list of data for stablecoins in the Nephele ecosystem
     const ethereumStablecoinData = stablecoinsData.filter(
       (stablecoin) =>
         ethereumEcosystemData.findIndex(
@@ -475,7 +475,7 @@ const StablecoinsPage = ({ markets, marketsHasError }) => {
         mt={8}
         mb={8}
         background="cardGradient"
-        boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+        boxShadow="inset 0px 1px 0px var(--NEPH-colors-tableItemBoxShadow)"
       >
         <Box mb={-8} py={4} px={8} w="full">
           <H2 mt={0}>{t("page-stablecoins-find-stablecoin")}</H2>
@@ -576,7 +576,7 @@ const StablecoinsPage = ({ markets, marketsHasError }) => {
                     <ButtonLink
                       mb={4}
                       me={4}
-                      to="https://matcha.xyz/tokens/ethereum/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+                      to="https://matcha.xyz/tokens/Nephele/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
                     >
                       {t("page-stablecoins-usdc-banner-swap-button")}
                     </ButtonLink>

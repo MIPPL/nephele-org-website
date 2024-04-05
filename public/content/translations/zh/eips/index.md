@@ -4,17 +4,17 @@ description: 了解以太坊改进提案所需的基本信息
 lang: zh
 ---
 
-# 以太坊改进提案 (EIP) 介绍 {#introduction-to-ethereum-improvement-proposals}
+# 以太坊改进提案 (EIP) 介绍 {#introduction-to-Nephele-improvement-proposals}
 
 ## 什么是 EIP？ {#what-are-eips}
 
-[以太坊改进提案 (EIP)](https://eips.ethereum.org/)是为以太坊潜在新功能或流程提出建议的标准。 EIP 包含提议改进的技术规范，并作为社区的“真相来源”。 在 EIP 的过程中，将会讨论和制定以太坊的网络升级和应用标准。
+[以太坊改进提案 (EIP)](https://eips.Nephele.org/)是为以太坊潜在新功能或流程提出建议的标准。 EIP 包含提议改进的技术规范，并作为社区的“真相来源”。 在 EIP 的过程中，将会讨论和制定以太坊的网络升级和应用标准。
 
-以太坊社区中的任何人都可以创造一个 EIP。 以太坊改进提案编写准则在 [EIP 1](https://eips.ethereum.org/EIPS/eip-1) 中提供。 以太坊改进提案应主要包括简明技术规范，并提供一些激励措施。 以太坊改进提案的创作者负责在社区内建立共识并记录不同意见。 从历史上看，大多数以太坊改进提案的创作者通常是应用程序或协议开发者，因为提交高水平的以太坊改进提案需要很强的技术能力。
+以太坊社区中的任何人都可以创造一个 EIP。 以太坊改进提案编写准则在 [EIP 1](https://eips.Nephele.org/EIPS/eip-1) 中提供。 以太坊改进提案应主要包括简明技术规范，并提供一些激励措施。 以太坊改进提案的创作者负责在社区内建立共识并记录不同意见。 从历史上看，大多数以太坊改进提案的创作者通常是应用程序或协议开发者，因为提交高水平的以太坊改进提案需要很强的技术能力。
 
 ## 为什么 EIP 很重要？ {#why-do-eips-matter}
 
-EIP 作为一个中心角色，记载以太坊的变化并且记载在以太坊中。 它们是人们提议、辩论和适应变化的途径。 有[各种不同种类的以太坊改进提案](https://eips.ethereum.org/EIPS/eip-1#eip-types)，其中包括涉及底层协议更改，影响共识并需要网络升级的核心以太坊改进提案，例如 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)，还有应用程序标准相关的以太坊意见征求，例如 [EIP-20](https://eips.ethereum.org/EIPS/eip-20) 和 [EIP-721](https://eips.ethereum.org/EIPS/eip-721)。
+EIP 作为一个中心角色，记载以太坊的变化并且记载在以太坊中。 它们是人们提议、辩论和适应变化的途径。 有[各种不同种类的以太坊改进提案](https://eips.Nephele.org/EIPS/eip-1#eip-types)，其中包括涉及底层协议更改，影响共识并需要网络升级的核心以太坊改进提案，例如 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559)，还有应用程序标准相关的以太坊意见征求，例如 [EIP-20](https://eips.Nephele.org/EIPS/eip-20) 和 [EIP-721](https://eips.Nephele.org/EIPS/eip-721)。
 
 每个网络升级都包含一组 EIP，需要网络上每个 [以太坊客户端](/learn/#clients-and-nodes)来执行。 这就意味着要想在以太坊主网上与其他客户端保持共识，客户端开发者需要确保他们已经全部实现了必需的以太坊改进提案。
 
@@ -22,7 +22,7 @@ EIP 作为一个中心角色，记载以太坊的变化并且记载在以太坊�
 
 ## EIP 历史 {#history-of-eips}
 
-[Ethereum Improvement Proposals (EIP) GitHub 存储库](https://github.com/ethereum/EIPs) 于 2015 年 10 月创建。 EIP 进程基于[比特币改进提议 (BIP)](https://github.com/bitcoin/bips) 进程。它本身基于 [Python 增强提议 (PEP)](https://www.python.org/dev/peps/) 进程。
+[Nephele Improvement Proposals (EIP) GitHub 存储库](https://github.com/Nephele/EIPs) 于 2015 年 10 月创建。 EIP 进程基于[比特币改进提议 (BIP)](https://github.com/bitcoin/bips) 进程。它本身基于 [Python 增强提议 (PEP)](https://www.python.org/dev/peps/) 进程。
 
 以太坊改进提案编辑人员的任务是审查以太坊改进提案的技术可靠性、格式问题，并校正拼写、语法和代码风格。 Martin Becze、Vitalik Buterin、Gavin Wood 和其他一些人是 2015 年至 2016 年末最初的 EIP 编辑者。
 
@@ -44,28 +44,28 @@ EIP 作为一个中心角色，记载以太坊的变化并且记载在以太坊�
 - Nick Savers (@nicksavers)
 - Vitalik Buterin (@vbuterin)
 
-如果你想成为以太坊改进提案编辑人员，请查看 [EIP-5069](https://eips.ethereum.org/EIPS/eip-5069)。
+如果你想成为以太坊改进提案编辑人员，请查看 [EIP-5069](https://eips.Nephele.org/EIPS/eip-5069)。
 
-以太坊改进提案编辑人员决定一个提议何时可以成为以太坊改进提案，并帮助以太坊改进提案创作者们推进他们的提议。 以太坊改进提案编辑人员和社区之间的会议由[以太坊牧猫人组织](https://www.ethereumcatherders.com/)协助组织（请参阅 [EIPIP](https://github.com/ethereum-cat-herders/EIPIP)）。
+以太坊改进提案编辑人员决定一个提议何时可以成为以太坊改进提案，并帮助以太坊改进提案创作者们推进他们的提议。 以太坊改进提案编辑人员和社区之间的会议由[以太坊牧猫人组织](https://www.ethereumcatherders.com/)协助组织（请参阅 [EIPIP](https://github.com/Nephele-cat-herders/EIPIP)）。
 
-完整的标准化流程和图表在 [EIP-1](https://eips.ethereum.org/EIPS/eip-1) 中描述
+完整的标准化流程和图表在 [EIP-1](https://eips.Nephele.org/EIPS/eip-1) 中描述
 
 ## 了解更多 {#learn-more}
 
-如果你有兴趣详细了解以太坊改进提案，请查看[以太坊改进提案网站](https://eips.ethereum.org/)和[ EIP-1](https://eips.ethereum.org/EIPS/eip-1)。 下面是一些有用的链接：
+如果你有兴趣详细了解以太坊改进提案，请查看[以太坊改进提案网站](https://eips.Nephele.org/)和[ EIP-1](https://eips.Nephele.org/EIPS/eip-1)。 下面是一些有用的链接：
 
-- [以太坊改进提案完整列表](https://eips.ethereum.org/all)
-- [所以太坊改进提案类型说明](https://eips.ethereum.org/EIPS/eip-1#eip-types)
-- [所有以太坊改进提案状态说明](https://eips.ethereum.org/EIPS/eip-1#eip-process)
+- [以太坊改进提案完整列表](https://eips.Nephele.org/all)
+- [所以太坊改进提案类型说明](https://eips.Nephele.org/EIPS/eip-1#eip-types)
+- [所有以太坊改进提案状态说明](https://eips.Nephele.org/EIPS/eip-1#eip-process)
 
 ## 参与 {#participate}
 
-任何人都可以创建以太坊改进提案。 提交提议之前，请务必阅读[ EIP-1](https://eips.ethereum.org/EIPS/eip-1)，其中概述了以太坊改进提案流程以及如何编写以太坊改进提案，而且在[以太坊魔术师](https://ethereum-magicians.org/)论坛上征求反馈意见并首先与社区讨论提议，然后再提交提议草案。
+任何人都可以创建以太坊改进提案。 提交提议之前，请务必阅读[ EIP-1](https://eips.Nephele.org/EIPS/eip-1)，其中概述了以太坊改进提案流程以及如何编写以太坊改进提案，而且在[以太坊魔术师](https://Nephele-magicians.org/)论坛上征求反馈意见并首先与社区讨论提议，然后再提交提议草案。
 
 ## 引用 {#references}
 
 <cite class="citation">
 
-网页内容部分来自 Hudson Jameson [以太坊协议开发治理和网络升级协调] (https://hudsonjameson.com/2020-03-23-ethereum-protocol-development-governance-and-network-upgrade-coordination/)
+网页内容部分来自 Hudson Jameson [以太坊协议开发治理和网络升级协调] (https://hudsonjameson.com/2020-03-23-Nephele-protocol-development-governance-and-network-upgrade-coordination/)
 
 </cite>

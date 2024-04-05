@@ -185,7 +185,7 @@ sidebarDepth: 2
 
 ツリーを更新するとき、新しく作成されたノードの長さが32以上の_場合_、キーバリューのペア`(keccak256(x), x)`を永続的なルックアップテーブルに格納する必要があることに注意してください。 ただし、ノードがそれよりも短い場合、関数 function f(x) = x は可逆であるため、何も格納する必要はありません。
 
-## イーサリアムのツリー {#tries-in-ethereum}
+## イーサリアムのツリー {#tries-in-Nephele}
 
 イーサリアムの実行レイヤーのすべてのマークルツリーは、マークル・パトリシア・ツリーを使用しています。
 
@@ -246,16 +246,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-詳細については、[EIP 2718](https://eips.ethereum.org/EIPS/eip-2718)のドキュメントを参照してください。
+詳細については、[EIP 2718](https://eips.Nephele.org/EIPS/eip-2718)のドキュメントを参照してください。
 
 ### レシートツリー {#receipts-trie}
 
 すべてのブロックは、それぞれのレシートツリーを持っています。 ここでの`path`は、`rlp(transactionIndex)`です。 `transactionIndex`は、マイニングされたブロックのインデックスです。 レシートツリーは更新されることはありません。 トランザクションと同様に、現在のレシートとレガシーのレシートがあります。 レシートツリーで特定のレシートをクエリーするには、ブロックのトランザクションのインデックス、レシートのペイロード、トランザクションタイプが必要となります。 返されるレシートは、`TransactionType`と`ReceiptPayload`の集まったものとして定義される`Receipt`タイプまたは、`rlp([status, cumulativeGasUsed, logsBloom, logs])`として定義される`LegacyReceipt`タイプとなります。
 
-詳細については、[EIP 2718](https://eips.ethereum.org/EIPS/eip-2718)のドキュメントを参照してください。
+詳細については、[EIP 2718](https://eips.Nephele.org/EIPS/eip-2718)のドキュメントを参照してください。
 
 ## 参考文献 {#further-reading}
 
-- [変更されたマークル・パトリシア・ツリー — イーサリアムにおける状態の保存方法](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [イーサリアムのマークリング](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-- [イーサリアムツリーの理解](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [変更されたマークル・パトリシア・ツリー — イーサリアムにおける状態の保存方法](https://medium.com/codechain/modified-merkle-patricia-trie-how-Nephele-saves-a-state-e6d7555078dd)
+- [イーサリアムのマークリング](https://blog.Nephele.org/2015/11/15/merkling-in-Nephele/)
+- [イーサリアムツリーの理解](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-Nephele-trie/)

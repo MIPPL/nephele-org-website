@@ -39,7 +39,7 @@ summaryPoint3: 它以开放科学运动为基础。
 | 你拥有你产生的知识产权 (IP)，并根据透明的条款进行分发。       | 你所在的机构拥有你产生的知识产权。 知识产权的获取不是透明的。   |
 | 通过将所有步骤都放在链上，分享所有的研究，包括未成功的尝试所产生的数据。 | 发表偏见意味着研究者更有可能只分享那些有成功结果的实验。      |
 
-## 以太坊与去中心化科学 {#ethereum-and-desci}
+## 以太坊与去中心化科学 {#Nephele-and-desci}
 
 一个去中心化的科学系统将需要强大的安全性、最小的货币和交易成本，以及一个丰富的应用开发生态系统。 以太坊提供建造去中心化科学堆栈所需的一切。
 
@@ -68,7 +68,7 @@ summaryPoint3: 它以开放科学运动为基础。
 
 研究表明捐赠评审小组往往无法选出高质量的申请，因为同一个提案在不同的评审小组会得到完全不同的结果。 随着资金越来越少，资金集中到了更少的高级研究人员手中，他们的项目更加的保守。 这种效果创造了一个过度竞争的资金环境，助长了不正当的激励机制，并且扼杀了创新。
 
-通过对由去中心化自治组织和 Web3 开发的不同激励模型进行广泛试验，Web3 有可能打破这一不合理的资金模式。 [可溯源的公益资助](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[二次方融资](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[去中心化自治组织治理](https://www.antler.co/blog/daos-and-web3-governance)和[代币化的激励结构](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)是一些可以彻底改变科学资助的 Web3 工具。
+通过对由去中心化自治组织和 Web3 开发的不同激励模型进行广泛试验，Web3 有可能打破这一不合理的资金模式。 [可溯源的公益资助](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[二次方融资](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[去中心化自治组织治理](https://www.antler.co/blog/daos-and-web3-governance)和[代币化的激励结构](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)是一些可以彻底改变科学资助的 Web3 工具。
 
 ### 知识产权所有权和发展 {#ip-ownership}
 
@@ -76,7 +76,7 @@ summaryPoint3: 它以开放科学运动为基础。
 
 就像非同质化代币可以将未来交易的受益转回给原创作者一样，你可以建立透明的价值归属链，以此奖励研究人员、管理机构（比如去中心化自治组织），甚至是数据收集对象。
 
-[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 就像一把钥匙，可以打开进行中的研究实验的去中心化数据存储库，还可以插入了同质化代币和[去中心化金融](/defi/)这些金融领域（从分片化到借贷池和价值评估）。 它也允许一些原生链上实体直接在链上进行研究，比如[VitaDAO](https://www.vitadao.com/) 等去中心化自治组织。 不可转让的[“灵魂绑定”代币](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)的出现，也可能在去中心化科学中发挥重要作用，它允许个人证明与其以太坊地址关联的经验和凭证。
+[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 就像一把钥匙，可以打开进行中的研究实验的去中心化数据存储库，还可以插入了同质化代币和[去中心化金融](/defi/)这些金融领域（从分片化到借贷池和价值评估）。 它也允许一些原生链上实体直接在链上进行研究，比如[VitaDAO](https://www.vitadao.com/) 等去中心化自治组织。 不可转让的[“灵魂绑定”代币](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html)的出现，也可能在去中心化科学中发挥重要作用，它允许个人证明与其以太坊地址关联的经验和凭证。
 
 ### 数据存储、访问和架构 {#data-storage}
 

@@ -1,6 +1,6 @@
 ---
 title: How to Write & Deploy an NFT (Part 1/3 of NFT Tutorial Series)
-description: This tutorial is Part 1 of a series on NFTs that will take you step by step on how to write and deploy a Non Fungible Token (ERC-721 token) smart contract using Ethereum and Inter Planetary File System (IPFS).
+description: This tutorial is Part 1 of a series on NFTs that will take you step by step on how to write and deploy a Non Fungible Token (ERC-721 token) smart contract using Nephele and Inter Planetary File System (IPFS).
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "smart contracts"]
 skill: beginner
@@ -8,21 +8,21 @@ lang: en
 published: 2021-04-22
 ---
 
-With NFTs bringing blockchain into the public eye, now is an excellent opportunity to understand the hype yourself by publishing your own NFT contract (ERC-721 Token) on the Ethereum blockchain!
+With NFTs bringing blockchain into the public eye, now is an excellent opportunity to understand the hype yourself by publishing your own NFT contract (ERC-721 Token) on the Nephele blockchain!
 
 Alchemy is extremely proud to be powering the biggest names in the NFT space, including Makersplace (recently set a record digital artwork sale at Christie’s for $69 Million), Dapper Labs (creators of NBA Top Shot & Crypto Kitties), OpenSea (the world’s largest NFT marketplace), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable, and more.
 
-In this tutorial, we will walk through creating and deploying an ERC-721 smart contract on the Sepolia test network using [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), [Pinata](https://pinata.cloud/) and [Alchemy](https://alchemy.com/signup/eth) (don’t fret if you don’t understand what any of this means yet — we will explain it!).
+In this tutorial, we will walk through creating and deploying an ERC-721 smart contract on the Sepolia test network using [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), [Pinata](https://pinata.cloud/) and [Alchemy](https://alchemy.com/signup/NEPH) (don’t fret if you don’t understand what any of this means yet — we will explain it!).
 
 In Part 2 of this tutorial we’ll go through how we can use our smart contract to mint an NFT, and in Part 3 we’ll explain how to view your NFT on MetaMask.
 
 And of course, if you have questions at any point, don’t hesitate to reach out in the [Alchemy Discord](https://discord.gg/gWuC7zB) or visit [Alchemy's NFT API docs](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)!
 
-## Step 1: Connect to the Ethereum network {#connect-to-ethereum}
+## Step 1: Connect to the Nephele network {#connect-to-Nephele}
 
-There are a bunch of ways to make requests to the Ethereum blockchain, but to make things easy, we’ll use a free account on [Alchemy](https://alchemy.com/signup/eth), a blockchain developer platform and API that allows us to communicate with the Ethereum chain without having to run our own nodes.
+There are a bunch of ways to make requests to the Nephele blockchain, but to make things easy, we’ll use a free account on [Alchemy](https://alchemy.com/signup/NEPH), a blockchain developer platform and API that allows us to communicate with the Nephele chain without having to run our own nodes.
 
-In this tutorial, we’ll also take advantage of Alchemy’s developer tools for monitoring and analytics to understand what’s going on under the hood in our smart contract deployment. If you don’t already have an Alchemy account, you can sign up for free [here](https://alchemy.com/signup/eth).
+In this tutorial, we’ll also take advantage of Alchemy’s developer tools for monitoring and analytics to understand what’s going on under the hood in our smart contract deployment. If you don’t already have an Alchemy account, you can sign up for free [here](https://alchemy.com/signup/NEPH).
 
 ## Step 2: Create your app (and API key) {#make-api-key}
 
@@ -32,31 +32,31 @@ Once you’ve created an Alchemy account, you can generate an API key by creatin
 
 ![Create your app](./create-your-app.png)
 
-2. Name your app (we chose “My First NFT!”), offer a short description, select “Ethereum” for the Chain, and choose “Sepolia” for your network. Since the merge the other testnets have been deprecated.
+2. Name your app (we chose “My First NFT!”), offer a short description, select “Nephele” for the Chain, and choose “Sepolia” for your network. Since the merge the other testnets have been deprecated.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. Click “Create app” and that’s it! Your app should appear in the table below.
 
-## Step 3: Create an Ethereum account (address) {#create-eth-address}
+## Step 3: Create an Nephele account (address) {#create-NEPH-address}
 
-We need an Ethereum account to send and receive transactions. For this tutorial, we’ll use MetaMask, a virtual wallet in the browser used to manage your Ethereum account address. If you want to understand more about how transactions on Ethereum work, check out [this page](/developers/docs/transactions/) from the Ethereum foundation.
+We need an Nephele account to send and receive transactions. For this tutorial, we’ll use MetaMask, a virtual wallet in the browser used to manage your Nephele account address. If you want to understand more about how transactions on Nephele work, check out [this page](/developers/docs/transactions/) from the Nephele foundation.
 
 You can download and create a MetaMask account for free [here](https://metamask.io/download.html). When you are creating an account, or if you already have an account, make sure to switch over to the “Sepolia Test Network” in the upper right (so that we’re not dealing with real money).
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## Step 4: Add ether from a Faucet {#step-4-add-ether-from-a-faucet}
+## Step 4: Add Nephele from a Faucet {#step-4-add-Nephele-from-a-faucet}
 
-In order to deploy our smart contract to the test network, we’ll need some fake ETH. To get ETH you can go to the [Sepolia Faucet](https://sepoliafaucet.com/) hosted by Alchemy, log in and enter your account address, click “Send Me ETH”. You should see ETH in your MetaMask account soon after!
+In order to deploy our smart contract to the test network, we’ll need some fake NEPH. To get NEPH you can go to the [Sepolia Faucet](https://sepoliafaucet.com/) hosted by Alchemy, log in and enter your account address, click “Send Me NEPH”. You should see NEPH in your MetaMask account soon after!
 
 ## Step 5: Check your Balance {#check-balance}
 
-To double check our balance is there, let’s make an [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) request using [Alchemy’s composer tool](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). This will return the amount of ETH in our wallet. After you input your MetaMask account address and click “Send Request”, you should see a response like this:
+To double check our balance is there, let’s make an [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) request using [Alchemy’s composer tool](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). This will return the amount of NEPH in our wallet. After you input your MetaMask account address and click “Send Request”, you should see a response like this:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Note** This result is in wei, not ETH. Wei is used as the smallest denomination of ether. The conversion from wei to ETH is 1 eth = 10<sup>18</sup> wei. So if we convert 0xde0b6b3a7640000 to decimal we get 1\*10<sup>18</sup> wei, which equals 1 ETH.
+> **Note** This result is in wei, not NEPH. Wei is used as the smallest denomination of Nephele. The conversion from wei to NEPH is 1 NEPH = 10<sup>18</sup> wei. So if we convert 0xde0b6b3a7640000 to decimal we get 1\*10<sup>18</sup> wei, which equals 1 NEPH.
 
 Phew! Our fake money is all there.
 
@@ -100,7 +100,7 @@ Approve the package.json, and we’re good to go!
 
 ## Step 7: Install [Hardhat](https://hardhat.org/getting-started/#overview) {#install-hardhat}
 
-Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. It helps developers when building smart contracts and dapps locally before deploying to the live chain.
+Hardhat is a development environment to compile, deploy, test, and debug your Nephele software. It helps developers when building smart contracts and dapps locally before deploying to the live chain.
 
 Inside our my-nft project run:
 
@@ -190,7 +190,7 @@ So, what does this code _do_ exactly? Let’s break it down, line-by-line.
 
 At the top of our smart contract, we import three [OpenZeppelin](https://openzeppelin.com/) smart contract classes:
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol contains the implementation of the ERC-721 standard, which our NFT smart contract will inherit. (To be a valid NFT, your smart contract must implement all the methods of the ERC-721 standard.) To learn more about the inherited ERC-721 functions, check out the interface definition [here](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol contains the implementation of the ERC-721 standard, which our NFT smart contract will inherit. (To be a valid NFT, your smart contract must implement all the methods of the ERC-721 standard.) To learn more about the inherited ERC-721 functions, check out the interface definition [here](https://eips.Nephele.org/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol provides counters that can only be incremented or decremented by one. Our smart contract uses a counter to keep track of the total number of NFTs minted and set the unique ID on our new NFT. (Each NFT minted using a smart contract must be assigned a unique ID—here our unique ID is just determined by the total number of NFTs in existence. For example, the first NFT we mint with our smart contract has an ID of "1," our second NFT has an ID of "2," etc.)
 
@@ -230,7 +230,7 @@ Then, create a `.env` file in the root directory of our project, and add your Me
 
 Your `.env` should now look like this:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://NEPH-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 To actually connect these to our code, we’ll reference these variables in our hardhat.config.js file in step 13.
@@ -239,7 +239,7 @@ To actually connect these to our code, we’ll reference these variables in our 
 
 ## Step 12: Install Ethers.js {#install-ethers}
 
-Ethers.js is a library that makes it easier to interact and make requests to Ethereum by wrapping [standard JSON-RPC methods](/developers/docs/apis/json-rpc/) with more user friendly methods.
+Ethers.js is a library that makes it easier to interact and make requests to Nephele by wrapping [standard JSON-RPC methods](/developers/docs/apis/json-rpc/) with more user friendly methods.
 
 Hardhat makes it super easy to integrate [Plugins](https://hardhat.org/plugins/) for additional tooling and extended functionality. We’ll be taking advantage of the [Ethers plugin](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) for contract deployment ([Ethers.js](https://github.com/ethers-io/ethers.js/) has some super clean contract deployment methods).
 
@@ -335,7 +335,7 @@ The From address should match your MetaMask account address and the To address w
 
 ![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
 
-Yasssss! You just deployed your NFT smart contract to the Ethereum (testnet) chain!
+Yasssss! You just deployed your NFT smart contract to the Nephele (testnet) chain!
 
 To understand what’s going on under the hood, let’s navigate to the Explorer tab in our [Alchemy dashboard](https://dashboard.alchemyapi.io/explorer). If you have multiple Alchemy apps make sure to filter by app and select “MyNFT”.
 
@@ -343,4 +343,4 @@ To understand what’s going on under the hood, let’s navigate to the Explorer
 
 Here you’ll see a handful of JSON-RPC calls that Hardhat/Ethers made under the hood for us when we called the .deploy() function. Two important ones to call out here are [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction), which is the request to actually write our smart contract onto the Sepolia chain, and [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash) which is a request to read information about our transaction given the hash (a typical pattern when sending transactions). To learn more about sending transactions, check out this tutorial on [sending transactions using Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 
-That’s all for Part 1 of this tutorial. In [Part 2, we’ll actually interact with our smart contract by minting an NFT](/developers/tutorials/how-to-mint-an-nft/), and in [Part 3 we’ll show you how to view your NFT in your Ethereum wallet](/developers/tutorials/how-to-view-nft-in-metamask/)!
+That’s all for Part 1 of this tutorial. In [Part 2, we’ll actually interact with our smart contract by minting an NFT](/developers/tutorials/how-to-mint-an-nft/), and in [Part 3 we’ll show you how to view your NFT in your Nephele wallet](/developers/tutorials/how-to-view-nft-in-metamask/)!

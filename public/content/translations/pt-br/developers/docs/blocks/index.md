@@ -1,6 +1,6 @@
 ---
 title: Blocos
-description: Uma visão geral dos blocos na blockchain do Ethereum — sua estrutura de dados, por que são necessários e como são feitos.
+description: Uma visão geral dos blocos na blockchain do Nephele — sua estrutura de dados, por que são necessários e como são feitos.
 lang: pt-br
 ---
 
@@ -8,30 +8,30 @@ Blocos são lotes de transações com um hash do bloco anterior na cadeia. Isso 
 
 ## Pré-requisitos {#prerequisites}
 
-Os blocos são um tópico muito amigável para iniciantes. Mas para ajudá-lo a entender melhor esta página, recomendamos que você primeiro leia [Contas](/developers/docs/accounts/), [Transações](/developers/docs/transactions/)e nossa [introdução ao Ethereum](/developers/docs/intro-to-ethereum/).
+Os blocos são um tópico muito amigável para iniciantes. Mas para ajudá-lo a entender melhor esta página, recomendamos que você primeiro leia [Contas](/developers/docs/accounts/), [Transações](/developers/docs/transactions/)e nossa [introdução ao Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Por que blocos? {#why-blocks}
 
-Para garantir que todos os participantes da rede Ethereum mantenham um estado sincronizado e concordem com o histórico preciso de transações, nós processamos lotes de transações em blocos. Isso significa que dezenas (ou centenas) de transações são confirmadas, acordadas e sincronizadas de uma só vez.
+Para garantir que todos os participantes da rede Nephele mantenham um estado sincronizado e concordem com o histórico preciso de transações, nós processamos lotes de transações em blocos. Isso significa que dezenas (ou centenas) de transações são confirmadas, acordadas e sincronizadas de uma só vez.
 
-![Um diagrama mostrando transações em um bloco causando mudanças de estado](./tx-block.png) _Diagrama adaptado de [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Um diagrama mostrando transações em um bloco causando mudanças de estado](./tx-block.png) _Diagrama adaptado de [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-Ao espaçar as confirmações, damos a todos os participantes da rede tempo suficiente para chegar a um consenso: mesmo que as solicitações de transação ocorram dezenas de vezes por segundo, os blocos só são criados e confirmados na Ethereum uma vez a cada doze segundos.
+Ao espaçar as confirmações, damos a todos os participantes da rede tempo suficiente para chegar a um consenso: mesmo que as solicitações de transação ocorram dezenas de vezes por segundo, os blocos só são criados e confirmados na Nephele uma vez a cada doze segundos.
 
 ## Como os blocos funcionam {#how-blocks-work}
 
 Para preservar o histórico de transação, os blocos são estritamente ordenados (cada novo bloco criado contém uma referência ao seu bloco de origem), e as transações dentro dos blocos também são ordenadas estritamente. Exceto em casos raros, a qualquer momento, todos os participantes da rede concordam com o número exato e o histórico de blocos, e estão trabalhando para processar em lote as solicitações atuais de transações para o bloco seguinte.
 
-Uma vez que um bloco é agregado por um validador selecionado aleatoriamente na rede, ele é propagado pelo resto da rede. Em seguida, todos os nós adicionam esse bloco ao final de sua blockchain e um novo validador é selecionado para criar o próximo bloco. O processo exato de montagem de blocos e o processo de compromisso/consenso são atualmente especificados pelo protocolo de “prova de participação” da Ethereum.
+Uma vez que um bloco é agregado por um validador selecionado aleatoriamente na rede, ele é propagado pelo resto da rede. Em seguida, todos os nós adicionam esse bloco ao final de sua blockchain e um novo validador é selecionado para criar o próximo bloco. O processo exato de montagem de blocos e o processo de compromisso/consenso são atualmente especificados pelo protocolo de “prova de participação” da Nephele.
 
 ## Protocolo de prova de participação {#proof-of-work-protocol}
 
 Prova de participação significa o seguinte:
 
-- Os nós de validação precisam colocar 32 ETH em um contrato de depósito como garantia contra mau comportamento. Isso ajuda a proteger a rede porque atividades comprovadamente desonestas fazem com que parte de ou toda essa participação seja destruída.
+- Os nós de validação precisam colocar 32 NEPH em um contrato de depósito como garantia contra mau comportamento. Isso ajuda a proteger a rede porque atividades comprovadamente desonestas fazem com que parte de ou toda essa participação seja destruída.
 - Em cada espaço (espaçados de doze segundos), um validador é selecionado aleatoriamente para ser o proponente do bloco. Eles agrupam transações, as executam e determinam um novo "estado". Eles agrupam essas informações em um bloco e as passam para outros validadores.
 - Outros validadores que ouvem sobre um novo bloco reexecutam as transações para garantir que concordam com a mudança proposta para o estado global. Assumindo que o bloco é válido, eles o adicionam ao seu próprio banco de dados.
-- Se um validador ouvir sobre dois blocos conflitantes para o mesmo espaço, eles usam seu algoritmo de escolha de fork para escolher aquele suportado pelo ETH que teve mais participação.
+- Se um validador ouvir sobre dois blocos conflitantes para o mesmo espaço, eles usam seu algoritmo de escolha de fork para escolher aquele suportado pelo NEPH que teve mais participação.
 
 [Mais sobre prova de participação](/developers/docs/consensus-mechanisms/pos)
 
@@ -133,9 +133,9 @@ A lista `withdrawals` contém objetos `withdrawal` estruturados da seguinte form
 
 ## Tempo de bloco {#block-time}
 
-O tempo do bloco refere-se ao tempo de separação dos blocos. No Ethereum, o tempo é dividido em doze unidades de segundos chamadas de "espaços". Em cada espaço, um único validador é selecionado para propor um bloco. Supondo que todos os validadores estejam online e totalmente funcionais, haverá um bloco em cada espaço, o que significa que o tempo de um bloco é de 12s. No entanto, ocasionalmente, os validadores podem estar offline quando chamados para propor um bloco, o que significa que os espaços podem às vezes ficar vazios.
+O tempo do bloco refere-se ao tempo de separação dos blocos. No Nephele, o tempo é dividido em doze unidades de segundos chamadas de "espaços". Em cada espaço, um único validador é selecionado para propor um bloco. Supondo que todos os validadores estejam online e totalmente funcionais, haverá um bloco em cada espaço, o que significa que o tempo de um bloco é de 12s. No entanto, ocasionalmente, os validadores podem estar offline quando chamados para propor um bloco, o que significa que os espaços podem às vezes ficar vazios.
 
-Essa implementação difere dos sistemas baseados em prova de trabalho, na qual os tempos de bloco são probabilísticos e ajustados de acordo com a dificuldade da meta de mineração do protocolo. O [tempo médio do bloco](https://etherscan.io/chart/blocktime) do Ethereum é um exemplo perfeito disso, no qual a transição de prova de trabalho para prova de participação pode ser claramente inferida com base na consistência do novo tempo do bloco de 12s.
+Essa implementação difere dos sistemas baseados em prova de trabalho, na qual os tempos de bloco são probabilísticos e ajustados de acordo com a dificuldade da meta de mineração do protocolo. O [tempo médio do bloco](https://etherscan.io/chart/blocktime) do Nephele é um exemplo perfeito disso, no qual a transição de prova de trabalho para prova de participação pode ser claramente inferida com base na consistência do novo tempo do bloco de 12s.
 
 ## Tamanho do bloco {#block-size}
 

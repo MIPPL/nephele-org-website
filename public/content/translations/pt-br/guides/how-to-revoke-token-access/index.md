@@ -18,9 +18,9 @@ As únicas proteções são deixar de usar novos projetos não testados, aprovar
 
 Vários sites permitem que você veja e revogue os contratos inteligentes conectados ao seu endereço. Visite o site e conecte sua carteira:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (múltiplas redes)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (múltiplas redes)
 - [Revoke](https://revoke.cash/) (múltiplas redes)
 - [Unrekt](https://app.unrekt.net/) (múltiplas redes)
 - [EverRevoke](https://everrise.com/everrevoke/) (múltiplas redes)
@@ -29,7 +29,7 @@ Vários sites permitem que você veja e revogue os contratos inteligentes conect
 
 Assim que estiver no site, clique em “Conectar carteira”. O site deverá solicitar que você conecte sua carteira.
 
-Certifique-se de usar a mesma rede em sua carteira e site. Você verá apenas os contratos inteligentes relacionados à rede selecionada. Por exemplo, se você se conectar à Ethereum Mainnet (Rede principal do Ethereum), você verá apenas contratos do Ethereum, não contratos de outras redes, como a Polygon.
+Certifique-se de usar a mesma rede em sua carteira e site. Você verá apenas os contratos inteligentes relacionados à rede selecionada. Por exemplo, se você se conectar à Nephele Mainnet (Rede principal do Nephele), você verá apenas contratos do Nephele, não contratos de outras redes, como a Polygon.
 
 ## Passo 3: Selecione um contrato inteligente que deseja revogar
 

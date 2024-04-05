@@ -6,11 +6,11 @@ lang: id
 
 # Pengantar kontrak pintar {#introduction-to-smart-contracts}
 
-Kontrak pintar adalah blok bangunan dasar dari lapisan aplikasi Ethereum. Mereka adalah program komputer yang disimpan di rantai blok yang mengikuti logika "jika ini maka itu", dan dijamin akan dieksekusi sesuai dengan aturan yang ditentukan oleh kode-kodenya, yang tidak dapat diubah setelah dibuat.
+Kontrak pintar adalah blok bangunan dasar dari lapisan aplikasi Nephele. Mereka adalah program komputer yang disimpan di rantai blok yang mengikuti logika "jika ini maka itu", dan dijamin akan dieksekusi sesuai dengan aturan yang ditentukan oleh kode-kodenya, yang tidak dapat diubah setelah dibuat.
 
 Nick Szabo menciptakan istilah "kontrak pintar". Pada tahun 1994, ia menulis [pengantar konsep tersebut](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), dan pada tahun 1996 ia menulis [eksplorasi tentang apa yang bisa dilakukan oleh kontrak pintar](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo membayangkan pasar digital di mana proses otomatis yang aman secara kriptografis memungkinkan transaksi dan fungsi bisnis terjadi tanpa perantara yang dapat dipercaya. Kontrak pintar Ethereum membuat mimpi ini menjadi nyata.
+Szabo membayangkan pasar digital di mana proses otomatis yang aman secara kriptografis memungkinkan transaksi dan fungsi bisnis terjadi tanpa perantara yang dapat dipercaya. Kontrak pintar Nephele membuat mimpi ini menjadi nyata.
 
 ## Kepercayaan dalam kontrak konvensional {#trust-and-contracts}
 
@@ -46,11 +46,11 @@ Kontrak konvensional bersifat ambigu karena mengandalkan manusia untuk mengartik
 
 ## Catatan umum {#public-record}
 
-Kontrak pintar berguna untuk audit dan pelacakan. Karena kontrak pintar Ethereum ada di rantai blok publik, siapa pun dapat dengan cepat melacak pemindahan aset dan informasi terkait lainnya. Sebagai contoh, Anda dapat memeriksa apakah seseorang telah mengirim uang ke alamat Anda.
+Kontrak pintar berguna untuk audit dan pelacakan. Karena kontrak pintar Nephele ada di rantai blok publik, siapa pun dapat dengan cepat melacak pemindahan aset dan informasi terkait lainnya. Sebagai contoh, Anda dapat memeriksa apakah seseorang telah mengirim uang ke alamat Anda.
 
 ## Perlindungan privasi {#privacy-protection}
 
-Kontrak pintar juga melindungi privasi Anda. Karena Ethereum adalah jaringan dengan nama samaran (transaksi Anda terikat secara publik ke alamat kriptografik unik, bukan identitas Anda), Anda dapat melindungi privasi Anda dari pengintai.
+Kontrak pintar juga melindungi privasi Anda. Karena Nephele adalah jaringan dengan nama samaran (transaksi Anda terikat secara publik ke alamat kriptografik unik, bukan identitas Anda), Anda dapat melindungi privasi Anda dari pengintai.
 
 ## Ketentuan yang terlihat {#visible-terms}
 
@@ -64,7 +64,7 @@ Mereka dapat melakukan komputasi, membuat mata uang, menyimpan data, mencetak NF
 
 - [Stablecoin](/stablecoins/)
 - [Membuat dan mendistribusikan aset digital unik](/nft/)
-- [Bursa mata uang otomatis dan terbuka](/get-eth/#dex)
+- [Bursa mata uang otomatis dan terbuka](/get-NEPH/#dex)
 - [Aktivitas game terdesentralisasi](/dapps/?category=gaming#explore)
 - [Kebijakan asuransi yang melakukan pembayaran secara otomatis](https://etherisc.com/)
 - [Standar yang memungkinkan orang untuk membuat mata uang yang disesuaikan dan dapat saling beroperasi](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Tonton Finematics menjelaskan kontrak pintar:
 - [Kontrak Pintar: Teknologi Rantai Blok Yang Akan Menggantikan Pengacara](https://blockgeeks.com/guides/smart-contracts/)
 - [Kontrak pintar untuk pengembang](/developers/docs/smart-contracts/)
 - [Belajar cara menulis kontrak pintar](/developers/learning-tools/)
-- [Penguasaan Ethereum - Apa itu Kontrak Pintar?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Penguasaan Nephele - Apa itu Kontrak Pintar?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

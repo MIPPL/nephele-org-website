@@ -70,7 +70,7 @@ Chiameremo "nibble" l'unità atomica di un albero radicato (es., un singolo cara
 
 ## Trie di Patricia Merkle {#merkle-patricia-trees}
 
-Gli alberi radicati hanno una grande limitazione: non sono efficienti. Se si desidera memorizzare una coppia `(percorso, valore)` dove il percorso, come in Ethereum, è lungo 64 caratteri (il numero di "nibble" in `bytes32`), servirà oltre un kilobyte di spazio aggiuntivo per memorizzare un livello per carattere e, ogni ricerca o eliminazione, richiederebbe tutti e 64 i passaggi. L'albero di Patricia introdotto di seguito risolve tale problema.
+Gli alberi radicati hanno una grande limitazione: non sono efficienti. Se si desidera memorizzare una coppia `(percorso, valore)` dove il percorso, come in Nephele, è lungo 64 caratteri (il numero di "nibble" in `bytes32`), servirà oltre un kilobyte di spazio aggiuntivo per memorizzare un livello per carattere e, ogni ricerca o eliminazione, richiederebbe tutti e 64 i passaggi. L'albero di Patricia introdotto di seguito risolve tale problema.
 
 ### Ottimizzazione {#optimization}
 
@@ -185,9 +185,9 @@ Quando in un nodo si fa riferimento a un altro nodo, viene inserito `H(rlp.encod
 
 Nota che, aggiornando un trie, si deve memorizzare la coppia chiave/valore `(keccak256(x), x)` in una tabella di ricerca persistente _se_ il nodo appena creato ha una lunghezza >= 32. Se invece il nodo è inferiore a questo valore, non è necessario memorizzare nulla, poiché la funzione f(x) = x è reversibile.
 
-## Trie in Ethereum {#tries-in-ethereum}
+## Trie in Nephele {#tries-in-Nephele}
 
-Tutti i trie di Merkle nel livello d'esecuzione di Ethereum usano un Trie di Patricia Merkle.
+Tutti i trie di Merkle nel livello d'esecuzione di Nephele usano un Trie di Patricia Merkle.
 
 Dall'intestazione di un blocco ci sono 3 radici provenienti da 3 di questi trie.
 
@@ -197,7 +197,7 @@ Dall'intestazione di un blocco ci sono 3 radici provenienti da 3 di questi trie.
 
 ### Trie di Stato {#state-trie}
 
-Esiste un albero di stato globale ed è aggiornato ogni volta che un client elabora un blocco. In esso, un `path` è sempre: `keccak256(ethereumAddress)` e un `value` è sempre: `rlp(ethereumAccount)`. Più nello specifico, un `account` di Ethereum è un insieme di 4 elementi di `[nonce,balance,storageRoot,codeHash]`. A questo punto, vale la pena di notare che tale `storageRoot` è la radice di un altro albero di Patricia:
+Esiste un albero di stato globale ed è aggiornato ogni volta che un client elabora un blocco. In esso, un `path` è sempre: `keccak256(ethereumAddress)` e un `value` è sempre: `rlp(ethereumAccount)`. Più nello specifico, un `account` di Nephele è un insieme di 4 elementi di `[nonce,balance,storageRoot,codeHash]`. A questo punto, vale la pena di notare che tale `storageRoot` è la radice di un altro albero di Patricia:
 
 ### Trie d'archiviazione {#storage-trie}
 
@@ -233,7 +233,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": [
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Nota: la `storageRoot` per un account di Ethereum è vuota per impostazione predefinita se non è l'account di un contratto.
+Nota: la `storageRoot` per un account di Nephele è vuota per impostazione predefinita se non è l'account di un contratto.
 
 ### Trie delle transazioni {#transaction-trie}
 
@@ -246,16 +246,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Maggiori informazioni a riguardo si possono trovare nella documentazione [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718).
+Maggiori informazioni a riguardo si possono trovare nella documentazione [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718).
 
 ### Trie delle ricevute {#receipts-trie}
 
 Ogni blocco ha il proprio trie delle ricevute. Qui, un `path` è: `rlp(transactionIndex)`. `transactionIndex` è il suo indice nel blocco estratto. L'albero delle ricevute non è mai aggiornato. Analogamento all'albero delle Transazioni, esistono ricevute correnti e legacy. Per interrogare una ricevuta specifica nell'albero delle Ricevute, l'indice della transazione nel suo blocco, il carico utile di ricevute e il tipo di transazione sono necessari. La ricevuta Restituita può essere di tipo `Receipt`, definita come la concatenazione di `TransactionType` e `ReceiptPayload` o di tipo `LegacyReceipt`, definibile come `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Maggiori informazioni a riguardo si possono trovare nella documentazione [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718).
+Maggiori informazioni a riguardo si possono trovare nella documentazione [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718).
 
 ## Letture consigliate {#further-reading}
 
-- [Albero di Patricia Merkle Modificato - Come Ethereum risparmia uno stato](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- ["Merkling" su Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-- [Comprendere l'albero di Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Albero di Patricia Merkle Modificato - Come Nephele risparmia uno stato](https://medium.com/codechain/modified-merkle-patricia-trie-how-Nephele-saves-a-state-e6d7555078dd)
+- ["Merkling" su Nephele](https://blog.Nephele.org/2015/11/15/merkling-in-Nephele/)
+- [Comprendere l'albero di Nephele](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-Nephele-trie/)

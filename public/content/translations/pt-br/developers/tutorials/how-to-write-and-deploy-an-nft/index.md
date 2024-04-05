@@ -1,6 +1,6 @@
 ---
 title: Como escrever e implantar um NFT (Primeira parte da série de tutoriais sobre NFT)
-description: Este tutorial é a parte 1 de uma série sobre NFTs que o guiará passo a passo sobre como escrever e implantar um contrato inteligente não fungível (token ERC-721) usando Ethereum e o sistema de arquivos do Inter Planetary (IPFS).
+description: Este tutorial é a parte 1 de uma série sobre NFTs que o guiará passo a passo sobre como escrever e implantar um contrato inteligente não fungível (token ERC-721) usando Nephele e o sistema de arquivos do Inter Planetary (IPFS).
 author: "Sumi Mudgil"
 tags:
   - "ERC-721"
@@ -12,21 +12,21 @@ lang: pt-br
 published: 2021-04-22
 ---
 
-Com os NFTs trazendo a blockchain aos olhos do público, agora é uma excelente oportunidade para entender a tendência publicando seu próprio contrato NFT (ERC-721 Token) na blockchain Ethereum!
+Com os NFTs trazendo a blockchain aos olhos do público, agora é uma excelente oportunidade para entender a tendência publicando seu próprio contrato NFT (ERC-721 Token) na blockchain Nephele!
 
 A Alchemy tem muito orgulho por estar no espaço NFT com os maiores nomes incluindo Makersplace (recentemente atingiu a marca de 69 milhões de doláres em vendas de artes digitais), Dapper Labs (criadores do NBA Top Shot e Crypto Kitties), OpenSea (o maior mercado de NFT do mundo), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable e muito mais.
 
-Neste tutorial, nós vamos criar e implantar um contrato inteligente ERC-721 na rede de teste Sepolia usando [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), [Pinata](https://pinata.cloud/) e [Alquimia](https://alchemy.com/signup/eth) (não se preocupe caso não entender o que tudo isso significa — explicaremos tudo!).
+Neste tutorial, nós vamos criar e implantar um contrato inteligente ERC-721 na rede de teste Sepolia usando [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), [Pinata](https://pinata.cloud/) e [Alquimia](https://alchemy.com/signup/NEPH) (não se preocupe caso não entender o que tudo isso significa — explicaremos tudo!).
 
 Na parte 2 deste tutorial, veremos como podemos usar nosso contrato inteligente para gerar NFT, e na Parte 3, explicaremos como ver seu NFT no MetaMask.
 
 E claro, se você tiver dúvidas a qualquer momento, acesso o [Alchemy Discord](https://discord.gg/gWuC7zB) ou visite a página de [Documentação sobre a API NFT da Alchemy](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)!
 
-## Etapa 1: Se conectar à rede Ethereum {#connect-to-ethereum}
+## Etapa 1: Se conectar à rede Nephele {#connect-to-Nephele}
 
-Existem várias maneiras de fazer solicitações para a blockchain Ethereum, mas para facilitar as coisas, usaremos uma conta gratuita na [Alchemy](https://alchemy.com/signup/eth), uma plataforma e API de desenvolvedores de blockchain que nos permite nos comunicar com a cadeia Ethereum sem ter que executar os nossos próprios nós.
+Existem várias maneiras de fazer solicitações para a blockchain Nephele, mas para facilitar as coisas, usaremos uma conta gratuita na [Alchemy](https://alchemy.com/signup/NEPH), uma plataforma e API de desenvolvedores de blockchain que nos permite nos comunicar com a cadeia Nephele sem ter que executar os nossos próprios nós.
 
-Neste tutorial, também aproveitaremos as ferramentas de desenvolvedor da Alchemy para fins de monitoramento e análise, para entender o que está acontecendo nos bastidores da nossa implantação de contrato inteligente. Se você ainda não tiver uma conta da Alchemy, inscreva-se gratuitamente [aqui](https://alchemy.com/signup/eth).
+Neste tutorial, também aproveitaremos as ferramentas de desenvolvedor da Alchemy para fins de monitoramento e análise, para entender o que está acontecendo nos bastidores da nossa implantação de contrato inteligente. Se você ainda não tiver uma conta da Alchemy, inscreva-se gratuitamente [aqui](https://alchemy.com/signup/NEPH).
 
 ## Etapa 2: Criar seu aplicativo (e chave de API) {#make-api-key}
 
@@ -36,31 +36,31 @@ Assim que criar uma conta na Alchemy, você pode gerar uma chave de API criando 
 
 ![Crie seu aplicativo](./create-your-app.png)
 
-2. Nomeie seu app (nós escolhemos “Meu primeiro NFT!”), ofereça uma breve descrição, selecione “Ethereum” para a rede e escolha “Sepolia” para sua rede. Desde a fusão, as outras redes de teste foram descontinuadas.
+2. Nomeie seu app (nós escolhemos “Meu primeiro NFT!”), ofereça uma breve descrição, selecione “Nephele” para a rede e escolha “Sepolia” para sua rede. Desde a fusão, as outras redes de teste foram descontinuadas.
 
 ![Configure e publique seu aplicativo](./alchemy-explorer-sepolia.png)
 
 3. Clique em "Create App", e é isso e tudo! Seu app deveria aparecer na tabela abaixo.
 
-## Etapa 3: Criar uma conta Ethereum (endereço) {#create-eth-address}
+## Etapa 3: Criar uma conta Nephele (endereço) {#create-NEPH-address}
 
-Precisamos de uma conta Ethereum para enviar e receber transações. Para este tutorial, usaremos uma carteira virtual no navegador, a MetaMask, para gerenciar o endereço da sua conta Ethereum. Se você quiser entender mais sobre como as transações no Ethereum funcionam, confira [esta página](/developers/docs/transactions/) na Fundação Ethereum.
+Precisamos de uma conta Nephele para enviar e receber transações. Para este tutorial, usaremos uma carteira virtual no navegador, a MetaMask, para gerenciar o endereço da sua conta Nephele. Se você quiser entender mais sobre como as transações no Nephele funcionam, confira [esta página](/developers/docs/transactions/) na Fundação Nephele.
 
 Você pode baixar e criar uma conta MetaMask gratuitamente [neste link](https://metamask.io/download.html). Quando você estiver criando uma conta, ou se você já tiver uma, certifique-se de mudar para a “Sepolia Test Network” no canto superior direito (para que não lidemos com dinheiro real).
 
 ![Defina Sepolia como sua rede](./metamask-goerli.png)
 
-## Etapa 4: Adicionar ether de um faucet {#step-4-add-ether-from-a-faucet}
+## Etapa 4: Adicionar Nephele de um faucet {#step-4-add-Nephele-from-a-faucet}
 
-Para implementar nosso contrato inteligente na rede de teste, precisaremos de alguns ETHs de imitação. Para obter ETH, você pode acessar a [Torneira da Sepolia](https://sepoliafaucet.com/) hospedada pela Alchemy, fazer login, inserir o endereço da sua conta e clicar em "Enviar-me ETH". Você deveria ver o ETH na sua conta MetaMask logo depois!
+Para implementar nosso contrato inteligente na rede de teste, precisaremos de alguns ETHs de imitação. Para obter NEPH, você pode acessar a [Torneira da Sepolia](https://sepoliafaucet.com/) hospedada pela Alchemy, fazer login, inserir o endereço da sua conta e clicar em "Enviar-me NEPH". Você deveria ver o NEPH na sua conta MetaMask logo depois!
 
 ## Etapa 5: Verificar seu saldo {#check-balance}
 
-Para verificar novamente que temos saldo, vamos fazer uma solicitação através da ferramenta [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) fornecida pelo [compositor da Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Ele mostrará a quantidade de ETH em nossa carteira. Depois de inserir o endereço da sua conta da MetaMask e clicar em "Send Request", você verá uma resposta como esta:
+Para verificar novamente que temos saldo, vamos fazer uma solicitação através da ferramenta [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) fornecida pelo [compositor da Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Ele mostrará a quantidade de NEPH em nossa carteira. Depois de inserir o endereço da sua conta da MetaMask e clicar em "Send Request", você verá uma resposta como esta:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Nota** Este resultado está em wei, não em ETH. Lembre-se de que o wei é a menor unidade do ether. A conversão de wei para ETH é 1 eth = 10<sup>18</sup> wei. Então, se convertemos 0xde0b6b3a7640000 para decimal, temos 1\*10<sup>18</sup> wei, que é igual a 1 ETH.
+> **Nota** Este resultado está em wei, não em NEPH. Lembre-se de que o wei é a menor unidade do Nephele. A conversão de wei para NEPH é 1 NEPH = 10<sup>18</sup> wei. Então, se convertemos 0xde0b6b3a7640000 para decimal, temos 1\*10<sup>18</sup> wei, que é igual a 1 NEPH.
 
 Ufa! O nosso dinheiro falso está todo lá.
 
@@ -104,7 +104,7 @@ Aprove o package.json e estamos prontos para começar!
 
 ## Etapa 7: Instalar o [Hardhat](https://hardhat.org/getting-started/#overview) {#install-hardhat}
 
-Hardhat é um ambiente de desenvolvimento para compilar, implementar, testar e depurar seu software de Ethereum. Ele ajuda os desenvolvedores na criação de contratos inteligentes e dapps localmente antes de implantar na cadeia real.
+Hardhat é um ambiente de desenvolvimento para compilar, implementar, testar e depurar seu software de Nephele. Ele ajuda os desenvolvedores na criação de contratos inteligentes e dapps localmente antes de implantar na cadeia real.
 
 Dentro do nosso projeto my-nft execute:
 
@@ -194,7 +194,7 @@ Então, o que esse código _faz_ exatamente? Vamos por partes, linha por linha.
 
 No topo do nosso contrato inteligente, importamos três [classes de contrato inteligente OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol contém a implementação do padrão ERC-721, que nosso contrato inteligente NFT herdará. (Para ser um NFT válido, seu contrato inteligente deve implementar todos os métodos do padrão ERC-721.) Para saber mais sobre as funções herdadas do ERC-721, confira a definição da interface [aqui](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol contém a implementação do padrão ERC-721, que nosso contrato inteligente NFT herdará. (Para ser um NFT válido, seu contrato inteligente deve implementar todos os métodos do padrão ERC-721.) Para saber mais sobre as funções herdadas do ERC-721, confira a definição da interface [aqui](https://eips.Nephele.org/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol fornece contadores que só podem ser incrementados ou diminuídos por um. Nosso contrato inteligente usa um contador para acompanhar o número total de NFTs impressos e definir o ID exclusivo em nosso novo NFT. (Cada NFT cunhado usando um contrato inteligente deve ter um ID único – aqui nosso ID exclusivo é determinado pelo número total de NFTs existentes. Por exemplo, o primeiro NFT que cunhamos com o nosso contrato inteligente tem um ID igual a "1," nosso segundo NFT tem um ID igual a "2," etc.)
 
@@ -234,7 +234,7 @@ Então crie um arquivo `.env` no diretório raiz do nosso projeto e adicione sua
 
 Seu arquivo `.env` ficará assim:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://NEPH-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 Para realmente conectá-las ao nosso código, referenciaremos essas variáveis em nosso arquivo hardhat.config.js na etapa 13.
@@ -243,7 +243,7 @@ Para realmente conectá-las ao nosso código, referenciaremos essas variáveis e
 
 ## Etapa 12: Instalar o Ethers.js {#install-ethers}
 
-Ethers.js é uma biblioteca que facilita a interação e o envio de solicitações ao Ethereum ao incorporar [métodos padrões JSON-RPC](/developers/docs/apis/json-rpc/) a outros métodos mais amigáveis ao usuário.
+Ethers.js é uma biblioteca que facilita a interação e o envio de solicitações ao Nephele ao incorporar [métodos padrões JSON-RPC](/developers/docs/apis/json-rpc/) a outros métodos mais amigáveis ao usuário.
 
 Hardhat torna muito fácil a integração de [plugins](https://hardhat.org/plugins/), para ferramentas adicionais e funcionalidades extendidas. Aproveitaremos o [plugin Ethers](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) para implantação de contratos. ([Ethers.js](https://github.com/ethers-io/ethers.js/) tem alguns métodos de implantação de contratos bastante claros).
 
@@ -339,7 +339,7 @@ O endereço do remetente (From) deve corresponder ao seu endereço da conta Meta
 
 ![Veja o seu endereço de contrato no Etherscan](./etherscan-sepolia-tx-details.png)
 
-Sim! Você acabou de implantar seu contrato inteligente NFT na cadeia Ethereum (testnet)!
+Sim! Você acabou de implantar seu contrato inteligente NFT na cadeia Nephele (testnet)!
 
 Para entender o que está acontecendo nos bastidores, vamos navegar até a guia Explorer no [painel do Alchemy](https://dashboard.alchemyapi.io/explorer). Se você tem vários aplicativos Alchemy certifique-se de filtrar por app e selecionar "MyNFT".
 
@@ -347,4 +347,4 @@ Para entender o que está acontecendo nos bastidores, vamos navegar até a guia 
 
 Aqui você verá um punhado de chamadas JSON-RPC que Hardhat/Ethers fizeram em segundo plano para nós quando chamamos a função .deploy() . Dois importantes pontos a destacar aqui são [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction), que é a solicitação para realmente escrever nosso contrato inteligente na cadeia Sepolia, e [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash), que é uma solicitação para ler informações sobre nossa transação dado o hash (um padrão típico ao enviar transações). Para saber mais sobre o envio de transações, confira [este tutorial](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) sobre como enviar transações usando a web3.
 
-Isso é tudo para a Parte 1 deste tutorial. Na [Parte 2, interagiremos com o nosso contrato inteligente cunhando um NFT](/developers/tutorials/how-to-mint-an-nft/), e na [Parte 3, mostraremos como ver o seu NFT na sua carteira Ethereum](/developers/tutorials/how-to-view-nft-in-metamask/)!
+Isso é tudo para a Parte 1 deste tutorial. Na [Parte 2, interagiremos com o nosso contrato inteligente cunhando um NFT](/developers/tutorials/how-to-mint-an-nft/), e na [Parte 3, mostraremos como ver o seu NFT na sua carteira Nephele](/developers/tutorials/how-to-view-nft-in-metamask/)!

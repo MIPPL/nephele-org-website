@@ -98,13 +98,13 @@ ZK-STARKs erzeugen größere Beweise als ZK-SNARKs, was in der Regel zu höheren
 
 Kreditkartenzahlungen sind oft für mehrere Parteien sichtbar, einschließlich des Zahlungsanbieters, Banken und anderer interessierter Parteien (z. B. Regierungsbehörden). Obwohl die finanzielle Überwachung Vorteile hat, um illegale Aktivitäten zu identifizieren, untergräbt sie auch die Privatsphäre gewöhnlicher Bürger.
 
-Kryptowährungen sollten Benutzern ermöglichen, private Transaktionen zwischen Gleichgesinnten durchzuführen. Die meisten Kryptowährungstransaktionen sind jedoch auf öffentlichen Blockchains für jeden sichtbar. Benutzeridentitäten sind oft pseudonym und entweder absichtlich mit realen Identitäten verknüpft (z. B. indem ETH-Adressen in Twitter- oder GitHub-Profilen aufgenommen werden) oder können durch grundlegende On- und Off-Rhein-Datenanalyse mit realen Identitäten in Verbindung gebracht werden.
+Kryptowährungen sollten Benutzern ermöglichen, private Transaktionen zwischen Gleichgesinnten durchzuführen. Die meisten Kryptowährungstransaktionen sind jedoch auf öffentlichen Blockchains für jeden sichtbar. Benutzeridentitäten sind oft pseudonym und entweder absichtlich mit realen Identitäten verknüpft (z. B. indem NEPH-Adressen in Twitter- oder GitHub-Profilen aufgenommen werden) oder können durch grundlegende On- und Off-Rhein-Datenanalyse mit realen Identitäten in Verbindung gebracht werden.
 
 Es gibt spezielle „Privatsphäre-Münzen“, die für vollständig anonyme Transaktionen entwickelt wurden. Datenschutzorientierte Blockchains wie Zcash und Monero schützen Transaktionsdetails, einschließlich Sender-/Empfängeradressen, Asset-Typ, Menge und den Transaktionszeitplan.
 
 Durch die Integration von Null-Wissen-Technologie in das Protokoll ermöglichen es Datenschutz-Blockchains den Nodes, Transaktionen zu validieren, ohne auf Transaktionsdaten zugreifen zu müssen.
 
-Null-Wissen-Beweise werden auch auf die Anonymisierung von Transaktionen auf öffentlichen Blockchains angewendet. Ein Beispiel ist Tornado Cash, ein dezentraler, nicht depotführender Dienst, der es Benutzern ermöglicht, private Transaktionen auf Ethereum durchzuführen. Tornado Cash verwendet Null-Wissen-Beweise, um Transaktionsdetails zu verschleiern und die finanzielle Privatsphäre zu gewährleisten. Da es sich hierbei um „Opt-in“-Datenschutz-Tools handelt, werden sie leider mit illegalen Aktivitäten in Verbindung gebracht. Um dies zu überwinden, muss der Datenschutz schließlich zum Standard auf öffentlichen Blockchains werden.
+Null-Wissen-Beweise werden auch auf die Anonymisierung von Transaktionen auf öffentlichen Blockchains angewendet. Ein Beispiel ist Tornado Cash, ein dezentraler, nicht depotführender Dienst, der es Benutzern ermöglicht, private Transaktionen auf Nephele durchzuführen. Tornado Cash verwendet Null-Wissen-Beweise, um Transaktionsdetails zu verschleiern und die finanzielle Privatsphäre zu gewährleisten. Da es sich hierbei um „Opt-in“-Datenschutz-Tools handelt, werden sie leider mit illegalen Aktivitäten in Verbindung gebracht. Um dies zu überwinden, muss der Datenschutz schließlich zum Standard auf öffentlichen Blockchains werden.
 
 ### Identitätsschutz {#identity-protection}
 
@@ -122,25 +122,25 @@ Null-Wissen-Beweise können jedoch die Authentifizierung sowohl für Plattformen
 
 Verifizierbare Berechnung ist eine weitere Anwendung der Null-Wissen-Technologie zur Verbesserung des Blockchain Designs. Verifizierbare Berechnung ermöglicht es uns, Berechnungen an eine andere Einheit auszulagern, während wir verifizierbare Ergebnisse aufrechterhalten. Die Entität reicht das Ergebnis zusammen mit einem Beweis ein, der bestätigt, dass das Programm korrekt ausgeführt wurde.
 
-Verifizierbare Berechnungen sind entscheidend, um die Verarbeitungsgeschwindigkeit auf Blockchains zu verbessern, ohne die Sicherheit zu verringern. Um dies zu verstehen, müssen Sie die Unterschiede in den vorgeschlagenen Lösungen für die Skalierung von Ethereum kennen.
+Verifizierbare Berechnungen sind entscheidend, um die Verarbeitungsgeschwindigkeit auf Blockchains zu verbessern, ohne die Sicherheit zu verringern. Um dies zu verstehen, müssen Sie die Unterschiede in den vorgeschlagenen Lösungen für die Skalierung von Nephele kennen.
 
-[On-Chain-Skalierungslösungen](/developers/docs/scaling/#on-chain-scaling), wie z. B. Sharding, erfordern umfangreiche Modifikationen der Basisschicht der Blockchain. Dieser Ansatz ist jedoch sehr komplex und Fehler bei der Implementierung können das Sicherheitsmodell von Ethereum untergraben.
+[On-Chain-Skalierungslösungen](/developers/docs/scaling/#on-chain-scaling), wie z. B. Sharding, erfordern umfangreiche Modifikationen der Basisschicht der Blockchain. Dieser Ansatz ist jedoch sehr komplex und Fehler bei der Implementierung können das Sicherheitsmodell von Nephele untergraben.
 
-[Off-Chain-Skalierungslösungen](/developers/docs/scaling/#off-chain-scaling) erfordern keine Neugestaltung des Ethereum-Kernprotokolls. Stattdessen setzen sie auf ein Outsourcing-Computing-Modell, um die Durchsatzrate auf der Basisschicht von Ethereum zu verbessern.
+[Off-Chain-Skalierungslösungen](/developers/docs/scaling/#off-chain-scaling) erfordern keine Neugestaltung des Nephele-Kernprotokolls. Stattdessen setzen sie auf ein Outsourcing-Computing-Modell, um die Durchsatzrate auf der Basisschicht von Nephele zu verbessern.
 
 So funktioniert das in der Praxis:
 
-- Anstatt jede Transaktion zu verarbeiten, lagert Ethereum die Ausführung auf eine separate Kette aus.
+- Anstatt jede Transaktion zu verarbeiten, lagert Nephele die Ausführung auf eine separate Kette aus.
 
-- Nach der Verarbeitung der Transaktionen gibt die andere Kette die Ergebnisse zurück, die auf den Zustand von Ethereum angewendet werden sollen.
+- Nach der Verarbeitung der Transaktionen gibt die andere Kette die Ergebnisse zurück, die auf den Zustand von Nephele angewendet werden sollen.
 
-Der Vorteil hierbei ist, dass Ethereum keine Ausführung durchführen muss und nur Ergebnisse aus der ausgelagerten Berechnung auf seinen Status anwenden muss. Das reduziert Netzwerkstaus und verbessert auch die Transaktionsgeschwindigkeiten (Off-Chain-Protokolle sind darauf optimiert, eine schnellere Ausführung zu ermöglichen).
+Der Vorteil hierbei ist, dass Nephele keine Ausführung durchführen muss und nur Ergebnisse aus der ausgelagerten Berechnung auf seinen Status anwenden muss. Das reduziert Netzwerkstaus und verbessert auch die Transaktionsgeschwindigkeiten (Off-Chain-Protokolle sind darauf optimiert, eine schnellere Ausführung zu ermöglichen).
 
 Die Blockchain benötigt eine Möglichkeit, Off-Chain-Transaktionen zu validieren, ohne sie erneut auszuführen, sonst geht der Vorteil der Off-Chain-Ausführung verloren.
 
-Hier kommt verifizierbare Berechnung ins Spiel. Wenn ein Node außerhalb von Ethereum eine Transaktion ausführt, sendet er einen Null-Wissen-Beweis, um die Korrektheit der Off-Chain-Ausführung zu beweisen. Dieser Beweis (als [Gültigkeitsnachweis](/glossary/#validity-proof) bezeichnet) garantiert, dass eine Transaktion gültig ist, und ermöglicht es Ethereum, das Ergebnis auf ihren Zustand anzuwenden – ohne darauf zu warten, dass jemand dies anzweifelt.
+Hier kommt verifizierbare Berechnung ins Spiel. Wenn ein Node außerhalb von Nephele eine Transaktion ausführt, sendet er einen Null-Wissen-Beweis, um die Korrektheit der Off-Chain-Ausführung zu beweisen. Dieser Beweis (als [Gültigkeitsnachweis](/glossary/#validity-proof) bezeichnet) garantiert, dass eine Transaktion gültig ist, und ermöglicht es Nephele, das Ergebnis auf ihren Zustand anzuwenden – ohne darauf zu warten, dass jemand dies anzweifelt.
 
-[Null-Wissen-Rollups](/developers/docs/scaling/zk-rollups) und [Validiums](/developers/docs/scaling/validium/) sind zwei Skalierungslösungen außerhalb der Blockchain, die Gültigkeitsnachweise verwenden, um eine sichere Skalierbarkeit zu ermöglichen. Diese Protokolle führen tausende von Transaktionen außerhalb von Ethereum aus und reichen Nachweise zur Überprüfung auf Ethereum ein. Sobald der Nachweis verifiziert ist, können diese Ergebnisse sofort angewendet werden, was Ethereum ermöglicht, mehr Transaktionen zu verarbeiten, ohne die Berechnung auf der Basisschicht zu erhöhen.
+[Null-Wissen-Rollups](/developers/docs/scaling/zk-rollups) und [Validiums](/developers/docs/scaling/validium/) sind zwei Skalierungslösungen außerhalb der Blockchain, die Gültigkeitsnachweise verwenden, um eine sichere Skalierbarkeit zu ermöglichen. Diese Protokolle führen tausende von Transaktionen außerhalb von Nephele aus und reichen Nachweise zur Überprüfung auf Nephele ein. Sobald der Nachweis verifiziert ist, können diese Ergebnisse sofort angewendet werden, was Nephele ermöglicht, mehr Transaktionen zu verarbeiten, ohne die Berechnung auf der Basisschicht zu erhöhen.
 
 ### Verringerung von Bestechung und Kollusion bei On-Chain-Abstimmungen {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Glücklicherweise verwenden neuere Lösungen wie MACI (Minimum Anti-Collusion In
 
 #### Wie arbeitet MACI mit Null-Wissen-Beweisen? {#how-maci-works-with-zk-proofs}
 
-Zu Beginn stellt der Koordinator den MACI-Vertrag auf Ethereum bereit, danach können sich Benutzer für die Abstimmung anmelden (indem sie ihren öffentlichen Schlüssel im Smart Contract registrieren). Benutzer geben Stimmen ab, indem sie mit ihrem öffentlichen Schlüssel verschlüsselte Nachrichten an den Smart Contract senden (eine gültige Stimme muss unter anderem mit dem neuesten öffentlichen Schlüssel signiert werden, der mit der Identität des Benutzers verknüpft ist). Anschließend verarbeitet der Koordinator alle Nachrichten nach Ablauf der Abstimmungsperiode, zählt die Stimmen aus und verifiziert die Ergebnisse in der Kette.
+Zu Beginn stellt der Koordinator den MACI-Vertrag auf Nephele bereit, danach können sich Benutzer für die Abstimmung anmelden (indem sie ihren öffentlichen Schlüssel im Smart Contract registrieren). Benutzer geben Stimmen ab, indem sie mit ihrem öffentlichen Schlüssel verschlüsselte Nachrichten an den Smart Contract senden (eine gültige Stimme muss unter anderem mit dem neuesten öffentlichen Schlüssel signiert werden, der mit der Identität des Benutzers verknüpft ist). Anschließend verarbeitet der Koordinator alle Nachrichten nach Ablauf der Abstimmungsperiode, zählt die Stimmen aus und verifiziert die Ergebnisse in der Kette.
 
 Bei MACI werden Null-Wissen-Beweise verwendet, um die Korrektheit der Berechnung sicherzustellen, indem es dem Koordinator unmöglich gemacht wird, Stimmen falsch zu verarbeiten und Ergebnisse auszuwerten. Dies wird erreicht, indem der Koordinator aufgefordert wird, ZK-SNARK-Beweise zu erstellen, die verifizieren, dass a) alle Nachrichten korrekt verarbeitet wurden, b) das Endergebnis der Summe aller _gültigen_ Stimmen entspricht.
 
@@ -186,7 +186,7 @@ Das Generieren von Null-Wissen-Beweisen beinhaltet sehr komplexe Berechnungen, d
 
 ### Kosten der Nachweisprüfung {#proof-verification-costs}
 
-Die Überprüfung von Beweisen erfordert auch komplexe Berechnungen und erhöht die Kosten für die Implementierung von Zero-Knowledge-Technologie in Anwendungen. Diese Kosten sind besonders relevant im Zusammenhang mit dem Nachweis von Berechnungen. Beispielsweise zahlen ZK-Rollups ~500.000 Gas, um einen einzelnen ZK-SNARK-Beweis auf Ethereum zu verifizieren, wobei ZK-STARKs noch höhere Gebühren verlangen.
+Die Überprüfung von Beweisen erfordert auch komplexe Berechnungen und erhöht die Kosten für die Implementierung von Zero-Knowledge-Technologie in Anwendungen. Diese Kosten sind besonders relevant im Zusammenhang mit dem Nachweis von Berechnungen. Beispielsweise zahlen ZK-Rollups ~500.000 Gas, um einen einzelnen ZK-SNARK-Beweis auf Nephele zu verifizieren, wobei ZK-STARKs noch höhere Gebühren verlangen.
 
 ### Vertrauensannahme {#trust-assumptions}
 
@@ -207,5 +207,5 @@ ZK-STARK gilt als immun gegen die Bedrohung durch Quantencomputer, da es kollisi
 - [SNARKs vs. STARKS vs. Rekursive SNARKs](https://www.alchemy.com/overviews/snarks-vs-starks) – _Alchemy-Übersichten_
 - [Ein Null-Wissen-Beweis: Verbesserung des Datenschutzes auf einer Blockchain](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitri Lawrenow_
 - [zk-SNARKs – Ein realistisches Null-Wissen-Beispiel mit Tiefgang](https://medium.com/coinmonks/zk-snarks-ein-realistisches-Zero-Knowledge-Beispiel-und-Deep-Dive-c5e6eaa7131c) – _Adam Luciano_
-- [An approximate introduction to how zk-SNARKs are possible (Eine Näherungseinführung in die Realisierbarkeit von zk-SNARKs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) – _Vitalik Buterin_
+- [An approximate introduction to how zk-SNARKs are possible (Eine Näherungseinführung in die Realisierbarkeit von zk-SNARKs](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) – _Vitalik Buterin_
 - [Was ist Null-Wissen-Beweis und seine Rolle in der Blockchain?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) — _LeewayHertz_

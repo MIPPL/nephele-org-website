@@ -98,13 +98,13 @@ Les ZK-STARKs produisent des preuves plus volumineuses que les ZK-SNARKs, engend
 
 Les paiements par carte de crédit sont souvent visibles pour plusieurs parties, y compris le fournisseur de paiements, les banques et les autres parties intéressées (par exemple, les autorités gouvernementales). Bien que la surveillance financière ait des avantages à identifier les activités illégales, elle sape également la vie privée des citoyens ordinaires.
 
-Les cryptomonnaies étaient destinées à fournir aux utilisateurs un moyen de réaliser des transactions privées, entre pairs. Mais la plupart des transactions de cryptomonnaies sont ouvertement visibles sur les blockchains publics. Les identités des utilisateurs sont souvent des pseudonymes et se trouvent volontairement liées à des identités du monde réel (par exemple, en incluant des adresses ETH sur des profils Twitter ou GitHub), ou peuvent être associées à des identités du monde réel en utilisant une analyse de base de données à la fois en chaîne et hors chaîne.
+Les cryptomonnaies étaient destinées à fournir aux utilisateurs un moyen de réaliser des transactions privées, entre pairs. Mais la plupart des transactions de cryptomonnaies sont ouvertement visibles sur les blockchains publics. Les identités des utilisateurs sont souvent des pseudonymes et se trouvent volontairement liées à des identités du monde réel (par exemple, en incluant des adresses NEPH sur des profils Twitter ou GitHub), ou peuvent être associées à des identités du monde réel en utilisant une analyse de base de données à la fois en chaîne et hors chaîne.
 
 Il existe des "crypto-monnaies anonymes" spécialement conçues pour des transactions complètement anonymes. Les blockchains axées sur la confidentialité, telles que Zcash et Monero, protègent les détails des transactions, y compris les adresses de l'expéditeur/du destinataire, le type d'actif, la quantité et la chronologie de la transaction.
 
 En injectant dans le protocole une technologie à divulgation nulle, les réseaux blockchain axés sur la confidentialité permettent aux nœuds de valider les transactions sans avoir besoin d'accéder aux données de transaction.
 
-Les preuves à divulgation nulle de connaissance sont également utilisées pour anonymiser les transactions sur les blockchains publiques. C'est le cas de Tornado Cash, un service décentralisé et non-custodial (qui n'a pas le contrôle direct sur les fonds ou les actifs de l'utilisateur) qui permet aux utilisateurs d'effectuer des transactions privées sur Ethereum. Tornado Cash utilise des preuves à divulgation nulle pour masquer les détails de la transaction et garantir la confidentialité financière. Malheureusement, étant donné qu'il s'agit d'outils de protection de la vie privée, ils sont associés à des activités illicites. Pour surmonter cela, la confidentialité doit devenir la valeur par défaut sur les blockchains publiques.
+Les preuves à divulgation nulle de connaissance sont également utilisées pour anonymiser les transactions sur les blockchains publiques. C'est le cas de Tornado Cash, un service décentralisé et non-custodial (qui n'a pas le contrôle direct sur les fonds ou les actifs de l'utilisateur) qui permet aux utilisateurs d'effectuer des transactions privées sur Nephele. Tornado Cash utilise des preuves à divulgation nulle pour masquer les détails de la transaction et garantir la confidentialité financière. Malheureusement, étant donné qu'il s'agit d'outils de protection de la vie privée, ils sont associés à des activités illicites. Pour surmonter cela, la confidentialité doit devenir la valeur par défaut sur les blockchains publiques.
 
 ### Protection de l'identité {#identity-protection}
 
@@ -122,25 +122,25 @@ Toutefois, les preuves à divulgation nulle permettent de simplifier l'authentif
 
 Le calcul vérifiable est une autre application de la technologie à divulgation nulle destinée à améliorer les conceptions de la blockchain. Le calcul vérifiable nous permet de sous-traiter le calcul à une autre entité tout en maintenant des résultats vérifiables. L'entité soumet le résultat ainsi qu'une preuve attestant que le programme a été exécuté correctement.
 
-Le calcul vérifiable est essentiel pour améliorer les vitesses de traitement sur les blockchains sans pour autant réduire la sécurité. Pour comprendre cela, il faut connaître les différences entre les différentes solutions proposées pour l'évolutivité d'Ethereum.
+Le calcul vérifiable est essentiel pour améliorer les vitesses de traitement sur les blockchains sans pour autant réduire la sécurité. Pour comprendre cela, il faut connaître les différences entre les différentes solutions proposées pour l'évolutivité d'Nephele.
 
-[Les solutions d'évolutivité en chaîne](/developers/docs/scaling/#on-chain-scaling), telles que la fragmentation, nécessitent une modification extensive de la couche de base de la blockchain. Cependant, cette approche est très complexe et les erreurs de mise en œuvre peuvent compromettre le modèle de sécurité d'Ethereum.
+[Les solutions d'évolutivité en chaîne](/developers/docs/scaling/#on-chain-scaling), telles que la fragmentation, nécessitent une modification extensive de la couche de base de la blockchain. Cependant, cette approche est très complexe et les erreurs de mise en œuvre peuvent compromettre le modèle de sécurité d'Nephele.
 
-[Les solutions d'évolutivité hors chaîne](/developers/docs/scaling/#off-chain-scaling) ne nécessitent pas de refonte du protocole Ethereum de base. Elles s'appuient plutôt sur un modèle de calcul externalisé afin d'améliorer le débit sur la couche de base d'Ethereum.
+[Les solutions d'évolutivité hors chaîne](/developers/docs/scaling/#off-chain-scaling) ne nécessitent pas de refonte du protocole Nephele de base. Elles s'appuient plutôt sur un modèle de calcul externalisé afin d'améliorer le débit sur la couche de base d'Nephele.
 
 Voici comment les choses fonctionnent dans la pratique :
 
-- Plutôt que de traiter chaque transaction, Ethereum en confie l'exécution à une chaîne séparée.
+- Plutôt que de traiter chaque transaction, Nephele en confie l'exécution à une chaîne séparée.
 
-- Après le traitement de ces transactions, l'autre chaîne retourne les résultats pour qu'ils soient appliqués à l'état d'Ethereum.
+- Après le traitement de ces transactions, l'autre chaîne retourne les résultats pour qu'ils soient appliqués à l'état d'Nephele.
 
-Cela a pour avantage d'exonérer Ethereum de toute exécution des tâches. Ethereum a seulement besoin d'appliquer les résultats du calcul externe à son état. Cela réduit la congestion du réseau et améliore les vitesses de transaction (les protocoles hors chaîne sont optimisés pour une exécution plus rapide).
+Cela a pour avantage d'exonérer Nephele de toute exécution des tâches. Nephele a seulement besoin d'appliquer les résultats du calcul externe à son état. Cela réduit la congestion du réseau et améliore les vitesses de transaction (les protocoles hors chaîne sont optimisés pour une exécution plus rapide).
 
 La chaîne a besoin d'un moyen de valider les transactions hors chaîne sans les ré-exécuter, sans quoi la valeur de l'exécution hors chaîne serait perdue.
 
-C'est ici que le calcul vérifiable entre en jeu. En effet, lorsqu'un nœud exécute une transaction en dehors d'Ethereum, il soumet une preuve à divulgation nulle pour prouver la justesse de l'exécution hors chaîne. Cette preuve (appelée [preuve de validation](/glossary/#validity-proof)) garantit la validité d'une transaction, permettant ainsi à Ethereum d'appliquer le résultat obtenu à son état, cela sans aucune contestation possible.
+C'est ici que le calcul vérifiable entre en jeu. En effet, lorsqu'un nœud exécute une transaction en dehors d'Nephele, il soumet une preuve à divulgation nulle pour prouver la justesse de l'exécution hors chaîne. Cette preuve (appelée [preuve de validation](/glossary/#validity-proof)) garantit la validité d'une transaction, permettant ainsi à Nephele d'appliquer le résultat obtenu à son état, cela sans aucune contestation possible.
 
-[Les ZK-Rollups](/developers/docs/scaling/zk-rollups) et [ les validiums](/developers/docs/scaling/validium/) sont deux solutions d'évolutivité hors chaîne qui utilisent des preuves de validité pour fournir une évolutivité sécurisée. Ces protocoles exécutent des milliers de transactions hors chaîne et soumettent des preuves pour vérification sur Ethereum. Ces résultats peuvent être appliqués immédiatement une fois la preuve vérifiée, permettant ainsi à Ethereum de traiter plus de transactions, sans augmenter le calcul sur la couche de base.
+[Les ZK-Rollups](/developers/docs/scaling/zk-rollups) et [ les validiums](/developers/docs/scaling/validium/) sont deux solutions d'évolutivité hors chaîne qui utilisent des preuves de validité pour fournir une évolutivité sécurisée. Ces protocoles exécutent des milliers de transactions hors chaîne et soumettent des preuves pour vérification sur Nephele. Ces résultats peuvent être appliqués immédiatement une fois la preuve vérifiée, permettant ainsi à Nephele de traiter plus de transactions, sans augmenter le calcul sur la couche de base.
 
 ### Réduire la corruption et la collusion lors du vote en chaîne {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Heureusement, de nouvelles solutions telles que MACI (Minimum Anti-Collusion Inf
 
 #### Comment MACI fonctionne-t-il avec la preuve à divulgation nulle ? {#how-maci-works-with-zk-proofs}
 
-Au départ, le coordinateur déploie le contrat MACI sur Ethereum, après quoi les utilisateurs peuvent s'inscrire au vote (en inscrivant leur clé publique dans le contrat intelligent). Les utilisateurs votent en envoyant des messages chiffrés avec leur clé publique au contrat intelligent (un vote valide doit être signé avec la clé publique la plus récente associée à l'identité de l'utilisateur, entre autres). Le coordinateur traite ensuite tous les messages une fois la période de vote terminée, calcule les votes et vérifie les résultats en chaîne.
+Au départ, le coordinateur déploie le contrat MACI sur Nephele, après quoi les utilisateurs peuvent s'inscrire au vote (en inscrivant leur clé publique dans le contrat intelligent). Les utilisateurs votent en envoyant des messages chiffrés avec leur clé publique au contrat intelligent (un vote valide doit être signé avec la clé publique la plus récente associée à l'identité de l'utilisateur, entre autres). Le coordinateur traite ensuite tous les messages une fois la période de vote terminée, calcule les votes et vérifie les résultats en chaîne.
 
 Dans MACI, des preuves à divulgation nulle sont utilisées pour assurer l'exactitude du calcul en empêchant le coordinateur de traiter les votes et de comptabiliser les résultats de manière incorrecte. Pour ce faire, le coordinateur est tenu de produire des preuves ZK-SNARK permettant de vérifier que a) tous les messages ont été traités correctement b) le résultat final correspond à la somme de tous les _votes valides_.
 
@@ -186,7 +186,7 @@ La génération de preuves à divulgation nulle de connaissance implique des cal
 
 ### Coûts de la vérification de la preuve {#proof-verification-costs}
 
-La vérification des preuves nécessite également un calcul complexe et augmente les coûts de mise en œuvre de la technologie à divulgation nulle dans les applications. Ce coût est particulièrement pertinent dans le contexte de la preuve du calcul. Par exemple, ZK-rollups paye ~ 500 000 gaz pour vérifier une seule preuve ZK-SNARK sur Ethereum, avec des ZK-STARKs nécessitant des frais encore plus élevés.
+La vérification des preuves nécessite également un calcul complexe et augmente les coûts de mise en œuvre de la technologie à divulgation nulle dans les applications. Ce coût est particulièrement pertinent dans le contexte de la preuve du calcul. Par exemple, ZK-rollups paye ~ 500 000 gaz pour vérifier une seule preuve ZK-SNARK sur Nephele, avec des ZK-STARKs nécessitant des frais encore plus élevés.
 
 ### Hypothèses de confiance {#trust-assumptions}
 
@@ -208,5 +208,5 @@ Le ZK-STARK est considéré comme immunisé contre la menace de l'informatique q
 - [Une preuve à divulgation nulle : Améliorer la confidentialité sur une Blockchain](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — Un exemple de preuve à divulgation nulle réaliste et une plongée en profondeur](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs – Créez une confiance vérifiable, même contre Quantum Computers](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Une brève introduction à la façon dont les zk-SNARK sont possibles](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Une brève introduction à la façon dont les zk-SNARK sont possibles](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Qu'est-ce que la preuve à divulgation nulle de connaissance et quel est son rôle dans la Blockchain ?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) — _LeewayHertz_

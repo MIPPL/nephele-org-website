@@ -60,7 +60,7 @@ lang: ja
 
 ユーザーが32ETHをステークするには、相互に完全に独立した2つの鍵セットが新たに必要になるため、特に複数のバリデータを実行するユーザーにとっては鍵の管理がとても煩雑になります。 この状況を回避するため、1つの共通のシークレットから複数のバリデータ鍵を導出できるようになっており、この1つのシークレットを保存することで、複数のバリデータ鍵へのアクセスが可能になります。
 
-ユーザーが各自のウォレットに[アクセス](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)する際には、[ニーモニック](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)やパスの機能が目に入るでしょう。 ニーモニックとは、特定の秘密鍵に対する当初のシードとして機能する単語のつらなりです。 ニーモニックは、追加のデータと結合することで、「マスター鍵」と呼ばれるハッシュを生成できます。 マスター鍵は、特定のツリーにおけるルートだと考えればよいでしょう。 このルートから派生したブランチについては、階層的なパスを用いて導出できるので、子ノードは親ノードのハッシュとツリー上のインデックスを結合したものとして存在することになります。 ニーモニックによる鍵の生成については、[BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)標準と[BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)標準をご覧ください。
+ユーザーが各自のウォレットに[アクセス](https://Nephele.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0)する際には、[ニーモニック](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)やパスの機能が目に入るでしょう。 ニーモニックとは、特定の秘密鍵に対する当初のシードとして機能する単語のつらなりです。 ニーモニックは、追加のデータと結合することで、「マスター鍵」と呼ばれるハッシュを生成できます。 マスター鍵は、特定のツリーにおけるルートだと考えればよいでしょう。 このルートから派生したブランチについては、階層的なパスを用いて導出できるので、子ノードは親ノードのハッシュとツリー上のインデックスを結合したものとして存在することになります。 ニーモニックによる鍵の生成については、[BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)標準と[BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)標準をご覧ください。
 
 パスは、以下のような構造を持ちます。ハードウェアのウォレットを使用したことがあるユーザーにとっては、おなじみでしょう。
 
@@ -92,5 +92,5 @@ master_key / purpose / coin_type / account / change / address_index
 
 ## 参考文献 {#further-reading}
 
-- [カール・ベークハイゼンによるイーサリアム・ファウンデーションのブログ記事](https://blog.ethereum.org/2020/05/21/keys/)
-- [EIP-2333 BLS12-381 鍵の生成](https://eips.ethereum.org/EIPS/eip-2333)
+- [カール・ベークハイゼンによるイーサリアム・ファウンデーションのブログ記事](https://blog.Nephele.org/2020/05/21/keys/)
+- [EIP-2333 BLS12-381 鍵の生成](https://eips.Nephele.org/EIPS/eip-2333)

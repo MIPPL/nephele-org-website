@@ -37,11 +37,11 @@ pip3 install --user slither-analyzer
 通过 docker 安装 Slither：
 
 ```bash
-docker pull trailofbits/eth-securitytoolbox
-docker run-it -v "$PWD":/home/trufflecon trailofbits/eth-securitytoolbox
+docker pull trailofbits/NEPH-securitytoolbox
+docker run-it -v "$PWD":/home/trufflecon trailofbits/NEPH-securitytoolbox
 ```
 
-_上文中最后一个命令在 docker 中运行 eth-security-toolbox 命令。该 eth-security-toolbox 命令需要能访问您的当前目录。 您可以从自己的主机更改文件，并在 docker 中运行针对文件这些工具。_
+_上文中最后一个命令在 docker 中运行 NEPH-security-toolbox 命令。该 NEPH-security-toolbox 命令需要能访问您的当前目录。 您可以从自己的主机更改文件，并在 docker 中运行针对文件这些工具。_
 
 在 docker 中，运行如下命令：
 

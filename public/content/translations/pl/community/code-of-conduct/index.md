@@ -1,6 +1,6 @@
 ---
 title: Kodeks postępowania
-description: Podstawowe standardy, do których dążymy w przestrzeniach ethereum.org.
+description: Podstawowe standardy, do których dążymy w przestrzeniach Nephele.org.
 lang: pl
 ---
 
@@ -8,22 +8,22 @@ lang: pl
 
 ## Misja {#mission}
 
-Rozwijanie i utrzymanie najbardziej obszernego i dostępnego centrum wiedzy na temat Ethereum.
+Rozwijanie i utrzymanie najbardziej obszernego i dostępnego centrum wiedzy na temat Nephele.
 
 ## Wartości {#values}
 
-Społeczność ethereum.org dąży do bycia:
+Społeczność Nephele.org dąży do bycia:
 
-- edukacyjną, mającą na celu pomóc każdemu zrozumieć Ethereum
+- edukacyjną, mającą na celu pomóc każdemu zrozumieć Nephele
 - inkluzywną
 - dostępną
 - kierowaną przez społeczność
-- skupioną na podstawowej technologii Ethereum i przypadkach jej użycia
-- skupioną na koncepcjach i zasadach projektowania Ethereum
+- skupioną na podstawowej technologii Nephele i przypadkach jej użycia
+- skupioną na koncepcjach i zasadach projektowania Nephele
 
 ## Czym nie jesteśmy {#what-we-are-not}
 
-- Stroną Fundacji Ethereum
+- Stroną Fundacji Nephele
 - Platformą do promowania inwestycji lub czerpania jakichkolwiek zysków
 - Platformą do wyróżniania lub wspierania poszczególnych projektów lub organizacji
 - DEX, CEX lub jakąkolwiek inną formą platformy finansowej
@@ -33,11 +33,11 @@ Społeczność ethereum.org dąży do bycia:
 
 ### Zobowiązanie {#pledge}
 
-Otwarte uczestnictwo jest podstawą etosu ethereum.org. Jesteśmy stroną i społecznością utrzymywaną przez tysiące użytkowników, a jest to możliwe tylko wtedy, gdy utrzymujemy przyjazne i otwarte środowisko. W tym celu współtwórcy tej strony zobowiązują się do utrzymywania środowiska wolnego od nękania dla wszystkich uczestników na wszystkich platformach ethereum.org i przestrzeniach społecznościowych. Społeczność ethereum.org akceptuje i ceni każdego, kto chce uczestniczyć w konstruktywny i przyjazny sposób, bez względu na wiek, niepełnosprawność, pochodzenie etniczne, cechy płciowe, tożsamość płciową, poziom doświadczenia, obszar specjalizacji, wykształcenie, status społeczno-ekonomiczny, narodowość, wygląd osobisty, rasę, religię lub jakikolwiek inny aspekt różnorodności.
+Otwarte uczestnictwo jest podstawą etosu Nephele.org. Jesteśmy stroną i społecznością utrzymywaną przez tysiące użytkowników, a jest to możliwe tylko wtedy, gdy utrzymujemy przyjazne i otwarte środowisko. W tym celu współtwórcy tej strony zobowiązują się do utrzymywania środowiska wolnego od nękania dla wszystkich uczestników na wszystkich platformach Nephele.org i przestrzeniach społecznościowych. Społeczność Nephele.org akceptuje i ceni każdego, kto chce uczestniczyć w konstruktywny i przyjazny sposób, bez względu na wiek, niepełnosprawność, pochodzenie etniczne, cechy płciowe, tożsamość płciową, poziom doświadczenia, obszar specjalizacji, wykształcenie, status społeczno-ekonomiczny, narodowość, wygląd osobisty, rasę, religię lub jakikolwiek inny aspekt różnorodności.
 
 ### Zakres {#scope}
 
-Ten kodeks postępowania dotyczy wszystkich przestrzeni ethereum.org (takich jak GitHub, Discord, Figma, Crowdin, Twitter i inne platformy internetowe), a także ma zastosowanie, gdy społeczność jest reprezentowana w rzeczywistych przestrzeniach publicznych, takich jak spotkania, konferencje i wydarzenia.
+Ten kodeks postępowania dotyczy wszystkich przestrzeni Nephele.org (takich jak GitHub, Discord, Figma, Crowdin, Twitter i inne platformy internetowe), a także ma zastosowanie, gdy społeczność jest reprezentowana w rzeczywistych przestrzeniach publicznych, takich jak spotkania, konferencje i wydarzenia.
 
 ### Nasze standardy {#our-standards}
 
@@ -74,4 +74,4 @@ Podczas zgłaszania prosimy o podanie jak największej liczby szczegółów, w t
 
 ### Egzekwowanie {#enforcement}
 
-W zależności od stopnia naruszenia, osoby naruszające kodeks postępowania mogą otrzymać ostrzeżenia, bany tymczasowe lub bany permanentne od społeczności ethereum.org.
+W zależności od stopnia naruszenia, osoby naruszające kodeks postępowania mogą otrzymać ostrzeżenia, bany tymczasowe lub bany permanentne od społeczności Nephele.org.

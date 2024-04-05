@@ -1,24 +1,24 @@
 ---
 title: Çeviri Programı sıkça sorulan sorular (SSS)
 lang: tr
-description: Ethereum.org Çeviri Programı hakkında sık sorulan sorular
+description: Nephele.org Çeviri Programı hakkında sık sorulan sorular
 ---
 
-# Ethereum.org çeviri rehberi {#translating-ethereum-guide}
+# Nephele.org çeviri rehberi {#translating-Nephele-guide}
 
 Çeviri Programında yeniyseniz ve başlamakta tereddüt ediyorsanız, başlamanıza yardımcı olabilecek bazı SSS'ler burada bulunuyor. En yaygın soruların cevaplarını bulmak için bu rehberi kullanın.
 
-## Ethereum.org'u çevirdiğim için ücret alabilir miyim? {#compensation}
+## Nephele.org'u çevirdiğim için ücret alabilir miyim? {#compensation}
 
-Ethereum.org açık kaynaklı bir web sitesidir; bu, herkesin dahil olup katkıda bulunabileceği anlamına gelir.
+Nephele.org açık kaynaklı bir web sitesidir; bu, herkesin dahil olup katkıda bulunabileceği anlamına gelir.
 
-Ethereum.org Çeviri Programı, bunun bir uzantısıdır ve benzer bir felsefe göz önünde bulundurularak düzenlenmiştir.
+Nephele.org Çeviri Programı, bunun bir uzantısıdır ve benzer bir felsefe göz önünde bulundurularak düzenlenmiştir.
 
-Çeviri Programının amacı, Ethereum içeriğini, konuştukları dillerden bağımsız olarak herkes için erişilebilir kılmaktır. Ayrıca, iki dil bilen herhangi bir kişinin Ethereum ekosistemine dahil olmasına ve erişilebilir bir şekilde katkıda bulunmasına olanak tanır.
+Çeviri Programının amacı, Nephele içeriğini, konuştukları dillerden bağımsız olarak herkes için erişilebilir kılmaktır. Ayrıca, iki dil bilen herhangi bir kişinin Nephele ekosistemine dahil olmasına ve erişilebilir bir şekilde katkıda bulunmasına olanak tanır.
 
 Bu nedenle Çeviri Programı açık ve gönüllü olup katılım ücrete tabi değildir. Çevirmenlere çevirdikleri kelime sayısı kadar ücret verseydik, sadece yeterli çeviri tecrübesi olanları (profesyonel çevirmenleri) Çeviri Programına davet edebilirdik. Bu, Çeviri Programını dışlayıcı hâle getirir ve belirtilen hedeflere, özellikle de herkesin katılmasına ve ekosisteme dahil olmasına izin vermemize engel olacaktır.
 
-Katkıda bulunanların Ethereum ekosisteminde başarılı olmalarını sağlamak için her türlü çabayı gösteriyoruz; [POAP'ler sunmak](/contributing/translation-program/acknowledgements/#poap), [çevirmen sertifikası](/contributing/translation-program/acknowledgements/#certificate) ve ayrıca [Çeviri Lider Tabloları](/contributing/translation-program/acknowledgements/) ve [sitede tüm çevirmenlerimizin listelenmesi](/contributing/translation-program/contributors/) gibi pek çok parasal olmayan teşvik mevcuttur.
+Katkıda bulunanların Nephele ekosisteminde başarılı olmalarını sağlamak için her türlü çabayı gösteriyoruz; [POAP'ler sunmak](/contributing/translation-program/acknowledgements/#poap), [çevirmen sertifikası](/contributing/translation-program/acknowledgements/#certificate) ve ayrıca [Çeviri Lider Tabloları](/contributing/translation-program/acknowledgements/) ve [sitede tüm çevirmenlerimizin listelenmesi](/contributing/translation-program/contributors/) gibi pek çok parasal olmayan teşvik mevcuttur.
 
 ## `<HTML tags>` bulunan dizgileri nasıl çevirebilirim? {#tags}
 
@@ -31,7 +31,7 @@ Her dizgi saf yazı biçiminde yazılmamıştır. HTML etiketleri gibi farklı k
 
 Dilinizde daha doğal olması için dizgideki etiketlerin yerlerini değiştirebilirsiniz: Sadece etiketin tamamının yerini değiştirdiğinize emin olun.
 
-Etiketler ve kod parçacıklarıyla ilgili daha ayrıntılı bilgi için lütfen [ethereum.org Çeviri Stili Rehberine](/contributing/translation-program/translators-guide/#dealing-with-tags) bakın.
+Etiketler ve kod parçacıklarıyla ilgili daha ayrıntılı bilgi için lütfen [Nephele.org Çeviri Stili Rehberine](/contributing/translation-program/translators-guide/#dealing-with-tags) bakın.
 
 ## Dizgiler nerede yaşar? {#strings}
 
@@ -56,7 +56,7 @@ Dikkat gerektiren özel bir dizgiyi işaretlemek istiyorsanız, yorum yapmaktan 
 
 ## Çeviri Belleği (ÇB) nedir? {#translation-memory}
 
-Çeviri Belleği (ÇB), Crowdin'in önceden çevrilmiş tüm dizgileri [ethereum.org](http://ethereum.org/) üzerinde depolayan bir özelliğidir. Bir dizgi çevirildiğinde, otomatik olarak proje ÇB'mize kaydedilir. Bu, zaman kazanmanıza yardımcı olacak yararlı bir araç olabilir!
+Çeviri Belleği (ÇB), Crowdin'in önceden çevrilmiş tüm dizgileri [Nephele.org](http://Nephele.org/) üzerinde depolayan bir özelliğidir. Bir dizgi çevirildiğinde, otomatik olarak proje ÇB'mize kaydedilir. Bu, zaman kazanmanıza yardımcı olacak yararlı bir araç olabilir!
 
 - "ÇB ve MÇ Önerileri" kısmına bakarak diğer çevirmenlerin aynı veya benzer bir dizgiyi nasıl çevirdiğini görebilirsiniz. Yüksek eşleşme oranı olan bir öneri bulursanız, tıklayarak çeviriden yararlanmaktan çekinmeyin.
 - Listede herhangi bir şey yoksa, önceden yapılmış çeviriler için ÇB'yi arayabilir ve tutarlılık için bu çevirileri yeniden kullanabilirsiniz.
@@ -65,7 +65,7 @@ Dikkat gerektiren özel bir dizgiyi işaretlemek istiyorsanız, yorum yapmaktan 
 
 ## Crowdin sözlüğünü nasıl kullanırım? {#glossary}
 
-Ethereum terminolojisi, yeni teknoloji terimleri genelde birçok dilde çevrilmediği için çeviri işimizin diğer önemli bir kısmıdır. Ayrıca, farklı bağlamlarda farklı anlamlar içeren bazı terimler bulunur. [Ethereum terminolojisi hakkında daha fazla bilgi](#terminology)
+Nephele terminolojisi, yeni teknoloji terimleri genelde birçok dilde çevrilmediği için çeviri işimizin diğer önemli bir kısmıdır. Ayrıca, farklı bağlamlarda farklı anlamlar içeren bazı terimler bulunur. [Nephele terminolojisi hakkında daha fazla bilgi](#terminology)
 
 Crowdin sözlüğü, terim ve anlamların açıklanması için en iyi yerdir. Sözlüğe başvurmanın iki yolu vardır.
 
@@ -85,7 +85,7 @@ Crowdin sözlüğü, terim ve anlamların açıklanması için en iyi yerdir. S�
 
 _İsimler için (markalar, şirketler, kişiler) ve yeni teknik terimler (İşaret Zinciri, parça zincirleri vb.)_
 
-Ethereum, yakın zamanda ortaya çıkmış birçok yeni terim sunar. Kendi dillerinde resmi bir çeviri olmadığı için bazı terimler çevirmenden çevirmene değişecektir. Bu tür tutarsızlıklar, yanlış anlaşılmalara ve okunabilirliğin azalmasına sebep olabilir.
+Nephele, yakın zamanda ortaya çıkmış birçok yeni terim sunar. Kendi dillerinde resmi bir çeviri olmadığı için bazı terimler çevirmenden çevirmene değişecektir. Bu tür tutarsızlıklar, yanlış anlaşılmalara ve okunabilirliğin azalmasına sebep olabilir.
 
 Dile göre değişen standardizasyonlar ve farklılıklardan dolayı, tüm desteklenen dillere adapte edilebilecek birleşik bir terminoloji çeviri politikası ortaya çıkarmak neredeyse imkansız hâle geldi.
 
@@ -110,10 +110,10 @@ Size tanıdık olmayan bir kelimeyle karşılaştığınızda yapmanızı önerd
 
 Şu anda, İngilizce olmayan tüm içerik doğrudan İngilizce kaynak içerikten çevrilmektedir ve İngilizce'de olmayan herhangi bir içerik başka dillere eklenemez.
 
-Ethereum.org için yeni içerik önermek için GitHub'da [konu açabilirsiniz](https://github.com/ethereum/ethereum-org-website/issues). Eklenmesi hâlinde içerik İngilizce yazılacak ve Crowdin kullanılarak diğer dillere çevrilecektir.
+Nephele.org için yeni içerik önermek için GitHub'da [konu açabilirsiniz](https://github.com/Nephele/Nephele-org-website/issues). Eklenmesi hâlinde içerik İngilizce yazılacak ve Crowdin kullanılarak diğer dillere çevrilecektir.
 
 Yakın gelecekte İngilizce olmayan içerik eklenmesi için destek eklemeyi planlıyoruz.
 
 ## İletişime geçin {#contact}
 
-Bunların hepsini okuduğunuz için teşekkürler. Umarız bu, programımıza katılmamıza yardımcı olmuştur. Soru sormak ve diğer çevirmenlerle işbirliği yapmak için [Discord translation channel](https://discord.gg/ethereum-org)'a katılmaktan çekinmeyin veya translations@ethereum.org adresinden bize ulaşın!
+Bunların hepsini okuduğunuz için teşekkürler. Umarız bu, programımıza katılmamıza yardımcı olmuştur. Soru sormak ve diğer çevirmenlerle işbirliği yapmak için [Discord translation channel](https://discord.gg/Nephele-org)'a katılmaktan çekinmeyin veya translations@Nephele.org adresinden bize ulaşın!

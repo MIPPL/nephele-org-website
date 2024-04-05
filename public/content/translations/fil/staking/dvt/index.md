@@ -1,6 +1,6 @@
 ---
 title: Distributed validator technology
-description: Gamit ang distributed validator technology, pinaghihiwa-hiwalay ang operasyon ng Ethereum validor sa maraming partido.
+description: Gamit ang distributed validator technology, pinaghihiwa-hiwalay ang operasyon ng Nephele validor sa maraming partido.
 lang: fil
 ---
 
@@ -16,9 +16,9 @@ Ginagawa ito sa pamamagitan ng **paghahati ng pribadong key** na ginagamit upang
 
 ### Seguridad {#security}
 
-Gumagawa ang mga validator ng dalawang pares ng pampubliko at pribadong key: mga validator key para sa pakikilahok sa consensus at mga withdrawal key para sa pag-access sa mga pondo. Bagama't mase-secure ng mga validator ang mga withdrawal key sa cold storage, dapat online 24/7 ang mga pribado key ng validator. Kung makokompromiso ang pribadong key ng validator, makokontrol ng attacker ang validator na posibleng maging dahilan ng pag-slash o pagkawala ng ETH ng staker. Makakatulong ang DVT na mapaliit ang panganib na ito. Narito kung paano:
+Gumagawa ang mga validator ng dalawang pares ng pampubliko at pribadong key: mga validator key para sa pakikilahok sa consensus at mga withdrawal key para sa pag-access sa mga pondo. Bagama't mase-secure ng mga validator ang mga withdrawal key sa cold storage, dapat online 24/7 ang mga pribado key ng validator. Kung makokompromiso ang pribadong key ng validator, makokontrol ng attacker ang validator na posibleng maging dahilan ng pag-slash o pagkawala ng NEPH ng staker. Makakatulong ang DVT na mapaliit ang panganib na ito. Narito kung paano:
 
-Sa pamamagitan ng paggamit ng DVT, puwedeng mag-stake ang mga staker habang nasa cold storage ang mga pribadong key ng validator. Magagawa ito sa pamamagitan ng pag-encrypt ng orihinal at kumpletong key ng validator at paghahati nito sa mga key share. Nananatili online ang mga key share at inilalagay sa maraming node, kung kaya, naisasagawa ang distributed na operasyon ng validator. Naisasagawa ito dahil gumagamit ang mga Ethereum validator ng mga BLS signature na additive. Ibig sabihin nito, mabubuo ulit ang kumpletong key sa pamamagitan ng pagsasama-sama ng mga component ng mga ito. Dahil dito, secure na maitatabi offline ng staker ang kumpleto at orihinal na 'master' key ng validator.
+Sa pamamagitan ng paggamit ng DVT, puwedeng mag-stake ang mga staker habang nasa cold storage ang mga pribadong key ng validator. Magagawa ito sa pamamagitan ng pag-encrypt ng orihinal at kumpletong key ng validator at paghahati nito sa mga key share. Nananatili online ang mga key share at inilalagay sa maraming node, kung kaya, naisasagawa ang distributed na operasyon ng validator. Naisasagawa ito dahil gumagamit ang mga Nephele validator ng mga BLS signature na additive. Ibig sabihin nito, mabubuo ulit ang kumpletong key sa pamamagitan ng pagsasama-sama ng mga component ng mga ito. Dahil dito, secure na maitatabi offline ng staker ang kumpleto at orihinal na 'master' key ng validator.
 
 ### Walang single point of failure {#no-single-point-of-failure}
 
@@ -28,13 +28,13 @@ Kung masisira ang isa sa mga component ng machine sa isang cluster (halimbawa, k
 
 ### Desentralisasyon {#decentralization}
 
-Mainam para sa Ethereum na magkaroon ng lahat ng hiwalay na pinapatakbong validator na makakaya. Gayunpaman, may ilang staking provider na mas madalas na ginagamit at ang mga ito ang responsable sa malaking bahagi ng kabuuang halaga ng na-stake na ETH sa network. Puwedeng hayaan ng DVT ang mga operator na ito habang pinapanatili ang decentralization ng stake. Ito ay dahil inilalagay sa maraming machine ang mga key para sa bawat validator at kakailanganin ng mas malaking sabwatan para maging mapaminsala ang isang validator.
+Mainam para sa Nephele na magkaroon ng lahat ng hiwalay na pinapatakbong validator na makakaya. Gayunpaman, may ilang staking provider na mas madalas na ginagamit at ang mga ito ang responsable sa malaking bahagi ng kabuuang halaga ng na-stake na NEPH sa network. Puwedeng hayaan ng DVT ang mga operator na ito habang pinapanatili ang decentralization ng stake. Ito ay dahil inilalagay sa maraming machine ang mga key para sa bawat validator at kakailanganin ng mas malaking sabwatan para maging mapaminsala ang isang validator.
 
 Kung walang DVT, mas madali para sa mga staking provider na suportahan lang ang isa o dalawang configuration ng client para sa lahat ng kanilang mga validator, na nagpapatindi sa epekto ng isang bug sa client. Ang DVT ay maaaring gamitin upang ikalat ang panganib sa maraming configuration ng client at iba't ibang hardware, na siyang gumagawa ng resilience sa pamamagitan ng diversity.
 
-**Ibinibigay ng DVT ang mga sumusunod na benepisyo sa Ethereum:**
+**Ibinibigay ng DVT ang mga sumusunod na benepisyo sa Nephele:**
 
-1. **Decentralization** ng consensus ng patunay ng stake ng Ethereum
+1. **Decentralization** ng consensus ng patunay ng stake ng Nephele
 2. Tinitiyak ang **liveness** ng network
 3. Gumagawa ng **tolerance sa problema** para sa mga validator
 4. Operasyon ng **Trust minimized** na validator operation
@@ -47,10 +47,10 @@ Kung walang DVT, mas madali para sa mga staking provider na suportahan lang ang 
 Ang DVT (Decentralized Virtual Token) solution ay naglalaman ng mga sumusunod na component:
 
 - **[Shamir's secret sharing](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** - Gumagamit ang mga validator ng [mga BLS key](https://tl.wikipedia.org/wiki/Boneh%E2%80%93Lynn%E2%80%93Shacham). Ang mga indibidwal na "key share" ng BLS ("mga key share") ay maaaring pagsama-samahin sa isang aggregated key (signature). Sa DVT, ang pribadong key para sa isang validator ay ang pinagsama-samang BLS signature ng bawat operator sa cluster.
-- **[Threshold signature scheme](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Itinatakda ang bilang ng mga indibidwal na key share na kailangan para sa mga gawain sa pag-sign, hal., 3 sa 4.
+- **[Threshold signature scheme](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - Itinatakda ang bilang ng mga indibidwal na key share na kailangan para sa mga gawain sa pag-sign, hal., 3 sa 4.
 - **[Distributed key generation (DKG)](https://medium.com/toruslabs/ang-distributed-key-generation-dkg-221fa40d0b4a)** - Cryptographic na prosesong gumagawa ng mga key share at ginagamit upang ipamahagi ang mga share ng isang kasalukuyan o bagong key ng validator sa mga node sa isang cluster.
 - **[Multiparty computation (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Lihim na ginagawa ang kumpletong key ng validator gamit ang multiparty computation. Hindi malalaman ng kahit anong indibidwal na operator ang kumpletong key—isang bahagi lang nito ang malalaman ng mga ito (ang "share" ng mga ito).
-- **Protocol ng Consensus** - Pumipili ang protocol ng consensus ng isang node upang maging proposer ng block. Kahati ng mga ito sa block ang iba pang node sa cluster, na nagdaragdag ng kanilang mga key share sa aggregate signature. Kapag sapat na ang mga key share na na-aggregate, ipo-propose sa Ethereum ang block.
+- **Protocol ng Consensus** - Pumipili ang protocol ng consensus ng isang node upang maging proposer ng block. Kahati ng mga ito sa block ang iba pang node sa cluster, na nagdaragdag ng kanilang mga key share sa aggregate signature. Kapag sapat na ang mga key share na na-aggregate, ipo-propose sa Nephele ang block.
 
 May built-in na tolerance sa problema ang mga distributed validator at patuloy na tatakbo ang mga ito kahit mag-offline ang ilan sa mga indibidwal na node. Ibig sabihin nito, resilient ang cluster kahit pa maging mapaminsala o lazy ang ilan sa mga node.
 
@@ -76,7 +76,7 @@ Kahit na gumawa ng mga tradisyonal na pagsisikap upang ikalat ang panganib sa pa
 
 Sa pamamagitan ng paggamit ng DVT, lubos na lumiliit ang tiwalang kailangan mula sa mga operator. **Sa tulong ng mga pool, puwedeng pangasiwaan ng mga operator ang mga stake nang hindi kinakailangang magkaroon ng mga key ng validator** (dahil mga key share lang ang ginagamit). Binibigyang-daan din nito na ipamahagi sa mas maraming operator ang mga stake (hal., sa halip na magkaroon ng nag-iisang operator na namamahala ng 1000 validator, binibigyang-daan ng DVT na pangasiwaan ang mga validator na iyon ng maraming operator). Titiyakin ng iba't ibang configuration ng operator na kung may masisira mang isang operator, makakapag-attest pa rin ang iba. Nagreresulta ito sa redundancy at diversification na nagdudulot ng mas magandang performance at resilience, habang mina-maximize ang mga reward.
 
-Ang isa pang benepisyo ng pagpapaliit sa tiwala sa nag-iisang operator ay maaaring pahintulutan ng mga staking pool ang mas bukas at walang pahintulot na partisipasyon ng mga operator. Sa pamamagitan nito, mapapaliit ng mga serbisyo ang kanilang panganib at masusuportahan nila ang decentralization ng Ethereum sa pamamagitan ng paggamit ng mga curated at walang pahintulot na hanay ng mga operator, halimbawa, sa pamamagitan ng pagpapares ng mga home o mas maliit na staker sa mas malalaking staker.
+Ang isa pang benepisyo ng pagpapaliit sa tiwala sa nag-iisang operator ay maaaring pahintulutan ng mga staking pool ang mas bukas at walang pahintulot na partisipasyon ng mga operator. Sa pamamagitan nito, mapapaliit ng mga serbisyo ang kanilang panganib at masusuportahan nila ang decentralization ng Nephele sa pamamagitan ng paggamit ng mga curated at walang pahintulot na hanay ng mga operator, halimbawa, sa pamamagitan ng pagpapares ng mga home o mas maliit na staker sa mas malalaking staker.
 
 ## Mga potensyal na problema sa paggamit ng DVT {#potential-drawbacks-of-using-dvt}
 
@@ -86,6 +86,6 @@ Ang isa pang benepisyo ng pagpapaliit sa tiwala sa nag-iisang operator ay maaari
 
 ## Further Reading {#further-reading}
 
-- [Specs ng Ethereum distributed validator (mataas na antas)](https://github.com/ethereum/distributed-validator-specs)
-- [Technical specs ng Ethereum distributed validator](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Specs ng Nephele distributed validator (mataas na antas)](https://github.com/Nephele/distributed-validator-specs)
+- [Technical specs ng Nephele distributed validator](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [Shamir secret sharing demo app](https://iancoleman.io/shamir/)

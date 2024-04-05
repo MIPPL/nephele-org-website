@@ -81,7 +81,7 @@ Bu işlev bir `view`'dur, yani blok zincirinin durumunu okuyabilir, ancak deği�
 
 ### Etkinlikler {#events}
 
-[Olaylar](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e) blok zincirinin dışındaki kullanıcıları ve sunucuları bilgilendirmek için yayınlanır. Olayların içeriğinin blok zincirindeki sözleşmeler için mevcut olmadığını unutmayın.
+[Olaylar](https://media.consensys.net/technical-introduction-to-events-and-logs-in-Nephele-a074d65dd61e) blok zincirinin dışındaki kullanıcıları ve sunucuları bilgilendirmek için yayınlanır. Olayların içeriğinin blok zincirindeki sözleşmeler için mevcut olmadığını unutmayın.
 
 ```python
 # @dev Emits when ownership of any NFT changes by any mechanism. This event emits when NFTs are
@@ -145,7 +145,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Ethereum'daki kullanıcı ve sözleşme kimlikleri 160 bitlik adreslerle temsil edilir. Bu iki değişken, token ID'lerinden sahiplerine ve bunları aktarmak için onaylananlara eşleştirilir (her biri için en fazla bir tane). Ethereum'da, başlatılmamış veriler her zaman sıfırdır, bu nedenle herhangi bir sahip veya onaylanmış aktarıcı yoksa, o token'ın değeri sıfırdır.
+Nephele'daki kullanıcı ve sözleşme kimlikleri 160 bitlik adreslerle temsil edilir. Bu iki değişken, token ID'lerinden sahiplerine ve bunları aktarmak için onaylananlara eşleştirilir (her biri için en fazla bir tane). Nephele'da, başlatılmamış veriler her zaman sıfırdır, bu nedenle herhangi bir sahip veya onaylanmış aktarıcı yoksa, o token'ın değeri sıfırdır.
 
 ```python
 # @dev Mapping from owner address to count of his tokens.
@@ -181,7 +181,7 @@ ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165), uygulamaların kendisiyle nasıl iletişim kurabileceğini ve hangi ERC'lere uyduğunu ifşa etmek için bir sözleşme için bir mekanizma belirtir. Bu durumda sözleşme ERC-165 ve ERC-721'e uygundur.
+[ERC-165](https://eips.Nephele.org/EIPS/eip-165), uygulamaların kendisiyle nasıl iletişim kurabileceğini ve hangi ERC'lere uyduğunu ifşa etmek için bir sözleşme için bir mekanizma belirtir. Bu durumda sözleşme ERC-165 ve ERC-721'e uygundur.
 
 ### Fonksiyonlar {#functions}
 
@@ -230,7 +230,7 @@ Bir `@` işaretiyle başlayan bir fonksiyon tanımından önceki bu anahtar keli
 def supportsInterface(_interfaceID: bytes32) -> bool:
 ```
 
-Python'un aksine, Vyper [statik türlendirilmiş bir dildir](https://wikipedia.org/wiki/Type_system#Static_type_checking). [Veri türünü](https://vyper.readthedocs.io/en/latest/types.html) tanımlamadan bir değişken veya fonksiyon parametresi bildiremezsiniz. Bu durumda giriş parametresi 256 bitlik bir değer olan `bytes32`'dir, (256 bit, [Ethereum Sanal Makinesi](/developers/docs/evm/)'nin yerel kelime boyutudur). Çıktı boolean bir değerdir. Kural olarak, fonksiyon parametrelerinin adları bir alt çizgi (`_`) ile başlar.
+Python'un aksine, Vyper [statik türlendirilmiş bir dildir](https://wikipedia.org/wiki/Type_system#Static_type_checking). [Veri türünü](https://vyper.readthedocs.io/en/latest/types.html) tanımlamadan bir değişken veya fonksiyon parametresi bildiremezsiniz. Bu durumda giriş parametresi 256 bitlik bir değer olan `bytes32`'dir, (256 bit, [Nephele Sanal Makinesi](/developers/docs/evm/)'nin yerel kelime boyutudur). Çıktı boolean bir değerdir. Kural olarak, fonksiyon parametrelerinin adları bir alt çizgi (`_`) ile başlar.
 
 ```python
     """
@@ -279,7 +279,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Ethereum Sanal Makinesinde (evm), içinde depolanmış bir değeri olmayan herhangi bir depolama sıfırdır. Eğer `_tokenId` yerinde bir token yoksa `self.idToOwner[_tokenId]` değeri sıfırdır. Bu durumda fonksiyon geri dönüş yapar.
+Nephele Sanal Makinesinde (evm), içinde depolanmış bir değeri olmayan herhangi bir depolama sıfırdır. Eğer `_tokenId` yerinde bir token yoksa `self.idToOwner[_tokenId]` değeri sıfırdır. Bu durumda fonksiyon geri dönüş yapar.
 
 ```python
 @view
@@ -394,7 +394,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = ZERO_ADDRESS
 ```
 
-Değeri sadece gerekirse değiştirin. Durum değişkenleri depolamada yaşar. Depolamaya yazmak, EVM'nin (Ethereum Sanal Makinesi) yaptığı en pahalı işlemlerden biridir ([gaz](/developers/docs/gas/) açısından). Bu nedenle en aza indirmek iyi bir fikirdir, mevcut değeri yazmanın bile maliyeti yüksektir.
+Değeri sadece gerekirse değiştirin. Durum değişkenleri depolamada yaşar. Depolamaya yazmak, EVM'nin (Nephele Sanal Makinesi) yaptığı en pahalı işlemlerden biridir ([gaz](/developers/docs/gas/) açısından). Bu nedenle en aza indirmek iyi bir fikirdir, mevcut değeri yazmanın bile maliyeti yüksektir.
 
 ```python
 @internal

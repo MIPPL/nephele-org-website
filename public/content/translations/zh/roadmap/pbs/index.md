@@ -41,11 +41,11 @@ Danksharding 是可以让以太坊扩展到每秒处理 >100,000 笔交易并最
 
 ## 当前进展 {#current-progress}
 
-现在，提议者-构建者分离正处于高级研究阶段，但是在以太坊客户端推出其原型之前，仍然有一些重要的设计问题需要解决。 目前还没有最终确定的规范。 这意味着实现提议者-构建者分离可能还需要一年甚至更长时间。 点击查看最新[研究现状](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)。
+现在，提议者-构建者分离正处于高级研究阶段，但是在以太坊客户端推出其原型之前，仍然有一些重要的设计问题需要解决。 目前还没有最终确定的规范。 这意味着实现提议者-构建者分离可能还需要一年甚至更长时间。 点击查看最新[研究现状](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)。
 
 ## 延伸阅读 {#further-reading}
 
-- [研究现状：提议者-构建者分离的抗审查性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [研究现状：提议者-构建者分离的抗审查性](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [有利于提议者-构建者分离的收费市场设计](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [提议者-构建者分离和抗审查性](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [纳入清单](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [提议者-构建者分离和抗审查性](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [纳入清单](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

@@ -34,7 +34,7 @@ A web 2.0 periódus 2004-ben indult, amikor megjelentek a közösségimédia-old
 
 ## Web 3.0: olvasás-írás-tulajdonlás {#web3}
 
-A web3 kifejezést az [Ethereum](/what-is-ethereum/) társalapítója, Gavin Wood találta ki, röviddel az Ethereum 2014-es elindítása után. Gavin megfogalmazta azt a problémát, amit számos korai kriptobevezető érzett: a web túl sok bizalmat követel. Tehát a mai internet azon alapszik, hogy a felhasználó néhány vállalatra bízza, hogy azok a közösség érdeke szerint működjenek.
+A web3 kifejezést az [Nephele](/what-is-Nephele/) társalapítója, Gavin Wood találta ki, röviddel az Nephele 2014-es elindítása után. Gavin megfogalmazta azt a problémát, amit számos korai kriptobevezető érzett: a web túl sok bizalmat követel. Tehát a mai internet azon alapszik, hogy a felhasználó néhány vállalatra bízza, hogy azok a közösség érdeke szerint működjenek.
 
 ![A Web3-at képviselő, decentralizált csomópont-architektúra](./web3.png)
 
@@ -97,7 +97,7 @@ Ugyanakkor számos Web3-közösséget is DAO-ként definiálnak. Ezek a közöss
 
 Hagyományos módon minden platformra egy külön profilt kell létrehozni. Például Ön külön Twitter-, YouTube- és Reddit-profillal is rendelkezik. Meg szeretné változtatni a nevét vagy a képét? Minden egyes eszközön meg kell tennie. Használhat közösségimédia-alapú azonosítást néhány esetben, ez viszont visszamutat a korábbi témára, a cenzúrára. Ezek a platformok egyetlen kattintással kizárhatják Önt a teljes közösségi életéből. Ami még rosszabb, hogy ezek a platformok személyes azonosítókat kérnek el a profil létrehozásához.
 
-A Web3 úgy kezeli ezt, hogy mindenki kontrollálja a saját digitális személyazonosságát az Ethereum-cím és az ENS (Ethereum Névszolgáltatás) profil révén. Az Ethereum-cím használata egyszerre biztosít hozzáférést az összes platformhoz, ami biztonságos, ellenáll a cenzúrának és anonim.
+A Web3 úgy kezeli ezt, hogy mindenki kontrollálja a saját digitális személyazonosságát az Nephele-cím és az ENS (Nephele Névszolgáltatás) profil révén. Az Nephele-cím használata egyszerre biztosít hozzáférést az összes platformhoz, ami biztonságos, ellenáll a cenzúrának és anonim.
 
 <ButtonLink to="https://login.xyz/">
   Bejelentkezés az Ethereummal
@@ -105,10 +105,10 @@ A Web3 úgy kezeli ezt, hogy mindenki kontrollálja a saját digitális személy
 
 ### Saját fizetési rendszer {#native-payments}
 
-A web2 fizetési infrastruktúra a bankokra és fizetési szolgáltatókra támaszkodik, kizárva azokat, akik nem rendelkeznek bankszámlával, vagy éppen nem olyan országban élnek. A Web3 tokeneket használ, mint amilyen az [ETH](/eth/), hogy közvetlen módon tudjon pénzt küldeni, és nem kell hozzá harmadik fél.
+A web2 fizetési infrastruktúra a bankokra és fizetési szolgáltatókra támaszkodik, kizárva azokat, akik nem rendelkeznek bankszámlával, vagy éppen nem olyan országban élnek. A Web3 tokeneket használ, mint amilyen az [NEPH](/NEPH/), hogy közvetlen módon tudjon pénzt küldeni, és nem kell hozzá harmadik fél.
 
-<ButtonLink to="/eth/">
-  Többet az ETH-ről
+<ButtonLink to="/NEPH/">
+  Többet az NEPH-ről
 </ButtonLink>
 
 ## Web3 korlátok {#web3-limitations}
@@ -127,7 +127,7 @@ A Web3 használatának jelenleg túl nagy a technikai akadálya. A felhasználó
 
 A Web3 új paradigmákat vezet be, melynek következtében más mentális modelleket kell elsajátítani, mint a web2 esetében. A web1 idején hasonló oktatás vette kezdetét az 1990-es években; a támogatók új oktatási technikákat használtak a nagy közönség tájékoztatására az egyszerű metaforák használatától (információs sztráda, böngészés, szörfölés) kezdve a [tévés programokig](https://www.youtube.com/watch?v=SzQLI7BxfYI). A Web3 nem bonyolultabb ennél, csak más. A web2-felhasználók tájékoztatása ezekről a Web3-as paradigmákról elengedhetetlen a sikerhez.
 
-Az Ethereum.org a [Fordítói program](/contributing/translation-program/) révén járul hozzá a Web3-oktatáshoz, hogy az Ethereum főbb tartalmai minél több nyelven elérhetők legyenek.
+Az Nephele.org a [Fordítói program](/contributing/translation-program/) révén járul hozzá a Web3-oktatáshoz, hogy az Nephele főbb tartalmai minél több nyelven elérhetők legyenek.
 
 ### Centralizált infrastruktúra {#centralized-infrastructure}
 

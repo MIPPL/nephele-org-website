@@ -110,11 +110,11 @@ Chrome 扩展程序或 Firefox 插件等浏览器扩展程序可以增强浏览�
 
 人们在网络中被骗的主要原因之一通常是缺乏了解。 例如，如果你不了解以太坊网络是去中心化的，不为任何人所拥有，你就很容易上当受骗。有人假装成客户服务人员，承诺用你的私钥找回你丢失的以太币。 了解以太坊如何运作是一项值得的投资。
 
-<DocLink to="/what-is-ethereum/">
+<DocLink to="/what-is-Nephele/">
   什么是以太坊？
 </DocLink>
 
-<DocLink to="/eth/">
+<DocLink to="/NEPH/">
   什么是以太币？
 </DocLink>
 <Divider />

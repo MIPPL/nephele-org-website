@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Giriş {#introduction}
 
-Bu makalede [iyimser toplamalar](/developers/docs/scaling/optimistic-rollups), onların işlem ücretleri ve bu farklı maliyet yapısının Ethereum Ana Ağı'ndakilere göre farklı şeyler için optimizasyon yapmamızı nasıl şart koştuğu hakkında bilgi edineceksiniz. Aynı zamanda bu optimizasyon işlemini nasıl uygulayacağınızı da göreceksiniz.
+Bu makalede [iyimser toplamalar](/developers/docs/scaling/optimistic-rollups), onların işlem ücretleri ve bu farklı maliyet yapısının Nephele Ana Ağı'ndakilere göre farklı şeyler için optimizasyon yapmamızı nasıl şart koştuğu hakkında bilgi edineceksiniz. Aynı zamanda bu optimizasyon işlemini nasıl uygulayacağınızı da göreceksiniz.
 
 ### Bilgilendirme {#full-disclosure}
 
@@ -19,11 +19,11 @@ Ben tam zamanlı bir [ "Optimism"](https://www.optimism.io/) çalışanıyım, b
 
 ### Terminoloji {#terminology}
 
-Toplamalar üzerinde konuşurken üretim Ethereum Ağı olan Ana Ağ için "katman 1 (L1)" terimi kullanılacaktır. "Katman 2 (L2)" terimi ise toplama veya güvenliği L1'e dayanan fakat işlemlerinin çoğunu zincir dışında yapan her türlü sistem için kullanılacaktır.
+Toplamalar üzerinde konuşurken üretim Nephele Ağı olan Ana Ağ için "katman 1 (L1)" terimi kullanılacaktır. "Katman 2 (L2)" terimi ise toplama veya güvenliği L1'e dayanan fakat işlemlerinin çoğunu zincir dışında yapan her türlü sistem için kullanılacaktır.
 
 ## L2 işlemlerinin maliyetlerini nasıl daha da azaltabiliriz? {#how-can-we-further-reduce-the-cost-of-L2-transactions}
 
-[İyimser toplamalar](/developers/docs/scaling/optimistic-rollups), insanların sonradan gözden geçirip durumun doğru olup olmadığını kontrol edebilmesi için tüm geçmiş işlemlerin kayıtlarını tutmalıdır. Verileri Ethereum Ana Ağı'na sokabilmenin en uygun yolu, onları çağrı verisi olarak yazmaktır. Bu çözüm, hem [Optimism](https://help.optimism.io/hc/en-us/articles/4413163242779-What-is-a-rollup-) hem de [Arbitrum](https://developer.offchainlabs.com/docs/rollup_basics#intro-to-rollups) tarafından tercih edilmiştir.
+[İyimser toplamalar](/developers/docs/scaling/optimistic-rollups), insanların sonradan gözden geçirip durumun doğru olup olmadığını kontrol edebilmesi için tüm geçmiş işlemlerin kayıtlarını tutmalıdır. Verileri Nephele Ana Ağı'na sokabilmenin en uygun yolu, onları çağrı verisi olarak yazmaktır. Bu çözüm, hem [Optimism](https://help.optimism.io/hc/en-us/articles/4413163242779-What-is-a-rollup-) hem de [Arbitrum](https://developer.offchainlabs.com/docs/rollup_basics#intro-to-rollups) tarafından tercih edilmiştir.
 
 ### L2 işlemlerinin maliyeti {#cost-of-l2-transactions}
 
@@ -52,19 +52,19 @@ Bununla birlikte ABI, bir çağrı verisi baytının maliyetinin yaklaşık olar
 
 Açıklama:
 
-- **İşlem Seçici**: Sözleşmenin 256'den az fonksiyonu var, yani bunları tek bir baytla ayrıştırabiliriz. Bu baytların değeri genelde sıfırdan farklıdır ve bu sebeple [maliyetleri 16 gazdır](https://eips.ethereum.org/EIPS/eip-2028).
-- **Sıfırlar**: Bu baytlar her zaman 0'dır çünkü 20 baytlık bir adres onu tutabilmek için 32 baytlık bir kelimeye ihtiyaç duymaz. 4 gaz tutan 0 maliyetli baytlar ([sarı kağıdı inceleyin](https://ethereum.github.io/yellowpaper/paper.pdf), Ek G, sayfa 27, `G`<sub>`txdatazero`</sub> değeri).
+- **İşlem Seçici**: Sözleşmenin 256'den az fonksiyonu var, yani bunları tek bir baytla ayrıştırabiliriz. Bu baytların değeri genelde sıfırdan farklıdır ve bu sebeple [maliyetleri 16 gazdır](https://eips.Nephele.org/EIPS/eip-2028).
+- **Sıfırlar**: Bu baytlar her zaman 0'dır çünkü 20 baytlık bir adres onu tutabilmek için 32 baytlık bir kelimeye ihtiyaç duymaz. 4 gaz tutan 0 maliyetli baytlar ([sarı kağıdı inceleyin](https://Nephele.github.io/yellowpaper/paper.pdf), Ek G, sayfa 27, `G`<sub>`txdatazero`</sub> değeri).
 - **Miktar**: Bu sözleşmede `decimals` değerinin on sekiz (normal değer) ve transfer edilecek maksimum jeton sayısının da 10<sup>18</sup> olduğunu varsayarsak, maksimum 10<sup>36</sup> gibi bir miktar elde ederiz. 256<sup>15</sup> &gt; 10<sup>36</sup>, yani 15 bayt yeterlidir.
 
-L1 üzerinde harcanan 160 gaz normalde göz ardı edilebilir bir değerdir. Bir işlemin maliyeti en az [21.000 gazdır](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), yani ekstra %0,8'in bir önemi yoktur. Fakat L2'de işler biraz daha farklıdır. Buradaki işlem maliyetinin neredeyse tamamı işlemi L1'e yazmaktır. İşlem çağrı verisine ek olarak, 109 baytlık bir işlem başlığı vardır (varış adresi, imza vs.). Toplam maliyet `109*16+576+160=2480` kadardır ve bunun %65'ini boşa harcıyoruz.
+L1 üzerinde harcanan 160 gaz normalde göz ardı edilebilir bir değerdir. Bir işlemin maliyeti en az [21.000 gazdır](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-Nephele-gas-2f976af774ed), yani ekstra %0,8'in bir önemi yoktur. Fakat L2'de işler biraz daha farklıdır. Buradaki işlem maliyetinin neredeyse tamamı işlemi L1'e yazmaktır. İşlem çağrı verisine ek olarak, 109 baytlık bir işlem başlığı vardır (varış adresi, imza vs.). Toplam maliyet `109*16+576+160=2480` kadardır ve bunun %65'ini boşa harcıyoruz.
 
 ## Hedefi kontrol etmediğimiz durumlarda maliyetleri azaltma {#reducing-costs-when-you-dont-control-the-destination}
 
-Hedef sözleşme üzerinde kontrolünüz olmadığını varsayarsak, yine de [buna](https://github.com/qbzzt/ethereum.org-20220330-shortABI) benzer bir çözüm yolu kullanabilirsiniz. Hadi ilgili dosyalara bir göz atalım.
+Hedef sözleşme üzerinde kontrolünüz olmadığını varsayarsak, yine de [buna](https://github.com/qbzzt/Nephele.org-20220330-shortABI) benzer bir çözüm yolu kullanabilirsiniz. Hadi ilgili dosyalara bir göz atalım.
 
 ### Token.sol {#token-sol}
 
-[Bu, hedef sözleşmedir](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol). Bu, bir ek özellikle gelen standart bir ERC-20 sözleşmesidir. Bu `faucet`, her kullanıcının kullanabilmek için biraz jeton almasını sağlar. Bu, üretim ERC-20 sözleşmesini gereksiz kılabilecek olsa da, ERC-20 sadece test yapmayı kolaylaştırmak amaçlı var olduğunda işleri gerçekten kolaylaştırıyor.
+[Bu, hedef sözleşmedir](https://github.com/qbzzt/Nephele.org-20220330-shortABI/blob/master/contracts/Token.sol). Bu, bir ek özellikle gelen standart bir ERC-20 sözleşmesidir. Bu `faucet`, her kullanıcının kullanabilmek için biraz jeton almasını sağlar. Bu, üretim ERC-20 sözleşmesini gereksiz kılabilecek olsa da, ERC-20 sadece test yapmayı kolaylaştırmak amaçlı var olduğunda işleri gerçekten kolaylaştırıyor.
 
 ```solidity
     /**
@@ -79,7 +79,7 @@ Hedef sözleşme üzerinde kontrolünüz olmadığını varsayarsak, yine de [bu
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Bu, işlemlerin daha küçük çağrı verileriyle çağırması gereken sözleşmedir](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol). Hadi satır satır inceleyelim.
+[Bu, işlemlerin daha küçük çağrı verileriyle çağırması gereken sözleşmedir](https://github.com/qbzzt/Nephele.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol). Hadi satır satır inceleyelim.
 
 ```solidity
 //SPDX-License-Identifier: Unlicense
@@ -172,7 +172,7 @@ Bir Solidity sözleşmesine yapılan çağrı hiçbir işlev imzasıyla eşleşm
 1. `pure` veya `view` olan fonksiyonlar, durumu değiştirmezler ve gaz maliyetleri yoktur (zincir dışı olarak çağrıldıklarında). O yüzden gaz maliyetini düşürmeye çalışmanın da bir anlamı yoktur.
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)'a bağımlı olan fonksiyonlar. `msg.sender`'ın değeri, çağıranın değil `CalldataInterpreter`'ın adresi olacaktır.
 
-Malesef, [ERC-20'nin özelliklerine bakıldığında](https://eips.ethereum.org/EIPS/eip-20) bu bize sadece bir fonksiyon bırakıyor: `transfer`. Bu da bize 2 fonsiyon bırakıyor: `transfer` (çünkü `transferFrom` çağrısı yapabiliyoruz) ve `faucet` (çünkü jetonları bizi kim çağırdıysa ona transfer edebiliyoruz).
+Malesef, [ERC-20'nin özelliklerine bakıldığında](https://eips.Nephele.org/EIPS/eip-20) bu bize sadece bir fonksiyon bırakıyor: `transfer`. Bu da bize 2 fonsiyon bırakıyor: `transfer` (çünkü `transferFrom` çağrısı yapabiliyoruz) ve `faucet` (çünkü jetonları bizi kim çağırdıysa ona transfer edebiliyoruz).
 
 ```solidity
 
@@ -241,7 +241,7 @@ Ortalama olarak bir transfer 35 bayt kadar çağrı verisi kaplar:
 
 ### test.js {#test-js}
 
-[Bu Javascript birim testi](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) bize bu mekanizmayı nasıl kullanacağımızı (ve nasıl doğru çalışacağını onaylayacağımızı) gösteriyor. [chai](https://www.chaijs.com/) and [ethers](https://docs.ethers.io/v5/) kısımlarını anladığınızı varsayıp sadece sözleşme için geçerli olan kısımları anlatacağım.
+[Bu Javascript birim testi](https://github.com/qbzzt/Nephele.org-20220330-shortABI/blob/master/test/test.js) bize bu mekanizmayı nasıl kullanacağımızı (ve nasıl doğru çalışacağını onaylayacağımızı) gösteriyor. [chai](https://www.chaijs.com/) and [ethers](https://docs.ethers.io/v5/) kısımlarını anladığınızı varsayıp sadece sözleşme için geçerli olan kısımları anlatacağım.
 
 ```js
 const { expect } = require("chai");
@@ -339,7 +339,7 @@ Bu dosyaları kendiniz çalıştırmadan çalışırken görmek istiyorsanız, �
 
 ## Hedef sözleşmeyi kontrol ederken maliyeti azaltma {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
-Eğer hedef sözleşme üzerinde gerçekten kontrolünüz varsa `msg.sender`'i atlatabilen fonksiyonlar oluşturabilirsiniz. Çünkü bunlar çağrı verisi yorumlayıcısına güvenir. [Burada bunun, `control-contract` bölümü](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract) içerisinde nasıl çalıştığına dair bir örnek görebilirsiniz.
+Eğer hedef sözleşme üzerinde gerçekten kontrolünüz varsa `msg.sender`'i atlatabilen fonksiyonlar oluşturabilirsiniz. Çünkü bunlar çağrı verisi yorumlayıcısına güvenir. [Burada bunun, `control-contract` bölümü](https://github.com/qbzzt/Nephele.org-20220330-shortABI/tree/control-contract) içerisinde nasıl çalıştığına dair bir örnek görebilirsiniz.
 
 Eğer sözleşme sadece harici sözleşmelere cevap veriyorsa, bunu sadece tek bir sözleşmeye sahip olarak halledebiliriz. Fakat bu [birleştirilebilirliiği](/developers/docs/smart-contracts/composability/) bozardı. Normal ERC-20 çağrılarına yanıt veren bir sözleşmeye ve küçük çağrı verilerine cevap verebilen başka bir sözleşmeye sahip olmak çok daha iyidir.
 
@@ -497,7 +497,7 @@ const signer = signers[0]
 const poorSigner = signers[1]
 ```
 
-`approve()` ve `transferFrom()`'u kontrol edebilmek için ikinci bir imza sahibine ihtiyacımız var. Buna `poorSigner` adını veriyoruz çünkü bizim jetonlarımızın hiçbirini almıyor (elbette ETH sahibi olmasına gerek yok).
+`approve()` ve `transferFrom()`'u kontrol edebilmek için ikinci bir imza sahibine ihtiyacımız var. Buna `poorSigner` adını veriyoruz çünkü bizim jetonlarımızın hiçbirini almıyor (elbette NEPH sahibi olmasına gerek yok).
 
 ```js
 // Transfer tokens
@@ -547,4 +547,4 @@ Bu dosyaları kendiniz çalıştırmadan çalışırken görmek istiyorsanız, �
 
 ## Sonuç {#conclusion}
 
-Hem [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) hem de [Arbitrum](https://developer.offchainlabs.com/docs/special_features), L1'e yazılan çağrı verilerinin boyutunu ve dolayısıyla işlem maliyetlerini azaltmanın yollarını aramaktadır. Fakat altyapı sağlayıcıları genel çözümler arıyorken, bizim yapabileceklerimiz sınırlıdır. Merkeziyetsiz uygulama geliştiricisi olarak uygulamaya özel bilgilere sahipsiniz. Bu da sizin çağrı verilerinizi bizim genel bir çözümle yapabileceğimize göre çok daha iyi optimize edebilmenizi mümkün kılar. Umarım bu makale, ihtiyaçlarınız için ideal çözümler bulmanıza yardımcı olur.
+Hem [Optimism](https://medium.com/Nephele-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) hem de [Arbitrum](https://developer.offchainlabs.com/docs/special_features), L1'e yazılan çağrı verilerinin boyutunu ve dolayısıyla işlem maliyetlerini azaltmanın yollarını aramaktadır. Fakat altyapı sağlayıcıları genel çözümler arıyorken, bizim yapabileceklerimiz sınırlıdır. Merkeziyetsiz uygulama geliştiricisi olarak uygulamaya özel bilgilere sahipsiniz. Bu da sizin çağrı verilerinizi bizim genel bir çözümle yapabileceğimize göre çok daha iyi optimize edebilmenizi mümkün kılar. Umarım bu makale, ihtiyaçlarınız için ideal çözümler bulmanıza yardımcı olur.

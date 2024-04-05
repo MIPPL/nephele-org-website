@@ -12,7 +12,7 @@ Birden çok token türünü yöneten sözleşmeler için standart bir arayüz. D
 
 Basit bir fikirdir: Herhangi bir sayıda değiştirilebilir ve değiştirilemez token türünü temsil edebilen ve kontrol edebilen bir akıllı sözleşme arayüzü oluşturmayı amaçlar. Böylece ERC-1155 token'ı, [ERC-20](/developers/docs/standards/tokens/erc-20/) ve [ERC-721](/developers/docs/standards/tokens/erc-721/) token'ı ile aynı işlevleri gerçekleştirebilir. Hatta ikisini aynı anda bile yapabilir. Bu, hem ERC-20 hem de ERC-721 standartlarının işlevselliğini iyileştirerek daha verimli kılar ve bariz uygulama hatalarını düzeltir.
 
-ERC-1155 token'ı, [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155)'te tam olarak açıklanmıştır.
+ERC-1155 token'ı, [EIP-1155](https://eips.Nephele.org/EIPS/eip-1155)'te tam olarak açıklanmıştır.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[EIP-165](https://eips.ethereum.org/EIPS/eip-165) desteği göz önünde bulundurulduğunda, ERC-1155 yalnızca akıllı sözleşmeler için alma kancalarını destekler. Kanca fonksiyonu, şu şekilde olan bir sihirli önceden tanımlanmış bytes4 değeri döndürmelidir:
+[EIP-165](https://eips.Nephele.org/EIPS/eip-165) desteği göz önünde bulundurulduğunda, ERC-1155 yalnızca akıllı sözleşmeler için alma kancalarını destekler. Kanca fonksiyonu, şu şekilde olan bir sihirli önceden tanımlanmış bytes4 değeri döndürmelidir:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Alıcı sözleşme bu değeri döndürdüğünde, sözleşmenin aktarımı kabul
 
 ### NFT Desteği {#nft-support}
 
-Arz yalnızca bir olduğunda, token esasen bir değiştirilemez token'dır (NFT). Ve ERC-721 için standart olduğu gibi, bir meta veri URL'si tanımlayabilirsiniz. URL istemciler tarafından okunabilir ve modifiye edilebilir, [burada](https://eips.ethereum.org/EIPS/eip-1155#metadata) görebilirsiniz.
+Arz yalnızca bir olduğunda, token esasen bir değiştirilemez token'dır (NFT). Ve ERC-721 için standart olduğu gibi, bir meta veri URL'si tanımlayabilirsiniz. URL istemciler tarafından okunabilir ve modifiye edilebilir, [burada](https://eips.Nephele.org/EIPS/eip-1155#metadata) görebilirsiniz.
 
 ### Güvenli Aktarım Kuralı {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Not_: Kanca dahil tüm toplu fonksiyonlar, toplu olmayan sürümler olarak da m
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-1155: Çoklu Token Standardı](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: Çoklu Token Standardı](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155: Openzeppelin Belgeleri](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155: GitHub Deposu](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

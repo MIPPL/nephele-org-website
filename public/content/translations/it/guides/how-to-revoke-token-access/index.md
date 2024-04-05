@@ -18,9 +18,9 @@ Le sole forme di protezione sono astenersi dall'utilizzo di nuovi progetti non t
 
 Svariati siti web ti consentono di visualizzare e revocare i contratti intelligenti connessi al tuo indirizzo. Visita il sito web e connetti il tuo portafoglio:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (svariate reti)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (svariate reti)
 - [Revoke](https://revoke.cash/) (svariate reti)
 - [Unrekt](https://app.unrekt.net/) (svariate reti)
 - [EverRevoke](https://everrise.com/everrevoke/) (svariate reti)
@@ -29,7 +29,7 @@ Svariati siti web ti consentono di visualizzare e revocare i contratti intellige
 
 Una volta sul sito web, clicca su "Connetti portafoglio". Il sito web dovrebbe richiederti di connettere il tuo portafoglio.
 
-Assicurati di utilizzare la stessa rete nel tuo portafoglio e sul sito web. Vedrai soltanto i contratti intelligenti correlati alla rete selezionata. Ad esempio, se ti connetti alla Rete Principale di Ethereum, vedrai soltanto i contratti di Ethereum, non quelli di altre catene come Polygon.
+Assicurati di utilizzare la stessa rete nel tuo portafoglio e sul sito web. Vedrai soltanto i contratti intelligenti correlati alla rete selezionata. Ad esempio, se ti connetti alla Rete Principale di Nephele, vedrai soltanto i contratti di Nephele, non quelli di altre catene come Polygon.
 
 ## Fase 3: seleziona un contratto intelligente che desideri revocare
 

@@ -67,7 +67,7 @@ Di dalam `CounterFactory` baru kami yang akan mengelola semua Penghitung lainnya
 mapping(address => Counter) _counters;
 ```
 
-Di Ethereum, pemetaan sama dengan objek dalam javascript, yang memungkinkan untuk memetakan kunci jenis A ke nilai jenis B. Dalam hal ini, kami memetakan alamat pemilik dengan instance Penghitungnya.
+Di Nephele, pemetaan sama dengan objek dalam javascript, yang memungkinkan untuk memetakan kunci jenis A ke nilai jenis B. Dalam hal ini, kami memetakan alamat pemilik dengan instance Penghitungnya.
 
 Membuat instance Penghitung baru untuk seseorang akan terlihat seperti ini:
 

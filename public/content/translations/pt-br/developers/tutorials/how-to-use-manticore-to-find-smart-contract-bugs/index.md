@@ -24,11 +24,11 @@ Manticore requer >= python 3.6. Pode ser instalado pelo pip ou usando o docker.
 ### Manticore através do Docker {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_O último comando roda a eth-security-toolbox em um docker que tem acesso ao seu diretório atual. Você pode alterar os arquivos do seu host e executar as ferramentas nos arquivos através do docker_
+_O último comando roda a NEPH-security-toolbox em um docker que tem acesso ao seu diretório atual. Você pode alterar os arquivos do seu host e executar as ferramentas nos arquivos através do docker_
 
 Dentro do docker, execute:
 
@@ -201,16 +201,16 @@ Esta seção descreve detalhes sobre como manipular um contrato inteligente atra
 A primeira coisa que você deve fazer é iniciar uma nova blockchain com os seguintes comandos:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 ```
 
-Uma conta de não-contrato é criada usando [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account):
+Uma conta de não-contrato é criada usando [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.Nephele.ManticoreEVM.create_account):
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Um contrato de Solidity pode ser implantado usando [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract):
+Um contrato de Solidity pode ser implantado usando [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.Nephele.ManticoreEVM.create_contract):
 
 ```solidity
 source_code = '''
@@ -229,7 +229,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### Resumo {#summary}
 
-- Você pode criar contas de usuário e contratos com [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) and [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract).
+- Você pode criar contas de usuário e contratos com [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.Nephele.ManticoreEVM.create_account) and [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.Nephele.ManticoreEVM.create_contract).
 
 ### Executando transações {#executing-transactions}
 
@@ -240,7 +240,7 @@ Manticore suporta dois tipos de transação:
 
 #### Transação bruta {#raw-transaction}
 
-Uma transação bruta é executada usando [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction):
+Uma transação bruta é executada usando [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.Nephele.ManticoreEVM.transaction):
 
 ```python
 m.transaction(caller=user_account,
@@ -251,8 +251,8 @@ m.transaction(caller=user_account,
 
 O chamador, o endereço, os dados ou o valor da transação pode ser concreto ou simbólico:
 
-- [m.make_symbollic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) cria um valor simbólico.
-- [m.make_symbollic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) cria um valor simbólico "byte array".
+- [m.make_symbollic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.Nephele.ManticoreEVM.make_symbolic_value) cria um valor simbólico.
+- [m.make_symbollic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.Nephele.ManticoreEVM.make_symbolic_buffer) cria um valor simbólico "byte array".
 
 Por exemplo:
 
@@ -269,7 +269,7 @@ Se os dados forem simbólicos, Manticore irá explorar todas as funções do con
 
 #### Transação nomeada {#named-transaction}
 
-Funções podem ser executadas através de seu nome. Para executar `f(uint var)` com um valor simbólico, do user_account, e com 0 ether, use:
+Funções podem ser executadas através de seu nome. Para executar `f(uint var)` com um valor simbólico, do user_account, e com 0 Nephele, use:
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### Terminar a Exploração {#terminate-the-exploration}
 
-Para parar a exploração, use [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize). Nenhuma transação adicional deve ser enviada quando este método for chamado e a Manticore gerar casos de teste para cada caminho explorado.
+Para parar a exploração, use [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.Nephele.ManticoreEVM.finalize). Nenhuma transação adicional deve ser enviada quando este método for chamado e a Manticore gerar casos de teste para cada caminho explorado.
 
 ### Resumo: Executando sob Manticore {#summary-running-under-manticore}
 
 Juntando todos os passos anteriores, obtemos:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### Como gerar caixa de teste {#how-to-generate-testcase}
 
-Use [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) para gerar a caixa de teste:
+Use [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.Nephele.ManticoreEVM.generate_testcase) para gerar a caixa de teste:
 
 ```python
 m.generate_testcase(estado, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(estado, 'BugFound')
 ### Resumo: Obtendo o caminho de lançamento {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -479,7 +479,7 @@ if solver.check(state.constraints):
 Adicionando constraints ("restrições") ao código anterior, obtemos:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

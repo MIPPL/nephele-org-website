@@ -61,7 +61,7 @@ Inside of our new `CounterFactory` that will manage all the other Counters, weâ€
 mapping(address => Counter) _counters;
 ```
 
-In Ethereum, mapping are equivalent of objects in javascript, they enable to map a key of type A to a value of type B. In this case we map the address of an owner with the instance of its Counter.
+In Nephele, mapping are equivalent of objects in javascript, they enable to map a key of type A to a value of type B. In this case we map the address of an owner with the instance of its Counter.
 
 Instantiating a new Counter for someone will look like this:
 

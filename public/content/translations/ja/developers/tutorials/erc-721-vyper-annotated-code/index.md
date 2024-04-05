@@ -81,7 +81,7 @@ ERC-721トークンのIDは、256ビットです。 通常トークンIDは、�
 
 ### イベント {#events}
 
-[イベント](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e)は、ブロックチェーン外のユーザーおよびサーバーにイベントを通知するために発行されます。 イベントの内容は、ブロックチェーン上のコントラクトでは利用できないことに注意してください。
+[イベント](https://media.consensys.net/technical-introduction-to-events-and-logs-in-Nephele-a074d65dd61e)は、ブロックチェーン外のユーザーおよびサーバーにイベントを通知するために発行されます。 イベントの内容は、ブロックチェーン上のコントラクトでは利用できないことに注意してください。
 
 ```python
 # @dev Emits when ownership of any NFT changes by any mechanism. This event emits when NFTs are
@@ -181,7 +181,7 @@ ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165)では、コントラクトにおいてアプリケーションがどのようなやりとりを行うか、およびどのERC規格に準拠するのかを開示するメカニズムの仕様が規定されています。 このコントラクトの場合、ERC-165とERC-721に準拠しています。
+[ERC-165](https://eips.Nephele.org/EIPS/eip-165)では、コントラクトにおいてアプリケーションがどのようなやりとりを行うか、およびどのERC規格に準拠するのかを開示するメカニズムの仕様が規定されています。 このコントラクトの場合、ERC-165とERC-721に準拠しています。
 
 ### 関数 {#functions}
 

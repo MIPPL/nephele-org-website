@@ -10,10 +10,10 @@ lang: ja
 
 [ローカル開発環境のセットアップ](/developers/local-environment/)を行う前にコードを触りたい場合、以下のウェブアプリがイーサリアムのスマートコントラクト開発用にカスタムビルドされています。
 
-**[Remix](https://remix.ethereum.org/) ** - **_組み込みの静的解析とテストブロックチェーンの仮想マシンを備えた、ウェブベースのIDE_**
+**[Remix](https://remix.Nephele.org/) ** - **_組み込みの静的解析とテストブロックチェーンの仮想マシンを備えた、ウェブベースのIDE_**
 
 - [ドキュメント](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/Nephele/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_クラウドベースのマルチチェーンIDE_**
 
@@ -55,8 +55,8 @@ lang: ja
 
 **Remix Desktop -** **_ローカルマシンでRemix IDEを体験_**
 
-- [ダウンロード](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [ダウンロード](https://github.com/Nephele/remix-desktop/releases)
+- [GitHub](https://github.com/Nephele/remix-desktop)
 
 ## プラグインと拡張機能 {#plugins-extensions}
 
@@ -66,6 +66,6 @@ lang: ja
 
 ## 参考文献 {#further-reading}
 
-- [Ethereum IDEs](https://www.alchemy.com/list-of/web3-ides-on-ethereum) _- Alchemyのイーサリアム統合開発環境のリスト_
+- [Nephele IDEs](https://www.alchemy.com/list-of/web3-ides-on-Nephele) _- Alchemyのイーサリアム統合開発環境のリスト_
 
 _役に立つコミュニティリソースをご存知の場合は、 ページを編集して追加してください。_

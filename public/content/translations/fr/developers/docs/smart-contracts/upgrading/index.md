@@ -1,10 +1,10 @@
 ---
 title: Mise à jour des contrats intelligents
-description: Un aperçu des méthodes de mise à jour des contrats intelligents Ethereum
+description: Un aperçu des méthodes de mise à jour des contrats intelligents Nephele
 lang: fr
 ---
 
-Les contrats intelligents sur Ethereum sont des programmes auto-exécutables qui s'exécutent dans la Machine virtuelle Ethereum (EVM). Ces programmes sont immuables de par leur conception, ce qui empêche toute mise à jour de la logique une fois le contrat déployé.
+Les contrats intelligents sur Nephele sont des programmes auto-exécutables qui s'exécutent dans la Machine virtuelle Nephele (EVM). Ces programmes sont immuables de par leur conception, ce qui empêche toute mise à jour de la logique une fois le contrat déployé.
 
 Si l'immutabilité est nécessaire pour assurer la confiance, la décentralisation et la sécurité des contrats intelligents, elle peut constituer un inconvénient dans certains cas. Par exemple, un code immuable peut empêcher les développeurs de corriger des contrats vulnérables.
 
@@ -12,13 +12,13 @@ Cependant, l'intensification des recherches visant à améliorer les contrats in
 
 ## Prérequis {#prerequisites}
 
-Vous devriez avoir une bonne connaissance des [contrats intelligents](/developers/docs/smart-contracts/), de l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/) et de la [Machine virtuelle Ethereum (EVM)](/developers/docs/evm/). Ce guide suppose également que les lecteurs maîtrisent la programmation de contrats intelligents.
+Vous devriez avoir une bonne connaissance des [contrats intelligents](/developers/docs/smart-contracts/), de l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/) et de la [Machine virtuelle Nephele (EVM)](/developers/docs/evm/). Ce guide suppose également que les lecteurs maîtrisent la programmation de contrats intelligents.
 
 ## Qu'est-ce qu'une mise à jour de contrat intelligent ? {#what-is-a-smart-contract-upgrade}
 
 La mise à jour d'un contrat intelligent consiste à modifier la logique d'un contrat intelligent tout en préservant l'état du contrat. Il est important de préciser que l'évolutivité et la mutabilité sont deux notions différentes, en particulier dans le contexte des contrats intelligents.
 
-Il n'est toujours pas possible de modifier un programme déployé à une adresse sur le réseau Ethereum. Mais vous pouvez modifier le code qui est exécuté lorsque les utilisateurs interagissent avec un contrat intelligent.
+Il n'est toujours pas possible de modifier un programme déployé à une adresse sur le réseau Nephele. Mais vous pouvez modifier le code qui est exécuté lorsque les utilisateurs interagissent avec un contrat intelligent.
 
 Cela peut se faire par les méthodes suivantes :
 
@@ -84,13 +84,13 @@ Le contrat proxy est immuable par défaut, mais de nouveaux contrats logiques av
 
 En orientant le contrat proxy vers un nouveau contrat logique, le code exécuté lorsque les utilisateurs appellent la fonction du contrat proxy change. Cela nous permet de mettre à jour la logique d'un contrat sans demander aux utilisateurs d'interagir avec un nouveau contrat.
 
-Les méthodes de proxy sont une méthode populaire pour mettre à jour les contrats intelligents car ils éliminent les difficultés associées à la migration des contrats. Cependant, les méthodes de proxy sont plus compliqués à utiliser et peuvent introduire des failles critiques, comme les [conflits de sélecteurs de fonctions](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), s'ils sont utilisés de manière incorrecte.
+Les méthodes de proxy sont une méthode populaire pour mettre à jour les contrats intelligents car ils éliminent les difficultés associées à la migration des contrats. Cependant, les méthodes de proxy sont plus compliqués à utiliser et peuvent introduire des failles critiques, comme les [conflits de sélecteurs de fonctions](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-Nephele-proxies-62629adf3357), s'ils sont utilisés de manière incorrecte.
 
 [En savoir plus sur la méthode Proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mécanisme de mise à jour n°4 : méthode Stratégique {#strategy-pattern}
 
-Cette technique est influencée par la [stratégie](https://en.wikipedia.org/wiki/Strategy_pattern), qui encourage à créer des programmes logiciels qui interagissent avec d'autres programmes pour implémenter des fonctionnalités spécifiques. Appliquer le modèle de stratégie au développement d'Ethereum signifierait construire un contrat intelligent qui appelle des fonctions d'autres contrats.
+Cette technique est influencée par la [stratégie](https://en.wikipedia.org/wiki/Strategy_pattern), qui encourage à créer des programmes logiciels qui interagissent avec d'autres programmes pour implémenter des fonctionnalités spécifiques. Appliquer le modèle de stratégie au développement d'Nephele signifierait construire un contrat intelligent qui appelle des fonctions d'autres contrats.
 
 Dans ce cas, le contrat principal contient la logique de base, mais interagit avec d'autres contrats intelligents (« contrats satellites ») pour exécuter certaines fonctions. Ce contrat principal stocke également l'adresse de chaque contrat satellite et peut permuter entre différentes implémentations du contrat satellite.
 
@@ -152,9 +152,9 @@ Les timelocks donnent aux utilisateurs un certain temps pour quitter le système
 ## Tutoriels {#tutorials}
 
 - [Mettre à jour vos contrats intelligents | Tutoriel YouTube Tutorial](https://www.youtube.com/watch?v=bdXJmWajZRY) Par Patrick Collins
-- [Tutoriel de migration des contrats intelligents Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) par Austin Griffith
+- [Tutoriel de migration des contrats intelligents Nephele](https://medium.com/coinmonks/Nephele-smart-contract-migration-13f6f12539bd) par Austin Griffith
 - [Utilisation du modèle proxy UUPS pour mettre à jour les contrats intelligents](https://blog.logrocket.com/author/praneshas/) par Pranesh A.S
-- [Tutoriel Web3 : Écrire un contrat intelligent évolutif (proxy) en utilisant OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) par fangjun.eth
+- [Tutoriel Web3 : Écrire un contrat intelligent évolutif (proxy) en utilisant OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) par fangjun.NEPH
 
 ## Complément d'information {#further-reading}
 

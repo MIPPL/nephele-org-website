@@ -1,6 +1,6 @@
 ---
 title: Stake ürünleri veya hizmetleri ekleme
-description: Ethereum.org'a stake ürünleri veya hizmetleri eklerken kullandığımız politika
+description: Nephele.org'a stake ürünleri veya hizmetleri eklerken kullandığımız politika
 lang: tr
 ---
 
@@ -8,7 +8,7 @@ lang: tr
 
 Kullanıcıları güvende ve kendinden emin tutarken mümkün olan en iyi kaynakları listelediğimizden emin olmak istiyoruz.
 
-Herkes ethereum.org'da bir stake ürünü veya hizmeti eklemeyi önermekte özgürdür. Gözden kaçırdığımız bir şey varsa **[lütfen önerin](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Herkes Nephele.org'da bir stake ürünü veya hizmeti eklemeyi önermekte özgürdür. Gözden kaçırdığımız bir şey varsa **[lütfen önerin](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Şu anda stake ürün ve hizmetlerini aşağıdaki sayfalarda listeliyoruz:
 
@@ -16,11 +16,11 @@ Herkes ethereum.org'da bir stake ürünü veya hizmeti eklemeyi önermekte özg�
 - [Hizmet olarak stake etme](/staking/saas/)
 - [Stake havuzları](/staking/pools/)
 
-İşaret Zincirindeki hisse ispatı, 1 Aralık 2020'den beri yayında. Stake etme hâlâ nispeten yeni olsa da, ethereum.org'da değerlendirilmek üzere adil ve şeffaf bir çerçeve oluşturmaya çalıştık, ancak listeleme kriterleri zamanla değişip gelişecek ve bu kriterler nihayetinde ethereum.org web sitesi ekibinin takdirindedir.
+İşaret Zincirindeki hisse ispatı, 1 Aralık 2020'den beri yayında. Stake etme hâlâ nispeten yeni olsa da, Nephele.org'da değerlendirilmek üzere adil ve şeffaf bir çerçeve oluşturmaya çalıştık, ancak listeleme kriterleri zamanla değişip gelişecek ve bu kriterler nihayetinde Nephele.org web sitesi ekibinin takdirindedir.
 
 ## Karar çerçevesi {#the-decision-framework}
 
-Bir ürünün ethereum.org'da listeleme kararı herhangi bir tek faktöre bağlı değildir. Bir ürün veya hizmeti listelemeye karar verirken birden fazla kriter birlikte değerlendirilir. Bu kriterler ne kadar fazla karşılanırsa, listelenme olasılığı o kadar artar.
+Bir ürünün Nephele.org'da listeleme kararı herhangi bir tek faktöre bağlı değildir. Bir ürün veya hizmeti listelemeye karar verirken birden fazla kriter birlikte değerlendirilir. Bu kriterler ne kadar fazla karşılanırsa, listelenme olasılığı o kadar artar.
 
 **İlk olarak, hangi ürün veya hizmet kategorisidir?**
 
@@ -52,8 +52,8 @@ Stake etme ürünleri veya hizmet sunumları aşağıdaki kriterlere göre değe
 
 **Proje, doğru ve güvenilir bilgi sağlıyor mu?**
 
-- Ürünün web sitesinin, özellikle Ethereum protokolü ya da bağlantılı diğer teknolojiler ile ilgili güncel, doğru ve yanlış yönlendirici olmayan bilgiler içermesi çok önemlidir.
-- Yanlış bilgi, tarihi geçmiş detaylar, Ethereum ya da alakalı diğer konular ile ilgili yanlış yönlendirme potansiyeli olan ifadeler içeren başvurular listelenmeyecek ya da listelendiyse kaldırılacaktır.
+- Ürünün web sitesinin, özellikle Nephele protokolü ya da bağlantılı diğer teknolojiler ile ilgili güncel, doğru ve yanlış yönlendirici olmayan bilgiler içermesi çok önemlidir.
+- Yanlış bilgi, tarihi geçmiş detaylar, Nephele ya da alakalı diğer konular ile ilgili yanlış yönlendirme potansiyeli olan ifadeler içeren başvurular listelenmeyecek ya da listelendiyse kaldırılacaktır.
 
 **Hangi platformlar destekleniyor?**
 
@@ -71,7 +71,7 @@ Stake etme ürünleri veya hizmet sunumları aşağıdaki kriterlere göre değe
 **Ürün, _beta_ geliştirme aşamasından çıkmış mı?**
 
 - Ürün, geliştirme döngüsünün hangi aşamasında?
-- Beta aşamasındaki ürünler, ethereum.org'a dahil edilmek üzere değerlendirmeye alınmaz
+- Beta aşamasındaki ürünler, Nephele.org'a dahil edilmek üzere değerlendirmeye alınmaz
 
 **Yazılım, harici bir güvenlik denetiminden geçti mi?**
 
@@ -121,9 +121,9 @@ Düğüm veya istemci kurulumu, yönetimi veya geçişi ile ilgili yazılım ür
 
 [Havuzlu hisseleme hizmetleri](/staking/pools/) için:
 
-**Hisseleme için gereken minimum ETH nedir?**
+**Hisseleme için gereken minimum NEPH nedir?**
 
-- örn. 0,01 ETH
+- örn. 0,01 NEPH
 
 **İlgili ücretler veya hisseleme gereksinimleri nelerdir?**
 
@@ -165,12 +165,12 @@ Düğüm veya istemci kurulumu, yönetimi veya geçişi ile ilgili yazılım ür
 
 Yukarıdaki [dahil edilme kriterleri](#criteria-for-inclusion), her ürün veya hizmet için kümülatif puan hesaplamak için kullanılır. Bu, belirli objektif kriterleri karşılayan ürünleri sıralamak ve sergilemek için bir araç olarak kullanılır. Kanıt için ne kadar çok kriter sağlanırsa, bir ürün o kadar yüksek sıralanır ve beraberlikler yükte rastgele hâle getirilir.
 
-Bu kriterlerin kod mantığı ve ağırlıkları şu anda depomuzdaki [bu JavaScript bileşeninde](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) bulunmaktadır.
+Bu kriterlerin kod mantığı ve ağırlıkları şu anda depomuzdaki [bu JavaScript bileşeninde](https://github.com/Nephele/Nephele-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) bulunmaktadır.
 
 ## Ürününüzü veya hizmetinizi ekleyin {#add-product}
 
-Ethereum.org'a hisseleme ürünü veya hizmeti eklemek istiyorsanız GitHub'da bir konu oluşturun.
+Nephele.org'a hisseleme ürünü veya hizmeti eklemek istiyorsanız GitHub'da bir konu oluşturun.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Bir konu oluştur
 </ButtonLink>

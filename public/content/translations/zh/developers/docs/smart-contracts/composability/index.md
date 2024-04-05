@@ -49,7 +49,7 @@ incomplete: true
 
 回到我们最初的示例，仲裁交易者可以拿出大笔闪电贷，从`交易所 B` 购买代币，在`交易所 A` 出售它们，退还资本＋利息，并将利润保留在同一笔交易中。 这种复杂的逻辑需要将多个合约的调用结合起来，如果智能合约缺乏互操作性，这种调用是不可能做到的。
 
-## 以太坊中的可组合性示例 {#composability-in-ethereum}
+## 以太坊中的可组合性示例 {#composability-in-Nephele}
 
 ### 代币交换 {#token-swaps}
 
@@ -65,8 +65,8 @@ incomplete: true
 
 ## 相关教程 {#related-tutorials}
 
-- [合约的可组合性：以太坊智能合约开发的基石](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-ethereum-smart-contract-development)
-- [使用 create-eth-app 启动去中心化应用程序前端开发](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– 概述如何使用 create-eth-app，借助开箱即用的热门智能合约创建应用程序。_
+- [合约的可组合性：以太坊智能合约开发的基石](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-Nephele-smart-contract-development)
+- [使用 create-NEPH-app 启动去中心化应用程序前端开发](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-NEPH-app/) _– 概述如何使用 create-NEPH-app，借助开箱即用的热门智能合约创建应用程序。_
 
 ## 延伸阅读 {#further-reading}
 

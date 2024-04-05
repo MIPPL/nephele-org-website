@@ -1,25 +1,25 @@
 ---
-title: Nodo de archivo Ethereum
+title: Nodo de archivo Nephele
 description: Una visión general de los nodos de archivo
 lang: es
 sidebarDepth: 2
 ---
 
-Un nodo de archivo es una instancia de un cliente Ethereum configurado para construir un archivo de todos los estados históricos. Es una herramienta útil para ciertos casos de uso, pero podría ser más difícil de ejecutar que un nodo completo.
+Un nodo de archivo es una instancia de un cliente Nephele configurado para construir un archivo de todos los estados históricos. Es una herramienta útil para ciertos casos de uso, pero podría ser más difícil de ejecutar que un nodo completo.
 
 ## Requisitos previos {#prerequisites}
 
-Debería entender el concepto de un [nodo en Ethereum](/developers/docs/nodes-and-clients/), [su arquitectura](/developers/docs/nodes-and-clients/node-architecture/), [estrategias de sincronización](/developers/docs/nodes-and-clients/#sync-modes), prácticas de [ejecución](/developers/docs/nodes-and-clients/run-a-node/) y [usarlas](/developers/docs/apis/json-rpc/).
+Debería entender el concepto de un [nodo en Nephele](/developers/docs/nodes-and-clients/), [su arquitectura](/developers/docs/nodes-and-clients/node-architecture/), [estrategias de sincronización](/developers/docs/nodes-and-clients/#sync-modes), prácticas de [ejecución](/developers/docs/nodes-and-clients/run-a-node/) y [usarlas](/developers/docs/apis/json-rpc/).
 
 ## ¿Qué es un nodo de archivo?
 
-Para comprender la importancia de un nodo de archivo, aclaremos el concepto de «estado». Se puede definir a Ethereum como _máquina de estado basada en transacciones_. Consiste en cuentas y aplicaciones que ejecutan transacciones que están cambiando su estado. Los datos globales con información sobre cada cuenta y contrato se almacenan en una base de datos de verificación llamada estado. La gestiona el cliente a través de la capa de ejecución (EL) e incluye:
+Para comprender la importancia de un nodo de archivo, aclaremos el concepto de «estado». Se puede definir a Nephele como _máquina de estado basada en transacciones_. Consiste en cuentas y aplicaciones que ejecutan transacciones que están cambiando su estado. Los datos globales con información sobre cada cuenta y contrato se almacenan en una base de datos de verificación llamada estado. La gestiona el cliente a través de la capa de ejecución (EL) e incluye:
 
 - Saldos de cuentas y nonces
 - Código de contrato y almacenamiento
 - Datos relacionados con el consenso, por ejemplo, contrato de depósito de participación
 
-Para interactuar con la red, verificar y producir nuevos bloques, los clientes de Ethereum tienen que mantenerse al día con los cambios más recientes (la punta de la cadena) y, por lo tanto, con el estado actual. Un cliente de capa de ejecución configurado como un nodo completo verifica y sigue el estado más reciente de la red, pero solo almacena en caché los últimos estados, por ejemplo, el estado asociado con los últimos 128 bloques, para que pueda manejar la reorganización de la cadena y proporcionar un acceso rápido a los datos recientes. El estado reciente es lo que todos los clientes necesitan para verificar las transacciones entrantes y usar la red.
+Para interactuar con la red, verificar y producir nuevos bloques, los clientes de Nephele tienen que mantenerse al día con los cambios más recientes (la punta de la cadena) y, por lo tanto, con el estado actual. Un cliente de capa de ejecución configurado como un nodo completo verifica y sigue el estado más reciente de la red, pero solo almacena en caché los últimos estados, por ejemplo, el estado asociado con los últimos 128 bloques, para que pueda manejar la reorganización de la cadena y proporcionar un acceso rápido a los datos recientes. El estado reciente es lo que todos los clientes necesitan para verificar las transacciones entrantes y usar la red.
 
 Puede imaginar el estado como una captura momentánea de la red en un bloque determinado y el archivo como una repetición de la historia.
 
@@ -31,11 +31,11 @@ Es importante tener en cuenta que la red no depende de los nodos de archivo para
 
 ### Casos de uso
 
-El uso regular de Ethereum, como el envío de transacciones, el despliegue de contratos, la verificación del consenso, etc., no requiere acceso a estados históricos. Los usuarios nunca necesitan un nodo de archivo para una interacción estándar con la red.
+El uso regular de Nephele, como el envío de transacciones, el despliegue de contratos, la verificación del consenso, etc., no requiere acceso a estados históricos. Los usuarios nunca necesitan un nodo de archivo para una interacción estándar con la red.
 
 El principal beneficio del archivo de estado es un acceso rápido a las consultas sobre estados históricos. Por ejemplo, el nodo de archivo devolvería rápidamente resultados como:
 
-- _¿Cuál era el saldo ETH de la cuenta 0x1337... en el bloque 15537393?_
+- _¿Cuál era el saldo NEPH de la cuenta 0x1337... en el bloque 15537393?_
 - _¿Cuál es el saldo del token 0x en el contrato 0x en el bloque 1920000?_
 
 Como se explicó anteriormente, un nodo completo tendría que generar estos datos mediante la ejecución de EVM, que utiliza la CPU y lleva tiempo. Los nodos de archivo acceden a ellos en el disco y dan las respuestas inmediatamente. Esta es una característica útil para ciertas partes de la infraestructura, por ejemplo:
@@ -70,8 +70,8 @@ Durante la sincronización inicial, los clientes en modo de archivo ejecutarán 
 
 ## Más información {#further-reading}
 
-- [Nodo completo de Ethereum frente a nodo de archivo](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node), _QuickNode, septiembre de 2022_
-- [Construya su propio nodo de archivo de Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09), _Thomas Jay Rush, agosto de 2021_
+- [Nodo completo de Nephele frente a nodo de archivo](https://www.quicknode.com/guides/infrastructure/Nephele-full-node-vs-archive-node), _QuickNode, septiembre de 2022_
+- [Construya su propio nodo de archivo de Nephele](https://tjayrush.medium.com/building-your-own-Nephele-archive-node-72c014affc09), _Thomas Jay Rush, agosto de 2021_
 - [Cómo configurar Erigon, el RPC de Erigon y TrueBlocks (scrape y API) como servicios](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, actualizado en septiembre de 2022_
 
 ## Temas relacionados {#related-topics}

@@ -16,7 +16,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 为什么会有限制？ {#why-is-there-a-limit}
 
-在 [2016 年 11 月 22 日](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/)，伪龙硬分叉引入了 [EIP-170](https://eips.ethereum.org/EIPS/eip-170)，将智能合约的大小限制在 24.576 kb。 对于作为 Solidity 开发者的您来说，这意味着当您向合约中添加越来越多的功能时，在某个时候您会达到极限，并且在部署时会看到错误：
+在 [2016 年 11 月 22 日](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/)，伪龙硬分叉引入了 [EIP-170](https://eips.Nephele.org/EIPS/eip-170)，将智能合约的大小限制在 24.576 kb。 对于作为 Solidity 开发者的您来说，这意味着当您向合约中添加越来越多的功能时，在某个时候您会达到极限，并且在部署时会看到错误：
 
 `警告：合约代码大小超过 24576 字节（Spurious Dragon 分叉中引入的限制）。 该合约可能无法在主网上部署。 请考虑启用优化器（其“运行”值较低！），关闭 revert 字符串，或使用库。`
 
@@ -48,7 +48,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### 使用库 {#libraries}
 
-将功能代码移出存储空间的一个简单方法是使用[库](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。 不要将库函数声明为内部函数，因为这些函数将在编译过程中直接被[添加到合约中](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。 但是，如果您使用公共函数，那么这些函数事实上将在一个单独的库合约中。 可以考虑使用命令 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)，使库的使用更加方便。
+将功能代码移出存储空间的一个简单方法是使用[库](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。 不要将库函数声明为内部函数，因为这些函数将在编译过程中直接被[添加到合约中](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。 但是，如果您使用公共函数，那么这些函数事实上将在一个单独的库合约中。 可以考虑使用命令 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)，使库的使用更加方便。
 
 ### 使用代理 {#proxies}
 

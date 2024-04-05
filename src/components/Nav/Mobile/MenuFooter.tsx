@@ -58,7 +58,7 @@ const MenuFooter = ({
         <LanguagePicker
           hideFrom="md"
           position="fixed"
-          w="calc(100vw - var(--eth-sizes-8))"
+          w="calc(100vw - var(--NEPH-sizes-8))"
           inset="4"
           handleClose={onToggle}
           _before={{

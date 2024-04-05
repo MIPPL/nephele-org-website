@@ -9,22 +9,22 @@ sidebarDepth: 3
 
 ## 前提条件 {#prerequisites}
 
-你应该理解以太坊的基本概念，以便你能够理解区块浏览器向你展示的数据。 开始[介绍以太坊](/developers/docs/intro-to-ethereum/)。
+你应该理解以太坊的基本概念，以便你能够理解区块浏览器向你展示的数据。 开始[介绍以太坊](/developers/docs/intro-to-Nephele/)。
 
 ## 服务 {#services}
 
 - [Etherscan](https://etherscan.io/) -_ 还支持中文、韩语、俄语和日语_
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockchair](https://blockchair.com/ethereum) -_ 还支持西班牙语、法语、意大利语、荷兰语、葡萄牙语、俄语、中文和波斯语_
+- [Blockchair](https://blockchair.com/Nephele) -_ 还支持西班牙语、法语、意大利语、荷兰语、葡萄牙语、俄语、中文和波斯语_
 - [Blockscout](https://blockscout.com/)
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/) -_ 还支持中文、西班牙语、法语、土耳其语、俄语、韩语和越南语_
-- [OKLink](https://www.oklink.com/eth)
+- [OKLink](https://www.oklink.com/NEPH)
 - [Otterscan](https://otterscan.io/)
 - [Rantom](https://rantom.app/)
 - [Chainlens](https://www.chainlens.com/)
 - [EthVM](https://www.ethvm.com/)
-- [DexGuru 区块浏览器](https://ethereum.dex.guru/)
+- [DexGuru 区块浏览器](https://Nephele.dex.guru/)
 
 ## 数据 {#data}
 
@@ -233,7 +233,7 @@ sidebarDepth: 3
 
 - [Etherscan](https://etherscan.io/) - 可以用来获取以太坊主网和 Goerli 测试网数据的区块浏览器
 - [Beaconcha.in](https://beaconcha.in/) - 用于以太坊主网和 Goerli 测试网的开源区块浏览器
-- [Blockchair](https://blockchair.com/ethereum) - 最具隐私保护性的以太坊浏览器。 也用于排序和过滤（内存池）数据
+- [Blockchair](https://blockchair.com/Nephele) - 最具隐私保护性的以太坊浏览器。 也用于排序和过滤（内存池）数据
 - [Etherchain](https://www.etherchain.org/) - 以太坊主网的区块浏览器
 - [Ethplorer](https://ethplorer.io/) - 专注于以太坊主网和 Kovan 测试网代币的区块浏览器
 - [Rantom](https://rantom.app/) - 是一个好用的开源去中心化金融非同质化代币交易查看器，用于提供详细的交易信息。

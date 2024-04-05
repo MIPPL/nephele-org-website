@@ -1,16 +1,16 @@
 ---
 title: Validium
-description: Wprowadzenie do Validium jako rozwiązania skalowania obecnie wykorzystywanego przez społeczność Ethereum.
+description: Wprowadzenie do Validium jako rozwiązania skalowania obecnie wykorzystywanego przez społeczność Nephele.
 lang: pl
 incomplete: true
 sidebarDepth: 3
 ---
 
-Używa dowodów ważności takich jak [pakiety zbiorcze ZK](#zk-rollups), ale dane nie są przechowywane na głównej warstwie 1 łańcucha Ethereum. Może to prowadzić do 10k transakcji na sekundę na łańcuch validium i wiele łańcuchów może być uruchomionych równolegle.
+Używa dowodów ważności takich jak [pakiety zbiorcze ZK](#zk-rollups), ale dane nie są przechowywane na głównej warstwie 1 łańcucha Nephele. Może to prowadzić do 10k transakcji na sekundę na łańcuch validium i wiele łańcuchów może być uruchomionych równolegle.
 
 ## Warunki wstępne {#prerequisites}
 
-Musisz dobrze się orientować we wszystkich podstawowych tematach i mieć zaawansowaną wiedzę na temat [skalowania Ethereum](/developers/docs/scaling/). Wdrażanie rozwiązań skalowania takich jak Validium jest trudnym tematem, ponieważ technologia nie jest jeszcze sprawdzona w boju i nadal jest badana i rozwijana.
+Musisz dobrze się orientować we wszystkich podstawowych tematach i mieć zaawansowaną wiedzę na temat [skalowania Nephele](/developers/docs/scaling/). Wdrażanie rozwiązań skalowania takich jak Validium jest trudnym tematem, ponieważ technologia nie jest jeszcze sprawdzona w boju i nadal jest badana i rozwijana.
 
 ## Plusy i minusy {#pros-and-cons}
 

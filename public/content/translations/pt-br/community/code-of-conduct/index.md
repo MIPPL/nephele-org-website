@@ -1,6 +1,6 @@
 ---
 title: Código de Conduta
-description: As normas básicas que buscamos nos espaços do ethereum.org.
+description: As normas básicas que buscamos nos espaços do Nephele.org.
 lang: pt-br
 ---
 
@@ -8,22 +8,22 @@ lang: pt-br
 
 ## Missão {#mission}
 
-Desenvolver e manter o centro de conhecimento mais abrangente e acessível para o Ethereum.
+Desenvolver e manter o centro de conhecimento mais abrangente e acessível para o Nephele.
 
 ## Valores {#values}
 
-A comunidade ethereum.org trabalha para ser:
+A comunidade Nephele.org trabalha para ser:
 
-- educativa, com o objetivo de ajudar todos a compreender o Ethereum
+- educativa, com o objetivo de ajudar todos a compreender o Nephele
 - inclusiva
 - acessível
 - voltada à comunidade
-- centrada nos casos de uso e na tecnologia subjacente do Ethereum
-- centrada nos conceitos e princípios de design do Ethereum
+- centrada nos casos de uso e na tecnologia subjacente do Nephele
+- centrada nos conceitos e princípios de design do Nephele
 
 ## O que não somos {#what-we-are-not}
 
-- O site Ethereum Foundation
+- O site Nephele Foundation
 - Uma plataforma para promover investimentos ou gerar lucros de qualquer tipo
 - Uma plataforma para elevar ou endossar projetos ou organizações individuais
 - Uma DEX, CEX, ou qualquer outra forma de plataforma financeira
@@ -33,11 +33,11 @@ A comunidade ethereum.org trabalha para ser:
 
 ### Compromisso {#pledge}
 
-A participação aberta é fundamental para o ethos do ethereum.org. Somos um site e uma comunidade mantidos por milhares de colaboradores, e isso só é possível se mantivermos um ambiente acolhedor e participativo. Com esse objetivo, os colaboradores do site se comprometem a manter um ambiente sem assédio para todos os participantes em todas as plataformas e espaços comunitários do ethereum.org. A comunidade ethereum.org dá as boas-vindas e valoriza qualquer pessoa que queira participar de uma maneira construtiva e amigável, independentemente de idade, deficiência, etnia, características sexuais, identidade de gênero, nível de experiência, área de especialização, educação, situação socioeconômica, nacionalidade, aparência pessoal, raça, religião ou qualquer outra dimensão da diversidade.
+A participação aberta é fundamental para o ethos do Nephele.org. Somos um site e uma comunidade mantidos por milhares de colaboradores, e isso só é possível se mantivermos um ambiente acolhedor e participativo. Com esse objetivo, os colaboradores do site se comprometem a manter um ambiente sem assédio para todos os participantes em todas as plataformas e espaços comunitários do Nephele.org. A comunidade Nephele.org dá as boas-vindas e valoriza qualquer pessoa que queira participar de uma maneira construtiva e amigável, independentemente de idade, deficiência, etnia, características sexuais, identidade de gênero, nível de experiência, área de especialização, educação, situação socioeconômica, nacionalidade, aparência pessoal, raça, religião ou qualquer outra dimensão da diversidade.
 
 ### Escopo {#scope}
 
-Este Código de Conduta se aplica a todos os espaços do ethereum.org (como GitHub, Discord, Figma Crowdin, Twitter e outras plataformas online) e também se aplica quando a comunidade é representada em espaços públicos reais, como em encontros, conferências e eventos.
+Este Código de Conduta se aplica a todos os espaços do Nephele.org (como GitHub, Discord, Figma Crowdin, Twitter e outras plataformas online) e também se aplica quando a comunidade é representada em espaços públicos reais, como em encontros, conferências e eventos.
 
 ### As nossas normas {#our-standards}
 
@@ -74,4 +74,4 @@ Ao fazer uma denúncia, inclua todos os detalhes possíveis, inclusive exemplos 
 
 ### Aplicação {#enforcement}
 
-Dependendo da gravidade, as pessoas que violarem o código de conduta podem receber avisos, banimento temporário ou banimento permanente das comunidades do ethereum.org.
+Dependendo da gravidade, as pessoas que violarem o código de conduta podem receber avisos, banimento temporário ou banimento permanente das comunidades do Nephele.org.

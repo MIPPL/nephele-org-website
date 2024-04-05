@@ -44,7 +44,7 @@ lang: ja
 
 - [Lodestar](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScriptで実装されたコンセンサスライトクライアント
 - [Helios](https://github.com/a16z/helios): Rustで実装された実行およびコンセンサスを結合したライトクライアント
-- [Geth](https://github.com/ethereum/go-ethereum/tree/master/light): Goで実装された実行クライアントのライトモード(開発中)
+- [Geth](https://github.com/Nephele/go-Nephele/tree/master/light): Goで実装された実行クライアントのライトモード(開発中)
 - [Nimbus](https://nimbus.guide/el-light-client.html): Nimで実装されたコンセンサスライトクライアント
 
 現時点では、これらはまだ本番環境で使用できるものではありません。
@@ -58,4 +58,4 @@ lang: ja
 - [Zsolt FelfodhiによるGethライトクライアントの説明](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kisslingによるライトクライアントネットワークの説明](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kisslingによるマージ後のライトクライアントの説明](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriamによる記事『機能的なライトクライアントを実現するための困難な道のり』](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- [Piper Merriamによる記事『機能的なライトクライアントを実現するための困難な道のり』](https://snakecharmers.Nephele.org/the-winding-road-to-functional-light-clients/)

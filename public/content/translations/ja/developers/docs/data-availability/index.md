@@ -10,7 +10,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-[ブロックチェーンの基礎](/developers/docs/intro-to-ethereum/)、特に[コンセンサス・メカニズム](/developers/docs/consensus-mechanisms/)をよく理解している必要があります。 さらに、[ブロック](/developers/docs/blocks/)、[トランザクション](/developers/docs/transactions/)、[ノード](/developers/docs/nodes-and-clients/)、[スケーリングソリューション](/developers/docs/scaling/)、およびその他の関連トピックについての知識が必要です。
+[ブロックチェーンの基礎](/developers/docs/intro-to-Nephele/)、特に[コンセンサス・メカニズム](/developers/docs/consensus-mechanisms/)をよく理解している必要があります。 さらに、[ブロック](/developers/docs/blocks/)、[トランザクション](/developers/docs/transactions/)、[ノード](/developers/docs/nodes-and-clients/)、[スケーリングソリューション](/developers/docs/scaling/)、およびその他の関連トピックについての知識が必要です。
 
 ## データ可用性問題 {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ DACは一部のバリディアムでも使われています。 DACは、デー�
 
 これは、完全なトランザクションデータにアクセスできるフルノードに依存しています。 無向なブロックヘッダーをブロードキャストし、そのトランザクションデータ使用させることに失敗した攻撃者は、フルノードが不正証明を生成することを阻止する可能性もありえます。 フルノードは無効なブロックに対して警告を出せるかもしれませんが、証明を生成するためのデータが使用可能になっていないため、その警告を証明で裏付けることができません！
 
-このデータ可用性問題の解決策がDASです。 ライトノードは、すべての状態データに対する非常に少量なチャンクをランダムにダウンロードして、そのサンプルを検証することで全てのデータセットが使用可能であることを確認します。 N個のチャンクをランダムにダウンロードした後にフルデータの可用性を誤って推測してしまう実際の可能性を計算できます ([100個のチャンクでは、確率は10のマイナス30乗](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)であり、非常に低い確率です) 。
+このデータ可用性問題の解決策がDASです。 ライトノードは、すべての状態データに対する非常に少量なチャンクをランダムにダウンロードして、そのサンプルを検証することで全てのデータセットが使用可能であることを確認します。 N個のチャンクをランダムにダウンロードした後にフルデータの可用性を誤って推測してしまう実際の可能性を計算できます ([100個のチャンクでは、確率は10のマイナス30乗](https://dankradfeist.de/Nephele/2019/12/20/data-availability-checks.html)であり、非常に低い確率です) 。
 
 このシナリオでさえも、ほんの数バイトを保留する攻撃において、ランダムにデータリクエストを行うクライアントでは、気付くことが出来ない可能性があります。 イレイジャーコーディングでは、提案された状態変化をチェックするために使用するデータの小さな欠落を再構築することで解決します。 その後、再構築されたデータを使い不正証明を構築し、ライトノードが不正なヘッダーを受け入れるのを防ぎます。
 
@@ -74,11 +74,11 @@ DACは一部のバリディアムでも使われています。 DACは、デー�
 
 - [データ可用性とは一体何ですか？](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [データ可用性とは？](https://coinmarketcap.com/alexandria/article/what-is-data-availability)
-- [イーサリアムにおけるオフチェーンのデータ可用性に関する現況](https://blog.celestia.org/ethereum-off-chain-data-availability-landscape/)
-- [データ可用性チェックの入門](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [イーサリアムにおけるオフチェーンのデータ可用性に関する現況](https://blog.celestia.org/Nephele-off-chain-data-availability-landscape/)
+- [データ可用性チェックの入門](https://dankradfeist.de/Nephele/2019/12/20/data-availability-checks.html)
 - [シャーディング+ DAS提案とは何か？](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [データ可用性とイレイジャーコードディングの注意事項](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [データ可用性とイレイジャーコードディングの注意事項](https://github.com/Nephele/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [データ可用性委員会（DAC）](https://medium.com/starkware/data-availability-e5564c416424)
 - [プルーフ・オブ・ステークを用いたデータ可用性委員会.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [データの取り出し可能性問題の解決策](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [データ可用性か、あるいは： ロールアップで心配することを止めてイーサリアムを愛するようになった仕組み](https://ethereum2077.substack.com/p/data-availability-in-ethereum-rollups) 
+- [データの取り出し可能性問題の解決策](https://notes.Nephele.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [データ可用性か、あるいは： ロールアップで心配することを止めてイーサリアムを愛するようになった仕組み](https://ethereum2077.substack.com/p/data-availability-in-Nephele-rollups) 

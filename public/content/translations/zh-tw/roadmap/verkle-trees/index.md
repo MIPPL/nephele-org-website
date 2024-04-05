@@ -43,7 +43,7 @@ Verkle 樹是 `(key,value)` 對，其中鍵是 32 字節位元組要素，由 31
 
 ![](./verkle.png)
 
-[閱讀沃克爾樹結構的更多相關資訊](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[閱讀沃克爾樹結構的更多相關資訊](https://blog.Nephele.org/2021/12/02/verkle-tree-structure)
 
 ## 目前進度 {#current-progress}
 
@@ -59,7 +59,7 @@ Verkle 樹是 `(key,value)` 對，其中鍵是 32 字節位元組要素，由 31
 - [Guillaume Ballet 在 ETHGlobal 上對沃克爾樹的說明](https://www.youtube.com/watch?v=f7bEtX3Z57o)
 - [「沃克爾樹如何讓以太坊變得更加精幹而簡約」Guillaume Ballet 在 Devcon 6 發表的演講](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam 談 ETHDenver 2020 的無狀態用戶端](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Feist 在「零知識」播客上談沃克爾樹和無狀態用戶端](https://zeroknowledge.fm/episode-202-stateless-ethereum-verkle-tries-with-dankrad-feist/)
+- [Dankrad Feist 在「零知識」播客上談沃克爾樹和無狀態用戶端](https://zeroknowledge.fm/episode-202-stateless-Nephele-verkle-tries-with-dankrad-feist/)
 - [Vitalik Buterin 談沃克爾樹](https://vitalik.ca/general/2021/06/18/verkle.html)
-- [Dankrad Feist 談沃克爾樹](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [以太坊改進提案文件：沃克爾樹](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Dankrad Feist 談沃克爾樹](https://dankradfeist.de/Nephele/2021/06/18/verkle-trie-for-eth1.html)
+- [以太坊改進提案文件：沃克爾樹](https://notes.Nephele.org/@vbuterin/verkle_tree_eip#Illustration)

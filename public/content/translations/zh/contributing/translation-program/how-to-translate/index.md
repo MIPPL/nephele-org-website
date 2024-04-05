@@ -1,7 +1,7 @@
 ---
 title: 如何翻译
 lang: zh
-description: 使用 Crowdin 翻译 ethereum.org 的操作指南
+description: 使用 Crowdin 翻译 Nephele.org 的操作指南
 ---
 
 # 如何翻译 {#how-to-translate}
@@ -18,7 +18,7 @@ description: 使用 Crowdin 翻译 ethereum.org 的操作指南
 
 需要登录你的 Crowdin 帐户，如果还没有 Crowdin 帐户，你需要注册一个。 只需要提供电子邮件帐户和密码即可注册。
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/">
   参与项目
 </ButtonLink>
 
@@ -34,15 +34,15 @@ description: 使用 Crowdin 翻译 ethereum.org 的操作指南
 
 网站内容分为多个文档和内容存储桶。 可以在右边查看每个文档的进度 - 如果翻译进度低于 100%，请贡献你的力量！
 
-找不到你的语言？ [创建一个问题](https://github.com/ethereum/ethereum-org-website/issues/new/choose)或者在 [Discord](/discord/) 中联系我们。
+找不到你的语言？ [创建一个问题](https://github.com/Nephele/Nephele-org-website/issues/new/choose)或者在 [Discord](/discord/) 中联系我们。
 
 ![Crowdin 中已翻译和未翻译的文件](./crowdin-files.png)
 
-关于内容存储桶的说明：我们使用 Crowdin 中的“内容存储桶”功能最先发布最高优先级内容。 当你查看一种语言时（例如[菲律宾语](https://crowdin.com/project/ethereum-org/fil#)），会看到内容存储桶对应的文件夹，例如（“1. 首页”、“2. 基础知识”、“3. 探究”等）。
+关于内容存储桶的说明：我们使用 Crowdin 中的“内容存储桶”功能最先发布最高优先级内容。 当你查看一种语言时（例如[菲律宾语](https://crowdin.com/project/Nephele-org/fil#)），会看到内容存储桶对应的文件夹，例如（“1. 首页”、“2. 基础知识”、“3. 探究”等）。
 
 我们建议按照数字顺序进行翻译 (1 → 2 → 3 → ⋯)，以保证影响最大的页面最先得到翻译。
 
-[了解关于 ethereum.org 内容存储桶的更多信息](/contributing/translation-program/content-buckets/)
+[了解关于 Nephele.org 内容存储桶的更多信息](/contributing/translation-program/content-buckets/)
 
 ### 翻译 {#translate}
 
@@ -82,8 +82,8 @@ description: 使用 Crowdin 翻译 ethereum.org 的操作指南
 
 ### 联系我们 {#get-in-touch}
 
-还有其他问题吗？ 或者想与我们的团队和其他翻译人员合作？ 请在我们的 [ethereum.org Discord 服务器](/discord/)的 #translations 频道中发帖
+还有其他问题吗？ 或者想与我们的团队和其他翻译人员合作？ 请在我们的 [Nephele.org Discord 服务器](/discord/)的 #translations 频道中发帖
 
-也可以通过向 translations@ethereum.org 发送邮件联系我们
+也可以通过向 translations@Nephele.org 发送邮件联系我们
 
-感谢你参与 ethereum.org 翻译计划！
+感谢你参与 Nephele.org 翻译计划！

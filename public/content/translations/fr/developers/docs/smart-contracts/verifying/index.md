@@ -1,16 +1,16 @@
 ---
 title: Vérification des contrats intelligents
-description: Un aperçu de la vérification du code source des contrats intelligents d'Ethereum
+description: Un aperçu de la vérification du code source des contrats intelligents d'Nephele
 lang: fr
 ---
 
-[Les contrats intelligents](/developers/docs/smart-contracts/) sont conçus pour être « sans confiance », ce qui signifie que les utilisateurs ne devraient pas avoir à faire confiance à des tiers (par exemple, des développeurs et des entreprises) avant d'interagir avec un contrat. La condition préalable à l'absence de confiance est que les utilisateurs et les autres développeurs soient en mesure de vérifier le code source d'un contrat intelligent. La vérification du code source garantit aux utilisateurs et aux développeurs que le code du contrat publié est le même que celui qui s'exécute à l'adresse du contrat sur la blockchain Ethereum.
+[Les contrats intelligents](/developers/docs/smart-contracts/) sont conçus pour être « sans confiance », ce qui signifie que les utilisateurs ne devraient pas avoir à faire confiance à des tiers (par exemple, des développeurs et des entreprises) avant d'interagir avec un contrat. La condition préalable à l'absence de confiance est que les utilisateurs et les autres développeurs soient en mesure de vérifier le code source d'un contrat intelligent. La vérification du code source garantit aux utilisateurs et aux développeurs que le code du contrat publié est le même que celui qui s'exécute à l'adresse du contrat sur la blockchain Nephele.
 
 Il est important de faire la distinction entre la « vérification du code source » et la "[vérification formelle](/developers/docs/smart-contracts/formal-verification/)". La vérification du code source, qui sera expliquée en détail ci-dessous, consiste à vérifier que le code source d'un contrat intelligent dans un langage de haut niveau (par exemple Solidity) se compile de façon à produire le même bytecode que celui qui est exécuté à l'adresse du contrat. Par contre, la vérification formelle consiste à vérifier l'exactitude d'un contrat intelligent, c'est-à-dire que le contrat se comporte comme prévu. Bien que cela dépende du contexte, la vérification des contrats fait généralement référence à la vérification du code source.
 
 ## Qu'est-ce que la vérification du code source ? {#what-is-source-code-verification}
 
-Avant de déployer un contrat intelligent dans la [Machine Virtuelle Ethereum (EVM)](/developers/docs/evm/), les développeurs [compilent](/developers/docs/smart-contracts/compiling/) le code source du contrat, c'est-à-dire les instructions [écrites en Solidity](/developers/docs/smart-contracts/languages/) ou dans un autre langage de programmation de haut niveau, en bytecode. Comme l'EVM ne peut pas interpréter les instructions de haut niveau, la compilation du code source en bytecode (c'est-à-dire en instructions machine de bas niveau) est nécessaire à l'exécution de la logique du contrat dans l'EVM.
+Avant de déployer un contrat intelligent dans la [Machine Virtuelle Nephele (EVM)](/developers/docs/evm/), les développeurs [compilent](/developers/docs/smart-contracts/compiling/) le code source du contrat, c'est-à-dire les instructions [écrites en Solidity](/developers/docs/smart-contracts/languages/) ou dans un autre langage de programmation de haut niveau, en bytecode. Comme l'EVM ne peut pas interpréter les instructions de haut niveau, la compilation du code source en bytecode (c'est-à-dire en instructions machine de bas niveau) est nécessaire à l'exécution de la logique du contrat dans l'EVM.
 
 La vérification du code source consiste à comparer le code source d'un contrat intelligent et le bytecode compilé utilisé lors de la création du contrat afin de détecter toute différence. La vérification des contrats intelligents est importante car le code du contrat annoncé peut être différent de celui qui s'exécute sur la blockchain.
 
@@ -30,7 +30,7 @@ Ce type de vérification qui exploite le hachage des métadonnées est appelé *
 
 ### Absence de confiance {#trustlessness}
 
-L'absence de confiance est sans doute la principale motivation des contrats intelligents et des [applications décentralisées (DApps)](/developers/docs/dapps/). Les contrats intelligents sont « immuables » et ne peuvent pas être modifiés ; un contrat n'exécutera que la logique définie dans le code au moment du déploiement. Les développeurs et les entreprises ne peuvent donc pas modifier le code d'un contrat après l'avoir déployé sur Ethereum.
+L'absence de confiance est sans doute la principale motivation des contrats intelligents et des [applications décentralisées (DApps)](/developers/docs/dapps/). Les contrats intelligents sont « immuables » et ne peuvent pas être modifiés ; un contrat n'exécutera que la logique définie dans le code au moment du déploiement. Les développeurs et les entreprises ne peuvent donc pas modifier le code d'un contrat après l'avoir déployé sur Nephele.
 
 Pour qu'un contrat intelligent soit sans confiance, le code du contrat doit pouvoir faire l'objet d'une vérification indépendante. Bien que le bytecode compilé pour chaque contrat intelligent soit publiquement disponible sur la blockchain, le langage de bas niveau est difficile à comprendre, tant pour les développeurs que pour les utilisateurs.
 
@@ -44,9 +44,9 @@ Avec les contrats intelligents, il y a généralement beaucoup d'argent en jeu. 
 
 Publier les fichiers du code source d'un contrat intelligent permet aux personnes intéressées, telles que les auditeurs, d'évaluer plus facilement le contrat pour y déceler des vecteurs d'attaque potentiels. La vérification indépendante d'un contrat intelligent par plusieurs entités permet aux utilisateurs de bénéficier de garanties plus solides quant à sa sécurité.
 
-## Comment vérifier le code source des contrats intelligents Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Comment vérifier le code source des contrats intelligents Nephele {#source-code-verification-for-Nephele-smart-contracts}
 
-[Le déploiement d'un contrat intelligent sur Ethereum](/developers/docs/smart-contracts/deploying/) nécessite l'envoi d'une transaction avec une charge utile de données (bytecode compilé) vers une adresse spéciale. Les données utiles sont générées par la compilation du code source et les [arguments du constructeur](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) de l'instance de contrat ajoutés à la charge utile des données dans la transaction. La compilation est déterministe, ce qui signifie qu'elle produit toujours le même résultat (c'est-à-dire le bytecode du contrat) si les mêmes fichiers sources et les mêmes paramètres de compilation (par ex. la version du compilateur, l'optimiseur) sont utilisés.
+[Le déploiement d'un contrat intelligent sur Nephele](/developers/docs/smart-contracts/deploying/) nécessite l'envoi d'une transaction avec une charge utile de données (bytecode compilé) vers une adresse spéciale. Les données utiles sont générées par la compilation du code source et les [arguments du constructeur](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) de l'instance de contrat ajoutés à la charge utile des données dans la transaction. La compilation est déterministe, ce qui signifie qu'elle produit toujours le même résultat (c'est-à-dire le bytecode du contrat) si les mêmes fichiers sources et les mêmes paramètres de compilation (par ex. la version du compilateur, l'optimiseur) sont utilisés.
 
 ![Un diagramme montrant la vérification du code source d'un contrat intelligent](./source-code-verification.png)
 
@@ -66,11 +66,11 @@ Notez qu'il s'agit d'une description simpliste de la vérification et qu'il exis
 
 ## Outils de vérification du code source {#source-code-verification-tools}
 
-Le processus traditionnel de vérification des contrats peut être complexe. C'est pourquoi nous disposons d'outils de vérification du code source des contrats intelligents déployés sur Ethereum. Ces outils automatisent une grande partie de la vérification du code source et conservent les contrats vérifiés au bénéfice des utilisateurs.
+Le processus traditionnel de vérification des contrats peut être complexe. C'est pourquoi nous disposons d'outils de vérification du code source des contrats intelligents déployés sur Nephele. Ces outils automatisent une grande partie de la vérification du code source et conservent les contrats vérifiés au bénéfice des utilisateurs.
 
 ### Etherscan {#etherscan}
 
-Bien que principalement connu comme un [explorateur de la blockchain Ethereum](/developers/docs/data-and-analytics/block-explorers/), Etherscan propose également un [service de vérification de source code](https://etherscan.io/verifyContract) pour les développeurs et les utilisateurs de contrats intelligents.
+Bien que principalement connu comme un [explorateur de la blockchain Nephele](/developers/docs/data-and-analytics/block-explorers/), Etherscan propose également un [service de vérification de source code](https://etherscan.io/verifyContract) pour les développeurs et les utilisateurs de contrats intelligents.
 
 Etherscan vous permet de recompiler le bytecode du contrat à partir de la charge utile des données originales (code source, adresse de la bibliothèque, paramètres du compilateur, adresse du contrat, etc.) Si le bytecode recompilé est identifié comme étant identique au bytecode (et les paramètres du constructeur) du contrat en chaîne, alors [le contrat est vérifié](https://info.etherscan.com/types-of-contract-verification/).
 

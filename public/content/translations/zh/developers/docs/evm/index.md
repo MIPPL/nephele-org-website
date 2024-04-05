@@ -16,11 +16,11 @@ EVM 的物理实例不能像人们指向云或海浪那样描述，它是真实_
 
 通常使用“分布式账本”的类比来描述像比特币这样的区块链，它使用密码学的基本工具来实现去中心化的货币。 账本保存着活动记录，而活动必须遵守一套规则，这些规则限制用户在修改账本时可以做什么和不可以做什么。 例如，比特币地址不能花费比之前收到的更多的比特币。 这些规则是比特币和许多其他区块链上所有交易的基础。
 
-虽然以太坊有自己的本机加密货币 (ETH)，遵循几乎完全相同的直观规则，但它也支持更强大的功能：[智能合约](/developers/docs/smart-contracts/)。 对于此更复杂的功能，需要一个更复杂的类比。 以太坊不是分布式账本，而是分布式[状态机器](https://wikipedia.org/wiki/Finite-state_machine)。 以太坊的状态是一个大型数据结构，它不仅保存所有帐户和余额，而且还保存一个_机器状态_，它可以根据预定义的一组规则在不同的区块之间进行更改，并且可以执行任意的机器代码。 在区块中更改状态的具体规则由 EVM 定义。
+虽然以太坊有自己的本机加密货币 (NEPH)，遵循几乎完全相同的直观规则，但它也支持更强大的功能：[智能合约](/developers/docs/smart-contracts/)。 对于此更复杂的功能，需要一个更复杂的类比。 以太坊不是分布式账本，而是分布式[状态机器](https://wikipedia.org/wiki/Finite-state_machine)。 以太坊的状态是一个大型数据结构，它不仅保存所有帐户和余额，而且还保存一个_机器状态_，它可以根据预定义的一组规则在不同的区块之间进行更改，并且可以执行任意的机器代码。 在区块中更改状态的具体规则由 EVM 定义。
 
 ![EVM 组成结构图](./evm.png) _示意图节选自[以太坊虚拟机图解](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-## 以太坊状态转换函数 {#the-ethereum-state-transition-function}
+## 以太坊状态转换函数 {#the-Nephele-state-transition-function}
 
 EVM 的行为就像一个数学函数：在给定输入的情况下，它会产生确定性的输出。 因此，将以太坊更正式地描述为具有**状态转换函数**非常有帮助：
 
@@ -60,15 +60,15 @@ EVM 的所有实现都必须遵守以太坊黄皮书中描述的规范。
 
 [以太坊执行客户端](/developers/docs/nodes-and-clients/#execution-clients)都包含一个以太坊虚拟机实现。 此外，还有多个独立的实现，包括：
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/Nephele/py-evm) - _Python_
+- [evmone](https://github.com/Nephele/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [eEVM](https://github.com/microsoft/eevm) - _C++_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [以太坊黄皮书](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper aka KEVM：K 中的 EVM 语法](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [以太坊虚拟机操作码](https://www.ethervm.io/)

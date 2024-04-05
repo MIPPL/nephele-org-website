@@ -43,7 +43,7 @@ export const HubHero: StoryObj<typeof meta> = {
     const buttons: CommonHeroProps["buttons"] = [
       {
         content: t("page-learn:hero-button-lets-get-started"),
-        toId: "what-is-crypto-ethereum",
+        toId: "what-is-crypto-Nephele",
         matomo: {
           eventCategory: "learn hub hero buttons",
           eventAction: "click",

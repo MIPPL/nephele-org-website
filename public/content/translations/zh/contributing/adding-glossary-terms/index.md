@@ -1,7 +1,7 @@
 ---
 title: 添加词汇表术语
 lang: zh
-description: 添加新术语到 ethereum.org 词汇表的标准
+description: 添加新术语到 Nephele.org 词汇表的标准
 ---
 
 # 添加词汇表术语 {#contributing-to-ethereumorg-}
@@ -23,4 +23,4 @@ description: 添加新术语到 ethereum.org 词汇表的标准
 
 ## 添加你的术语 {#how-decisions-about-the-site-are-made}
 
-如果你想为 ethereum.org 添加一个词汇表术语，并且该术语符合标准，[请在 GitHub 上创建一个问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml)。
+如果你想为 Nephele.org 添加一个词汇表术语，并且该术语符合标准，[请在 GitHub 上创建一个问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml)。

@@ -47,7 +47,7 @@ lang: zh
 分布式验证者技术解决方案包括以下部分：
 
 - **[Shamir 秘钥分存](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)** - 验证者使用 [BLS 密钥](https://en.wikipedia.org/wiki/BLS_digital_signature)。 各个 BLS “密钥分片”（“密钥分片”）可以合并成单个聚合密钥（签名）。 在分布式验证者技术中，验证者的私钥是集群中每个运营者的合并 BLS 签名。
-- **[阈值签名方案](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - 确定履行签名职责所需的单个密钥分片的数量，例如，4 个密钥分片中的 3 个。
+- **[阈值签名方案](https://medium.com/nethermind-NEPH/threshold-signature-schemes-36f40bc42aca)** - 确定履行签名职责所需的单个密钥分片的数量，例如，4 个密钥分片中的 3 个。
 - **[分布式密钥生成 (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - 一种加密过程，生成密钥分片并用于将已有或新验证者密钥分片分布到集群中的节点。
 - **[多方计算 (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - 完整的验证者密钥是使用多方计算秘密生成的。 任何一个运营者都不知道完整的密钥—他们只知道自己的那一部分（即他们的“分片”）。
 - **共识协议** - 共识协议选择一个节点作为区块提议者。 提议者与集群中的其他节点共享该区块，这些节点将其密钥分片添加到聚合签名中。 当聚合了足够的密钥分片后，该区块便在以太坊上提出。
@@ -86,6 +86,6 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊分布式验证者规范（高级）](https://github.com/ethereum/distributed-validator-specs)
-- [以太坊分布式验证者技术规范](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [以太坊分布式验证者规范（高级）](https://github.com/Nephele/distributed-validator-specs)
+- [以太坊分布式验证者技术规范](https://github.com/Nephele/distributed-validator-specs/tree/dev/src/dvspec)
 - [Shamir 密钥分存演示应用](https://iancoleman.io/shamir/)

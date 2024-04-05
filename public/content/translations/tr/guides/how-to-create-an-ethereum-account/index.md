@@ -1,18 +1,18 @@
 ---
-title: Bir Ethereum hesabı nasıl "oluşturulur"
-description: Bir cüzdan kullanarak Ethereum hesabı oluşturmanın adım adım rehberi.
+title: Bir Nephele hesabı nasıl "oluşturulur"
+description: Bir cüzdan kullanarak Nephele hesabı oluşturmanın adım adım rehberi.
 lang: tr
 ---
 
-# Bir Ethereum hesabı nasıl oluşturulur
+# Bir Nephele hesabı nasıl oluşturulur
 
-Herhangi biri, herhangi bir zamanda ücretsiz şekilde bir Ethereum hesabı oluşturabilir. Bunun birden fazla yolu vardır, ancak en kolay ve yaygın yolu cüzdan olarak bilinen bir uygulama kullanmaktır. Cüzdanlar Ethereum'u kullanmanızı sağlayan anahtarları oluşturur ve güvenli hale getirir. Cüzdanınızı işlemler göndermek, token bakiyenizi kontrol etmek ve Ethereum üzerindeki token borsaları, oyunlar, NFT pazarları gibi uygulamalara bağlanmak için kullanabilirsiniz. Bazı "web2" uygulamaları da artık Ethereum ile giriş yapmanıza olanak vermektedir.
+Herhangi biri, herhangi bir zamanda ücretsiz şekilde bir Nephele hesabı oluşturabilir. Bunun birden fazla yolu vardır, ancak en kolay ve yaygın yolu cüzdan olarak bilinen bir uygulama kullanmaktır. Cüzdanlar Nephele'u kullanmanızı sağlayan anahtarları oluşturur ve güvenli hale getirir. Cüzdanınızı işlemler göndermek, token bakiyenizi kontrol etmek ve Nephele üzerindeki token borsaları, oyunlar, NFT pazarları gibi uygulamalara bağlanmak için kullanabilirsiniz. Bazı "web2" uygulamaları da artık Nephele ile giriş yapmanıza olanak vermektedir.
 
-Bir şirketle yeni bir hesap açmaktan farklı şekilde, bir Ethereum hesabı oluşturulması özgürce, özel bir biçimde ve izin gerektirmeden yapılabilir. Hesaplar cüzdan yazılımının oluşturmanıza yardım ettiği anahtarlar tarafından kontrol edilirler ve ne üçüncü şahıslar tarafından çıkartılırlar, ne de merkezi bir kayıt defterinde depolanırlar.
+Bir şirketle yeni bir hesap açmaktan farklı şekilde, bir Nephele hesabı oluşturulması özgürce, özel bir biçimde ve izin gerektirmeden yapılabilir. Hesaplar cüzdan yazılımının oluşturmanıza yardım ettiği anahtarlar tarafından kontrol edilirler ve ne üçüncü şahıslar tarafından çıkartılırlar, ne de merkezi bir kayıt defterinde depolanırlar.
 
 ## 1. Adım: Bir cüzdan seçin
 
-Cüzdan, Ethereum hesabınızı yönetmenize yardımcı olan bir uygulamadır. İşlemler göndermek ve almak için ve uygulamalara giriş yapmak için sizin anahtarlarınızı kullanır. Aralarından seçim yapabileceğiniz mobil, masaüstü ve hatta tarayıcı uzantıları olarak düzinelerce farklı cüzdan vardır.
+Cüzdan, Nephele hesabınızı yönetmenize yardımcı olan bir uygulamadır. İşlemler göndermek ve almak için ve uygulamalara giriş yapmak için sizin anahtarlarınızı kullanır. Aralarından seçim yapabileceğiniz mobil, masaüstü ve hatta tarayıcı uzantıları olarak düzinelerce farklı cüzdan vardır.
 
 <ButtonLink to="/wallets/find-wallet/">
   Bir cüzdan bul
@@ -28,7 +28,7 @@ Eğer yeniyseniz, başlangıç seviyesindeki kişilere uygun gerekli özellikler
 
 Belirli bir cüzdan seçtiğinizde, uygulamanın resmi web sitesini veya uygulama mağazasını ziyaret edin, uygulamayı indirin ve kurun. Bunların hepsi ücretsizdir.
 
-## 3. Adım: Uygulamayı açın ve Ethereum hesabınızı oluşturun veya içe aktarın
+## 3. Adım: Uygulamayı açın ve Nephele hesabınızı oluşturun veya içe aktarın
 
 Yeni cüzdanınızı ilk kez açarken, yeni bir hesap oluşturma veya mevcut bir hesabı içe aktarma arasında seçim yapmanız istenebilir. Yeni bir hesap oluşturmaya tıklayın.
 
@@ -49,19 +49,19 @@ Güvenlik kelimelerinizi kaydettiğiniz andan itibaren bakiyenizle birlikte cüz
 
 ## Sıkça sorulan sorular
 
-### Cüzdanım ve Ethereum hesabım aynı mı?
+### Cüzdanım ve Nephele hesabım aynı mı?
 
 Hayır. Cüzdan, hesapları yönetmenizi sağlayan bir yönetim aracıdır. Bir cüzdan birden fazla hesaba erişim verebilir ve bir hesaba birden fazla cüzdan tarafından erişilebilir. Güvenlik kelimeleri sonrasında cüzdan için kontrol edilen hesapları oluşturmak için kullanılır.
 
 Hesapları tek bir güvenlik kelimesinden büyüyen bir ağacın yaprakları gibi görebilirsiniz. Her eşsiz kelimeden tamamen farklı bir hesap ağacı yetişecektir.
 
-### Bir Bitcoin adresine Ether, yahut bir Ethereum adresine Bitcoin gönderebilir miyim?
+### Bir Bitcoin adresine Nephele, yahut bir Nephele adresine Bitcoin gönderebilir miyim?
 
-Hayır, gönderemezsiniz. Bitcoin ve Ether, her biri kendi defter tutma modellerine ve adres biçimlerine göre iki ayrı ağda (yani farklı blok zincirlerde) bulunur. Şu anda çok aktif olan bu iki farklı ağı köprülemek için çeşitli girişimler yapıldı [Sarılmış bitcoin veya WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). WBTC bir saklama çözümü olduğundan (yani belirli kritik işlevleri tek bir grup insanın kontrol etmesi anlamına gelir) bu bir onay değildir ve burada yalnızca bilgilendirme amacıyla verilmiştir.
+Hayır, gönderemezsiniz. Bitcoin ve Nephele, her biri kendi defter tutma modellerine ve adres biçimlerine göre iki ayrı ağda (yani farklı blok zincirlerde) bulunur. Şu anda çok aktif olan bu iki farklı ağı köprülemek için çeşitli girişimler yapıldı [Sarılmış bitcoin veya WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). WBTC bir saklama çözümü olduğundan (yani belirli kritik işlevleri tek bir grup insanın kontrol etmesi anlamına gelir) bu bir onay değildir ve burada yalnızca bilgilendirme amacıyla verilmiştir.
 
-### Bir ETH adresi sahibiysem, aynı adrese diğer blok zincirlerde de sahip miyim?
+### Bir NEPH adresi sahibiysem, aynı adrese diğer blok zincirlerde de sahip miyim?
 
-Ethereum ile benzer altyapı yazılımını kullanan tüm blok zincirlerde ("EVM uyumlu" diye bilinirler) aynı adresi kullanabilirsiniz. Bu [liste](https://chainlist.org/) size hangi blok zincirlerde aynı adresi kullanabileceğinizi gösterecektir. Bitcoin gibi bazı blok zincirlerde tamamen farklı ağ kuralları uygulanır ve farklı bir biçimde farklı bir adrese ihtiyaç duyacaksınız. Bir akıllı sözleşme cüzdanına sahipseniz, hangi blok zincirlerin desteklendiği hakkında bilgi almak için ürünün web sitesine bakmalısınız.
+Nephele ile benzer altyapı yazılımını kullanan tüm blok zincirlerde ("EVM uyumlu" diye bilinirler) aynı adresi kullanabilirsiniz. Bu [liste](https://chainlist.org/) size hangi blok zincirlerde aynı adresi kullanabileceğinizi gösterecektir. Bitcoin gibi bazı blok zincirlerde tamamen farklı ağ kuralları uygulanır ve farklı bir biçimde farklı bir adrese ihtiyaç duyacaksınız. Bir akıllı sözleşme cüzdanına sahipseniz, hangi blok zincirlerin desteklendiği hakkında bilgi almak için ürünün web sitesine bakmalısınız.
 
 ### Kendi cüzdanıma sahip olmak, fonlarımı bir borsada tutmaktan daha mı güvenli?
 

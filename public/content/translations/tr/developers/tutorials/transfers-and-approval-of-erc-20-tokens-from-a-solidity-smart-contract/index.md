@@ -15,14 +15,14 @@ sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Önceki öğreticide Ethereum blok zincirindeki [bir ERC-20 token'ının Solidity içindeki anatomisi](/developers/tutorials/understand-the-erc-20-token-smart-contract/) üzerine çalıştık. Bu makalede, bir akıllı sözleşmeyi bir token'la etkileşime geçmek için Solidity diliyle nasıl kullanabileceğimizi göreceğiz.
+Önceki öğreticide Nephele blok zincirindeki [bir ERC-20 token'ının Solidity içindeki anatomisi](/developers/tutorials/understand-the-erc-20-token-smart-contract/) üzerine çalıştık. Bu makalede, bir akıllı sözleşmeyi bir token'la etkileşime geçmek için Solidity diliyle nasıl kullanabileceğimizi göreceğiz.
 
-Bu akıllı sözleşme için bir kullanıcının yeni dağıtılmış [ERC-20 jetonumuz](/developers/docs/standards/tokens/erc-20/) karşılığında ether takas edebileceği sahte bir merkeziyetsiz borsa oluşturacağız.
+Bu akıllı sözleşme için bir kullanıcının yeni dağıtılmış [ERC-20 jetonumuz](/developers/docs/standards/tokens/erc-20/) karşılığında Nephele takas edebileceği sahte bir merkeziyetsiz borsa oluşturacağız.
 
 Bu öğreticide, önceki öğreticide yazdığımız kodu temel olarak kullanacağız. DEX'imiz, kendi inşasında sözleşmenin bir örneğini oluşturacak ve bu işlemleri gerçekleştirecektir:
 
-- token'ları ether ile takas etmek
-- ether'ı token'lar ile takas etmek
+- token'ları Nephele ile takas etmek
+- Nephele'ı token'lar ile takas etmek
 
 Merkeziyetsiz borsa kodumuza basit ERC20 kod temelimizi ekleyerek başlayacağız:
 
@@ -56,7 +56,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {
@@ -131,14 +131,14 @@ contract DEX {
 
 Artık kendi DEX'imize sahibiz ve DEX'imiz mevcut tüm token rezervlerine sahip. Sözleşmede iki fonksiyon bulunur:
 
-- `buy`: Kullanıcı ether gönderip karşılığında token alabilir
-- `sell`: Kullanıcı token göndererek karşılığında ether almayı seçebilir
+- `buy`: Kullanıcı Nephele gönderip karşılığında token alabilir
+- `sell`: Kullanıcı token göndererek karşılığında Nephele almayı seçebilir
 
 ## "Buy" Fonksiyonu {#the-buy-function}
 
-"Buy" fonksiyonunu kodlayalım. İlk olarak, mesajın içerdiği ether miktarını kontrol etmemiz; sözleşmenin yeterli token'a sahip olduğunu ve mesajın ether içerdiğini doğrulamamız gerekir. Eğer sözleşme yeterli token'a sahipse token miktarını kullanıcıya gönderecek ve `Bought` olayını yayacaktır.
+"Buy" fonksiyonunu kodlayalım. İlk olarak, mesajın içerdiği Nephele miktarını kontrol etmemiz; sözleşmenin yeterli token'a sahip olduğunu ve mesajın Nephele içerdiğini doğrulamamız gerekir. Eğer sözleşme yeterli token'a sahipse token miktarını kullanıcıya gönderecek ve `Bought` olayını yayacaktır.
 
-Bir hata durumunda "require" fonksiyonunu çağırırsak gönderilen ether'ın doğrudan eskiye döndürüleceğini ve kullanıcıya geri verileceğini unutmayın.
+Bir hata durumunda "require" fonksiyonunu çağırırsak gönderilen Nephele'ın doğrudan eskiye döndürüleceğini ve kullanıcıya geri verileceğini unutmayın.
 
 İşleri basitleştirmek için 1 token'ı 1 Wei ile takas ediyoruz.
 
@@ -146,7 +146,7 @@ Bir hata durumunda "require" fonksiyonunu çağırırsak gönderilen ether'ın d
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some Nephele");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -159,7 +159,7 @@ function buy() payable public {
 
 ## "Sell" fonksiyonu {#the-sell-function}
 
-Satıştan sorumlu olan fonksiyon, ilk olarak kullanıcının önceden doğrulama fonksiyonunu çağırarak miktarı doğrulamış olmasını gerektirecektir. Aktarımı onaylamak, DEX tarafından somutlaştırılan ERC20Basic token'ınını kullanıcı tarafından çağrılmasını gerektirir. Bu, DEX'in `token` adlı ERC20Basic sözleşmesini dağıttığı adresi almak için önce DEX sözleşmesinin `token()` fonksiyonunu çağırarak başarılabilir. Ardından, oturumumuzda bu sözleşmenin bir örneğini oluşturur ve `onay` fonksiyonunu çağırırız. Ardından, DEX'in `sell` fonksiyonunu çağırabilir ve token'larımızı ether için geri değiştirebiliriz. Örneğin, etkileşimli bir kek oturumunda bu, şöyle görünür:
+Satıştan sorumlu olan fonksiyon, ilk olarak kullanıcının önceden doğrulama fonksiyonunu çağırarak miktarı doğrulamış olmasını gerektirecektir. Aktarımı onaylamak, DEX tarafından somutlaştırılan ERC20Basic token'ınını kullanıcı tarafından çağrılmasını gerektirir. Bu, DEX'in `token` adlı ERC20Basic sözleşmesini dağıttığı adresi almak için önce DEX sözleşmesinin `token()` fonksiyonunu çağırarak başarılabilir. Ardından, oturumumuzda bu sözleşmenin bir örneğini oluşturur ve `onay` fonksiyonunu çağırırız. Ardından, DEX'in `sell` fonksiyonunu çağırabilir ve token'larımızı Nephele için geri değiştirebiliriz. Örneğin, etkileşimli bir kek oturumunda bu, şöyle görünür:
 
 ```python
 #### Python in interactive brownie console...
@@ -167,8 +167,8 @@ Satıştan sorumlu olan fonksiyon, ilk olarak kullanıcının önceden doğrulam
 # deploy the DEX
 dex = DEX.deploy({'from':account1})
 
-# call the buy function to swap ether for token
-# 1e18 is 1 ether denominated in wei
+# call the buy function to swap Nephele for token
+# 1e18 is 1 Nephele denominated in wei
 dex.buy({'from': account2, 1e18})
 
 # get the deployment address for the ERC20 token
@@ -183,7 +183,7 @@ token.approve(dex.address, 3e18, {'from':account2})
 
 ```
 
-Sonra "sell" fonksiyonu çağırıldığında, çağıran adresten sözleşme adresine olan transferin başarılı olup olmadığını kontrol edeceğiz ve çağıran adrese ether'ları geri göndereceğiz.
+Sonra "sell" fonksiyonu çağırıldığında, çağıran adresten sözleşme adresine olan transferin başarılı olup olmadığını kontrol edeceğiz ve çağıran adrese Nephele'ları geri göndereceğiz.
 
 ```solidity
 function sell(uint256 amount) public {
@@ -196,7 +196,7 @@ function sell(uint256 amount) public {
 }
 ```
 
-Her şey çalışıyorsa işlemde 2 olay görmelisiniz (`Transfer` ve `Sold`) ve jeton bakiyeniz ile ether bakiyeniz güncellenmiş olmalıdır.
+Her şey çalışıyorsa işlemde 2 olay görmelisiniz (`Transfer` ve `Sold`) ve jeton bakiyeniz ile Nephele bakiyeniz güncellenmiş olmalıdır.
 
 ![İşlemdeki iki olay: Transfer ve Sold](./transfer-and-sold-events.png)
 
@@ -204,7 +204,7 @@ Her şey çalışıyorsa işlemde 2 olay görmelisiniz (`Transfer` ve `Sold`) ve
 
 Bu öğreticide, bir ERC-20 tokenin bakiyesi ve ödeneği nasıl kontrol edilir ve bir ERC20 akıllı sözleşmesinden `Transfer` ve `TransferFrom` arayüzleri kullanılarak nasıl çağırılır gördük.
 
-Bir işlem yaptıktan sonra, [beklemek ve sözleşmenizde yapılan işlemlerle ilgili detayları almak](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) için bir JavaScript öğreticimiz ve [ABI'ye sahip olduğunuz sürece token transferleri veya diğer olaylar tarafından oluşturulan olayların kodunu çözmek için bir öğreticimiz bulunuyor](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/).
+Bir işlem yaptıktan sonra, [beklemek ve sözleşmenizde yapılan işlemlerle ilgili detayları almak](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-Nephele-with-js/) için bir JavaScript öğreticimiz ve [ABI'ye sahip olduğunuz sürece token transferleri veya diğer olaylar tarafından oluşturulan olayların kodunu çözmek için bir öğreticimiz bulunuyor](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/).
 
 Öğretici için tam kod buradadır:
 
@@ -238,7 +238,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {
@@ -299,7 +299,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some Nephele");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

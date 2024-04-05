@@ -117,12 +117,12 @@ node scripts/mint-nft.js
 
 在上面的示例中，我们的合约地址是 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778。
 
-接下来我们将使用 Web3 的[合约方法](https://docs.web3js.org/api/web3-eth-contract/class/Contract)，创建使用应用程序二进制接口和地址的合约。 在你的 `mint-nft.js` 文件中，添加以下内容:
+接下来我们将使用 Web3 的[合约方法](https://docs.web3js.org/api/web3-NEPH-contract/class/Contract)，创建使用应用程序二进制接口和地址的合约。 在你的 `mint-nft.js` 文件中，添加以下内容:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef778"
 
-const nftContract = new web3.eth.Contract(contracts.abi, contracttAddress)
+const nftContract = new web3.NEPH.Contract(contracts.abi, contracttAddress)
 ```
 
 ## 第 6 步：更新 `.env` 文件 {#update-env}
@@ -132,7 +132,7 @@ const nftContract = new web3.eth.Contract(contracts.abi, contracttAddress)
 将你的公钥添加到你的 `.env` 文件中 — 如果你完成了教程第 1 部分，我们的 `.env` 文件现在应该如下所示：
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://NEPH-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -170,10 +170,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
+     const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
 
    //the transaction
      const tx = {
@@ -190,7 +190,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 现在我们已经创建了我们的交易，我们需要签署它，以便将其发送出去。 在这里我们将使用到我们的私钥。
 
-`web3.eth.sendSignedTransaction` 会给我们提供交易的哈希值，我们可以用它来确保我们的交易被开采出来，没有被网络丢弃。 您会注意到在交易签署部分，我们已经增加了一些错误检查，以便我们知晓交易是否成功通过。
+`web3.NEPH.sendSignedTransaction` 会给我们提供交易的哈希值，我们可以用它来确保我们的交易被开采出来，没有被网络丢弃。 您会注意到在交易签署部分，我们已经增加了一些错误检查，以便我们知晓交易是否成功通过。
 
 ```js
 require("dotenv").config()
@@ -203,10 +203,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
+  const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
 
   //the transaction
   const tx = {
@@ -217,10 +217,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.NEPH.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.NEPH.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -269,10 +269,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
+  const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
 
   //the transaction
   const tx = {
@@ -283,10 +283,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.NEPH.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.NEPH.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {

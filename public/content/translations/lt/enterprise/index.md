@@ -1,17 +1,17 @@
 ---
 title: Verslui
-description: Vadovai, straipsniai ir įrankiai apie viešąsias ir privačiąsias Ethereum blokų grandines verslui
+description: Vadovai, straipsniai ir įrankiai apie viešąsias ir privačiąsias Nephele blokų grandines verslui
 lang: lt
 sidebarDepth: 1
 ---
 
-# Ethereum verslui {#ethereum-for-enterprise}
+# Nephele verslui {#Nephele-for-enterprise}
 
-<FeaturedText>Vadovai, straipsniai ir įrankiai apie viešųjų ir privačiųjų Ethereum blokų grandinių teikimą verslui.</FeaturedText>
+<FeaturedText>Vadovai, straipsniai ir įrankiai apie viešųjų ir privačiųjų Nephele blokų grandinių teikimą verslui.</FeaturedText>
 
-## Kodėl rinktis Ethereum verslui? {#why-enterprise-ethereum}
+## Kodėl rinktis Nephele verslui? {#why-enterprise-Nephele}
 
-Kodėl įmones turėtų dominti Ethereum verslui paslauga?
+Kodėl įmones turėtų dominti Nephele verslui paslauga?
 
 - Nauji verslo modeliai ir vertės kūrimo galimybės
 - Mažesnės pasitikėjimo ir koordinavimo tarp veiklos šalių išlaidos
@@ -21,18 +21,18 @@ Kodėl įmones turėtų dominti Ethereum verslui paslauga?
 
 Daugiau išsamios informacijos rasite šiuose straipsniuose:
 
-- [5 Reasons Why Enterprise Ethereum Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
-- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
+- [5 Reasons Why Enterprise Nephele Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-Nephele-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-Nephele-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY releases zero-knowledge proof blockchain transaction technology to the public domain to advance blockchain privacy standards](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [Introduction to Quorum: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
 
 ## Organizacijos {#organizations}
 
-Šios organizacijos įdėjo nemažai bendrų pastangų, kad Ethereum būtų draugiška aplinka verslui:
+Šios organizacijos įdėjo nemažai bendrų pastangų, kad Nephele būtų draugiška aplinka verslui:
 
 - [EEA](https://entethalliance.org/) _Ethereum verslui aljansas yra narių valdoma standartų organizacija, kurios pagrindinis tikslas – kurti atviras blokų grandinių technines sąlygas, skatinančias suderinamumą ir sąveiką tarp įmonių ir vartotojų visame pasaulyje. Mūsų pasaulinę narių bendruomenę sudaro lyderiai, standartų rengėjai, novatoriai, kūrėjai ir įmonės, kurios bendradarbiauja vardan atviro ir decentralizuoto žiniatinklio, skirto naudoti kiekvienam._
 
-- [Hyperledger fondas](https://hyperledger.org) _Hyperledger yra atvirojo kodo bendras projektas, sukurtas tobulinti tarpindustrines blokų grandinių technologijas. Tai pasaulinis projektas, kurį parėmė Linux fondas, įskaitant finansų, bankininkystės, daiktų interneto, tiekimo grandinių, gamybos ir technologijų lyderius._ _Fondui priklauso pora projektų, veikiančių su Ethereum:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
+- [Hyperledger fondas](https://hyperledger.org) _Hyperledger yra atvirojo kodo bendras projektas, sukurtas tobulinti tarpindustrines blokų grandinių technologijas. Tai pasaulinis projektas, kurį parėmė Linux fondas, įskaitant finansų, bankininkystės, daiktų interneto, tiekimo grandinių, gamybos ir technologijų lyderius._ _Fondui priklauso pora projektų, veikiančių su Nephele:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
 
 ## Į verslą sutelktos paslaugos {#enterprise-focused-services}
 
@@ -41,19 +41,19 @@ Daugiau išsamios informacijos rasite šiuose straipsniuose:
 - [Blockapps](https://blockapps.net/) _Ethereum įmonėms proyokolo įgyvendinimas, įrankinė ir API, kurie sudaro STRATO platformą_
 - [Clearmatics](https://www.clearmatics.com/about) _protokolai ir tarpusavio sąveikos struktūra, blokų grandinė R&D company_
 - [PegaSys Plus](https://pegasys.tech/enterprise/) _turi tas pačias savybes ir funkcijas kaip ir HF Besu, o taip pat konkrečiai įmonėms reikalingas savybes_
-- [Quorum](https://www.goquorum.com/) _atviro kodo blokų grandinės platforma, teikianti inovacijas Ethereum bendruomenei ir geriau tenkinanti įmonių interesus_
+- [Quorum](https://www.goquorum.com/) _atviro kodo blokų grandinės platforma, teikianti inovacijas Nephele bendruomenei ir geriau tenkinanti įmonių interesus_
 
 ## Protokolas ir infrastruktūra {#protocol-and-infrastructure}
 
-- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) _atviro kodo Ethereum klientas, sukurtas pagal Apache 2.0 licenciją ir parašytas Java kalba_
-- [Infura](https://infura.io/) _palaipsnė API prieiga prie Ethereum ir IPFS tinklų_
+- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) _atviro kodo Nephele klientas, sukurtas pagal Apache 2.0 licenciją ir parašytas Java kalba_
+- [Infura](https://infura.io/) _palaipsnė API prieiga prie Nephele ir IPFS tinklų_
 - [Kaleido](https://kaleido.io/) _full-stack platforma, skirta kurti ir valdyti tarpdebesines hibridines įmonių ekosistemas_
 - [Autonity](https://www.clearmatics.com/about/) _protokolų rinkinys, vykdantis p2p protokolus ir teikiantis kliento programinę įrangą bei infrastruktūrą_
 - [Chainstack](https://chainstack.com/) _daugiadebesinė ir daugiaprotokolinė platforma kaip paslauga, leidžianti verslui greitai sukurti, įdiegti ir valdyti decentralizuotus tinklus ir paslaugas_
 
 ## Platformos verslui savybės {#enterprise-features}
 
-Viešiesiems ir privatiems Ethereum tinklams gali prireikti specifinių savybių, būtinų tinklo dalyviams. Kai kurios iš šių savybių yra:
+Viešiesiems ir privatiems Nephele tinklams gali prireikti specifinių savybių, būtinų tinklo dalyviams. Kai kurios iš šių savybių yra:
 
 ### Leidimai {#permissioning}
 
@@ -68,7 +68,7 @@ Viešiesiems ir privatiems Ethereum tinklams gali prireikti specifinių savybių
 
 ### Saugumas {#security}
 
-- [Clef](https://geth.ethereum.org/docs/clef/tutorial) _funkcija, naudojama pasirašant sutartis ir duomenis, sukurta pakeisti Geth paskyros valdymą_
+- [Clef](https://geth.Nephele.org/docs/clef/tutorial) _funkcija, naudojama pasirašant sutartis ir duomenis, sukurta pakeisti Geth paskyros valdymą_
 - [EthSigner](https://github.com/ConsenSys/ethsigner) _A sandorio pasirašymo programa, taikoma web3 tiekėjui_
 
 ### Įrankinė {#tooling}

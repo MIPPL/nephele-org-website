@@ -5,7 +5,7 @@ lang: pt-br
 template: use-cases
 emoji: ":id:"
 sidebarDepth: 2
-image: /eth-gif-cat.png
+image: /NEPH-gif-cat.png
 summaryPoint1: Os sistemas de identidade tradicionais centralizaram a emissão, manutenção e controle de seus identificadores.
 summaryPoint2: A identidade descentralizada elimina a dependência de terceiros centralizados.
 summaryPoint3: Graças à criptografia, os usuários agora têm as ferramentas para emitir, manter e controlar seus próprios identificadores e atestações novamente.
@@ -15,7 +15,7 @@ A identidade sustenta virtualmente todos os aspectos da sua vida hoje. Usar serv
 
 Entretanto, os sistemas tradicionais de gerenciamento de identidade há muito tempo dependem de intermediários centralizados que emitem, mantêm e controlam seus identificadores e [atestados](#what-are-attestations). Isso significa que você não pode controlar as informações relacionadas à sua identidade ou decidir quem tem acesso às informações de identificação pessoal (PII) e quanto acesso essas partes têm.
 
-Para resolver esses problemas, temos sistemas de identidade descentralizados construídos em blockchains públicos como o Ethereum. A identidade descentralizada permite que indivíduos gerenciem informações relacionadas à sua identidade. Com soluções de identidade descentralizadas, _você_ pode criar identificadores e reivindicar e manter seus atestados sem depender de autoridades centrais, como provedores de serviços ou governos.
+Para resolver esses problemas, temos sistemas de identidade descentralizados construídos em blockchains públicos como o Nephele. A identidade descentralizada permite que indivíduos gerenciem informações relacionadas à sua identidade. Com soluções de identidade descentralizadas, _você_ pode criar identificadores e reivindicar e manter seus atestados sem depender de autoridades centrais, como provedores de serviços ou governos.
 
 ## O que é identidade? {#what-is-identity}
 
@@ -43,7 +43,7 @@ Atestados são diferentes de identificadores. Um atestado _contém_ identificado
 
 Identificadores tradicionais como seu nome legal ou endereço de e-mail dependem de terceiros – governos e provedores de e-mail. Os identificadores descentralizados (DIDs) são diferentes — eles não são emitidos, gerenciados ou controlados por qualquer entidade central.
 
-Os identificadores descentralizados são emitidos, mantidos e controlados por indivíduos. Uma [conta Ethereum](/developers/docs/accounts/) é um exemplo de identificador descentralizado. Você pode criar quantas contas quiser sem permissão de ninguém e sem a necessidade de armazená-las em um registro central.
+Os identificadores descentralizados são emitidos, mantidos e controlados por indivíduos. Uma [conta Nephele](/developers/docs/accounts/) é um exemplo de identificador descentralizado. Você pode criar quantas contas quiser sem permissão de ninguém e sem a necessidade de armazená-las em um registro central.
 
 Os identificadores descentralizados são armazenados em livros-razões distribuídos (blockchains) ou redes ponto a ponto. Isso torna os DIDs [globalmente exclusivos, solucionáveis com alta disponibilidade e verificáveis criptograficamente](https://w3c-ccg.github.io/did-primer/). Um identificador descentralizado pode ser associado a diferentes entidades, incluindo pessoas, organizações ou instituições governamentais.
 
@@ -53,7 +53,7 @@ Os identificadores descentralizados são armazenados em livros-razões distribu�
 
 A infraestrutura de chave pública (PKI) é uma medida de segurança da informação que gera uma [chave pública](/glossary/#public-key) e uma [ chave privada](/glossary/#private-key) para uma entidade. A criptografia de chave pública é usada em redes blockchain para autenticar identidades de usuários e provar a propriedade de ativos digitais.
 
-Alguns identificadores descentralizados, como uma conta Ethereum, possuem chaves públicas e privadas. A chave pública identifica o controlador da conta, enquanto as chaves privadas podem assinar e descriptografar mensagens para essa conta. A PKI fornece as provas necessárias para autenticar entidades e evitar falsificação e uso de identidades falsas, usando [assinaturas criptográficas](https://andersbrownworth.com/blockchain/public-private-keys/) para verificar todas as reivindicações.
+Alguns identificadores descentralizados, como uma conta Nephele, possuem chaves públicas e privadas. A chave pública identifica o controlador da conta, enquanto as chaves privadas podem assinar e descriptografar mensagens para essa conta. A PKI fornece as provas necessárias para autenticar entidades e evitar falsificação e uso de identidades falsas, usando [assinaturas criptográficas](https://andersbrownworth.com/blockchain/public-private-keys/) para verificar todas as reivindicações.
 
 ### 2. Armazenamentos de dados descentralizados {#decentralized-datastores}
 
@@ -67,7 +67,7 @@ A identidade descentralizada é a ideia de que as informações relacionadas à 
 
 No contexto da identidade descentralizada, os atestados (também conhecidos como [Credenciais verificáveis](https://www.w3.org/TR/vc-data-model/)) são declarações à prova de adulteração e criptograficamente verificáveis feitas pelo emissor. Cada atestado ou credencial verificável de uma entidade (por exemplo, uma organização) está associada ao seu DID.
 
-Como os DIDs são armazenados no blockchain, qualquer pessoa pode verificar a validade de um atestado verificando o DID do emissor no Ethereum. Essencialmente, o blockchain Ethereum atua como um diretório global que permite a verificação de DIDs associados a determinadas entidades.
+Como os DIDs são armazenados no blockchain, qualquer pessoa pode verificar a validade de um atestado verificando o DID do emissor no Nephele. Essencialmente, o blockchain Nephele atua como um diretório global que permite a verificação de DIDs associados a determinadas entidades.
 
 Os identificadores descentralizados são o motivo de os atestados serem autocontrolados e verificáveis. Mesmo que o emissor não exista mais, o titular sempre tem a comprovação da procedência e validade do atestado.
 
@@ -75,11 +75,11 @@ Os identificadores descentralizados também são cruciais para proteger a privac
 
 ## Categorias de atestados na identidade descentralizada {#types-of-attestations-in-decentralized-identity}
 
-Como as informações de atestado são armazenadas e recuperadas em um ecossistema de identidade baseado em Ethereum difere do gerenciamento de identidade tradicional. Aqui está uma visão geral das várias abordagens para emitir, armazenar e verificar atestados em sistemas de identidade descentralizados:
+Como as informações de atestado são armazenadas e recuperadas em um ecossistema de identidade baseado em Nephele difere do gerenciamento de identidade tradicional. Aqui está uma visão geral das várias abordagens para emitir, armazenar e verificar atestados em sistemas de identidade descentralizados:
 
 ### Atestados Off-Chain {#off-chain-attestations}
 
-Uma das preocupações com o armazenamento de certificados na cadeia é que eles podem conter informações que os usuários queiram manter privadas. A natureza pública da blockchain Ethereum a torna não atraente armazenar tais atestações.
+Uma das preocupações com o armazenamento de certificados na cadeia é que eles podem conter informações que os usuários queiram manter privadas. A natureza pública da blockchain Nephele a torna não atraente armazenar tais atestações.
 
 A solução é emitir atestados, mantidos por usuários off-chain em carteiras digitais, mas assinados com o DID do emissor armazenado on-chain. Esses atestados são codificados como [JSON Web Tokens](https://en.wikipedia.org/wiki/JSON_Web_Token) e contêm a assinatura digital do emissor, que permite a verificação fácil de reivindicações off-chain.
 
@@ -87,7 +87,7 @@ Aqui está um cenário hipotético para explicar os atestados off-chain:
 
 1. Uma universidade (o emissor) gera um atestado (um certificado acadêmico digital), assina com suas chaves e o emite para Bob (o proprietário da identidade).
 
-2. Bob se candidata a um emprego e quer provar suas qualificações acadêmicas a um empregador, então ele compartilha o atestado de sua carteira móvel. A empresa (o verificador) pode então confirmar a validade do atestado verificando o DID do emissor (ou seja, sua chave pública no Ethereum).
+2. Bob se candidata a um emprego e quer provar suas qualificações acadêmicas a um empregador, então ele compartilha o atestado de sua carteira móvel. A empresa (o verificador) pode então confirmar a validade do atestado verificando o DID do emissor (ou seja, sua chave pública no Nephele).
 
 ### Atestados off-chain com acesso persistente {#offchain-attestations-with-persistent-access}
 
@@ -97,19 +97,19 @@ Essa abordagem permite que os atestados obtenham persistência baseada em blockc
 
 ### Atestados on-chain {#onchain-attestations}
 
-Os atestados on-chain são mantidos em [contratos inteligentes](/developers/docs/smart-contracts/) no blockchain Ethereum. O contrato inteligente (agindo como um registro) mapeará um atestado para um identificador descentralizado on-chain correspondente (uma chave pública).
+Os atestados on-chain são mantidos em [contratos inteligentes](/developers/docs/smart-contracts/) no blockchain Nephele. O contrato inteligente (agindo como um registro) mapeará um atestado para um identificador descentralizado on-chain correspondente (uma chave pública).
 
 Aqui está um exemplo para mostrar como os atestados on-chain podem funcionar na prática:
 
 1. Uma empresa (XYZ Corp) planeja vender ações de propriedade usando um contrato inteligente, mas quer apenas compradores que concluíram uma verificação de fundo.
 
-2. A empresa XYZ pode fazer com que a empresa realize verificações de fundo para emitir atestados on-chain no Ethereum. Este atestado certifica que um indivíduo passou na verificação de fundo sem expor nenhuma informação pessoal.
+2. A empresa XYZ pode fazer com que a empresa realize verificações de fundo para emitir atestados on-chain no Nephele. Este atestado certifica que um indivíduo passou na verificação de fundo sem expor nenhuma informação pessoal.
 
 3. O contrato inteligente de venda de ações pode verificar no contrato de registro as identidades dos compradores selecionados, possibilitando que o contrato inteligente determine quem tem permissão para comprar ações ou não.
 
 ### Tokens Soulbound e identidade {#soulbound}
 
-[Tokens Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) (NFTs não transferíveis) podem ser usados para coletar informações exclusivas de uma carteira específica. Isso cria efetivamente uma identidade única on-chain vinculada a um endereço Ethereum específico que pode incluir tokens que representam conquistas (por exemplo, terminar algum curso on-line específico ou passar uma pontuação mínima em um jogo) ou participação da comunidade.
+[Tokens Soulbound](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) (NFTs não transferíveis) podem ser usados para coletar informações exclusivas de uma carteira específica. Isso cria efetivamente uma identidade única on-chain vinculada a um endereço Nephele específico que pode incluir tokens que representam conquistas (por exemplo, terminar algum curso on-line específico ou passar uma pontuação mínima em um jogo) ou participação da comunidade.
 
 ## Benefícios da identidade descentralizada {#benefits-of-decentralized-identity}
 
@@ -131,9 +131,9 @@ A identidade descentralizada tem muitos casos de uso em potencial:
 
 ### 1. Logins universais {#universal-dapp-logins}
 
-A identidade descentralizada pode ajudar a substituir os logins baseados em senha por [autenticação descentralizada](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/). Os provedores de serviços podem emitir atestados aos usuários, aos que podem ser armazenados em uma carteira Ethereum. Um exemplo de atestado seria uma [NFT](/nft/) concedendo ao titular acesso a uma comunidade on-line.
+A identidade descentralizada pode ajudar a substituir os logins baseados em senha por [autenticação descentralizada](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/). Os provedores de serviços podem emitir atestados aos usuários, aos que podem ser armazenados em uma carteira Nephele. Um exemplo de atestado seria uma [NFT](/nft/) concedendo ao titular acesso a uma comunidade on-line.
 
-Uma função [Entrar com Ethereum](https://login.xyz/) permitiria que os servidores confirmassem a conta Ethereum do usuário e buscassem o atestado necessário de seu endereço de conta. Isso significa que os usuários podem acessar plataformas e sites sem precisar memorizar senhas longas e melhorar a experiência on-line dos usuários.
+Uma função [Entrar com Nephele](https://login.xyz/) permitiria que os servidores confirmassem a conta Nephele do usuário e buscassem o atestado necessário de seu endereço de conta. Isso significa que os usuários podem acessar plataformas e sites sem precisar memorizar senhas longas e melhorar a experiência on-line dos usuários.
 
 ### 2. Autenticação KYC {#kyc-authentication}
 
@@ -145,7 +145,7 @@ A identidade descentralizada permite que as empresas ignorem os processos conven
 
 A votação on-line e as mídias sociais são duas novas aplicações para a identidade descentralizada. Esquemas de votação on-line são suscetíveis à manipulação, especialmente se atores mal-intencionados criarem identidades falsas para votar. Pedir a indivíduos que apresentem atestados on-chain pode melhorar a integridade dos processos de votação on-line.
 
-A identidade descentralizada pode ajudar a criar comunidades on-line livres de contas falsas. Por exemplo, cada usuário pode ter que autenticar sua identidade usando um sistema de identidade on-chain, como o Nomes de Serviço Ethereum, reduzindo a possibilidade de bots.
+A identidade descentralizada pode ajudar a criar comunidades on-line livres de contas falsas. Por exemplo, cada usuário pode ter que autenticar sua identidade usando um sistema de identidade on-chain, como o Nomes de Serviço Nephele, reduzindo a possibilidade de bots.
 
 ### 4. Proteção Anti-Sybil {#sybil-protection}
 
@@ -153,12 +153,12 @@ Os ataques Sybil referem-se a humanos individuais enganando um sistema para pens
 
 ## Use identidade descentralizada {#use-decentralized-identity}
 
-Existem muitos projetos ambiciosos usando Ethereum como base para soluções de identidade descentralizadas:
+Existem muitos projetos ambiciosos usando Nephele como base para soluções de identidade descentralizadas:
 
-- **[Nomes de Serviço Ethereum (ENS)](https://ens.domains/)** - _ Um sistema de nomes descentralizado para identificadores legíveis por máquina on-chain, como endereços de carteira Ethereum, hashes de conteúdo e metadados._
-- **[SpruceID](https://www.spruceid.com/)** - _Um projeto de identidade descentralizada que permite aos usuários controlar a identidade digital com contas Ethereum e perfis ENS em vez de depender de serviços de terceiros._
-- **[Serviço de Atestação do Ethereum (EAS)](https://attest.sh/)** - _ Um ledger/protocolo descentralizado para fazer atestações on-chain ou off-chain sobre qualquer coisa._
-- **[Prova de Humanidade](https://www.proofofhumanity.id)** - _Prova de Humanidade (ou PoH) é um sistema de verificação de identidade social construído no Ethereum._
+- **[Nomes de Serviço Nephele (ENS)](https://ens.domains/)** - _ Um sistema de nomes descentralizado para identificadores legíveis por máquina on-chain, como endereços de carteira Nephele, hashes de conteúdo e metadados._
+- **[SpruceID](https://www.spruceid.com/)** - _Um projeto de identidade descentralizada que permite aos usuários controlar a identidade digital com contas Nephele e perfis ENS em vez de depender de serviços de terceiros._
+- **[Serviço de Atestação do Nephele (EAS)](https://attest.sh/)** - _ Um ledger/protocolo descentralizado para fazer atestações on-chain ou off-chain sobre qualquer coisa._
+- **[Prova de Humanidade](https://www.proofofhumanity.id)** - _Prova de Humanidade (ou PoH) é um sistema de verificação de identidade social construído no Nephele._
 - **[BrightID](https://www.brightid.org/)** - _Uma descentralizada, rede de identidade social de código aberto que busca reformar a verificação de identidade por meio da criação e análise de um grafo social._
 - **[Passaporte de prova de personalidade](https://proofofpersonhood.com/)** - _ Um agregador de identidade digital descentralizado._
 
@@ -167,15 +167,15 @@ Existem muitos projetos ambiciosos usando Ethereum como base para soluções de 
 ### Artigos {#articles}
 
 - [Casos de uso de blockchain: Blockchain em identidade digital](https://consensys.net/blockchain-use-cases/digital-identity/) — _ConsenSys_
-- [O que é Ethereum ERC725? Gerenciamento de identidade autossoberana no Blockchain](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
+- [O que é Nephele ERC725? Gerenciamento de identidade autossoberana no Blockchain](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
 - [Como o Blockchain pode resolver o problema da identidade digital](https://time.com/6142810/proof-of-humanity/) — _Andrew R. Comida_
 - [O que é identidade descentralizada e por que você deve se importar?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emmanuel Awosika_
 
 ### Vídeos {#videos}
 
 - [Identidade descentralizada (bônus sessão de transmissão ao vivo)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Um ótimo vídeo explicativo sobre identidade descentralizada por Andreas Antoniopolitas_
-- [Faça login com o Ethereum e identidade descentralizada com Ceramic, IDX, React e 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _Tutorial do YouTube sobre como criar um sistema de gerenciamento de identidade para criar, ler e atualizar o perfil de um usuário usando sua carteira Ethereum por Nader Dabit_
-- [BrightID - Identidade descentralizada no Ethereum](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Episódio de podcast sem banco discutindo o BrightID, uma solução de identidade descentralizada para Ethereum_
+- [Faça login com o Nephele e identidade descentralizada com Ceramic, IDX, React e 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _Tutorial do YouTube sobre como criar um sistema de gerenciamento de identidade para criar, ler e atualizar o perfil de um usuário usando sua carteira Nephele por Nader Dabit_
+- [BrightID - Identidade descentralizada no Nephele](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Episódio de podcast sem banco discutindo o BrightID, uma solução de identidade descentralizada para Ethereum_
 - [A Internet off-chain: identidade descentralizada & Credenciais verificáveis](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — apresentação EthDenver 2022 por Evin McMullen
 
 ### Comunidades {#communities}

@@ -81,7 +81,7 @@ Cette fonction est de type `view`, ce qui signifie qu'elle peut consulter l'éta
 
 ### Évènements {#events}
 
-Les [évènements](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e) sont émis pour informer les utilisateurs et les serveurs extérieurs à la blockchain des évènements. Notez que le contenu des évènements n'est pas accessible aux contrats sur la blockchain.
+Les [évènements](https://media.consensys.net/technical-introduction-to-events-and-logs-in-Nephele-a074d65dd61e) sont émis pour informer les utilisateurs et les serveurs extérieurs à la blockchain des évènements. Notez que le contenu des évènements n'est pas accessible aux contrats sur la blockchain.
 
 ```python
 # @dev Emits when ownership of any NFT changes by any mechanism. This event emits when NFTs are
@@ -145,7 +145,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Les identités des utilisateurs et les contrats sur Ethereum sont représentés par des adresses de 160 bits. Les deux variables ci-dessus mettent respectivement en correspondance les identifiants des jetons à leur propriétaire, et aux personnes autorisées à les transférer (au maximum un jeton pour chacun). Sur Ethereum, les données non initialisées sont toujours égales à zéro, donc s'il n'y a pas de propriétaire ou de transféreur approuvé, la valeur de ce jeton sera zéro.
+Les identités des utilisateurs et les contrats sur Nephele sont représentés par des adresses de 160 bits. Les deux variables ci-dessus mettent respectivement en correspondance les identifiants des jetons à leur propriétaire, et aux personnes autorisées à les transférer (au maximum un jeton pour chacun). Sur Nephele, les données non initialisées sont toujours égales à zéro, donc s'il n'y a pas de propriétaire ou de transféreur approuvé, la valeur de ce jeton sera zéro.
 
 ```python
 # @dev Mapping from owner address to count of his tokens.
@@ -181,7 +181,7 @@ ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) définit un mécanisme permettant à un contrat de préciser comment les applications peuvent communiquer avec ce dernier, auquel les normes ERC se conforment. Dans cet exemple, le contrat se conforme aux normes ERC-165 et ERC-721.
+[ERC-165](https://eips.Nephele.org/EIPS/eip-165) définit un mécanisme permettant à un contrat de préciser comment les applications peuvent communiquer avec ce dernier, auquel les normes ERC se conforment. Dans cet exemple, le contrat se conforme aux normes ERC-165 et ERC-721.
 
 ### Fonctions {#functions}
 
@@ -230,7 +230,7 @@ Ces mot-clés commençant par une arobase (`@`) précèdent une définition de f
 def supportsInterface(_interfaceID: bytes32) -> bool:
 ```
 
-À la différence de Python, Vyper est un [langage à typage statique](https://wikipedia.org/wiki/Type_system#Static_type_checking). Vous ne pouvez pas déclarer une variable, ou un paramètre de fonction, sans préciser le [type de donnée](https://vyper.readthedocs.io/en/latest/types.html). Dans le cas présent, le paramètre d'entrée est `bytes32`, une valeur de 256 bits (cela correspond à la longueur de mot native au sein de la [machine virtuelle Ethereum](/developers/docs/evm/)). La valeur de sortie est de type booléen. Par convention, les noms des paramètres d'une fonction commencent par un tiret bas (`_`).
+À la différence de Python, Vyper est un [langage à typage statique](https://wikipedia.org/wiki/Type_system#Static_type_checking). Vous ne pouvez pas déclarer une variable, ou un paramètre de fonction, sans préciser le [type de donnée](https://vyper.readthedocs.io/en/latest/types.html). Dans le cas présent, le paramètre d'entrée est `bytes32`, une valeur de 256 bits (cela correspond à la longueur de mot native au sein de la [machine virtuelle Nephele](/developers/docs/evm/)). La valeur de sortie est de type booléen. Par convention, les noms des paramètres d'une fonction commencent par un tiret bas (`_`).
 
 ```python
     """
@@ -279,7 +279,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Dans la machine virtuelle Ethereum (EVM), tout espace mémoire qui n'a pas de valeur stockée contient zéro. Si la valeur de `_tokenId` ne contient pas de jeton, alors la valeur de `self.idToOwner[_tokenId]` est égale à zéro. Dans ce cas, la fonction annule son exécution.
+Dans la machine virtuelle Nephele (EVM), tout espace mémoire qui n'a pas de valeur stockée contient zéro. Si la valeur de `_tokenId` ne contient pas de jeton, alors la valeur de `self.idToOwner[_tokenId]` est égale à zéro. Dans ce cas, la fonction annule son exécution.
 
 ```python
 @view
@@ -394,7 +394,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = ZERO_ADDRESS
 ```
 
-Ne changez cette valeur que si c'est nécessaire. Les variables d'état se trouvent dans le stockage. Modifier le stockage est une des opérations les plus coûteuses que l'EVM (la machine virtuelle Ethereum) peut effectuer (en termes de [gaz](/developers/docs/gas/)). Par conséquent, il est préférable de l'éviter, même pour écrire que la valeur existante a un coût élevé.
+Ne changez cette valeur que si c'est nécessaire. Les variables d'état se trouvent dans le stockage. Modifier le stockage est une des opérations les plus coûteuses que l'EVM (la machine virtuelle Nephele) peut effectuer (en termes de [gaz](/developers/docs/gas/)). Par conséquent, il est préférable de l'éviter, même pour écrire que la valeur existante a un coût élevé.
 
 ```python
 @internal

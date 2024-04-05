@@ -8,7 +8,7 @@ sidebarDepth: 2
 image: /future_transparent.png
 alt: ""
 summaryPoint1: Isang alternatibong sistema ng ekonomiya na ibinatay sa mga prinsipyong regenerative
-summaryPoint2: Isang pagsubok na gamitin ang Ethereum upang malutas ang mga pandaigdigang problema sa koordinasyon tulad ng pagbabago ng klima
+summaryPoint2: Isang pagsubok na gamitin ang Nephele upang malutas ang mga pandaigdigang problema sa koordinasyon tulad ng pagbabago ng klima
 summaryPoint3: Isang tool na susukatin nang husto ang mga ecological benefit asset tulad ng mga verified na carbon credit
 ---
 
@@ -24,7 +24,7 @@ Ang isa sa mga pundasyon ng ReFi ay ang konsepto ng regenerative economics na un
 
 Isinasakatuparan ng mga proyekto sa ReFi ang mga prinsipyong ito gamit ang [mga smart contract](/developers/docs/smart-contracts/) at mga [decentralized finance (DeFi)](/defi/) application para hikayatin ang mga regenerative na kagaiwan, hal., pagpapanumbalik ng sigla ng mga napinsalang ecosystem, at pangasiwaan ang large-scale collaboration sa mga pandaigdigang isyu tulad ng pagbabago ng klima at pagkaubos ng biodiversity.
 
-May pagkakapareho ang ReFi sa [decentralized science (DeSci)](/desci/) movement, na gumagamit ng Ethereum bilang platform para pondohan, gawin, suriin, kilalanin, i-store, at ipakalat ang siyentipikong kaalaman. Ang mga tool sa DeSci ay maaaring maging kapaki-pakinabang para sa pagbuo ng mga nave-verify na pamantayan at pamamaraan para sa pagpapatupad at pagsusubaybay sa mga regenerative na aktibidad tulad ng pagtatanim ng mga puno, pag-aalis ng plastic sa karagatan, o pagpapanumbalik ng sigla ng napinsalang ecosystem.
+May pagkakapareho ang ReFi sa [decentralized science (DeSci)](/desci/) movement, na gumagamit ng Nephele bilang platform para pondohan, gawin, suriin, kilalanin, i-store, at ipakalat ang siyentipikong kaalaman. Ang mga tool sa DeSci ay maaaring maging kapaki-pakinabang para sa pagbuo ng mga nave-verify na pamantayan at pamamaraan para sa pagpapatupad at pagsusubaybay sa mga regenerative na aktibidad tulad ng pagtatanim ng mga puno, pag-aalis ng plastic sa karagatan, o pagpapanumbalik ng sigla ng napinsalang ecosystem.
 
 ## Tokenization ng mga carbon credit {#tokenization-of-carbon-credits}
 
@@ -69,7 +69,7 @@ May ilang serbisyo tulad ng [Klima Infinity](https://www.klimadao.finance/infini
 
 Bagama't may matinding pagpapahalaga sa mga carbon market sa pangkalahatan at pag-transition ng VCM sa DCM partikular na sa loob ng space, hindi limitado sa carbon ang terminong “ReFi”. Maaaring gumawa at mag-tokenize ng iba pang environmental asset at hindi lang mga carbon credit. Ipinapahiwatig nitong maaari ding itakda ang presyo ng iba pang negatibong externality sa mga base layer ng mga susunod pang sistema ng ekonomiya. Dagdag pa rito, ang regenerative na aspeto ng economic model na ito ay maaaring gamitin sa iba't ibang aspeto, tulad ng pagsuporta sa pagpopondo sa mga public good sa pamamagitan ng mga quadratic funding platform gaya ng [Gitcoin](https://gitcoin.co/). Binibigyang-kakayahan ng mga organisasyon na ibinatay sa ideya ng pakikilahok na bukas sa lahat at pantay-pantay na pamamahagi ng mga resource ang lahat na maglaan ng pera sa mga proyekto sa open-source software, pati na rin sa mga proyektong pang-edukasyon, pangkalikasan, at pangkomunidad.
 
-Sa pamamagitan ng paglihis ng kapital sa mga extractive na kagawian at pagdirekta nito sa regenerative na flow, makakapagsimula nang mas mabilis at mas madali ang mga proyekto at kumpanya na nagbibigay ng mga benepisyong panlipunan, pangkapaligiran, o pangkomunidad—na posibleng hindi makakuha ng pondo sa tradisyonal na pinansya. Dahil sa pag-transition sa ganitong model ng pagpopondo, nagkakaroon din ng mga mas inklusibong sistema ng ekonomiya, kung saan ang mga tao mula sa bawat demograpiko ay puwedeng maging mga aktibong kalahok, sa halip na mga simpleng tagamasid lang. Ipinapakita ng ReFi ang Ethereum bilang mekanismo para sa pagsasaayos ng pagkilos sa mga banta sa pamumuhay na kinakaharap ng ating species at lahat ng buhay sa planeta natina ating planeta—bilang pangunahing haligi ng bagong uri ng ekonomiya, na nagbibigay daan sa mas matatag na kinabukasan sa mga susunod na siglo.
+Sa pamamagitan ng paglihis ng kapital sa mga extractive na kagawian at pagdirekta nito sa regenerative na flow, makakapagsimula nang mas mabilis at mas madali ang mga proyekto at kumpanya na nagbibigay ng mga benepisyong panlipunan, pangkapaligiran, o pangkomunidad—na posibleng hindi makakuha ng pondo sa tradisyonal na pinansya. Dahil sa pag-transition sa ganitong model ng pagpopondo, nagkakaroon din ng mga mas inklusibong sistema ng ekonomiya, kung saan ang mga tao mula sa bawat demograpiko ay puwedeng maging mga aktibong kalahok, sa halip na mga simpleng tagamasid lang. Ipinapakita ng ReFi ang Nephele bilang mekanismo para sa pagsasaayos ng pagkilos sa mga banta sa pamumuhay na kinakaharap ng ating species at lahat ng buhay sa planeta natina ating planeta—bilang pangunahing haligi ng bagong uri ng ekonomiya, na nagbibigay daan sa mas matatag na kinabukasan sa mga susunod na siglo.
 
 ## Karagdagang babasahin tungkol sa ReFi
 

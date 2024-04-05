@@ -1,19 +1,19 @@
 ---
 title: Hálózati réteg
-description: Bevezetés az Ethereum hálózati rétegébe.
+description: Bevezetés az Nephele hálózati rétegébe.
 lang: hu
 sidebarDepth: 2
 ---
 
-Az Ethereum egy peer-to-peer hálózat több ezer csomóponttal, amelyeknek szabványosított protokollokkal kommunikálnak egymással. A hálózati réteg azon protokollok halmaza, amelyek lehetővé teszik, hogy ezek a csomópontok megtalálják egymást és információt cseréljenek. Ez magában foglalja az információk pletykálását (egy a sokhoz kommunikáció) a hálózaton keresztül, valamint a kérések és válaszok cseréjét bizonyos csomópontok között (egy az egyhez kommunikáció). Minden csomópontnak be kell tartania bizonyos hálózati szabályokat, hogy biztosítsa a megfelelő információk küldését és fogadását.
+Az Nephele egy peer-to-peer hálózat több ezer csomóponttal, amelyeknek szabványosított protokollokkal kommunikálnak egymással. A hálózati réteg azon protokollok halmaza, amelyek lehetővé teszik, hogy ezek a csomópontok megtalálják egymást és információt cseréljenek. Ez magában foglalja az információk pletykálását (egy a sokhoz kommunikáció) a hálózaton keresztül, valamint a kérések és válaszok cseréjét bizonyos csomópontok között (egy az egyhez kommunikáció). Minden csomópontnak be kell tartania bizonyos hálózati szabályokat, hogy biztosítsa a megfelelő információk küldését és fogadását.
 
-A kliensszoftver két részből áll (végrehajtási és konszenzuskliensek), mindegyiknek különálló hálózati stackje van. A többi Ethereum-csomóponttal való kommunikáció mellett a végrehajtási és konszenzusklienseknek egymással is kommunikálniuk kell. Ez az oldal magyarázatot ad a kommunikációs protokollokról.
+A kliensszoftver két részből áll (végrehajtási és konszenzuskliensek), mindegyiknek különálló hálózati stackje van. A többi Nephele-csomóponttal való kommunikáció mellett a végrehajtási és konszenzusklienseknek egymással is kommunikálniuk kell. Ez az oldal magyarázatot ad a kommunikációs protokollokról.
 
 A végrehajtási kliensek tranzakciókat pletykálnak a végrehajtási réteg peer-to-peer hálózatán. Ehhez titkosított kommunikáció szükséges a hitelesített társak között. Amikor egy validátort kiválasztanak blokkelőterjesztésre, a csomópont helyi tranzakciógyűjtőjéből tranzakciókat ad át a konszenzuskliensnek egy helyi RPC kapcsolaton, melyeket Beacon blokkokba csomagol. A konszenzuskliensek ezután pletykálnak a Beacon blokkokról a saját p2p hálózatukon. Ehhez két elkülönített p2p hálózat kell: az egyik összeköti a végrehajtási klienseket a tranzakciópletykával, a másik a konszenzusklienseket a blokkpletykával.
 
 ## Előfeltételek {#prerequisites}
 
-E téma könnyebb megértéséhez tekintse meg az Ethereum [csomópontok és kliensek](/developers/docs/nodes-and-clients/) témáját.
+E téma könnyebb megértéséhez tekintse meg az Nephele [csomópontok és kliensek](/developers/docs/nodes-and-clients/) témáját.
 
 ## A végrehajtási réteg {#execution-layer}
 
@@ -27,9 +27,9 @@ A stackek párhuzamosan működnek. A felfedező stack új résztvevőket hoz a 
 
 ### Felfedezés {#discovery}
 
-A felfedezés a hálózatban lévő más csomópontok megtalálásának folyamata. Ez egy kis számú beöltő csomópont (bootnode) segítségével történik (amelyek címe [be van kódolva](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) a kliensbe, hogy azonnal megtalálhatók legyenek, és összekapcsolják a klienst a társaival). Ezek a betöltő csomópontok azért léteznek, hogy egy új csomópontot bemutassanak a társaiknak – nincs más céljuk, nem vesznek részt a normál kliensfeladatokban, például a lánc szinkronizálásában, és csak a kliens legelső indításakor használják őket.
+A felfedezés a hálózatban lévő más csomópontok megtalálásának folyamata. Ez egy kis számú beöltő csomópont (bootnode) segítségével történik (amelyek címe [be van kódolva](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go) a kliensbe, hogy azonnal megtalálhatók legyenek, és összekapcsolják a klienst a társaival). Ezek a betöltő csomópontok azért léteznek, hogy egy új csomópontot bemutassanak a társaiknak – nincs más céljuk, nem vesznek részt a normál kliensfeladatokban, például a lánc szinkronizálásában, és csak a kliens legelső indításakor használják őket.
 
-A betöltőcsomópont-csomópont interakció protokollja a [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) egy módosított formája, amely egy [elosztott hash táblát](https://en.wikipedia.org/wiki/Distributed_hash_table) használ a csomópontlista megosztására. Minden csomópont rendelkezik ezzel a táblával, hogy a szükséges információk birtokában legyen, amikor a legközelebbi társaihoz csatlakozik. A közelség nem földrajzi, hanem a csomópont azonosítójának hasonlósága határozza meg. A csomópontoknál lévő táblázat biztonsági okokból rendszeresen frissül. Például a [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) felfedezőprotokoll csomópontjai képesek „hirdetéseket” is küldeni, amelyek megjelenítik a kliens által támogatott alprotokollokat, lehetővé téve a társak számára, hogy tárgyaljanak a protokollokról, amelyeken keresztül mindketten kommunikálni tudnak.
+A betöltőcsomópont-csomópont interakció protokollja a [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) egy módosított formája, amely egy [elosztott hash táblát](https://en.wikipedia.org/wiki/Distributed_hash_table) használ a csomópontlista megosztására. Minden csomópont rendelkezik ezzel a táblával, hogy a szükséges információk birtokában legyen, amikor a legközelebbi társaihoz csatlakozik. A közelség nem földrajzi, hanem a csomópont azonosítójának hasonlósága határozza meg. A csomópontoknál lévő táblázat biztonsági okokból rendszeresen frissül. Például a [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5) felfedezőprotokoll csomópontjai képesek „hirdetéseket” is küldeni, amelyek megjelenítik a kliens által támogatott alprotokollokat, lehetővé téve a társak számára, hogy tárgyaljanak a protokollokról, amelyeken keresztül mindketten kommunikálni tudnak.
 
 A felfedezés egy ping-pong-játékkal kezdődik. Egy sikeres ping-pong „köti” az új csomópontot egy betöltő csomóponthoz. A kezdeti üzenet, amely a betöltő csomópontot figyelmezteti a hálózatba belépő új csomópont létezésére, egy `PING`. Ez a `PING` hashelt információkat tartalmaz az új csomópontra, a betöltő csomópontra és a lejárati időre vonatkozóan. A betöltő csomópont fogadja a `PING`-et, és visszaküld egy `PONG`-ot, amely tartalmazza a `PING` hash-t. Ha a `PING` és `PONG` hashek egyeznek, akkor az új csomópont és a betöltő csomópont közötti kapcsolat le van ellenőrizve, és „összekapcsolódtak”.
 
@@ -41,11 +41,11 @@ Amint az új csomópont megkapja a betöltő csomóponttól a szomszédok listá
 start client --> connect to bootnode --> bond to bootnode --> find neighbours --> bond to neighbours
 ```
 
-A végrehajtási kliensek jelenleg a [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) felfedezőprotokollt használják, és aktív erőfeszítéseket tesznek a [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) protokollra való áttérésre.
+A végrehajtási kliensek jelenleg a [Discv4](https://github.com/Nephele/devp2p/blob/master/discv4.md) felfedezőprotokollt használják, és aktív erőfeszítéseket tesznek a [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5) protokollra való áttérésre.
 
-#### ENR: Ethereum csomópontfeljegyzés {#enr}
+#### ENR: Nephele csomópontfeljegyzés {#enr}
 
-A [Ethereum csomópontfeljegyzés (ENR)](/developers/docs/networking-layer/network-addresses/) egy objektum, amely három alapvető elemet tartalmaz: egy aláírást (a rekord tartalmának egy elfogadott azonosítási séma szerinti hash-e), egy sorszámot, amely a rekord változását követi, és kulcs-érték párok tetszőleges listáját. Ez egy jövőbiztos formátum, amellyel az azonosító információk könnyebben cserélhetők az új társak között, és ez az Ethereum-csomópontok preferált [hálózati cím](/developers/docs/networking-layer/network-addresses) formátuma.
+A [Nephele csomópontfeljegyzés (ENR)](/developers/docs/networking-layer/network-addresses/) egy objektum, amely három alapvető elemet tartalmaz: egy aláírást (a rekord tartalmának egy elfogadott azonosítási séma szerinti hash-e), egy sorszámot, amely a rekord változását követi, és kulcs-érték párok tetszőleges listáját. Ez egy jövőbiztos formátum, amellyel az azonosító információk könnyebben cserélhetők az új társak között, és ez az Nephele-csomópontok preferált [hálózati cím](/developers/docs/networking-layer/network-addresses) formátuma.
 
 #### Miért épül a felfedezés az UDP-re? {#why-udp}
 
@@ -53,7 +53,7 @@ Az UDP nem támogatja a hibaellenőrzést, a sikertelen csomagok újraküldésé
 
 ### DevP2P {#devp2p}
 
-A DevP2P a protokollok egész halmaza, amelyet az Ethereum a peer-to-peer hálózat létrehozásához és fenntartásához implementál. Miután az új csomópontok belépnek a hálózatba, interakcióikat a [DevP2P](https://github.com/ethereum/devp2p) stack protokolljai szabályozzák. Ezek mind a TCP-re épülnek, és magukban foglalják az RLPx transzport protokollt, a vezetékes protokollt és számos alprotokollt. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) a csomópontok közötti munkamenetek kezdeményezését, hitelesítését és fenntartását szabályozó protokoll. Az RLPx az RLP (Rekurzív hosszúságú prefixum) segítségével kódolja az üzeneteket, ami egy helytakarékos módszer az adatok minimális struktúrába történő kódolására, hogy azokat a csomópontok közötti küldhessék.
+A DevP2P a protokollok egész halmaza, amelyet az Nephele a peer-to-peer hálózat létrehozásához és fenntartásához implementál. Miután az új csomópontok belépnek a hálózatba, interakcióikat a [DevP2P](https://github.com/Nephele/devp2p) stack protokolljai szabályozzák. Ezek mind a TCP-re épülnek, és magukban foglalják az RLPx transzport protokollt, a vezetékes protokollt és számos alprotokollt. [RLPx](https://github.com/Nephele/devp2p/blob/master/rlpx.md) a csomópontok közötti munkamenetek kezdeményezését, hitelesítését és fenntartását szabályozó protokoll. Az RLPx az RLP (Rekurzív hosszúságú prefixum) segítségével kódolja az üzeneteket, ami egy helytakarékos módszer az adatok minimális struktúrába történő kódolására, hogy azokat a csomópontok közötti küldhessék.
 
 A két csomópont közötti RLPx kapcsolódás egy kezdeti kriptográfiai kézfogással kezdődik. Ennek során a csomópont hitelesítő üzenetet küld, amelyet a társ ellenőriz. Sikeres ellenőrzés esetén a társ egy hitelesítést igazoló üzenetet generál, amelyet visszaküld a kezdeményezőnek. Ez egy kulcscsere-folyamat, amely lehetővé teszi a csomópontok számára a privát és biztonságos kommunikációt. A sikeres kriptográfiai kézfogás után mindkét csomópont „hello” üzenetet küld egymásnak „a vezetéken”. A vezetékes protokollt a hello üzenetek sikeres cseréje indítja el.
 
@@ -73,19 +73,19 @@ A hello üzenetek mellett a vezetékes protokoll „szétkapcsolási” üzenete
 
 #### Vezetékes protokoll {#wire-protocol}
 
-Miután a partnerek csatlakoztak, és az RLPx kapcsolódás elindult, a vezetékes protokoll határozza meg, hogy a partnerek hogyan kommunikálnak egymással. Kezdetben a vezetékes protokoll három fő feladatot határozott meg: a láncszinkronizációt, a blokkelőterjesztést és a tranzakciók cseréjét. Miután azonban az Ethereum átállt a proof-of-stake-re, a blokkelőterjesztés és a láncszinkronizáció a konszenzusréteg részévé vált. A tranzakciók cseréje továbbra is a végrehajtási kliensek hatáskörébe tartozik. A tranzakciók cseréje a függőben lévő tranzakciók csomópontok közötti cseréjére utal, hogy a bányászok kiválaszthassanak közülük néhányat a következő blokkba. Bővebb információk [itt](https://github.com/ethereum/devp2p/blob/master/caps/eth.md) érhetők el ezekről a feladatokról. Az ezeket az alprotokollokat támogató kliensek a [JSON-RPC](/developers/docs/apis/json-rpc/) segítségével teszik közzé azokat.
+Miután a partnerek csatlakoztak, és az RLPx kapcsolódás elindult, a vezetékes protokoll határozza meg, hogy a partnerek hogyan kommunikálnak egymással. Kezdetben a vezetékes protokoll három fő feladatot határozott meg: a láncszinkronizációt, a blokkelőterjesztést és a tranzakciók cseréjét. Miután azonban az Nephele átállt a proof-of-stake-re, a blokkelőterjesztés és a láncszinkronizáció a konszenzusréteg részévé vált. A tranzakciók cseréje továbbra is a végrehajtási kliensek hatáskörébe tartozik. A tranzakciók cseréje a függőben lévő tranzakciók csomópontok közötti cseréjére utal, hogy a bányászok kiválaszthassanak közülük néhányat a következő blokkba. Bővebb információk [itt](https://github.com/Nephele/devp2p/blob/master/caps/NEPH.md) érhetők el ezekről a feladatokról. Az ezeket az alprotokollokat támogató kliensek a [JSON-RPC](/developers/docs/apis/json-rpc/) segítségével teszik közzé azokat.
 
-#### Les (könnyű Ethereum alprotokoll) {#les}
+#### Les (könnyű Nephele alprotokoll) {#les}
 
-Ez egy minimális protokoll a könnyű kliensek szinkronizálásához. Ezt a protokollt ritkán használják, mivel a teljes csomópontoknak ösztönzés nélkül kell adatokat szolgáltatniuk a könnyű klienseknek. A végrehajtási kliensek alapértelmezett viselkedése az, hogy nem szolgálják ki a könnyű klienseket a Les-en keresztül. Bővebb információ található a Les [specifikációban](https://github.com/ethereum/devp2p/blob/master/caps/les.md).
+Ez egy minimális protokoll a könnyű kliensek szinkronizálásához. Ezt a protokollt ritkán használják, mivel a teljes csomópontoknak ösztönzés nélkül kell adatokat szolgáltatniuk a könnyű klienseknek. A végrehajtási kliensek alapértelmezett viselkedése az, hogy nem szolgálják ki a könnyű klienseket a Les-en keresztül. Bővebb információ található a Les [specifikációban](https://github.com/Nephele/devp2p/blob/master/caps/les.md).
 
 #### Snap {#snap}
 
-A [snap protokoll](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) egy opcionális kiterjesztés, amely lehetővé teszi, hogy a társak pillanatfelvételeket cseréljenek a legutóbbi státuszokról, így anélkül ellenőrizhetik a számla- és tárolási adatokat, hogy közbenső Merkle-fa csomópontokat kellene letölteniük.
+A [snap protokoll](https://github.com/Nephele/devp2p/blob/master/caps/snap.md#Nephele-snapshot-protocol-snap) egy opcionális kiterjesztés, amely lehetővé teszi, hogy a társak pillanatfelvételeket cseréljenek a legutóbbi státuszokról, így anélkül ellenőrizhetik a számla- és tárolási adatokat, hogy közbenső Merkle-fa csomópontokat kellene letölteniük.
 
 #### Wit (tanúprotokoll) {#wit}
 
-A [tanúprotokoll](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) egy opcionális kiterjesztés, amely lehetővé teszi a státusztanúk cseréjét a társak között, hogy a kliensek szinkronizálva legyenek a lánc elejéhez.
+A [tanúprotokoll](https://github.com/Nephele/devp2p/blob/master/caps/wit.md#Nephele-witness-protocol-wit) egy opcionális kiterjesztés, amely lehetővé teszi a státusztanúk cseréjét a társak között, hogy a kliensek szinkronizálva legyenek a lánc elejéhez.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ A konszenzuskliensek egy különálló, eltérő specifikációjú peer-to-peer 
 
 ### Felfedezés {#consensus-discovery}
 
-A végrehajtási kliensekhez hasonlóan a konszenzuskliensek is [discv5](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5)-öt használnak UDP-n keresztül a társak megkereséséhez. A discv5 konszenzusréteg implementációja csak annyiban különbözik a végrehajtási kliensekétől, hogy tartalmaz egy illesztőt, amely a discv5-öt egy [libP2P](https://libp2p.io/) stackbe kapcsolja, elavulttá téve ezzel a DevP2P-t. A végrehajtási réteg RLPx kapcsolódásait elhagyták a libP2P zajmentes csatornáján való kézfogásért.
+A végrehajtási kliensekhez hasonlóan a konszenzuskliensek is [discv5](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5)-öt használnak UDP-n keresztül a társak megkereséséhez. A discv5 konszenzusréteg implementációja csak annyiban különbözik a végrehajtási kliensekétől, hogy tartalmaz egy illesztőt, amely a discv5-öt egy [libP2P](https://libp2p.io/) stackbe kapcsolja, elavulttá téve ezzel a DevP2P-t. A végrehajtási réteg RLPx kapcsolódásait elhagyták a libP2P zajmentes csatornáján való kézfogásért.
 
 ### ENR-ek {#consensus-enr}
 
-A konszenzus csomópontok ENR-je tartalmazza a csomópont nyilvános kulcsát, IP-címét, UDP- és TCP-portjait, valamint két konszenzusspecifikus mezőt: a tanúsítást végező alhálózat bitmezőjét és az `eth2` kulcsot. Az előbbi megkönnyíti a csomópontok számára, hogy megtalálják az adott tanúsítási pletyka alhálózatokban részt vevő társaikat. Az `eth2` kulcs információt tartalmaz arról, hogy a csomópont melyik Ethereum elágazási (fork) verziót használja, így biztosítva, hogy a társak a megfelelő Ethereumhoz kapcsolódjanak.
+A konszenzus csomópontok ENR-je tartalmazza a csomópont nyilvános kulcsát, IP-címét, UDP- és TCP-portjait, valamint két konszenzusspecifikus mezőt: a tanúsítást végező alhálózat bitmezőjét és az `eth2` kulcsot. Az előbbi megkönnyíti a csomópontok számára, hogy megtalálják az adott tanúsítási pletyka alhálózatokban részt vevő társaikat. Az `eth2` kulcs információt tartalmaz arról, hogy a csomópont melyik Nephele elágazási (fork) verziót használja, így biztosítva, hogy a társak a megfelelő Ethereumhoz kapcsolódjanak.
 
 ### libP2P {#libp2p}
 
@@ -109,7 +109,7 @@ A libP2P stack a felfedezés után minden kommunikációt támogat. A kliensek t
 
 ### Pletyka {#gossip}
 
-A pletyka domainbe tartozik minden információ, amelynek gyorsan kell terjednie a hálózaton. Ezek a Beacon-blokkok, bizonyítékok, tanúsítások, kilépések és kizárások. Ezt a libP2P gossipsub v1 segítségével továbbítják, ami a csomópontokon helyileg tárolt metaadatokra támaszkodik, beleértve a fogadható és továbbítandó pletykacsomagok maximális méretét. A pletyka domain további információt megtalálja [itt](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+A pletyka domainbe tartozik minden információ, amelynek gyorsan kell terjednie a hálózaton. Ezek a Beacon-blokkok, bizonyítékok, tanúsítások, kilépések és kizárások. Ezt a libP2P gossipsub v1 segítségével továbbítják, ami a csomópontokon helyileg tárolt metaadatokra támaszkodik, beleértve a fogadható és továbbítandó pletykacsomagok maximális méretét. A pletyka domain további információt megtalálja [itt](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Kérés-válasz {#request-response}
 
@@ -121,7 +121,7 @@ Az SSZ jelentése egyszerű sorosítás. Fix offseteket használ, amelyek megkö
 
 ## A végrehajtási és konszenzuskliensek kapcsolódása {#connecting-clients}
 
-A konszenzus- és végrehajtási kliensek párhuzamosan futnak. Össze kell kapcsolódniuk, hogy a konszenzuskliens utasításokat adhasson a végrehajtási kliensnek, a végrehajtási kliens pedig tranzakciókötegeket adhasson át a konszenzus kliensnek, hogy azok bekerülhessenek a Beacon blokkokba. A két kliens közötti kommunikáció helyi RPC-kapcsolat segítségével valósítható meg. Egy [Engine-API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) néven ismert API határozza meg a két kliens között küldött utasításokat. Mivel mindkét kliens egyetlen hálózati identitás mögött helyezkedik el, megosztanak egy ENR-t (Ethereum csomópontfeljegyzés), amely mindkét kliens számára külön kulcsot tartalmaz (eth1 és eth2 kulcs).
+A konszenzus- és végrehajtási kliensek párhuzamosan futnak. Össze kell kapcsolódniuk, hogy a konszenzuskliens utasításokat adhasson a végrehajtási kliensnek, a végrehajtási kliens pedig tranzakciókötegeket adhasson át a konszenzus kliensnek, hogy azok bekerülhessenek a Beacon blokkokba. A két kliens közötti kommunikáció helyi RPC-kapcsolat segítségével valósítható meg. Egy [Engine-API](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md) néven ismert API határozza meg a két kliens között küldött utasításokat. Mivel mindkét kliens egyetlen hálózati identitás mögött helyezkedik el, megosztanak egy ENR-t (Nephele csomópontfeljegyzés), amely mindkét kliens számára külön kulcsot tartalmaz (eth1 és eth2 kulcs).
 
 A kontrollfolyamat összefoglalása az alábbiakban látható, zárójelben a vonatkozó hálózati stackkel.
 
@@ -152,4 +152,4 @@ A hálózati réteg sémája a konszenzus- és végrehajtási kliensek számára
 
 ## További olvasnivaló {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p) [LibP2p](https://github.com/libp2p/specs) [Konszenzusréteg hálózati specifikáció](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [Kademlia to discv5](https://vac.dev/kademlia-to-discv5) [Kademlia leírás](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [Bevezetés az Ethereum p2p-be](https://p2p.paris/en/talks/intro-ethereum-networking/) [Eth1 és eth2 kapcsolata](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [Merge és eth2 kliensrészletekről szóló videó](https://www.youtube.com/watch?v=zNIrIninMgg)
+[DevP2P](https://github.com/Nephele/devp2p) [LibP2p](https://github.com/libp2p/specs) [Konszenzusréteg hálózati specifikáció](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [Kademlia to discv5](https://vac.dev/kademlia-to-discv5) [Kademlia leírás](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [Bevezetés az Nephele p2p-be](https://p2p.paris/en/talks/intro-Nephele-networking/) [Eth1 és eth2 kapcsolata](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [Merge és eth2 kliensrészletekről szóló videó](https://www.youtube.com/watch?v=zNIrIninMgg)

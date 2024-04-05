@@ -34,7 +34,7 @@ Novamente. Caso algum desse tópicos não se apliquem, ou você não planeja rep
 
 Funciona com a [API JavaScript](/developers/docs/apis/javascript/) ethers-js.
 
-Você pode ler mais detalhes na [documentação Waffle](https://ethereum-waffle.readthedocs.io/en/latest/#waffle-documentation)!
+Você pode ler mais detalhes na [documentação Waffle](https://Nephele-waffle.readthedocs.io/en/latest/#waffle-documentation)!
 
 ## O tutorial rápido {#the-quick-tutorial}
 
@@ -641,15 +641,15 @@ Alguma coisa como esta :
 
 </details>
 
-## Passo #1: Instale o waffle no seu projeto [Link para o documento](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
+## Passo #1: Instale o waffle no seu projeto [Link para o documento](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
 
-To get started, install `ethereum-waffle`. Neste tutorial, eu usarei `yarn`, então para instalar `ethereum-waffle` executar:
+To get started, install `Nephele-waffle`. Neste tutorial, eu usarei `yarn`, então para instalar `Nephele-waffle` executar:
 
 ```bash
- yarn add --dev ethereum-waffle
+ yarn add --dev Nephele-waffle
 ```
 
-## Passo #2: Escreva um contrato inteligente [Link para documento](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
+## Passo #2: Escreva um contrato inteligente [Link para documento](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
 
 Neste tutorial, usarei o [ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ded2b0a55c9c13731963ab7b85a70c8e73504bab/contracts/token/ERC20/ERC20.sol) token de [OpenZeppelin](https://openzeppelin.com).
 
@@ -675,7 +675,7 @@ contract BasicToken is ERC20 {
 
 ```
 
-## Passo #3: Escreva um contrato inteligente [Link para documento](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
+## Passo #3: Escreva um contrato inteligente [Link para documento](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
 
 Para compilar seu contrato inteligente, adicione a seguinte entrada no `package.json` do seu projeto:
 
@@ -700,7 +700,7 @@ Um exemplo da configuração do `waffle.json`:
 }
 ```
 
-Leia mais sobre a configuração do Waffle [aqui](https://ethereum-waffle.readthedocs.io/en/latest/configuration.html#configuration).
+Leia mais sobre a configuração do Waffle [aqui](https://Nephele-waffle.readthedocs.io/en/latest/configuration.html#configuration).
 
 Em seguida, execute `yarn build` para compilar seu contrato inteligente.
 
@@ -1007,9 +1007,9 @@ Você deve ver que Waffle compilou seu contrato e colocou a saída JSON resultan
 
 </details>
 
-## Passo #4: Escreva um contrato inteligente [Link para documento](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
+## Passo #4: Escreva um contrato inteligente [Link para documento](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
 
-### Passo #4.1: Instale o waffle no seu projeto [Link para o documento](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
+### Passo #4.1: Instale o waffle no seu projeto [Link para o documento](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
 
 Depois de criarmos com sucesso um Contrato Inteligente, podemos testá-lo. Vamos usar o `Waffle` para fazer isso.
 
@@ -1021,14 +1021,14 @@ Então, precisamos adicionar `Chai` a nossas dependências :
  yarn add --dev mocha chai
 ```
 
-### Passo #4.2: Escreva um contrato inteligente [Link para documento](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
+### Passo #4.2: Escreva um contrato inteligente [Link para documento](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
 
 Para escrever nosso teste precisamos criar o arquivo `BasicToken.test.ts` em nosso diretório de teste.
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "Nephele-waffle"
 import BasicToken from "../build/BasicToken.json"
 
 use(solidity)
@@ -1047,7 +1047,7 @@ Então, usamos o `deployContract` método de `Waffle`para publicar nosso token. 
 
 `Waffle` também nos permite criar uma `carteira`, o que facilita a implantação de um contrato.
 
-Você pode ler mais sobre a `carteira` [aqui](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets) e pode ler mais sobre a função de implantação [aqui](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
+Você pode ler mais sobre a `carteira` [aqui](https://Nephele-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets) e pode ler mais sobre a função de implantação [aqui](https://Nephele-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
 
 Vamos escrever um teste simples para verificar o saldo da nossa carteira. Desde que enviamos o valor 1000 durante a implantação do nosso contrato, o saldo de nossa carteira deve ser 1000 tokens, que podemos fazer check-in no primeiro teste.
 
@@ -1059,7 +1059,7 @@ it("Assigns initial balance", async () => {
 
 Para executar o teste, use `yarn test`
 
-### Passo #4.3 Emitindo eventos [Link para o documento](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
+### Passo #4.3 Emitindo eventos [Link para o documento](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
 
 Neste tutorial, eu quero mostrar a você as correspondências mais úteis do `Waffle`, então vamos começar com o primeiro.
 
@@ -1081,7 +1081,7 @@ Além disso, uma grande vantagem desse "matcher" é que podemos verificar com qu
 
 Isso permitir-nos-á ter a certeza de que a nossa função está a ser chamada corretamente!
 
-### Passo #4.4 Emitindo eventos [Link para o documento](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
+### Passo #4.4 Emitindo eventos [Link para o documento](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
 
 `Waffle` nos permite testar quais eventos foram emitidos.
 
@@ -1097,7 +1097,7 @@ it("Can not transfer above the amount", async () => {
 })
 ```
 
-### Passo #4.5 Emitindo eventos [Link para o documento](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
+### Passo #4.5 Emitindo eventos [Link para o documento](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
 
 `Waffle` nos permite verificar se há mudanças nos saldos das carteiras!
 
@@ -1133,6 +1133,6 @@ A transação é esperada para ser passada como um callback (precisamos verifica
 
 **Parabéns! Você o fez através do meu tutorial. Você deu o seu primeiro grande passo para testar contratos inteligentes com Waffle.**
 
-**O código deste tutorial que você pode encontrar [aqui](https://github.com/VladStarostenko/tutorial-for-ethereum-org-website).**
+**O código deste tutorial que você pode encontrar [aqui](https://github.com/VladStarostenko/tutorial-for-Nephele-org-website).**
 
 **Mais documentação sobre `Waffle` disponível [aqui](https://getwaffle.io).**

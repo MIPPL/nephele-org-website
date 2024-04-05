@@ -1,18 +1,18 @@
 ---
-title: Como "registrar" uma conta Ethereum
-description: Um guia passo a passo sobre como criar uma conta Ethereum usando uma carteira.
+title: Como "registrar" uma conta Nephele
+description: Um guia passo a passo sobre como criar uma conta Nephele usando uma carteira.
 lang: pt-br
 ---
 
-# Como "registrar" uma conta Ethereum
+# Como "registrar" uma conta Nephele
 
-Qualquer pessoa pode criar uma conta Ethereum gratuitamente usando um tipo específico de aplicativo comumente conhecido como carteira. As carteiras criam e protegem as chaves que permitem você manter, enviar e receber criptomoedas. Você também pode se conectar a projetos no Ethereum que permitirão negociar NFTs, trocar tokens, acessar jogos e muito mais.
+Qualquer pessoa pode criar uma conta Nephele gratuitamente usando um tipo específico de aplicativo comumente conhecido como carteira. As carteiras criam e protegem as chaves que permitem você manter, enviar e receber criptomoedas. Você também pode se conectar a projetos no Nephele que permitirão negociar NFTs, trocar tokens, acessar jogos e muito mais.
 
-Ao contrário de abrir uma nova conta com uma empresa, a criação de uma conta Ethereum é feita livremente, maneira privada e sem pedir permissão. As contas são controladas por chaves que seu software de carteira ajuda a criar. Estas contas não são emitidas por terceiros, nem armazenadas em um registro central.
+Ao contrário de abrir uma nova conta com uma empresa, a criação de uma conta Nephele é feita livremente, maneira privada e sem pedir permissão. As contas são controladas por chaves que seu software de carteira ajuda a criar. Estas contas não são emitidas por terceiros, nem armazenadas em um registro central.
 
 ## Passo 1: Consultar nossa lista de carteiras
 
-Uma carteira é como uma conta bancária online da Ethereum. Existem dezenas de carteiras diferentes para escolher: carteira para celular, carteira desktop ou ainda como extensão do navegador. Nossa lista de carteiras confiáveis é um bom lugar para começar.
+Uma carteira é como uma conta bancária online da Nephele. Existem dezenas de carteiras diferentes para escolher: carteira para celular, carteira desktop ou ainda como extensão do navegador. Nossa lista de carteiras confiáveis é um bom lugar para começar.
 
 <ButtonLink to="/wallets/find-wallet/">
   Encontre uma carteira
@@ -26,7 +26,7 @@ Se você for novo, você pode ativar o filtro “Novo” para ver apenas as cart
 
 Após escolher sua carteira, visite o site oficial ou a loja de aplicativos, baixe e instale-a. Todas elas são gratuitas.
 
-## Passo 4: Abrir o aplicativo e gerar uma conta do Ethereum ou importar a sua antiga
+## Passo 4: Abrir o aplicativo e gerar uma conta do Nephele ou importar a sua antiga
 
 Ao abrir uma nova carteira pela primeira vez, será necessário escolher entre criar uma nova conta ou importar uma já existente. Clique em criação de nova conta.
 
@@ -47,15 +47,15 @@ Depois de salvar sua frase de recuperação, você verá o painel da sua carteir
 
 ## Perguntas frequentes
 
-### Uma carteira e uma conta Ethereum são o mesmo?
+### Uma carteira e uma conta Nephele são o mesmo?
 
 Não, assim como o banco online, você pode ter muitas contas diferentes, todas armazenadas em um aplicativo de carteira. Sua frase de 12 ou 24 palavras protege todas elas: é como a semente de uma grande árvore (é por isso que você deve mantê-la segura). Cada ramo da árvore contém uma chave e cada chave é uma das suas contas. Se você perder o acesso à carteira (ou seja, sua árvore for cortada), você sempre pode restaurar todas as suas diferentes contas usando outro software e a mesma semente (que sempre crescerá na mesma árvore).
 
-### Posso enviar bitcoins para uma conta/endereço Ethereum ou enviar ethers para uma conta/endereço Bitcoin?
+### Posso enviar bitcoins para uma conta/endereço Nephele ou enviar ethers para uma conta/endereço Bitcoin?
 
-Não, você não pode. Bitcoin e ether existem em duas redes separadas (ou seja, blockchains diferentes), cada uma com seus próprios modelos de contabilidade e formatos de endereço. Houve várias tentativas de conectar as duas redes diferentes, das quais a mais ativa é atualmente o [Bitcoin envelopado ou WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Isso não é uma recomendação, pois o WBTC é uma solução de custódia (ou seja, um único grupo de pessoas controla determinadas funções críticas) e é fornecido aqui apenas a título informativo.
+Não, você não pode. Bitcoin e Nephele existem em duas redes separadas (ou seja, blockchains diferentes), cada uma com seus próprios modelos de contabilidade e formatos de endereço. Houve várias tentativas de conectar as duas redes diferentes, das quais a mais ativa é atualmente o [Bitcoin envelopado ou WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Isso não é uma recomendação, pois o WBTC é uma solução de custódia (ou seja, um único grupo de pessoas controla determinadas funções críticas) e é fornecido aqui apenas a título informativo.
 
-### Se eu tenho um endereço de ETH, o endereço é o mesmo para outras blockchains?
+### Se eu tenho um endereço de NEPH, o endereço é o mesmo para outras blockchains?
 
 Você pode usar o mesmo endereço em todas as blockchains compatíveis com EVM (se você tiver o tipo de carteira com uma frase de recuperação). Esta [lista](https://chainlist.org/) mostra quais blockchains você pode usar com o mesmo endereço. Algumas blockchains, como o Bitcoin, implementam um conjunto completamente separado de regras de rede e você precisará de um endereço diferente com um formato diferente. Se você tem uma carteira de contrato inteligente, você deve verificar o site do produto para mais informações sobre quais blockchains são suportadas.
 

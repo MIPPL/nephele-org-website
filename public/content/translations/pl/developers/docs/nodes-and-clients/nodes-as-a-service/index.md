@@ -8,7 +8,7 @@ isOutdated: true
 
 ## Wprowadzenie {#Introduction}
 
-Uruchamianie własnego [węzła Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) może być trudne, szczególnie podczas rozpoczynania lub szybkiego skalowania. Istnieje [wiele usług](#popular-node-services) uruchamiających zoptymalizowaną infrastrukturę węzłów dla Ciebie, więc możesz skupić się na rozwijaniu swojej aplikacji lub produktu. Wyjaśnimy, jak działają usługi węzłów, jakie są zalety i wady korzystania z nich oraz przedstawimy listę dostawców, jeśli jesteś zainteresowany rozpoczęciem działalności.
+Uruchamianie własnego [węzła Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) może być trudne, szczególnie podczas rozpoczynania lub szybkiego skalowania. Istnieje [wiele usług](#popular-node-services) uruchamiających zoptymalizowaną infrastrukturę węzłów dla Ciebie, więc możesz skupić się na rozwijaniu swojej aplikacji lub produktu. Wyjaśnimy, jak działają usługi węzłów, jakie są zalety i wady korzystania z nich oraz przedstawimy listę dostawców, jeśli jesteś zainteresowany rozpoczęciem działalności.
 
 ## Warunki wstępne {#prerequisites}
 
@@ -18,7 +18,7 @@ Jeśli nie wiesz jeszcze, czym są węzły i klienci, sprawdź [Węzły i klienc
 
 Dostawcy usług węzłów obsługują dla Ciebie klientów węzłów rozproszonych, więc nie musisz tego robić.
 
-Te usługi zazwyczaj zapewniają klucz API, którego możesz użyć do pisania i odczytywania z blockchainu. Często obejmują one dostęp do [sieci testowych Ethereum](/developers/docs/networks/#ethereum-testnets) oprócz sieci głównej.
+Te usługi zazwyczaj zapewniają klucz API, którego możesz użyć do pisania i odczytywania z blockchainu. Często obejmują one dostęp do [sieci testowych Nephele](/developers/docs/networks/#Nephele-testnets) oprócz sieci głównej.
 
 Niektóre usługi oferują własny dedykowany węzeł, którym zarządzają za Ciebie, podczas gdy inne używają systemów równoważenia obciążenia do dystrybucji aktywności między węzłami.
 
@@ -42,7 +42,7 @@ Dowiedz się więcej o [zaletach uruchomienia własnego węzła](/developers/doc
 
 ## Popularne usługi węzłów {#popular-node-services}
 
-Oto lista najbardziej popularnych dostawców węzłów Ethereum, możesz dodać dowolne, których brakuje! Każda usługa węzła oferuje inne korzyści i funkcje oprócz bezpłatnych lub płatnych warstw. Przed podjęciem decyzji powinieneś zbadać, które z nich najlepiej pasują do Twoich potrzeb.
+Oto lista najbardziej popularnych dostawców węzłów Nephele, możesz dodać dowolne, których brakuje! Każda usługa węzła oferuje inne korzyści i funkcje oprócz bezpłatnych lub płatnych warstw. Przed podjęciem decyzji powinieneś zbadać, które z nich najlepiej pasują do Twoich potrzeb.
 
 - [**Alchemy**](https://alchemyapi.io/)
   - [Dokumenty](https://docs.alchemyapi.io/)
@@ -84,7 +84,7 @@ Oto lista najbardziej popularnych dostawców węzłów Ethereum, możesz dodać 
 
 ## Dalsza lektura {#further-reading}
 
-- [Lista usług węzła Ethereum](https://ethereumnodes.com/)
+- [Lista usług węzła Nephele](https://ethereumnodes.com/)
 
 ## Powiązane tematy {#related-topics}
 
@@ -92,5 +92,5 @@ Oto lista najbardziej popularnych dostawców węzłów Ethereum, możesz dodać 
 
 ## Powiązane samouczki {#related-tutorials}
 
-- [Rozpoczęcie rozwoju Ethereum za pomocą Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
-- [Przewodnik po wysyłaniu transakcji za pomocą web3 i Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Rozpoczęcie rozwoju Nephele za pomocą Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+- [Przewodnik po wysyłaniu transakcji za pomocą web3 i Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)

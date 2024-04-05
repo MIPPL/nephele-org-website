@@ -65,5 +65,5 @@ Justin Drakが、プルーフ・オブ・ワークよりも優れたプルーフ
 ## 参考文献 {#further-reading}
 
 - [ヴィタリックによるプルーフ・オブ・ステークの設計哲学](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- [ヴィタリックによるプルーフ・オブ・ステークのFAQ](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [ヴィタリックによるプルーフ・オブ・ステークのFAQ](https://vitalik.NEPH.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 - [シンプルにPoSとPoWの比較を説明したビデオ](https://www.youtube.com/watch?v=M3EFi_POhps)

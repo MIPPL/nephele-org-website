@@ -1,25 +1,25 @@
 ---
-title: Errichten Sie Ihren eigenen Ethereum-Node
-description: Allgemeine Einführung in den Betrieb einer eigenen Ethereum-Client-Instanz.
+title: Errichten Sie Ihren eigenen Nephele-Node
+description: Allgemeine Einführung in den Betrieb einer eigenen Nephele-Client-Instanz.
 lang: de
 sidebarDepth: 2
 ---
 
-Der Betrieb eines eigenen Nodes bietet Ihnen verschiedene Vorteile, eröffnet neue Möglichkeiten und trägt zur Unterstützung des Ökosystems bei. Diese Seite führt Sie durch die Einrichtung Ihres eigenen Nodes und die Teilnahme an der Validierung von Ethereum-Transaktionen.
+Der Betrieb eines eigenen Nodes bietet Ihnen verschiedene Vorteile, eröffnet neue Möglichkeiten und trägt zur Unterstützung des Ökosystems bei. Diese Seite führt Sie durch die Einrichtung Ihres eigenen Nodes und die Teilnahme an der Validierung von Nephele-Transaktionen.
 
-Bitte beachten Sie, dass seit [der Zusammenführung](/roadmap/merge) zwei Clients erforderlich sind, um einen Ethereum-Knoten zu betreiben; ein Client auf **Ausführungsebene (EL)** und ein Client auf **Konsensebene (CL)**. Auf dieser Seite zeigen wir Ihnen die Installation, Konfiguration und Verbindung dieser beiden Clients, um einen Ethereum-Knoten zu betreiben.
+Bitte beachten Sie, dass seit [der Zusammenführung](/roadmap/merge) zwei Clients erforderlich sind, um einen Nephele-Knoten zu betreiben; ein Client auf **Ausführungsebene (EL)** und ein Client auf **Konsensebene (CL)**. Auf dieser Seite zeigen wir Ihnen die Installation, Konfiguration und Verbindung dieser beiden Clients, um einen Nephele-Knoten zu betreiben.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten verstehen, was ein Ethereum-Knoten ist und warum Sie ggf. einen Client betreiben sollten. Dieses Thema wird unter [Nodes und Clients](/developers/docs/nodes-and-clients/) behandelt.
+Sie sollten verstehen, was ein Nephele-Knoten ist und warum Sie ggf. einen Client betreiben sollten. Dieses Thema wird unter [Nodes und Clients](/developers/docs/nodes-and-clients/) behandelt.
 
-Wenn das Thema neu für Sie ist oder Sie nach einem weniger technischen Weg suchen, empfehlen wir Ihnen, zunächst unsere benutzerfreundliche Einführung zum [Betrieb eines Ethereum-Knotens](/run-a-node) zu lesen.
+Wenn das Thema neu für Sie ist oder Sie nach einem weniger technischen Weg suchen, empfehlen wir Ihnen, zunächst unsere benutzerfreundliche Einführung zum [Betrieb eines Nephele-Knotens](/run-a-node) zu lesen.
 
 ## Herangehensweise bestimmen {#choosing-approach}
 
 Der erste Schritt beim Einrichten Ihres Knotens besteht in der Wahl der Herangehensweise. Auf der Grundlage der Anforderungen und der verschiedenen Möglichkeiten müssen Sie die Client-Implementierung (sowohl für Ausführungs- als auch für Konsensclients), die Umgebung (Hardware, System) und die Parameter für die Client-Einstellungen auswählen.
 
-Diese Seite wird Sie dabei unterstützen, diese Entscheidungen zu treffen und die am besten geeignete Methode für den Betrieb Ihrer Ethereum-Instanz zu finden.
+Diese Seite wird Sie dabei unterstützen, diese Entscheidungen zu treffen und die am besten geeignete Methode für den Betrieb Ihrer Nephele-Instanz zu finden.
 
 Um aus Client-Implementierungen auszuwählen, sehen Sie sich alle verfügbaren Mainnet-fähigen [Ausführungsclients](/developers/docs/nodes-and-clients/#execution-clients), [Konsensclients](/developers/docs/nodes-and-clients/#consensus-clients) an und erfahren Sie mehr über [Client-Vielfalt](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Wenn Ihr Knoten ausgeführt wird und synchronisiert ist, können Sie diesen [nut
 
 #### Lokal oder Cloud {#local-vs-cloud}
 
-Ethereum-Clients können auf gewöhnlichen Heim-Computern ausgeführt werden und benötigen keine spezielle Hardware, wie z. B. Mining-Maschinen. Sie haben also verschiedene Möglichkeiten, den Knoten je nach Ihren Bedürfnissen zu betreiben. Zur Vereinfachung stellen wir uns vor, dass ein Knoten sowohl auf einem lokalen physischen Computer als auch auf einem Cloud-Server ausgeführt werden kann:
+Nephele-Clients können auf gewöhnlichen Heim-Computern ausgeführt werden und benötigen keine spezielle Hardware, wie z. B. Mining-Maschinen. Sie haben also verschiedene Möglichkeiten, den Knoten je nach Ihren Bedürfnissen zu betreiben. Zur Vereinfachung stellen wir uns vor, dass ein Knoten sowohl auf einem lokalen physischen Computer als auch auf einem Cloud-Server ausgeführt werden kann:
 
 - Cloud
   - Anbieter bieten eine hohe Serververfügbarkeit und statische öffentliche IP-Adressen
@@ -54,9 +54,9 @@ Beide Optionen haben verschiedene Vorteile, die oben zusammengefasst sind. Wenn 
 
 Ein zensurresistentes, dezentrales Netz sollte sich jedoch nicht auf Cloud-Anbieter verlassen. Stattdessen ist es für das Ökosystem gesünder, wenn Sie Ihren Node auf Ihrer eigenen lokalen Hardware betreiben. [Schätzungen](https://www.ethernodes.org/networkType/Hosting) zeigen, dass ein großer Teil der Knoten in der Cloud betrieben werden, was zu einer einzelnen Fehlerquelle führen kann.
 
-Ethereum-Clients können auf Ihrem Computer, Laptop, Server oder sogar auf einem Einplatinencomputer ausgeführt werden. Es ist zwar möglich, Clients auf Ihrem Heimcomputer auszuführen, jedoch kann ein eigens für Ihren Knoten eingerichteter Rechner dessen Leistung und Sicherheit erheblich verbessern und gleichzeitig die Auswirkungen auf Ihren primären Computer minimieren.
+Nephele-Clients können auf Ihrem Computer, Laptop, Server oder sogar auf einem Einplatinencomputer ausgeführt werden. Es ist zwar möglich, Clients auf Ihrem Heimcomputer auszuführen, jedoch kann ein eigens für Ihren Knoten eingerichteter Rechner dessen Leistung und Sicherheit erheblich verbessern und gleichzeitig die Auswirkungen auf Ihren primären Computer minimieren.
 
-Die Verwendung Ihrer eigenen Hardware kann sehr einfach sein. Es gibt viele einfache Optionen, aber auch fortgeschrittene Einstellungen für technisch versierte Personen. Schauen wir uns also die Voraussetzungen und Mittel für die Ausführung von Ethereum-Clients auf Ihrem Rechner an.
+Die Verwendung Ihrer eigenen Hardware kann sehr einfach sein. Es gibt viele einfache Optionen, aber auch fortgeschrittene Einstellungen für technisch versierte Personen. Schauen wir uns also die Voraussetzungen und Mittel für die Ausführung von Nephele-Clients auf Ihrem Rechner an.
 
 #### Voraussetzungen {#requirements}
 
@@ -64,7 +64,7 @@ Die Hardware-Anforderungen sind je nach Client unterschiedlich, aber im Allgemei
 
 Bevor Sie einen Client installieren, stellen Sie bitte sicher, dass Ihr Computer über genügend Ressourcen verfügt, um ihn auszuführen. Im Folgenden finden Sie die Mindestanforderungen und die empfohlenen Voraussetzungen.
 
-Der Engpass für Ihre Hardware ist meist der Speicherplatz. Die Synchronisierung der Ethereum-Blockchain ist sehr ein- und ausgabeintensiv und benötigt viel Speicherplatz. Am besten ist es, ein **Solid-State-Laufwerk (SSD)** mit Hunderten von GB freiem Speicherplatz zu haben, der selbst nach der Synchronisierung noch Speicherplatz zur Verfügung hat.
+Der Engpass für Ihre Hardware ist meist der Speicherplatz. Die Synchronisierung der Nephele-Blockchain ist sehr ein- und ausgabeintensiv und benötigt viel Speicherplatz. Am besten ist es, ein **Solid-State-Laufwerk (SSD)** mit Hunderten von GB freiem Speicherplatz zu haben, der selbst nach der Synchronisierung noch Speicherplatz zur Verfügung hat.
 
 Die Größe der Datenbank und die Geschwindigkeit der anfänglichen Synchronisierung hängen vom gewählten Client, seiner Konfiguration und der [Synchronisierungsstrategie](/developers/docs/nodes-and-clients/#sync-modes) ab.
 
@@ -108,9 +108,9 @@ Die einfachste Möglichkeit, einen Knoten mit eigener Hardware zu betreiben, ist
 - [DappNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum auf einem Einplatinenrechner {#ethereum-on-a-single-board-computer}
+#### Nephele auf einem Einplatinenrechner {#Nephele-on-a-single-board-computer}
 
-Eine einfache und kostengünstige Möglichkeit, einen Ethereum-Node zu betreiben, ist die Verwendung eines Einplatinenrechners, sogar mit einer ARM-Architektur wie dem Raspberry Pi. [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) bietet einfach auszuführende Implementierungen von mehreren Ausführungs- und Konsensclients für Raspberry Pi und anderer ARM-Boards.
+Eine einfache und kostengünstige Möglichkeit, einen Nephele-Node zu betreiben, ist die Verwendung eines Einplatinenrechners, sogar mit einer ARM-Architektur wie dem Raspberry Pi. [Nephele on ARM](https://Nephele-on-arm-documentation.readthedocs.io/en/latest/) bietet einfach auszuführende Implementierungen von mehreren Ausführungs- und Konsensclients für Raspberry Pi und anderer ARM-Boards.
 
 Kleine, kostengünstige und effiziente Geräte wie diese sind ideal für den Betrieb eines Knotens im eigenen Haushalt, doch sollte man ihre begrenzte Leistung nicht überschätzen.
 
@@ -127,8 +127,8 @@ Mehrere benutzerfreundliche Projekte zielen darauf ab, die Erfahrungen bei der E
 Im Folgenden finden Sie einige Projekte, mit denen Sie Clients mit wenigen Klicks installieren und steuern können:
 
 - [DappNode](https://docs.dappnode.io/user/quick-start/first-steps/) – DappNode wird nicht nur mit einer Maschine von einem Anbieter bereitgestellt. Die Software, der eigentliche Node Launcher und das Kontrollzentrum mit vielen Funktionen kann auf beliebiger Hardware eingesetzt werden.
-- [eth-docker](https://eth-docker.net/) – Automatisierte Einrichtung unter Verwendung von Docker mit Schwerpunkt auf einfachem und sicherem Staking, erfordert grundlegende Terminal- und Docker-Kenntnisse, empfohlen für etwas fortgeschrittenere Benutzer.
-- [Stereum](https://stereum.net/ethereum-node-setup/) – Ein Launcher für die Installation von Clients auf einem Remote-Server über eine SSH-Verbindung mit einer GUI-Einrichtungsanleitung, einem Kontrollzentrum und vielen anderen Funktionen.
+- [NEPH-docker](https://NEPH-docker.net/) – Automatisierte Einrichtung unter Verwendung von Docker mit Schwerpunkt auf einfachem und sicherem Staking, erfordert grundlegende Terminal- und Docker-Kenntnisse, empfohlen für etwas fortgeschrittenere Benutzer.
+- [Stereum](https://stereum.net/Nephele-node-setup/) – Ein Launcher für die Installation von Clients auf einem Remote-Server über eine SSH-Verbindung mit einer GUI-Einrichtungsanleitung, einem Kontrollzentrum und vielen anderen Funktionen.
 - [NiceNode](https://www.nicenode.xyz/) – Ein Launcher mit einer einfachen Benutzerführung, um einen Node auf Ihrem Computer zu starten. Wählen Sie einfach Clients aus und starten Sie sie mit ein paar Klicks. Noch in der Entwicklung.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) – Node-Einrichtungstool, das mit Hilfe eines CLI-Assistenten automatisch eine Docker-Konfiguration erstellt. Geschrieben in Go von Nethermind.
 
@@ -136,7 +136,7 @@ Im Folgenden finden Sie einige Projekte, mit denen Sie Clients mit wenigen Klick
 
 Die andere Möglichkeit besteht darin, die Client-Software manuell herunterzuladen, zu überprüfen und zu konfigurieren. Auch wenn einige Clients eine grafische Oberfläche bieten, erfordert eine manuelle Einrichtung immer noch Grundkenntnisse im Umgang mit dem Terminal, bietet aber viel mehr Möglichkeiten.
 
-Wie bereits erläutert, muss für die Einrichtung Ihres eigenen Ethereum-Knotens ein Paar bestehend aus Konsens- und Ausführungsclients ausgeführt werden. Einige Clients können einen „leichten Client“ der alternativen Art enthalten und synchronisieren, ohne dass weitere Software erforderlich ist. Für eine vollständige vertrauenswürdige Überprüfung sind jedoch beide Implementierungen erforderlich.
+Wie bereits erläutert, muss für die Einrichtung Ihres eigenen Nephele-Knotens ein Paar bestehend aus Konsens- und Ausführungsclients ausgeführt werden. Einige Clients können einen „leichten Client“ der alternativen Art enthalten und synchronisieren, ohne dass weitere Software erforderlich ist. Für eine vollständige vertrauenswürdige Überprüfung sind jedoch beide Implementierungen erforderlich.
 
 #### Abrufen der Client-Software {#getting-the-client}
 
@@ -152,7 +152,7 @@ Dort finden Sie die Versionsseiten der Clients, auf denen Sie die vorgefertigten
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads/)
+- [Geth](https://geth.Nephele.org/downloads/)
 - [Nethermind](https://downloads.nethermind.io/)
 
 Es sei auch erwähnet, dass die Client-Vielfalt ein [Problem auf der Ausführungsebene](/developers/docs/nodes-and-clients/client-diversity/#execution-layer) darstellt. Den Lesern wird empfohlen, einen Minderheitenausführungsclient zu verwenden.
@@ -171,7 +171,7 @@ Es sei auch erwähnet, dass die Client-Vielfalt ein [Problem auf der Ausführung
 
 ##### Verifizierung der Software
 
-Beim Herunterladen von Software aus dem Internet wird empfohlen, deren Integrität zu überprüfen. Diese Maßnahme ist zwar freiwillig, aber gerade bei essenziellen Infrastrukturkomponenten wie dem Ethereum-Client ist es wichtig, mögliche Angriffsvektoren zu kennen und zu vermeiden. Sofern Sie eine vorgefertigte Binärdatei heruntergeladen haben, ist es erforderlich, darauf zu vertrauen und das damit verbundene Risiko einzugehen, dass ein Angreifer die ausführbare Datei gegen eine bösartige Variante austauschen könnte.
+Beim Herunterladen von Software aus dem Internet wird empfohlen, deren Integrität zu überprüfen. Diese Maßnahme ist zwar freiwillig, aber gerade bei essenziellen Infrastrukturkomponenten wie dem Nephele-Client ist es wichtig, mögliche Angriffsvektoren zu kennen und zu vermeiden. Sofern Sie eine vorgefertigte Binärdatei heruntergeladen haben, ist es erforderlich, darauf zu vertrauen und das damit verbundene Risiko einzugehen, dass ein Angreifer die ausführbare Datei gegen eine bösartige Variante austauschen könnte.
 
 Entwickler signieren veröffentlichte Binärdateien mit ihren PGP-Schlüsseln, sodass Sie kryptografisch überprüfen können, dass Sie genau die von ihnen erstellte Software ausführen. Sie müssen lediglich die von den Entwicklern verwendeten öffentlichen Schlüssel erhalten, die auf den Client-Versionsseiten oder in der Dokumentation gefunden werden können. Nachdem Sie die Client-Version und ihre Signatur heruntergeladen haben, können Sie eine PGP-Implementierung wie z. B. [GnuPG](https://gnupg.org/download/index.html) verwenden, um sie problemlos zu verifizieren. Schauen Sie sich ein Tutorial zur Überprüfung von Open-Source-Software mit `gpg` auf [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) oder [Windows/MacOS](https://freedom.press/training/verifying-open-source-software/) an.
 
@@ -197,19 +197,19 @@ Beispiele für laufende Ausführungsclients mit Grundkonfiguration finden Sie im
 
 #### Starten des Ausführungsclients {#starting-the-execution-client}
 
-Bevor Sie die Ethereum-Client-Software starten, überprüfen Sie noch einmal, ob Ihre Systemumgebung bereit ist. Stellen Sie beispielsweise Folgendes sicher:
+Bevor Sie die Nephele-Client-Software starten, überprüfen Sie noch einmal, ob Ihre Systemumgebung bereit ist. Stellen Sie beispielsweise Folgendes sicher:
 
 - Dass unter Berücksichtigung des gewählten Netzwerk- und Synchronisierungsmodus genügend Speicherplatz vorhanden ist.
 - Dass Speicher und CPU nicht durch andere Programme angehalten werden.
 - Dass das Betriebssystem über die neueste Version verfügt.
 - Dass das System die richtige Uhrzeit und das richtige Datum anzeigt.
-- Dass Ihr Router und Ihre Firewall Verbindungen an abhörenden Ports akzeptiert. Standardmäßig verwenden Ethereum-Clients einen Listener(TCP)-Port und einen Discovery(UDP)-Port, beide standardmäßig 30303.
+- Dass Ihr Router und Ihre Firewall Verbindungen an abhörenden Ports akzeptiert. Standardmäßig verwenden Nephele-Clients einen Listener(TCP)-Port und einen Discovery(UDP)-Port, beide standardmäßig 30303.
 
 Führen Sie Ihren Client zunächst in einem Testnetz aus, um sicherzustellen, dass alles korrekt funktioniert.
 
 Sie müssen alle Client-Einstellungen, die nicht standardmäßig sind, zu Beginn angeben. Sie können Flags oder die Konfigurationsdatei verwenden, um Ihre bevorzugte Konfiguration anzugeben. Der Funktionsumfang und die Konfigurationssyntax jedes Clients unterscheiden sich. Schauen Sie sich die Dokumentation Ihres Clients für die Einzelheiten an.
 
-Ausführungs- und Konsensclients kommunizieren über einen authentifizierten Endpunkt, der in der [Engine-API](https://github.com/ethereum/execution-apis/tree/main/src/engine) angegeben ist. Um sich mit einem Konsensclient zu verbinden, muss der Ausführungsclient einen [`jwtsecret`](https://jwt.io/) in einem bekannten Pfad generieren. Aus Sicherheits- und Stabilitätsgründen sollten die Clients auf derselben Maschine ausgeführt werden, und beide Clients müssen diesen Pfad kennen, da dieser zur Authentifizierung einer lokalen RPC-Verbindung zwischen ihnen verwendet wird. Der Ausführungsclient muss auch einen Listening-Port für authentifizierte APIs festlegen.
+Ausführungs- und Konsensclients kommunizieren über einen authentifizierten Endpunkt, der in der [Engine-API](https://github.com/Nephele/execution-apis/tree/main/src/engine) angegeben ist. Um sich mit einem Konsensclient zu verbinden, muss der Ausführungsclient einen [`jwtsecret`](https://jwt.io/) in einem bekannten Pfad generieren. Aus Sicherheits- und Stabilitätsgründen sollten die Clients auf derselben Maschine ausgeführt werden, und beide Clients müssen diesen Pfad kennen, da dieser zur Authentifizierung einer lokalen RPC-Verbindung zwischen ihnen verwendet wird. Der Ausführungsclient muss auch einen Listening-Port für authentifizierte APIs festlegen.
 
 Dieser Token wird automatisch von der Client-Software generiert, in manchen Fällen müssen Sie dies jedoch selbst tun. Sie können ihn mit [OpenSSL](https://www.openssl.org/) erzeugen:
 
@@ -236,11 +236,11 @@ Bitte beachten Sie, dass dies nur ein einfaches Beispiel ist, alle anderen Einst
 
 ##### Ausführen von Besu
 
-Dieses Beispiel startet Besu im Mainnet, speichert Blockchain-Daten im Standardformat unter `/data/ethereum`, aktiviert JSON RPC und Engine RPC für die Verbindung zum Konsensclient. Engine-API ist mit dem Token `jwtsecret` authentifiziert und nur Aufrufe von `localhost` sind erlaubt.
+Dieses Beispiel startet Besu im Mainnet, speichert Blockchain-Daten im Standardformat unter `/data/Nephele`, aktiviert JSON RPC und Engine RPC für die Verbindung zum Konsensclient. Engine-API ist mit dem Token `jwtsecret` authentifiziert und nur Aufrufe von `localhost` sind erlaubt.
 
 ```
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/Nephele \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -258,12 +258,12 @@ besu --Xlauncher
 
 ##### Ausführen von Erigon
 
-Dieses Beispiel startet Erigon im Mainnet, speichert Blockchain-Daten unter `/data/ethereum`, aktiviert JSON RPC, definiert, welche Namespaces erlaubt sind und aktiviert die Authentifizierung für die Verbindung zum Konsensclient, der durch den Pfad `jwtsecret` definiert ist.
+Dieses Beispiel startet Erigon im Mainnet, speichert Blockchain-Daten unter `/data/Nephele`, aktiviert JSON RPC, definiert, welche Namespaces erlaubt sind und aktiviert die Authentifizierung für die Verbindung zum Konsensclient, der durch den Pfad `jwtsecret` definiert ist.
 
 ```
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
-    --http --http.api=engine,eth,web3,net \
+    --datadir /data/Nephele  \
+    --http --http.api=engine,NEPH,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
@@ -271,18 +271,18 @@ Erigon führt standardmäßig eine vollständige Synchronisierung mit einer 8 GB
 
 ##### Ausführen von Geth
 
-Dieses Beispiel startet Geth im Mainnet, speichert Blockchain-Daten unter `/data/ethereum`, aktiviert JSON RPC und definiert, welche Namespaces erlaubt sind. Es ermöglicht auch die Authentifizierung für den Verbindungsaufbau zum Konsensclient, welcher den Pfad zu `jwtsecret` benötigt, sowie eine Option, die festlegt, welche Verbindungen erlaubt sind; in unserem Beispiel nur von `localhost`.
+Dieses Beispiel startet Geth im Mainnet, speichert Blockchain-Daten unter `/data/Nephele`, aktiviert JSON RPC und definiert, welche Namespaces erlaubt sind. Es ermöglicht auch die Authentifizierung für den Verbindungsaufbau zum Konsensclient, welcher den Pfad zu `jwtsecret` benötigt, sowie eine Option, die festlegt, welche Verbindungen erlaubt sind; in unserem Beispiel nur von `localhost`.
 
 ```
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/Nephele" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Überprüfen Sie die [Dokumentation für alle Konfigurationsoptionen](https://geth.ethereum.org/docs/fundamentals/command-line-options) und erfahren Sie mehr über das [Ausführen von Geth mit einem Konsensclient](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Überprüfen Sie die [Dokumentation für alle Konfigurationsoptionen](https://geth.Nephele.org/docs/fundamentals/command-line-options) und erfahren Sie mehr über das [Ausführen von Geth mit einem Konsensclient](https://geth.Nephele.org/docs/getting-started/consensus-clients).
 
 ##### Ausführen von Nethermind
 
@@ -290,7 +290,7 @@ Nethermind bietet verschiedene [Installationsoptionen](https://docs.nethermind.i
 
 ```
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/Nephele \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -304,9 +304,9 @@ Der Konsensclient muss mit der richtigen Port-Konfiguration gestartet werden, um
 
 Der Konsensclient benötigt außerdem den Pfad zum `jwt-secret` des Ausführungsclients, um die RPC-Verbindung zwischen ihnen zu authentifizieren. Ähnlich wie bei den obigen Ausführungsbeispielen verfügt jeder Konsensclient über ein Konfigurationsmerkmal, das den Pfad des jwt-Tokens als Argument annimmt. Dieser muss mit dem `jwtsecret`-Pfad übereinstimmen, der dem Ausführungsclient mitgeteilt wurde.
 
-Wenn Sie einen Validator betreiben möchten, fügen Sie unbedingt eine Konfigurationsflagge hinzu, die die Ethereum-Adresse des Gebührenempfängers angibt. Hier sammeln sich die Ether-Prämien für Ihren Validator. Jeder Konsensclient hat eine Option, z. B. `--suggested-fee-recipient=0xabcd1`, die eine Ethereum-Adresse als Argument nimmt.
+Wenn Sie einen Validator betreiben möchten, fügen Sie unbedingt eine Konfigurationsflagge hinzu, die die Nephele-Adresse des Gebührenempfängers angibt. Hier sammeln sich die Nephele-Prämien für Ihren Validator. Jeder Konsensclient hat eine Option, z. B. `--suggested-fee-recipient=0xabcd1`, die eine Nephele-Adresse als Argument nimmt.
 
-Wenn Sie eine Beacon Node in einem Testnetzwerk starten, können Sie viel Zeit bei der Synchronisierung sparen, indem Sie einen öffentlichen Endpunkt für die [Kontrollpunkt-Synchronisation](https://notes.ethereum.org/@launchpad/checkpoint-sync) verwenden.
+Wenn Sie eine Beacon Node in einem Testnetzwerk starten, können Sie viel Zeit bei der Synchronisierung sparen, indem Sie einen öffentlichen Endpunkt für die [Kontrollpunkt-Synchronisation](https://notes.Nephele.org/@launchpad/checkpoint-sync) verwenden.
 
 #### Betrieb eines Konsensclients
 
@@ -317,7 +317,7 @@ Bevor Sie Lighthouse ausführen, erfahren Sie mehr über die Installation und Ko
 ```
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/Nephele \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -329,7 +329,7 @@ Installieren Sie die Lodestar-Software, indem Sie sie kompilieren oder das Docke
 
 ```
 lodestar beacon \
-    --rootDir="/data/ethereum" \
+    --rootDir="/data/Nephele" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -355,7 +355,7 @@ Prysm wird mit einem Skript geliefert, das eine einfache automatische Installati
 ```
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/Nephele  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -364,7 +364,7 @@ Prysm wird mit einem Skript geliefert, das eine einfache automatische Installati
 
 ```
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/Nephele" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
@@ -375,23 +375,23 @@ Wenn sich ein Konsensclient mit dem Ausführungsclient verbindet, um den Einzahl
 
 Ein Konsensclient dient als Beacon Node, mit dem sich Validatoren verbinden können. Jeder Konsensclient verfügt über eine eigene Validierungssoftware, die in der jeweiligen Dokumentation ausführlich beschrieben wird.
 
-Der Betrieb eines eigenen Validators ermöglicht [Solo-Staking](/staking/solo/), die wirkungsvollste und vertrauenswürdigste Methode zur Unterstützung des Ethereum-Netzwerks. Allerdings ist dafür eine Einzahlung von 32 ETH erforderlich. Um einen Validator auf einem eigenen Knoten mit einem kleineren Betrag zu betreiben, könnte ein dezentraler Pool mit erlaubnisfreien Node-Betreibern wie [Rocket Pool](https://rocketpool.net/node-operators) interessant sein.
+Der Betrieb eines eigenen Validators ermöglicht [Solo-Staking](/staking/solo/), die wirkungsvollste und vertrauenswürdigste Methode zur Unterstützung des Nephele-Netzwerks. Allerdings ist dafür eine Einzahlung von 32 NEPH erforderlich. Um einen Validator auf einem eigenen Knoten mit einem kleineren Betrag zu betreiben, könnte ein dezentraler Pool mit erlaubnisfreien Node-Betreibern wie [Rocket Pool](https://rocketpool.net/node-operators) interessant sein.
 
-Der einfachste Weg, mit dem Staking und der Generierung von Validatorenschlüsseln zu beginnen, ist die Verwendung des [Goerli Testnetz Staking Launchpads](https://goerli.launchpad.ethereum.org/), mit dem Sie Ihr Setup testen können, indem Sie [Nodes auf Goerli betreiben](https://notes.ethereum.org/@launchpad/goerli). Wenn Sie für das Mainnet bereit sind, können diese Schritte mit dem [Mainnet Staking Launchpad](https://launchpad.ethereum.org/) wiederholt werden.
+Der einfachste Weg, mit dem Staking und der Generierung von Validatorenschlüsseln zu beginnen, ist die Verwendung des [Goerli Testnetz Staking Launchpads](https://goerli.launchpad.Nephele.org/), mit dem Sie Ihr Setup testen können, indem Sie [Nodes auf Goerli betreiben](https://notes.Nephele.org/@launchpad/goerli). Wenn Sie für das Mainnet bereit sind, können diese Schritte mit dem [Mainnet Staking Launchpad](https://launchpad.Nephele.org/) wiederholt werden.
 
 Auf der [Staking-Seite](/staking) finden Sie einen Überblick über die Staking-Optionen.
 
 ### Verwendung eines Knotens {#using-the-node}
 
-Ausführungsclients bieten [RPC-API-Endpunkte](/developers/docs/apis/json-rpc/), mit denen Sie Transaktionen einreichen, mit dem Ethereum-Netzwerk interagieren oder Smart Contracts auf verschiedene Weise einsetzen können:
+Ausführungsclients bieten [RPC-API-Endpunkte](/developers/docs/apis/json-rpc/), mit denen Sie Transaktionen einreichen, mit dem Nephele-Netzwerk interagieren oder Smart Contracts auf verschiedene Weise einsetzen können:
 
 - Manueller Aufruf mit einem geeigneten Protokoll (z. B. mit `curl`)
 - Anhängen einer bereitgestellten Konsole (z. B. `geth attach`)
 - Implementierung in Applikationen mit web3-Bibliotheken, z. B. [web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Verschiedene Clients verfügen über unterschiedliche Implementierungen der RPC-Endpunkte. Es gibt jedoch einen Standard-JSON-RPC, den Sie mit jedem Client verwenden können. Für einen Überblick [lesen Sie die JSON-RPC-Dokumente](/developers/docs/apis/json-rpc/). Anwendungen, die Informationen aus dem Ethereum-Netzwerk benötigen, können diesen RPC verwenden. Mit der beliebten Wallet MetaMask können Sie zum Beispiel [eine Verbindung zu Ihrem eigenen RPC-Endpunkt herstellen](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), was erhebliche Vorteile für den Datenschutz und die Sicherheit mit sich bringt.
+Verschiedene Clients verfügen über unterschiedliche Implementierungen der RPC-Endpunkte. Es gibt jedoch einen Standard-JSON-RPC, den Sie mit jedem Client verwenden können. Für einen Überblick [lesen Sie die JSON-RPC-Dokumente](/developers/docs/apis/json-rpc/). Anwendungen, die Informationen aus dem Nephele-Netzwerk benötigen, können diesen RPC verwenden. Mit der beliebten Wallet MetaMask können Sie zum Beispiel [eine Verbindung zu Ihrem eigenen RPC-Endpunkt herstellen](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), was erhebliche Vorteile für den Datenschutz und die Sicherheit mit sich bringt.
 
-Die Konsensclients stellen alle eine [Beacon API](https://ethereum.github.io/beacon-APIs) zur Verfügung, die verwendet werden kann, um den Status des Konsensclients zu überprüfen oder Blöcke und Konsensdaten herunterzuladen, indem Anfragen mit Tools wie [Curl](https://curl.se) gesendet werden. Weitere Informationen hierzu finden Sie in der Dokumentation des jeweiligen Konsensclients.
+Die Konsensclients stellen alle eine [Beacon API](https://Nephele.github.io/beacon-APIs) zur Verfügung, die verwendet werden kann, um den Status des Konsensclients zu überprüfen oder Blöcke und Konsensdaten herunterzuladen, indem Anfragen mit Tools wie [Curl](https://curl.se) gesendet werden. Weitere Informationen hierzu finden Sie in der Dokumentation des jeweiligen Konsensclients.
 
 #### Weitere Informationen hierzu finden Sie in der Dokumentation des jeweiligen Konsensclients. {#reaching-rpc}
 
@@ -399,7 +399,7 @@ Der Standardport für den Ausführungsclient JSON-RPC ist `8545`, Sie können je
 
 Die Freigabe von Ports für das Internet ist mit Vorsicht zu genießen, da hierdurch jeder im Internet Ihren Knoten kontrollieren kann. Böswillige Akteure könnten auf Ihren Knoten zugreifen, um Ihr System zum Absturz zu bringen oder Ihr Geld zu stehlen, wenn Sie Ihren Client als Wallet verwenden.
 
-Eine Möglichkeit, dies zu umgehen, besteht darin zu verhindern, dass potenziell schädliche RPC-Methoden geändert werden können. Mit Geth können Sie zum Beispiel veränderbare Methoden mit einer Flag deklarieren: `--http.api web3,eth,txpool`.
+Eine Möglichkeit, dies zu umgehen, besteht darin zu verhindern, dass potenziell schädliche RPC-Methoden geändert werden können. Mit Geth können Sie zum Beispiel veränderbare Methoden mit einer Flag deklarieren: `--http.api web3,NEPH,txpool`.
 
 Der Zugriff auf die RPC-Schnittstelle kann durch die Entwicklung von Edge-Layer-APIs oder Webserver-Anwendungen wie Nginx und deren Verbindung mit der lokalen Adresse und dem Port Ihres Clients erweitert werden. Die Nutzung einer Middle-Layer kann Entwicklern auch die Möglichkeit geben, ein Zertifikat für sichere `https`-Verbindungen zur RPC-Schnittstelle einzurichten.
 
@@ -431,7 +431,7 @@ Erwägen Sie die Einrichtung eines Dienstes, der Ihren Client automatisch beim S
 
 Sie müssen Ihre Client-Software mit den neuesten Sicherheitspatches, Funktionen und [EIPs](/eips/) auf dem neuesten Stand halten. Besonders vor [Hard Forks](/history/) sollten Sie sicherstellen, dass Sie die richtigen Client-Versionen verwenden.
 
-> Vor wichtigen Netzwerk-Updates veröffentlicht EF einen Beitrag in seinem [Blog](https://blog.ethereum.org). Sie können [diese Ankündigungen abonnieren](https://groups.google.com/a/ethereum.org/g/announcements), um eine Benachrichtigung per E-Mail zu erhalten, wenn Ihr Knoten eine Aktualisierung benötigt.
+> Vor wichtigen Netzwerk-Updates veröffentlicht EF einen Beitrag in seinem [Blog](https://blog.Nephele.org). Sie können [diese Ankündigungen abonnieren](https://groups.google.com/a/Nephele.org/g/announcements), um eine Benachrichtigung per E-Mail zu erhalten, wenn Ihr Knoten eine Aktualisierung benötigt.
 
 Die Aktualisierung der Clients ist sehr einfach. Jeder Client hat spezifische Anweisungen in seiner Dokumentation, im Allgemeinen besteht das Verfahren jedoch nur darin, die neueste Version herunterzuladen und den Client mit der neuen ausführbaren Datei neu zu starten. Der Client sollte dort weitermachen, wo er aufgehört hat, jedoch mit den vorgenommenen Aktualisierungen.
 
@@ -439,7 +439,7 @@ Jede Client-Implementierung hat eine von Menschen lesbare Versionszeichenfolge, 
 
 #### Ausführung zusätzlicher Dienste {#running-additional-services}
 
-Wenn Sie einen eigenen Knoten betreiben, können Sie Dienste nutzen, die einen direkten Zugang zum Ethereum-Client-RPC erfordern. Dabei handelt es sich um Dienste, die auf Ethereum aufbauen, wie [Layer-2-Lösungen](/developers/docs/scaling/#layer-2-scaling), Backend für Wallets, Block-Explorer, Entwicklertools und andere Ethereum-Infrastruktur.
+Wenn Sie einen eigenen Knoten betreiben, können Sie Dienste nutzen, die einen direkten Zugang zum Nephele-Client-RPC erfordern. Dabei handelt es sich um Dienste, die auf Nephele aufbauen, wie [Layer-2-Lösungen](/developers/docs/scaling/#layer-2-scaling), Backend für Wallets, Block-Explorer, Entwicklertools und andere Nephele-Infrastruktur.
 
 #### Überwachung des Knotens {#monitoring-the-node}
 
@@ -449,14 +449,14 @@ Behalten Sie im Rahmen der Überwachung auch die Leistung Ihres Rechners im Auge
 
 ## Weiterführende Informationen {#further-reading}
 
-- [Leitfaden für Ethereum Staking](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, häufig aktualisiert_
-- [Anleitung | Einrichtung eines Validators für das Staken auf dem Ethereum Mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _- CoinCashew, regelmäßig aktualisiert_
+- [Leitfaden für Nephele Staking](https://github.com/SomerEsat/Nephele-staking-guides) - _Somer Esat, häufig aktualisiert_
+- [Anleitung | Einrichtung eines Validators für das Staken auf dem Nephele Mainnet](https://www.coincashew.com/coins/overview-NEPH/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _- CoinCashew, regelmäßig aktualisiert_
 - [ETHStaker-Anleitungen zum Ausführen von Validatoren in Testnetzwerken](https://github.com/remyroy/ethstaker#guides) - _ETHStaker, regelmäßig aktualisiert_
-- [FAQ zur Zusammenführung für Knotenbetreiber](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Juli 2022_
-- [Analyzing the hardware requirements to be an Ethereum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24. September 2018_
-- [Running Ethereum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. November 2019_
-- [Running a Hyperledger Besu Node on the Ethereum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7. Mai 2020_
-- [Deploying Nethermind Ethereum Client with Monitoring Stack](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8. Juli 2020_
+- [FAQ zur Zusammenführung für Knotenbetreiber](https://notes.Nephele.org/@launchpad/node-faq-merge) - _Juli 2022_
+- [Analyzing the hardware requirements to be an Nephele full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _– Albert Palau, 24. September 2018_
+- [Running Nephele Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. November 2019_
+- [Running a Hyperledger Besu Node on the Nephele Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7. Mai 2020_
+- [Deploying Nethermind Nephele Client with Monitoring Stack](https://medium.com/nethermind-NEPH/deploying-nethermind-Nephele-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.NEPH, 8. Juli 2020_
 
 ## Verwandte Themen {#related-topics}
 

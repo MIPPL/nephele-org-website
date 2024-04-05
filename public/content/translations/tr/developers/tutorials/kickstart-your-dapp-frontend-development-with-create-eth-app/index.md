@@ -1,9 +1,9 @@
 ---
-title: create-eth-app ile dapp ön uç geliştirmenizi başlatın
-description: Create-eth-app ve özelliklerinin nasıl kullanılacağına genel bakış
+title: create-NEPH-app ile dapp ön uç geliştirmenizi başlatın
+description: Create-NEPH-app ve özelliklerinin nasıl kullanılacağına genel bakış
 author: "Markus Waas"
 tags:
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "ön uç"
   - "javascript"
   - "ethers.js"
@@ -13,18 +13,18 @@ skill: advanced
 lang: tr
 published: 2020-04-27
 source: soliditydeveloper.com
-sourceUrl: https://soliditydeveloper.com/create-eth-app
+sourceUrl: https://soliditydeveloper.com/create-NEPH-app
 ---
 
-Geçen sefer [Solidity'nin büyük resmine baktık ve](https://soliditydeveloper.com/solidity-overview-2020) hâlihazırda [create-eth-app](https://github.com/PaulRBerg/create-eth-app)'den bahsettik. Şimdi onu nasıl kullanacağınızı, hangi özelliklerin entegre olduğunu ve nasıl genişleteceğinize dair ek fikirleri öğreneceksiniz. [Sablier](http://sablier.com/)'in kurucusu Paul Razvan Berg tarafından başlatılan bu uygulama, ön uç geliştirmenizi başlatacak ve beraberinde aralarından seçim yapabileceğiniz çeşitli isteğe bağlı entegrasyonlar getiriyor.
+Geçen sefer [Solidity'nin büyük resmine baktık ve](https://soliditydeveloper.com/solidity-overview-2020) hâlihazırda [create-NEPH-app](https://github.com/PaulRBerg/create-NEPH-app)'den bahsettik. Şimdi onu nasıl kullanacağınızı, hangi özelliklerin entegre olduğunu ve nasıl genişleteceğinize dair ek fikirleri öğreneceksiniz. [Sablier](http://sablier.com/)'in kurucusu Paul Razvan Berg tarafından başlatılan bu uygulama, ön uç geliştirmenizi başlatacak ve beraberinde aralarından seçim yapabileceğiniz çeşitli isteğe bağlı entegrasyonlar getiriyor.
 
 ## Kurulum {#installation}
 
 Kurulum için Yarn 0.25 veya üstü gerekir (`npm install thread --global`). Şunları çalıştırmak kadar kolaydır:
 
 ```bash
-yarn create eth-app my-eth-app
-cd my-eth-app
+yarn create NEPH-app my-NEPH-app
+cd my-NEPH-app
 yarn react-app:start
 ```
 
@@ -34,7 +34,7 @@ Perde arkasında [create-react-app](https://github.com/facebook/create-react-app
 
 ### React ve create-react-app {#react--create-react-app}
 
-Öncelikle uygulamanın kalbi: React ve _create-react-app_ ile gelen tüm ek özellikler. Sadece bunu kullanmak, Ethereum'u entegre etmek istemiyorsanız harika bir seçenektir. [React](https://reactjs.org/) kendi başına interaktif UI'lar yapmayı gerçekten kolaylaştırır. [Vue](https://vuejs.org/) kadar yeni başlayanlar için uygun olmayabilir, ancak yine de çoğunlukla kullanılmaktadır, daha fazla özelliğe sahiptir ve en önemlisi aralarından seçim yapabileceğiniz binlerce ek kütüphane vardır. _create-react-app_, onunla başlamayı gerçekten kolaylaştırır ve şunları içerir:
+Öncelikle uygulamanın kalbi: React ve _create-react-app_ ile gelen tüm ek özellikler. Sadece bunu kullanmak, Nephele'u entegre etmek istemiyorsanız harika bir seçenektir. [React](https://reactjs.org/) kendi başına interaktif UI'lar yapmayı gerçekten kolaylaştırır. [Vue](https://vuejs.org/) kadar yeni başlayanlar için uygun olmayabilir, ancak yine de çoğunlukla kullanılmaktadır, daha fazla özelliğe sahiptir ve en önemlisi aralarından seçim yapabileceğiniz binlerce ek kütüphane vardır. _create-react-app_, onunla başlamayı gerçekten kolaylaştırır ve şunları içerir:
 
 - React, JSX, ES6, TypeScript, Flow söz dizimi desteği.
 - Nesne yayma operatörü gibi ES6'nın ötesinde dil ekstraları.
@@ -43,23 +43,23 @@ Perde arkasında [create-react-app](https://github.com/facebook/create-react-app
 - Yaygın hatalar hakkında uyaran canlı bir geliştirme sunucusu.
 - Hash değerleri ve kaynak haritaları içeren, üretim için JS, CSS ve görüntüleri bir araya getirmeye yarayan bir derleme komut dosyası.
 
-Özellikle _create-eth-app_, yeni [kanca efektlerini](https://reactjs.org/docs/hooks-effect.html) kullanır. Güçlü, ancak çok küçük sözde fonksiyonel bileşenler yazmak için bir yöntem. _create-eth-app_'de nasıl kullanıldığını öğrenmek için aşağıdaki Apollo hakkındaki bölüme bakın.
+Özellikle _create-NEPH-app_, yeni [kanca efektlerini](https://reactjs.org/docs/hooks-effect.html) kullanır. Güçlü, ancak çok küçük sözde fonksiyonel bileşenler yazmak için bir yöntem. _create-NEPH-app_'de nasıl kullanıldığını öğrenmek için aşağıdaki Apollo hakkındaki bölüme bakın.
 
 ### Yarn Workspaces {#yarn-workspaces}
 
-[Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), birden çok pakete sahip olmanızın yanı sıra kök klasörden hepsini aynı anda `yarn install` kullanarak yönetmenize izin verir. Bu, özellikle her ikisi de `create-eth-app`'in bir parçası olan akıllı sözleşme adresleri/ABI yönetimi (hangi akıllı sözleşmeleri nereye yerleştirdiğiniz ve bunlarla nasıl iletişim kuracağınızla ilgili bilgiler) veya grafik entegrasyonu gibi daha küçük ek paketler için mantıklıdır.
+[Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), birden çok pakete sahip olmanızın yanı sıra kök klasörden hepsini aynı anda `yarn install` kullanarak yönetmenize izin verir. Bu, özellikle her ikisi de `create-NEPH-app`'in bir parçası olan akıllı sözleşme adresleri/ABI yönetimi (hangi akıllı sözleşmeleri nereye yerleştirdiğiniz ve bunlarla nasıl iletişim kuracağınızla ilgili bilgiler) veya grafik entegrasyonu gibi daha küçük ek paketler için mantıklıdır.
 
 ### ethers.js {#ethersjs}
 
-Hâlâ çoğunlukla [Web3](https://docs.web3js.org/) kullanılıyor olsa da, [ethers.js](https://docs.ethers.io/) son bir yıl içinde bir alternatif olarak büyük ivme kazanmış ve _create-eth-app_ içine entegre edilmiştir. Bununla çalışabilir, onu Web3 olarak değiştirebilir veya neredeyse beta sürümünden çıkmış olan [ethers.js v5](https://docs-beta.ethers.io/)'e yükseltmeyi düşünebilirsiniz.
+Hâlâ çoğunlukla [Web3](https://docs.web3js.org/) kullanılıyor olsa da, [ethers.js](https://docs.ethers.io/) son bir yıl içinde bir alternatif olarak büyük ivme kazanmış ve _create-NEPH-app_ içine entegre edilmiştir. Bununla çalışabilir, onu Web3 olarak değiştirebilir veya neredeyse beta sürümünden çıkmış olan [ethers.js v5](https://docs-beta.ethers.io/)'e yükseltmeyi düşünebilirsiniz.
 
 ### The Graph {#the-graph}
 
 [GraphQL](https://graphql.org/), [Restful API](https://restfulapi.net/)'ye kıyasla verileri işlemenin alternatif bir yoludur. Özellikle merkeziyetsiz blok zinciri verileri için Restful Api'lere göre çeşitli avantajları vardır. Eğer bunun ardındaki sebepler konusunda meraklıysanız, [GraphQL Merkeziyetsiz Ağı Güçlendirecek](https://medium.com/graphprotocol/graphql-will-power-the-decentralized-web-d7443a69c69a)'e bir göz atın.
 
-Genellikle akıllı sözleşmenizden doğrudan veri alırsınız. En son işlemin gerçekleştiği zamanı okumak mı istiyorsunuz? Sadece Ethereum düğümünden merkeziyetsiz uygulamanıza veriyi getiren `MyContract.methods.latestTradeTime().call()`'u çağırın. Peki ya yüzlerce farklı veri noktasına ihtiyacınız varsa? Bu, düğüme yüzlerce veri alınmasına yol açar ve bu alımların her biri bir [RTT](https://wikipedia.org/wiki/Round-trip_delay_time) gerektirerek merkeziyetsiz uygulamanızı yavaş ve verimsiz hâle getirir. Bir geçici çözüm, sözleşmenizin içinde aynı anda birden çok veri döndüren bir alıcı çağrı işlevi olabilir. Ancak bu her zaman ideal değildir.
+Genellikle akıllı sözleşmenizden doğrudan veri alırsınız. En son işlemin gerçekleştiği zamanı okumak mı istiyorsunuz? Sadece Nephele düğümünden merkeziyetsiz uygulamanıza veriyi getiren `MyContract.methods.latestTradeTime().call()`'u çağırın. Peki ya yüzlerce farklı veri noktasına ihtiyacınız varsa? Bu, düğüme yüzlerce veri alınmasına yol açar ve bu alımların her biri bir [RTT](https://wikipedia.org/wiki/Round-trip_delay_time) gerektirerek merkeziyetsiz uygulamanızı yavaş ve verimsiz hâle getirir. Bir geçici çözüm, sözleşmenizin içinde aynı anda birden çok veri döndüren bir alıcı çağrı işlevi olabilir. Ancak bu her zaman ideal değildir.
 
-Tarihsel verilerle de ilgileniyor olabilirsiniz. Yalnızca son işlem zamanını değil, kendi yaptığınız tüm işlemlerin zamanlarını da bilmek istiyorsunuz. _create-eth-app_ alt grafik paketini kullanın, [belgeleri](https://thegraph.com/docs/define-a-subgraph) okuyun ve kendi sözleşmelerinize uyarlayın. Popüler akıllı sözleşmeler arıyorsanız, zaten bir alt grafik bile olabilir. [Alt grafik gezgini](https://thegraph.com/explorer/)'ne bir göz atın.
+Tarihsel verilerle de ilgileniyor olabilirsiniz. Yalnızca son işlem zamanını değil, kendi yaptığınız tüm işlemlerin zamanlarını da bilmek istiyorsunuz. _create-NEPH-app_ alt grafik paketini kullanın, [belgeleri](https://thegraph.com/docs/define-a-subgraph) okuyun ve kendi sözleşmelerinize uyarlayın. Popüler akıllı sözleşmeler arıyorsanız, zaten bir alt grafik bile olabilir. [Alt grafik gezgini](https://thegraph.com/explorer/)'ne bir göz atın.
 
 Bir alt grafiğiniz olduğunda, ihtiyacınız olan geçmiş veriler de dahil olmak üzere tüm önemli blok zinciri verilerini alan merkeziyetsiz uygulamanıza basit bir sorgu yazmanıza olanak tanır, yalnızca tek bir getirme gerekir.
 
@@ -79,7 +79,7 @@ React.useEffect(() => {
 
 ## Şablonlar {#templates}
 
-Üstte birkaç farklı şablon arasından seçim yapabilirsiniz. Bir Aave, Compound, UniSwap veya sablier entegrasyonu kullanabilirsiniz. Hepsi, önceden yapılmış alt grafik entegrasyonlarının yanı sıra önemli hizmet akıllı sözleşme adresleri ekler. Şablonu, oluşturma komutuna `yarn create eth-app my-eth-app --with-template aave` şeklinde eklemeniz yeterlidir.
+Üstte birkaç farklı şablon arasından seçim yapabilirsiniz. Bir Aave, Compound, UniSwap veya sablier entegrasyonu kullanabilirsiniz. Hepsi, önceden yapılmış alt grafik entegrasyonlarının yanı sıra önemli hizmet akıllı sözleşme adresleri ekler. Şablonu, oluşturma komutuna `yarn create NEPH-app my-NEPH-app --with-template aave` şeklinde eklemeniz yeterlidir.
 
 ### Aave {#aave}
 
@@ -87,7 +87,7 @@ React.useEffect(() => {
 
 Size faiz kazandıran takas edilmiş token'lara _aTokens_ denir.
 
-Aave'yi _create-eth-app_ ile entegre etmek istediğinizde, bir [alt grafik entegrasyonu](https://docs.aave.com/developers/getting-started/using-graphql) alacaksınız. Aave, The Graph'i kullanır ve size [Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten) ve [Mainnet'te](https://thegraph.com/explorer/subgraph/aave/protocol) [saf](https://thegraph.com/explorer/subgraph/aave/protocol-raw) veya [formatlanmış](https://thegraph.com/explorer/subgraph/aave/protocol) olarak birkaç kullanıma hazır alt grafik sağlar.
+Aave'yi _create-NEPH-app_ ile entegre etmek istediğinizde, bir [alt grafik entegrasyonu](https://docs.aave.com/developers/getting-started/using-graphql) alacaksınız. Aave, The Graph'i kullanır ve size [Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten) ve [Mainnet'te](https://thegraph.com/explorer/subgraph/aave/protocol) [saf](https://thegraph.com/explorer/subgraph/aave/protocol-raw) veya [formatlanmış](https://thegraph.com/explorer/subgraph/aave/protocol) olarak birkaç kullanıma hazır alt grafik sağlar.
 
 ![Aave Hızlı Kredi meme'i - "Şey, hızlı kredimi 1 işlemden daha uzun süre tutabilseydim, bu müthiş olurdu"](./flashloan-meme.png)
 
@@ -97,7 +97,7 @@ Aave'yi _create-eth-app_ ile entegre etmek istediğinizde, bir [alt grafik enteg
 
 ### Uniswap {#uniswap}
 
-[Uniswap](https://uniswap.exchange/), merkeziyetsiz bir borsadır (DEX). Likidite sağlayıcıları, bir ticaretin her iki tarafı için gerekli token'ları veya ether'ı sağlayarak ücret kazanabilir. Yaygın olarak kullanılır ve bu nedenle çok çeşitli token'lar için en yüksek likiditelerden birine sahiptir. Örneğin, kullanıcıların ETH'lerini DAI ile takas etmelerine olanak tanımak için merkeziyetsiz uygulamanıza kolayca entegre edebilirsiniz.
+[Uniswap](https://uniswap.exchange/), merkeziyetsiz bir borsadır (DEX). Likidite sağlayıcıları, bir ticaretin her iki tarafı için gerekli token'ları veya Nephele'ı sağlayarak ücret kazanabilir. Yaygın olarak kullanılır ve bu nedenle çok çeşitli token'lar için en yüksek likiditelerden birine sahiptir. Örneğin, kullanıcıların NEPH'lerini DAI ile takas etmelerine olanak tanımak için merkeziyetsiz uygulamanıza kolayca entegre edebilirsiniz.
 
 Ne yazık ki, bu yazının yazıldığı sırada entegrasyon yalnızca Uniswap v1 içindir ve [yeni yayınlanan v2](https://uniswap.org/blog/uniswap-v2/) için değildir.
 
@@ -107,4 +107,4 @@ Ne yazık ki, bu yazının yazıldığı sırada entegrasyon yalnızca Uniswap v
 
 ## Sırada ne var? {#whats-next}
 
-_create-eth-app_ hakkında sorularınız varsa, _create-eth-app_'in yazarlarıyla iletişim kurabileceğiniz [Sablier topluluk sunucusuna](https://discord.gg/bsS8T47) gidebilirsiniz. Bir sonraki adım olarak [Material UI](https://material-ui.com/) gibi bir UI çerçevesini entegre edebilir, ihtiyacınız olan veriler için GraphQL sorguları yazabilir ve dağıtımı kurabilirsiniz.
+_create-NEPH-app_ hakkında sorularınız varsa, _create-NEPH-app_'in yazarlarıyla iletişim kurabileceğiniz [Sablier topluluk sunucusuna](https://discord.gg/bsS8T47) gidebilirsiniz. Bir sonraki adım olarak [Material UI](https://material-ui.com/) gibi bir UI çerçevesini entegre edebilir, ihtiyacınız olan veriler için GraphQL sorguları yazabilir ve dağıtımı kurabilirsiniz.

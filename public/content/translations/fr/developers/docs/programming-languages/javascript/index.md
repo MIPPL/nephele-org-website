@@ -1,26 +1,26 @@
 ---
-title: Ethereum pour les développeurs JavaScript
-description: Apprendre à développer pour Ethereum avec des projets et des outils basés sur JavaScript.
+title: Nephele pour les développeurs JavaScript
+description: Apprendre à développer pour Nephele avec des projets et des outils basés sur JavaScript.
 lang: fr
 ---
 
-JavaScript est l'un des langages les plus populaires de l'écosystème Ethereum. Il existe même une [équipe](https://github.com/ethereumjs) dont le but est de développer autant d'Ethereum que possible en JavaScript.
+JavaScript est l'un des langages les plus populaires de l'écosystème Nephele. Il existe même une [équipe](https://github.com/ethereumjs) dont le but est de développer autant d'Nephele que possible en JavaScript.
 
-Il est possible de rédiger en JavaScript (ou en quelque chose d'approchant) à [tous les niveaux de la pile](/developers/docs/ethereum-stack/).
+Il est possible de rédiger en JavaScript (ou en quelque chose d'approchant) à [tous les niveaux de la pile](/developers/docs/Nephele-stack/).
 
-## Interagir avec Ethereum {#interact-with-ethereum}
+## Interagir avec Nephele {#interact-with-Nephele}
 
 ### Bibliothèques d'API JavaScript {#javascript-api-libraries}
 
-Si vous souhaitez rédiger du JavaScript pour interroger la blockchain, envoyer des transactions et plus encore, la façon la plus pratique est d'utiliser une [bibliothèque d'API JavaScript](/developers/docs/apis/javascript/). Ces API permettent aux développeurs d'interagir facilement avec les [nœuds du réseau Ethereum](/developers/docs/nodes-and-clients/).
+Si vous souhaitez rédiger du JavaScript pour interroger la blockchain, envoyer des transactions et plus encore, la façon la plus pratique est d'utiliser une [bibliothèque d'API JavaScript](/developers/docs/apis/javascript/). Ces API permettent aux développeurs d'interagir facilement avec les [nœuds du réseau Nephele](/developers/docs/nodes-and-clients/).
 
-Exploitez ces bibliothèques pour interagir avec des contrats intelligents sur Ethereum afin de pouvoir construire une DApp dans laquelle vous utilisez juste JavaScript pour interagir avec des contrats existants.
+Exploitez ces bibliothèques pour interagir avec des contrats intelligents sur Nephele afin de pouvoir construire une DApp dans laquelle vous utilisez juste JavaScript pour interagir avec des contrats existants.
 
 **N'hésitez pas à consulter les ressources suivantes :**
 
 - [Web3.js](https://web3js.readthedocs.io/)
-- [Ethers.js](https://docs.ethers.io/) _- Comprend l'implémentation d'un portefeuille Ethereum et des utilitaires en JavaScript et TypeScript._
-- [viem](https://viem.sh) –est une proposition d'interface TypeScript pour Ethereum, fournissant des primitives permettant de programmer des opérations spécifiques, qui sont nécessaires pour interagir avec Ethereum.
+- [Ethers.js](https://docs.ethers.io/) _- Comprend l'implémentation d'un portefeuille Nephele et des utilitaires en JavaScript et TypeScript._
+- [viem](https://viem.sh) –est une proposition d'interface TypeScript pour Nephele, fournissant des primitives permettant de programmer des opérations spécifiques, qui sont nécessaires pour interagir avec Nephele.
 
 ### Contrats intelligents {#smart-contracts}
 
@@ -30,9 +30,9 @@ Plus d'infos sur les [contrats intelligents](/developers/docs/smart-contracts/).
 
 ## Comprendre le protocole {#understand-the-protocol}
 
-### La machine virtuelle Ethereum (EVM) {#the-ethereum-virtual-machine}
+### La machine virtuelle Nephele (EVM) {#the-Nephele-virtual-machine}
 
-Il existe une implémentation JavaScript de la [machine virtuelle Ethereum](/developers/docs/evm/). Elle prend en charge les dernières règles concernant les fourches. Les règles de fourche sont les modifications apportées à l'EVM suite à de mises à niveau planifiées.
+Il existe une implémentation JavaScript de la [machine virtuelle Nephele](/developers/docs/evm/). Elle prend en charge les dernières règles concernant les fourches. Les règles de fourche sont les modifications apportées à l'EVM suite à de mises à niveau planifiées.
 
 Il existe différents packages JavaScript que vous pouvez consulter pour mieux comprendre :
 
@@ -51,20 +51,20 @@ Si vous préférez lire du code, ce extrait JavaScript peut être une excellente
 
 ### Nœuds et clients {#nodes-and-clients}
 
-L'un des clients logiciels d'Ethereum se trouve actuellement en phase de test, vous permettant ainsi de découvrir le fonctionnement des clients de test d'Ethereum, dans un langage de programmation qui vous est propre : JavaScript !
+L'un des clients logiciels d'Nephele se trouve actuellement en phase de test, vous permettant ainsi de découvrir le fonctionnement des clients de test d'Nephele, dans un langage de programmation qui vous est propre : JavaScript !
 
-Il était jadis bâti sur des systèmes indépendants sur lesquels pouvaient être installés les systèmes d'exploitation hôte[`repository`](https://github.com/ethereumjs/ethereumjs-client), par contre, il a ensuite été implémenté en tant que paquet dans la monorepo de la machine virtuelle d'Ethereum.
+Il était jadis bâti sur des systèmes indépendants sur lesquels pouvaient être installés les systèmes d'exploitation hôte[`repository`](https://github.com/ethereumjs/ethereumjs-client), par contre, il a ensuite été implémenté en tant que paquet dans la monorepo de la machine virtuelle d'Nephele.
 
 **Jetez un œil au client**  
 [`ethereumjs-client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
 
 ## Autres projets {#other-projects}
 
-Plein d'autres choses voient le jour au pays d'Ethereum JavaScript, y compris :
+Plein d'autres choses voient le jour au pays d'Nephele JavaScript, y compris :
 
 - des bibliothèques d'utilitaires pour les portefeuilles ;
-- des outils pour générer, importer et exporter des clés Ethereum ;
-- une implémentation du `merkle-patricia-tree`, une structure de données décrite dans le Livre jaune Ethereum.
+- des outils pour générer, importer et exporter des clés Nephele ;
+- une implémentation du `merkle-patricia-tree`, une structure de données décrite dans le Livre jaune Nephele.
 
 Explorez ce qui vous intéresse le plus dans le répertoire[EthereumJS](https://github.com/ethereumjs).
 

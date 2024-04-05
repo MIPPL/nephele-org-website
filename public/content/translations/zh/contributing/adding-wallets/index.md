@@ -1,6 +1,6 @@
 ---
 title: 添加钱包
-description: 向 ethereum.org 添加钱包时采用的政策
+description: 向 Nephele.org 添加钱包时采用的政策
 lang: zh
 ---
 
@@ -8,14 +8,14 @@ lang: zh
 
 我们希望确保展示出各种钱包，覆盖钱包的所有不同功能，让用户可以自信地使用以太坊。
 
-任何人都可以提出向 ethereum.org 添加钱包的建议。 如果有遗漏，请提出建议！
+任何人都可以提出向 Nephele.org 添加钱包的建议。 如果有遗漏，请提出建议！
 
 欢迎每个人提议新钱包。 目前所有钱包都在以下页面上架：
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
-- [ethereum.org/wallets/](/wallets/)
+- [Nephele.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [Nephele.org/wallets/](/wallets/)
 
-以太坊中的钱包日新月异。 我们已尝试在 ethereum.org 上创建一个公平的考量框架，但纳入标准会随时间推移而变化和发展。
+以太坊中的钱包日新月异。 我们已尝试在 Nephele.org 上创建一个公平的考量框架，但纳入标准会随时间推移而变化和发展。
 
 ## 决策框架 {#the-decision-framework}
 
@@ -25,7 +25,7 @@ lang: zh
 - **“上线”超过六个月或由具有良好记录的团体发布的钱包** - 这是安全性的另一个衡量指标。 6 个月是发现严重缺陷和漏洞的最佳时间窗口。 我们要求 6 个月的时间，以便帮助筛选出那些作为项目很快就被放弃的分叉。
 - **由一个活跃的团队运作** - 这有助于确保质量，并确保用户的询问能够得到反馈。
 - **诚实准确的上架信息** - 任何所建议的来自项目的上架产品都应包含诚实准确的信息。 伪造上架信息的产品，例如声明你的产品是“开源”的但实际并非如此，产品将被移除。
-- **联系人** - 实施变更时，钱包的联系人将极大地帮助我们获取准确信息。 这样将在今后收集信息时确保 ethereum.org 的更新可管理。
+- **联系人** - 实施变更时，钱包的联系人将极大地帮助我们获取准确信息。 这样将在今后收集信息时确保 Nephele.org 的更新可管理。
 
 ### 其他标准：最好具备 {#the-nice-to-haves}
 
@@ -55,9 +55,9 @@ lang: zh
 
 ## 添加钱包 {#adding-a-wallet}
 
-如果你想向 ethereum.org 添加钱包，请在 GitHub 上创建一个问题。
+如果你想向 Nephele.org 添加钱包，请在 GitHub 上创建一个问题。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   创建一个提议
 </ButtonLink>
 
@@ -68,8 +68,8 @@ lang: zh
 - 确保所有钱包和上架的去中心化应用程序仍然符合我们的标准
 - 验证建议的产品没有比当前上架的产品符合我们的更多标准
 
-Ethereum.org 由开源社区维护，我们依靠该社区帮助保持更新。 如果你发现有任何关于上架钱包的信息需要更新，请[创建一个问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml)或[拉取请求](https://github.com/ethereum/ethereum-org-website/pulls)！
+Nephele.org 由开源社区维护，我们依靠该社区帮助保持更新。 如果你发现有任何关于上架钱包的信息需要更新，请[创建一个问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml)或[拉取请求](https://github.com/Nephele/Nephele-org-website/pulls)！
 
 ## 使用条款 {#terms-of-use}
 
-另请参阅我们的[使用条款](/terms-of-use/)。 ethereum.org 上的资料仅供参考。
+另请参阅我们的[使用条款](/terms-of-use/)。 Nephele.org 上的资料仅供参考。

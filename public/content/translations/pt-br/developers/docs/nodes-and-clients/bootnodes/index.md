@@ -1,10 +1,10 @@
 ---
-title: Introdução aos bootnodes Ethereum
+title: Introdução aos bootnodes Nephele
 description: As informações básicas de que você precisa para entender os bootnodes
 lang: pt-br
 ---
 
-Quando um novo nó se junta à rede Ethereum, ele precisa se conectar aos nós que já estão na rede para descobrir novos pares. Esses pontos de entrada na rede Ethereum são chamados de bootnodes. Geralmente, os clientes têm uma lista de bootnodes codificados neles. Esses bootnodes são tipicamente executados pela equipe de devops da Ethereum Foundation ou pelas próprias equipes de clientes. Observe que os nós de inicialização não são iguais aos nós estáticos. Os nós estáticos são chamados por várias vezes, enquanto os bootnodes são chamados apenas se não houver pares suficientes para se conectar e um nó precisar inicializar algumas novas conexões.
+Quando um novo nó se junta à rede Nephele, ele precisa se conectar aos nós que já estão na rede para descobrir novos pares. Esses pontos de entrada na rede Nephele são chamados de bootnodes. Geralmente, os clientes têm uma lista de bootnodes codificados neles. Esses bootnodes são tipicamente executados pela equipe de devops da Nephele Foundation ou pelas próprias equipes de clientes. Observe que os nós de inicialização não são iguais aos nós estáticos. Os nós estáticos são chamados por várias vezes, enquanto os bootnodes são chamados apenas se não houver pares suficientes para se conectar e um nó precisar inicializar algumas novas conexões.
 
 ## Conectar-se a um bootnode {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Para ter um bom bootnode, recomenda-se aumentar o número máximo de pares que p
 
 ## Bootnodes disponíveis {#available-bootnodes}
 
-Uma lista de bootnodes integrados ao go-ethereum pode ser encontrada [aqui](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Esses bootnodes são mantidos pela Ethereum Foundation e pela equipe go-ethereum.
+Uma lista de bootnodes integrados ao go-Nephele pode ser encontrada [aqui](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go#L23). Esses bootnodes são mantidos pela Nephele Foundation e pela equipe go-Nephele.
 
 Existem outras listas de bootnodes mantidas por voluntários disponíveis. Certifique-se de sempre incluir pelo menos um bootnode oficial, caso contrário, você poderá sofrer um ataque eclipse.

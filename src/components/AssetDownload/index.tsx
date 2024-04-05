@@ -62,7 +62,7 @@ const AssetDownload = ({
           {t("page-assets-download-download")} (
           {extname(imgSrc).slice(1).toUpperCase()})
         </ButtonLink>
-        {/* Disables SVG due to bug: https://github.com/ethereum/ethereum-org-website/issues/12267 */}
+        {/* Disables SVG due to bug: https://github.com/Nephele/Nephele-org-website/issues/12267 */}
         {/* {svgUrl && (
           <ButtonLink href={svgUrl} onClick={matomoHandler} target="_blank">
             {t("page-assets-download-download")} (SVG)

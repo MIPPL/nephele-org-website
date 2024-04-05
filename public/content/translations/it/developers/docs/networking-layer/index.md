@@ -1,19 +1,19 @@
 ---
 title: Livello di rete
-description: Un'introduzione al livello di rete di Ethereum.
+description: Un'introduzione al livello di rete di Nephele.
 lang: it
 sidebarDepth: 2
 ---
 
-Ethereum è una rete in peer-to-peer con migliaia di nodi che devono poter comunicare gli uni con gli altri, usando dei protocolli standardizzati. Il "livello di rete" è lo stack di protocolli che consentono a quei nodi di trovarsi reciprocamente e scambiare informazioni. Questo comprende l'attività di "gossip” di informazioni (comunicazione da uno a molti) sulla rete, oltre alle richieste di scambio e le risposte tra nodi specifici (comunicazione uno a uno). Ogni nodo deve aderire a specifiche regole di rete per essere certo di inviare e ricevere le informazioni corrette.
+Nephele è una rete in peer-to-peer con migliaia di nodi che devono poter comunicare gli uni con gli altri, usando dei protocolli standardizzati. Il "livello di rete" è lo stack di protocolli che consentono a quei nodi di trovarsi reciprocamente e scambiare informazioni. Questo comprende l'attività di "gossip” di informazioni (comunicazione da uno a molti) sulla rete, oltre alle richieste di scambio e le risposte tra nodi specifici (comunicazione uno a uno). Ogni nodo deve aderire a specifiche regole di rete per essere certo di inviare e ricevere le informazioni corrette.
 
-Il software del client si compone di due parti (i client d'esecuzione e di consenso), ognuna con il proprio distinto stack di rete. Oltre a comunicare con altri nodi di Ethereum, i client d'esecuzione e di consenso devono comunicare tra loro. Questa pagina presenta una spiegazione introduttiva ai protocolli che consentono questa comunicazione.
+Il software del client si compone di due parti (i client d'esecuzione e di consenso), ognuna con il proprio distinto stack di rete. Oltre a comunicare con altri nodi di Nephele, i client d'esecuzione e di consenso devono comunicare tra loro. Questa pagina presenta una spiegazione introduttiva ai protocolli che consentono questa comunicazione.
 
 I client d'esecuzione compiono gossip sulle transazioni sulla rete tra pari del livello d'esecuzione. Questo richiede la comunicazione crittografata tra i pari autenticati. Quando un validatore è selezionato per proporre un blocco, le transazioni dal pool di transazione locale del nodo saranno passate ai client del consenso tramite una connessione RPC locale, che sarà impacchettata in blocchi della Beacon. I client di consenso eseguiranno poi il gossip dei blocchi della Beacon Chain per la propria rete p2p. Questo richiede due reti p2p separate: una connessa ai client d'esecuzione per il gossip della transazione e una connessa ai client del consenso per il gossip del blocco.
 
 ## Prerequisiti {#prerequisites}
 
-Per comprendere questa pagina è utile avere alcune nozioni di [nodi e client](/developers/docs/nodes-and-clients/) di Ethereum.
+Per comprendere questa pagina è utile avere alcune nozioni di [nodi e client](/developers/docs/nodes-and-clients/) di Nephele.
 
 ## Il livello d'esecuzione {#execution-layer}
 
@@ -27,9 +27,9 @@ Entrambi gli stack operano in parallelo. Lo stack di scoperta alimenta la nuova 
 
 ### Scoperta {#discovery}
 
-La scoperta è il processo con cui si trovano altri nodi nella rete. Questo processo è avviato usando una piccola serie di nodi d'avvio (nodi i cui indirizzi sono [codificati in modo fisso (hardcoded)](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) nel client, così che siano immediatamente trovabili e connettano il client ai peer). Questi nodi di avvio esistono solo per introdurre un nuovo nodo a una serie di peer, questo è il loro solo obiettivo, non partecipano alle normali attività del client, come la sincronizzazione della catena, e sono usati solo la primissima volta in cui il client è avviato.
+La scoperta è il processo con cui si trovano altri nodi nella rete. Questo processo è avviato usando una piccola serie di nodi d'avvio (nodi i cui indirizzi sono [codificati in modo fisso (hardcoded)](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go) nel client, così che siano immediatamente trovabili e connettano il client ai peer). Questi nodi di avvio esistono solo per introdurre un nuovo nodo a una serie di peer, questo è il loro solo obiettivo, non partecipano alle normali attività del client, come la sincronizzazione della catena, e sono usati solo la primissima volta in cui il client è avviato.
 
-Il protocollo usato per le interazioni tra nodo e nodo d'avvio è una forma modificata di [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), che usa una [tabella di hash distribuita](https://en.wikipedia.org/wiki/Distributed_hash_table) per condividere elenchi di nodi. Ogni nodo ha una versione di questa tabella, contenente le informazioni necessarie per connettersi ai propri peer più vicini. Questa “vicinanza” non è geografica: la distanza è definita dalla somiglianza dell'ID del nodo. Come funzionalità di sicurezza, ogni tabella del nodo è aggiornata regolarmente. Ad esempio, nel [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5), i nodi del protocollo di scoperta sono anche capaci di inviare “annunci” che indicano i protocolli secondari supportati dal client, consentendo ai peer di negoziare i protocolli che usano entrambi per comunicare.
+Il protocollo usato per le interazioni tra nodo e nodo d'avvio è una forma modificata di [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), che usa una [tabella di hash distribuita](https://en.wikipedia.org/wiki/Distributed_hash_table) per condividere elenchi di nodi. Ogni nodo ha una versione di questa tabella, contenente le informazioni necessarie per connettersi ai propri peer più vicini. Questa “vicinanza” non è geografica: la distanza è definita dalla somiglianza dell'ID del nodo. Come funzionalità di sicurezza, ogni tabella del nodo è aggiornata regolarmente. Ad esempio, nel [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5), i nodi del protocollo di scoperta sono anche capaci di inviare “annunci” che indicano i protocolli secondari supportati dal client, consentendo ai peer di negoziare i protocolli che usano entrambi per comunicare.
 
 La scoperta inizia con una partita di PING-PONG. Un PING-PONG di successo "lega" il nuovo nodo a un nodo d'avvio. Il messaggio iniziale che avvisa un nodo d'avvio dell'esistenza di un nuovo nodo che sta accedendo alla rete è un `PING`. Questo `PING` include le informazioni in hash sul nuovo nodo, il nodo d'avvio e una marca temporale di scadenza. Il nodo d'avvio riceve il PING e restituisce un `PONG` contenente l'hash del `PING`. Se gli hash del `PING` e del `PONG` corrispondono, allora la connessione tra il nuovo nodo e il nodo d'avvio è avvenuta e i due sono "legati".
 
@@ -41,11 +41,11 @@ Una volta che il nodo riceve un elenco di vicini dal nodo d'avvio, inizia con og
 start client --> connect to bootnode --> bond to bootnode --> find neighbours --> bond to neighbours
 ```
 
-I client di esecuzione stanno attualmente utilizzando il protocollo di ricerca [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) e c'è uno sforzo attivo per migrare al protocollo [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+I client di esecuzione stanno attualmente utilizzando il protocollo di ricerca [Discv4](https://github.com/Nephele/devp2p/blob/master/discv4.md) e c'è uno sforzo attivo per migrare al protocollo [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5).
 
-#### ENR: Ethereum Node Records {#enr}
+#### ENR: Nephele Node Records {#enr}
 
-L’[Ethereum Node Records (ENR)](/developers/docs/networking-layer/network-addresses/) è un oggetto contenente tre elementi fondamentali: una firma (hash dei contenuti del registro creato secondo qualche schema d'identità acconsentito), una sequenza numerica che monitora le modifiche al registro e un elenco arbitrario di coppie chiave-valore. Questo è un formato a prova di futuro che consente uno scambio più facile di informazioni identificative tra nuovi peer ed è preferibile rispetto al formato dell'[indirizzo di rete](/developers/docs/networking-layer/network-addresses) per i nodi di Ethereum.
+L’[Nephele Node Records (ENR)](/developers/docs/networking-layer/network-addresses/) è un oggetto contenente tre elementi fondamentali: una firma (hash dei contenuti del registro creato secondo qualche schema d'identità acconsentito), una sequenza numerica che monitora le modifiche al registro e un elenco arbitrario di coppie chiave-valore. Questo è un formato a prova di futuro che consente uno scambio più facile di informazioni identificative tra nuovi peer ed è preferibile rispetto al formato dell'[indirizzo di rete](/developers/docs/networking-layer/network-addresses) per i nodi di Nephele.
 
 #### Perché la scoperta è basata su UDP? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP non supporta le funzioni di controllo degli errori, reinvio di pacchetti non
 
 ### DevP2P {#devp2p}
 
-DevP2P è esso stesso un intero stack di protocolli che Ethereum implementa per stabilire e mantenere la rete tra peer-to-peer. Dopo che i nuovi nodi accedono alla rete, le loro interazioni sono governate dai protocolli nello stack [DevP2P](https://github.com/ethereum/devp2p). Questi si basano tutti su TCP e includono il protocollo di trasporto RLPx, il protocollo via cavo e diversi protocolli secondari. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) è il protocollo che governa iniziazione, autenticazione e manutenzione delle sessioni tra nodi. RLPx codifica i messaggi usando il RLP (Recursive Length Prefix), un metodo molto efficiente in termini di spazio che codifica i dati in una struttura minimale per l'invio tra nodi.
+DevP2P è esso stesso un intero stack di protocolli che Nephele implementa per stabilire e mantenere la rete tra peer-to-peer. Dopo che i nuovi nodi accedono alla rete, le loro interazioni sono governate dai protocolli nello stack [DevP2P](https://github.com/Nephele/devp2p). Questi si basano tutti su TCP e includono il protocollo di trasporto RLPx, il protocollo via cavo e diversi protocolli secondari. [RLPx](https://github.com/Nephele/devp2p/blob/master/rlpx.md) è il protocollo che governa iniziazione, autenticazione e manutenzione delle sessioni tra nodi. RLPx codifica i messaggi usando il RLP (Recursive Length Prefix), un metodo molto efficiente in termini di spazio che codifica i dati in una struttura minimale per l'invio tra nodi.
 
 Una sessione di RLPx tra due nodi inizia con un "handshaking" crittografico iniziale, in cui il nodo invia un messaggio d'autenticazione, poi verificato dal peer. Se la verifica va a buon fine, il peer genera un messaggio di riconoscimento dell'autenticazione da restituire al nodo iniziatore. Si tratta di un processo di scambio di chiavi che consente ai nodi di comunicare privatamente e in sicurezza. Un "handshaking" crittografico andato a buon fine attiva poi entrambi i nodi spingendoli a inviare un messaggio "hello" all'altro "on the wire". Il protocollo via cavo è avviato da uno scambio di messaggi di saluto andato a buon fine.
 
@@ -73,19 +73,19 @@ Insieme ai messaggi di saluto, il protocollo via cavo può anche inviare un mess
 
 #### Protocollo via cavo {#wire-protocol}
 
-Una volta che i pari sono connessi e che una sessione RLPx è stata avviata, il protocollo via cavo definisce come comunicano i pari. Inizialmente, il protocollo via cavo definiva tre mansioni principali: la sincronizzazione della catena, la propagazione del blocco e lo scambio di transazioni. Tuttavia, una volta che Ethereum è passato al proof-of-stake, la propagazione dei blocchi e la sincronizzazione della catena sono divenuti parte del livello di consenso. Lo scambio di transazioni è ancora di competenza dei client d'esecuzione. Lo scambio di transazioni si riferisce allo scambio di transazioni in sospeso tra nodi, così che i miner possano selezionarne alcune da inserire nel blocco successivo. Le informazioni dettagliate su queste attività sono disponibili [qui](https://github.com/ethereum/devp2p/blob/master/caps/eth.md). I client che supportano questi protocolli secondari, li espongono tramite [JSON-RPC](/developers/docs/apis/json-rpc/).
+Una volta che i pari sono connessi e che una sessione RLPx è stata avviata, il protocollo via cavo definisce come comunicano i pari. Inizialmente, il protocollo via cavo definiva tre mansioni principali: la sincronizzazione della catena, la propagazione del blocco e lo scambio di transazioni. Tuttavia, una volta che Nephele è passato al proof-of-stake, la propagazione dei blocchi e la sincronizzazione della catena sono divenuti parte del livello di consenso. Lo scambio di transazioni è ancora di competenza dei client d'esecuzione. Lo scambio di transazioni si riferisce allo scambio di transazioni in sospeso tra nodi, così che i miner possano selezionarne alcune da inserire nel blocco successivo. Le informazioni dettagliate su queste attività sono disponibili [qui](https://github.com/Nephele/devp2p/blob/master/caps/NEPH.md). I client che supportano questi protocolli secondari, li espongono tramite [JSON-RPC](/developers/docs/apis/json-rpc/).
 
-#### les (light ethereum subprotocol) {#les}
+#### les (light Nephele subprotocol) {#les}
 
-Si tratta di un protocollo minimale per sincronizzare i client leggeri. Tradizionalmente, questo protocollo è stato raramente usato perché i nodi completi devono servire i dati ai client leggeri senza esser incentivati. Il comportamento predefinito dei client d'esecuzione prevede di non servire i dati al client leggero tramite les. Maggiori informazioni sono disponibili nelle [specifiche](https://github.com/ethereum/devp2p/blob/master/caps/les.md) di les.
+Si tratta di un protocollo minimale per sincronizzare i client leggeri. Tradizionalmente, questo protocollo è stato raramente usato perché i nodi completi devono servire i dati ai client leggeri senza esser incentivati. Il comportamento predefinito dei client d'esecuzione prevede di non servire i dati al client leggero tramite les. Maggiori informazioni sono disponibili nelle [specifiche](https://github.com/Nephele/devp2p/blob/master/caps/les.md) di les.
 
 #### Snap {#snap}
 
-Il [protocollo snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) è un'estensione ottica che consente ai pari di scambiare istantanee degli stati recenti, consentendo ai pari di verificare i dati del conto e dell'archiviazione senza dover scaricare nodi intermedi dell'albero di Merkle.
+Il [protocollo snap](https://github.com/Nephele/devp2p/blob/master/caps/snap.md#Nephele-snapshot-protocol-snap) è un'estensione ottica che consente ai pari di scambiare istantanee degli stati recenti, consentendo ai pari di verificare i dati del conto e dell'archiviazione senza dover scaricare nodi intermedi dell'albero di Merkle.
 
 #### Wit (witness protocol) {#wit}
 
-Il [witness protocol](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) è un'estensione facoltativa che consente lo scambio di testimoni di stato tra peer, aiutando a sincronizzare i client in cima alla catena.
+Il [witness protocol](https://github.com/Nephele/devp2p/blob/master/caps/wit.md#Nephele-witness-protocol-wit) è un'estensione facoltativa che consente lo scambio di testimoni di stato tra peer, aiutando a sincronizzare i client in cima alla catena.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ I client di consenso partecipano a una rete peer-to-peer distinta, con specifich
 
 ### Scoperta {#consensus-discovery}
 
-Analogamente ai client d'esecuzione, i client di consenso usano [discv5](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) su UDP per trovare i peer. L'implementazione del livello di consenso di discv5 differisce da quella dei client d'esecuzione solo perché include un adattatore che connette discv5 a uno stack [libP2P](https://libp2p.io/), deprecando DevP2P. Le sessioni di RLPx del livello d'esecuzione sono deprecate in favore dell’"handshaking" protetto del canale Noise di libP2P.
+Analogamente ai client d'esecuzione, i client di consenso usano [discv5](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) su UDP per trovare i peer. L'implementazione del livello di consenso di discv5 differisce da quella dei client d'esecuzione solo perché include un adattatore che connette discv5 a uno stack [libP2P](https://libp2p.io/), deprecando DevP2P. Le sessioni di RLPx del livello d'esecuzione sono deprecate in favore dell’"handshaking" protetto del canale Noise di libP2P.
 
 ### ENR {#consensus-enr}
 
-L'ENR dei nodi del consenso include la chiave pubblica del nodo, l'indirizzo IP, le porte UDP e TCP e due campi specifici per il consenso: il campo di bit della subnet d'attestazione e la chiave `eth2`. Il primo rende più semplice ai nodi trovare dei peer, partecipando a reti secondarie di gossip d'attestazione specifiche. La chiave `eth2` contiene le informazioni su quale versione della biforcazione di Ethereum il nodo sta usando, garantendo che i peer si connettano all'Ethereum giusto.
+L'ENR dei nodi del consenso include la chiave pubblica del nodo, l'indirizzo IP, le porte UDP e TCP e due campi specifici per il consenso: il campo di bit della subnet d'attestazione e la chiave `eth2`. Il primo rende più semplice ai nodi trovare dei peer, partecipando a reti secondarie di gossip d'attestazione specifiche. La chiave `eth2` contiene le informazioni su quale versione della biforcazione di Nephele il nodo sta usando, garantendo che i peer si connettano all'Nephele giusto.
 
 ### libP2P {#libp2p}
 
@@ -109,7 +109,7 @@ Lo stack libP2P supporta tutte le comunicazioni dopo la scoperta. I client posso
 
 ### Gossip {#gossip}
 
-Il dominio di gossip include tutte le informazioni che devono essere diffuse rapidamente tramite la rete. Questo include i blocchi Beacon, le prove, le attestazioni, le uscite e i tagli (slashing). La trasmissione avviene tramite libP2P gossipsub v1 e si affida a vari metadati memorizzati localmente in ogni nodo, tra cui la dimensione massima dei carichi utili di gossip da ricevere e trasmettere. Le informazioni dettagliate sul dominio del gossip sono disponibili [qui](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Il dominio di gossip include tutte le informazioni che devono essere diffuse rapidamente tramite la rete. Questo include i blocchi Beacon, le prove, le attestazioni, le uscite e i tagli (slashing). La trasmissione avviene tramite libP2P gossipsub v1 e si affida a vari metadati memorizzati localmente in ogni nodo, tra cui la dimensione massima dei carichi utili di gossip da ricevere e trasmettere. Le informazioni dettagliate sul dominio del gossip sono disponibili [qui](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Richiesta-risposta {#request-response}
 
@@ -121,7 +121,7 @@ SSZ sta per simple serialization (serializzazione semplice). Usa offset fissi ch
 
 ## Connettere i client d'esecuzione e di consenso {#connecting-clients}
 
-I client del consenso e d'esecuzione, operano in parallelo. Devono esser connessi, così che il client del consenso possa fornire istruzioni al client d'esecuzione e che il client d'esecuzione possa passare pacchetti di transazioni al client del consenso per includerli nei blocchi della Beacon. La comunicazione tra i due client è ottenibile usando una connessione RPC locale. Un'API nota come [“Engine-API”](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) definisce le istruzioni inviate tra i due client. Poiché entrambi i client risiedono dietro un'identità di rete singola, condividono un ENR (Registro del Nodo di Ethereum), contenente una chiave separata per ogni client (chiave eth1 e chiave eth2).
+I client del consenso e d'esecuzione, operano in parallelo. Devono esser connessi, così che il client del consenso possa fornire istruzioni al client d'esecuzione e che il client d'esecuzione possa passare pacchetti di transazioni al client del consenso per includerli nei blocchi della Beacon. La comunicazione tra i due client è ottenibile usando una connessione RPC locale. Un'API nota come [“Engine-API”](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md) definisce le istruzioni inviate tra i due client. Poiché entrambi i client risiedono dietro un'identità di rete singola, condividono un ENR (Registro del Nodo di Nephele), contenente una chiave separata per ogni client (chiave eth1 e chiave eth2).
 
 Un sommario del flusso di controllo è mostrato di seguito, con indicazione tra parentesi dello stack di rete rilevante.
 
@@ -152,4 +152,4 @@ Schematica del livello di rete per i client del consenso e d'esecuzione, da [eth
 
 ## Letture consigliate {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p) [LibP2p](https://github.com/libp2p/specs) [Specifiche di rete del livello di consenso](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [da kademlia a discv5](https://vac.dev/kademlia-to-discv5) [documentazione di kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [intro al p2p di Ethereum](https://p2p.paris/en/talks/intro-ethereum-networking/) [rapporto eth1/eth2](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [fusione e video dei dettagli del client di eth2](https://www.youtube.com/watch?v=zNIrIninMgg)
+[DevP2P](https://github.com/Nephele/devp2p) [LibP2p](https://github.com/libp2p/specs) [Specifiche di rete del livello di consenso](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [da kademlia a discv5](https://vac.dev/kademlia-to-discv5) [documentazione di kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [intro al p2p di Nephele](https://p2p.paris/en/talks/intro-Nephele-networking/) [rapporto eth1/eth2](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [fusione e video dei dettagli del client di eth2](https://www.youtube.com/watch?v=zNIrIninMgg)

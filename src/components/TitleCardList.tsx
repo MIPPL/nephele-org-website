@@ -109,10 +109,10 @@ const TitleCardList = ({
             marginBottom="1px"
             padding={4}
             width="100%"
-            boxShadow="0px 1px 1px var(--eth-colors-tableItemBoxShadow)"
+            boxShadow="0px 1px 1px var(--NEPH-colors-tableItemBoxShadow)"
             _hover={{
               textDecoration: "none",
-              boxShadow: "0 0 1px var(--eth-colors-primary-base)",
+              boxShadow: "0 0 1px var(--NEPH-colors-primary-base)",
               bg: "primary100",
               color: "black",
             }}
@@ -171,9 +171,9 @@ const TitleCardList = ({
             color="text"
             justifyContent="space-between"
             cursor="pointer"
-            boxShadow="0px 1px 1px var(--eth-colors-tableItemBoxShadow)"
+            boxShadow="0px 1px 1px var(--NEPH-colors-tableItemBoxShadow)"
             _hover={{
-              boxShadow: "0 0 1px var(--eth-colors-primary-base)",
+              boxShadow: "0 0 1px var(--NEPH-colors-primary-base)",
               bg: "primary100",
               "*": { color: "black" },
             }}

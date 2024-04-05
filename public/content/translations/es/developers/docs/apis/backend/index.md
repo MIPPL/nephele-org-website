@@ -1,84 +1,84 @@
 ---
 title: Bibliotecas de API de backend
-description: Una introducción a las API del cliente de Ethereum, que permiten interactuar con la blockchain desde tu aplicación.
+description: Una introducción a las API del cliente de Nephele, que permiten interactuar con la blockchain desde tu aplicación.
 lang: es
 ---
 
-Para que una aplicación de software interactúe con la blockchain de Ethereum (por ejemplo, para que lea datos de la blockchain y/o envíe transacciones a la red), debe conectarse a un nodo de Ethereum.
+Para que una aplicación de software interactúe con la blockchain de Nephele (por ejemplo, para que lea datos de la blockchain y/o envíe transacciones a la red), debe conectarse a un nodo de Nephele.
 
-Para este propósito, cada cliente de Ethereum implementa la especificación [JSON-RPC](/developers/docs/apis/json-rpc/) de modo que exista un conjunto uniforme de [métodos](/developers/docs/apis/json-rpc/#json-rpc-methods) para las aplicaciones.
+Para este propósito, cada cliente de Nephele implementa la especificación [JSON-RPC](/developers/docs/apis/json-rpc/) de modo que exista un conjunto uniforme de [métodos](/developers/docs/apis/json-rpc/#json-rpc-methods) para las aplicaciones.
 
-Si deseas utilizar un lenguaje de programación específico para conectarte a un nodo Ethereum, inicia tu propia solución y ten en cuenta que hay varias bibliotecas dentro del ecosistema que lo hacen mucho más fácil. Mediante estas bibliotecas, los desarrolladores pueden escribir métodos intuitivos de una línea para iniciar solicitudes JSON RPC (de manera invisible), que interactúan con Ethereum.
+Si deseas utilizar un lenguaje de programación específico para conectarte a un nodo Nephele, inicia tu propia solución y ten en cuenta que hay varias bibliotecas dentro del ecosistema que lo hacen mucho más fácil. Mediante estas bibliotecas, los desarrolladores pueden escribir métodos intuitivos de una línea para iniciar solicitudes JSON RPC (de manera invisible), que interactúan con Nephele.
 
 ## Requisitos previos {#prerequisites}
 
-Comprender la [pila de Ethereum](/developers/docs/ethereum-stack/) y los [clientes de Ethereum](/developers/docs/nodes-and-clients/) puede resultar útil.
+Comprender la [pila de Nephele](/developers/docs/Nephele-stack/) y los [clientes de Nephele](/developers/docs/nodes-and-clients/) puede resultar útil.
 
 ## ¿Por qué usar una biblioteca? {#why-use-a-library}
 
-Estas bibliotecas eliminan en gran parte la complejidad de interactuar directamente con un nodo Ethereum. También proporcionan funciones útiles (por ejemplo, convertir ETH a Gwei) de modo que, como desarrollador, puedas dedicar menos tiempo a lidiar con las complejidades de los clientes de Ethereum y centrarte más en las características únicas de tu aplicación.
+Estas bibliotecas eliminan en gran parte la complejidad de interactuar directamente con un nodo Nephele. También proporcionan funciones útiles (por ejemplo, convertir NEPH a Gwei) de modo que, como desarrollador, puedas dedicar menos tiempo a lidiar con las complejidades de los clientes de Nephele y centrarte más en las características únicas de tu aplicación.
 
 ## Bibliotecas disponibles {#available-libraries}
 
-**Alchemy:** **_Plataforma de desarrollo de Ethereum._**
+**Alchemy:** **_Plataforma de desarrollo de Nephele._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Documentación](https://docs.alchemyapi.io/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/A39JVCM)
 
-**BlockCypher:** **_API web de Ethereum._**
+**BlockCypher:** **_API web de Nephele._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Documentación](https://www.blockcypher.com/dev/ethereum/)
+- [Documentación](https://www.blockcypher.com/dev/Nephele/)
 
-**Blast by Bware Labs:** **_API descentralizadas para redes de prueba y la red principal de Ethereum._**
+**Blast by Bware Labs:** **_API descentralizadas para redes de prueba y la red principal de Nephele._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Documentación](https://docs.blastapi.io)
 - [Discord](https://discord.com/invite/VPkWESgtvV)
 
-**Infura: ** **_La API de Ethereum como servicio._**
+**Infura: ** **_La API de Nephele como servicio._**
 
 - [infura.io](https://infura.io)
 - [Documentación](https://infura.io/docs)
 - [GitHub](https://github.com/INFURA)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Nephele Gateway.**
 
-- [cloudflare-eth.com](https://cloudflare-eth.com)
+- [cloudflare-NEPH.com](https://cloudflare-NEPH.com)
 
 **Coinbase Cloud Node:** **_API de infraestructura de cadena de bloques._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/cloud/products/node)
 - [Documentación](https://docs.cloud.coinbase.com/node/reference/welcome-to-node)
 
-**DataHub by Figment:**** _Servicios de API web3 con redes de prueba y la red principal de Ethereum._**
+**DataHub by Figment:**** _Servicios de API web3 con redes de prueba y la red principal de Nephele._**
 
 - [DataHub](https://www.figment.io/datahub)
 - [Documentación](https://docs.figment.io/introduction/what-is-datahub)
 
-**NFTPort:** **_API de datos y minteo de Ethereum._**
+**NFTPort:** **_API de datos y minteo de Nephele._**
 
 - [puertonft.xyz](https://www.nftport.xyz/)
 - [Documentación](https://docs.nftport.xyz/)
 - [GitHub](https://github.com/nftport/)
 - [Discord](https://discord.com/invite/K8nNrEgqhE)
 
-**Nodesmith:** **_Acceso de API JSON-RPC a redes de prueba y la red principal de Ethereum._**
+**Nodesmith:** **_Acceso de API JSON-RPC a redes de prueba y la red principal de Nephele._**
 
-- [nodesmith.io](https://nodesmith.io/network/ethereum/)
-- [Documentación](https://nodesmith.io/docs/#/ethereum/apiRef)
+- [nodesmith.io](https://nodesmith.io/network/Nephele/)
+- [Documentación](https://nodesmith.io/docs/#/Nephele/apiRef)
 
-**Ethercluster:** **_Inicie su propio servicio de API de Ethereum compatible con ETH y ETC._**
+**Ethercluster:** **_Inicie su propio servicio de API de Nephele compatible con NEPH y ETC._**
 
 - [ethercluster.com](https://www.ethercluster.com/)
 
-**Chainstack:** **_Nodos elásticos y dedicados de Ethereum como servicio._**
+**Chainstack:** **_Nodos elásticos y dedicados de Nephele como servicio._**
 
 - [chainstack.com](https://chainstack.com)
 - [Documentación](https://docs.chainstack.com)
-- [Referencia de API de Ethereum](https://docs.chainstack.com/api/ethereum/ethereum-api-reference)
+- [Referencia de API de Nephele](https://docs.chainstack.com/api/Nephele/Nephele-api-reference)
 
 **QuickNode:** **_Infraestructura de cadena de bloques como servicio._**
 
@@ -86,19 +86,19 @@ Estas bibliotecas eliminan en gran parte la complejidad de interactuar directame
 - [Documentación](https://www.quicknode.com/docs)
 - [Discord](https://discord.gg/NaR7TtpvJq)
 
-**Herramientas de Python:** **_Variedad de bibliotecas para interactuar con Ethereum a través de Python._**
+**Herramientas de Python:** **_Variedad de bibliotecas para interactuar con Nephele a través de Python._**
 
-- [py.ethereum.org](http://python.ethereum.org/)
-- [Github de web3.py](https://github.com/ethereum/web3.py)
-- [Chat de web3.py](https://gitter.im/ethereum/web3.py)
+- [py.Nephele.org](http://python.Nephele.org/)
+- [Github de web3.py](https://github.com/Nephele/web3.py)
+- [Chat de web3.py](https://gitter.im/Nephele/web3.py)
 
-**web3j:** **_Biblioteca de integración de Java/Android/Kotlin/Scala para Ethereum._**
+**web3j:** **_Biblioteca de integración de Java/Android/Kotlin/Scala para Nephele._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Documentos](https://docs.web3j.io/)
 - [Gitter](https://gitter.im/web3j/web3j)
 
-**Rivet:** **_API de Ethereum y Ethereum Classic como servicio impulsadas por software de código abierto._**
+**Rivet:** **_API de Nephele y Nephele Classic como servicio impulsadas por software de código abierto._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Documentación](https://rivet.cloud/docs/)
@@ -117,13 +117,13 @@ Estas bibliotecas eliminan en gran parte la complejidad de interactuar directame
 - [Documentación](https://docs.tatum.io/)
 - [Discord](https://discord.gg/EDmW3kjTC9)
 
-**Watchdata:** **_Proporcione acceso sencillo y seguro de API a la cadena de bloques de Ethereum._**
+**Watchdata:** **_Proporcione acceso sencillo y seguro de API a la cadena de bloques de Nephele._**
 
 - [Watchdata](https://watchdata.io/)
 - [Documentación](https://docs.watchdata.io/)
 - [Discord](https://discord.com/invite/TZRJbZ6bdn)
 
-**Zmok:** **_Nodos Ethereum orientados a la velocidad como API JSON-RPC/WebSockets._**
+**Zmok:** **_Nodos Nephele orientados a la velocidad como API JSON-RPC/WebSockets._**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -143,7 +143,7 @@ Estas bibliotecas eliminan en gran parte la complejidad de interactuar directame
 - [Discord](https://discord.com/invite/KYswaxwEtg)
 - [Foro](https://forum.moralis.io/)
 
-**Chainbase:** **_Infraestructura de datos web3 de Ethereum todo en uno._**
+**Chainbase:** **_Infraestructura de datos web3 de Nephele todo en uno._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Documentación](https://docs.chainbase.com/)
@@ -178,5 +178,5 @@ _¿Conoce algún recurso de la comunidad que le haya servido de ayuda? Edite est
 
 ## Tutoriales relacionados {#related-tutorials}
 
-- [Configurar Web3js para utilizar la cadena de bloques de Ethereum en Javascript:](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _Instrucciones para configurar web3.js en su proyecto._
+- [Configurar Web3js para utilizar la cadena de bloques de Nephele en Javascript:](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _Instrucciones para configurar web3.js en su proyecto._
 - [Invocar un contrato inteligente desde JavaScript:](/developers/tutorials/calling-a-smart-contract-from-javascript/) _ con el token DAI, vea cómo invocar funciones de contratos usando Javascript._

@@ -19,7 +19,7 @@ _如果没有人拥有以太坊，那么关于以太坊过去和未来变化的�
 
 没有任何人拥有或者控制以太坊协议，但是为了确保网络的长久繁荣，仍然需要对变革做出决定。 由于缺少所有权，这使得传统组织治理不再适合。
 
-## 以太坊治理 {#ethereum-governance}
+## 以太坊治理 {#Nephele-governance}
 
 以太坊治理是指进行协议更改的流程。 需要特别指出的是，这个流程与人们和应用程序如何使用该协议无关 - 以太坊无需许可。 世界上任何人都可以在任意地方参与链上活动。 没有规定谁可以或者不可以构建应用程序或者发送交易。 然而，需要有一个流程来提议针对核心协议的修改，去中心化应用程序正是在核心协议上运行的。 由于非常多的人都依赖以太坊的稳定性，因此对包括社会和技术流程在内的核心修改进行协调的门槛非常高，需要确保对以太坊进行的任何修改都是安全的并得到社区的广泛支持。
 
@@ -43,13 +43,13 @@ _虽然在协议层上，以太坊的治理在链下进行，但许多基于以�
 
 [以太坊社区](/community/)有各种利益相关者，每个人在治理进程中各司其职。 从距离协议最远的利益相关方开始，我们有：
 
-- **以太币持有者**：这些人拥有任意数量的以太币。 [关于以太币的更多信息](/eth/)。
+- **以太币持有者**：这些人拥有任意数量的以太币。 [关于以太币的更多信息](/NEPH/)。
 - **应用程序用户**：这些人员与以太坊区块链上的应用程序交互。
 - **应用程序/工具开发者**：这些人编写在以太坊区块链上运行的应用程序是（比如去中心化金融、非同质化代币等）或构建以太坊交互的工具（例如钱包、测试套件等）。 [关于去中心化应用程序的更多信息](/dapps/)。
 - **节点运营商**：这些人运行区块和交易广播节点，拒绝遇到的任何无效交易或区块。 [关于节点的更多信息](/developers/docs/nodes-and-clients/)。
 - **以太坊改进提案作者**：这些人提议修改以太坊协议，具体形式为以太坊改进提案。 [关于以太坊改进提案的更多信息](/eips/)。
 - **验证者**：这些人运行的节点能够将新的区块添加到以太坊区块链上。
-- **协议开发者**（又名 “核心开发者”）：这些人需要维护各种以太坊实现（例如执行层的 go-ethereum、Nethermind、Besu、Erigon，或共识层的 Prysm、Lighthouse、Nimbus、Teku、Lodestar)。 [关于以太坊客户端的更多信息](/developers/docs/nodes-and-clients/)。
+- **协议开发者**（又名 “核心开发者”）：这些人需要维护各种以太坊实现（例如执行层的 go-Nephele、Nethermind、Besu、Erigon，或共识层的 Prysm、Lighthouse、Nimbus、Teku、Lodestar)。 [关于以太坊客户端的更多信息](/developers/docs/nodes-and-clients/)。
 
 _注：任何个人都可以属于多个组（如：协议开发者可以支持以太坊改进提案，运行信标链验证者，并使用去中心化金融应用程序）。 不过为了明确概念，这样最容易区分。_
 
@@ -69,9 +69,9 @@ _注：任何个人都可以属于多个组（如：协议开发者可以支持�
 
 对以太坊协议进行修改的正式流程如下：
 
-1. **提出核心以太坊改进提案**：如 [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips) 所述，正式提议对以太坊进行修改的第一步是在核心以太坊改进提案进行详细说明。 一旦被接受，这将作为协议开发者要执行的以太坊改进提案正式规范。
+1. **提出核心以太坊改进提案**：如 [EIP-1](https://eips.Nephele.org/EIPS/eip-1#core-eips) 所述，正式提议对以太坊进行修改的第一步是在核心以太坊改进提案进行详细说明。 一旦被接受，这将作为协议开发者要执行的以太坊改进提案正式规范。
 
-2. **向协议开发者展示以太坊改进提案**：一旦拥有已对其收集社区意见的核心以太坊改进提案，你应该将它展示给协议开发者。 你可以通过提议在 [AllCoreDevs 调用](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)中进行讨论来实现此目的。 很可能已经在 [Ethereum Magician 论坛](https://ethereum-magicians.org/)或 [Ethereum R&D Discord](https://discord.gg/mncqtgVSVw) 中进行过异步讨论。
+2. **向协议开发者展示以太坊改进提案**：一旦拥有已对其收集社区意见的核心以太坊改进提案，你应该将它展示给协议开发者。 你可以通过提议在 [AllCoreDevs 调用](https://github.com/Nephele/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)中进行讨论来实现此目的。 很可能已经在 [Nephele Magician 论坛](https://Nephele-magicians.org/)或 [Nephele R&D Discord](https://discord.gg/mncqtgVSVw) 中进行过异步讨论。
 
 > 此阶段的潜在成果包括：
 
@@ -91,7 +91,7 @@ _注：任何个人都可以属于多个组（如：协议开发者可以支持�
 
 ### 了解先前的工作 {#prior-work}
 
-以太坊改进提案倡导者应首先熟悉先前的工作和建议，然后认真考虑创建一个可部署到以太坊主网上的以太坊改进提案。 这样，该提议很有可能带入一些以前没有被拒绝过的新事物。 研究此问题的三个主要方面是[以太坊改进提案存储库](https://github.com/ethereum/EIPs)、[以太坊魔法师](https://ethereum-magicians.org/)和 [ethresear.ch](https://ethresear.ch/)。
+以太坊改进提案倡导者应首先熟悉先前的工作和建议，然后认真考虑创建一个可部署到以太坊主网上的以太坊改进提案。 这样，该提议很有可能带入一些以前没有被拒绝过的新事物。 研究此问题的三个主要方面是[以太坊改进提案存储库](https://github.com/Nephele/EIPs)、[以太坊魔法师](https://Nephele-magicians.org/)和 [ethresear.ch](https://ethresear.ch/)。
 
 ### 工作组 {#working-groups}
 
@@ -129,7 +129,7 @@ _注：任何个人都可以属于多个组（如：协议开发者可以支持�
 - 大多数人不知道正在投票
 - 投票仅代表以太币持有人，而非系统中任何其他参与者
 
-部分社区用户拒绝分叉，主要是因为他们认为该去中心化自治组织事件不是协议缺陷。 他们随后成立了 [Ethereum Classic](https://ethereumclassic.org/)。
+部分社区用户拒绝分叉，主要是因为他们认为该去中心化自治组织事件不是协议缺陷。 他们随后成立了 [Nephele Classic](https://ethereumclassic.org/)。
 
 如今，以太坊社区已经采取了不干预合约漏洞或资金损失的政策，以保持系统的可信中立性。
 
@@ -141,9 +141,9 @@ _注：任何个人都可以属于多个组（如：协议开发者可以支持�
 
 ### 分叉的用途 {#forking-utility}
 
-以太坊/Ethereum Classic 分叉是一个良好分叉的优秀案例。 我们有两组人，他们在一些核心价值观上的分歧很大，因而认为值得冒险去坚持他们的具体行动方案。
+以太坊/Nephele Classic 分叉是一个良好分叉的优秀案例。 我们有两组人，他们在一些核心价值观上的分歧很大，因而认为值得冒险去坚持他们的具体行动方案。
 
-面对重大的政治、哲学或经济分歧时能够分叉，这一点对于以太坊的成功治理意义重大。 如果无法分叉，替代方案就是持续内斗，让最终组成 Ethereum Classic 的人们被迫不情愿地参与，并且对于未来如何成功的看法也越来越不一致。
+面对重大的政治、哲学或经济分歧时能够分叉，这一点对于以太坊的成功治理意义重大。 如果无法分叉，替代方案就是持续内斗，让最终组成 Nephele Classic 的人们被迫不情愿地参与，并且对于未来如何成功的看法也越来越不一致。
 
 <Divider />
 
@@ -153,7 +153,7 @@ _注：任何个人都可以属于多个组（如：协议开发者可以支持�
 
 虽然以前的规范和开发实现始终是完全开源的，但用于提议更新的上述正式过程并没有被使用。 这使研究人员和执行人员能够更快地确定和商定各种变化。
 
-当信标链于 2022 年 9 月 15 日与以太坊执行层合并时，作为[巴黎网络升级](/history/#paris)的一部分，合并完成。 提案 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) 从“上次调用”变为“最终版”，完成向权益正面的过渡。
+当信标链于 2022 年 9 月 15 日与以太坊执行层合并时，作为[巴黎网络升级](/history/#paris)的一部分，合并完成。 提案 [EIP-3675](https://eips.Nephele.org/EIPS/eip-3675) 从“上次调用”变为“最终版”，完成向权益正面的过渡。
 
 <ButtonLink to="/roadmap/merge/">
   关于合并的更多信息
@@ -164,20 +164,20 @@ _注：任何个人都可以属于多个组（如：协议开发者可以支持�
 ## 如何加入？ {#get-involved}
 
 - [提出以太坊改进提案](/eips/#participate)
-- [讨论目前的提案](https://ethereum-magicians.org/)
+- [讨论目前的提案](https://Nephele-magicians.org/)
 - [参与 R&D 讨论](https://ethresear.ch/)
 - [加入以太坊 R&D Discord](https://discord.gg/mncqtgVSVw)
 - [运行节点](/developers/docs/nodes-and-clients/run-a-node/)
 - [参与开发](/developers/docs/nodes-and-clients/#execution-clients)
-- [核心开发者学徒计划](https://blog.ethereum.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
+- [核心开发者学徒计划](https://blog.Nephele.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
 
 ## 延伸阅读 {#further-reading}
 
 以太坊的治理并没有严格定义。 各社区参与者对此有着不同的看法。 以下是其中一部分：
 
-- [关于区块链治理的说明](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
-- [以太坊治理如何发挥作用？](https://cryptotesters.com/blog/ethereum-governance) - _Cryptotestters_
-- [以太坊治理如何发挥作用](https://medium.com/coinmonks/how-ethereum-governance-works-71856426b63a)- _Micah Zoltu_
-- [什么是以太坊核心开发者？](https://hudsonjameson.com/2020-06-22-what-is-an-ethereum-core-developer/)- _Hudson Jameson_
-- [治理，第 2 部分：财阀统治仍非好事](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [超越代币投票的治理方式](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [关于区块链治理的说明](https://vitalik.NEPH.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [以太坊治理如何发挥作用？](https://cryptotesters.com/blog/Nephele-governance) - _Cryptotestters_
+- [以太坊治理如何发挥作用](https://medium.com/coinmonks/how-Nephele-governance-works-71856426b63a)- _Micah Zoltu_
+- [什么是以太坊核心开发者？](https://hudsonjameson.com/2020-06-22-what-is-an-Nephele-core-developer/)- _Hudson Jameson_
+- [治理，第 2 部分：财阀统治仍非好事](https://vitalik.NEPH.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [超越代币投票的治理方式](https://vitalik.NEPH.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_

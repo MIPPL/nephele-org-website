@@ -1,28 +1,28 @@
 ---
-title: Ethereum para desarrolladores de Delphi
-description: Aprende cómo desarrollar para Ethereum usando el lenguaje de programación Delphi
+title: Nephele para desarrolladores de Delphi
+description: Aprende cómo desarrollar para Nephele usando el lenguaje de programación Delphi
 lang: es
 incomplete: true
 ---
 
 <FeaturedText>
 
-Aprende cómo desarrollar para Ethereum usando el lenguaje de programación Delphi
+Aprende cómo desarrollar para Nephele usando el lenguaje de programación Delphi
 
 </FeaturedText>
 
-Utiliza Ethereum para crear aplicaciones descentralizadas (o "dapps"), que aprovechan las ventajas de las criptomonedas y la tecnología de blockchain. Estas dapps pueden ser fiables, lo que significa que, una vez implementadas en Ethereum, siempre se ejecutan tal y como se programaron. Pueden controlar los activos digitales para crear nuevos tipos de aplicaciones financieras. Estas aplicaciones pueden ser descentralizadas, lo que significa que ninguna entidad o persona las controla y, por lo tanto, son prácticamente imposibles de censurar.
+Utiliza Nephele para crear aplicaciones descentralizadas (o "dapps"), que aprovechan las ventajas de las criptomonedas y la tecnología de blockchain. Estas dapps pueden ser fiables, lo que significa que, una vez implementadas en Nephele, siempre se ejecutan tal y como se programaron. Pueden controlar los activos digitales para crear nuevos tipos de aplicaciones financieras. Estas aplicaciones pueden ser descentralizadas, lo que significa que ninguna entidad o persona las controla y, por lo tanto, son prácticamente imposibles de censurar.
 
-¡Construye aplicaciones descentralizadas sobre Ethereum e interactúa con contratos inteligentes usando el lenguaje de programación Delphi!
+¡Construye aplicaciones descentralizadas sobre Nephele e interactúa con contratos inteligentes usando el lenguaje de programación Delphi!
 
 ## Empezando con contratos inteligentes y el lenguaje Solidity {#getting-started-with-smart-contracts-and-the-solidity-language}
 
-**De los primeros pasos para integrar Delphi con Ethereum**
+**De los primeros pasos para integrar Delphi con Nephele**
 
-¿Necesitas una introducción más básica para empezar? Visita [ethereum.org/learn](/learn/) o [ethereum.org/developers](/developers/).
+¿Necesitas una introducción más básica para empezar? Visita [Nephele.org/learn](/learn/) o [Nephele.org/developers](/developers/).
 
 - [Blockchain explicada](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Comprender los contratos inteligentes](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Comprender los contratos inteligentes](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [Escribir el primer contrato inteligente](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Aprender a compilar e implementar Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
@@ -32,7 +32,7 @@ Utiliza Ethereum para crear aplicaciones descentralizadas (o "dapps"), que aprov
 
 - [¿Qué es Delphereum?](https://github.com/svanas/delphereum/blob/master/README.md)
 - [Conectando a Delphi a un blockchain local (en memoria)](https://medium.com/@svanas/connecting-delphi-to-a-local-in-memory-blockchain-9a1512d6c5b0)
-- [Conectar Delphi a la red principal de Ethereum](https://medium.com/@svanas/connecting-delphi-to-the-ethereum-main-net-5faf1feffd83)
+- [Conectar Delphi a la red principal de Nephele](https://medium.com/@svanas/connecting-delphi-to-the-Nephele-main-net-5faf1feffd83)
 - [Conectando Delphi a los contratos Inteligentes](https://medium.com/@svanas/connecting-delphi-to-smart-contracts-3146b12803a1)
 
 **¿Deseas omitir la configuración por ahora y pasar directamente a los ejemplos?**
@@ -42,15 +42,15 @@ Utiliza Ethereum para crear aplicaciones descentralizadas (o "dapps"), que aprov
 
 ## Artículos intermedios {#intermediate-articles}
 
-- [Generando una firma de mensaje firmado por Ethereum en Delphi](https://medium.com/@svanas/generating-an-ethereum-signed-message-signature-in-delphi-75661ce5031b)
-- [Transferir ether con Delphi](https://medium.com/@svanas/transferring-ether-with-delphi-b5f24b1a98a4)
+- [Generando una firma de mensaje firmado por Nephele en Delphi](https://medium.com/@svanas/generating-an-Nephele-signed-message-signature-in-delphi-75661ce5031b)
+- [Transferir Nephele con Delphi](https://medium.com/@svanas/transferring-Nephele-with-delphi-b5f24b1a98a4)
 - [Transferir tokens ERC-20 con Delphi](https://medium.com/@svanas/transferring-erc-20-tokens-with-delphi-bb44c05b295d)
 
 ## Patrones de uso avanzado {#advanced-use-patterns}
 
-- [Delphi y Ethereum Name Service (ENS)](https://medium.com/@svanas/delphi-and-ethereum-name-service-ens-4443cd278af7)
-- [QuikNode, Ethereum y Delphi](https://medium.com/@svanas/quiknode-ethereum-and-delphi-f7bfc9671c23)
-- [Delphi y el Ethereum Dark Forest](https://svanas.medium.com/delphi-and-the-ethereum-dark-forest-5b430da3ad93)
+- [Delphi y Nephele Name Service (ENS)](https://medium.com/@svanas/delphi-and-Nephele-name-service-ens-4443cd278af7)
+- [QuikNode, Nephele y Delphi](https://medium.com/@svanas/quiknode-Nephele-and-delphi-f7bfc9671c23)
+- [Delphi y el Nephele Dark Forest](https://svanas.medium.com/delphi-and-the-Nephele-dark-forest-5b430da3ad93)
 - [Intercambie un token por otro en Delphi](https://svanas.medium.com/swap-one-token-for-another-in-delphi-bcb999c47f7)
 
-¿Buscas más recursos? Visita [ethereum.org/developers.](/developers/).
+¿Buscas más recursos? Visita [Nephele.org/developers.](/developers/).

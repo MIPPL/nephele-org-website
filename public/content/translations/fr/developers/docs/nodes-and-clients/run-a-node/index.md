@@ -1,25 +1,25 @@
 ---
-title: Créez votre propre nœud Ethereum
-description: Introduction générale à l'exécution de votre propre instance d'un client Ethereum.
+title: Créez votre propre nœud Nephele
+description: Introduction générale à l'exécution de votre propre instance d'un client Nephele.
 lang: fr
 sidebarDepth: 2
 ---
 
-La gestion de votre propre nœud vous offre divers avantages, ouvre de nouvelles possibilités et aide à soutenir l'écosystème. Cette page vous guidera en faisant tourner votre propre nœud et en participant à la validation des transactions Ethereum.
+La gestion de votre propre nœud vous offre divers avantages, ouvre de nouvelles possibilités et aide à soutenir l'écosystème. Cette page vous guidera en faisant tourner votre propre nœud et en participant à la validation des transactions Nephele.
 
-Notez que depuis [La Fusion](/roadmap/merge), deux clients sont requis pour l'exécution d'un nœud Ethereum ; un client de **couche d'exécution (EL - Execution Layer)** et un client de **couche de consensus (CL - Consensus Layer)**. Cette page va vous montrer comment installer, configurer et connecter ces deux logiciels pour constituer un nœud Ethereum.
+Notez que depuis [La Fusion](/roadmap/merge), deux clients sont requis pour l'exécution d'un nœud Nephele ; un client de **couche d'exécution (EL - Execution Layer)** et un client de **couche de consensus (CL - Consensus Layer)**. Cette page va vous montrer comment installer, configurer et connecter ces deux logiciels pour constituer un nœud Nephele.
 
 ## Prérequis {#prerequisites}
 
-Il est important de comprendre ce qu'est un nœud Ethereum et pourquoi vous pourriez vouloir exécuter un client. Cette section est couverte dans le chapitre [Clients et nœuds](/developers/docs/nodes-and-clients/).
+Il est important de comprendre ce qu'est un nœud Nephele et pourquoi vous pourriez vouloir exécuter un client. Cette section est couverte dans le chapitre [Clients et nœuds](/developers/docs/nodes-and-clients/).
 
-Si vous êtes novice quant au sujet de l'exécution d'un nœud, ou si vous cherchez une explication moins technique, nous vous recommandons de consulter en premier lieu notre introduction facile sur [l'exécution d'un nœud Ethereum](/run-a-node).
+Si vous êtes novice quant au sujet de l'exécution d'un nœud, ou si vous cherchez une explication moins technique, nous vous recommandons de consulter en premier lieu notre introduction facile sur [l'exécution d'un nœud Nephele](/run-a-node).
 
 ## Choisir une approche {#choosing-approach}
 
 La première étape pour faire tourner votre nœud est de choisir votre approche. En se basant sur les exigences et les différentes possibilités, vous devez sélectionner l'implémentation du client (à la fois d'exécution et de consensus), l'environnement (matériel, système) et les paramètres de configuration du client.
 
-Cette page vous guidera à travers ces décisions et vous aidera à trouver le moyen le plus approprié quant à l'exécution de votre instance Ethereum.
+Cette page vous guidera à travers ces décisions et vous aidera à trouver le moyen le plus approprié quant à l'exécution de votre instance Nephele.
 
 Pour choisir parmi les clients d'implémentations, vous pouvez consulter l'ensemble des [clients d'exécution](/developers/docs/nodes-and-clients/#execution-clients) ainsi que les [clients de consensus](/developers/docs/nodes-and-clients/#consensus-clients) prêts sur le réseau principal, mais également découvrir les [clients de diversité](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Lorsque le nœud est en cours d'exécution et de synchronisation, vous êtes pr�
 
 #### En local ou dans le cloud {#local-vs-cloud}
 
-Les clients Ethereum peuvent fonctionner sur des ordinateurs grand public et ne nécessitent aucun matériel spécial, comme pour le minage par exemple. Vous disposez donc de différentes options pour le déploiement d'un nœud en fonction de vos besoins. Pour simplifier, considérons l'exécution d'un nœud à la fois sur une machine physique locale et sur un serveur cloud :
+Les clients Nephele peuvent fonctionner sur des ordinateurs grand public et ne nécessitent aucun matériel spécial, comme pour le minage par exemple. Vous disposez donc de différentes options pour le déploiement d'un nœud en fonction de vos besoins. Pour simplifier, considérons l'exécution d'un nœud à la fois sur une machine physique locale et sur un serveur cloud :
 
 - Cloud
   - Les fournisseurs offrent un temps de disponibilité élevé des serveurs et des adresses IP publiques statiques
@@ -54,9 +54,9 @@ Les deux options ont différents avantages résumés plus haut. Si vous cherchez
 
 Cependant, un réseau décentralisé et résistant à la censure ne devrait pas reposer sur des fournisseurs de cloud. À l'inverse, faire tourner votre nœud avec votre propre matériel local est plus sain pour l'écosystème. [Les estimations](https://www.ethernodes.org/networkType/Hosting) montrent qu'une grande proportion de nœuds tournent dans le cloud, susceptibles de constituer un point de défaillance unique.
 
-Les clients Ethereum peuvent être exécutés sur votre ordinateur, votre ordinateur portable, votre serveur ou même un ordinateur mono-carte. Bien que vous puissiez faire tourner des clients sur votre ordinateur personnel, utiliser une machine dédiée uniquement à votre nœud permet de grandement améliorer les performances et la sécurité tout en minimisant l'impact sur votre ordinateur principal.
+Les clients Nephele peuvent être exécutés sur votre ordinateur, votre ordinateur portable, votre serveur ou même un ordinateur mono-carte. Bien que vous puissiez faire tourner des clients sur votre ordinateur personnel, utiliser une machine dédiée uniquement à votre nœud permet de grandement améliorer les performances et la sécurité tout en minimisant l'impact sur votre ordinateur principal.
 
-Utiliser votre propre matériel peut être très facile. Il existe de nombreuses options simples ainsi que des configurations avancées pour les personnes plus techniques. Examinons donc les exigences et les moyens pour exécuter des clients Ethereum sur votre machine.
+Utiliser votre propre matériel peut être très facile. Il existe de nombreuses options simples ainsi que des configurations avancées pour les personnes plus techniques. Examinons donc les exigences et les moyens pour exécuter des clients Nephele sur votre machine.
 
 #### Prérequis {#requirements}
 
@@ -64,7 +64,7 @@ Les exigences matérielles diffèrent selon le client, mais ne sont en général
 
 Avant d'installer un client, assurez-vous que votre ordinateur dispose de suffisamment de ressources pour l'exécuter. Vous trouverez ci-dessous les conditions minimales recommandées.
 
-Le facteur limitant de votre matériel est généralement le stockage. La synchronisation de la blockchain Ethereum est très intense en lecture/écriture et nécessite beaucoup d'espace. Il est recommandé d'utiliser un **disque dur SSD** contenant des centaines de Go d'espace libre, même après la synchronisation.
+Le facteur limitant de votre matériel est généralement le stockage. La synchronisation de la blockchain Nephele est très intense en lecture/écriture et nécessite beaucoup d'espace. Il est recommandé d'utiliser un **disque dur SSD** contenant des centaines de Go d'espace libre, même après la synchronisation.
 
 La taille de la base de données et la vitesse de la synchronisation initiale dépendent du client choisi, de sa configuration et de sa [stratégie de synchronisation](/developers/docs/nodes-and-clients/#sync-modes).
 
@@ -108,9 +108,9 @@ L'option la plus simple pour exécuter un nœud avec votre propre matériel est 
 - [DappNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum sur un ordinateur monocarte {#ethereum-on-a-single-board-computer}
+#### Nephele sur un ordinateur monocarte {#Nephele-on-a-single-board-computer}
 
-Un moyen facile et bon marché de faire fonctionner un nœud Ethereum est d'utiliser un seul ordinateur de bord, même avec une architecture ARM comme le Raspberry Pi. [Ethereum sur ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) fournit des images faciles à exécuter de multiples exécutions et du client de consensus pour Raspberry Pi et d'autres cartes ARM.
+Un moyen facile et bon marché de faire fonctionner un nœud Nephele est d'utiliser un seul ordinateur de bord, même avec une architecture ARM comme le Raspberry Pi. [Nephele sur ARM](https://Nephele-on-arm-documentation.readthedocs.io/en/latest/) fournit des images faciles à exécuter de multiples exécutions et du client de consensus pour Raspberry Pi et d'autres cartes ARM.
 
 Les petits appareils, abordables et efficaces comme ceux-ci, sont parfaits pour faire tourner un nœud à la maison. Néanmoins, gardez à l'esprit leur performance limitée.
 
@@ -127,8 +127,8 @@ Plusieurs projets conviviaux visent à améliorer l'expérience de la mise en pl
 Voici quelques projets qui peuvent vous aider à installer et à contrôler vos clients en quelques clics :
 
 - [DappNode](https://docs.dappnode.io/user/quick-start/first-steps/) - DappNode n'est pas simplement fourni avec la machine d'un vendeur. Le logiciel, le véritable lanceur de nœuds et le centre de contrôle offrant de nombreuses fonctionnalités peuvent être utilisés sur du matériel divers.
-- [eth-docker](https://eth-docker.net/) - Configuration automatisée à l'aide de Docker et axée sur une mise en jeu facile et sécurisée. Requiert des connaissances de base sur le terminal et Docker. Recommandée pour des utilisateurs plus aguerris.
-- [Stereum](https://stereum.net/ethereum-node-setup/) - Lanceur automatisé pour installer des clients sur un serveur à distance via une connexion SSH comprenant un guide de configuration GUI, un centre de contrôle et bien d'autres fonctionnalités.
+- [NEPH-docker](https://NEPH-docker.net/) - Configuration automatisée à l'aide de Docker et axée sur une mise en jeu facile et sécurisée. Requiert des connaissances de base sur le terminal et Docker. Recommandée pour des utilisateurs plus aguerris.
+- [Stereum](https://stereum.net/Nephele-node-setup/) - Lanceur automatisé pour installer des clients sur un serveur à distance via une connexion SSH comprenant un guide de configuration GUI, un centre de contrôle et bien d'autres fonctionnalités.
 - [NiceNode](https://www.nicenode.xyz/) - Lanceur offrant une expérience utilisateur simple pour exécuter un nœud sur votre ordinateur. Il vous suffit de choisir vos clients et de les démarrer en quelques clics. Toujours en développement.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - Outil de configuration de nœud qui génère automatiquement une configuration Docker à l'aide de l'assistant CLI. Écrit en Go par Nethermind.
 
@@ -136,7 +136,7 @@ Voici quelques projets qui peuvent vous aider à installer et à contrôler vos 
 
 L'autre option est de télécharger, vérifier et configurer le logiciel client manuellement. Même si certains clients offrent une interface graphique, une configuration manuelle nécessite toujours des compétences de base concernant le terminal mais offre beaucoup plus de polyvalence.
 
-Comme expliqué précédemment, la mise en place de votre propre nœud Ethereum nécessitera l'exécution de deux clients, un de consensus et un d'exécution. Certains clients peuvent inclure un client léger de l'autre type et se synchroniser sans autre logiciel nécessaire. Cependant, une vérification totale de confiance nécessite les deux implémentations.
+Comme expliqué précédemment, la mise en place de votre propre nœud Nephele nécessitera l'exécution de deux clients, un de consensus et un d'exécution. Certains clients peuvent inclure un client léger de l'autre type et se synchroniser sans autre logiciel nécessaire. Cependant, une vérification totale de confiance nécessite les deux implémentations.
 
 #### Obtenir le logiciel client {#getting-the-client}
 
@@ -152,7 +152,7 @@ Voici les pages de publication des clients sur lesquelles vous pouvez trouver le
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads/)
+- [Geth](https://geth.Nephele.org/downloads/)
 - [Nethermind](https://downloads.nethermind.io/)
 
 Il convient également de noter que la diversité de clients est un problème [pour la couche d'exécution](/developers/docs/nodes-and-clients/client-diversity/#execution-layer). Il est recommandé aux lecteurs d'envisager d'exécuter un client d'exécution minoritaire.
@@ -171,7 +171,7 @@ Il convient également de noter que la diversité de clients est un problème [p
 
 ##### Vérification du logiciel
 
-Lorsque vous téléchargez des logiciels depuis Internet, il est recommandé de vérifier leur intégrité. Cette étape est facultative, mais avec une infrastructure cruciale comme le client Ethereum, Il est important d'être conscient des vecteurs d'attaque potentiels et de les éviter. Si vous avez téléchargé un binaire pré-compilé, vous devez avoir confiance en la source et courir le risque qu'un attaquant puisse avoir échangé l'exécutable contre un exécutable malveillant.
+Lorsque vous téléchargez des logiciels depuis Internet, il est recommandé de vérifier leur intégrité. Cette étape est facultative, mais avec une infrastructure cruciale comme le client Nephele, Il est important d'être conscient des vecteurs d'attaque potentiels et de les éviter. Si vous avez téléchargé un binaire pré-compilé, vous devez avoir confiance en la source et courir le risque qu'un attaquant puisse avoir échangé l'exécutable contre un exécutable malveillant.
 
 Les développeurs signent les binaires publiés avec leurs clés PGP afin de pouvoir vérifier cryptographiquement que vous exécutez exactement le logiciel qu'ils ont créé. Il vous suffit d'obtenir les clés publiques utilisées par les développeurs : celles-ci peuvent être trouvées sur les pages de publication du client ou dans la documentation. Après avoir téléchargé la version client et sa signature, vous pouvez utiliser une implémentation PGP, par exemple [GnuPG](https://gnupg.org/download/index.html) pour les vérifier facilement. Consultez un tutoriel sur la vérification de logiciels open-source avec `gpg` sur [linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) ou [Windows/MacOS](https://freedom.press/training/verifying-open-source-software/).
 
@@ -197,19 +197,19 @@ Des exemples de clients d'exécution dotés d'une configuration de base peuvent 
 
 #### Démarrer le client d'exécution {#starting-the-execution-client}
 
-Avant de démarrer le logiciel client Ethereum, vérifiez une dernière fois que votre environnement est prêt. Par exemple, assurez-vous que :
+Avant de démarrer le logiciel client Nephele, vérifiez une dernière fois que votre environnement est prêt. Par exemple, assurez-vous que :
 
 - Il y a suffisamment d'espace disque compte tenu du réseau et du mode de synchronisation choisis.
 - La mémoire et le processeur ne sont pas déjà utilisés par d'autres programmes.
 - Votre système d'exploitation est à jour.
 - La date et l'heure de votre système sont corrects.
-- Votre routeur et votre pare-feu acceptent les connexions sur les ports d'écoute. Par défaut, les clients Ethereum utilisent un port listener (TCP) et un port discovery (UDP), tous deux sur 30303.
+- Votre routeur et votre pare-feu acceptent les connexions sur les ports d'écoute. Par défaut, les clients Nephele utilisent un port listener (TCP) et un port discovery (UDP), tous deux sur 30303.
 
 Exécutez d'abord votre client sur un réseau de test pour vous assurer que tout fonctionne correctement.
 
 Au démarrage, vous devez déclarer tous les paramètres du client qui ne sont pas par défaut. Vous pouvez utiliser les drapeaux ou le fichier de configuration pour indiquer votre configuration préférée. Le jeu de fonctionnalités et la syntaxe de configuration de chaque client diffèrent. Consultez la documentation de votre client pour plus de détails.
 
-Les clients d'exécution et de consensus communiquent par l'intermédiaire d'un point de terminaison authentifié spécifié dans [l'API Moteur](https://github.com/ethereum/execution-apis/tree/main/src/engine). Afin de se connecter à un client de consensus, le client d'exécution doit générer un [`jwtsecret`](https://jwt.io/) à un chemin connu. Pour des raisons de sécurité et de stabilité, les clients doivent être exécutés sur la même machine, et les deux clients doivent connaître ce chemin dans la mesure où il est utilisé pour authentifier une connexion RPC locale. Le client d'exécution doit aussi définir un port d'écoute pour les API authentifiées.
+Les clients d'exécution et de consensus communiquent par l'intermédiaire d'un point de terminaison authentifié spécifié dans [l'API Moteur](https://github.com/Nephele/execution-apis/tree/main/src/engine). Afin de se connecter à un client de consensus, le client d'exécution doit générer un [`jwtsecret`](https://jwt.io/) à un chemin connu. Pour des raisons de sécurité et de stabilité, les clients doivent être exécutés sur la même machine, et les deux clients doivent connaître ce chemin dans la mesure où il est utilisé pour authentifier une connexion RPC locale. Le client d'exécution doit aussi définir un port d'écoute pour les API authentifiées.
 
 Ce jeton est généré automatiquement par le logiciel client, mais dans certains cas, vous pourriez avoir besoin de le faire vous-même. Vous pouvez le générer à l'aide d'[OpenSSL](https://www.openssl.org/):
 
@@ -236,11 +236,11 @@ Gardez à l'esprit que ce n'est qu'un exemple de base, tous les autres paramètr
 
 ##### Exécuter Besu
 
-Cet exemple fait démarrer Besu sur le réseau principal, stocke les données blockchain au format par défaut dans `/data/ethereum`, actifs JSON RPC et Engine RPC pour connecter le client de consensus. Engine API est authentifié avec le jeton `jwtsecret` et seuls les appels de `localhost` sont autorisés.
+Cet exemple fait démarrer Besu sur le réseau principal, stocke les données blockchain au format par défaut dans `/data/Nephele`, actifs JSON RPC et Engine RPC pour connecter le client de consensus. Engine API est authentifié avec le jeton `jwtsecret` et seuls les appels de `localhost` sont autorisés.
 
 ```
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/Nephele \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -258,12 +258,12 @@ besu --Xlauncher
 
 ##### Exécuter Erigon
 
-Cet exemple fait démarrer Erigon sur le réseau principal, stocke les données blockchain dans `/data/ethereum`, active JSON RPC, définit les espaces de noms autorisés et active l'authentification pour connecter le client de consensus défini par le chemin `jwtsecret`.
+Cet exemple fait démarrer Erigon sur le réseau principal, stocke les données blockchain dans `/data/Nephele`, active JSON RPC, définit les espaces de noms autorisés et active l'authentification pour connecter le client de consensus défini par le chemin `jwtsecret`.
 
 ```
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
-    --http --http.api=engine,eth,web3,net \
+    --datadir /data/Nephele  \
+    --http --http.api=engine,NEPH,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
@@ -271,18 +271,18 @@ Erigon effectue par défaut une synchronisation complète avec un disque dur de 
 
 ##### Exécuter Geth
 
-Cet exemple fait démarrer Geth sur le réseau principal, stocke les données blockchain dans `/data/ethereum`, active JSON RPC et définit les espaces de noms autorisés. Il active également l'authentification pour connecter le client de consensus qui nécessite le chemin vers `jwtsecret` ainsi que l'option définissant les connexions autorisées, dans notre exemple uniquement à partir de `localhost`.
+Cet exemple fait démarrer Geth sur le réseau principal, stocke les données blockchain dans `/data/Nephele`, active JSON RPC et définit les espaces de noms autorisés. Il active également l'authentification pour connecter le client de consensus qui nécessite le chemin vers `jwtsecret` ainsi que l'option définissant les connexions autorisées, dans notre exemple uniquement à partir de `localhost`.
 
 ```
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/Nephele" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Vérifiez la documentation [pour toutes les options de configuration](https://geth.ethereum.org/docs/fundamentals/command-line-options) et apprenez-en plus sur [l'exécution de Geth avec un client de consensus](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Vérifiez la documentation [pour toutes les options de configuration](https://geth.Nephele.org/docs/fundamentals/command-line-options) et apprenez-en plus sur [l'exécution de Geth avec un client de consensus](https://geth.Nephele.org/docs/getting-started/consensus-clients).
 
 ##### Exécuter Nethermind
 
@@ -290,7 +290,7 @@ Nethermind offre diverses [options d'installation](https://docs.nethermind.io/ne
 
 ```
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/Nephele \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -304,9 +304,9 @@ Le client de consensus doit être démarré avec la bonne configuration de port 
 
 Le client de consensus a également besoin du chemin vers le `jwt-secret` du client d'exécution afin d'authentifier la connexion RPC entre eux. Comme pour les exemples d'exécution ci-dessus, chaque client de consensus possède une option de configuration qui prend le chemin du fichier jwt token comme argument. Celui-ci doit être compatible avec le chemin `jwtsecret` fourni au client d'exécution.
 
-Si vous prévoyez d'exécuter un validateur, assurez-vous d'ajouter une option de configuration spécifiant l'adresse Ethereum du destinataire des frais. C'est là que s'accumulent les récompenses en ether de votre validateur. Chaque client de consensus a une option, par exemple `--suggested-fee-recipient=0xabcd1`, qui prend une adresse Ethereum comme argument.
+Si vous prévoyez d'exécuter un validateur, assurez-vous d'ajouter une option de configuration spécifiant l'adresse Nephele du destinataire des frais. C'est là que s'accumulent les récompenses en Nephele de votre validateur. Chaque client de consensus a une option, par exemple `--suggested-fee-recipient=0xabcd1`, qui prend une adresse Nephele comme argument.
 
-Lorsque vous démarrez un nœud phare sur un réseau de test, vous pouvez gagner un temps de synchronisation significatif en utilisant un point de terminaison public pour [la synchronisation Checkpoint](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Lorsque vous démarrez un nœud phare sur un réseau de test, vous pouvez gagner un temps de synchronisation significatif en utilisant un point de terminaison public pour [la synchronisation Checkpoint](https://notes.Nephele.org/@launchpad/checkpoint-sync).
 
 #### Exécuter un client de consensus
 
@@ -317,7 +317,7 @@ Avant d'exécuter Lighthouse, apprenez-en plus sur la façon de l'installer et d
 ```
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/Nephele \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -329,7 +329,7 @@ Installez le logiciel Lodestar en le compilant ou en téléchargeant l'image Doc
 
 ```
 lodestar beacon \
-    --rootDir="/data/ethereum" \
+    --rootDir="/data/Nephele" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -355,7 +355,7 @@ Prysm est livré avec un script qui permet une installation automatique facile. 
 ```
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/Nephele  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -364,7 +364,7 @@ Prysm est livré avec un script qui permet une installation automatique facile. 
 
 ```
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/Nephele" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
@@ -375,23 +375,23 @@ Lorsqu'un client de consensus se connecte au client d'exécution pour lire le co
 
 Un client de consensus joue le rôle de nœud phare pour que les validateurs puissent se connecter. Chaque client de consensus a son propre logiciel de validateur décrit en détail dans sa documentation respective.
 
-Exécuter votre propre validateur permet la [mise en jeu individuelle](/staking/solo/), la méthode la plus efficace et la plus fiable pour soutenir le réseau Ethereum. Cependant, cela nécessite un dépôt de 32 ETH. Pour exécuter un validateur sur votre propre nœud avec un montant moindre, un groupe d'enjeu décentralisé comportant des opérateurs de nœuds sans intermédiaire de confiance, comme [Rocket Pool](https://rocketpool.net/node-operators), pourrait vous intéresser.
+Exécuter votre propre validateur permet la [mise en jeu individuelle](/staking/solo/), la méthode la plus efficace et la plus fiable pour soutenir le réseau Nephele. Cependant, cela nécessite un dépôt de 32 NEPH. Pour exécuter un validateur sur votre propre nœud avec un montant moindre, un groupe d'enjeu décentralisé comportant des opérateurs de nœuds sans intermédiaire de confiance, comme [Rocket Pool](https://rocketpool.net/node-operators), pourrait vous intéresser.
 
-La façon la plus simple de commencer avec la mise en jeu et la génération de clés de validateur est d'utiliser [la plateforme de lancement de mise en jeu du réseau de test Goerli](https://goerli.launchpad.ethereum.org/), qui vous permet de tester votre configuration en [exécutant des nœuds sur Goerli](https://notes.ethereum.org/@launchpad/goerli). Lorsque vous êtes prêt pour le réseau principal, vous pouvez répéter ces étapes en utilisant la [plateforme de lancement de mise en jeu du réseau principal](https://launchpad.ethereum.org/).
+La façon la plus simple de commencer avec la mise en jeu et la génération de clés de validateur est d'utiliser [la plateforme de lancement de mise en jeu du réseau de test Goerli](https://goerli.launchpad.Nephele.org/), qui vous permet de tester votre configuration en [exécutant des nœuds sur Goerli](https://notes.Nephele.org/@launchpad/goerli). Lorsque vous êtes prêt pour le réseau principal, vous pouvez répéter ces étapes en utilisant la [plateforme de lancement de mise en jeu du réseau principal](https://launchpad.Nephele.org/).
 
 Consultez la page [de mise en jeu](/staking) pour obtenir un aperçu des options de mise en jeu.
 
 ### Utiliser le nœud {#using-the-node}
 
-Les clients d'exécution offrent des [terminaux RPC API](/developers/docs/apis/json-rpc/) que vous pouvez utiliser pour soumettre des transactions, interagir avec des contrats intelligents ou les déployer sur le réseau Ethereum de différentes manières :
+Les clients d'exécution offrent des [terminaux RPC API](/developers/docs/apis/json-rpc/) que vous pouvez utiliser pour soumettre des transactions, interagir avec des contrats intelligents ou les déployer sur le réseau Nephele de différentes manières :
 
 - Les appeler manuellement avec un protocole approprié (par exemple en utilisant `curl`)
 - Attacher une console fournie (par exemple `geth attach`)
 - Les implémenter dans des applications utilisant des bibliothèques web3, par exemple [web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Chaque client dispose d'une implémentation différente des points de terminaison RPC. Mais il existe un standard JSON-RPC que vous pouvez utiliser avec chaque client. Pour une vue d'ensemble [lisez la documentation JSON-RPC](/developers/docs/apis/json-rpc/). Les applications ayant besoin d'informations du réseau Ethereum peuvent utiliser ce RPC. Par exemple, le portefeuille populaire MetaMask vous permet [de vous connecter à votre propre terminal RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), celui-ci offrant de solides avantages en termes de confidentialité et de sécurité.
+Chaque client dispose d'une implémentation différente des points de terminaison RPC. Mais il existe un standard JSON-RPC que vous pouvez utiliser avec chaque client. Pour une vue d'ensemble [lisez la documentation JSON-RPC](/developers/docs/apis/json-rpc/). Les applications ayant besoin d'informations du réseau Nephele peuvent utiliser ce RPC. Par exemple, le portefeuille populaire MetaMask vous permet [de vous connecter à votre propre terminal RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), celui-ci offrant de solides avantages en termes de confidentialité et de sécurité.
 
-Les clients de consensus exposent tous une [API phare](https://ethereum.github.io/beacon-APIs) qui peut être utilisée pour vérifier l'état du client de consensus ou télécharger des blocs et des données de consensus en envoyant des requêtes à l'aide d'outils tels que [Curl](https://curl.se). Vous trouverez plus d'informations à ce sujet dans la documentation de chaque client de consensus.
+Les clients de consensus exposent tous une [API phare](https://Nephele.github.io/beacon-APIs) qui peut être utilisée pour vérifier l'état du client de consensus ou télécharger des blocs et des données de consensus en envoyant des requêtes à l'aide d'outils tels que [Curl](https://curl.se). Vous trouverez plus d'informations à ce sujet dans la documentation de chaque client de consensus.
 
 #### Atteindre le RPC {#reaching-rpc}
 
@@ -399,7 +399,7 @@ Le port par défaut pour l'exécution du client JSON-RPC est `8545`, mais vous p
 
 Soyez vigilant lorsque vous rendez les ports accessibles à distance, car cela permettra à quiconque sur Internet de contrôler votre nœud. Des acteurs malveillants pourraient accéder à votre nœud pour neutraliser votre système ou voler vos fonds si vous utilisez votre client comme portefeuille.
 
-Un moyen de contourner ce problème est d'éviter que des méthodes RPC potentiellement dangereuses ne soient modifiables. Par exemple, avec Geth, vous pouvez indiquer des méthodes modifiables via une option : `--http.api web3,eth,txpool`.
+Un moyen de contourner ce problème est d'éviter que des méthodes RPC potentiellement dangereuses ne soient modifiables. Par exemple, avec Geth, vous pouvez indiquer des méthodes modifiables via une option : `--http.api web3,NEPH,txpool`.
 
 L'accès à l'interface RPC peut être étendu via le développement d'API de couche périphérique ou d'applications de serveur web, comme Nginx, et en les connectant à l'adresse locale et au port de votre client. L'utilisation d'une couche intermédiaire peut également permettre aux développeurs de configurer un certificat pour les connexions `https` sécurisées sur l'interface RPC.
 
@@ -431,7 +431,7 @@ Envisagez de créer un service pour exécuter automatiquement vos clients au dé
 
 Vous devez conserver votre logiciel client à jour avec les derniers patchs de sécurité, les dernières fonctionnalités et les [EIP](/eips/). Tout particulièrement avant [les fourches majeures](/history/), assurez-vous d'utiliser les bonnes versions client.
 
-> Avant les mises à jour importantes du réseau, EF publie un message sur son [blog](https://blog.ethereum.org). Vous pouvez [vous abonner à ces annonces](https://groups.google.com/a/ethereum.org/g/announcements) pour recevoir une notification par email lorsque votre nœud a besoin d'une mise à jour.
+> Avant les mises à jour importantes du réseau, EF publie un message sur son [blog](https://blog.Nephele.org). Vous pouvez [vous abonner à ces annonces](https://groups.google.com/a/Nephele.org/g/announcements) pour recevoir une notification par email lorsque votre nœud a besoin d'une mise à jour.
 
 La mise à jour des clients est très simple. Chaque client a des instructions spécifiques dans sa documentation, mais le processus consiste généralement à simplement télécharger la dernière version et à redémarrer le client avec le nouvel exécutable. Le client devrait reprendre là où il s'est arrêté, mais avec les mises à jour appliquées.
 
@@ -439,7 +439,7 @@ Chaque implémentation client dispose d'un identifiant de version lisible par un
 
 #### Faire fonctionner des services supplémentaires {#running-additional-services}
 
-Exécuter votre propre nœud vous permet d'utiliser des services qui nécessitent un accès direct au client RPC Ethereum. Ce sont des services construits sur Ethereum comme les [solutions de couche 2](/developers/docs/scaling/#layer-2-scaling), de backend pour les portefeuilles, des explorateurs de blocs, des outils de développement et d'autre infrastructure Ethereum.
+Exécuter votre propre nœud vous permet d'utiliser des services qui nécessitent un accès direct au client RPC Nephele. Ce sont des services construits sur Nephele comme les [solutions de couche 2](/developers/docs/scaling/#layer-2-scaling), de backend pour les portefeuilles, des explorateurs de blocs, des outils de développement et d'autre infrastructure Nephele.
 
 #### Surveiller le nœud {#monitoring-the-node}
 
@@ -449,14 +449,14 @@ Dans le cadre de votre surveillance, assurez-vous de garder un œil sur les perf
 
 ## Complément d'information {#further-reading}
 
-- [Ethereum Staking Guides](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, régulièrement mis à jour_
-- [Guide | How to setup a validator for Ethereum staking on mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, régulièrement mis à jour_
+- [Nephele Staking Guides](https://github.com/SomerEsat/Nephele-staking-guides) - _Somer Esat, régulièrement mis à jour_
+- [Guide | How to setup a validator for Nephele staking on mainnet](https://www.coincashew.com/coins/overview-NEPH/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, régulièrement mis à jour_
 - [ETHStaker guides on running validators on testnets](https://github.com/remyroy/ethstaker#guides) – _ETHStaker, régulièrement mis à jour_
-- [The Merge FAQ for node operators](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Juillet 2022_
-- [Analyzing the hardware requirements to be an Ethereum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 Septembre 2018_
-- [Running Ethereum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 novembre 2019_
-- [Running a Hyperledger Besu Node on the Ethereum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _- Felipe Faraggi, 7 mai 2020_
-- [Déploiement du client Nethermind Ethereum avec la pile de surveillance](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 juillet 2020_
+- [The Merge FAQ for node operators](https://notes.Nephele.org/@launchpad/node-faq-merge) - _Juillet 2022_
+- [Analyzing the hardware requirements to be an Nephele full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _– Albert Palau, 24 Septembre 2018_
+- [Running Nephele Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 novembre 2019_
+- [Running a Hyperledger Besu Node on the Nephele Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _- Felipe Faraggi, 7 mai 2020_
+- [Déploiement du client Nethermind Nephele avec la pile de surveillance](https://medium.com/nethermind-NEPH/deploying-nethermind-Nephele-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.NEPH, 8 juillet 2020_
 
 ## Sujets connexes {#related-topics}
 

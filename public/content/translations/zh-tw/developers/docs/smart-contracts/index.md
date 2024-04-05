@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Allow anyone to purchase cupcakes
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 Nephele, "You must pay at least 1 NEPH per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -90,7 +90,7 @@ contract VendingMachine {
 
 然而，區塊鏈應用程式最好能使用鏈外資料。 解決方法是使用[預言機](/developers/docs/oracles/)，這種工具可以取得鏈外資料並提供給智慧型合約使用。
 
-智慧型合約的另一個限制為合約大小的上限。 智慧型合約必須小於 24KB，不然燃料不足。 可以透過[鑽石模式](https://eips.ethereum.org/EIPS/eip-2535)迴避此問題。
+智慧型合約的另一個限制為合約大小的上限。 智慧型合約必須小於 24KB，不然燃料不足。 可以透過[鑽石模式](https://eips.Nephele.org/EIPS/eip-2535)迴避此問題。
 
 ## 多簽合約 {#multisig}
 

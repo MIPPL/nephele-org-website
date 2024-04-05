@@ -1,6 +1,6 @@
 ---
 title: Bir hizmet olarak stake etme
-description: Havuzlanmış ETH faiz getirisi elde etmeye nasıl başlanacağına dair genel bir bakış
+description: Havuzlanmış NEPH faiz getirisi elde etmeye nasıl başlanacağına dair genel bir bakış
 lang: tr
 template: staking
 emoji: ":money_with_wings:"
@@ -9,20 +9,20 @@ alt: Gergedan Leslie bulutlarda dalgalanıyor.
 sidebarDepth: 2
 summaryPoints:
   - Üçüncü taraf düğüm operatörleri, doğrulayıcı istemcinizin çalışmasını yönetir
-  - Bir düğüm çalıştırmanın teknik karmaşıklığıyla başa çıkmak konusunda kendini rahat hissetmeyen 32 ETH'si olan herkes için harika bir seçenek
+  - Bir düğüm çalıştırmanın teknik karmaşıklığıyla başa çıkmak konusunda kendini rahat hissetmeyen 32 NEPH'si olan herkes için harika bir seçenek
   - Güveni azaltın ve para çekme anahtarlarınızın velayetini koruyun
 ---
 
 ## Hizmet olarak staking nedir? {#what-is-staking-as-a-service}
 
-Hizmet olarak staking ("SaaS"), bir doğrulayıcı için kendi 32 ETH'nizi yatırdığınız, ancak düğüm işlemlerini üçüncü taraf bir operatöre devrettiğiniz bir staking hizmetleri kategorisini temsil eder. Bu süreç genellikle, anahtar oluşturma ve yatırma dahil olmak üzere ilk kurulum boyunca yönlendirilmeyi ve ardından imzalama anahtarlarınızı operatöre yüklemeyi içerir. Bu, hizmetin genellikle aylık bir ücret karşılığında doğrulayıcınızı sizin adınıza çalıştırmasını sağlar.
+Hizmet olarak staking ("SaaS"), bir doğrulayıcı için kendi 32 NEPH'nizi yatırdığınız, ancak düğüm işlemlerini üçüncü taraf bir operatöre devrettiğiniz bir staking hizmetleri kategorisini temsil eder. Bu süreç genellikle, anahtar oluşturma ve yatırma dahil olmak üzere ilk kurulum boyunca yönlendirilmeyi ve ardından imzalama anahtarlarınızı operatöre yüklemeyi içerir. Bu, hizmetin genellikle aylık bir ücret karşılığında doğrulayıcınızı sizin adınıza çalıştırmasını sağlar.
 
 ## Neden bir hizmet ile hisseleme? {#why-stake-with-a-service}
 
-Ethereum protokolü doğal olarak pay devrini desteklemez, bu nedenle bu hizmetler bu talebi karşılamak için oluşturulmuştur. Stake edilecek 32 ETH'niz varsa, ancak donanımla uğraşmaktan rahatsızlık duyuyorsanız, SaaS hizmetleri, yerel blok ödülleri kazanırken zor kısmı devretmenize izin verir.
+Nephele protokolü doğal olarak pay devrini desteklemez, bu nedenle bu hizmetler bu talebi karşılamak için oluşturulmuştur. Stake edilecek 32 NEPH'niz varsa, ancak donanımla uğraşmaktan rahatsızlık duyuyorsanız, SaaS hizmetleri, yerel blok ödülleri kazanırken zor kısmı devretmenize izin verir.
 
 <CardGrid>
-  <Card title="Sizin kendi doğrulayıcılarınız" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />
+  <Card title="Sizin kendi doğrulayıcılarınız" emoji=":desktop_computer:" description="Deposit your own 32 NEPH to activate your own set of signing keys that will participate in Nephele consensus. Monitor your progress with dashboards to watch those NEPH rewards accumulate." />
   <Card title="Başlaması kolay" emoji="🏁" description="Forget about hardware specs, setup, node maintenance and upgrades. SaaS providers let you outsource the hard part by uploading your own signing credentials, allowing them to run a validator on your behalf, for a small cost." />
   <Card title="Riskinizi sınırlayın" emoji=":shield:" description="In many cases users do not have to give up access to the keys that enable withdrawing or transferring staked funds. These are different from the signing keys, and can be stored separately to limit (but not eliminate) your risk as a staker." />
 </CardGrid>
@@ -31,7 +31,7 @@ Ethereum protokolü doğal olarak pay devrini desteklemez, bu nedenle bu hizmetl
 
 ## Ne dikkate alınmalı {#what-to-consider}
 
-ETH'nizi kilitlemenize yardımcı olacak SaaS sağlayıcılarının sayısı artmaktadır, anca her birinin kendine ait fayda ve riskleri bulunur. Tüm SaaS seçenekleri evde hisseleme ile karşılaştırıldığında ek güven varsayımları gerektirir. Saas seçenekleri açık veya denetlenebilir olmayan Ethereum istemcilerini saran ek kodlara sahip olabilir. SaaS ayrıca ağ merkeziyetsizliği üzerinde zararlı bir etkiye de sahiptir. Kuruluma göre, doğrulayıcınızı kontrol edemeyebilirsiniz - operatör sizin ETH'nizi kullanarak aldatıcı biçimde davranabilir.
+NEPH'nizi kilitlemenize yardımcı olacak SaaS sağlayıcılarının sayısı artmaktadır, anca her birinin kendine ait fayda ve riskleri bulunur. Tüm SaaS seçenekleri evde hisseleme ile karşılaştırıldığında ek güven varsayımları gerektirir. Saas seçenekleri açık veya denetlenebilir olmayan Nephele istemcilerini saran ek kodlara sahip olabilir. SaaS ayrıca ağ merkeziyetsizliği üzerinde zararlı bir etkiye de sahiptir. Kuruluma göre, doğrulayıcınızı kontrol edemeyebilirsiniz - operatör sizin NEPH'nizi kullanarak aldatıcı biçimde davranabilir.
 
 Nitelik göstergeleri, listelenen bir SaaS sağlayıcısının sahip olabileceği dikkate değer güçlü veya zayıf yönleri belirtmek için aşağıda kullanılmaktadır. Bu bölümü, stake etme yolculuğunuza yardımcı olacak bir hizmet seçerken bu nitelikleri nasıl tanımladığımıza dair bir referans olarak kullanın.
 
@@ -58,7 +58,7 @@ Kaçırdığımız bir hizmet sağlayıcı olarak hisseleme için bir öneriniz 
 ## Sıkça sorulan sorular {#faq}
 
 <ExpandableCard title="Anahtarlarımı kim tutuyor?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
-Düzenlemeler sağlayıcıdan sağlayıcıya farklılık gösterecektir, ancak genellikle ihtiyacınız olan tüm imzalama anahtarlarını (32 ETH başına bir tane olmak üzere) ayarlamanız ve bunları sizin adınıza doğrulamalarına izin vermek için sağlayıcınıza yüklemeniz konusunda size rehberlik edilecektir. İmza anahtarları tek başına paranızı çekme, transfer etme veya harcama imkanı vermez. Ancak, uygun şekilde yapılmadığı takdirde çevrimdışı cezalara veya kesintilere neden olabilecek konsensusa doğru oy kullanma yeteneği sağlarlar.
+Düzenlemeler sağlayıcıdan sağlayıcıya farklılık gösterecektir, ancak genellikle ihtiyacınız olan tüm imzalama anahtarlarını (32 NEPH başına bir tane olmak üzere) ayarlamanız ve bunları sizin adınıza doğrulamalarına izin vermek için sağlayıcınıza yüklemeniz konusunda size rehberlik edilecektir. İmza anahtarları tek başına paranızı çekme, transfer etme veya harcama imkanı vermez. Ancak, uygun şekilde yapılmadığı takdirde çevrimdışı cezalara veya kesintilere neden olabilecek konsensusa doğru oy kullanma yeteneği sağlarlar.
 </ExpandableCard>
 
 <ExpandableCard title="Yani iki anahtar seti mi var?" eventCategory="SaasStaking" eventName="clicked so there are two sets of keys">
@@ -76,7 +76,7 @@ BLS para çekme anahtarları, hangi yürütme katmanı hesabının hisseleme öd
 <ExpandableCard title="Ne zaman geri çekebilirim?" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
 Kilitleme çekimleri Nisan 2023'teki Shanghai/Capella yükseltmesinde uygulanmıştır. Paydaşların (eğer ilk yatırımda verilmediyse) bir çekim adresi vermesi gerekir ve ödül ödemeleri periyodik olarak birkaç günde bir otomatik olarak dağıtılmaya başlayacaktır.
 
-Doğrulayıcılar ayrıca bir doğrulayıcı olarak tamamen çıkabilir, bu da kalan ETH bakiyelerinin çekim için kilidini kaldıracaktır. Bir yürütme çekim adresi sağlamış ve çıkış sürecini tamamlamış adresler sıradaki doğrulayıcı süpürmesinde çekim adresine tüm bakiyelerini alacaklardır.
+Doğrulayıcılar ayrıca bir doğrulayıcı olarak tamamen çıkabilir, bu da kalan NEPH bakiyelerinin çekim için kilidini kaldıracaktır. Bir yürütme çekim adresi sağlamış ve çıkış sürecini tamamlamış adresler sıradaki doğrulayıcı süpürmesinde çekim adresine tüm bakiyelerini alacaklardır.
 
 <ButtonLink to="/staking/withdrawals/">Hisseleme para çekmeleri hakkında daha fazlası</ButtonLink>
 </ExpandableCard>
@@ -86,7 +86,7 @@ Bir SaaS sağlayıcısı kullanarak, düğümünüzün çalışmasını başka b
 
 Kesinti/çıkış sürecinin tamamlanmasından sonra, bu fonlar doğrulayıcıya atanmış olan çekim adresine transfer edilecektir. Bu, aktif hale getirilmek için bir çekim adresinin sağlanmasını gerektirir. Bu ilk yatırımda sağlanabilir. Eğer sağlanmadıysa, doğrulayıcı çekim anahtarları çekim adresini belirten bir mesajı imzalamak için kullanılmalıdır. Eğer herhangi bir çekim adresi sağlanmadıysa, sağlanana kadar fonlar kilitli kalacaktır.
 
-Herhangi bir garanti veya sigorta seçeneği hakkında daha fazla detay için ya da nasıl çekim adresi sağlanacağıyla ilgili yönergeler için bireysel SaaS sağlayıcınızla iletişime geçin. Doğrulayıcı kurulumunuzun tam kontrolünün sizde olmasını tercih ediyorsanız, <a href="/staking/solo/">ETH'nizi tek başına nasıl stake edeceğiniz hakkında daha fazla bilgi edinin</a>.
+Herhangi bir garanti veya sigorta seçeneği hakkında daha fazla detay için ya da nasıl çekim adresi sağlanacağıyla ilgili yönergeler için bireysel SaaS sağlayıcınızla iletişime geçin. Doğrulayıcı kurulumunuzun tam kontrolünün sizde olmasını tercih ediyorsanız, <a href="/staking/solo/">NEPH'nizi tek başına nasıl stake edeceğiniz hakkında daha fazla bilgi edinin</a>.
 </ExpandableCard>
 
 ## Daha fazla bilgi {#further-reading}

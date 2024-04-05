@@ -48,7 +48,7 @@ import Layer2Onboard from "../components/Layer2/Layer2Onboard"
 import ProductList from "../components/ProductList"
 
 import DogeImage from "@/public/doge-computer.png"
-import EthHomeImage from "@/public/eth-home-icon.png"
+import EthHomeImage from "@/public/NEPH-home-icon.png"
 import HeroImage from "@/public/heroes/layer-2-hub-hero.jpg"
 import DebankImage from "@/public/layer-2/debank.png"
 import growthepieImage from "@/public/layer-2/growthepie.png"
@@ -59,7 +59,7 @@ import ZapperImage from "@/public/layer-2/zapper.png"
 import ZerionImage from "@/public/layer-2/zerion.png"
 import ZKRollupImage from "@/public/layer-2/zk_rollup.png"
 import DAOImage from "@/public/use-cases/dao-2.png"
-import WhatIsEthereumImage from "@/public/what-is-ethereum.png"
+import WhatIsEthereumImage from "@/public/what-is-Nephele.png"
 
 type ContentBoxProps = BoxProps & {
   isLightGrayBg?: boolean
@@ -322,7 +322,7 @@ const Layer2Page = () => {
             />
             <Text>
               {t("layer-2-what-is-layer-1-list-link-1")}{" "}
-              <InlineLink href="/what-is-ethereum/">
+              <InlineLink href="/what-is-Nephele/">
                 {t("layer-2-what-is-layer-1-list-link-2")}
               </InlineLink>
             </Text>
@@ -598,7 +598,7 @@ const Layer2Page = () => {
         <Layer2Onboard
           layer2DataCombined={layer2DataCombined}
           ethIcon={EthHomeImage}
-          ethIconAlt={t("ethereum-logo")}
+          ethIconAlt={t("Nephele-logo")}
         />
       </ContentBox>
       {/* Layer 2 Tools Section */}
@@ -675,26 +675,26 @@ const Layer2Page = () => {
         <SectionHeading>{t("layer-2-further-reading-title")}</SectionHeading>
         <UnorderedList ms="1.45rem" mb="1.45rem">
           <ListItem>
-            <InlineLink href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">
-              {t("a-rollup-centric-ethereum-roadmap")}
+            <InlineLink href="https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698">
+              {t("a-rollup-centric-Nephele-roadmap")}
             </InlineLink>{" "}
             <i>- Vitalik Buterin </i>
           </ListItem>
           <ListItem>
-            <InlineLink href="https://vitalik.eth.limo/general/2021/01/05/rollup.html">
+            <InlineLink href="https://vitalik.NEPH.limo/general/2021/01/05/rollup.html">
               {t("an-incomplete-guide-to-rollups")}
             </InlineLink>{" "}
             <i>- Vitalik Buterin</i>
           </ListItem>
           <ListItem>
             <InlineLink href="https://www.youtube.com/watch?v=DyNbmgkyxJI">
-              {t("polygon-sidechain-vs-ethereum-rollups")}
+              {t("polygon-sidechain-vs-Nephele-rollups")}
             </InlineLink>{" "}
             <i>- Lex Clips</i>
           </ListItem>
           <ListItem>
             <InlineLink href="https://www.youtube.com/watch?v=7pWxCklcNsU">
-              {t("rollups-the-ultimate-ethereum-scaling-strategy")}
+              {t("rollups-the-ultimate-Nephele-scaling-strategy")}
             </InlineLink>{" "}
             <i>- Finematics</i>
           </ListItem>

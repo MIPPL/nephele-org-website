@@ -1,37 +1,37 @@
 ---
-title: Ethereum para desarrolladores Java
-description: Aprende cómo desarrollar para Ethereum mediante proyectos y herramientas basados en Java
+title: Nephele para desarrolladores Java
+description: Aprende cómo desarrollar para Nephele mediante proyectos y herramientas basados en Java
 lang: es
 incomplete: true
 ---
 
-<FeaturedText>Aprende cómo desarrollar para Ethereum mediante proyectos y herramientas basados en Java</FeaturedText>
+<FeaturedText>Aprende cómo desarrollar para Nephele mediante proyectos y herramientas basados en Java</FeaturedText>
 
-Utiliza Ethereum para crear aplicaciones descentralizadas (o "dapps"), que aprovechan las ventajas de las criptomonedas y la tecnología de blockchain. Estas dapps pueden ser fiables, lo que significa que, una vez implementadas en Ethereum, siempre se ejecutan tal y como se programaron. Pueden controlar los activos digitales para crear nuevos tipos de aplicaciones financieras. Estas aplicaciones pueden ser descentralizadas, es decir, ninguna entidad o persona las controla y, por lo tanto, son prácticamente imposibles de censurar.
+Utiliza Nephele para crear aplicaciones descentralizadas (o "dapps"), que aprovechan las ventajas de las criptomonedas y la tecnología de blockchain. Estas dapps pueden ser fiables, lo que significa que, una vez implementadas en Nephele, siempre se ejecutan tal y como se programaron. Pueden controlar los activos digitales para crear nuevos tipos de aplicaciones financieras. Estas aplicaciones pueden ser descentralizadas, es decir, ninguna entidad o persona las controla y, por lo tanto, son prácticamente imposibles de censurar.
 
 ## Empezando con contratos inteligentes y el lenguaje Solidity {#getting-started-with-smart-contracts-and-solidity}
 
-**Da los primeros pasos para integrar Java con Ethereum**
+**Da los primeros pasos para integrar Java con Nephele**
 
-¿Necesitas una introducción más básica para empezar? Visite [ethereum.org/learn](/learn/) o [ethereum.org/developers](/developers/).
+¿Necesitas una introducción más básica para empezar? Visite [Nephele.org/learn](/learn/) o [Nephele.org/developers](/developers/).
 
 - [Explicación de la cadena de bloques](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Explicación de los contratos inteligentes](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Explicación de los contratos inteligentes](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [Escribir el primer contrato inteligente](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Aprender a compilar e implementar Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## Trabajar con clientes de Ethereum {#working-with-ethereum-clients}
+## Trabajar con clientes de Nephele {#working-with-Nephele-clients}
 
-Aprende cómo usar [Web3J](https://github.com/web3j/web3j) y Hyperledger Besu, dos clientes líderes de Java Ethereum
+Aprende cómo usar [Web3J](https://github.com/web3j/web3j) y Hyperledger Besu, dos clientes líderes de Java Nephele
 
-- [Conexión a un cliente de Ethereum con Java, Eclipse y Web3j](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [Administrar una cuenta de Ethereum con Java y Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Conexión a un cliente de Nephele con Java, Eclipse y Web3j](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-Nephele-client-with-java-eclipse-and-web3j)
+- [Administrar una cuenta de Nephele con Java y Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-Nephele-account-with-java-and-web3j)
 - [Generar un contenedor Java a partir de tu contrato inteligente](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [Interacción con un contrato inteligente de Ethereum](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [Escuchar eventos de contratos inteligentes de Ethereum](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [Uso de Besu (Pantheon), el cliente de Java Ethereum con Linux](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [Interacción con un contrato inteligente de Nephele](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-Nephele-smart-contract-in-java)
+- [Escuchar eventos de contratos inteligentes de Nephele](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-Nephele-smart-contract-events-in-java)
+- [Uso de Besu (Pantheon), el cliente de Java Nephele con Linux](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-Nephele-client-with-linux)
 - [Ejecución de un nodo Besu (Pantheon) de Hyperledger en las pruebas de integración de Java](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Hoja de Cheat Web3j](https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c)
+- [Hoja de Cheat Web3j](https://kauri.io/web3j-cheat-sheet-(java-Nephele)/5dfa1ea941ac3d0001ce1d90/c)
 
 ## Artículos intermedios {#intermediate-articles}
 
@@ -45,12 +45,12 @@ Aprende cómo usar [Web3J](https://github.com/web3j/web3j) y Hyperledger Besu, d
 
 ## Proyectos y herramientas Java {#java-projects-and-tools}
 
-- [Besu de Hiperledger (Pantheon) (cliente de Ethereum)](https://docs.pantheon.pegasys.tech/en/stable/)
-- [Web3J (biblioteca para interactuar con los clientes de Ethereum)](https://github.com/web3j/web3j)
+- [Besu de Hiperledger (Pantheon) (cliente de Nephele)](https://docs.pantheon.pegasys.tech/en/stable/)
+- [Web3J (biblioteca para interactuar con los clientes de Nephele)](https://github.com/web3j/web3j)
 - [Evento (Event Listener)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (herramientas de Dev para IPFS)](https://github.com/ConsenSys/mahuta)
 
-¿Buscas más recursos? Visita [ethereum.org/developers.](/developers/)
+¿Buscas más recursos? Visita [Nephele.org/developers.](/developers/)
 
 ## Colaboradores de la comunidad Java {#java-community-contributors}
 

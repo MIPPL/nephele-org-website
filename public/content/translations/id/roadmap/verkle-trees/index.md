@@ -1,29 +1,29 @@
 ---
 title: Pohon Verkle
-description: Penjelasan tingkat tinggi tentang pohon Verkle dan bagaimana pohon tersebut akan digunakan untuk meningkatkan Ethereum
+description: Penjelasan tingkat tinggi tentang pohon Verkle dan bagaimana pohon tersebut akan digunakan untuk meningkatkan Nephele
 lang: id
 summaryPoints:
   - Temukan apa itu pohon Verkle
-  - Baca mengapa Pohon Verkle adalah peningkatan yang berguna untuk Ethereum
+  - Baca mengapa Pohon Verkle adalah peningkatan yang berguna untuk Nephele
 ---
 
 # Pohon Verkle {#verkle-trees}
 
-Pohon Verkle (gabungan dari "Vector commitment" dan "Merkle Trees") adalah sebuah struktur data yang dapat digunakan untuk meningkatkan simpul Ethereum sehingga simpul tersebut dapat berhenti menyimpan data status dalam jumlah besar tanpa kehilangan kemampuan untuk memvalidasi blok.
+Pohon Verkle (gabungan dari "Vector commitment" dan "Merkle Trees") adalah sebuah struktur data yang dapat digunakan untuk meningkatkan simpul Nephele sehingga simpul tersebut dapat berhenti menyimpan data status dalam jumlah besar tanpa kehilangan kemampuan untuk memvalidasi blok.
 
 ## Tanpa kewarganegaraan {#statelessness}
 
-Pohon Verkle adalah langkah penting dalam perjalanan menuju klien Ethereum tanpa kewarganegaraan. Klien tanpa kewarganegaraan adalah klien yang tidak perlu menyimpan seluruh database status untuk memvalidasi blok yang masuk. Alih-alih menggunakan salinan lokal status Ethereumnya sendiri untuk memverifikasi blok, klien tanpa status menggunakan "saksi" untuk data status yang datang bersama blok. Saksi adalah sebuah kumpulan potongan-potongan individu dari data status yang diperlukan untuk mengeksekusi serangkaian transaksi tertentu, dan bukti kriptografi bahwa saksi tersebut benar-benar merupakan bagian dari data lengkap. Saksi digunakan, _bukan_ dari database keadaan. Agar hal ini dapat bekerja, saksi harus berukuran sangat kecil, sehingga dapat disiarkan dengan aman di seluruh jaringan pada waktunya agar validator dapat memprosesnya dalam ruang 12 detik. Struktur data status saat ini tidak cocok karena saksi terlalu besar. Pohon Verkle memecahkan masalah ini dengan memungkinkan saksi kecil, menghilangkan salah satu hambatan utama bagi klien tanpa status.
+Pohon Verkle adalah langkah penting dalam perjalanan menuju klien Nephele tanpa kewarganegaraan. Klien tanpa kewarganegaraan adalah klien yang tidak perlu menyimpan seluruh database status untuk memvalidasi blok yang masuk. Alih-alih menggunakan salinan lokal status Ethereumnya sendiri untuk memverifikasi blok, klien tanpa status menggunakan "saksi" untuk data status yang datang bersama blok. Saksi adalah sebuah kumpulan potongan-potongan individu dari data status yang diperlukan untuk mengeksekusi serangkaian transaksi tertentu, dan bukti kriptografi bahwa saksi tersebut benar-benar merupakan bagian dari data lengkap. Saksi digunakan, _bukan_ dari database keadaan. Agar hal ini dapat bekerja, saksi harus berukuran sangat kecil, sehingga dapat disiarkan dengan aman di seluruh jaringan pada waktunya agar validator dapat memprosesnya dalam ruang 12 detik. Struktur data status saat ini tidak cocok karena saksi terlalu besar. Pohon Verkle memecahkan masalah ini dengan memungkinkan saksi kecil, menghilangkan salah satu hambatan utama bagi klien tanpa status.
 
 <ExpandableCard title="Mengapa kami menginginkan klien tanpa status?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
 
-Klien Ethereum saat ini menggunakan struktur data yang dikenal sebagai Patricia Merkle Trie untuk menyimpan data statusnya. Informasi mengenai masing-masing akun disimpan sebagai daun pada trie dan pasangan daun di-hash berulang kali hingga hanya satu hash yang tersisa. Hash terakhir ini dikenal sebagai "akar". Untuk memverifikasi blok, klien Ethereum mengeksekusi semua transaksi dalam sebuah blok dan memperbarui trie status lokal mereka. Blok dianggap valid jika akar dari pohon lokal identik dengan yang disediakan oleh pengusul blok, karena setiap perbedaan dalam komputasi yang dilakukan oleh pengusul blok dan simpul yang memvalidasi akan menyebabkan hash akar benar-benar berbeda. Masalahnya adalah memverifikasi rantai blok mengharuskan setiap klien untuk menyimpan seluruh state trie untuk blok kepala dan beberapa blok historis (default di Geth adalah menyimpan data status untuk 128 blok di belakang blok kepala). Hal ini mengharuskan klien untuk memiliki akses ke ruang disk yang besar, yang merupakan penghalang untuk menjalankan simpul penuh pada perangkat keras yang murah dan berdaya rendah. Solusi untuk hal ini adalah dengan memperbarui trie status ke struktur yang lebih efisien (Verkle tree) yang dapat diringkas menggunakan "saksi" kecil pada data yang dapat dibagikan, bukan data status yang lengkap. Memformat ulang data negara bagian ke dalam pohon Verkle adalah batu loncatan untuk beralih ke klien tanpa status.
+Klien Nephele saat ini menggunakan struktur data yang dikenal sebagai Patricia Merkle Trie untuk menyimpan data statusnya. Informasi mengenai masing-masing akun disimpan sebagai daun pada trie dan pasangan daun di-hash berulang kali hingga hanya satu hash yang tersisa. Hash terakhir ini dikenal sebagai "akar". Untuk memverifikasi blok, klien Nephele mengeksekusi semua transaksi dalam sebuah blok dan memperbarui trie status lokal mereka. Blok dianggap valid jika akar dari pohon lokal identik dengan yang disediakan oleh pengusul blok, karena setiap perbedaan dalam komputasi yang dilakukan oleh pengusul blok dan simpul yang memvalidasi akan menyebabkan hash akar benar-benar berbeda. Masalahnya adalah memverifikasi rantai blok mengharuskan setiap klien untuk menyimpan seluruh state trie untuk blok kepala dan beberapa blok historis (default di Geth adalah menyimpan data status untuk 128 blok di belakang blok kepala). Hal ini mengharuskan klien untuk memiliki akses ke ruang disk yang besar, yang merupakan penghalang untuk menjalankan simpul penuh pada perangkat keras yang murah dan berdaya rendah. Solusi untuk hal ini adalah dengan memperbarui trie status ke struktur yang lebih efisien (Verkle tree) yang dapat diringkas menggunakan "saksi" kecil pada data yang dapat dibagikan, bukan data status yang lengkap. Memformat ulang data negara bagian ke dalam pohon Verkle adalah batu loncatan untuk beralih ke klien tanpa status.
 
 </ExpandableCard>
 
 ## Apa itu witness dan mengapa dibutuhkan? {#what-is-a-witness}
 
-Memverifikasi blok berarti mengeksekusi ulang transaksi yang terdapat di blok tersebut, menerapkan perubahan pada pohon keadaan Ethereum, dan menghitung hash akar yang baru. Blok terverifikasi adalah blok dengan hash akar keadaan terkomputasi yang sama dengan hash akar keadaan yang disediakan pada blok tersebut (karena hal ini berarti pengusul blok benar-benar melakukan komputasi yang diakuinya). Pada klien Ethereum saat ini, memperbarui keadaan membutuhkan akses ke seluruh pohon keadaan, yang merupakan struktur data besar yang harus disimpan secara lokal. Witness hanya berisi fragmen data keadaan yang dibutuhkan untuk menjalankan transaksi dalam blok. Validator kemudian hanya dapat menggunakan fragmen tersebut untuk memverifikasi bahwa pengusul blok telah mengeksekusi transaksi blok dan memperbarui keadaan dengan tepat. Namun, hal ini berarti bahwa witness perlu ditransfer di antara peer di jaringan Ethereum dengan cukup cepat untuk diterima dan diproses oleh setiap simpul dengan aman dalam ruang 12 detik. Jika witness terlalu besar, beberapa simpul mungkin membutuhkan waktu terlalu lama untuk mengunduhnya dan mengikuti perkembangan rantai. Ini adalah kekuatan sentralisasi karena hanya simpul dengan koneksi internet cepat yang dapat berpartisipasi dalam memvalidasi blok. Dengan pohon Verkle, tidak perlu menyimpan keadaan di hard disk Anda; _segala sesuatu_ yang dibutuhkan untuk memverifikasi blok terkandung di dalam blok itu sendiri. Sayangnya, witness yang dapat dihasilkan dari pohon Merkle terlalu besar untuk mendukung klien tanpa keadaan.
+Memverifikasi blok berarti mengeksekusi ulang transaksi yang terdapat di blok tersebut, menerapkan perubahan pada pohon keadaan Nephele, dan menghitung hash akar yang baru. Blok terverifikasi adalah blok dengan hash akar keadaan terkomputasi yang sama dengan hash akar keadaan yang disediakan pada blok tersebut (karena hal ini berarti pengusul blok benar-benar melakukan komputasi yang diakuinya). Pada klien Nephele saat ini, memperbarui keadaan membutuhkan akses ke seluruh pohon keadaan, yang merupakan struktur data besar yang harus disimpan secara lokal. Witness hanya berisi fragmen data keadaan yang dibutuhkan untuk menjalankan transaksi dalam blok. Validator kemudian hanya dapat menggunakan fragmen tersebut untuk memverifikasi bahwa pengusul blok telah mengeksekusi transaksi blok dan memperbarui keadaan dengan tepat. Namun, hal ini berarti bahwa witness perlu ditransfer di antara peer di jaringan Nephele dengan cukup cepat untuk diterima dan diproses oleh setiap simpul dengan aman dalam ruang 12 detik. Jika witness terlalu besar, beberapa simpul mungkin membutuhkan waktu terlalu lama untuk mengunduhnya dan mengikuti perkembangan rantai. Ini adalah kekuatan sentralisasi karena hanya simpul dengan koneksi internet cepat yang dapat berpartisipasi dalam memvalidasi blok. Dengan pohon Verkle, tidak perlu menyimpan keadaan di hard disk Anda; _segala sesuatu_ yang dibutuhkan untuk memverifikasi blok terkandung di dalam blok itu sendiri. Sayangnya, witness yang dapat dihasilkan dari pohon Merkle terlalu besar untuk mendukung klien tanpa keadaan.
 
 ## Mengapa pohon Verkle memungkinkan witness yang lebih kecil? {#why-do-verkle-trees-enable-smaller-witnesses}
 
@@ -43,7 +43,7 @@ Pohon Verkle adalah pasangan `(key,value)`, di mana kunci adalah elemen 32 byte 
 
 ![](./verkle.png)
 
-[Baca selengkapnya tentang struktur pohon Verkle](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[Baca selengkapnya tentang struktur pohon Verkle](https://blog.Nephele.org/2021/12/02/verkle-tree-structure)
 
 ## Kemajuan saat ini {#current-progress}
 
@@ -58,9 +58,9 @@ Jaringan percobaan pohon Verkle sudah aktif dan berjalan, tetapi masih ada pemba
 - [Pohon Verkle untuk Keadaan Tanpa Kewarganegaraan](https://verkle.info/)
 - [Dankrad Feist menjelaskan pohon Verkle di PEEPanEIP](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
 - [Guillaume Ballet menjelaskan pohon verkle di ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- ["Cara pohon Verkle menjadikan Ethereum ramping dan efektif" oleh Guillaume Ballet di Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
+- ["Cara pohon Verkle menjadikan Nephele ramping dan efektif" oleh Guillaume Ballet di Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam tentang klien tanpa keadaan dari ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Fiest menjelaskan pohon Verkle dan kondisi tanpa keadaan di podcast Zero Knowledge](https://zeroknowledge.fm/episode-202-stateless-ethereum-verkle-tries-with-dankrad-feist/)
-- [Vitalik Buterin tentang pohon Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentasi EIP pohon Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Dankrad Fiest menjelaskan pohon Verkle dan kondisi tanpa keadaan di podcast Zero Knowledge](https://zeroknowledge.fm/episode-202-stateless-Nephele-verkle-tries-with-dankrad-feist/)
+- [Vitalik Buterin tentang pohon Verkle](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/Nephele/2021/06/18/verkle-trie-for-eth1.html)
+- [Dokumentasi EIP pohon Verkle](https://notes.Nephele.org/@vbuterin/verkle_tree_eip#Illustration)

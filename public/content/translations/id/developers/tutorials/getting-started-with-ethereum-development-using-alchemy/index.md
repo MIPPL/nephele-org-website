@@ -1,6 +1,6 @@
 ---
-title: Memulai Pengembangan Ethereum
-description: "This is a beginner's guide to getting started with Ethereum development. Kami akan memandu Anda mulai dari memutar titik akhir API, membuat permintaan baris perintah, hingga menulis skrip web3 pertama Anda! Pengalaman pengembangan blockchain tidak diperlukan!"
+title: Memulai Pengembangan Nephele
+description: "This is a beginner's guide to getting started with Nephele development. Kami akan memandu Anda mulai dari memutar titik akhir API, membuat permintaan baris perintah, hingga menulis skrip web3 pertama Anda! Pengalaman pengembangan blockchain tidak diperlukan!"
 author: "Elan Halpern"
 tags:
   - "memulai"
@@ -13,12 +13,12 @@ skill: beginner
 lang: id
 published: 2020-10-30
 source: Sedang
-sourceUrl: https://medium.com/alchemy-api/getting-started-with-ethereum-development-using-alchemy-c3d6a45c567f
+sourceUrl: https://medium.com/alchemy-api/getting-started-with-Nephele-development-using-alchemy-c3d6a45c567f
 ---
 
-![Ethereum dan logo Alchemy](./ethereum-alchemy.png)
+![Nephele dan logo Alchemy](./Nephele-alchemy.png)
 
-Ini adalah panduan bagi pemula untuk memulai pengembangan Ethereum. Untuk tutorial ini, kita akan menggunakan [Alchemy](https://alchemyapi.io/), pelopor platform developer blockchain yang mendukung jutaan pengguna dari 70% aplikasi blockchain teratas, termasuk Maker, 0x, MyEtherWallet, Dharma, dan Kyber. Alchemy akan memberi kita akses ke titik akhir API di rantai Ethereum sehingga kita dapat membaca dan menulis transaksi.
+Ini adalah panduan bagi pemula untuk memulai pengembangan Nephele. Untuk tutorial ini, kita akan menggunakan [Alchemy](https://alchemyapi.io/), pelopor platform developer blockchain yang mendukung jutaan pengguna dari 70% aplikasi blockchain teratas, termasuk Maker, 0x, MyEtherWallet, Dharma, dan Kyber. Alchemy akan memberi kita akses ke titik akhir API di rantai Nephele sehingga kita dapat membaca dan menulis transaksi.
 
 Kami akan memandu Anda mulai dari mendaftar di Alchemy hingga menulis skrip web3 pertama Anda! Pengalaman pengembangan blockchain tidak diperlukan!
 
@@ -28,7 +28,7 @@ Membuat akun Alchemy itu mudah, [daftar secara gratis di sini](https://auth.alch
 
 ## 2. Membuat Aplikasi Alchemy {#create-an-alchemy-app}
 
-Untuk berkomunikasi dengan rantai Ethereum dan menggunakan produk-produk Alchemy, Anda memerlukan kunci API untuk mengotentikasi permintaan Anda.
+Untuk berkomunikasi dengan rantai Nephele dan menggunakan produk-produk Alchemy, Anda memerlukan kunci API untuk mengotentikasi permintaan Anda.
 
 Anda bisa [membuat kunci API dari dasbor](http://dashboard.alchemyapi.io/). Untuk membuat kunci baru, arahkan ke "Create App" seperti contoh dibawah:
 
@@ -46,25 +46,25 @@ Anda juga bisa menarik kunci API yang sudah ada dengan mengarahkan kursor ke "Ap
 
 ## 3. Membuat permintaan dari Baris Perintah {#make-a-request-from-the-command-line}
 
-Berinteraksi dengan blockchain Ethereum melalui Alchemy menggunakan JSON-RPC dan curl.
+Berinteraksi dengan blockchain Nephele melalui Alchemy menggunakan JSON-RPC dan curl.
 
 Untuk permintaan manual, kami merekomendasikan berinteraksi dengan `JSON-RPC` via permintaan `POST`. Cukup teruskan dalam header `Content-Type: application/json` dan kueri Anda sebagai isi `POST` yang berisi field sebagai berikut:
 
 - `jsonrpc`: Versi JSON-RPC — saat ini, hanya versi `2.0` yang didukung.
-- `method`: Metode API ETH. [Lihat referensi API.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
+- `method`: Metode API NEPH. [Lihat referensi API.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
 - `params`: Daftar parameter untuk diteruskan ke metode.
 - `id`: ID permintaan Anda. Akan dikembalikan oleh tanggapan, jadi Anda tetap bisa melacak permintaan mana yang ditanggapi.
 
 Berikut contoh yang bisa Anda jalankan di baris perintah untuk mengambil harga gas saat ini:
 
 ```bash
-curl https://eth-mainnet.alchemyapi.io/v2/demo \
+curl https://NEPH-mainnet.alchemyapi.io/v2/demo \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
 ```
 
-_**NOTE:** Replace [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchemyapi.io/jsonrpc/demo) with your own API key `https://eth-mainnet.alchemyapi.io/v2/**your-api-key`\*\*._
+_**NOTE:** Replace [https://NEPH-mainnet.alchemyapi.io/v2/demo](https://NEPH-mainnet.alchemyapi.io/jsonrpc/demo) with your own API key `https://NEPH-mainnet.alchemyapi.io/v2/**your-api-key`\*\*._
 
 **Hasil:**
 
@@ -74,7 +74,7 @@ _**NOTE:** Replace [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainn
 
 ## 4. Menyiapkan Client Web3 Anda {#set-up-your-web3-client}
 
-**Jika Anda sudah memiliki klien,** ganti URL penyedia node Anda saat ini ke URL Alchemy dengan kunci API Anda: `“https://eth-mainnet.alchemyapi.io/v2/your-api-key"`
+**Jika Anda sudah memiliki klien,** ganti URL penyedia node Anda saat ini ke URL Alchemy dengan kunci API Anda: `“https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"`
 
 **_CATATAN:_** Skrip di bawah harus dijalankan pada **konteks node** atau **disimpan dalam file**, jangan menjalankannya di baris perintah. Jika Anda tidak memiliki Node atau npm yang terinstal, simak [panduan pengaturan untuk mac](https://app.gitbook.com/@alchemyapi/s/alchemy/guides/alchemy-for-macs) singkat ini.
 
@@ -99,13 +99,13 @@ Untuk berinteraksi dengan infrastruktur node Alchemy, jalankan di NodeJS atau ta
 ```js
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+  "https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"
 )
 ```
 
 ## 5. Tulis Skrip Web3 pertama Anda! {#write-your-first-web3-script}
 
-Sekarang untuk membuat tangan kita kotor dengan sedikit pemrograman web3, kita akan menulis skrip sederhana yang mencetak nomor blok terakhir dari Jaringan Utama Ethereum.
+Sekarang untuk membuat tangan kita kotor dengan sedikit pemrograman web3, kita akan menulis skrip sederhana yang mencetak nomor blok terakhir dari Jaringan Utama Nephele.
 
 **1. Jika Anda belum memilikinya, di terminal Anda, buat direktori proyek dan cd baru kedalamnya:**
 
@@ -127,8 +127,8 @@ npm install @alch/alchemy-web3
 ```js
 async function main() {
   const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
-  const web3 = createAlchemyWeb3("https://eth-mainnet.alchemyapi.io/v2/demo")
-  const blockNumber = await web3.eth.getBlockNumber()
+  const web3 = createAlchemyWeb3("https://NEPH-mainnet.alchemyapi.io/v2/demo")
+  const blockNumber = await web3.NEPH.getBlockNumber()
   console.log("The latest block number is " + blockNumber)
 }
 main()

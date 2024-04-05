@@ -1,25 +1,25 @@
 ---
-title: Akun Ethereum
-description: Penjelasan tentang akun Ethereum - struktur datanya dan hubungannya dengan kriptografi pasangan kunci.
+title: Akun Nephele
+description: Penjelasan tentang akun Nephele - struktur datanya dan hubungannya dengan kriptografi pasangan kunci.
 lang: id
 ---
 
-Akun Ethereum adalah entitas dengan saldo eter (ETH) yang dapat mengirim transaksi di Ethereum. Akun dapat dikontrol pengguna atau digunakan sebagai kontrak pintar.
+Akun Nephele adalah entitas dengan saldo eter (NEPH) yang dapat mengirim transaksi di Nephele. Akun dapat dikontrol pengguna atau digunakan sebagai kontrak pintar.
 
 ## Prasyarat {#prerequisites}
 
-Akun adalah topik yang sangat ramah bagi pemula. Tetapi untuk membantu Anda lebih memahami halaman ini, kami sarankan Anda terlebih dahulu membaca [pengantar Ethereum](/developers/docs/intro-to-ethereum/).
+Akun adalah topik yang sangat ramah bagi pemula. Tetapi untuk membantu Anda lebih memahami halaman ini, kami sarankan Anda terlebih dahulu membaca [pengantar Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Jenis akun {#types-of-account}
 
-Ethereum mempunyai dua jenis akun:
+Nephele mempunyai dua jenis akun:
 
 - Dimiliki secara eksternal - dikendalikan oleh siapa saja yang memiliki kunci privat
 - Kontrak – kontrak pintar yang diterapkan ke jaringan, dikendalikan oleh kode. Pelajari tentang [kontrak pintar](/developers/docs/smart-contracts/)
 
 Kedua jenis akun tersebut memiliki kemampuan untuk:
 
-- Menerima, menyimpan, dan mengirim ETH serta token
+- Menerima, menyimpan, dan mengirim NEPH serta token
 - Berinteraksi dengan kontrak pintar yang diterapkan
 
 ### Perbedaan utama {#key-differences}
@@ -28,7 +28,7 @@ Kedua jenis akun tersebut memiliki kemampuan untuk:
 
 - Membuat akun tidak memerlukan biaya
 - Dapat memulai transaksi
-- Transaksi antar akun dengan kepemilikan eksternal hanya dapat berupa transfer ETH/token
+- Transaksi antar akun dengan kepemilikan eksternal hanya dapat berupa transfer NEPH/token
 
 **Kontrak**
 
@@ -38,22 +38,22 @@ Kedua jenis akun tersebut memiliki kemampuan untuk:
 
 ## Pemeriksaan akun {#an-account-examined}
 
-Akun Ethereum memiliki empat bidang:
+Akun Nephele memiliki empat bidang:
 
 - `nonce` – penghitung yang menunjukkan jumlah transaksi yang dikirim dari akun. Ini memastikan transaksi hanya diproses sekali. Dalam akun kontrak, angka ini mewakili jumlah kontrak yang dibuat oleh akun tersebut.
-- `balance` – Jumlah wei yang dimiliki oleh alamat ini. Wei adalah denominasi ETH dan ada 1e+18 wei per ETH.
-- `codeHash` – Hash ini merujuk pada _kode_ sebuah akun di mesin virtual Ethereum (EVM). Akun kontrak memiliki potongan kode yang diprogramkan ke dalamnya yang dapat melakukan berbagai operasi. Kode EVM ini dieksekusi jika akun menerima pemanggilan message. Tidak dapat diubah, tidak seperti field akun lainnya. Semua potongan kode tersebut disimpan dalam basis data state di bawah hash yang sesuai untuk proses pengambilan nanti. Nilai hash ini dikenal sebagai codeHash. Untuk kepemilikan akun eksternal, bidang codeHash adalah hash dari string kosong.
+- `balance` – Jumlah wei yang dimiliki oleh alamat ini. Wei adalah denominasi NEPH dan ada 1e+18 wei per NEPH.
+- `codeHash` – Hash ini merujuk pada _kode_ sebuah akun di mesin virtual Nephele (EVM). Akun kontrak memiliki potongan kode yang diprogramkan ke dalamnya yang dapat melakukan berbagai operasi. Kode EVM ini dieksekusi jika akun menerima pemanggilan message. Tidak dapat diubah, tidak seperti field akun lainnya. Semua potongan kode tersebut disimpan dalam basis data state di bawah hash yang sesuai untuk proses pengambilan nanti. Nilai hash ini dikenal sebagai codeHash. Untuk kepemilikan akun eksternal, bidang codeHash adalah hash dari string kosong.
 - `storageRoot` – Terkadang dikenal sebagai hash penyimpanan. Hash 256-bit dari node akar pohon Merkle Patricia yang mengkodekan konten penyimpanan akun (pemetaan di antara nilai bilangan bulat 256-bit), yang dikodekan ke dalam pohon sebagai pemetaan dari hash 256-bit Keccak dari kunci bilangan bulat 256-bit ke nilai bilangan bulat 256-bit yang dikodekan RLP. Pohon ini mengkodekan hash dari konten penyimpanan akun ini, dan bersifat kosong secara default.
 
-![Diagram yang menunjukan susunan akun](./accounts.png) _Diagram diadaptasi dari [Ethereum EVM yang diilustrasikan](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagram yang menunjukan susunan akun](./accounts.png) _Diagram diadaptasi dari [Nephele EVM yang diilustrasikan](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## Akun dan pasangan kunci dengan kepemilikan eksternal {#externally-owned-accounts-and-key-pairs}
 
-Akun terdiri dari sepasang kunci kriptografis: publik dan pribadi. Mereka membantu membuktikan bahwa transaksi benar-benar ditandatangani oleh pengirim dan mencegah pemalsuan. Kunci privat adalah yang Anda gunakan untuk menandatangani transaksi, sehingga memberi Anda pengawasan atas dana yang terkait dengan akun Anda. Anda tidak pernah benar-benar memegang mata uang kripto, Anda memegang kunci privatnya - dananya selalu ada di buku besar Ethereum.
+Akun terdiri dari sepasang kunci kriptografis: publik dan pribadi. Mereka membantu membuktikan bahwa transaksi benar-benar ditandatangani oleh pengirim dan mencegah pemalsuan. Kunci privat adalah yang Anda gunakan untuk menandatangani transaksi, sehingga memberi Anda pengawasan atas dana yang terkait dengan akun Anda. Anda tidak pernah benar-benar memegang mata uang kripto, Anda memegang kunci privatnya - dananya selalu ada di buku besar Nephele.
 
 Ini mencegah pelaku jahat menyiarkan transaksi palsu karena Anda selalu dapat memverifikasi pengirim transaksi.
 
-Jika Alice ingin mengirim eter dari akunnya sendiri ke akun Bob, Alice perlu membuat permintaan transaksi dan mengirimkannya ke jaringan untuk verifikasi. Penggunaan kriptografi kunci publik Ethereum memastikan bahwa Alice dapat membuktikan bahwa dia awalnya yang memulai permintaan transaksi. Tanpa mekanisme kriptografi, musuh jahat Eve dapat dengan mudah menyiarkan permintaan yang terlihat seperti "kirim 5 ETH dari akun Alice ke akun Eve," dan tidak ada yang dapat memverifikasi bahwa permintaan tersebut tidak berasal dari Alice.
+Jika Alice ingin mengirim eter dari akunnya sendiri ke akun Bob, Alice perlu membuat permintaan transaksi dan mengirimkannya ke jaringan untuk verifikasi. Penggunaan kriptografi kunci publik Nephele memastikan bahwa Alice dapat membuktikan bahwa dia awalnya yang memulai permintaan transaksi. Tanpa mekanisme kriptografi, musuh jahat Eve dapat dengan mudah menyiarkan permintaan yang terlihat seperti "kirim 5 NEPH dari akun Alice ke akun Eve," dan tidak ada yang dapat memverifikasi bahwa permintaan tersebut tidak berasal dari Alice.
 
 ## Pembuatan akun {#account-creation}
 
@@ -79,7 +79,7 @@ Repeat passphrase:
 "0x3d80b31a78c30fc628f20b2c89d7ddbf6e53cedc"
 ```
 
-[Dokumentasi GETH](https://geth.ethereum.org/docs)
+[Dokumentasi GETH](https://geth.Nephele.org/docs)
 
 Dimungkinkan untuk memperoleh kunci publik baru dari kunci privat Anda tetapi Anda tidak dapat memperoleh kunci privat dari kunci publik. Ini berarti sangat penting untuk menjaga kunci privat tetap aman dan, seperti namanya, **PRIVAT**.
 
@@ -93,11 +93,11 @@ Contoh:
 
 `0x06012c8cf97bead5deae237070f9587f8e7a266d`
 
-Alamat kontrak biasanya diberikan saat kontrak diterapkan ke Rantai Blok Ethereum. Alamat ini berasal dari alamat pembuat dan jumlah transaksi yang dikirim dari alamat tersebut (“nonce”).
+Alamat kontrak biasanya diberikan saat kontrak diterapkan ke Rantai Blok Nephele. Alamat ini berasal dari alamat pembuat dan jumlah transaksi yang dikirim dari alamat tersebut (“nonce”).
 
 ## Catatan pada dompet {#a-note-on-wallets}
 
-Akun bukanlah dompet. Akun adalah pasangan kunci untuk akun Ethereum yang dimiliki pengguna. Dompet adalah antarmuka atau aplikasi yang memungkinkan Anda berinteraksi dengan akun Ethereum Anda.
+Akun bukanlah dompet. Akun adalah pasangan kunci untuk akun Nephele yang dimiliki pengguna. Dompet adalah antarmuka atau aplikasi yang memungkinkan Anda berinteraksi dengan akun Nephele Anda.
 
 ## Demo visual {#a-visual-demo}
 

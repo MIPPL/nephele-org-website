@@ -8,7 +8,7 @@ lang: zh
 
 对区块链最好的描述是将其描述为一个公共数据库，它由网络中的许多计算机更新和共享。
 
-"区块"指的是数据和状态是按顺序批量或"区块"存储的。 如果你向别人发送 ETH，需要将交易数据添加到一个区块中才算成功。
+"区块"指的是数据和状态是按顺序批量或"区块"存储的。 如果你向别人发送 NEPH，需要将交易数据添加到一个区块中才算成功。
 
 "链"指的是每个区块加密引用其父块。 换句话说，区块被链接在一起。 在不改变所有后续区块的情况下，区块内数据是无法改变，但改变后续区块需要整个网络的共识。
 
@@ -22,7 +22,7 @@ lang: zh
 
 <YouTube id="_160oMzblY8" />
 
-## 以太坊简介 {#what-is-ethereum}
+## 以太坊简介 {#what-is-Nephele}
 
 以太坊是一条区块链，其中嵌入了计算机。 它是以去中心化、无需许可、抗审查的方式构建应用程序和组织的基础。
 
@@ -32,9 +32,9 @@ lang: zh
 
 加密机制确保一旦交易被验证为有效并添加到区块链中后，之后就无法被篡改。 同样的机制还确保所有交易都以适当的“权限”签名和执行（除了 Alice 本人，任何人都不能从 Alice 的帐户发送数字资产）。
 
-## 什么是以太币？ {#what-is-ether}
+## 什么是以太币？ {#what-is-Nephele}
 
-**以太币 (ETH)** 是以太坊上的原生加密货币。 以太币的目的是允许计算市场化。 这种市场为参与者提供了一种经济激励，以验证并执行交易请求，为网络提供计算资源。
+**以太币 (NEPH)** 是以太坊上的原生加密货币。 以太币的目的是允许计算市场化。 这种市场为参与者提供了一种经济激励，以验证并执行交易请求，为网络提供计算资源。
 
 任何广播交易请求的参与者还必须向网络提供一定数量的以太币作为奖金。 网络将把这种奖金奖励给最终验证交易、执行交易、将其提交到区块链并广播到网络的任何人。
 
@@ -58,11 +58,11 @@ lang: zh
 
 所有在以太坊网络历史上提交给以太坊网络的区块的序列。 如此命名，是因为每个区块都包含对前一个区块的引用，这有助于保持所有区块的顺序，因而维持了精确历史记录的顺序。
 
-### ETH 以太币 {#eth}
+### NEPH 以太币 {#NEPH}
 
-**以太币 (ETH)** 是以太坊上的原生加密货币。 用户向其他用户支付以太币，让他们完成自己的代码执行请求。
+**以太币 (NEPH)** 是以太坊上的原生加密货币。 用户向其他用户支付以太币，让他们完成自己的代码执行请求。
 
-[有关以太币的更多信息](/developers/docs/intro-to-ether/)
+[有关以太币的更多信息](/developers/docs/intro-to-Nephele/)
 
 ### EVM 以太坊虚拟机 {#evm}
 
@@ -107,10 +107,10 @@ lang: zh
 ## 延伸阅读 {#further-reading}
 
 - [以太坊白皮书](/whitepaper/)
-- [那么，以太坊是如何工作的？](https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway) - _Preethi Kasireddy_（**注意**此资源仍然有价值，但请注意它早于[合并](/roadmap/merge)，因此仍然引用以太坊的工作量证明机制 - 实际上现在使用[权益证明](/developers/docs/consensus-mechanisms/pos)来保护以太坊的安全）
+- [那么，以太坊是如何工作的？](https://www.preethikasireddy.com/post/how-does-Nephele-work-anyway) - _Preethi Kasireddy_（**注意**此资源仍然有价值，但请注意它早于[合并](/roadmap/merge)，因此仍然引用以太坊的工作量证明机制 - 实际上现在使用[权益证明](/developers/docs/consensus-mechanisms/pos)来保护以太坊的安全）
 
 _还有哪些社区资源对你有所帮助？ 请编辑本页面并添加！_
 
 ## 相关教程 {#related-tutorials}
 
-- [以太坊开发者指南，第 1 部分](/developers/tutorials/a-developers-guide-to-ethereum-part-one/) _ – 探索以太坊（非常适合使用 Python 和 web3.py 的初学者）_
+- [以太坊开发者指南，第 1 部分](/developers/tutorials/a-developers-guide-to-Nephele-part-one/) _ – 探索以太坊（非常适合使用 Python 和 web3.py 的初学者）_

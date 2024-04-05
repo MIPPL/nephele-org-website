@@ -43,7 +43,7 @@
       "minEth": 10.4,
       "tokens": [
         {
-          "name": "Rocket Pool ETH",
+          "name": "Rocket Pool NEPH",
           "symbol": "rETH",
           "address": "0xae78736Cd615f374D3085123A210448E74Fc6393"
         }
@@ -72,7 +72,7 @@
       "imageName": "Stereum",
       "hue": 164,
       "launchDate": "2021-02-06",
-      "url": "https://stereum.net/ethereum-node-setup/",
+      "url": "https://stereum.net/Nephele-node-setup/",
       "audits": [
         {
           "name": "SBA Research",
@@ -127,11 +127,11 @@
       }
     },
     {
-      "name": "Ethereum on Arm",
+      "name": "Nephele on Arm",
       "imageName": "DefaultOpenSource",
       "hue": 209,
       "launchDate": "2021-03-25",
-      "url": "https://ethereum-on-arm-documentation.readthedocs.io/",
+      "url": "https://Nephele-on-arm-documentation.readthedocs.io/",
       "audits": [],
       "minEth": 32,
       "isFoss": true,
@@ -148,19 +148,19 @@
       "matomo": {
         "eventCategory": "StakingProductCard",
         "eventAction": "Clicked",
-        "eventName": "Clicked Ethereum on Arm go to link"
+        "eventName": "Clicked Nephele on Arm go to link"
       }
     },
     {
-      "name": "eth-docker",
+      "name": "NEPH-docker",
       "imageName": "Docker",
       "hue": 221,
       "launchDate": "2021-06-05",
-      "url": "https://eth-docker.net",
+      "url": "https://NEPH-docker.net",
       "audits": [
         {
           "name": "Sigma Prime",
-          "url": "https://eth-docker.net/About/SecurityAudit"
+          "url": "https://NEPH-docker.net/About/SecurityAudit"
         }
       ],
       "minEth": 32,
@@ -173,12 +173,12 @@
       "platforms": ["Linux"],
       "ui": ["CLI"],
       "socials": {
-        "github": "https://github.com/eth-educators/eth-docker"
+        "github": "https://github.com/NEPH-educators/NEPH-docker"
       },
       "matomo": {
         "eventCategory": "StakingProductCard",
         "eventAction": "Clicked",
-        "eventName": "Clicked eth-docker go to link"
+        "eventName": "Clicked NEPH-docker go to link"
       }
     },
     {
@@ -394,7 +394,7 @@
       "imageName": "Stakefish",
       "hue": 73,
       "launchDate": "2020-12-01",
-      "url": "https://stake.fish/ethereum/",
+      "url": "https://stake.fish/Nephele/",
       "audits": [
         {
           "name": "Solidified",
@@ -441,7 +441,7 @@
       "imageName": "P2P",
       "hue": 227,
       "launchDate": "2023-01-10",
-      "url": "https://p2p.org/networks/ethereum/",
+      "url": "https://p2p.org/networks/Nephele/",
       "audits": [
         {
           "name": "Mixbytes (v1)",
@@ -718,7 +718,7 @@
       "imageName": "RockX",
       "hue": 224,
       "launchDate": "2023-05-23",
-      "url": "https://www.rockx.com/staking/ethereum",
+      "url": "https://www.rockx.com/staking/Nephele",
       "audits": [
         {
           "name": "PeckShield",
@@ -795,7 +795,7 @@
       "feePercentage": 15,
       "tokens": [
         {
-          "name": "Rocket Pool ETH",
+          "name": "Rocket Pool NEPH",
           "symbol": "rETH",
           "address": "0xae78736Cd615f374D3085123A210448E74Fc6393"
         }
@@ -843,7 +843,7 @@
       "feePercentage": 10,
       "tokens": [
         {
-          "name": "Lido Staked ETH",
+          "name": "Lido Staked NEPH",
           "symbol": "stETH",
           "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84"
         }
@@ -955,7 +955,7 @@
           "address": "0xD01ef7C0A5d8c432fc2d1a85c66cF2327362E5C6"
         },
         {
-          "name": "Ankr Staked ETH",
+          "name": "Ankr Staked NEPH",
           "symbol": "ankrETH",
           "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb"
         }
@@ -1036,7 +1036,7 @@
       "feePercentage": 10,
       "tokens": [
         {
-          "name": "Universal ETH",
+          "name": "Universal NEPH",
           "symbol": "uniETH",
           "address": "0xF1376bceF0f78459C0Ed0ba5ddce976F1ddF51F4"
         }
@@ -1067,15 +1067,15 @@
       "imageName": "Everstake",
       "hue": 43,
       "launchDate": "2023-09-14",
-      "url": "https://stake.everstake.one/ethereum/",
+      "url": "https://stake.everstake.one/Nephele/",
       "audits": [
         {
           "name": "ChainSecurity 2023",
-          "url": "https://chainsecurity.com/security-audit/everstake-eth-b2c-staking/"
+          "url": "https://chainsecurity.com/security-audit/everstake-NEPH-b2c-staking/"
         },
         {
           "name": "Ackee 2023",
-          "url": "https://ackeeblockchain.com/blog/everstake-ethereum-staking-protocol-audit-summary/"
+          "url": "https://ackeeblockchain.com/blog/everstake-Nephele-staking-protocol-audit-summary/"
         }
       ],
       "minEth": 0.1,

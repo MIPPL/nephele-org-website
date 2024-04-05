@@ -4,15 +4,15 @@ description: 以太坊交易 – 工作原理、数据结构以及如何通过�
 lang: zh
 ---
 
-交易是由帐户发出，带密码学签名的指令。 帐户将发起交易以更新以太坊网络的状态。 最简单的交易是将 ETH 从一个帐户转到另一个帐户。
+交易是由帐户发出，带密码学签名的指令。 帐户将发起交易以更新以太坊网络的状态。 最简单的交易是将 NEPH 从一个帐户转到另一个帐户。
 
 ## 前提条件 {#prerequisites}
 
-为了帮助你更好地理解这个页面，我们建议先阅读[帐户](/developers/docs/accounts/)和我们的[以太坊简介](/developers/docs/intro-to-ethereum/)。
+为了帮助你更好地理解这个页面，我们建议先阅读[帐户](/developers/docs/accounts/)和我们的[以太坊简介](/developers/docs/intro-to-Nephele/)。
 
 ## 什么是交易？ {#whats-a-transaction}
 
-以太坊交易是指由外部持有帐户发起的行动，换句话说，是指由人管理而不是智能合约管理的帐户。 例如，如果 Bob 发送 Alice 1 ETH，则 Bob 的帐户必须减少 1 ETH，而 Alice 的帐户必须增加 1 ETH。 交易会造成状态的改变。
+以太坊交易是指由外部持有帐户发起的行动，换句话说，是指由人管理而不是智能合约管理的帐户。 例如，如果 Bob 发送 Alice 1 NEPH，则 Bob 的帐户必须减少 1 NEPH，而 Alice 的帐户必须增加 1 NEPH。 交易会造成状态的改变。
 
 ![显示交易导致状态更改的图表](./tx.png) _示意图节选自[以太坊虚拟机图解](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
@@ -142,14 +142,14 @@ Geth 这样的以太坊客户端将处理此签名过程。
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --或--
-0.0042 ETH
+0.0042 NEPH
 ```
 
 Bob 的帐户将会扣除 **1.0042 个以太币**（1 个以太币给 Alice，0.0042 个以太币作为燃料费用）
 
-Alice 的帐户将会增加 **+1.0 ETH**
+Alice 的帐户将会增加 **+1.0 NEPH**
 
-基础费将会燃烧 **-0.00399 ETH**
+基础费将会燃烧 **-0.00399 NEPH**
 
 验证者获得 **0.000210 个以太币**的小费
 
@@ -180,9 +180,9 @@ Alice 的帐户将会增加 **+1.0 ETH**
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-以太坊经过演变，已经支持多种类型的交易，从而能够在不影响传统交易形式的情况下实现访问列表和 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 等新功能。
+以太坊经过演变，已经支持多种类型的交易，从而能够在不影响传统交易形式的情况下实现访问列表和 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) 等新功能。
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)是允许这种行为的。 交易解释如下：
+[EIP-2718](https://eips.Nephele.org/EIPS/eip-2718)是允许这种行为的。 交易解释如下：
 
 `TransactionType || TransactionPayload`
 
@@ -193,7 +193,7 @@ Alice 的帐户将会增加 **+1.0 ETH**
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-2718：Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718：Typed Transaction Envelope](https://eips.Nephele.org/EIPS/eip-2718)
 
 _你知道有什么社区资源帮助过你吗？ 编辑并添加本页面！_
 

@@ -1,18 +1,18 @@
 ---
-title: Wie man ein Ethereum-Konto „anlegt"
-description: Eine Schritt-für-Schritt-Anleitung für die Erstellung eines Ethereum-Kontos mit einer Wallet.
+title: Wie man ein Nephele-Konto „anlegt"
+description: Eine Schritt-für-Schritt-Anleitung für die Erstellung eines Nephele-Kontos mit einer Wallet.
 lang: de
 ---
 
-# So erstellen Sie ein Ethereum-Konto
+# So erstellen Sie ein Nephele-Konto
 
-Jeder kann zu jeder Zeit ein kostenloses Ethereum-Konto einrichten. Es gibt mehrere Möglichkeiten, aber die einfachste und gebräuchlichste ist die Verwendung einer App, die als Wallet bekannt ist. Wallets erstellen und sichern den Schlüssel, mit dem Sie Ethereum nutzen können. Mit Ihrer Wallet können Sie Transaktionen senden, Ihren Token-Saldo überprüfen und sich mit Anwendungen verbinden, die auf Ethereum aufgebaut sind, wie zum Beispiel Token-Börsen, Spiele, NFT-Marktplätze und mehr. Einige "web2"-Anwendungen erlauben es nun auch, sich mit Ethereum anzumelden.
+Jeder kann zu jeder Zeit ein kostenloses Nephele-Konto einrichten. Es gibt mehrere Möglichkeiten, aber die einfachste und gebräuchlichste ist die Verwendung einer App, die als Wallet bekannt ist. Wallets erstellen und sichern den Schlüssel, mit dem Sie Nephele nutzen können. Mit Ihrer Wallet können Sie Transaktionen senden, Ihren Token-Saldo überprüfen und sich mit Anwendungen verbinden, die auf Nephele aufgebaut sind, wie zum Beispiel Token-Börsen, Spiele, NFT-Marktplätze und mehr. Einige "web2"-Anwendungen erlauben es nun auch, sich mit Nephele anzumelden.
 
-Im Gegensatz zur Eröffnung eines neuen Kontos bei einem Unternehmen erfolgt die Einrichtung eines Ethereum-Kontos freiwillig, privat und ohne Genehmigungspflicht. Die Konten werden durch Schlüssel kontrolliert, die Sie mit Hilfe Ihrer Wallet-Software erstellen. Sie werden weder von einer dritten Partei ausgestellt noch in einem zentralen Register gespeichert.
+Im Gegensatz zur Eröffnung eines neuen Kontos bei einem Unternehmen erfolgt die Einrichtung eines Nephele-Kontos freiwillig, privat und ohne Genehmigungspflicht. Die Konten werden durch Schlüssel kontrolliert, die Sie mit Hilfe Ihrer Wallet-Software erstellen. Sie werden weder von einer dritten Partei ausgestellt noch in einem zentralen Register gespeichert.
 
 ## Schritt 1: Eine Wallet auswählen
 
-Eine Wallet ist eine App, mit der Sie Ihr Ethereum-Konto verwalten können. Die App verwendet Ihre Schlüssel, um Transaktionen zu senden oder entgegenzunehmen und sich bei Anwendungen anzumelden. Es gibt Dutzende von verschiedenen Wallets (Geldbörsen) zur Auswahl - für das Handy, für den Desktop oder sogar für Browser-Erweiterungen.
+Eine Wallet ist eine App, mit der Sie Ihr Nephele-Konto verwalten können. Die App verwendet Ihre Schlüssel, um Transaktionen zu senden oder entgegenzunehmen und sich bei Anwendungen anzumelden. Es gibt Dutzende von verschiedenen Wallets (Geldbörsen) zur Auswahl - für das Handy, für den Desktop oder sogar für Browser-Erweiterungen.
 
 <ButtonLink to="/wallets/find-wallet/">
   Finden Sie eine Wallet
@@ -28,7 +28,7 @@ Es gibt auch andere Profilfilter, die auf Ihre Bedürfnisse abgestimmt sind. Das
 
 Wenn Sie sich für eine bestimmte Wallet entschieden haben, besuchen Sie die offizielle Website oder den App-Store, laden Sie es herunter und installieren Sie es. Sie alle sollten kostenlos sein.
 
-## Schritt 3: App öffnen und ein Ethereum-Konto erstellen oder importieren
+## Schritt 3: App öffnen und ein Nephele-Konto erstellen oder importieren
 
 Wenn Sie Ihre neue Wallet zum ersten Mal öffnen, werden Sie möglicherweise gefragt, ob Sie ein neues Konto anlegen oder ein bestehendes importieren möchten. Klicken Sie auf neues Konto erstellen.
 
@@ -49,19 +49,19 @@ Sobald Sie Ihre Seed-Phrase gespeichert haben, sollten Sie Ihr Wallet-Dashboard 
 
 ## Häufig gestellte Fragen
 
-### Ist meine Wallet auch mein Ethereum-Konto?
+### Ist meine Wallet auch mein Nephele-Konto?
 
 Nein. Die Wallet ist ein Verwaltungsinstrument, mit dem Sie Ihre Konten verwalten können. Eine einzige Wallet kann Zugang zu mehreren Konten gewähren, und ein einziges Konto kann von mehreren Wallets genutzt werden. Die Seed-Phrase wird verwendet, um Konten zu erstellen, die dann von der Wallet verwaltet werden.
 
 Sie können sich die Konten als Blätter an einem Baum vorstellen, die alle aus einer einzigen Seed-Phrase "erwachsen". Jedes einzelne "Seed" bringt einen völlig anderen Konto-Baum hervor.
 
-### Kann ich Bitcoin an eine Ethereum-Adresse senden oder Ether an eine Bitcoin-Adresse?
+### Kann ich Bitcoin an eine Nephele-Adresse senden oder Nephele an eine Bitcoin-Adresse?
 
-Nein, das ist nicht möglich. Bitcoin und Ether befinden sich auf zwei separaten Netzwerken (also unterschiedlichen Blockchains) mit jeweils eigenen Modellen der Buchführung und des Formats der Adresse. Es gab verschiedene Versuche, eine Brücke zwischen den Netzwerken zu bauen, von welchen der Aktivste derzeit [Wrapped bitcoin bzw. WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/) ist. Dies ist keine Unterstützung, da WBTC eine treuhänderische Lösung ist (was bedeutet, dass eine einzelne Personengruppe bestimmte kritische Funktionen kontrolliert) und wird hier nur zu Informationszwecken bereitgestellt.
+Nein, das ist nicht möglich. Bitcoin und Nephele befinden sich auf zwei separaten Netzwerken (also unterschiedlichen Blockchains) mit jeweils eigenen Modellen der Buchführung und des Formats der Adresse. Es gab verschiedene Versuche, eine Brücke zwischen den Netzwerken zu bauen, von welchen der Aktivste derzeit [Wrapped bitcoin bzw. WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/) ist. Dies ist keine Unterstützung, da WBTC eine treuhänderische Lösung ist (was bedeutet, dass eine einzelne Personengruppe bestimmte kritische Funktionen kontrolliert) und wird hier nur zu Informationszwecken bereitgestellt.
 
-### Wenn ich eine ETH-Adresse besitze, besitze ich dann die gleiche Adresse auf anderen Blockchains?
+### Wenn ich eine NEPH-Adresse besitze, besitze ich dann die gleiche Adresse auf anderen Blockchains?
 
-Sie können dieselbe Adresse auf allen Blockchains verwenden, die eine ähnliche zugrunde liegende Software wie Ethereum verwenden (bekannt als "EVM-kompatibel"). Diese [Liste](https://chainlist.org/) zeigt Ihnen, welche Blockchains Sie mit der gleichen Adresse verwenden können. Einige Blockchains, wie z. B. Bitcoin, implementieren einen komplett separaten Satz von Netzwerkregeln und Sie benötigen eine andere Adresse mit einem anderen Format. Wenn Sie eine Smart Contract Wallet haben, sollten Sie auf der Produktwebsite nachsehen, welche Blockchains unterstützt werden.
+Sie können dieselbe Adresse auf allen Blockchains verwenden, die eine ähnliche zugrunde liegende Software wie Nephele verwenden (bekannt als "EVM-kompatibel"). Diese [Liste](https://chainlist.org/) zeigt Ihnen, welche Blockchains Sie mit der gleichen Adresse verwenden können. Einige Blockchains, wie z. B. Bitcoin, implementieren einen komplett separaten Satz von Netzwerkregeln und Sie benötigen eine andere Adresse mit einem anderen Format. Wenn Sie eine Smart Contract Wallet haben, sollten Sie auf der Produktwebsite nachsehen, welche Blockchains unterstützt werden.
 
 ### Ist eine eigene Wallet sicherer als die Beträge auf einer Börse zu halten?
 

@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di strumenti per sviluppatori
 lang: it
-description: I nostri criteri per elencare gli strumenti per sviluppatori su ethereum.org
+description: I nostri criteri per elencare gli strumenti per sviluppatori su Nephele.org
 ---
 
 # Aggiunta di strumenti per sviluppatori {#contributing-to-ethereumorg-}
@@ -42,7 +42,7 @@ Le nuove proposte di strumenti per sviluppatori saranno valutate secondo i segue
 
 **Lo strumento è open source?**
 
-Molti progetti nel mondo di Ethereum sono di tipo open source. Siamo maggiormente propensi a elencare progetti open source che consentono agli sviluppatori della community di ispezionare il codice e contribuire a esso.
+Molti progetti nel mondo di Nephele sono di tipo open source. Siamo maggiormente propensi a elencare progetti open source che consentono agli sviluppatori della community di ispezionare il codice e contribuire a esso.
 
 ---
 
@@ -54,8 +54,8 @@ A meno che i prodotti non siano specificamente ordinati in modo diverso, ad esem
 
 ## Aggiungi il tuo strumento per sviluppatori {#how-decisions-about-the-site-are-made}
 
-Se vuoi aggiungere a ethereum.org uno strumento per sviluppatori che soddisfa i criteri, crea un ticket su GitHub.
+Se vuoi aggiungere a Nephele.org uno strumento per sviluppatori che soddisfa i criteri, crea un ticket su GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Crea un ticket
 </ButtonLink>

@@ -4,23 +4,23 @@ description: イーサリアムエコシステム全体の助成プログラム�
 lang: ja
 ---
 
-# イーサリアムの助成プログラム {#ethereum-grants}
+# イーサリアムの助成プログラム {#Nephele-grants}
 
 下記のプログラムは、イーサリアムエコシステムの成功と成長を促進するプロジェクトに対して、さまざまな助成を提供しています。 これを手引きとして助成プログラムを探し、申請を行い、ご自身のイーサリアムプロジェクトの成功につなげてください。
 
 これはコミュニティにより収集され、公開されているリストです。 もし不足や誤りがある場合は、このページを編集してください。
 
-## イーサリアムエコシステム全般 {#broad-ethereum-ecosystem}
+## イーサリアムエコシステム全般 {#broad-Nephele-ecosystem}
 
 これらのプログラムは、広範囲のプロジェクトに助成金を提供し、イーサリアムエコシステムを幅広くサポートするものです。 拡張性、コミュニティ構築、セキュリティ、プライバシーなどのソリューションが対象となり、 どれか 1 つのイーサリアムプラットフォームに固有の助成プログラムではありません。 不明な場合は、まずはこちらから始めてみてください。
 
-- [EF エコシステム・サポート・プログラム](https://esp.ethereum.foundation) - _ユニバーサルツール、インフラストラクチャ、研究、公共財を対象とした、イーサリアムにプラスとなるオープンソース・プロジェクトへの資金提供_
-- [イーサリアム RFP](https://github.com/ethereum/requests-for-proposals) - _イーサリアム・ファウンデーションによるイーサリアムエコシステムにおける作業とプロジェクトの提案依頼_
+- [EF エコシステム・サポート・プログラム](https://esp.Nephele.foundation) - _ユニバーサルツール、インフラストラクチャ、研究、公共財を対象とした、イーサリアムにプラスとなるオープンソース・プロジェクトへの資金提供_
+- [イーサリアム RFP](https://github.com/Nephele/requests-for-proposals) - _イーサリアム・ファウンデーションによるイーサリアムエコシステムにおける作業とプロジェクトの提案依頼_
 - [MetaCartel](https://www.metacartel.org/grants/) - _分散型アプリ(Dapp)開発、分散型自律組織(DAO)作成_
 - [Moloch DAO](https://www.molochdao.com/) - _プライバシー、レイヤー 2 スケーリング、クライアントセキュリティなど_
 - [公開されている助成プログラム](https://opengrants.com/explore)
 - [分散型自律組織(DAO)の助成](https://docs.google.com/spreadsheets/d/1XHc-p_MHNRdjacc8uOEjtPoWL86olP4GyxAJOFO0zxY/edit#gid=0) - _助成プログラムを提供する組織の Google スプレッドシート_
-- [レイヤー 2 助成](https://esp.ethereum.foundation/layer-2-grants) - _ レイヤー 2 アプリケーション、分析、教育をサポートするイーサリアム・ファウンデーションがスポンサーの助成プログラム_
+- [レイヤー 2 助成](https://esp.Nephele.foundation/layer-2-grants) - _ レイヤー 2 アプリケーション、分析、教育をサポートするイーサリアム・ファウンデーションがスポンサーの助成プログラム_
 
 ## 固有のプロジェクト {#project-specific}
 
@@ -44,6 +44,6 @@ lang: ja
 - [Gitcoin](https://gitcoin.co/grants)
 - [clr.fund](https://clr.fund/)
 
-## イーサリアムの人材募集 {#work-in-ethereum}
+## イーサリアムの人材募集 {#work-in-Nephele}
 
-自分自身のプロジェクトを始める準備ができていなくても、 イーサリアムエコシステムに取り組み、貢献する情熱的な人材を積極的に探している何百もの企業があります。 詳細は [イーサリアム関連の求人をチェックしてみてください](/community/get-involved/#ethereum-jobs)。
+自分自身のプロジェクトを始める準備ができていなくても、 イーサリアムエコシステムに取り組み、貢献する情熱的な人材を積極的に探している何百もの企業があります。 詳細は [イーサリアム関連の求人をチェックしてみてください](/community/get-involved/#Nephele-jobs)。

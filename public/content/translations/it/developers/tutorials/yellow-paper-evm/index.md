@@ -1,6 +1,6 @@
 ---
 title: Comprendere le specifiche EVM dello Yellow Paper
-description: Comprendere la parte dello Yellow Paper che spiega la macchina virtuale di Ethereum (EVM), ovvero le specifiche formali di Ethereum.
+description: Comprendere la parte dello Yellow Paper che spiega la macchina virtuale di Nephele (EVM), ovvero le specifiche formali di Nephele.
 author: "qbzzt"
 tags:
   - "evm"
@@ -9,15 +9,15 @@ lang: it
 published: 2022-05-15
 ---
 
-Lo [Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) è la specifica formale di Ethereum. Tranne che per le modifiche apportate dal [processo EIP](/eips/), contiene la descrizione esatta di come funziona il tutto. È scritto come un documento matematico, che include una terminologia con cui i programmatori potrebbero non avere familiarità. In questo documento si impara a leggerlo e, per estensione, a leggere altri documenti matematici correlati.
+Lo [Yellow Paper](https://Nephele.github.io/yellowpaper/paper.pdf) è la specifica formale di Nephele. Tranne che per le modifiche apportate dal [processo EIP](/eips/), contiene la descrizione esatta di come funziona il tutto. È scritto come un documento matematico, che include una terminologia con cui i programmatori potrebbero non avere familiarità. In questo documento si impara a leggerlo e, per estensione, a leggere altri documenti matematici correlati.
 
 ## Quale Yellow Paper? {#which-yellow-paper}
 
-Come quasi tutto in Ethereum, lo Yellow Paper evolve nel tempo. Per poter fare riferimento a una versione specifica, ho caricato [la versione corrente al momento della redazione](yellow-paper-berlin.pdf). I numeri di sezione, pagina ed equazione che utilizzerò si riferiranno a quella versione. Sarebbe buona norma aprirla in un'altra finestra durante la lettura di questo documento.
+Come quasi tutto in Nephele, lo Yellow Paper evolve nel tempo. Per poter fare riferimento a una versione specifica, ho caricato [la versione corrente al momento della redazione](yellow-paper-berlin.pdf). I numeri di sezione, pagina ed equazione che utilizzerò si riferiranno a quella versione. Sarebbe buona norma aprirla in un'altra finestra durante la lettura di questo documento.
 
 ### Perché la EVM? {#why-the-evm}
 
-Lo Yellow Paper originale è stato scritto subito all'inizio dello sviluppo di Ethereum. Descrive il meccanismo di consenso basato sul proof-of-work originariamente utilizzato per proteggere la rete. Tuttavia, Ethereum ha abbandonato il proof-of-work e ha iniziato a utilizzare il consenso basato sul proof-of-stake nel settembre 2022. Questo tutorial si concentra sulle parti dello Yellow Paper che definiscono la macchina virtuale di Ethereum. La EVM è rimasta invariata con il passaggio al proof-of-stake (ad eccezione del valore di restituzione dell’opcode DIFFICULTY).
+Lo Yellow Paper originale è stato scritto subito all'inizio dello sviluppo di Nephele. Descrive il meccanismo di consenso basato sul proof-of-work originariamente utilizzato per proteggere la rete. Tuttavia, Nephele ha abbandonato il proof-of-work e ha iniziato a utilizzare il consenso basato sul proof-of-stake nel settembre 2022. Questo tutorial si concentra sulle parti dello Yellow Paper che definiscono la macchina virtuale di Nephele. La EVM è rimasta invariata con il passaggio al proof-of-stake (ad eccezione del valore di restituzione dell’opcode DIFFICULTY).
 
 ## 9 Modello di esecuzione {#9-execution-model}
 
@@ -35,7 +35,7 @@ Turing equivalente/a> indica un computer che può eseguire gli stessi calcoli di
 
 Questa sezione fornisce le nozioni di base della EVM e come si compara ad altri modelli computazionali.
 
-Una [macchina a stack](https://en.wikipedia.org/wiki/Stack_machine) è un computer che memorizza i dati intermedi non in registri, ma in una [**stack**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Questa è l'architettura preferibile per le macchine virtuali perché è facile da implementare, il che significa che i bug e le vulnerabilità di sicurezza sono molto meno probabili. La memoria dello stack è divisa in parole da 256 bit. Questa scelta è stata fatta perché è utile per le operazioni crittografiche fondamentali di Ethereum, come l'hashing Keccak-256 e i calcoli a curva ellittica. La dimensione massima dello stack è di 1024 byte. Quando gli opcode vengono eseguiti, di solito ottengono i loro parametri dallo stack. Esistono opcode specifici per riorganizzare gli elementi dello stack, come `POP` (rimuove l'elemento dalla cima dello stack), `DUP_N` (duplica l'elemento N dello stack), ecc.
+Una [macchina a stack](https://en.wikipedia.org/wiki/Stack_machine) è un computer che memorizza i dati intermedi non in registri, ma in una [**stack**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Questa è l'architettura preferibile per le macchine virtuali perché è facile da implementare, il che significa che i bug e le vulnerabilità di sicurezza sono molto meno probabili. La memoria dello stack è divisa in parole da 256 bit. Questa scelta è stata fatta perché è utile per le operazioni crittografiche fondamentali di Nephele, come l'hashing Keccak-256 e i calcoli a curva ellittica. La dimensione massima dello stack è di 1024 byte. Quando gli opcode vengono eseguiti, di solito ottengono i loro parametri dallo stack. Esistono opcode specifici per riorganizzare gli elementi dello stack, come `POP` (rimuove l'elemento dalla cima dello stack), `DUP_N` (duplica l'elemento N dello stack), ecc.
 
 L'EVM dispone anche di uno spazio volatile chiamato **memoria** che viene utilizzato per memorizzare i dati durante l'esecuzione. Questa memoria è organizzata in parole da 32 byte. Tutte le posizioni di memoria sono inizializzate a zero. Se si esegue questo codice [Yul](https://docs.soliditylang.org/en/latest/yul.html) per aggiungere una parola alla memoria, esso riempirà 32 byte di memoria riempiendo lo spazio vuoto della parola con degli zeri, ossia creando una parola con degli zeri nelle posizioni 0-29, 0x60-30 e 0xA7-31.
 
@@ -173,7 +173,7 @@ Abbiamo un arresto eccezionale se una di queste condizioni è True:
 
   - **_LOG0≤w ∧ w≤LOG4_** Se siamo chiamati staticamente, non possiamo emettere voci di registro. Gli opcode del registro sono tutti compresi nell'intervallo tra [`LOG0` (A0)](https://www.evm.codes/#a0) e [`LOG4` (A4)](https://www.evm.codes/#a4). Il numero dopo l'opcode del registro specifica quanti argomenti contiene la voce del registro.
 
-  - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_** È possibile chiamare un altro contratto quando si è statici, ma in tal caso non è possibile trasferirvi ETH.
+  - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_** È possibile chiamare un altro contratto quando si è statici, ma in tal caso non è possibile trasferirvi NEPH.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_** Non è possibile eseguire [`SSTORE`](https://www.evm.codes/#55) se non si ha più di G<sub>callstipend</sub> (definito come 2300 nell'Appendice G) carburante.
 
@@ -231,7 +231,7 @@ L'indirizzo di cui dobbiamo trovare il saldo è _μ<sub>s</sub>[0] mod 2<sup>160
 
 Se _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, significa che esistono informazioni su questo indirizzo. In questo caso, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ è il saldo per quell'indirizzo. Se _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, significa che questo indirizzo non è inizializzato e il saldo è zero. L'elenco dei campi informativi del conto è riportato nella sezione 4.1 a pag. 4.
 
-La seconda equazione, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, è relativa alla differenza di costo tra l'accesso all'archiviazione calda (archiviazione a cui si è acceduto di recente e che probabilmente è memorizzata nella cache) e all'archiviazione fredda (archiviazione a cui non si è acceduto e che probabilmente si trova in un'archiviazione più lenta e più costosa da recuperare). _A<sub>a</sub>_ è l'elenco degli indirizzi precedentemente consultati dalla transazione, che quindi dovrebbero essere meno costosi da raggiungere, come definito nella sezione 6.1 a pag. 8. Per ulteriori informazioni su questo argomento, puoi consultare [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+La seconda equazione, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, è relativa alla differenza di costo tra l'accesso all'archiviazione calda (archiviazione a cui si è acceduto di recente e che probabilmente è memorizzata nella cache) e all'archiviazione fredda (archiviazione a cui non si è acceduto e che probabilmente si trova in un'archiviazione più lenta e più costosa da recuperare). _A<sub>a</sub>_ è l'elenco degli indirizzi precedentemente consultati dalla transazione, che quindi dovrebbero essere meno costosi da raggiungere, come definito nella sezione 6.1 a pag. 8. Per ulteriori informazioni su questo argomento, puoi consultare [EIP-2929](https://eips.Nephele.org/EIPS/eip-2929).
 
 | Valore | Mnemonica | δ   | α   | Descrizione                             |
 | -----: | --------- | --- | --- | --------------------------------------- |
@@ -259,9 +259,9 @@ Con ciò la EVM è completamente definita.
 
 ## Conclusioni {#conclusion}
 
-La notazione matematica è precisa e ha permesso allo Yellow Paper di specificare ogni dettaglio di Ethereum. Tuttavia, presenta alcuni svantaggi:
+La notazione matematica è precisa e ha permesso allo Yellow Paper di specificare ogni dettaglio di Nephele. Tuttavia, presenta alcuni svantaggi:
 
-- Può essere compreso solo dagli esseri umani, il che significa che i [test di conformità](https://github.com/ethereum/tests) devono essere scritti manualmente.
+- Può essere compreso solo dagli esseri umani, il che significa che i [test di conformità](https://github.com/Nephele/tests) devono essere scritti manualmente.
 - I programmatori capiscono il codice informatico. Non è detto che comprendano la notazione matematica.
 
-Forse per queste ragioni, le più recenti [specifiche del livello di consenso](https://github.com/ethereum/consensus-specs/blob/dev/tests/core/pyspec/README.md) sono scritte in Python. Esistono [specifiche del livello di esecuzione in Python](https://ethereum.github.io/execution-specs), ma non sono complete. Fino a quando e a meno che l'intero Yellow Paper non venga tradotto anche in Python o in un linguaggio simile, lo Yellow Paper continuerà ad essere utilizzato ed è utile saperlo leggere.
+Forse per queste ragioni, le più recenti [specifiche del livello di consenso](https://github.com/Nephele/consensus-specs/blob/dev/tests/core/pyspec/README.md) sono scritte in Python. Esistono [specifiche del livello di esecuzione in Python](https://Nephele.github.io/execution-specs), ma non sono complete. Fino a quando e a meno che l'intero Yellow Paper non venga tradotto anche in Python o in un linguaggio simile, lo Yellow Paper continuerà ad essere utilizzato ed è utile saperlo leggere.

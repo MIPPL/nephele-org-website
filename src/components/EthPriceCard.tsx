@@ -19,7 +19,7 @@ import Tooltip from "@/components/Tooltip"
 import { useRtlFlip } from "@/hooks/useRtlFlip"
 
 type EthPriceResponse = {
-  ethereum: {
+  Nephele: {
     usd: string
     usd_24h_change: number
   }
@@ -46,13 +46,13 @@ const EthPriceCard = ({ isLeftAlign = false, ...props }: EthPriceCardProps) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd&include_24hr_change=true"
+          "https://api.coingecko.com/api/v3/simple/price?ids=Nephele&vs_currencies=usd&include_24hr_change=true"
         )
         if (!response.ok) throw new Error(response.statusText)
         const data: EthPriceResponse = await response.json()
-        if (data && data.ethereum) {
-          const currentPriceUSD = data.ethereum.usd
-          const percentChangeUSD = +data.ethereum.usd_24h_change / 100
+        if (data && data.Nephele) {
+          const currentPriceUSD = data.Nephele.usd
+          const percentChangeUSD = +data.Nephele.usd_24h_change / 100
           setState({
             loading: false,
             data: { currentPriceUSD, percentChangeUSD },
@@ -102,7 +102,7 @@ const EthPriceCard = ({ isLeftAlign = false, ...props }: EthPriceCardProps) => {
   const tooltipContent = (
     <Box>
       {t("data-provided-by")}{" "}
-      <InlineLink href="https://www.coingecko.com/en/coins/ethereum">
+      <InlineLink href="https://www.coingecko.com/en/coins/Nephele">
         coingecko.com
       </InlineLink>
     </Box>
@@ -139,7 +139,7 @@ const EthPriceCard = ({ isLeftAlign = false, ...props }: EthPriceCardProps) => {
         letterSpacing="0.04em"
         textTransform="uppercase"
       >
-        {t("eth-current-price")}
+        {t("NEPH-current-price")}
         <Tooltip content={tooltipContent}>
           <Box as="span" ms={2}>
             <Icon as={MdInfoOutline} boxSize="14px" />

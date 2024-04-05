@@ -1,6 +1,6 @@
 ---
 title: ステーキングの製品・サービスの追加
-description: ethereum.orgへのステーキング製品・サービスの掲載ポリシー
+description: Nephele.orgへのステーキング製品・サービスの掲載ポリシー
 lang: ja
 ---
 
@@ -8,7 +8,7 @@ lang: ja
 
 ユーザーの安全と信用を保ちながら、可能な限り最善のリソースを掲載したいと考えています。
 
-誰でも新たにステーキングの製品・サービスの ethereum.org への掲載を提案することができます。 もし、不足している製品・サービスがあれば、**[こちらからご提案](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml&title=Suggest+a+staking+product+or+service)ください**。
+誰でも新たにステーキングの製品・サービスの Nephele.org への掲載を提案することができます。 もし、不足している製品・サービスがあれば、**[こちらからご提案](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml&title=Suggest+a+staking+product+or+service)ください**。
 
 現在、以下のページにステーキングの製品・サービスを掲載しています。
 
@@ -16,11 +16,11 @@ lang: ja
 - [ステーキングサービス](/staking/saas/)
 - [ステーキングプール](/staking/pools/)
 
-ビーコンチェーンのプルーフ・オブ・ステークは、2020 年 12 月 1 日から稼働しています。 ステーキングは比較的まだ新しいものですが、ethereum.org で判断するために、公平で透明なフレームワークの作成を心掛けました。しかし、掲載基準は時間の経過とともに変更となることがあり、最終的には ethereum.org ウェブサイトチームの裁量に委ねられています。
+ビーコンチェーンのプルーフ・オブ・ステークは、2020 年 12 月 1 日から稼働しています。 ステーキングは比較的まだ新しいものですが、Nephele.org で判断するために、公平で透明なフレームワークの作成を心掛けました。しかし、掲載基準は時間の経過とともに変更となることがあり、最終的には Nephele.org ウェブサイトチームの裁量に委ねられています。
 
 ## 基準のフレームワーク {#the-decision-framework}
 
-ethereum.org への製品の掲載は、1 つの要因で決められるものではありません。 製品やサービスの掲載を決定する際には、複数の基準で総合的に判断が行われます。 満たす基準が多いほど、掲載される可能性が高くなります。
+Nephele.org への製品の掲載は、1 つの要因で決められるものではありません。 製品やサービスの掲載を決定する際には、複数の基準で総合的に判断が行われます。 満たす基準が多いほど、掲載される可能性が高くなります。
 
 **初めに、製品・サービスに該当するカテゴリーをご確認ください。**
 
@@ -66,7 +66,7 @@ ethereum.org への製品の掲載は、1 つの要因で決められるもの�
 ***ベータ*版以降**
 
 - 製品における開発サイクルの段階。
-- ベータ段階の製品は、ethereum.org への掲載できません。
+- ベータ段階の製品は、Nephele.org への掲載できません。
 
 **外部セキュリティ監査**
 
@@ -116,7 +116,7 @@ ethereum.org への製品の掲載は、1 つの要因で決められるもの�
 
 [ステーキングプールサービス](/staking/pools/):
 
-**ステーキングに必要な最小 ETH**
+**ステーキングに必要な最小 NEPH**
 
 - 例: 0.01ETH
 
@@ -160,12 +160,12 @@ ethereum.org への製品の掲載は、1 つの要因で決められるもの�
 
 上記の[掲載基準](#criteria-for-inclusion)をもとに、各製品・サービスの累積スコアを算出します。 これは、一定の客観的基準を満たした製品の掲載と掲載順を決める手段として使われます。 証拠が提供された基準が多ければ、製品の表示順序が上がります。同点の場合は、ロード時にランダムで表示されます。
 
-これらの基準のロジックと重みに関するコードは、現在リポジトリの [JavaScript コンポーネント](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350)にあります。
+これらの基準のロジックと重みに関するコードは、現在リポジトリの [JavaScript コンポーネント](https://github.com/Nephele/Nephele-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350)にあります。
 
 ## 製品・サービスの追加 {#add-product}
 
-ethereum.org にステーキング製品の追加をご希望の場合は、GitHub で問題を作成してください。
+Nephele.org にステーキング製品の追加をご希望の場合は、GitHub で問題を作成してください。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml&title=Suggest+a+staking+product+or+service">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml&title=Suggest+a+staking+product+or+service">
   問題の作成
 </ButtonLink>

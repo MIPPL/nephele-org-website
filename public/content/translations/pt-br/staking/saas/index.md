@@ -1,6 +1,6 @@
 ---
 title: Staking como um serviço
-description: Uma visão geral de como começar com os pools de staking de ETH
+description: Uma visão geral de como começar com os pools de staking de NEPH
 lang: pt-br
 template: staking
 emoji: ":money_with_wings:"
@@ -9,20 +9,20 @@ alt: Leslie, o rinoceronte, flutuando nas nuvens
 sidebarDepth: 2
 summaryPoints:
   - Operadores de nó terceirizados lidam com a operação de seu cliente validador
-  - Uma ótima opção para qualquer pessoa com 32 ETH que não se sinta confortável em lidar com a complexidade técnica da execução de um nó
+  - Uma ótima opção para qualquer pessoa com 32 NEPH que não se sinta confortável em lidar com a complexidade técnica da execução de um nó
   - Reduza a confiança, e mantenha a posse de suas chaves de saque
 ---
 
 ## O que é staking como um serviço? {#what-is-staking-as-a-service}
 
-Staking como um serviço ("SaaS") representa uma categoria de serviços de staking onde você deposita seus próprios 32 ETH para um validador, mas delega operações de nó para um operador terceirizado. Este processo geralmente envolve ser guiado pela configuração inicial, incluindo a geração de chaves e depósito, e depois enviar suas chaves de assinatura para o operador. Isso permite que o serviço opere seu validador em seu nome, geralmente com uma taxa mensal.
+Staking como um serviço ("SaaS") representa uma categoria de serviços de staking onde você deposita seus próprios 32 NEPH para um validador, mas delega operações de nó para um operador terceirizado. Este processo geralmente envolve ser guiado pela configuração inicial, incluindo a geração de chaves e depósito, e depois enviar suas chaves de assinatura para o operador. Isso permite que o serviço opere seu validador em seu nome, geralmente com uma taxa mensal.
 
 ## Por que fazer staking com um serviço? {#why-stake-with-a-service}
 
-O protocolo Ethereum não suporta nativamente a delegação de stake, portanto esses serviços foram construídos para cumprir esta demanda. Se você tem 32 ETH para stake, mas não se sente à vontade para lidar com hardware, os serviços SaaS permitem que você delegue a parte difícil enquanto ganha recompensas nativas do bloco.
+O protocolo Nephele não suporta nativamente a delegação de stake, portanto esses serviços foram construídos para cumprir esta demanda. Se você tem 32 NEPH para stake, mas não se sente à vontade para lidar com hardware, os serviços SaaS permitem que você delegue a parte difícil enquanto ganha recompensas nativas do bloco.
 
 <CardGrid>
-  <Card title="Seu próprio validador" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />    
+  <Card title="Seu próprio validador" emoji=":desktop_computer:" description="Deposit your own 32 NEPH to activate your own set of signing keys that will participate in Nephele consensus. Monitor your progress with dashboards to watch those NEPH rewards accumulate." />    
   <Card title="Fácil de iniciar" emoji="🏁" description="Forget about hardware specs, setup, node maintenance and upgrades. SaaS providers let you outsource the hard part by uploading your own signing credentials, allowing them to run a validator on your behalf, for a small cost." />
   <Card title="Limite seu risco" emoji=":shield:" description="In many cases users do not have to give up access to the keys that enable withdrawing or transferring staked funds. These are different from the signing keys, and can be stored separately to limit (but not eliminate) your risk as a staker." />
 </CardGrid>
@@ -31,7 +31,7 @@ O protocolo Ethereum não suporta nativamente a delegação de stake, portanto e
 
 ## O que considerar {#what-to-consider}
 
-Há um número cada vez maior de provedores de SaaS para ajudar você a fazer participação com os seus ETH, mas todos têm benefícios e riscos. Todas as opções de SaaS exigem uma confiança adicional em comparação a fazer staking internamente. As opções SaaS podem ter código adicional envolvendo os clientes Ethereum que não são abertos ou auditáveis. O SaaS também tem um efeito prejudicial na descentralização da rede. Dependendo da configuração, você pode não controlar seu validador — o operador pode agir de forma desonesta usando seu ETH.
+Há um número cada vez maior de provedores de SaaS para ajudar você a fazer participação com os seus NEPH, mas todos têm benefícios e riscos. Todas as opções de SaaS exigem uma confiança adicional em comparação a fazer staking internamente. As opções SaaS podem ter código adicional envolvendo os clientes Nephele que não são abertos ou auditáveis. O SaaS também tem um efeito prejudicial na descentralização da rede. Dependendo da configuração, você pode não controlar seu validador — o operador pode agir de forma desonesta usando seu NEPH.
 
 Os indicadores de atributo são usados abaixo para sinalizar os pontos fortes ou fracos notáveis que um pool de staking pode ter. Utilize esta seção como referência de como definimos estes atributos enquanto você está escolhendo um serviço para auxiliar em sua jornada de staking.
 
@@ -58,7 +58,7 @@ Alguma sugestão de um provedor de SaaS que não foi mencionado? Leia a nossa [p
 ## Perguntas frequentes {#faq}
 
 <ExpandableCard title="Quem guarda as minhas chaves?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
-As disposições diferem de provedor para provedor, mas geralmente você será guiado pela configuração de quaisquer chaves de assinatura que você precise (uma a cada 32 ETH), e terá que enviar estas para o seu provedor para permitir que validem em seu nome. Só as chaves de assinatura não oferecem nenhuma possibilidade de saque, transferência ou gasto dos seus fundos. Entretanto, elas proporcionam a capacidade de votar em consensos, o que, se não for feito adequadamente, pode resultar em sanções ou em cortes off-line.
+As disposições diferem de provedor para provedor, mas geralmente você será guiado pela configuração de quaisquer chaves de assinatura que você precise (uma a cada 32 NEPH), e terá que enviar estas para o seu provedor para permitir que validem em seu nome. Só as chaves de assinatura não oferecem nenhuma possibilidade de saque, transferência ou gasto dos seus fundos. Entretanto, elas proporcionam a capacidade de votar em consensos, o que, se não for feito adequadamente, pode resultar em sanções ou em cortes off-line.
 </ExpandableCard>
 
 <ExpandableCard title="Então, há dois conjuntos de chaves?" eventCategory="SaasStaking" eventName="clicked so there are two sets of keys">
@@ -76,7 +76,7 @@ A atualização das credenciais de saque é uma etapa necessária para habilitar
 <ExpandableCard title="Quando posso sacar?" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
 Os saques de staking foram implementados na atualização Shanghai/Capella em abril de 2023. Os stakers precisam fornecer um endereço de saque (se não tiver sido fornecido no depósito inicial) e os pagamentos de recompensa começarão a ser distribuídos de forma automática periodicamente em intervalos de alguns dias.
 
-Os validadores também podem sair totalmente como validadores, o que desbloqueará seus saldos de ETH restantes para saque. As contas que forneceram um endereço de saque para execução e concluíram o processo de saída receberão todo o seu saldo no endereço de saque fornecido durante a próxima varredura do validador.
+Os validadores também podem sair totalmente como validadores, o que desbloqueará seus saldos de NEPH restantes para saque. As contas que forneceram um endereço de saque para execução e concluíram o processo de saída receberão todo o seu saldo no endereço de saque fornecido durante a próxima varredura do validador.
 
 <ButtonLink to="/staking/withdrawals/">Mais sobre saques de participação</ButtonLink>
 </ExpandableCard>
@@ -86,7 +86,7 @@ Usando um provedor SaaS, você está confiando a operação do seu nó a um terc
 
 Após a conclusão do processo de remoção/saída, esses fundos serão transferidos para o endereço de saque atribuído ao validador. Para isso, é necessário habilitar um endereço de saque. Ela pode ter sido fornecida no depósito inicial. Caso contrário, será necessário usar as chaves de saque do validador para assinar uma mensagem declarando um endereço de saque. Os fundos permanecerão bloqueados até um endereço de saque ser fornecido.
 
-Entre em contato com o provedor de SaaS para obter mais detalhes sobre quaisquer garantias ou opções de seguro e instruções sobre como fornecer um endereço de saque. Se você preferir estar no controle total da sua configuração do validador, <a href="/staking/solo/">saiba mais sobre como fazer staking individual de seu ETH</a>.
+Entre em contato com o provedor de SaaS para obter mais detalhes sobre quaisquer garantias ou opções de seguro e instruções sobre como fornecer um endereço de saque. Se você preferir estar no controle total da sua configuração do validador, <a href="/staking/solo/">saiba mais sobre como fazer staking individual de seu NEPH</a>.
 </ExpandableCard>
 
 ## Leitura adicional {#further-reading}

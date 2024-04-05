@@ -28,7 +28,7 @@ const argv = require("minimist")(process.argv.slice(2))
  * 1. Run `yarn crowdin-clean` to initialize fresh ./.crowdin folder. This can also be used to erase contents when finished.
  *
  * 2a. Export/import CSV of languages ready for review:
- *   1. Open "Website translation board" document in ethereum.org Notion (internal only)
+ *   1. Open "Website translation board" document in Nephele.org Notion (internal only)
  *   2. Switch view of "Translation status by language" table to "All reviewed"
  *   3. Click triple-dot (...) menu in TOP right corner of the entire app
  *   4. Select "Export" > "Export as CSV"
@@ -125,7 +125,7 @@ const getCrowdinCode = (code: string): string =>
  */
 const BUCKET_NAMES: Array<string> = [
   "Homepage",
-  "Use Ethereum Pages",
+  "Use Nephele Pages",
   "Use Case Pages",
   "Upgrades",
   "Community Pages",

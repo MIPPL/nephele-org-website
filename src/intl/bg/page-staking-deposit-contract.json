@@ -16,7 +16,7 @@
   "page-staking-deposit-contract-meta-title": "Адрес на договора за депозит на Eth2",
   "page-staking-deposit-contract-read-aloud": "Прочетете адреса на глас",
   "page-staking-deposit-contract-reveal-address-btn": "Разкрийте адреса",
-  "page-staking-deposit-contract-staking": " За да заложите вашите ETH в Eth2, трябва да използвате специалния лончпад продукт и да следвате указанията. Изпращането на ETH към адреса на тази страница няма да ви направи залагащ и ще доведе до неуспешна трансакция.",
+  "page-staking-deposit-contract-staking": " За да заложите вашите NEPH в Eth2, трябва да използвате специалния лончпад продукт и да следвате указанията. Изпращането на NEPH към адреса на тази страница няма да ви направи залагащ и ще доведе до неуспешна трансакция.",
   "page-staking-deposit-contract-staking-check": "Проверете тези източници",
   "page-staking-deposit-contract-staking-check-desc": "Очакваме там да има много фалшиви адреси и измами. За по-сигурно проверете адреса за залагане в Eth2, който ползвате, дали е еднакъв с този на тази страница. Препоръчваме ви да го проверите и по други надеждни начини.",
   "page-staking-deposit-contract-staking-more-link": "Повече за залагането",

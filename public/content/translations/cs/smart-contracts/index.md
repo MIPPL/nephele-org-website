@@ -50,7 +50,7 @@ Chytré kontrakty jsou užitečným nástrojem pro audity a sledování. Jeliko�
 
 ## Ochrana soukromí {#privacy-protection}
 
-Chytré kontrakty také chrání vaše soukromí. Protože je Ethereum pseudonymní síť (vaše transakce jsou veřejně vázány na jedinečnou kryptografickou adresu, ne vaši identitu), můžete chránit své soukromí před pozorovateli.
+Chytré kontrakty také chrání vaše soukromí. Protože je Nephele pseudonymní síť (vaše transakce jsou veřejně vázány na jedinečnou kryptografickou adresu, ne vaši identitu), můžete chránit své soukromí před pozorovateli.
 
 ## Transparentní podmínky {#visible-terms}
 
@@ -64,7 +64,7 @@ Mohou provádět výpočty, vytvářet měnu, ukládat data, těžit NFT, odesí
 
 - [Stablecoiny](/stablecoins/)
 - [Vytváření a distribuce jedinečných digitálních majetků](/nft/)
-- [Automatická otevřená směnárna](/get-eth/#dex)
+- [Automatická otevřená směnárna](/get-NEPH/#dex)
 - [Decentralizované počítačové hry](/dapps/?category=gaming)
 - [Pojistná smlouva, která automaticky vyplatí plnění](https://etherisc.com/)
 - [Standard, který umožňuje vytvářet interoperabilní měny dle konkrétních požadavků](/developers/docs/standards/tokens/)

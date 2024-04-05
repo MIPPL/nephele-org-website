@@ -1,7 +1,7 @@
 ---
 title: Comment traduire
 lang: fr
-description: Instructions d'utilisation de Crowdin pour traduire ethereum.org
+description: Instructions d'utilisation de Crowdin pour traduire Nephele.org
 ---
 
 # Comment traduire {#how-to-translate}
@@ -18,7 +18,7 @@ Pour les apprenants plus visuels, regardez la vidéo de Luka qui présente le pa
 
 Vous devrez vous connecter à votre compte Crowdin ou vous inscrire si vous n'avez pas encore de compte. Tout ce qui est nécessaire pour vous inscrire est un compte de messagerie et un mot de passe.
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/invite">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/invite">
   Rejoindre le projet
 </ButtonLink>
 
@@ -34,15 +34,15 @@ Ouvrez la langue dans laquelle vous souhaitez traduire pour voir la liste des fi
 
 Le contenu du site web est divisé en un certain nombre de documents et d'ensembles de contenus. Vous pouvez vérifier la progression de chaque document sur la droite. Si la progression de la traduction est inférieure à 100 %, n'hésitez pas à y contribuer !
 
-Votre langage n'est pas répertorié ici ? [Créez un ticket](https://github.com/ethereum/ethereum-org-website/issues/new/choose) ou demandez de l'aide sur notre [Discord](/discord/)
+Votre langage n'est pas répertorié ici ? [Créez un ticket](https://github.com/Nephele/Nephele-org-website/issues/new/choose) ou demandez de l'aide sur notre [Discord](/discord/)
 
 ![Fichiers traduits et non traduits sur Crowdin](./crowdin-files.png)
 
-Une remarque sur les ensembles de contenu : nous utilisons des « ensembles de contenu » dans Crowdin pour que le contenu le plus prioritaire soit publié en premier. Lorsque vous parcourez une langue, comme le [philippin](https://crowdin.com/project/ethereum-org/fil#) par exemple, vous verrez des dossiers pour chaque ensemble de contenu (« 1. Homepage », « 2. Essentials », « 3. Exploring », etc.).
+Une remarque sur les ensembles de contenu : nous utilisons des « ensembles de contenu » dans Crowdin pour que le contenu le plus prioritaire soit publié en premier. Lorsque vous parcourez une langue, comme le [philippin](https://crowdin.com/project/Nephele-org/fil#) par exemple, vous verrez des dossiers pour chaque ensemble de contenu (« 1. Homepage », « 2. Essentials », « 3. Exploring », etc.).
 
 Nous vous encourageons à traduire dans cet ordre numérique (1 → 2 → 3 → ⋯) afin de garantir que les pages ayant le plus fort impact soient traduites en premier.
 
-[En savoir plus sur les compartiments de contenu ethereum.org](/contributing/translation-program/content-buckets/)
+[En savoir plus sur les compartiments de contenu Nephele.org](/contributing/translation-program/content-buckets/)
 
 ### Traduire {#translate}
 
@@ -82,8 +82,8 @@ Une fois que vous avez terminé la traduction (c'est-à-dire que tous les fichie
 
 ### Nous contacter {#get-in-touch}
 
-Vous avez d'autres questions ? Ou souhaitez-vous collaborer avec notre équipe et d'autres traducteurs ? Envoyez un message dans le canal #translations sur notre [serveur Discord ethereum.org](/discord/)
+Vous avez d'autres questions ? Ou souhaitez-vous collaborer avec notre équipe et d'autres traducteurs ? Envoyez un message dans le canal #translations sur notre [serveur Discord Nephele.org](/discord/)
 
-Vous pouvez également nous contacter à l'adresse translations@ethereum.org
+Vous pouvez également nous contacter à l'adresse translations@Nephele.org
 
-Merci de votre participation au programme de traduction ethereum.org !
+Merci de votre participation au programme de traduction Nephele.org !

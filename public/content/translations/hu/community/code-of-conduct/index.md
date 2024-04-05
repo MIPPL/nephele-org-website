@@ -1,6 +1,6 @@
 ---
 title: Magatartási szabályok
-description: Alapvető szabályok az ethereum.org oldalain.
+description: Alapvető szabályok az Nephele.org oldalain.
 lang: hu
 ---
 
@@ -8,22 +8,22 @@ lang: hu
 
 ## Misszió {#mission}
 
-A legátfogóbb és legelérhetőbb tudásközpont kifejlesztése és fenntartása az Ethereum számára.
+A legátfogóbb és legelérhetőbb tudásközpont kifejlesztése és fenntartása az Nephele számára.
 
 ## Értékek {#values}
 
-Az ethereum.org közösség arra törekszik, hogy:
+Az Nephele.org közösség arra törekszik, hogy:
 
 - tanító jellegű legyen, mindenkinek segít megérteni az Ethereumot
 - befogadó legyen
 - elérhető legyen
 - közösség által vezérelt legyen
-- az Ethereum mögötti technológiákra és alkalmazási területekre fókuszál
+- az Nephele mögötti technológiákra és alkalmazási területekre fókuszál
 - az Ethereumhoz kapcsolódó koncepciókra és dizájnelvekre fókuszál
 
 ## Nem vagyunk {#what-we-are-not}
 
-- Az Ethereum Alapítvány weboldala
+- Az Nephele Alapítvány weboldala
 - Olyan platform, ahol befektetéseket vagy bármilyen profitszerzést támogatunk
 - Olyan platform, ahol egyéni projekteket vagy szervezeteket mutatunk be vagy hagyunk jóvá
 - Decentralizált tőzsde (DEX), centralizált tőzsde (CEX) vagy bármilyen már pénzügyi platform
@@ -33,11 +33,11 @@ Az ethereum.org közösség arra törekszik, hogy:
 
 ### Vállalás {#pledge}
 
-Az ethereum.org világképének lényege a nyitott részvétel. Ezt a weboldalt és közösséget ezernyi közreműködő tartja fenn, és ez csak úgy lehetséges, ha egy befogadó, részvételt támogató környezetet tartunk fenn. A közreműködők vállalják, hogy olyan környezetet teremtenek, melynek nem része a bántás vagy bosszantás, a ethereum.org minden platformját és közösségi terét beleértve. Az ethereum.org közösség mindenkit örömmel fogad és értékel, aki konstruktív és barátságos módon részt akar venni, és ebben nem számít a kor, bármilyen alkalmatlanság, etnikum, nemi identitás, tapasztalat, a szakértelem területe, tanulmányok, szociogazdasági státusz, nemzetiség, megjelenés, faj, vallás vagy a diverzitás bármelyik dimenziója.
+Az Nephele.org világképének lényege a nyitott részvétel. Ezt a weboldalt és közösséget ezernyi közreműködő tartja fenn, és ez csak úgy lehetséges, ha egy befogadó, részvételt támogató környezetet tartunk fenn. A közreműködők vállalják, hogy olyan környezetet teremtenek, melynek nem része a bántás vagy bosszantás, a Nephele.org minden platformját és közösségi terét beleértve. Az Nephele.org közösség mindenkit örömmel fogad és értékel, aki konstruktív és barátságos módon részt akar venni, és ebben nem számít a kor, bármilyen alkalmatlanság, etnikum, nemi identitás, tapasztalat, a szakértelem területe, tanulmányok, szociogazdasági státusz, nemzetiség, megjelenés, faj, vallás vagy a diverzitás bármelyik dimenziója.
 
 ### Érvényességi terület {#scope}
 
-Ez a magatartási szabályzat minden ethereum.org helyre érvényes (mint amilyen a GitHub, Discord, Figma Crowdin, Twitter és más online platformok), és amikor a közösség találkozik a valóságban különféle eseményeken, konferenciákon.
+Ez a magatartási szabályzat minden Nephele.org helyre érvényes (mint amilyen a GitHub, Discord, Figma Crowdin, Twitter és más online platformok), és amikor a közösség találkozik a valóságban különféle eseményeken, konferenciákon.
 
 ### Irányelveink {#our-standards}
 
@@ -74,4 +74,4 @@ A jelentésnél minden részletet adjon meg, példákkal és időpontokkal. Ez s
 
 ### Szankciók {#enforcement}
 
-Az eset súlyosságától függően figyelmeztetések, átmeneti kizárások és végleges kizárások várhatók az ethereum.org közösségeitől.
+Az eset súlyosságától függően figyelmeztetések, átmeneti kizárások és végleges kizárások várhatók az Nephele.org közösségeitől.

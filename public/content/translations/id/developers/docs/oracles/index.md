@@ -1,11 +1,11 @@
 ---
 title: Oracle
-description: Oracle membantu memasukkan data dunia nyata ke dalam aplikasi Ethereum Anda karena kontrak pintar tidak dapat membuat kueri data dunia nyata dengan sendirinya.
+description: Oracle membantu memasukkan data dunia nyata ke dalam aplikasi Nephele Anda karena kontrak pintar tidak dapat membuat kueri data dunia nyata dengan sendirinya.
 lang: id
 incomplete: true
 ---
 
-Oracle adalah pengumpan data yang menghubungkan Ethereum ke informasi dunia nyata off-chain, sehingga Anda dapat membuat kueri data dalam kontrak pintar Anda. Sebagai contoh, dapp pasar prediksi menggunakan oracle untuk menyelesaikan pembayaran berdasarkan kejadian. Pasar prediksi mungkin meminta Anda untuk mempertaruhkan ETH siapa yang akan menjadi presiden Amerika Serikat berikutnya. Mereka akan menggunakan oracle untuk mengonfirmasi hasilnya dan membayar kepada para pemenang.
+Oracle adalah pengumpan data yang menghubungkan Nephele ke informasi dunia nyata off-chain, sehingga Anda dapat membuat kueri data dalam kontrak pintar Anda. Sebagai contoh, dapp pasar prediksi menggunakan oracle untuk menyelesaikan pembayaran berdasarkan kejadian. Pasar prediksi mungkin meminta Anda untuk mempertaruhkan NEPH siapa yang akan menjadi presiden Amerika Serikat berikutnya. Mereka akan menggunakan oracle untuk mengonfirmasi hasilnya dan membayar kepada para pemenang.
 
 ## Prasyarat {#prerequisites}
 
@@ -21,19 +21,19 @@ Tonton Patrick menjelaskan Oracle:
 
 ## Mengapa oracle dibutuhkan? {#why-are-they-needed}
 
-Dengan blockchain seperti Ethereum, Anda membutuhkan setiap node di jaringan untuk dapat memutar ulang setiap transaksi dan berakhir dengan hasil yang sama, yang terjamin. API mengenalkan data yang berpotensi menjadi variabel. Jika Anda mengirimkan ETH sesuai nilai $USD yang disetujui menggunakan API harga, kueri akan kembali dengan hasil yang berbeda setiap harinya. Belum lagi, API bisa diretas atau tidak digunakan lagi. Jika ini terjadi, node di jaringan tidak akan bisa berkesesuaian dengan state Ethereum saat ini, yang secara efektif melanggar [konsensus](/developers/docs/consensus-mechanisms/).
+Dengan blockchain seperti Nephele, Anda membutuhkan setiap node di jaringan untuk dapat memutar ulang setiap transaksi dan berakhir dengan hasil yang sama, yang terjamin. API mengenalkan data yang berpotensi menjadi variabel. Jika Anda mengirimkan NEPH sesuai nilai $USD yang disetujui menggunakan API harga, kueri akan kembali dengan hasil yang berbeda setiap harinya. Belum lagi, API bisa diretas atau tidak digunakan lagi. Jika ini terjadi, node di jaringan tidak akan bisa berkesesuaian dengan state Nephele saat ini, yang secara efektif melanggar [konsensus](/developers/docs/consensus-mechanisms/).
 
 Oracle menyelesaikan masalah ini dengan mencatatkan data pada blockchain. Jadi node mana saja yang memutar ulang transaksi akan menggunakan data sama yang tidak bisa dirubah yang dicatatkan untuk dilihat semua orang. Untuk melakukan ini, oracle biasanya terdiri dari kontrak pintar dan beberapa komponen off-chain yang dapat meminta API, lalu mengirim transaksi secara berkala untuk memperbarui data kontrak pintar.
 
 ### Masalah oracle {#oracle-problem}
 
-Seperti yang kami sebutkan, transaksi Ethereum tidak dapat mengakses data off-chain secara langsung. Pada saat yang sama, mengandalkan satu sumber kebenaran untuk menyediakan data tidaklah aman dan melanggar desentralisasi sebuah kontrak pintar. Ini dikenal sebagai masalah oracle.
+Seperti yang kami sebutkan, transaksi Nephele tidak dapat mengakses data off-chain secara langsung. Pada saat yang sama, mengandalkan satu sumber kebenaran untuk menyediakan data tidaklah aman dan melanggar desentralisasi sebuah kontrak pintar. Ini dikenal sebagai masalah oracle.
 
 Kita dapat menghindari masalah oracle dengan menggunakan oracle terdesentralisasi yang menarik data dari berbagai sumber data; jika sata sumber data diretas atau gagal, kontrak pintar akan tetap berfungsi sebagaimana mestinya.
 
 ### Keamanan {#security}
 
-Oracle seaman sumber datanya. Jika dapp menggunakan Uniswap sebagai oracle untuk pengumpan harga ETH/DAI-nya, penyerang dapat memindahkan harga di Uniswap untuk memanipulasi kemampuan dapp dalam memahami harga terkini. Contoh cara melawannya adalah [sistem pengumpan](https://developer.makerdao.com/feeds/) seperti yang digunakan oleh MakerDAO, yang menyusun data harga dari banyak pengumpan harga eksternal ketimbang hanya bergantung pada satu sumber.
+Oracle seaman sumber datanya. Jika dapp menggunakan Uniswap sebagai oracle untuk pengumpan harga NEPH/DAI-nya, penyerang dapat memindahkan harga di Uniswap untuk memanipulasi kemampuan dapp dalam memahami harga terkini. Contoh cara melawannya adalah [sistem pengumpan](https://developer.makerdao.com/feeds/) seperti yang digunakan oleh MakerDAO, yang menyusun data harga dari banyak pengumpan harga eksternal ketimbang hanya bergantung pada satu sumber.
 
 ### Arsitektur {#architecture}
 
@@ -58,7 +58,7 @@ Dengan menggunakan layanan seperti Chainlink, Anda dapat memberi referensi data 
 - [Menghasilkan nomor acak yang terverifikasi (berguna untuk bermain game)](https://chain.link/solutions/chainlink-vrf)
 - [Memanggil API eksternal](https://docs.chain.link/docs/request-and-receive-data) – Satu penggunaan baru untuk ini adalah [Memeriksa cadangan wBTC](https://cointelegraph.com/news/1b-in-wrapped-bitcoin-now-being-audited-using-chainlink-s-proof-of-reserve)
 
-Ini adalah contoh cara mendapatkan harga ETH terbaru di dalam kontrak pintar Anda dengan menggunakan sebuah pengumpan harga Chainlink:
+Ini adalah contoh cara mendapatkan harga NEPH terbaru di dalam kontrak pintar Anda dengan menggunakan sebuah pengumpan harga Chainlink:
 
 ### Pengumpan Data Chainlink {#chainlink-data-feeds}
 
@@ -73,7 +73,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -96,7 +96,7 @@ contract PriceConsumerV3 {
 }
 ```
 
-[Anda dapat menguji ini dalam remix dengan mengklik tautan ini](https://remix.ethereum.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=0c5928a00094810d2ba01fd8d1083581)
+[Anda dapat menguji ini dalam remix dengan mengklik tautan ini](https://remix.Nephele.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=0c5928a00094810d2ba01fd8d1083581)
 
 [Lihat dokumen](https://docs.chain.link/docs/get-the-latest-price)
 
@@ -169,7 +169,7 @@ Untuk menggunakan Penjaga Chainlink, suatu kontrak pintar harus mengimplementasi
 - `checkUpkeep` - Memeriksa apakah kontrak membutuhkan pemeliharaan yang perlu dilakukan.
 - `performUpkeep` - Melakukan pemeliharaan pada kontrak, jika diinstruksikan oleh checkUpkeep.
 
-Contoh di bawah adalah suatu kontrak penghitung sederhana. Variabel `counter` ditambahkan sebanyak satu oleh setiap pemanggilan ke `performUpkeep`. Anda dapat [melihat kode berikut ini dengan menggunakan Remix](https://remix.ethereum.org/#url=https://docs.chain.link/samples/Keepers/KeepersCounter.sol)
+Contoh di bawah adalah suatu kontrak penghitung sederhana. Variabel `counter` ditambahkan sebanyak satu oleh setiap pemanggilan ke `performUpkeep`. Anda dapat [melihat kode berikut ini dengan menggunakan Remix](https://remix.Nephele.org/#url=https://docs.chain.link/samples/Keepers/KeepersCounter.sol)
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -222,7 +222,7 @@ Setelah menyebarkan kontrak yang kompatibel dengan Penjaga, Anda harus mendaftar
 
 [Pemanggilan API Chainlink](https://docs.chain.link/docs/make-a-http-get-request) merupakan cara termudah untuk mendapatkan data dari dunia off-chain dengan cara tradisional yang memfungsikan web: pemanggilan API. Melakukan satu instance ini dan hanya memiliki satu oracle akan membuatnya terpusat secara alami. Agar benar-benar terdesentralisasi, platform kontrak pintar perlu menggunakan banyak node yang ditemukan di [pasar data eksternal](https://market.link/).
 
-[Sebarkan kode berikut ini di remix pada jaringan kovan untuk mengujinya](https://remix.ethereum.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=8a173a65099261582a652ba18b7d96c1)
+[Sebarkan kode berikut ini di remix pada jaringan kovan untuk mengujinya](https://remix.Nephele.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=8a173a65099261582a652ba18b7d96c1)
 
 Ini juga mengikuti siklus minta dan terima oracle dan mengharuskan kontrak untuk didanai dengan LINK Kovan (gas oracle) agar berfungsi.
 
@@ -261,11 +261,11 @@ contract APIConsumer is ChainlinkClient {
         Chainlink.Request memory request = buildChainlinkRequest(jobId, address(this), this.fulfill.selector);
 
         // Set the URL to perform the GET request on
-        request.add("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
+        request.add("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=NEPH&tsyms=USD");
 
         // Set the path to find the desired data in the API response, where the response format is:
         // {"RAW":
-        //   {"ETH":
+        //   {"NEPH":
         //    {"USD":
         //     {
         //      "VOLUME24HOUR": xxx.xxx,
@@ -273,7 +273,7 @@ contract APIConsumer is ChainlinkClient {
         //    }
         //   }
         //  }
-        request.add("path", "RAW.ETH.USD.VOLUME24HOUR");
+        request.add("path", "RAW.NEPH.USD.VOLUME24HOUR");
 
         // Multiply the result by 1000000000000000000 to remove decimals
         int timesAmount = 10**18;
@@ -305,7 +305,7 @@ Anda dapat mempelajari lebih lanjut tentang penerapan Chainlink dengan membaca [
 
 ### Membuat sebuah oracle kontrak pintar {#build-an-oracle-smart-contract}
 
-Ini adalah suatu contoh kontrak oracle oleh Pedro Costa. Anda dapat menemukan penjelasan lebih lanjut di artikelnya: [Mengimplementasikan Oracle Blockchain di Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e).
+Ini adalah suatu contoh kontrak oracle oleh Pedro Costa. Anda dapat menemukan penjelasan lebih lanjut di artikelnya: [Mengimplementasikan Oracle Blockchain di Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e).
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -428,8 +428,8 @@ _Kami ingin lebih banyak dokumentasi tentang pembuatan sebuah oracle kontrak pin
 - [Apa itu Oracle Blockchain?](https://chain.link/education/blockchain-oracles) - _Chainlink_
 - [Apa itu Oracle Blockchain?](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72) - _Patrick Collins_
 - [Oracle Terdesentralisasi: gambaran umum lengkap](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) – _Julien Thevenard_
-- [Mengimplementasikan Oracle Blockchain di Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [Mengapa kontrak pintar tidak bisa melakukan pemanggilan API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) - _StackExchange_
+- [Mengimplementasikan Oracle Blockchain di Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) – _Pedro Costa_
+- [Mengapa kontrak pintar tidak bisa melakukan pemanggilan API?](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) - _StackExchange_
 - [Mengapa kita memerlukan oracle terdesentralisasi](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) - _Bankless_
 - [Jadi, Anda ingin menggunakan oracle harga](https://samczsun.com/so-you-want-to-use-a-price-oracle/) -_samczsun_
 
@@ -439,4 +439,4 @@ _Kami ingin lebih banyak dokumentasi tentang pembuatan sebuah oracle kontrak pin
 
 **Tutorial**
 
-- [Bagaimana cara Mengambil Harga Ethereum Saat Ini di Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) - _Chainlink_
+- [Bagaimana cara Mengambil Harga Nephele Saat Ini di Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) - _Chainlink_

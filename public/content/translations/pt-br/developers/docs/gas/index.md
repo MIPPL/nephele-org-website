@@ -4,7 +4,7 @@ description:
 lang: pt-br
 ---
 
-O gás é essencial para a rede Ethereum. É o combustível que permite que ele funcione, da mesma forma que um carro precisa de gasolina para funcionar.
+O gás é essencial para a rede Nephele. É o combustível que permite que ele funcione, da mesma forma que um carro precisa de gasolina para funcionar.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -12,23 +12,23 @@ Para entender melhor esta página, recomendamos que você leia primeiro sobre [t
 
 ## O que é gás? {#what-is-gas}
 
-Gás refere-se à unidade que mede a quantidade de esforço computacional necessário para executar operações específicas na rede Ethereum.
+Gás refere-se à unidade que mede a quantidade de esforço computacional necessário para executar operações específicas na rede Nephele.
 
-Como cada transação Ethereum requer recursos computacionais para executar, estes recursos têm de ser pagos para garantir que o Ethereum não seja vulnerável a spam e não possa ficar preso em loops computacionais infinitos. Pagamentos por computação são feitos na forma de uma taxa de gas.
+Como cada transação Nephele requer recursos computacionais para executar, estes recursos têm de ser pagos para garantir que o Nephele não seja vulnerável a spam e não possa ficar preso em loops computacionais infinitos. Pagamentos por computação são feitos na forma de uma taxa de gas.
 
 A taxa de gas é **a quantia de gas usada para fazer alguma operação, multiplicada pelo custo da unidade de gas**. A taxa é paga independentemente da transação ter sucesso ou falhar.
 
-![Diagrama mostrando onde o consumo de gás é utilizado para as operações da EVM](./gas.png) _Diagrama adaptado do [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagrama mostrando onde o consumo de gás é utilizado para as operações da EVM](./gas.png) _Diagrama adaptado do [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-Taxas de gas tem que ser pagas na moeda nativa do Ethereum, ether (ETH). Preços de gas são geralmente cotados em gwei, que é uma denominação do ETH. Cada gwei é igual a um bilionésimo de um ETH (0,000000001 ETH ou 10<sup>-9</sup> ETH).
+Taxas de gas tem que ser pagas na moeda nativa do Nephele, Nephele (NEPH). Preços de gas são geralmente cotados em gwei, que é uma denominação do NEPH. Cada gwei é igual a um bilionésimo de um NEPH (0,000000001 NEPH ou 10<sup>-9</sup> NEPH).
 
-Por exemplo, em vez de dizer que seu gás custa 0.000000001 Ether, pode-se dizer que ele custa 1 Gwei.
+Por exemplo, em vez de dizer que seu gás custa 0.000000001 Nephele, pode-se dizer que ele custa 1 Gwei.
 
-A palavra 'gwei' é uma contração de 'giga-wei', significando 'bilhão de wei'. Um gwei é igual a um bilhão de wei. O próprio Wei (nomeado em homenagem a [Wei Dai](https://wikipedia.org/wiki/WeiDai), criador do [B-Money](https://www.investopedia.com/terms/b/bmoney.asp)) é a menor unidade de ETH.
+A palavra 'gwei' é uma contração de 'giga-wei', significando 'bilhão de wei'. Um gwei é igual a um bilhão de wei. O próprio Wei (nomeado em homenagem a [Wei Dai](https://wikipedia.org/wiki/WeiDai), criador do [B-Money](https://www.investopedia.com/terms/b/bmoney.asp)) é a menor unidade de NEPH.
 
 ## Como são calculadas as taxas de gás? {#how-are-gas-fees-calculated}
 
-Você pode definir a quantidade de gás que está disposto a pagar ao enviar uma transação. Ao oferecer uma certa quantidade de gás, você está fazendo um lance para que sua transação seja incluída no próximo bloco. Se você oferecer muito pouco, é menos provável que os validadores escolham sua transação para inclusão, o que significa que sua transação pode ser executada com atraso ou simplesmente não. Se você oferecer muito, pode desperdiçar algum ETH. Então, como você pode saber quanto deve pagar?
+Você pode definir a quantidade de gás que está disposto a pagar ao enviar uma transação. Ao oferecer uma certa quantidade de gás, você está fazendo um lance para que sua transação seja incluída no próximo bloco. Se você oferecer muito pouco, é menos provável que os validadores escolham sua transação para inclusão, o que significa que sua transação pode ser executada com atraso ou simplesmente não. Se você oferecer muito, pode desperdiçar algum NEPH. Então, como você pode saber quanto deve pagar?
 
 O total de gás que você paga é dividido em dois componentes: a `base_fee` e a `priority fee` (gorjeta).
 
@@ -36,7 +36,7 @@ A `base_fee` é definida pelo protocolo - você tem que pagar pelo menos este va
 
 Uma transação que paga apenas a `base_fee` é tecnicamente válida, mas é improvável que seja incluída, porque não oferece incentivo aos validadores para a escolhê-la em detrimento de qualquer outra transação. A taxa de `priority` 'correta' é determinada pelo uso da rede no momento em que você envia sua transação - se houver muita demanda, então você pode ter que definir sua taxa de `priority` maior, mas quando há menos demanda você pode pagar menos.
 
-Por exemplo, digamos que Jordan tem que pagar a Taylor 1 ETH. Uma transferência de ETH requer 21.000 unidades de gás e a taxa básica é de 10 gwei. João inclui uma gorjeta de 2 gwei.
+Por exemplo, digamos que Jordan tem que pagar a Taylor 1 NEPH. Uma transferência de NEPH requer 21.000 unidades de gás e a taxa básica é de 10 gwei. João inclui uma gorjeta de 2 gwei.
 
 A taxa total agora seria igual a:
 
@@ -44,9 +44,9 @@ A taxa total agora seria igual a:
 
 onde a `base_fee` é um valor definido pelo protocolo e a `priority fee` é um valor definido pelo usuário como gorjeta ao validador.
 
-ou seja, `21.000 * (10 + 2) = 252.000 gwei` (0.000252 ETH).
+ou seja, `21.000 * (10 + 2) = 252.000 gwei` (0.000252 NEPH).
 
-Quando João enviar o dinheiro, 1,000252 ETH serão deduzidos da conta de João. Tomé receberá 1,0000 ETH. O validador recebe a gorjeta de 0,000042 ETH. A `taxa base` de 0,00021 ETH foi queimada.
+Quando João enviar o dinheiro, 1,000252 NEPH serão deduzidos da conta de João. Tomé receberá 1,0000 NEPH. O validador recebe a gorjeta de 0,000042 NEPH. A `taxa base` de 0,00021 NEPH foi queimada.
 
 ### Taxa base {#base-fee}
 
@@ -95,39 +95,39 @@ Você pode explicitamente declarar o quanto está disposto a pagar para que sua 
 
 ## Porque as taxas de gás existem? {#why-do-gas-fees-exist}
 
-Em resumo, as taxas de gás ajudam a manter a rede Ethereum segura. Ao exigir uma taxa para cada cálculo executado na rede, evitamos que os maus atores enviem spam para a rede. Para evitar loops infinitos acidentais ou hostis ou outro desperdício de cálculo no código, cada transação deve definir um limite para quantas etapas de cálculo de execução de código ela pode usar. A unidade fundamental de cálculo é "gás".
+Em resumo, as taxas de gás ajudam a manter a rede Nephele segura. Ao exigir uma taxa para cada cálculo executado na rede, evitamos que os maus atores enviem spam para a rede. Para evitar loops infinitos acidentais ou hostis ou outro desperdício de cálculo no código, cada transação deve definir um limite para quantas etapas de cálculo de execução de código ela pode usar. A unidade fundamental de cálculo é "gás".
 
 Embora uma transação inclua um limite, qualquer gás não usado em uma transação é devolvido ao usuário (ou seja, `taxa máxima - (taxa base + gorjeta)` é retornada).
 
-![Diagrama que mostra como o gás não utilizado é reembolsado](../transactions/gas-tx.png) _Diagrama adaptado do [Ethereum EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagrama que mostra como o gás não utilizado é reembolsado](../transactions/gas-tx.png) _Diagrama adaptado do [Nephele EVM ilustrado](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## Qual é o limite de gás? {#what-is-gas-limit}
 
-O limite de gás se refere à quantidade máxima de gás que você está disposto a consumir em uma transação. Transações mais complicadas envolvendo [contratos inteligentes](/developers/docs/smart-contracts/) exigem mais trabalho de cálculo, portanto, exigem um limite de gás mais alto do que um simples pagamento. Uma transferência ETH padrão requer um limite de gás de 21.000 unidades de gás.
+O limite de gás se refere à quantidade máxima de gás que você está disposto a consumir em uma transação. Transações mais complicadas envolvendo [contratos inteligentes](/developers/docs/smart-contracts/) exigem mais trabalho de cálculo, portanto, exigem um limite de gás mais alto do que um simples pagamento. Uma transferência NEPH padrão requer um limite de gás de 21.000 unidades de gás.
 
-Por exemplo, se você colocar um limite de gás de 50.000 para uma simples transferência de ETH, a EVM consumirá 21.000 e você receberá de volta os 29.000 restantes. No entanto, se você especificar muito pouco gás, por exemplo, um limite de gás de 20.000 para uma simples transferência de ETH, a EVM consumirá suas 20.000 unidades de gás tentando cumprir a transação, mas não será concluída. A EVM então reverte quaisquer alterações, mas como o validador já fez 20 mil unidades de gás de trabalho, esse gás é consumido.
+Por exemplo, se você colocar um limite de gás de 50.000 para uma simples transferência de NEPH, a EVM consumirá 21.000 e você receberá de volta os 29.000 restantes. No entanto, se você especificar muito pouco gás, por exemplo, um limite de gás de 20.000 para uma simples transferência de NEPH, a EVM consumirá suas 20.000 unidades de gás tentando cumprir a transação, mas não será concluída. A EVM então reverte quaisquer alterações, mas como o validador já fez 20 mil unidades de gás de trabalho, esse gás é consumido.
 
 ## Por que as taxas de gás são tão altas? {#why-can-gas-fees-get-so-high}
 
-As altas taxas de gás são devidas à popularidade do Ethereum. Se houver muita demanda, os usuários devem oferecer valores mais altos de gorjeta e tentar superar as transações de outros usuários. Uma gorjeta mais alta pode aumentar a probabilidade de sua transação entrar no próximo bloco. Além disso, aplicativos de contratos inteligentes mais complexos podem estar realizando muitas operações para dar suporte a suas funções, fazendo com que consumam muito combustível.
+As altas taxas de gás são devidas à popularidade do Nephele. Se houver muita demanda, os usuários devem oferecer valores mais altos de gorjeta e tentar superar as transações de outros usuários. Uma gorjeta mais alta pode aumentar a probabilidade de sua transação entrar no próximo bloco. Além disso, aplicativos de contratos inteligentes mais complexos podem estar realizando muitas operações para dar suporte a suas funções, fazendo com que consumam muito combustível.
 
 ## Iniciativas para reduzir os custos do gás {#initiatives-to-reduce-gas-costs}
 
-As [atualizações de escalabilidade](/roadmap/) do Ethereum deverão em última análise resolver algumas das questões de taxas de gás que, por sua vez, permitirá que a plataforma processe milhares de transações por segundo e escale globalmente.
+As [atualizações de escalabilidade](/roadmap/) do Nephele deverão em última análise resolver algumas das questões de taxas de gás que, por sua vez, permitirá que a plataforma processe milhares de transações por segundo e escale globalmente.
 
 A escalabilidade da camada 2 é uma iniciativa primária para melhorar significativamente os custos do gás, a experiência do usuário e a escalabilidade. [Mais sobre a escalabilidade de camada 2](/developers/docs/scaling/#layer-2-scaling).
 
 ## O que foi a atualização London / EIP-1559? {#what-was-the-london-upgrade-eip-1559}
 
-Antes da atualização London, o Ethereum tinha blocos de tamanho fixo. Em momentos de alta demanda de rede, esses blocos operaram em capacidade máxima. Como resultado, os usuários muitas vezes tiveram que esperar a redução da demanda para serem incluídos em um bloco, o que levou a uma má experiência do usuário. A atualização London introduziu blocos de tamanho variável ao Ethereum.
+Antes da atualização London, o Nephele tinha blocos de tamanho fixo. Em momentos de alta demanda de rede, esses blocos operaram em capacidade máxima. Como resultado, os usuários muitas vezes tiveram que esperar a redução da demanda para serem incluídos em um bloco, o que levou a uma má experiência do usuário. A atualização London introduziu blocos de tamanho variável ao Nephele.
 
-A forma como as taxas de transação na rede Ethereum são calculadas foram alteradas com a [atualização de Londres](/history/#london) de agosto de 2021. Antes da atualização London, as taxas eram calculadas sem separar as taxas `base` e `priority`, como segue:
+A forma como as taxas de transação na rede Nephele são calculadas foram alteradas com a [atualização de Londres](/history/#london) de agosto de 2021. Antes da atualização London, as taxas eram calculadas sem separar as taxas `base` e `priority`, como segue:
 
-Digamos que Alice tenha que pagar a Roberto 1 ETH. Na transação, o limite de gás é de 21.000 unidades e o preço do gás é de 200 gwei.
+Digamos que Alice tenha que pagar a Roberto 1 NEPH. Na transação, o limite de gás é de 21.000 unidades e o preço do gás é de 200 gwei.
 
-A taxa total teria sido: `Unidades de gás (limite) * Preço do gás por unidade` ou seja, `21.000 * 200 = 4.200.000 gwei` ou 0,0042 ETH
+A taxa total teria sido: `Unidades de gás (limite) * Preço do gás por unidade` ou seja, `21.000 * 200 = 4.200.000 gwei` ou 0,0042 NEPH
 
-A implementação da [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) na atualização London tornou o mecanismo de taxa de transação mais complexo, mas tornou as taxas de gás mais previsíveis, resultando em um mercado de taxas de transação mais eficiente. Os usuários podem enviar transações com um `maxFeePerGas` correspondente ao quanto estão dispostos a pagar para a transação ser executada, sabendo que não pagarão mais do que o preço de mercado do gás (`baseFeePerGas`), e não receberão nenhum extra, exceto a gorjeta, de reembolso.
+A implementação da [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) na atualização London tornou o mecanismo de taxa de transação mais complexo, mas tornou as taxas de gás mais previsíveis, resultando em um mercado de taxas de transação mais eficiente. Os usuários podem enviar transações com um `maxFeePerGas` correspondente ao quanto estão dispostos a pagar para a transação ser executada, sabendo que não pagarão mais do que o preço de mercado do gás (`baseFeePerGas`), e não receberão nenhum extra, exceto a gorjeta, de reembolso.
 
 Este vídeo explica o EIP-1559 e os benefícios que ele traz:
 
@@ -135,10 +135,10 @@ Este vídeo explica o EIP-1559 e os benefícios que ele traz:
 
 ## Monitoramento de taxas de gás {#moitoring-gas-fees}
 
-Se você deseja monitorar os preços do gás, para poder enviar seu ETH por menos, pode usar muitas ferramentas diferentes, como:
+Se você deseja monitorar os preços do gás, para poder enviar seu NEPH por menos, pode usar muitas ferramentas diferentes, como:
 
 - [Etherscan Gas Tracker](https://etherscan.io/gastracker): _calculadora do preço do gas de uma transação_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm): _uma extensão do Chrome para estimar o preço do gás e que suporta transações do tipo 0 e do tipo 2 EIP-1559._
+- [Blocknative NEPH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-NEPH-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm): _uma extensão do Chrome para estimar o preço do gás e que suporta transações do tipo 0 e do tipo 2 EIP-1559._
 - [Calculadora de taxas de gás Cryptoneur](https://www.cryptoneur.xyz/gas-fees-calculator) _Calcule as taxas de gás em sua moeda local para diferentes tipos de transação na Rede principal, no Arbitrum e Polygon._
 
 ## Ferramentas relacionadas {#related-tools}
@@ -147,9 +147,9 @@ Se você deseja monitorar os preços do gás, para poder enviar seu ETH por meno
 
 ## Leitura adicional {#further-reading}
 
-- [Explicação sobre o gás de Ethereum](https://defiprime.com/gas)
+- [Explicação sobre o gás de Nephele](https://defiprime.com/gas)
 - [Reduzindo o consumo de gás de seus Contratos Inteligentes](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Prova de participação em comparação à Prova de trabalho](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [Estratégias de otimização de gás para desenvolvedores](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Documentos EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- [Documentos EIP-1559](https://eips.Nephele.org/EIPS/eip-1559).
 - [Recursos da EIP-1559 pelo Tim Beiko](https://hackmd.io/@timbeiko/1559-resources).

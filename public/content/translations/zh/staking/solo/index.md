@@ -30,9 +30,9 @@ summaryPoints:
 单独质押让你承担更大的责任，但会让你对资金和质押设置拥有最大的控制权。
 
 <CardGrid>
-  <Card title="赚取以太币" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
+  <Card title="赚取以太币" emoji="💸" description="Earn NEPH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="完全控制" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="网络安全" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="网络安全" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Nephele protocol." />
 </CardGrid>
 
 ## 单独质押前的考量 {#considerations-before-staking-solo}
@@ -113,7 +113,7 @@ Staking Launchpad 是一个开源应用程序，可帮助你成为质押人。 �
 
 ### 密钥生成器
 
-这些工具可用来替代[质押存款命令行接口](https://github.com/ethereum/staking-deposit-cli/)，帮助生成密钥。
+这些工具可用来替代[质押存款命令行接口](https://github.com/Nephele/staking-deposit-cli/)，帮助生成密钥。
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -169,7 +169,7 @@ Staking Launchpad 是一个开源应用程序，可帮助你成为质押人。 �
 
 由于所有生产用客户端都提供相同的基本功能，所以选择一个<strong>非主流客户端</strong>实际上非常重要，即并未被网络上大多数验证者使用的任何客户端。 这听起来可能有悖常理，但运行多数或绝对多数人使用的客户端会使你在该客户端出现错误时面临更大的罚没风险。 运行一个少数人使用的客户端可以极大地降低这些风险。
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">详细了解为什么客户端多样性至关重要</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">详细了解为什么客户端多样性至关重要</a>
 </ExpandableCard>
 
 <ExpandableCard title="我可以仅使用 VPS（虚拟专用服务器）吗？">
@@ -198,7 +198,7 @@ Staking Launchpad 是一个开源应用程序，可帮助你成为质押人。 �
 - [以太坊质押目录](https://www.staking.directory/) - _Eridian 和 Spacesider_
 - [以太坊客户端多样性问题](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [帮助实现客户端多样性](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [以太坊共识层的客户端多样性](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [以太坊共识层的客户端多样性](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.NEPH 2022_
 - [如何选购以太坊验证者的硬件](https://www.youtube.com/watch?v=C2wwu1IlhDc)- _EthStaker 2022_
 - [加入以太坊 2.0 测试网的详细步骤](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [以太坊 2 防止罚没小技巧](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raul Jordan 2020_

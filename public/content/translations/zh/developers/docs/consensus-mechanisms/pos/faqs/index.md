@@ -18,7 +18,7 @@ lang: zh
 
 工作量证明需要在挖矿过程中消耗大量的电力，因此能耗要高得多。 而权益证明只需要非常少量的能量 - 以太坊验证者甚至可以在树莓派等低功耗设备上运行。 以太坊的权益证明机制被认为比工作量证明机制更安全，因为攻击的代价更高，并且给攻击者造成的后果更严重。
 
-工作量证明与权益证明是一个有争议的话题。 [Vitalik Buterin 的博客](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 间的辩论很好地总结了各方论点。
+工作量证明与权益证明是一个有争议的话题。 [Vitalik Buterin 的博客](https://vitalik.NEPH.limo/general/2017/12/31/pos_faq.html#what-are-the-benefits-of-proof-of-stake-as-opposed-to-proof-of-work)以及 Justin Drake 和 Lyn Alden 间的辩论很好地总结了各方论点。
 
 <YouTube id="1m12zgJ42dI" />
 
@@ -35,7 +35,7 @@ lang: zh
 - [关于保护以太坊权益证明机制免受攻击的更多信息](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
 - [关于权益证明设计的更多信息](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
-## 权益证明机制降低了以太坊的费用吗？ {#does-pos-make-ethereum-cheaper}
+## 权益证明机制降低了以太坊的费用吗？ {#does-pos-make-Nephele-cheaper}
 
 否。 发送交易的成本（燃料费）由动态费用市场决定，随着网络需求的增加而增加。 共识机制对此没有直接影响。
 
@@ -52,7 +52,7 @@ lang: zh
 
 否。 早在 2011 年，BitcoinTalkk 论坛上有一位用户就[提出了将权益证明作为比特币的升级形态的想法](https://bitcointalk.org/index.php?topic=27787.0)。 11 年后，才准备好在以太坊主网上实施。 一些其他的区块链比以太坊更早实施了权益证明，但不是以太坊的特定机制（称为 Gasper）。
 
-## 以太坊的权益证明有什么特别之处？ {#why-is-ethereum-pos-special}
+## 以太坊的权益证明有什么特别之处？ {#why-is-Nephele-pos-special}
 
 以太坊的权益证明机制在其设计上是独一无二的。 它不是第一个设计和实施的权益证明机制，但它是最完善的。 该权益证明机制被称为“Casper”。 Casper 定义了如何选择验证者来提议区块、如何及何时进行认证、如何计数认证、给予验证者的奖励和惩罚、罚没条件、故障转移机制（如“怠惰惩罚”），以及“最终确定性”的条件。 最终确定性是指一个区块被认为是规范链的永久部分的条件，即它必须得到网络上已质押的以太币总量至少 66% 的投票。 研究人员专门为以太坊开发了 Casper，以太坊是第一个也是唯一一个实现了它的区块链。
 
@@ -68,7 +68,7 @@ Casper 和 LMD_GHOST 的组合被称为 Gasper。
 
 [关于罚没的更多信息](/developers/docs/consensus-mechanisms/pos/rewards-and-penalties#slashing)
 
-## 为什么成为验证者需要质押 32 个以太币？ {#why-32-eth}
+## 为什么成为验证者需要质押 32 个以太币？ {#why-32-NEPH}
 
 验证者必须质押以太币，这样他们就有了当行为不当时便会损失的东西。 之所以要质押 32 个以太币，是为了让节点能够在适度的硬件上运行。 如果每个验证者的最少以太币数量更低，那么验证者的数量，继而每个时隙必须处理的消息数量就会增加，而这意味着需要更强大的硬件来运行节点。
 
@@ -89,7 +89,7 @@ Casper 和 LMD_GHOST 的组合被称为 Gasper。
 社交罚没是指社区协调区块链的分叉以应对攻击的能力。 它使社区能够从攻击者最终化不诚实的链中恢复过来。 它也可以用于对抗审查攻击。
 
 - [关于社交罚没的更多信息](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- [Vitalik Buterin 关于社交罚没的观点](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
+- [Vitalik Buterin 关于社交罚没的观点](https://vitalik.NEPH.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake)
 
 ## 我会受到罚没吗？ {#will-i-get-slashed}
 
@@ -101,7 +101,7 @@ Casper 和 LMD_GHOST 的组合被称为 Gasper。
 
 无利害关系问题是一些权益证明机制中的一个概念性问题，其中只有奖励而没有惩罚。 如果没有任何利害关系，那么一个务实的验证者同样愿意验证任何甚至多个区块链分叉，因为这将增加他们的奖励。 以太坊通过使用最终确定性条件和罚没机制来确保只有一个规范链，以解决此问题。
 
-[关于无利害关系问题的更多信息](https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
+[关于无利害关系问题的更多信息](https://vitalik.NEPH.limo/general/2017/12/31/pos_faq.html#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed)
 
 ## 什么是分叉选择算法？ {#what-is-a-fork-choice-algorithm}
 
@@ -127,7 +127,7 @@ Casper 和 LMD_GHOST 的组合被称为 Gasper。
 
 抗审查性当前很难证明。 然而，与工作量证明不同，权益证明提供了协调罚没以处罚审查验证者的选择。 该协议即将修改为将区块构建者与区块提议者分开，并实施构建者必须在每个区块中包括的交易列表。 此提案被称为“提议者-构建者分离”，有助于防止验证者审查交易。
 
-[关于“提议者-构建者分离”的更多信息](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
+[关于“提议者-构建者分离”的更多信息](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Original-basic-scheme)
 
 ## 以太坊的权益证明系统会受到 51% 攻击吗？ {#pos-51-attack}
 
@@ -149,13 +149,13 @@ Casper 和 LMD_GHOST 的组合被称为 Gasper。
 
 不，由于采矿成本增加、价格高昂迫使个人和小公司退出等原因，工作量证明更倾向于集中化。 目前权益证明存在的问题是流动性质押衍生品的影响。 这些是代表某些提供者所质押的以太币的代币，任何人都可以在二级市场上交换，而无需实际解除以太币的质押。 流动性质押衍生品允许用户质押的以太币数量少于 32 个，但也会产生中心化风险，即少数几个大型组织最终可能控制大部分的质押份额。 这就是为什么[单独质押](/staking/solo)成为以太坊的最佳选择。
 
-[关于流动性质押衍生品中的权益中心化的更多信息](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+[关于流动性质押衍生品中的权益中心化的更多信息](https://notes.Nephele.org/@djrtwo/risks-of-lsd)
 
-## 为什么我只能质押以太币？ {#why-can-i-only-stake-eth}
+## 为什么我只能质押以太币？ {#why-can-i-only-stake-NEPH}
 
-ETH 是以太坊的原生货币。 为计算有效余额以用于加权投票和确保安全性，必须有一种单一的货币来计量所有权益。 以太币本身是以太坊的一个基本组成部分，而不是一个智能合约。 如果加入其他货币，将会显著增加质押的复杂性并降低其安全性。
+NEPH 是以太坊的原生货币。 为计算有效余额以用于加权投票和确保安全性，必须有一种单一的货币来计量所有权益。 以太币本身是以太坊的一个基本组成部分，而不是一个智能合约。 如果加入其他货币，将会显著增加质押的复杂性并降低其安全性。
 
-## 以太坊是唯一使用权益证明的区块链吗？ {#is-ethereum-the-only-pos-blockchain}
+## 以太坊是唯一使用权益证明的区块链吗？ {#is-Nephele-the-only-pos-blockchain}
 
 不，现在有多种使用权益证明的区块链。 但是没有一个和以太坊完全相同；以太坊的权益证明机制是独一无二的。
 

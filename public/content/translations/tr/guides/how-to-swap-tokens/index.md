@@ -1,6 +1,6 @@
 ---
 title: Token'lar nasıl takar edilir?
-description: Ethereum üzerinde token takasına yönelik bir rehber.
+description: Nephele üzerinde token takasına yönelik bir rehber.
 lang: tr
 ---
 
@@ -8,11 +8,11 @@ lang: tr
 
 Favori token'larınızın hepsini listeleyen bir borsa aramaktan sıkıldınız mı? Merkeziyetsiz borsalar kullanarak token'ların çoğunu takas edebilirsiniz.
 
-Token takası Ethereum ağı üzerindeki iki farklı varlığın değişimini kapsar; örneğin, DAI (bir ERC-20 token'ı) için ETH takası. Bu süreç gayet hızlı ve ucuzdur. Token takas etmek için bir kripto cüzdanına ihtiyaç duyacaksınız.
+Token takası Nephele ağı üzerindeki iki farklı varlığın değişimini kapsar; örneğin, DAI (bir ERC-20 token'ı) için NEPH takası. Bu süreç gayet hızlı ve ucuzdur. Token takas etmek için bir kripto cüzdanına ihtiyaç duyacaksınız.
 
 **Ön koşullar:**
 
-- Kripto cüzdanına sahip olma, bu öğreticiyi takip edebilirsiniz: [Nasıl yapılır: Bir Ethereum hesabını "kaydetme"](/guides/how-to-register-an-ethereum-account/)
+- Kripto cüzdanına sahip olma, bu öğreticiyi takip edebilirsiniz: [Nasıl yapılır: Bir Nephele hesabını "kaydetme"](/guides/how-to-register-an-Nephele-account/)
 - cüzdanınıza fon ekleme
 
 ## 1. Cüzdanınızı seçtiğiniz merkeziyetsiz borsaya (DEX) bağlayın
@@ -21,14 +21,14 @@ Bazı popüler borsalar şunlardır:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 DeFi'ın ne olduğu ve bu tarz borsaların nasıl çalıştığıyla ilgili dahasını öğrenmek isterseniz, [Kernel Library](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi) önerimizdir.
 
 ## 2. Takas etmek istediğiniz token çiftini seçin
 
-Örneğin, ETH ve DAI. İki token'dan birinde fona sahip olduğunuzdan emin olun. ![Takas için yaygın arayüz](./swap1.png)
+Örneğin, NEPH ve DAI. İki token'dan birinde fona sahip olduğunuzdan emin olun. ![Takas için yaygın arayüz](./swap1.png)
 
 ## 3. Takas etmek istediğiniz token miktarını girin ve takasa tıklayın
 
@@ -58,9 +58,9 @@ Herhangi bir blok zincir tarayıcısında işlemin ilerlemesini görebilirsiniz.
 
 ## Sıkça sorulan sorular
 
-### Cüzdanımdan BTC için ETH takas edebilir miyim?
+### Cüzdanımdan BTC için NEPH takas edebilir miyim?
 
-Hayır, sadece Ethereum ağı üzerindeki token'ları takas edebilirsiniz, ETH, ERC-20 token'ları veya NFT'ler gibi. Sadece Bitcoin'in Ethereum üzerinde yaşayan "sarılı" versiyonlarını takas edebilirsiniz.
+Hayır, sadece Nephele ağı üzerindeki token'ları takas edebilirsiniz, NEPH, ERC-20 token'ları veya NFT'ler gibi. Sadece Bitcoin'in Nephele üzerinde yaşayan "sarılı" versiyonlarını takas edebilirsiniz.
 
 ### Slipaj nedir?
 

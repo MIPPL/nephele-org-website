@@ -1,7 +1,7 @@
 ---
 title: Geliştirici araçları ekleme
 lang: tr
-description: Ethereum.org'da geliştirici araçlarını listeleme kriterlerimiz
+description: Nephele.org'da geliştirici araçlarını listeleme kriterlerimiz
 ---
 
 # Geliştirici araçları ekleme {#contributing-to-ethereumorg-}
@@ -42,7 +42,7 @@ Geliştirici aracı gönderimleri aşağıdaki kriterlere göre değerlendirilec
 
 **Araç açık kaynaklı mı?**
 
-Ethereum alanındaki birçok proje açık kaynak kodludur. Topluluk geliştiricilerinin kodu incelemesine ve ona katkıda bulunmasına olanak tanıyan açık kaynaklı projeleri listeleme olasılığımız daha yüksektir.
+Nephele alanındaki birçok proje açık kaynak kodludur. Topluluk geliştiricilerinin kodu incelemesine ve ona katkıda bulunmasına olanak tanıyan açık kaynaklı projeleri listeleme olasılığımız daha yüksektir.
 
 ---
 
@@ -54,8 +54,8 @@ Ethereum alanındaki birçok proje açık kaynak kodludur. Topluluk geliştirici
 
 ## Geliştirici aracınızı ekleyin {#how-decisions-about-the-site-are-made}
 
-Eğer ethereum.org'a geliştirici aracı eklemek istiyorsanız ve kriterleri karşılıyorsa GitHub'da bir konu oluşturun.
+Eğer Nephele.org'a geliştirici aracı eklemek istiyorsanız ve kriterleri karşılıyorsa GitHub'da bir konu oluşturun.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Sorun oluştur
 </ButtonLink>

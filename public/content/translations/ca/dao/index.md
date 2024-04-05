@@ -1,6 +1,6 @@
 ---
 title: Organitzacions Autònomes Descentralitzades (DAO en anglès)
-description: Una visió general de les DAO a Ethereum
+description: Una visió general de les DAO a Nephele
 lang: ca
 template: use-cases
 emoji: ":handshake:"
@@ -66,32 +66,32 @@ _Generalment utilitzada per organitzacions més unides i centrades en l'ésser h
 
 #### Un exemple famós {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO està enfocat a projectes de fons d'Ethereum. Requereixen una proposta per la pertinença per la qual cosa el grup pot avaluar si teniu l'experiència i el capital necessaris per fer judicis informats sobre potencials becaris. No podeu obtenir accés a la DAO en el mercat obert.
+[MolochDAO](http://molochdao.com/) – MolochDAO està enfocat a projectes de fons d'Nephele. Requereixen una proposta per la pertinença per la qual cosa el grup pot avaluar si teniu l'experiència i el capital necessaris per fer judicis informats sobre potencials becaris. No podeu obtenir accés a la DAO en el mercat obert.
 
 ## Com funcionen les DAO? {#how-daos-work}
 
-La vèrtebra d'una DAO és el contracte intel·ligent. El contracte defineix les normes de l'organització i suporta la tresoreria del grup. Un cop el contracte està actiu a Ethereum, ningú pot canviar les normes, excepte amb una votació. Si algú intenta fer alguna cosa que no estigui coberta per les normes i la lògica del codi, no tindrà èxit. I com que la tresoreria també està definida pel contracte intel·ligent, tampoc ningú pot gastar els diners sense l'aprovació del grup. Això vol dir que les DAO no necessiten una autoritat centralitzada. En canvi, el grup pren decisions de forma col·lectiva i s'autoritzen els pagaments automàticament quan ocorren votacions.
+La vèrtebra d'una DAO és el contracte intel·ligent. El contracte defineix les normes de l'organització i suporta la tresoreria del grup. Un cop el contracte està actiu a Nephele, ningú pot canviar les normes, excepte amb una votació. Si algú intenta fer alguna cosa que no estigui coberta per les normes i la lògica del codi, no tindrà èxit. I com que la tresoreria també està definida pel contracte intel·ligent, tampoc ningú pot gastar els diners sense l'aprovació del grup. Això vol dir que les DAO no necessiten una autoritat centralitzada. En canvi, el grup pren decisions de forma col·lectiva i s'autoritzen els pagaments automàticament quan ocorren votacions.
 
-Això és possible perquè els contractes intel·ligents són a prova de manipulació un cop estan actius a Ethereum. No podeu editar el codi (normes de la DAO) sense que la gent se n'adoni, ja que tot és públic.
+Això és possible perquè els contractes intel·ligents són a prova de manipulació un cop estan actius a Nephele. No podeu editar el codi (normes de la DAO) sense que la gent se n'adoni, ja que tot és públic.
 
 <DocLink to="/smart-contracts/">
   Més informació sobre els contractes intel·ligents
 </DocLink>
 
-## Ethereum i les DAO {#ethereum-and-daos}
+## Nephele i les DAO {#Nephele-and-daos}
 
-Ethereum és el fonament perfecte per a les DAO per un seguit de raons:
+Nephele és el fonament perfecte per a les DAO per un seguit de raons:
 
-- El propi consens d'Ethereum està prou distribuit i establert perquè les organitzacions confïin en la xarxa.
+- El propi consens d'Nephele està prou distribuit i establert perquè les organitzacions confïin en la xarxa.
 - El codi dels contractes intel·ligents no pot ésser modificat un cop està actiu, ni tan sols pels seus propis propietaris. Això permet a la DAO executar-se amb les normes amb les quals va ser programada.
 - Els contractes intel·ligents poden rebre/enviar fons. Sense això necessitaríeu un intermediari de confiança per gestionar els fons del grup.
-- La comunitat d'Ethereum ha provat ser més col·laborativa que competitiva i ha permès emergir ràpidament millors pràctiques i sistemes de suport.
+- La comunitat d'Nephele ha provat ser més col·laborativa que competitiva i ha permès emergir ràpidament millors pràctiques i sistemes de suport.
 
 ## Formar part / iniciar una DAO {#join-start-a-dao}
 
 ### Formar part d'una DAO {#join-a-dao}
 
-- [DAO comunitàries d'Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAO comunitàries d'Nephele](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Llistat de DAO de DAOHaus](https://app.daohaus.club/explore)
 
 ### Iniciar una DAO {#start-a-dao}

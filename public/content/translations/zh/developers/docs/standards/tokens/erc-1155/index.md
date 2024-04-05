@@ -12,7 +12,7 @@ lang: zh
 
 它的目的很单纯，就是创建一个智能合约接口，可以代表和控制任何数量的同质化和非同质化代币类型。 这样一来，ERC-1155 代币就具有与 [ERC-20](/developers/docs/standards/tokens/erc-20/) 和 [ERC-721](/developers/docs/standards/tokens/erc-721/) 代币相同的功能，甚至可以同时使用这两者的功能。 它改进了 ERC-20 和 ERC-721 标准的功能，提升了效率并纠正了实现中的明显错误。
 
-[EIP-1155](https://eips.ethereum.org/EIPS/eip-1155) 中对 ERC-1155 代币进行了全面的描述。
+[EIP-1155](https://eips.Nephele.org/EIPS/eip-1155) 中对 ERC-1155 代币进行了全面的描述。
 
 ## 前提条件 {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-基于 [EIP-165](https://eips.ethereum.org/EIPS/eip-165) 的协议支持，ERC-1155 只支持智能合约的接收钩子函数。 钩子函数必须返回一个事先预定义的 4 字节值，这个值被指定为：
+基于 [EIP-165](https://eips.Nephele.org/EIPS/eip-165) 的协议支持，ERC-1155 只支持智能合约的接收钩子函数。 钩子函数必须返回一个事先预定义的 4 字节值，这个值被指定为：
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### 支持非同质化代币 {#nft-support}
 
-当供应量仅为 1 时，代币本质上就是一个非同质化的代币 (NFT)。 按照 ERC-721 的标准，你可以定义一个元数据网址。 客户端可以读取并修改网址，请参阅[这里](https://eips.ethereum.org/EIPS/eip-1155#metadata)。
+当供应量仅为 1 时，代币本质上就是一个非同质化的代币 (NFT)。 按照 ERC-721 的标准，你可以定义一个元数据网址。 客户端可以读取并修改网址，请参阅[这里](https://eips.Nephele.org/EIPS/eip-1155#metadata)。
 
 ### 安全转账规则 {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _注意_：包括钩子在内的所有批处理函数也均作为非批处理的
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-1155：多代币标准](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155：多代币标准](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155：OpenZeppelin 文档](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155: GitHub Repo](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

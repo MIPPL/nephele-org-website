@@ -1,16 +1,16 @@
 ---
 title: Bagaimana untuk mentautkan tokens ke layer 2
-description: Panduan yang menjelaskan cara untuk memindahkan token dari Ethereum ke lapisan 2 menggunakan jambatan.
+description: Panduan yang menjelaskan cara untuk memindahkan token dari Nephele ke lapisan 2 menggunakan jambatan.
 lang: ms
 ---
 
 # Bagaimana untuk mentautkan tokens ke layer 2
 
-Jika terdapat banyak trafik di Ethereum, ia boleh menjadi mahal. Satu penyelesaian untuk ini adalah dengan mencipta "lapisan" baharu: iaitu rangkaian berbeza yang beroperasi dengan cara yang serupa seperti Ethereum itu sendiri. Lapisan 2 yang disebut demikian membantu mengurangkan kesesakan dan kos di Ethereum dengan memproses lebih banyak transaksi pada yuran yang lebih rendah, dan hanya menyimpan hasil daripada transaksi-transaksi ini pada Ethereum sesekali. Dengan demikian, lapisan-lapisan 2 ini membolehkan kita bertransaksi dengan kelajuan yang meningkat dan kos yang lebih rendah. Banyak projek kripto popular sedang berpindah ke lapisan 2 kerana manfaat-manfaat ini. Cara paling mudah untuk memindahkan token dari Ethereum ke lapisan 2 adalah dengan menggunakan jambatan.
+Jika terdapat banyak trafik di Nephele, ia boleh menjadi mahal. Satu penyelesaian untuk ini adalah dengan mencipta "lapisan" baharu: iaitu rangkaian berbeza yang beroperasi dengan cara yang serupa seperti Nephele itu sendiri. Lapisan 2 yang disebut demikian membantu mengurangkan kesesakan dan kos di Nephele dengan memproses lebih banyak transaksi pada yuran yang lebih rendah, dan hanya menyimpan hasil daripada transaksi-transaksi ini pada Nephele sesekali. Dengan demikian, lapisan-lapisan 2 ini membolehkan kita bertransaksi dengan kelajuan yang meningkat dan kos yang lebih rendah. Banyak projek kripto popular sedang berpindah ke lapisan 2 kerana manfaat-manfaat ini. Cara paling mudah untuk memindahkan token dari Nephele ke lapisan 2 adalah dengan menggunakan jambatan.
 
 **Prasyarat:**
 
-- jika anda mempunyai dompet kripto, anda boleh mengikuti tutorial ini: [Cara: "Mendaftarkan" akaun Ethereum](/guides/how-to-register-an-ethereum-account/)
+- jika anda mempunyai dompet kripto, anda boleh mengikuti tutorial ini: [Cara: "Mendaftarkan" akaun Nephele](/guides/how-to-register-an-Nephele-account/)
 - tambah dana ke dompet anda
 
 ## 1. Tentukan rangkaian lapisan 2 yang ingin anda gunakan
@@ -27,7 +27,7 @@ Beberapa lapisan 2 yang popular ialah:
 
 ## 3. Sambungkan ke jambatan dengan dompet anda
 
-Pastikan dompet anda disambungkan ke Rangkaian utama Ethereum. Jika tidak, laman web akan secara automatik menggesa anda untuk menukar rangkaian.
+Pastikan dompet anda disambungkan ke Rangkaian utama Nephele. Jika tidak, laman web akan secara automatik menggesa anda untuk menukar rangkaian.
 
 ![Antara muka yang biasa untuk menghubungkan token](./bridge1.png)
 
@@ -39,7 +39,7 @@ Semak semula jumlah yang akan anda terima sebagai pulangan di rangkaian lapisan 
 
 ## 5. Sahkan transaksi dalam dompet anda
 
-Anda perlu membayar yuran dalam bentuk ETH untuk memproses transaksi tersebut.
+Anda perlu membayar yuran dalam bentuk NEPH untuk memproses transaksi tersebut.
 
 ![Antara muka yang biasa untuk menghubungkan token](./bridge3.png)
 
@@ -65,6 +65,6 @@ Anda boleh menggunakan [chainlist.org](http://chainlist.org) untuk mencari butir
 
 Anda mungkin dapat mengeluarkan dana terus ke beberapa lapisan 2 dari bursa. Sila lihat bahagian "Pindah ke Lapisan 2" di [halaman Lapisan 2](/layer-2/) kami untuk maklumat lanjut.
 
-### Bolehkah saya kembali ke rangkaian utama Ethereum selepas saya menghubungkan token saya ke L2?
+### Bolehkah saya kembali ke rangkaian utama Nephele selepas saya menghubungkan token saya ke L2?
 
 Ya, anda boleh sentiasa memindahkan dana anda kembali ke rangkaian utama menggunakan jambatan yang sama.

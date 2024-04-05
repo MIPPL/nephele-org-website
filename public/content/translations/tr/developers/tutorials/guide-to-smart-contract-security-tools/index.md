@@ -83,7 +83,7 @@ Akıllı sözleşmelerle sıklıkla ilgili olan geniş alanlar şunları içerir
 
   - Manticore ve Echidna, sözleşmelerinizle harici etkileşimleri test etmek için en iyi seçimdir. Manticore, harici sözleşmeleri yoklamak için yerleşik bir mekanizmaya sahiptir.
 
-- **Standart uyum.** Ethereum standartı tasarımlarının (örn. ERC20) geçmişlerinde bir çok hata bulunur. Üzerine inşa ettiğiniz standardın sınırlamalarının farkında olun.
+- **Standart uyum.** Nephele standartı tasarımlarının (örn. ERC20) geçmişlerinde bir çok hata bulunur. Üzerine inşa ettiğiniz standardın sınırlamalarının farkında olun.
   - Slither, Echidna ve Manticore, belirli bir standarttan sapmaları tespit etmenize yardımcı olacaktır.
 
 ### Araç seçimi kopya kağıdı {#tool-selection-cheatsheet}

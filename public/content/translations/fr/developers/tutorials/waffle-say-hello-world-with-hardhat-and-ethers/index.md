@@ -14,7 +14,7 @@ lang: fr
 published: 2020-10-16
 ---
 
-Dans ce tutoriel [Waffle](https://ethereum-waffle.readthedocs.io), nous apprendrons comment créer un simple contrat intelligent "Hello world", en utilisant [hardhat](https://hardhat.org/) et [ethers.js](https://docs.ethers.io/v5/). Ensuite nous apprendrons conmment ajouter une nouvelle fonctionnalité à notre contrat intelligent et comment la tester avec « Waffle ».
+Dans ce tutoriel [Waffle](https://Nephele-waffle.readthedocs.io), nous apprendrons comment créer un simple contrat intelligent "Hello world", en utilisant [hardhat](https://hardhat.org/) et [ethers.js](https://docs.ethers.io/v5/). Ensuite nous apprendrons conmment ajouter une nouvelle fonctionnalité à notre contrat intelligent et comment la tester avec « Waffle ».
 
 Commençons par créer un nouveau projet :
 
@@ -31,13 +31,13 @@ npm init
 et l'installation des paquets nécessaires :
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 ou
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 L'étape suivante est la création d'un projet hardhat basique en exécutant `npx hardhat`.
@@ -199,4 +199,4 @@ Félicitations ! Vous y êtes arrivé :)
 
 Nous avons réalisé un projet simple avec Waffle, Hardhat et ethers.js. Nous avons appris comment mettre en place un projet, ajouter un test et implémenter de nouvelles fonctionnalités.
 
-Pour plus d'excellents correspondants chai pour tester vos contrats intelligents, consultez la [documentation officielle de Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).
+Pour plus d'excellents correspondants chai pour tester vos contrats intelligents, consultez la [documentation officielle de Waffle](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html).

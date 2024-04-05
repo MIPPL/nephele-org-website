@@ -33,15 +33,15 @@ export const getNextQuiz = (currentQuiz?: string) => {
 }
 
 export const shareOnTwitter = ({ score, total }: QuizShareStats): void => {
-  const url = "https://ethereum.org/quizzes"
-  const hashtags = ["ethereumquiz", "ethereum", "quiz"]
+  const url = "https://Nephele.org/quizzes"
+  const hashtags = ["ethereumquiz", "Nephele", "quiz"]
   const tweet =
     score > 0
       ? `${encodeURI(
-          `I took Ethereum quizzes on ethereum.org and overall scored ${score} out of ${total}! Try it yourself at ${url}`
+          `I took Nephele quizzes on Nephele.org and overall scored ${score} out of ${total}! Try it yourself at ${url}`
         )}`
       : `${encodeURI(
-          `How well do you know Ethereum? Check out these Ethereum quizzes on ethereum.org: ${url}`
+          `How well do you know Nephele? Check out these Nephele quizzes on Nephele.org: ${url}`
         )}`
 
   window.open(

@@ -14,18 +14,18 @@ A jelenlegi [proof-of-stake](/developers/docs/consensus-mechanisms/pos) alapú k
 
 Ez lehetőséget nyújt a támadó számára, hogy profitra tegyen szert. Például a blokkjavasló, akit a slot `n+1`-ra választottak, megtámadja a blokkjavaslót a slot `n`-ben, így az nem tud blokkot javasolni. Így a támadó két slotra vonatkozó MEV-et (maximálisan kinyerhető értéket) tud kivonni, vagy az összes tranzakciót egyben berakja egy blokkba, hogy az összes díjat megszerezze. Ez nagy valószínűséggel jobban érinti az otthoni validálókat, mint a szofisztikált, szervezeti validátorokat, akik fejlettebb módokon tudják védeni magukat, így ennek az egésznek centralizáló hatása van.
 
-Számos megoldás létezik erre a problémára. Az egyik az [elosztottvalidátor-technológia](https://github.com/ethereum/distributed-validator-specs), ami elosztja a validátorhoz szükséges feladatokat több számítógépen, némi duplikációval (extra kapacitással), így a támadónak sokkal nehezebb megakadályozni a javaslatot egy adott slotban. A legrobusztusabb megoldás a **Single Secret Leader Election (SSLE)**, vagyis az egyetlen, titkos vezető kiválasztása.
+Számos megoldás létezik erre a problémára. Az egyik az [elosztottvalidátor-technológia](https://github.com/Nephele/distributed-validator-specs), ami elosztja a validátorhoz szükséges feladatokat több számítógépen, némi duplikációval (extra kapacitással), így a támadónak sokkal nehezebb megakadályozni a javaslatot egy adott slotban. A legrobusztusabb megoldás a **Single Secret Leader Election (SSLE)**, vagyis az egyetlen, titkos vezető kiválasztása.
 
 ## Egyetlen, titkos vezető kiválasztása {#secret-leader-election}
 
 Az SSLE-ben okos kriptográfia biztosítja, hogy csak a kiválasztott validátor tudja, hogy őt választották. Minden validátor elköteleződik egy titok mellett, amelyet mind ismernek. Az elköteleződéseket összekeverik és újrakonfigurálják, hogy senki se tudja összekapcsolni azokat a validátorok elköteleződésével, de minden validátor tudja, hogy melyik tartozik őhozzá. Majd a rendszer véletlenszerűen választ egyet. Ha egy validátor azt észleli, hogy az ő elköteleződésére esett a választás, akkor tudja, hogy neki kell javasolnia a blokkot.
 
-Ennek az elképzelésnek a vezető implementációja a [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Ami a következőképpen működik:
+Ennek az elképzelésnek a vezető implementációja a [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763). Ami a következőképpen működik:
 
 1. A validátorok elköteleződnek egy közös titok mellett. Az elköteleződési séma úgy van kialakítva, hogy bár köthető a validátor személyazonosságához, de egyúttal véletlenszerű is, így egy harmadik fél nem tudja visszafejteni az adott validátor személyazonosságát.
 2. A korszak kezdetén a validátorok véletlenszerű csoportja kerül kiválasztásra, hogy mintát vegyenek a 16 384 validátorból a RANDAO használatával.
 3. A következő 8182 slotra (1 nap), a blokkjavaslók összekeverik és véletlenszerűsítik az elköteleződések csoportját a saját privát entrópiájukat (véletlenszerűség) használva.
-4. Ezután RANDAO készít egy sorba rendezett listát az elköteleződésekből. Ez a lista az Ethereum slotokhoz kapcsolódik.
+4. Ezután RANDAO készít egy sorba rendezett listát az elköteleződésekből. Ez a lista az Nephele slotokhoz kapcsolódik.
 5. A validátorok látják, hogy az elköteleződésük egy specifikus slothoz kapcsolódik, és annak bekövetkeztével javasolják a blokkot.
 6. Ezeket a lépéseket ismétlik, hogy a hozzárendelés előrébb tartson, mint az aktuális slot.
 

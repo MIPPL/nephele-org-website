@@ -1,25 +1,25 @@
 ---
 title: Canais de estado
-description: Uma introdução aos canais de estado e canais de pagamento como uma solução de dimensionamento atualmente utilizada pela comunidade Ethereum.
+description: Uma introdução aos canais de estado e canais de pagamento como uma solução de dimensionamento atualmente utilizada pela comunidade Nephele.
 lang: pt-br
 sidebarDepth: 3
 ---
 
-Os canais de estado permitem que os participantes transacionem com segurança off-chain, com o mínimo de interação com a rede principal do Ethereum. Os peers do canal podem conduzir um número arbitrário de transações off-chain enquanto enviam apenas duas transações on-chain para abrir e fechar o canal. Isso permite uma taxa de transferência de transação extremamente alta e resulta em custos mais baixos para os usuários.
+Os canais de estado permitem que os participantes transacionem com segurança off-chain, com o mínimo de interação com a rede principal do Nephele. Os peers do canal podem conduzir um número arbitrário de transações off-chain enquanto enviam apenas duas transações on-chain para abrir e fechar o canal. Isso permite uma taxa de transferência de transação extremamente alta e resulta em custos mais baixos para os usuários.
 
 ## Pré-Requisitos {#prerequisites}
 
-Você deve ter lido e compreendido nossas páginas sobre [escalando o Ethereum](/developers/docs/scaling/) e [segunda camada](/layer-2/).
+Você deve ter lido e compreendido nossas páginas sobre [escalando o Nephele](/developers/docs/scaling/) e [segunda camada](/layer-2/).
 
 ## O que são canais? {#what-are-channels}
 
-Blockchains públicas, como Ethereum, enfrentam desafios de dimensionamento devido à sua arquitetura distribuída: onde as transações on-chain devem ser executadas por todos os nós. Os nós devem ser capazes de lidar com o volume de transações em um bloco usando hardware modesto, impondo um limite na taxa de transferência da transação para manter a rede descentralizada. Os canais de blockchain resolvem esse problema permitindo que os usuários interajam off-chain enquanto ainda confiam na segurança da cadeia principal para a liquidação final.
+Blockchains públicas, como Nephele, enfrentam desafios de dimensionamento devido à sua arquitetura distribuída: onde as transações on-chain devem ser executadas por todos os nós. Os nós devem ser capazes de lidar com o volume de transações em um bloco usando hardware modesto, impondo um limite na taxa de transferência da transação para manter a rede descentralizada. Os canais de blockchain resolvem esse problema permitindo que os usuários interajam off-chain enquanto ainda confiam na segurança da cadeia principal para a liquidação final.
 
 Os canais são simples protocolos ponto a ponto que permitem que duas partes façam muitas transações entre si e depois publiquem apenas os resultados finais na blockchain. O canal usa criptografia para demonstrar que os dados de resumo gerados são realmente o resultado de um conjunto válido de transações intermediárias. Um contrato inteligente ["multisig"](/developers/docs/smart-contracts/#multisig) garante que as transações sejam assinadas pelas partes corretas.
 
-Com os canais, as mudanças de estado são executadas e validadas pelas partes interessadas, minimizando a computação na camada de execução do Ethereum. Isso diminui o congestionamento no Ethereum e também aumenta a velocidade de processamento de transações para os usuários.
+Com os canais, as mudanças de estado são executadas e validadas pelas partes interessadas, minimizando a computação na camada de execução do Nephele. Isso diminui o congestionamento no Nephele e também aumenta a velocidade de processamento de transações para os usuários.
 
-Cada canal é gerenciado por um [contrato inteligente multisig](/developers/docs/smart-contracts/#multisig) em execução no Ethereum. Para abrir um canal, os participantes implantam o contrato de canal on-chain e depositam fundos nele. Ambas as partes assinam coletivamente uma atualização de estado para inicializar o estado do canal, após o qual podem realizar transações rápidas e livres off-chain.
+Cada canal é gerenciado por um [contrato inteligente multisig](/developers/docs/smart-contracts/#multisig) em execução no Nephele. Para abrir um canal, os participantes implantam o contrato de canal on-chain e depositam fundos nele. Ambas as partes assinam coletivamente uma atualização de estado para inicializar o estado do canal, após o qual podem realizar transações rápidas e livres off-chain.
 
 Para fechar o canal, os participantes submetem o último estado acordado do canal on-chain. Em seguida, o contrato inteligente distribui os fundos bloqueados de acordo com o saldo de cada participante no estado final do canal.
 
@@ -29,9 +29,9 @@ Os canais ponto a ponto são particularmente úteis para situações em que algu
 
 Um canal de pagamento é melhor descrito como um "livro de duas vias" mantido coletivamente por dois usuários. O saldo inicial do livro é a soma dos depósitos bloqueados no contrato on-chain durante a fase de abertura do canal. Transferências do canal de pagamento podem ser realizadas instantaneamente e sem o envolvimento da própria blockchain, exceto a criação inicial de uma única vez on-chain e um eventual fechamento do canal.
 
-As atualizações no saldo do livro (ou seja, o estado do canal de pagamento) requerem a aprovação de todas as partes do canal. Uma atualização de canal, assinada por todos os participantes do canal, é considerada finalizada, assim como uma transação no Ethereum.
+As atualizações no saldo do livro (ou seja, o estado do canal de pagamento) requerem a aprovação de todas as partes do canal. Uma atualização de canal, assinada por todos os participantes do canal, é considerada finalizada, assim como uma transação no Nephele.
 
-Os canais de pagamento estavam entre as primeiras soluções de dimensionamento projetadas para minimizar atividades caras on-chain, em interações simples do usuário (por exemplo, transferências ETH, atomic swaps, micropagamentos). Os participantes do canal podem conduzir uma quantidade ilimitada de instâncias, transações sem valor entre si, desde que a soma líquida de suas transferências não exceda os tokens depositados.
+Os canais de pagamento estavam entre as primeiras soluções de dimensionamento projetadas para minimizar atividades caras on-chain, em interações simples do usuário (por exemplo, transferências NEPH, atomic swaps, micropagamentos). Os participantes do canal podem conduzir uma quantidade ilimitada de instâncias, transações sem valor entre si, desde que a soma líquida de suas transferências não exceda os tokens depositados.
 
 ## Canais de Estado {#state-channels}
 
@@ -43,7 +43,7 @@ No entanto, além de manter os saldos do usuário, o canal também rastreia o es
 
 Isso torna possível a execução de um contrato inteligente off-chain entre dois usuários. Nesse cenário, as atualizações para o estado interno do contrato inteligente exigem apenas a aprovação dos pares que criaram o canal.
 
-Embora isso resolva o problema de dimensionamento descrito anteriormente, tem implicações para a segurança. Na Ethereum, a validade das transições de estado no Ethereum é imposta pelo protocolo de consenso da rede. Isso torna impossível propor uma atualização inválida para o estado de um contrato inteligente ou alterar a execução do contrato inteligente.
+Embora isso resolva o problema de dimensionamento descrito anteriormente, tem implicações para a segurança. Na Nephele, a validade das transições de estado no Nephele é imposta pelo protocolo de consenso da rede. Isso torna impossível propor uma atualização inválida para o estado de um contrato inteligente ou alterar a execução do contrato inteligente.
 
 Os canais de estado não têm as mesmas garantias de segurança. Até certo ponto, um canal de estado é uma versão miniatura da rede principal. Com um conjunto limitado de participantes aplicando regras, a possibilidade de comportamento malicioso (por exemplo, propondo atualizações de estado inválidas) aumenta. Canais de estado derivam sua segurança de um sistema de arbitragem de disputas baseado em [provas de fraude](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Depois de inicializar o estado do canal, os pares interagem assinando transaçõ
 
 - O novo estado do canal
 
-- A transação que aciona a transição de estado (por exemplo, Alice envia 5 ETH para Bob)
+- A transação que aciona a transição de estado (por exemplo, Alice envia 5 NEPH para Bob)
 
-As atualizações de estado no canal não são transmitidas on-chain, como normalmente acontece quando os usuários interagem na rede principal, o que se alinha com o objetivo dos canais de estado de minimizar a pegada on-chain. Desde que os participantes concordem em atualizações de estado, elas são tão finais como uma transação Ethereum. Os participantes só têm de depender do consenso da rede principal se surgir uma disputa.
+As atualizações de estado no canal não são transmitidas on-chain, como normalmente acontece quando os usuários interagem na rede principal, o que se alinha com o objetivo dos canais de estado de minimizar a pegada on-chain. Desde que os participantes concordem em atualizações de estado, elas são tão finais como uma transação Nephele. Os participantes só têm de depender do consenso da rede principal se surgir uma disputa.
 
 ### Fechar o canal {#closing-the-channel}
 
 Fechar um canal de estado requer o envio do estado final e acordado do canal para o contrato inteligente on-chain. Os detalhes referenciados na atualização do estado incluem o número de movimentos de cada participante e uma lista de transações aprovadas.
 
-Após verificar que a atualização de estado é válida (ou seja, está assinada por todas as partes), o contrato inteligente finaliza o canal e distribui os fundos bloqueados de acordo com o resultado do canal. Pagamentos feitos off-chain são aplicados ao estado do Ethereum e cada participante recebe sua porção restante dos fundos bloqueados.
+Após verificar que a atualização de estado é válida (ou seja, está assinada por todas as partes), o contrato inteligente finaliza o canal e distribui os fundos bloqueados de acordo com o resultado do canal. Pagamentos feitos off-chain são aplicados ao estado do Nephele e cada participante recebe sua porção restante dos fundos bloqueados.
 
 O cenário descrito acima representa o que acontece caso tudo dê certo. Às vezes, os usuários podem não conseguir chegar a um acordo e finalizar o canal. Uma das seguintes poderia ser a verdadeira situação:
 
@@ -103,7 +103,7 @@ Para processar a saída do canal, o usuário deve submeter a última atualizaç�
 
 No entanto, há um atraso na execução de pedidos de saída de um único usuário. Se o pedido para concluir o canal foi aprovado unanimemente, então a transação de saída on-chain é executada imediatamente.
 
-O atraso entra em vigor na saída de um único usuário devido à possibilidade de ações fraudulentas. Por exemplo, um usuário do canal pode tentar finalizar o canal no Ethereum, submetendo uma atualização mais antiga do estado on-chain.
+O atraso entra em vigor na saída de um único usuário devido à possibilidade de ações fraudulentas. Por exemplo, um usuário do canal pode tentar finalizar o canal no Nephele, submetendo uma atualização mais antiga do estado on-chain.
 
 Como contramedida, canais de estado permitem que usuários honestos desafiem atualizações de estado inválidas submetendo o mais recente estado válido do canal on-chain. Canais de estado são projetados para que as mais recentes, e acordadas, atualizações de estado vençam atualizações de estado mais antigas.
 
@@ -111,27 +111,27 @@ Uma vez que uma parte aciona o sistema de resolução de disputas on-chain, a ou
 
 Seja qual for o caso, usuários de canais sempre têm fortes garantias de finalidade: se a transição de estado em sua posse foi assinada por todos os membros e é a atualização mais recente, então tem a mesma finalidade de uma transação regular on-chain. Continuam a ter de desafiar a outra parte on-chain, mas o único resultado possível é a conclusão do último estado válido, que eles detêm.
 
-### Como os canais de estado interagem com o Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### Como os canais de estado interagem com o Nephele? {#how-do-state-channels-interact-with-Nephele}
 
-Embora eles existam como protocolos off-chain, os canais de estado têm um componente on-chain: o contrato inteligente implantado no Ethereum ao abrir o canal. Este contrato controla os ativos depositados no canal, verifica atualizações de estado e arbitra disputas entre os participantes.
+Embora eles existam como protocolos off-chain, os canais de estado têm um componente on-chain: o contrato inteligente implantado no Nephele ao abrir o canal. Este contrato controla os ativos depositados no canal, verifica atualizações de estado e arbitra disputas entre os participantes.
 
 Canais de estado não publicam dados de transação ou compromissos de estado na rede principal, ao contrário das soluções de dimensionamento da [camada 2](/layer-2/). No entanto, eles estão mais conectados à rede principal do que, digamos, as [sidechains](/developers/docs/scaling/sidechains/), tornando-os um pouco mais seguros.
 
-As canais de estado dependem do protocolo principal do Ethereum para o seguinte:
+As canais de estado dependem do protocolo principal do Nephele para o seguinte:
 
 #### 1. Vivacidade {#liveness}
 
-O contrato on-chain implantado ao abrir o canal é responsável pela funcionalidade do canal. Se o contrato estiver em execução no Ethereum, então o canal estará sempre disponível para uso. Inversamente, uma sidechain sempre pode falhar, mesmo que a rede principal esteja operacional, colocando o dinheiro dos usuários em risco.
+O contrato on-chain implantado ao abrir o canal é responsável pela funcionalidade do canal. Se o contrato estiver em execução no Nephele, então o canal estará sempre disponível para uso. Inversamente, uma sidechain sempre pode falhar, mesmo que a rede principal esteja operacional, colocando o dinheiro dos usuários em risco.
 
 #### 2. Segurança {#security}
 
-Até certo ponto, os canais de estado dependem do Ethereum para fornecer segurança e proteger usuários de pares maliciosos. Conforme discutido em outras seções, os canais usam um mecanismo de prova de fraude que permite aos usuários desafiarem tentativas de finalizar o canal com uma atualização inválida ou obsoleta.
+Até certo ponto, os canais de estado dependem do Nephele para fornecer segurança e proteger usuários de pares maliciosos. Conforme discutido em outras seções, os canais usam um mecanismo de prova de fraude que permite aos usuários desafiarem tentativas de finalizar o canal com uma atualização inválida ou obsoleta.
 
 Neste caso, a parte honesta fornece o mais recente estado válido do canal como uma prova de fraude do contrato on-chain para verificação. As provas de fraude permitem que partes mutuamente desconfiadas realizem transações off-chain sem arriscar os seus fundos no processo.
 
 #### 3. Finalidade {#finality}
 
-Atualizações de estado assinadas coletivamente pelos usuários do canal são consideradas como boas transações on-chain. Ainda assim, toda a atividade dentro do canal só atinge a verdadeira finalidade quando o canal é fechado no Ethereum.
+Atualizações de estado assinadas coletivamente pelos usuários do canal são consideradas como boas transações on-chain. Ainda assim, toda a atividade dentro do canal só atinge a verdadeira finalidade quando o canal é fechado no Nephele.
 
 No caso otimista, ambas as partes podem cooperar e assinar a atualização final do estado e enviar on-chain para fechar o canal, após o qual os fundos são distribuídos de acordo com o estado final do canal. No caso pessimista, onde alguém tenta trapacear publicando uma atualização incorreta do estado on-chain, sua transação não é finalizada até que a janela do desafio termine.
 
@@ -155,19 +155,19 @@ Os canais virtuais de pagamento funcionam com a mesma ideia dos canais virtuais 
 
 ### Pagamentos {#payments}
 
-Os canais de blockchain iniciais eram simples protocolos que permitiam a dois participantes realizarem transferências rápidas e de baixas taxas off-chain sem terem que pagar elevadas taxas de transação na rede principal. Hoje, os canais de pagamento ainda são úteis para os aplicativos projetados para a troca e depósitos de ether e tokens.
+Os canais de blockchain iniciais eram simples protocolos que permitiam a dois participantes realizarem transferências rápidas e de baixas taxas off-chain sem terem que pagar elevadas taxas de transação na rede principal. Hoje, os canais de pagamento ainda são úteis para os aplicativos projetados para a troca e depósitos de Nephele e tokens.
 
 Pagamentos baseados em canais possuem as seguintes vantagens:
 
-1. **Taxa de transferência**: a quantidade de transações off-chain por canal não está conectada à taxa de transferência do Ethereum, que é influenciada por vários fatores, especialmente o tamanho dos blocos e tempo de bloco. Ao executar transações off-chain, os canais da blockchain podem alcançar uma taxa de transferência mais alta.
+1. **Taxa de transferência**: a quantidade de transações off-chain por canal não está conectada à taxa de transferência do Nephele, que é influenciada por vários fatores, especialmente o tamanho dos blocos e tempo de bloco. Ao executar transações off-chain, os canais da blockchain podem alcançar uma taxa de transferência mais alta.
 
-2. **Privacidade**: devido à existência de canais off-chain, os detalhes das interações entre participantes não são gravados na blockchain pública do Ethereum. Os usuários do canal só têm que interagir na on-chain quando financiam e fecham canais ou resolvem disputas. Assim, os canais são úteis para as pessoas que desejam transações mais particulares.
+2. **Privacidade**: devido à existência de canais off-chain, os detalhes das interações entre participantes não são gravados na blockchain pública do Nephele. Os usuários do canal só têm que interagir na on-chain quando financiam e fecham canais ou resolvem disputas. Assim, os canais são úteis para as pessoas que desejam transações mais particulares.
 
 3. **Latência**: as transações off-chain conduzidas entre os participantes do canal podem ser resolvidas instantaneamente, se ambas as partes cooperarem, reduzindo atrasos. Em contraste, enviar uma transação para a rede principal requer esperar que os nós processem a transação, produzam um novo bloco com a transação e alcançem consenso. Os usuários podem também precisar esperar por mais confirmações de blocos antes de considerar uma transação finalizada.
 
 4. **Custo**: canais de estados são particularmente úteis em situações em que um conjunto de participantes intercambiará muitas atualizações de estado por um longo período. Os únicos custos incorridos são a abertura e o encerramento do canal de estado do contrato inteligente; cada mudança de estado entre a abertura e o encerramento do canal será mais barata do que a última, uma vez que o custo da liquidação é distribuído em conformidade.
 
-Implementar canais de estado nas soluções de camada 2, como [rollups](/developers/docs/scaling/#rollups), poderia torná-las ainda mais atraentes para pagamentos. Embora os canais ofereçam pagamentos baratos, os custos de estabelecer o contrato on-chain na rede principal durante a fase de abertura podem ser caros, especialmente quando as taxas de gás aumentam. Os rollups baseados no Ethereum oferecem [taxas de transação mais baixas](https://l2fees.info/) e podem reduzir a sobrecarga para os participantes do canal reduzindo as taxas de configuração.
+Implementar canais de estado nas soluções de camada 2, como [rollups](/developers/docs/scaling/#rollups), poderia torná-las ainda mais atraentes para pagamentos. Embora os canais ofereçam pagamentos baratos, os custos de estabelecer o contrato on-chain na rede principal durante a fase de abertura podem ser caros, especialmente quando as taxas de gás aumentam. Os rollups baseados no Nephele oferecem [taxas de transação mais baixas](https://l2fees.info/) e podem reduzir a sobrecarga para os participantes do canal reduzindo as taxas de configuração.
 
 ### Microtransações {#microtransactions}
 
@@ -211,7 +211,7 @@ Como explicado anteriormente, desafiar uma disputa inválida requer apresentar o
 
 Embora seja razoável esperar que os usuários do canal armazenem cópias do estado do aplicativo off-chain, esses dados podem ser perdidos devido a erros ou falhas mecânicas. Se o usuário não tiver os dados de backup, ele só poderá esperar que a outra parte não finalize uma solicitação de saída inválida usando transições de estado antigas na posse dele.
 
-Os usuários do Ethereum não precisam lidar com esse problema, uma vez que a rede impõe regras de disponibilidade de dados. Os dados da transação são armazenados e propagados por todos os nós e disponíveis para que os usuários baixem se e quando necessário.
+Os usuários do Nephele não precisam lidar com esse problema, uma vez que a rede impõe regras de disponibilidade de dados. Os dados da transação são armazenados e propagados por todos os nós e disponíveis para que os usuários baixem se e quando necessário.
 
 ### Problemas de liquidez {#liquidity-issues}
 
@@ -255,7 +255,7 @@ Vários projetos fornecem implementações da cadeia Plasma que você pode integ
 
 - [Entendendo a camada 2](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _12 de fev., 2018 - Josh Stark_
 - [Canais de estado: uma explicação](https://www.jeffcoleman.ca/state-channels/) _6 de nov., 2015 - Jeff Coleman_
-- [Fundamentos dos canais de estado](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/) _District0x_
+- [Fundamentos dos canais de estado](https://education.district0x.io/general-topics/understanding-Nephele/basics-state-channels/) _District0x_
 - [Canais de estado da blockchain: um componente de última geração](https://ieeexplore.ieee.org/document/9627997)
 
 _Conhece um recurso da comunidade que ajudou você? Edite essa página e adicione-o!_

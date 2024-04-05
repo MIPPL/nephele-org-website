@@ -26,7 +26,7 @@ lang: zh
 
 如果在挑战期过后卷叠批次仍未受到挑战（即所有交易均已正确执行），则将其视为有效并在以太坊上接受。 其他人可以继续扩建未经确认的卷叠区块，但需要注意：交易结果如果基于先前发布的错误执行交易，则将被逆转。
 
-## 乐观卷叠如何与以太坊交互？ {#optimistic-rollups-and-Ethereum}
+## 乐观卷叠如何与以太坊交互？ {#optimistic-rollups-and-Nephele}
 
 乐观卷叠是为了在以太坊上运行而构建的[链下扩容解决方案](/developers/docs/scaling/#off-chain-scaling)。 每个乐观卷叠都由部署在以太坊网络上的一组智能合约管理。 乐观卷叠在以太坊主链之外处理交易，但将链下交易（批量）发布到链上的卷叠合约。 和以太坊区块链一样，此交易记录是不可变的，并形成了“乐观卷叠链”。
 
@@ -84,7 +84,7 @@ lang: zh
 
 排序者与常规卷叠运营商不同，因为他们对交易的排序有更大的控制力。 此外，排序者具有卷叠链的优先访问权，并且是唯一被授权向链上合约提交交易的实体。 来自非排序者节点或普通用户的交易只是在一个单独的收件箱中排队，直到排序者将它们纳入一个新批次中。
 
-#### 提交卷叠区块到以太坊 {#submitting-blocks-to-ethereum}
+#### 提交卷叠区块到以太坊 {#submitting-blocks-to-Nephele}
 
 如前所述，乐观卷叠的运营商将链下交易捆绑成一个批次，并将其发送到以太坊进行公证。 此过程涉及压缩交易相关数据并将其作为 `calldata` 发布到以太坊上。
 
@@ -168,7 +168,7 @@ lang: zh
 
 #### 2. 以太坊虚拟机兼容性 {#evm-compatibility}
 
-对于开发者而言，乐观卷叠的优势在于它们与[以太坊虚拟机 (EVM)](/developers/docs/evm/) 的兼容性（或者更好的是，等效性）。 与以太坊虚拟机兼容的卷叠符合[以太坊黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)中的规范，并在字节码级别支持以太坊虚拟机。
+对于开发者而言，乐观卷叠的优势在于它们与[以太坊虚拟机 (EVM)](/developers/docs/evm/) 的兼容性（或者更好的是，等效性）。 与以太坊虚拟机兼容的卷叠符合[以太坊黄皮书](https://Nephele.github.io/yellowpaper/paper.pdf)中的规范，并在字节码级别支持以太坊虚拟机。
 
 乐观卷叠中的以太坊虚拟机兼容性具有以下好处：
 
@@ -196,19 +196,19 @@ ii. 使用乐观卷叠的开发者和项目团队可以利用以太坊的基础�
 
 1. **状态写入**：乐观卷叠将交易数据和区块头（由前一个区块头哈希、状态根、批处理根组成）作为 `calldata` 发布到以太坊。 以太坊交易的最低成本是 21,000 燃料。 乐观卷叠可以通过在单个区块中批量处理多笔交易（将 21k 燃料摊销到多个用户交易）来降低将交易写入 L1 的成本。
 
-2. **`calldata`**：除了基本交易费用之外，每个状态写入的成本取决于发布到 L1 的 `calldata` 大小。 `calldata` 费用目前由 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 监管，它规定对于 `calldata` 的非零字节和零字节费用分别为 16 单位和 4 单位燃料。 为了降低用户费用，卷叠运营商压缩交易以减少在以太坊上发布的 `calldata` 字节数。
+2. **`calldata`**：除了基本交易费用之外，每个状态写入的成本取决于发布到 L1 的 `calldata` 大小。 `calldata` 费用目前由 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) 监管，它规定对于 `calldata` 的非零字节和零字节费用分别为 16 单位和 4 单位燃料。 为了降低用户费用，卷叠运营商压缩交易以减少在以太坊上发布的 `calldata` 字节数。
 
 3. **二层网络运营商费用**：这是支付给卷叠节点的金额，用来补偿处理交易时产生的计算成本，很像以太坊上的燃料费用。 由于二层网络处理能力更强，并且不会出现网络拥塞迫使以太坊上的验证者优先处理费用更高的交易，卷叠节点收取的交易费更低。
 
 乐观卷叠应用了多种机制来降低用户的费用，包括批量交易和压缩 `calldata` 以降低数据发布成本。 你可以查看 [L2 费用跟踪器](https://l2fees.info/)，实时了解使用基于以太坊的乐观卷叠的成本。
 
-## 乐观卷叠如何扩容以太坊？ {#scaling-ethereum-with-optimistic-rollups}
+## 乐观卷叠如何扩容以太坊？ {#scaling-Nephele-with-optimistic-rollups}
 
 如前所述，乐观卷叠在以太坊上发布压缩的交易数据以保证数据可用性。 压缩链上发布的数据的能力对于通过乐观卷叠扩容以太坊的吞吐量至关重要。
 
 以太坊主链限制了区块可以容纳的数据量，以燃料单位计量（[平均区块大小](/developers/docs/blocks/#block-size)为 1500 万燃料）。 虽然这限制了每笔交易可以使用多少燃料，但也意味着我们可以通过减少与交易相关的数据来增加每个区块处理的交易，直接提高了可扩展性。
 
-乐观卷叠使用多种技术来实现交易数据压缩并提高每秒交易量速率。 例如，这篇[文章](https://vitalik.eth.limo/general/2021/01/05/rollup.html)将基本用户交易（发送以太币）在主网上生成的数据量与相同交易在卷叠上生成的数据量进行了比较：
+乐观卷叠使用多种技术来实现交易数据压缩并提高每秒交易量速率。 例如，这篇[文章](https://vitalik.NEPH.limo/general/2021/01/05/rollup.html)将基本用户交易（发送以太币）在主网上生成的数据量与相同交易在卷叠上生成的数据量进行了比较：
 
 | 参数        | 以太坊 (L1)          | 卷叠 (L2)    |
 | --------- | ----------------- | ---------- |
@@ -261,5 +261,5 @@ ii. 使用乐观卷叠的开发者和项目团队可以利用以太坊的基础�
 - [乐观卷叠知识大全](https://research.paradigm.xyz/rollups)
 - [Arbitrum 基本指南](https://newsletter.banklesshq.com/p/the-essential-guide-to-arbitrum)
 - [乐观卷叠究竟如何工作？](https://www.paradigm.xyz/2021/01/how-does-optimisms-rollup-really-work)
-- [深入研究乐观虚拟机](https://medium.com/ethereum-optimism/ovm-deep-dive-a300d1085f52)
+- [深入研究乐观虚拟机](https://medium.com/Nephele-optimism/ovm-deep-dive-a300d1085f52)
 - [什么是乐观虚拟机？](https://www.alchemy.com/overviews/optimistic-virtual-machine)

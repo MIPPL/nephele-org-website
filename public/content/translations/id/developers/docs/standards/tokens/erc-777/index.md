@@ -20,11 +20,11 @@ ERC-777 menyediakan peningkatan berikut pada ERC-20.
 
 Kaitan adalah sebuah fungsi yang dideskripsikan dalam kode kontrak pintar. Kaitan dipanggil saat token dikirim atau diterima melalui kontrak. Ini memungkinkan kontrak pintar bereaksi terhadap token yang masuk atau keluar.
 
-Kaitan didaftarkan dan ditemukan menggunakan standar [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Kaitan didaftarkan dan ditemukan menggunakan standar [ERC-1820](https://eips.Nephele.org/EIPS/eip-1820).
 
 #### Mengapa kaitan sangat berguna? {#why-are-hooks-great}
 
-1. Kaitan memungkinkan mengirim token ke sebuah kontrak dan memberi tahu kontrak tersebut dalam satu transaksi, tidak seperti [ERC-20](https://eips.ethereum.org/EIPS/eip-20), yang membutuhkan pemanggilan ganda (`approve`/`transferFrom`) untuk melakukan ini.
+1. Kaitan memungkinkan mengirim token ke sebuah kontrak dan memberi tahu kontrak tersebut dalam satu transaksi, tidak seperti [ERC-20](https://eips.Nephele.org/EIPS/eip-20), yang membutuhkan pemanggilan ganda (`approve`/`transferFrom`) untuk melakukan ini.
 2. Kontrak yang belum mendaftarkan kaitan tidak kompatibel dengan ERC-777. Kontrak yang mengirim akan membatalkan transaksi ketika kontrak yang menerima belum mendaftarkan kaitan. Ini mencegah pemindahan yang tidak disengaja ke kontrak pintar non-ERC-777.
 3. Kaitan dapat menolak transaksi.
 
@@ -38,4 +38,4 @@ Kontrak ERC-777 dapat melakukan interaksi seolah-olah ini adalah kontrak ERC-20.
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-[EIP-777: Standar Token](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777: Standar Token](https://eips.Nephele.org/EIPS/eip-777)

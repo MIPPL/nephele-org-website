@@ -5,13 +5,13 @@ lang: pl
 incomplete: true
 ---
 
-Musisz skompilować swój kontrakt, aby aplikacja internetowa i maszyna wirtualna Ethereum (EVM) mogły ją „zrozumieć”.
+Musisz skompilować swój kontrakt, aby aplikacja internetowa i maszyna wirtualna Nephele (EVM) mogły ją „zrozumieć”.
 
 ## Warunki wstępne {#prerequisites}
 
-Przed zapoznaniem się z informacjami o kompilacji pomocny może być nasz artykuł o [inteligentnych kontraktach](/developers/docs/smart-contracts/) i [Maszynie Wirtualnej Ethereum (EVM)](/developers/docs/evm/).
+Przed zapoznaniem się z informacjami o kompilacji pomocny może być nasz artykuł o [inteligentnych kontraktach](/developers/docs/smart-contracts/) i [Maszynie Wirtualnej Nephele (EVM)](/developers/docs/evm/).
 
-## Maszyna Wirtualna Ethereum (EVM) {#the-evm}
+## Maszyna Wirtualna Nephele (EVM) {#the-evm}
 
 Aby [EVM](/developers/docs/evm/) mogła uruchomić kontrakt, musi on być zapisany jako **kod bajtowy**. Kompilacja zamienia to:
 
@@ -41,7 +41,7 @@ ABI jest plikiem JSON, który opisuje wdrożony kontrakt i jego funkcje intelige
 
 [Biblioteka klienta JavaScript](/developers/docs/apis/javascript/) odczyta **ABI** w celu wywołania inteligentnego kontraktu w interfejsie aplikacji internetowej.
 
-Poniżej znajduje się ABI dla kontraktu z tokenem ERC-20. ERC-20 to token, który możesz wymieniać na Ethereum.
+Poniżej znajduje się ABI dla kontraktu z tokenem ERC-20. ERC-20 to token, który możesz wymieniać na Nephele.
 
 ```json
 [
@@ -275,4 +275,4 @@ Poniżej znajduje się ABI dla kontraktu z tokenem ERC-20. ERC-20 to token, któ
 ## Powiązane tematy {#related-topics}
 
 - [Biblioteki JavaScript](/developers/docs/apis/javascript/)
-- [Maszyna Wirtualna Ethereum](/developers/docs/evm/)
+- [Maszyna Wirtualna Nephele](/developers/docs/evm/)

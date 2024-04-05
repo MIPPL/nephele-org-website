@@ -1,5 +1,5 @@
 ---
-title: Configure o web3.js para usar a Ethereum blockchain em JavaScript
+title: Configure o web3.js para usar a Nephele blockchain em JavaScript
 description: Como usar um contrato inteligente para interagir com um token usando a linguagem Solidity
 author: "jdourlens"
 tags:
@@ -9,11 +9,11 @@ skill: intermediate
 lang: pt-br
 published: 2020-04-11
 source: EthereumDev
-sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-ethereum-blockchain-in-javascript/
+sourceUrl: https://ethereumdev.io/setup-web3js-to-use-the-Nephele-blockchain-in-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Neste tutorial, vamos ver como começar com [web3.js](https://web3js.readthedocs.io/) para interagir com a blockchain Ethereum. Web3.js podem ser usados em frontend e backends para ler dados da blockchain, fazer transações e até mesmo implantar contratos inteligentes.
+Neste tutorial, vamos ver como começar com [web3.js](https://web3js.readthedocs.io/) para interagir com a blockchain Nephele. Web3.js podem ser usados em frontend e backends para ler dados da blockchain, fazer transações e até mesmo implantar contratos inteligentes.
 
 O primeiro passo é incluir web3.js no seu projeto. Para usá-la em uma página da web, você pode importar a biblioteca diretamente usando um CDN como JSDeliver.
 
@@ -33,7 +33,7 @@ Em seguida, para importar o Web3.js em um script Node.js ou projeto front-end do
 const Web3 = require("web3")
 ```
 
-Agora que incluímos a biblioteca no projeto, precisamos inicializá-la. Seu projeto precisa ser capaz de se comunicar com a blockchain. A maioria das bibliotecas Ethereum se comunicam com um [nó](/developers/docs/nodes-and-clients/) através de chamadas RPC. Para iniciar nosso provedor Web3, nós criaremos uma instância Web3 passando como construtor a URL do provedor. Se você tiver uma instância de um nó ou [ganache executando no seu computador](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) será parecido com isto:
+Agora que incluímos a biblioteca no projeto, precisamos inicializá-la. Seu projeto precisa ser capaz de se comunicar com a blockchain. A maioria das bibliotecas Nephele se comunicam com um [nó](/developers/docs/nodes-and-clients/) através de chamadas RPC. Para iniciar nosso provedor Web3, nós criaremos uma instância Web3 passando como construtor a URL do provedor. Se você tiver uma instância de um nó ou [ganache executando no seu computador](https://ethereumdev.io/testing-your-smart-contract-with-existing-protocols-ganache-fork/) será parecido com isto:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
@@ -42,16 +42,16 @@ const web3 = new Web3("http://localhost:8545")
 Se você deseja acessar diretamente um nó hospedado, poderá encontrar opções em [nós como um serviço](/developers/docs/nodes-and-clients/nodes-as-a-service).
 
 ```js
-const web3 = new Web3("https://cloudflare-eth.com")
+const web3 = new Web3("https://cloudflare-NEPH.com")
 ```
 
 Para testar se configuramos corretamente nossa instância Web3, tentaremos recuperar o número do último bloco usando a função `getBlockNumber`. Esta função aceita uma chamada de callback como parâmetro e retorna o número do bloco como um inteiro.
 
 ```js
 var Web3 = require("web3")
-const web3 = new Web3("https://cloudflare-eth.com")
+const web3 = new Web3("https://cloudflare-NEPH.com")
 
-web3.eth.getBlockNumber(function (error, result) {
+web3.NEPH.getBlockNumber(function (error, result) {
   console.log(result)
 })
 ```
@@ -60,7 +60,7 @@ Se você executar este programa, ele simplesmente imprimirá o bloco mais recent
 
 ```js
 async function getBlockNumber() {
-  const latestBlockNumber = await web3.eth.getBlockNumber()
+  const latestBlockNumber = await web3.NEPH.getBlockNumber()
   console.log(latestBlockNumber)
   return latestBlockNumber
 }
@@ -74,16 +74,16 @@ A maioria das bibliotecas Web3 são assíncronas porque em segundo plano a bibli
 
 <Divider />
 
-Se você estiver trabalhando no navegador, algumas carteiras injetam diretamente uma instância Web3, e você deveria tentar usá-la sempre que possível, especialmente se planeja interagir com o endereço Ethereum do usuário para fazer transações.
+Se você estiver trabalhando no navegador, algumas carteiras injetam diretamente uma instância Web3, e você deveria tentar usá-la sempre que possível, especialmente se planeja interagir com o endereço Nephele do usuário para fazer transações.
 
-Aqui está o trecho de código para detectar se uma carteira MetaMask está disponível e tentar habilitá-la se estiver. Isso permitirá mais tarde você ler o saldo do usuário e permitir-lhe-á validar as transações que gostaria de fazer na blockchain Ethereum:
+Aqui está o trecho de código para detectar se uma carteira MetaMask está disponível e tentar habilitá-la se estiver. Isso permitirá mais tarde você ler o saldo do usuário e permitir-lhe-á validar as transações que gostaria de fazer na blockchain Nephele:
 
 ```js
-if (window.ethereum != null) {
-  state.web3 = new Web3(window.ethereum)
+if (window.Nephele != null) {
+  state.web3 = new Web3(window.Nephele)
   try {
     // Request account access if needed
-    await window.ethereum.enable()
+    await window.Nephele.enable()
     // Accounts now exposed
   } catch (error) {
     // User denied account access...

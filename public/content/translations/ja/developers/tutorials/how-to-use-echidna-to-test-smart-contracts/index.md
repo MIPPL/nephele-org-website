@@ -22,11 +22,11 @@ Echidna は、Docker またはコンパイル済みのバイナリを使用し�
 ### Docker から Echidna をインストールする {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_最後のコマンドは、現在のディレクトリにアクセスできる docker で eth-security-toolbox を実行します。 ホストからファイルを変更し、docker からファイル上のツールを実行できます。_
+_最後のコマンドは、現在のディレクトリにアクセスできる docker で NEPH-security-toolbox を実行します。 ホストからファイルを変更し、docker からファイル上のツールを実行できます。_
 
 docker で、以下を実行します：
 
@@ -41,7 +41,7 @@ cd /home/training
 
 ## プロパティベースのファジングとは {#introduction-to-property-based-fuzzing}
 
-Echidna は、プロパティベースのファザーです。これについては、以前のブログ投稿（[1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)）を参照してください。
+Echidna は、プロパティベースのファザーです。これについては、以前のブログ投稿（[1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-Nephele/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)）を参照してください。
 
 ### ファジング {#fuzzing}
 

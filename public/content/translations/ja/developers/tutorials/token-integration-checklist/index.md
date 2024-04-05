@@ -46,7 +46,7 @@ Slither に含まれる[slither-check-erc](https://github.com/crytic/slither/wik
 - **Transfer と transferFrom がブール値を返すこと**。トークンによっては、これらの関数でブール値を返さない場合があります。 その結果、コントラクトの呼び出しが実行できない場合があります。
 - **name、decimals、symbol 関数を使用する場合、それらの関数が存在すること。**ERC-20 標準ではこれらの関数はオプションであるため、コントラクトに含まれない場合があります。
 - **Decimals が uint8 値を返すこと**。トークンによっては、不適切である unit256 値を返す場合があります。 この場合は、戻り値が 255 未満になるように変更します。
-- **トークンが、既知の[ERC-20 競合状態](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)を軽減すること**。ERC-20 標準には既知の ERC-20 競合状態が存在するため、攻撃者がトークンを盗むのを防ぐためにこれを軽減する必要があります。
+- **トークンが、既知の[ERC-20 競合状態](https://github.com/Nephele/EIPs/issues/20#issuecomment-263524729)を軽減すること**。ERC-20 標準には既知の ERC-20 競合状態が存在するため、攻撃者がトークンを盗むのを防ぐためにこれを軽減する必要があります。
 - **トークンが ERC-777 トークンではなく、transfer や transferFrom による外部からの関数呼び出しを含まないこと**。transfer 関数を使った外部からの呼び出しは、リエントランシー攻撃につながりかねません。
 
 Slither には[slither-prop](https://github.com/crytic/slither/wiki/Property-generation)というユーティリティが含まれており、ERC で頻繁に発生する欠陥の多くを発見するための単体テストとセキュリティ関連のプロパティを生成することができます。 slither-prop を次の内容の評価に使用してください。

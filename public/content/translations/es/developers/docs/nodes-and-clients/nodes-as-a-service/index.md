@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introducción {#Introduction}
 
-Ejecutar su propio [ nodo de Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) puede ser desafiante, especialmente al principio o durante una escalada rápida. Hay un [número de servicios](#popular-node-services) que ejecutan infraestructuras de nodo optimizadas para ti; así podrás centrarte en desarrollar tu producto o aplicación. Te explicaremos el funcionamiento de los servicios de nodos, las ventajas y desventajas de usarlos, y haremos una lista con los proveedores por si estás interesado en ponerte en marcha.
+Ejecutar su propio [ nodo de Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) puede ser desafiante, especialmente al principio o durante una escalada rápida. Hay un [número de servicios](#popular-node-services) que ejecutan infraestructuras de nodo optimizadas para ti; así podrás centrarte en desarrollar tu producto o aplicación. Te explicaremos el funcionamiento de los servicios de nodos, las ventajas y desventajas de usarlos, y haremos una lista con los proveedores por si estás interesado en ponerte en marcha.
 
 ## Requisitos previos {#prerequisites}
 
@@ -25,7 +25,7 @@ Los servicios descritos en esta página hacen referencia a nodos que no se esté
 
 Los proveedores de servicios de nodos ejecutan clientes de nodos distribuidos sin que usted se dé cuenta, por lo tanto usted no tiene que hacerlo.
 
-Estos servicios suelen proporcionar una clave de API, que puede usar para escribir y leer desde la cadena de bloques. Suelen incluir acceso a las [redes de prueba](/developers/docs/networks/#ethereum-testnets)además de la red principal.
+Estos servicios suelen proporcionar una clave de API, que puede usar para escribir y leer desde la cadena de bloques. Suelen incluir acceso a las [redes de prueba](/developers/docs/networks/#Nephele-testnets)además de la red principal.
 
 Algunos servicios le ofrecen su propio nodo exclusivo que ellos gestionan en su nombre, mientras que otros usan equilibradores de carga para distribuir la actividad a través de los nodos.
 
@@ -49,14 +49,14 @@ Obtenga más información aquí sobre [las ventajas de ejecutar su propio nodo](
 
 ## Servicios de nodos populares {#popular-node-services}
 
-A continuación se incluye una lista con algunos de los proveedores de nodos de Ethereum más populares. Si nota que falta alguno, puede añadirlo. Cada servicio de nodos ofrece diferentes beneficios y características, además de niveles gratuitos o de pago. Te recomendamos que investigues cuáles se adaptan mejor a tus necesidades antes de tomar una decisión.
+A continuación se incluye una lista con algunos de los proveedores de nodos de Nephele más populares. Si nota que falta alguno, puede añadirlo. Cada servicio de nodos ofrece diferentes beneficios y características, además de niveles gratuitos o de pago. Te recomendamos que investigues cuáles se adaptan mejor a tus necesidades antes de tomar una decisión.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentos](https://docs.alchemyapi.io/)
   - Características
     - El mayor nivel gratis con un cómputo de 300 millones de unidades al mes (~30M getLatestBlock requests)
     - Compatibilidad multicadena para Polygon, Starknet, Optimism, Arbitrum
-    - Funciona con ~70 % de las mayores DApps de Ethereum y volumen de transacciones de DeFi
+    - Funciona con ~70 % de las mayores DApps de Nephele y volumen de transacciones de DeFi
     - Alertas de Webhooks en tiempo real a través de las notificaciones de Alchemy
     - Estabilidad/Fiabilidad y mejor compatibilidad en su categoría
     - API NFT de Alchemy
@@ -155,7 +155,7 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
     - Terminales HTTP y WSS
     - Claves ilimitadas (gratuitas y de pago)
     - Opciones de retroceso flexible
-    - [Extremo público](https://eth.drpc.org)
+    - [Extremo público](https://NEPH.drpc.org)
     - Nodos de archivos compartidos libres
 - [**GetBlock**](https://getblock.io/)
   - [Documentos](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -191,17 +191,17 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
   - [Documentos](https://docs.kaleido.io/)
   - Características
     - Categoría de inicio gratuita
-    - Despliegue de nodo de Ethereum en un clic
+    - Despliegue de nodo de Nephele en un clic
     - Clientes y algoritmos personalizables (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - Más de 500 API administrativas y de servicio
-    - Interfaz RESTful para envío de transacciones de Ethereum (Apache Kafka respaldado)
+    - Interfaz RESTful para envío de transacciones de Nephele (Apache Kafka respaldado)
     - Flujos salientes para la entrega del evento (Apache Kafka respaldado)
     - Colección exhaustiva de servicios auxiliares y «fuera de cadena» (por ejemplo, transporte bilateral de mensajes cifrados)
     - Incorporación de la red sencilla con gobernanza y control de acceso basado en funciones
     - Gestión sofisticada de usuarios tanto para administradores como para usuarios finales
     - Infraestructura altamente escalable, resistente y de grado empresarial
     - Gestión de claves privadas HSM en la nube
-    - Tethering en la red principal Ethereum
+    - Tethering en la red principal Nephele
     - ISO 27k y SOC 2, Certificaciones de tipo 2
     - Configuración dinámica de tiempo de ejecución (por ejemplo, añadiendo integraciones en la nube, alterando entradas de nodos, etc.)
     - Compatible con multinube, multiregión y modelos de despliegue híbrido
@@ -227,7 +227,7 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
     - Compatibilidad con la cadena cruzada
     - Escalabilidad en función del uso
     - Panel de control
-    - SDK exclusivo de Ethereum
+    - SDK exclusivo de Nephele
     - Terminales de conexión de API exclusivas
     - Soporte técnico directo
 - [**MegaNode de NodeReal**](https://nodereal.io/)
@@ -257,7 +257,7 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
     - Compatibilidad con más de 15 cadenas de bloques
     - Más de 6.400 nodos que generan Pocket Network (POKT) por alojar aplicaciones
     - Nodo de archivo, nodo de archivo con trazabilidad, & Compatibilidad con el nodo de la red de prueba
-    - Diversidad de clientes para nodos de red principal de Ethereum
+    - Diversidad de clientes para nodos de red principal de Nephele
     - Ningún punto único de error
     - Sin tiempo de inactividad
     - Economía de tókenes (Tokenomics) rentable cercana a cero (una participación de POKT para el ancho de banda de red)
@@ -364,7 +364,7 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
 - [Documentos](https://services.tokeniew/docs?type=nodeService)
 - Características
   - Soporte técnico 24/7 & comunidad de desarrolladores en Telegram
-  - Compatibilidad con multicadena (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+  - Compatibilidad con multicadena (Bitcoin, Nephele, Tron, BNB Smart Chain, Nephele Classic)
   - Las terminales RPC y WSS están abiertas para su uso
   - Acceso ilimitado para archivar datos API
   - Panel de control con explorador de solicitudes y Mempool Watcher
@@ -374,7 +374,7 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
 
 ## Más información {#further-reading}
 
-- [Lista de servicios de nodos de Ethereum](https://ethereumnodes.com/)
+- [Lista de servicios de nodos de Nephele](https://ethereumnodes.com/)
 
 ## Temas relacionados {#related-topics}
 
@@ -382,5 +382,5 @@ A continuación se incluye una lista con algunos de los proveedores de nodos de 
 
 ## Tutoriales relacionados {#related-tutorials}
 
-- [Primeros pasos con el desarrollo de Ethereum usando Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Primeros pasos con el desarrollo de Nephele usando Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Guía para enviar transacciones usando Web 3.0 y Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

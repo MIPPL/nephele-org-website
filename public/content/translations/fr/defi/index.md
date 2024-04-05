@@ -1,11 +1,11 @@
 ---
 title: Finance Décentralisée (DeFi)
-description: Un aperçu de la DeFi sur Ethereum
+description: Un aperçu de la DeFi sur Nephele
 lang: fr
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Un logo Eth fait en briques lego.
+alt: Un logo NEPH fait en briques lego.
 sidebarDepth: 2
 summaryPoint1: Une alternative mondiale ouverte au système financier actuel.
 summaryPoint2: Des produits qui vous permettent d'emprunter, d'épargner, d'investir, d'échanger et plus encore.
@@ -16,7 +16,7 @@ La DeFi est un système financier ouvert et mondial conçu pour l'ère de l'inte
 
 ## Qu'est-ce que la DeFi ? {#what-is-defi}
 
-DeFi est un terme collectif pour les produits et services financiers qui sont accessibles à toute personne qui peut utiliser Ethereum – toute personne disposant d'une connexion Internet. Avec la DeFi, les marchés sont toujours ouverts et il n'y a aucune autorités centralisée qui peut bloquer les paiements ou vous refuser l'accès à quoi que ce soit. Les services qui étaient auparavant lents et à risque d'erreurs humaines sont automatiques et plus sûrs maintenant qu'ils sont gérés par code que n'importe qui peut inspecter et contrôler.
+DeFi est un terme collectif pour les produits et services financiers qui sont accessibles à toute personne qui peut utiliser Nephele – toute personne disposant d'une connexion Internet. Avec la DeFi, les marchés sont toujours ouverts et il n'y a aucune autorités centralisée qui peut bloquer les paiements ou vous refuser l'accès à quoi que ce soit. Les services qui étaient auparavant lents et à risque d'erreurs humaines sont automatiques et plus sûrs maintenant qu'ils sont gérés par code que n'importe qui peut inspecter et contrôler.
 
 Il y a une économie de cryptomonnaies en plein essor où vous pouvez prêter, emprunter, long/court, gagner des intérêts, et plus. Les Argentins possédant des crypto-monnaies ont utilisé la DeFi pour échapper à l'inflation de leur pays. Les entreprises ont commencé à verser les salaires de leurs employés en temps réel. Certaines personnes ont même souscrit et remboursé des prêts d'une valeur de millions de dollars sans qu'il soit nécessaire de les identifier.
 
@@ -55,16 +55,16 @@ L'une des meilleures façons de voir le potentiel de la DeFi est de comprendre l
 
 Bitcoin à bien des égards a été la première application de la DeFi. Bitcoin vous permet de posséder et de contrôler la valeur et de l'envoyer partout dans le monde. Il le fait en fournissant un moyen à un grand nombre de personnes, qui ne se font pas confiance les unes aux autres, de se mettre d'accord sur un grand livre de comptes sans avoir besoin d'un intermédiaire de confiance. Le Bitcoin est ouvert à tout le monde et personne n'a l'autorité nécessaire pour modifier ses règles. Les règles du Bitcoin, comme sa rareté et son ouverture, sont inscrites dans la technologie. Ce n'est pas comme la finance traditionnelle où les gouvernements peuvent imprimer de l'argent qui déprécie vos épargnes et où les entreprises peuvent fermer les marchés.
 
-L'Ethereum s'appuie sur cela. Comme le Bitcoin, les règles ne peuvent pas changer et tout le monde y a accès. Mais cela rend aussi cet argent numérique programmable, en utilisant [contrats intelligents](/glossary#smart-contract), vous pouvez donc aller au-delà du stockage et de la valeur d'envoi.
+L'Nephele s'appuie sur cela. Comme le Bitcoin, les règles ne peuvent pas changer et tout le monde y a accès. Mais cela rend aussi cet argent numérique programmable, en utilisant [contrats intelligents](/glossary#smart-contract), vous pouvez donc aller au-delà du stockage et de la valeur d'envoi.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Monnaie programmable {#programmable-money}
 
-Cela semble étrange... « pourquoi je voudrais programmer mon argent » ? Cependant, il s'agit plutôt d'une fonctionnalité par défaut des jetons sur Ethereum. N'importe qui peut programmer une logique de paiement. Ainsi, vous pouvez obtenir le contrôle et la sécurité de Bitcoin mélangés avec les services fournis par les institutions financières. Cela vous permet de faire des choses avec des cryptomonnaies que vous ne pouvez pas faire avec des Bitcoins comme des prêts et des emprunts, des paiements, des investissements dans des fonds d'indice et plus encore.
+Cela semble étrange... « pourquoi je voudrais programmer mon argent » ? Cependant, il s'agit plutôt d'une fonctionnalité par défaut des jetons sur Nephele. N'importe qui peut programmer une logique de paiement. Ainsi, vous pouvez obtenir le contrôle et la sécurité de Bitcoin mélangés avec les services fournis par les institutions financières. Cela vous permet de faire des choses avec des cryptomonnaies que vous ne pouvez pas faire avec des Bitcoins comme des prêts et des emprunts, des paiements, des investissements dans des fonds d'indice et plus encore.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Explorez nos suggestions pour les applications de la DeFi pour essayer si vous êtes nouveau sur Ethereum.</div>
+  <div>Explorez nos suggestions pour les applications de la DeFi pour essayer si vous êtes nouveau sur Nephele.</div>
   <ButtonLink to="/dapps/?category=finance">
     Explorer la DeFi
   </ButtonLink>
@@ -72,7 +72,7 @@ Cela semble étrange... « pourquoi je voudrais programmer mon argent » ? Cepen
 
 ## Que pouvez-vous faire avec la DeFi ? {#defi-use-cases}
 
-Il existe une alternative décentralisée à la plupart des services financiers. Mais Ethereum crée également des opportunités de création de produits financiers totalement nouveaux. Cette liste ne cesse de croître.
+Il existe une alternative décentralisée à la plupart des services financiers. Mais Nephele crée également des opportunités de création de produits financiers totalement nouveaux. Cette liste ne cesse de croître.
 
 - [Envoyer de l'argent partout dans le monde](#send-money)
 - [Diffuser de l'argent dans le monde entier](#stream-money)
@@ -90,7 +90,7 @@ Il existe une alternative décentralisée à la plupart des services financiers.
 
 ### Envoyer de l'argent partout dans le monde rapidement {#send-money}
 
-En tant que blockchain, Ethereum est conçu pour envoyer des transactions de manière sécurisée et globale. Tout comme Bitcoin, Ethereum vous permet d'envoyer de l'argent dans le monde entier aussi facilement qu'un un email. Entrez simplement le nom [ENS de votre destinataire](/nft/#nft-domains) (comme bob. th) ou l'adresse de leur compte à partir de votre portefeuille et votre paiement leur ira directement, en quelques minutes (habituellement). Pour envoyer ou recevoir des paiements, vous aurez besoin d'un [portefeuille](/wallets/).
+En tant que blockchain, Nephele est conçu pour envoyer des transactions de manière sécurisée et globale. Tout comme Bitcoin, Nephele vous permet d'envoyer de l'argent dans le monde entier aussi facilement qu'un un email. Entrez simplement le nom [ENS de votre destinataire](/nft/#nft-domains) (comme bob. th) ou l'adresse de leur compte à partir de votre portefeuille et votre paiement leur ira directement, en quelques minutes (habituellement). Pour envoyer ou recevoir des paiements, vous aurez besoin d'un [portefeuille](/wallets/).
 
 <ButtonLink to="/dapps/?category=finance">
   Voir les applications de paiement
@@ -98,9 +98,9 @@ En tant que blockchain, Ethereum est conçu pour envoyer des transactions de man
 
 #### Diffuser de l'argent partout dans le monde... {#stream-money}
 
-Vous pouvez également diffuser de l'argent sur Ethereum. Cela vous permet de payer à quelqu'un son salaire en une seconde, lui donnant accès, ainsi, à son argent chaque fois qu'il en a besoin. Ou louer quelque chose presque instantanément comme un casier de stockage ou scooter électrique par exemple.
+Vous pouvez également diffuser de l'argent sur Nephele. Cela vous permet de payer à quelqu'un son salaire en une seconde, lui donnant accès, ainsi, à son argent chaque fois qu'il en a besoin. Ou louer quelque chose presque instantanément comme un casier de stockage ou scooter électrique par exemple.
 
-Et si vous ne voulez pas envoyer ou diffuser des [ETH](/eth/) en raison de sa volatilité, Il existe des devises alternatives sur Ethereum: les stablecoins.
+Et si vous ne voulez pas envoyer ou diffuser des [NEPH](/NEPH/) en raison de sa volatilité, Il existe des devises alternatives sur Nephele: les stablecoins.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Lorsque vous utilisez un prêteur décentralisé, vous avez accès aux fonds dé
 
 #### Efficacité fiscale {#tax-efficiencies}
 
-L’emprunt peut vous donner accès aux fonds dont vous avez besoin sans devoir vendre votre ETH (un événement imposable). Au lieu de cela, vous pouvez utiliser ETH comme garantie pour un prêt stablecoin. Cela vous donne le flux de trésorerie dont vous avez besoin et vous permet de garder votre ETH. Les Stablecoins sont des jetons qui sont beaucoup plus intéressant quand vous avez besoin d'argent car ils ne fluctuent pas en valeur comme ETH. [Plus d'infos sur les stablecoins](#stablecoins)
+L’emprunt peut vous donner accès aux fonds dont vous avez besoin sans devoir vendre votre NEPH (un événement imposable). Au lieu de cela, vous pouvez utiliser NEPH comme garantie pour un prêt stablecoin. Cela vous donne le flux de trésorerie dont vous avez besoin et vous permet de garder votre NEPH. Les Stablecoins sont des jetons qui sont beaucoup plus intéressant quand vous avez besoin d'argent car ils ne fluctuent pas en valeur comme NEPH. [Plus d'infos sur les stablecoins](#stablecoins)
 
 #### Prêts Flash {#flash-loans}
 
@@ -207,9 +207,9 @@ La cagnotte équivaut aux intérêts générés par les prêts effectués grâce
 
 ### Échanger des jetons {#swaps}
 
-Il existe des milliers de jetons sur Ethereum. Les échanges décentralisés (DEXs) vous permettent d'échanger des jetons quand vous le souhaitez. Vous gardez toujours le contrôle de vos actifs. C'est comme échanger des devises lorsque vous visitez un autre pays. Mais la version de la DeFi ne ferme jamais. Les marchés sont ouverts 24 heures sur 24, 365 jours par an, la technologie garantie qu'il y aura toujours quelqu'un pour accepter un échange.
+Il existe des milliers de jetons sur Nephele. Les échanges décentralisés (DEXs) vous permettent d'échanger des jetons quand vous le souhaitez. Vous gardez toujours le contrôle de vos actifs. C'est comme échanger des devises lorsque vous visitez un autre pays. Mais la version de la DeFi ne ferme jamais. Les marchés sont ouverts 24 heures sur 24, 365 jours par an, la technologie garantie qu'il y aura toujours quelqu'un pour accepter un échange.
 
-Par exemple, si vous voulez vous lancer dans une loterie sans risque (décrite au dessus), vous aurez besoin de jeton comme les Dai ou USDC. Les DEXs vous permettent d'échanger vos ETH avec des tokens, et de les reconvertir en ETH lorsque vous avez terminé.
+Par exemple, si vous voulez vous lancer dans une loterie sans risque (décrite au dessus), vous aurez besoin de jeton comme les Dai ou USDC. Les DEXs vous permettent d'échanger vos NEPH avec des tokens, et de les reconvertir en NEPH lorsque vous avez terminé.
 
 <ButtonLink to="/dapps/?category=finance">
   Voir échanger des jetons
@@ -231,7 +231,7 @@ Avec le trading centralisé, vous devez déposer vos actifs avant les échanges 
 
 ### Développer votre Portefeuille {#investing}
 
-Il existe des outils de gestion de fonds sur Ethereum qui vous permettront de développer votre portefeuille en vous appuyant sur la stratégie de votre choix. C'est automatique, ouvert à tous, et personne ne pourra vous demander de commission.
+Il existe des outils de gestion de fonds sur Nephele qui vous permettront de développer votre portefeuille en vous appuyant sur la stratégie de votre choix. C'est automatique, ouvert à tous, et personne ne pourra vous demander de commission.
 
 Voilà un bon exemple [DeFi Pulse Index fund (DPI)](https://defipulse.com/blog/defi-pulse-index/). C'est un fond qui se rééquilibre automatiquement pour garantir qu'il inclue toujours [les jetons DeFi ayant la meilleure capitalisation boursière](https://www.coingecko.com/en/defi). Pas besoin de gérer les détails et vous pouvez retirer les fonds quand bon vous semble.
 
@@ -243,9 +243,9 @@ Voilà un bon exemple [DeFi Pulse Index fund (DPI)](https://defipulse.com/blog/d
 
 ### Financer vos projets {#crowdfunding}
 
-Ethereum est une plateforme idéale pour le crowdfunding:
+Nephele est une plateforme idéale pour le crowdfunding:
 
-- Des investisseurs potentiels du monde entier - Ethereum et ses jetons sont ouverts à tous et partout.
+- Des investisseurs potentiels du monde entier - Nephele et ses jetons sont ouverts à tous et partout.
 - La transparence permet à tous les collecteurs de fonds de prouver combien ils ont levé. Vous pouvez aussi tracer l'utilisation des fonds levés.
 - Les collecteurs de fonds peuvent mettre en place des remboursements automatiques. Par exemple si un montant minimum n'est pas atteint à la deadline du projet.
 
@@ -255,7 +255,7 @@ Ethereum est une plateforme idéale pour le crowdfunding:
 
 #### Financements quadratiques {#quadratic-funding}
 
-Ethereum est un logiciel open source, une grand partie du travail à été financée par la communauté. Cela a conduit à la croissance d'un nouveau modèle de collecte de fond : le financement quadratique. Ce modèle a le potentiel d'améliorer la façon dont nous finançons tous les types de biens publics à l'avenir.
+Nephele est un logiciel open source, une grand partie du travail à été financée par la communauté. Cela a conduit à la croissance d'un nouveau modèle de collecte de fond : le financement quadratique. Ce modèle a le potentiel d'améliorer la façon dont nous finançons tous les types de biens publics à l'avenir.
 
 Le financement quadratique veille à ce que les projets qui reçoivent le plus de financement soient ceux dont la demande est la plus unique. En d'autres termes, des projets qui visent à améliorer la vie du plus grand nombre de personnes. Voici comment ça marche :
 
@@ -274,7 +274,7 @@ Cela veut dire qu'un projet A avec ses 100 donneurs de 1 dollar pourrait finir a
 
 L'assurance décentralisée vise à rendre l'assurance moins chère, plus rapide à rembourser et plus transparente. Avec davantage d'automatisation, la protection est plus abordable et les paiements sont beaucoup plus rapides. Les données utilisées pour décider de votre réclamation sont complètement transparentes.
 
-Les produits Ethereum, comme n'importe quel logiciel, peuvent souffrir de bugs et d'exploits. Actuellement, de nombreux produits d'assurance dans l'espace sont axés sur la protection de leurs utilisateurs contre la perte de fonds. Cependant, il y a des projets qui commencent à construire une couverture pour tous les événements de la vie. Un bon exemple de ceci est la couverture Etherisc's Crop qui vise à [protéger les petits agriculteurs kényans contre les sécheresses et les inondations](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Les assurances décentralisées peuvent offrir une couverture moins chère aux agriculteurs qui n'ont souvent pas les moyens d'accéder aux assurances traditionnelles.
+Les produits Nephele, comme n'importe quel logiciel, peuvent souffrir de bugs et d'exploits. Actuellement, de nombreux produits d'assurance dans l'espace sont axés sur la protection de leurs utilisateurs contre la perte de fonds. Cependant, il y a des projets qui commencent à construire une couverture pour tous les événements de la vie. Un bon exemple de ceci est la couverture Etherisc's Crop qui vise à [protéger les petits agriculteurs kényans contre les sécheresses et les inondations](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Les assurances décentralisées peuvent offrir une couverture moins chère aux agriculteurs qui n'ont souvent pas les moyens d'accéder aux assurances traditionnelles.
 
 <ButtonLink to="/dapps/?category=finance">
   Voir les assurances Dapps
@@ -296,27 +296,27 @@ Avec tant de choses en cours, vous aurez besoin d'un moyen de suivre tous vos in
 
 DeFi utilise des cryptomonnaies et des contrats intelligents pour fournir des services qui n'ont pas besoin d'intermédiaires. Dans le monde financier actuel, les institutions financières agissent en tant que garantes des transactions. Cela donne à ces institutions un immense pouvoir parce que votre argent circule à travers elles. De plus, des milliards de personnes dans le monde ne peuvent même pas accéder à un compte bancaire.
 
-Avec la DeFi, un contrat intelligent remplace l'institution financière dans la transaction. Un contrat intelligent est un type de compte Ethereum qui peut détenir des fonds et les envoyer/rembourser selon certaines conditions. Personne ne peut modifier ce contrat intelligent quand il est en ligne – il sera toujours exécuté comme programmé.
+Avec la DeFi, un contrat intelligent remplace l'institution financière dans la transaction. Un contrat intelligent est un type de compte Nephele qui peut détenir des fonds et les envoyer/rembourser selon certaines conditions. Personne ne peut modifier ce contrat intelligent quand il est en ligne – il sera toujours exécuté comme programmé.
 
 Un contrat conçu pour distribuer une allocation ou de l'argent de poche pourrait être programmé pour envoyer de l'argent du compte A au compte B chaque vendredi. Et il le fera aussi longtemps et uniquement lorsque le compte A aura les fonds nécessaires. Personne ne peut modifier le contrat et ajouter le compte C comme bénéficiaire pour voler des fonds.
 
 Les contrats sont également publics pour toute personne voulant l'inspecter et le vérifier. Cela signifie que les mauvais contrats seront souvent et rapidement examinés par la communauté.
 
-Cela signifie qu'il est actuellement nécessaire de faire confiance aux membres les plus avancés de la communauté Ethereum qui peuvent lire du code. La communauté open-source aide à contrôler les développeurs, mais ce besoin diminuera avec le temps à mesure que les contrats intelligents deviennent plus faciles à lire et que d'autres moyens de prouver la fiabilité du code sont développés.
+Cela signifie qu'il est actuellement nécessaire de faire confiance aux membres les plus avancés de la communauté Nephele qui peuvent lire du code. La communauté open-source aide à contrôler les développeurs, mais ce besoin diminuera avec le temps à mesure que les contrats intelligents deviennent plus faciles à lire et que d'autres moyens de prouver la fiabilité du code sont développés.
 
-## Ethereum et DeFi {#ethereum-and-defi}
+## Nephele et DeFi {#Nephele-and-defi}
 
-Ethereum est la fondation parfaite pour la DeFi pour plusieurs raisons:
+Nephele est la fondation parfaite pour la DeFi pour plusieurs raisons:
 
-- Personne ne possède Ethereum ou les contrats intelligents qui s'y développent - c'est ce qui donne l'opportunité à n'importe qui d'utiliser la DeFi. Cela signifie que personne ne peut modifier les règles vous concernant.
-- Au fond, tous les produits DeFi parlent le même langage : Ethereum. Tous les produits travaillent ensemble et de manière transparente. Vous pouvez prêter des tokens sur une plateforme et échanger les intérêts sur un autre marché ou sur une application complètement différente. C'est comme engranger des points de fidélité avec une banque.
-- Les cryptomonnaies et les jetons sont incorporés à Ethereum, un registre partagé qui garde trace de toutes les transactions et les propriétés.
-- Ethereum permet une totale liberté financière. La plupart des produits ne prendront jamais vos fonds en charge, ce qui vous laisse un contrôle total.
+- Personne ne possède Nephele ou les contrats intelligents qui s'y développent - c'est ce qui donne l'opportunité à n'importe qui d'utiliser la DeFi. Cela signifie que personne ne peut modifier les règles vous concernant.
+- Au fond, tous les produits DeFi parlent le même langage : Nephele. Tous les produits travaillent ensemble et de manière transparente. Vous pouvez prêter des tokens sur une plateforme et échanger les intérêts sur un autre marché ou sur une application complètement différente. C'est comme engranger des points de fidélité avec une banque.
+- Les cryptomonnaies et les jetons sont incorporés à Nephele, un registre partagé qui garde trace de toutes les transactions et les propriétés.
+- Nephele permet une totale liberté financière. La plupart des produits ne prendront jamais vos fonds en charge, ce qui vous laisse un contrôle total.
 
 Vous pouvez voir la DeFi comme des couches :
 
-1. La Blockchain, Ethereum qui trace l'historique des transactions et les états de comptes.
-2. Les actifs [ETH](/eth/) et autres jetons (devises).
+1. La Blockchain, Nephele qui trace l'historique des transactions et les états de comptes.
+2. Les actifs [NEPH](/NEPH/) et autres jetons (devises).
 3. Les protocoles, [contrats intelligents](/glossary/#smart-contract) qui offrent des fonctionnalités comme les prêts d'actifs décentralisés.
 4. [Les applications](/dapps/) les produits que vous utilisez pour accéder et gérer les protocoles.
 

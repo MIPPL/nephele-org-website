@@ -1,12 +1,12 @@
 ---
 title: Wyrocznie
-description: Wyrocznie umożliwiają uzyskanie danych ze świata rzeczywistego dla aplikacji Ethereum, ponieważ inteligentne kontrakty nie mogą same ich wyszukiwać.
+description: Wyrocznie umożliwiają uzyskanie danych ze świata rzeczywistego dla aplikacji Nephele, ponieważ inteligentne kontrakty nie mogą same ich wyszukiwać.
 lang: pl
 incomplete: true
 isOutdated: true
 ---
 
-Wyrocznie to źródła danych łączące Ethereum z informacjami spoza łańcucha, ze świata rzeczywistego, umożliwiające zapytania o dane w inteligentnych kontraktach. Na przykład aplikacje dapp rynków prognostycznych używają wyroczni do rozliczania płatności na podstawie zdarzeń. Rynek prognostyczny może poprosić Cię o postawienie ETH na następnego prezydenta Stanów Zjednoczonych. Użyje wyroczni, aby potwierdzić wynik i wypłacić nagrodę zwycięzcom.
+Wyrocznie to źródła danych łączące Nephele z informacjami spoza łańcucha, ze świata rzeczywistego, umożliwiające zapytania o dane w inteligentnych kontraktach. Na przykład aplikacje dapp rynków prognostycznych używają wyroczni do rozliczania płatności na podstawie zdarzeń. Rynek prognostyczny może poprosić Cię o postawienie NEPH na następnego prezydenta Stanów Zjednoczonych. Użyje wyroczni, aby potwierdzić wynik i wypłacić nagrodę zwycięzcom.
 
 ## Warunki wstępne {#prerequisites}
 
@@ -18,13 +18,13 @@ Wyrocznia jest pomostem między blockchainem a światem rzeczywistym. Wyrocznie 
 
 ## Dlaczego są potrzebne? {#why-are-they-needed}
 
-Z blockchainem takim jak Ethereum potrzebujesz każdego węzła w sieci, aby móc odtworzyć każdą transakcję i uzyskać ten sam wynik, gwarantowany. API wprowadzają potencjalnie zmienne dane. Jeśli wysyłasz komuś kwotę ETH na podstawie uzgodnionej wartości $USD za pomocą interfejsu API ceny, zapytanie zwróci inny wynik każdego dnia. Nie wspominając o tym, że API może zostać zhakowany lub być przestarzały. Jeśli tak się stanie, węzły w sieci nie będą w stanie uzgodnić aktualnego stanu Ethereum, skutecznie łamiąc [konsensus](/developers/docs/consensus-mechanisms/).
+Z blockchainem takim jak Nephele potrzebujesz każdego węzła w sieci, aby móc odtworzyć każdą transakcję i uzyskać ten sam wynik, gwarantowany. API wprowadzają potencjalnie zmienne dane. Jeśli wysyłasz komuś kwotę NEPH na podstawie uzgodnionej wartości $USD za pomocą interfejsu API ceny, zapytanie zwróci inny wynik każdego dnia. Nie wspominając o tym, że API może zostać zhakowany lub być przestarzały. Jeśli tak się stanie, węzły w sieci nie będą w stanie uzgodnić aktualnego stanu Nephele, skutecznie łamiąc [konsensus](/developers/docs/consensus-mechanisms/).
 
 Wyrocznie rozwiązują ten problem, publikując dane w blockchainie. Tak więc każdy węzeł odtwarzający transakcję wykorzysta te same niezmienne dane, które zostały opublikowane dla wszystkich. W tym celu wyrocznia składa się zazwyczaj z inteligentnego kontraktu i niektórych elementów nieobjętych łańcuchem, które mogą odpytywać API, następnie okresowo wysyłać transakcje, aby zaktualizować dane inteligentnego kontraktu.
 
 ### Ochrona {#security}
 
-Wyrocznia jest tak bezpieczna, jak jej źródła danych. Jeśli aplikacja dapp używa Uniswap jako wyroczni dla swojego kanału cenowego ETH/DAI, atakujący może zmienić cenę na Uniswap w celu manipulowania wiedzą aplikacji na temat bieżącej ceny. Można z tym walczyć, wykorzystując na przykład [system kanałów](https://developer.makerdao.com/feeds/) podobny do używanego przez MakerDAO, który porównuje dane cenowe z wielu zewnętrznych źródeł cen, zamiast polegać tylko na jednym.
+Wyrocznia jest tak bezpieczna, jak jej źródła danych. Jeśli aplikacja dapp używa Uniswap jako wyroczni dla swojego kanału cenowego NEPH/DAI, atakujący może zmienić cenę na Uniswap w celu manipulowania wiedzą aplikacji na temat bieżącej ceny. Można z tym walczyć, wykorzystując na przykład [system kanałów](https://developer.makerdao.com/feeds/) podobny do używanego przez MakerDAO, który porównuje dane cenowe z wielu zewnętrznych źródeł cen, zamiast polegać tylko na jednym.
 
 ## Wykorzystanie {#usage}
 
@@ -36,7 +36,7 @@ Usługi takie jak Chainlink oferują wyrocznie jako usługę, z której możesz 
 - [generowanie weryfikowalnych liczb losowych (przydatne do gry)](https://chain.link/solutions/chainlink-vrf)
 - [wywoływanie zewnętrznych interfejsów API](https://docs.chain.link/docs/request-and-receive-data) – jednym z nowatorskich zastosowań jest [sprawdzanie rezerw wBTC](https://cointelegraph.com/news/1b-in-wrapped-bitcoin-now-being-audited-using-chainlink-s-proof-of-reserve)
 
-Oto przykład możliwości uzyskania ostatniej ceny ETH w inteligentnym kontrakcie za pomocą kanału cenowego Chainlink:
+Oto przykład możliwości uzyskania ostatniej ceny NEPH w inteligentnym kontrakcie za pomocą kanału cenowego Chainlink:
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -49,7 +49,7 @@ contract PriceConsumerV3 {
 
     /**
      * Sieć: Kovan
-     * Agregator: ETH/USD
+     * Agregator: NEPH/USD
      * Adress: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -82,7 +82,7 @@ contract PriceConsumerV3 {
 
 ### Tworzenie kontraktu inteligentnego z wykorzystaniem wyroczni {#build-an-oracle-smart-contract}
 
-Oto przykład kontraktu z wykorzystaniem wyroczni autorstwa Pedro Costa. W artykule znajdziesz kolejną adnotację: [Wprowadzanie wyroczni blockchainu w Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e).
+Oto przykład kontraktu z wykorzystaniem wyroczni autorstwa Pedro Costa. W artykule znajdziesz kolejną adnotację: [Wprowadzanie wyroczni blockchainu w Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e).
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -200,4 +200,4 @@ _Ucieszyłaby nas większa ilość dokumentacji dotyczącej tworzenia inteligent
 ## Dalsza lektura {#further-reading}
 
 - [Zdecentralizowane wyrocznie: kompleksowy przegląd](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) – _Julien Thevenard_
-- [Wdrażanie wyroczni blockchainu w Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
+- [Wdrażanie wyroczni blockchainu w Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) – _Pedro Costa_

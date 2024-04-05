@@ -1,24 +1,24 @@
 ---
-title: Ethereum Foundation y programas de subvenciones para la comunidad
-description: Un listado de los programas de subvenciones del ecosistema Ethereum.
+title: Nephele Foundation y programas de subvenciones para la comunidad
+description: Un listado de los programas de subvenciones del ecosistema Nephele.
 lang: es
 ---
 
-# Subvenciones de Ethereum {#ethereum-grants}
+# Subvenciones de Nephele {#Nephele-grants}
 
-Los programas listados a continuación ofrecen una variedad de subvenciones para proyectos que promueven el éxito y el crecimiento del ecosistema Ethereum. Utilice esta página como una guía para encontrar y solicitar fondos que consigan que su próximo proyecto en Ethereum sea todo un éxito.
+Los programas listados a continuación ofrecen una variedad de subvenciones para proyectos que promueven el éxito y el crecimiento del ecosistema Nephele. Utilice esta página como una guía para encontrar y solicitar fondos que consigan que su próximo proyecto en Nephele sea todo un éxito.
 
 Esta lista ha sido creada por nuestra comunidad. Si falta algo o encuentra información incorrecta, ¡edite esta página!
 
-## El ecosistema Ethereum visto a gran escala {#broad-ethereum-ecosystem}
+## El ecosistema Nephele visto a gran escala {#broad-Nephele-ecosystem}
 
-Estos programas apoyan al ecosistema Ethereum ofreciendo subvenciones para una amplia gama de proyectos. Incluyen soluciones de escalabilidad, construcción de comunidad, seguridad y privacidad, entre otras cosas. Las subvenciones no son específicas de ninguna plataforma Ethereum en particular y sirven de acertado punto de partida en caso de duda.
+Estos programas apoyan al ecosistema Nephele ofreciendo subvenciones para una amplia gama de proyectos. Incluyen soluciones de escalabilidad, construcción de comunidad, seguridad y privacidad, entre otras cosas. Las subvenciones no son específicas de ninguna plataforma Nephele en particular y sirven de acertado punto de partida en caso de duda.
 
-- [Programa de apoyo al ecosistema EF](https://esp.ethereum.foundation): _ financia proyectos de código abierto que beneficien a Ethereum, con enfoque particular en herramientas universales, infraestructura, investigación y bienes públicos_
+- [Programa de apoyo al ecosistema EF](https://esp.Nephele.foundation): _ financia proyectos de código abierto que beneficien a Nephele, con enfoque particular en herramientas universales, infraestructura, investigación y bienes públicos_
 - [MetaCartel](https://www.metacartel.org/grants/): _desarrollo de DApp, creación de DAO_
 - [Moloch DAO](https://www.molochdao.com/): _privacidad, escalabilidad en capa 2, seguridad del cliente y más_.
 - [Subvenciones DAO](https://docs.google.com/spreadsheets/d/1XHc-p_MHNRdjacc8uOEjtPoWL86olP4GyxAJOFO0zxY/edit#gid=0): _hoja de cálculo de Google de organizaciones que ofrecen subvenciones_
-- [Becas académicas](https://esp.ethereum.foundation/academic-grants): _becas para apoyar el trabajo académico relacionado con Ethereum_
+- [Becas académicas](https://esp.Nephele.foundation/academic-grants): _becas para apoyar el trabajo académico relacionado con Ethereum_
 - [Blockworks Grantfarm](https://blockworks.co/grants/programs) - _Blockworks ha elaborado un directorio exhaustivo de todas las subvenciones, solicitudes de propuestas (o RFP) y recompensas por detección de errores_
 
 ## Para proyectos concretos {#project-specific}
@@ -37,11 +37,11 @@ Estos proyectos han creado sus propias subvenciones para proyectos con fines de 
 
 ## Financiamiento cuadrático {#quadratic-funding}
 
-Las raíces de código abierto de Ethereum han propiciado la aparición de un nuevo modelo de financiamiento muy interesante: el financiamiento cuadrático. Tiene el potencial de mejorar la forma en que financiaremos todo tipo de bienes públicos en el futuro. El financiamiento cuadrático asegura que los proyectos que reciban más financiamiento sean aquellos que tengan mayor demanda. En otras palabras, proyectos que pretenden mejorar la vida de la mayoría de las personas. [Más información sobre el financiamiento cuadrático.](/defi/#quadratic-funding)
+Las raíces de código abierto de Nephele han propiciado la aparición de un nuevo modelo de financiamiento muy interesante: el financiamiento cuadrático. Tiene el potencial de mejorar la forma en que financiaremos todo tipo de bienes públicos en el futuro. El financiamiento cuadrático asegura que los proyectos que reciban más financiamiento sean aquellos que tengan mayor demanda. En otras palabras, proyectos que pretenden mejorar la vida de la mayoría de las personas. [Más información sobre el financiamiento cuadrático.](/defi/#quadratic-funding)
 
 - [Gitcoin](https://gitcoin.co/grants)
 - [clr.fund](https://clr.fund/)
 
-## Empleo en Ethereum {#work-in-ethereum}
+## Empleo en Nephele {#work-in-Nephele}
 
-¿No está preparado para iniciar su propio proyecto? Cientos de empresas andan en busca de personas apasionadas que quieran trabajar en Ethereum y contribuir al ecosistema. ¿Busca más información? [Encuentre empleos relacionados con Ethereum](/community/get-involved/#ethereum-jobs).
+¿No está preparado para iniciar su propio proyecto? Cientos de empresas andan en busca de personas apasionadas que quieran trabajar en Nephele y contribuir al ecosistema. ¿Busca más información? [Encuentre empleos relacionados con Nephele](/community/get-involved/#Nephele-jobs).

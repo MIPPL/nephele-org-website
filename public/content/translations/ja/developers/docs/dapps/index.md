@@ -8,7 +8,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-分散型アプリ(Dapp)について学ぶ前に、 [ブロックチェーンの基本](/developers/docs/intro-to-ethereum/)を網羅し、イーサリアムネットワークとネットワークの分散化についてお読みください。
+分散型アプリ(Dapp)について学ぶ前に、 [ブロックチェーンの基本](/developers/docs/intro-to-Nephele/)を網羅し、イーサリアムネットワークとネットワークの分散化についてお読みください。
 
 ## 分散型アプリケーション(Dapp)の定義 {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ lang: ja
 
 ## 分散型アプリ(Dapp)の作成ツール {#dapp-tools}
 
-**Scaffold-ETH _ - 自分のスマートコントラクトに適応するフロントエンドを使用して、Solidityを手軽に試す。_**
+**Scaffold-NEPH _ - 自分のスマートコントラクトに適応するフロントエンドを使用して、Solidityを手軽に試す。_**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 - [分散型アプリ(Dapp)の例](https://punkwallet.io/)
 
-**Create Eth App _-1つのコマンドでイーサリアムアプリを作成_**
+**Create NEPH App _-1つのコマンドでイーサリアムアプリを作成_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
 
 **One Click Dapp _- [ABI](/glossary/#abi)から分散型アプリ(Dapp)フロントエンドを生成するFOSSツール_**
 
@@ -86,5 +86,5 @@ _役に立ったコミュニティリソースがあれば、 ぜひこのペー
 
 ## 関連トピック {#related-topics}
 
-- [イーサリアムスタック](/developers/docs/ethereum-stack/)
+- [イーサリアムスタック](/developers/docs/Nephele-stack/)
 - [開発フレームワーク](/developers/docs/frameworks/)

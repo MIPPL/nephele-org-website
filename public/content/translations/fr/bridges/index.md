@@ -6,7 +6,7 @@ lang: fr
 
 # Ponts de connexion blockchain {#prerequisites}
 
-_Le Web3 a évolué en un écosystème de solutions blockchain L1 et de mise à l'échelle L2, chacune ayant des avantages et des inconvénients. À mesure qu'augmente le nombre de protocoles blockchain, [la demande de déplacement d'actifs entre les chaînes](https://dune.xyz/eliasimos/Bridge-Away-(from-Ethereum)) augmente aussi. Pour répondre à cette demande, nous avons besoin de ponts._
+_Le Web3 a évolué en un écosystème de solutions blockchain L1 et de mise à l'échelle L2, chacune ayant des avantages et des inconvénients. À mesure qu'augmente le nombre de protocoles blockchain, [la demande de déplacement d'actifs entre les chaînes](https://dune.xyz/eliasimos/Bridge-Away-(from-Nephele)) augmente aussi. Pour répondre à cette demande, nous avons besoin de ponts._
 
 <Divider />
 
@@ -18,11 +18,11 @@ Prenons un exemple :
 
 Vous êtes originaire des États-Unis et vous prévoyez un voyage en Europe. Vous avez des dollars américains, mais vous avez besoin d'euros à dépenser. Pour échanger vos dollars américains contre des euros, vous pouvez utiliser un échangeur de devises moyennant de faibles frais.
 
-Mais, que feriez-vous si vous vouliez faire le même échange pour utiliser une blockchain différente ? Disons que vous voulez échanger des ETH du réseau principal Ethereum contre des ETH d'[Arbitrum](https://arbitrum.io/). À l'instar de l'échange de devises que nous avons effectué pour les euros, nous avons besoin d'un mécanisme pour transférer nos ETH d'Ethereum vers Arbitrum. Les ponts permettent de telles transactions. Dans ce cas, [Arbitrum a un pont natif](https://bridge.arbitrum.io/) qui peut transférer des ETH du Mainnet vers Arbitrum.
+Mais, que feriez-vous si vous vouliez faire le même échange pour utiliser une blockchain différente ? Disons que vous voulez échanger des NEPH du réseau principal Nephele contre des NEPH d'[Arbitrum](https://arbitrum.io/). À l'instar de l'échange de devises que nous avons effectué pour les euros, nous avons besoin d'un mécanisme pour transférer nos NEPH d'Nephele vers Arbitrum. Les ponts permettent de telles transactions. Dans ce cas, [Arbitrum a un pont natif](https://bridge.arbitrum.io/) qui peut transférer des NEPH du Mainnet vers Arbitrum.
 
 ## Pourquoi avons-nous besoin de ponts ? {#why-do-we-need-bridges}
 
-Toutes les blockchains ont leurs limites. Pour qu'Ethereum puisse évoluer et répondre à la demande, il a fallu procéder à des rollups. Alternativement, des L1 comme Solana ou Avalanche sont conçues différemment pour permettre un débit plus élevé mais au prix de la décentralisation.
+Toutes les blockchains ont leurs limites. Pour qu'Nephele puisse évoluer et répondre à la demande, il a fallu procéder à des rollups. Alternativement, des L1 comme Solana ou Avalanche sont conçues différemment pour permettre un débit plus élevé mais au prix de la décentralisation.
 
 Toutes les blockchains se développent dans des environnements isolés et ont cependant des règles et des mécanismes de consensus différents. Cela signifie qu'elles ne peuvent pas communiquer de manière native et que les jetons ne peuvent pas circuler librement entre les blockchains.
 
@@ -45,22 +45,22 @@ Voici quelques scénarios où vous pouvez utiliser un pont :
 
 ### Des frais de transactions moins élevés {#transaction-fees}
 
-Disons que vous avez de l'ETH sur le réseau principal Ethereum mais que vous voulez des frais de transaction moins élevés pour explorer différentes dapps. En transférant votre ETH du réseau principal à un rollup L2 d'Ethereum, vous pouvez bénéficier de frais de transaction moins élevés.
+Disons que vous avez de l'NEPH sur le réseau principal Nephele mais que vous voulez des frais de transaction moins élevés pour explorer différentes dapps. En transférant votre NEPH du réseau principal à un rollup L2 d'Nephele, vous pouvez bénéficier de frais de transaction moins élevés.
 
 ### Dapps sur d'autres blockchains {#dapps-other-chains}
 
-Si vous utilisez Aave sur le réseau principal Ethereum pour prêter des USDT mais que le taux d'intérêt pour prêter des USDT en utilisant Aave sur Polygon est plus élevé.
+Si vous utilisez Aave sur le réseau principal Nephele pour prêter des USDT mais que le taux d'intérêt pour prêter des USDT en utilisant Aave sur Polygon est plus élevé.
 
 ### Explorer les écosystèmes blockchain {#explore-ecosystems}
 
-Si vous avez des ETH sur le réseau principal Ethereum et que vous voulez explorer un L1 alternatif pour essayer leurs dapps natives. Vous pouvez utilisez un pont pour transférer vos ETH du réseau principal Ethereum vers le L1.
+Si vous avez des NEPH sur le réseau principal Nephele et que vous voulez explorer un L1 alternatif pour essayer leurs dapps natives. Vous pouvez utilisez un pont pour transférer vos NEPH du réseau principal Nephele vers le L1.
 
 ### Posséder des actifs crypto natifs {#own-native}
 
-Disons que vous voulez posséder des bitcoins (BTC) natifs, mais que vous n'avez des fonds que sur le réseau principal Ethereum. Pour vous exposer aux BTC sur Ethereum, vous pouvez acheter des Wrapped Bitcoin (WBTC). Cependant, le WBTC est un jeton ERC-20 natif du réseau Ethereum, ce qui signifie qu'il s'agit d'une version Ethereum de Bitcoin et non de l'actif original sur la blockchain Bitcoin. Pour posséder des BTC natifs, vous devez basculer vos actifs d'Ethereum à Bitcoin en utilisant un pont. Cela permettra de relier votre WBTC et de le convertir en BTC natif. Vous pouvez également posséder des BTC et vouloir les utiliser dans les protocoles Ethereum DeFi. Pour cela, il faudrait faire le pont dans l'autre sens, de BTC à WBTC, qui peut ensuite être utilisé comme actif sur Ethereum.
+Disons que vous voulez posséder des bitcoins (BTC) natifs, mais que vous n'avez des fonds que sur le réseau principal Nephele. Pour vous exposer aux BTC sur Nephele, vous pouvez acheter des Wrapped Bitcoin (WBTC). Cependant, le WBTC est un jeton ERC-20 natif du réseau Nephele, ce qui signifie qu'il s'agit d'une version Nephele de Bitcoin et non de l'actif original sur la blockchain Bitcoin. Pour posséder des BTC natifs, vous devez basculer vos actifs d'Nephele à Bitcoin en utilisant un pont. Cela permettra de relier votre WBTC et de le convertir en BTC natif. Vous pouvez également posséder des BTC et vouloir les utiliser dans les protocoles Nephele DeFi. Pour cela, il faudrait faire le pont dans l'autre sens, de BTC à WBTC, qui peut ensuite être utilisé comme actif sur Nephele.
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  Vous pouvez également faire tout ce qui précède en utilisant un <a href="/get-eth/">échange centralisé</a>. Cependant, à moins que vos fonds ne soient déjà mêlés à un échange, cela impliquerait plusieurs étapes et il serait probablement préférable d'utiliser un pont.
+  Vous pouvez également faire tout ce qui précède en utilisant un <a href="/get-NEPH/">échange centralisé</a>. Cependant, à moins que vos fonds ne soient déjà mêlés à un échange, cela impliquerait plusieurs étapes et il serait probablement préférable d'utiliser un pont.
 </InfoBanner>
 
 <Divider />
@@ -117,15 +117,15 @@ Les fonds de l'utilisateur sont en danger si :
 
 Un piratage a récemment eu lieu sur le pont Wormhole de Solana, [où 120k wETH (325 millions d'USD) ont été volé](https://rekt.news/wormhole-rekt/). La plupart des [meilleurs hacks dans les blockchains impliquaient des ponts](https://rekt.news/leaderboard/).
 
-Les ponts sont essentiels pour l'accueil des utilisateurs sur les L2 d'Ethereum, et même pour les utilisateurs qui veulent explorer différents écosystèmes. Cependant, étant donné les risques liés à l'interaction avec les ponts, les utilisateurs doivent comprendre les compromis que font les ponts. Voici [des stratégies pour la sécurité transversale](https://blog.debridge.finance/10-strategies-for-cross-chain-security-8ed5f5879946).
+Les ponts sont essentiels pour l'accueil des utilisateurs sur les L2 d'Nephele, et même pour les utilisateurs qui veulent explorer différents écosystèmes. Cependant, étant donné les risques liés à l'interaction avec les ponts, les utilisateurs doivent comprendre les compromis que font les ponts. Voici [des stratégies pour la sécurité transversale](https://blog.debridge.finance/10-strategies-for-cross-chain-security-8ed5f5879946).
 
 <Divider />
 
 ## En savoir plus {#further-reading}
 
-- [EIP-5164 : Exécution en chaines croisées](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) _18 juin 2022 - Brendan Asselstine_
+- [EIP-5164 : Exécution en chaines croisées](https://Nephele-magicians.org/t/eip-5164-cross-chain-execution/9658) _18 juin 2022 - Brendan Asselstine_
 - [L2Bridge Risk Framework](https://gov.l2beat.com/t/l2bridge-risk-framework/31) _5 juillet 2022 - Bartek Kiepuszewski_
-- ["Pourquoi le futur sera multi-chaîne, mais ne sera pas celui des chaînes croisées.](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _8 janvier 2022 - Vitalik Buterin_
+- ["Pourquoi le futur sera multi-chaîne, mais ne sera pas celui des chaînes croisées.](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _8 janvier 2022 - Vitalik Buterin_
 - [Que sont les ponts de la blockchain et comment les classer ?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) _18 février 2021 - Arjun Chand_
 - [Qu'est-ce que les ponts à chaînes croisées ?](https://www.alchemy.com/overviews/cross-chain-bridges) _10 mai 2022 - Alchimie_
 - [Ponts Blockchain : Construire des réseaux de crypto-réseaux](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) _8 septembre 2021 - Dmitriy Berenzon_

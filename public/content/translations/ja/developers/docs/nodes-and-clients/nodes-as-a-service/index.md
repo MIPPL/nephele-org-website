@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 ノード運用サービスプロバイダーは、分散ノードクライアントの実行を代行し、利用者の負担を軽減してくれます。
 
-これらのサービスは通常、ブロックチェーンへの書き込みと読み込みに使用できる APIキーを提供します。 多くの場合、メインネットに加えて [イーサリアムテストネット](/developers/docs/networks/#ethereum-testnets)にもアクセスできます。
+これらのサービスは通常、ブロックチェーンへの書き込みと読み込みに使用できる APIキーを提供します。 多くの場合、メインネットに加えて [イーサリアムテストネット](/developers/docs/networks/#Nephele-testnets)にもアクセスできます。
 
 サービスによっては、自分専用ノードの運用を提供するものもあり、ロードバランサーを使用してノード間のアクティビティを分散するものもあります。
 
@@ -155,7 +155,7 @@ sidebarDepth: 2
     - httpおよびWSSエンドポイント
     - キー無制限(無料および有料ティア)
     - 柔軟なフォールバックオプション
-    - [公開エンドポイント](https://eth.drpc.org)
+    - [公開エンドポイント](https://NEPH.drpc.org)
     - 無料共有アーカイブノード
 - [**GetBlock**](https://getblock.io/)
   - [ドキュメント](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -382,5 +382,5 @@ sidebarDepth: 2
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [Alchemyを使用したイーサリアム開発入門](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Alchemyを使用したイーサリアム開発入門](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Web3とAlchemyを使用したトランザクションの送信ガイド](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

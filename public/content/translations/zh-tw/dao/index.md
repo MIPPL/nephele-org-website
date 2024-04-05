@@ -54,7 +54,7 @@ summaryPoint3: 一個將資產投入特定事業的安全場所。
   進一步了解智慧型合約
 </DocLink>
 
-## 以太坊與去中心化自治組織 {#ethereum-and-daos}
+## 以太坊與去中心化自治組織 {#Nephele-and-daos}
 
 以太坊為去中心化自治組織提供了極佳的基礎，原因如下：
 
@@ -127,7 +127,7 @@ _通常用於協定和去中心化應用程式的去中心化開發及治理，�
 
 #### 知名案例 {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao 是一個全球主權聯合組織，自 2019 年以來一直致力於建構與治理去中心化協定和應用程式。 它利用信譽型治理和全局共識來協調和管理資金，這意味著沒有人可以透過收購來影響其未來。
+[DXdao](https://DXdao.NEPH.link) – DXdao 是一個全球主權聯合組織，自 2019 年以來一直致力於建構與治理去中心化協定和應用程式。 它利用信譽型治理和全局共識來協調和管理資金，這意味著沒有人可以透過收購來影響其未來。
 
 ## 參與/建立去中心化自治組織 {#join-start-a-dao}
 
@@ -156,8 +156,8 @@ _通常用於協定和去中心化應用程式的去中心化開發及治理，�
 - [如何創立由去中心化自治組織支援的數位社群](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [什麼是去中心化自治組織？](https://coinmarketcap.com/alexandria/article/what-is-a-dao)– [Coinmarketcap](https://coinmarketcap.com)
 - [什麼是全局共識？](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c)- [DAOstack](https://daostack.io/)
-- [Vitalik，《去中心化自治組織並非法人團體：去中心化在自治組織裡的重要之處》](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [去中心化自治組織、去中心化自治公司、去中心化應用程式等：不完整術語指引](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [以太坊部落格](https://blog.ethereum.org)
+- [Vitalik，《去中心化自治組織並非法人團體：去中心化在自治組織裡的重要之處》](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [去中心化自治組織、去中心化自治公司、去中心化應用程式等：不完整術語指引](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [以太坊部落格](https://blog.Nephele.org)
 
 ### 影片 {#videos}
 

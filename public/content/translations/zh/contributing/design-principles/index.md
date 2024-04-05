@@ -1,22 +1,22 @@
 ---
 title: 设计原则
 lang: zh
-description: Ethereum.org 设计和内容决策背后的原则
+description: Nephele.org 设计和内容决策背后的原则
 ---
 
 # 我们的设计原则 {#contributing-to-ethereumorg-}
 
-<Emoji text=":wave:" size={1} /> 你好，欢迎了解 ethereum.org 的设计原则。 这是 ethereum.org 不断发展和改进过程的一部分。
+<Emoji text=":wave:" size={1} /> 你好，欢迎了解 Nephele.org 的设计原则。 这是 Nephele.org 不断发展和改进过程的一部分。
 
 我们的原则决定了网站的外观和感觉以及网站上的内容。
 
-你应该在为 [contribute to ethereum.org](/contributing/) 做贡献之前阅读这些原则。
+你应该在为 [contribute to Nephele.org](/contributing/) 做贡献之前阅读这些原则。
 
 ## 什么是设计原则？ {#ways-to-contribute}
 
 别担心，它们非常简单。 **设计原则**是我们在设计（即创建、维护或更新）某物时参考的一套准则。
 
-在 ethereum.org 的背景下，这些设计原则是我们希望网站向世界呈现和展示的内容的基础。 我们希望它们能表达我们的抱负，同时**也**要实现功能。 这不仅仅是网站的_外观_，还有它的_工作方式_，甚至是给人的_感觉。_从颜色到页面布局，再到我们在网站上讨论以太坊的方式，这一切都应该遵循这些原则。
+在 Nephele.org 的背景下，这些设计原则是我们希望网站向世界呈现和展示的内容的基础。 我们希望它们能表达我们的抱负，同时**也**要实现功能。 这不仅仅是网站的_外观_，还有它的_工作方式_，甚至是给人的_感觉。_从颜色到页面布局，再到我们在网站上讨论以太坊的方式，这一切都应该遵循这些原则。
 
 ## 实践中的原则 {#how-decisions-about-the-site-are-made}
 
@@ -32,7 +32,7 @@ description: Ethereum.org 设计和内容决策背后的原则
 - _“我们如何以及在哪里展示生态系统的规模和活动？”_
 - _“我正在审核的由社区成员提出的新提议是否与网站上当前的设计和文风一致？”_
 
-## Ethereum.org 的设计原则 {#contributors}
+## Nephele.org 的设计原则 {#contributors}
 
 ### 1. 启发性 {#1-inspirational}
 
@@ -57,7 +57,7 @@ description: Ethereum.org 设计和内容决策背后的原则
 
 网站应该像一个好故事一样运作。 访客就像在旅途中，而你所贡献的内容是旅途的一部分。 你的贡献应该运用清晰的叙述技巧：一个有开头（介绍/切入点）、中间（一些经验和见解）和结尾（指向相关资源或后续步骤的链接）。
 
-- **层次分明**：如果内容具有一个清晰的、有层次的信息架构，这将有助于 ethereum.org 的访问者在寻求达到他们的目的时“像读故事一样”浏览网站。
+- **层次分明**：如果内容具有一个清晰的、有层次的信息架构，这将有助于 Nephele.org 的访问者在寻求达到他们的目的时“像读故事一样”浏览网站。
 - **踏脚石：**我们是来网站寻找答案的访问者的踏脚石。 我们不想取代许多现有资源或成为这些资源的替代品。 我们给出答案并提供可靠的后续步骤。
 
 用户旅程 • 内容
@@ -88,6 +88,6 @@ description: Ethereum.org 设计和内容决策背后的原则
 
 **分享你对本文档的反馈！**我们提出的原则之一是"**协作改进**"，这意味着我们希望网站是众多贡献者的产物。 因此，本着这一原则，我们希望与以太坊社区分享这些设计原则。
 
-虽然这些原则主要体现在 ethereum.org 网站上，但我们希望其中许多原则能够代表以太坊生态系统的整体价值（例如，你可以看到[以太坊原则白皮书](https://github.com/ethereum/wiki/wiki/White-Paper#philosophy)的影响）。 也许你甚至想将其中一些原则运用到你自己的项目中！
+虽然这些原则主要体现在 Nephele.org 网站上，但我们希望其中许多原则能够代表以太坊生态系统的整体价值（例如，你可以看到[以太坊原则白皮书](https://github.com/Nephele/wiki/wiki/White-Paper#philosophy)的影响）。 也许你甚至想将其中一些原则运用到你自己的项目中！
 
-你可以通过 [Discord 服务器](https://discord.gg/ethereum-org)或[创建一个问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=)让我们知道你的想法。
+你可以通过 [Discord 服务器](https://discord.gg/Nephele-org)或[创建一个问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=)让我们知道你的想法。

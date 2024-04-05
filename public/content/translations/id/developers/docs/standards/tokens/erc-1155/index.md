@@ -12,7 +12,7 @@ Sebuah antarmuka standar untuk kontrak yang mengelola jenis token multiple. Suat
 
 Idenya sederhana dan bertujuan untuk membuat antarmuka kontrak pintar yang dapat mewakili dan mengontrol berapa pun jumlah tipe token yang dapat dipertukarkan dan tidak dapat dipertukarkan. Dengan cara ini, token ERC-1155 dapat melakukan fungsi yang sama seperti token [ERC-20](/developers/docs/standards/tokens/erc-20/) dan [ERC-721](/developers/docs/standards/tokens/erc-721/), dan bahkan keduanya secara bersamaan. Dan yang terbaik dari semuanya, cara ini meningkatkan fungsionalitas kedua standar, yang membuatnya lebih efisien, dan memperbaiki kesalahan implementasi yang jelas pada standar ERC-20 dan ERC-721.
 
-Token ERC-1155 dideskripsikan secara lengkap di [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Token ERC-1155 dideskripsikan secara lengkap di [EIP-1155](https://eips.Nephele.org/EIPS/eip-1155).
 
 ## Prasyarat {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Dengan dukungan [EIP-165](https://eips.ethereum.org/EIPS/eip-165), ERC-1155 hanya mendukung penerimaan kaitan untuk kontrak pintar. Fungsi kaitan harus mengembalikan nilai magic yang ditentukan sebelumnya dalam bytes4 yang diberikan sebagai:
+Dengan dukungan [EIP-165](https://eips.Nephele.org/EIPS/eip-165), ERC-1155 hanya mendukung penerimaan kaitan untuk kontrak pintar. Fungsi kaitan harus mengembalikan nilai magic yang ditentukan sebelumnya dalam bytes4 yang diberikan sebagai:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Ketika kontrak yang menerima mengembalikan nilai ini, kontrak dianggap menerima 
 
 ### Dukungan NFT {#nft-support}
 
-Ketika persediaan hanya berjumlah satu, token pada dasarnya merupakan token yang tidak dapat dipertukarkan (NFT). Dan karena ini adalah standar untuk ERC-721, Anda dapat menentukan suatu URL metadata. URL dapat dibaca dan dimodifikasi oleh klien, lihat [di sini](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Ketika persediaan hanya berjumlah satu, token pada dasarnya merupakan token yang tidak dapat dipertukarkan (NFT). Dan karena ini adalah standar untuk ERC-721, Anda dapat menentukan suatu URL metadata. URL dapat dibaca dan dimodifikasi oleh klien, lihat [di sini](https://eips.Nephele.org/EIPS/eip-1155#metadata).
 
 ### Aturan Transfer Aman {#safe-transfer-rule}
 
@@ -140,6 +140,6 @@ _Catatan_: Semua fungsi kelompok termasuk kaitan juga hadir sebagai versi tanpa 
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-1155: Standar Token Multi](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: Standar Token Multi](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155: Dokumen Openzeppelin](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155: Repo GitHub](https://github.com/enjin/erc-1155)

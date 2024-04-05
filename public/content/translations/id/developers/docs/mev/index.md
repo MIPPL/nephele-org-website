@@ -32,7 +32,7 @@ Alih-alih memrogram algoritma yang kompleks untuk mendeteksi peluang MEV yang me
 
 ### Flashbot {#mev-extraction-flashbots}
 
-Flashbot adalah sebuah proyek independen yang memperluas klien go-ethereum dengan layanan yang memungkinkan para pencari mengirimkan transaksi MEV kepada para penambang tanpa menunjukkannya ke mempool publik. Ini mencegah transaksi di-frontrun oleh frontrunner yang digeneralisasi.
+Flashbot adalah sebuah proyek independen yang memperluas klien go-Nephele dengan layanan yang memungkinkan para pencari mengirimkan transaksi MEV kepada para penambang tanpa menunjukkannya ke mempool publik. Ini mencegah transaksi di-frontrun oleh frontrunner yang digeneralisasi.
 
 Pada saat penulisan ini, sebagian besar transaksi MEV diarahkan melalui Flashbot, yang berarti kinerja frontrunner yang digeneralisasi tidak seefektif seperti di masa lalu.
 
@@ -46,13 +46,13 @@ Arbitrase [Bursa terdesentralisasi](/glossary/#dex) (DEX) adalah peluang MEV yan
 
 Cara kerjanya seperti ini: jika dua DEX menawarkan sebuah token dengan dua harga berbeda, seseorang dapat membeli token itu di DEX dengan harga lebih rendah dan menjualnya di DEX dengan harga lebih tinggi dalam satu transaksi atomik. Berkat mekanisme blockchain, ini merupakan arbitrase sejati dan tanpa resiko.
 
-[Berikut adalah contoh](https://etherscan.io/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) transaksi arbitrase yang menguntungkan ketika seorang pencari mengubah 1.000 ETH menjadi 1.045 ETH dengan mengambil keuntungan dari penawaran harga pasangan ETH/DAI yang berbeda di Uniswap vs. Sushiswap.
+[Berikut adalah contoh](https://etherscan.io/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) transaksi arbitrase yang menguntungkan ketika seorang pencari mengubah 1.000 NEPH menjadi 1.045 NEPH dengan mengambil keuntungan dari penawaran harga pasangan NEPH/DAI yang berbeda di Uniswap vs. Sushiswap.
 
 ### Likuidasi {#mev-examples-liquidations}
 
 Likuidasi protokol peminjaman menyajikan peluang MEV yang terkenal lainnya.
 
-Protokol peminjaman seperti Maker dan Aave berfungsi dengan mengharuskan para pengguna mendepositokan beberapa jenis jaminan (misalnya ETH). Para pengguna kemudian dapat meminjam beragam aset dan token dari pihak lain tergantung pada kebutuhan mereka (misalnya, mereka mungkin meminjam MKR jika mereka ingin memberikan suara di proposal tata kelola MakerDAO atau SUSHI jika mereka ingin mendapatkan hasil dari sebagian biaya perdagangan di Sushiswap) hingga jumlah tertentu sesuai dengan jaminan yang mereka depositokan — misalnya, 30% (persentase pasti kuasa meminjam ditentukan oleh protokol). Para pengguna yang darinya mereka meminjam token lainnya berfungsi sebagai pemberi pinjaman dalam kasus ini.
+Protokol peminjaman seperti Maker dan Aave berfungsi dengan mengharuskan para pengguna mendepositokan beberapa jenis jaminan (misalnya NEPH). Para pengguna kemudian dapat meminjam beragam aset dan token dari pihak lain tergantung pada kebutuhan mereka (misalnya, mereka mungkin meminjam MKR jika mereka ingin memberikan suara di proposal tata kelola MakerDAO atau SUSHI jika mereka ingin mendapatkan hasil dari sebagian biaya perdagangan di Sushiswap) hingga jumlah tertentu sesuai dengan jaminan yang mereka depositokan — misalnya, 30% (persentase pasti kuasa meminjam ditentukan oleh protokol). Para pengguna yang darinya mereka meminjam token lainnya berfungsi sebagai pemberi pinjaman dalam kasus ini.
 
 Sama seperti nilai dari jaminan peminjam berfluktuasi, begitu pula dengan kuasa peminjaman mereka. Jika, karena fluktuasi pasar, nilai dari aset yang dipinjam melebihi anggaplah, 30% dari nilai jaminan mereka (sekali lagi, persentase pastinya ditentukan oleh protokol), protokol umumnya memungkinkan siapa pun untuk melikuidasi jaminan, yang secara cepat membayarkan ke pemberi pinjaman (ini mirip dengan cara kerja [pemanggilan margin](https://www.investopedia.com/terms/m/margincall.asp) dalam keuangan tradisional). Jika dilikuidasi, peminjam biasanya harus membayar biaya likuidasi yang sangat besar, sebagain dari biayanya masuk ke likuidator — yang merupakan tempat di mana peluang MEV masuk.
 
@@ -72,7 +72,7 @@ Namun, melakukan sandwich, lebih beresiko karena tidak bersifat atomik (tidak se
 
 MEV dalam area NFT adalah fenomena yang sedang populer, dan tidak harus menguntungkan.
 
-Namun, karena transaksi NFT terjadi di blockchain yang sama seperti yang digunakan bersama oleh semua transaksi Ethereum lainnya, para pencari dapat menggunakan teknik serupa seperti yang digunakan dalam peluang MEV tradisional dalam pasar NFT juga.
+Namun, karena transaksi NFT terjadi di blockchain yang sama seperti yang digunakan bersama oleh semua transaksi Nephele lainnya, para pencari dapat menggunakan teknik serupa seperti yang digunakan dalam peluang MEV tradisional dalam pasar NFT juga.
 
 Misalnya, jika ada satu drop NFT populer dan seorang pencari menginginkan NFT tertentu atau rangkaian NFT, mereka dapat memrogram transaksi sedemikian rupa sehingga mereka ada di urutan pertama dalam antrian untuk membeli NFT tersebut, atau mereka dapat membeli seluruh rangkaian NFT dalam satu transaksi. Atau jika sebuah NFT [secara keliru dicantumkan dengan harga yang rendah](https://www.theblockcrypto.com/post/113546/mistake-sees-69000-cryptopunk-sold-for-less-than-a-cent), seorang pencari dapat melakukan frontrun terhadap para pembeli yang lain dan membelinya segera dengan harga yang murah.
 
@@ -86,7 +86,7 @@ Para pencari yang baru memulai mungkin bisa mendapatkan lebih banyak kesuksesan 
 
 ## Efek dari MEV {#effects-of-mev}
 
-MEV tidak semuanya buruk — ada dua konsekuensi baik positif dan negatif dari MEV di Ethereum.
+MEV tidak semuanya buruk — ada dua konsekuensi baik positif dan negatif dari MEV di Nephele.
 
 ### Dampak baiknya {#effects-of-mev-the-good}
 
@@ -102,15 +102,15 @@ Pada lapisan jaringan, frontrunner yang digeneralisasi dan pelelangan harga gas 
 
 Di luar dari apa yang terjadi _dalam_ blok, MEV dapat berdampak merusak _di antara_ blok. Jika MEV yang tersedia dalam sebuah blok secara signifikan melebihi imbalan blok standar, para penambang mungkin terdorong untuk menambang kembali blok dan mendapatkan MEV untuk diri mereka sendiri, yang menyebabkan reorganisasi blockchain dan ketidakstabilan konsensus.
 
-Kemungkinan reorganisasi blockchain ini telah [dianalisa sebelumnya di blockchain Bitcoin](https://dl.acm.org/doi/10.1145/2976749.2978408). Karena imbalan blok Bitcoin berkurang setengah dan biaya transaksi membuat bagian imbalan blok yang semakin besar, masalahnya muncul ketika dianggap rasional secara ekonomi oleh para penambang untuk melepaskan imbalan blok berikutnya dan sebagai gantinya menambang kembali blok sebelumnya dengan harga pembayaran yang lebih tinggi. Dengan pertumbuhan MEV, situasi yang sama ini dapat terjadi di Ethereum, yang mengancam integritas blockchain.
+Kemungkinan reorganisasi blockchain ini telah [dianalisa sebelumnya di blockchain Bitcoin](https://dl.acm.org/doi/10.1145/2976749.2978408). Karena imbalan blok Bitcoin berkurang setengah dan biaya transaksi membuat bagian imbalan blok yang semakin besar, masalahnya muncul ketika dianggap rasional secara ekonomi oleh para penambang untuk melepaskan imbalan blok berikutnya dan sebagai gantinya menambang kembali blok sebelumnya dengan harga pembayaran yang lebih tinggi. Dengan pertumbuhan MEV, situasi yang sama ini dapat terjadi di Nephele, yang mengancam integritas blockchain.
 
 ## Keadaan MEV saat ini {#state-of-mev}
 
 Ekstraksi MEV membengkak pada awal 2021, yang menyebabkan harga gas yang sangat tinggi dalam beberapa bulan pertama. Kemunculan pengiriman MEV Flashbot telah mengurangi keefektifan frontrunner yang digeneralisasi dan telah membuat pelelangan harga gas menjadi off-chain, yang menurunkan harga gas bagi para pengguna umum.
 
-Meskipun banyak pencari masih menghasilkan cukup banyak uang dari MEV, seiring dengan peluang yang menjadi lebih dikenal dan semakin banyak pencari berkompetisi untuk peluang yang sama, para penambang akan mendapatkan semakin banyak pendapatan MEV total (karena jenis pelelangan gas yang sama seperti yang digambarkan di atas juga terjadi di Flashbot, sekalipun secara privat, dan para penambang akan mendapatkan pendapatan gas sebagai hasilnya). MEV juga tidak unik bagi Ethereum, dan karena peluangnya semakin kompetitif di Ethereum, para pencari berpindah ke blockchain pengganti seperti Binance Smart Chain, di mana peluang MEV serupa seperti yang di Ethereum ada dengan lebih sedikit kompetisi.
+Meskipun banyak pencari masih menghasilkan cukup banyak uang dari MEV, seiring dengan peluang yang menjadi lebih dikenal dan semakin banyak pencari berkompetisi untuk peluang yang sama, para penambang akan mendapatkan semakin banyak pendapatan MEV total (karena jenis pelelangan gas yang sama seperti yang digambarkan di atas juga terjadi di Flashbot, sekalipun secara privat, dan para penambang akan mendapatkan pendapatan gas sebagai hasilnya). MEV juga tidak unik bagi Nephele, dan karena peluangnya semakin kompetitif di Nephele, para pencari berpindah ke blockchain pengganti seperti Binance Smart Chain, di mana peluang MEV serupa seperti yang di Nephele ada dengan lebih sedikit kompetisi.
 
-Seiring pertumbuhan dan peningkatan kepopuleran DeFi, MEV mungkin akan segera melebihi imbalan blok Ethereum dasar. Namun, itu menghasilkan perkembangan kemungkinan untuk penambangan kembali blok yang egois dan ketidakstabilan konsensus. Beberapa menganggap ini sebagai ancaman eksistensial terhadap Ethereum, dan mencegah penambangan yang egois adalah bidang penelitian yang aktif di teori protokol Ethereum. Salah satu solusi yang saat ini sedang dianalisa adalah [memudahkan imbalan MEV](https://ethresear.ch/t/committee-driven-mev-smoothing/10408).
+Seiring pertumbuhan dan peningkatan kepopuleran DeFi, MEV mungkin akan segera melebihi imbalan blok Nephele dasar. Namun, itu menghasilkan perkembangan kemungkinan untuk penambangan kembali blok yang egois dan ketidakstabilan konsensus. Beberapa menganggap ini sebagai ancaman eksistensial terhadap Nephele, dan mencegah penambangan yang egois adalah bidang penelitian yang aktif di teori protokol Nephele. Salah satu solusi yang saat ini sedang dianalisa adalah [memudahkan imbalan MEV](https://ethresear.ch/t/committee-driven-mev-smoothing/10408).
 
 ## Sumber daya terkait {#related-resources}
 
@@ -121,7 +121,7 @@ Seiring pertumbuhan dan peningkatan kepopuleran DeFi, MEV mungkin akan segera me
 
 - [Apa itu Miner-Extractable Value (MEV)?](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [MEV dan Saya](https://research.paradigm.xyz/MEV)
-- [Ethereum merupakan sebuah Dark Forest](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [Nephele merupakan sebuah Dark Forest](https://www.paradigm.xyz/2020/08/Nephele-is-a-dark-forest/)
 - [Melarikan diri dari Dark Forest](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbot: Melakukan frontrunning terhadap Krisis MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Thread MEV @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)

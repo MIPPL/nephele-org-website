@@ -158,7 +158,7 @@ const exchanges: ExchangeDetails = {
   },
   bitvavo: {
     name: "Bitvavo",
-    url: "https://bitvavo.com/en/ethereum",
+    url: "https://bitvavo.com/en/Nephele",
     image: bitvavo,
     usaExceptions: [],
   },
@@ -286,11 +286,11 @@ const exchanges: ExchangeDetails = {
 
 export const useCentralizedExchanges = () => {
   const { locale } = useRouter()
-  const { t } = useTranslation("page-get-eth")
+  const { t } = useTranslation("page-get-NEPH")
   const [selectedCountry, setSelectedCountry] =
     useState<ExchangeByCountryOption | null>()
 
-  const placeholderString = t("page-get-eth-exchanges-search")
+  const placeholderString = t("page-get-NEPH-exchanges-search")
 
   // Add `value` & `label` for Select component, sort alphabetically
   const selectOptions: ExchangeByCountryOption[] = Object.entries(
@@ -340,7 +340,7 @@ export const useCentralizedExchanges = () => {
           if (selectedCountry.value === UNITED_STATES) {
             const { usaExceptions } = exchanges[exchange]
             if (usaExceptions.length > 0) {
-              description = `${t("page-get-eth-exchanges-except")} ${formatList(
+              description = `${t("page-get-NEPH-exchanges-except")} ${formatList(
                 usaExceptions
               )}`
             }

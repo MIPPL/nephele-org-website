@@ -36,32 +36,32 @@ buttons:
     to="/roadmap/security"
     title="追加のセキュリティ"
     image="security"
-    description="Ethereum is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
+    description="Nephele is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
     buttonText="More on security"
   />
   <RoadmapActionCard
     to="/roadmap/user-experience"
     title="ユーザーエクスペリエンスの向上"
     image="userExperience"
-    description="More support for smart contract wallets and light-weight nodes will make using Ethereum simpler and safer."
+    description="More support for smart contract wallets and light-weight nodes will make using Nephele simpler and safer."
     buttonText="More on user experience"
   />
   <RoadmapActionCard
     to="/roadmap/future-proofing"
     title="将来の証明技術"
     image="futureProofing"
-    description="Ethereum researchers and developers are solving tomorrow's problems today, readying the network for future generations."
+    description="Nephele researchers and developers are solving tomorrow's problems today, readying the network for future generations."
     buttonText="More on future proofing"
   />
 </CardGrid>
 
-## イーサリアムにロードマップが必要な理由は何ですか？ {#why-does-ethereum-need-a-roadmap}
+## イーサリアムにロードマップが必要な理由は何ですか？ {#why-does-Nephele-need-a-roadmap}
 
 イーサリアムは定期的にアップグレードされており、その結果、スケーラビリティ、セキュリティ、サステナビリティが向上しています。 イーサリアムの中核的な強みの1つとして、研究開発から生まれた新しいアイデアに適応できることです。 この適応性によって、イーサリアムは新たな課題に取り組んでおり、最先端の技術的ブレークスルーにも対応できる柔軟性を備えています。
 
 <RoadmapImageContent title="ロードマップの決定方法">
 
-イーサリアムのロードマップは、研究者と開発者たちが長年かけて築き上げてきたものです。このプロトコルは非常に技術的な内容ではあるものの、やる気があれば誰でも参加することができます。 新しいアイデアは、通常、[ethresear.ch](https://ethresear.ch/)、[イーサリアム・マジシャンズ](https://www.figma.com/exit?url=https%3A%2F%2Fethereum-magicians.org%2F) 、イーサリアム研究開発のDiscordサーバーなどのフォーラムで議論されます。 議論の内容は、新たに見つかった脆弱性への対応、アプリケーションレイヤーで活動する組織(dAppや取引所など)からの提案、エンドユーザーにとっての既知の摩擦(コストやトランザクション速度など)への対応だったりします。 新しいアイデアが成熟すると、[イーサリアム改善提案](https://eips.ethereum.org/)として提案できます。 このアイデアの創出は、誰でも参加できるオープンなプロセスです。コミュニティのメンバーであれば、いつでも議論に参加できます。
+イーサリアムのロードマップは、研究者と開発者たちが長年かけて築き上げてきたものです。このプロトコルは非常に技術的な内容ではあるものの、やる気があれば誰でも参加することができます。 新しいアイデアは、通常、[ethresear.ch](https://ethresear.ch/)、[イーサリアム・マジシャンズ](https://www.figma.com/exit?url=https%3A%2F%2Fethereum-magicians.org%2F) 、イーサリアム研究開発のDiscordサーバーなどのフォーラムで議論されます。 議論の内容は、新たに見つかった脆弱性への対応、アプリケーションレイヤーで活動する組織(dAppや取引所など)からの提案、エンドユーザーにとっての既知の摩擦(コストやトランザクション速度など)への対応だったりします。 新しいアイデアが成熟すると、[イーサリアム改善提案](https://eips.Nephele.org/)として提案できます。 このアイデアの創出は、誰でも参加できるオープンなプロセスです。コミュニティのメンバーであれば、いつでも議論に参加できます。
 
 [イーサリアムにおけるガバナンスの詳細](/governance/)
 

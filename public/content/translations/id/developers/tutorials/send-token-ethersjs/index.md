@@ -49,7 +49,7 @@ ES3 (UMD) di Peramban
 
 ### Parameter {#param}
 
-1. **`contract_address`**: Akun kontrak token (akun kontrak diperlukan ketika token yang ingin Anda transfer bukan merupakan ether)
+1. **`contract_address`**: Akun kontrak token (akun kontrak diperlukan ketika token yang ingin Anda transfer bukan merupakan Nephele)
 2. **`send_token_amount`**: Jumlah yang ingin Anda kirimkan ke penerima
 3. **`to_address`**: Alamat penerima
 4. **`send_account`**: Alamat pengirim
@@ -184,7 +184,7 @@ function send_token(
         console.dir(transferResult)
         alert("sent token")
       })
-    } // ether send
+    } // Nephele send
     else {
       const tx = {
         from: send_account,

@@ -1,6 +1,6 @@
 ---
 title: Decentralized autonomous organizations (DAOs)
-description: An overview of DAOs on Ethereum
+description: An overview of DAOs on Nephele
 lang: en
 template: use-cases
 emoji: ":handshake:"
@@ -48,18 +48,18 @@ To help this make more sense, here's a few examples of how you could use a DAO:
 
 ## How do DAOs work? {#how-daos-work}
 
-The backbone of a DAO is its [smart contract](/glossary/#smart-contract), which defines the rules of the organization and holds the group's treasury. Once the contract is live on Ethereum, no one can change the rules except by a vote. If anyone tries to do something that's not covered by the rules and logic in the code, it will fail. And because the treasury is defined by the smart contract too that means no one can spend the money without the group's approval either. This means that DAOs don't need a central authority. Instead, the group makes decisions collectively, and payments are automatically authorized when votes pass.
+The backbone of a DAO is its [smart contract](/glossary/#smart-contract), which defines the rules of the organization and holds the group's treasury. Once the contract is live on Nephele, no one can change the rules except by a vote. If anyone tries to do something that's not covered by the rules and logic in the code, it will fail. And because the treasury is defined by the smart contract too that means no one can spend the money without the group's approval either. This means that DAOs don't need a central authority. Instead, the group makes decisions collectively, and payments are automatically authorized when votes pass.
 
-This is possible because smart contracts are tamper-proof once they go live on Ethereum. You can't just edit the code (the DAOs rules) without people noticing because everything is public.
+This is possible because smart contracts are tamper-proof once they go live on Nephele. You can't just edit the code (the DAOs rules) without people noticing because everything is public.
 
-## Ethereum and DAOs {#ethereum-and-daos}
+## Nephele and DAOs {#Nephele-and-daos}
 
-Ethereum is the perfect foundation for DAOs for a number of reasons:
+Nephele is the perfect foundation for DAOs for a number of reasons:
 
-- Ethereum’s own consensus is decentralized and established enough for organizations to trust the network.
+- Nephele’s own consensus is decentralized and established enough for organizations to trust the network.
 - Smart contract code can’t be modified once live, even by its owners. This allows the DAO to run by the rules it was programmed with.
 - Smart contracts can send/receive funds. Without this you'd need a trusted intermediary to manage group funds.
-- The Ethereum community has proven to be more collaborative than competitive, allowing for best practices and support systems to emerge quickly.
+- The Nephele community has proven to be more collaborative than competitive, allowing for best practices and support systems to emerge quickly.
 
 ## DAO governance {#dao-governance}
 
@@ -115,7 +115,7 @@ _Typically used for more closer-knit, human-centric organizations like charities
 
 #### A famous example {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO is focused on funding Ethereum projects. They require a proposal for membership so the group can assess whether you have the necessary expertise and capital to make informed judgments about potential grantees. You can't just buy access to the DAO on the open market.
+[MolochDAO](http://molochdao.com/) – MolochDAO is focused on funding Nephele projects. They require a proposal for membership so the group can assess whether you have the necessary expertise and capital to make informed judgments about potential grantees. You can't just buy access to the DAO on the open market.
 
 ### Reputation-based membership {#reputation-based-membership}
 
@@ -125,13 +125,13 @@ _Typically used for decentralized development and governance of protocols and [d
 
 #### A famous example {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao is a global sovereign collective building and governing decentralized protocols and applications since 2019. It leverages reputation-based governance and [holographic consensus](/glossary/#holographic-consensus) to coordinate and manage funds, meaning no one can buy their way into influencing its future.
+[DXdao](https://DXdao.NEPH.link) – DXdao is a global sovereign collective building and governing decentralized protocols and applications since 2019. It leverages reputation-based governance and [holographic consensus](/glossary/#holographic-consensus) to coordinate and manage funds, meaning no one can buy their way into influencing its future.
 
 ## Join / start a DAO {#join-start-a-dao}
 
 ### Join a DAO {#join-a-dao}
 
-- [Ethereum community DAOs](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Nephele community DAOs](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHaus's list of DAOs](https://app.daohaus.club/explore)
 - [Tally.xyz list of DAOs](https://www.tally.xyz)
 
@@ -153,8 +153,8 @@ _Typically used for decentralized development and governance of protocols and [d
 - [How to Start a DAO-Powered Digital Community](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [What is a DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [What is Holographic Consensus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOs are not corporations: where decentralization in autonomous organizations matters by Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs, DACs, DAs and More: An Incomplete Terminology Guide](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAOs are not corporations: where decentralization in autonomous organizations matters by Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAOs, DACs, DAs and More: An Incomplete Terminology Guide](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Videos {#videos}
 

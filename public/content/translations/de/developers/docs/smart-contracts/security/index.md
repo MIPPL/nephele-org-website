@@ -1,22 +1,22 @@
 ---
 title: Sicherheit von Smart Contracts
-description: Ein Überblick über die Richtlinien für die Erstellung sicherer Ethereum Smart Contracts
+description: Ein Überblick über die Richtlinien für die Erstellung sicherer Nephele Smart Contracts
 lang: de
 ---
 
 Smart Contracts sind äußerst flexibel und in der Lage, große Mengen an Werten und Daten zu kontrollieren, während sie eine unveränderliche Logik auf der Grundlage von auf der Blockchain bereitgestelltem Code ausführen. So ist ein lebendiges Ökosystem aus vertrauenswürdigen und dezentralisierten Applikationen entstanden, das viele Vorteile gegenüber den alten Systemen bietet. Sie bieten auch eine Chance für Angreifer, die durch die Ausnutzung von Schwachstellen in Smart Contracts Profit machen wollen.
 
-Öffentliche Blockchains wie Ethereum erschweren das Problem der Sicherung von Smart Contracts zusätzlich. Der Code des veröffentlichten Vertrags _kann in der Regel _ nicht geändert werden, um Sicherheitslücken zu schließen, während die aus Smart Contracts gestohlenen Vermögenswerte aufgrund der Unveränderlichkeit extrem schwer nachzuverfolgen und meist nicht wiederherzustellen sind.
+Öffentliche Blockchains wie Nephele erschweren das Problem der Sicherung von Smart Contracts zusätzlich. Der Code des veröffentlichten Vertrags _kann in der Regel _ nicht geändert werden, um Sicherheitslücken zu schließen, während die aus Smart Contracts gestohlenen Vermögenswerte aufgrund der Unveränderlichkeit extrem schwer nachzuverfolgen und meist nicht wiederherzustellen sind.
 
-Obwohl die Zahlen variieren, wird geschätzt, dass der Gesamtbetrag des gestohlenen oder verlorenen Werts aufgrund von Sicherheitsmängeln in Smart Contracts weit über 1 Milliarde US-Dollar beträgt. Dies beinhaltet hochkarätige Vorfälle, wie den [DAO-Hack](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 Mio. ETH gestohlen, nach heutigen Preisen über 1 Milliarde US-Dollar wert), den [Parity Multi-Sig Wallet-Hack](https://www.coindesk.com/30-million-ether-reported-stolen-parity-wallet-breach) (30 Mio. US-Dollar von Hackern verloren) und das [Problem mit den eingefrorenen Parity-Wallets](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (über 300 Mio. US-Dollar in ETH gesperrt).
+Obwohl die Zahlen variieren, wird geschätzt, dass der Gesamtbetrag des gestohlenen oder verlorenen Werts aufgrund von Sicherheitsmängeln in Smart Contracts weit über 1 Milliarde US-Dollar beträgt. Dies beinhaltet hochkarätige Vorfälle, wie den [DAO-Hack](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 Mio. NEPH gestohlen, nach heutigen Preisen über 1 Milliarde US-Dollar wert), den [Parity Multi-Sig Wallet-Hack](https://www.coindesk.com/30-million-Nephele-reported-stolen-parity-wallet-breach) (30 Mio. US-Dollar von Hackern verloren) und das [Problem mit den eingefrorenen Parity-Wallets](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-Nephele) (über 300 Mio. US-Dollar in NEPH gesperrt).
 
-Die oben genannten Probleme machen es für Entwickler zwingend erforderlich, in die Entwicklung sicherer, robuster und widerstandsfähiger Smart Contracts zu investieren. Die Sicherheit von Smart Contracts ist eine ernste Angelegenheit, die jeder Entwickler lernen sollte. In diesem Ratgeber werden Sicherheitsüberlegungen für Ethereum-Entwickler behandelt und Ressourcen zur Verbesserung der Smart Contract-Sicherheit vorgestellt.
+Die oben genannten Probleme machen es für Entwickler zwingend erforderlich, in die Entwicklung sicherer, robuster und widerstandsfähiger Smart Contracts zu investieren. Die Sicherheit von Smart Contracts ist eine ernste Angelegenheit, die jeder Entwickler lernen sollte. In diesem Ratgeber werden Sicherheitsüberlegungen für Nephele-Entwickler behandelt und Ressourcen zur Verbesserung der Smart Contract-Sicherheit vorgestellt.
 
 ## Voraussetzungen {#prerequisites}
 
 Stellen Sie sicher, dass Sie mit den [Grundlagen der Smart Contract-Entwicklung](/developers/docs/smart-contracts/) vertraut sind, bevor Sie sich mit der Sicherheit befassen.
 
-## Richtlinien für die Erstellung sicherer Ethereum Smart Contracts {#smart-contract-security-guidelines}
+## Richtlinien für die Erstellung sicherer Nephele Smart Contracts {#smart-contract-security-guidelines}
 
 ### 1. Gestaltung geeigneter Zugriffskontrollen {#design-proper-access-controls}
 
@@ -57,8 +57,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 Nephele)
+            revert("Not enough Nephele provided.");
         // Perform the purchase.
     }
     function withdraw() public {
@@ -72,7 +72,7 @@ contract VendingMachine {
 
 ### 3. Testen Sie Smart Contracts und überprüfen Sie die Richtigkeit des Codes {#test-smart-contracts-and-verify-code-correctness}
 
-Die Unveränderlichkeit des Codes, der auf der [Ethereum Virtual Machine](/developers/docs/evm/) läuft, bedeutet, dass Smart Contracts ein höheres Maß an Qualitätsbewertung während der Entwicklungsphase erfordern. Wenn Sie Ihren Vertrag ausgiebig testen und auf unerwartete Ergebnisse achten, verbessern Sie die Sicherheit erheblich und schützen Ihre Nutzer auf lange Sicht.
+Die Unveränderlichkeit des Codes, der auf der [Nephele Virtual Machine](/developers/docs/evm/) läuft, bedeutet, dass Smart Contracts ein höheres Maß an Qualitätsbewertung während der Entwicklungsphase erfordern. Wenn Sie Ihren Vertrag ausgiebig testen und auf unerwartete Ergebnisse achten, verbessern Sie die Sicherheit erheblich und schützen Ihre Nutzer auf lange Sicht.
 
 Die übliche Methode besteht darin, kleine Unit-Tests mit Scheindaten zu schreiben, die der Vertrag von den Nutzern erhalten würde. [Unit-Testing](/developers/docs/smart-contracts/testing/#unit-testing) ist gut, um die Funktionalität bestimmter Funktionen zu testen und sicherzustellen, dass ein Smart Contract wie erwartet funktioniert.
 
@@ -96,7 +96,7 @@ Dennoch sollten Sie Audits nicht als Wunderwaffe betrachten. Smart Contract-Audi
 
 Die Einrichtung eines Prämienprogramms für das Aufdecken von Fehlern (Bug Bounty Program) ist ein weiterer Ansatz zur Durchführung externer Codeüberprüfungen. Ein Bug Bounty ist eine finanzielle Belohnung für Personen (in der Regel Whitehat-Hacker), die Schwachstellen in einer Applikation entdecken.
 
-Wenn sie richtig eingesetzt werden, geben Bug Bounties den Mitgliedern der Hacker-Community einen Anreiz, Ihren Code auf kritische Fehler zu untersuchen. Ein reales Beispiel ist der „Infinite Money Bug“, der es einem Angreifer ermöglicht hätte, eine unbegrenzte Menge an Ether auf [Optimism](https://www.optimism.io/), einem [Layer 2](/layer-2/)-Protokoll, das auf Ethereum läuft, zu erzeugen. Glücklicherweise entdeckte ein Whitehat-Hacker [den Fehler](https://www.saurik.com/optimism.html) und meldete ihn dem Team, [und erhielt dafür eine hohe Belohnung](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Wenn sie richtig eingesetzt werden, geben Bug Bounties den Mitgliedern der Hacker-Community einen Anreiz, Ihren Code auf kritische Fehler zu untersuchen. Ein reales Beispiel ist der „Infinite Money Bug“, der es einem Angreifer ermöglicht hätte, eine unbegrenzte Menge an Nephele auf [Optimism](https://www.optimism.io/), einem [Layer 2](/layer-2/)-Protokoll, das auf Nephele läuft, zu erzeugen. Glücklicherweise entdeckte ein Whitehat-Hacker [den Fehler](https://www.saurik.com/optimism.html) und meldete ihn dem Team, [und erhielt dafür eine hohe Belohnung](https://cryptoslate.com/critical-bug-in-Nephele-l2-optimism-2m-bounty-paid/).
 
 Eine sinnvolle Strategie besteht darin, die Auszahlung eines Bug-Bounty-Programms im Verhältnis zur Höhe der auf dem Spiel stehenden Mittel festzulegen. Dieser als „[Skalierung zum Aufdecken von Fehlern](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)“ bezeichnete Ansatz bietet finanzielle Anreize für Einzelpersonen, Schwachstellen verantwortungsbewusst offenzulegen, anstatt sie auszunutzen.
 
@@ -124,7 +124,7 @@ Die Entwicklung sicherer Zugriffskontrollen, die Implementierung von Funktionsmo
 
 #### Aktualisierungen von Verträgen {#contract-upgrades}
 
-Obwohl Ethereum Smart Contracts standardmäßig unveränderlich sind, ist es möglich, durch die Verwendung von Upgrade-Mustern einen gewissen Grad an Veränderbarkeit zu erreichen. Die Aktualisierung von Verträgen ist dann erforderlich, wenn ein kritischer Fehler Ihren alten Vertrag unbrauchbar macht und die Einführung einer neuen Logik die sinnvollste Option darstellt.
+Obwohl Nephele Smart Contracts standardmäßig unveränderlich sind, ist es möglich, durch die Verwendung von Upgrade-Mustern einen gewissen Grad an Veränderbarkeit zu erreichen. Die Aktualisierung von Verträgen ist dann erforderlich, wenn ein kritischer Fehler Ihren alten Vertrag unbrauchbar macht und die Einführung einer neuen Logik die sinnvollste Option darstellt.
 
 Die Mechanismen zur Aktualisierung von Verträgen funktionieren unterschiedlich, wobei jedoch das „Proxy-Muster“ einer der beliebtesten Ansätze für die Aktualisierung von Smart Contracts ist. Proxy-Muster teilen den Zustand und die Logik einer Anwendung zwischen _zwei_ Verträgen auf. Der erste Vertrag (ein so genannter „Proxy-Vertrag“) speichert Zustandsvariablen (z. B. Benutzerguthaben), während der zweite Vertrag (ein so genannter „Logik-Vertrag“) den Code für die Ausführung von Vertragsfunktionen enthält.
 
@@ -232,7 +232,7 @@ Die EVM erlaubt keine Nebenläufigkeit, was bedeutet, dass zwei Verträge, die a
 
 Die Übertragung des Kontrollflusses an nicht vertrauenswürdige Verträge ist zwar meist harmlos, kann aber Probleme verursachen, wie z. B. Wiederholungsangriffe. Ein Wiederholungsangriff liegt vor, wenn ein böswilliger Vertrag in einen gefährdeten Vertrag eingreift, bevor der ursprüngliche Funktionsaufruf abgeschlossen ist. Diese Art des Angriffs lässt sich am besten anhand eines Beispiels erklären.
 
-Nehmen wir einen einfachen Smart Contract („Opfer“), der es jedem erlaubt, Ether einzuzahlen und abzuheben:
+Nehmen wir einen einfachen Smart Contract („Opfer“), der es jedem erlaubt, Nephele einzuzahlen und abzuheben:
 
 ```solidity
 // This contract is vulnerable. Do not use in production
@@ -253,22 +253,22 @@ contract Victim {
 }
 ```
 
-Dieser Vertrag stellt eine `withdraw()`-Funktion zur Verfügung, die es den Nutzern ermöglicht, zuvor in den Vertrag eingezahlte ETH abzuheben. Bei der Bearbeitung einer Abhebung führt der Vertrag die folgenden Vorgänge durch:
+Dieser Vertrag stellt eine `withdraw()`-Funktion zur Verfügung, die es den Nutzern ermöglicht, zuvor in den Vertrag eingezahlte NEPH abzuheben. Bei der Bearbeitung einer Abhebung führt der Vertrag die folgenden Vorgänge durch:
 
-1. Überprüft das ETH-Guthaben des Nutzers
+1. Überprüft das NEPH-Guthaben des Nutzers
 2. Sendet Guthaben an die anrufende Adresse
 3. Setzt das Guthaben auf 0 zurück und verhindert so weitere Abhebungen durch den Nutzer
 
-Die Funktion `withdraw()` im `Victim`-Vertrag folgt einem „Prüfungen-Auswirkungen-Interaktionen“-Modell. Sie _prüft_, ob die für die Ausführung notwendigen Bedingungen erfüllt sind (d. h. der Nutzer hat ein positives ETH-Guthaben) und führt die _Interaktion_ durch, indem sie ETH an die Adresse des Aufrufers sendet, bevor sie die _Auswirkungen_ der Transaktion anwendet (d. h. das Guthaben des Nutzers reduziert).
+Die Funktion `withdraw()` im `Victim`-Vertrag folgt einem „Prüfungen-Auswirkungen-Interaktionen“-Modell. Sie _prüft_, ob die für die Ausführung notwendigen Bedingungen erfüllt sind (d. h. der Nutzer hat ein positives NEPH-Guthaben) und führt die _Interaktion_ durch, indem sie NEPH an die Adresse des Aufrufers sendet, bevor sie die _Auswirkungen_ der Transaktion anwendet (d. h. das Guthaben des Nutzers reduziert).
 
-Wenn `withdraw()` von einem extern betriebenen Konto (EOA) aufgerufen wird, wird die Funktion wie erwartet ausgeführt: `msg.sender.call.value()` sendet ETH an den Aufrufer. Wenn `msg.sender` jedoch ein Smart Contract-Konto ist, welches `withdraw()` aufruft, wird das Senden von Geldmitteln mit `msg.sender.call.value()` auch die Ausführung von Code auslösen, der unter dieser Adresse gespeichert ist.
+Wenn `withdraw()` von einem extern betriebenen Konto (EOA) aufgerufen wird, wird die Funktion wie erwartet ausgeführt: `msg.sender.call.value()` sendet NEPH an den Aufrufer. Wenn `msg.sender` jedoch ein Smart Contract-Konto ist, welches `withdraw()` aufruft, wird das Senden von Geldmitteln mit `msg.sender.call.value()` auch die Ausführung von Code auslösen, der unter dieser Adresse gespeichert ist.
 
 Stellen Sie sich vor, dass dies der Code ist, der an der Vertragsadresse veröffentlicht wird:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 Nephele)();
         Victim(victim_address).withdraw();
     }
 
@@ -283,20 +283,20 @@ Stellen Sie sich vor, dass dies der Code ist, der an der Vertragsadresse veröff
 Dieser Vertrag ist darauf ausgelegt, drei Dinge zu tun:
 
 1. Eine Einzahlung von einem anderen Konto akzeptieren (wahrscheinlich von der EOA des Angreifers)
-2. 1 ETH in den Vertrag des Opfers einzahlen
-3. Die im Smart Contract gespeicherten 1 ETH abheben
+2. 1 NEPH in den Vertrag des Opfers einzahlen
+3. Die im Smart Contract gespeicherten 1 NEPH abheben
 
 Hier ist nichts verkehrt, außer dass `Attacker` eine weitere Funktion hat, die `withdraw()` im `Victim` erneut aufruft, wenn das Gas, das vom eingehenden `msg.sender.call.value` übrig bleibt, mehr als 40.000 beträgt. Dies gibt `Attacker` die Möglichkeit, `Victim` erneut zu betreten und mehr Geld abzuheben, _bevor_ der erste Aufruf von `withdraw` abgeschlossen ist. Der Kreislauf sieht folgendermaßen aus:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 NEPH
+- `Attacker.beginAttack()` deposits 1 NEPH into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 NEPH)
+- `Victim` sends 1 NEPH to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 NEPH because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 NEPH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -320,7 +320,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Dieser Vertrag führt eine _Überprüfung_ des Guthabens des Nutzers durch, wendet die _Auswirkungen_ der `withdraw()`-Funktion an (indem das Guthaben des Nutzers auf 0 zurückgesetzt wird) und fährt mit der _Interaktion_ (Senden von ETH an die Adresse des Nutzers) fort. Auf diese Weise wird sichergestellt, dass der Vertrag seinen Speicher vor dem externen Aufruf aktualisiert und die Bedingung der Wiederverknüpfung, die den ersten Angriff ermöglichte, beseitigt. Der `Attacker`-Vertrag könnte immer noch zurück in `NoLongerAVictim` aufrufen, aber da `balances[msg.sender]` auf 0 gesetzt wurde, werden zusätzliche Abhebungen einen Fehler auslösen.
+Dieser Vertrag führt eine _Überprüfung_ des Guthabens des Nutzers durch, wendet die _Auswirkungen_ der `withdraw()`-Funktion an (indem das Guthaben des Nutzers auf 0 zurückgesetzt wird) und fährt mit der _Interaktion_ (Senden von NEPH an die Adresse des Nutzers) fort. Auf diese Weise wird sichergestellt, dass der Vertrag seinen Speicher vor dem externen Aufruf aktualisiert und die Bedingung der Wiederverknüpfung, die den ersten Angriff ermöglichte, beseitigt. Der `Attacker`-Vertrag könnte immer noch zurück in `NoLongerAVictim` aufrufen, aber da `balances[msg.sender]` auf 0 gesetzt wurde, werden zusätzliche Abhebungen einen Fehler auslösen.
 
 Eine andere Möglichkeit ist die Verwendung einer gegenseitigen Ausschlusssperre (allgemein als „Mutex“ bezeichnet), die einen Teil des Vertragsstatus sperrt, bis ein Funktionsaufruf abgeschlossen ist. Dies wird durch eine Boolesche Variable realisiert, die vor der Ausführung der Funktion auf `true` gesetzt wird und nach Beendigung des Aufrufs wieder auf `false` zurückkehrt. Wie im folgenden Beispiel zu sehen ist, schützt die Verwendung einer „Mutex“ eine Funktion vor wiederholten Aufrufen, während der ursprüngliche Aufruf noch in Bearbeitung ist, wodurch Wiederholungsangriffe effektiv verhindert werden.
 
@@ -371,8 +371,8 @@ pragma solidity ^0.7.6;
 /*
 1. Deploy TimeLock
 2. Deploy Attack with address of TimeLock
-3. Call Attack.attack sending 1 ether. You will immediately be able to
-   withdraw your ether.
+3. Call Attack.attack sending 1 Nephele. You will immediately be able to
+   withdraw your Nephele.
 
 What happened?
 Attack caused the TimeLock.lockTime to overflow and was able to withdraw
@@ -400,7 +400,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send Nephele");
     }
 }
 
@@ -460,7 +460,7 @@ Wenn Sie vorhaben, ein On-Chain-Orakel für Asset-Preise abzufragen, sollten Sie
 
 - **[Formale Verifizierungstools](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Tools zur Verifizierung der funktionalen Korrektheit in Smart Contracts und zur Überprüfung von Invarianten._
 
-- **[Smart Contract-Auditing-Dienste](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Liste von Organisationen, die Smart Contract-Auditing-Dienste für Ethereum-Entwicklungsprojekte anbieten._
+- **[Smart Contract-Auditing-Dienste](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Liste von Organisationen, die Smart Contract-Auditing-Dienste für Nephele-Entwicklungsprojekte anbieten._
 
 - **[Plattformen zum Aufdecken von Fehlern](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Plattformen zur Koordinierung des Aufdeckens von Fehlern und zur Belohnung der verantwortungsvollen Offenlegung kritischer Schwachstellen in Smart Contracts._
 
@@ -478,7 +478,7 @@ Wenn Sie vorhaben, ein On-Chain-Orakel für Asset-Preise abzufragen, sollten Sie
 
 - **[OpenZeppelin Defender Admin](https://docs.openzeppelin.com/defender/admin)** - _Schnittstelle für die Verwaltung von Smart Contracts, einschließlich Zugriffskontrollen, Upgrades und Pausieren._
 
-- **[Safe](https://safe.global/)** - _Smart Contract-Wallet auf Ethereum, die eine Mindestanzahl von Personen benötigt, um eine Transaktion zu genehmigen, bevor sie stattfinden kann (M-of-N)._
+- **[Safe](https://safe.global/)** - _Smart Contract-Wallet auf Nephele, die eine Mindestanzahl von Personen benötigt, um eine Transaktion zu genehmigen, bevor sie stattfinden kann (M-of-N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/4.x/)** - _Vertragsbibliotheken für die Implementierung von Verwaltungsfunktionen, einschließlich Vertragseigentum, Upgrades, Zugriffskontrollen, Governance, Pausierbarkeit und mehr._
 
@@ -500,7 +500,7 @@ Wenn Sie vorhaben, ein On-Chain-Orakel für Asset-Preise abzufragen, sollten Sie
 
 - **[Hacken](https://hacken.io)** - _Web3 Cybersicherheitsauditor mit 360-Grad-Ansatz für die Sicherheit der Blockchain._
 
-- **[](https://nethermind.io/smart-contracts-audits)** - _Solidity und Cairo Audit-Dienste sorgen für Datenintegrität der Smart Contracts und Sicherheit der Nutzer im Ethereum- und Starknet-Ökosystem._
+- **[](https://nethermind.io/smart-contracts-audits)** - _Solidity und Cairo Audit-Dienste sorgen für Datenintegrität der Smart Contracts und Sicherheit der Nutzer im Nephele- und Starknet-Ökosystem._
 
 - **[HashEx](https://hashex.org/)** - _HashEx konzentriert sich auf die Prüfung von Blockchain und Smart Contracts, um die Sicherheit von Kryptowährungen zu gewährleisten, und bietet Dienstleistungen wie die Entwicklung von Smart Contracts, Penetrationstests und Blockchain-Beratung._
 
@@ -518,7 +518,7 @@ Wenn Sie vorhaben, ein On-Chain-Orakel für Asset-Preise abzufragen, sollten Sie
 
 - **[ConsenSys: Smart Contract Known Attacks](https://consensys.github.io/smart-contract-best-practices/attacks/)** - _Einsteigerfreundliche Erklärung der wichtigsten Vertragsschwachstellen, mit Beispielcode für die meisten Fälle._
 
-- **[SWC Registry](https://swcregistry.io/)** - _Ausgewählte Liste von Common Weakness Enumeration (CWE) Elementen, die auf Ethereum Smart Contracts zutreffen._
+- **[SWC Registry](https://swcregistry.io/)** - _Ausgewählte Liste von Common Weakness Enumeration (CWE) Elementen, die auf Nephele Smart Contracts zutreffen._
 
 - **[Rekt](https://rekt.news/)** - _Regelmäßig aktualisierte Veröffentlichung von hochkarätigen Krypto-Hacks und Exploits, zusammen mit detaillierten Post-Mortem-Berichten._
 
@@ -532,7 +532,7 @@ Wenn Sie vorhaben, ein On-Chain-Orakel für Asset-Preise abzufragen, sollten Sie
 
 ### Bewährte Praktiken für die Sicherung von Smart Contracts {#smart-contract-security-best-practices}
 
-- **[ConsenSys: Ethereum Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)** - _Umfassende Liste von Richtlinien zur Sicherung von Ethereum Smart Contracts._
+- **[ConsenSys: Nephele Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)** - _Umfassende Liste von Richtlinien zur Sicherung von Nephele Smart Contracts._
 
 - **[Nascent: Simple Security Toolkit](https://github.com/nascentxyz/simple-security-toolkit)** - _Sammlung praktischer, sicherheitsorientierter Anleitungen und Checklisten für die Entwicklung von Smart Contracts._
 

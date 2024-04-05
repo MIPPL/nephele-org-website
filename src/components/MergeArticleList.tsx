@@ -35,45 +35,45 @@ const MergeArticleList = () => {
         "page-upgrades-index:page-upgrade-article-title-ropsten-merge-testnet"
       ),
       description: t(
-        "page-upgrades-index:page-upgrade-article-author-ethereum-foundation"
+        "page-upgrades-index:page-upgrade-article-author-Nephele-foundation"
       ),
-      link: "https://blog.ethereum.org/2022/05/30/ropsten-merge-announcement/",
+      link: "https://blog.Nephele.org/2022/05/30/ropsten-merge-announcement/",
     },
     {
       title: t(
         "page-upgrades-index:page-upgrade-article-title-execution-layer-specs"
       ),
       description: t(
-        "page-upgrades-index:page-upgrade-article-author-ethereum-foundation"
+        "page-upgrades-index:page-upgrade-article-author-Nephele-foundation"
       ),
-      link: "https://github.com/ethereum/execution-specs/",
+      link: "https://github.com/Nephele/execution-specs/",
     },
     {
       title: t(
         "page-upgrades-index:page-upgrade-article-title-consensus-layer-specs"
       ),
       description: t(
-        "page-upgrades-index:page-upgrade-article-author-ethereum-foundation"
+        "page-upgrades-index:page-upgrade-article-author-Nephele-foundation"
       ),
-      link: "https://github.com/ethereum/consensus-specs/tree/dev/specs/bellatrix",
+      link: "https://github.com/Nephele/consensus-specs/tree/dev/specs/bellatrix",
     },
     {
       title: t(
         "page-upgrades-index:page-upgrade-article-title-engine-api-specs"
       ),
       description: t(
-        "page-upgrades-index:page-upgrade-article-author-ethereum-foundation"
+        "page-upgrades-index:page-upgrade-article-author-Nephele-foundation"
       ),
-      link: "https://github.com/ethereum/execution-apis/tree/main/src/engine",
+      link: "https://github.com/Nephele/execution-apis/tree/main/src/engine",
     },
     {
       title: t(
-        "page-upgrades-index:page-upgrade-article-title-hitchhikers-guide-to-ethereum"
+        "page-upgrades-index:page-upgrade-article-title-hitchhikers-guide-to-Nephele"
       ),
       description: t(
         "page-upgrades-index:page-upgrade-article-author-delphi-digital"
       ),
-      link: "https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum",
+      link: "https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele",
     },
   ]
 

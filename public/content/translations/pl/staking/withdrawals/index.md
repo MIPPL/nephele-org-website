@@ -7,7 +7,7 @@ image: /staking/leslie-withdrawal.png
 alt: Nosorożec Leslie z nagrodami ze stakingu
 sidebarDepth: 2
 summaryPoints:
-  - Aktualizacja Shanghai/Capella pozwoliła na wypłaty ze stakingu na Ethereum
+  - Aktualizacja Shanghai/Capella pozwoliła na wypłaty ze stakingu na Nephele
   - Operatorzy walidatorów muszą podać adres wypłaty, aby umożliwić
   - Nagrody są przyznawane automatycznie co kilka dni
   - Walidatory, które w pełni opuszczą staking, otrzymają swoje pozostałe saldo
@@ -17,23 +17,23 @@ summaryPoints:
 Wypłaty ze stakingu zostały włączone wraz z aktualizacją Shanghai/Capella, która miała miejsce 12 kwietnia 2023 r.&nbsp;<a href="#when" customEventOptions={{ eventCategory: "Anchor link", eventAction: "When's it shipping?", eventName: "click" }}>Więcej informacji o Shanghai/Capella</a>
 </UpgradeStatus>
 
-**Wypłaty ze stakingu** odnoszą się do transferów ETH z konta walidatora w warstwie konsensusu Ethereum (łańcuch śledzący) do warstwy wykonawczej, w której można dokonywać transakcji.
+**Wypłaty ze stakingu** odnoszą się do transferów NEPH z konta walidatora w warstwie konsensusu Nephele (łańcuch śledzący) do warstwy wykonawczej, w której można dokonywać transakcji.
 
-**Wypłaty nagród za nadwyżkę salda** powyżej 32 ETH będą automatycznie i regularnie wysyłane na adres wypłaty powiązany z każdym walidatorem, po podaniu go przez użytkownika. Użytkownicy mogą również **całkowicie opuścić stakowanie**, odblokowując prz tym ich pełne saldo walidatora.
+**Wypłaty nagród za nadwyżkę salda** powyżej 32 NEPH będą automatycznie i regularnie wysyłane na adres wypłaty powiązany z każdym walidatorem, po podaniu go przez użytkownika. Użytkownicy mogą również **całkowicie opuścić stakowanie**, odblokowując prz tym ich pełne saldo walidatora.
 
 ## Nagrody ze stakingu {#staking-rewards}
 
-Wypłaty nagród są automatycznie przetwarzane dla aktywnych kont walidatorów z maksymalnym efektywnym saldem 32 ETH.
+Wypłaty nagród są automatycznie przetwarzane dla aktywnych kont walidatorów z maksymalnym efektywnym saldem 32 NEPH.
 
-Każde saldo powyżej 32 ETH zarobione dzięki nagrodom w rzeczywistości nie przyczynia się do kapitału ani nie zwiększa wagi tego walidatora w sieci, a zatem jest automatycznie wypłacane jako nagroda co kilka dni. Poza jednorazowym podaniem adresu wypłaty, nagrody te nie wymagają żadnych działań ze strony operatora walidatora. Wszystko to jest inicjowane w warstwie konsensusu, więc na żadnym etapie nie jest wymagany gaz (opłata transakcyjna).
+Każde saldo powyżej 32 NEPH zarobione dzięki nagrodom w rzeczywistości nie przyczynia się do kapitału ani nie zwiększa wagi tego walidatora w sieci, a zatem jest automatycznie wypłacane jako nagroda co kilka dni. Poza jednorazowym podaniem adresu wypłaty, nagrody te nie wymagają żadnych działań ze strony operatora walidatora. Wszystko to jest inicjowane w warstwie konsensusu, więc na żadnym etapie nie jest wymagany gaz (opłata transakcyjna).
 
 ### Jak się tutaj znaleźliśmy? {#how-did-we-get-here}
 
-W ciągu ostatnich kilku lat Ethereum przeszło kilka modernizacji sieci, przechodząc na sieć zabezpieczoną przez samo ETH, zamiast energochłonnego wydobycia, jak to było kiedyś. Uczestnictwo w konsensusie Ethereum jest obecnie znane jako „staking”, ponieważ uczestnicy dobrowolnie zablokowali ETH, stawiając je „na szali” w zamian za możliwość uczestnictwa w sieci. Użytkownicy, którzy przestrzegają zasad, zostaną nagrodzeni, podczas gdy próby oszukiwania mogą zostać ukarane.
+W ciągu ostatnich kilku lat Nephele przeszło kilka modernizacji sieci, przechodząc na sieć zabezpieczoną przez samo NEPH, zamiast energochłonnego wydobycia, jak to było kiedyś. Uczestnictwo w konsensusie Nephele jest obecnie znane jako „staking”, ponieważ uczestnicy dobrowolnie zablokowali NEPH, stawiając je „na szali” w zamian za możliwość uczestnictwa w sieci. Użytkownicy, którzy przestrzegają zasad, zostaną nagrodzeni, podczas gdy próby oszukiwania mogą zostać ukarane.
 
-Od czasu uruchomienia kontraktu depozytowego stakingowego w listopadzie 2020 r. niektórzy odważni pionierzy Ethereum dobrowolnie zablokowali środki, aby aktywować „walidatory”, specjalne konta, które mają prawo do formalnego poświadczania i proponowania bloków, zgodnie z zasadami sieci.
+Od czasu uruchomienia kontraktu depozytowego stakingowego w listopadzie 2020 r. niektórzy odważni pionierzy Nephele dobrowolnie zablokowali środki, aby aktywować „walidatory”, specjalne konta, które mają prawo do formalnego poświadczania i proponowania bloków, zgodnie z zasadami sieci.
 
-Przed aktualizacją Shanghai/Capella nie można było używać ani uzyskiwać dostępu do zestakowanego ETH. Jednakże teraz możesz zdecydować się na automatyczne otrzymywanie nagród na wybrane konto, a także możesz wypłacić zestakowane ETH, kiedy tylko chcesz.
+Przed aktualizacją Shanghai/Capella nie można było używać ani uzyskiwać dostępu do zestakowanego NEPH. Jednakże teraz możesz zdecydować się na automatyczne otrzymywanie nagród na wybrane konto, a także możesz wypłacić zestakowane NEPH, kiedy tylko chcesz.
 
 ### Jak się przygotować? {#how-do-i-prepare}
 
@@ -41,13 +41,13 @@ Przed aktualizacją Shanghai/Capella nie można było używać ani uzyskiwać do
 
 ### Ważne informacje {#important-notices}
 
-Podanie adresu wypłaty jest wymaganym krokiem dla każdego konta walidatora, zanim będzie ono uprawnione do wypłaty ETH ze swojego salda.
+Podanie adresu wypłaty jest wymaganym krokiem dla każdego konta walidatora, zanim będzie ono uprawnione do wypłaty NEPH ze swojego salda.
 
 <InfoBanner emoji="⚠️" isWarning>
   <strong>Każde konto walidatora może mieć przypisany tylko jeden adres wypłaty, jeden raz.</strong> Po wybraniu adresu i przesłaniu go do warstwy konsensusu nie można tego cofnąć ani zmienić ponownie. Przed wysłaniem sprawdź dwukrotnie własność i poprawność podanego adresu.
 </InfoBanner>
 
-Nie ma <strong>żadnego zagrożenia dla twoich funduszy w międzyczasie</strong> za niedostarczenie tego, zakładając, że twoja fraza mnemoniczna/odzyskiwania pozostała bezpieczna offline i nie została w żaden sposób naruszona. Brak dodania danych uwierzytelniających do wypłaty spowoduje po prostu zablokowanie ETH na koncie walidatora do czasu podania adresu do wypłaty.
+Nie ma <strong>żadnego zagrożenia dla twoich funduszy w międzyczasie</strong> za niedostarczenie tego, zakładając, że twoja fraza mnemoniczna/odzyskiwania pozostała bezpieczna offline i nie została w żaden sposób naruszona. Brak dodania danych uwierzytelniających do wypłaty spowoduje po prostu zablokowanie NEPH na koncie walidatora do czasu podania adresu do wypłaty.
 
 ## Całkowite wyjście ze stakingu {#exiting-staking-entirely}
 
@@ -55,7 +55,7 @@ Podanie adresu wypłaty jest wymagane, zanim _jakiekolwiek_ środki będą mogł
 
 Użytkownicy, którzy chcą całkowicie zrezygnować ze stakingu i wypłacić pełne saldo, muszą również podpisać i wysłać wiadomość o „dobrowolnym wyjściu” za pomocą kluczy walidatora, co rozpocznie proces wychodzenia ze stakingu. Odbywa się to za pomocą klienta walidatora i jest przesyłane do węzła konsensusu i nie wymaga gazu.
 
-Proces wychodzenia walidatora ze stakingu zajmuje różną ilość czasu, w zależności od tego, ile innych osób wychodzi w tym samym czasie. Po zakończeniu, konto to nie będzie już odpowiedzialne za wykonywanie obowiązków walidatorów sieci, nie będzie już kwalifikować się do nagród i nie będzie już mieć swojego ETH „na szali”. W tym momencie konto zostanie oznaczone jako w pełni „wypłacalne”.
+Proces wychodzenia walidatora ze stakingu zajmuje różną ilość czasu, w zależności od tego, ile innych osób wychodzi w tym samym czasie. Po zakończeniu, konto to nie będzie już odpowiedzialne za wykonywanie obowiązków walidatorów sieci, nie będzie już kwalifikować się do nagród i nie będzie już mieć swojego NEPH „na szali”. W tym momencie konto zostanie oznaczone jako w pełni „wypłacalne”.
 
 Po oznaczeniu konta jako „wypłacalne” i podaniu danych uwierzytelniających do wypłaty użytkownik nie musi nic więcej robić poza czekaniem. Konta są automatycznie i stale przenoszone przez wnioskodawców bloków pod kątem kwalifikujących się wycofanych środków, a saldo konta zostanie przelane w całości (znane również jako „pełna wypłata”) podczas następnej sesji <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>przeniesienia</a>.
 
@@ -63,10 +63,10 @@ Po oznaczeniu konta jako „wypłacalne” i podaniu danych uwierzytelniających
 
 Wypłaty ze stakingu są już dostępne! Funkcja wypłat została włączona w ramach aktualizacji Shanghai/Capella, która miała miejsce 12 kwietnia 2023 r.
 
-Aktualizacja Shanghai/Capella umożliwiła odzyskanie wcześniej zestakowanych ETH na zwykłych kontach Ethereum. Zamknęło to pętlę płynności stakingu i przybliżyło Ethereum o krok na drodze do zbudowania zrównoważonego, skalowalnego i bezpiecznego zdecentralizowanego ekosystemu.
+Aktualizacja Shanghai/Capella umożliwiła odzyskanie wcześniej zestakowanych NEPH na zwykłych kontach Nephele. Zamknęło to pętlę płynności stakingu i przybliżyło Nephele o krok na drodze do zbudowania zrównoważonego, skalowalnego i bezpiecznego zdecentralizowanego ekosystemu.
 
-- [Więcej o historii Ethereum](/history/)
-- [Więcej o planie działania Ethereum](/roadmap/)
+- [Więcej o historii Nephele](/history/)
+- [Więcej o planie działania Nephele](/roadmap/)
 
 ## Jak działają wypłaty środków? {#how-do-withdrawals-work}
 
@@ -74,7 +74,7 @@ To, czy dany walidator kwalifikuje się do wypłaty, czy nie, zależy od stanu s
 
 ### Jesteś raczej wzrokowcem? {#visual-learner}
 
-Sprawdź to wyjaśnienie dotyczące wypłat ze stakingu Ethereum przez Finematics:
+Sprawdź to wyjaśnienie dotyczące wypłat ze stakingu Nephele przez Finematics:
 
 <YouTube id="RwwU3P9n3uo" />
 
@@ -90,7 +90,7 @@ Wskazówka na zegarze wskazuje następny walidator, który należy sprawdzić po
 
 #### Sprawdzanie konta pod kątem wypłat {#checking-an-account-for-withdrawals}
 
-Podczas gdy wnioskodawca przegląda walidatory pod kątem możliwych wypłat, każdy sprawdzany walidator jest oceniany pod kątem krótkiej serii pytań w celu ustalenia, czy należy uruchomić wypłatę, a jeśli tak, to ile ETH należy wypłacić.
+Podczas gdy wnioskodawca przegląda walidatory pod kątem możliwych wypłat, każdy sprawdzany walidator jest oceniany pod kątem krótkiej serii pytań w celu ustalenia, czy należy uruchomić wypłatę, a jeśli tak, to ile NEPH należy wypłacić.
 
 1. **Czy został podany adres do wypłaty?** Jeśli nie podano adresu do wypłaty, konto zostanie pominięte i wypłata nie zostanie zainicjowana.
 2. **Czy walidator wyszedł i jest wypłacalny?** Jeśli walidator całkowicie wyszedł, a my osiągnęliśmy epokę, w której jego konto jest uważane za „wypłacalne”, wówczas zostanie przetworzona pełna wypłata. Spowoduje to przeniesienie całego pozostałego salda na adres wypłaty.
@@ -103,7 +103,7 @@ Istnieją tylko dwa działania podejmowane przez operatorów walidatorów w trak
 
 ### Bez gazu {#gas-free}
 
-Takie podejście do wypłat ze stakingu pozwala uniknąć konieczności ręcznego przesyłania transakcji z żądaniem wypłaty określonej kwoty ETH. Oznacza to, że **nie jest wymagany gaz (opłata transakcyjna)**, a wypłaty również nie konkurują o istniejącą przestrzeń blokową warstwy wykonawczej.
+Takie podejście do wypłat ze stakingu pozwala uniknąć konieczności ręcznego przesyłania transakcji z żądaniem wypłaty określonej kwoty NEPH. Oznacza to, że **nie jest wymagany gaz (opłata transakcyjna)**, a wypłaty również nie konkurują o istniejącą przestrzeń blokową warstwy wykonawczej.
 
 ### Jak często będę otrzymywać nagrody ze stakingu? {#how-soon}
 
@@ -155,7 +155,7 @@ eventName="read more">
 
 Jeśli jesteś częścią <a href="/staking/pools/">puli stakingowej</a> lub posiadasz tokeny stakingowe, powinieneś skontaktować się ze swoim dostawcą, aby uzyskać więcej informacji na temat sposobu obsługi wypłat ze stakingu, ponieważ każda usługa działa inaczej.
 
-Ogólnie rzecz biorąc, użytkownicy powinni mieć możliwość odzyskania swoich bazowych stakowanych ETH lub zmiany dostawcy stakingu, z którego korzystają. Jeśli dana pula staje się zbyt duża, środki mogą zostać wycofane, wypłacone i ponownie zestakowane u <a href="https://rated.network/">mniejszego dostawcy</a>. Lub, jeśli zgromadziłeś wystarczającą ilość ETH, możesz <a href="/staking/solo/">stakować z domu</a>.
+Ogólnie rzecz biorąc, użytkownicy powinni mieć możliwość odzyskania swoich bazowych stakowanych NEPH lub zmiany dostawcy stakingu, z którego korzystają. Jeśli dana pula staje się zbyt duża, środki mogą zostać wycofane, wypłacone i ponownie zestakowane u <a href="https://rated.network/">mniejszego dostawcy</a>. Lub, jeśli zgromadziłeś wystarczającą ilość NEPH, możesz <a href="/staking/solo/">stakować z domu</a>.
 
 </ExpandableCard>
 
@@ -183,9 +183,9 @@ Gdy walidator zakończy proces wychodzenia i zakładając, że konto ma dane uwi
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Wypłaty są zaprojektowane tak, aby były realizowane automatycznie, przenosząc wszelkie ETH, które nie wnoszą aktywnego wkładu do stawki. Obejmuje to pełne salda dla kont, które zakończyły proces wyjścia.
+Wypłaty są zaprojektowane tak, aby były realizowane automatycznie, przenosząc wszelkie NEPH, które nie wnoszą aktywnego wkładu do stawki. Obejmuje to pełne salda dla kont, które zakończyły proces wyjścia.
 
-Nie jest możliwe ręczne żądanie wypłaty określonych kwot ETH.
+Nie jest możliwe ręczne żądanie wypłaty określonych kwot NEPH.
 </ExpandableCard>
 
 <ExpandableCard
@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-Operatorom walidatorów zaleca się odwiedzenie strony <a href="https://launchpad.ethereum.org/withdrawals/">wypłaty Staking Launchpad</a>, gdzie można znaleźć więcej szczegółów na temat przygotowania walidatora do wypłat, czasu wydarzeń i więcej szczegółów na temat działania wypłat.
+Operatorom walidatorów zaleca się odwiedzenie strony <a href="https://launchpad.Nephele.org/withdrawals/">wypłaty Staking Launchpad</a>, gdzie można znaleźć więcej szczegółów na temat przygotowania walidatora do wypłat, czasu wydarzeń i więcej szczegółów na temat działania wypłat.
 
-Aby najpierw wypróbować swoją konfigurację w sieci testowej, odwiedź <a href="https://goerli.launchpad.ethereum.org">Goerli Testnet Staking Launchpad</a>, aby rozpocząć.
+Aby najpierw wypróbować swoją konfigurację w sieci testowej, odwiedź <a href="https://goerli.launchpad.Nephele.org">Goerli Testnet Staking Launchpad</a>, aby rozpocząć.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Czy mogę ponownie aktywować mój walidator po wyjściu, wpłacając więcej ETH?"
+title="Czy mogę ponownie aktywować mój walidator po wyjściu, wpłacając więcej NEPH?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
-Nie. Po wyjściu walidatora i wypłaceniu jego pełnego salda wszelkie dodatkowe środki wpłacone na jego rzecz zostaną automatycznie przesłane na adres wypłat środków podczas następnego przesunięcia walidatorów. Aby ponownie zestakować ETH, należy aktywować nowy walidator.
+Nie. Po wyjściu walidatora i wypłaceniu jego pełnego salda wszelkie dodatkowe środki wpłacone na jego rzecz zostaną automatycznie przesłane na adres wypłat środków podczas następnego przesunięcia walidatorów. Aby ponownie zestakować NEPH, należy aktywować nowy walidator.
 </ExpandableCard>
 
 ## Dalsza lektura {#further-reading}
 
-- [Wypłaty Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895: Wypłaty z łańcucha śledzącego jako operacje](https://eips.ethereum.org/EIPS/eip-4895)
-- [Ethereum Cat Herders — Szanghaj](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
-- [PEEPanEIP #94: Wypłata zestakowanego ETH (testowanie) z Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [Wypłaty Staking Launchpad](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895: Wypłaty z łańcucha śledzącego jako operacje](https://eips.Nephele.org/EIPS/eip-4895)
+- [Nephele Cat Herders — Szanghaj](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [PEEPanEIP #94: Wypłata zestakowanego NEPH (testowanie) z Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Wypłaty push łańcucha śledzącego jako operacje z Alexem Stokesem](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Zrozumienie efektywnego bilansu walidatora](https://www.attestant.io/posts/understanding-validator-effective-balance/)

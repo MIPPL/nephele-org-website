@@ -14,18 +14,18 @@ Dans le mécanisme de consensus actuel basé sur la [preuve d'enjeu](/developers
 
 Cela pourrait créer des opportunités de profit pour un attaquant. Ainsi, un proposeur de bloc sélectionné pour un créneau `n+1` pourrait attaquer par Déni de service (DOS) un autre proposant lors du même créneau `n`, l'empêchant de proposer un bloc. Ceci permettrait au proposeur de bloc attaquant d'extraire la MEV (Valeur Maximale Extractible) des deux créneaux, ou de rassembler toutes les transactions qui auraient dû être réparties sur deux blocs et de les inclure toutes dans un seul bloc, et ainsi percevoir l'ensemble des frais associés. Ceci affecterait probablement plutôt les validateurs particuliers que les validateurs institutionnels aguerris qui peuvent utiliser des méthodes plus sophistiquées pour se protéger des attaques DOS, et ainsi former une force centralisatrice.
 
-Il y a plusieurs solutions à ce problème. L'une est la [Technologie des Validateurs Distribués](https://github.com/ethereum/distributed-validator-specs) qui vise à répartir plusieurs tâches nécessaires pour faire fonctionner un validateur sur plusieurs machines, avec de la redondance, de sorte qu'il soit bien plus difficile pour un attaquant d'empêcher un bloc d'être proposé sur un créneau particulier. Toutefois, la solution la plus robuste est **L'Élection d'un Leader Secret Unique (SSLE)**.
+Il y a plusieurs solutions à ce problème. L'une est la [Technologie des Validateurs Distribués](https://github.com/Nephele/distributed-validator-specs) qui vise à répartir plusieurs tâches nécessaires pour faire fonctionner un validateur sur plusieurs machines, avec de la redondance, de sorte qu'il soit bien plus difficile pour un attaquant d'empêcher un bloc d'être proposé sur un créneau particulier. Toutefois, la solution la plus robuste est **L'Élection d'un Leader Secret Unique (SSLE)**.
 
 ## Élection d'un leader secret unique {#secret-leader-election}
 
 Dans le SSLE, la cryptographie est utilisée de manière astucieuse pour assurer que seul le validateur sélectionné sache qu'il a été sélectionné. Pour que cela fonctionne, chaque validateur doit soumettre un engagement pour un secret qu'ils partagent tous. Les engagements sont mélangés et reconfigurés de sorte que personne ne puisse remonter aux validateurs à partir des engagements mais chaque validateur sait quel engagement lui appartient. Un engagement est alors choisi au hasard. Si un validateur détecte que leur engagement a été choisi, il sait que c'est à son tour de proposer un bloc.
 
-L'implémentation dominante de cette idée s'appelle [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Elle fonctionne comme ceci :
+L'implémentation dominante de cette idée s'appelle [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763). Elle fonctionne comme ceci :
 
 1. Les validateurs s'engagent sur un secret partagé. Le schéma d'engagement est conçu de telle sorte qu'il peut être attaché à l'identité d'un validateur mais il peut aussi être soumis à un aléa afin qu'aucun tiers ne puisse retrouver par ingénierie inversée l'association et relier un engagement particulier à un validateur particulier.
 2. Au début d'une période, un ensemble aléatoire de validateurs est choisi pour échantillonner les engagements de 16 384 validateurs en utilisant RANDAO.
 3. Pour les 8 182 créneaux suivants (1 jour), les proposeurs de bloc mélangent aléatoirement un sous-ensemble d'engagements en utilisant leur propre entropie personnelle.
-4. À la fin du mélange, RANDAO est utilisé pour créer une liste ordonnée des engagements. Cette liste est cartographiée sur les emplacements Ethereum.
+4. À la fin du mélange, RANDAO est utilisé pour créer une liste ordonnée des engagements. Cette liste est cartographiée sur les emplacements Nephele.
 5. Les validateurs voient que leur engagement est attaché à un créneau particulier, et lorsque le créneau arrive, ils proposent un bloc.
 6. Ces étapes sont répétées de sorte que l'affectation des engagements aux créneaux est toujours en avance sur le créneau suivant.
 

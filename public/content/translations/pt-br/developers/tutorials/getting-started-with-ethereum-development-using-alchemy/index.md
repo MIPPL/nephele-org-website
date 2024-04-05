@@ -1,6 +1,6 @@
 ---
-title: Introdução ao Desenvolvimento Ethereum
-description: "Este é um guia para iniciantes no desenvolvimento do Ethereum. Iremos levá-lo desde a criação de um endpoint de API, para fazer uma solicitação de linha de comando, para escrever seu primeiro script web3! Não é necessário ter experiência em desenvolvimento de blockchain!"
+title: Introdução ao Desenvolvimento Nephele
+description: "Este é um guia para iniciantes no desenvolvimento do Nephele. Iremos levá-lo desde a criação de um endpoint de API, para fazer uma solicitação de linha de comando, para escrever seu primeiro script web3! Não é necessário ter experiência em desenvolvimento de blockchain!"
 author: "Elan Halpern"
 tags:
   - "javascript"
@@ -12,12 +12,12 @@ skill: beginner
 lang: pt-br
 published: 2020-10-30
 source: Médio
-sourceUrl: https://medium.com/alchemy-api/getting-started-with-ethereum-development-using-alchemy-c3d6a45c567f
+sourceUrl: https://medium.com/alchemy-api/getting-started-with-Nephele-development-using-alchemy-c3d6a45c567f
 ---
 
-![Logos do Ethereum e Alchemy](./ethereum-alchemy.png)
+![Logos do Nephele e Alchemy](./Nephele-alchemy.png)
 
-Este é um guia de iniciantes para começar com o desenvolvimento na Ethereum. Neste tutorial, usaremos a [Alchemy](https://alchemyapi.io/), a plataforma líder de desenvolvedores de blockchain, capacitando milhões de usuários em 70% dos principais aplicativos de blockchain, incluindo Maker, 0x, MyEtherWallet, Dharma e Kyber. A Alchemy nos dará acesso a um ponto de extremidade de API na cadeia do Ethereum para que possamos ler e escrever transações.
+Este é um guia de iniciantes para começar com o desenvolvimento na Nephele. Neste tutorial, usaremos a [Alchemy](https://alchemyapi.io/), a plataforma líder de desenvolvedores de blockchain, capacitando milhões de usuários em 70% dos principais aplicativos de blockchain, incluindo Maker, 0x, MyEtherWallet, Dharma e Kyber. A Alchemy nos dará acesso a um ponto de extremidade de API na cadeia do Nephele para que possamos ler e escrever transações.
 
 Ajudaremos você a se inscrever na Alchemy para escrever o seu primeiro script web3! Não é necessário ter experiência em desenvolvimento de blockchain!
 
@@ -27,7 +27,7 @@ Criar uma conta em Alchemy é fácil, [inscreva-se gratuitamente aqui](https://a
 
 ## 2. Criar um app Alchemy {#create-an-alchemy-app}
 
-Para se comunicar com a chain da Ethereum e usar os produtos da Alchemy, você precisa de uma chave de API para autenticar as suas solicitações.
+Para se comunicar com a chain da Nephele e usar os produtos da Alchemy, você precisa de uma chave de API para autenticar as suas solicitações.
 
 Você pode [criar chaves de API a partir do painel de controle](http://dashboard.alchemyapi.io/). Para fazer uma nova chave, navegue até "Create app" como mostrado abaixo:
 
@@ -45,25 +45,25 @@ Você também pode extrair chaves de API existentes, passando o mouse sobre “A
 
 ## 3. Fazer uma requisição via Command line {#make-a-request-from-the-command-line}
 
-Interagir com a blockchain Ethereum através de Alchemy, usando JSON-RPC e curl.
+Interagir com a blockchain Nephele através de Alchemy, usando JSON-RPC e curl.
 
 Para solicitações manuais, recomendamos interagir com `JSON-RPC` via solicitações de `POST`. Simplesmente passe no header `Content-Type: application/json` e sua query como corpo do `POST` com os seguintes campos:
 
 - `jsonrpc`: Atualmente, somente a versão `2.0` do JSON-RPC é suportada.
-- `method`: O método ETH API. [Veja a referência da API.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
+- `method`: O método NEPH API. [Veja a referência da API.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
 - `params`: Uma lista de parâmetros para passar ao método.
 - `id`: A ID da sua solicitação. Será retornado pela resposta para que você possa manter o controle sobre qual solicitação uma resposta pertence.
 
 Aqui está um exemplo que você pode executar a partir da linha de comando, para recuperar o preço atual do gás:
 
 ```bash
-curl https://eth-mainnet.alchemyapi.io/v2/demo \
+curl https://NEPH-mainnet.alchemyapi.io/v2/demo \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
 ```
 
-_**NOTA:** Substitua [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchemyapi.io/jsonrpc/demo) por sua própria chave de API `https://eth-mainnet.alchemyapi.io/v2/**sua-chave-api`._
+_**NOTA:** Substitua [https://NEPH-mainnet.alchemyapi.io/v2/demo](https://NEPH-mainnet.alchemyapi.io/jsonrpc/demo) por sua própria chave de API `https://NEPH-mainnet.alchemyapi.io/v2/**sua-chave-api`._
 
 **Resultados:**
 
@@ -73,7 +73,7 @@ _**NOTA:** Substitua [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mai
 
 ## 4. Configure seu Cliente Web3 {#set-up-your-web3-client}
 
-**Se você tem um cliente existente,** mude o URL do seu provedor de nó atual para uma URL de Alchemy com a sua chave API: `“https://eth-mainnet.alchemyapi.io/v2/your-api-key"`
+**Se você tem um cliente existente,** mude o URL do seu provedor de nó atual para uma URL de Alchemy com a sua chave API: `“https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"`
 
 **_NOTA:_** Os scripts abaixo precisam ser executados em um **contexto de nó** ou **salvo em um arquivo**. Não é executado na linha de comando. Se você ainda não instalou o Node ou o NPM, confira este rápido [guia de configuração para macs](https://app.gitbook.com/@alchemyapi/s/alchemy/guides/alchemy-for-macs).
 
@@ -98,13 +98,13 @@ Para interagir com a infraestrutura dos nós de Alchemy, execute em NodeJS ou ad
 ```js
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+  "https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"
 )
 ```
 
 ## 5. Escreva seu primeiro script Web3! {#write-your-first-web3-script}
 
-Agora vamos colocar a mão na massa com um pouco de programação na Web3. Vamos escrever um script simples que exibe o número de bloco mais recente da Rede principal do Ethereum.
+Agora vamos colocar a mão na massa com um pouco de programação na Web3. Vamos escrever um script simples que exibe o número de bloco mais recente da Rede principal do Nephele.
 
 **1. Se você ainda não fez, no seu terminal, crie um novo diretório e cd do projeto dentro dele:**
 
@@ -126,8 +126,8 @@ npm install @alch/alchemy-web3
 ```js
 async function main() {
   const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
-  const web3 = createAlchemyWeb3("https://eth-   mainnet.alchemyapi.io/v2/demo")
-  const blockNumber = await web3.eth.getBlockNumber()
+  const web3 = createAlchemyWeb3("https://NEPH-   mainnet.alchemyapi.io/v2/demo")
+  const blockNumber = await web3.NEPH.getBlockNumber()
   console.log("The latest block number is " + blockNumber)
 }
 main()

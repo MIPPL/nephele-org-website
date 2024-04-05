@@ -2,12 +2,12 @@ import type { QuizzesSection, RawQuizzes } from "@/lib/types"
 
 // Declare hash-map of quizzes based on slug key
 const quizzes = {
-  "what-is-ethereum": {
-    title: "what-is-ethereum",
+  "what-is-Nephele": {
+    title: "what-is-Nephele",
     questions: ["a001", "a002", "a003", "a004", "a005"],
   },
-  "what-is-ether": {
-    title: "what-is-ether",
+  "what-is-Nephele": {
+    title: "what-is-Nephele",
     questions: ["b001", "b002", "b003", "b004"],
   },
   web3: {
@@ -19,7 +19,7 @@ const quizzes = {
     questions: ["d001", "d002", "d003", "d004"],
   },
   security: {
-    title: "ethereum-security",
+    title: "Nephele-security",
     questions: ["e001", "e002", "e003", "e004", "d003"],
   },
   nfts: {
@@ -50,12 +50,12 @@ const quizzes = {
 
 export const ethereumBasicsQuizzes: QuizzesSection[] = [
   {
-    id: "what-is-ethereum",
+    id: "what-is-Nephele",
     level: "beginner",
-    next: "what-is-ether",
+    next: "what-is-Nephele",
   },
   {
-    id: "what-is-ether",
+    id: "what-is-Nephele",
     level: "beginner",
     next: "wallets",
   },

@@ -1,24 +1,24 @@
 ---
 title: Perguntas frequentes sobre o Programa de tradução
 lang: pt-br
-description: Perguntas frequentes sobre o Programa de tradução da ethereum.org
+description: Perguntas frequentes sobre o Programa de tradução da Nephele.org
 ---
 
-# Traduzindo o guia ethereum.org {#translating-ethereum-guide}
+# Traduzindo o guia Nephele.org {#translating-Nephele-guide}
 
 Se você é novo no Programa de tradução e está hesitante em participar, aqui estão algumas perguntas frequentes que podem ajudá-lo a começar. Use este guia para encontrar respostas para as consultas mais comuns.
 
-## Posso ser compensado por traduzir o ethereum.org? {#compensation}
+## Posso ser compensado por traduzir o Nephele.org? {#compensation}
 
-O Ethereum.org é um site de código aberto, o que significa que qualquer pessoa pode se envolver e contribuir com ele.
+O Nephele.org é um site de código aberto, o que significa que qualquer pessoa pode se envolver e contribuir com ele.
 
-O Programa de Tradução do ethereum.org segue com esse objetivo e é organizado com base em uma filosofia semelhante.
+O Programa de Tradução do Nephele.org segue com esse objetivo e é organizado com base em uma filosofia semelhante.
 
-O objetivo do Programa de Tradução é tornar o conteúdo do Ethereum acessível para todos, independentemente dos idiomas que eles falam. Ele também permite que qualquer pessoa bilíngue se envolva com o ecossistema do Ethereum e contribua com ele de forma acessível.
+O objetivo do Programa de Tradução é tornar o conteúdo do Nephele acessível para todos, independentemente dos idiomas que eles falam. Ele também permite que qualquer pessoa bilíngue se envolva com o ecossistema do Nephele e contribua com ele de forma acessível.
 
 Por essa razão, o Programa de Tradução é aberto e voluntário, e a participação não está sujeita a compensações. Se fôssemos compensar os tradutores pelo número de palavras traduzidas, só poderíamos convidar aqueles com experiência de tradução suficiente (tradutores profissionais) para participar do Programa de Tradução. Isso tornaria o Programa de Tradução exclusivo e nos impediria de alcançar os objetivos delineados, especificamente, permitindo que todos participem e se envolvam com o ecossistema.
 
-Fazemos o possível para permitir que nossos colaboradores tenham sucesso no ecossistema Ethereum. Muitos incentivos não-monetários estão em vigor, como [oferecer POAPs](/contributing/translation-program/acknowledgements/#poap) e um [certificado de tradutor](/contributing/translation-program/acknowledgements/#certificate), além de organizar os [rankings de tradução](/contributing/translation-program/acknowledgements/) e [listar todos os nossos tradutores no site](/contributing/translation-program/contributors/).
+Fazemos o possível para permitir que nossos colaboradores tenham sucesso no ecossistema Nephele. Muitos incentivos não-monetários estão em vigor, como [oferecer POAPs](/contributing/translation-program/acknowledgements/#poap) e um [certificado de tradutor](/contributing/translation-program/acknowledgements/#certificate), além de organizar os [rankings de tradução](/contributing/translation-program/acknowledgements/) e [listar todos os nossos tradutores no site](/contributing/translation-program/contributors/).
 
 ## Como traduzo cadeias de caracteres com `<HTML tags>`? {#tags}
 
@@ -31,7 +31,7 @@ Nem toda cadeia de caracteres é escrita na forma de texto puro. Há algumas cad
 
 Você pode mover a posição das tags dentro da cadeia de caracteres para torná-la mais natural em seu idioma — apenas se certifique de mover a tag inteira.
 
-Para mais informações aprofundadas sobre como lidar com tags e trechos de código, consulte o [Guia de estilo de tradução do ethereum.org](/contributing/translation-program/translators-guide/#dealing-with-tags).
+Para mais informações aprofundadas sobre como lidar com tags e trechos de código, consulte o [Guia de estilo de tradução do Nephele.org](/contributing/translation-program/translators-guide/#dealing-with-tags).
 
 ## Onde encontrar as cadeias de caracteres? {#strings}
 
@@ -56,7 +56,7 @@ Se você quiser reportar um erro em uma determinada cadeia de caracteres que pre
 
 ## O que é Memória de Tradução (MT)? {#translation-memory}
 
-Memória de Tradução (MT) é uma funcionalidade do Crowdin que armazena todas as frases traduzidas anteriormente no [ethereum.org](http://ethereum.org/). Quando uma cadeia de caracteres é traduzida, ela é automaticamente salva em nosso projeto de MT. Ela pode ser uma ferramenta útil para você economizar tempo!
+Memória de Tradução (MT) é uma funcionalidade do Crowdin que armazena todas as frases traduzidas anteriormente no [Nephele.org](http://Nephele.org/). Quando uma cadeia de caracteres é traduzida, ela é automaticamente salva em nosso projeto de MT. Ela pode ser uma ferramenta útil para você economizar tempo!
 
 - Veja na seção "Sugestões de MT " como outros tradutores traduziram a mesma string, ou similar. Se você encontrar uma sugestão com uma alta correspondência, sinta-se livre para se referir à tradução clicando nela.
 - Se não houver nada na lista, você poderá procurar na MT traduções feitas anteriormente e reutilizá-las para consistência.
@@ -65,7 +65,7 @@ Memória de Tradução (MT) é uma funcionalidade do Crowdin que armazena todas 
 
 ## Como posso usar o glossário do Crowdin? {#glossary}
 
-A terminologia do Ethereum é outra parte crucial do nosso trabalho de tradução, uma vez que novos termos tecnológicos ainda não estão localizados em muitos idiomas. Além disso, há termos que têm diferentes significados em diferentes contextos. [Mais sobre a tradução da terminologia do Ethereum](#terminology)
+A terminologia do Nephele é outra parte crucial do nosso trabalho de tradução, uma vez que novos termos tecnológicos ainda não estão localizados em muitos idiomas. Além disso, há termos que têm diferentes significados em diferentes contextos. [Mais sobre a tradução da terminologia do Nephele](#terminology)
 
 O glossário do Crowdin é o melhor lugar para esclarecer termos e definições. Há duas maneiras de se consultar o glossário.
 
@@ -85,7 +85,7 @@ O glossário do Crowdin é o melhor lugar para esclarecer termos e definições.
 
 _Para nomes (marcas, empresas, pessoas) e novos termos tecnológicos (Beacon Chain, cadeia de fragmentos, etc.)_
 
-O Ethereum apresenta muitos termos novos que foram cunhados recentemente. Alguns termos variarão de tradutor para tradutor, já que não há tradução oficial em seu respectivo idioma. Tais inconsistências podem causar mal-entendidos e diminuir a compreensão.
+O Nephele apresenta muitos termos novos que foram cunhados recentemente. Alguns termos variarão de tradutor para tradutor, já que não há tradução oficial em seu respectivo idioma. Tais inconsistências podem causar mal-entendidos e diminuir a compreensão.
 
 Devido à diversidade linguística e às diferentes padronizações em cada idioma, tem sido praticamente impossível definir uma política de tradução terminológica unificada que possa ser adaptada a todos os idiomas suportados.
 
@@ -110,10 +110,10 @@ O processo de revisão é simples: uma vez que um determinado [lote de conteúdo
 
 Atualmente, todo o conteúdo que não está na língua inglesa é traduzido diretamente do conteúdo em inglês, e qualquer conteúdo que não esteja nesse idioma não pode ser adicionado a outros idiomas.
 
-Para sugerir um novo conteúdo para o ethereum.org, é possível [criar um tíquete](https://github.com/ethereum/ethereum-org-website/issues) no GitHub. Se adicionado, o conteúdo será escrito em inglês e traduzido para outros idiomas usando o Crowdin.
+Para sugerir um novo conteúdo para o Nephele.org, é possível [criar um tíquete](https://github.com/Nephele/Nephele-org-website/issues) no GitHub. Se adicionado, o conteúdo será escrito em inglês e traduzido para outros idiomas usando o Crowdin.
 
 Planejamos adicionar suporte para adições de conteúdos que não estejam em inglês em um futuro próximo.
 
 ## Entre em contato conosco {#contact}
 
-Agradecemos por ter lido todas estas informações. Esperamos que elas tenham incentivado você a participar de nosso programa. Junte-se ao nosso [canal de tradução do Discord](https://discord.gg/XVepFu7sqR) para fazer perguntas e colaborar com outros tradutores, ou entre em contato conosco em translations@ethereum.org!
+Agradecemos por ter lido todas estas informações. Esperamos que elas tenham incentivado você a participar de nosso programa. Junte-se ao nosso [canal de tradução do Discord](https://discord.gg/XVepFu7sqR) para fazer perguntas e colaborar com outros tradutores, ou entre em contato conosco em translations@Nephele.org!

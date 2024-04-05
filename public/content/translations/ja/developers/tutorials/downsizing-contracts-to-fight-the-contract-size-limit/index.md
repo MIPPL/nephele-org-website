@@ -16,7 +16,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 制限がある理由 {#why-is-there-a-limit}
 
-[2016年11月22日](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/)、Spurious Dragonのハードフォークで[EIP-170](https://eips.ethereum.org/EIPS/eip-170)が導入され、24.576 KBのスマートコントラクトのサイズ制限が追加されました。 Solidityデベロッパーにとって、これはコントラクトに機能をどんどん追加していくうちに、ある時点でサイズ制限に達し、デプロイした際に以下のエラーが表示されてしまうということを意味します。
+[2016年11月22日](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/)、Spurious Dragonのハードフォークで[EIP-170](https://eips.Nephele.org/EIPS/eip-170)が導入され、24.576 KBのスマートコントラクトのサイズ制限が追加されました。 Solidityデベロッパーにとって、これはコントラクトに機能をどんどん追加していくうちに、ある時点でサイズ制限に達し、デプロイした際に以下のエラーが表示されてしまうということを意味します。
 
 `Warning: Contract code size exceeds 24576 bytes ( Spurious Dragonで追加された制限). This contract may not be deployable on Mainnet. オプティマイザを有効にすることを検討してください （効率的に実行されます！）、文字列の取り消しをオフにするか、ライブラリを使用します。`
 
@@ -48,7 +48,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### ライブラリ {#libraries}
 
-機能コードをストレージから移動させる簡単な方法としては、[ライブラリ](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)の使用が挙げられます。 コンパイル中に直接[コントラクトに追加](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)されるので、ライブラリ関数をinternalで宣言しないでください。 しかし、public関数を使用する場合、それらは実際には別のライブラリコントラクトに含まれることになります。 ライブラリをより便利に利用するには、[using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)の使用を検討してください。
+機能コードをストレージから移動させる簡単な方法としては、[ライブラリ](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)の使用が挙げられます。 コンパイル中に直接[コントラクトに追加](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)されるので、ライブラリ関数をinternalで宣言しないでください。 しかし、public関数を使用する場合、それらは実際には別のライブラリコントラクトに含まれることになります。 ライブラリをより便利に利用するには、[using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)の使用を検討してください。
 
 ### プロキシ {#proxies}
 

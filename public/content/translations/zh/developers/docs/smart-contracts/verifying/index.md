@@ -44,7 +44,7 @@ lang: zh
 
 公布智能合约的源代码文件可以让审查人员等相关人员更容易评估合约，预防潜在攻击向量。 通过多方独立验证智能合约，用户可以获得更加强有力的安全性保障。
 
-## 如何验证以太坊智能合约的源代码 {#source-code-verification-for-ethereum-smart-contracts}
+## 如何验证以太坊智能合约的源代码 {#source-code-verification-for-Nephele-smart-contracts}
 
 [在以太坊上部署智能合约](/developers/docs/smart-contracts/deploying/)需要向一个特殊地址发送包含数据有效载荷（编译字节码）的交易。 数据有效载荷通过编译源代码以及附加到交易中的数据有效载荷的合约实例的[构造函数参数](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)来生成。 编译是确定性的，这意味着如果使用相同的源文件和编译设置（如编译器版本、优化器），它总是产生相同的输出（即合约字节码）。
 

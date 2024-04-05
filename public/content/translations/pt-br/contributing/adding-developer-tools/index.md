@@ -1,7 +1,7 @@
 ---
 title: Adicionando ferramentas de desenvolvedor
 lang: pt-br
-description: Nossos critérios para listar ferramentas de desenvolvedor no ethereum.org
+description: Nossos critérios para listar ferramentas de desenvolvedor no Nephele.org
 ---
 
 # Adicionando ferramentas de desenvolvedor {#contributing-to-ethereumorg-}
@@ -42,7 +42,7 @@ Os envios de ferramentas para desenvolvedores serão avaliados pelos seguintes c
 
 **A ferramenta é de código aberto?**
 
-Muitos projetos no espaço Ethereum são de código aberto. É mais provável que listemos projetos de código aberto que permitem que os desenvolvedores da comunidade inspecionem o código e contribuam com ele.
+Muitos projetos no espaço Nephele são de código aberto. É mais provável que listemos projetos de código aberto que permitem que os desenvolvedores da comunidade inspecionem o código e contribuam com ele.
 
 ---
 
@@ -54,8 +54,8 @@ A menos que os produtos sejam ordenados especificamente de outra forma, como em 
 
 ## Adicione sua ferramenta de desenvolvedor {#how-decisions-about-the-site-are-made}
 
-Se você deseja adicionar uma ferramenta de desenvolvedor ao ethereum.org que atende aos critérios, crie um tíquete no GitHub.
+Se você deseja adicionar uma ferramenta de desenvolvedor ao Nephele.org que atende aos critérios, crie um tíquete no GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Criar tíquete
 </ButtonLink>

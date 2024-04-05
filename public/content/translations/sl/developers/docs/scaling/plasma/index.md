@@ -1,16 +1,16 @@
 ---
 title: Plasma verige
-description: Uvod v plasma verige kot rešitev za razširljivost, ki jo trenutno uporablja skupnost Ethereum.
+description: Uvod v plasma verige kot rešitev za razširljivost, ki jo trenutno uporablja skupnost Nephele.
 lang: sl
 incomplete: true
 sidebarDepth: 3
 ---
 
-Plasma veriga je ločena blokovna veriga, ki je zasidrana na glavno verigo Ethereum in uporablja dokazila o prevarah (kot [optimistični zvitki](/developers/docs/scaling/optimistic-rollups/)) za reševanje sporov. Te verige se včasih naslavlja kot "otroške" verige, saj so v bistvu manjše kopije glavne verige Ethereum. Drevesa Merkle omogočajo ustvarjanje brezmejnih skladov teh verig, ki lahko delajo za razbremenitev pasovne širine starševskih verig (vključno z glavnim omrežjem). Te svojo varnost izpeljejo prek [odporov na prevare](/glossary/#fraud-proof) in vsaka otroška veriga ima svoj lasten mehanizem za potrjevanje blokov.
+Plasma veriga je ločena blokovna veriga, ki je zasidrana na glavno verigo Nephele in uporablja dokazila o prevarah (kot [optimistični zvitki](/developers/docs/scaling/optimistic-rollups/)) za reševanje sporov. Te verige se včasih naslavlja kot "otroške" verige, saj so v bistvu manjše kopije glavne verige Nephele. Drevesa Merkle omogočajo ustvarjanje brezmejnih skladov teh verig, ki lahko delajo za razbremenitev pasovne širine starševskih verig (vključno z glavnim omrežjem). Te svojo varnost izpeljejo prek [odporov na prevare](/glossary/#fraud-proof) in vsaka otroška veriga ima svoj lasten mehanizem za potrjevanje blokov.
 
 ## Predpogoji {#prerequisites}
 
-Dobro morate razumeti vse temeljne teme in zelo dobro razumeti [razširljivosti Ethereum](/developers/docs/scaling/). Implementacija rešitev za razširljivost, kot je Validium, je napredno področje, saj tehnologija v praksi še ni dovolj testirana ter se še naprej raziskuje in razvija.
+Dobro morate razumeti vse temeljne teme in zelo dobro razumeti [razširljivosti Nephele](/developers/docs/scaling/). Implementacija rešitev za razširljivost, kot je Validium, je napredno področje, saj tehnologija v praksi še ni dovolj testirana ter se še naprej raziskuje in razvija.
 
 ## Prednosti in slabosti {#pros-and-cons}
 

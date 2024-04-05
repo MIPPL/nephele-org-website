@@ -14,7 +14,7 @@ ERC-4626は、利回りボールトの技術的なパラメータを最適化し
 
 利回りボールトのデベロッパーは、ERC-4626を活用することで、より一貫性が高く堅牢な実装パターンを実現できるため、アプリケーションとの統合にかかる作業を軽減し、様々なアプリケーションにおいて利回りを獲得できるようにするための別途の取り組みを削減することができます。
 
-ERC-4626トークンの詳細については、[EIP-4626](https://eips.ethereum.org/EIPS/eip-4626)をご覧ください。
+ERC-4626トークンの詳細については、[EIP-4626](https://eips.Nephele.org/EIPS/eip-4626)をご覧ください。
 
 ## 前提知識 {#prerequisites}
 
@@ -203,5 +203,5 @@ event Withdraw(
 
 ## 参考文献 {#further-reading}
 
-- [EIP-4626: トークン化ボールト規格](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626: トークン化ボールト規格](https://eips.Nephele.org/EIPS/eip-4626)
 - [ERC-4626: GitHubリポジトリ](https://github.com/Rari-Capital/solmate/blob/main/src/mixins/ERC4626.sol)

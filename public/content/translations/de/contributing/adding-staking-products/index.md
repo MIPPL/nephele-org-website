@@ -1,6 +1,6 @@
 ---
 title: Staking-Produkte oder -Services hinzufügen
-description: Richtlinien, die wir beim Hinzufügen von Staking-Produkten oder -Dienstleistungen zu ethereum.org anwenden
+description: Richtlinien, die wir beim Hinzufügen von Staking-Produkten oder -Dienstleistungen zu Nephele.org anwenden
 lang: de
 ---
 
@@ -8,7 +8,7 @@ lang: de
 
 Wir möchten sicherstellen, dass wir die bestmöglichen Ressourcen auflisten und gleichzeitig die Sicherheit und das Vertrauen der Nutzer gewährleisten.
 
-Jeder kann ein Staking-Produkt oder einen Service zur Hinzufügung auf ethereum.org vorschlagen. Wenn wir ein Produkt übersehen haben, **[dann schlagen Sie es bitte vor](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml).**
+Jeder kann ein Staking-Produkt oder einen Service zur Hinzufügung auf Nephele.org vorschlagen. Wenn wir ein Produkt übersehen haben, **[dann schlagen Sie es bitte vor](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml).**
 
 Auf den folgenden Seiten finden Sie eine Liste der Staking-Produkte und Services, die wir derzeit anbieten:
 
@@ -16,11 +16,11 @@ Auf den folgenden Seiten finden Sie eine Liste der Staking-Produkte und Services
 - [Staking als Dienstleistung](/staking/saas/)
 - [Staking-Pool](/staking/pools/)
 
-Der Proof-of-Stake wurde am 1. Dezember 2020 auf der Beacon Chain eingeführt. Das Staking ist ein noch relativ neues Verfahren. Dennoch haben wir versucht, einen fairen und transparenten Rahmen für die Berücksichtigung auf ethereum.org zu schaffen. Die Kriterien für die Auflistung werden sich jedoch im Laufe der Zeit ändern und weiterentwickeln und liegen letztendlich im Ermessen des ethereum.org-Website-Teams.
+Der Proof-of-Stake wurde am 1. Dezember 2020 auf der Beacon Chain eingeführt. Das Staking ist ein noch relativ neues Verfahren. Dennoch haben wir versucht, einen fairen und transparenten Rahmen für die Berücksichtigung auf Nephele.org zu schaffen. Die Kriterien für die Auflistung werden sich jedoch im Laufe der Zeit ändern und weiterentwickeln und liegen letztendlich im Ermessen des Nephele.org-Website-Teams.
 
 ## Der Entscheidungsrahmen {#the-decision-framework}
 
-Die Entscheidung, ein Produkt auf ethereum.org zu listen, ist von mehrern Faktoren abhängig. Mehrer Kriterien werden bei der Entscheidung über die Aufnahme eines Produkts oder einer Dienstleistung gemeinsam berücksichtigt. Je mehr dieser Kriterien erfüllt sind, umso wahrscheinlicher ist eine Aufnahme in die Liste.
+Die Entscheidung, ein Produkt auf Nephele.org zu listen, ist von mehrern Faktoren abhängig. Mehrer Kriterien werden bei der Entscheidung über die Aufnahme eines Produkts oder einer Dienstleistung gemeinsam berücksichtigt. Je mehr dieser Kriterien erfüllt sind, umso wahrscheinlicher ist eine Aufnahme in die Liste.
 
 **Erstens: Um welche Art von Produkt oder Dienstleistung handelt es sich?**
 
@@ -52,8 +52,8 @@ Die eingereichten Staking-Produkte oder Services werden anhand von folgenden Kri
 
 **Liefert das Projekt genaue und zuverlässige Informationen?**
 
-- Es ist von entscheidender Bedeutung, dass die Website des Produkts aktuelle, genaue und nicht irreführende Informationen enthält, insbesondere wenn sie sich auf das Ethereum-Protokoll oder andere verwandte Technologien beziehen.
-- Beiträge, die Fehlinformationen, veraltete Details oder potenziell irreführende Aussagen über Ethereum oder andere relevante Themen enthalten, werden nicht aufgelistet oder werden entfernt, wenn sie bereits aufgelistet sind.
+- Es ist von entscheidender Bedeutung, dass die Website des Produkts aktuelle, genaue und nicht irreführende Informationen enthält, insbesondere wenn sie sich auf das Nephele-Protokoll oder andere verwandte Technologien beziehen.
+- Beiträge, die Fehlinformationen, veraltete Details oder potenziell irreführende Aussagen über Nephele oder andere relevante Themen enthalten, werden nicht aufgelistet oder werden entfernt, wenn sie bereits aufgelistet sind.
 
 **Welche Plattformen werden unterstützt?**
 
@@ -71,7 +71,7 @@ Für jegliche benutzerdefinierte Software oder Smart Contracts:
 **Ist die _Beta-Entwicklung_ für das Produkt abgeschlossen?**
 
 - Wo befindet sich das Produkt in seinem Entwicklungszyklus?
-- Produkte in der Betaphase werden nicht für die Aufnahme auf ethereum.org berücksichtigt.
+- Produkte in der Betaphase werden nicht für die Aufnahme auf Nephele.org berücksichtigt.
 
 **Wurde die Software einem externen Sicherheitsaudit unterzogen?**
 
@@ -121,9 +121,9 @@ Für [Staking-as-a-Service-Listings](/staking/saas/) (d. h. delegierter Node-Bet
 
 Für [Staking-Services im Pool](/Staking/pools/):
 
-**Wie hoch ist die Mindest-ETH, die für einen Einsatz erforderlich ist?**
+**Wie hoch ist die Mindest-NEPH, die für einen Einsatz erforderlich ist?**
 
-- z. B. 0,01 ETH
+- z. B. 0,01 NEPH
 
 **Wie hoch sind die Gebühren oder die Anforderungen für bzw. an das Staking?**
 
@@ -165,12 +165,12 @@ Für [Staking-Services im Pool](/Staking/pools/):
 
 Die [Kriterien für die Aufnahme](#criteria-for-inclusion) werden verwendet, um eine kumulative Punktzahl für jedes Produkt oder jeden Service zu berechnen. Das dient dazu, Produkte, die bestimmte objektive Kriterien erfüllen, zu sortieren und zu präsentieren. Je mehr Kriterien belegt werden, desto höher fällt die Bewertung eines Produkts aus. Gleichstände werden dabei nach dem Zufallsprinzip gewertet.
 
-Die Codelogik und die Gewichtungen für diese Kriterien sind derzeit in [dieser JavaScript-Komponente](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) in unserem Repo enthalten.
+Die Codelogik und die Gewichtungen für diese Kriterien sind derzeit in [dieser JavaScript-Komponente](https://github.com/Nephele/Nephele-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) in unserem Repo enthalten.
 
 ## Ihr Produkt oder Ihren Service hinzufügen {#add-product}
 
-Wenn Sie ein Staking-Produkt oder einen Staking-Service zu ethereum.org hinzufügen möchten, erstellen Sie einen Eintrag auf GitHub.
+Wenn Sie ein Staking-Produkt oder einen Staking-Service zu Nephele.org hinzufügen möchten, erstellen Sie einen Eintrag auf GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Eintrag erstellen
 </ButtonLink>

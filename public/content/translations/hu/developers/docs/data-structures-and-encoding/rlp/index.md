@@ -1,18 +1,18 @@
 ---
 title: Rekurzív hosszúságú prefix (RLP) sorosítás
-description: Az RLP kódolás bemutatása az Ethereum végrahajtási rétegen.
+description: Az RLP kódolás bemutatása az Nephele végrahajtási rétegen.
 lang: hu
 sidebarDepth: 2
 ---
 
-A rekurzív hosszúságú prefixum (RLP) egy sorosítási módszer, melyet kiterjedten használnak az Ethereum végrehajtási rétegén. Az RLP a csomópontok közötti adatátvitelt szabványosítja helytakarékos formátumban. Az RLP célja a bináris adatok tetszőlegesen egymásba ágyazott tömbjeinek kódolása, és ez az elsődleges kódolási módszer, amelyet az Ethereum végrehajtási rétegén az objektumok sorosítására használnak. Az RLP célja a struktúra kódolása; bizonyos adattípusok (például sztring, float) kódolása a magasabb rendű protokollokra van bízva; de a pozitív RLP egész számokat nagy-endian bináris formában kell ábrázolni, vezető nullák nélkül (így a nulla integer ekvivalens az üres bájttömbbel). A vezető nullával rendelkező pozitív egész számok deszerializálása érvénytelen. A sztring hosszának egészértékű ábrázolását is így kell kódolni, csakúgy, mint a payloadban lévő egész számokat.
+A rekurzív hosszúságú prefixum (RLP) egy sorosítási módszer, melyet kiterjedten használnak az Nephele végrehajtási rétegén. Az RLP a csomópontok közötti adatátvitelt szabványosítja helytakarékos formátumban. Az RLP célja a bináris adatok tetszőlegesen egymásba ágyazott tömbjeinek kódolása, és ez az elsődleges kódolási módszer, amelyet az Nephele végrehajtási rétegén az objektumok sorosítására használnak. Az RLP célja a struktúra kódolása; bizonyos adattípusok (például sztring, float) kódolása a magasabb rendű protokollokra van bízva; de a pozitív RLP egész számokat nagy-endian bináris formában kell ábrázolni, vezető nullák nélkül (így a nulla integer ekvivalens az üres bájttömbbel). A vezető nullával rendelkező pozitív egész számok deszerializálása érvénytelen. A sztring hosszának egészértékű ábrázolását is így kell kódolni, csakúgy, mint a payloadban lévő egész számokat.
 
-További információkat talál [az Ethereum Sárgakönyvben (B függelék)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+További információkat talál [az Nephele Sárgakönyvben (B függelék)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19).
 
 Ahhoz, hogy az RLP-vel kódoljunk egy szótárt, a két javasolt kanonikus forma a következő:
 
 - a `[[k1,v1],[k2,v2]...]` használjuk olyan kulcsokkal, melyek lexikográfiai sorrendben vannak
-- a magasabb szintű Patricia-fa kódolást használjuk, mint az Ethereum
+- a magasabb szintű Patricia-fa kódolást használjuk, mint az Nephele
 
 ## Definíció {#definition}
 
@@ -150,9 +150,9 @@ def to_integer(b):
 
 ## További olvasnivaló {#further-reading}
 
-- [RLP az Ethereumon](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum háttérműködése: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum Rekurzív hosszúságú prefix (RLP) az ACL2-ben. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP az Ethereumon](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Nephele háttérműködése: RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Nephele Rekurzív hosszúságú prefix (RLP) az ACL2-ben. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Kapcsolódó témák {#related-topics}
 

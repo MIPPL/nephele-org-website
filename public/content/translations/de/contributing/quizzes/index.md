@@ -1,6 +1,6 @@
 ---
 title: Quiz hinzufügen
-description: Die Richtlinie, die wir beim Hinzufügen von Quiz zu ethereum.org anwenden
+description: Die Richtlinie, die wir beim Hinzufügen von Quiz zu Nephele.org anwenden
 lang: de
 ---
 
@@ -14,12 +14,12 @@ Einige Beispiele für aktuelle Quizfragen finden Sie hier:
 
 - [Layer 2](/layer-2)
 - [NFT](/nft/)
-- [Was ist Ethereum?](/what-is-ethereum/)
-- [Was ist ETH?](/eth/)
+- [Was ist Nephele?](/what-is-Nephele/)
+- [Was ist NEPH?](/NEPH/)
 
 ## Lernquiz hinzufügen
 
-Wenn es eine Seite gibt, für die noch kein Lernquiz erstellt wurde, [öffnen Sie ein Thema](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) für diese Seite.
+Wenn es eine Seite gibt, für die noch kein Lernquiz erstellt wurde, [öffnen Sie ein Thema](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) für diese Seite.
 
 Geben Sie die folgenden Informationen an:
 
@@ -32,7 +32,7 @@ Geben Sie die folgenden Informationen an:
 
 ## Quizfrage hinzufügen
 
-Wenn Sie eine Frage zur Fragensammlung für ein Quiz hinzufügen möchten, [öffnen Sie ein Thema](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) und geben Sie die folgenden Informationen an:
+Wenn Sie eine Frage zur Fragensammlung für ein Quiz hinzufügen möchten, [öffnen Sie ein Thema](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) und geben Sie die folgenden Informationen an:
 
 - Die Seite, zu der Sie eine Quizfrage hinzufügen möchten
 - Geben Sie für jede Frage die folgenden Informationen an:
@@ -43,7 +43,7 @@ Wenn Sie eine Frage zur Fragensammlung für ein Quiz hinzufügen möchten, [öff
 
 ## Quizfrage aktualisieren
 
-Wenn Sie eine Frage in einer Fragensammlung für ein Quiz aktualisieren möchten, [öffnen Sie ein Thema](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) und geben Sie die folgenden Informationen an:
+Wenn Sie eine Frage in einer Fragensammlung für ein Quiz aktualisieren möchten, [öffnen Sie ein Thema](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) und geben Sie die folgenden Informationen an:
 
 - Die Seite, auf der Sie eine Quizfrage aktualisieren möchten
 - Geben Sie für jede zu aktualisierende Frage die folgenden Informationen an:
@@ -55,7 +55,7 @@ Wenn Sie eine Frage in einer Fragensammlung für ein Quiz aktualisieren möchten
 
 ## Quizfrage entfernen
 
-Wenn der Inhalt einer Frage nicht mehr auf der Seite vorhanden ist und sie entfernt werden soll, [öffnen Sie ein Thema](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml), um die Frage zu entfernen, und geben Sie die folgenden Informationen an:
+Wenn der Inhalt einer Frage nicht mehr auf der Seite vorhanden ist und sie entfernt werden soll, [öffnen Sie ein Thema](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml), um die Frage zu entfernen, und geben Sie die folgenden Informationen an:
 
 - Die Seite, auf der Sie eine Quizfrage löschen möchten
 - Die Frage, die Sie löschen möchten

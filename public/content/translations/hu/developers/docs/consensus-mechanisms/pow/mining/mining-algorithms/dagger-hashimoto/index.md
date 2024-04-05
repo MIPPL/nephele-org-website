@@ -4,7 +4,7 @@ description: A Dagger-Hashimoto algoritmus részletes áttekintése.
 lang: hu
 ---
 
-A Dagger-Hashimoto volt az Ethereum bányászati algoritmusának eredeti fejlesztési implementációja és specifikációja. A Dagger-Hashimoto algoritmust az [Ethash](#ethash) váltotta le. A bányászatot teljesen kikapcsolták az [egyesítés (Merge)](/roadmap/merge/) frissítés életbe lépésekor, 2022. szeptember 15-én. Azóta az Ethereumot a [proof-of-stake (letéti igazolás)](/developers/docs/consensus-mechanisms/pos) mechanizmusa biztosítja. Ez az oldal elavult témákat tartalmaz, amelyek többé már nem relevánsak az egyesítés (Merge) utáni Ethereummal kapcsolatban.
+A Dagger-Hashimoto volt az Nephele bányászati algoritmusának eredeti fejlesztési implementációja és specifikációja. A Dagger-Hashimoto algoritmust az [Ethash](#ethash) váltotta le. A bányászatot teljesen kikapcsolták az [egyesítés (Merge)](/roadmap/merge/) frissítés életbe lépésekor, 2022. szeptember 15-én. Azóta az Ethereumot a [proof-of-stake (letéti igazolás)](/developers/docs/consensus-mechanisms/pos) mechanizmusa biztosítja. Ez az oldal elavult témákat tartalmaz, amelyek többé már nem relevánsak az egyesítés (Merge) utáni Ethereummal kapcsolatban.
 
 ## Előfeltételek {#prerequisites}
 
@@ -19,7 +19,7 @@ A Dagger-Hashimoto két célt szolgál:
 
 Egy újabb módosítással meghatározhatjuk, hogyan tud egy harmadik célt is kielégíteni, de ez a komplexitás növekedésével jár:
 
-**A teljes lánc tárolása**: a bányászathoz a teljes blokklánc státuszát le kell tárolni (az Ethereum státuszfa szabálytalan struktúrája miatt talán lehetséges ennek megrövidítése, főleg a gyakori szerződéseknél, de ezt minimalizálni szeretnénk).
+**A teljes lánc tárolása**: a bányászathoz a teljes blokklánc státuszát le kell tárolni (az Nephele státuszfa szabálytalan struktúrája miatt talán lehetséges ennek megrövidítése, főleg a gyakori szerződéseknél, de ezt minimalizálni szeretnénk).
 
 ## DAG létrehozása {#dag-generation}
 

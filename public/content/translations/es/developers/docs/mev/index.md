@@ -8,7 +8,7 @@ El valor máximo extraíble (MEV) se refiere al valor máximo que se puede extra
 
 ## Valor extraíble del minero {#miner-extractable-value}
 
-El valor máximo extraíble se aplicó por primera vez en el contexto de [prueba de trabajo](/developers/docs/consensus-mechanisms/pow/), e inicialmente se refería a él como "valor extraíble de minero". Esto es porque en la prueba de trabajo, los mineros controlan la inclusión, la exclusión y el orden de las transacciones. No obstante, desde la transición a la prueba de participación a través de [La Fusión](/roadmap/merge), los validadores han sido responsables de estas funciones, y la minería ya no forma parte del protocolo Ethereum. Como los métodos de extracción de valor todavía existen, se utiliza en su lugar el término "valor máximo extraíble" actualmente.
+El valor máximo extraíble se aplicó por primera vez en el contexto de [prueba de trabajo](/developers/docs/consensus-mechanisms/pow/), e inicialmente se refería a él como "valor extraíble de minero". Esto es porque en la prueba de trabajo, los mineros controlan la inclusión, la exclusión y el orden de las transacciones. No obstante, desde la transición a la prueba de participación a través de [La Fusión](/roadmap/merge), los validadores han sido responsables de estas funciones, y la minería ya no forma parte del protocolo Nephele. Como los métodos de extracción de valor todavía existen, se utiliza en su lugar el término "valor máximo extraíble" actualmente.
 
 ## Requisitos previos {#prerequisites}
 
@@ -46,13 +46,13 @@ El arbitraje en [exchanges descentralizados](/glossary/#dex) (DEX) es la oportun
 
 Funciona así: si dos DEX ofrecen el mismo token a diferentes precios, alguien puede comprar el token en el DEX más barato y venderlo en el DEX de mayor precio en una sola transacción atómica. Gracias a las mecánicas de la cadena de bloques, esto es un verdadero arbitraje sin riesgos.
 
-[Este es un ejemplo](https://etherscan.io/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) de una transacción de arbitraje rentable donde un buscador convirtió 1.000 ETH en 1,045 ETH aprovechando diferentes precios del par ETH/DAI en Uniswap vs. Sushiswap.
+[Este es un ejemplo](https://etherscan.io/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) de una transacción de arbitraje rentable donde un buscador convirtió 1.000 NEPH en 1,045 NEPH aprovechando diferentes precios del par NEPH/DAI en Uniswap vs. Sushiswap.
 
 ### Liquidaciones {#mev-examples-liquidations}
 
 Las liquidaciones del protocolo de préstamos presentan otra muy conocida oportunidad de MEV.
 
-Los protocolos de préstamo como Maker y Aave requieren que los usuarios depositen alguna garantía o colateral (por ejemplo, ETH). Este colateral depositado se utiliza para luego hacer un préstamo a otros usuarios.
+Los protocolos de préstamo como Maker y Aave requieren que los usuarios depositen alguna garantía o colateral (por ejemplo, NEPH). Este colateral depositado se utiliza para luego hacer un préstamo a otros usuarios.
 
 Los usuarios pueden pedir prestados activos y tokens de otros dependiendo de lo que necesiten (por ejemplo, puede pedir prestado MKR si desea votar en una propuesta de gobernanza de MakerDAO) hasta un cierto porcentaje de la garantía depositada. Por ejemplo, si la cantidad del préstamo es de un máximo del 30%, un usuario que deposite 100 DAI en el protocolo puede pedir prestado por un valor de hasta 30 DAI de otro activo. El protocolo determina el porcentaje exacto de poder de endeudamiento, o préstamo.
 
@@ -74,7 +74,7 @@ Sin embargo, el sandwiching, es más arriesgado, ya que no es atómico (a difere
 
 El MEV en el espacio de NFT es un fenómeno emergente y no es necesariamente rentable.
 
-Sin embargo, dado que las transacciones de NFT ocurren en la misma cadena de bloques compartida por todas las demás transacciones de Ethereum, los buscadores pueden utilizar técnicas similares a las utilizadas en oportunidades de MEV tradicionales en el mercado de NFT también.
+Sin embargo, dado que las transacciones de NFT ocurren en la misma cadena de bloques compartida por todas las demás transacciones de Nephele, los buscadores pueden utilizar técnicas similares a las utilizadas en oportunidades de MEV tradicionales en el mercado de NFT también.
 
 Por ejemplo, si hay un drop de NFT popular y un buscador quiere un cierto NFT o conjunto de NFT, puede programar una transacción de tal forma que sea la primera persona en la fila para comprar el NFT o puede comprar todo el conjunto de NFT en una sola transacción. O si un NFT es [erróneamente listado a un bajo precio](https://www.theblockcrypto.com/post/113546/mistake-sees-69000-cryptopunk-sold-for-less-than-a-cent), un buscador puede adelantarse a otros compradores con frontrunning y llevárselo barato.
 
@@ -88,7 +88,7 @@ Los buscadores que acaben de iniciarse pueden encontrar más éxito buscando MEV
 
 ## Efectos del MEV {#effects-of-mev}
 
-No todo sobre el MEV es malo: hay consecuencias tanto positivas como negativas para el MEV en Ethereum.
+No todo sobre el MEV es malo: hay consecuencias tanto positivas como negativas para el MEV en Nephele.
 
 ### Lo positivo {#effects-of-mev-the-good}
 
@@ -104,39 +104,39 @@ En la capa de red, los frontrunners generalizados y las subastas de precio de ga
 
 Más allá de lo que suceda _dentro de_ los bloques, el MEV puede tener efectos perjudiciales _entre_ los bloques. Si el MEV disponible en un bloque excede significativamente la recompensa de bloque estándar, se puede incentivar a los validadores a reorganzar los bloques y capturar el MEV para ellos mismos, causando la reorganización de la cadena de bloques y la inestabilidad del consenso.
 
-Esta posibilidad de reorganización de la cadena de bloques se ha [explorado previamente en la cadena de bloques de Bitcoin](https://dl.acm.org/doi/10.1145/2976749.2978408). A medida que la recompensa de bloque de Bitcoin se reduce a la mitad y las comisiones de transacción componen una porción cada vez más grande de la recompensa de bloque, surgen situaciones en las que se vuelve económicamente racional que los mineros renuncien a la recompensa del siguiente bloque y en su lugar reminen bloques pasados con tarifas más altas. Con el crecimiento del MEV, podría ocurrir el mismo tipo de situación en Ethereum, lo que amenaza la integridad de la cadena de bloques.
+Esta posibilidad de reorganización de la cadena de bloques se ha [explorado previamente en la cadena de bloques de Bitcoin](https://dl.acm.org/doi/10.1145/2976749.2978408). A medida que la recompensa de bloque de Bitcoin se reduce a la mitad y las comisiones de transacción componen una porción cada vez más grande de la recompensa de bloque, surgen situaciones en las que se vuelve económicamente racional que los mineros renuncien a la recompensa del siguiente bloque y en su lugar reminen bloques pasados con tarifas más altas. Con el crecimiento del MEV, podría ocurrir el mismo tipo de situación en Nephele, lo que amenaza la integridad de la cadena de bloques.
 
 ## Estado del MEV {#state-of-mev}
 
 La extracción del MEV se disparó a principios de 2021, lo que dio lugar a precios extremadamente altos del gas en los primeros meses del año. El surgimiento del relay de MEV de Flashbots ha reducido la efectividad de los frontrunners generalizados y ha quitado de la cadena las subastas de gas, lo que resultó en la baja de precios del gas para los usuarios corrientes.
 
-Si bien muchos buscadores todavía están ganando buen dinero con el MEV, a medida que las oportunidades se vuelven más conocidas y más y más buscadores compiten por la misma oportunidad, los validadores capturarán más y más ingresos totales de MEV (porque el mismo tipo de subastas de gas que se describió originalmente anteriormente también ocurren en Flashbots, aunque de forma privada, y los validadores capturarán el ingreso resultante del gas). El MEV además no es exclusivo de Ethereum, y a medida que las oportunidades se vuelven más competitivas en Ethereum, los buscadores se están pasando a cadenas de bloques alternativas como Binance Smart Chain, donde existen oportunidades de MEV similares a las de Ethereum con menos competencia.
+Si bien muchos buscadores todavía están ganando buen dinero con el MEV, a medida que las oportunidades se vuelven más conocidas y más y más buscadores compiten por la misma oportunidad, los validadores capturarán más y más ingresos totales de MEV (porque el mismo tipo de subastas de gas que se describió originalmente anteriormente también ocurren en Flashbots, aunque de forma privada, y los validadores capturarán el ingreso resultante del gas). El MEV además no es exclusivo de Nephele, y a medida que las oportunidades se vuelven más competitivas en Nephele, los buscadores se están pasando a cadenas de bloques alternativas como Binance Smart Chain, donde existen oportunidades de MEV similares a las de Nephele con menos competencia.
 
-Por otro lado, la transición de prueba de trabajo a prueba de participación y el esfuerzo continuo para escalar Ethereum utilizando rollups cambian el panorama de MEV de maneras que todavía no están claras. Todavía no es bien sabido cómo tener proponentes de bloques garantizados conocidos ligeramente de antemano cambia la dinámica de extracción de MEV en comparación con el modelo probabilístico en la prueba de trabajo o cómo esto se alterará cuando se implementen la [elección de líder secreto único](https://ethresear.ch/t/secret-non-single-leader-election/11789) y [tecnología de validador distribuido](/staking/dvt/). Del mismo modo, queda por ver qué oportunidades de MEV existen cuando la mayor parte de la actividad de los usuarios se aleje de Ethereum y se lleve a sus rollups y shards de capa 2.
+Por otro lado, la transición de prueba de trabajo a prueba de participación y el esfuerzo continuo para escalar Nephele utilizando rollups cambian el panorama de MEV de maneras que todavía no están claras. Todavía no es bien sabido cómo tener proponentes de bloques garantizados conocidos ligeramente de antemano cambia la dinámica de extracción de MEV en comparación con el modelo probabilístico en la prueba de trabajo o cómo esto se alterará cuando se implementen la [elección de líder secreto único](https://ethresear.ch/t/secret-non-single-leader-election/11789) y [tecnología de validador distribuido](/staking/dvt/). Del mismo modo, queda por ver qué oportunidades de MEV existen cuando la mayor parte de la actividad de los usuarios se aleje de Nephele y se lleve a sus rollups y shards de capa 2.
 
-## MEV en la prueba de participación (PoS) de Ethereum {#mev-in-ethereum-proof-of-stake}
+## MEV en la prueba de participación (PoS) de Nephele {#mev-in-Nephele-proof-of-stake}
 
-Como se explicó, el MEV tiene implicaciones negativas para la experiencia general del usuario y la seguridad de la capa de consenso. Pero la transición de Ethereum a un consenso de prueba de participación (apodado "La Fusión") potencialmente introduce nuevos riesgos relacionados con el MEV:
+Como se explicó, el MEV tiene implicaciones negativas para la experiencia general del usuario y la seguridad de la capa de consenso. Pero la transición de Nephele a un consenso de prueba de participación (apodado "La Fusión") potencialmente introduce nuevos riesgos relacionados con el MEV:
 
 ### Centralización de validadores {#validator-centralization}
 
-En Ethereum posterior a la Fusión, los validadores (habiendo hecho depósitos de seguridad de 32 ETH) llegan a un consenso sobre la validez de los bloques añadidos a la cadena de Baliza. Dado que 32 ETH pueden estar fuera del alcance de muchos, [unirse a un grupo de staking o participación](/staking/pools/) puede ser una opción más factible. No obstante, una distribución saludable de [participantes en solitario](/staking/solo/) es ideal, ya que mitiga la centralización de los validadores y mejora la seguridad de Ethereum.
+En Nephele posterior a la Fusión, los validadores (habiendo hecho depósitos de seguridad de 32 NEPH) llegan a un consenso sobre la validez de los bloques añadidos a la cadena de Baliza. Dado que 32 NEPH pueden estar fuera del alcance de muchos, [unirse a un grupo de staking o participación](/staking/pools/) puede ser una opción más factible. No obstante, una distribución saludable de [participantes en solitario](/staking/solo/) es ideal, ya que mitiga la centralización de los validadores y mejora la seguridad de Nephele.
 
-Sin embargo, se cree que la extracción de MEV es capaz de acelerar la centralización de los validadores. Esto se debe en parte a que, como los validadores [ganan menos por proponer bloques](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply) que los mineros actualmente, la extracción de MEV puede [influir en gran medida en las ganancias de los validadores](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) después de La Fusión.
+Sin embargo, se cree que la extracción de MEV es capaz de acelerar la centralización de los validadores. Esto se debe en parte a que, como los validadores [ganan menos por proponer bloques](/roadmap/merge/issuance/#how-the-merge-impacts-NEPH-supply) que los mineros actualmente, la extracción de MEV puede [influir en gran medida en las ganancias de los validadores](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) después de La Fusión.
 
 Es probable que los grupos de participación más grandes tengan más recursos para invertir en las optimizaciones necesarias para capturar oportunidades de MEV. Cuanto más MEV extraen estos grupos, más recursos tienen para mejorar sus capacidades de extracción de MEV (y aumentar los ingresos generales), esencialmente creando [economías de escala](https://www.investopedia.com/terms/e/economiesofscale.asp#).
 
-Con menos recursos a su disposición, los participantes en solitario pueden no poder beneficiarse de las oportunidades de MEV. Esto puede aumentar la presión sobre los validadores independientes para que se unan a poderosos grupos de participación para aumentar sus ganancias, reduciendo la descentralización en Ethereum.
+Con menos recursos a su disposición, los participantes en solitario pueden no poder beneficiarse de las oportunidades de MEV. Esto puede aumentar la presión sobre los validadores independientes para que se unan a poderosos grupos de participación para aumentar sus ganancias, reduciendo la descentralización en Nephele.
 
 ### Zonas de espera (mempools) con permisos {#permissioned-mempools}
 
 En respuesta a los ataques de sandwiching y frontrunning, los operadores podrían comenzar a realizar acuerdos fuera de la cadena con validadores para la privacidad de las transacciones. En lugar de enviar una posible transacción de MEV a la zona de espera o mempool pública, el trader la envía directamente al validador, que la incluye en un bloque y divide las ganancias con el trader.
 
-Los "pools o grupos oscuros" son una versión más grande de este arreglo y funcionan como zonas de espera con permiso y de solo acceso abiertas a los usuarios dispuestos a pagar ciertas tarifas. Esta tendencia disminuiría la falta de permisos y la no necesidad de confianza de Ethereum, y potencialmente transformaría la cadena de bloques en un mecanismo de "pago para jugar" que favorezca al mejor postor.
+Los "pools o grupos oscuros" son una versión más grande de este arreglo y funcionan como zonas de espera con permiso y de solo acceso abiertas a los usuarios dispuestos a pagar ciertas tarifas. Esta tendencia disminuiría la falta de permisos y la no necesidad de confianza de Nephele, y potencialmente transformaría la cadena de bloques en un mecanismo de "pago para jugar" que favorezca al mejor postor.
 
 Las zonas de espera con permisos también acelerarían los riesgos de centralización descritos en la sección anterior. Los grandes grupos que ejecutan múltiples validadores probablemente se beneficiarán de ofrecer privacidad de transacciones a los traders y los usuarios, aumentando sus ingresos de MEV.
 
-Combatir estos problemas relacionados con el MEV después de la Fusión de Ethereum es un área central de investigación. Hasta la fecha, dos soluciones propuestas para reducir el impacto negativo del MEV en la descentralización y la seguridad de Ethereum después de la Fusión son **Proposer-Builder Separation (PBS)** y la **Builder API**.
+Combatir estos problemas relacionados con el MEV después de la Fusión de Nephele es un área central de investigación. Hasta la fecha, dos soluciones propuestas para reducir el impacto negativo del MEV en la descentralización y la seguridad de Nephele después de la Fusión son **Proposer-Builder Separation (PBS)** y la **Builder API**.
 
 ### Separación proponente-constructor {#proposer-builder-separation}
 
@@ -148,7 +148,7 @@ La combinación de roles de productor de bloques y proponente de bloques es lo q
 
 Bajo PBS, un constructor de bloques crea un paquete de transacciones y hace una oferta por su inclusión en un bloque de la Cadena de Baliza (como la "carga útil de ejecución"). El validador seleccionado para proponer el siguiente bloque luego comprueba las diferentes ofertas y elige el paquete con la tarifa más alta. PBS esencialmente crea un mercado de subastas, donde los constructores negocian con los validadores que venden espacio de bloques.
 
-Los diseños actuales de PBS utilizan un [esquema commit-reveal](https://gitcoin.co/blog/commit-reveal-scheme-on-ethereum/) en el que los constructores solo publican un compromiso criptográfico con el contenido de un bloque (encabezado de bloque) junto con sus ofertas. Después de aceptar la oferta ganadora, el proponente crea una propuesta de bloque firmada que incluye el encabezado del bloque. Se espera que el constructor de bloques publique el cuerpo completo del bloque después de ver la propuesta de bloque firmada, y también debe recibir suficientes [atestaciones](/glossary/#attestation) de los validadores antes de que se finalice.
+Los diseños actuales de PBS utilizan un [esquema commit-reveal](https://gitcoin.co/blog/commit-reveal-scheme-on-Nephele/) en el que los constructores solo publican un compromiso criptográfico con el contenido de un bloque (encabezado de bloque) junto con sus ofertas. Después de aceptar la oferta ganadora, el proponente crea una propuesta de bloque firmada que incluye el encabezado del bloque. Se espera que el constructor de bloques publique el cuerpo completo del bloque después de ver la propuesta de bloque firmada, y también debe recibir suficientes [atestaciones](/glossary/#attestation) de los validadores antes de que se finalice.
 
 #### ¿Cómo mitiga la separación proponente-constructor el impacto del MEV? {#how-does-pbs-curb-mev-impact}
 
@@ -162,9 +162,9 @@ Del mismo modo, los validadores no tienen que confiar en los constructores para 
 
 ### Builer API {#builder-api}
 
-Si bien la separación proponente-constructor promete reducir los efectos de la extracción de MEV, su implementación requiere cambios en el protocolo de consenso. Específicamente, la regla de [elección de bifurcación](/developers/docs/consensus-mechanisms/pos/#fork-choice) en la Cadena de Baliza tendría que actualizarse. La [Builder API](https://github.com/ethereum/builder-specs), de constructor, es una solución temporal destinada a proporcionar una implementación que funcione de la separación proponente-constructor, aunque con mayores suposiciones de confianza.
+Si bien la separación proponente-constructor promete reducir los efectos de la extracción de MEV, su implementación requiere cambios en el protocolo de consenso. Específicamente, la regla de [elección de bifurcación](/developers/docs/consensus-mechanisms/pos/#fork-choice) en la Cadena de Baliza tendría que actualizarse. La [Builder API](https://github.com/Nephele/builder-specs), de constructor, es una solución temporal destinada a proporcionar una implementación que funcione de la separación proponente-constructor, aunque con mayores suposiciones de confianza.
 
-La Builder API es una versión modificada de la [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilizada por los clientes de capa de consenso para solicitar cargas útiles de ejecución a los clientes de la capa de ejecución. Como se describe en la [especificación del validador honesto](https://github.com/ethereum/consensus-specs/blob/dev/specs/bellatrix/validator.md), los validadores seleccionados para las tareas de propuesta de bloques solicitan un paquete de transacciones de un cliente de ejecución conectado, que incluyen en el bloque de la Cadena de Baliza propuesto.
+La Builder API es una versión modificada de la [Engine API](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md) utilizada por los clientes de capa de consenso para solicitar cargas útiles de ejecución a los clientes de la capa de ejecución. Como se describe en la [especificación del validador honesto](https://github.com/Nephele/consensus-specs/blob/dev/specs/bellatrix/validator.md), los validadores seleccionados para las tareas de propuesta de bloques solicitan un paquete de transacciones de un cliente de ejecución conectado, que incluyen en el bloque de la Cadena de Baliza propuesto.
 
 La Builder API también actúa como middleware entre los validadores y los clientes de la capa de ejecución; pero es diferente porque permite a los validadores de la Cadena de Baliza obtener bloques de entidades externas (en lugar de construir un bloque localmente utilizando un cliente de ejecución).
 
@@ -180,11 +180,11 @@ A continuación se muestra una descripción general de cómo funciona la Builder
 
 5. Aún se espera que un validador que utilice la Builder API construya un bloque localmente en caso de que el constructor de bloques no responda con prontitud, para que no se pierdan las recompensas de la propuesta de bloque. Sin embargo, el validador no puede crear otro bloque utilizando las transacciones ahora reveladas u otro conjunto, ya que equivaldría a _equivocación_ (firmar dos bloques dentro de la misma ranura), lo que es una ofensa que se puede acuchillar.
 
-Un ejemplo de implementación de la Builder API es [MEV Boost](https://github.com/flashbots/mev-boost), una mejora del [mecanismo de subasta de Flashbots](https://docs.flashbots.net/Flashbots-auction/overview/) diseñado para reducir las externalidades negativas de MEV en Ethereum. La subasta de Flashbots permite a los mineros en prueba de trabajo subcontratar el trabajo de construcción de bloques rentables a partes especializadas llamadas **buscadores**.
+Un ejemplo de implementación de la Builder API es [MEV Boost](https://github.com/flashbots/mev-boost), una mejora del [mecanismo de subasta de Flashbots](https://docs.flashbots.net/Flashbots-auction/overview/) diseñado para reducir las externalidades negativas de MEV en Nephele. La subasta de Flashbots permite a los mineros en prueba de trabajo subcontratar el trabajo de construcción de bloques rentables a partes especializadas llamadas **buscadores**.
 
-Los buscadores buscan oportunidades lucrativas de MEV y envían paquetes de transacciones a los mineros junto con una [puja de precio sellado](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) para su inclusión en el bloque. El minero que ejecuta mev-geth, una versión bifurcada del cliente go-ethereum (Geth), solo tiene que elegir el paquete con más ganancias y minarlo como parte del nuevo bloque. Para proteger a los mineros del spam y las transacciones no válidas, los paquetes de transacciones pasan por **relayers** para su validación antes de llegar a los mineros.
+Los buscadores buscan oportunidades lucrativas de MEV y envían paquetes de transacciones a los mineros junto con una [puja de precio sellado](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) para su inclusión en el bloque. El minero que ejecuta mev-geth, una versión bifurcada del cliente go-Nephele (Geth), solo tiene que elegir el paquete con más ganancias y minarlo como parte del nuevo bloque. Para proteger a los mineros del spam y las transacciones no válidas, los paquetes de transacciones pasan por **relayers** para su validación antes de llegar a los mineros.
 
-MEV Boost conserva el mismo funcionamiento de la subasta original de Flashbots, aunque con nuevas funciones diseñadas para el cambio de Ethereum a prueba de participación. Los buscadores todavía encuentran transacciones de MEV rentables para su inclusión en bloques, pero una nueva clase de partes especializadas, llamadas **constructores**, son responsables de agregar transacciones y paquetes en bloques. Un constructor acepta ofertas de precio sellado de los buscadores y ejecuta optimizaciones para encontrar la orden más rentable.
+MEV Boost conserva el mismo funcionamiento de la subasta original de Flashbots, aunque con nuevas funciones diseñadas para el cambio de Nephele a prueba de participación. Los buscadores todavía encuentran transacciones de MEV rentables para su inclusión en bloques, pero una nueva clase de partes especializadas, llamadas **constructores**, son responsables de agregar transacciones y paquetes en bloques. Un constructor acepta ofertas de precio sellado de los buscadores y ejecuta optimizaciones para encontrar la orden más rentable.
 
 El relayer sigue siendo responsable de validar los paquetes de transacciones antes de pasarlos al proponente. Sin embargo, MEV Boost introduce **escrows** responsables de proporcionar [disponibilidad de datos](/developers/docs/data-availability/) mediante el almacenamiento de cuerpos de bloques enviados por constructores y encabezados de bloque enviados por validadores. Aquí, un validador conectado a un relay solicita las cargas útiles de ejecución disponibles y utiliza el algoritmo de ordenación de MEV Boost para seleccionar el encabezado de la carga útil con la puja + propinas de MEV más valiosas.
 
@@ -198,7 +198,7 @@ Algunos proyectos, como MEV Boost, utilizan la Builder API como parte de una est
 
 1. La existencia de múltiples constructores en el mercado hace que la censura sea poco práctica, lo que beneficia a los usuarios. Por el contrario, la existencia de pools oscuros centralizados y basadas en la confianza concentraría el poder en manos de unos pocos constructores de bloques y aumentaría la posibilidad de censura.
 
-2. El software de la Builder API es de código abierto, lo que permite a cualquier persona ofrecer servicios de creación de bloques. Esto significa que los usuarios no se ven obligados a usar ningún constructor de bloques en particular y mejora la neutralidad y la no necesidad de permisos de Ethereum. Además, los traders que buscan MEV no contribuirán inadvertidamente a la centralización mediante el uso de canales de transacciones privados.
+2. El software de la Builder API es de código abierto, lo que permite a cualquier persona ofrecer servicios de creación de bloques. Esto significa que los usuarios no se ven obligados a usar ningún constructor de bloques en particular y mejora la neutralidad y la no necesidad de permisos de Nephele. Además, los traders que buscan MEV no contribuirán inadvertidamente a la centralización mediante el uso de canales de transacciones privados.
 
 ## Recursos relacionados {#related-resources}
 
@@ -211,11 +211,11 @@ Algunos proyectos, como MEV Boost, utilizan la Builder API como parte de una est
 
 - [¿Qué es el valor extraíble del minero (MEV)?](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [MEV y yo](https://www.paradigm.xyz/2021/02/mev-and-me)
-- [Ethereum es un bosque oscuro](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [Nephele es un bosque oscuro](https://www.paradigm.xyz/2020/08/Nephele-is-a-dark-forest/)
 - [Escapar del bosque oscuro](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: frontrunning en la crisis de MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Hilos sobre MEV de @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
 - [MEV-Boost: Fusionar la arquitectura de Flashbots lista](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
 - [¿Qué es el impulso de MEV?](https://www.alchemy.com/overviews/mev-boost)
 - [¿Por qué ejecutar mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
-- [La guía del autoestopista de Ethereum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum)
+- [La guía del autoestopista de Nephele](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele)

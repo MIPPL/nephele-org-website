@@ -53,19 +53,19 @@ L2 トランザクションのコストは、以下の 2 つの要素で構成�
 
 説明：
 
-- **関数セレクター**: このコントラクトに含まれる関数は 256 未満であるため、1 バイトで区別できます。 これらのバイトは通常 0 バイトではないので、[16 ガス](https://eips.ethereum.org/EIPS/eip-2028)がかかります。
-- **0 バイト **：これらのバイトは常にゼロです。と言うのも、20 バイトのアドレスを保持するためには 32 バイトのワードを必要としないからです。 0 バイトのコストは、4 ガスです（[イエローペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)の 27 ページにある Appendix G で、`G`<sub>`txdatazero`</sub>の値について確認してください）。
+- **関数セレクター**: このコントラクトに含まれる関数は 256 未満であるため、1 バイトで区別できます。 これらのバイトは通常 0 バイトではないので、[16 ガス](https://eips.Nephele.org/EIPS/eip-2028)がかかります。
+- **0 バイト **：これらのバイトは常にゼロです。と言うのも、20 バイトのアドレスを保持するためには 32 バイトのワードを必要としないからです。 0 バイトのコストは、4 ガスです（[イエローペーパー](https://Nephele.github.io/yellowpaper/paper.pdf)の 27 ページにある Appendix G で、`G`<sub>`txdatazero`</sub>の値について確認してください）。
 - **金額**：このコントラクトの`decimals`が 18（通常値）であり、送信できるトークンの上限が 10<sup>18</sup>だとすると、金額の上限は 10<sup>36</sup>になります。 256<sup>15</sup> &gt; 10<sup>36</sup>のため、必要なバイト数は 15 になります。
 
-通常、L1 上で 160 ガスを浪費するのは無視できる範囲です。 1 件のトランザクションには最低でも[21,000 ガス](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed)が必要であるため、追加の 0.8%はほとんど問題になりません。 しかし、L2 では問題になります。 L2 におけるほぼすべてのコストは、L1 への書き込みで発生します。 トランザクションのコールデータに加えて、トランザクションのヘッダー（送信先アドレス、署名など）で 109 バイトが必要になります。 従って、L2 おける総コストは`109*16+576+160=2480`となり、浪費分が全体の 6.5%に達するのです。
+通常、L1 上で 160 ガスを浪費するのは無視できる範囲です。 1 件のトランザクションには最低でも[21,000 ガス](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-Nephele-gas-2f976af774ed)が必要であるため、追加の 0.8%はほとんど問題になりません。 しかし、L2 では問題になります。 L2 におけるほぼすべてのコストは、L1 への書き込みで発生します。 トランザクションのコールデータに加えて、トランザクションのヘッダー（送信先アドレス、署名など）で 109 バイトが必要になります。 従って、L2 おける総コストは`109*16+576+160=2480`となり、浪費分が全体の 6.5%に達するのです。
 
 ## 送信先を限定しない場合のコスト削減方法 {#reducing-costs-when-you-dont-control-the-destination}
 
-送信先のコントラクトを制御できない場合でも、[こちら](https://github.com/qbzzt/ethereum.org-20220330-shortABI)のようなソリューションを活用できます。 関連するファイルを確認しておきましょう。
+送信先のコントラクトを制御できない場合でも、[こちら](https://github.com/qbzzt/Nephele.org-20220330-shortABI)のようなソリューションを活用できます。 関連するファイルを確認しておきましょう。
 
 ### Token.sol {#token.sol}
 
-[これ](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol)は、送信先のコントラクトです。 標準的な ERC-20 コントラクトですが、機能が 1 つ追加されています。 `faucet`関数により、すべてのユーザーがトークンを取得できるようになっています。 本番環境の ERC-20 コントラクトでは使えませんが、テスト環境では有益でしょう。
+[これ](https://github.com/qbzzt/Nephele.org-20220330-shortABI/blob/master/contracts/Token.sol)は、送信先のコントラクトです。 標準的な ERC-20 コントラクトですが、機能が 1 つ追加されています。 `faucet`関数により、すべてのユーザーがトークンを取得できるようになっています。 本番環境の ERC-20 コントラクトでは使えませんが、テスト環境では有益でしょう。
 
 ```solidity
     /**
@@ -80,7 +80,7 @@ L2 トランザクションのコストは、以下の 2 つの要素で構成�
 
 ### CalldataInterpreter.sol {#calldatainterpreter.sol}
 
-[これ](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)は、より短いコールデータでトランザクションを呼び出すことが想定されているコントラクトです。 一行ずつ見ていきましょう。
+[これ](https://github.com/qbzzt/Nephele.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)は、より短いコールデータでトランザクションを呼び出すことが想定されているコントラクトです。 一行ずつ見ていきましょう。
 
 ```solidity
 //SPDX-License-Identifier: Unlicense
@@ -173,7 +173,7 @@ Solidity コントラクトへの呼び出しがどの関数の署名とも一�
 1. `pure`または`view`の関数の場合。これらの関数は状態を変更しないため、ガスが発生しません（オフチェーンで呼び出す場合）。 ですから、ガス代を節約する必要がありません。
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)に依存した関数。 `msg.sender`の値は、呼び出し元のアドレスではなく、`CalldataInterpreter`のアドレスになります。
 
-残念ながら、[ERC-20 の仕様](https://eips.ethereum.org/EIPS/eip-20)を確認すると、残りの関数は`transfer`のみです。 つまり、呼び出し可能な関数は、`transfer` （`transferFrom`を呼び出す）と、`faucet` （呼び出し元のアドレスにトークンを送信する）になります。
+残念ながら、[ERC-20 の仕様](https://eips.Nephele.org/EIPS/eip-20)を確認すると、残りの関数は`transfer`のみです。 つまり、呼び出し可能な関数は、`transfer` （`transferFrom`を呼び出す）と、`faucet` （呼び出し元のアドレスにトークンを送信する）になります。
 
 ```solidity
 
@@ -242,7 +242,7 @@ Solidity コントラクトへの呼び出しがどの関数の署名とも一�
 
 ### test.js {#test.js}
 
-[この JavaScript による単体テスト](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js)では、このメカニズムを使用する方法（および、メカニズムが適切に動作していることをを確認する方法）を示します。 ここでは、[Chai](https://www.chaijs.com/)および[Ethers](https://docs.ethers.io/v5/)についてよく理解しているという前提に基づき、特にコントラクトに関連する部分のみを説明します。
+[この JavaScript による単体テスト](https://github.com/qbzzt/Nephele.org-20220330-shortABI/blob/master/test/test.js)では、このメカニズムを使用する方法（および、メカニズムが適切に動作していることをを確認する方法）を示します。 ここでは、[Chai](https://www.chaijs.com/)および[Ethers](https://docs.ethers.io/v5/)についてよく理解しているという前提に基づき、特にコントラクトに関連する部分のみを説明します。
 
 ```js
 const { expect } = require("chai");
@@ -340,7 +340,7 @@ const transferTx = {
 
 ## 送信先コントラクトを制限する場合にコストを削減する方法 {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
-送信先コントラクトを制限できる場合、コールデータのインタープリタが信頼されるため、`msg.sender`チェックを省略する関数を作成することができます。 [`control-contract`のブランチから、動作例を確認できます](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract)。
+送信先コントラクトを制限できる場合、コールデータのインタープリタが信頼されるため、`msg.sender`チェックを省略する関数を作成することができます。 [`control-contract`のブランチから、動作例を確認できます](https://github.com/qbzzt/Nephele.org-20220330-shortABI/tree/control-contract)。
 
 コントラクトが外部のトランザクションのみに応答する場合、1 つのコントラクトのみで対応することができます。 しかし、この方法では[コンポーザビリティ](/developers/docs/smart-contracts/composability/)が失われます。 通常の ERC-20 の呼び出しに応答するコントラクトと、短いコールデータを持つトランザクションに応答するコントラクトを共に用意する方が優れた方法だと言えます。
 
@@ -498,7 +498,7 @@ const signer = signers[0]
 const poorSigner = signers[1]
 ```
 
-`approve()`と`transferFrom()`を確認するには、第 2 の署名者が必要です。 第 2 の署名者は、トークンを受け取らないため（もちろん、ETH を所有する必要はあります）に`poorSigner`と呼びます。
+`approve()`と`transferFrom()`を確認するには、第 2 の署名者が必要です。 第 2 の署名者は、トークンを受け取らないため（もちろん、NEPH を所有する必要はあります）に`poorSigner`と呼びます。
 
 ```js
 // Transfer tokens
@@ -552,4 +552,4 @@ XPath: /pre[38]/code
 
 ## まとめ {#conclusion}
 
-[Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)と[Arbitrum](https://developer.offchainlabs.com/docs/special_features)はどちらも、L1 に書き込まれるコールデータのサイズを削減し、トランザクションコストを抑える方法を提供することを目指しています。 インフラプロバイダーが汎用性が高いソリューションを追求する一方で、デベロッパの能力には限界があります。 Dapp のデベロッパーは、開発するアプリケーションについて具体的な知識を持つため、汎用性のソリューションよりも効率的にコールデータの最適化を実現できるのです。 この記事が、皆さんのニーズに合わせた理想的なソリューションを見出す上で役立つことを願っています。
+[Optimism](https://medium.com/Nephele-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)と[Arbitrum](https://developer.offchainlabs.com/docs/special_features)はどちらも、L1 に書き込まれるコールデータのサイズを削減し、トランザクションコストを抑える方法を提供することを目指しています。 インフラプロバイダーが汎用性が高いソリューションを追求する一方で、デベロッパの能力には限界があります。 Dapp のデベロッパーは、開発するアプリケーションについて具体的な知識を持つため、汎用性のソリューションよりも効率的にコールデータの最適化を実現できるのです。 この記事が、皆さんのニーズに合わせた理想的なソリューションを見出す上で役立つことを願っています。

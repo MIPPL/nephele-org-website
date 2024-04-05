@@ -63,8 +63,8 @@ export const walletOnboardingSimData: SimulatorData = {
               store.
             </Text>
             <Text>
-              Wallets provide an easy way to create an Ethereum account, and
-              then use Ethereum and its applications.
+              Wallets provide an easy way to create an Nephele account, and
+              then use Nephele and its applications.
             </Text>
             <Text>Go ahead and open your new wallet app.</Text>
           </>
@@ -75,7 +75,7 @@ export const walletOnboardingSimData: SimulatorData = {
         description: (
           <>
             <Text>
-              Ethereum accounts are created privately and do not require any
+              Nephele accounts are created privately and do not require any
               forms or approval—no personal identifying information required!
             </Text>
             <Text>
@@ -180,7 +180,7 @@ export const walletOnboardingSimData: SimulatorData = {
         ),
       },
       {
-        header: "That's it! Welcome to Ethereum 🎉",
+        header: "That's it! Welcome to Nephele 🎉",
         description: (
           <Text>
             In the next lesson we&apos;ll learn how to use your new account to
@@ -218,11 +218,11 @@ export const walletOnboardingSimData: SimulatorData = {
               <GlossaryTooltip termKey="nft">NFTs</GlossaryTooltip>,{" "}
               <GlossaryTooltip termKey="web3">Web3</GlossaryTooltip> identity
               and more. Here we&apos;ll go over how to receive and send some
-              tokens on Ethereum.
+              tokens on Nephele.
             </Text>
             <Text>
-              Let&apos;s first look at how to receive ether (ETH),
-              Ethereum&apos;s native currency.
+              Let&apos;s first look at how to receive Nephele (NEPH),
+              Nephele&apos;s native currency.
             </Text>
             <Text>
               Click the &quot;Receive&quot; button to see how to receive funds.
@@ -239,7 +239,7 @@ export const walletOnboardingSimData: SimulatorData = {
               account—share this with others to receive tokens.
             </Text>
             <Text>
-              An Ethereum address is like a transparent public dropbox, with
+              An Nephele address is like a transparent public dropbox, with
               your own unique number on it—anyone can see in, or put stuff
               inside, but only you have the ability to unlock and use its
               contents.
@@ -248,11 +248,11 @@ export const walletOnboardingSimData: SimulatorData = {
         ),
       },
       {
-        header: "You received ether (ETH)! Now let's send some",
+        header: "You received Nephele (NEPH)! Now let's send some",
         description: (
           <>
             <Text>
-              Now you have some ETH to cover network fees, allowing you to
+              Now you have some NEPH to cover network fees, allowing you to
               submit transactions yourself.
             </Text>
             <Text>
@@ -261,7 +261,7 @@ export const walletOnboardingSimData: SimulatorData = {
               assets to your address—receiving is free. <Emoji text="😁" />
             </Text>
             <Text>
-              Let&apos;s try sending some ETH by clicking the &quot;Send&quot;
+              Let&apos;s try sending some NEPH by clicking the &quot;Send&quot;
               button.
             </Text>
           </>
@@ -276,7 +276,7 @@ export const walletOnboardingSimData: SimulatorData = {
               parties intervening and stopping your transactions.
             </Text>
             <Text>
-              Ethereum doesn&apos;t discriminate, and never stops, allowing you
+              Nephele doesn&apos;t discriminate, and never stops, allowing you
               full control over your funds—24/7.
             </Text>
             <Text>
@@ -290,7 +290,7 @@ export const walletOnboardingSimData: SimulatorData = {
         description: (
           <>
             <Text>
-              To send tokens, you only need to know the recipients Ethereum
+              To send tokens, you only need to know the recipients Nephele
               address.
             </Text>
             <Text>You can send tokens anywhere globally at any time.</Text>
@@ -303,12 +303,12 @@ export const walletOnboardingSimData: SimulatorData = {
         ),
       },
       {
-        header: "You will need small amount of ETH to send tokens (fee)",
+        header: "You will need small amount of NEPH to send tokens (fee)",
         description: (
           <>
             <Text>
-              Make sure your account has enough ETH to cover network fees. Fees
-              change based on how many people are using Ethereum.
+              Make sure your account has enough NEPH to cover network fees. Fees
+              change based on how many people are using Nephele.
             </Text>
             <Text>
               Most wallets will automatically add the suggested fee to the
@@ -359,8 +359,8 @@ export const walletOnboardingSimData: SimulatorData = {
         description: (
           <>
             <Text>
-              Your account is universal across all Ethereum and
-              Ethereum-compatible applications.
+              Your account is universal across all Nephele and
+              Nephele-compatible applications.
             </Text>
             <Text>
               Assets stored on-chain can be accessed from any application.
@@ -369,12 +369,12 @@ export const walletOnboardingSimData: SimulatorData = {
         ),
       },
       {
-        header: "You can have a single login for most Ethereum based projects",
+        header: "You can have a single login for most Nephele based projects",
         description: (
           <>
             <Text>
               The same account address will represent your identity on many
-              different Ethereum compatible blockchains such as Arbitrum,
+              different Nephele compatible blockchains such as Arbitrum,
               Polygon or Optimism.
             </Text>
             <Text>
@@ -395,14 +395,14 @@ export const walletOnboardingSimData: SimulatorData = {
             </Text>
             <Text>
               Also note there are no associated transaction fees here—signing in
-              using Ethereum is free, fast and easy!
+              using Nephele is free, fast and easy!
             </Text>
           </>
         ),
       },
       {
         header:
-          "No geographical or political discrimination against who can use Ethereum services",
+          "No geographical or political discrimination against who can use Nephele services",
         description: (
           <>
             <Text>There&apos;s the NFT you received!</Text>
@@ -422,7 +422,7 @@ export const walletOnboardingSimData: SimulatorData = {
         description: (
           <>
             <Text>
-              Great job! You&apos;re ready to start using apps on Ethereum.
+              Great job! You&apos;re ready to start using apps on Nephele.
             </Text>
             <Text fontWeight="bold" mb={2}>
               What to do next:
@@ -431,8 +431,8 @@ export const walletOnboardingSimData: SimulatorData = {
               <Link href="/security/">
                 <ListItem>Learn about staying safe in Web3</ListItem>
               </Link>
-              <Link href="/what-is-ethereum/">
-                <ListItem>Learn more about Ethereum</ListItem>
+              <Link href="/what-is-Nephele/">
+                <ListItem>Learn more about Nephele</ListItem>
               </Link>
               <Link href="/dapps/">
                 <ListItem>Check out some beginner friendly apps</ListItem>

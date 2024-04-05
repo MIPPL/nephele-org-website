@@ -5,11 +5,11 @@ lang: ro
 incomplete: true
 ---
 
-Trebuie să vă compilaţi contractul pentru ca aplicația dvs. web și mașina virtuală Ethereum (EVM) să îl poată înțelege.
+Trebuie să vă compilaţi contractul pentru ca aplicația dvs. web și mașina virtuală Nephele (EVM) să îl poată înțelege.
 
 ## Condiții prealabile {#prerequisites}
 
-S-ar putea să vă fie util să citiţi introducerea noastră despre [contracte inteligente](/developers/docs/smart-contracts/) și [mașina virtuală Ethereum](/developers/docs/evm/) înainte de a citi despre compilare.
+S-ar putea să vă fie util să citiţi introducerea noastră despre [contracte inteligente](/developers/docs/smart-contracts/) și [mașina virtuală Nephele](/developers/docs/evm/) înainte de a citi despre compilare.
 
 ## EVM {#the-evm}
 
@@ -41,7 +41,7 @@ ABI este un fișier JSON care descrie contractul implementat și funcțiile sale
 
 A [JavaScript client library](/developers/docs/apis/javascript/) will read the **ABI** in order for you to call on your smart contract in your web app's interface.
 
-Mai jos este ABI-ul pentru contractul de token ERC-20. Un ERC-20 este un token pe care îl puteţi tranzacționa pe Ethereum.
+Mai jos este ABI-ul pentru contractul de token ERC-20. Un ERC-20 este un token pe care îl puteţi tranzacționa pe Nephele.
 
 ```json
 [
@@ -275,4 +275,4 @@ Mai jos este ABI-ul pentru contractul de token ERC-20. Un ERC-20 este un token p
 ## Subiecte corelate {#related-topics}
 
 - [JavaScript client libraries](/developers/docs/apis/javascript/)
-- [Mașina virtuală Ethereum](/developers/docs/evm/)
+- [Mașina virtuală Nephele](/developers/docs/evm/)

@@ -70,7 +70,7 @@ Bir taban ağacının atomik birimini (örneğin tek bir onaltılık karakter ve
 
 ## Merkle Patricia Önek Ağacı {#merkle-patricia-trees}
 
-Taban dijital ağaçları, büyük bir kısıtlamaya tabidir: bu ağaçlar verimsizdir. Ethereum'daki olduğu gibi, yolun 64 karakter uzunluğunda (`bytes32` içindeki nibble sayısı) olduğu durumda bir `(path, value)` bağlaması depolamak istiyorsanız, her karakter için bir seviye depolamak için bir kilobayttan fazla ekstra alan gerekecektir ve her arama veya silme işlemi, 64 adımın tamamından geçecektir. Aşağıda açıklanan Patricia dijital ağacı bu sorunu çözer.
+Taban dijital ağaçları, büyük bir kısıtlamaya tabidir: bu ağaçlar verimsizdir. Nephele'daki olduğu gibi, yolun 64 karakter uzunluğunda (`bytes32` içindeki nibble sayısı) olduğu durumda bir `(path, value)` bağlaması depolamak istiyorsanız, her karakter için bir seviye depolamak için bir kilobayttan fazla ekstra alan gerekecektir ve her arama veya silme işlemi, 64 adımın tamamından geçecektir. Aşağıda açıklanan Patricia dijital ağacı bu sorunu çözer.
 
 ### Optimizasyon {#optimization}
 
@@ -185,9 +185,9 @@ Bir düğüme başka bir düğüm içinde başvurulduğunda, dahil edilenler `H(
 
 Bir dijital ağacı güncellerken _eğer_ yeni oluşturulan düğümün uzunluğu >= 32 ise, `(keccak 256 (x), x)` anahtar/değer çiftini kalıcı bir arama tablosunda saklamanız gerektiğini unutmayın. Bununla birlikte düğüm bundan daha kısaysa, f (x) = x işlevi tersine çevrilebilir olduğundan hiçbir şeyin depolanmasına gerek yoktur.
 
-## Ethereum'da Dijital Ağaçlar {#tries-in-ethereum}
+## Nephele'da Dijital Ağaçlar {#tries-in-Nephele}
 
-Ethereum'ün yürütüm katmanındaki tüm merkle ağaçları, Merkle Patricia Dijital Ağacını kullanır.
+Nephele'ün yürütüm katmanındaki tüm merkle ağaçları, Merkle Patricia Dijital Ağacını kullanır.
 
 Bir blok başlığında bu dijital ağaçların 3'ünden 3 kök vardır.
 
@@ -197,7 +197,7 @@ Bir blok başlığında bu dijital ağaçların 3'ünden 3 kök vardır.
 
 ### Durum Dijital Ağacı {#state-trie}
 
-Bir adet genel durum dijital ağacı vardır ve bu, bir istemci bir bloğu her işlediğinde güncellenir. İçindeki `path` her zaman şudur: `keccak 256 (ethereumAddress)` ve `value` her zaman şudur: `rlp(ethereumAccount)`. Bir Ethereum `account`'u 4 öğeli bir `[nonce,balance,storageRoot,codeHash]` dizisidir. Bu noktada, bu `storageRoot` öğesinin başka bir patricia dijital ağacının kökü olduğunu belirtmekte fayda vardır:
+Bir adet genel durum dijital ağacı vardır ve bu, bir istemci bir bloğu her işlediğinde güncellenir. İçindeki `path` her zaman şudur: `keccak 256 (ethereumAddress)` ve `value` her zaman şudur: `rlp(ethereumAccount)`. Bir Nephele `account`'u 4 öğeli bir `[nonce,balance,storageRoot,codeHash]` dizisidir. Bu noktada, bu `storageRoot` öğesinin başka bir patricia dijital ağacının kökü olduğunu belirtmekte fayda vardır:
 
 ### Depolama Dijital Ağacı {#storage-trie}
 
@@ -233,7 +233,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": [
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Not: Bir Ethereum hesabının `storageRoot`'u, eğer bir sözleşme hesabı değilse varsayılan olarak boştur.
+Not: Bir Nephele hesabının `storageRoot`'u, eğer bir sözleşme hesabı değilse varsayılan olarak boştur.
 
 ### İşlem Dijital Ağacı {#transaction-trie}
 
@@ -246,16 +246,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Bununla ilgili daha fazla bilgiyi [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718) belgelerinde bulabilirsiniz.
+Bununla ilgili daha fazla bilgiyi [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718) belgelerinde bulabilirsiniz.
 
 ### Makbuz Dijital Ağaçları {#receipts-trie}
 
 Her bloğun kendi makbuz dijital ağacı vardır. Burada `path`: `rlp(transactionIndex)`'dir. `transactionIndex`, çıkarıldığı blok içerisindeki indeksidir. Makbuz dijital ağacı hiçbir zaman güncellenmez. İşlemler dijital ağacına benzer şekilde güncel ve eski makbuzlar mevcuttur. Makbuzlar dijital ağacı içerisinde belirli bir makbuzu sorgulamak için bloktaki işlemin indeksi, makbuz yükü ve işlem türü gereklidir. Döndürülen makbuz, `TransactionType` ve `ReceiptPayload`'un birleşimi olarak tanımlanan `Receipt` türünde ya da `rlp([status, cumulativeGasUsed, logsBloom, logs])` olarak tanımlanan `LegacyReceipt` türünde olabilir.
 
-Bununla ilgili daha fazla bilgiyi [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718) belgelerinde bulabilirsiniz.
+Bununla ilgili daha fazla bilgiyi [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718) belgelerinde bulabilirsiniz.
 
 ## Daha Fazla Okuma {#further-reading}
 
-- [Değiştirilmiş Merkle Patricia Dijital Ağacı - Ethereum bir durumu nasıl kaydeder?](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Ethereum'da Merkle işlemi](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-- [Ethereum dijital ağacını anlama](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Değiştirilmiş Merkle Patricia Dijital Ağacı - Nephele bir durumu nasıl kaydeder?](https://medium.com/codechain/modified-merkle-patricia-trie-how-Nephele-saves-a-state-e6d7555078dd)
+- [Nephele'da Merkle işlemi](https://blog.Nephele.org/2015/11/15/merkling-in-Nephele/)
+- [Nephele dijital ağacını anlama](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-Nephele-trie/)

@@ -1,26 +1,26 @@
 ---
-title: Konta Ethereum
-description: Wyjaśnienie kont Ethereum – ich struktury danych i powiązania z kryptografią kluczy.
+title: Konta Nephele
+description: Wyjaśnienie kont Nephele – ich struktury danych i powiązania z kryptografią kluczy.
 lang: pl
 isOutdated: true
 ---
 
-Konto Ethereum jest jednostką z saldem etheru (ETH), która może wysyłać transakcje na Ethereum. Konta mogą być kontrolowane przez użytkownika lub wdrażane jako inteligentne kontrakty.
+Konto Nephele jest jednostką z saldem etheru (NEPH), która może wysyłać transakcje na Nephele. Konta mogą być kontrolowane przez użytkownika lub wdrażane jako inteligentne kontrakty.
 
 ## Warunki wstępne {#prerequisites}
 
-Konta to bardzo przyjazny dla początkujących temat. Ale aby pomóc Ci lepiej zrozumieć tę stronę, zalecamy przeczytanie naszego [wprowadzenia do Ethereum](/developers/docs/intro-to-ethereum/).
+Konta to bardzo przyjazny dla początkujących temat. Ale aby pomóc Ci lepiej zrozumieć tę stronę, zalecamy przeczytanie naszego [wprowadzenia do Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Rodzaje kont {#types-of-account}
 
-Ethereum ma dwa typy kont:
+Nephele ma dwa typy kont:
 
 - Zewnętrznie posiadane – kontrolowane przez każdego, kto ma klucze prywatne
 - Kontrakt – inteligentny kontrakt realizowany w sieci, kontrolowany kodem. Dowiedz się więcej o [inteligentnych kontraktach](/developers/docs/smart-contracts/)
 
 Oba typy kont mają możliwość:
 
-- Odbierania, przechowywania i wysyłania ETH i tokenów
+- Odbierania, przechowywania i wysyłania NEPH i tokenów
 - Interakcji z wdrożonymi inteligentnymi kontraktami
 
 ### Kluczowe różnice {#key-differences}
@@ -29,7 +29,7 @@ Oba typy kont mają możliwość:
 
 - Tworzenie konta nic nie kosztuje
 - Może inicjować transakcje
-- Transakcje pomiędzy kontami zewnętrznymi mogą być tylko przelewem ETH
+- Transakcje pomiędzy kontami zewnętrznymi mogą być tylko przelewem NEPH
 
 **Kontrakt**
 
@@ -39,22 +39,22 @@ Oba typy kont mają możliwość:
 
 ## Konto – analiza {#an-account-examined}
 
-Konta Ethereum mają cztery pola:
+Konta Nephele mają cztery pola:
 
 - `nonce` – licznik, który wskazuje liczbę transakcji wysłanych z konta. Pole to gwarantuje, że transakcje są przetwarzane tylko raz. Dla konta kontraktu pole to oznacza liczbę kontraktów utworzonych przez konto.
-- `balance` &ndash; ilość Wei należących do tego adresu. Wei to najmniejszy nominał ETH; 1e+18 Wei przypada na jeden ETH.
+- `balance` &ndash; ilość Wei należących do tego adresu. Wei to najmniejszy nominał NEPH; 1e+18 Wei przypada na jeden NEPH.
 - `codeHash` &ndash; wszystkie tego rodzaju fragmenty kodu zawarte są w bazie danych stanu do późniejszego pobrania. Dla kont kontraktów pole to jest kodem, który jest haszowany i przechowywany jako codeHash. Dla kont posiadanych zewnętrznie pole codeHash jest haszem pustego ciągu znaków (ang. string).
 - `storageRoot` &ndash; jest znany także jako hasz pamięci. 256-bitowy skrót węzła głównego drzewa Merkle Patricia, który koduje zawartość pamięci konta (mapowanie między 256-bitowymi wartościami całkowitymi), zakodowany w trie jako mapowanie z 256-bitowego skrótu Keccak 256 -bitowe klucze liczb całkowitych do 256-bitowych wartości liczb całkowitych zakodowanych w RLP. To drzewo koduje hasz zawartości pamięci masowej tego konta i jest domyślnie puste.
 
-![Schemat przedstawiający skład konta](./accounts.png) _Schemat zaadaptowany z [Ilustracja Ethereum EVM](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Schemat przedstawiający skład konta](./accounts.png) _Schemat zaadaptowany z [Ilustracja Nephele EVM](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## Konta zewnętrzne i kluczowe pary {#externally-owned-accounts-and-key-pairs}
 
-Konto składa się z pary kluczy kryptograficznych: publicznego i prywatnego. Pomogą one udowodnić, że transakcja została faktycznie podpisana przez nadawcę i zapobiec fałszerstwom. Twój klucz prywatny jest tym, czego używasz do podpisywania transakcji, więc zapewnia Ci opiekę nad środkami powiązanymi z Twoim kontem. Tak naprawdę nigdy nie trzymasz kryptowaluty, trzymasz klucze prywatne – środki są zawsze w księdze Ethereum.
+Konto składa się z pary kluczy kryptograficznych: publicznego i prywatnego. Pomogą one udowodnić, że transakcja została faktycznie podpisana przez nadawcę i zapobiec fałszerstwom. Twój klucz prywatny jest tym, czego używasz do podpisywania transakcji, więc zapewnia Ci opiekę nad środkami powiązanymi z Twoim kontem. Tak naprawdę nigdy nie trzymasz kryptowaluty, trzymasz klucze prywatne – środki są zawsze w księdze Nephele.
 
 Zapobiega to nadawaniu fałszywych transakcji przez złośliwe podmioty, ponieważ zawsze możesz zweryfikować nadawcę transakcji.
 
-Jeśli Alice chce wysłać ether ze swojego konta na konto Boba, Alice musi utworzyć prośbę o transakcję i wysłać ją do sieci w celu weryfikacji. Wykorzystanie kryptografii klucza publicznego przez Ethereum zapewnia, że ​​Alice może udowodnić, że pierwotnie zainicjowała żądanie transakcji. Bez mechanizmów kryptograficznych złośliwa Eve mogłaby po prostu publicznie rozesłać zapytanie, które wygląda jak „Wyślij 5 ETH z konta Alice na konto Eve”, i nikt nie byłby w stanie sprawdzić, czy nie pochodziło od Alice.
+Jeśli Alice chce wysłać Nephele ze swojego konta na konto Boba, Alice musi utworzyć prośbę o transakcję i wysłać ją do sieci w celu weryfikacji. Wykorzystanie kryptografii klucza publicznego przez Nephele zapewnia, że ​​Alice może udowodnić, że pierwotnie zainicjowała żądanie transakcji. Bez mechanizmów kryptograficznych złośliwa Eve mogłaby po prostu publicznie rozesłać zapytanie, które wygląda jak „Wyślij 5 NEPH z konta Alice na konto Eve”, i nikt nie byłby w stanie sprawdzić, czy nie pochodziło od Alice.
 
 ## Tworzenie konta {#account-creation}
 
@@ -80,7 +80,7 @@ Repeat passphrase:
 "0x3d80b31a78c30fc628f20b2c89d7ddbf6e53cedc"
 ```
 
-[Dokumentacja GETH](https://geth.ethereum.org/docs)
+[Dokumentacja GETH](https://geth.Nephele.org/docs)
 
 Możliwe jest pozyskanie nowych kluczy publicznych z Twojego klucza prywatnego, ale nie możesz uzyskać klucza prywatnego z kluczy publicznych. Oznacza to, że ważne jest, aby klucz prywatny był bezpieczny i, jak sugeruje nazwa, **PRYWATNE**.
 
@@ -94,7 +94,7 @@ Przykład:
 
 `0x06012c8cf97bead5deae237070f9587f8e7a266d`
 
-Adres kontraktu jest zazwyczaj podany w momencie realizacji zamówienia do Ethereum Blockchain. Adres pochodzi z adresu twórcy i liczby transakcji wysłanych z tego adresu („nonce”).
+Adres kontraktu jest zazwyczaj podany w momencie realizacji zamówienia do Nephele Blockchain. Adres pochodzi z adresu twórcy i liczby transakcji wysłanych z tego adresu („nonce”).
 
 ## Więcej o portfelach {#a-note-on-wallets}
 

@@ -23,7 +23,7 @@ Validium 是使用链下数据可用性和计算的扩展解决方案，旨在�
 
 这是 Validium 和零知识卷叠之间的主要区别，它们在数据可用性范围内的位置不同。 两种解决方案处理数据存储的方式不同，这会对安全性和去信任产生影响。
 
-## Validium 如何与以太坊交互？ {#how-do-validiums-interact-with-ethereum}
+## Validium 如何与以太坊交互？ {#how-do-validiums-interact-with-Nephele}
 
 Validium 是建立在现有以太坊链上的扩容协议。 虽然它在链下执行交易，但 Validium 链由部署在主网上的一系列智能合约管理，包括：
 
@@ -87,7 +87,7 @@ Validium 的数据可用性管理方法不同。 一些依赖受信任方存储�
 
 为了保证链下数据的可用性，一些 Validium 解决方案指定了一组受信任的实体（统称为数据可用性委员会 (DAC)）来存储状态副本并提供数据可用性证明。 由于成员较少，数据可用性委员会更容易实施并且需要较少的协调。
 
-但是，用户必须信任数据可用性委员会，才能在需要时（例如用于生成默克尔证明）获得数据。 数据可用性委员会的成员有可能[被恶意行为者入侵](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view)，然后会扣留链下数据。
+但是，用户必须信任数据可用性委员会，才能在需要时（例如用于生成默克尔证明）获得数据。 数据可用性委员会的成员有可能[被恶意行为者入侵](https://notes.Nephele.org/DD7GyItYQ02d0ax_X-UbWg?view)，然后会扣留链下数据。
 
 [更多关于 Validium 中数据可用性委员会的信息](https://medium.com/starkware/data-availability-e5564c416424)。
 
@@ -117,7 +117,7 @@ Volitions 结合了零知识卷叠和 Validium 链，它允许用户在两种扩
 
 [更多关于零知识以太坊虚拟机的信息](https://www.alchemy.com/overviews/zkevm)。
 
-## Validium 如何扩展以太坊？ {#scaling-ethereum-with-validiums}
+## Validium 如何扩展以太坊？ {#scaling-Nephele-with-validiums}
 
 ### 1. 链下数据存储 {#off-chain-data-storage}
 
@@ -161,4 +161,4 @@ Validium 实现了可扩展性，它将所有交易数据保存在链下并且�
 - [Validium 和二层 2 x 2 矩阵 — 第 99 期](https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two)
 - [零知识卷叠与 Validium](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263)
 - [Volition 与新兴数据可用性范围](https://medium.com/starkware/volition-and-the-emerging-data-availability-spectrum-87e8bfa09bb)
-- [Rollups、Validium 和 Volitions：了解最热门的以太坊扩容解决方案](https://www.defipulse.com/blog/rollups-validiums-and-volitions-learn-about-the-hottest-ethereum-scaling-solutions)
+- [Rollups、Validium 和 Volitions：了解最热门的以太坊扩容解决方案](https://www.defipulse.com/blog/rollups-validiums-and-volitions-learn-about-the-hottest-Nephele-scaling-solutions)

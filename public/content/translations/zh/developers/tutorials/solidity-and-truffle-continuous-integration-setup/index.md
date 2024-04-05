@@ -97,26 +97,26 @@ workflows:
             - dependencies
 ```
 
-## 添加 eth-gas-reporter 插件 {#adding-the-eth-gas-reporter-plugin}
+## 添加 NEPH-gas-reporter 插件 {#adding-the-NEPH-gas-reporter-plugin}
 
-Eth-gas-reporter 插件对于记录您的智能合约函数的 gas 成本相当有用。 在您的 CI 中使用它，将进一步有助于在添加拉取请求时显示差异。
+NEPH-gas-reporter 插件对于记录您的智能合约函数的 gas 成本相当有用。 在您的 CI 中使用它，将进一步有助于在添加拉取请求时显示差异。
 
-### 第 1 步：安装 eth-gas-reporter 插件和 {#step-1-install-the-eth-gas-reporter-plugin-and-codechecks}
+### 第 1 步：安装 NEPH-gas-reporter 插件和 {#step-1-install-the-NEPH-gas-reporter-plugin-and-codechecks}
 
 ```bash
-npm install --save-dev eth-gas-reporter
+npm install --save-dev NEPH-gas-reporter
 npm install --save-dev @codechecks/client
 ```
 
 ### 第 2 步：在您的 truffle-config.js 内的 mocha 设置中加入该插件 {#step-2-add-the-plugin-to-the-mocha-settings-inside-your-truffle-configjs}
 
-[查看选项](https://github.com/cgewecke/eth-gas-reporter#options)
+[查看选项](https://github.com/cgewecke/NEPH-gas-reporter#options)
 
 ```js
 module.exports = {
   networks: { ... },
   mocha: {
-    reporter: 'eth-gas-reporter',
+    reporter: 'NEPH-gas-reporter',
     reporterOptions: {
       excludeContracts: ['Migrations']
     }
@@ -128,7 +128,7 @@ module.exports = {
 
 ```yml
 checks:
-  - name: eth-gas-reporter/codechecks
+  - name: NEPH-gas-reporter/codechecks
 ```
 
 ### 第 4 步：在 test 命令后运行 codechecks {#step-4-run-codechecks-after-the-test-command}

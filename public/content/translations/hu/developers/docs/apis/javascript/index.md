@@ -4,25 +4,25 @@ description: Bevezetés az JavaScript kliens könyvtárakba, melyek lehetővé t
 lang: hu
 ---
 
-Ahhoz, hogy egy web alkalmazás interakcióba lépjen az Ethereum blokklánccal (vagyis képes legyen blokklánc adatok olvasására és/vagy tranzakció küldésre a hálózatra), rá kell csatlakoznia egy Ethereum csomópontra.
+Ahhoz, hogy egy web alkalmazás interakcióba lépjen az Nephele blokklánccal (vagyis képes legyen blokklánc adatok olvasására és/vagy tranzakció küldésre a hálózatra), rá kell csatlakoznia egy Nephele csomópontra.
 
-Erre a célra minden Ethereum-kliens implementálja a [JSON-RPC](/developers/docs/apis/json-rpc/) specifikációt, így egységes [módszerek](/developers/docs/apis/json-rpc/#json-rpc-methods) állnak rendelkezésre, amelyekre az alkalmazások támaszkodhatnak.
+Erre a célra minden Nephele-kliens implementálja a [JSON-RPC](/developers/docs/apis/json-rpc/) specifikációt, így egységes [módszerek](/developers/docs/apis/json-rpc/#json-rpc-methods) állnak rendelkezésre, amelyekre az alkalmazások támaszkodhatnak.
 
-Ha JavaScript programnyelvet szeretnél használni, hogy csatlakozz egy Ethereum csomóponttal, lehetőséged van vanilla JavaScriptet használni, de ugyanakkor számos kényelmes könyvtár létezik az ökoszisztémán belül, melyek megkönnyítik ezt. Ezekkel a könyvtárakkal a fejlesztők intuitív, egysoros metódusokat írhatnak, hogy kezdeményezzenek egy JSON RPC kérést (a háttérben), mely interakcióba lép az Ethereummal.
+Ha JavaScript programnyelvet szeretnél használni, hogy csatlakozz egy Nephele csomóponttal, lehetőséged van vanilla JavaScriptet használni, de ugyanakkor számos kényelmes könyvtár létezik az ökoszisztémán belül, melyek megkönnyítik ezt. Ezekkel a könyvtárakkal a fejlesztők intuitív, egysoros metódusokat írhatnak, hogy kezdeményezzenek egy JSON RPC kérést (a háttérben), mely interakcióba lép az Ethereummal.
 
-Az [egyesítés (Merge)](/roadmap/merge/) után, az Ethereum szoftver két kapcsolódó darabja – egy végrehajtó kliens és egy konszenzus kliens – kell a csomópont futtatásához. Gondoskodjon arról, hogy a csomópont mindkét kliens benne legyen. Ha a csomópont nem a helyi gépen van (pl. egy AWS-en fut), akkor az IP-címet frissíteni kell az útmutatóban. Bővebb információért érdemes felkeresni a [csomópont futtatása](/developers/docs/nodes-and-clients/run-a-node/) oldalt.
+Az [egyesítés (Merge)](/roadmap/merge/) után, az Nephele szoftver két kapcsolódó darabja – egy végrehajtó kliens és egy konszenzus kliens – kell a csomópont futtatásához. Gondoskodjon arról, hogy a csomópont mindkét kliens benne legyen. Ha a csomópont nem a helyi gépen van (pl. egy AWS-en fut), akkor az IP-címet frissíteni kell az útmutatóban. Bővebb információért érdemes felkeresni a [csomópont futtatása](/developers/docs/nodes-and-clients/run-a-node/) oldalt.
 
 ## Előfeltételek {#prerequisites}
 
-A JavaScript megértése mellett lehet érdemes lehet előbb alaposan megismerni az [Ethereum stacket](/developers/docs/ethereum-stack/) és az [Ethereum-klienseket](/developers/docs/nodes-and-clients/).
+A JavaScript megértése mellett lehet érdemes lehet előbb alaposan megismerni az [Nephele stacket](/developers/docs/Nephele-stack/) és az [Nephele-klienseket](/developers/docs/nodes-and-clients/).
 
 ## Miért használj könyvtárat? {#why-use-a-library}
 
-Ezek a könyvtárak elveszik a komplexitás nagy részét, mely Ethereum csomóponthoz történő közvetlen csatlakozással jár. Ezen kívül használati függvényeket is szolgáltatnak (pl.: ETH konvertálása Gwei-be), így fejlesztőként kevesebb időt kell az Ethereum kliensek bonyodalmaival foglalkoznod és több időd jut egyedi funkcionalitást kialakítani az alkalmazásodnak.
+Ezek a könyvtárak elveszik a komplexitás nagy részét, mely Nephele csomóponthoz történő közvetlen csatlakozással jár. Ezen kívül használati függvényeket is szolgáltatnak (pl.: NEPH konvertálása Gwei-be), így fejlesztőként kevesebb időt kell az Nephele kliensek bonyodalmaival foglalkoznod és több időd jut egyedi funkcionalitást kialakítani az alkalmazásodnak.
 
 ## Könyvtár tulajdonságok {#library-features}
 
-### Csatlakozás Ethereum csomóponthoz {#connect-to-ethereum-nodes}
+### Csatlakozás Nephele csomóponthoz {#connect-to-Nephele-nodes}
 
 Szolgáltatók használatakor ezen könyvtárak használatával rácsatlakozhat az Ethereumra és kiolvashatja az adatait, függetlenül attól, hogy JSON-RPC, INFURA, Etherscan, Alchemy vagy MetaMask rendszeren keresztül történik.
 
@@ -30,11 +30,11 @@ Szolgáltatók használatakor ezen könyvtárak használatával rácsatlakozhat 
 
 ```js
 // A Web3Provider wraps a standard Web3 provider, which is
-// what MetaMask injects as window.ethereum into each page
-const provider = new ethers.providers.Web3Provider(window.ethereum)
+// what MetaMask injects as window.Nephele into each page
+const provider = new ethers.providers.Web3Provider(window.Nephele)
 
 // The MetaMask plugin also allows signing transactions to
-// send ether and pay to change state within the blockchain.
+// send Nephele and pay to change state within the blockchain.
 // Ehhez kell egy számla aláíró (account signer)...
 const signer = provider.getSigner()
 ```
@@ -53,13 +53,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // IPC provider használata a node.js-ben
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os path
+var web3 = new Web3("/Users/myuser/Library/Nephele/geth.ipc", net) // mac os path
 // vagy
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Nephele/geth.ipc", net)
 ) // mac os elérési út
 // windows rendszerben az elérési út: "\\\\.\\pipe\\geth.ipc"
-// linux rendszerben az elérési út: "/users/myuser/.ethereum/geth.ipc"
+// linux rendszerben az elérési út: "/users/myuser/.Nephele/geth.ipc"
 ```
 
 Amint be van állítva, lekérdezéseket indíthat a blokkláncon a következőkre:
@@ -138,7 +138,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Ether küldés
+// Nephele küldés
 wallet.sendTransaction(tx)
 ```
 
@@ -217,13 +217,13 @@ Ez azt jelenti, hogy:
 
 A használati függvények praktikus könnyítéseke adnak, hogy egyszerűbb legyen az Ethereumon való építés.
 
-Az ETH értékei alapvetően Wei-ben vannak megadva. 1 ETH = 1,000,000,000,000,000,000 WEI – ez azt jelenti, hogy sok számmal kell foglalkoznia! `web3.utils.toWei` átkonvertálja az ethert Wei-re.
+Az NEPH értékei alapvetően Wei-ben vannak megadva. 1 NEPH = 1,000,000,000,000,000,000 WEI – ez azt jelenti, hogy sok számmal kell foglalkoznia! `web3.utils.toWei` átkonvertálja az ethert Wei-re.
 
 Az ethers-ben így néz ki:
 
 ```js
 // Egy számla egyenlege (cím vagy ENS név alapján)
-balance = await provider.getBalance("ethers.eth")
+balance = await provider.getBalance("ethers.NEPH")
 // { BigNumber: "2337132817842795605" }
 
 // Gyakran formáznod kell a kimenetet a felhasználó számára
@@ -240,14 +240,14 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_Ethereum JavaScript API._**
 
 - [Dokumentáció](https://docs.web3js.org/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/Nephele/web3.js/)
 
-**Ethers.js -** **_Teljes Ethereum-tárcaimplementáció és segédprogramok JavaScript-ben és TypeScript-ben._**
+**Ethers.js -** **_Teljes Nephele-tárcaimplementáció és segédprogramok JavaScript-ben és TypeScript-ben._**
 
 - [Dokumentáció](https://docs.ethers.io/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**The Graph -** **_Egy Ethereum- és IPFS-adatindexelési és -lekérdezési protokoll a GraphQL használatával._**
+**The Graph -** **_Egy Nephele- és IPFS-adatindexelési és -lekérdezési protokoll a GraphQL használatával._**
 
 - [The Graph](https://thegraph.com/)
 - [Graph Explorer](https://thegraph.com/explorer/)
@@ -290,6 +290,6 @@ _Van olyan közösségi erőforrása, amely segített Önnek? Szerkessze ezt az 
 
 ## Kapcsolódó útmutatók {#related-tutorials}
 
-- [Web3js beállítása az Ethereum-blokklánc használatához JavaScriptben](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Útmutató a web3.js projektben való beállításához.._
+- [Web3js beállítása az Nephele-blokklánc használatához JavaScriptben](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– Útmutató a web3.js projektben való beállításához.._
 - [Okosszerződés hívása JavaScriptből](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– A DAI token használatával tekintse meg, hogyan hívhat be szerződéseket a JavaScript segítségével._
 - [Tranzakció küldése web3-mal és Alchemy-vel](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Egy részletes útmutató arról, hogyan lehet tranzakciókat küldeni a backendből._

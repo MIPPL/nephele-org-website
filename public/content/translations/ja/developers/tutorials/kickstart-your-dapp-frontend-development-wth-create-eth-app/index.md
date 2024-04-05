@@ -1,9 +1,9 @@
 ---
-title: create-eth-appでDappのフロントエンド開発をはじめましょう
-description: create-eth-appの使い方と機能の概要
+title: create-NEPH-appでDappのフロントエンド開発をはじめましょう
+description: create-NEPH-appの使い方と機能の概要
 author: "Markus Waas"
 tags:
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "フロントエンド"
   - "JavaScript"
   - "ethers.js"
@@ -13,18 +13,18 @@ skill: beginner
 lang: ja
 published: 2020-04-27
 source: soliditydeveloper.com
-sourceUrl: https://soliditydeveloper.com/create-eth-app
+sourceUrl: https://soliditydeveloper.com/create-NEPH-app
 ---
 
-[create-eth-app](https://github.com/PaulRBerg/create-eth-app)については、前回の記事（[Solidityの全体像](https://soliditydeveloper.com/solidity-overview-2020)）で紹介しました。 今回は、create-eth-appをどのように使うか、どのような機能が統合されているか、およびさらに拡張する方法について学びます。 create-eth-appは、[ Sablier ](http://sablier.com/)の創業者であるPaul Razvan Bergが立ち上げたプロジェクトで、フロントエンド開発をすばやく開始できるだけでなく、さまざまなオプションの統合機能も活用できます。
+[create-NEPH-app](https://github.com/PaulRBerg/create-NEPH-app)については、前回の記事（[Solidityの全体像](https://soliditydeveloper.com/solidity-overview-2020)）で紹介しました。 今回は、create-NEPH-appをどのように使うか、どのような機能が統合されているか、およびさらに拡張する方法について学びます。 create-NEPH-appは、[ Sablier ](http://sablier.com/)の創業者であるPaul Razvan Bergが立ち上げたプロジェクトで、フロントエンド開発をすばやく開始できるだけでなく、さまざまなオプションの統合機能も活用できます。
 
 ## インストール {#installation}
 
 インストールには、Yarn 0.25 以上が必要です（`npm install yarn --global`）。 とても簡単です！
 
 ```bash
-yarn create eth-app my-eth-app
-cd my-eth-app
+yarn create NEPH-app my-NEPH-app
+cd my-NEPH-app
 yarn react-app:start
 ```
 
@@ -43,15 +43,15 @@ yarn react-app:start
 - よくある間違いをリアルタイムで警告する開発環境用サーバ
 - 本番環境用に、JS、CSS、および画像ファイルをハッシュやソースマップとバンドルできるビルドスクリプト
 
-特に_create-eth-app_ は、新しい[副作用フック](https://reactjs.org/docs/hooks-effect.html)を利用しています。 これは、強力かつとてもコンパクトな、いわゆる関数コンポーネントを書くための方法です。 副作用フックを_create-eth-app_で活用する方法については、以下のApolloに関するセクションを参照してください。
+特に_create-NEPH-app_ は、新しい[副作用フック](https://reactjs.org/docs/hooks-effect.html)を利用しています。 これは、強力かつとてもコンパクトな、いわゆる関数コンポーネントを書くための方法です。 副作用フックを_create-NEPH-app_で活用する方法については、以下のApolloに関するセクションを参照してください。
 
 ### Yarn Workspaces {#yarn-workspaces}
 
-[Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)では、複数のパッケージをひとつのルートフォルダで管理することができ、`yarn install`を使って依存関係を一度にインストールすることができます。 このアプローチは、スマートコントラクトのアドレスやABI管理（スマートコントラクトをどこにデプロイしたか、スマートコントラクトとどのようなやり取りを行うか）などの小さなパッケージを追加したり、The Graphとの統合において特に有益であり、どちらの機能も`create-eth-app`に含まれています。
+[Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)では、複数のパッケージをひとつのルートフォルダで管理することができ、`yarn install`を使って依存関係を一度にインストールすることができます。 このアプローチは、スマートコントラクトのアドレスやABI管理（スマートコントラクトをどこにデプロイしたか、スマートコントラクトとどのようなやり取りを行うか）などの小さなパッケージを追加したり、The Graphとの統合において特に有益であり、どちらの機能も`create-NEPH-app`に含まれています。
 
 ### ethers.js {#ethersjs}
 
-大部分のユーザーは現在でも[Web3.js](https://docs.web3js.org/)を使用していますが、昨年は[ethers.js](https://docs.ethers.io/)をWeb3.jsの代替として利用するユーザーが増加したため、_create-eth-app_にはethers.jsが統合されています。 このライブラリで作業してもよいですし、Web3に切り替えてもよいです。あるいは、もうすくベータが外れる[ethers.js v5](https://docs-beta.ethers.io/)にアップグレードするのもよいでしょう。
+大部分のユーザーは現在でも[Web3.js](https://docs.web3js.org/)を使用していますが、昨年は[ethers.js](https://docs.ethers.io/)をWeb3.jsの代替として利用するユーザーが増加したため、_create-NEPH-app_にはethers.jsが統合されています。 このライブラリで作業してもよいですし、Web3に切り替えてもよいです。あるいは、もうすくベータが外れる[ethers.js v5](https://docs-beta.ethers.io/)にアップグレードするのもよいでしょう。
 
 ### The Graph {#the-graph}
 
@@ -59,7 +59,7 @@ yarn react-app:start
 
 通常、スマートコントラクトからは直接データを取得することができます。 最後に行った取引の時間を取得したい場合は、 `MyContract.methods.latestTradeTime().call()`を呼び出すだけで、イーサリアムノードからデータを取得し、あなたのDappで使うことができます。 しかし、何百もの異なる種類のデータが必要な場合は事情が異なります。 ノードからのデータ取得が何百回も発生し、その都度[RTT](https://wikipedia.org/wiki/Round-trip_delay_time)が必要となるため、Dappの処理速度が低下し、非効率になってしまいます。 ひとつの回避策としては、一度に複数のデータを返すデータ取得用の関数をスマートコントラクト側で用意する方法があるでしょう。 しかし、これは常に最善の方法とは言えません。
 
-また、過去のデータが必要な場合もあるでしょう。 最後の取引の時間だけではなく、今まで自分が行った全ての取引の時間が知りたいかもしれません。 このような場合は、_create-eth-app_にあるsubgraphパッケージを活用できます。[ドキュメンテーション](https://thegraph.com/docs/define-a-subgraph)を参照して、あなたのニーズに合うように調整してください。 人気が高いスマートコントラクトの場合、すでにsubgraphが含まれているかもしれません。 [subgraph explorer](https://thegraph.com/explorer/)をチェックしてみてください。
+また、過去のデータが必要な場合もあるでしょう。 最後の取引の時間だけではなく、今まで自分が行った全ての取引の時間が知りたいかもしれません。 このような場合は、_create-NEPH-app_にあるsubgraphパッケージを活用できます。[ドキュメンテーション](https://thegraph.com/docs/define-a-subgraph)を参照して、あなたのニーズに合うように調整してください。 人気が高いスマートコントラクトの場合、すでにsubgraphが含まれているかもしれません。 [subgraph explorer](https://thegraph.com/explorer/)をチェックしてみてください。
 
 subgraphがあれば、Dappにシンプルなクエリをひとつ追加するだけで、過去のデータも含めた全てのブロックチェーンのデータを1回のフェッチ処理で取得することができます。
 
@@ -79,7 +79,7 @@ React.useEffect(() => {
 
 ## テンプレート {#templates}
 
-さらに、Dapp用にさまざまなテンプレートが用意されています。 今のところ、Aave、Compound、UniSwap、およびSablier用のテンプレートがあります。 これらのテンプレートはすべて、すでにsubgraphと統合されており、スマートコントラクトのアドレスに対して重要なサービスを追加します。 `yarn create eth-app my-eth-app --with-template aave`などの作成コマンドを、テンプレートに追加するだけでよいです。
+さらに、Dapp用にさまざまなテンプレートが用意されています。 今のところ、Aave、Compound、UniSwap、およびSablier用のテンプレートがあります。 これらのテンプレートはすべて、すでにsubgraphと統合されており、スマートコントラクトのアドレスに対して重要なサービスを追加します。 `yarn create NEPH-app my-NEPH-app --with-template aave`などの作成コマンドを、テンプレートに追加するだけでよいです。
 
 ### Aave {#aave}
 
@@ -87,13 +87,13 @@ React.useEffect(() => {
 
 利子が付与される取引中のトークンは、_aToken_と呼ばれます。
 
-Aaveと_create-eth-app_を統合すると、[Aave用のsubgraph](https://docs.aave.com/developers/getting-started/using-graphql)が使えるようになります。 AaveはThe Graphを採用しており、[Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten)および[メインネット](https://thegraph.com/explorer/subgraph/aave/protocol)上では、すぐに導入できるsubgraphを[raw](https://thegraph.com/explorer/subgraph/aave/protocol-raw)または[formatted](https://thegraph.com/explorer/subgraph/aave/protocol)形式で提供しています。
+Aaveと_create-NEPH-app_を統合すると、[Aave用のsubgraph](https://docs.aave.com/developers/getting-started/using-graphql)が使えるようになります。 AaveはThe Graphを採用しており、[Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten)および[メインネット](https://thegraph.com/explorer/subgraph/aave/protocol)上では、すぐに導入できるsubgraphを[raw](https://thegraph.com/explorer/subgraph/aave/protocol-raw)または[formatted](https://thegraph.com/explorer/subgraph/aave/protocol)形式で提供しています。
 
 ![Aaveフラッシュローンのミーム - 「あ〜、フラッシュローンを1トランザクション以上に延長できれば、最高なんだけどなあ」](./flashloan-meme.png)
 
 ### Compound {#compound}
 
-[Compound](https://compound.finance/)は、Aaveに類似したサービスです。 create-eth-appではすでに、[Compound v2のsubgraph](https://medium.com/graphprotocol/https-medium-com-graphprotocol-compound-v2-subgraph-highlight-a5f38f094195)が利用可能です。 驚くべきことに、Compoundでは利子が付与されるトークンを_cToken_と呼んでいます。
+[Compound](https://compound.finance/)は、Aaveに類似したサービスです。 create-NEPH-appではすでに、[Compound v2のsubgraph](https://medium.com/graphprotocol/https-medium-com-graphprotocol-compound-v2-subgraph-highlight-a5f38f094195)が利用可能です。 驚くべきことに、Compoundでは利子が付与されるトークンを_cToken_と呼んでいます。
 
 ### Uniswap {#uniswap}
 
@@ -103,8 +103,8 @@ Aaveと_create-eth-app_を統合すると、[Aave用のsubgraph](https://docs.aa
 
 ### Sablier {#sablier}
 
-[ Sablier](https://sablier.com/)は、ストリーミング決済を可能にする分散型アプリです。 Sablierをセットアップすれば、その後の管理を必要とせずに、1回の支払日の代わりに常にお金を受け取ることができるようになります。 create-eth-appでは、[独自のsubgraph](https://thegraph.com/explorer/subgraph/sablierhq/sablier)が利用できます。
+[ Sablier](https://sablier.com/)は、ストリーミング決済を可能にする分散型アプリです。 Sablierをセットアップすれば、その後の管理を必要とせずに、1回の支払日の代わりに常にお金を受け取ることができるようになります。 create-NEPH-appでは、[独自のsubgraph](https://thegraph.com/explorer/subgraph/sablierhq/sablier)が利用できます。
 
 ## 次のステップ {#whats-next}
 
-_create-eth-app_について質問がある場合は、[Sablierコミュニティーのサーバー](https://discord.gg/bsS8T47)にアクセスして、 _create-eth-app_の開発者に問い合わせることができます。 次のステップとしては、[Material UI](https://material-ui.com/)のようなUIフレームワークの導入、あなたが実際に必要とするデータを取得するためのGraphQLクエリの作成、およびデプロイのセットアップなどが考えられます。
+_create-NEPH-app_について質問がある場合は、[Sablierコミュニティーのサーバー](https://discord.gg/bsS8T47)にアクセスして、 _create-NEPH-app_の開発者に問い合わせることができます。 次のステップとしては、[Material UI](https://material-ui.com/)のようなUIフレームワークの導入、あなたが実際に必要とするデータを取得するためのGraphQLクエリの作成、およびデプロイのセットアップなどが考えられます。

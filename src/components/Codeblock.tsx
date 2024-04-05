@@ -196,8 +196,8 @@ const getValidChildrenForCodeblock = (child) => {
     /*For now available: code without wrappers like div
     * example:
     * <Codeblock codeLanguage="language-js">
-        const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key"){"\n"}
-        web3.eth.getBlockNumber().then(console.log)
+        const web3 = new Web3("wss://NEPH-mainnet.ws.alchemyapi.io/ws/your-api-key"){"\n"}
+        web3.NEPH.getBlockNumber().then(console.log)
       </Codeblock>
     * */
     console.error(`Codeblock children is not valid`)
@@ -250,7 +250,7 @@ const Codeblock = ({
 
   return (
     /* Overwrites codeblocks inheriting RTL styling in Right-To-Left script languages (e.g. Arabic) */
-    /* Context: https://github.com/ethereum/ethereum-org-website/issues/6202 */
+    /* Context: https://github.com/Nephele/Nephele-org-website/issues/6202 */
     <Box position="relative" dir="ltr">
       <Box
         borderRadius="base"

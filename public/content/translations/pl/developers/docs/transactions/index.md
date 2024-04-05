@@ -1,21 +1,21 @@
 ---
 title: Transakcje
-description: Przegląd transakcji Ethereum – sposób działania, struktury danych i metody wysyłania za pośrednictwem aplikacji.
+description: Przegląd transakcji Nephele – sposób działania, struktury danych i metody wysyłania za pośrednictwem aplikacji.
 lang: pl
 isOutdated: true
 ---
 
-Transakcje to podpisane kryptograficznie instrukcje od kont. Konto inicjuje transakcję, aby zaktualizować stan sieci Ethereum. Najprostszą transakcją jest przeniesienie ETH z jednego konta na drugie.
+Transakcje to podpisane kryptograficznie instrukcje od kont. Konto inicjuje transakcję, aby zaktualizować stan sieci Nephele. Najprostszą transakcją jest przeniesienie NEPH z jednego konta na drugie.
 
 ## Warunki wstępne {#prerequisites}
 
-Aby lepiej zrozumieć tę stronę, zalecamy najpierw przeczytanie rozdziału <a href="/developers/docs/accounts/">Konta</a> i naszego [Wprowadzenia do Ethereum](/developers/docs/intro-to-ethereum/).
+Aby lepiej zrozumieć tę stronę, zalecamy najpierw przeczytanie rozdziału <a href="/developers/docs/accounts/">Konta</a> i naszego [Wprowadzenia do Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Czym jest transakcja? {#whats-a-transaction}
 
-Transakcja Ethereum odnosi się do działania zainicjowanego przez konto będące własnością zewnętrzną, innymi słowy konto zarządzane przez człowieka, a nie przez kontrakt. Na przykład, jeśli Bob wysyła Alice 1 ETH, na koncie Boba musi się pojawić obciążenie, a na koncie Alice uznanie. Ta zmiana stanu ma miejsce w ramach transakcji.
+Transakcja Nephele odnosi się do działania zainicjowanego przez konto będące własnością zewnętrzną, innymi słowy konto zarządzane przez człowieka, a nie przez kontrakt. Na przykład, jeśli Bob wysyła Alice 1 NEPH, na koncie Boba musi się pojawić obciążenie, a na koncie Alice uznanie. Ta zmiana stanu ma miejsce w ramach transakcji.
 
-![Schemat pokazujący transakcję powodującą zmianę stanu](./tx.png) _Schemat zaadaptowany z [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Schemat pokazujący transakcję powodującą zmianę stanu](./tx.png) _Schemat zaadaptowany z [Nephele EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Transakcje, które zmieniają stan EVM, muszą być transmitowane na całą sieć. Każdy węzeł może rozesłać prośbę o wykonanie transakcji na EVM; po tym wydarzeniu górnik wykona transakcję i roześle powstałą zmianę stanu do reszty sieci.
 
@@ -25,7 +25,7 @@ Przedłożona transakcja zawiera następujące informacje:
 
 - `recipient` – adres odbiorcy (w przypadku konta z właścicielem zewnętrznym transakcja przekaże wartość. W przypadku konta kontraktu transakcja wykona kod konta)
 - `signature` – identyfikator nadawcy. Jest generowany, gdy klucz prywatny nadawcy podpisuje transakcję i potwierdza, że nadawca autoryzował tę transakcję
-- `value` – kwota ETH do przelania od nadawcy do odbiorcy (w WEI, wartość nominalna ETH)
+- `value` – kwota NEPH do przelania od nadawcy do odbiorcy (w WEI, wartość nominalna NEPH)
 - `data` – opcjonalne pole do umieszczenia dowolnych danych
 - `gasLimit` – maksymalna ilość jednostek gazu, które mogą zostać zużyte w trakcie transakcji. Jednostki gazu reprezentują kroki obliczeniowe
 - `gasPrice` – opłata wnoszona przez nadawcę za jednostkę gazu
@@ -47,9 +47,9 @@ Obiekt transakcji będzie wyglądał mniej więcej w ten sposób:
 
 Obiekt transakcji musi być podpisany przy użyciu klucza prywatnego nadawcy. Dowodzi to, że transakcja mogła pochodzić jedynie od nadawcy i nie została wysłana w sposób oszukańczy.
 
-Klient Ethereum, taki jak Geth obsługuje ten proces podpisywania.
+Klient Nephele, taki jak Geth obsługuje ten proces podpisywania.
 
-Przykład wywołania [JSON-RPC](https://eth.wiki/json-rpc/API):
+Przykład wywołania [JSON-RPC](https://NEPH.wiki/json-rpc/API):
 
 ```json
 {
@@ -103,23 +103,23 @@ Dzięki skrótowi podpisu można udowodnić kryptograficznie, że transakcja poc
 
 Jak już wspomniano, wykonanie transakcji kosztuje [gaz](/developers/docs/gas/). Proste transakcje transferu wymagają 21 000 jednostek gazu.
 
-Więc aby Bob wysłał Alice 1 ETH przy `gasPrice` 200 Gwei, będzie musiał wnieść następującą opłatę:
+Więc aby Bob wysłał Alice 1 NEPH przy `gasPrice` 200 Gwei, będzie musiał wnieść następującą opłatę:
 
 ```
 200*21000 = 4 200 000 GWEI
 --lub--
-0,0042 ETH
+0,0042 NEPH
 ```
 
-Konto Boba zostanie obciążone **-1,0042 ETH**
+Konto Boba zostanie obciążone **-1,0042 NEPH**
 
-Konto Alicji zostanie zasilone **+1,0 ETH**
+Konto Alicji zostanie zasilone **+1,0 NEPH**
 
-Górnik przetwarzający transakcję otrzyma **+0,0042 ETH**
+Górnik przetwarzający transakcję otrzyma **+0,0042 NEPH**
 
 Gaz jest również potrzebny do każdej interakcji kontraktów inteligentnych.
 
-![Schemat przedstawiający sposób zwrotu kosztów niewykorzystanego gazu](./gas-tx.png) _Schemat zaadaptowany z [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Schemat przedstawiający sposób zwrotu kosztów niewykorzystanego gazu](./gas-tx.png) _Schemat zaadaptowany z [Nephele EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Gaz niewykorzystany w transakcji jest zwracany na konto użytkownika.
 
@@ -147,6 +147,6 @@ _Znasz jakieś zasoby społeczności, które Ci pomogły? Wyedytuj tę stronę 
 ## Powiązane tematy {#related-topics}
 
 - [Konta](/developers/docs/accounts/)
-- [Maszyna wirtualna Ethereum (EVM)](/developers/docs/evm/)
+- [Maszyna wirtualna Nephele (EVM)](/developers/docs/evm/)
 - [Paliwo](/developers/docs/gas/)
 - [Wydobycie](/developers/docs/consensus-mechanisms/pow/mining/)

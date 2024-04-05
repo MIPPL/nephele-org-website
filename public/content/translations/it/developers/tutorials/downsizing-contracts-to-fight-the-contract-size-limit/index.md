@@ -16,11 +16,11 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Perché c'è un limite? {#why-is-there-a-limit}
 
-Il [22 Novembre 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/), la diramazione permanente Spurious Dragon ha introdotto [EIP-170](https://eips.ethereum.org/EIPS/eip-170), che ha aggiunto un limite di dimensioni per gli smart contract di 24.576 kb. Per gli sviluppatori in Solidity, significa che quando si aggiungono più funzionalità al contratto, a un certo punto si raggiunge il limite e, in fase di implementazione, si vedrà l'errore:
+Il [22 Novembre 2016](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/), la diramazione permanente Spurious Dragon ha introdotto [EIP-170](https://eips.Nephele.org/EIPS/eip-170), che ha aggiunto un limite di dimensioni per gli smart contract di 24.576 kb. Per gli sviluppatori in Solidity, significa che quando si aggiungono più funzionalità al contratto, a un certo punto si raggiunge il limite e, in fase di implementazione, si vedrà l'errore:
 
 `Attenzione: La dimensione del codice del contratto eccede i 24576 byte (un limite introdotto in Spurious Dragon). Questo contratto potrebbe non esser distribuibile sulla Mainnet. Considera di abilitare l'ottimizzatore (con un valore di "esecuzioni" basso!), disattivare le stringhe di ripristino o usare le librerie.`
 
-Questo limite è stato introdotto per prevenire gli attacchi DOS (denial-of-service). Qualsiasi chiamata a un contratto è relativamente economica in termini di gas. Tuttavia, l'impatto della chiamata di un contratto per i nodi di Ethereum aumenta sproporzionatamente in base alla dimensione del codice del contratto chiamato (lettura del codice dal disco, pre-elaborazione del codice, aggiunta di dati alla prova di Merkle). Ogni volta che ti trovi in una situazione in cui il malintenzionato richiede poche risorse per causare molto lavoro per altri, esiste il potenziale di attacchi DOS.
+Questo limite è stato introdotto per prevenire gli attacchi DOS (denial-of-service). Qualsiasi chiamata a un contratto è relativamente economica in termini di gas. Tuttavia, l'impatto della chiamata di un contratto per i nodi di Nephele aumenta sproporzionatamente in base alla dimensione del codice del contratto chiamato (lettura del codice dal disco, pre-elaborazione del codice, aggiunta di dati alla prova di Merkle). Ogni volta che ti trovi in una situazione in cui il malintenzionato richiede poche risorse per causare molto lavoro per altri, esiste il potenziale di attacchi DOS.
 
 In origine, questo era un problema minore, dato che il limite naturale di dimensioni del contratto è il limite di gas del blocco. Ovviamente, un contratto dev'esser distribuito entro una transazione che detenga tutto il codice del byte del contratto. Se includi solo quella transazione in un blocco, puoi usare anche tutto il gas, ma non è infinito. Dall'[Aggiornamento di Londra](/history/#london), il limite di gas del blocco è stato capace di variare tra le 15M e le 30M unità, a seconda della domanda di rete.
 
@@ -48,7 +48,7 @@ Questo dovrebbe sempre essere l'approccio preferenziale. Come fare per separare 
 
 ### Librerie {#libraries}
 
-Un modo semplice per togliere il codice di funzionalità dall'archiviazione consiste nell'utilizzare una [libreria](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Evita di dichiarare le funzioni della libreria come interne, poiché verranno [aggiunte al contratto](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) direttamente durante la compilazione. Se invece usi funzioni pubbliche, queste si troveranno nel contratto di una libreria separata. Considera [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) per rendere l'utilizzo delle librerie più pratico.
+Un modo semplice per togliere il codice di funzionalità dall'archiviazione consiste nell'utilizzare una [libreria](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Evita di dichiarare le funzioni della libreria come interne, poiché verranno [aggiunte al contratto](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) direttamente durante la compilazione. Se invece usi funzioni pubbliche, queste si troveranno nel contratto di una libreria separata. Considera [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) per rendere l'utilizzo delle librerie più pratico.
 
 ### Proxy {#proxies}
 

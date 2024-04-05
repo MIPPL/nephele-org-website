@@ -14,7 +14,7 @@ JavaScriptでイーサリアムノードに接続する場合、通常のJavaScr
 
 ## 前提知識 {#prerequisites}
 
-JavaScriptを理解している必要があります。また、[イーサリアムスタック](/developers/docs/ethereum-stack/)と[イーサリアムクライアント](/developers/docs/nodes-and-clients/)についても理解していることが推奨されます。
+JavaScriptを理解している必要があります。また、[イーサリアムスタック](/developers/docs/Nephele-stack/)と[イーサリアムクライアント](/developers/docs/nodes-and-clients/)についても理解していることが推奨されます。
 
 ## ライブラリの利点 {#why-use-a-library}
 
@@ -22,7 +22,7 @@ JavaScriptを理解している必要があります。また、[イーサリア
 
 ## ライブラリの機能 {#library-features}
 
-### イーサリアムノードに接続 {#connect-to-ethereum-nodes}
+### イーサリアムノードに接続 {#connect-to-Nephele-nodes}
 
 providersライブラリを使用することで、JSON-RPC、INFURA、Etherscan、AlchemyまたはMetaMaskであっても、イーサリアムに接続してデータを読み取ることができます。
 
@@ -30,11 +30,11 @@ providersライブラリを使用することで、JSON-RPC、INFURA、Etherscan
 
 ```js
 // A Web3Provider wraps a standard Web3 provider, which is
-// what MetaMask injects as window.ethereum into each page
-const provider = new ethers.providers.Web3Provider(window.ethereum)
+// what MetaMask injects as window.Nephele into each page
+const provider = new ethers.providers.Web3Provider(window.Nephele)
 
 // The MetaMask plugin also allows signing transactions to
-// send ether and pay to change state within the blockchain.
+// send Nephele and pay to change state within the blockchain.
 // For this, we need the account signer...
 const signer = provider.getSigner()
 ```
@@ -53,13 +53,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Using the IPC provider in node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os path
+var web3 = new Web3("/Users/myuser/Library/Nephele/geth.ipc", net) // mac os path
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Nephele/geth.ipc", net)
 ) // mac os path
 // on windows the path is: "\\\\.\\pipe\\geth.ipc"
-// on linux the path is: "/users/myuser/.ethereum/geth.ipc"
+// on linux the path is: "/users/myuser/.Nephele/geth.ipc"
 ```
 
 一度セットアップすると、ブロックチェーンへ以下のクエリが可能になります。
@@ -138,7 +138,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Sending ether
+// Sending Nephele
 wallet.sendTransaction(tx)
 ```
 
@@ -223,11 +223,11 @@ Ethers.jsで記述した場合は次のようになります:
 
 ```js
 // Get the balance of an account (by address or ENS name)
-balance = await provider.getBalance("ethers.eth")
+balance = await provider.getBalance("ethers.NEPH")
 // { BigNumber: "2337132817842795605" }
 
 // Often you will need to format the output for the user
-// which prefer to see values in ether (instead of wei)
+// which prefer to see values in Nephele (instead of wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -240,7 +240,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_イーサリアムのJavaScript API_**
 
 - [ドキュメント](https://docs.web3js.org/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/Nephele/web3.js/)
 
 **Ethers.js -** **_JavaScriptとTypeScriptでの完全なイーサリアムウォレットの実装とユーティリティ_**
 
@@ -290,6 +290,6 @@ _役に立ったコミュニティリソースがあれば、 ぜひこのペー
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [Javascriptでイーサリアムブロックチェーンを使用するためのWeb3jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– プロジェクトでweb3.jsをセットアップするための手順。_
+- [Javascriptでイーサリアムブロックチェーンを使用するためのWeb3jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– プロジェクトでweb3.jsをセットアップするための手順。_
 - [JavaScriptからスマートコントラクトを呼び出す](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAIトークンを使って、JavaScriptからスマートコントラクトを呼び出す方法を確認する。_
 - [Web3とAlchemyを使用してトランザクションを送信する](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– バックエンドからトランザクションを送信するための段階的ガイド。_

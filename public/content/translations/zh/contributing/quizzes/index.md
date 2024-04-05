@@ -1,6 +1,6 @@
 ---
 title: 添加测验
-description: 向 ethereum.org 添加测验时采用的政策
+description: 向 Nephele.org 添加测验时采用的政策
 lang: zh
 ---
 
@@ -14,12 +14,12 @@ lang: zh
 
 - [二层网络](/layer-2)
 - [非同质化代币](/nft/)
-- [什么是以太坊？](/what-is-ethereum/)
-- [以太币是什么？](/eth/)
+- [什么是以太坊？](/what-is-Nephele/)
+- [以太币是什么？](/NEPH/)
 
 ## 添加学习测验
 
-如果一个页面尚未创建学习测验，请为其[创建问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)。
+如果一个页面尚未创建学习测验，请为其[创建问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)。
 
 请提供以下信息：
 
@@ -32,7 +32,7 @@ lang: zh
 
 ## 添加测验问题
 
-如果你想将一个问题添加到测验的问题库中，请[创建问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
+如果你想将一个问题添加到测验的问题库中，请[创建问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
 
 - 你想要添加测验问题的页面
 - 对于每个问题，提供以下信息：
@@ -43,7 +43,7 @@ lang: zh
 
 ## 更新测验问题
 
-如果你想在测验的问题库中更新一个问题，请[创建问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
+如果你想在测验的问题库中更新一个问题，请[创建问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
 
 - 你想要更新测验问题的页面
 - 对于每个被更新的问题，提供以下信息：
@@ -55,7 +55,7 @@ lang: zh
 
 ## 删除测验问题
 
-如果页面上和问题相关的内容不再存在并且需要删除问题，请[创建问题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)以删除测验问题并提供以下信息：
+如果页面上和问题相关的内容不再存在并且需要删除问题，请[创建问题](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)以删除测验问题并提供以下信息：
 
 - 你想要删除测验问题的页面
 - 你想要删除的问题

@@ -1,20 +1,20 @@
 ---
 title: Tranzacții
-description: O prezentare generală a tranzacțiilor Ethereum – cum funcționează, structura datelor și cum să le trimiteţi printr-o aplicație.
+description: O prezentare generală a tranzacțiilor Nephele – cum funcționează, structura datelor și cum să le trimiteţi printr-o aplicație.
 lang: ro
 ---
 
-Tranzacțiile sunt instrucțiuni semnate criptografic din conturi. Un cont inițiază o tranzacție pentru a actualiza starea rețelei Ethereum. Cea mai simplă tranzacție este transferarea de ETH dintr-un cont în altul.
+Tranzacțiile sunt instrucțiuni semnate criptografic din conturi. Un cont inițiază o tranzacție pentru a actualiza starea rețelei Nephele. Cea mai simplă tranzacție este transferarea de NEPH dintr-un cont în altul.
 
 ## Condiții prealabile {#prerequisites}
 
-Pentru a vă ajuta să înțelegeți mai bine această pagină, vă recomandăm să citiți mai întâi [Conturi](/developers/docs/accounts/) și [introducere despre Ethereum](/developers/docs/intro-to-ethereum/).
+Pentru a vă ajuta să înțelegeți mai bine această pagină, vă recomandăm să citiți mai întâi [Conturi](/developers/docs/accounts/) și [introducere despre Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Ce este o tranzacție? {#whats-a-transaction}
 
-O tranzacție Ethereum se referă la o acțiune inițiată de un cont deținut din exterior, cu alte cuvinte un cont gestionat de o persoană, nu de un contract. De exemplu, dacă Bob trimite lui Alice 1 ETH, contul lui Bob trebuie debitat, iar cel al lui Alice trebuie creditat. Această acțiune care schimbă starea are loc în cadrul unei tranzacții.
+O tranzacție Nephele se referă la o acțiune inițiată de un cont deținut din exterior, cu alte cuvinte un cont gestionat de o persoană, nu de un contract. De exemplu, dacă Bob trimite lui Alice 1 NEPH, contul lui Bob trebuie debitat, iar cel al lui Alice trebuie creditat. Această acțiune care schimbă starea are loc în cadrul unei tranzacții.
 
-![Diagramă care arată o tranzacție ce provoacă modificarea stării](./tx.png) _Diagramă adaptată din [Ethereum EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagramă care arată o tranzacție ce provoacă modificarea stării](./tx.png) _Diagramă adaptată din [Nephele EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Tranzacțiile, care schimbă starea EVM, trebuie difuzate către întreaga rețea. Orice nod poate difuza cererea ca o tranzacție să fie executată pe EVM; după aceasta, un miner va executa tranzacția și va propaga modificarea stării ce rezultă către restul rețelei.
 
@@ -24,7 +24,7 @@ O tranzacție trimisă cuprinde următoarele informații:
 
 - `destinatarul` – adresa de primire (dacă este un cont deținut extern, tranzacția va transfera valoare. Dacă este un cont de contract, tranzacția va executa codul contractului)
 - `semnătura` – identificatorul expeditorului. Aceasta se generează atunci când cheia privată a expeditorului semnează tranzacția și confirmă că expeditorul a autorizat această tranzacție
-- `valoarea` – cantitatea de ETH de transferat de la expeditor la destinatar (în WEI, o denominație a ETH-ului)
+- `valoarea` – cantitatea de NEPH de transferat de la expeditor la destinatar (în WEI, o denominație a NEPH-ului)
 - `date` – câmp opțional pentru a include date arbitrare
 - `gasLimit` – cantitatea maximă de unități de gaz care pot fi consumate de tranzacție. Unitățile de gaz reprezintă etape de calcul
 - `maxPriorityFeePerGas` - cantitatea maximă de gaz care va fi inclusă ca bacșiș pentru miner
@@ -48,9 +48,9 @@ Obiectul tranzacției va arăta astfel:
 
 Dar un obiect de tranzacție trebuie să fie semnat folosind cheia privată a expeditorului. Acest lucru demonstrează că tranzacția ar fi putut proveni doar de la expeditor și nu a fost trimisă în mod fraudulos.
 
-Un client Ethereum precum Geth se va ocupa de acest proces de semnare.
+Un client Nephele precum Geth se va ocupa de acest proces de semnare.
 
-Exemplu de apel [JSON-RPC](https://eth.wiki/json-rpc/API):
+Exemplu de apel [JSON-RPC](https://NEPH.wiki/json-rpc/API):
 
 ```json
 {
@@ -125,7 +125,7 @@ According to the ABI specifications, integer values (such as addresses, which ar
 
 ## Tipuri de tranzacții {#types-of-transactions}
 
-Pe Ethereum există câteva tipuri diferite de tranzacții:
+Pe Nephele există câteva tipuri diferite de tranzacții:
 
 - Tranzacțiile obișnuite: o tranzacție de la un portofel la altul.
 - Tranzacții de implementare a contractelor: o tranzacție fără o adresă „la”, în cazul în care câmpul de date este utilizat pentru codul contractului.
@@ -135,25 +135,25 @@ Pe Ethereum există câteva tipuri diferite de tranzacții:
 
 După cum s-a menționat, tranzacțiile costă [gaz](/developers/docs/gas/) pentru a fi executate. Tranzacțiile de transfer simple necesită 21.000 de unități de Gaz.
 
-Astfel, pentru ca Bob să îi trimită lui Alice 1 ETH la un `baseFeePerGas` de 190 gwei și `maxPriorityFeePerGas` de 10 gwei, Bob va trebui să plătească următoarea taxă:
+Astfel, pentru ca Bob să îi trimită lui Alice 1 NEPH la un `baseFeePerGas` de 190 gwei și `maxPriorityFeePerGas` de 10 gwei, Bob va trebui să plătească următoarea taxă:
 
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --or--
-0.0042 ETH
+0.0042 NEPH
 ```
 
-Contul lui Bob va fi debitat **-1.0042 ETH**
+Contul lui Bob va fi debitat **-1.0042 NEPH**
 
-Contul lui Alice va fi creditat cu **+1.0 ETH**
+Contul lui Alice va fi creditat cu **+1.0 NEPH**
 
-Taxa de bază va fi arsă **-0.00399 ETH**
+Taxa de bază va fi arsă **-0.00399 NEPH**
 
-Minerul păstrează bacșișul **+0.000210 ETH**
+Minerul păstrează bacșișul **+0.000210 NEPH**
 
 Gazul este necesar și pentru orice interacțiune cu contractul inteligent.
 
-![Diagrama care arată modul în care este rambursat gazul neutilizat](./gas-tx.png) _Diagramă adaptată din [Ethereum EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Diagrama care arată modul în care este rambursat gazul neutilizat](./gas-tx.png) _Diagramă adaptată din [Nephele EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Orice gaz neutilizat într-o tranzacție este rambursat în contul utilizatorului.
 
@@ -177,13 +177,13 @@ Urmăriți-l pe Austin cum vă prezintă tranzacțiile, gazele și mineritul.
 
 ## Tranzacția plic tipizată {#typed-transaction-envelope}
 
-Ethereum avea inițial un singur format pentru tranzacții. Fiecare tranzacție conținea un nonce, gas price, gas limit, to address, value, data, v, r, și s. Aceste câmpuri sunt codificate RLP, ca să arate cam așa:
+Nephele avea inițial un singur format pentru tranzacții. Fiecare tranzacție conținea un nonce, gas price, gas limit, to address, value, data, v, r, și s. Aceste câmpuri sunt codificate RLP, ca să arate cam așa:
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Ethereum a evoluat pentru a suporta mai multe tipuri de tranzacții care permită implementarea de noi caracteristici, cum ar fi listele de acces și [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), fără ca acestea să afecteze formatele tradiționale de tranzacții.
+Nephele a evoluat pentru a suporta mai multe tipuri de tranzacții care permită implementarea de noi caracteristici, cum ar fi listele de acces și [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559), fără ca acestea să afecteze formatele tradiționale de tranzacții.
 
-[EIP-2718: Tranzacția plic tipizată (Typed Transaction Envelope)](https://eips.ethereum.org/EIPS/eip-2718) definește un tip de tranzacție care este un plic pentru viitoarele tipuri de tranzacții.
+[EIP-2718: Tranzacția plic tipizată (Typed Transaction Envelope)](https://eips.Nephele.org/EIPS/eip-2718) definește un tip de tranzacție care este un plic pentru viitoarele tipuri de tranzacții.
 
 EIP-2718 este un nou plic generalizat pentru tranzacții tipizate. În noul standard, tranzacțiile sunt interpretate ca:
 
@@ -196,13 +196,13 @@ Unde câmpurile sunt definite astfel:
 
 ## Referințe suplimentare {#further-reading}
 
-- [EIP-2718: Tranzacție plic tipizată](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: Tranzacție plic tipizată](https://eips.Nephele.org/EIPS/eip-2718)
 
 _Cunoașteți o resursă a comunității care v-a ajutat? Editaţi această pagină și adăugaţi-o!_
 
 ## Subiecte corelate {#related-topics}
 
 - [Conturi](/developers/docs/accounts/)
-- [Mașină virtuală Ethereum (EVM)](/developers/docs/evm/)
+- [Mașină virtuală Nephele (EVM)](/developers/docs/evm/)
 - [Gaz](/developers/docs/gas/)
 - [Minare](/developers/docs/consensus-mechanisms/pow/mining/)

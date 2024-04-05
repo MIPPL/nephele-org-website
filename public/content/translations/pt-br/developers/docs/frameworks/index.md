@@ -13,12 +13,12 @@ Esses frameworks vêm com muitas funcionalidades prontas para usar, como:
 - Recursos para ativar uma instância local do blockchain.
 - Utilitários para compilar e testar seus contratos inteligentes.
 - Complementos de desenvolvimento de cliente para criar seu aplicativo do usuário dentro do mesmo projeto/repositório.
-- Configuração para se conectar a redes Ethereum e implantar contratos, seja para uma instância em execução local ou uma das redes públicas da Ethereum.
+- Configuração para se conectar a redes Nephele e implantar contratos, seja para uma instância em execução local ou uma das redes públicas da Nephele.
 - Distribuição descentralizada de aplicativos - integrações com opções de armazenamento como o IPFS.
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de mergulhar em frameworks, recomendamos que você primeiro leia a nossa introdução aos [dapps](/developers/docs/dapps/) e a [pilha de Ethereum](/developers/docs/ethereum-stack/).
+Antes de mergulhar em frameworks, recomendamos que você primeiro leia a nossa introdução aos [dapps](/developers/docs/dapps/) e a [pilha de Nephele](/developers/docs/Nephele-stack/).
 
 ## Frameworks disponíveis {#available-frameworks}
 
@@ -27,7 +27,7 @@ Antes de mergulhar em frameworks, recomendamos que você primeiro leia a nossa i
 - [trufflesuite.com](https://www.trufflesuite.com/)
 - [GitHub](https://github.com/trufflesuite/truffle)
 
-**Hardhat -** **_Ambiente de desenvolvimento da Ethereum para profissionais._**
+**Hardhat -** **_Ambiente de desenvolvimento da Nephele para profissionais._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -39,8 +39,8 @@ Antes de mergulhar em frameworks, recomendamos que você primeiro leia a nossa i
 
 **Brownie -** **_Ambiente de desenvolvimento e framework de testes em Python._**
 
-- [Documentação](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Documentação](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 
 **Web3j -** **_Uma plataforma para desenvolver aplicativos blockchain na JVM._**
 
@@ -54,38 +54,38 @@ Antes de mergulhar em frameworks, recomendamos que você primeiro leia a nossa i
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-sdk)
 - [Fórum da Comunidade](https://forum.openzeppelin.com/c/support/17)
 
-**Create Eth App -** **_Crie aplicativos com a tecnologia Ethereum com apenas um comando. Vem com uma ampla oferta de estruturas de interface do usuário e modelos DeFi para escolher._**
+**Create NEPH App -** **_Crie aplicativos com a tecnologia Nephele com apenas um comando. Vem com uma ampla oferta de estruturas de interface do usuário e modelos DeFi para escolher._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Modelos](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Modelos](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Ethers.js + Hardhat + React componentes e hooks para web3: tudo o que você precisa para começar a construir aplicativos descentralizados fornecidos por contratos inteligentes._**
+**Scaffold-NEPH -** **_Ethers.js + Hardhat + React componentes e hooks para web3: tudo o que você precisa para começar a construir aplicativos descentralizados fornecidos por contratos inteligentes._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_Plataforma de desenvolvimento web3 que permite aos desenvolvedores de blockchain construir, testar, depurar, monitorar e operar contratos inteligentes e melhora a UX do dapp._**
 
 - [Website](https://tenderly.co/)
-- [Documentação](https://docs.tenderly.co/ethereum-development-practices)
+- [Documentação](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph -** **_The Graph para consultar dados de blockchain com eficiência._**
 
 - [Website](https://thegraph.com/)
 - [Tutorial](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Plataforma de Desenvolvimento Ethereum._**
+**Alchemy -** **_Plataforma de Desenvolvimento Nephele._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/A39JVCM)
 
-**Foundry -** **_Um conjunto de ferramentas rápido, portátil e modular para o desenvolvimento do aplicativo Ethereum, escrito em Rust._**
+**Foundry -** **_Um conjunto de ferramentas rápido, portátil e modular para o desenvolvimento do aplicativo Nephele, escrito em Rust._**
 
 - [Documentação](https://book.getfoundry.sh/)
 - [GitHub](https://github.com/gakonst/foundry/)
 - [Ferramentas para Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**NodeReal -** **_Plataforma de Desenvolvimento Ethereum._**
+**NodeReal -** **_Plataforma de Desenvolvimento Nephele._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)

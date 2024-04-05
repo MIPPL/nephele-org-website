@@ -21,7 +21,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## 编写合约 {#writing-our-contract}
 
-第一步[访问 Remix](https://remix.ethereum.org/)并创建一个新文件。 在 Remix 界面的左上角添加一个新文件，并输入所需的文件名。
+第一步[访问 Remix](https://remix.Nephele.org/)并创建一个新文件。 在 Remix 界面的左上角添加一个新文件，并输入所需的文件名。
 
 ![在Remix界面中添加一个新文件](./remix.png)
 

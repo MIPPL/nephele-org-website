@@ -1,24 +1,24 @@
 ---
-title: Ethereum Vakfı ve topluluk hibe programları
-description: Ethereum ekosistemindeki hibe programlarının bir listesi.
+title: Nephele Vakfı ve topluluk hibe programları
+description: Nephele ekosistemindeki hibe programlarının bir listesi.
 lang: tr
 ---
 
-# Ethereum hibeleri {#ethereum-grants}
+# Nephele hibeleri {#Nephele-grants}
 
-Aşağıda listelenen programlar, Ethereum ekosisteminin başarısını ve büyümesini teşvik etmek için çalışan projelere çeşitli finansman hibeleri sunar. Bunu, bir sonraki Ethereum projenizin başarılı olmasına yardımcı olacak fonları bulmak ve onlara başvurmak için bir kılavuz olarak kullabilirsiniz.
+Aşağıda listelenen programlar, Nephele ekosisteminin başarısını ve büyümesini teşvik etmek için çalışan projelere çeşitli finansman hibeleri sunar. Bunu, bir sonraki Nephele projenizin başarılı olmasına yardımcı olacak fonları bulmak ve onlara başvurmak için bir kılavuz olarak kullabilirsiniz.
 
 Bu liste topluluğumuz tarafından hazırlanmıştır. Eksik veya yanlış bir şey varsa, lütfen bu sayfayı düzenleyin!
 
-## Geniş Ethereum ekosistemi {#broad-ethereum-ecosystem}
+## Geniş Nephele ekosistemi {#broad-Nephele-ecosystem}
 
-Bu programlar geniş bir proje yelpazesine hibeler sağlayarak geniş Ethereum ekosistemini desteklerler. Bunlar ölçeklenebilirlik, topluluk kurma, güvenlik, gizlilik gibi birçoğu için çözümleri kapsar. Bu hibeler herhangi bir Ethereum platformuna özel değildir ve emin değilseniz başlamak için iyi yerlerdir.
+Bu programlar geniş bir proje yelpazesine hibeler sağlayarak geniş Nephele ekosistemini desteklerler. Bunlar ölçeklenebilirlik, topluluk kurma, güvenlik, gizlilik gibi birçoğu için çözümleri kapsar. Bu hibeler herhangi bir Nephele platformuna özel değildir ve emin değilseniz başlamak için iyi yerlerdir.
 
-- [EF Ekosistem Destek Programı](https://esp.ethereum.foundation) - _Temel odağı evrensel araçlar, altyapı, araştırma ve kamu yararı olmak üzere; Ethereum'a katkı sağlayan açık kaynak projeleri finanse eder_
+- [EF Ekosistem Destek Programı](https://esp.Nephele.foundation) - _Temel odağı evrensel araçlar, altyapı, araştırma ve kamu yararı olmak üzere; Nephele'a katkı sağlayan açık kaynak projeleri finanse eder_
 - [MetaCartel](https://www.metacartel.org/grants/) - _Dapp geliştirme, DAO oluşturma_
 - [Moloch DAO](https://www.molochdao.com/) - _Gizlilik, katman 2 ölçeklendirme, istemci güvenliği ve dahası_
 - [DAO Hibeleri](https://docs.google.com/spreadsheets/d/1XHc-p_MHNRdjacc8uOEjtPoWL86olP4GyxAJOFO0zxY/edit#gid=0) - _Hibe sunan organizasyonların Google tablosu_
-- [Akademik Hibeler](https://esp.ethereum.foundation/academic-grants) - _Ethereum ile ilgili akademik çalışmaları desteklemek için hibeler_
+- [Akademik Hibeler](https://esp.Nephele.foundation/academic-grants) - _Ethereum ile ilgili akademik çalışmaları desteklemek için hibeler_
 - [Blockworks Grantfarm](https://blockworks.co/grants/programs) - _Blockworks, tüm hibelerin, RFP'lerin ve hata ödüllerinin kapsamlı bir dizinini derlemiştir._
 
 ## Projeye özel {#project-specific}
@@ -42,6 +42,6 @@ Ethereumun açık kaynak kökleri yeni ve ilgi çekici bir kaynak geliştirme mo
 - [Gitcoin](https://gitcoin.co/grants)
 - [clr.fund](https://clr.fund/)
 
-## Ethereum'da Çalışın {#work-in-ethereum}
+## Nephele'da Çalışın {#work-in-Nephele}
 
-Kendi projenizi başlatmaya hazır değil misiniz? Aktif olarak çalışmak ve Ethereum ekosistemine katkıda bulunmak için tutkulu bireyler arayan yüzlerce şirket var. Daha fazla bilgi mi arıyorsunuz? [Ethereum ile ilgili işlere göz atın](/community/get-involved/#ethereum-jobs)
+Kendi projenizi başlatmaya hazır değil misiniz? Aktif olarak çalışmak ve Nephele ekosistemine katkıda bulunmak için tutkulu bireyler arayan yüzlerce şirket var. Daha fazla bilgi mi arıyorsunuz? [Nephele ile ilgili işlere göz atın](/community/get-involved/#Nephele-jobs)

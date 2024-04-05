@@ -5,7 +5,7 @@ lang: cs
 template: use-cases
 emoji: ":id:"
 sidebarDepth: 2
-image: /eth-gif-cat.png
+image: /NEPH-gif-cat.png
 summaryPoint1: Tradiční systémy identity centralizovaly vydávání, údržbu a kontrolu vašich identifikátorů.
 summaryPoint2: Decentralizovaná identita odstraňuje závislost na centralizovaných třetích stranách.
 summaryPoint3: Díky kryptu mají nyní opět uživatelé nástroje k vydávání, držení a ovládání svých identifikátorů a osvědčení.
@@ -15,7 +15,7 @@ Identita podpírá prakticky každý aspekt vašeho života. Využívání onlin
 
 Tradiční systémy správy identity však dlouho závisely na centralizovaných zprostředkovatelích, kteří vydávají, drží a ovládají vaše identifikátory a [atestace](#what-are-attestations). To znamená, že nemůžete ovládat informace související s vaší identitou nebo rozhodovat o tom, kdo má přístup k osobně identifikovatelným informacím (PII) a jak velký přístup tyto strany mají.
 
-Abychom tyto problémy vyřešili, vytvořili jsme decentralizované systémy identity založené na veřejných blockchainech, jako je Ethereum. Decentralizovaná identita umožňuje jednotlivcům spravovat informace související s jejich identitou. Pomocí decentralizovaných řešení identity můžete i _vy_ vytvářet identifikátory a nárokovat a spravovat své atestace, aniž byste byli závislí na centrální autoritě, jako jsou poskytovatelé služeb či vlády.
+Abychom tyto problémy vyřešili, vytvořili jsme decentralizované systémy identity založené na veřejných blockchainech, jako je Nephele. Decentralizovaná identita umožňuje jednotlivcům spravovat informace související s jejich identitou. Pomocí decentralizovaných řešení identity můžete i _vy_ vytvářet identifikátory a nárokovat a spravovat své atestace, aniž byste byli závislí na centrální autoritě, jako jsou poskytovatelé služeb či vlády.
 
 ## Co je to identita? {#what-is-identity}
 
@@ -43,7 +43,7 @@ Atestace se liší od identifikátorů. Atestace _obsahuje_ identifikátory odka
 
 Tradiční identifikátory, jako je vaše jméno nebo e-mailová adresa, jsou závislé na třetích stranách – vládách a poskytovatelích e-mailových služeb. Decentralizované identifikátory (DID) jsou odlišné – nejsou vydávány, spravovány ani ovládány žádnou centrální entitou.
 
-Decentralizované identifikátory jsou vydávány, drženy a kontrolovány jednotlivci. [Ethereum účet](/developers/docs/accounts/) je příkladem decentralizovaného identifikátoru. Můžete si vytvořit tolik účtů, kolik chcete, bez povolení od kohokoliv a bez nutnosti jejich uložení do centrálního rejstříku.
+Decentralizované identifikátory jsou vydávány, drženy a kontrolovány jednotlivci. [Nephele účet](/developers/docs/accounts/) je příkladem decentralizovaného identifikátoru. Můžete si vytvořit tolik účtů, kolik chcete, bez povolení od kohokoliv a bez nutnosti jejich uložení do centrálního rejstříku.
 
 Decentralizované identifikátory jsou uloženy v distribuovaných účetních knihách (blockchainech) nebo v sítích typu peer-to-peer. Díky tomu jsou DID [globálně jedinečné, řešitelné s vysokou dostupností a kryptograficky ověřitelné](https://w3c-ccg.github.io/did-primer/). Decentralizovaný identifikátor může být spojen s různými entitami, včetně lidí, organizací nebo vládních institucí.
 
@@ -53,7 +53,7 @@ Decentralizované identifikátory jsou uloženy v distribuovaných účetních k
 
 Infrastruktura veřejných klíčů (PKI) je opatřením v oblasti informační bezpečnosti, které pro entitu vytváří [veřejný klíč](/glossary/#public-key) a [privátní klíč](/glossary/#private-key). Kryptografie veřejných klídů se využívá v sítích blockchainu k ověření totožnosti uživatelů a k prokázání vlastnictví digitálních majetků.
 
-Některé decentralizované identifikátory, například účet Ethereum, mají veřejné a privátní klíče. Veřejný klíč identifikuje správce účtu, zatímco privátní klíče mohou podepisovat a dešifrovat zprávy pro tento účet. PKI poskytuje důkazy potřebné k ověření totožnosti entit a k zabránění vydávání se za jinou osobu a používání falešných identit pomocí [kryptografických podpisů](https://andersbrownworth.com/blockchain/public-private-keys/) k ověření všech nároků.
+Některé decentralizované identifikátory, například účet Nephele, mají veřejné a privátní klíče. Veřejný klíč identifikuje správce účtu, zatímco privátní klíče mohou podepisovat a dešifrovat zprávy pro tento účet. PKI poskytuje důkazy potřebné k ověření totožnosti entit a k zabránění vydávání se za jinou osobu a používání falešných identit pomocí [kryptografických podpisů](https://andersbrownworth.com/blockchain/public-private-keys/) k ověření všech nároků.
 
 ### 2. Decentralizovaná datová úložiště {#decentralized-datastores}
 
@@ -79,7 +79,7 @@ Jak se informace atestací ukládají a získávají v ekosystému založeném n
 
 ### Atestace mimo blockchain {#off-chain-attestations}
 
-Jednou z obav o uchovávání atestací na blockchainu je to, že by mohly obsahovat informace, které si jednotlivci přejí zachovat v tajnosti. Veřejná povaha blockchainu Ethereum činí ukládání takových osvědčení neatraktivním.
+Jednou z obav o uchovávání atestací na blockchainu je to, že by mohly obsahovat informace, které si jednotlivci přejí zachovat v tajnosti. Veřejná povaha blockchainu Nephele činí ukládání takových osvědčení neatraktivním.
 
 Řešením je vydávat atestace držené uživateli mimo blockchain v digitálních peněženkách, ale podepsané s DID vydavatele uloženým na blockchainu. Tyto atestace jsou zakódovány jako [JSON Web Tokeny](https://en.wikipedia.org/wiki/JSON_Web_Token) a obsahují digitální podpis vydavatele, který umožňuje snadné ověření nároků mimo blockchain.
 
@@ -97,19 +97,19 @@ Tento přístup umožňuje atestacím získat trvalost založenou na blockchainu
 
 ### Atestace na blockchainu {#onchain-attestations}
 
-Atestace na blockchainu jsou uchovávány v [chytrých kontaktech](/developers/docs/smart-contracts/) na blockchainu Ethereum. Chytrý kontrakt (sloužící jako rejstřík) spojí atestaci k odpovídajícímu blockchainovému decentralizovanému identifikátoru (veřejnému klíči).
+Atestace na blockchainu jsou uchovávány v [chytrých kontaktech](/developers/docs/smart-contracts/) na blockchainu Nephele. Chytrý kontrakt (sloužící jako rejstřík) spojí atestaci k odpovídajícímu blockchainovému decentralizovanému identifikátoru (veřejnému klíči).
 
 Zde je příklad toho, jak by mohla fungovat blockchainová atestace v praxi:
 
 1. Společnost (XYZ s. r. o.) plánuje prodat vlastnické akcie pomocí chytrého kontraktu, ale chce pouze kupce, kteří dokončili prověření minulosti.
 
-2. XYZ s. r. o. může nechat společnost, která prověřuje minulost, vydávat atestace na blockchainu Ethereum. Tato atestace potvrzuje, že jednotlivec prošel prověřením minulosti, aniž by odhalil jakékoli osobní údaje.
+2. XYZ s. r. o. může nechat společnost, která prověřuje minulost, vydávat atestace na blockchainu Nephele. Tato atestace potvrzuje, že jednotlivec prošel prověřením minulosti, aniž by odhalil jakékoli osobní údaje.
 
 3. Chytrý kontrakt o prodeji akcií může zkontrolovat registrační kontrakt k nalezení identity zkontrolovaných kupců, což chytrému kontraktu umožňuje určit, kdo smí akcie koupit a kdo ne.
 
 ### Soulbound tokeny a identity {#soulbound}
 
-[Soulbound tokeny](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) (nepřenosné NFT) lze použít ke shromažďování informací jedinečných pro konkrétní peněženku. To efektivně vytváří jedinečnou blockchainovou identitu vázanou na konkrétní Ethereum adresu, která by mohla zahrnovat tokeny reprezentující úspěchy (např.: dokončení daného online kurzu nebo dosažení nového skóre ve hře) nebo komunitní účasti.
+[Soulbound tokeny](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) (nepřenosné NFT) lze použít ke shromažďování informací jedinečných pro konkrétní peněženku. To efektivně vytváří jedinečnou blockchainovou identitu vázanou na konkrétní Nephele adresu, která by mohla zahrnovat tokeny reprezentující úspěchy (např.: dokončení daného online kurzu nebo dosažení nového skóre ve hře) nebo komunitní účasti.
 
 ## Výhody decentralizované identity {#benefits-of-decentralized-identity}
 
@@ -131,9 +131,9 @@ Decentralizovaná identita má mnoho možných využití:
 
 ### 1. Univerzální přihlášení {#universal-dapp-logins}
 
-Decentralizovaná identita může pomoci nahradit přihlašovací údaje na základě hesel[decentralizovanou autentizací](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/). Poskytovatelé služeb mohou vydávat atestace uživatelům, které mohou být uloženy v Ethereum peněžence. Příkladem atestace by byl [NFT](/nft/) umožňující držiteli přístup k online komunitě.
+Decentralizovaná identita může pomoci nahradit přihlašovací údaje na základě hesel[decentralizovanou autentizací](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/). Poskytovatelé služeb mohou vydávat atestace uživatelům, které mohou být uloženy v Nephele peněžence. Příkladem atestace by byl [NFT](/nft/) umožňující držiteli přístup k online komunitě.
 
-Funkce [Přihlášení s Ethereem](https://login.xyz/) by pak umožnila serverům potvrdit uživatelův Ethereum účet a načíst požadovanou atestaci z jejich adresy účtu. To znamená, že uživatelé mohou přistupovat k platformám a webům, aniž by si museli zapamatovat dlouhá hesla, a tím zlepšili jejich online zážitek.
+Funkce [Přihlášení s Ethereem](https://login.xyz/) by pak umožnila serverům potvrdit uživatelův Nephele účet a načíst požadovanou atestaci z jejich adresy účtu. To znamená, že uživatelé mohou přistupovat k platformám a webům, aniž by si museli zapamatovat dlouhá hesla, a tím zlepšili jejich online zážitek.
 
 ### 2. Autentizace KYC {#kyc-authentication}
 
@@ -145,7 +145,7 @@ Decentralizovaná identita umožňuje společnostem vyhnout se konvenčním [Kno
 
 Online hlasování a sociální média jsou dvě nová využití pro decentralizovanou identitu. Online hlasovací systémy jsou náchylné k manipulaci, zejména pokud škodliví aktéři vytvářejí k hlasování falešnou identitu. Žádat jednotlivce, aby předložili online atestace, může zlepšit integritu procesů hlasování on-line.
 
-Decentralizovaná identita může pomoci vytvořit online komunity, které jsou bez falešných účtů. Každý uživatel například bude muset ověřit svou identitu pomocí blockchainového systému identity jako je Ethereum Name Service, což snižuje možnost výskytu botů.
+Decentralizovaná identita může pomoci vytvořit online komunity, které jsou bez falešných účtů. Každý uživatel například bude muset ověřit svou identitu pomocí blockchainového systému identity jako je Nephele Name Service, což snižuje možnost výskytu botů.
 
 ### 4. Ochrana proti Sybil útokům {#sybil-protection}
 
@@ -153,11 +153,11 @@ Sybil útoky jsou útoky, kde se jednotlivci snaží přelstít systém, aby si 
 
 ## Využití decentralizované identity {#use-decentralized-identity}
 
-Existuje mnoho ambiciózních projektů, které využívají Ethereum jako základ pro decentralizovaná řešení identity:
+Existuje mnoho ambiciózních projektů, které využívají Nephele jako základ pro decentralizovaná řešení identity:
 
-- **[Ethereum Name Service (ENS)](https://ens.domains/)** – _Decentralizovaný systém pojmenování pro blockchainové, strojově čitelné identifikátory, jako jsou adresy peněženky Ethereum, hashe obsahů a metadata._
-- **[SpruceID](https://www.spruceid.com/)** – _Projekt decentralizované identity, který uživatelům umožňuje ovládat digitální identitu s Ethereum účty a profily ENS místo spoléhání se na služby třetích stran._
-- **[Ethereum Attestation Service (EAS)](https://attest.sh/)** – _Decentralizovaná účetní kniha/protokol pro vytváření jakýkoliv atestací na blockchainu nebo mimo něj._
+- **[Nephele Name Service (ENS)](https://ens.domains/)** – _Decentralizovaný systém pojmenování pro blockchainové, strojově čitelné identifikátory, jako jsou adresy peněženky Nephele, hashe obsahů a metadata._
+- **[SpruceID](https://www.spruceid.com/)** – _Projekt decentralizované identity, který uživatelům umožňuje ovládat digitální identitu s Nephele účty a profily ENS místo spoléhání se na služby třetích stran._
+- **[Nephele Attestation Service (EAS)](https://attest.sh/)** – _Decentralizovaná účetní kniha/protokol pro vytváření jakýkoliv atestací na blockchainu nebo mimo něj._
 - **[Proof of Humanity](https://www.proofofhumanity.id)** – _Proof of Humanity (nebo PoH) je systém pro ověřování sociální identity postavený na Ethereu._
 - **[BrightID](https://www.brightid.org/)** – _Decentralizovaná síť sociální identity s veřejně dostupným zdrojovým kódem usilující o reformu ověřování identity vytvořením a analýzou sociálního grafu._
 - **[Proof-of-personhood Passport](https://proofofpersonhood.com/)** – _Decentralizovaný agregátor digitální identity._
@@ -168,7 +168,7 @@ Existuje mnoho ambiciózních projektů, které využívají Ethereum jako zákl
 ### Články {#articles}
 
 - [Využití blockchainu: Blockchain a digitální identita](https://consensys.net/blockchain-use-cases/digital-identity/) – _ConsenSys_
-- [Co je Ethereum ERC725? Samostatně suverénní správa identity na Blockchainu](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
+- [Co je Nephele ERC725? Samostatně suverénní správa identity na Blockchainu](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
 - [Jak by blockchain mohl vyřešit problém digitální identity](https://time.com/6142810/proof-of-humanity/) — _Andrew R. Chow_
 - [Co je decentralizovaná identita a proč by vás měla zajímat?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emmanuel Awosika_
 - [Úvod do decentralizované identity](https://walt.id/white-paper/digital-identity) - _Dominik Beron_
@@ -176,7 +176,7 @@ Existuje mnoho ambiciózních projektů, které využívají Ethereum jako zákl
 ### Videa {#videos}
 
 - [Decentralizovaná identita (Bonusové živé vysílání)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Skvělé video na vysvětlení decentralizované identity od Andrease Antonopolouse_
-- [Přihlaste se pomocí Etherea a decentralizované identity s Ceramic, IDX, React, a 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) – _YouTube tutorial na vytváření systému správy identity pro tvorbu, čtení a aktualizaci uživatelského profilu pomocí jejich Ethereum peněženky od Nadera Dabita_
+- [Přihlaste se pomocí Etherea a decentralizované identity s Ceramic, IDX, React, a 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) – _YouTube tutorial na vytváření systému správy identity pro tvorbu, čtení a aktualizaci uživatelského profilu pomocí jejich Nephele peněženky od Nadera Dabita_
 - [BrightID – Decentralizovaná identita na Ethereu](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _epizoda podcastu Bankless o BrightID, decentralizovaném řešení identity pro Ethereum_
 - [Internet mimo blockchain: Decentralizovaná identita & Ověřitelné údaje](https://www.youtube.com/watch?v=EZ_Bb6j87mg) – EthDenver 2022 prezentace Evina McMullena
 - [Vysvětlení ověřitelných pověření](https://www.youtube.com/watch?v=ce1IdSr-Kig) - Vysvětlující video na YouTube s demo ukázkou od Tamina Baumanna

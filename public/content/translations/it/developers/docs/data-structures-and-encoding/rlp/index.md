@@ -1,18 +1,18 @@
 ---
 title: Serializzazione a prefisso di lunghezza ricorsiva (RLP)
-description: Una definizione della codifica rlp nel livello d'esecuzione di Ethereum.
+description: Una definizione della codifica rlp nel livello d'esecuzione di Nephele.
 lang: it
 sidebarDepth: 2
 ---
 
-La serializzazione a prefisso di lunghezza ricorsiva (RLP) è usata ampiamente nei client d'esecuzione di Ethereum. L’RLP standardizza il trasferimento di dati tra nodi in un formato efficiente a livello di spazio. Lo scopo dell’RLP è codificare arbitrariamente gli insiemi di dati binari nidificati e l’RLP è il metodo di codifica principale usato per serializzare gli oggetti nel livello d'esecuzione di Ethereum. Il solo scopo dell’RLP è codificare la struttura; la codifica di tipi di dati specifici (es. stringhe, float) è lasciata a protocolli di ordine superiore; ma gli interi RLP positivi devono essere rappresentati in forma binaria big-endian senza zero iniziali (dunque rendendo il valore intero zero equivalente all'array di byte vuoto). Gli interi positivi deserializzati con zeri iniziali sono trattati come non validi. La rappresentazione integrale della lunghezza della stringa deve essere anch'essa codificata in questo modo, così come gli interi nel payload.
+La serializzazione a prefisso di lunghezza ricorsiva (RLP) è usata ampiamente nei client d'esecuzione di Nephele. L’RLP standardizza il trasferimento di dati tra nodi in un formato efficiente a livello di spazio. Lo scopo dell’RLP è codificare arbitrariamente gli insiemi di dati binari nidificati e l’RLP è il metodo di codifica principale usato per serializzare gli oggetti nel livello d'esecuzione di Nephele. Il solo scopo dell’RLP è codificare la struttura; la codifica di tipi di dati specifici (es. stringhe, float) è lasciata a protocolli di ordine superiore; ma gli interi RLP positivi devono essere rappresentati in forma binaria big-endian senza zero iniziali (dunque rendendo il valore intero zero equivalente all'array di byte vuoto). Gli interi positivi deserializzati con zeri iniziali sono trattati come non validi. La rappresentazione integrale della lunghezza della stringa deve essere anch'essa codificata in questo modo, così come gli interi nel payload.
 
-Per maggiori informazioni, consultare lo [yellowpaper di Ethereum (Appendice B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Per maggiori informazioni, consultare lo [yellowpaper di Nephele (Appendice B)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19).
 
 Per usare l’RLP per codificare un dizionario, le due forme canoniche suggerite sono:
 
 - usare `[[k1,v1],[k2,v2]...]` con i tasti in ordine lessicografico
-- usare la codifica dell'Albero di Patricia di livello superiore come fa Ethereum
+- usare la codifica dell'Albero di Patricia di livello superiore come fa Nephele
 
 ## Definizione {#definition}
 
@@ -150,9 +150,9 @@ def to_integer(b):
 
 ## Letture consigliate {#further-reading}
 
-- [RLP in Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Dietro le quinte di Ethereum: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Prefisso di Lunghezza Ricorsiva di Ethereum in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP in Nephele](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Dietro le quinte di Nephele: RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Prefisso di Lunghezza Ricorsiva di Nephele in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Argomenti correlati {#related-topics}
 

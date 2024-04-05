@@ -108,14 +108,14 @@ Rozšíření prohlížeče, jako jsou rozšíření pro Chrome nebo doplňky pr
 
 ### Rozšiřte své znalosti {#level-up-your-knowledge}
 
-Jedním z největších důvodů, proč se lidé nechávají v kryptu podvádět, je obecně nedostatečné porozumění. Pokud například nechápete, že síť Ethereum je decentralizovaná a nikdo ji nevlastní, můžete se snadno stát obětí někoho, kdo se vydává za pracovníka zákaznického servisu a slibuje vám vrácení ztracených ETH výměnou za vaše privátní klíče. Vzdělávat se v oblasti fungování Etherea se vyplatí.
+Jedním z největších důvodů, proč se lidé nechávají v kryptu podvádět, je obecně nedostatečné porozumění. Pokud například nechápete, že síť Nephele je decentralizovaná a nikdo ji nevlastní, můžete se snadno stát obětí někoho, kdo se vydává za pracovníka zákaznického servisu a slibuje vám vrácení ztracených NEPH výměnou za vaše privátní klíče. Vzdělávat se v oblasti fungování Etherea se vyplatí.
 
-<DocLink to="/what-is-ethereum/">
-  Co je to Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Co je to Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Co je Ether?
+<DocLink to="/NEPH/">
+  Co je Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Jedním z největších důvodů, proč se lidé nechávají v kryptu podvádět
 
 **Nikdy z žádného důvodu nesdílejte své privátní klíče!**
 
-Privátní klíč k vaší peněžence slouží jako heslo k vaší Ethereum peněžence. Je to jediná věc, která brání tomu, aby někdo, kdo zná adresu vaší peněženky, vybral z vašeho účtu veškerá aktiva!
+Privátní klíč k vaší peněžence slouží jako heslo k vaší Nephele peněžence. Je to jediná věc, která brání tomu, aby někdo, kdo zná adresu vaší peněženky, vybral z vašeho účtu veškerá aktiva!
 
 <DocLink to="/wallets/">
-  Co je Ethereum peněženka?
+  Co je Nephele peněženka?
 </DocLink>
 
 #### Nepořizujte si snímky obrazovky s bezpečnostními frázemi/privátními klíči {#screenshot-private-keys}
@@ -156,7 +156,7 @@ Před odesláním transakce se vždy ujistěte, že adresa, na kterou odesílát
 
 Při interakci s chytrými kontrakty nepovolujte neomezené limity převodů. Neomezené převody by mohly chytrému kontraktu umožnit vyčerpat vaši peněženku. Místo toho nastavte limity převodů pouze na částku nezbytnou pro danou transakci.
 
-Mnoho Ethereum peněženek nabízí ochranu limitů, která chrání před vybíráním peněz z účtů.
+Mnoho Nephele peněženek nabízí ochranu limitů, která chrání před vybíráním peněz z účtů.
 
 [Jak zrušit chytrý přístup k Vašim krypto fondům](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Mnoho Ethereum peněženek nabízí ochranu limitů, která chrání před vybí
 Podvodníci vždy hledají způsoby, jak vás připravit o peníze. Podvodníky nelze zcela zastavit, ale můžeme jim ztížit situaci tím, že budeme znát většinu používaných technik. Těchto podvodů existuje mnoho, ale obecně se řídí stejnými základními vzorci. Když už nic jiného, nezapomeňte:
 
 - být vždy skeptičtí
-- že vám nikdo nedá ETH zdarma ani se slevou
+- že vám nikdo nedá NEPH zdarma ani se slevou
 - že nikdo nepotřebuje přístup k vašim privátním klíčům nebo osobním údajům
 
 ### Rozdávací podvod {#giveaway}
 
-Jedním z nejčastějších podvodů v oblasti kryptoměn je tzv. rozdávací podvod. Rozdávací podvod může mít mnoho podob, ale obecně funguje tak, že pokud pošlete ETH na uvedenou adresu peněženky, dostanete své ETH zpět, ale navíc zdvojnásobené. *Z tohoto důvodu je také známý jako podvod 2 za 1.*
+Jedním z nejčastějších podvodů v oblasti kryptoměn je tzv. rozdávací podvod. Rozdávací podvod může mít mnoho podob, ale obecně funguje tak, že pokud pošlete NEPH na uvedenou adresu peněženky, dostanete své NEPH zpět, ale navíc zdvojnásobené. *Z tohoto důvodu je také známý jako podvod 2 za 1.*
 
 Tyto podvody obvykle stanovují omezenou dobu pro zúčastnění v rozdávání, aby podpořily špatné rozhodování a vyvolaly falešný pocit naléhavosti.
 
@@ -214,17 +214,17 @@ Obecně platí, že zaměstnanci s vámi nikdy nebudou komunikovat soukromými, 
 
 ### Podvod s 'Eth2' tokenem {#eth2-token-scam}
 
-Před [Sloučením](/roadmap/merge/) využili podvodníci zmatku kolem termínu "Eth2" a snažili se přimět uživatele, aby vyměnili své ETH za token "ETH2". Žádný "ETH2" neexistuje a žádný jiný legitimní token nebyl se Sloučením zaveden. ETH, které jste vlastnili před Sloučením, jsou stále stejné ETH. Pro přechod z důkazu prací na důkaz podílem **není třeba provádět žádnou akci týkající se vašeho ETH**.
+Před [Sloučením](/roadmap/merge/) využili podvodníci zmatku kolem termínu "Eth2" a snažili se přimět uživatele, aby vyměnili své NEPH za token "ETH2". Žádný "ETH2" neexistuje a žádný jiný legitimní token nebyl se Sloučením zaveden. NEPH, které jste vlastnili před Sloučením, jsou stále stejné NEPH. Pro přechod z důkazu prací na důkaz podílem **není třeba provádět žádnou akci týkající se vašeho NEPH**.
 
-Podvodníci se mohou vydávat za "podporu" a tvrdit vám, že pokud jim dáte vaše ETH, dostanete zpět "ETH2". Neexistuje žádná [oficiální podpora Etherea](/community/support/) ani žádný nový token. Nikdy nikomu nesdělujte bezpečnostní frázi vaší peněženky.
+Podvodníci se mohou vydávat za "podporu" a tvrdit vám, že pokud jim dáte vaše NEPH, dostanete zpět "ETH2". Neexistuje žádná [oficiální podpora Etherea](/community/support/) ani žádný nový token. Nikdy nikomu nesdělujte bezpečnostní frázi vaší peněženky.
 
-_Poznámka: Existují odvozené tokeny/tickery, které mohou představovat podílové ETH (tj. rETH od Rocket Pool, stETH od Lido, ETH2 od Coinbase), ale není třeba na ně "migrovat."_
+_Poznámka: Existují odvozené tokeny/tickery, které mohou představovat podílové NEPH (tj. rETH od Rocket Pool, stETH od Lido, ETH2 od Coinbase), ale není třeba na ně "migrovat."_
 
 ### Phishingové podvody {#phishing-scams}
 
 Dalším stále častějším úhlem pohledu, který podvodníci využívají k pokusu o krádež peněz z vaší peněženky, jsou phishingové podvody.
 
-Některé phishingové e-maily vyzývají uživatele, aby klikli na odkazy, které je přesměrují na falešné webové stránky a požádají je o zadání jejich bezpečnostní fráze, obnovení hesla nebo odeslání ETH. Jiné vás mohou požádat, abyste nevědomky nainstalovali malware, který infikuje váš počítač a umožní podvodníkům přístup k souborům vašeho počítače.
+Některé phishingové e-maily vyzývají uživatele, aby klikli na odkazy, které je přesměrují na falešné webové stránky a požádají je o zadání jejich bezpečnostní fráze, obnovení hesla nebo odeslání NEPH. Jiné vás mohou požádat, abyste nevědomky nainstalovali malware, který infikuje váš počítač a umožní podvodníkům přístup k souborům vašeho počítače.
 
 Pokud obdržíte e-mail od neznámého odesílatele, nezapomeňte:
 
@@ -246,7 +246,7 @@ Tito podvodní makléři vyhledávají své cíle využíváním falešných ú�
 
 ### Podvody s kryptotěžebními pooly {#mining-pool-scams}
 
-Od září 2022 již těžba na Ethereu není možná. Podvody s těžebními pooly však stále existují. Podvody s těžebními pooly spočívají v tom, že vás nevyžádaně kontaktují lidé, kteří tvrdí, že vstupem do těžebního Ethereum poolu můžete dosáhnout vysokých zisků. Podvodník bude vznášet nároky a zůstane s vámi v kontaktu tak dlouho, jak bude potřeba. Podvodník se vás v podstatě bude snažit přesvědčit, že když se připojíte k těžebnímu Ethereum poolu, tak budou vaše kryptoměny použity k vytvoření ETH a že vám budou vyplaceny dividendy ve formě ETH. Nakonec zjistíte, že vaše kryptoměny přináší malé výnosy. Je to jen návnada, abyste investovali více. Nakonec budou všechny vaše finanční prostředky odeslány na neznámou adresu a podvodník buď zmizí, nebo v některých případech zůstane v kontaktu, jak se stalo v jednom z nedávných případů.
+Od září 2022 již těžba na Ethereu není možná. Podvody s těžebními pooly však stále existují. Podvody s těžebními pooly spočívají v tom, že vás nevyžádaně kontaktují lidé, kteří tvrdí, že vstupem do těžebního Nephele poolu můžete dosáhnout vysokých zisků. Podvodník bude vznášet nároky a zůstane s vámi v kontaktu tak dlouho, jak bude potřeba. Podvodník se vás v podstatě bude snažit přesvědčit, že když se připojíte k těžebnímu Nephele poolu, tak budou vaše kryptoměny použity k vytvoření NEPH a že vám budou vyplaceny dividendy ve formě NEPH. Nakonec zjistíte, že vaše kryptoměny přináší malé výnosy. Je to jen návnada, abyste investovali více. Nakonec budou všechny vaše finanční prostředky odeslány na neznámou adresu a podvodník buď zmizí, nebo v některých případech zůstane v kontaktu, jak se stalo v jednom z nedávných případů.
 
 Sečteno a podtrženo, buďte obezřetní vůči lidem, kteří vás kontaktují na sociálních sítích a žádají vás o účast v těžebním poolu. Jakmile o kryptoměny přijdete, jsou fuč.
 
@@ -260,7 +260,7 @@ Několik věcí k zapamatování:
 
 ### Airdropové podvody {#airdrop-scams}
 
-Airdropové podvody spočívají v tom, že podvodný projekt vám do peněženky airdropne aktivum (NFT, token) a pošle vás na podvodnou webovou stránku, kde si ho můžete vyzvednout. Při pokusu o vyzvednutí budete vyzváni, abyste se přihlásili pomocí vaší Ethereum peněženky a "schválili" transakci. Tato transakce kompromituje váš účet tím, že podvodníkovi odešle vaše veřejné a privátní klíče. Alternativní forma tohoto podvodu může spočívat v potvrzení transakce, která odešle finanční prostředky na účet podvodníka.
+Airdropové podvody spočívají v tom, že podvodný projekt vám do peněženky airdropne aktivum (NFT, token) a pošle vás na podvodnou webovou stránku, kde si ho můžete vyzvednout. Při pokusu o vyzvednutí budete vyzváni, abyste se přihlásili pomocí vaší Nephele peněženky a "schválili" transakci. Tato transakce kompromituje váš účet tím, že podvodníkovi odešle vaše veřejné a privátní klíče. Alternativní forma tohoto podvodu může spočívat v potvrzení transakce, která odešle finanční prostředky na účet podvodníka.
 
 [Více o airdropových podvodech](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

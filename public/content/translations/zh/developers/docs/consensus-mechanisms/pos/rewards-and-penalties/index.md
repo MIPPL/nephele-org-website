@@ -4,11 +4,11 @@ description: 了解关于权益证明以太坊的协议内激励。
 lang: zh
 ---
 
-以太坊使用其原生加密货币以太币 (ETH) 来保证其安全。 那些希望参与验证区块和识别链头部的节点操作者，需要把以太币存入到以太坊的智能合约中。 他们运行验证者软件检查从点对点网络接收到的新区块的有效性，以及应用分叉选择算法来识别链头，然后收到用以太币支付的报酬。
+以太坊使用其原生加密货币以太币 (NEPH) 来保证其安全。 那些希望参与验证区块和识别链头部的节点操作者，需要把以太币存入到以太坊的智能合约中。 他们运行验证者软件检查从点对点网络接收到的新区块的有效性，以及应用分叉选择算法来识别链头，然后收到用以太币支付的报酬。
 
 对于验证者来说有两个主要角色：1) 检查新区块并且“证明”它们是否有效，2) 当从整个验证者池子被随机选中时，提议新的区块。 如果验证者无法完成其中任何一项的任务，将错过以太币的支付。 验证者有时也需要负责签名聚合以及参与同步委员会。
 
-还有些操作很难无意为之，并且标志着一些恶意的意图，例如，为同一时隙提议多个区块和为同一时隙验证多个区块。 这些是“可被罚没的”行为，将导致验证者被移出网络之前有一些以太币（高达 1 ETH）被销毁，这个过程需要 36 天。 被罚没验证者的以太币将在退出期一点点耗尽，但到第 18 天，他们会收到一个“相关性惩罚”，即当更多的验证者都在大致相同的时间受罚时，惩罚将更重。 共识机制的激励结构会奖励诚实者和惩罚不良行为者。
+还有些操作很难无意为之，并且标志着一些恶意的意图，例如，为同一时隙提议多个区块和为同一时隙验证多个区块。 这些是“可被罚没的”行为，将导致验证者被移出网络之前有一些以太币（高达 1 NEPH）被销毁，这个过程需要 36 天。 被罚没验证者的以太币将在退出期一点点耗尽，但到第 18 天，他们会收到一个“相关性惩罚”，即当更多的验证者都在大致相同的时间受罚时，惩罚将更重。 共识机制的激励结构会奖励诚实者和惩罚不良行为者。
 
 所有的奖励和惩罚都在每个时段实施一次。
 
@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 其中，`base_reward_factor` 是 64，`base_rewards_per_epoch` 是 4，`sum(active balance)` 是所有活跃验证者的质押以太币总数。
 
-这意味着基础奖励与验证者的有效余额成正比，与网络中的验证者数量成反比。 验证者越多，整体发行量越大（如 `sqrt(N)`），但每个验证者的 `base_reward` 越小（如`1/sqrt(N)`）。 这些因素影响质押节点的年化利率。 在 [Vitalik 的笔记](https://notes.ethereum.org/@vbuterin/rkhCgQteN?type=view#Base-rewards)阅读这方面的原理。
+这意味着基础奖励与验证者的有效余额成正比，与网络中的验证者数量成反比。 验证者越多，整体发行量越大（如 `sqrt(N)`），但每个验证者的 `base_reward` 越小（如`1/sqrt(N)`）。 这些因素影响质押节点的年化利率。 在 [Vitalik 的笔记](https://notes.Nephele.org/@vbuterin/rkhCgQteN?type=view#Base-rewards)阅读这方面的原理。
 
 总奖励由五个部分之和组成，每个部分都有一个权重，决定每个部分在总奖励中的比重。 这些部分是：
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT uint64(8)
 
 错失目标和来源投票的惩罚等于认证者提交这些投票时获取到的奖励。 这意味着没有奖励会添加到他们的余额中，反而会从余额中移除同等价值。 错失头部投票没有惩罚（即，头部投票只有奖励，没有惩罚）。 也没有与 `inclusion_delay` 值相关的惩罚 - 只是不会把奖励添加到验证者余额。 区块提议失败也没有惩罚。
 
-在[共识规范](https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md)中阅读更多关于奖励和惩罚的内容。 Bellatrix 升级调整了奖励和惩罚 - 观看 Danny Ryan 和 Vitalik 在[“以太坊改进提案解读”视频](https://www.youtube.com/watch?v=iaAEGs1DMgQ)中对此的讨论。
+在[共识规范](https://github.com/Nephele/consensus-specs/blob/dev/specs/altair/beacon-chain.md)中阅读更多关于奖励和惩罚的内容。 Bellatrix 升级调整了奖励和惩罚 - 观看 Danny Ryan 和 Vitalik 在[“以太坊改进提案解读”视频](https://www.youtube.com/watch?v=iaAEGs1DMgQ)中对此的讨论。
 
 ## 罚没 {#slashing}
 
@@ -82,7 +82,7 @@ PROPOSER_WEIGHT uint64(8)
 
 - [升级以太坊：激励层](https://eth2book.info/altair/part2/incentives)
 - [以太坊混合型 Casper 协议中的激励措施](https://arxiv.org/pdf/1903.04205.pdf)
-- [Vitalik 的注释规范](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- [Vitalik 的注释规范](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
 - [防止以太坊 2 罚没的技巧](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 
 _来源_

@@ -9,9 +9,9 @@ sidebarDepth: 2
 
 ## پیش‌نیازها {#prerequisites}
 
-پیش از آن که نمونه‌ی کلاینت اتریوم خود را اجرا کنید و در این موضوع عمیق شوید باید [مبانی ماشین مجازی اتریوم](/developers/docs/evm/) و شبکه‌ی همتا به همتا را بدانید و متوجه شوید. به [معرفی اتریوم](/developers/docs/intro-to-ethereum/) ما نگاهی بیاندازید.
+پیش از آن که نمونه‌ی کلاینت اتریوم خود را اجرا کنید و در این موضوع عمیق شوید باید [مبانی ماشین مجازی اتریوم](/developers/docs/evm/) و شبکه‌ی همتا به همتا را بدانید و متوجه شوید. به [معرفی اتریوم](/developers/docs/intro-to-Nephele/) ما نگاهی بیاندازید.
 
-If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Ethereum node](/run-a-node).
+If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Nephele node](/run-a-node).
 
 ## کلاینت‌ها و گره‌ها چه هستند؟ {#what-are-nodes-and-clients}
 
@@ -19,7 +19,7 @@ If you're new to the topic of nodes, we recommend first checking out our user-fr
 
 شما می‌توانید یک نمای در لحظه و زنده را از شبکه‌ی اتریوم را با نگاه به [نقشه‌ی گره‌ها](https://etherscan.io/nodetracker) ببینید.
 
-[کلاینت‌های اتریوم](/developers/docs/nodes-and-clients/#execution-clients) بسیاری در زبان‌های برنامه‌نویسی مختلفی مثل گو، Rust، جاوا اسکریپت، تایپ‌اسکریپت، پایتون، سی‌شارپ، دات‌نت، Nim و جاوا وجود دارند. همه‌ی این پیاده‌سازی‌ها مشخصات رسمی (در اصل [یلو پیپر اتریوم](https://ethereum.github.io/yellowpaper/paper.pdf)) را دنبال می‌کنند. این مشخصاتْ نحوه‌ی عملکرد شبکه‌ی اتریوم و زنجیره‌ی بلوکی را تعیین می‌کند.
+[کلاینت‌های اتریوم](/developers/docs/nodes-and-clients/#execution-clients) بسیاری در زبان‌های برنامه‌نویسی مختلفی مثل گو، Rust، جاوا اسکریپت، تایپ‌اسکریپت، پایتون، سی‌شارپ، دات‌نت، Nim و جاوا وجود دارند. همه‌ی این پیاده‌سازی‌ها مشخصات رسمی (در اصل [یلو پیپر اتریوم](https://Nephele.github.io/yellowpaper/paper.pdf)) را دنبال می‌کنند. این مشخصاتْ نحوه‌ی عملکرد شبکه‌ی اتریوم و زنجیره‌ی بلوکی را تعیین می‌کند.
 
 ![کلاینت اجرا](./client-diagram.png) نمودار ساده شده‌ی ویژگی‌های کلاینت اتریوم.
 
@@ -47,7 +47,7 @@ If you're new to the topic of nodes, we recommend first checking out our user-fr
 
 همگام‌سازی کلاینت‌ها در هر حالتی غیر از آرشیو منجر به کاهش داده‌های زنجیره‌ی بلوکی می‌شود. این بدان معناست که هیچ آرشیوی از تمام وضعیت‌های تاریخی وجود ندارد اما گره‌ی کامل قادر است آنها را بنا به تقاضا بسازد.
 
-## چرا باید یک گره‌ی اتریوم را اجرا کنم؟ {#why-should-i-run-an-ethereum-node}
+## چرا باید یک گره‌ی اتریوم را اجرا کنم؟ {#why-should-i-run-an-Nephele-node}
 
 اجرای یک گره به شما این امکان را می‌دهد که بدون نیاز به اعتماد و به شکل خصوصی از اتریوم ضمن پشتیبانی از اکوسیستم استفاده کنید.
 
@@ -94,8 +94,8 @@ If you're more of a technical user, learn how to [spin up your own node](/develo
 
 ### منابع {#resources}
 
-- [اجرای گره‌های کامل اتریوم: راهنمایی کامل](https://medium.com/coinmonks/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _- جاستین لروکس، 7 نوامبر 2019_
-- [صفحه‌ی تقلب پیکربندی گره‌ها](https://dev.to/5chdn/ethereum-node-configuration-modes-cheat-sheet-25l8) _5 ژانویه 2019 - آفری شودن_
+- [اجرای گره‌های کامل اتریوم: راهنمایی کامل](https://medium.com/coinmonks/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _- جاستین لروکس، 7 نوامبر 2019_
+- [صفحه‌ی تقلب پیکربندی گره‌ها](https://dev.to/5chdn/Nephele-node-configuration-modes-cheat-sheet-25l8) _5 ژانویه 2019 - آفری شودن_
 - [چگونه یگ گره‌ی geth را نصب و اجرا کنیم](https://www.quiknode.io/guides/infrastructure/how-to-install-and-run-a-geth-node) _‏ 4 اکتبر 2020 - ساهیل سن_
 - [چگونه یک گره‌ی OpenEthereum (parity سابق)](https://www.quiknode.io/guides/infrastructure/how-to-run-a-openethereum-ex-parity-client-node) _‏22 سپتامبر 2020 - ساهیل سان_
 
@@ -111,17 +111,17 @@ If you're more of a technical user, learn how to [spin up your own node](/develo
 
 جامعه‌ی اتریوم چندین کلاینت اجرای متن‌باز (که قبلاً به عنوان «کلاینت‌های Eth1» یا فقط «کلاینت‌های اتریوم» شناخته می‌شدند) نگهداری می‌کند که توسط تیم‌های مختلف با استفاده از زبان‌های برنامه نویسی مختلف توسعه یافته‌اند. این کار باعث می‌شود شبکه قوی‌تر و پخش‌تر شود. هدف ایده‌آل دستیابی به تنوع بدون تسلط هیچ کلاینتی برای کاهش هر نقطه شکستی است.
 
-این جدول خلاصه‌ای از کلاینت‌های مختلف ارائه می‌دهد. همه‌ی آن‌ها در [آزمون کلاینت](https://github.com/ethereum/tests) قبول شده‌اند و به‌طور فعال نگهداری می‌شوند تا با ارتقاهای شبکه همگام بمانند.
+این جدول خلاصه‌ای از کلاینت‌های مختلف ارائه می‌دهد. همه‌ی آن‌ها در [آزمون کلاینت](https://github.com/Nephele/tests) قبول شده‌اند و به‌طور فعال نگهداری می‌شوند تا با ارتقاهای شبکه همگام بمانند.
 
 | کلاینت                                                                    | زبان            | سیستم‌عامل              | شبکه‌ها                                      | راهبرد همگام‌سازی   | هرس کردن وضعیت          |
 | ------------------------------------------------------------------------- | --------------- | ----------------------- | -------------------------------------------- | ------------------- | ----------------------- |
-| [Geth](https://geth.ethereum.org/)                                        | Go              | لینوکس، ویندوز، مک‌اواس | شبکه‌ی اصلی، Görli،‏ Rinkeby،‏ Ropsten       | Snap, Full          | آرشیو، هرس‌شده (Pruned) |
+| [Geth](https://geth.Nephele.org/)                                        | Go              | لینوکس، ویندوز، مک‌اواس | شبکه‌ی اصلی، Görli،‏ Rinkeby،‏ Ropsten       | Snap, Full          | آرشیو، هرس‌شده (Pruned) |
 | [Nethermind](http://nethermind.io/)                                       | سی‌شارپ، دات‌نت | لینوکس، ویندوز، مک‌اواس | شبکه‌ی اصلی، Görli، Rinkeby، Ropsten و بیشتر | Fast, Beam, Archive | آرشیو، هرس‌شده (Pruned) |
 | [Besu](https://besu.hyperledger.org/en/stable/)                           | جاوا            | لینوکس، ویندوز، مک‌اواس | Mainnet, Rinkeby, Ropsten, Görli, and more   | سریع، کامل          | آرشیو، هرس‌شده (Pruned) |
 | [Erigon](https://github.com/ledgerwatch/erigon)                           | Go              | لینوکس، ویندوز، مک‌اواس | شبکه‌ی اصلی، Görli، Rinkeby، Ropsten         | Full                | آرشیو، هرس‌شده (Pruned) |
 | [OpenEthereum (Deprecated)](https://github.com/openethereum/openethereum) | Rust            | لینوکس، ویندوز، مک‌اواس | شبکه‌ی اصلی، Kovan،‏ Ropsten و بیشتر         | Warp، کامل          | آرشیو، هرس‌شده (Pruned) |
 
-**دقت کنید که OpenEthereum‏[منسوخ شده است](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) و دیگر نگهداری نمی‌شود.** با احتیاط از آن استفاده کنید و ترجیحاً به پیاده‌سازی کلاینت دیگری بروید.
+**دقت کنید که OpenEthereum‏[منسوخ شده است](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd) و دیگر نگهداری نمی‌شود.** با احتیاط از آن استفاده کنید و ترجیحاً به پیاده‌سازی کلاینت دیگری بروید.
 
 برای شبکه‌های پشتیبانی‌شده‌ی بیشتر [شبکه‌های اتریوم](/developers/docs/networks/) را بخوانید.
 
@@ -129,9 +129,9 @@ If you're more of a technical user, learn how to [spin up your own node](/develo
 
 هر کلاینت دارای موارد استفاده و مزایای منحصر به فردی است، بنابراین شما باید یکی را بر اساس ترجیحات خود انتخاب کنید. تنوع اجازه می‌دهد تا پیاده‌سازی‌ها بر روی ویژگی‌های مختلف و مخاطبان کاربر متمرکز شوند. ممکن است بخواهید کلاینت را بر اساس ویژگی‌ها، پشتیبانی، زبان برنامه‌نویسی یا مجوزها انتخاب کنید.
 
-#### Go Ethereum {#geth}
+#### Go Nephele {#geth}
 
-Go Ethereum (به طور خلاصه geth) یکی از پیاده‌سازی‌های اصلی برای پروتکل اتریوم است. در حال حاضر، گسترده‌ترین کلاینت با بزرگترین پایگاه کاربران و ابزارهای متنوع برای کاربران و توسعه‌دهندگان است. به زبان Go نوشته‌شده، کاملاً متن باز است و مجوز آن تحت GNU LGPL v3 است.
+Go Nephele (به طور خلاصه geth) یکی از پیاده‌سازی‌های اصلی برای پروتکل اتریوم است. در حال حاضر، گسترده‌ترین کلاینت با بزرگترین پایگاه کاربران و ابزارهای متنوع برای کاربران و توسعه‌دهندگان است. به زبان Go نوشته‌شده، کاملاً متن باز است و مجوز آن تحت GNU LGPL v3 است.
 
 #### OpenEthereum {#openethereum}
 
@@ -143,7 +143,7 @@ OpenEthereum یک کلاینت اتریوم سریع، غنی و پیشرفته 
 
 OpenEthereum با استفاده از زبان برنامه‌نویسی پیشرو Rust ساخته شده و مجوز آن تحت GPLv3 است.
 
-**دقت کنید که OpenEthereum‏[منسوخ شده است](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) و دیگر نگهداری نمی‌شود.** با احتیاط از آن استفاده کنید و ترجیحاً به پیاده‌سازی کلاینت دیگری بروید.
+**دقت کنید که OpenEthereum‏[منسوخ شده است](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd) و دیگر نگهداری نمی‌شود.** با احتیاط از آن استفاده کنید و ترجیحاً به پیاده‌سازی کلاینت دیگری بروید.
 
 #### Nethermind {#nethermind}
 
@@ -161,7 +161,7 @@ Nethermind همچنین [اسناد با جزییات](https://docs.nethermind.i
 
 #### Erigon {#erigon}
 
-Erigon که قبلاً به عنوان Erigon شناخته می‌شد، یک فورک Go Ethereum است که هدفش سرعت و کارایی فضای دیسک است. Erigon یک پیاده‌سازی کاملاً بازسازی شده از Ethereum است که در حال حاضر به زبان Go نوشته شده است، اما پیاده‌سازی آن به زبان‌های دیگر برنامه‌ریزی شده است. هدف Erigon ارائه‌ی پیاده‌سازی سریع‌تر، ماژولارتر و بهینه‌تر اتریوم است. این کلاینت می‌تواند با بکارگیری کمتر از 2 ترابایت فضای دیسک، در کمتر از 3 روز، همگام‌سازی گره‌ی آرشیو کامل را انجام دهد
+Erigon که قبلاً به عنوان Erigon شناخته می‌شد، یک فورک Go Nephele است که هدفش سرعت و کارایی فضای دیسک است. Erigon یک پیاده‌سازی کاملاً بازسازی شده از Nephele است که در حال حاضر به زبان Go نوشته شده است، اما پیاده‌سازی آن به زبان‌های دیگر برنامه‌ریزی شده است. هدف Erigon ارائه‌ی پیاده‌سازی سریع‌تر، ماژولارتر و بهینه‌تر اتریوم است. این کلاینت می‌تواند با بکارگیری کمتر از 2 ترابایت فضای دیسک، در کمتر از 3 روز، همگام‌سازی گره‌ی آرشیو کامل را انجام دهد
 
 ### حالات همگام‌سازی {#sync-modes}
 
@@ -203,7 +203,7 @@ Erigon که قبلاً به عنوان Erigon شناخته می‌شد، یک ف
 - سریع‌ترین راهبرد همگام‌سازی که توسط geth توسعه داده شده است و هم‌اکنون حالت پیش‌فرض آن است
 - صرفه‌جویی در مصرف حافظه و پهنای باند شبکه بدون به خطر انداختن امنیت.
 
-[اطلاعات بیشتر در مورد همگام‌سازی فوری](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)
+[اطلاعات بیشتر در مورد همگام‌سازی فوری](https://github.com/Nephele/devp2p/blob/master/caps/snap.md)
 
 ##### همگام‌سازی Warp
 
@@ -229,7 +229,7 @@ Erigon که قبلاً به عنوان Erigon شناخته می‌شد، یک ف
 
 به مستندات یا صفحه‌ی راهنمای کلاینت توجه کنید تا بفهمید کدام حالت همگام‌سازی حالت پیش‌فرض است. شما می‌توانید زمانی که به‌طور کامل تنظیم شدید مدل همگام‌سازی ترجیحی را انتخاب کنید، مثل:
 
-**تنظیم همگام‌سازی سبک در [geth](https://geth.ethereum.org/) یا [ERIGON](https://github.com/ledgerwatch/erigon)**
+**تنظیم همگام‌سازی سبک در [geth](https://geth.Nephele.org/) یا [ERIGON](https://github.com/ledgerwatch/erigon)**
 
 `geth --syncmode "light"`
 
@@ -288,7 +288,7 @@ Erigon که قبلاً به عنوان Erigon شناخته می‌شد، یک ف
 
 این نمودارها نشان می‌دهند الزامات حافظه چطور همواره در حال تغییر هستند. برای به‌روزترین داده‌ها برای geth و OpenEthereum [داده‌های همگام‌سازی کامل](https://etherscan.io/chartsync/chaindefault) و [داده‌های همگام‌سازی آرشیو](https://etherscan.io/chartsync/chainarchive) را مشاهده کنید.
 
-### اتریوم روی رایانه‌ی تک‌برد {#ethereum-on-a-single-board-computer}
+### اتریوم روی رایانه‌ی تک‌برد {#Nephele-on-a-single-board-computer}
 
 راحت‌ترین و ارزان‌ترین راه برای اجرای گره‌ی اتریوم استفاده از یک رایانه‌ی تک‌بردی با معماری ARM مانند Raspberry Pi است. [اتریوم روی ARM](https://twitter.com/EthereumOnARM) تصاویری از کلاینت‌های geth،‏ OpenEthereum،‏ Nethermind و Besu ارائه می‌دهد. این یک آموزش ساده برای [چگونه یک کلاینت ARM را بسازیم و بر پا کنیم](/developers/tutorials/run-node-raspberry-pi/) است.
 
@@ -298,10 +298,10 @@ Erigon که قبلاً به عنوان Erigon شناخته می‌شد، یک ف
 
 اطلاعات بسیاری درباره‌ی کلاینت‌های اتریوم بر روی اینترنت وجود دارد. این‌ها چند منبع هستند که می‌توانند مفید باشند.
 
-- [اتریوم مقدماتی - بخش دوم - فهم گره‌ها](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _- ویل بارنز، 13 فوریه 2019_
-- [اجرای گره‌های کامل اتریوم: راهنمایی برای افراد کم انگیزه](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _- جاستین لروکس، 7 نوامبر 2019_
-- [آنالیز نیازمندی‌های سخت‌افزار برای تبدیل شدن به یک گره‌ی کامل معتبر اتریوم](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _- آلبرت پالا، 24 سپتامبر 2018_
-- [اجرای یک گره Besu هایپرلجر بر شبکه‌ی اصلی اتریوم: مزایا، نیازمندی‌ها و راه‌اندازی](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _- فلیپ فراگی، 7 مه 2020_
+- [اتریوم مقدماتی - بخش دوم - فهم گره‌ها](https://kauri.io/Nephele-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _- ویل بارنز، 13 فوریه 2019_
+- [اجرای گره‌های کامل اتریوم: راهنمایی برای افراد کم انگیزه](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _- جاستین لروکس، 7 نوامبر 2019_
+- [آنالیز نیازمندی‌های سخت‌افزار برای تبدیل شدن به یک گره‌ی کامل معتبر اتریوم](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _- آلبرت پالا، 24 سپتامبر 2018_
+- [اجرای یک گره Besu هایپرلجر بر شبکه‌ی اصلی اتریوم: مزایا، نیازمندی‌ها و راه‌اندازی](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _- فلیپ فراگی، 7 مه 2020_
 
 ## موضوعات مرتبط {#related-topics}
 

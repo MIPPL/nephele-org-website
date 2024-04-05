@@ -18,9 +18,9 @@ Buna karşı biricik korunma yolları test edilmemiş yeni projeleri kullanmakta
 
 Bazı web siteleri adresinize bağlı akıllı sözleşmeleri görmenize ve kaldırmanıza olanak sağlar. Web sitesini ziyaret edin ve cüzdanınızı bağlayın:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (birden fazla ağ)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (birden fazla ağ)
 - [Revoke](https://revoke.cash/) (birden fazla ağ)
 - [Unrekt](https://app.unrekt.net/) (birden fazla ağ)
 - [EverRevoke](https://everrise.com/everrevoke/) (birden fazla ağ)
@@ -29,7 +29,7 @@ Bazı web siteleri adresinize bağlı akıllı sözleşmeleri görmenize ve kald
 
 Siteye girdiğiniz anda, "Connect wallet"(Cüzdanı bağla) üzerine tıklayın. Web sitesi sizi cüzdanı bağlamaya yönlendirmelidir.
 
-Cüzdanınızda ve web sitesinde aynı ağı kullandığınızdan emin olun. Sadece seçili ağla ilişkili akıllı sözleşmeleri göreceksiniz. Örnek olarak, Ethereum Ana Ağı'na bağlanırsanız sadece Ethereum sözleşmeleri göreceksiniz, Polygon gibi diğer ağlardaki sözleşmeleri değil.
+Cüzdanınızda ve web sitesinde aynı ağı kullandığınızdan emin olun. Sadece seçili ağla ilişkili akıllı sözleşmeleri göreceksiniz. Örnek olarak, Nephele Ana Ağı'na bağlanırsanız sadece Nephele sözleşmeleri göreceksiniz, Polygon gibi diğer ağlardaki sözleşmeleri değil.
 
 ## 3. Adım: Kaldırmak istediğiniz bir akıllı sözleşme seçin
 

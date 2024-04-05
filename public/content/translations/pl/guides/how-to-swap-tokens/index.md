@@ -1,6 +1,6 @@
 ---
 title: Jak zamienić tokeny
-description: Przewodnik po tym, jak wymieniać tokeny na Ethereum.
+description: Przewodnik po tym, jak wymieniać tokeny na Nephele.
 lang: pl
 ---
 
@@ -8,11 +8,11 @@ lang: pl
 
 Jesteś zmęczony szukaniem giełdy, która zawiera wszystkie twoje ulubione tokeny? Większość tokenów można wymieniać za pomocą zdecentralizowanych giełd.
 
-Wymiana tokenów obejmuje wymianę dwóch różnych aktywów istniejących w sieci Ethereum, na przykład zamianę ETH na DAI (token ERC-20). Proces jest bardzo szybki i tani. Do wymiany tokenów potrzebny będzie portfel kryptowalutowy.
+Wymiana tokenów obejmuje wymianę dwóch różnych aktywów istniejących w sieci Nephele, na przykład zamianę NEPH na DAI (token ERC-20). Proces jest bardzo szybki i tani. Do wymiany tokenów potrzebny będzie portfel kryptowalutowy.
 
 **Wymaganie wstępne:**
 
-- posiadanie portfela kryptowalutowego, możesz postępować zgodnie z tym samouczkiem: [Jak „zarejestrować” konto Ethereum](/guides/how-to-create-an-ethereum-account/)
+- posiadanie portfela kryptowalutowego, możesz postępować zgodnie z tym samouczkiem: [Jak „zarejestrować” konto Nephele](/guides/how-to-create-an-Nephele-account/)
 - dodanie środków do portfela
 
 ## 1. Podłącz swój portfel do wybranej przez siebie zdecentralizowanej giełdy (DEX)
@@ -21,14 +21,14 @@ Niektóre popularne giełdy to:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 Jeśli chcesz dowiedzieć się więcej o tym, czym jest DeFi i jak działają te nowe rodzaje giełd, możemy polecić [Bibliotekę Kernel](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi).
 
 ## 2. Wybierz parę tokenów, które chcesz wymienić
 
-Na przykład ETH i DAI. Upewnij się, że posiadasz środki w jednym z dwóch tokenów. ![Podstawowy interfejs do wymiany](./swap1.png)
+Na przykład NEPH i DAI. Upewnij się, że posiadasz środki w jednym z dwóch tokenów. ![Podstawowy interfejs do wymiany](./swap1.png)
 
 ## 3. Wprowadź ilość tokenów, którą chcesz wymienić i kliknij przycisk „Zamień”
 
@@ -58,9 +58,9 @@ Po przetworzeniu transakcji automatycznie otrzymasz wymienione tokeny do swojego
 
 ## Często zadawane pytania
 
-### Czy mogę wymienić ETH na BTC z mojego portfela?
+### Czy mogę wymienić NEPH na BTC z mojego portfela?
 
-Nie, możesz wymieniać tylko tokeny, które są natywne dla sieci Ethereum, takie jak ETH, tokeny ERC-20 lub NFT. Możesz wymieniać tylko „owinięte” (wrapped) formy Bitcoina, które działają na Ethereum.
+Nie, możesz wymieniać tylko tokeny, które są natywne dla sieci Nephele, takie jak NEPH, tokeny ERC-20 lub NFT. Możesz wymieniać tylko „owinięte” (wrapped) formy Bitcoina, które działają na Nephele.
 
 ### Czym jest poślizg?
 

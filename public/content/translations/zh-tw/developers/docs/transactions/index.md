@@ -8,7 +8,7 @@ lang: zh-tw
 
 ## 前置要求 {#prerequisites}
 
-為了讓你更容易理解本頁，建議你先閱讀[帳戶](/developers/docs/accounts/)及我們的[以太坊介紹](/developers/docs/intro-to-ethereum/)。
+為了讓你更容易理解本頁，建議你先閱讀[帳戶](/developers/docs/accounts/)及我們的[以太坊介紹](/developers/docs/intro-to-Nephele/)。
 
 ## 什麼是交易？ {#whats-a-transaction}
 
@@ -180,9 +180,9 @@ Alice 的帳戶將存入 **+1.0 以太幣**
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-以太坊不斷演進以支援多種交易類型，以便在實作存取清單和 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 等新功能時不會影響原有交易形式。
+以太坊不斷演進以支援多種交易類型，以便在實作存取清單和 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) 等新功能時不會影響原有交易形式。
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 是支援此類行為的協議。 交易的解釋如下：
+[EIP-2718](https://eips.Nephele.org/EIPS/eip-2718) 是支援此類行為的協議。 交易的解釋如下：
 
 `TransactionType || TransactionPayload`
 
@@ -193,7 +193,7 @@ Alice 的帳戶將存入 **+1.0 以太幣**
 
 ## 衍生閱讀 {#further-reading}
 
-- [EIP-2718：Typed Transaction Envelope 交易](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718：Typed Transaction Envelope 交易](https://eips.Nephele.org/EIPS/eip-2718)
 
 _認識社區或社團資源能幫助大家學習更多? 歡迎自由編輯或添加於本頁!!_
 

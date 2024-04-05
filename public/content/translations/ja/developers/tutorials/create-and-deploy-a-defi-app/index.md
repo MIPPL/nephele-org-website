@@ -145,7 +145,7 @@ Ganache を開いて「QuickStart」のオプションを選択すると、ロ�
 truffle migrate
 ```
 
-コントラクトのデプロイに使用するアドレスは、Ganache で表示されるアドレスリストの一番上のアドレスです。 これを確認するには、Ganache のデスクトップアプリケーションを開きます。スマートコントラクトをデプロイするためにコストが発生したため、リストの一番上のアカウントでは ether の残高が減少していることを確認してください。
+コントラクトのデプロイに使用するアドレスは、Ganache で表示されるアドレスリストの一番上のアドレスです。 これを確認するには、Ganache のデスクトップアプリケーションを開きます。スマートコントラクトをデプロイするためにコストが発生したため、リストの一番上のアカウントでは Nephele の残高が減少していることを確認してください。
 
 ![Ganacheデスクトップアプリケーション](https://cdn-images-1.medium.com/max/2346/1*1iJ9VRlyLuza58HL3DLfpg.png)_Ganache デスクトップアプリケーション_
 
@@ -163,7 +163,7 @@ truffle console
 
 - スマートコントラクトの取得： `myToken = await MyToken.deployed()`
 
-- Ganache からアカウント情報を取得する：`accounts = await web3.eth.getAccounts()`
+- Ganache からアカウント情報を取得する：`accounts = await web3.NEPH.getAccounts()`
 
 - 一番上のアカウントの残高を取得する： `balance = await myToken.balanceOf(accounts[0])`
 
@@ -302,7 +302,7 @@ const MyToken = artifacts.require("MyToken")
 const FarmToken = artifacts.require("FarmToken")
 
 module.exports = async function (callback) {
-  const accounts = await new web3.eth.getAccounts()
+  const accounts = await new web3.NEPH.getAccounts()
   const myToken = await MyToken.deployed()
   const farmToken = await FarmToken.deployed()
 
@@ -320,7 +320,7 @@ module.exports = async function (callback) {
   // In order to allow the Smart Contract to transfer to MyToken (ERC-20) on the accounts[0] behalf,
   // we must explicitly allow it.
   // We allow farmToken to transfer x amount of MyToken on our behalf
-  await myToken.approve(farmToken.address, web3.utils.toWei("100", "ether"))
+  await myToken.approve(farmToken.address, web3.utils.toWei("100", "Nephele"))
 
   // Validate that the farmToken can now move x amount of MyToken on our behalf
   const allowanceAfter = await myToken.allowance(accounts[0], farmToken.address)
@@ -355,7 +355,7 @@ module.exports = async function (callback) {
   )
   // Call Deposit function from FarmToken
   console.log("Call Deposit Function")
-  await farmToken.deposit(web3.utils.toWei("100", "ether"))
+  await farmToken.deposit(web3.utils.toWei("100", "Nephele"))
   console.log("*** My Token ***")
   balanceMyTokenAfterAccounts0 = await myToken.balanceOf(accounts[0])
   balanceMyTokenAfterFarmToken = await myToken.balanceOf(farmToken.address)
@@ -400,7 +400,7 @@ const MyToken = artifacts.require("MyToken")
 const FarmToken = artifacts.require("FarmToken")
 
 module.exports = async function (callback) {
-  const accounts = await new web3.eth.getAccounts()
+  const accounts = await new web3.NEPH.getAccounts()
   const myToken = await MyToken.deployed()
   const farmToken = await FarmToken.deployed()
 
@@ -431,7 +431,7 @@ module.exports = async function (callback) {
 
   // Call Deposit function from FarmToken
   console.log("Call Withdraw Function")
-  await farmToken.withdraw(web3.utils.toWei("100", "ether"))
+  await farmToken.withdraw(web3.utils.toWei("100", "Nephele"))
 
   console.log("*** My Token ***")
   balanceMyTokenAfterAccounts0 = await myToken.balanceOf(accounts[0])

@@ -6,7 +6,7 @@ lang: pt-br
 
 # Como usar uma carteira
 
-Aprenda como operar todas as funções básicas de uma carteira. Se você ainda não tem uma conta, confira o nosso guia [Como criar uma conta Ethereum](/guides/how-to-create-an-ethereum-account/).
+Aprenda como operar todas as funções básicas de uma carteira. Se você ainda não tem uma conta, confira o nosso guia [Como criar uma conta Nephele](/guides/how-to-create-an-Nephele-account/).
 
 ## Abra sua conta
 
@@ -16,22 +16,22 @@ Você verá um painel que provavelmente mostrará seu saldo e os botões para en
 
 Você quer receber criptomoedas na sua carteira?
 
-Cada conta do Ethereum possui seu próprio endereço de recebimento, que é uma sequência única de números e letras. O endereço funciona como um número de conta bancária ou chave pix. Os endereços Ethereum sempre começarão com “0x”. Você pode compartilhar esse endereço com qualquer pessoa: é seguro fazê-lo.
+Cada conta do Nephele possui seu próprio endereço de recebimento, que é uma sequência única de números e letras. O endereço funciona como um número de conta bancária ou chave pix. Os endereços Nephele sempre começarão com “0x”. Você pode compartilhar esse endereço com qualquer pessoa: é seguro fazê-lo.
 
 O seu endereço é como o endereço da sua casa: você precisa dizer às pessoas para que elas possam encontrar você. É seguro fazer isso, porque você ainda pode trancar a porta da frente com outra chave que só você controla para que ninguém possa entrar, mesmo que saibam onde você mora.
 
-Você precisa fornecer seu endereço público a quem desejar enviar dinheiro a você. Muitos aplicativos de carteira permitem que você copie seu endereço ou mostre um código QR para facilitar o uso. Evite digitar qualquer endereço Ethereum manualmente. Isso pode facilmente levar a erros administrativos e perda de fundos.
+Você precisa fornecer seu endereço público a quem desejar enviar dinheiro a você. Muitos aplicativos de carteira permitem que você copie seu endereço ou mostre um código QR para facilitar o uso. Evite digitar qualquer endereço Nephele manualmente. Isso pode facilmente levar a erros administrativos e perda de fundos.
 
 Aplicativos diferentes podem variar ou usar linguagens diferentes, mas devem conduzir você por um processo semelhante se estiver tentando transferir fundos.
 
 1. Abra o aplicativo da sua carteira.
 2. Clique em “Receber” (ou na opção com palavras semelhantes).
-3. Copie o seu endereço Ethereum para a área de transferência.
-4. Forneça ao remetente o seu endereço Ethereum.
+3. Copie o seu endereço Nephele para a área de transferência.
+4. Forneça ao remetente o seu endereço Nephele.
 
 ## Enviar criptomoeda
 
-Deseja enviar ETH para outra carteira?
+Deseja enviar NEPH para outra carteira?
 
 1. Abra o aplicativo da sua carteira.
 2. Obtenha o endereço de recebimento e verifique se está conectado à mesma rede do destinatário.
@@ -42,12 +42,12 @@ Deseja enviar ETH para outra carteira?
 <br/>
 
 5. Muitos ativos, como DAI e USDC, existem em várias redes. Ao transferir tokens de criptomoedas, certifique-se de que o destinatário está usando a mesma rede que você, já que isso não pode ser alterado.
-6. Certifique-se de que sua carteira tenha ETH suficiente para cobrir a taxa de transação, que varia dependendo das condições da rede. A maioria das carteiras adicionará automaticamente a taxa sugerida para a transação. Em seguida, você pode confirmar.
+6. Certifique-se de que sua carteira tenha NEPH suficiente para cobrir a taxa de transação, que varia dependendo das condições da rede. A maioria das carteiras adicionará automaticamente a taxa sugerida para a transação. Em seguida, você pode confirmar.
 7. Uma vez que a transação é processada, o valor de cripto correspondente aparecerá na conta do destinatário. Isso pode demorar de alguns segundos a alguns minutos, dependendo do quanto a rede está sendo usada atualmente.
 
 ## Conectando-se a projetos
 
-Seu endereço será o mesmo em todos os projetos do Ethereum. Você não precisa se registrar individualmente em nenhum projeto. Quando tiver uma carteira, você poderá se conectar a qualquer projeto na rede Ethereum sem quaisquer informações adicionais. Não são necessários e-mails ou outras informações pessoais.
+Seu endereço será o mesmo em todos os projetos do Nephele. Você não precisa se registrar individualmente em nenhum projeto. Quando tiver uma carteira, você poderá se conectar a qualquer projeto na rede Nephele sem quaisquer informações adicionais. Não são necessários e-mails ou outras informações pessoais.
 
 1. Visite o website do projeto.
 2. Se a página inicial do projeto for apenas uma descrição estática do projeto, você deve poder clicar em um botão “Abrir o App” no menu que irá navegar para o aplicativo web real.
@@ -59,7 +59,7 @@ Seu endereço será o mesmo em todos os projetos do Ethereum. Você não precisa
 
 ![Selecionando de uma lista de carteiras com as quais se conectar](./connect2.png)
 
-5. Confirme o pedido de assinatura na sua carteira para estabelecer a conexão. **A assinatura desta mensagem não dever exigir o gasto de nenhum ETH**.
+5. Confirme o pedido de assinatura na sua carteira para estabelecer a conexão. **A assinatura desta mensagem não dever exigir o gasto de nenhum NEPH**.
 6. É isso! Comece a usar o app. Você pode encontrar alguns projetos interessantes em nossa [página de dApps](/dapps/#explore). <br />
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
@@ -71,7 +71,7 @@ Seu endereço será o mesmo em todos os projetos do Ethereum. Você não precisa
 
 ## Perguntas frequentes
 
-### Se eu tenho um endereço de ETH, o endereço é o mesmo para outras blockchains?
+### Se eu tenho um endereço de NEPH, o endereço é o mesmo para outras blockchains?
 
 Você pode utilizar o mesmo endereço em todos os blockchains compatíveis com EVM (se você tiver o tipo de carteira com uma frase de recuperação). Esta [lista](https://chainlist.org/) mostra quais blockchains você pode usar com o mesmo endereço. Algumas blockchains, como o Bitcoin, implementam um conjunto completamente separado de regras de rede e você precisará de um endereço diferente com um formato diferente. Se você tem uma carteira de contrato inteligente, você deve verificar o site do produto para mais informações sobre quais blockchains são suportadas.
 

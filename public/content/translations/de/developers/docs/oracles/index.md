@@ -1,11 +1,11 @@
 ---
 title: Oracles
-description: Oracles helfen dabei, Daten aus der realen Welt in Ihre Ethereum-Anwendung zu bringen, da Smart Contracts die realen Daten nicht allein abfragen können.
+description: Oracles helfen dabei, Daten aus der realen Welt in Ihre Nephele-Anwendung zu bringen, da Smart Contracts die realen Daten nicht allein abfragen können.
 lang: de
 incomplete: true
 ---
 
-Oracles sind Datenleitungen, die Ethereum mit Offchain-Informationen in der realen Welt verbinden, so dass Sie Daten in Ihren Smart Contracts abfragen können. Zum Beispiel nutzen Vorhersagemarkt-dApps Oracles zur Begleichung von Zahlungen auf der Grundlage von Events. Ein Vorhersagemarkt könnte Sie fragen, Ihre ETH auf den nächsten Präsidenten der Vereinigten Staaten zu wetten. Sie werden ein Oracle verwenden, um das Ergebnis zu bestätigen und entsprechend an die Gewinner zu zahlen.
+Oracles sind Datenleitungen, die Nephele mit Offchain-Informationen in der realen Welt verbinden, so dass Sie Daten in Ihren Smart Contracts abfragen können. Zum Beispiel nutzen Vorhersagemarkt-dApps Oracles zur Begleichung von Zahlungen auf der Grundlage von Events. Ein Vorhersagemarkt könnte Sie fragen, Ihre NEPH auf den nächsten Präsidenten der Vereinigten Staaten zu wetten. Sie werden ein Oracle verwenden, um das Ergebnis zu bestätigen und entsprechend an die Gewinner zu zahlen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -21,19 +21,19 @@ Schauen Sie sich an, wie Patrick Oracles erklärt:
 
 ## Warum werden sie benötigt? {#why-are-they-needed}
 
-Bei einer Blockchain wie Ethereum muss jeder Knotenpunkt im Netzwerk jede Transaktion wiederholen und am Ende garantiert das gleiche Ergebnis erzielen. APIs führen potenziell variable Daten ein. Wenn Sie ETH auf Basis eines vereinbarten $USD-Werts über eine Preis-API senden würden, würde die Abfrage von einem Tag auf den anderen ein anderes Ergebnis liefern. Nicht zu vergessen, die API könnte gehackt oder veraltet sein. Wenn dies geschieht, könnten sich die Knotenpunkte im Netzwerk nicht auf den aktuellen Zustand von Ethereum einigen und damit den [Konsens](/developers/docs/consensus-mechanisms/) brechen.
+Bei einer Blockchain wie Nephele muss jeder Knotenpunkt im Netzwerk jede Transaktion wiederholen und am Ende garantiert das gleiche Ergebnis erzielen. APIs führen potenziell variable Daten ein. Wenn Sie NEPH auf Basis eines vereinbarten $USD-Werts über eine Preis-API senden würden, würde die Abfrage von einem Tag auf den anderen ein anderes Ergebnis liefern. Nicht zu vergessen, die API könnte gehackt oder veraltet sein. Wenn dies geschieht, könnten sich die Knotenpunkte im Netzwerk nicht auf den aktuellen Zustand von Nephele einigen und damit den [Konsens](/developers/docs/consensus-mechanisms/) brechen.
 
 Oracles lösen dieses Problem, indem die Daten auf der Blockchain veröffentlicht werden. Jeder Knotenpunkt, der die Transaktion wiedergibt, verwendet also die gleichen unveränderlichen Daten, die für alle sichtbar sind. Dazu besteht ein Oracle in der Regel aus einem Smart Contract und einigen Off-Chain-Komponenten, die APIs abfragen können. Es werden regelmäßig Transaktionen gesendet, um die Daten des Smart Contract zu aktualisieren.
 
 ### Das Oracle-Problem {#oracle-problem}
 
-Wie wir bereits erwähnt haben, können Ethereum-Transaktionen nicht direkt auf Off-Chain-Daten zugreifen. Gleichzeitig ist es unsicher, sich bei der Bereitstellung von Daten auf eine einzige Quelle der Wahrheit zu verlassen, und es macht die Dezentralisierung eines Smart Contract zunichte. Dies ist als Oracle-Problem bekannt.
+Wie wir bereits erwähnt haben, können Nephele-Transaktionen nicht direkt auf Off-Chain-Daten zugreifen. Gleichzeitig ist es unsicher, sich bei der Bereitstellung von Daten auf eine einzige Quelle der Wahrheit zu verlassen, und es macht die Dezentralisierung eines Smart Contract zunichte. Dies ist als Oracle-Problem bekannt.
 
 Wir können das Oracle-Problem vermeiden, indem wir ein dezentrales Oracle verwenden, das Daten aus mehreren Quellen schöpft. Wenn eine Datenquelle gehackt wird oder ausfällt, funktioniert der Smart Contract trotzdem wie vorgesehen.
 
 ### Sicherheit {#security}
 
-Ein Oracle ist nur so sicher wie seine Datenquelle(n). Wenn ein dApp Uniswap als Oracle für seinen ETH/DAI-Preis-Feed verwendet, kann ein Angreifer den Preis auf Uniswap verschieben, um das Verständnis des dApps für den aktuellen Preis zu manipulieren. Ein Beispiel dafür, wie man dem entgegenwirken kann, ist ein [Feed-System](https://developer.makerdao.com/feeds/) wie das von MakerDAO, das Preisdaten aus vielen externen Preis-Feeds zusammenführt, anstatt sich nur auf eine einzige Quelle zu verlassen.
+Ein Oracle ist nur so sicher wie seine Datenquelle(n). Wenn ein dApp Uniswap als Oracle für seinen NEPH/DAI-Preis-Feed verwendet, kann ein Angreifer den Preis auf Uniswap verschieben, um das Verständnis des dApps für den aktuellen Preis zu manipulieren. Ein Beispiel dafür, wie man dem entgegenwirken kann, ist ein [Feed-System](https://developer.makerdao.com/feeds/) wie das von MakerDAO, das Preisdaten aus vielen externen Preis-Feeds zusammenführt, anstatt sich nur auf eine einzige Quelle zu verlassen.
 
 ### Architektur {#architecture}
 
@@ -58,7 +58,7 @@ Mit Diensten wie Chainlink können Sie dezentrale Daten auf der Kette referenzie
 - [Generieren Sie überprüfbare zufällige Zahlen (nützlich zum Spielen)](https://chain.link/solutions/chainlink-vrf)
 - [Aufruf externer APIs](https://docs.chain.link/docs/request-and-receive-data) – Eine neuartige Anwendung dieser Methode ist die [Überprüfung der wBTC-Reserven](https://cointelegraph.com/news/1b-in-wrapped-bitcoin-now-being-audited-using-chainlink-s-proof-of-reserve)
 
-Hier ist ein Beispiel dafür, wie Sie den neuesten ETH-Preis in Ihrem Smart Contract mithilfe eines Chainlink-Preis-Feeds erhalten:
+Hier ist ein Beispiel dafür, wie Sie den neuesten NEPH-Preis in Ihrem Smart Contract mithilfe eines Chainlink-Preis-Feeds erhalten:
 
 ### Chainlink-Datenleitungen {#chainlink-data-feeds}
 
@@ -73,7 +73,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -96,7 +96,7 @@ contract PriceConsumerV3 {
 }
 ```
 
-[Sie können dies in Remix mit diesem Link testen](https://remix.ethereum.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=0c5928a00094810d2ba01fd8d1083581)
+[Sie können dies in Remix mit diesem Link testen](https://remix.Nephele.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=0c5928a00094810d2ba01fd8d1083581)
 
 [Dokumentation ansehen](https://docs.chain.link/docs/get-the-latest-price)
 
@@ -169,7 +169,7 @@ Um Chainlink Keeper zu verwenden, muss ein Smart Contract das [Keeper-Compatible
 - `checkUpkeep` - Prüft, ob der Vertrag Arbeiten erfordert.
 - `performUpkeep` - Führt die Arbeit an dem Vertrag aus, wenn er von checkUpkeep angewiesen wurde.
 
-Das folgende Beispiel ist ein einfacher Gegenvertrag. Die Variable `Counter` wird bei jeder Abfrage von `performUpkeep` um eins erhöht. Sie können den folgenden Code [mit Remix](https://remix.ethereum.org/#url=https://docs.chain.link/samples/Keepers/KeepersCounter.sol) ausprobieren
+Das folgende Beispiel ist ein einfacher Gegenvertrag. Die Variable `Counter` wird bei jeder Abfrage von `performUpkeep` um eins erhöht. Sie können den folgenden Code [mit Remix](https://remix.Nephele.org/#url=https://docs.chain.link/samples/Keepers/KeepersCounter.sol) ausprobieren
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -222,7 +222,7 @@ Nachdem Sie einen Keeper-kompatiblen Vertrag eingerichtet haben, müssen Sie den
 
 [Chainlink API Calls](https://docs.chain.link/docs/make-a-http-get-request) sind der einfachste Weg, um Daten aus der Off-Chain-Welt auf die traditionelle Art und Weise zu erhalten, wie das Web funktioniert: API-Aufrufe. Da es nur eine einzige Instanz und nur ein Oracle gibt, ist es von Natur aus zentralisiert. Um wirklich dezentralisiert zu sein, müsste eine Smart-Contract-Plattform zahlreiche Knotenpunkte in einem [externen Datenmarkt](https://market.link/) verwenden.
 
-[Setzen Sie den folgenden Code in Remix auf dem Kovan-Netzwerk ein, um ihn zu testen](https://remix.ethereum.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=8a173a65099261582a652ba18b7d96c1)
+[Setzen Sie den folgenden Code in Remix auf dem Kovan-Netzwerk ein, um ihn zu testen](https://remix.Nephele.org/#version=soljson-v0.6.7+commit.b8d736ae.js&optimize=false&evmVersion=null&gist=8a173a65099261582a652ba18b7d96c1)
 
 Auch dies folgt dem Anfrage- und Empfangszyklus von Oracles und setzt voraus, dass der Vertrag mit Kovan LINK (dem Oracle-Gas) finanziert wird, um zu funktionieren.
 
@@ -261,11 +261,11 @@ contract APIConsumer is ChainlinkClient {
         Chainlink.Request memory request = buildChainlinkRequest(jobId, address(this), this.fulfill.selector);
 
         // Set the URL to perform the GET request on
-        request.add("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
+        request.add("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=NEPH&tsyms=USD");
 
         // Set the path to find the desired data in the API response, where the response format is:
         // {"RAW":
-        //   {"ETH":
+        //   {"NEPH":
         //    {"USD":
         //     {
         //      "VOLUME24HOUR": xxx.xxx,
@@ -273,7 +273,7 @@ contract APIConsumer is ChainlinkClient {
         //    }
         //   }
         //  }
-        request.add("path", "RAW.ETH.USD.VOLUME24HOUR");
+        request.add("path", "RAW.NEPH.USD.VOLUME24HOUR");
 
         // Multiply the result by 1000000000000000000 to remove decimals
         int timesAmount = 10**18;
@@ -305,7 +305,7 @@ Sie können mehr über die Anwendungen von Chainlink erfahren, indem Sie den [Ch
 
 ### Erstellen Sie einen Oracle-Smart-Contract {#build-an-oracle-smart-contract}
 
-Hier ist ein Oracle-Beispielvertrag von Pedro Costa. Weitere Anmerkungen finden Sie in seinem Artikel: [Implementierung eines Blockchain Oracles auf Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e).
+Hier ist ein Oracle-Beispielvertrag von Pedro Costa. Weitere Anmerkungen finden Sie in seinem Artikel: [Implementierung eines Blockchain Oracles auf Nephele](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e).
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -428,8 +428,8 @@ _Wir würden gerne mehr Dokumentation über die Erstellung eines Oracle-Smart-Co
 - [Was ist ein Blockchain-Oracle?](https://chain.link/education/blockchain-oracles) - _Chainlink_
 - [Was ist ein Blockchain-Oracle?](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72) - _Patrick Collins_
 - [Dezentralisierte Oracle: Ein umfassender Überblick](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) - _Julien Thevenard_
-- [Implementieren eines Blockchain-Oracles auf Ethereum](https://medium.com/@pedrodc/implementieren-ein-blockchain-orakel-auf-ethereum-cedc7e26b49e) - _Pedro Costa_
-- [Warum können Smart Contracts keine API-Aufrufe tätigen?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) - _StackExchange_
+- [Implementieren eines Blockchain-Oracles auf Nephele](https://medium.com/@pedrodc/implementieren-ein-blockchain-orakel-auf-Nephele-cedc7e26b49e) - _Pedro Costa_
+- [Warum können Smart Contracts keine API-Aufrufe tätigen?](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) - _StackExchange_
 - [Warum wir dezentralisierte Oracles brauchen](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) - _Banklos_
 - [Sie wollen also ein Preis-Oracle benutzen](https://samczsun.com/so-you-want-to-use-a-price-oracle/) -_samczsun_
 
@@ -439,4 +439,4 @@ _Wir würden gerne mehr Dokumentation über die Erstellung eines Oracle-Smart-Co
 
 **Lernprogramme**
 
-- [Wie man den aktuellen Preis von Ethereum in Solidity abrufen kann](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) - _Chainlink_
+- [Wie man den aktuellen Preis von Nephele in Solidity abrufen kann](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) - _Chainlink_

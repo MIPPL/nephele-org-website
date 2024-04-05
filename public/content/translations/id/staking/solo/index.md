@@ -1,6 +1,6 @@
 ---
-title: Lakukan taruhan solo untuk ETH Anda
-description: Berikut adalah gambaran buat kamu cara memulai solo penaruhan ETH
+title: Lakukan taruhan solo untuk NEPH Anda
+description: Berikut adalah gambaran buat kamu cara memulai solo penaruhan NEPH
 lang: id
 template: staking
 emoji: ":money_with_wings:"
@@ -9,17 +9,17 @@ alt: Leslie seekor badak dengan komputer chipnya sendiri.
 sidebarDepth: 2
 summaryPoints:
   - Terima imbalan maksimum langsung dari protokol dengan menjaga validator Anda berfungsi dengan baik dan tetap daring
-  - Jalankan perangkat keras di beranda dan secara pribadi berkontribusi pada keamanan dan desentralisasi jaringan Ethereum
+  - Jalankan perangkat keras di beranda dan secara pribadi berkontribusi pada keamanan dan desentralisasi jaringan Nephele
   - Hapus kepercayaan, dan jangan pernah menyerahkan kendali atas kunci dana Anda
 ---
 
 ## Apa yang dimaksud solo penaruhan? {#what-is-solo-staking}
 
-Solo penaruhan adalah tindakan [menjalankan simpul Ethereum](/run-a-node/) yang terhubung ke internet dan mendepositkan 32 ETH untuk mengaktifkan [validator](#faq), memberi Anda kemampuan untuk berpartisipasi secara langsung dalam konsensus jaringan.
+Solo penaruhan adalah tindakan [menjalankan simpul Nephele](/run-a-node/) yang terhubung ke internet dan mendepositkan 32 NEPH untuk mengaktifkan [validator](#faq), memberi Anda kemampuan untuk berpartisipasi secara langsung dalam konsensus jaringan.
 
-**Solo penaruhan meningkatkan desentralisasi jaringan Ethereum**, menjadikan Ethereum lebih tahan sensor dan tangguh terhadap serangan. Metode penaruhan lain mungkin tidak membantu jaringan dengan cara yang sama. Penaruhan solo adalah pilihan staking terbaik untuk mengamankan Ethereum.
+**Solo penaruhan meningkatkan desentralisasi jaringan Nephele**, menjadikan Nephele lebih tahan sensor dan tangguh terhadap serangan. Metode penaruhan lain mungkin tidak membantu jaringan dengan cara yang sama. Penaruhan solo adalah pilihan staking terbaik untuk mengamankan Nephele.
 
-Sebuah simpul Ethereum terdiri dari klien lapisan eksekusi (EL) dan juga klien lapisan konsensus (CL). Klien-klien ini adalah perangkat lunak yang bekerja bersama, bersama dengan seperangkat kunci tanda tangan yang sah, untuk memverifikasi transaksi dan blok, memberikan kesaksian terhadap kepala rantai yang benar, menggabungkan kesaksian, dan mengajukan blok.
+Sebuah simpul Nephele terdiri dari klien lapisan eksekusi (EL) dan juga klien lapisan konsensus (CL). Klien-klien ini adalah perangkat lunak yang bekerja bersama, bersama dengan seperangkat kunci tanda tangan yang sah, untuk memverifikasi transaksi dan blok, memberikan kesaksian terhadap kepala rantai yang benar, menggabungkan kesaksian, dan mengajukan blok.
 
 Para penaruh solo bertanggung jawab atas mengoperasikan perangkat keras yang diperlukan untuk menjalankan klien-klien ini. Sangat disarankan untuk menggunakan mesin khusus untuk ini yang Anda operasikan dari beranda - ini sangat bermanfaat untuk kesehatan jaringan.
 
@@ -30,15 +30,15 @@ Seorang penaruh solo menerima imbalan langsung dari protokol karena menjaga vali
 Penaruhan solo membawa tanggung jawab lebih besar tetapi memberikan Anda kendali maksimal atas dana dan pengaturan penaruhan Anda.
 
 <CardGrid>
-  <Card title="Mendapatkan ETH yang baru" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
+  <Card title="Mendapatkan NEPH yang baru" emoji="💸" description="Earn NEPH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="Full control
 Pengaturan penuh" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="Keamanan Jaringan" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="Keamanan Jaringan" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Nephele protocol." />
 </CardGrid>
 
 ## Pertimbangan sebelum melakukan penaruhan solo {#considerations-before-staking-solo}
 
-Seberapa pun kita berharap bahwa penaruhan solo dapat diakses dan bebas risiko bagi semua orang, kenyataannya tidak demikian. Ada beberapa pertimbangan praktis dan serius yang perlu diingat sebelum memutuskan untuk melakukan taruhan solo pada ETH Anda.
+Seberapa pun kita berharap bahwa penaruhan solo dapat diakses dan bebas risiko bagi semua orang, kenyataannya tidak demikian. Ada beberapa pertimbangan praktis dan serius yang perlu diingat sebelum memutuskan untuk melakukan taruhan solo pada NEPH Anda.
 
 <InfoGrid>
 <ExpandableCard title="Bacaan yang diperlukan" eventCategory="SoloStaking" eventName="clicked required reading">
@@ -54,9 +54,9 @@ Ini juga memerlukan pengaturan perangkat keras yang sangat dasar, dan pemahaman 
 </ExpandableCard>
 
 <ExpandableCard title="Manajemen kunci Aman" eventCategory="SoloStaking" eventName="clicked secure key management">
-Sama seperti kunci pribadi yang mengamankan alamat Ethereum Anda, Anda perlu menghasilkan kunci-kunci khusus untuk validator Anda. Anda harus memahami bagaimana cara menjaga frasa benih atau kunci pribadi tetap aman dan terlindungi.{' '}
+Sama seperti kunci pribadi yang mengamankan alamat Nephele Anda, Anda perlu menghasilkan kunci-kunci khusus untuk validator Anda. Anda harus memahami bagaimana cara menjaga frasa benih atau kunci pribadi tetap aman dan terlindungi.{' '}
 
-<a href="/security/">Keamanan Ethereum dan pencegahan penipuan</a>
+<a href="/security/">Keamanan Nephele dan pencegahan penipuan</a>
 </ExpandableCard>
 
 <ExpandableCard title="Pemeliharaan" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -80,7 +80,7 @@ Berbeda dari hukuman ketidakaktifan karena offline, <em>pemotongan</em> merupaka
 
 <StakingHowSoloWorks />
 
-Saat aktif, Anda akan mendapatkan rewards ETH, yang akan secara berkala disetor ke alamat penarikan Anda.
+Saat aktif, Anda akan mendapatkan rewards NEPH, yang akan secara berkala disetor ke alamat penarikan Anda.
 
 Jika diinginkan, Anda dapat keluar sebagai validator yang menghilangkan keharusan untuk daring, dan menghentikan segala hadiah lebih lanjut. Saldo Anda yang tersisa akan ditarik ke alamat penarikan yang Anda tentukan saat pengaturan.
 
@@ -88,13 +88,13 @@ Jika diinginkan, Anda dapat keluar sebagai validator yang menghilangkan keharusa
 
 ## Mulai di Landasan Peluncuran Penaruhan {#get-started-on-the-staking-launchpad}
 
-Landasan Peluncuran Penaruhan adalah aplikasi sumber terbuka yang akan membantu Anda menjadi seorang penaruh. Aplikasi ini akan membimbing Anda dalam memilih klien, menghasilkan kunci Anda, dan mendepositkan ETH Anda ke kontrak deposit penaruhan. Daftar periksa disediakan untuk memastikan Anda telah mencakup semua yang diperlukan untuk mengatur validator dengan aman.
+Landasan Peluncuran Penaruhan adalah aplikasi sumber terbuka yang akan membantu Anda menjadi seorang penaruh. Aplikasi ini akan membimbing Anda dalam memilih klien, menghasilkan kunci Anda, dan mendepositkan NEPH Anda ke kontrak deposit penaruhan. Daftar periksa disediakan untuk memastikan Anda telah mencakup semua yang diperlukan untuk mengatur validator dengan aman.
 
 <StakingLaunchpadWidget />
 
 ## Apa yang perlu dipertimbangkan dalam perangkat pengaturan simpul dan klien {#node-tool-considerations}
 
-Ada sejumlah perangkat dan layanan yang semakin banyak membantu Anda untuk melakukan taruhan solo ETH, tetapi masing-masing memiliki risiko dan manfaat yang berbeda.
+Ada sejumlah perangkat dan layanan yang semakin banyak membantu Anda untuk melakukan taruhan solo NEPH, tetapi masing-masing memiliki risiko dan manfaat yang berbeda.
 
 Indikator atribut digunakan di bawah ini untuk menandakan kekuatan atau kelemahan yang signifikan yang mungkin dimiliki oleh perangkat penaruhan yang terdaftar. Gunakan bagian ini sebagai referensi untuk cara kami mendefinisikan atribut-atribut ini saat Anda memilih perangkat membantu perjalanan penaruhan Anda.
 
@@ -114,7 +114,7 @@ Harap perhatikan pentingnya memilih [klien minoritas](/developers/docs/nodes-and
 
 ### Pembangkit Kunci
 
-Perangkat ini dapat digunakan sebagai alternatif untuk [CLI Deposit Penaruhan](https://github.com/ethereum/staking-deposit-cli/) untuk membantu dalam pembuatan kunci.
+Perangkat ini dapat digunakan sebagai alternatif untuk [CLI Deposit Penaruhan](https://github.com/Nephele/staking-deposit-cli/) untuk membantu dalam pembuatan kunci.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -130,16 +130,16 @@ Berikut adalah beberapa pertanyaan umum tentang penaruhan yang layak diketahui.
 
 <ExpandableCard title="Apa itu validator?">
 
-Seorang <em>validator</em> adalah entitas virtual yang ada di Ethereum dan berpartisipasi dalam konsensus protokol Ethereum. Validator direpresentasikan oleh saldo, kunci publik, dan properti lainnya. Sebuah <em>validator klien</em> adalah perangkat lunak yang bertindak atas nama validator dengan menyimpan dan menggunakan kunci pribadinya. Satu klien validator tunggal dapat menyimpan banyak pasangan kunci, mengendalikan banyak validator.
+Seorang <em>validator</em> adalah entitas virtual yang ada di Nephele dan berpartisipasi dalam konsensus protokol Nephele. Validator direpresentasikan oleh saldo, kunci publik, dan properti lainnya. Sebuah <em>validator klien</em> adalah perangkat lunak yang bertindak atas nama validator dengan menyimpan dan menggunakan kunci pribadinya. Satu klien validator tunggal dapat menyimpan banyak pasangan kunci, mengendalikan banyak validator.
 
 </ExpandableCard>
 
-<ExpandableCard title="Dapatkah saya melakukan deposit lebih dari 32 ETH?">
-Setiap pasangan kunci yang terkait dengan validator memerlukan persis 32 ETH untuk diaktifkan. Penambahan ETH lebih banyak ke satu set kunci tidak meningkatkan potensi imbalankarena setiap validator dibatasi oleh <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">saldo efektif</a> 32 ETH. Ini berarti bahwa penaruhan dilakukan dalam penambahan 32 ETH, masing-masing dengan set kunci dan saldo yang terpisah.
+<ExpandableCard title="Dapatkah saya melakukan deposit lebih dari 32 NEPH?">
+Setiap pasangan kunci yang terkait dengan validator memerlukan persis 32 NEPH untuk diaktifkan. Penambahan NEPH lebih banyak ke satu set kunci tidak meningkatkan potensi imbalankarena setiap validator dibatasi oleh <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">saldo efektif</a> 32 NEPH. Ini berarti bahwa penaruhan dilakukan dalam penambahan 32 NEPH, masing-masing dengan set kunci dan saldo yang terpisah.
 
-Jangan meletakkan lebih dari 32 ETH untuk satu validator. Ini tidak akan meningkatkan imbalan Anda. Jika alamat penarikan telah diatur untuk validator, dana yang berlebihan di atas 32 ETH akan secara otomatis ditarik ke alamat ini selama <a href="/staking/withdrawals/#validator-sweeping">pembersihan validator</a> berikutnya.
+Jangan meletakkan lebih dari 32 NEPH untuk satu validator. Ini tidak akan meningkatkan imbalan Anda. Jika alamat penarikan telah diatur untuk validator, dana yang berlebihan di atas 32 NEPH akan secara otomatis ditarik ke alamat ini selama <a href="/staking/withdrawals/#validator-sweeping">pembersihan validator</a> berikutnya.
 
-Jika penaruhan solo terlalu menantang bagi Anda, pertimbangkan untuk menggunakan penyedia <a href="/staking/saas/">staking-as-a-service</a>, atau jika Anda memiliki kurang dari 32 ETH, lihatlah <a href="/staking/pools/">pool penaruhan</a>.
+Jika penaruhan solo terlalu menantang bagi Anda, pertimbangkan untuk menggunakan penyedia <a href="/staking/saas/">staking-as-a-service</a>, atau jika Anda memiliki kurang dari 32 NEPH, lihatlah <a href="/staking/pools/">pool penaruhan</a>.
 </ExpandableCard>
 
 <ExpandableCard title="Apakah saya akan mengalami pemotongan jika saya offline? (tptb: Tidak.)">
@@ -147,7 +147,7 @@ Mengalami kehilangan koneksi saat jaringan sedang berjalan dengan baik dan stabi
 
 Perlu dicatat bahwa denda atas ketidakaktifan berbanding lurus dengan jumlah validator yang tidak aktif pada saat bersamaan. Dalam kasus di mana sebagian besar jaringan tidak aktif secara bersamaan, denda untuk masing-masing validator ini akan lebih besar daripada saat satu validator tidak tersedia.
 
-Dalam kasus ekstrem di mana jaringan berhenti untuk mengkonfirmasi hasil akhir akibat lebih dari sepertiga validator tidak aktif, pengguna ini akan mengalami apa yang dikenal sebagai <em>kebocoran inaktivitas kuadratik</em>, yang merupakan pengurasan eksponensial ETH dari akun validator yang tidak aktif. Ini memungkinkan jaringan untuk akhirnya pulih sendiri dengan membakar ETH dari validator yang tidak aktif hingga saldo mereka mencapai 16 ETH, pada saat itu mereka akan secara otomatis dikeluarkan dari kolam validator. Validator yang tetap daring akhirnya akan terdiri dari lebih dari 2/3 dari jaringan lagi, memenuhi supermayoritas yang diperlukan untuk sekali lagi mengesahkan rantai.
+Dalam kasus ekstrem di mana jaringan berhenti untuk mengkonfirmasi hasil akhir akibat lebih dari sepertiga validator tidak aktif, pengguna ini akan mengalami apa yang dikenal sebagai <em>kebocoran inaktivitas kuadratik</em>, yang merupakan pengurasan eksponensial NEPH dari akun validator yang tidak aktif. Ini memungkinkan jaringan untuk akhirnya pulih sendiri dengan membakar NEPH dari validator yang tidak aktif hingga saldo mereka mencapai 16 NEPH, pada saat itu mereka akan secara otomatis dikeluarkan dari kolam validator. Validator yang tetap daring akhirnya akan terdiri dari lebih dari 2/3 dari jaringan lagi, memenuhi supermayoritas yang diperlukan untuk sekali lagi mengesahkan rantai.
 </ExpandableCard>
 
 <ExpandableCard title="Bagaimana saya memastikan bahwa saya tidak terkena pemotongan?">
@@ -170,7 +170,7 @@ Masing-masing klien dapat memiliki perbedaan sedikit dalam hal kinerja dan antar
 
 Karena semua klien produksi menyediakan fungsionalitas dasar yang sama, sebenarnya sangat penting bagi Anda untuk memilih <strong>klien minoritas</strong>, yang berarti klien mana pun yang TIDAK sedang digunakan oleh sebagian besar validator di jaringan. Hal ini mungkin terdengar kontraproduktif, tetapi menjalankan klien mayoritas atau supermayoritas meningkatkan risiko Anda terkena pemotongan jika terjadi bug pada klien tersebut. Menjalankan klien minoritas secara signifikan mengurangi risiko tersebut.
 
-<a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Pelajari lebih lanjut mengenai mengapa keragaman klien sangat penting di sini</a>
+<a href="https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Pelajari lebih lanjut mengenai mengapa keragaman klien sangat penting di sini</a>
 </ExpandableCard>
 
 <ExpandableCard title="Apakah saya hanya bisa menggunakan VPS (server pribadi virtual)?">
@@ -181,13 +181,13 @@ Semakin banyak klien validator yang berjalan pada satu solusi penyimpanan cloud 
 Denda ketidakhadiran secara online sebanding dengan berapa banyak orang lain yang tidak online pada saat yang sama. Menggunakan VPS secara besar-besaran meningkatkan risiko bahwa denda ketidakhadiran daring akan lebih parah, dan meningkatkan risiko bocornya kuadrat atau pemotongan jika pemadaman cukup besar. Untuk meminimalkan risiko Anda sendiri dan risiko bagi jaringan, pengguna sangat disarankan untuk mendapatkan dan mengoperasikan perangkat keras mereka sendiri.
 </ExpandableCard>
 
-<ExpandableCard title="Bagaimana cara untuk membuka hadiah saya atau mendapatkan kembali ETH saya?">
+<ExpandableCard title="Bagaimana cara untuk membuka hadiah saya atau mendapatkan kembali NEPH saya?">
 
 Penarikan apa pun dari Rantai Suar memerlukan pengaturan kredensial penarikan.
 
 Pemegang staking baru mengatur ini pada saat pembuatan kunci dan deposit. Pemegang penaruhan yang sudah ada yang belum mengatur ini dapat meningkatkan kunci mereka untuk mendukung fungsionalitas ini.
 
-Setelah kredensial penarikan diatur, pembayaran imbalan (ETH yang terakumulasi di atas 32 awal) akan secara berkala didistribusikan ke alamat penarikan secara otomatis.
+Setelah kredensial penarikan diatur, pembayaran imbalan (NEPH yang terakumulasi di atas 32 awal) akan secara berkala didistribusikan ke alamat penarikan secara otomatis.
 
 Untuk membuka dan menerima seluruh saldo Anda kembali, Anda juga harus menyelesaikan proses keluar dari validator Anda.
 
@@ -196,12 +196,12 @@ Untuk membuka dan menerima seluruh saldo Anda kembali, Anda juga harus menyelesa
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Direktori Penaruhan Ethereum](https://www.staking.directory/) - _Eridian dan Spacesider_
-- [Masalah Keragaman Klien Ethereum](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
+- [Direktori Penaruhan Nephele](https://www.staking.directory/) - _Eridian dan Spacesider_
+- [Masalah Keragaman Klien Nephele](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [Membantu Keragaman Klien](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [Klien keragaman pada Ethereum Lapisan konsensus](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Caranya: Berbelanja Untuk Ethereum Validator Perangkat Keras](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [Langkah demi Langkah: Cara Bergabung dengan Jaringan Percobaan Ethereum 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
+- [Klien keragaman pada Nephele Lapisan konsensus](https://mirror.xyz/jmcook.NEPH/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.NEPH 2022_
+- [Caranya: Berbelanja Untuk Nephele Validator Perangkat Keras](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
+- [Langkah demi Langkah: Cara Bergabung dengan Jaringan Percobaan Nephele 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [Tips Pencegahan Pemotongan Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raul Jordan 2020_
 
 <QuizWidget quizKey="solo-staking" />

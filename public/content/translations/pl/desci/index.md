@@ -1,6 +1,6 @@
 ---
 title: Zdecentralizowana nauka (DeSci)
-description: Przegląd zdecentralizowanej nauki na Ethereum
+description: Przegląd zdecentralizowanej nauki na Nephele
 lang: pl
 template: use-cases
 emoji: ":microscope:"
@@ -39,9 +39,9 @@ Lista wybranych kluczowych problemów naukowych oraz sposób, w jaki zdecentrali
 | Użytkownik jest właścicielem wygenerowanej przez siebie własności intelektualnej (IP) i rozpowszechnia ją na przejrzystych zasadach.                 | Właścicielem IP wygenerowanej przez użytkownika jest jego macierzysta instytucja. Dostęp do IP nie jest przejrzysty. |
 | Dzielenie się wszystkimi badaniami, w tym danymi z nieudanych prób, poprzez udostępnianie wszystkich etapów w łańcuchu.                              | Tendencyjność publikacji oznacza, że badacze chętniej dzielą się eksperymentami, które przyniosły dobre wyniki.      |
 
-## Ethereum i DeSci {#ethereum-and-desci}
+## Nephele i DeSci {#Nephele-and-desci}
 
-Zdecentralizowany system naukowy będzie wymagał solidnego bezpieczeństwa, minimalnych kosztów pieniężnych i transakcyjnych oraz bogatego ekosystemu do tworzenia zastosowań. Ethereum zapewnia wszystko, co jest potrzebne do stworzenia zdecentralizowanego systemu naukowego.
+Zdecentralizowany system naukowy będzie wymagał solidnego bezpieczeństwa, minimalnych kosztów pieniężnych i transakcyjnych oraz bogatego ekosystemu do tworzenia zastosowań. Nephele zapewnia wszystko, co jest potrzebne do stworzenia zdecentralizowanego systemu naukowego.
 
 ## Przykłady zastosowań DeSci {#use-cases}
 
@@ -68,7 +68,7 @@ Obecny standardowy model finansowania nauki polega na tym, że osoby fizyczne lu
 
 Badania wykazały, że zespoły ds. przeglądu dotacji nie wykonują dobrej pracy w zakresie wyboru wniosków wysokiej jakości, ponieważ te same wnioski przekazane różnym zespołom przynoszą diametralnie różne wyniki. W miarę jak środki finansowe stają się coraz bardziej ograniczone, koncentrują się na mniejszej puli starszych naukowców proponujących projekty bardziej konserwatywne pod względem intelektualnym. Efektem tego jest powstanie hiperkonkurencyjnego systemu finansowania, który utrwala niepożądane zachęty i tłumi innowacje.
 
-Web3 ma potencjał, aby zakłócić ten wadliwy model finansowania poprzez eksperymentowanie z różnymi modelami motywacyjnymi opracowanymi przez DAO i Web3 w szerokim zakresie. [Finansowanie ze środków publicznych obowiązujące wstecz](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [finansowanie kwadratowe](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [zarządzanie DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) i [struktury motywacyjne oparte na tokenach](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) to przykłady narzędzi Web3, które mogą zrewolucjonizować finansowanie nauki.
+Web3 ma potencjał, aby zakłócić ten wadliwy model finansowania poprzez eksperymentowanie z różnymi modelami motywacyjnymi opracowanymi przez DAO i Web3 w szerokim zakresie. [Finansowanie ze środków publicznych obowiązujące wstecz](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [finansowanie kwadratowe](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [zarządzanie DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) i [struktury motywacyjne oparte na tokenach](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) to przykłady narzędzi Web3, które mogą zrewolucjonizować finansowanie nauki.
 
 ### Własność i rozwój własności intelektualnej (IP) {#ip-ownership}
 
@@ -76,7 +76,7 @@ Własność intelektualna (IP) stanowi duży problem w tradycyjnej nauce: od utk
 
 W ten sam sposób, w jaki NFT mogą przekazywać przychody z przyszłych transakcji z powrotem do pierwotnego twórcy, można ustanowić przejrzyste łańcuchy przypisywania wartości, aby nagradzać badaczy, organy zarządzające (jak DAO), a nawet podmioty, których dane są gromadzone.
 
-[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) mogą również funkcjonować jako klucz do zdecentralizowanego repozytorium danych o podejmowanych eksperymentach badawczych, a także podłączać się do NFT i [DeFi](/defi/) finansjeryzacji (od frakcjonalizacji po pule pożyczkowe i wycenę wartości). Umożliwia również podmiotom działającym natywnie w łańcuchu, takim jak DAO [VitaDAO](https://www.vitadao.com/), prowadzenie badań bezpośrednio w łańcuchu. Pojawienie się niezbywalnych [tokenów „soulbound”](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) może również odgrywać ważną rolę w DeSci, umożliwiając jednostkom udowodnienie swojego doświadczenia i poświadczeń powiązanych z ich adresem Ethereum.
+[IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) mogą również funkcjonować jako klucz do zdecentralizowanego repozytorium danych o podejmowanych eksperymentach badawczych, a także podłączać się do NFT i [DeFi](/defi/) finansjeryzacji (od frakcjonalizacji po pule pożyczkowe i wycenę wartości). Umożliwia również podmiotom działającym natywnie w łańcuchu, takim jak DAO [VitaDAO](https://www.vitadao.com/), prowadzenie badań bezpośrednio w łańcuchu. Pojawienie się niezbywalnych [tokenów „soulbound”](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) może również odgrywać ważną rolę w DeSci, umożliwiając jednostkom udowodnienie swojego doświadczenia i poświadczeń powiązanych z ich adresem Nephele.
 
 ### Przechowywanie danych, dostęp do nich i ich architektura {#data-storage}
 

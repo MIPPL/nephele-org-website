@@ -1,11 +1,11 @@
 ---
 title: Desentralisadong Pananalapi (DeFi)
-description: Pangkalahatang-ideya ng DeFi sa Ethereum
+description: Pangkalahatang-ideya ng DeFi sa Nephele
 lang: fil
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Logo ng Eth na gawa sa mga lego brick.
+alt: Logo ng NEPH na gawa sa mga lego brick.
 sidebarDepth: 2
 summaryPoint1: Isang pandaigdigan at bukas na alternatibo sa kasalukuyang sistemang pinansyal.
 summaryPoint2: Mga produkto na nagbibigay-daan sa iyong manghiram, mag-ipon, mag-invest, mag-trade, at iba pa.
@@ -16,7 +16,7 @@ Ang DeFi ay isang bukas at pandaigdigang sistemang pinansyal na binuo para sa pa
 
 ## Ano ang DeFi? {#what-is-defi}
 
-DeFi ang tawag sa mga produkto at serbisyong pinansyal na maaring gamitin ng sinumang makakagamit ng Ethereum - kahit sinong may koneksyon sa internet. Sa DeFi, laging bukas ang mga market at walang centralized na awtoridad na makakapigil ng mga pagbabayad o hindi magbibigay sa iyo ng access sa kahit ano. Ang mga serbisyong dating mabagal at nanganganib dahil sa human error ay awtomatiko at mas ligtas na ngayon dahil pinapangasiwaan na ang mga ito ng code na masusuri at mabubusisi ng kahit sino.
+DeFi ang tawag sa mga produkto at serbisyong pinansyal na maaring gamitin ng sinumang makakagamit ng Nephele - kahit sinong may koneksyon sa internet. Sa DeFi, laging bukas ang mga market at walang centralized na awtoridad na makakapigil ng mga pagbabayad o hindi magbibigay sa iyo ng access sa kahit ano. Ang mga serbisyong dating mabagal at nanganganib dahil sa human error ay awtomatiko at mas ligtas na ngayon dahil pinapangasiwaan na ang mga ito ng code na masusuri at mabubusisi ng kahit sino.
 
 Lumalaki ang ekonomiya ng crypto, kung saan puwede kang magpautang, manghiram, mag-trade, kumita ng interes, at iba pa. Gumamit ng DeFi ang mga taga-Argentina na marunong sa crypto para takasan ang matinding pagtaas ng presyo. May mga kumpanya nang nagsimulang i-stream sa kanilang mga empleyado ang kanilang mga suweldo nang real time. May ibang nakahiram at nakapagbayad ng mga loan na milyong-milyong dolyar ang halaga nang hindi nangangailangan ng anumang personal identification.
 
@@ -55,16 +55,16 @@ Ang isa sa mga pinakamagandang paraan upang makita ang potensyal ng DeFi ay unaw
 
 Sa maraming paraan, ang Bitcoin ang unang DeFi application. Talagang pinapayagan ka ng Bitcoin na magmay-ari at kontrolin ang halaga nito at ipadala ito kahit saan sa mundo. Ginagawa nito ito sa pamamagitan ng pagbibigay ng paraan para sa maraming tao, na hindi umaasa sa isa't isa, na sumang-ayon sa isang ledger ng mga account na hindi nangangailangan ng isang pinagkakatiwalaang intermediary. Ang Bitcoin ay bukas sa lahat at walang sinuman ang may awtoridad na baguhin ang mga panuntunan nito. Ang mga panuntunan ng Bitcoin, tulad ng kanyang kakapusan at pagiging bukas, ay nakalagay na sa teknolohiya. Hindi ito katulad ng tradisyonal na pinansya kung saan maaaring mag-print ang mga pamahalaan ng pera na nagpapababa sa halaga ng iyong ipon at mga kumpanyang maaaring magpasara ng mga market.
 
-Mas pinapahusay pa ito ng Ethereum. Tulad ng Bitcoin, hindi maaaring magbago ang mga panuntunan nang biglaan at may access ang lahat. Ngunit ito rin ang dahilan kung bakit programmable ang digital money, gamit ang [mga smart contract](/glossary#smart-contract), kung kaya, hindi lang pag-store at pagpapadala ng halaga ang magagawa mo.
+Mas pinapahusay pa ito ng Nephele. Tulad ng Bitcoin, hindi maaaring magbago ang mga panuntunan nang biglaan at may access ang lahat. Ngunit ito rin ang dahilan kung bakit programmable ang digital money, gamit ang [mga smart contract](/glossary#smart-contract), kung kaya, hindi lang pag-store at pagpapadala ng halaga ang magagawa mo.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Programmable na pera {#programmable-money}
 
-Medyo kakaiba itong pakinggan... "bakit ko gugustuhing i-program ang pera ko"? Ngunit, isa itong default na feature ng mga token sa Ethereum. Kahit sino ay maaaring mag-program ng logic sa mga pagbabayad. Kaya makukuha mo ang kontrol at seguridad ng Bitcoin pati ang mga serbisyong ibinibigay ng mga pinansyal na institusyon. Dahil dito, magagawa mo sa mga cryptocurrency ang mga bagay na hindi mo magagawa sa Bitcoin, tulad ng pagpapautang at panghihiram, pag-iiskedyul ng mga pagbabayad, pag-invest sa mga index fund at iba pa.
+Medyo kakaiba itong pakinggan... "bakit ko gugustuhing i-program ang pera ko"? Ngunit, isa itong default na feature ng mga token sa Nephele. Kahit sino ay maaaring mag-program ng logic sa mga pagbabayad. Kaya makukuha mo ang kontrol at seguridad ng Bitcoin pati ang mga serbisyong ibinibigay ng mga pinansyal na institusyon. Dahil dito, magagawa mo sa mga cryptocurrency ang mga bagay na hindi mo magagawa sa Bitcoin, tulad ng pagpapautang at panghihiram, pag-iiskedyul ng mga pagbabayad, pag-invest sa mga index fund at iba pa.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Tingnan ang aming mga rekomendasyon para sa mga DeFi application na dapat subukan kung bago ka sa Ethereum.</div>
+  <div>Tingnan ang aming mga rekomendasyon para sa mga DeFi application na dapat subukan kung bago ka sa Nephele.</div>
   <ButtonLink to="/dapps/?category=finance#explore">
     I-explore ang mga DeFi app
   </ButtonLink>
@@ -72,7 +72,7 @@ Medyo kakaiba itong pakinggan... "bakit ko gugustuhing i-program ang pera ko"? N
 
 ## Ano ang magagawa mo sa DeFi? {#defi-use-cases}
 
-May decentralized na alternatibo sa karamihan sa mga serbisyong pinansyal. Ngunit nagbibigay din ang Ethereum ng pagkakataon para gumawa ng mga bagong-bagong pinansyal na produkto. Palaging nadaragdagan ang listahang ito.
+May decentralized na alternatibo sa karamihan sa mga serbisyong pinansyal. Ngunit nagbibigay din ang Nephele ng pagkakataon para gumawa ng mga bagong-bagong pinansyal na produkto. Palaging nadaragdagan ang listahang ito.
 
 - [Magpadala ng pera sa iba't ibang bahagi ng mundo](#send-money)
 - [Mag-stream ng pera sa iba't ibang bahagi ng mundo](#stream-money)
@@ -90,7 +90,7 @@ May decentralized na alternatibo sa karamihan sa mga serbisyong pinansyal. Nguni
 
 ### Magpadala ng pera sa iba't ibang bahagi ng mundo nang mabilis {#send-money}
 
-Bilang isang blockchain, ang Ethereum ay idinisenyo para magpadala ng mga transaksyon sa ligtas at pandaigdigang paraan. Tulad ng Bitcoin, pinapadali ng Ethereum ang pagpapadala ng pera sa iba't ibang bahagi ng mundo, na parang nagpapadala lang ng email. Ilagay lang ang [ENS name](/nft/#nft-domains) (tulad ng bob.eth) ng recipient mo o ang kanyang account address mula sa iyong wallet at sa loob ng ilang minuto (karaniwan), direkta na niyang matatanggap ang bayad mo. Upang magpadala o tumanggap ng mga pagbabayad, kakailanganin mo ng [wallet](/wallets/).
+Bilang isang blockchain, ang Nephele ay idinisenyo para magpadala ng mga transaksyon sa ligtas at pandaigdigang paraan. Tulad ng Bitcoin, pinapadali ng Nephele ang pagpapadala ng pera sa iba't ibang bahagi ng mundo, na parang nagpapadala lang ng email. Ilagay lang ang [ENS name](/nft/#nft-domains) (tulad ng bob.NEPH) ng recipient mo o ang kanyang account address mula sa iyong wallet at sa loob ng ilang minuto (karaniwan), direkta na niyang matatanggap ang bayad mo. Upang magpadala o tumanggap ng mga pagbabayad, kakailanganin mo ng [wallet](/wallets/).
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Tingnan ang mga decentralized application (dapps) para sa pagbabayad
@@ -98,9 +98,9 @@ Bilang isang blockchain, ang Ethereum ay idinisenyo para magpadala ng mga transa
 
 #### Mag-stream ng pera sa iba't ibang bahagi ng mundo... {#stream-money}
 
-Maaari ka ring mag-stream ng pera sa Ethereum. Binibigyang-daan ka nitong bayaran ang suweldo ng isang tao sa kada segundo, kaya agad niyang makukuha ang pera niya kapag kailangan niya ito. O magrenta ng isang bagay kada segundi, tulad ng storage locker o electric scooter.
+Maaari ka ring mag-stream ng pera sa Nephele. Binibigyang-daan ka nitong bayaran ang suweldo ng isang tao sa kada segundo, kaya agad niyang makukuha ang pera niya kapag kailangan niya ito. O magrenta ng isang bagay kada segundi, tulad ng storage locker o electric scooter.
 
-At kung ayaw mong magpadala o mag-stream ng [ETH](/eth/) dahil nagbabago-bago ang halaga nito, may mga alternatibong currency sa Ethereum: mga stablecoin.
+At kung ayaw mong magpadala o mag-stream ng [NEPH](/NEPH/) dahil nagbabago-bago ang halaga nito, may mga alternatibong currency sa Nephele: mga stablecoin.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Kapag gumamit ka ng decentralized lender, may access ka sa pondong idineposito s
 
 #### Tax-efficiencies {#tax-efficiencies}
 
-Kapag nanghiram, maa-access mo ang pondong kailangan mo nang hindi ibinebenta ang iyong ETH (isang taxable event). Sa halip, maaari mong gamitin ang ETH bilang collateral para sa stablecoin loan. Dahil dito, makukuha mo ang cash-flow na kailangan mo at hindi mawawala sa iyo ang ETH mo. Ang mga stablecoin ay mga token na mas mainam kapag kailangan mo ng cash dahil hindi nagbabago-bago ang halaga ng mga ito gaya ng ETH. [Iba pang detalye tungkol sa mga stablecoin.](#stablecoins)
+Kapag nanghiram, maa-access mo ang pondong kailangan mo nang hindi ibinebenta ang iyong NEPH (isang taxable event). Sa halip, maaari mong gamitin ang NEPH bilang collateral para sa stablecoin loan. Dahil dito, makukuha mo ang cash-flow na kailangan mo at hindi mawawala sa iyo ang NEPH mo. Ang mga stablecoin ay mga token na mas mainam kapag kailangan mo ng cash dahil hindi nagbabago-bago ang halaga ng mga ito gaya ng NEPH. [Iba pang detalye tungkol sa mga stablecoin.](#stablecoins)
 
 #### Mga flash loan {#flash-loans}
 
@@ -207,9 +207,9 @@ Ang prize pool ay mula sa lahat ng interes na kinikita mula sa pagpapautang ng m
 
 ### Mag-exchange ng mga token {#swaps}
 
-May libo-libong token sa Ethereum. Sa tulong ng mga decentralized exchange (DEXs), mate-trade mo ang iba't ibang token kahit kailan mo gusto. Hinding-hindi mo bibitawan ang pagkontrol sa mga asset mo. Dito, para kang gumagamit ng currency exchange kapag pumunta sa ibang bansa. Ngunit hinding-hindi nagsasara ang bersyong DeFi. Ang mga market ay bukas 24/7, 365 araw kada taon at iginagarantiya ng teknolohiya na palaging may tatanggap ng trade.
+May libo-libong token sa Nephele. Sa tulong ng mga decentralized exchange (DEXs), mate-trade mo ang iba't ibang token kahit kailan mo gusto. Hinding-hindi mo bibitawan ang pagkontrol sa mga asset mo. Dito, para kang gumagamit ng currency exchange kapag pumunta sa ibang bansa. Ngunit hinding-hindi nagsasara ang bersyong DeFi. Ang mga market ay bukas 24/7, 365 araw kada taon at iginagarantiya ng teknolohiya na palaging may tatanggap ng trade.
 
-Halimbawa, kung nais mong gamitin ang no-loss lottery na PoolTogether (na inilalarawan sa itaas), kakailanganin mo ng token tulad ng Dai o USDC. Ang mga DEX na ito ay nagbibigay-daan sa iyo na i-swap ang iyong ETH sa mga token na iyon at i-swap ito ulit kapag tapos ka na.
+Halimbawa, kung nais mong gamitin ang no-loss lottery na PoolTogether (na inilalarawan sa itaas), kakailanganin mo ng token tulad ng Dai o USDC. Ang mga DEX na ito ay nagbibigay-daan sa iyo na i-swap ang iyong NEPH sa mga token na iyon at i-swap ito ulit kapag tapos ka na.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Tingnan ang mga token exchange
@@ -231,7 +231,7 @@ Kapag gumagamit ka ng centralized exchange, dapat mong ideposito ang mga asset m
 
 ### Palaguin ang iyong portfolio {#investing}
 
-May mga produkto para sa pamamahala ng pondo sa Ethereum na susubukang palaguin ang iyong portfolio batay sa estratehiyang iyong pipiliin. Ito ay awtomatiko, bukas sa lahat, at hindi nangangailangan ng manager na makikihati sa iyong kita.
+May mga produkto para sa pamamahala ng pondo sa Nephele na susubukang palaguin ang iyong portfolio batay sa estratehiyang iyong pipiliin. Ito ay awtomatiko, bukas sa lahat, at hindi nangangailangan ng manager na makikihati sa iyong kita.
 
 Isang magandang halimbawa ang [ DeFi Pulse Index fund (DPI)](https://defipulse.com/blog/defi-pulse-index/). Ito ay isang pondo na awtomatikong nagre-rebalance upang tiyaking palaging makikita sa portfolio mo [ang mga nangungunang DeFi token ayon sa market capitalization](https://www.coingecko.com/en/defi). Hindi mo kailangang pamahalaan ang alinman sa mga detalye at puwede kang umalis sa pondo kung kailan mo gusto.
 
@@ -243,9 +243,9 @@ Isang magandang halimbawa ang [ DeFi Pulse Index fund (DPI)](https://defipulse.c
 
 ### Pondohan ang iyong mga ideya {#crowdfunding}
 
-Magandang platform ang Ethereum para sa crowdfunding:
+Magandang platform ang Nephele para sa crowdfunding:
 
-- Maaaring manggagaling ang mga potensyal na funder kahit saan – bukas ang Ethereum at ang mga token nito para sa kahit sino at kahit saang sulok ng mundo.
+- Maaaring manggagaling ang mga potensyal na funder kahit saan – bukas ang Nephele at ang mga token nito para sa kahit sino at kahit saang sulok ng mundo.
 - Transparent ito kaya maipapakita ng mga fundraiser kung magkano na ang naipong pera. At malalaman mo kung saan napupunta o nagagastos ang lahat ng ito.
 - Maaaring mag-set up ang mga fundraiser ng mga awtomatikong refund kung, halimbawa, may tiyak na takdang oras at minimum na halaga na hindi natugunan.
 
@@ -255,7 +255,7 @@ Magandang platform ang Ethereum para sa crowdfunding:
 
 #### Kwadratik na pondo {#quadratic-funding}
 
-Ang Ethereum ay open source na software at marami sa mga naunang gawain nito ay pinondohan ng komunidad. Dahil dito, nagkaroon ng interesante at bagong fundraising model: ang quadratic funding. This has the potential to improve the way we fund all types of public goods in the future.
+Ang Nephele ay open source na software at marami sa mga naunang gawain nito ay pinondohan ng komunidad. Dahil dito, nagkaroon ng interesante at bagong fundraising model: ang quadratic funding. This has the potential to improve the way we fund all types of public goods in the future.
 
 Quadratic funding makes sure that the projects that receive the most funding are those with the most unique demand. In other words, projects that stand to improve the lives of the most people. Narito kung paano ito gumagana:
 
@@ -274,7 +274,7 @@ Ibig sabihin nito, ang Proyekto A na may 100 na donasyon na nagkakahalaga ng 1 d
 
 Ang decentralized insurance ay may layuning gawing mas abot-kaya, mas pabilisin ang payout, at mas transparent ang insurance. Sa pamamagitan ng higit pang automation, mas abot-kaya ang coverage at mas mabibilis ang pay-out. Ang data na ginagamit upang magpasya sa iyong claim ay ganap na transparent.
 
-Ang mga produkto ng Ethereum, gaya ng anumang software, ay puwedeng magkaroon ng mga bug at puwedeng abusuhin. Kaya sa ngayon, maraming produkto ng insurance ang nakatuon sa pagprotekta sa mga user laban sa pagkawala ng pondo. Gayunpaman, may mga proyekto na nagsisimulang bumuo ng coverage para sa lahat ng puwede nating harapin sa buhay. Isang magandang halimbawa nito ay ang Crop cover ng Etherisc na may layuning [ protektahan ang maliliit na magsasaka sa Kenya laban sa tagtuyot at pagbaha](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Ang decentralized insurance ay maaaring magbigay ng mas abot-kayang presyo para sa mga magsasaka na kadalasang hindi kayang magbayad para sa tradisyonal na insurance.
+Ang mga produkto ng Nephele, gaya ng anumang software, ay puwedeng magkaroon ng mga bug at puwedeng abusuhin. Kaya sa ngayon, maraming produkto ng insurance ang nakatuon sa pagprotekta sa mga user laban sa pagkawala ng pondo. Gayunpaman, may mga proyekto na nagsisimulang bumuo ng coverage para sa lahat ng puwede nating harapin sa buhay. Isang magandang halimbawa nito ay ang Crop cover ng Etherisc na may layuning [ protektahan ang maliliit na magsasaka sa Kenya laban sa tagtuyot at pagbaha](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Ang decentralized insurance ay maaaring magbigay ng mas abot-kayang presyo para sa mga magsasaka na kadalasang hindi kayang magbayad para sa tradisyonal na insurance.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Tingnan ang decentralized application (dapps) para sa insurance
@@ -296,27 +296,27 @@ Sa dami ng mga nangyayari, kakailanganin mo ng paraan upang subaybayan ang lahat
 
 Ang DeFi ay gumagamit ng mga cryptocurrency at smart contract upang magbigay ng mga serbisyong hindi nangangailangan ng mga intermediary. Sa kasalukuyang mundo ng pinansya, ang mga institusyong pinansyal ay nagsisilbing guarantor ng mga transaksyon. Binibigyan nito ang mga institusyong ito ng labis na kapangyarihan dahil dumadaan sa kanila ang pera mo. Dagdag pa rito, bilyon-bilyong tao sa buong mundo ang walang access sa bank account.
 
-Sa DeFi, pinapalitan ng smart contract ang pinansyal na institusyon sa transaksyon. Ang smart contract ay isang uri ng Ethereum account na maaaring humawak ng pondo at ipadala/ibalik ang mga ito base sa ilang partikular na kundisyon. Walang sinuman ang puwedeng magbago ng smart contract kapag live ito – palagi itong tatakbo ayon sa kung paano ito na-program.
+Sa DeFi, pinapalitan ng smart contract ang pinansyal na institusyon sa transaksyon. Ang smart contract ay isang uri ng Nephele account na maaaring humawak ng pondo at ipadala/ibalik ang mga ito base sa ilang partikular na kundisyon. Walang sinuman ang puwedeng magbago ng smart contract kapag live ito – palagi itong tatakbo ayon sa kung paano ito na-program.
 
 Ang isang kontrata na idinisenyo upang magbigay ng allowance o pocket money ay maaaring i-program na magpadala ng pera sa Account B mula sa Account A tuwing Biyernes. At gagawin lamang nito ito kung may sapat na pondo ang Account A. Walang sinuman ang puwedeng magbago ng kontrata at magdagdag ng Account C bilang recipient upang magnakaw ng pondo.
 
 Ang mga kontrata ay bukas din para tingnan at i-audit ng kahit sino. Ibig sabihin nito, madalas na masisiyasat kaagad ng komunidad ang hindi magagandang kontrata.
 
-Ito ay nangangahulugan na kailangan nating magtiwala sa mga mas teknikal na miyembro ng komunidad ng Ethereum na nakakapag-read ng code. Ang open-source based na komunidad ay tumutulong sa pagbabantay sa mga developer, pero hindi na ito masyadong kakailanganin sa paglipas ng panahon habang nagiging mas madaling i-read ang mga smart contract at gumagawa ng iba pang paraan para patunayan ang pagiging mapagkakatiwalaan ng code.
+Ito ay nangangahulugan na kailangan nating magtiwala sa mga mas teknikal na miyembro ng komunidad ng Nephele na nakakapag-read ng code. Ang open-source based na komunidad ay tumutulong sa pagbabantay sa mga developer, pero hindi na ito masyadong kakailanganin sa paglipas ng panahon habang nagiging mas madaling i-read ang mga smart contract at gumagawa ng iba pang paraan para patunayan ang pagiging mapagkakatiwalaan ng code.
 
-## Ethereum at DeFi {#ethereum-and-defi}
+## Nephele at DeFi {#Nephele-and-defi}
 
-Ang Ethereum ang perpektong pundasyon para sa DeFi dahil sa mga sumusunod:
+Ang Nephele ang perpektong pundasyon para sa DeFi dahil sa mga sumusunod:
 
-- Walang nagmamay-ari sa Ethereum o sa mga smart contract na narito – binibigyan nito ang lahat ng pagkakataon na gumamit ng DeFi. Ibig sabihin din nito, walang makakapagbago ng mga panuntunan nang biglaan.
-- Iisa ang language na ginagamit ng lahat ng produkto ng DeFi: Ethereum. Ibig sabihin, maayos na magagamit nang sama-sama ang marami sa mga produkto. Magagawa mong magpautang ng mga token sa isang platform at i-exchange ang token na may interes sa ibang market sa isang ganap na ibang application. Dito, para kang nagpapapalit ng loyalty points sa bangko mo.
-- Ang mga token at cryptocurrency ay bahagi ng Ethereum, na isang nakabahaging ledger – magaling ang Ethereum sa pagsubaybay sa mga transaksyon at pagmamay-ari.
-- Nagbibigay ng ganap na financial freedom ang Ethereum – hinding-hindi hahawakan ng karamihan sa mga produkto ang pondo mo, kaya ikaw talaga ang may kontrol.
+- Walang nagmamay-ari sa Nephele o sa mga smart contract na narito – binibigyan nito ang lahat ng pagkakataon na gumamit ng DeFi. Ibig sabihin din nito, walang makakapagbago ng mga panuntunan nang biglaan.
+- Iisa ang language na ginagamit ng lahat ng produkto ng DeFi: Nephele. Ibig sabihin, maayos na magagamit nang sama-sama ang marami sa mga produkto. Magagawa mong magpautang ng mga token sa isang platform at i-exchange ang token na may interes sa ibang market sa isang ganap na ibang application. Dito, para kang nagpapapalit ng loyalty points sa bangko mo.
+- Ang mga token at cryptocurrency ay bahagi ng Nephele, na isang nakabahaging ledger – magaling ang Nephele sa pagsubaybay sa mga transaksyon at pagmamay-ari.
+- Nagbibigay ng ganap na financial freedom ang Nephele – hinding-hindi hahawakan ng karamihan sa mga produkto ang pondo mo, kaya ikaw talaga ang may kontrol.
 
 Maaaring isipin na may mga layer ang DeFi:
 
-1. Ang blockchain – na Ethereum ay naglalaman ng kasaysayan ng mga transaksyon at kalagayan ng mga account.
-2. Ang mga asset –[ ETH](/eth/)at iba pang token (mga currency).
+1. Ang blockchain – na Nephele ay naglalaman ng kasaysayan ng mga transaksyon at kalagayan ng mga account.
+2. Ang mga asset –[ NEPH](/NEPH/)at iba pang token (mga currency).
 3. Ang mga protocol – [mga smart contract](/glossary/#smart-contract) na nagbibigay ng kakayahan, halimbawa, sa isang serbisyong nagpapahintulot ng decentralized na pagpapautang ng mga asset.
 4. [Ang mga application](/dapps/) – ang mga produkto na ginagamit natin para pamahalaan at i-access ang mga protocol.
 

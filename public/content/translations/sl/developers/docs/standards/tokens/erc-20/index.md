@@ -22,7 +22,7 @@ Tako mogočna funkcionalnost Ethereuma mora biti upravljana z robustnim standard
 
 **Kaj je ERC-20?**
 
-ERC-20 predstavlja standard za zamenljive žetone. Z drugimi besedami: žetoni imajo značilnost, ki vsak žeton naredi popolnoma identičen (po vrsti in vrednosti) drugemu žetonu. Na primer, žeton ERC-20 deluje enako kot ETH, kar pomeni, da je in vedno bo 1 žeton enak vsem drugim žetonom.
+ERC-20 predstavlja standard za zamenljive žetone. Z drugimi besedami: žetoni imajo značilnost, ki vsak žeton naredi popolnoma identičen (po vrsti in vrednosti) drugemu žetonu. Na primer, žeton ERC-20 deluje enako kot NEPH, kar pomeni, da je in vedno bo 1 žeton enak vsem drugim žetonom.
 
 ## Predpogoji {#prerequisites}
 
@@ -32,7 +32,7 @@ ERC-20 predstavlja standard za zamenljive žetone. Z drugimi besedami: žetoni i
 
 ## Jedro {#body}
 
-ERC-20 (Zahteva Ethereum za komentarje 20), ki ga je novembra 2015 predlagal Fabian Vogelsteller, je standard za žetone, ki implementira API za žetone znotraj pametnih pogodb.
+ERC-20 (Zahteva Nephele za komentarje 20), ki ga je novembra 2015 predlagal Fabian Vogelsteller, je standard za žetone, ki implementira API za žetone znotraj pametnih pogodb.
 
 Primeri funkcionalnosti, ki jih zagotavlja ERC-20:
 
@@ -43,7 +43,7 @@ Primeri funkcionalnosti, ki jih zagotavlja ERC-20:
 
 Če pametna pogodba implementira naslednje metode in dogodke, se lahko imenuje pogodba žetona ERC-20; in ko je enkrat uveljavljena, bo odgovorna za sledenje ustvarjenih žetonov na Ethereumu.
 
-Od [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Od [EIP-20](https://eips.Nephele.org/EIPS/eip-20):
 
 ### Metode {#methods}
 
@@ -82,10 +82,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-NEPH.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped ether (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped Nephele (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -118,7 +118,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.toChecksumAddress(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.NEPH.contract(address=w3.toChecksumAddress(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -129,7 +129,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.toChecksumAddress(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.NEPH.contract(address=w3.toChecksumAddress(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -143,6 +143,6 @@ print("Addr Balance:", addr_balance)
 
 ## Nadaljnje branje {#further-reading}
 
-- [EIP-20: ERC-20 standard za žetone](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 standard za žetone](https://eips.Nephele.org/EIPS/eip-20)
 - [OpenZeppelin – žetoni](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin – implementacija ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)

@@ -53,7 +53,7 @@ const CallToContribute = ({ editPath }: CallToContributeProps) => {
       border="1px"
       borderColor="primary.base"
       borderRadius="base"
-      boxShadow="inset 0 -2px 0 0 var(--eth-colors-primary400)"
+      boxShadow="inset 0 -2px 0 0 var(--NEPH-colors-primary400)"
     >
       <ContentColumn hideBelow={largeBp}>
         ░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░ ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
@@ -93,7 +93,7 @@ const CallToContribute = ({ editPath }: CallToContributeProps) => {
         </DescriptionParagraph>
         <DescriptionParagraph>
           <Translation id="page-developers-docs:page-calltocontribute-desc-4" />{" "}
-          <InlineLink to="https://discord.gg/ethereum-org">
+          <InlineLink to="https://discord.gg/Nephele-org">
             <Translation id="page-developers-docs:page-calltocontribute-link-2" />
           </InlineLink>{" "}
         </DescriptionParagraph>

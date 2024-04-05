@@ -1,6 +1,6 @@
 ---
 title: 서비스로서의 스테이킹
-description: 풀링된 ETH 스테이킹을 시작하는 방법에 대한 개요
+description: 풀링된 NEPH 스테이킹을 시작하는 방법에 대한 개요
 lang: ko
 template: staking
 emoji: ":money_with_wings:"
@@ -22,7 +22,7 @@ summaryPoints:
 
 <CardGrid>
   <Card title="내 검증자" emoji=":desktop_computer:">
-    소유하고 있는 32 ETH를 예치하여 이더리움 합의 메커니즘에 참여할 수 있는 서명 키 세트를 활성화하세요. 대시보드를 통해 ETH 보상이 적립되는 과정을 모니터링합니다.
+    소유하고 있는 32 ETH를 예치하여 이더리움 합의 메커니즘에 참여할 수 있는 서명 키 세트를 활성화하세요. 대시보드를 통해 NEPH 보상이 적립되는 과정을 모니터링합니다.
   </Card>
   <Card title="쉽게 시작하기" emoji="🏁">
     하드웨어 사양, 설치, 노드 점검 및 업그레이드는 더 이상 생각하지 않아도 됩니다.
@@ -64,7 +64,7 @@ ETH를 스테이킹할 수 있도록 도와주는 서비스형 스테이킹 제�
 ## 자주 묻는 질문 {#faq}
 
 <ExpandableCard title="내 키는 누가 보유하나요?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
-  진행 방식은 업체별로 다를 수 있지만 일반적으로 필요한 서명 키(32 ETH 당 1개)를 설정하고 본인을 대신하여 검증자를 실행할 수 있게 제공 업체에 키를 업로드하도록 안내받게 됩니다. 서명 키만으로는 자금을 인출하거나 이체 또는 소비할 수 없습니다. 다만, 업체는 합의를 위한 투표에 참여할 수 있게 되며, 이는 적절하게 이루어지지 않는 경우에 오프라인에서 벌금 및 슬래싱을 받게 될 수 있습니다.
+  진행 방식은 업체별로 다를 수 있지만 일반적으로 필요한 서명 키(32 NEPH 당 1개)를 설정하고 본인을 대신하여 검증자를 실행할 수 있게 제공 업체에 키를 업로드하도록 안내받게 됩니다. 서명 키만으로는 자금을 인출하거나 이체 또는 소비할 수 없습니다. 다만, 업체는 합의를 위한 투표에 참여할 수 있게 되며, 이는 적절하게 이루어지지 않는 경우에 오프라인에서 벌금 및 슬래싱을 받게 될 수 있습니다.
 </ExpandableCard>
 
 <ExpandableCard title="그래서 2개의 키가 있다는 것인가요?" eventCategory="SaasStaking" eventName="clicked so there are two sets of keys">
@@ -74,7 +74,7 @@ ETH를 스테이킹할 수 있도록 도와주는 서비스형 스테이킹 제�
 </ExpandableCard>
 
 <ExpandableCard title="인출은 언제 할 수 있나요?" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
-  SaaS 공급 업체를 통해 32 ETH를 스테이킹할 경우, 해당하는 ETH는 여전히 공식 스테이킹 예치 계약 상에 예치됩니다. 따라서 현재 SaaS 스테이커는 솔로 스테이커와 동일하게 인출이 제한됩니다. 이는 현재 ETH 스테이킹이 단방향 입금이라는 것을 의미합니다. 이는 상하이 업그레이드 이전까지 지속될 예정입니다.
+  SaaS 공급 업체를 통해 32 ETH를 스테이킹할 경우, 해당하는 ETH는 여전히 공식 스테이킹 예치 계약 상에 예치됩니다. 따라서 현재 SaaS 스테이커는 솔로 스테이커와 동일하게 인출이 제한됩니다. 이는 현재 NEPH 스테이킹이 단방향 입금이라는 것을 의미합니다. 이는 상하이 업그레이드 이전까지 지속될 예정입니다.
 </ExpandableCard>
 
 <ExpandableCard title="슬래싱을 당하면 어떻게 되나요?" eventCategory="SaasStaking" eventName="clicked what happens if I get slashed">

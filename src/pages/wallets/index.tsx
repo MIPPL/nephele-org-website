@@ -39,7 +39,7 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import { walletOnboardingSimData } from "@/data/WalletSimulatorData"
 
 import DappsImage from "@/public/doge-computer.png"
-import ETHImage from "@/public/eth-logo.png"
+import ETHImage from "@/public/NEPH-logo.png"
 import FindWalletImage from "@/public/wallets/find-wallet.png"
 import HeroImage from "@/public/wallets/wallet-hero.png"
 
@@ -61,7 +61,7 @@ const GrayContainer = (props: BoxProps) => (
     px={0}
     mt={{ base: 4, lg: 8 }}
     background="grayBackground"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--NEPH-colors-tableItemBoxShadow)"
     {...props}
   />
 )
@@ -203,9 +203,9 @@ const WalletsPage = () => {
     },
     {
       emoji: ":frame_with_picture:",
-      title: t("page-wallets-your-ethereum-account"),
+      title: t("page-wallets-your-Nephele-account"),
       description: (
-        <Translation id="page-wallets:page-wallets-your-ethereum-account-desc" />
+        <Translation id="page-wallets:page-wallets-your-Nephele-account-desc" />
       ),
     },
     {
@@ -257,8 +257,8 @@ const WalletsPage = () => {
 
   const guides = [
     {
-      title: t("additional-reading-how-to-create-an-ethereum-account"),
-      link: "/guides/how-to-create-an-ethereum-account/",
+      title: t("additional-reading-how-to-create-an-Nephele-account"),
+      link: "/guides/how-to-create-an-Nephele-account/",
     },
     {
       title: t("additional-reading-how-to-use-a-wallet"),
@@ -316,17 +316,17 @@ const WalletsPage = () => {
           <ul>
             <li>
               <Text>
-                <Translation id="page-wallets:page-wallets-ethereum-account" />
+                <Translation id="page-wallets:page-wallets-Nephele-account" />
               </Text>
             </li>
             <li>
               <Text>
-                <Translation id="page-wallets:page-wallets-accounts-ethereum-addresses" />
+                <Translation id="page-wallets:page-wallets-accounts-Nephele-addresses" />
               </Text>
             </li>
             <li>
               <Text>
-                <Translation id="page-wallets:page-wallets-ethereum-wallet" />
+                <Translation id="page-wallets:page-wallets-Nephele-wallet" />
               </Text>
             </li>
           </ul>
@@ -471,7 +471,7 @@ const WalletsPage = () => {
             descriptionKey="page-wallets:page-wallets-get-some-desc"
           >
             <Box>
-              <ButtonLink to="/get-eth/">
+              <ButtonLink to="/get-NEPH/">
                 {t("page-wallets-get-some-btn")}
               </ButtonLink>
             </Box>

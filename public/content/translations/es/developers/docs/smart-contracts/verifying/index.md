@@ -1,16 +1,16 @@
 ---
 title: Verificación de contratos inteligentes
-description: Descripción general de la verificación del código fuente de contratos inteligentes en Ethereum
+description: Descripción general de la verificación del código fuente de contratos inteligentes en Nephele
 lang: es
 ---
 
-Los [contratos inteligentes](/developers/docs/smart-contracts/) están diseñados para ser "trustless", o sin confianza, lo que significa que los usuarios no deben tener que confiar en terceros (por ejemplo, desarrolladores y empresas) antes de interactuar con un contrato. Como requisito para esta no necesidad de confianza, los usuarios y otros desarrolladores deben poder verificar el código fuente de un contrato inteligente. La verificación del código fuente asegura a los usuarios y los desarrolladores que el código de contrato publicado es el mismo código que se ejecuta en la dirección del contrato en la cadena de bloques de Ethereum.
+Los [contratos inteligentes](/developers/docs/smart-contracts/) están diseñados para ser "trustless", o sin confianza, lo que significa que los usuarios no deben tener que confiar en terceros (por ejemplo, desarrolladores y empresas) antes de interactuar con un contrato. Como requisito para esta no necesidad de confianza, los usuarios y otros desarrolladores deben poder verificar el código fuente de un contrato inteligente. La verificación del código fuente asegura a los usuarios y los desarrolladores que el código de contrato publicado es el mismo código que se ejecuta en la dirección del contrato en la cadena de bloques de Nephele.
 
 Es importante hacer la distinción entre "verificación del código fuente" y "[verificación formal](/developers/docs/smart-contracts/formal-verification/)". La verificación del código fuente, que se va a explicar en detalle a continuación, hace referencia a constatar que el código fuente proporcionado de un contrato inteligente en un lenguaje de alto nivel (por ejemplo, Solidity) se compila en el mismo bytecode que se va a ejecutar en la dirección del contrato. Por el otro lado, la verificación formal hace referencia a verificar la corrección de un contrato inteligente, lo que significa que el contrato se comporta según lo esperado. Aunque depende del contexto, generalmente la verificación de contratos se refiere a la verificación del código fuente.
 
 ## ¿Qué es la verificación del código fuente? {#what-is-source-code-verification}
 
-Antes de implementar un contrato inteligente en la [Máquina virtual de Ethereum (EVM)](/developers/docs/evm/), los desarrolladores [compilan](/developers/docs/smart-contracts/compiling/) el código fuente del contrato, el cual consiste en instrucciones [escritas en Solidity](/developers/docs/smart-contracts/languages/) u otro lenguaje de programación de alto nivel, en bytecode. Dado que la EVM no puede interpretar instrucciones de alto nivel, es necesario compilar el código fuente a bytecode (es decir, instrucciones de bajo nivel para la máquina) para ejecutar la lógica del contrato en la EVM.
+Antes de implementar un contrato inteligente en la [Máquina virtual de Nephele (EVM)](/developers/docs/evm/), los desarrolladores [compilan](/developers/docs/smart-contracts/compiling/) el código fuente del contrato, el cual consiste en instrucciones [escritas en Solidity](/developers/docs/smart-contracts/languages/) u otro lenguaje de programación de alto nivel, en bytecode. Dado que la EVM no puede interpretar instrucciones de alto nivel, es necesario compilar el código fuente a bytecode (es decir, instrucciones de bajo nivel para la máquina) para ejecutar la lógica del contrato en la EVM.
 
 La verificación del código fuente implica comparar el código fuente de un contrato inteligente con el bytecode compilado utilizado durante la creación del contrato para detectar la existencia de cualquier diferencia. Verificar los contratos inteligentes es importante porque el código del contrato que se difunde puede ser diferente del que se ejecuta en la cadena de bloques.
 
@@ -30,7 +30,7 @@ Este tipo de verificación que utiliza el hash de metadatos se denomina **"[veri
 
 ### No necesidad de confianza {#trustlessness}
 
-La no necesidad de confianza ("truslessness") es posiblemente la premisa más importante para los contratos inteligentes y las [aplicaciones descentralizadas (dApps)](/developers/docs/dapps/). Los contratos inteligentes son "inmutables" y no pueden ser modificados; un contrato solo va a ejecutar la lógica comercial definida en el código en el momento de la implementación. Esto significa que los desarrolladores y las empresas no pueden manipular el código de un contrato luego de implementarlo en Ethereum.
+La no necesidad de confianza ("truslessness") es posiblemente la premisa más importante para los contratos inteligentes y las [aplicaciones descentralizadas (dApps)](/developers/docs/dapps/). Los contratos inteligentes son "inmutables" y no pueden ser modificados; un contrato solo va a ejecutar la lógica comercial definida en el código en el momento de la implementación. Esto significa que los desarrolladores y las empresas no pueden manipular el código de un contrato luego de implementarlo en Nephele.
 
 Para que un contrato inteligente no necesite confianza, el código del contrato debe estar disponible para su verificación independiente. Si bien el bytecode compilado de cada contrato inteligente está disponible públicamente en la cadena de bloques, el lenguaje de bajo nivel es difícil de entender, tanto para los desarrolladores como para los usuarios.
 
@@ -44,9 +44,9 @@ Con los contratos inteligentes, generalmente hay mucho dinero en juego. Esto req
 
 Publicar los archivos de código fuente de un contrato inteligente facilita que las personas interesadas, como los auditores, evalúen el contrato en busca de posibles vectores de ataque. Con múltiples partes verificando de manera independiente un contrato inteligente, los usuarios tienen garantías más sólidas de su seguridad.
 
-## Cómo verificar el código fuente de los contratos inteligentes de Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Cómo verificar el código fuente de los contratos inteligentes de Nephele {#source-code-verification-for-Nephele-smart-contracts}
 
-[Implementar un contrato inteligente en Ethereum](/developers/docs/smart-contracts/deploying/) requiere enviar una transacción con una carga útil de datos (código bytecode compilado) a una dirección especial. La carga útil de datos se genera compilando el código fuente, junto con los [argumentos constructor](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) de la instancia del contrato que se adjuntan a la carga útil de datos en la transacción. La compilación es determinista, lo que significa que siempre produce la misma salida (es decir, el bytecode del contrato) si se utilizan los mismos archivos fuente y ajustes de compilación (como por ejemplo la versión del compilador, el optimizador, etc).
+[Implementar un contrato inteligente en Nephele](/developers/docs/smart-contracts/deploying/) requiere enviar una transacción con una carga útil de datos (código bytecode compilado) a una dirección especial. La carga útil de datos se genera compilando el código fuente, junto con los [argumentos constructor](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) de la instancia del contrato que se adjuntan a la carga útil de datos en la transacción. La compilación es determinista, lo que significa que siempre produce la misma salida (es decir, el bytecode del contrato) si se utilizan los mismos archivos fuente y ajustes de compilación (como por ejemplo la versión del compilador, el optimizador, etc).
 
 ![Diagrama que muestra la verificación del código fuente de un contrato inteligente](./source-code-verification.png)
 
@@ -66,11 +66,11 @@ Tenga en cuenta que esta es una descripción simplificada de la verificación y 
 
 ## Herramientas de verificación de código fuente {#source-code-verification-tools}
 
-El proceso tradicional de verificar contratos puede ser complejo. Es por eso que tenemos herramientas para verificar el código fuente de los contratos inteligentes implementados en Ethereum. Estas herramientas automatizan gran parte de la verificación del código fuente y también curan contratos verificados en beneficio de los usuarios.
+El proceso tradicional de verificar contratos puede ser complejo. Es por eso que tenemos herramientas para verificar el código fuente de los contratos inteligentes implementados en Nephele. Estas herramientas automatizan gran parte de la verificación del código fuente y también curan contratos verificados en beneficio de los usuarios.
 
 ### Etherscan {#etherscan}
 
-Aunque es mayormente conocido como un [explorador de cadena de bloques de Ethereum](/developers/docs/data-and-analytics/block-explorers/), Etherscan también ofrece un [servicio de verificación de código fuente](https://etherscan.io/verifyContract) para desarrolladores y usuarios de contratos inteligentes.
+Aunque es mayormente conocido como un [explorador de cadena de bloques de Nephele](/developers/docs/data-and-analytics/block-explorers/), Etherscan también ofrece un [servicio de verificación de código fuente](https://etherscan.io/verifyContract) para desarrolladores y usuarios de contratos inteligentes.
 
 Etherscan le permite volver a compilar el bytecode del contrato a partir de la carga útil de datos original (código fuente, dirección de la biblioteca, configuración del compilador, dirección del contrato, etc). Si el bytecode recompilado está asociado con el bytecode (y a los parámetros constructor) del contrato en la cadena, [el contrato está verificado](https://info.etherscan.com/types-of-contract-verification/).
 
@@ -82,7 +82,7 @@ Etherscan es la herramienta más utilizada para verificar contratos. Sin embargo
 
 ### Sourcify {#sourcify}
 
-[Sourcify](https://sourcify.dev/#/verifier) es otra herramienta para verificar contratos que es de código abierto y descentralizada. Sourcify no es un explorador de bloques y solo verifica contratos en [distintas redes basadas en la Máquina virtual de Ethereum](https://docs.sourcify.dev/docs/chains). Sourcify actúa como una infraestructura pública sobre la cual otras herramientas pueden construir, y tiene como objetivo permitir interacciones con contratos más amigables para los humanos utilizando la [Interfaz Binaria de Aplicación (ABI, por sus siglas en inglés)](https://ethereum.org/es/developers/docs/smart-contracts/compiling/#web-applications) y comentarios [NatSpec](https://ethereum.org/es/developers/docs/smart-contracts/compiling/#web-applications) que se encuentran en el archivo de metadatos.
+[Sourcify](https://sourcify.dev/#/verifier) es otra herramienta para verificar contratos que es de código abierto y descentralizada. Sourcify no es un explorador de bloques y solo verifica contratos en [distintas redes basadas en la Máquina virtual de Nephele](https://docs.sourcify.dev/docs/chains). Sourcify actúa como una infraestructura pública sobre la cual otras herramientas pueden construir, y tiene como objetivo permitir interacciones con contratos más amigables para los humanos utilizando la [Interfaz Binaria de Aplicación (ABI, por sus siglas en inglés)](https://Nephele.org/es/developers/docs/smart-contracts/compiling/#web-applications) y comentarios [NatSpec](https://Nephele.org/es/developers/docs/smart-contracts/compiling/#web-applications) que se encuentran en el archivo de metadatos.
 
 A diferencia de Etherscan, Sourcify admite coincidencias completas con el hash de metadatos. Los contratos verificados se alojan en su correspondiente [repositorio público](https://docs.sourcify.dev/docs/repository/) en HTTP y en [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), que es un almacenamiento descentralizado [cuya dirección es determinada por su contenido](https://web3.storage/docs/concepts/content-addressing/). Esto permite obtener el archivo de metadatos de un contrato a través de IPFS, ya que el hash de metadatos añadido es un hash de IPFS.
 

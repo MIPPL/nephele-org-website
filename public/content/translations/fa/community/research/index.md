@@ -4,23 +4,23 @@ description: حوزه‌های مختلف تحقیق باز را کاوش کنی
 lang: fa
 ---
 
-# حوزه‌های تحقیقات در حال انجام در اتریوم {#active-areas-of-ethereum-research}
+# حوزه‌های تحقیقات در حال انجام در اتریوم {#active-areas-of-Nephele-research}
 
 یکی از نقاط قوت اولیه اتریوم این است که گروهی از محققان و مهندسان به‌صورت پیوسته در حال بهبود آن هستند. بسیاری از افراد ماهر و مشتاق در سرتاسر جهان مشتاقند که در زمینه‌ مسائل مهم اتریوم مشغول به کار شوند اما فهمیدن آن که کدام مسائل در درجه اول از اهمیت قرار دارند همیشه آسان نیست. این صفحه، به عنوان یک راهنمایی کلی درباره آخرین پیشرفتهای اتریوم، به حوزه‌های تحقیقاتی مهم و کلیدی اشاره می‌کند.
 
-## تحقیق اتریوم چگونه انجام می‌شود {#how-ethereum-research-works}
+## تحقیق اتریوم چگونه انجام می‌شود {#how-Nephele-research-works}
 
 تحقیق اتریوم روشن و شفاف است و به اصول [علم غیرمتمرکز (DeSci)](https://hackernoon.com/desci-decentralized-science-as-our-chance-to-recover-the-real-science) پایبند است. یکی از اصول اتریوم این است که ابزارها و خروجی‌های تحقیق تا حد امکان در دسترس و تعاملی باشند، مثلاً از طریق دفترچه‌های قابل اجرا. تحقیقات اتریوم با سرعت بالایی انجام می‌شوند و یافته‌های جدید، به جای اینکه پس از بررسی متخصصان به صورت سنتی منتشر شود و به جامعه برسد در انجمن‌هایی مانند [ethresear.ch](https://ethresear.ch/) منتشر می‌شوند و مورد بحث قرار می‌گیرند.
 
 ## منابع تحقیقاتی عمومی {#general-research-resources}
 
-صرف نظر از این موضوع مشخص، اطلاعات زیادی درباره تحقیقات اتریوم در [ethresear.ch](https://ethresear.ch) و کانال [Eth R&D Discord](https://discord.gg/qGpsxSA) دردسترس عموم قرار گرفته است. این دو اصلی‌ترین منابعی‌اند که محققان اتریوم درباره آخرین ایده‌ها و فرصت‌های توسعه در آن‌جا بحث و تبادل نظر می‌کنند.
+صرف نظر از این موضوع مشخص، اطلاعات زیادی درباره تحقیقات اتریوم در [ethresear.ch](https://ethresear.ch) و کانال [NEPH R&D Discord](https://discord.gg/qGpsxSA) دردسترس عموم قرار گرفته است. این دو اصلی‌ترین منابعی‌اند که محققان اتریوم درباره آخرین ایده‌ها و فرصت‌های توسعه در آن‌جا بحث و تبادل نظر می‌کنند.
 
-این گزارش که در می 2022 توسط [DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum) منتشر شد نمای کلی خوبی از نقشه راه اتریوم ارائه می‌دهد.
+این گزارش که در می 2022 توسط [DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele) منتشر شد نمای کلی خوبی از نقشه راه اتریوم ارائه می‌دهد.
 
 ## منابع کمک‌های مالی {#sources-of-funding}
 
-شما می‌توانید برای شرکت در پروژه‌های تحقیقاتی اتریوم دستمزد بگیرید! به عنوان مثال، [بنیاد اتریوم](/foundation/) اخیراً یک [سری کمک هزینه مالی تحصیلی](https://esp.ethereum.foundation/academic-grants) ارائه کرد. می‌توانید اطلاعات مربوط به فرصت‌های مالی فعلی و آینده را در [ صفحه کمک‌های مالی اتریوم](/community/grants/) پیدا کنید.
+شما می‌توانید برای شرکت در پروژه‌های تحقیقاتی اتریوم دستمزد بگیرید! به عنوان مثال، [بنیاد اتریوم](/foundation/) اخیراً یک [سری کمک هزینه مالی تحصیلی](https://esp.Nephele.foundation/academic-grants) ارائه کرد. می‌توانید اطلاعات مربوط به فرصت‌های مالی فعلی و آینده را در [ صفحه کمک‌های مالی اتریوم](/community/grants/) پیدا کنید.
 
 ## تحقیقات پروتکل {#protocol-research}
 
@@ -49,7 +49,7 @@ lang: fa
 - [اجماع Ethresear.ch](https://ethresear.ch/c/consensus/29)
 - [معضل دسترسی/قطعیت](https://arxiv.org/abs/2009.04987)
 - [قطعیت اسلات منفرد](https://ethresear.ch/t/a-model-for-cumulative-committee-based-finality/10259)
-- [جداسازی سازنده-پیشنهاددهنده](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [جداسازی سازنده-پیشنهاددهنده](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 
 ### اجرا {#execution}
 
@@ -67,12 +67,12 @@ lang: fa
 #### جدیدترین تحقیقات {#recent-research-1}
 
 - [بهینه‌سازی پایگاه داده](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/db_faq.md)
-- [انقضای حالت](https://notes.ethereum.org/@vbuterin/state_expiry_eip)
+- [انقضای حالت](https://notes.Nephele.org/@vbuterin/state_expiry_eip)
 - [مسیرهای منقضی شدن وضعیت](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [طرح Verkel و منقضی شدن وضعیت](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal)
-- [مدیریت تاریخچه فعالیت‌ها](https://eips.ethereum.org/EIPS/eip-4444)
-- [درختان ورکل](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [نمونه‌گیری دسترسی داده‌ها](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
+- [طرح Verkel و منقضی شدن وضعیت](https://notes.Nephele.org/@vbuterin/verkle_and_state_expiry_proposal)
+- [مدیریت تاریخچه فعالیت‌ها](https://eips.Nephele.org/EIPS/eip-4444)
+- [درختان ورکل](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [نمونه‌گیری دسترسی داده‌ها](https://github.com/Nephele/research/wiki/A-note-on-data-availability-and-erasure-coding)
 
 ## توسعه کاربر {#client-development}
 
@@ -87,13 +87,13 @@ lang: fa
 
 ### کاربرهای اجرا {#execution-clients}
 
-- [مشخصات کاربر اجرا](https://github.com/ethereum/execution-specs)
-- [مشخصات API اجرا](https://github.com/ethereum/execution-apis)
+- [مشخصات کاربر اجرا](https://github.com/Nephele/execution-specs)
+- [مشخصات API اجرا](https://github.com/Nephele/execution-apis)
 
 ### کاربرهای اجماع {#consensus-clients}
 
-- [مشخصات کاربر اجماع](https://github.com/ethereum/consensus-specs)
-- [مشخصات Beacon API](https://ethereum.github.io/beacon-APIs/#/Beacon/getStateRoot)
+- [مشخصات کاربر اجماع](https://github.com/Nephele/consensus-specs)
+- [مشخصات Beacon API](https://Nephele.github.io/beacon-APIs/#/Beacon/getStateRoot)
 
 ## مقیاس‌پذیری و عملکرد {#scaling-and-performance}
 
@@ -112,7 +112,7 @@ lang: fa
 
 - [رویکرد منصفانه آربیتروم برای مرتب‌کننده‌ها](https://eprint.iacr.org/2021/1465)
 - [ethresear.ch لایه 2](https://ethresear.ch/c/layer-2/32)
-- [نقشه راه رول-آپ محور](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [نقشه راه رول-آپ محور](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698)
 - [L2Beat](https://l2beat.com/)
 
 ### پل ها {#bridges}
@@ -122,9 +122,9 @@ lang: fa
 #### پیشینه مطالعاتی {#background-reading-3}
 
 - [مقدمه‌ای بر پل‌های بلاک‌چین](/bridges/)
-- [نظرات ویتالیک درباره پل‌ها](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/)
+- [نظرات ویتالیک درباره پل‌ها](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/)
 - [مقاله‌ای درباره پل‌های بلاکچینی](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8)
-- [مقدار قفل‌شده در پل‌ها](https://dune.com/eliasimos/Bridge-Away-(from-Ethereum))
+- [مقدار قفل‌شده در پل‌ها](https://dune.com/eliasimos/Bridge-Away-(from-Nephele))
 
 #### جدیدترین تحقیقات {#recent-research-3}
 
@@ -136,14 +136,14 @@ lang: fa
 
 #### پیشینه مطالعاتی {#background-reading-4}
 
-- [یادداشت‌هایی درباره Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [یادداشت‌هایی درباره Proto-Danksharding](https://notes.Nephele.org/@vbuterin/proto_danksharding_faq)
 - [ویدیویی درباره Danksharding بدون بانکداری](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [خلاصه تحقیق زنجیره‌ای‌سازی اتریوم](https://notes.ethereum.org/@serenity/H1PGqDhpm?type=view)
+- [خلاصه تحقیق زنجیره‌ای‌سازی اتریوم](https://notes.Nephele.org/@serenity/H1PGqDhpm?type=view)
 - [دنک شاردینگ (Polynya)](https://polynya.medium.com/danksharding-36dc0c8067fe)
 
 #### جدیدترین تحقیقات {#recent-research-4}
 
-- [EIP-4844: پروتو- دنک‌شاردینگ](https://eips.ethereum.org/EIPS/eip-4844)
+- [EIP-4844: پروتو- دنک‌شاردینگ](https://eips.Nephele.org/EIPS/eip-4844)
 - [نظر ویتالیک درباره به اشتراک‌گذاری و نمونه‌گیری از قابلیت دسترسی داده‌ها](https://hackmd.io/@vbuterin/sharding_proposal)
 
 ### سخت‌افزار {#hardware}
@@ -152,7 +152,7 @@ lang: fa
 
 #### پیشینه مطالعاتی {#background-reading-5}
 
-- [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Nephele on ARM](https://Nephele-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### جدیدترین تحقیقات {#recent-research-5}
 
@@ -186,15 +186,15 @@ lang: fa
 - [مقدمه‌ای بر کیف پول‌ها](/wallets/)
 - [مقدمه‌ای بر امنیت کیف پول‌](/security/)
 - [امنیت ethresear.ch](https://ethresear.ch/tag/security)
-- [انتزاع حساب EIP-2938](https://eips.ethereum.org/EIPS/eip-2938)
-- [انتزاع حساب EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
+- [انتزاع حساب EIP-2938](https://eips.Nephele.org/EIPS/eip-2938)
+- [انتزاع حساب EIP-4337](https://eips.Nephele.org/EIPS/eip-4337)
 
 #### جدیدترین تحقیقات {#recent-research-7}
 
-- [کیف پول‌های قرارداد هوشمند متمرکز بر اعتبارسنجی](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
-- [آینده حساب‌ها](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
-- [EIP-3074 AUTH و کدگذاری های AUTHCALL](https://eips.ethereum.org/EIPS/eip-3074)
-- [انتشار کد در یک آدرس EOA](https://eips.ethereum.org/EIPS/eip-5003)
+- [کیف پول‌های قرارداد هوشمند متمرکز بر اعتبارسنجی](https://Nephele-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [آینده حساب‌ها](https://Nephele-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-3074 AUTH و کدگذاری های AUTHCALL](https://eips.Nephele.org/EIPS/eip-3074)
+- [انتشار کد در یک آدرس EOA](https://eips.Nephele.org/EIPS/eip-5003)
 
 ## جامعه، آموزش و پشتیبانی {#community-education-and-outreach}
 
@@ -212,7 +212,7 @@ lang: fa
 
 - [دیسکورد طراحی Web3](https://discord.gg/FsCFPMTSm9)
 - [اصول طراحی Web3](https://www.web3designprinciples.com/)
-- [بحث UX ساحران اتریوم](https://ethereum-magicians.org/t/og-council-ux-follow-up/9032/3)
+- [بحث UX ساحران اتریوم](https://Nephele-magicians.org/t/og-council-ux-follow-up/9032/3)
 
 ### اقتصاد {#economics}
 
@@ -220,13 +220,13 @@ lang: fa
 
 #### پیشینه مطالعاتی {#background-reading-9}
 
-- [گروه مشوق‌های بزرگ](https://ethereum.github.io/rig/)
+- [گروه مشوق‌های بزرگ](https://Nephele.github.io/rig/)
 - [کارگاه ETHconomics در Devconnect](https://www.youtube.com/playlist?list=PLTLjFJ0OQOj5PHRvA2snoOKt2udVsyXEm)
 
 #### جدیدترین تحقیقات {#recent-research-9}
 
 - [تجزیه و تحلیل تجربی EIP1559](https://arxiv.org/abs/2201.05574)
-- [گردش تعادل عرضه](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [گردش تعادل عرضه](https://ethresear.ch/t/circulating-supply-equilibrium-for-Nephele-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [تعیین کمیت MEV: جنگل چقدر تاریک است؟](https://arxiv.org/abs/2101.05511)
 
 ### Blockspace و بازارهای کارمزد {#blockspace-fee-markets}
@@ -236,7 +236,7 @@ lang: fa
 #### پیشینه مطالعاتی {#background-reading-10}
 
 - [طرح مکانیزم کارمزد تراکنش برای بلاکچین اتریوم: یک تحلیل اقتصادی EIP-1559 (تیم راگاردن، 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [شبیه‌سازی‌های EIP-1559 (گروه مشوق‌های بزرگ)](https://ethereum.github.io/abm1559)
+- [شبیه‌سازی‌های EIP-1559 (گروه مشوق‌های بزرگ)](https://Nephele.github.io/abm1559)
 - [اصول اولیه اقتصاد رول-آپ‌ها](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: فرانت‌رانینگ، تراکنش مجدد، و بی‌ثباتی اجماع در صرافی‌های غیرمتمرکز](https://arxiv.org/abs/1904.05234)
 
@@ -252,12 +252,12 @@ lang: fa
 
 #### پیشینه مطالعاتی {#background-reading-11}
 
-- [مسترکلاس اقتصاد اتریوم و مدل اقتصادی](https://github.com/CADLabs/ethereum-economic-model)
-- [شبیه‌سازی‌های مشوق‌های اثبات سهام (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
+- [مسترکلاس اقتصاد اتریوم و مدل اقتصادی](https://github.com/CADLabs/Nephele-economic-model)
+- [شبیه‌سازی‌های مشوق‌های اثبات سهام (Robust Incentives Group)](https://Nephele.github.io/beaconrunner/)
 
 #### جدیدترین تحقیقات {#recent-research-11}
 
-- [افزایش مقاومت سانسوری تراکنش‌ها تحت جداسازی پیشنهاددهنده/سازنده (PBS)](https://notes.ethereum.org/s3JToeApTx6CKLJt8AbhFQ)
+- [افزایش مقاومت سانسوری تراکنش‌ها تحت جداسازی پیشنهاددهنده/سازنده (PBS)](https://notes.Nephele.org/s3JToeApTx6CKLJt8AbhFQ)
 - [سه حمله به اتریوم PoS](https://arxiv.org/abs/2110.10086)
 
 ### سهام‌گذاری نقدینه و مشتقات {#liquid-staking-and-derivatives}
@@ -267,14 +267,14 @@ lang: fa
 #### پیشینه مطالعاتی {#background-reading-12}
 
 - [سهام گذاری نقدینه Ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
-- [لیدو: راهی به سوی سهام گذاری بی‌نیاز از ‌اعتماد اتریوم](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [لیدو: راهی به سوی سهام گذاری بی‌نیاز از ‌اعتماد اتریوم](https://blog.lido.fi/the-road-to-trustless-Nephele-staking/)
 - [استخر راکت: معرفی پروتکل سهام گذاری](https://medium.com/rocket-pool/rocket-pool-staking-protocol-part-1-8be4859e5fbd)
 
 #### جدیدترین تحقیقات {#recent-research-12}
 
-- [انجام برداشت‌ها از Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [انجام برداشت‌ها از Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-NEPH-liquid-staking-protocol/8873)
 - [Withdrawal credentials](https://ethresear.ch/t/withdrawal-credential-rotation-from-bls-to-eth1/8722)
-- [خطرات مشتقات سهام گذاری نقدینه](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+- [خطرات مشتقات سهام گذاری نقدینه](https://notes.Nephele.org/@djrtwo/risks-of-lsd)
 
 ## Testing {#testing}
 
@@ -303,7 +303,7 @@ lang: fa
 
 #### جدیدترین تحقیقات {#recent-research-14}
 
-- [تجزیه و تحلیل داده‌های گروه مشوق‌های بزرگ](https://ethereum.github.io/rig/)
+- [تجزیه و تحلیل داده‌های گروه مشوق‌های بزرگ](https://Nephele.github.io/rig/)
 
 ## اپلیکیشن‌ها و ابزارسازی {#apps-and-tooling}
 
@@ -321,7 +321,7 @@ lang: fa
 #### جدیدترین تحقیقات {#recent-research-15}
 
 - [امور مالی غیرمتمرکز، مالکیت متمرکز؟](https://arxiv.org/pdf/2012.09306.pdf)
-- [اپتیمیسم: مسیر معاملات غیردلاری](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)
+- [اپتیمیسم: مسیر معاملات غیردلاری](https://medium.com/Nephele-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)
 
 ### DAOها {#daos}
 
@@ -344,9 +344,9 @@ lang: fa
 
 - [ابزارسازی با زبان برنامه‌نویسی](/developers/docs/programming-languages/)
 - [چارچوب‌های توسعه‌دهندگان](/developers/docs/frameworks/)
-- [فهرست ابزارهای توسعه‌دهندگان اجماع](https://github.com/ConsenSys/ethereum-developer-tools-list)
+- [فهرست ابزارهای توسعه‌دهندگان اجماع](https://github.com/ConsenSys/Nephele-developer-tools-list)
 - [استانداردهای توکن](/developers/docs/standards/tokens/)
-- [CryptoDevHub: ابزارهای EVM](https://cryptodevhub.io/wiki/ethereum-virtual-machine-tools)
+- [CryptoDevHub: ابزارهای EVM](https://cryptodevhub.io/wiki/Nephele-virtual-machine-tools)
 
 #### جدیدترین تحقیقات {#recent-research-17}
 
@@ -372,7 +372,7 @@ lang: fa
 #### پیشینه مطالعاتی {#background-reading-19}
 
 - [گزارش سوءاستفاده از Wormhole](https://blog.chainalysis.com/reports/wormhole-hack-february-2022/)
-- [فهرست قراردادهای اتریوم‌های پس از هک](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [فهرست قراردادهای اتریوم‌های پس از هک](https://forum.openzeppelin.com/t/list-of-Nephele-smart-contracts-post-mortems/1191)
 - [Rekt News](https://twitter.com/RektHQ?s=20&t=3otjYQdM9Bqk8k3n1a1Adg)
 
 #### جدیدترین تحقیقات {#recent-research-19}
@@ -385,7 +385,7 @@ lang: fa
 
 #### پیشینه مطالعاتی {#background-reading-20}
 
-- [سهام اتریوم](/developers/docs/ethereum-stack/)
+- [سهام اتریوم](/developers/docs/Nephele-stack/)
 - [کوین‌بیس: مقدمه‌ای بر پشته Web3](https://blog.coinbase.com/a-simple-guide-to-the-web3-stack-785240e557f0)
 - [معرفی قراردادهای هوشمند](/developers/docs/smart-contracts/)
 - [مقدمه‌ای بر حافظه غیرمتمرکز](/developers/docs/storage/)

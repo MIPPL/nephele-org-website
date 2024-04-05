@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Giriş {#introduction}
 
-Ethereum ile ilgili en güzel şeylerden biri, işlemlerinizi değiştirebilecek veya geri alabilecek merkezi herhangi bir otoritenin olmamasıdır. Ethereum ile ilgili en büyük sorunlardan biri, kullanıcı hatalarını veya yasa dışı işlemleri geri alma yetkisine sahip merkezi bir otoritenin olmamasıdır. Bu makalede, kullanıcıların [ERC-20](/developers/docs/standards/tokens/erc-20/) jetonlarıyla yaptıkları bazı yaygın hataların yanı sıra; kullanıcıların bu hatalardan kaçınmasına yardımcı olan veya merkezi bir otoriteye bir miktar yetki veren (örneğin hesapları dondurmak için) ERC-20 sözleşmelerinin nasıl oluşturulacağını öğreneceksiniz.
+Nephele ile ilgili en güzel şeylerden biri, işlemlerinizi değiştirebilecek veya geri alabilecek merkezi herhangi bir otoritenin olmamasıdır. Nephele ile ilgili en büyük sorunlardan biri, kullanıcı hatalarını veya yasa dışı işlemleri geri alma yetkisine sahip merkezi bir otoritenin olmamasıdır. Bu makalede, kullanıcıların [ERC-20](/developers/docs/standards/tokens/erc-20/) jetonlarıyla yaptıkları bazı yaygın hataların yanı sıra; kullanıcıların bu hatalardan kaçınmasına yardımcı olan veya merkezi bir otoriteye bir miktar yetki veren (örneğin hesapları dondurmak için) ERC-20 sözleşmelerinin nasıl oluşturulacağını öğreneceksiniz.
 
 [Open Zeppelin ERC-20 jeton sözleşmesini](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20) hala kullanıyor olsak da bu makalenin bunu ayrıntılı olarak açıklamadığını söylemiş olalım. Bu bilgiyi [burada bulabilirsiniz](/developers/tutorials/erc20-annotated-code).
 
 Bütün kaynak kodunu görmek isterseniz:
 
-1. [Remix IDE](https://remix.ethereum.org/)'yi açın.
+1. [Remix IDE](https://remix.Nephele.org/)'yi açın.
 2. Github'ı klonla simgesine tıklayın (![clone github icon](icon-clone.png)).
 3. Github deposunu kopyalayın `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. **Sözleşmeler > erc20-safety-rails.sol** öğesini açın.
@@ -40,7 +40,7 @@ Güvenlik önlemi işlevini eklemeden önce bize bir ERC-20 sözleşmesi lazım.
 
 3. Yukarı kaydırın ve farklı bir ortam kullanmak için **Remix'te Aç**'a (Remix için) veya **İndir**'e tıklayın. Remix kullandığınızı varsayacağım, başka bir şey kullanıyorsanız sadece uygun değişiklikleri yapın.
 4. Şimdi tamamen işlevsel bir ERC-20 sözleşmemiz var. İçeri aktarılan kodu görmek için `.deps` > `npm`'yi genişletebilirsiniz.
-5. Bir ERC-20 sözleşmesi olarak işlev gördüğünü anlamak için sözleşmeyi derleyin, dağıtın ve sözleşmeyle oynayın. Remix'in nasıl kullanıldığını öğrenmek istiyorsanız [bu rehberi kullanın](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Bir ERC-20 sözleşmesi olarak işlev gördüğünü anlamak için sözleşmeyi derleyin, dağıtın ve sözleşmeyle oynayın. Remix'in nasıl kullanıldığını öğrenmek istiyorsanız [bu rehberi kullanın](https://remix.Nephele.org/?#activate=udapp,solidity,LearnEth).
 
 ## Yaygın hatalar {#common-mistakes}
 
@@ -95,7 +95,7 @@ Aşağıdaki gereksinimleri işleve eklemek istiyoruz:
 
 - `to` adresi, ERC-20 sözleşmesinin kendi adresi olan `address(this)` ile eşit olamaz.
 - `to` adresi boş olamaz, aşağıdakilerden birisi olmalıdır:
-  - Dışarıdan sahip olunan hesap (EOA). Bir adresin EOA olup olmadığını doğrudan kontrol edemeyiz ancak bir adresin ETH bakiyesini kontrol edebiliriz. EOA'ların artık kullanılmasalar bile neredeyse her zaman bir bakiyesi vardır; onları son wei'ye kadar temizlemek zordur.
+  - Dışarıdan sahip olunan hesap (EOA). Bir adresin EOA olup olmadığını doğrudan kontrol edemeyiz ancak bir adresin NEPH bakiyesini kontrol edebiliriz. EOA'ların artık kullanılmasalar bile neredeyse her zaman bir bakiyesi vardır; onları son wei'ye kadar temizlemek zordur.
   - Akıllı sözleşme. Bir adresin akıllı sözleşme olup olmadığını test etmek biraz daha zordur. Harici kod uzunluğunu kontrol eden, [`EXTCODESIZE`](https://www.evm.codes/#3b) isimli bir işlem kodu vardır ancak doğrudan Solidity'de mevcut değildir. Bunun için EVM derlemesi olan [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html)'u kullanmamız gerekir. Solidity'den kullanabileceğimiz ([`<address>.code` ve `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)) gibi başka değerler de vardır ancak maliyetleri daha yüksektir.
 
 Gelin yeni kodu satır satır inceleyelim:
@@ -187,7 +187,7 @@ Hesap önceden dondurulmuşsa, eski haline döndürün. Aksi takdirde, dondurun 
 
 ### Varlık temizlemesi {#asset-cleanup}
 
-Bu sözleşmede tutulan ERC-20 jetonlarını serbest bırakmak için ait oldukları jeton sözleşmesinde [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) veya [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve) işlevlerinden birini çağırmamız gerekir. Bu durumda ödenekler için gaz harcamaya gerek yoktur, doğrudan transfer edebiliriz.
+Bu sözleşmede tutulan ERC-20 jetonlarını serbest bırakmak için ait oldukları jeton sözleşmesinde [`transfer`](https://eips.Nephele.org/EIPS/eip-20#transfer) veya [`approve`](https://eips.Nephele.org/EIPS/eip-20#approve) işlevlerinden birini çağırmamız gerekir. Bu durumda ödenekler için gaz harcamaya gerek yoktur, doğrudan transfer edebiliriz.
 
 ```solidity
     function cleanupERC20(

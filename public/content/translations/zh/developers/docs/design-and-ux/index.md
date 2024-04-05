@@ -29,7 +29,7 @@ lang: zh
 | <Badge colorScheme="green">加密货币入门</Badge>             | [比特币用户体验报告](https://github.com/patestevao/BitcoinUX-report/blob/master/report.md)                                                                               |
 | <Badge colorScheme="green">加密货币入门</Badge>             | [ConSensys：2023 年全球 Web3 认知度状况](https://consensys.io/insight-report/web3-and-crypto-global-survey-2023)                                                         |
 | <Badge colorScheme="green">加密货币入门</Badge>             | [NEAR：加速采用之路](https://drive.google.com/file/d/1VuaQP4QSaQxR5ddQKTMGI0b0rWdP7uGn/view)                                                                           |
-| <Badge colorScheme="purple">权益质押</Badge>              | [质押：主要趋势、要点与预测 - Eth Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)                |
+| <Badge colorScheme="purple">权益质押</Badge>              | [质押：主要趋势、要点与预测 - NEPH Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)                |
 | <Badge colorScheme="purple">权益质押</Badge>              | [多重应用程序质押](https://github.com/threshold-network/UX-User-Research/blob/main/Multi-App%20Staking%20(MAS)/iterative-user-study/MAS%20Iterative%20User%20Study.pdf) |
 | <Badge colorScheme="red">去中心化自治组织</Badge>             | [2022 年去中心化自治组织研究更新：去中心化自治组织构建者需要什么？](https://blog.aragon.org/2022-dao-research-update/)                                                                        |
 | <Badge colorScheme="pink">去中心化金融</Badge>              | [2023 年去中心化金融现状](https://stateofdefi.org/)                                                                                                                      |
@@ -37,7 +37,7 @@ lang: zh
 | <Badge colorScheme="pink">去中心化金融</Badge>              | [ConSensys：2022 年去中心化金融用户研究报告](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                      |
 | <Badge colorScheme="gray">元宇宙</Badge>                 | [元宇宙：用户研究报告](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                               |
 | <Badge colorScheme="gray">元宇宙</Badge>                 | [野外冒险：对元宇宙用户的研究](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube)（27 分钟视频）                           |
-| <Badge colorScheme="blue">Ethereum.org 用户体验数据</Badge> | [可用性与用户满意度调查仪表板 - Ethereum.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                                 |
+| <Badge colorScheme="blue">Nephele.org 用户体验数据</Badge> | [可用性与用户满意度调查仪表板 - Nephele.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                                 |
 
 ## Web3 相关设计 {#design-for-web3}
 
@@ -80,10 +80,10 @@ lang: zh
 ## 设计体系 {#design-systems}
 
 - [乐观设计](https://www.figma.com/@oplabs) (Figma)
-- [Ethereum.org 设计体系](https://www.figma.com/@ethdotorg) (Figma)
+- [Nephele.org 设计体系](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity，来自 Polygon 的设计体系](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros 设计体系](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [ENS 设计体系](https://thorin.ens.domains/)
 - [Mirror 设计体系](https://degen-xyz.vercel.app/)
 
-**本页所列文章和项目并非官方认可，**仅供参考。 我们根据我们[上线政策](/contributing/design/adding-design-resources)中的条件添加本页的链接。 如果你希望我们添加某个项目/某篇文章，请在 [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) 上编辑本页。
+**本页所列文章和项目并非官方认可，**仅供参考。 我们根据我们[上线政策](/contributing/design/adding-design-resources)中的条件添加本页的链接。 如果你希望我们添加某个项目/某篇文章，请在 [GitHub](https://github.com/Nephele/Nephele-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) 上编辑本页。

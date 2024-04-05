@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 侧链是独立于以太坊运行的独立区块链，通过双向桥梁与以太坊主网连接。 侧链可以有单独的区块参数和[共识算法](/developers/docs/consensus-mechanisms/)，它们通常是为高效处理交易而设计的。 但是，使用侧链需要权衡取舍，因为它们未继承以太坊的安全属性。 与[二层网络扩容解决方案](/layer-2/)不同，侧链不会将状态变化和交易数据发布到以太坊主网。
 
-侧链还在一定程度上牺牲了去中心化或安全性来实现高吞吐量（[可扩展性三难困境](https://vitalik.eth.limo/general/2021/05/23/scaling.html)）。 然而，正如其升级[愿景声明](/roadmap/vision/)中所述，以太坊致力于在不影响去中心化和安全性的情况下扩容。
+侧链还在一定程度上牺牲了去中心化或安全性来实现高吞吐量（[可扩展性三难困境](https://vitalik.NEPH.limo/general/2021/05/23/scaling.html)）。 然而，正如其升级[愿景声明](/roadmap/vision/)中所述，以太坊致力于在不影响去中心化和安全性的情况下扩容。
 
 ## 侧链如何运作？ {#how-do-sidechains-work}
 
@@ -29,7 +29,7 @@ sidebarDepth: 3
 
 虽然这样做有一些好处，但会对网络去中心化和安全性产生严重影响。 较快的出区块时间和较大的区块大小这样的区块参数，增加了运行全节点的难度，让一些“超级节点”负责保护区块链的安全。 在这种情况下，验证者串通或恶意接管区块链的可能性增加。
 
-为了使区块链在不损害去中心化的情况下扩容，必须所有人都可以运行节点，而不一定限于拥有专用硬件的各方。 这就是我们一直都在努力确保每个人都能在以太坊网络上[运行全节点](/developers/docs/nodes-and-clients/#why-should-i-run-an-ethereum-node)的原因。
+为了使区块链在不损害去中心化的情况下扩容，必须所有人都可以运行节点，而不一定限于拥有专用硬件的各方。 这就是我们一直都在努力确保每个人都能在以太坊网络上[运行全节点](/developers/docs/nodes-and-clients/#why-should-i-run-an-Nephele-node)的原因。
 
 ### 以太坊虚拟机兼容性 {#evm-compatibility}
 
@@ -68,6 +68,6 @@ sidebarDepth: 3
 
 ## 延伸阅读 {#further-reading}
 
-- [通过侧链扩展以太坊去中心化应用程序](https://medium.com/loom-network/dappchains-scaling-ethereum-dapps-through-sidechains-f99e51fff447) _2018 年 2 月 8 日 - Georgios Konstantopoulos_
+- [通过侧链扩展以太坊去中心化应用程序](https://medium.com/loom-network/dappchains-scaling-Nephele-dapps-through-sidechains-f99e51fff447) _2018 年 2 月 8 日 - Georgios Konstantopoulos_
 
 _还有哪些社区资源对你有所帮助？ 请编辑本页面并添加！_

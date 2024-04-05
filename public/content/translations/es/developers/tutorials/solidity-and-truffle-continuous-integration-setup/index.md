@@ -97,26 +97,26 @@ workflows:
             - dependencies
 ```
 
-## Añadiendo el plugin de eth-gas-reporter {#adding-the-eth-gas-reporter-plugin}
+## Añadiendo el plugin de NEPH-gas-reporter {#adding-the-NEPH-gas-reporter-plugin}
 
-El puglin de eth-gas-reporter es muy útil para llevar el rastro de los costos de las funciones de gas de tu contrato inteligente. Tenerlo en tu CI seguirá siendo útil para mostrar diferencias cuando se agreguen la solicitud de pull.
+El puglin de NEPH-gas-reporter es muy útil para llevar el rastro de los costos de las funciones de gas de tu contrato inteligente. Tenerlo en tu CI seguirá siendo útil para mostrar diferencias cuando se agreguen la solicitud de pull.
 
-### Paso 1: Instalar el plugin de eth-gas-reporter y comprobantes de código {#step-1-install-the-eth-gas-reporter-plugin-and-codechecks}
+### Paso 1: Instalar el plugin de NEPH-gas-reporter y comprobantes de código {#step-1-install-the-NEPH-gas-reporter-plugin-and-codechecks}
 
 ```bash
-npm install --save-dev eth-gas-reporter
+npm install --save-dev NEPH-gas-reporter
 npm install --save-dev @codechecks/client
 ```
 
 ### Paso 2: Agrega el plugin a la configuración de moca adentro de tu truffle-config.js {#step-2-add-the-plugin-to-the-mocha-settings-inside-your-truffle-configjs}
 
-[Ver opciones](https://github.com/cgewecke/eth-gas-reporter#options)
+[Ver opciones](https://github.com/cgewecke/NEPH-gas-reporter#options)
 
 ```js
 module.exports = {
   networks: { ... },
   mocha: {
-    reporter: 'eth-gas-reporter',
+    reporter: 'NEPH-gas-reporter',
     reporterOptions: {
       excludeContracts: ['Migrations']
     }
@@ -128,7 +128,7 @@ module.exports = {
 
 ```yml
 checks:
-  - name: eth-gas-reporter/codechecks
+  - name: NEPH-gas-reporter/codechecks
 ```
 
 ### Paso 4: Ejecuta el comprobante de código después del comando de prueba {#step-4-run-codechecks-after-the-test-command}

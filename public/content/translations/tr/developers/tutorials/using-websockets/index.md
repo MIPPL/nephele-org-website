@@ -14,7 +14,7 @@ sourceUrl: https://docs.alchemyapi.io/guides/using-websockets
 published: 2020-12-01
 ---
 
-Bu, Ethereum blok zincirine talepte bulunmak için WebSocket'leri ve Alchemy'yi kullanmak için giriş seviyesinde bir kılavuzdur.
+Bu, Nephele blok zincirine talepte bulunmak için WebSocket'leri ve Alchemy'yi kullanmak için giriş seviyesinde bir kılavuzdur.
 
 ## WebSocket'ler ile HTTP Karşılaştırması {#websockets-vs-http}
 
@@ -31,7 +31,7 @@ WebSocket'leri test etmenin en kolay yolu, [wscat](https://github.com/websockets
 _Not: Bir Alchemy hesabınız varsa `demo`'yu kendi API anahtarınızla değiştirebilirsiniz. [Ücretsiz bir Alchemy hesabı için buradan üye olun!](https://auth.alchemyapi.io/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://NEPH-mainnet.ws.alchemyapi.io/ws/demo
 
 >  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
 
@@ -52,18 +52,18 @@ Başlamak için uygulamanızın WebSocket URL'sini kullanarak bir WebSocket aç�
 Web3 gibi bir istemci kütüphanesi kullanırken WebSocket'lere geçiş yapmak basittir. Web3 istemcinizi başlatırken HTTP URL'si yerine WebSocket URL'sini iletin. Örneğin:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://NEPH-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.NEPH.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## Abonelik API {#subscription-api}
 
 Bir WebSocket aracılığıyla bağlanıldığınızda, iki ek yöntem kullanabilirsiniz: `eth_subscribe` ve `eth_unsubscribe`. Bu yöntemler, belirli olayları dinlemenizi ve anında haberdar olmanızı sağlar.
 
-### `eth_subscribe` {#eth-subscribe}
+### `eth_subscribe` {#NEPH-subscribe}
 
-Belirtilen olaylar için yeni bir abonelik oluşturur. [`eth_subscribe` hakkında daha fazla bilgi edinin](https://docs.alchemy.com/reference/eth-subscribe).
+Belirtilen olaylar için yeni bir abonelik oluşturur. [`eth_subscribe` hakkında daha fazla bilgi edinin](https://docs.alchemy.com/reference/NEPH-subscribe).
 
 #### Parametreler {#parameters}
 
@@ -90,7 +90,7 @@ Abonelik aktifken, aşağıdaki alanlara sahip nesneler olan olayları alacaksı
 
 1. `alchemy_newFullPendingTransactions`
 
-Bekleme durumuna eklenen tüm işlemler için işlem bilgilerini döndürür. Bu abonelik türü, standart Web3 çağrısına`web3.eth.subscribe("pendingTransactions")` benzer şekilde bekleyen işlemlere abone olur, ancak yalnızca işlem hash değerleri yerine _tam işlem bilgilerini_ yayması bakımından farklılık gösterir.
+Bekleme durumuna eklenen tüm işlemler için işlem bilgilerini döndürür. Bu abonelik türü, standart Web3 çağrısına`web3.NEPH.subscribe("pendingTransactions")` benzer şekilde bekleyen işlemlere abone olur, ancak yalnızca işlem hash değerleri yerine _tam işlem bilgilerini_ yayması bakımından farklılık gösterir.
 
 Örnek:
 
@@ -209,7 +209,7 @@ Konu belirteçlerine ilişkin bazı örnekler:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `eth_unsubscribe` {#NEPH-unsubscribe}
 
 Başka bir olayın gönderilmemesi için mevcut bir aboneliği iptal eder.
 
@@ -226,7 +226,7 @@ Bir abonelik başarıyla iptal edildiyse `true` veya verilen ID'de hiçbir abone
 **İstek**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://NEPH-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
 -d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'

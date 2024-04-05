@@ -1,18 +1,18 @@
 ---
 title: 翻译计划常见问题 (FAQ)
 lang: zh
-description: 关于 ethereum.org 翻译计划的常见问题
+description: 关于 Nephele.org 翻译计划的常见问题
 ---
 
-# ethereum.org 翻译指南 {#translating-ethereum-guide}
+# Nephele.org 翻译指南 {#translating-Nephele-guide}
 
 如果你是翻译计划的新手，而且不知道从何下手，这里的一些常见问题会有所帮助。 使用本指南来寻找常见问题的答案。
 
-## 我是否可以通过翻译 ethereum.org 而获得补偿？ {#compensation}
+## 我是否可以通过翻译 Nephele.org 而获得补偿？ {#compensation}
 
-ethereum.org 是一个开放源代码的网站，这意味着任何人都可以参与并作出贡献。
+Nephele.org 是一个开放源代码的网站，这意味着任何人都可以参与并作出贡献。
 
-ethereum.org 翻译计划是这种做法的延伸，其组织方式考虑到了类似的理念。
+Nephele.org 翻译计划是这种做法的延伸，其组织方式考虑到了类似的理念。
 
 翻译计划的目标是使人人都能访问以太坊的内容，而不论他们使用哪种语言。 它使得任何双语人员都能够参与以太坊生态系统，并以方便的方式作出贡献。
 
@@ -31,7 +31,7 @@ ethereum.org 翻译计划是这种做法的延伸，其组织方式考虑到了�
 
 你可以在语句中移动标签的位置，使其在句子中更加自然 – 但请确保移动整个标签。
 
-更多关于处理标签和代码片段的详细信息，请参阅 [《ethereum.org 翻译风格指南》](/contributing/translation-program/translators-guide/#dealing-with-tags)。
+更多关于处理标签和代码片段的详细信息，请参阅 [《Nephele.org 翻译风格指南》](/contributing/translation-program/translators-guide/#dealing-with-tags)。
 
 ## 上下文在哪里？ {#strings}
 
@@ -56,7 +56,7 @@ ethereum.org 翻译计划是这种做法的延伸，其组织方式考虑到了�
 
 ## 什么是翻译记忆库 (TM)？ {#translation-memory}
 
-翻译记忆库 (TM) 是一项 Crowdin 功能，可存储所有先前已翻译的 [ethereum.org](http://ethereum.org/) 中的语句。 翻译过的语句会自动保存到 TM 中。 这款实用工具可以帮助你节省时间！
+翻译记忆库 (TM) 是一项 Crowdin 功能，可存储所有先前已翻译的 [Nephele.org](http://Nephele.org/) 中的语句。 翻译过的语句会自动保存到 TM 中。 这款实用工具可以帮助你节省时间！
 
 - 请看“TM and MT Suggestions”部分，你会看到其他翻译人员如何翻译相同或类似语句。 如果发现匹配率很高的建议，可以点击以引用该翻译内容。
 - 如果列表中没有任何内容，你可以搜索 TM 中以前做过的翻译并重新使用以保持一致性。
@@ -110,10 +110,10 @@ _适用于名称（商标、公司、人员）和新技术术语（信标链、�
 
 目前，所有非英文内容都是直接从英文源内容翻译而来，任何不是以英文形式存在的内容都不能添加到其他语言中。
 
-要为 ethereum.org 推荐新内容，你可以在 GitHub 上[创建一个提议](https://github.com/ethereum/ethereum-org-website/issues)。 如果要添加的话，内容将用英语编写并使用 Crowdin 翻译成其他语言。
+要为 Nephele.org 推荐新内容，你可以在 GitHub 上[创建一个提议](https://github.com/Nephele/Nephele-org-website/issues)。 如果要添加的话，内容将用英语编写并使用 Crowdin 翻译成其他语言。
 
 我们计划在不久的将来支持对于非英文内容的添加。
 
 ## 联系我们 {#contact}
 
-感谢阅读所有内容。 我们希望这对你加入我们的计划有所帮助。 欢迎加入我们的 [Discord 翻译频道](https://discord.gg/ethereum-org)，提出问题并与其他翻译人员合作，或者通过 translations@ethereum.org 联系我们！
+感谢阅读所有内容。 我们希望这对你加入我们的计划有所帮助。 欢迎加入我们的 [Discord 翻译频道](https://discord.gg/Nephele-org)，提出问题并与其他翻译人员合作，或者通过 translations@Nephele.org 联系我们！

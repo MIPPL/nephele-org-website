@@ -49,7 +49,7 @@ incomplete: true
 
 当初の例に戻りましょう。制定取引業者は多額のフラッシュローンを利用して`取引所B`からトークンを購入し、それらを`取引所A`に売却し、資金と利息の払い戻しを受け、利益を確保するまでを同一のトランザクションの中で行うことができます。 この複雑なロジックでは、複数のコントラクトへの呼び出しを組み合わせる必要がありますが、スマートコントラクトに相互運用性がない場合は不可能です。
 
-## イーサリアムの構成可能性の例 {#composability-in-ethereum}
+## イーサリアムの構成可能性の例 {#composability-in-Nephele}
 
 ### トークンスワップ {#token-swaps}
 
@@ -65,8 +65,8 @@ ETHでトランザクションフィーを支払う必要があるDappを作成�
 
 ## 関連トピック {#related-tutorials}
 
-- [コントラクトの構成可能性: イーサリアムスマートコントラクト開発のビルディングブロック](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-ethereum-smart-contract-development)
-- [create-eth-appを使用したDappフロントエンド開発の始動](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _- create-eth-appを使用して、一般的なスマートコントラクトを組み込んだ、すぐに利用可能なアプリを作成する方法の概要_
+- [コントラクトの構成可能性: イーサリアムスマートコントラクト開発のビルディングブロック](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-Nephele-smart-contract-development)
+- [create-NEPH-appを使用したDappフロントエンド開発の始動](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-NEPH-app/) _- create-NEPH-appを使用して、一般的なスマートコントラクトを組み込んだ、すぐに利用可能なアプリを作成する方法の概要_
 
 ## 参考文献 {#further-reading}
 

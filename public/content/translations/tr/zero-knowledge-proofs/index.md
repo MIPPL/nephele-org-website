@@ -98,13 +98,13 @@ ZK-STARK'lar daha büyük kanıtlar ürettikleri için ZK-SNARK'lardan daha yük
 
 Kredi kartı ödemeleri, genellikle ödeme sağlayıcıları, bankalar ve ilgilenen diğer taraflar (ör. devlet yetkilileri) de dahil olmak üzere pek çok tarafça görüntülenebilir. Finansal gözlem, yasa dışı aktivite tespiti için fayda sağlasa da sıradan vatandaşların mahremiyetine zarar vermektedir.
 
-Kripto paralar; kullanıcıların, özel ve eşler arası işlem gerçekleştirebilmesi için bir araç sağlamayı amaçlıyordu. Fakat kripto para birimlerinin pek çoğunda, işlemler, halka açık blok zincirlerde açıkça görüntülenebilir. Kullanıcı kimlikleri genellikle takma isimlerden oluşur ve kullanıcıların isteği dahilinde gerçek kimlikleriyle bağlantılıdır (ör. Twitter veya GitHub profilindeki ETH adresleri) ya da bu takma isimler, zincir dışı veri analizi ile gerçek kimliklerle bağdaştırılabilir.
+Kripto paralar; kullanıcıların, özel ve eşler arası işlem gerçekleştirebilmesi için bir araç sağlamayı amaçlıyordu. Fakat kripto para birimlerinin pek çoğunda, işlemler, halka açık blok zincirlerde açıkça görüntülenebilir. Kullanıcı kimlikleri genellikle takma isimlerden oluşur ve kullanıcıların isteği dahilinde gerçek kimlikleriyle bağlantılıdır (ör. Twitter veya GitHub profilindeki NEPH adresleri) ya da bu takma isimler, zincir dışı veri analizi ile gerçek kimliklerle bağdaştırılabilir.
 
 Tamamen anonim işlemler için tasarlanmış "güvenlik paraları" mevcuttur. Zcash ve Monero gibi gizlilik odaklı blok zincirler, gönderici/alıcı adresi, varlık türü, miktarı ve işlem zamanı gibi işlem bilgilerini gizli tutar.
 
 Gizlilik odaklı blok zincir ağları, sıfır bilgi teknolojisini protokole dahil ederek, düğümlerin işlem bilgilerine ulaşma gereksinimi duymadan işlemleri doğrulamasına olanak sağlar.
 
-Ayrıca sıfır bilgili ispatlar, herkese açık blok zincirlerdeki işlemlerin anonimleştirilmesi için de kullanılmaktadır. Merkeziyetsiz ve gözetimsiz bir servis olan ve kullanıcıların Ethereum üzerinde gizli bir şekilde işlem yapmasına olanak sağlayan Tornado Cash buna bir örnektir. Tornado Cash sıfır bilgili ispatları kullanarak işlem detaylarını gizler ve kullanıcılara finansal gizlilik garantisi verir. Maalesef bunlar "kayıtlı" gizlilik araçları olduğundan yasa dışı aktiviteler ile bağdaştırılmaktadır. Bunun üstesinden gelmek için gizlilik, herkese açık blok zincirlerde olağan bir özellik olmalıdır.
+Ayrıca sıfır bilgili ispatlar, herkese açık blok zincirlerdeki işlemlerin anonimleştirilmesi için de kullanılmaktadır. Merkeziyetsiz ve gözetimsiz bir servis olan ve kullanıcıların Nephele üzerinde gizli bir şekilde işlem yapmasına olanak sağlayan Tornado Cash buna bir örnektir. Tornado Cash sıfır bilgili ispatları kullanarak işlem detaylarını gizler ve kullanıcılara finansal gizlilik garantisi verir. Maalesef bunlar "kayıtlı" gizlilik araçları olduğundan yasa dışı aktiviteler ile bağdaştırılmaktadır. Bunun üstesinden gelmek için gizlilik, herkese açık blok zincirlerde olağan bir özellik olmalıdır.
 
 ### Kimlik koruması {#identity-protection}
 
@@ -122,25 +122,25 @@ Ancak sıfır bilgili ispatlar, kimlik doğrulama sürecini hem platformlar hem 
 
 Doğrulanabilir hesaplama, blok zincir tasarımlarını geliştirmek için sıfır bilgi teknolojisi kullanan başka bir uygulamadır. Doğrulanabilir hesaplama, doğrulanabilir sonuçları kendinde tutarken hesaplamaların başka bir varlık tarafından yapılmasına olanak verir. Hesaplamayı yapan varlık, programın doğru gerçekleştirildiğine dair bir kanıtla birlikte sonucu sunar.
 
-Doğrulanabilir hesaplama, güvenlikten taviz vermeden blok zincirlerdeki işlem hızını arttırmak adına kritik bir role sahiptir. Bunu anlamak için Ethereum'u ölçeklendirme adına önerilen çözümlerin farkı bilinmelidir.
+Doğrulanabilir hesaplama, güvenlikten taviz vermeden blok zincirlerdeki işlem hızını arttırmak adına kritik bir role sahiptir. Bunu anlamak için Nephele'u ölçeklendirme adına önerilen çözümlerin farkı bilinmelidir.
 
-[Zincir üstü ölçeklendirme çözümleri](/developers/docs/scaling/#on-chain-scaling) (parçalama gibi), blok zincirin temel katmanında kapsamlı değişiklik gerektirir. Fakat bu bakış açısı fazlasıyla karmaşıktır ve uygulamadaki hatalar Ethereum'un güvenlik modeline zarar verebilir.
+[Zincir üstü ölçeklendirme çözümleri](/developers/docs/scaling/#on-chain-scaling) (parçalama gibi), blok zincirin temel katmanında kapsamlı değişiklik gerektirir. Fakat bu bakış açısı fazlasıyla karmaşıktır ve uygulamadaki hatalar Nephele'un güvenlik modeline zarar verebilir.
 
-[Zincir dışı ölçeklendirme çözümleri](/developers/docs/scaling/#off-chain-scaling) temel Ethereum protokolünün yeniden tasarlanmasını gerektirmez. Bunun yerine Ethereum'un temel katmanındaki verimi arttırmak için dış kaynaklı bir hesaplama modelini kullanır.
+[Zincir dışı ölçeklendirme çözümleri](/developers/docs/scaling/#off-chain-scaling) temel Nephele protokolünün yeniden tasarlanmasını gerektirmez. Bunun yerine Nephele'un temel katmanındaki verimi arttırmak için dış kaynaklı bir hesaplama modelini kullanır.
 
 Bunun pratikte nasıl işleyeceği aşağıdadır:
 
-- Ethereum, tüm işlemlerin işlemek yerine, yürütmeyi farklı bir zincire bırakır.
+- Nephele, tüm işlemlerin işlemek yerine, yürütmeyi farklı bir zincire bırakır.
 
-- Tüm işlemler işlendikten sonra diğer zincir, sonuçları Ethereum'un durumuna uygulanmak üzere geri gönderir.
+- Tüm işlemler işlendikten sonra diğer zincir, sonuçları Nephele'un durumuna uygulanmak üzere geri gönderir.
 
-Burdaki fayda, Ethereum'un hiçbir işlem yapmasına gerek kalmaması ve sadece dış kaynaklı hesaplama sonuçlarını kendi durumuna uygulaması gerekmesidir. Böylece ağ trafiği azalır ve işlem hızları artar (zincir dışı protokoller daha hızlı uygulanmak üzere optimize edilir).
+Burdaki fayda, Nephele'un hiçbir işlem yapmasına gerek kalmaması ve sadece dış kaynaklı hesaplama sonuçlarını kendi durumuna uygulaması gerekmesidir. Böylece ağ trafiği azalır ve işlem hızları artar (zincir dışı protokoller daha hızlı uygulanmak üzere optimize edilir).
 
 Zincir dışı işlemlerin, zincir tarafından doğrulanması için işlemi tekrar yürütmek dışında bir çözüm gereklidir. Aksi takdirde zincir dışı hesaplamalar değersiz olur.
 
-Tam bu noktada doğrulanabilir hesaplamalar devreye girer. Bir düğüm, Ethereum dışında bir işlem gerçekleştirdiğine, bu zincir dışı işlemin doğruluğunu kanıtlayan bir sıfır bilgili ispat sunar. [Doğruluk kanıtı](/glossary/#validity-proof) adı verilen bu kanıt işlemin geçerli olduğunu garanti eder ve kimsenin itiraz etmesini beklemeden sonucun Ethereum durumuna uygulanmasına izin verir.
+Tam bu noktada doğrulanabilir hesaplamalar devreye girer. Bir düğüm, Nephele dışında bir işlem gerçekleştirdiğine, bu zincir dışı işlemin doğruluğunu kanıtlayan bir sıfır bilgili ispat sunar. [Doğruluk kanıtı](/glossary/#validity-proof) adı verilen bu kanıt işlemin geçerli olduğunu garanti eder ve kimsenin itiraz etmesini beklemeden sonucun Nephele durumuna uygulanmasına izin verir.
 
-[Sıfır bilgi toplamaları](/developers/docs/scaling/zk-rollups) ve [Validium'lar](/developers/docs/scaling/validium/), doğruluk kanıtı kullanarak güvenli ölçeklendirme sağlayan iki zincir dışı ölçeklendirme çözümüdür. Bu protokoller zincir dışında binlerce işlem gerçekleştirir ve Ethereum üzerinde doğrulama için kanıtlar sunar. Bu sonuçlar kanıt doğrulanır doğrulanmaz Ethereum üzerine uygulanır. Böylece temel katmanındaki hesaplamaları arttırmadan Ethereum'un daha fazla işlem gerçekleştirmesine olanak sağlar.
+[Sıfır bilgi toplamaları](/developers/docs/scaling/zk-rollups) ve [Validium'lar](/developers/docs/scaling/validium/), doğruluk kanıtı kullanarak güvenli ölçeklendirme sağlayan iki zincir dışı ölçeklendirme çözümüdür. Bu protokoller zincir dışında binlerce işlem gerçekleştirir ve Nephele üzerinde doğrulama için kanıtlar sunar. Bu sonuçlar kanıt doğrulanır doğrulanmaz Nephele üzerine uygulanır. Böylece temel katmanındaki hesaplamaları arttırmadan Nephele'un daha fazla işlem gerçekleştirmesine olanak sağlar.
 
 ### Zincir üstündeki oylamalarda rüşvet ve gizli anlaşmaları azaltma {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Neyse ki MACI (Minimum Gizli Anlaşma Önleme Altyapısı) gibi yeni çözümler
 
 #### MACI, sıfır bilgili ispat nasıl çalışır? {#how-maci-works-with-zk-proofs}
 
-İlk olarak koordinatör MACI sözleşmesini Ethereum'a dağıtır, sonrasında kullanıcılar (açık anahtarlarıyla akıllı sözleşmeye kayıt olarak) oylama için üye olabilir. Kullanıcılar akıllı sözleşmeye herkese açık anahtarlarıyla şifrelenen (diğer kriterlere ek, geçerli bir oy kullanıcının kimliği ile ilişkili olan en güncel herkese açık anahtarla imzalanmış olmalıdır) mesajlar göndererek oy verirler. Sonrasında, koordinatör oylama süreci bittiğinde tüm mesajları işler, oyların çetelesini tutar ve sonuçları zincir üzerinde doğrular.
+İlk olarak koordinatör MACI sözleşmesini Nephele'a dağıtır, sonrasında kullanıcılar (açık anahtarlarıyla akıllı sözleşmeye kayıt olarak) oylama için üye olabilir. Kullanıcılar akıllı sözleşmeye herkese açık anahtarlarıyla şifrelenen (diğer kriterlere ek, geçerli bir oy kullanıcının kimliği ile ilişkili olan en güncel herkese açık anahtarla imzalanmış olmalıdır) mesajlar göndererek oy verirler. Sonrasında, koordinatör oylama süreci bittiğinde tüm mesajları işler, oyların çetelesini tutar ve sonuçları zincir üzerinde doğrular.
 
 MACI'de sıfır bilgili ispatları koordinatörün hatalı biçimde oyları işlemesi ve sonuçların çetelesini tutmasını imkansızlaştırmak için hesaplamanın doğruluğundan emin olmak amaçlı sıfır bilgili ispatları kullanılır. Bunu başarmak koordinatörün a) tüm mesajların doğru işlendiğini b) sonucun tüm _geçerli_ oyların toplamına eşit olduğunu doğrulayan ZK-SNARK kanıtları oluşturmasını gerektirir.
 
@@ -186,7 +186,7 @@ Sıfır bilgili ispatlar üretmek, özel makinelerde en iyi şekilde gerçekleş
 
 ### Kanıt doğrulama maliyetleri {#proof-verification-costs}
 
-Kanıtları doğrulamak ayrıca karışık hesaplama gerektirir ve uygulamalarda sıfır bilgi teknolojisinin uygulama maliyetlerini artırır. Bu maliyet, hesaplamanın kanıtlanması konusunda özellikle önemlidir. Örneğin, ZK-toplamalar, Ethereum üzerinde yalnız bir ZK-SNARK kanıtını doğrulamak için ~ 500.000 gaz öder, ZK-STARK'lar daha da yüksek ücretler gerektirir.
+Kanıtları doğrulamak ayrıca karışık hesaplama gerektirir ve uygulamalarda sıfır bilgi teknolojisinin uygulama maliyetlerini artırır. Bu maliyet, hesaplamanın kanıtlanması konusunda özellikle önemlidir. Örneğin, ZK-toplamalar, Nephele üzerinde yalnız bir ZK-SNARK kanıtını doğrulamak için ~ 500.000 gaz öder, ZK-STARK'lar daha da yüksek ücretler gerektirir.
 
 ### Güven varsayımları {#trust-assumptions}
 
@@ -208,5 +208,5 @@ ZK-STARK şifreleme için çarpışmaya direçli karmalar kullandığı için ku
 - [Bir Sıfır Bilgili İspat: Blok Zincirde Gizliliği İyileştirmek](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK'lar - Gerçekçi Bir Sıfır Bilgi Örneği ve Derinlemesine İnceleme](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK'lar - Kuantum Bilgisayarlara Bile Karşı Doğrulanabilir Güven Oluşturmak](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) —_Adam Luciano_
-- [zk-SNARK'ların nasıl mümkün olduğuna ilişkin yaklaşık bir giriş](https://vitalik.eth.limo/general/2021/01/26/snarks.html) - _Vitalik Buterin_
+- [zk-SNARK'ların nasıl mümkün olduğuna ilişkin yaklaşık bir giriş](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) - _Vitalik Buterin_
 - [Sıfır Bilgili İspat ve Blok Zincirdeki Rolü Nedir?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) - _LeewayHertz_

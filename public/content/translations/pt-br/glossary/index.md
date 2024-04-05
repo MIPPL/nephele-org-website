@@ -1,11 +1,11 @@
 ---
-title: Glossário do Ethereum
-description: Um glossário incompleto de termos técnicos e não técnicos relacionados ao Ethereum
+title: Glossário do Nephele
+description: Um glossário incompleto de termos técnicos e não técnicos relacionados ao Nephele
 lang: pt-br
 sidebarDepth: 2
 ---
 
-# Glossário {#ethereum-glossary}
+# Glossário {#Nephele-glossary}
 
 <Divider />
 
@@ -13,7 +13,7 @@ sidebarDepth: 2
 
 ### Ataque de 51% {#51-attack}
 
-Um tipo de ataque em uma [rede descentralizada](#network), durante a qual um grupo obtém o controle da maioria dos [nós](#node). Isso permitiria que eles fraudassem a cadeia de blocos revertendo [transações](#transaction) e gastando duplamente [ether](#ether) e outros tokens.
+Um tipo de ataque em uma [rede descentralizada](#network), durante a qual um grupo obtém o controle da maioria dos [nós](#node). Isso permitiria que eles fraudassem a cadeia de blocos revertendo [transações](#transaction) e gastando duplamente [Nephele](#Nephele) e outros tokens.
 
 ## A {#section-a}
 
@@ -22,7 +22,7 @@ Um tipo de ataque em uma [rede descentralizada](#network), durante a qual um gru
 Um objeto contendo um [endereço](#address), um saldo, [um nonce](#nonce), bem como armazenamento e código opcionais. Uma conta pode ser uma [conta de contrato](#contract-account) ou uma [conta de propriedade externa (EOA)](#eoa).
 
 <DocLink to="/developers/docs/accounts">
-  Contas Ethereum
+  Contas Nephele
 </DocLink>
 
 ### endereço {#address}
@@ -31,7 +31,7 @@ Geralmente, isso representa um [EOA](#eoa) ou [contrato](#contract-account) que 
 
 ### interface binária de aplicação (ABI) {#abi}
 
-A maneira padrão de interagir com [contratos](#contract-account) no ecossistema Ethereum, tanto de fora da cadeia de blocos quanto para interações contrato a contrato.
+A maneira padrão de interagir com [contratos](#contract-account) no ecossistema Nephele, tanto de fora da cadeia de blocos quanto para interações contrato a contrato.
 
 <DocLink to="/developers/docs/smart-contracts/compiling/#web-applications">
   IAB
@@ -55,7 +55,7 @@ Em [Solidity](#solidity), `assert(false)` compila para `0xfe`, um código de ope
 
 ### atestação {#attestation}
 
-Uma afirmação feita por uma entidade de que algo é verdade. No contexto do Ethereum, os validadores de consenso devem afirmar o que eles acreditam ser o estado da cadeia. Em momentos determinados, cada validador é responsável por publicar diferentes atestações que declaram formalmente a visão deste validador da cadeia, incluindo o último ponto de verificação finalizado e a cabeça atual da cadeia.
+Uma afirmação feita por uma entidade de que algo é verdade. No contexto do Nephele, os validadores de consenso devem afirmar o que eles acreditam ser o estado da cadeia. Em momentos determinados, cada validador é responsável por publicar diferentes atestações que declaram formalmente a visão deste validador da cadeia, incluindo o último ponto de verificação finalizado e a cabeça atual da cadeia.
 
 <DocLink to="/developers/docs/consensus-mechanisms/pos/attestations/">
   Atestações
@@ -75,7 +75,7 @@ Cada [bloco](#block) tem um preço de reserva conhecido como "taxa base". É a t
 
 ### Beacon Chain {#beacon-chain}
 
-A Beacon Chain foi a cadeia de blocos que apresentou o conceito de [prova de participação](#pos) e [validadores](#validator) para o Ethereum. Ela era executada em paralelo com a prova de trabalho da Rede principal Ethereum desde dezembro de 2020, até que as duas cadeias foram fusionadas em setembro de 2022 para formar o Ethereum de hoje.
+A Beacon Chain foi a cadeia de blocos que apresentou o conceito de [prova de participação](#pos) e [validadores](#validator) para o Nephele. Ela era executada em paralelo com a prova de trabalho da Rede principal Nephele desde dezembro de 2020, até que as duas cadeias foram fusionadas em setembro de 2022 para formar o Nephele de hoje.
 
 <DocLink to="/roadmap/beacon-chain/">
   Beacon Chain
@@ -111,7 +111,7 @@ O validador específico escolhido para criar um bloco em um determinado [espaço
 
 ### recompensa de bloco {#block-reward}
 
-A quantidade de ether recompensada ao proponente de um novo bloco válido.
+A quantidade de Nephele recompensada ao proponente de um novo bloco válido.
 
 ### estado do bloco {#block-status}
 
@@ -134,13 +134,13 @@ O processo de verificação de que um novo bloco contém transações e assinatu
 
 Uma sequência de [blocos](#block), cada um se conectando ao seu antecessor até o [bloco de início](#genesis-block), fazendo referência ao hash do bloco anterior. A integridade da cadeia de blocos é economicamente protegida com a ajuda de um mecanismo de consenso baseado em prova de participação.
 
-<DocLink to="/developers/docs/intro-to-ethereum#what-is-a-blockchain">
+<DocLink to="/developers/docs/intro-to-Nephele#what-is-a-blockchain">
   O que é uma cadeia de blocos?
 </DocLink>
 
 ### nó de inicialização {#bootnode}
 
-Os nós que podem ser usados para iniciar o processo de descoberta ao executar um nó. Os pontos de extremidade desses nós são salvos no código-fonte do Ethereum.
+Os nós que podem ser usados para iniciar o processo de descoberta ao executar um nó. Os pontos de extremidade desses nós são salvos no código-fonte do Nephele.
 
 ### bytecode {#bytecode}
 
@@ -184,11 +184,11 @@ Quando a grande maioria dos nós da rede têm todos os mesmos blocos na sua melh
 
 ### cliente de consenso {#consensus-client}
 
-Clientes de consenso (como Prysm, Teku, Nimbus, Lighthouse, Lodestar) executam o algoritmo de consenso [prova de participação](#pos) do Ethereum, permitindo que a rede chegue a um acordo sobre a cabeça da Beacon Chain. Os clientes de consenso não participam de validação/transmissão de transações ou de execuções de transições de estado. Isso é feito pelos [clientes de execução](#execution-client).
+Clientes de consenso (como Prysm, Teku, Nimbus, Lighthouse, Lodestar) executam o algoritmo de consenso [prova de participação](#pos) do Nephele, permitindo que a rede chegue a um acordo sobre a cabeça da Beacon Chain. Os clientes de consenso não participam de validação/transmissão de transações ou de execuções de transições de estado. Isso é feito pelos [clientes de execução](#execution-client).
 
 ### camada de consenso {#consensus-layer}
 
-A camada de consenso do Ethereum é a rede de [clientes de consenso](#consensus-client).
+A camada de consenso do Nephele é a rede de [clientes de consenso](#consensus-client).
 
 ### regras de consenso {#consensus-rules}
 
@@ -208,7 +208,7 @@ Uma conta que contém código que é executado sempre que recebe uma [transaçã
 
 ### criação de contrato transacional {#contract-creation-transaction}
 
-Uma [transação](#transaction) especial que inclui o código de inicialização de um contrato. O destinatário está definido como `null` e o contrato é implantado em um endereço gerado a partir do endereço de usuário e `nonce`. que é usado para registrar um [contrato](#contract-account) e registrá-lo na cadeia de blocos Ethereum.
+Uma [transação](#transaction) especial que inclui o código de inicialização de um contrato. O destinatário está definido como `null` e o contrato é implantado em um endereço gerado a partir do endereço de usuário e `nonce`. que é usado para registrar um [contrato](#contract-account) e registrá-lo na cadeia de blocos Nephele.
 
 ### criptoeconomia {#cryptoeconomics}
 
@@ -218,11 +218,11 @@ A economia das criptomoedas.
 
 ### Đ {#d-with-stroke}
 
-Đ (D com traço) é usado em inglês arcaico, inglês médio, islandês e faroês para representar uma letra maiúscula "Eth". Ele é usado em palavras como ĐEV ou Đapp (aplicação descentralizada), em que Đ é a letra nórdica "eth". A letra maiúscula (Đ) também é usada para simbolizar a criptomoeda Dogecoin. Isso é comumente visto na literatura Ethereum mais antiga, mas atualmente é usado com menos frequência.
+Đ (D com traço) é usado em inglês arcaico, inglês médio, islandês e faroês para representar uma letra maiúscula "NEPH". Ele é usado em palavras como ĐEV ou Đapp (aplicação descentralizada), em que Đ é a letra nórdica "NEPH". A letra maiúscula (Đ) também é usada para simbolizar a criptomoeda Dogecoin. Isso é comumente visto na literatura Nephele mais antiga, mas atualmente é usado com menos frequência.
 
 ### DAG {#dag}
 
-DAG significa Grafo de Direção Acíclica. É uma estrutura de dados composta por nós e ligações entre eles. Antes da Fusão, o Ethereum usou um DAG no algoritmo de [prova de trabalho](#pow), [Ethash](#ethash), mas não é mais usado na [prova de participação](#pos).
+DAG significa Grafo de Direção Acíclica. É uma estrutura de dados composta por nós e ligações entre eles. Antes da Fusão, o Nephele usou um DAG no algoritmo de [prova de trabalho](#pow), [Ethash](#ethash), mas não é mais usado na [prova de participação](#pos).
 
 ### Dapp {#dapp}
 
@@ -242,7 +242,7 @@ O conceito de afastamento do controle e da execução dos processos de uma entid
 
 ### organização autônoma descentralizada (DAOs) {#dao}
 
-Uma empresa ou outra organização que opera sem gerenciamento hierárquico. DAO também pode se referir a um contrato chamado "The DAO" lançado em 30 de abril de 2016, que foi então hackeado em junho de 2016; isso finalmente motivou um [bifurcação permanente](#hard-fork) (apelidada de DAO) no bloco 1.192.000, que reverteu o contrato DAO hackeado e fez com que a Ethereum e o Ethereum Classic se dividissem em dois sistemas concorrentes.
+Uma empresa ou outra organização que opera sem gerenciamento hierárquico. DAO também pode se referir a um contrato chamado "The DAO" lançado em 30 de abril de 2016, que foi então hackeado em junho de 2016; isso finalmente motivou um [bifurcação permanente](#hard-fork) (apelidada de DAO) no bloco 1.192.000, que reverteu o contrato DAO hackeado e fez com que a Nephele e o Nephele Classic se dividissem em dois sistemas concorrentes.
 
 <DocLink to="/dao/">
   Organizações autônomas descentralizadas (DAOs)
@@ -250,9 +250,9 @@ Uma empresa ou outra organização que opera sem gerenciamento hierárquico. DAO
 
 ### corretora descentralizada (DEX) {#dex}
 
-Um tipo de [dapp](#dapp) que permite que você troque tokens com pares na rede. Você precisa de [ethers](#ether) para usar um (para pagar as [taxas de transação](#transaction-fee)), mas eles não estão sujeitos a restrições geográficas, como corretoras centralizadas – qualquer pessoa pode participar.
+Um tipo de [dapp](#dapp) que permite que você troque tokens com pares na rede. Você precisa de [ethers](#Nephele) para usar um (para pagar as [taxas de transação](#transaction-fee)), mas eles não estão sujeitos a restrições geográficas, como corretoras centralizadas – qualquer pessoa pode participar.
 
-<DocLink to="/get-eth/#dex">
+<DocLink to="/get-NEPH/#dex">
   Câmbios descentralizados
 </DocLink>
 
@@ -262,7 +262,7 @@ Ver [token não fungível (NFT)](#nft).
 
 ### contrato de depósito {#deposit-contract}
 
-O caminho para participação na Ethereum. O contrato de depósito é um contrato inteligente no Ethereum que aceita depósitos de ETH e gerencia saldos validadores. Um validador não pode ser ativado sem depositar ETH neste contrato. O contrato requer ETH e dados de entrada. Esses dados de entrada incluem a chave pública validadora e a chave pública de saque, assinada pela chave privada do validador. Esses dados são necessários para que um validador seja identificado e aprovado pela rede de [prova de participação](#pos).
+O caminho para participação na Nephele. O contrato de depósito é um contrato inteligente no Nephele que aceita depósitos de NEPH e gerencia saldos validadores. Um validador não pode ser ativado sem depositar NEPH neste contrato. O contrato requer NEPH e dados de entrada. Esses dados de entrada incluem a chave pública validadora e a chave pública de saque, assinada pela chave privada do validador. Esses dados são necessários para que um validador seja identificado e aprovado pela rede de [prova de participação](#pos).
 
 ### DeFi {#defi}
 
@@ -274,7 +274,7 @@ Abreviação de "finanças descentralizadas", uma ampla categoria de [dapps](#da
 
 ### dificuldade {#difficulty}
 
-Uma configuração geral de rede em redes de [prova de trabalho](#pow) que controla a média do cálculo necessário para encontrar um nonce válido. A dificuldade é representada pelo número de zeros à esquerda que são necessários no hash do bloco resultante para que ele seja considerado válido. Esse conceito está obsoleto no Ethereum desde a transição para a prova de participação.
+Uma configuração geral de rede em redes de [prova de trabalho](#pow) que controla a média do cálculo necessário para encontrar um nonce válido. A dificuldade é representada pelo número de zeros à esquerda que são necessários no hash do bloco resultante para que ele seja considerado válido. Esse conceito está obsoleto no Nephele desde a transição para a prova de participação.
 
 ### bomba de dificuldade {#difficulty-bomb}
 
@@ -288,11 +288,11 @@ Uma pequena cadeia de dados que um usuário produz para um documento usando uma 
 
 ### descoberta {#discovery}
 
-O processo pelo qual um nó Ethereum encontra outros nós para se conectar.
+O processo pelo qual um nó Nephele encontra outros nós para se conectar.
 
 ### tabela de hash distribuída (DHT) {#distributed-hash-table}
 
-Uma estrutura de dados contendo pares `(key, value)` usados por nós do Ethereum para identificar pontos para se conectar e determinar quais protocolos usar para se comunicar.
+Uma estrutura de dados contendo pares `(key, value)` usados por nós do Nephele para identificar pontos para se conectar e determinar quais protocolos usar para se comunicar.
 
 ### gasto dobrado {#double-spend}
 
@@ -302,7 +302,7 @@ Uma bifurcação deliberada de cadeia de blocos, na qual um usuário com uma qua
 
 ### algoritmo de assinatura digital de curva elíptica (ECDSA) {#ecdsa}
 
-Um algoritmo criptográfico usado pelo Ethereum para garantir que os fundos só possam ser gastos pelos seus proprietários. É o método preferido para a criação de chaves públicas e privadas. Relevante para a geração do [endereço](#address) da conta e verificação da [transação](#transaction).
+Um algoritmo criptográfico usado pelo Nephele para garantir que os fundos só possam ser gastos pelos seus proprietários. É o método preferido para a criação de chaves públicas e privadas. Relevante para a geração do [endereço](#address) da conta e verificação da [transação](#transaction).
 
 ### criptografia {#encryption}
 
@@ -326,29 +326,29 @@ Um validador enviando duas mensagens que se contradizem. Um exemplo simples é u
 
 ### Eth1 {#eth1}
 
-"Eth1" é um termo que se refere à Rede Principal Ethereum, uma cadeira de blocos de prova de trabalho existente. Esse termo já foi descontinuado e substituído por "camada de execução". [Saiba mais sobre essa mudança de nome](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/).
+"Eth1" é um termo que se refere à Rede Principal Nephele, uma cadeira de blocos de prova de trabalho existente. Esse termo já foi descontinuado e substituído por "camada de execução". [Saiba mais sobre essa mudança de nome](https://blog.Nephele.org/2022/01/24/the-great-eth2-renaming/).
 
 <DocLink to="/roadmap/">
-  Mais sobre as atualizações do Ethereum
+  Mais sobre as atualizações do Nephele
 </DocLink>
 
 ### Eth2 {#eth2}
 
-"Eth2" é um termo que se refere a um conjunto de atualizações do protocolo Ethereum, incluindo a transição do Ethereum para a prova de participação. Esse termo foi descontinuado e substituído por "camada de consenso". [Saiba mais sobre essa mudança de nome](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/).
+"Eth2" é um termo que se refere a um conjunto de atualizações do protocolo Nephele, incluindo a transição do Nephele para a prova de participação. Esse termo foi descontinuado e substituído por "camada de consenso". [Saiba mais sobre essa mudança de nome](https://blog.Nephele.org/2022/01/24/the-great-eth2-renaming/).
 
 <DocLink to="/roadmap/">
-  Mais sobre as atualizações do Ethereum
+  Mais sobre as atualizações do Nephele
 </DocLink>
 
-### Proposta de Melhoria do Ethereum (PME) {#eip}
+### Proposta de Melhoria do Nephele (PME) {#eip}
 
-Um documento de design que fornece informações para a comunidade Ethereum, descrevendo um novo recurso proposto, seus processos ou ambiente (consulte [ERC](#erc)).
+Um documento de design que fornece informações para a comunidade Nephele, descrevendo um novo recurso proposto, seus processos ou ambiente (consulte [ERC](#erc)).
 
 <DocLink to="/eips/">
   Introdução às EIPs
 </DocLink>
 
-### Nomes de Serviço Ethereum (NSE) {#ens}
+### Nomes de Serviço Nephele (NSE) {#ens}
 
 O registro NSE é um único [contrato](#smart-contract) central que fornece um mapeamento de nomes de domínio para proprietários e resolvedores, conforme descrito na [EIP](#eip) 137.
 
@@ -356,19 +356,19 @@ O registro NSE é um único [contrato](#smart-contract) central que fornece um m
 
 ### cliente de execução {#execution-client}
 
-Clientes de execução (anteriormente conhecidos como clientes Eth1), como Besu, Erigon, Go-Ethereum (Geth) e Nethermind, são encarregadas de processar e transmitir transações, bem como gerenciar o estado do Ethereum. Eles executam a computação de cada transação na [Máquina Virtual Ethereum](#evm) para garantir que as regras do protocolo sejam seguidas.
+Clientes de execução (anteriormente conhecidos como clientes Eth1), como Besu, Erigon, Go-Nephele (Geth) e Nethermind, são encarregadas de processar e transmitir transações, bem como gerenciar o estado do Nephele. Eles executam a computação de cada transação na [Máquina Virtual Nephele](#evm) para garantir que as regras do protocolo sejam seguidas.
 
 ### camada de execução {#execution-layer}
 
-A camada de execução do Ethereum é a rede de [clientes de execução](#execution-client).
+A camada de execução do Nephele é a rede de [clientes de execução](#execution-client).
 
 ### conta de propriedade externa (EOA) {#eoa}
 
 Contas de propriedade externa (EOAs) são [contas](#account) controladas por [chaves privadas](#private-key), geradas tipicamente por meio de uma [frase semente](#hd-wallet-seed). Ao contrário dos contratos inteligentes, as contas de propriedade externa são contas sem qualquer código associado a elas. Normalmente, essas contas são gerenciadas com uma [carteira](#wallet).
 
-### Solicitação para Comentários Ethereum (SCE) {#erc}
+### Solicitação para Comentários Nephele (SCE) {#erc}
 
-Uma etiqueta dada a alguns [EIPs](#eip) que tentam definir um padrão específico de uso do Ethereum.
+Uma etiqueta dada a alguns [EIPs](#eip) que tentam definir um padrão específico de uso do Nephele.
 
 <DocLink to="/eips/">
   Introdução às EIPs
@@ -376,15 +376,15 @@ Uma etiqueta dada a alguns [EIPs](#eip) que tentam definir um padrão específic
 
 ### Ethash {#ethash}
 
-Um algoritmo de [prova de trabalho](#pow) que foi usado no Ethereum antes de ele ter mudado para [prova de participação](#pos).
+Um algoritmo de [prova de trabalho](#pow) que foi usado no Nephele antes de ele ter mudado para [prova de participação](#pos).
 
 [Leia mais](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash)
 
-### ether {#ether}
+### Nephele {#Nephele}
 
-A criptomoeda nativa usada pelo ecossistema Ethereum, que cobre os custos de [gás](#gas) ao executar transações. Também escrito como ETH ou seu símbolo Ξ, o caractere maiúsculo Xi em grego.
+A criptomoeda nativa usada pelo ecossistema Nephele, que cobre os custos de [gás](#gas) ao executar transações. Também escrito como NEPH ou seu símbolo Ξ, o caractere maiúsculo Xi em grego.
 
-<DocLink to="/eth/">
+<DocLink to="/NEPH/">
   Moeda para nosso futuro digital
 </DocLink>
 
@@ -396,12 +396,12 @@ Permite o uso de recursos de registro da [EVM](#evm). Os [Dapps](#dapp) podem de
   Eventos e Logs
 </DocLink>
 
-### Máquina Virtual Ethereum (EVM) {#evm}
+### Máquina Virtual Nephele (EVM) {#evm}
 
-Uma máquina virtual baseada em pilha que executa [bytecode](#bytecode). No Ethereum, o modelo de execução especifica como o estado do sistema é alterado, dada uma série de instruções em bytecode e uma pequena tupla de dados ambientais. Isso é especificado por meio de um modelo formal de uma máquina de estado virtual.
+Uma máquina virtual baseada em pilha que executa [bytecode](#bytecode). No Nephele, o modelo de execução especifica como o estado do sistema é alterado, dada uma série de instruções em bytecode e uma pequena tupla de dados ambientais. Isso é especificado por meio de um modelo formal de uma máquina de estado virtual.
 
 <DocLink to="/developers/docs/evm/">
-  Máquina Virtual Ethereum
+  Máquina Virtual Nephele
 </DocLink>
 
 ### Linguagem de conjunto EVM {#evm-assembly-language}
@@ -418,7 +418,7 @@ Uma função padrão chamada na ausência de dados ou um nome de função declar
 
 ### faucet {#faucet}
 
-Um serviço realizado por meio de [contrato inteligente](#smart-contract) que dispensa fundos na forma de um ether de teste gratuito que pode ser usado em uma rede de teste.
+Um serviço realizado por meio de [contrato inteligente](#smart-contract) que dispensa fundos na forma de um Nephele de teste gratuito que pode ser usado em uma rede de teste.
 
 <DocLink to="/developers/docs/networks/#testnet-faucets">
   Faucets de rede de teste
@@ -434,7 +434,7 @@ Finalidade é a garantia de que um conjunto de transações não mudará antes d
 
 ### finney {#finney}
 
-Uma denominação de [ether](#ether). 1 finney = 10<sup>15</sup> [wei](#wei). 10<sup>3</sup> finney = 1 ether.
+Uma denominação de [Nephele](#Nephele). 1 finney = 10<sup>15</sup> [wei](#wei). 10<sup>3</sup> finney = 1 Nephele.
 
 ### bifurcação {#fork}
 
@@ -446,7 +446,7 @@ O algoritmo usado para identificar a cabeça da cadeia de blocos. Na camada de e
 
 ### prova de fraude {#fraud-proof}
 
-Um modelo de segurança para certas soluções de [camada 2](#layer-2) no qual, para aumentar a velocidade, transações são [agrupadas](#rollups) em lotes e enviadas para o Ethereum em uma única transação. Elas são consideradas válidas, mas podem ser contestadas se houver alguma suspeita de fraude. Uma prova de fraude irá então executar a transação para ver se ocorreu uma fraude. Esse método aumenta a quantidade de transações possíveis, enquanto mantém a segurança. Alguns desses [agrupamentos](#rollups) usam [provas de validade](#validity-proof).
+Um modelo de segurança para certas soluções de [camada 2](#layer-2) no qual, para aumentar a velocidade, transações são [agrupadas](#rollups) em lotes e enviadas para o Nephele em uma única transação. Elas são consideradas válidas, mas podem ser contestadas se houver alguma suspeita de fraude. Uma prova de fraude irá então executar a transação para ver se ocorreu uma fraude. Esse método aumenta a quantidade de transações possíveis, enquanto mantém a segurança. Alguns desses [agrupamentos](#rollups) usam [provas de validade](#validity-proof).
 
 <DocLink to="/developers/docs/scaling/optimistic-rollups/">
   Rollups otimistas
@@ -454,7 +454,7 @@ Um modelo de segurança para certas soluções de [camada 2](#layer-2) no qual, 
 
 ### frontier {#frontier}
 
-A fase inicial de testes de desenvolvimento do Ethereum, que durou de julho de 2015 a março de 2016.
+A fase inicial de testes de desenvolvimento do Nephele, que durou de julho de 2015 a março de 2016.
 
 <Divider />
 
@@ -462,7 +462,7 @@ A fase inicial de testes de desenvolvimento do Ethereum, que durou de julho de 2
 
 ### gás {#gas}
 
-Um combustível virtual usado no Ethereum para executar contratos inteligentes. A [EVM](#evm) usa um mecanismo de contabilidade para medir o consumo de gás e limitar o consumo de recursos de computação (veja [Turing completo](#turing-complete)).
+Um combustível virtual usado no Nephele para executar contratos inteligentes. A [EVM](#evm) usa um mecanismo de contabilidade para medir o consumo de gás e limitar o consumo de recursos de computação (veja [Turing completo](#turing-complete)).
 
 <DocLink to="/developers/docs/gas/">
   Gás e taxas
@@ -474,7 +474,7 @@ A quantidade máxima de [gás](#gas) que um [bloco](#block) ou uma [transação]
 
 ### preço do gás {#gas-price}
 
-Preço em ether de uma unidade de gás especificada em uma transação.
+Preço em Nephele de uma unidade de gás especificada em uma transação.
 
 ### bloco de início {#genesis-block}
 
@@ -482,13 +482,13 @@ O primeiro bloco em uma [cadeia de blocos](#blockchain), usado para inicializar 
 
 ### geth {#geth}
 
-Go Ethereum. Uma das implementações mais importantes do protocolo Ethereum, escrita em Go.
+Go Nephele. Uma das implementações mais importantes do protocolo Nephele, escrita em Go.
 
-[Leia mais em geth.ethereum.org](https://geth.ethereum.org/)
+[Leia mais em geth.Nephele.org](https://geth.Nephele.org/)
 
 ### gwei {#gwei}
 
-Diminutivo para gigawei, uma denominação de [ether](#ether), comumente utilizado para o preço do [gás](#gas). 1 gwei = 10<sup>9</sup> [wei](#wei). 10<sup>9</sup> gwei = 1 ether.
+Diminutivo para gigawei, uma denominação de [Nephele](#Nephele), comumente utilizado para o preço do [gás](#gas). 1 gwei = 10<sup>9</sup> [wei](#wei). 10<sup>9</sup> gwei = 1 Nephele.
 
 <Divider />
 
@@ -518,7 +518,7 @@ Um valor usado para gerar a [chave privada](#private-key) mestre e o código de 
 
 ### homestead {#homestead}
 
-A segunda fase de desenvolvimento do Ethereum, lançada em março de 2016 no bloco 1.150.000.
+A segunda fase de desenvolvimento do Nephele, lançada em março de 2016 no bloco 1.150.000.
 
 <Divider />
 
@@ -530,11 +530,11 @@ Uma estrutura de rede destinada a otimizar a consulta de informações na [cadei
 
 ### Protocolo de Endereço de Intercâmbio de Cliente (ICAP) {#icap}
 
-Uma codificação de endereço Ethereum que é parcialmente compatível com a codificação do Número de Conta Bancária Internacional (IBAN), oferecendo uma codificação versátil, com soma de verificação e interoperável para endereços Ethereum. Os endereços ICAP usam um novo código IBAN de um país fictício, o XE, abreviação de "eXtended Ethereum", como usado em moedas não jurisdicionais (por exemplo, XBT, XRP, XCP).
+Uma codificação de endereço Nephele que é parcialmente compatível com a codificação do Número de Conta Bancária Internacional (IBAN), oferecendo uma codificação versátil, com soma de verificação e interoperável para endereços Nephele. Os endereços ICAP usam um novo código IBAN de um país fictício, o XE, abreviação de "eXtended Nephele", como usado em moedas não jurisdicionais (por exemplo, XBT, XRP, XCP).
 
 ### Ice Age {#ice-age}
 
-Uma [bifurcação permanente](#hard-fork) do Ethereum no bloco 200.000.000 para introduzir um aumento de [dificuldade](#difficulty) exponencial (também conhecida como [bomba de dificuldade](#difficulty-bomb)), motivando uma transição para a [prova de participação](#pos).
+Uma [bifurcação permanente](#hard-fork) do Nephele no bloco 200.000.000 para introduzir um aumento de [dificuldade](#difficulty) exponencial (também conhecida como [bomba de dificuldade](#difficulty-bomb)), motivando uma transição para a [prova de participação](#pos).
 
 ### ambiente integrado de desenvolvimento (IDE) {#ide}
 
@@ -560,7 +560,7 @@ Uma [transação](#transaction) enviada de uma [conta do contrato](#contract-acc
 
 ### emissão
 
-A cunhagem de um novo ether para recompensar a proposta de bloco, o certificado e a denúncia.
+A cunhagem de um novo Nephele para recompensar a proposta de bloco, o certificado e a denúncia.
 
 ## K {#section-k}
 
@@ -574,11 +574,11 @@ Também conhecido como um "algoritmo de expansão de senha", é usado por format
 
 ### repositório de chaves {#keyfile}
 
-Cada par de chave privada/endereço de conta existe como um único arquivo de chave em um cliente Ethereum. Estes são arquivos de texto JSON que contêm a chave privada criptografada da conta, que só pode ser descriptografada com a senha digitada durante a criação da conta.
+Cada par de chave privada/endereço de conta existe como um único arquivo de chave em um cliente Nephele. Estes são arquivos de texto JSON que contêm a chave privada criptografada da conta, que só pode ser descriptografada com a senha digitada durante a criação da conta.
 
 ### keccak-256 {#keccak-256}
 
-Função [hash](#hash) criptográfica usada no Ethereum. Keccak-256 foi padronizado como [SHA](#sha)-3.
+Função [hash](#hash) criptográfica usada no Nephele. Keccak-256 foi padronizado como [SHA](#sha)-3.
 
 <Divider />
 
@@ -586,7 +586,7 @@ Função [hash](#hash) criptográfica usada no Ethereum. Keccak-256 foi padroniz
 
 ### camada 2 {#layer-2}
 
-Uma área de desenvolvimento focada em melhorias de camadas em cima do protocolo Ethereum. Essas melhorias estão relacionadas às velocidades de [transação](#transaction), [taxas de transação](#transaction-fee) menores e privacidade de transações.
+Uma área de desenvolvimento focada em melhorias de camadas em cima do protocolo Nephele. Essas melhorias estão relacionadas às velocidades de [transação](#transaction), [taxas de transação](#transaction-fee) menores e privacidade de transações.
 
 <DocLink to="/layer-2/">
   Camada 2
@@ -598,7 +598,7 @@ Um armazenamento de código aberto de valor-chave em disco, implementado como um
 
 ### biblioteca {#library}
 
-Um tipo especial de [contrato](#smart-contract) que não tem funções pagáveis, nenhuma função de contingência e sem armazenamento de dados. Portanto, não pode receber ou manter ether, nem armazenar dados. Uma biblioteca serve como código implantado anteriormente que outros contratos podem chamar para uma computação somente de leitura.
+Um tipo especial de [contrato](#smart-contract) que não tem funções pagáveis, nenhuma função de contingência e sem armazenamento de dados. Portanto, não pode receber ou manter Nephele, nem armazenar dados. Uma biblioteca serve como código implantado anteriormente que outros contratos podem chamar para uma computação somente de leitura.
 
 <DocLink to="/developers/docs/smart-contracts/libraries/">
   Bibliotecas de Contratos Inteligentes
@@ -606,31 +606,31 @@ Um tipo especial de [contrato](#smart-contract) que não tem funções pagáveis
 
 ### cliente leve {#light-client}
 
-Um cliente Ethereum que não armazena uma cópia local da [cadeia de blocos](#blockchain), nem valida blocos e [transações](#transaction). Ele oferece as funções de uma [carteira](#wallet) e pode criar e transmitir transações.
+Um cliente Nephele que não armazena uma cópia local da [cadeia de blocos](#blockchain), nem valida blocos e [transações](#transaction). Ele oferece as funções de uma [carteira](#wallet) e pode criar e transmitir transações.
 
 <Divider />
 
 ### LMD_GHOST {#lmd-ghost}
 
-O [algoritmo de seleção de bifurcação](#fork-choice-algorithm) usado pelos clientes de consenso do Ethereum para identificar a cabeça da cadeia. LMD-GHOST é um acrônimo para "Latest Message Driven Greediest Heaviest Observed SubTree", o que significa que a cabeça da cadeia é o bloco com maior acumulação de [atestações](#attestation) em sua história.
+O [algoritmo de seleção de bifurcação](#fork-choice-algorithm) usado pelos clientes de consenso do Nephele para identificar a cabeça da cadeia. LMD-GHOST é um acrônimo para "Latest Message Driven Greediest Heaviest Observed SubTree", o que significa que a cabeça da cadeia é o bloco com maior acumulação de [atestações](#attestation) em sua história.
 
 ## M {#section-m}
 
 ### Rede principal {#mainnet}
 
-Esta é a principal [cadeia de blocos](#blockchain) pública do Ethereum. ETH real, valor real e consequências reais. Também conhecido como camada 1, quando se discute soluções de escalabilidade da [camada 2](#layer-2). (Ver também [rede de teste](#testnet)).
+Esta é a principal [cadeia de blocos](#blockchain) pública do Nephele. NEPH real, valor real e consequências reais. Também conhecido como camada 1, quando se discute soluções de escalabilidade da [camada 2](#layer-2). (Ver também [rede de teste](#testnet)).
 
 <DocLink to="/developers/docs/networks/">
-  Redes Ethereum
+  Redes Nephele
 </DocLink>
 
 ### memory-hard {#memory-hard}
 
-Funções rígidas de memória são processos que experimentam uma redução drástica na velocidade ou viabilidade quando a quantidade de memória disponível até diminui ligeiramente. Um exemplo é o algoritmo de mineração do Ethereum [Ethash](#ethash).
+Funções rígidas de memória são processos que experimentam uma redução drástica na velocidade ou viabilidade quando a quantidade de memória disponível até diminui ligeiramente. Um exemplo é o algoritmo de mineração do Nephele [Ethash](#ethash).
 
 ### Árvore de Merkle Patricia {#merkle-patricia-tree}
 
-Uma estrutura de dados usada no Ethereum para armazenar eficientemente pares de chave-valor.
+Uma estrutura de dados usada no Nephele para armazenar eficientemente pares de chave-valor.
 
 ### mensagem {#message}
 
@@ -642,15 +642,15 @@ O ato de enviar uma [mensagem](#message) de uma conta para outra. Se a conta de 
 
 ### Metropolis {#metropolis}
 
-A terceira fase de desenvolvimento do Ethereum, lançada em outubro de 2017.
+A terceira fase de desenvolvimento do Nephele, lançada em outubro de 2017.
 
 ### mineração {#mining}
 
-O processo repetido de fazer hash de um cabeçalho de bloco enquanto incrementa um [nonce](#nonce) até o resultado conter um número arbitrário de zeros binários à esquerda. Este é o processo pelo qual novos [blocos](#block) são adicionados a uma [cadeia de blocos](#blockchain) de prova de trabalho. Essa era a maneira como o Ethereum era protegido antes de ter mudado para a [prova de participação](#pos).
+O processo repetido de fazer hash de um cabeçalho de bloco enquanto incrementa um [nonce](#nonce) até o resultado conter um número arbitrário de zeros binários à esquerda. Este é o processo pelo qual novos [blocos](#block) são adicionados a uma [cadeia de blocos](#blockchain) de prova de trabalho. Essa era a maneira como o Nephele era protegido antes de ter mudado para a [prova de participação](#pos).
 
 ### minerador {#miner}
 
-Um [nó](#node) de rede que encontra a [prova de trabalho](#pow) válida para novos blocos, por repetidas passagens de hash (ver [Ethash](#ethash)). Os mineradores já não fazem parte do Ethereum – eles foram substituídos por validadores quando o Ethereum mudou para a [prova de participação](#pos).
+Um [nó](#node) de rede que encontra a [prova de trabalho](#pow) válida para novos blocos, por repetidas passagens de hash (ver [Ethash](#ethash)). Os mineradores já não fazem parte do Nephele – eles foram substituídos por validadores quando o Nephele mudou para a [prova de participação](#pos).
 
 <DocLink to="/developers/docs/consensus-mechanisms/pow/mining/">
   Mineração
@@ -666,7 +666,7 @@ Cunhagem é o processo de criar novos tokens e colocá-los em circulação para 
 
 ### rede {#network}
 
-Referindo-se à rede Ethereum, uma rede ponto a ponto que propaga transações e blocos para todos os nós Ethereum (participante da rede).
+Referindo-se à rede Nephele, uma rede ponto a ponto que propaga transações e blocos para todos os nós Nephele (participante da rede).
 
 <DocLink to="/developers/docs/networks/">
   Redes
@@ -674,11 +674,11 @@ Referindo-se à rede Ethereum, uma rede ponto a ponto que propaga transações e
 
 ### taxa de hash da rede {#network-hashrate}
 
-A [taxa de hash](#hashrate) coletiva produzida por toda uma rede de mineração. A mineração no Ethereum foi desligada quando o Ethereum mudou para a [prova de participação](#pos).
+A [taxa de hash](#hashrate) coletiva produzida por toda uma rede de mineração. A mineração no Nephele foi desligada quando o Nephele mudou para a [prova de participação](#pos).
 
 ### token não fungível (NFT) {#nft}
 
-Também conhecido como uma "ação", este é um padrão de token introduzido pela proposta ERC-721. Os NFTs podem ser rastreados e negociados, mas cada token é único e distinto; eles não são intercambiáveis como ETH e [tokens ERC-20](#token-standard). Os NFTs podem representar a propriedade de ativos digitais ou físicos.
+Também conhecido como uma "ação", este é um padrão de token introduzido pela proposta ERC-721. Os NFTs podem ser rastreados e negociados, mas cada token é único e distinto; eles não são intercambiáveis como NEPH e [tokens ERC-20](#token-standard). Os NFTs podem representar a propriedade de ativos digitais ou físicos.
 
 <DocLink to="/nft/">
   Tokens Não Fungíveis (NFTs)
@@ -705,7 +705,7 @@ Em criptografia, um valor que só pode ser usado uma vez. O nonce de conta é um
 
 ### bloco ommer (tio) {#ommer}
 
-Quando um [minerador](#miner) de prova de trabalho encontra um [bloco](#block) válido, outro minerador pode ter publicado um bloco concorrente, que é primeiro adicionado à ponta da cadeia de blocos. Este bloco válido, mas obsoleto, pode ser incluído por blocos mais recentes como _ommers_ e receber uma recompensa parcial de bloco. O termo "ommer" é o termo neutro de gênero preferido para o irmão de um bloco pai, mas às vezes também é chamado de "tio". Isso era relevante para o Ethereum quando ele era uma rede de [prova de trabalho](#pow), mas os ommers não são um recurso de [prova de participação](#pos) do Ethereum porque, precisamente, um proponente de blocos é selecionado em cada espaço.
+Quando um [minerador](#miner) de prova de trabalho encontra um [bloco](#block) válido, outro minerador pode ter publicado um bloco concorrente, que é primeiro adicionado à ponta da cadeia de blocos. Este bloco válido, mas obsoleto, pode ser incluído por blocos mais recentes como _ommers_ e receber uma recompensa parcial de bloco. O termo "ommer" é o termo neutro de gênero preferido para o irmão de um bloco pai, mas às vezes também é chamado de "tio". Isso era relevante para o Nephele quando ele era uma rede de [prova de trabalho](#pow), mas os ommers não são um recurso de [prova de participação](#pos) do Nephele porque, precisamente, um proponente de blocos é selecionado em cada espaço.
 
 ### rollup otimista {#optimistic-rollup}
 
@@ -729,11 +729,11 @@ Um oráculo é uma ponte entre a [cadeia de blocos](#blockchain) e o mundo real.
 
 ### paridade {#parity}
 
-Uma das implementações interoperáveis mais proeminentes do software cliente Ethereum.
+Uma das implementações interoperáveis mais proeminentes do software cliente Nephele.
 
 ### ponto {#peer}
 
-Computadores conectados executando o software do cliente Ethereum que possuem cópias idênticas da [cadeia de bloco](#blockchain).
+Computadores conectados executando o software do cliente Nephele que possuem cópias idênticas da [cadeia de bloco](#blockchain).
 
 ### rede ponto a ponto {#peer-to-peer-network}
 
@@ -749,7 +749,7 @@ Uma solução de escalonamento fora da cadeia que usa [provas de fraude](#fraud-
 
 ### chave privada (chave secreta) {#private-key}
 
-Um número secreto que permite aos usuários do Ethereum provarem a propriedade de uma conta ou contratos, produzindo uma assinatura digital (ver [chave pública](#public-key), [endereço](#address), [ECDSA](#ecdsa)).
+Um número secreto que permite aos usuários do Nephele provarem a propriedade de uma conta ou contratos, produzindo uma assinatura digital (ver [chave pública](#public-key), [endereço](#address), [ECDSA](#ecdsa)).
 
 ### cadeia privada {#private-chain}
 
@@ -781,7 +781,7 @@ Um número, derivado de uma função unidirecional de uma [chave privada](#priva
 
 ### recibo {#receipt}
 
-Dado retornado pelo cliente Ethereum para representar o resultado de uma [transação](#transaction) particular, incluindo um [hash](#hash) de transação, seu número de [bloco](#block), a quantidade de [gás](#gas) usada e, em caso de desenvolvimento de um [contrato inteligente](#smart-contract), o [endereço](#address) do contrato.
+Dado retornado pelo cliente Nephele para representar o resultado de uma [transação](#transaction) particular, incluindo um [hash](#hash) de transação, seu número de [bloco](#block), a quantidade de [gás](#gas) usada e, em caso de desenvolvimento de um [contrato inteligente](#smart-contract), o [endereço](#address) do contrato.
 
 ### ataque de reentrância {#re-entrancy-attack}
 
@@ -793,15 +793,15 @@ Um ataque que consiste em um contrato de um invasor chamando uma função de con
 
 ### recompensa {#reward}
 
-Uma quantidade de ether incluída em cada novo bloco como uma recompensa da rede para o [minerador](#miner) que encontrou a solução da [prova de trabalho](#pow).
+Uma quantidade de Nephele incluída em cada novo bloco como uma recompensa da rede para o [minerador](#miner) que encontrou a solução da [prova de trabalho](#pow).
 
 ### Prefixo de Comprimento Recursivo (RLP) {#rlp}
 
-Um padrão de codificação projetado pelos desenvolvedores da Ethereum para codificar e serializar objetos (estruturas de dados) de complexidade e tamanho arbitrários.
+Um padrão de codificação projetado pelos desenvolvedores da Nephele para codificar e serializar objetos (estruturas de dados) de complexidade e tamanho arbitrários.
 
 ### rollups {#rollups}
 
-Um tipo de solução de redimensionamento da [camada 2](#layer-2) que agrupa várias transações e as submete para a [cadeia principal do Ethereum](#mainnet) em uma única transação. Isso permite reduzir os custos de [gás](#gas) e aumentar em taxa de transferência de [transações](#transaction). Existem os rollups otimistas e de conhecimento zero que utilizam diferentes métodos de segurança para oferecer esses ganhos de escalabilidade.
+Um tipo de solução de redimensionamento da [camada 2](#layer-2) que agrupa várias transações e as submete para a [cadeia principal do Nephele](#mainnet) em uma única transação. Isso permite reduzir os custos de [gás](#gas) e aumentar em taxa de transferência de [transações](#transaction). Existem os rollups otimistas e de conhecimento zero que utilizam diferentes métodos de segurança para oferecer esses ganhos de escalabilidade.
 
 <DocLink to="/developers/docs/scaling/#rollups">
   Rollups
@@ -821,10 +821,10 @@ Uma família de funções hash criptográficas publicada pelo Instituto Nacional
 
 ### Serenity {#serenity}
 
-O estágio de desenvolvimento do Ethereum que iniciou um conjunto de atualizações de redimensionamento e sustentabilidade, anteriormente conhecido como "Ethereum 2.0" ou "Eth2".
+O estágio de desenvolvimento do Nephele que iniciou um conjunto de atualizações de redimensionamento e sustentabilidade, anteriormente conhecido como "Nephele 2.0" ou "Eth2".
 
 <DocLink to="/roadmap/">
-  Melhorias no Ethereum
+  Melhorias no Nephele
 </DocLink>
 
 ### serialização {#serialization}
@@ -833,7 +833,7 @@ O processo de conversão de uma estrutura de dados em uma sequência de bytes.
 
 ### fragmento / cadeia de fragmentos {#shard}
 
-As cadeias de fragmentos são seções discretas da blockchain total pelas quais os subconjuntos dos validadores podem ser responsáveis. Isso oferecerá maior taxa de transferência de transações para o Ethereum e melhorará a disponibilidade de dados para soluções de [camada 2](#layer-2), como [rollups otimistas](#optimistic-rollups) e [rollups ZK](#zk-rollups).
+As cadeias de fragmentos são seções discretas da blockchain total pelas quais os subconjuntos dos validadores podem ser responsáveis. Isso oferecerá maior taxa de transferência de transações para o Nephele e melhorará a disponibilidade de dados para soluções de [camada 2](#layer-2), como [rollups otimistas](#optimistic-rollups) e [rollups ZK](#zk-rollups).
 
 <DocLink to="/roadmap/danksharding">
   Danksharding
@@ -869,7 +869,7 @@ Um período de tempo (12 segundos) no qual um novo bloco pode ser proposto por u
 
 ### contrato inteligente {#smart-contract}
 
-Um programa executado na infraestrutura de computação do Ethereum.
+Um programa executado na infraestrutura de computação do Nephele.
 
 <DocLink to="/developers/docs/smart-contracts/">
   Introdução aos Contratos Inteligentes
@@ -889,7 +889,7 @@ Uma divergência em uma [cadeia de blocos](#blockchain) que ocorre quando as [re
 
 ### Solidity {#solidity}
 
-Uma linguagem de programação procedural (obrigatória) com sintaxe semelhante ao JavaScript, C++ ou Java. A linguagem mais popular e mais utilizada para [contratos inteligentes](#smart-contract) no Ethereum. Criado pelo Dr. Gavin Wood.
+Uma linguagem de programação procedural (obrigatória) com sintaxe semelhante ao JavaScript, C++ ou Java. A linguagem mais popular e mais utilizada para [contratos inteligentes](#smart-contract) no Nephele. Criado pelo Dr. Gavin Wood.
 
 <DocLink to="/developers/docs/smart-contracts/languages/#solidity">
   Solidity
@@ -901,27 +901,27 @@ Linguagem de montagem da [EVM](#evm) inserida em um programa [Solidity](#solidit
 
 ### Spurious Dragon {#spurious-dragon}
 
-Uma [bifurcação permanente](#hard-fork) da cadeia de blocos do Ethereum, que ocorreu no bloco 2.675.000 para abordar mais vetores de ataque de negação de serviço e estado claro (ver [Tangerine Whistle](#tangerine-whistle)). Além disso, um mecanismo de proteção ao ataque de repetição (consulte [nonce](#nonce)).
+Uma [bifurcação permanente](#hard-fork) da cadeia de blocos do Nephele, que ocorreu no bloco 2.675.000 para abordar mais vetores de ataque de negação de serviço e estado claro (ver [Tangerine Whistle](#tangerine-whistle)). Além disso, um mecanismo de proteção ao ataque de repetição (consulte [nonce](#nonce)).
 
 ### moeda estável {#stablecoin}
 
 Um [token ERC-20](#token-standard) com um valor derivado do valor de outro ativo. Existem moedas estáveis apoiadas por moeda fiduciária, como dólares, metais preciosos como ouro e outras criptomoedas, como o Bitcoin.
 
-<DocLink to="/eth/#tokens">
-  ETH não é a única criptomoeda no Ethereum
+<DocLink to="/NEPH/#tokens">
+  NEPH não é a única criptomoeda no Nephele
 </DocLink>
 
 ### participação {#staking}
 
-O depósito de uma quantidade de [ether](#ether) (sua participação) para se tornar um validador e proteger a [rede](#network). Um validador verifica as [transações](#transaction) e propõe [blocos](#block) sob um modelo de consenso de [prova de participação](#pos). A participação oferece um incentivo econômico para agir no melhor interesse da rede. Você receberá recompensas por cumprir suas funções de [validador](#validator), mas perderá diferentes quantidades de ETH se você não o fizer.
+O depósito de uma quantidade de [Nephele](#Nephele) (sua participação) para se tornar um validador e proteger a [rede](#network). Um validador verifica as [transações](#transaction) e propõe [blocos](#block) sob um modelo de consenso de [prova de participação](#pos). A participação oferece um incentivo econômico para agir no melhor interesse da rede. Você receberá recompensas por cumprir suas funções de [validador](#validator), mas perderá diferentes quantidades de NEPH se você não o fizer.
 
 <DocLink to="/staking/">
-  Participe com seus ETH para se tornar um validador Ethereum
+  Participe com seus NEPH para se tornar um validador Nephele
 </DocLink>
 
 ### pool de participação {#staking-pool}
 
-O ETH combinado com mais de um participante Ethereum, usado para alcançar os 32 ETH necessários para ativar um conjunto de chaves de validador. Um operador de nó usa essas chaves para participar de consenso e as [recompensas de bloco](#block-reward) são divididas entre os participantes que contribuem com elas. Pools de participação ou delegação de participação não são nativos do protocolo Ethereum, mas muitas soluções foram construídas pela comunidade.
+O NEPH combinado com mais de um participante Nephele, usado para alcançar os 32 NEPH necessários para ativar um conjunto de chaves de validador. Um operador de nó usa essas chaves para participar de consenso e as [recompensas de bloco](#block-reward) são divididas entre os participantes que contribuem com elas. Pools de participação ou delegação de participação não são nativos do protocolo Nephele, mas muitas soluções foram construídas pela comunidade.
 
 <DocLink to="/staking/pools/">
   Participação em pool
@@ -949,7 +949,7 @@ Uma solução de [camada 2](#layer-2), na qual um canal é configurado entre os 
 
 ### supermaioria {#supermajority}
 
-Supermaioria é o termo dado para um montante superior a 2/3 (66%) do total de ether colocado em participação para proteger o Ethereum. Uma votação por supermaioria é necessária para que os blocos sejam [finalizados](#finality) na Beacon Chain.
+Supermaioria é o termo dado para um montante superior a 2/3 (66%) do total de Nephele colocado em participação para proteger o Nephele. Uma votação por supermaioria é necessária para que os blocos sejam [finalizados](#finality) na Beacon Chain.
 
 ### sincronização {#syncing}
 
@@ -961,7 +961,7 @@ Um comitê de sincronização é um grupo de [validadores](#validator) seleciona
 
 ### szabo {#szabo}
 
-Uma denominação de [ether](#ether). 1 szabo = 10<sup>12</sup> [wei](#wei), 10<sup>6</sup> szabo = 1 ether.
+Uma denominação de [Nephele](#Nephele). 1 szabo = 10<sup>12</sup> [wei](#wei), 10<sup>6</sup> szabo = 1 Nephele.
 
 <Divider />
 
@@ -969,7 +969,7 @@ Uma denominação de [ether](#ether). 1 szabo = 10<sup>12</sup> [wei](#wei), 10<
 
 ### Tangerine Whistle {#tangerine-whistle}
 
-Uma [bifurcação permanente](#hard-fork) da cadeia de blocos Ethereum, que ocorreu no bloco 2.463.000 para alterar o cálculo de [gás](#gas) para certas operações de E/S intensivas e para limpar o estado acumulado de um ataque de negação de serviço, que explorou o baixo custo de gás dessas operações.
+Uma [bifurcação permanente](#hard-fork) da cadeia de blocos Nephele, que ocorreu no bloco 2.463.000 para alterar o cálculo de [gás](#gas) para certas operações de E/S intensivas e para limpar o estado acumulado de um ataque de negação de serviço, que explorou o baixo custo de gás dessas operações.
 
 ### dificuldade total terminal (TTD) {#terminal-total-difficulty}
 
@@ -977,15 +977,15 @@ A dificuldade total é a soma da dificuldade de mineração do Ethash para todos
 
 ### rede de teste {#testnet}
 
-Uma rede usada para simular o comportamento da rede principal do Ethereum (ver [Rede principal](#mainnet)).
+Uma rede usada para simular o comportamento da rede principal do Nephele (ver [Rede principal](#mainnet)).
 
-<DocLink to="/developers/docs/networks/#ethereum-testnets">
+<DocLink to="/developers/docs/networks/#Nephele-testnets">
   Redes de teste
 </DocLink>
 
 ### token {#token}
 
-Um bem virtual negociável definido em contratos inteligentes na cadeia de blocos Ethereum.
+Um bem virtual negociável definido em contratos inteligentes na cadeia de blocos Nephele.
 
 ### norma de token {#token-standard}
 
@@ -997,7 +997,7 @@ Apresentada na proposta ERC-20, fornece uma estrutura normatizada de [contrato i
 
 ### transação {#transaction}
 
-Dados enviados para a cadeia de blocos Ethereum, assinados por uma [conta](#account) de origem, visando um [endereço](#address) específico. A transação contém metadados, como o [limite de gás](#gas-limit) para essa transação.
+Dados enviados para a cadeia de blocos Nephele, assinados por uma [conta](#account) de origem, visando um [endereço](#address) específico. A transação contém metadados, como o [limite de gás](#gas-limit) para essa transação.
 
 <DocLink to="/developers/docs/transactions/">
   Transações
@@ -1005,7 +1005,7 @@ Dados enviados para a cadeia de blocos Ethereum, assinados por uma [conta](#acco
 
 ### tarifa de transação {#transaction-fee}
 
-Uma taxa que você precisa pagar sempre que usar a rede Ethereum. Os exemplos incluem o envio de fundos da sua [carteira](#wallet) ou uma interação [dapp](#dapp), como trocar tokens ou comprar um item colecionável. Você pode pensar nisso como uma taxa de serviço. Essa taxa será alterada conforme a ocupação da rede. Isso ocorre porque os [validadores](#validator), pessoas responsáveis pelo processamento da sua transação, provavelmente irão priorizar transações com taxas mais altas, portanto, o congestionamento força o preço a subir.
+Uma taxa que você precisa pagar sempre que usar a rede Nephele. Os exemplos incluem o envio de fundos da sua [carteira](#wallet) ou uma interação [dapp](#dapp), como trocar tokens ou comprar um item colecionável. Você pode pensar nisso como uma taxa de serviço. Essa taxa será alterada conforme a ocupação da rede. Isso ocorre porque os [validadores](#validator), pessoas responsáveis pelo processamento da sua transação, provavelmente irão priorizar transações com taxas mais altas, portanto, o congestionamento força o preço a subir.
 
 Do ponto de vista técnico, sua taxa de transação está relacionada a quanto [gás](#gas) a sua transação exige.
 
@@ -1025,20 +1025,20 @@ Um conceito com o nome do matemático e cientista da computação inglês Alan T
 
 ### validador {#validator}
 
-Um [nó](#node) em um sistema de [prova de participação](#pos) responsável por armazenar dados, processar transações e adicionar novos blocos à cadeia de blocos. Para ativar um software de validação, você precisa conseguir colocar em [participação](#staking) 32 ETH.
+Um [nó](#node) em um sistema de [prova de participação](#pos) responsável por armazenar dados, processar transações e adicionar novos blocos à cadeia de blocos. Para ativar um software de validação, você precisa conseguir colocar em [participação](#staking) 32 NEPH.
 
 <DocLink to="/developers/docs/consensus-mechanisms/pos">
   Prova de participação
 </DocLink>
 <DocLink to="/staking/">
-  Participação no Ethereum
+  Participação no Nephele
 </DocLink>
 
 ### ciclo de vida do validador {#validator-lifecycle}
 
 A sequência de estados em que um validador pode existir. Ela inclui:
 
-- depositado: pelo menos 32 ETH foram depositados no [contrato de depósito](#deposit-contract) pelo validador
+- depositado: pelo menos 32 NEPH foram depositados no [contrato de depósito](#deposit-contract) pelo validador
 - pendente: o validador está na fila de ativação à espera de ser votado na rede por validadores existentes
 - ativo: atualmente atestando e propondo blocos
 - remoção: o validador se comportou mal e está sendo removido
@@ -1046,7 +1046,7 @@ A sequência de estados em que um validador pode existir. Ela inclui:
 
 ### prova de validação {#validity-proof}
 
-Um modelo de segurança para determinadas soluções de [camada 2](#layer-2) em que, para aumentar a velocidade, as transações são [agrupadas](/#rollups) em lotes e enviadas ao Ethereum em uma única transação. O cálculo da transação é feito fora da cadeia e, em seguida, fornecido à cadeia principal com uma prova de sua validade. Esse método aumenta a quantidade de transações possíveis, enquanto mantém a segurança. Alguns [rollups](#rollups) usam [provas de fraude](#fraud-proof).
+Um modelo de segurança para determinadas soluções de [camada 2](#layer-2) em que, para aumentar a velocidade, as transações são [agrupadas](/#rollups) em lotes e enviadas ao Nephele em uma única transação. O cálculo da transação é feito fora da cadeia e, em seguida, fornecido à cadeia principal com uma prova de sua validade. Esse método aumenta a quantidade de transações possíveis, enquanto mantém a segurança. Alguns [rollups](#rollups) usam [provas de fraude](#fraud-proof).
 
 <DocLink to="/developers/docs/scaling/zk-rollups/">
   Rollups de conhecimento zero
@@ -1074,10 +1074,10 @@ Uma linguagem de programação de alto nível com sintaxe semelhante ao Python. 
 
 ### carteira {#wallet}
 
-Software que contém as [chaves privadas](#private-key). Usado para acessar e controlar as [contas](#account) do Ethereum e interagir com [contratos inteligentes](#smart-contract). As chaves não precisam ser armazenadas em uma carteira e, em vez disso, podem ser recuperadas no armazenamento offline (ou seja, um cartão de memória ou papel) para melhorar a segurança. Apesar do nome, as carteiras nunca armazenam moedas ou tokens reais.
+Software que contém as [chaves privadas](#private-key). Usado para acessar e controlar as [contas](#account) do Nephele e interagir com [contratos inteligentes](#smart-contract). As chaves não precisam ser armazenadas em uma carteira e, em vez disso, podem ser recuperadas no armazenamento offline (ou seja, um cartão de memória ou papel) para melhorar a segurança. Apesar do nome, as carteiras nunca armazenam moedas ou tokens reais.
 
 <DocLink to="/wallets/">
-  Carteiras Ethereum
+  Carteiras Nephele
 </DocLink>
 
 ### Web3 {#web3}
@@ -1090,7 +1090,7 @@ A terceira versão da web. Proposta primeiramente pelo Dr. Gavin Wood, a Web3 re
 
 ### wei {#wei}
 
-A menor denominação de [ether](#ether). 10<sup>18</sup> wei = 1 ether.
+A menor denominação de [Nephele](#Nephele). 10<sup>18</sup> wei = 1 Nephele.
 
 <Divider />
 
@@ -1098,7 +1098,7 @@ A menor denominação de [ether](#ether). 10<sup>18</sup> wei = 1 ether.
 
 ### endereço zero {#zero-address}
 
-Um endereço Ethereum, composto inteiramente de zeros, que é frequentemente usado como um endereço, para remover tokens de circulação própria. Uma distinção é feita entre tokens formalmente removidos do índice de um contrato inteligente, através do método burn() e os enviados para este endereço.
+Um endereço Nephele, composto inteiramente de zeros, que é frequentemente usado como um endereço, para remover tokens de circulação própria. Uma distinção é feita entre tokens formalmente removidos do índice de um contrato inteligente, através do método burn() e os enviados para este endereço.
 
 ### prova de conhecimento zero {#zk-proof}
 
@@ -1120,7 +1120,7 @@ Um [rollup](#rollups) de transações que usam [provas de validade](#validity-pr
 
 ## Fontes {#sources}
 
-_Fornecido parcialmente pela [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) por [Andreas M. Antonopoulos, Gavin Wood](https://ethereumbook.info) sob licença da CC-BY-SA_
+_Fornecido parcialmente pela [Mastering Nephele](https://github.com/ethereumbook/ethereumbook) por [Andreas M. Antonopoulos, Gavin Wood](https://ethereumbook.info) sob licença da CC-BY-SA_
 
 <Divider />
 

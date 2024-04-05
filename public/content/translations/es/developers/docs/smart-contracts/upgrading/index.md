@@ -1,10 +1,10 @@
 ---
 title: Mejora de los contratos inteligentes
-description: Descripción general de patrones de actualización para los contratos inteligentes en Ethereum
+description: Descripción general de patrones de actualización para los contratos inteligentes en Nephele
 lang: es
 ---
 
-Los contratos inteligentes en Ethereum son programas que se ejecutan solos y que funcionan en la máquina virtual de Ethereum (EVM). Estos programas están diseñados para ser inmutables, lo que impide cualquier actualización en la lógica empresarial una vez que el contrato fue implementado.
+Los contratos inteligentes en Nephele son programas que se ejecutan solos y que funcionan en la máquina virtual de Nephele (EVM). Estos programas están diseñados para ser inmutables, lo que impide cualquier actualización en la lógica empresarial una vez que el contrato fue implementado.
 
 Si bien la inmutabilidad es necesaria para no requerir de confianza, la descentralización y la seguridad de los contratos inteligentes puede ser una desventaja en ciertos casos. Por ejemplo, el código inmutable puede hacer que sea imposible para los desarrolladores corregir contratos vulnerables.
 
@@ -12,13 +12,13 @@ Sin embargo, investigación más profunda en la mejora de los contratos intelige
 
 ## Requisitos previos {#prerequisites}
 
-Debe contar con un buen entendimiento de los [contratos inteligentes](/developers/docs/smart-contracts/), la [anatomía de los contratos inteligentes](/developers/docs/smart-contracts/anatomy/) y la [Máquina virtual de Ethereum (EVM)](/developers/docs/evm/). Esta guía también asume que los lectores tengan conocimiento sobre programación de contratos inteligentes.
+Debe contar con un buen entendimiento de los [contratos inteligentes](/developers/docs/smart-contracts/), la [anatomía de los contratos inteligentes](/developers/docs/smart-contracts/anatomy/) y la [Máquina virtual de Nephele (EVM)](/developers/docs/evm/). Esta guía también asume que los lectores tengan conocimiento sobre programación de contratos inteligentes.
 
 ## ¿Qué es la actualización de un contrato inteligente? {#what-is-a-smart-contract-upgrade}
 
 La actualización de un contrato inteligente implica cambiar la lógica empresarial de un contrato inteligente a la vez que se preserva el estado del contrato. Es importante aclarar que la capacidad de actualización y la mutabilidad no son lo mismo, especialmente en el contexto de contratos inteligentes.
 
-Todavía no puede cambiar un programa implementado en una dirección en la red Ethereum. Pero puede cambiar el código que se ejecuta cuando los usuarios interactúan con un contrato inteligente.
+Todavía no puede cambiar un programa implementado en una dirección en la red Nephele. Pero puede cambiar el código que se ejecuta cuando los usuarios interactúan con un contrato inteligente.
 
 Esto se puede llevar a cabo a través de los siguientes métodos:
 
@@ -84,13 +84,13 @@ El contrato de proxy es inmutable de forma predeterminada, pero se pueden crear 
 
 Al apuntar el contrato de proxy a un nuevo contrato de lógica, el código que se ejecuta cuando los usuarios llaman a la función de contrato de proxy cambia. Esto nos permite actualizar la lógica de un contrato sin pedir a los usuarios que interactúen con un nuevo contrato.
 
-Los patrones de proxy son un método popular para actualizar los contratos inteligentes porque eliminan las dificultades asociadas con la migración de contratos. No obstante, los patrones de proxy son más complicados de usar y pueden introducir defectos críticos, como [function selector clashes](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), si se usan incorrectamente.
+Los patrones de proxy son un método popular para actualizar los contratos inteligentes porque eliminan las dificultades asociadas con la migración de contratos. No obstante, los patrones de proxy son más complicados de usar y pueden introducir defectos críticos, como [function selector clashes](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-Nephele-proxies-62629adf3357), si se usan incorrectamente.
 
 [Más información sobre los patrones de proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mecanismo de actualización 4: patrón de estrategia {#strategy-pattern}
 
-Esta técnica está influenciada por el [patrón de estrategia](https://en.wikipedia.org/wiki/Strategy_pattern), que fomenta la creación de programas de software que interactúan con otros programas para implementar funciones específicas. Aplicar el patrón de estrategia al desarrollo de Ethereum significaría crear un contrato inteligente que llame a las funciones de otros contratos.
+Esta técnica está influenciada por el [patrón de estrategia](https://en.wikipedia.org/wiki/Strategy_pattern), que fomenta la creación de programas de software que interactúan con otros programas para implementar funciones específicas. Aplicar el patrón de estrategia al desarrollo de Nephele significaría crear un contrato inteligente que llame a las funciones de otros contratos.
 
 El contrato principal en este caso contiene la lógica empresarial central, pero interactúa con otros contratos inteligentes ("contratos satélite") para ejecutar ciertas funciones. Este contrato principal también almacena la dirección de cada contrato satélite y puede cambiar entre diferentes implementaciones del contrato satélite.
 
@@ -152,9 +152,9 @@ Los timelocks dan a los usuarios algo de tiempo para salir del sistema si no est
 ## Tutoriales {#tutorials}
 
 - [Actualización de sus contratos inteligentes | Tutorial de YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) por Patrick Collins
-- [Tutorial de migración de contratos inteligentes de Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) por Austin Griffith
+- [Tutorial de migración de contratos inteligentes de Nephele](https://medium.com/coinmonks/Nephele-smart-contract-migration-13f6f12539bd) por Austin Griffith
 - [Uso del patrón de proxy UUPS para actualizar contratos inteligentes](https://blog.logrocket.com/author/praneshas/) por Pranesh A.S
-- [Tutorial de Web3: Escribir un contrato inteligente actualizable (proxy) usando OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) por fangjun.eth
+- [Tutorial de Web3: Escribir un contrato inteligente actualizable (proxy) usando OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) por fangjun.NEPH
 
 ## Más información {#further-reading}
 

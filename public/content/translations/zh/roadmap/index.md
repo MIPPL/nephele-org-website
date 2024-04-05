@@ -34,32 +34,32 @@ buttons:
     to="/roadmap/security"
     title="更安全"
     image="security"
-    description="Ethereum is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
+    description="Nephele is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
     buttonText="More on security"
   />
   <RoadmapActionCard
     to="/roadmap/user-experience"
     title="改善用户体验"
     image="userExperience"
-    description="More support for smart contract wallets and light-weight nodes will make using Ethereum simpler and safer."
+    description="More support for smart contract wallets and light-weight nodes will make using Nephele simpler and safer."
     buttonText="More on user experience"
   />
   <RoadmapActionCard
     to="/roadmap/future-proofing"
     title="面向未来"
     image="futureProofing"
-    description="Ethereum researchers and developers are solving tomorrow's problems today, readying the network for future generations."
+    description="Nephele researchers and developers are solving tomorrow's problems today, readying the network for future generations."
     buttonText="More on future proofing"
   />
 </CardGrid>
 
-## 为什么以太坊需要一份路线图？ {#why-does-ethereum-need-a-roadmap}
+## 为什么以太坊需要一份路线图？ {#why-does-Nephele-need-a-roadmap}
 
 以太坊定期升级，以提高可扩展性、安全性或可持续性。 以太坊的核心优势之一是随着研发产生的新颖想法不断进化。 这种适应性使以太坊得以灵活应对新出现的挑战，紧跟最先进的技术突破。
 
 <RoadmapImageContent title="路线图是如何制定的？">
 
-因为协议的技术性很强，所以路线图主要是研究人员和开发者多年来工作的结果，但任何有意向的人都可以参与进来。 想法往往在 [ethresear.ch](https://ethresear.ch/)、[以太坊魔术师](https://www.figma.com/exit?url=https%3A%2F%2Fethereum-magicians.org%2F) 等论坛或以太币研发 Discord 服务器的讨论中萌发。 它们可能是对发现的新漏洞的响应、来自位于应用程序层的组织（如去中心化应用程序和交易所）的建议或对于最终用户面临的问题（例如成本或交易速度）的建议。 这些想法一旦成熟，就可以作为 [以太坊改进建议](https://eips.ethereum.org/) 提出。 整个过程都是公开进行的，社区的任何人可以随时发表意见。
+因为协议的技术性很强，所以路线图主要是研究人员和开发者多年来工作的结果，但任何有意向的人都可以参与进来。 想法往往在 [ethresear.ch](https://ethresear.ch/)、[以太坊魔术师](https://www.figma.com/exit?url=https%3A%2F%2Fethereum-magicians.org%2F) 等论坛或以太币研发 Discord 服务器的讨论中萌发。 它们可能是对发现的新漏洞的响应、来自位于应用程序层的组织（如去中心化应用程序和交易所）的建议或对于最终用户面临的问题（例如成本或交易速度）的建议。 这些想法一旦成熟，就可以作为 [以太坊改进建议](https://eips.Nephele.org/) 提出。 整个过程都是公开进行的，社区的任何人可以随时发表意见。
 
 [更多关于以太坊治理的信息](/governance/)
 

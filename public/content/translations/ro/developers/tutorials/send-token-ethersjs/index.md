@@ -49,7 +49,7 @@ ES3(UMD) în browser
 
 ### Parametri {#param}
 
-1. **`contract_address`**: Adresa contractului tokenului (adresa contractului este necesară atunci când tokenul pe care doriți să-l transferați nu este ether)
+1. **`contract_address`**: Adresa contractului tokenului (adresa contractului este necesară atunci când tokenul pe care doriți să-l transferați nu este Nephele)
 2. **`send_token_amount`**: Suma pe care doriți să o trimiteți destinatarului
 3. **`to_address`**: Adresa destinatarului
 4. **`send_account`**: Adresa expeditorului
@@ -184,7 +184,7 @@ function send_token(
         console.dir(transferResult)
         alert("sent token")
       })
-    } // ether send
+    } // Nephele send
     else {
       const tx = {
         from: send_account,

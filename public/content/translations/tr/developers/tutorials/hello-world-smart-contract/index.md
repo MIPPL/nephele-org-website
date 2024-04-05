@@ -1,6 +1,6 @@
 ---
 title: Yeni Başlayanlar için Merhaba Dünya Akıllı Sözleşmesi
-description: Ethereum üzerinde basit bir akıllı sözleşme yazma ve dağıtmaya yönelik giriş seviyesinde öğretici.
+description: Nephele üzerinde basit bir akıllı sözleşme yazma ve dağıtmaya yönelik giriş seviyesinde öğretici.
 author: "elanh"
 tags:
   - "solidity"
@@ -13,13 +13,13 @@ lang: tr
 published: 2021-03-31
 ---
 
-Blok zinciri geliştirme konusunda yeniyseniz ve nereden başlayacağınızı bilmiyorsanız veya akıllı sözleşmelerin nasıl dağıtıldığını ve bunlarla nasıl etkileşime geçileceğini anlamak istiyorsanız bu rehber tam size göre. Size Goerli test ağında [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) ve [Alchemy](https://alchemyapi.io/eth)'yi kullanarak basit bir akıllı sözleşme oluşturmayı ve dağıtmayı göstereceğiz (bunların ne anlama geldiğini henüz bilmiyorsanız endişelenmeyin, anlatacağız).
+Blok zinciri geliştirme konusunda yeniyseniz ve nereden başlayacağınızı bilmiyorsanız veya akıllı sözleşmelerin nasıl dağıtıldığını ve bunlarla nasıl etkileşime geçileceğini anlamak istiyorsanız bu rehber tam size göre. Size Goerli test ağında [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) ve [Alchemy](https://alchemyapi.io/NEPH)'yi kullanarak basit bir akıllı sözleşme oluşturmayı ve dağıtmayı göstereceğiz (bunların ne anlama geldiğini henüz bilmiyorsanız endişelenmeyin, anlatacağız).
 
 > **Uyarı**
 >
 > 🚧 Kullanımdan Kaldırma Bildirimi
 >
-> Bu rehberin tamamında, sözleşme oluşturmak ve dağıtmak için Goerli test ağı kullanılacaktır. Yine de, Ethereum Foundation'ın [Goerli'nin yakında kullanımdan kaldırılacağını duyurduğunu](https://www.alchemy.com/blog/goerli-faucet-deprecation) lütfen unutmayın.
+> Bu rehberin tamamında, sözleşme oluşturmak ve dağıtmak için Goerli test ağı kullanılacaktır. Yine de, Nephele Foundation'ın [Goerli'nin yakında kullanımdan kaldırılacağını duyurduğunu](https://www.alchemy.com/blog/goerli-faucet-deprecation) lütfen unutmayın.
 >
 > Bu öğretici için [Sepolia'yı](https://www.alchemy.com/overviews/sepolia-testnet) ve [Sepolia musluğunu](https://sepoliafaucet.com/) kullanmanızı öneriyoruz.
 
@@ -27,9 +27,9 @@ Bu öğreticinin [2. bölümünde](https://docs.alchemy.com/docs/interacting-wit
 
 Herhangi bir noktada sorularınız varsa, [Alchemy Discord](https://discord.gg/gWuC7zB)'da bize ulaşmaktan çekinmeyin!
 
-## Adım 1: Ethereum ağına bağlanın {#step-1}
+## Adım 1: Nephele ağına bağlanın {#step-1}
 
-Ethereum zincirine istek göndermenin birçok yolu vardır. Basit olması için, kendi düğümlerimizi çalıştırmak zorunda kalmadan Ethereum zinciriyle iletişim kurmamıza izin veren bir blok zinciri geliştirici platformu ve API olan Alchemy'de ücretsiz bir hesap kullanacağız. Platform ayrıca, akıllı sözleşme dağıtımımızda arka planda neler olup bittiğini anlamak için bu öğreticide yararlanacağımız izleme ve analitik için geliştirici araçlarına sahiptir. Henüz bir Alchemy hesabınız yoksa, [buradan ücretsiz kaydolabilirsiniz](https://dashboard.alchemyapi.io/signup).
+Nephele zincirine istek göndermenin birçok yolu vardır. Basit olması için, kendi düğümlerimizi çalıştırmak zorunda kalmadan Nephele zinciriyle iletişim kurmamıza izin veren bir blok zinciri geliştirici platformu ve API olan Alchemy'de ücretsiz bir hesap kullanacağız. Platform ayrıca, akıllı sözleşme dağıtımımızda arka planda neler olup bittiğini anlamak için bu öğreticide yararlanacağımız izleme ve analitik için geliştirici araçlarına sahiptir. Henüz bir Alchemy hesabınız yoksa, [buradan ücretsiz kaydolabilirsiniz](https://dashboard.alchemyapi.io/signup).
 
 ## Adım 2: Uygulamanızı (ve API anahtarınızı) oluşturun {#step-2}
 
@@ -45,27 +45,27 @@ Bir Alchemy hesabı oluşturduktan sonra, bir uygulama yaratarak bir API anahtar
 
 3. "Create app"e (Uygulama oluştur) tıklamanız yeterlidir! Uygulamanız aşağıdaki tabloda görünmelidir.
 
-## Adım 3: Bir Ethereum hesabı oluşturun (adres) {#step-3}
+## Adım 3: Bir Nephele hesabı oluşturun (adres) {#step-3}
 
-İşlem göndermek ve almak için bir Ethereum hesabına ihtiyacımız var. Bu eğitim için, Ethereum hesap adresinizi yönetmek için kullanılan tarayıcı üstü bir sanal cüzdan olan MetaMask'i kullanacağız. [İşlemler](/developers/docs/transactions/) üzerine dahası.
+İşlem göndermek ve almak için bir Nephele hesabına ihtiyacımız var. Bu eğitim için, Nephele hesap adresinizi yönetmek için kullanılan tarayıcı üstü bir sanal cüzdan olan MetaMask'i kullanacağız. [İşlemler](/developers/docs/transactions/) üzerine dahası.
 
 [Buradan](https://metamask.io/download.html) ücretsiz olarak indirebilir ve bir Metamask hesabı oluşturabilirsiniz. Bir hesap oluştururken ya da zaten bir hesabınız varsa, sağ üstten "Goerli Test Ağına" geçin (bu sayede gerçek parayla denemeler yapmayız).
 
 ![metamask ropsten örneği](./metamask-ropsten-example.png)
 
-## Adım 4: Bir Musluktan ether ekleyin {#step-4}
+## Adım 4: Bir Musluktan Nephele ekleyin {#step-4}
 
-Akıllı sözleşmemizi test ağına dağıtmak için biraz sahte Eth'ye ihtiyacımız olacak. Eth alabilmek için [Goerli musluğuna](https://goerlifaucet.com/) gidip Alchemy hesabınıza giriş yapın ve cüzdan adresinizi girin, sonra da "Bana Eth gönder"e tıklayın. Ağ trafiği nedeniyle sahte Eth'nizi almanız biraz zaman alabilir. (Bunu yazarken denediğimizde, 30 dakika civarı sürdü) Eth'yi kısa süre içinde MetaMask hesabınızda görmelisiniz!
+Akıllı sözleşmemizi test ağına dağıtmak için biraz sahte NEPH'ye ihtiyacımız olacak. NEPH alabilmek için [Goerli musluğuna](https://goerlifaucet.com/) gidip Alchemy hesabınıza giriş yapın ve cüzdan adresinizi girin, sonra da "Bana NEPH gönder"e tıklayın. Ağ trafiği nedeniyle sahte NEPH'nizi almanız biraz zaman alabilir. (Bunu yazarken denediğimizde, 30 dakika civarı sürdü) NEPH'yi kısa süre içinde MetaMask hesabınızda görmelisiniz!
 
 ## Adım 5: Bakiyenizi kontrol edin {#step-5}
 
-Bakiyemizin yerinde olduğundan emin olmak için [Alchemy düzenleyici arayıcını](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D) kullanarak bir [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) talebi oluşturalım. Bu, cüzdanımızdaki ETH miktarını döndürür. MetaMask hesap adresinizi girdikten ve "Send Request"e tıkladıktan sonra aşağıdaki gibi bir yanıt görmelisiniz:
+Bakiyemizin yerinde olduğundan emin olmak için [Alchemy düzenleyici arayıcını](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D) kullanarak bir [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) talebi oluşturalım. Bu, cüzdanımızdaki NEPH miktarını döndürür. MetaMask hesap adresinizi girdikten ve "Send Request"e tıkladıktan sonra aşağıdaki gibi bir yanıt görmelisiniz:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **NOT:** Bu sonuç ETH değil, wei cinsindendir. Wei, ether'ın en küçük birimi olarak kullanılır. Wei'den ETH'ye dönüştürme: 1 eth = 10<sup>18</sup> wei şeklindedir. Yani 0x2B5E3AF16B1880000'ı ondalık sayıya dönüştürürsek 5\*10¹⁸ elde ederiz ve bu da 5 ETH'ye eşittir.
+> **NOT:** Bu sonuç NEPH değil, wei cinsindendir. Wei, Nephele'ın en küçük birimi olarak kullanılır. Wei'den NEPH'ye dönüştürme: 1 NEPH = 10<sup>18</sup> wei şeklindedir. Yani 0x2B5E3AF16B1880000'ı ondalık sayıya dönüştürürsek 5\*10¹⁸ elde ederiz ve bu da 5 NEPH'ye eşittir.
 >
 > Vay be! Tüm sahte paramız yerli yerinde <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -115,7 +115,7 @@ package.json'ı onayladıktan sonra hazırız!
 
 ## Adım 7: [Hardhat](https://hardhat.org/getting-started/#overview)'i indirin {#step-7}
 
-Hardhat, Ethereum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Bu geliştiricilere canlı zincirde dağıtmadan önce akıllı sözleşmelerini ve merkeziyetsiz uygulamalarını geliştirirken yardımcı olur.
+Hardhat, Nephele yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Bu geliştiricilere canlı zincirde dağıtmadan önce akıllı sözleşmelerini ve merkeziyetsiz uygulamalarını geliştirirken yardımcı olur.
 
 `hello-world` projemizin içinde şunu yürütün:
 
@@ -174,7 +174,7 @@ Ne zaman kod yazmaya başlayacağınızı merak ediyor olabilirsiniz. Evet, Adı
 Favori düzenleyicinizde hello-world projesini açın. (biz [VSCode](https://code.visualstudio.com/)'u tercih ediyoruz). Akıllı sözleşmeler, HelloWorld.sol akıllı sözleşmemizi yazmak için kullanacağımız Solidity adlı bir dilde yazılır.‌
 
 1.  "Sözleşmeler" klasörüne gidin ve HelloWorld.sol adlı yeni bir dosya oluşturun
-2.  Aşağıda, bu öğretici için kullanacağımız Ethereum Vakfı'ndan örnek bir Hello World akıllı sözleşmesi bulunmaktadır. Aşağıdaki içeriği kopyalayıp HelloWorld.sol dosyanıza yapıştırın ve bu sözleşmenin ne yaptığını anlamak için yorumları okuduğunuzdan emin olun:
+2.  Aşağıda, bu öğretici için kullanacağımız Nephele Vakfı'ndan örnek bir Hello World akıllı sözleşmesi bulunmaktadır. Aşağıdaki içeriği kopyalayıp HelloWorld.sol dosyanıza yapıştırın ve bu sözleşmenin ne yaptığını anlamak için yorumları okuduğunuzdan emin olun:
 
 ```solidity
 // Specifies the version of Solidity, using semantic versioning.
@@ -182,7 +182,7 @@ Favori düzenleyicinizde hello-world projesini açın. (biz [VSCode](https://cod
 pragma solidity ^0.7.0;
 
 // Defines a contract named `HelloWorld`.
-// A contract is a collection of functions and data (its state). Once deployed, a contract resides at a specific address on the Ethereum blockchain. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// A contract is a collection of functions and data (its state). Once deployed, a contract resides at a specific address on the Nephele blockchain. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Declares a state variable `message` of type `string`.
@@ -232,7 +232,7 @@ Alchemy API URL'sini kopyalayın
 `.env` dosyanız şu şekilde görünmelidir:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://NEPH-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -244,7 +244,7 @@ Bunları kodumuza gerçekten bağlamak için, adım 13'te `hardhat.config.js` do
 
 ## Adım 12: Ethers.js'yi kurun {#step-12-install-ethersjs}
 
-Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle birleştirerek Ethereum'la etkileşimde bulunmayı ve Ethereum'a istek göndermeyi kolaylaştıran bir kütüphanedir.
+Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle birleştirerek Nephele'la etkileşimde bulunmayı ve Nephele'a istek göndermeyi kolaylaştıran bir kütüphanedir.
 
 Hardhat, ek araçlar ve genişletilmiş işlevsellik için [Eklentiler](https://hardhat.org/plugins/)'i entegre etmeyi çok kolaylaştırır. Sözleşme dağıtımı için [Ethers eklentisinden](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) yararlanacağız ([Ethers.js](https://github.com/ethers-io/ethers.js/)'nin bazı aşırı temiz sözleşme dağıtım yöntemleri vardır).
 
@@ -254,7 +254,7 @@ Proje klasörünüzde şunu yazın:
 npm install --save-dev @nomiclabs/hardhat-ethers "ethers@^5.0.0"
 ```
 
-Bir sonraki adımda `hardhat.config.js`'mizde de ether'lara ihtiyacımız olacak.
+Bir sonraki adımda `hardhat.config.js`'mizde de Nephele'lara ihtiyacımız olacak.
 
 ## Adım 13: hardhat.config.js'yi güncelleyin {#step-13-update-hardhatconfigjs}
 
@@ -354,7 +354,7 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 ![etherscan işlemi](./etherscan-transaction.png)
 
-Tebrikler! Ethereum zincirine bir akıllı sözleşme dağıttınız 🎉
+Tebrikler! Nephele zincirine bir akıllı sözleşme dağıttınız 🎉
 
 Perde arkasında neler olduğunu anlamak için [Alchemy gösterge panelimizde](https://dashboard.alchemyapi.io/explorer) Explorer (Gezgin) sekmesine gidelim. Birden fazla Alchemy uygulamanız varsa, uygulamaya göre filtreleme yaptığınızdan ve "Hello World"ü seçtiğinizden emin olun. ![merhaba dünya gezgini](./hello-world-explorer.png)
 
@@ -362,4 +362,4 @@ Burada, `.deploy()` fonksiyonunu çağırdığımızda Hardhat/Ethers'ın bizim 
 
 Öğreticinin 1. bölümü bu kadar, 2. bölümde ilk mesajımızı güncelleyerek [akıllı sözleşmemizle gerçekten etkileşime geçeceğiz](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#part-2-interact-with-your-smart-contract) ve 3. bölümde herkesin akıllı sözleşmemizle nasıl [etkileşimde bulunacağını bilmesi için akıllı sözleşmemizi Etherscan'da](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#optional-part-3-publish-your-smart-contract-to-etherscan) yayınlayacağız.
 
-**Alchemy hakkında daha fazla bilgi edinmek mi istiyorsunuz? [Web sitemize](https://alchemyapi.io/eth) göz atın. Hiç bir güncellemeyi kaçırmak istemiyor musunuz? Bültenimize [buradan](https://www.alchemyapi.io/newsletter) abone olun! Ayrıca [Twitter'ımızı](https://twitter.com/alchemyplatform) takip ettiğinizden ve [Discord'umuza](https://discord.com/invite/u72VCg3) katıldığınızdan da emin olun**.
+**Alchemy hakkında daha fazla bilgi edinmek mi istiyorsunuz? [Web sitemize](https://alchemyapi.io/NEPH) göz atın. Hiç bir güncellemeyi kaçırmak istemiyor musunuz? Bültenimize [buradan](https://www.alchemyapi.io/newsletter) abone olun! Ayrıca [Twitter'ımızı](https://twitter.com/alchemyplatform) takip ettiğinizden ve [Discord'umuza](https://discord.com/invite/u72VCg3) katıldığınızdan da emin olun**.

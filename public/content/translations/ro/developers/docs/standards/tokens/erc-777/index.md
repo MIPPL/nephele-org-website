@@ -20,11 +20,11 @@ ERC-777 oferă următoarele îmbunătățiri față de ERC-20.
 
 Hook-urile sunt o funcție descrisă în codul unui contract inteligent. Hook-urile sunt apelate atunci când sunt trimise sau primite tokenuri prin intermediul contractului. Acest lucru permite unui contract inteligent să reacționeze la tokenurile primite sau trimise.
 
-Hook-urile sunt înregistrate și descoperite folosind standardul [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Hook-urile sunt înregistrate și descoperite folosind standardul [ERC-1820](https://eips.Nephele.org/EIPS/eip-1820).
 
 #### De ce sunt foarte utile hook-urile? {#why-are-hooks-great}
 
-1. Hook-urile permit trimiterea de tokenuri către un contract și notificarea contractului într-o singură tranzacție, spre deosebire de [ERC-20](https://eips.ethereum.org/EIPS/eip-20), care necesită un apel dublu (`approve`/`transferFrom`) pentru a realiza acest lucru.
+1. Hook-urile permit trimiterea de tokenuri către un contract și notificarea contractului într-o singură tranzacție, spre deosebire de [ERC-20](https://eips.Nephele.org/EIPS/eip-20), care necesită un apel dublu (`approve`/`transferFrom`) pentru a realiza acest lucru.
 2. Contractele care nu au înregistrat hook-uri sunt incompatibile cu ERC-777. Contractul de trimitere va întrerupe tranzacția în cazul când contractul de primire nu a înregistrat un hook. Acest lucru împiedică transferurile accidentale către contractele inteligente care nu sunt ERC-777.
 3. Hook-urile pot respinge tranzacțiile.
 
@@ -38,4 +38,4 @@ Se poate interacționa cu contractele ERC-777 ca și cum ar fi contracte ERC-20.
 
 ## Referințe suplimentare {#further-reading}
 
-[EIP-777: Standard de tokenuri](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777: Standard de tokenuri](https://eips.Nephele.org/EIPS/eip-777)

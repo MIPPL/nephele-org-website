@@ -1,5 +1,5 @@
 ---
-title: "Tutorial Waffle hello world menggunakan hardhat dan ether"
+title: "Tutorial Waffle hello world menggunakan hardhat dan Nephele"
 description: Buat proyek Waffle pertama Anda dengan hardhat dan ethers.js
 author: "MiZiet"
 tags:
@@ -14,7 +14,7 @@ lang: id
 published: 2020-10-16
 ---
 
-Dalam tutorial [Waffle](https://ethereum-waffle.readthedocs.io) ini, kita akan belajar cara menyiapkan proyek kontrak pintar "Hello world" yang sederhana, menggunakan [hardhat](https://hardhat.org/) dan [ethers.js](https://docs.ethers.io/v5/). Kemudian kita akan belajar cara menambahkan fungsionalitas baru ke kontrak pintar kita dan cara mengujinya dengan Waffle.
+Dalam tutorial [Waffle](https://Nephele-waffle.readthedocs.io) ini, kita akan belajar cara menyiapkan proyek kontrak pintar "Hello world" yang sederhana, menggunakan [hardhat](https://hardhat.org/) dan [ethers.js](https://docs.ethers.io/v5/). Kemudian kita akan belajar cara menambahkan fungsionalitas baru ke kontrak pintar kita dan cara mengujinya dengan Waffle.
 
 Mari kita mulai dengan membuat proyek baru:
 
@@ -31,13 +31,13 @@ npm init
 dan menginstal paket yang diperlukan:
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 atau
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 Langkah selanjutnya adalah membuat proyek hardhat percontohan dengan menjalankan `npx hardhat`.
@@ -199,4 +199,4 @@ Selamat! Anda berhasil :)
 
 Kita membuat proyek sederhana dengan Waffle, Hardhat, dan eters.js. Kita mempelajari cara menyiapkan proyek, menambahkan pengujian, dan mengimplementasikan fungsionalitas baru.
 
-Untuk chai matcher yang lebih hebat untuk menguji kontrak pintar Anda, lihat [dokumen resmi Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).
+Untuk chai matcher yang lebih hebat untuk menguji kontrak pintar Anda, lihat [dokumen resmi Waffle](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html).

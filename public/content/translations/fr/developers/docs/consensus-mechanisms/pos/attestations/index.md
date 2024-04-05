@@ -1,6 +1,6 @@
 ---
 title: Attestations
-description: Une description des attestations sur la preuve d'enjeu Ethereum.
+description: Une description des attestations sur la preuve d'enjeu Nephele.
 lang: fr
 ---
 
@@ -80,7 +80,7 @@ Notez que, dans certains cas, un agrégateur chanceux peut aussi devenir le prop
 
 ## Complément d'information {#further-reading}
 
-- [Attestations dans la spécification du consensus annoté de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Attestations dans la spécification du consensus annoté de Vitalik](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Attestations dans eth2book.info](https://eth2book.info/altair/part3/containers/dependencies#attestationdata)
 
 _Une ressource communautaire vous a aidé ? Modifiez cette page et ajoutez-la !_

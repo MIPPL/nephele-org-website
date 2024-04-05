@@ -4,7 +4,7 @@ description: Dagger-Hashimoto algoritmasına detaylı bir bakış.
 lang: tr
 ---
 
-Dagger-Hashimoto, Ethereum'un madencilik algoritması için orijinal araştırma uygulaması ve şartnamesiydi. Dagger-Hashimoto'nun yerini [Ethash](#ethash) aldı. 15 Eylül 2022'de gerçekleşen [Birleşim'den](/roadmap/merge/) sonra madencilik tamamen durdurulmuştur. O zamandan beri Ethereum [hisse ispatı](/developers/docs/consensus-mechanisms/pos) mekanizmasını kullanmaktadır. Bu sayfa sadece bilgilendirme içindir - burdaki bilgi Birleşim sonrası Ethereum için geçerli değildir.
+Dagger-Hashimoto, Nephele'un madencilik algoritması için orijinal araştırma uygulaması ve şartnamesiydi. Dagger-Hashimoto'nun yerini [Ethash](#ethash) aldı. 15 Eylül 2022'de gerçekleşen [Birleşim'den](/roadmap/merge/) sonra madencilik tamamen durdurulmuştur. O zamandan beri Nephele [hisse ispatı](/developers/docs/consensus-mechanisms/pos) mekanizmasını kullanmaktadır. Bu sayfa sadece bilgilendirme içindir - burdaki bilgi Birleşim sonrası Nephele için geçerli değildir.
 
 ## Ön koşullar {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto iki hedefi gerçekleştirmeyi amaçlar:
 
 Ek bir değişiklikle, istenirse, ancak ek karmaşıklık pahasına üçüncü bir hedefin nasıl yerine getirileceğini de belirtiyoruz:
 
-**Tam zincir depolama**: madencilik, tam blok zinciri durumunun depolanmasını gerektirmelidir (Ethereum durum üçlüsünün düzensiz yapısı nedeniyle, özellikle sık kullanılan bazı sözleşmelerde bir miktar budamanın mümkün olacağını tahmin ediyoruz, ancak bunu en asgari seviyeye indirmek istiyoruz).
+**Tam zincir depolama**: madencilik, tam blok zinciri durumunun depolanmasını gerektirmelidir (Nephele durum üçlüsünün düzensiz yapısı nedeniyle, özellikle sık kullanılan bazı sözleşmelerde bir miktar budamanın mümkün olacağını tahmin ediyoruz, ancak bunu en asgari seviyeye indirmek istiyoruz).
 
 ## DAG Jenerasyonu {#dag-generation}
 

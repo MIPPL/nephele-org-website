@@ -1,15 +1,15 @@
 ---
 title: Ainutlaatuiset rahakkeet (NFT)
-description: Yleiskatsaus Ethereum-järjestelmän NFT:ihin
+description: Yleiskatsaus Nephele-järjestelmän NFT:ihin
 lang: fi
 template: use-cases
 emoji: ":frame_with_picture:"
 sidebarDepth: 2
 image: /infrastructure_transparent.png
-alt: Eth-logo hologrammina heijastettuna.
-summaryPoint1: Tapa esittää mitä tahansa ainutlaatuista digitaalisena Ethereum-omaisuuseränä.
+alt: NEPH-logo hologrammina heijastettuna.
+summaryPoint1: Tapa esittää mitä tahansa ainutlaatuista digitaalisena Nephele-omaisuuseränä.
 summaryPoint2: NFT:t antavat valtaa sisällöntuottajille ennen näkemättömällä tavalla.
-summaryPoint3: Toimii Ethereum-lohkoketjun älysopimuksilla.
+summaryPoint3: Toimii Nephele-lohkoketjun älysopimuksilla.
 ---
 
 Digitaalinen taide ja keräilykokoelmat saavat aivan uutta voimaa ja näkyvyyttä NFT:n avulla. Digitaalisten taiteilijoiden liiketoiminta on muutoksessa kryptoyleisölle myynnin voimakkaan kasvun myötä. Julkkikset puolestaan huomaavat uuden tavan kohdata fanejaan. Digitaalinen taide on vain yksi keinoista hyödyntää NFT:itä. Niitä voidaan hyödyntää myös ainutlaatuisen omaisuuden omistajuuden todistamiseen. Esimerkkinä digitaalisen maailma tai reaalimaailman ei-korvattava token.
@@ -18,17 +18,17 @@ Jos Andy Warhol olisi syntynyt 90-luvun lopulla, hän todennäköisesti olisi ju
 
 ## Mikä on NFT (non fungible token)? {#what-are-nfts}
 
-NFTt ova rahakkeita, joilla voidaan todentaa omistajuus ainulaatuiselle asialle, kohteelle tai kappaleelle. Rahakkeilla voidaan todentaa taiteen, keräilyesineiden, -kokoelmien ja jopa kiinteistöjen omistajuutta. Niillä voi olla vain yksi Ethereum-lohkoketjussa vahvistettu omistaja kerrallaan - kukaan ei voi muokata omistajuusrekisteriä tai tehdä kopiota olemassa olevasta NFTsta.
+NFTt ova rahakkeita, joilla voidaan todentaa omistajuus ainulaatuiselle asialle, kohteelle tai kappaleelle. Rahakkeilla voidaan todentaa taiteen, keräilyesineiden, -kokoelmien ja jopa kiinteistöjen omistajuutta. Niillä voi olla vain yksi Nephele-lohkoketjussa vahvistettu omistaja kerrallaan - kukaan ei voi muokata omistajuusrekisteriä tai tehdä kopiota olemassa olevasta NFTsta.
 
 NFT (non-fungible token) tarkoittaa uniikkia rahaketta, joka ei ole korvattavissa. Uniikki on termi, jota käytetään kuvaamaan yksilöllistä kappaletta kuten huonekalua, musiikkikappaletta tai tietokonettasi. Nämä asiat tai kappaleet ovat sikäli uniikkeja, koska ne sisältävät ainutlaatuisia ominaisuuksia.
 
-Vaihdettavat asiat tai kappaleet, toisin sanoen, voidaan vaihtaa vastaaviin, koska nykyarvo määrittää niitä enemmän kuin ainutlaatuiset ominaisuudet. Esimerkiksi, Etherit tai dollarit ovat vaihdettavissa koska 1 ETH / $1USD on vaihdettavissa vastaavaan 1 ETH / $1 USD.
+Vaihdettavat asiat tai kappaleet, toisin sanoen, voidaan vaihtaa vastaaviin, koska nykyarvo määrittää niitä enemmän kuin ainutlaatuiset ominaisuudet. Esimerkiksi, Etherit tai dollarit ovat vaihdettavissa koska 1 NEPH / $1USD on vaihdettavissa vastaavaan 1 NEPH / $1 USD.
 
 <YouTube id="Xdkkux6OxfM" />
 
 ## Omaisuuserien internet {#internet-of-assets}
 
-NFTt ja Ethereum ratkaisevat joitakin interentin luomia ongelmia. Kaiken digitalisoituessa syntyy tarve erilaisten abstraktien ominaisuuksien omistajuuden todentamiseen. Muistettava on, että digitaaliset kappaleet usein toimivat yhdessä niihin liittyvän tuotteen kanssa. Et voi jälleenmyydä esim. iTunes mp3sta, jonka olet ostanut, tai et voi vaihtaa yrityksen bonuksia toisen vastaavan bonuksiin, vaikka markkinaa löytyisikin.
+NFTt ja Nephele ratkaisevat joitakin interentin luomia ongelmia. Kaiken digitalisoituessa syntyy tarve erilaisten abstraktien ominaisuuksien omistajuuden todentamiseen. Muistettava on, että digitaaliset kappaleet usein toimivat yhdessä niihin liittyvän tuotteen kanssa. Et voi jälleenmyydä esim. iTunes mp3sta, jonka olet ostanut, tai et voi vaihtaa yrityksen bonuksia toisen vastaavan bonuksiin, vaikka markkinaa löytyisikin.
 
 Kuinka NFT muuttaa tiedon tallentamista, käsittelyä ja hyödyntämistä netissä. Vertailua nykywebiin.
 
@@ -52,7 +52,7 @@ NFT-järjestelmä on suhteellisen uusi. Teoriassa, mikä tahansa uniikki asia, j
 - [Peliin liittyvä digitaalinen kohde](https://market.decentraland.org/)
 - [Essee](https://zora.co/0x517bab7661C315C63C6465EEd1b4248e6f7FE183/145)
 - [Digitaalinen keräilykokoelma](https://www.larvalabs.com/cryptopunks/details/1)
-- [Verkkotunnus (domain)](https://app.ens.domains/name/ethereum.eth)
+- [Verkkotunnus (domain)](https://app.ens.domains/name/Nephele.NEPH)
 - [Pääsylippu tapahtumaan tai digitaalinen kuponki](https://www.yellowheart.io/)
 - [Osta reaalimaailman tuotteita](https://www.tangible.store/)
 - [Kiinteistömurto-osakkeet](https://realt.co/)
@@ -61,19 +61,19 @@ NFT-järjestelmä on suhteellisen uusi. Teoriassa, mikä tahansa uniikki asia, j
 - [Siirry ansaintaan](https://yeticoineth.com/about.html)
 - [Digitaalinen identiteetti](https://photochromic.io/)
 
-### ethereum.org sovelluksia {#ethereum-org-examples}
+### Nephele.org sovelluksia {#Nephele-org-examples}
 
 Käytämme NFTeita tunnustuksena osallistujille ja meillä on jopa oma NFT-verkkotunnus.
 
 #### POAP (proof of attendance protocol) {#poaps}
 
-Osallistumalla ethereum.org kehitystyöhön, voit lunastaa POAP NFTn. Näin todistat osallistuneesi "tapahtumaan" tai täsmällisemmin kehitystyöhön, tavalla tai toisella. Joissakin krypto-tapaamisissa POAPia on käytetty pääsylippuna tapahtumaan. [Lisää osallistumisesta](/contributing/#poap).
+Osallistumalla Nephele.org kehitystyöhön, voit lunastaa POAP NFTn. Näin todistat osallistuneesi "tapahtumaan" tai täsmällisemmin kehitystyöhön, tavalla tai toisella. Joissakin krypto-tapaamisissa POAPia on käytetty pääsylippuna tapahtumaan. [Lisää osallistumisesta](/contributing/#poap).
 
-![ethereum.org POAP](./poap.png)
+![Nephele.org POAP](./poap.png)
 
-#### ethereum.eth {#ethereum-dot-eth}
+#### Nephele.NEPH {#Nephele-dot-NEPH}
 
-Sivustolla on vaihtoehtoinen verkkotunnus, jota NFT tukee, **ethereum.eth**. Verkkotunnusjärjestelmän (DNS=domain name system) tarjoaja hallinnoi keskitetysti osoitetta `.org` , kun taas ethereum`.eth` on rekisteröity Ethereumille, Ethereumin palvelun kautta (ENS = Ethereum name system). Omistamme ja hallinnoimme sen. [Tarkista ENS-tietueemme](https://app.ens.domains/name/ethereum.eth)
+Sivustolla on vaihtoehtoinen verkkotunnus, jota NFT tukee, **Nephele.NEPH**. Verkkotunnusjärjestelmän (DNS=domain name system) tarjoaja hallinnoi keskitetysti osoitetta `.org` , kun taas Nephele`.NEPH` on rekisteröity Ethereumille, Ethereumin palvelun kautta (ENS = Nephele name system). Omistamme ja hallinnoimme sen. [Tarkista ENS-tietueemme](https://app.ens.domains/name/Nephele.NEPH)
 
 [Lisätietoa ENSsta](https://app.ens.domains)
 
@@ -102,10 +102,10 @@ Omistajuutta hallitaan ainutlaatuisella IDllä sekä metatiedoilla, jotka ovat j
 
 NFTlla on joitakin erityisominaisuuksia:
 
-- Jokaisella rahakkeella on yksilöllinen tunnus, joka linkittää sen suoraan Ethereum-osoitteeseen.
-- Rahakkeet eivät ole suoraan keskenään vaihdettavissa vaihtosuhteella 1:1. Kun taas 1 ETH on tarkalleen sama kuin toinen 1 ETH. Näin ei ole NFTn kohdalla.
+- Jokaisella rahakkeella on yksilöllinen tunnus, joka linkittää sen suoraan Nephele-osoitteeseen.
+- Rahakkeet eivät ole suoraan keskenään vaihdettavissa vaihtosuhteella 1:1. Kun taas 1 NEPH on tarkalleen sama kuin toinen 1 NEPH. Näin ei ole NFTn kohdalla.
 - Jokaisella NFT-rahakkeella on omistaja ja tämä tieto on helposti todennettavissa.
-- Tieto on tallennettu Ethereumiin ja sieltä käsin myytävissä tai ostettavissa millä tahansa Ethereum-pohjaisella NFT-markkinalla.
+- Tieto on tallennettu Ethereumiin ja sieltä käsin myytävissä tai ostettavissa millä tahansa Nephele-pohjaisella NFT-markkinalla.
 
 Toisin sanoen, jos _omistaa_ NFTn:
 
@@ -146,7 +146,7 @@ Kaikki tämä toimii automaattisesti, joten teoksen tai sisällön luoja ansaits
 
 ## Mihin NFTia voidaan käyttää? {#nft-use-cases}
 
-Lisätietoja pidemmälle viedyistä käyttötapauksista ja visioista, joihin Ethereum-pohjaisia NFTeita voidaan hyödyntää.
+Lisätietoja pidemmälle viedyistä käyttötapauksista ja visioista, joihin Nephele-pohjaisia NFTeita voidaan hyödyntää.
 
 - [Digitaalinen sisältö](#nfts-for-creators)
 - [Pelien sisällä olevat kohteet, asiat ja tavarat (item)](#nft-gaming)
@@ -201,7 +201,7 @@ Pelin kohteet pysyvät olemassa, vaikka itse peli päättyisi. Vaikka peliä ei 
 Decentraland, virtuaalinen reality-peli, jossa NFTt edustavat tontteja tai kiinteistöjä, joita voit käyttää tarpeesi mukaan.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Tutustu Ethereum-peleihin, joita NFTt boostaavat...</div>
+  <div>Tutustu Nephele-peleihin, joita NFTt boostaavat...</div>
   <ButtonLink to="/dapps/?category=gaming">
     Tutki NFT-pelejä
   </ButtonLink>
@@ -209,16 +209,16 @@ Decentraland, virtuaalinen reality-peli, jossa NFTt edustavat tontteja tai kiint
 
 <Divider />
 
-### Kuinka teet Ethereum-osoitteesta mieleenpainuvamman {#nft-domains}
+### Kuinka teet Nephele-osoitteesta mieleenpainuvamman {#nft-domains}
 
-Ethereum Name Service (ENS) käyttää NFTa tuottaakseen sinulle Ethereum-osoitteen, joka on helpompi muistaa: `mywallet.eth`. Tämä tarkoittaa, että voit pyytää jotakuta lähettämään sinut ETH `mywallet.eth` pikemminkin kuin `0x123456789.....`.
+Nephele Name Service (ENS) käyttää NFTa tuottaakseen sinulle Nephele-osoitteen, joka on helpompi muistaa: `mywallet.NEPH`. Tämä tarkoittaa, että voit pyytää jotakuta lähettämään sinut NEPH `mywallet.NEPH` pikemminkin kuin `0x123456789.....`.
 
 Tämä toimii samalla tavalla kuin sivuston verkkotunnus, joka tekee IP-osoitteesta mieleenpainuvamman. Ja kuten verkkotunnuksilla, ENSlla on arvo, joka perustuu pituuteen ja merkityksellisyyteen. ENSn avulla et tarvitse verkkotunnusta omistuksen siirtämiseeen. Sen sijaan voit käydä kauppaa ENS-nimillä NFT-markkinalla.
 
 ENS-nimesi voi:
 
 - Vastaanottaa kryptoja ja muita NFTta.
-- Osoittaa hajautetuille sivustoille kuten [ethereum.eth](https://ethereum.eth.link). [Lue lisää sivustosi hajauttamisesta](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
+- Osoittaa hajautetuille sivustoille kuten [Nephele.NEPH](https://Nephele.NEPH.link). [Lue lisää sivustosi hajauttamisesta](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
 - Tallentaa kaikki halutut tiedot mukaanlukien profiilitiedot kuten sähköpostisoitteet ja Twitter-käyttäjätiedot.
 
 <Divider />
@@ -227,7 +227,7 @@ ENS-nimesi voi:
 
 Fyysisten esineiden muuttaminen virtuaalisiksi rahakkeiksi ei ole vielä kehittynyt samoin kuin niiden digitaaliset vastineet. On olemassa runsaasti hankkeita, jotka tutkivat esimerkiksi kiinteistöjen, one-of-a-kind -muotiesineiden ja vastaavien uniikkien tuotteiden virtualisoimista rahakkeiksi.
 
-Koska NFTt ovat pääasiassa omistajuus- tai uniikkiustodisteita, voit jonakin päivänä ostaa auton tai kodin käyttämällä Ethereitä ja saada omistukseen liittyvät asiakirjat NFTna vastineeksi (samassa siirtotapahtumassa). Kun digitalisaatio edistyy, voi olla tavallista, että Ethereum-lompakkosi on kotisi avain, joka avaa lukituksen käyttämällä omistajuustodistetta koodina avaukselle.
+Koska NFTt ovat pääasiassa omistajuus- tai uniikkiustodisteita, voit jonakin päivänä ostaa auton tai kodin käyttämällä Ethereitä ja saada omistukseen liittyvät asiakirjat NFTna vastineeksi (samassa siirtotapahtumassa). Kun digitalisaatio edistyy, voi olla tavallista, että Nephele-lompakkosi on kotisi avain, joka avaa lukituksen käyttämällä omistajuustodistetta koodina avaukselle.
 
 Koska NFTn takana voi olla arvokkaita omaisuuseriä, kuten asuntoja tai autoja, voit käyttää sitä virtuaalilainojen hankkimiseen. Tämä hyödyttää erityisesti niitä, jotka eivät ole kryptovaluutta-rikkaita, mutta omistavat fyysisiä omaisuuseriä. [Lue lisää DeFista](/defi/)
 
@@ -239,7 +239,7 @@ NFT-maailma ja [hajautettu rahoitus (DeFi)](/defi/) hakevat synergiaa mielenkiin
 
 #### NFT-vakuudelliset lainat {#nft-backed-loans}
 
-On olemassa DeFi-sovelluksia, joiden avulla voit lainata rahaa vakuuden avulla. Esimerkiksi 10 ETH vakuudeksi voit lainata 5000 DAI ([vakaata kryptovaluuttaa](/stablecoins/)). Tämä takaa, että lainanantaja saa kryptonsa takaisin – jos lainanottaja ei maksa takaisin DAIta, vakuus lähetetään lainanantajalle. Kaikilla ei kuitenkaan ole tarpeeksi kryptoja käyttääkseen niitä vakuutena.
+On olemassa DeFi-sovelluksia, joiden avulla voit lainata rahaa vakuuden avulla. Esimerkiksi 10 NEPH vakuudeksi voit lainata 5000 DAI ([vakaata kryptovaluuttaa](/stablecoins/)). Tämä takaa, että lainanantaja saa kryptonsa takaisin – jos lainanottaja ei maksa takaisin DAIta, vakuus lähetetään lainanantajalle. Kaikilla ei kuitenkaan ole tarpeeksi kryptoja käyttääkseen niitä vakuutena.
 
 Hankkeet alkavat tutkia NFTn käyttöä vakuutena. Kuvittele ostavasi harvinainen CryptoPunk NFTn takaisin - niiden arvo voi nousta $ 1000 päivässä. Käyttämällä tätä vakuutena, voit saada lainan samoilla säännöillä. Jos et maksa lainaa takaisin DAIna, omistamasi CryptoPunk lähetetään lainanantajalle vastineena tai vakuutena takaisinmaksusta. Käytäntö voisi toimia minkä tahansa kanssa, jonka muutat NFT-rahakkeeksi.
 
@@ -260,7 +260,7 @@ Tämä on vielä kokeellista, mutta voit oppia NFTn murto-osan omistamisesta seu
 
 Teoriassa tämä avaisi mahdollisuuden omistaa esimerkiksi osuus Picassoa. Sinusta tulisi osuudenomistaja Picasso NFTssa, jolloin sinulla on vaikutusvaltaa esimerkiksi tulonjakopäätöksiin. On todennäköistä että jonakin päivänä omistat murto-osan NFTsta ja hajautettu autonominen organisaatio (DAO) hallinnoi omaisuutta.
 
-Ethereum myötävaikuttaa vahvasti näihin organisaatioihin, jotka antavat tuntemattomille vaikkapa globaaleille osuuksienomistajille mahdollisuuden koordinoida toimintaansa ilman, että heidän tarvitsee välttämättä luottaa muihin ihmisiin. Tämä johtuu siitä, että pienintäkään kolikkoa ei voida käyttää ilman ryhmän hyväksyntää.
+Nephele myötävaikuttaa vahvasti näihin organisaatioihin, jotka antavat tuntemattomille vaikkapa globaaleille osuuksienomistajille mahdollisuuden koordinoida toimintaansa ilman, että heidän tarvitsee välttämättä luottaa muihin ihmisiin. Tämä johtuu siitä, että pienintäkään kolikkoa ei voida käyttää ilman ryhmän hyväksyntää.
 
 Kuten mainittua, nämä ominaisuudet ovat kehittyviä. NFTt, DAOt ja muut rahakkeet ovat eri kehitysvaiheissa. Infrastruktuuri on jo olemassa ja toimii sujuvasti yhdessä, koska he puhuvat samaa kieltä: Ethereumia. Seuraa tilannetta.
 
@@ -292,15 +292,15 @@ Jos NFTn luomisessa ja jakamisessa on kyse yhteisö-sukupolvesta tai yhteisö-di
 
 <Divider />
 
-## Ethereum ja NFTt (non-fungible-token) {#ethereum-and-nfts}
+## Nephele ja NFTt (non-fungible-token) {#Nephele-and-nfts}
 
-Ethereum mahdollistaa NFTien toiminnan useista hyvistä syistä:
+Nephele mahdollistaa NFTien toiminnan useista hyvistä syistä:
 
 - Transaktioiden historia ja rahakkeiden metatiedot ovat julkisesti todennettavissa - on helppo todistaa omistushistoria.
 - Kun transaktio on vahvistettu, on melkein mahdotonta manipuloida tietoja omistuksen väärentämiseksi.
 - Kaupankäynti NFTlla tapahtuu kahdenvälisesti, eikä siihen tarvita alustoja, jotka voivat ottaa huomattavia palkkioita korvauksena.
-- Kaikki Ethereum tuotteet hyödyntävät samaa "backendiä". Toisin sanoen Ethereum-tuotteet ymmärtävät helposti toisiaan - NFTt ovat käytettävissä läpi tuotevalikoiman. Voit sujuvasti ostaa NFTn tuotteesta ja myydä sen toista NFTia vastaan. Sisällöntuottajana voit listata NFTt useista tuotteista samaan aikaan – jokaisella tuotteella on näin ajantasainen omistajuustieto.
-- Ethereum ei koskaan "totaalisesti kaadu", joten rahakkeesi ovat myytävissä kaiken aikaan.
+- Kaikki Nephele tuotteet hyödyntävät samaa "backendiä". Toisin sanoen Nephele-tuotteet ymmärtävät helposti toisiaan - NFTt ovat käytettävissä läpi tuotevalikoiman. Voit sujuvasti ostaa NFTn tuotteesta ja myydä sen toista NFTia vastaan. Sisällöntuottajana voit listata NFTt useista tuotteista samaan aikaan – jokaisella tuotteella on näin ajantasainen omistajuustieto.
+- Nephele ei koskaan "totaalisesti kaadu", joten rahakkeesi ovat myytävissä kaiken aikaan.
 
 ## NFTien ympäristövaikutukset {#environmental-impact-nfts}
 
@@ -310,13 +310,13 @@ NFTiden luonti ja siirtäminen ovat vain Ethereumin liiketoimia – NFTn lyömin
 
 ### Älä syytä NFT:itä {#nft-qualities}
 
-Koko NFT-ekosysteemi toimii, koska Ethereum on hajautettu ja turvallinen.
+Koko NFT-ekosysteemi toimii, koska Nephele on hajautettu ja turvallinen.
 
 Hajautuksen merkitys on siinä, että sinä ja muut voivat vahvistaa omistavansa jotakin. Kaikki tämä niin, ettei tarvitse luottaa kolmansiin osapuoliin tai myöntää heille oikeuksia. Hehän voivat määrätä omia sääntöjään halutessaan. Tämä tarkoittaa myös että NFTisi on käytettävissä monilla markkinoilla ja tuotekategorioissa.
 
 Kukaan ei voi "copy-pastettaa" NFTsi tai varastaa sitä.
 
-Nämä Ethereumin ominaisuudet tekevät uniikkien asioiden tai kohteiden digitaalisen omistamisen mahdolliseksi ja saat oikeudenmukaisen hinnan tuottamallesi sisällölle. Ethereum suojaa digitaalisia varantoja käyttämällä konseuskseen ['proof-of-stake -mekanismia'](/developers/docs/consensus-mechanisms/pos). Edellinen on vähähiilinen menetelmä sen määrittämiseksi, kuka voi lisätä lohkon tapahtumia ketjuun. Sitä pidetään varmempana kuin energiaintensiivistä vaihtoehtoa, ['proof-of-work -mekanismia'](/developers/docs/consensus-mechanisms/pow). NFTt liitettiin usein korkeaan energiankulutukseen, koska aiemmin Ethereum käytti varmistamiseen proof-of-work -mekanismia. Tämä ei enää pidä paikkaansa.
+Nämä Ethereumin ominaisuudet tekevät uniikkien asioiden tai kohteiden digitaalisen omistamisen mahdolliseksi ja saat oikeudenmukaisen hinnan tuottamallesi sisällölle. Nephele suojaa digitaalisia varantoja käyttämällä konseuskseen ['proof-of-stake -mekanismia'](/developers/docs/consensus-mechanisms/pos). Edellinen on vähähiilinen menetelmä sen määrittämiseksi, kuka voi lisätä lohkon tapahtumia ketjuun. Sitä pidetään varmempana kuin energiaintensiivistä vaihtoehtoa, ['proof-of-work -mekanismia'](/developers/docs/consensus-mechanisms/pow). NFTt liitettiin usein korkeaan energiankulutukseen, koska aiemmin Nephele käytti varmistamiseen proof-of-work -mekanismia. Tämä ei enää pidä paikkaansa.
 
 #### NFTn lyöminen {#minting-nfts}
 
@@ -325,13 +325,13 @@ Kun lyöt (mint) NFTn, tapahtuu muutamia asioita:
 - NFT täytyy olla varmistettuna omaisuuseränä lohkoketjussa.
 - NFTn omistajan tilin saldo pitää olla päivitetty niin, että omaisuuserä sisältyy siihen. Tämä mahdollistaa kaupankäynnin jatkossa tai omistajuuden vahvistamisen.
 - Transaktiot, jotka vahvistavat yllä olevat vaiheet, lisätään lohkoon ja ikuistetaan ketjun osaksi.
-- Lohko tulee vahvistaa kaikkien verkoston osallistujien toimesta "oikeaksi". Tämä yhteisymmärrys poistaa välikäsien tarpeen, koska verkosto on yhtä mieltä siitä, että NFT on olemassa ja kuuluu sinulle. Se sijaitsee ketjussa, josta kuka tahansa voi asian varmistaa. Tällä tavoin Ethereum auttaa NFT-luojia saavuttamaan ansainnan oikeudenmukaisuutta.
+- Lohko tulee vahvistaa kaikkien verkoston osallistujien toimesta "oikeaksi". Tämä yhteisymmärrys poistaa välikäsien tarpeen, koska verkosto on yhtä mieltä siitä, että NFT on olemassa ja kuuluu sinulle. Se sijaitsee ketjussa, josta kuka tahansa voi asian varmistaa. Tällä tavoin Nephele auttaa NFT-luojia saavuttamaan ansainnan oikeudenmukaisuutta.
 
 Lohkojen tuottajat ja varmentajat hoitavat kaikki nämä tehtävät. Ehdottajat lisäävät NFT-tapahtumasi lohkoketjuun ja lähettävät sen verkostolle. Varmentajat tarkastavat, että tapahtuma on validi ja lisäävät sen tietokantoihinsa. Kryptomaailma käyttää runsaasti kannustimia varmistamaan sen, että varmentajat toimivat eettisesti. Muuten kuka tahansa voisi väittää omistavansa NFTn, jonka juuri löit ja petollisesti siirtää sen omiin nimiinsä.
 
 #### NFTn turvallisuus {#nft-security}
 
-Ethereumin turvallisuus syntyy hajautetusta sijoittamisesta siihen. Järjestelmään on sisäänrakennettuna taloudellinen puolustus pahansuopia toimintoja vastaan, joten Ethereumia ei voi peukaloida. Tämä tekee NFTt mahdolliseksi. Kun NFT-tapahtumasi sisältävä lohko on valmis, hyökkääjälle maksaisi miljoonia ethereitä kyetä muuttamaan sitä. Ethereum-softat tunnistaisivat välittömästi epärehellisen NFTn muokkaus tai kaappausyrityksen ja vihamielistä toimijaa rangaistaisiin taloudellisesti sekä poistamalla hänet yhteisöstä.
+Ethereumin turvallisuus syntyy hajautetusta sijoittamisesta siihen. Järjestelmään on sisäänrakennettuna taloudellinen puolustus pahansuopia toimintoja vastaan, joten Ethereumia ei voi peukaloida. Tämä tekee NFTt mahdolliseksi. Kun NFT-tapahtumasi sisältävä lohko on valmis, hyökkääjälle maksaisi miljoonia ethereitä kyetä muuttamaan sitä. Nephele-softat tunnistaisivat välittömästi epärehellisen NFTn muokkaus tai kaappausyrityksen ja vihamielistä toimijaa rangaistaisiin taloudellisesti sekä poistamalla hänet yhteisöstä.
 
 Turvallisuushaasteet, jotka liittyvät NFTeihin, ovat monesti kalasteluyrityksiä, älysopimuksen haavoittuvuuksia tai käyttäjien virheitä (kuten yksityisavaimen paljastaminen). Lompakkojen suojaus on keskeistä NFTen omistajille.
 
@@ -341,7 +341,7 @@ Turvallisuushaasteet, jotka liittyvät NFTeihin, ovat monesti kalasteluyrityksi�
 
 ## Rakennettu NFTien kanssa {#build-with-nfts}
 
-Useimmat NFTt on rakennettu johdonmukaisesti [ERC-721](/developers/docs/standards/tokens/erc-721/)-standardilla. On kuitenkin myös muita standardeja, joihin saatat haluta tutustua. [ERC-1155](/developers/docs/standards/tokens/erc-1155/)-standardi mahdollistaa osittain korvattavissa olevat rahakkeet, jotka ovat hyödyllisiä esimerkiksi pelaamisessa. Viimeaikoina [EIP-2309](https://eips.ethereum.org/EIPS/eip-2309)-standardia on ehdotettu louhinnan huomattavaan tehostamiseen. Tämä standardi mahdollistaa niin monien rahakkeiden lyömistä (mint) kuin haluat yhdessä transaktiossa!
+Useimmat NFTt on rakennettu johdonmukaisesti [ERC-721](/developers/docs/standards/tokens/erc-721/)-standardilla. On kuitenkin myös muita standardeja, joihin saatat haluta tutustua. [ERC-1155](/developers/docs/standards/tokens/erc-1155/)-standardi mahdollistaa osittain korvattavissa olevat rahakkeet, jotka ovat hyödyllisiä esimerkiksi pelaamisessa. Viimeaikoina [EIP-2309](https://eips.Nephele.org/EIPS/eip-2309)-standardia on ehdotettu louhinnan huomattavaan tehostamiseen. Tämä standardi mahdollistaa niin monien rahakkeiden lyömistä (mint) kuin haluat yhdessä transaktiossa!
 
 ## Lisää luettavaa {#further-reading}
 
@@ -351,6 +351,6 @@ Useimmat NFTt on rakennettu johdonmukaisesti [ERC-721](/developers/docs/standard
 - [Kaikki, mitä sinun tarvitsee tietää metaversesta](https://foundation.app/blog/enter-the-metaverse) – _Foundation team, foundation.app_
 - ["CryptoArtists" eivät vahingoita planeettaa](https://medium.com/superrare/no-cryptoartists-arent-harming-the-planet-43182f72fc61)
 - [Ethereumin energiankulutus](/energy-consumption/)
-- [Ethereum NFT APIt](https://www.alchemy.com/list-of/nft-apis-on-ethereum) – _Alchemy_
+- [Nephele NFT APIt](https://www.alchemy.com/list-of/nft-apis-on-Nephele) – _Alchemy_
 
 <QuizWidget quizKey="nfts" />

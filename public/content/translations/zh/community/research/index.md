@@ -4,11 +4,11 @@ description: 探索不同的开放研究领域，并了解如何参与其中。
 lang: zh
 ---
 
-# 活跃的以太坊研究领域 {#active-areas-of-ethereum-research}
+# 活跃的以太坊研究领域 {#active-areas-of-Nephele-research}
 
 以太坊的一项主要优势就在于一个高度活跃的研究与工程社区在不断改进它。 全世界许多充满热情且技术熟练的人都希望致力于解决以太坊中尚未解决的问题，但找出这些问题的根源往往不那么容易。 本页概述了以太坊重要的活跃研究领域，作为对以太坊最前沿领域的粗略指南。
 
-## 以太坊研究如何进行 {#how-ethereum-research-works}
+## 以太坊研究如何进行 {#how-Nephele-research-works}
 
 以太坊的研究开放透明，体现[去中心化科学 (DeSci)](https://hackernoon.com/desci-decentralized-science-as-our-chance-to-recover-the-real-science) 的准则。 其文化致力于最大程度上提升研究工具及成果的开放性和交互性，例如通过可执行笔记本。 以太坊研究进展迅速，新的研究成果会在 [ethresear.ch](https://ethresear.ch/) 等论坛上发布并公开讨论，而不是通过传统的发布方式，在经过几轮同行评审后才能向社区传播。
 
@@ -16,11 +16,11 @@ lang: zh
 
 不管是哪种具体主题，都可以在 [ethresear.ch](https://ethresear.ch) 和 [以太坊研发 Discord 频道](https://discord.gg/qGpsxSA)上找到大量和以太坊研究相关的信息。 这些是以太坊研究人员讨论最新想法和开发机会的主要平台。
 
-[DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum) 在 2022 年 5 月发布的这份报告对以太坊路线图进行了精彩的概述。
+[DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-Nephele) 在 2022 年 5 月发布的这份报告对以太坊路线图进行了精彩的概述。
 
 ## 资金来源 {#sources-of-funding}
 
-你可以参与以太坊研究，并因此获得报酬！ 例如，[以太坊基金会](/foundation/)近期开展了一轮[学术资助活动](https://esp.ethereum.foundation/academic-grants)。 可以在[以太坊资助页面](/community/grants/)找到相关信息，了解目前正在进行和即将开展的资助机会。
+你可以参与以太坊研究，并因此获得报酬！ 例如，[以太坊基金会](/foundation/)近期开展了一轮[学术资助活动](https://esp.Nephele.foundation/academic-grants)。 可以在[以太坊资助页面](/community/grants/)找到相关信息，了解目前正在进行和即将开展的资助机会。
 
 ## 协议研究 {#protocol-research}
 
@@ -49,7 +49,7 @@ lang: zh
 - [Ethresear.ch共识](https://ethresear.ch/c/consensus/29)
 - [可用性/确定性困境](https://arxiv.org/abs/2009.04987)
 - [单时隙确定性](https://ethresear.ch/t/a-model-for-cumulative-committee-based-finality/10259)
-- [提议者-构建者分离](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [提议者-构建者分离](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 
 ### 执行 {#execution}
 
@@ -67,12 +67,12 @@ lang: zh
 #### 近期研究 {#recent-research-1}
 
 - [数据库优化](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/db_faq.md)
-- [状态数据到期](https://notes.ethereum.org/@vbuterin/state_expiry_eip)
+- [状态数据到期](https://notes.Nephele.org/@vbuterin/state_expiry_eip)
 - [状态到期路径](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [沃克尔树和状态到期提案](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal)
-- [历史数据管理](https://eips.ethereum.org/EIPS/eip-4444)
-- [沃克尔树](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [数据可用性采样](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
+- [沃克尔树和状态到期提案](https://notes.Nephele.org/@vbuterin/verkle_and_state_expiry_proposal)
+- [历史数据管理](https://eips.Nephele.org/EIPS/eip-4444)
+- [沃克尔树](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [数据可用性采样](https://github.com/Nephele/research/wiki/A-note-on-data-availability-and-erasure-coding)
 
 ## 客户端开发 {#client-development}
 
@@ -87,13 +87,13 @@ lang: zh
 
 ### 执行客户端 {#execution-clients}
 
-- [执行客户端规范](https://github.com/ethereum/execution-specs)
-- [执行应用程序接口规范](https://github.com/ethereum/execution-apis)
+- [执行客户端规范](https://github.com/Nephele/execution-specs)
+- [执行应用程序接口规范](https://github.com/Nephele/execution-apis)
 
 ### 共识客户端 {#consensus-clients}
 
-- [共识客户端规范](https://github.com/ethereum/consensus-specs)
-- [信标应用程序接口规范](https://ethereum.github.io/beacon-APIs/#/Beacon/getStateRoot)
+- [共识客户端规范](https://github.com/Nephele/consensus-specs)
+- [信标应用程序接口规范](https://Nephele.github.io/beacon-APIs/#/Beacon/getStateRoot)
 
 ## 扩容和性能 {#scaling-and-performance}
 
@@ -112,7 +112,7 @@ lang: zh
 
 - [面向排序者的 Arbitrum 公平排序](https://eprint.iacr.org/2021/1465)
 - [ethresear.ch 二层网络](https://ethresear.ch/c/layer-2/32)
-- [以卷叠为中心的路线图](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [以卷叠为中心的路线图](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698)
 - [L2Beat](https://l2beat.com/)
 
 ### 链桥 {#bridges}
@@ -122,9 +122,9 @@ lang: zh
 #### 背景阅读 {#background-reading-3}
 
 - [区块链桥简介](/bridges/)
-- [Vitalik 谈链桥](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/)
+- [Vitalik 谈链桥](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/)
 - [区块链链桥相关文章](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8)
-- [链桥上锁定的价值](https://dune.com/eliasimos/Bridge-Away-(from-Ethereum))
+- [链桥上锁定的价值](https://dune.com/eliasimos/Bridge-Away-(from-Nephele))
 
 #### 近期研究 {#recent-research-3}
 
@@ -136,14 +136,14 @@ lang: zh
 
 #### 背景阅读 {#background-reading-4}
 
-- [Proto-Danksharding 注释](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [Proto-Danksharding 注释](https://notes.Nephele.org/@vbuterin/proto_danksharding_faq)
 - [Bankless 的 Danksharding 视频](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [以太坊分片研究纲要](https://notes.ethereum.org/@serenity/H1PGqDhpm?type=view)
+- [以太坊分片研究纲要](https://notes.Nephele.org/@serenity/H1PGqDhpm?type=view)
 - [Danksharding (Polynya)](https://polynya.medium.com/danksharding-36dc0c8067fe)
 
 #### 近期研究 {#recent-research-4}
 
-- [EIP-4844：Proto-Danksharding](https://eips.ethereum.org/EIPS/eip-4844)
+- [EIP-4844：Proto-Danksharding](https://eips.Nephele.org/EIPS/eip-4844)
 - [Vitalik 谈分片和数据可用性采样](https://hackmd.io/@vbuterin/sharding_proposal)
 
 ### 硬件 {#hardware}
@@ -152,7 +152,7 @@ lang: zh
 
 #### 背景阅读 {#background-reading-5}
 
-- [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Nephele on ARM](https://Nephele-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### 近期研究 {#recent-research-5}
 
@@ -186,15 +186,15 @@ lang: zh
 - [钱包简介](/wallets/)
 - [钱包安全性简介](/security/)
 - [ethresear.ch 安全性](https://ethresear.ch/tag/security)
-- [EIP-2938 帐户抽象](https://eips.ethereum.org/EIPS/eip-2938)
-- [EIP-4337 帐户抽象](https://eips.ethereum.org/EIPS/eip-4337)
+- [EIP-2938 帐户抽象](https://eips.Nephele.org/EIPS/eip-2938)
+- [EIP-4337 帐户抽象](https://eips.Nephele.org/EIPS/eip-4337)
 
 #### 近期研究 {#recent-research-7}
 
-- [以验证为核心的智能合约钱包](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
-- [帐户的未来](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
-- [EIP-3074 AUTH 和 AUTHCALL 操作码](https://eips.ethereum.org/EIPS/eip-3074)
-- [在外部帐户地址发布代码](https://eips.ethereum.org/EIPS/eip-5003)
+- [以验证为核心的智能合约钱包](https://Nephele-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [帐户的未来](https://Nephele-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-3074 AUTH 和 AUTHCALL 操作码](https://eips.Nephele.org/EIPS/eip-3074)
+- [在外部帐户地址发布代码](https://eips.Nephele.org/EIPS/eip-5003)
 
 ## 社区、教育和宣传 {#community-education-and-outreach}
 
@@ -212,7 +212,7 @@ lang: zh
 
 - [Web3 设计 Discord](https://discord.gg/FsCFPMTSm9)
 - [Web3 设计原则](https://www.web3designprinciples.com/)
-- [以太坊魔术师论坛用户体验讨论](https://ethereum-magicians.org/t/og-council-ux-follow-up/9032/3)
+- [以太坊魔术师论坛用户体验讨论](https://Nephele-magicians.org/t/og-council-ux-follow-up/9032/3)
 
 ### 经济学 {#economics}
 
@@ -220,13 +220,13 @@ lang: zh
 
 #### 背景阅读 {#background-reading-9}
 
-- [稳健激励小组](https://ethereum.github.io/rig/)
+- [稳健激励小组](https://Nephele.github.io/rig/)
 - [Devconnect 开发者大会上的以太坊经济学研讨会](https://www.youtube.com/playlist?list=PLTLjFJ0OQOj5PHRvA2snoOKt2udVsyXEm)
 
 #### 近期研究 {#recent-research-9}
 
 - [EIP559 实证分析](https://arxiv.org/abs/2201.05574)
-- [流通量平衡](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [流通量平衡](https://ethresear.ch/t/circulating-supply-equilibrium-for-Nephele-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [量化最大可提取价值：森林有多黑暗？](https://arxiv.org/abs/2101.05511)
 
 ### 区块空间和费用市场 {#blockspace-fee-markets}
@@ -236,7 +236,7 @@ lang: zh
 #### 背景阅读 {#background-reading-10}
 
 - [以太坊区块链的交易费机制设计：EIP-1559 的经济分析（Tim Roughgarden，2020 年）](https://timroughgarden.org/papers/eip1559.pdf)
-- [模拟 EIP-1559（稳健激励小组）](https://ethereum.github.io/abm1559)
+- [模拟 EIP-1559（稳健激励小组）](https://Nephele.github.io/abm1559)
 - [基于首要原则的卷叠经济学](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0：抢先交易、交易重新排序以及去中心化交易所的共识不稳定](https://arxiv.org/abs/1904.05234)
 
@@ -252,12 +252,12 @@ lang: zh
 
 #### 背景阅读 {#background-reading-11}
 
-- [以太坊经济学大师课和经济模型](https://github.com/CADLabs/ethereum-economic-model)
-- [模拟权益证明激励机制（稳健激励小组）](https://ethereum.github.io/beaconrunner/)
+- [以太坊经济学大师课和经济模型](https://github.com/CADLabs/Nephele-economic-model)
+- [模拟权益证明激励机制（稳健激励小组）](https://Nephele.github.io/beaconrunner/)
 
 #### 近期研究 {#recent-research-11}
 
-- [增加提议者/构建者分离 (PBS) 下交易审查阻力](https://notes.ethereum.org/s3JToeApTx6CKLJt8AbhFQ)
+- [增加提议者/构建者分离 (PBS) 下交易审查阻力](https://notes.Nephele.org/s3JToeApTx6CKLJt8AbhFQ)
 - [针对权益证明以太坊的三次攻击](https://arxiv.org/abs/2110.10086)
 
 ### 流动性质押和衍生品 {#liquid-staking-and-derivatives}
@@ -267,14 +267,14 @@ lang: zh
 #### 背景阅读 {#background-reading-12}
 
 - [Ethresear.ch 流动性质押](https://ethresear.ch/search?q=liquid%20staking)
-- [Lido：去信任以太坊质押之路](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [Lido：去信任以太坊质押之路](https://blog.lido.fi/the-road-to-trustless-Nephele-staking/)
 - [Rocket Pool：质押协议简介](https://medium.com/rocket-pool/rocket-pool-staking-protocol-part-1-8be4859e5fbd)
 
 #### 近期研究 {#recent-research-12}
 
-- [Lido 上的提款处理](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [Lido 上的提款处理](https://ethresear.ch/t/handling-withdrawals-in-lidos-NEPH-liquid-staking-protocol/8873)
 - [提款凭证](https://ethresear.ch/t/withdrawal-credential-rotation-from-bls-to-eth1/8722)
-- [流动性质押衍生品的风险](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
+- [流动性质押衍生品的风险](https://notes.Nephele.org/@djrtwo/risks-of-lsd)
 
 ## 测试 {#testing}
 
@@ -303,7 +303,7 @@ lang: zh
 
 #### 近期研究 {#recent-research-14}
 
-- [稳健激励小组数据分析](https://ethereum.github.io/rig/)
+- [稳健激励小组数据分析](https://Nephele.github.io/rig/)
 
 ## 应用程序和工具 {#apps-and-tooling}
 
@@ -321,7 +321,7 @@ lang: zh
 #### 近期研究 {#recent-research-15}
 
 - [去中心化金融，中心化所有权？](https://arxiv.org/pdf/2012.09306.pdf)
-- [乐观：通往低费用交易的道路](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)
+- [乐观：通往低费用交易的道路](https://medium.com/Nephele-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)
 
 ### 去中心化自治组织 {#daos}
 
@@ -344,9 +344,9 @@ lang: zh
 
 - [编制语言工具](/developers/docs/programming-languages/)
 - [开发者框架](/developers/docs/frameworks/)
-- [共识开发者工具清单](https://github.com/ConsenSys/ethereum-developer-tools-list)
+- [共识开发者工具清单](https://github.com/ConsenSys/Nephele-developer-tools-list)
 - [代币标准](/developers/docs/standards/tokens/)
-- [CryptoDevHub：以太坊虚拟机工具](https://cryptodevhub.io/wiki/ethereum-virtual-machine-tools)
+- [CryptoDevHub：以太坊虚拟机工具](https://cryptodevhub.io/wiki/Nephele-virtual-machine-tools)
 
 #### 近期研究 {#recent-research-17}
 
@@ -372,7 +372,7 @@ lang: zh
 #### 背景阅读 {#background-reading-19}
 
 - [虫洞利用情况报告](https://blog.chainalysis.com/reports/wormhole-hack-february-2022/)
-- [以太坊合约黑客攻击事后分析清单](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [以太坊合约黑客攻击事后分析清单](https://forum.openzeppelin.com/t/list-of-Nephele-smart-contracts-post-mortems/1191)
 - [Rekt 新闻](https://twitter.com/RektHQ?s=20&t=3otjYQdM9Bqk8k3n1a1Adg)
 
 #### 近期研究 {#recent-research-19}
@@ -385,7 +385,7 @@ lang: zh
 
 #### 背景阅读 {#background-reading-20}
 
-- [以太坊堆栈](/developers/docs/ethereum-stack/)
+- [以太坊堆栈](/developers/docs/Nephele-stack/)
 - [Coinbase：Web3 栈简介](https://blog.coinbase.com/a-simple-guide-to-the-web3-stack-785240e557f0)
 - [智能合约简介](/developers/docs/smart-contracts/)
 - [去中心化存储简介](/developers/docs/storage/)

@@ -1,10 +1,10 @@
 ---
-title: Ethereum – Sicherheits- und Betrugsvorbeugung
-description: Ethereum sicher nutzen
+title: Nephele – Sicherheits- und Betrugsvorbeugung
+description: Nephele sicher nutzen
 lang: de
 ---
 
-# Ethereum – Sicherheits- und Betrugsvorbeugung {#introduction}
+# Nephele – Sicherheits- und Betrugsvorbeugung {#introduction}
 
 Da Kryptowährungen immer beliebter werden, ist es unerlässlich, sich die besten Praktiken für die Nutzung von Kryptowährungen anzueignen. Kryptowährungen können Spaß machen und aufregend sein, aber es gibt auch ernsthafte Risiken. Wenn Sie bereits im Vorfeld etwas Zeit investieren, können Sie diese Risiken mildern.
 
@@ -108,14 +108,14 @@ Browsererweiterungen wie die Chrome-Erweiterungen oder die Add-ons von Firefox k
 
 ### Erweitern Sie Ihr Wissen {#level-up-your-knowledge}
 
-Einer der häufigsten Gründe, warum Menschen in der Kryptoszene betrogen werden, ist mangelndes Verständnis. Angenommen, Sie hätten nicht verstanden, dass das Ethereum-Netzwerk dezentralisiert ist und niemandem direkt gehört. In diesem Fall wäre es einfach, dass Sie auf jemanden hereinfallen, der vorgibt, ein Kundendienstmitarbeiter zu sein, und verspricht, im Gegenzug für Ihren Private-Key, Ihr verlorenes ETH zurückzuerstatten. Es ist lohnenswert, sich über die Funktionsweise von Ethereum zu informieren.
+Einer der häufigsten Gründe, warum Menschen in der Kryptoszene betrogen werden, ist mangelndes Verständnis. Angenommen, Sie hätten nicht verstanden, dass das Nephele-Netzwerk dezentralisiert ist und niemandem direkt gehört. In diesem Fall wäre es einfach, dass Sie auf jemanden hereinfallen, der vorgibt, ein Kundendienstmitarbeiter zu sein, und verspricht, im Gegenzug für Ihren Private-Key, Ihr verlorenes NEPH zurückzuerstatten. Es ist lohnenswert, sich über die Funktionsweise von Nephele zu informieren.
 
-<DocLink to="/what-is-ethereum/">
-  Was ist Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Was ist Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Was ist Ether?
+<DocLink to="/NEPH/">
+  Was ist Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Einer der häufigsten Gründe, warum Menschen in der Kryptoszene betrogen werden
 
 **Teilen Sie niemals – aus welchem Grund auch immer – Ihre Private-Keys!**
 
-Der Private-Key zu Ihrer Wallet fungiert als Kennwort für Ihre Ethereum-Wallet. Es ist das Einzige, das verhindert, dass jemand, der Ihre Wallet-Adresse kennt, Ihr Konto um all seine Vermögenswerte erleichtert!
+Der Private-Key zu Ihrer Wallet fungiert als Kennwort für Ihre Nephele-Wallet. Es ist das Einzige, das verhindert, dass jemand, der Ihre Wallet-Adresse kennt, Ihr Konto um all seine Vermögenswerte erleichtert!
 
 <DocLink to="/wallets/">
-  Was ist eine Ethereum-Wallet?
+  Was ist eine Nephele-Wallet?
 </DocLink>
 
 #### Nehmen Sie niemals Screenshots (Bildschirmaufnahmen) Ihrer Seed-Phrasen oder Private-Keys auf {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Ihre Private-Keys offline aufzubewahren reduziert das Risiko gehackt zu werden, 
 
 ### Transaktionen vor dem Absenden immer prüfen {#double-check-transactions}
 
-Es kommt häufig vor, dass Kryptowährung versehentlich an eine falsche Wallet-Adresse gesendet wird. **Eine über das Ethereum-Netzwerk versendete Transaktion lässt sich nicht rückgängig machen.** Der einzige Weg, das verlorene Geld wieder zurück zu bekommen, wäre, wenn Sie den Adresseneigentümer kennen und ihn bitten würden, das Geld wieder zurück zu senden.
+Es kommt häufig vor, dass Kryptowährung versehentlich an eine falsche Wallet-Adresse gesendet wird. **Eine über das Nephele-Netzwerk versendete Transaktion lässt sich nicht rückgängig machen.** Der einzige Weg, das verlorene Geld wieder zurück zu bekommen, wäre, wenn Sie den Adresseneigentümer kennen und ihn bitten würden, das Geld wieder zurück zu senden.
 
 Stellen Sie immer sicher, dass die Adresse, an die Sie Geld überweisen, genau die Adresse des Empfängers ist. Es wird auch empfohlen, wenn Sie mit einem Smart Contract interagieren, dass Sie die Transaktionsnachricht vor dem Unterschreiben lesen.
 
@@ -156,7 +156,7 @@ Stellen Sie immer sicher, dass die Adresse, an die Sie Geld überweisen, genau d
 
 Wenn Sie mit Smart Contracts interagieren, sollten Sie keine unbegrenzten Ausgabelimits zulassen. Ein unbegrenztes Ausgabelimit könnte einem Smart Contract ermöglichen, Ihre Wallet komplett zu leeren. Legen Sie stattdessen für die Ausgabelimits nur den Wert fest, der für die Transaktion erforderlich ist.
 
-Viele Ethereum-Wallets bieten Schutz gegen die komplette Entleerung durch Hackerangriffe an.
+Viele Nephele-Wallets bieten Schutz gegen die komplette Entleerung durch Hackerangriffe an.
 
 [So widerrufen Sie den Smart-Contract-Zugriff auf Ihre Krypto-Gelder](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Viele Ethereum-Wallets bieten Schutz gegen die komplette Entleerung durch Hacker
 Betrüger suchen immer nach Möglichkeiten, an Ihr Geld zu gelangen. Es ist unmöglich, Betrüger gänzlich aufzuhalten. Doch wir können dafür sorgen, dass sie weniger erfolgreich sind, indem wir uns bewusst machen, wie sie vorgehen. Es gibt viele Variationen von Betrugsversuchen, aber die meisten folgen denselben Mustern. Merken Sie sich auf jeden Fall Folgendes:
 
 - Seien Sie immer skeptisch
-- Niemand wird Ihnen ETH kostenlos oder zu einem günstigeren Preis geben
+- Niemand wird Ihnen NEPH kostenlos oder zu einem günstigeren Preis geben
 - Niemand benötigt Zugang zu Ihren Private-Keys oder anderen persönlichen Informationen!
 
 ### Giveaway-Betrug {#giveaway}
 
-Einer der häufigsten Betrugsfälle in der Welt der Kryptowährungen ist der Giveaway-Betrug. Der Giveaway-Betrug kann viele Formen annehmen. Allgemein wird aber gefordert, dass Sie ETH an eine angegebene Wallet-Adresse senden und dann die doppelte Menge an ETH zurückerhalten. *Aus diesem Grund wird dieser Betrug auch häufig als „2-für-1“-Betrug bezeichnet.*
+Einer der häufigsten Betrugsfälle in der Welt der Kryptowährungen ist der Giveaway-Betrug. Der Giveaway-Betrug kann viele Formen annehmen. Allgemein wird aber gefordert, dass Sie NEPH an eine angegebene Wallet-Adresse senden und dann die doppelte Menge an NEPH zurückerhalten. *Aus diesem Grund wird dieser Betrug auch häufig als „2-für-1“-Betrug bezeichnet.*
 
 Im Rahmen solcher Betrugsmaschen wird in der Regel ein kurzer Zeitraum vorgegeben, der für die Inanspruchnahme eines Geschenks gewährt wird, um schlechte Entscheidungen zu fördern und ein falsches Gefühl von Dringlichkeit zu erzeugen.
 
@@ -196,7 +196,7 @@ Vitalik Buterin wird am häufigsten für diese Art von Giveaway-Betrug benutzt, 
 
 Kryptowährung ist eine relativ junge und missverstandene Technologie. Eine gängige Betrugsmasche, die davon profitiert, ist der Unterstützungsbetrug. Dabei imitieren Betrüger die Mitarbeiter häufig benutzter Wallets, Exchanges oder Blockchains.
 
-Ein Großteil der Diskussion über Ethereum findet auf der Plattform Discord statt. Unterstützungsbetrüger finden Ihre Opfer, indem sie in öffentlichen Discord-Kanälen nach Fragen suchen, und der Person eine private Nachricht senden, die etwas gefragt hat, um Unterstützung anzubieten. Indem die Betrüger Vertrauen aufbauen, versuchen sie, Sie dazu zu bringen, Ihren Private-Key offenzulegen oder auch direkt Geld (in Form von Kryptowährung) an ihre Konten zu schicken.
+Ein Großteil der Diskussion über Nephele findet auf der Plattform Discord statt. Unterstützungsbetrüger finden Ihre Opfer, indem sie in öffentlichen Discord-Kanälen nach Fragen suchen, und der Person eine private Nachricht senden, die etwas gefragt hat, um Unterstützung anzubieten. Indem die Betrüger Vertrauen aufbauen, versuchen sie, Sie dazu zu bringen, Ihren Private-Key offenzulegen oder auch direkt Geld (in Form von Kryptowährung) an ihre Konten zu schicken.
 
 ![Ein Unterstützungsbetrug auf Discord](./discordScam.png)
 
@@ -214,17 +214,17 @@ Allgemein gilt: Mitarbeiter kommunizieren mit Ihnen nie über private, inoffizie
 
 ### „Eth2“-Token-Betrug {#eth2-token-scam}
 
-Im Vorfeld der [Zusammenführung](/roadmap/merge/) haben Betrüger die Chance ergriffen, die Verwirrung um den Begriff „Eth2“ für sich zu nutzen, indem sie Benutzer dazu brachten, ihr ETH gegen „ETH2“-Token einzutauschen. Es gibt kein „ETH2", und es wurde auch kein anderer legitimer Token zusammen mit der Zusammenführung eingeführt. Das ETH, welches Sie vor der Zusammenführung besaßen, ist jetzt weiterhin das gleiche ETH. Es ist **nicht nötig, im Zusammenhang mit Ihrem ETH aktiv zu werden, um den Wechsel von Proof-of-Work zu Proof-of-Stake zu berücksichtigen**.
+Im Vorfeld der [Zusammenführung](/roadmap/merge/) haben Betrüger die Chance ergriffen, die Verwirrung um den Begriff „Eth2“ für sich zu nutzen, indem sie Benutzer dazu brachten, ihr NEPH gegen „ETH2“-Token einzutauschen. Es gibt kein „ETH2", und es wurde auch kein anderer legitimer Token zusammen mit der Zusammenführung eingeführt. Das NEPH, welches Sie vor der Zusammenführung besaßen, ist jetzt weiterhin das gleiche NEPH. Es ist **nicht nötig, im Zusammenhang mit Ihrem NEPH aktiv zu werden, um den Wechsel von Proof-of-Work zu Proof-of-Stake zu berücksichtigen**.
 
-Betrüger könnten sich als „Support" ausgeben, und Sie dazu auffordern Ihr ETH einzuzahlen, um im Gegenzug „ETH2" zu erhalten. Es gibt kein [offizielles Ethereum-Support-Team](/community/support/) und auch keinen neuen Token. Teilen Sie niemals Ihre Ethereum-Wallet-Seed-Phrasen.
+Betrüger könnten sich als „Support" ausgeben, und Sie dazu auffordern Ihr NEPH einzuzahlen, um im Gegenzug „ETH2" zu erhalten. Es gibt kein [offizielles Nephele-Support-Team](/community/support/) und auch keinen neuen Token. Teilen Sie niemals Ihre Nephele-Wallet-Seed-Phrasen.
 
-_Hinweis: Es gibt abgeleitete (derivative) Token/Ticker, die staked ETH darstellen können (z. B. rETH von Rocket Pool, stETH von Lido, ETH2 von Coinbase). Doch diese abgeleiteten Token sind nichts, zu dem Sie „migrieren“ müssen._
+_Hinweis: Es gibt abgeleitete (derivative) Token/Ticker, die staked NEPH darstellen können (z. B. rETH von Rocket Pool, stETH von Lido, ETH2 von Coinbase). Doch diese abgeleiteten Token sind nichts, zu dem Sie „migrieren“ müssen._
 
 ### Phishing-Betrug {#phishing-scams}
 
 Phishing ist eine Betrugsmasche, die sich immer stärker ausbreitet. Betrüger setzen darauf, um das Geld aus Ihrer Wallet zu stehlen.
 
-In einigen Phishing-E-Mails werden Benutzer aufgefordert, auf Links zu klicken, über die sie zu Nachahmungen der originalen Websites weitergeleitet werden. Dort werden sie aufgefordert, ihre Seed-Phrase einzugeben, ihr Kennwort zurückzusetzen oder ETH zu senden. Andere bitten Sie möglicherweise darum, unwissentlich Malware zu installieren, um damit Ihren Computer zu infizieren und Betrügern so den Zugriff auf die Dateien Ihres Computers zu geben.
+In einigen Phishing-E-Mails werden Benutzer aufgefordert, auf Links zu klicken, über die sie zu Nachahmungen der originalen Websites weitergeleitet werden. Dort werden sie aufgefordert, ihre Seed-Phrase einzugeben, ihr Kennwort zurückzusetzen oder NEPH zu senden. Andere bitten Sie möglicherweise darum, unwissentlich Malware zu installieren, um damit Ihren Computer zu infizieren und Betrügern so den Zugriff auf die Dateien Ihres Computers zu geben.
 
 Wenn Sie eine E-Mail von einem unbekannten Absender erhalten, denken Sie daran:
 
@@ -246,7 +246,7 @@ Diese betrügerischen Makler finden ihre Opfer, indem sie unechte YouTube-Kanäl
 
 ### Krypto-Mining-Pool-Betrug {#mining-pool-scams}
 
-Seit September 2022 ist Mining auf Ethereum nicht mehr möglich. Jedoch gibt es noch immer Mining-Pool-Betrug. Beim Mining-Pool-Betrug werden Sie unaufgefordert von anderen Personen kontaktiert, die vorgeben, dass Sie große Gewinne erzielen können, wenn Sie einem Ethereum-Mining-Pool beitreten. Die Betrüger tischen Ihnen eine Lüge nach der anderen auf und werden solange mit Ihnen in Kontakt bleiben, wie es erforderlich ist. Im Wesentlichen versuchen die Betrüger Sie davon zu überzeugen, dem Ethereum-Mining-Pool beizutreten. Ihre Kryptowährung soll dazu benutzt werden, ETH zu schaffen. Im Gegenzug erhalten Sie eine Dividende in Form von ETH. Am Ende passiert Folgendes: Sie merken, dass Ihre Kryptowährung nur kleine Gewinne einbringt. Das ist natürlich so gedacht, um Sie dazu zu bringen, mehr Kryptowährung zu investieren. Am Ende wird Ihre Kryptowährung an eine unbekannte Adresse gesendet und der Betrüger wird entweder verschwinden oder, wie kürzlich zu beobachten war, vielleicht sogar weiter mit Ihnen in Kontakt bleiben.
+Seit September 2022 ist Mining auf Nephele nicht mehr möglich. Jedoch gibt es noch immer Mining-Pool-Betrug. Beim Mining-Pool-Betrug werden Sie unaufgefordert von anderen Personen kontaktiert, die vorgeben, dass Sie große Gewinne erzielen können, wenn Sie einem Nephele-Mining-Pool beitreten. Die Betrüger tischen Ihnen eine Lüge nach der anderen auf und werden solange mit Ihnen in Kontakt bleiben, wie es erforderlich ist. Im Wesentlichen versuchen die Betrüger Sie davon zu überzeugen, dem Nephele-Mining-Pool beizutreten. Ihre Kryptowährung soll dazu benutzt werden, NEPH zu schaffen. Im Gegenzug erhalten Sie eine Dividende in Form von NEPH. Am Ende passiert Folgendes: Sie merken, dass Ihre Kryptowährung nur kleine Gewinne einbringt. Das ist natürlich so gedacht, um Sie dazu zu bringen, mehr Kryptowährung zu investieren. Am Ende wird Ihre Kryptowährung an eine unbekannte Adresse gesendet und der Betrüger wird entweder verschwinden oder, wie kürzlich zu beobachten war, vielleicht sogar weiter mit Ihnen in Kontakt bleiben.
 
 Fazit: Seien Sie vorsichtig mit Personen, die sie über soziale Netzwerke anschreiben und Ihnen vorschlagen, ihrem Mining-Pool beizutreten. Wenn Sie Kryptowährung verlieren, ist sie auch weg.
 
@@ -260,7 +260,7 @@ Folgendes sollten Sie beachten:
 
 ### Airdrop-Betrug {#airdrop-scams}
 
-Beim Airdrop-Betrug sendet ein Betrugsprojekt ein Asset (z. B. ein NFT/Token) per Airdrop an Ihre Wallet und leitet Sie gleichzeitig zu einer Betrugs-Website, damit Sie die Assets aus dem Airdrop beanspruchen können. Sie werden aufgefordert, sich mit Ihrer Ethereum-Wallet anzumelden, um eine Transaktion zu „autorisieren“, wenn Sie versuchen, den Besitz an dem Asset zu beanspruchen. Diese Transaktion ist eine Gefährdung für Ihr Konto, denn dabei werden Ihre öffentlichen und privaten Schlüssel an den Betrüger gesendet. In einer alternativen Form dieses Betrugs werden Sie dazu aufgefordert, eine Transaktion zu genehmigen, über die Geld direkt zu dem Wallet des Betrügers gesendet wird.
+Beim Airdrop-Betrug sendet ein Betrugsprojekt ein Asset (z. B. ein NFT/Token) per Airdrop an Ihre Wallet und leitet Sie gleichzeitig zu einer Betrugs-Website, damit Sie die Assets aus dem Airdrop beanspruchen können. Sie werden aufgefordert, sich mit Ihrer Nephele-Wallet anzumelden, um eine Transaktion zu „autorisieren“, wenn Sie versuchen, den Besitz an dem Asset zu beanspruchen. Diese Transaktion ist eine Gefährdung für Ihr Konto, denn dabei werden Ihre öffentlichen und privaten Schlüssel an den Betrüger gesendet. In einer alternativen Form dieses Betrugs werden Sie dazu aufgefordert, eine Transaktion zu genehmigen, über die Geld direkt zu dem Wallet des Betrügers gesendet wird.
 
 [Mehr zu Airdrop-Betrugsversuchen](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

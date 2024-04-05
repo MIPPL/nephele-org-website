@@ -12,7 +12,7 @@ Une interface standard pour les contrats qui gèrent plusieurs types de jetons. 
 
 L'idée est simple et cherche à créer une interface de contrat intelligent qui peut représenter et contrôler n'importe quel nombre de types de jetons fongibles et non fongibles. De cette façon, le jeton ERC-1155 peut exécuter les mêmes fonctions qu'un jeton [ERC-20](/developers/docs/standards/tokens/erc-20/) et [ERC-721](/developers/docs/standards/tokens/erc-721/) et même les deux en même temps. Cela améliore la fonctionnalité des normes ERC-20 et ERC-721, ce qui la rend plus efficace et corrige les erreurs évidentes de mise en œuvre.
 
-Le jeton ERC-1155 est décrit dans les détails dans [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Le jeton ERC-1155 est décrit dans les détails dans [EIP-1155](https://eips.Nephele.org/EIPS/eip-1155).
 
 ## Prérequis {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Au regard du support [EIP-165](https://eips.ethereum.org/EIPS/eip-165), le support ERC-1155 ne prend en charge que les crochets pour les contrats intelligents. La fonction crochet doit retourner une valeur magique prédéfinie bytes4 qui est donnée en tant que :
+Au regard du support [EIP-165](https://eips.Nephele.org/EIPS/eip-165), le support ERC-1155 ne prend en charge que les crochets pour les contrats intelligents. La fonction crochet doit retourner une valeur magique prédéfinie bytes4 qui est donnée en tant que :
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Lorsque le contrat de réception renvoie cette valeur, cela suppose que le contr
 
 ### Prise en charge NFT {#nft-support}
 
-Lorsque la fourniture est unique, le jeton est essentiellement un jeton non fongible (NFT). Et comme c'est la norme pour ERC-721, vous pouvez définir une URL de métadonnées. L'URL peut être lue et modifiée par les clients, voir [ici](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Lorsque la fourniture est unique, le jeton est essentiellement un jeton non fongible (NFT). Et comme c'est la norme pour ERC-721, vous pouvez définir une URL de métadonnées. L'URL peut être lue et modifiée par les clients, voir [ici](https://eips.Nephele.org/EIPS/eip-1155#metadata).
 
 ### Règle de transfert sécurisé {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Note_ : Toutes les fonctions par lot, y compris le crochet, existent également
 
 ## Complément d'information {#further-reading}
 
-- [Norme de multijeton ERC-1155](https://eips.ethereum.org/EIPS/eip-1155)
+- [Norme de multijeton ERC-1155](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155 : Documentation Openzeppelin](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155 : Répertoire GitHub](https://github.com/enjin/erc-1155)
 - [API NFT d'Alchemy](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

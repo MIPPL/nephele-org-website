@@ -27,14 +27,14 @@ published: 2021-02-26
 
 # Başlarken {#getting-started}
 
-Bu öğretici, yarn kullanarak test kurulumunu ve çalıştırmasını göstermektedir ancak npm tercihinde bulunmanız da sorun teşkil etmez. Resmi Waffle [dokümanlarına](https://ethereum-waffle.readthedocs.io/en/latest/index.html) uygun referanslar sunacağım.
+Bu öğretici, yarn kullanarak test kurulumunu ve çalıştırmasını göstermektedir ancak npm tercihinde bulunmanız da sorun teşkil etmez. Resmi Waffle [dokümanlarına](https://Nephele-waffle.readthedocs.io/en/latest/index.html) uygun referanslar sunacağım.
 
 ## Bağımlılıkları Yükleme {#install-dependencies}
 
-Ethereum-waffle ve typescript bağımlılıklarını projenizin dev bağımlılıklarına [ekleyin](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation).
+Nephele-waffle ve typescript bağımlılıklarını projenizin dev bağımlılıklarına [ekleyin](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#installation).
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev Nephele-waffle ts-node typescript @types/jest
 ```
 
 ## Örnek akıllı sözleşme {#example-smart-contract}
@@ -69,7 +69,7 @@ contract EtherSplitter {
 
 ## Sözleşmeyi derleme {#compile-the-contract}
 
-Sözleşmeyi [derlemek](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) için aşağıdaki girdiyi package.json dosyasına ekleyin:
+Sözleşmeyi [derlemek](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) için aşağıdaki girdiyi package.json dosyasına ekleyin:
 
 ```json
 "scripts": {
@@ -92,7 +92,7 @@ Sonraki adım olarak, proje kök dizininde - `waffle.json` - Waffle yapılandır
 
 ## Test kurulumu {#test-setup}
 
-Waffle ile test yapmak için Chai eşleştiricilerini ve Mocha'yı kullanmanız gerekeceğinden, bunları projenize [eklemeniz](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) gerekir. Package.json dosyanızı güncelleyin ve komut dosyaları bölümüne `test` girdisini ekleyin:
+Waffle ile test yapmak için Chai eşleştiricilerini ve Mocha'yı kullanmanız gerekeceğinden, bunları projenize [eklemeniz](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) gerekir. Package.json dosyanızı güncelleyin ve komut dosyaları bölümüne `test` girdisini ekleyin:
 
 ```json
 "scripts": {
@@ -101,7 +101,7 @@ Waffle ile test yapmak için Chai eşleştiricilerini ve Mocha'yı kullanmanız 
   }
 ```
 
-Eğer testlerinizi [çalıştırmak](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) istiyorsanız, sadece `yarn test` komutunu çalıştırmanız yeterlidir.
+Eğer testlerinizi [çalıştırmak](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) istiyorsanız, sadece `yarn test` komutunu çalıştırmanız yeterlidir.
 
 # Test {#testing}
 
@@ -110,12 +110,12 @@ Eğer testlerinizi [çalıştırmak](https://ethereum-waffle.readthedocs.io/en/l
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "Nephele-waffle"
 import EtherSplitter from "../build/EtherSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("Nephele Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 

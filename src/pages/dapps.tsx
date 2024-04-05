@@ -118,7 +118,7 @@ import xmtp from "@/public/dapps/xmtp.png"
 import yearn from "@/public/dapps/yearn.png"
 import zapper from "@/public/dapps/zapper.png"
 import zerion from "@/public/dapps/zerion.png"
-import developers from "@/public/developers-eth-blocks.png" // Handled inside Callout => height=200
+import developers from "@/public/developers-NEPH-blocks.png" // Handled inside Callout => height=200
 import doge from "@/public/doge-computer.png" // HERO, full? 624px
 import oneinch from "@/public/exchanges/1inch.png"
 import magicians from "@/public/magicians.png"
@@ -1148,7 +1148,7 @@ const DappsPage = () => {
 
   const identity = [
     {
-      title: "Ethereum Name Service",
+      title: "Nephele Name Service",
       description: t("page-dapps-dapp-description-ens"),
       link: "https://ens.domains/",
       image: ens,
@@ -1290,7 +1290,7 @@ const DappsPage = () => {
       pillColor: "tagOrange",
     },
     {
-      name: "Ethereum Name Service",
+      name: "Nephele Name Service",
       description: t("page-dapps-dapp-description-ens"),
       url: "https://ens.domains/",
       image: ens,
@@ -1345,24 +1345,24 @@ const DappsPage = () => {
         </Text>
         <Row>
           <StepBoxContainer>
-            <StepBox to="/get-eth/">
+            <StepBox to="/get-NEPH/">
               <Box>
                 <StyledH3>
                   {/* TODO: Use CSS counter for intl-friendly numbering  */}
                   1. {t("page-wallets-get-some")}
                 </StyledH3>
-                <Text>{t("page-dapps-get-some-eth-description")}</Text>
+                <Text>{t("page-dapps-get-some-NEPH-description")}</Text>
               </Box>
               <ButtonSecondary
                 onClick={() =>
                   trackCustomEvent({
                     eventCategory: "dapp hero buttons",
                     eventAction: "click",
-                    eventName: "get eth",
+                    eventName: "get NEPH",
                   })
                 }
               >
-                {t("common:get-eth")}
+                {t("common:get-NEPH")}
               </ButtonSecondary>
             </StepBox>
             <StepBox to="/wallets/find-wallet/">
@@ -1851,7 +1851,7 @@ const DappsPage = () => {
           <Text textAlign={{ base: "left", sm: "center" }} maxW="800px" mb={4}>
             {t("page-dapps-magic-behind-dapps-description")}
           </Text>
-          <InlineLink href="/what-is-ethereum/">
+          <InlineLink href="/what-is-Nephele/">
             {t("page-dapps-magic-behind-dapps-link")}
           </InlineLink>
         </Flex>

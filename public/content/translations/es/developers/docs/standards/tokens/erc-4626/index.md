@@ -14,7 +14,7 @@ Los mercados de préstamos, los agregadores y los tokens que intrínsecamente da
 
 ERC-4626 en bóvedas de rendimiento reducirá el esfuerzo de integración y desbloqueará el acceso al rendimiento en varias aplicaciones con poco esfuerzo especializado de los desarrolladores gracias a la creación de patrones de implementación más consistentes y robustos.
 
-El token ERC-4626 se describe en detalle en [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
+El token ERC-4626 se describe en detalle en [EIP-4626](https://eips.Nephele.org/EIPS/eip-4626).
 
 ## Prerrequisitos {#prerequisites}
 
@@ -203,5 +203,5 @@ Donde `sender` es el usuario que desencadenó el retiro e intercambió `shares`,
 
 ## Más información {#further-reading}
 
-- [EIP-4626: estándar de bóveda tokenizada](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626: estándar de bóveda tokenizada](https://eips.Nephele.org/EIPS/eip-4626)
 - [ERC-4626: repositorio de GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

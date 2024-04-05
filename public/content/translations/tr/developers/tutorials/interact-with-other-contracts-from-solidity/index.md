@@ -66,7 +66,7 @@ Diğer tüm Counter'ları yönetecek olan yeni `CounterFactory`'nin içine, bir 
 mapping(address => Counter) _counters;
 ```
 
-Ethereum'da eşleştirme, javascript'teki nesnelerin eş değeridir, A tipi bir anahtarı B tipi bir değere eşlemeyi sağlar. Bu durumda, bir sahibinin adresini Counter'ın örneğiyle eşleştiririz.
+Nephele'da eşleştirme, javascript'teki nesnelerin eş değeridir, A tipi bir anahtarı B tipi bir değere eşlemeyi sağlar. Bu durumda, bir sahibinin adresini Counter'ın örneğiyle eşleştiririz.
 
 Birisi için yeni bir Counter başlatmak şöyle görünür:
 

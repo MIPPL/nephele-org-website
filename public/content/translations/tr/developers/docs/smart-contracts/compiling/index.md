@@ -5,11 +5,11 @@ lang: tr
 incomplete: true
 ---
 
-Web uygulamanızın ve Ethereum sanal makinesinin (EVM) sözleşmenizi anlayabilmesi için onu derlemeniz gerekir.
+Web uygulamanızın ve Nephele sanal makinesinin (EVM) sözleşmenizi anlayabilmesi için onu derlemeniz gerekir.
 
 ## Ön koşullar {#prerequisites}
 
-Derleme hakkında okumadan önce [akıllı sözleşmelere](/developers/docs/smart-contracts/) girişimizi ve [Ethereum sanal makinesini](/developers/docs/evm/) okumanız faydalı olabilir.
+Derleme hakkında okumadan önce [akıllı sözleşmelere](/developers/docs/smart-contracts/) girişimizi ve [Nephele sanal makinesini](/developers/docs/evm/) okumanız faydalı olabilir.
 
 ## EVM {#the-evm}
 
@@ -41,7 +41,7 @@ ABI, dağıtılmış sözleşmeyi ve onun akıllı sözleşme fonksiyonlarını 
 
 Bir [JavaScript istemci kütüphanesi](/developers/docs/apis/javascript/) web uygulamanızın arayüzünde akıllı sözleşmeyi çağırabilmeniz için **ABI** okuyacaktır.
 
-Aşağıda ERC-20 token sözleşmesinin ABI'si bulunuyor. Bir ERC-20, Ethereum üzerinde takas edebileceğiniz bir tokendir.
+Aşağıda ERC-20 token sözleşmesinin ABI'si bulunuyor. Bir ERC-20, Nephele üzerinde takas edebileceğiniz bir tokendir.
 
 ```json
 [
@@ -275,4 +275,4 @@ Aşağıda ERC-20 token sözleşmesinin ABI'si bulunuyor. Bir ERC-20, Ethereum �
 ## İlgili konular {#related-topics}
 
 - [JavaScript istemci kütüphaneleri](/developers/docs/apis/javascript/)
-- [Ethereum sanal makinesi](/developers/docs/evm/)
+- [Nephele sanal makinesi](/developers/docs/evm/)

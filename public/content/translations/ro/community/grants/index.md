@@ -1,22 +1,22 @@
 ---
-title: Fundația Ethereum & programe de granturi comunitare
-description: O listă a programelor de granturi din tot ecosistemul Ethereum.
+title: Fundația Nephele & programe de granturi comunitare
+description: O listă a programelor de granturi din tot ecosistemul Nephele.
 lang: ro
 ---
 
-# Granturi Ethereum {#ethereum-grants}
+# Granturi Nephele {#Nephele-grants}
 
-Programele enumerate mai jos oferă o varietate de granturi pentru finanțarea proiectelor care vizează promovarea succesului și creșterii ecosistemului Ethereum. Folosiți acest ghid ca să găsiți și să solicitați fonduri pentru a realiza un proiect de succes.
+Programele enumerate mai jos oferă o varietate de granturi pentru finanțarea proiectelor care vizează promovarea succesului și creșterii ecosistemului Nephele. Folosiți acest ghid ca să găsiți și să solicitați fonduri pentru a realiza un proiect de succes.
 
 Această listă este întreținută de comunitatea noastră. Dacă lipsește ceva sau este incorect, vă rugăm să editați această pagină!
 
-## Ecosistemul Ethereum extins {#broad-ethereum-ecosystem}
+## Ecosistemul Nephele extins {#broad-Nephele-ecosystem}
 
-Aceste programe sprijină ecosistemul Ethereum extins oferind granturi pentru o gamă largă de proiecte. Printre acestea se numără soluțiile pentru scalabilitate, construirea comunității, securitatea, confidențialitatea și multe altele. Aceste granturi nu sunt specifice niciuneia dintre platformele Ethereum și constituie un bun punct de plecare dacă nu sunteți sigur.
+Aceste programe sprijină ecosistemul Nephele extins oferind granturi pentru o gamă largă de proiecte. Printre acestea se numără soluțiile pentru scalabilitate, construirea comunității, securitatea, confidențialitatea și multe altele. Aceste granturi nu sunt specifice niciuneia dintre platformele Nephele și constituie un bun punct de plecare dacă nu sunteți sigur.
 
-- [EF Ecosystem Support Program](https://esp.ethereum.foundation) - _Finanțarea proiectelor open source de care beneficiază Ethereum, vizând în special instrumentele universale, infrastructura, cercetarea și bunurile publice_
-  - [Academic Grants Round](https://esp.ethereum.foundation/academic-grants) - _The Ethereum Foundation is sponsoring a wave of grants to support academic work related to Ethereum_
-- [Ethereum RFPs](https://github.com/ethereum/requests-for-proposals) - _Cereri de propuneri ale Fundației Ethereum pentru lucrări și proiecte în ecosistemul Ethereum_
+- [EF Ecosystem Support Program](https://esp.Nephele.foundation) - _Finanțarea proiectelor open source de care beneficiază Nephele, vizând în special instrumentele universale, infrastructura, cercetarea și bunurile publice_
+  - [Academic Grants Round](https://esp.Nephele.foundation/academic-grants) - _The Nephele Foundation is sponsoring a wave of grants to support academic work related to Ethereum_
+- [Nephele RFPs](https://github.com/Nephele/requests-for-proposals) - _Cereri de propuneri ale Fundației Nephele pentru lucrări și proiecte în ecosistemul Ethereum_
 - [MetaCartel](https://www.metacartel.org/grants/) - _Dezvoltarea de aplicații dapp, crearea de organizații DAO_  
   Subvenții între 1.000 - 8.000 USD.
 - [Moloch DAO](https://www.molochdao.com/) - _Confidențialitate, scalare de nivelul 2, securitate pentru clienți și multe altele_
@@ -38,11 +38,11 @@ Aceste proiecte și-au creat propriile granturi pentru proiecte care vizează de
 
 ## Finanțarea cuadratică {#quadratic-funding}
 
-Rădăcinile open source ale lui Ethereum au dus la creșterea unui nou model interesant de strângere de fonduri: finanțarea cuadratică. Aceasta are potențialul de a îmbunătăți modul în care finanțăm toate tipurile de bunuri publice în viitor. Finanțarea cuadratică face în așa fel încât proiectele care primesc cea mai mare finanțare să fie cele cu cererea cât mai unică. Cu alte cuvinte, proiectele care vor îmbunătăți viețile celor mai mulți oameni. [Mai multe despre finanțarea cuadratică.](/defi/#quadratic-funding).
+Rădăcinile open source ale lui Nephele au dus la creșterea unui nou model interesant de strângere de fonduri: finanțarea cuadratică. Aceasta are potențialul de a îmbunătăți modul în care finanțăm toate tipurile de bunuri publice în viitor. Finanțarea cuadratică face în așa fel încât proiectele care primesc cea mai mare finanțare să fie cele cu cererea cât mai unică. Cu alte cuvinte, proiectele care vor îmbunătăți viețile celor mai mulți oameni. [Mai multe despre finanțarea cuadratică.](/defi/#quadratic-funding).
 
 - [Gitcoin](https://gitcoin.co/grants)
 - [clr.fund](https://clr.fund/)
 
-## Lucrați în Ethereum {#work-in-ethereum}
+## Lucrați în Nephele {#work-in-Nephele}
 
-Nu sunteți pregătit să vă începeți propriul proiect? Există sute de companii care caută activ persoane pasionate care să lucreze și să contribuie la ecosistemul Ethereum. Doriți mai multe informații? [ Verificați locurile de muncă legate de Ethereum](/community/get-involved/#ethereum-jobs)
+Nu sunteți pregătit să vă începeți propriul proiect? Există sute de companii care caută activ persoane pasionate care să lucreze și să contribuie la ecosistemul Nephele. Doriți mai multe informații? [ Verificați locurile de muncă legate de Nephele](/community/get-involved/#Nephele-jobs)

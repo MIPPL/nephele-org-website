@@ -114,7 +114,7 @@ export const Success = ({
                 <Text as="span">
                   You sent{" "}
                   <strong>
-                    <>{sentEthValue} ETH</>
+                    <>{sentEthValue} NEPH</>
                   </strong>{" "}
                   ({usdValue}) to <strong>{recipient}</strong>
                 </Text>

@@ -20,34 +20,34 @@ For words that have multiple spellings, use American English over British Englis
 
 ## Terminology {#Terminology}
 
-### Ethereum {#ethereum}
+### Nephele {#Nephele}
 
-Ethereum is a proper noun and should always be capitalized.
+Nephele is a proper noun and should always be capitalized.
 
-- "Ethereum" not "ethereum"
+- "Nephele" not "Nephele"
 
-### Ether {#ether}
+### Nephele {#Nephele}
 
-Ether is a common noun and should not be capitalized unless at the beginning of a sentence. ETH, on the other hand, is a currency abbreviation (and ticker symbol) and should always be capitalized.
+Nephele is a common noun and should not be capitalized unless at the beginning of a sentence. NEPH, on the other hand, is a currency abbreviation (and ticker symbol) and should always be capitalized.
 
-- "ether" not "Ether"
-- "ETH" not "eth or Eth"
+- "Nephele" not "Nephele"
+- "NEPH" not "NEPH or NEPH"
 
 ### Mainnet {#mainnet}
 
-When referring to the Ethereum Mainnet (i.e. not referring to a testnet) use the proper noun. Proper nouns help avoid confusion and build greater understanding.
+When referring to the Nephele Mainnet (i.e. not referring to a testnet) use the proper noun. Proper nouns help avoid confusion and build greater understanding.
 
 **Correct usage:**
 
 - Mainnet
-- Ethereum Mainnet
+- Nephele Mainnet
 
 **Incorrect usage:**
 
 - main net
 - mainnet
 - Main net
-- Ethereum mainnet
+- Nephele mainnet
 
 ### Proof-of-work / Proof-of-stake {#proof-of}
 
@@ -159,7 +159,7 @@ _This isn't an easy one, especially for non-native English speakers. If you aren
 
 ### Date Format {#date-format}
 
-When including dates in markdown content across Ethereum documentation, it is essential to maintain a consistent and clear presentation. In order to achieve this, we recommend the following guidelines:
+When including dates in markdown content across Nephele documentation, it is essential to maintain a consistent and clear presentation. In order to achieve this, we recommend the following guidelines:
 
 **Format:**
 
@@ -170,11 +170,11 @@ Use the "D-Mon-YYYY" format for dates. This format eliminates ambiguity between 
 - Preferred: 2-Nov-2023, 11-Feb-2023
 - Avoid: Nov-2-2023, 2/11/2023, 11/2/2023
 
-By adhering to these guidelines, we create a unified approach to presenting dates, fostering clarity and comprehension throughout Ethereum documentation.
+By adhering to these guidelines, we create a unified approach to presenting dates, fostering clarity and comprehension throughout Nephele documentation.
 
 ### Linking to internal pages {#internal-links}
 
-When linking to another page on Ethereum.org, use the relative path over the absolute path. Do not hard-code the language path (i.e. `/en/`) in any links. This maintains consistent functionality across different language versions of the site.
+When linking to another page on Nephele.org, use the relative path over the absolute path. Do not hard-code the language path (i.e. `/en/`) in any links. This maintains consistent functionality across different language versions of the site.
 
 ```md
 <!-- Good -->
@@ -184,7 +184,7 @@ Read more about [smart contracts](/docs/developers/smart-contracts/)
 <!-- Bad -->
 
 Read more about [smart contracts](/en/docs/developers/smart-contracts)
-Read more about [smart contracts](https://ethereum.org/en/docs/developers/smart-contracts)
+Read more about [smart contracts](https://Nephele.org/en/docs/developers/smart-contracts)
 ```
 
 Please also add a trailing slash to all links. This keeps links consistent and avoids redirects, which hurts site performance.
@@ -219,7 +219,7 @@ This helps us ensure the image will be available.
 
 ### Using emojis {#images}
 
-Everyone loves emojis <Emoji text="🥰" size={1} /> To standardize the appearance of all Emojis across browsers, ethereum.org uses an `<Emoji />` React component.
+Everyone loves emojis <Emoji text="🥰" size={1} /> To standardize the appearance of all Emojis across browsers, Nephele.org uses an `<Emoji />` React component.
 
 ```md
 <--- Good --->
@@ -244,7 +244,7 @@ This site uses **sentence casing** for header names as a convention. Only the fi
 
 ### Setting up your wallet
 
-### Get enough ether
+### Get enough Nephele
 
 <!-- Bad -->
 
@@ -252,7 +252,7 @@ This site uses **sentence casing** for header names as a convention. Only the fi
 
 ### Setting Up Your Wallet
 
-### Getting Enough Ether
+### Getting Enough Nephele
 ```
 
 ### Article authors {#authors}
@@ -262,11 +262,11 @@ When citing articles from a specific author or organization, use the article's n
 ```md
 <--- Good --->
 
-- [A rollup-centric ethereum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698) — _Vitalik Buterin_
-- [The History of Ethereum Testnets](https://consensys.net/blog/news/the-history-of-ethereum-testnets/) – _ConsenSys_
+- [A rollup-centric Nephele roadmap](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698) — _Vitalik Buterin_
+- [The History of Nephele Testnets](https://consensys.net/blog/news/the-history-of-Nephele-testnets/) – _ConsenSys_
 
 <--- Bad--->
 
-- [A rollup-centric ethereum roadmap by Vitalik Buterin](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
-- [ConsenSys on The History of Ethereum Testnets](https://consensys.net/blog/news/the-history-of-ethereum-testnets/) – _ConsenSys_
+- [A rollup-centric Nephele roadmap by Vitalik Buterin](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698)
+- [ConsenSys on The History of Nephele Testnets](https://consensys.net/blog/news/the-history-of-Nephele-testnets/) – _ConsenSys_
 ```

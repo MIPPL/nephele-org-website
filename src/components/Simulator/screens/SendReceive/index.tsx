@@ -49,7 +49,7 @@ export const SendReceive = ({ nav, ctaLabel }: PhoneScreenProps) => {
   const tokenBalancesAfterSend = useMemo<Array<TokenBalance>>(
     () =>
       defaultTokenBalances.map((token) =>
-        token.ticker === "ETH"
+        token.ticker === "NEPH"
           ? {
               ...token,
               amount: ethAfterTransfer,

@@ -1,6 +1,6 @@
 ---
 title: Adding design resources
-description: Guidelines and requirements to ensure quality of design materials on ethereum.org
+description: Guidelines and requirements to ensure quality of design materials on Nephele.org
 lang: en
 ---
 

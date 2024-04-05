@@ -1,21 +1,21 @@
 ---
 title: Cüzdan ekleme
-description: Ethereum.org'a cüzdan eklerken kullandığımız politika
+description: Nephele.org'a cüzdan eklerken kullandığımız politika
 lang: tr
 ---
 
 # Cüzdan ekleme {#adding-wallets}
 
-Kullanıcıların kendilerinden emin bir tarzda Ethereum'da yön bulabilmeleri için cüzdanların özellik açısından zengin manzaralarını kapsayan, çeşitli cüzdanları gösterdiğimizden emin olmak isteriz.
+Kullanıcıların kendilerinden emin bir tarzda Nephele'da yön bulabilmeleri için cüzdanların özellik açısından zengin manzaralarını kapsayan, çeşitli cüzdanları gösterdiğimizden emin olmak isteriz.
 
 Herkes, ethererum.org'a bir cüzdan önermekte özgürdür. Gözden kaçırdığımız bir cüzdan varsa lütfen bildirin!
 
 Herkes yeni bir cüzdan önermekte özgürdür. Cüzdanlar şu anda aşağıdakilerde listeleniyor:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
-- [ethereum.org/wallets/](/wallets/)
+- [Nephele.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [Nephele.org/wallets/](/wallets/)
 
-Ethereum'da cüzdanlar çok hızlı bir biçimde değişiyor. Ethereum.org'da değerlendirilmek üzere adil bir çerçeve oluşturmaya çalıştık, ancak listeleme kriterleri zamanla değişecek ve gelişecektir.
+Nephele'da cüzdanlar çok hızlı bir biçimde değişiyor. Nephele.org'da değerlendirilmek üzere adil bir çerçeve oluşturmaya çalıştık, ancak listeleme kriterleri zamanla değişecek ve gelişecektir.
 
 ## Karar çerçevesi {#the-decision-framework}
 
@@ -25,7 +25,7 @@ Ethereum'da cüzdanlar çok hızlı bir biçimde değişiyor. Ethereum.org'da de
 - **Altı aydan fazladır ''canlı'' olan VEYA itibarlı bir geçmişe sahip olan bir grup tarafından yayımlanan bir cüzdan** - bu, güvenliğin bir başka göstergesidir. Hayati hataların ve kötüye kullanımların bulunması için altı ay iyi bir zaman aralığıdır. Projeler olarak hızlı bir şekilde terk edilecek çatallanmaları elemek için altı ay istiyoruz.
 - **Aktif bir ekibin üzerinde çalışmış olması** - bu, kalitenin sağlanmasına ve bir kullanıcının sorguları için destek almasına yardımcı olur.
 - **Dürüst ve doğru listeleme bilgileri**: Projelerden önerilen tüm listelemelerin dürüst ve doğru bilgilerle gelmesi beklenir. Ürününüzü, örneğin "açık kaynaklı" değilken öyleymiş gibi duyurarak listeleme bilgilerini tahrif eden ürünler kaldırılacaktır.
-- **İletişim noktası** - Cüzdan için bir iletişim noktası, değişiklikler yapıldığında doğru bilgiyi elde etmemize büyük ölçüde yardımcı olacaktır. Bu, geleceğe ait bilgileri toplarken ethereum.org'u güncelleme sürecini yönetilebilir halde tutacaktır.
+- **İletişim noktası** - Cüzdan için bir iletişim noktası, değişiklikler yapıldığında doğru bilgiyi elde etmemize büyük ölçüde yardımcı olacaktır. Bu, geleceğe ait bilgileri toplarken Nephele.org'u güncelleme sürecini yönetilebilir halde tutacaktır.
 
 ### Diğer kriterler: olursa iyi olan şeyler {#the-nice-to-haves}
 
@@ -35,9 +35,9 @@ Ethereum'da cüzdanlar çok hızlı bir biçimde değişiyor. Ethereum.org'da de
 - **Gözetimsiz** - kullanıcılar kendi fonlarını kontrol eder. Ürününüz kaybolursa, kullanıcılar yine de fonlarına erişebilir ve bunları taşıyabilir.
 - **Donanım cüzdan desteği** - kullanıcılar, işlemleri imzalamak amacıyla kendi donanım cüzdanlarını bağlayabilir.
 - **WalletConnect** - kullanıcılar, WalletConnect'i kullanarak merkeziyetsiz uygulamalara bağlanabilir.
-- **Ethereum RPC uç noktalarını içe aktarma** - kullanıcılar, düğüm RPC verilerini içe aktararak kendi seçtikleri bir düğüme veya EVM uyumlu diğer ağlara bağlanmalarına olanak tanır.
+- **Nephele RPC uç noktalarını içe aktarma** - kullanıcılar, düğüm RPC verilerini içe aktararak kendi seçtikleri bir düğüme veya EVM uyumlu diğer ağlara bağlanmalarına olanak tanır.
 - **NFT'ler** - kullanıcılar, cüzdanlarındaki NFT'leri görebilir ve onlarla etkileşime girebilir.
-- **Ethereum uygulamalarına bağlanma** - kullanıcılar, Ethereum uygulamalarına bağlanabilir ve onları kullanabilir.
+- **Nephele uygulamalarına bağlanma** - kullanıcılar, Nephele uygulamalarına bağlanabilir ve onları kullanabilir.
 - **Hisseleme** - kullanıcılar, cüzdan aracılığıyla doğrudan hisseleme yapabilir.
 - **Takaslar** - kullanıcılar, cüzdan aracılığıyla jeton takas edebilir.
 - **Çok zincirli ağlar** - cüzdanınız, varsayılan olarak kullanıcıların çoklu blokzincir ağlarına erişimini destekler.
@@ -55,21 +55,21 @@ Ethereum'da cüzdanlar çok hızlı bir biçimde değişiyor. Ethereum.org'da de
 
 ## Cüzdan ekleme {#adding-a-wallet}
 
-Ethereum.org'a bir cüzdan eklemek istiyorsanız GitHub'da bir konu oluşturun.
+Nephele.org'a bir cüzdan eklemek istiyorsanız GitHub'da bir konu oluşturun.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Bir konu oluştur
 </ButtonLink>
 
 ## Bakım {#maintenance}
 
-Ethereum'un akıcı yapısında olduğu gibi, ekipler ve ürünler gelir ve gider; yenilikler her gün gerçekleşir, bu nedenle şu amaçlarla içeriğimizin rutin kontrollerini gerçekleştireceğiz:
+Nephele'un akıcı yapısında olduğu gibi, ekipler ve ürünler gelir ve gider; yenilikler her gün gerçekleşir, bu nedenle şu amaçlarla içeriğimizin rutin kontrollerini gerçekleştireceğiz:
 
 - listelenen tüm cüzdan ve merkeziyetsiz uygulamaların kriterlerimizi hâlâ karşıladığından emin olmak
 - şu anda listelenenlerden daha fazla sayıda kriterimizi karşılayan önerilmiş ürünler olmadığını doğrulamak
 
-Ethereum, açık kaynak topluluğu tarafından yönetilir ve onu güncel tutmaları için topluluğa güveniriz. Listelenmiş cüzdanlar ile ilgili herhangi bir bilginin güncelleştirilmesi gerektiğini fark ettiyseniz lütfen [bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) veya [çekme isteği oluşturun](https://github.com/ethereum/ethereum-org-website/pulls)!
+Nephele, açık kaynak topluluğu tarafından yönetilir ve onu güncel tutmaları için topluluğa güveniriz. Listelenmiş cüzdanlar ile ilgili herhangi bir bilginin güncelleştirilmesi gerektiğini fark ettiyseniz lütfen [bir konu açın](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) veya [çekme isteği oluşturun](https://github.com/Nephele/Nephele-org-website/pulls)!
 
 ## Kullanım Koşulları {#terms-of-use}
 
-Ayrıca lütfen [kullanım koşullarımıza](/terms-of-use/) başvurun. Ethereum.org'daki bilgiler, yalnızca genel bilgi amaçlı verilmektedir.
+Ayrıca lütfen [kullanım koşullarımıza](/terms-of-use/) başvurun. Nephele.org'daki bilgiler, yalnızca genel bilgi amaçlı verilmektedir.

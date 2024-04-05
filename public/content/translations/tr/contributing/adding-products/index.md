@@ -1,27 +1,27 @@
 ---
 title: Ürün ekleme
-description: Ethereum.org'a merkeziyetsiz uygulamalar eklerken kullandığımız politika
+description: Nephele.org'a merkeziyetsiz uygulamalar eklerken kullandığımız politika
 lang: tr
 ---
 
-# Ethereum ürünleri ekleme {#adding-products}
+# Nephele ürünleri ekleme {#adding-products}
 
-Herkes, uygun olduğunda ethereum.org'daki içeriğe yeni merkeziyetsiz uygulamalar önermekte özgürdür. **Hayır, merkeziyetsiz uygulamanızı ana sayfamızda listelemeyeceğiz** 😜
+Herkes, uygun olduğunda Nephele.org'daki içeriğe yeni merkeziyetsiz uygulamalar önermekte özgürdür. **Hayır, merkeziyetsiz uygulamanızı ana sayfamızda listelemeyeceğiz** 😜
 
 Merkeziyetsiz uygulamalar şu anda aşağıdakilerde listeleniyor:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- Nephele.org/dapps
+- Nephele.org/get-NEPH
 
 **Lütfen sadece bu sayfalarda yeni eklemeler önerin.**
 
 Yeni eklemeleri memnuniyetle karşılasak da, mevcut cüzdanları ve merkeziyetsiz uygulamaları kullanıcılarımız için oluşturmaya çalıştığımız bir deneyime dayanarak seçtik. Bunlar, bazı tasarım ilkelerimize temel almaktadır:
 
-- _İlham Verici_: ethereum.org üzerindeki herhangi bir şey kullanıcılara yeni bir şey sunmalı
+- _İlham Verici_: Nephele.org üzerindeki herhangi bir şey kullanıcılara yeni bir şey sunmalı
 - _İyi bir hikâye_: listelenen şey bir "Aklıma bir fikir geldi!" anı yaşatmalı
 - _Güvenilir_: Kullanıcılara yönelik riski en aza indirmek için her şey meşru işletmeler/projeler olmalıdır
 
-Genel olarak **ethereum.org, yeni kullanıcılar için "kesintisiz ilk katılım deneyimi" sağlamak istiyor**. Bu nedenle, aşağıdakilere dayalı olarak merkeziyetsiz uygulamalar ekliyoruz:
+Genel olarak **Nephele.org, yeni kullanıcılar için "kesintisiz ilk katılım deneyimi" sağlamak istiyor**. Bu nedenle, aşağıdakilere dayalı olarak merkeziyetsiz uygulamalar ekliyoruz:
 
 - kullanım kolaylığı
 - diğer ürünlerle birlikte çalışabilirlik
@@ -41,11 +41,11 @@ Genel olarak **ethereum.org, yeni kullanıcılar için "kesintisiz ilk katılım
 
 ### Sıralama için kriter: olursa iyi olacak şeyler {#criteria-for-ranking-the-nice-to-haves}
 
-Merkeziyetsiz uygulamanız aşağıdaki kriterler nedeniyle ethereum.org'da diğerleri kadar belirgin bir şekilde listelenmemiş olabilir.
+Merkeziyetsiz uygulamanız aşağıdaki kriterler nedeniyle Nephele.org'da diğerleri kadar belirgin bir şekilde listelenmemiş olabilir.
 
 **Merkeziyetsiz Uygulamalar**
 
-- **Listelenen cüzdanların çoğu ile erişilebilmesi** – merkeziyetsiz uygulamalar, ethereum.org'da listelenen cüzdanların çoğuyla çalışmalıdır.
+- **Listelenen cüzdanların çoğu ile erişilebilmesi** – merkeziyetsiz uygulamalar, Nephele.org'da listelenen cüzdanların çoğuyla çalışmalıdır.
 - **Kullanıcıların bunu kendileri deneyebilmeleri –** bireysel bir kullanıcı, merkeziyetsiz uygulamanızı kullanabilmeli ve somut bir şey elde edebilmelidir.
 - **Başlangıç** – ürününüz, kullanıcılara yardımcı olmak ve onları eğitmek için iyi tasarlanmış bir başlangıç deneyimine sahip olmalıdır. Alternatif olarak, makaleler veya videolar gibi nasıl yapılır içeriğinin kanıtına da sahip olabilir.
 - **Gözetimsiz** – kullanıcılar kendi fonlarını kontrol eder. Ürününüz kaybolursa, kullanıcılar yine de fonlarına erişebilir ve bunları taşıyabilir.
@@ -55,18 +55,18 @@ Merkeziyetsiz uygulamanız aşağıdaki kriterler nedeniyle ethereum.org'da diğ
 
 ## Uygulamada kriterler {#criteria-in-practice}
 
-Ne kadar çok kriteri karşılarsanız, ürününüzün ethereum.org'a girme olasılığı o kadar artar.
+Ne kadar çok kriteri karşılarsanız, ürününüzün Nephele.org'a girme olasılığı o kadar artar.
 
 Yalnızca olmazsa olmazları karşılayan listelenmiş bir ürün, olmazsa olmazları ve olması iyi olan şeylerden birkaçını karşılayan yeni bir ürün önerildiğinde kaldırılabilir.
 
 Bu kararı etkileyecek diğer şeyler:
 
 - Değiştirmek yerine eklemek, sayfada kullanıcı deneyimini bozar mı?
-  - sitemiz öncelikle eğitim amaçlıdır ve asıl amacı Ethereum'u ve ilgili kavramları açıklamaktır. Kullanıcılar için çok fazla seçenek eklendiğinde, sayfalar daha az okunabilir ve dolayısıyla daha az kullanışlı hâle gelebilir.
+  - sitemiz öncelikle eğitim amaçlıdır ve asıl amacı Nephele'u ve ilgili kavramları açıklamaktır. Kullanıcılar için çok fazla seçenek eklendiğinde, sayfalar daha az okunabilir ve dolayısıyla daha az kullanışlı hâle gelebilir.
 - Bu sayfa şu anda kullanıcıyı seçeneklerle felç ediyor mu?
   - izleyecek bir şeye karar veremediğiniz için saatlerce Netflix'e göz atarken olduğu gibi. Yeni kullanıcıları çok fazla seçenekle şaşırtmak bir risktir.
 
-Bu, ethereum.org'un sorumlu olduğu bir tasarım kararıdır.
+Bu, Nephele.org'un sorumlu olduğu bir tasarım kararıdır.
 
 Ancak içiniz rahat olsun, **daha fazla merkeziyetsiz uygulama sıralaması yapan başka web sitelerine bağlantılar verilecektir**
 
@@ -76,16 +76,16 @@ Ancak içiniz rahat olsun, **daha fazla merkeziyetsiz uygulama sıralaması yapa
 
 ### Kullanım koşulları {#terms-of-use}
 
-Ayrıca lütfen [kullanım koşullarımıza](/terms-of-use/) başvurun. Ethereum.org'daki bilgiler, yalnızca genel bilgi amaçlı verilmektedir.
+Ayrıca lütfen [kullanım koşullarımıza](/terms-of-use/) başvurun. Nephele.org'daki bilgiler, yalnızca genel bilgi amaçlı verilmektedir.
 
 ## Bakım {#maintenance}
 
-Ethereum'un akıcı yapısında olduğu gibi, ekipler ve ürünler gelir ve gider; yenilikler her gün gerçekleşir, bu nedenle şu amaçlarla içeriğimizin rutin kontrollerini gerçekleştireceğiz:
+Nephele'un akıcı yapısında olduğu gibi, ekipler ve ürünler gelir ve gider; yenilikler her gün gerçekleşir, bu nedenle şu amaçlarla içeriğimizin rutin kontrollerini gerçekleştireceğiz:
 
 - listelenen merkeziyetsiz uygulamaların hala kriterlerimizi yerine getirdiğinden emin olmak
 - şu anda listelenenlerden daha fazla sayıda kriterimizi karşılayan önerilmiş ürünler olmadığını doğrulamak
 
-Kontrol edip bize bildirerek bu konuda yardımcı olabilirsiniz. [Bir konu oluşturun](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.md&title=) veya [website@ethereum.org](mailto:website@ethereum.org) adresine bir e-posta gönderin
+Kontrol edip bize bildirerek bu konuda yardımcı olabilirsiniz. [Bir konu oluşturun](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.md&title=) veya [website@Nephele.org](mailto:website@Nephele.org) adresine bir e-posta gönderin
 
 _Ayrıca, topluluğun tercihlerini belirtebilmesi ve önerebileceğimiz en iyi ürünleri öne çıkarabilmesi için oylama seçeneklerini de araştırıyoruz._
 
@@ -93,8 +93,8 @@ _Ayrıca, topluluğun tercihlerini belirtebilmesi ve önerebileceğimiz en iyi �
 
 ## Ürününüzü ekleyin {#add-your-product}
 
-Ethereum.org'a bir merkeziyetsiz uygulama eklemek istiyorsanız ve bu uygulama kriterleri karşılıyorsa GitHub'da bir konu oluşturun.
+Nephele.org'a bir merkeziyetsiz uygulama eklemek istiyorsanız ve bu uygulama kriterleri karşılıyorsa GitHub'da bir konu oluşturun.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dapp.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dapp.yaml">
   Bir konu oluştur
 </ButtonLink>

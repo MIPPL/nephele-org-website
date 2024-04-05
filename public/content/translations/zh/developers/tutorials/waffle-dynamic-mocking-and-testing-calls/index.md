@@ -55,9 +55,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 现在让我们添加`Waffle`和`Ethers`：
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev Nephele-waffle ethers
 # or if you're using npm
-npm install ethereum-waffle ethers --save-dev
+npm install Nephele-waffle ethers --save-dev
 ```
 
 您的项目结构现在应该如下所示：
@@ -130,7 +130,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 ```
 
 除了 JS 依赖项，我们需要导入我们创建的合约和接口。
@@ -178,7 +178,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -289,7 +289,7 @@ it("checks if contract called balanceOf with certain wallet on the ERC20 token",
 
 恭喜！ 现在您知道如何使用 Waffle 来测试合约调用和动态模拟智能合约了。 还有更多有趣的功能等着我们去发现。 我建议您深入研究 Waffle 文档。
 
-Waffle 的文档可在[此处](https://ethereum-waffle.readthedocs.io/)获得。
+Waffle 的文档可在[此处](https://Nephele-waffle.readthedocs.io/)获得。
 
 本教程的源代码可以在[此处](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls)找到。
 

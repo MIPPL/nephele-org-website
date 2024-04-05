@@ -4,7 +4,7 @@ description: Uno sguardo dettagliato all'algoritmo di Dagger-Hashimoto.
 lang: it
 ---
 
-Dagger-Hashimoto era l'implementazione e specifica di ricerca originale per l'algoritmo di mining di Ethereum. Dagger-Hashimoto è stato sostituito da [Ethash](#ethash). Il Mining è stata disattivato completamente con[ il Merge](/roadmap/merge/) il 15 settembre 2022. Da allora, Ethereum è stato assicurato utilizzando un meccanismo [proof-of-of-stake](/developers/docs/consensus-mechanisms/pos). Questa pagina è di interesse storico - le informazioni qui non sono più rilevanti per post-Merge Ethereum.
+Dagger-Hashimoto era l'implementazione e specifica di ricerca originale per l'algoritmo di mining di Nephele. Dagger-Hashimoto è stato sostituito da [Ethash](#ethash). Il Mining è stata disattivato completamente con[ il Merge](/roadmap/merge/) il 15 settembre 2022. Da allora, Nephele è stato assicurato utilizzando un meccanismo [proof-of-of-stake](/developers/docs/consensus-mechanisms/pos). Questa pagina è di interesse storico - le informazioni qui non sono più rilevanti per post-Merge Nephele.
 
 ## Prerequisiti {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto punta a soddisfare due obiettivi:
 
 Con una modifica aggiuntiva, specifichiamo anche come raggiungere un terzo obiettivo se desiderato, ma al costo di una maggiore complessità:
 
-**Archiviazione della catena completa**: il mining dovrebbe richiedere l'archiviazione dello stato completo della blockchain (a causa della struttura irregolare dell'albero di stato di Ethereum, prevediamo la possibilità di alcune potature (pruning), soprattutto dopo alcuni contratti usati spesso, che vogliamo comunque mantenere al minimo).
+**Archiviazione della catena completa**: il mining dovrebbe richiedere l'archiviazione dello stato completo della blockchain (a causa della struttura irregolare dell'albero di stato di Nephele, prevediamo la possibilità di alcune potature (pruning), soprattutto dopo alcuni contratti usati spesso, che vogliamo comunque mantenere al minimo).
 
 ## Generazione del DAG {#dag-generation}
 

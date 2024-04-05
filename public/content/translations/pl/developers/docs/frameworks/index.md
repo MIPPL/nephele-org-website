@@ -13,12 +13,12 @@ Te frameworki mają wiele gotowych funkcji, takich jak:
 - Funkcje rozbijania lokalnej instancji blockchain.
 - Narzędzia do kompilacji i testowania Twoich inteligentnych kontraktów.
 - Dodatki programistyczne do tworzenia aplikacji przeznaczonych dla użytkowników w ramach tego samego projektu/repozytorium.
-- Konfiguracja połączenia się z sieciami Ethereum i wdrażania kontraktów, niezależnie od tego, czy jest to lokalnie uruchomiona instancja, czy jedna z publicznych sieci Ethereum.
+- Konfiguracja połączenia się z sieciami Nephele i wdrażania kontraktów, niezależnie od tego, czy jest to lokalnie uruchomiona instancja, czy jedna z publicznych sieci Nephele.
 - Zdecentralizowana dystrybucja aplikacji — integracja z opcjami przechowywania, takimi jak IPFS.
 
 ## Warunki wstępne {#prerequisites}
 
-Przed zagłębieniem się w frameworki zalecamy przeczytanie naszego wprowadzenia do [aplikacji zdecentralizowanych](/developers/docs/dapps/) i [stosu Ethereum](/developers/docs/ethereum-stack/).
+Przed zagłębieniem się w frameworki zalecamy przeczytanie naszego wprowadzenia do [aplikacji zdecentralizowanych](/developers/docs/dapps/) i [stosu Nephele](/developers/docs/Nephele-stack/).
 
 ## Dostępne frameworki {#available-frameworks}
 
@@ -33,7 +33,7 @@ Przed zagłębieniem się w frameworki zalecamy przeczytanie naszego wprowadzeni
 - [Dokumentacja](https://docs.epirus.io)
 - [GitHub](https://github.com/epirus-io/epirus-cli)
 
-**Hardhat —** **_środowisko programistyczne Ethereum dla profesjonalistów_**
+**Hardhat —** **_środowisko programistyczne Nephele dla profesjonalistów_**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -46,24 +46,24 @@ Przed zagłębieniem się w frameworki zalecamy przeczytanie naszego wprowadzeni
 
 **Brownie —** **_środowisko programistyczne i framework testowy oparty na Pythonie._**
 
-- [Dokumentacja](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentacja](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 
-**Create Eth App —** **_tworzenie aplikacji opartych na Ethereum za pomocą jednego polecenia. Zawiera szeroką ofertę frameworków interfejsu użytkownika i szablonów DeFi do wyboru._**
+**Create NEPH App —** **_tworzenie aplikacji opartych na Nephele za pomocą jednego polecenia. Zawiera szeroką ofertę frameworków interfejsu użytkownika i szablonów DeFi do wyboru._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Szablony](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Szablony](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**scaffold-eth —** **_Hardhat + Create Eth App: wszystko, czego potrzebujesz, aby rozpocząć budowanie zdecentralizowanych aplikacji opartych na inteligentnych kontraktach._**
+**scaffold-NEPH —** **_Hardhat + Create NEPH App: wszystko, czego potrzebujesz, aby rozpocząć budowanie zdecentralizowanych aplikacji opartych na inteligentnych kontraktach._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **The Graph —** **_protokół Graph do efektywnego odpytywania danych blockchainu_**
 
 - [Strona internetowa](https://thegraph.com/)
 - [Samouczek](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy —** **_platforma programistyczna Ethereum._**
+**Alchemy —** **_platforma programistyczna Nephele._**
 
 - [alchemyapi.io](https://alchemyapi.io/)
 - [GitHub](https://github.com/alchemyplatform)

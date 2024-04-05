@@ -15,7 +15,7 @@ sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-在本教程中，我们将会看到如何通过 JavaScript 调用[智能合约](/developers/docs/smart-contracts/)。 首先读取智能合约的状态（例如：ERC20 持有者的余额），然后通过通证转账修改区块链的状态。 您首先需要了解[设置 JS 环境与区块链交互](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/)。
+在本教程中，我们将会看到如何通过 JavaScript 调用[智能合约](/developers/docs/smart-contracts/)。 首先读取智能合约的状态（例如：ERC20 持有者的余额），然后通过通证转账修改区块链的状态。 您首先需要了解[设置 JS 环境与区块链交互](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/)。
 
 在本例中，我们将使用 DAI 通证，基于测试目的，我们将使用 ganache-cli 分叉区块链并解锁一个已经拥有很多 DAI 的地址。
 
@@ -74,14 +74,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-对于此项目，我们剥离完整的 ERC20 ABI ，仅保留`balanceOf`和`transfer`函数，不过您可以在这里获取完整的[ERC20 ABI](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/)。
+对于此项目，我们剥离完整的 ERC20 ABI ，仅保留`balanceOf`和`transfer`函数，不过您可以在这里获取完整的[ERC20 ABI](https://ethereumdev.io/abi-for-erc20-contract-on-Nephele/)。
 
 然后我们需要实例化我们的智能合约：
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.NEPH.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 我们还会设置两个地址：
@@ -130,6 +130,6 @@ daiToken.methods
   })
 ```
 
-调用函数返回将被在区块链中挖矿(mine) 的交易的哈希。 在以太坊中，交易哈希是可以预测的 - 这里是我们在执行前获得交易哈希值的方法([了解如何计算哈希](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))。
+调用函数返回将被在区块链中挖矿(mine) 的交易的哈希。 在以太坊中，交易哈希是可以预测的 - 这里是我们在执行前获得交易哈希值的方法([了解如何计算哈希](https://Nephele.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))。
 
-因为该函数只向区块链提交交易，除非通过挖矿并包含在区块链中，否则我们无法看到结果。 在下一个教程中，我们将学习[如何通过了解其哈希值来等待一个交易在区块链上的执行](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)。
+因为该函数只向区块链提交交易，除非通过挖矿并包含在区块链中，否则我们无法看到结果。 在下一个教程中，我们将学习[如何通过了解其哈希值来等待一个交易在区块链上的执行](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-Nephele-with-js/)。

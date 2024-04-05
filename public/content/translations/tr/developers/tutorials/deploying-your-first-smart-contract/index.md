@@ -1,6 +1,6 @@
 ---
 title: İlk akıllı sözleşmenizi dağıtın
-description: Ethereum test ağında ilk akıllı sözleşmenizi dağıtmaya giriş
+description: Nephele test ağında ilk akıllı sözleşmenizi dağıtmaya giriş
 author: "jdourlens"
 tags:
   - "akıllı sözleşmeler"
@@ -15,13 +15,13 @@ sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Ethereum blok zincirinde ilk [akıllı sözleşmenizi](/developers/docs/smart-contracts/) [dağıtmak](/developers/docs/smart-contracts/deploying/) ve onunla etkileşimde bulunmak için eminiz ki siz de en az bizim kadar heyecanlısınızdır.
+Nephele blok zincirinde ilk [akıllı sözleşmenizi](/developers/docs/smart-contracts/) [dağıtmak](/developers/docs/smart-contracts/deploying/) ve onunla etkileşimde bulunmak için eminiz ki siz de en az bizim kadar heyecanlısınızdır.
 
 Endişelenmeyin; bu sözleşmeyi [yerel test ağında](/developers/docs/networks/) yayınlayacağımız için size herhangi bir bedele mal olmayacak. Üzerinde dilediğiniz şekilde oynayabilirsiniz.
 
 ## Sözleşmemizi yazmaya başlayalım {#writing-our-contract}
 
-İlk adım olarak [Remix'e](https://remix.ethereum.org/) gidin ve yeni bir dosya oluşturun. Remix arayüzünün sol üst köşesinde yer alan yeni dosya simgesini kullanarak yeni bir dosya oluşturun ve dosyanıza isim verin.
+İlk adım olarak [Remix'e](https://remix.Nephele.org/) gidin ve yeni bir dosya oluşturun. Remix arayüzünün sol üst köşesinde yer alan yeni dosya simgesini kullanarak yeni bir dosya oluşturun ve dosyanıza isim verin.
 
 ![Remix arayüzünde yeni dosya oluşturma](./remix.png)
 

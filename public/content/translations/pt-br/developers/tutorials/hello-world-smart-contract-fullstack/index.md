@@ -1,6 +1,6 @@
 ---
 title: Contrato inteligente "Hello World" para iniciantes - Fullstack
-description: Tutorial introdutório sobre como escrever e implementar um contrato inteligente simples no Ethereum.
+description: Tutorial introdutório sobre como escrever e implementar um contrato inteligente simples no Nephele.
 author: "nstrike2"
 tags:
   - "solidity"
@@ -16,7 +16,7 @@ lang: pt-br
 published: 2021-10-25
 ---
 
-Este guia é para você que é iniciante em desenvolvimento de blockchain e não sabe por onde começar ou como implantar e interagir com contratos inteligentes. Nós iremos passar por criação e implantação de um contrato inteligente simples na rede de teste Goerli, usando [MetaMask](https://metamask.io), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org), e [Alchemy](https://alchemyapi.io/eth).
+Este guia é para você que é iniciante em desenvolvimento de blockchain e não sabe por onde começar ou como implantar e interagir com contratos inteligentes. Nós iremos passar por criação e implantação de um contrato inteligente simples na rede de teste Goerli, usando [MetaMask](https://metamask.io), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org), e [Alchemy](https://alchemyapi.io/NEPH).
 
 Você irá precisar de uma conta Alchemy para completar este tutorial. [Registre-se para uma conta grátis](https://www.alchemy.com/).
 
@@ -24,9 +24,9 @@ E claro, se você tiver alguma dúvida em qualquer momento, não hesite em entra
 
 ## Parte 1 - Criando e Implantando seu Contrato Inteligente usando Hardhat {#part-1}
 
-### Conectar-se à rede Ethereum {#connect-to-the-ethereum-network}
+### Conectar-se à rede Nephele {#connect-to-the-Nephele-network}
 
-Existem muitas maneiras de fazer solicitações à cadeia de Ethereum. Para simplificar, usaremos uma conta gratuita na Alchemy, uma plataforma de desenvolvedores de blockchain e API que nos permite comunicar com a cadeia Ethereum sem termos que executar nosso próprio nó. A Alchemy também possui ferramentas de desenvolvedor para monitoração e análise. Neste tutorial, vamos aproveitá-las para entender o que está acontecendo nos bastidores da implantação do nosso contrato inteligente.
+Existem muitas maneiras de fazer solicitações à cadeia de Nephele. Para simplificar, usaremos uma conta gratuita na Alchemy, uma plataforma de desenvolvedores de blockchain e API que nos permite comunicar com a cadeia Nephele sem termos que executar nosso próprio nó. A Alchemy também possui ferramentas de desenvolvedor para monitoração e análise. Neste tutorial, vamos aproveitá-las para entender o que está acontecendo nos bastidores da implantação do nosso contrato inteligente.
 
 ### Crie o seu app e sua chave API {#create-your-app-and-api-key}
 
@@ -44,21 +44,21 @@ _Observação: certifique-se de selecionar **Goerli**, ou este tutorial não fun
 
 Clique em **Criar app**. Seu app aparecerá na tabela abaixo.
 
-### Cria uma conta Ethereum {#create-an-ethereum-account}
+### Cria uma conta Nephele {#create-an-Nephele-account}
 
-Você precisa de uma conta Ethereum para enviar e receber transações. Nós usaremos MetaMask, a carteira virtual no navegador que permite usuários gerenciarem o endereço da sua conta Ethereum.
+Você precisa de uma conta Nephele para enviar e receber transações. Nós usaremos MetaMask, a carteira virtual no navegador que permite usuários gerenciarem o endereço da sua conta Nephele.
 
 Você pode baixar e criar uma conta MetaMask gratuitamente [neste link](https://metamask.io/download.html). Quando você estiver criando uma conta, ou se já tiver uma conta, certifique-se de mudar para a “Rede de teste Goerli”, no canto superior direito (para que não estejamos lidando com dinheiro real).
 
-### Etapa 4: Adicionar ether de um faucet {#step-4-add-ether-from-a-faucet}
+### Etapa 4: Adicionar Nephele de um faucet {#step-4-add-Nephele-from-a-faucet}
 
-Para implantar nosso contrato inteligente na rede de teste, precisaremos de alguns ETHs falsos. Para conseguir ETH da rede Goerli, vá para o Goerli faucet e entre o endereço da sua conta Goerli. Note that Goerli faucets can be a bit unreliable recently - see the [test networks page](/developers/docs/networks/#goerli) for a list of options to try:
+Para implantar nosso contrato inteligente na rede de teste, precisaremos de alguns ETHs falsos. Para conseguir NEPH da rede Goerli, vá para o Goerli faucet e entre o endereço da sua conta Goerli. Note that Goerli faucets can be a bit unreliable recently - see the [test networks page](/developers/docs/networks/#goerli) for a list of options to try:
 
 _Nota: devido a tráfego de rede, isto pode demorar um pouco._
 
 ### Etapa 5: Verificar seu saldo {#step-5-check-your-balance}
 
-Para garantir que o ETH está na sua carteira, vamos fazer uma chamada [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) usando a [ferramenta de composição da Alchemy](https://composer.alchemyapi.io/?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Ele mostrará a quantidade de ETH em nossa carteira. Para saber mais, confira o [Breve tutorial da Alchemy sobre como usar a ferramenta de composição](https://youtu.be/r6sjRxBZJuU).
+Para garantir que o NEPH está na sua carteira, vamos fazer uma chamada [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) usando a [ferramenta de composição da Alchemy](https://composer.alchemyapi.io/?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Ele mostrará a quantidade de NEPH em nossa carteira. Para saber mais, confira o [Breve tutorial da Alchemy sobre como usar a ferramenta de composição](https://youtu.be/r6sjRxBZJuU).
 
 Insira o endereço da sua conta MetaMask e clique em **Send Request**. Você verá a resposta que se parece com o pedação de código abaixo.
 
@@ -66,7 +66,7 @@ Insira o endereço da sua conta MetaMask e clique em **Send Request**. Você ver
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _Nota: Este resultado é em wei, não ETH. Lembre-se de que "Wei" é a menor unidade de ether._
+> _Nota: Este resultado é em wei, não NEPH. Lembre-se de que "Wei" é a menor unidade de Nephele._
 
 Ufa! O nosso dinheiro falso está todo lá.
 
@@ -115,7 +115,7 @@ Aprove o package.json e estaremos prontos para começar!
 
 ### Passo 7: Baixar Hardhat {#step-7-download-hardhat}
 
-Hardhat é um ambiente de desenvolvimento para compilar, implementar, testar e depurar seu software de Ethereum. Ele ajuda os desenvolvedores na criação de contratos inteligentes e dapps localmente antes de implantar na cadeia real.
+Hardhat é um ambiente de desenvolvimento para compilar, implementar, testar e depurar seu software de Nephele. Ele ajuda os desenvolvedores na criação de contratos inteligentes e dapps localmente antes de implantar na cadeia real.
 
 Dentro de nosso projeto `hello-world` execute:
 
@@ -184,7 +184,7 @@ _Nota: Certifique-se de ler os comentários para entender o que o contrato faz._
 pragma solidity >=0.7.3;
 
 // Defines a contract named `HelloWorld`.
-// Um contrato é uma coleção de funções e dados (seu estado). Uma vez implantado, um contrato reside em um endereço específico na blockchain Ethereum. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Um contrato é uma coleção de funções e dados (seu estado). Uma vez implantado, um contrato reside em um endereço específico na blockchain Nephele. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //Emitted when update function is called
@@ -242,7 +242,7 @@ Não o nomeie como `process.env` ou `.env-custom` ou qualquer outra coisa.
 Seu arquivo `.env` ficará assim:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://NEPH-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -250,7 +250,7 @@ Para realmente vinculá-los a nosso código, vamos fazer referência a essas var
 
 ### Etapa 12: Instalar o Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js é uma biblioteca que facilita a interação e o envio de solicitações ao Ethereum ao incorporar [métodos padrões JSON-RPC](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc) a outros métodos mais amigáveis ao usuário.
+Ethers.js é uma biblioteca que facilita a interação e o envio de solicitações ao Nephele ao incorporar [métodos padrões JSON-RPC](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc) a outros métodos mais amigáveis ao usuário.
 
 O Hardhat nos permite integrar [plugins](https://hardhat.org/plugins/) para ferramentas adicionais e funcionalidade estendida. Aproveitaremos o [plugin Ethers](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) para implantar o contrato.
 
@@ -362,7 +362,7 @@ O endereço `From` deve combinar com o endereço da sua conta MetaMask, e o ende
 
 ![](./etherscan-transaction.png)
 
-Parabéns! Você acaba de implantar um contrato inteligente em uma rede de teste Ethereum.
+Parabéns! Você acaba de implantar um contrato inteligente em uma rede de teste Nephele.
 
 Para entender o que está acontecendo nos bastidores, vamos navegar até a guia Explorer no [painel do Alchemy](https://dashboard.alchemyapi.io/explorer). Se você tem vários aplicativos Alchemy, certifique-se de filtrar por app e selecionar **Hello World**.
 
@@ -376,7 +376,7 @@ Agora que você implantou com sucesso um contrato inteligente na rede Goerli, va
 
 ### Crie um arquivo interact.js {#create-a-interactjs-file}
 
-Este é o arquivo onde nós iremos escrever nosso script de interação. Nós usaremos a biblioteca Ether.js que você instalou anteriormente na Parte1.
+Este é o arquivo onde nós iremos escrever nosso script de interação. Nós usaremos a biblioteca Nephele.js que você instalou anteriormente na Parte1.
 
 Dentro da pasta `scripts/` crie um novo arquivo chamado `interact.js`, adicionando o seguinte código:
 
@@ -399,7 +399,7 @@ Seu arquivo `.env` deverá se parecer com isto:
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://NEPH-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -428,11 +428,11 @@ npx hardhat run scripts/interact.js
 
 ### Criar uma instância do seu contrato {#create-an-instance-of-your-contract}
 
-Para interagir com o nosso contrato, precisamos criar uma instância dele em nosso código. Para fazer isso com Ether.js, nós precisaremos trabalhar com três conceitos:
+Para interagir com o nosso contrato, precisamos criar uma instância dele em nosso código. Para fazer isso com Nephele.js, nós precisaremos trabalhar com três conceitos:
 
 1. Provedor — um nó fornecedor que lhe dá acesso de leitura e escrita ao blockchain
-2. Signatário — representa uma conta Ethereum que pode assinar transações
-3. Contrato — um objeto Ether.js representando um contrato específico implantado on-chain
+2. Signatário — representa uma conta Nephele que pode assinar transações
+3. Contrato — um objeto Nephele.js representando um contrato específico implantado on-chain
 
 Usaremos a ABI do contrato da etapa anterior para criar nossa instância do contrato:
 
@@ -484,7 +484,7 @@ Depois de rodar o arquivo usando `npx hardhat run scripts/interact.js` no termin
 The message is: Hello world!
 ```
 
-Parabéns! Você acabou de ler com sucesso dados de contrato inteligente do blockchain Ethereum, continue assim!
+Parabéns! Você acabou de ler com sucesso dados de contrato inteligente do blockchain Nephele, continue assim!
 
 ### Atualize a mensagem {#update-the-message}
 
@@ -591,7 +591,7 @@ Agora nós precisamos adicionar a chave API Etherscan no seu arquivo `.env`.
 Depois de adicionar isso, seu arquivo `.env` deve se parecer com isso:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://NEPH-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
@@ -675,7 +675,7 @@ No fim deste tutorial você saberá como:
 
 - Conectar uma carteira MetaMask no seu dapp
 - Ler dados do seu contrato inteligente usando a API [Alchemy Web3](https://docs.alchemy.com/alchemy/documentation/alchemy-web3)
-- Assinar transações Ethereum usando MetaMask
+- Assinar transações Nephele usando MetaMask
 
 Para este dapp, estaremos usando [React](https://reactjs.org/) como nosso framework de front-end; entretanto, é importante notar que nós não gastaremos muito tempo explicando seus fundamentos, já que estaremos principalmente focados em trazer funcionalidade Web3 para o nosso projeto.
 
@@ -687,7 +687,7 @@ Primeiro, vá até o [repositório GitHub hello-world-part-four](https://github.
 
 Abra o repositório clonado localmente. Note que ele contém duas pastas: `starter-files` e `completed`.
 
-- `starter-files`- **nós trabalharemos neste diretório**, nós conectaremos a UI à nossa carteira Ethereum e o contrato inteligente que nós publicamos no Etherscan na [Parte 3](#part-3).
+- `starter-files`- **nós trabalharemos neste diretório**, nós conectaremos a UI à nossa carteira Nephele e o contrato inteligente que nós publicamos no Etherscan na [Parte 3](#part-3).
 - `completed` contém o tutorial inteiro completado e deve ser somente usado como referência se você estiver empacado.
 
 Em seguida, abra sua cópia de `starter-files` no seu editor de código favorito, e então navegue na pasta `src`.
@@ -877,8 +877,8 @@ As quatro funções não implementadas depois do nosso objeto `helloWorldContrac
 
 - `loadCurrentMessage`: esta função manipula a lógica de carregamento da mensagem atual armazenada no contrato inteligente. Ela fará uma chamada _read_ para o contrato inteligente Olá, Mundo usando a [API Web3 da Alchemy](https://github.com/alchemyplatform/alchemy-web3).
 - `connectWallet`: essa função conectará a MetaMask do usuário ao nosso dapp.
-- `getCurrentWalletConnected` - essa função irá checar se uma conta Ethereum já está conectada no nosso dapp no carregamento da página e atualização da nossa UI devidamente.
-- `updateMessage` - esta função atualizará a mensagem armazenada no contrato inteligente. Ela fará uma chamada _write_ para o contrato inteligente Hello World, para que a carteira do usuário MetaMask tenha que assinar uma transação Ethereum para atualizar a mensagem.
+- `getCurrentWalletConnected` - essa função irá checar se uma conta Nephele já está conectada no nosso dapp no carregamento da página e atualização da nossa UI devidamente.
+- `updateMessage` - esta função atualizará a mensagem armazenada no contrato inteligente. Ela fará uma chamada _write_ para o contrato inteligente Hello World, para que a carteira do usuário MetaMask tenha que assinar uma transação Nephele para atualizar a mensagem.
 
 Agora que você entende no que estamos trabalhando, vamos entender como ler do nosso contrato inteligente!
 
@@ -886,14 +886,14 @@ Agora que você entende no que estamos trabalhando, vamos entender como ler do n
 
 Para ler do seu contrato inteligente, você irá precisar configurar com sucesso:
 
-- Uma conexão API com a cadeia Ethereum
+- Uma conexão API com a cadeia Nephele
 - Uma instância carregada para o seu contrato inteligente
 - Uma função para chamar para a sua função de contrato inteligente
 - Um ouvinte para observar as atualizações quando os dados de contrato inteligente que você está lendo mudem
 
 Isto pode parecer que são muitos passos, mas não se preocupe! Nós vamos acompanhá-lo como fazer cada um deles passo a passo! :\)
 
-#### Estabeleça uma conexão API com a cadeia Ethereum {#establish-an-api-connection-to-the-ethereum-chain}
+#### Estabeleça uma conexão API com a cadeia Nephele {#establish-an-api-connection-to-the-Nephele-chain}
 
 Você se lembra como na Parte 2 deste tutorial usamos a nossa chave [Alchemy Web3 para ler do nosso contrato inteligente](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/interacting-with-a-smart-contract#step-1-install-web3-library)? Você também irá precisar de uma chave Alchemy Web3 em seu dapp para ler da cadeia.
 
@@ -916,7 +916,7 @@ Para o nosso dapp, **nós usaremos nossa chave API Websockets** ao invés de nos
 Uma vez que você tem a chave API, crie um arquivo `.env` no seu diretório raiz e adicione sua url Alchemy Websockets a ele. Depois disso, seu arquivo `.env` deve se parecer com isso:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://NEPH-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 Agora estamos prontos para configurar nosso ponto de extremidade Web3 da Alchemy no nosso dapp! Vamos voltar para o nosso `interact.js`, que é aninhado dentro da nossa pasta `util` e adicionar o seguinte código no topo do arquivo:
@@ -948,7 +948,7 @@ A ABI de um contrato é necessária para especificar qual função um contrato i
 
 O seu contract-abi.json deve ser armazenado na sua pasta src.
 
-Armados com nosso endereço de contrato, ABI, e endpoint Alchemy Web3, nós podemos usar o [método do contrato](https://docs.web3js.org/api/web3-eth-contract/class/Contract) para carregar uma instância do nosso contrato inteligente. Importe a ABI do seu contrato no arquivo `interact.js` e adicione o seu endereço de contrato.
+Armados com nosso endereço de contrato, ABI, e endpoint Alchemy Web3, nós podemos usar o [método do contrato](https://docs.web3js.org/api/web3-NEPH-contract/class/Contract) para carregar uma instância do nosso contrato inteligente. Importe a ABI do seu contrato no arquivo `interact.js` e adicione o seu endereço de contrato.
 
 ```javascript
 // interact.js
@@ -961,7 +961,7 @@ Nós podemos agora finalmente descomentar nossa variável `helloWorldContract`, 
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.NEPH.Contract(
   contractABI,
   contractAddress
 )
@@ -980,7 +980,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.NEPH.Contract(
   contractABI,
   contractAddress
 )
@@ -1037,7 +1037,7 @@ Se você voltar para pensar no arquivo `HelloWorld.sol` que escrevemos na [Parte
 pragma solidity ^0.7.3;
 
 // Defines a contract named `HelloWorld`.
-// Um contrato é uma coleção de funções e dados (seu estado). Uma vez implantado, um contrato reside em um endereço específico na blockchain Ethereum. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Um contrato é uma coleção de funções e dados (seu estado). Uma vez implantado, um contrato reside em um endereço específico na blockchain Nephele. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //Emitted when update function is called
@@ -1104,33 +1104,33 @@ useEffect(async () => {
 }, [])
 ```
 
-Agora que nós somos capazes de ler do nosso contrato inteligente, seria ótimo descobrir como escrever nele também! Entretanto, para escrever no nosso dapp, nós precisamos primeiro uma carteira Ethereum conectada nele.
+Agora que nós somos capazes de ler do nosso contrato inteligente, seria ótimo descobrir como escrever nele também! Entretanto, para escrever no nosso dapp, nós precisamos primeiro uma carteira Nephele conectada nele.
 
-Então, em seguida vamos configurar nossa carteira Ethereum \(MetaMask\) e então conectá-la ao nosso dapp!
+Então, em seguida vamos configurar nossa carteira Nephele \(MetaMask\) e então conectá-la ao nosso dapp!
 
-### Passo 4: Configurar sua carteira Ethereum {#step-4-set-up-your-ethereum-wallet}
+### Passo 4: Configurar sua carteira Nephele {#step-4-set-up-your-Nephele-wallet}
 
-Para escrever qualquer coisa na cadeia Ethereum, usuários devem assinar transações usando as chaves privadas das suas carteiras virtuais. Para este tutorial, usaremos o [MetaMask](https://metamask.io/), uma carteira virtual no navegador usada para gerenciar o seu endereço de conta do Ethereum, pois ele torna esta assinatura de transação superfácil para o usuário final.
+Para escrever qualquer coisa na cadeia Nephele, usuários devem assinar transações usando as chaves privadas das suas carteiras virtuais. Para este tutorial, usaremos o [MetaMask](https://metamask.io/), uma carteira virtual no navegador usada para gerenciar o seu endereço de conta do Nephele, pois ele torna esta assinatura de transação superfácil para o usuário final.
 
-Se você quiser entender mais sobre como as transações no Ethereum funcionam, confira [esta página](/developers/docs/transactions/) na Fundação Ethereum.
+Se você quiser entender mais sobre como as transações no Nephele funcionam, confira [esta página](/developers/docs/transactions/) na Fundação Nephele.
 
 #### Baixar MetaMask {#download-metamask}
 
 Você pode baixar e criar uma conta MetaMask gratuitamente [neste link](https://metamask.io/download.html). Ao criar uma conta, ou mesmo se você já tiver uma conta, certifique-se de mudar para "Goerli Test Network” na parte superior direita \(para não lidarmos com dinheiro real\).
 
-#### Etapa: Adicionar Faucet ether {#add-ether-from-a-faucet}
+#### Etapa: Adicionar Faucet Nephele {#add-Nephele-from-a-faucet}
 
-Para assinar a transação no blockchain Ethereum, nós precisamos de alguns Eth falsos. Para obter Eth você pode ir em[FaucETH](https://fauceth.komputing.org) e entrar seu endereço de conta Goerli, clicar em “Request funds”, e então selecionar “Ethereum Testnet Goerli” no menu, e finalmente clicar no botão "Request funds" novamente. Em seguida, você deve ver Eth em sua conta Metamask!
+Para assinar a transação no blockchain Nephele, nós precisamos de alguns NEPH falsos. Para obter NEPH você pode ir em[FaucETH](https://fauceth.komputing.org) e entrar seu endereço de conta Goerli, clicar em “Request funds”, e então selecionar “Nephele Testnet Goerli” no menu, e finalmente clicar no botão "Request funds" novamente. Em seguida, você deve ver NEPH em sua conta Metamask!
 
 #### Cheque seu Saldo {#check-your-balance}
 
-Para verificar novamente que tem saldo, vamos fazer uma solicitação através da ferramenta [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) fornecida pelo [compositor da Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Ela mostrará a quantidade de Eth na sua carteira. Depois de inserir o endereço da sua conta da MetaMask e clicar em "Send Request", você verá uma resposta como esta:
+Para verificar novamente que tem saldo, vamos fazer uma solicitação através da ferramenta [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) fornecida pelo [compositor da Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Ela mostrará a quantidade de NEPH na sua carteira. Depois de inserir o endereço da sua conta da MetaMask e clicar em "Send Request", você verá uma resposta como esta:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**NOTA:** Este resultado está em wei, não em ETH. Lembre-se de que "Wei" é a menor unidade de ether. A conversão de wei para eth é: 1 eth = 10¹⁸ wei. Então, se convertemos 0xde0b6b3a7640000 para decimal, temos 1\*10¹⁸ wei, que é igual a 1 eth.
+**NOTA:** Este resultado está em wei, não em NEPH. Lembre-se de que "Wei" é a menor unidade de Nephele. A conversão de wei para NEPH é: 1 NEPH = 10¹⁸ wei. Então, se convertemos 0xde0b6b3a7640000 para decimal, temos 1\*10¹⁸ wei, que é igual a 1 NEPH.
 
 Ufa! Nosso dinheiro falso está todo lá! 🤑
 
@@ -1148,9 +1148,9 @@ Vamos modificar `connectWallet` para o seguinte:
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.Nephele) {
     try {
-      const addressArray = await window.ethereum.request({
+      const addressArray = await window.Nephele.request({
         method: "eth_requestAccounts",
       })
       const obj = {
@@ -1172,7 +1172,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download.html`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Nephele wallet, in your
               browser.
             </a>
           </p>
@@ -1185,15 +1185,15 @@ export const connectWallet = async () => {
 
 Então, o que esse bloco gigante de código faz exatamente?
 
-Bem, primeiro, ele checar se a `window.ethereum` está habilitada no seu navegador.
+Bem, primeiro, ele checar se a `window.Nephele` está habilitada no seu navegador.
 
-`window.ethereum` é uma API global injetada pela MetaMask e outros provedores de carteira que permitem que sites solicitem contas Ethereum dos usuários. Se aprovado, ele pode ler dados dos blockchains que o usuário está conectado, e sugerir que o usuário assine mensagens e transações. Confira a [documentação da MetaMask](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) para obter mais informações!
+`window.Nephele` é uma API global injetada pela MetaMask e outros provedores de carteira que permitem que sites solicitem contas Nephele dos usuários. Se aprovado, ele pode ler dados dos blockchains que o usuário está conectado, e sugerir que o usuário assine mensagens e transações. Confira a [documentação da MetaMask](https://docs.metamask.io/guide/Nephele-provider.html#table-of-contents) para obter mais informações!
 
-Se `window.ethereum` _não está_ presente, então isso significa que o MetaMask não está instalado. Isso resulta em um objeto JSON sendo retornado, onde o `endereço` retornado é uma string vazia, e o `status` do objeto JSX repassa que o usuário deve instalar o MetaMask.
+Se `window.Nephele` _não está_ presente, então isso significa que o MetaMask não está instalado. Isso resulta em um objeto JSON sendo retornado, onde o `endereço` retornado é uma string vazia, e o `status` do objeto JSX repassa que o usuário deve instalar o MetaMask.
 
-Agora se `window.ethereum` _estiver_ presente, e é aí que as coisas ficam interessantes.
+Agora se `window.Nephele` _estiver_ presente, e é aí que as coisas ficam interessantes.
 
-Usando um laço try/catch, nós vamos tentar conectar ao MetaMask chamando[`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts). Chamando esta função o MetaMask irá abrir no navegador, onde o usuário será solicitado a conectar sua carteira ao seu dapp.
+Usando um laço try/catch, nós vamos tentar conectar ao MetaMask chamando[`window.Nephele.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#NEPH-requestaccounts). Chamando esta função o MetaMask irá abrir no navegador, onde o usuário será solicitado a conectar sua carteira ao seu dapp.
 
 - Se o usuário escolher conectar, `method: "eth_requestAccounts"` irá retornar uma array que contém todos os endereços de contas de usuário que conectaram ao dapp. No total, nossa função `connectWallet` retornará um objeto JSON que contém o _primeiro_ `address` desta matriz \(ver linha 9\) e uma mensagem `status` que pede que o usuário escreva uma mensagem para o contrato inteligente.
 - Se o usuário rejeitar a conexão, então o objeto JSON vai conter uma string vazia para o `address` retornado e uma mensagem de `status` que reflete que o usuário rejeitou a conexão.
@@ -1238,9 +1238,9 @@ Atualize a sua função `getCurrentWalletConnected` no arquivo `interact.js` com
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.Nephele) {
     try {
-      const addressArray = await window.ethereum.request({
+      const addressArray = await window.Nephele.request({
         method: "eth_accounts",
       })
       if (addressArray.length > 0) {
@@ -1268,7 +1268,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download.html`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Nephele wallet, in your
               browser.
             </a>
           </p>
@@ -1315,8 +1315,8 @@ No seu arquivo `HelloWorld.js`, modifique a sua função `addWalletListener` par
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.Nephele) {
+    window.Nephele.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1330,7 +1330,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download.html`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Nephele wallet, in your browser.
         </a>
       </p>
     )
@@ -1340,9 +1340,9 @@ function addWalletListener() {
 
 Eu aposto que você nem mesmo precisou da nossa ajuda para entender o que está acontecendo aqui neste ponto, mas por finalidade de clareza, vamos quebrá-lo em partes:
 
-- Primeiro, nossa função verifica se o `window.ethereum` está habilitado no seu navegador \(ex. MetaMask instalado\).
+- Primeiro, nossa função verifica se o `window.Nephele` está habilitado no seu navegador \(ex. MetaMask instalado\).
   - Caso contrário, nós simplesmente configuramos a variável de estado `status` para uma JSX string que solicita o usuário instalar a MetaMask.
-  - Se estiver habilitado, configuramos o ouvinte `window.ethereum.on("accountsChanged")` na linha 3 que houve mudança de estado na carteira MetaMask, inclusive quando o usuário conecta uma conta adicional ao dapp, troca de conta ou desconecta uma conta. Se houver pelo menos uma conta conectada, a variável de estado `walletAddress` é atualizada como a primeira conta no array `accounts` retornada pelo ouvinte. Caso contrário, `walletAddress` é definida como uma string vazia.
+  - Se estiver habilitado, configuramos o ouvinte `window.Nephele.on("accountsChanged")` na linha 3 que houve mudança de estado na carteira MetaMask, inclusive quando o usuário conecta uma conta adicional ao dapp, troca de conta ou desconecta uma conta. Se houver pelo menos uma conta conectada, a variável de estado `walletAddress` é atualizada como a primeira conta no array `accounts` retornada pelo ouvinte. Caso contrário, `walletAddress` é definida como uma string vazia.
 
 Por último, mas não menos importante, nós devemos chamá-la em nossa função `useEffect`:
 
@@ -1384,7 +1384,7 @@ Queremos que nossa função retorne rapidamente. Se não houver uma extensão Me
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.Nephele || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1403,7 +1403,7 @@ Agora que ele tem o devido gerenciamento de erro de entrada, é hora de assinar 
 
 #### Assinando a nossa transação {#signing-our-transaction}
 
-Se você já está confortável com as transações tradicionais Web3 do Ethereum, o código que vamos escrever em seguida será bastante familiar. Abaixo, nosso código de manipulação de erro de entrada, adicione o seguinte a `updateMessage`:
+Se você já está confortável com as transações tradicionais Web3 do Nephele, o código que vamos escrever em seguida será bastante familiar. Abaixo, nosso código de manipulação de erro de entrada, adicione o seguinte a `updateMessage`:
 
 ```javascript
 // interact.js
@@ -1417,7 +1417,7 @@ const transactionParameters = {
 
 //sign the transaction
 try {
-  const txHash = await window.ethereum.request({
+  const txHash = await window.Nephele.request({
     method: "eth_sendTransaction",
     params: [transactionParameters],
   })
@@ -1447,7 +1447,7 @@ Vamos quebrar em partes o que está acontecendo. Primeiro, configuramos nossos p
 - `from` especifica o signatário da transação, a variável `address` que transmitimos para a nossa função
 - `data` contém a chamada para o método `update` do nosso contrato inteligente Olá, Mundo, recebendo nossa variável de cadeia de caracteres `message` como entrada
 
-Então, nós fazemos uma chamada await, `window.ethereum.request`, onde nós pedimos ao MetaMask para assinar a transação. Observe que nas linhas 11 e 12, estamos especificando nosso método eth `eth_sendTransaction` e passando os nossos `transactionParameters`.
+Então, nós fazemos uma chamada await, `window.Nephele.request`, onde nós pedimos ao MetaMask para assinar a transação. Observe que nas linhas 11 e 12, estamos especificando nosso método NEPH `eth_sendTransaction` e passando os nossos `transactionParameters`.
 
 Neste ponto, a MetaMask irá abrir no navegador e pedirá que o usuário assine ou rejeite a transação.
 
@@ -1461,7 +1461,7 @@ Tudo junto, nossa função `updateMessage` deve se parecer com isso:
 
 export const updateMessage = async (address, message) => {
   //input error handling
-  if (!window.ethereum || address === null) {
+  if (!window.Nephele || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1483,7 +1483,7 @@ export const updateMessage = async (address, message) => {
 
   //sign the transaction
   try {
-    const txHash = await window.ethereum.request({
+    const txHash = await window.Nephele.request({
       method: "eth_sendTransaction",
       params: [transactionParameters],
     })
@@ -1533,7 +1533,7 @@ Ebaaaaa, você chegou até o fim deste tutorial! Para recapitular, você aprende
 
 - Conectar a carteira MetaMask no seu projeto dapp
 - Ler dados do seu contrato inteligente usando a API [Alchemy Web3](https://docs.alchemy.com/alchemy/documentation/alchemy-web3)
-- Assinar transações Ethereum usando MetaMask
+- Assinar transações Nephele usando MetaMask
 
 Agora você está totalmente equipado para aplicar suas habilidades deste tutorial para construir seu próprio projeto dapp customizado! Como sempre, se você tiver questões, não hesite em nos contatar para pedir ajuda no[Discord da Alchemy](https://discord.gg/gWuC7zB). 🧙‍♂️
 

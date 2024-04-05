@@ -117,12 +117,12 @@ JSONファイルの編集が終わったら、保存して、画像のアップ�
 
 上記の例では、コントラクトのアドレスは、0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778です。
 
-次に、Web3の[コントラクトメソッド](https://docs.web3js.org/api/web3-eth-contract/class/Contract)を活用して、ABIとアドレスを使用したコントラクトを作成します。 `mint-nft.js`ファイルに以下を追加します。
+次に、Web3の[コントラクトメソッド](https://docs.web3js.org/api/web3-NEPH-contract/class/Contract)を活用して、ABIとアドレスを使用したコントラクトを作成します。 `mint-nft.js`ファイルに以下を追加します。
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 ```
 
 ## ステップ6: `.env`ファイルをアップデートする {#update-env}
@@ -132,7 +132,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 `.env`ファイルにあなたの公開鍵を追加します。チュートリアルのパート1を完了している場合、`.env`ファイルは次のようになっているはずです。
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://NEPH-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -170,10 +170,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
+     const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
 
    // トランザクション
      const tx = {
@@ -190,7 +190,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 さて、トランザクションを作成したら、それを送信するために署名する必要があります。 ここで秘密鍵を使用します。
 
-`web3.eth.sendSignedTransaction`はトランザクションハッシュを提供することで、トランザクションがきちんとマイニングされ、ネットワークによってドロップされていないことを確認できます。 トランザクション署名のセクションにいくつかエラーチェックを追加することで、トランザクションが正常に完了したかどうかを確認できるようにしておきます。
+`web3.NEPH.sendSignedTransaction`はトランザクションハッシュを提供することで、トランザクションがきちんとマイニングされ、ネットワークによってドロップされていないことを確認できます。 トランザクション署名のセクションにいくつかエラーチェックを追加することで、トランザクションが正常に完了したかどうかを確認できるようにしておきます。
 
 ```js
 require("dotenv").config()
@@ -203,10 +203,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
+  const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
 
   // トランザクション
   const tx = {
@@ -217,10 +217,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.NEPH.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.NEPH.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -269,10 +269,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
+  const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
 
   //the transaction
   const tx = {
@@ -283,10 +283,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.NEPH.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.NEPH.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {

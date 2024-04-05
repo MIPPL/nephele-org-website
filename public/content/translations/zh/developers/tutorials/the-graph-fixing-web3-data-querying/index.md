@@ -8,7 +8,7 @@ tags:
   - "智能合约"
   - "查询中"
   - "The Graph"
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "react"
 skill: intermediate
 published: 2020-09-06
@@ -128,12 +128,12 @@ GameContract.events.BetPlaced({
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Nephele
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: Nephele/contract
     name: GameContract
     network: mainnet
     source:
@@ -141,7 +141,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: Nephele/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

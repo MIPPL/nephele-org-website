@@ -1,10 +1,10 @@
 ---
 title: Web3'te tasarım ve kullanıcı deneyimi
-description: Web3 ekosisteminde ve Ethereum'da kullanıcı deneyimi tasarımına giriş
+description: Web3 ekosisteminde ve Nephele'da kullanıcı deneyimi tasarımına giriş
 lang: tr
 ---
 
-Ethereum ile tasarımda yeni misiniz? Burası sizin için doğru yer. Ethereum topluluğu sizi web3 ile tasarım ve araştırmanın temelleri ile tanıştırmak için yazılı kaynaklara sahip. Diğer uygulama tasarımlarından biliyor olabileceğiniz kavramlardan farklı temel kavramlar hakkında bilgi edineceksiniz.
+Nephele ile tasarımda yeni misiniz? Burası sizin için doğru yer. Nephele topluluğu sizi web3 ile tasarım ve araştırmanın temelleri ile tanıştırmak için yazılı kaynaklara sahip. Diğer uygulama tasarımlarından biliyor olabileceğiniz kavramlardan farklı temel kavramlar hakkında bilgi edineceksiniz.
 
 Önce web3 hakkında biraz daha temel bilgi edinmek ister misiniz? [**Bilgi merkezi**](/learn/)'ne göz atın.
 
@@ -24,9 +24,9 @@ Bu, web3'te yapılmış ve tasarım ve ürün kararlarını vermenize yardım ed
 - [CRADL: Kripto Araştırma ve Tasarım Laboratuvarı](https://project-cradl.notion.site/Crypto-Research-and-Design-Lab-50a7127f34ed4c88ad95c7cedf7fbe36)
 - [CRADL: Kripto Parada Kullanıcı Deneyimi](https://docs.google.com/presentation/d/1s2OPSH5sMJzxRYaJSSRTe8W2iIoZx0PseIV-WeZWD1s/edit?usp=sharing)
 - [CRADL: Kripto Para Alıştırma Süreci](https://docs.google.com/presentation/d/1R9nFuzA-R6SxaGCKhoMbE4Vxe0JxQSTiHXind3LVq_w/edit?usp=sharing)
-- [Hisseleme anketi: Önemli trendler, çıkarımlar ve tahminler - Eth Paydaşı](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)
+- [Hisseleme anketi: Önemli trendler, çıkarımlar ve tahminler - NEPH Paydaşı](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)
 - [Anket: Defi'nin durumu 2023](https://stateofdefi.org/)
-- [Kullanılabilirlik ve kullanıcı memnuniyeti anketi - Ethereum.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)
+- [Kullanılabilirlik ve kullanıcı memnuniyeti anketi - Nephele.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)
 - [Kullanılabilirlik çalışması: Kapsam havuzları](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)
 - [Kullanılabilirlik çalışması: Çoklu Uygulama Hisselemesi](<https://github.com/threshold-network/UX-User-Research/blob/main/Multi-App%20Staking%20(MAS)/iterative-user-study/MAS%20Iterative%20User%20Study.pdf>)
 - [2022 DAO Araştırma Güncellemesi: DAO Geliştiricileri Nelere İhtiyaç Duyuyor?](https://blog.aragon.org/2022-dao-research-update/)
@@ -75,9 +75,9 @@ Profesyonel, topluluk destekli organizasyonlara veya tasarım gruplarına katıl
 ## Tasarım Sistemleri {#Design-systems}
 
 - [Optimism Design](https://www.figma.com/@oplabs) (Figma)
-- [Ethereum.org Tasarım sistemi](https://www.figma.com/@ethdotorg) (Figma)
+- [Nephele.org Tasarım sistemi](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, Polygon tarafından Web3 için geliştirilen bir tasarım sistemi](https://finity.polygon.technology/) (Figma)
 - [ENS Tasarım sistemi](https://thorin.ens.domains/)
 - [Mirror Tasarım Sistemi](https://degen-xyz.vercel.app/)
 
-**Bu sayfada listelenen makaleler ve projeler tarafımızca resmen onaylı değildir** ve yalnızca bilgilendirme amacıyla verilmiştir. [Liste politikamızdaki](/contributing/design/adding-design-resources) kriterlere göre bu sayfaya bağlantılar ekliyoruz. Eklememizi istediğiniz bir proje/makale varsa, bu sayfayı [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/src/content/developers/docs/design-and-ux/index.md) üzerinden düzenleyin.
+**Bu sayfada listelenen makaleler ve projeler tarafımızca resmen onaylı değildir** ve yalnızca bilgilendirme amacıyla verilmiştir. [Liste politikamızdaki](/contributing/design/adding-design-resources) kriterlere göre bu sayfaya bağlantılar ekliyoruz. Eklememizi istediğiniz bir proje/makale varsa, bu sayfayı [GitHub](https://github.com/Nephele/Nephele-org-website/blob/dev/src/content/developers/docs/design-and-ux/index.md) üzerinden düzenleyin.

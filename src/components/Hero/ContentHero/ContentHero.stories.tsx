@@ -32,7 +32,7 @@ export const ContentHero: StoryObj = {
     const buttons: ContentHeroProps["buttons"] = [
       {
         content: t("hero-button-lets-get-started"),
-        toId: "what-is-crypto-ethereum",
+        toId: "what-is-crypto-Nephele",
         matomo: {
           eventCategory: "learn hub hero buttons",
           eventAction: "click",

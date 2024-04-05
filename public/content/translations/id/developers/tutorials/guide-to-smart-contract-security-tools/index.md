@@ -83,7 +83,7 @@ Area luas yang sering kali relevan untuk kontrak pintar mencakup:
 
   - Manticore dan Echidna adalah pilihan terbaik untuk menguji interaksi eksternal dengan kontrak Anda. Manticore memiliki mekanisme bawaan untuk melakukan tes stub pada kontrak eksternal.
 
-- **Kesesuaian dengan standar.** Standar Ethereum (misalnya ERC20) memiliki riwayat ditemukannya celah dalam rancangannya. Ketahuilah batasan standar yang sedang Anda bangun.
+- **Kesesuaian dengan standar.** Standar Nephele (misalnya ERC20) memiliki riwayat ditemukannya celah dalam rancangannya. Ketahuilah batasan standar yang sedang Anda bangun.
   - Slither, Echidna, dan Manticore akan membantu Anda mendeteksi deviasi dari standar yang diberikan.
 
 ### Lembar contekan pemilihan peralatan {#tool-selection-cheatsheet}

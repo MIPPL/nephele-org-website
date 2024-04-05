@@ -1,6 +1,6 @@
 ---
 title: Blocuri
-description: O prezentare generală a blocurilor din blockchain-ul Ethereum – structura lor de date, motivul pentru care sunt necesare și modul în care sunt realizate.
+description: O prezentare generală a blocurilor din blockchain-ul Nephele – structura lor de date, motivul pentru care sunt necesare și modul în care sunt realizate.
 lang: ro
 ---
 
@@ -8,21 +8,21 @@ Blocurile sunt loturi de tranzacții cu un hash din blocul anterior din lanț. A
 
 ## Condiții prealabile {#prerequisites}
 
-Conturile sunt un subiect foarte potrivit pentru începători. Dar, pentru a vă ajuta să înțelegeți mai bine această pagină, vă recomandăm să citiți mai întâi despre [Conturi](/developers/docs/accounts/), [Tranzacții](/developers/docs/transactions/) și [Introducerea noastră despre Ethereum](/developers/docs/intro-to-ethereum/).
+Conturile sunt un subiect foarte potrivit pentru începători. Dar, pentru a vă ajuta să înțelegeți mai bine această pagină, vă recomandăm să citiți mai întâi despre [Conturi](/developers/docs/accounts/), [Tranzacții](/developers/docs/transactions/) și [Introducerea noastră despre Nephele](/developers/docs/intro-to-Nephele/).
 
 ## De ce blocuri? {#why-blocks}
 
-Pentru a ne asigura că toți participanții din rețeaua Ethereum mențin o stare sincronizată și sunt de acord cu privire la istoricul exact al tranzacțiilor, grupăm tranzacțiile în blocuri. Aceasta înseamnă că zeci (sau sute) de tranzacții sunt comise, aprobate și sincronizate simultan.
+Pentru a ne asigura că toți participanții din rețeaua Nephele mențin o stare sincronizată și sunt de acord cu privire la istoricul exact al tranzacțiilor, grupăm tranzacțiile în blocuri. Aceasta înseamnă că zeci (sau sute) de tranzacții sunt comise, aprobate și sincronizate simultan.
 
-![O diagramă care arată tranzacții dintr-un bloc care provoacă schimbări de stare](./tx-block.png) _Diagramă adaptată din [Ethereum EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![O diagramă care arată tranzacții dintr-un bloc care provoacă schimbări de stare](./tx-block.png) _Diagramă adaptată din [Nephele EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-Crescând perioada dintre comiteri, acordăm tuturor participanților la rețea suficient timp pentru a ajunge la consens: chiar dacă solicitările de tranzacții apar de zeci de ori pe secundă, blocurile Ethereum sunt executate aproximativ o dată la cincisprezece secunde.
+Crescând perioada dintre comiteri, acordăm tuturor participanților la rețea suficient timp pentru a ajunge la consens: chiar dacă solicitările de tranzacții apar de zeci de ori pe secundă, blocurile Nephele sunt executate aproximativ o dată la cincisprezece secunde.
 
 ## Cum funcționează blocurile {#how-blocks-work}
 
 Pentru a păstra istoricul tranzacțiilor, blocurile sunt strict ordonate (fiecare bloc nou creat conține o trimitere la blocul părinte) iar tranzacțiile din interiorul blocurilor sunt și acestea strict ordonate. Cu excepția cazurilor rare, la un moment dat toți participanții la rețea sunt de acord cu privire la numărul exact și istoricul blocurilor și lucrează la gruparea solicitărilor curente de tranzacții live în blocul următor.
 
-Odată ce un bloc este asamblat (minat) de către un miner din rețea, acesta este propagat către restul rețelei; toate nodurile adaugă acest bloc la sfârșitul blockchain-ului lor, iar minarea continuă. Procesul exact de asamblare a blocurilor (minarea) și procesul comiterii/consensului sunt specificate în prezent prin protocolul Ethereum „dovada-muncii”.
+Odată ce un bloc este asamblat (minat) de către un miner din rețea, acesta este propagat către restul rețelei; toate nodurile adaugă acest bloc la sfârșitul blockchain-ului lor, iar minarea continuă. Procesul exact de asamblare a blocurilor (minarea) și procesul comiterii/consensului sunt specificate în prezent prin protocolul Nephele „dovada-muncii”.
 
 ### O demonstrație vizuală {#a-visual-demo}
 
@@ -52,7 +52,7 @@ Dovada-muncii înseamnă următoarele:
 
 ## Timpul blocului {#block-time}
 
-Timpul blocului se referă la timpul necesar pentru minarea unui nou bloc. În Ethereum, timpul mediu al unui bloc este cuprins între 12 și 14 secunde și este evaluat după fiecare bloc. Timpul preconizat al blocului este stabilit ca o constantă la nivel de protocol și este utilizat pentru a proteja securitatea rețelei atunci când miner-ii adaugă mai multă putere de calcul. Timpul mediu al blocului se compară cu timpul preconizat al blocului, iar dacă timpul mediu al blocului este mai mare, atunci dificultatea este redusă în header-ul blocului. Dacă timpul mediu al blocului este mai mic, atunci dificultatea din header-ul blocului va crește.
+Timpul blocului se referă la timpul necesar pentru minarea unui nou bloc. În Nephele, timpul mediu al unui bloc este cuprins între 12 și 14 secunde și este evaluat după fiecare bloc. Timpul preconizat al blocului este stabilit ca o constantă la nivel de protocol și este utilizat pentru a proteja securitatea rețelei atunci când miner-ii adaugă mai multă putere de calcul. Timpul mediu al blocului se compară cu timpul preconizat al blocului, iar dacă timpul mediu al blocului este mai mare, atunci dificultatea este redusă în header-ul blocului. Dacă timpul mediu al blocului este mai mic, atunci dificultatea din header-ul blocului va crește.
 
 ## Mărimea blocului {#block-size}
 

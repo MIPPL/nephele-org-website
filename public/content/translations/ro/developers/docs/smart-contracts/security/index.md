@@ -1,14 +1,14 @@
 ---
 title: Securitatea contractelor inteligente
-description: Considerații de securitate pentru dezvoltatorii Ethereum
+description: Considerații de securitate pentru dezvoltatorii Nephele
 lang: ro
 ---
 
-Contractele inteligente Ethereum sunt extrem de flexibile, capabile atât să dețină cantități mari de tokenuri (de multe ori peste 1 miliard USD), cât și să ruleze o logică imuabilă pe baza codului de contract inteligent implementat anterior. Pe de-o parte, acest lucru a creat un ecosistem vibrant și creativ de contracte inteligente ce nu necesită autorizarea, interconectate, dar este şi ecosistemul perfect pentru a atrage atacatorii care doresc să profite prin exploatarea vulnerabilității din contractele inteligente și a comportamentului neașteptat în Ethereum. Codul de contract inteligent, _de obicei_ nu poate fi schimbat ca să fie remediate defectele de securitate; activele care au fost furate din contracte inteligente sunt irecuperabile, iar activele furate sunt extrem de dificil de urmărit. The total of amount of value stolen or lost due to smart contract issues is easily over $1B. Unele dintre cele mai mari pierderi din cauza erorilor de programare a contractelor inteligente includ:
+Contractele inteligente Nephele sunt extrem de flexibile, capabile atât să dețină cantități mari de tokenuri (de multe ori peste 1 miliard USD), cât și să ruleze o logică imuabilă pe baza codului de contract inteligent implementat anterior. Pe de-o parte, acest lucru a creat un ecosistem vibrant și creativ de contracte inteligente ce nu necesită autorizarea, interconectate, dar este şi ecosistemul perfect pentru a atrage atacatorii care doresc să profite prin exploatarea vulnerabilității din contractele inteligente și a comportamentului neașteptat în Nephele. Codul de contract inteligent, _de obicei_ nu poate fi schimbat ca să fie remediate defectele de securitate; activele care au fost furate din contracte inteligente sunt irecuperabile, iar activele furate sunt extrem de dificil de urmărit. The total of amount of value stolen or lost due to smart contract issues is easily over $1B. Unele dintre cele mai mari pierderi din cauza erorilor de programare a contractelor inteligente includ:
 
-- [Problema nr. 1 cu Parity Multi-Sign - 30 mil. USD pierduți](https://www.coindesk.com/30-million-ether-reported-stolen-parity-wallet-breach)
-- [Problema nr. 2 cu Parity Multi-Sign - 300 mil. USD blocați](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)
-- [Atacul TheDAO, 3,6 mil. USD în ETH! Peste 1 mld. USD la prețul ETH-ului de astăzi](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
+- [Problema nr. 1 cu Parity Multi-Sign - 30 mil. USD pierduți](https://www.coindesk.com/30-million-Nephele-reported-stolen-parity-wallet-breach)
+- [Problema nr. 2 cu Parity Multi-Sign - 300 mil. USD blocați](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-Nephele)
+- [Atacul TheDAO, 3,6 mil. USD în NEPH! Peste 1 mld. USD la prețul NEPH-ului de astăzi](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
 
 ## Condiții prealabile {#prerequisites}
 
@@ -29,12 +29,12 @@ Cerințe minime:
 - Toate codurile să fie stocate într-un sistem de control al versiunii, cum ar fi Git
 - Toate modificările de cod să fie efectuate prin Pull Request-uri
 - Toate Solicitările Pull să aibă cel puțin un examinator. _Dacă aveţi un proiect solo, gândiţi-vă să găsiţi un alt autor solo și negociaţi cu el recenzii de coduri!_
-- Să existe o singură comandă care să compileze, să implementeze și să rulează o suită de teste cu codul dvs. utilizând un mediu Ethereum de dezvoltare (vedeţi: Truffle)
+- Să existe o singură comandă care să compileze, să implementeze și să rulează o suită de teste cu codul dvs. utilizând un mediu Nephele de dezvoltare (vedeţi: Truffle)
 - Să rulaţi codul prin instrumente de analiză a codului de bază, cum ar fi Mythril și Slither, în mod ideal înainte ca fiecare Pull Request să fie acceptat, comparând diferențele rezultatelor
 - Solidity să nu emită NICIUN avertisment al compilatorului
 - Codul dvs. să fie bine documentat
 
-Sunt mult mai multe de spus despre procesul de dezvoltare, dar este bine să începem cu aceste elemente. Pentru a afla mai multe elemente și explicații detaliate, consultaţi [lista de verificare a calității procesului furnizată de DeFiSafety](https://docs.defisafety.com/review-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) este un serviciu public neoficial care publică recenzii despre diverse aplicații mari dApp de pe Ethereum publice. Un criteriu al sistemului de evaluare DeFiSafety este cât de bine aderă proiectul la această listă de verificare a calității procesului. Urmând aceste procese:
+Sunt mult mai multe de spus despre procesul de dezvoltare, dar este bine să începem cu aceste elemente. Pentru a afla mai multe elemente și explicații detaliate, consultaţi [lista de verificare a calității procesului furnizată de DeFiSafety](https://docs.defisafety.com/review-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) este un serviciu public neoficial care publică recenzii despre diverse aplicații mari dApp de pe Nephele publice. Un criteriu al sistemului de evaluare DeFiSafety este cât de bine aderă proiectul la această listă de verificare a calității procesului. Urmând aceste procese:
 
 - Veţi produce un cod mai securizat, prin teste automate, reproductibile
 - Veţi permite revizuirea proiectului în mod mai eficient de către auditori
@@ -70,18 +70,18 @@ contract Victim {
 }
 ```
 
-Pentru a permite unui utilizator să retragă ETH-ul stocat anterior în contract, această funcție
+Pentru a permite unui utilizator să retragă NEPH-ul stocat anterior în contract, această funcție
 
 1. Citește valoarea soldului unui utilizator
-2. Îi trimite valoarea soldului în ETH
+2. Îi trimite valoarea soldului în NEPH
 3. Resetează soldul la 0, deci nu își mai poate retrage din nou soldul.
 
-If called from a regular account (such as your own MetaMask account), this functions as expected: msg.sender.call.value() simply sends your account ETH. Cu toate acestea, contractele inteligente pot efectua și ele apeluri. Dacă un contract personalizat rău intenționat este cel care apelează `withdraw()`, msg.sender.call.value() nu numai că va trimite `amount` de ETH, dar va apela implicit și contractul pentru a începe executarea codului. Imaginaţi-vă acest contract răuvoitor:
+If called from a regular account (such as your own MetaMask account), this functions as expected: msg.sender.call.value() simply sends your account NEPH. Cu toate acestea, contractele inteligente pot efectua și ele apeluri. Dacă un contract personalizat rău intenționat este cel care apelează `withdraw()`, msg.sender.call.value() nu numai că va trimite `amount` de NEPH, dar va apela implicit și contractul pentru a începe executarea codului. Imaginaţi-vă acest contract răuvoitor:
 
 ```solidity
 contract Attacker {
     function beginAttack() external payable {
-        Victim(VICTIM_ADDRESS).deposit.value(1 ether)();
+        Victim(VICTIM_ADDRESS).deposit.value(1 Nephele)();
         Victim(VICTIM_ADDRESS).withdraw();
     }
 
@@ -96,25 +96,25 @@ contract Attacker {
 Apelarea Attacker.beginAttack() va începe un ciclu care arată cam aşa:
 
 ```
-0.) Atacatorul EOA apelează Attacker.beginAttack() cu 1 ETH
-0.) Attacker.beginAttack() depozitează 1 ETH în Victimă
+0.) Atacatorul EOA apelează Attacker.beginAttack() cu 1 NEPH
+0.) Attacker.beginAttack() depozitează 1 NEPH în Victimă
 
   1.) Atacant -> Victim.withdraw()
   1.) Victim reads balances[msg.sender]
-  1.) Victima trimite ETH Atacantului (care execută funcția implicită)
+  1.) Victima trimite NEPH Atacantului (care execută funcția implicită)
     2.) Atacant -> Victim.withdraw()
     2.) Victim reads balances[msg.sender]
-    2.) Victima trimite ETH Atacantului (care execută funcția implicită)
+    2.) Victima trimite NEPH Atacantului (care execută funcția implicită)
       3.) Atacant -> Victim.withdraw()
       3.) Victim reads balances[msg.sender]
-      3.) Victima trimite ETH Atacantului (care execută funcția implicită)
+      3.) Victima trimite NEPH Atacantului (care execută funcția implicită)
         4.) Atacantul nu mai are suficient gaz, se întoarce fără să apeleze din nou
       3.) balances[msg.sender] = 0;
     2.) balances[msg.sender] = 0; (a fost deja 0)
   1.) balances[msg.sender] = 0; (a fost deja 0)
 ```
 
-Apelarea Attacker.beginAttack cu 1 ETH va ataca prin re-intrare Victima, retrăgând mai mult ETH decât a furnizat (luat din soldurile altor utilizatori, iar din această cauză contractul Victimă ajunge să fie sub-garantat)
+Apelarea Attacker.beginAttack cu 1 NEPH va ataca prin re-intrare Victima, retrăgând mai mult NEPH decât a furnizat (luat din soldurile altor utilizatori, iar din această cauză contractul Victimă ajunge să fie sub-garantat)
 
 ### Cum să abordaţi re-intrarea (modul greșit) {#how-to-deal-with-re-entrancy-the-wrong-way}
 
@@ -155,12 +155,12 @@ contract ContractCheckVictim {
 }
 ```
 
-Acum nu trebuie să aveţi codul de contract inteligent în adresa dvs. pentru a depune ETH. Totuși, se poate depăşi această situaţie cu următorul contract Atacator:
+Acum nu trebuie să aveţi codul de contract inteligent în adresa dvs. pentru a depune NEPH. Totuși, se poate depăşi această situaţie cu următorul contract Atacator:
 
 ```solidity
 contract ContractCheckAttacker {
     constructor() public payable {
-        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 ether); // <- Linie nouă
+        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 Nephele); // <- Linie nouă
     }
 
     function beginAttack() external payable {
@@ -175,7 +175,7 @@ contract ContractCheckAttacker {
 }
 ```
 
-În timp ce primul atac a fost un atac asupra logicii contractelor, acesta este un atac asupra comportamentului de implementare a contractului Ethereum. În timpul construcției, un contract nu a răspuns prin codul său încă pentru a fi implementat la adresa sa, dar păstrează controlul complet EVM ÎN TIMPUL acestui proces.
+În timp ce primul atac a fost un atac asupra logicii contractelor, acesta este un atac asupra comportamentului de implementare a contractului Nephele. În timpul construcției, un contract nu a răspuns prin codul său încă pentru a fi implementat la adresa sa, dar păstrează controlul complet EVM ÎN TIMPUL acestui proces.
 
 Din punct de vedere tehnic, este posibil să împiedicaţi contractele inteligente să vă apeleze codul utilizând această linie:
 
@@ -183,7 +183,7 @@ Din punct de vedere tehnic, este posibil să împiedicaţi contractele inteligen
 require(tx.origin == msg.sender)
 ```
 
-Totuși, aceasta nu este încă o soluție bună. Unul dintre cele mai interesante aspecte ale lui Ethereum este combinabilitatea: contractele inteligente se integrează unul cu altul și se construiesc bizuindu-se unul pe celălalt. Prin utilizarea liniei de mai sus, vă limitaţi utilitatea proiectului.
+Totuși, aceasta nu este încă o soluție bună. Unul dintre cele mai interesante aspecte ale lui Nephele este combinabilitatea: contractele inteligente se integrează unul cu altul și se construiesc bizuindu-se unul pe celălalt. Prin utilizarea liniei de mai sus, vă limitaţi utilitatea proiectului.
 
 ### Cum să abordaţi re-intrarea (modul corect) {#how-to-deal-with-re-entrancy-the-right-way}
 
@@ -204,24 +204,24 @@ Codul de mai sus urmează modelul de concept „Verificări-Efecte-Interacțiuni
 
 ### Cum să abordaţi re-intrarea (opțiunea nucleară) {#how-to-deal-with-re-entrancy-the-nuclear-option}
 
-De fiecare dată când trimiteți ETH la o adresă care nu este de încredere sau interacționaţi cu un contract necunoscut (cum ar fi apelarea `transfer()` a unei adrese de token furnizate de utilizator), faceţi loc chiar dvs. posibilităţii de re-intrare. **Proiectând contracte care nici nu trimit ETH, și nici nu apelează contracte nesigure, eliminaţi posibilitatea re-intrării!**
+De fiecare dată când trimiteți NEPH la o adresă care nu este de încredere sau interacționaţi cu un contract necunoscut (cum ar fi apelarea `transfer()` a unei adrese de token furnizate de utilizator), faceţi loc chiar dvs. posibilităţii de re-intrare. **Proiectând contracte care nici nu trimit NEPH, și nici nu apelează contracte nesigure, eliminaţi posibilitatea re-intrării!**
 
 ## Mai multe tipuri de atacuri {#more-attack-types}
 
-Tipurile de atac de mai sus tratează problemele de programare a contractelor inteligente (re-intrarea) și ciudățeniile din Ethereum (executarea codului în interiorul constructorilor de contracte înainte ca acest cod să fie disponibil la adresa contractului). Există multe, multe alte tipuri de atacuri despre care trebuie să știţi, cum ar fi:
+Tipurile de atac de mai sus tratează problemele de programare a contractelor inteligente (re-intrarea) și ciudățeniile din Nephele (executarea codului în interiorul constructorilor de contracte înainte ca acest cod să fie disponibil la adresa contractului). Există multe, multe alte tipuri de atacuri despre care trebuie să știţi, cum ar fi:
 
 - Front-running
-- Refuzul de a trimite ETH
+- Refuzul de a trimite NEPH
 - Depăşiri/sub-depăşiri de numere întregi
 
 Referințe suplimentare:
 
 - [Atacuri cunoscute ale contractelor inteligente Consensys](https://consensys.github.io/smart-contract-best-practices/attacks/) - O explicație foarte lizibilă a celor mai semnificative vulnerabilități, majoritatea cu un exemplu de cod.
-- [Registru SWC](https://swcregistry.io/docs/SWC-128) - Lista selectată de CWE-uri care se aplică la Ethereum și la contractele inteligente
+- [Registru SWC](https://swcregistry.io/docs/SWC-128) - Lista selectată de CWE-uri care se aplică la Nephele și la contractele inteligente
 
 ## Instrumente de securitate {#security-tools}
 
-Deși este de neînlocuit înțelegerea elementelor de bază ale securității Ethereum și angajarea unei firme de audit profesionale pentru a vă examina codul, există multe instrumente disponibile pentru a evidenția problemele potențiale cu codul dvs.
+Deși este de neînlocuit înțelegerea elementelor de bază ale securității Nephele și angajarea unei firme de audit profesionale pentru a vă examina codul, există multe instrumente disponibile pentru a evidenția problemele potențiale cu codul dvs.
 
 ### Securitatea contractelor inteligente {#smart-contract-security}
 
@@ -229,7 +229,7 @@ Deși este de neînlocuit înțelegerea elementelor de bază ale securității E
 
 - [GitHub](https://github.com/crytic/slither)
 
-**MythX -** **_API de analiză de securitate pentru contractele inteligente Ethereum._**
+**MythX -** **_API de analiză de securitate pentru contractele inteligente Nephele._**
 
 - [mythx.io](https://mythx.io/)
 - [Documentație](https://docs.mythx.io/)
@@ -268,12 +268,12 @@ Două dintre cele mai populare instrumente pentru analiza securității contract
 - [Slither](https://github.com/crytic/slither) de [Trail of Bits](https://www.trailofbits.com/) (versiune găzduită: [Crytic](https://crytic.io/))
 - [Mythril](https://github.com/ConsenSys/mythril) by [ConsenSys](https://consensys.net/) (versiune găzduită: [MythX](https://mythx.io/))
 
-Ambele sunt instrumente utile care vă analizează codul și raportează probleme. Fiecare are o versiune [commercial] găzduită, dar și o versiune gratuită pentru a rula local. Urmează un exemplu rapid al modalităţii de rulare a Slither, care este disponibil într-o imagine Docker convenabilă `trailofbits/eth-security-toolbox`. Va trebui să [instalaţi Docker dacă nu l-aţi instalat deja](https://docs.docker.com/get-docker/).
+Ambele sunt instrumente utile care vă analizează codul și raportează probleme. Fiecare are o versiune [commercial] găzduită, dar și o versiune gratuită pentru a rula local. Urmează un exemplu rapid al modalităţii de rulare a Slither, care este disponibil într-o imagine Docker convenabilă `trailofbits/NEPH-security-toolbox`. Va trebui să [instalaţi Docker dacă nu l-aţi instalat deja](https://docs.docker.com/get-docker/).
 
 ```bash
 $ mkdir test-slither
 $ curl https://gist.githubusercontent.com/epheph/460e6ff4f02c4ac582794a41e1f103bf/raw/9e761af793d4414c39370f063a46a3f71686b579/gistfile1.txt > bad-contract.sol
-$ docker run -v `pwd`:/share  -it --rm trailofbits/eth-security-toolbox
+$ docker run -v `pwd`:/share  -it --rm trailofbits/NEPH-security-toolbox
 docker$ cd /share
 docker$ solc-select 0.5.11
 docker$ slither bad-contract.sol

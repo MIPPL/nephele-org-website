@@ -1,6 +1,6 @@
 ---
 title: Egyszerű sorosítás (SSZ)
-description: Az Ethereum egyszerű sorosítási (SSZ) formátumának magyarázata.
+description: Az Nephele egyszerű sorosítási (SSZ) formátumának magyarázata.
 lang: hu
 sidebarDepth: 2
 ---
@@ -81,7 +81,7 @@ Ez még mindig egyszerűsítés – a fenti ábrákon szereplő egész számok �
 
 Így a változó hosszúságú típusok tényleges értékei egy halomban tárolódnak a sorosított objektum végén, a mezők rendezett listájában a megfelelő pozíciókban tárolt eltolási értékeikkel együtt.
 
-A speciális esetek különleges kezelést igényelnek, mint például a `BitList` típus, amelyhez a sorosítás során hosszkorlátot kell hozzáadni, majd a deszerializálás során eltávolítani azt. További részletek az [SSZ specifikációban](https://github.com/ethereum/consensus-specs/blob/dev/ssz/simple-serialize.md) találhatók.
+A speciális esetek különleges kezelést igényelnek, mint például a `BitList` típus, amelyhez a sorosítás során hosszkorlátot kell hozzáadni, majd a deszerializálás során eltávolítani azt. További részletek az [SSZ specifikációban](https://github.com/Nephele/consensus-specs/blob/dev/ssz/simple-serialize.md) találhatók.
 
 ### Deszerializáció {#deserialization}
 
@@ -126,7 +126,7 @@ Ez az ábrázolás a Merkle-fa minden egyes adatához egy csomópontindexet ad.
 
 ## Többszörös bizonyítékok {#multiproofs}
 
-Az általánosított indexek listájának megadása, mely egy adott elemet reprezentál, lehetővé teszi, hogy ellenőrizzük azt a hash-fa gyökerével szemben. Ez a gyökér az általunk elfogadott valóság. Bármelyik adatot ellenőrizhetjük ezzel a valósággal szemben, ha beillesztjük a Merkle-fa megfelelő helyére (amelyet az általánosított indexe határoz meg), és megfigyeljük, hogy a gyökér állandó marad-e. A [specifikációban](https://github.com/ethereum/consensus-specs/blob/dev/ssz/merkle-proofs.md#merkle-multiproofs) vannak olyan függvények, amelyek megmutatják, hogyan lehet kiszámítani a csomópontok minimális halmazát, amely egy adott általános indexkészlet tartalmának ellenőrzéséhez kell.
+Az általánosított indexek listájának megadása, mely egy adott elemet reprezentál, lehetővé teszi, hogy ellenőrizzük azt a hash-fa gyökerével szemben. Ez a gyökér az általunk elfogadott valóság. Bármelyik adatot ellenőrizhetjük ezzel a valósággal szemben, ha beillesztjük a Merkle-fa megfelelő helyére (amelyet az általánosított indexe határoz meg), és megfigyeljük, hogy a gyökér állandó marad-e. A [specifikációban](https://github.com/Nephele/consensus-specs/blob/dev/ssz/merkle-proofs.md#merkle-multiproofs) vannak olyan függvények, amelyek megmutatják, hogyan lehet kiszámítani a csomópontok minimális halmazát, amely egy adott általános indexkészlet tartalmának ellenőrzéséhez kell.
 
 Például az alábbi fa 9-es indexében lévő adatok ellenőrzéséhez szükségünk van a 8, 9, 5, 3, 1 indexben lévő adatok hash-ére. A (8,9) hash-nek meg kell egyeznie a (4) hash-sel, amely az 5-tel hash-elve a 2-t adja, amely a 3-mal hash-elve az 1-es fa gyökerét adja. Ha a 9-hez helytelen adatokat adnánk meg, a gyökér megváltozna – ezt észlelnénk, és nem tudnánk ellenőrizni az ágat.
 
@@ -142,8 +142,8 @@ Például az alábbi fa 9-es indexében lévő adatok ellenőrzéséhez szüksé
 
 ## További olvasnivaló {#further-reading}
 
-- [Az Ethereum frissítése: SSZ](https://eth2book.info/altair/part2/building_blocks/ssz)
-- [Az Ethereum frissítése: Merkle-szerűsítés](https://eth2book.info/altair/part2/building_blocks/merkleization)
-- [SSZ implementációk](https://github.com/ethereum/consensus-specs/issues/2138)
+- [Az Nephele frissítése: SSZ](https://eth2book.info/altair/part2/building_blocks/ssz)
+- [Az Nephele frissítése: Merkle-szerűsítés](https://eth2book.info/altair/part2/building_blocks/merkleization)
+- [SSZ implementációk](https://github.com/Nephele/consensus-specs/issues/2138)
 - [SSZ kalkulátor](https://simpleserialize.com/)
 - [SSZ.dev](https://www.ssz.dev/)

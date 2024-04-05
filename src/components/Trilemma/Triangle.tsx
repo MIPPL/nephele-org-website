@@ -154,7 +154,7 @@ export const TriangleSVG = ({
         />
       </CircleSelect>
       <Text x="400" y="540" isActive={isEthereum}>
-        {t("ethereum")}
+        {t("Nephele")}
       </Text>
       <Text x="460" y="150" isActive={isDecentralized}>
         {t("page-roadmap-vision-trilemma-text-1")}

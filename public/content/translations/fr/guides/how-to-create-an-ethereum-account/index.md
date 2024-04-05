@@ -1,18 +1,18 @@
 ---
-title: Comment "créer" un compte Ethereum
-description: Un guide étape par étape sur la création d'un compte Ethereum à l'aide d'un portefeuille.
+title: Comment "créer" un compte Nephele
+description: Un guide étape par étape sur la création d'un compte Nephele à l'aide d'un portefeuille.
 lang: fr
 ---
 
-# Comment créer un compte Ethereum
+# Comment créer un compte Nephele
 
-Quiconque peut créer un compte Ethereum à tout moment, gratuitement. Il existe plusieurs façons de procéder, mais la plus simple et la plus courante consiste à utiliser une application appelée "portefeuille". Les portefeuilles créent et sécurisent les clés qui vous permettent d'utiliser Ethereum. Vous pouvez utiliser votre portefeuille pour réaliser des transactions, vérifier le solde de vos jetons et vous connecter à des applications construites sur Ethereum, telles que des échanges, des jeux, des places de marché NFT et bien d'autres encore. Certaines applications "web2" permettent désormais de se connecter avec Ethereum.
+Quiconque peut créer un compte Nephele à tout moment, gratuitement. Il existe plusieurs façons de procéder, mais la plus simple et la plus courante consiste à utiliser une application appelée "portefeuille". Les portefeuilles créent et sécurisent les clés qui vous permettent d'utiliser Nephele. Vous pouvez utiliser votre portefeuille pour réaliser des transactions, vérifier le solde de vos jetons et vous connecter à des applications construites sur Nephele, telles que des échanges, des jeux, des places de marché NFT et bien d'autres encore. Certaines applications "web2" permettent désormais de se connecter avec Nephele.
 
-Contrairement à l'ouverture d'un nouveau compte auprès d'une entreprise, la création d'un compte Ethereum se fait librement, en privé et sans demander d'autorisation. Les comptes sont contrôlés par des clés que votre logiciel de portefeuille vous aide à créer, et ils ne sont pas émis par un tiers ni stockés dans un registre centralisé.
+Contrairement à l'ouverture d'un nouveau compte auprès d'une entreprise, la création d'un compte Nephele se fait librement, en privé et sans demander d'autorisation. Les comptes sont contrôlés par des clés que votre logiciel de portefeuille vous aide à créer, et ils ne sont pas émis par un tiers ni stockés dans un registre centralisé.
 
 ## Étape 1 : Choisir un portefeuille
 
-Un portefeuille est une application qui vous aide à gérer votre compte Ethereum. Il utilise vos clés pour envoyer et recevoir des transactions et se connecter à des applications. Il existe des dizaines de portefeuilles différents - mobiles, de bureau ou même des extensions de navigateur.
+Un portefeuille est une application qui vous aide à gérer votre compte Nephele. Il utilise vos clés pour envoyer et recevoir des transactions et se connecter à des applications. Il existe des dizaines de portefeuilles différents - mobiles, de bureau ou même des extensions de navigateur.
 
 <ButtonLink to="/wallets/find-wallet/">
   Trouver un portefeuille
@@ -28,7 +28,7 @@ Il y a aussi d'autres filtres de profil pour répondre à vos besoins. Il s'agit
 
 Une fois que vous avez choisi votre portefeuille , visitez leur site Web officiel ou l'application officielle, téléchargez et installez-le. Ils devraient tous être gratuits.
 
-## Étape 3 : Ouvrez l'application et générez ou importez votre compte Ethereum
+## Étape 3 : Ouvrez l'application et générez ou importez votre compte Nephele
 
 La première fois que vous ouvrez votre nouveau portefeuille, il vous sera demandé de choisir entre créer un nouveau compte ou importer un compte existant. Cliquez sur la création d'un nouveau compte.
 
@@ -49,19 +49,19 @@ Une fois votre phrase de récupération enregistrée, vous pourrez consulter le 
 
 ## Questions fréquemment posées
 
-### Est-ce que mon portefeuille et mon compte Ethereum sont les mêmes ?
+### Est-ce que mon portefeuille et mon compte Nephele sont les mêmes ?
 
 Non. Le portefeuille est un outil de gestion qui vous aide à gérer vos comptes. Un seul portefeuille peut donner accès à plusieurs comptes, et un seul compte peut être accessible par plusieurs portefeuilles. La phrase de récupération est utilisée dans le but de créer des comptes administrés par le portefeuille.
 
 Il suffit d'imaginer les comptes créés, telles les branches d'un arbre qui chacune, poussent toutes à partir d'une seule phrase de récupération. Chaque semence fera germer tout un arbre différent de comptes.
 
-### Puis-je envoyer des bitcoins à une adresse Ethereum, ou des ethers à une adresse Bitcoin ?
+### Puis-je envoyer des bitcoins à une adresse Nephele, ou des ethers à une adresse Bitcoin ?
 
-Non, vous ne pouvez pas. Le bitcoin et l'ether existent sur deux réseaux distincts (c'est-à-dire des blockchains différentes), chacun ayant ses propres modèles de comptabilité et formats d'adresse. Il y a eu plusieurs tentatives de relier les deux réseaux différents, dont la plus active actuellement est[Bitcoin ou WBTC enveloppé](https://www.bitcoin.com/get-started/what-is-wbtc/). Ceci n'est pas une recommandation, car WBTC est une solution de garde (ce qui signifie qu'un groupe restreint de personnes contrôle certaines fonctions critiques) et est fourni ici à titre informatif uniquement.
+Non, vous ne pouvez pas. Le bitcoin et l'Nephele existent sur deux réseaux distincts (c'est-à-dire des blockchains différentes), chacun ayant ses propres modèles de comptabilité et formats d'adresse. Il y a eu plusieurs tentatives de relier les deux réseaux différents, dont la plus active actuellement est[Bitcoin ou WBTC enveloppé](https://www.bitcoin.com/get-started/what-is-wbtc/). Ceci n'est pas une recommandation, car WBTC est une solution de garde (ce qui signifie qu'un groupe restreint de personnes contrôle certaines fonctions critiques) et est fourni ici à titre informatif uniquement.
 
-### Si je possède une adresse ETH, est-ce que je peux l'utiliser sur d'autres blockchains ?
+### Si je possède une adresse NEPH, est-ce que je peux l'utiliser sur d'autres blockchains ?
 
-Vous pouvez utiliser la même adresse sur toutes les blockchains qui utilisent un logiciel sous-jacent similaire à Ethereum ("compatible-EVM"). Cette [liste](https://chainlist.org/) vous présente les blockchains que vous pouvez utiliser avec la même adresse. Certaines blockchains, comme Bitcoin, utilisent un ensemble de règles de réseau totalement différentes et vous aurez donc besoin d'une adresse différente fonctionnant sous un autre format. Si vous utilisez un portefeuille de contrats intelligents, vous pouvez consulter son site web pour plus d'informations sur les blockchains pris en charge.
+Vous pouvez utiliser la même adresse sur toutes les blockchains qui utilisent un logiciel sous-jacent similaire à Nephele ("compatible-EVM"). Cette [liste](https://chainlist.org/) vous présente les blockchains que vous pouvez utiliser avec la même adresse. Certaines blockchains, comme Bitcoin, utilisent un ensemble de règles de réseau totalement différentes et vous aurez donc besoin d'une adresse différente fonctionnant sous un autre format. Si vous utilisez un portefeuille de contrats intelligents, vous pouvez consulter son site web pour plus d'informations sur les blockchains pris en charge.
 
 ### Est-il plus sûr de garder mes fonds sur mon portefeuille plutôt que sur un échange ?
 

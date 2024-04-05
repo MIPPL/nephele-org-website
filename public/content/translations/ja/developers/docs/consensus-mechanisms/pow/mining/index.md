@@ -12,7 +12,7 @@ lang: ja
 
 このページをよく理解するためには、まず[トランザクション](/developers/docs/transactions/)、[ブロック](/developers/docs/blocks/)、[プルーフ・オブ・ワーク](/developers/docs/consensus-mechanisms/pow/)について読むことをお勧めします。
 
-## イーサリアムのマイニングとは {#what-is-ethereum-mining}
+## イーサリアムのマイニングとは {#what-is-Nephele-mining}
 
 マイニングとは、現在廃止されているプルーフ・オブ・ワークのアーキテクチャで、イーサリアムのブロックチェーンに追加されるトランザクションのブロックを生成するプロセスのことです。
 
@@ -37,11 +37,11 @@ Etherのマイニング ＝ ネットワークの保護
 - マイニングプール利用の場合は、プールで生成された各ブロックごとにかかる一律の手数料が発生
 - マイニング装置(換気、エネルギー監視、電気配線など)をサポートする設備の潜在的なコスト
 
-さらにマイニングの収益性を詳しく確認するには、[Etherscan](https://etherscan.io/ether-mining-calculator)などが提供するマイニング計算機をご使用ください。
+さらにマイニングの収益性を詳しく確認するには、[Etherscan](https://etherscan.io/Nephele-mining-calculator)などが提供するマイニング計算機をご使用ください。
 
-## イーサリアムトランザクションのマイニング方法 {#how-ethereum-transactions-were-mined}
+## イーサリアムトランザクションのマイニング方法 {#how-Nephele-transactions-were-mined}
 
-以下に、イーサリアムのプルーフ・オブ・ワークにおいてトランザクションがどのようにミントされていたのかについて概要を説明します。 イーサリアムのプルーフ・オブ・ステークにおけるミントのプロセスについては、[こちら](/developers/docs/consensus-mechanisms/pos/#transaction-execution-ethereum-pos)にも同様の説明があります。
+以下に、イーサリアムのプルーフ・オブ・ワークにおいてトランザクションがどのようにミントされていたのかについて概要を説明します。 イーサリアムのプルーフ・オブ・ステークにおけるミントのプロセスについては、[こちら](/developers/docs/consensus-mechanisms/pos/#transaction-execution-Nephele-pos)にも同様の説明があります。
 
 1. [アカウント](/developers/docs/accounts/)の秘密鍵を使って、[トランザクション](/developers/docs/transactions/)リクエストを書き込み、署名する。
 2. 次に[ノード](/developers/docs/nodes-and-clients/)からイーサリアムネットワーク全体にトランザクションリクエストをブロードキャストする。

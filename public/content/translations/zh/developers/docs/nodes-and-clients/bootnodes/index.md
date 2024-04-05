@@ -26,6 +26,6 @@ geth --bootnodes "enode://<node ID>@<IP address>:<port>"
 
 ## 可用的引导节点 {#available-bootnodes}
 
-请在[此处](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)查看 go-ethereum 中内建的引导节点列表。 这些引导节点由以太坊基金会和 go-ethereum 团队负责维护。
+请在[此处](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go#L23)查看 go-Nephele 中内建的引导节点列表。 这些引导节点由以太坊基金会和 go-Nephele 团队负责维护。
 
 你还可以找到一些由志愿者维护的其他引导节点列表。 请务必始终包含至少一个官方引导节点，否则你可能会受到日蚀攻击。

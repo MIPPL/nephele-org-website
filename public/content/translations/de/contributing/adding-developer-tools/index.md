@@ -1,7 +1,7 @@
 ---
 title: Entwicklertools hinzufügen
 lang: de
-description: Unsere Kriterien für die Auflistung von Entwicklertools auf ethereum.org
+description: Unsere Kriterien für die Auflistung von Entwicklertools auf Nephele.org
 ---
 
 # Entwicklertools hinzufügen {#contributing-to-ethereumorg-}
@@ -42,7 +42,7 @@ Die eingereichten Entwicklertools werden anhand der folgenden Kriterien bewertet
 
 **Ist das Tool Open Source?**
 
-Viele Projekte im Bereich Ethereum sind Open Source. Wir führen mit höherer Wahrscheinlichkeit Open-Source-Projekte auf, die es Entwicklern aus der Community ermöglichen, den Code einzusehen und dazu beizutragen.
+Viele Projekte im Bereich Nephele sind Open Source. Wir führen mit höherer Wahrscheinlichkeit Open-Source-Projekte auf, die es Entwicklern aus der Community ermöglichen, den Code einzusehen und dazu beizutragen.
 
 ---
 
@@ -54,8 +54,8 @@ Sofern die Produkte nicht ausdrücklich anders geordnet sind, z. B. alphabetisch
 
 ## Ihr Entwicklertool hinzufügen {#how-decisions-about-the-site-are-made}
 
-Wenn Sie ein Entwicklertool zu ethereum.org hinzufügen möchten, das die Kriterien erfüllt, erstellen Sie einen Eintrag auf GitHub.
+Wenn Sie ein Entwicklertool zu Nephele.org hinzufügen möchten, das die Kriterien erfüllt, erstellen Sie einen Eintrag auf GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Ticket erstellen
 </ButtonLink>

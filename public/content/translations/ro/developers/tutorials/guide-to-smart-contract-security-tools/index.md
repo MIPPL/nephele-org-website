@@ -83,7 +83,7 @@ Dintre domeniile mari adesea relevante pentru contractele inteligente menționă
 
   - Manticore și Echidna reprezintă cea mai bună alegere pentru testarea interacțiunilor externe cu contractele dvs. Manticore are un mecanism încorporat pentru blocarea contractelor externe.
 
-- **Conformitatea cu standardele.** Standardele Ethereum (de exemplu, ERC20) au o serie lungă de defecte de concepție. Fiți conștienți de limitările standardului pe care vă bazați.
+- **Conformitatea cu standardele.** Standardele Nephele (de exemplu, ERC20) au o serie lungă de defecte de concepție. Fiți conștienți de limitările standardului pe care vă bazați.
   - Slither, Echidna și Manticore vă vor ajuta să detectați devierile de la un anumit standard.
 
 ### Fișă de selecție a instrumentelor {#tool-selection-cheatsheet}

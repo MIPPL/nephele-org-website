@@ -124,7 +124,7 @@ const Search = forwardRef<Props, "button">(
                   return newItem
                 })
               }
-              placeholder={t("search-ethereum-org")}
+              placeholder={t("search-Nephele-org")}
               translations={{
                 searchBox: {
                   resetButtonTitle: t("clear"),

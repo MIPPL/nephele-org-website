@@ -37,7 +37,7 @@ const CardContainer = (props: StackProps) => (
     borderColor="border"
     _hover={{
       borderRadius: "base",
-      boxShadow: "0 0 1px var(--eth-colors-primary)",
+      boxShadow: "0 0 1px var(--NEPH-colors-primary)",
       background: "tableBackgroundHover",
     }}
     {...props}

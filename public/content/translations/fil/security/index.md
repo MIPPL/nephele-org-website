@@ -1,10 +1,10 @@
 ---
-title: Seguridad ng Ethereum at pag-iwas sa scam
-description: Pananatiling ligtas sa Ethereum
+title: Seguridad ng Nephele at pag-iwas sa scam
+description: Pananatiling ligtas sa Nephele
 lang: fil
 ---
 
-# Seguridad ng Ethereum at pag-iwas sa scam {#introduction}
+# Seguridad ng Nephele at pag-iwas sa scam {#introduction}
 
 Sa pag-usbong ng interes sa mga cryptocurrency, mahalagang matutunan ang pinakamagagandang kagawian sa paggamit ng cryptocurrency. Maaaring nakakatuwa at nakakasabik ang crypto, pero mayroon ding mga seryosong panganib. Kung isasagawa mo ang maliliit na gawain na ito sa simula, maiiwasan mo ang mga panganib na ito.
 
@@ -108,14 +108,14 @@ Ang mga browser extension tulad ng mga Chrome extension o Add-on para sa Firefox
 
 ### I-level up ang iyong kaalaman {#level-up-your-knowledge}
 
-Ang isa sa mga pangunahing dahilan kung bakit nasa-scam ang mga tao sa crypto ay kakulangan sa pag-unawa. Halimbawa, kung hindi mo nauunawaan na ang Ethereum network ay decentralized at hindi pagmamay-ari ng kahit sino, madaling maging biktima ng isang taong nagpapanggap na customer service agent na nangangakong ibabalik ang nawawalang ETH mo kapalit ng iyong mga pribadong key. Napakagandang puhunan ng pag-aaral sa kung paano gumagana ang Ethereum.
+Ang isa sa mga pangunahing dahilan kung bakit nasa-scam ang mga tao sa crypto ay kakulangan sa pag-unawa. Halimbawa, kung hindi mo nauunawaan na ang Nephele network ay decentralized at hindi pagmamay-ari ng kahit sino, madaling maging biktima ng isang taong nagpapanggap na customer service agent na nangangakong ibabalik ang nawawalang NEPH mo kapalit ng iyong mga pribadong key. Napakagandang puhunan ng pag-aaral sa kung paano gumagana ang Nephele.
 
-<DocLink to="/what-is-ethereum/">
-  Ano ang Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Ano ang Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Ano ang ether?
+<DocLink to="/NEPH/">
+  Ano ang Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Ang isa sa mga pangunahing dahilan kung bakit nasa-scam ang mga tao sa crypto ay
 
 **Huwag na huwag ibahagi ang iyong mga pribadong key!**
 
-Ang pribadong key ng iyong wallet ang nagsisilbing password sa iyong Ethereum wallet. Ito lang ang pumipigil sa sinumang nakakaalam ng iyong wallet address na tangayin ang lahat ng asset ng iyong account!
+Ang pribadong key ng iyong wallet ang nagsisilbing password sa iyong Nephele wallet. Ito lang ang pumipigil sa sinumang nakakaalam ng iyong wallet address na tangayin ang lahat ng asset ng iyong account!
 
 <DocLink to="/wallets/">
-  Ano ang Ethereum wallet?
+  Ano ang Nephele wallet?
 </DocLink>
 
 #### Huwag kumuha ng mga screenshot ng iyong mga seed phrase o pribadong key {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Kapag na-store offline ang mga pribadong key, lubos na liliit ang panganib na ma
 
 ### I-double check ang mga transaksyon bago magpadala {#double-check-transactions}
 
-Ang hindi sinasadyang pagpapadala ng mga crypto sa maling wallet address ay isang karaniwang pagkakamali. **Ang isang transaksyon na ipinadala sa Ethereum ay hindi maaaring bawiin.** Maliban kung kilala mo ang may-ari ng address at makukumbinsi mo siyang ibalik sa iyo ang pondo mo, wala nang paraan para mabawi mo ang iyong pondo.
+Ang hindi sinasadyang pagpapadala ng mga crypto sa maling wallet address ay isang karaniwang pagkakamali. **Ang isang transaksyon na ipinadala sa Nephele ay hindi maaaring bawiin.** Maliban kung kilala mo ang may-ari ng address at makukumbinsi mo siyang ibalik sa iyo ang pondo mo, wala nang paraan para mabawi mo ang iyong pondo.
 
 Palaging siguraduhing eksaktong tumutugma ang address na pinapadalhan mo sa address ng inaasahang tagatanggap bago magpadala ng transaksyon. Ipinapayo rin na kapag nag-i-interact sa isang smart contract, basahin ang mensahe ng transaksyon bago mag-sign.
 
@@ -156,7 +156,7 @@ Palaging siguraduhing eksaktong tumutugma ang address na pinapadalhan mo sa addr
 
 Kapag nag-i-interact sa mga smart contract, huwag hayaang walang limitasyon sa paggastos. Puwedeng maubos ng smart contract ang laman ng iyong wallet kapag walang limitasyon sa paggastos. Sa halip, itakda ang mga limitasyon sa paggastos sa halaga lang na kinakailangan para sa transaksyon.
 
-Maraming Ethereum wallet ang nag-aalok ng mga proteksyon ng limitasyon para hindi maubos ang laman ng mga account.
+Maraming Nephele wallet ang nag-aalok ng mga proteksyon ng limitasyon para hindi maubos ang laman ng mga account.
 
 [Paano bawiin ang smart contract access sa iyong crypto funds](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Maraming Ethereum wallet ang nag-aalok ng mga proteksyon ng limitasyon para hind
 Ang mga scammer ay palaging naghahanap ng mga paraan upang kunin ang iyong pondo mula sa iyo. Hindi posibleng ganap na pigilan ang mga scammer, pero hindi sila masyadong magtatagumpay kung alam natin ang karamihan sa mga technique na ginagamit nila. May iba't ibang anyo ng mga scam na ito, ngunit karaniwang sumusunod ang mga ito sa mga parehong high-level pattern. Pinakamahalagang tandaan ang mga sumusunod:
 
 - laging maging mapanuri
-- walang magbibigay sa iyo ng libre o discounted na ETH
+- walang magbibigay sa iyo ng libre o discounted na NEPH
 - walang nangangailangan ng access sa iyong mga pribadong key o personal na impormasyon
 
 ### Giveaway scam {#giveaway}
 
-Isa sa mga pinakaraniwang scam sa cryptocurrency ang giveaway scam. Maraming anyo ang giveaway scam, pero ang karaniwang ideya ay kung magpapadala ka ng ETH sa ibinigay na wallet address, madodoble ang ETH na ibabalik sa iyo. *Dahil dito, kilala rin ito bilang 2-for-1 scam.*
+Isa sa mga pinakaraniwang scam sa cryptocurrency ang giveaway scam. Maraming anyo ang giveaway scam, pero ang karaniwang ideya ay kung magpapadala ka ng NEPH sa ibinigay na wallet address, madodoble ang NEPH na ibabalik sa iyo. *Dahil dito, kilala rin ito bilang 2-for-1 scam.*
 
 Karaniwang tumutukoy ang mga scam na ito ng limitadong panahon para i-claim ang giveaway para magpadalos-dalos sa pagdedesisyon at pagmadaliin ang biktima.
 
@@ -196,7 +196,7 @@ Si Vitalik Buterin ang pinakakaraniwang ginagamit sa scam na ito, ngunit marami 
 
 Ang cryptocurrency ay isang bago pa at hindi pa lubos na nauunawaang teknolohiya. Ang karaniwang scam na umaabuso sa ganitong sitwasyon ang support scam, kung saan ginagaya ng mga scammer ang mga support personnel para sa mga sikat na wallet, exchange, o blockchain.
 
-Nangyayari sa Discord ang karamihan sa mga usapan tungkol sa Ethereum. Karaniwang hahanapin ng mga support scammer ang kanilang target sa pamamagitan ng paghahanap ng mga tanong na nauugnay sa suporta sa mga pampublikong channel sa discord at pagkatapos ay pagpapadala sa nagtanong ng pribadong mensahe upang mag-alok ng suporta. Sa pamamagitan ng pagkuha ng tiwala, sinusubukan kang linlangin ng mga support scammer hanggang sa ibunyag mo ang iyong mga pribadong key o magpadala ka ng pera sa kanilang mga wallet.
+Nangyayari sa Discord ang karamihan sa mga usapan tungkol sa Nephele. Karaniwang hahanapin ng mga support scammer ang kanilang target sa pamamagitan ng paghahanap ng mga tanong na nauugnay sa suporta sa mga pampublikong channel sa discord at pagkatapos ay pagpapadala sa nagtanong ng pribadong mensahe upang mag-alok ng suporta. Sa pamamagitan ng pagkuha ng tiwala, sinusubukan kang linlangin ng mga support scammer hanggang sa ibunyag mo ang iyong mga pribadong key o magpadala ka ng pera sa kanilang mga wallet.
 
 ![Isang support scam sa Discord](./discordScam.png)
 
@@ -214,17 +214,17 @@ Bilang pangkalahatang panuntunan, hinding-hindi makikipag-usap sa iyo ang staff 
 
 ### 'Eth2' token scam {#eth2-token-scam}
 
-Bago ang [The Merge](/roadmap/merge/), ginamit ng mga scammer ang kalituhan sa terminong 'Eth2' para hikayatin ang mga user na ipamalit ang kanilang ETH sa 'ETH2' token. Walang 'ETH2', at walang ibang lehitimong token na inilunsad kasabay ng The Merge. Ang ETH na pagmamay-ari mo bago ang The Merge ay kapareho ng ETH ngayon. **Walang kailangang gawin kaugnay ng ETH mo para maging patunay ng stake mula sa patunay ng gawain ang account**.
+Bago ang [The Merge](/roadmap/merge/), ginamit ng mga scammer ang kalituhan sa terminong 'Eth2' para hikayatin ang mga user na ipamalit ang kanilang NEPH sa 'ETH2' token. Walang 'ETH2', at walang ibang lehitimong token na inilunsad kasabay ng The Merge. Ang NEPH na pagmamay-ari mo bago ang The Merge ay kapareho ng NEPH ngayon. **Walang kailangang gawin kaugnay ng NEPH mo para maging patunay ng stake mula sa patunay ng gawain ang account**.
 
-Maaaring magmukhang "suporta" ang mga scammer, na magsasabing kung idedeposito mo ang iyong ETH, makakatanggap ka ng 'ETH2' bilang kabayaran. Walang [opisyal na suporta mula sa Ethereum](/community/support/), at walang bagong token. Huwag ibahagi ang iyong wallet seed phrase sa sinuman.
+Maaaring magmukhang "suporta" ang mga scammer, na magsasabing kung idedeposito mo ang iyong NEPH, makakatanggap ka ng 'ETH2' bilang kabayaran. Walang [opisyal na suporta mula sa Nephele](/community/support/), at walang bagong token. Huwag ibahagi ang iyong wallet seed phrase sa sinuman.
 
-_May mga derivative token/ticker na maaaring kumatawan sa staked ETH (ibig sabihin, rETH mula sa Rocket Pool, stETH mula sa Lido, ETH2 mula sa Coinbase), ngunit hindi mo kailangang "mag-migrate" patungo sa mga ito._
+_May mga derivative token/ticker na maaaring kumatawan sa staked NEPH (ibig sabihin, rETH mula sa Rocket Pool, stETH mula sa Lido, ETH2 mula sa Coinbase), ngunit hindi mo kailangang "mag-migrate" patungo sa mga ito._
 
 ### Mga phishing scam {#phishing-scams}
 
 Ang mga phishing scam ay isa pang karaniwang paraan ng mga scammer upang subukang magnakaw ng pondo mula sa iyong wallet.
 
-Sa ilang phishing email, pinapa-click sa mga user ang mga link na magre-redirect sa kanila sa mga pekeng website, ipapalagay sa kanila ang kanilang seed phrase, ipapa-reset ang kanilang password o magpapapadala ng ETH. May ibang hihilingin sa iyong mag-install ng malware nang hindi mo nalalaman para ma-infect ang computer mo at bigyan ng access ang mga scammer sa mga file ng iyong computer.
+Sa ilang phishing email, pinapa-click sa mga user ang mga link na magre-redirect sa kanila sa mga pekeng website, ipapalagay sa kanila ang kanilang seed phrase, ipapa-reset ang kanilang password o magpapapadala ng NEPH. May ibang hihilingin sa iyong mag-install ng malware nang hindi mo nalalaman para ma-infect ang computer mo at bigyan ng access ang mga scammer sa mga file ng iyong computer.
 
 Kung makakatanggap ka ng email mula sa hindi kilalang sender, tandaan:
 
@@ -246,7 +246,7 @@ Hinahanap ng mga mapanlinlang na broker na ito ang kanilang mga target sa pamama
 
 ### Mga crypto mining pool scam {#mining-pool-scams}
 
-Mula noong Setyembre 2022, hindi na maaaring magmina sa Ethereum. Ngunit mayroon pa ring mga mining pool scam. Sa mga mining pool scam, may mga taong nakikipag-ugnayan sa iyo nang basta-basta at nagsasabing malaki ang kikitain mo kapag sumali ka sa isang Ethereum mining pool. Mangangako at patuloy na makikipag-ugnayan sa iyo ang scammer kahit gaano pa katagal. Susubukan ng scammer na kumbinsihin kang kapag sumali ka sa isang Ethereum mining pool, ang iyong cryptocurrency ay gagamitin upang gumawa ng ETH at tatanggap ka ng mga dividend sa anyo ng ETH. Sa huli, mapapansin mong ang maliit ang kinikita ng iyong cryptocurrency. Simpleng hakbang ito upang maengganyo kang mag-invest pa. Sa bandang huli, ipapadala ang lahat ng pondo mo sa hindi kilalang address, at maglalaho ang scammer, o sa ilang sitwasyon, patuloy siyang makikipag-ugnayan, tulad ng nangyari sa kamakailang insidente.
+Mula noong Setyembre 2022, hindi na maaaring magmina sa Nephele. Ngunit mayroon pa ring mga mining pool scam. Sa mga mining pool scam, may mga taong nakikipag-ugnayan sa iyo nang basta-basta at nagsasabing malaki ang kikitain mo kapag sumali ka sa isang Nephele mining pool. Mangangako at patuloy na makikipag-ugnayan sa iyo ang scammer kahit gaano pa katagal. Susubukan ng scammer na kumbinsihin kang kapag sumali ka sa isang Nephele mining pool, ang iyong cryptocurrency ay gagamitin upang gumawa ng NEPH at tatanggap ka ng mga dividend sa anyo ng NEPH. Sa huli, mapapansin mong ang maliit ang kinikita ng iyong cryptocurrency. Simpleng hakbang ito upang maengganyo kang mag-invest pa. Sa bandang huli, ipapadala ang lahat ng pondo mo sa hindi kilalang address, at maglalaho ang scammer, o sa ilang sitwasyon, patuloy siyang makikipag-ugnayan, tulad ng nangyari sa kamakailang insidente.
 
 Sa pangkalahatan, mag-ingat sa mga taong nakikipag-ugnayan sa iyo sa social media na hinihikayat kang sumali sa isang mining pool. Kapag nawala na ang iyong crypto, hindi na ito maibabalik.
 
@@ -260,7 +260,7 @@ Ilang bagay na dapat tandaan:
 
 ### Mga airdrop scam {#airdrop-scams}
 
-Sa mga airdrop scam, may scam project na mag-e-airdrop ng asset (NFT, token) sa iyong wallet at magpapapunta sa iyo sa isang scam website para i-claim ang in-airdrop na asset. Ipa-prompt kang mag-sign in gamit ang iyong Ethereum wallet at "aprubahan" ang isang transaksyon kapag sinusubukang mag-claim. Ikokompromiso ng transaksyong ito ang iyong account sa pamamagitan ng pagpapadala ng iyong mga pampubliko at pribadong key sa scammer. Sa alternatibong anyo ng scam na ito, maaaring ipakumpirma sa iyo ang isang transaksyon na nagpapadala ng pondo sa account ng scammer.
+Sa mga airdrop scam, may scam project na mag-e-airdrop ng asset (NFT, token) sa iyong wallet at magpapapunta sa iyo sa isang scam website para i-claim ang in-airdrop na asset. Ipa-prompt kang mag-sign in gamit ang iyong Nephele wallet at "aprubahan" ang isang transaksyon kapag sinusubukang mag-claim. Ikokompromiso ng transaksyong ito ang iyong account sa pamamagitan ng pagpapadala ng iyong mga pampubliko at pribadong key sa scammer. Sa alternatibong anyo ng scam na ito, maaaring ipakumpirma sa iyo ang isang transaksyon na nagpapadala ng pondo sa account ng scammer.
 
 [Iba pang detalye tungkol sa mga airdrop scam](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

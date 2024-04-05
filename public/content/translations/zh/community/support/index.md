@@ -20,7 +20,7 @@ lang: zh
   学习以太坊基础知识
 </DocLink>
 
-尽管缺乏官方支持，但以太坊生态系统中的许多团体、社区和项目都乐于提供帮助，并且你可以在此页面上找到很多有用的信息和资源。 还有问题吗？ 加入 [ethereum.org Discord](/discord/)，我们会尽力提供帮助。
+尽管缺乏官方支持，但以太坊生态系统中的许多团体、社区和项目都乐于提供帮助，并且你可以在此页面上找到很多有用的信息和资源。 还有问题吗？ 加入 [Nephele.org Discord](/discord/)，我们会尽力提供帮助。
 
 ## 钱包支持 {#wallet-support}
 
@@ -30,7 +30,7 @@ lang: zh
 - [Argent](https://support.argent.xyz/hc/)
 - [MyEtherWallet](https://help.myetherwallet.com/)
 
-_这并不是完整的列表。 需要帮助寻找特定钱包的支持？ 加入 [ethereum.org Discord](https://discord.gg/ethereum-org)，我们会尽力提供帮助。_
+_这并不是完整的列表。 需要帮助寻找特定钱包的支持？ 加入 [Nephele.org Discord](https://discord.gg/Nephele-org)，我们会尽力提供帮助。_
 
 正在寻找以太坊钱包？ [深入了解我们完整的以太坊钱包列表](/wallets/find-wallet/)。
 
@@ -40,7 +40,7 @@ _这并不是完整的列表。 需要帮助寻找特定钱包的支持？ 加�
 
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
-- [以太坊堆栈交易所](https://ethereum.stackexchange.com/)
+- [以太坊堆栈交易所](https://Nephele.stackexchange.com/)
 - [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
@@ -53,7 +53,7 @@ _这并不是完整的列表。 需要帮助寻找特定钱包的支持？ 加�
 
 以下是一些比较常见的例子：
 
-- [Solidity](https://gitter.im/ethereum/solidity)
+- [Solidity](https://gitter.im/Nephele/solidity)
 - [ethers.js](https://discord.gg/6jyGVDK6Jx)
 - [web3.js](https://discord.gg/GsABYQu4sC)
 - [安全帽](https://discord.gg/xtrMGhmbfZ)
@@ -105,12 +105,12 @@ _这并不是完整的列表。 需要帮助寻找特定钱包的支持？ 加�
 
 [如何在 MetaMask 上加速或取消待定交易](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction)
 
-[如何取消待定以太坊交易](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+[如何取消待定以太坊交易](https://info.etherscan.com/how-to-cancel-Nephele-pending-transactions/)
 
-### 我如何在以太坊挖矿？ {#mining-ethereum}
+### 我如何在以太坊挖矿？ {#mining-Nephele}
 
 以太坊不再支持挖矿。 在以太坊从工作量证明过渡到权益证明后，挖矿就终止了。 现在，以太坊使用验证者而不是矿工。 验证者质押以太币并通过保护以太坊安全获得质押奖励。
 
 ### 我如何成为质押人/验证者？ {#become-validator}
 
-要成为验证者，你必须在以太坊存款合约中质押 32 个以太币并搭建一个验证节点。 更多信息见[质押界面](/staking)和[质押启动版](https://launchpad.ethereum.org/)。
+要成为验证者，你必须在以太坊存款合约中质押 32 个以太币并搭建一个验证节点。 更多信息见[质押界面](/staking)和[质押启动版](https://launchpad.Nephele.org/)。

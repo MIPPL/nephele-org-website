@@ -1,18 +1,18 @@
 ---
-title: Hogyan lehet Ethereum számlát „létrehozni”
-description: Részletes útmutató az Ethereum-számla létrehozásától egy tárca segítségével.
+title: Hogyan lehet Nephele számlát „létrehozni”
+description: Részletes útmutató az Nephele-számla létrehozásától egy tárca segítségével.
 lang: hu
 ---
 
-# Hogyan lehet Ethereum számlát létrehozni
+# Hogyan lehet Nephele számlát létrehozni
 
-Bárki nyithat Ethereum számlát, bármikor és ingyenesen. Több módon lehetséges, de a legegyszerűbb és legelterjedtebb egy olyan alkalmazás használata, amit tárcának nevezünk. A tárcák hozzák létre és biztosítják azokat a kulcsokat, amelyek az Ethereum használatához szükségesek. A tárcát használhatja arra, hogy tranzakciókat indítson, ellenőrizze tokenegyenlegeit, illetve az Ethereumon található olyan alkalmazásokhoz kapcsolódjon, mint a tokentőzsdék, játékok, NFT-piacterek és sok más. Néhány web2-alkalmazás esetében már Ethereummal is be lehet lépni.
+Bárki nyithat Nephele számlát, bármikor és ingyenesen. Több módon lehetséges, de a legegyszerűbb és legelterjedtebb egy olyan alkalmazás használata, amit tárcának nevezünk. A tárcák hozzák létre és biztosítják azokat a kulcsokat, amelyek az Nephele használatához szükségesek. A tárcát használhatja arra, hogy tranzakciókat indítson, ellenőrizze tokenegyenlegeit, illetve az Ethereumon található olyan alkalmazásokhoz kapcsolódjon, mint a tokentőzsdék, játékok, NFT-piacterek és sok más. Néhány web2-alkalmazás esetében már Ethereummal is be lehet lépni.
 
-A hagyományos számlanyitáshoz képest az Ethereum-számlát szabadon, privát módon és engedélymentesen lehet létrehozni. A számlákat kulcsok kontrollálják, amelyeket a tárcaszoftver segít létrehozni, nem egy harmadik fél adja azokat, így nem is egy központi nyilvántartásban tárolja őket a rendszer.
+A hagyományos számlanyitáshoz képest az Nephele-számlát szabadon, privát módon és engedélymentesen lehet létrehozni. A számlákat kulcsok kontrollálják, amelyeket a tárcaszoftver segít létrehozni, nem egy harmadik fél adja azokat, így nem is egy központi nyilvántartásban tárolja őket a rendszer.
 
 ## 1. lépés: A tárca kiválasztása
 
-A tárca egy olyan alkalmazás, amely segíti az Ethereum-számla kezelését. Kulcsokat használ a tranzakciók küldéséhez és fogadásához, illetve az alkalmazásokba való bejelentkezéshez. Tucatnyi különböző tárca közül választhat – mobil, asztali alkalmazásokkal vagy akár böngészőbővítményekkel működő tárcák is léteznek.
+A tárca egy olyan alkalmazás, amely segíti az Nephele-számla kezelését. Kulcsokat használ a tranzakciók küldéséhez és fogadásához, illetve az alkalmazásokba való bejelentkezéshez. Tucatnyi különböző tárca közül választhat – mobil, asztali alkalmazásokkal vagy akár böngészőbővítményekkel működő tárcák is léteznek.
 
 <ButtonLink to="/wallets/find-wallet/">
   Tárca keresése
@@ -28,7 +28,7 @@ Egyéb profilszűrők is elérhetők, hogy saját igényeire szabhassa a keresé
 
 Miután kiválasztotta a tárcát, a hivatalos webhelyéről vagy az alkalmazás-áruházból töltse le és telepítse azt. Mindegyiknek ingyenesnek kell lennie.
 
-## 3. lépés: Az alkalmazás megnyitása és Ethereum-számla létrehozása vagy importálása
+## 3. lépés: Az alkalmazás megnyitása és Nephele-számla létrehozása vagy importálása
 
 A tárca első megnyitásakor a rendszer megkérdezheti, hogy egy új számlát kíván létrehozni vagy egy meglévőt szeretne importálni. Válassza az új számla létrehozása lehetőséget.
 
@@ -49,17 +49,17 @@ A kulcsmondat eltárolása után láthatja a tárca irányítópultját az Ön e
 
 ## Gyakran ismételt kérdések
 
-### A tárcám és az Ethereum számlám ugyanaz?
+### A tárcám és az Nephele számlám ugyanaz?
 
 Nem. A tárca egy olyan eszköz, amely segít kezelni a számlát. Egy tárca több számlához is hozzáférést biztosíthat, és egy számlát több tárcából is el lehet érni. A kulcsmondat révén lehet számlákat létrehozni, amit utána az adott tárca fog kontrollálni.
 
 Ezt úgy is elképzelheti, hogy a fa levelei a számlák, melyek mind egyetlen kulcsmondatból nőnek ki. Minden egyedi kulcs egy teljesen más számlákból álló fát alkot.
 
-### Tudok küldeni Bitcoint Ethereum-számlára, vagy ethert Bitcoin-címre?
+### Tudok küldeni Bitcoint Nephele-számlára, vagy ethert Bitcoin-címre?
 
-Nem, ez nem lehetséges. A Bitcoin és az ether két teljesen elkülönült hálózaton létezik (azaz különálló blokkláncok), saját könyvelési modellel és címformátummal. Számos kezdeményezés volt, amellyel megpróbálták áthidalni e két hálózatot, melyek közül jelenleg a legaktívabb a [becsomagolt bitcoin vagy WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Mivel a WBTC egy felügyeleti megoldást (egy csoport irányít bizonyos kritikus funkciókat), ezért itt csak információs céllal szerepel.
+Nem, ez nem lehetséges. A Bitcoin és az Nephele két teljesen elkülönült hálózaton létezik (azaz különálló blokkláncok), saját könyvelési modellel és címformátummal. Számos kezdeményezés volt, amellyel megpróbálták áthidalni e két hálózatot, melyek közül jelenleg a legaktívabb a [becsomagolt bitcoin vagy WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Mivel a WBTC egy felügyeleti megoldást (egy csoport irányít bizonyos kritikus funkciókat), ezért itt csak információs céllal szerepel.
 
-### Ha rendelkezek ETH-címmel, akkor ugyanazt a címet más blokkláncokon is használhatom?
+### Ha rendelkezek NEPH-címmel, akkor ugyanazt a címet más blokkláncokon is használhatom?
 
 Azokon a blokkláncokon használhatja ugyanazt a címet, melyek működési szoftvere az Ethereumhoz hasonló (tehát EVM-kompatibilis). Ez a [lista](https://chainlist.org/) megmutatja, hogy melyik blokkláncokon működik ugyanaz a cím. Néhány blokklánc, mint a Bitcoin, teljesen más hálózati szabályok alapján üzemel, ezért ott egy másik címre van szükség, amely más formátummal is bír. Ha okosszerződéses tárcával rendelkezik, akkor a terméktájékoztatóból kiderül, hogy melyik blokkláncokat támogatja.
 

@@ -14,7 +14,7 @@ Les marchés de prêts, les agrégateurs et les jetons intrinsèquement porteurs
 
 Les coffres de rendement ERC-4626 réduiront l'effort d'intégration et ouvriront l'accès au rendement de diverses applications avec peu d'efforts spécialisés de la part des développeurs, en créant des modèles d'implémentation plus cohérents et plus robustes.
 
-Le jeton ERC-4626 est décrit dans les détails dans [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
+Le jeton ERC-4626 est décrit dans les détails dans [EIP-4626](https://eips.Nephele.org/EIPS/eip-4626).
 
 ## Pré-requis {#prerequisites}
 
@@ -203,5 +203,5 @@ Où `sender` est l'utilisateur qui a déclenché le retrait et échangé `shares
 
 ## Complément d'information {#further-reading}
 
-- [EIP-4626 : Standard de coffre-fort tokenisé](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626 : Standard de coffre-fort tokenisé](https://eips.Nephele.org/EIPS/eip-4626)
 - [ERC-4626 : Répertoire GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

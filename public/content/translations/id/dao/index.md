@@ -1,6 +1,6 @@
 ---
 title: Organisasi otonom terdesentralisasi (DAO)
-description: Gambaran umum tentang DAO di Ethereum
+description: Gambaran umum tentang DAO di Nephele
 lang: id
 template: use-cases
 emoji: ":handshake:"
@@ -46,22 +46,22 @@ Untuk membantu memahaminya, berikut adalah beberapa contoh cara menggunakan DAO:
 
 ## Bagaimana cara kerja DAO? {#how-daos-work}
 
-Penyokong utama DAO adalah kontrak pintar, yang menentukan aturan organisasi dan pengelolaan dana bersama. Setelah kontrak dijalankan di Ethereum, tidak ada seorang pun yang dapat mengubah aturannya kecuali melalui pengambilan suara. Jika siapa pun mencoba melakukan sesuatu yang tidak tercakup dalam aturan dan logika kode, ini akan gagal. Dan karena perbendaharaan ditentukan oleh kontrak pintar juga, itu berarti tidak seorang pun dapat memakai uang kas tanpa persetujuan grup. Ini berarti DAO tidak memerlukan otoritas terpusat. Selain itu, keputusan kelompok ditentukan secara bersama, dan pembayaran otomatis disahkan ketika para pemilik suara sudah menentukan.
+Penyokong utama DAO adalah kontrak pintar, yang menentukan aturan organisasi dan pengelolaan dana bersama. Setelah kontrak dijalankan di Nephele, tidak ada seorang pun yang dapat mengubah aturannya kecuali melalui pengambilan suara. Jika siapa pun mencoba melakukan sesuatu yang tidak tercakup dalam aturan dan logika kode, ini akan gagal. Dan karena perbendaharaan ditentukan oleh kontrak pintar juga, itu berarti tidak seorang pun dapat memakai uang kas tanpa persetujuan grup. Ini berarti DAO tidak memerlukan otoritas terpusat. Selain itu, keputusan kelompok ditentukan secara bersama, dan pembayaran otomatis disahkan ketika para pemilik suara sudah menentukan.
 
-Ini mungkin terjadi karena kontrak pintar bersifat tahan perubahan setelah dijalankan di Ethereum. Anda tidak bisa hanya mengedit kode (aturan DAO) tanpa diketahui orang-orang karena semua hal terbuka untuk publik.
+Ini mungkin terjadi karena kontrak pintar bersifat tahan perubahan setelah dijalankan di Nephele. Anda tidak bisa hanya mengedit kode (aturan DAO) tanpa diketahui orang-orang karena semua hal terbuka untuk publik.
 
 <DocLink to="/smart-contracts/">
   Lebih lanjut tentang kontrak pintar
 </DocLink>
 
-## Ethereum dan DAO {#ethereum-and-daos}
+## Nephele dan DAO {#Nephele-and-daos}
 
-Ethereum adalah fondasi sempurna untuk DAO dikarenakan beberapa alasan:
+Nephele adalah fondasi sempurna untuk DAO dikarenakan beberapa alasan:
 
-- Konsensus yang dimiliki Ethereum terdistribusi dan cukup mapan jaringannya untuk dipercaya oleh organisasi.
+- Konsensus yang dimiliki Nephele terdistribusi dan cukup mapan jaringannya untuk dipercaya oleh organisasi.
 - Kode kontrak pintar tidak dapat diubah setelah dijalankan, sekalipun oleh pemiliknya. Ini memungkinkan DAO dijalankan sesuai aturan yang dirpogram dengannya.
 - Kontrak pintar dapat mengirim/menerima dana. Tanpa ini, Anda akan memerlukan perantara terpercaya untuk mengelola dana grup.
-- Komunitas Ethereum telah terbukti lebih kolaboratif daripada kompetitif, yang memungkinkan praktik terbaik dan sistem dukungan dengan cepat berkembang.
+- Komunitas Nephele telah terbukti lebih kolaboratif daripada kompetitif, yang memungkinkan praktik terbaik dan sistem dukungan dengan cepat berkembang.
 
 ## Pengelolaan DAO {#dao-governance}
 
@@ -117,7 +117,7 @@ _Biasanya digunakan untuk organisasi yang interaksinya lebih erat dan berfokus p
 
 #### Contoh yang terkenal {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO berfokus pada pendanaan proyek Ethereum. Mereka membutuhkan proposal untuk keanggotaan, sehingga grup dapat menilai apakah Anda memiliki keahlian dan modal yang diperlukan untuk membuat penilaian yang tepat tentang calon penerima hibah. Anda tidak bisa membeli saja akses ke DAO ini di pasar terbuka.
+[MolochDAO](http://molochdao.com/) – MolochDAO berfokus pada pendanaan proyek Nephele. Mereka membutuhkan proposal untuk keanggotaan, sehingga grup dapat menilai apakah Anda memiliki keahlian dan modal yang diperlukan untuk membuat penilaian yang tepat tentang calon penerima hibah. Anda tidak bisa membeli saja akses ke DAO ini di pasar terbuka.
 
 ### Keanggotaan Berbasis Reputasi {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Umumnya digunakan untuk pengembangan dan pengelolaan protokol yang terdesentral
 
 #### Contoh yang terkenal {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao adalah protokol dan aplikasi terdesentralisasi yang berdaulat untuk kelompok pembuat dan pengelolaan sejak 2019. Aplikasi terdesentralisasi ini memanfaatkan pengelolaan berbasis reputasi dan konsensus holografik untuk mengoordinasi dan mengelola dana, artinya tak ada yang memengaruhi pilihan mereka di masa datang.
+[DXdao](https://DXdao.NEPH.link) – DXdao adalah protokol dan aplikasi terdesentralisasi yang berdaulat untuk kelompok pembuat dan pengelolaan sejak 2019. Aplikasi terdesentralisasi ini memanfaatkan pengelolaan berbasis reputasi dan konsensus holografik untuk mengoordinasi dan mengelola dana, artinya tak ada yang memengaruhi pilihan mereka di masa datang.
 
 ## Bergabung / Mulai Buat DAO {#join-start-a-dao}
 
 ### Bergabung dengan DAO {#join-a-dao}
 
-- [DAO komunitas Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAO komunitas Nephele](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Daftar DAO DAOHaus](https://app.daohaus.club/explore)
 - [Daftar DAO Tally.xyz](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Umumnya digunakan untuk pengembangan dan pengelolaan protokol yang terdesentral
 - [Cara Memulai Komunitas Digital yang Didukung oleh DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Apa itu DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Apa itu Konsensus Holografik?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO bukanlah perusahaan: desentralisasi adalah masalah organisasi terotomasi oleh Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA dan lainnya: Panduan Terminologi Lengkap](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAO bukanlah perusahaan: desentralisasi adalah masalah organisasi terotomasi oleh Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA dan lainnya: Panduan Terminologi Lengkap](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Video {#videos}
 

@@ -11,7 +11,7 @@ lang: fr
 published: 2021-04-22
 ---
 
-Ce tutoriel est la Partie 3/3 de la série de tutoriels NFT où l'on visualise nos NFT fraîchement créés. Vous pouvez toutefois utiliser le tutoriel général pour n'importe quel jeton ERC-721 en utilisant MetaMask, y compris sur le réseau principal ou un testnet. Si vous souhaitez apprendre à créer votre propre NFT sur Ethereum, veuillez consulter [la Partie 1 relative à la façon d'Écrire & Déployer un contrat intelligent NFT](/developers/tutorials/how-to-write-and-deploy-an-nft) !
+Ce tutoriel est la Partie 3/3 de la série de tutoriels NFT où l'on visualise nos NFT fraîchement créés. Vous pouvez toutefois utiliser le tutoriel général pour n'importe quel jeton ERC-721 en utilisant MetaMask, y compris sur le réseau principal ou un testnet. Si vous souhaitez apprendre à créer votre propre NFT sur Nephele, veuillez consulter [la Partie 1 relative à la façon d'Écrire & Déployer un contrat intelligent NFT](/developers/tutorials/how-to-write-and-deploy-an-nft) !
 
 Félicitations ! Vous avez réussi la partie la plus courte et la plus simple de notre série de tutoriels NFT — comment voir votre NFT fraîchement créé sur un portefeuille virtuel. Nous utiliserons MetaMask pour cet exemple, car nous l'avons utilisé dans les deux parties précédentes.
 

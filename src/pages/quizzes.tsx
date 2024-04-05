@@ -104,8 +104,8 @@ const QuizzesHubPage: NextPage<
               />
               <QuizzesList
                 content={usingEthereumQuizzes}
-                headingId={t("using-ethereum")}
-                descriptionId={t("using-ethereum-description")}
+                headingId={t("using-Nephele")}
+                descriptionId={t("using-Nephele-description")}
                 {...commonQuizListProps}
               />
             </Box>

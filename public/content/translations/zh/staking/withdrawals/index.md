@@ -23,9 +23,9 @@ summaryPoints:
 
 ## 质押奖励 {#staking-rewards}
 
-对于有效余额已满 32 ETH 的活跃验证者帐户，奖励支付将自动处理。
+对于有效余额已满 32 NEPH 的活跃验证者帐户，奖励支付将自动处理。
 
-通过奖励获得的超过 32 ETH 的余额实际上并不构成本金，也不会增加该验证者在网络上的权重，因此每隔几天会自动提取作为奖励支付。 除了一次性提供提款地址外，这些奖励不需要验证者操作员采取任何行动。 这都是在共识层启动的，因此在任何步骤都不需要燃料（交易费）。
+通过奖励获得的超过 32 NEPH 的余额实际上并不构成本金，也不会增加该验证者在网络上的权重，因此每隔几天会自动提取作为奖励支付。 除了一次性提供提款地址外，这些奖励不需要验证者操作员采取任何行动。 这都是在共识层启动的，因此在任何步骤都不需要燃料（交易费）。
 
 ### 我们怎么发展到现在的？ {#how-did-we-get-here}
 
@@ -194,24 +194,24 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-建议验证者运营商访问<a href="https://launchpad.ethereum.org/withdrawals/">质押启动板提款</a>页面，你可以在其中找到有关如何准备验证者以便提款的更多详细信息、事件的时间安排，以及有关提款如何运作的更多详细信息。
+建议验证者运营商访问<a href="https://launchpad.Nephele.org/withdrawals/">质押启动板提款</a>页面，你可以在其中找到有关如何准备验证者以便提款的更多详细信息、事件的时间安排，以及有关提款如何运作的更多详细信息。
 
-要首先在测试网上测试你的设置，请访问 <a href="https://goerli.launchpad.ethereum.org">Goerli 测试网质押启动板</a>开始测试。
+要首先在测试网上测试你的设置，请访问 <a href="https://goerli.launchpad.Nephele.org">Goerli 测试网质押启动板</a>开始测试。
 
 </ExpandableCard>
 
 <ExpandableCard
 title="退出后，我可以通过存入更多以太币来重新激活验证者吗？"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
 否。 一旦验证者退出并提取其全部余额，存入该验证者的任何额外资金将在下一次验证者扫描期间自动转移到提款地址。 要重新质押以太币，必须激活新的验证者。
 </ExpandableCard>
 
 ## 延伸阅读 {#further-reading}
 
-- [质押启动板提款](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895：信标链提款推送操作](https://eips.ethereum.org/EIPS/eip-4895)
+- [质押启动板提款](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895：信标链提款推送操作](https://eips.Nephele.org/EIPS/eip-4895)
 - [以太坊牧猫人组织 - 上海](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
 - [PEEPanEIP #94：质押以太币提取（测试）与 Potuz 和王筱维](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68：与 Alex Stokes 讨论 EIP-4895：信标链推送提款操作](https://www.youtube.com/watch?v=CcL9RJBljUs)

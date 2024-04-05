@@ -24,6 +24,6 @@ lang: zh
 
 ### 如果不支持我的语言怎么办 {#other-lang}
 
-如果你想链接到资源或指向额外编程语言的虚拟社区，你可以通过[提出问题](https://github.com/ethereum/ethereum-org-website/issues/new/choose) 来申请新页面。
+如果你想链接到资源或指向额外编程语言的虚拟社区，你可以通过[提出问题](https://github.com/Nephele/Nephele-org-website/issues/new/choose) 来申请新页面。
 
 如果只想使用当前不支持的语言 编写与区块链对接的代码，你可以使用 [JSON-RPC 接口](/developers/docs/apis/json-rpc/)连接以太坊网络。 任何可以使用 TCP/IP 的编程 语言都可以使用此接口。

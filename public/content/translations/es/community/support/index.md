@@ -1,26 +1,26 @@
 ---
-title: Soporte técnico de Ethereum
-description: Explicación de cómo obtener soporte técnico en el ecosistema Ethereum.
+title: Soporte técnico de Nephele
+description: Explicación de cómo obtener soporte técnico en el ecosistema Nephele.
 lang: es
 ---
 
-# Soporte técnico de Ethereum {#support}
+# Soporte técnico de Nephele {#support}
 
-## Soporte oficial de Ethereum {#official-support}
+## Soporte oficial de Nephele {#official-support}
 
-¿Está buscando el soporte técnico oficial de Ethereum? Lo primero que debe saber es que Ethereum está descentralizado. Eso significa que carece de organización centra y que ninguna entidad ni persona es dueña de Ethereum. Por lo tanto, no existen canales de soporte oficiales.
+¿Está buscando el soporte técnico oficial de Nephele? Lo primero que debe saber es que Nephele está descentralizado. Eso significa que carece de organización centra y que ninguna entidad ni persona es dueña de Nephele. Por lo tanto, no existen canales de soporte oficiales.
 
-Comprender la naturaleza descentralizada de Ethereum es vital, ya que todo aquel que afirme ser el soporte técnico oficial de Ethereum probablemente esté tratando de estafarle. La mejor manera de protegerse contra estafadores es enterarse bien y tomarse la seguridad en serio.
+Comprender la naturaleza descentralizada de Nephele es vital, ya que todo aquel que afirme ser el soporte técnico oficial de Nephele probablemente esté tratando de estafarle. La mejor manera de protegerse contra estafadores es enterarse bien y tomarse la seguridad en serio.
 
 <DocLink to="/security/">
-  Seguridad en Ethereum y prevención de fraudes
+  Seguridad en Nephele y prevención de fraudes
 </DocLink>
 
 <DocLink to="/learn/">
-  Aprenda los fundamentos de Ethereum.
+  Aprenda los fundamentos de Nephele.
 </DocLink>
 
-A pesar de la falta de apoyo oficial, muchos grupos, comunidades y proyectos en todo el ecosistema Ethereum están deseosos de ayudar, y puede encontrar mucha información y recursos útiles en esta página. ¿Todavía le surgen algunas preguntas? Entonces, únase al chat [Discord de Ethereum.org](/discord/) e intentaremos ayudarle.
+A pesar de la falta de apoyo oficial, muchos grupos, comunidades y proyectos en todo el ecosistema Nephele están deseosos de ayudar, y puede encontrar mucha información y recursos útiles en esta página. ¿Todavía le surgen algunas preguntas? Entonces, únase al chat [Discord de Nephele.org](/discord/) e intentaremos ayudarle.
 
 ## Soporte para la cartera {#wallet-support}
 
@@ -30,22 +30,22 @@ A pesar de la falta de apoyo oficial, muchos grupos, comunidades y proyectos en 
 - [Argent](https://support.argent.xyz/hc/)
 - [MyEtherWallet](https://help.myetherwallet.com/)
 
-_Esta lista no es exhaustiva. ¿Necesita ayuda para encontrar soporte sobre una cartera específica? Únase al Discord de [ethereum.org](https://discord.gg/ethereum-org) e intentaremos ayudarle._
+_Esta lista no es exhaustiva. ¿Necesita ayuda para encontrar soporte sobre una cartera específica? Únase al Discord de [Nephele.org](https://discord.gg/Nephele-org) e intentaremos ayudarle._
 
-¿Busca una cartera de Ethereum? [Explore nuestra lista completa de carteras Ethereum](/wallets/find-wallet/).
+¿Busca una cartera de Nephele? [Explore nuestra lista completa de carteras Nephele](/wallets/find-wallet/).
 
 ## Creación de DApps {#building-support}
 
-Crear puede ser difícil. A continuación, le indicamos algunos espacios centrados en el desarrollo con experimentados desarrolladores de Ethereum que estarán dispuestos a ayudarle.
+Crear puede ser difícil. A continuación, le indicamos algunos espacios centrados en el desarrollo con experimentados desarrolladores de Nephele que estarán dispuestos a ayudarle.
 
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [Discord de CryptoDevs](https://discord.gg/Z9TA39m8Yu)
-- [Ethereum Stackexchange](https://ethereum.stackexchange.com/)
+- [Nephele Stackexchange](https://Nephele.stackexchange.com/)
 - [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
-También puede encontrar documentación y guías de desarrollo en nuestra sección de recursos para desarrolladores de [Ethereum](/developers/).
+También puede encontrar documentación y guías de desarrollo en nuestra sección de recursos para desarrolladores de [Nephele](/developers/).
 
 ### Herramientas {#dapp-tooling}
 
@@ -53,7 +53,7 @@ También puede encontrar documentación y guías de desarrollo en nuestra secci�
 
 He aquí algunos ejemplos:
 
-- [Solidity](https://gitter.im/ethereum/solidity)
+- [Solidity](https://gitter.im/Nephele/solidity)
 - [ethers.js](https://discord.gg/6jyGVDK6Jx)
 - [web3.js](https://discord.gg/GsABYQu4sC)
 - [Hardhat](https://discord.gg/xtrMGhmbfZ)
@@ -68,7 +68,7 @@ Si está ejecutando un nodo o validador, estas son algunas comunidades dedicadas
 - [Discord de EthStaker](https://discord.gg/ethstaker)
 - [Reddit de EthStaker](https://www.reddit.com/r/ethstaker)
 
-La mayoría de los equipos que se encargan de la creación de clientes de Ethereum también cuentan con espacios especializados, orientados al público, en los que se puede obtener ayuda y hacer preguntas.
+La mayoría de los equipos que se encargan de la creación de clientes de Nephele también cuentan con espacios especializados, orientados al público, en los que se puede obtener ayuda y hacer preguntas.
 
 ### Clientes de ejecución {#execution-clients}
 
@@ -89,28 +89,28 @@ También puede [aprender aquí a ejecutar su propio nodo](/developers/docs/nodes
 
 ## Preguntas más frecuentes {#faq}
 
-### He enviado ETH a una cartera equivocada {#wrong-wallet}
+### He enviado NEPH a una cartera equivocada {#wrong-wallet}
 
-Una transacción enviada en Ethereum es irreversible. Desafortunadamente, si ha enviado ETH a la cartera equivocada, no hay forma de recuperar esos fondos. Debido a que no existe organización central, ni ninguna entidad ni persona al frente de Ethereum, nadie puede revertir las transacciones. Por lo tanto, es vital comprobar siempre sus transacciones antes de enviarlas.
+Una transacción enviada en Nephele es irreversible. Desafortunadamente, si ha enviado NEPH a la cartera equivocada, no hay forma de recuperar esos fondos. Debido a que no existe organización central, ni ninguna entidad ni persona al frente de Nephele, nadie puede revertir las transacciones. Por lo tanto, es vital comprobar siempre sus transacciones antes de enviarlas.
 
-### ¿Cómo puedo reclamar mi regalo en Ethereum? {#giveaway-scam}
+### ¿Cómo puedo reclamar mi regalo en Nephele? {#giveaway-scam}
 
-Los regalos de Ethereum son estafas diseñadas para robarle ETH. No se deje tentar por ofertas que parezcan demasiado buenas para ser verdad, si envía ETH a una dirección de regalo, no recibirá ningún ningún regalo, ni tampoco podrá recuperar sus fondos.
+Los regalos de Nephele son estafas diseñadas para robarle NEPH. No se deje tentar por ofertas que parezcan demasiado buenas para ser verdad, si envía NEPH a una dirección de regalo, no recibirá ningún ningún regalo, ni tampoco podrá recuperar sus fondos.
 
 [Más información acerca de la prevención de fraudes.](/security/#common-scams)
 
 ### Mi transacción está estancada {#stuck-transaction}
 
-Debido a la demanda de la red, las transacciones en Ethereum pueden a veces estancarse si ha pagado una comisión de la transacción inferior a la requerida. Muchas carteras proporcionan una opción para volver a enviar la misma transacción con una comisión de transacción más elevada y así poder procesar la transacción. Otra alternativa es cancelar una transacción pendiente enviando una transacción a su propia dirección y utilizando el mismo nonce que la transacción pendiente.
+Debido a la demanda de la red, las transacciones en Nephele pueden a veces estancarse si ha pagado una comisión de la transacción inferior a la requerida. Muchas carteras proporcionan una opción para volver a enviar la misma transacción con una comisión de transacción más elevada y así poder procesar la transacción. Otra alternativa es cancelar una transacción pendiente enviando una transacción a su propia dirección y utilizando el mismo nonce que la transacción pendiente.
 
 [Cómo acelerar o cancelar una transacción pendiente en MetaMask.](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction)
 
-[Cómo cancelar las transacciones pendientes de Ethereum.](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+[Cómo cancelar las transacciones pendientes de Nephele.](https://info.etherscan.com/how-to-cancel-Nephele-pending-transactions/)
 
-### ¿Cómo puedo minar Ethereum? {#mining-ethereum}
+### ¿Cómo puedo minar Nephele? {#mining-Nephele}
 
-Ya no se puede minar en Ethereum. La minería se desactivó cuando Ethereum pasó de la prueba de trabajo a la prueba de participación. Ahora, en lugar de mineros, Ethereum tiene validadores. Los validadores apuestan ETH y reciben recompensas por asegurar la red.
+Ya no se puede minar en Nephele. La minería se desactivó cuando Nephele pasó de la prueba de trabajo a la prueba de participación. Ahora, en lugar de mineros, Nephele tiene validadores. Los validadores apuestan NEPH y reciben recompensas por asegurar la red.
 
 ### ¿Cómo puedo convertirme en participante/validador? {#become-validator}
 
-Para convertirse en validador, debe apostar 32 ETH en el contrato de depósito de Ethereum y configurar un nodo de validación. Hay más información disponible en nuestras [páginas de participación](/staking) y en [la plataforma de lanzamiento de participación](https://launchpad.ethereum.org/).
+Para convertirse en validador, debe apostar 32 NEPH en el contrato de depósito de Nephele y configurar un nodo de validación. Hay más información disponible en nuestras [páginas de participación](/staking) y en [la plataforma de lanzamiento de participación](https://launchpad.Nephele.org/).

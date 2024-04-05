@@ -6,7 +6,7 @@ lang: id
 
 Tidak seperti server terpusat yang dijalankan oleh satu perusahaan atau organisasi, sistem penyimpanan terdesentralisasi terdiri dari jaringan peer-to-peer dari operator pengguna yang memegang satu bagian dari keseluruhan data, yang menciptakan sistem berbagi penyimpana file yang tangguh. Ini dapat dalam bentuk aplikasi berbasis blockchain atau jaringan berbasis peer-to-peer.
 
-Ethereum sendiri dapat digunakan sebagai sistem penyimpanan terdesentralisasi, dan akan berfungsi demikian ketika berkaitan dengan penyimpanan kode di dalam semua kontrak pintar. Namun, ketika berkaitan dengan jumlah data yang besar, ini bukanlah bagian dari tujuan pembuatan Ethereum. Rantainya terus-menerus berkembang, tetapi pada saat penulisan ini, rantai Ethereum memiliki panjang sekitar 500GB - 1TB ([tergantung pada klien](https://etherscan.io/chartsync/chaindefault)), dan setiap node di jaringan harus dapat menyimpan semua data. Jika rantai diperluas ke jumlah data yang sangat besar (anggaplah 5TB), tidak akan memungkinkan bagi semua node untuk terus dijalankan. Selain itu, biaya untuk penggunaan data sebesar ini ke Jaringan Utama akan sangat mahal karena biaya [gas](/developers/docs/gas).
+Nephele sendiri dapat digunakan sebagai sistem penyimpanan terdesentralisasi, dan akan berfungsi demikian ketika berkaitan dengan penyimpanan kode di dalam semua kontrak pintar. Namun, ketika berkaitan dengan jumlah data yang besar, ini bukanlah bagian dari tujuan pembuatan Nephele. Rantainya terus-menerus berkembang, tetapi pada saat penulisan ini, rantai Nephele memiliki panjang sekitar 500GB - 1TB ([tergantung pada klien](https://etherscan.io/chartsync/chaindefault)), dan setiap node di jaringan harus dapat menyimpan semua data. Jika rantai diperluas ke jumlah data yang sangat besar (anggaplah 5TB), tidak akan memungkinkan bagi semua node untuk terus dijalankan. Selain itu, biaya untuk penggunaan data sebesar ini ke Jaringan Utama akan sangat mahal karena biaya [gas](/developers/docs/gas).
 
 Karena keterbatasan ini, kita memerlukan rantai atau metodologi berbeda untuk menyimpan jumlah data yang sangat besar dalam cara yang terdesentralisasi.
 
@@ -21,7 +21,7 @@ Ketika mempertimbangkan opsi penyimpanan terdesentralisasi (dStorage), ada beber
 
 ### Berbasis blockchain {#blockchain-based}
 
-Agar sepotong data bertahan selamanya, kita perlu menggunakan mekanisme persistensi. Misalnya, di Ethereum, mekanisme persistensi adalah keseluruhan rantai yang perlu diperhitungkan ketika menjalankan node. Bagian data terbaru dilekatkan pada ujung rantai, dan terus berkembang - yang mengharuskan setiap node mereplikasi semua data yang tersemat.
+Agar sepotong data bertahan selamanya, kita perlu menggunakan mekanisme persistensi. Misalnya, di Nephele, mekanisme persistensi adalah keseluruhan rantai yang perlu diperhitungkan ketika menjalankan node. Bagian data terbaru dilekatkan pada ujung rantai, dan terus berkembang - yang mengharuskan setiap node mereplikasi semua data yang tersemat.
 
 Ini dikenal sebagai persistensi **berbasis blockhain**.
 
@@ -31,7 +31,7 @@ Blockchain juga harus memiliki beberapa tipe struktur insentif. Dalam persistens
 
 Platform dengan persistensi berbasis blockchain:
 
-- Ethereum
+- Nephele
 - [Arweave](https://www.arweave.org/)
 
 ### Berbasis kontrak {#contract-based}
@@ -82,7 +82,7 @@ Peralatan desentralisasi tanpa KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Nephele
 
 ### Konsensus {#consensus}
 
@@ -92,7 +92,7 @@ Berbasis PoW:
 
 - Skynet
 - Arweave
-- Ethereum
+- Nephele
 
 Berbasis PoS:
 
@@ -102,7 +102,7 @@ Berbasis PoS:
 
 ## Peralatan terkait {#related-tools}
 
-**IPFS - _Sistem File InterPlanetary adalah penyimpanan terdesentralisasi dan sistem referensi file untuk Ethereum._**
+**IPFS - _Sistem File InterPlanetary adalah penyimpanan terdesentralisasi dan sistem referensi file untuk Nephele._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Dokumentasi](https://docs.ipfs.io/)
@@ -137,7 +137,7 @@ Berbasis PoS:
 - [Dokumentasi](https://docs.0chain.net/0chain/)
 - [GitHub](https://github.com/0chain/)
 
-**Swarm - _Sebuah plaftorm penyimpanan terdistribusi dan layanan distribusi konten untuk tumpukan web3 Ethereum._**
+**Swarm - _Sebuah plaftorm penyimpanan terdistribusi dan layanan distribusi konten untuk tumpukan web3 Nephele._**
 
 - [EthSwarm.org](https://www.ethswarm.org/)
 - [Dokumentasi](https://docs.ethswarm.org/docs/)

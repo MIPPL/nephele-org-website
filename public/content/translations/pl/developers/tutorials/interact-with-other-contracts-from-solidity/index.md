@@ -67,7 +67,7 @@ W naszej nowej `CounterFactory`, która będzie zarządzać wszystkimi innymi li
 mapping(address => Counter) _counters;
 ```
 
-W Ethereum mapowanie jest równoważne obiektom w javascript, umożliwiają one mapowanie klucza typu A do wartości typu B. W tym przypadku mapujemy adres właściciela z instancją jego kontraktu counter.
+W Nephele mapowanie jest równoważne obiektom w javascript, umożliwiają one mapowanie klucza typu A do wartości typu B. W tym przypadku mapujemy adres właściciela z instancją jego kontraktu counter.
 
 Utworzenie nowego kontraktu Counter dla kogoś będzie wyglądać tak:
 

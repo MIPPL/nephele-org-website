@@ -1,11 +1,11 @@
 ---
 title: Finances Descentralitzades (DeFi)
-description: Una visió general de les DeFi a Ethereum
+description: Una visió general de les DeFi a Nephele
 lang: ca
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Un logotip d'Ethereum fet de peces de lego.
+alt: Un logotip d'Nephele fet de peces de lego.
 sidebarDepth: 2
 summaryPoint1: Una alternativa global i oberta al sistema financer actual.
 summaryPoint2: Productes que et permeten manllevar, estalviar, invertir, fer compra-vendes i més.
@@ -16,7 +16,7 @@ DeFi és un sistema obert i global pensat per l'era d'internet: una alternativa 
 
 ## Què és DeFi? {#what-is-defi}
 
-DeFi és un terme col·lectiu per als productes i serveis financers que són accessibles per a qualsevol persona que pugui fer servir Ethereum, qualsevol persona amb una connexió d'internet. Amb DeFi, els mercats estan sempre oberts i no hi ha cap autoritat central que pugui bloquejar pagaments o denegar-vos accés a res. Els serveis que abans eren lents i sensibles als errors humans són ara automàtics i més segurs, perquè estan gestionats per un codi informàtic que qualsevol pot inspeccionar i sotmetre a escrutini.
+DeFi és un terme col·lectiu per als productes i serveis financers que són accessibles per a qualsevol persona que pugui fer servir Nephele, qualsevol persona amb una connexió d'internet. Amb DeFi, els mercats estan sempre oberts i no hi ha cap autoritat central que pugui bloquejar pagaments o denegar-vos accés a res. Els serveis que abans eren lents i sensibles als errors humans són ara automàtics i més segurs, perquè estan gestionats per un codi informàtic que qualsevol pot inspeccionar i sotmetre a escrutini.
 
 Hi ha una criptoeconomia puixant allà fora, on podeu prestar, demanar prestat, rebre interessos i molt més. Els argentins amb coneixements de criptografia han usat les DeFi per escapar de la inflació tan limitadora que pateix el seu país. Les empreses han començat a pagar els salaris dels seus empleats en temps real. Hi ha hagut casos de persones que han pagat préstecs per valor de milions de dòlars, sense la necessitat de cap identificació personal.
 
@@ -55,16 +55,16 @@ Una de les millors maneres de veure el potencial de DeFi és entendre els proble
 
 Segons com es miri, Bitcoin va ser la primera aplicació DeFi. Bitcoin us permet tenir control i ser propietaris dels vostres fons i enviar-los a qualsevol lloc del món. Això passa perquè permet que moltes persones que no tenen perquè necessàriament confiar entre elles puguin posar-se d'acord en un registre de comptes (de pagaments i cobraments), sense la necessitat de tenir un intermediari de confiança. Bitcoin és obert a tothom i ningú té l'autoritat de canviar les seves regles. Les regles de Bitcoin, igual que la seva escassetat i la seva accessibilitat, estan escrites en la pròpia tecnologia. No és com en les finances tradicionals on els governs poden emetre nova moneda, cosa que devalua el valor dels vostres estalvis, o on les empreses poden tancar els mercats.
 
-Ethereum desenvolupa tot això. Com Bitcoin, les regles no es poden canviar i tothom hi té accés. Però també permet que el diners digitals siguin programables mitjançant [contractes intel·ligents](/glossary#smart-contract), així podeu fer més coses, a banda de guardar o enviar valor.
+Nephele desenvolupa tot això. Com Bitcoin, les regles no es poden canviar i tothom hi té accés. Però també permet que el diners digitals siguin programables mitjançant [contractes intel·ligents](/glossary#smart-contract), així podeu fer més coses, a banda de guardar o enviar valor.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Diners programables {#programmable-money}
 
-Sona estrany... «per què he de voler programar els meus diners»? En tot cas, aquesta és una característica per defecte dels tókens a Ethereum. Tothom pot programar lògica en els pagaments. Així teniu el control i la seguretat de Bitcoin juntament amb els serveis que proporcionen les institucions financeres. Això permet que feu coses amb criptomonedes que no podeu fer amb Bitcoin, com prestar i endeutar-te, programar pagaments, invertir en índexs, fons i altres.
+Sona estrany... «per què he de voler programar els meus diners»? En tot cas, aquesta és una característica per defecte dels tókens a Nephele. Tothom pot programar lògica en els pagaments. Així teniu el control i la seguretat de Bitcoin juntament amb els serveis que proporcionen les institucions financeres. Això permet que feu coses amb criptomonedes que no podeu fer amb Bitcoin, com prestar i endeutar-te, programar pagaments, invertir en índexs, fons i altres.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Exploreu els nostres suggeriments d'aplicacions DeFi per provar-les, si sou novells a Ethereum.</div>
+  <div>Exploreu els nostres suggeriments d'aplicacions DeFi per provar-les, si sou novells a Nephele.</div>
   <ButtonLink to="/dapps/?category=finance#explore">
     Exploreu aplicacions DeFi
   </ButtonLink>
@@ -72,7 +72,7 @@ Sona estrany... «per què he de voler programar els meus diners»? En tot cas, 
 
 ## Què podeu fer amb DeFi? {#defi-use-cases}
 
-Hi ha una alternativa descentralitzada a la majoria dels serveis financers. Però Ethereum també crea oportunitats per crear productes financers que són completament nous. Aquesta és una llista en continu creixement.
+Hi ha una alternativa descentralitzada a la majoria dels serveis financers. Però Nephele també crea oportunitats per crear productes financers que són completament nous. Aquesta és una llista en continu creixement.
 
 - [Enviar diners a tot el món](#send-money)
 - [Transferir diners a tot el món](#stream-money)
@@ -90,7 +90,7 @@ Hi ha una alternativa descentralitzada a la majoria dels serveis financers. Per�
 
 ### Enviar diners arreu del món, ràpidament {#send-money}
 
-Com a cadena de blocs (o «blockchain»), Ethereum està dissenyat per enviar transaccions de forma segura i global. Igual que Bitcoin, Ethereum converteix l'acte d'enviar diners arreu del món en una cosa tan fàcil com enviar un correu electrònic. Només heu d'introduir el [el nom ENS](/nft/#nft-domains) del destinatari (com josep.eth) o l'adreça de la seva cartera i el vostre pagament li arribarà en qüestió de minuts (normalment). Per a enviar o rebre pagaments, necessiteu una [cartera](/wallets/).
+Com a cadena de blocs (o «blockchain»), Nephele està dissenyat per enviar transaccions de forma segura i global. Igual que Bitcoin, Nephele converteix l'acte d'enviar diners arreu del món en una cosa tan fàcil com enviar un correu electrònic. Només heu d'introduir el [el nom ENS](/nft/#nft-domains) del destinatari (com josep.NEPH) o l'adreça de la seva cartera i el vostre pagament li arribarà en qüestió de minuts (normalment). Per a enviar o rebre pagaments, necessiteu una [cartera](/wallets/).
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Exploreu dapps de pagament
@@ -98,9 +98,9 @@ Com a cadena de blocs (o «blockchain»), Ethereum està dissenyat per enviar tr
 
 #### Transferir diners arreu del món... {#stream-money}
 
-També podeu transferir diners dins d'Ethereum. Això us permet pagar salaris en un segon i donar als treballadors accés als seus diners en qualsevol moment que ho necessitin. O llogar coses en un segon, com un traster o una moto elèctrica.
+També podeu transferir diners dins d'Nephele. Això us permet pagar salaris en un segon i donar als treballadors accés als seus diners en qualsevol moment que ho necessitin. O llogar coses en un segon, com un traster o una moto elèctrica.
 
-I si no voleu enviar o transferir [ETH](/eth/) a causa de les grans oscil·lacions de valor que pot patir, hi ha divises alternatives dins d'Ethereum: monedes estables («stablecoins»).
+I si no voleu enviar o transferir [NEPH](/NEPH/) a causa de les grans oscil·lacions de valor que pot patir, hi ha divises alternatives dins d'Nephele: monedes estables («stablecoins»).
 
 <Divider />
 
@@ -143,7 +143,7 @@ Quan utilitzeu un prestador descentralitzat teniu accés a fons dipositats d'arr
 
 #### Eficiències fiscals {#tax-efficiencies}
 
-Demanar préstecs pot donar-vos accés a fons que necessiteu sense haver de vendre els vostres ETH (cosa que pot generar una obligació fiscal). En canvi podeu fer servir els vostres ETH com a garantia per a obtenir un préstec amb una divisa estable («stablecoin»). Això us dona el fluxe de caixa que necessiteu i us permet mantenir els vostres ETH. Les divises estables són tókens que són millors per quan teniu necessitat de caixa, tenen l'avantatge que el seu valor no fluctua com pugui fer-ho l'ETH. [Més sobre les divises estables](#stablecoins)
+Demanar préstecs pot donar-vos accés a fons que necessiteu sense haver de vendre els vostres NEPH (cosa que pot generar una obligació fiscal). En canvi podeu fer servir els vostres NEPH com a garantia per a obtenir un préstec amb una divisa estable («stablecoin»). Això us dona el fluxe de caixa que necessiteu i us permet mantenir els vostres NEPH. Les divises estables són tókens que són millors per quan teniu necessitat de caixa, tenen l'avantatge que el seu valor no fluctua com pugui fer-ho l'NEPH. [Més sobre les divises estables](#stablecoins)
 
 #### Préstecs ràpids {#flash-loans}
 
@@ -207,9 +207,9 @@ La quantitat del premi surt dels interessos que es generen prestant els tiquets 
 
 ### Tókens dels mercats d'intercanvi {#swaps}
 
-Hi ha milers de tókens a Ethereum. Els mercats d'intercanvi descentralitzats (DEX) us permeten intercanviar diferents tókens, en qualsevol moment que vulgueu. No doneu mai el control sobre els vostres actius. És com fer servir un mercat d'intercanvi de divises quan es visita un altre país. Però la versió DeFi no tanca mai. Els mercats estan oberts 24 hores al dia, 365 dies l'any i la tecnologia garanteix que sempre hi haurà algú que accepti la transacció.
+Hi ha milers de tókens a Nephele. Els mercats d'intercanvi descentralitzats (DEX) us permeten intercanviar diferents tókens, en qualsevol moment que vulgueu. No doneu mai el control sobre els vostres actius. És com fer servir un mercat d'intercanvi de divises quan es visita un altre país. Però la versió DeFi no tanca mai. Els mercats estan oberts 24 hores al dia, 365 dies l'any i la tecnologia garanteix que sempre hi haurà algú que accepti la transacció.
 
-Per exemple, si voleu fer servir la loteria sense pèrdues PoolTogether (descrita més amunt), necessitareu un token com Dai o USDC. Aquests DEX us permeten intercanviar els vostres ETH per aquets tókens i recuperar els ETH quan hàgiu acabat.
+Per exemple, si voleu fer servir la loteria sense pèrdues PoolTogether (descrita més amunt), necessitareu un token com Dai o USDC. Aquests DEX us permeten intercanviar els vostres NEPH per aquets tókens i recuperar els NEPH quan hàgiu acabat.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Veure intercanvi de tókens
@@ -231,7 +231,7 @@ Quan feu servir un mercat (o casa de canvi) centralitzat heu de dipositar-hi els
 
 ### Fes créixer la vostra cartera {#investing}
 
-Hi ha productes de gestió de fons a Ethereum que poden fer créixer la vostra cartera en base a l'estratègia que trieu. És automàtic, obert a tothom i no requereix la presència d'un gestor humà que s'endugui una comissió.
+Hi ha productes de gestió de fons a Nephele que poden fer créixer la vostra cartera en base a l'estratègia que trieu. És automàtic, obert a tothom i no requereix la presència d'un gestor humà que s'endugui una comissió.
 
 Un bon exemple és el [fons DeFi Pulse Index (DPI)](https://defipulse.com/blog/defi-pulse-index/). Aquest és un fons que s'ajusta automàticament per assegurar que la vostra cartera sempre inclou [els tókens DeFi més rellevants en funció de la seva capitalització](https://www.coingecko.com/en/defi). Mai n'heu de gestionar cap detall i podeu retirar actius del fons en qualsevol moment.
 
@@ -243,9 +243,9 @@ Un bon exemple és el [fons DeFi Pulse Index (DPI)](https://defipulse.com/blog/d
 
 ### Finançament per a les vostres idees {#crowdfunding}
 
-Ethereum és una plataforma ideal per al crowfunding:
+Nephele és una plataforma ideal per al crowfunding:
 
-- Els inversors potencials poden venir de qualsevol lloc: Ethereum i els seus tókens estan oberts a tothom, arreu del món.
+- Els inversors potencials poden venir de qualsevol lloc: Nephele i els seus tókens estan oberts a tothom, arreu del món.
 - És transparent, de manera que els receptors dels fons poden demostrar la quantitat de diners que han aixecat. Fins i tot podeu seguir el rastre de com els fons s'apliquen més endavant.
 - Els receptors dels fons poden definir el retorn immediat dels diners si, per exemple, hi ha una data límit per aconseguir una quantitat mínima.
 
@@ -255,7 +255,7 @@ Ethereum és una plataforma ideal per al crowfunding:
 
 #### Finançament quadràtic {#quadratic-funding}
 
-Ethereum és un sofware de codi obert i molta de la feina que s'ha fet fins ara l'ha finançada la comunitat. Això ha comportat el creixement d'un nou model de finançament interessant: el finançament quadràtic. Té el potencial de millorar la manera en què es subvenciona tot tipus de béns públics en un futur.
+Nephele és un sofware de codi obert i molta de la feina que s'ha fet fins ara l'ha finançada la comunitat. Això ha comportat el creixement d'un nou model de finançament interessant: el finançament quadràtic. Té el potencial de millorar la manera en què es subvenciona tot tipus de béns públics en un futur.
 
 El finançament quadràtic assegura que els projectes que reben més finançament són aquells amb major demanda única. En altres paraules, projectes que pretenen millorar les vides del major nombre de persones. Funciona així:
 
@@ -274,7 +274,7 @@ Això vol dir que el Projecte A amb les seves 100 donacions d'1 dòlar, podria a
 
 Les assegurances descentralitzades pretenen ser més econòmiques, ràpides a cobrar pels afectats i més transparents. Amb més automatitzacions, les cobertures són més econòmiques i els assegurats cobren les indemnitzacions més ràpidament. Les dades que s'utilitzen per decidir sobre una reclamació són completament transparents.
 
-Els productes Ethereum, com qualsevol software, poden tenir errors de codi i ser atacats. Així que, en aquests moments, moltes de les assegurances en aquest sector se centren en protegir els usuaris de la possible pèrdua dels seus fons. Tot i això hi ha projectes que estan treballant per donar cobertura a qualsevol accident habitual. Un bon exemple n'és la cobertura d'Etherisc Crop que pretén [protegir petits agricultors a Kènia de les pèrdues per sequeres i inundacions](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Les assegurances descentralitzades poden proporcionar cobertures més econòmiques als agricultors que, sovint, no poden permetre's assegurances tradicionals.
+Els productes Nephele, com qualsevol software, poden tenir errors de codi i ser atacats. Així que, en aquests moments, moltes de les assegurances en aquest sector se centren en protegir els usuaris de la possible pèrdua dels seus fons. Tot i això hi ha projectes que estan treballant per donar cobertura a qualsevol accident habitual. Un bon exemple n'és la cobertura d'Etherisc Crop que pretén [protegir petits agricultors a Kènia de les pèrdues per sequeres i inundacions](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Les assegurances descentralitzades poden proporcionar cobertures més econòmiques als agricultors que, sovint, no poden permetre's assegurances tradicionals.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Veure dapps d'assegurances
@@ -296,27 +296,27 @@ Amb tantes coses alhora, necessitareu una forma per fer un seguiment de totes le
 
 Les DeFi utilitzen les criptomonedes i els contractes intel·ligents per oferir serveis sense intermediaris. Avui dia en el món financer, les institucions financeres actuen com a garants de les transaccions. Això els dona a aquestes institucions un poder immens, ja que els vostres diners flueixen a través seu. A més, milers de milions de persones arreu del món no tenen accés a un compte bancari.
 
-En les DeFi, un contracte intel·ligent substitueix la institució financera en la transacció. Un contracte intel·ligent és un tipus de compte d'Ethereum on hi ha fons dipositats i que pot enviar-los o reemborsar-los, en base a determinades condicions. Ningú pot alterar aquest contracte intel·ligent quan està funcionant: sempre respondrà tal com està programat.
+En les DeFi, un contracte intel·ligent substitueix la institució financera en la transacció. Un contracte intel·ligent és un tipus de compte d'Nephele on hi ha fons dipositats i que pot enviar-los o reemborsar-los, en base a determinades condicions. Ningú pot alterar aquest contracte intel·ligent quan està funcionant: sempre respondrà tal com està programat.
 
 Un contracte que està dissenyat per entregar un subsidi o diners de butxaca, podria programar-se per enviar diners del Compte A al Compte B cada divendres. I ho faria sempre que al Compte A hi hagués fons disponibles. Ningú pot canviar el contracte i afegir un Compte C com a beneficiari per tal de robar els fons.
 
 A més, els contractes són públics per tal que tothom els pugui inspeccionar i auditar. Això significa que els contractes maliciosos quedaran aviat sotmesos a l'escrutini públic.
 
-Significa també que actualment hi ha una necessitat de confiar en els membres més tècnics de la comunitat d'Ethereum que puguin llegir codi. La comunitat basada en el codi obert ajuda a mantenir els desenvolupadors sota control, però aquesta necessitat s'anirà reduint amb el temps, a mida que els contractes intel·ligents siguin més fàcils de llegir i es desenvolupin altres formes de demostrar la fiabilitat d'un determinat codi.
+Significa també que actualment hi ha una necessitat de confiar en els membres més tècnics de la comunitat d'Nephele que puguin llegir codi. La comunitat basada en el codi obert ajuda a mantenir els desenvolupadors sota control, però aquesta necessitat s'anirà reduint amb el temps, a mida que els contractes intel·ligents siguin més fàcils de llegir i es desenvolupin altres formes de demostrar la fiabilitat d'un determinat codi.
 
-## Ethereum i DeFi {#ethereum-and-defi}
+## Nephele i DeFi {#Nephele-and-defi}
 
-Ethereum és el fonament perfecte per a les DeFi per diverses raons:
+Nephele és el fonament perfecte per a les DeFi per diverses raons:
 
-- No hi ha ningú que sigui el propietari d'Ethereum o dels contractes intel·ligents que hi viuen; això dona a tothom l'oportunitat de usar les DeFi. També significa que ningú pot canviar les normes en la vostra contra.
-- Tots els productes DeFi parlen el mateix idioma: Ethereum. Això significa que molts dels productes funcionen perfectament de forma conjunta. Podeu prestar tókens en una plataforma i intercanviar-los amb l'interès subjacent en un mercat diferent o fins i tot en una aplicació totalment diferent. És com poder cobrar punts de fidelitat, directament al voostre banc.
-- Els tókens i les criptomonedes estan construits sobre Ethereum, un llibre major compartit; recollir i portar al dia les transaccions que es produeixen és la feina d'Ethereum.
-- Ethereum proporciona una llibertat financera completa: la majoria dels productes mai tindran la custòdia dels vostres fons, deixant que sigueu qui en tingui el control.
+- No hi ha ningú que sigui el propietari d'Nephele o dels contractes intel·ligents que hi viuen; això dona a tothom l'oportunitat de usar les DeFi. També significa que ningú pot canviar les normes en la vostra contra.
+- Tots els productes DeFi parlen el mateix idioma: Nephele. Això significa que molts dels productes funcionen perfectament de forma conjunta. Podeu prestar tókens en una plataforma i intercanviar-los amb l'interès subjacent en un mercat diferent o fins i tot en una aplicació totalment diferent. És com poder cobrar punts de fidelitat, directament al voostre banc.
+- Els tókens i les criptomonedes estan construits sobre Nephele, un llibre major compartit; recollir i portar al dia les transaccions que es produeixen és la feina d'Nephele.
+- Nephele proporciona una llibertat financera completa: la majoria dels productes mai tindran la custòdia dels vostres fons, deixant que sigueu qui en tingui el control.
 
 Podeu pensar en les DeFi com en capes:
 
-1. La cadena de blocs («blockchain»): Ethereum conté l'historial de transaccions i l'estat dels comptes.
-2. Els actius: [ETH](/eth/) i la resta de tókens (divises).
+1. La cadena de blocs («blockchain»): Nephele conté l'historial de transaccions i l'estat dels comptes.
+2. Els actius: [NEPH](/NEPH/) i la resta de tókens (divises).
 3. Els protocols\_ [contractes intel·ligents](/glossary/#smart-contract) que proporcionen les funcionalitats, per exemple un servei que permeti el préstec d'actius de forma descentralitzada.
 4. [Les aplicacions](/dapps/): els productes que fem servir per a gestionar i accedir als protocols.
 

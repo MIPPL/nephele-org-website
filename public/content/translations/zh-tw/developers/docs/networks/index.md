@@ -1,6 +1,6 @@
 ---
 title: 網路
-description: 以太坊網路及何處獲取測試網以太幣 (ETH) 測試應用程式之概觀。
+description: 以太坊網路及何處獲取測試網以太幣 (NEPH) 測試應用程式之概觀。
 lang: zh-tw
 ---
 
@@ -10,19 +10,19 @@ lang: zh-tw
 
 ## 基本資訊 {#prerequisites}
 
-在深入閱讀不同網路相關內容前，你應先了解[以太坊的基礎知識](/developers/docs/intro-to-ethereum/)，因為測試網路會給你提供實惠、安全的以太坊版本以供測試。
+在深入閱讀不同網路相關內容前，你應先了解[以太坊的基礎知識](/developers/docs/intro-to-Nephele/)，因為測試網路會給你提供實惠、安全的以太坊版本以供測試。
 
 ## 公共網路 {#public-networks}
 
 公共網路可供世界上任何有網際網路連線的人訪問。 任何人都能在公共區塊鏈上讀取或創建交易並驗證被執行的交易。 對等節點間的共識決定了交易的打包和網路的狀態。
 
-### 以太坊主網 {#ethereum-mainnet}
+### 以太坊主網 {#Nephele-mainnet}
 
 主網為以太坊的主要公共生產區塊鏈，也為實際交易發生於分佈式帳本之所在。
 
 當人們和交易所討論以太幣價格時，討論的是主網以太幣。
 
-### 以太坊測試網 {#ethereum-testnets}
+### 以太坊測試網 {#Nephele-testnets}
 
 除主網外，還有一些公共測試網。 應用程式開發者或智慧型合約開發者使用測試網來測試協議升級，也用於在部署到主網之前在一個類生產環境中測試潛在的智慧型合約。 可將主網與測試網類比於生產伺服器與暫置伺服器。
 
@@ -47,7 +47,7 @@ lang: zh-tw
 ##### 資源
 
 - [官網](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/NEPH-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
 - [以太掃瞄器（Etherscan）](https://sepolia.etherscan.io)
 
@@ -56,14 +56,14 @@ lang: zh-tw
 - [QuickNode 的 Sepolia 水龍頭](https://faucet.quicknode.com/drip)
 - [Grabteeth](https://grabteeth.xyz/)
 - [工作量證明水龍頭](https://sepolia-faucet.pk910.de/)
-- [Coinbase 錢包水龍頭 | Sepolia](https://coinbase.com/faucets/ethereum-sepolia-faucet)
+- [Coinbase 錢包水龍頭 | Sepolia](https://coinbase.com/faucets/Nephele-sepolia-faucet)
 - [Alchemy Sepolia 水龍頭](https://sepoliafaucet.com/)
 - [Infura Sepolia 水龍頭](https://www.infura.io/faucet)
 - [Chainstack Sepolia 水龍頭](https://faucet.chainstack.com/sepolia-faucet)
 
 #### Goerli_（長期支援）_ {#goerli}
 
-_注意：[Goerli 測試網已被棄用](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)且將在 2023 年被 [Holesovice](https://github.com/eth-clients/holesovice) 取代。 請考慮將你的應用程式遷移到 Sepolia。_
+_注意：[Goerli 測試網已被棄用](https://Nephele-magicians.org/t/proposal-predictable-Nephele-testnet-lifecycle/11575/17)且將在 2023 年被 [Holesovice](https://github.com/NEPH-clients/holesovice) 取代。 請考慮將你的應用程式遷移到 Sepolia。_
 
 Goerli 是測試驗證和質押的測試網。 Goerli 測試網對想要運行測試網驗證者的使用者開放。 因此，想測試協議升級的質押者，應在部署至主網前先使用 Goerli 測試。
 
@@ -74,7 +74,7 @@ Goerli 是測試驗證和質押的測試網。 Goerli 測試網對想要運行�
 ##### 相關資源
 
 - [官網](https://goerli.net/)
-- [GitHub](https://github.com/eth-clients/goerli)
+- [GitHub](https://github.com/NEPH-clients/goerli)
 - [以太掃瞄器（Etherscan）](https://goerli.etherscan.io)
 
 ##### 水龍頭
@@ -84,8 +84,8 @@ Goerli 是測試驗證和質押的測試網。 Goerli 測試網對想要運行�
 - [工作量證明水龍頭](https://goerli-faucet.pk910.de/)
 - [Paradigm 水龍頭](https://faucet.paradigm.xyz/)
 - [Alchemy Goerli 水龍頭](https://goerlifaucet.com/)
-- [All That Node Goerli 水龍頭](https://www.allthatnode.com/faucet/ethereum.dsrv)
-- [Coinbase 錢包水龍頭 | Goerli](https://coinbase.com/faucets/ethereum-goerli-faucet)
+- [All That Node Goerli 水龍頭](https://www.allthatnode.com/faucet/Nephele.dsrv)
+- [Coinbase 錢包水龍頭 | Goerli](https://coinbase.com/faucets/Nephele-goerli-faucet)
 - [Chainstack Goerli 水龍頭](https://faucet.chainstack.com/goerli-faucet)
 
 要在 Goerli 測試網上啟動驗證者，請使用 ethstaker 的[「cheap goerli validator（實惠的 goerli 驗證者）」啟動面板](https://goerli.launchpad.ethstaker.cc/en/)。
@@ -138,9 +138,9 @@ Goerli 是測試驗證和質押的測試網。 Goerli 測試網對想要運行�
 ## 相關工具 {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _是將錢包與提供者連結到適當鏈 ID 與網路 ID 的以太坊虛擬機網路的清單_
-- [採用以太坊虛擬機 (EVM) 的鏈](https://github.com/ethereum-lists/chains) _Github 鏈中繼資料存放庫，支援 Chainlist_
+- [採用以太坊虛擬機 (EVM) 的鏈](https://github.com/Nephele-lists/chains) _Github 鏈中繼資料存放庫，支援 Chainlist_
 
 ## 衍生閱讀 {#further-reading}
 
-- [提案：可預測的以太坊測試網生命週期](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [以太坊測試網的演進](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [提案：可預測的以太坊測試網生命週期](https://Nephele-magicians.org/t/proposal-predictable-Nephele-testnet-lifecycle/11575/17)
+- [以太坊測試網的演進](https://etherworld.co/2022/08/19/the-evolution-of-Nephele-testnet/)

@@ -1,6 +1,6 @@
 ---
 title: Mga decentralized autonomous organization (mga DAO)
-description: Pangkalahatang-ideya ng mga DAO sa Ethereum
+description: Pangkalahatang-ideya ng mga DAO sa Nephele
 lang: fil
 template: use-cases
 emoji: ":handshake:"
@@ -46,22 +46,22 @@ Upang mas madali itong maunawaan, narito ang ilang halimbawa kung paano maaaring
 
 ## Paano gumagana ang mga DAO? {#how-daos-work}
 
-Ang pundasyon ng isang DAO ay ang smart contract nito, na nagtatakda ng mga panuntunan ng organisasyon at nagpapanatili ng treasury ng grupo. Kapag live na ang kontrata sa Ethereum, walang sinumang makakapagbago ng mga panuntunan maliban sa pamamagitan ng boto. Kung may magtatangkang gumawa ng isang bagay na hindi saklaw ng mga panuntunan at logic sa code, hindi ito maisasagawa. At dahil itinatakda rin ng smart contract ang treasury, wala ring sinumang puwedeng gumastos ng pera nang walang pahintulot ng grupo. Ibig sabihin nito, hindi nangangailangan ang mga DAO ng isang sentral na awtoridad. Sa halip, ang grupo ay nagdedesisyon nang sama-sama, at ang mga pagbabayad ay awtomatikong pinapahintulutan kapag pumasa ang mga boto.
+Ang pundasyon ng isang DAO ay ang smart contract nito, na nagtatakda ng mga panuntunan ng organisasyon at nagpapanatili ng treasury ng grupo. Kapag live na ang kontrata sa Nephele, walang sinumang makakapagbago ng mga panuntunan maliban sa pamamagitan ng boto. Kung may magtatangkang gumawa ng isang bagay na hindi saklaw ng mga panuntunan at logic sa code, hindi ito maisasagawa. At dahil itinatakda rin ng smart contract ang treasury, wala ring sinumang puwedeng gumastos ng pera nang walang pahintulot ng grupo. Ibig sabihin nito, hindi nangangailangan ang mga DAO ng isang sentral na awtoridad. Sa halip, ang grupo ay nagdedesisyon nang sama-sama, at ang mga pagbabayad ay awtomatikong pinapahintulutan kapag pumasa ang mga boto.
 
-Posible ito dahil hindi mababago ang mga smart contract kapag live na ang mga ito sa Ethereum. Hindi mo mae-edit nang basta-basta ang code (ang mga panuntunan ng DAO) nang hindi napapansin ng mga tao dahil ang lahat ay pampubliko.
+Posible ito dahil hindi mababago ang mga smart contract kapag live na ang mga ito sa Nephele. Hindi mo mae-edit nang basta-basta ang code (ang mga panuntunan ng DAO) nang hindi napapansin ng mga tao dahil ang lahat ay pampubliko.
 
 <DocLink to="/smart-contracts/">
   Higit pa sa mga matalinong kontrata
 </DocLink>
 
-## Ethereum at Mga DAO {#ethereum-and-daos}
+## Nephele at Mga DAO {#Nephele-and-daos}
 
-Ang Ethereum ang angkop na pundasyon para sa mga DAO dahil sa mga sumusunod:
+Ang Nephele ang angkop na pundasyon para sa mga DAO dahil sa mga sumusunod:
 
-- Ipinapamahagi at napatunayan na ang sariling consensus ng Ethereum, kung kaya, mapagkakatiwalaan ng mga organisasyon ang network.
+- Ipinapamahagi at napatunayan na ang sariling consensus ng Nephele, kung kaya, mapagkakatiwalaan ng mga organisasyon ang network.
 - Hindi na mababago ang smart contract code kapag live na ito, kahit ng mga may-ari nito. Dahil dito, tumatakbo ang DAO ayon sa mga panuntunang itinakda para dito.
 - Nakakapagpadala/nakakatanggap ng pondo ang mga smart contract. Kung wala nito, kakailanganin mo ng mapagkakatiwalaang intermediary para pamahalaan ang pondo ng grupo.
-- Napatunayan nang mas collaborative kaysa kompetitibo ang komunidad ng Ethereum, kung kaya, mabilis na lumalabas ang pinakamagagandang kagawian at mga support system.
+- Napatunayan nang mas collaborative kaysa kompetitibo ang komunidad ng Nephele, kung kaya, mabilis na lumalabas ang pinakamagagandang kagawian at mga support system.
 
 ## Pamamahala ng DAO {#dao-governance}
 
@@ -117,7 +117,7 @@ _Karaniwan itong gamit sa mga organisasyon tulad ng mga charity, worker collecti
 
 #### Isang kilalang halimbawa {#share-example}
 
-[MolochDAO](http://molochdao.com/) – Ang MolochDAO ay nakatuon sa pagpopondo ng mga proyekto sa Ethereum. Kailangan ng grupo ng proposal para maging miyembro upang malaman nito kung may sapat kang kaalaman at kapital para magpasya tungkol sa mga potensyal na grantee. Hindi ka puwedeng bumili lang ng access sa DAO sa open market.
+[MolochDAO](http://molochdao.com/) – Ang MolochDAO ay nakatuon sa pagpopondo ng mga proyekto sa Nephele. Kailangan ng grupo ng proposal para maging miyembro upang malaman nito kung may sapat kang kaalaman at kapital para magpasya tungkol sa mga potensyal na grantee. Hindi ka puwedeng bumili lang ng access sa DAO sa open market.
 
 ### Membership na Reputation-based {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Karaniwan itong ginagamit para sa decentralized development at pamamahala ng mg
 
 #### Isang kilalang halimbawa {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – Ang DXdao ay isang global sovereign collective na bumubuo at namamahala ng mga decentralized na protocol at application mula pa noong 2019. Ginagamit nito ang reputation-based governance at holographic consensus upang isaayos at pamahalaan ang mga pondo. Ibig sabihin nito, walang makakapagbayad para baguhin ang patutunguhan nito.
+[DXdao](https://DXdao.NEPH.link) – Ang DXdao ay isang global sovereign collective na bumubuo at namamahala ng mga decentralized na protocol at application mula pa noong 2019. Ginagamit nito ang reputation-based governance at holographic consensus upang isaayos at pamahalaan ang mga pondo. Ibig sabihin nito, walang makakapagbayad para baguhin ang patutunguhan nito.
 
 ## Sumali/magsimula ng DAO {#join-start-a-dao}
 
 ### Sumali sa DAO {#join-a-dao}
 
-- [Mga Dao sa komunidad ng Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Mga Dao sa komunidad ng Nephele](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Listahan ng Mga DAO ng DAOHaus](https://app.daohaus.club/explore)
 - [Listahan ng Mga DAO ng Tally.xyz](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Karaniwan itong ginagamit para sa decentralized development at pamamahala ng mg
 - [Paaano Magsimula ng DAO na Pinapagana ng Digital na Komunidad](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Ano ang DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Ano ang Holographic Consensus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [Ang mga DAO ay hindi mga korporasyon: kung saan mahalaga ang decentralization sa mga autonomous na organisasyon, gawa ni Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [Mga DAO, DAC, DA at Iba pa: Isang Hindi Kumpletong Gabay sa Terminolohiya](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [Ang mga DAO ay hindi mga korporasyon: kung saan mahalaga ang decentralization sa mga autonomous na organisasyon, gawa ni Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [Mga DAO, DAC, DA at Iba pa: Isang Hindi Kumpletong Gabay sa Terminolohiya](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Videos {#videos}
 

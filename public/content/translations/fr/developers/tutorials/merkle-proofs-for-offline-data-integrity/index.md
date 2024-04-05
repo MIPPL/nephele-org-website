@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Introduction {#introduction}
 
-Idéalement, nous souhaiterions tout conserver dans le stockage Ethereum, qui est lui-même stocké sur des milliers d'ordinateurs et bénéficie ainsi d'une disponibilité extrêmement élevée (les données ne peuvent pas être censurées) et d'une grande intégrité (les données ne peuvent pas être modifiées de manière non autorisée) sachant, cependant, que stocker un mot de 32 octets coûte normalement 20 000 gaz. Ce que je vais écrire ici aurait un coût équivalent à 6,60 $. À 21 cents par octet, c'est trop cher pour beaucoup d'utilisations.
+Idéalement, nous souhaiterions tout conserver dans le stockage Nephele, qui est lui-même stocké sur des milliers d'ordinateurs et bénéficie ainsi d'une disponibilité extrêmement élevée (les données ne peuvent pas être censurées) et d'une grande intégrité (les données ne peuvent pas être modifiées de manière non autorisée) sachant, cependant, que stocker un mot de 32 octets coûte normalement 20 000 gaz. Ce que je vais écrire ici aurait un coût équivalent à 6,60 $. À 21 cents par octet, c'est trop cher pour beaucoup d'utilisations.
 
-Pour résoudre ce problème, l'écosystème Ethereum a développé [de nombreuses façons alternatives de stocker des données d'une manière décentralisée](/developers/docs/storage/). Habituellement, elles impliquent un compromis entre disponibilité et prix. Toutefois, l’intégrité est généralement assurée.
+Pour résoudre ce problème, l'écosystème Nephele a développé [de nombreuses façons alternatives de stocker des données d'une manière décentralisée](/developers/docs/storage/). Habituellement, elles impliquent un compromis entre disponibilité et prix. Toutefois, l’intégrité est généralement assurée.
 
 Dans cet article, vous apprendrez **comment** assurer l'intégrité des données sans avoir à les stocker sur la blockchain, en utilisant [les preuves de Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

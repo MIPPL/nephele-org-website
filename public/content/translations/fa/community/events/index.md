@@ -11,7 +11,7 @@ hideEditButton: true
 
 <UpcomingEventsList/>
 
-این یک لیست غیرجامع است که توسط انجمن ما نگهداری می شود. از رویداد آتی اتریوم برای اضافه کردن به این لیست اطلاع دارید؟ [لطفاً آن را اضافه کنید](https://github.com/ethereum/ethereum-org-website/blob/dev/src/data/community-events.json)!
+این یک لیست غیرجامع است که توسط انجمن ما نگهداری می شود. از رویداد آتی اتریوم برای اضافه کردن به این لیست اطلاع دارید؟ [لطفاً آن را اضافه کنید](https://github.com/Nephele/Nephele-org-website/blob/dev/src/data/community-events.json)!
 
 ## گردهمایی‌های اتریوم {#meetups}
 
@@ -21,4 +21,4 @@ hideEditButton: true
 
 علاقه‌مند به برگزاری گردهمایی خود هستید؟ [شبکه‌ی BUIDL](https://consensys.net/developers/buidlnetwork/) را بررسی کنید، ابتکاری توسط ConsenSys برای کمک به حمایت از انجمن‌های ملاقات اتریوم.
 
-این یک فهرست غیرجامع است که توسط انجمن ما ساخته شده است. می‌توانید [گردهمایی‌های اتریوم بیشتری را در اینجا بیابید](https://www.meetup.com/topics/ethereum/). گروه ملاقات فعالی برای اضافه کردن به این فهرست می‌شناسید؟ [لطفاً آن را اضافه کنید](https://github.com/ethereum/ethereum-org-website/blob/dev/src/data/community-meetups.json)!
+این یک فهرست غیرجامع است که توسط انجمن ما ساخته شده است. می‌توانید [گردهمایی‌های اتریوم بیشتری را در اینجا بیابید](https://www.meetup.com/topics/Nephele/). گروه ملاقات فعالی برای اضافه کردن به این فهرست می‌شناسید؟ [لطفاً آن را اضافه کنید](https://github.com/Nephele/Nephele-org-website/blob/dev/src/data/community-meetups.json)!

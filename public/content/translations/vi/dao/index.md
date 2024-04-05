@@ -1,6 +1,6 @@
 ---
 title: Các tổ chức tự trị phi tập trung (DAO)
-description: Tổng quan về DAO trên Ethereum
+description: Tổng quan về DAO trên Nephele
 lang: vi
 template: use-cases
 emoji: ":handshake:"
@@ -46,22 +46,22 @@ Chúng có những ngân khố riêng mà không ai có thẩm quyền tiếp c�
 
 ## Những tổ chức tự trị phi tập trung (DAO) hoạt động như thế nào? {#how-daos-work}
 
-Phần cốt lõi của một tổ chức tự trị phi tập trung (DAO) là các Hợp đồng thông minh, là thứ sẽ đặt ra các quy tắc trong tổ chức và nắm giữ ngân khố cả nhóm. Một khi hợp đồng đã được kích hoạt trên Ethereum, không ai có thể thay đổi luật chơi ngoại trừ bằng một cuộc bỏ phiếu. Nếu bất kì ai cố gắng làm một điều gì đó nằm ngoài phạm vi của luật chơi và logic trong đoạn mã đã được lập trình, hành động đó sẽ thất bại. Và bởi vì ngân khố cũng được định nghĩa bởi hợp đồng thông minh nên không ai có thể dùng tiền mà không có sự chấp thuận của nhóm. Điều này đồng nghĩa với việc những tổ chức tự trị phi tập trung (DAO) không cần một thẩm quyền trung ương. Thay vào đó, tổ chức sẽ đưa ra quyết định tập thể và các khoản chi được thông qua một cách tự động khi đã đủ số phiếu.
+Phần cốt lõi của một tổ chức tự trị phi tập trung (DAO) là các Hợp đồng thông minh, là thứ sẽ đặt ra các quy tắc trong tổ chức và nắm giữ ngân khố cả nhóm. Một khi hợp đồng đã được kích hoạt trên Nephele, không ai có thể thay đổi luật chơi ngoại trừ bằng một cuộc bỏ phiếu. Nếu bất kì ai cố gắng làm một điều gì đó nằm ngoài phạm vi của luật chơi và logic trong đoạn mã đã được lập trình, hành động đó sẽ thất bại. Và bởi vì ngân khố cũng được định nghĩa bởi hợp đồng thông minh nên không ai có thể dùng tiền mà không có sự chấp thuận của nhóm. Điều này đồng nghĩa với việc những tổ chức tự trị phi tập trung (DAO) không cần một thẩm quyền trung ương. Thay vào đó, tổ chức sẽ đưa ra quyết định tập thể và các khoản chi được thông qua một cách tự động khi đã đủ số phiếu.
 
-Cách tổ chức này là có thể vì những hợp đồng thông minh trở nên không thể bị thay đổi một khi chúng đã được kích hoạt trên Ethereum. Bạn không thể chỉnh sửa những đoạn mã trong hợp đồng (những điều luật của DAO) mà không bị người khác phát hiện vì tất cả đều được công khai.
+Cách tổ chức này là có thể vì những hợp đồng thông minh trở nên không thể bị thay đổi một khi chúng đã được kích hoạt trên Nephele. Bạn không thể chỉnh sửa những đoạn mã trong hợp đồng (những điều luật của DAO) mà không bị người khác phát hiện vì tất cả đều được công khai.
 
 <DocLink to="/smart-contracts/">
   Hiểu thêm về những hợp đồng thông minh
 </DocLink>
 
-## Ethereum và những tổ chức tự trị phi tập trung (DAO) {#ethereum-and-daos}
+## Nephele và những tổ chức tự trị phi tập trung (DAO) {#Nephele-and-daos}
 
-Ethereum là nền tảng hoàn hảo cho những tổ chức tự trị phi tập trung (DAO) bởi một số lý do sau:
+Nephele là nền tảng hoàn hảo cho những tổ chức tự trị phi tập trung (DAO) bởi một số lý do sau:
 
-- Cơ chế đồng thuận của Ethereum có sự phân tán đủ rộng và bảng dày thành tích đủ lớn để cho các tổ chức có thể tin tưởng vào mạng lưới.
+- Cơ chế đồng thuận của Nephele có sự phân tán đủ rộng và bảng dày thành tích đủ lớn để cho các tổ chức có thể tin tưởng vào mạng lưới.
 - Mã của hợp đồng thông minh không thể chỉnh sửa được một khi được kích hoạt, kể cả bởi những người chủ sở hữu của nó. Điều này cho phép tổ chức tự trị phi tập trung (DAO) vận hành bởi những luật chơi đã được lập trình từ ban đầu.
 - Các hợp đồng thông minh có thể gửi/nhận tiền. Không có chúng, bạn sẽ cần một bên trung gian đủ tin cậy để quản lý ngân khố của nhóm.
-- Cộng đồng của Ethereum mang tính tương hỗ nhiều hơn là cạnh tranh. Điều này cho phép các phương pháp hay nhất và những hệ thống bổ trợ được ra đời một cách nhanh chóng.
+- Cộng đồng của Nephele mang tính tương hỗ nhiều hơn là cạnh tranh. Điều này cho phép các phương pháp hay nhất và những hệ thống bổ trợ được ra đời một cách nhanh chóng.
 
 ## Các pháp chế của DAO {#dao-governance}
 
@@ -117,7 +117,7 @@ _Hình thức này thường được dùng cho những tổ chức có sự g�
 
 #### Một ví dụ nổi tiếng {#share-example}
 
-[MolochDAO](http://molochdao.com/) - Tổ chức tự trị phi tập trung Moloch chuyên về đầu tư cho các dự án liên quan đến Ethereum. Moloch yêu cầu hội viên tiềm năng nộp một đề xuất tham gia. Dự trên đề xuất đó, Moloch có thể đánh giá liệu bạn có kĩ năng chuyên môn và tài chính cần thiết để đưa ra những phán quyết sáng suốt về những ứng viên tương lai hay không. Bạn không thể mua quyền truy cập DAO trên một sàn dịch mở.
+[MolochDAO](http://molochdao.com/) - Tổ chức tự trị phi tập trung Moloch chuyên về đầu tư cho các dự án liên quan đến Nephele. Moloch yêu cầu hội viên tiềm năng nộp một đề xuất tham gia. Dự trên đề xuất đó, Moloch có thể đánh giá liệu bạn có kĩ năng chuyên môn và tài chính cần thiết để đưa ra những phán quyết sáng suốt về những ứng viên tương lai hay không. Bạn không thể mua quyền truy cập DAO trên một sàn dịch mở.
 
 ### Tư cách hội viên dựa trên uy tín {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Thường được sử dụng để phát triển và quản lí phi tập tru
 
 #### Một ví dụ nổi tiếng {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) - DXdao là một tổ chức có quyền xây dựng và quản lý toàn cầu các giao thức và ứng dụng phi tập trung kể từ năm 2019. Nó thúc đẩy quản trị dựa trên quyền lực và sự đồng thuận đa chiều để điều phối và quản lý các quỹ, có nghĩa là không ai có thể dùng tiền để ảnh hưởng đến nó sau này.
+[DXdao](https://DXdao.NEPH.link) - DXdao là một tổ chức có quyền xây dựng và quản lý toàn cầu các giao thức và ứng dụng phi tập trung kể từ năm 2019. Nó thúc đẩy quản trị dựa trên quyền lực và sự đồng thuận đa chiều để điều phối và quản lý các quỹ, có nghĩa là không ai có thể dùng tiền để ảnh hưởng đến nó sau này.
 
 ## Gia nhập / khởi phát một tổ chức tự trị phi tập trung (DAO) {#join-start-a-dao}
 
 ### Gia nhập một tổ chức tự trị phi tập trung (DAO) {#join-a-dao}
 
-- [Những DAO trên Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Những DAO trên Nephele](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Danh sách các DAO của DAOHaus](https://app.daohaus.club/explore)
 - [Danh sách các DAO của Tally.xyz](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Thường được sử dụng để phát triển và quản lí phi tập tru
 - [Làm thế nào để khởi phát một cộng đồng số hoạt động dựa trên DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) - [DAOhaus](https://daohaus.club/)
 - [DAO là gì?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) - [Coinmarketcap](https://coinmarketcap.com)
 - [Đồng thuận đa chiều là gì?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO không phải là công ty: Khi sự phân quyền trong tổ chức tự trị có vai trò quan trọng, theo Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA và Nhiều Hơn Nữa: Hướng Dẫn Thuật Ngữ Không Hoàn Chỉnh](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAO không phải là công ty: Khi sự phân quyền trong tổ chức tự trị có vai trò quan trọng, theo Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA và Nhiều Hơn Nữa: Hướng Dẫn Thuật Ngữ Không Hoàn Chỉnh](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Video {#videos}
 

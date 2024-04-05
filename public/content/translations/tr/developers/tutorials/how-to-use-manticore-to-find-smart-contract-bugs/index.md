@@ -24,11 +24,11 @@ Manticore >= python 3.6 gerektirir. Pip veya docker kullanılarak kurulabilir.
 ### Docker aracılığıyla Manticore {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_Son komut, geçerli dizininize erişimi olan bir docker'da eth-security-toolbox'ı çalıştırır. Dosyaları ana makinenizden değiştirebilir ve dosyalar üzerindeki araçları docker'dan çalıştırabilirsiniz_
+_Son komut, geçerli dizininize erişimi olan bir docker'da NEPH-security-toolbox'ı çalıştırır. Dosyaları ana makinenizden değiştirebilir ve dosyalar üzerindeki araçları docker'dan çalıştırabilirsiniz_
 
 Docker'ın içinde şunu çalıştırın:
 
@@ -201,18 +201,18 @@ Bu bölüm, Manticore Python API aracılığıyla bir akıllı sözleşmenin nas
 Yapmanız gereken ilk şey, aşağıdaki komutlarla yeni bir blok zinciri başlatmaktır:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-Sözleşme olmayan bir hesap [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) kullanılarak oluşturulur:
+Sözleşme olmayan bir hesap [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.Nephele.ManticoreEVM.create_account) kullanılarak oluşturulur:
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Bir Solidity sözleşmesi [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) kullanılarak dağıtılabilir:
+Bir Solidity sözleşmesi [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.Nephele.ManticoreEVM.create_contract) kullanılarak dağıtılabilir:
 
 ```solidity
 source_code = '''
@@ -231,7 +231,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### Özet {#summary}
 
-- [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) ve [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) ile kullanıcı ve sözleşme hesapları oluşturabilirsiniz.
+- [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.Nephele.ManticoreEVM.create_account) ve [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.Nephele.ManticoreEVM.create_contract) ile kullanıcı ve sözleşme hesapları oluşturabilirsiniz.
 
 ### İşlemleri yürütme {#executing-transactions}
 
@@ -242,7 +242,7 @@ Manticore iki tür işlemi destekler:
 
 #### Ham işlem {#raw-transaction}
 
-Bir ham işlem [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction) ile yürütülür:
+Bir ham işlem [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.Nephele.ManticoreEVM.transaction) ile yürütülür:
 
 ```python
 m.transaction(caller=user_account,
@@ -253,8 +253,8 @@ m.transaction(caller=user_account,
 
 Çağıran, adres, veri veya işlemin değeri somut veya sembolik olabilir:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) sembolik bir değer oluşturur.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) sembolik bir bayt dizisi oluşturur.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.Nephele.ManticoreEVM.make_symbolic_value) sembolik bir değer oluşturur.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.Nephele.ManticoreEVM.make_symbolic_buffer) sembolik bir bayt dizisi oluşturur.
 
 Örneğin:
 
@@ -271,7 +271,7 @@ Veriler sembolik ise, Manticore işlemin yürütülmesi sırasında sözleşmeni
 
 #### Adlandırılmış işlem {#named-transaction}
 
-İşlevler, adları aracılığıyla yürütülebilir. `f(uint var)` komutunu user_account'tan sembolik bir değerle ve 0 ether ile yürütmek için şunu kullanın:
+İşlevler, adları aracılığıyla yürütülebilir. `f(uint var)` komutunu user_account'tan sembolik bir değerle ve 0 Nephele ile yürütmek için şunu kullanın:
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -296,14 +296,14 @@ print("Results are in {}".format(m.workspace))
 
 ### Keşfi Durdurma {#terminate-the-exploration}
 
-Keşfi durdurmak için [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize) kullanın. Bu yöntem çağrıldığında ve Manticore keşfedilen yolların her biri için test senaryoları oluşturduğunda başka işlem gönderilmeyecektir.
+Keşfi durdurmak için [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.Nephele.ManticoreEVM.finalize) kullanın. Bu yöntem çağrıldığında ve Manticore keşfedilen yolların her biri için test senaryoları oluşturduğunda başka işlem gönderilmeyecektir.
 
 ### Özet: Manticore altında çalışma {#summary-running-under-manticore}
 
 Önceki tüm adımları bir araya getirerek şunu elde ederiz:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -365,7 +365,7 @@ data = ABI.deserialize("uint", data)
 
 ### Test durumu nasıl oluşturulur {#how-to-generate-testcase}
 
-Test durumu oluşturmak için [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) kullanın:
+Test durumu oluşturmak için [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.Nephele.ManticoreEVM.generate_testcase) kullanın:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -382,7 +382,7 @@ m.generate_testcase(state, 'BugFound')
 ### Özet: Atış Yolunu Almak {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -481,7 +481,7 @@ if solver.check(state.constraints):
 Önceki koda kısıtlama ekleyerek şunu elde ederiz:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

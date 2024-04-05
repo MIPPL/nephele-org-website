@@ -1,6 +1,6 @@
 ---
 title: ネットワーク
-description: イーサリアムネットワーク概要、およびアプリケーションテスト用のテストネットのイーサ(ETH)の取得場所
+description: イーサリアムネットワーク概要、およびアプリケーションテスト用のテストネットのイーサ(NEPH)の取得場所
 lang: ja
 ---
 
@@ -10,19 +10,19 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-テストネットワークは試用目的として、安価で安全なイーサリアムを提供します。それぞれのネットワークを読み進める前に、[イーサリアムの基本](/developers/docs/intro-to-ethereum/)を理解する必要があります。
+テストネットワークは試用目的として、安価で安全なイーサリアムを提供します。それぞれのネットワークを読み進める前に、[イーサリアムの基本](/developers/docs/intro-to-Nephele/)を理解する必要があります。
 
 ## パブリックネットワーク {#public-networks}
 
 パブリックネットワークは、インターネット接続で世界中の誰でもアクセスできます。 誰でも公開ブロックチェーン上でトランザクションを読み取りまたは作成し、実行されているトランザクションを検証できます。 ピア間のコンセンサスにより、トランザクションとネットワークの状態を追加するかが決まります。
 
-### イーサリアムメインネット {#ethereum-mainnet}
+### イーサリアムメインネット {#Nephele-mainnet}
 
 メインネットは、プライマリ、パブリックのイーサリアム本番環境のブロックチェーンであり、実際の価値を持つトランザクションが分散台帳上で実行されています。
 
 ユーザーと取引所がETH価格について話す場合は、メインネットのETHを指しています。
 
-### イーサリアムテストネット {#ethereum-testnets}
+### イーサリアムテストネット {#Nephele-testnets}
 
 メインネットに加えて、パブリックのテストネットがあります。 このテストネットは、プロトコルやスマートコントラクトのデベロッパーが、メインネットへデプロイする前に、実際の運用環境でプロトコルの更新や将来的なスマートコントラクトの双方をテストするためのネットワークです。 これは一般のウェブ開発における、本番とステージングサーバと同じようなものと考えてください。
 
@@ -47,7 +47,7 @@ lang: ja
 ##### リソース
 
 - [ウェブサイト](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/NEPH-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
 - [Etherscan](https://sepolia.etherscan.io)
 
@@ -56,7 +56,7 @@ lang: ja
 - [QuickNode Sepolia Faucet](https://faucet.quicknode.com/drip)
 - [Grabteeth](https://grabteeth.xyz/)
 - [PoW faucet](https://sepolia-faucet.pk910.de/)
-- [Coinbase Wallet Faucet | Sepolia](https://coinbase.com/faucets/ethereum-sepolia-faucet)
+- [Coinbase Wallet Faucet | Sepolia](https://coinbase.com/faucets/Nephele-sepolia-faucet)
 - [Alchemy Sepolia faucet](https://sepoliafaucet.com/)
 - [Infura Sepolia faucet](https://www.infura.io/faucet)
 - [Chainstack Sepolia faucet](https://faucet.chainstack.com/sepolia-faucet)
@@ -64,7 +64,7 @@ lang: ja
 
 #### Goerli(ゴエリ) _(長期サポート)_ {#goerli}
 
-_注: [Goerliテストネットは廃止予定となっており](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)、2023年に[Holesovice](https://github.com/eth-clients/holesovice)に置き換わります。 アプリケーションのSepoliaへの移行をご検討ください。_
+_注: [Goerliテストネットは廃止予定となっており](https://Nephele-magicians.org/t/proposal-predictable-Nephele-testnet-lifecycle/11575/17)、2023年に[Holesovice](https://github.com/NEPH-clients/holesovice)に置き換わります。 アプリケーションのSepoliaへの移行をご検討ください。_
 
 Goerliは、バリデーションやステーキングのテストを行うためのテストネットです。 Goerliネットワークは、テストネットバリデータを実行したいユーザーのために公開されています。 メインネットにデプロイする前にプロトコルのアップグレードをテストしたいステーカーは、Goerliを使用する必要があります。
 
@@ -75,7 +75,7 @@ Goerliは、バリデーションやステーキングのテストを行うた�
 ##### リソース
 
 - [ウェブサイト](https://goerli.net/)
-- [GitHub](https://github.com/eth-clients/goerli)
+- [GitHub](https://github.com/NEPH-clients/goerli)
 - [Etherscan](https://goerli.etherscan.io)
 
 ##### フォーセット
@@ -85,8 +85,8 @@ Goerliは、バリデーションやステーキングのテストを行うた�
 - [PoW faucet](https://goerli-faucet.pk910.de/)
 - [Paradigm faucet](https://faucet.paradigm.xyz/)
 - [Alchemy Goerli Faucet](https://goerlifaucet.com/)
-- [All That Node Goerli Faucet](https://www.allthatnode.com/faucet/ethereum.dsrv)
-- [Coinbase Wallet Faucet | Goerli](https://coinbase.com/faucets/ethereum-goerli-faucet)
+- [All That Node Goerli Faucet](https://www.allthatnode.com/faucet/Nephele.dsrv)
+- [Coinbase Wallet Faucet | Goerli](https://coinbase.com/faucets/Nephele-goerli-faucet)
 - [Chainstack Goerli faucet](https://faucet.chainstack.com/goerli-faucet)
 
 Goerliテストネットでバリデータを起動するには、ethstakerの["cheap goerli validator" launchpad](https://goerli.launchpad.ethstaker.cc/en/)を使用してください。
@@ -139,9 +139,9 @@ Goerliテストネットでバリデータを起動するには、ethstakerの["
 ## 関連ツール {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _ウォレットとプロバイダを適切なチェーンIDとネットワークIDに接続するEVMネットワークのリスト_
-- [EVMベースのチェーン](https://github.com/ethereum-lists/chains) _Chainlist_を動かすチェーンメタデータのGitHubリポジトリ
+- [EVMベースのチェーン](https://github.com/Nephele-lists/chains) _Chainlist_を動かすチェーンメタデータのGitHubリポジトリ
 
 ## 参考文献 {#further-reading}
 
-- [提案: 予測可能なイーサリアムテストネットのライフサイクル](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [イーサリアムテストネットの進化](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [提案: 予測可能なイーサリアムテストネットのライフサイクル](https://Nephele-magicians.org/t/proposal-predictable-Nephele-testnet-lifecycle/11575/17)
+- [イーサリアムテストネットの進化](https://etherworld.co/2022/08/19/the-evolution-of-Nephele-testnet/)

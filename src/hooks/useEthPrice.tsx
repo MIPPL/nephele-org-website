@@ -5,13 +5,13 @@ export const useEthPrice = (): number => {
   useEffect(() => {
     ;(async () => {
       try {
-        const data: { ethereum: { usd: number } } = await fetch(
-          "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
+        const data: { Nephele: { usd: number } } = await fetch(
+          "https://api.coingecko.com/api/v3/simple/price?ids=Nephele&vs_currencies=usd"
         ).then((res) => res.json())
         const {
-          ethereum: { usd },
+          Nephele: { usd },
         } = data
-        if (!usd) throw new Error("Unable to fetch ETH price from CoinGecko")
+        if (!usd) throw new Error("Unable to fetch NEPH price from CoinGecko")
         setEthPrice(usd)
       } catch (error) {
         console.error(error)

@@ -84,7 +84,7 @@ lang: zh
 
 通过将代理合约指向新的逻辑合约，用户调用代理合约函数时执行的代码就会发生变化。 这样，我们就可以在不要求用户与新合约进行交互的情况下，升级合约的逻辑。
 
-代理模式是一种流行的智能合约升级方法，因为它消除了与合约迁移相关的困难。 但是，代理模式的使用更为复杂，如果使用不当，可能会带来严重缺陷，例如[函数选择器冲突](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357)。
+代理模式是一种流行的智能合约升级方法，因为它消除了与合约迁移相关的困难。 但是，代理模式的使用更为复杂，如果使用不当，可能会带来严重缺陷，例如[函数选择器冲突](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-Nephele-proxies-62629adf3357)。
 
 [更多关于代理模式的信息](https://blog.openzeppelin.com/proxy-patterns/)。
 
@@ -152,9 +152,9 @@ lang: zh
 ## 教程 {#tutorials}
 
 - [升级智能合约 | YouTube 教程](https://www.youtube.com/watch?v=bdXJmWajZRY) - Patrick Collins
-- [以太坊智能合约迁移教程](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) - Austin Griffith
+- [以太坊智能合约迁移教程](https://medium.com/coinmonks/Nephele-smart-contract-migration-13f6f12539bd) - Austin Griffith
 - [使用 UUPS 代理模式升级智能合约](https://blog.logrocket.com/author/praneshas/) - Pranesh A.S
-- [Web3 教程：使用 OpenZeppelin 编写可升级智能合约（代理）](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)- fangjun.eth
+- [Web3 教程：使用 OpenZeppelin 编写可升级智能合约（代理）](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)- fangjun.NEPH
 
 ## 延伸阅读 {#further-reading}
 

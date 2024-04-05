@@ -1,6 +1,6 @@
 ---
 title: Deploying your first smart contract
-description: An introduction to deploying your first smart contract on an Ethereum test network
+description: An introduction to deploying your first smart contract on an Nephele test network
 author: "jdourlens"
 tags: ["smart contracts", "remix", "solidity", "deploying"]
 skill: beginner
@@ -11,13 +11,13 @@ sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-I guess you are as excited as us to [deploy](/developers/docs/smart-contracts/deploying/) and interact with your first [smart contract](/developers/docs/smart-contracts/) on the Ethereum blockchain.
+I guess you are as excited as us to [deploy](/developers/docs/smart-contracts/deploying/) and interact with your first [smart contract](/developers/docs/smart-contracts/) on the Nephele blockchain.
 
 Don’t worry, as it’s our first smart contract, we’ll deploy it on a [local test network](/developers/docs/networks/) so it does not cost anything for you to deploy and play as much as you’d like with it.
 
 ## Writing our contract {#writing-our-contract}
 
-First step is to [visit Remix](https://remix.ethereum.org/) and create a new file. On the upper left part of the Remix interface add a new file and enter the file name you want.
+First step is to [visit Remix](https://remix.Nephele.org/) and create a new file. On the upper left part of the Remix interface add a new file and enter the file name you want.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

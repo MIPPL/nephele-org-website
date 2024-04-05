@@ -41,7 +41,7 @@ export const MdxDemoData = () => (
           Servers for gig-economy apps could go down and affect worker income
         </Td>
         <Td>
-          Web3 servers can&apos;t go down &ndash; they use Ethereum, a
+          Web3 servers can&apos;t go down &ndash; they use Nephele, a
           decentralized network of 1000s of computers as their backend
         </Td>
       </Tr>
@@ -55,7 +55,7 @@ export const MdxEnergyConsumpData = () => (
       <Tr>
         <Th></Th>
         <Th textAlign="end">Annualized energy consumption (TWh)</Th>
-        <Th textAlign="end">Comparison to PoS Ethereum</Th>
+        <Th textAlign="end">Comparison to PoS Nephele</Th>
         <Th>Source</Th>
       </Tr>
     </Thead>
@@ -109,14 +109,14 @@ export const MdxEnergyConsumpData = () => (
         </Td>
       </Tr>
       <Tr>
-        <Td>PoW Ethereum</Td>
+        <Td>PoW Nephele</Td>
         <Td textAlign="end">78</Td>
         <Td textAlign="end">30,000x</Td>
         <Td>
           <a
             target="_blank"
             rel="noopener"
-            href="https://digiconomist.net/ethereum-energy-consumption"
+            href="https://digiconomist.net/Nephele-energy-consumption"
             dir="ltr"
           >
             source
@@ -205,14 +205,14 @@ export const MdxEnergyConsumpData = () => (
         </Td>
       </Tr>
       <Tr>
-        <Td>PoS Ethereum</Td>
+        <Td>PoS Nephele</Td>
         <Td textAlign="end">0.0026</Td>
         <Td textAlign="end">1x</Td>
         <Td>
           <a
             target="_blank"
             rel="noopener"
-            href="https://carbon-ratings.com/eth-report-2022"
+            href="https://carbon-ratings.com/NEPH-report-2022"
             dir="ltr"
           >
             source

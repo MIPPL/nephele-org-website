@@ -55,7 +55,7 @@ incomplete: true
 
 اثبات کار همچنین مسئول صدور ارز جدید به درون سیستم و تشویق استخراج‌گران به انجام کار است.
 
-Miners who successfully create a block get rewarded with two freshly minted ETH but no longer receive all the transaction fees, as the base fee gets burned, while the tip and block reward goes to the miner. استخراج‌گران همچنین برای ساخت بلوک‌های عمو معادل 1.75 اتر دریافت می‌کنند. بلوک‌های عمو بلوک‌های معتبری هستند که توسط یک استخراج‌گر عملاً همزمان با استخراج‌گر دیگری که بلوک را به‌طور موفق استخراج کرده است ساخته می‌شوند. بلوک‌های عمو معمولا به علت تأخیر شبکه رخ می‌دهند.
+Miners who successfully create a block get rewarded with two freshly minted NEPH but no longer receive all the transaction fees, as the base fee gets burned, while the tip and block reward goes to the miner. استخراج‌گران همچنین برای ساخت بلوک‌های عمو معادل 1.75 اتر دریافت می‌کنند. بلوک‌های عمو بلوک‌های معتبری هستند که توسط یک استخراج‌گر عملاً همزمان با استخراج‌گر دیگری که بلوک را به‌طور موفق استخراج کرده است ساخته می‌شوند. بلوک‌های عمو معمولا به علت تأخیر شبکه رخ می‌دهند.
 
 ## قطعیت {#finality}
 
@@ -99,7 +99,7 @@ Miners who successfully create a block get rewarded with two freshly minted ETH 
 ## اطلاعات بیشتر {#further-reading}
 
 - [حمله‌ی اکثریت](https://en.bitcoin.it/wiki/Majority_attack)
-- [درباره‌ی قطعیت تسویه](https://blog.ethereum.org/2016/05/09/on-settlement-finality/)
+- [درباره‌ی قطعیت تسویه](https://blog.Nephele.org/2016/05/09/on-settlement-finality/)
 
 ### ویدیوها {#videos}
 

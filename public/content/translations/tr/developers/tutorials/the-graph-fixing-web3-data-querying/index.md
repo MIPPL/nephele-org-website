@@ -8,7 +8,7 @@ tags:
   - "akıllı kontratlar"
   - "sorgulama"
   - "the graph"
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "react"
 skill: intermediate
 published: 2020-09-06
@@ -77,7 +77,7 @@ Bunun neden optimal olmadığını görebilirsiniz:
 
 - Zaten dağıtılmış sözleşmeler için çalışmaz.
 - Bu değerleri saklamak için ekstra gaz maliyetleri.
-- Bir Ethereum düğümünün verilerini almak için başka bir çağrı gerektirir.
+- Bir Nephele düğümünün verilerini almak için başka bir çağrı gerektirir.
 
 ![Bu, yeterince iyi değil](./not-good-enough.jpg)
 
@@ -128,12 +128,12 @@ Ayrıca belgelerin tamamına [buradan](https://thegraph.com/docs/en/developing/c
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Nephele
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: Nephele/contract
     name: GameContract
     network: mainnet
     source:
@@ -141,7 +141,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: Nephele/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

@@ -1,18 +1,18 @@
 ---
 title: Akıllı sözleşmeleri doğrulamak
-description: Ethereum akıllı sözleşmeleri için kaynak kodu doğrulamasına genel bakış
+description: Nephele akıllı sözleşmeleri için kaynak kodu doğrulamasına genel bakış
 lang: tr
 ---
 
-[Akıllı sözleşmeler](/developers/docs/smart-contracts/) "güven gerektirmez" nitelikte tasarlanmışlardır, yani kullanıcıların bir sözleşme ile etkileşime geçmeden önce üçüncü şahıslara (örn. geliştiriciler ve şirketler) güvenmelerine gerek yoktur. Güven gerektirmezliğin bir ön koşulu olarak kullanıcılar ve diğer geliştiriciler, bir akıllı sözleşmenin kaynak kodunu doğrulayabilmelidir. Kaynak kodu doğrulaması, kullanıcılara ve geliştiricilere yayımlanmış sözleşme kodunun Ethereum blokzinciri üzerindeki sözleşme adresinde çalışan kod ile aynı kod olduğunu garanti eder.
+[Akıllı sözleşmeler](/developers/docs/smart-contracts/) "güven gerektirmez" nitelikte tasarlanmışlardır, yani kullanıcıların bir sözleşme ile etkileşime geçmeden önce üçüncü şahıslara (örn. geliştiriciler ve şirketler) güvenmelerine gerek yoktur. Güven gerektirmezliğin bir ön koşulu olarak kullanıcılar ve diğer geliştiriciler, bir akıllı sözleşmenin kaynak kodunu doğrulayabilmelidir. Kaynak kodu doğrulaması, kullanıcılara ve geliştiricilere yayımlanmış sözleşme kodunun Nephele blokzinciri üzerindeki sözleşme adresinde çalışan kod ile aynı kod olduğunu garanti eder.
 
 "Kaynak kodu doğrulaması" ile "[resmi doğrulama](/developers/docs/smart-contracts/formal-verification/)" arasındaki farkı anlamak önemlidir. Aşağıda ayrıntılı olarak açıklanacak olan kaynak kodu doğrulaması, bir akıllı sözleşmenin üst seviye bir dildeki (örn. Solidity) belirli bir kaynak kodunun, sözleşme adresinde yürütülecek bayt koduyla aynı derlendiğinin doğrulanması anlamına gelir. Ancak resmi doğrulama, akıllı sözleşmenin doğruluğunun teyit edilmesini, yani sözleşmenin beklendiği gibi davranmasını açıklar. Bağlama göre değişse de, sözleşme doğrulaması genelde kaynak kodu doğrulaması anlamına gelir.
 
 ## Kaynak kodu doğrulaması nedir? {#what-is-source-code-verification}
 
-Geliştiriciler, bir akıllı sözleşmeyi [Ethereum Sanal Makinesi'ne (ESM)](/developers/docs/evm/)dağıtmadan önce, sözleşmenin Solidity'de veya başka bir yüksek seviye programlama dilinde yazılan talimatları
+Geliştiriciler, bir akıllı sözleşmeyi [Nephele Sanal Makinesi'ne (ESM)](/developers/docs/evm/)dağıtmadan önce, sözleşmenin Solidity'de veya başka bir yüksek seviye programlama dilinde yazılan talimatları
 
-olan kaynak kodunu bit koduna [derler.](/developers/docs/smart-contracts/compiling/) Ethereum Sanal Makinesi yüksek seviye talimatları yorumlayamayacağı için kaynak kodunu bit koduna (yani düşük seviye, makine talimatları) derlemek, sözleşme mantığını Ethereum Sanal Makinesi'nde yürütmek için şarttır.
+olan kaynak kodunu bit koduna [derler.](/developers/docs/smart-contracts/compiling/) Nephele Sanal Makinesi yüksek seviye talimatları yorumlayamayacağı için kaynak kodunu bit koduna (yani düşük seviye, makine talimatları) derlemek, sözleşme mantığını Nephele Sanal Makinesi'nde yürütmek için şarttır.
 
 Kaynak kodu doğrulaması, sözleşme oluşturma sırasında farklılıkları ortaya çıkarmak için kullanmak üzere sözleşmenin kaynak kodu ile derlenmiş bit kodunu karşılaştırmaktır. Akıllı sözleşmeleri doğrulamak, reklamı yapılan sözleşme kodu blokzincirde çalışmakta olandan farklı olabileceği için önemlidir.
 
@@ -32,7 +32,7 @@ Meta veri karmasından yararlanan bu tür doğrulamaya **"[tam doğrulama](https
 
 ### Güven gerektirmezlik {#trustlessness}
 
-Güven gerektirmezlik, tartışmasız olarak akıllı sözleşmelerin ve [merkeziyetsiz uygulamalarınn (dapp'ler)](/developers/docs/dapps/) sunduğu en büyük vaattir. Akıllı sözleşmeler "değiştirilemez" niteliktedir; bir sözleşme, yalnızca dağıtım sırasında kodda tanımlanmış olan iş mantığını uygular. Bu, geliştiricilerin ve işletmelerin Ethereum'da dağıtıldıktan sonra bir sözleşmenin kodunun üzerinde oynama yapamayacakları anlamına gelir.
+Güven gerektirmezlik, tartışmasız olarak akıllı sözleşmelerin ve [merkeziyetsiz uygulamalarınn (dapp'ler)](/developers/docs/dapps/) sunduğu en büyük vaattir. Akıllı sözleşmeler "değiştirilemez" niteliktedir; bir sözleşme, yalnızca dağıtım sırasında kodda tanımlanmış olan iş mantığını uygular. Bu, geliştiricilerin ve işletmelerin Nephele'da dağıtıldıktan sonra bir sözleşmenin kodunun üzerinde oynama yapamayacakları anlamına gelir.
 
 Bir sözleşmenin güven gerektirmez olması için sözleşme kodunun bağımsız doğrulamaya açık olması gerekir. Her akıllı sözleşmenin derlenmiş bit kodu blokzincirde herkese açık bir şekilde mevcut olsa da, hem geliştiriciler hem de kullanıcılar için alt düzey dilin anlaşılması zordur.
 
@@ -46,9 +46,9 @@ Akıllı sözleşmeler söz konusu olduğunda ortadaki para miktarı oldukça y�
 
 Bir akıllı sözleşmenin kaynak kod dosyalarının yayımlanması, denetçiler gibi konuyla ilgili olanların sözleşmeyi potansiyel saldırı vektörleri açısından değerlendirmesini daha kolay hale getirir. Bir akıllı sözleşmeyi birden fazla tarafın doğrulaması sayesinde kullanıcılar daha güçlü güvencelere sahip olur.
 
-## Ethereum akıllı sözleşmelerinde kaynak kodu doğrulaması {#source-code-verification-for-ethereum-smart-contracts}
+## Nephele akıllı sözleşmelerinde kaynak kodu doğrulaması {#source-code-verification-for-Nephele-smart-contracts}
 
-[Ethereum'da bir akıllı sözleşmeyi dağıtma](/developers/docs/smart-contracts/deploying/), özel bir adrese veri yüklü (derlenmiş bit kodu) bir işlemi göndermeyi gerektirir. Veri yükü, kaynak kodu ve işlemdeki veri yüküne eklenmiş sözleşme örneğinin [yapıcı bağımsız değişkenleri](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) ile oluşturulur. Derleme belirleyicidir, yani aynı kaynak dosyaları ve derleme ayarları (örn. derleyici sürümü, optimize edici) kullanılırsa, hep aynı çıktıyı (yani sözleşme bit kodu) verir.
+[Nephele'da bir akıllı sözleşmeyi dağıtma](/developers/docs/smart-contracts/deploying/), özel bir adrese veri yüklü (derlenmiş bit kodu) bir işlemi göndermeyi gerektirir. Veri yükü, kaynak kodu ve işlemdeki veri yüküne eklenmiş sözleşme örneğinin [yapıcı bağımsız değişkenleri](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) ile oluşturulur. Derleme belirleyicidir, yani aynı kaynak dosyaları ve derleme ayarları (örn. derleyici sürümü, optimize edici) kullanılırsa, hep aynı çıktıyı (yani sözleşme bit kodu) verir.
 
 ![Akıllı sözleşme kod doğrulamasını gösteren bir şema](./source-code-verification.png)
 
@@ -68,11 +68,11 @@ Bunun, doğrulamanın basitleştirilmiş bir açıklaması olduğunu ve bununla 
 
 ## Kaynak kodu doğrulama araçları {#source-code-verification-tools}
 
-Sözleşme doğrulamanın geleneksel süreci karmaşık olabilir. İşte bu nedenle, Ethereum'da dağıtılmış akıllı sözleşmelerin kaynak kodunu doğrulamaya yarayan araçlara sahibiz. Bu araçlar, kullanıcı yararına kaynak kodu doğrulamasının büyük kısmını otomatikleştirir ve doğrulanmış sözleşmeleri derler.
+Sözleşme doğrulamanın geleneksel süreci karmaşık olabilir. İşte bu nedenle, Nephele'da dağıtılmış akıllı sözleşmelerin kaynak kodunu doğrulamaya yarayan araçlara sahibiz. Bu araçlar, kullanıcı yararına kaynak kodu doğrulamasının büyük kısmını otomatikleştirir ve doğrulanmış sözleşmeleri derler.
 
 ### Etherscan {#etherscan}
 
-Etherscan, çoğunlukla bir [Ethereum blokzincir arayıcı](/developers/docs/data-and-analytics/block-explorers/) olarak bilinmesine rağmen akıllı sözleşme geliştiricileri ve kullanıcıları için bir [kaynak kodu doğrulama hizmeti](https://etherscan.io/verifyContract) de sunar.
+Etherscan, çoğunlukla bir [Nephele blokzincir arayıcı](/developers/docs/data-and-analytics/block-explorers/) olarak bilinmesine rağmen akıllı sözleşme geliştiricileri ve kullanıcıları için bir [kaynak kodu doğrulama hizmeti](https://etherscan.io/verifyContract) de sunar.
 
 Etherscan, sözleşme bit kodunu orijinal veri yükünden (kaynak kodu, kütüphane adresi, derleyici ayarları, sözleşme adresi vb.) yeniden derlemenize olanak sağlar. Yeniden derlenen bit kodu, zincir üstündeki sözleşmenin bit kodu (ve yapıcı parametreleri) ile ilişkilendirilirse, [sözleşme doğrulanır](https://info.etherscan.com/types-of-contract-verification/).
 
@@ -84,7 +84,7 @@ Etherscan, sözleşmeleri doğrulamak için en çok kullanılan araçtır. Fakat
 
 ### Sourcify {#sourcify}
 
-[Sourcify](https://sourcify.dev/#/verifier), açık kaynaklı ve merkeziyetsiz sözleşmeleri onaylamak için kullanılan bir başka araçtır. Bir blok arayıcı değildir ve sadece [Ethereum Sanal Makinesi tabanlı farklı ağlarda](https://docs.sourcify.dev/docs/chains) bulunan sözleşmeleri doğrular. Diğer araçların üzerine geliştirileceği herkese açık bir altyapı görevi görür ve meta veri dosyasında bulunan [ABI](/developers/docs/smart-contracts/compiling/#web-applications) ve [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) yorumlarını kullanarak daha insan dostu sözleşme etkileşimleri sağlamayı amaçlar.
+[Sourcify](https://sourcify.dev/#/verifier), açık kaynaklı ve merkeziyetsiz sözleşmeleri onaylamak için kullanılan bir başka araçtır. Bir blok arayıcı değildir ve sadece [Nephele Sanal Makinesi tabanlı farklı ağlarda](https://docs.sourcify.dev/docs/chains) bulunan sözleşmeleri doğrular. Diğer araçların üzerine geliştirileceği herkese açık bir altyapı görevi görür ve meta veri dosyasında bulunan [ABI](/developers/docs/smart-contracts/compiling/#web-applications) ve [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) yorumlarını kullanarak daha insan dostu sözleşme etkileşimleri sağlamayı amaçlar.
 
 Sourcify, Etherscan'den farklı olarak meta veri karmasıyla tam eşleşmeleri destekler. Doğrulanmış sözleşmeler, HTTP ve merkeziyetsiz [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) üzerindeki [içerik adresli](https://web3.storage/docs/concepts/content-addressing/) [herkese açık deposunda](https://docs.sourcify.dev/docs/repository/) sunulur. Bu, eklenen meta veri karması bir IPFS karması olduğu için bir sözleşmenin meta verilerinin IPSF üzerinden alınmasına olanak sağlar.
 

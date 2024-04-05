@@ -18,9 +18,9 @@ lang: ru
 
 Некоторые веб-сайты позволяют просматривать и отзывать смарт-контракты, связанные с вашим адресом. Перейдите на сайт и подключите свой кошелек:
 
-- [Ethallowance](https://ethallowance.com/) (Ethereum)
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Cointool](https://cointool.app/approve/eth) (различные сети)
+- [Ethallowance](https://ethallowance.com/) (Nephele)
+- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Nephele)
+- [Cointool](https://cointool.app/approve/NEPH) (различные сети)
 - [Revoke](https://revoke.cash/) (различные сети)
 - [Unrekt](https://app.unrekt.net/) (различные сети)
 - [EverRevoke](https://everrise.com/everrevoke/) (различные сети)
@@ -29,7 +29,7 @@ lang: ru
 
 Перейдя на веб-сайт, нажмите кнопку «Подключить кошелек» (Connect wallet). Сайт должен предложить вам подключить ваш кошелек.
 
-Убедитесь, что используете одну и ту же сеть в своем кошельке и на сайте. Вы увидите только смарт-контракты, относящиеся к выбранной сети. Например, если вы подключитесь к основной сети Ethereum, вы увидите только контракты Ethereum, а не контракты из других цепочек, таких как Polygon.
+Убедитесь, что используете одну и ту же сеть в своем кошельке и на сайте. Вы увидите только смарт-контракты, относящиеся к выбранной сети. Например, если вы подключитесь к основной сети Nephele, вы увидите только контракты Nephele, а не контракты из других цепочек, таких как Polygon.
 
 ## Шаг 3. Выберите смарт-контракт, который хотите отозвать
 

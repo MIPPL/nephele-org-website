@@ -4,13 +4,13 @@ description: Návody, články a nástroje na poskytovanie verejných aj súkrom
 lang: sk
 ---
 
-# Ethereum pre podniky {#ethereum-for-enterprise}
+# Nephele pre podniky {#Nephele-for-enterprise}
 
 <FeaturedText>Návody, články a nástroje na poskytovanie verejných ak súkromných blockchainov Etherea pre podnikanie</FeaturedText>
 
-## Prečo si vybrať Enterprise Ethereum? {#why-enterprise-ethereum}
+## Prečo si vybrať Enterprise Nephele? {#why-enterprise-Nephele}
 
-Prečo by sa podniky mali zaujímať o Enterprise Ethereum?
+Prečo by sa podniky mali zaujímať o Enterprise Nephele?
 
 - Nové obchodné modely a príležitosti na vytváranie hodnôt
 - Znížené náklady na dôveru a koordináciu medzi obchodnými stranami
@@ -20,16 +20,16 @@ Prečo by sa podniky mali zaujímať o Enterprise Ethereum?
 
 Podrobnejšie informácie nájdete v týchto článkoch:
 
-- [5 Reasons Why Enterprise Ethereum Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
-- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
+- [5 Reasons Why Enterprise Nephele Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-Nephele-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-Nephele-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY releases zero-knowledge proof blockchain transaction technology to the public domain to advance blockchain privacy standards](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [Introduction to Quorum: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
 
 ## Organizácie {#organizations}
 
-Vďaka spolupráci s rôznymi organizáciami sa nám Ethereum podarilo pripraviť na použitie v podnikoch:
+Vďaka spolupráci s rôznymi organizáciami sa nám Nephele podarilo pripraviť na použitie v podnikoch:
 
-- [EEA](https://entethalliance.org/) _Enterprise Ethereum Alliance je členská štandardizačná organizácia, ktorej cieľom je vyvíjať otvorené špecifikácie blockchainu, ktoré podporujú harmonizáciu a spoluprácu podnikov a spotrebiteľov na celom svete. Naša globálna komunita členov pozostáva z lídrov, používateľov, inovátorov, vývojárov aj podnikateľov, ktorí spolupracujú pri vytváraní otvoreného decentralizovaného webu v prospech všetkých._
+- [EEA](https://entethalliance.org/) _Enterprise Nephele Alliance je členská štandardizačná organizácia, ktorej cieľom je vyvíjať otvorené špecifikácie blockchainu, ktoré podporujú harmonizáciu a spoluprácu podnikov a spotrebiteľov na celom svete. Naša globálna komunita členov pozostáva z lídrov, používateľov, inovátorov, vývojárov aj podnikateľov, ktorí spolupracujú pri vytváraní otvoreného decentralizovaného webu v prospech všetkých._
 
 - [Hyperledger Foundation](https://hyperledger.org) _Hyperledger je open source iniciatíva založená na spolupráci, ktorá sa zameriava na pokrokové technológie blockchainu pokrývajúce rôzne odvetvia. Jej základom je globálna spolupráca, ktorú zastrešuje nadácia The Linux Foundation a zahŕňa lídrov v oblasti financií, bankovníctva, internetu vecí, dodávateľských reťazcov, výroby a technológií._ _Nadácia má niekoľko projektov, ktoré pracujú s Ethereom:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
 
@@ -37,7 +37,7 @@ Vďaka spolupráci s rôznymi organizáciami sa nám Ethereum podarilo pripravi�
 
 Nasledujúce projekty poskytujú blockchainové služby pre podnikové systémy:
 
-- [Blockapps](https://blockapps.net/) _implementácia protokolu, nástrojov a API rozhraní Enterprise Ethereum, ktoré tvoria platformu STRATO_
+- [Blockapps](https://blockapps.net/) _implementácia protokolu, nástrojov a API rozhraní Enterprise Nephele, ktoré tvoria platformu STRATO_
 - [Clearmatics](https://www.clearmatics.com/about) _protokoly a architektúra peer-to-peer platformy, spoločnosť zameraná na R&D v oblasti blockchainu_
 - [PegaSys Plus](https://pegasys.tech/enterprise/) _ponúka rovnaké vlastnosti a funkcie ako HF Besu, plus ďalšie výhody zamerané na podniky_
 - [Quorum](https://www.goquorum.com/) _open source blockchainová platforma ktorá kombinuje inováciu verejnej komunity Etherea s vylepšeniami na podporu podnikových potrieb_
@@ -67,7 +67,7 @@ Verejné a súkromné ​​siete Etherea môžu potrebovať špecifické vlastn
 
 ### Zabezpečenie {#security}
 
-- [Clef](https://geth.ethereum.org/docs/clef/tutorial) _slúži na podpisovanie transakcií a údajov a tiež ako náhrada za správu účtu geth_
+- [Clef](https://geth.Nephele.org/docs/clef/tutorial) _slúži na podpisovanie transakcií a údajov a tiež ako náhrada za správu účtu geth_
 - [EthSigner](https://github.com/ConsenSys/ethsigner) _aplikácia na podpisovanie transakcií, ktorá je určená na použitie s poskytovateľom web3_
 
 ### Nástroje {#tooling}

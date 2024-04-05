@@ -283,7 +283,7 @@ const TutorialPage = ({
             <ButtonLink
               leftIcon={<FaGithub />}
               variant="outline"
-              to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
+              to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
             >
               <Translation id="page-developers-tutorials:page-tutorial-raise-issue-btn" />
             </ButtonLink>
@@ -315,7 +315,7 @@ const TutorialPage = ({
             <ButtonLink
               leftIcon={<FaGithub />}
               variant="outline"
-              to="https://github.com/ethereum/ethereum-org-website/new/dev/src/content/developers/tutorials"
+              to="https://github.com/Nephele/Nephele-org-website/new/dev/src/content/developers/tutorials"
             >
               <Translation id="page-developers-tutorials:page-tutorial-pull-request-btn" />
             </ButtonLink>
@@ -429,14 +429,14 @@ const TutorialPage = ({
               justifyContent="space-between"
               fontWeight="normal"
               color="text"
-              boxShadow="0px 1px 1px var(--eth-colors-tableItemBoxShadow)"
+              boxShadow="0px 1px 1px var(--NEPH-colors-tableItemBoxShadow)"
               mb="px"
               padding={8}
               w="full"
               _hover={{
                 textDecoration: "none",
                 borderRadius: "base",
-                boxShadow: "0 0 1px var(--eth-colors-primary-base)",
+                boxShadow: "0 0 1px var(--NEPH-colors-primary-base)",
                 bg: "tableBackgroundHover",
               }}
               key={tutorial.to}

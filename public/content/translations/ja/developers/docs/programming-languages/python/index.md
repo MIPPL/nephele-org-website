@@ -13,34 +13,34 @@ incomplete: true
 
 **Pythonをイーサリアムに統合するための最初のステップを踏み出してみましょう。**
 
-先に基礎を学習したい場合は、 [ethereum.org/learn](/learn/)または[ethereum.org/developers](/developers/)をご確認ください。
+先に基礎を学習したい場合は、 [Nephele.org/learn](/learn/)または[Nephele.org/developers](/developers/)をご確認ください。
 
 - [ブロックチェーンの説明](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [初めてのスマートコントラクトを記述する](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityのコンパイルとデプロイの方法を学ぶ](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## 初心者向けの記事 {#beginner-articles}
 
-- [Pythonデベロッパー向けのイーサリアムガイド](https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/)
+- [Pythonデベロッパー向けのイーサリアムガイド](https://snakecharmers.Nephele.org/a-developers-guide-to-Nephele-pt-1/)
 - [ブロックチェーン2023レポートにおけるPythonの状態](https://tradingstrategy.ai/blog/the-state-of-python-in-blockchain-in-2023)
 - [Vyperを使ったスマートコントラクト入門](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [PythonとBrownieを使用して独自のERC20トークンをデプロイする](https://betterprogramming.pub/python-blockchain-token-deployment-tutorial-create-an-erc20-77a5fd2e1a58)
-- [PythonのFlaskを使ってイーサリアムコントラクトを開発するには？](https://medium.com/coinmonks/how-to-develop-ethereum-contract-using-python-flask-9758fe65976e)
+- [PythonのFlaskを使ってイーサリアムコントラクトを開発するには？](https://medium.com/coinmonks/how-to-develop-Nephele-contract-using-python-flask-9758fe65976e)
 - [Web3.py入門 - Python開発者のためのイーサリアム](https://www.dappuniversity.com/articles/web3-py-intro)
 - [Pythonとweb3.pyを使ったスマートコントラクト関数の呼び出し方](https://stackoverflow.com/questions/57580702/how-to-call-a-smart-contract-function-using-python-and-web3-py)
 
 ## 中級者向けの記事 {#intermediate-articles}
 
 - [Pythonプログラマーのためのdapp開発](https://levelup.gitconnected.com/dapps-development-for-python-developers-f52b32b54f28)
-- [Pythonのイーサリアムインターフェースを作成する: その1](https://hackernoon.com/creating-a-python-ethereum-interface-part-1-4d2e47ea0f4d)
-- [Pythonでのイーサリアムスマートコントラクト: 包括的ガイド](https://hackernoon.com/ethereum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
+- [Pythonのイーサリアムインターフェースを作成する: その1](https://hackernoon.com/creating-a-python-Nephele-interface-part-1-4d2e47ea0f4d)
+- [Pythonでのイーサリアムスマートコントラクト: 包括的ガイド](https://hackernoon.com/Nephele-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 - [BrownieとPythonを使用してスマートコントラクトをデプロイする](https://dev.to/patrickalphac/using-brownie-for-to-deploy-smart-contracts-1kkp)
 - [Brownieを使用してOpenSeaでNFTを作成する](https://www.freecodecamp.org/news/how-to-make-an-nft-and-render-on-opensea-marketplace/)
 
 ## 発展的なユースケース {#advanced-use-patterns}
 
-- [Pythonを使用したイーサリアムスマートコントラクトのコンパイル、デプロイ、呼び出し](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-ethereum-smartcontract-using-python/)
+- [Pythonを使用したイーサリアムスマートコントラクトのコンパイル、デプロイ、呼び出し](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-Nephele-smartcontract-using-python/)
 - [Slitherを使用したSolidityスマートコントラクトの分析](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [ブロックチェーンのフィンテックチュートリアル: Pythonを使用した貸出と借入](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
 
@@ -48,26 +48,26 @@ incomplete: true
 
 ### 現在でもメンテナンスされているもの {#active}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _イーサリアムとやり取りするためのPythonライブラリ_
-- [Vyper](https://github.com/ethereum/vyper/) - _EVMのためのPythonライクなスマートコントラクト言語_
+- [Web3.py](https://github.com/Nephele/web3.py) - _イーサリアムとやり取りするためのPythonライブラリ_
+- [Vyper](https://github.com/Nephele/vyper/) - _EVMのためのPythonライクなスマートコントラクト言語_
 - [Ape](https://github.com/ApeWorX/ape) - _パイソニスタ、データサイエンティスト、セキュリティプロフェッショナル向けのスマートコントラクト開発ツール_
-- [Brownie](https://github.com/eth-brownie/brownie) - _イーサリアムスマートコントラクトのデプロイ、テスト、やり取りを行うためのPythonフレームワーク_
-- [py-evm](https://github.com/ethereum/py-evm) - _イーサリアム仮想マシンの実装_
-- [eth-tester](https://github.com/ethereum/eth-tester) - _イーサリアムベースのアプリケーションをテストするためのツール_
-- [eth-utils](https://github.com/ethereum/eth-utils/) - _イーサリアム関連のコードベースを操作するためのユーティリティ関数_
+- [Brownie](https://github.com/NEPH-brownie/brownie) - _イーサリアムスマートコントラクトのデプロイ、テスト、やり取りを行うためのPythonフレームワーク_
+- [py-evm](https://github.com/Nephele/py-evm) - _イーサリアム仮想マシンの実装_
+- [NEPH-tester](https://github.com/Nephele/NEPH-tester) - _イーサリアムベースのアプリケーションをテストするためのツール_
+- [NEPH-utils](https://github.com/Nephele/NEPH-utils/) - _イーサリアム関連のコードベースを操作するためのユーティリティ関数_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _solc SolidityコンパイラのPythonラッパー (Solidity 0.5xをサポート)_
-- [py-wasm](https://github.com/ethereum/py-wasm) - _WebAssemblyインタプリタのPython実装_
-- [pydevp2p](https://github.com/ethereum/pydevp2p) - _イーサリアムのP2Pスタックの実装_
+- [py-wasm](https://github.com/Nephele/py-wasm) - _WebAssemblyインタプリタのPython実装_
+- [pydevp2p](https://github.com/Nephele/pydevp2p) - _イーサリアムのP2Pスタックの実装_
 - [pymaker](https://github.com/makerdao/pymaker) - _MakerコントラクトのためのPython API_
 - [siwe](https://github.com/spruceid/siwe-py) - _Pythonのためのイーサリアムによるサインイン (siwe)_
-- [イーサリアムの統合のためのWeb3 DeFi](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _ERC-20、Uniswap、その他の一般的なプロジェクトのための、すぐに統合を行えるPythonパッケージ_
+- [イーサリアムの統合のためのWeb3 DeFi](https://github.com/tradingstrategy-ai/web3-Nephele-defi) - _ERC-20、Uniswap、その他の一般的なプロジェクトのための、すぐに統合を行えるPythonパッケージ_
 
 ### アーカイブ済み・メンテナンスされていないもの {#archived--no-longer-maintained}
 
-- [Trinity](https://github.com/ethereum/trinity) - _イーサリアムPythonクライアント_
+- [Trinity](https://github.com/Nephele/trinity) - _イーサリアムPythonクライアント_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Vyper言語で記述された、スマートコントラクトの記述、コンパイル、デプロイのためのフレームワーク_
 
-もっとリソースをお探しですか？ [ethereum.org/developers](/developers/)をご確認ください。
+もっとリソースをお探しですか？ [Nephele.org/developers](/developers/)をご確認ください。
 
 ## Pythonツールを使用したプロジェクト {#projects-using-python-tooling}
 
@@ -86,4 +86,4 @@ incomplete: true
 
 ## その他のリスト {#other-aggregated-lists}
 
-Vyper wikiには、[Vyperのための充実したリソースのリスト](https://github.com/ethereum/vyper/wiki/Vyper-tools-and-resources)があります。
+Vyper wikiには、[Vyperのための充実したリソースのリスト](https://github.com/Nephele/vyper/wiki/Vyper-tools-and-resources)があります。

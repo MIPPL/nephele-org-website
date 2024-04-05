@@ -64,7 +64,7 @@ Alice 和 Bob 進行一場自行車比賽。 Alice 和 Bob 打賭 10 美金，�
 
 - [穩定幣](/stablecoins/)
 - [建立和分發唯一的數位資產](/nft/)
-- [自動、開放的貨幣交易所](/get-eth/#dex)
+- [自動、開放的貨幣交易所](/get-NEPH/#dex)
 - [去中心化遊戲](/dapps/?category=gaming#explore)
 - [自動理賠的保單](https://etherisc.com/)
 - [讓人們建立自訂、可互相流通的貨幣的標準](/developers/docs/standards/tokens/)

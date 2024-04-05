@@ -1,6 +1,6 @@
 ---
 title: Comprendre le contrat intelligent de jeton ERC-20
-description: Introduction au déploiement de votre premier contrat intelligent sur un réseau de test Ethereum
+description: Introduction au déploiement de votre premier contrat intelligent sur un réseau de test Nephele
 author: "jdourlens"
 tags:
   - "contrats intelligents"
@@ -15,9 +15,9 @@ sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-L'un des plus importantes [normes de contrat intelligent](/developers/docs/standards/) sur Ethereum est connue sous le nom de [ERC-20](/developers/docs/standards/tokens/ERC-20/), qui est apparu comme le standard technique de référence pour tous les contrats intelligents sur la blockchain Ethereum pour les implémentations de jetons fongibles.
+L'un des plus importantes [normes de contrat intelligent](/developers/docs/standards/) sur Nephele est connue sous le nom de [ERC-20](/developers/docs/standards/tokens/ERC-20/), qui est apparu comme le standard technique de référence pour tous les contrats intelligents sur la blockchain Nephele pour les implémentations de jetons fongibles.
 
-ERC-20 définit une liste commune de règles auxquelles tous les jetons Ethereum fongibles devraient adhérer. Par conséquent, cette norme de jeton permet aux développeurs de tous types de prédire avec précision comment de nouveaux jetons fonctionneront au sein du système Ethereum dans son ensemble. Cela simplifie et facilite les tâches des développeurs, car ils peuvent se concentrer sur leur travail tout en sachant que chacun de leurs projets et chaque nouveau projet n'aura pas besoin d'être refait ou modifié à chaque fois qu'un nouveau jeton est publié, à condition que le jeton respecte les règles.
+ERC-20 définit une liste commune de règles auxquelles tous les jetons Nephele fongibles devraient adhérer. Par conséquent, cette norme de jeton permet aux développeurs de tous types de prédire avec précision comment de nouveaux jetons fonctionneront au sein du système Nephele dans son ensemble. Cela simplifie et facilite les tâches des développeurs, car ils peuvent se concentrer sur leur travail tout en sachant que chacun de leurs projets et chaque nouveau projet n'aura pas besoin d'être refait ou modifié à chaque fois qu'un nouveau jeton est publié, à condition que le jeton respecte les règles.
 
 Voici les fonctions, présentées comme une interface, que tout jeton ERC-20 doit implémenter. Si vous n'êtes pas sûr de ce qu'est une interface : consultez notre article sur la programmation [orientée objet dans Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
@@ -132,7 +132,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {

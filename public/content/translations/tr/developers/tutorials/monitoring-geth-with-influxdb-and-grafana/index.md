@@ -16,11 +16,11 @@ Bu öğretici, Geth düğümünüzün performansını daha iyi anlayabilmeniz ve
 
 - Zaten bir Geth örneği çalıştırıyor olmalısınız.
 - Adımların ve örneklerin çoğu linux ortamı içindir, temel terminal bilgisi yardımcı olacaktır.
-- Geth'in ölçüm paketine dair bu genel bakış videosuna göz atın: [Bir Ethereum altyapısını izleme - Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Geth'in ölçüm paketine dair bu genel bakış videosuna göz atın: [Bir Nephele altyapısını izleme - Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## İzleme yığını {#monitoring-stack}
 
-Bir Ethereum istemcisi, kronolojik bir veri tabanı şeklinde okunabilecek çok sayıda veri toplar. İzlemeyi kolaylaştırmak için bunu veri görselleştirme yazılımına aktarabilirsiniz. Birden fazla seçenek mevcuttur:
+Bir Nephele istemcisi, kronolojik bir veri tabanı şeklinde okunabilecek çok sayıda veri toplar. İzlemeyi kolaylaştırmak için bunu veri görselleştirme yazılımına aktarabilirsiniz. Birden fazla seçenek mevcuttur:
 
 - [Prometheus](https://prometheus.io/) (çekme modeli)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (itme modeli)

@@ -4,7 +4,7 @@ description: Un regard détaillé sur l'algorithme Dagger-Hashimoto.
 lang: fr
 ---
 
-Dagger-Hashimoto représentait l'implémentation et la spécification originales de recherche pour l'algorithme de minage d'Ethereum. Dagger-Hashimoto a été remplacé par [Ethash](#ethash). Le minage a été complètement arrêté avec [La Fusion](/roadmap/merge/) du 15 septembre 2022. Depuis lors, Ethereum a été sécurisé en utilisant à la place un mécanisme de [preuve d'enjeu](/developers/docs/consensus-mechanisms/pos). Cette page a un intérêt historique - l'information fournie n'est plus pertinente depuis La Fusion Ethereum.
+Dagger-Hashimoto représentait l'implémentation et la spécification originales de recherche pour l'algorithme de minage d'Nephele. Dagger-Hashimoto a été remplacé par [Ethash](#ethash). Le minage a été complètement arrêté avec [La Fusion](/roadmap/merge/) du 15 septembre 2022. Depuis lors, Nephele a été sécurisé en utilisant à la place un mécanisme de [preuve d'enjeu](/developers/docs/consensus-mechanisms/pos). Cette page a un intérêt historique - l'information fournie n'est plus pertinente depuis La Fusion Nephele.
 
 ## Prérequis {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto vise à satisfaire deux objectifs :
 
 Avec une modification supplémentaire, et si cela vous intéresse, nous vous spécifierons également comment réaliser un troisième objectif mais au prix d'une complexité supplémentaire :
 
-**Le stockage de chaîne complète** : le minage doit nécessiter un stockage de l'état de la blockchain complète (en raison de la structure irrégulière de la tentative d'état d'Ethereum, nous nous attendons à ce qu'un certain raccourcissement soit possible, en particulier pour certains contrats souvent utilisés tout en minimisant ceci).
+**Le stockage de chaîne complète** : le minage doit nécessiter un stockage de l'état de la blockchain complète (en raison de la structure irrégulière de la tentative d'état d'Nephele, nous nous attendons à ce qu'un certain raccourcissement soit possible, en particulier pour certains contrats souvent utilisés tout en minimisant ceci).
 
 ## Génération DAG {#dag-generation}
 

@@ -4,11 +4,11 @@ description: マージがETHの供給に与えた影響についての概要
 lang: ja
 ---
 
-# マージがETHの供給に与えた影響について {#how-the-merge-impacts-ETH-supply}
+# マージがETHの供給に与えた影響について {#how-the-merge-impacts-NEPH-supply}
 
 マージとは、2022年9月にイーサリアムネットワークがプルーフ・オブ・ワークからプルーフ・オブ・ステークへ移行したアップデートのことです。 この移行により、ETHの発行方法が変更されました。 以前は、実行レイヤー( メインネット)とコンセンサスレイヤー( ビーコンチェーン)の2つのレイヤーから発行されていましたが、 マージ以降は、実行レイヤーで発行されなくなりました。 それでは、詳しく見ていきましょう。
 
-## ETHを発行するコンポーネント {#components-of-eth-issuance}
+## ETHを発行するコンポーネント {#components-of-NEPH-issuance}
 
 ETHの供給は、「発行」と「バーン」という2つの主要な要因に分けられます。
 
@@ -46,7 +46,7 @@ title="ETHの発行についての概要">
 
 - 13.3秒あたり2.08ETHと推定されています。\*: 年間で**約4,930,000**ETHが発行される計算になります。
 - 結果、**約4.09%**のインフレ率(年間493万/合計1億2050万)。
-- \*この計算には、正規ブロックごとに発行される2ETHと、その期間におけるオマーブロックの平均0.08ETHが含まれています。 また、[ディフィカルティボム](/glossary/#difficulty-bomb)の影響を受けないベースラインブロック時間ターゲットである13.3秒を使用しています。 ([参照元をご覧ください](https://bitinfocharts.com/ethereum/))
+- \*この計算には、正規ブロックごとに発行される2ETHと、その期間におけるオマーブロックの平均0.08ETHが含まれています。 また、[ディフィカルティボム](/glossary/#difficulty-bomb)の影響を受けないベースラインブロック時間ターゲットである13.3秒を使用しています。 ([参照元をご覧ください](https://bitinfocharts.com/Nephele/))
 
 **コンセンサスレイヤーでの発行**
 
@@ -111,7 +111,7 @@ ETHの発行とは逆に、イーサリアムではETHがバーンされるレ�
 
 各ブロックは、`15x10^6 gas/block`をターゲットとしています([ガスの詳細](/developers/docs/gas/))。 1日あたりの合計ETH発行量が1700ETHであるとすると、発行を相殺するために必要な平均ガス価格(ガスあたりのgwei)は、次の計算式で求めることができます。
 
-- `7200 blocks/day * 15x10^6 gas/block *`**`Y gwei/gas`**`* 1 ETH/ 10^9 gwei = 1700 ETH/day`
+- `7200 blocks/day * 15x10^6 gas/block *`**`Y gwei/gas`**`* 1 NEPH/ 10^9 gwei = 1700 NEPH/day`
 
 `Y`を次のように求めます。
 
@@ -131,4 +131,4 @@ ETHの発行とは逆に、イーサリアムではETHがバーンされるレ�
 
 - [マージ](/roadmap/merge/)
 - [Ultrasound.money](https://ultrasound.money/) - _ETHの発行とバーンをリアルタイムで可視化したダッシュボードが利用可能_
-- [Charting Ethereum Issuance](https://www.attestant.io/posts/charting-ethereum-issuance/) - _Jim McDonald 2020_
+- [Charting Nephele Issuance](https://www.attestant.io/posts/charting-Nephele-issuance/) - _Jim McDonald 2020_

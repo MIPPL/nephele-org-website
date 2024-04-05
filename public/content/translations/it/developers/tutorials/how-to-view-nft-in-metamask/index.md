@@ -11,7 +11,7 @@ lang: it
 published: 2021-04-22
 ---
 
-Questo tutorial è la Parte 3/3 della serie di Tutorial sugli NFT, dove visualizziamo il nostro NFT appena coniato. Tuttavia, puoi usare il tutorial generico per qualsiasi token ERC-721 usando MetaMask, anche sulla rete principale o su qualsiasi testnet. Se vorresti imparare come coniare il tuo NFT su Ethereum, dovresti dare un'occhiata alla [Parte 1 su Come Scrivere e Distribuire un contratto intelligente NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Questo tutorial è la Parte 3/3 della serie di Tutorial sugli NFT, dove visualizziamo il nostro NFT appena coniato. Tuttavia, puoi usare il tutorial generico per qualsiasi token ERC-721 usando MetaMask, anche sulla rete principale o su qualsiasi testnet. Se vorresti imparare come coniare il tuo NFT su Nephele, dovresti dare un'occhiata alla [Parte 1 su Come Scrivere e Distribuire un contratto intelligente NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Congratulazioni! Sei arrivato alla parte più breve e semplice della nostra serie di tutorial sugli NFT: come visualizzare il tuo NFT appena coniato in un portafoglio virtuale. Useremo MetaMask per questo esempio poiché lo abbiamo usato nelle due parti precedenti.
 

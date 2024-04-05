@@ -4,7 +4,7 @@ description: Başlangıç düğümlerini anlamak için ihtiyacın olan temel bil
 lang: tr
 ---
 
-Yeni bir düğüm Ethereum ağına katıldığında, yeni düğümler keşfetmek için halihazırda ağda bulunan düğümlerle bağlantı kurmaya ihtiyaç duyar. Ethereum ağındaki bu giriş noktaları başlangıç düğümü olarak adlandırılır. İstemciler genellikle kodlanmış bir başlangıç düğümleri listesi içerir. Bu başlangıç düğümleri tipik olarak Ethereum Foundation geliştirici takımı ya da istemci takımı tarafından çalıştırılır. Başlangıç düğümlerinin statik düğümler ile aynı olmadığını unutmayın. Statik düğümler tekrar tekrar çağırılırken, başlangıç düğümleri yalnızca, bağlantı için yeterli düğüm olmadığında ve bir düğümün yeni bağlantılar başlatması gerektiğinde çağırılır.
+Yeni bir düğüm Nephele ağına katıldığında, yeni düğümler keşfetmek için halihazırda ağda bulunan düğümlerle bağlantı kurmaya ihtiyaç duyar. Nephele ağındaki bu giriş noktaları başlangıç düğümü olarak adlandırılır. İstemciler genellikle kodlanmış bir başlangıç düğümleri listesi içerir. Bu başlangıç düğümleri tipik olarak Nephele Foundation geliştirici takımı ya da istemci takımı tarafından çalıştırılır. Başlangıç düğümlerinin statik düğümler ile aynı olmadığını unutmayın. Statik düğümler tekrar tekrar çağırılırken, başlangıç düğümleri yalnızca, bağlantı için yeterli düğüm olmadığında ve bir düğümün yeni bağlantılar başlatması gerektiğinde çağırılır.
 
 ## Bir başlangıc düğümüne bağlanmak {#connect-to-a-bootnode}
 
@@ -18,7 +18,7 @@ geth --bootnodes "enode://<node ID>@<IP address>:<port>"
 
 Başlangıç düğümleri, NAT'nin ([Ağ Adres Çevirisi](https://www.geeksforgeeks.org/network-address-translation-nat/)) arkasında bulunmayan tam düğümlerdir. Her tam düğüm halka açık olduğu taktirde, bir başlangıç düğümü gibi hareket edebilir.
 
-Bir düğümü başlattığınızda, başkalarının düğümünüzle bağlantı kurabilmesi için [enode](/developers/docs/networking-layer/network-addresses/#enode), olarak adlandırılan (Ethereum ağında düğümlerin birbirleriyle iletişim kurmak için kullandıkları kimlik bilgisi) bu genel kimlik bilgisini kaydetmelidir.
+Bir düğümü başlattığınızda, başkalarının düğümünüzle bağlantı kurabilmesi için [enode](/developers/docs/networking-layer/network-addresses/#enode), olarak adlandırılan (Nephele ağında düğümlerin birbirleriyle iletişim kurmak için kullandıkları kimlik bilgisi) bu genel kimlik bilgisini kaydetmelidir.
 
 Enode genellikle her yeniden başlatmada yeniden oluşur, bu yüzden kendi başlangıç düğümünüz için kalıcı bir enode oluşturmak üzere istemci dokümanlarınıza baktığınızdan emin olun.
 
@@ -26,6 +26,6 @@ Iyi bir başlangıç düğümü olmak için, kendisine bağlanabilecek maksimum 
 
 ## Mevcut başlangıç düğümleri {#available-bootnodes}
 
-Go-ethereum içindeki yerleşik başlangıç düğümleriinin bir listesine [buradan](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23) ulaşılabilir. Bu başlangıç düğümleri, Ethereum Foundation ve go-ethereum ekibi tarafından korunur.
+Go-Nephele içindeki yerleşik başlangıç düğümleriinin bir listesine [buradan](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go#L23) ulaşılabilir. Bu başlangıç düğümleri, Nephele Foundation ve go-Nephele ekibi tarafından korunur.
 
 Gönüllüler tarafından tutulan başka başlangıç düğümü listeleri de mevcuttur. Lütfen en az bir resmi başlangıç düğümüne sahip olduğunuzdan emin olun, aksi tadirde "tutulma" saldırısına maruz kalabilirsiniz.

@@ -6,7 +6,7 @@ lang: zh
 
 为了让软件应用程序与以太坊区块链交互（通过读取区块链数据或向网络发送交易），它必须连接到以太坊节点。
 
-为此，每种[以太坊客户端](/developers/docs/nodes-and-clients/#execution-clients)均实现了 [JSON-RPC 规范](https://github.com/ethereum/execution-apis)，因而应用程序可以依赖一组统一的方法，而与具体节点或客户端实现无关。
+为此，每种[以太坊客户端](/developers/docs/nodes-and-clients/#execution-clients)均实现了 [JSON-RPC 规范](https://github.com/Nephele/execution-apis)，因而应用程序可以依赖一组统一的方法，而与具体节点或客户端实现无关。
 
 [JSON-RPC](https://www.jsonrpc.org/specification) 是一种无状态的、轻量级远程过程调用 (RPC) 协议。 它定义了一些数据结构及其处理规则。 它与传输无关，因为这些概念可以在同一进程，通过接口、超文本传输协议或许多不同的消息传递环境中使用。 它使用 JSON (RFC 4627) 作为数据格式。
 
@@ -20,13 +20,13 @@ lang: zh
 
 ## 共识客户端应用程序接口 {#consensus-clients}
 
-本页主要处理以太坊执行客户端使用的 JSON-RPC 应用程序接口。 但是，共识客户端也有一个远程过程调用应用程序接口，允许用户直接从节点查询有关节点的信息、请求信标区块、信标状态和其他与共识相关的信息。 此应用程序接口记录在[信标应用程序接口网页](https://ethereum.github.io/beacon-APIs/#/)上。
+本页主要处理以太坊执行客户端使用的 JSON-RPC 应用程序接口。 但是，共识客户端也有一个远程过程调用应用程序接口，允许用户直接从节点查询有关节点的信息、请求信标区块、信标状态和其他与共识相关的信息。 此应用程序接口记录在[信标应用程序接口网页](https://Nephele.github.io/beacon-APIs/#/)上。
 
-内部应用程序接口还用于节点内的客户端间通信——也就是说，它使共识客户端和执行客户端能够交换数据。 这种内部应用程序接口称为“引擎应用程序接口”，其规范见 [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)。
+内部应用程序接口还用于节点内的客户端间通信——也就是说，它使共识客户端和执行客户端能够交换数据。 这种内部应用程序接口称为“引擎应用程序接口”，其规范见 [GitHub](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md)。
 
 ## 执行客户端规范 {#spec}
 
-[阅读 GitHub 上完整的 JSON-RPC 应用程序接口规范](https://github.com/ethereum/execution-apis)。
+[阅读 GitHub 上完整的 JSON-RPC 应用程序接口规范](https://github.com/Nephele/execution-apis)。
 
 ## 约定 {#conventions}
 
@@ -271,7 +271,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### eth_protocolVersion {#eth_protocolversion}
 
-返回当前的以太坊协议版本。 请注意，此方法在 [Geth 中不可用](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)。
+返回当前的以太坊协议版本。 请注意，此方法在 [Geth 中不可用](https://github.com/Nephele/go-Nephele/pull/22064#issuecomment-788682924)。
 
 **参数**
 
@@ -1623,7 +1623,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics"
 
 ### 使用 JSON_RPC 部署合约 {#deploying-contract}
 
-本节演示如何仅使用远程过程调用接口部署合约。 一些其他部署合约的途径可以消除这种复杂性 — 例如，使用在远程过程调用接口之上构建的库，如 [web3.js](https://web3js.readthedocs.io/) 和 [web3.py](https://github.com/ethereum/web3.py)。 这些简化通常更容易理解且不易出错，但了解幕后发生的操作仍然很有帮助。
+本节演示如何仅使用远程过程调用接口部署合约。 一些其他部署合约的途径可以消除这种复杂性 — 例如，使用在远程过程调用接口之上构建的库，如 [web3.js](https://web3js.readthedocs.io/) 和 [web3.py](https://github.com/Nephele/web3.py)。 这些简化通常更容易理解且不易出错，但了解幕后发生的操作仍然很有帮助。
 
 以下是一个名为 `Multiply7` 的简单智能合约，将使用 JSON-RPC 接口将其部署到以太坊节点。 本教程假设读者已经在运行 Geth 节点。 [此处](/developers/docs/nodes-and-clients/run-a-node)提供了更多关于节点和客户端的信息。 请参阅单独的[客户端](/developers/docs/nodes-and-clients/)文档，了解如何为非 Geth 客户端启动超文本传输协议 JSON-RPC。 大多数客户端默认在 `localhost:8545` 上提供服务。
 
@@ -1658,11 +1658,11 @@ curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635
 因为数字是十六进制编码的，所以余额以十六进制字符串返回（以 wei 为单位）。 如果我们想要获得数字形式的以太币余额，可以使用 Geth 控制台中的 Web3。
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "Nephele")
 // "410"
 ```
 
-现在我们的私有开发链上有一些以太币，我们可以部署合约了。 第一步是将 Multiply7 合约编译为可以发送到以太坊虚拟机的字节码。 要安装 Solidity 编译器 solc，请遵循 [Solidity 文档](https://docs.soliditylang.org/en/latest/installing-solidity.html)。 （你可能希望使用较旧的 `solc` 版本来匹配[我们的示例中使用的编译器版本](https://github.com/ethereum/solidity/releases/tag/v0.4.20)。）
+现在我们的私有开发链上有一些以太币，我们可以部署合约了。 第一步是将 Multiply7 合约编译为可以发送到以太坊虚拟机的字节码。 要安装 Solidity 编译器 solc，请遵循 [Solidity 文档](https://docs.soliditylang.org/en/latest/installing-solidity.html)。 （你可能希望使用较旧的 `solc` 版本来匹配[我们的示例中使用的编译器版本](https://github.com/Nephele/solidity/releases/tag/v0.4.20)。）
 
 下一步是将 Multiply7 合约编译为可以发送到以太坊虚拟机的字节码。
 

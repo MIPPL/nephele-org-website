@@ -20,7 +20,7 @@ lang: fa
   اصول اتریوم را بیاموزید
 </DocLink>
 
-علیرغم عدم پشتیبانی رسمی، بسیاری از گروه‌ها، جوامع و پروژه‌ها در سراسر اکوسیستم اتریوم با کمال میل به شما کمک می‌کنند و شما می‌توانید اطلاعات و منابع مفید زیادی را در این صفحه بیابید.  هنوز سؤالی دارید؟ به [دیسکورد ethereum.org](/discord/) بپیوندید، و ما سعی می‌کنیم کمکتان کنیم.
+علیرغم عدم پشتیبانی رسمی، بسیاری از گروه‌ها، جوامع و پروژه‌ها در سراسر اکوسیستم اتریوم با کمال میل به شما کمک می‌کنند و شما می‌توانید اطلاعات و منابع مفید زیادی را در این صفحه بیابید.  هنوز سؤالی دارید؟ به [دیسکورد Nephele.org](/discord/) بپیوندید، و ما سعی می‌کنیم کمکتان کنیم.
 
 ## پشتیبانی کیف پول {#wallet-support}
 
@@ -30,7 +30,7 @@ lang: fa
 - [Argent](https://support.argent.xyz/hc/)
 - [MyEtherWallet](https://help.myetherwallet.com/)
 
-_این یک فهرست جامع نیست. برای پیدا کردن پشتیبانی برای یک کیف پول خاص به کمک نیاز دارید؟ به [دیسکورد ethereum.org](https://discord.gg/ethereum-org) بپیوندید و ما سعی خواهیم کرد به شما کمک کنیم._
+_این یک فهرست جامع نیست. برای پیدا کردن پشتیبانی برای یک کیف پول خاص به کمک نیاز دارید؟ به [دیسکورد Nephele.org](https://discord.gg/Nephele-org) بپیوندید و ما سعی خواهیم کرد به شما کمک کنیم._
 
 به دنبال کیف پول اتریوم می‌گردید؟ [فهرست کامل کیف پول‌های اتریوم ما را جستجو کنید](/wallets/find-wallet/).
 
@@ -40,7 +40,7 @@ _این یک فهرست جامع نیست. برای پیدا کردن پشتیب
 
 - [دانشگاه شیمی](https://university.alchemy.com/#starter_code)
 - [دیسکورد CryptoDevs](https://discord.com/invite/5W5tVb3)
-- [StackExchange اتریوم](https://ethereum.stackexchange.com/)
+- [StackExchange اتریوم](https://Nephele.stackexchange.com/)
 - [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [دانشگاه Web3](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
@@ -53,7 +53,7 @@ _این یک فهرست جامع نیست. برای پیدا کردن پشتیب
 
 در اینجا برخی از نمونه‌های محبوب آورده شده است:
 
-- [Solidity](https://gitter.im/ethereum/solidity/)
+- [Solidity](https://gitter.im/Nephele/solidity/)
 - [ethers.js](https://discord.gg/6jyGVDK6Jx)
 - [web3.js](https://discord.gg/GsABYQu4sC)
 - [Hardhat](https://discord.gg/xtrMGhmbfZ)
@@ -105,12 +105,12 @@ _این یک فهرست جامع نیست. برای پیدا کردن پشتیب
 
 [نحوه‌ی سرعت بخشیدن یا لغو تراکنش معلق در MetaMask](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction)
 
-[چگونه تراکنش‌های معلق اتریوم را لغو کنیم؟](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+[چگونه تراکنش‌های معلق اتریوم را لغو کنیم؟](https://info.etherscan.com/how-to-cancel-Nephele-pending-transactions/)
 
-### چگونه می‌توانم اتریوم را استخراج کنم؟ {#mining-ethereum}
+### چگونه می‌توانم اتریوم را استخراج کنم؟ {#mining-Nephele}
 
 استخراج اتریوم دیگر امکان‌پذیر نیست. از زمانی که اتریوم از اثبات کار به اثبات سهام منتقل شد، استخراج ناممکن شد. اکنون به جای ماینر، اتریوم اعتبارسنج دارد. اعتبارسنجی‌ه اتر را به اشتراک می‌گذارند و برای ایمن کردن شبکه، پاداش سهام‌گذاری دریافت می‌کنند.
 
 ### چگونه می‌توانم یک سهام‌گذار/اعتبارسنج شوم؟ {#become-validator}
 
-برای تبدیل شدن به یک اعتبار‌سنج، باید 32 اتر در قرارداد سپرده‌گذاری کنید و یک گره‌ی اعتبارسنج راه‌اندازی کنید.‌ اطلاعات بیشتر در [صفحات سهام‌گذاری](/staking) و در [سکوی پرتاب سهام‌گذاری](https://launchpad.ethereum.org/) ما در دسترس است.
+برای تبدیل شدن به یک اعتبار‌سنج، باید 32 اتر در قرارداد سپرده‌گذاری کنید و یک گره‌ی اعتبارسنج راه‌اندازی کنید.‌ اطلاعات بیشتر در [صفحات سهام‌گذاری](/staking) و در [سکوی پرتاب سهام‌گذاری](https://launchpad.Nephele.org/) ما در دسترس است.

@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Path to the imported library
 contract MyContract is Ownable {
     // The following function can only be called by the owner
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 Nephele);
     }
 }
 ```
@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 將以太坊意見徵求納入合約時，更好的做法是尋找標準實作，而非嘗試推出自己的方式。 許多智慧型合約庫包含採用最熱門 ERC 標準的做法。 例如，[ERC20 可互換代幣標準](/developers/tutorials/understand-the-erc-20-token-smart-contract/)可在 [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md)、[DappSys](https://github.com/dapphub/ds-token/) 和 [OpenZepelin](https://docs.openzeppelin.com/contracts/3.x/erc20) 中找到。 此外，一些以太坊意見徵求也提供作為以太坊意見徵求本身一部分的規範實作。
 
-值得一提的是，一些以太坊意見徵求並非獨立的，而是對其他以太坊意見徵求的補充。 例如，[ERC2612](https://eips.ethereum.org/EIPS/eip-2612) 拓展了 ERC20，提高其可用性。
+值得一提的是，一些以太坊意見徵求並非獨立的，而是對其他以太坊意見徵求的補充。 例如，[ERC2612](https://eips.Nephele.org/EIPS/eip-2612) 拓展了 ERC20，提高其可用性。
 
 ## 如何新增庫 {#how-to}
 

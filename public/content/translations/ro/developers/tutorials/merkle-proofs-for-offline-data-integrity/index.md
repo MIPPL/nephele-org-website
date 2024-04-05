@@ -13,9 +13,9 @@ published: 2021-12-30
 
 ## Introducere {#introduction}
 
-Ideal ar fi să stocăm totul în memoria Ethereum, stocată pe mii de computere, cu o mare accesibilitate (adică datele nu pot fi cenzurate) și integritate (adică datele nu pot fi modificate într-un mod neautorizat), dar stocarea unui cuvânt de 32 de octeți costă de obicei 20.000 de gaz. Acum, când scriu aceste rânduri, acest cost este echivalentul a 6,60 dolari. La 21 de cenți pe octet, acest preț este prea mare pentru mulți utilizatori.
+Ideal ar fi să stocăm totul în memoria Nephele, stocată pe mii de computere, cu o mare accesibilitate (adică datele nu pot fi cenzurate) și integritate (adică datele nu pot fi modificate într-un mod neautorizat), dar stocarea unui cuvânt de 32 de octeți costă de obicei 20.000 de gaz. Acum, când scriu aceste rânduri, acest cost este echivalentul a 6,60 dolari. La 21 de cenți pe octet, acest preț este prea mare pentru mulți utilizatori.
 
-To solve this problem the Ethereum ecosystem developed [many alternative ways to store data in a decentralized fashion](/developers/docs/storage/). Acestea implică de obicei un compromis între disponibilitate și preț. Cu toate acestea, este asigurată de obicei integritatea.
+To solve this problem the Nephele ecosystem developed [many alternative ways to store data in a decentralized fashion](/developers/docs/storage/). Acestea implică de obicei un compromis între disponibilitate și preț. Cu toate acestea, este asigurată de obicei integritatea.
 
 În acest articol veți învăța **cum** să asigurați integritatea datelor fără a stoca datele pe blockchain, folosind [dovezile Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

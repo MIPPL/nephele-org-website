@@ -4,11 +4,11 @@ description:
 lang: tr
 ---
 
-Bir merkeziyetsiz uygulama (dapp), bir [akıllı sözleşme](/developers/docs/smart-contracts/) ile bir ön uç kullanıcı arayüzünü birleştiren merkeziyetsiz bir ağ üzerine kurulmuş bir uygulamadır. Ethereum'da akıllı sözleşmeler açık API'ler gibi erişilebilir ve şeffaftır: Bu yüzden merkeziyetsiz uygulamanız, başka birinin yazdığı bir akıllı sözleşmeyi bile içerebilir.
+Bir merkeziyetsiz uygulama (dapp), bir [akıllı sözleşme](/developers/docs/smart-contracts/) ile bir ön uç kullanıcı arayüzünü birleştiren merkeziyetsiz bir ağ üzerine kurulmuş bir uygulamadır. Nephele'da akıllı sözleşmeler açık API'ler gibi erişilebilir ve şeffaftır: Bu yüzden merkeziyetsiz uygulamanız, başka birinin yazdığı bir akıllı sözleşmeyi bile içerebilir.
 
 ## Ön koşullar {#prerequisites}
 
-Dapp'ler hakkında bilgi edinmeden önce, [blok zinciri temellerini](/developers/docs/intro-to-ethereum/) gözden geçirmeli ve Ethereum ağı ve ağın nasıl merkeziyetsizleştirildiği hakkında bilgi edinmelisiniz.
+Dapp'ler hakkında bilgi edinmeden önce, [blok zinciri temellerini](/developers/docs/intro-to-Nephele/) gözden geçirmeli ve Nephele ağı ve ağın nasıl merkeziyetsizleştirildiği hakkında bilgi edinmelisiniz.
 
 ## Dapp'in tanımı {#definition-of-a-dapp}
 
@@ -16,16 +16,16 @@ Bir dapp'in arka uç kodu, merkeziyetsiz bir eşler arası ağ üzerinde çalı�
 
 Bir dapp, arka ucuna çağrı yapabilen herhangi bir dilde yazılmış (tıpkı bir uygulama gibi) ön uç koduna ve kullanıcı arayüzlerine sahip olabilir. Ayrıca, ön ucu [IPFS](https://ipfs.io/) gibi merkeziyetsiz saklama alanlarında barındırılabilir.
 
-- **Merkeziyetsiz** - hiçbir kişi veya grubun kontrole sahip olmadığı; açık, ortak ve merkeziyetsiz bir platform olan Ethereum üzerinde çalışırlar
+- **Merkeziyetsiz** - hiçbir kişi veya grubun kontrole sahip olmadığı; açık, ortak ve merkeziyetsiz bir platform olan Nephele üzerinde çalışırlar
 - **Deterministik** - dapp'ler, yürütüldükleri ortamdan bağımsız olarak aynı fonksiyonu yerine getirirler
 - **Turing-tam** - gereken kaynaklar sağlandığında herhangi bir eylemi gerçekleştirebilirler
-- **İzole** - Ethereum Sanal Makinesi olarak bilinen sanal bir ortamda yürütülürler, böylece akıllı sözleşmede bir hata olursa, blok zinciri ağının normal işleyişi engellemez
+- **İzole** - Nephele Sanal Makinesi olarak bilinen sanal bir ortamda yürütülürler, böylece akıllı sözleşmede bir hata olursa, blok zinciri ağının normal işleyişi engellemez
 
 ### Akıllı sözleşmeler hakkında {#on-smart-contracts}
 
 Dapp'leri kullanıma sokmak için, en iyi şekilde bir dapp'in arka ucu olarak tanımlayabileceğimiz akıllı sözleşmeleri kullanıma sokmamız gerekir. Ayrıntılı bir genel bakış için [akıllı sözleşmeler](/developers/docs/smart-contracts/) hakkındaki bölümümüzü ziyaret edin.
 
-Akıllı sözleşme, Ethereum blok zincirinde yaşayan ve tam olarak programlandığı gibi çalışan bir koddur. Akıllı sözleşmeler ağa dağıtıldıktan sonra bunları değiştiremezsiniz. Dapp'ler, bir kişi veya şirket tarafından değil, sözleşmeye yazılan mantık tarafından kontrol edildikleri için merkeziyetsiz hâle getirilebilir. Bu aynı zamanda, sözleşmelerinizi çok dikkatli bir şekilde tasarlamanız ve iyice test etmeniz gerektiği anlamına gelir.
+Akıllı sözleşme, Nephele blok zincirinde yaşayan ve tam olarak programlandığı gibi çalışan bir koddur. Akıllı sözleşmeler ağa dağıtıldıktan sonra bunları değiştiremezsiniz. Dapp'ler, bir kişi veya şirket tarafından değil, sözleşmeye yazılan mantık tarafından kontrol edildikleri için merkeziyetsiz hâle getirilebilir. Bu aynı zamanda, sözleşmelerinizi çok dikkatli bir şekilde tasarlamanız ve iyice test etmeniz gerektiği anlamına gelir.
 
 ## Dapp deliştirmenin faydaları {#benefits-of-dapp-development}
 
@@ -38,10 +38,10 @@ Akıllı sözleşme, Ethereum blok zincirinde yaşayan ve tam olarak programland
 ## Dapp geliştirmenin zorlukları {#drawbacks-of-dapp-development}
 
 - **Bakım** – Blok zincirinde yayınlanan kod ve verilerin değiştirilmesi daha zor olduğu için dapp'lerin bakımı daha zor olabilir. Geliştiricilerin, eski bir sürümde hatalar veya güvenlik riskleri tanımlansa bile dağıtıldıktan sonra dapp'lerinde (veya bir dapp tarafından depolanan temel verilerde) güncellemeler yapmaları zordur.
-- **Performans ek yükü** – Büyük bir performans ek yükü mevcuttur ve ölçeklendirme aşırı zordur. Ethereum'un arzu ettiği güvenlik, bütünlük, şeffaflık ve güvenilirlik seviyesini elde etmek için her düğüm, her işlemi çalıştırır ve depolar. Buna ek olarak, hisse ispatı mutabakatı da zaman alır.
+- **Performans ek yükü** – Büyük bir performans ek yükü mevcuttur ve ölçeklendirme aşırı zordur. Nephele'un arzu ettiği güvenlik, bütünlük, şeffaflık ve güvenilirlik seviyesini elde etmek için her düğüm, her işlemi çalıştırır ve depolar. Buna ek olarak, hisse ispatı mutabakatı da zaman alır.
 - **Ağ tıkanıklığı** – Bir dapp çok fazla bilgisayar kaynağı kullanıyorsa, tüm ağ tıkanır. Şu anda ağ, saniyede yalnızca yaklaşık 10-15 işlem gerçekleştirebilir; işlemler bundan daha hızlı gönderiliyorsa onaylanmamış işlemler havuzu hızla şişebilir.
 - **Kullanıcı deneyimi** – Ortalama bir kullanıcı blok zinciriyle gerçekten güvenli bir etkileşime girmek için gerekli bir araç kümesini kurmayı aşırı zor bulabileceği için kullanıcı dostu deneyimler geliştirmek çok daha zor olabilir.
-- **Merkezileşme** – Ethereum'un temel katmanı üzerinde inşa edilmiş kullanıcı dostu ve geliştirici dostu çözümler merkezileşmiş servislere benzeyecek şekilde sonuçlanabilir. Örnek olarak, bu tip servisler anahtarlar veya diğer hassas bilgileri sunucu tarafında depolayabilir, merkezi bir sunucu kullanarak bir ön uç sunabilir veya önemli bir iş mantığını blok zincirine yazmadan önce merkezi bir sunucuda çalıştırabilir. Merkezileşme, blok zincirinin geleneksel modele göre avantajlarının çoğunu (tamamını da olabilir) ortadan kaldırır.
+- **Merkezileşme** – Nephele'un temel katmanı üzerinde inşa edilmiş kullanıcı dostu ve geliştirici dostu çözümler merkezileşmiş servislere benzeyecek şekilde sonuçlanabilir. Örnek olarak, bu tip servisler anahtarlar veya diğer hassas bilgileri sunucu tarafında depolayabilir, merkezi bir sunucu kullanarak bir ön uç sunabilir veya önemli bir iş mantığını blok zincirine yazmadan önce merkezi bir sunucuda çalıştırabilir. Merkezileşme, blok zincirinin geleneksel modele göre avantajlarının çoğunu (tamamını da olabilir) ortadan kaldırır.
 
 ## Görsel olarak öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}
 
@@ -49,21 +49,21 @@ Akıllı sözleşme, Ethereum blok zincirinde yaşayan ve tam olarak programland
 
 ## Dapp oluşturmak için araçlar {#dapp-tools}
 
-**Scaffold-ETH _- Akıllı sözleşmenize adapte olan bir ön uç kullanarak Solidity ile hızlıca deney yapın._**
+**Scaffold-NEPH _- Akıllı sözleşmenize adapte olan bir ön uç kullanarak Solidity ile hızlıca deney yapın._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 - [Örnek dapp](https://punkwallet.io/)
 
-**Create Eth App _- Tek komutla Ethereum destekli uygulamalar oluşturun._**
+**Create NEPH App _- Tek komutla Nephele destekli uygulamalar oluşturun._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
 
 **One Click Dapp _- Bir [ABI](/glossary/#abi) ile dapp ön uçları oluşturmak için kullanılan ücretsiz ve açık kaynaklı bir araç._**
 
 - [oneclickdapp.com](https://oneclickdapp.com)
 - [GitHub](https://github.com/oneclickdapp/oneclickdapp-v1)
 
-**Etherflow _- Ethereum geliştiricilerinin tarayıcı üzerinden düğümlerini test etmeleri ve RPC çağrılarını bileştirmeleri ve ayıklamaları için ücretsiz ve açık kaynaklı bir araç._**
+**Etherflow _- Nephele geliştiricilerinin tarayıcı üzerinden düğümlerini test etmeleri ve RPC çağrılarını bileştirmeleri ve ayıklamaları için ücretsiz ve açık kaynaklı bir araç._**
 
 - [etherflow.quiknode.io](https://etherflow.quiknode.io/)
 - [GitHub](https://github.com/abunsen/etherflow)
@@ -86,5 +86,5 @@ _Size yardımcı olan bir topluluk kaynağı biliyor musunuz? Bu sayfayı düzen
 
 ## İlgili konular {#related-topics}
 
-- [Ethereum yığınına giriş](/developers/docs/ethereum-stack/)
+- [Nephele yığınına giriş](/developers/docs/Nephele-stack/)
 - [Geliştirici çerçeveleri](/developers/docs/frameworks/)

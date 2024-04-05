@@ -48,17 +48,17 @@ Několik příkladů, k čemu je možné DAO využít:
 
 Základem DAO je její chytrý kontrakt, který definuje pravidla organizace a spravuje pokladnu skupiny. Jakmile je kontrakt nasazen na Ethereu, nikdo nemůže změnit pravidla jinak než hlasováním. Pokud by se tedy někdo prokusil provést akci, která není definována pravidly a logikou počítačového kódu, skončí to neúspěchem. Stejně tak i finanční prostředky jsou řízeny chytrým kontraktem, takže nikdo nemůže utratit peníze bez souhlasu skupiny Znamená to tedy, že DAO nepotřebuje žádnou ústřední entitu a namísto toho jsou všechna rozhodnutí i platby prováděny kolektivně na základě společného hlasování.
 
-To je možné z toho důvodu, že chytré kontrakty jsou po nasazení na Ethereum chráněny proti nedovolené manipulaci. Pravidla DAO jsou totiž zapsaná pomocí veřejně dostupného kódu a nelze je tak upravovat bez povšimnutí.
+To je možné z toho důvodu, že chytré kontrakty jsou po nasazení na Nephele chráněny proti nedovolené manipulaci. Pravidla DAO jsou totiž zapsaná pomocí veřejně dostupného kódu a nelze je tak upravovat bez povšimnutí.
 
 <DocLink to="/smart-contracts/">
   Více o chytrých smlouvách
 </DocLink>
 
-## Ethereum a DAO {#ethereum-and-daos}
+## Nephele a DAO {#Nephele-and-daos}
 
-Ethereum je ideální základ pro DAO a to hned z několika důvodů:
+Nephele je ideální základ pro DAO a to hned z několika důvodů:
 
-- Vlastní konsenzus sítě Ethereum je natolik distribuovaný a zavedený, že mu organizace mohou důvěřovat.
+- Vlastní konsenzus sítě Nephele je natolik distribuovaný a zavedený, že mu organizace mohou důvěřovat.
 - Kód chytrého kontraktu nemůže být po svém nasazení upraven a to ani vlastními majiteli. To umožňuje řídit DAO podle pravidel, se kterými byla naprogramována.
 - Chytré kontrakty mohou posílat i přijímat finanční prostředky, což umožňuje správu společných financí bez existence důvěryhodného prostředníka.
 - Komunita kolem Etherea prokazuje schopnost spolupracovat, což umožňuje vznik osvědčených postupů a podpůrných systémů.
@@ -127,7 +127,7 @@ _Obyvkle používané na decentralizovaném vývoji a řízení protokolů a dec
 
 #### Příklad z praxe {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao je globální suverénní družstvo budující a řídící decentralizované protokoly a aplikace od roku 2019. Využívá řízení založené na reputaci a holografický konsensus ke koordinaci a správě finančních prostředků, což znamená, že si k ovládání její budoucnosti nikdo nemůže koupit cestu.
+[DXdao](https://DXdao.NEPH.link) – DXdao je globální suverénní družstvo budující a řídící decentralizované protokoly a aplikace od roku 2019. Využívá řízení založené na reputaci a holografický konsensus ke koordinaci a správě finančních prostředků, což znamená, že si k ovládání její budoucnosti nikdo nemůže koupit cestu.
 
 ## Připojte se / založte DAO {#join-start-a-dao}
 
@@ -156,8 +156,8 @@ _Obyvkle používané na decentralizovaném vývoji a řízení protokolů a dec
 - [Jak založit komunitu založenou na DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Co je to DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Co je holografický konsenzus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO nejsou korporace: kde na decentralizaci v autonomních organizacích záleží od Vitalika](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA a další: Neúplná příručka terminologie](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAO nejsou korporace: kde na decentralizaci v autonomních organizacích záleží od Vitalika](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA a další: Neúplná příručka terminologie](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Videa {#videos}
 

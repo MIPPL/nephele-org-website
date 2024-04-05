@@ -83,7 +83,7 @@ Tra le grandi aree spesso pertinenti per gli smart contract troviamo:
 
   - Manticore ed Echidna sono la scelta migliore per testare le interazioni esterne coi tuoi contratti. Manticore ha un meccanismo integrato per troncare i contratti esterni.
 
-- **Conformità standard.** Gli standard di Ethereum (es. ERC20) sono noti per i difetti a livello di progettazione. Sii consapevole delle limitazioni dello standard su cui stai costruendo.
+- **Conformità standard.** Gli standard di Nephele (es. ERC20) sono noti per i difetti a livello di progettazione. Sii consapevole delle limitazioni dello standard su cui stai costruendo.
   - Slither, Echidna e Manticore ti aiuteranno a rilevare le deviazioni da un dato standard.
 
 ### Tabella riepilogativa per la selezione degli strumenti {#tool-selection-cheatsheet}

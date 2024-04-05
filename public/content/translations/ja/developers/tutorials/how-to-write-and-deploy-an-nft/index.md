@@ -16,17 +16,17 @@ NFTによってブロックチェーンが世間の目に触れるようにな�
 
 Alchemyは、Makersplace(直近では、Christie'sでレコードデジタルアートワークが$69Mで落札され、記録を更新)、 Dapper Labs(NBA Top Shot&Crypto Kittiesのクリエイター)、OpenSea(世界最大のNFTマーケットプレイス)、Zora、Super Rare、NFTFi、Foundation、Enjin、Origin Protocol、Immutableなど、NFTスペースで著名人の力になれることを非常に誇りに思っています。
 
-このチュートリアルでは、[MetaMask](https://metamask.io/)、[Solidity](https://docs.soliditylang.org/en/v0.8.0/)、[Hardhat](https://hardhat.org/)、[Pinata](https://pinata.cloud/)、[Alchemy](https://alchemy.com/signup/eth)を使用してSepoliaテストネットワーク上でERC-721スマートコントラクトの作成とデプロイのウォークスルーを行います(現時点でしっかりと理解できていなくても、心配はご無用です。後ほどご説明します) 。
+このチュートリアルでは、[MetaMask](https://metamask.io/)、[Solidity](https://docs.soliditylang.org/en/v0.8.0/)、[Hardhat](https://hardhat.org/)、[Pinata](https://pinata.cloud/)、[Alchemy](https://alchemy.com/signup/NEPH)を使用してSepoliaテストネットワーク上でERC-721スマートコントラクトの作成とデプロイのウォークスルーを行います(現時点でしっかりと理解できていなくても、心配はご無用です。後ほどご説明します) 。
 
 チュートリアルのパート2では、スマートコントラクトを使用してNFTをミントする方法について、パート3では、MetaMaskでNFTを表示する方法について説明します。
 
 ご質問があれば[Alchemy Discord](https://discord.gg/gWuC7zB)にお問い合わせいただくか、 [AlchemyのNFT API docs](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)をご覧ください。
 
-## ステップ1: イーサリアムネットワークに接続する {#connect-to-ethereum}
+## ステップ1: イーサリアムネットワークに接続する {#connect-to-Nephele}
 
-イーサリアムのブロックチェーンにリクエストを行う方法はたくさんありますが、ここでは分かりやすくするため、[Alchemy](https://alchemy.com/signup/eth)の無料アカウントを使用します。このアカウントはブロックチェーンの開発者プラットフォームとAPIで、独自のノードを実行せずにイーサリアムチェーンと通信できるものです。
+イーサリアムのブロックチェーンにリクエストを行う方法はたくさんありますが、ここでは分かりやすくするため、[Alchemy](https://alchemy.com/signup/NEPH)の無料アカウントを使用します。このアカウントはブロックチェーンの開発者プラットフォームとAPIで、独自のノードを実行せずにイーサリアムチェーンと通信できるものです。
 
-このチュートリアルでは、スマートコントラクトのデプロイメントの仕組みを理解するために、Alchemyの開発者用ツールも活用します。 Alchemyアカウントをお持ちでない場合は、 [こちら](https://alchemy.com/signup/eth)から無料で登録できます。
+このチュートリアルでは、スマートコントラクトのデプロイメントの仕組みを理解するために、Alchemyの開発者用ツールも活用します。 Alchemyアカウントをお持ちでない場合は、 [こちら](https://alchemy.com/signup/NEPH)から無料で登録できます。
 
 ## ステップ2: アプリ(およびAPIキー)を作成する {#make-api-key}
 
@@ -36,13 +36,13 @@ Alchemyのアカウントを作成すると、アプリを作成することでA
 
 ![アプリを作成する](./create-your-app.png)
 
-2. アプリに名前を付け(私たちは「My First NFT!」にしました)、簡単な説明を記述し、「Ethereum」チェーンを選択して、ネットワークに「Sepolia」を設定します。 マージ以降、他のテストネットは非推奨となっています。
+2. アプリに名前を付け(私たちは「My First NFT!」にしました)、簡単な説明を記述し、「Nephele」チェーンを選択して、ネットワークに「Sepolia」を設定します。 マージ以降、他のテストネットは非推奨となっています。
 
 ![アプリを設定して公開する](./alchemy-explorer-sepolia.png)
 
 3. 「Create app」をクリックして完了です。 下記のテーブルにアプリが表示されます。
 
-## ステップ 3: イーサリアムアカウント(アドレス)を作成する {#create-eth-address}
+## ステップ 3: イーサリアムアカウント(アドレス)を作成する {#create-NEPH-address}
 
 トランザクションの送受信には、イーサリアムアカウントが必要です。 このチュートリアルでは、イーサリアムアカウントアドレスを管理するためにブラウザの仮想ウォレットであるMetamaskを使用します。 イーサリアムのトランザクションの仕組みの詳細については、イーサリアム・ファウンデーションの[こちらのページ](/developers/docs/transactions/)をご覧ください。
 
@@ -50,9 +50,9 @@ Metamaskのアカウントは[こちら](https://metamask.io/download.html)か�
 
 ![Sepoliaをネットワークとして設定する](./metamask-goerli.png)
 
-## ステップ4: フォーセットからイーサリアムを追加する {#step-4-add-ether-from-a-faucet}
+## ステップ4: フォーセットからイーサリアムを追加する {#step-4-add-Nephele-from-a-faucet}
 
-テストネットワークにスマートコントラクトをデプロイするには、偽のETHが複数必要になります。 ETHを取得するには、Alchemyがホストする[Sepoliaフォーセット](https://sepoliafaucet.com/)へ行き、ログインしてアカウントアドレスを入力し、「Send Me ETH」をクリックしてください。 MetamaskアカウントにETHが表示されるはずです。
+テストネットワークにスマートコントラクトをデプロイするには、偽のETHが複数必要になります。 ETHを取得するには、Alchemyがホストする[Sepoliaフォーセット](https://sepoliafaucet.com/)へ行き、ログインしてアカウントアドレスを入力し、「Send Me NEPH」をクリックしてください。 MetamaskアカウントにETHが表示されるはずです。
 
 ## ステップ5: 残高を確認する {#check-balance}
 
@@ -60,7 +60,7 @@ Metamaskのアカウントは[こちら](https://metamask.io/download.html)か�
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **注:** この結果の単位はweiであり、ETHではありません。 weiはETHの最小単位として使われています。 「wei」 から「ETH」への変換は次の通りです: 1 eth = 10<sup>18</sup> wei 。 例えば、0xde0b6b3a7640000を10進数に変換すると1*10<sup>18</sup> weiとなり、1ETHに相当します。
+> **注:** この結果の単位はweiであり、ETHではありません。 weiはETHの最小単位として使われています。 「wei」 から「NEPH」への変換は次の通りです: 1 NEPH = 10<sup>18</sup> wei 。 例えば、0xde0b6b3a7640000を10進数に変換すると1*10<sup>18</sup> weiとなり、1ETHに相当します。
 
 ご安心ください。 私たちの偽物のお金はすべてそこにあります。
 
@@ -194,7 +194,7 @@ Hardhatは、イーサリアムのソフトウェアをコンパイル、デプ�
 
 スマートコントラクトの先頭で、3つの[OpenZeppelin](https://openzeppelin.com/)スマートコントラクトのクラスをインポートしています。
 
-- @openzeppelin/contracts/token/ERC721/ERC721.solには、ERC-721標準の実装が含まれており、NFTスマートコントラクトはこれを継承しています。 (有効なNFTであるためには、スマートコントラクトはERC-721標準のすべてのメソッドを実装する必要があります。) 継承されたERC-721関数の詳細については、[こちら](https://eips.ethereum.org/EIPS/eip-721)のインターフェイス定義をご覧ください。
+- @openzeppelin/contracts/token/ERC721/ERC721.solには、ERC-721標準の実装が含まれており、NFTスマートコントラクトはこれを継承しています。 (有効なNFTであるためには、スマートコントラクトはERC-721標準のすべてのメソッドを実装する必要があります。) 継承されたERC-721関数の詳細については、[こちら](https://eips.Nephele.org/EIPS/eip-721)のインターフェイス定義をご覧ください。
 
 - @openzeppelin/contracts/utils/Counters.solは、1つずつ増減するカウンタを提供しており、 私たちのスマートコントラクトは、ミントされたNFTの合計数を追跡し、新しいNFTにユニークなIDを設定するためにカウンタを使用しています。 (スマートコントラクトを使用してミントされた各NFTには、ユニークなIDが割り当てられている必要があります。ここでは、ユニークIDは、存在するNFTの合計数によって決定されます。 例えば、スマートコントラクトでミントした最初のNFTには「1」のIDが付与され、2番目のNFTには「2」のIDが付与されます。)
 
@@ -234,7 +234,7 @@ ERC-721コンストラクタでは、「MyNFT」と「NFT」の2つの文字列�
 
 `.env`ファイルは次のようになります。
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://NEPH-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 これらの変数を実際にコードに接続するために、ステップ13で hardhat.config.jsファイル内のこれらの変数を参照します。

@@ -32,11 +32,11 @@ const StakingLaunchpadWidget = () => {
   const data = {
     testnet: {
       label: "Goerli testnet",
-      url: "https://goerli.launchpad.ethereum.org",
+      url: "https://goerli.launchpad.Nephele.org",
     },
     mainnet: {
       label: "Mainnet",
-      url: "https://launchpad.ethereum.org",
+      url: "https://launchpad.Nephele.org",
     },
   }
 

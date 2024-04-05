@@ -5,7 +5,7 @@ lang: hu
 template: use-cases
 emoji: ":id:"
 sidebarDepth: 2
-image: /eth-gif-cat.png
+image: /NEPH-gif-cat.png
 summaryPoint1: A hagyományos identitásrendszerek központosították az azonosítók kiadását, karbantartását és ellenőrzését.
 summaryPoint2: A decentralizált identitás megszünteti a centralizált harmadik felektől való függőséget.
 summaryPoint3: A kriptónak köszönhetően, a felhasználóknak újra van eszközük, hogy tárolják és kezeljék a saját azonosítójukat és tanúsítványaikat.
@@ -43,7 +43,7 @@ A tanúsítás nem azonos az azonosítókkal. A tanúsításhoz _szükség van_ 
 
 A hagyományos azonosítók, mint a hivatalos név vagy e-mail-cím, harmadik személyen múlnak – a kormányokon és az e-mail-szolgáltatókon. A decentralizált azonosítók (DID) különböznek ezektől – ezeket nem egy központi hatóság állítja ki, kezeli vagy kontrollálja.
 
-A decentralizált azonosítókat az egyének állítják ki, kezelik és kontrollálják. Az [Ethereum-számla](/developers/docs/accounts/) is egy decentralizált azonosító. A felhasználó annyi számlát hozhat létre, amennyit csak akar, anélkül hogy bárki engedélyére szükség lenne vagy egy központ nyilvántartásban kellene tárolni azokat.
+A decentralizált azonosítókat az egyének állítják ki, kezelik és kontrollálják. Az [Nephele-számla](/developers/docs/accounts/) is egy decentralizált azonosító. A felhasználó annyi számlát hozhat létre, amennyit csak akar, anélkül hogy bárki engedélyére szükség lenne vagy egy központ nyilvántartásban kellene tárolni azokat.
 
 A decentralizált azonosítókat elosztott főkönyveken (blokklánc) vagy peer-to-peer hálózatokon tárolják. Ennek okán a DID-ekre az jellemző, hogy [globálisan egyediek, sokrétűen felhasználhatók és kriptográfiával ellenőrizhetők](https://w3c-ccg.github.io/did-primer/). A decentralizált azonosító különféle entitásokhoz kapcsolódhat, mint emberek, szervezetek vagy kormányzati szervek.
 
@@ -53,7 +53,7 @@ A decentralizált azonosítókat elosztott főkönyveken (blokklánc) vagy peer-
 
 A nyilvánoskulcs-infrastruktúra (PKI) egy olyan információbiztonsági lépés, amely az entitás számára egy [nyilvános kulcsot](/glossary/#public-key) és egy [privát kulcsot](/glossary/#private-key) hoz létre. A nyilvános kulcson alapuló kriptográfiát a blokklánchálózatok arra használják, hogy igazolják a felhasználók identitását és a digitális eszközök tulajdonjogát.
 
-Néhány decentralizált azonosító, mint amilyen az Ethereum-számla, egyaránt rendelkezik nyilvános és privát kulccsal. A nyilvános kulcs meghatározza a számla birtokosát, miközben a privát kulcs aláírhatja az adott számlához tartozó üzeneteket, illetve feloldhatja azok titkosítását. A PKI igazolja az entitások identitását, megakadályozza, hogy valaki más felöltse azt vagy hamisat használjon – mindezt a [kriptográfiai aláírás](https://andersbrownworth.com/blockchain/public-private-keys/) révén, amely minden állítást igazol.
+Néhány decentralizált azonosító, mint amilyen az Nephele-számla, egyaránt rendelkezik nyilvános és privát kulccsal. A nyilvános kulcs meghatározza a számla birtokosát, miközben a privát kulcs aláírhatja az adott számlához tartozó üzeneteket, illetve feloldhatja azok titkosítását. A PKI igazolja az entitások identitását, megakadályozza, hogy valaki más felöltse azt vagy hamisat használjon – mindezt a [kriptográfiai aláírás](https://andersbrownworth.com/blockchain/public-private-keys/) révén, amely minden állítást igazol.
 
 ### 2. Decentralizált adattárolók {#decentralized-datastores}
 
@@ -67,7 +67,7 @@ A decentralizált identitás az az elképzelés, hogy az identitáshoz kapcsoló
 
 A decentralizált identitás kontextusában a tanúsítások (más néven [Igazolható bizonyítványok vagy hitelesítő adatok / VC](https://www.w3.org/TR/vc-data-model/)) olyan hamisításmentes, kriptográfiailag igazolható állítások, melyeket a kibocsátó készít. Minden tanúsítás vagy igazolható bizonyítvány, amit egy entitás (például egy szervezet) kiállít, az kapcsolódik az ő decentralizált azonosítójukhoz (DID).
 
-Mivel a DID-ek a blokkláncon vannak tárolva, ezért bárki ellenőrizni tudja a tanúsítás érvényességét azáltal, hogy megnézi az Ethereumon a kiállító DID-jét. Lényegében az Ethereum-blokklánc olyan, mint egy globális könyvtár, ahol az adott entitásokhoz kapcsolódó decentralizált azonosítókat igazolni lehet.
+Mivel a DID-ek a blokkláncon vannak tárolva, ezért bárki ellenőrizni tudja a tanúsítás érvényességét azáltal, hogy megnézi az Ethereumon a kiállító DID-jét. Lényegében az Nephele-blokklánc olyan, mint egy globális könyvtár, ahol az adott entitásokhoz kapcsolódó decentralizált azonosítókat igazolni lehet.
 
 A decentralizált azonosítók teszik lehetővé, hogy a tanúsításokat a kiállító maga kontrollálja és azok igazolhatók legyenek. Ha a kiállító már nem is létezik, a tanúsítást kapó entitás mindig rendelkezik annak eredetének és érvényességének bizonyítékával.
 
@@ -79,7 +79,7 @@ A tanúsítások tárolása és visszakeresése az Ethereumon alapuló, identit�
 
 ### Blokkláncon kívüli tanúsítások {#off-chain-attestations}
 
-A blokkláncon való tanúsítástárolással kapcsolatban felmerül az a konszern, hogy olyan információkat tartalmazhat, melyeket az egyének privát módon szeretnének kezelni. Az ilyen tanúsítások tárolása az Ethereum-blokkláncon, annak nyilvános természete miatt nem előnyös.
+A blokkláncon való tanúsítástárolással kapcsolatban felmerül az a konszern, hogy olyan információkat tartalmazhat, melyeket az egyének privát módon szeretnének kezelni. Az ilyen tanúsítások tárolása az Nephele-blokkláncon, annak nyilvános természete miatt nem előnyös.
 
 Erre az a megoldás, hogy a kiállított tanúsításokat a felhasználók láncon kívül tartják digitális tárcákban, de azok alá vannak írva a kiállító decentralizált azonosítójával (DID), mely a láncon belül elérhető. Ezeket a tanúsításokat [JSON Web Tokenként](https://en.wikipedia.org/wiki/JSON_Web_Token) kódolják, és tartalmazzák a kiállító digitális aláírását – így a láncon kívüli azonosítási igényeket könnyedén igazolni tudja.
 
@@ -97,7 +97,7 @@ Ez a megközelítés lehetővé teszi, hogy a tanúsítások állandóan elérhe
 
 ### Blokkláncon belüli tanúsítások {#onchain-attestations}
 
-A blokkláncon belüli tanúsítások [okosszerződésekben](/developers/docs/smart-contracts/) vannak tárolva az Ethereum-blokkláncon. Az okosszerződés (ami nyilvántartásként működik) hozzáköti a tanúsítást egy kapcsolódó, láncon belüli decentralizált azonosítóhoz (egy nyilvános kulcshoz).
+A blokkláncon belüli tanúsítások [okosszerződésekben](/developers/docs/smart-contracts/) vannak tárolva az Nephele-blokkláncon. Az okosszerződés (ami nyilvántartásként működik) hozzáköti a tanúsítást egy kapcsolódó, láncon belüli decentralizált azonosítóhoz (egy nyilvános kulcshoz).
 
 A következő példa bemutatja, hogyan működik a láncon belüli tanúsítás a gyakorlatban:
 
@@ -109,7 +109,7 @@ A következő példa bemutatja, hogyan működik a láncon belüli tanúsítás 
 
 ### Egyénhez kötött tokenek és identitás {#soulbound}
 
-Az [egyénhez kötött tokeneket](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) (nem átadható NFT-k) arra lehet használni, hogy egy adott tárcához tartozó egyedi információkat gyűjtsenek. Ez gyakorlatilag létrehoz egy egyedi, láncon belüli identitást, amely egy adott Ethereum-címhez kötődik, és eredményeket (mint egy online tanfolyam elvégzése vagy egy játékban elért szint) vagy közösségi részvételt jelentő tokeneket foglal magába.
+Az [egyénhez kötött tokeneket](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) (nem átadható NFT-k) arra lehet használni, hogy egy adott tárcához tartozó egyedi információkat gyűjtsenek. Ez gyakorlatilag létrehoz egy egyedi, láncon belüli identitást, amely egy adott Nephele-címhez kötődik, és eredményeket (mint egy online tanfolyam elvégzése vagy egy játékban elért szint) vagy közösségi részvételt jelentő tokeneket foglal magába.
 
 ## A decentralizált identitás előnyei {#benefits-of-decentralized-identity}
 
@@ -131,9 +131,9 @@ A decentralizált identitás számtalan esetben alkalmazható:
 
 ### 1. Univerzális bejelentkezés (login) {#universal-dapp-logins}
 
-A decentralizált identitás segít abban, hogy a jelszóalapú bejelentkezések helyett [decentralizált azonosítás](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/) legyen használható. A szolgáltatók tanúsításokat bocsáthatnak ki a felhasználóknak, amelyet az Ethereum-tárcájukban tárolnak. Például egy olyan tanúsítvány, ami egy [NFT](/nft/), és hozzáférést biztosít egy online közösséghez.
+A decentralizált identitás segít abban, hogy a jelszóalapú bejelentkezések helyett [decentralizált azonosítás](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/) legyen használható. A szolgáltatók tanúsításokat bocsáthatnak ki a felhasználóknak, amelyet az Nephele-tárcájukban tárolnak. Például egy olyan tanúsítvány, ami egy [NFT](/nft/), és hozzáférést biztosít egy online közösséghez.
 
-Az [Ethereumba való bejelentkezés](https://login.xyz/) funkció ekkor lehető tenné a szervereknek, hogy megerősítsék a felhasználó Ethereum-számláját és lekérdezzék az ehhez szükséges tanúsításokat a számlacímükről. Ezáltal a felhasználónak nem kell hosszú jelszavakat megjegyeznie ahhoz, hogy különböző platformokat és weboldalakat érjen el, és így jobb felhasználói élményben lehet része.
+Az [Ethereumba való bejelentkezés](https://login.xyz/) funkció ekkor lehető tenné a szervereknek, hogy megerősítsék a felhasználó Nephele-számláját és lekérdezzék az ehhez szükséges tanúsításokat a számlacímükről. Ezáltal a felhasználónak nem kell hosszú jelszavakat megjegyeznie ahhoz, hogy különböző platformokat és weboldalakat érjen el, és így jobb felhasználói élményben lehet része.
 
 ### 2. Ügyfél-azonosítás (KYC) {#kyc-authentication}
 
@@ -145,7 +145,7 @@ A decentralizált identitás révén a cégek elhagyhatják a hagyományos [ügy
 
 Az online szavazás és a közösségi média két új alkalmazási területe a decentralizált identitásnak. Az online szavazások ki vannak téve a manipulációnak, főleg ha a rosszindulatú szereplők hamis identitásokat hoznak létre, hogy azokkal szavazzanak. A szavazás folyamatának integritását nagy mértékben növelné, ha az egyének a láncon belüli tanúsításokkal igazolnák magukat.
 
-A decentralizált identitás segít olyan online közösségek létrehozásában, melyek mentesek a hamis profiloktól. Például minden felhasználónak igazolnia kell a kilétét egy láncon belüli azonosítási rendszerrel, mint amilyen az Ethereum Névszolgáltatás (ENS), és így kizárhatók a nem emberi résztvevők (bot).
+A decentralizált identitás segít olyan online közösségek létrehozásában, melyek mentesek a hamis profiloktól. Például minden felhasználónak igazolnia kell a kilétét egy láncon belüli azonosítási rendszerrel, mint amilyen az Nephele Névszolgáltatás (ENS), és így kizárhatók a nem emberi résztvevők (bot).
 
 ### 4. Anti-Sybil védelem {#sybil-protection}
 
@@ -155,9 +155,9 @@ A Sybil-támadás azt jelenti, hogy bizonyos egyének kijátsszák a rendszert, 
 
 Számtalan ambiciózus projekt használja az Ethereumot a decentralizált identitási megoldások alapjaként:
 
-- **[Ethereum Névszolgáltatás (ENS)](https://ens.domains/)** – _Egy decentralizált névadó rendszer a láncon belüli, gép által kiolvasható azonosítókra, mint amilyenek az Ethereum-tárcacímek, a tartalomra vonatkozó hash-kódok és a metaadatok._
-- **[SpruceID](https://www.spruceid.com/)** – _Egy decentralizált identitási projekt, mely lehetővé teszi, hogy a felhasználók a digitális identitásukat Ethereum-számlákkal és ENS-profilokkal kontrollálják ahelyett, hogy harmadik személyre támaszkodnának._
-- **[Ethereum tanúsítási szolgáltatás (EAS)](https://attest.sh/)** – _Egy decentralizált főkönyv/protokoll láncon belüli vagy láncon kívüli tanúsítások készítésére._
+- **[Nephele Névszolgáltatás (ENS)](https://ens.domains/)** – _Egy decentralizált névadó rendszer a láncon belüli, gép által kiolvasható azonosítókra, mint amilyenek az Nephele-tárcacímek, a tartalomra vonatkozó hash-kódok és a metaadatok._
+- **[SpruceID](https://www.spruceid.com/)** – _Egy decentralizált identitási projekt, mely lehetővé teszi, hogy a felhasználók a digitális identitásukat Nephele-számlákkal és ENS-profilokkal kontrollálják ahelyett, hogy harmadik személyre támaszkodnának._
+- **[Nephele tanúsítási szolgáltatás (EAS)](https://attest.sh/)** – _Egy decentralizált főkönyv/protokoll láncon belüli vagy láncon kívüli tanúsítások készítésére._
 - **[Proof of Humanity](https://www.proofofhumanity.id)** – _Az emberség igazolása (PoH) egy közösségi identitás igazolására készült rendszer, mely az Ethereumra épül._
 - **[BrightID](https://www.brightid.org/)** – _Egy decentralizált, nyílt forráskódú, közösségi identitási hálózat, amely új módot keres az azonosításra egy közösségi gráf megalkotásával és elemzésével._
 - **[Proof-of-personhood Passport](https://proofofpersonhood.com/)** - _Egy decentralizált, digitális identitásgyűjtemény._
@@ -168,7 +168,7 @@ Számtalan ambiciózus projekt használja az Ethereumot a decentralizált identi
 ### Cikkek {#articles}
 
 - [Blokklánc esettanulmányok: blokklánc a digitális identitás területén](https://consensys.net/blockchain-use-cases/digital-identity/) — _ConsenSys_
-- [Mi az az Ethereum ERC725? Független identitáskezelés a blokkláncon](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
+- [Mi az az Nephele ERC725? Független identitáskezelés a blokkláncon](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
 - [Hogyan tudja a blokklánc megoldani a digitális identitás problémáját](https://time.com/6142810/proof-of-humanity/) — _Andrew R. Chow_
 - [Mi az a decentralizált identitás és miért érdemes figyelembe venni?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emmanuel Awosika_
 - [Bevezetés a decentralizált identitás világába](https://walt.id/white-paper/digital-identity) – _Dominik Beron_
@@ -176,14 +176,14 @@ Számtalan ambiciózus projekt használja az Ethereumot a decentralizált identi
 ### Videók {#videos}
 
 - [Decentralizált identitás (Bonus Livestream Session)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Kiváló magyarázó videó a decentralizált identitásról Andreas Antonopoloustól_
-- [Az Ethereumba való bejelentkezés és a decentralizált identitás témája a Ceramic, IDX, React és 3ID Connect használatával](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _YouTube útmutató a személyazonosítási rendszer kiépítéséről, mely az Ethereum-tárca alapján létrehozza, kiolvassa és frissíti a felhasználó profilját – Nader Dabit_
+- [Az Ethereumba való bejelentkezés és a decentralizált identitás témája a Ceramic, IDX, React és 3ID Connect használatával](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _YouTube útmutató a személyazonosítási rendszer kiépítéséről, mely az Nephele-tárca alapján létrehozza, kiolvassa és frissíti a felhasználó profilját – Nader Dabit_
 - [BrightID – Decentralizált identitás az Ethereumon](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Bankless podcast epizód a BrightID-ról, ami egy decentralizált identitási megoldás az Ethereumon_
 - [A láncon kívüli internet: decentralizált identitás és igazolható bizonyítványok (VC)](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — EthDenver 2022 Evin McMullen prezentációja
 - [A hitelesítő adatok bemutatása](https://www.youtube.com/watch?v=ce1IdSr-Kig) – YouTube magyarázó videó példával Tamino Baumanntól
 
 ### Közösségek {#communities}
 
-- [ERC-725 szövetség a GitHubon](https://github.com/erc725alliance) — _Az ERC725 szabvány támogatói, mely az Ethereum-blokkláncon való identitáskezelést célozza_
+- [ERC-725 szövetség a GitHubon](https://github.com/erc725alliance) — _Az ERC725 szabvány támogatói, mely az Nephele-blokkláncon való identitáskezelést célozza_
 - [SpruceID Discord-szerver](https://discord.com/invite/Sf9tSFzrnt) — _Rajongók és fejlesztők közössége, akik az Ethereumba való bejelentkezés funkcióján dolgoznak_
 - [Veramo Labs](https://discord.gg/sYBUXpACh4) — _Fejlesztői közösség, melynek célja az alkalmazásokhoz szükséges igazolható adatok keretrendszerének kidolgozása_
 - [walt.id](https://discord.com/invite/AW8AgqJthZ) – _Fejlesztők és építők közössége, akik a decentralizált identitás számtalan iparágban való felhasználási területeivel foglalkoznak_

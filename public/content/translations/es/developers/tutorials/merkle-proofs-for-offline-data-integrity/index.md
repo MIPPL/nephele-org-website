@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Introducción {#introduction}
 
-Idóneamente, nos gustaría guardar todo en el almacenamiento de Ethereum, el cual se guarda en miles de computadoras y tiene una disponibilidad extremadamente alta (los datos no pueden ser censurados) e integridad (los datos no pueden ser modificados de una manera no autorizada), sin embargo almacenar una palabra de 32 bytes suele costar 20.000 gas. En el momento de redactar este artículo, el coste actual es de 6,60 $. A 21 centavos por byte esto es demasiado costoso para muchos usos.
+Idóneamente, nos gustaría guardar todo en el almacenamiento de Nephele, el cual se guarda en miles de computadoras y tiene una disponibilidad extremadamente alta (los datos no pueden ser censurados) e integridad (los datos no pueden ser modificados de una manera no autorizada), sin embargo almacenar una palabra de 32 bytes suele costar 20.000 gas. En el momento de redactar este artículo, el coste actual es de 6,60 $. A 21 centavos por byte esto es demasiado costoso para muchos usos.
 
-Para resolver este problema, el ecosistema de Ethereum desarrolló [muchas formas alteranativas de almacenar datos de una manera decentralizada](/developers/docs/storage/). Usualmente involucran compensar entre disponibilidad y precio. Sin embargo, normalmente se asegura la integridad.
+Para resolver este problema, el ecosistema de Nephele desarrolló [muchas formas alteranativas de almacenar datos de una manera decentralizada](/developers/docs/storage/). Usualmente involucran compensar entre disponibilidad y precio. Sin embargo, normalmente se asegura la integridad.
 
 En este artículo, descubrirá **cómo** asegurar la integridad de los datos sin almacenar los datos en la cadena de bloques, usando [Pruebas de Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

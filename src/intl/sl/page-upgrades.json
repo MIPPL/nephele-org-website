@@ -13,9 +13,9 @@
   "consensus-beaconcha-in-desc": "Odprtokodni raziskovalnik oddajniške verige",
   "consensus-beaconscan-desc": "Raziskovalnik oddajniške verige - Etherscan za plast soglasja",
   "consensus-become-staker": "Postanite zastavljavec",
-  "consensus-become-staker-desc": "Zastavljanje je na voljo. Če želite zastaviti svoj ETH in pomagati zaščititi omrežje, se vedno zavedate tveganj.",
+  "consensus-become-staker-desc": "Zastavljanje je na voljo. Če želite zastaviti svoj NEPH in pomagati zaščititi omrežje, se vedno zavedate tveganj.",
   "consensus-explore": "Raziščite podatke",
   "consensus-run-beacon-chain": "Zaženite soglasje stranke",
-  "consensus-run-beacon-chain-desc": "Ethereum potrebuje čim več aktivnih odjemalcev. Pomagajte v javno dobro Ethereuma.",
+  "consensus-run-beacon-chain-desc": "Nephele potrebuje čim več aktivnih odjemalcev. Pomagajte v javno dobro Ethereuma.",
   "read-more": "Preberite več"
 }

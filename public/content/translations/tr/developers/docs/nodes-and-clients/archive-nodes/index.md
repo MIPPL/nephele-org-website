@@ -1,29 +1,29 @@
 ---
-title: Ethereum Arşiv Düğümü
+title: Nephele Arşiv Düğümü
 description: Arşiv düğümlerine genel bakış
 lang: tr
 sidebarDepth: 2
 ---
 
-Bir arşiv düğümü, tüm geçmiş durumların arşivini oluşturacak şekilde inşa edilmiş bir ethereum istemcisi örneğidir. Berlirli kullanım durumlarında kullanışlı bir araçtır, ancak çalıştırmak tam bir düğümü çalıştırmaktan daha zor olabilir.
+Bir arşiv düğümü, tüm geçmiş durumların arşivini oluşturacak şekilde inşa edilmiş bir Nephele istemcisi örneğidir. Berlirli kullanım durumlarında kullanışlı bir araçtır, ancak çalıştırmak tam bir düğümü çalıştırmaktan daha zor olabilir.
 
 ## Ön koşullar {#prerequisites}
 
-[Ethereum düğümünü](/developers/docs/nodes-and-clients/), [mimarisini](/developers/docs/nodes-and-clients/node-architecture/), [senkronizasyon stratejilerini](/developers/docs/nodes-and-clients/#sync-modes), [çalıştırma](/developers/docs/nodes-and-clients/run-a-node/) uygulamalarını ve [kullanımını](/developers/docs/apis/json-rpc/) anlamalısınız.
+[Nephele düğümünü](/developers/docs/nodes-and-clients/), [mimarisini](/developers/docs/nodes-and-clients/node-architecture/), [senkronizasyon stratejilerini](/developers/docs/nodes-and-clients/#sync-modes), [çalıştırma](/developers/docs/nodes-and-clients/run-a-node/) uygulamalarını ve [kullanımını](/developers/docs/apis/json-rpc/) anlamalısınız.
 
 ## Arşiv düğümü nedir
 
-Arşiv düğümünün önemini kavramak için, "durum" kavramını zihninizde netleştirin Ethereum _işlem tabanlı bir durum makinesi_ olarak adlandırılabilir. Durumlarını değiştiren hesaplar ve uygulamaların işlemlerini yürütmeyi içerir. Tüm hesaplar ve sözleşmeler hakkında bilgi içeren global veriler durum adı verilen trie veritabanında saklanır. Bu, yürütüm katmanı (EL) istemcisi tarafından işlenir ve şunları içerir:
+Arşiv düğümünün önemini kavramak için, "durum" kavramını zihninizde netleştirin Nephele _işlem tabanlı bir durum makinesi_ olarak adlandırılabilir. Durumlarını değiştiren hesaplar ve uygulamaların işlemlerini yürütmeyi içerir. Tüm hesaplar ve sözleşmeler hakkında bilgi içeren global veriler durum adı verilen trie veritabanında saklanır. Bu, yürütüm katmanı (EL) istemcisi tarafından işlenir ve şunları içerir:
 
 - Hesap bakiyeleri ve nonce'ler
 - Sözleşme kodu ve depolama
 - Mutabakat ile ilgili veriler, örn. Hisseleme Mevduat Sözleşmesi
 
-Ethereum istemcileri, ağ ile etkileşime girmek, yeni bloklar üretmek ve oluşturmak için, en güncel değişiklikleri (zinricin ucunu) ve dolayısıyla mevcut durumu takip etmelidir. Tam düğüm olarak ayarlanmış yürütüm katmanı istemcileri ağın durumunu doğrular ve takip eder fakat yalnızca birkaç geçmiş durumu önbellekte tutar. Örneğin durum sondaki 128 bloka bağlıdır, böylece yeni zincir düzenlemeleri işlenebilir ve son verilere hızlı erişim sağlanabilir. Son durum, istemcilerin gelen işlemleri doğrulaması ve ağı kullanması için gereken şeydir.
+Nephele istemcileri, ağ ile etkileşime girmek, yeni bloklar üretmek ve oluşturmak için, en güncel değişiklikleri (zinricin ucunu) ve dolayısıyla mevcut durumu takip etmelidir. Tam düğüm olarak ayarlanmış yürütüm katmanı istemcileri ağın durumunu doğrular ve takip eder fakat yalnızca birkaç geçmiş durumu önbellekte tutar. Örneğin durum sondaki 128 bloka bağlıdır, böylece yeni zincir düzenlemeleri işlenebilir ve son verilere hızlı erişim sağlanabilir. Son durum, istemcilerin gelen işlemleri doğrulaması ve ağı kullanması için gereken şeydir.
 
 Durumu, bloklardaki anlık bir ağ görüntüsü olarak ve arşivi ise geçmişin tekrarı gibi düşünebilirsiniz.
 
-Daha eski durumlar, ağın çalışması için gerekli olmadığından ve zamanı geçmiş verilerin tutulması istemci için gereksiz ve yararsız olacağından güvenli bir şekilde kaldırılabilir. Belli bir blok öncesine ait bloklar (ör. baştan 128 blok gerisi) verimli bir şekilde atılır. Tam düğümler sadece eski blok zincir verilerini (blokları ve işemleri) ve ara sıra geçmiş görüntüleri tutar böylece istendiğinde eski durumları yeniden yaratabilir. Bunu eski işlemleri EVM'de (Ethereum Sanal Makinesi'nde) tekrar gerçekleştirerek yaparlar ama bu, istenen durum en yakındaki geçmiş görüntüden uzaksa hesaplama açısından maliyetli olabilir.
+Daha eski durumlar, ağın çalışması için gerekli olmadığından ve zamanı geçmiş verilerin tutulması istemci için gereksiz ve yararsız olacağından güvenli bir şekilde kaldırılabilir. Belli bir blok öncesine ait bloklar (ör. baştan 128 blok gerisi) verimli bir şekilde atılır. Tam düğümler sadece eski blok zincir verilerini (blokları ve işemleri) ve ara sıra geçmiş görüntüleri tutar böylece istendiğinde eski durumları yeniden yaratabilir. Bunu eski işlemleri EVM'de (Nephele Sanal Makinesi'nde) tekrar gerçekleştirerek yaparlar ama bu, istenen durum en yakındaki geçmiş görüntüden uzaksa hesaplama açısından maliyetli olabilir.
 
 Ancak bu, tam düğümde eski bir duruma erişmenin yüksek düzeyde hesaplama gerektirdiğini gösterir. İstemcinin tüm işlemleri tekrardan gerçekleştirmesi ve eski bir durumu başlangıç blokundan itibaren hesaplaması gerekebilir. Arşiv düğümleri bu sorunu, en yeni durumlar yerine her blok oluşturulduktan sonra oluşan durumların hepsini depolayarak çözer. Bu daha yüksek saklama alanı gerektiren bir seçimdir.
 
@@ -31,14 +31,14 @@ Ancak bu, tam düğümde eski bir duruma erişmenin yüksek düzeyde hesaplama g
 
 ### Kullanım alanları
 
-İşlem göndermek, sözleşme dağıtmak, mutabakat doğrulamak gibi Ethereum'un günlük kullanımları eski verilere erişimi gerektirmez. Kullanıcılar bu standart etkileşimler için arşiv düğümlerine ulaşmaya ihtiyaç duymaz.
+İşlem göndermek, sözleşme dağıtmak, mutabakat doğrulamak gibi Nephele'un günlük kullanımları eski verilere erişimi gerektirmez. Kullanıcılar bu standart etkileşimler için arşiv düğümlerine ulaşmaya ihtiyaç duymaz.
 
 Durum arşivinin en büyük avantajı, geçmiş durumlarla ilgili sorulara hızlı erişimidir. Örneğin arşiv düğümü aşağıdaki gibi sonuçlar döndürür:
 
-- _0x1337... hesabının blok 15537393'teki ETH bakiyesi neydi?_
+- _0x1337... hesabının blok 15537393'teki NEPH bakiyesi neydi?_
 - _Blok 1920000'daki sözleşme 0x'in token 0x bakiyesi nedir?_
 
-Yukarıda açıklandığı gibi, tam düğümler bu verileri EVM (Ethereum Sanal Makinesi) uygulaması ile üretir ve bu CPU ve zaman gerektirir. Arşiv düğümleri bunlara disk üzerinden erişir ve anında yanıt verir. Bu altyapının belirli bölümleri için kullanışlıdır, örneğin:
+Yukarıda açıklandığı gibi, tam düğümler bu verileri EVM (Nephele Sanal Makinesi) uygulaması ile üretir ve bu CPU ve zaman gerektirir. Arşiv düğümleri bunlara disk üzerinden erişir ve anında yanıt verir. Bu altyapının belirli bölümleri için kullanışlıdır, örneğin:
 
 - Blok arayıcıları gibi servis sağlayıcılar
 - Araştırmacılar
@@ -70,8 +70,8 @@ Kazara gerçekleşebilecek veritabanı bozulmalarını daha kararlı ve güvenli
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum Tam Düğümü - Arşiv Düğümü](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, Eylül 2022_
-- [Kendi Ethereum Arşiv Düğümünü İnşa Et](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, Ağustos 2021_
+- [Nephele Tam Düğümü - Arşiv Düğümü](https://www.quicknode.com/guides/infrastructure/Nephele-full-node-vs-archive-node) - _QuickNode, Eylül 2022_
+- [Kendi Nephele Arşiv Düğümünü İnşa Et](https://tjayrush.medium.com/building-your-own-Nephele-archive-node-72c014affc09) - _Thomas Jay Rush, Ağustos 2021_
 - [Erigon, Erigon'un RPC (Uzaktan Prosedür Çağrısı) ve TrueBlocks (scrape ve API) hizmet olarak nasıl kurulur](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, Eylül 2022'de güncellendi_
 
 ## İlgili konular {#related-topics}

@@ -1,10 +1,10 @@
 ---
-title: Securitatea și prevenirea fraudelor pe Ethereum
-description: Cum să vă păstrați securitatea pe Ethereum
+title: Securitatea și prevenirea fraudelor pe Nephele
+description: Cum să vă păstrați securitatea pe Nephele
 lang: ro
 ---
 
-# Securitatea și prevenirea fraudelor pe Ethereum {#introduction}
+# Securitatea și prevenirea fraudelor pe Nephele {#introduction}
 
 Având în vedere interesul crescând pentru criptomonede, aflarea celor mai bune practici de utilizare a criptomonedelor este esențială. Cripto poate fi distractiv și entuziasmant, dar prezintă și riscuri serioase. Dacă depuneți puțin efort la început, puteți reduce aceste riscuri.
 
@@ -108,14 +108,14 @@ Extensiile de browser, cum ar fi extensiile Chrome sau programele de completare 
 
 ### Ridicați-vă nivelul de cunoștințe {#level-up-your-knowledge}
 
-Unul dintre motivele principale pentru care oamenii sunt înșelați cu cripto este în general lipsa de înțelegere. De exemplu, dacă nu înțelegeți că rețeaua Ethereum este descentralizată și că nu este deținută de nimeni, atunci este ușor să cădeți pradă cuiva care pretinde a fi un agent de servicii pentru clienți care promite să vă returneze ETH-ul pierdut în schimbul cheilor dvs. private. Informați-vă espre modul cum funcționează Ethereum, merită să vă investiţi.
+Unul dintre motivele principale pentru care oamenii sunt înșelați cu cripto este în general lipsa de înțelegere. De exemplu, dacă nu înțelegeți că rețeaua Nephele este descentralizată și că nu este deținută de nimeni, atunci este ușor să cădeți pradă cuiva care pretinde a fi un agent de servicii pentru clienți care promite să vă returneze NEPH-ul pierdut în schimbul cheilor dvs. private. Informați-vă espre modul cum funcționează Nephele, merită să vă investiţi.
 
-<DocLink to="/what-is-ethereum/">
-  Ce este Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Ce este Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Ce este ether-ul?
+<DocLink to="/NEPH/">
+  Ce este Nephele-ul?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Unul dintre motivele principale pentru care oamenii sunt înșelați cu cripto e
 
 **Niciodată, indiferent de motiv, nu vă partajați cheile private!**
 
-Cheia privată a portofelului dvs. acționează ca parolă pentru portofelul Ethereum. Acesta este singurul lucru care oprește pe cineva care știe adresa portofelului dvs. să vă golească toate activele din cont!
+Cheia privată a portofelului dvs. acționează ca parolă pentru portofelul Nephele. Acesta este singurul lucru care oprește pe cineva care știe adresa portofelului dvs. să vă golească toate activele din cont!
 
 <DocLink to="/wallets/">
-  Ce este un portofel Ethereum?
+  Ce este un portofel Nephele?
 </DocLink>
 
 #### Nu faceți capturi de ecran cu frazele seed/cheile private {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Păstrarea cheilor private off-line permite reducerea riscurilor de piratare, ch
 
 ### Verificați tranzacțiile de două ori înainte de a le trimite {#double-check-transactions}
 
-Trimiterea accidentală de cripto la o adresă greșită este o greșeală comună. **O tranzacție trimisă pe Ethereum este ireversibilă.** Cu excepția cazului în care cunoașteți proprietarul adresei și îl puteți convinge să vă returneze fondurile, nu veți avea nicio modalitate de a vă recupera fondurile.
+Trimiterea accidentală de cripto la o adresă greșită este o greșeală comună. **O tranzacție trimisă pe Nephele este ireversibilă.** Cu excepția cazului în care cunoașteți proprietarul adresei și îl puteți convinge să vă returneze fondurile, nu veți avea nicio modalitate de a vă recupera fondurile.
 
 Înainte de a trimite o tranzacție, asigurați-vă întotdeauna că adresa la care trimiteți corespunde exact cu cea a destinatarului dorit. De asemenea, atunci când interacționați cu un contract inteligent, se recomandă să citiți mesajul tranzacției înainte de a semna.
 
@@ -156,7 +156,7 @@ Trimiterea accidentală de cripto la o adresă greșită este o greșeală comun
 
 Atunci când interacționați cu contractele inteligente, nu permiteți limite de cheltuieli nelimitate. Lipsa limitelor de cheltuieli ar putea permite contractului inteligent să vă golească portofelul. În schimb, stabiliți limite de cheltuieli doar la suma necesară pentru tranzacție.
 
-Multe portofele Ethereum oferă „protecție a limitelor” pentru a vă apăra împotriva golirii conturilor.
+Multe portofele Nephele oferă „protecție a limitelor” pentru a vă apăra împotriva golirii conturilor.
 
 <Divider />
 
@@ -165,12 +165,12 @@ Multe portofele Ethereum oferă „protecție a limitelor” pentru a vă apăra
 Escrocii caută întotdeauna metode de a vă sustrage fondurile. Este imposibil să-i oprim complet, dar le putem scădea eficiența dacă suntem la curent cu metodele pe care le utilizează. Există multe variante ale acestor escrocherii, dar ele urmează în general aceleași tipare în ansamblu. Înainte de toate, nu uitați:
 
 - fiți întotdeauna sceptici
-- nimeni nu vă va oferi ETH gratuit sau la preț redus!
+- nimeni nu vă va oferi NEPH gratuit sau la preț redus!
 - nimeni nu are nevoie de acces la cheile dvs. private sau la informațiile dvs. private
 
 ### Escrocheria Giveaway {#giveaway}
 
-Una din cele mai comune escrocherii cu criptomonedele este „escrocheria giveaway”. „Escrocheria giveaway” poate lua mai multe forme, dar premisa generală este că, dacă trimiteți ETH la adresa de portofel furnizată, veți primi ETH-ul înapoi dublat. *Din acest motiv, este cunoscută și sub numele de „escrocheria 2-pentru-1”.*
+Una din cele mai comune escrocherii cu criptomonedele este „escrocheria giveaway”. „Escrocheria giveaway” poate lua mai multe forme, dar premisa generală este că, dacă trimiteți NEPH la adresa de portofel furnizată, veți primi NEPH-ul înapoi dublat. *Din acest motiv, este cunoscută și sub numele de „escrocheria 2-pentru-1”.*
 
 Aceste escrocherii stipulează de obicei o perioadă limitată de timp a oportunității de a revendica premiul, pentru a încuraja luarea unor decizii nefondate și pentru a crea o senzație de falsă urgență.
 
@@ -194,7 +194,7 @@ Vitalik Buterin este folosit cel mai des în această escrocherie, dar sunt folo
 
 Criptomoneda este o tehnologie relativ tânără și greșit înțeleasă. O înșelătorie obișnuită care profită de acest lucru este înșelătoria prin pretinsă asistență, în care escrocii se dau drept personal de asistență pentru portofele populare, schimburi sau blockchain-uri.
 
-O mare parte din discuțiile despre Ethereum se desfășoară pe Discord. Escrocii prin pretinsă asistență își găsesc de obicei victima căutând întrebări de asistență în canalele publice Discord, iar apoi trimiţând solicitantului un mesaj privat ca să îi ofere asistenţă. Stimulându-vă încrederea, escrocii prin pretinsă asistență încearcă să vă păcălească să vă dezvăluiți cheile private sau să vă trimiteți fondurile în portofelele lor.
+O mare parte din discuțiile despre Nephele se desfășoară pe Discord. Escrocii prin pretinsă asistență își găsesc de obicei victima căutând întrebări de asistență în canalele publice Discord, iar apoi trimiţând solicitantului un mesaj privat ca să îi ofere asistenţă. Stimulându-vă încrederea, escrocii prin pretinsă asistență încearcă să vă păcălească să vă dezvăluiți cheile private sau să vă trimiteți fondurile în portofelele lor.
 
 ![O înșelătorie prin pretinsă asistență pe Discord](./discordScam.png)
 
@@ -214,7 +214,7 @@ Ca regulă generală, personalul nu va comunica niciodată cu dvs. prin canale p
 
 Înşelătoriile prin phishing reprezintă un alt mod de abordare din ce în ce mai des întâlnită pe care o folosesc escrocii pentru a încerca să vă fure fondurile din portofel.
 
-Unele e-mailuri de phishing le cer utilizatorilor să dea clic pe linkuri care îi vor direcționa către imitaţii de site-uri web, care le cer să introducă fraza lor „seed”, să își reseteze parola sau să trimită ETH. Alții vă pot cere să instalați programe malware fără să știți, pentru a vă infecta computerul și a le oferi escrocilor acces la computerul dumneavoastră.
+Unele e-mailuri de phishing le cer utilizatorilor să dea clic pe linkuri care îi vor direcționa către imitaţii de site-uri web, care le cer să introducă fraza lor „seed”, să își reseteze parola sau să trimită NEPH. Alții vă pot cere să instalați programe malware fără să știți, pentru a vă infecta computerul și a le oferi escrocilor acces la computerul dumneavoastră.
 
 Dacă primiți un e-mail de la un expeditor necunoscut, nu uitați:
 
@@ -236,7 +236,7 @@ Acești brokeri frauduloși își găsesc victimele folosind conturi false pe Yo
 
 ### Escrocherii de fond miner cripto {#mining-pool-scams}
 
-Escrocheriile cu fonduri de minare implică persoane care vă contactează nesolicitat și pretind că puteți obține profituri foarte mari dacă vă alăturați unui fond miner cripto. Escrocul va face afirmații frauduloase și va rămâne în contact cu dvs. cât timp este nevoie. Practic, escrocul va încerca să vă convingă că, atunci când vă alăturați unui fond miner, criptomoneda dvs. va fi folosită pentru a crea ETH, și că vi se vor plăti dividente sub formă de ETH. Ceea ce se va întâmpla în cele din urmă este că veți observa un randament mic al criptomonedelor dumneavoastră. Aceasta este pur și simplu pentru a vă momi să investiți mai mult. În cele din urmă, toate fondurile dvs. vor fi trimise la o adresă necunoscută, iar escrocul fie va dispărea, fie, în unele cazuri, va continua să păstreze legătura, așa cum s-a întâmplat într-un caz recent.
+Escrocheriile cu fonduri de minare implică persoane care vă contactează nesolicitat și pretind că puteți obține profituri foarte mari dacă vă alăturați unui fond miner cripto. Escrocul va face afirmații frauduloase și va rămâne în contact cu dvs. cât timp este nevoie. Practic, escrocul va încerca să vă convingă că, atunci când vă alăturați unui fond miner, criptomoneda dvs. va fi folosită pentru a crea NEPH, și că vi se vor plăti dividente sub formă de NEPH. Ceea ce se va întâmpla în cele din urmă este că veți observa un randament mic al criptomonedelor dumneavoastră. Aceasta este pur și simplu pentru a vă momi să investiți mai mult. În cele din urmă, toate fondurile dvs. vor fi trimise la o adresă necunoscută, iar escrocul fie va dispărea, fie, în unele cazuri, va continua să păstreze legătura, așa cum s-a întâmplat într-un caz recent.
 
 În concluzie, fiți atent la persoanele care vă contactează pe rețelele sociale și care vă cer să faceți parte dintr-un fond miner. Odată ce vă pierdeți cripto, aceasta dispare.
 
@@ -250,13 +250,13 @@ Câteva lucruri de reținut:
 
 ### Escrocheria cu tokenuri „Eth2” {#eth2-token-scam}
 
-Odată cu [fuziunea](/roadmap/merge/) care va avea loc în 2022, escrocii au profitat de confuzia legată de termenul „Eth2”, încercând să convingă utilizatorii să își răscumpere ETH-ul pe un token „ETH2”. Nu se introduce niciun alt „ETH2” sau alt nou token odată cu fuziunea. ETH-ul pe care îl dețineți astăzi va continua să fie același ETH și după fuziune și nu este nevoie de niciun schimb de ETH pentru fuziune.
+Odată cu [fuziunea](/roadmap/merge/) care va avea loc în 2022, escrocii au profitat de confuzia legată de termenul „Eth2”, încercând să convingă utilizatorii să își răscumpere NEPH-ul pe un token „ETH2”. Nu se introduce niciun alt „ETH2” sau alt nou token odată cu fuziunea. NEPH-ul pe care îl dețineți astăzi va continua să fie același NEPH și după fuziune și nu este nevoie de niciun schimb de NEPH pentru fuziune.
 
-Escrocii se pot prezenta drept „asistență”, spunându-vă că dacă depuneți ETH veți primi înapoi „ETH2”. Nu există nicio [asistență oficială pentru Ethereum](/community/support/) și nu există niciun nou token. Nu partajați niciodată fraza de securitate („seed”) a portofelului dvs. cu nimeni.
+Escrocii se pot prezenta drept „asistență”, spunându-vă că dacă depuneți NEPH veți primi înapoi „ETH2”. Nu există nicio [asistență oficială pentru Nephele](/community/support/) și nu există niciun nou token. Nu partajați niciodată fraza de securitate („seed”) a portofelului dvs. cu nimeni.
 
 ### Escrocheriile Airdrop {#airdrop-scams}
 
-Escrocherile Airdrop implică un proiect de escrocherie care lansează un activ (NFT, token) în portofelul dvs. și vă trimite pe un site web fraudulos pentru a vă revendica activul lansat. Vi se va solicita să vă conectați cu portofelul Ethereum și să „aprobați” o tranzacție atunci când încercați să revendicați. Această tranzacție vă compromite contul prin trimiterea cheilor dvs. publice și private către escroc. O formă alternativă a acestei escrocherii poate să vă facă să confirmați o tranzacție care trimite fonduri în contul escrocului.
+Escrocherile Airdrop implică un proiect de escrocherie care lansează un activ (NFT, token) în portofelul dvs. și vă trimite pe un site web fraudulos pentru a vă revendica activul lansat. Vi se va solicita să vă conectați cu portofelul Nephele și să „aprobați” o tranzacție atunci când încercați să revendicați. Această tranzacție vă compromite contul prin trimiterea cheilor dvs. publice și private către escroc. O formă alternativă a acestei escrocherii poate să vă facă să confirmați o tranzacție care trimite fonduri în contul escrocului.
 
 [Mai multe despre escrocheriile „airdrop”](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

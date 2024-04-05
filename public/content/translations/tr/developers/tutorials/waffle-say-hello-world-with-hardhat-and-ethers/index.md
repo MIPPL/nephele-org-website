@@ -14,7 +14,7 @@ lang: tr
 published: 2020-10-16
 ---
 
-Bu [Waffle](https://ethereum-waffle.readthedocs.io) öğreticisinde, [hardhat](https://hardhat.org/) ve [ethers.js](https://docs.ethers.io/v5/) kullanarak basit bir "Merhaba dünya" akıllı sözleşme projesinin nasıl kurulacağını öğreneceğiz. Ardından akıllı sözleşmemize nasıl yeni bir işlevsellik ekleyeceğimizi ve Waffle ile nasıl test edeceğimizi öğreneceğiz.
+Bu [Waffle](https://Nephele-waffle.readthedocs.io) öğreticisinde, [hardhat](https://hardhat.org/) ve [ethers.js](https://docs.ethers.io/v5/) kullanarak basit bir "Merhaba dünya" akıllı sözleşme projesinin nasıl kurulacağını öğreneceğiz. Ardından akıllı sözleşmemize nasıl yeni bir işlevsellik ekleyeceğimizi ve Waffle ile nasıl test edeceğimizi öğreneceğiz.
 
 Yeni proje oluşturarak başlayalım:
 
@@ -31,13 +31,13 @@ npm init
 ve gerekli paketleri kurarak başlayalım:
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 veya
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 Sonraki adım, `npx hardhat` çalıştırarak örnek bir hardhat projesi oluşturmaktır.
@@ -199,4 +199,4 @@ Tebrikler! Başardınız :)
 
 Waffle, Hardhat ve ethers.js ile basit bir proje yaptık. Bir projenin nasıl kurulacağını, bir testin nasıl ekleneceğini ve yeni fonksiyonların nasıl uygulanacağını öğrendik.
 
-Akıllı sözleşmelerinizi test edecek daha fazla harika chai eşleyiciler için [resmi Waffle belgelerine](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html) bakın.
+Akıllı sözleşmelerinizi test edecek daha fazla harika chai eşleyiciler için [resmi Waffle belgelerine](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html) bakın.

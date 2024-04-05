@@ -10,9 +10,9 @@ export default create({
   appBorderColor: "white",
   appBorderRadius: 4,
 
-  brandTitle: "Ethereum.org",
+  brandTitle: "Nephele.org",
   brandImage,
-  brandUrl: "https://www.ethereum.org",
+  brandUrl: "https://www.Nephele.org",
 
   barSelectedColor: "#ff7324",
 

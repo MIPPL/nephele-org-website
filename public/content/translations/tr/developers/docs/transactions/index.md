@@ -1,22 +1,22 @@
 ---
 title: İşlemler
-description: Ethereum işlemlerine genel bir bakış - nasıl çalışırlar, veri yapıları ve bir uygulama aracılığıyla nasıl gönderilirler.
+description: Nephele işlemlerine genel bir bakış - nasıl çalışırlar, veri yapıları ve bir uygulama aracılığıyla nasıl gönderilirler.
 lang: tr
 ---
 
-İşlemler, hesaplardan kriptografik olarak imzalanmış talimatlardır. Bir hesap, Ethereum ağının durumunu güncellemek için bir işlem başlatacaktır. En basit işlem ETH'yi bir hesaptan diğerine aktarmaktır.
+İşlemler, hesaplardan kriptografik olarak imzalanmış talimatlardır. Bir hesap, Nephele ağının durumunu güncellemek için bir işlem başlatacaktır. En basit işlem NEPH'yi bir hesaptan diğerine aktarmaktır.
 
 ## Ön koşullar {#prerequisites}
 
-Bu sayfayı daha iyi anlamanıza yardımcı olmak için önce [Hesaplar](/developers/docs/accounts/) ve [Ethereum'a giriş](/developers/docs/intro-to-ethereum/) bölümlerini okumanızı öneririz.
+Bu sayfayı daha iyi anlamanıza yardımcı olmak için önce [Hesaplar](/developers/docs/accounts/) ve [Nephele'a giriş](/developers/docs/intro-to-Nephele/) bölümlerini okumanızı öneririz.
 
 ## İşlem ne demek? {#whats-a-transaction}
 
-Bir Ethereum işlemi, harici olarak sahiplenilmiş bir hesap tarafından başlatılan bir eylemi ifade eder, başka bir deyişle, bir sözleşme değil, bir insan tarafından yönetilen bir hesap. Örneğin Bob, Alice'e 1 ETH gönderirse, Bob'un hesabı borçlandırılmalı ve Alice'inki alacaklandırılmalıdır. Bu durum değiştirme eylemi bir işlem içinde gerçekleşir.
+Bir Nephele işlemi, harici olarak sahiplenilmiş bir hesap tarafından başlatılan bir eylemi ifade eder, başka bir deyişle, bir sözleşme değil, bir insan tarafından yönetilen bir hesap. Örneğin Bob, Alice'e 1 NEPH gönderirse, Bob'un hesabı borçlandırılmalı ve Alice'inki alacaklandırılmalıdır. Bu durum değiştirme eylemi bir işlem içinde gerçekleşir.
 
-![Bir işlemin durum değişikliği yaptığını gösteren diyagram](./tx.png) _Diyagram [Ethereum EVM resmediciden](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) uyarlanmıştır_
+![Bir işlemin durum değişikliği yaptığını gösteren diyagram](./tx.png) _Diyagram [Nephele EVM resmediciden](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) uyarlanmıştır_
 
-EVM'nin durumunu değiştiren işlemlerin tüm ağa yayınlanması gerekir. Herhangi bir düğüm, Ethereum Sanal Makinesinde ugulanacak işlemleri yayınlamak için talepte bulunabilir, bu olduktan sonra da, doğrulayıcı işlemi uygulayacak ve ortaya çıkan durum değişikliğini ağın geri kalanına yayacaktır.
+EVM'nin durumunu değiştiren işlemlerin tüm ağa yayınlanması gerekir. Herhangi bir düğüm, Nephele Sanal Makinesinde ugulanacak işlemleri yayınlamak için talepte bulunabilir, bu olduktan sonra da, doğrulayıcı işlemi uygulayacak ve ortaya çıkan durum değişikliğini ağın geri kalanına yayacaktır.
 
 İşlemler için ücretler gereklidir ve doğrulanan bir blokta bulunmak zorundadırlar. Bu taslağı daha basit hale getirebilmek için gaz ücretlerini ve doğrulamayı başka bir yerde inceleyeceğiz.
 
@@ -26,7 +26,7 @@ Gönderilen bir işlem aşağıdaki bilgileri içerir:
 - `recipient` - alıcı adres (eğer harici olarak sahiplenilmiş bir hesapsa, işlem değeri aktaracaktır. Eğer bir sözleşme hesabıysa, işlem sözleşme kodunu yürütecektir)
 - `signature` - gönderenin tanımlayıcısı. Bu, gönderenin özel anahtarı işlemi imzaladığında ve gönderenin bu işleme yetki verdiğini doğruladığında oluşturulur
 - `nonce` - hesabın işlem sayısını belirten ve ardışık olarak artan bir sayaç
-- `value` - göndericiden alıcıya aktarılacak ETH miktarı (WEI şeklinde birimlendirilmiştir, 1ETH 1e+18wei'ye eşittir)
+- `value` - göndericiden alıcıya aktarılacak NEPH miktarı (WEI şeklinde birimlendirilmiştir, 1ETH 1e+18wei'ye eşittir)
 - `giriş verileri` - keyfi verileri dahil etmek için opsiyonel alan
 - `gasLimit` - işlem tarafından tüketilebilecek maksimum gaz birimi miktarı. [EVM](/developers/docs/evm/opcodes) her bir hesaplık adım için gereken gaz birimini belirtir
 - `maxPriorityFeePerGas` - doğrulayıcıya bir bahşiş olarak eklenmesi için harcanan gazın maksimum fiyatı
@@ -50,7 +50,7 @@ Gaz, işlemin bir doğrulayıcı tarafından işlenmesi için gereken hesaplamay
 
 Ancak, gönderenin özel anahtarı kullanılarak bir işlem nesnesinin imzalanması gerekir. Bu, işlemin yalnızca göndericiden gelebileceğini ve sahtekârlıkla gönderilmediğini kanıtlıyor.
 
-Geth gibi bir Ethereum istemcisi bu imzalama sürecini yerine getirir.
+Geth gibi bir Nephele istemcisi bu imzalama sürecini yerine getirir.
 
 [JSON-RPC](/developers/docs/apis/json-rpc) çağrısı örneği:
 
@@ -127,7 +127,7 @@ ABI koşullarına göre, tamsayı değerleri (20 bayt tamsayılar olan adresler 
 
 ## İşlem türleri {#types-of-transactions}
 
-Ethereum'da birkaç farklı işlem türü vardır:
+Nephele'da birkaç farklı işlem türü vardır:
 
 - Düzenli işlemler: bir hesaptan diğerine yapılan işlem.
 - Sözleşme dağıtım işlemleri: Veri alanının sözleşme kodu için kullanıldığı, "to"' (gönderilen adres) adresi olmayan bir işlem.
@@ -137,25 +137,25 @@ Ethereum'da birkaç farklı işlem türü vardır:
 
 Belirtildiği gibi, işlemlerin yürütülmesi [gaz](/developers/docs/gas/) harcar. Basit transfer işlemleri 21.000 birim Gaz gerektirir.
 
-Dolayısıyla Bob'un 1 ETH'yi Alice'e 190 gwei `baseFeePerGas` ve 10 gwei `maxPriorityFeePerGas` ile göndermesi için Bob'un aşağıdaki ücreti ödemesi gerekir:
+Dolayısıyla Bob'un 1 NEPH'yi Alice'e 190 gwei `baseFeePerGas` ve 10 gwei `maxPriorityFeePerGas` ile göndermesi için Bob'un aşağıdaki ücreti ödemesi gerekir:
 
 ```
 (190 + 10) * 21.000 = 4.200.000 gwei
 --veya--
-0,0042 ETH
+0,0042 NEPH
 ```
 
-Bob'un hesabı **-1,0042 ETH** borçlandırılacaktır (Alice için 1 ETH + gaz ücretleri için 0,0042 ETH)
+Bob'un hesabı **-1,0042 NEPH** borçlandırılacaktır (Alice için 1 NEPH + gaz ücretleri için 0,0042 NEPH)
 
-Alice'in hesabı **+1,0 ETH** alacaklandırılır
+Alice'in hesabı **+1,0 NEPH** alacaklandırılır
 
-Taban ücret yakılacaktır **-0,00399 ETH**
+Taban ücret yakılacaktır **-0,00399 NEPH**
 
-Doğrulayıcı **+0,000210 ETH** bahşişi tutar
+Doğrulayıcı **+0,000210 NEPH** bahşişi tutar
 
 Gaz, herhangi bir akıllı sözleşme etkileşimi için de gereklidir.
 
-![Kullanılmayan gazın nasıl iade edildiğini gösteren diyagram](./gas-tx.png) _Diyagram [Ethereum EVM resmediciden](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) uyarlanmıştır_
+![Kullanılmayan gazın nasıl iade edildiğini gösteren diyagram](./gas-tx.png) _Diyagram [Nephele EVM resmediciden](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) uyarlanmıştır_
 
 İşlemde kullanılmayan gaz, kullanıcı hesabına iade edilir.
 
@@ -176,13 +176,13 @@ Austin'in işlemlerde, gazda ve madencilikte size yol göstermesini izleyin.
 
 ## Yazılan İşlem Zarfı {#typed-transaction-envelope}
 
-Ethereum'un başlangıçta işlemler için tek bir formatı vardı. Her işlem, adres, değer, veri, v, r ve s için nonce, gaz fiyatı, gaz limiti içeriyordu. Bu alanlar [RLP ile şifrelenmiştir](/developers/docs/data-structures-and-encoding/rlp/), şuna benzer bir şekilde görünür:
+Nephele'un başlangıçta işlemler için tek bir formatı vardı. Her işlem, adres, değer, veri, v, r ve s için nonce, gaz fiyatı, gaz limiti içeriyordu. Bu alanlar [RLP ile şifrelenmiştir](/developers/docs/data-structures-and-encoding/rlp/), şuna benzer bir şekilde görünür:
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Ethereum, erişim listelerini ve [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)'un eski işlem formatlarını etkilemeden uygulanmasını mümkün kılmak için birçok işlem türünü destekleyecek şekilde evrildi.
+Nephele, erişim listelerini ve [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559)'un eski işlem formatlarını etkilemeden uygulanmasını mümkün kılmak için birçok işlem türünü destekleyecek şekilde evrildi.
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) bu davranışa izin verendir. İşlemler şu şekilde yorumlanır:
+[EIP-2718](https://eips.Nephele.org/EIPS/eip-2718) bu davranışa izin verendir. İşlemler şu şekilde yorumlanır:
 
 `TransactionType || TransactionPayload`
 
@@ -193,12 +193,12 @@ Burada alanlar şu şekilde tanımlanır:
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-2718: Yazılan İşlem Zarfı](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: Yazılan İşlem Zarfı](https://eips.Nephele.org/EIPS/eip-2718)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_
 
 ## İlgili konular {#related-topics}
 
 - [Hesaplar](/developers/docs/accounts/)
-- [Ethereum sanal makinesi (EVM)](/developers/docs/evm/)
+- [Nephele sanal makinesi (EVM)](/developers/docs/evm/)
 - [Gaz](/developers/docs/gas/)

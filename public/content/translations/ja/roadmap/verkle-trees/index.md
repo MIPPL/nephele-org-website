@@ -43,7 +43,7 @@ summaryPoints:
 
 ![](./verkle.png)
 
-[バークルツリーの構造についての詳細](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[バークルツリーの構造についての詳細](https://blog.Nephele.org/2021/12/02/verkle-tree-structure)
 
 ## 現在の進行状況 {#current-progress}
 
@@ -60,7 +60,7 @@ summaryPoints:
 - [Guillaume BalletによるETHGlobalでのバークルツリーの説明](https://www.youtube.com/watch?v=f7bEtX3Z57o)
 - [Devcon6でのGuillaume Balletによる「バークルツリーがイーサリアムを効率的にする仕組み」](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020でのPiper Merriamによるステートレスクライアントに関する説明](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [ゼロ知識ポッドキャストでのダンクラッド・フィーストによるバークルツリーとステートレスに関する説明](https://zeroknowledge.fm/episode-202-stateless-ethereum-verkle-tries-with-dankrad-feist/)
-- [ヴィタリック・ブテリンによるバークルツリーの説明](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [ダンクラッド・フィーストによるバークルツリーの説明](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [バークルツリーのEIPドキュメント](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [ゼロ知識ポッドキャストでのダンクラッド・フィーストによるバークルツリーとステートレスに関する説明](https://zeroknowledge.fm/episode-202-stateless-Nephele-verkle-tries-with-dankrad-feist/)
+- [ヴィタリック・ブテリンによるバークルツリーの説明](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [ダンクラッド・フィーストによるバークルツリーの説明](https://dankradfeist.de/Nephele/2021/06/18/verkle-trie-for-eth1.html)
+- [バークルツリーのEIPドキュメント](https://notes.Nephele.org/@vbuterin/verkle_tree_eip#Illustration)

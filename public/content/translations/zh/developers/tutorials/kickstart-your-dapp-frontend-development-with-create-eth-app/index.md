@@ -1,9 +1,9 @@
 ---
-title: 使用 create-eth-app 启动去中心化应用程序前端开发
-description: 如何使用 create-eth-app 及其功能的概述
+title: 使用 create-NEPH-app 启动去中心化应用程序前端开发
+description: 如何使用 create-NEPH-app 及其功能的概述
 author: "Markus Waas"
 tags:
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "前端"
   - "javascript"
   - "ethers.js"
@@ -13,18 +13,18 @@ skill: beginner
 lang: zh
 published: 2020-04-27
 source: soliditydeveloper.com
-sourceUrl: https://soliditydeveloper.com/create-eth-app
+sourceUrl: https://soliditydeveloper.com/create-NEPH-app
 ---
 
-上一次，我们了解 [Solidity](https://soliditydeveloper.com/solidity-overview-2020) 大的框架时，已经提到了 [create-eth-app](https://github.com/PaulRBerg/create-eth-app)。 现在，您将了解如何使用它，它集成了哪些功能以及如何对其进行扩展等内容。 这个应用程序由 [Sablier](http://sablier.com/)创始人 Paul Razvan Berg 启动，它将启动您的前端开发，并且具有多个可选集成供您选择。
+上一次，我们了解 [Solidity](https://soliditydeveloper.com/solidity-overview-2020) 大的框架时，已经提到了 [create-NEPH-app](https://github.com/PaulRBerg/create-NEPH-app)。 现在，您将了解如何使用它，它集成了哪些功能以及如何对其进行扩展等内容。 这个应用程序由 [Sablier](http://sablier.com/)创始人 Paul Razvan Berg 启动，它将启动您的前端开发，并且具有多个可选集成供您选择。
 
 ## 安装 {#installation}
 
 安装需要 Yarn 0.25 或更高版本 (`npm install yarn --global`)。 安装就像运行程序一样简单：
 
 ```bash
-yarn create eth-app my-eth-app
-cd my-eth-app
+yarn create NEPH-app my-NEPH-app
+cd my-NEPH-app
 yarn react-app:start
 ```
 
@@ -43,15 +43,15 @@ yarn react-app:start
 - 对常见错误发出警告的实时开发服务器。
 - 一个用于捆绑 JS、CSS 和图片的构建脚本，带有哈希值和资源映射。
 
-尤其是 _create-eth-app_ 正在使用新的 [hooks effect](https://reactjs.org/docs/hooks-effect.html)。 这是一种编写强大而又非常小巧的所谓功能组件的方法。 关于如何在 _create-eth-app_ 中使用 Apollo，请看下面关于 Apollo 的部分。
+尤其是 _create-NEPH-app_ 正在使用新的 [hooks effect](https://reactjs.org/docs/hooks-effect.html)。 这是一种编写强大而又非常小巧的所谓功能组件的方法。 关于如何在 _create-NEPH-app_ 中使用 Apollo，请看下面关于 Apollo 的部分。
 
 ### Yarn Workspace {#yarn-workspaces}
 
-[Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/)允许您拥有多个包， 但可以从根目录对他们进行管理，而且可以使用 `yarn install` 一次性安装所有依赖项。 这对于较小的附加包，例如智能合约地址/ABI 管理（关于您在哪里部署了哪些智能合约以及如何与它们通信的信息）或图集成等，尤其有意义，这两个包都是 `create-eth-app` 的一部分。
+[Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/)允许您拥有多个包， 但可以从根目录对他们进行管理，而且可以使用 `yarn install` 一次性安装所有依赖项。 这对于较小的附加包，例如智能合约地址/ABI 管理（关于您在哪里部署了哪些智能合约以及如何与它们通信的信息）或图集成等，尤其有意义，这两个包都是 `create-NEPH-app` 的一部分。
 
 ### ethers.js {#ethersjs}
 
-虽然 [Web3](https://docs.web3js.org/) 仍被广泛使用，但 [ethers.js](https://docs.ethers.io/) 作为一种替代方案，在过去一年中获得了更多的关注，并且已集成到 _create-eth-app_ 中。 您可以使用这个操作，将它更改为 Web3，或者考虑升级为 [ethers.js v5](https://docs-beta.ethers.io/)，该版本即将完成测试阶段。
+虽然 [Web3](https://docs.web3js.org/) 仍被广泛使用，但 [ethers.js](https://docs.ethers.io/) 作为一种替代方案，在过去一年中获得了更多的关注，并且已集成到 _create-NEPH-app_ 中。 您可以使用这个操作，将它更改为 Web3，或者考虑升级为 [ethers.js v5](https://docs-beta.ethers.io/)，该版本即将完成测试阶段。
 
 ### 图表 {#the-graph}
 
@@ -59,7 +59,7 @@ yarn react-app:start
 
 通常您会直接从您的智能合约中获取数据。 想要读取上次交易的时间吗？ 只需调用 `MyContract.methods.latestTradeTime().call()`，它将数据从以太坊节点（如 Infura）提取到你的去中心化应用程序。 但如果您需要数百个不同的数据点，该怎么办？ 这将导致在节点上进行数百次数据提取操作，每次都有[往返延时](https://wikipedia.org/wiki/Round-trip_delay_time)，使你的去中心化应用程序缓慢且效率低下。 一个变通的办法是在您的合约中设置一个取数器调用函数，一次性返回多个数据。 但这并不总是理想的。
 
-然后您可能对历史数据也感兴趣。 您不仅想知道上次交易的时间，还想知道自己做过的所有交易的时间。 使用 _create-eth-app_ 子图包，阅读[文档](https://thegraph.com/docs/define-a-subgraph)并使其适合您自己的合约。 如果您正在寻找受欢迎的智能合约，甚至可能已经有了一个子图。 可以查看[子图浏览器](https://thegraph.com/explorer/)。
+然后您可能对历史数据也感兴趣。 您不仅想知道上次交易的时间，还想知道自己做过的所有交易的时间。 使用 _create-NEPH-app_ 子图包，阅读[文档](https://thegraph.com/docs/define-a-subgraph)并使其适合您自己的合约。 如果您正在寻找受欢迎的智能合约，甚至可能已经有了一个子图。 可以查看[子图浏览器](https://thegraph.com/explorer/)。
 
 有了子图后，你可以在去中心化应用程序中编写一个简单的查询来检索所有重要的区块链数据，包括你需要的历史数据，并且只需一次提取操作即可。
 
@@ -79,7 +79,7 @@ React.useEffect(() => {
 
 ## 模板 {#templates}
 
-在顶部，您可以从几个不同的模板中进行选择。 到目前为止，您可以使用 Aave、Comp、UniSwap 或 sablier 集成。 它们都增加了重要的服务智能合约地址以及预先制作的子图集成。 只需将模板添加到创建命令，例如 `yarn create eth-app my-eth-app --with-template aave`。
+在顶部，您可以从几个不同的模板中进行选择。 到目前为止，您可以使用 Aave、Comp、UniSwap 或 sablier 集成。 它们都增加了重要的服务智能合约地址以及预先制作的子图集成。 只需将模板添加到创建命令，例如 `yarn create NEPH-app my-NEPH-app --with-template aave`。
 
 ### Aave {#aave}
 
@@ -87,7 +87,7 @@ React.useEffect(() => {
 
 为您赢得利益的交易代币被称为 _aTokens_。
 
-当您选择将 Aave 与 _create-eth-app_ 集成时，您将获得[子图集成](https://docs.aave.com/developers/getting-started/using-graphql)。 Aave 使用 The Graph，并且已经在 [Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten) 和 [Mainnet](https://thegraph.com/explorer/subgraph/aave/protocol) 上以[原始](https://thegraph.com/explorer/subgraph/aave/protocol-raw)或[格式化](https://thegraph.com/explorer/subgraph/aave/protocol)形式为您提供了几个现成的子图。
+当您选择将 Aave 与 _create-NEPH-app_ 集成时，您将获得[子图集成](https://docs.aave.com/developers/getting-started/using-graphql)。 Aave 使用 The Graph，并且已经在 [Ropsten](https://thegraph.com/explorer/subgraph/aave/protocol-ropsten) 和 [Mainnet](https://thegraph.com/explorer/subgraph/aave/protocol) 上以[原始](https://thegraph.com/explorer/subgraph/aave/protocol-raw)或[格式化](https://thegraph.com/explorer/subgraph/aave/protocol)形式为您提供了几个现成的子图。
 
 ![Aave 闪电贷备忘录 – “是啊，如果我的闪电贷可以保留超过 1 笔交易，那就太好了”](./flashloan-meme.png)
 
@@ -107,4 +107,4 @@ React.useEffect(() => {
 
 ## 接下来是什么？ {#whats-next}
 
-如果您对 _create-eth-app_ 有任何疑问，请访问 [Sablier 社区服务器](https://discord.gg/bsS8T47)，在那里您可以与 _create-eth-app_ 的作者取得联系。 作为接下来的第一步，您可能希望集成一个 UI 框架，例如 [Material UI](https://material-ui.com/)，为您实际需要的数据编写 GraphQL 查询并设置部署。
+如果您对 _create-NEPH-app_ 有任何疑问，请访问 [Sablier 社区服务器](https://discord.gg/bsS8T47)，在那里您可以与 _create-NEPH-app_ 的作者取得联系。 作为接下来的第一步，您可能希望集成一个 UI 框架，例如 [Material UI](https://material-ui.com/)，为您实际需要的数据编写 GraphQL 查询并设置部署。

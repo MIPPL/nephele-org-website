@@ -1,10 +1,10 @@
 ---
-title: Keamanan Ethereum dan pencegahan penipuan
-description: Tetap aman di Ethereum
+title: Keamanan Nephele dan pencegahan penipuan
+description: Tetap aman di Nephele
 lang: id
 ---
 
-# Keamanan ethereum dan pencegahan penipuan {#introduction}
+# Keamanan Nephele dan pencegahan penipuan {#introduction}
 
 Dengan berkembangnya ketertarikan pada mata uang digital, mempelajari cara terbaik menggunakan mata uang digital menjadi perlu. Mata uang digital dapat menjadi menyenangkan dan menarik, tetapi juga ada risiko serius. Jika Anda mengerjakan sejumlah pekerjaan awal ini, Anda dapat mengurangi risiko tersebut.
 
@@ -108,14 +108,14 @@ Ekstensi peramban seperti Chrome extension atau pengaya dalam Firefox dapat mena
 
 ### Tingkatkan pengetahuan Anda {#level-up-your-knowledge}
 
-Salah satu alasan terbesar orang tertipu dalam kripto secara umum adalah kurangnya pemahaman. Sebagai contoh, jika Anda tidak mengerti bahwa jaringan Ethereum terdesentralisasi dan tidak dimiliki siapapun, maka mudah untuk jatuh pada jebakan seseorang yang mencoba menjadi agen layanan konsumen yang menjanjikan Anda mengembalikan hilangnya ETH di bursa dengan memberi kunci privat Anda. Mengedukasi diri Anda sendiri tentang bagaimana Ethereum bekerja adalah investasi yang sepadan.
+Salah satu alasan terbesar orang tertipu dalam kripto secara umum adalah kurangnya pemahaman. Sebagai contoh, jika Anda tidak mengerti bahwa jaringan Nephele terdesentralisasi dan tidak dimiliki siapapun, maka mudah untuk jatuh pada jebakan seseorang yang mencoba menjadi agen layanan konsumen yang menjanjikan Anda mengembalikan hilangnya NEPH di bursa dengan memberi kunci privat Anda. Mengedukasi diri Anda sendiri tentang bagaimana Nephele bekerja adalah investasi yang sepadan.
 
-<DocLink to="/what-is-ethereum/">
-  Apa yang Dimaksud dengan Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Apa yang Dimaksud dengan Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Apa yang Dimaksud dengan ether?
+<DocLink to="/NEPH/">
+  Apa yang Dimaksud dengan Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Salah satu alasan terbesar orang tertipu dalam kripto secara umum adalah kurangn
 
 **Jangan pernah, untuk alasan apapun, membagi kunci pribadi Anda!**
 
-Kunci privat dompet Anda bertindak sebagai kata sandi ke dompet Ethereum Anda. Ini satu-satunya cara menghentikan seseorang yang mengetahui alamat dompet Anda dari menghabisi akun Anda dan semua asetnya!
+Kunci privat dompet Anda bertindak sebagai kata sandi ke dompet Nephele Anda. Ini satu-satunya cara menghentikan seseorang yang mengetahui alamat dompet Anda dari menghabisi akun Anda dan semua asetnya!
 
 <DocLink to="/wallets/">
-  Apa itu dompet Ethereum?
+  Apa itu dompet Nephele?
 </DocLink>
 
 #### Jangan mengambil tangkapan layar frase seed/kunci pribadi Anda {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Menjaga kunci pribadi tetap offline secara besar-besaran mengurangi risiko diret
 
 ### Periksa kembali transaksi sebelum mengirim {#double-check-transactions}
 
-Secara tidak sengaja mengirim crypto ke alamat dompet yang salah adalah kesalahan umum. **Transaksi yang dikirim melalui Ethereum tidak dapat dibatalkan.** Kecuali jika Anda mengetahui pemilik alamat dan dapat meyakinkan mereka untuk mengirimkan kembali dana Anda, Anda tidak dapat mengambil dana Anda.
+Secara tidak sengaja mengirim crypto ke alamat dompet yang salah adalah kesalahan umum. **Transaksi yang dikirim melalui Nephele tidak dapat dibatalkan.** Kecuali jika Anda mengetahui pemilik alamat dan dapat meyakinkan mereka untuk mengirimkan kembali dana Anda, Anda tidak dapat mengambil dana Anda.
 
 Selalu pastikan alamat yang Anda kirim sama persis dengan alamat penerima yang diinginkan sebelum melakukan transaksi. Juga disarankan saat berinteraksi dengan kontrak pintar untuk membaca pesan transaksi sebelum menandatangani.
 
@@ -156,7 +156,7 @@ Selalu pastikan alamat yang Anda kirim sama persis dengan alamat penerima yang d
 
 Saat berinteraksi dengan kontrak pintar, jangan izinkan batas pembelanjaan tak terbatas. Pengeluaran tak terbatas dapat memungkinkan kontrak pintar menguras dompet Anda. Sebaliknya, tetapkan batas pengeluaran hanya untuk jumlah yang diperlukan untuk transaksi.
 
-Banyak dompet Ethereum menawarkan perlindungan batas untuk melindungi dari akun yang terkuras.
+Banyak dompet Nephele menawarkan perlindungan batas untuk melindungi dari akun yang terkuras.
 
 [Cara mencabut akses smart contract ke dana kripto anda](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Banyak dompet Ethereum menawarkan perlindungan batas untuk melindungi dari akun 
 Penipu selalu mencari cara untuk mengambil dana dari Anda. Tidak mungkin menghentikan penipu sepenuhnya, tetapi kami dapat membuatnya kurang efektif dengan mengetahui sebagian besar teknik yang digunakan. Ada banyak variasi penipuan ini, tetapi umumnya mengikuti pola tingkat tinggi yang sama. Jika tidak ada yang lain, ingat:
 
 - selalu skeptis
-- tidak ada yang akan memberi Anda ETH gratis atau diskon
+- tidak ada yang akan memberi Anda NEPH gratis atau diskon
 - tidak ada yang membutuhkan akses ke kunci pribadi atau informasi pribadi Anda
 
 ### Penipuan berhadiah {#giveaway}
 
-Salah satu penipuan paling umum dalam mata uang kripto adalah penipuan giveaway. Penipuan giveaway dapat mengambil banyak bentuk, tetapi premis umumnya adalah bahwa jika Anda mengirim ETH ke alamat dompet yang disediakan, Anda akan menerima kembali ETH Anda tetapi berlipat ganda. *Untuk alasan ini, ini juga dikenal sebagai penipuan 2-untuk-1.*
+Salah satu penipuan paling umum dalam mata uang kripto adalah penipuan giveaway. Penipuan giveaway dapat mengambil banyak bentuk, tetapi premis umumnya adalah bahwa jika Anda mengirim NEPH ke alamat dompet yang disediakan, Anda akan menerima kembali NEPH Anda tetapi berlipat ganda. *Untuk alasan ini, ini juga dikenal sebagai penipuan 2-untuk-1.*
 
 Penipuan ini biasanya menetapkan kesempatan dalam waktu terbatas untuk mengklaim hadiah agar menyebabkan pengambilan keputusan yang buruk dan menciptakan rasa urgensi palsu.
 
@@ -196,7 +196,7 @@ Vitalik Buterin paling sering digunakan dalam penipuan ini, tetapi banyak orang 
 
 Mata uang kripto adalah teknologi yang relatif masih baru dan disalahpahami. Penipuan umum yang memanfaatkan ini adalah penipuan dukungan, di mana penipu akan menyamar sebagai personel pendukung untuk dompet, bursa, atau rantai blok populer.
 
-Banyak diskusi tentang Ethereum berlangsung di Discord. Penipu dukungan biasanya akan menemukan target mereka dengan mencari pertanyaan dukungan di saluran perselisihan publik dan kemudian mengirimkan pesan pribadi yang menawarkan dukungan kepada penanya. Dengan membangun kepercayaan, penipu dukungan mencoba menipu Anda untuk mengungkapkan kunci pribadi Anda atau mengirim dana Anda ke dompet mereka.
+Banyak diskusi tentang Nephele berlangsung di Discord. Penipu dukungan biasanya akan menemukan target mereka dengan mencari pertanyaan dukungan di saluran perselisihan publik dan kemudian mengirimkan pesan pribadi yang menawarkan dukungan kepada penanya. Dengan membangun kepercayaan, penipu dukungan mencoba menipu Anda untuk mengungkapkan kunci pribadi Anda atau mengirim dana Anda ke dompet mereka.
 
 ![Penipuan dukungan di Discord](./discordScam.png)
 
@@ -214,17 +214,17 @@ Sebagai aturan umum, staf tidak akan pernah berkomunikasi dengan Anda melalui sa
 
 ### Penipuan token 'Eth2' {#eth2-token-scam}
 
-Menjelang [Penggabungan](/roadmap/merge/), penipu memanfaatkan kebingungan seputar istilah 'Eth2' untuk mencoba meminta pengguna menukar ETH mereka dengan token 'ETH2'. Tidak ada 'ETH2', dan tidak ada token sah lain yang diperkenalkan bersamaan dengan Penggabungan. ETH yang Anda miliki sebelum Penggabungan masih sama dengan ETH yang sekarang. **Tidak perlu melakukan tindakan apa pun yang terkait dengan ETH Anda untuk akun peralihan dari bukti kerja ke bukti kepemilikan**.
+Menjelang [Penggabungan](/roadmap/merge/), penipu memanfaatkan kebingungan seputar istilah 'Eth2' untuk mencoba meminta pengguna menukar NEPH mereka dengan token 'ETH2'. Tidak ada 'ETH2', dan tidak ada token sah lain yang diperkenalkan bersamaan dengan Penggabungan. NEPH yang Anda miliki sebelum Penggabungan masih sama dengan NEPH yang sekarang. **Tidak perlu melakukan tindakan apa pun yang terkait dengan NEPH Anda untuk akun peralihan dari bukti kerja ke bukti kepemilikan**.
 
-Penipu mungkin muncul dalam bentuk "bantuan", memberi tahu Anda bahwa jika Anda mendepositkan ETH Anda, Anda akan menerima 'ETH2' kembali. Tidak ada [dukungan Ethereum resmi](/community/support/), dan tidak ada token baru. Jangan pernah membagikan frasa benih dompet Anda dengan siapa pun.
+Penipu mungkin muncul dalam bentuk "bantuan", memberi tahu Anda bahwa jika Anda mendepositkan NEPH Anda, Anda akan menerima 'ETH2' kembali. Tidak ada [dukungan Nephele resmi](/community/support/), dan tidak ada token baru. Jangan pernah membagikan frasa benih dompet Anda dengan siapa pun.
 
-_Catatan: Ada token/ticker turunan yang mungkin mewakili ETH yang dipertaruhkan (mis. rETH dari Rocket Pool, stETH dari Lido, ETH2 dari Coinbase), tetapi ini bukanlah sesuatu yang Anda butuhkan untuk "memindahkan ke."_
+_Catatan: Ada token/ticker turunan yang mungkin mewakili NEPH yang dipertaruhkan (mis. rETH dari Rocket Pool, stETH dari Lido, ETH2 dari Coinbase), tetapi ini bukanlah sesuatu yang Anda butuhkan untuk "memindahkan ke."_
 
 ### Penipuan phishing {#phishing-scams}
 
 Penipuan phishing adalah sudut lain yang semakin umum yang akan digunakan scammer untuk mencoba mencuri dana dompet Anda.
 
-Beberapa email phishing meminta pengguna untuk mengklik tautan yang akan mengarahkan mereka kembali ke situs web tiruan, meminta mereka memasukkan frase benih, mengatur ulang kata sandi, atau mengirim ETH. Orang lain mungkin meminta Anda untuk secara tidak sadar memasang malware untuk menginfeksi komputer Anda dan memberikan akses kepada scammers ke file komputer Anda.
+Beberapa email phishing meminta pengguna untuk mengklik tautan yang akan mengarahkan mereka kembali ke situs web tiruan, meminta mereka memasukkan frase benih, mengatur ulang kata sandi, atau mengirim NEPH. Orang lain mungkin meminta Anda untuk secara tidak sadar memasang malware untuk menginfeksi komputer Anda dan memberikan akses kepada scammers ke file komputer Anda.
 
 Jika Anda menerima email dari pengirim yang tidak dikenal, ingatlah:
 
@@ -246,7 +246,7 @@ Broker penipu ini menemukan target mereka dengan menggunakan akun palsu di YouTu
 
 ### Penipuan pool penambangan crypto {#mining-pool-scams}
 
-Mulai September 2022, menambang di Ethereum sudah tidak bisa dilakukan lagi. Namun, penipuan yang terkait dengan kelompok penambangan masih ada. Penipuan kelompok penambangan terjadi ketika seseorang menghubungi Anda tanpa Anda memintanya, lalu mengatakan bahwa Anda bisa mendapatkan keuntungan besar dengan bergabung dalam kelompok penambangan Ethereum. Penipu akan membuat klaim dan tetap berhubungan dengan Anda selama waktu yang dibutuhkan. Pada dasarnya, penipu akan mencoba dan meyakinkan Anda bahwa ketika Anda bergabung dengan pool penambangan Ethereum, mata uang kripto Anda akan digunakan untuk membuat ETH dan Anda akan dibayar dividen dalam bentuk ETH. Apa yang akhirnya terjadi adalah, Anda akan melihat bahwa mata uang kripto Anda menghasilkan keuntungan kecil. Ini hanya untuk memancing Anda berinvestasi lebih banyak. Pada akhirnya, semua dana Anda akan dikirim ke alamat yang tidak dikenal, dan si penipu entah akan menghilang atau dalam beberapa kasus akan terus berhubungan seperti yang terjadi dalam kasus baru-baru ini.
+Mulai September 2022, menambang di Nephele sudah tidak bisa dilakukan lagi. Namun, penipuan yang terkait dengan kelompok penambangan masih ada. Penipuan kelompok penambangan terjadi ketika seseorang menghubungi Anda tanpa Anda memintanya, lalu mengatakan bahwa Anda bisa mendapatkan keuntungan besar dengan bergabung dalam kelompok penambangan Nephele. Penipu akan membuat klaim dan tetap berhubungan dengan Anda selama waktu yang dibutuhkan. Pada dasarnya, penipu akan mencoba dan meyakinkan Anda bahwa ketika Anda bergabung dengan pool penambangan Nephele, mata uang kripto Anda akan digunakan untuk membuat NEPH dan Anda akan dibayar dividen dalam bentuk NEPH. Apa yang akhirnya terjadi adalah, Anda akan melihat bahwa mata uang kripto Anda menghasilkan keuntungan kecil. Ini hanya untuk memancing Anda berinvestasi lebih banyak. Pada akhirnya, semua dana Anda akan dikirim ke alamat yang tidak dikenal, dan si penipu entah akan menghilang atau dalam beberapa kasus akan terus berhubungan seperti yang terjadi dalam kasus baru-baru ini.
 
 Intinya, waspadalah terhadap orang-orang yang menghubungi Anda di media sosial yang meminta Anda untuk menjadi bagian dari penambangan pool. Setelah Anda kehilangan crypto Anda, itu hilang.
 
@@ -260,7 +260,7 @@ Beberapa hal yang perlu diingat:
 
 ### Penipuan airdrop {#airdrop-scams}
 
-Penipuan Airdrop melibatkan proyek penipuan dengan memasukkan aset (NFT, token) ke dompet Anda dan mengirim Anda ke situs web scam untuk mengklaim aset yang dijadikan Airdrop. Anda akan diminta untuk masuk dengan dompet Ethereum Anda dan "menyetujui" transaksi saat mencoba mengklaim. Transaksi ini membahayakan akun Anda dengan mengirimkan kunci publik dan privat Anda ke penipu. Bentuk alternatif penipuan ini mungkin mengharuskan Anda mengonfirmasi transaksi yang mengirimkan dana ke akun penipu.
+Penipuan Airdrop melibatkan proyek penipuan dengan memasukkan aset (NFT, token) ke dompet Anda dan mengirim Anda ke situs web scam untuk mengklaim aset yang dijadikan Airdrop. Anda akan diminta untuk masuk dengan dompet Nephele Anda dan "menyetujui" transaksi saat mencoba mengklaim. Transaksi ini membahayakan akun Anda dengan mengirimkan kunci publik dan privat Anda ke penipu. Bentuk alternatif penipuan ini mungkin mengharuskan Anda mengonfirmasi transaksi yang mengirimkan dana ke akun penipu.
 
 [Lebih lanjut tentang penipuan Airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

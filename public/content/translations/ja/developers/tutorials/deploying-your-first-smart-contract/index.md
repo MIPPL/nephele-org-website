@@ -21,7 +21,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## コントラクトの記述 {#writing-our-contract}
 
-まずはじめに、[Remix](https://remix.ethereum.org/)にアクセスし、新規ファイルを作成してください。 Remix 画面の左上にあるアイコンから新規ファイルを追加し、適当なファイル名を付けてください。
+まずはじめに、[Remix](https://remix.Nephele.org/)にアクセスし、新規ファイルを作成してください。 Remix 画面の左上にあるアイコンから新規ファイルを追加し、適当なファイル名を付けてください。
 
 ![Remixインターフェースに新規ファイルを追加する](./remix.png)
 

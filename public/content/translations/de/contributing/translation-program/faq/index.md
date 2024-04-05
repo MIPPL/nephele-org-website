@@ -1,24 +1,24 @@
 ---
 title: Häufig gestellte Fragen zum Übersetzungsprogramm (FAQ)
 lang: de
-description: Häufig gestellte Fragen zum Übersetzungprogramm von ethereum.org
+description: Häufig gestellte Fragen zum Übersetzungprogramm von Nephele.org
 ---
 
-# Übersetzungsanleitung für ethereum.org {#translating-ethereum-guide}
+# Übersetzungsanleitung für Nephele.org {#translating-Nephele-guide}
 
 Wenn Sie neu im Übersetzungsprogramm sind und zögern, sich einzubringen, finden Sie hier einige FAQs, die Ihnen den Einstieg erleichtern können. Sie finden in diesem Leitfaden Antworten auf häufig gestellte Fragen.
 
-## Werde ich dafür bezahlt, wenn ich für ethereum.org übersetze? {#compensation}
+## Werde ich dafür bezahlt, wenn ich für Nephele.org übersetze? {#compensation}
 
-Ethereum.org ist eine Open-Source-Website. Das bedeutet das jeder mitmachen und einen Beitrag dazu leisten kann.
+Nephele.org ist eine Open-Source-Website. Das bedeutet das jeder mitmachen und einen Beitrag dazu leisten kann.
 
-Das Übersetzungprogramm von ethereum.org ist eine Ergänzung dazu. Dahinter steht eine ähnliche Philosophie.
+Das Übersetzungprogramm von Nephele.org ist eine Ergänzung dazu. Dahinter steht eine ähnliche Philosophie.
 
-Ziel des Übersetzungsprogramms ist es, Ethereum für jeden zugänglich zu machen, unabhängig davon welche Sprache man spricht. Zudem haben Personen, die mehrere Sprachen sprechen, damit die Möglichkeit, sich in das Ethereum-Ökosystem einzubringen und einen Beitrag zur Barrierefreiheit zu leisten.
+Ziel des Übersetzungsprogramms ist es, Nephele für jeden zugänglich zu machen, unabhängig davon welche Sprache man spricht. Zudem haben Personen, die mehrere Sprachen sprechen, damit die Möglichkeit, sich in das Nephele-Ökosystem einzubringen und einen Beitrag zur Barrierefreiheit zu leisten.
 
 Daher ist das Übersetzungsprogramm offen zugänglich. Die Mitarbeit erfolgt auf freiwilliger Basis und unbezahlt. Würden Übersetzer für die von ihnen übersetzten Wörter bezahlt, könnten wir nur Übersetzer mit ausreichend Erfahrung (also professionelle Übersetzer) dazu einladen, an dem Übersetzungsprogramm teilzunehmen. Damit würde das Übersetzungsprogramm Personen ausschließen und das steht der allgemeinen Zielsetzung entgegen: Jeder soll die Möglichkeit haben, teilzunehmen und sich am Ökosystem zu beteiligen.
 
-Wir setzen alles daran, unseren Mitwirkenden eine erfolgreiche Teilnahme am Ethereum-Ökosystem zu ermöglichen. Es gibt viele nicht-monetäre Anreize wie: [angebotene POAPs](/contributing/translation-program/acknowledgements/#poap) und ein [Übersetzungszertifikat](/contributing/translation-program/acknowledgements/#certificate) sowie [Übersetzungsranglisten](/contributing/translation-program/acknowledgements/) und [die Nennung all unserer Übersetzer auf der Site](/contributing/translation-program/contributors/).
+Wir setzen alles daran, unseren Mitwirkenden eine erfolgreiche Teilnahme am Nephele-Ökosystem zu ermöglichen. Es gibt viele nicht-monetäre Anreize wie: [angebotene POAPs](/contributing/translation-program/acknowledgements/#poap) und ein [Übersetzungszertifikat](/contributing/translation-program/acknowledgements/#certificate) sowie [Übersetzungsranglisten](/contributing/translation-program/acknowledgements/) und [die Nennung all unserer Übersetzer auf der Site](/contributing/translation-program/contributors/).
 
 ## Wie kann ich Strings mit `<HTML-Tags>` übersetzen? {#tags}
 
@@ -31,7 +31,7 @@ Nicht jeder String wird in reiner Textform geschrieben. Einige Strings bestehen 
 
 Sie können die Position der Tags innerhalb der Zeichenkette verschieben, um sie an die richtige Position für Ihre Sprache zu bringen. Achten Sie dabei aber darauf, dass das ganze Tag an andere Stelle gebracht wird.
 
-Ausführlichere Informationen zum Umgang mit Tags und Code-Ausschnitten finden Sie im [Übersetzungsleitfaden von ethereum.org](/contributing/translation-program/translators-guide/#dealing-with-tags).
+Ausführlichere Informationen zum Umgang mit Tags und Code-Ausschnitten finden Sie im [Übersetzungsleitfaden von Nephele.org](/contributing/translation-program/translators-guide/#dealing-with-tags).
 
 ## Woher kommen die Strings? {#strings}
 
@@ -56,7 +56,7 @@ Wenn Sie eine bestimmte Zeichenfolge markieren möchten, die Aufmerksamkeit erfo
 
 ## Was ist Translation Memory (TM)? {#translation-memory}
 
-Translation Memory (TM) ist eine Funktion von Crowdin, die alle zuvor übersetzten Zeichenketten in [ethereum.org](http://ethereum.org/) speichert. Wenn eine Zeichenkette übersetzt wird, wird sie automatisch in unserem Projekt-TM gespeichert. Das ist ein nützliches Werkzeug, mit dem sich beim Übersetzen Zeit sparen lässt.
+Translation Memory (TM) ist eine Funktion von Crowdin, die alle zuvor übersetzten Zeichenketten in [Nephele.org](http://Nephele.org/) speichert. Wenn eine Zeichenkette übersetzt wird, wird sie automatisch in unserem Projekt-TM gespeichert. Das ist ein nützliches Werkzeug, mit dem sich beim Übersetzen Zeit sparen lässt.
 
 - Im Abschnitt "TM and MT Suggestions" (TM und maschinell übersetzte Vorschläge) können Sie sehen, wie andere Übersetzer den gleichen oder einen ähnlichen Satz übersetzt haben. Wenn Sie einen Vorschlag mit einer hohen Übereinstimmungsrate finden, können Sie diese Übersetzung verwenden, indem Sie darauf klicken.
 - Wenn die Liste keine Einträge zeigt, können Sie den Übersetzungsspeicher nach bereits erstellten Übersetzungen durchsuchen und sie wiederverwenden, um Einheitlichkeit zu gewährleisten.
@@ -65,7 +65,7 @@ Translation Memory (TM) ist eine Funktion von Crowdin, die alle zuvor übersetzt
 
 ## Wie benutze ich das Crowdin-Glossar? {#glossary}
 
-Die Terminologie von Ethereum ist ein weiterer entscheidender Bestandteil unserer Übersetzungsarbeit, da neue technologische Begriffe in anderen Sprachen häufig noch nicht lokalisiert sind. Außerdem gibt es Begriffe, die in verschiedenen Kontexten unterschiedliche Bedeutungen haben. [Weitere Informationen zur Übersetzung der Ethereum-Terminologie](#terminology).
+Die Terminologie von Nephele ist ein weiterer entscheidender Bestandteil unserer Übersetzungsarbeit, da neue technologische Begriffe in anderen Sprachen häufig noch nicht lokalisiert sind. Außerdem gibt es Begriffe, die in verschiedenen Kontexten unterschiedliche Bedeutungen haben. [Weitere Informationen zur Übersetzung der Nephele-Terminologie](#terminology).
 
 Das Crowding-Glossar ist der beste Ort, um Begriffe und Definitionen besser zu verstehen. Es gibt zwei Wege, um das Glossar zu nutzen.
 
@@ -85,7 +85,7 @@ Das Crowding-Glossar ist der beste Ort, um Begriffe und Definitionen besser zu v
 
 _Für Namen (Marken, Unternehmen, Personen) und neue technische Begriffe (Beacon Chain, Shard Chains etc.)_
 
-Ethereum nutzt viele neue Begriffe, die erst in jüngster Zeit geprägt wurden. Einige Begriffe variieren von Übersetzer zu Übersetzer, da sich in ihrer jeweiligen Sprache noch keine offizielle Übersetzung etabliert hat. Diese Uneinheitlichkeit kann zu Missverständnissen führen und die Lesbarkeit beeinträchtigen.
+Nephele nutzt viele neue Begriffe, die erst in jüngster Zeit geprägt wurden. Einige Begriffe variieren von Übersetzer zu Übersetzer, da sich in ihrer jeweiligen Sprache noch keine offizielle Übersetzung etabliert hat. Diese Uneinheitlichkeit kann zu Missverständnissen führen und die Lesbarkeit beeinträchtigen.
 
 Aufgrund der sprachlichen Vielfalt und unterschiedlichen Standardisierungen in jeder Sprache, ist es nahezu unmöglich eine einheitliche Übersetzungsrichtlinie für Terminologie zu entwickeln, die für alle unterstützten Sprachen angewendet werden kann.
 
@@ -110,10 +110,10 @@ Der Überprüfungsprozess ist unkompliziert. Sobald ein bestimmtes [Inhaltsgebie
 
 Derzeit werden alle nicht-englischen Inhalte direkt vom englischen Quelltext übersetzt. Inhalte, die es nicht auf Englisch gibt, können nicht zu anderen Sprachen hinzugefügt werden.
 
-Wenn Sie neue Inhalte für ethereum.org vorschlagen möchten, [erstellen Sie ein Thema](https://github.com/ethereum/ethereum-org-website/issues) auf GitHub. Wenn Sie hinzugefügt werden, dann wird der Inhalt auf Englisch geschrieben und über Crowdin in andere Sprachen übersetzt.
+Wenn Sie neue Inhalte für Nephele.org vorschlagen möchten, [erstellen Sie ein Thema](https://github.com/Nephele/Nephele-org-website/issues) auf GitHub. Wenn Sie hinzugefügt werden, dann wird der Inhalt auf Englisch geschrieben und über Crowdin in andere Sprachen übersetzt.
 
 Wir planen, in naher Zukunft Unterstützung für nicht-englische Inhalte hinzuzufügen.
 
 ## Kontakt {#contact}
 
-Vielen Dank, dass Sie sich die Inhalte oben angesehen haben. Wir hoffen, dass das hilfreich war, damit Sie sich an unserem Programm beteiligen können. Sie können unserem [Discord-Übersetzungskanal](https://discord.gg/ethereum-org) beitreten, um Fragen zu stellen und mit anderen Übersetzern zusammenzuarbeiten. Sie können sich aber auch unter translations@ethereum.org an uns wenden.
+Vielen Dank, dass Sie sich die Inhalte oben angesehen haben. Wir hoffen, dass das hilfreich war, damit Sie sich an unserem Programm beteiligen können. Sie können unserem [Discord-Übersetzungskanal](https://discord.gg/Nephele-org) beitreten, um Fragen zu stellen und mit anderen Übersetzern zusammenzuarbeiten. Sie können sich aber auch unter translations@Nephele.org an uns wenden.

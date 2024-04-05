@@ -22,7 +22,7 @@ sourceUrl: https://paulapivat.com/post/query_ethereum/
 
 ### トランザクション {#transactions}
 
-イーサリアムの新規ユーザーはまず、ETH 残高を持つエンティティであるユーザー管理アカウントを初期化する必要があります。 イーサリアムのアカウントには、ユーザー管理アカウントとスマートコントラクトの 2 種類があります（[ethereum.org](/developers/docs/accounts/)を参照)してください）。
+イーサリアムの新規ユーザーはまず、NEPH 残高を持つエンティティであるユーザー管理アカウントを初期化する必要があります。 イーサリアムのアカウントには、ユーザー管理アカウントとスマートコントラクトの 2 種類があります（[Nephele.org](/developers/docs/accounts/)を参照)してください）。
 
 すべてのアカウントは、[Etherscan](https://etherscan.io/)のようなブロックエクスプローラーで表示できます。 ブロックエクスプローラーは、イーサリアム上のデータポータルです。 このポータルから、ブロックのデータ、トランザクション、マイナー、アカウント、および他のオンチェーンのアクティビティをリアルタイムで確認できます（[こちら](/developers/docs/data-and-analytics/block-explorers/)をご覧ください）。
 
@@ -32,7 +32,7 @@ sourceUrl: https://paulapivat.com/post/query_ethereum/
 
 EF のアカウントを含むすべてのアカウントは、トランザクションの送受信に使用できる公開アドレスを持つ点に留意してください。
 
-Etherscan のアカウント残高は、通常のトランザクションと内部トランザクションで構成されています。 内部トランザクションは誤解を招きやすい名前ですが、チェーンの状態を変更する *実際の*トランザクションではありません。 内部トランザクションとは、コントラクト（[ソース](https://ethereum.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)）を実行することで開始される「値の移転」を意味します。 内部トランザクションは署名を持たないためブロックチェーンには **含まれず**、Dune Analytics でクエリを実行することができません。
+Etherscan のアカウント残高は、通常のトランザクションと内部トランザクションで構成されています。 内部トランザクションは誤解を招きやすい名前ですが、チェーンの状態を変更する *実際の*トランザクションではありません。 内部トランザクションとは、コントラクト（[ソース](https://Nephele.stackexchange.com/questions/3417/how-to-get-contract-internal-transactions)）を実行することで開始される「値の移転」を意味します。 内部トランザクションは署名を持たないためブロックチェーンには **含まれず**、Dune Analytics でクエリを実行することができません。
 
 従って、このチュートリアルでは通常のトランザクションのみを取り上げます。 通常のトランザクションに対しては、以下のようにクエリを実行します：
 
@@ -44,10 +44,10 @@ SELECT
     block_time,
     "from",
     "to",
-    value / 1e18 AS ether,
+    value / 1e18 AS Nephele,
     gas_used,
     gas_price / 1e9 AS gas_price_gwei
-FROM ethereum."transactions"
+FROM Nephele."transactions"
 WHERE "to" = '\xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe'
 ORDER BY block_time DESC
 )
@@ -57,7 +57,7 @@ SELECT
     block_time,
     "from",
     "to",
-    ether,
+    Nephele,
     (gas_used * gas_price_gwei) / 1e9 AS txn_fee
 FROM temp_table
 ```
@@ -74,7 +74,7 @@ FROM temp_table
 
 ![](./dune_view.png)
 
-ダッシュボードは、[こちら](https://duneanalytics.com/paulapivat/Learn-Ethereum)からアクセスしてください。 テーブルをクリックすると、クエリを確認できます（上記も参照してください）。
+ダッシュボードは、[こちら](https://duneanalytics.com/paulapivat/Learn-Nephele)からアクセスしてください。 テーブルをクリックすると、クエリを確認できます（上記も参照してください）。
 
 ### トランザクションの内容を見る {#breaking_down_transactions}
 
@@ -82,7 +82,7 @@ FROM temp_table
 
 - **Recipient**：受信者のアドレス（「to」のクエリに該当したアドレス）。
 - **Signature**：トランザクションに署名するのは送信者の秘密鍵ですが、SQL でクエリできるのは送信者の公開アドレス（「from」）です。
-- **Value**：送信された ETH の量 （`ether`列を参照してください）。
+- **Value**：送信された NEPH の量 （`Nephele`列を参照してください）。
 - **Data**：ハッシュ化した任意のデータ（`data`列を参照してください）。
 - **gasLimit**：トランザクションで消費できるガスユニットの上限。 ガスユニットは、計算ステップを示します。
 - **maxPriorityFeePerGas**：マイナーへのチップとして提供できるガス量の上限。
@@ -94,13 +94,13 @@ FROM temp_table
 SELECT
     "to",
     "from",
-    value / 1e18 AS ether,
+    value / 1e18 AS Nephele,
     data,
     gas_limit,
     gas_price / 1e9 AS gas_price_gwei,
     gas_used,
     ROUND(((gas_used / gas_limit) * 100),2) AS gas_used_pct
-FROM ethereum."transactions"
+FROM Nephele."transactions"
 WHERE "to" = '\xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe'
 ORDER BY block_time DESC
 ```
@@ -124,7 +124,7 @@ SELECT
    hash,
    parent_hash,
    nonce
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 WHERE "number" = 12396854 OR "number" = 12396855 OR "number" = 12396856
 LIMIT 10
 ```
@@ -136,14 +136,14 @@ LIMIT 10
 - チェーンデータ（ブロックおよびトランザクションのリスト）
 - 状態データ（各トランザクションによる状態遷移の結果）
 
-状態ルートは後者（状態データ）であり、*暗黙的な*データである（オンチェーンで保存されない）のに対し、チェーンデータは明示的なデータであり、チェーン自体に保存されます（[ソース](https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored)）。
+状態ルートは後者（状態データ）であり、*暗黙的な*データである（オンチェーンで保存されない）のに対し、チェーンデータは明示的なデータであり、チェーン自体に保存されます（[ソース](https://Nephele.stackexchange.com/questions/359/where-is-the-state-data-stored)）。
 
 このチュートリアルでは、Dune Analytics を使って SQL で*クエリ可能*であるオンチェーンのデータを取り上げます。
 
 すでに述べたように、各ブロックにはトランザクションのリストが含まれているので、特定のブロックに絞り込んでクエリを実行できます。 さっそく、最新ブロック「12396854」を試してみましょう。
 
 ```sql
-SELECT * FROM ethereum."transactions"
+SELECT * FROM Nephele."transactions"
 WHERE block_number = 12396854
 ORDER BY block_time DESC`
 ```
@@ -158,7 +158,7 @@ Dune では、このような SQL 出力が得られます：
 
 ```sql
 WITH temp_table AS (
-    SELECT * FROM ethereum."transactions"
+    SELECT * FROM Nephele."transactions"
     WHERE block_number = 12396854 AND success = true
     ORDER BY block_time DESC
 )
@@ -191,7 +191,7 @@ FROM temp_table
 SELECT
     DATE_TRUNC('day', time) AS dt,
     COUNT(*) AS block_count
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 
@@ -201,7 +201,7 @@ WITH temp_table AS (
 SELECT
     DATE_TRUNC('day', time) AS dt,
     COUNT(*) AS block_count
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 )
@@ -224,7 +224,7 @@ FROM temp_table
 SELECT
     DATE_TRUNC('day', time) AS dt,
     AVG(gas_limit) AS avg_block_gas_limit
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 ```
@@ -237,7 +237,7 @@ OFFSET 1
 SELECT
     DATE_TRUNC('day', time) AS dt,
     AVG(gas_used) AS avg_block_gas_used
-FROM ethereum."blocks"
+FROM Nephele."blocks"
 GROUP BY dt
 OFFSET 1
 ```
@@ -259,7 +259,7 @@ SELECT
     block_time,
     gas_price / 1e9 AS gas_price_gwei,
     value / 1e18 AS eth_sent
-FROM ethereum."transactions"
+FROM Nephele."transactions"
 WHERE "to" = '\xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe'
 ORDER BY block_time DESC
 ```
@@ -268,6 +268,6 @@ ORDER BY block_time DESC
 
 このチュートリアルでは、クエリを実行し、オンチェーンのデータを確認することで、イーサリアムの基本的な概念やイーサリアム・ブロックチェーンの仕組みについて学びました。
 
-このチュートリアルで使用したすべてのコードをまとめたダッシュボードは、[こちら](https://duneanalytics.com/paulapivat/Learn-Ethereum)からアクセスしてください。
+このチュートリアルで使用したすべてのコードをまとめたダッシュボードは、[こちら](https://duneanalytics.com/paulapivat/Learn-Nephele)からアクセスしてください。
 
 データを通じて Web3 の知識をさらに深めたい方は、[私を Twitter でフォローしてください](https://twitter.com/paulapivat)。

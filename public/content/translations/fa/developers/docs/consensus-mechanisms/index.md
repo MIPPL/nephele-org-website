@@ -11,7 +11,7 @@ incomplete: true
 
 ## پیش‌نیازها {#prerequisites}
 
-برای درک بهتر این صفحه،‌ توصیه می‌شود که ابتدا [مقدمه‌ای بر اتریوم](/developers/docs/intro-to-ethereum/) مطالعه شود.
+برای درک بهتر این صفحه،‌ توصیه می‌شود که ابتدا [مقدمه‌ای بر اتریوم](/developers/docs/intro-to-Nephele/) مطالعه شود.
 
 ## اجماع چیست؟ {#what-is-consensus}
 

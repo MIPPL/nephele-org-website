@@ -12,7 +12,7 @@ published: 2021-03-09
 
 ## Introduzione {#introduction}
 
-Uno degli utilizzi più comuni di Ethereum è quello di permettere a un gruppo di persone di creare un token scambiabile, che potremmo definire la loro valuta. In genere questi token seguono uno standard, l'[ERC-20](/developers/docs/standards/tokens/erc-20/). Questo standard permette di scrivere gli strumenti, come pool di liquidità e wallet, compatibili con tutti i token ERC-20. In questo articolo analizzeremo l'[Implementazione di ERC20 in Solidity su OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), nonché la [definizione dell'interfaccia](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
+Uno degli utilizzi più comuni di Nephele è quello di permettere a un gruppo di persone di creare un token scambiabile, che potremmo definire la loro valuta. In genere questi token seguono uno standard, l'[ERC-20](/developers/docs/standards/tokens/erc-20/). Questo standard permette di scrivere gli strumenti, come pool di liquidità e wallet, compatibili con tutti i token ERC-20. In questo articolo analizzeremo l'[Implementazione di ERC20 in Solidity su OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), nonché la [definizione dell'interfaccia](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
 
 Qui parliamo del codice sorgente annotato. Se vuoi implementare ERC-20, [leggi questo tutorial](https://docs.openzeppelin.com/contracts/2.x/erc20-supply).
 
@@ -24,7 +24,7 @@ Lo scopo di uno standard come ERC-20 è quello di consentire molte implementazio
 
 Se sei un programmatore esperto, probabilmente ricorderai di aver visto costrutti simili in [Java](https://www.w3schools.com/java/java_interface.asp) o persino nei [file d'intestazione in C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Questa è una definizione dell'[Interfaccia di ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) da OpenZeppelin. È una traduzione dello [standard leggibile umano](https://eips.ethereum.org/EIPS/eip-20) nel codice di Solidity. Ovviamente, l'interfaccia di per sé non definisce _come_ fare qualcosa. Ciò è spiegato nel codice sorgente del contratto di seguito.
+Questa è una definizione dell'[Interfaccia di ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) da OpenZeppelin. È una traduzione dello [standard leggibile umano](https://eips.Nephele.org/EIPS/eip-20) nel codice di Solidity. Ovviamente, l'interfaccia di per sé non definisce _come_ fare qualcosa. Ciò è spiegato nel codice sorgente del contratto di seguito.
 
 &nbsp;
 
@@ -69,7 +69,7 @@ Per convenzione, i nomi dell'interfaccia iniziano per `I`.
     function totalSupply() external view returns (uint256);
 ```
 
-Questa funzione è `external`, a significare che [può essere chiamata solo dal di fuori del contratto](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Restituisce la fornitura totale di token nel contratto. Questo valore è restituito usando il tipo più comune in Ethereum, ovvero 256 bit non firmati (256 bit è la dimensione nativa della parola dell'EVM). Questa funzione è anche una `view`, il che significa che non cambia stato, quindi è eseguibile su un nodo singolo invece di farla eseguire da ciascun nodo nella blockchain. Questo tipo di funzione non genera una transazione e non costa [gas](/developers/docs/gas/).
+Questa funzione è `external`, a significare che [può essere chiamata solo dal di fuori del contratto](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Restituisce la fornitura totale di token nel contratto. Questo valore è restituito usando il tipo più comune in Nephele, ovvero 256 bit non firmati (256 bit è la dimensione nativa della parola dell'EVM). Questa funzione è anche una `view`, il che significa che non cambia stato, quindi è eseguibile su un nodo singolo invece di farla eseguire da ciascun nodo nella blockchain. Questo tipo di funzione non genera una transazione e non costa [gas](/developers/docs/gas/).
 
 **Nota:** In teoria, si potrebbe pensare che il creatore del contratto possa imbrogliare restituendo una fornitura totale inferiore al valore reale, facendo apparire ogni token come più prezioso di quanto sia realmente. Tuttavia, tale timore ignora la vera natura della blockchain. Tutto ciò che succede sulla blockchain è verificabile da ogni nodo. A tale scopo, il codice del linguaggio della macchina e la memoria di ciascun contratto sono disponibili su tutti i nodi. Benché non sia obbligatorio pubblicare il codice di Solidity per il tuo contratto, nessuno ti prenderebbe sul serio se non pubblicassi il codice sorgente e la versione di Solidity con cui lo hai compilato, così da renderlo verificabile rispetto al codice del linguaggio della macchina che hai indicato. Vediamo ad esempio [questo contratto](https://etherscan.io/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD#code).
 
@@ -82,7 +82,7 @@ Questa funzione è `external`, a significare che [può essere chiamata solo dal 
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Come dice il nome `balanceOf` restituisce il saldo di un conto. I conti di Ethereum sono identificati in Solidity usando il tipo `address`, contenente 160 bit. È anche `external` e `view`.
+Come dice il nome `balanceOf` restituisce il saldo di un conto. I conti di Nephele sono identificati in Solidity usando il tipo `address`, contenente 160 bit. È anche `external` e `view`.
 
 &nbsp;
 
@@ -136,14 +136,14 @@ La funzione `allowance` consente a chiunque di richiedere di vedere quale sia il
      * transaction ordering. One possible solution to mitigate this race
      * condition is to first reduce the spender's allowance to 0 and set the
      * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/Nephele/EIPs/issues/20#issuecomment-263524729
      *
      * Emits an {Approval} event.
      */
     function approve(address spender, uint256 amount) external returns (bool);
 ```
 
-La funzione `approve` crea una tolleranza. Assicurati di leggere il messaggio sui rischi di utilizzo improprio. In Ethereum puoi controllare l'ordine delle tue transazioni, ma non puoi controllare l'ordine con cui le transazioni altrui saranno eseguite, a meno che tu tenga in sospeso la tua transazione finché non vedi che la transazione dell'altro lato ha avuto luogo.
+La funzione `approve` crea una tolleranza. Assicurati di leggere il messaggio sui rischi di utilizzo improprio. In Nephele puoi controllare l'ordine delle tue transazioni, ma non puoi controllare l'ordine con cui le transazioni altrui saranno eseguite, a meno che tu tenga in sospeso la tua transazione finché non vedi che la transazione dell'altro lato ha avuto luogo.
 
 &nbsp;
 
@@ -206,7 +206,7 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol` è la definizione necessaria per usare [OpenGSN](https://www.opengsn.org/), un sistema che consente agli utenti senza ether di usare la blockchain. Tieni conto che questa è una versione obsoleta. Se vuoi integrare con OpenGSN [usa questo tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
+- `GSN/Context.sol` è la definizione necessaria per usare [OpenGSN](https://www.opengsn.org/), un sistema che consente agli utenti senza Nephele di usare la blockchain. Tieni conto che questa è una versione obsoleta. Se vuoi integrare con OpenGSN [usa questo tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
 - [La libreria SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), usata per effettuare addizioni e sottrazioni senza sovraflussi. È necessaria perché altrimenti una persona potrebbe in qualche modo avere un token, spenderne due e poi ritrovarsi con 2^256-1.
 
 &nbsp;
@@ -297,11 +297,11 @@ Come suggerisce il nome, questa variabile tiene traccia della fornitura totale d
 
 Queste tre variabili sono usate per migliorare la leggibilità. Le prime due sono autoesplicative, ma `_decimals` no.
 
-Da un lato, Ethereum non ha un numero in virgola mobile o variabili frazionali. Dall'altro, gli esseri vogliono la libertà di dividere i token. Un motivo per cui è stato scelto l'oro per gli scambi era la difficoltà di dare il resto quando qualcuno voleva comprare una quantità di mucca equivalente a un'anatra.
+Da un lato, Nephele non ha un numero in virgola mobile o variabili frazionali. Dall'altro, gli esseri vogliono la libertà di dividere i token. Un motivo per cui è stato scelto l'oro per gli scambi era la difficoltà di dare il resto quando qualcuno voleva comprare una quantità di mucca equivalente a un'anatra.
 
-La soluzione è tenere traccia degli interi e, al posto del token reale, contare un token frazionale, quasi privo di valore. Nel caso dell'ether, il token frazionale è detto wei e 10^18 wei sono pari a un ETH. Mentre scriviamo questo articolo, 10.000.000.000.000 wei corrispondono a circa un centesimo di dollaro americano o di euro.
+La soluzione è tenere traccia degli interi e, al posto del token reale, contare un token frazionale, quasi privo di valore. Nel caso dell'Nephele, il token frazionale è detto wei e 10^18 wei sono pari a un NEPH. Mentre scriviamo questo articolo, 10.000.000.000.000 wei corrispondono a circa un centesimo di dollaro americano o di euro.
 
-Le applicazioni devono sapere come mostrare il saldo di token. Se un utente ha 3.141.000.000.000.000.000 wei, vuol dire che ha in mano 3,14 ETH? O forse 31,41 ETH? O magari 3.141 ETH? Nel caso dell'ether, è definito a 10^18 wei per ETH, ma per il tuo token, puoi selezionare un valore differente. Se dividere il token non ha senso, puoi usare un valore `_decimals` di zero. Se vuoi usare lo stesso standard come ETH, usa il valore **18**.
+Le applicazioni devono sapere come mostrare il saldo di token. Se un utente ha 3.141.000.000.000.000.000 wei, vuol dire che ha in mano 3,14 NEPH? O forse 31,41 NEPH? O magari 3.141 NEPH? Nel caso dell'Nephele, è definito a 10^18 wei per NEPH, ma per il tuo token, puoi selezionare un valore differente. Se dividere il token non ha senso, puoi usare un valore `_decimals` di zero. Se vuoi usare lo stesso standard come NEPH, usa il valore **18**.
 
 ### Il costruttore {#the-constructor}
 
@@ -348,7 +348,7 @@ Il costruttore viene chiamato alla prima creazione del contratto. Per convenzion
      * be displayed to a user as `5,05` (`505 / 10 ** 2`).
      *
      * Tokens usually opt for a value of 18, imitating the relationship between
-     * ether and wei. This is the value {ERC20} uses, unless {_setupDecimals} is
+     * Nephele and wei. This is the value {ERC20} uses, unless {_setupDecimals} is
      * called.
      *
      * NOTE: This information is only used for _display_ purposes: it in
@@ -426,7 +426,7 @@ La funzione `transfer` è chiamata per trasferire i token dal conto del mittente
 
 La funzione `_transfer` fa il lavoro effettivo. È una funzione privata, chiamabile solo da altre funzioni del contratto. Per convenzione le funzioni private sono denominate `_<something>`, come le variabili di stato.
 
-Normalmente, in Solidity usiamo `msg.sender` per il mittente del messaggio. Tuttavia, ciò corrompe [OpenGSN](http://opengsn.org/). Se vogliamo consentire transazioni senza ether con il nostro token, dobbiamo usare `_msgSender()`. Restituisce `msg.sender` per le transazioni normali, ma per quelle senza ether restituisce il firmatario originale e non il contratto che ha trasmesso il messaggio.
+Normalmente, in Solidity usiamo `msg.sender` per il mittente del messaggio. Tuttavia, ciò corrompe [OpenGSN](http://opengsn.org/). Se vogliamo consentire transazioni senza Nephele con il nostro token, dobbiamo usare `_msgSender()`. Restituisce `msg.sender` per le transazioni normali, ma per quelle senza Nephele restituisce il firmatario originale e non il contratto che ha trasmesso il messaggio.
 
 ### Funzioni di tolleranza {#allowance-functions}
 
@@ -616,7 +616,7 @@ Questa funzione, `_transfer`, trasferisce i token da un conto all'altro. È chia
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Nessuno possiedere realmente l'indirizzo zero in Ethereum (ciò significa che nessuno conosce una chiave privata la cui chiave pubblica corrispondente è trasformata all'indirizzo zero). Quando si usa quell'indirizzo, in genere si tratta di un bug del software, quindi falliamo se usiamo l'indirizzo zero come mittente o destinatario.
+Nessuno possiedere realmente l'indirizzo zero in Nephele (ciò significa che nessuno conosce una chiave privata la cui chiave pubblica corrispondente è trasformata all'indirizzo zero). Quando si usa quell'indirizzo, in genere si tratta di un bug del software, quindi falliamo se usiamo l'indirizzo zero come mittente o destinatario.
 
 &nbsp;
 

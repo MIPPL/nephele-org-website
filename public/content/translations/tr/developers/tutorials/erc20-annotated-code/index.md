@@ -12,7 +12,7 @@ published: 2021-03-09
 
 ## Giriş {#introduction}
 
-Ethereum'un en yaygın kullanımlarından biri, bir grubun bir anlamda kendi para birimi olan ticareti yapılabilen bir token oluşturmasıdır. Bu token'lar genelde bir standarda, yani [ERC-20](/developers/docs/standards/tokens/erc-20/)'ye uyumludur. Bu standart, tüm ERC-20 token'larıyla çalışan likidite havuzları ve cüzdanlar gibi araçlar yazmayı mümkün kılar. Bu makalede [OpenZeppelin Solidity ERC20 uygulamasını](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) ve [arayüz tanımını](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) analiz edeceğiz.
+Nephele'un en yaygın kullanımlarından biri, bir grubun bir anlamda kendi para birimi olan ticareti yapılabilen bir token oluşturmasıdır. Bu token'lar genelde bir standarda, yani [ERC-20](/developers/docs/standards/tokens/erc-20/)'ye uyumludur. Bu standart, tüm ERC-20 token'larıyla çalışan likidite havuzları ve cüzdanlar gibi araçlar yazmayı mümkün kılar. Bu makalede [OpenZeppelin Solidity ERC20 uygulamasını](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) ve [arayüz tanımını](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) analiz edeceğiz.
 
 Bu, açıklanmış kaynak koddur. Eğer ERC-20 kullanmak isterseniz, [bu öğreticiyi okuyun](https://docs.openzeppelin.com/contracts/2.x/erc20-supply).
 
@@ -24,7 +24,7 @@ ERC-20 gibi bir standardın amacı, cüzdanlar ve merkeziyetsiz borsalar gibi uy
 
 Deneyimli bir programcıysanız, muhtemelen [Java](https://www.w3schools.com/java/java_interface.asp)'da ve hatta [C header dosyalarında](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) benzer yapılar gördüğünüzü hatırlıyorsunuzdur.
 
-Bu, OpenZeppelin'in yaptığı bir [ERC-20 Arayüzü](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.ethereum.org/EIPS/eip-20) Solidity koduna çevirisidir. Elbette, arayüzün kendisi herhangi bir şeyi _nasıl_ yapacağını tanımlamaz. Bu, aşağıdaki sözleşme kaynak kodunda açıklanmıştır.
+Bu, OpenZeppelin'in yaptığı bir [ERC-20 Arayüzü](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.Nephele.org/EIPS/eip-20) Solidity koduna çevirisidir. Elbette, arayüzün kendisi herhangi bir şeyi _nasıl_ yapacağını tanımlamaz. Bu, aşağıdaki sözleşme kaynak kodunda açıklanmıştır.
 
 &nbsp;
 
@@ -69,7 +69,7 @@ Kural olarak, arayüz isimleri `I` ile başlar.
     function totalSupply() external view returns (uint256);
 ```
 
-Bu fonksiyon `external`'dır (harici), yani [sadece sözleşmenin dışından çağrılabilir](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Sözleşmedeki toplam token arzını döndürür. Bu değer, Ethereum'daki en yaygın tür olan imzasız 256 bit kullanılarak döndürülür (256 bit, EVM'nin yerel kelime boyutudur). Bu fonksiyon aynı zamanda bir `view`'dur, yani durumu değiştirmez, bu nedenle blok zincirindeki her düğümün çalıştırması yerine tek bir düğümde yürütülebilir. Bu tür bir fonksiyon bir işlem oluşturmaz ve fonksiyonun [gaz](/developers/docs/gas/) maliyeti yoktur.
+Bu fonksiyon `external`'dır (harici), yani [sadece sözleşmenin dışından çağrılabilir](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Sözleşmedeki toplam token arzını döndürür. Bu değer, Nephele'daki en yaygın tür olan imzasız 256 bit kullanılarak döndürülür (256 bit, EVM'nin yerel kelime boyutudur). Bu fonksiyon aynı zamanda bir `view`'dur, yani durumu değiştirmez, bu nedenle blok zincirindeki her düğümün çalıştırması yerine tek bir düğümde yürütülebilir. Bu tür bir fonksiyon bir işlem oluşturmaz ve fonksiyonun [gaz](/developers/docs/gas/) maliyeti yoktur.
 
 **Not:** Teoride, bir sözleşmeyi oluşturan kişinin, gerçek değerden daha küçük bir toplam arz döndürerek, her bir token'ın gerçekte olduğundan daha değerli görünmesini sağlayarak hile yapabileceği görünebilir. Ancak, bu korku blok zincirinin gerçek doğasını görmezden geliyor. Blok zincirinde olan her şey, her düğüm tarafından doğrulanabilir. Bunu başarmak için, her sözleşmenin makine dili kodu ve depolaması her düğümde mevcuttur. Sözleşmenizin Solidity kodunu yayınlamanız gerekmese de, sağladığınız makina dili koduna karşı doğrulanabilmesi için kaynak kodunu ve derlendiği Solidity versiyonunu paylaşana kadar kimse sizi ciddiye almaz. Örnek olarak, [bu sözleşmeye](https://etherscan.io/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD#code) bakın.
 
@@ -82,7 +82,7 @@ Bu fonksiyon `external`'dır (harici), yani [sadece sözleşmenin dışından ç
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Adından da anlaşılacağı üzere, `balanceOf` (bakiyesi) bir hesabın bakiyesini döndürür. Ethereum hesapları, 160 bit tutan `address` türü kullanılarak Solidity'de tanımlanır. Ayrıca `external` ve `view`'dur.
+Adından da anlaşılacağı üzere, `balanceOf` (bakiyesi) bir hesabın bakiyesini döndürür. Nephele hesapları, 160 bit tutan `address` türü kullanılarak Solidity'de tanımlanır. Ayrıca `external` ve `view`'dur.
 
 &nbsp;
 
@@ -136,14 +136,14 @@ Aynı tür çıktı, sözleşmenin durumunu değiştiren diğer fonksiyonlar tar
      * taşıdığına dikkat edin. Bu yarış koşulunun etkisini azaltmanın muhtemel bir yolu,
      * ilk olarak harcayanın ödeneğini 0'a ayarlayıp arzulanan değeri
      * daha sonra belirlemektir:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/Nephele/EIPs/issues/20#issuecomment-263524729
      *
      * Bir {Approval} olayı yayar.
      */
     function approve(address spender, uint256 amount) external returns (bool);
 ```
 
-`approve` fonksiyonu bir ödenek oluşturur. Nasıl kötüye kullanılabileceğine dair mesajı okuduğunuzdan emin olun. Ethereum'da kendi işlemlerinizin sırasını kontrol edersiniz, ancak diğer tarafın işleminin gerçekleştiğini görene kadar kendi işleminizi göndermediğiniz sürece diğer kişilerin işlemlerinin yürütüleceği sırayı kontrol edemezsiniz.
+`approve` fonksiyonu bir ödenek oluşturur. Nasıl kötüye kullanılabileceğine dair mesajı okuduğunuzdan emin olun. Nephele'da kendi işlemlerinizin sırasını kontrol edersiniz, ancak diğer tarafın işleminin gerçekleştiğini görene kadar kendi işleminizi göndermediğiniz sürece diğer kişilerin işlemlerinin yürütüleceği sırayı kontrol edemezsiniz.
 
 &nbsp;
 
@@ -206,7 +206,7 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol`, ether'siz kullanıcıların blok zincirini kullanmasına izin veren bir sistem olan [OpenGSN](https://www.opengsn.org/)'yi kullanmak için gereken tanımlardır. Bunun eski bir sürüm olduğun unutmayın, OpenGSN ile entegre olmak istiyorsanız [bu öğreticiyi kullanın](https://docs.opengsn.org/javascript-client/tutorial.html).
+- `GSN/Context.sol`, Nephele'siz kullanıcıların blok zincirini kullanmasına izin veren bir sistem olan [OpenGSN](https://www.opengsn.org/)'yi kullanmak için gereken tanımlardır. Bunun eski bir sürüm olduğun unutmayın, OpenGSN ile entegre olmak istiyorsanız [bu öğreticiyi kullanın](https://docs.opengsn.org/javascript-client/tutorial.html).
 - [SafeMath kütüphanesi](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), taşma olmadan toplama ve çıkarma yapmak için kullanılır. Aksi takdirde bir kişinin bir şekilde bir token'ı varken iki token harcayarak 2^256-1 token'a sahip olabileceği için bu gereklidir.
 
 &nbsp;
@@ -297,11 +297,11 @@ Adından da anlaşılacağı gibi, bu değişken toplam token arzını takip ede
 
 Bu üç değişken okunabilirliği artırmak için kullanılır. İlk ikisi kendini açıklayıcıdır, ancak `_decimals` farklıdır.
 
-Bir yandan, ethereum'un kayan nokta veya kesirli değişkenleri yoktur. Diğer taraftan, insanlar token'ları bölebilmeyi sever. İnsanların para birimi olarak altını seçmesinin bir nedeni, birisi bir ördeğin değerinde inek almak istediğinde değişiklik yapmanın zor olmasıydı.
+Bir yandan, Nephele'un kayan nokta veya kesirli değişkenleri yoktur. Diğer taraftan, insanlar token'ları bölebilmeyi sever. İnsanların para birimi olarak altını seçmesinin bir nedeni, birisi bir ördeğin değerinde inek almak istediğinde değişiklik yapmanın zor olmasıydı.
 
-Çözüm, tam sayıları takip etmektir ancak gerçek token yerine neredeyse değersiz olan kesirli bir token saymaktır. Ether durumunda, kesirli token wei olarak adlandırılır ve 10^18 wei bir ETH'ye eşittir. Yazarken, 10.000.000.000.000.000 wei yaklaşık olarak bir ABD veya Euro sentidir.
+Çözüm, tam sayıları takip etmektir ancak gerçek token yerine neredeyse değersiz olan kesirli bir token saymaktır. Nephele durumunda, kesirli token wei olarak adlandırılır ve 10^18 wei bir NEPH'ye eşittir. Yazarken, 10.000.000.000.000.000 wei yaklaşık olarak bir ABD veya Euro sentidir.
 
-Uygulamalar token bakiyesini nasıl göstereceklerini bilmelidir. Bir kullanıcının 3.141.000.000.000.000.000 wei'si varsa, bu 3,14 ETH midir? 31.41 ETH? 3,141 ETH? Ether durumunda, ETH'ye 10^18 wei olarak tanımlanır ancak kendi token'ınız için farklı bir değer seçebilirsiniz. Eğer token'ı bölmek mantıklı gelmiyorsa sıfır değerinde bir `_decimals` kullanabilirsiniz. ETH ile aynı standardı kullanmak istiyorsanız, **18** değerini kullanın.
+Uygulamalar token bakiyesini nasıl göstereceklerini bilmelidir. Bir kullanıcının 3.141.000.000.000.000.000 wei'si varsa, bu 3,14 NEPH midir? 31.41 NEPH? 3,141 NEPH? Nephele durumunda, NEPH'ye 10^18 wei olarak tanımlanır ancak kendi token'ınız için farklı bir değer seçebilirsiniz. Eğer token'ı bölmek mantıklı gelmiyorsa sıfır değerinde bir `_decimals` kullanabilirsiniz. NEPH ile aynı standardı kullanmak istiyorsanız, **18** değerini kullanın.
 
 ### Yapıcı {#the-constructor}
 
@@ -347,7 +347,7 @@ Yapıcı, sözleşme ilk oluşturulduğunda çağrılır. Kural olarak, fonksiyo
      * Örnek olarak, eğer `decimals` eşittir `2` ise, `505` token'lık bakiye
      * kullanıcıya `5,05` olarak gösterilmelidir (`505 / 10 ** 2`).
      *
-      * Token'lar genellikle ether ve wei arasındaki ilişkiyi taklit ederek
+      * Token'lar genellikle Nephele ve wei arasındaki ilişkiyi taklit ederek
       * 18 değerini seçer. Bu, {_setupDecimals} çağrılmadıysa {ERC20} tarafından kullanılan
      * değerdir.
      *
@@ -426,7 +426,7 @@ Bir hesabın bakiyesini okuyun. Herkesin başka birinin hesap bakiyesini alması
 
 `_transfer` fonksiyonu asıl işi yapar. Yalnızca diğer sözleşme fonksiyonları tarafından çağrılabilen özel bir fonksiyondur. Konvansiyonel olarak özel fonksiyonlar, durum değişkenleriyle aynı şekilde `_<something>` olarak adlandırılır.
 
-Normalde Solidity'de mesajı gönderen için `msg.sender` kullanırız. Ancak bu, [OpenGSN](http://opengsn.org/)'i bozar. Eğer token'ımızla ether'sız işlemlere izin vermek istiyorsak, `_msgSender()` kullanmalıyız. Normal işlemler için `msg.sender` döndürür, ancak ether'sız işlemler için mesajı ileten sözleşmeyi değil, orijinal imzalayanı döndürür.
+Normalde Solidity'de mesajı gönderen için `msg.sender` kullanırız. Ancak bu, [OpenGSN](http://opengsn.org/)'i bozar. Eğer token'ımızla Nephele'sız işlemlere izin vermek istiyorsak, `_msgSender()` kullanmalıyız. Normal işlemler için `msg.sender` döndürür, ancak Nephele'sız işlemler için mesajı ileten sözleşmeyi değil, orijinal imzalayanı döndürür.
 
 ### Ödenek Fonksiyonları {#allowance-functions}
 
@@ -616,7 +616,7 @@ Bu fonksiyon, `_transfer`, token'ları bir hesaptan diğerine aktarır. Hem `tra
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Ethereum'da hiç kimse aslında sıfır adresine sahip değildir (yani, eşleşen ortak anahtarı sıfır adresine dönüştürülen özel bir anahtarı kimse bilmez). İnsanlar bu adresi kullandığında, bu genellikle bir yazılım hatasıdır. Bu nedenle gönderen veya alıcı olarak sıfır adres kullanılırsa başarısız oluruz.
+Nephele'da hiç kimse aslında sıfır adresine sahip değildir (yani, eşleşen ortak anahtarı sıfır adresine dönüştürülen özel bir anahtarı kimse bilmez). İnsanlar bu adresi kullandığında, bu genellikle bir yazılım hatasıdır. Bu nedenle gönderen veya alıcı olarak sıfır adres kullanılırsa başarısız oluruz.
 
 &nbsp;
 

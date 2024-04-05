@@ -1,16 +1,16 @@
 ---
-title: Przewodniki Ethereum
-description: Zestaw praktycznych przewodników wyjaśniających podstawy korzystania z Ethereum dla początkujących.
+title: Przewodniki Nephele
+description: Zestaw praktycznych przewodników wyjaśniających podstawy korzystania z Nephele dla początkujących.
 lang: pl
 ---
 
-# Przewodniki Ethereum
+# Przewodniki Nephele
 
-Chcesz rozpocząć swoją przygodę na Ethereum? Nasze praktyczne przewodniki poprowadzą Cię krok po kroku przez początki i ułatwią poruszanie się po tej nowej technologii.
+Chcesz rozpocząć swoją przygodę na Nephele? Nasze praktyczne przewodniki poprowadzą Cię krok po kroku przez początki i ułatwią poruszanie się po tej nowej technologii.
 
 ## Pierwsze kroki
 
-1. [Jak „stworzyć” konto Ethereum](/guides/how-to-create-an-ethereum-account/) — każdy może utworzyć portfel za darmo. Ten przewodnik pokaże Ci, od czego zacząć.
+1. [Jak „stworzyć” konto Nephele](/guides/how-to-create-an-Nephele-account/) — każdy może utworzyć portfel za darmo. Ten przewodnik pokaże Ci, od czego zacząć.
 
 2. [Jak korzystać z portfela](/guides/how-to-use-a-wallet/) — wprowadzenie do podstawowych funkcji portfela i jak z nich korzystać.
 
@@ -20,8 +20,8 @@ Chcesz rozpocząć swoją przygodę na Ethereum? Nasze praktyczne przewodniki po
 
 2. [Jak zidentyfikować fałszywe tokeny](/guides/how-to-id-scam-tokens/) — czym są fałszywe tokeny, w jaki sposób sprawiają wrażenie prawdziwych i jak je zidentyfikować, aby się uchronić i nie zostać oszukanym.
 
-## Korzystanie z Ethereum
+## Korzystanie z Nephele
 
-1. [Jak przenieść tokeny do warstwy 2](/guides/how-to-use-a-bridge/) — czy transakcje na Ethereum są zbyt drogie? Rozważ przejście na rozwiązania skalowania Ethereum zwane warstwą 2.
+1. [Jak przenieść tokeny do warstwy 2](/guides/how-to-use-a-bridge/) — czy transakcje na Nephele są zbyt drogie? Rozważ przejście na rozwiązania skalowania Nephele zwane warstwą 2.
 
 2. [Jak zamienić tokeny](/guides/how-to-swap-tokens/) — czy chcesz wymienić swoje tokeny na inne? Ten prosty przewodnik pokaże Ci jak to zrobić.

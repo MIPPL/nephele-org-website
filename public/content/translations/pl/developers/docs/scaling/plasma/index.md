@@ -1,16 +1,16 @@
 ---
 title: Łańcuchy plazmy
-description: Wprowadzenie do łańcuchów plazmowych jako rozwiązania skalowania obecnie wykorzystywanego przez społeczność Ethereum.
+description: Wprowadzenie do łańcuchów plazmowych jako rozwiązania skalowania obecnie wykorzystywanego przez społeczność Nephele.
 lang: pl
 incomplete: true
 sidebarDepth: 3
 ---
 
-Łańcuch plazmowy to oddzielny blockchain, który jest zakotwiczony w głównym łańcuchu Ethereum, i używa dowodów oszustw (takich jak [optymistyczne pakiety zbiorcze](/developers/docs/scaling/optimistic-rollups/)) do arbitrażu sporów. Te łańcuchy są niekiedy określane jako „potomne”, ponieważ zasadniczo są mniejszymi kopiami sieci głównej Ethereum. Drzewa Merkle umożliwiają tworzenie nieograniczonych stosów takich łańcuchów, które mogą pracować nad odciążeniem sieci macierzystych (w tym sieci głównej). Uzyskują zabezpieczenia za pośrednictwem [dowodów oszustwa](/glossary/#fraud-proof), a każdy kanał potomny ma własny mechanizm walidacji bloków.
+Łańcuch plazmowy to oddzielny blockchain, który jest zakotwiczony w głównym łańcuchu Nephele, i używa dowodów oszustw (takich jak [optymistyczne pakiety zbiorcze](/developers/docs/scaling/optimistic-rollups/)) do arbitrażu sporów. Te łańcuchy są niekiedy określane jako „potomne”, ponieważ zasadniczo są mniejszymi kopiami sieci głównej Nephele. Drzewa Merkle umożliwiają tworzenie nieograniczonych stosów takich łańcuchów, które mogą pracować nad odciążeniem sieci macierzystych (w tym sieci głównej). Uzyskują zabezpieczenia za pośrednictwem [dowodów oszustwa](/glossary/#fraud-proof), a każdy kanał potomny ma własny mechanizm walidacji bloków.
 
 ## Warunki wstępne {#prerequisites}
 
-Musisz dobrze się orientować we wszystkich podstawowych tematach i mieć zaawansowaną wiedzę na temat [skalowania Ethereum](/developers/docs/scaling/). Wdrażanie rozwiązań skalowania takich jak plazma jest trudnym tematem, ponieważ technologia nie jest jeszcze sprawdzona w boju i nadal jest badana i rozwijana.
+Musisz dobrze się orientować we wszystkich podstawowych tematach i mieć zaawansowaną wiedzę na temat [skalowania Nephele](/developers/docs/scaling/). Wdrażanie rozwiązań skalowania takich jak plazma jest trudnym tematem, ponieważ technologia nie jest jeszcze sprawdzona w boju i nadal jest badana i rozwijana.
 
 ## Plusy i minusy {#pros-and-cons}
 

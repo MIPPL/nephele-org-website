@@ -41,11 +41,11 @@ Danksharding 是以太坊擴容至每秒處理 >100,000 筆交易並最大限度
 
 ## 目前進度 {#current-progress}
 
-提交者-建置者分離正處於研究的進階階段，但在以太坊用戶端中進行原型設計之前，仍有一些重要的設計問題需要解決。 目前還沒有定案的規範。 這意味著提交者-建置者分離可能還要一年或更長時間才能推出。 歡迎檢視最新的[研究現狀](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)。
+提交者-建置者分離正處於研究的進階階段，但在以太坊用戶端中進行原型設計之前，仍有一些重要的設計問題需要解決。 目前還沒有定案的規範。 這意味著提交者-建置者分離可能還要一年或更長時間才能推出。 歡迎檢視最新的[研究現狀](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)。
 
 ## 延伸閱讀 {#further-reading}
 
-- [研究現狀：提交者-建置者分離之下的抗審查性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [研究現狀：提交者-建置者分離之下的抗審查性](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [適合提交者-建置者分離的收費市場設計](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [提交者-建置者分離及抗審查性](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [包含清單](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [提交者-建置者分離及抗審查性](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [包含清單](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

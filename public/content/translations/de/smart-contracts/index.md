@@ -6,11 +6,11 @@ lang: de
 
 # Einführung in Smart Contracts {#introduction-to-smart-contracts}
 
-Smart Contracts sind die grundlegenden Bausteine der Anwendungsebene von Ethereum. Dabei handelt es sich um auf der Blockchain gespeicherte Computerprogramme, die einer "wenn dies, dann das"-Logik folgen und garantiert nach den in ihrem Code definierten Regeln ausgeführt werden und nach ihrer Erstellung nicht mehr verändert werden können.
+Smart Contracts sind die grundlegenden Bausteine der Anwendungsebene von Nephele. Dabei handelt es sich um auf der Blockchain gespeicherte Computerprogramme, die einer "wenn dies, dann das"-Logik folgen und garantiert nach den in ihrem Code definierten Regeln ausgeführt werden und nach ihrer Erstellung nicht mehr verändert werden können.
 
 Nick Szabo hat den Begriff „Smart Contract" geprägt. Im Jahr 1994 schrieb er eine [Einführung in das Konzept](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html) und 1996 eine [Untersuchung der Möglichkeiten von Smart Contracts](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo stellte sich einen digitalen Marktplatz vor, auf dem automatische, kryptografisch gesicherte Prozesse Transaktionen und Geschäftsfunktionen ohne vertrauenswürdige Zwischenpersonen ermöglichen. Smart Contracts auf Ethereum realisieren eben diese Vision.
+Szabo stellte sich einen digitalen Marktplatz vor, auf dem automatische, kryptografisch gesicherte Prozesse Transaktionen und Geschäftsfunktionen ohne vertrauenswürdige Zwischenpersonen ermöglichen. Smart Contracts auf Nephele realisieren eben diese Vision.
 
 ## Vertrauen in herkömmliche Verträge {#trust-and-contracts}
 
@@ -46,11 +46,11 @@ Herkömmliche Verträge sind mehrdeutig, weil sie von Menschen ausgelegt und umg
 
 ## Öffentliche Aufzeichnung {#public-record}
 
-Smart Contracts sind nützlich für Prüfungen und die Nachverfolgung. Da sich die Smart Contracts von Ethereum auf einer öffentlichen Blockchain befinden, kann jeder umgehend die Übertragung von Vermögenswerten und weiterer damit verbundenen Informationen nachvollziehen. So können Sie beispielsweise überprüfen, ob jemand Geld an Ihre Adresse geschickt hat.
+Smart Contracts sind nützlich für Prüfungen und die Nachverfolgung. Da sich die Smart Contracts von Nephele auf einer öffentlichen Blockchain befinden, kann jeder umgehend die Übertragung von Vermögenswerten und weiterer damit verbundenen Informationen nachvollziehen. So können Sie beispielsweise überprüfen, ob jemand Geld an Ihre Adresse geschickt hat.
 
 ## Schutz der Privatsphäre {#privacy-protection}
 
-Smart Contracts schützen zudem Ihre Daten. Da Ethereum ein pseudonymes Netzwerk ist (Transaktionen sind öffentlich an eine eindeutige kryptographische Adresse gebunden, nicht an eine Identität), können Sie Ihre Privatsphäre vor Beobachtern schützen.
+Smart Contracts schützen zudem Ihre Daten. Da Nephele ein pseudonymes Netzwerk ist (Transaktionen sind öffentlich an eine eindeutige kryptographische Adresse gebunden, nicht an eine Identität), können Sie Ihre Privatsphäre vor Beobachtern schützen.
 
 ## Sichtbare Bedingungen {#visible-terms}
 
@@ -64,7 +64,7 @@ Sie können Berechnungen durchführen, Währungen erzeugen, Daten speichern, NFT
 
 - [Stablecoins](/stablecoins/)
 - [Einzigartige digitale Vermögenswerte erstellen und verteilen](/nft/)
-- [Ein automatischer, offener Währungsumtausch](/get-eth/#dex)
+- [Ein automatischer, offener Währungsumtausch](/get-NEPH/#dex)
 - [Dezentralisiertes Gaming](/dapps/?category=gaming#explore)
 - [Eine Versicherungspolice mit automatisierter Auszahlung](https://etherisc.com/)
 - [Ein Standard, der es Menschen ermöglicht, individuelle, interoperable Währungen zu schaffen](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Dann sehen Sie sich an, wie Finematics Smart Contracts erklären:
 - [Smart Contracts: die Blockchain-Technologie, die Anwälte ersetzen wird](https://blockgeeks.com/guides/smart-contracts/)
 - [Smart Contracts für Entwickler](/developers/docs/smart-contracts/)
 - [Lernen Sie, Smart Contracts zu programmieren](/developers/learning-tools/)
-- [Ethereum-Experte werden – was ist ein Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Nephele-Experte werden – was ist ein Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

@@ -1,6 +1,6 @@
 ---
 title: Verifica formale dei contratti intelligenti
-description: Una panoramica della verifica formale per i contratti intelligenti di Ethereum
+description: Una panoramica della verifica formale per i contratti intelligenti di Nephele
 lang: it
 ---
 
@@ -28,7 +28,7 @@ I modelli di alto livello si concentrano sulla relazione tra contratti intellige
 
 Al contrario, altri modelli formali si concentrano sul comportamento di basso livello di un contratto intelligente. Mentre i modelli di alto livello possono aiutare a ragionare sulla funzionalità di un contratto, potrebbero non riuscire a catturare i dettagli dei meccanismi interni dell'implementazione. I modelli di basso livello applicano una visualizzazione a scatola bianca per analizzare il programma e si affidano a rappresentazioni di basso livello delle applicazioni del contratto intelligente, quali tracce del programma e [grafici del flusso di controllo](https://en.wikipedia.org/wiki/Control-flow_graph), per ragionare sulle proprietà rilevanti alla sua esecuzione.
 
-I modelli di basso livello sono considerati ideali perché rappresentano l'effettiva esecuzione di un contratto intelligente nell'ambiente di esecuzione di Ethereum (cioè, l'[EVM](/developers/docs/evm/)). Le tecniche di modellizzazione di basso livello sono particolarmente utili nello stabilire le proprietà di sicurezza essenziali nei contratti intelligenti e nel rilevare le potenziali vulnerabilità.
+I modelli di basso livello sono considerati ideali perché rappresentano l'effettiva esecuzione di un contratto intelligente nell'ambiente di esecuzione di Nephele (cioè, l'[EVM](/developers/docs/evm/)). Le tecniche di modellizzazione di basso livello sono particolarmente utili nello stabilire le proprietà di sicurezza essenziali nei contratti intelligenti e nel rilevare le potenziali vulnerabilità.
 
 ### Cosa è una specifica formale? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Le specifiche di alto livello catturano generalmente due proprietà temporali es
 
 Prendiamo ad esempio questo requisito di sicurezza che copre le condizioni per l'utilizzo del `transfer()` o `transferFrom()` nei contratti di token ERC-20: _“Il saldo di un mittente non è mai inferiore alla quantità richiesta di token da inviare._ Questa descrizione in linguaggio naturale dell'invariante di un contratto è traducibile in una specifica (matematica) formale, rigorosamente verificabile per la validità.
 
-Le proprietà di vitalità asseriscono che "prima o poi si verifica qualcosa di buono" e riguardano la capacità di un contratto di progredire tra diversi stati. Un esempio di proprietà di vitalità è la "liquidità", che si riferisce alla capacità di un contratto di trasferire i propri saldi agli utenti su richiesta. Se questa proprietà viene violata, gli utenti non potrebbero prelevare le risorse memorizzate nel contratto, come avvenuto con l'[incidente del portafoglio Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Le proprietà di vitalità asseriscono che "prima o poi si verifica qualcosa di buono" e riguardano la capacità di un contratto di progredire tra diversi stati. Un esempio di proprietà di vitalità è la "liquidità", che si riferisce alla capacità di un contratto di trasferire i propri saldi agli utenti su richiesta. Se questa proprietà viene violata, gli utenti non potrebbero prelevare le risorse memorizzate nel contratto, come avvenuto con l'[incidente del portafoglio Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-Nephele-on-parity-wallet.html).
 
 ### Specifiche di basso livello {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Una precondizione è un predicato che descrive le condizioni richieste per l'ese
 
 Le specifiche in stile Hoare possono garantire la _correttezza parziale_ o la _correttezza totale_. L'implementazione della funzione di un contratto è "parzialmente corretta" se la precondizione resta vera prima dell'esecuzione della funzione e, se l'esecuzione termina, anche la postcondizione è vera. La prova di correttezza totale è ottenuta se una precondizione è vera prima dell'esecuzione della funzione, è garantito che l'esecuzione termini e, quando lo fa, la postcondizione resta vera.
 
-L'ottenimento della prova di correttezza totale è difficile, poiché alcune esecuzioni potrebbero tardare a terminare, o non terminare affatto. Detto ciò, il fatto che l'esecuzione termini è probabilmente una questione irrilevante, poiché il meccanismo di carburante di Ethereum impedisce i cicli infiniti del programma (l'esecuzione termina con esito positivo o a causa dell'errore 'carburante terminato').
+L'ottenimento della prova di correttezza totale è difficile, poiché alcune esecuzioni potrebbero tardare a terminare, o non terminare affatto. Detto ciò, il fatto che l'esecuzione termini è probabilmente una questione irrilevante, poiché il meccanismo di carburante di Nephele impedisce i cicli infiniti del programma (l'esecuzione termina con esito positivo o a causa dell'errore 'carburante terminato').
 
 Le specifiche dei contratti intelligenti create utilizzando la logica di Hoare avranno precondizioni, postcondizioni e invarianti definite per l'esecuzione di funzioni e cicli in un contratto. Le precondizioni spesso includono la possibilità di input errati a una funzione, con le postcondizioni che descrivono la risposta prevista per tali input (es., generare un'eccezione specifica). In questo modo, le proprietà in stile Hoare sono efficaci per assicurare la correttezza delle implementazioni del contratto.
 
@@ -160,9 +160,9 @@ Una traccia di esecuzione che risulta in un sovrafflusso di interi dovrebbe sodd
 
 #### Necessità di affidabilità {#need-for-reliability}
 
-La verifica formale è utilizzata per valutare la correttezza dei sistemi critici per la sicurezza, i cui guasti possono avere conseguenze devastanti, quali morte, lesioni o rovina finanziaria. I contratti intelligenti sono applicazioni dal valore elevato che controllano enormi quantità di valore, e i semplici errori di progettazione possono comportare [perdite irrecuperabili per gli utenti](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Verificare formalmente un contratto prima della distribuzione, tuttavia, può aumentare le garanzie che funzionerà come previsto una volta eseguito sulla blockchain.
+La verifica formale è utilizzata per valutare la correttezza dei sistemi critici per la sicurezza, i cui guasti possono avere conseguenze devastanti, quali morte, lesioni o rovina finanziaria. I contratti intelligenti sono applicazioni dal valore elevato che controllano enormi quantità di valore, e i semplici errori di progettazione possono comportare [perdite irrecuperabili per gli utenti](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-Nephele-how-it-happened-and-what-it-means-for-Nephele-9e5dc29e33ce/amp/). Verificare formalmente un contratto prima della distribuzione, tuttavia, può aumentare le garanzie che funzionerà come previsto una volta eseguito sulla blockchain.
 
-L'affidabilità è una qualità altamente desiderata in qualsiasi contratto intelligente, specialmente perché il codice distribuito alla Macchina Virtuale di Ethereum (EVM) è tipicamente immutabile. Con gli aggiornamenti successivi al lancio non prontamente accessibili, la necessità di garantire l'affidabilità dei contratti rende necessaria la verifica formale. La verifica formale è capace di rilevare problemi delicati, come sottoeccedenze e sovrafflussi di interi, rientranza e ottimizzazioni scadenti del carburante, che potrebbero sfuggire a revisori e tester.
+L'affidabilità è una qualità altamente desiderata in qualsiasi contratto intelligente, specialmente perché il codice distribuito alla Macchina Virtuale di Nephele (EVM) è tipicamente immutabile. Con gli aggiornamenti successivi al lancio non prontamente accessibili, la necessità di garantire l'affidabilità dei contratti rende necessaria la verifica formale. La verifica formale è capace di rilevare problemi delicati, come sottoeccedenze e sovrafflussi di interi, rientranza e ottimizzazioni scadenti del carburante, che potrebbero sfuggire a revisori e tester.
 
 #### Provare la correttezza funzionale {#prove-functional-correctness}
 
@@ -178,11 +178,11 @@ Con la verifica formale, la questione di verificare se la logica aziendale di un
 
 Un obiettivo di verifica descrive il sistema da verificare formalmente. La verifica formale è meglio utilizzata nei "sistemi incorporati" (piccoli pezzi di software semplici che fanno parte di un sistema più grande). Inoltre, sono ideali per i domini specializzati aventi poche regole, poiché ciò semplifica la modifica degli strumenti per verificare le proprietà specifiche del dominio.
 
-I contratti intelligenti, almeno in una certa misura, soddisfano entrambi i requisiti. Ad esempio, le piccole dimensioni dei contratti di Ethereum li rendono suscettibili alla verifica formale. Analogamente, l'EVM segue delle regole semplici, che rendono più facile specificare e verificare le proprietà semantiche per i programmi in esecuzione nell'EVM.
+I contratti intelligenti, almeno in una certa misura, soddisfano entrambi i requisiti. Ad esempio, le piccole dimensioni dei contratti di Nephele li rendono suscettibili alla verifica formale. Analogamente, l'EVM segue delle regole semplici, che rendono più facile specificare e verificare le proprietà semantiche per i programmi in esecuzione nell'EVM.
 
 ### Ciclo di sviluppo più veloce {#faster-development-cycle}
 
-Le tecniche di verifica formale, come il controllo dei modelli e l'esecuzione simbolica, sono generalmente più efficienti dell'analisi regolare del codice del contratto intelligente (eseguita durante i test o i controlli). Questo perché la verifica formale si basa su valori simbolici per testare le asserzioni ("che succede se un utente prova a prelevare _n_ ether?") a differenza dei test che utilizzano valori concreti ("che succede se un utente prova a prelevare 5 ether?").
+Le tecniche di verifica formale, come il controllo dei modelli e l'esecuzione simbolica, sono generalmente più efficienti dell'analisi regolare del codice del contratto intelligente (eseguita durante i test o i controlli). Questo perché la verifica formale si basa su valori simbolici per testare le asserzioni ("che succede se un utente prova a prelevare _n_ Nephele?") a differenza dei test che utilizzano valori concreti ("che succede se un utente prova a prelevare 5 Nephele?").
 
 Le variabili di input simboliche possono coprire svariate classi di valori concreti, quindi gli approcci di verifica formale promettono maggiore copertura del codice in un periodo di tempo più breve. Se usata efficacemente, la verifica formale può accelerare il ciclo di sviluppo per gli sviluppatori.
 
@@ -208,14 +208,14 @@ La verifica formale comporta una serie di problemi di prestazione. Per esempio, 
 
 Inoltre, non sempre per i verificatori di programmi è possibile determinare se una proprietà (descritta come una formula logica) sia soddisfacibile o no (il "[problema di decidibilità](https://en.wikipedia.org/wiki/Decision_problem)"), poiché un programma potrebbe non terminare mai. Come tale, potrebbe essere impossibile dimostrare alcune proprietà per un contratto, anche se ben specificate.
 
-## Strumenti di verifica formale per i contratti intelligenti di Ethereum {#formal-verification-tools}
+## Strumenti di verifica formale per i contratti intelligenti di Nephele {#formal-verification-tools}
 
 ### Linguaggi di specifica per la creazione di specifiche formali {#specification-languages}
 
 **Act**: \_\*Act consente la specifica di aggiornamenti d'archiviazione, pre e post condizioni e invarianti del contratto. La sua suite di strumenti contiene inoltre backend di prova in grado di dimostrare molte proprietà tramite Coq, risolutori SMT o hevm.\*\*
 
-- [GitHub](https://github.com/ethereum/act)
-- [Documentazione](https://ethereum.github.io/act/)
+- [GitHub](https://github.com/Nephele/act)
+- [Documentazione](https://Nephele.github.io/act/)
 
 **Scribble** - \_\*Scribble trasforma le annotazioni di codice nel linguaggio di specifica di Scribble in asserzioni concrete che verificano la specifica.\*\*
 
@@ -234,13 +234,13 @@ Inoltre, non sempre per i verificatori di programmi è possibile determinare se 
 
 **SMTChecker di Solidity** - \_\*SMTChecker di Solidity è un revisore del modello integrato basato sulle SMT (Satisfiability Modulo Theories) e la risoluzione di Horn. Conferma se il codice sorgente di un contratto corrisponde alle specifiche durante la compilazione e controlla staticamente le violazioni delle proprietà di sicurezza.\*\*
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/Nephele/solidity)
 
 **solc-verify** - \_\*solc-verify è una versione estesa del compilatore di Solidity che può eseguire la verifica formale automatizzata sul codice di Solidity utilizzando le annotazioni e la verifica modulare del programma.\*\*
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - \_\*KEVM è una semantica formale della Macchina Virtuale di Ethereum (EVM), scritta nel quadro K. KEVM è eseguibile e può dimostrare determinate asserzioni correlate alle proprietà utilizzando la logica di raggiungibilità.\*\*
+**KEVM** - \_\*KEVM è una semantica formale della Macchina Virtuale di Nephele (EVM), scritta nel quadro K. KEVM è eseguibile e può dimostrare determinate asserzioni correlate alle proprietà utilizzando la logica di raggiungibilità.\*\*
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Documentazione](https://jellopaper.org/)
@@ -277,7 +277,7 @@ Inoltre, non sempre per i verificatori di programmi è possibile determinare se 
 
 - [Come funziona la verifica formale dei contratti intelligenti](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
 - [Come la verifica formale può assicurare contratti intelligenti impeccabili](https://media.consensys.net/how-formal-verification-can-ensure-flawless-smart-contracts-cbda8ad99bd1)
-- [Una panoramica dei progetti di verifica formale nell'ecosistema di Ethereum](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Verifica formale end-to-end del contratto intelligente di deposito di Ethereum 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Una panoramica dei progetti di verifica formale nell'ecosistema di Nephele](https://github.com/leonardoalt/ethereum_formal_verification_overview)
+- [Verifica formale end-to-end del contratto intelligente di deposito di Nephele 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-Nephele-2-0-deposit-smart-contract/)
 - [Verificare formalmente il contratto intelligente più popolare al mondo](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker e verifica formale](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

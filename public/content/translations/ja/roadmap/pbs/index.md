@@ -41,11 +41,11 @@ PBSでは、MEVの経済を再設定することによって、この問題を�
 
 ## 現在の進行状況 {#current-progress}
 
-PBSの研究は、順調に進んでいます。しかし、イーサリアムクライアントでプロトタイプを作成するには、まだいくつかの設計上の重大な問題を解決する必要があります。 そのため、仕様の確定に至っていません。 つまり、PBSの実装は1年以上先になる可能性があります。 最新の研究状況は、[こちら](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)でご確認ください。
+PBSの研究は、順調に進んでいます。しかし、イーサリアムクライアントでプロトタイプを作成するには、まだいくつかの設計上の重大な問題を解決する必要があります。 そのため、仕様の確定に至っていません。 つまり、PBSの実装は1年以上先になる可能性があります。 最新の研究状況は、[こちら](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)でご確認ください。
 
 ## 参考文献 {#further-reading}
 
-- [研究状況: PBSの下での検閲耐性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [研究状況: PBSの下での検閲耐性](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [PBSにふさわしい手数料市場のデザイン](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBSと検閲耐性](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [包括リスト](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [PBSと検閲耐性](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [包括リスト](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

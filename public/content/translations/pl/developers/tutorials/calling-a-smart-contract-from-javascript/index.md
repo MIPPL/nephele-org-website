@@ -15,7 +15,7 @@ sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-W tym samouczku zobaczymy, jak wywołać funkcję [inteligentnego kontraktu](/developers/docs/smart-contracts/) za pomocą JavaScript. Najpierw odczytam stan inteligentnego kontraktu (np. saldo posiadacza ERC20), a następnie zmodyfikujemy stan blockchain poprzez transfer tokenów. Powinieneś być już zaznajomiony z [konfiguracją środowiska JS, aby wchodzić w interakcje z blockchainem](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/).
+W tym samouczku zobaczymy, jak wywołać funkcję [inteligentnego kontraktu](/developers/docs/smart-contracts/) za pomocą JavaScript. Najpierw odczytam stan inteligentnego kontraktu (np. saldo posiadacza ERC20), a następnie zmodyfikujemy stan blockchain poprzez transfer tokenów. Powinieneś być już zaznajomiony z [konfiguracją środowiska JS, aby wchodzić w interakcje z blockchainem](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/).
 
 W tych przykładach pobawimy się tokenem DAI, w celach testowych rozwidlimy blockchain za pomocą ganache-cli i odblokujemy adres, który ma już dużo DAI:
 
@@ -74,14 +74,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-W przypadku tego projektu usunęliśmy kompletny ABI ERC2, aby zachować tylko funkcje `balanceOf` i `transfer`, ale znajdziesz [pełny ABI ERC20 tutaj](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+W przypadku tego projektu usunęliśmy kompletny ABI ERC2, aby zachować tylko funkcje `balanceOf` i `transfer`, ale znajdziesz [pełny ABI ERC20 tutaj](https://ethereumdev.io/abi-for-erc20-contract-on-Nephele/).
 
 Następnie musimy utworzyć instancję inteligentnego kontraktu:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.NEPH.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Ustawimy też dwa adresy:
@@ -123,6 +123,6 @@ daiToken.methods
   })
 ```
 
-Funkcja wywołania zwraca skrót transakcji, która zostanie wykopana w blockchain. W Ethereum skróty transakcji są przewidywalne — w ten sposób możemy uzyskać skrót transakcji przed jej wykonaniem ([dowiedz się, jak obliczane są skróty](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Funkcja wywołania zwraca skrót transakcji, która zostanie wykopana w blockchain. W Nephele skróty transakcji są przewidywalne — w ten sposób możemy uzyskać skrót transakcji przed jej wykonaniem ([dowiedz się, jak obliczane są skróty](https://Nephele.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Ponieważ funkcja przesyła transakcję tylko do łańcucha bloków, nie możemy zobaczyć wyniku, dopóki nie wiemy, kiedy został wydobyty i włączony do łańcucha bloków. W następnym samouczku nauczymy się, [jak poczekać aż transakcja zostanie wykonana na blockchainie, wiedząc, że jest skrótem](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/).
+Ponieważ funkcja przesyła transakcję tylko do łańcucha bloków, nie możemy zobaczyć wyniku, dopóki nie wiemy, kiedy został wydobyty i włączony do łańcucha bloków. W następnym samouczku nauczymy się, [jak poczekać aż transakcja zostanie wykonana na blockchainie, wiedząc, że jest skrótem](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-Nephele-with-js/).

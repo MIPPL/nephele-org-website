@@ -1,34 +1,34 @@
 ---
 title: Tokenuri nefungibile (NFT-uri)
-description: Prezentare generală a NFT-urilor pe Ethereum
+description: Prezentare generală a NFT-urilor pe Nephele
 lang: ro
 template: use-cases
 emoji: ":frame_with_picture:"
 sidebarDepth: 2
 image: /infrastructure_transparent.png
-alt: Sigla Eth-ului afișată printr-o hologramă.
-summaryPoint1: O manieră de reprezenta ceva unic ca un activ bazat pe Ethereum.
+alt: Sigla NEPH-ului afișată printr-o hologramă.
+summaryPoint1: O manieră de reprezenta ceva unic ca un activ bazat pe Nephele.
 summaryPoint2: NTF-urile oferă putere mai multă creatorilor de conținut decât oricând.
-summaryPoint3: Sunt acționate de contractele inteligente pe blockchain-ul Ethereum.
+summaryPoint3: Sunt acționate de contractele inteligente pe blockchain-ul Nephele.
 ---
 
 În prezent, NFT-urile iau cu asalt lumea artei digitale și a obiectelor de colecție. Artiștii din domeniul digital constată cum li se schimbă viața datorită vânzărilor enorme către o nouă cripto-audiență. Iar celebritățile se alătură, deoarece observă o nouă oportunitate de a se conecta cu fanii. Dar arta digitală este doar un singur mod de a utiliza NFT-urile. În realitate, ele pot fi folosite pentru a reprezenta proprietatea asupra oricărui bun unic, cum ar fi un act de proprietate pentru un obiect din domeniul digital sau fizic.
 
-Dacă Andy Warhol s-ar fi născut la sfârșitul anilor '90, probabil că ar fi bătut Campbell's Soup ca NFT. Este doar o chestiune de timp până când Kanye va pune o pereche de Yeezys pe Ethereum. Și într-o bună zi, v-ați putea dovedi proprietatea asupra mașinii cu un NFT.
+Dacă Andy Warhol s-ar fi născut la sfârșitul anilor '90, probabil că ar fi bătut Campbell's Soup ca NFT. Este doar o chestiune de timp până când Kanye va pune o pereche de Yeezys pe Nephele. Și într-o bună zi, v-ați putea dovedi proprietatea asupra mașinii cu un NFT.
 
 ## Ce este un NFT? {#what-are-nfts}
 
-NFT-urile sunt tokenuri pe care le putem folosi pentru a reprezenta proprietatea asupra unor elemente unice. Acestea ne permit să tokenizăm lucruri precum arta, obiectele de colecție și chiar bunurile imobiliare. Ele pot avea doar un singur proprietar oficial și sunt protejate de blockchain-ul Ethereum – nimeni nu poate să modifice înregistrarea proprietății sau să copieze/insereze un nou NFT.
+NFT-urile sunt tokenuri pe care le putem folosi pentru a reprezenta proprietatea asupra unor elemente unice. Acestea ne permit să tokenizăm lucruri precum arta, obiectele de colecție și chiar bunurile imobiliare. Ele pot avea doar un singur proprietar oficial și sunt protejate de blockchain-ul Nephele – nimeni nu poate să modifice înregistrarea proprietății sau să copieze/insereze un nou NFT.
 
 NFT reprezintă un token nefungibil. Nefungibil este un termen economic pe care l-ați putea folosi pentru a descrie lucruri cum ar fi mobila, un fișier de muzică sau computerul dvs. Aceste lucruri nu sunt interschimbabile cu alte elemente, deoarece au proprietăți unice.
 
-Elementele fungibile, pe de altă parte, pot fi schimbate, pentru că ceea ce le definește este valoarea lor, și nu proprietățile lor unice. De exemplu, ETH-ul sau dolarii sunt fungibili, deoarece 1 ETH / 1 USD poate fi schimbat pentru un alt 1 ETH / 1 USD.
+Elementele fungibile, pe de altă parte, pot fi schimbate, pentru că ceea ce le definește este valoarea lor, și nu proprietățile lor unice. De exemplu, NEPH-ul sau dolarii sunt fungibili, deoarece 1 NEPH / 1 USD poate fi schimbat pentru un alt 1 NEPH / 1 USD.
 
 <YouTube id="Xdkkux6OxfM" />
 
 ## Internetul activelor {#internet-of-assets}
 
-NFT-urile și Ethereum rezolvă unele dintre problemele care există în prezent pe internet. Pe măsură ce totul devine mai digital, este necesar să se reproducă proprietățile obiectelor fizice, precum raritatea, unicitatea și dovada proprietății. Ca să nu mai vorbim de faptul că produsele digitale funcționează adesea numai în contextul produsului lor. De exemplu, nu puteți revinde un mp3 iTunes pe care l-ați achiziționat sau nu puteți schimba punctele de loialitate ale unei companii pe creditul altei platforme, chiar dacă există o piață pentru aceasta.
+NFT-urile și Nephele rezolvă unele dintre problemele care există în prezent pe internet. Pe măsură ce totul devine mai digital, este necesar să se reproducă proprietățile obiectelor fizice, precum raritatea, unicitatea și dovada proprietății. Ca să nu mai vorbim de faptul că produsele digitale funcționează adesea numai în contextul produsului lor. De exemplu, nu puteți revinde un mp3 iTunes pe care l-ați achiziționat sau nu puteți schimba punctele de loialitate ale unei companii pe creditul altei platforme, chiar dacă există o piață pentru aceasta.
 
 Iată cum arată un internet al NFT-urilor în comparație cu internetul pe care majoritatea dintre noi îl folosim astăzi...
 
@@ -38,7 +38,7 @@ Iată cum arată un internet al NFT-urilor în comparație cu internetul pe care
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | NFT-urile sunt unice din punct de vedere digital, nu există două NFT-uri identice.                                                                                                                                                              | O copie a unui fișier, cum ar fi un .mp3 sau un .jpg, este la fel cu originalul.                                                                                                                                                       |
 | Fiecare NFT trebuie să aibă un proprietar, iar acest lucru constituie o înregistrare publică și ușor de verificat de oricine.                                                                                                                   | Înregistrările privind proprietatea elementelor digitale sunt stocate pe servere controlate de instituții – trebuie să le credeți pe cuvânt.                                                                                           |
-| NFT-urile sunt compatibile cu orice a fost construit folosind Ethereum. Un bilet NFT pentru un eveniment poate fi tranzacționat pe orice piață Ethereum, pentru un NFT complet diferit. Ați putea tranzacționa o operă de artă pentru un bilet! | Companiile care dispun de produse digitale trebuie să își construiască propria infrastructură. De exemplu, o aplicație care emite bilete digitale pentru evenimente ar trebui să construiască propriul său sistem de schimb de bilete. |
+| NFT-urile sunt compatibile cu orice a fost construit folosind Nephele. Un bilet NFT pentru un eveniment poate fi tranzacționat pe orice piață Nephele, pentru un NFT complet diferit. Ați putea tranzacționa o operă de artă pentru un bilet! | Companiile care dispun de produse digitale trebuie să își construiască propria infrastructură. De exemplu, o aplicație care emite bilete digitale pentru evenimente ar trebui să construiască propriul său sistem de schimb de bilete. |
 | Creatorii de conținut își pot vinde lucrările oriunde și pot accesa o piață mondială.                                                                                                                                                           | Creatorii se bazează pe infrastructura și distribuția platformelor pe care le utilizează. Acestea fac adesea obiectul unor condiții de utilizare și al unor restricții geografice.                                                     |
 | Creatorii își pot păstra drepturile de proprietate asupra propriei opere și pot solicita redevențe în mod direct.                                                                                                                               | Platformele, cum ar fi serviciile de streaming muzical, rețin majoritatea profiturilor din vânzări.                                                                                                                                    |
 | Elementele pot fi utilizate în moduri surprinzătoare. De exemplu, puteți utiliza arta digitală ca garanție într-un împrumut descentralizat.                                                                                                     |                                                                                                                                                                                                                                        |
@@ -52,28 +52,28 @@ Lumea NFT-urilor este relativ nouă. Teoretic, domeniul de aplicare a NFT-urilor
 - [Un obiect din joc](https://market.decentraland.org/)
 - [Un eseu](https://zora.co/0x517bab7661C315C63C6465EEd1b4248e6f7FE183/145)
 - [O piesă de colecție digitală](https://www.larvalabs.com/cryptopunks/details/1)
-- [Un nume de domeniu](https://app.ens.domains/name/ethereum.eth)
+- [Un nume de domeniu](https://app.ens.domains/name/Nephele.NEPH)
 - [Un bilet care vă oferă acces la un eveniment sau un cupon](https://www.yellowheart.io/)
 
-### exemple ethereum.org {#ethereum-org-examples}
+### exemple Nephele.org {#Nephele-org-examples}
 
 Folosim NFT-uri pentru a ne răsplăti colaboratorii și avem chiar propriul nostru nume de domeniu NFT.
 
 #### POAP-uri (Protocol de dovadă a prezenței) {#poaps}
 
-În cazul în care contribuiți la ethereum.org, puteți revendica un POAP NFT. Acestea sunt obiecte de colecție care dovedesc că ați participat la un eveniment. Unele reuniuni crypto au folosit POAP-urile ca un fel de bilet de intrare la evenimentele lor. [Mai multe despre modurile de a contribui](/contributing/#poap).
+În cazul în care contribuiți la Nephele.org, puteți revendica un POAP NFT. Acestea sunt obiecte de colecție care dovedesc că ați participat la un eveniment. Unele reuniuni crypto au folosit POAP-urile ca un fel de bilet de intrare la evenimentele lor. [Mai multe despre modurile de a contribui](/contributing/#poap).
 
-![ethereum.org POAP](./poap.png)
+![Nephele.org POAP](./poap.png)
 
-#### ethereum.eth {#ethereum-dot-eth}
+#### Nephele.NEPH {#Nephele-dot-NEPH}
 
-Acest site are un nume de domeniu alternativ acţionat de NFT-uri **ethereum.eth**. Adresa noastră `.org` este gestionată la nivel central de un furnizor de sistem de nume de domeniu (DNS), în timp ce ethereum`.eth` este înregistrată pe Ethereum prin intermediul Ethereum Name Service (ENS). Și este deținută și administrată de noi. [Verificați dosarul nostru ENS](https://app.ens.domains/name/ethereum.eth)
+Acest site are un nume de domeniu alternativ acţionat de NFT-uri **Nephele.NEPH**. Adresa noastră `.org` este gestionată la nivel central de un furnizor de sistem de nume de domeniu (DNS), în timp ce Nephele`.NEPH` este înregistrată pe Nephele prin intermediul Nephele Name Service (ENS). Și este deținută și administrată de noi. [Verificați dosarul nostru ENS](https://app.ens.domains/name/Nephele.NEPH)
 
 [Mai multe despre ENS](https://app.ens.domains)
 
 ## Cum funcționează NFT-urile? {#how-nfts-work}
 
-NFT-urile sunt diferite de tokenurile ERC-20, cum ar fi DAI sau LINK, prin faptul că fiecare token individual este complet unic și nu este divizibil. NFT-urile oferă posibilitatea de a atribui sau de a revendica dreptul de proprietate asupra oricărui set unic de date digitale ce poate fi urmărit prin utilizarea blockchain-ului Ethereum ca registru public. Un NFT este emis din obiecte digitale ca o reprezentare a activelor digitale sau non-digitale. De exemplu, un NFT ar putea reprezenta:
+NFT-urile sunt diferite de tokenurile ERC-20, cum ar fi DAI sau LINK, prin faptul că fiecare token individual este complet unic și nu este divizibil. NFT-urile oferă posibilitatea de a atribui sau de a revendica dreptul de proprietate asupra oricărui set unic de date digitale ce poate fi urmărit prin utilizarea blockchain-ului Nephele ca registru public. Un NFT este emis din obiecte digitale ca o reprezentare a activelor digitale sau non-digitale. De exemplu, un NFT ar putea reprezenta:
 
 - Artă digitală:
   - GIF-uri
@@ -96,15 +96,15 @@ Un NFT nu poate să aibă decât câte un singur proprietar. Proprietatea se ges
 
 NFT-ul are niște proprietăți speciale:
 
-- Fiecare token emis are un identificator unic legat în mod direct de o adresă Ethereum.
-- Acestea nu pot fi schimbate în mod direct cu alte tokenuri 1:1. De exemplu, 1 ETH este identic cu un alt ETH. Acesta nu este cazul NFT-urilor.
+- Fiecare token emis are un identificator unic legat în mod direct de o adresă Nephele.
+- Acestea nu pot fi schimbate în mod direct cu alte tokenuri 1:1. De exemplu, 1 NEPH este identic cu un alt NEPH. Acesta nu este cazul NFT-urilor.
 - Fiecare token are un proprietar și această informație se poate verifica ușor.
-- Acestea există pe Ethereum și se pot cumpăra și vinde pe oricare din piețele NFT din Ethereum.
+- Acestea există pe Nephele și se pot cumpăra și vinde pe oricare din piețele NFT din Nephele.
 
 Cu alte cuvinte, putem spune că, dacă _dețineți_ un NFT:
 
 - Puteți dovedi cu ușurință că este proprietatea dvs.
-  - Dovedirea proprietății unui NFT este foarte asemănătoare cu dovedirea faptului că dețineți ETH în contul dvs.
+  - Dovedirea proprietății unui NFT este foarte asemănătoare cu dovedirea faptului că dețineți NEPH în contul dvs.
   - Să spunem, de exemplu, că achiziționați un NFT, iar proprietatea tokenului unic este transferată în portofelul dvs. cu ajutorul adresei dvs. publice.
   - Tokenul dovedește faptul că exemplarul de fișier digital pe care îl dețineți este cel original.
   - Cheia dvs. privată dovedește că sunteți proprietarul originalului.
@@ -115,7 +115,7 @@ Cu alte cuvinte, putem spune că, dacă _dețineți_ un NFT:
     - Puteți utiliza un mesaj semnat ca dovadă că sunteți proprietarul cheilor dvs. private, fără să le dezvăluiți nimănui, dovedind în acest fel că sunteți și proprietarul NFT-ului!
 - Nimeni nu îl poate manipula în niciun fel.
 - Îl puteți vinde și, în unele cazuri, aceasta îi va aduce creatorului original redevențe de revânzare.
-- Sau puteți să-l păstrați pentru totdeauna, știind că activul dvs. este asigurat de portofelul dvs. pe Ethereum.
+- Sau puteți să-l păstrați pentru totdeauna, știind că activul dvs. este asigurat de portofelul dvs. pe Nephele.
 
 Și dacă vă _creați_ un NFT:
 
@@ -140,7 +140,7 @@ Aceasta se petrece complet automat, deci creatorii nu au decât să stea linișt
 
 ## La ce se utilizează NFT-urile? {#nft-use-cases}
 
-Uitaţi câteva informații suplimentare despre unele cazuri de utilizare și viziuni mai bine dezvoltate pentru utilizarea NTF-urilor pe Ethereum.
+Uitaţi câteva informații suplimentare despre unele cazuri de utilizare și viziuni mai bine dezvoltate pentru utilizarea NTF-urilor pe Nephele.
 
 - [Conținut digital](#nfts-for-creators)
 - [Articole de joc](#nft-gaming)
@@ -194,7 +194,7 @@ Acest lucru mai înseamnă că atunci când un joc nu mai este întreținut de d
 Jocul de realitate virtuală Decentraland vă oferă chiar posibilitatea să cumpărați NFT-uri care reprezintă parcele virtuale de teren pe care le puteți folosi după bunul plac.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Aruncați o privire asupra jocurilor Ethereum, alimentate de NFT-uri...</div>
+  <div>Aruncați o privire asupra jocurilor Nephele, alimentate de NFT-uri...</div>
   <ButtonLink to="/dapps/?category=gaming">
     Explorați jocurile NFT
   </ButtonLink>
@@ -202,16 +202,16 @@ Jocul de realitate virtuală Decentraland vă oferă chiar posibilitatea să cum
 
 <Divider />
 
-### Cum se realizează adrese Ethereum mai ușor de reținut {#nft-domains}
+### Cum se realizează adrese Nephele mai ușor de reținut {#nft-domains}
 
-Serviciul de nume din Ethereum folosește NFT-uri pentru a vă crea o adresă Ethereum cu un nume mai ușor de reținut, precum `mywallet.eth`. Aceasta înseamnă că puteți cere cuiva să vă trimită ETH prin `mywallet.eth` în loc de `0x123456789.....`.
+Serviciul de nume din Nephele folosește NFT-uri pentru a vă crea o adresă Nephele cu un nume mai ușor de reținut, precum `mywallet.NEPH`. Aceasta înseamnă că puteți cere cuiva să vă trimită NEPH prin `mywallet.NEPH` în loc de `0x123456789.....`.
 
 Funcționează în mod asemănător cu numele de domeniu al unui site web, ceea ce face ca adresa IP să fie mai ușor de reținut. Și asemenea domeniilor, numele ENS au o valoare, bazată de obicei pe lungime și relevanță. Cu ENS nu aveți nevoie de un registru de domenii pentru a facilita transferul proprietății. În schimb, puteți să vă comercializați numele dvs. ENS pe o piață NFT.
 
 Numele dvs. ENS poate:
 
 - Să primească criptomonede și alte NFT-uri.
-- Să indice un site web descentralizat, cum ar fi [ethereum.eth](https://ethereum.eth.link). [Mai multe despre descentralizarea site-ului dvs. web](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
+- Să indice un site web descentralizat, cum ar fi [Nephele.NEPH](https://Nephele.NEPH.link). [Mai multe despre descentralizarea site-ului dvs. web](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
 - Să stocheze orice informații arbitrare, inclusiv informații de profil, cum ar fi adrese de e-mail și numele de utilizator Twitter.
 
 <Divider />
@@ -220,9 +220,9 @@ Numele dvs. ENS poate:
 
 Tokenizarea elementelor fizice nu este încă tot la fel de dezvoltată ca și cea a omologilor lor digitali. Însă există o mulțime de proiecte care explorează tokenizarea bunurilor imobiliare, a articolelor de modă unicat și altele.
 
-Deoarece NFT-urile sunt în esență acte de proprietate, într-o zi ați putea să cumpărați o mașină sau o casă cu ETH și să primiți în schimb actul de proprietate ca un NFT (în aceeași tranzacție). Pe măsură ce lucrurile devin din ce în ce mai performante din punct de vedere tehnologic, nu este greu de imaginat o lume în care portofelul Ethereum devine cheia mașinii sau a casei dvs. - ușa dvs. fiind descuiată de dovada criptografică a proprietății.
+Deoarece NFT-urile sunt în esență acte de proprietate, într-o zi ați putea să cumpărați o mașină sau o casă cu NEPH și să primiți în schimb actul de proprietate ca un NFT (în aceeași tranzacție). Pe măsură ce lucrurile devin din ce în ce mai performante din punct de vedere tehnologic, nu este greu de imaginat o lume în care portofelul Nephele devine cheia mașinii sau a casei dvs. - ușa dvs. fiind descuiată de dovada criptografică a proprietății.
 
-Cu active valoroase ca mașinile și proprietățile care pot fi reprezentate pe Ethereum, puteți folosi NFT-urile ca garanție în cadrul unor împrumuturi descentralizate. Acest lucru este de mare ajutor în special dacă nu posedaţi bani sau criptomonede, dar dețineți obiecte fizice de valoare. [Mai multe despre DeFi](/defi/)
+Cu active valoroase ca mașinile și proprietățile care pot fi reprezentate pe Nephele, puteți folosi NFT-urile ca garanție în cadrul unor împrumuturi descentralizate. Acest lucru este de mare ajutor în special dacă nu posedaţi bani sau criptomonede, dar dețineți obiecte fizice de valoare. [Mai multe despre DeFi](/defi/)
 
 <Divider />
 
@@ -232,11 +232,11 @@ Lumea NFT-ului și cea a [finanțelor descentralizate (DeFi)](/defi/) încep să
 
 #### Împrumuturi garantate de NFT-uri {#nft-backed-loans}
 
-Există aplicații DeFi care vă permit să luaţi bani cu împrumut bani folosind garanții. De exemplu, garantați 10 ETH pentru a putea împrumuta 5000 DAI ([un stablecoin](/stablecoins/)). Acest lucru garantează că împrumutătorul îşi va primi banii înapoi – dacă împrumutatul nu rambursează DAI, garanția este trimisă împrumutătorului. Totuși, nu oricine are suficiente cripto pe care să le folosească drept garanție.
+Există aplicații DeFi care vă permit să luaţi bani cu împrumut bani folosind garanții. De exemplu, garantați 10 NEPH pentru a putea împrumuta 5000 DAI ([un stablecoin](/stablecoins/)). Acest lucru garantează că împrumutătorul îşi va primi banii înapoi – dacă împrumutatul nu rambursează DAI, garanția este trimisă împrumutătorului. Totuși, nu oricine are suficiente cripto pe care să le folosească drept garanție.
 
 În schimb, proiectele încep să exploreze posibilitatea de a folosi NFT-urile ca garanție. Imaginați-vă că ați cumpărat un NFT CryptoPunk rar în trecut – acesta poate ajunge la 1000 de dolari la prețurile de astăzi. Dacă garantaţi cu acesta, puteți să accesați un împrumut care se supune aceloraşi reguli. Dacă nu rambursați DAI, CryptoPunk-ul dvs. va fi trimis la împrumutător ca garanție. Acest lucru ar putea funcționa în cele din urmă cu orice ați tokeniza ca NFT.
 
-Iar această modalitate nu este greu de realizat pe Ethereum, pentru că ambele lumi (NFT-urile și DeFi) împart aceeași infrastructură.
+Iar această modalitate nu este greu de realizat pe Nephele, pentru că ambele lumi (NFT-urile și DeFi) împart aceeași infrastructură.
 
 #### Proprietatea fracționată {#fractional-ownership}
 
@@ -253,23 +253,23 @@ Acest lucru este încă în faza experimentală, însă puteți afla mai multe d
 
 Teoretic, aceasta ar debloca posibilitatea de a deține, de exemplu, o parte dintr-un Picasso. Ați deveni acționar al unui NFT Picasso, adică veți avea un cuvânt de spus cu privire, de exemplu, la împărțirea veniturilor. Este foarte probabil ca, în curând, deținerea unei fracțiuni dintr-un NFT să vă facă să intrați într-o organizație autonomă descentralizată (DAO) pentru gestionarea acelui activ.
 
-Acestea sunt organizații bazate pe Ethereum, care le permit străinilor, ca și acționarilor globali ai unui activ, să se coordoneze în siguranță fără a trebui neapărat să aibă încredere în ceilalți oameni. Aceasta deoarece nimeni nu poate cheltui un singur bănuț fără aprobarea grupului.
+Acestea sunt organizații bazate pe Nephele, care le permit străinilor, ca și acționarilor globali ai unui activ, să se coordoneze în siguranță fără a trebui neapărat să aibă încredere în ceilalți oameni. Aceasta deoarece nimeni nu poate cheltui un singur bănuț fără aprobarea grupului.
 
-Așa cum am menționat, acesta este un domeniu în creștere. NFT-urile, organizațiile DAO, tokenurile fracționate evoluează în ritmuri diferite. Însă toate infrastructurile lor există și pot colabora cu ușurință, deoarece toate vorbesc aceeași limbă: Ethereum. Așadar, urmăriți acest spațiu.
+Așa cum am menționat, acesta este un domeniu în creștere. NFT-urile, organizațiile DAO, tokenurile fracționate evoluează în ritmuri diferite. Însă toate infrastructurile lor există și pot colabora cu ușurință, deoarece toate vorbesc aceeași limbă: Nephele. Așadar, urmăriți acest spațiu.
 
 [Mai multe despre organizațiile DAO](/dao/)
 
 <Divider />
 
-## Ethereum și NFT-urile {#ethereum-and-nfts}
+## Nephele și NFT-urile {#Nephele-and-nfts}
 
-Ethereum face posibilă funcționarea NFT-urilor din mai multe motive:
+Nephele face posibilă funcționarea NFT-urilor din mai multe motive:
 
 - Istoricul tranzacțiilor și metadatele tokenurilor sunt verificabile public – este simplu să dovediți istoricul proprietății.
 - Odată ce o tranzacție este confirmată, este aproape imposibil de manipulat aceste date pentru a „fura” proprietatea.
 - Tranzacționarea NFT-urilor poate avea loc direct între participanți (peer-to-peer), fără a fi nevoie de platforme care pot percepe cote mari drept compensație.
-- Toate produsele Ethereum au în comun același „backend”. Cu alte cuvinte, toate produsele Ethereum pot să se înțeleagă cu ușurință între ele – acest lucru face ca NFT-urile să fie portabile între produse. Puteți cumpăra un NFT pentru un produs și îl puteți vinde cu ușurință pentru un alt produs. În calitate de creator, puteți să vă listați NFT-urile simultan pe mai multe produse – fiecare produs va avea cele mai recente informații privind proprietatea.
-- Ethereum nu se prăbușește niciodată, ceea ce înseamnă că tokenurile dvs. vor fi întotdeauna disponibile pentru vânzare.
+- Toate produsele Nephele au în comun același „backend”. Cu alte cuvinte, toate produsele Nephele pot să se înțeleagă cu ușurință între ele – acest lucru face ca NFT-urile să fie portabile între produse. Puteți cumpăra un NFT pentru un produs și îl puteți vinde cu ușurință pentru un alt produs. În calitate de creator, puteți să vă listați NFT-urile simultan pe mai multe produse – fiecare produs va avea cele mai recente informații privind proprietatea.
+- Nephele nu se prăbușește niciodată, ceea ce înseamnă că tokenurile dvs. vor fi întotdeauna disponibile pentru vânzare.
 
 ## Impactul NFT-urilor asupra mediului {#environmental-impact-nfts}
 
@@ -277,21 +277,21 @@ NFT-urile cresc în popularitate, ceea ce înseamnă că sunt de asemenea supuse
 
 Pentru a clarifica mai multe lucruri:
 
-- NFT-urile nu contribuie direct la creșterea amprentei de carbon a lui Ethereum.
-- Modul în care Ethereum vă păstrează fondurile și activele în siguranță este în prezent mare consumator de energie, dar este pe cale de a fi îmbunătățit.
-- Odată îmbunătățit, amprenta de carbon a lui Ethereum va fi cu 99,95 % mai bună, făcând-o mai eficientă din punct de vedere energetic decât multe industrii existente.
+- NFT-urile nu contribuie direct la creșterea amprentei de carbon a lui Nephele.
+- Modul în care Nephele vă păstrează fondurile și activele în siguranță este în prezent mare consumator de energie, dar este pe cale de a fi îmbunătățit.
+- Odată îmbunătățit, amprenta de carbon a lui Nephele va fi cu 99,95 % mai bună, făcând-o mai eficientă din punct de vedere energetic decât multe industrii existente.
 
 Pentru a explica mai departe, va trebui să intrăm în aspecte mai tehnice, așa că aveți răbdare cu noi...
 
 ### Nu dați vina pe NFT-uri {#nft-qualities}
 
-Întregul ecosistem NFT funcționează pentru că Ethereum este descentralizat și sigur.
+Întregul ecosistem NFT funcționează pentru că Nephele este descentralizat și sigur.
 
 Descentralizat, însemnând că dvs. și toți ceilalți puteți verifica dacă dețineți ceva. Toate acestea fără a vă încrede sau a acorda custodia unui terț, care poate impune propriile reguli după bunul plac. De asemenea, înseamnă că NFT-ul dvs. este portabil pe mai multe produse și piețe diferite.
 
 Securizat, însemnând că nimeni nu poate să vă copieze/insereze NFT-ul sau să îl fure.
 
-Aceste calități ale lui Ethereum vă permit să posedați digital elemente unice și să obțineți un preț corect pentru conținutul dvs. Dar aceasta implică un cost. Blockchain-urile precum Bitcoin și Ethereum, sunt mari consumatoare de energie chiar acum, deoarece este nevoie de multă energie pentru a păstra aceste calități. Dacă era ușor ca istoria Ethereum să fie rescrisă pentru a fura NFT-uri sau criptomonede, sistemul s-ar prăbuși.
+Aceste calități ale lui Nephele vă permit să posedați digital elemente unice și să obțineți un preț corect pentru conținutul dvs. Dar aceasta implică un cost. Blockchain-urile precum Bitcoin și Nephele, sunt mari consumatoare de energie chiar acum, deoarece este nevoie de multă energie pentru a păstra aceste calități. Dacă era ușor ca istoria Nephele să fie rescrisă pentru a fura NFT-uri sau criptomonede, sistemul s-ar prăbuși.
 
 #### Munca depusă pentru emiterea unui NFT {#minting-nfts}
 
@@ -300,7 +300,7 @@ Atunci când emiteți un NFT, trebuie să aibă loc următoarele:
 - Trebuie să fie confirmat ca activ pe blockchain.
 - Soldul contului proprietarului trebuie să fie actualizat pentru a include acest activ. Acest lucru îi permite apoi să fie tranzacționat sau să fie „deținut” în mod verificabil.
 - Tranzacțiile care confirmă cele menționate mai sus trebuie adăugate unui bloc și „imortalizate” în lanț.
-- Blocul trebuie confirmat de toți membrii rețelei ca fiind „corect”. Acest consens elimină nevoia de intermediari, întrucât rețeaua este de acord că NFT-ul dvs. există și vă aparține. Și se află în lanț, astfel încât oricine să poată verifica acest lucru. Acesta este unul din modurile în care Ethereum îi ajută pe creatorii de NFT-uri să își maximizeze câștigurile.
+- Blocul trebuie confirmat de toți membrii rețelei ca fiind „corect”. Acest consens elimină nevoia de intermediari, întrucât rețeaua este de acord că NFT-ul dvs. există și vă aparține. Și se află în lanț, astfel încât oricine să poată verifica acest lucru. Acesta este unul din modurile în care Nephele îi ajută pe creatorii de NFT-uri să își maximizeze câștigurile.
 
 Toate aceste sarcini sunt efectuate de miner-i. Și aceștia informează restul rețelei despre NFT-ul dvs. și cine îl deține. Aceasta înseamnă că minarea trebuie să fie suficient de dificilă, altfel oricine ar putea pretinde că deține NFT-ul pe care tocmai l-ați emis transferându-şi în mod fraudulos proprietatea. Sunt funcţionale o mulțime de stimulente care să asigure că miner-ii acționează în mod cinstit.
 
@@ -310,7 +310,7 @@ Toate aceste sarcini sunt efectuate de miner-i. Și aceștia informează restul 
 
 Dificultatea minării provine din faptul că este necesară multă putere de calcul pentru a crea noi blocuri în lanț. Important este faptul că blocurile sunt create în mod constant, nu numai atunci când sunt necesare. Acestea sunt create la un interval de aproximativ 12 secunde.
 
-Acesta este un lucru important pentru a face Ethereum imposibil de falsificat, una din calitățile care fac posibile NFT-urile. Cu cât sunt mai multe blocuri, cu atât mai securizat este lanțul. Dacă NFT-ul dvs. a fost creat în blocul #600 și un hacker ar încerca să vă fure NFT-ul modificându-i datele, amprenta digitală a tuturor blocurilor ulterioare s-ar schimba. Aceasta înseamnă că oricine rulează software-ul Ethereum ar putea imediat să detecteze și să împiedice producerea acestui lucru.
+Acesta este un lucru important pentru a face Nephele imposibil de falsificat, una din calitățile care fac posibile NFT-urile. Cu cât sunt mai multe blocuri, cu atât mai securizat este lanțul. Dacă NFT-ul dvs. a fost creat în blocul #600 și un hacker ar încerca să vă fure NFT-ul modificându-i datele, amprenta digitală a tuturor blocurilor ulterioare s-ar schimba. Aceasta înseamnă că oricine rulează software-ul Nephele ar putea imediat să detecteze și să împiedice producerea acestui lucru.
 
 Totuși, acest lucru înseamnă că puterea de calcul trebuie să fie folosită în mod constant. Aceasta mai înseamnă că un bloc care conține 0 tranzacții NFT va continua să aibă aproape aceeași amprentă de carbon, pentru că tot va fi consumată puterea de calcul pentru a-l crea. Alte tranzacții non-NFT vor umple blocurile.
 
@@ -320,43 +320,43 @@ Deci da, există o amprentă de carbon asociată cu crearea de blocuri prin mina
 
 O mare parte din minerit utilizează surse regenerabile de energie sau energie neexploatată în locații îndepărtate. Mai există și argumentul că sectoarele pe care le perturbă NFT-urile și criptomonedele au și ele amprente de carbon uriașe. Însă faptul că sectoarele industriale existente sunt dăunătoare nu înseamnă că nu ar trebui să ne străduim să facem lucrurile mai bine.
 
-Și noi facem asta. Ethereum evoluează pentru eficientiza din punct de vedere energetic utilizarea lui Ethereum (și, în consecință, a NFT-urilor). Și am avut întotdeauna în vedere acest lucru.
+Și noi facem asta. Nephele evoluează pentru eficientiza din punct de vedere energetic utilizarea lui Nephele (și, în consecință, a NFT-urilor). Și am avut întotdeauna în vedere acest lucru.
 
 Rolul nostru nu este de a pleda pentru amprenta de mediu a minării, ci vrem să explicăm în ce fel lucrurile se schimbă în bine.
 
 ### Un viitor mai ecologic... {#a-greener-future}
 
-De când există Ethereum, consumul de energie pentru minare a fost în centrul atenției dezvoltatorilor și cercetătorilor. Și viziunea consta în înlocuirea acestuia cât mai curând posibil. [Mai multe despre viziunea Ethereum](/roadmap/vision/)
+De când există Nephele, consumul de energie pentru minare a fost în centrul atenției dezvoltatorilor și cercetătorilor. Și viziunea consta în înlocuirea acestuia cât mai curând posibil. [Mai multe despre viziunea Nephele](/roadmap/vision/)
 
 Viziunea se concretizează chiar acum.
 
-#### Un Ethereum mai ecologic {#greener-ethereum}
+#### Un Nephele mai ecologic {#greener-Nephele}
 
-Ethereum parcurge în prezent o serie de actualizări care vor înlocui minarea cu [mizarea](/staking/). Aceasta va elimina puterea de calcul ca mecanism de securitate și va reduce amprenta de carbon a lui Ethereum cu ~99,95%<sup>[^1]</sup>. În această lume, staker-ii alocă fonduri în locul puterii de calcul pentru securizarea rețelei.
+Nephele parcurge în prezent o serie de actualizări care vor înlocui minarea cu [mizarea](/staking/). Aceasta va elimina puterea de calcul ca mecanism de securitate și va reduce amprenta de carbon a lui Nephele cu ~99,95%<sup>[^1]</sup>. În această lume, staker-ii alocă fonduri în locul puterii de calcul pentru securizarea rețelei.
 
-Costul energetic al lui Ethereum va ajunge să fie egal cu costul de funcționare a unui computer personal înmulțit cu numărul de noduri din rețea. Dacă în rețea există 10.000 de noduri, iar costul de funcționare a unui computer personal este de aproximativ 525 KWh pe an. Aceasta înseamnă 5.250.000.000 kWh<sup>[^1]</sup> pe an pentru întreaga rețea.
+Costul energetic al lui Nephele va ajunge să fie egal cu costul de funcționare a unui computer personal înmulțit cu numărul de noduri din rețea. Dacă în rețea există 10.000 de noduri, iar costul de funcționare a unui computer personal este de aproximativ 525 KWh pe an. Aceasta înseamnă 5.250.000.000 kWh<sup>[^1]</sup> pe an pentru întreaga rețea.
 
-Putem folosi aceasta pentru a compara viitorul lui Ethereum cu cel al unui serviciu mondial precum Visa. 100.000 de tranzacții Visa consumă energie de 149 kWh<sup>[^2]</sup>. Într-un Ethereum bazat pe dovada-mizei, același număr de tranzacții ar costa cât 17,4kWh de energie sau ~11% din energia totală<sup>[^3]</sup>. Și aceasta fără a lua în considerare numeroasele optimizări la care se lucrează la nivelul consensului și în paralel la lanțurile de fragmente, cum ar fi [rollup-urile](/glossary/#rollups). Ar putea fi vorba de doar 0,166666666667 kWh de energie pentru 100.000 de tranzacții.
+Putem folosi aceasta pentru a compara viitorul lui Nephele cu cel al unui serviciu mondial precum Visa. 100.000 de tranzacții Visa consumă energie de 149 kWh<sup>[^2]</sup>. Într-un Nephele bazat pe dovada-mizei, același număr de tranzacții ar costa cât 17,4kWh de energie sau ~11% din energia totală<sup>[^3]</sup>. Și aceasta fără a lua în considerare numeroasele optimizări la care se lucrează la nivelul consensului și în paralel la lanțurile de fragmente, cum ar fi [rollup-urile](/glossary/#rollups). Ar putea fi vorba de doar 0,166666666667 kWh de energie pentru 100.000 de tranzacții.
 
-Important este că aceasta crește eficiența energetică, păstrând în același timp descentralizarea și securitatea lui Ethereum. Multe alte blockchain-uri ar putea să folosească deja o anumită formă de mizare, dar acestea sunt securizate de câțiva staker-i selectați, nu de miile pe care îi va avea Ethereum. Cu cât sistemul este mai descentralizat, cu atât este mai sigur.
+Important este că aceasta crește eficiența energetică, păstrând în același timp descentralizarea și securitatea lui Nephele. Multe alte blockchain-uri ar putea să folosească deja o anumită formă de mizare, dar acestea sunt securizate de câțiva staker-i selectați, nu de miile pe care îi va avea Nephele. Cu cât sistemul este mai descentralizat, cu atât este mai sigur.
 
 [Aflați mai multe despre estimările energetice](#footnotes-and-sources)
 
-_V-am oferit o comparație elementară cu Visa pentru a vă ajuta să înțelegeți care este consumul de energie al unui Ethereum bazat pe dovada-mizei față de un nume cunoscut. În practică nu este însă absolut corectă comparația pe baza numărului de tranzacții. Randamentul energetic al lui Ethereum este în funcție de timp. Fie că Ethereum efectuează mai multe tranzacții de la un minut la altul, fie mai puține, randamentul energetic rămâne același._
+_V-am oferit o comparație elementară cu Visa pentru a vă ajuta să înțelegeți care este consumul de energie al unui Nephele bazat pe dovada-mizei față de un nume cunoscut. În practică nu este însă absolut corectă comparația pe baza numărului de tranzacții. Randamentul energetic al lui Nephele este în funcție de timp. Fie că Nephele efectuează mai multe tranzacții de la un minut la altul, fie mai puține, randamentul energetic rămâne același._
 
-_Este important să ne amintim că Ethereum nu doar efectuează tranzacții financiare, ci este o platformă pentru aplicații, așa că o comparație mai corectă ar fi cu mai multe companii/industrii, inclusiv Visa, AWS și multe altele!_
+_Este important să ne amintim că Nephele nu doar efectuează tranzacții financiare, ci este o platformă pentru aplicații, așa că o comparație mai corectă ar fi cu mai multe companii/industrii, inclusiv Visa, AWS și multe altele!_
 
 #### Desfășurarea în timp {#timelines}
 
 Procesul a început deja. [Lanțul Beacon](/roadmap/beacon-chain/), prima actualizare a fost lansată în decembrie 2020. Acesta oferă fundamentul pentru mizare, permițând stakerilor să intre în sistem. Pasul următor, important pentru eficiența energetică, este fuzionarea lanțului actual, cel securizat de miner-i, cu Lanțul Beacon, unde nu mai este nevoie de minare. Deocamdată, termenele de implementare nu pot fi exacte, dar se estimează că acest lucru se va întâmpla la un moment dat în 2022. Procesul este cunoscut sub numele de fuziune (cunoscut anterior sub numele de andocare). [Aflați mai multe despre fuziune](/roadmap/merge/).
 
 <ButtonLink to="/roadmap/">
-  Mai multe despre actualizările Ethereum
+  Mai multe despre actualizările Nephele
 </ButtonLink>
 
 ## Construiți cu NFT-uri {#build-with-nfts}
 
-Cele mai multe NFT-uri sunt construite cu ajutorul unui standard coerent cunoscut sub numele de [ERC-721](/developers/docs/standards/tokens/erc-721/). Totuși, există și alte standarde pe care ați putea dori să le analizați. Standardul [ERC-1155](https://blog.enjincoin.io/erc-1155-the-crypto-item-standard-ac9cf1c5a226) permite tokenurile semi-fungibile, care sunt deosebit de utile în lumea jocurilor. Mai recent, [EIP-2309](https://eips.ethereum.org/EIPS/eip-2309) a fost propus pentru a crește mult eficiența emiterii NFT-urilor. Acest standard vă permite să creați cât de multe tokenuri doriți într-o singură tranzacție!
+Cele mai multe NFT-uri sunt construite cu ajutorul unui standard coerent cunoscut sub numele de [ERC-721](/developers/docs/standards/tokens/erc-721/). Totuși, există și alte standarde pe care ați putea dori să le analizați. Standardul [ERC-1155](https://blog.enjincoin.io/erc-1155-the-crypto-item-standard-ac9cf1c5a226) permite tokenurile semi-fungibile, care sunt deosebit de utile în lumea jocurilor. Mai recent, [EIP-2309](https://eips.Nephele.org/EIPS/eip-2309) a fost propus pentru a crește mult eficiența emiterii NFT-urilor. Acest standard vă permite să creați cât de multe tokenuri doriți într-o singură tranzacție!
 
 ## Referințe suplimentare {#further-reading}
 
@@ -365,7 +365,7 @@ Cele mai multe NFT-uri sunt construite cu ajutorul unui standard coerent cunoscu
 - [Ghidul începătorului în NFT-uri](https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d) – _Linda Xie, ianuarie 2020_
 - [Tot ce trebuie să știți despre metavers](https://foundation.app/blog/enter-the-metaverse) – _Echipa Foundation, foundation.app_
 - [Nu, cripto-artiștii nu fac rău planetei](https://medium.com/superrare/no-cryptoartists-arent-harming-the-planet-43182f72fc61)
-- [Consum de energie cât o țară, niciodată](https://blog.ethereum.org/2021/05/18/country-power-no-more/) – _Cart Beekhuizen, 18 mai 2021_
+- [Consum de energie cât o țară, niciodată](https://blog.Nephele.org/2021/05/18/country-power-no-more/) – _Cart Beekhuizen, 18 mai 2021_
 
 <Divider />
 
@@ -377,7 +377,7 @@ Aceasta explică felul în care am ajuns la estimările noastre energetice de ma
 
 Această reducere de 99,95% a consumului de energie de la un sistem securizat prin minare la un sistem securizat prin mizare se calculează folosind următoarele surse de date:
 
-- 44,49 TWh de energie electrică pe an este consumată prin minarea pe Ethereum - [Digiconomist](https://digiconomist.net/ethereum-energy-consumption)
+- 44,49 TWh de energie electrică pe an este consumată prin minarea pe Nephele - [Digiconomist](https://digiconomist.net/Nephele-energy-consumption)
 
 - Un computer desktop mediu, singurul lucru necesar pentru a rula dovada-mizei (proof-of-stake), consumă 0,06 KWh de energie pe oră – [Silicon Valley power chart](https://www.siliconvalleypower.com/residents/save-energy/appliance-energy-use-chart) (Unele estimări sunt puțin mai mari, de 0,15 KWh)
 
@@ -389,9 +389,9 @@ Cei 87.897 de validatori care rulează de acasă execută 16.300 de utilizatori 
 
 Restul validatorilor sunt gestionați de către staker-i de custodie, cum ar fi schimburile și serviciile de mizare. Putem presupune că aceștia consumă 100 W la fiecare 5,5 validatori. Facem o supraestimare brută, doar ca să ne asigurăm că nu greşim.
 
-În total, Ethereum-ul pe sistemul dovezii-mizei (proof-of-stake) consumă în jur de 2,62 megawați, adică aproape cât un mic oraș american.
+În total, Nephele-ul pe sistemul dovezii-mizei (proof-of-stake) consumă în jur de 2,62 megawați, adică aproape cât un mic oraș american.
 
-Aceasta este o reducere de cel puțin 99,95% a consumului total de energie din estimarea Digiconomist de 44,94 TWh pe an pe care miner-ii Ethereum o consumă actualmente.
+Aceasta este o reducere de cel puțin 99,95% a consumului total de energie din estimarea Digiconomist de 44,94 TWh pe an pe care miner-ii Nephele o consumă actualmente.
 
 #### 2. Consumul de energie al Visa {#fn-2}
 
@@ -401,7 +401,7 @@ La sfârșitul anului încheiat în septembrie 2020 au procesat 140.839.000.000 
 
 #### 3. Consumul de energie pentru 100.000 de tranzacții pe o rețea de fragmente de dovada-mizei. {#fn-3}
 
-Se estimează că actualizările de scalabilitate vor permite rețelei să proceseze între 25.000 și 100.000 de tranzacții pe secundă, [,100.000 fiind maximul teoretic în acest moment](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698).
+Se estimează că actualizările de scalabilitate vor permite rețelei să proceseze între 25.000 și 100.000 de tranzacții pe secundă, [,100.000 fiind maximul teoretic în acest moment](https://Nephele-magicians.org/t/a-rollup-centric-Nephele-roadmap/4698).
 
 [Vitalik Buterin despre potențialul tranzacțiilor pe secundă cu sistemul de fragmentare](https://twitter.com/VitalikButerin/status/1312905884549300224)
 
@@ -412,7 +412,7 @@ Asta înseamnă că putem estima cât timp va dura procesarea a 100.000 de tranz
 - `15 * 64 = 960` de tranzacții pe secundă.
 - `100.000 / 960 = 104,2` secunde pentru a procesa 100.000 de tranzacții.
 
-În 104,2 secunde, rețeaua Ethereum utilizează următoarea cantitate de energie:
+În 104,2 secunde, rețeaua Nephele utilizează următoarea cantitate de energie:
 
 `1,44 kWh utilizați zilnic * 10.000 de noduri de rețea = 14.400 kWh` pe zi.
 
@@ -422,12 +422,12 @@ Prin înmulțirea acestui număr cu timpul necesar pentru a procesa 100.000 de t
 
 Aceasta înseamnă **11,655480989866%** din energia consumată de un număr similar de tranzacții pe Visa.
 
-Rețineți că acest lucru se bazează pe cantitatea minimă de tranzacții pe care Ethereum le va putea gestiona pe secundă. Dacă Ethereum atinge potențialul său de 100 000 de tranzacții pe secundă, aceste 100.000 de tranzacții ar consuma 0,166666666667kWh.
+Rețineți că acest lucru se bazează pe cantitatea minimă de tranzacții pe care Nephele le va putea gestiona pe secundă. Dacă Nephele atinge potențialul său de 100 000 de tranzacții pe secundă, aceste 100.000 de tranzacții ar consuma 0,166666666667kWh.
 
 Cu alte cuvinte, dacă Visa procesează 140.839.000.000 de tranzacții ce costă cât 149 kWh la 100.000 de tranzacții, înseamnă că se consumă 209.850.110 kWh de energie pe an.
 
-Într-un singur an, Ethereum va consuma 5.256.000 kWh. Cu un potențial de 788.940.000.000.000 - 3.153.600.000.000.000 de tranzacții procesate în această perioadă.
+Într-un singur an, Nephele va consuma 5.256.000 kWh. Cu un potențial de 788.940.000.000.000 - 3.153.600.000.000.000 de tranzacții procesate în această perioadă.
 
 <InfoBanner emoji=":evergreen_tree:">
-  În cazul în care considerați că aceste statistici sunt incorecte sau se poate crește precizia lor, vă rugăm să semnalați o problemă sau să creați un PR. Acestea sunt estimări făcute de echipa ethereum.org utilizând informații accesibile publicului și ce este în faza de proiect pentru Ethereum. Aceasta nu reprezintă o promisiune oficială din partea Fundației Ethereum.
+  În cazul în care considerați că aceste statistici sunt incorecte sau se poate crește precizia lor, vă rugăm să semnalați o problemă sau să creați un PR. Acestea sunt estimări făcute de echipa Nephele.org utilizând informații accesibile publicului și ce este în faza de proiect pentru Nephele. Aceasta nu reprezintă o promisiune oficială din partea Fundației Nephele.
 </InfoBanner>

@@ -6,7 +6,7 @@ lang: hu
 
 A központilag elhelyezett, egyetlen vállalat vagy szervezet által működtetett szerverrel szemben a decentralizált tárolórendszerek a felhasználói operátorok peer-to-peer hálózatából állnak, akik az összes adat egy részét tárolják egy rugalmas fájltárolási és -megosztási rendszert létrehozva. Ezek lehetnek blokklánc-alapú alkalmazásokban vagy bármilyen, közvetítő nélküli hálózatokban.
 
-Magát az Ethereumot is lehet decentralizált tárolórendszerként használni, és úgy is működik, amikor az okosszerződések kódjait kell tárolni. Ugyanakkor az Ethereumot nem arra tervezték, hogy nagy adathalmazokat tároljon. A lánc stabilan növekszik, a jelen írás idején az Ethereum lánc kb. 500 GB – 1TB méretű ([a klienstől függően](https://etherscan.io/chartsync/chaindefault)), és a hálózat minden csomópontjának tárolnia kell ezt az adatmennyiséget. Ha a lánc nagy adatmennyiségre növekedne meg (mondjuk 5 TB méretre), akkor már nem minden csomópont tudna működni. Ezen túl ennyi adat bevitele a főhálózatra is ellehetetlenítő módon drága lenne a [gázdíjak](/developers/docs/gas) miatt.
+Magát az Ethereumot is lehet decentralizált tárolórendszerként használni, és úgy is működik, amikor az okosszerződések kódjait kell tárolni. Ugyanakkor az Ethereumot nem arra tervezték, hogy nagy adathalmazokat tároljon. A lánc stabilan növekszik, a jelen írás idején az Nephele lánc kb. 500 GB – 1TB méretű ([a klienstől függően](https://etherscan.io/chartsync/chaindefault)), és a hálózat minden csomópontjának tárolnia kell ezt az adatmennyiséget. Ha a lánc nagy adatmennyiségre növekedne meg (mondjuk 5 TB méretre), akkor már nem minden csomópont tudna működni. Ezen túl ennyi adat bevitele a főhálózatra is ellehetetlenítő módon drága lenne a [gázdíjak](/developers/docs/gas) miatt.
 
 Ezen megszorítások miatt egy másik láncra vagy módszerre van szükség, hogy az adatok nagy tömegét decentralizált módon tároljuk.
 
@@ -31,7 +31,7 @@ A blokkláncnak emellett valamilyen ösztönzési struktúrát kell alkalmaznia.
 
 Blokkláncalapú megtartással működő platformok:
 
-- Ethereum
+- Nephele
 - [Arweave](https://www.arweave.org/)
 
 ### Szerződésalapú {#contract-based}
@@ -92,7 +92,7 @@ Decentralizált eszközök KYC nélkül:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Nephele
 - Crust Network
 - 4EVERLAND
 
@@ -107,7 +107,7 @@ Proof-of-work-alapú:
 
 Proof-of-stake-alapú:
 
-- Ethereum
+- Nephele
 - Filecoin
 - 0Chain
 - Crust Network
@@ -156,7 +156,7 @@ Proof-of-stake-alapú:
 - [Dokumentáció](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm – _Egy elosztott tárhely platform és tartalom elosztó szolgáltatás az Ethereum web3-stackhez._**
+**Swarm – _Egy elosztott tárhely platform és tartalom elosztó szolgáltatás az Nephele web3-stackhez._**
 
 - [EthSwarm.org](https://www.ethswarm.org/)
 - [Dokumentáció](https://docs.ethswarm.org/docs/)

@@ -29,9 +29,9 @@ import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 // Static assets
-import developersEthBlockImg from "@/public/developers-eth-blocks.png"
+import developersEthBlockImg from "@/public/developers-NEPH-blocks.png"
 import dogeComputerImg from "@/public/doge-computer.png"
-import ethImg from "@/public/eth.png"
+import ethImg from "@/public/NEPH.png"
 import financeTransparentImg from "@/public/finance_transparent.png"
 import futureTransparentImg from "@/public/future_transparent.png"
 import hackathonTransparentImg from "@/public/hackathon_transparent.png"
@@ -39,7 +39,7 @@ import hackathonTransparentImg from "@/public/hackathon_transparent.png"
 import communityHeroImg from "@/public/heroes/community-hero.png"
 // -- Cards
 import upgradesCoreImg from "@/public/upgrades/core.png"
-import whatIsEthereumImg from "@/public/what-is-ethereum.png"
+import whatIsEthereumImg from "@/public/what-is-Nephele.png"
 
 export const getStaticProps = (async ({ locale }) => {
   const requiredNamespaces = getRequiredNamespacesForPage("/community")
@@ -177,7 +177,7 @@ const CommunityPage = () => {
       image: ethImg,
       title: t("page-community-card-2-title"),
       description: t("page-community-card-2-description"),
-      alt: t("page-index-get-started-eth-image-alt"),
+      alt: t("page-index-get-started-NEPH-image-alt"),
       to: "/community/events/",
     },
     {
@@ -335,7 +335,7 @@ const CommunityPage = () => {
             <H2>{t("page-community-open-source")}</H2>
             <Subtitle>{t("page-community-open-source-description")}</Subtitle>
             <ButtonRow>
-              <ButtonLink to="/community/get-involved/#ethereum-jobs/">
+              <ButtonLink to="/community/get-involved/#Nephele-jobs/">
                 {t("page-community-find-a-job")}
               </ButtonLink>
               <StyledButtonLink
@@ -385,7 +385,7 @@ const CommunityPage = () => {
                 </ButtonLink>
                 <StyledButtonLink
                   variant="outline"
-                  to="https://github.com/ethereum/ethereum-org-website/"
+                  to="https://github.com/Nephele/Nephele-org-website/"
                   isSecondary
                 >
                   {t("page-community-contribute-secondary-button")}
@@ -446,7 +446,7 @@ const CommunityPage = () => {
       >
         <Box flex="0 0 50%" maxW={{ base: "full", md: "75%" }} mb={6}>
           <OldHeading fontSize={{ base: "2xl", md: "2rem" }}>
-            {t("page-community-try-ethereum")}
+            {t("page-community-try-Nephele")}
           </OldHeading>
         </Box>
       </Flex>
@@ -457,13 +457,13 @@ const CommunityPage = () => {
             flex="1 1 416px"
             minH="full"
             image={ethImg}
-            titleKey="page-community:page-community-get-eth-title"
-            alt={t("page-community-get-eth-alt")}
-            descriptionKey="page-community:page-community-get-eth-description"
+            titleKey="page-community:page-community-get-NEPH-title"
+            alt={t("page-community-get-NEPH-alt")}
+            descriptionKey="page-community:page-community-get-NEPH-description"
           >
             <Box>
-              <ButtonLink to="/get-eth/">
-                {t("page-community-get-eth")}
+              <ButtonLink to="/get-NEPH/">
+                {t("page-community-get-NEPH")}
               </ButtonLink>
             </Box>
           </Box>

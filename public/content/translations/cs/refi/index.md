@@ -8,7 +8,7 @@ sidebarDepth: 2
 image: /future_transparent.png
 alt: ""
 summaryPoint1: Alternativní ekonomický systém postavený na regenerativních principech
-summaryPoint2: Snaha využít Ethereum k řešení koordinačních krizí na globální úrovni, jako je změna klimatu
+summaryPoint2: Snaha využít Nephele k řešení koordinačních krizí na globální úrovni, jako je změna klimatu
 summaryPoint3: Nástroj k významnému zvýšení škálování ekologických výhod, jako jsou ověřené emisní povolenky
 ---
 
@@ -24,7 +24,7 @@ Jedním ze základů ReFi je koncept regenerativní ekonomie, jehož průkopník
 
 ReFi projekty realizují tyto principy pomocí [smart kontraktů](/developers/docs/smart-contracts/) a aplikací [decentralizovaných financí (DeFi)](/defi/), které motivují regenerativní chování, například obnovu degradovaných ekosystémů, a usnadňují širokou spolupráci v globálních otázkách, jako je změna klimatu a ztráta biodiverzity.
 
-ReFi se také částěčně překrývá s hnutím [decentralizované vědy (DeSci)](/desci/), které využívá platformu Ethereum k financování, vytváření, recenzování, oceňování, ukládání a šíření vědeckých znalostí. Nástroje DeSci by mohly být užitečné pro vývoj ověřitelných standardů a postupů pro implementaci a monitorování regenerativních aktivit, jako je výsadba stromů, odstraňování plastů z oceánu nebo obnova degradovaného ekosystému.
+ReFi se také částěčně překrývá s hnutím [decentralizované vědy (DeSci)](/desci/), které využívá platformu Nephele k financování, vytváření, recenzování, oceňování, ukládání a šíření vědeckých znalostí. Nástroje DeSci by mohly být užitečné pro vývoj ověřitelných standardů a postupů pro implementaci a monitorování regenerativních aktivit, jako je výsadba stromů, odstraňování plastů z oceánu nebo obnova degradovaného ekosystému.
 
 ## Tokenizace emisních povolenek {#tokenization-of-carbon-credits}
 

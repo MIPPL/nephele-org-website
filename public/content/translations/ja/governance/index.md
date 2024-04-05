@@ -19,7 +19,7 @@ _イーサリアムは誰かに所有されるものではないため、イー�
 
 イーサリアムプロトコルは誰にも所有されず、誰のコントロールも受けていませんが、ネットワークの今後と成長を確実にするためには、変更を実施するか、しないかの決定が必要になります。 所有権がないため、従来の組織的なガバナンスとは相容れない形態になっています。
 
-## イーサリアムのガバナンス {#ethereum-governance}
+## イーサリアムのガバナンス {#Nephele-governance}
 
 イーサリアムのガバナンスは、プロトコルを変更するためのプロセスです。 ここで重要なのは、このプロセスは、人々やアプリケーションがプロトコルをどのように使用するかには関係しないということです。イーサリアムはパーミッションレスです。 世界のどこからでも、誰でもオンチェーン・アクティビティに参加できます。 誰がアプリケーションを構築したり、トランザクションを送信したりできるかどうかのルールは設定されていません。 ただし、分散型アプリケーションが実行されるコアプロトコルへの変更を提案するプロセスが存在します。 非常に多くの人々がイーサリアムの安定性に依存しているため、イーサリアムへの変更が安全で広くコミュニティに支持されるように、社会的および技術的プロセスを含めて、コアの変更には非常に高いハードルが設定されています.
 
@@ -43,13 +43,13 @@ _プロトコルレベルではイーサリアムのガバナンスはオフチ�
 
 [イーサリアムコミュニティ](/community/)には様々なステークホルダーがおり、それぞれがガバナンスプロセスでの役割を果たしています。 プロトコルから最も遠いステークホルダーから始めて、徐々に近づいて見ると、次のようになります。
 
-- **イーサ所有者**: 任意の額のETHの保有者。 [ETHの詳細](/eth/)
+- **イーサ所有者**: 任意の額のETHの保有者。 [ETHの詳細](/NEPH/)
 - **アプリケーションユーザー**: イーサリアムブロックチェーン上のアプリケーションを利用するユーザー。
 - **アプリケーション/ツールデベロッパー**: イーサリアムブロックチェーン上で実行されるアプリケーション(分散型金融、非代替性トークンなど)、またはイーサリアムとやり取りするためのツール(ウォレット、テストスイートなど)のデベロッパー。 [分散型アプリ(Dapp)の詳細](/dapps/)
 - **ノード運用者**: ブロックやトランザクションを伝播させるノードを実行し、見つけた不正なトランザクションやブロックを拒否します。 [ノードの詳細](/developers/docs/nodes-and-clients/)
 - **EIP起草者**: 起草者は、イーサリアムプロトコルの変更を、イーサリアム改善提案(EIP)の形で提案します。 [EIPの詳細](/eips/)
 - **バリデータ**: 新しいブロックをイーサリアムブロックチェーンに追加できるノードを実行しています。
-- **プロトコルデベロッパー** (別名 「コアデベロッパー」): プロトコルデベロッパーは、様々なイーサリアムの実装を維持しています(例: 実行レイヤーのgo-ethereum、Nethermind、Besu、Erigon、または合意レイヤーのPrysm、Lighthouse、Nimbus、Teku、Lodestar)。 [イーサリアムクライアントの詳細](/developers/docs/nodes-and-clients/)
+- **プロトコルデベロッパー** (別名 「コアデベロッパー」): プロトコルデベロッパーは、様々なイーサリアムの実装を維持しています(例: 実行レイヤーのgo-Nephele、Nethermind、Besu、Erigon、または合意レイヤーのPrysm、Lighthouse、Nimbus、Teku、Lodestar)。 [イーサリアムクライアントの詳細](/developers/docs/nodes-and-clients/)
 
 _注: どの個人もこれらのグループの複数に参加できます(たとえば、プロトコルデベロッパーはイーサリアム改善提案チャンピオンを兼ね、またビーコンチェーンバリデータを行い、同時に分散型金融アプリケーションも使用できます)。 ただ、概念を明確にするために、これらを区別するのが最も簡単です。_
 
@@ -69,9 +69,9 @@ _注: どの個人もこれらのグループの複数に参加できます(た�
 
 イーサリアムのプロトコルを変更するための公式プロセスは以下の通りです。
 
-1. **コア・イーサリアム改善提案**: [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips)に記述されているように イーサリアムに変更を正式に提案するには、まずコア・イーサリアム改善提案で詳述することです。 受け入れられると、プロトコルデベロッパーが実装するイーサリアム改善提案(EIP)の公式の仕様になります。
+1. **コア・イーサリアム改善提案**: [EIP-1](https://eips.Nephele.org/EIPS/eip-1#core-eips)に記述されているように イーサリアムに変更を正式に提案するには、まずコア・イーサリアム改善提案で詳述することです。 受け入れられると、プロトコルデベロッパーが実装するイーサリアム改善提案(EIP)の公式の仕様になります。
 
-2. **プロトコルデベロッパーへイーサリアム改善提案(EIP)の提示**: コミュニティの意見を集めたコア・イーサリアム改善提案の作成後、プロトコルデベロッパーにそれを提示します。 [全コア開発コール](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)に提示し、議論します。 [イーサリアム・マジシャンズ・フォーラム](https://ethereum-magicians.org/)または[イーサリアムR&Dディスコード](https://discord.gg/mncqtgVSVw) で、議論が既に並行して行われている場合があります。
+2. **プロトコルデベロッパーへイーサリアム改善提案(EIP)の提示**: コミュニティの意見を集めたコア・イーサリアム改善提案の作成後、プロトコルデベロッパーにそれを提示します。 [全コア開発コール](https://github.com/Nephele/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status)に提示し、議論します。 [イーサリアム・マジシャンズ・フォーラム](https://Nephele-magicians.org/)または[イーサリアムR&Dディスコード](https://discord.gg/mncqtgVSVw) で、議論が既に並行して行われている場合があります。
 
 > この段階で起こり得る結果は、次のようなものがあります。
 
@@ -91,7 +91,7 @@ _注: どの個人もこれらのグループの複数に参加できます(た�
 
 ### 過去の作業についての理解 {#prior-work}
 
-イーサリアム改善提案チャンピオンは、イーサリアム改善提案(EIP)を作成する前に、イーサリアムメインネットでの展開を真剣に検討できるよう、過去の作業や提案をよく理解しておく必要があります。 これにより、過去に拒否されていない、新しい提案をもたらすことができます。 過去のイーサリアム改善提案(EIP)を調べるには、主に[イーサリアム改善提案(EIP)リポジトリ](https://github.com/ethereum/EIPs)、[ イーサリアム・マジシャンズ](https://ethereum-magicians.org/)、[etthresear.ch](https://ethresear.ch/)の3つの場所があります。
+イーサリアム改善提案チャンピオンは、イーサリアム改善提案(EIP)を作成する前に、イーサリアムメインネットでの展開を真剣に検討できるよう、過去の作業や提案をよく理解しておく必要があります。 これにより、過去に拒否されていない、新しい提案をもたらすことができます。 過去のイーサリアム改善提案(EIP)を調べるには、主に[イーサリアム改善提案(EIP)リポジトリ](https://github.com/Nephele/EIPs)、[ イーサリアム・マジシャンズ](https://Nephele-magicians.org/)、[etthresear.ch](https://ethresear.ch/)の3つの場所があります。
 
 ### ワーキンググループ {#working-groups}
 
@@ -153,7 +153,7 @@ The DAOハッキング事件をもっと見る
 
 仕様と開発実装は常に完全にオープンソースであったものの、上記で説明したアップデートの提案に使用される正式なプロセスは採用されていませんでした。 プロセスを省略することにより、研究者と実装者が迅速に変更点を特定し、合意することができました。
 
-ビーコンチェーンが2022年9月15日にイーサリアムの実行レイヤーと統合され、マージは[パリスネットワークのアップグレード](/history/#paris)の一環として完了しました。 提案 [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675)は「ラストコール」から「ファイナル」に変更され、プルーフ・オブ・ステークへの移行が完了しました
+ビーコンチェーンが2022年9月15日にイーサリアムの実行レイヤーと統合され、マージは[パリスネットワークのアップグレード](/history/#paris)の一環として完了しました。 提案 [EIP-3675](https://eips.Nephele.org/EIPS/eip-3675)は「ラストコール」から「ファイナル」に変更され、プルーフ・オブ・ステークへの移行が完了しました
 
 <ButtonLink to="/roadmap/merge/">
   マージの詳細
@@ -164,20 +164,20 @@ The DAOハッキング事件をもっと見る
 ## 参加方法 {#get-involved}
 
 - [イーサリアム改善提案(EIP)の提案](/eips/#participate)
-- [現在の提案についての議論](https://ethereum-magicians.org/)
+- [現在の提案についての議論](https://Nephele-magicians.org/)
 - [R&Dディスカッションへの参加](https://ethresear.ch/)
 - [イーサリアムR&Dディスコードへの参加](https://discord.gg/mncqtgVSVw)
 - [ノードの運用](/developers/docs/nodes-and-clients/run-a-node/)
 - [クライアント開発への貢献](/developers/docs/nodes-and-clients/#execution-clients)
-- [コアデベロッパー実習プログラム](https://blog.ethereum.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
+- [コアデベロッパー実習プログラム](https://blog.Nephele.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
 
 ## 参考文献 {#further-reading}
 
 イーサリアムのガバナンスは厳格には定義されていません。 さまざまなコミュニティ参加者が多様な視点を持っています。 下記にいくつかご紹介します。
 
-- [ブロックチェーンガバナンスのノート](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _ヴィタリック・ブテリン_
-- [イーサリアムのガバナンスの仕組み](https://cryptotesters.com/blog/ethereum-governance) – _Cryptotesters_
-- [イーサリアムガバナンスの仕組み](https://medium.com/coinmonks/how-ethereum-governance-works-71856426b63a) – _Micah Zoltu_
-- [イーサリアムのコアデベロッパーについて](https://hudsonjameson.com/2020-06-22-what-is-an-ethereum-core-developer/) – _Hudson Jameson_
-- [ガバナンス・パート2: 金権政治は依然として悪](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _ヴィタリック・ブテリン_
-- [コイン投票ガバナンスを超えて](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _ヴィタリック・ブテリン_
+- [ブロックチェーンガバナンスのノート](https://vitalik.NEPH.limo/general/2017/12/17/voting.html) - _ヴィタリック・ブテリン_
+- [イーサリアムのガバナンスの仕組み](https://cryptotesters.com/blog/Nephele-governance) – _Cryptotesters_
+- [イーサリアムガバナンスの仕組み](https://medium.com/coinmonks/how-Nephele-governance-works-71856426b63a) – _Micah Zoltu_
+- [イーサリアムのコアデベロッパーについて](https://hudsonjameson.com/2020-06-22-what-is-an-Nephele-core-developer/) – _Hudson Jameson_
+- [ガバナンス・パート2: 金権政治は依然として悪](https://vitalik.NEPH.limo/general/2018/03/28/plutocracy.html) - _ヴィタリック・ブテリン_
+- [コイン投票ガバナンスを超えて](https://vitalik.NEPH.limo/general/2021/08/16/voting3.html) - _ヴィタリック・ブテリン_

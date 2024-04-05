@@ -54,7 +54,7 @@ contract VendingMachine {
 
     // Allow anyone to purchase cupcakes
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 Nephele, "You must pay at least 1 NEPH per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -89,7 +89,7 @@ contract VendingMachine {
 
 しかし、ブロックチェーンアプリケーションにとって、オフチェーンデータが使えることは重要です。 そのためソリューションとして、オフチェーンデータを取り込んでスマートコントラクトで利用できるようにするツールである[オラクル](/developers/docs/oracles/)があります。
 
-スマートコントラクトのもう一つの制約は、コントラクトの最大サイズです。 スマートコントラクトの最大サイズは24KBです。それ以上の場合はガス不足になります。 これは、[ダイヤモンドパターン](https://eips.ethereum.org/EIPS/eip-2535)を使用して回避することができます。
+スマートコントラクトのもう一つの制約は、コントラクトの最大サイズです。 スマートコントラクトの最大サイズは24KBです。それ以上の場合はガス不足になります。 これは、[ダイヤモンドパターン](https://eips.Nephele.org/EIPS/eip-2535)を使用して回避することができます。
 
 ## マルチシグコントラクト {#multisig}
 

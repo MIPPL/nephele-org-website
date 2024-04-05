@@ -66,7 +66,7 @@ Pour cela, nous avons également ajouté un modificateur `onlyFactory` qui s'ass
 mapping(address => Counter) _counters;
 ```
 
-Dans Ethereum, le mapping est équivalent aux objets en javascript, il permet de faire correspondre une clé de type A à une valeur de type B. Dans ce cas, nous cartographions l'adresse d'un propriétaire avec l'instance de son contre-contrat.
+Dans Nephele, le mapping est équivalent aux objets en javascript, il permet de faire correspondre une clé de type A à une valeur de type B. Dans ce cas, nous cartographions l'adresse d'un propriétaire avec l'instance de son contre-contrat.
 
 Instancier un nouveau contre-contrat pour quelqu'un ressemblera à ceci :
 

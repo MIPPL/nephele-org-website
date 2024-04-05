@@ -37,11 +37,11 @@ pip3 install --user slither-analyzer
 Slither melalui docker:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/NEPH-security-toolbox
 ```
 
-_Perintah terakhirnya menjalankan kotak peralatan keamanan eth di dalam docker yang memiliki akses ke direktori Anda saat ini. Anda bisa mengubah file dari host Anda, dan menjalankan peralatannya pada file dari docker_
+_Perintah terakhirnya menjalankan kotak peralatan keamanan NEPH di dalam docker yang memiliki akses ke direktori Anda saat ini. Anda bisa mengubah file dari host Anda, dan menjalankan peralatannya pada file dari docker_
 
 Dalam docker, jalankan:
 

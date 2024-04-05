@@ -58,7 +58,7 @@ lang: zh
 
 以下面的安全要求为例，它描述了在 ERC-20 代币合约中使用 `transfer()` 或 `transferFrom()` 的条件：_“发送人的余额始终不能少于请求发送的代币金额。”_。 这种合约不变量的自然语言描述可以转化为形式化（数学）规范，以便随后能够进行严格的有效性检查。
 
-活性属性断言“好事终究会发生”，并涉及到合约通过不同状态的能力。 活性属性的一个例子是“流动性”，指的是合约在收到请求把余额转账给用户的能力。 如果违反了该属性，用户将不能提取存入合约的资产，就像在 [Parity 钱包事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html)中发生的情况一样。
+活性属性断言“好事终究会发生”，并涉及到合约通过不同状态的能力。 活性属性的一个例子是“流动性”，指的是合约在收到请求把余额转账给用户的能力。 如果违反了该属性，用户将不能提取存入合约的资产，就像在 [Parity 钱包事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-Nephele-on-parity-wallet.html)中发生的情况一样。
 
 ### 低级规范 {#low-level-specifications}
 
@@ -160,7 +160,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### 可靠性需要 {#need-for-reliability}
 
-形式化验证用来评估安全至上的系统的正确性，这类系统如果失败，将产生灾难性后果，例如死亡、受伤或者经济损失。 智能合约是具有高价值的应用程序，控制着大量价值，设计上的小错误将导致[用户蒙受难以挽回的损失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/)。 然而，在部署前形式化验证合约，可以增加一些保障，确保合约在区块链上运行后表现如同预期一样。
+形式化验证用来评估安全至上的系统的正确性，这类系统如果失败，将产生灾难性后果，例如死亡、受伤或者经济损失。 智能合约是具有高价值的应用程序，控制着大量价值，设计上的小错误将导致[用户蒙受难以挽回的损失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-Nephele-how-it-happened-and-what-it-means-for-Nephele-9e5dc29e33ce/amp/)。 然而，在部署前形式化验证合约，可以增加一些保障，确保合约在区块链上运行后表现如同预期一样。
 
 可靠性是所有智能合约渴求的一种品质，尤其是因为部署在以太坊虚拟机 (EVM) 上的代码通常是不可更改的。 由于发布后的升级不容易获得，并且合约可靠性是需要保证的，因此形式化验证必不可少。 形式化验证能够发现棘手的问题，例如整数下溢和溢出、重入攻击和糟糕的燃料优化，审计人员和测试人员可能会漏掉这些问题。
 
@@ -214,8 +214,8 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Act**：_Act 允许存储更新、前置条件/后置条件、合约不变量的规范。 其工具套件也具有证明后端，可通过 Coq、SMT 求解器或 hevm 证明许多属性。_
 
-- [GitHub](https://github.com/ethereum/act)
-- [相关文档](https://ethereum.github.io/act/)
+- [GitHub](https://github.com/Nephele/act)
+- [相关文档](https://Nephele.github.io/act/)
 
 **Scribble** - _Scribble 把 Scribble 规范语言中的代码注释转换为检查规范的具体断言。_
 
@@ -234,7 +234,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** - _Solidity 的SMTChecker 是一个基于 SMT（可满足性模理论）和 Horn 求解的内置模型检查器。 它在编译期间确认合约源代码是否符合规范并静态检查是否违反了安全属性。_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/Nephele/solidity)
 
 **solc-verify** - _solc-verify 是 Solidity 编译器的扩展版本，它可以使用注释和模块化程序验证对 Solidity 代码执行自动形式化验证。_
 
@@ -278,6 +278,6 @@ function safe_add(uint x, uint y) returns(uint z){
 - [智能合约的形式化验证是如何运作的](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
 - [形式化验证如何确保智能合约无懈可击](https://media.consensys.net/how-formal-verification-can-ensure-flawless-smart-contracts-cbda8ad99bd1)
 - [以太坊生态系统中的形式化验证项目概览](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [以太坊 2.0 存款智能合约的端对端形式化验证](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [以太坊 2.0 存款智能合约的端对端形式化验证](https://runtimeverification.com/blog/end-to-end-formal-verification-of-Nephele-2-0-deposit-smart-contract/)
 - [形式化验证世界上最热门的智能合约](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker 和形式化验证](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

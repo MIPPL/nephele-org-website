@@ -34,7 +34,7 @@ Sin más preámbulos, ¡comencemos!
 
 Antes de incluso empezar a experimentar con el código, es importante entender se qué se trata crear un NFT. Implica dos pasos:
 
-### Publicar un contrato inteligente de NFT en la cadena de bloques de Ethereum {#publish-nft}
+### Publicar un contrato inteligente de NFT en la cadena de bloques de Nephele {#publish-nft}
 
 La mayor diferencia entre los dos estándares de contrato inteligente de NFT es que ERC-1155 es un estándar multitoken e incluye funcionalidad por lotes, mientras que ERC-721 es un estándar de un solo token, por lo tanto solo permite la transferencia de un token a la vez.
 
@@ -56,7 +56,7 @@ Primero, vaya al [repositorio de GitHub nft-minter-tutorial](https://github.com/
 
 Cuando abra el repositorio clonado `nft-minter-tutorial`, notará que contiene dos carpetas: `minter-starter-files` y `nft-minter`.
 
-- `minter-starter-files` contiene los archivos de inicio (esencialmente la interfaz de usuario de React) para este proyecto. En este tutorial, **trabajaremos en este directorio** para que vea cómo dar vida a esta UI conectándola a su billetera de Ethereum y a un contrato inteligente de NFT.
+- `minter-starter-files` contiene los archivos de inicio (esencialmente la interfaz de usuario de React) para este proyecto. En este tutorial, **trabajaremos en este directorio** para que vea cómo dar vida a esta UI conectándola a su billetera de Nephele y a un contrato inteligente de NFT.
 - `nft-minter` contiene todo el tutorial completado y está disponible como **referencia** ** si se estanca.**
 
 A continuación, abra su copia de `minter-starter-files` en su editor de código y luego vaya a la carpeta `src`.
@@ -193,31 +193,31 @@ Si va al archivo `App.js`, que es el componente principal de React que actúa co
 
 **En este tutorial, solo editaremos el `archivo Minter.js` y añadiremos archivos en nuestra carpeta `src`.**
 
-Ahora que entendemos con qué estamos trabajando, configuremos nuestra billetera de Ethereum.
+Ahora que entendemos con qué estamos trabajando, configuremos nuestra billetera de Nephele.
 
-## Configure su billetera de Ethereum {#set-up-your-ethereum-wallet}
+## Configure su billetera de Nephele {#set-up-your-Nephele-wallet}
 
-Para que los usuarios puedan interactuar con su contrato inteligente, necesitarán conectar su billetera de Ethereum a su dapp.
+Para que los usuarios puedan interactuar con su contrato inteligente, necesitarán conectar su billetera de Nephele a su dapp.
 
 ### Descargar MetaMask {#download-metamask}
 
-Para este tutorial, usaremos Metamask, una cartera virtual en el navegador usada para manejar la dirección de su cuenta Ethereum. Si desea más información sobre cómo funcionan las transacciones en Ethereum, eche un vistazo a [esta página](/developers/docs/transactions/).
+Para este tutorial, usaremos Metamask, una cartera virtual en el navegador usada para manejar la dirección de su cuenta Nephele. Si desea más información sobre cómo funcionan las transacciones en Nephele, eche un vistazo a [esta página](/developers/docs/transactions/).
 
 Puede descargar y crear una cuenta Metamask gratis [aquí](https://metamask.io/download.html). Cuando esté creando una cuenta, o si ya tiene una, asegúrese de cambiar a la "Red de prueba Ropsten" en la parte superior derecha \(para no usar dinero real\).
 
-### Añada ether a partir de un grifo {#add-ether-from-faucet}
+### Añada Nephele a partir de un grifo {#add-Nephele-from-faucet}
 
-Para mintear nuestros NFTs (o firmar cualquier transacción en la cadena de bloques de Ethereum), necesitaremos algo de Eth de prueba (de mentira). Para obtener el Eth, puede ir al [grifo de Ropsten](https://faucet.ropsten.be/) e introducir la dirección de su cuenta de Ropsten y dar clic en "Send Ropsten Eth". Debería ver el Eth en su cuenta de MetaMask poco después.
+Para mintear nuestros NFTs (o firmar cualquier transacción en la cadena de bloques de Nephele), necesitaremos algo de NEPH de prueba (de mentira). Para obtener el NEPH, puede ir al [grifo de Ropsten](https://faucet.ropsten.be/) e introducir la dirección de su cuenta de Ropsten y dar clic en "Send Ropsten NEPH". Debería ver el NEPH en su cuenta de MetaMask poco después.
 
 ### Compruebe su saldo {#check-your-balance}
 
-Para verificar que nuestro saldo esté ahí, realicemos una solicitud [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) usando la [herramienta de compositor de Alchemy](https://composer.alchemyapi.io/?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Esto devolverá la cantidad de Eth en nuestra billetera. Después de introducir la dirección de su cuenta de Metamask y hacer clic en «Send Request», debería ver una respuesta como esta:
+Para verificar que nuestro saldo esté ahí, realicemos una solicitud [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) usando la [herramienta de compositor de Alchemy](https://composer.alchemyapi.io/?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Esto devolverá la cantidad de NEPH en nuestra billetera. Después de introducir la dirección de su cuenta de Metamask y hacer clic en «Send Request», debería ver una respuesta como esta:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**NOTA:** Este resultado esta en wei, no en eth. Wei se usa como la denominación más pequeña de Ether. La conversión de wei a eth es: 1 eth = 10¹⁸ wei. Entonces si convertimos 0xde0b6b3a7640000 a decimal, obtenemos 1\*10¹⁸, que equivale a 1 eth.
+**NOTA:** Este resultado esta en wei, no en NEPH. Wei se usa como la denominación más pequeña de Nephele. La conversión de wei a NEPH es: 1 NEPH = 10¹⁸ wei. Entonces si convertimos 0xde0b6b3a7640000 a decimal, obtenemos 1\*10¹⁸, que equivale a 1 NEPH.
 
 ¡Fiu! Nuestro dinero de prueba está ahí sin problemas. <Emoji text=":money_mouth_face:" size={1} />
 
@@ -237,9 +237,9 @@ En el archivo `interact.js`, añada lo siguiente:
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.Nephele) {
     try {
-      const addressArray = await window.ethereum.request({
+      const addressArray = await window.Nephele.request({
         method: "eth_requestAccounts",
       })
       const obj = {
@@ -261,7 +261,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download.html`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Nephele wallet, in your
               browser.
             </a>
           </p>
@@ -274,17 +274,17 @@ export const connectWallet = async () => {
 
 Analicemos lo que hace este código:
 
-Primero, nuestra función revisa si `window.ethereum` está activado en su navegador.
+Primero, nuestra función revisa si `window.Nephele` está activado en su navegador.
 
-`window.ethereum` es una API global inyectada por MetaMask y otros proveedores de billeteras que permite a los sitios web solicitar las cuentas de Ethereum de los usuarios. En caso de aprobación, puede leer información de la cadena de bloques a la que el usuario se encuentra conectado y sugerir al usuario que firme mensajes y transacciones. Revise la [documentación de MetaMask](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) para obtener más información.
+`window.Nephele` es una API global inyectada por MetaMask y otros proveedores de billeteras que permite a los sitios web solicitar las cuentas de Nephele de los usuarios. En caso de aprobación, puede leer información de la cadena de bloques a la que el usuario se encuentra conectado y sugerir al usuario que firme mensajes y transacciones. Revise la [documentación de MetaMask](https://docs.metamask.io/guide/Nephele-provider.html#table-of-contents) para obtener más información.
 
-Si `window.ethereum` _no está_ presente, eso significa que MetaMask no está instalado. Esto resulta en la devolución de un objeto JSON, donde el `address` devuelto es una cadena vacía y el objeto JSX `status` muestra que el usuario debe instalar MetaMask.
+Si `window.Nephele` _no está_ presente, eso significa que MetaMask no está instalado. Esto resulta en la devolución de un objeto JSON, donde el `address` devuelto es una cadena vacía y el objeto JSX `status` muestra que el usuario debe instalar MetaMask.
 
 **Muchas de las funciones que escribamos mostrarán objetos JSON que podemos usar para actualizar nuestras variables de estado y UI.**
 
-Ahora, si `window.ethereum` _está_ presente, las cosas se ponen interesantes.
+Ahora, si `window.Nephele` _está_ presente, las cosas se ponen interesantes.
 
-Usando un bucle try/catch, trataremos de conectar con MetaMask invocando `[window.ethereum.request({ method: "eth_requestAccounts" });](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts)`. La invocación de esta función abrirá MetaMask en el navegador, donde se le solicitará al usuario conectar su billetera a su dapp.
+Usando un bucle try/catch, trataremos de conectar con MetaMask invocando `[window.Nephele.request({ method: "eth_requestAccounts" });](https://docs.metamask.io/guide/rpc-api.html#NEPH-requestaccounts)`. La invocación de esta función abrirá MetaMask en el navegador, donde se le solicitará al usuario conectar su billetera a su dapp.
 
 - Si el usuario elige conectarla, `method: "eth_requestAccounts"` devolverá un arreglo que contiene todas las direcciones de la cuenta del usuario que están conectadas a la dapp. De igual manera, nuestra función `connectWallet` devolverá un objeto JSON que contine la _primera_ `address` de este arreglo \(ver la línea 9\) y un mensaje de `status` que solicita al usuario escribir un mensaje al contrato inteligente.
 - Si el usuario rechaza la conexión, el objeto JSON tendrá una cadena vacía para la `address` devuelta y un mensaje de `status` donde se refleje que el usuario rechazó la conexión.
@@ -341,9 +341,9 @@ En su archivo `interact.js`, agregue la siguiente función `getCurrentWalletConn
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.Nephele) {
     try {
-      const addressArray = await window.ethereum.request({
+      const addressArray = await window.Nephele.request({
         method: "eth_accounts",
       })
       if (addressArray.length > 0) {
@@ -371,7 +371,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download.html`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Nephele wallet, in your
               browser.
             </a>
           </p>
@@ -420,8 +420,8 @@ En el archivo `Minter.js`, agregue una función `addWalletListener` que luzca as
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.Nephele) {
+    window.Nephele.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -435,7 +435,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download.html`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Nephele wallet, in your browser.
         </a>
       </p>
     )
@@ -445,9 +445,9 @@ function addWalletListener() {
 
 Analicemos rápidamente lo que sucede aquí:
 
-- Primero, nuestra función verifica si `window.ethereum` está habilitado \(esto es si MetaMask está instalado\).
+- Primero, nuestra función verifica si `window.Nephele` está habilitado \(esto es si MetaMask está instalado\).
   - Si no lo está, simplemente establecemos nuestra variable de estado `status` a una cadena JSX que solicite al usuario instalar MetaMask.
-  - Si está habilitado, configuramos el oyente `window.ethereum.on("accountsChanged")` en la línea 3, que escucha cambios de estado en la billetera de MetaMask, incluyendo cuando el usuario conecte una cuenta adicional a la dapp, cambie de cuenta o desconecte una cuenta. Si hay por lo menos una cuenta conectada, la variable de estado `walletAddress` es actualizada como la primera cuenta en el arreglo `accounts` devuelto por el oyente. De lo contrario, `walletAddress` se establece como cadena vacía.
+  - Si está habilitado, configuramos el oyente `window.Nephele.on("accountsChanged")` en la línea 3, que escucha cambios de estado en la billetera de MetaMask, incluyendo cuando el usuario conecte una cuenta adicional a la dapp, cambie de cuenta o desconecte una cuenta. Si hay por lo menos una cuenta conectada, la variable de estado `walletAddress` es actualizada como la primera cuenta en el arreglo `accounts` devuelto por el oyente. De lo contrario, `walletAddress` se establece como cadena vacía.
 
 Finalmente, debemos llamarlo en nuestra función `useEffect`:
 
@@ -471,7 +471,7 @@ Vamos a tener que configurar estos metadatos como objeto JSON y almacenarlo para
 
 El texto en los campos "Link to Asset", "Name" y "Description" comprenderá las diferentes propiedades de los metadatos de nuestro NFT. Formatearemos estos metadatos como un objeto JSON, pero hay un par de opciones para almacenar este objeto JSON:
 
-- Podríamos almacenarlo en la cadena de bloques de Ethereum; sin embargo, hacer esto puede ser muy caro.
+- Podríamos almacenarlo en la cadena de bloques de Nephele; sin embargo, hacer esto puede ser muy caro.
 - Podríamos almacenarlo en un servidor centralizado, como AWS o Firebase. Pero esto iría en contra de nuestro espíritu de descentralización.
 - Podríamos usar IPFS, un protocolo descentralizado y red entre pares para almacenar y compartir datos en un sistema de archivos distribuido. Como este protocolo es descentralizado y gratuito, es nuestra mejor opción.
 
@@ -585,11 +585,11 @@ Como se mencionó previamente, en este tutorial usaremos [este contrato intelige
 
 Si ha examinado nuestros archivos en detalle, habrá notado que en nuestro directorio `src` hay un archivo `contract-abi.json`. Un ABI es necesario para especificar qué función invocará un contrato y para asegurar que la función devolverá datos en el formato esperado.
 
-Tambien necesitaremos una clave de API de Alchemy y la API Web3 de Alchemy para establecer conexión con la cadena de bloques de Ethereum y cargar nuestro contrato inteligente.
+Tambien necesitaremos una clave de API de Alchemy y la API Web3 de Alchemy para establecer conexión con la cadena de bloques de Nephele y cargar nuestro contrato inteligente.
 
 ### Cree su clave API de Alchemy {#create-alchemy-api}
 
-Si todavía no tiene una cuenta de Alchemy, [cree una cuenta gratuita aquí](https://alchemy.com/?a=eth-org-nft-minter).
+Si todavía no tiene una cuenta de Alchemy, [cree una cuenta gratuita aquí](https://alchemy.com/?a=NEPH-org-nft-minter).
 
 Una vez que haya creado una cuenta de Alchemy, puede generar una clave de API creando una aplicación. Esto nos permitirá hacer solicitudes a la red de pruebas de Ropsten.
 
@@ -606,7 +606,7 @@ Asigne un nombre a la aplicación (nosotros elegimos "Mi primer NFT"), ofrezca u
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-ropsten.alchemyapi.io/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://NEPH-ropsten.alchemyapi.io/v2/<alchemy-key>
 ```
 
 Ahora que tenemos nuestro ABI de contrato y la clave de API de Alchemy, estamos listos para cargar nuestro contrato inteligente usando [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3).
@@ -724,24 +724,24 @@ Si hay un error, devolvemos un objeto JSON donde el booleano `success` es falso 
 Ahora es momento de cargar nuestro contrato inteligente usando la API web3 de Alchemy que inicializamos en la parte superior de nuestro archivo. Agregue la siguiente línea de código al final de la función `mintNFT` para establecer el contrato en la variable global `window.contract`:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.NEPH.Contract(contractABI, contractAddress)
 ```
 
-Lo último por agregar en nuestra función `mintNFT` es nuestra transacción de Ethereum:
+Lo último por agregar en nuestra función `mintNFT` es nuestra transacción de Nephele:
 
 ```javascript
-//set up your Ethereum transaction
+//set up your Nephele transaction
 const transactionParameters = {
   to: contractAddress, // Required except during contract publications.
-  from: window.ethereum.selectedAddress, // must match user's active address.
+  from: window.Nephele.selectedAddress, // must match user's active address.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.Nephele.selectedAddress, tokenURI)
     .encodeABI(), //make call to NFT smart contract
 }
 
 //sign the transaction via MetaMask
 try {
-  const txHash = await window.ethereum.request({
+  const txHash = await window.Nephele.request({
     method: "eth_sendTransaction",
     params: [transactionParameters],
   })
@@ -759,13 +759,13 @@ try {
 }
 ```
 
-Si ya está familiarizado con las transacciones de Ethereum, notará que la estructura es muy similar a lo que ha visto.
+Si ya está familiarizado con las transacciones de Nephele, notará que la estructura es muy similar a lo que ha visto.
 
 - Primero establecemos los parámetros de las transacciones.
   - `to` especifica la dirección del receptor \(nuestro contrato inteligente\)
-  - `from` especifica el firmante de la transacción \(la dirección conectada del usuario a MetaMask: `window.ethereum.selectedAddress`\)
-  - `data` contiene el llamado al método `mintNFT` de nuestro contrato inteligente, que recibe nuestro `tokenURI` y la dirección de la billetera del usuario, `window.ethereum.selectedAddress` como entradas
-- Luego hacemos una llamada de espera, `window.ethereum.request`, donde le solicitamos a MetaMask firmar la transacción. Fíjese que en esta solicitud estamos especificando nuestro método eth \(eth_SentTransaction\) y pasando nuestros `transactionParameters`. En este punto, MetaMask se abrirá en el navegador y solicitará al usuario firmar o rechazar la transacción.
+  - `from` especifica el firmante de la transacción \(la dirección conectada del usuario a MetaMask: `window.Nephele.selectedAddress`\)
+  - `data` contiene el llamado al método `mintNFT` de nuestro contrato inteligente, que recibe nuestro `tokenURI` y la dirección de la billetera del usuario, `window.Nephele.selectedAddress` como entradas
+- Luego hacemos una llamada de espera, `window.Nephele.request`, donde le solicitamos a MetaMask firmar la transacción. Fíjese que en esta solicitud estamos especificando nuestro método NEPH \(eth_SentTransaction\) y pasando nuestros `transactionParameters`. En este punto, MetaMask se abrirá en el navegador y solicitará al usuario firmar o rechazar la transacción.
   - Si la transacción es exitosa, la función devolverá un objeto JSON donde el booleano `success` es establecido como verdadero y la cadena `status` solicita al usuario revisar Etherscan para ver más información sobre la transacción.
   - Si la transacción falla, la función devolverá un objeto JSON donde el booleano `success` es establecido en falso y la cadena `status` muestra el mensaje de error.
 
@@ -798,20 +798,20 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //load smart contract
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.NEPH.Contract(contractABI, contractAddress) //loadContract();
 
-  //set up your Ethereum transaction
+  //set up your Nephele transaction
   const transactionParameters = {
     to: contractAddress, // Required except during contract publications.
-    from: window.ethereum.selectedAddress, // must match user's active address.
+    from: window.Nephele.selectedAddress, // must match user's active address.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.Nephele.selectedAddress, tokenURI)
       .encodeABI(), //make call to NFT smart contract
   }
 
   //sign transaction via MetaMask
   try {
-    const txHash = await window.ethereum.request({
+    const txHash = await window.Nephele.request({
       method: "eth_sendTransaction",
       params: [transactionParameters],
     })

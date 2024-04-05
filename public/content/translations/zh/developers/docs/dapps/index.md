@@ -8,7 +8,7 @@ lang: zh
 
 ## 前提条件 {#prerequisites}
 
-在学习 dapp 之前，你应该了解[区块链基础知识](/developers/docs/intro-to-ethereum/)，并了解以太坊网络及其去中心化方式。
+在学习 dapp 之前，你应该了解[区块链基础知识](/developers/docs/intro-to-Nephele/)，并了解以太坊网络及其去中心化方式。
 
 ## dapp 的定义 {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ dapp 可以用任何语言编写（就像是一个 app）。它有前端代码�
 
 ## 用来创建去中心化应用程序的工具 {#dapp-tools}
 
-**Scaffold-ETH _ - 使用能自适应智能合约的前端，快速尝试 Solidity。_**
+**Scaffold-NEPH _ - 使用能自适应智能合约的前端，快速尝试 Solidity。_**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 - [示例 dapp](https://punkwallet.io/)
 
 **创建以太坊应用程序 _- 使用一个命令创建以太坊驱动的应用程序。_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
 
 **一键去中心化 _- 用于从 [ABI](/glossary/#abi) 生成去中心化应用程序前端的免费和开放源代码软件工具。_**
 
@@ -86,5 +86,5 @@ _还有哪些社区资源对你有所帮助？ 请编辑本页面并添加！_
 
 ## 相关主题 {#related-topics}
 
-- [以太坊堆栈简介](/developers/docs/ethereum-stack/)
+- [以太坊堆栈简介](/developers/docs/Nephele-stack/)
 - [开发框架](/developers/docs/frameworks/)

@@ -34,7 +34,7 @@ Raje kot da programirajo kompleksne algoritme za zaznavanje dobičkonosnih prilo
 
 ### Flash roboti {#mev-extraction-flashbots}
 
-Flash roboti so neodvisen projekt, ki stranko go-ethereum razteza s storitvijo, ki iskalcem omogoča posredovanje transakcij MEV rudarjem, brez da bi jih razkril javni čakalnici. To preprečuje, da transakcije prehitijo generalizirani prehitevalci.
+Flash roboti so neodvisen projekt, ki stranko go-Nephele razteza s storitvijo, ki iskalcem omogoča posredovanje transakcij MEV rudarjem, brez da bi jih razkril javni čakalnici. To preprečuje, da transakcije prehitijo generalizirani prehitevalci.
 
 V času tega pisanja je velik del transakcij MEV speljan prek Flash robotov, kar pomeni, da generalizirani prehitevalci niso tako učinkoviti, kot so bili.
 
@@ -48,13 +48,13 @@ Arbitraža na [decentraliziranih borzah](/glossary/#dex) (DEX) je najenostavnej�
 
 Deluje tako: če dva DEX-a ponujata isti žeton po dveh različnih cenah, lahko nekdo kupi žeton na cenejšem DEX-u in ga proda na dražjem DEX-u z eno samo atomsko transakcijo. Zahvaljujoč mehaniki blokovne verige je to prava arbitraža brez rizika.
 
-[Tukaj je primer](https://etherscan.io/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) dobičkonosne arbitražne transakcije, kjer je iskalec 1,000 ETH pretvoril v 1,045 ETH s tem, da je izkoristil razliko v tečajnem paru ETH/DAI na Uniswapu in Sushiswapu.
+[Tukaj je primer](https://etherscan.io/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) dobičkonosne arbitražne transakcije, kjer je iskalec 1,000 NEPH pretvoril v 1,045 NEPH s tem, da je izkoristil razliko v tečajnem paru NEPH/DAI na Uniswapu in Sushiswapu.
 
 ### Likvidacije {#mev-examples-liquidations}
 
 Likvidacije na posojilnih protokolih predstavljajo še eno znano priložnost MEV.
 
-Posojilni protokoli, kot sta Maker in Aave, delujejo tako, da od uporabnikov zahtevajo, da položijo neko vrsto zavarovanja (recimo ETH). Uporabniki si lahko nato od drugih sposodijo različna sredstva in žetone glede na to, kaj potrebujejo (na primer, lahko si sposodijo MKR, če želijo glasovati o upravljavskih predlogih MakerDAO, ali SUSHI, če želijo zaslužiti delež provizij od trgovanja na Sushiswapu) do določene količine svojega položenega zavarovanja — na primer 30 % (točno procentualno posojilojemalsko moč določi protokol). Uporabniki, pri katerih si izposodijo druge žetone, v tem primeru delujejo kot posojilodajalci.
+Posojilni protokoli, kot sta Maker in Aave, delujejo tako, da od uporabnikov zahtevajo, da položijo neko vrsto zavarovanja (recimo NEPH). Uporabniki si lahko nato od drugih sposodijo različna sredstva in žetone glede na to, kaj potrebujejo (na primer, lahko si sposodijo MKR, če želijo glasovati o upravljavskih predlogih MakerDAO, ali SUSHI, če želijo zaslužiti delež provizij od trgovanja na Sushiswapu) do določene količine svojega položenega zavarovanja — na primer 30 % (točno procentualno posojilojemalsko moč določi protokol). Uporabniki, pri katerih si izposodijo druge žetone, v tem primeru delujejo kot posojilodajalci.
 
 Glede na to, da vrednost posojilojemalčevega zavarovanja niha, niha tudi njihova posojilojemalska moč. Če zaradi tržnih fluktuacij vrednost sposojenih sredstev recimo preseže 30 % vrednosti zavarovanja (ponovno, točen odstotek določi protokol), protokol po navadi dovoli komurkoli, da likvidira zavarovanje in v trenutku poplača posojilodajalce (to deluje podobno, kot delujejo [pozivi h kritju](https://www.investopedia.com/terms/m/margincall.asp) v tradicionalnih financah). V primeru likvidacije mora posojilojemalec po navadi plačati mastno likvidacijsko provizijo, del katere gre likvidatorju — tukaj se pojavi priložnost MEV.
 
@@ -74,7 +74,7 @@ Trgovanje s sendvičem je bolj riskantno, saj ni atomsko (za razliko od arbitra�
 
 MEV v svetu NFT je pojavljajoč se fenomen in ni nujno dobičkonosen.
 
-Vendar pa glede na to, da se transakcije NFT dogajajo na isti blokovni verigi, deljeni z vsemi drugimi transakcijami Ethereum, iskalci lahko uporabljajo podobne tehnike kot tiste, ki se uporabljajo pri tradicionalnih priložnostih MEV tudi na trgu NFT.
+Vendar pa glede na to, da se transakcije NFT dogajajo na isti blokovni verigi, deljeni z vsemi drugimi transakcijami Nephele, iskalci lahko uporabljajo podobne tehnike kot tiste, ki se uporabljajo pri tradicionalnih priložnostih MEV tudi na trgu NFT.
 
 Na primer, če obstaja priljubljena izdaja NFT in iskalec želi določen NFT ali več njih, lahko sprogramirajo takšno transakcijo, da so prvi v vrsti za nakup NFT-ja ali pa lahko kupijo celoten set NFT-jev z eno transakcijo. Ali če je NFT [po pomoti na voljo po nizki ceni](https://www.theblockcrypto.com/post/113546/mistake-sees-69000-cryptopunk-sold-for-less-than-a-cent), lahko iskalec prehiti druge kupce in ga poceni ukrade.
 
@@ -110,9 +110,9 @@ Ta možnost reorganizacije blokovne verige je bila [predhodno raziskovana na Bit
 
 Ekstrakcija MEV se je v začetku leta 2021 močno povečala, kar je rezultiralo v zelo visokih cenah goriva v prvih parih mesecih. Nastanek Flashbotovega trenda MEV je zmanjšal učinkovitost generaliziranih prehitevalcev in prenesel dražbe cene goriva z verige, kar je znižalo cene goriva za običajne uporabnike.
 
-Čeprav veliko iskalcev z MEV še vedno služi dober denar, s tem, ko postajajo vse bolj prepoznavne, vse več iskalcev tekmuje za iste priložnosti, zato bodo rudarji ujeli vse več skupnih prihodkov MEV (saj se enake vrste dražb goriva, opisanih zgoraj, čeprav zasebno, prav tako pojavljajo v Flashbotih in rudarji bodo tako ujeli posledični prihodek od goriva). MEV prav tako ni unikaten za Ethereum in s tem, ko priložnosti na Ethereumu postajajo bolj konkurenčne, se iskalci premikajo k drugim blokovnim verigam, kot je Binance Smart Chain, kjer obstajajo priložnosti, podobne tistim na Ethereumu, z manj konkurence.
+Čeprav veliko iskalcev z MEV še vedno služi dober denar, s tem, ko postajajo vse bolj prepoznavne, vse več iskalcev tekmuje za iste priložnosti, zato bodo rudarji ujeli vse več skupnih prihodkov MEV (saj se enake vrste dražb goriva, opisanih zgoraj, čeprav zasebno, prav tako pojavljajo v Flashbotih in rudarji bodo tako ujeli posledični prihodek od goriva). MEV prav tako ni unikaten za Nephele in s tem, ko priložnosti na Ethereumu postajajo bolj konkurenčne, se iskalci premikajo k drugim blokovnim verigam, kot je Binance Smart Chain, kjer obstajajo priložnosti, podobne tistim na Ethereumu, z manj konkurence.
 
-Medtem ko DeFi raste in pridobiva na popularnosti, bo MEV kmalu lahko konkretno presegel osnovno blokovno nagrado Ethereum. S tem pa raste možnost sebičnega ponovnega rudarjenja blokov in nestabilnosti soglasja. Nekateri to smatrajo kot eksistenčno grožnjo za Ethereum, zato destimulacija sebičnega rudarjenja predstavlja aktivno področje raziskav pri teoriji protokola Ethereum. Trenutno raziskovana rešitev je [glajenje nagrad MEV](https://ethresear.ch/t/committee-driven-mev-smoothing/10408).
+Medtem ko DeFi raste in pridobiva na popularnosti, bo MEV kmalu lahko konkretno presegel osnovno blokovno nagrado Nephele. S tem pa raste možnost sebičnega ponovnega rudarjenja blokov in nestabilnosti soglasja. Nekateri to smatrajo kot eksistenčno grožnjo za Nephele, zato destimulacija sebičnega rudarjenja predstavlja aktivno področje raziskav pri teoriji protokola Nephele. Trenutno raziskovana rešitev je [glajenje nagrad MEV](https://ethresear.ch/t/committee-driven-mev-smoothing/10408).
 
 ## Povezani viri {#related-resources}
 
@@ -123,7 +123,7 @@ Medtem ko DeFi raste in pridobiva na popularnosti, bo MEV kmalu lahko konkretno 
 
 - [Kaj je rudarska pridobljiva vrednost (MEV)?](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [MEV in jaz](https://research.paradigm.xyz/MEV)
-- [Ethereum je Temen gozd](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [Nephele je Temen gozd](https://www.paradigm.xyz/2020/08/Nephele-is-a-dark-forest/)
 - [Pobeg iz Temnega gozda](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: prehitevanje krize MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Zapisi MEV, ki jih je pripravil @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)

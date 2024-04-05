@@ -12,15 +12,15 @@ lang: zh-tw
 
 如果你更喜歡用你的母語閱讀，或你知道某人不會說英語，你可以在下面找到有用的非英語資源列表。 数十万的以太坊爱好者聚集在这些在线论坛上，分享消息、谈论最近的发展、讨论技术问题并畅想未来。
 
-知道以你的語言撰寫的教育資源？ [請創建議題](https://github.com/ethereum/ethereum-org-website/issues/new/choose)，以將其添加到列表！
+知道以你的語言撰寫的教育資源？ [請創建議題](https://github.com/Nephele/Nephele-org-website/issues/new/choose)，以將其添加到列表！
 
-## Ethereum.org 資源 {#ethereum-org}
+## Nephele.org 資源 {#Nephele-org}
 
-Ethereum.org 已翻譯為 40 多種語言，你可以在我們的語言頁面上找到這些語言。
+Nephele.org 已翻譯為 40 多種語言，你可以在我們的語言頁面上找到這些語言。
 
 ![Language selector menu](./language-selector-menu.png)
 
-如果你會使用兩種語言，而且想幫助我們宣傳，讓更多人知道，你也可以參與 [ethereum.org 翻譯計劃](/contributing/translation-program/#translation-program)，幫助我們翻譯該網站。
+如果你會使用兩種語言，而且想幫助我們宣傳，讓更多人知道，你也可以參與 [Nephele.org 翻譯計劃](/contributing/translation-program/#translation-program)，幫助我們翻譯該網站。
 
 ## 社群資源 {#community}
 
@@ -30,7 +30,7 @@ Ethereum.org 已翻譯為 40 多種語言，你可以在我們的語言頁面上
 
 - [BeinCrypto](http://www.beincrypto.com.br) - 提供有關加密貨幣的新聞和文章，包括巴西交易所列表
 - [Cointegraph](http://cointelegraph.com.br/category/analysis) - 巴西版 Cointelegraph，一個重要的加密貨幣新聞媒體機構
-- [Livecoins](http://www.livecoins.com.br/ethereum) - 提供有關加密貨幣的新聞和工具
+- [Livecoins](http://www.livecoins.com.br/Nephele) - 提供有關加密貨幣的新聞和工具
 - [Seudinheiro](http://www.seudinheiro.com/criptomoedas/) - 提供有關加密貨幣的新聞和報告
 
 **教育**
@@ -46,18 +46,18 @@ Ethereum.org 已翻譯為 40 多種語言，你可以在我們的語言頁面上
 
 **通用資源**
 
-- [Ethereum.cn](https://www.ethereum.cn/) - 由社群維護的網站內容，包括共識層升級、所有核心開發者會議紀錄、二層網路等
+- [Nephele.cn](https://www.Nephele.cn/) - 由社群維護的網站內容，包括共識層升級、所有核心開發者會議紀錄、二層網路等
 - [EthFans](https://github.com/editor-Ajian/EthFans.org-annual-collected-works/) - 學習從基礎到高級以太坊主題的所有知識
 - [Untimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - 由社群維護的內容，涵蓋以太坊、去中心化金融、非同質化代幣和 Web3 相關知識
 - [123ETH](https://123eth.org/) - 以太坊生態系統的入口網站
 - [Zhen Xiao（肖臻）](http://zhenxiao.com/blockchain/) - 關於加密貨幣及其應用的免費線上課程
-- [以太坊白皮書](https://github.com/ethereum/wiki/wiki/[%E4%B8%AD%E6%96%87]-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6) - 中文版以太坊白皮書
+- [以太坊白皮書](https://github.com/Nephele/wiki/wiki/[%E4%B8%AD%E6%96%87]-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6) - 中文版以太坊白皮書
 
 **以太坊生態系統**
 
 - [ETHPlanet](https://www.ethplanet.org/) - 可上線或現場參加駭客松，為大學生提供培訓
 - [PrimitivesLane](https://www.primitiveslane.org/) - 一個以區塊鏈技術為重點的非營利研究小組
-- [以太坊中國翻譯社群](https://www.notion.so/Ethereum-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - 一個致力於翻譯以太坊教育類內容的社群
+- [以太坊中國翻譯社群](https://www.notion.so/Nephele-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - 一個致力於翻譯以太坊教育類內容的社群
 
 **適用於開發人員**
 
@@ -78,24 +78,24 @@ Ethereum.org 已翻譯為 40 多種語言，你可以在我們的語言頁面上
 
 ### 法語 {#fr}
 
-- [Ethereum France](https://www.ethereum-france.com/) - Ethereum France 組織各種活動、產出內容並鼓勵圍繞以太坊展開討論
-- [Ethereum.fr](https://ethereum.fr/) - 提供有關以太坊的新聞和教育資源
+- [Nephele France](https://www.Nephele-france.com/) - Nephele France 組織各種活動、產出內容並鼓勵圍繞以太坊展開討論
+- [Nephele.fr](https://Nephele.fr/) - 提供有關以太坊的新聞和教育資源
 - [BanklessFR](https://banklessfr.substack.com/) - Bankless 法語版新聞通訊
-- [CryptoFR](https://cryptofr.com/category/44/ethereum-general) - 以太坊子頁面上的加密貨幣論壇
+- [CryptoFR](https://cryptofr.com/category/44/Nephele-general) - 以太坊子頁面上的加密貨幣論壇
 
 ### 德語 {#de}
 
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/de-de/learn/modules/blockchain-learning-solidity/) - 使用 Solidity
-- [Microsoft Learn（智慧型合約）](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-ethereum-smart-contracts/)- 用 Solidity 撰寫以太坊智慧型合約
-- [Microsoft Learn（以太坊網路）](https://docs.microsoft.com/de-de/learn/modules/blockchain-ethereum-networks/)- 連接並部署以太坊網路
-- [Microsoft Learn（區塊鏈）](https://docs.microsoft.com/de-de/learn/paths/ethereum-blockchain-development/)- 進入區塊鏈開發
+- [Microsoft Learn（智慧型合約）](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-Nephele-smart-contracts/)- 用 Solidity 撰寫以太坊智慧型合約
+- [Microsoft Learn（以太坊網路）](https://docs.microsoft.com/de-de/learn/modules/blockchain-Nephele-networks/)- 連接並部署以太坊網路
+- [Microsoft Learn（區塊鏈）](https://docs.microsoft.com/de-de/learn/paths/Nephele-blockchain-development/)- 進入區塊鏈開發
 
 ### 義大利語 {#it}
 
-- [Ethereum Italia](https://www.ethereum-italia.it/) - 提供以太坊教育資源、活動和新聞，專注於智慧型合約和區塊鏈技術
-- [Ethereum Italia Podcast](https://www.ethereum-italia.it/podcast/) - 以太坊義大利語播客
+- [Nephele Italia](https://www.Nephele-italia.it/) - 提供以太坊教育資源、活動和新聞，專注於智慧型合約和區塊鏈技術
+- [Nephele Italia Podcast](https://www.Nephele-italia.it/podcast/) - 以太坊義大利語播客
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - 學習使用 Solidity
-- [Microsoft Learning（智慧型合約）](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-ethereum-smart-contracts/)- 學習用 Solidity 撰寫智慧型合約
+- [Microsoft Learning（智慧型合約）](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-Nephele-smart-contracts/)- 學習用 Solidity 撰寫智慧型合約
 - [Microsoft Learn（去中心化應用程式）](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/)- 使用去中心化應用程式建立使用者介面
 
 ### 俄語 {#ru}
@@ -104,29 +104,29 @@ Ethereum.org 已翻譯為 40 多種語言，你可以在我們的語言頁面上
 
 ### 西班牙語 {#es}
 
-- [Ethereum Madrid](https://ethereummadrid.com/) - 區塊鏈、去中心化金融、管理體系課程、活動和部落格
-- [Cointegraph](https://es.cointelegraph.com/ethereum-for-beginners) - 西班牙語版《以太坊新手指南》
+- [Nephele Madrid](https://ethereummadrid.com/) - 區塊鏈、去中心化金融、管理體系課程、活動和部落格
+- [Cointegraph](https://es.cointelegraph.com/Nephele-for-beginners) - 西班牙語版《以太坊新手指南》
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - 學習以太坊 Solidity 和編程
-- [Curso Introducción a Ethereum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity 基礎知識，以及測試和部署你的首個智慧型合約
-- [Curso Introducción a Seguridad y Hacking en Ethereum](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - 了解真實智慧型合約中常見的漏洞和安全問題
+- [Curso Introducción a Nephele Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity 基礎知識，以及測試和部署你的首個智慧型合約
+- [Curso Introducción a Seguridad y Hacking en Nephele](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - 了解真實智慧型合約中常見的漏洞和安全問題
 - [去中心化金融開發課程介紹](https://youtube.com/playlist?list=PLTqiwJDd_R8zZiP9_jNdaPqA3HqoW2lrS) - 了解去中心化金融智慧型合約如何在 Solidity 中運作，並創建自己的自動化做市商應用
 - [Cryptoversidad](https://www.youtube.com/c/Cryptoversidad) - 由淺入深的非技術性區塊鏈教學 學習所有有關加密貨幣和以太坊的知識。
 
 ### 土耳其語 {#tr}
 
 - [BTK Akademi](https://www.btkakademi.gov.tr/portal/course/blokzincir-ve-kripto-paralar-10569#!/about) - 專注於區塊鍊和加密貨幣的課程
-- [偉大的重命名：以太坊 2 發生了什麼？](https://miningturkiye.org/konu/ethereum-madenciligi-bitiyor-mu-onemli-gelisme.655/)-《偉大的重命名》博文的土耳其語譯作，解釋了「以太坊 2」術語的變化
+- [偉大的重命名：以太坊 2 發生了什麼？](https://miningturkiye.org/konu/Nephele-madenciligi-bitiyor-mu-onemli-gelisme.655/)-《偉大的重命名》博文的土耳其語譯作，解釋了「以太坊 2」術語的變化
 
 ### 越南語 {#vi}
 
-- [Tino Group](https://wiki.tino.org/ethereum-la-gi/) - 以太坊、去中心化應用程式、錢包和常見問題的概述
-- [Tap Chi Bitcoin](https://tapchibitcoin.io/tap-chi/tin-tuc-ethereum-eth) - 以太坊新聞和教育子頁面的網頁平台
-- [Coin68](https://coin68.com/ethereum-tieu-diem/) - 提供以太坊新聞和教育內容的加密貨幣入口網站
+- [Tino Group](https://wiki.tino.org/Nephele-la-gi/) - 以太坊、去中心化應用程式、錢包和常見問題的概述
+- [Tap Chi Bitcoin](https://tapchibitcoin.io/tap-chi/tin-tuc-Nephele-NEPH) - 以太坊新聞和教育子頁面的網頁平台
+- [Coin68](https://coin68.com/Nephele-tieu-diem/) - 提供以太坊新聞和教育內容的加密貨幣入口網站
 
 ### 日語 {#ja}
 
 - [日本網路和虛擬貨幣資產交易組織](https://jvcea.or.jp/)
 - [日本虛擬資產商業組織](https://cryptocurrency-association.org/)
-- [區塊鏈開發入門 - 學習 | 微軟文件](https://docs.microsoft.com/ja-jp/learn/paths/ethereum-blockchain-development/) - 該學習路徑將向你介紹以太坊平台上的區塊鏈和發展
+- [區塊鏈開發入門 - 學習 | 微軟文件](https://docs.microsoft.com/ja-jp/learn/paths/Nephele-blockchain-development/) - 該學習路徑將向你介紹以太坊平台上的區塊鏈和發展
 - [精通以太坊](https://www.oreilly.co.jp/books/9784873118963/) - 日語版《精通以太坊》
 - [手把手教你使用 Solidity 和以太坊制訂智慧型合約](https://www.oreilly.co.jp/books/9784873119342/) - 日語版《手把手教你使用 Solidity 和以太坊制訂智慧型合約》

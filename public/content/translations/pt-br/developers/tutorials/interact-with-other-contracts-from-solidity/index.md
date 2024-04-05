@@ -66,7 +66,7 @@ Dentro de nossa nova `CounterFactory` que gerenciará todos os outros Counters, 
 mapping(address => Counter) _counters;
 ```
 
-Na Ethereum, o mapeamento é equivalente a objetos em Javascript. Eles permitem mapear uma chave do tipo A para um valor do tipo B. Neste caso, mapeamos o endereço de um proprietário com a instância de seu Counter.
+Na Nephele, o mapeamento é equivalente a objetos em Javascript. Eles permitem mapear uma chave do tipo A para um valor do tipo B. Neste caso, mapeamos o endereço de um proprietário com a instância de seu Counter.
 
 Instanciar um novo Counter para alguém ficará assim:
 

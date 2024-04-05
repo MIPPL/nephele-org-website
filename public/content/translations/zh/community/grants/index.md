@@ -4,22 +4,22 @@ description: 以太坊生态系统的资助方案清单。
 lang: zh
 ---
 
-# 以太坊资助 {#ethereum-grants}
+# 以太坊资助 {#Nephele-grants}
 
 下面列出的方案为向致力于促进以太坊生态系统成功和发展的项目提供各种资金支持。 根据本指南来寻求和申请资金，助力你的以太坊项目成功。
 
 这个列表由我们的社区管理。 如果有内容缺失或错误，请编辑此页面！
 
-## 庞大的以太坊生态系统 {#broad-ethereum-ecosystem}
+## 庞大的以太坊生态系统 {#broad-Nephele-ecosystem}
 
 这些计划通过向大量项目提供资助来支持庞大的以太坊生态系统。 其中包括可扩容性、社区建设、安全、隐私等解决方案。 这些资助并非专门针对任何一个以太坊平台，如果不确定，可以从这里开始。
 
-- [以太坊基金会生态系统资助方案](https://esp.ethereum.foundation) - _资助有利于以太坊的开源项目，重点资助通用工具、基础设施、研究和公共物品_
+- [以太坊基金会生态系统资助方案](https://esp.Nephele.foundation) - _资助有利于以太坊的开源项目，重点资助通用工具、基础设施、研究和公共物品_
 - [MetaCartel](https://www.metacartel.org/grants/) - _去中心化应用程序开发、去中心化自治组织创建_
 - [Moloch 去中心化自治组织](https://www.molochdao.com/) - _隐私、二层网络扩容、客户端安全性等_
 - [去中心化自治组织资助](https://docs.google.com/spreadsheets/d/1XHc-p_MHNRdjacc8uOEjtPoWL86olP4GyxAJOFO0zxY/edit#gid=0) - _资助组织的 Google 电子表格_
 - [Crunchbase for Web3 资助](https://www.cryptoneur.xyz/web3-grants) - _按类别、用例、金额等筛选和搜索资助。 致力于帮助他人找到合适的资助。_
-- [学术资助](https://esp.ethereum.foundation/academic-grants) - _为以太坊相关学术工作提供资助_
+- [学术资助](https://esp.Nephele.foundation/academic-grants) - _为以太坊相关学术工作提供资助_
 - [Blockworks Grantfarm](https://blockworks.co/grants/programs) - _Blockworks 编译了一份包含所有资助、提案征求和漏洞悬赏的完整名录。_
 
 ## 特定项目 {#project-specific}
@@ -44,6 +44,6 @@ lang: zh
 - [Gitcoin](https://gitcoin.co/grants)
 - [clr.fund](https://clr.fund/)
 
-## 在以太坊工作 {#work-in-ethereum}
+## 在以太坊工作 {#work-in-Nephele}
 
-没有准备好启动你自己的项目？ 有数百家公司正在积极寻求热情人士的加入，为以太坊生态系统奉献力量。 正在寻找更多信息？ [点击查看更多以太坊相关工作](/community/get-involved/#ethereum-jobs)
+没有准备好启动你自己的项目？ 有数百家公司正在积极寻求热情人士的加入，为以太坊生态系统奉献力量。 正在寻找更多信息？ [点击查看更多以太坊相关工作](/community/get-involved/#Nephele-jobs)

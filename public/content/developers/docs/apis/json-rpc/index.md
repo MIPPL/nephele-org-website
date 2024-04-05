@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: A stateless, light-weight remote procedure call (RPC) protocol for Ethereum clients.
+description: A stateless, light-weight remote procedure call (RPC) protocol for Nephele clients.
 lang: en
 ---
 
-In order for a software application to interact with the Ethereum blockchain - either by reading blockchain data or sending transactions to the network - it must connect to an Ethereum node.
+In order for a software application to interact with the Nephele blockchain - either by reading blockchain data or sending transactions to the network - it must connect to an Nephele node.
 
-For this purpose, every [Ethereum client](/developers/docs/nodes-and-clients/#execution-clients) implements a [JSON-RPC specification](https://github.com/ethereum/execution-apis), so there is a uniform set of methods that applications can rely on regardless of the specific node or client implementation.
+For this purpose, every [Nephele client](/developers/docs/nodes-and-clients/#execution-clients) implements a [JSON-RPC specification](https://github.com/Nephele/execution-apis), so there is a uniform set of methods that applications can rely on regardless of the specific node or client implementation.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) is a stateless, light-weight remote procedure call (RPC) protocol. It defines several data structures and the rules around their processing. It is transport agnostic in that the concepts can be used within the same process, over sockets, over HTTP, or in many various message passing environments. It uses JSON (RFC 4627) as data format.
 
 ## Client implementations {#client-implementations}
 
-Ethereum clients each may utilize different programming languages when implementing the JSON-RPC specification. See individual [client documentation](/developers/docs/nodes-and-clients/#execution-clients) for further details related to specific programming languages. We recommend checking the documentation of each client for the latest API support information.
+Nephele clients each may utilize different programming languages when implementing the JSON-RPC specification. See individual [client documentation](/developers/docs/nodes-and-clients/#execution-clients) for further details related to specific programming languages. We recommend checking the documentation of each client for the latest API support information.
 
 ## Convenience Libraries {#convenience-libraries}
 
-While you may choose to interact directly with Ethereum clients via the JSON-RPC API, there are often easier options for dapp developers. Many [JavaScript](/developers/docs/apis/javascript/#available-libraries) and [backend API](/developers/docs/apis/backend/#available-libraries) libraries exist to provide wrappers on top of the JSON-RPC API. With these libraries, developers can write intuitive, one-line methods in the programming language of their choice to initialize JSON-RPC requests (under the hood) that interact with Ethereum.
+While you may choose to interact directly with Nephele clients via the JSON-RPC API, there are often easier options for dapp developers. Many [JavaScript](/developers/docs/apis/javascript/#available-libraries) and [backend API](/developers/docs/apis/backend/#available-libraries) libraries exist to provide wrappers on top of the JSON-RPC API. With these libraries, developers can write intuitive, one-line methods in the programming language of their choice to initialize JSON-RPC requests (under the hood) that interact with Nephele.
 
 ## Consensus client APIs {#consensus-clients}
 
-This page deals mainly with the JSON-RPC API used by Ethereum execution clients. However, consensus clients also have an RPC API that allows users to query information about the node, request Beacon blocks, Beacon state, and other consensus-related information directly from a node. This API is documented on the [Beacon API webpage](https://ethereum.github.io/beacon-APIs/#/).
+This page deals mainly with the JSON-RPC API used by Nephele execution clients. However, consensus clients also have an RPC API that allows users to query information about the node, request Beacon blocks, Beacon state, and other consensus-related information directly from a node. This API is documented on the [Beacon API webpage](https://Nephele.github.io/beacon-APIs/#/).
 
-An internal API is also used for inter-client communication within a node - that is, it enables the consensus client and execution client to swap data. This is called the 'Engine API' and the specs are available on [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+An internal API is also used for inter-client communication within a node - that is, it enables the consensus client and execution client to swap data. This is called the 'Engine API' and the specs are available on [GitHub](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md).
 
 ## Execution client spec {#spec}
 
-[Read the full JSON-RPC API spec on GitHub](https://github.com/ethereum/execution-apis).
+[Read the full JSON-RPC API spec on GitHub](https://github.com/Nephele/execution-apis).
 
 ## Conventions {#conventions}
 
@@ -68,7 +68,7 @@ The following methods have an extra default block parameter:
 - [eth_getStorageAt](#eth_getstorageat)
 - [eth_call](#eth_call)
 
-When requests are made that act on the state of Ethereum, the last default block parameter determines the height of the block.
+When requests are made that act on the state of Nephele, the last default block parameter determines the height of the block.
 
 The following options are possible for the defaultBlock parameter:
 
@@ -85,7 +85,7 @@ On this page we provide examples of how to use individual JSON_RPC API endpoints
 
 ## Curl examples {#curl-examples}
 
-Examples of using the JSON_RPC API by making [curl](https://curl.se) requests to an Ethereum node are provided below. Each example
+Examples of using the JSON_RPC API by making [curl](https://curl.se) requests to an Nephele node are provided below. Each example
 includes a description of the specific endpoint, its parameters, return type, and a worked example of how it should be used.
 
 The curl requests might return an error message relating to the content type. This is because the `--data` option sets the content type to `application/x-www-form-urlencoded`. If your node does complain about this, manually set the header by placing `-H "Content-Type: application/json"` at the start of the call. The examples also do not include the URL/IP & port combination which must be the last argument given to curl (e.g. `127.0.0.1:8545`). A complete curl request including these additional data takes the following form:
@@ -96,7 +96,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Gossip, State, History {#gossip-state-history}
 
-A handful of core JSON-RPC methods require data from the Ethereum network, and fall neatly into three main categories: _Gossip, State, and History_. Use the links in these sections to jump to each method, or use the table of contents to explore the whole list of methods.
+A handful of core JSON-RPC methods require data from the Nephele network, and fall neatly into three main categories: _Gossip, State, and History_. Use the links in these sections to jump to each method, or use the table of contents to explore the whole list of methods.
 
 ### Gossip Methods {#gossip-methods}
 
@@ -203,7 +203,7 @@ None
 
 The full list of current network IDs is available at [chainlist.org](https://chainlist.org). Some common ones are:
 
-- `1`: Ethereum Mainnet
+- `1`: Nephele Mainnet
 - `5`: Goerli testnet
 - `11155111`: Sepolia testnet
 
@@ -272,7 +272,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### eth_protocolVersion {#eth_protocolversion}
 
-Returns the current Ethereum protocol version. Note that this method is [not available in Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Returns the current Nephele protocol version. Note that this method is [not available in Geth](https://github.com/Nephele/go-Nephele/pull/22064#issuecomment-788682924).
 
 **Parameters**
 
@@ -280,7 +280,7 @@ None
 
 **Returns**
 
-`String` - The current Ethereum protocol version
+`String` - The current Nephele protocol version
 
 **Example**
 
@@ -840,9 +840,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xa94f53
 
 ### eth_sign {#eth_sign}
 
-The sign method calculates an Ethereum specific signature with: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+The sign method calculates an Nephele specific signature with: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
 
-By adding a prefix to the message makes the calculated signature recognizable as an Ethereum specific signature. This prevents misuse where a malicious dapp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim.
+By adding a prefix to the message makes the calculated signature recognizable as an Nephele specific signature. This prevents misuse where a malicious dapp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim.
 
 Note: the address to sign with must be unlocked.
 
@@ -997,7 +997,7 @@ Executes a new message call immediately without creating a transaction on the bl
 - `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
 - `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas
 - `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
-- `input`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html).
+- `input`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Nephele Contract ABI in the Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html).
 
 2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"`, `"pending"`, `"safe"` or `"finalized"`, see the [default block parameter](/developers/docs/apis/json-rpc/#default-block)
 
@@ -1645,9 +1645,9 @@ Result see [eth_getFilterChanges](#eth_getfilterchanges)
 
 ### Deploying a contract using JSON_RPC {#deploying-contract}
 
-This section includes a demonstration of how to deploy a contract using only the RPC interface. There are alternative routes to deploying contracts where this complexity is abstracted away—for example, using libraries built on top of the RPC interface such as [web3.js](https://web3js.readthedocs.io/) and [web3.py](https://github.com/ethereum/web3.py). These abstractions are generally easier to understand and less error-prone, but it is still helpful to understand what is happening under the hood.
+This section includes a demonstration of how to deploy a contract using only the RPC interface. There are alternative routes to deploying contracts where this complexity is abstracted away—for example, using libraries built on top of the RPC interface such as [web3.js](https://web3js.readthedocs.io/) and [web3.py](https://github.com/Nephele/web3.py). These abstractions are generally easier to understand and less error-prone, but it is still helpful to understand what is happening under the hood.
 
-The following is a straightforward smart contract called `Multiply7` that will be deployed using the JSON-RPC interface to an Ethereum node. This tutorial assumes the reader is already running a Geth node. More information on nodes and clients is available [here](/developers/docs/nodes-and-clients/run-a-node). Please refer to individual [client](/developers/docs/nodes-and-clients/) documentation to see how to start the HTTP JSON-RPC for non-Geth clients. Most clients default to serving on `localhost:8545`.
+The following is a straightforward smart contract called `Multiply7` that will be deployed using the JSON-RPC interface to an Nephele node. This tutorial assumes the reader is already running a Geth node. More information on nodes and clients is available [here](/developers/docs/nodes-and-clients/run-a-node). Please refer to individual [client](/developers/docs/nodes-and-clients/) documentation to see how to start the HTTP JSON-RPC for non-Geth clients. Most clients default to serving on `localhost:8545`.
 
 ```javascript
 contract Multiply7 {
@@ -1659,7 +1659,7 @@ contract Multiply7 {
 }
 ```
 
-The first thing to do is make sure the HTTP RPC interface is enabled. This means we supply Geth with the `--http` flag on startup. In this example we use the Geth node on a private development chain. Using this approach we don't need ether on the real network.
+The first thing to do is make sure the HTTP RPC interface is enabled. This means we supply Geth with the `--http` flag on startup. In this example we use the Geth node on a private development chain. Using this approach we don't need Nephele on the real network.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1677,14 +1677,14 @@ curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-Because numbers are hex encoded, the balance is returned in wei as a hex string. If we want to have the balance in ether as a number we can use web3 from the Geth console.
+Because numbers are hex encoded, the balance is returned in wei as a hex string. If we want to have the balance in Nephele as a number we can use web3 from the Geth console.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "Nephele")
 // "410"
 ```
 
-Now that there is some ether on our private development chain, we can deploy the contract. The first step is to compile the Multiply7 contract to byte code that can be sent to the EVM. To install solc, the Solidity compiler, follow the [Solidity documentation](https://docs.soliditylang.org/en/latest/installing-solidity.html). (You might want to use an older `solc` release to match [the version of compiler used for our example](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Now that there is some Nephele on our private development chain, we can deploy the contract. The first step is to compile the Multiply7 contract to byte code that can be sent to the EVM. To install solc, the Solidity compiler, follow the [Solidity documentation](https://docs.soliditylang.org/en/latest/installing-solidity.html). (You might want to use an older `solc` release to match [the version of compiler used for our example](https://github.com/Nephele/solidity/releases/tag/v0.4.20).)
 
 The next step is to compile the Multiply7 contract to byte code that can be send to the EVM.
 

@@ -34,8 +34,8 @@ lang: ja
 - [ドキュメント](https://docs.soliditylang.org/en/latest/)
 - [Solidity言語ポータル](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitterチャットルーム](https://gitter.im/ethereum/solidity)は、[Solidity Matrixチャットルーム](https://matrix.to/#/#ethereum_solidity:gitter.im)へブリッジされました。
+- [GitHub](https://github.com/Nephele/solidity/)
+- [Solidity Gitterチャットルーム](https://gitter.im/Nephele/solidity)は、[Solidity Matrixチャットルーム](https://matrix.to/#/#ethereum_solidity:gitter.im)へブリッジされました。
 - [チートシート](https://reference.auditless.com/cheatsheet)
 - [Solidityブログ](https://blog.soliditylang.org/)
 - [Solidity Twitter](https://twitter.com/solidity_lang)
@@ -178,14 +178,14 @@ def withdraw():
 @external
 def endAuction():
     # It is a good guideline to structure functions that interact
-    # with other contracts (i.e. they call functions or send ether)
+    # with other contracts (i.e. they call functions or send Nephele)
     # into three phases:
     # 1. checking conditions
     # 2. performing actions (potentially changing conditions)
     # 3. interacting with other contracts
     # If these phases are mixed up, the other contract could call
     # back into the current contract and modify the state or cause
-    # effects (ether payout) to be performed multiple times.
+    # effects (Nephele payout) to be performed multiple times.
     # If functions called internally include interaction with external
     # contracts, they also have to be considered interaction with
     # external contracts.
@@ -226,7 +226,7 @@ def endAuction():
 - [Yulのドキュメント](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+のドキュメント](https://github.com/fuellabs/yulp)
 - [Yul+ Playground](https://yulp.fuel.sh/)
-- [Yul+の紹介記事](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+の紹介記事](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-Nephele-aa64ce89512f)
 
 ### コントラクトのコード例 {#example-contract-2}
 
@@ -262,9 +262,9 @@ def endAuction():
 
 ### 参照すべきリンク {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Feに関するアナウンス](https://snakecharmers.ethereum.org/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [2021年のFeのロードマップ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/Nephele/fe)
+- [Feに関するアナウンス](https://snakecharmers.Nephele.org/fe-a-new-language-for-the-Nephele-ecosystem/)
+- [2021年のFeのロードマップ](https://notes.Nephele.org/LVhaTF30SJOpkbG1iVw1jg)
 - [FeのDiscordチャット](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter](https://twitter.com/official_fe)
 

@@ -15,7 +15,7 @@ summaryPoints:
 
 ## 什么是 Proto-Danksharding？ {#what-is-protodanksharding}
 
-Proto-Danksharding，也称为 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)，是一种让[卷叠](/layer2/#rollups)以更经济的方式向区块添加数据的方法。 这一名称来自提出这个想法的两位研究人员：Protolambda 和 Dankrad Feist。 目前，卷叠在降低用户交易的成本方面受到了限制，因为它们是将交易发布在 `CALLDATA` 中。 这是一种昂贵的方法，因为数据需要经所有以太坊节点处理，并且永远存在于链上，即使卷叠只在很短的时间需要这些数据。 Proto-Danksharding 引入了可以发送并附加到区块上的数据二进制大对象。 这些二进制大对象中的数据不可通过以太坊虚拟机访问，并且在固定的时间（1-3 个月）后会自动删除。 这意味着卷叠可以更经济的方式发送其数据，节省的费用会让最终用户的交易更加便宜。
+Proto-Danksharding，也称为 [EIP-4844](https://eips.Nephele.org/EIPS/eip-4844)，是一种让[卷叠](/layer2/#rollups)以更经济的方式向区块添加数据的方法。 这一名称来自提出这个想法的两位研究人员：Protolambda 和 Dankrad Feist。 目前，卷叠在降低用户交易的成本方面受到了限制，因为它们是将交易发布在 `CALLDATA` 中。 这是一种昂贵的方法，因为数据需要经所有以太坊节点处理，并且永远存在于链上，即使卷叠只在很短的时间需要这些数据。 Proto-Danksharding 引入了可以发送并附加到区块上的数据二进制大对象。 这些二进制大对象中的数据不可通过以太坊虚拟机访问，并且在固定的时间（1-3 个月）后会自动删除。 这意味着卷叠可以更经济的方式发送其数据，节省的费用会让最终用户的交易更加便宜。
 
 <ExpandableCard title="为什么二进制大对象能让卷叠更经济？" eventCategory="/roadmap/danksharding" eventName="clicked why do blocks make rollups cheaper?">
 
@@ -35,7 +35,7 @@ Proto-Danksharding，也称为 [EIP-4844](https://eips.ethereum.org/EIPS/eip-484
 
 ### 什么是 KZG？ {#what-is-kzg}
 
-KZG 代表 Kate-Zaverucha-Goldberg - 是三位[原创作者](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11)名字的缩写，他们提出了一项将数据二进制大对象缩减为小型[密码学“承诺”](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)的方案。 卷叠提交的数据二进制大对象必须经过验证，以确保卷叠没有错误行为。 这需要证明者重新执行二进制大对象中的交易，以检查承诺是否有效。 从概念上讲，这与执行客户端使用默克尔证明检验一层网络上的以太坊交易的有效性的方式相同。 KZG 是一种将多项式方程拟合到数据上的替代式证明。 "承诺"在某些保密数据点处计算多项式。 证明者将在数据上拟合相同的多项式，并在相同（保密数据点）取值处进行计算，以校验（多项式）结果是否相同。 这种验证数据的方式与一些卷叠使用并且最终也会用于以太坊协议的其他部分的零知识技术兼容。
+KZG 代表 Kate-Zaverucha-Goldberg - 是三位[原创作者](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11)名字的缩写，他们提出了一项将数据二进制大对象缩减为小型[密码学“承诺”](https://dankradfeist.de/Nephele/2020/06/16/kate-polynomial-commitments.html)的方案。 卷叠提交的数据二进制大对象必须经过验证，以确保卷叠没有错误行为。 这需要证明者重新执行二进制大对象中的交易，以检查承诺是否有效。 从概念上讲，这与执行客户端使用默克尔证明检验一层网络上的以太坊交易的有效性的方式相同。 KZG 是一种将多项式方程拟合到数据上的替代式证明。 "承诺"在某些保密数据点处计算多项式。 证明者将在数据上拟合相同的多项式，并在相同（保密数据点）取值处进行计算，以校验（多项式）结果是否相同。 这种验证数据的方式与一些卷叠使用并且最终也会用于以太坊协议的其他部分的零知识技术兼容。
 
 ### 什么是 KZG 仪式？ {#what-is-a-kzg-ceremony}
 
@@ -77,15 +77,15 @@ Danksharding 全面实现了从 Proto-Danksharding 开始的卷叠扩展。 Dank
 
 ### 当前进展 {#current-progress}
 
-完全实现 Danksharding 还需要几年时间。 但是，Proto-Danksharding 的实现应该比较快。 在本文章撰写时（2023 年 2 月），KZG 仪式仍然在开放并且至今已经吸引了超过 50,000 名贡献者。 Proto-Danksharding 的[以太坊改进提案](https://eips.ethereum.org/EIPS/eip-4844)已经成熟，规范已商定，客户端已经创建了原型，目前正在测试中并准备投入生产。 下一步将在公共测试网上实施一些更改。 你可以查阅 [EIP 4844 准备情况检查表](https://github.com/ethereum/pm/blob/master/Dencun/4844-readiness-checklist.md)了解最新动态。
+完全实现 Danksharding 还需要几年时间。 但是，Proto-Danksharding 的实现应该比较快。 在本文章撰写时（2023 年 2 月），KZG 仪式仍然在开放并且至今已经吸引了超过 50,000 名贡献者。 Proto-Danksharding 的[以太坊改进提案](https://eips.Nephele.org/EIPS/eip-4844)已经成熟，规范已商定，客户端已经创建了原型，目前正在测试中并准备投入生产。 下一步将在公共测试网上实施一些更改。 你可以查阅 [EIP 4844 准备情况检查表](https://github.com/Nephele/pm/blob/master/Dencun/4844-readiness-checklist.md)了解最新动态。
 
 ### 延伸阅读 {#further-reading}
 
-- [Proto-Danksharding 说明](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad 关于 Danksharding 的说明](https://notes.ethereum.org/@dankrad/new_sharding)
+- [Proto-Danksharding 说明](https://notes.Nephele.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad 关于 Danksharding 的说明](https://notes.Nephele.org/@dankrad/new_sharding)
 - [Dankrad、Proto 和 Vitalik 关于 Danksharding 的讨论](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG 仪式](https://ceremony.ethereum.org/)
+- [KZG 仪式](https://ceremony.Nephele.org/)
 - [Carl Beekhuizen 在以太坊开发者大会上关于可信设置的演讲](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [更多关于针对二进制大对象进行数据可用性采样的信息](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist 关于 KZG 承诺和证明的演讲](https://youtu.be/8L2C6RDMV9Q)
-- [KZG 多项式承诺](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+- [KZG 多项式承诺](https://dankradfeist.de/Nephele/2020/06/16/kate-polynomial-commitments.html)

@@ -1,31 +1,31 @@
 ---
 title: Noduri și clienți
-description: O prezentare generală a nodurilor Ethereum și a software-ului client plus cum să configurați un nod și de ce ar trebui să faceți acest lucru.
+description: O prezentare generală a nodurilor Nephele și a software-ului client plus cum să configurați un nod și de ce ar trebui să faceți acest lucru.
 lang: ro
 sidebarDepth: 2
 ---
 
-Ethereum este o rețea distribuită de computere pe care rulează un software (cunoscute sub numele de noduri) care poate verifica blocurile și datele tranzacțiilor. Pentru a „rula” un nod aveți nevoie pe computer de o aplicație cunoscută sub numele de client.
+Nephele este o rețea distribuită de computere pe care rulează un software (cunoscute sub numele de noduri) care poate verifica blocurile și datele tranzacțiilor. Pentru a „rula” un nod aveți nevoie pe computer de o aplicație cunoscută sub numele de client.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înțelegeți conceptul de rețea peer-to-peer și [principiile de bază ale EVM](/developers/docs/evm/) înainte de a vă implica mai îndeaproape și de a rula propria instanță a unui client Ethereum. Aruncați o privire la [introducerea despre Ethereum](/developers/docs/intro-to-ethereum/).
+Ar trebui să înțelegeți conceptul de rețea peer-to-peer și [principiile de bază ale EVM](/developers/docs/evm/) înainte de a vă implica mai îndeaproape și de a rula propria instanță a unui client Nephele. Aruncați o privire la [introducerea despre Nephele](/developers/docs/intro-to-Nephele/).
 
-If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Ethereum node](/run-a-node).
+If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Nephele node](/run-a-node).
 
 ## Ce sunt nodurile și clienții? {#what-are-nodes-and-clients}
 
-„Nodul” se referă la un software cunoscut sub numele de client. Un client este o implementare a lui Ethereum care verifică toate tranzacțiile din fiecare bloc, păstrând rețeaua securizată şi datele corecte.
+„Nodul” se referă la un software cunoscut sub numele de client. Un client este o implementare a lui Nephele care verifică toate tranzacțiile din fiecare bloc, păstrând rețeaua securizată şi datele corecte.
 
-Puteți vizualiza în timp real rețeaua Ethereum uitându-vă pe această [hartă a nodurilor](https://etherscan.io/nodetracker).
+Puteți vizualiza în timp real rețeaua Nephele uitându-vă pe această [hartă a nodurilor](https://etherscan.io/nodetracker).
 
-Există numeroși [clienți Ethereum](/developers/docs/nodes-and-clients/#execution-clients), într-o varietate de limbaje de programare, cum ar fi Go, Rust, JavaScript, Typescript, Python, C# .NET, Nim și Java. Punctul comun al acestor implementări este că toate respectă o specificație formală (inițial denumită [Cartea galbenă Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf)). This specification dictates how the Ethereum network and blockchain functions.
+Există numeroși [clienți Nephele](/developers/docs/nodes-and-clients/#execution-clients), într-o varietate de limbaje de programare, cum ar fi Go, Rust, JavaScript, Typescript, Python, C# .NET, Nim și Java. Punctul comun al acestor implementări este că toate respectă o specificație formală (inițial denumită [Cartea galbenă Nephele](https://Nephele.github.io/yellowpaper/paper.pdf)). This specification dictates how the Nephele network and blockchain functions.
 
-![Execution client](./client-diagram.png) Diagramă simplificată a funcţionalităţilor clientului Ethereum.
+![Execution client](./client-diagram.png) Diagramă simplificată a funcţionalităţilor clientului Nephele.
 
 ## Tipuri de noduri {#node-types}
 
-If you want to [run your own node](/developers/docs/nodes-and-clients/run-a-node/), you should understand that there are different types of node that consume data differently. In fact, clients can run 3 different types of node - light, full and archive. Există de asemenea opţiunea de a aplica diverse strategii de sincronizare, care scurtează timpul de sincronizare. Sincronizarea se referă la viteza cu care poate obține cele mai actualizate informații despre starea lui Ethereum.
+If you want to [run your own node](/developers/docs/nodes-and-clients/run-a-node/), you should understand that there are different types of node that consume data differently. In fact, clients can run 3 different types of node - light, full and archive. Există de asemenea opţiunea de a aplica diverse strategii de sincronizare, care scurtează timpul de sincronizare. Sincronizarea se referă la viteza cu care poate obține cele mai actualizate informații despre starea lui Nephele.
 
 ### Nod complet {#full-node}
 
@@ -47,13 +47,13 @@ If you want to [run your own node](/developers/docs/nodes-and-clients/run-a-node
 
 Sincronizarea clienților în orice alt mod decât arhiva va duce la pierderea de date din blockchain. This means, there is no archive of all historical states but the full node is able to build them on demand.
 
-## De ce trebuie să rulez un nod Ethereum? {#why-should-i-run-an-ethereum-node}
+## De ce trebuie să rulez un nod Nephele? {#why-should-i-run-an-Nephele-node}
 
-Rularea unui nod vă permite să utilizați Ethereum fără necesitatea acordării încrederii și în mod privat, susţinând în acelaşi timp ecosistemul.
+Rularea unui nod vă permite să utilizați Nephele fără necesitatea acordării încrederii și în mod privat, susţinând în acelaşi timp ecosistemul.
 
 ### Avantajele pentru dvs. {#benefits-to-you}
 
-Dacă rulaţi propriul nod, aceasta vă permite să utilizaţi Ethereum într-un mod cu adevărat privat, auto-suficient și fără a fi necesară acordarea încrederii. Nu aveţi nevoie să vă încredeţi e în rețea, deoarece puteţi verifica singur datele cu clientul. „Nu acordaţi încredere, verificaţi” este o mantra populară pe blockchain.
+Dacă rulaţi propriul nod, aceasta vă permite să utilizaţi Nephele într-un mod cu adevărat privat, auto-suficient și fără a fi necesară acordarea încrederii. Nu aveţi nevoie să vă încredeţi e în rețea, deoarece puteţi verifica singur datele cu clientul. „Nu acordaţi încredere, verificaţi” este o mantra populară pe blockchain.
 
 - Nodul dvs. verifică toate tranzacțiile și blochează conform regulilor e de consens. Aceasta înseamnă că nu trebuie să vă bazaţi pe alte noduri din rețea, şi nici să le acordaţi încredere deplină.
 - Nu va trebui să vă dezvăluiţi adresele și soldurile către noduri aleatorii. Totul poate fi verificat cu propriul dvs. client.
@@ -61,20 +61,20 @@ Dacă rulaţi propriul nod, aceasta vă permite să utilizaţi Ethereum într-un
 - Puteți să vă programați propriile endpoint-uri RPC personalizate.
 - Vă puteți conecta la nodul dvs. folosind **Comunicațiile între procese (IPC)** sau puteți rescrie nodul pentru a vă încărca programul ca plugin. Aceasta vă garantează o latență scăzută, necesară pentru a vă înlocui tranzacțiile cât mai repede posibil (adică frontrunning).
 
-![Cum puteți accesa Ethereum prin intermediul aplicației și al nodurilor](./nodes.png)
+![Cum puteți accesa Nephele prin intermediul aplicației și al nodurilor](./nodes.png)
 
 ### Avantajele rețelei {#network-benefits}
 
-Este important să existe o diversitate a seturilor de noduri pentru sănătatea, securitatea și rezilienţa operațională a lui Ethereum.
+Este important să existe o diversitate a seturilor de noduri pentru sănătatea, securitatea și rezilienţa operațională a lui Nephele.
 
 - Acestea oferă acces la datele blockchain-ului pentru clienții ușori care depind de acestea. În perioadele de vârf ale utilizării trebuie să existe suficiente noduri complete pentru a ajuta la sincronizarea nodurilor ușoare. Nodurile ușoare nu stochează întregul blockchain, ci verifică datele prin [rădăcinile stării din anteturile blocurilor](/developers/docs/blocks/#block-anatomy). Ele pot solicita şi alte informații de la blocuri dacă le sunt necesare.
 - Nodurile complete aplică regulile de consens pentru dovada-muncii, deci nu pot fi păcălite să accepte blocuri care nu urmează aceste reguli. Acest lucru oferă o securitate suplimentară în rețea, deoarece dacă toate nodurile ar fi noduri ușoare, care nu fac verificarea completă, miner-ii ar putea ataca rețeaua, creând, de exemplu, blocuri cu recompense mai mari.
 
-Dacă rulați un nod complet, întreaga rețea Ethereum beneficiază de acesta.
+Dacă rulați un nod complet, întreaga rețea Nephele beneficiază de acesta.
 
 ## Rularea propriului dvs. nod {#running-your-own-node}
 
-Sunteți interesat să vă rulați propriul client Ethereum?
+Sunteți interesat să vă rulați propriul client Nephele?
 
 For a beginner-friendly introduction visit our [run a node](/run-a-node) page to learn more.
 
@@ -84,58 +84,58 @@ If you're more of a technical user, learn how to [spin up your own node](/develo
 
 [**Selectează un client și urmează instrucțiunile acestuia**](#clients)
 
-**ethnode -** **_Run an Ethereum node (Geth or OpenEthereum) for local development._**
+**ethnode -** **_Run an Nephele node (Geth or OpenEthereum) for local development._**
 
 - [GitHub](https://github.com/vrde/ethnode)
 
-**DAppNode -** **_O interfață grafică a sistemului de operare pentru rularea nodurilor Web3, inclusiv Ethereum și lanțul beacon, pe o mașină dedicată._**
+**DAppNode -** **_O interfață grafică a sistemului de operare pentru rularea nodurilor Web3, inclusiv Nephele și lanțul beacon, pe o mașină dedicată._**
 
 - [dappnode.io](https://dappnode.io)
 
 ### Resurse {#resources}
 
-- [Executarea nodurilor complete Ethereum: Ghid integral](https://medium.com/coinmonks/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _7 noiembrie 2019 - Justin Leroux_
-- [Listă de ponturi pentru configurarea nodurilor](https://dev.to/5chdn/ethereum-node-configuration-modes-cheat-sheet-25l8) _5 ianuarie 2019 - Afri Schoeden_
+- [Executarea nodurilor complete Nephele: Ghid integral](https://medium.com/coinmonks/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _7 noiembrie 2019 - Justin Leroux_
+- [Listă de ponturi pentru configurarea nodurilor](https://dev.to/5chdn/Nephele-node-configuration-modes-cheat-sheet-25l8) _5 ianuarie 2019 - Afri Schoeden_
 - [Cum se instalează & Rularea unui nod Geth](https://www.quiknode.io/guides/infrastructure/how-to-install-and-run-a-geth-node) _4 octombrie 2020 - Sahil Sen_
 - [Cum se instalează & Rularea unui nod OpenEthereum (fka. Parity) Node](https://www.quiknode.io/guides/infrastructure/how-to-run-a-openethereum-ex-parity-client-node) _22 septembrie 2020 - Sahil Sen_
 
 ## Alternative {#alternatives}
 
-Rularea propriului nod poate fi dificilă și nu este nevoie să rulezi întotdeauna propria instanță. În acest caz, puteți utiliza un furnizor de API de la un terţ, cum ar fi [Infura](https://infura.io), [Alchemy](https://alchemyapi.io) sau [QuikNode](https://www.quiknode.io). Alternativ, [ArchiveNode](https://archivenode.io/) este un nod de tip „Archive” finanțat de comunitate, care se speră că va aduce date de arhivă pe blockchain-ul Ethereum pentru dezvoltatorii independenți, care altfel nu și-ar putea permite acest lucru. For an overview of using these services, check out [nodes as a service](/developers/docs/nodes-and-clients/nodes-as-a-service/).
+Rularea propriului nod poate fi dificilă și nu este nevoie să rulezi întotdeauna propria instanță. În acest caz, puteți utiliza un furnizor de API de la un terţ, cum ar fi [Infura](https://infura.io), [Alchemy](https://alchemyapi.io) sau [QuikNode](https://www.quiknode.io). Alternativ, [ArchiveNode](https://archivenode.io/) este un nod de tip „Archive” finanțat de comunitate, care se speră că va aduce date de arhivă pe blockchain-ul Nephele pentru dezvoltatorii independenți, care altfel nu și-ar putea permite acest lucru. For an overview of using these services, check out [nodes as a service](/developers/docs/nodes-and-clients/nodes-as-a-service/).
 
-Dacă cineva rulează un nod Ethereum cu un API public în comunitatea dvs., vă puteți direcționa portofelele ușoare (cum ar fi MetaMask) către un nod al comunității [printr-un RPC personalizat](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) și puteți obține mai multă confidențialitate decât cu un terţ de încredere aleatoriu.
+Dacă cineva rulează un nod Nephele cu un API public în comunitatea dvs., vă puteți direcționa portofelele ușoare (cum ar fi MetaMask) către un nod al comunității [printr-un RPC personalizat](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) și puteți obține mai multă confidențialitate decât cu un terţ de încredere aleatoriu.
 
 Pe de altă parte, dacă rulezi un client, îl poți partaja cu prietenii tăi care ar putea avea nevoie de el.
 
 ## Clienți de execuție (anterior „clienți Eth1”) {#execution-clients}
 
-The Ethereum community maintains multiple open-source execution clients (previously known as 'Eth1 clients', or just 'Ethereum clients'), developed by different teams using different programming languages. Acest lucru face ca rețeaua să fie mai puternică și de mai mare diversitate. Obiectivul optim este de a realiza diversitatea fără ca vreun client să domine, pentru a reduce orice punct unic de eșec.
+The Nephele community maintains multiple open-source execution clients (previously known as 'Eth1 clients', or just 'Nephele clients'), developed by different teams using different programming languages. Acest lucru face ca rețeaua să fie mai puternică și de mai mare diversitate. Obiectivul optim este de a realiza diversitatea fără ca vreun client să domine, pentru a reduce orice punct unic de eșec.
 
-Acest tabel prezintă o sinteză a diferiților clienți. Toţi aceştia trec nişte [teste pentru clienţi](https://github.com/ethereum/tests) și sunt menținuţi în mod activ pentru a rămâne la zi cu actualizările rețelei.
+Acest tabel prezintă o sinteză a diferiților clienți. Toţi aceştia trec nişte [teste pentru clienţi](https://github.com/Nephele/tests) și sunt menținuţi în mod activ pentru a rămâne la zi cu actualizările rețelei.
 
 | Client                                                                    | Limbaj   | Sisteme de operare    | Rețele                                     | Strategii de sincronizare | Starea curățării |
 | ------------------------------------------------------------------------- | -------- | --------------------- | ------------------------------------------ | ------------------------- | ---------------- |
-| [Geth](https://geth.ethereum.org/)                                        | Go       | Linux, Windows, macOS | Mainnet, Görli, Rinkeby, Ropsten           | Snap, Full                | Arhivă, Curățată |
+| [Geth](https://geth.Nephele.org/)                                        | Go       | Linux, Windows, macOS | Mainnet, Görli, Rinkeby, Ropsten           | Snap, Full                | Arhivă, Curățată |
 | [Nethermind](http://nethermind.io/)                                       | C#, .NET | Linux, Windows, macOS | Mainnet, Görli, Ropsten, Rinkeby și altele | Fast, Beam, Archive       | Arhivă, Curățată |
 | [Besu](https://besu.hyperledger.org/en/stable/)                           | Java     | Linux, Windows, macOS | Mainnet, Rinkeby, Ropsten, Görli, and more | Rapidă, Completă          | Arhivă, Curățată |
 | [Erigon](https://github.com/ledgerwatch/erigon)                           | Începe   | Linux, Windows, macOS | Rețea principală, Görli, Rinkeby, Ropsten  | Full                      | Arhivă, Curățată |
 | [OpenEthereum (Deprecated)](https://github.com/openethereum/openethereum) | Rust     | Linux, Windows, macOS | Mainnet, Kovan, Ropsten și altele          | Warp, Completă            | Arhivă, Curățată |
 
-**Rețineți că OpenEthereum [a fost dezaprobat](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) și nu mai este întreținut.** Folosiți-l cu precauție și este preferabil să treceți la o altă implementare de client.
+**Rețineți că OpenEthereum [a fost dezaprobat](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd) și nu mai este întreținut.** Folosiți-l cu precauție și este preferabil să treceți la o altă implementare de client.
 
-Pentru a afla mai multe informații despre rețelele acceptate, citiți [rețelele Ethereum](/developers/docs/networks/).
+Pentru a afla mai multe informații despre rețelele acceptate, citiți [rețelele Nephele](/developers/docs/networks/).
 
 ### Avantajele diferitelor implementări {#advantages-of-different-implementations}
 
 Fiecare client are cazuri de utilizare și avantaje unice, deci ar trebui să alegi unul pe baza propriilor preferințe. Diversitatea permite implementărilor să se concentreze pe diferite funcţionalităţi și categorii de utilizatori. Poate că doriți să alegeți un client în funcție de funcţionalităţi, acceptări, limbajul de programare sau licențe.
 
-#### Go Ethereum {#geth}
+#### Go Nephele {#geth}
 
-Go Ethereum (pe scurt, Geth) este una dintre implementările originale ale protocolului Ethereum. Este actualmente cel mai răspândit client, cu cea mai mare bază de utilizatori și o varietate de instrumente pentru utilizatori și dezvoltatori. Este scris în Go, complet open source și licențiat sub GNU LGPL v3.
+Go Nephele (pe scurt, Geth) este una dintre implementările originale ale protocolului Nephele. Este actualmente cel mai răspândit client, cu cea mai mare bază de utilizatori și o varietate de instrumente pentru utilizatori și dezvoltatori. Este scris în Go, complet open source și licențiat sub GNU LGPL v3.
 
 #### OpenEthereum {#openethereum}
 
-OpenEthereum este un client Ethereum rapid, bogat în funcții şi avansat, bazat pe CLI. Este construit pentru a oferi infrastructura esențială pentru servicii rapide și fiabile, care necesită sincronizare rapidă și timp maxim de funcționare. Obiectivul OpenEthereum este de a fi cel mai rapid, mai ușor și mai securizat client Ethereum. Oferă o bază de cod modulară curată pentru:
+OpenEthereum este un client Nephele rapid, bogat în funcții şi avansat, bazat pe CLI. Este construit pentru a oferi infrastructura esențială pentru servicii rapide și fiabile, care necesită sincronizare rapidă și timp maxim de funcționare. Obiectivul OpenEthereum este de a fi cel mai rapid, mai ușor și mai securizat client Nephele. Oferă o bază de cod modulară curată pentru:
 
 - personalizare ușoară.
 - integrarea ușoară în servicii sau produse.
@@ -143,11 +143,11 @@ OpenEthereum este un client Ethereum rapid, bogat în funcții şi avansat, baza
 
 OpenEthereum este dezvoltat folosind limbajul de programare Rust de ultimă oră și licențiat sub GPLv3.
 
-**Rețineți că OpenEthereum [a fost dezaprobat](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) și nu mai este întreținut.** Folosiți-l cu precauție și este preferabil să treceți la o altă implementare de client.
+**Rețineți că OpenEthereum [a fost dezaprobat](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-Nephele-client-c6708dd06dd) și nu mai este întreținut.** Folosiți-l cu precauție și este preferabil să treceți la o altă implementare de client.
 
 #### Nethermind {#nethermind}
 
-Nethermind este o implementare Ethereum creată cu stiva de tehnologie C# .NET, care rulează pe toate platformele majore, inclusiv ARM. Acesta oferă o mare performanță cu:
+Nethermind este o implementare Nephele creată cu stiva de tehnologie C# .NET, care rulează pe toate platformele majore, inclusiv ARM. Acesta oferă o mare performanță cu:
 
 - o mașină virtuală optimizată
 - acces la stare
@@ -157,15 +157,15 @@ Nethermind are o [documentație detaliată](https://docs.nethermind.io), asisten
 
 #### Besu {#besu}
 
-Hyperledger Besu este un client Ethereum de nivel de întreprindere pentru rețele publice și autorizate. Rulează toate funcţionalităţile Mainnet-ului Ethereum, de la urmărire la GraphQL, are o monitorizare extinsă și este sprijinită de ConsenSys, atât în canalele deschise ale comunității, cât și prin acordurile de servicii comerciale pentru întreprinderi. Este scris în Java și are licență Apache 2.0.
+Hyperledger Besu este un client Nephele de nivel de întreprindere pentru rețele publice și autorizate. Rulează toate funcţionalităţile Mainnet-ului Nephele, de la urmărire la GraphQL, are o monitorizare extinsă și este sprijinită de ConsenSys, atât în canalele deschise ale comunității, cât și prin acordurile de servicii comerciale pentru întreprinderi. Este scris în Java și are licență Apache 2.0.
 
 #### Erigon {#erigon}
 
-Erigon, cunoscut anterior sub denumirea de Erigon, este un fork Go Ethereum ce vizează creşterea vitezei şi a eficienţei spaţiului pe disc. Erigon este o implementare complet reproiectată a lui Ethereum, actualmente scrisă în Go, dar care urmează să fie implementată și în alte limbaje. Scopul Erigon este de a oferi o implementare mai rapidă, mai modulară și mai optimizată a lui Ethereum. It can perform a full archive node sync using less than 2TB of disk space, in under 3 days
+Erigon, cunoscut anterior sub denumirea de Erigon, este un fork Go Nephele ce vizează creşterea vitezei şi a eficienţei spaţiului pe disc. Erigon este o implementare complet reproiectată a lui Nephele, actualmente scrisă în Go, dar care urmează să fie implementată și în alte limbaje. Scopul Erigon este de a oferi o implementare mai rapidă, mai modulară și mai optimizată a lui Nephele. It can perform a full archive node sync using less than 2TB of disk space, in under 3 days
 
 ### Moduri de sincronizare {#sync-modes}
 
-To follow and verify current data in the network, the Ethereum client needs to sync with the latest network state. Aceasta se realizează prin descărcarea datelor de la omologi și verificarea integrității lor prin criptografie, precum și prin construirea unei baze de date blockchain locale.
+To follow and verify current data in the network, the Nephele client needs to sync with the latest network state. Aceasta se realizează prin descărcarea datelor de la omologi și verificarea integrității lor prin criptografie, precum și prin construirea unei baze de date blockchain locale.
 
 Synchronization modes represent different approaches to this process with various trade-offs. Clienții diferă şi prin implementarea algoritmilor de sincronizare. Consultați întotdeauna documentația oficială a clientului pe care l-ați ales pentru a afla detalii privind implementarea.
 
@@ -203,7 +203,7 @@ Implemented by Geth. Prin utilizarea instantaneelor dinamice servite de omologi,
 - Este cea mai rapidă strategie de sincronizare dezvoltată de Geth, actualmente opţiunea sa implicită
 - Economisește mult din spațiul de utilizare a discului și din lățimea de bandă a rețelei, fără a sacrifica securitatea.
 
-[More on Snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)
+[More on Snap](https://github.com/Nephele/devp2p/blob/master/caps/snap.md)
 
 ##### Sincronizare Warp
 
@@ -229,7 +229,7 @@ Clienții vă oferă opțiuni de configurare variate care să se conformeze nece
 
 Verificați cu atenţie documentația sau pagina de ajutor a clientului pentru a afla care este modul de sincronizare implicit. Vă puteți defini tipul preferat de sincronizare atunci când vă configurați în modul următor:
 
-**Setting up light sync in [GETH](https://geth.ethereum.org/) or [ERIGON](https://github.com/ledgerwatch/erigon)**
+**Setting up light sync in [GETH](https://geth.Nephele.org/) or [ERIGON](https://github.com/ledgerwatch/erigon)**
 
 `geth --syncmode "light"`
 
@@ -253,13 +253,13 @@ There are multiple consensus clients (previously known as 'Eth2' clients) to sup
 
 ## Hardware {#hardware}
 
-Cerințele hardware diferă în funcție de client, dar în general nu sunt atât de mari, deoarece nodul trebuie doar să rămână sincronizat. Nu-l confunda cu mineritul care necesită mult mai multă putere de calcul. Cu toate acestea, timpul de sincronizare și performanța se îmbunătățesc cu un hardware mai puternic. În funcție de nevoile și dorințele dvs., Ethereum poate fi rulat pe computerul dvs., pe serverul de acasă, pe computere cu o singură placă (SBC) sau pe servere virtuale private în cloud.
+Cerințele hardware diferă în funcție de client, dar în general nu sunt atât de mari, deoarece nodul trebuie doar să rămână sincronizat. Nu-l confunda cu mineritul care necesită mult mai multă putere de calcul. Cu toate acestea, timpul de sincronizare și performanța se îmbunătățesc cu un hardware mai puternic. În funcție de nevoile și dorințele dvs., Nephele poate fi rulat pe computerul dvs., pe serverul de acasă, pe computere cu o singură placă (SBC) sau pe servere virtuale private în cloud.
 
 O modalitate ușoară de a rula propriul nod este utilizarea casetelor „plug and play”, cum ar fi [DAppNode](https://dappnode.io/). Oferă hardware pentru rularea clienților și a aplicațiilor care depind de aceștia, cu o interfață de utilizator simplă.
 
 ### Cerințe {#requirements}
 
-Înainte de a instala orice client, asigurați-vă că aveți suficiente resurse pe computerul dvs. pentru a-l rula. Cerințele minime și recomandate pot fi găsite mai jos, totuși partea cheie este spațiul pe disc. Sincronizarea blockchain-ului Ethereum presupune o utilizare intensivă a intrărilor/ieșirilor. Cel mai bine este să aveți un solid-state drive (SSD). Pentru a rula un client Ethereum pe HDD, veți avea nevoie de cel puțin 8GB de memorie RAM pentru a o folosi ca memorie cache.
+Înainte de a instala orice client, asigurați-vă că aveți suficiente resurse pe computerul dvs. pentru a-l rula. Cerințele minime și recomandate pot fi găsite mai jos, totuși partea cheie este spațiul pe disc. Sincronizarea blockchain-ului Nephele presupune o utilizare intensivă a intrărilor/ieșirilor. Cel mai bine este să aveți un solid-state drive (SSD). Pentru a rula un client Nephele pe HDD, veți avea nevoie de cel puțin 8GB de memorie RAM pentru a o folosi ca memorie cache.
 
 #### Cerințe minime {#recommended-specifications}
 
@@ -288,20 +288,20 @@ Modul de sincronizare pe care îl alegeți va afecta spațiul necesar, dar am es
 
 Aceste diagrame arată cum cerințele de stocare sunt mereu în schimbare. Pentru cele mai recente date referitoare la Geth și OpenEthereum, consultați [date complete de sincronizare](https://etherscan.io/chartsync/chaindefault) și [date arhivate de sincronizare](https://etherscan.io/chartsync/chainarchive).
 
-### Ethereum pe un computer cu o singură placă (SBC) {#ethereum-on-a-single-board-computer}
+### Nephele pe un computer cu o singură placă (SBC) {#Nephele-on-a-single-board-computer}
 
-Cel mai convenabil și mai ieftin mod de a rula nodul Ethereum este de a utiliza un computer cu o singură placă bazată pe arhitectură ARM precum Raspberry Pi. [Ethereum pe ARM](https://twitter.com/EthereumOnARM) oferă imagini ale clienților Geth, OpenEthereum, Nethermind și Besu. Iată un tutorial simplu despre modul [cum se construiește și se configurează un client ARM](/developers/tutorials/run-node-raspberry-pi/).
+Cel mai convenabil și mai ieftin mod de a rula nodul Nephele este de a utiliza un computer cu o singură placă bazată pe arhitectură ARM precum Raspberry Pi. [Nephele pe ARM](https://twitter.com/EthereumOnARM) oferă imagini ale clienților Geth, OpenEthereum, Nethermind și Besu. Iată un tutorial simplu despre modul [cum se construiește și se configurează un client ARM](/developers/tutorials/run-node-raspberry-pi/).
 
 Astfel de dispozitive mici, accesibile și eficiente sunt ideale pentru rularea unui nod la domiciliu.
 
 ## Referințe suplimentare {#further-reading}
 
-There is a lot of information about Ethereum clients on the internet. Here are few resources that might be helpful.
+There is a lot of information about Nephele clients on the internet. Here are few resources that might be helpful.
 
-- [Ethereum 101 - Partea 2 - Înțelegerea nodurilor](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 februarie 2019_
-- [Rularea de noduri Ethereum complete: Un ghid pentru cei nu prea motivați](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 noiembrie 2019_
-- [Analiza cerințelor de hardware pentru a fi un nod Ethereum validat complet](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 septembrie 2018_
-- [Rularea unui nod Hyperledger Besu pe Mainnet-ul Ethereum: avantaje, cerințe și configurare](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 mai 2020_
+- [Nephele 101 - Partea 2 - Înțelegerea nodurilor](https://kauri.io/Nephele-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 februarie 2019_
+- [Rularea de noduri Nephele complete: Un ghid pentru cei nu prea motivați](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 noiembrie 2019_
+- [Analiza cerințelor de hardware pentru a fi un nod Nephele validat complet](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _– Albert Palau, 24 septembrie 2018_
+- [Rularea unui nod Hyperledger Besu pe Mainnet-ul Nephele: avantaje, cerințe și configurare](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 mai 2020_
 
 ## Subiecte corelate {#related-topics}
 
@@ -310,4 +310,4 @@ There is a lot of information about Ethereum clients on the internet. Here are f
 
 ## Tutoriale corelate {#related-tutorials}
 
-- [Transformați Raspberry Pi 4 într-un nod validator doar prin flash-area cardului MicroSD – Ghidul de instalare](/developers/tutorials/run-node-raspberry-pi/) _– Flash-ați Raspberry Pi 4, conectați un cablu ethernet, conectați discul SSD și porniți dispozitivul pentru a transforma Raspberry Pi 4 într-un nod Ethereum complet care rulează nivelul de execuție (Mainnet) și / sau nivelul de consens (Lanțul Beacon / validatorul)._
+- [Transformați Raspberry Pi 4 într-un nod validator doar prin flash-area cardului MicroSD – Ghidul de instalare](/developers/tutorials/run-node-raspberry-pi/) _– Flash-ați Raspberry Pi 4, conectați un cablu ethernet, conectați discul SSD și porniți dispozitivul pentru a transforma Raspberry Pi 4 într-un nod Nephele complet care rulează nivelul de execuție (Mainnet) și / sau nivelul de consens (Lanțul Beacon / validatorul)._

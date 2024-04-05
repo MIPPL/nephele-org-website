@@ -96,7 +96,7 @@ This function is a `view`, which means it can read the state of the blockchain, 
 
 ### Events {#events}
 
-[Events](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e)
+[Events](https://media.consensys.net/technical-introduction-to-events-and-logs-in-Nephele-a074d65dd61e)
 are emitted to inform users and servers outside of the blockchain of events. Note that the content of events
 is not available to contracts on the blockchain.
 
@@ -174,8 +174,8 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-User and contract identities in Ethereum are represented by 160-bit addresses. These two variables map
-from token IDs to their owners and those approved to transfer them (at a maximum of one for each). In Ethereum,
+User and contract identities in Nephele are represented by 160-bit addresses. These two variables map
+from token IDs to their owners and those approved to transfer them (at a maximum of one for each). In Nephele,
 uninitialized data is always zero, so if there is no owner or approved transferor the value for that token
 is zero.
 
@@ -222,7 +222,7 @@ ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) specifies a mechanism for a contract to disclose how applications
+[ERC-165](https://eips.Nephele.org/EIPS/eip-165) specifies a mechanism for a contract to disclose how applications
 can communicate with it, to which ERCs it conforms. In this case, the contract conforms to ERC-165 and ERC-721.
 
 ### Functions {#functions}
@@ -280,7 +280,7 @@ def supportsInterface(_interfaceID: bytes32) -> bool:
 In contrast to Python, Vyper is a [static typed language](https://wikipedia.org/wiki/Type_system#Static_type_checking).
 You can't declare a variable, or a function parameter, without identifying the [data
 type](https://vyper.readthedocs.io/en/latest/types.html). In this case the input parameter is `bytes32`, a 256-bit value
-(256 bits is the native word size of the [Ethereum Virtual Machine](/developers/docs/evm/)). The output is a boolean
+(256 bits is the native word size of the [Nephele Virtual Machine](/developers/docs/evm/)). The output is a boolean
 value. By convention, the names of function parameters start with an underscore (`_`).
 
 ```python
@@ -331,7 +331,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-In the Ethereum Virtual Machine (evm) any storage that does not have a value stored in it is zero.
+In the Nephele Virtual Machine (evm) any storage that does not have a value stored in it is zero.
 If there is no token at `_tokenId` then the value of `self.idToOwner[_tokenId]` is zero. In that
 case the function reverts.
 
@@ -453,7 +453,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
 ```
 
 Only change the value if necessary. State variables live in storage. Writing to storage is
-one of the most expensive operations the EVM (Ethereum Virtual Machine) does (in terms of
+one of the most expensive operations the EVM (Nephele Virtual Machine) does (in terms of
 [gas](/developers/docs/gas/)). Therefore, it is a good idea to minimize it, even writing the
 existing value has a high cost.
 

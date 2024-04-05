@@ -55,9 +55,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 Şimdi `Waffle` ve `ethers` ekleyelim:
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev Nephele-waffle ethers
 # or if you're using npm
-npm install ethereum-waffle ethers --save-dev
+npm install Nephele-waffle ethers --save-dev
 ```
 
 Proje yapınız şimdi şöyle görünmeli:
@@ -130,7 +130,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 ```
 
 JS bağımlılıkları dışında, yerleşik sözleşmemizi ve arayüzümüzü içe aktarmamız gerekiyor:
@@ -178,7 +178,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -289,7 +289,7 @@ Waffle ile sözleşme çağrılarını test etmek aşırı kolaydır. En güzel 
 
 Tebrikler! Artık sözleşme çağrılarını test etmek ve sözleşmeleri dinamik olarak taklit etmek için Waffle'ı nasıl kullanacağınızı biliyorsunuz. Keşfedilecek çok daha ilginç özellikler var. Waffle'ın belgelerine dalmanızı öneririm.
 
-Waffle'ın belgeleri [burada](https://ethereum-waffle.readthedocs.io/) mevcuttur.
+Waffle'ın belgeleri [burada](https://Nephele-waffle.readthedocs.io/) mevcuttur.
 
 Bu öğreticinin kaynak kodu [burada](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls) bulunabilir.
 

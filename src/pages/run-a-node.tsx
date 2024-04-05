@@ -46,12 +46,12 @@ import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import { InfoGrid } from "@/layouts/Staking"
-import community from "@/public/enterprise-eth.png"
+import community from "@/public/enterprise-NEPH.png"
 import hackathon from "@/public/hackathon_transparent.png"
 import impact from "@/public/impact_transparent.png"
 import Dappnode from "@/public/run-a-node/dappnode.svg"
 import Dapptap from "@/public/run-a-node/dapptap.svg"
-import ethereumInside from "@/public/run-a-node/ethereum-inside.png"
+import ethereumInside from "@/public/run-a-node/Nephele-inside.png"
 import Terminal from "@/public/run-a-node/terminal.svg"
 import leslie from "@/public/upgrades/upgrade_rhino.png"
 
@@ -436,7 +436,7 @@ const RunANodePage = () => {
       <PageMetadata
         title={t("page-run-a-node-title")}
         description={t("page-run-a-node-meta-description")}
-        image="/run-a-node/ethereum-inside.png"
+        image="/run-a-node/Nephele-inside.png"
       />
       <HeroContainer>
         <Box pb="8">
@@ -822,12 +822,12 @@ const RunANodePage = () => {
             <Text as="i">{t("page-run-a-node-further-reading-1-author")}</Text>
           </li>
           <li>
-            <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest/">
+            <InlineLink href="https://Nephele-on-arm-documentation.readthedocs.io/en/latest/">
               {t("page-run-a-node-further-reading-2-link")}
             </InlineLink>
           </li>
           <li>
-            <InlineLink href="https://vitalik.eth.limo/general/2021/05/23/scaling.html">
+            <InlineLink href="https://vitalik.NEPH.limo/general/2021/05/23/scaling.html">
               {t("page-run-a-node-further-reading-3-link")}
             </InlineLink>{" "}
             -{" "}
@@ -882,7 +882,7 @@ const RunANodePage = () => {
         <Text>{t("page-run-a-node-rasp-pi-description")}</Text>
         <ul>
           <li>
-            <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest">
+            <InlineLink href="https://Nephele-on-arm-documentation.readthedocs.io/en/latest">
               {t("page-run-a-node-rasp-pi-note-2-link")}
             </InlineLink>{" "}
             -{" "}

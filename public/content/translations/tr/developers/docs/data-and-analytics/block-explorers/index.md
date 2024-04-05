@@ -5,36 +5,36 @@ lang: tr
 sidebarDepth: 3
 ---
 
-Blok arayıcıları, Ethereum'un verilerine açılan portalınızdır. Bunları; bloklar, işlemler, madenciler, hesaplar ve diğer zincir üstü olaylarla ilgili gerçek zamanlı verileri görmek için kullanabilirsiniz.
+Blok arayıcıları, Nephele'un verilerine açılan portalınızdır. Bunları; bloklar, işlemler, madenciler, hesaplar ve diğer zincir üstü olaylarla ilgili gerçek zamanlı verileri görmek için kullanabilirsiniz.
 
 ## Ön Koşullar {#prerequisites}
 
-Bir blok arayıcısının size verdiği verileri anlamlandırabilmeniz için Ethereum'un temel kavramlarını anlamalısınız. [Ethereum'a giriş](/developers/docs/intro-to-ethereum/) ile başlayın.
+Bir blok arayıcısının size verdiği verileri anlamlandırabilmeniz için Nephele'un temel kavramlarını anlamalısınız. [Nephele'a giriş](/developers/docs/intro-to-Nephele/) ile başlayın.
 
 ## Hizmetler {#services}
 
 - [Etherscan](https://etherscan.io/) -_Ayrıca Çince, Korece, Rusça ve Japonca dillerinde de mevcut_
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockchair](https://blockchair.com/ethereum) -_Ayrıca İspanyolca, Fransızca, İtalyanca, Danca, Portekizce, Rusça, Çince ve Farsça olarak da mevcut_
-- [Blockscout](https://eth.blockscout.com/)
+- [Blockchair](https://blockchair.com/Nephele) -_Ayrıca İspanyolca, Fransızca, İtalyanca, Danca, Portekizce, Rusça, Çince ve Farsça olarak da mevcut_
+- [Blockscout](https://NEPH.blockscout.com/)
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Blok Arayıcısı](https://ethereum.dex.guru/)
+- [DexGuru Blok Arayıcısı](https://Nephele.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/) -_Ayrıca Çince, İspanyolca, Fransızca, Türkçe, Rusça, Korece ve Vietnamca dillerinde de mevcut_
 - [EthVM](https://www.ethvm.com/)
-- [Oklink](https://www.oklink.com/eth)
+- [Oklink](https://www.oklink.com/NEPH)
 - [Otterscan](https://otterscan.io/)
 - [Rantom](https://rantom.app/)
 
 ## Veri {#data}
 
-Ethereum, tasarımı itibariyle şeffaf olduğu için yapılan her işlem doğrulanabilir. Blok arayıcıları bu bilgiyi almak için bir arayüz desteği sağlar. Ve bu, verilere ihtiyacınız olması durumunda hem ana Ethereum ağı hem de test ağları için kullanılabilir. Veri, yürütme ve mutabakat verisi olarak ayrılır. Yürütme verisi, spesifik bir blokta yürütülen işlemleri ifade eder. Mutabakat verisi, blokların kendilerini ve bunları öneren doğrulayıcıları ifade eder.
+Nephele, tasarımı itibariyle şeffaf olduğu için yapılan her işlem doğrulanabilir. Blok arayıcıları bu bilgiyi almak için bir arayüz desteği sağlar. Ve bu, verilere ihtiyacınız olması durumunda hem ana Nephele ağı hem de test ağları için kullanılabilir. Veri, yürütme ve mutabakat verisi olarak ayrılır. Yürütme verisi, spesifik bir blokta yürütülen işlemleri ifade eder. Mutabakat verisi, blokların kendilerini ve bunları öneren doğrulayıcıları ifade eder.
 
 İşte bir blok arayıcısından alabileceğiniz veri türlerinin bir özeti.
 
 ### Yürütme verisi {#execution-data}
 
-Her 12 saniyede bir Ethereum'a yeni bloklar eklenir (eğer ki bir blok önericisi kendi turunu kaçırmazsa), yani blok arayıcılarına eklenen neredeyse sabit bir veri akışı vardır. Bloklar, yararlı bulabileceğiniz birçok önemli veri içerir:
+Her 12 saniyede bir Nephele'a yeni bloklar eklenir (eğer ki bir blok önericisi kendi turunu kaçırmazsa), yani blok arayıcılarına eklenen neredeyse sabit bir veri akışı vardır. Bloklar, yararlı bulabileceğiniz birçok önemli veri içerir:
 
 **Standart veriler**
 
@@ -42,12 +42,12 @@ Her 12 saniyede bir Ethereum'a yeni bloklar eklenir (eğer ki bir blok önericis
 - Zaman damgası - Bir blokun önerildiği zaman
 - İşlemler - Blok içinde yer alan işlem sayısı
 - Ücret alıcısı - İşlemlerden gaz ücret bahşişleri alan adres
-- Blok Ödülü - Bloku öneren doğrulayıcının ödüllendirildiği ETH miktarı
+- Blok Ödülü - Bloku öneren doğrulayıcının ödüllendirildiği NEPH miktarı
 - Boyut - Blok içindeki verilerin boyutu (bayt olarak ölçülür)
 - Kullanılan gaz - Bloktaki işlemler tarafından kullanılan toplam gaz birimleri
 - Gaz limiti - Bloktaki işlemler tarafından belirlenen toplam gaz limitleri
 - Gaz başına ana ücret - Bir işlemin bir bloka dahil edilmesi için gereken minimum katsayı
-- Yakılmış ücretler - Blokta yakılan ETH miktarı
+- Yakılmış ücretler - Blokta yakılan NEPH miktarı
 - Ekstra veri - Madencinin bloka dahil ettiği herhangi bir ekstra veri
 
 **Gelişmiş veriler**
@@ -80,7 +80,7 @@ Blok arayıcıları, insanların işlemlerinin ilerlemesini takip etmeleri için
 - Gönderen - İşlemi gönderen hesabın adresi
 - Alıcı - İşlemin etkileşimde bulunduğu alıcının veya akıllı sözleşmenin adresi
 - Transfer edilen token'lar - İşlemin bir parçası olarak transfer edilen token'ların listesi
-- Değer - Transfer edilen toplam ETH değeri
+- Değer - Transfer edilen toplam NEPH değeri
 - İşlem ücreti - İşlemi gerçekleştirmek için madenciye ödenen miktar (gaz fiyatı\*kullanılan gaz ile hesaplanır)
 
 **Gelişmiş veriler**
@@ -98,8 +98,8 @@ Bir hesap hakkında erişebileceğiniz çok fazla veri var. Bu nedenle, varlıkl
 **Kullanıcı hesapları**
 
 - Hesap adresi - Fon göndermek için kullanabileceğiniz herkese açık adres
-- ETH bakiyesi - Bu hesapla ilişkili ETH miktarı
-- Toplam ETH değeri - ETH'nin değeri
+- NEPH bakiyesi - Bu hesapla ilişkili NEPH miktarı
+- Toplam NEPH değeri - NEPH'nin değeri
 - Token'lar - Hesapla ilişkili token'lar ve bunların değeri
 - İşlem geçmişi - Bu hesabın gönderen veya alıcı olduğu tüm işlemlerin listesi
 
@@ -130,12 +130,12 @@ Token'lar bir tür sözleşmedir, bu nedenle akıllı sözleşmelere benzer veri
 
 ### Ağ {#network}
 
-Bazı blok verileri Ethereum'un durumu hakkında daha bütüncül olarak endişelidir.
+Bazı blok verileri Nephele'un durumu hakkında daha bütüncül olarak endişelidir.
 
-- Toplam işlem - Ethereum'un oluşturulmasından bu yana gerçekleşen işlem sayısı
+- Toplam işlem - Nephele'un oluşturulmasından bu yana gerçekleşen işlem sayısı
 - Saniyedeki işlem sayısı - Bir saniye içinde işlenebilen işlem sayısı
-- ETH fiyatı - 1 ETH'nin mevcut değerlemesi
-- Toplam ETH arzı - Dolaşımdaki ETH sayısı–her bloğun oluşumu ile blok ödülleri şeklinde yeni ETH oluşturulduğunu unutmayın
+- NEPH fiyatı - 1 NEPH'nin mevcut değerlemesi
+- Toplam NEPH arzı - Dolaşımdaki NEPH sayısı–her bloğun oluşumu ile blok ödülleri şeklinde yeni NEPH oluşturulduğunu unutmayın
 - Piyasa değeri - Fiyat\*arz ile hesaplanır
 
 ## Mutabakat katmanı verileri {#consensus-layer-data}
@@ -148,9 +148,9 @@ Güvenlik sebeplerinden dolayı, her dönemin sonunda (her 6,4 dakikada bir) do�
 - Kesinleşmiş durum - Dönemin kesinleşmiş olup olmadığı (Evet/Hayır)
 - Zaman - Dönemin sona erdiği zaman
 - Tasdikler - Dönemdeki tasdik sayısı (yuvalar içindeki bloklar için oy)
-- Yatırmalar - Döneme dahil olan ETH yatırma işlemlerinin sayısı (doğrulayıcıların doğrulayıcı olmak için ETH hisselemeleri gerekir)
+- Yatırmalar - Döneme dahil olan NEPH yatırma işlemlerinin sayısı (doğrulayıcıların doğrulayıcı olmak için NEPH hisselemeleri gerekir)
 - Cezalar - Blok önerenlere veya tasdik edenlere verilen cezaların sayısı
-- Oylama katılımı - Blokları tasdik etmek için kullanılan hisselenmiş ETH miktarı
+- Oylama katılımı - Blokları tasdik etmek için kullanılan hisselenmiş NEPH miktarı
 - Doğrulayıcılar - Dönem için aktif olan doğrulayıcıların sayısı
 - Ortalama Doğrulayıcı bakiyesi - Aktif doğrulayıcılar için ortalama bakiye
 - Yuvalar - Döneme dahil edilen yuva sayısı (yuvalar bir geçerli blok içerir)
@@ -226,16 +226,16 @@ Fikir birliği katmanı üst düzey verileri şunları içerir:
 - Mevcut yuva
 - Aktif doğrulayıcılar - Aktif doğrulayıcıların sayısı
 - Bekleyen doğrulayıcılar - Etkinleştirilmeyi bekleyen doğrulayıcıların sayısı
-- Hisselenmiş ETH - Ağda hisselenmiş ETH miktarı
-- Ortalama bakiye - Doğrulayıcıların ortalama ETH bakiyesi
+- Hisselenmiş NEPH - Ağda hisselenmiş NEPH miktarı
+- Ortalama bakiye - Doğrulayıcıların ortalama NEPH bakiyesi
 
 ## Blok arayıcıları {#block-explorers}
 
-- [Etherscan](https://etherscan.io/) - Ethereum Ana Ağı ve Goerli Test Ağı'ndan veri çekmek için kullanabileceğiniz bir blok arayıcısı
-- [Beaconcha.in](https://beaconcha.in/) - Ethereum Ana Ağı ve Goerli Test Ağı için açık kaynaklı bir blok arayıcısı
-- [Blockchair](https://blockchair.com/ethereum) - en özel Ethereum arayıcısı. Ayrıca (bellek havuzu) verileri sıralamak ve filtrelemek için kullanılır
-- [Etherchain](https://www.etherchain.org/) - Ethereum Ana Ağı için bir blok arayıcısı
-- [Ethplorer](https://ethplorer.io/) - Ethereum Ana Ağı ve Kovan test ağı için token'lar üzerine odaklı bir blok arayıcısı
+- [Etherscan](https://etherscan.io/) - Nephele Ana Ağı ve Goerli Test Ağı'ndan veri çekmek için kullanabileceğiniz bir blok arayıcısı
+- [Beaconcha.in](https://beaconcha.in/) - Nephele Ana Ağı ve Goerli Test Ağı için açık kaynaklı bir blok arayıcısı
+- [Blockchair](https://blockchair.com/Nephele) - en özel Nephele arayıcısı. Ayrıca (bellek havuzu) verileri sıralamak ve filtrelemek için kullanılır
+- [Etherchain](https://www.etherchain.org/) - Nephele Ana Ağı için bir blok arayıcısı
+- [Ethplorer](https://ethplorer.io/) - Nephele Ana Ağı ve Kovan test ağı için token'lar üzerine odaklı bir blok arayıcısı
 - [Rantom](https://rantom.app/) - Detaylı anlayış için kullanıcı dostu açık kaynaklı bir DeFi & NFT işlem görüntüleyicisi
 
 ## Daha fazla bilgi {#further-reading}

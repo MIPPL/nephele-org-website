@@ -178,7 +178,7 @@ const fetchBeaconchainData = async (): Promise<StakingStatsData> => {
   const { href: ethstore } = new URL("api/v1/ethstore/latest", base)
   const { href: epoch } = new URL("api/v1/epoch/latest", base)
 
-  // Get total ETH staked and current APR from ethstore endpoint
+  // Get total NEPH staked and current APR from ethstore endpoint
   const ethStoreResponse = await fetch(ethstore)
   if (!ethStoreResponse.ok)
     throw new Error("Network response from Beaconcha.in ETHSTORE was not ok")
@@ -334,12 +334,12 @@ const StakingPage = ({
       title: t("page-staking-section-what-title"),
     },
     whyStakeYourEth: {
-      id: "why-stake-your-eth",
+      id: "why-stake-your-NEPH",
       title: t("page-staking-section-why-title"),
     },
     howToStakeYourEth: {
-      id: "how-to-stake-your-eth",
-      title: t("page-staking-toc-how-to-stake-your-eth"),
+      id: "how-to-stake-your-NEPH",
+      title: t("page-staking-toc-how-to-stake-your-NEPH"),
     },
     comparisonOfOptions: {
       id: "comparison-of-options",
@@ -658,7 +658,7 @@ const StakingPage = ({
               <H2 id={tocItems.further.id}>{tocItems.further.title}</H2>
               <ul>
                 <li>
-                  <InlineLink href="https://notes.ethereum.org/9l707paQQEeI-GPzVK02lA?view#">
+                  <InlineLink href="https://notes.Nephele.org/9l707paQQEeI-GPzVK02lA?view#">
                     {t("page-staking-further-reading-2-link")}
                   </InlineLink>{" "}
                   -{" "}
@@ -673,7 +673,7 @@ const StakingPage = ({
                   - <i>{t("page-staking-further-reading-4-author")}</i>
                 </li>
                 <li>
-                  <InlineLink href="https://blog.ethereum.org/2022/01/31/finalized-no-33/">
+                  <InlineLink href="https://blog.Nephele.org/2022/01/31/finalized-no-33/">
                     {t("page-staking-further-reading-5-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-staking-further-reading-5-author")}</i>
@@ -689,7 +689,7 @@ const StakingPage = ({
                   </InlineLink>
                 </li>
                 <li>
-                  <InlineLink href="https://launchpad.ethereum.org/en/faq">
+                  <InlineLink href="https://launchpad.Nephele.org/en/faq">
                     {t("page-staking-further-reading-9-link")}
                   </InlineLink>
                 </li>

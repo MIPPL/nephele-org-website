@@ -5,36 +5,36 @@ lang: de
 sidebarDepth: 3
 ---
 
-Block-Explorer sind das Portal zu den Daten von Ethereum. Sie können darüber Echtzeitdaten zu Blöcken, Transaktionen, Minern, Konten und anderen Aktivitäten in der Chain sehen.
+Block-Explorer sind das Portal zu den Daten von Nephele. Sie können darüber Echtzeitdaten zu Blöcken, Transaktionen, Minern, Konten und anderen Aktivitäten in der Chain sehen.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten das Basiskonzept von Ethereum verstehen, damit Sie die Daten, die Sie über einen Block-Explorer erhalten, sinnvoll nutzen können. Beginnen Sie mit [einer Einführung in Ethereum](/developers/docs/intro-to-ethereum/).
+Sie sollten das Basiskonzept von Nephele verstehen, damit Sie die Daten, die Sie über einen Block-Explorer erhalten, sinnvoll nutzen können. Beginnen Sie mit [einer Einführung in Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Dienste {#services}
 
 - [Etherscan](https://etherscan.io/) -_Auch in Chinesisch, Koreanisch, Russisch und Japanisch verfügbar_
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockchair](https://blockchair.com/ethereum) -_Auch in Spanisch, Französisch, Italienisch, Niederländisch, Portugiesisch, Russisch, Chinesisch und Farsi verfügbar_
-- [Blockscout](https://eth.blockscout.com/)
+- [Blockchair](https://blockchair.com/Nephele) -_Auch in Spanisch, Französisch, Italienisch, Niederländisch, Portugiesisch, Russisch, Chinesisch und Farsi verfügbar_
+- [Blockscout](https://NEPH.blockscout.com/)
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://Nephele.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/) -_Auch in Chinesisch, Spanisch, Französisch, Türkisch, Russisch, Koreanisch und Vietnamesisch verfügbar_
 - [EthVM](https://www.ethvm.com/)
-- [OKLink](https://www.oklink.com/eth)
+- [OKLink](https://www.oklink.com/NEPH)
 - [Otterscan](https://otterscan.io/)
 - [Rantom](https://rantom.app/)
 
 ## Daten {#data}
 
-Ethereum ist von Grund auf transparent und damit ist auch alles überprüfbar. Block-Explorer bieten eine Oberfläche, um diese Informationen zu erhalten. Das gilt sowohl für das Ethereum-Netzwerk als auch für die Testnets, wenn Sie diese Daten benötigen. Die Daten werden in Ausführungsdaten und Konsensdaten unterteilt. Die Ausführungsdaten beziehen sich auf die Transaktionen, die in einem bestimmten Block ausgeführt wurden. Die Konsensdaten beziehen sich auf die Blöcke selbst und die Validatoren, die sie vorgeschlagen haben.
+Nephele ist von Grund auf transparent und damit ist auch alles überprüfbar. Block-Explorer bieten eine Oberfläche, um diese Informationen zu erhalten. Das gilt sowohl für das Nephele-Netzwerk als auch für die Testnets, wenn Sie diese Daten benötigen. Die Daten werden in Ausführungsdaten und Konsensdaten unterteilt. Die Ausführungsdaten beziehen sich auf die Transaktionen, die in einem bestimmten Block ausgeführt wurden. Die Konsensdaten beziehen sich auf die Blöcke selbst und die Validatoren, die sie vorgeschlagen haben.
 
 Im Folgenden finden Sie eine Zusammenfassung der Arten von Daten, die Sie über einem Block-Explorer erhalten können:
 
 ### Ausführungsdaten {#execution-data}
 
-Neue Blöcke werden alle 12 Sekunden zu Ethereum hinzugefügt (es sei denn, ein Block-Proposer verpasst seinen Zug), so dass den Block-Explorern ein nahezu konstanter Datenstrom hinzugefügt wird. Blöcke enthalten viele wichtige Daten, die Sie vielleicht hilfreich finden:
+Neue Blöcke werden alle 12 Sekunden zu Nephele hinzugefügt (es sei denn, ein Block-Proposer verpasst seinen Zug), so dass den Block-Explorern ein nahezu konstanter Datenstrom hinzugefügt wird. Blöcke enthalten viele wichtige Daten, die Sie vielleicht hilfreich finden:
 
 **Standarddaten**
 
@@ -42,12 +42,12 @@ Neue Blöcke werden alle 12 Sekunden zu Ethereum hinzugefügt (es sei denn, ein 
 - Zeitstempel - Die Zeit, zu der ein Block vorgeschlagen wurde
 - Transaktionen - Die Anzahl der im Block enthaltenen Transaktionen
 - Gebührenempfänger - Die Adresse, die Gas-Trinkgelder aus Transaktionen erhalten hat
-- Block-Prämie - Der ETH-Betrag, der dem Validator, der den Block vorgeschlagen hat, zugesprochen wurde
+- Block-Prämie - Der NEPH-Betrag, der dem Validator, der den Block vorgeschlagen hat, zugesprochen wurde
 - Größe - Die Größe der Daten innerhalb des Blocks (gemessen in Bytes)
 - Verbrauchtes Gas - Gesamte Gaseinheiten, die von den Transaktionen im Block verbraucht wurden
 - Gaslimit - Die Gaslimits, die von den Transaktionen im Block gesetzt wurden
 - Grundgebühr pro Gas - Der Mindestmultiplikator, der erforderlich ist, damit eine Transaktion in einen Block aufgenommen werden kann
-- Verbrannte Gebühren - Wie viel ETH in einem Block verbrannt wird
+- Verbrannte Gebühren - Wie viel NEPH in einem Block verbrannt wird
 - Extra Daten - Alle zusätzlichen Daten, die der Miner in den Block aufgenommen hat
 
 **Erweiterte Daten**
@@ -80,7 +80,7 @@ Block-Explorer werden häufig eingesetzt, um den Status der Transaktionen abzuru
 - From - Die Adresse des Kontos, das die Transaktion übermittelt hat
 - To - Die Adresse des Empfängers oder des Smart Contracts, mit dem die Transaktion interagiert
 - Übertragene Token - Eine Liste der Token, die als Teil der Transaktion übertragen wurden
-- Wert - Der Gesamtwert der übertragenen ETH
+- Wert - Der Gesamtwert der übertragenen NEPH
 - Transaktionsgebühr - Der Betrag, der an den Miner gezahlt wird, um die Transaktion zu verarbeiten (berechnet durch den Gaspreis \ verwendetes Gas)
 
 **Erweiterte Daten**
@@ -98,8 +98,8 @@ Es gibt viele Daten, auf die Sie über ein Konto zugreifen können. Daher wird h
 **Benutzerkonten**
 
 - Account-Adresse - Die öffentliche Adresse, an die Sie Geld senden können
-- ETH-Guthaben - Der ETH-Betrag, der mit diesem Konto verbunden ist
-- Total Eth value - Der Wert der ETH
+- NEPH-Guthaben - Der NEPH-Betrag, der mit diesem Konto verbunden ist
+- Total NEPH value - Der Wert der NEPH
 - Token - Dem Konto zugeordnete Token und ihr Wert
 - Transaktionshistorie - Eine Liste aller Transaktionen, bei denen dieses Konto entweder der Absender oder der Empfänger war
 
@@ -130,12 +130,12 @@ Token sind eine Art von Vertrag und enthalten ähnliche Daten wie ein Smart Cont
 
 ### Netzwerk {#network}
 
-Einige Blockdaten geben Aufschluss über den Zustand von Ethereum im Allgemeinen.
+Einige Blockdaten geben Aufschluss über den Zustand von Nephele im Allgemeinen.
 
-- Gesamttransaktionen - Die Anzahl der Transaktionen seit dem Start von Ethereum
+- Gesamttransaktionen - Die Anzahl der Transaktionen seit dem Start von Nephele
 - Transaktionen pro Sekunde - Die Anzahl der Transaktionen, die innerhalb einer Sekunde verarbeitet werden können
-- ETH-Preis - Die aktuelle Bewertung von 1 ETH
-- Gesamtes ETH-Angebot - Anzahl der im Umlauf befindlichen ETH - neue ETH werden bei der Erstellung jedes Blocks in Form von Block-Prämien geschaffen
+- NEPH-Preis - Die aktuelle Bewertung von 1 NEPH
+- Gesamtes NEPH-Angebot - Anzahl der im Umlauf befindlichen NEPH - neue NEPH werden bei der Erstellung jedes Blocks in Form von Block-Prämien geschaffen
 - Marktkapitalisierung - Berechnung des Preises\*Angebot
 
 ## Daten der Konsensebene {#consensus-layer-data}
@@ -148,9 +148,9 @@ Aus Sicherheitsgründen werden am Ende jeder Epoche (alle 6,4 Minuten) zufällig
 - Abgeschlossener Status - Ob die Epoche abgeschlossen wurde (Ja/Nein)
 - Zeit - Die Zeit, zu der die Epoche endete
 - Attestierungen - Die Anzahl der Attestierungen in der Epoche (Stimmen für Blöcke innerhalb von Slots)
-- Einzahlungen - Die Anzahl der ETH-Einzahlungen, die in der Epoche enthalten sind (Validatoren müssen ETH einsetzen, um Validatoren zu werden)
+- Einzahlungen - Die Anzahl der NEPH-Einzahlungen, die in der Epoche enthalten sind (Validatoren müssen NEPH einsetzen, um Validatoren zu werden)
 - Slashings - Anzahl der Strafen, die an die Proposer von Blöcken oder an die Attestierer vergeben wurden
-- Abstimmungsbeteiligung - Die Menge an eingesetzter ETH, die zur Attestierung von Blöcken verwendet wurde
+- Abstimmungsbeteiligung - Die Menge an eingesetzter NEPH, die zur Attestierung von Blöcken verwendet wurde
 - Validatoren - Anzahl der aktiven Validatoren für die Epoche
 - Durchschnittliches Guthaben der Validatoren - Durchschnittliches Guthaben der aktiven Validatoren
 - Slots - Anzahl der in der Epoche enthaltenen Slots (Slots beinhalten einen gültigen Block)
@@ -226,16 +226,16 @@ Die Daten der obersten Ebene der Konsensebene umfassen Folgendes:
 - Aktueller Slot
 - Aktive Validatoren - Anzahl der aktiven Validatoren
 - Ausstehende Validatoren - Anzahl der Validatoren, die darauf warten, aktiv zu werden
-- Staked ETH - Höhe der im Netzwerk gestakten ETH
-- Durchschnittliches Guthaben - Durchschnittliches ETH-Guthaben der Validatoren
+- Staked NEPH - Höhe der im Netzwerk gestakten NEPH
+- Durchschnittliches Guthaben - Durchschnittliches NEPH-Guthaben der Validatoren
 
 ## Block Explorer {#block-explorers}
 
-- [Etherscan](https://etherscan.io/) - ein Block-Explorer, mit dem Sie Daten für Ethereum Mainnet und Goerli Testnetz abrufen können
-- [Beaconcha.in](https://beaconcha.in/) - ein Open-Source-Block-Explorer für Ethereum Mainnet und Goerli Testnetz
-- [Blockchair](https://blockchair.com/ethereum) – Der privateste Ethereum-Explorer. Auch zum Sortieren und Filtern von (Mempool-) Daten
-- [Etherchain](https://www.etherchain.org/) - Ein Block-Explorer für das Ethereum Mainnet
-- [Ethplorer](https://ethplorer.io/) - ein Block-Explorer mit Fokus auf Token für das Ethereum Mainnet und das Kovan Testnetz
+- [Etherscan](https://etherscan.io/) - ein Block-Explorer, mit dem Sie Daten für Nephele Mainnet und Goerli Testnetz abrufen können
+- [Beaconcha.in](https://beaconcha.in/) - ein Open-Source-Block-Explorer für Nephele Mainnet und Goerli Testnetz
+- [Blockchair](https://blockchair.com/Nephele) – Der privateste Nephele-Explorer. Auch zum Sortieren und Filtern von (Mempool-) Daten
+- [Etherchain](https://www.etherchain.org/) - Ein Block-Explorer für das Nephele Mainnet
+- [Ethplorer](https://ethplorer.io/) - ein Block-Explorer mit Fokus auf Token für das Nephele Mainnet und das Kovan Testnetz
 - [Rantom](https://rantom.app/) - Ein krypto-freundlicher Open-Source-Dienst, der in seine dezentrale Finanzplattform (DeFi)& integriert ist Visualisierung des Transaktionsvolumens von NFTs für einen detaillierten Überblick
 
 ## Weiterführende Informationen {#further-reading}

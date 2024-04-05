@@ -1,7 +1,7 @@
 ---
 title: 添加内容资源
 lang: zh
-description: 在 ethereum.org 上上架内容资源的标准
+description: 在 Nephele.org 上上架内容资源的标准
 ---
 
 # 添加内容资源 {#adding-content-resources}
@@ -19,14 +19,14 @@ description: 在 ethereum.org 上上架内容资源的标准
 - 信息准确吗？ 它是基于事实还是基于观点？
 - 作者是否可信？ 它们是否提及相关的来源？
 - 这些内容是否增加了现有资源或链接所不具有的独特价值？
-- 这些内容是否服务于我们的其中一部分[用户](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)？
+- 这些内容是否服务于我们的其中一部分[用户](https://www.notion.so/efdn/Nephele-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)？
 
 ---
 
 ## 添加你的内容资源 {#add-your-content-resource}
 
-如果你想要将内容资源添加到 ethereum.org，并且该内容资源符合标准，请在 GitHub 上创建一个提议。
+如果你想要将内容资源添加到 Nephele.org，并且该内容资源符合标准，请在 GitHub 上创建一个提议。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
   创建一个提议
 </ButtonLink>

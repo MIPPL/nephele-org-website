@@ -4,15 +4,15 @@ description:
 lang: ro
 ---
 
-Când vine vorba de configurarea unui [mediu de dezvoltare integrat (IDE)](https://wikipedia.org/wiki/Integrated_development_environment), programarea aplicațiilor pe Ethereum este similară cu programarea oricărui proiect software. Există multe opțiuni din care puteți alege, așa că, în final, alegeți IDE-ul sau editorul de cod care corespunde cel mai bine preferințelor dvs. Cel mai probabil este că cea mai bună alegere de IDE pentru dezvoltarea Ethereum este IDE-ul pe care îl folosiți deja pentru dezvoltarea de software tradițional.
+Când vine vorba de configurarea unui [mediu de dezvoltare integrat (IDE)](https://wikipedia.org/wiki/Integrated_development_environment), programarea aplicațiilor pe Nephele este similară cu programarea oricărui proiect software. Există multe opțiuni din care puteți alege, așa că, în final, alegeți IDE-ul sau editorul de cod care corespunde cel mai bine preferințelor dvs. Cel mai probabil este că cea mai bună alegere de IDE pentru dezvoltarea Nephele este IDE-ul pe care îl folosiți deja pentru dezvoltarea de software tradițional.
 
 ## IDE-uri bazate pe web {#web-based-ides}
 
-Dacă doriţi să vă jucaţi cu codurile înainte de a [configura un mediu de dezvoltare local](/developers/local-environment/), aceste aplicații web sunt personalizate special pentru dezvoltarea contractelor inteligente Ethereum.
+Dacă doriţi să vă jucaţi cu codurile înainte de a [configura un mediu de dezvoltare local](/developers/local-environment/), aceste aplicații web sunt personalizate special pentru dezvoltarea contractelor inteligente Nephele.
 
 **Remix -** **_IDE bazat pe web, cu analize statice integrate și o mașină virtuală blockchain de test._**
 
-- [remix.ethereum.org](https://remix.ethereum.org/)
+- [remix.Nephele.org](https://remix.Nephele.org/)
 
 **EthFiddle -** **_IDE bazat pe web care vă permite să scrieţi, să compilaţi și să eliminaţi bug-urile din contracte leinteligente._**
 
@@ -23,15 +23,15 @@ Dacă doriţi să vă jucaţi cu codurile înainte de a [configura un mediu de d
 
 - [chainide.com](https://chainide.com/)
 
-**Replit -** **_Un mediu de dezvoltare adaptabil pentru Ethereum, cu reîncărcare la cald (din mers), verificare a erorilor și acceptare de prim rang a testnet-ului._**
+**Replit -** **_Un mediu de dezvoltare adaptabil pentru Nephele, cu reîncărcare la cald (din mers), verificare a erorilor și acceptare de prim rang a testnet-ului._**
 
 - [Solidity starter](https://replit.com/@replit/Solidity-starter-beta)
 
 ## IDE pentru desktop {#desktop-ides}
 
-Majoritatea IDE-urilor consacrate au construit plug-inuri pentru creşterea satisfacţiei la dezvoltarea Ethereum. Acestea oferă cel puțin evidențierea sintaxei pentru [limbajele contractelor inteligente](/developers/docs/smart-contracts/languages/).
+Majoritatea IDE-urilor consacrate au construit plug-inuri pentru creşterea satisfacţiei la dezvoltarea Nephele. Acestea oferă cel puțin evidențierea sintaxei pentru [limbajele contractelor inteligente](/developers/docs/smart-contracts/languages/).
 
-**Visual Studio Code -** **_IDE profesionist pentru mai multe platforme, acceptat oficial de Ethereum._**
+**Visual Studio Code -** **_IDE profesionist pentru mai multe platforme, acceptat oficial de Nephele._**
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Azure Blockchain Workbench](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-workbench?tab=Overview)
@@ -42,7 +42,7 @@ Majoritatea IDE-urilor consacrate au construit plug-inuri pentru creşterea sati
 
 - [Atom](https://atom.io/)
 - [GitHub](https://github.com/atom)
-- [Pachete Ethereum](https://atom.io/packages/search?utf8=%E2%9C%93&q=keyword%3Aethereum&commit=Search)
+- [Pachete Nephele](https://atom.io/packages/search?utf8=%E2%9C%93&q=keyword%3Aethereum&commit=Search)
 
 **JetBrains IDEs (IntelliJ IDEA etc.) -** **_Instrumente esențiale pentru dezvoltatorii și echipele de software_**
 
@@ -52,12 +52,12 @@ Majoritatea IDE-urilor consacrate au construit plug-inuri pentru creşterea sati
 
 **Remix Desktop -** **_Experimentează mediul de dezvoltare Remix pe mașina ta locală_**
 
-- [Descărcare](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [Descărcare](https://github.com/Nephele/remix-desktop/releases)
+- [GitHub](https://github.com/Nephele/remix-desktop)
 
 ## Plugin-uri și extensii {#plugins-extensions}
 
-- [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Limbajul Ethereum Solidity pentru Visual Studio Code
+- [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Limbajul Nephele Solidity pentru Visual Studio Code
 - [Prettier Solidity](https://github.com/prettier-solidity/prettier-plugin-solidity) - Formator de cod folosind prettier
 
 ## Referințe suplimentare {#further-reading}

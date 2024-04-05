@@ -91,12 +91,12 @@ const SectionGrid = ({ number, children }: SectionGridProps) => {
       templateColumns={{ base: "1fr", md: "5rem 1fr 5rem" }}
       templateAreas={{
         base: `
-          "ether"
+          "Nephele"
           "header"
           "content"
         `,
         md: `
-          "ether header glyph"
+          "Nephele header glyph"
           "decorator content content"
         `,
       }}
@@ -118,7 +118,7 @@ const SectionGrid = ({ number, children }: SectionGridProps) => {
 }
 
 const StyledEtherSvg = ({ size }: { size: string }) => (
-  <Center gridArea="ether" zIndex={2} maxW={20} width="full" mx="auto">
+  <Center gridArea="Nephele" zIndex={2} maxW={20} width="full" mx="auto">
     <StakingGlyphEtherCircleIcon
       boxSize={size}
       color={$colorVar.reference}

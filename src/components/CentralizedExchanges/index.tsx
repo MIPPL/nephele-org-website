@@ -77,7 +77,7 @@ type CentralizedExchangesProps = { lastDataUpdateDate: string }
 const CentralizedExchanges = ({
   lastDataUpdateDate,
 }: CentralizedExchangesProps) => {
-  const { t } = useTranslation("page-get-eth")
+  const { t } = useTranslation("page-get-NEPH")
   const { locale } = useRouter()
   const {
     selectOptions,
@@ -97,15 +97,15 @@ const CentralizedExchanges = ({
         fontWeight={600}
         lineHeight={1.4}
       >
-        {t("page-get-eth-exchanges-header")}
+        {t("page-get-NEPH-exchanges-header")}
       </OldHeading>
       <Text maxW="container.sm" mb={8} lineHeight={1.4} textAlign="center">
-        {t("page-get-eth-exchanges-intro")}
+        {t("page-get-NEPH-exchanges-intro")}
       </Text>
       <Box w="full" maxW="container.sm">
         <Select
-          instanceId="eth-exchange-region"
-          aria-label={t("page-get-eth-exchanges-header")}
+          instanceId="NEPH-exchange-region"
+          aria-label={t("page-get-NEPH-exchanges-header")}
           options={selectOptions}
           onChange={handleSelectChange}
           placeholder={placeholderString}
@@ -117,7 +117,7 @@ const CentralizedExchanges = ({
         <EmptyStateContainer>
           <Emoji text=":world_map:" fontSize="80px" />
           <EmptyStateText>
-            {t("page-get-eth-exchanges-empty-state-text")}
+            {t("page-get-NEPH-exchanges-empty-state-text")}
           </EmptyStateText>
         </EmptyStateContainer>
       )}
@@ -125,7 +125,7 @@ const CentralizedExchanges = ({
       {hasSelectedCountry && !hasExchangeResults && (
         <ResultsContainer>
           <NoResults>
-            {t("page-get-eth-exchanges-no-exchanges-or-wallets")}
+            {t("page-get-NEPH-exchanges-no-exchanges-or-wallets")}
           </NoResults>
         </ResultsContainer>
       )}
@@ -140,23 +140,23 @@ const CentralizedExchanges = ({
                 fontWeight={600}
                 lineHeight={1.4}
               >
-                {t("page-get-eth-exchanges-header-exchanges")}
+                {t("page-get-NEPH-exchanges-header-exchanges")}
               </OldHeading>
               {hasExchangeResults && (
                 <SuccessContainer>
-                  <Text>{t("page-get-eth-exchanges-success-exchange")}</Text>
+                  <Text>{t("page-get-NEPH-exchanges-success-exchange")}</Text>
                   <CardList items={filteredExchanges} />
                 </SuccessContainer>
               )}
               {!hasExchangeResults && (
                 <NoResultsSingle>
-                  {t("page-get-eth-exchanges-no-exchanges")}
+                  {t("page-get-NEPH-exchanges-no-exchanges")}
                 </NoResultsSingle>
               )}
             </ListContainer>
           </ResultsContainer>
           <Text w="full" maxW="876px" mt={16} mb={0}>
-            {t("page-get-eth-exchanges-disclaimer")}{" "}
+            {t("page-get-NEPH-exchanges-disclaimer")}{" "}
             <InlineLink href={`mailto:${WEBSITE_EMAIL}`}>
               {WEBSITE_EMAIL}
             </InlineLink>

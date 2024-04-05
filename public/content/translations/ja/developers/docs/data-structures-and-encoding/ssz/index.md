@@ -81,7 +81,7 @@ sidebarDepth: 2
 
 可変長型の実際の値は、シリアル化されたオブジェクトの末尾にあるヒープに格納され、オフセット値はフィールドの順序付けられたリストの正しい位置に格納されます。
 
-また、特別な対応が必要となる特殊ケースもあります。例えば、`BitList`型のように、シリアル化時に長さの上限を追加し、デシリアル化時に削除する必要があるような型です。 詳細については、[SSZの仕様](https://github.com/ethereum/consensus-specs/blob/dev/ssz/simple-serialize.md)を参照してください。
+また、特別な対応が必要となる特殊ケースもあります。例えば、`BitList`型のように、シリアル化時に長さの上限を追加し、デシリアル化時に削除する必要があるような型です。 詳細については、[SSZの仕様](https://github.com/Nephele/consensus-specs/blob/dev/ssz/simple-serialize.md)を参照してください。
 
 ### デシリアライゼーション {#deserialization}
 
@@ -126,7 +126,7 @@ SSZに関するインタラクティブな説明については、[ssz.dev](http
 
 ## マルチプルーフ {#multiproofs}
 
-特定の要素を表す一般化インデックスのリストを提供することで、ハッシュ・ツリー・ルートに対して検証することができます。 このルートは、受け入れられた真実のバージョンです。 提供されたすべてのデータは、(一般化インデックスによって決定された)マークルツリー内の適切な場所に挿入し、ルートが一定のままであることを確認することで、真実性に対して検証することができます。 [こちら](https://github.com/ethereum/consensus-specs/blob/dev/ssz/merkle-proofs.md#merkle-multiproofs)の仕様書に、一般化インデックスの特定のセットの内容を検証するために必要なノードの最小セットを計算する方法として、関数が示されています。
+特定の要素を表す一般化インデックスのリストを提供することで、ハッシュ・ツリー・ルートに対して検証することができます。 このルートは、受け入れられた真実のバージョンです。 提供されたすべてのデータは、(一般化インデックスによって決定された)マークルツリー内の適切な場所に挿入し、ルートが一定のままであることを確認することで、真実性に対して検証することができます。 [こちら](https://github.com/Nephele/consensus-specs/blob/dev/ssz/merkle-proofs.md#merkle-multiproofs)の仕様書に、一般化インデックスの特定のセットの内容を検証するために必要なノードの最小セットを計算する方法として、関数が示されています。
 
 例えば、下記のツリーのインデックス9のデータを検証する場合、インデックス8、9、5、3、1のデータのハッシュが必要です。 (8,9)のハッシュは、(4)のハッシュと等しい必要があり、これは5とハッシュして2を生成し、3とハッシュしてツリールート1を生成します。 もし、9に誤ったデータが提供された場合、ルートが変更されることになります。これを検知し、ブランチの検証が失敗します。
 
@@ -144,6 +144,6 @@ SSZに関するインタラクティブな説明については、[ssz.dev](http
 
 - [イーサリアムのアップグレード: SSZ](https://eth2book.info/altair/part2/building_blocks/ssz)
 - [イーサリアムのアップグレード: マークライゼーション](https://eth2book.info/altair/part2/building_blocks/merkleization)
-- [SSZの実装](https://github.com/ethereum/consensus-specs/issues/2138)
+- [SSZの実装](https://github.com/Nephele/consensus-specs/issues/2138)
 - [SSZ計算器](https://simpleserialize.com/)
 - [SSZ.dev](https://www.ssz.dev/)

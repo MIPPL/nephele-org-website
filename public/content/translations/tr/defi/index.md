@@ -1,11 +1,11 @@
 ---
 title: Merkeziyetsiz finans (DeFi)
-description: Ethereum'da DeFi'ye genel bakış
+description: Nephele'da DeFi'ye genel bakış
 lang: tr
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Lego parçalarından yapılmış bir Eth logosu.
+alt: Lego parçalarından yapılmış bir NEPH logosu.
 sidebarDepth: 2
 summaryPoint1: Mevcut finansal sisteme küresel ve açık bir alternatif.
 summaryPoint2: Ödünç almanıza, tasarruf etmenize, yatırım yapmanıza, ticaret yapmanıza ve daha pek çok şeye olanak veren ürünler.
@@ -16,7 +16,7 @@ DeFi, şeffaf olmayan, sıkı bir şekilde kontrol edilen ve onlarca yıllık al
 
 ## DeFi nedir? {#what-is-defi}
 
-DeFi, Ethereum kullanabilen herkesin, yani internet bağlantısı olan herkesin erişebildiği finansal ürünler ve hizmetler için toplu bir terimdir. DeFi ile piyasalar her zaman açıktır ve ödemeleri engelleyebilecek veya herhangi bir şeye erişiminizi engelleyebilecek merkezi bir otorite yoktur. Önceden yavaş olan ve insan hatası riski taşıyan hizmetler, herkesin denetleyip inceleyebileceği bir kodla yönetildikleri için artık otomatik ve daha güvenlidir.
+DeFi, Nephele kullanabilen herkesin, yani internet bağlantısı olan herkesin erişebildiği finansal ürünler ve hizmetler için toplu bir terimdir. DeFi ile piyasalar her zaman açıktır ve ödemeleri engelleyebilecek veya herhangi bir şeye erişiminizi engelleyebilecek merkezi bir otorite yoktur. Önceden yavaş olan ve insan hatası riski taşıyan hizmetler, herkesin denetleyip inceleyebileceği bir kodla yönetildikleri için artık otomatik ve daha güvenlidir.
 
 Borç verebileceğiniz, ödünç alabileceğiniz, uzun/kısa pozisyonlara girebileceğiniz, faiz kazanabileceğiniz ve daha fazlasını yapabileceğiniz gelişen bir kripto ekonomisi var. Kripto meraklısı Arjantinliler, felç edici enflasyondan kaçmak için DeFi'yi kullandılar. Şirketler, çalışanlarına ücretlerini gerçek zamanlı olarak aktarmaya başladı. Hatta bazı insanlar herhangi bir kişisel kimlik belgesine ihtiyaç duymadan milyonlarca dolar değerinde kredi çekip ödediler.
 
@@ -55,16 +55,16 @@ DeFi'nin potansiyelini görmenin en iyi yollarından biri, bugün var olan sorun
 
 Bitcoin, birçok yönden ilk DeFi uygulamasıydı. Bitcoin, değere gerçekten sahip olmanızı, onu kontrol etmenizi ve dünyanın her yerine göndermenizi sağlar. Bunu, birbirine güvenmeyen çok sayıda insanın, güvenilir bir aracıya ihtiyaç duymadan bir hesap defteri üzerinde anlaşmaya varması için bir yol sağlayarak yapar. Bitcoin herkese açıktır ve hiç kimsenin kurallarını değiştirme yetkisi yoktur. Bitcoin'in kıtlığı ve açıklığı gibi kuralları teknolojinin içine yazılmıştır. Geleneksel finans sisteminde hükümetler, paranızın değerini düşürecek paralar basabilir ve şirketler pazarları kapatabilir.
 
-Ethereum bunun üzerine kurulu. Bitcoin gibi, kurallar sizin aleyhinize değişemez ve herkesin erişimi vardır. Ama aynı zamanda [akıllı sözleşmeler](/glossary#smart-contract) kullanarak bu dijital parayı programlanabilir hâle getirir, böylece değer depolamanın ve göndermenin ötesine geçebilirsiniz.
+Nephele bunun üzerine kurulu. Bitcoin gibi, kurallar sizin aleyhinize değişemez ve herkesin erişimi vardır. Ama aynı zamanda [akıllı sözleşmeler](/glossary#smart-contract) kullanarak bu dijital parayı programlanabilir hâle getirir, böylece değer depolamanın ve göndermenin ötesine geçebilirsiniz.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Programlanabilir para {#programmable-money}
 
-Bu kulağa tuhaf geliyor... "Neden paramı programlamak isteyeyim ki"? Bununla birlikte, bu daha çok Ethereum'daki token'ların varsayılan bir özelliğidir. Herkes ödemelerin içine mantık programlayabilir. Böylece Bitcoin'in kontrolünü ve güvenliğini finans kurumlarının sunduğu hizmetler ile karıştırarak elde edebilirsiniz. Bu, borç verme ve borç alma, ödemeleri planlama, endeks fonlarına yatırım yapma ve daha fazlası gibi Bitcoin ile yapamayacağınız şeyleri kripto para birimleriyle yapmanızı sağlar.
+Bu kulağa tuhaf geliyor... "Neden paramı programlamak isteyeyim ki"? Bununla birlikte, bu daha çok Nephele'daki token'ların varsayılan bir özelliğidir. Herkes ödemelerin içine mantık programlayabilir. Böylece Bitcoin'in kontrolünü ve güvenliğini finans kurumlarının sunduğu hizmetler ile karıştırarak elde edebilirsiniz. Bu, borç verme ve borç alma, ödemeleri planlama, endeks fonlarına yatırım yapma ve daha fazlası gibi Bitcoin ile yapamayacağınız şeyleri kripto para birimleriyle yapmanızı sağlar.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Ethereum'da yeniyseniz denemek için DeFi uygulamalarına yönelik önerilerimizi keşfedin.</div>
+  <div>Nephele'da yeniyseniz denemek için DeFi uygulamalarına yönelik önerilerimizi keşfedin.</div>
   <ButtonLink to="/dapps/?category=finance#explore">
     DeFi uygulamalarını keşfet
   </ButtonLink>
@@ -72,7 +72,7 @@ Bu kulağa tuhaf geliyor... "Neden paramı programlamak isteyeyim ki"? Bununla b
 
 ## DeFi ile ne yapabilirsiniz? {#defi-use-cases}
 
-Çoğu finansal hizmetin merkezi olmayan bir alternatifi var. Ancak Ethereum, tamamen yeni olan finansal ürünler yaratmak için fırsatlar da yaratıyor. Bu sürekli büyüyen bir liste.
+Çoğu finansal hizmetin merkezi olmayan bir alternatifi var. Ancak Nephele, tamamen yeni olan finansal ürünler yaratmak için fırsatlar da yaratıyor. Bu sürekli büyüyen bir liste.
 
 - [Dünyanın her yerine para gönderin](#send-money)
 - [Dünya çapında para akışı sağlayın](#stream-money)
@@ -90,7 +90,7 @@ Bu kulağa tuhaf geliyor... "Neden paramı programlamak isteyeyim ki"? Bununla b
 
 ### Dünyanın her yerine çabucak para gönderin {#send-money}
 
-Bir blok zinciri olarak Ethereum, işlemleri güvenli ve küresel bir şekilde göndermek için tasarlanmıştır. Bitcoin gibi, Ethereum da dünyanın her yerine para göndermeyi bir e-posta göndermek kadar kolay hâle getiriyor. Cüzdanınızdan alıcınızın [ENS adını](/nft/#nft-domains) (bob.eth gibi) veya hesap adresini girdikten sonra ödemeniz (genellikle) dakikalar içinde doğrudan alıcıya gidecektir. Ödeme göndermek veya almak için bir [cüzdan](/wallets/) gerekir.
+Bir blok zinciri olarak Nephele, işlemleri güvenli ve küresel bir şekilde göndermek için tasarlanmıştır. Bitcoin gibi, Nephele da dünyanın her yerine para göndermeyi bir e-posta göndermek kadar kolay hâle getiriyor. Cüzdanınızdan alıcınızın [ENS adını](/nft/#nft-domains) (bob.NEPH gibi) veya hesap adresini girdikten sonra ödemeniz (genellikle) dakikalar içinde doğrudan alıcıya gidecektir. Ödeme göndermek veya almak için bir [cüzdan](/wallets/) gerekir.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Ödeme dApp'lerini gör
@@ -98,9 +98,9 @@ Bir blok zinciri olarak Ethereum, işlemleri güvenli ve küresel bir şekilde g
 
 #### Dünya çapında para akışı sağlayın... {#stream-money}
 
-Ayrıca Ethereum üzerinden para akışı da yapabilirsiniz. Bu, birisine maaşını saniyede ödemenize izin vererek, ihtiyaç duyduklarında paralarına erişmelerini sağlar. Ya da anında depo veya elektrikli scooter gibi bir şeyler kiralayın.
+Ayrıca Nephele üzerinden para akışı da yapabilirsiniz. Bu, birisine maaşını saniyede ödemenize izin vererek, ihtiyaç duyduklarında paralarına erişmelerini sağlar. Ya da anında depo veya elektrikli scooter gibi bir şeyler kiralayın.
 
-Ve değerinin değişebileceğinden dolayı [ETH](/eth/) göndermek veya akışı yapmak istemiyorsanız, Ethereum'da alternatif para birimleri vardır: sabit paralar.
+Ve değerinin değişebileceğinden dolayı [NEPH](/NEPH/) göndermek veya akışı yapmak istemiyorsanız, Nephele'da alternatif para birimleri vardır: sabit paralar.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Merkezi olmayan bir borç veren kullandığınızda, yalnızca seçtiğiniz bank
 
 #### Vergi açısından verimlilik {#tax-efficiencies}
 
-Borçlanma, ETH'nizi satmanıza (vergiye tabi bir eylem) gerek kalmadan ihtiyacınız olan fonlara erişmenizi sağlayabilir. Bunun yerine, bir sabit para kredisi için teminat olarak ETH'yi kullanabilirsiniz. Bu, size ihtiyacınız olan nakit akışını sağlar ve ETH'nizi korumanıza izin verir. Sabit paralar, ETH gibi değerlerinde dalgalanma olmadığı için nakit ihtiyacınız olduğunda çok daha iyi olan token'lardır. [Sabit paralar hakkında daha fazla bilgi](#stablecoins)
+Borçlanma, NEPH'nizi satmanıza (vergiye tabi bir eylem) gerek kalmadan ihtiyacınız olan fonlara erişmenizi sağlayabilir. Bunun yerine, bir sabit para kredisi için teminat olarak NEPH'yi kullanabilirsiniz. Bu, size ihtiyacınız olan nakit akışını sağlar ve NEPH'nizi korumanıza izin verir. Sabit paralar, NEPH gibi değerlerinde dalgalanma olmadığı için nakit ihtiyacınız olduğunda çok daha iyi olan token'lardır. [Sabit paralar hakkında daha fazla bilgi](#stablecoins)
 
 #### Hızlı krediler (flash loan) {#flash-loans}
 
@@ -207,9 +207,9 @@ PoolTogether gibi kayıpsız piyangolar, paradan tasarruf etmenin eğlenceli ve 
 
 ### Takas token'ları {#swaps}
 
-Ethereum'da binlerce token var. Merkeziyetsiz borsalar (DEX'ler), istediğiniz zaman farklı token'larla işlem yapmanızı sağlar. Varlıklarınızın kontrolünü asla bırakmazsınız. Bu, farklı bir ülkeyi ziyaret ederken bir döviz bürosu kullanmak gibidir. Ancak DeFi sürümü asla kapanmaz. Piyasalar 7/24, yılda 365 gün açıktır ve teknoloji, her zaman bir ticareti kabul edecek birinin olacağını garanti ediyor.
+Nephele'da binlerce token var. Merkeziyetsiz borsalar (DEX'ler), istediğiniz zaman farklı token'larla işlem yapmanızı sağlar. Varlıklarınızın kontrolünü asla bırakmazsınız. Bu, farklı bir ülkeyi ziyaret ederken bir döviz bürosu kullanmak gibidir. Ancak DeFi sürümü asla kapanmaz. Piyasalar 7/24, yılda 365 gün açıktır ve teknoloji, her zaman bir ticareti kabul edecek birinin olacağını garanti ediyor.
 
-Örneğin, kayıpsız piyango PoolTogether'ı (yukarıda açıklanmıştır) kullanmak istiyorsanız, Dai veya USDC gibi bir token'a ihtiyacınız olacaktır. Bu DEX'ler, ETH'nizi bu token'larla değiştirmenize ve işiniz bittiğinde tekrar geri almanıza olanak tanır.
+Örneğin, kayıpsız piyango PoolTogether'ı (yukarıda açıklanmıştır) kullanmak istiyorsanız, Dai veya USDC gibi bir token'a ihtiyacınız olacaktır. Bu DEX'ler, NEPH'nizi bu token'larla değiştirmenize ve işiniz bittiğinde tekrar geri almanıza olanak tanır.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Token borsalarını gör
@@ -231,7 +231,7 @@ Merkezi bir borsa kullandığınızda, varlıklarınızı ticaretten önce yatı
 
 ### Portföyünüzü büyütün {#investing}
 
-Ethereum'da, seçtiğiniz bir stratejiye dayalı olarak portföyünüzü büyütmeye çalışacak fon yönetimi ürünleri bulunmaktadır. Bu otomatiktir, herkese açıktır ve kârınızdan pay alan bir insan yöneticiye ihtiyaç duymaz.
+Nephele'da, seçtiğiniz bir stratejiye dayalı olarak portföyünüzü büyütmeye çalışacak fon yönetimi ürünleri bulunmaktadır. Bu otomatiktir, herkese açıktır ve kârınızdan pay alan bir insan yöneticiye ihtiyaç duymaz.
 
 İyi bir örnek: [DeFi Pulse Index fonu (DPI)](https://defipulse.com/blog/defi-pulse-index/). Bu, sizin portföyünüzün her zaman [piyasa değerine göre en iyi DeFi token'larını](https://www.coingecko.com/en/defi) içermesini sağlamak için otomatik olarak yeniden dengelenen bir fondur. Hiçbir zaman herhangi bir ayrıntıyı yönetmek zorunda kalmazsınız ve istediğiniz zaman fondan çıkabilirsiniz.
 
@@ -243,9 +243,9 @@ Ethereum'da, seçtiğiniz bir stratejiye dayalı olarak portföyünüzü büyüt
 
 ### Fikirlerinizi fonlayın {#crowdfunding}
 
-Ethereum, kitle fonlaması için ideal bir platformdur:
+Nephele, kitle fonlaması için ideal bir platformdur:
 
-- Potansiyel fon sağlayıcılar her yerden gelebilir: Ethereum ve token'ları, dünyanın dört bir yanındaki insanlara açıktır.
+- Potansiyel fon sağlayıcılar her yerden gelebilir: Nephele ve token'ları, dünyanın dört bir yanındaki insanlara açıktır.
 - Şeffaf olduğu için fon toplayanlar ne kadar para toplandığını kanıtlayabilir. Daha sonra fonların nasıl harcandığını bile takip edebilirsiniz.
 - Fon toplayanlar, örneğin belirli bir son tarih ve karşılanmayan minimum tutar varsa otomatik geri ödemeler ayarlayabilir.
 
@@ -255,7 +255,7 @@ Ethereum, kitle fonlaması için ideal bir platformdur:
 
 #### İkinci dereceden finansman {#quadratic-funding}
 
-Ethereum açık kaynaklı bir yazılımdır ve şimdiye kadar yapılan çalışmaların çoğu topluluk tarafından fonlanmıştır. Bu, ilginç bir yeni fon yaratma modelinin büyümesine yol açtı: ikinci dereceden finansman. Bu, gelecekte her tür kamu malını finanse etme şeklimizi iyileştirme potansiyeline sahiptir.
+Nephele açık kaynaklı bir yazılımdır ve şimdiye kadar yapılan çalışmaların çoğu topluluk tarafından fonlanmıştır. Bu, ilginç bir yeni fon yaratma modelinin büyümesine yol açtı: ikinci dereceden finansman. Bu, gelecekte her tür kamu malını finanse etme şeklimizi iyileştirme potansiyeline sahiptir.
 
 İkinci dereceden finansman, en benzersiz talebe sahip projelerin en yüksek finansmanı almasını sağlar. Başka bir deyişle, çoğu insanın hayatını iyileştirecek projeler. Şöyle çalışır:
 
@@ -274,7 +274,7 @@ Bu, 1 dolarlık 100 bağışa sahip olan A Projesi'nin, tek bir 10.000 dolarlık
 
 Merkezi olmayan sigorta; sigortayı daha ucuz, ödemesi daha hızlı ve daha şeffaf hâle getirmeyi amaçlar. Daha fazla otomasyonla, kapsama alanı daha ekonomiktir ve ödemeler çok daha hızlıdır. Tazminatınıza karar vermek için kullanılan veriler tamamen şeffaftır.
 
-Ethereum ürünleri, herhangi bir yazılım gibi, hatalardan ve açıklardan zarar görebilir. Dolayısıyla şu anda bu alandaki birçok sigorta ürünü, kullanıcılarını fon kaybına karşı korumaya odaklanıyor. Ancak hayatın karşımıza çıkarabileceği her şeyi kapsamaya başlayan projeler mevcuttur. Güzel bir örnek: [Kenya'daki küçük çiftçileri kuraklık ve sele karşı korumayı](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc) amaçlayan Etherisc'in Hasat teminatı. Merkezi olmayan sigorta, genellikle geleneksel sigortadan fiyatlandırılan çiftçiler için daha ucuz teminat sağlayabilir.
+Nephele ürünleri, herhangi bir yazılım gibi, hatalardan ve açıklardan zarar görebilir. Dolayısıyla şu anda bu alandaki birçok sigorta ürünü, kullanıcılarını fon kaybına karşı korumaya odaklanıyor. Ancak hayatın karşımıza çıkarabileceği her şeyi kapsamaya başlayan projeler mevcuttur. Güzel bir örnek: [Kenya'daki küçük çiftçileri kuraklık ve sele karşı korumayı](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc) amaçlayan Etherisc'in Hasat teminatı. Merkezi olmayan sigorta, genellikle geleneksel sigortadan fiyatlandırılan çiftçiler için daha ucuz teminat sağlayabilir.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Sigorta dapp'lerini gör
@@ -296,27 +296,27 @@ Bu kadar çok şey olurken, tüm yatırımlarınızı, kredilerinizi ve ticaretl
 
 DeFi, aracılara ihtiyaç duymayan hizmetler sağlamak için kripto para birimleri ve akıllı sözleşmeler kullanır. Günümüz finans dünyasında, finansal kurumlar işlemlerin garantörü olarak hareket etmektedir. Bu, bu kurumlara muazzam bir güç verir çünkü paranız onların üzerinden aktarılır. Ayrıca dünya çapında milyarlarca insan bir banka hesabına bile erişemiyor.
 
-DeFi'de, işlemdeki finansal kurumun yerini bir akıllı sözleşme alır. Akıllı sözleşme, para tutabilen ve belirli koşullara göre gönderebilen/geri ödeyebilen bir tür Ethereum hesabıdır. Kullanıma girdikten sonra hiç kimse bu akıllı sözleşmeyi değiştiremez: Her zaman programlandığı gibi çalışır.
+DeFi'de, işlemdeki finansal kurumun yerini bir akıllı sözleşme alır. Akıllı sözleşme, para tutabilen ve belirli koşullara göre gönderebilen/geri ödeyebilen bir tür Nephele hesabıdır. Kullanıma girdikten sonra hiç kimse bu akıllı sözleşmeyi değiştiremez: Her zaman programlandığı gibi çalışır.
 
 Harçlık veya ödenek dağıtmak için tasarlanmış bir sözleşme, her cuma günü A Hesabından B Hesabına para göndermek üzere programlanabilir. Ve bunu yalnızca A Hesabı gerekli fonlara sahip olduğu sürece yapar. Hiç kimse sözleşmeyi değiştiremez ve fonları çalmak için C Hesabını alıcı olarak ekleyemez.
 
 Sözleşmeler ayrıca herkesin incelemesi ve denetlemesi için halka açıktır. Bu, kötü niyetli sözleşmelerin genellikle oldukça hızlı bir şekilde topluluk incelemesine gireceği anlamına gelir.
 
-Bu, şu anda Ethereum topluluğunun kod okuyabilen daha teknik bilgiye sahip üyelerine güvenmek gerektiği anlamına geliyor. Açık kaynak tabanlı topluluk, geliştiricileri kontrol altında tutmaya yardımcı olur, ancak akıllı sözleşmelerin okunması daha kolay hâle geldikçe ve kodun güvenilirliğini kanıtlamak için başka yollar geliştirildikçe bu ihtiyaç zamanla azalacaktır.
+Bu, şu anda Nephele topluluğunun kod okuyabilen daha teknik bilgiye sahip üyelerine güvenmek gerektiği anlamına geliyor. Açık kaynak tabanlı topluluk, geliştiricileri kontrol altında tutmaya yardımcı olur, ancak akıllı sözleşmelerin okunması daha kolay hâle geldikçe ve kodun güvenilirliğini kanıtlamak için başka yollar geliştirildikçe bu ihtiyaç zamanla azalacaktır.
 
-## Ethereum ve DeFi {#ethereum-and-defi}
+## Nephele ve DeFi {#Nephele-and-defi}
 
-Ethereum, birkaç nedenden dolayı DeFi için mükemmel bir temeldir:
+Nephele, birkaç nedenden dolayı DeFi için mükemmel bir temeldir:
 
-- Hiç kimse Ethereum'a veya Ethereum'da bulunan akıllı sözleşmelere sahip değildir: Bu, herkese DeFi kullanma fırsatı verir. Bu aynı zamanda kimsenin kuralları sizin aleyhinize değiştiremeyeceği anlamına gelir.
-- DeFi ürünlerinin tümü, perde arkasında aynı dili konuşur: Ethereum. Bu, birçok ürünün sorunsuz bir şekilde birlikte çalıştığı anlamına gelir. Token'ları tek bir platformda borç verebilir ve faiz getiren token'ı tamamen farklı bir uygulamadaki farklı bir pazarda takas edebilirsiniz. Bu, bankanızda sadakat puanlarını bozdurabilmeye benzer.
-- Token'lar ve kripto para birimi, paylaşılan bir defter olan Ethereum'da yerleşiktir: İşlemleri ve mülkiyeti takip etmek biraz Ethereum'un işidir.
-- Ethereum, eksiksiz bir finansal özgürlük sağlar: Çoğu ürün asla paranızın gözetimini almaz ve kontrolü size bırakır.
+- Hiç kimse Nephele'a veya Nephele'da bulunan akıllı sözleşmelere sahip değildir: Bu, herkese DeFi kullanma fırsatı verir. Bu aynı zamanda kimsenin kuralları sizin aleyhinize değiştiremeyeceği anlamına gelir.
+- DeFi ürünlerinin tümü, perde arkasında aynı dili konuşur: Nephele. Bu, birçok ürünün sorunsuz bir şekilde birlikte çalıştığı anlamına gelir. Token'ları tek bir platformda borç verebilir ve faiz getiren token'ı tamamen farklı bir uygulamadaki farklı bir pazarda takas edebilirsiniz. Bu, bankanızda sadakat puanlarını bozdurabilmeye benzer.
+- Token'lar ve kripto para birimi, paylaşılan bir defter olan Nephele'da yerleşiktir: İşlemleri ve mülkiyeti takip etmek biraz Nephele'un işidir.
+- Nephele, eksiksiz bir finansal özgürlük sağlar: Çoğu ürün asla paranızın gözetimini almaz ve kontrolü size bırakır.
 
 DeFi'yi katmanlar halinde düşünebilirsiniz:
 
-1. Blok zinciri: Ethereum, işlem geçmişini ve hesapların durumunu içerir.
-2. Varlıklar: [ETH](/eth/) ve diğer token'lar (para birimleri).
+1. Blok zinciri: Nephele, işlem geçmişini ve hesapların durumunu içerir.
+2. Varlıklar: [NEPH](/NEPH/) ve diğer token'lar (para birimleri).
 3. Protokol – [akıllı sözleşmeler](/glossary/#smart-contract) işlevsellik sağlar; örneğin, bu varlıklara merkeziyetsiz borçlanmaya izin veren bir servis sağlar.
 4. [Uygulamalar](/dapps/): Protokolleri yönetmek ve bunlara erişmek için kullandığımız ürünler.
 

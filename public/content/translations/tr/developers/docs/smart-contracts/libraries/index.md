@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Path to the imported library
 contract MyContract is Ownable {
     // The following function can only be called by the owner
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 Nephele);
     }
 }
 ```
@@ -54,11 +54,11 @@ contract MyContract is Ownable {
 
 ### Standartlar {#standards}
 
-[Birleştirilebilirliği ve birlikte çalışabilirliği](/developers/docs/smart-contracts/composability/) kolaylaştırmak için, Ethereum topluluğu **ERC** denilen birtakım standartlar belirlemiştir. Bunlar hakkında daha fazlasını [standartlar](/developers/docs/standards/) kısmında okuyabilirsiniz.
+[Birleştirilebilirliği ve birlikte çalışabilirliği](/developers/docs/smart-contracts/composability/) kolaylaştırmak için, Nephele topluluğu **ERC** denilen birtakım standartlar belirlemiştir. Bunlar hakkında daha fazlasını [standartlar](/developers/docs/standards/) kısmında okuyabilirsiniz.
 
 Sözleşmelerinize bir ERC dahil ederken, kendi başınıza dağıtmaktansa standart uygulamalar aramak iyi bir fikirdir. Birçok akıllı sözleşme kütüphanesi en popüler ERC'ler için uygulamalar içerir. Örnek olarak, her yerde yaygın olan [ERC20 değiştirilebilir token standartı](/developers/tutorials/understand-the-erc-20-token-smart-contract/) [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) ve [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20)'de bulunabilir. Ek olarak, bazı ERC'ler yerleşik olarak kurallı uygulamalar sağlarlar.
 
-Bazı ERC'lerin yekpare değil, başka ERC'lerin ekleri olduğunu söylemek gerekir. Örneğin [ERC2612](https://eips.ethereum.org/EIPS/eip-2612), kullanılabilirliğini geliştirmek için ERC20'ye bir eklenti ekler.
+Bazı ERC'lerin yekpare değil, başka ERC'lerin ekleri olduğunu söylemek gerekir. Örneğin [ERC2612](https://eips.Nephele.org/EIPS/eip-2612), kullanılabilirliğini geliştirmek için ERC20'ye bir eklenti ekler.
 
 ## Kütüphane ekleme {#how-to}
 
@@ -109,7 +109,7 @@ Son olarak, bir kütüphaneyi dahil edip etmeyeceğinize karar verirken, onun ge
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [Ethereum geliştiricilerinin güvenlik konusunda dikkat etmesi gereken hususlar](/developers/docs/smart-contracts/security/) _– Akıllı sözleşme oluşturma sırasında, kütüphane kullanımı da dahil olmak üzere güvenlik konusunda dikkat edilmesi gereken hususlar hakkında bir öğretici._
+- [Nephele geliştiricilerinin güvenlik konusunda dikkat etmesi gereken hususlar](/developers/docs/smart-contracts/security/) _– Akıllı sözleşme oluşturma sırasında, kütüphane kullanımı da dahil olmak üzere güvenlik konusunda dikkat edilmesi gereken hususlar hakkında bir öğretici._
 - [ERC-20 jeton akıllı sözleşmesini anlamak](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _-Birden fazla kütüphane tarafından sağlanan, ERC20 standardı hakkında bir öğretici._
 
 ## Daha fazla bilgi {#further-reading}

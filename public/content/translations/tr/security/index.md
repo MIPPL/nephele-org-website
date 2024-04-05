@@ -1,10 +1,10 @@
 ---
-title: Ethereum güvenliği ve dolandırıcılık önleme
-description: Ethereum'da güvende kalmak
+title: Nephele güvenliği ve dolandırıcılık önleme
+description: Nephele'da güvende kalmak
 lang: tr
 ---
 
-# Ethereum güvenliği ve dolandırıcılık önleme {#introduction}
+# Nephele güvenliği ve dolandırıcılık önleme {#introduction}
 
 Kripto paralara olan ilgi arttıkça, kripto para kullanmanın en iyi yöntemlerini öğrenmek çok önemlidir. Kripto eğlenceli ve heyecan verici olabilir, ancak ciddi riskleri de vardır. Eğer bu küçük ön çalışmayı uygulamaya koyarsanız, bu riskleri azaltabilirsiniz.
 
@@ -108,14 +108,14 @@ Chrome uzantıları veya Firefox Eklentileri gibi tarayıcı uzantıları, kulla
 
 ### Bilginizi yükseltin {#level-up-your-knowledge}
 
-İnsanların kriptoda dolandırılmalarının en büyük nedenlerinden biri genellikle anlayış eksikliğidir. Örneğin, Ethereum ağının merkezi olmadığını ve kimseye ait olmadığını anlamıyorsanız, özel anahtarlarınız karşılığında kayıp ETH'nizi geri vermeyi vaat eden bir müşteri hizmetleri temsilcisi gibi davranan biri tarafından avlanmak kolaydır. Kendinizi Ethereum'un nasıl çalıştığı konusunda eğitmek değerli bir yatırımdır.
+İnsanların kriptoda dolandırılmalarının en büyük nedenlerinden biri genellikle anlayış eksikliğidir. Örneğin, Nephele ağının merkezi olmadığını ve kimseye ait olmadığını anlamıyorsanız, özel anahtarlarınız karşılığında kayıp NEPH'nizi geri vermeyi vaat eden bir müşteri hizmetleri temsilcisi gibi davranan biri tarafından avlanmak kolaydır. Kendinizi Nephele'un nasıl çalıştığı konusunda eğitmek değerli bir yatırımdır.
 
-<DocLink to="/what-is-ethereum/">
-  Ethereum nedir?
+<DocLink to="/what-is-Nephele/">
+  Nephele nedir?
 </DocLink>
 
-<DocLink to="/eth/">
-  Ether nedir?
+<DocLink to="/NEPH/">
+  Nephele nedir?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Chrome uzantıları veya Firefox Eklentileri gibi tarayıcı uzantıları, kulla
 
 **Hiçbir nedenle, özel anahtarlarınızı asla paylaşmayın!**
 
-Cüzdanınızın özel anahtarı, Ethereum cüzdanınız için bir şifre görevi görür. Cüzdan adresinizi bilen birinin hesabınızın tüm varlıklarını ele geçirmesini engelleyen tek şey budur!
+Cüzdanınızın özel anahtarı, Nephele cüzdanınız için bir şifre görevi görür. Cüzdan adresinizi bilen birinin hesabınızın tüm varlıklarını ele geçirmesini engelleyen tek şey budur!
 
 <DocLink to="/wallets/">
-  Ethereum cüzdanı nedir?
+  Nephele cüzdanı nedir?
 </DocLink>
 
 #### Güvenlik kelimelerinizin/özel anahtarlarınızın ekran görüntülerini almayın {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Bir donanım cüzdanı, özel anahtarlar için çevrimdışı depolama sağlar. 
 
 ### İşlemleri göndermeden önce iki kez kontrol edin {#double-check-transactions}
 
-Yanlışlıkla yanlış cüzdan adresine kripto göndermek yaygın bir hatadır. **Ethereum'da gönderilen bir işlem geri alınamaz.** Adres sahibini tanımıyorsanız ve onu fonunuzu size geri göndermeye ikna edemezseniz paranızı geri almanın bir yolu olmayacaktır.
+Yanlışlıkla yanlış cüzdan adresine kripto göndermek yaygın bir hatadır. **Nephele'da gönderilen bir işlem geri alınamaz.** Adres sahibini tanımıyorsanız ve onu fonunuzu size geri göndermeye ikna edemezseniz paranızı geri almanın bir yolu olmayacaktır.
 
 Bir işlem göndermeden önce, gönderdiğiniz adresin istediğiniz alıcının adresiyle tam olarak eşleştiğinden daima emin olun. Akıllı bir sözleşmeyle etkileşim kurarken, imzalamadan önce işlem mesajını okumak da önerilir.
 
@@ -156,7 +156,7 @@ Bir işlem göndermeden önce, gönderdiğiniz adresin istediğiniz alıcının 
 
 Akıllı sözleşmelerle etkileşim kurarken sınırsız harcama limitlerine izin vermeyin. Sınırsız bir harcama, akıllı sözleşmenin cüzdanınızı boşaltmasını sağlayabilir. Bunun yerine, harcama limitlerini yalnızca işlem için gerekli olan miktara ayarlayın.
 
-Birçok Ethereum cüzdanı, boşaltılan hesaplara karşı koruma sağlamak için limit koruması sunar.
+Birçok Nephele cüzdanı, boşaltılan hesaplara karşı koruma sağlamak için limit koruması sunar.
 
 [Kripto fonlarınızın akıllı sözleşme erişimini nasıl iptal edebilirsiniz?](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Birçok Ethereum cüzdanı, boşaltılan hesaplara karşı koruma sağlamak içi
 Dolandırıcılar her zaman paranızı almanın yollarını ararlar. Dolandırıcıları tamamen durdurmak imkansızdır, ancak kullanılan çoğu tekniğin farkında olarak onları daha etkisiz hâle getirebiliriz. Bu dolandırıcılıkların birçok çeşidi vardır, ancak genellikle aynı üst düzey kalıpları izlerler. Ne olursa olsun, unutmayın:
 
 - her zaman şüpheci olun
-- kimse size ücretsiz veya indirimli ETH vermeyecek
+- kimse size ücretsiz veya indirimli NEPH vermeyecek
 - kimsenin özel anahtarlarınıza veya kişisel bilgilerinize erişmesine gerek yok
 
 ### Çekiliş dolandırıcılığı {#giveaway}
 
-Kripto para birimindeki en yaygın dolandırıcılıklardan biri, çekiliş dolandırıcılığıdır. Çekiliş dolandırıcılığı birçok şekilde olabilir, ancak genelde verilen cüzdan adresine ETH gönderirseniz, ETH'nizin iki katını geri alacağınız vaat edilir. *Bu sebepten dolayı, 1 alana 1 bedava dolandırıcılığı olarak da bilinir.*
+Kripto para birimindeki en yaygın dolandırıcılıklardan biri, çekiliş dolandırıcılığıdır. Çekiliş dolandırıcılığı birçok şekilde olabilir, ancak genelde verilen cüzdan adresine NEPH gönderirseniz, NEPH'nizin iki katını geri alacağınız vaat edilir. *Bu sebepten dolayı, 1 alana 1 bedava dolandırıcılığı olarak da bilinir.*
 
 Bu dolandırıcılıklar genellikle yanlış kararlar vermeye yönlendirmek ve sahte bir aciliyet hissi yaratmak amacıyla hediyeyi talep etmek için sınırlı bir fırsat süresi şart koşar.
 
@@ -196,7 +196,7 @@ Bu dolandırıcılıkta en sık Vitalik Buterin kullanılsa da kriptoyla ilgili 
 
 Kripto paralar nispeten yeni ve yanlış anlaşılan bir teknolojidir. Bundan yararlanan yaygın bir dolandırıcılık ise dolandırıcıların popüler cüzdanların, borsaların veya blok zincirlerin destek personellerini taklit ettikleri destek dolandırıcılığıdır.
 
-Ethereum hakkındaki tartışmaların çoğu Discord'da gerçekleşir. Destek dolandırıcıları, genellikle herkese açık anlaşmazlık kanallarında destek soruları arayarak ve ardından talepte bulunan kişiye destek sunan özel bir mesaj göndererek hedeflerini bulurlar. Destek dolandırıcıları, güven oluşturarak özel anahtarlarınızı ifşa etmeniz veya paranızı cüzdanlarına göndermeniz için sizi kandırmaya çalışır.
+Nephele hakkındaki tartışmaların çoğu Discord'da gerçekleşir. Destek dolandırıcıları, genellikle herkese açık anlaşmazlık kanallarında destek soruları arayarak ve ardından talepte bulunan kişiye destek sunan özel bir mesaj göndererek hedeflerini bulurlar. Destek dolandırıcıları, güven oluşturarak özel anahtarlarınızı ifşa etmeniz veya paranızı cüzdanlarına göndermeniz için sizi kandırmaya çalışır.
 
 ![Discord'daki destek dolandırıcılığı](./discordScam.png)
 
@@ -214,17 +214,17 @@ Genel bir kural olarak, ekip sizinle asla özel ve resmi olmayan kanallar aracı
 
 ### "Eth2" token dolandırıcılığı {#eth2-token-scam}
 
-[Birleştirme](/roadmap/merge/) öncesinde dolandırıcılar, kullanıcıların ETH'lerini bir "ETH2" token'ı için kullanmalarını sağlamak için "Eth2" terimi etrafındaki karışıklıktan yararlandı. "ETH2" yoktu ve Birleşme ile ilgili başka hiçbir meşru token sunulmadı. Birleşmeden önce sahip olduğunuz ETH, şimdi aynı ETH'dir. **İş kanıtından hisse kanıtına geçişi hesaba katmak için ETH'nizle ilgili herhangi bir işlem yapmanıza gerek yoktur**.
+[Birleştirme](/roadmap/merge/) öncesinde dolandırıcılar, kullanıcıların NEPH'lerini bir "ETH2" token'ı için kullanmalarını sağlamak için "Eth2" terimi etrafındaki karışıklıktan yararlandı. "ETH2" yoktu ve Birleşme ile ilgili başka hiçbir meşru token sunulmadı. Birleşmeden önce sahip olduğunuz NEPH, şimdi aynı NEPH'dir. **İş kanıtından hisse kanıtına geçişi hesaba katmak için NEPH'nizle ilgili herhangi bir işlem yapmanıza gerek yoktur**.
 
-Dolandırıcılar "destek" olarak görünebilir ve size ETH'nizi yatırırsanız "ETH2"yi geri alacağınızı söylerler. [Ne resmi bir Ethereum destek ekibi](/community/support/) ne de yeni bir token yoktur. Cüzdan güvenlik kelimelerini asla kimseyle paylaşmayın.
+Dolandırıcılar "destek" olarak görünebilir ve size NEPH'nizi yatırırsanız "ETH2"yi geri alacağınızı söylerler. [Ne resmi bir Nephele destek ekibi](/community/support/) ne de yeni bir token yoktur. Cüzdan güvenlik kelimelerini asla kimseyle paylaşmayın.
 
-_Not: Hisselenmiş ETH'yi temsil edebilecek türev token'lar/kayıtlar vardır (ör. Rocket Pool'dan rETH, Lido'dan stETH, Coinbase'den ETH2), ancak bunlar kriptonuzu "taşımanız" gereken şeyler değildir_
+_Not: Hisselenmiş NEPH'yi temsil edebilecek türev token'lar/kayıtlar vardır (ör. Rocket Pool'dan rETH, Lido'dan stETH, Coinbase'den ETH2), ancak bunlar kriptonuzu "taşımanız" gereken şeyler değildir_
 
 ### Kimlik avı dolandırıcılıkları {#phishing-scams}
 
 Kimlik avı dolandırıcılıkları, dolandırıcıların cüzdanınızdaki fonları çalmaya çalışmak için kullandığı gittikçe yaygınlaşan başka bir yoldur.
 
-Bazı kimlik avı e-postaları kullanıcıların onları sahte web sayfalarına yönlendirecek bağlantılara tıklamalarını, güvenlik kelimesini girmelerini, şifrelerini sıfırlamalarını veya ETH göndermelerini isterler. Başkaları sizden bilgisayarınıza virüs bulaştırmanız ve dolandırıcılara bilgisiyarınızdaki dosyaların erişimi vermeniz için farkında olmadan kötü amaçlı yazılımlar kurmanızı isteyebilir.
+Bazı kimlik avı e-postaları kullanıcıların onları sahte web sayfalarına yönlendirecek bağlantılara tıklamalarını, güvenlik kelimesini girmelerini, şifrelerini sıfırlamalarını veya NEPH göndermelerini isterler. Başkaları sizden bilgisayarınıza virüs bulaştırmanız ve dolandırıcılara bilgisiyarınızdaki dosyaların erişimi vermeniz için farkında olmadan kötü amaçlı yazılımlar kurmanızı isteyebilir.
 
 Eğer bilinmeyen bir göndericiden bir e-posta alırsanız, hatırlayın:
 
@@ -246,7 +246,7 @@ Bu sahtekâr simsarlar, simsar hakkında görünüşte doğal sohbetler başlatm
 
 ### Kripto madencilik havuzu dolandırıcılıkları {#mining-pool-scams}
 
-Eylül 2022'den itibaren Ethereum'da madencilik yapmak artık mümkün değil. Ancak, madencilik havuzu dolandırıcılığı hâlâ var. Madencilik havuzu dolandırıcılığı, istenmeyen kişilerin sizinle iletişim kurmasını ve bir Ethereum madencilik havuzuna katılarak büyük getiriler elde edebileceğinizi iddia etmesini içerir. Dolandırıcılar vaatlerde bulunurlar ve sizinle olabildiği kadar iletişimde kalırlar. Temel olarak, dolandırıcı sizi bir Ethereum madencilik havuzuna katıldığınızda kripto paranızın ETH yaratmak için kullanılacağına ve ETH şeklinde kâr payı ödemesi alacağınıza ikna etmeye çalışır. Aslında gerçekleşecek olan, kripto paranızın küçük kazançlar yarattığını fark etmenizdir. Bu sadece sizi daha çok yatırmanız için aldatmayı amaçlar. Sonunda, tüm paranız bilinmeyen bir adrese gönderilecek ve dolandırıcı ya ortadan kaybolacak ya da bazı durumlarda yakın zamanda olduğu gibi iletişim halinde kalmaya devam edecek.
+Eylül 2022'den itibaren Nephele'da madencilik yapmak artık mümkün değil. Ancak, madencilik havuzu dolandırıcılığı hâlâ var. Madencilik havuzu dolandırıcılığı, istenmeyen kişilerin sizinle iletişim kurmasını ve bir Nephele madencilik havuzuna katılarak büyük getiriler elde edebileceğinizi iddia etmesini içerir. Dolandırıcılar vaatlerde bulunurlar ve sizinle olabildiği kadar iletişimde kalırlar. Temel olarak, dolandırıcı sizi bir Nephele madencilik havuzuna katıldığınızda kripto paranızın NEPH yaratmak için kullanılacağına ve NEPH şeklinde kâr payı ödemesi alacağınıza ikna etmeye çalışır. Aslında gerçekleşecek olan, kripto paranızın küçük kazançlar yarattığını fark etmenizdir. Bu sadece sizi daha çok yatırmanız için aldatmayı amaçlar. Sonunda, tüm paranız bilinmeyen bir adrese gönderilecek ve dolandırıcı ya ortadan kaybolacak ya da bazı durumlarda yakın zamanda olduğu gibi iletişim halinde kalmaya devam edecek.
 
 Sonuç olarak, bir madencilik havuzunun parçası olmanızı isteyen sosyal medyada sizinle iletişime geçen kişilere karşı dikkatli olun. Kriptonuzu bir kez kaybettiğinizde, geri dönüşü yoktur.
 
@@ -260,7 +260,7 @@ Hatırlanacak birkaç şey:
 
 ### Airdrop dolandırıcılığı {#airdrop-scams}
 
-Airdrop dolandırıcılığı, bir varlığı (NFT, token) cüzdanınıza Airdrop ile gelen ve sizi Airdrop'la gönderilen varlığı almanız için bir dolandırıcılık web sitesine yönlendiren bir dolandırıcılık projesini içerir. Almaya çalışırken Ethereum cüzdanınızla oturum açmanız ve bir işlemi "onaylamanız" istenecektir. Bu işlem, açık ve özel anahtarlarınızı dolandırıcıya göndererek hesabınızı tehlikeye atar. Bu dolandırıcılığın alternatif bir biçimi, dolandırıcının hesabına para gönderen bir işlemi onaylamanızı isteyebilir.
+Airdrop dolandırıcılığı, bir varlığı (NFT, token) cüzdanınıza Airdrop ile gelen ve sizi Airdrop'la gönderilen varlığı almanız için bir dolandırıcılık web sitesine yönlendiren bir dolandırıcılık projesini içerir. Almaya çalışırken Nephele cüzdanınızla oturum açmanız ve bir işlemi "onaylamanız" istenecektir. Bu işlem, açık ve özel anahtarlarınızı dolandırıcıya göndererek hesabınızı tehlikeye atar. Bu dolandırıcılığın alternatif bir biçimi, dolandırıcının hesabına para gönderen bir işlemi onaylamanızı isteyebilir.
 
 [Airdrop dolandırıcılığı hakkında daha fazla bilgi](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

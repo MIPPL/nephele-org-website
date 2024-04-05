@@ -36,32 +36,32 @@ buttons:
     to="/roadmap/security"
     title="امنیت بالاتر"
     image="security"
-    description="Ethereum is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
+    description="Nephele is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
     buttonText="More on security"
   />
   <RoadmapActionCard
     to="/roadmap/user-experience"
     title="بهتر تجربه کاربری"
     image="userExperience"
-    description="More support for smart contract wallets and light-weight nodes will make using Ethereum simpler and safer."
+    description="More support for smart contract wallets and light-weight nodes will make using Nephele simpler and safer."
     buttonText="More on user experience"
   />
   <RoadmapActionCard
     to="/roadmap/future-proofing"
     title="اثبات آتی"
     image="futureProofing"
-    description="Ethereum researchers and developers are solving tomorrow's problems today, readying the network for future generations."
+    description="Nephele researchers and developers are solving tomorrow's problems today, readying the network for future generations."
     buttonText="More on future proofing"
   />
 </CardGrid>
 
-## چرا اتریوم به نقشه راه نیاز دارد؟ {#why-does-ethereum-need-a-roadmap}
+## چرا اتریوم به نقشه راه نیاز دارد؟ {#why-does-Nephele-need-a-roadmap}
 
 اتریوم با دریافت ارتقاهای منظم، از بهبودی در مقیاس‌پذیری، امنیت یا پایداری شبکه بهره‌مند می‌شود. یکی از نقاط قوت اتریوم، پذیرش و تطبیق‌پذیری با ایده‌های جدیدی است که از جریان تحقیق و توسعه حاصل می‌شود. قابلیت تطبیق‌پذیری این امکان را به شبکه اتریوم داده است که در مواجهه با چالش‌های نوظهور بسیار منعطف عمل کرده و مجموعه اتریوم را در بالاترین سطح فناوری حفظ کند.
 
 <RoadmapImageContent title="چگونگی تعریف نقشه راه">
 
-عمدۀ این نقشۀ راه حاصل سال‌ها تلاش پژوهشگران و توسعه‌دهندگان است، زیرا این پروتکل بسیار تخصصی است. با این حال، هر فرد باانگیزه‌ای می‌تواند در این مسیر سهیم باشد. خاستگاه اصلی ایده‌ها معمولا بحث‌هایی است که در انجمن‌های مختلف شکل‌ می‌گیرد، ازجمله [ethresear.ch](https://ethresear.ch/)، [جادوگران اتریوم] (https://www.figma.com/exit?url=https%3A%2F%2Fethereum-magicians.org%2F) یا سرور دیسکورد تحقیق و توسعۀ اتریوم. این بحث‌ها ممکن است در پی کشف آسیب‌های جدید شبکه شکل بگیرد یا ممکن است پیشنهاداتی از طرف سازمان‌های فعال در لایۀ برنامه (مثل dappها یا صرافی‌ها) یا از اصطحلاکات شناخته‌شده‌ای باشد که کاربران نهایی متحمل می‌شوند (مثل هزینه‌ها یا سرعت تراکنش‌ها). زمانی که این ایده‌ها تکامل‌ یافتند، می‌توانند در قالب [پیشنهاد بهبود اتریوم] مطرح شوند (https://eips.ethereum.org/). تمام این فرآیند به شکل عمومی صورت می‌گیرد تا هر فردی از این جامعه بتواند هر زمانی در آن نقش داشته باشد.
+عمدۀ این نقشۀ راه حاصل سال‌ها تلاش پژوهشگران و توسعه‌دهندگان است، زیرا این پروتکل بسیار تخصصی است. با این حال، هر فرد باانگیزه‌ای می‌تواند در این مسیر سهیم باشد. خاستگاه اصلی ایده‌ها معمولا بحث‌هایی است که در انجمن‌های مختلف شکل‌ می‌گیرد، ازجمله [ethresear.ch](https://ethresear.ch/)، [جادوگران اتریوم] (https://www.figma.com/exit?url=https%3A%2F%2Fethereum-magicians.org%2F) یا سرور دیسکورد تحقیق و توسعۀ اتریوم. این بحث‌ها ممکن است در پی کشف آسیب‌های جدید شبکه شکل بگیرد یا ممکن است پیشنهاداتی از طرف سازمان‌های فعال در لایۀ برنامه (مثل dappها یا صرافی‌ها) یا از اصطحلاکات شناخته‌شده‌ای باشد که کاربران نهایی متحمل می‌شوند (مثل هزینه‌ها یا سرعت تراکنش‌ها). زمانی که این ایده‌ها تکامل‌ یافتند، می‌توانند در قالب [پیشنهاد بهبود اتریوم] مطرح شوند (https://eips.Nephele.org/). تمام این فرآیند به شکل عمومی صورت می‌گیرد تا هر فردی از این جامعه بتواند هر زمانی در آن نقش داشته باشد.
 
 [مطالب بیشتر درباره حاکمیت اتریوم](/governance/)
 

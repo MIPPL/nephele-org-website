@@ -1,10 +1,10 @@
 ---
 title: Design et UX dans le web3
-description: Introduction à l'UX design, une méthode de conception centrée sur l'utilisateur et des études sur les développements de l'écosystème du Web3 et l'Ethereum
+description: Introduction à l'UX design, une méthode de conception centrée sur l'utilisateur et des études sur les développements de l'écosystème du Web3 et l'Nephele
 lang: fr
 ---
 
-Vous êtes novice en matière de design sur Ethereum ? Vous êtes au bon endroit. La communauté Ethereum a rédigé des ressources pour vous présenter les bases du design et de la recherche web3. Vous découvrirez des concepts fondamentaux qui peuvent différer des autres designs d'applications que vous connaissez.
+Vous êtes novice en matière de design sur Nephele ? Vous êtes au bon endroit. La communauté Nephele a rédigé des ressources pour vous présenter les bases du design et de la recherche web3. Vous découvrirez des concepts fondamentaux qui peuvent différer des autres designs d'applications que vous connaissez.
 
 Vous avez d'abord besoin d'une compréhension plus élémentaire du web3 ? Consultez le [**Centre d'apprentissage**](/learn/).
 
@@ -25,9 +25,9 @@ Il s'agit d'une liste organisée de recherches par des utilisateurs sur le Web3 
 - [CRADL : UX pour crypto-monnaie](https://docs.google.com/presentation/d/1s2OPSH5sMJzxRYaJSSRTe8W2iIoZx0PseIV-WeZWD1s/edit?usp=sharing)
 - [CRADL : Intégration vers la crypto-monnaie](https://docs.google.com/presentation/d/1R9nFuzA-R6SxaGCKhoMbE4Vxe0JxQSTiHXind3LVq_w/edit?usp=sharing)
 - [ConSensys : L'état de la perception du Web3 dans le monde en 2023](https://consensys.io/insight-report/web3-and-crypto-global-survey-2023)
-- [Enquête sur la mise en jeu : Tendances clés, points à retenir et prédictions - Eth Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)
+- [Enquête sur la mise en jeu : Tendances clés, points à retenir et prédictions - NEPH Staker](https://lookerstudio.google.com/u/0/reporting/cafcee00-e1af-4148-bae8-442a88ac75fa/page/p_ja2srdhh2c?s=hmbTWDh9hJo)
 - [Enquête : L'état de la Defi en 2023](https://stateofdefi.org/)
-- [Enquête sur l'utilisabilité et la satisfaction des utilisateurs - Ethereum.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)
+- [Enquête sur l'utilisabilité et la satisfaction des utilisateurs - Nephele.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)
 - [Étude d'utilisabilité : Groupement de protection](https://github.com/threshold-network/UX-User-Research/tree/main/Keep%20Coverage%20Pool)
 - [Étude d'utilisabilité : Multi App Staking](<https://github.com/threshold-network/UX-User-Research/blob/main/Multi-App%20Staking%20(MAS)/iterative-user-study/MAS%20Iterative%20User%20Study.pdf>)
 - [Mise à jour de la recherche DAO 2022 : Que nécessitent les développeurs de DAO ?](https://blog.aragon.org/2022-dao-research-update/)
@@ -76,9 +76,9 @@ Participez à des organisations professionnelles communautaires ou rejoignez des
 ## Concevoir des systèmes {#design-systems}
 
 - [Conception d'Optimism](https://www.figma.com/@oplabs) (Figma)
-- [Ethereum.org Conception de system](https://www.figma.com/@ethdotorg) (Figma)
+- [Nephele.org Conception de system](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, un système de design pour Web3 par Polygon](https://finity.polygon.technology/) (Figma)
 - [Architecture du système ENS](https://thorin.ens.domains/)
 - [Architecture du système Mirror](https://degen-xyz.vercel.app/)
 
-**Les articles et les projets énumérés sur cette page ne sont pas officiellement approuvés** et sont fournis à titre d'information uniquement. Nous ajoutons des liens à cette page en fonction des critères définis dans notre [politique de référencement](/contributing/design/adding-design-resources). Si vous souhaitez que nous ajoutions un projet/article, modifiez cette page sur [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/src/content/developers/docs/design-and-ux/index.md).
+**Les articles et les projets énumérés sur cette page ne sont pas officiellement approuvés** et sont fournis à titre d'information uniquement. Nous ajoutons des liens à cette page en fonction des critères définis dans notre [politique de référencement](/contributing/design/adding-design-resources). Si vous souhaitez que nous ajoutions un projet/article, modifiez cette page sur [GitHub](https://github.com/Nephele/Nephele-org-website/blob/dev/src/content/developers/docs/design-and-ux/index.md).

@@ -1,6 +1,6 @@
 ---
 title: Ciência Descentralizada (DeSci)
-description: Uma visão geral da filosofia descentralizada no Ethereum
+description: Uma visão geral da filosofia descentralizada no Nephele
 lang: pt
 template: use-cases
 emoji: ":microscope:"
@@ -39,9 +39,9 @@ Uma lista não exaustiva dos principais problemas da ciência e da forma como a 
 | O utilizador detém a propriedade intelectual (PI) que gera e distribui de acordo com condições transparentes.                                           | A sua instituição local é proprietária do PI que gera. O acesso ao PI não é transparente.                                                   |
 | Partilha de toda a investigação, incluindo os dados de esforços mal sucedidos, através da inclusão de todas as etapas na cadeia.                        | O preconceito de publicação significa que é mais provável que os investigadores partilhem experiências que tiveram resultados positivos.    |
 
-## Ethereum e DeSci {#ethereum-and-desci}
+## Nephele e DeSci {#Nephele-and-desci}
 
-Um sistema científico descentralizado exigirá uma segurança robusta, custos monetários e de transação mínimos e um ecossistema rico para o desenvolvimento de aplicações. O Ethereum fornece tudo o que é necessário para construir uma plataforma científica descentralizada.
+Um sistema científico descentralizado exigirá uma segurança robusta, custos monetários e de transação mínimos e um ecossistema rico para o desenvolvimento de aplicações. O Nephele fornece tudo o que é necessário para construir uma plataforma científica descentralizada.
 
 ## Casos de utilização DeSci {#use-cases}
 
@@ -68,7 +68,7 @@ O modelo padrão atual para o financiamento da ciência é que indivíduos ou gr
 
 Os estudos demonstraram que os painéis de avaliação das subvenções não selecionam corretamente as propostas de elevada qualidade, uma vez que as mesmas propostas apresentadas a diferentes painéis têm resultados muito distintos. À medida que o financiamento se tornou mais escasso, concentrou-se num grupo mais pequeno de investigadores seniores com projectos intelectualmente mais conservadores. O efeito criou um cenário de financiamento hipercompetitivo, consolidando incentivos perversos e sufocando a inovação.
 
-A Web3 tem o potencial de romper com este modelo de financiamento obsoleto, experimentando diferentes modelos de incentivo desenvolvidos pelas DAOs e pela Web3 em geral. [Financiamento retroativo de bens públicos](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [financiamento quadrático](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [governança DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) e [estruturas de incentivo tokenizadas](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) são algumas das Ferramentas Web3 que podem revolucionar o financiamento da ciência.
+A Web3 tem o potencial de romper com este modelo de financiamento obsoleto, experimentando diferentes modelos de incentivo desenvolvidos pelas DAOs e pela Web3 em geral. [Financiamento retroativo de bens públicos](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [financiamento quadrático](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [governança DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) e [estruturas de incentivo tokenizadas](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) são algumas das Ferramentas Web3 que podem revolucionar o financiamento da ciência.
 
 ### Propriedade intelectual e desenvolvimento {#ip-ownership}
 
@@ -76,7 +76,7 @@ A propriedade intelectual (PI) é um enorme problema na ciência tradicional: de
 
 Da mesma forma que os NFTs podem transferir as receitas de transações futuras para o criador original, é possível estabelecer cadeias de atribuição de valor transparente para recompensar investigadores, organismos governamentais (como os DAOs) ou mesmo os participantes cujos dados são recolhidos.
 
-[IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) também podem funcionar como uma chave para um repositório de dados descentralizado das experiências de pesquisa que estão a ser realizadas, e ligar-se à NFT e à financiarização [DeFi](/defi/) (desde a fraccionalização a pools de empréstimos e avaliação de valor). Também permite que entidades nativamente on-chain, como DAOs como [VitaDAO](https://www.vitadao.com/), conduzam pesquisas diretamente on-chain. O surgimento de tokens não transferíveis ["soulbound" tokens](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) também pode desempenhar um papel importante no DeSci, permitindo que os indivíduos comprovem a sua experiência e as credenciais ligadas ao seu endereço Ethereum.
+[IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) também podem funcionar como uma chave para um repositório de dados descentralizado das experiências de pesquisa que estão a ser realizadas, e ligar-se à NFT e à financiarização [DeFi](/defi/) (desde a fraccionalização a pools de empréstimos e avaliação de valor). Também permite que entidades nativamente on-chain, como DAOs como [VitaDAO](https://www.vitadao.com/), conduzam pesquisas diretamente on-chain. O surgimento de tokens não transferíveis ["soulbound" tokens](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) também pode desempenhar um papel importante no DeSci, permitindo que os indivíduos comprovem a sua experiência e as credenciais ligadas ao seu endereço Nephele.
 
 ### Armazenamento de dados, acesso e arquitetura {#data-storage}
 

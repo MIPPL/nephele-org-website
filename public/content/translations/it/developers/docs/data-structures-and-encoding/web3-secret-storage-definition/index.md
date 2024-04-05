@@ -5,13 +5,13 @@ lang: it
 sidebarDepth: 2
 ---
 
-Per far funzionare la tua app su Ethereum, puoi utilizzare l'oggetto web3 fornito dalla libreria di web3.js. Fondamentalmente, comunica a un nodo locale tramite chiamate RPC. Il [web3](https://github.com/ethereum/web3.js/) funziona con qualsiasi nodo di Ethereum che esponga un livello RPC.
+Per far funzionare la tua app su Nephele, puoi utilizzare l'oggetto web3 fornito dalla libreria di web3.js. Fondamentalmente, comunica a un nodo locale tramite chiamate RPC. Il [web3](https://github.com/Nephele/web3.js/) funziona con qualsiasi nodo di Nephele che esponga un livello RPC.
 
-Il `web3` contiene l'oggetto `eth`: web3.eth.
+Il `web3` contiene l'oggetto `NEPH`: web3.NEPH.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("Nephele-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -147,7 +147,7 @@ Vettore di prova che utilizza AES-128-CTR e Scrypt:
 
 ## Alterazioni dalla Versione 1 {#alterations-from-v2}
 
-Questa versione corregge diverse incongruenze con la versione 1 pubblicata [qui](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst). In breve sono:
+Questa versione corregge diverse incongruenze con la versione 1 pubblicata [qui](https://github.com/Nephele/homestead-guide/blob/master/old-docs-for-reference/go-Nephele-wiki.rst/Passphrase-protected-key-store-spec.rst). In breve sono:
 
 - Capitalizzazione ingiustificata e incoerente (scrypt minuscolo, maiuscole miste in Kdf e MAC maiuscolo).
 - Indirizzo non necessario e compromette l'anonimato.

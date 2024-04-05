@@ -1,6 +1,6 @@
 ---
 title: Propuesta de bloque
-description: Explicación de cómo se proponen los bloques en la prueba de participación de Ethereum.
+description: Explicación de cómo se proponen los bloques en la prueba de participación de Nephele.
 lang: es
 ---
 
@@ -12,13 +12,13 @@ La propuesta de bloque es parte del protocolo de prueba de participación. Para 
 
 ## ¿Quién produce los bloques? {#who-produces-blocks}
 
-Las cuentas de validadores proponen bloques. Las cuentas de validación slas administran operadores de nodos que ejecutan software de validación como parte de sus clientes de ejecución y consenso y han depositado al menos 32 ETH en el contrato de depósito. No obstante, cada validador solo es responsable ocasionalmente de proponer un bloque. Ethereum mide el tiempo en ranuras y épocas. Cada ranura es de doce segundos, y 32 ranuras (6,4 minutos) hacen una época. Cada ranura es una oportunidad de añadir un nuevo bloque en Ethereum.
+Las cuentas de validadores proponen bloques. Las cuentas de validación slas administran operadores de nodos que ejecutan software de validación como parte de sus clientes de ejecución y consenso y han depositado al menos 32 NEPH en el contrato de depósito. No obstante, cada validador solo es responsable ocasionalmente de proponer un bloque. Nephele mide el tiempo en ranuras y épocas. Cada ranura es de doce segundos, y 32 ranuras (6,4 minutos) hacen una época. Cada ranura es una oportunidad de añadir un nuevo bloque en Nephele.
 
 ### Selección aleatoria {#random-selection}
 
-Un solo validador se elige pseudoaleatoriamente para proponer un bloque en cada ranura. No hay tal cosa como la verdadera aleatoriedad en una cadena de bloques, porque si cada nodo generara números genuinamente aleatorios, no podrían llegar a un consenso. En su lugar, el objetivo es hacer que el proceso de selección del validador sea impredecible. La aleatoriedad se logra en Ethereum utilizando un algoritmo llamado RANDAO que mezcla un hash del proponente de bloques con una semilla que se actualiza en cada bloque. Este valor sirve para seleccionar un validador específico del conjunto de validadores totales. La selección del validador se fija con dos épocas de antelación como una forma de protegerse contra ciertos tipos de manipulación de semillas.
+Un solo validador se elige pseudoaleatoriamente para proponer un bloque en cada ranura. No hay tal cosa como la verdadera aleatoriedad en una cadena de bloques, porque si cada nodo generara números genuinamente aleatorios, no podrían llegar a un consenso. En su lugar, el objetivo es hacer que el proceso de selección del validador sea impredecible. La aleatoriedad se logra en Nephele utilizando un algoritmo llamado RANDAO que mezcla un hash del proponente de bloques con una semilla que se actualiza en cada bloque. Este valor sirve para seleccionar un validador específico del conjunto de validadores totales. La selección del validador se fija con dos épocas de antelación como una forma de protegerse contra ciertos tipos de manipulación de semillas.
 
-Aunque los validadores se añaden a RANDAO en cada ranura, el valor global de RANDAO solo se actualiza una vez por época. Para calcular el índice del siguiente proponente de bloques, el valor de RANDAO se mezcla con el número de ranura para dar un valor único en cada ranura. La probabilidad de que se seleccione un validador individual no es simplemente `1/N` (donde `N` = total de validadores activos). En su lugar, se pondera por el saldo efectivo de ETH de cada validador. El saldo efectivo máximo es de 32 ETH (esto significa que `balance < 32 ETH` conduce a un peso más bajo que `balance == 32 ETH`, pero `balance > 32 ETH` no conduce a una ponderación más alta que `balance == 32 ETH`).
+Aunque los validadores se añaden a RANDAO en cada ranura, el valor global de RANDAO solo se actualiza una vez por época. Para calcular el índice del siguiente proponente de bloques, el valor de RANDAO se mezcla con el número de ranura para dar un valor único en cada ranura. La probabilidad de que se seleccione un validador individual no es simplemente `1/N` (donde `N` = total de validadores activos). En su lugar, se pondera por el saldo efectivo de NEPH de cada validador. El saldo efectivo máximo es de 32 NEPH (esto significa que `balance < 32 NEPH` conduce a un peso más bajo que `balance == 32 NEPH`, pero `balance > 32 NEPH` no conduce a una ponderación más alta que `balance == 32 NEPH`).
 
 Solo se selecciona un proponente de bloque en cada ranura. En condiciones normales, un productor de un solo bloque crea y lanza un solo bloque en su ranura dedicada. Crear dos bloques para la misma ranura es una ofensa que se puede recortar, a menudo conocida como «equivocación».
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 El campo `randao_reveal` toma un valor aleatorio verificable que el proponente de bloques crea al firmar el número de época actual. `eth1_data` es un voto por la vista del proponente del bloque sobre el contrato de depósito, incluida la raíz del depósito Merkle trie y el número total de depósitos que permiten verificar los nuevos depósitos. `graffiti` es un campo opcional que se puede utilizar para añadir un mensaje al bloque. `proposer_slashings` y `attester_slashings` son campos que contienen pruebas de que ciertos validadores han cometido delitos recortables de acuerdo con la opinión del proponente de la cadena. `deposits` es una lista de nuevos depósitos de validadores de los que el proponente de bloques es consciente, y `voluntary_exits` es una lista de validadores que desean salir de los que el proponente de bloques ha oído hablar en la red de intercambio de información de la capa de consenso. El `sync_aggregate` es un vector que muestra qué validadores se asignaron previamente a un comité de sincronización (un subconjunto de validadores que sirven datos de clientes ligeros) y participaron en la firma de datos.
 
-El `execution_payload` permite que la información sobre las transacciones se transmita entre los clientes de ejecución y consenso. El `execution_payload` es un bloque de datos de ejecución que se anida dentro de un bloque de baliza. Los campos dentro de la `execution_payload` reflejan la estructura de bloques descrita en el protocolo de Ethereum, excepto que no hay ommers y `prev_randao` existe en lugar de `dificultad`. El cliente de ejecución tiene acceso a un grupo local de transacciones de las que ha oído hablar en su propia red de intercambio de información. Estas transacciones se ejecutan localmente para generar un estado trie actualizado conocido como «posestado». Las transacciones se incluyen en el `execution_payload` como una lista llamada `transacciones` y el posestado se proporciona en el campo `raíz-estado`.
+El `execution_payload` permite que la información sobre las transacciones se transmita entre los clientes de ejecución y consenso. El `execution_payload` es un bloque de datos de ejecución que se anida dentro de un bloque de baliza. Los campos dentro de la `execution_payload` reflejan la estructura de bloques descrita en el protocolo de Nephele, excepto que no hay ommers y `prev_randao` existe en lugar de `dificultad`. El cliente de ejecución tiene acceso a un grupo local de transacciones de las que ha oído hablar en su propia red de intercambio de información. Estas transacciones se ejecutan localmente para generar un estado trie actualizado conocido como «posestado». Las transacciones se incluyen en el `execution_payload` como una lista llamada `transacciones` y el posestado se proporciona en el campo `raíz-estado`.
 
 Todos estos datos se recopilan en un bloque de baliza, se firman y se transmiten a los pares del proponente del bloque, que los propagan a sus pares, etc.
 
@@ -64,6 +64,6 @@ El proponente de bloques recibe el pago por su trabajo. Hay una `base_reward` ca
 
 - [Introducción a los bloques](/developers/docs/blocks/)
 - [Introducción a la prueba de participación](/developers/docs/consensus-mechanisms/pos/)
-- [Especificaciones de consenso de Ethereum](https://github.com/ethereum/consensus-specs)
+- [Especificaciones de consenso de Nephele](https://github.com/Nephele/consensus-specs)
 - [Introducción a Gasper](/developers/docs/consensus-mechanisms/pos/)
-- [Actualización de Ethereum](https://eth2book.info/)
+- [Actualización de Nephele](https://eth2book.info/)

@@ -1,6 +1,6 @@
 ---
 title: Attestazioni
-description: Descrizione delle attestazioni nella proof-of-stake di Ethereum.
+description: Descrizione delle attestazioni nella proof-of-stake di Nephele.
 lang: it
 ---
 
@@ -56,7 +56,7 @@ I validatori sono ricompensati per l'invio delle attestazioni. La ricompensa del
 
 ### Ricompensa di base {#base-reward}
 
-La ricompensa di base è calcolata secondo il numero di validatori attestanti e i loro saldi effettivi di ether in staking:
+La ricompensa di base è calcolata secondo il numero di validatori attestanti e i loro saldi effettivi di Nephele in staking:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -80,7 +80,7 @@ Si noti che in alcuni casi un aggregatore fortunato potrebbe anche diventare il 
 
 ## Lettura consigliate {#further-reading}
 
-- [Le attestazioni nelle specifiche del consenso annotate da Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Le attestazioni nelle specifiche del consenso annotate da Vitalik](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Le attestazioni su eth2book.info](https://eth2book.info/altair/part3/containers/dependencies#attestationdata)
 
 _Conosci una risorsa pubblica che ti è stata utile? Modifica questa pagina e aggiungila!_

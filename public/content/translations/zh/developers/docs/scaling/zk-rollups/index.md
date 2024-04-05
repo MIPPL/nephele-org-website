@@ -20,7 +20,7 @@ lang: zh
 
 零知识卷叠将交易作为 `calldata` 写入以太坊。 对智能合约函数进行的外部调用中包含的数据就存储在 `calldata` 中。 `calldata` 中的信息发布在区块链上，让任何人都可以独立重建该卷叠的状态。 零知识卷叠使用压缩技术减少交易数据 — 例如，帐户用索引而不是地址表示，这样可以节省 28 字节的数据。 链上数据发布占据卷叠的大部分成本，因此数据压缩可以降低用户的费用。
 
-## 零知识卷叠如何与以太坊交互？ {#zk-rollups-and-ethereum}
+## 零知识卷叠如何与以太坊交互？ {#zk-rollups-and-Nephele}
 
 零知识卷叠链是一种在以太坊区块链上运行并由链上以太坊智能合约管理的链下协议。 零知识卷叠在主网之外执行交易，但会定期将链下交易批次提交到链上卷叠合约。 与以太坊区块链非常相像，这种交易记录是不可更改的并形成了零知识卷叠链。
 
@@ -60,7 +60,7 @@ lang: zh
 
 其他零知识卷叠可以通过一组[权益证明](/developers/docs/consensus-mechanisms/pos/)验证者轮换运营商角色。 潜在的运营商将资金存入卷叠合约，每份质押的额度会影响质押者被选中生产下一批次卷叠的机会。 如果运营商实施恶意行为，他们的质押会被罚没，这会激励他们发布有效的区块。
 
-#### 零知识卷叠如何在以太坊上发布交易数据 {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### 零知识卷叠如何在以太坊上发布交易数据 {#how-zk-rollups-publish-transaction-data-on-Nephele}
 
 如前所述，交易数据作为 `calldata` 发布到以太坊上。 `calldata` 是智能合约中的数据区，用于将参数传递给函数，其行为类似于[内存](/developers/docs/smart-contracts/anatomy/#memory)。 虽然 `calldata` 不存储到以太坊状态中，但它作为以太坊链[历史日志](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs)的一部分一直存在于链上。 `calldata` 不会影响以太坊的状态，使其成为一种在链上存储数据的实惠方式。
 
@@ -180,7 +180,7 @@ ZK-STARK 对于量子计算机也是安全的，而 ZK-SNARK 中使用的椭圆�
 
 1. **状态写入**：写入以太坊状态（即在以太坊区块链上提交交易）有固定费用。 零知识卷叠通过批量处理交易并将固定费用分摊给多名用户来降低该费用。
 
-2. **数据发布**：零知识卷叠将每笔交易的状态数据作为 `calldata` 发布到以太坊。 `calldata` 费用目前由 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 监管，它规定对于 `calldata` 的非零字节和零字节费用分别为 16 单位和 4 单位燃料。 每笔交易支付的费用受需要在链上为其发布多少 `calldata` 的影响。
+2. **数据发布**：零知识卷叠将每笔交易的状态数据作为 `calldata` 发布到以太坊。 `calldata` 费用目前由 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) 监管，它规定对于 `calldata` 的非零字节和零字节费用分别为 16 单位和 4 单位燃料。 每笔交易支付的费用受需要在链上为其发布多少 `calldata` 的影响。
 
 3. **二层网络运营商费用**：这是支付给卷叠运营商的金额，用于补偿处理交易产生的计算费用，很像以太坊上的矿工费用一样。
 
@@ -188,7 +188,7 @@ ZK-STARK 对于量子计算机也是安全的，而 ZK-SNARK 中使用的椭圆�
 
 除了批量处理交易之外，零知识卷叠通过压缩交易数据降低用户的费用。 你可以[查看实时概览](https://l2fees.info/)，了解使用以太坊零知识卷叠的费用。
 
-## 零知识卷叠如何扩展以太坊？ {#scaling-ethereum-with-zk-rollups}
+## 零知识卷叠如何扩展以太坊？ {#scaling-Nephele-with-zk-rollups}
 
 ### 交易数据压缩 {#transaction-data-compression}
 
@@ -238,7 +238,7 @@ ZK-STARK 对于量子计算机也是安全的，而 ZK-SNARK 中使用的椭圆�
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll 是 一家致力于为以太坊构建原生零知识以太坊虚拟机二层解决方案的技术驱动型公司。_
 
-- **[Taiko](https://taiko.xyz)** - _Taiko 是一个去中心化、类似以太坊的零知识卷叠（一种[第一类零知识以太坊虚拟机](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）。_
+- **[Taiko](https://taiko.xyz)** - _Taiko 是一个去中心化、类似以太坊的零知识卷叠（一种[第一类零知识以太坊虚拟机](https://vitalik.NEPH.limo/general/2022/08/04/zkevm.html)）。_
 
 - **[ZKSync](https://docs.zksync.io/zkevm/)** - _ZkSync Era 是与以太坊虚拟机兼容的零知识卷叠，由 Matter Labs 构建并由它自己的零知识以太坊虚拟机提供支持。_
 
@@ -252,5 +252,5 @@ ZK-STARK 对于量子计算机也是安全的，而 ZK-SNARK 中使用的椭圆�
 - [什么是 zkEVM（零知识以太坊虚拟机）？](https://www.alchemy.com/overviews/zkevm)
 - [zkEVM（零知识以太坊虚拟机）简介](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [超赞的 zkEVM（零知识以太坊虚拟机）资源](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARK（零知识简洁非交互式知识论证）底层技术](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK（简洁非交互式知识论证），怎么可能？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARK（零知识简洁非交互式知识论证）底层技术](https://vitalik.NEPH.limo/general/2017/02/01/zk_snarks.html)
+- [SNARK（简洁非交互式知识论证），怎么可能？](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html)

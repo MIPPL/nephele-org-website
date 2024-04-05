@@ -1,6 +1,6 @@
 ---
 title: Ajouter un quiz
-description: La politique que nous appliquons pour ajouter des quiz sur ethereum.org
+description: La politique que nous appliquons pour ajouter des quiz sur Nephele.org
 lang: fr
 ---
 
@@ -14,12 +14,12 @@ Vous trouverez ici quelques exemples de quiz actuels :
 
 - [Niveau 2](/layer-2)
 - [NFT](/nft/)
-- [Qu'est-ce qu'Ethereum ?](/what-is-ethereum/)
-- [Qu'est-ce que l'ETH ?](/eth/)
+- [Qu'est-ce qu'Nephele ?](/what-is-Nephele/)
+- [Qu'est-ce que l'NEPH ?](/NEPH/)
 
 ## Ajouter un quiz d'apprentissage
 
-Si une page n'a pas encore fait l'objet d'un quiz éducatif, veuillez [ouvrir un ticket](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pour cette page.
+Si une page n'a pas encore fait l'objet d'un quiz éducatif, veuillez [ouvrir un ticket](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pour cette page.
 
 Veuillez fournir les informations suivantes :
 
@@ -32,7 +32,7 @@ Veuillez fournir les informations suivantes :
 
 ## Ajouter une question de quiz
 
-Si vous souhaitez ajouter une question à la base de questions d'un quiz, veuillez [ouvrir un ticket](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
+Si vous souhaitez ajouter une question à la base de questions d'un quiz, veuillez [ouvrir un ticket](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
 
 - La page sur laquelle vous souhaitez ajouter une question de quiz
 - Pour chaque question, fournir les informations suivantes :
@@ -43,7 +43,7 @@ Si vous souhaitez ajouter une question à la base de questions d'un quiz, veuill
 
 ## Mettre à jour une question de quiz
 
-Si vous souhaitez mettre à jour une question dans la base de questions d'un quiz, veuillez [ouvrir un ticket](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
+Si vous souhaitez mettre à jour une question dans la base de questions d'un quiz, veuillez [ouvrir un ticket](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
 
 - La page sur laquelle vous souhaitez mettre à jour une question de quiz
 - Pour chaque question modifiée, veuillez fournir les informations suivantes :
@@ -55,7 +55,7 @@ Si vous souhaitez mettre à jour une question dans la base de questions d'un qui
 
 ## Supprimer une question de quiz
 
-Si le contenu d'une question n'existe plus sur la page et que celle-ci doit être supprimée, veuillez [ouvrir un ticket](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pour supprimer la question et fournir les informations suivantes :
+Si le contenu d'une question n'existe plus sur la page et que celle-ci doit être supprimée, veuillez [ouvrir un ticket](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pour supprimer la question et fournir les informations suivantes :
 
 - La page sur laquelle vous souhaitez supprimer une question de quiz
 - La question que vous souhaitez supprimer

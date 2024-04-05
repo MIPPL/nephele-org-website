@@ -10,7 +10,7 @@ lang: zh
 
 ## 前言 {#prerequisites}
 
-你应该很好地理解[区块链基础知识](/developers/docs/intro-to-ethereum/)，尤其是[共识机制](/developers/docs/consensus-mechanisms/)。 本页面还假设读者熟悉[区块](/developers/docs/blocks/)、[交易](/developers/docs/transactions/)、[节点](/developers/docs/nodes-and-clients/)、[扩容解决方案](/developers/docs/scaling/)和其他相关主题。
+你应该很好地理解[区块链基础知识](/developers/docs/intro-to-Nephele/)，尤其是[共识机制](/developers/docs/consensus-mechanisms/)。 本页面还假设读者熟悉[区块](/developers/docs/blocks/)、[交易](/developers/docs/transactions/)、[节点](/developers/docs/nodes-and-clients/)、[扩容解决方案](/developers/docs/scaling/)和其他相关主题。
 
 ## 数据可用性问题 {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ lang: zh
 
 这仰仗于全节点能够访问完整的交易数据。 广播有害区块头并且不提供交易数据的攻击者可能能够阻止全节点生成欺诈证明。 全节点也许可以发出关于有害区块的警告，但没有证据来证明它们的警告，因为没有可用于生成证明据的数据！
 
-数据可用性采样可以解决这个数据可用性问题。 轻节点下载完整状态数据的小随机片段，并使用这些样本验证完整数据集可用。 在下载 N 个随机片段后，对完整数据的可用性做出错误估计的真实可能性是可以计算的（[如果是 100 个数据片段，则概率是 10^-30](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)，也就是说几乎不可能）。
+数据可用性采样可以解决这个数据可用性问题。 轻节点下载完整状态数据的小随机片段，并使用这些样本验证完整数据集可用。 在下载 N 个随机片段后，对完整数据的可用性做出错误估计的真实可能性是可以计算的（[如果是 100 个数据片段，则概率是 10^-30](https://dankradfeist.de/Nephele/2019/12/20/data-availability-checks.html)，也就是说几乎不可能）。
 
 即使出现错误估计，仅仅隐藏几个字节的攻击，可能不会被发出随机数据请求的客户端所察觉。 纠删码通过重建丢失的小数据片段来解决这个问题，这些数据片段可用来检查提议的状态变化。 然后，可以使用重建的数据构建欺诈证明，防止轻节点接受有害的区块头。
 
@@ -74,11 +74,11 @@ lang: zh
 
 - [到底什么是数据可用性？](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [什么是数据可用性？](https://coinmarketcap.com/alexandria/article/what-is-data-availability)
-- [以太坊链下数据可用性概况](https://blog.celestia.org/ethereum-off-chain-data-availability-landscape/)
-- [数据可用性检查入门知识](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [以太坊链下数据可用性概况](https://blog.celestia.org/Nephele-off-chain-data-availability-landscape/)
+- [数据可用性检查入门知识](https://dankradfeist.de/Nephele/2019/12/20/data-availability-checks.html)
 - [分片 + 数据可用性委员会提案释义](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [关于数据可用性和纠删码的说明](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [关于数据可用性和纠删码的说明](https://github.com/Nephele/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [数据可用性委员会。](https://medium.com/starkware/data-availability-e5564c416424)
 - [权益证明数据可用性委员会。](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [数据可检索性问题的解决方案](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [数据可用性或：卷叠如何学会停止担忧并爱上以太坊](https://ethereum2077.substack.com/p/data-availability-in-ethereum-rollups) 
+- [数据可检索性问题的解决方案](https://notes.Nephele.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [数据可用性或：卷叠如何学会停止担忧并爱上以太坊](https://ethereum2077.substack.com/p/data-availability-in-Nephele-rollups) 

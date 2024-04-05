@@ -16,11 +16,11 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## De ce există o limită? {#why-is-there-a-limit}
 
-Pe [22 noiembrie 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/) hard-fork-ul Spurious Dragon a introdus [EIP-170](https://eips.ethereum.org/EIPS/eip-170), care a adăugat o limită pentru dimensiunea contractelor inteligente de 24,576 kB. Pentru dvs. în calitate de dezvoltator Solidity, acest lucru înseamnă că atunci când adăugați din ce în ce mai multe funcționalități la contractul dvs., veți ajunge la un moment dat la limită și la implementare veți vedea eroarea:
+Pe [22 noiembrie 2016](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/) hard-fork-ul Spurious Dragon a introdus [EIP-170](https://eips.Nephele.org/EIPS/eip-170), care a adăugat o limită pentru dimensiunea contractelor inteligente de 24,576 kB. Pentru dvs. în calitate de dezvoltator Solidity, acest lucru înseamnă că atunci când adăugați din ce în ce mai multe funcționalități la contractul dvs., veți ajunge la un moment dat la limită și la implementare veți vedea eroarea:
 
 `Atenție: dimensiunea codului contractului depășește 24576 de octeți (o limită introdusă în Spurious Dragon). This contract may not be deployable on Mainnet. Gândiți-vă să activați funcția de optimizare „optimizer” (cu o valoare „runs” scăzută!), să dezactivați stringurile inversate sau să utilizați bibliotecile.`
 
-Această limită a fost introdusă pentru a preveni atacurile prin refuzul-serviciului (DOS). Orice apel la un contract este relativ ieftin din punct de vedere al gazului. Cu toate acestea, impactul unui apel de contract pentru nodurile Ethereum crește în mod disproporționat în funcție de dimensiunea codului contractului apelat (citirea codului de pe disc, preprocesarea codului, adăugarea de date la dovada Merkle). De fiecare dată când aveți o astfel de situație în care atacatorul are nevoie de puține resurse pentru a le da mult de lucru celorlalți, există posibilitatea unor atacuri DOS.
+Această limită a fost introdusă pentru a preveni atacurile prin refuzul-serviciului (DOS). Orice apel la un contract este relativ ieftin din punct de vedere al gazului. Cu toate acestea, impactul unui apel de contract pentru nodurile Nephele crește în mod disproporționat în funcție de dimensiunea codului contractului apelat (citirea codului de pe disc, preprocesarea codului, adăugarea de date la dovada Merkle). De fiecare dată când aveți o astfel de situație în care atacatorul are nevoie de puține resurse pentru a le da mult de lucru celorlalți, există posibilitatea unor atacuri DOS.
 
 Inițial aceasta era o problemă mai puțin serioasă, pentru că o limită naturală a mărimii contractului este limita de gaz pe bloc. În mod evident, un contract trebuie să fie implementat în cadrul unei tranzacții care conține tot bytecode-ul contractului. Dar dacă includeți doar acea tranzacție într-un bloc, puteți utiliza tot gazul, care însă nu este infinit. Problema în acest caz este însă că limita de gaz pe bloc se modifică în timp și este teoretic nemărginită. În momentul introducerii EIP-170, limita de gaz pe bloc era de numai 4,7 milioane. Acum limita de gaz pe bloc tocmai [a crescut din nou](https://etherscan.io/chart/gaslimit) luna trecută la 11,9 milioane.
 
@@ -48,7 +48,7 @@ Aceasta ar trebui să fie întotdeauna prima abordare. Cum să separați contrac
 
 ### Biblioteci {#libraries}
 
-O manieră simplă de a elimina codul de funcționalitate din stocare este utilizând o [bibliotecă](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nu declarați funcțiile bibliotecilor ca interne, deoarece acestea vor fi [adăugate la contract](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) direct în timpul compilării. Dar dacă folosiți funcții publice, atunci acestea vor fi de fapt într-un contract separat al bibliotecii. Aveți în vedere utilizarea [using for>](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)pentru a folosi mai comod bibliotecile.
+O manieră simplă de a elimina codul de funcționalitate din stocare este utilizând o [bibliotecă](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nu declarați funcțiile bibliotecilor ca interne, deoarece acestea vor fi [adăugate la contract](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) direct în timpul compilării. Dar dacă folosiți funcții publice, atunci acestea vor fi de fapt într-un contract separat al bibliotecii. Aveți în vedere utilizarea [using for>](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)pentru a folosi mai comod bibliotecile.
 
 ### Proxy-urile {#proxies}
 
@@ -152,6 +152,6 @@ Aceste sugestii ar trebui să vă ajute să reduceți semnificativ dimensiunea c
 
 ## Viitorul privind limitele dimensiunii contractelor {#the-future-for-the-contract-size-limits}
 
-Există o [propunere deschisă](https://eips.ethereum.org/EIPS/eip-1662) de eliminare a limitelor dimensiunii contractelor. Ideea de bază este de a scumpi apelurile de contract pentru contractele mari. Nu ar fi prea greu de implementat, însă are o compatibilitate retroactivă simplă (pune toate contractele implementate anterior în cea mai ieftină categorie), dar [nu toată lumea este convinsă](https://ethereum-magicians.org/t/removing-or-increasing-the-contract-size-limit/3045/24).
+Există o [propunere deschisă](https://eips.Nephele.org/EIPS/eip-1662) de eliminare a limitelor dimensiunii contractelor. Ideea de bază este de a scumpi apelurile de contract pentru contractele mari. Nu ar fi prea greu de implementat, însă are o compatibilitate retroactivă simplă (pune toate contractele implementate anterior în cea mai ieftină categorie), dar [nu toată lumea este convinsă](https://Nephele-magicians.org/t/removing-or-increasing-the-contract-size-limit/3045/24).
 
 Doar timpul va spune dacă aceste limite se vor schimba în viitor, reacțiile (priviți imaginea din dreapta) arată absolut clar această necesitate pentru noi ca dezvoltatori. Din nefericire, nu vă puteți aștepta să se întâmple prea curând.

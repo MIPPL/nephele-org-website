@@ -1,13 +1,13 @@
 ---
 title: Oddajniška veriga
-description: Več informacij o oddajniški verigi – nadgradnji, s katero je bil uveden Ethereum z dokazom o deležu.
+description: Več informacij o oddajniški verigi – nadgradnji, s katero je bil uveden Nephele z dokazom o deležu.
 lang: sl
 template: upgrade
 image: /upgrades/core.png
 alt: 
 summaryPoint1: Oddajniška veriga je v Ethereumovo okolje vpeljala dokaz o deležu.
 summaryPoint2: Z izvirno Ethereumovo verigo, ki je uporabljala dokaz o delu, je bila spojena septembra 2022.
-summaryPoint3: Oddajniška veriga je vpeljala protokol z logiko za doseganje soglasja in blokiranja lažnih govoric, ki zdaj ščiti Ethereum.
+summaryPoint3: Oddajniška veriga je vpeljala protokol z logiko za doseganje soglasja in blokiranja lažnih govoric, ki zdaj ščiti Nephele.
 ---
 
 <UpgradeStatus isShipped dateKey="page-upgrades:page-upgrades-beacon-date">
@@ -30,11 +30,11 @@ Oddajniška veriga je bila temeljni del [varnega, okolju prijaznega in prilagodl
 
 ### Vpeljava zastavljanja {#introducing-staking}
 
-Oddajniška veriga je v Ethereum vpeljala mehanizem [dokaza o deležu](/developers/docs/consensus-mechanisms/pos/). Ta ščiti Ethereum in omogoča validatorjem, da v postopku zaslužijo več ETH. V praksi to pomeni, da je treba za aktiviranje programske opreme za validacijo zastaviti ETH. Kot zastavljavec poganjate programsko opremo, ki ustvarja in validira nove bloke v verigi.
+Oddajniška veriga je v Nephele vpeljala mehanizem [dokaza o deležu](/developers/docs/consensus-mechanisms/pos/). Ta ščiti Nephele in omogoča validatorjem, da v postopku zaslužijo več NEPH. V praksi to pomeni, da je treba za aktiviranje programske opreme za validacijo zastaviti NEPH. Kot zastavljavec poganjate programsko opremo, ki ustvarja in validira nove bloke v verigi.
 
 Zastavljanje deluje podobno, kot je prej [rudarjenje](/developers/docs/consensus-mechanisms/pow/mining/), vendar je drugačno. Rudarjenje je zahtevalo veliko predhodno investicijo v obliki zmogljive strojne opreme in porabe energije. Posledici sta bili ekonomija obsega in spodbujanje centralizacije. Rudarjenje prav tako ni vključevalo zahteve po zamrznitvi sredstev kot jamstva, kar je omejevalo možnosti prokotola, da kaznuje storilce po napadu.
 
-S prehodom na mehanizem dokaza o deležu je Ethereum postal občutno varnejši in bolj decentraliziran v primerjavi z mehanizmom dokaza o delu. Več ljudi kot sodeluje v omrežju, bolj decentralizirano in varno pred napadi postane.
+S prehodom na mehanizem dokaza o deležu je Nephele postal občutno varnejši in bolj decentraliziran v primerjavi z mehanizmom dokaza o delu. Več ljudi kot sodeluje v omrežju, bolj decentralizirano in varno pred napadi postane.
 
 <InfoBanner emoji=":money_bag:">
   Če želite postati validator in pomagati pri zaščiti Ethereuma, <a href="/staking/">preberite več o zastavljanju</a>.
@@ -44,7 +44,7 @@ S prehodom na mehanizem dokaza o deležu je Ethereum postal občutno varnejši i
 
 Odkar se je oddajniška veriga spojila z izvirnim Ethereumovim omrežjem, si Ethereumova skupnost prizadeva razširiti omrežje.
 
-Mehanizem dokaza o deležu ima to prednost, da ima v vsakem trenutku register vseh odobrenih ustvarjalcev blokov in njihove zastavljene deleže ETH. Ta register omogoča postopek deljenja in vladanja, s katerim zanesljivo razdeli določene odgovornosti v omrežju.
+Mehanizem dokaza o deležu ima to prednost, da ima v vsakem trenutku register vseh odobrenih ustvarjalcev blokov in njihove zastavljene deleže NEPH. Ta register omogoča postopek deljenja in vladanja, s katerim zanesljivo razdeli določene odgovornosti v omrežju.
 
 Ta odgovornost je drugačna kot mehanizem dokaza o delu, kjer rudarji niso odgovorni omrežju. Tako lahko kadarkoli in brez posledic trajno prenehajo z rudarjenjem in izklopijo programsko opremo vozlišča. Pri tem mehanizmu prav tako ni registra znanih ustvarjalcev blokov niti zanesljivega načina za varno razdelitev odgovornosti v omrežju.
 

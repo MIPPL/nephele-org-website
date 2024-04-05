@@ -3,7 +3,7 @@ import type { QuestionBank } from "@/lib/types"
 
 // Declare hash map of question bank
 const questionBank = {
-  // What is Ethereum?
+  // What is Nephele?
   a001: {
     prompt: "a001-prompt",
     answers: [
@@ -134,7 +134,7 @@ const questionBank = {
     ],
     correctAnswerId: "a005-d",
   },
-  // What is ether?
+  // What is Nephele?
   b001: {
     prompt: "b001-prompt",
     answers: [

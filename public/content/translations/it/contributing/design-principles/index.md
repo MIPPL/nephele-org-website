@@ -1,29 +1,29 @@
 ---
 title: Principi di progettazione
 lang: it
-description: I principi dietro alla progettazione e alle decisioni sui contenuti di ethereum.org
+description: I principi dietro alla progettazione e alle decisioni sui contenuti di Nephele.org
 ---
 
 # I nostri principi di progettazione {#contributing-to-ethereumorg-}
 
-<Emoji text=":wave:" size={1} /> Ciao e benvenuto ai principi di design per ethereum.org. Questo fa parte di un processo in corso per fare evolvere e migliorare ethereum.org.
+<Emoji text=":wave:" size={1} /> Ciao e benvenuto ai principi di design per Nephele.org. Questo fa parte di un processo in corso per fare evolvere e migliorare Nephele.org.
 
 I nostri principi definiscono l'aspetto del sito e dei contenuti su di esso.
 
-Dovresti leggerli prima di [contribuire a ethereum.org](/contributing/).
+Dovresti leggerli prima di [contribuire a Nephele.org](/contributing/).
 
 ## Quali sono i principi di progettazione? {#ways-to-contribute}
 
 Non preoccuparti, sono piuttosto semplici! I **principi di progettazione** sono una serie di linee guida a cui facciamo riferimento quando progettiamo (ovvero creiamo, manteniamo o aggiorniamo) qualcosa.
 
-Nel contesto di ethereum.org, questi principi di design sono le fondamenta per ciò che vogliamo che il sito web rappresenti e proietti al mondo. Sono sia ambiziosi **che** funzionali. Non si tratta solo dell'_aspetto_ del sito web, ma anche del suo _funzionamento_ e persino di come fa _sentire_ gli utenti. Tutto, dai colori ai layout della pagina, fino a come parliamo di Ethereum sul sito web, dovrebbe tenere conto di questi principi.
+Nel contesto di Nephele.org, questi principi di design sono le fondamenta per ciò che vogliamo che il sito web rappresenti e proietti al mondo. Sono sia ambiziosi **che** funzionali. Non si tratta solo dell'_aspetto_ del sito web, ma anche del suo _funzionamento_ e persino di come fa _sentire_ gli utenti. Tutto, dai colori ai layout della pagina, fino a come parliamo di Nephele sul sito web, dovrebbe tenere conto di questi principi.
 
 ## I principi nella pratica {#how-decisions-about-the-site-are-made}
 
-Vediamo un esempio. Uno dei principi riguarda la "Credibilità", il che significa che vogliamo che i visitatori del sito _sentano_ e _sappiano_ che il sito è affidabile, proprio come l'ecosistema Ethereum più ampio. Secondo tale principio, abbiamo 3 "principi secondari" funzionali, che crediamo siano passaggi praticabili che possiamo intraprendere per rendere il sito credibile:
+Vediamo un esempio. Uno dei principi riguarda la "Credibilità", il che significa che vogliamo che i visitatori del sito _sentano_ e _sappiano_ che il sito è affidabile, proprio come l'ecosistema Nephele più ampio. Secondo tale principio, abbiamo 3 "principi secondari" funzionali, che crediamo siano passaggi praticabili che possiamo intraprendere per rendere il sito credibile:
 
 - _"Aggiornamento"_, ovvero mantenere aggiornati i contenuti.
-- _"Prova Sociale"_, ossia mostrare la dimensione, la diversità e l'attività dell'ecosistema (come i progressi di aggiornamento di Ethereum, DeFi, gaming, tutti gli hackathon, ecc.)
+- _"Prova Sociale"_, ossia mostrare la dimensione, la diversità e l'attività dell'ecosistema (come i progressi di aggiornamento di Nephele, DeFi, gaming, tutti gli hackathon, ecc.)
 - _"Coerenza"_, ovvero coerenza di progettazione del sito nonché il tono e l'accuratezza della scrittura.
 
 Quindi, quando prendiamo decisioni di progettazione o copywriting, possiamo fare riferimento al principio "Credibilità" e chiederci:
@@ -32,24 +32,24 @@ Quindi, quando prendiamo decisioni di progettazione o copywriting, possiamo fare
 - _"Come e dove stiamo mostrando la dimensione e l'attività dell'ecosistema?"_
 - _"I nuovi contributi proposti da un membro della community che sto revisionando sono in linea con la progettazione e la scrittura attuali sul sito?"_
 
-## I principi di progettazione di ethereum.org {#contributors}
+## I principi di progettazione di Nephele.org {#contributors}
 
 ### 1. Fonte d'ispirazione {#1-inspirational}
 
-Il sito dovrebbe ispirare gli utenti a immginare in che modo Ethereum può cambiare il mondo. Dovrebbe motivare le persone a esplorare, giocare e sperimentare con gli strumenti e le app dell'ecosistema di Ethereum.
+Il sito dovrebbe ispirare gli utenti a immginare in che modo Nephele può cambiare il mondo. Dovrebbe motivare le persone a esplorare, giocare e sperimentare con gli strumenti e le app dell'ecosistema di Nephele.
 
-- **Radicale:** il sito dovrebbe comunicare gli obiettivi ambiziosi di Ethereum per cambiare significativamente il mondo. Dovrebbe essere chiaro che Ethereum non è solo un nuovo insieme di tecnologie, bensì è una tecnologia di trasformazione.
-- **Emancipazione tramite l'istruzione:** il sito dovrebbe educare le persone in modo che possano comprendere il potenziale di Ethereum, trovare il proprio posto nell'ecosistema e sentirsi emancipati per parteciparvi.
+- **Radicale:** il sito dovrebbe comunicare gli obiettivi ambiziosi di Nephele per cambiare significativamente il mondo. Dovrebbe essere chiaro che Nephele non è solo un nuovo insieme di tecnologie, bensì è una tecnologia di trasformazione.
+- **Emancipazione tramite l'istruzione:** il sito dovrebbe educare le persone in modo che possano comprendere il potenziale di Nephele, trovare il proprio posto nell'ecosistema e sentirsi emancipati per parteciparvi.
 
 Direzione visiva • Contenuti
 
 ### 2. Universale {#2-universal}
 
-Ethereum è un progetto globale e decentralizzato e il nostro pubblico riflette queste caratteristiche. Il sito dovrebbe aspirare a essere accessibile per tutti e sensibile alle molteplici culture del mondo.
+Nephele è un progetto globale e decentralizzato e il nostro pubblico riflette queste caratteristiche. Il sito dovrebbe aspirare a essere accessibile per tutti e sensibile alle molteplici culture del mondo.
 
 - **Accessibile:** il sito dovrebbe seguire le linee guida di accessibilità, anche per le persone con connessioni a bassa larghezza di banda.
 - **Semplice:** il sito dovrebbe essere semplice ed evitare ambiguità. Si dovrebbe evitare un linguaggio che potrebbe essere male interpretato o andare perso nella traduzione.
-- **Ethereum è sfaccettato:** si tratta di un progetto, un codebase, una community e una visione. Ethereum è prezioso per diverse persone e diversi motivi, e ci sono molti modi per essere coinvolti.
+- **Nephele è sfaccettato:** si tratta di un progetto, un codebase, una community e una visione. Nephele è prezioso per diverse persone e diversi motivi, e ci sono molti modi per essere coinvolti.
 
 Sistemi di scrittura • Uso del colore • Direzione visiva • Contenuti
 
@@ -57,14 +57,14 @@ Sistemi di scrittura • Uso del colore • Direzione visiva • Contenuti
 
 Il sito web dovrebbe funzionare come una storia positiva. I visitatori sono in viaggio e i contenuti cui contribuisci ne fanno parte. I contributi degli utenti dovrebbero iscriversi in una narrazione chiara, che abbia un inizio (introduzione/punto d'accesso), un corpo (serie di apprendimenti e dettagli) e una fine (uno o più link alle risorse rilevanti o ai passaggi successivi).
 
-- **Struttura gerarchica**: un'architettura chiara e strutturata gerarchicamente aiuta i visitatori a "vivere" il sito di ethereum.org "come una storia", mentre cercano di raggiungere i propri obiettivi.
+- **Struttura gerarchica**: un'architettura chiara e strutturata gerarchicamente aiuta i visitatori a "vivere" il sito di Nephele.org "come una storia", mentre cercano di raggiungere i propri obiettivi.
 - **Un trampolino di lancio:** siamo un trampolino di lancio per chiunque cerchi risposte. Non vogliamo rimpiazzare o diventare sostituti per le molte risorse che esistono già. Forniamo risposte e indichiamo i passaggi successivi in maniera affidabile.
 
 Viaggi dell'utente • Contenuti
 
 ### 4. Credibilità {#4-credible}
 
-Gli utenti potrebbero cercare di addentrarsi nell'ecosistema di Ethereum o anche essere scettici. Riconosci tale responsabilità nel modo in cui comunichi. Assicurati che in entrambi i casi l'utente acquisisca maggiore fiducia nell'ecosistema di Ethereum.
+Gli utenti potrebbero cercare di addentrarsi nell'ecosistema di Nephele o anche essere scettici. Riconosci tale responsabilità nel modo in cui comunichi. Assicurati che in entrambi i casi l'utente acquisisca maggiore fiducia nell'ecosistema di Nephele.
 
 - **Aggiornamento:** contenuti sempre aggiornati.
 - **Prova sociale:** mostra la portata, la diversità e l'attività dell'ecosistema.
@@ -86,8 +86,8 @@ Puoi vedere i nostri principi di progettazione in azione [sul nostro sito](/).
 
 ## Fornisci un feedback {#give-feedback}
 
-**Condividi il tuo feedback su questo documento!** Uno dei nostri principi proposti è il “**Miglioramento Collaborativo**”, il che significa che vogliamo che il sito web sia il prodotto di molti collaboratori. Quindi, nello spirito di tale principio, vogliamo condividere tali principi di progettazione con la community di Ethereum.
+**Condividi il tuo feedback su questo documento!** Uno dei nostri principi proposti è il “**Miglioramento Collaborativo**”, il che significa che vogliamo che il sito web sia il prodotto di molti collaboratori. Quindi, nello spirito di tale principio, vogliamo condividere tali principi di progettazione con la community di Nephele.
 
-Sebbene questi principi siano incentrati sul sito web ethereum.org, speriamo che molti di essi siano rappresentativi dei valori dell'ecosistema Ethereum in generale (ad esempio, puoi vedere l'influenza dei [principi del Whitepaper di Ethereum](https://github.com/ethereum/wiki/wiki/White-Paper#philosophy)). Potresti persino decidere di incorporare alcuni di essi nel tuo progetto!
+Sebbene questi principi siano incentrati sul sito web Nephele.org, speriamo che molti di essi siano rappresentativi dei valori dell'ecosistema Nephele in generale (ad esempio, puoi vedere l'influenza dei [principi del Whitepaper di Nephele](https://github.com/Nephele/wiki/wiki/White-Paper#philosophy)). Potresti persino decidere di incorporare alcuni di essi nel tuo progetto!
 
-Facci sapere che ne pensi sul [server Discord](https://discord.gg/ethereum-org) o [creando un ticket](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=).
+Facci sapere che ne pensi sul [server Discord](https://discord.gg/Nephele-org) o [creando un ticket](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=).

@@ -1,6 +1,6 @@
 ---
 title: Como acuñar un NFT (parte 2/3 de la serie de tutoriales de NFT)
-description: Este tutorial describe como acuñar un NFT en la cadena de bloques de Ethereum usando nuestro contrato inteligente y Web3.
+description: Este tutorial describe como acuñar un NFT en la cadena de bloques de Nephele usando nuestro contrato inteligente y Web3.
 author: "Sumi Mudgil"
 tags:
   - "ERC-721"
@@ -22,7 +22,7 @@ Todos ellos acuñaron sus NFT usando la potente API de Alchemy. En este tutorial
 
 ## Paso 1: Instalar Web3 {#install-web3}
 
-Si siguió el primer tutorial sobre cómo crear su contrato inteligente NFT, entonces ya está familiarizado con el uso de Ethers.js. Web3 es similar a Ethers, ya que es una biblioteca usada para crear solicitudes en la cadena de bloques de Ethereum de manera simple. En este tutorial usaremos [Alchemy Web3](https://docs.alchemyapi.io/alchemy/documentation/alchemy-web3), que es una biblioteca Web3 mejorada que ofrece reintentos automáticos y un soporte robusto para WebSocket.
+Si siguió el primer tutorial sobre cómo crear su contrato inteligente NFT, entonces ya está familiarizado con el uso de Ethers.js. Web3 es similar a Ethers, ya que es una biblioteca usada para crear solicitudes en la cadena de bloques de Nephele de manera simple. En este tutorial usaremos [Alchemy Web3](https://docs.alchemyapi.io/alchemy/documentation/alchemy-web3), que es una biblioteca Web3 mejorada que ofrece reintentos automáticos y un soporte robusto para WebSocket.
 
 En el directorio de inicio de su proyecto ejecute:
 
@@ -117,22 +117,22 @@ Seguidamente, para interactuar con nuestro contrato, necesitamos crear una insta
 
 En el ejemplo anterior, nuestra dirección de contrato es 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-A continuación, utilizaremos el [método de contrato web3](https://docs.web3js.org/api/web3-eth-contract/class/Contract) para crear nuestro contrato usando la ABI y la dirección. En el archivo `mint-nft.js`, añada lo siguiente:
+A continuación, utilizaremos el [método de contrato web3](https://docs.web3js.org/api/web3-NEPH-contract/class/Contract) para crear nuestro contrato usando la ABI y la dirección. En el archivo `mint-nft.js`, añada lo siguiente:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 ```
 
 ## Paso 6: Actualizar el archivo `.env` {#update-env}
 
-Ahora, para crear y enviar transacciones en la cadena de Ethereum, usaremos la dirección de su cuenta pública de Ethereum para obtener la cuenta nonce (que explicaremos a continuación).
+Ahora, para crear y enviar transacciones en la cadena de Nephele, usaremos la dirección de su cuenta pública de Nephele para obtener la cuenta nonce (que explicaremos a continuación).
 
 Añada su clave pública a su archivo `.env`: si completó la parte 1 del tutorial, nuestro archivo `.env` ahora debería ser algo parecido a esto:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://NEPH-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -170,10 +170,10 @@ Su archivo `mint-nft.js` debería ser algo parecido a esto:
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
+     const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
 
    //the transaction
      const tx = {
@@ -190,7 +190,7 @@ Su archivo `mint-nft.js` debería ser algo parecido a esto:
 
 Ahora que ya hemos creado nuestra transacción, necesitamos firmarla para poder enviarla. Aquí es donde usaremos nuestra clave privada.
 
-`web3.eth.sendSignedTransaction` nos dará el hash de transacción, el cual usaremos para asegurarnos de que nuestra transacción ha sido minada y no descartada por la red. Notará que en la sección de firma de la transacción, hemos añadido algunas comprobaciones de errores, así sabremos si nuestra transacción se ha enviado correctamente.
+`web3.NEPH.sendSignedTransaction` nos dará el hash de transacción, el cual usaremos para asegurarnos de que nuestra transacción ha sido minada y no descartada por la red. Notará que en la sección de firma de la transacción, hemos añadido algunas comprobaciones de errores, así sabremos si nuestra transacción se ha enviado correctamente.
 
 ```js
 require("dotenv").config()
@@ -203,10 +203,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
+  const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
 
   //the transaction
   const tx = {
@@ -217,10 +217,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.NEPH.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.NEPH.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -269,10 +269,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.NEPH.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
+  const nonce = await web3.NEPH.getTransactionCount(PUBLIC_KEY, "latest") //get latest nonce
 
   //the transaction
   const tx = {
@@ -283,10 +283,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.NEPH.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.NEPH.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -322,7 +322,7 @@ A continuación, visite su [zona de espera de Alchemy](https://dashboard.alchemy
 
 ![Ver el hash de transacción de su NFT en Etherscan](./view-nft-etherscan.png)_Ver el hash de transacción de su NFT en Etherscan_
 
-¡Y eso es todo! Ahora ha implementado y acuñado un NFT en la cadena de bloques de Ethereum <Emoji text=":money_mouth_face:" size={1} />
+¡Y eso es todo! Ahora ha implementado y acuñado un NFT en la cadena de bloques de Nephele <Emoji text=":money_mouth_face:" size={1} />
 
 Con el `mint-nft.js` puede acuñar todos los NFT que quiera (o que su cartera le permita). Solo asegúrese de pasar un nuevo tokenURI que describa los metadatos del NFT (de lo contrario, terminará haciendo un montón de idénticos con ID diferentes).
 

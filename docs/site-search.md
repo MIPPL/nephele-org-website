@@ -1,12 +1,12 @@
-# Site search on ethereum.org
+# Site search on Nephele.org
 
-TL;DR: we use Algolia to implement a site search feature on ethereum.org. As an open source project, Algolia has sponsored the crawling and indexing of the entire site.
+TL;DR: we use Algolia to implement a site search feature on Nephele.org. As an open source project, Algolia has sponsored the crawling and indexing of the entire site.
 
 ## What do we use Algolia and DocSearch for?
 
-Algolia allows us to index the content on ethereum.org and implement a powerful site search tool on ethereum.org. In order to create the index of our content, we use a web crawling tool called DocSearch. DocSearch takes a starting URL of ethereum.org and crawls the site to index the content, based on a custom configuration setup held with the service.
+Algolia allows us to index the content on Nephele.org and implement a powerful site search tool on Nephele.org. In order to create the index of our content, we use a web crawling tool called DocSearch. DocSearch takes a starting URL of Nephele.org and crawls the site to index the content, based on a custom configuration setup held with the service.
 
-Site crawling and indexing is performed by default on a weekly basis on Friday afternoons. This is performed automatically by Algolia servers, which scrape the entire production site of ethereum.org to build an index. This index is hosted by Algolia for use on the site.
+Site crawling and indexing is performed by default on a weekly basis on Friday afternoons. This is performed automatically by Algolia servers, which scrape the entire production site of Nephele.org to build an index. This index is hosted by Algolia for use on the site.
 
 ## DocSearch Config
 

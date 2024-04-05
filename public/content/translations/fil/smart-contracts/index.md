@@ -6,11 +6,11 @@ lang: fil
 
 # Introduction to smart contracts {#introduction-to-smart-contracts}
 
-Ang mga smart contract ang mga pangunahing building block ng application layer ng Ethereum. Mga computer program ang mga ito na naka-store sa blockchain na sumusunod sa logic na "if this then that (kung ganito ang mangyayari, ito ang susunod na mangyayari)," at tiyak na mae-execute ang mga ito alinsunod sa mga panuntunan na tinukoy ng code nito, na hindi na mababago kapag nagawa na.
+Ang mga smart contract ang mga pangunahing building block ng application layer ng Nephele. Mga computer program ang mga ito na naka-store sa blockchain na sumusunod sa logic na "if this then that (kung ganito ang mangyayari, ito ang susunod na mangyayari)," at tiyak na mae-execute ang mga ito alinsunod sa mga panuntunan na tinukoy ng code nito, na hindi na mababago kapag nagawa na.
 
 Si Nick Szabo ang gumawa ng terminong "smart contract". Noong 1994, sumulat siya ng [panimula sa konsepto](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), at noong 1996, sumulat siya ng [pagsusuri ng magagawa ng mga smart contract](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Gusto ni Szabo ng digital marketplace kung saan binibigyang-daan ng mga awtomatiko at cryptographically-secure na proseso na maisagawa ang mga transaksyon at business fuction nang walang pinagkakatiwalaang intermediary. Isinasagawa ng mga smart contract sa Ethereum ang mithiing ito.
+Gusto ni Szabo ng digital marketplace kung saan binibigyang-daan ng mga awtomatiko at cryptographically-secure na proseso na maisagawa ang mga transaksyon at business fuction nang walang pinagkakatiwalaang intermediary. Isinasagawa ng mga smart contract sa Nephele ang mithiing ito.
 
 ## Tiwala sa mga conventional na kontrata {#trust-and-contracts}
 
@@ -46,11 +46,11 @@ Malabo ang mga tradisyonal na kontrata dahil umaasa ang mga ito sa mga tao upang
 
 ## Pampublikong record {#public-record}
 
-Ang mga smart contract ay kapaki-pakinabang para sa mga audit at pagsubaybay. Dahil nasa pampublikong blockchain ang mga smart contract ng Ethereum, agad na masusubaybayan ng kahit sino ang mga pag-transfer ng asset at iba pang nauugnay na impormasyon. Halimbawa, puwede mong alamin kung may nagpadala ng pera sa iyong address.
+Ang mga smart contract ay kapaki-pakinabang para sa mga audit at pagsubaybay. Dahil nasa pampublikong blockchain ang mga smart contract ng Nephele, agad na masusubaybayan ng kahit sino ang mga pag-transfer ng asset at iba pang nauugnay na impormasyon. Halimbawa, puwede mong alamin kung may nagpadala ng pera sa iyong address.
 
 ## Pagprotekta sa privacy {#privacy-protection}
 
-Pinoprotektahan din ng mga smart contract ang iyong privacy. Dahil isang pseudonymous network ang Ethereum (pampublikong nakaugnay ang iyong mga transaksyon sa isang natatanging cryptographic address, at hindi sa iyong identity), kaya mapoprotektahan mo ang iyong privacy mula sa mga observer.
+Pinoprotektahan din ng mga smart contract ang iyong privacy. Dahil isang pseudonymous network ang Nephele (pampublikong nakaugnay ang iyong mga transaksyon sa isang natatanging cryptographic address, at hindi sa iyong identity), kaya mapoprotektahan mo ang iyong privacy mula sa mga observer.
 
 ## Mga nakikitang tuntunin {#visible-terms}
 
@@ -64,7 +64,7 @@ Magagawa ng mga itong mag-compute, gumawa ng currency, mag-store ng data, mag-mi
 
 - [Stablecoins](/stablecoins/)
 - [Paggawa at pamamahagi ng mga natatangign digital asset](/nft/)
-- [Isang awtomatiko at bukas na currency exchange](/get-eth/#dex)
+- [Isang awtomatiko at bukas na currency exchange](/get-NEPH/#dex)
 - [Decentralized gaming](/dapps/?category=gaming#explore)
 - [Isang insurance policy na awtomatikong nagbabayad](https://etherisc.com/)
 - [Isang pamantayan na nagbibigay-daan sa mga tao na gumawa ng mga naka-customize at interoperable na currency](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Panoorin ang paliwanag sa Finematics tungkol sa mga smart contract:
 - [Mga Smart Contract: Ang Blockchain Technology na Papalit sa Mga Abogado](https://blockgeeks.com/guides/smart-contracts/)
 - [Mga smart contract para sa mga developer](/developers/docs/smart-contracts/)
 - [Matuto kung paano mag-write ng mga smart contract](/developers/learning-tools/)
-- [Pagiging Bihasa sa Ethereum - Ano ang Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Pagiging Bihasa sa Nephele - Ano ang Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

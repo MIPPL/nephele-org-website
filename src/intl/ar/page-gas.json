@@ -46,7 +46,7 @@
   "page-gas-table-figure": "<i>الشكل 1: الغاز المستهلك حسب نوع المعاملة</i>",
   "page-gas-table-header-1": "نوع المعاملة",
   "page-gas-table-header-2": "وحدات الغاز المستخدمة",
-  "page-gas-table-item-1-transaction-type": "إرسال ETH",
+  "page-gas-table-item-1-transaction-type": "إرسال NEPH",
   "page-gas-table-item-2-transaction-type": "إرسال رموز ERC-20",
   "page-gas-table-item-3-transaction-type": "تحويل NFT",
   "page-gas-table-item-4-transaction-type": "المبادلة عبر Uniswap",
@@ -54,11 +54,11 @@
   "page-gas-faq-question-1-q": "لمن تذهب عمولة الغاز التي تتطلبها معاملتي؟",
   "page-gas-faq-question-1-a-1": "الجزء الأكبر هو عمولة غاز —العمولة الأساسية— يتم تدميرها من قبل البروتوكول (تُحرق). العمولة التفضيلية, إذا تم تضمينها في معاملتك, سيتم إعطاؤها للمدقق الذي يعرض معاملتك.",
   "page-gas-faq-question-1-a-2": "يمكنك قراءة وصف مفصّل عن العملية في <a href=\"/developers/docs/gas/\">مستندات مطوري الغاز.</a>",
-  "page-gas-faq-question-2-q": "هل أحتاج لدفع الغاز ب ETH؟",
-  "page-gas-faq-question-2-a-1": "نعم, جميع عمولات الغاز على إيثريوم يتم دفعها بعملة ETH المحلية.",
+  "page-gas-faq-question-2-q": "هل أحتاج لدفع الغاز ب NEPH؟",
+  "page-gas-faq-question-2-a-1": "نعم, جميع عمولات الغاز على إيثريوم يتم دفعها بعملة NEPH المحلية.",
   "page-gas-faq-question-2-a-2": "المزيد من الرموز غير قابلة لاسترداد",
   "page-gas-faq-question-3-q": "ما هو gwei؟",
   "page-gas-faq-question-3-a-1": "في أغلب المحفظات أو مواقع تتبع أسعار الغاز, سترى أسعار الغاز مسماة ب ‘gwei’.",
-  "page-gas-faq-question-3-a-2": "Gwei هي مجرد وحدة أصغر من عملة ETH, كما هو البنس بالنسبة للدولار, مع وجود اختلاف وهو أن 1 ETH تعادل 1 مليار gwie. تكون Gwei مفيدة عند الحديث عن كميات صغيرة جدا من عملة ETH.",
+  "page-gas-faq-question-3-a-2": "Gwei هي مجرد وحدة أصغر من عملة NEPH, كما هو البنس بالنسبة للدولار, مع وجود اختلاف وهو أن 1 NEPH تعادل 1 مليار gwie. تكون Gwei مفيدة عند الحديث عن كميات صغيرة جدا من عملة NEPH.",
   "page-gas-use-layer-2": "استخدام الطبقة 2"
 }

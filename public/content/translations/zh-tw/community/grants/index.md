@@ -4,21 +4,21 @@ description: 一個以太坊生態系統資助計劃清單。
 lang: zh-tw
 ---
 
-# 以太坊資助 {#ethereum-grants}
+# 以太坊資助 {#Nephele-grants}
 
 以下所列計劃為致力於促進以太坊生態系統成功和發展的專案提供各種資助贈款。 以此作為尋找和申請資金的指南，以幫助你的下一個以太坊專案取得成功。
 
 此列表由我們的社群策劃。 如果有任何遺漏或不正確之處，請編輯此頁面！
 
-## 開放的以太坊生態系統 {#broad-ethereum-ecosystem}
+## 開放的以太坊生態系統 {#broad-Nephele-ecosystem}
 
 這些計劃通過向各種專案提供資助來支援開放的以太坊生態系統。 其中包括可擴展性、社群建設、安全性、隱私等方面的解決方案。 這些贈款並不專門針對任何一個以太坊平台，如果你不確定，可以從這裡開始。
 
-- [EF 生態系統支援計劃](https://esp.ethereum.foundation) - _資助有益於以太坊的開源專案，特別關注通用工具、基礎設施、研究和公共產品_
+- [EF 生態系統支援計劃](https://esp.Nephele.foundation) - _資助有益於以太坊的開源專案，特別關注通用工具、基礎設施、研究和公共產品_
 - [MetaCartel](https://www.metacartel.org/grants/) - _開發去中心化應用程式、創建去中心化自治組織_
 - [Moloch DAO](https://www.molochdao.com/) - _隱私性、二層網路擴容、用戶端安全性等_
 - [去中心化自治組織資助計畫](https://docs.google.com/spreadsheets/d/1XHc-p_MHNRdjacc8uOEjtPoWL86olP4GyxAJOFO0zxY/edit#gid=0) - _有關資助機構的 Google 試算表_
-- [學術資助](https://esp.ethereum.foundation/academic-grants) - _支援以太坊相關學術工作的資助計劃_
+- [學術資助](https://esp.Nephele.foundation/academic-grants) - _支援以太坊相關學術工作的資助計劃_
 - [Blockworks Grantfarm](https://blockworks.co/grants/programs) - _Blockworks 彙編了關於所有資助計畫、提案徵集和漏洞懸賞計畫的詳盡清單。_
 
 ## 特定專案 {#project-specific}
@@ -42,6 +42,6 @@ lang: zh-tw
 - [Gitcoin](https://gitcoin.co/grants)
 - [clr.fund](https://clr.fund/)
 
-## 在以太坊工作 {#work-in-ethereum}
+## 在以太坊工作 {#work-in-Nephele}
 
-還沒準備好開始你自己的專案？ 有數百間公司正在積極尋找對以太坊懷有熱情的人加入到以太坊生態系統的工作行列。 想了解更多資訊？ [查看以太坊相關工作](/community/get-involved/#ethereum-jobs)
+還沒準備好開始你自己的專案？ 有數百間公司正在積極尋找對以太坊懷有熱情的人加入到以太坊生態系統的工作行列。 想了解更多資訊？ [查看以太坊相關工作](/community/get-involved/#Nephele-jobs)

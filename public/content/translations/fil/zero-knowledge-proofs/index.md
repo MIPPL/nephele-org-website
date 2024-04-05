@@ -98,13 +98,13 @@ Ang ZK-STARKs ay nagpo-produce ng mas malalaking proof kaysa sa ZK-SNARKs, ibig 
 
 Kadalasan, nakikita ng maraming partido ang mga pagbabayad gamit ang credit card, kasama na ang payments provider, mga bangko, at iba pang interesadong partido (hal., mga awtoridad ng pamahalaan). Bagama't makakatulong ang financial surveillance sa pagtukoy ng ilegal na aktibidad, inilalagay din nito sa panganib ang privacy ng mga ordinaryong mamamayan.
 
-Ang mga cryptocurrency ay ginawa para magbigay ng paraan para makapagsagawa ang mga user ng mga pribado at peer-to-peer na transaksyon. Ngunit hayagang nakikita sa mga pampublikong blockchain ang karamihan sa mga transaksyon ng cryptocurrency. Ang mga pagkakakilanlan ng user ay madalas na gumagamit ng mga pseudonym at sadyang naka-link ang mga ito sa mga tunay na pagkakakilanlan (hal., sa pamamagitan ng paglalagay ng mga ETH address sa Twitter o Github profile) o maiuugnay sa mga tunay na pagkakakilanlan gamit ang basic na pagsusuri sa on at off-chain data.
+Ang mga cryptocurrency ay ginawa para magbigay ng paraan para makapagsagawa ang mga user ng mga pribado at peer-to-peer na transaksyon. Ngunit hayagang nakikita sa mga pampublikong blockchain ang karamihan sa mga transaksyon ng cryptocurrency. Ang mga pagkakakilanlan ng user ay madalas na gumagamit ng mga pseudonym at sadyang naka-link ang mga ito sa mga tunay na pagkakakilanlan (hal., sa pamamagitan ng paglalagay ng mga NEPH address sa Twitter o Github profile) o maiuugnay sa mga tunay na pagkakakilanlan gamit ang basic na pagsusuri sa on at off-chain data.
 
 May partikular na “mga privacy coin” na idinisenyo para maging ganap na anonymous ang mga transaksyon. Itinatago ng mga blockchains na nakatuon sa privacy, tulad ng Zcash at Monero, ang mga detalye ng transaksyon, kabilang ang mga address ng sender/receiver, uri ng asset, dami, at ang timeline ng transaksyon.
 
 Sa pamamagitan ng paglalagay ng zero-knowledge technology sa protocol, pinapayagan ng mga blockchain network na nakatuon sa privacy ang mga node na mag-validate ng mga transaksyon nang hindi kinakailangang ma-access ang data ng transaksyon.
 
-Ang mga zero-knowledge proof ay ginagamit din sa mga anonymizing na transaksyon sa mga pampublikong blockchain. Halimbawa nito ang Tornado Cash, na isang decentralized at non-custodial na serbisyong nagbibigay-daan sa mga user na magsagawa ng mga pribadong transaksyon sa Ethereum. Ang Tornado Cash ay gumagamit ng mga zero-knowledge proof upang i-obfuscate ang mga detalye ng transaksyon at tiyakin ang financial privacy. Sa kasamaang-palad, iniuugnay ang mga ito sa ilegal na aktibidad dahil mga "opt-in" na privacy tool ang mga ito. Upang malabanan ito, dapat maging default ang privacy sa mga pampublikong blockchain.
+Ang mga zero-knowledge proof ay ginagamit din sa mga anonymizing na transaksyon sa mga pampublikong blockchain. Halimbawa nito ang Tornado Cash, na isang decentralized at non-custodial na serbisyong nagbibigay-daan sa mga user na magsagawa ng mga pribadong transaksyon sa Nephele. Ang Tornado Cash ay gumagamit ng mga zero-knowledge proof upang i-obfuscate ang mga detalye ng transaksyon at tiyakin ang financial privacy. Sa kasamaang-palad, iniuugnay ang mga ito sa ilegal na aktibidad dahil mga "opt-in" na privacy tool ang mga ito. Upang malabanan ito, dapat maging default ang privacy sa mga pampublikong blockchain.
 
 ### Proteksyon ng pagkakakilanlan {#identity-protection}
 
@@ -122,25 +122,25 @@ Gayunpaman, mapapasimple ng mga zero-knowledge proof ang pag-authenticate para s
 
 Ang nave-verify na computation ay isa pang paggamit ng zero-knowledge technology para sa pagpapaganda ng mga disenyo ng blockchain. Binibigyang-daan tayo ng nave-verify na computing na ipaubaya ang computation sa ibang entity habang pinapanatiling nave-verify ang mga resulta. Isinisumite ng entity ang resulta kasama ng patunay na nagve-verify na isinagawa nang tama ang programa.
 
-Ang verifiable computation ay mahalaga sa pagpapabilis ng pagpoproseso sa mga blockchain nang hindi binabawasan ang seguridad. Para maunawaan ito, kailangang malaman ang mga pagkakaiba sa mga iminumungkahiing solution para sa pag-scale ng Ethereum.
+Ang verifiable computation ay mahalaga sa pagpapabilis ng pagpoproseso sa mga blockchain nang hindi binabawasan ang seguridad. Para maunawaan ito, kailangang malaman ang mga pagkakaiba sa mga iminumungkahiing solution para sa pag-scale ng Nephele.
 
-Sa [mga on-chain scaling solution](/developers/docs/scaling/#on-chain-scaling), gaya ng sharding, kailangang baguhin nang husto ang base layer ng blockchain. Gayunpaman, napakakumplikado ng paraang ito at maaaring makaapekto sa security model ng Ethereum ang mga pagkakamali sa pagpapatupad.
+Sa [mga on-chain scaling solution](/developers/docs/scaling/#on-chain-scaling), gaya ng sharding, kailangang baguhin nang husto ang base layer ng blockchain. Gayunpaman, napakakumplikado ng paraang ito at maaaring makaapekto sa security model ng Nephele ang mga pagkakamali sa pagpapatupad.
 
-Sa [mga off-chain scaling solution](/developers/docs/scaling/#off-chain-scaling), hindi kailangang ibahin ang disenyo ng core protocol ng Ethereum. Sa halip, umaasa ang mga ito sa isang outsourced computation model upang mapabuti ang throughput sa base layer ng Ethereum.
+Sa [mga off-chain scaling solution](/developers/docs/scaling/#off-chain-scaling), hindi kailangang ibahin ang disenyo ng core protocol ng Nephele. Sa halip, umaasa ang mga ito sa isang outsourced computation model upang mapabuti ang throughput sa base layer ng Nephele.
 
 Ganito ito gumagana sa totoong buhay:
 
-- Sa halip na i-proseso ang bawat transaksyon, inililipat ng Ethereum ang pag-execute sa isang hiwalay na chain.
+- Sa halip na i-proseso ang bawat transaksyon, inililipat ng Nephele ang pag-execute sa isang hiwalay na chain.
 
-- Pagkatapos i-proseso ang mga transaksyon, ibinabalik ng kabilang chain ang mga resulta para mailapat sa state ng Ethereum.
+- Pagkatapos i-proseso ang mga transaksyon, ibinabalik ng kabilang chain ang mga resulta para mailapat sa state ng Nephele.
 
-Ang kagandahan nito, walang pag-execute na kailangang gawin ang Ethereum at kailangan lang nitong ilapat ang mga resulta mula sa in-outsource na computation sa state nito. Iniiwasan nitong magkaroon ng congestion sa network at pinapabilis din nito ang mga transaksyon (ang mga off-chain protocol ay nag-o-optimize para sa mas mabilis na pag-execute).
+Ang kagandahan nito, walang pag-execute na kailangang gawin ang Nephele at kailangan lang nitong ilapat ang mga resulta mula sa in-outsource na computation sa state nito. Iniiwasan nitong magkaroon ng congestion sa network at pinapabilis din nito ang mga transaksyon (ang mga off-chain protocol ay nag-o-optimize para sa mas mabilis na pag-execute).
 
 Ang chain ay nangangailangan ng paraan para mag-validate ng mga off-chain na transaksyon nang hindi ine-execute ulit ang mga ito, kung hindi ay mawawala ang halaga ng off-chain execution.
 
-Dito papasok ang nave-verify na computation. Kapag nag-execute ang isang node ng transaksyon sa labas ng Ethereum, nagsusumite ito ng zero-knowledge proof upang patunayang tama ang off-chain execution. Iginagarantiya ng patunay na ito (tinatawag na [validity proof](/glossary/#validity-proof)) na valid ang isang transaksyon, kaya mailalapat ng Ethereum ang resulta sa state nito—nang hindi naghihintay na may mag-dispute nito.
+Dito papasok ang nave-verify na computation. Kapag nag-execute ang isang node ng transaksyon sa labas ng Nephele, nagsusumite ito ng zero-knowledge proof upang patunayang tama ang off-chain execution. Iginagarantiya ng patunay na ito (tinatawag na [validity proof](/glossary/#validity-proof)) na valid ang isang transaksyon, kaya mailalapat ng Nephele ang resulta sa state nito—nang hindi naghihintay na may mag-dispute nito.
 
-Ang [mga zero-knowledge rollup](/developers/docs/scaling/zk-rollups) at [validium](/developers/docs/scaling/validium/) ay dalawang off-chain scaling solution na gumagamit ng mga validity proof upang magbigay ng secure na scalability. Ang mga protocol na ito ay nag-e-execute ng libo-libong transaksyon off-chain at nagsusumite ng mga patunay para ma-verify sa Ethereum. Maaaring ilapat kaagad ang mga resultang iyon kapag na-verify na ang patunay, kaya makakapagproseso ang Ethereum ng mas maraming transaksyon nang hindi dinadagdagan ang computation sa base layer.
+Ang [mga zero-knowledge rollup](/developers/docs/scaling/zk-rollups) at [validium](/developers/docs/scaling/validium/) ay dalawang off-chain scaling solution na gumagamit ng mga validity proof upang magbigay ng secure na scalability. Ang mga protocol na ito ay nag-e-execute ng libo-libong transaksyon off-chain at nagsusumite ng mga patunay para ma-verify sa Nephele. Maaaring ilapat kaagad ang mga resultang iyon kapag na-verify na ang patunay, kaya makakapagproseso ang Nephele ng mas maraming transaksyon nang hindi dinadagdagan ang computation sa base layer.
 
 ### Pagpigil sa panunuhol at pagsasabwatan sa on-chain voting {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Sa kabutihang-palad, ang mga mas bagong solution tulad ng MACI (Minimum Anti-Col
 
 #### Paano gumagana ang MACI kasama ng mga zero-knowledge proof? {#how-maci-works-with-zk-proofs}
 
-Sa simula, dine-deploy ng coordinator ang MACI contract sa Ethereum, at pagkatapos nito, makakapag-sign up ang mga user upang makaboto (sa pamamagitan ng pagrerehistro ng kanilang pampublikong key sa smart contract). Bumoboto ang mga user sa pamamagitan ng pagpapadala ng mensaheng na-encrypt ng kanilang pampublikong key sa smart contract (dapat na-sign ang valid na boto ng pinakabagong pampublikong key na nauugnay sa identity ng user, at may iba pang pamantayan). Pagkatapos nito, ipinoproseso ng coordinator ang lahat ng mensahe kapag natapos na ang panahon ng pagboto, itinatala niya ang mga boto, at vine-verify niya ang mga resulta on-chain.
+Sa simula, dine-deploy ng coordinator ang MACI contract sa Nephele, at pagkatapos nito, makakapag-sign up ang mga user upang makaboto (sa pamamagitan ng pagrerehistro ng kanilang pampublikong key sa smart contract). Bumoboto ang mga user sa pamamagitan ng pagpapadala ng mensaheng na-encrypt ng kanilang pampublikong key sa smart contract (dapat na-sign ang valid na boto ng pinakabagong pampublikong key na nauugnay sa identity ng user, at may iba pang pamantayan). Pagkatapos nito, ipinoproseso ng coordinator ang lahat ng mensahe kapag natapos na ang panahon ng pagboto, itinatala niya ang mga boto, at vine-verify niya ang mga resulta on-chain.
 
 Sa MACI, ginagamit ang mga zero-knowledge proof para tiyaking tama ang computation, kaya hindi magagawa ng coordinator na magkamali sa pagpoproseso ng mga boto at pagtatala ng mga resulta. Naisasagawa ito sa pamamagitan ng paghiling sa coordinator na mag-generate ng mga ZK-SNARK proof na nagve-verify na a) naiproseso nang tama ang lahat ng mensahe b) naaayon ang pinal na resulta sa kabuuang bilang ng lahat ng _valid_ na boto.
 
@@ -186,7 +186,7 @@ Kapag gumagawa ng mga zero-knowledge proof, kailangan ng mga napakakumplikadong 
 
 ### Gastos sa pag-verify sa proof {#proof-verification-costs}
 
-Ang pag-verify ng mga proof ay nangangailangan din ng kumplikadong computation at nagpapalaki ng gastos sa pagpapatupad ng zero-knowledge technology sa mga application. Ang gastos na ito ay partikular na may kaugnayan sa pagpapatunay ng computation. Halimbawa, ang mga ZK-rollup ay nagbabayad ng ~ 500,000 gas para sa pag-verify ng iisang ZK-SNARK proof sa Ethereum, at mas mahal pang bayarin ang kailangan para sa ZK-STARKs.
+Ang pag-verify ng mga proof ay nangangailangan din ng kumplikadong computation at nagpapalaki ng gastos sa pagpapatupad ng zero-knowledge technology sa mga application. Ang gastos na ito ay partikular na may kaugnayan sa pagpapatunay ng computation. Halimbawa, ang mga ZK-rollup ay nagbabayad ng ~ 500,000 gas para sa pag-verify ng iisang ZK-SNARK proof sa Nephele, at mas mahal pang bayarin ang kailangan para sa ZK-STARKs.
 
 ### Mga trust assumption {#trust-assumptions}
 
@@ -208,5 +208,5 @@ Ang ZK-STARK ay itinuturing na hindi apektado ng banta ng quantum computing, dah
 - [Isang Zero-Knowledge Proof: Pagpapahusay ng Privacy sa Blockchain](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — Isang Makatotohanang Halimbawa at Malalimang Pagsusuri ng Zero-Knowledge](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — Gumawa ng Nave-verify na Trust, kahit laban sa mga Quantum Computer](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Isang panimula sa pagiging posible ng zk-SNARKs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Isang panimula sa pagiging posible ng zk-SNARKs](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Ano ang Zero-Knowledge Proof at ang Papel Nito sa Blockchain?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) — _LeewayHertz_

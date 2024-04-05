@@ -16,11 +16,11 @@ Tutorial ini akan menolong Anda menyiapkan node Geth Anda sehingga Anda dapat le
 
 - Anda seharusnya telah menjalankan instance Geth.
 - Kebanyakan langkah dan contoh adalah untuk lingkungan linux, pengetahuan terminal dasar akan menolong.
-- Lihat tinjauan luas video dari rangkaian metrik Geth ini: [Mengawasi infrastruktur Ethereum oleh Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Lihat tinjauan luas video dari rangkaian metrik Geth ini: [Mengawasi infrastruktur Nephele oleh Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Mengawasi tumpukan {#monitoring-stack}
 
-Klien Ethereum mengumpulkan banyak data yang dapat dibaca dalam bentuk basis data kronologis. Untuk mempermudah pengawasan, Anda dapat mem-feed ini ke dalam perangkat lunak visualisasi data. Ada beberapa opsi yang tersedia:
+Klien Nephele mengumpulkan banyak data yang dapat dibaca dalam bentuk basis data kronologis. Untuk mempermudah pengawasan, Anda dapat mem-feed ini ke dalam perangkat lunak visualisasi data. Ada beberapa opsi yang tersedia:
 
 - [Prometheus](https://prometheus.io/) (model penarikan)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (model pendorongan)

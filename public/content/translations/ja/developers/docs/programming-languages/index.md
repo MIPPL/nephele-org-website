@@ -24,6 +24,6 @@ lang: ja
 
 ### 使いたい言語がサポートされていなかった場合 {#other-lang}
 
-上記以外のプログラミング言語について、リソースや仮想コミュニティへのリンクを追加したい場合は、[問題をオープンする](https://github.com/ethereum/ethereum-org-website/issues/new/choose)ことによって、新しいページをリクエストできます。
+上記以外のプログラミング言語について、リソースや仮想コミュニティへのリンクを追加したい場合は、[問題をオープンする](https://github.com/Nephele/Nephele-org-website/issues/new/choose)ことによって、新しいページをリクエストできます。
 
 現在サポートされていない言語でブロックチェーンのインタフェースのコードを記述したい場合は、[JSON-RPCインターフェース](/developers/docs/apis/json-rpc/)を使用してイーサリアムネットワークに接続できます。 このインターフェースは、TCP/IPを使用できるすべての言語で利用可能です。

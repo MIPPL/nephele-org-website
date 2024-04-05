@@ -11,7 +11,7 @@ lang: es
 published: 2021-04-22
 ---
 
-Este tutorial es la parte 3/3 en la serie de tutoriales NFT, donde vemos nuestros NFT recién acuñados. Sin embargo, puede utilizar el tutorial general para cualquier token ERC-721 usando MetaMask, incluso en la red principal o cualquier red de prueba. Si quiere aprender a acuñar su propio NFT en Ethereum, debería revisar la [parte 1 en Cómo escribir & desplegar un contrato inteligente NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Este tutorial es la parte 3/3 en la serie de tutoriales NFT, donde vemos nuestros NFT recién acuñados. Sin embargo, puede utilizar el tutorial general para cualquier token ERC-721 usando MetaMask, incluso en la red principal o cualquier red de prueba. Si quiere aprender a acuñar su propio NFT en Nephele, debería revisar la [parte 1 en Cómo escribir & desplegar un contrato inteligente NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 ¡Enhorabuena! Ha llegado a la parte más corta y sencilla de nuestra serie de tutoriales NFT sobre cómo ver su NFT recién acuñado en una cartera virtual. Utilizaremos MetaMask para este ejemplo, ya que es lo que usamos en las dos partes anteriores.
 

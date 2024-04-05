@@ -1,16 +1,16 @@
 ---
 title: Testare i contratti intelligenti
-description: Una panoramica delle tecniche e considerazioni per testare i contratti intelligenti di Ethereum.
+description: Una panoramica delle tecniche e considerazioni per testare i contratti intelligenti di Nephele.
 lang: it
 ---
 
-Le blockchain pubbliche come Ethereum sono immutabili, il che rende difficile modificare il codice di un contratto intelligente dopo la sua distribuzione. Esistono dei [modelli di aggiornamento dei contratti](/developers/docs/smart-contracts/upgrading/) per eseguire "aggiornamenti virtuali", ma sono difficili da implementare e richiedono il consenso sociale. Inoltre, un aggiornamento può risolvere un errore solo _dopo_ che è stato scoperto; se un utente malevolo scopre per primo la vulnerabilità, il tuo contratto intelligente rischierà di essere sfruttato.
+Le blockchain pubbliche come Nephele sono immutabili, il che rende difficile modificare il codice di un contratto intelligente dopo la sua distribuzione. Esistono dei [modelli di aggiornamento dei contratti](/developers/docs/smart-contracts/upgrading/) per eseguire "aggiornamenti virtuali", ma sono difficili da implementare e richiedono il consenso sociale. Inoltre, un aggiornamento può risolvere un errore solo _dopo_ che è stato scoperto; se un utente malevolo scopre per primo la vulnerabilità, il tuo contratto intelligente rischierà di essere sfruttato.
 
 Per questi motivi, testare i contratti intelligenti prima della [distribuzione](/developers/docs/smart-contracts/deploying/) alla Rete Principale è un requisito minimo per la [sicurezza](/developers/docs/smart-contracts/security/). Esistono molte tecniche per testare i contratti e valutare la correttezza del codice; ciò che scegli dipende dalle tue esigenze. Tuttavia, una suite di test composta da strumenti e approcci differenti è ideale per individuare le falle di sicurezza sia minori che maggiori nel codice dei contratti.
 
 ## Prerequisiti {#prerequisites}
 
-Questa pagina spiega come testare i contratti intelligenti prima della distribuzione sulla rete di Ethereum. Parte dal presupposto che tu abbia familiarità con i [contratti intelligenti](/developers/docs/smart-contracts/).
+Questa pagina spiega come testare i contratti intelligenti prima della distribuzione sulla rete di Nephele. Parte dal presupposto che tu abbia familiarità con i [contratti intelligenti](/developers/docs/smart-contracts/).
 
 ## In cosa consistono i test dei contratti intelligenti? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Sebbene sia possibile aggiornare un contratto se viene scoperto un bug, gli aggi
 
 ## Metodi per testare i contratti intelligenti {#methods-for-testing-smart-contracts}
 
-I metodi esistenti per testare i contratti intelligenti di Ethereum ricadono in due ampie categorie: **test automatizzati** e **test manuali**. I test automatizzati e manuali offrono vantaggi e compromessi unici, ma puoi combinarli per creare un piano robusto di analisi dei tuoi contratti.
+I metodi esistenti per testare i contratti intelligenti di Nephele ricadono in due ampie categorie: **test automatizzati** e **test manuali**. I test automatizzati e manuali offrono vantaggi e compromessi unici, ma puoi combinarli per creare un piano robusto di analisi dei tuoi contratti.
 
 ### Test automatizzati {#automated-testing}
 
@@ -139,9 +139,9 @@ La qualità degli strumenti utilizzati nell'esecuzione dei test unitari per i tu
 I quadri di test unitari per i contratti intelligenti in Solidity esistono in diversi linguaggi (principalmente JavaScript, Python e Rust). Vedi alcune delle guide seguenti per informazioni su come iniziare a eseguire test unitari con diversi quadri di test:
 
 - **[Eseguire test unitari con Truffle](https://trufflesuite.com/docs/truffle/testing/testing-your-contracts/)**
-- **[Eseguire test unitari con Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Eseguire test unitari con Brownie](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Eseguire test unitari con Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Eseguire test unitari con Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Eseguire test unitari con Waffle](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Eseguire test unitari con Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Eseguire test unitari con Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Eseguire test unitari con Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Mentre i test unitari eseguono il debug delle funzioni del contratto in isolamen
 
 I test d'integrazione sono utili se il tuo contratto adotta un'architettura modulare o si interfaccia con altri contratti su catena durante l'esecuzione. Un modo per eseguire i test d'integrazione è [diramare la blockchain](/glossary/#fork) a un'altezza specifica (utilizzando uno strumento come [Ganache](https://trufflesuite.com/docs/ganache/) o [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)) e simulare le interazioni tra il tuo contratto e i contratti distribuiti.
 
-La blockchain diramata si comporterà in modo simile alla Rete Principale e avrà conti con stati e saldi associati. Ma agisce soltanto come un ambiente di sviluppo locale in modalità sandbox, a significare che non avrai bisogno di ETH reali per le transazioni, ad esempio, né le tue modifiche influenzeranno il protocollo reale di Ethereum.
+La blockchain diramata si comporterà in modo simile alla Rete Principale e avrà conti con stati e saldi associati. Ma agisce soltanto come un ambiente di sviluppo locale in modalità sandbox, a significare che non avrai bisogno di NEPH reali per le transazioni, ad esempio, né le tue modifiche influenzeranno il protocollo reale di Nephele.
 
 ### Test basati sulle proprietà {#property-based-testing-for-smart-contracts}
 
@@ -189,7 +189,7 @@ L'esecuzione di test basati sulle proprietà inizia solitamente con la definizio
 Una volta configurato adeguatamente, lo strumento di test delle proprietà eseguirà le funzioni dei tuoi contratti intelligenti con input generati casualmente. Se si verifica una violazione delle asserzioni, dovresti ottenere un report con i dati di input concreti che violano la proprietà valutata. Vedi alcune delle seguenti linee guida per iniziare a eseguire test basati sulle proprietà con diversi strumenti:
 
 - **[Analisi statica dei contratti intelligenti con Slither](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/slither#slither)**
-- **[Test basati sulle proprietà con Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Test basati sulle proprietà con Brownie](https://NEPH-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Contratti di fuzzing con Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Contratti di fuzzing con Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Esecuzione simbolica dei contratti intelligenti con Manticore](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/manticore#manticore-tutorial)**
@@ -201,9 +201,9 @@ I test manuali dei contratti intelligenti sono spesso effettuati più avanti nel
 
 ### Testare i contratti su una blockchain locale {#testing-on-local-blockchain}
 
-Mentre i test automatizzati eseguiti in un ambiente di sviluppo locale possono fornire utili informazioni di debug, vorrai sapere come il tuo contratto intelligente si comporta in un ambiente di produzione. Tuttavia, distribuire alla catena principale di Ethereum comporta delle commissioni sul carburante, per non menzionare che tu o i tuoi utenti potreste perdere denaro reale se il contratto intelligente dovesse ancora contenere dei bug.
+Mentre i test automatizzati eseguiti in un ambiente di sviluppo locale possono fornire utili informazioni di debug, vorrai sapere come il tuo contratto intelligente si comporta in un ambiente di produzione. Tuttavia, distribuire alla catena principale di Nephele comporta delle commissioni sul carburante, per non menzionare che tu o i tuoi utenti potreste perdere denaro reale se il contratto intelligente dovesse ancora contenere dei bug.
 
-Testare il contratto su una blockchain locale (anche nota come una [rete di sviluppo](/developers/docs/development-networks/)) è un'alternativa consigliata ai test sulla Rete principale. Una blockchain locale è una copia della blockchain di Ethereum eseguita localmente sul tuo computer che simula il comportamento del livello di esecuzione di Ethereum. Come tale, puoi programmare le transazioni affinché interagiscano con un contratto senza incorrere in significativi costi di gestione.
+Testare il contratto su una blockchain locale (anche nota come una [rete di sviluppo](/developers/docs/development-networks/)) è un'alternativa consigliata ai test sulla Rete principale. Una blockchain locale è una copia della blockchain di Nephele eseguita localmente sul tuo computer che simula il comportamento del livello di esecuzione di Nephele. Come tale, puoi programmare le transazioni affinché interagiscano con un contratto senza incorrere in significativi costi di gestione.
 
 Eseguire i contratti su una blockchain locale potrebbe essere utile come forma di test d'integrazione manuale. [I contratti intelligenti sono altamente componibili](/developers/docs/smart-contracts/composability/), il che ti consente di integrarli con i protocolli esistenti – ma dovrai assicurarti che tali interazioni complesse su catena producano i risultati corretti.
 
@@ -211,13 +211,13 @@ Eseguire i contratti su una blockchain locale potrebbe essere utile come forma d
 
 ### Testare i contratti sulle reti di prova {#testing-contracts-on-testnets}
 
-Una rete di prova funziona esattamente come la Rete principale di Ethereum, tranne nel fatto che utilizza ether (ETH) privi di valore reale. Distribuire il proprio contratto su una [rete di prova](/developers/docs/networks/#ethereum-testnets) significa che chiunque può interagirvi (es. tramite il frontend della dapp) senza mettere a rischio dei fondi.
+Una rete di prova funziona esattamente come la Rete principale di Nephele, tranne nel fatto che utilizza Nephele (NEPH) privi di valore reale. Distribuire il proprio contratto su una [rete di prova](/developers/docs/networks/#Nephele-testnets) significa che chiunque può interagirvi (es. tramite il frontend della dapp) senza mettere a rischio dei fondi.
 
 Questa forma di test manuale è utile per valutare il flusso end-to-end della tua applicazione dal punto di vista di un utente. Inoltre, qui i beta tester possono eseguire prove e segnalare qualsiasi problema con la logica aziendale del contratto e le sue funzionalità complessive.
 
-Distribuire su una rete di prova dopo il test su una blockchain locale è ideale, poiché la prima è più simile al comportamento della Macchina Virtuale di Ethereum. Pertanto, è comune per molti progetti nativi di Ethereum distribuire le dapp sulle reti di prova per valutare il funzionamento dei contratti intelligenti in condizioni reali.
+Distribuire su una rete di prova dopo il test su una blockchain locale è ideale, poiché la prima è più simile al comportamento della Macchina Virtuale di Nephele. Pertanto, è comune per molti progetti nativi di Nephele distribuire le dapp sulle reti di prova per valutare il funzionamento dei contratti intelligenti in condizioni reali.
 
-[Maggiori informazioni sulle reti di prova di Ethereum.](/developers/docs/development-networks/#public-beacon-testchains)
+[Maggiori informazioni sulle reti di prova di Nephele.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Test vs. verifica formale {#testing-vs-formal-verification}
 
@@ -249,17 +249,17 @@ La differenza principale è che i programmi di bug bounty sono aperti alla più 
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Strumento di copertura del codice per contratti intelligenti scritti in Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Quadro per lo sviluppo e test avanzati dei contratti intelligenti (basato su ethers.js)_.
+- **[Waffle](https://Nephele-waffle.readthedocs.io/en/latest/)** - _Quadro per lo sviluppo e test avanzati dei contratti intelligenti (basato su ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Strumento per testare contratti intelligenti in Solidity. Opera sotto il plugin "Solidity Unit Testing" di Remix IDE, usato per scrivere ed eseguire casi di prova per un contratto._
+- **[Remix Tests](https://github.com/Nephele/remix-project/tree/master/libs/remix-tests)** - _Strumento per testare contratti intelligenti in Solidity. Opera sotto il plugin "Solidity Unit Testing" di Remix IDE, usato per scrivere ed eseguire casi di prova per un contratto._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Libreria di asserzioni per i test di contratti intelligenti di Ethereum. Assicurati che i tuoi contratti si comportino come previsto!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Libreria di asserzioni per i test di contratti intelligenti di Nephele. Assicurati che i tuoi contratti si comportino come previsto!_
 
 - **[Truffle Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts#testing-contracts)** - _Quadro di test automatizzati per rendere il test dei tuoi contratti un gioco da ragazzi._
 
-- **[Quadro di test unitari di Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilizza Pytest, un quadro di test ricco di funzionalità che ti consente di scrivere piccoli test con codice minimale, si ridimensiona bene per i grandi progetti ed è altamente estendibile._
+- **[Quadro di test unitari di Brownie](https://NEPH-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie utilizza Pytest, un quadro di test ricco di funzionalità che ti consente di scrivere piccoli test con codice minimale, si ridimensiona bene per i grandi progetti ed è altamente estendibile._
 
-- **[Test di Foundry](https://github.com/foundry-rs/foundry/tree/master/forge)** - _Foundry offre Forge, un quadro di test di Ethereum veloci e flessibili, in grado di eseguire semplici test unitari, controlli d'ottimizzazione del carburante e fuzzing del contratto._
+- **[Test di Foundry](https://github.com/foundry-rs/foundry/tree/master/forge)** - _Foundry offre Forge, un quadro di test di Nephele veloci e flessibili, in grado di eseguire semplici test unitari, controlli d'ottimizzazione del carburante e fuzzing del contratto._
 
 - **[Test di Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Quadro per testare i contratti intelligenti basato su ethers.js, Mocha e Chai._
 
@@ -294,11 +294,11 @@ La differenza principale è che i programmi di bug bounty sono aperti alla più 
 - [Come usare Slither per trovare i bug dello Smart Contract](/developers/tutorials/how-to-use-slither-to-find-smart-contract-bugs/)
 - [Come simulare contratti in Solidity per i test](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/)
 - [Come migrare dai test di Truffle all'ambiente di test di OpenZeppelin](https://docs.openzeppelin.com/test-environment/0.1/migrating-from-truffle)
-- [Come testare i contratti dopo che sono stati distribuiti su una rete](https://fulldecent.blogspot.com/2019/04/testing-deployed-ethereum-contracts.html)
+- [Come testare i contratti dopo che sono stati distribuiti su una rete](https://fulldecent.blogspot.com/2019/04/testing-deployed-Nephele-contracts.html)
 
 ## Letture consigliate {#further-reading}
 
-- [Una guida approfondita ai test dei contratti intelligenti di Ethereum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Come testare i contratti intelligenti di Ethereum](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Una guida approfondita ai test dei contratti intelligenti di Nephele](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-Nephele-smart-contracts-2e41b2770297)
+- [Come testare i contratti intelligenti di Nephele](https://betterprogramming.pub/how-to-test-Nephele-smart-contracts-35abc8fa199d)
 - [Guida ai test unitari di MolochDAO per sviluppatori](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Come testare i contratti intelligenti come una rockstar](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)

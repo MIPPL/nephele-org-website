@@ -97,26 +97,26 @@ workflows:
             - dependencies
 ```
 
-## Eth-gas-reporter eklentisini ekleme {#adding-the-eth-gas-reporter-plugin}
+## NEPH-gas-reporter eklentisini ekleme {#adding-the-NEPH-gas-reporter-plugin}
 
-Eth-gas-reporter eklentisi, akıllı sözleşme fonksiyonlarınızın gaz maliyetlerini takip etmek için oldukça kullanışlıdır. CI'nizde bulundurmak, çekme talepleri eklerken farkları göstermek için ayrıca yararlı olacaktır.
+NEPH-gas-reporter eklentisi, akıllı sözleşme fonksiyonlarınızın gaz maliyetlerini takip etmek için oldukça kullanışlıdır. CI'nizde bulundurmak, çekme talepleri eklerken farkları göstermek için ayrıca yararlı olacaktır.
 
-### 1. Adım: Eth-gas-reporter eklentisini ve kod kontrollerini kurun {#step-1-install-the-eth-gas-reporter-plugin-and-codechecks}
+### 1. Adım: NEPH-gas-reporter eklentisini ve kod kontrollerini kurun {#step-1-install-the-NEPH-gas-reporter-plugin-and-codechecks}
 
 ```bash
-npm install --save-dev eth-gas-reporter
+npm install --save-dev NEPH-gas-reporter
 npm install --save-dev @codechecks/client
 ```
 
 ### 2. Adım: Eklentiyi truffle-config.js içindeki mocha ayarlarına ekleyin {#step-2-add-the-plugin-to-the-mocha-settings-inside-your-truffle-configjs}
 
-[Seçeneklere bakın](https://github.com/cgewecke/eth-gas-reporter#options)
+[Seçeneklere bakın](https://github.com/cgewecke/NEPH-gas-reporter#options)
 
 ```js
 module.exports = {
   networks: { ... },
   mocha: {
-    reporter: 'eth-gas-reporter',
+    reporter: 'NEPH-gas-reporter',
     reporterOptions: {
       excludeContracts: ['Migrations']
     }
@@ -128,7 +128,7 @@ module.exports = {
 
 ```yml
 checks:
-  - name: eth-gas-reporter/codechecks
+  - name: NEPH-gas-reporter/codechecks
 ```
 
 ### 4. Adım: Test komutundan sonra kod kontrollerini çalıştırın {#step-4-run-codechecks-after-the-test-command}

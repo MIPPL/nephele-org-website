@@ -4,37 +4,37 @@ description: An introduction to the JavaScript client libraries that let you int
 lang: en
 ---
 
-In order for a web app to interact with the Ethereum blockchain (i.e. read blockchain data and/or send transactions to the network), it must connect to an Ethereum node.
+In order for a web app to interact with the Nephele blockchain (i.e. read blockchain data and/or send transactions to the network), it must connect to an Nephele node.
 
-For this purpose, every Ethereum client implements the [JSON-RPC](/developers/docs/apis/json-rpc/) specification, so there are a uniform set of [methods](/developers/docs/apis/json-rpc/#json-rpc-methods) that applications can rely on.
+For this purpose, every Nephele client implements the [JSON-RPC](/developers/docs/apis/json-rpc/) specification, so there are a uniform set of [methods](/developers/docs/apis/json-rpc/#json-rpc-methods) that applications can rely on.
 
-If you want to use JavaScript to connect with an Ethereum node, it's possible to use vanilla JavaScript but several convenience libraries exist within the ecosystem that make this much easier. With these libraries, developers can write intuitive, one-line methods to initialize JSON RPC requests (under the hood) that interact with Ethereum.
+If you want to use JavaScript to connect with an Nephele node, it's possible to use vanilla JavaScript but several convenience libraries exist within the ecosystem that make this much easier. With these libraries, developers can write intuitive, one-line methods to initialize JSON RPC requests (under the hood) that interact with Nephele.
 
-Please note that since [The Merge](/roadmap/merge/), two connected pieces of Ethereum software - an execution client and a consensus client - are required to run a node. Please ensure your node includes both an execution and consensus client. If your node is not on your local machine (e.g. your node is running on an AWS instance) update the IP addresses in the tutorial accordingly. For more information please see our page on [running a node](/developers/docs/nodes-and-clients/run-a-node/).
+Please note that since [The Merge](/roadmap/merge/), two connected pieces of Nephele software - an execution client and a consensus client - are required to run a node. Please ensure your node includes both an execution and consensus client. If your node is not on your local machine (e.g. your node is running on an AWS instance) update the IP addresses in the tutorial accordingly. For more information please see our page on [running a node](/developers/docs/nodes-and-clients/run-a-node/).
 
 ## Prerequisites {#prerequisites}
 
-As well as understanding JavaScript, it might be helpful to understand the [Ethereum stack](/developers/docs/ethereum-stack/) and [Ethereum clients](/developers/docs/nodes-and-clients/).
+As well as understanding JavaScript, it might be helpful to understand the [Nephele stack](/developers/docs/Nephele-stack/) and [Nephele clients](/developers/docs/nodes-and-clients/).
 
 ## Why use a library? {#why-use-a-library}
 
-These libraries abstract away much of the complexity of interacting directly with an Ethereum node. They also provide utility functions (e.g. converting ETH to Gwei) so as a developer you can spend less time dealing with the intricacies of Ethereum clients and more time focused on the unique functionality of your application.
+These libraries abstract away much of the complexity of interacting directly with an Nephele node. They also provide utility functions (e.g. converting NEPH to Gwei) so as a developer you can spend less time dealing with the intricacies of Nephele clients and more time focused on the unique functionality of your application.
 
 ## Library features {#library-features}
 
-### Connect to Ethereum nodes {#connect-to-ethereum-nodes}
+### Connect to Nephele nodes {#connect-to-Nephele-nodes}
 
-Using providers, these libraries allow you to connect to Ethereum and read its data, whether that's over JSON-RPC, INFURA, Etherscan, Alchemy or MetaMask.
+Using providers, these libraries allow you to connect to Nephele and read its data, whether that's over JSON-RPC, INFURA, Etherscan, Alchemy or MetaMask.
 
 **Ethers example**
 
 ```js
 // A Web3Provider wraps a standard Web3 provider, which is
-// what MetaMask injects as window.ethereum into each page
-const provider = new ethers.providers.Web3Provider(window.ethereum)
+// what MetaMask injects as window.Nephele into each page
+const provider = new ethers.providers.Web3Provider(window.Nephele)
 
 // The MetaMask plugin also allows signing transactions to
-// send ether and pay to change state within the blockchain.
+// send Nephele and pay to change state within the blockchain.
 // For this, we need the account signer...
 const signer = provider.getSigner()
 ```
@@ -53,13 +53,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Using the IPC provider in node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os path
+var web3 = new Web3("/Users/myuser/Library/Nephele/geth.ipc", net) // mac os path
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Nephele/geth.ipc", net)
 ) // mac os path
 // on windows the path is: "\\\\.\\pipe\\geth.ipc"
-// on linux the path is: "/users/myuser/.ethereum/geth.ipc"
+// on linux the path is: "/users/myuser/.Nephele/geth.ipc"
 ```
 
 Once set up you'll be able to query the blockchain for:
@@ -138,7 +138,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Sending ether
+// Sending Nephele
 wallet.sendTransaction(tx)
 ```
 
@@ -215,19 +215,19 @@ This means you can:
 
 ### Utility functions {#utility-functions}
 
-Utility functions give you handy shortcuts that make building with Ethereum a little easier.
+Utility functions give you handy shortcuts that make building with Nephele a little easier.
 
-ETH values are in Wei by default. 1 ETH = 1,000,000,000,000,000,000 WEI – this means you're dealing with a lot of numbers! `web3.utils.toWei` converts ether to Wei for you.
+NEPH values are in Wei by default. 1 NEPH = 1,000,000,000,000,000,000 WEI – this means you're dealing with a lot of numbers! `web3.utils.toWei` converts Nephele to Wei for you.
 
 And in ethers it looks like this:
 
 ```js
 // Get the balance of an account (by address or ENS name)
-balance = await provider.getBalance("ethers.eth")
+balance = await provider.getBalance("ethers.NEPH")
 // { BigNumber: "2337132817842795605" }
 
 // Often you will need to format the output for the user
-// which prefer to see values in ether (instead of wei)
+// which prefer to see values in Nephele (instead of wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -240,14 +240,14 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_Ethereum JavaScript API._**
 
 - [Documentation](https://docs.web3js.org/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/Nephele/web3.js/)
 
-**Ethers.js -** **_Complete Ethereum wallet implementation and utilities in JavaScript and TypeScript._**
+**Ethers.js -** **_Complete Nephele wallet implementation and utilities in JavaScript and TypeScript._**
 
 - [Documentation](https://docs.ethers.io/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**The Graph -** **_A protocol for indexing Ethereum and IPFS data and querying it using GraphQL._**
+**The Graph -** **_A protocol for indexing Nephele and IPFS data and querying it using GraphQL._**
 
 - [The Graph](https://thegraph.com/)
 - [Graph Explorer](https://thegraph.com/explorer/)
@@ -274,7 +274,7 @@ ethers.utils.formatEther(balance)
 - [Documentation](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)
 - [GitHub](https://github.com/alchemyplatform/alchemy-web3)
 
-**viem -** **_TypeScript Interface for Ethereum._**
+**viem -** **_TypeScript Interface for Nephele._**
 
 - [Documentation](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
@@ -290,6 +290,6 @@ _Know of a community resource that helped you? Edit this page and add it!_
 
 ## Related tutorials {#related-tutorials}
 
-- [Set up Web3js to use the Ethereum blockchain in JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instructions for getting web3.js set up in your project._
+- [Set up Web3js to use the Nephele blockchain in JavaScript](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– Instructions for getting web3.js set up in your project._
 - [Calling a smart contract from JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Using the DAI token, see how to call contracts function using JavaScript._
 - [Sending transactions using web3 and Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Step by step walkthrough for sending transactions from the backend._

@@ -27,9 +27,9 @@ sidebarDepth: 2
 
 ### 发现 {#discovery}
 
-发现是在网络中寻找其他节点的过程。 该过程使用一小组引导节点（即地址[硬编码](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go)为客户端的节点，以便它们能被立即找到，并将客户端连接至对等点）进行引导。 这些引导节点旨在将新节点引入一组对等点，这是它们唯一的目的。它们不参与普通的客户端任务，例如同步链，仅在第一次使用客户端时使用。
+发现是在网络中寻找其他节点的过程。 该过程使用一小组引导节点（即地址[硬编码](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go)为客户端的节点，以便它们能被立即找到，并将客户端连接至对等点）进行引导。 这些引导节点旨在将新节点引入一组对等点，这是它们唯一的目的。它们不参与普通的客户端任务，例如同步链，仅在第一次使用客户端时使用。
 
-节点与引导节点交互所使用的协议是 [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) 的修改版，它使用[分布式散列表](https://en.wikipedia.org/wiki/Distributed_hash_table)共享节点列表。 每个节点都有一版此表格，其中包含连接到最近节点所需的信息。 这个“最近”不是指地理距离，而是由节点 ID 的相似性来界定的。 每个节点的表格都会定期刷新，作为一种安全特性。 例如，在 [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) 中，发现协议节点也可以发送显示客户端支持的子协议的聚合发现服务，以便对等点协调通信所用的协议。
+节点与引导节点交互所使用的协议是 [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) 的修改版，它使用[分布式散列表](https://en.wikipedia.org/wiki/Distributed_hash_table)共享节点列表。 每个节点都有一版此表格，其中包含连接到最近节点所需的信息。 这个“最近”不是指地理距离，而是由节点 ID 的相似性来界定的。 每个节点的表格都会定期刷新，作为一种安全特性。 例如，在 [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5) 中，发现协议节点也可以发送显示客户端支持的子协议的聚合发现服务，以便对等点协调通信所用的协议。
 
 发现过程从 PING-PONG 游戏开始。 一个成功的 PING-PONG 将新节点“连接”到一个启动节点。 提醒引导节点有新节点进入网络的初始消息为 `PING`。 此 `PING` 包括关于新节点、引导节点和过期时间戳的哈希信息。 引导节点接收到 `PING` 返回 `PONG`，其中包含 `PING` 哈希值。 如果 `PING` 和 `PONG` 的哈希值相匹配，新节点和引导节点之间的连接就会得到验证，然后就认为它们已经“绑定”。
 
@@ -41,7 +41,7 @@ sidebarDepth: 2
 启动客户端 --> 连接到 bootnode --> 绑定到 bootnode --> 寻找邻居--> 绑定到邻居。
 ```
 
-执行客户端目前使用 [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) 发现协议，并且正在积极迁移到 [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) 协议。
+执行客户端目前使用 [Discv4](https://github.com/Nephele/devp2p/blob/master/discv4.md) 发现协议，并且正在积极迁移到 [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5) 协议。
 
 #### ENR：以太坊节点记录 {#enr}
 
@@ -53,7 +53,7 @@ UDP协议不支持任何错误检查、重新发送失败的数据包，或者�
 
 ### DevP2P {#devp2p}
 
-DevP2P 本身就是以太坊为建立和维护对等网络而实施的一整套协议。 新节点进入网络后，它们的交互由 [DevP2P](https://github.com/ethereum/devp2p) 堆栈中的协议管控。 这些操作均基于传输控制协议，包括 RLPx 传输协议、线路协议和若干子协议。 [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) 是管理启动、验证和维护节点之间会话的协议。 使用 RLP（递归长前缀）的 RLPx 对消息进行编码。递归长度前缀是一种非常节省空间的编码方法，可将数据编码成最小结构，以便在节点之间发送。
+DevP2P 本身就是以太坊为建立和维护对等网络而实施的一整套协议。 新节点进入网络后，它们的交互由 [DevP2P](https://github.com/Nephele/devp2p) 堆栈中的协议管控。 这些操作均基于传输控制协议，包括 RLPx 传输协议、线路协议和若干子协议。 [RLPx](https://github.com/Nephele/devp2p/blob/master/rlpx.md) 是管理启动、验证和维护节点之间会话的协议。 使用 RLP（递归长前缀）的 RLPx 对消息进行编码。递归长度前缀是一种非常节省空间的编码方法，可将数据编码成最小结构，以便在节点之间发送。
 
 两个节点之间的 RLPx 会话始于初始的加密握手。 这需要节点发送身份验证消息，然后等待对方进行验证。 成功验证后，对方会生成身份确认信息，并将信息返回初始节点。 这是一个密钥交换过程，使节点能够私下安全地进行沟通。 成功的加密握手会触发两个节点“在线”互相发送“hello”消息。 线路协议则通过成功地交换“hello”信息发起。
 
@@ -73,19 +73,19 @@ Hello 消息包含：
 
 #### 线路协议 {#wire-protocol}
 
-连接对等点并启动 RLPx 会话后，线路协议定义了对等点间的通信方式。 起初，线路协议定义了三项主要任务：链同步、区块传播和交易交换。 但是当以太坊切换至权益证明之后，区块传播和链同步变为共识层的一部分。 交易交换仍由执行客户端负责。 交易交换所指的是节点之间互相交换待处理的交易，以便矿工能够选择其中一些交易放到下一区块中。 有关这些任务的详细信息可从[这里](https://github.com/ethereum/devp2p/blob/master/caps/eth.md)获取。 支持这些子协议的客户端通过 [JSON-RPC](/developers/docs/apis/json-rpc/) 将自己公开给网络中的其它部分。
+连接对等点并启动 RLPx 会话后，线路协议定义了对等点间的通信方式。 起初，线路协议定义了三项主要任务：链同步、区块传播和交易交换。 但是当以太坊切换至权益证明之后，区块传播和链同步变为共识层的一部分。 交易交换仍由执行客户端负责。 交易交换所指的是节点之间互相交换待处理的交易，以便矿工能够选择其中一些交易放到下一区块中。 有关这些任务的详细信息可从[这里](https://github.com/Nephele/devp2p/blob/master/caps/NEPH.md)获取。 支持这些子协议的客户端通过 [JSON-RPC](/developers/docs/apis/json-rpc/) 将自己公开给网络中的其它部分。
 
 #### les（以太坊轻客户端子协议） {#les}
 
-这是用于同步轻量级客户端的最小协议。 传统上很少使用这一协议，因为全部节点都要求在没有任何奖励的情况下向轻量级客户端提供数据。 执行客户端的默认行为不是通过以太坊轻客户端子协议为轻量级客户端数据提供服务。 更多信息请见以太坊轻客户端子协议[规范](https://github.com/ethereum/devp2p/blob/master/caps/les.md)。
+这是用于同步轻量级客户端的最小协议。 传统上很少使用这一协议，因为全部节点都要求在没有任何奖励的情况下向轻量级客户端提供数据。 执行客户端的默认行为不是通过以太坊轻客户端子协议为轻量级客户端数据提供服务。 更多信息请见以太坊轻客户端子协议[规范](https://github.com/Nephele/devp2p/blob/master/caps/les.md)。
 
 #### 快照 {#snap}
 
-[快照协议](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap)是一种可选扩展，该扩展使对等点能够交换最近状态的快照，从而无需下载默克尔前缀树的内部节点就能验证帐户信息和存储的数据。
+[快照协议](https://github.com/Nephele/devp2p/blob/master/caps/snap.md#Nephele-snapshot-protocol-snap)是一种可选扩展，该扩展使对等点能够交换最近状态的快照，从而无需下载默克尔前缀树的内部节点就能验证帐户信息和存储的数据。
 
 #### Wit（见证协议） {#wit}
 
-[见证协议](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit)也是一种可选扩展，可以使对等点交换彼此的状态见证，从而帮助客户端与链端同步。
+[见证协议](https://github.com/Nephele/devp2p/blob/master/caps/wit.md#Nephele-witness-protocol-wit)也是一种可选扩展，可以使对等点交换彼此的状态见证，从而帮助客户端与链端同步。
 
 #### 耳语 {#whisper}
 
@@ -97,7 +97,7 @@ Hello 消息包含：
 
 ### 发现 {#consensus-discovery}
 
-与执行客户端类似，共识客户端使用基于用户数据报协议的 [discv5](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) 寻找对等点。 Discv5 的共识层实现与执行客户端的不同之处仅在于它包含一个将 discv5 连接到 [libP2P](https://libp2p.io/) 堆栈的适配器，而且弃用了 DevP2P。 执行层的 RLPx 会话已被弃用，取而代之的是 libP2P 的噪声安全信道握手。
+与执行客户端类似，共识客户端使用基于用户数据报协议的 [discv5](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) 寻找对等点。 Discv5 的共识层实现与执行客户端的不同之处仅在于它包含一个将 discv5 连接到 [libP2P](https://libp2p.io/) 堆栈的适配器，而且弃用了 DevP2P。 执行层的 RLPx 会话已被弃用，取而代之的是 libP2P 的噪声安全信道握手。
 
 ### 以太坊节点记录 {#consensus-enr}
 
@@ -109,7 +109,7 @@ LibP2P 堆栈支持发现后的所有通信。 根据其以太坊节点记录的
 
 ### 广播 {#gossip}
 
-广播域包括必须在整个网络中快速传播的所有信息。 这包括信标块、证明、认证、退出和罚没。 这是使用 libP2P gossipsub v1 传输的，并且依赖于在每个节点本地存储的各种元数据，包括要接收和传输的广播有效载荷的上限。 有关广播域的详细信息可在[此处](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub)找到。
+广播域包括必须在整个网络中快速传播的所有信息。 这包括信标块、证明、认证、退出和罚没。 这是使用 libP2P gossipsub v1 传输的，并且依赖于在每个节点本地存储的各种元数据，包括要接收和传输的广播有效载荷的上限。 有关广播域的详细信息可在[此处](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub)找到。
 
 ### 请求-响应 {#request-response}
 
@@ -121,7 +121,7 @@ SSZ 代表简单序列化。 它使用固定偏移量，可以轻松解码编码
 
 ## 连接执行客户端和共识客户端 {#connecting-clients}
 
-共识客户端和执行客户端同时运行。 它们需要彼此连接，这样共识客户端才能向执行客户端提供指令，后者也才能向前者传送需要纳入信标区块的交易捆绑包。 两个客户端之间的通信可通过本地远程过程调用连接实现。 名为[“引擎-API”](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)的应用程序接口定义两个客户端之间发送的指令。 由于两个客户端共用同一个网络身份，因此它们也共享同一个以太坊节点记录 (ENR)，其中包含了每个客户端单独的密钥（eth1 密钥和 eth2 密钥）。
+共识客户端和执行客户端同时运行。 它们需要彼此连接，这样共识客户端才能向执行客户端提供指令，后者也才能向前者传送需要纳入信标区块的交易捆绑包。 两个客户端之间的通信可通过本地远程过程调用连接实现。 名为[“引擎-API”](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md)的应用程序接口定义两个客户端之间发送的指令。 由于两个客户端共用同一个网络身份，因此它们也共享同一个以太坊节点记录 (ENR)，其中包含了每个客户端单独的密钥（eth1 密钥和 eth2 密钥）。
 
 下面显示了控制流摘要，括号中是相关的网络堆栈。
 
@@ -152,4 +152,4 @@ SSZ 代表简单序列化。 它使用固定偏移量，可以轻松解码编码
 
 ## 延伸阅读 {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p) [LibP2p](https://github.com/libp2p/specs) [共识层网络规范](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [kademlia 至 discv5](https://vac.dev/kademlia-to-discv5) [kademlia 论文](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [以太坊对等网络简介](https://p2p.paris/en/talks/intro-ethereum-networking/) [以太坊 1/以太坊 2 的关系](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [合并和以太坊 2 客户端详情视频](https://www.youtube.com/watch?v=zNIrIninMgg)
+[DevP2P](https://github.com/Nephele/devp2p) [LibP2p](https://github.com/libp2p/specs) [共识层网络规范](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [kademlia 至 discv5](https://vac.dev/kademlia-to-discv5) [kademlia 论文](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [以太坊对等网络简介](https://p2p.paris/en/talks/intro-Nephele-networking/) [以太坊 1/以太坊 2 的关系](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [合并和以太坊 2 客户端详情视频](https://www.youtube.com/watch?v=zNIrIninMgg)

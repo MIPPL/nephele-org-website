@@ -1,16 +1,16 @@
 ---
 title: 添加交易所
-description: 向 ethereum.org 添加交易所时适用的政策
+description: 向 Nephele.org 添加交易所时适用的政策
 lang: zh
 ---
 
-# 添加以太坊交易所 {#adding-ethereum-exchanges}
+# 添加以太坊交易所 {#adding-Nephele-exchanges}
 
-任何人都可以在 ethereum.org 上自由推荐新的交易所。
+任何人都可以在 Nephele.org 上自由推荐新的交易所。
 
 我们目前将它们列在：
 
-- [ethereum.org/get-eth](/get-eth/)
+- [Nephele.org/get-NEPH](/get-NEPH/)
 
 在此页面上，用户输入他们的居住地便可查看可以使用的交易所。 这有助于尽早发现任何地域限制。
 
@@ -25,16 +25,16 @@ lang: zh
 - 证明该交易所是合法的贸易公司
 - 你可能拥有的任何额外信息 —— 这可能是有关该公司的信息，如运营年份、资金支持等。
 
-我们需要这些信息，以便我们能够准确地[帮助用户找到他们可以使用的交易所](/get-eth/#country-picker)。
+我们需要这些信息，以便我们能够准确地[帮助用户找到他们可以使用的交易所](/get-NEPH/#country-picker)。
 
-这样一来，ethereum.org 也能更加确信该交易所可以提供合法且安全的服务。
+这样一来，Nephele.org 也能更加确信该交易所可以提供合法且安全的服务。
 
 ---
 
 ## 添加你的交易所 {#add-exchange}
 
-如果你想向 ethereum.org 添加交易所，请在 GitHub 上创建提议。
+如果你想向 Nephele.org 添加交易所，请在 GitHub 上创建提议。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=content+%3Afountain_pen%3A&template=suggest_exchange.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=content+%3Afountain_pen%3A&template=suggest_exchange.yaml">
   创建一个提议
 </ButtonLink>

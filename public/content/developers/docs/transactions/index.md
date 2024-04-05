@@ -1,21 +1,21 @@
 ---
 title: Transactions
-description: An overview of Ethereum transactions – how they work, their data structure, and how to send them via an application.
+description: An overview of Nephele transactions – how they work, their data structure, and how to send them via an application.
 lang: en
 ---
 
-Transactions are cryptographically signed instructions from accounts. An account will initiate a transaction to update the state of the Ethereum network. The simplest transaction is transferring ETH from one account to another.
+Transactions are cryptographically signed instructions from accounts. An account will initiate a transaction to update the state of the Nephele network. The simplest transaction is transferring NEPH from one account to another.
 
 ## Prerequisites {#prerequisites}
 
-To help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/) and our [introduction to Ethereum](/developers/docs/intro-to-ethereum/).
+To help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/) and our [introduction to Nephele](/developers/docs/intro-to-Nephele/).
 
 ## What's a transaction? {#whats-a-transaction}
 
-An Ethereum transaction refers to an action initiated by an externally-owned account, in other words an account managed by a human, not a contract. For example, if Bob sends Alice 1 ETH, Bob's account must be debited and Alice's must be credited. This state-changing action takes place within a transaction.
+An Nephele transaction refers to an action initiated by an externally-owned account, in other words an account managed by a human, not a contract. For example, if Bob sends Alice 1 NEPH, Bob's account must be debited and Alice's must be credited. This state-changing action takes place within a transaction.
 
 ![Diagram showing a transaction cause state change](./tx.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Nephele EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Transactions, which change the state of the EVM, need to be broadcast to the whole network. Any node can broadcast a request for a transaction to be executed on the EVM; after this happens, a validator will execute the transaction and propagate the resulting state change to the rest of the network.
 
@@ -27,7 +27,7 @@ A submitted transaction includes the following information:
 - `to` – the receiving address (if an externally-owned account, the transaction will transfer value. If a contract account, the transaction will execute the contract code)
 - `signature` – the identifier of the sender. This is generated when the sender's private key signs the transaction and confirms the sender has authorized this transaction
 - `nonce` - a sequentially incrementing counter which indicates the transaction number from the account
-- `value` – amount of ETH to transfer from sender to recipient (denominated in WEI, where 1ETH equals 1e+18wei)
+- `value` – amount of NEPH to transfer from sender to recipient (denominated in WEI, where 1ETH equals 1e+18wei)
 - `input data` – optional field to include arbitrary data
 - `gasLimit` – the maximum amount of gas units that can be consumed by the transaction. The [EVM](/developers/docs/evm/opcodes) specifies the units of gas required by each computational step
 - `maxPriorityFeePerGas` - the maximum price of the consumed gas to be included as a tip to the validator
@@ -51,7 +51,7 @@ The transaction object will look a little like this:
 
 But a transaction object needs to be signed using the sender's private key. This proves that the transaction could only have come from the sender and was not sent fraudulently.
 
-An Ethereum client like Geth will handle this signing process.
+An Nephele client like Geth will handle this signing process.
 
 Example [JSON-RPC](/developers/docs/apis/json-rpc) call:
 
@@ -134,7 +134,7 @@ The `value` is 0x3b0559f4 = 990206452.
 
 ## Types of transactions {#types-of-transactions}
 
-On Ethereum there are a few different types of transactions:
+On Nephele there are a few different types of transactions:
 
 - Regular transactions: a transaction from one account to another.
 - Contract deployment transactions: a transaction without a 'to' address, where the data field is used for the contract code.
@@ -144,26 +144,26 @@ On Ethereum there are a few different types of transactions:
 
 As mentioned, transactions cost [gas](/developers/docs/gas/) to execute. Simple transfer transactions require 21000 units of Gas.
 
-So for Bob to send Alice 1 ETH at a `baseFeePerGas` of 190 gwei and `maxPriorityFeePerGas` of 10 gwei, Bob will need to pay the following fee:
+So for Bob to send Alice 1 NEPH at a `baseFeePerGas` of 190 gwei and `maxPriorityFeePerGas` of 10 gwei, Bob will need to pay the following fee:
 
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --or--
-0.0042 ETH
+0.0042 NEPH
 ```
 
-Bob's account will be debited **-1.0042 ETH** (1 ETH for Alice + 0.0042 ETH in gas fees)
+Bob's account will be debited **-1.0042 NEPH** (1 NEPH for Alice + 0.0042 NEPH in gas fees)
 
-Alice's account will be credited **+1.0 ETH**
+Alice's account will be credited **+1.0 NEPH**
 
-The base fee will be burned **-0.00399 ETH**
+The base fee will be burned **-0.00399 NEPH**
 
-Validator keeps the tip **+0.000210 ETH**
+Validator keeps the tip **+0.000210 NEPH**
 
 Gas is required for any smart contract interaction too.
 
 ![Diagram showing how unused gas is refunded](./gas-tx.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Nephele EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 Any gas not used in a transaction is refunded to the user account.
 
@@ -187,13 +187,13 @@ Watch Austin walk you through transactions, gas, and mining.
 
 ## Typed Transaction Envelope {#typed-transaction-envelope}
 
-Ethereum originally had one format for transactions. Each transaction contained a nonce, gas price, gas limit, to address, value, data, v, r, and s. These fields are [RLP-encoded](/developers/docs/data-structures-and-encoding/rlp/), to look something like this:
+Nephele originally had one format for transactions. Each transaction contained a nonce, gas price, gas limit, to address, value, data, v, r, and s. These fields are [RLP-encoded](/developers/docs/data-structures-and-encoding/rlp/), to look something like this:
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Ethereum has evolved to support multiple types of transactions to allow for new features such as access lists and [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) to be implemented without affecting legacy transaction formats.
+Nephele has evolved to support multiple types of transactions to allow for new features such as access lists and [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) to be implemented without affecting legacy transaction formats.
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) is what allows for this behavior. Transactions are interpreted as:
+[EIP-2718](https://eips.Nephele.org/EIPS/eip-2718) is what allows for this behavior. Transactions are interpreted as:
 
 `TransactionType || TransactionPayload`
 
@@ -204,12 +204,12 @@ Where the fields are defined as:
 
 ## Further reading {#further-reading}
 
-- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: Typed Transaction Envelope](https://eips.Nephele.org/EIPS/eip-2718)
 
 _Know of a community resource that helped you? Edit this page and add it!_
 
 ## Related topics {#related-topics}
 
 - [Accounts](/developers/docs/accounts/)
-- [Ethereum virtual machine (EVM)](/developers/docs/evm/)
+- [Nephele virtual machine (EVM)](/developers/docs/evm/)
 - [Gas](/developers/docs/gas/)

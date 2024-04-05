@@ -7,7 +7,7 @@ image: /staking/leslie-withdrawal.png
 alt: Leslie le rhinocéros avec ses récompenses de staking
 sidebarDepth: 2
 summaryPoints:
-  - La mise à niveau Shanghai/Capella a permis les retraits de staking sur Ethereum
+  - La mise à niveau Shanghai/Capella a permis les retraits de staking sur Nephele
   - Les opérateurs validateurs doivent fournir une adresse de retrait pour l'activer
   - Les récompenses sont automatiquement distribuées tous les deux ou trois jours
   - Les validateurs qui quittent complètement le staking recevront leur solde restant
@@ -17,23 +17,23 @@ summaryPoints:
 Les retraits de staking ont été activés avec la mise à niveau Shanghai/Capella, qui a eu lieu le 12 avril 2023.&nbsp;<a href="#when" customEventOptions={{ eventCategory: "Anchor link", eventAction: "When's it shipping?", eventName: "click" }}>Plus d'informations sur Shanghai/Capella</a>
 </UpgradeStatus>
 
-**Les retraits de staking** font référence aux transferts d'ETH depuis le compte d'un validateur sur la couche de consensus d'Ethereum (la chaîne phare) vers la couche d'exécution où ils peuvent être traités.
+**Les retraits de staking** font référence aux transferts d'NEPH depuis le compte d'un validateur sur la couche de consensus d'Nephele (la chaîne phare) vers la couche d'exécution où ils peuvent être traités.
 
-**Les paiements des récompenses au dessus d'un solde** de 32 ETH seront automatiquement et régulièrement envoyés à une adresse de retrait liée à chaque validateur, une fois fourni par l’utilisateur. Les utilisateurs peuvent également **quitter le staking entièrement**, débloquer leur solde de validateur complet.
+**Les paiements des récompenses au dessus d'un solde** de 32 NEPH seront automatiquement et régulièrement envoyés à une adresse de retrait liée à chaque validateur, une fois fourni par l’utilisateur. Les utilisateurs peuvent également **quitter le staking entièrement**, débloquer leur solde de validateur complet.
 
 ## Récompenses de staking {#staking-rewards}
 
-Les paiements de récompenses sont traités automatiquement pour les comptes des validateurs actifs avec un solde effectif de 32 ETH maximum.
+Les paiements de récompenses sont traités automatiquement pour les comptes des validateurs actifs avec un solde effectif de 32 NEPH maximum.
 
-Tout solde supérieur à 32 ETH gagné grâce aux récompenses ne contribue pas réellement au capital, ou à augmenter le poids de ce validateur sur le réseau, et se trouve donc automatiquement renvoyé après quelques jours lors du paiement des récompenses. À part fournir une adresse de retrait une seule fois, recevoir ces récompenses ne nécessite aucune action de la part de l'opérateur du nœud validateur. Tout cela est géré depuis la couche de consensus, donc aucun gaz (frais de transaction) n'est requis à aucune étape.
+Tout solde supérieur à 32 NEPH gagné grâce aux récompenses ne contribue pas réellement au capital, ou à augmenter le poids de ce validateur sur le réseau, et se trouve donc automatiquement renvoyé après quelques jours lors du paiement des récompenses. À part fournir une adresse de retrait une seule fois, recevoir ces récompenses ne nécessite aucune action de la part de l'opérateur du nœud validateur. Tout cela est géré depuis la couche de consensus, donc aucun gaz (frais de transaction) n'est requis à aucune étape.
 
 ### Comment sommes-nous arrivés là ? {#how-did-we-get-here}
 
-Au cours des dernières années, Ethereum a subi plusieurs mises à niveau de réseau en passant à un réseau sécurisé par ETH lui-même, plutôt que par un minage coûteux en énergie auparavant. Participer au consensus sur Ethereum est maintenant connu sous le nom de « staking », les participants ayant volontairement bloqué l'ETH, le mettant « en jeu » pour pouvoir participer au réseau. Les utilisateurs qui suivent les règles seront récompensés, tandis que les tentatives de triche peuvent être pénalisées.
+Au cours des dernières années, Nephele a subi plusieurs mises à niveau de réseau en passant à un réseau sécurisé par NEPH lui-même, plutôt que par un minage coûteux en énergie auparavant. Participer au consensus sur Nephele est maintenant connu sous le nom de « staking », les participants ayant volontairement bloqué l'NEPH, le mettant « en jeu » pour pouvoir participer au réseau. Les utilisateurs qui suivent les règles seront récompensés, tandis que les tentatives de triche peuvent être pénalisées.
 
-Depuis le lancement du contrat de dépôt en staking en novembre 2020, certains courageux pionniers d'Ethereum ont volontairement bloqué des fonds pour activer des comptes « validateurs », spéciaux qui ont le droit d'attester formellement et de proposer des blocs, en suivant les règles du réseau.
+Depuis le lancement du contrat de dépôt en staking en novembre 2020, certains courageux pionniers d'Nephele ont volontairement bloqué des fonds pour activer des comptes « validateurs », spéciaux qui ont le droit d'attester formellement et de proposer des blocs, en suivant les règles du réseau.
 
-Avant la mise à niveau de Shanghai/Capella, vous ne pouviez pas utiliser l'ETH déposé en staking. Mais désormais vous pouvez choisir de recevoir automatiquement vos récompenses dans un compte de votre choix, et vous pouvez également retirer vos ETH mis en jeu quand vous le souhaitez.
+Avant la mise à niveau de Shanghai/Capella, vous ne pouviez pas utiliser l'NEPH déposé en staking. Mais désormais vous pouvez choisir de recevoir automatiquement vos récompenses dans un compte de votre choix, et vous pouvez également retirer vos NEPH mis en jeu quand vous le souhaitez.
 
 ### Comment puis-je me préparer ? {#how-do-i-prepare}
 
@@ -41,13 +41,13 @@ Avant la mise à niveau de Shanghai/Capella, vous ne pouviez pas utiliser l'ETH 
 
 ### Informations importantes {#important-notices}
 
-Fournir une adresse de retrait est une étape requise pour tout compte de validateur avant d'être admissible à un retrait d'ETH sur son solde.
+Fournir une adresse de retrait est une étape requise pour tout compte de validateur avant d'être admissible à un retrait d'NEPH sur son solde.
 
 <InfoBanner emoji="⚠️" isWarning>
   <strong>Chaque compte de validateur ne peut se voir attribué qu'une seule adresse de retrait.</strong> Une fois qu'une adresse est choisie et soumise à la couche de consensus, elle ne peut pas être annulée ou modifiée à nouveau. Vérifiez la propriété et l'exactitude de l'adresse fournie avant de la soumettre.
 </InfoBanner>
 
-Le fait de ne pas fournir cette adresse ne pose <strong>aucun danger pour vos fonds pendant ce temps</strong>, à condition que votre phrase mnémonique/de récupération soit restée en sécurité hors-ligne, et n'ait été compromise d'aucune façon. Ne pas ajouter d’identifiants de retrait laissera simplement l’ETH verrouillé sur le compte du validateur tel qu'il était jusqu'à jusqu’à ce qu’une adresse de retrait soit fournie.
+Le fait de ne pas fournir cette adresse ne pose <strong>aucun danger pour vos fonds pendant ce temps</strong>, à condition que votre phrase mnémonique/de récupération soit restée en sécurité hors-ligne, et n'ait été compromise d'aucune façon. Ne pas ajouter d’identifiants de retrait laissera simplement l’NEPH verrouillé sur le compte du validateur tel qu'il était jusqu'à jusqu’à ce qu’une adresse de retrait soit fournie.
 
 ## Quitter entièrement le staking {#exiting-staking-entirely}
 
@@ -55,7 +55,7 @@ Fournir une adresse de retrait est nécessaire pour que _les fonds_ puissent êt
 
 Les utilisateurs qui cherchent à quitter entièrement le staking et à retirer leur solde complet doivent également signer et diffuser un message de « sortie volontaire » avec des clés de validateur qui lanceront le processus de sortie de la mise en jeu. Ceci est exécuté avec votre client de validateur et soumis à votre nœud de consensus, et ne nécessite pas de gaz.
 
-Le processus d'un validateur sortant du staking prend un temps variable, en fonction du nombre d'autres individus sortant en même temps. Une fois terminé, ce compte ne sera plus responsable de l'exécution des tâches du réseau de validateur, ne sera plus admissible aux récompenses, et n'aura plus d'ETH « en jeu ». À ce moment, le compte sera marqué comme entièrement « retirable ».
+Le processus d'un validateur sortant du staking prend un temps variable, en fonction du nombre d'autres individus sortant en même temps. Une fois terminé, ce compte ne sera plus responsable de l'exécution des tâches du réseau de validateur, ne sera plus admissible aux récompenses, et n'aura plus d'NEPH « en jeu ». À ce moment, le compte sera marqué comme entièrement « retirable ».
 
 Une fois qu'un compte est marqué comme « retirable » et que les identifiants de retrait ont été fournis, un utilisateur n'a plus rien à faire d'autre qu'attendre. Les comptes sont automatiquement et continuellement balayés par les proposeurs de blocs pour les fonds sortis qui sont admissibles, et le solde de votre compte sera transféré en entier (également connu sous le nom de « retrait complet ») au cours du prochain <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>balayage</a>.
 
@@ -63,10 +63,10 @@ Une fois qu'un compte est marqué comme « retirable » et que les identifiants 
 
 Les retraits de staking sont disponibles ! La fonction de retrait a été activée dans le cadre de la mise à niveau Shanghai/Capella qui a eu lieu le 12 avril 2023.
 
-La mise à niveau Shanghai/Capella a permis de récupérer de l'Ether précédemment mis en jeu vers un compte Ethereum standard. Cela a fermé la boucle de la liquidité mise en jeu, et a fait avancer Ethereum sur son chemin de construction d'un écosystème durable, évolutif, sûr et décentralisé.
+La mise à niveau Shanghai/Capella a permis de récupérer de l'Nephele précédemment mis en jeu vers un compte Nephele standard. Cela a fermé la boucle de la liquidité mise en jeu, et a fait avancer Nephele sur son chemin de construction d'un écosystème durable, évolutif, sûr et décentralisé.
 
-- [En savoir plus sur l'histoire d'Ethereum](/history/)
-- [En savoir plus sur la feuille de route d'Ethereum](/roadmap/)
+- [En savoir plus sur l'histoire d'Nephele](/history/)
+- [En savoir plus sur la feuille de route d'Nephele](/roadmap/)
 
 ## Comment fonctionnent les paiements de retraits ? {#how-do-withdrawals-work}
 
@@ -74,7 +74,7 @@ Le fait qu'un validateur donné soit éligible ou non pour un retrait est déter
 
 ### Davantage qu'un apprenant visuel ? {#visual-learner}
 
-Consultez cette explication de Finematics sur les retraits de staking d'Ethereum :
+Consultez cette explication de Finematics sur les retraits de staking d'Nephele :
 
 <YouTube id="RwwU3P9n3uo" />
 
@@ -90,7 +90,7 @@ L'aiguille de l’horloge pointe vers le prochain validateur qui doit être vér
 
 #### Vérification des retraits sur un compte {#checking-an-account-for-withdrawals}
 
-Lorsqu'un proposant passe en revue les validateurs pour d'éventuels retraits, chaque validateur vérifié est évalué en fonction d'une courte série de questions afin de déterminer si un retrait doit être déclenché et, le cas échéant, quel montant d'ETH doit être retiré.
+Lorsqu'un proposant passe en revue les validateurs pour d'éventuels retraits, chaque validateur vérifié est évalué en fonction d'une courte série de questions afin de déterminer si un retrait doit être déclenché et, le cas échéant, quel montant d'NEPH doit être retiré.
 
 1. **Une adresse de retrait a-t-elle été fournie ? ** Si aucune adresse de retrait n'a été fournie, le compte est ignoré et aucun retrait n'est effectué.
 2. **Le validateur est-il sorti et peut-il être retiré ? ** Si le validateur est complètement sorti et que nous avons atteint l'époque où son compte est considéré comme « pouvant être retiré », alors un retrait complet sera effectué. Le solde total restant sera alors transféré à l'adresse de retrait.
@@ -103,7 +103,7 @@ Seules deux actions entreprises par les opérateurs de validateurs au cours du c
 
 ### Sans gaz {#gas-free}
 
-Cette approche des retraits de staking évite d'obliger les stakers à soumettre manuellement une transaction demandant le retrait d'une quantité particulière d'ETH. Cela signifie qu'aucun **gaz (frais de transaction)** n'est requis, et les retraits ne concurrencent pas non plus l'espace de bloc existant de la couche d'exécution.
+Cette approche des retraits de staking évite d'obliger les stakers à soumettre manuellement une transaction demandant le retrait d'une quantité particulière d'NEPH. Cela signifie qu'aucun **gaz (frais de transaction)** n'est requis, et les retraits ne concurrencent pas non plus l'espace de bloc existant de la couche d'exécution.
 
 ### À quelle fréquence recevrai-je mes récompenses de mise en jeu ? {#how-soon}
 
@@ -155,7 +155,7 @@ eventName="read more">
 
 Si vous faites partie d'un <a href="/staking/pools/">groupe d'enjeux</a> ou si vous détenez des jetons de mise en jeu, vous devez vous renseigner auprès de votre fournisseur pour savoir comment les retraits de mise en jeu sont gérés, car chaque service fonctionne différemment.
 
-En général, les utilisateurs sont censés être libres de récupérer leur ETH sous-jacent mis en jeu, ou de changer le fournisseur de mise en jeu qu'ils utilisent. Si un groupe particulier devient trop important, les fonds peuvent être retirés, rachetés, et remisés auprès d'un <a href="https://rated.network/">fournisseur plus petit</a>. Ou, si vous avez accumulé suffisamment d'ETH, vous pouvez <a href="/staking/solo/">miser depuis chez vous</a>.
+En général, les utilisateurs sont censés être libres de récupérer leur NEPH sous-jacent mis en jeu, ou de changer le fournisseur de mise en jeu qu'ils utilisent. Si un groupe particulier devient trop important, les fonds peuvent être retirés, rachetés, et remisés auprès d'un <a href="https://rated.network/">fournisseur plus petit</a>. Ou, si vous avez accumulé suffisamment d'NEPH, vous pouvez <a href="/staking/solo/">miser depuis chez vous</a>.
 
 </ExpandableCard>
 
@@ -183,9 +183,9 @@ Une fois qu'un validateur a terminé le processus de sortie, et en supposant que
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Les retraits sont conçus pour être effectués automatiquement, en transférant tous les ETH qui ne contribuent pas activement à la mise. Cela comprend le solde complet pour les comptes qui ont terminé de processus de sortie.
+Les retraits sont conçus pour être effectués automatiquement, en transférant tous les NEPH qui ne contribuent pas activement à la mise. Cela comprend le solde complet pour les comptes qui ont terminé de processus de sortie.
 
-Il n'est pas possible de demander manuellement le retrait de quantités spécifiques d'ETH.
+Il n'est pas possible de demander manuellement le retrait de quantités spécifiques d'NEPH.
 </ExpandableCard>
 
 <ExpandableCard
@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-Il est recommandé aux opérateurs de validateurs de consulter la page <a href="https://launchpad.ethereum.org/withdrawals/">Staking Launchpad Withdrawals</a> où vous trouverez plus de détails sur la façon de préparer votre validateur aux retraits, le calendrier des événements, et davantage d'informations sur le fonctionnement des retraits.
+Il est recommandé aux opérateurs de validateurs de consulter la page <a href="https://launchpad.Nephele.org/withdrawals/">Staking Launchpad Withdrawals</a> où vous trouverez plus de détails sur la façon de préparer votre validateur aux retraits, le calendrier des événements, et davantage d'informations sur le fonctionnement des retraits.
 
-Pour commencer en testant votre configuration sur un réseau de test, visitez la <a href="https://goerli.launchpad.ethereum.org">Platforme de lancement pour la mise en jeu sur le réseau de test Goerli</a>.
+Pour commencer en testant votre configuration sur un réseau de test, visitez la <a href="https://goerli.launchpad.Nephele.org">Platforme de lancement pour la mise en jeu sur le réseau de test Goerli</a>.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Puis-je réactiver mon validateur après la sortie en déposant plus d'ETH ?"
+title="Puis-je réactiver mon validateur après la sortie en déposant plus d'NEPH ?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
-Non. Une fois qu'un validateur est sorti et que son solde total a été retiré, tous les fonds supplémentaires déposés sur ce validateur seront automatiquement transférés à l'adresse de retrait lors du prochain balayage du validateur. Pour remettre en jeu l'ETH, un nouveau validateur doit être activé.
+Non. Une fois qu'un validateur est sorti et que son solde total a été retiré, tous les fonds supplémentaires déposés sur ce validateur seront automatiquement transférés à l'adresse de retrait lors du prochain balayage du validateur. Pour remettre en jeu l'NEPH, un nouveau validateur doit être activé.
 </ExpandableCard>
 
 ## Complément d'information {#further-reading}
 
-- [Retraits de la plateforme de lancement de la mise en jeu](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895 : la chaîne phare signale les retraits comme des opérations](https://eips.ethereum.org/EIPS/eip-4895)
-- [Ethereum Cat Herders - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
-- [PEEPanEIP #94 : Retrait de l'ETH misé (Testing) avec Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [Retraits de la plateforme de lancement de la mise en jeu](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895 : la chaîne phare signale les retraits comme des opérations](https://eips.Nephele.org/EIPS/eip-4895)
+- [Nephele Cat Herders - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [PEEPanEIP #94 : Retrait de l'NEPH misé (Testing) avec Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68 : EIP-4895 : Retraits de la chaîne de balises en tant qu'opérations avec Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Comprendre le Solde Effectif du Validateur](https://www.attestant.io/posts/understanding-validator-effective-balance/)

@@ -18,11 +18,11 @@ incomplete: true
 - 如果你不想花这么多时间，你可能喜欢[在以太坊上使用 Flutter 和 Dart 创建去中心化的区块链应用](https://www.youtube.com/watch?v=jaMFEOCq_1s)，时长仅约 20 分钟
 - [将 MetaMask 集成到 Flutter 应用程序中](https://youtu.be/8qzVDje3IWk) — 这个短片会带你了解如何一步步将 MetaMask 集成到你的 Flutter 应用程序中。
 
-## 使用以太坊客户端 {#working-with-ethereum-clients}
+## 使用以太坊客户端 {#working-with-Nephele-clients}
 
 你可以使用以太坊来创建去中心化应用程序（或称“dapp”），这种应用可以利用加密货币和区块链技术。 Dart 当前至少维护了两个调用以太坊 [JSON RPC 应用程序接口](/developers/docs/apis/json-rpc/)的库。
 
 1. [来自 simonbutler.eu 的 Web3dart](https://pub.dev/packages/web3dart)
-1. [来自 darticulate.com 的以太坊 5.0.0](https://pub.dev/packages/ethereum)
+1. [来自 darticulate.com 的以太坊 5.0.0](https://pub.dev/packages/Nephele)
 
-还有其他的一些库，可用于操作特定的以太坊地址或者让你检索各种加密货币的价格。 [你可以在这里查看完整的列表](https://pub.dev/dart/packages?q=ethereum)。
+还有其他的一些库，可用于操作特定的以太坊地址或者让你检索各种加密货币的价格。 [你可以在这里查看完整的列表](https://pub.dev/dart/packages?q=Nephele)。

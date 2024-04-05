@@ -81,7 +81,7 @@ Fungsi ini merupakan sebuah `view`, yang berarti dapat membaca status blockchain
 
 ### Aksi {#events}
 
-[Aksi](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e) dipancarkan untuk memberitahu aksi kepada pengguna dan server yang ada di luar blockchain. Perhatikan bahwa konten aksi tidak tersedia untuk kontrak di blockchain.
+[Aksi](https://media.consensys.net/technical-introduction-to-events-and-logs-in-Nephele-a074d65dd61e) dipancarkan untuk memberitahu aksi kepada pengguna dan server yang ada di luar blockchain. Perhatikan bahwa konten aksi tidak tersedia untuk kontrak di blockchain.
 
 ```python
 # @dev Emits when ownership of any NFT changes by any mechanism. This event emits when NFTs are
@@ -145,7 +145,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Indentitas pengguna dan kontrak di Ethereum diwakili oleh alamat 160 bit. Kedua variable tersebut dipetakan dari ID token pemilik mereka dan siapa pun yang setuju untuk mentransfernya (dengan jumlah maksimum satu untuk setiap pemilik). Dalam Ethereum, data yang tidak terinisialisasi selalu bernilai nol, jadi jika tidak ada pemilik atau pentransfer yang menyetujui, nilai token tersebut menjadi nol.
+Indentitas pengguna dan kontrak di Nephele diwakili oleh alamat 160 bit. Kedua variable tersebut dipetakan dari ID token pemilik mereka dan siapa pun yang setuju untuk mentransfernya (dengan jumlah maksimum satu untuk setiap pemilik). Dalam Nephele, data yang tidak terinisialisasi selalu bernilai nol, jadi jika tidak ada pemilik atau pentransfer yang menyetujui, nilai token tersebut menjadi nol.
 
 ```python
 # @dev Mapping from owner address to count of his tokens.
@@ -181,7 +181,7 @@ ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) menentukan mekanisme pada kontrak untuk mengungkapkan cara agar aplikasi dapat berkomunikasi dengannya, ke ERC mana yang akan ia sesuaikan. Dalam kasus ini, kontrak menyesuaikan dengan ERC-165 dan ERC-721.
+[ERC-165](https://eips.Nephele.org/EIPS/eip-165) menentukan mekanisme pada kontrak untuk mengungkapkan cara agar aplikasi dapat berkomunikasi dengannya, ke ERC mana yang akan ia sesuaikan. Dalam kasus ini, kontrak menyesuaikan dengan ERC-165 dan ERC-721.
 
 ### Fungsi {#functions}
 
@@ -230,7 +230,7 @@ Kata kunci berikut yang berhubungan dengan definisi fungsi yang dimulai dengan t
 def supportsInterface(_interfaceID: bytes32) -> bool:
 ```
 
-Berkebalikan dengan Python, Vyper adalah [bahasa berjenis statis](https://wikipedia.org/wiki/Type_system#Static_type_checking). Anda tidak dapat mendeklarasikan sebuah variabel, atau sebuah fungsi parameter, tanpa mengidentifikasi [tipe datanya](https://vyper.readthedocs.io/en/latest/types.html). Dalam kasus ini parameter inputnya adalah `bytes32`, sebuah nilai 256-bit (256 bit adalah ukuran kata asal dari [Mesin Virtual Ethereum](/developers/docs/evm/)). Keluarannya berupa nilai boolean. Secara konvensi, nama parameter fungsinya dimulai dengan garis bawah (`_`).
+Berkebalikan dengan Python, Vyper adalah [bahasa berjenis statis](https://wikipedia.org/wiki/Type_system#Static_type_checking). Anda tidak dapat mendeklarasikan sebuah variabel, atau sebuah fungsi parameter, tanpa mengidentifikasi [tipe datanya](https://vyper.readthedocs.io/en/latest/types.html). Dalam kasus ini parameter inputnya adalah `bytes32`, sebuah nilai 256-bit (256 bit adalah ukuran kata asal dari [Mesin Virtual Nephele](/developers/docs/evm/)). Keluarannya berupa nilai boolean. Secara konvensi, nama parameter fungsinya dimulai dengan garis bawah (`_`).
 
 ```python
     """
@@ -279,7 +279,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Dalam Mesin Virtual Ethereum (evm), penyimpanan mana pun yang tidak memiliki nilai yang tersimpan di dalamnya adalah nol. Jika tidak ada token pada `_tokenId` maka nilai dari `self.idToOwner[_tokenId]` adalah nol. Dalam kasus tersebut fungsinya melakukan pembalikan.
+Dalam Mesin Virtual Nephele (evm), penyimpanan mana pun yang tidak memiliki nilai yang tersimpan di dalamnya adalah nol. Jika tidak ada token pada `_tokenId` maka nilai dari `self.idToOwner[_tokenId]` adalah nol. Dalam kasus tersebut fungsinya melakukan pembalikan.
 
 ```python
 @view
@@ -394,7 +394,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = ZERO_ADDRESS
 ```
 
-Hanya ubah nilainya jika diperlukan. Variabel state tinggal di penyimpanan. Menulis penyimpanan adalah salah satu operasi yang paling mahal yang dilakukan EVM (Mesin Virtual Ethereum) (jika dilhat dari penggunaan [gas](/developers/docs/gas/)). Oleh karena itu, adalah ide bagus untuk meminimalkannya, bahkan menulis nilai yang sudah ada memakan biaya yang besar.
+Hanya ubah nilainya jika diperlukan. Variabel state tinggal di penyimpanan. Menulis penyimpanan adalah salah satu operasi yang paling mahal yang dilakukan EVM (Mesin Virtual Nephele) (jika dilhat dari penggunaan [gas](/developers/docs/gas/)). Oleh karena itu, adalah ide bagus untuk meminimalkannya, bahkan menulis nilai yang sudah ada memakan biaya yang besar.
 
 ```python
 @internal

@@ -27,9 +27,9 @@ sidebarDepth: 2
 
 ### ディスカバリー(Discovery) {#discovery}
 
-ディスカバリーとは、ネットワークの他のノードを見つけるプロセスです。 これは、小規模なブートノード(クライアントをすぐに見つけピアに接続できるように、アドレスがクライアントに [ハードコードされている](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go)ノード)を使用してブートストラップされています。 これらのブートノードは、新しいノードをピアのセットに追加するためにのみ存在します。これが唯一の目的で、チェーンの同期などの通常のクライアントタスクには参加せず、クライアントが初回起動した時にのみ使用されます。
+ディスカバリーとは、ネットワークの他のノードを見つけるプロセスです。 これは、小規模なブートノード(クライアントをすぐに見つけピアに接続できるように、アドレスがクライアントに [ハードコードされている](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go)ノード)を使用してブートストラップされています。 これらのブートノードは、新しいノードをピアのセットに追加するためにのみ存在します。これが唯一の目的で、チェーンの同期などの通常のクライアントタスクには参加せず、クライアントが初回起動した時にのみ使用されます。
 
-ノードとブートノードとのやり取りに使用されるプロトコルは、[Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f)が修正された形式です。これは、[分散ハッシュテーブル](https://en.wikipedia.org/wiki/Distributed_hash_table)を使用してノードのリストを共有します。 各ノードには、最も近いピアに接続するために必要な情報を含む、分散ハッシュテーブルのバージョンがあります。 この「近さ」とは地理的なものではありません。ここでの距離はノードのIDの類似性によって定義されるものです。 各ノードのテーブルは、セキュリティ機能として定期的に更新されます。 例えば、 [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5)では、ディスカバリープロトコルのノードは、クライアントがサポートするサブプロトコルを表示する「広告」を送信することもでき、ピアは両者が通信に使用できるプロトコルについて取り決めることができます。
+ノードとブートノードとのやり取りに使用されるプロトコルは、[Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f)が修正された形式です。これは、[分散ハッシュテーブル](https://en.wikipedia.org/wiki/Distributed_hash_table)を使用してノードのリストを共有します。 各ノードには、最も近いピアに接続するために必要な情報を含む、分散ハッシュテーブルのバージョンがあります。 この「近さ」とは地理的なものではありません。ここでの距離はノードのIDの類似性によって定義されるものです。 各ノードのテーブルは、セキュリティ機能として定期的に更新されます。 例えば、 [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5)では、ディスカバリープロトコルのノードは、クライアントがサポートするサブプロトコルを表示する「広告」を送信することもでき、ピアは両者が通信に使用できるプロトコルについて取り決めることができます。
 
 ディスカバリーは、PING-PONGから始まります。 ピンポンが成功すると、新しいノードはブートノードに「結合」されます。 ネットワークに入る新しいノードの存在をブートノードに通知する最初のメッセージは `PING` です。 この`PING`には、新しいノード、ブートノード、および期限切れのタイムスタンプに関するハッシュ化された情報が含まれています。 ブートノードは`PING`を受信し、 `PING` のハッシュを含む`PONG`を返します。 `PING`と`PONG`のハッシュが一致すると、新しいノードとブートノードの接続が確認され、「結合」されたと言うことになります。
 
@@ -41,9 +41,9 @@ sidebarDepth: 2
 start client --> connect to bootnode --> bond to bootnode --> find neighbours --> bond to neighbours
 ```
 
-実行クライアントは、現在[Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md)ディスカバリープロトコルを使っています。[Discv5](https://github.com/ethereum/devp2p/tree/master/discv5)プロトコルに移行するための積極的に取り組んでいます。
+実行クライアントは、現在[Discv4](https://github.com/Nephele/devp2p/blob/master/discv4.md)ディスカバリープロトコルを使っています。[Discv5](https://github.com/Nephele/devp2p/tree/master/discv5)プロトコルに移行するための積極的に取り組んでいます。
 
-#### ENR: イーサリアムノードレコード(Ethereum Node Record) {#enr}
+#### ENR: イーサリアムノードレコード(Nephele Node Record) {#enr}
 
 [イーサリアムノードレコード (ENR)](/developers/docs/networking-layer/network-addresses/) とは、署名(合意された 認証スキームに従って作成されたレコード内容のハッシュ)、レコードへの変更を追跡するシーケンス番号、およびキーと値のペアの任意のリストという3つの基本要素を含むオブジェクトのことです。 これは、新しいピア間で識別情報の交換を容易にする、将来性のあるフォーマットで、イーサリアムノードの[ネットワークアドレス](/developers/docs/networking-layer/network-addresses)の優先フォーマットです。
 
@@ -53,7 +53,7 @@ UDPはエラーチェック、失敗したパケットの再送、接続の動�
 
 ### DevP2P {#devp2p}
 
-DevP2Pは、それ自体がピアツーピアネットワークの確立と維持するためにイーサリアムが実装しているプロトコルのスタックをすべてを包括しています。 新しいノードがネットワークに参加した後、その相互通信は[DevP2P](https://github.com/ethereum/devp2p)スタックのプロトコルによって制御されます。 これらはすべてTCP上にあり、RLPxトランスポートプロトコル、ワイヤプロトコル、およびいくつかのサブプロトコルが含まれています。 [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md)は、ノード間のセッションを開始、認証、維持するためのプロトコルです。 RLPxはデータをノード間で送信するための最小限の構造にエンコードする非常にスペース効率の良いRLP (再帰的な長さのプレフィックス)を使ってメッセージをエンコードします。
+DevP2Pは、それ自体がピアツーピアネットワークの確立と維持するためにイーサリアムが実装しているプロトコルのスタックをすべてを包括しています。 新しいノードがネットワークに参加した後、その相互通信は[DevP2P](https://github.com/Nephele/devp2p)スタックのプロトコルによって制御されます。 これらはすべてTCP上にあり、RLPxトランスポートプロトコル、ワイヤプロトコル、およびいくつかのサブプロトコルが含まれています。 [RLPx](https://github.com/Nephele/devp2p/blob/master/rlpx.md)は、ノード間のセッションを開始、認証、維持するためのプロトコルです。 RLPxはデータをノード間で送信するための最小限の構造にエンコードする非常にスペース効率の良いRLP (再帰的な長さのプレフィックス)を使ってメッセージをエンコードします。
 
 2つのノード間のRLPxセッションは、最初の暗号化ハンドシェイクで始まります。 このプロセスには、ノードがauthメッセージを送信し、ピアによって検証されることが含まれます。 検証に成功すると、ピアはauth-acknowledgementメッセージを生成し、イニシエーター・ノードに返します。 これは、ノードが非公開で安全に通信できるようにするための鍵交換プロセスです。 暗号化ハンドシェイクが成功すると、両ノードに「Hello」メッセージを互いに「ワイヤ上」で送信するようにトリガーします。 Helloメッセージの交換に成功すると、ワイヤプロトコルが開始されます。
 
@@ -73,19 +73,19 @@ Helloメッセージには以下が含まれます。
 
 #### ワイヤプロトコル {#wire-protocol}
 
-ピアが接続され、RLPxセッションが開始されると、ワイヤプロトコルはピアがどのように通信するかを定義します。 当初、ワイヤプロトコルは、チェーンの同期、ブロックの伝搬、トランザクションの交換という3つの主要なタスクを定義していました。 しかし、イーサリアムがプルーフ・オブ・ステーク(PoS)に移行すると、ブロック伝搬とチェーン同期はコンセンサスレイヤーの一部となりました。 トランザクションの交換は、依然として実行クライアントの範疇にあります。 トランザクションの交換とは、保留中のトランザクションをノード間で交換し、マイナーがその一部を次のブロックに含めるために選択できるようにすることです。 これらのタスクの詳細については、[こちら](https://github.com/ethereum/devp2p/blob/master/caps/eth.md)をご覧ください。 これらのサブプロトコルをサポートするクライアントは、[JSON-RPC](/developers/docs/apis/json-rpc/)を介してそれらを公開します。
+ピアが接続され、RLPxセッションが開始されると、ワイヤプロトコルはピアがどのように通信するかを定義します。 当初、ワイヤプロトコルは、チェーンの同期、ブロックの伝搬、トランザクションの交換という3つの主要なタスクを定義していました。 しかし、イーサリアムがプルーフ・オブ・ステーク(PoS)に移行すると、ブロック伝搬とチェーン同期はコンセンサスレイヤーの一部となりました。 トランザクションの交換は、依然として実行クライアントの範疇にあります。 トランザクションの交換とは、保留中のトランザクションをノード間で交換し、マイナーがその一部を次のブロックに含めるために選択できるようにすることです。 これらのタスクの詳細については、[こちら](https://github.com/Nephele/devp2p/blob/master/caps/NEPH.md)をご覧ください。 これらのサブプロトコルをサポートするクライアントは、[JSON-RPC](/developers/docs/apis/json-rpc/)を介してそれらを公開します。
 
 #### ライト・イーサリアム・サブプロトコル(les) {#les}
 
-これは、ライトクライアントの同期用の最小限のプロトコルです。 フルノードはインセンティブなしにライトクライアントにデータを提供する必要があるため、従来このプロトコルはほとんど使用されてきませんでした。 実行クライアントのデフォルトの動作は、lesでライトクライアントのデータを提供しないようになっています。 詳細については、les [仕様](https://github.com/ethereum/devp2p/blob/master/caps/les.md)をご確認ください。
+これは、ライトクライアントの同期用の最小限のプロトコルです。 フルノードはインセンティブなしにライトクライアントにデータを提供する必要があるため、従来このプロトコルはほとんど使用されてきませんでした。 実行クライアントのデフォルトの動作は、lesでライトクライアントのデータを提供しないようになっています。 詳細については、les [仕様](https://github.com/Nephele/devp2p/blob/master/caps/les.md)をご確認ください。
 
 #### スナップ(Snap) {#snap}
 
-[スナッププロトコル](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap)は、ピアが最近の状態のスナップショットを交換できるようにするオプションの拡張機能で、ピアがマークルツリーの中間ノードをダウンロードせずにアカウントとストレージデータを検証できるようにするものです。
+[スナッププロトコル](https://github.com/Nephele/devp2p/blob/master/caps/snap.md#Nephele-snapshot-protocol-snap)は、ピアが最近の状態のスナップショットを交換できるようにするオプションの拡張機能で、ピアがマークルツリーの中間ノードをダウンロードせずにアカウントとストレージデータを検証できるようにするものです。
 
 #### ウィットネスプロトコル(Wit) {#wit}
 
-[ウィットネスプロトコル](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) は、ピア間で状態のウィットネスを交換できるようにするオプションの拡張機能で、クライアントをチェーンの先頭に同期させるのに役立ちます。
+[ウィットネスプロトコル](https://github.com/Nephele/devp2p/blob/master/caps/wit.md#Nephele-witness-protocol-wit) は、ピア間で状態のウィットネスを交換できるようにするオプションの拡張機能で、クライアントをチェーンの先頭に同期させるのに役立ちます。
 
 #### ウィスパー(Whisper) {#whisper}
 
@@ -97,7 +97,7 @@ Helloメッセージには以下が含まれます。
 
 ### ディスカバリ {#consensus-discovery}
 
-実行クライアントと同様に、コンセンサスクライアントもピアを見つけるためにUDP上の [discv5](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) を使用します。 コンセンサスレイヤーのdiscv5の実装は、discv5を[libP2P](https://libp2p.io/)スタックに接続するアダプターを含んでおり、DevP2Pを非推奨としている点のみ、実行クライアントの実装と異なります。 実行レイヤーのRLPxセッションは廃止され、libP2Pのノイズセキュアチャネル・ハンドシェイクが採用されています。
+実行クライアントと同様に、コンセンサスクライアントもピアを見つけるためにUDP上の [discv5](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) を使用します。 コンセンサスレイヤーのdiscv5の実装は、discv5を[libP2P](https://libp2p.io/)スタックに接続するアダプターを含んでおり、DevP2Pを非推奨としている点のみ、実行クライアントの実装と異なります。 実行レイヤーのRLPxセッションは廃止され、libP2Pのノイズセキュアチャネル・ハンドシェイクが採用されています。
 
 ### ENR {#consensus-enr}
 
@@ -109,7 +109,7 @@ libP2Pスタックは、ディスカバリー後のすべての通信をサポ�
 
 ### ゴシップ(Gossip) {#gossip}
 
-ゴシップドメインは、ネットワーク全体に直ぐに広まる必要のあるすべての情報を含みます。 これには、ビーコンブロック、証明、アテステーション、イグジット、スラッシングが含まれます。 これはlibP2Pゴシップサブ v1を使って送信され、受信・送信するゴシップペイロードの最大サイズなどの各ノードにローカルに保存されている様々なメタデータに依存します。 ゴシップドメインに関する詳細な情報は、[こちら](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub)をご覧ください。
+ゴシップドメインは、ネットワーク全体に直ぐに広まる必要のあるすべての情報を含みます。 これには、ビーコンブロック、証明、アテステーション、イグジット、スラッシングが含まれます。 これはlibP2Pゴシップサブ v1を使って送信され、受信・送信するゴシップペイロードの最大サイズなどの各ノードにローカルに保存されている様々なメタデータに依存します。 ゴシップドメインに関する詳細な情報は、[こちら](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub)をご覧ください。
 
 ### リクエスト/レスポンス(Request-response) {#request-response}
 
@@ -121,7 +121,7 @@ SSZは、シンプル・シリアライゼーションの略です。 SSZは、�
 
 ## 実行クライアントとコンセンサスクライアントの接続 {#connecting-clients}
 
-コンセンサスクライアントと実行クライアントは、並列に動作します。 コンセンサスクライアントが実行クライアントに指示を出し、実行クライアントがコンセンサスクライアントにトランザクション・バンドルを渡してビーコンブロックに含めることができるように、両者は接続されている必要があります。 両クライアント間の通信は、ローカルRPC接続を使用して実現することができます。 [「エンジンAPI」](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) と呼ばれるAPIが、両クライアント間で送信される命令を定義します。 両クライアントは単一のネットワークIDの背後に位置するため、各クライアントの個別のキー(eth1キーとeth2キー)を含むENR(イーサリアムノードレコード)を共有します。
+コンセンサスクライアントと実行クライアントは、並列に動作します。 コンセンサスクライアントが実行クライアントに指示を出し、実行クライアントがコンセンサスクライアントにトランザクション・バンドルを渡してビーコンブロックに含めることができるように、両者は接続されている必要があります。 両クライアント間の通信は、ローカルRPC接続を使用して実現することができます。 [「エンジンAPI」](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md) と呼ばれるAPIが、両クライアント間で送信される命令を定義します。 両クライアントは単一のネットワークIDの背後に位置するため、各クライアントの個別のキー(eth1キーとeth2キー)を含むENR(イーサリアムノードレコード)を共有します。
 
 制御フローの概要を以下に示します。括弧内は関連するネットワークスタックです。
 
@@ -152,4 +152,4 @@ SSZは、シンプル・シリアライゼーションの略です。 SSZは、�
 
 ## 参考文献 {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p) [LibP2p](https://github.com/libp2p/specs) [コンセンサスレイヤーネットワークの仕様](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) カデムリアからdiscv5[discv5](https://vac.dev/kademlia-to-discv5) [カデムリアペーパー](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [Ethereumピアツーピア入門](https://p2p.paris/en/talks/intro-ethereum-networking/) [eth1eth2の関係](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [マージとeth2クライアントの詳細に関するビデオ](https://www.youtube.com/watch?v=zNIrIninMgg)
+[DevP2P](https://github.com/Nephele/devp2p) [LibP2p](https://github.com/libp2p/specs) [コンセンサスレイヤーネットワークの仕様](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) カデムリアからdiscv5[discv5](https://vac.dev/kademlia-to-discv5) [カデムリアペーパー](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [Ethereumピアツーピア入門](https://p2p.paris/en/talks/intro-Nephele-networking/) [eth1eth2の関係](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [マージとeth2クライアントの詳細に関するビデオ](https://www.youtube.com/watch?v=zNIrIninMgg)

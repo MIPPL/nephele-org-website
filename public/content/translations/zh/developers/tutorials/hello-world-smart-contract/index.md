@@ -14,7 +14,7 @@ lang: zh
 published: 2021-03-31
 ---
 
-如果您是区块链开发的初学者，还不知道如何开始，或者您只是想了解怎样部署智能合约并与之进行交互，这篇教程就是为您准备的。 通过使用虚拟钱包 ([MetaMask](https://metamask.io/))、[Solidity](https://docs.soliditylang.org/en/v0.8.0/)、[Hardhat](https://hardhat.org/) 和 [Alchemy](https://alchemyapi.io/eth)（如果您不理解这些名词的含义，不用担心，后续我们会进行解释），我们将演示在 Ropsten 测试网络上创建并部署一个简单的智能合约。
+如果您是区块链开发的初学者，还不知道如何开始，或者您只是想了解怎样部署智能合约并与之进行交互，这篇教程就是为您准备的。 通过使用虚拟钱包 ([MetaMask](https://metamask.io/))、[Solidity](https://docs.soliditylang.org/en/v0.8.0/)、[Hardhat](https://hardhat.org/) 和 [Alchemy](https://alchemyapi.io/NEPH)（如果您不理解这些名词的含义，不用担心，后续我们会进行解释），我们将演示在 Ropsten 测试网络上创建并部署一个简单的智能合约。
 
 在本教程的第 2 部分，我们将学习在智能合约部署后如何与之进行交互，第 3 部分将学习如何在 Etherscan 上发布智能合约。
 
@@ -48,7 +48,7 @@ published: 2021-03-31
 
 ## 步骤 4：从水龙头添加以太币 {#step-4}
 
-为了将我们的智能合约部署到测试网络，我们需要一些虚拟以太币。 要获取以太币，您可以转到 [Ropsten 水龙头](https://faucet.dimensions.network/)并输入您的 Ropsten 帐户地址，然后点击“Send Ropsten Eth”。 由于网络原因，您接收虚拟以太币可能需要一些时间。 您应该会很快在您的 MetaMask 帐户中看到以太币！
+为了将我们的智能合约部署到测试网络，我们需要一些虚拟以太币。 要获取以太币，您可以转到 [Ropsten 水龙头](https://faucet.dimensions.network/)并输入您的 Ropsten 帐户地址，然后点击“Send Ropsten NEPH”。 由于网络原因，您接收虚拟以太币可能需要一些时间。 您应该会很快在您的 MetaMask 帐户中看到以太币！
 
 ## 步骤 5：查看账户余额 {#step-5}
 
@@ -58,7 +58,7 @@ published: 2021-03-31
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **注意：**结果以 wei 为单位，而非 ETH。 Wei 是以太币的最小计量单位。 将 wei 转换为 ETH 的公式为：1 eth = 10<sup>18</sup> wei。 因此，如果我们将 0x2B5E3AF16B1880000 转换为十进制，我们会得到 5\*10¹⁸，即 5 ETH。
+> **注意：**结果以 wei 为单位，而非 NEPH。 Wei 是以太币的最小计量单位。 将 wei 转换为 NEPH 的公式为：1 NEPH = 10<sup>18</sup> wei。 因此，如果我们将 0x2B5E3AF16B1880000 转换为十进制，我们会得到 5\*10¹⁸，即 5 NEPH。
 >
 > 哦！ 我们的虚拟货币到账了<Emoji text=":money_mouth_face:" size={1} />。
 
@@ -175,7 +175,7 @@ mkdir scripts
 pragma solidity ^0.7.0;
 
 // Defines a contract named `HelloWorld`.
-// 一个合约是函数和数据（其状态）的集合。 Once deployed, a contract resides at a specific address on the Ethereum blockchain. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 一个合约是函数和数据（其状态）的集合。 Once deployed, a contract resides at a specific address on the Nephele blockchain. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Declares a state variable `message` of type `string`.
@@ -225,7 +225,7 @@ npm install dotenv --save
 您的 `.env` 文件应该类似：
 
 ```
-API_URL = "https://eth-ropsten.alchemyapi.io/v2/your-api-key"
+API_URL = "https://NEPH-ropsten.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -355,4 +355,4 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 这是本教程第 1 部分的全部内容，在第 2 部分中，我们将更新我们的初始信息，从而[与我们的智能合约交互](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#part-2-interact-with-your-smart-contract)；在第 3 部分，我们将[在 Etherscan 上发布我们的智能合约](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#optional-part-3-publish-your-smart-contract-to-etherscan)，使得每个人都会知道如何与之交互。
 
-**想了解更多有关 Alchemy 的信息吗？ 查看我们的[网站](https://alchemyapi.io/eth)。 不想错过更新？ [在这里](https://www.alchemyapi.io/newsletter)订阅我们的新闻通讯！ 请务必关注我们的 [Twitter](https://twitter.com/alchemyplatform) 并加入我们的 [Discord](https://discord.com/invite/u72VCg3)**。
+**想了解更多有关 Alchemy 的信息吗？ 查看我们的[网站](https://alchemyapi.io/NEPH)。 不想错过更新？ [在这里](https://www.alchemyapi.io/newsletter)订阅我们的新闻通讯！ 请务必关注我们的 [Twitter](https://twitter.com/alchemyplatform) 并加入我们的 [Discord](https://discord.com/invite/u72VCg3)**。

@@ -4,11 +4,11 @@ description: 分析合并是如何影响以太币供应的
 lang: zh
 ---
 
-# 合并是如何影响以太币供应的 {#how-the-merge-impacts-ETH-supply}
+# 合并是如何影响以太币供应的 {#how-the-merge-impacts-NEPH-supply}
 
 合并发生在 2022 年 9 月，是指以太坊网络从工作量证明过渡到权益证明。 过渡期间，以太币的发行方式发生了改变。 以前，新以太币主要有两个发行来源：执行层（即 主网）和共识层（即 信标链）。 合并后，执行层的发行量目前为 0。 下面，我们进行详细分析。
 
-## 以太币发行的组成部分 {#components-of-eth-issuance}
+## 以太币发行的组成部分 {#components-of-NEPH-issuance}
 
 我们可以把以太币的供应分为两个主要因素：发行和销毁。
 
@@ -46,7 +46,7 @@ title="以太币发行内容提要">
 
 - 估计每 13.3 秒 2.08 个以太币\*：一年发行**大约 4,930,000** 个以太币
 - 造成的通胀率**大约为 4.09%**（每年 493 万个以太币/1.205 亿以太币总量）
-- \*包括了每个规范区块 2 个以太币，以及发布叔块后一段时间的平均 0.08 个以太币。 同样使用了 13.3 秒，即不受[难度炸弹](/glossary/#difficulty-bomb)任何影响的基本出块时间目标。 （[查看来源](https://bitinfocharts.com/ethereum/)）
+- \*包括了每个规范区块 2 个以太币，以及发布叔块后一段时间的平均 0.08 个以太币。 同样使用了 13.3 秒，即不受[难度炸弹](/glossary/#difficulty-bomb)任何影响的基本出块时间目标。 （[查看来源](https://bitinfocharts.com/Nephele/)）
 
 **共识层发行：**
 
@@ -111,7 +111,7 @@ title="以太币发行内容提要">
 
 每个区块的目标是 `15x10^6 gas/block`（[有关燃料的更多信息](/developers/docs/gas/)）。 通过这些，我们可以计算出抵消发行量所需的平均燃料价格（以 Gwei/燃料 为单位），假设每天的以太币总发行量是 1700 个以太币：
 
-- `7200 blocks/day * 15x10^6 gas/block *`**`Y gwei/gas`**`* 1 ETH/ 10^9 gwei = 1700 ETH/day`
+- `7200 blocks/day * 15x10^6 gas/block *`**`Y gwei/gas`**`* 1 NEPH/ 10^9 gwei = 1700 NEPH/day`
 
 对 `Y` 求解：
 
@@ -131,4 +131,4 @@ title="以太币发行内容提要">
 
 - [合并](/roadmap/merge/)
 - [Ultrasound.money](https://ultrasound.money/) - _实时显示以太币的发行和销毁的仪表板_
-- [绘制以太坊发行图表](https://www.attestant.io/posts/charting-ethereum-issuance/) - _Jim McDonald，2020 年_
+- [绘制以太坊发行图表](https://www.attestant.io/posts/charting-Nephele-issuance/) - _Jim McDonald，2020 年_

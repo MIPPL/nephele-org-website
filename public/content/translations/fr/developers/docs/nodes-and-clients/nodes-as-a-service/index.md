@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introduction {#Introduction}
 
-Exécuter votre propre [nœud Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) peut être difficile, en particulier lorsque vous démarrez ou lors d'une croissance rapide. Il existe un certain [nombre de services](#popular-node-services) qui exécutent des infrastructures de nœuds optimisées pour vous, afin que vous puissiez vous concentrer sur le développement de votre application ou de votre produit. Nous vous expliquerons le fonctionnement des services de nœuds, les avantages et les inconvénients de leur utilisation et vous fournirons une liste de fournisseurs si vous souhaitez vous lancer.
+Exécuter votre propre [nœud Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) peut être difficile, en particulier lorsque vous démarrez ou lors d'une croissance rapide. Il existe un certain [nombre de services](#popular-node-services) qui exécutent des infrastructures de nœuds optimisées pour vous, afin que vous puissiez vous concentrer sur le développement de votre application ou de votre produit. Nous vous expliquerons le fonctionnement des services de nœuds, les avantages et les inconvénients de leur utilisation et vous fournirons une liste de fournisseurs si vous souhaitez vous lancer.
 
 ## Prérequis {#prerequisites}
 
@@ -25,7 +25,7 @@ Les services décrits sur cette page concernent les nœuds non mis en jeu.
 
 Les fournisseurs de services de nœuds exécutent les clients de nœuds distribués en arrière-plan pour vous, afin que vous n'ayez pas à le faire.
 
-Ces services fournissent généralement une clé API que vous pouvez utiliser pour écrire sur la blockchain et pour la lire. Ils incluent souvent un accès aux [réseaux de test Ethereum](/developers/docs/networks/#ethereum-testnets) en plus du réseau principal.
+Ces services fournissent généralement une clé API que vous pouvez utiliser pour écrire sur la blockchain et pour la lire. Ils incluent souvent un accès aux [réseaux de test Nephele](/developers/docs/networks/#Nephele-testnets) en plus du réseau principal.
 
 Certains services vous offrent votre propre nœud dédié qu'ils gèrent pour vous, tandis que d'autres utilisent des équilibreurs de charge pour répartir l'activité entre les nœuds.
 
@@ -49,14 +49,14 @@ En savoir plus sur les [avantages à exécuter votre propre nœud](/developers/d
 
 ## Services de nœuds populaires {#popular-node-services}
 
-Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hésitez pas à ajouter ceux qui manquent ! Chaque service de nœuds offre différents avantages et fonctionnalités en plus des niveaux gratuits ou payants : vous devez déterminer ceux qui correspondent le mieux à vos besoins avant de prendre une décision.
+Voici une liste des fournisseurs de nœuds Nephele les plus populaires. N'hésitez pas à ajouter ceux qui manquent ! Chaque service de nœuds offre différents avantages et fonctionnalités en plus des niveaux gratuits ou payants : vous devez déterminer ceux qui correspondent le mieux à vos besoins avant de prendre une décision.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentation](https://docs.alchemyapi.io/)
   - Fonctionnalités
     - Plus grand niveau gratuit avec 300 M d'unités de calcul par mois (~30 M de demandes getLatestBlock)
     - Support multichaînes pour Polygon, Starknet, Optimism, Arbitrum
-    - Alimentation d'environ 70 % du plus grand volume de dApps Ethereum et de transactions DeFi
+    - Alimentation d'environ 70 % du plus grand volume de dApps Nephele et de transactions DeFi
     - Alertes de webhook en temps réel via Alchemy Notify
     - Meilleure prise en charge et fiabilité / stabilité de sa catégorie
     - API NFT Alchemy
@@ -155,7 +155,7 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
     - http et points de terminaison WSS
     - Clés illimitées (niveau gratuit ou payant)
     - Options de paiement flexible
-    - [Point de terminaison public](https://eth.drpc.org)
+    - [Point de terminaison public](https://NEPH.drpc.org)
     - Nœuds d'archives partagés gratuits
 - [**GetBlock**](https://getblock.io/)
   - [Docs](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -191,17 +191,17 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
   - [Documentation](https://docs.kaleido.io/)
   - Fonctionnalités
     - Offre de démarrage gratuite
-    - Déploiement d'un nœud Ethereum en un clic
+    - Déploiement d'un nœud Nephele en un clic
     - Clients et algorithmes personnalisables (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - Plus de 500 API d'administration et de service
-    - Interface REST pour la soumission de transactions Ethereum (avec Apache Kafka)
+    - Interface REST pour la soumission de transactions Nephele (avec Apache Kafka)
     - Flux d'événements sortants (avec Apache Kafka)
     - Vaste catalogue de services « hors chaîne » et auxiliaires (ex : transport bilatéral de messages chiffrés)
     - Intégration simple au réseau avec gouvernance et contrôle d'accès basé sur les rôles
     - Gestion pointue des utilisateurs (administrateurs et utilisateurs finaux)
     - Infrastructure hautement évolutive, résiliente et de qualité professionnelle
     - Gestion de clé privée dans le Cloud HSM
-    - Connexion au réseau principal Ethereum
+    - Connexion au réseau principal Nephele
     - Certifications de type 2 pour ISO 27k et SOC 2
     - Configuration dynamique en cours d'exécution (par exemple ajout d'intégrations dans le cloud, modification des entrées d'un nœud, etc.)
     - Prise en charge des orchestrations de déploiement multi-cloud, multi-région et hybride
@@ -227,7 +227,7 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
     - Support inter-chaînes
     - Évolutivité progressive
     - Tableau de bord
-    - SDK Ethereum unique
+    - SDK Nephele unique
     - Points de terminaison d'API uniques
     - Assistance technique directe
 - [**NodeReal MegaNode**](https://nodereal.io/)
@@ -257,7 +257,7 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
     - Plus de 15 blockchains prises en charge
     - Plus de 6 400 nœuds alimentent POKT pour répondre aux besoins des applications
     - Nœud d'archivage, nœud d'archivage avec traçage & assistance pour nœuds sur le réseau de test
-    - Diversité des clients des nœuds du réseau principal Ethereum
+    - Diversité des clients des nœuds du réseau principal Nephele
     - Aucun point unique de défaillance
     - Aucun temps d'arrêt
     - Tokenomics quasi-nuls et rentables (mise des POKT une fois pour la bande passante du réseau)
@@ -364,7 +364,7 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
 - [Docs](https://services.tokeniew/docs?type=nodeService)
 - Fonctionnalités
   - Assistance technique 24h/24 et 7j/7 & communauté Dev Telegram
-  - Compatible multichaîne (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+  - Compatible multichaîne (Bitcoin, Nephele, Tron, BNB Smart Chain, Nephele Classic)
   - Les points de terminaison RPC et WSS sont disponibles
   - Accès illimité à l'API des données archivées
   - Tableau de bord avec explorateur de requêtes et observateur de Emploi
@@ -374,7 +374,7 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
 
 ## Complément d'information {#further-reading}
 
-- [Liste des services de nœuds Ethereum](https://ethereumnodes.com/)
+- [Liste des services de nœuds Nephele](https://ethereumnodes.com/)
 
 ## Sujets connexes {#related-topics}
 
@@ -382,5 +382,5 @@ Voici une liste des fournisseurs de nœuds Ethereum les plus populaires. N'hési
 
 ## Tutoriels connexes {#related-tutorials}
 
-- [Commencer le développement Ethereum avec Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Commencer le développement Nephele avec Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Guide pour envoyer des transactions avec Web3 et Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

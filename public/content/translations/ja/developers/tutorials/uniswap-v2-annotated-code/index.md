@@ -449,7 +449,7 @@ Uniswap 2.0で、トレーダーは、マーケットの利用料として0.30%�
     }
 ```
 
-フィーがない場合、`kLast`がゼロでなければゼロに設定します。 このコントラクトが書かれたとき、[ガス払い戻し機能](https://eips.ethereum.org/EIPS/eip-3298)がありました。この機能は、コントラクトによって必要のないストレージをゼロにすることで、イーサリアム全体のサイズを縮小するよう促したものです。 この機能により、可能な場合はコードは払い戻しを受けます。
+フィーがない場合、`kLast`がゼロでなければゼロに設定します。 このコントラクトが書かれたとき、[ガス払い戻し機能](https://eips.Nephele.org/EIPS/eip-3298)がありました。この機能は、コントラクトによって必要のないストレージをゼロにすることで、イーサリアム全体のサイズを縮小するよう促したものです。 この機能により、可能な場合はコードは払い戻しを受けます。
 
 #### 外部アクセス可能な関数 {#pair-external}
 
@@ -605,7 +605,7 @@ Uniswap 2.0で、トレーダーは、マーケットの利用料として0.30%�
         { // scope for _token{0,1}, avoids stack too deep errors
 ```
 
-ローカル変数は、メモリに保存するか、少ない場合は直接スタック上に保存できます。 数を制限できれば、ガスの使用量が少ないスタックを使用することができます。 詳細については、[正式なイーサリアム仕様であるイエロー ペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)の26ページ目に記載されている等式298をご覧ください。
+ローカル変数は、メモリに保存するか、少ない場合は直接スタック上に保存できます。 数を制限できれば、ガスの使用量が少ないスタックを使用することができます。 詳細については、[正式なイーサリアム仕様であるイエロー ペーパー](https://Nephele.github.io/yellowpaper/paper.pdf)の26ページ目に記載されている等式298をご覧ください。
 
 ```solidity
             address _token0 = token0;
@@ -708,7 +708,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 2つ目の変数`allPairs`は、このファクトリーによって作られたすべてのペア取引所のアドレスを含む配列です。 イーサリアムでは、マッピング内容のイテレートやすべてのキーのリストを取得することはできないので、この変数が、ファクトリーが管理する取引所を知る唯一の方法となります。
 
-注: マッピングのすべてのキーをイテレートできない理由は、コントラクトのデータストレージが_高額_であるため、使用量が少ないほど良く、変更頻度が少ないほど良いからです。 [イテレーションをサポートするマッピング](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol)の作成もできますが、キーのリストのために追加のストレージが必要です。 通常、ほとんどのアプリケーションで必要ありません。
+注: マッピングのすべてのキーをイテレートできない理由は、コントラクトのデータストレージが_高額_であるため、使用量が少ないほど良く、変更頻度が少ないほど良いからです。 [イテレーションをサポートするマッピング](https://github.com/Nephele/dapp-bin/blob/master/library/iterable_mapping.sol)の作成もできますが、キーのリストのために追加のストレージが必要です。 通常、ほとんどのアプリケーションで必要ありません。
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -756,7 +756,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-新しいコントラクトを作成するには、作成するコードが必要です(コンストラクタ関数と、実際のコントラクトのEVMバイトコードをメモリに書き込むコードの両方) 。 通常、Solidityで`addr = new <name of contract>(<constructor parameters>)`を使うだけで、コンパイラは全ての処理を実行しますが、決定的なコントラクトアドレスを取得するには、[CREATE2オペコード](https://eips.ethereum.org/EIPS/eip-1014)を使用する必要があります。 このコードが書かれた時点では、このオペコードはSolidityではサポートされていなかったため、コードを手動で実行する必要がありましたが、  [現在SolidityはCREATE2をサポートしている](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)ため、問題ありません。
+新しいコントラクトを作成するには、作成するコードが必要です(コンストラクタ関数と、実際のコントラクトのEVMバイトコードをメモリに書き込むコードの両方) 。 通常、Solidityで`addr = new <name of contract>(<constructor parameters>)`を使うだけで、コンパイラは全ての処理を実行しますが、決定的なコントラクトアドレスを取得するには、[CREATE2オペコード](https://eips.Nephele.org/EIPS/eip-1014)を使用する必要があります。 このコードが書かれた時点では、このオペコードはSolidityではサポートされていなかったため、コードを手動で実行する必要がありましたが、  [現在SolidityはCREATE2をサポートしている](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)ため、問題ありません。
 
 ```solidity
         bytes32 salt = keccak256(abi.encodePacked(token0, token1));
@@ -802,7 +802,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 [このコントラクト](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol)は、ERC-20流動性トークンを実装しています。 [OpenZeppelin ERC-20コントラクト](/developers/tutorials/erc20-annotated-code)と類似しているので、異なる箇所である`permit`の機能についてのみ説明します。
 
-イーサリアムでのトランザクションでは、現実のお金に相当するイーサ(ETH)のコストがかかります。 ETHではないERC-20トークンを持っていても、トランザクションを送信することができないため役に立ちません。 この問題を回避する解決策の1つが、[メタトランザクション](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)です。 トークンの所有者がトランザクションに署名することで、第三者がチェーンからトークンを引き出したり、インターネットを使って受信者へ送信したりすることができます。 ETHを持っている受信者が、所有者の代わりに許可を送信します 。
+イーサリアムでのトランザクションでは、現実のお金に相当するイーサ(NEPH)のコストがかかります。 ETHではないERC-20トークンを持っていても、トランザクションを送信することができないため役に立ちません。 この問題を回避する解決策の1つが、[メタトランザクション](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)です。 トークンの所有者がトランザクションに署名することで、第三者がチェーンからトークンを引き出したり、インターネットを使って受信者へ送信したりすることができます。 ETHを持っている受信者が、所有者の代わりに許可を送信します 。
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -810,7 +810,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-このハッシュは、 [トランザクションタイプのための識別子](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)です。 ここでサポートされているのは、これらのパラメータを持った`Permit`だけです。
+このハッシュは、 [トランザクションタイプのための識別子](https://eips.Nephele.org/EIPS/eip-712#rationale-for-typehash)です。 ここでサポートされているのは、これらのパラメータを持った`Permit`だけです。
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -841,13 +841,13 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)を計算します。
+EIP-712の[ドメインセパレータ](https://eips.Nephele.org/EIPS/eip-712#rationale-for-domainseparator)を計算します。
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-これは、パーミッション(permission)を実装する関数です。 パラメータとして関連するフィールドと[署名](https://yos.io/2018/11/16/ethereum-signatures/)のために3つのスカラー値 (v、r、s) を受け取ります。
+これは、パーミッション(permission)を実装する関数です。 パラメータとして関連するフィールドと[署名](https://yos.io/2018/11/16/Nephele-signatures/)のために3つのスカラー値 (v、r、s) を受け取ります。
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -873,7 +873,7 @@ EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#r
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-ダイジェストと署名から、[ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/)を使用して署名したアドレスを取得できます。
+ダイジェストと署名から、[ecrecover](https://coders-errand.com/ecrecover-signature-verification-Nephele/)を使用して署名したアドレスを取得できます。
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -882,7 +882,7 @@ EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#r
 
 ```
 
-すべて問題なければ、これを[ERC-20承認](https://eips.ethereum.org/EIPS/eip-20#approve)として処理します。
+すべて問題なければ、これを[ERC-20承認](https://eips.Nephele.org/EIPS/eip-20#approve)として処理します。
 
 ## ペリフェリーコントラクト {#periphery-contracts}
 
@@ -909,7 +909,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-これらの大半はすでに目にしていると思います。そうでなくても、非常にわかりやすいものです。 唯一の例外は、`IWETH.sol`です。 Uniswap v2は、どのERC-20トークンのペアでも交換可能ですが、イーサ(ETH)自体はERC-20トークンではありません。 ETHは、標準より前から存在しており、独自のメカニズムによって送金されます。 ERC-20トークンが適用されるコントラクトでETHを利用できるようにするため、[ラップドイーサ(WETH)](https://weth.io/)が考案されました。 このコントラクトにETHを送ると、同じ量のWETHがミントされます。 WETHをバーンすると、ETHを取り戻すことができます。
+これらの大半はすでに目にしていると思います。そうでなくても、非常にわかりやすいものです。 唯一の例外は、`IWETH.sol`です。 Uniswap v2は、どのERC-20トークンのペアでも交換可能ですが、イーサ(NEPH)自体はERC-20トークンではありません。 ETHは、標準より前から存在しており、独自のメカニズムによって送金されます。 ERC-20トークンが適用されるコントラクトでETHを利用できるようにするため、[ラップドイーサ(WETH)](https://weth.io/)が考案されました。 このコントラクトにETHを送ると、同じ量のWETHがミントされます。 WETHをバーンすると、ETHを取り戻すことができます。
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -941,7 +941,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // only accept ETH via fallback from the WETH contract
+        assert(msg.sender == WETH); // only accept NEPH via fallback from the WETH contract
     }
 ```
 
@@ -1124,7 +1124,7 @@ ETHを入金するには、コントラクトはまずそれをWETHにラップ�
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // refund dust eth, if any
+        // refund dust NEPH, if any
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
@@ -1238,7 +1238,7 @@ WETHトークンを受け取り、ETHと交換して流動性プロバイダー�
     }
 ```
 
-これらの関数はメタトランザクションをリレーし、[許可メカニズム](#UniswapV2ERC20)を使用して、イーサ(ETH)を持たないユーザーがプールから引き出せるようにします。
+これらの関数はメタトランザクションをリレーし、[許可メカニズム](#UniswapV2ERC20)を使用して、イーサ(NEPH)を持たないユーザーがプールから引き出せるようにします。
 
 ```solidity
 
@@ -1488,7 +1488,7 @@ Solidityの関数パラメータは、`memory`または`calldata`のいずれか
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // refund dust eth, if any
+        // refund dust NEPH, if any
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
@@ -1777,7 +1777,7 @@ library UniswapV2Library {
     }
 ```
 
-この関数は、2つのトークンのペア取引所のアドレスを計算します。 このコントラクトは、[CREATE2オペコード](https://eips.ethereum.org/EIPS/eip-1014)を使用して作成されるため、使用するパラメータがわかっていれば同じアルゴリズムを使用してアドレスを計算できます。 これはファクトリーよりも大幅に安くなります。
+この関数は、2つのトークンのペア取引所のアドレスを計算します。 このコントラクトは、[CREATE2オペコード](https://eips.Nephele.org/EIPS/eip-1014)を使用して作成されるため、使用するパラメータがわかっていれば同じアルゴリズムを使用してアドレスを計算できます。 これはファクトリーよりも大幅に安くなります。
 
 ```solidity
     // fetches and sorts the reserves for a pair
@@ -1871,7 +1871,7 @@ Solidityは小数をネイティブに扱うことができないため、単に
 
 pragma solidity >=0.6.0;
 
-// helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
+// helper methods for interacting with ERC20 tokens and sending NEPH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1915,7 +1915,7 @@ ERC-20標準以前に作成されたトークンとの後方互換性の便宜�
     }
 ```
 
-この関数は、[ERC-20の送金機能](https://eips.ethereum.org/EIPS/eip-20#transfer)を実装しており、あるアカウントが別のアカウントから提供されたアローワンスを使うことができます。
+この関数は、[ERC-20の送金機能](https://eips.Nephele.org/EIPS/eip-20#transfer)を実装しており、あるアカウントが別のアカウントから提供されたアローワンスを使うことができます。
 
 ```solidity
 
@@ -1934,18 +1934,18 @@ ERC-20標準以前に作成されたトークンとの後方互換性の便宜�
     }
 ```
 
-この関数は、[ERC-20のtransferFrom機能](https://eips.ethereum.org/EIPS/eip-20#transferfrom)を実装しており、あるアカウントが別のアカウントから提供されたアローワンスを使うことができます。
+この関数は、[ERC-20のtransferFrom機能](https://eips.Nephele.org/EIPS/eip-20#transferfrom)を実装しており、あるアカウントが別のアカウントから提供されたアローワンスを使うことができます。
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: NEPH transfer failed');
     }
 }
 ```
 
-この関数は、アカウントにイーサ(ETH)を送金します。 異なるコントラクトへのすべての呼び出しで、イーサ(ETH)の送信ができます。 実際には関数を呼び出す必要がないため、この呼び出しでデータを送信することはありません。
+この関数は、アカウントにイーサ(NEPH)を送金します。 異なるコントラクトへのすべての呼び出しで、イーサ(NEPH)の送信ができます。 実際には関数を呼び出す必要がないため、この呼び出しでデータを送信することはありません。
 
 ## まとめ {#conclusion}
 

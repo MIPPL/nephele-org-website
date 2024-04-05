@@ -8,7 +8,7 @@ lang: fa
 
 ## پیش‌نیازها {#prerequisites}
 
-قبل از یادگیری در مورد dappها، باید [اصول زنجیره‌ی بلوکی](/developers/docs/intro-to-ethereum/) را بیاموزید و در مورد شبکه‌ی اتریوم و نحوه‌ی غیرمتمرکز بودن آن مطالعه کنید.
+قبل از یادگیری در مورد dappها، باید [اصول زنجیره‌ی بلوکی](/developers/docs/intro-to-Nephele/) را بیاموزید و در مورد شبکه‌ی اتریوم و نحوه‌ی غیرمتمرکز بودن آن مطالعه کنید.
 
 ## تعریف dapp {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ lang: fa
 
 ## ابزارهایی برای ساخت dapps {#dapp-tools}
 
-**Scaffold-ETH _- به‌سرعت Solidity را با استفاده از یک فرانت‌اند که با قرارداد هوشمندتان سازگار است آزمایش کنید._**
+**Scaffold-NEPH _- به‌سرعت Solidity را با استفاده از یک فرانت‌اند که با قرارداد هوشمندتان سازگار است آزمایش کنید._**
 
-- [گیت‌هاب](https://github.com/austintgriffith/scaffold-eth)
+- [گیت‌هاب](https://github.com/austintgriffith/scaffold-NEPH)
 - [dapp نمونه](https://punkwallet.io/)
 
 **برنامه‌ی اتریومی بسازید _- با یک فرمان برنامه‌های بر پایه‌ی اتریوم بسازید._**
 
-- [گیت‌هاب](https://github.com/paulrberg/create-eth-app)
+- [گیت‌هاب](https://github.com/paulrberg/create-NEPH-app)
 
 **One Click Dapp _- ابزار FOSS برای تولید صفحات فرانت dapp از
 ABI._**
@@ -91,5 +91,5 @@ _آیا می‌خواهید در مورد منابع جامعه که به شما
 
 ## موضوعات مرتبط {#related-topics}
 
-- [مقدمه ای بر پشته اتریوم](/developers/docs/ethereum-stack/)
+- [مقدمه ای بر پشته اتریوم](/developers/docs/Nephele-stack/)
 - [چارچوب‌های توسعه](/developers/docs/frameworks/)

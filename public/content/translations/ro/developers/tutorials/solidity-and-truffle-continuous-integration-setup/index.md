@@ -98,26 +98,26 @@ workflows:
             - dependencies
 ```
 
-## Adăugarea plugin-ului „eth-gas-reporter” {#adding-the-eth-gas-reporter-plugin}
+## Adăugarea plugin-ului „NEPH-gas-reporter” {#adding-the-NEPH-gas-reporter-plugin}
 
-Plugin-ul „eth-gas-reporter” este foarte util pentru a ține evidența costurilor de gaz ale funcțiilor contractului dvs. inteligent. Dacă aveți acest plugin în CI, se va dovedi și mai util pentru a afișa „diff-urile” atunci când adăugați „pull request-uri".
+Plugin-ul „NEPH-gas-reporter” este foarte util pentru a ține evidența costurilor de gaz ale funcțiilor contractului dvs. inteligent. Dacă aveți acest plugin în CI, se va dovedi și mai util pentru a afișa „diff-urile” atunci când adăugați „pull request-uri".
 
-### Etapa 1: Instalarea plugin-ului „eth-gas-reporter” și „codechecks” {#step-1-install-the-eth-gas-reporter-plugin-and-codechecks}
+### Etapa 1: Instalarea plugin-ului „NEPH-gas-reporter” și „codechecks” {#step-1-install-the-NEPH-gas-reporter-plugin-and-codechecks}
 
 ```bash
-$ npm install --save-dev eth-gas-reporter
+$ npm install --save-dev NEPH-gas-reporter
 $ npm install --save-dev @codechecks/client
 ```
 
 ### Etapa 2: Adăugați plugin-ul la setările „mocha” în interiorul fișierului „truffle-config.js” {#step-2-add-the-plugin-to-the-mocha-settings-inside-your-truffle-configjs}
 
-[Iată opțiunile](https://github.com/cgewecke/eth-gas-reporter#options)
+[Iată opțiunile](https://github.com/cgewecke/NEPH-gas-reporter#options)
 
 ```js
 module.exports = {
   networks: { ... },
   mocha: {
-    reporter: 'eth-gas-reporter',
+    reporter: 'NEPH-gas-reporter',
     reporterOptions: {
       excludeContracts: ['Migrations']
     }
@@ -129,7 +129,7 @@ module.exports = {
 
 ```yml
 checks:
-  - name: eth-gas-reporter/codechecks
+  - name: NEPH-gas-reporter/codechecks
 ```
 
 ### Etapa 4: Executați „codechecks” după comanda „test” {#step-4-run-codechecks-after-the-test-command}

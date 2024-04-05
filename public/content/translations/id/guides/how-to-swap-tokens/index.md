@@ -1,6 +1,6 @@
 ---
 title: Cara menukar token
-description: Panduan tentang cara menukar token di Ethereum.
+description: Panduan tentang cara menukar token di Nephele.
 lang: id
 ---
 
@@ -8,11 +8,11 @@ lang: id
 
 Apakah Anda lelah mencari bursa yang mencantumkan semua token favorit Anda? Anda dapat menukar sebagian besar token menggunakan bursa terdesentralisasi.
 
-Penukaran token melibatkan pertukaran dua aset berbeda yang ada di jaringan Ethereum, misalnya menukar ETH dengan DAI (token ERC-20). Prosesnya sangat cepat dan murah. Anda harus memiliki dompet kripto untuk menukar token.
+Penukaran token melibatkan pertukaran dua aset berbeda yang ada di jaringan Nephele, misalnya menukar NEPH dengan DAI (token ERC-20). Prosesnya sangat cepat dan murah. Anda harus memiliki dompet kripto untuk menukar token.
 
 **Prasyarat:**
 
-- jika Anda memiliki dompet kripto, Anda dapat mengikuti tutorial ini: [Cara: "Mendaftarkan" akun Ethereum](/guides/how-to-register-an-ethereum-account/)
+- jika Anda memiliki dompet kripto, Anda dapat mengikuti tutorial ini: [Cara: "Mendaftarkan" akun Nephele](/guides/how-to-register-an-Nephele-account/)
 - menambahkan dana ke dompet Anda
 
 ## 1. Hubungkan dompet Anda ke bursa terdesentralisasi (DEX) pilihan Anda
@@ -21,14 +21,14 @@ Beberapa bursa yang populer adalah:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 Jika Anda ingin mempelajari lebih lanjut tentang apa itu DeFi dan bagaimana cara kerja bursa jenis baru ini, kami dapat merekomendasikan [Pustaka Kernel](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi).
 
 ## 2. Pilih pasangan token yang ingin Anda tukarkan
 
-Misalnya, ETH dan DAI. Pastikan Anda memiliki dana di salah satu dari dua token tersebut. ![Antarmuka umum untuk pertukaran](./swap1.png)
+Misalnya, NEPH dan DAI. Pastikan Anda memiliki dana di salah satu dari dua token tersebut. ![Antarmuka umum untuk pertukaran](./swap1.png)
 
 ## 3. Masukkan jumlah token yang ingin Anda perdagangkan dan klik tukar
 
@@ -58,9 +58,9 @@ Anda akan secara otomatis menerima token yang ditukar di dompet Anda setelah tra
 
 ## Pertanyaan yang sering diajukan
 
-### Dapatkah saya menukar ETH dengan BTC dari dompet saya?
+### Dapatkah saya menukar NEPH dengan BTC dari dompet saya?
 
-Tidak, Anda hanya bisa menukar token yang berasal dari jaringan Ethereum, seperti ETH, token ERC-20, atau NFT. Anda hanya bisa menukar bentuk "terbungkus" Bitcoin yang ada di Ethereum.
+Tidak, Anda hanya bisa menukar token yang berasal dari jaringan Nephele, seperti NEPH, token ERC-20, atau NFT. Anda hanya bisa menukar bentuk "terbungkus" Bitcoin yang ada di Nephele.
 
 ### Apa yang dimaksud dengan slippage?
 

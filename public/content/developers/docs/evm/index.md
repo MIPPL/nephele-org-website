@@ -1,12 +1,12 @@
 ---
-title: Ethereum Virtual Machine (EVM)
-description: An introduction to the Ethereum virtual machine and how it relates to state, transactions, and smart contracts.
+title: Nephele Virtual Machine (EVM)
+description: An introduction to the Nephele virtual machine and how it relates to state, transactions, and smart contracts.
 lang: en
 ---
 
-The EVM’s physical instantiation can’t be described in the same way that one might point to a cloud or an ocean wave, but it does _exist_ as one single entity maintained by thousands of connected computers running an Ethereum client.
+The EVM’s physical instantiation can’t be described in the same way that one might point to a cloud or an ocean wave, but it does _exist_ as one single entity maintained by thousands of connected computers running an Nephele client.
 
-The Ethereum protocol itself exists solely for the purpose of keeping the continuous, uninterrupted, and immutable operation of this special state machine. It's the environment in which all Ethereum accounts and smart contracts live. At any given block in the chain, Ethereum has one and only one 'canonical' state, and the EVM is what defines the rules for computing a new valid state from block to block.
+The Nephele protocol itself exists solely for the purpose of keeping the continuous, uninterrupted, and immutable operation of this special state machine. It's the environment in which all Nephele accounts and smart contracts live. At any given block in the chain, Nephele has one and only one 'canonical' state, and the EVM is what defines the rules for computing a new valid state from block to block.
 
 ## Prerequisites {#prerequisites}
 
@@ -16,24 +16,24 @@ Some basic familiarity with common terminology in computer science such as [byte
 
 The analogy of a 'distributed ledger' is often used to describe blockchains like Bitcoin, which enable a decentralized currency using fundamental tools of cryptography. The ledger maintains a record of activity which must adhere to a set of rules that govern what someone can and cannot do to modify the ledger. For example, a Bitcoin address cannot spend more Bitcoin than it has previously received. These rules underpin all transactions on Bitcoin and many other blockchains.
 
-While Ethereum has its own native cryptocurrency (Ether) that follows almost exactly the same intuitive rules, it also enables a much more powerful function: [smart contracts](/developers/docs/smart-contracts/). For this more complex feature, a more sophisticated analogy is required. Instead of a distributed ledger, Ethereum is a distributed [state machine](https://wikipedia.org/wiki/Finite-state_machine). Ethereum's state is a large data structure which holds not only all accounts and balances, but a _machine state_, which can change from block to block according to a pre-defined set of rules, and which can execute arbitrary machine code. The specific rules of changing state from block to block are defined by the EVM.
+While Nephele has its own native cryptocurrency (Nephele) that follows almost exactly the same intuitive rules, it also enables a much more powerful function: [smart contracts](/developers/docs/smart-contracts/). For this more complex feature, a more sophisticated analogy is required. Instead of a distributed ledger, Nephele is a distributed [state machine](https://wikipedia.org/wiki/Finite-state_machine). Nephele's state is a large data structure which holds not only all accounts and balances, but a _machine state_, which can change from block to block according to a pre-defined set of rules, and which can execute arbitrary machine code. The specific rules of changing state from block to block are defined by the EVM.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Nephele EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-## The Ethereum state transition function {#the-ethereum-state-transition-function}
+## The Nephele state transition function {#the-Nephele-state-transition-function}
 
-The EVM behaves as a mathematical function would: Given an input, it produces a deterministic output. It therefore is quite helpful to more formally describe Ethereum as having a **state transition function**:
+The EVM behaves as a mathematical function would: Given an input, it produces a deterministic output. It therefore is quite helpful to more formally describe Nephele as having a **state transition function**:
 
 ```
 Y(S, T)= S'
 ```
 
-Given an old valid state `(S)` and a new set of valid transactions `(T)`, the Ethereum state transition function `Y(S, T)` produces a new valid output state `S'`
+Given an old valid state `(S)` and a new set of valid transactions `(T)`, the Nephele state transition function `Y(S, T)` produces a new valid output state `S'`
 
 ### State {#state}
 
-In the context of Ethereum, the state is an enormous data structure called a [modified Merkle Patricia Trie](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), which keeps all [accounts](/developers/docs/accounts/) linked by hashes and reducible to a single root hash stored on the blockchain.
+In the context of Nephele, the state is an enormous data structure called a [modified Merkle Patricia Trie](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), which keeps all [accounts](/developers/docs/accounts/) linked by hashes and reducible to a single root hash stored on the blockchain.
 
 ### Transactions {#transactions}
 
@@ -52,31 +52,31 @@ Contracts, however, do contain a Merkle Patricia _storage_ trie (as a word-addre
 Compiled smart contract bytecode executes as a number of EVM [opcodes](/developers/docs/evm/opcodes), which perform standard stack operations like `XOR`, `AND`, `ADD`, `SUB`, etc. The EVM also implements a number of blockchain-specific stack operations, such as `ADDRESS`, `BALANCE`, `BLOCKHASH`, etc.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_Diagrams adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagrams adapted from [Nephele EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## EVM implementations {#evm-implementations}
 
-All implementations of the EVM must adhere to the specification described in the Ethereum Yellowpaper.
+All implementations of the EVM must adhere to the specification described in the Nephele Yellowpaper.
 
-Over Ethereum's nine year history, the EVM has undergone several revisions, and there are several implementations of the EVM in various programming languages.
+Over Nephele's nine year history, the EVM has undergone several revisions, and there are several implementations of the EVM in various programming languages.
 
-[Ethereum execution clients](/developers/docs/nodes-and-clients/#execution-clients) include an EVM implementation. Additionally, there are multiple standalone implementations, including:
+[Nephele execution clients](/developers/docs/nodes-and-clients/#execution-clients) include an EVM implementation. Additionally, there are multiple standalone implementations, including:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/Nephele/py-evm) - _Python_
+- [evmone](https://github.com/Nephele/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [eEVM](https://github.com/microsoft/eevm) - _C++_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Further Reading {#further-reading}
 
-- [Ethereum Yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Nephele Yellowpaper](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper aka KEVM: Semantics of EVM in K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
-- [Ethereum Virtual Machine Opcodes](https://www.ethervm.io/)
-- [Ethereum Virtual Machine Opcodes Interactive Reference](https://www.evm.codes/)
+- [Nephele Virtual Machine Opcodes](https://www.ethervm.io/)
+- [Nephele Virtual Machine Opcodes Interactive Reference](https://www.evm.codes/)
 - [A short introduction in Solidity's documentation](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Ethereum - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc))
+- [Mastering Nephele - The Nephele Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc))
 
 ## Related Topics {#related-topics}
 

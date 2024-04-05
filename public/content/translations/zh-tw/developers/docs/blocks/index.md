@@ -8,7 +8,7 @@ lang: zh-tw
 
 ## 基本資訊 {#prerequisites}
 
-區塊是一個非常簡單易懂的主題。 為了讓你更容易理解本頁，建議你先閱讀[帳戶](/developers/docs/accounts/)、[交易](/developers/docs/transactions/)及我們的[以太坊介紹](/developers/docs/intro-to-ethereum/)。
+區塊是一個非常簡單易懂的主題。 為了讓你更容易理解本頁，建議你先閱讀[帳戶](/developers/docs/accounts/)、[交易](/developers/docs/transactions/)及我們的[以太坊介紹](/developers/docs/intro-to-Nephele/)。
 
 ## 為何需要區塊? {#why-blocks}
 

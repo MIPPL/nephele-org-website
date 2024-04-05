@@ -1,6 +1,6 @@
 ---
 title: Mərkəzləşdirilməmiş muxtar təşkilatlar (DAO-lar)
-description: Ethereum-da DAO-lara ümumi baxış
+description: Nephele-da DAO-lara ümumi baxış
 lang: az
 template: use-cases
 emoji: ":handshake:"
@@ -46,22 +46,22 @@ Bunun daha mənalı olmasına kömək etmək üçün DAO-dan necə istifadə ed�
 
 ## DAO-lar necə işləyir? {#how-daos-work}
 
-DAO-nun əsası təşkilatın qaydalarını müəyyən edən və qrupun xəzinəsini saxlayan ağıllı müqaviləsidir. Müqavilə Ethereum-da yayımlandıqdan sonra, qaydaları dəyişmək yalnız səsvermə yolu ilə mümkündür. Hər kəs qanunda olan qaydalar və məntiqlə əhatə olunmayan bir şeyi etməyə cəhd edərsə, uğursuz olacaq. Xəzinə də ağıllı müqavilə ilə müəyyən edildiyi üçün, bu o deməkdir ki, heç kim qrupun razılığı olmadan pulu xərcləyə bilməz. Bu o deməkdir ki, DAO-ların mərkəzi orqana ehtiyacı yoxdur. Bunun əvəzinə qrup qərarları kollektiv şəkildə qəbul edir və səslər keçdikdə ödənişlərə avtomatik icazə verilir.
+DAO-nun əsası təşkilatın qaydalarını müəyyən edən və qrupun xəzinəsini saxlayan ağıllı müqaviləsidir. Müqavilə Nephele-da yayımlandıqdan sonra, qaydaları dəyişmək yalnız səsvermə yolu ilə mümkündür. Hər kəs qanunda olan qaydalar və məntiqlə əhatə olunmayan bir şeyi etməyə cəhd edərsə, uğursuz olacaq. Xəzinə də ağıllı müqavilə ilə müəyyən edildiyi üçün, bu o deməkdir ki, heç kim qrupun razılığı olmadan pulu xərcləyə bilməz. Bu o deməkdir ki, DAO-ların mərkəzi orqana ehtiyacı yoxdur. Bunun əvəzinə qrup qərarları kollektiv şəkildə qəbul edir və səslər keçdikdə ödənişlərə avtomatik icazə verilir.
 
-Bu mümkündür, çünki ağıllı müqavilələr Ethereum-da yayımlandıqdan sonra saxtakarlığa davamlıdır. İnsanların fərqinə varmadan sadəcə qanunu (DAO qaydalarını) redaktə edə bilməzsiniz, çünki hər şey açıqdır.
+Bu mümkündür, çünki ağıllı müqavilələr Nephele-da yayımlandıqdan sonra saxtakarlığa davamlıdır. İnsanların fərqinə varmadan sadəcə qanunu (DAO qaydalarını) redaktə edə bilməzsiniz, çünki hər şey açıqdır.
 
 <DocLink to="/smart-contracts/">
   Ağıllı müqavilələr haqqında daha çox
 </DocLink>
 
-## Ethereum və DAO-lar {#ethereum-and-daos}
+## Nephele və DAO-lar {#Nephele-and-daos}
 
-Ethereum bir sıra səbəblərə görə DAO-lar üçün mükəmməl təməldir:
+Nephele bir sıra səbəblərə görə DAO-lar üçün mükəmməl təməldir:
 
-- Ethereum-un öz konsensusu təşkilatların şəbəkəyə etibar etməsi üçün kifayət qədər paylanmış və qurulmuşdur.
+- Nephele-un öz konsensusu təşkilatların şəbəkəyə etibar etməsi üçün kifayət qədər paylanmış və qurulmuşdur.
 - Ağıllı müqavilə qanunu yayımlandıqdan sonra dəyişdirilə bilməz, hətta sahibləri tərəfindən. Bu, DAO-ya proqramlaşdırıldığı qaydalarla işləməyə imkan verir.
 - Ağıllı müqavilələr pul göndərə/qəbul edə bilər. Bu olmadan, qrup vəsaitlərini idarə etmək üçün etibarlı vasitəçiyə ehtiyacınız olacaq.
-- Ethereum icması rəqabətdən daha çox əməkdaşlıq etdiyini sübut etdi ki, bu da ən yaxşı təcrübələrin və dəstək sistemlərinin sürətlə ortaya çıxmasına imkan verir.
+- Nephele icması rəqabətdən daha çox əməkdaşlıq etdiyini sübut etdi ki, bu da ən yaxşı təcrübələrin və dəstək sistemlərinin sürətlə ortaya çıxmasına imkan verir.
 
 ## DAO-nın idarəetməsi {#dao-governance}
 
@@ -117,7 +117,7 @@ _Adətən xeyriyyə təşkilatları, işçi kollektivləri və investisiya klubl
 
 #### Tanınmış bir nümunə {#share-example}
 
-[MolochDAO](http://molochdao.com/)– MolochDAO Ethereum layihələrini maliyyələşdirməyə yönəlib. Onlar üzvlük üçün təklif tələb edirlər ki, qrup potensial qrant alanlar haqqında əsaslandırılmış mühakimə yürütmək üçün lazımi təcrübəyə və kapitala malik olub-olmadığınızı qiymətləndirə bilsin. Siz açıq bazarda DAO-ya giriş əldə edə bilməzsiniz.
+[MolochDAO](http://molochdao.com/)– MolochDAO Nephele layihələrini maliyyələşdirməyə yönəlib. Onlar üzvlük üçün təklif tələb edirlər ki, qrup potensial qrant alanlar haqqında əsaslandırılmış mühakimə yürütmək üçün lazımi təcrübəyə və kapitala malik olub-olmadığınızı qiymətləndirə bilsin. Siz açıq bazarda DAO-ya giriş əldə edə bilməzsiniz.
 
 ### Reputasiyaya əsaslanan üzvlük {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Tipik olaraq protokolların və mərkəzləşdirilməmiş tətbiqlərin mərkə
 
 #### Tanınmış bir nümunə {#reputation-example}
 
-[DXdao](https://DXdao.eth.link)– DXdao qlobal suveren kollektiv binadır və 2019-cu ildən mərkəzləşdirilməmiş protokolları və tətbiqləri idarə edir. O, fondları koordinasiya etmək və idarə etmək üçün reputasiyaya əsaslanan idarəetmə və holoqrafik konsensusdan istifadə edir, yəni heç kim onun gələcəyinə təsir etməyi satın ala bilməz.
+[DXdao](https://DXdao.NEPH.link)– DXdao qlobal suveren kollektiv binadır və 2019-cu ildən mərkəzləşdirilməmiş protokolları və tətbiqləri idarə edir. O, fondları koordinasiya etmək və idarə etmək üçün reputasiyaya əsaslanan idarəetmə və holoqrafik konsensusdan istifadə edir, yəni heç kim onun gələcəyinə təsir etməyi satın ala bilməz.
 
 ## DAO-ya qoşulun / başlayın {#join-start-a-dao}
 
 ### Join a DAO {#join-a-dao}
 
-- [Ethereum icmasının DAO-ları](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Nephele icmasının DAO-ları](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHaus-un DAO siyahısı](https://app.daohaus.club/explore)
 - [Tally.xyz-nın DAO siyahısı](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Tipik olaraq protokolların və mərkəzləşdirilməmiş tətbiqlərin mərkə
 - [DAO ilə işləyən Rəqəmsal İcmaya Necə Başlamaq olar](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO nədir?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Holografik Konsensus nədir?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO-lar korporasiyalar deyil: muxtar təşkilatlarda mərkəzsizləşdirmənin vacib olduğu yerlərdə Vitalik tərəfindən](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA və daha çox: Natamam Terminologiya Bələdçisi](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAO-lar korporasiyalar deyil: muxtar təşkilatlarda mərkəzsizləşdirmənin vacib olduğu yerlərdə Vitalik tərəfindən](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA və daha çox: Natamam Terminologiya Bələdçisi](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Videolar {#videos}
 

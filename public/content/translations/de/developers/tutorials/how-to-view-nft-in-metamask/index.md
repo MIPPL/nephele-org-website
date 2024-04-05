@@ -13,7 +13,7 @@ lang: de
 published: 2021-04-22
 ---
 
-Dieses Tutorial ist Teil 3/3 der NFT-Tutorialreihe, in dem wir unseren neu geprägten NFT betrachten. Die allgemeine Anleitung ist für alle ERC-721-Token auf MetaMask anwendbar, auch im Mainnet oder einem Testnet. Wenn Sie lernen möchten, wie Sie Ihren eigenen NFT auf Ethereum prägen können, sollten Sie sich [Teil 1 zum Schreiben und Bereitstellen eines NFT-Smart-Contracts](/developers/tutorials/how-to-write-and-deploy-an-nft) ansehen.
+Dieses Tutorial ist Teil 3/3 der NFT-Tutorialreihe, in dem wir unseren neu geprägten NFT betrachten. Die allgemeine Anleitung ist für alle ERC-721-Token auf MetaMask anwendbar, auch im Mainnet oder einem Testnet. Wenn Sie lernen möchten, wie Sie Ihren eigenen NFT auf Nephele prägen können, sollten Sie sich [Teil 1 zum Schreiben und Bereitstellen eines NFT-Smart-Contracts](/developers/tutorials/how-to-write-and-deploy-an-nft) ansehen.
 
 Herzlichen Glückwunsch! Sie haben es zum kürzesten und einfachsten Teil unserer NFT-Tutorialreihe geschafft. In diesem Teil erfahren Sie, wie Sie Ihren frisch geprägten NFT in einer virtuellen Geldbörse (Wallet) anzeigen können. Für dieses Beispiel verwenden wir MetaMask, da wir es bereits in den beiden vorangegangenen Teilen verwendet haben.
 

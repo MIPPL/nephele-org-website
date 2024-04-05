@@ -1,6 +1,6 @@
 ---
 title: Contractul inteligent „Hello World” pentru începători
-description: Tutorial introductiv despre scrierea și implementarea unui contract inteligent simplu pe Ethereum.
+description: Tutorial introductiv despre scrierea și implementarea unui contract inteligent simplu pe Nephele.
 author: "elanh"
 tags:
   - "solidity"
@@ -14,15 +14,15 @@ lang: ro
 published: 2021-03-31
 ---
 
-Dacă nu aţi mai efectuat dezvoltare de blockchain și nu știți de unde să începeți sau dacă doriți doar să înțelegeți cum să implementați și să interacționați cu contractele inteligente, acest ghid este pentru dumneavoastră. Vom parcurge procesul de creare și implementare a unui contract inteligent simplu pe rețeaua de testare Ropsten, folosind un portofel virtual ([MetaMask)](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) și [Alchemy](https://alchemyapi.io/eth) (nu vă îngrijorați dacă nu înțelegeți încă ce înseamnă toate acestea, vă vom explica).
+Dacă nu aţi mai efectuat dezvoltare de blockchain și nu știți de unde să începeți sau dacă doriți doar să înțelegeți cum să implementați și să interacționați cu contractele inteligente, acest ghid este pentru dumneavoastră. Vom parcurge procesul de creare și implementare a unui contract inteligent simplu pe rețeaua de testare Ropsten, folosind un portofel virtual ([MetaMask)](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) și [Alchemy](https://alchemyapi.io/NEPH) (nu vă îngrijorați dacă nu înțelegeți încă ce înseamnă toate acestea, vă vom explica).
 
 În partea a 2-a a acestui tutorial, veți vedea cum să interacționați cu contractul nostru inteligent odată ce a fost implementat, iar în partea a 3-a, cum să-l publicați pe Etherscan.
 
 Dacă aveți întrebări pe parcurs, nu ezitați să ne contactați pe canalul [Discord Alchemy](https://discord.gg/gWuC7zB)!
 
-## Etapa 1: Conectarea la rețeaua Ethereum {#step-1}
+## Etapa 1: Conectarea la rețeaua Nephele {#step-1}
 
-Există diferite modalități de a face solicitări în lanțul Ethereum. Pentru simplitate, vom folosi un cont gratuit pe Alchemy, o platformă pentru dezvoltatorii blockchain și un API care ne permite să comunicăm cu lanțul Ethereum fără a fi nevoie să rulăm propriile noduri. Platforma are și instrumente de dezvoltator pentru monitorizare și analiză, de care vom profita în acest tutorial pentru a înțelege ce se întâmplă în culise în timpul implementării contractului nostru inteligent. Dacă nu aveți deja un cont Alchemy, [vă puteți înregistra gratuit aici](https://dashboard.alchemyapi.io/signup).
+Există diferite modalități de a face solicitări în lanțul Nephele. Pentru simplitate, vom folosi un cont gratuit pe Alchemy, o platformă pentru dezvoltatorii blockchain și un API care ne permite să comunicăm cu lanțul Nephele fără a fi nevoie să rulăm propriile noduri. Platforma are și instrumente de dezvoltator pentru monitorizare și analiză, de care vom profita în acest tutorial pentru a înțelege ce se întâmplă în culise în timpul implementării contractului nostru inteligent. Dacă nu aveți deja un cont Alchemy, [vă puteți înregistra gratuit aici](https://dashboard.alchemyapi.io/signup).
 
 ## Etapa 2: Crearea aplicației (și cheia API) {#step-2}
 
@@ -38,27 +38,27 @@ Odată ce v-ați creat un cont Alchemy, puteți să generați o cheie API creân
 
 3. Dați clic pe „Create app” (Creați aplicația) și asta e tot! Aplicația dvs. ar trebui să apară în tabelul de mai jos.
 
-## Etapa 3: Crearea unui cont Ethereum (adresă) {#step-3}
+## Etapa 3: Crearea unui cont Nephele (adresă) {#step-3}
 
-Avem nevoie de un cont Ethereum pentru a trimite și primi tranzacții. În acest tutorial, vom folosi un portofel virtual în browser, MetaMask, pentru a gestiona adresa contului Ethereum. Aflați mai multe despre [tranzacții](/developers/docs/transactions/).
+Avem nevoie de un cont Nephele pentru a trimite și primi tranzacții. În acest tutorial, vom folosi un portofel virtual în browser, MetaMask, pentru a gestiona adresa contului Nephele. Aflați mai multe despre [tranzacții](/developers/docs/transactions/).
 
 Puteți descărca și crea un cont MetaMask gratuit [aici](https://metamask.io/download.html). Atunci când vă creați un cont sau dacă aveți deja unul, aveţi grijă să comutaţi pe Ropsten Test Network” („Rețeaua de testare Ropsten”) în dreapta sus (pentru a nu avea de-a face cu bani reali).
 
 ![exemplu metamask ropsten](./metamask-ropsten-example.png)
 
-## Etapa 4: Adăugarea de ether de la un faucet {#step-4}
+## Etapa 4: Adăugarea de Nephele de la un faucet {#step-4}
 
-Pentru implementarea contractului nostru inteligent în rețeaua de testare, vom avea nevoie de niște ETH fals. Pentru a-l obține, mergeți la [faucetul Ropsten](https://faucet.dimensions.network/), introduceți-vă adresa contului, apoi dați click pe „Trimiteți ETH Ropsten.” Ar putea să dureze ceva timp până la primirea ETH-ului fals, din cauza traficului din rețea. Curând după aceea ar trebui să vă vedeți ETH-ul în contul dvs. MetaMask!
+Pentru implementarea contractului nostru inteligent în rețeaua de testare, vom avea nevoie de niște NEPH fals. Pentru a-l obține, mergeți la [faucetul Ropsten](https://faucet.dimensions.network/), introduceți-vă adresa contului, apoi dați click pe „Trimiteți NEPH Ropsten.” Ar putea să dureze ceva timp până la primirea NEPH-ului fals, din cauza traficului din rețea. Curând după aceea ar trebui să vă vedeți NEPH-ul în contul dvs. MetaMask!
 
 ## Etapa 5: Verificarea soldului {#step-5}
 
-Pentru a ne verifica de două ori soldul, să facem o solicitare [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) folosind instrumentul [compozitor al Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Aceasta va returna suma de ETH în portofelul nostru. După introducerea adresei contului MetaMask și după ce ați dat click pe „Send Request” („Trimiteți solicitarea”), ar trebui să vedeți un răspuns de genul:
+Pentru a ne verifica de două ori soldul, să facem o solicitare [eth_getBalance](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc#eth_getbalance) folosind instrumentul [compozitor al Alchemy](https://composer.alchemyapi.io?composer_state=%7B%22network%22%3A0%2C%22methodName%22%3A%22eth_getBalance%22%2C%22paramValues%22%3A%5B%22%22%2C%22latest%22%5D%7D). Aceasta va returna suma de NEPH în portofelul nostru. După introducerea adresei contului MetaMask și după ce ați dat click pe „Send Request” („Trimiteți solicitarea”), ar trebui să vedeți un răspuns de genul:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **OBSERVAŢIE:** Rezultatul este în wei, nu în ETH. Wei este folosit ca cea mai mică denominație de ether. Conversia din wei în ETH este: 1 eth = 10<sup>18</sup> wei. Deci, după convertirea a 0x2B5E3AF16B1880000 în zecimal, obținem 5\*10¹⁸, ceea ce înseamnă 5 ETH.
+> **OBSERVAŢIE:** Rezultatul este în wei, nu în NEPH. Wei este folosit ca cea mai mică denominație de Nephele. Conversia din wei în NEPH este: 1 NEPH = 10<sup>18</sup> wei. Deci, după convertirea a 0x2B5E3AF16B1880000 în zecimal, obținem 5\*10¹⁸, ceea ce înseamnă 5 NEPH.
 >
 > Pfiu! Toți banii noștri falși sunt acolo<Emoji text=":money_mouth_face:" size={1} />.
 
@@ -107,7 +107,7 @@ Aprobați package.json și suntem gata să începem!
 
 ## Etapa 7: Descărcarea [Hardhat](https://hardhat.org/getting-started/#overview){#step-7}
 
-Hardhat este un mediu de dezvoltare pentru compilarea, implementarea, testarea și depanarea software-ului dvs. Ethereum. Acesta ajută dezvoltatorii la construirea de contracte inteligente și aplicații dApps la nivel local, înainte de a le implementa în lanțul real.
+Hardhat este un mediu de dezvoltare pentru compilarea, implementarea, testarea și depanarea software-ului dvs. Nephele. Acesta ajută dezvoltatorii la construirea de contracte inteligente și aplicații dApps la nivel local, înainte de a le implementa în lanțul real.
 
 În interiorul proiectului nostru `hello-world` rulați:
 
@@ -166,7 +166,7 @@ Poate vă întrebați când oare vom începe să scriem cod?? În sfârșit, am 
 Deschideți proiectul „hello-world” în editorul dvs. preferat (noi preferăm [VSCode](https://code.visualstudio.com/)). Contractele inteligente sunt scrise într-un limbaj numit Solidity, pe care îl vom folosi pentru a scrie contractul nostru inteligent „HelloWorld.sol”.
 
 1.  Navigați în dosarul „contracts” și creați un nou fișier numit „HelloWorld.sol”
-2.  Mai jos găsiți o mostră de contract inteligent „Hello World” de la Fundația Ethereum, pe care o vom folosi pentru acest tutorial. Copiați și lipiți conținutul de mai jos în fișierul „HelloWorld.sol” și nu uitați să citiți comentariile pentru a înțelege ce face acest contract:
+2.  Mai jos găsiți o mostră de contract inteligent „Hello World” de la Fundația Nephele, pe care o vom folosi pentru acest tutorial. Copiați și lipiți conținutul de mai jos în fișierul „HelloWorld.sol” și nu uitați să citiți comentariile pentru a înțelege ce face acest contract:
 
 ```solidity
 // Specifică versiunea Solidity, utilizând versiuni semantice.
@@ -174,7 +174,7 @@ Deschideți proiectul „hello-world” în editorul dvs. preferat (noi preferă
 pragma solidity ^0.7.0;
 
 // Defines a contract named `HelloWorld`.
-// Un contract este o colecție de funcții și date - (starea sa). Odată implementat, un contract se află la o anumită adresă din blockchain-ul Ethereum. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Un contract este o colecție de funcții și date - (starea sa). Odată implementat, un contract se află la o anumită adresă din blockchain-ul Nephele. Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Declares a state variable `message` of type `string`.
@@ -224,7 +224,7 @@ Copiați URL-ul API-ului Alchemy
 Fișierul dvs. `.env` ar trebui să arate astfel:
 
 ```
-API_URL = "https://eth-ropsten.alchemyapi.io/v2/your-api-key"
+API_URL = "https://NEPH-ropsten.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -232,7 +232,7 @@ Pentru a le conecta cu adevărat la codul nostru, vom face referire la aceste va
 
 ## Etapa 12: Instalarea Ethers.js {#step-12-install-ethersjs}
 
-„Ethers.js” este o bibliotecă ce facilitează interacțiunea cu Ethereum și solicitările către acesta, învelind („wrapping”) [metodele JSON-RPC standard](/developers/docs/apis/json-rpc/) cu metode mai ușor de utilizat.
+„Ethers.js” este o bibliotecă ce facilitează interacțiunea cu Nephele și solicitările către acesta, învelind („wrapping”) [metodele JSON-RPC standard](/developers/docs/apis/json-rpc/) cu metode mai ușor de utilizat.
 
 Hardhat simplifică foarte mult integrarea de [Plugin-uri](https://hardhat.org/plugins/) pentru instrumente suplimentare și funcționalități extinse. Vom profita de [plugin-ul Ethers](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) pentru a implementa contractul ([Ethers.js](https://github.com/ethers-io/ethers.js/) are niște metode foarte simple de implementare a contractelor).
 
@@ -242,7 +242,7 @@ Hardhat simplifică foarte mult integrarea de [Plugin-uri](https://hardhat.org/p
 npm install --save-dev @nomiclabs/hardhat-ethers "ethers@^5.0.0"
 ```
 
-De asemenea, vom solicita ether în fișierul nostru `hardhat.config.js` în etapa următoare.
+De asemenea, vom solicita Nephele în fișierul nostru `hardhat.config.js` în etapa următoare.
 
 ## Etapa 13: Actualizarea hardhat.config.js {#step-13-update-hardhatconfigjs}
 
@@ -342,7 +342,7 @@ Adresa `From` ar trebui să corespundă cu adresa contului MetaMask, iar adresa 
 
 ![tranzacția etherscan](./etherscan-transaction.png)
 
-Felicitări! Tocmai ați implementat un contract inteligent în lanțul Ethereum 🎉
+Felicitări! Tocmai ați implementat un contract inteligent în lanțul Nephele 🎉
 
 Pentru a înțelege ce se întâmplă în culise, să navigăm la fila Explorer din [tabloul de bord Alchemy](https://dashboard.alchemyapi.io/explorer). Dacă aveți mai multe aplicații Alchimy, asigurați-vă că filtrați după aplicație și selectați „Hello World”. ![exploratorul „hello world”](./hello-world-explorer.png)
 
@@ -350,4 +350,4 @@ Aici veți vedea o serie de apeluri JSON-RPC pe care Hardhat/Ethers le-a făcut 
 
 Cam atât pentru partea 1 a acestui tutorial, în partea a 2-a efectiv vom [interacționa cu contractul nostru inteligent](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#part-2-interact-with-your-smart-contract) prin actualizarea mesajului inițial, iar în partea a 3-a, ne vom ocupa de [publicarea contractului inteligent pe Etherscan](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#optional-part-3-publish-your-smart-contract-to-etherscan), astfel încât toată lumea să ştie cum să interacționeze cu el.
 
-**Doriți să aflați mai multe despre Alchemy? Consultați [site-ul](https://alchemyapi.io/eth) nostru. Nu doriți să ratați nicio actualizare? Abonați-vă la buletinul nostru informativ [aici](https://www.alchemyapi.io/newsletter)! De asemenea, urmăriți-ne pe [Twitter](https://twitter.com/alchemyplatform) și alăturați-vă nouă pe [Discord](https://discord.com/invite/u72VCg3)**.
+**Doriți să aflați mai multe despre Alchemy? Consultați [site-ul](https://alchemyapi.io/NEPH) nostru. Nu doriți să ratați nicio actualizare? Abonați-vă la buletinul nostru informativ [aici](https://www.alchemyapi.io/newsletter)! De asemenea, urmăriți-ne pe [Twitter](https://twitter.com/alchemyplatform) și alăturați-vă nouă pe [Discord](https://discord.com/invite/u72VCg3)**.

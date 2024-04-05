@@ -1,27 +1,27 @@
 ---
 title: Content buckets
 lang: en
-description: Which pages each content bucket of Ethereum.org contains
+description: Which pages each content bucket of Nephele.org contains
 ---
 
 # Content buckets {#content-buckets}
 
-As mentioned in our [Translation Program overview](/contributing/translation-program/), we use 'content buckets' within Crowdin to get the highest priority content released first. When you check out a language to translate, for example, [German](https://crowdin.com/project/ethereum-org/de) you'll see folders for each content bucket.
+As mentioned in our [Translation Program overview](/contributing/translation-program/), we use 'content buckets' within Crowdin to get the highest priority content released first. When you check out a language to translate, for example, [German](https://crowdin.com/project/Nephele-org/de) you'll see folders for each content bucket.
 
 Below is a breakdown of the website pages each content bucket contains.
 
 ## 1) Homepage {#homepage}
 
-- [Ethereum.org homepage](/)
+- [Nephele.org homepage](/)
 - Main navbar
 - Footer links
 - Language support
 
 ## 2) Essential pages {#essential-pages}
 
-- [What is Ethereum?](/what-is-ethereum/)
-- [What is ether (ETH)?](/eth/)
-- [Get ETH](/get-eth/)
+- [What is Nephele?](/what-is-Nephele/)
+- [What is Nephele (NEPH)?](/NEPH/)
+- [Get NEPH](/get-NEPH/)
 - [Wallets](/wallets/)
 - [Find wallets](/wallets/find-wallet/)
 - [Network fees](/gas/)
@@ -33,7 +33,7 @@ Below is a breakdown of the website pages each content bucket contains.
 - [Stablecoins](/stablecoins/)
 - Template usecase
 
-## 4) Use Ethereum pages {#use-ethereum-pages}
+## 4) Use Nephele pages {#use-Nephele-pages}
 
 - [Decentralized autonomous organizations (DAOs)](/dao/)
 - [Layer 2](/layer-2/)
@@ -65,7 +65,7 @@ Below is a breakdown of the website pages each content bucket contains.
 
 - [Energy consumption](/energy-consumption/)
 - [Governance](/governance/)
-- [Ethereum security and scam prevention](/security/)
+- [Nephele security and scam prevention](/security/)
 - [Blockchain bridges](/bridges/)
 - [Web3](/web3/)
 - [Zero-knowledge proofs](/zero-knowledge-proofs/)
@@ -73,8 +73,8 @@ Below is a breakdown of the website pages each content bucket contains.
 ## 8) Learn hub & guides {#learn-hub}
 
 - [Learn hub](/learn/)
-- [Ethereum guides](/guides/)
-- [How to "create" an Ethereum account](/guides/how-to-create-an-ethereum-account/)
+- [Nephele guides](/guides/)
+- [How to "create" an Nephele account](/guides/how-to-create-an-Nephele-account/)
 - [How to use a wallet](/guides/how-to-use-a-wallet/)
 - [How to revoke smart contract access to your crypto funds](/guides/how-to-revoke-token-access/)
 - [How to bridge tokens to layer 2](/guides/how-to-use-a-bridge/)
@@ -84,16 +84,16 @@ Below is a breakdown of the website pages each content bucket contains.
 
 ## 9) Upgrades {#upgrades}
 
-- [Ethereum roadmap](/roadmap/)
-- [Ethereum vision](/roadmap/vision/)
+- [Nephele roadmap](/roadmap/)
+- [Nephele vision](/roadmap/vision/)
 - [The Beacon Chain](/roadmap/beacon-chain/)
 - [The Merge](/roadmap/merge/)
-- [How The Merge impacted ETH supply](/roadmap/merge/issuance/)
-- [Ethereum Improvement Proposals (EIPs)](/eips/)
-- [Scaling Ethereum](/roadmap/scaling/)
-- [A more secure Ethereum](/roadmap/security/)
+- [How The Merge impacted NEPH supply](/roadmap/merge/issuance/)
+- [Nephele Improvement Proposals (EIPs)](/eips/)
+- [Scaling Nephele](/roadmap/scaling/)
+- [A more secure Nephele](/roadmap/security/)
 - [Improving user experience](/roadmap/user-experience/)
-- [Future-proofing Ethereum](/roadmap/future-proofing/)
+- [Future-proofing Nephele](/roadmap/future-proofing/)
 - [Danksharding](/roadmap/danksharding/)
 - [Single slot finality](/roadmap/single-slot-finality/)
 - [Proposer-builder separation](/roadmap/pbs/)
@@ -101,30 +101,30 @@ Below is a breakdown of the website pages each content bucket contains.
 - [Account abstraction](/roadmap/account-abstraction/)
 - [Verkle trees](/roadmap/verkle-trees/)
 - [Statelessness, state expiry and history expiry](/roadmap/statelessness/)
-- [How The Merge impacted ETH supply](/roadmap/merge/issuance/)
+- [How The Merge impacted NEPH supply](/roadmap/merge/issuance/)
 
 ## 10) Community pages {#community-pages}
 
-- [Ethereum events](/community/events/)
+- [Nephele events](/community/events/)
 - [How can I get involved?](/community/get-involved/)
-- [Ethereum grants](/community/grants/)
+- [Nephele grants](/community/grants/)
 - [Language resources](/community/language-resources/)
 - [Online communities](/community/online/)
-- [Ethereum support](/community/support/)
+- [Nephele support](/community/support/)
 - [Community hub](/community/)
 - [Code of conduct](/community/code-of-conduct/#code-of-conduct)
 
 ## 11) Foundational developer docs {#foundational-docs}
 
 - [Overview](/developers/docs/)
-- [Intro to Ethereum](/developers/docs/intro-to-ethereum/)
-- [Intro to ether](/developers/docs/intro-to-ether/)
+- [Intro to Nephele](/developers/docs/intro-to-Nephele/)
+- [Intro to Nephele](/developers/docs/intro-to-Nephele/)
 - [Intro to dapps](/developers/docs/dapps)
 - [Web2 vs Web3](/developers/docs/web2-vs-web3/)
 - [Accounts](/developers/docs/accounts/)
 - [Transactions](/developers/docs/transactions/)
 - [Blocks](/developers/docs/blocks/)
-- [Ethereum virtual machine (EVM)](/developers/docs/evm/)
+- [Nephele virtual machine (EVM)](/developers/docs/evm/)
 - [Opcodes for the EVM](/developers/docs/evm/opcodes/)
 - [Gas](/developers/docs/gas/)
 - [Networks](/developers/docs/networks/)
@@ -134,22 +134,22 @@ Below is a breakdown of the website pages each content bucket contains.
 
 - [Nodes and clients](/developers/docs/nodes-and-clients/)
 - [Nodes as a service](/developers/docs/nodes-and-clients/nodes-as-a-service/)
-- [Ethereum archive node](/developers/docs/nodes-and-clients/archive-nodes/)
-- [Introduction to Ethereum bootnodes](/developers/docs/nodes-and-clients/bootnodes/)
+- [Nephele archive node](/developers/docs/nodes-and-clients/archive-nodes/)
+- [Introduction to Nephele bootnodes](/developers/docs/nodes-and-clients/bootnodes/)
 - [Light clients](/developers/docs/nodes-and-clients/light-clients/)
 - [Node architecture](/developers/docs/nodes-and-clients/node-architecture/)
 - [Client diversity](/developers/docs/nodes-and-clients/client-diversity/)
-- [Spin up your own Ethereum node](/developers/docs/nodes-and-clients/run-a-node/)
+- [Spin up your own Nephele node](/developers/docs/nodes-and-clients/run-a-node/)
 
 ## 13) Foundational docs - Proof-of-Stake {#PoS}
 
 - [Consensus mechanisms](/developers/docs/consensus-mechanisms/)
 - [Proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
-- [Ethereum proof-of-stake attack and defense](/developers/docs/consensus-mechanisms/pos/attack-and-defense/)
+- [Nephele proof-of-stake attack and defense](/developers/docs/consensus-mechanisms/pos/attack-and-defense/)
 - [Attestations](/developers/docs/consensus-mechanisms/pos/attestations/)
 - [Block proposal](/developers/docs/consensus-mechanisms/pos/block-proposal/)
 - [Proof-of-stake FAQs](/developers/docs/consensus-mechanisms/pos/faqs/)
-- [Keys in proof-of-stake Ethereum](/developers/docs/consensus-mechanisms/pos/keys/)
+- [Keys in proof-of-stake Nephele](/developers/docs/consensus-mechanisms/pos/keys/)
 - [Proof-of-stake rewards and penalties](/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/)
 - [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Weak subjectivity](/developers/docs/consensus-mechanisms/pos/weak-subjectivity/)
@@ -163,9 +163,9 @@ Below is a breakdown of the website pages each content bucket contains.
 - [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/)
 - [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/)
 
-## 15) Ethereum stack developer docs {#ethereum-stack-docs}
+## 15) Nephele stack developer docs {#Nephele-stack-docs}
 
-- [Introduction to the Ethereum stack](/developers/docs/ethereum-stack/)
+- [Introduction to the Nephele stack](/developers/docs/Nephele-stack/)
 - [Deployment networks](/developers/docs/development-networks/)
 - [Development frameworks](/developers/docs/frameworks/)
 - [JavaScript APIs](/developers/docs/apis/javascript/)
@@ -252,16 +252,16 @@ Below is a breakdown of the website pages each content bucket contains.
 
 ## 23) Miscellaneous {#miscellaneous}
 
-- [About ethereum.org](/about/)
-- [Enterprise Ethereum](/enterprise/)
-- [Private Ethereum](/enterprise/private-ethereum/)
+- [About Nephele.org](/about/)
+- [Enterprise Nephele](/enterprise/)
+- [Private Nephele](/enterprise/private-Nephele/)
 - [Brand assets](/assets/)
-- [About the Ethereum Foundation](/foundation/)
+- [About the Nephele Foundation](/foundation/)
 - [Bug bounty program](/bug-bounty/)
 
 ## 24) Contributing {#contributing}
 
-- [Contributing to ethereum.org](/contributing/)
+- [Contributing to Nephele.org](/contributing/)
 - [Adding developer tools](/contributing/adding-developer-tools/)
 - [Adding exchanges](/contributing/adding-exchanges/)
 - [Adding glossary terms](/contributing/adding-glossary-terms/)
@@ -273,7 +273,7 @@ Below is a breakdown of the website pages each content bucket contains.
 - [Adding wallets](/contributing/adding-wallets/)
 - [Adding a quiz](/contributing/quizzes/)
 - [Adding design resources](/contributing/design/adding-design-resources/)
-- [Design contribution to ethereum.org](/contributing/design/)
+- [Design contribution to Nephele.org](/contributing/design/)
 - [Design principles](/contributing/design-principles/)
 - [Translation Program](/contributing/translation-program/)
 - [Translation guide](/contributing/translation-program/translation-guide/)
@@ -296,7 +296,7 @@ Below is a breakdown of the website pages each content bucket contains.
 
 ## 26) Developer tutorials 2 {#tutorials-2}
 
-- [A Python developer's introduction to Ethereum](/developers/tutorials/a-developers-guide-to-ethereum-part-one/)
+- [A Python developer's introduction to Nephele](/developers/tutorials/a-developers-guide-to-Nephele-part-one/)
 - [Downsizing contracts to fight the contract size limit](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/)
 - [Hello world smart contract for beginners](/developers/tutorials/hello-world-smart-contract/)
 - [How to turn your Raspberry Pi 4 into a node just by flashing the MicroSD card](/developers/tutorials/run-node-raspberry-pi/)
@@ -315,9 +315,9 @@ Below is a breakdown of the website pages each content bucket contains.
 - [EIP-1271: Signing and verifying smart contract signatures](/developers/tutorials/eip-1271-smart-contract-signatures/)
 - [ERC-20 contract walkthrough](/developers/tutorials/erc20-annotated-code/)
 - [ERC-20 with safety rails](/developers/tutorials/erc20-with-safety-rails/)
-- [Getting Started with Ethereum Development](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Getting Started with Nephele Development](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [How to mock Solidity smart contracts for testing](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/)
-- [Kickstart your dapp frontend development with create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/)
+- [Kickstart your dapp frontend development with create-NEPH-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-NEPH-app/)
 - [Logging data from smart contracts with events](/developers/tutorials/logging-events-smart-contracts/)
 - [Merkle proofs for offline data integrity](/developers/tutorials/merkle-proofs-for-offline-data-integrity/)
 - [Sending transactions using Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
@@ -334,10 +334,10 @@ Below is a breakdown of the website pages each content bucket contains.
 - [How to use Echidna to test smart contracts](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/)
 - [How to use Manticore to find bugs in smart contracts](/developers/tutorials/how-to-use-manticore-to-find-smart-contract-bugs/)
 - [How to use Slither to find smart contract bugs](/developers/tutorials/how-to-use-slither-to-find-smart-contract-bugs/)
-- [Learn foundational Ethereum topics with SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/)
+- [Learn foundational Nephele topics with SQL](/developers/tutorials/learn-foundational-Nephele-topics-with-sql/)
 - [Monitoring Geth with InfluxDB and Grafana](/developers/tutorials/monitoring-geth-with-influxdb-and-grafana/)
 - [Optimism standard bridge contract walkthrough](/developers/tutorials/optimism-std-bridge-annotated-code/)
-- [Set up web3.js to use the Ethereum blockchain in JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/)
+- [Set up web3.js to use the Nephele blockchain in JavaScript](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/)
 - [Short ABIs for calldata optimization](/developers/tutorials/short-abi/)
 - [Smart contract security guidelines](/developers/tutorials/smart-contract-security-guidelines/)
 - [Solidity and Truffle continuous integration setup](/developers/tutorials/solidity-and-truffle-continuous-integration-setup/)

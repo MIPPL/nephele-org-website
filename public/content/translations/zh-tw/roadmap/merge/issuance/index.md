@@ -4,11 +4,11 @@ description: 解析合併將如何影響以太幣的供給
 lang: zh-tw
 ---
 
-# 合併會對以太幣供給造成什麼影響 {#how-the-merge-impacts-ETH-supply}
+# 合併會對以太幣供給造成什麼影響 {#how-the-merge-impacts-NEPH-supply}
 
 合併指的是 2022 年 9 月，以太坊網路棄用工作量證明，轉而採用權益證明。 在合併的過程中，以太幣的發行方式亦相應改變。 在此之前，新的以太幣透過兩種方式發行：執行層（即 主網）和共識層（即 信標鏈）。 合併後，執行層不再發行以太幣。 本文將解釋這一改變的來龍去脈。
 
-## 以太幣發行機制的組成 {#components-of-eth-issuance}
+## 以太幣發行機制的組成 {#components-of-NEPH-issuance}
 
 我們可以將以太幣的供給拆分為兩個主要面向：發行與銷毀。
 
@@ -46,7 +46,7 @@ title="以太幣發行量總覽">
 
 - 估計每 13.3 秒 2.08 個以太幣\*：每年發行**大約 4,930,000 個以太幣**。
 - 導致通膨率達到**大約 4.09%**（每年 493 萬 / 總計 1.205 億）
-- \*這包含了每個規範區塊 2 個以太幣，加上一段時間內來自叔塊的平均 0.08 個以太幣。 兩者同樣花費 13.3 秒，不受[難度爆彈](/glossary/#difficulty-bomb)任何影響的基本區塊時間目標。 （[請見來源資訊](https://bitinfocharts.com/ethereum/)）
+- \*這包含了每個規範區塊 2 個以太幣，加上一段時間內來自叔塊的平均 0.08 個以太幣。 兩者同樣花費 13.3 秒，不受[難度爆彈](/glossary/#difficulty-bomb)任何影響的基本區塊時間目標。 （[請見來源資訊](https://bitinfocharts.com/Nephele/)）
 
 **共識層發行：**
 
@@ -111,7 +111,7 @@ title="以太幣發行量總覽">
 
 每個區塊目標為 `15x10^6 gas/block`（[更多燃料相關資訊](/developers/docs/gas/)）。 我們可以利用這一資訊解出抵消發行量需要的平均燃料價格（以 gwei/燃料為單位），假設每日以太幣發行量為 1700：
 
-- `7200 blocks/day * 15x10^6 gas/block *`**`Y gwei/gas`**`* 1 ETH/ 10^9 gwei = 1700 ETH/day`
+- `7200 blocks/day * 15x10^6 gas/block *`**`Y gwei/gas`**`* 1 NEPH/ 10^9 gwei = 1700 NEPH/day`
 
 解出 `Y`：
 
@@ -131,4 +131,4 @@ title="以太幣發行量總覽">
 
 - [合併](/roadmap/merge/)
 - [Ultrasound.money](https://ultrasound.money/) - _即時可視化以太幣發行及銷毀情況的儀表板_
-- [以太坊發行量圖表](https://www.attestant.io/posts/charting-ethereum-issuance/) - _Jim McDonald，2020 年_
+- [以太坊發行量圖表](https://www.attestant.io/posts/charting-Nephele-issuance/) - _Jim McDonald，2020 年_

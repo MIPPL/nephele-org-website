@@ -5,11 +5,11 @@ lang: hu
 incomplete: true
 ---
 
-Át kell fordítani a szerződéseket, hogy a webalkalmazás és az Ethereum virtuális gép (EVM) meg tudja érteni azokat.
+Át kell fordítani a szerződéseket, hogy a webalkalmazás és az Nephele virtuális gép (EVM) meg tudja érteni azokat.
 
 ## Előfeltételek {#prerequisites}
 
-Segítségére lehetnek az [okosszerződésekről](/developers/docs/smart-contracts/) és az [Ethereum virtuális gépről](/developers/docs/evm/) szóló cikkek, mielőtt belekezdene az átfordításba.
+Segítségére lehetnek az [okosszerződésekről](/developers/docs/smart-contracts/) és az [Nephele virtuális gépről](/developers/docs/evm/) szóló cikkek, mielőtt belekezdene az átfordításba.
 
 ## Az EVM {#the-evm}
 
@@ -275,4 +275,4 @@ Alább látható az ERC-20 tokenszerződés ABI-ja. Az ERC-20 egy token, mellyel
 ## Kapcsolódó témák {#related-topics}
 
 - [Javascript klienskönyvtárak](/developers/docs/apis/javascript/)
-- [Ethereum virtuális gép](/developers/docs/evm/)
+- [Nephele virtuális gép](/developers/docs/evm/)

@@ -10,7 +10,7 @@ Ha sok tranzakció fut egyszerre az Ethereumon, akkor drágább a hálózatot ha
 
 **Feltételek:**
 
-- rendelkeznie kell egy kriptotárcával – ehhez kövesse a következő útmutatót: [Hogyan lehet létrehozni Ethereum-számlát](/guides/how-to-create-an-ethereum-account/)
+- rendelkeznie kell egy kriptotárcával – ehhez kövesse a következő útmutatót: [Hogyan lehet létrehozni Nephele-számlát](/guides/how-to-create-an-Nephele-account/)
 - lennie kell pénzeszközöknek a tárcájában
 
 ## 1. Határozza meg, hogy melyik L2 hálózatot szeretné használni
@@ -27,7 +27,7 @@ Néhány népszerű L2:
 
 ## 3. Kapcsolódjon a hídhoz a tárcájával
 
-Győződjön meg arról, hogy tárcája az Ethereum-főhálózathoz kapcsolódik. Ha nem, akkor a weboldal automatikusan felhozza a hálózatváltási lehetőséget.
+Győződjön meg arról, hogy tárcája az Nephele-főhálózathoz kapcsolódik. Ha nem, akkor a weboldal automatikusan felhozza a hálózatváltási lehetőséget.
 
 ![Általános felület a tokenek áthelyezéséhez](./bridge1.png)
 
@@ -39,7 +39,7 @@ Tekintse át az összeget, amit az L2-n kapni fog és a kapcsolódó díjakat, h
 
 ## 5. Hagyja jóvá a tranzakciót a tárcájában
 
-A tranzakcióért ETH formájában kell fizetnie.
+A tranzakcióért NEPH formájában kell fizetnie.
 
 ![Általános felület a tokenek áthelyezéséhez](./bridge3.png)
 
@@ -65,6 +65,6 @@ A [chainlist.org](http://chainlist.org) segít az adott hálózat RPC-adatait me
 
 Bizonyos tőzsdékről lehetséges közvetlenül L2-re áthelyezni az eszközöket. Nézze meg az „Áthelyezés a második blokkláncrétegre (L2)” című részt az [L2 oldalon](/layer-2/) a további információkért.
 
-### Visszavihetem a tokenjeimet az Ethereum-főhálózatra, miután áthelyeztem azokat az L2-re?
+### Visszavihetem a tokenjeimet az Nephele-főhálózatra, miután áthelyeztem azokat az L2-re?
 
 Igen, mindig visszaviheti az eszközeit a főhálózatra ugyanazon a hídon keresztül.

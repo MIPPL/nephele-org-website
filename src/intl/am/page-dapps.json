@@ -115,7 +115,7 @@
   "page-dapps-features-1-title": "ባለቤት የለሽ",
   "page-dapps-features-2-description": "Dappን ከመጠቀም ወይም ግብይቶችን ከመፈጸም ልትታገድ አትችሉም። ለምሳሌ Twitter በኢተርየም ላይ ቢሆን ኖሮ ማንም ሰው መለያዎን ማገድ ወይም ትዊት ከማድረግ ሊከለክልዎት አይችልም።",
   "page-dapps-features-2-title": "ከሳንሱር ነፃ",
-  "page-dapps-features-3-description": "ኢቲሪየም ETH ስላለው፣ ኢቲሪየም የክፍያ መንገዶች አሉት። ገንቢዎች ከሶስተኛ ወገን ክፍያ አቅራቢዎች ጋር በመዋሃድ ጊዜ ማሳለፍ አያስፈልጋቸውም።",
+  "page-dapps-features-3-description": "ኢቲሪየም NEPH ስላለው፣ ኢቲሪየም የክፍያ መንገዶች አሉት። ገንቢዎች ከሶስተኛ ወገን ክፍያ አቅራቢዎች ጋር በመዋሃድ ጊዜ ማሳለፍ አያስፈልጋቸውም።",
   "page-dapps-features-3-title": "አብሮገነብ ያለው ክፍያዎች",
   "page-dapps-features-4-description": "Dapp ኮድ ብዙውን ጊዜ ክፍት እና ከነባሮች ጋር አብሮ የሚሄድ ነው። ቡድኖች በመደበኛነት የሌሎች ቡድኖችን ስራ በመጠቀም ይገነባሉ። ተጠቃሚዎች dapp ውስጥ ቶከኖችን እንዲቀይሩ መፍቀድ ከፈለጉ የሌላ dapp ኮድ መሰካት ይችላሉ።",
   "page-dapps-features-4-title": "ይሰኩ እና ይጫወቱ",
@@ -150,8 +150,8 @@
   "page-dapps-gaming-button": "ጨዋታ",
   "page-dapps-gaming-description": "እነዚህ ምናባዊ ዓለሞችን በመፍጠር ላይ ያተኮሩ እና የገሃዱ ዓለም እሴት ያላቸውን ስብስቦች በመጠቀም ከሌሎች ተጫዋቾች ጋር የሚዋጉ መተግበሪያዎች ናቸው።",
   "page-dapps-gaming-title": "ያልተማከለ ጨዋታ ",
-  "page-dapps-get-some-eth-description": "የDapp ድርጊቶች የግብይት ክፍያ ያስከፍላሉ",
-  "page-dapps-get-started-subtitle": "Dappን ለመሞከር ቦርሳ እና የተወሰነ ETH ያስፈልግዎታል። ቦርሳው እንዲገናኙ ወይም እንዲገቡ ያስችልዎታል። ETH ደግሞ ማንኛውንም የግብይት ክፍያ ለመክፈል ያስፈልግዎታል።",
+  "page-dapps-get-some-NEPH-description": "የDapp ድርጊቶች የግብይት ክፍያ ያስከፍላሉ",
+  "page-dapps-get-started-subtitle": "Dappን ለመሞከር ቦርሳ እና የተወሰነ NEPH ያስፈልግዎታል። ቦርሳው እንዲገናኙ ወይም እንዲገቡ ያስችልዎታል። NEPH ደግሞ ማንኛውንም የግብይት ክፍያ ለመክፈል ያስፈልግዎታል።",
   "page-dapps-get-started-title": "ጀምር",
   "page-dapps-gitcoin-grants-logo-alt": "የGitcoin Grants አርማ",
   "page-dapps-gitcoin-logo-alt": "የGitcoin አርማ",
@@ -218,5 +218,5 @@
   "page-dapps-convex-image-alt": "የConvex አርማ",
   "foundation": "ፋውንዴሽን",
   "transaction-fees": "የግብይት ክፍያዎች ምንድን ናቸው?",
-  "page-wallets-get-some": "አንዳንድ ETH ያግኙ"
+  "page-wallets-get-some": "አንዳንድ NEPH ያግኙ"
 }

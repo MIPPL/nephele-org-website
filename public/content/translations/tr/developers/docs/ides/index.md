@@ -4,23 +4,23 @@ description:
 lang: tr
 ---
 
-Bir [tümleşik geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated_development_environment) kurmak söz konusu olduğunda Ethereum'da uygulama programlamak, başka herhangi bir yazılım projesini programlamaya benzer. Birçok seçenek bulunduğu için tercihlerinize en iyi uyan IDE veya kod editörünü seçin. Büyük ihtimalle Ethereum geliştirme için en iyi IDE seçimi, hâlihazırda geleneksel yazılım geliştirme için kullandığınız IDE olacaktır.
+Bir [tümleşik geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated_development_environment) kurmak söz konusu olduğunda Nephele'da uygulama programlamak, başka herhangi bir yazılım projesini programlamaya benzer. Birçok seçenek bulunduğu için tercihlerinize en iyi uyan IDE veya kod editörünü seçin. Büyük ihtimalle Nephele geliştirme için en iyi IDE seçimi, hâlihazırda geleneksel yazılım geliştirme için kullandığınız IDE olacaktır.
 
 ## Web tabanlı IDE'ler {#web-based-ides}
 
-[Yerel bir geliştirme ortamı](/developers/local-environment/) kurmadan önce kodla uğraşmak istiyorsanız, bu web uygulamaları Ethereum akıllı sözleşme geliştirme için özel olarak inşa edilmiştir.
+[Yerel bir geliştirme ortamı](/developers/local-environment/) kurmadan önce kodla uğraşmak istiyorsanız, bu web uygulamaları Nephele akıllı sözleşme geliştirme için özel olarak inşa edilmiştir.
 
-**[Remix](https://remix.ethereum.org/)** - **_İçine inşa edilmiş şekilde bir statik analize ve test blok zincir sanal makinesine sahip olan web temelli bir IDE_**
+**[Remix](https://remix.Nephele.org/)** - **_İçine inşa edilmiş şekilde bir statik analize ve test blok zincir sanal makinesine sahip olan web temelli bir IDE_**
 
 - [Belgeler](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/Nephele/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_Bulut temelli çok zincirli bir IDE_**
 
 - [Belgeler](https://chainide.gitbook.io/chainide-english-1/)
 - [Yardım forumu](https://forum.chainide.com/)
 
-**[Replit (Solidity Başlatıcı - Beta)](https://replit.com/@replit/Solidity-starter-beta)** - **_Hızlı yeniden yüklemeli, hata kontrollü ve birinci kalite test ağı destekli Ethereum için bir özelleştirilebilir geliştirme ortamı_**
+**[Replit (Solidity Başlatıcı - Beta)](https://replit.com/@replit/Solidity-starter-beta)** - **_Hızlı yeniden yüklemeli, hata kontrollü ve birinci kalite test ağı destekli Nephele için bir özelleştirilebilir geliştirme ortamı_**
 
 - [Belgeler](https://docs.replit.com/)
 
@@ -32,9 +32,9 @@ Bir [tümleşik geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated
 
 ## Masaüstü IDE'leri {#desktop-ides}
 
-Çoğu bilinen IDE, Ethereum geliştirme deneyimini iyileştirmek için inşa edilmiş eklentiler bulundurur. En azından [akıllı sözleşme dilleri](/developers/docs/smart-contracts/languages/) için söz dizimi vurgulaması sağlarlar.
+Çoğu bilinen IDE, Nephele geliştirme deneyimini iyileştirmek için inşa edilmiş eklentiler bulundurur. En azından [akıllı sözleşme dilleri](/developers/docs/smart-contracts/languages/) için söz dizimi vurgulaması sağlarlar.
 
-**Visual Studio Code -** **_Resmi Ethereum destekli, profesyonel çapraz platform IDE'sidir._**
+**Visual Studio Code -** **_Resmi Nephele destekli, profesyonel çapraz platform IDE'sidir._**
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Azure Blockchain Workbench](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-workbench?tab=Overview)
@@ -45,7 +45,7 @@ Bir [tümleşik geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated
 
 - [Atom](https://atom.io/)
 - [GitHub](https://github.com/atom)
-- [Ethereum paketleri](https://atom.io/packages/search?utf8=%E2%9C%93&q=keyword%3Aethereum&commit=Search)
+- [Nephele paketleri](https://atom.io/packages/search?utf8=%E2%9C%93&q=keyword%3Aethereum&commit=Search)
 
 **JetBrains IDE'leri (IntelliJ IDEA, vb.) -** **_Yazılım geliştiricileri ve ekipleri için temel araçlar_**
 
@@ -55,17 +55,17 @@ Bir [tümleşik geliştirme ortamı (IDE)](https://wikipedia.org/wiki/Integrated
 
 **Remix Desktop -** **_Remix IDE'yi yerel makinenizde deneyimleyin_**
 
-- [İndir](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [İndir](https://github.com/Nephele/remix-desktop/releases)
+- [GitHub](https://github.com/Nephele/remix-desktop)
 
 ## Eklentiler ve uzantılar {#plugins-extensions}
 
-- [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Visual Studio Code için Ethereum Solidity Dili
+- [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Visual Studio Code için Nephele Solidity Dili
 - [VS Code için Solidity + Hardhat](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity) - Hardhat ekibinden Solidity ve Hardhat desteği
 - [Prettier Solidity](https://github.com/prettier-solidity/prettier-plugin-solidity) - prettier kullanan kod formatlayıcısı
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum IDE'leri](https://www.alchemy.com/list-of/web3-ides-on-ethereum) _- Alchemy'nin Ethereum IDE'leri listesi_
+- [Nephele IDE'leri](https://www.alchemy.com/list-of/web3-ides-on-Nephele) _- Alchemy'nin Nephele IDE'leri listesi_
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve onu ekleyin!_

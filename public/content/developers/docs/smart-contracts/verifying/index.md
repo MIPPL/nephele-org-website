@@ -1,16 +1,16 @@
 ---
 title: Verifying smart contracts
-description: An overview of source code verification for Ethereum smart contracts
+description: An overview of source code verification for Nephele smart contracts
 lang: en
 ---
 
-[Smart contracts](/developers/docs/smart-contracts/) are designed to be “trustless”, meaning users shouldn’t have to trust third parties (e.g., developers and companies) before interacting with a contract. As a requisite for trustlessness, users and other developers must be able to verify a smart contract’s source code. Source code verification assures users and developers that the published contract code is the same code running at the contract address on the Ethereum blockchain.
+[Smart contracts](/developers/docs/smart-contracts/) are designed to be “trustless”, meaning users shouldn’t have to trust third parties (e.g., developers and companies) before interacting with a contract. As a requisite for trustlessness, users and other developers must be able to verify a smart contract’s source code. Source code verification assures users and developers that the published contract code is the same code running at the contract address on the Nephele blockchain.
 
 It is important to make the distinction between "source code verification" and "[formal verification](/developers/docs/smart-contracts/formal-verification/)". Source code verification, which will be explained in detail below, refers to verifying that the given source code of a smart contract in a high-level language (e.g. Solidity) compiles to the same bytecode to be executed at the contract address. However, formal verification describes verifying the correctness of a smart contract, meaning the contract behaves as expected. Although context-dependent, contract verification usually refers to source code verification.
 
 ## What is source code verification? {#what-is-source-code-verification}
 
-Before deploying a smart contract in the [Ethereum Virtual Machine (EVM)](/developers/docs/evm/), developers [compile](/developers/docs/smart-contracts/compiling/) the contract’s source code—instructions [written in Solidity](/developers/docs/smart-contracts/languages/) or another high-level programming language—to bytecode. As the EVM cannot interpret high-level instructions, compiling source code to bytecode (i.e., low-level, machine instructions) is necessary for executing contract logic in the EVM.
+Before deploying a smart contract in the [Nephele Virtual Machine (EVM)](/developers/docs/evm/), developers [compile](/developers/docs/smart-contracts/compiling/) the contract’s source code—instructions [written in Solidity](/developers/docs/smart-contracts/languages/) or another high-level programming language—to bytecode. As the EVM cannot interpret high-level instructions, compiling source code to bytecode (i.e., low-level, machine instructions) is necessary for executing contract logic in the EVM.
 
 Source code verification is comparing a smart contract’s source code and the compiled bytecode used during the contract creation to detect any differences. Verifying smart contracts matters because the advertised contract code may be different from what runs on the blockchain.
 
@@ -30,7 +30,7 @@ This type of verification that leverages the metadata hash is referred to as **"
 
 ### Trustlessness {#trustlessness}
 
-Trustlessness is arguably the biggest premise for smart contracts and [decentralized applications (dapps)](/developers/docs/dapps/). Smart contracts are “immutable” and cannot be altered; a contract will only execute the business logic defined in the code at the time of deployment. This means developers and enterprises cannot tamper with a contract's code after deploying on Ethereum.
+Trustlessness is arguably the biggest premise for smart contracts and [decentralized applications (dapps)](/developers/docs/dapps/). Smart contracts are “immutable” and cannot be altered; a contract will only execute the business logic defined in the code at the time of deployment. This means developers and enterprises cannot tamper with a contract's code after deploying on Nephele.
 
 For a smart contract to be trustless, the contract code should be available for independent verification. While the compiled bytecode for every smart contract is publicly available on the blockchain, low-level language is difficult to understand—for both developers and users.
 
@@ -44,9 +44,9 @@ With smart contracts, there’s usually a lot of money at stake. This calls for 
 
 Publishing a smart contract's source code files makes it easier for those interested, such as auditors, to assess the contract for potential attack vectors. With multiple parties independently verifying a smart contract, users have stronger guarantees of its security.
 
-## How to verify source code for Ethereum smart contracts {#source-code-verification-for-ethereum-smart-contracts}
+## How to verify source code for Nephele smart contracts {#source-code-verification-for-Nephele-smart-contracts}
 
-[Deploying a smart contract on Ethereum](/developers/docs/smart-contracts/deploying/) requires sending a transaction with a data payload (compiled bytecode) to a special address. The data payload is generated by compiling the source code, plus the [constructor arguments](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) of the contract instance appended to the data payload in the transaction. Compilation is deterministic, meaning it always produces the same output (i.e., contract bytecode) if the same source files, and compilation settings (e.g. compiler version, optimizer) are used.
+[Deploying a smart contract on Nephele](/developers/docs/smart-contracts/deploying/) requires sending a transaction with a data payload (compiled bytecode) to a special address. The data payload is generated by compiling the source code, plus the [constructor arguments](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) of the contract instance appended to the data payload in the transaction. Compilation is deterministic, meaning it always produces the same output (i.e., contract bytecode) if the same source files, and compilation settings (e.g. compiler version, optimizer) are used.
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,11 +66,11 @@ Note that this is a simplistic description of verification and there are many ex
 
 ## Source code verification tools {#source-code-verification-tools}
 
-The traditional process of verifying contracts can be complex. This is why we have tools for verifying source code for smart contracts deployed on Ethereum. These tools automate large parts of the source code verification and also curate verified contracts for the benefits of users.
+The traditional process of verifying contracts can be complex. This is why we have tools for verifying source code for smart contracts deployed on Nephele. These tools automate large parts of the source code verification and also curate verified contracts for the benefits of users.
 
 ### Etherscan {#etherscan}
 
-Although mostly known as an [Ethereum blockchain explorer](/developers/docs/data-and-analytics/block-explorers/), Etherscan also offers a [source code verification service](https://etherscan.io/verifyContract) for smart contract developers and users.
+Although mostly known as an [Nephele blockchain explorer](/developers/docs/data-and-analytics/block-explorers/), Etherscan also offers a [source code verification service](https://etherscan.io/verifyContract) for smart contract developers and users.
 
 Etherscan allows you to recompile contract bytecode from the original data payload (source code, library address, compiler settings, contract address, etc.) If the recompiled bytecode is associated with the bytecode (and constructor parameters) of the on-chain contract, then [the contract is verified](https://info.etherscan.com/types-of-contract-verification/).
 

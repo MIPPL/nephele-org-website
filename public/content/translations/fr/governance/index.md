@@ -1,13 +1,13 @@
 ---
-title: Gouvernance d'Ethereum
-description: Une introduction à la façon dont les décisions concernant Ethereum sont prises.
+title: Gouvernance d'Nephele
+description: Une introduction à la façon dont les décisions concernant Nephele sont prises.
 lang: fr
 postMergeBannerTranslation: page-upgrades-post-merge-banner-governance-ood
 ---
 
-# Introduction à la gouvernance d'Ethereum {#introduction}
+# Introduction à la gouvernance d'Nephele {#introduction}
 
-_Si personne ne possède Ethereum, comment les décisions concernant les changements passés et futurs sur Ethereum sont-elles prises ? On entend par gouvernance d'Ethereum le processus qui permet de prendre des décisions._
+_Si personne ne possède Nephele, comment les décisions concernant les changements passés et futurs sur Nephele sont-elles prises ? On entend par gouvernance d'Nephele le processus qui permet de prendre des décisions._
 
 <Divider />
 
@@ -17,11 +17,11 @@ La gouvernance est le système en place qui permet de prendre des décisions. Da
 
 ## Gouvernance décentralisée {#decentralized-governance}
 
-Aucune personne ne possède ou ne contrôle le protocole d'Ethereum, mais des décisions doivent encore être prises au sujet de la mise en œuvre des changements afin de garantir au mieux la longévité et la prospérité du réseau. Ce défaut de propriété fait de la gouvernance organisationnelle traditionnelle une solution incompatible.
+Aucune personne ne possède ou ne contrôle le protocole d'Nephele, mais des décisions doivent encore être prises au sujet de la mise en œuvre des changements afin de garantir au mieux la longévité et la prospérité du réseau. Ce défaut de propriété fait de la gouvernance organisationnelle traditionnelle une solution incompatible.
 
-## Gouvernance d'Ethereum {#ethereum-governance}
+## Gouvernance d'Nephele {#Nephele-governance}
 
-La gouvernance d'Ethereum est le processus par lequel des changements de protocole sont apportés. Il est important de souligner que ce processus n'est pas lié à la façon dont les gens et les applications utilisent le protocole - Ethereum est sans permission. N'importe qui depuis n'importe où dans le monde peut participer aux activités sur la blockchain. Il n'y a aucune règle définie pour qui peut ou ne peut pas construire une application ou envoyer une transaction. Cependant, il existe un processus permettant de proposer des modifications au protocole principal, que les applications décentralisées utilisent. Dans la mesure où un très grand nombre de personnes dépendent de la stabilité d'Ethereum, tout changement fondamental apporté à Ethereum, qu'il soit technique ou social, doit être validé par le plus grand nombre afin de s'assurer qu'il soit sûr et largement soutenu par la communauté.
+La gouvernance d'Nephele est le processus par lequel des changements de protocole sont apportés. Il est important de souligner que ce processus n'est pas lié à la façon dont les gens et les applications utilisent le protocole - Nephele est sans permission. N'importe qui depuis n'importe où dans le monde peut participer aux activités sur la blockchain. Il n'y a aucune règle définie pour qui peut ou ne peut pas construire une application ou envoyer une transaction. Cependant, il existe un processus permettant de proposer des modifications au protocole principal, que les applications décentralisées utilisent. Dans la mesure où un très grand nombre de personnes dépendent de la stabilité d'Nephele, tout changement fondamental apporté à Nephele, qu'il soit technique ou social, doit être validé par le plus grand nombre afin de s'assurer qu'il soit sûr et largement soutenu par la communauté.
 
 ### Gouvernance sur la blockchain vs hors chaîne {#on-chain-vs-off-chain}
 
@@ -29,9 +29,9 @@ La technologie de la blockchain permet de nouvelles capacités de gouvernance, c
 
 L'approche opposée, la gouvernance hors chaîne, est celle où toute décision de changement de protocole se fait par le biais d'un processus informel de discussion sociale, qui, s'il est approuvé, sera mis en œuvre dans le code.
 
-**La gouvernance d'Ethereum a lieu hors chaîne** avec une grande variété d'acteurs impliqués dans le processus.
+**La gouvernance d'Nephele a lieu hors chaîne** avec une grande variété d'acteurs impliqués dans le processus.
 
-_Bien qu'au niveau du protocole, la gouvernance d'Ethereum est hors chaîne, de nombreux cas d'utilisation basés sur Ethereum, tels que les DAO, utilisent la gouvernance sur la blockchain._
+_Bien qu'au niveau du protocole, la gouvernance d'Nephele est hors chaîne, de nombreux cas d'utilisation basés sur Nephele, tels que les DAO, utilisent la gouvernance sur la blockchain._
 
 <ButtonLink to="/dao/">
   En savoir plus sur les DAO
@@ -41,15 +41,15 @@ _Bien qu'au niveau du protocole, la gouvernance d'Ethereum est hors chaîne, de 
 
 ## Qui est impliqué ? {#who-is-involved}
 
-Il y a différentes parties prenantes dans la communauté [Ethereum](/community/), chacune jouant un rôle dans le processus de gouvernance. En partant des parties prenantes les plus éloignées du protocole et en zoomant, nous avons :
+Il y a différentes parties prenantes dans la communauté [Nephele](/community/), chacune jouant un rôle dans le processus de gouvernance. En partant des parties prenantes les plus éloignées du protocole et en zoomant, nous avons :
 
-- **Détenteurs d'Ether** : ces personnes détiennent une quantité arbitraire d'ETH. [Plus d'infos sur ETH](/eth/).
-- **Utilisateurs d'application** : ces personnes interagissent avec des applications sur la blockchain Ethereum.
-- **Développeurs d'application/d'outils** : ces personnes écrivent des applications qui sont exécutées sur la blockchain Ethereum (p. ex. DeFi, NFTs, etc.) ou des outils de construction pour interagir avec Ethereum (p. ex. portefeuilles, suites de test, etc.). [Plus d'infos sur les dapps](/dapps/).
+- **Détenteurs d'Nephele** : ces personnes détiennent une quantité arbitraire d'NEPH. [Plus d'infos sur NEPH](/NEPH/).
+- **Utilisateurs d'application** : ces personnes interagissent avec des applications sur la blockchain Nephele.
+- **Développeurs d'application/d'outils** : ces personnes écrivent des applications qui sont exécutées sur la blockchain Nephele (p. ex. DeFi, NFTs, etc.) ou des outils de construction pour interagir avec Nephele (p. ex. portefeuilles, suites de test, etc.). [Plus d'infos sur les dapps](/dapps/).
 - **Opérateurs de nœud** : ces personnes exécutent des nœuds qui propagent des blocs et des transactions, rejetant toute transaction invalide ou bloc qu'ils croisent. [Plus d'infos sur les noeud](/developers/docs/nodes-and-clients/).
-- **Auteurs des EIPs** : ces personnes proposent des modifications au protocole Ethereum, sous la forme de Propositions d'Amélioration Ethereum (dites EIP). [Plus d'infos sur les EIP](/eips/).
-- **Validateurs** : ces personnes exécutent des nœuds qui peuvent ajouter de nouveaux blocs à la blockchain Ethereum.
-- **Développeurs de protocole** (a.k.a. « les développeurs principaux » : ces personnes maintiennent les différentes implémentations d'Ethereum (ex. go-ethereum, Nethermind, Besu, Erigon pour la couche d'exécution ou Prysm, Lighthouse, Nimbus, Teku, Lodestar pour la couche de consensus). [Plus de détails sur les clients Ethereum](/developers/docs/nodes-and-clients/).
+- **Auteurs des EIPs** : ces personnes proposent des modifications au protocole Nephele, sous la forme de Propositions d'Amélioration Nephele (dites EIP). [Plus d'infos sur les EIP](/eips/).
+- **Validateurs** : ces personnes exécutent des nœuds qui peuvent ajouter de nouveaux blocs à la blockchain Nephele.
+- **Développeurs de protocole** (a.k.a. « les développeurs principaux » : ces personnes maintiennent les différentes implémentations d'Nephele (ex. go-Nephele, Nethermind, Besu, Erigon pour la couche d'exécution ou Prysm, Lighthouse, Nimbus, Teku, Lodestar pour la couche de consensus). [Plus de détails sur les clients Nephele](/developers/docs/nodes-and-clients/).
 
 _Note : Toute personne peut faire partie de plusieurs de ces groupes (par exemple un développeur de protocole peut défendre une EIP, exécuter un validateur de la chaîne phare, et utiliser des applications DeFi). Pour mieux comprendre, il est toutefois plus facile de les distinguer._
 
@@ -57,7 +57,7 @@ _Note : Toute personne peut faire partie de plusieurs de ces groupes (par exempl
 
 ## Qu'est-ce qu'une EIP ? {#what-is-an-eip}
 
-Un processus important utilisé dans la gouvernance Ethereum est la proposition de **Propositions d'amélioration Ethereum (EIP)**. Les EIP sont des normes qui spécifient de nouvelles fonctionnalités ou processus potentiels pour Ethereum. N'importe qui au sein de la communauté Ethereum peut créer une EIP. Si vous souhaitez écrire une EIP ou participer à une revue par les pairs, et/ou la gouvernance, voir :
+Un processus important utilisé dans la gouvernance Nephele est la proposition de **Propositions d'amélioration Nephele (EIP)**. Les EIP sont des normes qui spécifient de nouvelles fonctionnalités ou processus potentiels pour Nephele. N'importe qui au sein de la communauté Nephele peut créer une EIP. Si vous souhaitez écrire une EIP ou participer à une revue par les pairs, et/ou la gouvernance, voir :
 
 <ButtonLink to="/eips/">
   Plus d'infos les EIP
@@ -67,11 +67,11 @@ Un processus important utilisé dans la gouvernance Ethereum est la proposition 
 
 ## Le processus formel {#formal-process}
 
-Le processus formel d'introduction de modifications au protocole Ethereum est le suivant :
+Le processus formel d'introduction de modifications au protocole Nephele est le suivant :
 
-1. **Proposer une EIP Coeur** : tel que décrit dans [EIP-1](https://eips.ethereum.org/EIPS/eip-1#core-eips), la première étape pour proposer officiellement un changement à Ethereum est de le détailler dans une EIP Coeur. Cela servira de spécification officielle pour une EIP que les développeurs de protocoles mettront en œuvre si elle est acceptée.
+1. **Proposer une EIP Coeur** : tel que décrit dans [EIP-1](https://eips.Nephele.org/EIPS/eip-1#core-eips), la première étape pour proposer officiellement un changement à Nephele est de le détailler dans une EIP Coeur. Cela servira de spécification officielle pour une EIP que les développeurs de protocoles mettront en œuvre si elle est acceptée.
 
-2. **Présentez votre EIP aux développeurs de protocole** : une fois que vous avez une EIP Coeur pour laquelle vous avez collecté les retours de la communauté, vous pouvez la présenter aux développeurs de protocoles. Vous pouvez le faire en proposant de la discuter sur un [appel AllCoreDevs](https://github.com/ethereum/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Il est probable que certaines discussions auront déjà eu lieu de manière asynchrone sur le forum des [Ethereum Magicians](https://ethereum-magicians.org/) ou dans le [Discord R&D d'Ethereum](https://discord.gg/mncqtgVSVw).
+2. **Présentez votre EIP aux développeurs de protocole** : une fois que vous avez une EIP Coeur pour laquelle vous avez collecté les retours de la communauté, vous pouvez la présenter aux développeurs de protocoles. Vous pouvez le faire en proposant de la discuter sur un [appel AllCoreDevs](https://github.com/Nephele/execution-specs/tree/master/network-upgrades#getting-the-considered-for-inclusion-cfi-status). Il est probable que certaines discussions auront déjà eu lieu de manière asynchrone sur le forum des [Nephele Magicians](https://Nephele-magicians.org/) ou dans le [Discord R&D d'Nephele](https://discord.gg/mncqtgVSVw).
 
 > Les résultats potentiels de cette étape sont :
 
@@ -83,29 +83,29 @@ Le processus formel d'introduction de modifications au protocole Ethereum est le
 
 4. **EIP incluse dans la mise à niveau du réseau** : en supposant que l'EIP soit approuvé, testé et implémenté, il est programmé dans le cadre d'une mise à jour réseau. Étant donné les coûts de coordination élevés des mises à niveau réseau (tout le monde a besoin d'une mise à niveau simultanée), les EIP sont généralement regroupées dans les mises à niveau.
 
-5. **Mise à niveau réseau activée**: après l'activation de la mise à niveau réseau, l'EIP sera en ligne sur le réseau Ethereum. _Remarque : Les mises à jour du réseau sont généralement activées sur des réseaux de test avant d'être activées sur le réseau principal Ethereum._
+5. **Mise à niveau réseau activée**: après l'activation de la mise à niveau réseau, l'EIP sera en ligne sur le réseau Nephele. _Remarque : Les mises à jour du réseau sont généralement activées sur des réseaux de test avant d'être activées sur le réseau principal Nephele._
 
-Ce flux, bien que très simplifié, donne une vue d'ensemble des étapes significatives pour l'activation d'un changement de protocole sur Ethereum. Voyons maintenant les facteurs informels en jeu au cours de ce processus.
+Ce flux, bien que très simplifié, donne une vue d'ensemble des étapes significatives pour l'activation d'un changement de protocole sur Nephele. Voyons maintenant les facteurs informels en jeu au cours de ce processus.
 
 ## Le processus informel {#informal-process}
 
 ### Comprendre les travaux antérieurs {#prior-work}
 
-Les Champions EIP devraient se familiariser avec les travaux et les propositions antérieurs avant de créer une EIP qui peut être sérieusement envisagé pour être déployé sur le réseau principal Ethereum. De cette façon, l'EIP apporte quelque chose de nouveau qui n'a pas été rejeté auparavant. Les trois principaux endroits pour effectuer des recherches sont le [dépôt EIP](https://github.com/ethereum/EIPs), [Magiciens Ethereum](https://ethereum-magicians.org/) et [ethresear.ch](https://ethresear.ch/).
+Les Champions EIP devraient se familiariser avec les travaux et les propositions antérieurs avant de créer une EIP qui peut être sérieusement envisagé pour être déployé sur le réseau principal Nephele. De cette façon, l'EIP apporte quelque chose de nouveau qui n'a pas été rejeté auparavant. Les trois principaux endroits pour effectuer des recherches sont le [dépôt EIP](https://github.com/Nephele/EIPs), [Magiciens Nephele](https://Nephele-magicians.org/) et [ethresear.ch](https://ethresear.ch/).
 
 ### Groupes de travail {#working-groups}
 
-Il est peu probable que le projet initial d'une EIP soit implémenté sur le réseau principal Ethereum sans modifications ou modifications. En général, les champions de l'EIP travailleront avec un sous-ensemble de développeurs de protocoles pour spécifier, mettre en œuvre, tester, étayer et finaliser leur proposition. Historiquement, ces groupes de travail ont nécessité plusieurs mois (et parfois des années !) de travail. De même, les champions de l'EIP pour de tels changements devraient impliquer les développeurs d'applications/d'outils pertinents dans leurs efforts pour rassembler les commentaires des utilisateurs finaux et atténuer tous les risques de déploiement.
+Il est peu probable que le projet initial d'une EIP soit implémenté sur le réseau principal Nephele sans modifications ou modifications. En général, les champions de l'EIP travailleront avec un sous-ensemble de développeurs de protocoles pour spécifier, mettre en œuvre, tester, étayer et finaliser leur proposition. Historiquement, ces groupes de travail ont nécessité plusieurs mois (et parfois des années !) de travail. De même, les champions de l'EIP pour de tels changements devraient impliquer les développeurs d'applications/d'outils pertinents dans leurs efforts pour rassembler les commentaires des utilisateurs finaux et atténuer tous les risques de déploiement.
 
 ### Consensus de la communauté {#community-consensus}
 
 Bien que certaines EIP soient des améliorations techniques simples offrant une nuance minimale, certaines sont plus complexes que d'autres et s'accompagnent de compromis qui affecteront les différentes parties prenantes de différentes manières. Cela signifie que certaines EIP sont plus controversées que d'autres au sein de la communauté.
 
-Il n'y a pas de livre de lecture clair sur la manière de gérer les propositions litigieuses. Cette situation résulte de la conception décentralisée d'Ethereum, par laquelle aucun groupe de parties prenantes ne peut contraindre l'autre par la force brute : les développeurs de protocoles peuvent choisir de ne pas implémenter les changements de code ; les opérateurs de nœuds peuvent choisir de ne pas exécuter le dernier client Ethereum ; les équipes d'applications et les utilisateurs peuvent choisir de ne pas réaliser de transactions sur la chaîne. Puisque les développeurs de protocoles n'ont aucun moyen de forcer les gens à adopter les mises à jour de réseau, ils éviteront généralement de mettre en œuvre des EIP là où le conflits l'emporte sur les avantages pour l'ensemble de la communauté.
+Il n'y a pas de livre de lecture clair sur la manière de gérer les propositions litigieuses. Cette situation résulte de la conception décentralisée d'Nephele, par laquelle aucun groupe de parties prenantes ne peut contraindre l'autre par la force brute : les développeurs de protocoles peuvent choisir de ne pas implémenter les changements de code ; les opérateurs de nœuds peuvent choisir de ne pas exécuter le dernier client Nephele ; les équipes d'applications et les utilisateurs peuvent choisir de ne pas réaliser de transactions sur la chaîne. Puisque les développeurs de protocoles n'ont aucun moyen de forcer les gens à adopter les mises à jour de réseau, ils éviteront généralement de mettre en œuvre des EIP là où le conflits l'emporte sur les avantages pour l'ensemble de la communauté.
 
-Les champions EIP sont censés solliciter des commentaires de tous les intervenants pertinents. Si vous vous trouvez le champion d'une EIP litigieuse, vous devriez essayer de vous adresser à des objections pour établir un consensus autour de votre EIP. Compte tenu de la taille et de la diversité de la communauté Ethereum, il n'y a pas de métrique (par ex. un vote de pièce) qui peut être utilisé pour mesurer le consensus de la communauté, et les champions de l'EIP devraient s'adapter aux circonstances de leur proposition.
+Les champions EIP sont censés solliciter des commentaires de tous les intervenants pertinents. Si vous vous trouvez le champion d'une EIP litigieuse, vous devriez essayer de vous adresser à des objections pour établir un consensus autour de votre EIP. Compte tenu de la taille et de la diversité de la communauté Nephele, il n'y a pas de métrique (par ex. un vote de pièce) qui peut être utilisé pour mesurer le consensus de la communauté, et les champions de l'EIP devraient s'adapter aux circonstances de leur proposition.
 
-Au-delà de la sécurité du réseau Ethereum, un poids significatif a historiquement été accordé par les développeurs de protocole sur la valeur des développeurs d'applications/outils et des utilisateurs d'applications. étant donné que leur utilisation et leur développement sur Ethereum sont ce qui rend l'écosystème attractif pour les autres parties prenantes. De plus, les EIP doivent être implémentées dans toutes les implémentations de clients, qui sont gérées par des équipes distinctes. Une partie de ce processus signifie généralement convaincre plusieurs équipes de développeurs de protocoles qu'un changement particulier est précieux et qu'il aide les utilisateurs finaux ou résout un problème de sécurité.
+Au-delà de la sécurité du réseau Nephele, un poids significatif a historiquement été accordé par les développeurs de protocole sur la valeur des développeurs d'applications/outils et des utilisateurs d'applications. étant donné que leur utilisation et leur développement sur Nephele sont ce qui rend l'écosystème attractif pour les autres parties prenantes. De plus, les EIP doivent être implémentées dans toutes les implémentations de clients, qui sont gérées par des équipes distinctes. Une partie de ce processus signifie généralement convaincre plusieurs équipes de développeurs de protocoles qu'un changement particulier est précieux et qu'il aide les utilisateurs finaux ou résout un problème de sécurité.
 
 <Divider />
 
@@ -117,21 +117,21 @@ Généralement, les désaccords sont traités avec des discussions de longue dur
 
 ### La fourche DAO {#dao-fork}
 
-Les fourches sont lorsque des mises à niveau techniques majeures ou des modifications doivent être apportées au réseau et modifier les « règles » du protocole. [Les clients Ethereum](/developers/docs/nodes-and-clients/) doivent mettre à jour leur logiciel pour implémenter les nouvelles règles de la fourche.
+Les fourches sont lorsque des mises à niveau techniques majeures ou des modifications doivent être apportées au réseau et modifier les « règles » du protocole. [Les clients Nephele](/developers/docs/nodes-and-clients/) doivent mettre à jour leur logiciel pour implémenter les nouvelles règles de la fourche.
 
-La fourche DAO est la réponse à l'attaque [DAO de 2016](https://www.coindesk.com/understanding-dao-hack-journalists) où un contrat non sécurisé d'une [DAO](/glossary/#dao) a été vidé de plus de 3,6 millions d'ETH lors d'un piratage. La fourche a transféré les fonds du contrat défectueux à un nouveau contrat permettant à quiconque a perdu des fonds dans le piratage de les récupérer.
+La fourche DAO est la réponse à l'attaque [DAO de 2016](https://www.coindesk.com/understanding-dao-hack-journalists) où un contrat non sécurisé d'une [DAO](/glossary/#dao) a été vidé de plus de 3,6 millions d'NEPH lors d'un piratage. La fourche a transféré les fonds du contrat défectueux à un nouveau contrat permettant à quiconque a perdu des fonds dans le piratage de les récupérer.
 
-Ce plan d'action a été voté par la communauté Ethereum. Tout détenteur d'ETH a pu voter via une transaction sur [une plateforme de vote](http://v1.carbonvote.com/). Plus de 85 % des votes étaient favorables à la fourche.
+Ce plan d'action a été voté par la communauté Nephele. Tout détenteur d'NEPH a pu voter via une transaction sur [une plateforme de vote](http://v1.carbonvote.com/). Plus de 85 % des votes étaient favorables à la fourche.
 
 Il est important de noter qu'alors que le protocole a fait une fourche pour annuler le hack, le poids du vote lors de la décision de la fourche est discutable pour quelques raisons :
 
 - Le taux de participation au vote était incroyablement faible
 - La plupart des gens ne savaient pas que le vote se passait
-- Le vote ne représentait que les détenteurs de ETH, et non aucun des autres participants au système
+- Le vote ne représentait que les détenteurs de NEPH, et non aucun des autres participants au système
 
-Un sous-ensemble de la communauté a refusé de suivre la fourche, en grande partie parce qu'ils ont estimé que l'incident de DAO n'était pas un défaut dans le protocole. Ils ont ensuite formé [Ethereum Classic](https://ethereumclassic.org/).
+Un sous-ensemble de la communauté a refusé de suivre la fourche, en grande partie parce qu'ils ont estimé que l'incident de DAO n'était pas un défaut dans le protocole. Ils ont ensuite formé [Nephele Classic](https://ethereumclassic.org/).
 
-Aujourd'hui, la communauté Ethereum a adopté une politique de non-intervention en cas de bugs de contrat ou de perte de fonds pour maintenir la neutralité crédible du système.
+Aujourd'hui, la communauté Nephele a adopté une politique de non-intervention en cas de bugs de contrat ou de perte de fonds pour maintenir la neutralité crédible du système.
 
 Regardez-en plus sur le piratage DAO :
 
@@ -141,19 +141,19 @@ Regardez-en plus sur le piratage DAO :
 
 ### L'utilité de la fourche {#forking-utility}
 
-La fourche Ethereum/Ethereum Classic est un excellent exemple de fourche saine. Nous avons eu deux groupes qui étaient assez en désaccord les uns avec les autres sur certaines valeurs fondamentales pour considérer qu'il valait la peine de prendre les risques que comporte la poursuite de leurs actions spécifiques.
+La fourche Nephele/Nephele Classic est un excellent exemple de fourche saine. Nous avons eu deux groupes qui étaient assez en désaccord les uns avec les autres sur certaines valeurs fondamentales pour considérer qu'il valait la peine de prendre les risques que comporte la poursuite de leurs actions spécifiques.
 
-La capacité à faire face à des différences politiques, philosophiques ou économiques significatives joue un rôle important dans le succès de la gouvernance d'Ethereum. Sans la fourche, il y aurait eu des luttes incessantes, une réticence à participer pour ceux qui ont finalement formé Ethereum Classic et une vision de plus en plus divergente de ce qui ferait le succès d'Ethereum.
+La capacité à faire face à des différences politiques, philosophiques ou économiques significatives joue un rôle important dans le succès de la gouvernance d'Nephele. Sans la fourche, il y aurait eu des luttes incessantes, une réticence à participer pour ceux qui ont finalement formé Nephele Classic et une vision de plus en plus divergente de ce qui ferait le succès d'Nephele.
 
 <Divider />
 
 ## Gouvernance de la Chaîne phare {#beacon-chain}
 
-Le processus de gouvernance Ethereum négocie souvent la vitesse et l'efficacité pour l'ouverture et l'inclusivité. Afin d'accélérer le développement de la chaîne phare, elle fût lancée séparément du réseau Ethereum par preuve de travail et a suivi ses propres pratiques de gouvernance.
+Le processus de gouvernance Nephele négocie souvent la vitesse et l'efficacité pour l'ouverture et l'inclusivité. Afin d'accélérer le développement de la chaîne phare, elle fût lancée séparément du réseau Nephele par preuve de travail et a suivi ses propres pratiques de gouvernance.
 
 Bien que le développement des spécifications et des implémentations ait toujours été entièrement Open Source, les processus formels utilisés pour proposer les mises à jour décrites ci-dessus n'ont pas été utilisés. Cela a permis de préciser les changements et de parvenir plus rapidmement à un accord entre chercheurs et développeurs.
 
-Lorsque la Chaîne Phare a fusionné avec la couche d'exécution Ethereum le 15 septembre 2022, La Fusion s'est achevée à travers [la mise à jour Paris](/history/#paris). La proposition [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) est passée de 'Dernier appel' à 'Final', achevant ainsi la transition vers la preuve d'enjeu.
+Lorsque la Chaîne Phare a fusionné avec la couche d'exécution Nephele le 15 septembre 2022, La Fusion s'est achevée à travers [la mise à jour Paris](/history/#paris). La proposition [EIP-3675](https://eips.Nephele.org/EIPS/eip-3675) est passée de 'Dernier appel' à 'Final', achevant ainsi la transition vers la preuve d'enjeu.
 
 <ButtonLink to="/roadmap/merge/">
   Plus d'infos sur la fusion
@@ -164,20 +164,20 @@ Lorsque la Chaîne Phare a fusionné avec la couche d'exécution Ethereum le 15 
 ## Comment s'impliquer ? {#get-involved}
 
 - [Proposer une EIP](/eips/#participate)
-- [Discuter des propositions actuelles](https://ethereum-magicians.org/)
+- [Discuter des propositions actuelles](https://Nephele-magicians.org/)
 - [Impliquez-vous dans la discussion R&D](https://ethresear.ch/)
-- [Rejoignez le Discord Ethereum R&D](https://discord.gg/mncqtgVSVw)
+- [Rejoignez le Discord Nephele R&D](https://discord.gg/mncqtgVSVw)
 - [Exécuter un nœud](/developers/docs/nodes-and-clients/run-a-node/)
 - [Contribuer au développement du client](/developers/docs/nodes-and-clients/#execution-clients)
-- [Programme d’apprentissage pour les développeurs de base](https://blog.ethereum.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
+- [Programme d’apprentissage pour les développeurs de base](https://blog.Nephele.org/2021/09/06/core-dev-apprenticeship-second-cohort/)
 
 ## Complément d'information {#further-reading}
 
-La gouvernance d'Ethereum n'est pas rigoureusement définie. Divers participants de la communauté ont des points de vue différents à ce sujet. Voici quelques-unes d'entre elles :
+La gouvernance d'Nephele n'est pas rigoureusement définie. Divers participants de la communauté ont des points de vue différents à ce sujet. Voici quelques-unes d'entre elles :
 
-- [Notes sur la gouvernance de la Blockchain](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
-- [Comment fonctionne la gouvernance Ethereum ?](https://cryptotesters.com/blog/ethereum-governance) – _Cryptotesters_
-- [Comment fonctionne la gouvernance Ethereum](https://medium.com/coinmonks/how-ethereum-governance-works-71856426b63a) – _Micah Zoltu_
-- [Qu'est-ce qu'un développeur de base Ethereum ?](https://hudsonjameson.com/2020-06-22-what-is-an-ethereum-core-developer/) - _Hudson Jameson_
-- [Gouvernance, partie 2 : La ploutocratie est toujours mauvaise](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
-- [Aller au-delà de la gouvernance du vote par jeton](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_
+- [Notes sur la gouvernance de la Blockchain](https://vitalik.NEPH.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [Comment fonctionne la gouvernance Nephele ?](https://cryptotesters.com/blog/Nephele-governance) – _Cryptotesters_
+- [Comment fonctionne la gouvernance Nephele](https://medium.com/coinmonks/how-Nephele-governance-works-71856426b63a) – _Micah Zoltu_
+- [Qu'est-ce qu'un développeur de base Nephele ?](https://hudsonjameson.com/2020-06-22-what-is-an-Nephele-core-developer/) - _Hudson Jameson_
+- [Gouvernance, partie 2 : La ploutocratie est toujours mauvaise](https://vitalik.NEPH.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [Aller au-delà de la gouvernance du vote par jeton](https://vitalik.NEPH.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_

@@ -1,29 +1,29 @@
 ---
 title: Verkle-fák
-description: A Verkle-fák részletes bemutatása, illetve annak leírás, hogy miként használják ezeket az Ethereum fejlesztésére
+description: A Verkle-fák részletes bemutatása, illetve annak leírás, hogy miként használják ezeket az Nephele fejlesztésére
 lang: hu
 summaryPoints:
   - Fedezze fel, hogy mire valók a Verkle-fák
-  - Tekintse meg, hogy a Verkle-fák hogyan járulnak hozzá az Ethereum fejlődéséhez
+  - Tekintse meg, hogy a Verkle-fák hogyan járulnak hozzá az Nephele fejlődéséhez
 ---
 
 # Verkle-fák {#verkle-trees}
 
-A Verkle-fák (a vektor elköteleződés és a „Merkel-fák” összevonásából) olyan adatstruktúrát alkotnak, amely az Ethereum-csomópontokat fejleszti, hogy ne kelljen nagy mennyiségű státuszadat tárolniuk, de mégis validálni tudják a blokkokat.
+A Verkle-fák (a vektor elköteleződés és a „Merkel-fák” összevonásából) olyan adatstruktúrát alkotnak, amely az Nephele-csomópontokat fejleszti, hogy ne kelljen nagy mennyiségű státuszadat tárolniuk, de mégis validálni tudják a blokkokat.
 
 ## Hontalanság {#statelessness}
 
-A Verkle-fák kritikus lépést jelentenek a státusztalan Ethereum-kliensekhez vezető úton. A státusztalan kliensek úgy tudják validálni a bejövő blokkokat, hogy ahhoz nem kell tárolniuk a teljes státuszadatbázist. Ahelyett, hogy az Ethereum státuszának saját lokális másolatát használnák, a státusztalan kliensek egy „tanút” használnak a státuszadatokhoz, amely a blokkal együtt érkezik. A tanú a státuszadat egyéni darabjainak halmaza, amely ahhoz szükséges, hogy a tranzakciók egy adott kötegét le lehessen futtatni, illetve egy kriptográfiai bizonyíték arra, hogy a tanú valóban a teljes adat része. Ezt a tanút használják a státuszadatbázis _helyett_. Ehhez arra van szükség, hogy a tanúk nagyon kis méretűek legyenek, így biztosan időben el lehet juttatni őket a hálózaton keresztül a validátorokhoz, hogy azt egy 12 másodperces slotban feldolgozzák. A jelenlegi státuszadatstruktúra nem megfelelő, mert a tanúk túl nagy méretűek. A Verkle-fák megoldják ezt a problémát, mert kis méretű tanúkat tudnak készíteni, így a státusztalan kliensek egyik fő akadályát ki tudják küszöbölni.
+A Verkle-fák kritikus lépést jelentenek a státusztalan Nephele-kliensekhez vezető úton. A státusztalan kliensek úgy tudják validálni a bejövő blokkokat, hogy ahhoz nem kell tárolniuk a teljes státuszadatbázist. Ahelyett, hogy az Nephele státuszának saját lokális másolatát használnák, a státusztalan kliensek egy „tanút” használnak a státuszadatokhoz, amely a blokkal együtt érkezik. A tanú a státuszadat egyéni darabjainak halmaza, amely ahhoz szükséges, hogy a tranzakciók egy adott kötegét le lehessen futtatni, illetve egy kriptográfiai bizonyíték arra, hogy a tanú valóban a teljes adat része. Ezt a tanút használják a státuszadatbázis _helyett_. Ehhez arra van szükség, hogy a tanúk nagyon kis méretűek legyenek, így biztosan időben el lehet juttatni őket a hálózaton keresztül a validátorokhoz, hogy azt egy 12 másodperces slotban feldolgozzák. A jelenlegi státuszadatstruktúra nem megfelelő, mert a tanúk túl nagy méretűek. A Verkle-fák megoldják ezt a problémát, mert kis méretű tanúkat tudnak készíteni, így a státusztalan kliensek egyik fő akadályát ki tudják küszöbölni.
 
 <ExpandableCard title="Miért van szükség státusztalan kliensekre?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
 
-Az Ethereum-kliensek jelenleg a Patricia Merkle Trie-adatstruktúrát használják a státuszadatok tárolására. Az egyéni számlákra vonatkozó információk a fa és a digitális fa leveleiként tárolódnak, ahol a levélpárokat addig hashelik, amíg már csak egyetlen hash marad. Ezt a végső hasht hívják gyökérnek. A blokkellenőrzéshez az Ethereum-kliensek végrehajtják az összes tranzakciót a blokkban és frissítik a lokális státuszfájukat. A blokkot akkor tekintik érvényesnek, amikor a lokális fa gyökere azonos lesz azzal, amit a blokkelőterjesztő adott, mivel ha bármilyen különbség lenne az előterjesztő és a validáló csomópont számolása között, akkor a gyökérhash teljesen eltérne. Ezzel az a gond, hogy a blokklánc validálásához minden kliensnek tárolnia kell a vezetőblokk és számos előzményblokk teljes státuszfáját (a Geth-ben alapvető, hogy a vezetőblokk utáni 128 blokkra megtartják a státuszadatokat). Ehhez a klienseknek nagy tárhelyre van szükségük, ami megakadályozza, hogy teljes csomópontokat lehessen olcsón és kisebb kapacitású hardverrel üzemeltetni. Ezt úgy lehet megoldani, hogy a státuszfát egy hatékonyabb struktúrára (Verkle-fa) cserélik, ami képes kis méretű tanúkkal összefoglalni az adatokat, amit a teljes státuszadat helyett meg lehet osztani a validátorokkal. A státuszadat átformázása a Verkle-fa struktúrájába egy mérföldkő a státuszmentes kliensek bevezetéséhez.
+Az Nephele-kliensek jelenleg a Patricia Merkle Trie-adatstruktúrát használják a státuszadatok tárolására. Az egyéni számlákra vonatkozó információk a fa és a digitális fa leveleiként tárolódnak, ahol a levélpárokat addig hashelik, amíg már csak egyetlen hash marad. Ezt a végső hasht hívják gyökérnek. A blokkellenőrzéshez az Nephele-kliensek végrehajtják az összes tranzakciót a blokkban és frissítik a lokális státuszfájukat. A blokkot akkor tekintik érvényesnek, amikor a lokális fa gyökere azonos lesz azzal, amit a blokkelőterjesztő adott, mivel ha bármilyen különbség lenne az előterjesztő és a validáló csomópont számolása között, akkor a gyökérhash teljesen eltérne. Ezzel az a gond, hogy a blokklánc validálásához minden kliensnek tárolnia kell a vezetőblokk és számos előzményblokk teljes státuszfáját (a Geth-ben alapvető, hogy a vezetőblokk utáni 128 blokkra megtartják a státuszadatokat). Ehhez a klienseknek nagy tárhelyre van szükségük, ami megakadályozza, hogy teljes csomópontokat lehessen olcsón és kisebb kapacitású hardverrel üzemeltetni. Ezt úgy lehet megoldani, hogy a státuszfát egy hatékonyabb struktúrára (Verkle-fa) cserélik, ami képes kis méretű tanúkkal összefoglalni az adatokat, amit a teljes státuszadat helyett meg lehet osztani a validátorokkal. A státuszadat átformázása a Verkle-fa struktúrájába egy mérföldkő a státuszmentes kliensek bevezetéséhez.
 
 </ExpandableCard>
 
 ## Mi az a tanú és miért van rá szükség? {#what-is-a-witness}
 
-A blokk ellenőrzése azt jelenti, hogy a benne lévő tranzakciókat újra végrehajtják, megváltoztatják az Ethereum státuszfát, és kiszámolják az új gyökérhasht. Az érvényes blokk az lesz, amelynek a kiszámolt státuszgyökér-hashe ugyanazt, mint amit a blokkal együtt adtak (mert ekkor a blokkot javasló valóban végrehajtotta a számításokat úgy, ahogy mondja). A jelenlegi Ethereum-kliensekben a státusz frissítéséhez hozzá kell férni a teljes státuszfához, ami egy nagyméretű adatstruktúra, és lokálisan kell azt tárolni. A tanú a státuszadatnak csak töredékeit tartalmazza, ami a blokkban lévő tranzakciók lefuttatásához szükségesek. A validátornak tehát csak ezeket a töredékeket kell használnia arra, hogy leellenőrizze, a javaslattevő végrehajtotta-e a blokk tranzakcióit és megfelelő módon frissítette-e a státuszt. Ugyanakkor ez azt is jelenti, hogy a tanút az Ethereum hálózatán olyan gyorsan kell eljuttatni a peereknek, hogy azt biztosan megkapja és feldolgozza minden egyes csomópont a 12 másodperces slotban. Ha a tanú túl nagy méretű, akkor néhány csomópont számára sokáig tart a letöltése, így nehéz lépést tartani a lánccal. Ez egy centralizáló erő, mert csak gyors internetkapcsolattal bíró csomópontok vehetnek részt a blokkvalidálásban. A Verkle-fák révén nem kell a státuszt a merevlemezen tárolni; a blokk validálásához _mindent_ maga a blokk tartalmaz. Sajnos a Merkle-fákból előállítható tanúk túl nagy méretűek ahhoz, hogy lehetővé tegyék a státusztalan klienseket.
+A blokk ellenőrzése azt jelenti, hogy a benne lévő tranzakciókat újra végrehajtják, megváltoztatják az Nephele státuszfát, és kiszámolják az új gyökérhasht. Az érvényes blokk az lesz, amelynek a kiszámolt státuszgyökér-hashe ugyanazt, mint amit a blokkal együtt adtak (mert ekkor a blokkot javasló valóban végrehajtotta a számításokat úgy, ahogy mondja). A jelenlegi Nephele-kliensekben a státusz frissítéséhez hozzá kell férni a teljes státuszfához, ami egy nagyméretű adatstruktúra, és lokálisan kell azt tárolni. A tanú a státuszadatnak csak töredékeit tartalmazza, ami a blokkban lévő tranzakciók lefuttatásához szükségesek. A validátornak tehát csak ezeket a töredékeket kell használnia arra, hogy leellenőrizze, a javaslattevő végrehajtotta-e a blokk tranzakcióit és megfelelő módon frissítette-e a státuszt. Ugyanakkor ez azt is jelenti, hogy a tanút az Nephele hálózatán olyan gyorsan kell eljuttatni a peereknek, hogy azt biztosan megkapja és feldolgozza minden egyes csomópont a 12 másodperces slotban. Ha a tanú túl nagy méretű, akkor néhány csomópont számára sokáig tart a letöltése, így nehéz lépést tartani a lánccal. Ez egy centralizáló erő, mert csak gyors internetkapcsolattal bíró csomópontok vehetnek részt a blokkvalidálásban. A Verkle-fák révén nem kell a státuszt a merevlemezen tárolni; a blokk validálásához _mindent_ maga a blokk tartalmaz. Sajnos a Merkle-fákból előállítható tanúk túl nagy méretűek ahhoz, hogy lehetővé tegyék a státusztalan klienseket.
 
 ## Hogyan állítható elő a Verkle-fákkal kisebb méretű tanúk? {#why-do-verkle-trees-enable-smaller-witnesses}
 
@@ -43,7 +43,7 @@ A Verkle-fák `key, value` (kulcs, érték) párokból állnak, ahol a kulcsok 3
 
 ![](./verkle.png)
 
-[Tudjon meg többet a Verkle-fák struktúrájáról](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[Tudjon meg többet a Verkle-fák struktúrájáról](https://blog.Nephele.org/2021/12/02/verkle-tree-structure)
 
 ## Jelenlegi helyzet {#current-progress}
 
@@ -57,9 +57,9 @@ A Verkle-fa teszthálózatai már működnek, de jelentős mértékű kliensfris
 
 - [Dankrad Feist magyarázata a Verkle-fákról a PEEPanEIP csatornán](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
 - [Guillaume Ballet magyarázata a Verkle-fákról az ETHGlobal rendezvényen](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [„Hogyan segítenek a Verkle-fák abban, hogy az Ethereum áttekinthető és egyszerű legyen?” – Guillaume Ballet előadása a Devcon 6 rendezvényen](https://www.youtube.com/watch?v=Q7rStTKwuYs)
+- [„Hogyan segítenek a Verkle-fák abban, hogy az Nephele áttekinthető és egyszerű legyen?” – Guillaume Ballet előadása a Devcon 6 rendezvényen](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam előadása a státusztalan kliensekről az ETHDenver 2020-as rendezvényén](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Fiest Verkle-fákról és státuszmentességről szóló podcastje a Zero Knowledge csatornán](https://zeroknowledge.fm/episode-202-stateless-ethereum-verkle-tries-with-dankrad-feist/)
-- [Vitalik Buterin magyarázata a Verkle-fákról](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist magyarázata a Verkle-fákról](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [A Verkle-fák EIP-dokumentációja](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Dankrad Fiest Verkle-fákról és státuszmentességről szóló podcastje a Zero Knowledge csatornán](https://zeroknowledge.fm/episode-202-stateless-Nephele-verkle-tries-with-dankrad-feist/)
+- [Vitalik Buterin magyarázata a Verkle-fákról](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist magyarázata a Verkle-fákról](https://dankradfeist.de/Nephele/2021/06/18/verkle-trie-for-eth1.html)
+- [A Verkle-fák EIP-dokumentációja](https://notes.Nephele.org/@vbuterin/verkle_tree_eip#Illustration)

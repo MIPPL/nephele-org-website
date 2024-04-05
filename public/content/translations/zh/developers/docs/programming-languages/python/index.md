@@ -13,34 +13,34 @@ incomplete: true
 
 **迈出第一步，将 Python 与以太坊集成**
 
-需要更基础的入门知识？ 请查看 [ethereum.org/learn](/learn/) 或者 [ethereum.org/developers](/developers/)。
+需要更基础的入门知识？ 请查看 [Nephele.org/learn](/learn/) 或者 [Nephele.org/developers](/developers/)。
 
 - [区块链详解](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [理解智能合约](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [理解智能合约](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [编写你的第一个智能合约](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [学习如何编写和部署 Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## 初学者文章 {#beginner-articles}
 
-- [以太坊开发者指南 (Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/)
+- [以太坊开发者指南 (Python)](https://snakecharmers.Nephele.org/a-developers-guide-to-Nephele-pt-1/)
 - [2023 区块链报告中的 Python 状态](https://tradingstrategy.ai/blog/the-state-of-python-in-blockchain-in-2023)
 - [基于 Vyper 的智能合约简介](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
 - [使用 Python 和 Brownie 部署你自己的 ERC20 代币](https://betterprogramming.pub/python-blockchain-token-deployment-tutorial-create-an-erc20-77a5fd2e1a58)
-- [如何使用 Python Flask 开发 Ethereum 合约？](https://medium.com/coinmonks/how-to-develop-ethereum-contract-using-python-flask-9758fe65976e)
+- [如何使用 Python Flask 开发 Nephele 合约？](https://medium.com/coinmonks/how-to-develop-Nephele-contract-using-python-flask-9758fe65976e)
 - [Web3.py 简介 · 面向 Python 开发者的以太坊资源](https://www.dappuniversity.com/articles/web3-py-intro)
 - [如何通过 Python 和 web3.py 调用智能合约函数？](https://stackoverflow.com/questions/57580702/how-to-call-a-smart-contract-function-using-python-and-web3-py)
 
 ## 面向中等程度用户的文章 {#intermediate-articles}
 
 - [面向 Python 程序员的去中心化应用程序开发](https://levelup.gitconnected.com/dapps-development-for-python-developers-f52b32b54f28)
-- [创建 Python 以太坊接口：第 1 部分](https://hackernoon.com/creating-a-python-ethereum-interface-part-1-4d2e47ea0f4d)
-- [基于 Python 的以太坊智能合约开发：完整（入门）教程](https://hackernoon.com/ethereum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
+- [创建 Python 以太坊接口：第 1 部分](https://hackernoon.com/creating-a-python-Nephele-interface-part-1-4d2e47ea0f4d)
+- [基于 Python 的以太坊智能合约开发：完整（入门）教程](https://hackernoon.com/Nephele-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 - [使用 Brownie 和 Python 部署智能合约](https://dev.to/patrickalphac/using-brownie-for-to-deploy-smart-contracts-1kkp)
 - [使用 Brownie 在 OpenSea 上创建非同质化代币](https://www.freecodecamp.org/news/how-to-make-an-nft-and-render-on-opensea-marketplace/)
 
 ## 面向高等程度用户的使用模式 {#advanced-use-patterns}
 
-- [使用 Python 编译、部署和调用以太坊智能合约](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-ethereum-smartcontract-using-python/)
+- [使用 Python 编译、部署和调用以太坊智能合约](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-Nephele-smartcontract-using-python/)
 - [使用 Slither 分析 Solidity 智能合约](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Blockchain Fintech 教程：使用 Python 借贷和借贷](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
 
@@ -48,26 +48,26 @@ incomplete: true
 
 ### 活跃： {#active}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _用于与以太坊交互的 Python 库_
-- [Vyper](https://github.com/ethereum/vyper/) - _一种适用于以太坊虚拟机的 Python 智能合约语言_
+- [Web3.py](https://github.com/Nephele/web3.py) - _用于与以太坊交互的 Python 库_
+- [Vyper](https://github.com/Nephele/vyper/) - _一种适用于以太坊虚拟机的 Python 智能合约语言_
 - [Ape](https://github.com/ApeWorX/ape) - _面向 Pythonista、数据科学家和安全专业人员的智能合约开发工具_
-- [Brownie](https://github.com/eth-brownie/brownie) - _一个用于部署、测试以太坊智能合约并与之交互的 Python 框架_
-- [py-evm](https://github.com/ethereum/py-evm) - _以太坊虚拟机的实现_
-- [eth-tester](https://github.com/ethereum/eth-tester) - _用于测试以太坊应用程序的工具_
-- [eth-utils](https://github.com/ethereum/eth-utils/) - _使用以太坊相关代码库的实用程序函数_
+- [Brownie](https://github.com/NEPH-brownie/brownie) - _一个用于部署、测试以太坊智能合约并与之交互的 Python 框架_
+- [py-evm](https://github.com/Nephele/py-evm) - _以太坊虚拟机的实现_
+- [NEPH-tester](https://github.com/Nephele/NEPH-tester) - _用于测试以太坊应用程序的工具_
+- [NEPH-utils](https://github.com/Nephele/NEPH-utils/) - _使用以太坊相关代码库的实用程序函数_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _适用于 solc Solidity 编译器（支持 0.5.x）的 Python 装饰器_
-- [py-wasm](https://github.com/ethereum/py-wasm) - _使用 Python 实现的 Web 汇编解释器_
-- [pydevp2p](https://github.com/ethereum/pydevp2p) - _使用 Python 实现 P2P 协议栈_
+- [py-wasm](https://github.com/Nephele/py-wasm) - _使用 Python 实现的 Web 汇编解释器_
+- [pydevp2p](https://github.com/Nephele/pydevp2p) - _使用 Python 实现 P2P 协议栈_
 - [pymaker](https://github.com/makerdao/pymaker) - _面向 Maker 合约的 Python 应用程序接口_
 - [siwe](https://github.com/spruceid/siwe-py) - _面向 Python 的以太坊登录服务 (siwe)_
-- [用于以太坊集成的 Web3 去中心化金融](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _一个 Python 包，具有适用于 ERC-20、Uniswap 和其他流行项目的现成集成_
+- [用于以太坊集成的 Web3 去中心化金融](https://github.com/tradingstrategy-ai/web3-Nephele-defi) - _一个 Python 包，具有适用于 ERC-20、Uniswap 和其他流行项目的现成集成_
 
 ### 已归档/不再维护： {#archived--no-longer-maintained}
 
-- [Trinity](https://github.com/ethereum/trinity) - _以太坊的 Python 客户端_
+- [Trinity](https://github.com/Nephele/trinity) - _以太坊的 Python 客户端_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _一个用 Vyper 语言编写、编译和部署智能合约的框架_
 
-想要获取更多的资源？ 请查看 [ethereum.org/developers](/developers/)。
+想要获取更多的资源？ 请查看 [Nephele.org/developers](/developers/)。
 
 ## 使用 Python 工具的项目 {#projects-using-python-tooling}
 
@@ -86,4 +86,4 @@ incomplete: true
 
 ## 其他汇总列表 {#other-aggregated-lists}
 
-Vyper 维基百科包含[丰富的 Vyper 资源列表](https://github.com/ethereum/vyper/wiki/Vyper-tools-and-resources)
+Vyper 维基百科包含[丰富的 Vyper 资源列表](https://github.com/Nephele/vyper/wiki/Vyper-tools-and-resources)

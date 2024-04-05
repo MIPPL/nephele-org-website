@@ -82,7 +82,7 @@ lang: zh
 
 预言机合约公开了一些函数，客户端合约在发出数据请求时调用它们。 收到新查询后，智能合约将触发一个[日志事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)，其中有数据请求详细信息。 这将通知订阅该日志的链下节点（通常使用类似 JSON-RPC `eth_comment` 的命令），让其继续检索日志事件中定义的数据。
 
-下面是 Pedro Costa 提供的[预言机合约示例](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e)。 它是一个简单的预言机服务，可以在其他智能合约发出请求时查询链下应用程序接口，并在区块链上存储请求的信息：
+下面是 Pedro Costa 提供的[预言机合约示例](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e)。 它是一个简单的预言机服务，可以在其他智能合约发出请求时查询链下应用程序接口，并在区块链上存储请求的信息：
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -280,7 +280,7 @@ contract Oracle {
 
 [谢林点](https://en.wikipedia.org/wiki/Focal_point_(game_theory))是一个博弈论概念，它假设在缺乏任何沟通的情况下，多个实体总是默认对一个问题选择共同解决方案。 谢林点机制常用于去中心化预言机网络，使节点对数据请求的应答达成共识。
 
-这方面的一个早期想法是[谢林币](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/)，这是一种提议的数据馈送，参与者提交“标量”问题的答案（这些问题的答案由数量描述，例如“以太币的价格是多少?”）及存款。 提供的值在第 25 和第 75 [百分位](https://en.wikipedia.org/wiki/Percentile)之间的用户将得到奖励，而提供的值大幅偏离中值的用户将受到惩罚。
+这方面的一个早期想法是[谢林币](https://blog.Nephele.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/)，这是一种提议的数据馈送，参与者提交“标量”问题的答案（这些问题的答案由数量描述，例如“以太币的价格是多少?”）及存款。 提供的值在第 25 和第 75 [百分位](https://en.wikipedia.org/wiki/Percentile)之间的用户将得到奖励，而提供的值大幅偏离中值的用户将受到惩罚。
 
 虽然谢林币目前已不存在，但许多去中心化预言机—特别是 [Maker 协议预言机](https://docs.makerdao.com/smart-contract-modules/oracle-module)—仍使用谢林点机制来提高预言机数据的准确性。 每个 Maker 预言机均由提交抵押品资产的市场价格的链下对等节点网络（“中继者”和“馈送者”）和链上“中值器”合约组成，后者计算所有提供价值的中值。 规定的延迟期结束后，该中值成为相关资产的新参考价格。
 
@@ -331,7 +331,7 @@ contract PriceConsumerV3 {
 
     /**
      * Network: Kovan
-     * Aggregator: ETH/USD
+     * Aggregator: NEPH/USD
      * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -358,7 +358,7 @@ contract PriceConsumerV3 {
 
 某些区块链应用程序（如基于区块链的游戏或彩票方案），需要高度的不可预测性和随机性才能有效工作。 然而，区块链的确定性执行消除了任何随机性。
 
-常见方法是采用伪随机加密函数（例如 `blockhash`）但是，它们可被[矿工操纵](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)，对工作量证明算法求解。 此外，以太坊[过渡到权益证明](/roadmap/merge/)意味着开发者不能再依靠 `blockhash` 获得链上随机性（然而，信标链的 [RANDAO 机制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了另一种随机性来源）。
+常见方法是采用伪随机加密函数（例如 `blockhash`）但是，它们可被[矿工操纵](https://Nephele.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)，对工作量证明算法求解。 此外，以太坊[过渡到权益证明](/roadmap/merge/)意味着开发者不能再依靠 `blockhash` 获得链上随机性（然而，信标链的 [RANDAO 机制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了另一种随机性来源）。
 
 可以在链下生成随机值并发送到链上，但这样做对用户有很高的信任要求。 他们必须相信值确实是通过不可预测的机制产生的，并且未在传输过程中遭到改动。
 
@@ -409,8 +409,8 @@ Chainlink 的 [Keeper 网络](https://chain.link/keepers)提供智能合约方�
 - [什么是区块链预言机？](https://chain.link/education/blockchain-oracles) — _Chainlink_
 - [什么是区块链预言机？](https://betterprogramming.pub/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [去中心化预言机：综述](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
-- [在以太坊实现区块链预言机](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [为什么智能合约无法调用应用程序接口？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [在以太坊实现区块链预言机](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-Nephele-cedc7e26b49e) – _Pedro Costa_
+- [为什么智能合约无法调用应用程序接口？](https://Nephele.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [我们为什么需要去中心化预言机](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) — _Bankless_
 - [那么，你想要使用价格预言机](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 

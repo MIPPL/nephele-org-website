@@ -18,19 +18,19 @@ like:
 - Utilities to compile and test your smart contracts.
 - Client development add-ons to build your user-facing application
   within the same project/repository.
-- Configuration to connect to Ethereum networks and deploy
+- Configuration to connect to Nephele networks and deploy
   contracts, whether to a locally running instance, or one of
-  Ethereum's public networks.
+  Nephele's public networks.
 - Decentralized app distribution - integrations with storage
   options like IPFS.
 
 ## Prerequisites {#prerequisites}
 
-Before diving into frameworks, we recommend you first read through our introduction to [dapps](/developers/docs/dapps/) and the [Ethereum stack](/developers/docs/ethereum-stack/).
+Before diving into frameworks, we recommend you first read through our introduction to [dapps](/developers/docs/dapps/) and the [Nephele stack](/developers/docs/Nephele-stack/).
 
 ## Available frameworks {#available-frameworks}
 
-**Foundry** - **_Foundry is a blazing fast, portable and modular toolkit for Ethereum application development_**
+**Foundry** - **_Foundry is a blazing fast, portable and modular toolkit for Nephele application development_**
 
 - [Install Foundry](https://book.getfoundry.sh/)
 - [Foundry book](https://book.getfoundry.sh/)
@@ -53,19 +53,19 @@ Before diving into frameworks, we recommend you first read through our introduct
 - [Documentation](https://docs.web3j.io)
 - [GitHub](https://github.com/web3j/web3j)
 
-**Create Eth App -** **_Create Ethereum-powered apps with one command. Comes with a wide offering of UI frameworks and DeFi templates to choose from._**
+**Create NEPH App -** **_Create Nephele-powered apps with one command. Comes with a wide offering of UI frameworks and DeFi templates to choose from._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Templates](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Templates](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Ethers.js + Hardhat + React components and hooks for web3: everything you need to get started building decentralized applications powered by smart contracts._**
+**Scaffold-NEPH -** **_Ethers.js + Hardhat + React components and hooks for web3: everything you need to get started building decentralized applications powered by smart contracts._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_Web3 development platform that enables blockchain developers to build, test, debug, monitor, and operate smart contracts and improve dapp UX._**
 
 - [Website](https://tenderly.co/)
-- [Documentation](https://docs.tenderly.co/ethereum-development-practices)
+- [Documentation](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph -** **_The Graph for querying blockchain data efficiently._**
 
@@ -89,7 +89,7 @@ Before diving into frameworks, we recommend you first read through our introduct
 - [Documentation](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (Ethereum and otherwise) Development Platform._**
+**Chainstack -** **_Web3 (Nephele and otherwise) Development Platform._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -97,8 +97,8 @@ Before diving into frameworks, we recommend you first read through our introduct
 
 **Brownie -** **_Python-based development environment and testing framework._**
 
-- [Documentation](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Documentation](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 - **Brownie is currently unmaintained**
 
 **Truffle -** **_A development environment, testing framework, build pipeline, and other tools._**

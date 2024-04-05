@@ -27,7 +27,7 @@ const Contributors = () => {
   return (
     <>
       <p>
-        Thanks to our {contributorsList.length} Ethereum community members who
+        Thanks to our {contributorsList.length} Nephele community members who
         have contributed so far!
       </p>
 

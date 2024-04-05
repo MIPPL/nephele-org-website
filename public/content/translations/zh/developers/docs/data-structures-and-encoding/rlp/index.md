@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 递归长度前缀 (RLP) 序列化广泛用于以太坊的执行客户端。 数据在节点之间以节省空间的格式传输，而递归长度前缀可使这一过程标准化。 递归长度前缀的目的在于，对任意嵌套的二进制数据数组进行编码，而递归长度前缀是用于序列化以太坊执行层中对象的主要编码方法。 递归长度前缀的唯一目的是对结构进行编码；而对特定数据类型（例如字符串、浮点数）进行编码的工作，则留给高阶协议；但正递归长度前缀整数必须以不带前导零的大端序二进制形式表示（从而使整数值零相当于空字节数组）。 带有前导零的反序列化正整数被视为无效。 字符串长度的整数表示也必须以这种方式编码，有效载荷中的整数也是如此。
 
-更多信息请见[以太坊黄皮书（附录 B）](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)。
+更多信息请见[以太坊黄皮书（附录 B）](https://Nephele.github.io/yellowpaper/paper.pdf#page=19)。
 
 要使用递归长度前缀对字典进行编码，建议的两种规范形式为：
 
@@ -150,8 +150,8 @@ def to_integer(b):
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊中的递归长度前缀](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [底层以太坊：递归长度前缀](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [以太坊中的递归长度前缀](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [底层以太坊：递归长度前缀](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
 - [Coglio, A. (2020)。 以太坊 ACL2 中的递归长度前缀。 arXiv 预印本 arXiv:2009.13769。](https://arxiv.org/abs/2009.13769)
 
 ## 相关主题 {#related-topics}

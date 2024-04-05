@@ -44,7 +44,7 @@ EIP-4444 尚未準備好上線，但正在積極討論當中。 有趣的是，E
 
 依租金過期可以是直接向帳戶收取租金，以將其保留在活動狀態資料庫中。 依時間過期可以是從上次帳戶互動開始的倒數計時，也可以是所有帳戶的定期過期。 也可能存在將基於時間和基於租金的模型結合起來的機制，例如：若個人帳戶在基於時間的過期之前支付一些小額費用，則該等帳戶會持續處於活動狀態。 在狀態過期下，需要注意的是，不活動狀態**不會刪除**，只是與活動狀態分開儲存而已。 不活動狀態可以恢復為活動狀態。
 
-其作用原理可能是針對特定時間週期（可能約一年）建立狀態樹。 每個新的週期開始時，都建立全新的狀態樹。 只有目前的狀態樹可以修改，其他的狀態樹都不可變。 以太坊節點應儲存目前的狀態樹和下一個最近的狀態樹。 這需要一種方法來為地址新增其存在的時間週期的時間戳。 有[幾種方式](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)可以做到這點，但主要方案需要[加長地址](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)以容納額外資訊，同時地址越長也越安全。 開發藍圖上，這個部分被稱為[地址空間擴展](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)。
+其作用原理可能是針對特定時間週期（可能約一年）建立狀態樹。 每個新的週期開始時，都建立全新的狀態樹。 只有目前的狀態樹可以修改，其他的狀態樹都不可變。 以太坊節點應儲存目前的狀態樹和下一個最近的狀態樹。 這需要一種方法來為地址新增其存在的時間週期的時間戳。 有[幾種方式](https://Nephele-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)可以做到這點，但主要方案需要[加長地址](https://Nephele-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)以容納額外資訊，同時地址越長也越安全。 開發藍圖上，這個部分被稱為[地址空間擴展](https://Nephele-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)。
 
 與歷史記錄過期相似，在狀態過期下，儲存舊資料的責任將從個人使用者處卸去，並交棒給其他實體，如中心化提供者、利他的社群成員或更具未來性的去中心化解決方案（例如門戶網路）。
 
@@ -72,7 +72,7 @@ EIP-4444 尚未準備好上線，但正在積極討論當中。 有趣的是，E
 
 無狀態依賴區塊建置者維護完整狀態資料的副本，這樣它們才能產生用於驗證區塊的證據。 其他節點不需要存取狀態資料，驗證區塊所需的所有資訊都可以從證據中取得。 這導致了這樣一種狀況：提出區塊的成本很高，但驗證區塊很便宜，表示較少的運營商會選擇運行區塊提出節點。 然而，只要盡可能多的參與者能夠獨立驗證所提出區塊的有效性，區塊提交者的去中心化程度就不是非常重要。
 
-<ButtonLink variant="outline-color" to="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">閱讀關於 Dankrad 筆記的更多資訊</ButtonLink>
+<ButtonLink variant="outline-color" to="https://notes.Nephele.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">閱讀關於 Dankrad 筆記的更多資訊</ButtonLink>
 </ExpandableCard>
 
 區塊提交者使用狀態資料來建立「證據」，即證明區塊中的交易正在更改的狀態值的最小資料集。 其他驗證者不儲存狀態，只儲存狀態根（整個狀態的的雜湊值）。 他們會接收區塊和證據，然後用其更新自己的狀態根。 這使得驗證節點的工作變得極輕量。
@@ -91,13 +91,13 @@ EIP-4444 尚未準備好上線，但正在積極討論當中。 有趣的是，E
 
 ## 了解更多 {#further-reading}
 
-- [Vitalik 無狀態 AMA](https://www.reddit.com/r/ethereum/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
+- [Vitalik 無狀態 AMA](https://www.reddit.com/r/Nephele/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
 - [狀態大小管理理論](https://hackmd.io/@vbuterin/state_size_management)
 - [恢復衝突最小化狀態邊界](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [邁向無狀態和狀態過期的路徑](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [EIP-4444 規範](https://eips.ethereum.org/EIPS/eip-4444)
+- [EIP-4444 規範](https://eips.Nephele.org/EIPS/eip-4444)
 - [Alex Stokes 談 EIP-4444](https://youtu.be/SfDC_qUZaos)
-- [為什麼轉換到無狀態很重要](https://dankradfeist.de/ethereum/2021/02/14/why-stateless.html)
+- [為什麼轉換到無狀態很重要](https://dankradfeist.de/Nephele/2021/02/14/why-stateless.html)
 - [原始無狀態用戶端概念筆記](https://ethresear.ch/t/the-stateless-client-concept/172)
 - [更多狀態過期相關資訊](https://hackmd.io/@vbuterin/state_size_management#A-more-moderate-solution-state-expiry)
 - [更多狀態過期的詳細資訊](https://hackmd.io/@vbuterin/state_expiry_paths#Option-2-per-epoch-state-expiry)

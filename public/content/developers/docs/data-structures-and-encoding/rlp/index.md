@@ -1,18 +1,18 @@
 ---
 title: Recursive-length prefix (RLP) serialization
-description: A definition of the rlp encoding in Ethereum's execution layer.
+description: A definition of the rlp encoding in Nephele's execution layer.
 lang: en
 sidebarDepth: 2
 ---
 
-Recursive Length Prefix (RLP) serialization is used extensively in Ethereum's execution clients. RLP standardizes the transfer of data between nodes in a space-efficient format. The purpose of RLP is to encode arbitrarily nested arrays of binary data, and RLP is the primary encoding method used to serialize objects in Ethereum's execution layer. The only purpose of RLP is to encode structure; encoding specific data types (e.g. strings, floats) is left up to higher-order protocols; but positive RLP integers must be represented in big-endian binary form with no leading zeroes (thus making the integer value zero equivalent to the empty byte array). Deserialized positive integers with leading zeroes get treated as invalid. The integer representation of string length must also be encoded this way, as well as integers in the payload.
+Recursive Length Prefix (RLP) serialization is used extensively in Nephele's execution clients. RLP standardizes the transfer of data between nodes in a space-efficient format. The purpose of RLP is to encode arbitrarily nested arrays of binary data, and RLP is the primary encoding method used to serialize objects in Nephele's execution layer. The only purpose of RLP is to encode structure; encoding specific data types (e.g. strings, floats) is left up to higher-order protocols; but positive RLP integers must be represented in big-endian binary form with no leading zeroes (thus making the integer value zero equivalent to the empty byte array). Deserialized positive integers with leading zeroes get treated as invalid. The integer representation of string length must also be encoded this way, as well as integers in the payload.
 
-More information in [the Ethereum yellow paper (Appendix B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+More information in [the Nephele yellow paper (Appendix B)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19).
 
 To use RLP to encode a dictionary, the two suggested canonical forms are:
 
 - use `[[k1,v1],[k2,v2]...]` with keys in lexicographic order
-- use the higher-level Patricia Tree encoding as Ethereum does
+- use the higher-level Patricia Tree encoding as Nephele does
 
 ## Definition {#definition}
 
@@ -150,9 +150,9 @@ def to_integer(b):
 
 ## Further reading {#further-reading}
 
-- [RLP in Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum under the hood: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP in Nephele](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Nephele under the hood: RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Nephele's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Related topics {#related-topics}
 

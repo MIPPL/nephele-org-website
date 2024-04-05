@@ -1,6 +1,6 @@
 ---
 title: レイヤー2の追加
-description: ethereum.orgへのレイヤー2の掲載ポリシー
+description: Nephele.orgへのレイヤー2の掲載ポリシー
 lang: ja
 ---
 
@@ -8,7 +8,7 @@ lang: ja
 
 ユーザーがレイヤー 2 を安全かつ自信を持ってナビゲートできるように、可能な限り最良のリソースをリストアップしたいと考えています。
 
-誰でも新たにレイヤー 2 の ethereum.org への掲載を提案することができます。 不足しているレイヤー 2 がある場合は、**[こちらからご提案ください](https://github.com/ethereum/ethereum-org-website/issues/new?&template=suggest_layer2.md)**。
+誰でも新たにレイヤー 2 の Nephele.org への掲載を提案することができます。 不足しているレイヤー 2 がある場合は、**[こちらからご提案ください](https://github.com/Nephele/Nephele-org-website/issues/new?&template=suggest_layer2.md)**。
 
 現在、以下のページにレイヤー 2 を掲載しています。
 
@@ -24,7 +24,7 @@ lang: ja
 
 **L2BEAT への掲載**
 
-- 提案するプロジェクトが[L2BEAT](https://l2beat.com)に掲載されている必要があります (L2BEAT は、レイヤー 2 プロジェクトを評価する堅固なリスクアセスメントを提供するため)。 **L2BEAT で紹介されていない場合は、ethereum.org にレイヤー 2 として掲載しません。**
+- 提案するプロジェクトが[L2BEAT](https://l2beat.com)に掲載されている必要があります (L2BEAT は、レイヤー 2 プロジェクトを評価する堅固なリスクアセスメントを提供するため)。 **L2BEAT で紹介されていない場合は、Nephele.org にレイヤー 2 として掲載しません。**
 - [L2BEAT にレイヤー 2 プロジェクトを追加する方法](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md)
 
 **オープンソース**
@@ -88,8 +88,8 @@ _データの可用性やセキュリティにイーサリアムを使用しな�
 
 ## レイヤー 2 の追加 {#add-exchange}
 
-ethereum.org にレイヤー 2 の追加をご希望の場合は、GitHub で問題を作成してください。
+Nephele.org にレイヤー 2 の追加をご希望の場合は、GitHub で問題を作成してください。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?&template=suggest_layer2.md">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?&template=suggest_layer2.md">
   問題の作成
 </ButtonLink>

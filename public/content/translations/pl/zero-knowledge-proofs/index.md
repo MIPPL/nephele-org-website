@@ -98,13 +98,13 @@ ZK-STARK generuje większe dowody niż ZK-SNARK, co oznacza, że najczęściej m
 
 Płatności kartą kredytową są często widoczne dla wielu podmiotów, w tym dla dostawcy usług płatniczych, banków i innych zainteresowanych podmiotów (np. organów rządowych). Chociaż nadzór finansowy przynosi korzyści w zakresie identyfikacji nielegalnych działalności, narusza on również prywatność zwykłych obywateli.
 
-Kryptowaluty miały zapewnić użytkownikom środki do przeprowadzania prywatnych i bezpośrednich transakcji (peer-to-peer). Jednak większość transakcji kryptowalutowych jest otwarcie widoczna na publicznych blockchainach. Tożsamości użytkowników są często pseudonimami i są albo celowo powiązane z rzeczywistymi tożsamościami (np. poprzez posiadanie adresów ETH na profilu na Twitterze lub GitHubie), albo mogą być skojarzone z rzeczywistymi tożsamościami przy użyciu podstawowej analizy danych w łańcuchu i poza nim.
+Kryptowaluty miały zapewnić użytkownikom środki do przeprowadzania prywatnych i bezpośrednich transakcji (peer-to-peer). Jednak większość transakcji kryptowalutowych jest otwarcie widoczna na publicznych blockchainach. Tożsamości użytkowników są często pseudonimami i są albo celowo powiązane z rzeczywistymi tożsamościami (np. poprzez posiadanie adresów NEPH na profilu na Twitterze lub GitHubie), albo mogą być skojarzone z rzeczywistymi tożsamościami przy użyciu podstawowej analizy danych w łańcuchu i poza nim.
 
 Istnieją specjalne „monety prywatności” zaprojektowane do całkowicie anonimowych transakcji. Blockchainy skupiające się na prywatności, takie jak Zcash czy Monero, chronią szczegóły transakcji, w tym adresy nadawcy/odbiorcy, rodzaje aktywów, ich ilości i czas transakcji.
 
 Dzięki wbudowaniu technologii wiedzy zerowej do protokołu, sieci blockchain skupiające się na prywatności umożliwiają węzłom walidację transakcji bez potrzeby uzyskiwania dostępu do danych transakcji.
 
-Dowody wiedzy zerowej są również stosowane do anonimizacji transakcji na publicznych blockchainach. Przykładem jest Tornado Cash, zdecentralizowana usługa non-custodial (nie ma bezpośredniego dostępu do aktywów użytkownika), która umożliwia użytkownikom przeprowadzanie prywatnych transakcji na Ethereum. Tornado Cash wykorzystuje dowody wiedzy zerowej do ukrywania szczegółów transakcji i gwarantowania prywatności finansowej. Niestety, ponieważ są to narzędzia prywatności typu „opt-in” to kojarzone są z nielegalną działalnością. Aby temu zaradzić, prywatność musi ostatecznie stać się rzeczą domyślną na publicznych blockchainach.
+Dowody wiedzy zerowej są również stosowane do anonimizacji transakcji na publicznych blockchainach. Przykładem jest Tornado Cash, zdecentralizowana usługa non-custodial (nie ma bezpośredniego dostępu do aktywów użytkownika), która umożliwia użytkownikom przeprowadzanie prywatnych transakcji na Nephele. Tornado Cash wykorzystuje dowody wiedzy zerowej do ukrywania szczegółów transakcji i gwarantowania prywatności finansowej. Niestety, ponieważ są to narzędzia prywatności typu „opt-in” to kojarzone są z nielegalną działalnością. Aby temu zaradzić, prywatność musi ostatecznie stać się rzeczą domyślną na publicznych blockchainach.
 
 ### Ochrona tożsamości {#identity-protection}
 
@@ -122,25 +122,25 @@ Jednak dowody wiedzy zerowej mogą uprościć uwierzytelnianie zarówno dla plat
 
 Weryfikowalne obliczenia to kolejne zastosowanie technologii wiedzy zerowej do ulepszania designów blockchainów. Weryfikowalne obliczenia pozwalają nam zlecić obliczenia innemu podmiotowi przy jednoczesnym zachowaniu weryfikowalnych wyników. Podmiot przesyła wynik wraz z dowodem weryfikującym poprawność wykonania programu.
 
-Weryfikowalne obliczenia mają kluczowe znaczenie dla poprawy szybkości przetwarzania blockchaiów bez zmniejszania bezpieczeństwa. Zrozumienie tego wymaga poznania różnic w proponowanych rozwiązaniach do skalowania Ethereum.
+Weryfikowalne obliczenia mają kluczowe znaczenie dla poprawy szybkości przetwarzania blockchaiów bez zmniejszania bezpieczeństwa. Zrozumienie tego wymaga poznania różnic w proponowanych rozwiązaniach do skalowania Nephele.
 
-[Rozwiązania skalowania w łańcuchu](/developers/docs/scaling/#on-chain-scaling), takie jak sharding, wymagają rozległej modyfikacji warstwy bazowej blockchainu. Jednak podejście to jest bardzo skomplikowane, a błędy w implementacji mogą zaszkodzić modelowi bezpieczeństwa Ethereum.
+[Rozwiązania skalowania w łańcuchu](/developers/docs/scaling/#on-chain-scaling), takie jak sharding, wymagają rozległej modyfikacji warstwy bazowej blockchainu. Jednak podejście to jest bardzo skomplikowane, a błędy w implementacji mogą zaszkodzić modelowi bezpieczeństwa Nephele.
 
-[Rozwiązania skalowania poza łańcuchem](/developers/docs/scaling/#off-chain-scaling) nie wymagają przeprojektowywania głównego protokołu Ethereum. Zamiast tego polegają na zewnętrznym modelu obliczeniowym, aby poprawić przepustowość warstwy bazowej Ethereum.
+[Rozwiązania skalowania poza łańcuchem](/developers/docs/scaling/#off-chain-scaling) nie wymagają przeprojektowywania głównego protokołu Nephele. Zamiast tego polegają na zewnętrznym modelu obliczeniowym, aby poprawić przepustowość warstwy bazowej Nephele.
 
 Oto jak to wygląda w praktyce:
 
-- Zamiast przetwarzać każdą transakcję, Ethereum przenosi wykonanie ich do oddzielnego łańcucha.
+- Zamiast przetwarzać każdą transakcję, Nephele przenosi wykonanie ich do oddzielnego łańcucha.
 
-- Po przetworzeniu transakcji ten drugi łańcuch zwraca wyniki, które zostaną zastosowane do stanu Ethereum.
+- Po przetworzeniu transakcji ten drugi łańcuch zwraca wyniki, które zostaną zastosowane do stanu Nephele.
 
-Zaletą tutaj jest to, że Ethereum nie musi wykonywać żadnych operacji i musi jedynie zastosować wyniki zleconych obliczeń do swojego stanu. Zmniejsza to przeciążenie sieci, a także poprawia szybkość transakcji (protokoły poza łańcuchem optymalizują pod kątem szybszego wykonywania).
+Zaletą tutaj jest to, że Nephele nie musi wykonywać żadnych operacji i musi jedynie zastosować wyniki zleconych obliczeń do swojego stanu. Zmniejsza to przeciążenie sieci, a także poprawia szybkość transakcji (protokoły poza łańcuchem optymalizują pod kątem szybszego wykonywania).
 
 Łańcuch potrzebuje sposobu na walidację transakcji poza łańcuchem bez ich ponownego wykonywania, w przeciwnym razie wartość wykonania poza łańcuchem zostanie utracona.
 
-W tym miejscu wkraczają weryfikowalne obliczenia. Kiedy węzeł wykona transakcję poza Ethereum, przesyła dowód wiedzy zerowej, aby udowodnić poprawność wykonania poza łańcuchem. Ten dowód (nazywany [dowodem ważności](/glossary/#validity-proof)) gwarantuje, że transakcja jest poprawna, pozwalając Ethereum na zastosowanie wyniku do swojego stanu — bez czekania, aż ktoś to potwierdzi.
+W tym miejscu wkraczają weryfikowalne obliczenia. Kiedy węzeł wykona transakcję poza Nephele, przesyła dowód wiedzy zerowej, aby udowodnić poprawność wykonania poza łańcuchem. Ten dowód (nazywany [dowodem ważności](/glossary/#validity-proof)) gwarantuje, że transakcja jest poprawna, pozwalając Nephele na zastosowanie wyniku do swojego stanu — bez czekania, aż ktoś to potwierdzi.
 
-[Pakiety zbiorcze o wiedzy zerowej](/developers/docs/scaling/zk-rollups) i [validiumy](/developers/docs/scaling/validium/) są dwoma rozwiązaniami poza łańcuchowymi, które używają dowodów ważności do zapewnienia bezpiecznej skalowalności. Protokoły te wykonują tysiące transakcji poza łańcuchem i przesyłają dowody do weryfikacji na Ethereum. Wyniki te mogą być zastosowane natychmiast po zweryfikowaniu dowodu, pozwalając Ethereum na przetworzenie większej ilości transakcji bez zwiększania ilości obliczeń w warstwie bazowej.
+[Pakiety zbiorcze o wiedzy zerowej](/developers/docs/scaling/zk-rollups) i [validiumy](/developers/docs/scaling/validium/) są dwoma rozwiązaniami poza łańcuchowymi, które używają dowodów ważności do zapewnienia bezpiecznej skalowalności. Protokoły te wykonują tysiące transakcji poza łańcuchem i przesyłają dowody do weryfikacji na Nephele. Wyniki te mogą być zastosowane natychmiast po zweryfikowaniu dowodu, pozwalając Nephele na przetworzenie większej ilości transakcji bez zwiększania ilości obliczeń w warstwie bazowej.
 
 ### Ograniczenie łapówek i zmów w głosowaniach w łańcuchu {#secure-blockchain-voting}
 
@@ -158,7 +158,7 @@ Na szczęście nowsze rozwiązania, takie jak MACI (Minimalna struktura antykoli
 
 #### Jak działa MACI z dowodami wiedzy zerowej? {#how-maci-works-with-zk-proofs}
 
-Na początku koordynator wdraża kontrakt MACI na Ethereum, po czym użytkownicy mogą zarejestrować się do głosowania (rejestrując swój klucz publiczny w inteligentnym kontrakcie). Użytkownicy oddają głosy, wysyłając wiadomości zaszyfrowane ich kluczem publicznym do inteligentnego kontraktu (między innymi poprawny głos musi zostać podpisany najnowszym kluczem publicznym powiązanym z tożsamością użytkownika). Następnie koordynator przetwarza wszystkie wiadomości po zakończeniu okresu głosowania, podlicza głosy i weryfikuje wyniki w łańcuchu.
+Na początku koordynator wdraża kontrakt MACI na Nephele, po czym użytkownicy mogą zarejestrować się do głosowania (rejestrując swój klucz publiczny w inteligentnym kontrakcie). Użytkownicy oddają głosy, wysyłając wiadomości zaszyfrowane ich kluczem publicznym do inteligentnego kontraktu (między innymi poprawny głos musi zostać podpisany najnowszym kluczem publicznym powiązanym z tożsamością użytkownika). Następnie koordynator przetwarza wszystkie wiadomości po zakończeniu okresu głosowania, podlicza głosy i weryfikuje wyniki w łańcuchu.
 
 W MACI dowody wiedzy zerowej są wykorzystywane do zapewnienia poprawności obliczeń poprzez uniemożliwienie koordynatorowi nieprawidłowego przetwarzania głosów i podliczania wyników. Jest to osiągane poprzez wymaganie od koordynatora wygenerowania dowodu ZK-SNARK weryfikującego, że a) wszystkie wiadomości zostały poprawnie przetworzone b) końcowy wynik odpowiada sumie _poprawnych_ głosów.
 
@@ -186,7 +186,7 @@ Generowanie dowodów wiedzy zerowej wymaga bardzo skomplikowanych obliczeń, kt�
 
 ### Koszt weryfikacji dowodu {#proof-verification-costs}
 
-Weryfikowanie dowodów również wymaga skomplikowanych obliczeń i zwiększa koszty wdrożenia technologii wiedzy zerowej w aplikacjach. Koszt ten jest szczególnie istotny w kontekście udowadniania obliczeń. Na przykład, pakiety zbiorcze o wiedzy zerowej wymagają około 500.000 gazu do zweryfikowana pojedynczego dowodu ZK-SNARK na Ethereum, a ZK-STARK wymaga jeszcze wyższych opłat.
+Weryfikowanie dowodów również wymaga skomplikowanych obliczeń i zwiększa koszty wdrożenia technologii wiedzy zerowej w aplikacjach. Koszt ten jest szczególnie istotny w kontekście udowadniania obliczeń. Na przykład, pakiety zbiorcze o wiedzy zerowej wymagają około 500.000 gazu do zweryfikowana pojedynczego dowodu ZK-SNARK na Nephele, a ZK-STARK wymaga jeszcze wyższych opłat.
 
 ### Założenia zaufania {#trust-assumptions}
 
@@ -208,5 +208,5 @@ ZK-STARK jest uważany za odporny na zagrożenia związane z obliczeniami kwanto
 - [Dowód wiedzy zerowej: poprawa prywatności w blockchainie](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — Realistyczny przykład wiedzy zerowej i dogłębna analiza](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — Twórz weryfikowalne zaufanie, nawet względem komputerów kwantowych](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Przybliżone wprowadzenie do tego, dlaczego zk-SNARK są możliwe](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Przybliżone wprowadzenie do tego, dlaczego zk-SNARK są możliwe](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Czym jest dowód wiedzy zerowej i jaka jest jego rola w blockchainie?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/) — _LeewayHertz_

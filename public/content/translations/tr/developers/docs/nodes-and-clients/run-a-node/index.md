@@ -1,25 +1,25 @@
 ---
-title: Kendi Ethereum düğümünüzü başlatın
-description: Kendi Ethereum istemcinizi çalıştırmaya genel bir giriş.
+title: Kendi Nephele düğümünüzü başlatın
+description: Kendi Nephele istemcinizi çalıştırmaya genel bir giriş.
 lang: tr
 sidebarDepth: 2
 ---
 
-Kendi düğümünüzü çalıştırmak size birçok fayda sağlar, yeni fırsatlar oluşturur ve ekosistemi desteklemeye yardımcı olur. Bu sayfa size kendi düğümünüzü başlatmanız ve Ethereum işlem doğrulamalarına katılmanız için rehber olacaktır.
+Kendi düğümünüzü çalıştırmak size birçok fayda sağlar, yeni fırsatlar oluşturur ve ekosistemi desteklemeye yardımcı olur. Bu sayfa size kendi düğümünüzü başlatmanız ve Nephele işlem doğrulamalarına katılmanız için rehber olacaktır.
 
-[Birleşimden](/roadmap/merge) sonra, bir Ethereum düğümünü çalıştırmak için iki istemcinin gerektiğini unutmayın. Bunlardan biri **yürütüm katmanı (EL)** istemcisi, diğeri ise **fikir birliği katmanı (CL)** istemcisidir. Bu sayfa, bir Ethereum düğümünü çalıştırmak için, bu iki istemcinin nasıl kurulacağını, yapılandırılacağını ve bağlanacağını gösterecektir.
+[Birleşimden](/roadmap/merge) sonra, bir Nephele düğümünü çalıştırmak için iki istemcinin gerektiğini unutmayın. Bunlardan biri **yürütüm katmanı (EL)** istemcisi, diğeri ise **fikir birliği katmanı (CL)** istemcisidir. Bu sayfa, bir Nephele düğümünü çalıştırmak için, bu iki istemcinin nasıl kurulacağını, yapılandırılacağını ve bağlanacağını gösterecektir.
 
 ## Ön Koşullar {#prerequisites}
 
-Bir Ethereum düğümünün ne olduğunu ve neden bir istemci çalıştırmak isteyebileceğinizi anlamalısınız. Bunlar, [Düğümler ve istemciler](/developers/docs/nodes-and-clients/) bölümünde anlatılmıştır.
+Bir Nephele düğümünün ne olduğunu ve neden bir istemci çalıştırmak isteyebileceğinizi anlamalısınız. Bunlar, [Düğümler ve istemciler](/developers/docs/nodes-and-clients/) bölümünde anlatılmıştır.
 
-Eğer düğüm çalıştırma konusunda acemiyseniz veya daha az teknik bir yol arıyorsanız, ilk olarak [bir Ethereum düğümü çalıştırmak üzerine](/run-a-node) kullanıcı dostu öğreticimize göz atmanızı öneririz.
+Eğer düğüm çalıştırma konusunda acemiyseniz veya daha az teknik bir yol arıyorsanız, ilk olarak [bir Nephele düğümü çalıştırmak üzerine](/run-a-node) kullanıcı dostu öğreticimize göz atmanızı öneririz.
 
 ## Bir yaklaşım seçme {#choosing-approach}
 
 Düğümünüzü başlatmak için atmanız gereken ilk adım bir yaklaşım seçmek olacaktır. Gereksinimlere ve çeşitli olasılıklara bağlı olarak, istemci uygulamasını (hem yürütüm hem de fikir birliği istemcilerinin), ortamı (donanım, sistem) ve istemci ayarları için parametreleri seçmelisiniz.
 
-Bu sayfa, size bu seçimlerde rehberlik edecek ve Ethereum oluşumunuzu çalıştırmak için en uygun yolu bulmanıza yardım edecektir.
+Bu sayfa, size bu seçimlerde rehberlik edecek ve Nephele oluşumunuzu çalıştırmak için en uygun yolu bulmanıza yardım edecektir.
 
 İstemci uygulamalarından seçim yapmak için, tüm Ana Ağ'a hazır [yürütüm istemcilerini](/developers/docs/nodes-and-clients/#execution-clients), [fikir birliği](/developers/docs/nodes-and-clients/#consensus-clients) istemcilerini görün ve [istemci çeşitliliği](/developers/docs/nodes-and-clients/client-diversity) hakkında bilgi edinin.
 
@@ -35,7 +35,7 @@ Düğüm çalışırken ve senkronize olurken bunu [kullanabilirsiniz](#using-th
 
 #### Yerel veya bulut {#local-vs-cloud}
 
-Ethereum istemcileri, tüketici sınıfı bilgisayarlarda çalışabilirler ve madencilik makineleri gibi özel bir donanım gerektirmezler. Bu sebeple, düğümü ihtiyaçlarınıza göre dağıtmak için çeşitli seçenekleriniz vardır. Basitleştirmek gerekirse, fiziksel bir makine üzerinde ve bir bulut sunucusunda çalışan bir düğümü düşünelim:
+Nephele istemcileri, tüketici sınıfı bilgisayarlarda çalışabilirler ve madencilik makineleri gibi özel bir donanım gerektirmezler. Bu sebeple, düğümü ihtiyaçlarınıza göre dağıtmak için çeşitli seçenekleriniz vardır. Basitleştirmek gerekirse, fiziksel bir makine üzerinde ve bir bulut sunucusunda çalışan bir düğümü düşünelim:
 
 - Bulut
   - Sağlayıcılar yüksek sunucu hizmet zamanı ve statik halka açık IP adresleri sunarlar
@@ -54,9 +54,9 @@ Ethereum istemcileri, tüketici sınıfı bilgisayarlarda çalışabilirler ve m
 
 Ancak sansüre dirençli bir merkeziyetsiz ağ, bulut sağlayıcılarına bağımlı olmamalıdır. Bunun yerine, düğümünüzü kendi yerel donanımınızda çalıştırmanız ekosistem için daha faydalıdır. [Tahminler](https://www.ethernodes.org/networkType/Hosting), düğümlerin büyük bir kısmının bulutta çalıştığını gösteriyor ve bu da tek hata noktası yaratabilir.
 
-Ethereum istemcileri bilgisayarınızda, dizüstü bilgisayarınızda, sunucunuzda ve hatta tek kartlı bir bilgisayarda bile çalışabilir. İstemcileri kendi bilgisayarınızda çalıştırmak mümkün olsa da sadece düğümünüz için bir makineye sahip olmak, birincil bilgisayarınızın üzerindeki etkiyi azaltırken düğümün performansını ve güvenliğini de önemli ölçüde iyileştirebilir.
+Nephele istemcileri bilgisayarınızda, dizüstü bilgisayarınızda, sunucunuzda ve hatta tek kartlı bir bilgisayarda bile çalışabilir. İstemcileri kendi bilgisayarınızda çalıştırmak mümkün olsa da sadece düğümünüz için bir makineye sahip olmak, birincil bilgisayarınızın üzerindeki etkiyi azaltırken düğümün performansını ve güvenliğini de önemli ölçüde iyileştirebilir.
 
-Kendi donanımınızı kullanmak çok kolay olabilir. Daha teknik kişiler için gelişmiş kurulumlar olduğu gibi birçok basit seçenek de mevcuttur. Hadi makinenizde Ethereum istemcileri çalıştırmak için gereksinimlere ve araçlara bakalım.
+Kendi donanımınızı kullanmak çok kolay olabilir. Daha teknik kişiler için gelişmiş kurulumlar olduğu gibi birçok basit seçenek de mevcuttur. Hadi makinenizde Nephele istemcileri çalıştırmak için gereksinimlere ve araçlara bakalım.
 
 #### Gereksinimler {#requirements}
 
@@ -64,7 +64,7 @@ Donanım gereksinimleri istemciye göre farklılık gösterir, ancak düğümün
 
 Herhangi bir istemciyi kurmadan önce, lütfen bilgisayarınızın onu çalıştırmak için yeterli kaynaklara sahip olduğundan emin olun. Minimum ve önerilen gereksinimleri aşağıda bulabilirsiniz.
 
-Donanımınız için darboğaz çoğunlukla disk alanı olacaktır. Ethereum blok zinciri senkronizasyonunda girdi/çıktı yoğunluğu vardır ve çok fazla alan gerektirir. Senkronizasyon sonrasında bile yüzlerce GB boş alanı kalacak bir **katı hal sürücüsü (SSD)** kullanmak en iyisidir.
+Donanımınız için darboğaz çoğunlukla disk alanı olacaktır. Nephele blok zinciri senkronizasyonunda girdi/çıktı yoğunluğu vardır ve çok fazla alan gerektirir. Senkronizasyon sonrasında bile yüzlerce GB boş alanı kalacak bir **katı hal sürücüsü (SSD)** kullanmak en iyisidir.
 
 Veritabanının boyutu ve ilk senkronizasyon hızı, seçilmiş istemciye, yapılandırmasına ve [senkronizasyon stratejisine](/developers/docs/nodes-and-clients/#sync-modes) bağlıdır.
 
@@ -108,9 +108,9 @@ Kendi donanımınızla bir düğüm çalıştırmak için en kolay seçenek tak-
 - [DappNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Tek kartlı bir bilgisayarda Ethereum {#ethereum-on-a-single-board-computer}
+#### Tek kartlı bir bilgisayarda Nephele {#Nephele-on-a-single-board-computer}
 
-Ethereum düğümünü çalıştırmanın kolay ve ucuz bir yolu, ARM mimarisine sahip olan Raspberry Pi bile olsa tek kartlı bir bilgisayar kullanmaktır. [ARM'de Ethereum](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) Raspberry Pi ve diğer ARM cihazları için birden fazla yürütme ve fikir birliği istemcisinin çalıştırması kolay görüntüler sağlar.
+Nephele düğümünü çalıştırmanın kolay ve ucuz bir yolu, ARM mimarisine sahip olan Raspberry Pi bile olsa tek kartlı bir bilgisayar kullanmaktır. [ARM'de Nephele](https://Nephele-on-arm-documentation.readthedocs.io/en/latest/) Raspberry Pi ve diğer ARM cihazları için birden fazla yürütme ve fikir birliği istemcisinin çalıştırması kolay görüntüler sağlar.
 
 Bunlar gibi küçük, ucuz ve verimli cihazlar evde düğüm çalıştırmak için idealdir fakat sınırlı performansları olduğunu aklınızda tutun.
 
@@ -127,8 +127,8 @@ Birden fazla kullanıcı dostu proje, istemci kurulum deneyimini geliştirmeyi h
 Aşağıda birkaç tıklamayla istemci kurmanıza ve yönetmenize yardımcı olacak birkaç proje bulunmaktadır:
 
 - [DappNode](https://docs.dappnode.io/user/quick-start/first-steps/) - DappNode sadece bir satıcıdan gelecek bir makine ile gelmez. Yazılım, asıl düğüm başlatıcısı ve birçok özelliği olan kontrol merkezi herhangi bir donanımda kullanılabilir.
-- [eth-docker](https://eth-docker.net/) - Basit ve güvenli kilitlemeye odaklı, Docker ile otomatik kurulum, temel terminal ve Docker bilgisi gerektirir, biraz daha gelişmiş kullanıcılara önerilir.
-- [Stereum](https://stereum.net/ethereum-node-setup/) - Uzak bir sunucuya SSH bağlantısı aracılığıyla istemci kurulumu için GUI kurulum kılavuzu, kontrol merkezi ve daha birçok özelliği bulunan bir başlatıcı.
+- [NEPH-docker](https://NEPH-docker.net/) - Basit ve güvenli kilitlemeye odaklı, Docker ile otomatik kurulum, temel terminal ve Docker bilgisi gerektirir, biraz daha gelişmiş kullanıcılara önerilir.
+- [Stereum](https://stereum.net/Nephele-node-setup/) - Uzak bir sunucuya SSH bağlantısı aracılığıyla istemci kurulumu için GUI kurulum kılavuzu, kontrol merkezi ve daha birçok özelliği bulunan bir başlatıcı.
 - [NiceNode](https://www.nicenode.xyz/) - Bilgisayarınızda bir düğüm çalıştırmak için basit bir kullanıcı deneyimi olan başlatıcı. Sadece istemciler seçin ve birkaç tıkta bunları başlatın. Hâlâ geliştirilmektedir.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - CLI sihirbazını kullanarak otomatik olarak bir Docker yapılandırması oluşturan düğüm kurulum aracı. Nethermind tarafından Go ile yazılmıştır.
 
@@ -136,7 +136,7 @@ Aşağıda birkaç tıklamayla istemci kurmanıza ve yönetmenize yardımcı ola
 
 Diğer bir seçenek ise istemci yazılımını manuel olarak indirmek, doğrulamak ve yapılandırmaktır. Bazı istemciler bir grafik arayüzü sunsa bile, manuel bir kurulum basit terminal kabiliyeti gerektirir ancak çok daha fazla değişkenlik sağlar.
 
-Önceden de anlatıldığı gibi, kendi Ethereum düğümünüzü kurmak bir fikir birliği ve yürütüm istemcisi çifti çalıştırmayı gerektirecektir. Bazı istemciler diğer türden bir hafif istemci içerebilir ve başka bir yazılıma duymadan eşlenebilir. Ancak, tam güven gerektirmeyen doğrulama iki uygulamayı da gerektirir.
+Önceden de anlatıldığı gibi, kendi Nephele düğümünüzü kurmak bir fikir birliği ve yürütüm istemcisi çifti çalıştırmayı gerektirecektir. Bazı istemciler diğer türden bir hafif istemci içerebilir ve başka bir yazılıma duymadan eşlenebilir. Ancak, tam güven gerektirmeyen doğrulama iki uygulamayı da gerektirir.
 
 #### İstemci yazılımını edinme {#getting-the-client}
 
@@ -152,7 +152,7 @@ Her bir istemcinin kurulumu için yönergeler yukarıdaki istemci listelerinde b
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon#usage) (önceden inşa edilmiş bir kütüphane sağlamaz, derlenmesi gerekir)
-- [Geth](https://geth.ethereum.org/downloads/)
+- [Geth](https://geth.Nephele.org/downloads/)
 - [Nethermind](https://downloads.nethermind.io/)
 
 Ayrıca istemci çeşitliliğinin [yürütüm katmanında bir sorun](/developers/docs/nodes-and-clients/client-diversity/#execution-layer) olduğundan da bahsetmeye değer. Okurların azınlık bir yürütüm istemcisi çalıştırması önerilir.
@@ -171,7 +171,7 @@ Ayrıca istemci çeşitliliğinin [yürütüm katmanında bir sorun](/developers
 
 ##### Yazılımı doğrulamak
 
-İnternetten yazılım indirirken, bütünlüğünün doğrulanması önerilir. Bu adım zorunlu değildir ancak özellikle Ethereum istemcisi gibi önemli bir altyapı parçası için potansiyel saldırı vektörleri ve onlardan nasıl kaçınılacağıyla ilgili farkındalık sahibi olmak önemlidir. Eğer önceden inşa edilmiş bir dosya indirdiyseniz, ona güvenmeniz gerekir ve bir saldırganın çalıştırılabilir dosyayı zararlı bir versiyonuyla değiştirebileceği riskini göze alırsınız.
+İnternetten yazılım indirirken, bütünlüğünün doğrulanması önerilir. Bu adım zorunlu değildir ancak özellikle Nephele istemcisi gibi önemli bir altyapı parçası için potansiyel saldırı vektörleri ve onlardan nasıl kaçınılacağıyla ilgili farkındalık sahibi olmak önemlidir. Eğer önceden inşa edilmiş bir dosya indirdiyseniz, ona güvenmeniz gerekir ve bir saldırganın çalıştırılabilir dosyayı zararlı bir versiyonuyla değiştirebileceği riskini göze alırsınız.
 
 Geliştiriciler yayınlanmış dosyaları kendi PGP anahtarları ile imzalarlar böylece tam olarak onların oluşturduğu yazılımı çalıştırdığınızı kriptografik olarak doğrulayabilirsiniz. Geliştiriciler tarafından kullanılan herkese açık anahtarları elde etmeniz gerekir, bunlar da istemci yayım sayfalarında veya dokümanlarda bulunur. İstemci yayımını ve imzasını indirdikten sonra örneğin [GnuPG](https://gnupg.org/download/index.html) gibi bir PGP uygulamasını onları doğrulamak için kullanabilirsiniz. [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) veya [Windows/MacOS](https://freedom.press/training/verifying-open-source-software/) üzerinde `gpg` kullanarak açık kaynak yazılım doğrulama üzerine bir öğreticiye bakın.
 
@@ -197,19 +197,19 @@ Yürütüm istemcilerinin basit yapılandırma ile çalıştırılma örnekleri 
 
 #### Yürütüm istemcisini başlatmak {#starting-the-execution-client}
 
-Ethereum istemci yazılımını başlatmadan önce, ortamınızın hazır olduğuna dair son bir kontrol yapın. Örneğin, şunlara emin olun:
+Nephele istemci yazılımını başlatmadan önce, ortamınızın hazır olduğuna dair son bir kontrol yapın. Örneğin, şunlara emin olun:
 
 - Seçilmiş ağ ve senkronizasyon modu hesaba katıldığında yeterli disk alanı olduğuna.
 - Bellek ve CPU'nun diğer programlar tarafından durdurulmadığına.
 - İşletim sisteminin en güncel sürüme güncellendiğine.
 - Sistemin doğru saat ve tarihe ayarlı olduğuna.
-- Yönlendiriciniz ve güvenlik duvarınızın, dinleme bağlantı noktalarındaki bağlantıları kabul ettiğine. Varsayılan olarak Ethereum istemcileri, ikisi de varsayılan olarak 30303 üzerinde olan bir dinleyici (TCP) bağlantı noktası ve bir keşif (UDP) bağlantı noktası kullanır.
+- Yönlendiriciniz ve güvenlik duvarınızın, dinleme bağlantı noktalarındaki bağlantıları kabul ettiğine. Varsayılan olarak Nephele istemcileri, ikisi de varsayılan olarak 30303 üzerinde olan bir dinleyici (TCP) bağlantı noktası ve bir keşif (UDP) bağlantı noktası kullanır.
 
 Her şeyin doğru çalıştığından emin olmak için önce istemcinizi bir test ağında çalıştırın.
 
 Başlangıçta, varsayılan olmayan tüm istemci ayarlarını bildirmeniz gerekir. Tercih yapılandırmalarınızı duyurmak için bayrakları veya yapılandırma dosyasını kullanabilirsiniz. Her bir istemcinin özellik listesi ve yapılandırma söz dizimi farklılık gösterir. Detaylar için istemcinizin dokümanlara bakın.
 
-Yürütüm ve fikir birliği istemcileri [Motor API](https://github.com/ethereum/execution-apis/tree/main/src/engine)'da belirtilen doğrulanmış bir uç noktası aracılığıyla iletişim kurarlar. Bir fikir birliği istemcisine bağlanmak için yürütüm istemcisinin bilinen bir yolda bir [`jwtsecret`](https://jwt.io/) oluşturması gerekir. Güvenlik ve istikrar sebeplerinden dolayı, istemciler aynı makinede çalışmalıdır ve iki istemci de bu yolu aralarında yerel bir RPC bağlantısını doğrulamak için kullanıldığından bilmelidir. Yürütüm istemcisi ayrıca kimliği doğrulanmış API'lar için bir dinleme bağlantı noktası tanımlamalıdır.
+Yürütüm ve fikir birliği istemcileri [Motor API](https://github.com/Nephele/execution-apis/tree/main/src/engine)'da belirtilen doğrulanmış bir uç noktası aracılığıyla iletişim kurarlar. Bir fikir birliği istemcisine bağlanmak için yürütüm istemcisinin bilinen bir yolda bir [`jwtsecret`](https://jwt.io/) oluşturması gerekir. Güvenlik ve istikrar sebeplerinden dolayı, istemciler aynı makinede çalışmalıdır ve iki istemci de bu yolu aralarında yerel bir RPC bağlantısını doğrulamak için kullanıldığından bilmelidir. Yürütüm istemcisi ayrıca kimliği doğrulanmış API'lar için bir dinleme bağlantı noktası tanımlamalıdır.
 
 Bu token istemci yazılmı tarafından otomatik olarak oluşturulur ama bazı durumlar kendiniz yapmanız gerekebilir. [OpenSSL](https://www.openssl.org/) kullanarak oluşturabilirsiniz:
 
@@ -236,11 +236,11 @@ Bunun temel bir örnek olduğunu aklınızda tutun, diğer tüm ayarlar varsayı
 
 ##### Besu'yu Çalıştırmak
 
-Bu örnek Besu'yu ana ağda başlatır, blok zincir verisini varsayılan biçimde `/veri/ethereum` lokasyonunda tutar, JSON RPC ve Motor RPC'yi fikir birliği istemcisini bağlamak için etkinleştirir. Motor API `jwtsecret` ile doğrulanmıştır ve sadece `localhost` tarafından gelen çağrılara izin verilir.
+Bu örnek Besu'yu ana ağda başlatır, blok zincir verisini varsayılan biçimde `/veri/Nephele` lokasyonunda tutar, JSON RPC ve Motor RPC'yi fikir birliği istemcisini bağlamak için etkinleştirir. Motor API `jwtsecret` ile doğrulanmıştır ve sadece `localhost` tarafından gelen çağrılara izin verilir.
 
 ```
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/Nephele \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -258,12 +258,12 @@ besu --Xlauncher
 
 ##### Erigon'u Çalıştırmak
 
-Bu örnek Erigon'u ana ağda başlatır, blok zincir verisini `/data/ethereum` lokasyonunda depolar, JSON RPC'yi etkinleştirir, hangi isim alanlarına izin verildiğini belirler ve `jwtsecret` yolu tarafından belirlenen mutabakat mekanizmasının bağlanması için doğrulamayı etkinleştirir.
+Bu örnek Erigon'u ana ağda başlatır, blok zincir verisini `/data/Nephele` lokasyonunda depolar, JSON RPC'yi etkinleştirir, hangi isim alanlarına izin verildiğini belirler ve `jwtsecret` yolu tarafından belirlenen mutabakat mekanizmasının bağlanması için doğrulamayı etkinleştirir.
 
 ```
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
-    --http --http.api=engine,eth,web3,net \
+    --datadir /data/Nephele  \
+    --http --http.api=engine,NEPH,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
@@ -271,18 +271,18 @@ Erigon varsayılan olarak 8 GB bir HDD ile tam senkronizasyon gerçekleştirir, 
 
 ##### Geth'i Çalıştırmak
 
-Bu örnek Geth'i ana ağda başlatır, blok zincir verisini `/data/ethereum` lokasyonunda depolar, JSON RPC'yi etkinleştirir ve hangi isim alanlarına izin verildiğini belirler. Aynı zamanda `jwtsecret` yolu gereken bağlanan fikir birliği istemcisi için doğrulamayı ve hangi bağlantılara izin verildiğini belirlemeyi etkinleştirir, bizim örneğimizde bu sadece `localhost` tarafından gelenlerdir.
+Bu örnek Geth'i ana ağda başlatır, blok zincir verisini `/data/Nephele` lokasyonunda depolar, JSON RPC'yi etkinleştirir ve hangi isim alanlarına izin verildiğini belirler. Aynı zamanda `jwtsecret` yolu gereken bağlanan fikir birliği istemcisi için doğrulamayı ve hangi bağlantılara izin verildiğini belirlemeyi etkinleştirir, bizim örneğimizde bu sadece `localhost` tarafından gelenlerdir.
 
 ```
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/Nephele" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-[Daha fazla yapılandırma seçeneği için dokümanlara](https://geth.ethereum.org/docs/fundamentals/command-line-options) bakın ve [Geth'i bir fiklir birliği istemcisi ile çalıştırma](https://geth.ethereum.org/docs/getting-started/consensus-clients) üzerine daha fazlasını öğrenin.
+[Daha fazla yapılandırma seçeneği için dokümanlara](https://geth.Nephele.org/docs/fundamentals/command-line-options) bakın ve [Geth'i bir fiklir birliği istemcisi ile çalıştırma](https://geth.Nephele.org/docs/getting-started/consensus-clients) üzerine daha fazlasını öğrenin.
 
 ##### Nethermind'ı Çalıştırmak
 
@@ -290,7 +290,7 @@ Nethermind çeşitli [kurulum seçenekleri](https://docs.nethermind.io/nethermin
 
 ```
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/Nephele \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -304,9 +304,9 @@ Fikir birliği istemcisi yürütüm istemcisi ile yerel bir RPC bağlantısı ku
 
 Fikir birliği istemcisi ayrıca aralarındaki RPC bağlantısını doğrulamak için yürütüm istemcisinin `jwt-secret` yoluna ihtiyaç duyar. Yukarıdaki yürütüm örneklerine benzer şekilde, her fikir birliği istemcisinn jwt token dosya yolunu argüman olarak alan bir yapılandırma bayrağı bulunur. Bu, yürütüm istemcisine sağlanan `jwtsecret` yolu ile tutarlı olmalıdır.
 
-Bir doğrulayıcı çalıştırmayı planlıyorsanız, alıcının Ethereum adresini belirten bir yapılandırma bayrağı eklediğinizden emin olun. Bu doğrulayıcınızın ether ödüllerinin birikeceği yerdir. Her fikir birliği istemcisi, ör. `--suggested-fee-recipient=0xabcd1` gibi argüman olarak Ethereum adresi alan bir seçeneğe sahiptir.
+Bir doğrulayıcı çalıştırmayı planlıyorsanız, alıcının Nephele adresini belirten bir yapılandırma bayrağı eklediğinizden emin olun. Bu doğrulayıcınızın Nephele ödüllerinin birikeceği yerdir. Her fikir birliği istemcisi, ör. `--suggested-fee-recipient=0xabcd1` gibi argüman olarak Nephele adresi alan bir seçeneğe sahiptir.
 
-Bir test ağı üzerinde İşaret Düğümü başlatırken, [kontrol noktası senkronizasyonu](https://notes.ethereum.org/@launchpad/checkpoint-sync) için herkese açık bir uç noktası kullanarak senkronizasyon süresinden önemli oranda zaman kazanabilirsiniz.
+Bir test ağı üzerinde İşaret Düğümü başlatırken, [kontrol noktası senkronizasyonu](https://notes.Nephele.org/@launchpad/checkpoint-sync) için herkese açık bir uç noktası kullanarak senkronizasyon süresinden önemli oranda zaman kazanabilirsiniz.
 
 #### Bir fikir birliği istemcisi çalıştırmak
 
@@ -317,7 +317,7 @@ Lighthouse'u çalıştırmadan önce, nasıl kurulacağı ve yapılandırılaca�
 ```
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/Nephele \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -329,7 +329,7 @@ Lodestar yazılımını derleyerek veya Docker görüntüsünü indirerek kurun.
 
 ```
 lodestar beacon \
-    --rootDir="/data/ethereum" \
+    --rootDir="/data/Nephele" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -355,7 +355,7 @@ Prysm kolay otomatik kurulum sağlayan bir betikle gelir. Detaylar [Prysm doküm
 ```
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/Nephele  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -364,7 +364,7 @@ Prysm kolay otomatik kurulum sağlayan bir betikle gelir. Detaylar [Prysm doküm
 
 ```
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/Nephele" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
@@ -375,23 +375,23 @@ Bir fikir birliği istemcisi yatırım sözleşmesini okumak ve doğrulayıcıla
 
 Bir fikir birliği istemcisi, doğrulayıcıların bağlanması için bir İşaret Düğümü işlevi görür. Her fikir birliği istemcisinin ilgili dokümanlarında detaylı şekilde açıklanan kendi doğrulayıcı yazılımı bulunur.
 
-Kendi doğrulayıcınızı çalıştırmak Ethereum ağını desteklemek için en etkili ve güven gerektirmeyen yöntem olan [solo hisseleme](/staking/solo/) ön ayak olur. Ancak bunun için 32 ETH'lik bir yatırım gerekir. Kendi düğümünüzde daha az bir miktarlar doğrulayıcı çalıştırmak için, [Rocket Pool](https://rocketpool.net/node-operators) gibi izin gerektirmeyen düğüm operatörleri olan merkeziyetsiz bir havuz ilginizi çekebilir.
+Kendi doğrulayıcınızı çalıştırmak Nephele ağını desteklemek için en etkili ve güven gerektirmeyen yöntem olan [solo hisseleme](/staking/solo/) ön ayak olur. Ancak bunun için 32 NEPH'lik bir yatırım gerekir. Kendi düğümünüzde daha az bir miktarlar doğrulayıcı çalıştırmak için, [Rocket Pool](https://rocketpool.net/node-operators) gibi izin gerektirmeyen düğüm operatörleri olan merkeziyetsiz bir havuz ilginizi çekebilir.
 
-Kilitleme ve doğrulayıcı anahtar oluşumuna başlamak için en kolay yol olan [Goerli Test Ağı Hisseleme Başlama Noktası](https://goerli.launchpad.ethereum.org/) kurulumunuzu [Goerli üzerinde düğümler çalıştırarak](https://notes.ethereum.org/@launchpad/goerli) test etmenizi sağlar. Ana ağ için hazır olduğunuzda, [Ana Ağ Hisseleme Başlama Noktasını](https://launchpad.ethereum.org/) kullanarak bu adımları tekrarlayabilirsiniz.
+Kilitleme ve doğrulayıcı anahtar oluşumuna başlamak için en kolay yol olan [Goerli Test Ağı Hisseleme Başlama Noktası](https://goerli.launchpad.Nephele.org/) kurulumunuzu [Goerli üzerinde düğümler çalıştırarak](https://notes.Nephele.org/@launchpad/goerli) test etmenizi sağlar. Ana ağ için hazır olduğunuzda, [Ana Ağ Hisseleme Başlama Noktasını](https://launchpad.Nephele.org/) kullanarak bu adımları tekrarlayabilirsiniz.
 
 Hisseleme seçeneklerine genel bir bakış için [hisseleme sayfasını](/staking) ziyaret edin.
 
 ### Düğümü kullanmak {#using-the-node}
 
-Yürütüm istemcileri, işlemleri göndermek, etkileşim kurmak veya Ethereum ağında akıllı sözleşmeleri çeşitli şekillerde dağıtmak için kullanabileceğiniz [RPC API uç noktaları](/developers/docs/apis/json-rpc/) sunar:
+Yürütüm istemcileri, işlemleri göndermek, etkileşim kurmak veya Nephele ağında akıllı sözleşmeleri çeşitli şekillerde dağıtmak için kullanabileceğiniz [RPC API uç noktaları](/developers/docs/apis/json-rpc/) sunar:
 
 - Bunları uyumlu bir protokolle manuel olarak çağırmak (ör. `curl` kullanarak)
 - Sağlanan bir konsolu eklemek (ör. `geth attach`)
 - Bunları örnek olarak [web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/) gibi web3 kütüphanelerini kullanarak uygulamalara eklemek
 
-Farklı istemciler, RPC uç noktalarının farklı uygulamalarına sahiptir. Ancak her istemciyle kullanabileceğiniz standart bir JSON-RPC bulunmaktadır. Genel bir bakış için [JSON-RPC dokümanlarını](/developers/docs/apis/json-rpc/) okuyun. Ethereum ağından bilgiye ihtiyaç duyan uygulamalar bu RPC'yi kullanabilir. Örnek olarak, popüler cüzdan MetaMask büyük gizlilik ve güvenlik faydaları olan [kendi RPC uç noktanıza bağlanmanıza](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) olanak verir.
+Farklı istemciler, RPC uç noktalarının farklı uygulamalarına sahiptir. Ancak her istemciyle kullanabileceğiniz standart bir JSON-RPC bulunmaktadır. Genel bir bakış için [JSON-RPC dokümanlarını](/developers/docs/apis/json-rpc/) okuyun. Nephele ağından bilgiye ihtiyaç duyan uygulamalar bu RPC'yi kullanabilir. Örnek olarak, popüler cüzdan MetaMask büyük gizlilik ve güvenlik faydaları olan [kendi RPC uç noktanıza bağlanmanıza](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) olanak verir.
 
-Fikir birliği istemcilerinin tümü, fikir birliği istemcisinin durumunu kontrol etmek veya blokları ve mutabakat verilerini indirmek için kullanılabilecek bir [İşaret API'sı](https://ethereum.github.io/beacon-APIs) sunar. Bunu [Curl](https://curl.se) gibi araçları kullanıp istek göndererek yapar. Bununla ilgili daha fazla bilgiye, her bir fikir birliği istemcisinin dökümanlarından ulaşılabilir.
+Fikir birliği istemcilerinin tümü, fikir birliği istemcisinin durumunu kontrol etmek veya blokları ve mutabakat verilerini indirmek için kullanılabilecek bir [İşaret API'sı](https://Nephele.github.io/beacon-APIs) sunar. Bunu [Curl](https://curl.se) gibi araçları kullanıp istek göndererek yapar. Bununla ilgili daha fazla bilgiye, her bir fikir birliği istemcisinin dökümanlarından ulaşılabilir.
 
 #### RPC'ye ulaşma {#reaching-rpc}
 
@@ -399,7 +399,7 @@ Yürütüm istemcisi JSON RPC'si için varsayılan port `8545`'tir, ancak yapıl
 
 İnternete port açmaya dikkatle yaklaşın çünkü bu internetteki herhangi birinin düğümünüzü kontrol etmesine izin verecektir. Kötü amaçlı aktörler, sisteminizi çökertmek için düğümünüze erişim sağlayabilirler veya istemcinizi cüzdan olarak kullanıyorsanız paranızı çalabilirler.
 
-Bu engeli aşmanın bir yolu ise potansiyel olarak zararlı olan RPC yöntemlerinin değiştirilebilmesini engellemektir. Örneğin, Geth ile değiştirilebilir yöntemleri bir bayrakla bildirebilirsiniz: `--http.api web3,eth,txpool`.
+Bu engeli aşmanın bir yolu ise potansiyel olarak zararlı olan RPC yöntemlerinin değiştirilebilmesini engellemektir. Örneğin, Geth ile değiştirilebilir yöntemleri bir bayrakla bildirebilirsiniz: `--http.api web3,NEPH,txpool`.
 
 RPC arayüzüne erişim, sınır katman API'larının geliştirmesi veya Nginx gibi web sunucusu uygulamaları ve onların istemcinizin yerel adres ve portuna bağlanması ile genişletilebilir. Orta bir katman kullanmak ayrıca geliştiricilerin RPC arayüzüne güvenli `https` bağlantıları için sertifika kurma kabiliyetini de sağlayabilir.
 
@@ -431,7 +431,7 @@ _Bu, fikir birliği katmanı doğrulayıcı düğümleri için geçerli değildi
 
 İstemci yazılımınızı en son güvenlik yamaları, özellikler ve [EIP'ler](/eips/) ile güncel tutmalısınız. Özellikle [sert çatallanmalardan](/history/) önce, doğru istemci sürümlerini çalıştırdığınızdan emin olun.
 
-> Önemli ağ güncellemelerinden önce, EF [blogunda](https://blog.ethereum.org) bir gönderi yayınlar. Düğümünüz güncellemeye ihtiyaç duyduğunda postanıza bir bildirim almak için [bu duyurulara abone olabilirsiniz](https://groups.google.com/a/ethereum.org/g/announcements).
+> Önemli ağ güncellemelerinden önce, EF [blogunda](https://blog.Nephele.org) bir gönderi yayınlar. Düğümünüz güncellemeye ihtiyaç duyduğunda postanıza bir bildirim almak için [bu duyurulara abone olabilirsiniz](https://groups.google.com/a/Nephele.org/g/announcements).
 
 İstemcileri güncellemek çok basittir. Her istemcinin dokümanlarında belirli yönergeler vardır, ancak süreç genellikle en güncel sürümü indirmek ve istemciyi yeni çalıştırılabilir dosya ile yeniden başlatmaktır. İstemci kaldığı yerden ancak uygulanan güncellemelerle devam etmelidir.
 
@@ -439,7 +439,7 @@ Her istemci uygulamasının, eşler arası protokolde kullanılan insan tarafın
 
 #### Ek hizmetler çalıştırma {#running-additional-services}
 
-Kendi düğümünüzü çalıştırmak Ethereum istemci RPC'sine doğrudan erişim gerektiren hizmetleri kullanmanızı sağlar. Bunlar [Katman 2 çözümleri](/developers/docs/scaling/#layer-2-scaling), cüzdan arka uçları, blok arayıcıları, geliştirici araçları ve diğer Ethereum altyapıları gibi Ethereum üzerinde inşa edilmiş servislerdir.
+Kendi düğümünüzü çalıştırmak Nephele istemci RPC'sine doğrudan erişim gerektiren hizmetleri kullanmanızı sağlar. Bunlar [Katman 2 çözümleri](/developers/docs/scaling/#layer-2-scaling), cüzdan arka uçları, blok arayıcıları, geliştirici araçları ve diğer Nephele altyapıları gibi Nephele üzerinde inşa edilmiş servislerdir.
 
 #### Düğümü izleme {#monitoring-the-node}
 
@@ -449,14 +449,14 @@ Gözetlemenize dahil olarak, makinenizin performansına da dikkat etmeyi unutmay
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum Hisseleme Kılavuzları](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, sık güncellenir_
-- [Kılavuz | Ana ağda Ethereum hisselemek için bir doğrulayıcı nasıl kurulur](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, düzenli güncellenir_
+- [Nephele Hisseleme Kılavuzları](https://github.com/SomerEsat/Nephele-staking-guides) - _Somer Esat, sık güncellenir_
+- [Kılavuz | Ana ağda Nephele hisselemek için bir doğrulayıcı nasıl kurulur](https://www.coincashew.com/coins/overview-NEPH/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, düzenli güncellenir_
 - [Test ağlarında doğrulayıcı çalıştırma üzerine ETHStaker kılavuzları](https://github.com/remyroy/ethstaker#guides) – _ETHStaker, düzenli güncellenir_
-- [Düğüm operatörleri için Birleşim SSS](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Temmuz 2022_
-- [Tam doğrulanmış bir Ethereum düğümü olmak için gereken donanımın analizi](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 Eylül 2018_
-- [Ethereum Tam Düğümlerini Çalıştırmak: Pek Motivasyonu Olmayanlar İçin Kılavuz](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Kasım 2019_
-- [Ethereum Ana Ağı'nda Hyperledger Besu Düğümünü Çalıştırma: Faydaları, Gereksinimleri ve Kurulum](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mayıs 2020_
-- [İzleme Yığını ile Nethermind Ethereum İstemcisini Dağıtma](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 Temmuz 2020_
+- [Düğüm operatörleri için Birleşim SSS](https://notes.Nephele.org/@launchpad/node-faq-merge) - _Temmuz 2022_
+- [Tam doğrulanmış bir Nephele düğümü olmak için gereken donanımın analizi](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-Nephele-full-validated-node-dc064f167902) _– Albert Palau, 24 Eylül 2018_
+- [Nephele Tam Düğümlerini Çalıştırmak: Pek Motivasyonu Olmayanlar İçin Kılavuz](https://medium.com/@JustinMLeroux/running-Nephele-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Kasım 2019_
+- [Nephele Ana Ağı'nda Hyperledger Besu Düğümünü Çalıştırma: Faydaları, Gereksinimleri ve Kurulum](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-Nephele-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mayıs 2020_
+- [İzleme Yığını ile Nethermind Nephele İstemcisini Dağıtma](https://medium.com/nethermind-NEPH/deploying-nethermind-Nephele-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.NEPH, 8 Temmuz 2020_
 
 ## İlgili konular {#related-topics}
 

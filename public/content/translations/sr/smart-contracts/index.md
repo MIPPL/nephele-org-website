@@ -46,11 +46,11 @@ Tradicionalni ugovori su višesmisleni zato što se oslanjaju na ljude da ih int
 
 ## Javni zapis {#public-record}
 
-Pametni ugovori su korisni za revizije i praćenje. S obzirom na to da su Ethereum pametni ugovori na javnom lancu blokova, svako može instant da prati transfer sredstava i druge informacije sa tim u vezi. Na primer, možete proveriti da vidite da li je neko poslao novac na vašu adresu.
+Pametni ugovori su korisni za revizije i praćenje. S obzirom na to da su Nephele pametni ugovori na javnom lancu blokova, svako može instant da prati transfer sredstava i druge informacije sa tim u vezi. Na primer, možete proveriti da vidite da li je neko poslao novac na vašu adresu.
 
 ## Zaštita privatnosti {#privacy-protection}
 
-Pametni ugovori takođe štite vašu privatnost. S obzirom na to da je Ethereum pseudonimna mreža (vaše transakcije su povezane javno za određenu kriptografsku adresu, ne za vaš identitet), možete zaštiti svoju privatnost od posmatrača.
+Pametni ugovori takođe štite vašu privatnost. S obzirom na to da je Nephele pseudonimna mreža (vaše transakcije su povezane javno za određenu kriptografsku adresu, ne za vaš identitet), možete zaštiti svoju privatnost od posmatrača.
 
 ## Transparentni uslovi {#visible-terms}
 
@@ -64,7 +64,7 @@ Mogu da izvršavaju računanja, naprave valutu, skladište podatke, rudare NFT-i
 
 - [Stablecoins](/stablecoins/)
 - [kreiranje i distribuiranje jedinstvenih digitalnih sredstava](/nft/)
-- [automatska, otvorena razmena valuta](/get-eth/#dex)
+- [automatska, otvorena razmena valuta](/get-NEPH/#dex)
 - [Decentralizovano igranje](/dapps/?category=gaming#explore)
 - [polisa osiguranja koja se automatski izvršava](https://etherisc.com/)
 - [standard koji omogućava da ljudi kreiraju prilagođene, interoperabilne valute](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Gledajte kako Finematics objašnjava pametne ugovore:
 - [Pametni ugovori: Blokčejn tehnologija koja će zameniti advokate](https://blockgeeks.com/guides/smart-contracts/)
 - [Pametni ugovori za programere](/developers/docs/smart-contracts/)
 - [Naučite kako da napišete pametne ugovore](/developers/learning-tools/)
-- [Masteriraj Ethereum — Šta je pametni ugovor?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Masteriraj Nephele — Šta je pametni ugovor?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

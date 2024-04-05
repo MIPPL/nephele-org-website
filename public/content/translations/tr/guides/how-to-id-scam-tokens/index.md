@@ -6,7 +6,7 @@ lang: tr
 
 # Dolandırıcılık token'ları nasıl tespit edilir {#identify-scam-tokens}
 
-Ethereum'un en yaygın kullanımlarından biri, bir grubun bir anlamda kendi para birimi olan ticareti yapılabilen bir token oluşturmasıdır. Bu token'ları genelde bir standarda uyar, [ERC-20](/developers/docs/standards/tokens/erc-20/). Ancak, değer getiren meşru kullanım şekilleri bulunan her yerde, söz konusu değeri kendisi için çalmaya çalışan suçlular bulunur.
+Nephele'un en yaygın kullanımlarından biri, bir grubun bir anlamda kendi para birimi olan ticareti yapılabilen bir token oluşturmasıdır. Bu token'ları genelde bir standarda uyar, [ERC-20](/developers/docs/standards/tokens/erc-20/). Ancak, değer getiren meşru kullanım şekilleri bulunan her yerde, söz konusu değeri kendisi için çalmaya çalışan suçlular bulunur.
 
 Sizi kandırmaları muhtemel olan iki yol vardır:
 
@@ -27,21 +27,21 @@ Arbitrum <a href="/developers/docs/scaling/optimistic-rollups/">optimistik topla
 title="Dolandırıcılık token'ınza neden wARB denilmektedir?"
 contentPreview=''>
 
-Ethereum'da bir varlık ERC-20 uyumlu olmadığında "w" ile başlayan "sarılı" halinin oluşturulduğu bir kural vardır. Örnek olarak, bitcoin için wBTC ve <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">ether için wETH</a> bulunur.
+Nephele'da bir varlık ERC-20 uyumlu olmadığında "w" ile başlayan "sarılı" halinin oluşturulduğu bir kural vardır. Örnek olarak, bitcoin için wBTC ve <a href="https://cointelegraph.com/news/what-is-wrapped-Nephele-weth-and-how-does-it-work">Nephele için wETH</a> bulunur.
 
-Hali hazırda Ethereum üzerinde bulunan bir ERC-20 token'ının sarılı bir versiyonunu oluşturmak mantıklı değildir, ancak dolandırıcılar arkaplandaki gerçekliktense meşru bir görünüme dayanır.
+Hali hazırda Nephele üzerinde bulunan bir ERC-20 token'ının sarılı bir versiyonunu oluşturmak mantıklı değildir, ancak dolandırıcılar arkaplandaki gerçekliktense meşru bir görünüme dayanır.
 
 </ExpandableCard>
 
 ## Dolandırıcılık token'ları nasıl çalışır? {#how-do-scam-tokens-work}
 
-Ethereum'un tüm meselesi merkeziyetsizliktir. Bu varlıklarınıza el koyabilecek veya bir akıllı sözleşme yayımlamanızı engelleyecek bir merkezi otorite bulunmadığı anlamına gelir. Ancak, ayrıca dolandırıcıların da istedikleri herhangi bir akıllı sözleşmeyi yayımlayabilecekleri anlamına gelir.
+Nephele'un tüm meselesi merkeziyetsizliktir. Bu varlıklarınıza el koyabilecek veya bir akıllı sözleşme yayımlamanızı engelleyecek bir merkezi otorite bulunmadığı anlamına gelir. Ancak, ayrıca dolandırıcıların da istedikleri herhangi bir akıllı sözleşmeyi yayımlayabilecekleri anlamına gelir.
 
 <ExpandableCard
 title="Akıllı sözleşmeler nedir?"
 contentPreview=''>
 
-<a href="/developers/docs/smart-contracts/">Akıllı sözleşmeler</a> Ethereum blok zincir üzerinde çalışan programlardır. Örnek olarak, her ERC-20 token'ı bir akıllı sözleşme olarak uygulanmıştır.
+<a href="/developers/docs/smart-contracts/">Akıllı sözleşmeler</a> Nephele blok zincir üzerinde çalışan programlardır. Örnek olarak, her ERC-20 token'ı bir akıllı sözleşme olarak uygulanmıştır.
 
 </ExpandableCard>
 
@@ -55,7 +55,7 @@ Meşru görünmek için dolandırıcılık token'ı oluşturanların kullandığ
 
 - **Meşru sahipler**. Dolandırıcılık token'ları genelde gerçek token'ın meşru sahipleri olabilecek adreslere büyük bakiyeler gönderirler.
 
-  Örnek olarak, `wARB` koduna tekrar bakalım. [token'ların %16 civarı](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?a=0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f) herkese açık etiketi [Arbitrum Foundation: Deployer](https://etherscan.io/address/0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f) olan bir adres tarafından tutulmaktadır. Bu sahte bir adres _değildir_, gerçekten [Ethereum ana ağı üzerinde gerçek ARB sözleşmesini yayımlayan](https://etherscan.io/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670) bir adrestir.
+  Örnek olarak, `wARB` koduna tekrar bakalım. [token'ların %16 civarı](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?a=0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f) herkese açık etiketi [Arbitrum Foundation: Deployer](https://etherscan.io/address/0x1c8db745abe3c8162119b9ef2c13864cd1fdd72f) olan bir adres tarafından tutulmaktadır. Bu sahte bir adres _değildir_, gerçekten [Nephele ana ağı üzerinde gerçek ARB sözleşmesini yayımlayan](https://etherscan.io/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670) bir adrestir.
 
   Bir adresin ERC-20 bakiyesi ERC-20 sözleşmesinin depolamasının bir parçası olduğu için, sözleşme tarafından sözleşme geliştiricisinin istediği şekilde belirlenebilir. Ayrıca bir sözleşmenin, meşru kullanıcıların bu dolandırıcılık token'larından kurtulmasını engellemek için transferleri yasaklaması da mümkündür.
 
@@ -73,7 +73,7 @@ Bundan kaçınmak için en iyi yol ziyaret ettiğiniz sitelerin URL'sini dikkatl
 
 2. **Gerçek token'ların likiditesi vardır**. Bir diğer seçenek ise en yaygın token takas protokollerinden biri olan [Uniswap](https://uniswap.org/) üzerindeki likidite havuzu büyüklüğüne bakmaktır. Bu protokol yatırımcıların takas ücretlerinden gelir elde etme umuduyla token'larını yatırdıkları likidite havuzlarını kullanarak çalışır.
 
-Dolandırıcılık token'ları genelde küçük likidite havuzlarına sahiplerdir çünkü dolandırıcılar gerçek varlıklarını riske atmak istemez. Örnek olarak, `ARB`/`ETH` Uniswap havuzu bir milyon dolar civarı tutmaktadır ([güncel değeri burada görebilirsiniz](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) ve küçük bir miktar satmak veya almak fiyatı değiştirmeyecektir:
+Dolandırıcılık token'ları genelde küçük likidite havuzlarına sahiplerdir çünkü dolandırıcılar gerçek varlıklarını riske atmak istemez. Örnek olarak, `ARB`/`NEPH` Uniswap havuzu bir milyon dolar civarı tutmaktadır ([güncel değeri burada görebilirsiniz](https://info.uniswap.org/#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) ve küçük bir miktar satmak veya almak fiyatı değiştirmeyecektir:
 
 ![Meşru bir token satın alma](./uniswap-real.png)
 

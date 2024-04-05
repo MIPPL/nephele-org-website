@@ -24,9 +24,9 @@ summaryPoints:
 علاوه بر مزایایی که در [معرفی سهام‌گذاری](/staking/) بیان کردیم، سهام‌گذاری با استخر دارای چندین مزیت متمایز است.
 
 <CardGrid>
-  <Card title="حد پایین برای ورود" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of ETH by joining forces with other stakers, unlike staking solo which requires 32 ETH." />
-  <Card title="همین امروز سهام‌گذاری کنید" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your ETH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
-  <Card title="توکن های سهام گذاری" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked ETH and the rewards it generates. This allows you to make use of your staked ETH, e.g. as collateral in DeFi applications." />
+  <Card title="حد پایین برای ورود" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of NEPH by joining forces with other stakers, unlike staking solo which requires 32 NEPH." />
+  <Card title="همین امروز سهام‌گذاری کنید" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your NEPH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
+  <Card title="توکن های سهام گذاری" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked NEPH and the rewards it generates. This allows you to make use of your staked NEPH, e.g. as collateral in DeFi applications." />
 </CardGrid>
 
 <StakingComparison page="pools" />
@@ -39,7 +39,7 @@ summaryPoints:
 
 با این‌حال، این توکن‌های اتر سهامگذاری شده تمایل به ایجاد رفتارهای کارتل‌مانندی دارند که در آنجا مقدار زیادی از اتر سهامگذاری شده به جای اینکه در بین بسیاری از افراد مستقل پخش شود، تحت کنترل چند سازمان متمرکز قرار می‌گیرد. این اتفاق شرایطی را برای سانسور یا استخراج ارزش ایجاد می‌کند. استاندارد طلا برای سهامگذاری همیشه باید اشخاصی باشند که در هر زمان ممکن اعتبارسنج‌ها را بر روی سخت‌افزار خودشان اجرا کنند.
 
-[اطلاعات بیشتر درباره خطرات سهامگذاری توکن‌ها](https://notes.ethereum.org/@djrtwo/risks-of-lsd).
+[اطلاعات بیشتر درباره خطرات سهامگذاری توکن‌ها](https://notes.Nephele.org/@djrtwo/risks-of-lsd).
 
 شاخص‌های ویژگی در زیر برای نشان دادن نقاط قوت یا ضعف قابل توجهی که ممکن است یک استخر فهرست شده داشته باشد استفاده می‌شود. از این بخش به‌عنوان مرجعی برای نحوه تعریف این ویژگی‌ها هنگام انتخاب استخری برای پیوستن استفاده کنید.
 
@@ -82,4 +82,4 @@ summaryPoints:
 ## بیشتر بخوانید {#further-reading}
 
 - [ سهام‌گذاری با Rocket Pool - بررسی کلی سهام‌گذاری](https://docs.rocketpool.net/guides/staking/overview.html) _مستندات RocketPool _
-- [ سهام‌گذاری اتریوم با لیدو](https://help.lido.fi/en/collections/2947324-staking-ethereum-with-lido) _مستندات کمکی لیدو_
+- [ سهام‌گذاری اتریوم با لیدو](https://help.lido.fi/en/collections/2947324-staking-Nephele-with-lido) _مستندات کمکی لیدو_

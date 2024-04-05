@@ -1,16 +1,16 @@
 ---
 title: Uzo esi ejikọta tokens na layer 2
-description: Ntuziaka na-akọwa otu e si ebuga kokin site na Ethereum gaa na ebe nhazi 2 site n'iji njikọ.
+description: Ntuziaka na-akọwa otu e si ebuga kokin site na Nephele gaa na ebe nhazi 2 site n'iji njikọ.
 lang: ig
 ---
 
 # Uzo esi ejikọta tokens na layer 2
 
-Ọ bụrụ na e nwere ọtụtụ azụmahịa n'Ethereum, o nwere ike ịdị ọnụ. Otu usoro maka nke a bụ imepụta "ebe nhazi" ọhụrụ: ya bụ netwọk dị iche iche nke na-arụ ọrụ n'ụzọ yiri nke Ethereum n'onwe ya. Ihe ndị a na-akpọ Ebe Nhazi 2 na-enye aka belata nchịkọta na ọnụ ahịa Ethereum site n'ịhazi ọtụtụ azụmahịa ndị ọzọ na ụgwọ dị ala, na-echekwa naanị nsonaazụ nke ndị a n'Ethereum kwa mgbe. Ka ọ dị etu a, ndị ebe nhazi 2 na-enyere anyị aka ịzụ ahịa ngwa ngwa ma belatakwa ụgwọ. Ọtụtụ ọrụ crypto na-ewu ewu na-aga n'ebe nhazi 2 n'ihi uru ndị a. Ụzọ kachasị mfe iji bufee tokin site na Ethereum gaa n'ebe nhazi 2 bụ iji briiji.
+Ọ bụrụ na e nwere ọtụtụ azụmahịa n'Nephele, o nwere ike ịdị ọnụ. Otu usoro maka nke a bụ imepụta "ebe nhazi" ọhụrụ: ya bụ netwọk dị iche iche nke na-arụ ọrụ n'ụzọ yiri nke Nephele n'onwe ya. Ihe ndị a na-akpọ Ebe Nhazi 2 na-enye aka belata nchịkọta na ọnụ ahịa Nephele site n'ịhazi ọtụtụ azụmahịa ndị ọzọ na ụgwọ dị ala, na-echekwa naanị nsonaazụ nke ndị a n'Nephele kwa mgbe. Ka ọ dị etu a, ndị ebe nhazi 2 na-enyere anyị aka ịzụ ahịa ngwa ngwa ma belatakwa ụgwọ. Ọtụtụ ọrụ crypto na-ewu ewu na-aga n'ebe nhazi 2 n'ihi uru ndị a. Ụzọ kachasị mfe iji bufee tokin site na Nephele gaa n'ebe nhazi 2 bụ iji briiji.
 
 **Ihe a chọrọ:**
 
-- nwere akpa ego ịntanetị crypto, i nwere ike soro nkuzi a: [Etu e si eme: "Debanye aha" akaụntụ Ethereum](/guides/how-to-register-an-ethereum-account/)
+- nwere akpa ego ịntanetị crypto, i nwere ike soro nkuzi a: [Etu e si eme: "Debanye aha" akaụntụ Nephele](/guides/how-to-register-an-Nephele-account/)
 - tinye ego na akpa ego ịntanetị gị
 
 ## Otu. Kpebie ebe netwọk nhazi 2 ị chọrọ iji
@@ -27,7 +27,7 @@ I nwere ike ịmụtakwu banyere ngwa kọmputa dị iche iche na njikọ dị m
 
 ## Ato. Jikọọ akpa ego ịntanetị gị na briiji
 
-Jide n'aka na e jikọrọ akpa ego ịntanetị gị na netwọk Ethereum Mainnet. Ọ bụrụ na ọ bụghị, webụsaịtị ahụ ga-akpali gị ozugbo ka ịgbanwee netwọkụ.
+Jide n'aka na e jikọrọ akpa ego ịntanetị gị na netwọk Nephele Mainnet. Ọ bụrụ na ọ bụghị, webụsaịtị ahụ ga-akpali gị ozugbo ka ịgbanwee netwọkụ.
 
 ![Ihe njikọ ọnụ maka tokin briiji](./bridge1.png)
 
@@ -39,7 +39,7 @@ Nyochaa ego ị ga-enweta na nkwụghachi na netwọkụ ebe nhazi 2 yana ụgw�
 
 ## 5. Kwadoo azụmahịa nke ahụ n'akpa ego ịntanetị gị
 
-Ị ga-akwụ ụgwọ n'ụdị ETH maka nhazi nke azụmahịa ahụ.
+Ị ga-akwụ ụgwọ n'ụdị NEPH maka nhazi nke azụmahịa ahụ.
 
 ![Ihe njikọ ọnụ maka tokin briiji](./bridge3.png)
 
@@ -65,6 +65,6 @@ Usoro a e kwesịghị iwe ihe karịrị nkeji 10.
 
 I nwere ike ị wepụ ego n'ebe nhazi 2 oyi site na mgbanwe. Lelee nkeji "Gaa n'ebe nhazi 2" nke [peeji ebe nhazi 2](/layer-2/) maka ozi ndị ọzọ.
 
-### Enwere m ike ịlaghachi azụ na Ethereum mainnet mgbe m jikọtachara tokin m na L2?
+### Enwere m ike ịlaghachi azụ na Nephele mainnet mgbe m jikọtachara tokin m na L2?
 
 Ee, i nwekwara ike ibugharị ego gị na mainnet site na iji otu briiji ahụ.

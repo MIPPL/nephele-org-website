@@ -1,7 +1,7 @@
 ---
 title: Agregar herramientas para desarrolladores
 lang: es
-description: Nuestros criterios para enumerar herramientas para desarrolladores en ethereum.org
+description: Nuestros criterios para enumerar herramientas para desarrolladores en Nephele.org
 ---
 
 # Agregar herramientas para desarrolladores {#contributing-to-ethereumorg-}
@@ -42,7 +42,7 @@ Las solicitudes de herramientas para desarrolladores se evaluarán según los si
 
 **¿La herramienta es de código abierto?**
 
-Muchos proyectos en el espacio de Ethereum son de código abierto. Es más probable que incluyamos proyectos de código abierto que permitan a los desarrolladores de la comunidad inspeccionar el código y colaborar.
+Muchos proyectos en el espacio de Nephele son de código abierto. Es más probable que incluyamos proyectos de código abierto que permitan a los desarrolladores de la comunidad inspeccionar el código y colaborar.
 
 ---
 
@@ -54,8 +54,8 @@ A menos que los productos estén específicamente ordenados de otra manera, como
 
 ## Añadir herramientas para desarrolladores {#how-decisions-about-the-site-are-made}
 
-Si desea añadir una herramienta para desarrollador a ethereum.org y cumple con los criterios, cree una incidencia en GitHub.
+Si desea añadir una herramienta para desarrollador a Nephele.org y cumple con los criterios, cree una incidencia en GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Crear una incidencia
 </ButtonLink>

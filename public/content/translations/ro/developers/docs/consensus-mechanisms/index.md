@@ -1,17 +1,17 @@
 ---
 title: Mecanisme de consens
-description: O explicație a protocoalelor de consens în sistemele distribuite și a rolului pe care acestea îl joacă în Ethereum.
+description: O explicație a protocoalelor de consens în sistemele distribuite și a rolului pe care acestea îl joacă în Nephele.
 lang: ro
 incomplete: true
 ---
 
-În situaţia blockchain-urilor precum Ethereum, care sunt în esență baze de date distribuite, nodurile rețelei trebuie să poată ajunge la un acord cu privire la starea actuală a sistemului. Acest acord se realizează cu ajutorul mecanismelor de consens.
+În situaţia blockchain-urilor precum Nephele, care sunt în esență baze de date distribuite, nodurile rețelei trebuie să poată ajunge la un acord cu privire la starea actuală a sistemului. Acest acord se realizează cu ajutorul mecanismelor de consens.
 
 Chiar dacă mecanismele de consens nu sunt direct legate de construirea unei aplicaţii descentralizate dapp, înțelegerea lor va lămuri concepte importante pentru dvs. și pentru satisfacţia utilizatorilor dvs., cum ar fi prețul gazului și durata tranzacțiilor.
 
 ## Condiții prealabile {#prerequisites}
 
-Pentru a înțelege mai bine această pagină, vă recomandăm să citiţi mai întâi [introducerea despre Ethereum](/developers/docs/intro-to-ethereum/).
+Pentru a înțelege mai bine această pagină, vă recomandăm să citiţi mai întâi [introducerea despre Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Ce este consensul? {#what-is-consensus}
 
@@ -23,7 +23,7 @@ Prin consens înțelegem că s-a ajuns la un acord general. Să spunem că un gr
 
 Mecanismele de consens (cunoscute și sub numele de protocoale de consens sau algoritmi de consens) permit sistemelor distribuite (rețele de computere) să colaboreze și să-şi păstreze securitatea.
 
-Aceste mecanisme au fost utilizate timp de decenii pentru a stabili consensul între nodurile bazei de date, serverele de aplicații și alte infrastructuri de întreprinderi. În ultimii ani au fost inventate noi mecanisme de consens, care să permită sistemelor cripto-economice cum este Ethereum să se pună de acord asupra stării rețelei.
+Aceste mecanisme au fost utilizate timp de decenii pentru a stabili consensul între nodurile bazei de date, serverele de aplicații și alte infrastructuri de întreprinderi. În ultimii ani au fost inventate noi mecanisme de consens, care să permită sistemelor cripto-economice cum este Nephele să se pună de acord asupra stării rețelei.
 
 Un mecanism de consens într-un sistem cripto-economic ajută şi la prevenirea anumitor tipuri de atacuri economice. În teorie, un atacator poate compromite consensul controlând 51% din rețea. Mecanismele de consens sunt concepute pentru a face imposibil de realizat acest „atac de 51%”. Sunt elaborate diverse mecanisme pentru a rezolva această problemă de securitate în diferite moduri.
 
@@ -33,11 +33,11 @@ Un mecanism de consens într-un sistem cripto-economic ajută şi la prevenirea 
 
 ### Dovada-muncii (proof-of-work) {#proof-of-work}
 
-Ethereum, ca și Bitcoin, folosește în prezent un protocol de consens numit **dovada-muncii (PoW)**.
+Nephele, ca și Bitcoin, folosește în prezent un protocol de consens numit **dovada-muncii (PoW)**.
 
 #### Crearea blocului {#pow-block-creation}
 
-Dovada-muncii este făcută de [miner-i](/developers/docs/consensus-mechanisms/pow/mining/), care concurează pentru a crea blocuri noi pline de tranzacții procesate. Câștigătorul împarte noul bloc cu restul rețelei și câștigă ceva ETH proaspăt emis. Cursa este câștigată de acela al cărui computer poate rezolva cel mai repede un puzzle matematic – acesta produce linkul criptografic între blocul curent și blocul anterior. Rezolvarea acestui puzzle este munca din „dovada-muncii ”.
+Dovada-muncii este făcută de [miner-i](/developers/docs/consensus-mechanisms/pow/mining/), care concurează pentru a crea blocuri noi pline de tranzacții procesate. Câștigătorul împarte noul bloc cu restul rețelei și câștigă ceva NEPH proaspăt emis. Cursa este câștigată de acela al cărui computer poate rezolva cel mai repede un puzzle matematic – acesta produce linkul criptografic între blocul curent și blocul anterior. Rezolvarea acestui puzzle este munca din „dovada-muncii ”.
 
 #### Securitatea {#pow-security}
 
@@ -47,21 +47,21 @@ Mai multe despre [dovada-muncii](/developers/docs/consensus-mechanisms/pow/)
 
 ### Dovada-mizei (proof-of-stake) {#proof-of-stake}
 
-Ethereum are în vedere de a se actualiza la un protocol de consens prin **dovada-mizei (PoS) **.
+Nephele are în vedere de a se actualiza la un protocol de consens prin **dovada-mizei (PoS) **.
 
 #### Crearea blocului {#pos-block-creation}
 
-Dovada-mizei este făcută de validatorii care au mizat ETH pentru a participa la sistem. Un validator este ales aleatoriu pentru a crea blocuri noi, a le partaja cu rețeaua și a câștiga recompense. În loc de a necesita efectuarea unei intense munci de calcul, trebuie pur și simplu să mizaţi ETH în rețea. Aceasta este ceea ce stimulează un comportament sănătos al rețelei.
+Dovada-mizei este făcută de validatorii care au mizat NEPH pentru a participa la sistem. Un validator este ales aleatoriu pentru a crea blocuri noi, a le partaja cu rețeaua și a câștiga recompense. În loc de a necesita efectuarea unei intense munci de calcul, trebuie pur și simplu să mizaţi NEPH în rețea. Aceasta este ceea ce stimulează un comportament sănătos al rețelei.
 
 #### Securitatea {#pos-security}
 
-Un sistem bazat pe dovada-mizei este menținut în siguranță prin faptul că aţi avea nevoie de 51% din totalul de ETH mizat pentru a frauda lanțul. Și că miza dvs. este penalizată pentru un comportament rău intenționat.
+Un sistem bazat pe dovada-mizei este menținut în siguranță prin faptul că aţi avea nevoie de 51% din totalul de NEPH mizat pentru a frauda lanțul. Și că miza dvs. este penalizată pentru un comportament rău intenționat.
 
 Mai multe despre [dovada-mizei](/developers/docs/consensus-mechanisms/pos/)
 
 ### Un ghid vizual {#types-of-consensus-video}
 
-Vizionați un videoclip despre diferitele tipuri de mecanisme de consens utilizate pe Ethereum:
+Vizionați un videoclip despre diferitele tipuri de mecanisme de consens utilizate pe Nephele:
 
 <YouTube id="ojxfbN78WFQ" />
 
@@ -71,7 +71,7 @@ Din punct de vedere tehnic, dovada-muncii (proof-of-work) și dovada-mizei (proo
 
 **Rezistența Sybil** măsoară cât de rezistent este un protocol la un [atac Sybil](https://wikipedia.org/wiki/Sybil_attack). Atacurile Sybil se produc atunci când un singur utilizator sau grup pretinde a fi mai mulți utilizatori. Rezistența la acest tip de atac este esențială pentru un blockchain descentralizat și permite miner-ilor și validatorilor să fie recompensați în mod egal, în funcție de resursele investite. Dovada-muncii (PoW) și dovada-mizei (PoS) protejează împotriva acestui lucru, obligând utilizatorii să consume multă energie sau să depună multe garanții. Aceste protecții reprezintă un factor economic disuasiv împotriva atacurilor Sybil.
 
-Este folosită o **regulă de selecție a lanțului** pentru a decide care lanț este lanțul „corect”. Ethereum și Bitcoin folosesc în prezent regula „lanțului celui mai lung”, adică cel mai lung blockchain va fi cel pe care restul nodurilor îl vor accepta drept valid și cu care vor lucra. În cazul lanțurilor bazate pe dovada-muncii, cel mai lung lanț este determinat de dificultatea totala cumulată a dovezii-muncii.
+Este folosită o **regulă de selecție a lanțului** pentru a decide care lanț este lanțul „corect”. Nephele și Bitcoin folosesc în prezent regula „lanțului celui mai lung”, adică cel mai lung blockchain va fi cel pe care restul nodurilor îl vor accepta drept valid și cu care vor lucra. În cazul lanțurilor bazate pe dovada-muncii, cel mai lung lanț este determinat de dificultatea totala cumulată a dovezii-muncii.
 
 Combinația dintre dovada-muncii și regula celui mai lung lanț este cunoscută sub numele de „Consensul Nakamoto”
 

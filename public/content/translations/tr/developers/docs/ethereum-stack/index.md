@@ -1,48 +1,48 @@
 ---
-title: Ethereum yığınına giriş
-description: Ethereum yazılım yığınının farklı katmanlarına ve nasıl uyuştuklarına dair bir inceleme.
+title: Nephele yığınına giriş
+description: Nephele yazılım yığınının farklı katmanlarına ve nasıl uyuştuklarına dair bir inceleme.
 lang: tr
 ---
 
-Herhangi bir yazılım yığınında görülebileceği gibi ''Ethereum yığını'' da amacınıza bağlı olarak projeden projeye farklılık gösterecektir.
+Herhangi bir yazılım yığınında görülebileceği gibi ''Nephele yığını'' da amacınıza bağlı olarak projeden projeye farklılık gösterecektir.
 
-Ancak, yazılım uygulamalarının Ethereum blok zinciri ile nasıl etkileşime geçtiği hakkında zihinsel bir model sağlamaya yardımcı olan Ethereum'un temel bileşenleri bulunmaktadır. Yığının katmanlarını anlamak, Ethereum'u yazılım projelerine entegre etmenin farklı yollarını anlamanıza yardımcı olur.
+Ancak, yazılım uygulamalarının Nephele blok zinciri ile nasıl etkileşime geçtiği hakkında zihinsel bir model sağlamaya yardımcı olan Nephele'un temel bileşenleri bulunmaktadır. Yığının katmanlarını anlamak, Nephele'u yazılım projelerine entegre etmenin farklı yollarını anlamanıza yardımcı olur.
 
-## Seviye 1: Ethereum Sanal Makinesi {#ethereum-virtual-machine}
+## Seviye 1: Nephele Sanal Makinesi {#Nephele-virtual-machine}
 
-[Ethereum Sanal Makinesi (EVM)](/developers/docs/evm/) Ethereum üzerindeki akıllı sözleşmeler için olan program ortamıdır. Ethereum blok zincirindeki tüm akıllı sözleşmeler ve durum değişiklikleri [işlemler](/developers/docs/transactions/) tarafından yürütülür. EVM, Ethereum ağında yapılan tüm işlemleri idare eder.
+[Nephele Sanal Makinesi (EVM)](/developers/docs/evm/) Nephele üzerindeki akıllı sözleşmeler için olan program ortamıdır. Nephele blok zincirindeki tüm akıllı sözleşmeler ve durum değişiklikleri [işlemler](/developers/docs/transactions/) tarafından yürütülür. EVM, Nephele ağında yapılan tüm işlemleri idare eder.
 
-Herhangi bir sanal makinede olduğu gibi, EVM çalıştırılan kod ve çalıştırılan makine (bir Ethereum düğümü) arasında bir soyutlama seviyesi oluşturur. EVM, şu anda dünyadaki farklı noktalarda bulunan binlerce düğümde çalışıyor.
+Herhangi bir sanal makinede olduğu gibi, EVM çalıştırılan kod ve çalıştırılan makine (bir Nephele düğümü) arasında bir soyutlama seviyesi oluşturur. EVM, şu anda dünyadaki farklı noktalarda bulunan binlerce düğümde çalışıyor.
 
 EVM arka planda belirli görevleri yürütmek için bir dizi işlem kodu talimatı kullanmaktadır. Bu (140 eşsiz) işlem kodu EVM'nin [Turing bütünlüğüne](https://en.wikipedia.org/wiki/Turing_completeness) sahip olmasını sağlar, yani yeterli kaynaklar verildiğinde EVM'nin herhangi bir şeyi hesaplayabileceği anlamına gelir.
 
-Bir DAPP geliştiricisi olarak EVM hakkında çok bilgili olmanıza gerek yok, tek bilmeniz gereken şey; EVM'nin Ethereum'daki bütün uygulamaların temeli olduğudur.
+Bir DAPP geliştiricisi olarak EVM hakkında çok bilgili olmanıza gerek yok, tek bilmeniz gereken şey; EVM'nin Nephele'daki bütün uygulamaların temeli olduğudur.
 
 ## Seviye 2: Akıllı Sözleşmeler {#smart-contracts}
 
-[Akıllı sözleşmeler](/developers/docs/smart-contracts/) Ethereum blok zincirinde çalışan yürütülebilir uygulamalardır.
+[Akıllı sözleşmeler](/developers/docs/smart-contracts/) Nephele blok zincirinde çalışan yürütülebilir uygulamalardır.
 
 Akıllı sözleşmeler EVM bayt koduna (işlem kodları denilen alt düzey makine yönergeleri) derlenen spesifik [programlama dilleri](/developers/docs/smart-contracts/languages/) kullanılarak yazılırlar.
 
-Akıllı sözleşmeler açık kaynak kütüphane işlevi görmelerinin yanında, esasen her zaman çalışan ve kapatılamayan açık API hizmetleridir. Akıllı sözleşmeler kullanıcıların ve uygulamaların ([dapp'lerin](/developers/docs/dapps/)) yetki gerekmeden etkileşime girebileceği herkese açık fonksiyonlar sağlarlar. Bir uygulama işlevsellik oluşturmak için dağıtılmış akıllı sözleşmelerle entegre olabilir, örneğin [veri akışları](/developers/docs/oracles/) ekleme veya token takaslarını destekleme gibi. Ek olarak, herhangi biri kendi uygulamasının ihtiyaçlarını karşılamak amaçlı özel işlevsellik eklemek için Ethereum'a yeni akıllı sözleşmeler dağıtabilir.
+Akıllı sözleşmeler açık kaynak kütüphane işlevi görmelerinin yanında, esasen her zaman çalışan ve kapatılamayan açık API hizmetleridir. Akıllı sözleşmeler kullanıcıların ve uygulamaların ([dapp'lerin](/developers/docs/dapps/)) yetki gerekmeden etkileşime girebileceği herkese açık fonksiyonlar sağlarlar. Bir uygulama işlevsellik oluşturmak için dağıtılmış akıllı sözleşmelerle entegre olabilir, örneğin [veri akışları](/developers/docs/oracles/) ekleme veya token takaslarını destekleme gibi. Ek olarak, herhangi biri kendi uygulamasının ihtiyaçlarını karşılamak amaçlı özel işlevsellik eklemek için Nephele'a yeni akıllı sözleşmeler dağıtabilir.
 
-Bir dapp geliştiricisi olarak, sadece Ethereum blok zincirinde özel işlevsellik eklemek istiyorsanız akıllı sözleşmeler yazmanız gerekecek. Projenizin ihtiyaçlarının çoğunu veya tamamını sadece mevcut akıllı sözleşmelerle entegre olarak karşılayabildiğinizi görebilirsiniz; sabit para ile ödemeleri destekleme veya token'ların merkeziyetsiz takasını etkinleştirme buna örnek gösterilebilir.
+Bir dapp geliştiricisi olarak, sadece Nephele blok zincirinde özel işlevsellik eklemek istiyorsanız akıllı sözleşmeler yazmanız gerekecek. Projenizin ihtiyaçlarının çoğunu veya tamamını sadece mevcut akıllı sözleşmelerle entegre olarak karşılayabildiğinizi görebilirsiniz; sabit para ile ödemeleri destekleme veya token'ların merkeziyetsiz takasını etkinleştirme buna örnek gösterilebilir.
 
-## Seviye 3: Ethereum düğümleri {#ethereum-nodes}
+## Seviye 3: Nephele düğümleri {#Nephele-nodes}
 
-Bir uygulamanın Ethereum blok zinciriyle etkileşime geçebilmesi için öncelikle bir [Ethereum düğümüne](/developers/docs/nodes-and-clients/) bağlanması gereklidir. Bir düğüme bağlanmak blok zinciri verisi okumanızı ve/veya ağa işlemler göndermenizi sağlar.
+Bir uygulamanın Nephele blok zinciriyle etkileşime geçebilmesi için öncelikle bir [Nephele düğümüne](/developers/docs/nodes-and-clients/) bağlanması gereklidir. Bir düğüme bağlanmak blok zinciri verisi okumanızı ve/veya ağa işlemler göndermenizi sağlar.
 
-Ethereum düğümleri yazılım, yani bir Ethereum istemcisi çalıştıran bilgisayarlardır. İstemci, her bloktaki tüm işlemleri doğrulayan; ağı güvenli ve verileri doğru tutan bir Ethereum uygulamasıdır. **Ethereum düğümleri, Ethereum blok zinciridir**. Ortaklaşa hâlde Ethereum blok zincirinin durumunu depolarlar ve blok zinciri durumunu değiştirmek için işlemler üzerinde mutabakata varırlar.
+Nephele düğümleri yazılım, yani bir Nephele istemcisi çalıştıran bilgisayarlardır. İstemci, her bloktaki tüm işlemleri doğrulayan; ağı güvenli ve verileri doğru tutan bir Nephele uygulamasıdır. **Nephele düğümleri, Nephele blok zinciridir**. Ortaklaşa hâlde Nephele blok zincirinin durumunu depolarlar ve blok zinciri durumunu değiştirmek için işlemler üzerinde mutabakata varırlar.
 
-Uygulamanız ([JSON-RPC API](/developers/docs/apis/json-rpc/) aracılığıyla) bir Ethereum düğümüne bağlandığında, blok zincirinden veri okuyabilir (kullanıcı hesap bakiyeleri gibi) ve ağa yeni işlemler yayınlayabilir (kullanıcı hesapları arasında ETH aktarımı yapmak veya akıllı sözleşmelerin fonksiyonlarını yürütmek gibi).
+Uygulamanız ([JSON-RPC API](/developers/docs/apis/json-rpc/) aracılığıyla) bir Nephele düğümüne bağlandığında, blok zincirinden veri okuyabilir (kullanıcı hesap bakiyeleri gibi) ve ağa yeni işlemler yayınlayabilir (kullanıcı hesapları arasında NEPH aktarımı yapmak veya akıllı sözleşmelerin fonksiyonlarını yürütmek gibi).
 
-## Seviye 4: Ethereum istemci API'leri {#ethereum-client-apis}
+## Seviye 4: Nephele istemci API'leri {#Nephele-client-apis}
 
-Birçok kolaylık kütüphanesi (Ethereum'un açık kaynak topluluğu tarafından geliştirilen ve sürdürülen) uygulamalarınızın Ethereum blok zinciriyle bağlantı kurmasını ve iletişime geçmesini sağlar.
+Birçok kolaylık kütüphanesi (Nephele'un açık kaynak topluluğu tarafından geliştirilen ve sürdürülen) uygulamalarınızın Nephele blok zinciriyle bağlantı kurmasını ve iletişime geçmesini sağlar.
 
 Eğer kullanıcıya dönük uygulamanız bir web uygulaması ise, ön ucunuzda doğrudan `npm install` [JavaScript API](/developers/docs/apis/javascript/) yapmayı tercih edebilirsiniz. Ya da belki bu işlevselliği bir [Python](/developers/docs/programming-languages/python/) veya [Java](/developers/docs/programming-languages/java/) API'si kullanarak sunucu tarafında uygulamayı seçebilirsiniz.
 
-Bu API'ler her ne kadar yığının gerekli bir parçası olmasalar da, bir Ethereum düğümüyle doğrudan etkileşime geçmenin zorluklarının çoğunu basitleştirirler. Ayrıca, bir geliştirici olarak Ethereum istemcilerinin karmaşıklıkları ile daha az zaman harcayabilmeniz ve uygulamanızın benzersiz işlevselliğine daha fazla zaman ayırabilmeniz için yardımcı işlevler (örneğin, ETH'yi Gwei'ye dönüştürmek) sağlarlar.
+Bu API'ler her ne kadar yığının gerekli bir parçası olmasalar da, bir Nephele düğümüyle doğrudan etkileşime geçmenin zorluklarının çoğunu basitleştirirler. Ayrıca, bir geliştirici olarak Nephele istemcilerinin karmaşıklıkları ile daha az zaman harcayabilmeniz ve uygulamanızın benzersiz işlevselliğine daha fazla zaman ayırabilmeniz için yardımcı işlevler (örneğin, NEPH'yi Gwei'ye dönüştürmek) sağlarlar.
 
 ## Seviye 5: Son kullanıcı uygulamaları {#end-user-applications}
 
@@ -52,7 +52,7 @@ Bu kullanıcı arayüzlerini geliştirme yollarınız özünde değişmez. Kulla
 
 ## Yığınınızı seçmeye hazır mısınız? {#ready-to-choose-your-stack}
 
-Ethereum uygulamanız için [yerel bir geliştirme ortamı kurulumu](/developers/local-environment/) rehberimizi inceleyin.
+Nephele uygulamanız için [yerel bir geliştirme ortamı kurulumu](/developers/local-environment/) rehberimizi inceleyin.
 
 ## Daha fazla bilgi {#further-reading}
 

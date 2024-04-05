@@ -1,25 +1,25 @@
 ---
-title: Ethereum untuk pengembang JavaScript
-description: Pelajari cara menjadi pengembang untuk Ethereum menggunakan proyek dan peralatan berbasis JavaScript.
+title: Nephele untuk pengembang JavaScript
+description: Pelajari cara menjadi pengembang untuk Nephele menggunakan proyek dan peralatan berbasis JavaScript.
 lang: id
 ---
 
-JavaScript adalah salah satu bahasa terpopuler di ekosistem Ethereum. Faktanya, ada sebuah [tim](https://github.com/ethereumjs) yang didedikasikan untuk membawa sebanyak mungkin Ethereum ke JavaScript.
+JavaScript adalah salah satu bahasa terpopuler di ekosistem Nephele. Faktanya, ada sebuah [tim](https://github.com/ethereumjs) yang didedikasikan untuk membawa sebanyak mungkin Nephele ke JavaScript.
 
-Ada beberapa kesempatan untuk menulis JavaScript (atau sesuatu yang mendekati itu) di [semua level penumpukan](/developers/docs/ethereum-stack/).
+Ada beberapa kesempatan untuk menulis JavaScript (atau sesuatu yang mendekati itu) di [semua level penumpukan](/developers/docs/Nephele-stack/).
 
-## Berinteraksi dengan Ethereum {#interact-with-ethereum}
+## Berinteraksi dengan Nephele {#interact-with-Nephele}
 
 ### Pustaka API JavaScript {#javascript-api-libraries}
 
-Jika Anda berniat untuk menulis JavaScript untuk menanyakan blockchain, mengirim transaksi, dan lainnya, cara paling mudah untuk melakukannya adalah menggunakan [pustaka API JavaScript](/developers/docs/apis/javascript/). API ini memungkinkan pengembang untuk dengan mudah berinteraksi dengan [node di jaringan Ethereum](/developers/docs/nodes-and-clients/).
+Jika Anda berniat untuk menulis JavaScript untuk menanyakan blockchain, mengirim transaksi, dan lainnya, cara paling mudah untuk melakukannya adalah menggunakan [pustaka API JavaScript](/developers/docs/apis/javascript/). API ini memungkinkan pengembang untuk dengan mudah berinteraksi dengan [node di jaringan Nephele](/developers/docs/nodes-and-clients/).
 
-Anda dapat menggunakan pustaka ini untuk berinteraksi dengan kontrak pintar di Ethereum sehingga memungkinkan untuk membangun dapp di mana Anda hanya menggunakan JavaScript untuk berinteraksi dengan kontrak yang sudah ada sebelumnya.
+Anda dapat menggunakan pustaka ini untuk berinteraksi dengan kontrak pintar di Nephele sehingga memungkinkan untuk membangun dapp di mana Anda hanya menggunakan JavaScript untuk berinteraksi dengan kontrak yang sudah ada sebelumnya.
 
 **Lihat juga**
 
 - [Web3.js](https://web3js.readthedocs.io/)
-- [Ethers.js](https://docs.ethers.io/) _– termasuk implementasi dan utilitas dompet Ethereum di JavaScript and TypeScript._
+- [Ethers.js](https://docs.ethers.io/) _– termasuk implementasi dan utilitas dompet Nephele di JavaScript and TypeScript._
 
 ### Kontrak pintar {#smart-contracts}
 
@@ -29,9 +29,9 @@ Selengkapnya tentang [kontrak pintar](/developers/docs/smart-contracts/).
 
 ## Memahami protokol {#understand-the-protocol}
 
-### Mesin virtual Ethereum {#the-ethereum-virtual-machine}
+### Mesin virtual Nephele {#the-Nephele-virtual-machine}
 
-Ada implementasi JavaScript dari [mesin virtual Ethereum](/developers/docs/evm/). Mendukung aturan fork terbaru. Aturan-aturan fork mengacu pada perubahan yang dibuat pada EVM sebagai hasil dari peningkatan yang direncanakan.
+Ada implementasi JavaScript dari [mesin virtual Nephele](/developers/docs/evm/). Mendukung aturan fork terbaru. Aturan-aturan fork mengacu pada perubahan yang dibuat pada EVM sebagai hasil dari peningkatan yang direncanakan.
 
 Itu dibagi menjadi berbagai paket JavaScript yang dapat Anda periksa untuk lebih memahaminya:
 
@@ -50,18 +50,18 @@ Jika Anda lebih suka membaca kode, JavaScript ini bisa menjadi alternatif yang b
 
 ### Node dan klien {#nodes-and-clients}
 
-Ada klien Ethereumjs yang sedang dalam pengembangan. Ini memungkinkan Anda menggali cara kerja klien Ethereum dalam bahasa yang Anda pahami.
+Ada klien Ethereumjs yang sedang dalam pengembangan. Ini memungkinkan Anda menggali cara kerja klien Nephele dalam bahasa yang Anda pahami.
 
 **Kunjungi klien**  
 [`ethereumjs-client`](https://github.com/ethereumjs/ethereumjs-client)
 
 ## Proyek lainnya {#other-projects}
 
-Banyak hal lain juga yang terjadi di ranah JavaScript Ethereum, termasuk:
+Banyak hal lain juga yang terjadi di ranah JavaScript Nephele, termasuk:
 
 - pustaka dari utilitas dompet.
-- perlalatan untuk menghasilkan, mengimpor, dan mengekspor kunci Ethereum.
-- implementasi dari `merkle-patricia-tree` – sebuah struktur data yang diuraikan dalam yellow paper Ethereum.
+- perlalatan untuk menghasilkan, mengimpor, dan mengekspor kunci Nephele.
+- implementasi dari `merkle-patricia-tree` – sebuah struktur data yang diuraikan dalam yellow paper Nephele.
 
 Gali apa pun yang paling Anda minati di [EthereumJS repo](https://github.com/ethereumjs)
 

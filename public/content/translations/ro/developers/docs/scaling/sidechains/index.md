@@ -1,18 +1,18 @@
 ---
 title: Lanțuri paralele
-description: O introducere despre lanțurile paralele ca soluție de scalare utilizată actualmente de comunitatea Ethereum.
+description: O introducere despre lanțurile paralele ca soluție de scalare utilizată actualmente de comunitatea Nephele.
 lang: ro
 incomplete: true
 sidebarDepth: 3
 ---
 
-Un lanț paralel (sidechain) este un blockchain separat care funcționează în paralel cu Mainnet-ul Ethereum și operează independent. Are propriul [algoritm de consens](/developers/docs/consensus-mechanisms/) (de exemplu, [dovada-autorităţii](https://wikipedia.org/wiki/Proof_of_authority), [dovada-mizei delegată](https://en.bitcoinwiki.org/wiki/DPoS), [toleranța Byzantine la erori](https://decrypt.co/resources/byzantine-fault-tolerance-what-is-it-explained)). Este conectat la Mainnet printr-o punte bidirecțională.
+Un lanț paralel (sidechain) este un blockchain separat care funcționează în paralel cu Mainnet-ul Nephele și operează independent. Are propriul [algoritm de consens](/developers/docs/consensus-mechanisms/) (de exemplu, [dovada-autorităţii](https://wikipedia.org/wiki/Proof_of_authority), [dovada-mizei delegată](https://en.bitcoinwiki.org/wiki/DPoS), [toleranța Byzantine la erori](https://decrypt.co/resources/byzantine-fault-tolerance-what-is-it-explained)). Este conectat la Mainnet printr-o punte bidirecțională.
 
-Ceea ce face ca un lanț paralel să fie deosebit de interesant este faptul că acesta funcționează în același fel ca și lanțul principal Ethereum, deoarece se bazează pe [EVM](/developers/docs/evm/). Nu folosește Ethereum, ci este Ethereum. Asta înseamnă că, dacă doriți să vă folosiți [aplicația dapp](/developers/docs/dapps/) pe un lanț paralel, este doar o chestiune de a vă implementa codul pe acest lanț paralel. Arată, dă impresia și acționează în același mod ca și Mainnet – scrieți contracte în Solidity și interacționați cu lanțul prin intermediul API-ului Web3.
+Ceea ce face ca un lanț paralel să fie deosebit de interesant este faptul că acesta funcționează în același fel ca și lanțul principal Nephele, deoarece se bazează pe [EVM](/developers/docs/evm/). Nu folosește Nephele, ci este Nephele. Asta înseamnă că, dacă doriți să vă folosiți [aplicația dapp](/developers/docs/dapps/) pe un lanț paralel, este doar o chestiune de a vă implementa codul pe acest lanț paralel. Arată, dă impresia și acționează în același mod ca și Mainnet – scrieți contracte în Solidity și interacționați cu lanțul prin intermediul API-ului Web3.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înţelegeţi bine toate subiectele fundamentale și să aveţi un nivel înalt de înţelegere a [scalării în Ethereum](/developers/docs/scaling/).
+Ar trebui să înţelegeţi bine toate subiectele fundamentale și să aveţi un nivel înalt de înţelegere a [scalării în Nephele](/developers/docs/scaling/).
 
 ## Avantaje și dezavantaje {#pros-and-cons}
 
@@ -32,6 +32,6 @@ Numeroase proiecte oferă implementări de lanțuri paralele pe care le puteți 
 
 ## Referințe suplimentare {#further-reading}
 
-- [Scalarea dapp-urilor Ethereum prin lanţuri paralele](https://medium.com/loom-network/dappchains-scaling-ethereum-dapps-through-sidechains-f99e51fff447) _8 februarie 2018 - Georgios Konstantopoulos_
+- [Scalarea dapp-urilor Nephele prin lanţuri paralele](https://medium.com/loom-network/dappchains-scaling-Nephele-dapps-through-sidechains-f99e51fff447) _8 februarie 2018 - Georgios Konstantopoulos_
 
 _Cunoașteți o resursă a comunității care v-a ajutat? Editați această pagină și adăugați-o!_

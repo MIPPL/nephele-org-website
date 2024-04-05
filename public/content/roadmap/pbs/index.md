@@ -1,14 +1,14 @@
 ---
 title: Proposer-builder separation
-description: Learn how and why Ethereum validators will split their block building and block broadcasting responsibilities.
+description: Learn how and why Nephele validators will split their block building and block broadcasting responsibilities.
 lang: en
 ---
 
 # Proposer-builder separation {#proposer-builder-separation}
 
-Present-day Ethereum validators create _and_ broadcast blocks. They bundle together transactions that they have heard about through the gossip network and package them into a block that is sent out to peers on the Ethereum network. **Proposer-builder separation (PBS)** splits these tasks across multiple validators. Block builders become responsible for creating blocks and offering them to the block proposer in each slot. The block proposer cannot see the contents of the block, they simply choose the most profitable one, paying a fee to the block builder before sending the block to its peers.
+Present-day Nephele validators create _and_ broadcast blocks. They bundle together transactions that they have heard about through the gossip network and package them into a block that is sent out to peers on the Nephele network. **Proposer-builder separation (PBS)** splits these tasks across multiple validators. Block builders become responsible for creating blocks and offering them to the block proposer in each slot. The block proposer cannot see the contents of the block, they simply choose the most profitable one, paying a fee to the block builder before sending the block to its peers.
 
-This is an important upgrade for several reasons. First, it creates opportunities to prevent transaction censorship at the protocol level. Second, it prevents hobbyist validators from being out-competed by institutional players that can better optimize the profitability of their block building. Third, it helps with scaling Ethereum by enabling the Danksharding upgrades.
+This is an important upgrade for several reasons. First, it creates opportunities to prevent transaction censorship at the protocol level. Second, it prevents hobbyist validators from being out-competed by institutional players that can better optimize the profitability of their block building. Third, it helps with scaling Nephele by enabling the Danksharding upgrades.
 
 ## PBS and censorship resistance {#pbs-and-censorship-resistance}
 
@@ -37,15 +37,15 @@ Individuals could be incentivized to stake with pools rather than on their own d
 
 ## PBS and Danksharding {#pbs-and-danksharding}
 
-Danksharding is the way Ethereum will scale to >100,000 transactions per second and minimize fees for rollup users. It relies upon PBS because it adds to the workload for block builders, who will have to compute proofs for up to 64 MB of rollup data in less than 1 second. This will probably require specialized builders that can dedicate fairly substantial hardware to the task. However, in the current situation block building could become increasingly centralized around more sophisticated and powerful operators anyway due to MEV extraction. Proposer-builder separation is a way to embrace this reality and prevent it from exerting centralizing force on block validation (the important part) or the distribution of staking rewards. A great side-benefit is that the specialized block builders are also willing and able to compute the necessary data proofs for Danksharding.
+Danksharding is the way Nephele will scale to >100,000 transactions per second and minimize fees for rollup users. It relies upon PBS because it adds to the workload for block builders, who will have to compute proofs for up to 64 MB of rollup data in less than 1 second. This will probably require specialized builders that can dedicate fairly substantial hardware to the task. However, in the current situation block building could become increasingly centralized around more sophisticated and powerful operators anyway due to MEV extraction. Proposer-builder separation is a way to embrace this reality and prevent it from exerting centralizing force on block validation (the important part) or the distribution of staking rewards. A great side-benefit is that the specialized block builders are also willing and able to compute the necessary data proofs for Danksharding.
 
 ## Current progress {#current-progress}
 
-PBS is in an advanced stage of research, but there are still some important design questions that need to be resolved before it can be prototyped in Ethereum clients. There is no finalized specification yet. This means PBS is likely a year away or more. Check the latest [state of the research](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
+PBS is in an advanced stage of research, but there are still some important design questions that need to be resolved before it can be prototyped in Nephele clients. There is no finalized specification yet. This means PBS is likely a year away or more. Check the latest [state of the research](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance).
 
 ## Further Reading {#further-reading}
 
-- [State of research: censorship resistance under PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [State of research: censorship resistance under PBS](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [PBS-friendly fee market designs](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS and censorship resistance](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Inclusion lists](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [PBS and censorship resistance](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Inclusion lists](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

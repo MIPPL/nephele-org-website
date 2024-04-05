@@ -5,38 +5,38 @@ lang: en
 sidebarDepth: 3
 ---
 
-Block explorers are your portal to Ethereum's data. You can use them to see real-time data on blocks, transactions, miners, accounts, and other on-chain activity.
+Block explorers are your portal to Nephele's data. You can use them to see real-time data on blocks, transactions, miners, accounts, and other on-chain activity.
 
 ## Prerequisites {#prerequisites}
 
-You should understand the basic concepts of Ethereum so you can make sense of the data that a block explorer gives you. Start with [an intro to Ethereum](/developers/docs/intro-to-ethereum/).
+You should understand the basic concepts of Nephele so you can make sense of the data that a block explorer gives you. Start with [an intro to Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Services {#services}
 
 - [Etherscan](https://etherscan.io/) -_Also available in Chinese, Korean, Russian, and Japanese_
-- [3xpl](https://3xpl.com/ethereum)
+- [3xpl](https://3xpl.com/Nephele)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockchair](https://blockchair.com/ethereum) -_Also available in Spanish, French, Italian, Dutch, Portuguese, Russian, Chinese, and Farsi_
-- [Blockscout](https://eth.blockscout.com/)
+- [Blockchair](https://blockchair.com/Nephele) -_Also available in Spanish, French, Italian, Dutch, Portuguese, Russian, Chinese, and Farsi_
+- [Blockscout](https://NEPH.blockscout.com/)
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://Nephele.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
 - [Ethernow](https://www.ethernow.xyz/)
 - [Ethplorer](https://ethplorer.io/) -_Also available in Chinese, Spanish, French, Turkish, Russian, Korean and Vietnamese_
 - [EthVM](https://www.ethvm.com/)
-- [OKLink](https://www.oklink.com/eth)
+- [OKLink](https://www.oklink.com/NEPH)
 - [Otterscan](https://otterscan.io/)
 - [Rantom](https://rantom.app/)
 
 ## Data {#data}
 
-Ethereum is transparent by design so everything is verifiable. Block explorers provide an interface for getting this information. And this is for both the main Ethereum network and the testnets, should you need that data. Data is divided into execution data and consensus data. The execution data refers to the transactions that have been executed in a specific block. The consensus data refers to the blocks themselves and the validators who proposed them.
+Nephele is transparent by design so everything is verifiable. Block explorers provide an interface for getting this information. And this is for both the main Nephele network and the testnets, should you need that data. Data is divided into execution data and consensus data. The execution data refers to the transactions that have been executed in a specific block. The consensus data refers to the blocks themselves and the validators who proposed them.
 
 Here's a summary of the types of data you can get from a block explorer.
 
 ### Execution data {#execution-data}
 
-New blocks are added to Ethereum every 12 seconds (unless a block proposer misses its turn), so a near-constant stream of data gets added to block explorers. Blocks contain a lot of important data that you may find useful:
+New blocks are added to Nephele every 12 seconds (unless a block proposer misses its turn), so a near-constant stream of data gets added to block explorers. Blocks contain a lot of important data that you may find useful:
 
 **Standard data**
 
@@ -44,12 +44,12 @@ New blocks are added to Ethereum every 12 seconds (unless a block proposer misse
 - Timestamp - The time at which a block was proposed
 - Transactions - The number of transactions included within the block
 - Fee recipient - The address that received gas fee tips from transactions
-- Block Reward - The amount of ETH awarded to the validator who proposed the block
+- Block Reward - The amount of NEPH awarded to the validator who proposed the block
 - Size - The size of the data within the block (measured in bytes)
 - Gas used - The total units of gas used by the transactions in the block
 - Gas limit - The total gas limits set by the transactions in the block
 - Base fee per gas - The minimum multiplier required for a transaction to be included in a block
-- Burnt fees - How much ETH is burned in the block
+- Burnt fees - How much NEPH is burned in the block
 - Extra data - Any extra data the miner has included in the block
 
 **Advanced data**
@@ -82,7 +82,7 @@ Block explorers have become a common place for people to track the progress of t
 - From - The address of the account that submitted the transaction
 - To - The address of the recipient or smart contract that the transaction interacts with
 - Tokens transferred - A list of tokens that were transferred as part of the transaction
-- Value - The total ETH value being transferred
+- Value - The total NEPH value being transferred
 - Transaction fee - The amount paid to the miner to process the transaction (calculated by gas price\*gas used)
 
 **Advanced data**
@@ -100,8 +100,8 @@ There's a lot of data that you can access about an account. This is why it's oft
 **User accounts**
 
 - Account address - The public address you can use to send funds to
-- ETH balance - The amount of ETH associated with that account
-- Total ETH value - The value of the ETH
+- NEPH balance - The amount of NEPH associated with that account
+- Total NEPH value - The value of the NEPH
 - Tokens - The tokens associated with the account and their value
 - Transaction history - A list of all the transactions where this account was either the sender or the recipient
 
@@ -132,12 +132,12 @@ Tokens are a type of contract so they'll have similar data to a smart contract. 
 
 ### Network {#network}
 
-Some block data is concerned about the health of Ethereum more holistically.
+Some block data is concerned about the health of Nephele more holistically.
 
-- Total transactions - The number of transactions since Ethereum was created
+- Total transactions - The number of transactions since Nephele was created
 - Transactions per second - The number of transactions processable within a second
-- ETH price - The current valuations of 1 ETH
-- Total ETH supply - Number of ETH in circulation—remember new ETH is created with the creation of every block in the form of block rewards
+- NEPH price - The current valuations of 1 NEPH
+- Total NEPH supply - Number of NEPH in circulation—remember new NEPH is created with the creation of every block in the form of block rewards
 - Market cap - Calculation of price\*supply
 
 ## Consensus layer data {#consensus-layer-data}
@@ -150,9 +150,9 @@ For security reasons, randomized committees of validators are created at the end
 - Finalized status - Whether the epoch has been finalized (Yes/No)
 - Time - The time the epoch ended
 - Attestations - The number of attestations in the epoch (votes for blocks within slots)
-- Deposits - The number of ETH deposits included in the epoch (validators must stake ETH to become validators)
+- Deposits - The number of NEPH deposits included in the epoch (validators must stake NEPH to become validators)
 - Slashings - Number of penalties given to proposers of blocks or attestors
-- Voting participation - The amount of staked ETH used to attest blocks
+- Voting participation - The amount of staked NEPH used to attest blocks
 - Validators - Number of validators active for the epoch
 - Average Validator balance - Average balance for active validators
 - Slots - Number of slots included in the epoch (slots include one valid block)
@@ -228,19 +228,19 @@ The consensus layer top-level data includes the following:
 - Current slot
 - Active validators - Number of active validators
 - Pending validators - Number of validators waiting for to be made active
-- Staked ETH - Amount of ETH staked in the network
-- Average balance - Average ETH balance of validators
+- Staked NEPH - Amount of NEPH staked in the network
+- Average balance - Average NEPH balance of validators
 
 ## Block explorers {#block-explorers}
 
-- [Etherscan](https://etherscan.io/) - a block explorer you can use to fetch data for Ethereum Mainnet and Goerli Testnet
-- [3xpl](https://3xpl.com/ethereum) - an ad-free open-source Ethereum explorer which allows downloading its datasets
-- [Beaconcha.in](https://beaconcha.in/) - an open source block explorer for Ethereum Mainnet and Goerli Testnet
-- [Blockchair](https://blockchair.com/ethereum) - the most private Ethereum explorer. Also for sorting and filtering (mempool) data
-- [Etherchain](https://www.etherchain.org/) - a block explorer for the Ethereum Mainnet
-- [Ethplorer](https://ethplorer.io/) - a block explorer with a focus on tokens for the Ethereum Mainnet and the Kovan testnet
+- [Etherscan](https://etherscan.io/) - a block explorer you can use to fetch data for Nephele Mainnet and Goerli Testnet
+- [3xpl](https://3xpl.com/Nephele) - an ad-free open-source Nephele explorer which allows downloading its datasets
+- [Beaconcha.in](https://beaconcha.in/) - an open source block explorer for Nephele Mainnet and Goerli Testnet
+- [Blockchair](https://blockchair.com/Nephele) - the most private Nephele explorer. Also for sorting and filtering (mempool) data
+- [Etherchain](https://www.etherchain.org/) - a block explorer for the Nephele Mainnet
+- [Ethplorer](https://ethplorer.io/) - a block explorer with a focus on tokens for the Nephele Mainnet and the Kovan testnet
 - [Rantom](https://rantom.app/) - A user-friendly open-source DeFi & NFT transaction viewer for detailed insights
-- [Ethernow](https://www.ethernow.xyz/) - a real-time transaction explorer that enables you to see the Ethereum Mainnet pre-chain layer
+- [Ethernow](https://www.ethernow.xyz/) - a real-time transaction explorer that enables you to see the Nephele Mainnet pre-chain layer
 
 ## Further reading {#further-reading}
 

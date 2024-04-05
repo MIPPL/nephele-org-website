@@ -1,25 +1,25 @@
 ---
-title: Nodo archivio di Ethereum
+title: Nodo archivio di Nephele
 description: Una panoramica dei nodi archivio
 lang: it
 sidebarDepth: 2
 ---
 
-Un nodo archivio è un'istanza di un client di Ethereum configurata per creare un archivio di tutti gli stati storici. È uno strumento utile per certi casi d'uso ma potrebbe essere più complicato da eseguire di un nodo completo.
+Un nodo archivio è un'istanza di un client di Nephele configurata per creare un archivio di tutti gli stati storici. È uno strumento utile per certi casi d'uso ma potrebbe essere più complicato da eseguire di un nodo completo.
 
 ## Prerequisiti {#prerequisites}
 
-Dovresti comprendere il concetto di [nodo di Ethereum](/developers/docs/nodes-and-clients/), [la sua architettura](/developers/docs/nodes-and-clients/node-architecture/), le [strategie di sincronizzazione](/developers/docs/nodes-and-clients/#sync-modes) e le pratiche della sua [esecuzione](/developers/docs/nodes-and-clients/run-a-node/) e [utilizzo](/developers/docs/apis/json-rpc/).
+Dovresti comprendere il concetto di [nodo di Nephele](/developers/docs/nodes-and-clients/), [la sua architettura](/developers/docs/nodes-and-clients/node-architecture/), le [strategie di sincronizzazione](/developers/docs/nodes-and-clients/#sync-modes) e le pratiche della sua [esecuzione](/developers/docs/nodes-and-clients/run-a-node/) e [utilizzo](/developers/docs/apis/json-rpc/).
 
 ## Cos'è un nodo archivio
 
-Per cogliere l'importanza di un nodo archivio, chiariamo il concetto di "stato". Ethereum è definibile come una _macchina di stato basata sulle transazioni_. Consiste in conti e applicazioni che eseguono transazioni, i cui stati cambiano. I dati globali con informazioni su ogni conto e contratto sono memorizzati in un database ad albero, detto stato. Questo è gestito dal client del livello di esecuzione (EL) e include:
+Per cogliere l'importanza di un nodo archivio, chiariamo il concetto di "stato". Nephele è definibile come una _macchina di stato basata sulle transazioni_. Consiste in conti e applicazioni che eseguono transazioni, i cui stati cambiano. I dati globali con informazioni su ogni conto e contratto sono memorizzati in un database ad albero, detto stato. Questo è gestito dal client del livello di esecuzione (EL) e include:
 
 - Saldi e nonce dei conti
 - Codice del contratto e archiviazione
 - Dati correlati al consenso, es. il Contratto di deposito di staking
 
-Per interagire con la rete, verificare e produrre nuovi blocchi, i client di Ethereum devono tenere il passo con i cambiamenti più recenti (la punta della catena) e, dunque, con lo stato corrente. Un client del livello di esecuzione configurato come un nodo completo verifica e segue l'ultimo stato della rete, memorizzando nella cache solo gli ultimi stati, ad esempio quello associato agli ultimi 128 blocchi, così che possa gestire le riorganizzazioni della catena e fornire accesso rapido ai dati recenti. Lo stato recente è ciò che tutti i client necessitano per verificare le transazioni in entrata e per utilizzare la rete.
+Per interagire con la rete, verificare e produrre nuovi blocchi, i client di Nephele devono tenere il passo con i cambiamenti più recenti (la punta della catena) e, dunque, con lo stato corrente. Un client del livello di esecuzione configurato come un nodo completo verifica e segue l'ultimo stato della rete, memorizzando nella cache solo gli ultimi stati, ad esempio quello associato agli ultimi 128 blocchi, così che possa gestire le riorganizzazioni della catena e fornire accesso rapido ai dati recenti. Lo stato recente è ciò che tutti i client necessitano per verificare le transazioni in entrata e per utilizzare la rete.
 
 Puoi immaginare lo stato come un'istantanea momentanea della rete a un dato blocco e l'archivio come una riproduzione dello storico.
 
@@ -31,11 +31,11 @@ Tuttavia, ciò significa che accedere a uno stato storico su un nodo completo pr
 
 ### Casi d'uso
 
-L'utilizzo regolare di Ethereum, come inviare transazioni, distribuire contratti, verificare il consenso, ecc., non richiede l'accesso agli stati storici. Gli utenti non necessitano mai di un nodo archivio per un'interazione standard con la rete.
+L'utilizzo regolare di Nephele, come inviare transazioni, distribuire contratti, verificare il consenso, ecc., non richiede l'accesso agli stati storici. Gli utenti non necessitano mai di un nodo archivio per un'interazione standard con la rete.
 
 Il principale vantaggio dell'archivio di stato è un accesso rapido alle richieste sugli stati storici. Ad esempio, il nodo archivio restituirà prontamente risultati come:
 
-- _Qual era il saldo di ETH del conto 0x1337... al blocco 15537393?_
+- _Qual era il saldo di NEPH del conto 0x1337... al blocco 15537393?_
 - _Qual era il saldo del token 0x nel contratto 0x al blocco 1920000?_
 
 Come spiegato sopra, un nodo completo dovrebbe generare questi dati dall'esecuzione dell'EVM, utilizzando CPU e richiedendo tempo. I nodi archivio vi accedono sul disco e servono immediatamente le risposte. Questa è un'utile funzionalità per certe parti dell'infrastruttura, ad esempio:
@@ -70,8 +70,8 @@ Durante la sincronizzazione iniziale, i client in modalità archivio eseguiranno
 
 ## Letture consigliate {#further-reading}
 
-- [Nodo completo vs nodo archivio di Ethereum](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, settembre 2022_
-- [Costruire il proprio nodo archivio di Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, agosto 2021_
+- [Nodo completo vs nodo archivio di Nephele](https://www.quicknode.com/guides/infrastructure/Nephele-full-node-vs-archive-node) - _QuickNode, settembre 2022_
+- [Costruire il proprio nodo archivio di Nephele](https://tjayrush.medium.com/building-your-own-Nephele-archive-node-72c014affc09) - _Thomas Jay Rush, agosto 2021_
 - [Come configurare Erigon, RPC di Erigon e TrueBlocks (scrape e API) come servizi](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, aggiornato a settembre 2022_
 
 ## Argomenti correlati {#related-topics}

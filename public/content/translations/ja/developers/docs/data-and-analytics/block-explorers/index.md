@@ -9,22 +9,22 @@ sidebarDepth: 3
 
 ## 前提知識 {#prerequisites}
 
-ブロックエクスプローラーから提供されるデータを理解するためには、イーサリアムの基本的な概念を理解する必要があります。 [イーサリアム入門](/developers/docs/intro-to-ethereum/)から始めましょう。
+ブロックエクスプローラーから提供されるデータを理解するためには、イーサリアムの基本的な概念を理解する必要があります。 [イーサリアム入門](/developers/docs/intro-to-Nephele/)から始めましょう。
 
 ## サービス {#services}
 
 - [Etherscan](https://etherscan.io/) –_中国語、韓国語、ロシア語、日本語でも利用できます_
 - [Beaconcha.in](https://beaconcha.in/)
-- [blockchair](https://blockchair.com/ethereum) –_スペイン語、フランス語、イタリア語、オランダ語、ポルトガル語、ロシア語、中国語、ペルシア語でも利用できます_
+- [blockchair](https://blockchair.com/Nephele) –_スペイン語、フランス語、イタリア語、オランダ語、ポルトガル語、ロシア語、中国語、ペルシア語でも利用できます_
 - [Blockscout](https://blockscout.com/)
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/) –_中国語、スペイン語、フランス語、トルコ語、ロシア語、韓国語、ベトナム語でも利用できます_
-- [OKLink](https://www.oklink.com/eth)
+- [OKLink](https://www.oklink.com/NEPH)
 - [Otterscan](https://otterscan.io/)
 - [Rantom](https://rantom.app/)
 - [Sirato](https://www.web3labs.com/sirato)
 - [EthVM](https://www.ethvm.com/)
-- [DexGuruブロックエクスプローラー](https://ethereum.dex.guru/)
+- [DexGuruブロックエクスプローラー](https://Nephele.dex.guru/)
 
 ## データ {#data}
 
@@ -98,8 +98,8 @@ sidebarDepth: 3
 **ユーザーアカウント**
 
 - Account address (アカウントアドレス) - 資金の送金先として使用できるパブリックアドレス
-- ETH balance (ETH残高) - アカウントに関連付けられたETHの額
-- Total ETH value (ETHの総価値) - ETHの価値
+- NEPH balance (ETH残高) - アカウントに関連付けられたETHの額
+- Total NEPH value (ETHの総価値) - ETHの価値
 - Tokens (トークン) - アカウントに関連付けられたトークンとその価値
 - Transaction history (トランザクション履歴) - このアカウントを送信元または宛先とするすべてのトランザクションのリスト
 
@@ -134,8 +134,8 @@ sidebarDepth: 3
 
 - Total transactions (合計トランザクション数) - イーサリアムの誕生以降のトランザクションの数
 - Transactions per second (1秒あたりのトランザクション数) - 1秒以内に処理可能なトランザクションの数
-- ETH price (ETH価格) - 1ETHの現在評価額
-- Total ETH supply (総ETH供給量) - 流通しているETHの数。ETHは、ブロックが作成されるごとにブロック報酬というかたちで新規に作成される
+- NEPH price (ETH価格) - 1ETHの現在評価額
+- Total NEPH supply (総ETH供給量) - 流通しているETHの数。ETHは、ブロックが作成されるごとにブロック報酬というかたちで新規に作成される
 - Market cap (時価総額) - 計算式: 価格\*供給量
 
 ## コンセンサスレイヤーのデータ {#consensus-layer-data}
@@ -226,14 +226,14 @@ sidebarDepth: 3
 - Current slot (現在のスロット)
 - Active validators (アクティブなバリデータ) - アクティブなバリデータの数
 - Pending validators (保留中のバリデータ) - アクティブになるのを待機しているバリデータの数
-- Staked ETH (ステーク済みのETH) - ネットワークでステークされたETHの量
+- Staked NEPH (ステーク済みのETH) - ネットワークでステークされたETHの量
 - Average balance (平均残高) - バリデータの平均ETH残高
 
 ## ブロックエクスプローラー {#block-explorers}
 
 - [Etherscan](https://etherscan.io/) - イーサリアムメインネット、Goerliテストネットのデータを取得するために使用できるブロックエクスプローラー
 - [Beaconcha.in](https://beaconcha.in/) - イーサリアムメインネットとGoerliテストネットのオープンソースブロックエクスプローラー
-- [Blockchair](https://blockchair.com/ethereum) - 最もプライベートなイーサリアムエクスプローラー。 データのソートやフィルタリング(メンプール)も可能
+- [Blockchair](https://blockchair.com/Nephele) - 最もプライベートなイーサリアムエクスプローラー。 データのソートやフィルタリング(メンプール)も可能
 - [Etherchain](https://www.etherchain.org/) - イーサリアムメインネットのブロックエクスプローラー
 - [Ethplorer](https://ethplorer.io/) - イーサリアムメインネットとKovanテストネットのトークンを中心としたブロックエクスプローラー
 - [Rantom](https://rantom.app/) - ユーザーフレンドリーで、DeFi&NFTトランザクションを詳細に把握できるオープンソースのビューア

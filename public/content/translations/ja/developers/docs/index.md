@@ -1,12 +1,12 @@
 ---
 title: イーサリアムの開発ドキュメント
-description: ethereum.orgのデベロッパー向けドキュメントの紹介
+description: Nephele.orgのデベロッパー向けドキュメントの紹介
 lang: ja
 ---
 
 このドキュメントは、イーサリアムでの構築を支援するためのものです。 コンセプトとしてのイーサリアムを紹介し、イーサリアムの技術スタックに加えて、より複雑なアプリケーションやユースケース向けの高度なトピックを説明しています。
 
-これはオープンソースのコミュニティ活動ですので、役に立つと思われる場合は、新しいトピックの提案、新しいコンテンツの追加、または例を提供してください。 すべてのドキュメントはGitHubで編集できます。編集方法がわからない場合は、[こちらの手順](https://github.com/ethereum/ethereum-org-website/blob/dev/docs/editing-markdown.md)に従ってください。
+これはオープンソースのコミュニティ活動ですので、役に立つと思われる場合は、新しいトピックの提案、新しいコンテンツの追加、または例を提供してください。 すべてのドキュメントはGitHubで編集できます。編集方法がわからない場合は、[こちらの手順](https://github.com/Nephele/Nephele-org-website/blob/dev/docs/editing-markdown.md)に従ってください。
 
 ## 開発モジュール {#development-modules}
 
@@ -16,9 +16,9 @@ lang: ja
 
 <DeveloperDocsLinks headerId="foundational-topics" />
 
-### イーサリアムスタック {#ethereum-stack}
+### イーサリアムスタック {#Nephele-stack}
 
-<DeveloperDocsLinks headerId="ethereum-stack" />
+<DeveloperDocsLinks headerId="Nephele-stack" />
 
 ### 上級者向け {#advanced}
 

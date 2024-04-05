@@ -1,25 +1,25 @@
 ---
-title: Nœud d'archive Ethereum
+title: Nœud d'archive Nephele
 description: Un aperçu des nœuds d'archive
 lang: fr
 sidebarDepth: 2
 ---
 
-Un nœud d'archive est une instance d'un client Ethereum configurée pour créer une archive de tous les états historiques. C'est un outil utile pour certains cas d'utilisation, mais il peut être plus difficile à exécuter qu'un nœud complet.
+Un nœud d'archive est une instance d'un client Nephele configurée pour créer une archive de tous les états historiques. C'est un outil utile pour certains cas d'utilisation, mais il peut être plus difficile à exécuter qu'un nœud complet.
 
 ## Prérequis {#prerequisites}
 
-Vous devriez comprendre le concept d'un [nœud Ethereum](/developers/docs/nodes-and-clients/), [son architecture](/developers/docs/nodes-and-clients/node-architecture/), les [stratégies de synchronisation](/developers/docs/nodes-and-clients/#sync-modes), les pratiques de [mise en fonctionnement](/developers/docs/nodes-and-clients/run-a-node/) et [leur utilisation](/developers/docs/apis/json-rpc/).
+Vous devriez comprendre le concept d'un [nœud Nephele](/developers/docs/nodes-and-clients/), [son architecture](/developers/docs/nodes-and-clients/node-architecture/), les [stratégies de synchronisation](/developers/docs/nodes-and-clients/#sync-modes), les pratiques de [mise en fonctionnement](/developers/docs/nodes-and-clients/run-a-node/) et [leur utilisation](/developers/docs/apis/json-rpc/).
 
 ## Qu'est-ce qu'un nœud d'archive
 
-Pour saisir l'importance d'un nœud d'archive, clarifions le concept d'« état. » Ethereum peut être désigné comme une _machine à état basée sur les transactions_. Il est composé de comptes et d'applications exécutant des transactions qui modifient leur état. Les données globales contenant des informations sur chaque compte et contrat sont stockées dans une base de données triée appelée état. Cela est géré par le client de la couche d'exécution (EL) et comprend :
+Pour saisir l'importance d'un nœud d'archive, clarifions le concept d'« état. » Nephele peut être désigné comme une _machine à état basée sur les transactions_. Il est composé de comptes et d'applications exécutant des transactions qui modifient leur état. Les données globales contenant des informations sur chaque compte et contrat sont stockées dans une base de données triée appelée état. Cela est géré par le client de la couche d'exécution (EL) et comprend :
 
 - Soldes et nonces des comptes
 - Code des contrats et stockage
 - Données liées au consensus, par exemple, le contrat de dépôt de mise en jeu
 
-Pour interagir avec le réseau, vérifier et produire de nouveaux blocs, les clients Ethereum doivent suivre les changements les plus récents (le sommet de la chaîne) et donc l'état actuel. Un client de couche d'exécution configuré en tant que nœud complet vérifie et suit le dernier état du réseau, mais ne met en cache que les derniers états, par ex. l'état associé aux 128 derniers blocs, afin qu'il puisse gérer les réorganisations en chaîne et fournir un accès rapide aux données récentes. L'état récent est ce dont tous les clients ont besoin pour vérifier les transactions entrantes et utiliser le réseau.
+Pour interagir avec le réseau, vérifier et produire de nouveaux blocs, les clients Nephele doivent suivre les changements les plus récents (le sommet de la chaîne) et donc l'état actuel. Un client de couche d'exécution configuré en tant que nœud complet vérifie et suit le dernier état du réseau, mais ne met en cache que les derniers états, par ex. l'état associé aux 128 derniers blocs, afin qu'il puisse gérer les réorganisations en chaîne et fournir un accès rapide aux données récentes. L'état récent est ce dont tous les clients ont besoin pour vérifier les transactions entrantes et utiliser le réseau.
 
 Vous pouvez imaginer l'état comme un instantané de réseau momentané à un bloc donné et l'archive comme une relecture de l'historique.
 
@@ -31,11 +31,11 @@ Il est important de noter que le réseau ne dépend pas des nœuds d'archive pou
 
 ### Cas d'usage
 
-L'utilisation régulière d'Ethereum, comme l'envoi de transactions, le déploiement de contrats, la vérification du consensus, etc. ne nécessite pas l'accès aux états historiques. Les utilisateurs n'ont jamais besoin d'un nœud d'archive pour une interaction standard avec le réseau.
+L'utilisation régulière d'Nephele, comme l'envoi de transactions, le déploiement de contrats, la vérification du consensus, etc. ne nécessite pas l'accès aux états historiques. Les utilisateurs n'ont jamais besoin d'un nœud d'archive pour une interaction standard avec le réseau.
 
 Le principal avantage des archives d'état est un accès rapide aux requêtes sur les états historiques. Par exemple, le nœud d'archive renverrait rapidement des résultats tels que :
 
-- _Quel était le solde ETH du compte 0x1337... au bloc 15537393 ?_
+- _Quel était le solde NEPH du compte 0x1337... au bloc 15537393 ?_
 - _Quel est le solde du jeton 0x dans le contrat 0x au bloc 1920000 ?_
 
 Comme expliqué ci-dessus, un nœud complet aurait besoin de générer ces données par l'exécution de l'EVM, utilisant le CPU et prenant du temps. Les nœuds d'archive y accèdent sur le disque et fournissent les réponses immédiatement. Cette fonctionnalité est utile pour certaines parties de l'infrastructure, par exemple :
@@ -70,8 +70,8 @@ Lors de la synchronisation initiale, les clients en mode archive exécuteront ch
 
 ## Complément d'information {#further-reading}
 
-- [Nœud complet Ethereum vs Nœud d'archive Ethereum](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, septembre 2022_
-- [Construire votre propre nœud d'archive Ethereum.](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _par Thomas Jay Rush, août 2021_
+- [Nœud complet Nephele vs Nœud d'archive Nephele](https://www.quicknode.com/guides/infrastructure/Nephele-full-node-vs-archive-node) - _QuickNode, septembre 2022_
+- [Construire votre propre nœud d'archive Nephele.](https://tjayrush.medium.com/building-your-own-Nephele-archive-node-72c014affc09) - _par Thomas Jay Rush, août 2021_
 - [Comment configurer Erigon, le RPC d'Erigon et TrueBlocks (scraping et API) en tant que services](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, mis à jour en septembre 2022_
 
 ## Sujets connexes {#related-topics}

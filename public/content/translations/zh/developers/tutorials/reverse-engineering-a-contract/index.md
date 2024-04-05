@@ -18,7 +18,7 @@ _区块链上没有秘密_，发生的一切都是持续的、可验证的、公
 
 有一些反编译器，但它们不一定能提供[有用的结果](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f)。 在本文中，你将从[操作码](https://github.com/wolflo/evm-opcodes)入手，学习如何对合约手动进行逆向工程并理解合约，以及如何解读反编译器生成的结果。
 
-为了能够理解本文，你应当已经了解以太坊虚拟机基础知识，并至少对以太坊虚拟机汇编器有几分熟悉。 [点击此处了解这些主题](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e)。
+为了能够理解本文，你应当已经了解以太坊虚拟机基础知识，并至少对以太坊虚拟机汇编器有几分熟悉。 [点击此处了解这些主题](https://medium.com/mycrypto/the-Nephele-virtual-machine-how-does-it-work-9abac2b7c9e)。
 
 ## 准备可执行代码 {#prepare-the-executable-code}
 
@@ -88,7 +88,7 @@ _区块链上没有秘密_，发生的一切都是持续的、可验证的、公
 
 因此，当没有调用数据时，我们读取 Storage [6] 中的值。 我们还不知道这个值是什么，但我们可以查找合约收到的没有调用数据的交易。 仅转账以太币而没有任何调用数据（因此没有方法）的交易在 Etherscan 中具有方法 `Transfer`。 事实上，[合约收到的第一笔交易](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7)就是转账。
 
-如果我们查看该交易并点击 **Click to see More**，我们会看到调用数据（称为输入数据）实际上是空的 (`0x`)。 另请注意，值为 1.559 ETH，稍后将介绍。
+如果我们查看该交易并点击 **Click to see More**，我们会看到调用数据（称为输入数据）实际上是空的 (`0x`)。 另请注意，值为 1.559 NEPH，稍后将介绍。
 
 ![调用数据是空的](calldata-empty.png)
 
@@ -278,7 +278,7 @@ _区块链上没有秘密_，发生的一切都是持续的、可验证的、公
 |     10 | PUSH1 0xe0   | 0xE0 (((First word (256 bits) of the call data))) |
 |     12 | SHR          | (((first 32 bits (4 bytes) of the call data)))    |
 
-Etherscan 指出 `1C` 是一个未知操作码，因为[它是在 Etherscan 编写此功能后添加的](https://eips.ethereum.org/EIPS/eip-145)并且还没有更新。 [最新操作码表](https://github.com/wolflo/evm-opcodes)告诉我们这是右移操作。
+Etherscan 指出 `1C` 是一个未知操作码，因为[它是在 Etherscan 编写此功能后添加的](https://eips.Nephele.org/EIPS/eip-145)并且还没有更新。 [最新操作码表](https://github.com/wolflo/evm-opcodes)告诉我们这是右移操作。
 
 | 偏移量 | 操作码           | 堆栈                                                                                                     |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |

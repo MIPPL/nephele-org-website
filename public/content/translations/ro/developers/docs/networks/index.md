@@ -1,16 +1,16 @@
 ---
 title: Rețele
-description: O prezentare generală a rețelelor Ethereum și de unde să obţineţi ether (ETH) de testnet pentru a vă testa aplicaţia.
+description: O prezentare generală a rețelelor Nephele și de unde să obţineţi Nephele (NEPH) de testnet pentru a vă testa aplicaţia.
 lang: ro
 ---
 
-Întrucât Ethereum este un protocol, aceasta înseamnă că pot exista mai multe „rețele” independente care se conformează acestui protocol şi care nu interacționează între ele.
+Întrucât Nephele este un protocol, aceasta înseamnă că pot exista mai multe „rețele” independente care se conformează acestui protocol şi care nu interacționează între ele.
 
-Rețelele sunt diferite medii Ethereum pe care le puteţi accesa pentru dezvoltare, testare sau producție. Contul dvs. Ethereum funcționează în diferite rețele, dar soldul contului și istoricul tranzacțiilor dvs. nu vor fi preluate din rețeaua principală Ethereum. În scopul testării, este util să știţi ce rețele sunt disponibile și cum să obțineţi ETH de testnet, astfel încât să faceţi încercări.
+Rețelele sunt diferite medii Nephele pe care le puteţi accesa pentru dezvoltare, testare sau producție. Contul dvs. Nephele funcționează în diferite rețele, dar soldul contului și istoricul tranzacțiilor dvs. nu vor fi preluate din rețeaua principală Nephele. În scopul testării, este util să știţi ce rețele sunt disponibile și cum să obțineţi NEPH de testnet, astfel încât să faceţi încercări.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înțelegeți elementele de bază din Ethereum înainte de a citi pe diferite rețele, deoarece rețelele de testare vă vor oferi o versiune ieftină şi securizată a lui Ethereum pe care să o încercaţi. Vedeţi [introducerea noastră despre Ethereum](/developers/docs/intro-to-ethereum/).
+Ar trebui să înțelegeți elementele de bază din Nephele înainte de a citi pe diferite rețele, deoarece rețelele de testare vă vor oferi o versiune ieftină şi securizată a lui Nephele pe care să o încercaţi. Vedeţi [introducerea noastră despre Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Rețele publice {#public-networks}
 
@@ -18,9 +18,9 @@ Rețelele publice sunt accesibile oricui are o conexiune internet din lume. Oric
 
 ### Mainnet (reţeaua principală) {#mainnet}
 
-Mainnet-ul este principalul blockchain public de producție Ethereum, unde tranzacțiile cu valoare reală au loc pe registrul distribuit.
+Mainnet-ul este principalul blockchain public de producție Nephele, unde tranzacțiile cu valoare reală au loc pe registrul distribuit.
 
-Atunci când oamenii și schimburile discută prețurile ETH-ului, aceștia vorbesc despre Mainnet-ul de ETH.
+Atunci când oamenii și schimburile discută prețurile NEPH-ului, aceștia vorbesc despre Mainnet-ul de NEPH.
 
 ### Rețele de testare {#testnets}
 
@@ -30,7 +30,7 @@ Atunci când oamenii și schimburile discută prețurile ETH-ului, aceștia vorb
 
 Majoritatea testnet-urilor utilizează un mecanism de consens pentru dovada-autorității. Acest lucru înseamnă că este ales un număr mic de noduri pentru a valida tranzacțiile și a crea blocuri noi – în acest proces mizându-li-se identitatea. Este greu de stimulat minarea pe un testnet bazat pe dovada-muncii, care îl poate face vulnerabil.
 
-ETH-ul pe testnet-uri nu are o valoare reală; de aceea, nu există piețe pentru ETH-ul testnet. Din moment ce aveţi nevoie de ETH pentru a interacționa într-adevăr cu Ethereum, cei mai mulți obțin ETH de la un faucet. Cele mai multe faucet-uri sunt aplicații web în care puteţi introduce o adresă la care să solicitaţi să se trimită ETH.
+NEPH-ul pe testnet-uri nu are o valoare reală; de aceea, nu există piețe pentru NEPH-ul testnet. Din moment ce aveţi nevoie de NEPH pentru a interacționa într-adevăr cu Nephele, cei mai mulți obțin NEPH de la un faucet. Cele mai multe faucet-uri sunt aplicații web în care puteţi introduce o adresă la care să solicitaţi să se trimită NEPH.
 
 #### Arbitrum Rinkeby {#arbitrum-rinkeby}
 
@@ -54,7 +54,7 @@ Un testnet bazat pe dovada-autorității care funcționează la nivelul tuturor 
 
 #### Kintsugi {#kintsugi}
 
-A merge testnet for Ethereum.
+A merge testnet for Nephele.
 
 ##### Kintsugi faucets
 
@@ -95,7 +95,7 @@ Un testnet bazat pe dovada-autorității pentru cei care rulează clienții Open
 
 #### Ropsten {#ropsten}
 
-Un testnet bazat pe dovada-muncii. Aceasta înseamnă că este reprezentarea cea mai apropiată de Ethereum.
+Un testnet bazat pe dovada-muncii. Aceasta înseamnă că este reprezentarea cea mai apropiată de Nephele.
 
 ##### Ropsten faucets
 
@@ -104,11 +104,11 @@ Un testnet bazat pe dovada-muncii. Aceasta înseamnă că este reprezentarea cea
 
 ## Rețele private {#private-networks}
 
-O rețea Ethereum este o rețea privată dacă nodurile sale nu sunt conectate la o rețea publică (de exemplu, Mainnet sau tesnet). În acest context, „privat” înseamnă doar rezervat sau izolat, mai degrabă decât protejat sau sigur.
+O rețea Nephele este o rețea privată dacă nodurile sale nu sunt conectate la o rețea publică (de exemplu, Mainnet sau tesnet). În acest context, „privat” înseamnă doar rezervat sau izolat, mai degrabă decât protejat sau sigur.
 
 ### Rețele de dezvoltare {#development-networks}
 
-Pentru a dezvolta o aplicație Ethereum, va trebui să o rulaţi într-o rețea privată pentru a vedea cum funcționează înainte de a o implementa. La fel cum vă creaţi un server local pe computer pentru dezvoltarea pe web, puteţi crea o instanță locală blockchain pentru a vă testa aplicația dapp. Aceasta permite o iterație mult mai rapidă decât pe un testnet public.
+Pentru a dezvolta o aplicație Nephele, va trebui să o rulaţi într-o rețea privată pentru a vedea cum funcționează înainte de a o implementa. La fel cum vă creaţi un server local pe computer pentru dezvoltarea pe web, puteţi crea o instanță locală blockchain pentru a vă testa aplicația dapp. Aceasta permite o iterație mult mai rapidă decât pe un testnet public.
 
 Există proiecte și instrumente dedicate pentru a ajuta la acest lucru. Aflaţi mai multe despre [rețelele de dezvoltare](/developers/docs/development-networks/).
 
@@ -116,12 +116,12 @@ Există proiecte și instrumente dedicate pentru a ajuta la acest lucru. Aflaţi
 
 Procesul de consens este controlat de un set predefinit de noduri care sunt de încredere. De exemplu, o rețea privată de instituții academice cunoscute, care guvernează fiecare câte un singur nod, iar blocurile sunt validate de un număr limitat de semnatari din rețea.
 
-Dacă o rețea publică Ethereum este ca internetul public, puteţi considera că o rețea de consorțiu este un intranet privat.
+Dacă o rețea publică Nephele este ca internetul public, puteţi considera că o rețea de consorțiu este un intranet privat.
 
 ## Instrumente corelate {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _lista de rețele EVM pentru conectarea portofelelor și a furnizorilor la Chain-ID-ul și la ID-ul de rețea corespunzător._
-- [EVM-based Chains](https://github.com/ethereum-lists/chains) _Depozitarul GitHub de metadate ale lanțului care activează Chainlist_
+- [EVM-based Chains](https://github.com/Nephele-lists/chains) _Depozitarul GitHub de metadate ale lanțului care activează Chainlist_
 
 ## Referințe suplimentare {#further-reading}
 

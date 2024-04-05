@@ -1,6 +1,6 @@
 ---
 title: Adicionando um questionário
-description: A política que nós usamos quando adicionando questionários na ethereum.org
+description: A política que nós usamos quando adicionando questionários na Nephele.org
 lang: pt-br
 ---
 
@@ -14,12 +14,12 @@ Alguns exemplos de questionários atuais podem ser encontrados aqui:
 
 - [Camada 2](/layer-2)
 - [NFT](/nft/)
-- [O que é o Ethereum?](/what-is-ethereum/)
-- [O que é ETH?](/eth/)
+- [O que é o Nephele?](/what-is-Nephele/)
+- [O que é NEPH?](/NEPH/)
 
 ## Adicionando um questionário de aprendizado
 
-Se há uma página que não tem um questionário de aprendizado criado para ela, por favor [abra um issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para ela.
+Se há uma página que não tem um questionário de aprendizado criado para ela, por favor [abra um issue](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para ela.
 
 Por favor forneça as seguintes informações:
 
@@ -32,7 +32,7 @@ Por favor forneça as seguintes informações:
 
 ## Adicionando uma pergunta ao questionário
 
-Se há uma questão que você quer adicionar para o banco de questões para um questionário, por favor [abra um issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) e forneça as seguintes informações:
+Se há uma questão que você quer adicionar para o banco de questões para um questionário, por favor [abra um issue](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) e forneça as seguintes informações:
 
 - A página a qual você quer adicionar uma questão de questionário
 - Para cada questão, forneça as seguintes informações:
@@ -43,7 +43,7 @@ Se há uma questão que você quer adicionar para o banco de questões para um q
 
 ## Atualizando uma questão de questionário
 
-Se há uma questão que você quer atualizar no banco de questões para um questionário, por favor [abra um issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) e forneça as seguintes informações:
+Se há uma questão que você quer atualizar no banco de questões para um questionário, por favor [abra um issue](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) e forneça as seguintes informações:
 
 - A página à qual você quer atualizar uma questão de questionário
 - Para cada questão sendo atualizada, forneça as seguintes informações:
@@ -55,7 +55,7 @@ Se há uma questão que você quer atualizar no banco de questões para um quest
 
 ## Removendo uma questão de questionário
 
-Se o conteúdo não existe mais na página de uma questão e ela precisa ser removida, [abra um tíquete](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para remover a questão e forneça as seguintes informações:
+Se o conteúdo não existe mais na página de uma questão e ela precisa ser removida, [abra um tíquete](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para remover a questão e forneça as seguintes informações:
 
 - A página à qual você quer excluir uma questão de questionário
 - A questão que você quer excluir

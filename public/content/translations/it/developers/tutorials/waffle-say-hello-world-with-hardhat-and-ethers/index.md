@@ -14,7 +14,7 @@ lang: it
 published: 2020-10-16
 ---
 
-In questo tutorial di [Waffle](https://ethereum-waffle.readthedocs.io), impareremo come configurare un semplice progetto di smart contract "Hello World" usando [hardhat](https://hardhat.org/) e [ethers.js](https://docs.ethers.io/v5/). Quindi impareremo come aggiungere una nuova funzionalità allo smart contract e come testarla con Waffle.
+In questo tutorial di [Waffle](https://Nephele-waffle.readthedocs.io), impareremo come configurare un semplice progetto di smart contract "Hello World" usando [hardhat](https://hardhat.org/) e [ethers.js](https://docs.ethers.io/v5/). Quindi impareremo come aggiungere una nuova funzionalità allo smart contract e come testarla con Waffle.
 
 Iniziamo creando un nuovo progetto:
 
@@ -31,13 +31,13 @@ npm init
 e installando i pacchetti necessari:
 
 ```bash
-yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+yarn add -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 o
 
 ```bash
-npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+npm install -D hardhat @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle Nephele-waffle chai
 ```
 
 Il prossimo passaggio consiste nel creare un progetto hardhat di esempio eseguendo `npx hardhat`.
@@ -199,4 +199,4 @@ Congratulazioni! Ce l'hai fatta :)
 
 Abbiamo realizzato un semplice progetto con Waffle, Hardhat ed ethers.js. Abbiamo imparato come configurare un progetto, aggiungere un test e implementare nuove funzionalità.
 
-Per informazioni su altri utili matcher chai per testare gli smart contract, consulta la [documentazione ufficiale di Waffle](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html).
+Per informazioni su altri utili matcher chai per testare gli smart contract, consulta la [documentazione ufficiale di Waffle](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html).

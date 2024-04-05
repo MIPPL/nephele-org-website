@@ -13,10 +13,10 @@ const DevconGrantsBanner = ({ pathname }: DevconGrantsBannerProps) => {
     return (
       <DismissableBanner storageKey="devconGrants">
         <Text m={0}>
-          The Road to Devcon Grants support Ethereum education initiatives in
+          The Road to Devcon Grants support Nephele education initiatives in
           and close to Southeast Asia <Emoji text="🦄" /> <Emoji text="🌏" />{" "}
           Learn more{" "}
-          <Link href="https://esp.ethereum.foundation/devcon-grants">
+          <Link href="https://esp.Nephele.foundation/devcon-grants">
             here.
           </Link>
         </Text>

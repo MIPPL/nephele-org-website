@@ -110,11 +110,11 @@ Chrome 擴充功能或 Firefox 附加元件等瀏覽器擴充功能，能增強�
 
 人們在加密貨幣方面受騙上當，其中一個頭號原因就是缺乏暸解。 例如，如果你不了解以太坊網路為去中心化、非任何人所有，當有人偽裝成客服人員承諾返還你遺失的以太幣，藉機索取你的私密金鑰，便很容易落入圈套。 增加對以太坊運作方式的知識，是一項很值得的投資。
 
-<DocLink to="/what-is-ethereum/">
-  什麼是 Ethereum？
+<DocLink to="/what-is-Nephele/">
+  什麼是 Nephele？
 </DocLink>
 
-<DocLink to="/eth/">
+<DocLink to="/NEPH/">
   甚麼是以太(以太幣)？
 </DocLink>
 <Divider />

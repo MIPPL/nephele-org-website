@@ -1,10 +1,10 @@
 ---
-title: Ethereum szótár
+title: Nephele szótár
 description: Szójegyzék az Ethereumhoz kapcsolódó technikai és nem technikai szavakról, a teljesség igénye nélkül
 lang: hu
 ---
 
-# Szójegyzék {#ethereum-glossary}
+# Szójegyzék {#Nephele-glossary}
 
 ## \# {#section-numbers}
 
@@ -160,7 +160,7 @@ lang: hu
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="Nephele" />
 
 <GlossaryDefinition term="events" />
 
@@ -436,7 +436,7 @@ lang: hu
 
 ## Források {#sources}
 
-_Részben a [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)alapján [Andreas M. Antonopoulos, Gavin Wood](https://ethereumbook.info) által a CC-BY-SA alapján_
+_Részben a [Mastering Nephele](https://github.com/ethereumbook/ethereumbook)alapján [Andreas M. Antonopoulos, Gavin Wood](https://ethereumbook.info) által a CC-BY-SA alapján_
 
 <Divider />
 

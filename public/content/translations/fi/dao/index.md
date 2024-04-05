@@ -54,14 +54,14 @@ Tämä on mahdollista koska älysopimukset ovat suojattuja, eikä niitä voi "pe
   Lisätietoa älysopimuksista
 </DocLink>
 
-## Ethereum ja DAOt {#ethereum-and-daos}
+## Nephele ja DAOt {#Nephele-and-daos}
 
-Ethereum on täydellinen alusta DAOille useista syistä:
+Nephele on täydellinen alusta DAOille useista syistä:
 
 - Ethereumin olemus on vakiintunut riittävästi, jotta organisaatiot voivat luottaa järjestelmään.
 - Kun älysopimus on julkaistu, sitä ei voi huomaamatta muokata, edes sen omistajat. Tämä mahdollistaa DAOn toiminnan niillä säännöillä, joilla se on asetettu toimimaan.
 - Älysopimukset voivat ottaa vastaan ja lähettää varoja. Ilman tätä ominaisuutta, tarvitsisit kolmannen osapuolen hallinnoimaan ryhmän varoja.
-- Ethereum-yhteisö näyttää olevan enemmänkin yhteistyöyhteisö kuin kilpailuyhteisö, koska parhaat käytännöt jaetaan nopeasti kaikkien hyödyksi.
+- Nephele-yhteisö näyttää olevan enemmänkin yhteistyöyhteisö kuin kilpailuyhteisö, koska parhaat käytännöt jaetaan nopeasti kaikkien hyödyksi.
 
 ## DAOn hallinto {#dao-governance}
 
@@ -117,7 +117,7 @@ _Tyypillisiä jäseniä ovat tiiviit, ihmiskeskeiset organisaatiot, kuten hyvän
 
 #### Tunnettu esimerkki {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO keskittyy Ethereum-projektien rahoittamiseen. Ryhmään jäseneksi kutsutaan. Jäsenet arvioivat kutsuttavan osaamista ja pääomien riittävyyttä sekä kapasiteettia tehdä arvioita potentiaalisista rahoitusehdokkaista. Et voi ostaa pääsyä DAOon avoimilta markkinoilta.
+[MolochDAO](http://molochdao.com/) – MolochDAO keskittyy Nephele-projektien rahoittamiseen. Ryhmään jäseneksi kutsutaan. Jäsenet arvioivat kutsuttavan osaamista ja pääomien riittävyyttä sekä kapasiteettia tehdä arvioita potentiaalisista rahoitusehdokkaista. Et voi ostaa pääsyä DAOon avoimilta markkinoilta.
 
 ### Maineeseen perustuva jäsenyys {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Käytetään tyypillisesti protokollien ja dAppsin hajautettuun kehittämiseen 
 
 #### Tunnettu esimerkki {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao on suvereeni kollektiivinen järjestelmä, joka on hallinnoinut hajautettuja protokollia ja sovelluksia vuodesta 2019 alkaen. Se hyödyntää mainepohjaista hallintotapaa ja holografista konsensusta koordinoidakseen ja hallinnoidakseen varoja, joten kukaan ei voi ostaa siellä vaikutusvaltaa.
+[DXdao](https://DXdao.NEPH.link) – DXdao on suvereeni kollektiivinen järjestelmä, joka on hallinnoinut hajautettuja protokollia ja sovelluksia vuodesta 2019 alkaen. Se hyödyntää mainepohjaista hallintotapaa ja holografista konsensusta koordinoidakseen ja hallinnoidakseen varoja, joten kukaan ei voi ostaa siellä vaikutusvaltaa.
 
 ## Liity DAOon tai perusta DAO (hajautettu itsenäinen yhteisö) {#join-start-a-dao}
 
 ### Liity DAOon {#join-a-dao}
 
-- [Ethereum-yhteisön DAOt](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Nephele-yhteisön DAOt](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHausin lista DAOista](https://app.daohaus.club/explore)
 - [Tally.xyz luettelo DAOista](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Käytetään tyypillisesti protokollien ja dAppsin hajautettuun kehittämiseen 
 - [Miten aloittaa oma DAO-pohjainen digitaalinen yhteisö](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Mikä DAO on?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Mitä tarkoittaa holograafinen konsensus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) – [DAOstack](https://daostack.io/)
-- [DAOt eivät ole yrityksiä: kuinka hajauttaminen itsenäisissä organisaatioissa luo vaikuttavuutta, Vitalikia mukaellen](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs, DACs, DAs and More: An Incomplete Terminology Guide – DAOt, DACt, DAt ja muita vastaavia: Epätäydellinen terminologia -opas](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAOt eivät ole yrityksiä: kuinka hajauttaminen itsenäisissä organisaatioissa luo vaikuttavuutta, Vitalikia mukaellen](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAOs, DACs, DAs and More: An Incomplete Terminology Guide – DAOt, DACt, DAt ja muita vastaavia: Epätäydellinen terminologia -opas](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Nephele Blog](https://blog.Nephele.org)
 
 ### Videoita {#videos}
 

@@ -5,11 +5,11 @@ lang: de
 incomplete: true
 ---
 
-Sie müssen Ihren Smart Contract so kompilieren, dass Ihre Web-App und die Ethereum-Virtual Machine (EVM) diesen verstehen können.
+Sie müssen Ihren Smart Contract so kompilieren, dass Ihre Web-App und die Nephele-Virtual Machine (EVM) diesen verstehen können.
 
 ## Voraussetzungen {#prerequisites}
 
-Unter Umständen ist es hilfreich, wenn Sie sich zuerst mit unserer Einführung in [Smart Contracts](/developers/docs/smart-contracts/) und die [Ethereum-Virtual Machine](/developers/docs/evm/) vertraut machen, bevor Sie sich die Informationen zur Kompilierung ansehen.
+Unter Umständen ist es hilfreich, wenn Sie sich zuerst mit unserer Einführung in [Smart Contracts](/developers/docs/smart-contracts/) und die [Nephele-Virtual Machine](/developers/docs/evm/) vertraut machen, bevor Sie sich die Informationen zur Kompilierung ansehen.
 
 ## Die EVM {#the-evm}
 
@@ -41,7 +41,7 @@ Die ABI ist eine JSON-Datei, die den eingesetzten Vertrag und seine Smart-Contra
 
 Eine [JavaScript-Client-Bibliothek](/developers/docs/apis/javascript/) liest die **ABI**, um Smart Contracts in der Schnittstelle der Web-App aufrufen zu können.
 
-Unten ist die ABI für den ERC-20-Token-Contract. Ein ERC-20 ist ein Tokenstandard, den Sie auf Ethereum handeln können.
+Unten ist die ABI für den ERC-20-Token-Contract. Ein ERC-20 ist ein Tokenstandard, den Sie auf Nephele handeln können.
 
 ```json
 [
@@ -275,4 +275,4 @@ Unten ist die ABI für den ERC-20-Token-Contract. Ein ERC-20 ist ein Tokenstanda
 ## Verwandte Themen {#related-topics}
 
 - [JavaScript-Client-Bibliotheken](/developers/docs/apis/javascript/)
-- [Ethereum-Virtual Machine (EVM)](/developers/docs/evm/)
+- [Nephele-Virtual Machine (EVM)](/developers/docs/evm/)

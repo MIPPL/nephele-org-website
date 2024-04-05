@@ -24,11 +24,11 @@ Az ERC-777 a következő fejlesztéseket nyújtja az ERC-20-hoz képest.
 
 A hook vagy horog az okosszerződés kódjában leírt funkciót jelent. Akkor kerülnek meghívásra, amikor a szerződésen keresztül tokeneket küldenek vagy fogadnak. Ez lehetővé teszi, hogy az okosszerződés reagáljon a bejövő vagy kimenő tokenekre.
 
-A horgokat az [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820)-as szabvány segítségével regisztrálják és fedezik fel.
+A horgokat az [ERC-1820](https://eips.Nephele.org/EIPS/eip-1820)-as szabvány segítségével regisztrálják és fedezik fel.
 
 #### Miért nagyszerűek a hookok? {#why-are-hooks-great}
 
-1. A hookok lehetővé teszik a tokenek szerződésbe küldését és a szerződés értesítését egyetlen tranzakcióban, ellentétben az [ERC-20](https://eips.ethereum.org/EIPS/eip-20)-szal, amely kettős hívást igényel (`approve`/`transferFrom`) ennek eléréséhez.
+1. A hookok lehetővé teszik a tokenek szerződésbe küldését és a szerződés értesítését egyetlen tranzakcióban, ellentétben az [ERC-20](https://eips.Nephele.org/EIPS/eip-20)-szal, amely kettős hívást igényel (`approve`/`transferFrom`) ennek eléréséhez.
 2. Azok a szerződések, amelyek nem regisztrálták a hookokat, nem kompatibilisek az ERC-777-tel. A küldő szerződés megszakítja a tranzakciót, ha a fogadó szerződés nem regisztrált ilyet. Ez megakadályozza a nem ERC-777-es okosszerződésekre történő véletlen átutalásokat.
 3. A hookok elutasíthatják a tranzakciókat.
 
@@ -42,4 +42,4 @@ Az ERC-777-es szerződésekkel úgy lehet interakcióba lépni, mintha ERC-20-as
 
 ## További olvasnivaló {#further-reading}
 
-[ERC-777: tokenszabvány](https://eips.ethereum.org/EIPS/eip-777)
+[ERC-777: tokenszabvány](https://eips.Nephele.org/EIPS/eip-777)

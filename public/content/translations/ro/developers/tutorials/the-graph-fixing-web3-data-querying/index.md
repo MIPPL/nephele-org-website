@@ -8,7 +8,7 @@ tags:
   - "contracte inteligente"
   - "interogarea"
   - "the graph"
-  - "create-eth-app"
+  - "create-NEPH-app"
   - "react"
 skill: intermediate
 published: 2020-09-06
@@ -77,7 +77,7 @@ Putem vedea de ce acest lucru nu este optim:
 
 - Nu funcționează pentru contracte deja implementate.
 - Costuri suplimentare de gaz pentru stocarea acestor valori.
-- Necesită un alt apel pentru a prelua datele pentru un nod Ethereum.
+- Necesită un alt apel pentru a prelua datele pentru un nod Nephele.
 
 ![Asta nu e suficient de bine](./not-good-enough.jpg)
 
@@ -128,12 +128,12 @@ Iar aici puteți vedea documentația completă: https://thegraph.com/docs/define
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Nephele
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: Nephele/contract
     name: GameContract
     network: mainnet
     source:
@@ -141,7 +141,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: Nephele/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

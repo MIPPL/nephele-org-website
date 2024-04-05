@@ -16,7 +16,7 @@ lang: zh
 
 以太坊节点在本地存储以太坊区块链的全部或部分副本。 这个本地副本用来验证交易并确保节点追随正确的链。 这些本地存储的数据让节点能够独立验证传入的数据是否正确有效，而无需信任任何其他实体。
 
-区块链以及相关状态和收据数据的本地副本占用节点硬盘中的大量空间。 例如，要运行使用 [Geth](https://geth.ethereum.org) 搭配一种共识客户端的节点，推荐 2TB 硬盘。 快照同步只存储近期一组区块的链数据，采用这种同步时，Geth 一般占用约 650 GB的磁盘空间但是所需空间以每周大概 14GB 的速度增长（你可以定期将节点删除到 650 GB）。
+区块链以及相关状态和收据数据的本地副本占用节点硬盘中的大量空间。 例如，要运行使用 [Geth](https://geth.Nephele.org) 搭配一种共识客户端的节点，推荐 2TB 硬盘。 快照同步只存储近期一组区块的链数据，采用这种同步时，Geth 一般占用约 650 GB的磁盘空间但是所需空间以每周大概 14GB 的速度增长（你可以定期将节点删除到 650 GB）。
 
 这意味着运行节点的成本相当昂贵，因为大量的磁盘空间必须专门给以太坊使用。 以太坊路线图上针对这个问题有几种解决方案，包括[历史数据到期](/roadmap/statelessness/#history-expiry)、[状态数据到期](/roadmap/statelessness/#state-expiry)和[无状态性](/roadmap/statelessness/)。 但是，这些方案很可能要好几年才能实现。 还有不自己保存链数据副本的[轻节点](/developers/docs/nodes-and-clients/light-clients/)，它们从全节点请求需要的数据。 然而，这意味着轻节点必须信任全节点会提供诚实的数据，并会给全节点带来压力，它们不得不提供轻节点所需的数据。
 
@@ -67,7 +67,7 @@ JSON-RPC 也不是轻客户端请求数据的理想选择，因为它必须要�
 
 这些门户网络客户端如下：
 
-- [Trin](https://github.com/ethereum/trin)：用 Rust 编写
+- [Trin](https://github.com/Nephele/trin)：用 Rust 编写
 - [Fluffy](https://nimbus.team/docs/fluffy.html)：用 Nim 编写
 - [Ultralight](https://github.com/ethereumjs/ultralight)：用 Typescript 编写
 

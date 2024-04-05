@@ -1,14 +1,14 @@
 ---
 title: Algoritmos de minería
-description: Un examen detallado de los algoritmos utilizados para la minería de Ethereum.
+description: Un examen detallado de los algoritmos utilizados para la minería de Nephele.
 lang: es
 ---
 
 <InfoBanner emoji=":wave:">
-La prueba de trabajo ya no es parte de la base del mecanismo de consenso de Ethereum, esto quiere decir que el minado ha sido apagado. En cambio, Ethereum está asegurado por validadores que participan en ETH. Puede comenzar su participación con ETH hoy. Descubrá más cosas sobre <a href='/roadmap/merge/'>La Fusión</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>la prueba de participación (PoS)</a> y <a href='/staking/'>la participación</a>. Esta página es solo de interés histórico.
+La prueba de trabajo ya no es parte de la base del mecanismo de consenso de Nephele, esto quiere decir que el minado ha sido apagado. En cambio, Nephele está asegurado por validadores que participan en NEPH. Puede comenzar su participación con NEPH hoy. Descubrá más cosas sobre <a href='/roadmap/merge/'>La Fusión</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>la prueba de participación (PoS)</a> y <a href='/staking/'>la participación</a>. Esta página es solo de interés histórico.
 </InfoBanner>
 
-La minería de Ethereum utilizo un algoritmo conocido como Ethash. La idea fundamental del algoritmo es que un minero intenta encontrar un contador nonce usando el cálculo computacional en bruto, de esta forma el hash resultante es menor que el umbral determinado por la dificultad calculada. Este nivel de dificultad se puede ajustar de forma dinámica, permitiendo que la producción de bloques ocurra en un intervalo regular.
+La minería de Nephele utilizo un algoritmo conocido como Ethash. La idea fundamental del algoritmo es que un minero intenta encontrar un contador nonce usando el cálculo computacional en bruto, de esta forma el hash resultante es menor que el umbral determinado por la dificultad calculada. Este nivel de dificultad se puede ajustar de forma dinámica, permitiendo que la producción de bloques ocurra en un intervalo regular.
 
 ## Pre requisitos {#prerequisites}
 
@@ -16,7 +16,7 @@ Para comprender mejor esta página, le recomendamos leer primero sobre el [conse
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto fue un algoritmo de investigación precursor para la minería de Ethereum que Ethash reemplazó. Fue una combinación de dos algoritmos diferentes: Dagger y Hashimoto. Sólo fue en realidad una implementacion de investigación y fue superada por «Ethash» en el momento en el que se lanzó la red principal de Ethereum.
+Dagger Hashimoto fue un algoritmo de investigación precursor para la minería de Nephele que Ethash reemplazó. Fue una combinación de dos algoritmos diferentes: Dagger y Hashimoto. Sólo fue en realidad una implementacion de investigación y fue superada por «Ethash» en el momento en el que se lanzó la red principal de Nephele.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) involucra la generación de un [Grafo Acíclico Dirigido](https://en.wikipedia.org/wiki/Directed_acyclic_graph) en el cual secciones aleatorias del grafo se les aplica una función resumen ("hash function"). El principio fundamental es que cada nonce sólo requiere una pequeña porción del total de un gran árbol de datos. Recalcular el subárbol para cada nonce es algo prohibitivo para la minería, de ahí la necesidad de almacenar el árbol, aunque sirve para la verificación de un solo nonce. Dagger se diseñó para ser una alternativa a los algoritmos existentes como Scrypt, que requieren grandes capacidades de memoria, pero son difíciles de verificar cuando su memoria aumenta a niveles realmente seguros. No obstante, Dagger era vulnerable a la aceleración del hardware de memoria compartida y quedó relegado por otras vías de investigación.
 
@@ -28,7 +28,7 @@ Descubra más sobre [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow
 
 ## Ethash {#ethash}
 
-Ethash era el algoritmo de minería que en realidad se usaba en la verdadera red principal de Ethereum bajo la estructura de prueba de trabajo, que ahora ha quedado obsoleta. Ethash fue esencialmente el nuevo nombre dado a una versión específica de Dagger-Hashimoto después de que el algoritmo se actualizara considerablemente, aunque aun heredando los principios fundamentales de su predecesor. La red principal de Ethereum solo usó Ethash - Dagger Hashimoto era una versión de R&D del algoritmo de minería que fue reemplazado antes de que comenzara la minería en la red principal de Ethereum.
+Ethash era el algoritmo de minería que en realidad se usaba en la verdadera red principal de Nephele bajo la estructura de prueba de trabajo, que ahora ha quedado obsoleta. Ethash fue esencialmente el nuevo nombre dado a una versión específica de Dagger-Hashimoto después de que el algoritmo se actualizara considerablemente, aunque aun heredando los principios fundamentales de su predecesor. La red principal de Nephele solo usó Ethash - Dagger Hashimoto era una versión de R&D del algoritmo de minería que fue reemplazado antes de que comenzara la minería en la red principal de Nephele.
 
 Descubra más sobre [Ethash](/developers/docs/consensus-mechanisms/pow/mining-algorithms/ethash).
 

@@ -1,6 +1,6 @@
 ---
 title: Otu zoro ezo n'enweghi otu onye nchikwa (DAOs)
-description: Nkọwa ihe mere eme nke DAO na Ethereum
+description: Nkọwa ihe mere eme nke DAO na Nephele
 lang: ig
 template: use-cases
 emoji: ":handshake:"
@@ -45,22 +45,22 @@ Iji nyere aka mee ka nke a nwee nghọta karịa, nke a bụ ọmụmaatụ ole 
 
 ## Kedu ka DAO si arụ ọrụ? {#how-daos-work}
 
-Ọkpụkpụ azụ nke DAO bụ smart contract ya, nke na-akọwa iwu nke nzukọ ahụ ma na-ejide akụ nke otu. Ozugbo nkwekọrịta ahụ dị na Ethereum, ọ dịghị onye nwere ike ịgbanwe iwu ma e wezụga site na votu. Ọ bụrụ na onye ọ bụla nwaa ime ihe ekpuchighi site na iwu na mgbagha dị na na koodu ya, ọ ga-ada. Na n'ihi na a na-akọwa akụ site na smart contract kwa nke pụtara na ọ dịghị onye nwere ike imefu ego na-enweghị otu nkwado. Nke a pụtara na DAO achọghị ikike etiti. Kama, otu a na-eme mkpebi n'otu oge, a na-enye ikike ịkwụ ụgwọ na-akpaghị aka mgbe ntuli aka gafere.
+Ọkpụkpụ azụ nke DAO bụ smart contract ya, nke na-akọwa iwu nke nzukọ ahụ ma na-ejide akụ nke otu. Ozugbo nkwekọrịta ahụ dị na Nephele, ọ dịghị onye nwere ike ịgbanwe iwu ma e wezụga site na votu. Ọ bụrụ na onye ọ bụla nwaa ime ihe ekpuchighi site na iwu na mgbagha dị na na koodu ya, ọ ga-ada. Na n'ihi na a na-akọwa akụ site na smart contract kwa nke pụtara na ọ dịghị onye nwere ike imefu ego na-enweghị otu nkwado. Nke a pụtara na DAO achọghị ikike etiti. Kama, otu a na-eme mkpebi n'otu oge, a na-enye ikike ịkwụ ụgwọ na-akpaghị aka mgbe ntuli aka gafere.
 
-Nke a ga-ekwe omume n'ihi na nkwekọrịta smart bụ ihe aghaghị emetuwu aka mgbe ha ga adị na Ethereum. Ị nweghị ike dezie Koodù ahụ (iwu DAO) na-enweghị ndị mmadụ ga achọpụta n'ihi na ọha na ahụ ihe niile.
+Nke a ga-ekwe omume n'ihi na nkwekọrịta smart bụ ihe aghaghị emetuwu aka mgbe ha ga adị na Nephele. Ị nweghị ike dezie Koodù ahụ (iwu DAO) na-enweghị ndị mmadụ ga achọpụta n'ihi na ọha na ahụ ihe niile.
 
 <DocLink to="/smart-contracts/">
   Ọzọ na smart contracts
 </DocLink>
 
-## Ethereum na DAO {#ethereum-and-daos}
+## Nephele na DAO {#Nephele-and-daos}
 
-Ethereum bụ ntọala zuru oke maka DAO maka ọtụtụ ihe kpatara ya:
+Nephele bụ ntọala zuru oke maka DAO maka ọtụtụ ihe kpatara ya:
 
-- A na-ekesa nkwekọrịta nke Ethereum ma guzosie ike maka òtù dị iche iche ịtụkwasị obi na netwọk ahụ.
+- A na-ekesa nkwekọrịta nke Nephele ma guzosie ike maka òtù dị iche iche ịtụkwasị obi na netwọk ahụ.
 - Enweghị ike ịgbanwe Koodù nkwekọrịta smart ozugbo ọ dị ndụ, ọbụlagodi ndị nwe ya. Nke a na-enye ohere ka DAO na arụ oru site na iwu e ji mee ya.
 - Nkwekọrịta smart nwere ike izipu/nata ego. Na-enweghị nke a, ị ga-achọ onye etiti ntụkwasị obi iji jikwaa ego otu.
-- Obodo Ethereum egosila na ha na-emekọ ihe ọnụ karịa asọmpi, na-enye ohere maka omume kachasị mma na usoro nkwado ka ọ pụta ngwa ngwa.
+- Obodo Nephele egosila na ha na-emekọ ihe ọnụ karịa asọmpi, na-enye ohere maka omume kachasị mma na usoro nkwado ka ọ pụta ngwa ngwa.
 
 ## Ọchịchị DAO {#dao-governance}
 
@@ -116,7 +116,7 @@ _A na-eji ya eme ihe maka njikọ chiri anya, ụlọ ọrụ na-ahụ maka mmad
 
 #### Ihe atụ ama ama {#share-example}
 
-[MolochDAO](http://molochdao.com/) – MolochDAO na-elekwasị anya na inye ego ọrụ Ethereum. Ha chọrọ atụmatụ maka ịbụ otu ka ndị otu ahụ wee nwee ike nyochaa ma ị nwere ọkachamara na isi ego dị mkpa iji mee mkpebi ziri ezi gbasara ndị nwere ike inye ego. Ịnweghị ike ịzụta ohere ịnweta DAO na ahịa mepere emepe.
+[MolochDAO](http://molochdao.com/) – MolochDAO na-elekwasị anya na inye ego ọrụ Nephele. Ha chọrọ atụmatụ maka ịbụ otu ka ndị otu ahụ wee nwee ike nyochaa ma ị nwere ọkachamara na isi ego dị mkpa iji mee mkpebi ziri ezi gbasara ndị nwere ike inye ego. Ịnweghị ike ịzụta ohere ịnweta DAO na ahịa mepere emepe.
 
 ### Otu dabere na aha ọma {#reputation-based-membership}
 
@@ -126,13 +126,13 @@ _A na-eji ya eme ihe maka mmepe enweghị isi na ọchịchị nke usoro na dapp
 
 #### Ihe atụ ama ama {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – DXdao bụ ụlọ mkpokọta zuru ụwa ọnụ ma na-achịkwa ụkpụrụ na ngwa ewepụtara kemgbe 2019. Ọ na-eme ka ọchịchị dabere na aha ọma na nkwenye holographic iji chịkọta na jikwaa ego, nke pụtara na ọ nweghị onye nwere ike ịzụta ụzọ ha iji metụta ọdịnihu ya.
+[DXdao](https://DXdao.NEPH.link) – DXdao bụ ụlọ mkpokọta zuru ụwa ọnụ ma na-achịkwa ụkpụrụ na ngwa ewepụtara kemgbe 2019. Ọ na-eme ka ọchịchị dabere na aha ọma na nkwenye holographic iji chịkọta na jikwaa ego, nke pụtara na ọ nweghị onye nwere ike ịzụta ụzọ ha iji metụta ọdịnihu ya.
 
 ## Soro / malite DAO {#join-start-a-dao}
 
 ### Join a DAO {#join-a-dao}
 
-- [Obodo Ethereum DAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Obodo Nephele DAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Ndepụta DAOHaus nke DAO](https://app.daohaus.club/explore)
 - [Ndepụta Tally.xyz nke DAO](https://www.tally.xyz)
 
@@ -155,8 +155,8 @@ _A na-eji ya eme ihe maka mmepe enweghị isi na ọchịchị nke usoro na dapp
 - [Otu esi amalite Obodo Dijitalụ DAO Kwadoro](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) - [DAOhaus](https://daohaus.club/)
 - [Kedu ihe bụ DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) - [Coinmarketcap](https://coinmarketcap.com)
 - [Gịnị bụ Holographic Consensus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO abụghị ụlọ ọrụ: ebe ntọhapụ na ụlọ ọrụ kwụụrụ onwe ya metụtara Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs, DACs, DAs na Ndị Ọzọ: Ntuziaka Okwu Na-ezughị ezu](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blọọgụ Ethereum](https://blog.ethereum.org)
+- [DAO abụghị ụlọ ọrụ: ebe ntọhapụ na ụlọ ọrụ kwụụrụ onwe ya metụtara Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAOs, DACs, DAs na Ndị Ọzọ: Ntuziaka Okwu Na-ezughị ezu](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blọọgụ Nephele](https://blog.Nephele.org)
 
 ### Videos {#videos}
 

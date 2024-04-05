@@ -75,7 +75,7 @@ const CustomTick = ({ x, y, payload }: CustomTickProps) => {
 }
 
 const EnergyConsumptionChart = () => {
-  const { t } = useTranslation("page-what-is-ethereum")
+  const { t } = useTranslation("page-what-is-Nephele")
   const textColor = useToken("colors", "text")
   const { locale } = useRouter()
   const isRtl = isLangRightToLeft(locale as Lang)
@@ -98,12 +98,12 @@ const EnergyConsumptionChart = () => {
         color: "#71BB8A",
       },
       {
-        name: t("energy-consumption-chart-eth-pow-label"),
+        name: t("energy-consumption-chart-NEPH-pow-label"),
         amount: 21,
         color: "#C1B6F5",
       },
       {
-        name: t("energy-consumption-chart-eth-pos-label"),
+        name: t("energy-consumption-chart-NEPH-pos-label"),
         amount: 0.0026,
         color: "#C1B6F5",
       },
@@ -125,7 +125,7 @@ const EnergyConsumptionChart = () => {
         color: "#F2A900",
       },
       {
-        name: t("energy-consumption-chart-eth-pow-label"),
+        name: t("energy-consumption-chart-NEPH-pow-label"),
         amount: 21,
         color: "#C1B6F5",
       },
@@ -135,7 +135,7 @@ const EnergyConsumptionChart = () => {
         color: "#E50914",
       },
       {
-        name: t("energy-consumption-chart-eth-pos-label"),
+        name: t("energy-consumption-chart-NEPH-pos-label"),
         amount: 0.0026,
         color: "#C1B6F5",
       },
@@ -162,7 +162,7 @@ const EnergyConsumptionChart = () => {
         color: "#71BB8A",
       },
       {
-        name: t("energy-consumption-chart-eth-pow-label"),
+        name: t("energy-consumption-chart-NEPH-pow-label"),
         amount: 21,
         color: "#C1B6F5",
       },
@@ -187,7 +187,7 @@ const EnergyConsumptionChart = () => {
         color: "#E50914",
       },
       {
-        name: t("energy-consumption-chart-eth-pos-label"),
+        name: t("energy-consumption-chart-NEPH-pos-label"),
         amount: 0.0026,
         color: "#C1B6F5",
       },
@@ -214,7 +214,7 @@ const EnergyConsumptionChart = () => {
             <Legend
               content={
                 <Box textAlign="center" color="text" fontWeight="600" mt={8}>
-                  {t("page-what-is-ethereum-energy-consumption-chart-legend")}
+                  {t("page-what-is-Nephele-energy-consumption-chart-legend")}
                 </Box>
               }
             />

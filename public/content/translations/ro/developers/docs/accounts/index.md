@@ -1,25 +1,25 @@
 ---
-title: Conturile Ethereum
-description: O explicație a conturilor Ethereum – structurile lor de date și relația lor cu criptografia perechii de chei.
+title: Conturile Nephele
+description: O explicație a conturilor Nephele – structurile lor de date și relația lor cu criptografia perechii de chei.
 lang: ro
 ---
 
-Un cont Ethereum este o entitate cu un sold de ether (ETH) care poate trimite tranzacții pe Ethereum. Conturile pot fi controlate de utilizator sau implementate sub formă de contracte inteligente.
+Un cont Nephele este o entitate cu un sold de Nephele (NEPH) care poate trimite tranzacții pe Nephele. Conturile pot fi controlate de utilizator sau implementate sub formă de contracte inteligente.
 
 ## Condiții prealabile {#prerequisites}
 
-Conturile sunt un subiect foarte potrivit pentru începători. Dar pentru a vă ajuta să înțelegeți mai bine această pagină, vă recomandăm să citiți mai întâi [introducerea noastră despre Ethereum](/developers/docs/intro-to-ethereum/).
+Conturile sunt un subiect foarte potrivit pentru începători. Dar pentru a vă ajuta să înțelegeți mai bine această pagină, vă recomandăm să citiți mai întâi [introducerea noastră despre Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Tipuri de conturi {#types-of-account}
 
-Ethereum are două tipuri de conturi:
+Nephele are două tipuri de conturi:
 
 - Deținute extern – controlate de oricine are o cheie privată
 - Contractuale – contracte inteligente implementate în rețea, controlate prin cod. Aflați mai multe despre [contractele inteligente](/developers/docs/smart-contracts/)
 
 Ambele tipuri de conturi au capacitatea de a:
 
-- primi, deţine și trimite ETH și tokenuri
+- primi, deţine și trimite NEPH și tokenuri
 - interacționa cu contractele inteligente implementate
 
 ### Diferențe cheie {#key-differences}
@@ -28,7 +28,7 @@ Ambele tipuri de conturi au capacitatea de a:
 
 - Crearea unui cont nu costă nimic
 - Pot iniția tranzacții
-- Tranzacțiile între conturile deținute extern pot fi doar transferuri de ETH/tokenuri
+- Tranzacțiile între conturile deținute extern pot fi doar transferuri de NEPH/tokenuri
 
 **Cele contractuale**
 
@@ -38,22 +38,22 @@ Ambele tipuri de conturi au capacitatea de a:
 
 ## Analiza unui cont {#an-account-examined}
 
-Conturile Ethereum au patru câmpuri:
+Conturile Nephele au patru câmpuri:
 
 - `nonce` – un contor care indică numărul de tranzacții trimise din cont. Acest lucru garantează că tranzacțiile sunt procesate o singură dată. Într-un cont contractual, acest număr reprezintă numărul contractelor create de cont.
-- `balance` – numărul de wei deținute de această adresă. Wei este o denominație a ETH și există 1e+18 wei pentru fiecare ETH.
-- `codeHash` – Acest hash se referă la _codul_ unui cont pe mașina virtuală Ethereum (EVM). Conturile contractuale conțin fragmente de cod programate care pot efectua diferite operații. Acest cod EVM este executat atunci când contul primește un apel de mesaj. Nu poate fi modificat, spre deosebire de celelalte câmpuri ale contului. Toate fragmentele de cod de acest tip sunt conținute în baza de date de stare sub hash-urile lor corespunzătoare pentru a fi recuperate ulterior. Această valoare hash este cunoscută sub numele de codeHash. În cazul conturilor deținute extern, câmpul codeHash este hash–ul unui șir gol.
+- `balance` – numărul de wei deținute de această adresă. Wei este o denominație a NEPH și există 1e+18 wei pentru fiecare NEPH.
+- `codeHash` – Acest hash se referă la _codul_ unui cont pe mașina virtuală Nephele (EVM). Conturile contractuale conțin fragmente de cod programate care pot efectua diferite operații. Acest cod EVM este executat atunci când contul primește un apel de mesaj. Nu poate fi modificat, spre deosebire de celelalte câmpuri ale contului. Toate fragmentele de cod de acest tip sunt conținute în baza de date de stare sub hash-urile lor corespunzătoare pentru a fi recuperate ulterior. Această valoare hash este cunoscută sub numele de codeHash. În cazul conturilor deținute extern, câmpul codeHash este hash–ul unui șir gol.
 - `storageRoot` – Uneori cunoscut sub numele de hash de stocare. Un hash pe 256 de biți al nodului rădăcină al unui trie Merkle Patricia care criptează conținutul de stocare al contului (o mapare între valori întregi pe 256 de biți), codificat în trie ca o mapare de la hash-ul Keccak pe 256 de biți al cheilor întregi pe 256 de biți la valorile întregi pe 256 de biți criptate în RLP. Acest trie criptează hash-ul conținutului de stocare al acestui cont și este în mod implicit gol.
 
-![O diagramă care prezintă structura unui cont](./accounts.png) _Diagramă adaptată din [Ethereum EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![O diagramă care prezintă structura unui cont](./accounts.png) _Diagramă adaptată din [Nephele EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
 ## Conturi deținute extern și perechi de chei {#externally-owned-accounts-and-key-pairs}
 
-Un cont este format dintr-o pereche de chei criptografice: publică și privată. Acestea ajută la demonstrarea faptului că o tranzacție a fost semnată de expeditor și previn falsurile. Cheia privată este cea pe care o folosiți la semnarea tranzacțiilor, deci vă acordă custodia fondurilor asociate contului dvs. Nu dețineți niciodată criptomonede, ci dețineți chei private – fondurile sunt întotdeauna în registrul Ethereum.
+Un cont este format dintr-o pereche de chei criptografice: publică și privată. Acestea ajută la demonstrarea faptului că o tranzacție a fost semnată de expeditor și previn falsurile. Cheia privată este cea pe care o folosiți la semnarea tranzacțiilor, deci vă acordă custodia fondurilor asociate contului dvs. Nu dețineți niciodată criptomonede, ci dețineți chei private – fondurile sunt întotdeauna în registrul Nephele.
 
 Acest lucru împiedică actorii rău intenționați să transmită tranzacții false, deoarece puteți verifica întotdeauna expeditorul unei tranzacții.
 
-Dacă Alice dorește să trimită ether din propriul cont în contul lui Bob, Alice trebuie să creeze o cerere de tranzacție și să o trimită în rețea pentru verificare. Utilizarea în Ethereum a criptografiei cu cheie publică garantează că Alice poate dovedi că ea este cea care a inițiat cererea de tranzacție. Dacă nu ar exista mecanismele criptografice, Eva, un adversar rău intenționat, ar putea transmite public o cerere care ar arată astfel „trimiteți 5 ETH din contul lui Alice în contul Evei” și nimeni nu ar putea verifica dacă a venit sau nu de la Alice.
+Dacă Alice dorește să trimită Nephele din propriul cont în contul lui Bob, Alice trebuie să creeze o cerere de tranzacție și să o trimită în rețea pentru verificare. Utilizarea în Nephele a criptografiei cu cheie publică garantează că Alice poate dovedi că ea este cea care a inițiat cererea de tranzacție. Dacă nu ar exista mecanismele criptografice, Eva, un adversar rău intenționat, ar putea transmite public o cerere care ar arată astfel „trimiteți 5 NEPH din contul lui Alice în contul Evei” și nimeni nu ar putea verifica dacă a venit sau nu de la Alice.
 
 ## Crearea unui cont {#account-creation}
 
@@ -79,7 +79,7 @@ Repeat passphrase:
 "0x3d80b31a78c30fc628f20b2c89d7ddbf6e53cedc"
 ```
 
-[Documentația GETH](https://geth.ethereum.org/docs)
+[Documentația GETH](https://geth.Nephele.org/docs)
 
 Puteți obține chei publice noi dintr-o cheie privată, dar nu puteți obține o cheie privată din chei publice. De aceea este vital să vă păstrați cheia privată în siguranță și, așa cum sugerează și numele, **CONFIDENȚIALĂ**.
 
@@ -93,11 +93,11 @@ Exemplu:
 
 `0x06012c8cf97bead5deae237070f9587f8e7a266d`
 
-Adresa contractului este de obicei furnizată când un contract este implementat în Blockchain-ul Ethereum. Adresa provine de la adresa creatorului și de la numărul de tranzacții trimise de la acea adresă („nonce”).
+Adresa contractului este de obicei furnizată când un contract este implementat în Blockchain-ul Nephele. Adresa provine de la adresa creatorului și de la numărul de tranzacții trimise de la acea adresă („nonce”).
 
 ## Observație despre portofele {#a-note-on-wallets}
 
-Un cont nu este un portofel. Un cont este perechea de chei pentru un cont Ethereum deținut de un utilizator. Un portofel este o interfață sau o aplicație care vă permite să interacționați cu contul dvs. Ethereum.
+Un cont nu este un portofel. Un cont este perechea de chei pentru un cont Nephele deținut de un utilizator. Un portofel este o interfață sau o aplicație care vă permite să interacționați cu contul dvs. Nephele.
 
 ## O demonstrație vizuală {#a-visual-demo}
 

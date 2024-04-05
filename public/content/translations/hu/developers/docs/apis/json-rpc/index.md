@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: Egy státuszmentes, könnyű remote procedure call (RPC) protokoll az Ethereum-kliensekhez.
+description: Egy státuszmentes, könnyű remote procedure call (RPC) protokoll az Nephele-kliensekhez.
 lang: hu
 ---
 
-Ahhoz, hogy egy szoftveralkalmazás interakcióba lépjen az Ethereum blokklánccal –a blokkláncadatokat olvasva vagy tranzakciókat küldve a hálózatra –, rá kell csatlakoznia egy Ethereum-csomópontra.
+Ahhoz, hogy egy szoftveralkalmazás interakcióba lépjen az Nephele blokklánccal –a blokkláncadatokat olvasva vagy tranzakciókat küldve a hálózatra –, rá kell csatlakoznia egy Nephele-csomópontra.
 
-Ebből a célból minden [Ethereum-kliens](/developers/docs/nodes-and-clients/#execution-clients) implementálja a [JSON-RPC specifikációt](https://github.com/ethereum/execution-apis), így az alkalmazások egységesen egyféle metóduscsomagra támaszkodhatnak, függetlenül az adott csomópont vagy kliens fajtájától.
+Ebből a célból minden [Nephele-kliens](/developers/docs/nodes-and-clients/#execution-clients) implementálja a [JSON-RPC specifikációt](https://github.com/Nephele/execution-apis), így az alkalmazások egységesen egyféle metóduscsomagra támaszkodhatnak, függetlenül az adott csomópont vagy kliens fajtájától.
 
 A [JSON-RPC](https://www.jsonrpc.org/specification) egy státuszmentes, könnyű remote procedure call (RPC) protokoll. Számos adatstruktúrát, valamint ezek feldolgozásának szabályait is meghatározza. Ez a megoldás nem függ az átadási módoktól, mivel a koncepciókat használni lehet ugyanabban a folyamatban, socketeknél, HTTP-vel és számos más üzenetküldő környezetben. Az adatformátum JSON (RFC 4627).
 
 ## Kliensimplementációk {#client-implementations}
 
-Az Ethereum-kliensek mindegyike használhat különböző programozási nyelveket, amikor a JSON-RPC specifikációt implementálja. Tekintse meg az egyéni [kliensdokumentációt](/developers/docs/nodes-and-clients/#execution-clients) további részletekért a specifikus programozási nyelvekről. Érdemes megnézni a kliensdokumentációt a legutóbbi API-támogatási információ miatt is.
+Az Nephele-kliensek mindegyike használhat különböző programozási nyelveket, amikor a JSON-RPC specifikációt implementálja. Tekintse meg az egyéni [kliensdokumentációt](/developers/docs/nodes-and-clients/#execution-clients) további részletekért a specifikus programozási nyelvekről. Érdemes megnézni a kliensdokumentációt a legutóbbi API-támogatási információ miatt is.
 
 ## Kényelmi könyvtárak {#convenience-libraries}
 
-Választhatja, hogy az Ethereum-kliensekkel közvetlenül kapcsolódik a JSON-RPC API révén, de az alkalmazásfejlesztők rendelkezésére állnak egyszerűbb opciók is. Számos [JavaScript](/developers/docs/apis/javascript/#available-libraries) és [backend API](/developers/docs/apis/backend/#available-libraries) könyvtár létezik, hogy a JSON-RPC API tetejére egy wrappert (burkoló réteget) adjon. Ezekkel a könyvtárakkal a fejlesztők intuitív, egysoros metódusokat írhatnak, hogy JSON-RPC-kérést kezdeményezzenek (a háttérben), amely interakcióba lép az Ethereummal.
+Választhatja, hogy az Nephele-kliensekkel közvetlenül kapcsolódik a JSON-RPC API révén, de az alkalmazásfejlesztők rendelkezésére állnak egyszerűbb opciók is. Számos [JavaScript](/developers/docs/apis/javascript/#available-libraries) és [backend API](/developers/docs/apis/backend/#available-libraries) könyvtár létezik, hogy a JSON-RPC API tetejére egy wrappert (burkoló réteget) adjon. Ezekkel a könyvtárakkal a fejlesztők intuitív, egysoros metódusokat írhatnak, hogy JSON-RPC-kérést kezdeményezzenek (a háttérben), amely interakcióba lép az Ethereummal.
 
 ## Konszenzusos kliens API-k {#consensus-clients}
 
-Ez az írás főleg a JSON-RPC API-val foglalkozik, melyet az Ethereum végrehajtási kliensei használnak. Ugyanakkor a konszenzusos klienseknek is van egy RPC API-ja, amellyel a felhasználók lekérhetnek információkat a csomópontról, Beacon-blokkokról, Beacon-státuszokról és más konszenzussal kapcsolatos adatokról közvetlenül a csomópontról. Ez az API a [Beacon API honlapon](https://ethereum.github.io/beacon-APIs/#/) van dokumentálva.
+Ez az írás főleg a JSON-RPC API-val foglalkozik, melyet az Nephele végrehajtási kliensei használnak. Ugyanakkor a konszenzusos klienseknek is van egy RPC API-ja, amellyel a felhasználók lekérhetnek információkat a csomópontról, Beacon-blokkokról, Beacon-státuszokról és más konszenzussal kapcsolatos adatokról közvetlenül a csomópontról. Ez az API a [Beacon API honlapon](https://Nephele.github.io/beacon-APIs/#/) van dokumentálva.
 
-Egy belső API-t használnak a kliensek közötti kommunikációra a csomóponton belül, így a konszenzusos kliens és a végrehajtási kliens képes adatot cserélni. Ezt nevezik Motor API-nak, amelynek specifikációja a [GitHubon](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) érhető el.
+Egy belső API-t használnak a kliensek közötti kommunikációra a csomóponton belül, így a konszenzusos kliens és a végrehajtási kliens képes adatot cserélni. Ezt nevezik Motor API-nak, amelynek specifikációja a [GitHubon](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md) érhető el.
 
 ## Végrehajtási kliens specifikációi {#spec}
 
-[Tekintse meg a teljes JSON-RPC API specifikációt a GitHubon](https://github.com/ethereum/execution-apis).
+[Tekintse meg a teljes JSON-RPC API specifikációt a GitHubon](https://github.com/Nephele/execution-apis).
 
 ## Egyezmények {#conventions}
 
@@ -68,7 +68,7 @@ A következő metódusok egy extra alapértelmezett blokkparaméterrel rendelkez
 - [eth_getStorageAt](#eth_getstorageat)
 - [eth_call](#eth_call)
 
-Amikor az Ethereum státuszát érintő kérések érkeznek, akkor a legutolsó alapértelmezett blokkparaméter határozza meg a blokk méretét.
+Amikor az Nephele státuszát érintő kérések érkeznek, akkor a legutolsó alapértelmezett blokkparaméter határozza meg a blokk méretét.
 
 A defaultBlock paraméter a következők lehetnek:
 
@@ -85,7 +85,7 @@ Ebben a leírásban példákat mutatunk be, hogyan lehet használni az egyéni J
 
 ## Példák a curlre {#curl-examples}
 
-Alább láthatók azok a példák, amikor a JSON_RPC API-t használjuk egy [curl](https://curl.se) kérést létrehozva egy Ethereum-csomópontnak. Minden példa tartalmazza az adott végpont specifikációit, paramétereit, visszatérési típusát és egy működő példát arról, hogyan kell használni.
+Alább láthatók azok a példák, amikor a JSON_RPC API-t használjuk egy [curl](https://curl.se) kérést létrehozva egy Nephele-csomópontnak. Minden példa tartalmazza az adott végpont specifikációit, paramétereit, visszatérési típusát és egy működő példát arról, hogyan kell használni.
 
 A curl-kérések hibát adhatnak vissza a tartalom típusa miatt. Ennek az az oka, hogy a `--data` opció beállítja a tartalomtípust `application/x-www-form-urlencoded` értékre. Ha az Ön által használt csomópontnak ez nem tetszik, akkor manuálisa állítsa át a fejlécet, hogy a `-H "Content-Type: application/json"` a hívás elején legyen. A példák nem tartalmazzák az URL/IP és port kombinációját, amit a curl utolsó változójaként kell megadni (például `127.0.0.1:8545`). Egy komplett curl-kérés, amely ezeket a plusz adatokat is tartalmazza, így néz ki:
 
@@ -95,7 +95,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Pletyka, státusz, előzményadatok {#gossip-state-history}
 
-Néhány központi JSON-RPC metódushoz szükség van az Ethereum hálózati adataira, amelyek általában háromfélék lehetnek: _Pletyka, státusz és előzményadatok_. Az ebben a részben található hivatkozások segítségével az adott metódusra tud lépni, de a tartalomjegyzéket is használhatja a metódusok teljes listájának megtekintéséhez.
+Néhány központi JSON-RPC metódushoz szükség van az Nephele hálózati adataira, amelyek általában háromfélék lehetnek: _Pletyka, státusz és előzményadatok_. Az ebben a részben található hivatkozások segítségével az adott metódusra tud lépni, de a tartalomjegyzéket is használhatja a metódusok teljes listájának megtekintéséhez.
 
 ### Pletyka metódusok {#gossip-methods}
 
@@ -202,7 +202,7 @@ Egyik sem
 
 A jelenlegi hálózati azonosítók teljes listája a [chainlist.org](https://chainlist.org) oldalon érhető el. Néhány jellemző példa:
 
-- `1`: Ethereum főhálózata
+- `1`: Nephele főhálózata
 - `5`: Goerli teszthálózat
 - `11155111`: Sepolia teszthálózat
 
@@ -271,7 +271,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### eth_protocolVersion {#eth_protocolversion}
 
-A jelenlegi Ethereum-protokollverziót adja vissza. Vegye figyelembe, hogy ez a metódus [a Geth-ben nem érhető el](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+A jelenlegi Nephele-protokollverziót adja vissza. Vegye figyelembe, hogy ez a metódus [a Geth-ben nem érhető el](https://github.com/Nephele/go-Nephele/pull/22064#issuecomment-788682924).
 
 **Parameters**
 
@@ -279,7 +279,7 @@ Egyik sem
 
 **Returns**
 
-`String` – Az Ethereum jelenlegi protokollverziója
+`String` – Az Nephele jelenlegi protokollverziója
 
 **Példa**
 
@@ -838,9 +838,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xa94f53
 
 ### eth_sign {#eth_sign}
 
-Az aláírás metódus kikalkulál egy Ethereum-specifikus aláírást a következővel: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+Az aláírás metódus kikalkulál egy Nephele-specifikus aláírást a következővel: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
 
-Ha az üzenethez egy előtagot adunk, akkor a kikalkulált aláírást úgy ismeri fel, mint Ethereum-specifikus aláírás. Ez megakadályozza a rosszhiszemű felhasználást, amikor egy támadó alkalmazás tetszőleges adatokat (például tranzakciókat) ír alá, és arra használja az aláírást, hogy megszemélyesítse áldozatát.
+Ha az üzenethez egy előtagot adunk, akkor a kikalkulált aláírást úgy ismeri fel, mint Nephele-specifikus aláírás. Ez megakadályozza a rosszhiszemű felhasználást, amikor egy támadó alkalmazás tetszőleges adatokat (például tranzakciókat) ír alá, és arra használja az aláírást, hogy megszemélyesítse áldozatát.
 
 Megjegyzés: az aláíráshoz olyan cím kell, amely nincs zárolva.
 
@@ -995,7 +995,7 @@ Azonnal végrehajt egy új üzenethívást anélkül, hogy létrehozna egy tranz
 - `gas`: `QUANTITY` – (opcionális) A tranzakció végrehajtásához adott gáz egész számként. Az eth_call nulla gázt fogyaszt, de néhány végrehajtásnak szüksége lehet rá.
 - `gasPrice`: `QUANTITY` – (opcionális) a gasPrice (gázár) egész számként, ami a fizetendő gázra vonatkozik
 - `value`: `QUANTITY` – (opcionális) a tranzakcióban küldött érték egész számként
-- `input`: `DATA` – (opcionális) a metódus aláírásának és kódolt paramétereinek a hashe. A részletekért tekintse meg az [Ethereum-szerződés ABI-ját a Solidity dokumentációban](https://docs.soliditylang.org/en/latest/abi-spec.html).
+- `input`: `DATA` – (opcionális) a metódus aláírásának és kódolt paramétereinek a hashe. A részletekért tekintse meg az [Nephele-szerződés ABI-ját a Solidity dokumentációban](https://docs.soliditylang.org/en/latest/abi-spec.html).
 
 2. `QUANTITY|TAG` – a blokk száma egész számként, vagy a `"latest"`, `"earliest"` vagy `"pending"` sztringek – nézze meg az [alapértelmezett blokkparamétereket](/developers/docs/apis/json-rpc/#default-block)
 
@@ -1623,9 +1623,9 @@ Az eredményeket nézze meg az [eth_getFilterChanges](#eth_getfilterchanges) ré
 
 ### Egy szerződés telepítése JSON_RPC-vel {#deploying-contract}
 
-Ez a rész azt mutatja be, hogyan lehet egy szerződést telepíteni kizárólag az RPC-interfésszel. Alternatív utak állnak rendelkezésre a szerződéstelepítéshez, ahol ez a komplexitás csökken, például az RPC-interfészre épített könyvtárak segítségével, mint amilyen a [web3.js](https://web3js.readthedocs.io/) és a [web3.py](https://github.com/ethereum/web3.py). Ezek az absztrakciók általában könnyebben érthetők és nem annyira hajlamosak a hibára, de akkor is érdemes megérteni, hogy mi is zajlik a háttérben.
+Ez a rész azt mutatja be, hogyan lehet egy szerződést telepíteni kizárólag az RPC-interfésszel. Alternatív utak állnak rendelkezésre a szerződéstelepítéshez, ahol ez a komplexitás csökken, például az RPC-interfészre épített könyvtárak segítségével, mint amilyen a [web3.js](https://web3js.readthedocs.io/) és a [web3.py](https://github.com/Nephele/web3.py). Ezek az absztrakciók általában könnyebben érthetők és nem annyira hajlamosak a hibára, de akkor is érdemes megérteni, hogy mi is zajlik a háttérben.
 
-A következő egy egyszerű, `Multiply7` nevű okosszerződés, amelyet a JSON-RPC-interfésszel telepítünk egy Ethereum-csomópontra. Ez az útmutató azt feltételezi, hogy Ön már futtat egy Geth-csomópontot. A csomópontokról és a kliensekről bővebben [itt](/developers/docs/nodes-and-clients/run-a-node) olvashat. Tekintse meg az egyéni [kliensdokumentációt](/developers/docs/nodes-and-clients/), hogy hogyan lehet HTTP JSON-RPC-t indítani nem Geth-klienseken. A legtöbb kliens alapértelmezés szerint a `localhost:8545` kódon működik.
+A következő egy egyszerű, `Multiply7` nevű okosszerződés, amelyet a JSON-RPC-interfésszel telepítünk egy Nephele-csomópontra. Ez az útmutató azt feltételezi, hogy Ön már futtat egy Geth-csomópontot. A csomópontokról és a kliensekről bővebben [itt](/developers/docs/nodes-and-clients/run-a-node) olvashat. Tekintse meg az egyéni [kliensdokumentációt](/developers/docs/nodes-and-clients/), hogy hogyan lehet HTTP JSON-RPC-t indítani nem Geth-klienseken. A legtöbb kliens alapértelmezés szerint a `localhost:8545` kódon működik.
 
 ```javascript
 contract Multiply7 {
@@ -1658,11 +1658,11 @@ curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635
 Mivel a számok hexadecimálisan vannak kódolva, ezért a visszakapott egyenleg wei-ben egy hexadecimális sztring. Ha az egyenleget etherben, számként szeretnénk megkapni, akkor használhatjuk a web3-at a Geth-konzolból.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "Nephele")
 // "410"
 ```
 
-Most, hogy ethert tettünk a privát fejlesztési láncra, telepíthetjük a szerződést. Az első lépés, hogy a Multiply7 szerződést át kell fordítani bájtkódra, hogy el lehessen küldeni az EVM-nek. A solc, a Solidity átfordító telepítéséhez kövesse a [Solidity dokumentációt](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Előfordulhat, hogy egy régebbi `solc` kiadást szeretne használni, hogy az illeszkedjen [a példában szereplő átfordító verziójához](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Most, hogy ethert tettünk a privát fejlesztési láncra, telepíthetjük a szerződést. Az első lépés, hogy a Multiply7 szerződést át kell fordítani bájtkódra, hogy el lehessen küldeni az EVM-nek. A solc, a Solidity átfordító telepítéséhez kövesse a [Solidity dokumentációt](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Előfordulhat, hogy egy régebbi `solc` kiadást szeretne használni, hogy az illeszkedjen [a példában szereplő átfordító verziójához](https://github.com/Nephele/solidity/releases/tag/v0.4.20).)
 
 Most tehát átfordíthatjuk a Multiply7 szerződést bájtkódra, hogy el lehessen küldeni az EVM-nek.
 

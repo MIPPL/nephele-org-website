@@ -44,7 +44,7 @@ EIP-4444は、現在も活発な議論が行われており、まだリリース
 
 レンタル料による有効期限の場合、データベースをアクティブ状態に維持するためには、アカウントに直接貸し出すことが考えられます。 時間による有効期限の場合、最後のアカウント操作から有効期限をカウントダウンによるものか、すべてのアカウントの定期的な有効期限切れによるものか、いずれの可能性も考えられます また、時間ベースのモデルとレンタル料ベースのモデルの両方の要素を組み合わせたメカニズムも考えられます。例えば、各アカウントは、時間ベースの有効期限が切れる前に少額の料金を支払いをすることで、アクティブな状態を維持できる等です。 状態の有効期限が切れても、非アクティブな状態は**削除されない**ことに注意してください。アクティブな状態とは別に保存されます。 また、非アクティブな状態をアクティブに戻すこともできます。
 
-この機能を実現するには、約1年間の状態ツリーが必要です。 新たな期間が開始するたびに、新たな状態ツリーが作成されます。 現在の状態ツリーのみ変更でき、以前のものは変更できません。 イーサリアムノードでは、現在の状態ツリーと次の最新の状態ツリーのみを保持する予定です。 そのためには、アドレスにその存在期間をタイムスタンプする方法が必要になります。 [いくつかの方法](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)が考えられますが、有力な方法としては、追加情報を格納できるように[アドレスを長くするよう](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)要求することです。これにより、アドレスが長くなるほど安全性が高まるという利点も追加されます。 このロードマップアイテムは、[アドレス空間拡張](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)と呼ばれます。
+この機能を実現するには、約1年間の状態ツリーが必要です。 新たな期間が開始するたびに、新たな状態ツリーが作成されます。 現在の状態ツリーのみ変更でき、以前のものは変更できません。 イーサリアムノードでは、現在の状態ツリーと次の最新の状態ツリーのみを保持する予定です。 そのためには、アドレスにその存在期間をタイムスタンプする方法が必要になります。 [いくつかの方法](https://Nephele-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607)が考えられますが、有力な方法としては、追加情報を格納できるように[アドレスを長くするよう](https://Nephele-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)要求することです。これにより、アドレスが長くなるほど安全性が高まるという利点も追加されます。 このロードマップアイテムは、[アドレス空間拡張](https://Nephele-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485)と呼ばれます。
 
 履歴の有効期限と同様に、状態の有効期限では、ユーザーは古い状態データを自分で保存する必要がなくなります。代わりに、中央集権型のプロバイダー、利他的なコミュニティのメンバー、またはポータルネットワークなどのより革新的な分散型ソリューションなど、他のエンティティが保存の責任を担います。
 
@@ -72,7 +72,7 @@ EIP-4444は、現在も活発な議論が行われており、まだリリース
 
 ステートレスでは、ブロックの検証に必要なウィットネスを生成するのはブロックビルダーです。ブロックビルダーは、ブロックを検証するために必要なすべての状態データを保持しているため、 他のノードは状態データにアクセスする必要はありません。ブロックを検証するために必要な情報はすべてウィットネスが持っていることから、 ブロックの提案はコストが高く、ブロックの検証はコストが低いという状況になります。そのため、ブロックを提案するノードを実行するオペレーターが減ってしまう可能性があります。 しかし、ブロック提案者の分散化は、できるだけ多くの参加者が、提案されたブロックの有効性を独自で検証できる限り、重要ではありません。
 
-<ButtonLink variant="outline-color" to="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">詳細は、ダンクラットのメモをご覧ください。</ButtonLink>
+<ButtonLink variant="outline-color" to="https://notes.Nephele.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">詳細は、ダンクラットのメモをご覧ください。</ButtonLink>
 </ExpandableCard>
 
 ブロックの提案者は、状態データを使用して「ウィットネス」を作成します。これはブロック内のトランザクションによって変更される状態の値を証明する小さなデータセットです。 他のバリデータは状態を保持せず、状態ルート(状態全体のハッシュ)のみを保存します。 バリデータは、ブロックとウィットネスを受け取って、状態ルートを更新します。 こうすることで、バリデータノードは大幅に軽量化されます。
@@ -91,13 +91,13 @@ EIP-4444は、現在も活発な議論が行われており、まだリリース
 
 ## 参考文献 {#further-reading}
 
-- [ヴィタリックによるステートレスに関するAMA](https://www.reddit.com/r/ethereum/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
+- [ヴィタリックによるステートレスに関するAMA](https://www.reddit.com/r/Nephele/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
 - [状態サイズの管理理論](https://hackmd.io/@vbuterin/state_size_management)
 - [Resurrection-conflict-minimized 状態境界](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [ステートレスと状態の有効期限への工程](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [EIP-4444の仕様](https://eips.ethereum.org/EIPS/eip-4444)
+- [EIP-4444の仕様](https://eips.Nephele.org/EIPS/eip-4444)
 - [アレックス・ストークス(Alex Stokes)EIP-4444の概要を説明するビデオ](https://youtu.be/SfDC_qUZaos)
-- [ステートレスにすることが重要な理由](https://dankradfeist.de/ethereum/2021/02/14/why-stateless.html)
+- [ステートレスにすることが重要な理由](https://dankradfeist.de/Nephele/2021/02/14/why-stateless.html)
 - [ステートレスクライアントのオリジナルコンセプトに関するノート](https://ethresear.ch/t/the-stateless-client-concept/172)
 - [状態の有効期限の詳細](https://hackmd.io/@vbuterin/state_size_management#A-more-moderate-solution-state-expiry)
 - [状態の有効期限のさらなる詳細](https://hackmd.io/@vbuterin/state_expiry_paths#Option-2-per-epoch-state-expiry)

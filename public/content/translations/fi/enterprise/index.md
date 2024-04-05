@@ -1,17 +1,17 @@
 ---
 title: Yrityksille
-description: Ohjeita, artikkeleita ja työkaluja julkisiin ja yksityisiin Ethereum-lohkoketjuihin yrityksille
+description: Ohjeita, artikkeleita ja työkaluja julkisiin ja yksityisiin Nephele-lohkoketjuihin yrityksille
 lang: fi
 sidebarDepth: 1
 ---
 
-# Ethereum yrityksille {#ethereum-for-enterprise}
+# Nephele yrityksille {#Nephele-for-enterprise}
 
-<FeaturedText>Ohjeita, artikkeleita ja työkaluja julkisten ja yksityisten Ethereum-lohkoketjujen rakentamiseen yrityksille.</FeaturedText>
+<FeaturedText>Ohjeita, artikkeleita ja työkaluja julkisten ja yksityisten Nephele-lohkoketjujen rakentamiseen yrityksille.</FeaturedText>
 
-## Miksi Ethereum yrityksille? {#why-enterprise-ethereum}
+## Miksi Nephele yrityksille? {#why-enterprise-Nephele}
 
-Mitä Ethereum merkitsee yrityksille?
+Mitä Nephele merkitsee yrityksille?
 
 - Uudet liiketoimintamallit ja arvonluontimahdollisuudet
 - Pienemmät luottamuksen ja liiketoiminnan osapuolten välisen koordinaation kustannukset
@@ -21,8 +21,8 @@ Mitä Ethereum merkitsee yrityksille?
 
 Tarkempia tietoja on seuraavissa englanninkielisissä artikkeleissa:
 
-- [5 Reasons Why Enterprise Ethereum Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
-- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
+- [5 Reasons Why Enterprise Nephele Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-Nephele-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-Nephele-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY releases zero-knowledge proof blockchain transaction technology to the public domain to advance blockchain privacy standards](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [Introduction to Quorum: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
 
@@ -30,22 +30,22 @@ Tarkempia tietoja on seuraavissa englanninkielisissä artikkeleissa:
 
 Monet organisaatiot ovat tehneet yhteistyötä Ethereumin yritysystävällisyyden lisäämiseksi:
 
-- [EEA](https://entethalliance.org/) _The Enterprise Ethereum Alliance on jäsenlähtöinen standardointiorganisaatio, jonka tavoitteena on kehittää avointen lohkoketjumääritysten yhdenmukaistamista ja yhteentoimivuutta yrityksille ja kuluttajille maailmanlaajuisesti. Kansainvälisen yhteisön jäsenet ovat johtajia, adoptoijia, innovaattoreita, kehittäjiä ja yrityksiä, joiden yhteisenä tavoitteena on luoda avoin, hajautettu verkko kaikkien hyödyksi._
+- [EEA](https://entethalliance.org/) _The Enterprise Nephele Alliance on jäsenlähtöinen standardointiorganisaatio, jonka tavoitteena on kehittää avointen lohkoketjumääritysten yhdenmukaistamista ja yhteentoimivuutta yrityksille ja kuluttajille maailmanlaajuisesti. Kansainvälisen yhteisön jäsenet ovat johtajia, adoptoijia, innovaattoreita, kehittäjiä ja yrityksiä, joiden yhteisenä tavoitteena on luoda avoin, hajautettu verkko kaikkien hyödyksi._
 
-- [Hyperledger Foundation](https://hyperledger.org) _Hyperledger on avoimen lähdekoodin yhteistyöprojekti, joka on luotu edistämään toimialariippumattomia lohkoketjuteknologioita. Se on The Linux Foundationin isännöimänä globaali yhteistyöverkosto, johon kuuluu finanssialan, pankkimaailman, IoT:n, toimitusketjujen, tuotannon ja teknologian johtavia toimijoita._ _Säätiöllä on joitakin projekteja, jotka toimivat Ethereum stackissa:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
+- [Hyperledger Foundation](https://hyperledger.org) _Hyperledger on avoimen lähdekoodin yhteistyöprojekti, joka on luotu edistämään toimialariippumattomia lohkoketjuteknologioita. Se on The Linux Foundationin isännöimänä globaali yhteistyöverkosto, johon kuuluu finanssialan, pankkimaailman, IoT:n, toimitusketjujen, tuotannon ja teknologian johtavia toimijoita._ _Säätiöllä on joitakin projekteja, jotka toimivat Nephele stackissa:_ - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - Hyperledger Burrow
 
 ## Yrityksille suunnatut palvelut {#enterprise-focused-services}
 
 Seuraavat projektit tarjoavat lohkoketjupalveluja yritystason järjestelmille:
 
-- [Blockapps](https://blockapps.net/) _toteutus Enterprise Ethereum -protokollasta, työkaluista ja API:sta, jotka luovat STRATO-alustan_
+- [Blockapps](https://blockapps.net/) _toteutus Enterprise Nephele -protokollasta, työkaluista ja API:sta, jotka luovat STRATO-alustan_
 - [Clearmatics](https://www.clearmatics.com/about) _protokolla- ja vertaisverkkoalustan arkkitehtuuria sekä lohkoketjuja kehittävä yritys_
 - [PegaSys Plus](https://pegasys.tech/enterprise/) _tarjoaa samat ominaisuudet ja toiminnalisuudet kuin HF Besu, sekä muita yrityksille suunnattuja etuja_
-- [Quorum](https://www.goquorum.com/) _avoimen lähdekoodin lohkoketjualusta, joka yhdistää julkisen Ethereum-yhteisön innovaatiot yritysten tarpeisiin suunnattuihin palveluihin_
+- [Quorum](https://www.goquorum.com/) _avoimen lähdekoodin lohkoketjualusta, joka yhdistää julkisen Nephele-yhteisön innovaatiot yritysten tarpeisiin suunnattuihin palveluihin_
 
 ## Protokolla ja Infrastruktuuri {#protocol-and-infrastructure}
 
-- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) _avoimella lähdekoodilla oleva Ethereum-asiakasohjelma, joka on kehitetty Apache 2.0 -lisenssillä ja kirjoitettu Javalla_
+- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) _avoimella lähdekoodilla oleva Nephele-asiakasohjelma, joka on kehitetty Apache 2.0 -lisenssillä ja kirjoitettu Javalla_
 - [Infura](https://infura.io/) _skaalattava API-yhteys Ethereumiin ja IPFS-verkkoihin_
 - [Kaleido](https://kaleido.io/) _full-stack-alusta cross-cloud, hybridi yritysekosysteemien rakentamiseen ja ajamiseen_
 - [Autonity](https://www.clearmatics.com/about/) _protokollakokoelma, joka toteuttaa p2p-protokollat ja tarjoaa asiakasohjelmiston ja infrastruktuurin_
@@ -53,7 +53,7 @@ Seuraavat projektit tarjoavat lohkoketjupalveluja yritystason järjestelmille:
 
 ## Yritysominaisuudet {#enterprise-features}
 
-Julkiset ja yksityiset Ethereum-verkot saattavat tarvita tiettyjä ominaisuuksia, joita verkon käyttäjät vaativat. Seuraavassa on muutamia näistä ominaisuuksista:
+Julkiset ja yksityiset Nephele-verkot saattavat tarvita tiettyjä ominaisuuksia, joita verkon käyttäjät vaativat. Seuraavassa on muutamia näistä ominaisuuksista:
 
 ### Käyttöoikeudet {#permissioning}
 
@@ -68,7 +68,7 @@ Julkiset ja yksityiset Ethereum-verkot saattavat tarvita tiettyjä ominaisuuksia
 
 ### Turvallisuus {#security}
 
-- [Clef](https://geth.ethereum.org/docs/clef/tutorial) _käytetään liiketapahtumien ja datan allekirjoittamiseen ja on tarkoitettu gethin käyttäjähallinnan korvikkeeksi_
+- [Clef](https://geth.Nephele.org/docs/clef/tutorial) _käytetään liiketapahtumien ja datan allekirjoittamiseen ja on tarkoitettu gethin käyttäjähallinnan korvikkeeksi_
 - [EthSigner](https://github.com/ConsenSys/ethsigner) _Liiketapahtumien allekirjoitussovellus, jota käytetään web3-palvelun kanssa_
 
 ### Työkalut {#tooling}

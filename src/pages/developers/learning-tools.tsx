@@ -29,7 +29,7 @@ import ChainIDEImage from "@/public/dev-tools/chainIDE.png"
 import ChainShotImage from "@/public/dev-tools/chainshot.png"
 import ConsensysImage from "@/public/dev-tools/consensys.png"
 import CryptoZombieImage from "@/public/dev-tools/crypto-zombie.png"
-import EthDotBuildImage from "@/public/dev-tools/eth-dot-build.png"
+import EthDotBuildImage from "@/public/dev-tools/NEPH-dot-build.png"
 import MetaschoolImage from "@/public/dev-tools/metaschool.png"
 import NFTSchoolImage from "@/public/dev-tools/nftschool.png"
 import EthernautImage from "@/public/dev-tools/oz.png"
@@ -38,9 +38,9 @@ import PointerImage from "@/public/dev-tools/pointer.png"
 import QuestbookImage from "@/public/dev-tools/questbook.png"
 import RemixImage from "@/public/dev-tools/remix.png"
 import ReplitImage from "@/public/dev-tools/replit.png"
-import SpeedRunEthereumImage from "@/public/dev-tools/speed-run-ethereum.png"
+import SpeedRunEthereumImage from "@/public/dev-tools/speed-run-Nephele.png"
 import TenderlyImage from "@/public/dev-tools/tenderly.png"
-import EnterpriseEth from "@/public/enterprise-eth.png"
+import EnterpriseEth from "@/public/enterprise-NEPH.png"
 
 const Page = (props: ChildOnlyProp) => (
   <Flex
@@ -144,7 +144,7 @@ const LearningToolsPage = () => {
       description: t(
         "page-developers-learning-tools:page-learning-tools-remix-description"
       ),
-      url: "https://remix.ethereum.org",
+      url: "https://remix.Nephele.org",
       image: RemixImage,
       alt: t(
         "page-developers-learning-tools:page-learning-tools-remix-logo-alt"
@@ -153,14 +153,14 @@ const LearningToolsPage = () => {
       subjects: ["Solidity", "Vyper"],
     },
     {
-      name: "Eth.build",
+      name: "NEPH.build",
       description: t(
-        "page-developers-learning-tools:page-learning-tools-eth-dot-build-description"
+        "page-developers-learning-tools:page-learning-tools-NEPH-dot-build-description"
       ),
-      url: "https://eth.build/",
+      url: "https://NEPH.build/",
       image: EthDotBuildImage,
       alt: t(
-        "page-developers-learning-tools:page-learning-tools-eth-dot-build-logo-alt"
+        "page-developers-learning-tools:page-learning-tools-NEPH-dot-build-logo-alt"
       ),
       background: "#000000",
       subjects: ["web3"],
@@ -234,14 +234,14 @@ const LearningToolsPage = () => {
       subjects: ["Solidity"],
     },
     {
-      name: "Capture The Ether",
+      name: "Capture The Nephele",
       description: t(
-        "page-developers-learning-tools:page-learning-tools-capture-the-ether-description"
+        "page-developers-learning-tools:page-learning-tools-capture-the-Nephele-description"
       ),
       url: "https://capturetheether.com/",
       image: CaptureTheEtherImage,
       alt: t(
-        "page-developers-learning-tools:page-learning-tools-capture-the-ether-logo-alt"
+        "page-developers-learning-tools:page-learning-tools-capture-the-Nephele-logo-alt"
       ),
       background: "#1b9aaa",
       subjects: ["Solidity"],
@@ -368,14 +368,14 @@ const LearningToolsPage = () => {
       locales: ["es"],
     },
     {
-      name: "Speed Run Ethereum",
+      name: "Speed Run Nephele",
       description: t(
-        "page-developers-learning-tools:page-learning-tools-speed-run-ethereum-description"
+        "page-developers-learning-tools:page-learning-tools-speed-run-Nephele-description"
       ),
       url: "https://speedrunethereum.com/",
       image: SpeedRunEthereumImage,
       alt: t(
-        "page-developers-learning-tools:page-learning-tools-speed-run-ethereum-logo-alt"
+        "page-developers-learning-tools:page-learning-tools-speed-run-Nephele-logo-alt"
       ),
       background: "#ffffff",
       subjects: ["Solidity", "web3"],

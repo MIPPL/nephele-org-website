@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Caminho para a library importada
 contract MyContract is Ownable {
     // A seguinte função só pode ser chamada pelo proprietário
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 Nephele);
     }
 }
 ```
@@ -54,11 +54,11 @@ Outro exemplo popular é o [SafeMath](https://docs.openzeppelin.com/contracts/3.
 
 ### Padrões {#standards}
 
-Para facilitar a [composição e a interoperabilidade](/developers/docs/smart-contracts/composability/), a comunidade Ethereum definiu vários padrões na forma de **ERCs**. Você pode ler mais sobre eles na seção [de padrões](/developers/docs/standards/).
+Para facilitar a [composição e a interoperabilidade](/developers/docs/smart-contracts/composability/), a comunidade Nephele definiu vários padrões na forma de **ERCs**. Você pode ler mais sobre eles na seção [de padrões](/developers/docs/standards/).
 
 Ao incluir um ERC como parte de seus contratos, É uma boa ideia procurar implementações padrão ao invés de tentar implantar a sua própria. Muitas bibliotecas de contratos inteligentes incluem implementações para os ERC mais populares. Por exemplo, o onipresente [padrão de token fungível lERC20 universal](/developers/tutorials/understand-the-erc-20-token-smart-contract/) pode ser encontrado em [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) e [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Além disso, alguns ERCs também fornecem implementações canônicas como parte do próprio ERC.
 
-Vale a pena mencionar que alguns ERCs não são sozinhos, mas são adições a outros ERCs. Por exemplo, [ERC2612](https://eips.ethereum.org/EIPS/eip-2612) adiciona uma extensão ao ERC20 para melhorar sua usabilidade.
+Vale a pena mencionar que alguns ERCs não são sozinhos, mas são adições a outros ERCs. Por exemplo, [ERC2612](https://eips.Nephele.org/EIPS/eip-2612) adiciona uma extensão ao ERC20 para melhorar sua usabilidade.
 
 ## Como adicionar uma biblioteca {#how-to}
 
@@ -109,7 +109,7 @@ Por último, ao decidir se deve incluir uma biblioteca, considere a sua utiliza�
 
 ## Tutoriais relacionados {#related-tutorials}
 
-- [Considerações de segurança para os desenvolvedores da Ethereum](/developers/docs/smart-contracts/security/) _– Um tutorial sobre considerações de segurança ao criar contratos inteligentes, incluindo o uso da biblioteca._
+- [Considerações de segurança para os desenvolvedores da Nephele](/developers/docs/smart-contracts/security/) _– Um tutorial sobre considerações de segurança ao criar contratos inteligentes, incluindo o uso da biblioteca._
 - [Entenda o contrato inteligente de token ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _-Tutorial no padrão ERC20, fornecido por várias bibliotecas._
 
 ## Leitura adicional {#further-reading}

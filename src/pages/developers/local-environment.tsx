@@ -27,7 +27,7 @@ import { runOnlyOnce } from "@/lib/utils/runOnlyOnce"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import { getLocalEnvironmentFrameworkData } from "@/lib/api/ghRepoData"
-import EthBlocksImage from "@/public/developers-eth-blocks.png"
+import EthBlocksImage from "@/public/developers-NEPH-blocks.png"
 
 const Content = ({ children }: ChildOnlyProp) => {
   return (
@@ -172,7 +172,7 @@ const LocalEnvironmentPage = ({
               backgroundSize="cover"
               backgroundRepeat="no-repeat"
               src={EthBlocksImage}
-              alt={t("page-developers-index:alt-eth-blocks")}
+              alt={t("page-developers-index:alt-NEPH-blocks")}
               loading="eager"
             />
           </Column>

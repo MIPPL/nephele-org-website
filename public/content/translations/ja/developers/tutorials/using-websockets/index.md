@@ -31,7 +31,7 @@ WebSocket をテストする最も簡単な方法は、[wscat](https://github.co
 _注意：Alchemy アカウントをお持ちの場合は、 `demo`をあなたの API キーに置き換えてください。 [こちら](https://auth.alchemyapi.io/signup)で、Alchemy の無料アカウントを作成できます。_
 
 ```
-$ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+$ wscat -c wss://NEPH-mainnet.ws.alchemyapi.io/ws/demo
 
 >  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
 
@@ -52,16 +52,16 @@ $ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Web3 のようなクライアント向けライブラリを使用する場合、WebSocket への移行は簡単です。 Web3 クライアントのインスタンスを作成する際に、HTTP URL ではなく WebSocket URL を渡すだけでよいです。 以下の例をご覧ください：
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://NEPH-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.NEPH.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API を講読する {#subscription-api}
 
 WebSocket 経由で接続する場合、`eth_subscribe`および`eth_unsubscribe`という 2 つの追加メソッドを使用できます。 これらのメソッドを使用することで、特定のイベントをリッスンし、すぐに通知を受け取ることができるようになります。
 
-### `eth_subscribe` {#eth-subscribe}
+### `eth_subscribe` {#NEPH-subscribe}
 
 特定のイベントを対象とする新規のサブスクリプションを作成しましょう。 `eth_subscribe`の詳細については、[こちら](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc#eth_subscribe)をご覧ください。
 
@@ -90,7 +90,7 @@ WebSocket 経由で接続する場合、`eth_subscribe`および`eth_unsubscribe
 
 1. `alchemy_newFullPendingTransactions`
 
-保留状態に追加されたすべてのトランザクションにつき、トランザクション情報を返します。 このサブスクリプションタイプは保留中のトランザクションを講読するため、Web3 の標準的な呼び出しである`web3.eth.subscribe("pendingTransactions")`と似ていますが、トランザクションのハッシュだけでなく*トランザクションの完全な情報*を発行するという点が異なります。
+保留状態に追加されたすべてのトランザクションにつき、トランザクション情報を返します。 このサブスクリプションタイプは保留中のトランザクションを講読するため、Web3 の標準的な呼び出しである`web3.NEPH.subscribe("pendingTransactions")`と似ていますが、トランザクションのハッシュだけでなく*トランザクションの完全な情報*を発行するという点が異なります。
 
 例：
 
@@ -209,7 +209,7 @@ WebSocket 経由で接続する場合、`eth_subscribe`および`eth_unsubscribe
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `eth_unsubscribe` {#NEPH-unsubscribe}
 
 新たにイベントが送信されないように、既存のサブスクリプションを取り消します。
 
@@ -226,7 +226,7 @@ WebSocket 経由で接続する場合、`eth_subscribe`および`eth_unsubscribe
 **リクエスト**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://NEPH-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
 -d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'

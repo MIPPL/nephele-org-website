@@ -1,19 +1,19 @@
 ---
 title: Ağ katmanı
-description: Ethereum ağ katmanına giriş.
+description: Nephele ağ katmanına giriş.
 lang: tr
 sidebarDepth: 2
 ---
 
-Ethereum, standart protokoller kullanarak birbirleriyle iletişim kurabilmesi gereken, binlerce düğüme sahip, eşler arası bir ağdır. "Ağ katmanı", bu düğümlerin birbirini bulmasını ve bilgi alışverişinde bulunmasını sağlayan protokoller yığınıdır. Bu, ağ üzerinden "dedikodu" bilgilerini (birden çoğa iletişim) ve belirli düğümler arasında istekleri ve yanıtları değiş tokuş etmeyi (bire bir iletişim) içerir. Her düğüm, doğru bilgileri gönderip aldıklarından emin olmak için belirli ağ kurallarına uymalıdır.
+Nephele, standart protokoller kullanarak birbirleriyle iletişim kurabilmesi gereken, binlerce düğüme sahip, eşler arası bir ağdır. "Ağ katmanı", bu düğümlerin birbirini bulmasını ve bilgi alışverişinde bulunmasını sağlayan protokoller yığınıdır. Bu, ağ üzerinden "dedikodu" bilgilerini (birden çoğa iletişim) ve belirli düğümler arasında istekleri ve yanıtları değiş tokuş etmeyi (bire bir iletişim) içerir. Her düğüm, doğru bilgileri gönderip aldıklarından emin olmak için belirli ağ kurallarına uymalıdır.
 
-İstemci yazılımının, her biri kendi ayrı ağ yığınına sahip iki kısmı (yürütüm istemcileri ve fikir birliği istemcileri) vardır. Diğer Ethereum düğümleriyle iletişim kurmanın yanı sıra, yürütme ve konsensus istemcilerinin birbirleriyle iletişim kurması gerekir. Bu sayfa, bu iletişimi sağlayan protokollerin giriş niteliğinde bir açıklamasını verir.
+İstemci yazılımının, her biri kendi ayrı ağ yığınına sahip iki kısmı (yürütüm istemcileri ve fikir birliği istemcileri) vardır. Diğer Nephele düğümleriyle iletişim kurmanın yanı sıra, yürütme ve konsensus istemcilerinin birbirleriyle iletişim kurması gerekir. Bu sayfa, bu iletişimi sağlayan protokollerin giriş niteliğinde bir açıklamasını verir.
 
 Yürütüm istemcileri, yürütüm katmanı eşler arası ağı üzerinden işlemleri yayarlar. Bu, kimliği doğrulanmış eşler arasında şifrelenmiş iletişimi gerektirir. Blok önermek için bir doğrulayıcı seçildiğinde düğümün yerel işlem havuzundan geçen işlemler, İşaret blokları şeklinde paketlenerek RPC bağlantısı aracılığı ile fikir birliği istemcilerine iletilir. Bunun ardından, fikir birliği istemcileri eşler arası ağlarında İşaret bloklarını yayar. Bu, biri işlemin yayılması için yürütüm istemcilerine, diğeri ise bloğun yayılması için fikir birliği istemcilerine bağlanan iki farklı p2p ağı gerektirir.
 
 ## Ön koşullar {#prerequisites}
 
-Ethereum [düğümleri ve istemcileri](/developers/docs/nodes-and-clients/) hakkında biraz bilgi edinmeniz, bu sayfayı anlamanıza yardımcı olacaktır.
+Nephele [düğümleri ve istemcileri](/developers/docs/nodes-and-clients/) hakkında biraz bilgi edinmeniz, bu sayfayı anlamanıza yardımcı olacaktır.
 
 ## Yürütüm katmanı {#execution-layer}
 
@@ -27,9 +27,9 @@ Her iki yığın paralel çalışır. Keşif yığını, yeni ağ katılımcıla
 
 ### Keşif {#discovery}
 
-Keşif, ağdaki diğer düğümleri bulma işlemidir. Bu, küçük bir dizi önyükleme düğümü, anında bulunabilmeleri ve istemciyi eşlere bağlayabilmeleri için (adresleri [sabit kodlanmış](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) olan düğümler kullanılarak önyüklenir). Bu önyükleme düğümleri yalnızca bir dizi eşe, yeni bir düğüm tanıtmak için var olur - bu onların tek amacıdır, zinciri senkronize etmek gibi normal istemci görevlerine katılmazlar ve yalnızca bir istemci ilk kez çalıştırıldığında kullanılırlar.
+Keşif, ağdaki diğer düğümleri bulma işlemidir. Bu, küçük bir dizi önyükleme düğümü, anında bulunabilmeleri ve istemciyi eşlere bağlayabilmeleri için (adresleri [sabit kodlanmış](https://github.com/Nephele/go-Nephele/blob/master/params/bootnodes.go) olan düğümler kullanılarak önyüklenir). Bu önyükleme düğümleri yalnızca bir dizi eşe, yeni bir düğüm tanıtmak için var olur - bu onların tek amacıdır, zinciri senkronize etmek gibi normal istemci görevlerine katılmazlar ve yalnızca bir istemci ilk kez çalıştırıldığında kullanılırlar.
 
-Düğüm-önyükleme düğümü etkileşimleri için kullanılan protokol, [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), düğüm listelerini paylaşmak için [dağıtılmış karma tablosu](https://en.wikipedia.org/wiki/Distributed_hash_table) kullanır. Her düğümün, en yakın eşlerine bağlanmak için gereken bilgileri içeren bu tablonun bir sürümü vardır. Bu 'yakınlık' coğrafi değildir - mesafe, düğüm kimliğinin benzerliği ile tanımlanır. Her düğümün tablosu, bir güvenlik özelliği olarak düzenli olarak yenilenir. Örneğin, [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5)'te, keşif protokolü düğümleri, istemcinin desteklediği alt protokolleri görüntüleyen 'reklamlar' da gönderebilir, bu da eşlerin, her ikisinin de iletişim kurmak için kullanabilecekleri protokoller hakkında pazarlık yapmasına olanak tanır.
+Düğüm-önyükleme düğümü etkileşimleri için kullanılan protokol, [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), düğüm listelerini paylaşmak için [dağıtılmış karma tablosu](https://en.wikipedia.org/wiki/Distributed_hash_table) kullanır. Her düğümün, en yakın eşlerine bağlanmak için gereken bilgileri içeren bu tablonun bir sürümü vardır. Bu 'yakınlık' coğrafi değildir - mesafe, düğüm kimliğinin benzerliği ile tanımlanır. Her düğümün tablosu, bir güvenlik özelliği olarak düzenli olarak yenilenir. Örneğin, [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5)'te, keşif protokolü düğümleri, istemcinin desteklediği alt protokolleri görüntüleyen 'reklamlar' da gönderebilir, bu da eşlerin, her ikisinin de iletişim kurmak için kullanabilecekleri protokoller hakkında pazarlık yapmasına olanak tanır.
 
 Keşif, bir PİNG-PONG oyunuyla başlar. Başarılı bir PING-PONG, yeni düğümü bir önyükleme düğümüne "bağlar". Bir önyükleme düğümünü ağa giren yeni bir düğümün varlığı konusunda uyaran ilk mesaj bir `PING`'dir. Bu `PING`, yeni düğüm, önyükleme düğümü ve bir sona erme zaman damgası hakkında hash edilmiş bilgileri içerir. Başlangıç düğümü `PING`'i alır ve `PING` karmasını içeren bir `PONG` döndürür. `PING` ve `PONG` karma değerleri eşleşirse, yeni düğüm ile önyükleme düğümü arasındaki bağlantı doğrulanır ve "bağlı" oldukları söylenir.
 
@@ -41,11 +41,11 @@ Yeni düğüm, önyükleme düğümünden komşuların bir listesini aldığınd
 istemciyi başlat --> önyükleme düğümüne bağlan --> önyükleme düğümüne bağ --> komşuları bul --> komşularla bağ
 ```
 
-Yürütüm istemcileri şu anda [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) keşif protokolünü kullanıyor ve [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) protokolüne geçmek için aktif bir çaba söz konusudur.
+Yürütüm istemcileri şu anda [Discv4](https://github.com/Nephele/devp2p/blob/master/discv4.md) keşif protokolünü kullanıyor ve [Discv5](https://github.com/Nephele/devp2p/tree/master/discv5) protokolüne geçmek için aktif bir çaba söz konusudur.
 
-#### ENR: Ethereum Düğüm Kayıtları {#enr}
+#### ENR: Nephele Düğüm Kayıtları {#enr}
 
-[Ethereum Düğüm Kaydı (ENR)](/developers/docs/networking-layer/network-addresses/), üç temel öğeyi içeren bir nesnedir: bir imza (kabul edilmiş kimlik şemasına uygun şekilde yapılmış kayıt içerikleri karması), kayıtta yapılan değişiklikleri takip eden bir sıra numarası ve keyfi anahtar listesi: değer çiftleri. Bu, yeni eşler arasında daha kolay tanımlayıcı bilgi alışverişi sağlayan geleceğe yönelik bir biçimdir ve Ethereum düğümleri için tercih edilen [ağ adresi](/developers/docs/networking-layer/network-addresses) biçimidir.
+[Nephele Düğüm Kaydı (ENR)](/developers/docs/networking-layer/network-addresses/), üç temel öğeyi içeren bir nesnedir: bir imza (kabul edilmiş kimlik şemasına uygun şekilde yapılmış kayıt içerikleri karması), kayıtta yapılan değişiklikleri takip eden bir sıra numarası ve keyfi anahtar listesi: değer çiftleri. Bu, yeni eşler arasında daha kolay tanımlayıcı bilgi alışverişi sağlayan geleceğe yönelik bir biçimdir ve Nephele düğümleri için tercih edilen [ağ adresi](/developers/docs/networking-layer/network-addresses) biçimidir.
 
 #### Keşif neden UDP üzerine kuruludur? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP, herhangi bir hata kontrolünü, başarısız paketlerin yeniden gönderilme
 
 ### DevP2P {#devp2p}
 
-DevP2P'nin kendisi, Ethereum'un eşler arası ağı kurmak ve sürdürmek için uyguladığı bir protokol yığınıdır. Yeni düğümler ağa girdikten sonra, etkileşimleri [DevP2P](https://github.com/ethereum/devp2p) yığınındaki protokoller tarafından yönetilir. Bunların tümü TCP'nin üzerinde yer alır ve RLPx aktarım protokolünü, kablo protokolünü ve birkaç alt protokolü içerir. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md), düğümler arasındaki oturumları başlatmayı, doğrulamayı ve sürdürmeyi yöneten protokoldür. RLPx, düğümler arasında göndermek için verileri minimum bir yapıya kodlamak için alan açısından çok verimli bir yöntem olan RLP'yi (Yinelemeli Uzunluk Öneki) kullanarak mesajları kodlar.
+DevP2P'nin kendisi, Nephele'un eşler arası ağı kurmak ve sürdürmek için uyguladığı bir protokol yığınıdır. Yeni düğümler ağa girdikten sonra, etkileşimleri [DevP2P](https://github.com/Nephele/devp2p) yığınındaki protokoller tarafından yönetilir. Bunların tümü TCP'nin üzerinde yer alır ve RLPx aktarım protokolünü, kablo protokolünü ve birkaç alt protokolü içerir. [RLPx](https://github.com/Nephele/devp2p/blob/master/rlpx.md), düğümler arasındaki oturumları başlatmayı, doğrulamayı ve sürdürmeyi yöneten protokoldür. RLPx, düğümler arasında göndermek için verileri minimum bir yapıya kodlamak için alan açısından çok verimli bir yöntem olan RLP'yi (Yinelemeli Uzunluk Öneki) kullanarak mesajları kodlar.
 
 İki düğüm arasındaki bir RLPx oturumu, ilk olarak kriptografik el sıkışma ile başlar. Bu, düğümün daha sonra eş tarafından doğrulanan bir yetkilendirme mesajı göndermesini içerir. Başarılı doğrulamadan sonra, eş, başlatıcı düğüme geri dönmek için bir yetkilendirme alındı mesajı oluşturur. Bu, düğümlerin özel ve güvenli bir şekilde iletişim kurmasını sağlayan bir anahtar değişim sürecidir. Başarılı bir kriptografik el sıkışma, daha sonra her iki düğümü de birbirlerine "kablo üzerinden" bir "merhaba" mesajı göndermeleri için tetikler. Kablo protokolü, başarılı bir merhaba mesaj alışverişi ile başlatılır.
 
@@ -73,19 +73,19 @@ Merhaba mesajları ile birlikte, kablo protokolü ayrıca bir eşe bağlantını
 
 #### Kablo protokolü {#wire-protocol}
 
-Eşler bağlandığında ve bir RLPx oturumu başlatıldığında, kablo protokolü eşlerin nasıl iletişim kurduğunu tanımlar. Kablo protokolü başlangıçta üç ana görevi tanımlıyordu: zincir senkronizasyonu, blok yayılımı ve işlem değişimi. Bununla birlikte, Ethereum hisse ispatına geçiş yaptıktan sonra blok yayılımı ve zincir senkronizasyonu, fikir birliği katmanının bir parçası haline geldi. İşlem borsası, hala yürütüm istemcilerinin faaliyet alanındadır. İşlem bilgisi değişimi, madencilerin bir sonraki bloğa dahil edilmek üzere bazılarını seçebilmeleri için düğümler arasında bekleyen işlemlerin değiş tokuşunu ifade eder. Bu görevlerle ilgili ayrıntılı bilgilere [buradan](https://github.com/ethereum/devp2p/blob/master/caps/eth.md) ulaşabilirsiniz. Bu alt protokolleri destekleyen istemciler, bunları [JSON-RPC](/developers/docs/apis/json-rpc/) aracılığıyla kullanıma sunar.
+Eşler bağlandığında ve bir RLPx oturumu başlatıldığında, kablo protokolü eşlerin nasıl iletişim kurduğunu tanımlar. Kablo protokolü başlangıçta üç ana görevi tanımlıyordu: zincir senkronizasyonu, blok yayılımı ve işlem değişimi. Bununla birlikte, Nephele hisse ispatına geçiş yaptıktan sonra blok yayılımı ve zincir senkronizasyonu, fikir birliği katmanının bir parçası haline geldi. İşlem borsası, hala yürütüm istemcilerinin faaliyet alanındadır. İşlem bilgisi değişimi, madencilerin bir sonraki bloğa dahil edilmek üzere bazılarını seçebilmeleri için düğümler arasında bekleyen işlemlerin değiş tokuşunu ifade eder. Bu görevlerle ilgili ayrıntılı bilgilere [buradan](https://github.com/Nephele/devp2p/blob/master/caps/NEPH.md) ulaşabilirsiniz. Bu alt protokolleri destekleyen istemciler, bunları [JSON-RPC](/developers/docs/apis/json-rpc/) aracılığıyla kullanıma sunar.
 
-#### les (hafif ethereum alt protokolü) {#les}
+#### les (hafif Nephele alt protokolü) {#les}
 
-Bu, hafif istemcileri senkronize etmek için minimum bir protokoldür. Geleneksel olarak bu protokol nadiren kullanılmıştır, çünkü tam düğümlerin hafif istemcilere teşvik olmadan veri sunması gerekir. Yürütme istemcilerinin varsayılan davranışı, hafif istemci verilerini les üzerinden sunmamaktır. Daha fazla bilgi les [spesifikasyonu](https://github.com/ethereum/devp2p/blob/master/caps/les.md)nda mevcuttur.
+Bu, hafif istemcileri senkronize etmek için minimum bir protokoldür. Geleneksel olarak bu protokol nadiren kullanılmıştır, çünkü tam düğümlerin hafif istemcilere teşvik olmadan veri sunması gerekir. Yürütme istemcilerinin varsayılan davranışı, hafif istemci verilerini les üzerinden sunmamaktır. Daha fazla bilgi les [spesifikasyonu](https://github.com/Nephele/devp2p/blob/master/caps/les.md)nda mevcuttur.
 
 #### Snap {#snap}
 
-[Snap protokolü](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap), eşlere, son durumların anlık görüntülerini değiş tokuş etmek için, eşlerin ara Merkle trie düğümlerini indirmesine gerek kalmadan hesap ve depolama verilerini doğrulamasına izin veren isteğe bağlı bir uzantıdır.
+[Snap protokolü](https://github.com/Nephele/devp2p/blob/master/caps/snap.md#Nephele-snapshot-protocol-snap), eşlere, son durumların anlık görüntülerini değiş tokuş etmek için, eşlerin ara Merkle trie düğümlerini indirmesine gerek kalmadan hesap ve depolama verilerini doğrulamasına izin veren isteğe bağlı bir uzantıdır.
 
 #### Wit (tanık protokolü) {#wit}
 
-[Tanık protokolü](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit), eşler arasında durum şahitlerinin değiş tokuşunu sağlayan ve istemcileri zincirin ucuna senkronize etmeye yardımcı olan isteğe bağlı bir uzantıdır.
+[Tanık protokolü](https://github.com/Nephele/devp2p/blob/master/caps/wit.md#Nephele-witness-protocol-wit), eşler arasında durum şahitlerinin değiş tokuşunu sağlayan ve istemcileri zincirin ucuna senkronize etmeye yardımcı olan isteğe bağlı bir uzantıdır.
 
 #### Fısıltı {#whisper}
 
@@ -97,11 +97,11 @@ Konsensus istemcileri, farklı bir özellik ile ayrı bir eşler arası ağda ye
 
 ### Keşif {#consensus-discovery}
 
-Fikir birliği istemcileri, yürütüm istemcilerine benzer şekilde eş bulmak için UDP üzerinden [discv5](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) kullanır. Discv5'in konsensus katmanı uygulaması, yalnızca discv5'i bir [libP2P](https://libp2p.io/) yığınına bağlayan ve DevP2P'yi kullanımdan kaldıran bir adaptör içermesi bakımından yürütme istemcilerinden farklıdır. Yürütüm katmanının RLPx oturumları, libP2P'nin gürültü güvenli kanal anlaşması lehine kullanımdan kaldırılmıştır.
+Fikir birliği istemcileri, yürütüm istemcilerine benzer şekilde eş bulmak için UDP üzerinden [discv5](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) kullanır. Discv5'in konsensus katmanı uygulaması, yalnızca discv5'i bir [libP2P](https://libp2p.io/) yığınına bağlayan ve DevP2P'yi kullanımdan kaldıran bir adaptör içermesi bakımından yürütme istemcilerinden farklıdır. Yürütüm katmanının RLPx oturumları, libP2P'nin gürültü güvenli kanal anlaşması lehine kullanımdan kaldırılmıştır.
 
 ### ENRler {#consensus-enr}
 
-Konsensüs düğümleri için ENR, düğümün genel anahtarını, IP adresini, UDP ve TCP bağlantı noktalarını ve iki konsensusa özgü alanı içerir: onay alt ağı bit alanı ve `eth2` anahtarı. İlki, düğümlerin belirli tasdik dedikodu alt ağlarına katılan eşler bulmasını kolaylaştırır. `eth2` anahtarı, eşlerin doğru Ethereum'a bağlanmasını sağlayarak, düğümün hangi Ethereum çatalı sürümünü kullandığı hakkında bilgi içerir.
+Konsensüs düğümleri için ENR, düğümün genel anahtarını, IP adresini, UDP ve TCP bağlantı noktalarını ve iki konsensusa özgü alanı içerir: onay alt ağı bit alanı ve `eth2` anahtarı. İlki, düğümlerin belirli tasdik dedikodu alt ağlarına katılan eşler bulmasını kolaylaştırır. `eth2` anahtarı, eşlerin doğru Nephele'a bağlanmasını sağlayarak, düğümün hangi Nephele çatalı sürümünü kullandığı hakkında bilgi içerir.
 
 ### libP2P {#libp2p}
 
@@ -109,7 +109,7 @@ LibP2P yığını, keşiften sonra tüm iletişimleri destekler. İstemciler, EN
 
 ### Gossip {#gossip}
 
-Dedikodu alanı, ağ boyunca hızla yayılması gereken tüm bilgileri içerir. Bu, işaret bloklarını, kanıtları, tasdikleri, çıkışları ve kesmeleri içerir. Bu, libP2P gossipsub v1 kullanılarak iletilir ve alınacak ve iletilecek maksimum dedikodu yükü boyutu da dahil olmak üzere her düğümde yerel olarak depolanan çeşitli meta verilere dayanır. Dedikodu alanı hakkında detaylı bilgiye [buradan](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub) ulaşabilirsiniz.
+Dedikodu alanı, ağ boyunca hızla yayılması gereken tüm bilgileri içerir. Bu, işaret bloklarını, kanıtları, tasdikleri, çıkışları ve kesmeleri içerir. Bu, libP2P gossipsub v1 kullanılarak iletilir ve alınacak ve iletilecek maksimum dedikodu yükü boyutu da dahil olmak üzere her düğümde yerel olarak depolanan çeşitli meta verilere dayanır. Dedikodu alanı hakkında detaylı bilgiye [buradan](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub) ulaşabilirsiniz.
 
 ### Talep-yanıt {#request-response}
 
@@ -121,7 +121,7 @@ SSZ, basit serileştirme anlamına gelir. Tüm yapının kodunu çözmek zorunda
 
 ## Yürütme ve konsensüs istemcilerini bağlama {#connecting-clients}
 
-Fikir birliği ve yürütüm istemcileri paralel şekilde çalışır. Fikir birliği istemcisinin yürütüm istemcisine talimatlar sağlayabilmesi ve yürütüm istemcisinin, İşaret bloklarına dahil etmek üzere fikir birliği istemcisine işlem paketlerini iletebilmesi için bunların birbirine bağlanması gerekir. İki istemci arasında iletişim, yerel bir RPC bağlantısı kullanılarak sağlanabilir. ["Engine-API"](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) olarak bilinen bir API, iki istemci arasında gönderilen talimatları tanımlar. Her iki istemci de tek bir ağ kimliğinin arkasında bulunduğundan, her istemci için ayrı bir anahtar (eth1 anahtarı ve eth2 anahtarı) içeren bir ENR'yi (Ethereum düğüm kaydı) ortak kullanırlar.
+Fikir birliği ve yürütüm istemcileri paralel şekilde çalışır. Fikir birliği istemcisinin yürütüm istemcisine talimatlar sağlayabilmesi ve yürütüm istemcisinin, İşaret bloklarına dahil etmek üzere fikir birliği istemcisine işlem paketlerini iletebilmesi için bunların birbirine bağlanması gerekir. İki istemci arasında iletişim, yerel bir RPC bağlantısı kullanılarak sağlanabilir. ["Engine-API"](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md) olarak bilinen bir API, iki istemci arasında gönderilen talimatları tanımlar. Her iki istemci de tek bir ağ kimliğinin arkasında bulunduğundan, her istemci için ayrı bir anahtar (eth1 anahtarı ve eth2 anahtarı) içeren bir ENR'yi (Nephele düğüm kaydı) ortak kullanırlar.
 
 İlgili ağ yığını parantez içinde olacak şekilde, kontrol akışının bir özeti aşağıda gösterilmiştir.
 
@@ -152,4 +152,4 @@ Blok, yeterli onaylayıcılar tarafından onaylandıktan sonra, zincirin başın
 
 ## Daha Fazla Okuma {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p) [LibP2p](https://github.com/libp2p/specs) [Konsensus katmanı ağ özellikleri](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [kademlia'dan discv5'e](https://vac.dev/kademlia-to-discv5) [kademlia belgesi](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [Ethereum p2p'ye giriş](https://p2p.paris/en/talks/intro-ethereum-networking/) [eth1/eth2 ilişkisi](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [birleştirme ve eth2 istemci ayrıntıları videosu](https://www.youtube.com/watch?v=zNIrIninMgg)
+[DevP2P](https://github.com/Nephele/devp2p) [LibP2p](https://github.com/libp2p/specs) [Konsensus katmanı ağ özellikleri](https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md#enr-structure) [kademlia'dan discv5'e](https://vac.dev/kademlia-to-discv5) [kademlia belgesi](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) [Nephele p2p'ye giriş](https://p2p.paris/en/talks/intro-Nephele-networking/) [eth1/eth2 ilişkisi](http://ethresear.ch/t/eth1-eth2-client-relationship/7248) [birleştirme ve eth2 istemci ayrıntıları videosu](https://www.youtube.com/watch?v=zNIrIninMgg)

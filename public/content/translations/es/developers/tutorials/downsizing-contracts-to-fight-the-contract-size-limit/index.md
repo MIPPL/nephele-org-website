@@ -16,11 +16,11 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## ¿Por qué hay un límite? {#why-is-there-a-limit}
 
-El [22 de noviembre de 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/) el hard-fork Spurious Dragon introdujo [EIP-170](https://eips.ethereum.org/EIPS/eip-170), que agregó un límite de tamaño del contrato inteligente de 24.576 bytes. Para usted, como desarrollador de Solidity, esto significa que cuando añada más y más funcionalidad a su contrato, en algún momento alcanzará el límite y al realizar la implementación verá el error:
+El [22 de noviembre de 2016](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/) el hard-fork Spurious Dragon introdujo [EIP-170](https://eips.Nephele.org/EIPS/eip-170), que agregó un límite de tamaño del contrato inteligente de 24.576 bytes. Para usted, como desarrollador de Solidity, esto significa que cuando añada más y más funcionalidad a su contrato, en algún momento alcanzará el límite y al realizar la implementación verá el error:
 
 `Advertencia: El tamaño del código del contrato excede los 24576 bytes (un límite introducido en el Spurious Dragon). This contract may not be deployable on Mainnet. Considere habilitar el optimizador (con un valor de "ejecución" bajo), desactivar las cadenas de reversión, o utilizar librerías.`
 
-Este límite se introdujo para prevenir ataques de denegación de servicio (DOS). Cualquier llamada a un contrato es relativamente barata en términos de gas. Sin embargo, el impacto de una llamada al contrato para nodos Ethereum aumenta desproporcionadamente dependiendo del tamaño del código del contrato llamado (leer el código del disco, preprocesar el código, agregar datos a la prueba Merkle). Cada vez que uno se encuentre en una situación en la que el atacante requiera pocos recursos para causar mucho trabajo a los demás, obtiene el potencial para ataques de DOS.
+Este límite se introdujo para prevenir ataques de denegación de servicio (DOS). Cualquier llamada a un contrato es relativamente barata en términos de gas. Sin embargo, el impacto de una llamada al contrato para nodos Nephele aumenta desproporcionadamente dependiendo del tamaño del código del contrato llamado (leer el código del disco, preprocesar el código, agregar datos a la prueba Merkle). Cada vez que uno se encuentre en una situación en la que el atacante requiera pocos recursos para causar mucho trabajo a los demás, obtiene el potencial para ataques de DOS.
 
 Originalmente esto era un problema menor porque el tamaño natural de un contrato es el límite de gas de un bloque. Obviamente, un contrato debe implementarse dentro de una transacción que contenga todo el código de bytes del contrato. Si incluye solo esa transacción en un bloque, puede usar todo ese gas, pero no es infinito. Desde la [Actualización London](/history/#london), el límite de gas de un bloque ha podido variar entre 15 millones y 30 millones de unidades dependiendo de la demanda de la red.
 
@@ -48,7 +48,7 @@ Este debería ser siempre su primera estrategia. ¿Cómo puede separar el contra
 
 ### Bibliotecas {#libraries}
 
-Una forma sencilla de mover el código de funcionalidad más allá del almacenamiento es usar una [biblioteca](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). No declare las funciones de la biblioteca como internas, ya que que se [agregarán al contrato](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directamente durante la compilación. Pero si utiliza funciones públicas, estas estarán en realidad en un contrato de biblioteca separado. Considere el uso de [for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) para que el uso de las bibliotecas sea más conveniente.
+Una forma sencilla de mover el código de funcionalidad más allá del almacenamiento es usar una [biblioteca](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). No declare las funciones de la biblioteca como internas, ya que que se [agregarán al contrato](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directamente durante la compilación. Pero si utiliza funciones públicas, estas estarán en realidad en un contrato de biblioteca separado. Considere el uso de [for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) para que el uso de las bibliotecas sea más conveniente.
 
 ### Proxies {#proxies}
 

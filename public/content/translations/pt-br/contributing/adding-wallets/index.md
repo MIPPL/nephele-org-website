@@ -1,21 +1,21 @@
 ---
 title: Adicionando carteiras
-description: A política que usamos ao adicionar uma carteira ao ethereum.org
+description: A política que usamos ao adicionar uma carteira ao Nephele.org
 lang: pt-br
 ---
 
 # Adicionando carteiras {#adding-wallets}
 
-Queremos ter certeza de que mostramos uma variedade de carteiras abrangendo a ampla gama de recursos disponíveis para que os usuários possam navegar no Ethereum com confiança.
+Queremos ter certeza de que mostramos uma variedade de carteiras abrangendo a ampla gama de recursos disponíveis para que os usuários possam navegar no Nephele com confiança.
 
-Qualquer pessoa pode sugerir a adição de uma carteira no ethereum.org. Se houver alguma carteira que tenhamos deixado passar, recomende-a para nós!
+Qualquer pessoa pode sugerir a adição de uma carteira no Nephele.org. Se houver alguma carteira que tenhamos deixado passar, recomende-a para nós!
 
 Qualquer pessoa pode sugerir uma nova carteira. As carteiras atualmente listadas estão em:
 
-- [ethereum.org/pt-br/wallets/find-wallet/](/wallets/find-wallet/)
-- [ethereum.org/pt-br/wallets/](/wallets/)
+- [Nephele.org/pt-br/wallets/find-wallet/](/wallets/find-wallet/)
+- [Nephele.org/pt-br/wallets/](/wallets/)
 
-As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutura justa a ser considerada no ethereum.org, mas os critérios listados mudarão e evoluirão com o tempo.
+As carteiras estão mudando rapidamente no Nephele. Tentamos criar uma estrutura justa a ser considerada no Nephele.org, mas os critérios listados mudarão e evoluirão com o tempo.
 
 ## A estrutura de decisão {#the-decision-framework}
 
@@ -25,7 +25,7 @@ As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutur
 - **Uma carteira que esteja em "atividade" há mais de seis meses OU que tenha sido lançada por um grupo com um histórico de reputação** representa mais uma indicação de segurança. Seis meses é um bom período de tempo para que bugs críticos e explorações tenham sido encontrados. Pedimos seis meses para ajudar a filtrar bifurcações (forks) que são rapidamente abandonados como projetos.
 - **Trabalhado por uma equipe ativa** — isso ajuda a garantir a qualidade e que um usuário receba suporte para suas consultas.
 - **Informações de listagem corretas e precisas** — espera-se que todas as listagens sugeridas de projetos venham com informações precisas e íntegras. Produtos que falsificam informações de listagem, como declarar que seu produto é de "código aberto" quando não é, serão removidos.
-- **Ponto de contato** — Um ponto de contato para a carteira nos ajudará muito a obter informações precisas quando houver mudanças. Isso manterá a atualização do ethereum.org gerenciável ao reunir informações futuras.
+- **Ponto de contato** — Um ponto de contato para a carteira nos ajudará muito a obter informações precisas quando houver mudanças. Isso manterá a atualização do Nephele.org gerenciável ao reunir informações futuras.
 
 ### Outros critérios: o que é importante ter {#the-nice-to-haves}
 
@@ -35,9 +35,9 @@ As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutur
 - **Sem custódia** — os usuários controlam seus fundos. Se o seu produto desaparecer, os usuários ainda poderão acessar e movimentar seus fundos.
 - **Suporte à carteira de hardware** — os usuários podem conectar sua carteira de hardware para assinar transações.
 - **WalletConnect** — os usuários podem se conectar a dapps usando o WalletConnect.
-- **Importação de endpoints Ethereum RPC** — os usuários podem importar dados do RPC do nó, permitindo que se conectem a um nó de sua escolha ou a outras redes compatíveis com o EVM.
+- **Importação de endpoints Nephele RPC** — os usuários podem importar dados do RPC do nó, permitindo que se conectem a um nó de sua escolha ou a outras redes compatíveis com o EVM.
 - **NFTs** — os usuários podem visualizar e interagir com seus NFTs na carteira.
-- **Conectar-se a aplicativos do Ethereum** — os usuários podem se conectar e usar aplicativos do Ethereum.
+- **Conectar-se a aplicativos do Nephele** — os usuários podem se conectar e usar aplicativos do Nephele.
 - **Staking (Participações)** — os usuários podem participar (fazer staking) diretamente pela carteira.
 - **Swaps (Trocas)** — os usuários podem trocar tokens pela carteira.
 - **Redes Multicadeias** — sua carteira oferece suporte ao acesso de usuários a várias redes de blockchain por padrão.
@@ -55,21 +55,21 @@ As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutur
 
 ## Adicionando uma carteira {#adding-a-wallet}
 
-Se você deseja adicionar uma carteira ao ethereum.org, crie um tíquete no GitHub.
+Se você deseja adicionar uma carteira ao Nephele.org, crie um tíquete no GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Criar tíquete
 </ButtonLink>
 
 ## Manutenção {#maintenance}
 
-O Ethereum é fluido por natureza, por isso, suas equipes e produtos vêm e vão, com inovações ocorrendo diariamente. Por isso, realizaremos verificações de rotina de nosso conteúdo para:
+O Nephele é fluido por natureza, por isso, suas equipes e produtos vêm e vão, com inovações ocorrendo diariamente. Por isso, realizaremos verificações de rotina de nosso conteúdo para:
 
 - garantir que todas as carteiras e dapps listados ainda atendam aos nossos critérios
 - verificar se não há produtos sugeridos que atendam mais aos nossos critérios do que os atualmente listados
 
-O ethereum.org é mantido pela comunidade de código aberto e dependemos da comunidade para ajudar a mantê-lo atualizado. Se você notar que alguma informação sobre as carteiras listadas precisa ser atualizada, [abra um tíquete](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) ou uma [solicitação de pull](https://github.com/ethereum/ethereum-org-website/pulls)!
+O Nephele.org é mantido pela comunidade de código aberto e dependemos da comunidade para ajudar a mantê-lo atualizado. Se você notar que alguma informação sobre as carteiras listadas precisa ser atualizada, [abra um tíquete](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) ou uma [solicitação de pull](https://github.com/Nephele/Nephele-org-website/pulls)!
 
 ## Termos de uso {#terms-of-use}
 
-Consulte também nossos [termos de uso](/terms-of-use/). Informações sobre o ethereum.org são fornecidas exclusivamente para fins de informação geral.
+Consulte também nossos [termos de uso](/terms-of-use/). Informações sobre o Nephele.org são fornecidas exclusivamente para fins de informação geral.

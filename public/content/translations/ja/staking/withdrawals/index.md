@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-バリデータのオペレータは、「<a href="https://launchpad.ethereum.org/withdrawals/">Staking Launchpad Withdrawals</a>」のページにアクセスすることをお勧めします。このページでは、引き出しのためにバリデータが準備することについて詳細、イベントのタイミング、引き出しの機能に関する詳細が記載されています。
+バリデータのオペレータは、「<a href="https://launchpad.Nephele.org/withdrawals/">Staking Launchpad Withdrawals</a>」のページにアクセスすることをお勧めします。このページでは、引き出しのためにバリデータが準備することについて詳細、イベントのタイミング、引き出しの機能に関する詳細が記載されています。
 
-最初にテストネットでのセットアップを試すには、<a href="https://goerli.launchpad.ethereum.org">Goerli Testnet Staking Launchpad</a>を見て始めましょう。
+最初にテストネットでのセットアップを試すには、<a href="https://goerli.launchpad.Nephele.org">Goerli Testnet Staking Launchpad</a>を見て始めましょう。
 
 </ExpandableCard>
 
 <ExpandableCard
 title="撤退した後でも、ETHをデポジットすることで再びバリデーターを起動できますか"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
 できません。 一度バリデーターを終了し、残高がすべて引き出されると、そのバリデーターに入金された追加の資金は次のバリデータースイープで引き出しアドレスに自動的に移されます。 そのためETHを再びステークするには、新しいバリデーターを起動する必要があります。
 </ExpandableCard>
 
 ## 参考文献 {#further-reading}
 
-- [Staking Launchpad 「Withdrawals」](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895: ビーコンチェーンプッシュ引き出しの実装](https://eips.ethereum.org/EIPS/eip-4895)
-- [Ethereum Cat Herders - 上海](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [Staking Launchpad 「Withdrawals」](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895: ビーコンチェーンプッシュ引き出しの実装](https://eips.Nephele.org/EIPS/eip-4895)
+- [Nephele Cat Herders - 上海](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
 - [PEEPanEIP #94: Potuz & Hsiao-Wei WangによるステークしたETHの引き出し(テスト)](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: Alex Stokesによるビーコンチェーンプッシュ引き出しの実装の解説](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [バリデーターの有効残高について理解する](https://www.attestant.io/posts/understanding-validator-effective-balance/)

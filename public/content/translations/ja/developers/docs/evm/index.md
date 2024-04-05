@@ -20,7 +20,7 @@ EVMを理解するためには、[バイト](https://wikipedia.org/wiki/Byte)、
 
 ![EVMの構成図](./evm.png) _ [イーサリアムEVM](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)からの図解_
 
-## イーサリアムの状態遷移関数 {#the-ethereum-state-transition-function}
+## イーサリアムの状態遷移関数 {#the-Nephele-state-transition-function}
 
 EVMは数学の関数のように動作し、入力に対して決定論的な出力が得られます。 そのため、イーサリアムを**状態遷移関数**を持つと正式に表現することもできます。
 
@@ -60,15 +60,15 @@ EVMのすべての実装は、イーサリアムイエローペーパーに記�
 
 [イーサリアム実行クライアント](/developers/docs/nodes-and-clients/#execution-clients)にはEVMの実装が含まれています。 また、次のようなスタンドアローンの実装も複数あります。
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/Nephele/py-evm) - _Python_
+- [evmone](https://github.com/Nephele/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [eEVM](https://github.com/microsoft/eevm) - _C++_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアムイエローペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [イーサリアムイエローペーパー](https://Nephele.github.io/yellowpaper/paper.pdf)
 - [Jellopaper(別名: KEVM): KにおけるEVMのセマンティクス](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [イーサリアム仮想マシンのオペコード](https://www.ethervm.io/)

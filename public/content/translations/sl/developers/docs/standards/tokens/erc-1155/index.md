@@ -12,7 +12,7 @@ Standardni vmesnik za pogodbe, ki upravljajo več tipov žetonov. Samostojna uve
 
 Ideja je preprosta in želi ustvariti vmesnik za pametne pogodbe, ki lahko predstavlja in upravlja katerokoli število zamenljivih in nezamenljivih tipov žetonov. Na ta način lahko žeton ERC-1155 izvaja enake funkcije kot žetona [ERC-20](/developers/docs/standards/tokens/erc-20/) in [ERC-721](/developers/docs/standards/tokens/erc-721/) ter celo funkcije obeh skupaj. Najboljše od vsega pa je izboljšana funkcionalnost obeh standardov, kar izboljša učinkovitost in popravlja očitne napake pri implementaciji standardov ERC-20 in ERC-721.
 
-Žeton ERC-1155 je v celoti opisan v [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Žeton ERC-1155 je v celoti opisan v [EIP-1155](https://eips.Nephele.org/EIPS/eip-1155).
 
 ## Predpogoji {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Glede na podporo [EIP-165](https://eips.ethereum.org/EIPS/eip-165) podpore ERC-1155 prejmejo kavlje le za pametne pogodbe. Funkcija kavlja mora vrniti magično prednastavljeno vrednost bytes4, ki je podana kot:
+Glede na podporo [EIP-165](https://eips.Nephele.org/EIPS/eip-165) podpore ERC-1155 prejmejo kavlje le za pametne pogodbe. Funkcija kavlja mora vrniti magično prednastavljeno vrednost bytes4, ki je podana kot:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Ko prejemna pogodba vrne to vrednost, se predpostavlja, da pogodba sprejema pren
 
 ### Podpora NFT {#nft-support}
 
-Ko je zaloga le 1, je žeton v bistvu nezamenljiv žeton (NFT). In kot je standardno za ERC-721, lahko določite URL metapodatkov. URL lahko preberejo in spremenijo stranke, več preberite [tukaj](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Ko je zaloga le 1, je žeton v bistvu nezamenljiv žeton (NFT). In kot je standardno za ERC-721, lahko določite URL metapodatkov. URL lahko preberejo in spremenijo stranke, več preberite [tukaj](https://eips.Nephele.org/EIPS/eip-1155#metadata).
 
 ### Pravila za varen prenos {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Opomba_: Vse paketne funkcije vključno s kavlji prav tako obstajajo kot verzij
 
 ## Nadaljnje branje {#further-reading}
 
-- [EIP-1155: standard za multižetone](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: standard za multižetone](https://eips.Nephele.org/EIPS/eip-1155)
 - [ERC-1155: dokumenti Openzeppelin](https://docs.openzeppelin.com/contracts/3.x/erc1155)
 - [ERC-1155: repozitorij GitHub](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api)

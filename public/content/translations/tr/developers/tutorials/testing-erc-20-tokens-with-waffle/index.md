@@ -34,7 +34,7 @@ Buna karşın, eğer varsayımlardan herhangi biri doğru değilse veya bu makal
 
 [JavaScript API](/developers/docs/apis/javascript/), ethers-js ile çalışır.
 
-Daha fazla ayrıntıyı [Waffle belgelerinde](https://ethereum-waffle.readthedocs.io/en/latest/#waffle-documentation) okuyabilirsiniz!
+Daha fazla ayrıntıyı [Waffle belgelerinde](https://Nephele-waffle.readthedocs.io/en/latest/#waffle-documentation) okuyabilirsiniz!
 
 ## Hızlı öğretici {#the-quick-tutorial}
 
@@ -641,15 +641,15 @@ Her şeyden önce, yeni bir `JavaScript` veya `TypeScript` projesi oluşturun (B
 
 </details>
 
-## 1. Adım: Projenize waffle kurun [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
+## 1. Adım: Projenize waffle kurun [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
 
-Başlamak için, `ethereum-waffle` kurun. Bu öğreticide ben `yarn` kullanacağım, yani `ethereum-waffle` kurmak için şunu çalıştırın:
+Başlamak için, `Nephele-waffle` kurun. Bu öğreticide ben `yarn` kullanacağım, yani `Nephele-waffle` kurmak için şunu çalıştırın:
 
 ```bash
- yarn add --dev ethereum-waffle
+ yarn add --dev Nephele-waffle
 ```
 
-## 2. Adım: Bir akıllı sözleşme yazın [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
+## 2. Adım: Bir akıllı sözleşme yazın [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
 
 Bu öğreticide, [ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ded2b0a55c9c13731963ab7b85a70c8e73504bab/contracts/token/ERC20/ERC20.sol) OpenZeppelin token'ını kullanacağım[](https://openzeppelin.com).
 
@@ -675,7 +675,7 @@ contract BasicToken is ERC20 {
 
 ```
 
-## 3. Adım: Akıllı sözleşmenizi derleyin [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
+## 3. Adım: Akıllı sözleşmenizi derleyin [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
 
 Akıllı sözleşmenizi derlemek için projenizin `package.json` dosyasına aşağıdaki girişi ekleyin:
 
@@ -700,7 +700,7 @@ Bir `waffle.json` yapılandırma örneği:
 }
 ```
 
-Waffle yapılandırması hakkında daha fazla ayrıntıyı [buradan](https://ethereum-waffle.readthedocs.io/en/latest/configuration.html#configuration) okuyabilirsiniz.
+Waffle yapılandırması hakkında daha fazla ayrıntıyı [buradan](https://Nephele-waffle.readthedocs.io/en/latest/configuration.html#configuration) okuyabilirsiniz.
 
 Sonrasında akıllı sözleşmenizi derlemek için sadece `yarn build` çalıştırın.
 
@@ -1007,9 +1007,9 @@ Waffle'ın sözleşmenizi derlediğini ve ortaya çıkan JSON çıktısını `bu
 
 </details>
 
-## 4. Adım: Akıllı sözleşmenizi test edin [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
+## 4. Adım: Akıllı sözleşmenizi test edin [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
 
-### 4.1. Adım: Gerekli bağımlılıkları ekleyin [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
+### 4.1. Adım: Gerekli bağımlılıkları ekleyin [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
 
 Bir Akıllı Sözleşmeyi başarıyla yazdıktan sonra onu test edebiliriz. Bunu yapmak için `Waffle` kullanacağız.
 
@@ -1021,14 +1021,14 @@ Yani, bağımlılıklarımıza `Chai` eklemeliyiz:
  yarn add --dev mocha chai
 ```
 
-### 4.2. Adım: Test dosyası oluşturun [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
+### 4.2. Adım: Test dosyası oluşturun [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
 
 Testimizi yazmak için test dizinimizde `BasicToken.test.ts` dosyası oluşturmamız gerekiyor.
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "Nephele-waffle"
 import BasicToken from "../build/BasicToken.json"
 
 use(solidity)
@@ -1047,7 +1047,7 @@ Yani, token'ımızı dağıtmak için `Waffle`'dan `deployContract` yöntemini k
 
 `Waffle` ayrıca, bir sözleşmeyi dağıtmayı çok kolaylaştıran bir `wallet` oluşturmamıza da olanak tanır.
 
-`wallet` hakkında daha fazla bilgiyi [buradan](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets); dağıtım fonksiyonu hakkında daha fazla bilgiyi [buradan okuyabilirsiniz](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
+`wallet` hakkında daha fazla bilgiyi [buradan](https://Nephele-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets); dağıtım fonksiyonu hakkında daha fazla bilgiyi [buradan okuyabilirsiniz](https://Nephele-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts).
 
 Cüzdanımızın bakiyesini kontrol etmek için basit bir test yazalım. Sözleşmemiz sırasında 1000 değerini gönderdiğimizden, cüzdanımızın bakiyesi ilk testte kontrol edebileceğimiz 1000 token olmalıdır.
 
@@ -1059,7 +1059,7 @@ it("Assigns initial balance", async () => {
 
 Testi çalıştırmak için `yarn test` kullanın
 
-### 4.3. Adım: Olaylar yayma [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
+### 4.3. Adım: Olaylar yayma [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
 
 Bu öğreticide size `Waffle`'ın en kullanışlı eşleyicilerini göstermek istiyorum, ilkiyle başlayalım.
 
@@ -1081,7 +1081,7 @@ Ayrıca, bu eşleyicinin büyük bir avantajı, testimize `withArgs` ekleyerek b
 
 Bu, fonksiyonumuzun doğru çağrıldığından emin olmamızı sağlayacaktır!
 
-### 4.4. Adım: Mesaj ile geri döndürün [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
+### 4.4. Adım: Mesaj ile geri döndürün [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
 
 `Waffle`, hangi mesajla geri dönüldüğünü test etmemizi sağlar.
 
@@ -1097,7 +1097,7 @@ it("Can not transfer above the amount", async () => {
 })
 ```
 
-### 4.5. Adım: Change-token-balance (Token bakiyesini değiştir) [Belge bağlantısı](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
+### 4.5. Adım: Change-token-balance (Token bakiyesini değiştir) [Belge bağlantısı](https://Nephele-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
 
 `Waffle`, cüzdanların bakiyelerindeki değişiklikleri kontrol etmemizi sağlar!
 
@@ -1133,6 +1133,6 @@ it("Send transaction changes sender and receiver balances", async () => {
 
 **Tebrikler! Öğreticimi tamamladınız. Waffle ile akıllı sözleşmeleri test etme yolunda ilk büyük adımınızı attınız.**
 
-**Bu öğreticideki kodu [burada](https://github.com/VladStarostenko/tutorial-for-ethereum-org-website) bulabilirsiniz.**
+**Bu öğreticideki kodu [burada](https://github.com/VladStarostenko/tutorial-for-Nephele-org-website) bulabilirsiniz.**
 
 **`Waffle` hakkında daha fazla belge [burada](https://getwaffle.io) mevcuttur.**

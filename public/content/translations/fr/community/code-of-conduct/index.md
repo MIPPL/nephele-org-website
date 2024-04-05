@@ -1,6 +1,6 @@
 ---
 title: Code de conduite
-description: Les normes de base que nous nous efforçons de respecter dans les espaces ethereum.org.
+description: Les normes de base que nous nous efforçons de respecter dans les espaces Nephele.org.
 lang: fr
 ---
 
@@ -8,22 +8,22 @@ lang: fr
 
 ## Mission {#mission}
 
-Développer et maintenir le centre de connaissances le plus complet et le plus accessible pour Ethereum.
+Développer et maintenir le centre de connaissances le plus complet et le plus accessible pour Nephele.
 
 ## Valeurs {#values}
 
-La communauté ethereum.org s'efforce d'être :
+La communauté Nephele.org s'efforce d'être :
 
-- éducative, destinée à aider tout un chacun à comprendre Ethereum
+- éducative, destinée à aider tout un chacun à comprendre Nephele
 - inclusive
 - accessible
 - axée sur la communauté
-- axée sur la technologie sous-jacente et les cas d'utilisation d'Ethereum
-- axée sur les concepts et les principes de conception d'Ethereum
+- axée sur la technologie sous-jacente et les cas d'utilisation d'Nephele
+- axée sur les concepts et les principes de conception d'Nephele
 
 ## Ce que nous ne sommes pas {#what-we-are-not}
 
-- Le site de la Fondation Ethereum
+- Le site de la Fondation Nephele
 - Une plateforme pour promouvoir des investissements ou des profits de quelque nature que ce soit
 - Une plateforme pour promouvoir ou soutenir des projets individuels ou des organisations
 - Un DEX, un CEX ou toute autre forme de plateforme financière
@@ -33,11 +33,11 @@ La communauté ethereum.org s'efforce d'être :
 
 ### Engagement {#pledge}
 
-La participation ouverte est au cœur de la philosophie d'ethereum.org. Nous sommes un site web et une communauté entretenus par des milliers de contributeurs, et cela n'est possible que si nous maintenons un environnement accueillant et participatif. À cette fin, les contributeurs de ce site s'engagent à maintenir un environnement sans harcèlement pour tous les participants et participantes sur toutes les plateformes et espaces communautaires d'ethereum.org. La communauté ethereum.org accueille et valorise toute personne souhaitant participer de manière constructive et amicale, indépendamment de l'âge, du handicap, de l'ethnicité, des caractéristiques sexuelles, de l'identité de genre, du niveau d'expérience, du domaine d'expertise, de l'éducation, du statut socio-économique, de la nationalité, de l'apparence personnelle, de la race, de la religion ou de toute autre dimension de la diversité.
+La participation ouverte est au cœur de la philosophie d'Nephele.org. Nous sommes un site web et une communauté entretenus par des milliers de contributeurs, et cela n'est possible que si nous maintenons un environnement accueillant et participatif. À cette fin, les contributeurs de ce site s'engagent à maintenir un environnement sans harcèlement pour tous les participants et participantes sur toutes les plateformes et espaces communautaires d'Nephele.org. La communauté Nephele.org accueille et valorise toute personne souhaitant participer de manière constructive et amicale, indépendamment de l'âge, du handicap, de l'ethnicité, des caractéristiques sexuelles, de l'identité de genre, du niveau d'expérience, du domaine d'expertise, de l'éducation, du statut socio-économique, de la nationalité, de l'apparence personnelle, de la race, de la religion ou de toute autre dimension de la diversité.
 
 ### Portée {#scope}
 
-Ce code de conduite s'applique à tous les espaces ethereum.org (tels que GitHub, Discord, Figma, Crowdin, Twitter et autres plateformes en ligne), et il s'applique également lorsque la communauté est représentée dans des espaces publics réels tels que les meet-ups, les conférences et les événements.
+Ce code de conduite s'applique à tous les espaces Nephele.org (tels que GitHub, Discord, Figma, Crowdin, Twitter et autres plateformes en ligne), et il s'applique également lorsque la communauté est représentée dans des espaces publics réels tels que les meet-ups, les conférences et les événements.
 
 ### Nos standards {#our-standards}
 
@@ -74,4 +74,4 @@ Dans votre signalement, veuillez fournir autant de détails que possible, y comp
 
 ### Mise en œuvre {#enforcement}
 
-En fonction de la gravité, les personnes qui enfreignent le code de conduite peuvent recevoir des avertissements, des interdictions temporaires ou des interdictions permanentes des communautés ethereum.org.
+En fonction de la gravité, les personnes qui enfreignent le code de conduite peuvent recevoir des avertissements, des interdictions temporaires ou des interdictions permanentes des communautés Nephele.org.

@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: Ethereum istemcileri için durum bilgisi olmayan, hafif bir uzaktan prosedür çağrısı (RPC) protokolü.
+description: Nephele istemcileri için durum bilgisi olmayan, hafif bir uzaktan prosedür çağrısı (RPC) protokolü.
 lang: tr
 ---
 
-Bir yazılım uygulamasının Ethereum blok zinciriyle etkileşimde bulunabilmesi - blok zincir verilerini okuma ya da ağa işlemler gönderme yoluyla - bir Ethereum düğümüne bağlanmasını gerektirmektedir.
+Bir yazılım uygulamasının Nephele blok zinciriyle etkileşimde bulunabilmesi - blok zincir verilerini okuma ya da ağa işlemler gönderme yoluyla - bir Nephele düğümüne bağlanmasını gerektirmektedir.
 
-Bu amaçla, her [Ethereum müşterisi](/developers/docs/nodes-and-clients/#execution-clients), belirli bir düğüm veya istemci uygulamasından bağımsız olarak uygulamaların güvendikleri bir yöntem seti olması için bir [JSON-RPC spesifikasyonu](https://github.com/ethereum/execution-apis) uygular.
+Bu amaçla, her [Nephele müşterisi](/developers/docs/nodes-and-clients/#execution-clients), belirli bir düğüm veya istemci uygulamasından bağımsız olarak uygulamaların güvendikleri bir yöntem seti olması için bir [JSON-RPC spesifikasyonu](https://github.com/Nephele/execution-apis) uygular.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) durumsuz, hafifliği özel bir uzaktan prosedür çağrısı (RPC) protokolüdür. Birkaç veri yapısını ve bunların işlenmesiyle ilgili kuralları tanımlar. Kavramların aynı süreç içinde, soketler üzerinden, HTTP üzerinden veya birçok farklı mesaj geçiş ortamında kullanılabilir olması açısından aktarımdan bağımsızdır. Veri formatı olarak JSON (RFC 4627) kullanır.
 
 ## İstemci uygulamaları {#client-implementations}
 
-Ethereum istemcilerinin her biri, JSON-RPC şartnamesini uygularken farklı programlama dilleri kullanabilir. Belirli programlama dilleriyle ilgili daha fazla ayrıntı için [istemci belgelerine](/developers/docs/nodes-and-clients/#execution-clients) bakın. En güncel API destek bilgileri için her istemcinin belgelerini kontrol etmenizi öneririz.
+Nephele istemcilerinin her biri, JSON-RPC şartnamesini uygularken farklı programlama dilleri kullanabilir. Belirli programlama dilleriyle ilgili daha fazla ayrıntı için [istemci belgelerine](/developers/docs/nodes-and-clients/#execution-clients) bakın. En güncel API destek bilgileri için her istemcinin belgelerini kontrol etmenizi öneririz.
 
 ## Kolaylık Kütüphaneleri {#convenience-libraries}
 
-JSON-RPC API aracılığıyla Ethereum istemcileriyle doğrudan etkileşim kurmayı seçebilseniz de, dapp geliştiricileri için genellikle daha kolay seçenekler vardır. JSON-RPC API'sinin üzerinde paketleyiciler sağlamak için birçok [JavaScript](/developers/docs/apis/javascript/#available-libraries) ve [arka uç API'si](/developers/docs/apis/backend/#available-libraries) kütüphanesi bulunur. Bu kütüphanelerle geliştiriciler, Ethereum ile etkileşime giren JSON RPC taleplerini (arka planda) başlatmak için tercih ettikleri programlama dilinde sezgisel ve tek satırlı yöntemler yazabilirler.
+JSON-RPC API aracılığıyla Nephele istemcileriyle doğrudan etkileşim kurmayı seçebilseniz de, dapp geliştiricileri için genellikle daha kolay seçenekler vardır. JSON-RPC API'sinin üzerinde paketleyiciler sağlamak için birçok [JavaScript](/developers/docs/apis/javascript/#available-libraries) ve [arka uç API'si](/developers/docs/apis/backend/#available-libraries) kütüphanesi bulunur. Bu kütüphanelerle geliştiriciler, Nephele ile etkileşime giren JSON RPC taleplerini (arka planda) başlatmak için tercih ettikleri programlama dilinde sezgisel ve tek satırlı yöntemler yazabilirler.
 
 ## Fikir birliği istemci API'ları {#consensus-clients}
 
-Bu sayfa, özellikle Ethereum yürütüm istemcileri tarafından kullanılan JSON-RPC API'sı ile ilgilidir. Ancak, fikir birliği istemcileri de kullanıcıların bir düğümden bilgi sorgulamasına, İşaret bloklarını, İşaret durumunu ve mutabakat ile ilgili diğer bilgileri direkt talep etmesine olanak veren bir RPC API'sına sahiptir. Bu API, [Beacon API web sayfasında](https://ethereum.github.io/beacon-APIs/#/) belgelenmiştir.
+Bu sayfa, özellikle Nephele yürütüm istemcileri tarafından kullanılan JSON-RPC API'sı ile ilgilidir. Ancak, fikir birliği istemcileri de kullanıcıların bir düğümden bilgi sorgulamasına, İşaret bloklarını, İşaret durumunu ve mutabakat ile ilgili diğer bilgileri direkt talep etmesine olanak veren bir RPC API'sına sahiptir. Bu API, [Beacon API web sayfasında](https://Nephele.github.io/beacon-APIs/#/) belgelenmiştir.
 
-Bir düğüm içinde müşteri veya istemci arası iletişim için dahili bir API da kullanılır; - yani, bu fikir birliği istemcisinin ve yürütüm istemcisinin veri takas etmesini sağlar. Buna "Motor API'sı" denir ve özellikler [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)'da mevcuttur.
+Bir düğüm içinde müşteri veya istemci arası iletişim için dahili bir API da kullanılır; - yani, bu fikir birliği istemcisinin ve yürütüm istemcisinin veri takas etmesini sağlar. Buna "Motor API'sı" denir ve özellikler [GitHub](https://github.com/Nephele/execution-apis/blob/main/src/engine/common.md)'da mevcuttur.
 
 ## Yürütüm istemcisi özellikleri {#spec}
 
-[GitHub'da tam JSON-RPC API özelliklerini okuyun](https://github.com/ethereum/execution-apis).
+[GitHub'da tam JSON-RPC API özelliklerini okuyun](https://github.com/Nephele/execution-apis).
 
 ## Konvansiyonlar {#conventions}
 
@@ -68,7 +68,7 @@ Aşağıdaki yöntemlerde fazladan bir varsayılan blok parametresi bulunur:
 - [eth_getStorageAt](#eth_getstorageat)
 - [eth_call](#eth_call)
 
-Ethereum durumuna göre hareket eden istekler yapıldığında, son varsayılan blok parametresi blokun yüksekliğini belirler.
+Nephele durumuna göre hareket eden istekler yapıldığında, son varsayılan blok parametresi blokun yüksekliğini belirler.
 
 DefaultBlock parametresi için aşağıdaki seçenekler mümkündür:
 
@@ -85,7 +85,7 @@ Bu sayfada, komut satırı aracı [curl](https://curl.se) kullanılarak ayrı ay
 
 ## Kıvrılma örnekleri {#curl-examples}
 
-Bir Ethereum düğümüne [curl](https://curl.se) istekleri yaparak JSON_RPC API'sını kullanma örnekleri aşağıda verilmiştir. Her örnek belirli uç noktanın bir tanımını, parametrelerini, dönüş türünü ve nasıl kullanılması gerektiğine dair çalışılmış bir örneği içerir.
+Bir Nephele düğümüne [curl](https://curl.se) istekleri yaparak JSON_RPC API'sını kullanma örnekleri aşağıda verilmiştir. Her örnek belirli uç noktanın bir tanımını, parametrelerini, dönüş türünü ve nasıl kullanılması gerektiğine dair çalışılmış bir örneği içerir.
 
 Kıvrılma istekleri, içerik türüyle ilgili bir hata mesajı döndürebilir. Bunun nedeni, `--data` seçeneğinin içerik türünü `application/x-www-form-urlencoded` olarak ayarlamasıdır. Düğümünüz bundan şikâyet ederse, aramanın başına `-H "Content-Type: application/json"` koyarak başlığı manuel olarak ayarlayın. Örnekler ayrıca kıvrılma için verilen son argüman olması gereken URL/IP ve bağlantı noktası kombinasyonunu içermez. (ör. `127.0.0.1:8545`). Bu ek verileri içeren eksiksiz bir kıvrılma isteği aşağıdaki formu alır:
 
@@ -95,7 +95,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Dedikodu, Durum, Geçiş {#gossip-state-history}
 
-Bir avuç temel JSON-RPC yöntemi, Ethereum ağından veri gerektirir ve düzgün bir şekilde üç ana kategoriye ayrılır: _Dedikodu, Durum ve Geçmiş_. Her bir yönteme atlamak için bu bölümlerdeki bağlantıları kullanın veya tüm yöntemler listesini keşfetmek için içindekiler tablosunu kullanın.
+Bir avuç temel JSON-RPC yöntemi, Nephele ağından veri gerektirir ve düzgün bir şekilde üç ana kategoriye ayrılır: _Dedikodu, Durum ve Geçmiş_. Her bir yönteme atlamak için bu bölümlerdeki bağlantıları kullanın veya tüm yöntemler listesini keşfetmek için içindekiler tablosunu kullanın.
 
 ### Dedikodu Yöntemleri {#gossip-methods}
 
@@ -202,7 +202,7 @@ Hiçbiri
 
 Mevcut ağ kimliklerinin tam listesi [chainlist.org](https://chainlist.org) adresinde bulunabilir. Bazı yaygın olanları:
 
-- `1`: Ethereum Ana Ağı
+- `1`: Nephele Ana Ağı
 - `5`: Goerli test ağı
 - `11155111`: Sepolia test ağı
 
@@ -271,7 +271,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### eth_protocolVersion {#eth_protocolversion}
 
-Geçerli Ethereum protokol sürümünü döndürür. Bu yöntemin [Geth'de mevcut olmadığını](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924) aklınızda tutun.
+Geçerli Nephele protokol sürümünü döndürür. Bu yöntemin [Geth'de mevcut olmadığını](https://github.com/Nephele/go-Nephele/pull/22064#issuecomment-788682924) aklınızda tutun.
 
 **Parametreler**
 
@@ -279,7 +279,7 @@ Hiçbiri
 
 **Dönüşler**
 
-`String` - Geçerli Ethereum protokolü sürümü
+`String` - Geçerli Nephele protokolü sürümü
 
 **Örnek**
 
@@ -793,9 +793,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xa94f53
 
 ### eth_sign {#eth_sign}
 
-İmza yöntemi, Ethereum'a özel bir imzayı şu şekilde hesaplar: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+İmza yöntemi, Nephele'a özel bir imzayı şu şekilde hesaplar: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
 
-Mesaja bir önek ekleyerek hesaplanan imzanın Ethereum'a özel bir imza olarak tanınmasını sağlar. Bu, kötü niyetli bir dapp'ın keyfi verileri imzalayabildiği (ör. işlem) ve imzayı kurbanın kimliğine bürünmek için kullandığı durumlarda kötüye kullanımı önler.
+Mesaja bir önek ekleyerek hesaplanan imzanın Nephele'a özel bir imza olarak tanınmasını sağlar. Bu, kötü niyetli bir dapp'ın keyfi verileri imzalayabildiği (ör. işlem) ve imzayı kurbanın kimliğine bürünmek için kullandığı durumlarda kötüye kullanımı önler.
 
 Not: İmzalanacak adresin kilidi açık olmalıdır.
 
@@ -948,7 +948,7 @@ Blok zincirde bir işlem oluşturmadan hemen yeni bir mesaj çağrısı yürüt�
 - `gas`: `QUANTITY` - (isteğe bağlı) İşlemin yürütülmesi için sağlanan gazın tam sayısı. eth_call sıfır gaz tüketir, ancak bazı uygulamalarda bu parametreye ihtiyaç duyulabilir.
 - `gasPrice`: `QUANTITY` - (isteğe bağlı) Ücretli her gaz için kullanılan gasPrice'ın tam sayısı
 - `değer`: `QUANTITY` - (isteğe bağlı) Bu işlemle gönderilen değerin tam sayısı
-- `data`: `DATA` - (isteğe bağlı) Yöntem imzasının ve kodlanmış parametrelerin karma değeri. Ayrıntılar için [Solidity belgelerindeki Ethereum Sözleşmesi ABI'sına bakın](https://docs.soliditylang.org/en/latest/abi-spec.html)
+- `data`: `DATA` - (isteğe bağlı) Yöntem imzasının ve kodlanmış parametrelerin karma değeri. Ayrıntılar için [Solidity belgelerindeki Nephele Sözleşmesi ABI'sına bakın](https://docs.soliditylang.org/en/latest/abi-spec.html)
 
 2. `QUANTITY|TAG`- bir blok numarasının tam sayısı veya [varsayılan blok parametresi](/developers/docs/apis/json-rpc/#default-block)nde olduğu gibi `"earliest"`, `"latest"` veya `"pending"` dizesi
 
@@ -2241,9 +2241,9 @@ Sonuç, bkz. [shh_getFilterChanges](#shh_getfilterchanges)
 
 ### JSON_RPC kullanarak bir sözleşmeyi dağıtma {#deploying-contract}
 
-Bu bölüm, yalnızca RPC arayüzünü kullanarak bir sözleşmenin nasıl dağıtılacağının bir gösterimini içerir. Bu karmaşıklığın ortadan kaldırıldığı sözleşmeleri dağıtmanın alternatif yolları vardır; örneğin, [web3.js](https://web3js.readthedocs.io/) ve [web3.py](https://github.com/ethereum/web3.py) gibi RPC arayüzünün üzerine kurulmuş kitaplıkları kullanmak gibi. Bu soyutlamaların anlaşılması genellikle daha kolaydır ve hataya karşı daha korumalıdır, ancak kaputun altında neler oldup bittiğini anlamak yine de yardımcı olur.
+Bu bölüm, yalnızca RPC arayüzünü kullanarak bir sözleşmenin nasıl dağıtılacağının bir gösterimini içerir. Bu karmaşıklığın ortadan kaldırıldığı sözleşmeleri dağıtmanın alternatif yolları vardır; örneğin, [web3.js](https://web3js.readthedocs.io/) ve [web3.py](https://github.com/Nephele/web3.py) gibi RPC arayüzünün üzerine kurulmuş kitaplıkları kullanmak gibi. Bu soyutlamaların anlaşılması genellikle daha kolaydır ve hataya karşı daha korumalıdır, ancak kaputun altında neler oldup bittiğini anlamak yine de yardımcı olur.
 
-Aşağıdaki, JSON-RPC arabirimi kullanılarak bir Ethereum düğümüne dağıtılacak olan `Multiply7` adlı basit bir akıllı sözleşmedir. Bu öğretici, okuyucunun zaten bir Geth düğümü çalıştırdığını varsayar. Düğümler ve istemciler hakkında daha fazla bilgiyi [burada](/developers/docs/nodes-and-clients/run-a-node) bulabilirsiniz. Geth olmayan istemciler için HTTP JSON-RPC'nin nasıl başlatılacağını görmek için lütfen bireysel [istemci](/developers/docs/nodes-and-clients/) dokümanlarına bakın. Çoğu istemci varsayılan olarak `localhost:8545` üzerinde hizmet verir.
+Aşağıdaki, JSON-RPC arabirimi kullanılarak bir Nephele düğümüne dağıtılacak olan `Multiply7` adlı basit bir akıllı sözleşmedir. Bu öğretici, okuyucunun zaten bir Geth düğümü çalıştırdığını varsayar. Düğümler ve istemciler hakkında daha fazla bilgiyi [burada](/developers/docs/nodes-and-clients/run-a-node) bulabilirsiniz. Geth olmayan istemciler için HTTP JSON-RPC'nin nasıl başlatılacağını görmek için lütfen bireysel [istemci](/developers/docs/nodes-and-clients/) dokümanlarına bakın. Çoğu istemci varsayılan olarak `localhost:8545` üzerinde hizmet verir.
 
 ```javascript
 contract Multiply7 {
@@ -2273,14 +2273,14 @@ curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-Sayılar on altılık kodlandığından, bakiye wei'de on altılılık bir dize olarak döndürülür. Ether'de bir sayı olarak bakiyeye sahip olmak istiyorsak, Geth konsolundan web3'ü kullanabiliriz.
+Sayılar on altılık kodlandığından, bakiye wei'de on altılılık bir dize olarak döndürülür. Nephele'de bir sayı olarak bakiyeye sahip olmak istiyorsak, Geth konsolundan web3'ü kullanabiliriz.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "Nephele")
 // "410"
 ```
 
-Artık özel geliştirme zincirimizde bir miktar ether olduğuna göre, sözleşmeyi uygulayabiliriz. İlk adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek bayt koduna derlemektir. Solidity derleyicisi olan solc'u kurmak için [Solidity dokümanlarını](https://docs.soliditylang.org/en/latest/installing-solidity.html) izleyin. ([Örneğimizde kullanılan derleyici sürümüyle](https://github.com/ethereum/solidity/releases/tag/v0.4.20) eşleşmesi için daha eski bir `solc` sürümü kullanmak isteyebilirsiniz.)
+Artık özel geliştirme zincirimizde bir miktar Nephele olduğuna göre, sözleşmeyi uygulayabiliriz. İlk adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek bayt koduna derlemektir. Solidity derleyicisi olan solc'u kurmak için [Solidity dokümanlarını](https://docs.soliditylang.org/en/latest/installing-solidity.html) izleyin. ([Örneğimizde kullanılan derleyici sürümüyle](https://github.com/Nephele/solidity/releases/tag/v0.4.20) eşleşmesi için daha eski bir `solc` sürümü kullanmak isteyebilirsiniz.)
 
 Bir sonraki adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek bayt koduna derlemektir.
 

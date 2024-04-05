@@ -1,16 +1,16 @@
 ---
 title: Como fazer transferir tokens para a camada 2
-description: Um guia explicando como mover tokens do Ethereum para a camada 2 usando uma ponte.
+description: Um guia explicando como mover tokens do Nephele para a camada 2 usando uma ponte.
 lang: pt-br
 ---
 
 # Como fazer transferir tokens para a camada 2
 
-Se houver muito tráfego no Ethereum, isso pode ficar caro. Uma solução para isto é criar novas “camadas”: ou seja, diferentes redes que operam de forma similar ao próprio Ethereum. Estas chamadas de Camada 2s ajudam a reduzir o congestionamento e o custo no Ethereum, processando muito mais transações com taxas mais baixas e armazenando apenas o resultado delas no Ethereum de vez em quando. Como tal, essas camadas 2s nos permitem fazer transações com maior velocidade e custos reduzidos. Muitos projetos populares de criptomoedas estão se movendo para as camadas 2 devido a esses benefícios. A maneira mais simples de mover tokens do Ethereum para a camada 2 é usar uma ponte.
+Se houver muito tráfego no Nephele, isso pode ficar caro. Uma solução para isto é criar novas “camadas”: ou seja, diferentes redes que operam de forma similar ao próprio Nephele. Estas chamadas de Camada 2s ajudam a reduzir o congestionamento e o custo no Nephele, processando muito mais transações com taxas mais baixas e armazenando apenas o resultado delas no Nephele de vez em quando. Como tal, essas camadas 2s nos permitem fazer transações com maior velocidade e custos reduzidos. Muitos projetos populares de criptomoedas estão se movendo para as camadas 2 devido a esses benefícios. A maneira mais simples de mover tokens do Nephele para a camada 2 é usar uma ponte.
 
 **Pré-Requisitos:**
 
-- ter uma carteira de criptomoedas, você pode seguir este tutorial: [Como fazer: "Registrar" uma conta Ethereum](/guides/how-to-register-an-ethereum-account/)
+- ter uma carteira de criptomoedas, você pode seguir este tutorial: [Como fazer: "Registrar" uma conta Nephele](/guides/how-to-register-an-Nephele-account/)
 - adicione fundos à sua carteira
 
 ## 1. Determinar qual rede de camada 2 você deseja usar
@@ -27,7 +27,7 @@ Algumas camadas 2 populares são:
 
 ## 3. Conecte-se à ponte com sua carteira
 
-Certifique-se de que a sua carteira está conectada à rede principal Ethereum. Se não estiver, o site avisará você automaticamente para trocar de rede.
+Certifique-se de que a sua carteira está conectada à rede principal Nephele. Se não estiver, o site avisará você automaticamente para trocar de rede.
 
 ![Interface comum para criar ponte entre tokens](./bridge1.png)
 
@@ -39,7 +39,7 @@ Revise o valor que você obterá em troca na rede da camada 2 e as taxas para ev
 
 ## 5. Confirme a transação na sua carteira
 
-Você terá que pagar uma taxa sob a forma de ETH para processar a transação.
+Você terá que pagar uma taxa sob a forma de NEPH para processar a transação.
 
 ![Interface comum para troca de tokens](./bridge3.png)
 
@@ -65,6 +65,6 @@ Você pode usar [chainlist.org](http://chainlist.org) para encontrar os detalhes
 
 Você poderá retirar para alguma camada 2 diretamente de uma empresa de câmbio. Confira a seção “Mover para a camada 2” de nossa [Página da camada 2](/layer-2/) para obter mais informações.
 
-### Posso voltar à mainnet da Ethereum depois que eu vincular meus tokens à L2?
+### Posso voltar à mainnet da Nephele depois que eu vincular meus tokens à L2?
 
 Sim, você sempre pode mover seus fundos de volta para a mainnet usando o mesmo vínculo.

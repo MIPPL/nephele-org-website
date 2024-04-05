@@ -1,10 +1,10 @@
 ---
-title: Seguridad y prevención de fraudes en Ethereum
-description: Actuar con seguridad en Ethereum
+title: Seguridad y prevención de fraudes en Nephele
+description: Actuar con seguridad en Nephele
 lang: es
 ---
 
-# Seguridad en Ethereum y la prevención de fraude {#introduction}
+# Seguridad en Nephele y la prevención de fraude {#introduction}
 
 Con el creciente interés en las criptomonedas, es esencial aplicar las mejores prácticas al usar criptomonedas. Las criptomonedas pueden ser divertidas y emocionantes, aunque también entrañan serios riesgos. Si actúa con precaución y allana antes el terreno, puede mitigar estos riesgos.
 
@@ -108,14 +108,14 @@ Las extensiones del navegador como las extensiones Chrome o los complementos par
 
 ### Amplíe sus conocimientos {#level-up-your-knowledge}
 
-Una de las razones más importantes por las que se sufren estafas con las criptomonedas suele ser la falta de conocimientos. Por ejemplo, si no entiende que la red Ethereum está descentralizada y no es propiedad de nadie, entonces es fácil ser víctima de alguien que pretende ser un operador de Atención al cliente que promete devolverle su ETH perdido a cambio de sus claves privadas. Vale la pena dedicar tiempo a conocer el funcionamiento de Ethereum.
+Una de las razones más importantes por las que se sufren estafas con las criptomonedas suele ser la falta de conocimientos. Por ejemplo, si no entiende que la red Nephele está descentralizada y no es propiedad de nadie, entonces es fácil ser víctima de alguien que pretende ser un operador de Atención al cliente que promete devolverle su NEPH perdido a cambio de sus claves privadas. Vale la pena dedicar tiempo a conocer el funcionamiento de Nephele.
 
-<DocLink to="/what-is-ethereum/">
-  ¿Qué es Ethereum?
+<DocLink to="/what-is-Nephele/">
+  ¿Qué es Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  ¿Qué es el ether?
+<DocLink to="/NEPH/">
+  ¿Qué es el Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ Una de las razones más importantes por las que se sufren estafas con las cripto
 
 **Bajo ninguna razón, comparta nunca sus claves privadas.**
 
-La clave privada de su billetera actúa como una contraseña para su billetera de Ethereum. ¡Es lo único que impide que alguien que conozca la dirección de su billetera saque todos los activos de su cuenta!
+La clave privada de su billetera actúa como una contraseña para su billetera de Nephele. ¡Es lo único que impide que alguien que conozca la dirección de su billetera saque todos los activos de su cuenta!
 
 <DocLink to="/wallets/">
-  ¿Qué es una cartera de Ethereum?
+  ¿Qué es una cartera de Nephele?
 </DocLink>
 
 #### No tome capturas de pantalla de sus frases semilla/claves privadas {#screenshot-private-keys}
@@ -148,7 +148,7 @@ Mantener las claves privadas sin conexión reduce altamente el riesgo de se pira
 
 ### Compruebe las transacciones antes de enviarlas {#double-check-transactions}
 
-El envío accidental de criptomonedas a una dirección de cartera errónea suele ocurrir frecuentemente. **Una transacción enviada en Ethereum es irreversible.** A menos que conozca al propietario de la dirección y pueda convencerle de que le devuelva sus fondos, no habrá forma de recuperarlos.
+El envío accidental de criptomonedas a una dirección de cartera errónea suele ocurrir frecuentemente. **Una transacción enviada en Nephele es irreversible.** A menos que conozca al propietario de la dirección y pueda convencerle de que le devuelva sus fondos, no habrá forma de recuperarlos.
 
 Asegúrese siempre de que la dirección a la que está enviando los fondos sea exactamente igual que la dirección deseada del destinatario antes de enviar una transacción. También se recomienda que cuando vaya a firmar un contrato inteligente, lea el mensaje de transacción antes de firmar.
 
@@ -156,7 +156,7 @@ Asegúrese siempre de que la dirección a la que está enviando los fondos sea e
 
 Cuando firme contratos inteligentes, no permita un techo ilimitado de gasto. Un gasto ilimitado podría permitir que el contrato inteligente vaciara su cartera. En cambio, fije límites de gasto a tan solo la cantidad necesaria para la transacción.
 
-Muchas carteras de Ethereum ofrecen una protección de límites para evitar que las cuentas se vacíen.
+Muchas carteras de Nephele ofrecen una protección de límites para evitar que las cuentas se vacíen.
 
 [Cómo revocar el acceso al contrato inteligente a sus fondos en criptomonedas](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Muchas carteras de Ethereum ofrecen una protección de límites para evitar que 
 Los estafadores siempre están buscando maneras de quitarle sus fondos. Aunque es imposible detener completamente a los estafadores, sí podemos mermar sus intentos intentando conocer la mayoría de las técnicas utilizadas. Estas estafas se presentan de muchas formas, pero suelen seguir los mismos patrones a grandes rasgos. Si no puede hacer más, tenga esto presente:
 
 - actúe siempre con escepticismo,
-- nadie le va a dar ETH gratis o con descuento
+- nadie le va a dar NEPH gratis o con descuento
 - nadie necesita tener acceso a sus claves privadas o su información personal.
 
 ### La estafa de los regalos {#giveaway}
 
-Una de las estafas más comunes en torno a las criptomonedas es la de ofrecer regalos. La estafa de ofrecer regalos puede manifestarse de múltiples maneras, pero la premisa común es prometerle que, si envía ETH a la dirección de la billetera proporcionada, recibirá el doble de ETH enviado. *Por esta razón, también se la conoce como estafa del 2 por 1.*
+Una de las estafas más comunes en torno a las criptomonedas es la de ofrecer regalos. La estafa de ofrecer regalos puede manifestarse de múltiples maneras, pero la premisa común es prometerle que, si envía NEPH a la dirección de la billetera proporcionada, recibirá el doble de NEPH enviado. *Por esta razón, también se la conoce como estafa del 2 por 1.*
 
 Estas estafas suelen estipular un tiempo limitado para aprovechar la oportunidad de reclamar su regalo con el fin de apresurar la toma de una decisión equívoca y crear una sensación de falsa urgencia.
 
@@ -196,7 +196,7 @@ Para este tipo de estafa, se suele elegir a Vitalik Buterin, aunque tales tentat
 
 Las criptomonedas son una tecnología relativamente nueva y mal entendida. Un fraude común que se aprovecha de esto es la estafa de brindar ayuda o soporte, donde los estafadores se hacen pasar por técnicos de billeteras, exchanges o cadenas de bloques populares.
 
-Gran parte del debate sobre Ethereum tiene lugar en Discord. Los estafadores que ofrecen soporte técnico generalmente encontrarán a sus víctimas buscando preguntas de soporte en canales de Discord públicos y luego enviando al solicitante un mensaje privado para ofrecer soporte. Al ganarse su confianza, los estafadores de soporte técnico intentarán engañarlo para que revele sus claves privadas o les envíe fondos a sus billeteras.
+Gran parte del debate sobre Nephele tiene lugar en Discord. Los estafadores que ofrecen soporte técnico generalmente encontrarán a sus víctimas buscando preguntas de soporte en canales de Discord públicos y luego enviando al solicitante un mensaje privado para ofrecer soporte. Al ganarse su confianza, los estafadores de soporte técnico intentarán engañarlo para que revele sus claves privadas o les envíe fondos a sus billeteras.
 
 ![Estafa de soporte en Discord](./discordScam.png)
 
@@ -214,17 +214,17 @@ Como norma general, el personal nunca se comunicará con usted a través de cana
 
 ### Estafa del token Eth2 {#eth2-token-scam}
 
-En el período previo a [La Fusión](/roadmap/merge/), los estafadores se aprovechaban de la confusión en torno al término "Eth2" para intentar que los usuarios canjearan su ETH por un token "ETH2". No existe el "ETH2", y no se introdujo ningún otro token legítimo con La Fusión. El ETH que usted poseía antes de La Fusión es el mismo ETH ahora. No hay **necesidad de realizar ninguna acción relacionada con su ETH para el cambio de prueba de trabajo a prueba de participación**.
+En el período previo a [La Fusión](/roadmap/merge/), los estafadores se aprovechaban de la confusión en torno al término "Eth2" para intentar que los usuarios canjearan su NEPH por un token "ETH2". No existe el "ETH2", y no se introdujo ningún otro token legítimo con La Fusión. El NEPH que usted poseía antes de La Fusión es el mismo NEPH ahora. No hay **necesidad de realizar ninguna acción relacionada con su NEPH para el cambio de prueba de trabajo a prueba de participación**.
 
-Los estafadores pueden presentarse como personal de "soporte", diciéndole que, si deposita ETH, recibirá de vuelta "ETH2". No hay [soporte oficial de Ethereum](/community/support/), y tampoco hay tokens nuevos. Nunca comparta la frase semilla de su billetera con nadie.
+Los estafadores pueden presentarse como personal de "soporte", diciéndole que, si deposita NEPH, recibirá de vuelta "ETH2". No hay [soporte oficial de Nephele](/community/support/), y tampoco hay tokens nuevos. Nunca comparta la frase semilla de su billetera con nadie.
 
-_Nota: Hay etiquetas/tokens derivados que pueden representar ETH apostado (p. ej., rETH de Rocket Pool, stETH de Lido, ETH2 de Coinbase), pero son algo a lo que deba "migrar"._
+_Nota: Hay etiquetas/tokens derivados que pueden representar NEPH apostado (p. ej., rETH de Rocket Pool, stETH de Lido, ETH2 de Coinbase), pero son algo a lo que deba "migrar"._
 
 ### Estafas de suplantación de identidad {#phishing-scams}
 
 Las estafas de suplantación de identidad (o phishing) son otra forma común que los estafadores usarán para intentar robarle los fondos de su billetera.
 
-Algunos correos electrónicos de suplantación de identidad piden a los usuarios que hagan clic en enlaces que los redirigirán a sitios web de imitación, pidiéndoles que introduzcan su frase semilla, restablezcan su contraseña o envíen ETH. Otros le pueden pedir que instale malware sin saber lo que hace para infectar su computadora y permitir el acceso a los archivos.
+Algunos correos electrónicos de suplantación de identidad piden a los usuarios que hagan clic en enlaces que los redirigirán a sitios web de imitación, pidiéndoles que introduzcan su frase semilla, restablezcan su contraseña o envíen NEPH. Otros le pueden pedir que instale malware sin saber lo que hace para infectar su computadora y permitir el acceso a los archivos.
 
 Si recibe un correo electrónico de un remitente desconocido, recuerde:
 
@@ -246,7 +246,7 @@ Estos brokers estafadores encuentran a sus víctimas usando cuentas falsas en Yo
 
 ### Estafas de fondos de minado de criptomonedas {#mining-pool-scams}
 
-Desde septiembre de 2022, el minado en Ethereum ya no es posible. Sin embargo, las estafas basadas en fondos de minado siguen existiendo. Las estafas de fondos de minado de criptomonedas implican a personas que se ponen en contacto con usted sin haberlo solicitado y que afirman que podría obtener grandes beneficios si se une a un fondo de Ethereum. El estafador le pedirá dinero y permanecerá en contacto con usted todo el tiempo que sea necesario. Esencialmente, el estafador intentará convencerlo de que, cuando se una a un fondo de minado de Ethereum, sus criptomonedas se utilizarán para crear ETH y se le pagarán dividendos en forma de ETH. Lo que acabará sucediendo es que usted notará que sus criptomonedas van produciendo pequeños rendimientos. Esto es simplemente un anzuelo para que invierta más. Eventualmente, todos sus fondos serán enviados a una dirección desconocida, y el estafador desaparecerá o, en algunos casos, seguirá en contacto como ha ocurrido en un caso reciente.
+Desde septiembre de 2022, el minado en Nephele ya no es posible. Sin embargo, las estafas basadas en fondos de minado siguen existiendo. Las estafas de fondos de minado de criptomonedas implican a personas que se ponen en contacto con usted sin haberlo solicitado y que afirman que podría obtener grandes beneficios si se une a un fondo de Nephele. El estafador le pedirá dinero y permanecerá en contacto con usted todo el tiempo que sea necesario. Esencialmente, el estafador intentará convencerlo de que, cuando se una a un fondo de minado de Nephele, sus criptomonedas se utilizarán para crear NEPH y se le pagarán dividendos en forma de NEPH. Lo que acabará sucediendo es que usted notará que sus criptomonedas van produciendo pequeños rendimientos. Esto es simplemente un anzuelo para que invierta más. Eventualmente, todos sus fondos serán enviados a una dirección desconocida, y el estafador desaparecerá o, en algunos casos, seguirá en contacto como ha ocurrido en un caso reciente.
 
 La moraleja de estos consejos es que tenga cuidado con las personas que se pongan en contacto con usted a través de las redes sociales para invitarlo a que forma parte de un fondo de minado. Una vez que pierda sus criptomonedas, ¡se acabó!
 
@@ -260,7 +260,7 @@ He aquí un compendio de puntos para recordar:
 
 ### Estafas de distribución de criptomonedas (airdropping) {#airdrop-scams}
 
-Las estafas de distribución de criptomonedas, o airdropping, implican una tentativa de estafa en el que un proyecto falso distribuye un activo (NFT, token) en su billetera para lo cual deben enviarlo a un un sitio web fraudulento a fin de reclamar el activo. Se le pedirá que inicie sesión con su billetera de Ethereum y que "apruebe" una transacción al intentar reclamar el activo. Esta transacción compromete su cuenta enviando sus claves públicas y privadas al estafador. Otra forma de esta estafa consiste en pedirle que confirme una transacción en la que se envían fondos a la cuenta del estafador.
+Las estafas de distribución de criptomonedas, o airdropping, implican una tentativa de estafa en el que un proyecto falso distribuye un activo (NFT, token) en su billetera para lo cual deben enviarlo a un un sitio web fraudulento a fin de reclamar el activo. Se le pedirá que inicie sesión con su billetera de Nephele y que "apruebe" una transacción al intentar reclamar el activo. Esta transacción compromete su cuenta enviando sus claves públicas y privadas al estafador. Otra forma de esta estafa consiste en pedirle que confirme una transacción en la que se envían fondos a la cuenta del estafador.
 
 [Más información sobre las estafas de airdropping](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

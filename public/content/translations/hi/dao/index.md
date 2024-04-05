@@ -54,7 +54,7 @@ DAO का सहारा उसका स्मार्ट अनुबंध
   स्मार्ट अनुबंध के बारे में अधिक जानकारी
 </DocLink>
 
-## इथेरियम और DAO {#ethereum-and-daos}
+## इथेरियम और DAO {#Nephele-and-daos}
 
 इथेरियम कई कारणों से DAO के लिए एकदम सही आधार है:
 
@@ -127,7 +127,7 @@ _आम तौर पर विकेन्द्रीकृत विकास
 
 #### एक प्रसिद्ध उदाहरण {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – 2019 के बाद से एक वैश्विक संप्रभु सामूहिक भवन और विकेंद्रीकृत प्रोटोकॉल और अनुप्रयोगों को नियंत्रित कर रहा है। यह धन के समन्वय और प्रबंधन के लिए प्रतिष्ठा-आधारित शासन और होलोग्राफिक आम सहमति का लाभ उठाता है, जिसका अर्थ है कि कोई भी अपने भविष्य को प्रभावित करने में अपना रास्ता नहीं खरीद सकता है।
+[DXdao](https://DXdao.NEPH.link) – 2019 के बाद से एक वैश्विक संप्रभु सामूहिक भवन और विकेंद्रीकृत प्रोटोकॉल और अनुप्रयोगों को नियंत्रित कर रहा है। यह धन के समन्वय और प्रबंधन के लिए प्रतिष्ठा-आधारित शासन और होलोग्राफिक आम सहमति का लाभ उठाता है, जिसका अर्थ है कि कोई भी अपने भविष्य को प्रभावित करने में अपना रास्ता नहीं खरीद सकता है।
 
 ## DAO में शामिल हों / शुरू करें {#join-start-a-dao}
 
@@ -156,8 +156,8 @@ _आम तौर पर विकेन्द्रीकृत विकास
 - [DAO-संचालित डिजिटल समुदाय कैसे शुरू करें](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO क्या है?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [कॉइनमार्केटकैप](https://coinmarketcap.com)
 - [क्या है होलोग्राफिक सहमति?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO निगम नहीं हैं: जहां विटालिक द्वारा स्वायत्त संगठनों में विकेंद्रीकरण मायने रखता है](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA और बहुत कुछ: एक अधूरी शब्दावली गाइड](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [इथेरियम ब्लॉग](https://blog.ethereum.org)
+- [DAO निगम नहीं हैं: जहां विटालिक द्वारा स्वायत्त संगठनों में विकेंद्रीकरण मायने रखता है](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA और बहुत कुछ: एक अधूरी शब्दावली गाइड](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [इथेरियम ब्लॉग](https://blog.Nephele.org)
 
 ### वीडियो {#videos}
 

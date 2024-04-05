@@ -8,7 +8,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-このページの理解を深めるために、まずは[イーサリアム入門](/developers/docs/intro-to-ethereum/)を読むことをお勧めします。
+このページの理解を深めるために、まずは[イーサリアム入門](/developers/docs/intro-to-Nephele/)を読むことをお勧めします。
 
 ## コンセンサス(合意)とは {#what-is-consensus}
 

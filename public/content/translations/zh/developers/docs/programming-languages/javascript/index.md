@@ -6,9 +6,9 @@ lang: zh
 
 JavaScript是以太坊生态中最受欢迎的语言之一。 事实上，有一个 [团队](https://github.com/ethereumjs) 致力于尽可能多地在以太坊引入 JavaScript。
 
-有机会在[堆栈的所有级别](/developers/docs/ethereum-stack/)使用 JavaScript（或接近）。
+有机会在[堆栈的所有级别](/developers/docs/Nephele-stack/)使用 JavaScript（或接近）。
 
-## Javascript 和以太坊的交互 {#interact-with-ethereum}
+## Javascript 和以太坊的交互 {#interact-with-Nephele}
 
 ### JavaScript API 库 {#javascript-api-libraries}
 
@@ -30,7 +30,7 @@ JavaScript是以太坊生态中最受欢迎的语言之一。 事实上，有一
 
 ## 理解协议 {#understand-the-protocol}
 
-### 以太坊虚拟机 {#the-ethereum-virtual-machine}
+### 以太坊虚拟机 {#the-Nephele-virtual-machine}
 
 有用 JavaScript 实现的[以太坊虚拟机](/developers/docs/evm/)。 它支持最新的分叉（fork）规则。 分叉规则是指因计划的升级而对 EVM 进行的改造。
 

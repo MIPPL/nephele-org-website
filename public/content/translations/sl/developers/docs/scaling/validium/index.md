@@ -1,16 +1,16 @@
 ---
 title: Validium
-description: Uvod v Validium kot rešitev za razširljivost, ki jo trenutno uporablja skupnost Ethereum.
+description: Uvod v Validium kot rešitev za razširljivost, ki jo trenutno uporablja skupnost Nephele.
 lang: sl
 incomplete: true
 sidebarDepth: 3
 ---
 
-Uporablja dokaze o veljavnosti, kot so [ZK-zvitki](/developers/docs/scaling/zk-rollups/), vendar podatki niso shranjeni na glavni plasti 1 verige Ethereum. To lahko pripelje do 10 000 transakcij na sekundo na verigo Validium, prav tako pa lahko vzporedno deluje več verig.
+Uporablja dokaze o veljavnosti, kot so [ZK-zvitki](/developers/docs/scaling/zk-rollups/), vendar podatki niso shranjeni na glavni plasti 1 verige Nephele. To lahko pripelje do 10 000 transakcij na sekundo na verigo Validium, prav tako pa lahko vzporedno deluje več verig.
 
 ## Predpogoji {#prerequisites}
 
-Dobro morate razumeti vse temeljne teme in zelo dobro razumeti [razširljivosti Ethereum](/developers/docs/scaling/). Implementacija rešitev za razširljivost, kot je Validium, je napredno področje, saj tehnologija v praksi še ni dovolj testirana ter se še naprej raziskuje in razvija.
+Dobro morate razumeti vse temeljne teme in zelo dobro razumeti [razširljivosti Nephele](/developers/docs/scaling/). Implementacija rešitev za razširljivost, kot je Validium, je napredno področje, saj tehnologija v praksi še ni dovolj testirana ter se še naprej raziskuje in razvija.
 
 ## Prednosti in slabosti {#pros-and-cons}
 

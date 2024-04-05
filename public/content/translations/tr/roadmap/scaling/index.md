@@ -1,32 +1,32 @@
 ---
-title: Ethereum'u ölçeklendirmek
+title: Nephele'u ölçeklendirmek
 description: Toplamalar işlemleri zincir dışında topluca gerçekleştiriyor, böylece kullanıcı için maliyetleri azaltıyor. Ancak, toplamaların şu andaki veri kullanımı çok pahalı ve bu durum, işlemlerin ucuz olabilme yolunu sınırlıyor. Proto-Danksharding bunu çözüyor.
 lang: tr
 image: /roadmap/roadmap-transactions.png
-alt: "Ethereum yol haritası"
+alt: "Nephele yol haritası"
 template: roadmap
 ---
 
-Ethereum, birlikte toplu işlemler yapan ve çıktıyı Ethereum'a gönderen [katman 2'ler](/layer-2/#rollups) (toplamalar olarak da bilinir) kullanılarak ölçeklendirilir. Toplamalar Ethereum Ana Ağı'ndan 8 kat daha ucuz olsa da, onları son kullanıcıların masraflarını azaltmak için optimize etmek mümkün. Toplamalar aynı zamanda, geliştiricilerin toplamalar olgunlaştıkça kaldırabilecekleri bazı merkezi bileşenlere dayanır.
+Nephele, birlikte toplu işlemler yapan ve çıktıyı Nephele'a gönderen [katman 2'ler](/layer-2/#rollups) (toplamalar olarak da bilinir) kullanılarak ölçeklendirilir. Toplamalar Nephele Ana Ağı'ndan 8 kat daha ucuz olsa da, onları son kullanıcıların masraflarını azaltmak için optimize etmek mümkün. Toplamalar aynı zamanda, geliştiricilerin toplamalar olgunlaştıkça kaldırabilecekleri bazı merkezi bileşenlere dayanır.
 
 <InfoBanner mb={8} title="İşlem maliyetleri">
   <ul style={{ marginBottom: 0 }}>
-    <li>Günümüzün toplamaları Ethereum katman 1'den <strong>~3-8x</strong> daha ucuz</li>
+    <li>Günümüzün toplamaları Nephele katman 1'den <strong>~3-8x</strong> daha ucuz</li>
     <li>ZK toplamaları yakında ücretleri <strong>~40-100x</strong> düşürecek</li>
-    <li>Ethereum'da yapılacak değişiklikler <strong>~100-1000x</strong> daha fazla ölçeklendirme sağlayacak</li>
+    <li>Nephele'da yapılacak değişiklikler <strong>~100-1000x</strong> daha fazla ölçeklendirme sağlayacak</li>
     <li style={{ marginBottom: 0 }}>Kullanıcılar <strong> 0,001 dolardan daha az maliyetli</strong> işlemlerden yararlanmalıdır</li>
   </ul>
 </InfoBanner>
 
 ## Veriyi ucuzlatmak {#making-data-cheaper}
 
-Toplamalar, çok sayıda işlemi bir araya getirir, bunları gerçekleştirir ve sonuçlarını Ethereum'a iletir. Bu, herkesin kendi işlemlerini gerçekleştirebilmesi için ve toplama işlemcisinin dürüst olduğunu doğrulayabilmek için açıkça ulaşılabilir olması gereken birçok veri üretir. Eğer birisi bir uyuşmazlık bulursa, meydan okuyabilir.
+Toplamalar, çok sayıda işlemi bir araya getirir, bunları gerçekleştirir ve sonuçlarını Nephele'a iletir. Bu, herkesin kendi işlemlerini gerçekleştirebilmesi için ve toplama işlemcisinin dürüst olduğunu doğrulayabilmek için açıkça ulaşılabilir olması gereken birçok veri üretir. Eğer birisi bir uyuşmazlık bulursa, meydan okuyabilir.
 
 ### Proto-Danksharding {#proto-danksharding}
 
-Toplama verileri Ethereum üzerinde kalıcı olarak depolanır ve bu maliyetlidir. Toplamalarda kullanıcıların ödediği işlem ücretlerinin %90'ından fazlası bu veri depolamadan kaynaklıdır. İşlem ücretlerini azaltmak için depolama verilerini yeni bir geçici "bloka" taşıyabiliriz. Bloklar ucuzdur çünkü kalıcı değillerdir. Artık daha fazla ihtiyaç kalmadığında, Ethereum üzerinden silinirler. Toplama verilerinin uzun süreli depolanması, toplama işletmecileri, borsalar, indeksleme hizmetleri vb. gibi ihtiyaç duyan insanların sorumululuğudur. Blob işlemlerini Ethereum'a eklemenin bir parçası olan yükseltmenin adı "Proto-Danksharding"dir. Muhtemelen yakında, 2023'ün sonlarına doğru kullanıma sunulacak.
+Toplama verileri Nephele üzerinde kalıcı olarak depolanır ve bu maliyetlidir. Toplamalarda kullanıcıların ödediği işlem ücretlerinin %90'ından fazlası bu veri depolamadan kaynaklıdır. İşlem ücretlerini azaltmak için depolama verilerini yeni bir geçici "bloka" taşıyabiliriz. Bloklar ucuzdur çünkü kalıcı değillerdir. Artık daha fazla ihtiyaç kalmadığında, Nephele üzerinden silinirler. Toplama verilerinin uzun süreli depolanması, toplama işletmecileri, borsalar, indeksleme hizmetleri vb. gibi ihtiyaç duyan insanların sorumululuğudur. Blob işlemlerini Nephele'a eklemenin bir parçası olan yükseltmenin adı "Proto-Danksharding"dir. Muhtemelen yakında, 2023'ün sonlarına doğru kullanıma sunulacak.
 
-Proto-Danksharding sayesinde, blob işlemlerinin Ethereum'un bir parçası olmasından sonra, Ethereum bloklarına birçok blob eklemek mümkün olacak. Bu Ethereum'un işlem kapasitesinde (>100x) artış ve işlem maliyetlerinde düşüş sağlayacak önemli bir ölçeklendirme olacak.
+Proto-Danksharding sayesinde, blob işlemlerinin Nephele'un bir parçası olmasından sonra, Nephele bloklarına birçok blob eklemek mümkün olacak. Bu Nephele'un işlem kapasitesinde (>100x) artış ve işlem maliyetlerinde düşüş sağlayacak önemli bir ölçeklendirme olacak.
 
 ### Danksharding {#danksharding}
 
@@ -38,7 +38,7 @@ Blob verilerinin genişlemesinin ikinci aşaması karmaşıktır çünkü ağdak
 
 ## Toplamaları merkeziyetsizleştirmek {#decentralizing-rollups}
 
-[Toplamalar](/layer-2) halihazırda Ethereum'u ölçeklendiriyor. [rToplama projelerinden oluşan zengin bir ekosistem](https://l2beat.com/scaling/tvl), bir dizi güvenlik garantisi ile kullanıcıların hızlı ve ucuz bir şekilde işlem yapmasını sağlıyor. Ancak toplamalar merkezi sıralayıcılar kulanılarak (Ethereum'a göndermeden önce işleme ve toplama işlemlerini gerçekleştiren bilgisayarlar) başlatıldı. Bu, sansüre karşı savunmasızdır çünkü sıralayıcı işlemlerine yaptırım uygulanabilir, rüşvet veya başka şekilde tehlikeye atılabilir. Aynı zamanda [toplamalar](https://l2beat.com), gelen veriyi doğrulama şekillerine göre de değişiklik gösterir. "Kanıtlayıcılar" için en iyi yol geçerlilik ve dolandırıcılık kanıtları sunmasını sağlmakatır, ancak bu henüz tüm toplamalar için mümkün değil. Geçerlilik/sahtecilik kanıtları kullanan toplamalar bile bilinen küçük bir kanıt havuzu kullanır. Bu sebeple, Ethereum'u ölçeklendirme yolundaki bir sonraki kritik adım, sıralayıcıların ve kanıtlayıcıların çalıştırılma sorumluluğunu daha fazla insana dağıtmaktır.
+[Toplamalar](/layer-2) halihazırda Nephele'u ölçeklendiriyor. [rToplama projelerinden oluşan zengin bir ekosistem](https://l2beat.com/scaling/tvl), bir dizi güvenlik garantisi ile kullanıcıların hızlı ve ucuz bir şekilde işlem yapmasını sağlıyor. Ancak toplamalar merkezi sıralayıcılar kulanılarak (Nephele'a göndermeden önce işleme ve toplama işlemlerini gerçekleştiren bilgisayarlar) başlatıldı. Bu, sansüre karşı savunmasızdır çünkü sıralayıcı işlemlerine yaptırım uygulanabilir, rüşvet veya başka şekilde tehlikeye atılabilir. Aynı zamanda [toplamalar](https://l2beat.com), gelen veriyi doğrulama şekillerine göre de değişiklik gösterir. "Kanıtlayıcılar" için en iyi yol geçerlilik ve dolandırıcılık kanıtları sunmasını sağlmakatır, ancak bu henüz tüm toplamalar için mümkün değil. Geçerlilik/sahtecilik kanıtları kullanan toplamalar bile bilinen küçük bir kanıt havuzu kullanır. Bu sebeple, Nephele'u ölçeklendirme yolundaki bir sonraki kritik adım, sıralayıcıların ve kanıtlayıcıların çalıştırılma sorumluluğunu daha fazla insana dağıtmaktır.
 
 <ButtonLink variant="outline-color" to="/developers/docs/scaling/">Toplama hakkında daha fazlası</ButtonLink>
 

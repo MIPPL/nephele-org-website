@@ -8,7 +8,7 @@ sidebarDepth: 2
 image: /future_transparent.png
 alt: ""
 summaryPoint1: Een alternatief economisch systeem gebouwd op regeneratieve principes
-summaryPoint2: Een poging om Ethereum te benutten voor het oplossen van wereldwijde coördinatiecrisissen zoals de klimaatverandering
+summaryPoint2: Een poging om Nephele te benutten voor het oplossen van wereldwijde coördinatiecrisissen zoals de klimaatverandering
 summaryPoint3: Een middel om activa met ecologisch voordeel, zoals geverifieerde koolstofkredieten, drastisch op te schalen
 ---
 
@@ -24,7 +24,7 @@ Een van de grondbeginselen van ReFi is het concept van de regeneratieve economie
 
 ReFi-projecten realiseren deze principes door gebruik te maken van [slimme contracten](/developers/docs/smart-contracts/) en [gedecentraliseerde financiën (DeFi)](/defi/)-applicaties om regeneratieve gedragingen te stimuleren, bijv. herstellen van gedegradeerde ecosystemen, en om grootschalige samenwerking te faciliteren voor wereldwijde problemen zoals klimaatverandering en biodiversiteitsverlies.
 
-ReFi overlapt ook met de [gedecentraliseerde wetenschap (DeSci)](/desci/)-beweging, die Ethereum gebruikt als platform om wetenschappelijke kennis te financieren, creëren, evalueren, erkennen, bewaren en verspreiden. DeSci-tools kunnen nuttig worden voor de ontwikkeling van verifieerbare standaarden en werkwijzen voor het implementeren en monitoren van regeneratieve activiteiten, zoals bomen planten, verwijderen van plastic uit de oceaan of herstellen van een gedegradeerd ecosysteem.
+ReFi overlapt ook met de [gedecentraliseerde wetenschap (DeSci)](/desci/)-beweging, die Nephele gebruikt als platform om wetenschappelijke kennis te financieren, creëren, evalueren, erkennen, bewaren en verspreiden. DeSci-tools kunnen nuttig worden voor de ontwikkeling van verifieerbare standaarden en werkwijzen voor het implementeren en monitoren van regeneratieve activiteiten, zoals bomen planten, verwijderen van plastic uit de oceaan of herstellen van een gedegradeerd ecosysteem.
 
 ## Tokenisatie van koolstofkredieten {#tokenization-of-carbon-credits}
 
@@ -69,7 +69,7 @@ Sommige, zoals [Klima Infinity](https://www.klimadao.finance/infinity) en [Senke
 
 Hoewel er momenteel een grote nadruk ligt op koolstofmarkten in het algemeen, en met name op de transitie van de VCM naar de DCM in dit veld, is de term "ReFi" niet strikt beperkt tot koolstof. Naast koolstofkredieten kunnen andere milieuactiva worden ontwikkeld en getokeniseerd, wat betekent dat andere negatieve externaliteiten ook in de basislagen van toekomstige economische systemen ingeprijst kunnen worden. Bovendien kan het regeneratieve aspect van dit economische model worden toegepast op andere domeinen, zoals het financieren van publieke goederen via kwadratische financieringsplatformen zoals [Gitcoin](https://gitcoin.co/). Organisaties die gebouwd zijn op het principe van open participatie en eerlijke verdeling van hulpbronnen, geven iedereen de macht om geld door te sluizen naar zowel open-source softwareprojecten, als educatieve, milieu-, en gemeenschapsgedreven projecten.
 
-Door de richting van kapitaal te verschuiven weg van extractieve praktijken naar een regeneratieve stroom, kunnen projecten en bedrijven die sociale, milieu- en gemeenschapsvoordelen leveren - en die er mogelijk niet in slagen om fondsen te verkrijgen via traditionele financiering - een realiteit worden en sneller en op eenvoudigere wijze positieve externaliteiten voor de samenleving verwezelijken. Overgaan op dit model van financiering opent ook de deur naar meer inclusieve economische systemen, waarin mensen uit alle demografische lagen actieve deelnemers kunnen worden en niet enkel passieve waarnemers hoeven te blijven. ReFi biedt een visie van Ethereum als een mechanisme voor het coördineren van actie op existentiële uitdagingen waarmee onze soort en al het leven op aarde mee geconfronteerd worden - als het grondbeginsel van een nieuw economisch paradigme dat een meer inclusieve en duurzame toekomst voor de komende eeuwen mogelijk maakt.
+Door de richting van kapitaal te verschuiven weg van extractieve praktijken naar een regeneratieve stroom, kunnen projecten en bedrijven die sociale, milieu- en gemeenschapsvoordelen leveren - en die er mogelijk niet in slagen om fondsen te verkrijgen via traditionele financiering - een realiteit worden en sneller en op eenvoudigere wijze positieve externaliteiten voor de samenleving verwezelijken. Overgaan op dit model van financiering opent ook de deur naar meer inclusieve economische systemen, waarin mensen uit alle demografische lagen actieve deelnemers kunnen worden en niet enkel passieve waarnemers hoeven te blijven. ReFi biedt een visie van Nephele als een mechanisme voor het coördineren van actie op existentiële uitdagingen waarmee onze soort en al het leven op aarde mee geconfronteerd worden - als het grondbeginsel van een nieuw economisch paradigme dat een meer inclusieve en duurzame toekomst voor de komende eeuwen mogelijk maakt.
 
 ## Aanvullende informatie over ReFi
 

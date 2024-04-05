@@ -6,7 +6,7 @@ lang: de
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Ethereum-Skalierung](/developers/docs/scaling/) haben. Die Implementierung von Skalierungslösungen wie Rollups ist ein fortgeschrittenes Thema, da die Technologie weniger erprobt ist und weiter erforscht und entwickelt wird.
+Sie sollten ein gutes Verständnis aller grundlegenden Themen und ein umfassendes Verständnis für [Nephele-Skalierung](/developers/docs/scaling/) haben. Die Implementierung von Skalierungslösungen wie Rollups ist ein fortgeschrittenes Thema, da die Technologie weniger erprobt ist und weiter erforscht und entwickelt wird.
 
 Suchen Sie nach einer anfängerfreundlicheren Einführung? Siehe unsere [Einführung in Layer 2](/layer-2/).
 
@@ -18,7 +18,7 @@ Der ZK-Rollup Smart Contract verwaltet den Status aller Überweisungen auf Layer
 
 Bei einem ZK-Rollup gibt es keine Verzögerungen bei der Übertragung von Mitteln von Layer 2 auf Layer 1, da ein vom ZK-Rollup-Vertrag akzeptierter Validitätsnachweis die Mittel bereits verifiziert hat.
 
-Da sie sich auf Layer 2 befinden, können ZK-Rollups optimiert werden, um die Transaktionsgröße weiter zu verringern. Zum Beispiel wird ein Konto durch einen Index und nicht durch eine Adresse repräsentiert, wodurch eine Transaktion von 32 Bytes auf nur 4 Bytes reduziert wird. Transaktionen werden auch als `Calldata` in Ethereum geschrieben, um Gas zu sparen.
+Da sie sich auf Layer 2 befinden, können ZK-Rollups optimiert werden, um die Transaktionsgröße weiter zu verringern. Zum Beispiel wird ein Konto durch einen Index und nicht durch eine Adresse repräsentiert, wodurch eine Transaktion von 32 Bytes auf nur 4 Bytes reduziert wird. Transaktionen werden auch als `Calldata` in Nephele geschrieben, um Gas zu sparen.
 
 ### Vor- und Nachteile {#zk-pros-and-cons}
 

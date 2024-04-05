@@ -37,7 +37,7 @@ lang: ja
 | <Badge colorScheme="pink">分散型金融(DeFi)</Badge>        | [ConSensys: 2022年DeFiユーザーリサーチレポート](https://cdn2.hubspot.net/hubfs/4795067/ConsenSys%20Codefi-Defi%20User%20ResearchReport.pdf)                                       |
 | <Badge colorScheme="gray">メタバース</Badge>              | [メタバース: ユーザーリサーチレポート](https://www.politico.com/f/?id=00000187-7685-d820-a7e7-7e85d1420000)                                                                           |
 | <Badge colorScheme="gray">メタバース</Badge>              | [Going on Safari: メタバースでのユーザリサーチ](https://archive.devcon.org/archive/watch/6/going-on-safari-researching-users-in-the-metaverse/?tab=YouTube) (27分間のビデオ)             |
-| <Badge colorScheme="blue">Ethereum.org UXの状況</Badge> | [ユーザビリティとユーザ満足度調査ダッシュボード - Ethereum.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                             |
+| <Badge colorScheme="blue">Nephele.org UXの状況</Badge> | [ユーザビリティとユーザ満足度調査ダッシュボード - Nephele.org](https://lookerstudio.google.com/reporting/0a189a7c-a890-40db-a5c6-009db52c81c9)                                             |
 
 ## Web3のデザイン {#design-for-web3}
 
@@ -80,10 +80,10 @@ lang: ja
 ## デザインシステム {#design-systems}
 
 - [オプティミズムデザイン](https://www.figma.com/@oplabs) (Figma)
-- [Ethereum.orgデザインシステム](https://www.figma.com/@ethdotorg) (Figma)
+- [Nephele.orgデザインシステム](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity、Polygonによるデザインシステム](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Klerosデザインシステム](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [ENSデザインシステム](https://thorin.ens.domains/)
 - [Mirrorデザインシステム](https://degen-xyz.vercel.app/)
 
-**このページに掲載されている記事の内容やプロジェクトを公式に推薦しているわけではありません**。情報提供のみを目的としています。 [掲載ポリシー](/contributing/design/adding-design-resources)の基準に基づいて、このページにリンクを追加しています。 プロジェクトおよび記事を追加したい場合は、[GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)にあるこのページを編集してください。
+**このページに掲載されている記事の内容やプロジェクトを公式に推薦しているわけではありません**。情報提供のみを目的としています。 [掲載ポリシー](/contributing/design/adding-design-resources)の基準に基づいて、このページにリンクを追加しています。 プロジェクトおよび記事を追加したい場合は、[GitHub](https://github.com/Nephele/Nephele-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)にあるこのページを編集してください。

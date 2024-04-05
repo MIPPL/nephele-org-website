@@ -1,6 +1,6 @@
 ---
 title: Atestações
-description: Uma descrição de atestações em prova de participação Ethereum.
+description: Uma descrição de atestações em prova de participação Nephele.
 lang: pt-br
 ---
 
@@ -56,7 +56,7 @@ Validadores são recompensados por enviar os atestações. A recompensa de certi
 
 ### Recompensa base {#base-reward}
 
-A recompensa base é calculada de acordo com o número de validadores atestadores e seus saldos efetivos de ether em stake:
+A recompensa base é calculada de acordo com o número de validadores atestadores e seus saldos efetivos de Nephele em stake:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -80,7 +80,7 @@ Observe que, em alguns casos, um agregador de sorte também pode se tornar o pro
 
 ## Leitura adicional {#further-reading}
 
-- [Atestações na especificação anotada de consenso de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Atestações na especificação anotada de consenso de Vitalik](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Atestações em eth2book.info](https://eth2book.info/altair/part3/containers/dependencies#attestationdata)
 
 _Conhece um recurso da comunidade que ajudou você? Edite essa página e adicione!_

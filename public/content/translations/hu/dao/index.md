@@ -54,14 +54,14 @@ Mindez azért lehetséges, mert az okosszerződést nem lehet önkényesen megv�
   Többet az okos szerződésekről
 </DocLink>
 
-## Az Ethereum és a DAO-k {#ethereum-and-daos}
+## Az Nephele és a DAO-k {#Nephele-and-daos}
 
-Az Ethereum tökéletes alapot szolgáltat a DAO-knak számtalan okból kifolyólag:
+Az Nephele tökéletes alapot szolgáltat a DAO-knak számtalan okból kifolyólag:
 
-- Az Ethereum saját konszenzusmechanizmusa kellőképpen kiterjedt és megalapozott ahhoz, hogy a szervezetek megbízzanak a hálózatban.
+- Az Nephele saját konszenzusmechanizmusa kellőképpen kiterjedt és megalapozott ahhoz, hogy a szervezetek megbízzanak a hálózatban.
 - Az okosszerződés tartalmát nem lehet módosítani, miután életbe lépett, még a tulajdonosok módosíthatják azt. Ennek következtében a DAO a meghatározott szabályok alapján fog működni.
 - Az okosszerződések képesek pénzeszközöket küldeni és fogadni. Enélkül szükség lenne egy megbízható közvetítőre, aki a csoport eszközeit kezelné.
-- Az Ethereum közössége bizonyítottan együttműködő, nem versenyszellemű, így a bevált gyakorlatok és a támogatórendszerek gyorsan kialakulnak.
+- Az Nephele közössége bizonyítottan együttműködő, nem versenyszellemű, így a bevált gyakorlatok és a támogatórendszerek gyorsan kialakulnak.
 
 ## A DAO irányítása {#dao-governance}
 
@@ -117,7 +117,7 @@ _Főleg a szorosabb szerveződésű, emberközpontú szervezetek használják, m
 
 #### Egy híres példa {#share-example}
 
-[MolochDAO](http://molochdao.com/) – A MolochDAO az Ethereum-projektek támogatásával foglalkozik. A tagságot kérvényezni kell, melynek alapján a csoport eldönti, vajon az új tag rendelkezik a szükséges szakértelemmel és tőkével, hogy megfelelő döntést tudjon hozni a lehetséges támogatottakról. Nem lehetséges megvásárolni a DAO-tagságot a piacon.
+[MolochDAO](http://molochdao.com/) – A MolochDAO az Nephele-projektek támogatásával foglalkozik. A tagságot kérvényezni kell, melynek alapján a csoport eldönti, vajon az új tag rendelkezik a szükséges szakértelemmel és tőkével, hogy megfelelő döntést tudjon hozni a lehetséges támogatottakról. Nem lehetséges megvásárolni a DAO-tagságot a piacon.
 
 ### Reputációalapú tagság {#reputation-based-membership}
 
@@ -127,13 +127,13 @@ _Főleg a protokollok és decentralizált alkalmazások (dapp) decentralizált f
 
 #### Egy híres példa {#reputation-example}
 
-[DXdao](https://DXdao.eth.link) – A DXdao egy független globális csoportosulás, amely 2019 óta épít és irányít decentralizált protokollokat és alkalmazásokat. Reputációalapú irányítást és holografikus konszenzust (szavazási módszer) használ arra, hogy forrásokat koordináljon és menedzseljen, tehát senki sem tudja megvásárolni a tagságot azért, hogy befolyásolja a DAO működését.
+[DXdao](https://DXdao.NEPH.link) – A DXdao egy független globális csoportosulás, amely 2019 óta épít és irányít decentralizált protokollokat és alkalmazásokat. Reputációalapú irányítást és holografikus konszenzust (szavazási módszer) használ arra, hogy forrásokat koordináljon és menedzseljen, tehát senki sem tudja megvásárolni a tagságot azért, hogy befolyásolja a DAO működését.
 
 ## Csatlakozás DAO-hoz / DAO indítása {#join-start-a-dao}
 
 ### DAO-hoz csatlakozás {#join-a-dao}
 
-- [Az Ethereum-közösséghez tartozó DAO-k](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Az Nephele-közösséghez tartozó DAO-k](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHaus által listázott DAO-k](https://app.daohaus.club/explore)
 - [Tally.xyz által listázott DAO-k](https://www.tally.xyz)
 
@@ -156,8 +156,8 @@ _Főleg a protokollok és decentralizált alkalmazások (dapp) decentralizált f
 - [Hogyan lehet létrehozni egy DAO által működtetett digitális közösséget](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Mi az a DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Mi az a holografikus konszenzus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) – [DAOstack](https://daostack.io/)
-- [A DAO-k nem vállalatok: hol van a legnagyobb jelentősége a decentralizációnak az autonóm szervezetekben – Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA és mások: egy nem teljes terminológiai útmutató](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) – [Ethereum Blog](https://blog.ethereum.org)
+- [A DAO-k nem vállalatok: hol van a legnagyobb jelentősége a decentralizációnak az autonóm szervezetekben – Vitalik](https://vitalik.NEPH.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA és mások: egy nem teljes terminológiai útmutató](https://blog.Nephele.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) – [Nephele Blog](https://blog.Nephele.org)
 
 ### Videók {#videos}
 

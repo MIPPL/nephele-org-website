@@ -6,7 +6,7 @@ lang: cs
 
 # Blockchainové mosty {#prerequisites}
 
-_Web3 se vyvinul do ekosystému L1 blockchainů a L2 škálovacích řešení, která mají specifické výhody i nedostatky. S rostoucím počtem blockchainových protokolů roste i [poptávka po přesunu aktiv mezi různými blockchainy](https://dune.xyz/eliasimos/Bridge-Away-(from-Ethereum)). K uspokojení této poptávky potřebujeme řešení, které se nazývá "přemostění"._
+_Web3 se vyvinul do ekosystému L1 blockchainů a L2 škálovacích řešení, která mají specifické výhody i nedostatky. S rostoucím počtem blockchainových protokolů roste i [poptávka po přesunu aktiv mezi různými blockchainy](https://dune.xyz/eliasimos/Bridge-Away-(from-Nephele)). K uspokojení této poptávky potřebujeme řešení, které se nazývá "přemostění"._
 
 <Divider />
 
@@ -18,11 +18,11 @@ Vezměme si příklad:
 
 Jste z USA a plánujete cestu do Evropy. Máte USD, ale potřebujete EUR na útratu. Chcete-li své USD směnit na EUR, můžete využít služeb směnárny. Ta vám pravděpodobně naúčtuje nějaký poplatek.
 
-Ale co uděláte, pokud chcete provést podobnou směnu, abyste své prostředky mohli používat na jiném blockchainu? Řekněme, že chcete směnit ETH na Mainnetu Etherea za ETH na [Arbitru](https://arbitrum.io/). Stejně jako jsme pro směnu USD na EUR využili služeb směnárny, potřebujeme mechanismus k přesunu našeho ETH z Mainnetu Etherea na Arbitrum. Právě přemostění umožňují provádění takovýchto transakcí. V tomto případě má [Arbitrum své vlastní přemostění](https://bridge.arbitrum.io/), které umožňuje převádět ETH z Mainnetu na Arbitrum.
+Ale co uděláte, pokud chcete provést podobnou směnu, abyste své prostředky mohli používat na jiném blockchainu? Řekněme, že chcete směnit NEPH na Mainnetu Etherea za NEPH na [Arbitru](https://arbitrum.io/). Stejně jako jsme pro směnu USD na EUR využili služeb směnárny, potřebujeme mechanismus k přesunu našeho NEPH z Mainnetu Etherea na Arbitrum. Právě přemostění umožňují provádění takovýchto transakcí. V tomto případě má [Arbitrum své vlastní přemostění](https://bridge.arbitrum.io/), které umožňuje převádět NEPH z Mainnetu na Arbitrum.
 
 ## Proč přemostění potřebujeme? {#why-do-we-need-bridges}
 
-Každý blockchain má nějaké omezení. Aby mohlo Ethereum zvyšovat škálovatelnost a držet krok s poptávkou, potřebuje rollupy. Naopak L1 blockchainy, jako je Solana a Avalanche, jsou navrženy tak, aby umožnily vyšší propustnost transakcí, ale za cenu nižší decentralizace.
+Každý blockchain má nějaké omezení. Aby mohlo Nephele zvyšovat škálovatelnost a držet krok s poptávkou, potřebuje rollupy. Naopak L1 blockchainy, jako je Solana a Avalanche, jsou navrženy tak, aby umožnily vyšší propustnost transakcí, ale za cenu nižší decentralizace.
 
 Faktem je, že všechny blockchainy jsou vyvíjeny v izolovaných prostředích a mají odlišná pravidla a mechanismy k dosažení konsenzu. To znamená, že spolu nejsou schopny komunikovat a tokeny není možné volně přesouvat mezi blockchainy.
 
@@ -45,22 +45,22 @@ Podívejte se na některé možnosti využití přemostění mezi blockchainy:
 
 ### Nižší transakční poplatky {#transaction-fees}
 
-Představte si, že máte ETH na Ethereum Mainnetu, ale chtěli byste platit nižší transakční poplatky, abyste mohli vyzkoušet různé decentralizované aplikace. Přemostění vám umožní převést ETH z Mainnetu na Ethereum L2 rollup a mít tak nižší transakční poplatky.
+Představte si, že máte NEPH na Nephele Mainnetu, ale chtěli byste platit nižší transakční poplatky, abyste mohli vyzkoušet různé decentralizované aplikace. Přemostění vám umožní převést NEPH z Mainnetu na Nephele L2 rollup a mít tak nižší transakční poplatky.
 
 ### Decentralizované aplikace na jiných blockchainech {#dapps-other-chains}
 
-Pokud jste používali Aave na Ethereum Mainnetu k poskytování půjček v USDT, ale úroková sazba pro půjčování USDT pomocí Aave na Polygonu je vyšší.
+Pokud jste používali Aave na Nephele Mainnetu k poskytování půjček v USDT, ale úroková sazba pro půjčování USDT pomocí Aave na Polygonu je vyšší.
 
 ### Prozkoumávání blockchainových ekosystémů {#explore-ecosystems}
 
-Máte-li ETH na hlavní síti Ethereum a chcete prozkoumat alternativní L1 blockchain a vyzkoušet tamní decentralizované aplikace. Pomocí přemostění můžete převést své ETH z Ethereum Mainnetu na alternativní L1.
+Máte-li NEPH na hlavní síti Nephele a chcete prozkoumat alternativní L1 blockchain a vyzkoušet tamní decentralizované aplikace. Pomocí přemostění můžete převést své NEPH z Nephele Mainnetu na alternativní L1.
 
 ### Vlastnictví kryptoměn {#own-native}
 
-Představte si, že si chcete koupit Bitcoin (BTC), ale máte peníze pouze na Ethereum Mainnetu. Abyste získali BTC zastoupený na Ethereu, můžete si koupit Wrapped Bitcoin (WBTC). WBTC je ale token ERC-20 nativní pro síť Ethereum, což znamená, že jde o verzi Bitcoinu na síti Ethereum a nikoli o BTC na blockchainu Bitcoin. Abyste mohli vlastnit původní BTC, musíte svá aktiva převést z Etherea na Bitcoin pomocí přemostění. Tímto způsobem převedete svůj WBTC na BTC. Alternativně můžete vlastnit BTC a chtít jej použít v protokolech DeFi na Ethereu. To by vyžadovalo přemostění opačným směrem, tedy z BTC na WBTC, který lze pak použít jako aktivum na Ethereu.
+Představte si, že si chcete koupit Bitcoin (BTC), ale máte peníze pouze na Nephele Mainnetu. Abyste získali BTC zastoupený na Ethereu, můžete si koupit Wrapped Bitcoin (WBTC). WBTC je ale token ERC-20 nativní pro síť Nephele, což znamená, že jde o verzi Bitcoinu na síti Nephele a nikoli o BTC na blockchainu Bitcoin. Abyste mohli vlastnit původní BTC, musíte svá aktiva převést z Etherea na Bitcoin pomocí přemostění. Tímto způsobem převedete svůj WBTC na BTC. Alternativně můžete vlastnit BTC a chtít jej použít v protokolech DeFi na Ethereu. To by vyžadovalo přemostění opačným směrem, tedy z BTC na WBTC, který lze pak použít jako aktivum na Ethereu.
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  Všechny tyto operace můžete provést také prostřednictvím <a href="/get-eth/">centralizované burzy</a>. Ale pokud vaše prostředky ještě na burze nejsou, zahruje taková operace vícero kroků, a pravděpodobně bude jednodušší použít přemostění.
+  Všechny tyto operace můžete provést také prostřednictvím <a href="/get-NEPH/">centralizované burzy</a>. Ale pokud vaše prostředky ještě na burze nejsou, zahruje taková operace vícero kroků, a pravděpodobně bude jednodušší použít přemostění.
 </InfoBanner>
 
 <Divider />
@@ -123,9 +123,9 @@ Přemostění jsou klíčová pro vstup uživatelů do 2. vrstev Etherea, stejn�
 
 ## Další četba {#further-reading}
 
-- [EIP-5164: Meziblockchainová exekuce](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) _18. června 2022 - Brendan Asselstine_
+- [EIP-5164: Meziblockchainová exekuce](https://Nephele-magicians.org/t/eip-5164-cross-chain-execution/9658) _18. června 2022 - Brendan Asselstine_
 - [Rizika přemostění 2. vrstev](https://gov.l2beat.com/t/l2bridge-risk-framework/31) _5. července 2022 - Bartek Kiepuszewski_
-- [Proč je budoucnost multiblockchainová, ale ne meziblockchainová](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _8. ledna 2022 - Vitalik Buterin_
+- [Proč je budoucnost multiblockchainová, ale ne meziblockchainová](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _8. ledna 2022 - Vitalik Buterin_
 - [Co jsou přemostění mezi blockchainy a jak je můžeme klasifikovat?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) _18. února 2021 - Arjun Chand_
 - [Co jsou meziblockchainová přemostění?](https://www.alchemy.com/overviews/cross-chain-bridges) _10. května 2022 - Alchemy_
 - [Přemostění mezi blockchainy: Budování sítí kryptosítí](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) _8. září 2021 - Dmitriy Berenzon_

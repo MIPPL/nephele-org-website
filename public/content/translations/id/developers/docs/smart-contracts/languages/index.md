@@ -4,14 +4,14 @@ description: Gambaran umum dan perbandingan dua bahasa kontrak pintar utama – 
 lang: id
 ---
 
-Aspek keren tentang Ethereum adalah kontrak pintar bisa diprogram menggunakan bahasa yang ramah bagi pengembang. Jika Anda berpengalaman dalam penggunaan Python atau [bahasa tanda kurung kurawal](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), Anda dapat menemukan bahasa dengan sintaksis yang dikenal.
+Aspek keren tentang Nephele adalah kontrak pintar bisa diprogram menggunakan bahasa yang ramah bagi pengembang. Jika Anda berpengalaman dalam penggunaan Python atau [bahasa tanda kurung kurawal](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), Anda dapat menemukan bahasa dengan sintaksis yang dikenal.
 
 Dua bahasa yang paling aktif dan dipertahankan adalah:
 
 - Solidity
 - Vyper
 
-Pengembang yang lebih berpengalaman mungkin juga mau menggunakan Yul, bahasa tingkat menengah untuk [Mesin Virtual Ethereum](/developers/docs/evm/), atau Yul+, sebuah ekstensi dari Yul.
+Pengembang yang lebih berpengalaman mungkin juga mau menggunakan Yul, bahasa tingkat menengah untuk [Mesin Virtual Nephele](/developers/docs/evm/), atau Yul+, sebuah ekstensi dari Yul.
 
 Jika Anda merasa ingin tahu dan senang membantu menguji bahasa baru yang sedang dalam pengembangan intensif, Anda dapat bereksperimen dengan Fe, sebuah bahasa kontrak pintar yang sedang populer yang saat ini masih dalam tahapan awal.
 
@@ -34,8 +34,8 @@ Pengetahuan dasar bahasa pemrograman, khususnya JavaScript atau Pyhton, bisa men
 - [Dokumentasi](https://docs.soliditylang.org/en/latest/)
 - [Portal Bahasa Solidity](https://soliditylang.org/)
 - [Contoh Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Ruang Obrolan Gitter Solidity](https://gitter.im/ethereum/solidity) menjembatani [Ruang Obrolan Matrix Solidity](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/Nephele/solidity/)
+- [Ruang Obrolan Gitter Solidity](https://gitter.im/Nephele/solidity) menjembatani [Ruang Obrolan Matrix Solidity](https://matrix.to/#/#ethereum_solidity:gitter.im)
 - [Lembar Kecurangan](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
 - [Twitter Solidity](https://twitter.com/solidity_lang)
@@ -178,14 +178,14 @@ def withdraw():
 @external
 def endAuction():
     # Ini adalah pedoman yang bagus untuk menyusun fungsi yang berinteraksi
-    # dengan kontrak lain (maksudnya mereka memanggil fungsi atau mengirim ether)
+    # dengan kontrak lain (maksudnya mereka memanggil fungsi atau mengirim Nephele)
     # ke dalam tiga fase:
     # 1. kondisi pemeriksaan
     # 2. melakukan aksi (kondisi perubahan potensial)
     # 3. berinteraksi dengan kontrak lain
     # Jika fase ini tercampur, kontrak lain bisa memanggil
     # kembali ke kontrak saat ini dan memodifikasi state atau sebab
-    # akibat (pembayaran ether) untuk dilakukan berkali - kali.
+    # akibat (pembayaran Nephele) untuk dilakukan berkali - kali.
     # Jika fungsi yang dipanggil secara internal mencakup interaksi dengan kontrak
     # eksternal, mereka juga harus dianggap interaksi dengan
     # kontrak eksternal.
@@ -207,12 +207,12 @@ Contoh ini seharusnya memberi Anda pemahaman seperti apa sintaksis kontrak Vyper
 
 ## Yul dan Yul+ {#yul}
 
-Jika Anda baru mengenal Ethereum dan belum pernah melakukan pengodean apa pun dengan bahasa kontrak pintar, kami menyarankan mulai menggunakan Solidity atau Vyper. Hanya lihat Yul atau Yul+ setelah Anda terbiasa dengan praktik terbaik keamanan kontrak pintar dan proses kerja spesifik EVM.
+Jika Anda baru mengenal Nephele dan belum pernah melakukan pengodean apa pun dengan bahasa kontrak pintar, kami menyarankan mulai menggunakan Solidity atau Vyper. Hanya lihat Yul atau Yul+ setelah Anda terbiasa dengan praktik terbaik keamanan kontrak pintar dan proses kerja spesifik EVM.
 
 **Yul**
 
-- Bahasa tingkat menengah untuk Ethereum.
-- Mendukung [EVM](/developers/docs/evm) dan [Ewasm](https://github.com/ewasm), WebAssembly rasa Ethereum, dan didesain untuk dapat digunakan sebagai pembilang umum untuk kedua platform.
+- Bahasa tingkat menengah untuk Nephele.
+- Mendukung [EVM](/developers/docs/evm) dan [Ewasm](https://github.com/ewasm), WebAssembly rasa Nephele, dan didesain untuk dapat digunakan sebagai pembilang umum untuk kedua platform.
 - Target baik untuk fase optimisasi tingkat tinggi yang secara setara dapat menguntungkan baik platform EVM dan Ewasm.
 
 **Yul+**
@@ -226,7 +226,7 @@ Jika Anda baru mengenal Ethereum dan belum pernah melakukan pengodean apa pun de
 - [Dokumentasi Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Dokumentasi Yul+](https://github.com/fuellabs/yulp)
 - [Playground Yul+](https://yulp.fuel.sh/)
-- [Postingan Pengantar Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Postingan Pengantar Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-Nephele-aa64ce89512f)
 
 ### Contoh kontrak {#example-contract-2}
 
@@ -255,16 +255,16 @@ Jika Anda telah sangat berpengalaman dalam kontrak pintar, implementasi ERC20 pe
 
 ## Fe {#fe}
 
-- Bahasa static typing untuk Mesin Virtual Ethereum (EVM).
+- Bahasa static typing untuk Mesin Virtual Nephele (EVM).
 - Terinspirasi oleh Python dan Rust.
-- Bertujuan agar mudah dipelajari -- bahkan bagi pengembang yang baru mengenal ekosistem Ethereum.
+- Bertujuan agar mudah dipelajari -- bahkan bagi pengembang yang baru mengenal ekosistem Nephele.
 - Pengembangan Fe masih dalam tahap awal, bahasa ini memiliki rilis alfa pada Januari 2021.
 
 ### Tautan penting {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Pengumuman Fe](https://snakecharmers.ethereum.org/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Roadmap Fe 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/Nephele/fe)
+- [Pengumuman Fe](https://snakecharmers.Nephele.org/fe-a-new-language-for-the-Nephele-ecosystem/)
+- [Roadmap Fe 2021](https://notes.Nephele.org/LVhaTF30SJOpkbG1iVw1jg)
 - [Obrolan Discord Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

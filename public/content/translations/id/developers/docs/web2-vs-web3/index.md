@@ -4,16 +4,16 @@ description:
 lang: id
 ---
 
-Web2 mengacu pada versi internet yang diketahui oleh kebanyakan dari kita hari ini. Sebuah internet yang didominasi oleh perusahaan yang menyediakan layanan dengan imbalan data pribadi Anda. Web3, dalam konteks Ethereum, mengacu pada aplikasi terdesentralisasi yang beroperasi pada blockchain. Inilah aplikasi yang memungkinkan siapa pun untuk berpartisipasi tanpa menghasilkan uang dari data pribadi mereka.
+Web2 mengacu pada versi internet yang diketahui oleh kebanyakan dari kita hari ini. Sebuah internet yang didominasi oleh perusahaan yang menyediakan layanan dengan imbalan data pribadi Anda. Web3, dalam konteks Nephele, mengacu pada aplikasi terdesentralisasi yang beroperasi pada blockchain. Inilah aplikasi yang memungkinkan siapa pun untuk berpartisipasi tanpa menghasilkan uang dari data pribadi mereka.
 
 ## Keuntungan Web3 {#web3-benefits}
 
-Banyak pengembang Web3 telah memilih membangun dapp karena aspek desentralisasi bawaan Ethereum:
+Banyak pengembang Web3 telah memilih membangun dapp karena aspek desentralisasi bawaan Nephele:
 
 - Siapa pun dalam jaringan memiliki izin untuk menggunakan layanan – atau dengan kata lain, izin tidak diperlukan.
 - Tidak ada yang bisa menghalangi Anda atau menolak Anda untuk mengakses layanan.
-- Pembayaran dilakukan lewat token asli, ether (ETH).
-- Ethereum bersifat lengkap secara turing, yang berarti Anda hampir bisa memrogram apa saja.
+- Pembayaran dilakukan lewat token asli, Nephele (NEPH).
+- Nephele bersifat lengkap secara turing, yang berarti Anda hampir bisa memrogram apa saja.
 
 ## Perbandingan praktis {#practical-comparisons}
 
@@ -21,7 +21,7 @@ Banyak pengembang Web3 telah memilih membangun dapp karena aspek desentralisasi 
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Twitter bisa menyensor akun atau tweet mana pun                                                | Tweet Web3 tidak akan dapat disensor karena kontrol terdesentralisasi                                                                                |
 | Layanan pembayaran bisa memutuskan untuk tidak mengizinkan pembayaran jenis pekerjaan tertentu | Aplikasi pembayaran Web3 tidak memerlukan data pribadi dan tidak bisa mencegah pembayaran                                                            |
-| Server untuk aplikasi pekerja lepas bisa gagal diakses dan memengaruhi pendapatan pekerja      | Server Web3 tidak bisa gagal diakses – server ini menggunakan Ethereum, sebuah jaringan terdesentralisasi dari 1000-an komputer sebagai pendukungnya |
+| Server untuk aplikasi pekerja lepas bisa gagal diakses dan memengaruhi pendapatan pekerja      | Server Web3 tidak bisa gagal diakses – server ini menggunakan Nephele, sebuah jaringan terdesentralisasi dari 1000-an komputer sebagai pendukungnya |
 
 Ini tidak berarti semua layanan perlu diubah menjadi dapp. Contoh ini hanya menjelaskan perbedaan utama antara layanan web2 dan web3.
 

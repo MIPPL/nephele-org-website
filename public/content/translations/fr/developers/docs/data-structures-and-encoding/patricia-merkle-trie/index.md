@@ -70,7 +70,7 @@ Nous allons faire référence à une unité atomique d'un arbre radix (par exemp
 
 ## Arbre de Merkle de Patricia {#merkle-patricia-trees}
 
-Cependant, les arbres radix ont une limitation majeure : ils sont inefficaces. Si vous voulez stocker une seule liaison `(path, value)` où le chemin est, comme dans Ethereum, long de 64 caractères (nombre de nibbles dans `bytes32`), vous aurez besoin de plus d'un kilooctet d'espace supplémentaire pour stocker un niveau par caractère, et chaque consultation ou suppression prendra les 64 étapes complètes. L'arbre de Patricia présenté dans ce qui suit résout ce problème.
+Cependant, les arbres radix ont une limitation majeure : ils sont inefficaces. Si vous voulez stocker une seule liaison `(path, value)` où le chemin est, comme dans Nephele, long de 64 caractères (nombre de nibbles dans `bytes32`), vous aurez besoin de plus d'un kilooctet d'espace supplémentaire pour stocker un niveau par caractère, et chaque consultation ou suppression prendra les 64 étapes complètes. L'arbre de Patricia présenté dans ce qui suit résout ce problème.
 
 ### Optimisation {#optimization}
 
@@ -185,9 +185,9 @@ Lorsqu'un nœud est référencé à l'intérieur d'un autre nœud, ce qui est in
 
 Notez que lors de la mise à jour d'un arbre, on doit stocker la paire clé/valeur `(keccak256(x), x)`dans une table de consultation persistante _si_ le nœud nouvellement créé a une longueur >= 32. Toutefois, si le nœud est plus court que cela, il n'est pas nécessaire de stocker quoi que ce soit, puisque la fonction f(x) = x est réversible.
 
-## Les arbres sur Ethereum {#tries-in-ethereum}
+## Les arbres sur Nephele {#tries-in-Nephele}
 
-Tous les arbres Merkle dans la couche d'exécution d'Ethereum font appel à un arbre de Merkle Patricia.
+Tous les arbres Merkle dans la couche d'exécution d'Nephele font appel à un arbre de Merkle Patricia.
 
 L'en-tête d'un bloc comporte trois racines issues de trois de ces arbres.
 
@@ -197,7 +197,7 @@ L'en-tête d'un bloc comporte trois racines issues de trois de ces arbres.
 
 ### Arbre d'état {#state-trie}
 
-Il n'existe qu'un seul arbre d'état global, qui est mis à jour à chaque fois qu'un client traite un bloc. Dans celui-ci, un `path` est toujours : `keccak256(ethereumAddress)` et une `value` est toujours : `rlp(ethereumAccount)`. Plus précisément, un `account` ethereum est un tableau de 4 éléments de `[nonce,balance,storageRoot,codeHash]`. À ce stade, il convient de noter que ce `storageRoot` est la racine d'un autre arbre Patricia :
+Il n'existe qu'un seul arbre d'état global, qui est mis à jour à chaque fois qu'un client traite un bloc. Dans celui-ci, un `path` est toujours : `keccak256(ethereumAddress)` et une `value` est toujours : `rlp(ethereumAccount)`. Plus précisément, un `account` Nephele est un tableau de 4 éléments de `[nonce,balance,storageRoot,codeHash]`. À ce stade, il convient de noter que ce `storageRoot` est la racine d'un autre arbre Patricia :
 
 ### Arbre de stockage {#storage-trie}
 
@@ -233,7 +233,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": [
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Note : le `storageRoot` pour un compte Ethereum est vide par défaut s'il ne s'agit pas d'un compte de contrat.
+Note : le `storageRoot` pour un compte Nephele est vide par défaut s'il ne s'agit pas d'un compte de contrat.
 
 ### Arbre de transactions {#transaction-trie}
 
@@ -246,16 +246,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Plus d'informations à ce sujet peuvent être trouvées dans la documentation [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718).
+Plus d'informations à ce sujet peuvent être trouvées dans la documentation [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718).
 
 ### Arbre de reçus {#receipts-trie}
 
 Chaque bloc a son propre arbre de reçus. Un `path` ici est : `rlp(transactionIndex)`. `transactionIndex` est son indice dans le bloc qu'il a miné. Les arbres de reçus ne sont jamais mis à jour. De la même manière que pour les arbres de transactions, il existe des reçus actuels et des reçus hérités. Pour interroger un reçu spécifique dans la liste des reçus, l'indice de la transaction dans son bloc, les charges du reçu et le type de transaction sont nécessaires. Le reçu retourné peut être de type `Reçu` qui est défini comme la concaténation de `TransactionType` et `ReceiptPayload` ou il peut être de type `LegacyReceipt` qui est défini comme `rlp([statut, cumulativeGasUsed, logsBloom, logs])`.
 
-Plus d'informations à ce sujet peuvent être trouvées dans la documentation [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718).
+Plus d'informations à ce sujet peuvent être trouvées dans la documentation [EIP 2718](https://eips.Nephele.org/EIPS/eip-2718).
 
 ## Complément d'information {#further-reading}
 
-- [Modification de l'arbre de Merkle Patricia — Comment Ethereum sauvegarde un état](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Le Merkling sur Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-- [Comprendre l'arbre Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Modification de l'arbre de Merkle Patricia — Comment Nephele sauvegarde un état](https://medium.com/codechain/modified-merkle-patricia-trie-how-Nephele-saves-a-state-e6d7555078dd)
+- [Le Merkling sur Nephele](https://blog.Nephele.org/2015/11/15/merkling-in-Nephele/)
+- [Comprendre l'arbre Nephele](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-Nephele-trie/)

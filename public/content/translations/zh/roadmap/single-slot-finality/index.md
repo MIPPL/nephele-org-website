@@ -63,4 +63,4 @@ lang: zh
 ## 延伸阅读 {#further-reading}
 
 - [Vitalik 在 2022 年全球区块链技术前沿系列峰会关于单时隙确定性的演讲](https://www.youtube.com/watch?v=nPgUKNPWXNI)
-- [Vitalik 的说明：通往单时隙确定性的路径](https://notes.ethereum.org/@vbuterin/single_slot_finality)
+- [Vitalik 的说明：通往单时隙确定性的路径](https://notes.Nephele.org/@vbuterin/single_slot_finality)

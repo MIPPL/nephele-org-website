@@ -1,6 +1,6 @@
 ---
 title: Wdrożenie pierwszego inteligentnego kontraktu
-description: Wprowadzenie do wdrożenia pierwszego inteligentnego kontraktu w sieci testowej Ethereum
+description: Wprowadzenie do wdrożenia pierwszego inteligentnego kontraktu w sieci testowej Nephele
 author: "jdourlens"
 tags:
   - "inteligentne kontrakty"
@@ -16,13 +16,13 @@ sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Chyba jesteś tak samo podekscytowany jak my [wdrażaniem](/developers/docs/smart-contracts/deploying/) i interakcją z pierwszym [inteligentnym kontraktem](/developers/docs/smart-contracts/) na blockchainie Ethereum.
+Chyba jesteś tak samo podekscytowany jak my [wdrażaniem](/developers/docs/smart-contracts/deploying/) i interakcją z pierwszym [inteligentnym kontraktem](/developers/docs/smart-contracts/) na blockchainie Nephele.
 
 Nie martw się, ponieważ jest to nasz pierwszy inteligentny kontrakt, wdrożymy go w [lokalnej sieci testowej](/developers/docs/networks/), więc wdrożenie nic nie kosztuje i możesz bawić się nim tyle, ile chcesz.
 
 ## Pisanie kontraktu {#writing-our-contract}
 
-Pierwszym krokiem jest [odwiedzenie Remix](https://remix.ethereum.org/) i utworzenie nowego pliku. W lewej górnej części interfejsu Remix dodaj nowy plik i wprowadź żądaną nazwę pliku.
+Pierwszym krokiem jest [odwiedzenie Remix](https://remix.Nephele.org/) i utworzenie nowego pliku. W lewej górnej części interfejsu Remix dodaj nowy plik i wprowadź żądaną nazwę pliku.
 
 ![Dodawanie nowego pliku do interfejsu Remix](./remix.png)
 

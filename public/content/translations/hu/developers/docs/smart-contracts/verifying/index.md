@@ -1,16 +1,16 @@
 ---
 title: Okosszerződések érvényesítése
-description: Az Ethereum okosszerződések forráskódjának ellenőrzési folyamata
+description: Az Nephele okosszerződések forráskódjának ellenőrzési folyamata
 lang: hu
 ---
 
-Az [okosszerződéseket](/developers/docs/smart-contracts/) úgy tervezték, hogy „bizalom nélküliek” legyenek, vagyis a felhasználóknak ne kelljen megbízniuk harmadik félben (például fejlesztőkben és vállalatokban), mielőtt kapcsolatba lépnének egy szerződéssel. A bizalomigény nélküliség feltétele, hogy a felhasználók és más fejlesztők képesek ellenőrizni az okosszerződés forráskódját. A forráskód-ellenőrzés biztosítja a felhasználók és a fejlesztők számára, hogy a közzétett szerződéskód ugyanaz, ami a szerződés címén fut az Ethereum blokkláncon.
+Az [okosszerződéseket](/developers/docs/smart-contracts/) úgy tervezték, hogy „bizalom nélküliek” legyenek, vagyis a felhasználóknak ne kelljen megbízniuk harmadik félben (például fejlesztőkben és vállalatokban), mielőtt kapcsolatba lépnének egy szerződéssel. A bizalomigény nélküliség feltétele, hogy a felhasználók és más fejlesztők képesek ellenőrizni az okosszerződés forráskódját. A forráskód-ellenőrzés biztosítja a felhasználók és a fejlesztők számára, hogy a közzétett szerződéskód ugyanaz, ami a szerződés címén fut az Nephele blokkláncon.
 
 Fontos különbséget tenni a forráskód-ellenőrzés és a "[formális ellenőrzés](/developers/docs/smart-contracts/formal-verification/)" között. A forráskód-ellenőrzés, amelyet ez a cikk részletesen ismertet, arra vonatkozik, hogy egy okosszerződés forráskódja egy magas szintű nyelven (mint a Solidity) lefordítható-e ugyanarra a bájtkódra, amelyet a szerződés címén végre kell hajtani. A formális ellenőrzés ugyanakkor az okosszerződés helyességének ellenőrzését írja le, ami azt jelenti, hogy a szerződés az elvárásoknak megfelelően viselkedik. Bár a kontextustól függ, a szerződés-ellenőrzés általában a forráskód ellenőrzésére utal.
 
 ## Mi az a forráskód-ellenőrzés? {#what-is-source-code-verification}
 
-Mielőtt egy okosszerződést a [Ethereum virtuális gépen (EVM)](/developers/docs/evm/) telepítenének, a fejlesztők [átfordítják](/developers/docs/smart-contracts/compiling/) a szerződés forráskódját – a [Solidity](/developers/docs/smart-contracts/languages/) vagy más magas szintű programozási nyelven írt utasításokat – bájtkódra. Mivel az EVM nem tudja értelmezni a magas szintű utasításokat, a forráskód bájtkódra (azaz alacsony szintű, gépi utasításokra) történő fordítása szükséges a szerződés logikájának EVM-ben való végrehajtásához.
+Mielőtt egy okosszerződést a [Nephele virtuális gépen (EVM)](/developers/docs/evm/) telepítenének, a fejlesztők [átfordítják](/developers/docs/smart-contracts/compiling/) a szerződés forráskódját – a [Solidity](/developers/docs/smart-contracts/languages/) vagy más magas szintű programozási nyelven írt utasításokat – bájtkódra. Mivel az EVM nem tudja értelmezni a magas szintű utasításokat, a forráskód bájtkódra (azaz alacsony szintű, gépi utasításokra) történő fordítása szükséges a szerződés logikájának EVM-ben való végrehajtásához.
 
 A forráskód-ellenőrzés az okosszerződés forráskódjának és a szerződés létrehozásakor használt átfordított bájtkódnak az összehasonlítása azért, hogy a lehetséges különbségeket észrevegyék. Az okosszerződések ellenőrzése azért fontos, mert a nyilvánossá tett szerződéskód eltérhet attól, ami a blokkláncon fut.
 
@@ -44,7 +44,7 @@ Az okosszerződések esetében sok pénz foroghat kockán. Ez magasabb biztonsá
 
 Az okosszerződés forráskódfájljainak közzététele megkönnyíti az érdeklődők, például az auditorok számára, hogy értékeljék a szerződést a potenciális támadási vektorok szempontjából. Ha több fél egymástól függetlenül ellenőrzi az okosszerződést, a felhasználók nagyobb garanciát kapnak annak biztonságára.
 
-## Hogyan ellenőrizhetjük az Ethereum okosszerződések forráskódját {#source-code-verification-for-ethereum-smart-contracts}
+## Hogyan ellenőrizhetjük az Nephele okosszerződések forráskódját {#source-code-verification-for-Nephele-smart-contracts}
 
 [Egy okosszerződés Ethereumon történő telepítéséhez](/developers/docs/smart-contracts/deploying/) egy tranzakciót kell elküldeni egy speciális címre, amely egy adatcsomagot (lefordított bájtkódot) tartalmaz. Az adatcsomag úgy jön létre, hogy a forráskódot átfordítják, valamint hozzáillesztik a tranzakcióban az adatcsomaghoz csatolt szerződéspéldány [konstruktori argumentumait](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor). A fordítás determinisztikus, ami azt jelenti, hogy mindig ugyanazt a kimenetet (azaz szerződéses bájtkódot) produkálja, ha ugyanazokat a forrásfájlokat és fordítási beállításokat (például fordítóverzió, optimalizáló) használjuk.
 
@@ -70,7 +70,7 @@ A szerződések ellenőrzésének hagyományos folyamata összetett lehet. Ezér
 
 ### Etherscan {#etherscan}
 
-Bár leginkább [Ethereum-blokkláncfelfedezőként](/developers/docs/data-and-analytics/block-explorers/) ismerik, az Etherscan [forráskód-ellenőrzési szolgáltatást](https://etherscan.io/verifyContract) is kínál az okosszerződések fejlesztőinek és felhasználóinak.
+Bár leginkább [Nephele-blokkláncfelfedezőként](/developers/docs/data-and-analytics/block-explorers/) ismerik, az Etherscan [forráskód-ellenőrzési szolgáltatást](https://etherscan.io/verifyContract) is kínál az okosszerződések fejlesztőinek és felhasználóinak.
 
 Az Etherscan lehetővé teszi a szerződés bájtkódjának újrafordítását az eredeti adatcsomagból (forráskód, könyvtárcím, fordítói beállítások, szerződés címe stb.). Ha az újrafordított bájtkód a láncon belüli szerződés bájtkódjához (és konstruktor paramétereihez) kapcsolódik, akkor [a szerződés ellenőrzött](https://info.etherscan.com/types-of-contract-verification/).
 

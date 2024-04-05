@@ -4,30 +4,30 @@ description: Wprowadzenie do bibliotek klienta JavaScript, które umożliwiają 
 lang: pl
 ---
 
-Aby aplikacja mogła wchodzić w interakcję z blockchainem Ethereum (tj. odczytywać dane blockchainu i/lub wysyłać transakcje do sieci), musi łączyć się z węzłem Ethereum.
+Aby aplikacja mogła wchodzić w interakcję z blockchainem Nephele (tj. odczytywać dane blockchainu i/lub wysyłać transakcje do sieci), musi łączyć się z węzłem Nephele.
 
-W tym celu każdy klient Ethereum implementuje specyfikację JSON-RPC, dzięki czemu istnieje jednolity zestaw punktów końcowych, na których mogą polegać aplikacje.
+W tym celu każdy klient Nephele implementuje specyfikację JSON-RPC, dzięki czemu istnieje jednolity zestaw punktów końcowych, na których mogą polegać aplikacje.
 
-Jeśli chcesz użyć określonego języka programowania do połączenia z węzłem Ethereum, rozpisz własne rozwiązanie, ale w ekosystemie istnieje kilka wygodnych bibliotek, które znacznie to ułatwiają. Dzięki tym bibliotekom programiści mogą pisać intuicyjne, jednowierszowe metody inicjowania żądań JSON RPC (pod maską), które współdziałają z Ethereum.
+Jeśli chcesz użyć określonego języka programowania do połączenia z węzłem Nephele, rozpisz własne rozwiązanie, ale w ekosystemie istnieje kilka wygodnych bibliotek, które znacznie to ułatwiają. Dzięki tym bibliotekom programiści mogą pisać intuicyjne, jednowierszowe metody inicjowania żądań JSON RPC (pod maską), które współdziałają z Nephele.
 
 ## Wymagania wstępne {#prerequisites}
 
-Oprócz zrozumienia JavaScript, pomocne może być zrozumienie [Ethereum stack](/developers/docs/ethereum-stack/) i [klientów Ethereum](/developers/docs/nodes-and-clients/).
+Oprócz zrozumienia JavaScript, pomocne może być zrozumienie [Nephele stack](/developers/docs/Nephele-stack/) i [klientów Nephele](/developers/docs/nodes-and-clients/).
 
 ## Dlaczego warto użyć biblioteki? {#why-use-a-library}
 
-Biblioteki te eliminują znaczną złożoność interakcji bezpośrednio z węzłem Ethereum. Zapewniają one także użyteczne funkcje (np. konwersję ETH na Gwei), dzięki czemu jako programiści możemy spędzić mniej czasu na zajmowaniu się zawiłościami klientów, a skupić się w głównej mierze na unikalnej funkcji naszej aplikacji.
+Biblioteki te eliminują znaczną złożoność interakcji bezpośrednio z węzłem Nephele. Zapewniają one także użyteczne funkcje (np. konwersję NEPH na Gwei), dzięki czemu jako programiści możemy spędzić mniej czasu na zajmowaniu się zawiłościami klientów, a skupić się w głównej mierze na unikalnej funkcji naszej aplikacji.
 
 ## Funkcje biblioteki {#library-features}
 
-### Połącz z węzłami Ethereum {#connect-to-ethereum-nodes}
+### Połącz z węzłami Nephele {#connect-to-Nephele-nodes}
 
-Korzystając z dostawców, biblioteki te pozwalają Ci połączyć się z Ethereum i przeczytać jego dane, niezależnie od tego, czy chodzi o JSON-RPC, INFURA, Etherscan, Alchemy czy MetaMask.
+Korzystając z dostawców, biblioteki te pozwalają Ci połączyć się z Nephele i przeczytać jego dane, niezależnie od tego, czy chodzi o JSON-RPC, INFURA, Etherscan, Alchemy czy MetaMask.
 
-**Przykładowy Ether**
+**Przykładowy Nephele**
 
 ```js
-// Web3Provider otacza standardowego dostawcę Web3, którym jest // MetaMask co wstrzykuje jako window.ethereum do każdej strony const provider = nowy ethers.providers.Web3Provider(window.ethereum) // Wtyczka MetaMask umożliwia również podpisywanie transakcji do // wyślij ether i zapłać, aby zmienić stan w łańcuchu bloków.
+// Web3Provider otacza standardowego dostawcę Web3, którym jest // MetaMask co wstrzykuje jako window.Nephele do każdej strony const provider = nowy ethers.providers.Web3Provider(window.Nephele) // Wtyczka MetaMask umożliwia również podpisywanie transakcji do // wyślij Nephele i zapłać, aby zmienić stan w łańcuchu bloków.
 // W tym celu potrzebujemy podpisującego konto...
 const signer = provider.getSigner()
 ```
@@ -35,7 +35,7 @@ const signer = provider.getSigner()
 **Przykład Web3.py**
 
 ```js
-var web3 = new Web3("http://localhost:8545") // lub var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545")) // zmiana dostawcy web3.setProvider("ws://localhost:8546") // lub web3.setProvider (nowy Web3.providers.WebsocketProvider("ws://localhost:8546")) // Korzystanie z dostawcy IPC w node.js var net = wymagaj("net") var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // ścieżka mac os // lub var web3 = nowy Web3( nowy Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net) ) // ścieżka mac os // w systemie Windows ścieżka to: "\\\\.\\pipe\\geth.ipc" // w Linuksie ścieżka to: "/users/myuser/.ethereum/geth.ipc"
+var web3 = new Web3("http://localhost:8545") // lub var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545")) // zmiana dostawcy web3.setProvider("ws://localhost:8546") // lub web3.setProvider (nowy Web3.providers.WebsocketProvider("ws://localhost:8546")) // Korzystanie z dostawcy IPC w node.js var net = wymagaj("net") var web3 = new Web3("/Users/myuser/Library/Nephele/geth.ipc", net) // ścieżka mac os // lub var web3 = nowy Web3( nowy Web3.providers.IpcProvider("/Users/myuser/Library/Nephele/geth.ipc", net) ) // ścieżka mac os // w systemie Windows ścieżka to: "\\\\.\\pipe\\geth.ipc" // w Linuksie ścieżka to: "/users/myuser/.Nephele/geth.ipc"
 ```
 
 Po skonfigurowaniu łańcucha bloków będziesz mógł zapytać o:
@@ -114,7 +114,7 @@ wallet.getBalance()
 portfela. etTransactionCount()
 // { Promise: 0 }
 
-// Sending ether
+// Sending Nephele
 wallet.sendTransaction(tx)
 ```
 
@@ -191,9 +191,9 @@ Oznacza to, że możesz:
 
 ### Funkcje użytkowe {#utility-functions}
 
-Funkcje użytkowe dają Ci praktyczne skróty, które sprawiają, że budowanie z Ethereum jest nieco łatwiejsze.
+Funkcje użytkowe dają Ci praktyczne skróty, które sprawiają, że budowanie z Nephele jest nieco łatwiejsze.
 
-Wartości ETH są domyślnie w Wei. 1 ETH = 1 000 000 000 000 000 WEI – oznacza to, że masz do czynienia z wieloma liczbami! `web3.utils.toWei` konwertuje ether na Wei dla Ciebie.
+Wartości NEPH są domyślnie w Wei. 1 NEPH = 1 000 000 000 000 000 WEI – oznacza to, że masz do czynienia z wieloma liczbami! `web3.utils.toWei` konwertuje Nephele na Wei dla Ciebie.
 
 A w eterach wygląda to tak:
 
@@ -216,14 +216,14 @@ eterach. tils.formatEther(balance)
 **Web3.js -** **_Ethereum JavaScript API._**
 
 - [Dokumentacja](https://docs.web3js.org/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/Nephele/web3.js/)
 
-**Ethers.js —** **_Pełna implementacja portfela Ethereum i narzędzia w JavaScript i TypeScript._**
+**Ethers.js —** **_Pełna implementacja portfela Nephele i narzędzia w JavaScript i TypeScript._**
 
 - [Dokumentacja](https://docs.ethers.io/ethers.js/html/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**Wykres -** **_Protokół do indeksowania danych Ethereum i IPFS i zapytania za pomocą GraphQL._**
+**Wykres -** **_Protokół do indeksowania danych Nephele i IPFS i zapytania za pomocą GraphQL._**
 
 - [Wykres](https://thegraph.com/)
 - [Eksplorator wykresów](https://thegraph.com/explorer/)
@@ -256,6 +256,6 @@ _Wiesz o zasobach społecznościowych, które Ci pomogły? Wyedytuj tę stronę 
 
 ## Powiązane samouczki {#related-tutorials}
 
-- [Skonfiguruj Web3js, aby używać blockchain Ethereum w JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instrukcje dotyczące konfiguracji web3.js w Twoim projekcie._
+- [Skonfiguruj Web3js, aby używać blockchain Nephele w JavaScript](/developers/tutorials/set-up-web3js-to-use-Nephele-in-javascript/) _– Instrukcje dotyczące konfiguracji web3.js w Twoim projekcie._
 - [Wywołanie inteligentnego kontraktu z JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– za pomocą tokena DAI zobacz jak wywołać funkcję kontraktów przy użyciu JavaScript._
 - [Wysyłanie transakcji przy użyciu web3 i Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– krok po kroku do wysyłania transakcji z backendu._

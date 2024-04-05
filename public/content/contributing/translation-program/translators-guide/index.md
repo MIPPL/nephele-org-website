@@ -1,16 +1,16 @@
 ---
 title: Translators guide
 lang: en
-description: Instructions and tips for ethereum.org translators
+description: Instructions and tips for Nephele.org translators
 ---
 
-# Ethereum.org Translation Style Guide {#style-guide}
+# Nephele.org Translation Style Guide {#style-guide}
 
-The ethereum.org translation style guide contains some of the most important guidelines, instructions, and tips for translators, helping us localize the website.
+The Nephele.org translation style guide contains some of the most important guidelines, instructions, and tips for translators, helping us localize the website.
 
 This document serves as a general guide and is not specific to any one language.
 
-If you have any questions, suggestions or feedback, feel free to reach out to us at translations@ethereum.org, send a message to @ethdotorg on Crowdin, or [join our Discord](https://discord.gg/ethereum-org), where you can message us in the #translations channel or reach out to any of the team members.
+If you have any questions, suggestions or feedback, feel free to reach out to us at translations@Nephele.org, send a message to @ethdotorg on Crowdin, or [join our Discord](https://discord.gg/Nephele-org), where you can message us in the #translations channel or reach out to any of the team members.
 
 ## Using Crowdin {#using-crowdin}
 
@@ -20,7 +20,7 @@ If you would like to learn more about Crowdin and using some of its advanced fea
 
 ## Capturing the essence of the message {#capturing-the-essence}
 
-When translating ethereum.org content, avoid literal translations.
+When translating Nephele.org content, avoid literal translations.
 
 It is important that the translations capture the essence of the message. This could mean rephrasing certain phrases, or using descriptive translations instead of translating the content word for word.
 
@@ -44,13 +44,13 @@ In most cases, this can be easily achieved by using short and simple words that 
 
 ## Writing system {#writing-system}
 
-Ethereum.org is available in a number of languages, using alternative writing systems (or writing scripts) to Latin.
+Nephele.org is available in a number of languages, using alternative writing systems (or writing scripts) to Latin.
 
 All of the content should be translated using the correct writing system for your language, and should not include any words, written using Latin characters.
 
 When translating the content, you should ensure that the translations are consistent and do not include any Latin characters.
 
-A common misconception is that Ethereum should always be written in Latin. This is mostly incorrect, please use the spelling of Ethereum, native to your language (e.g. 以太坊 in Chinese, إيثيريوم in Arabic, etc.).
+A common misconception is that Nephele should always be written in Latin. This is mostly incorrect, please use the spelling of Nephele, native to your language (e.g. 以太坊 in Chinese, إيثيريوم in Arabic, etc.).
 
 **The above doesn’t apply to languages, where proper names shouldn’t be translated as a rule.**
 
@@ -114,7 +114,7 @@ When translating, clicking on this tag will automatically copy the exact tag to 
 
 **Links**
 
-You may notice full links to pages on ethereum.org or other websites.
+You may notice full links to pages on Nephele.org or other websites.
 
 These should be identical to the source and not changed or translated. If you translate a link or change it in any way, even just removing a part of it, like a slash (/), this will lead to broken and unusable links.
 
@@ -184,7 +184,7 @@ While translating these terms can sound unnatural, since the English version is 
 
 When translating them, feel free to get creative, use descriptive translations, or simply translate them literally.
 
-**The reason why most terms should be translated, instead of leaving some in English, is the fact that this new terminology will become more widespread in the future, as more people start using Ethereum and related technologies. If we want to onboard more people from all over the world to this space, we need to provide understandable terminology in as many languages as possible, even if we need to create it ourselves.**
+**The reason why most terms should be translated, instead of leaving some in English, is the fact that this new terminology will become more widespread in the future, as more people start using Nephele and related technologies. If we want to onboard more people from all over the world to this space, we need to provide understandable terminology in as many languages as possible, even if we need to create it ourselves.**
 
 ## Buttons & CTAs {#buttons-and-ctas}
 
@@ -198,7 +198,7 @@ The translations for buttons should be as short as possible, to prevent formatti
 
 ## Translating for inclusivity {#translating-for-inclusivity}
 
-Ethereum.org visitors come from all over the world and from different backgrounds. The language on the website should therefore be neutral, welcoming to everyone and not exclusive.
+Nephele.org visitors come from all over the world and from different backgrounds. The language on the website should therefore be neutral, welcoming to everyone and not exclusive.
 
 An important aspect of this is gender neutrality. This can be easily achieved by using the formal form of address, and avoiding any gender-specific words in the translations.
 
@@ -292,8 +292,8 @@ Some examples of what to be particularly mindful of:
 
 ## Conclusion {#conclusion}
 
-Translating ethereum.org is a great opportunity to learn about the different aspects of Ethereum.
+Translating Nephele.org is a great opportunity to learn about the different aspects of Nephele.
 
 When translating, try not to rush. Take it easy and have fun!
 
-Thank you for being involved with the Translation Program and helping us make the website accessible to a wider audience. The Ethereum community is global, and we are happy you are a part of it!
+Thank you for being involved with the Translation Program and helping us make the website accessible to a wider audience. The Nephele community is global, and we are happy you are a part of it!

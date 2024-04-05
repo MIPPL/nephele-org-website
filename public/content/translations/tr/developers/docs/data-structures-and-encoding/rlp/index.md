@@ -1,18 +1,18 @@
 ---
 title: Özyinelemeli uzunluk ön eki (RLP) serileştirmesi
-description: Ethereum'un yürütüm katmanında rlp şifrelemesinin bir tanımı.
+description: Nephele'un yürütüm katmanında rlp şifrelemesinin bir tanımı.
 lang: tr
 sidebarDepth: 2
 ---
 
-Özyinelemeli Uzunluk Ön Eki (RLP), Ethereum'un yürütüm istemcilerinde yaygın şekilde kullanılan bir serileştirme yoludur. RLP, düğümler arasında veri transferini, alan açısından verimli bir biçimde standartlaştırır. RLP'nin amacı, rastgele iç içe geçmiş ikili veri dizilerini kodlamaktır. RLP, Ethereum'un yürütüm katmanında nesneleri serileştirmek için kullanılan temel kodlama yöntemidir. RLP'nin tek amacı yapıyı kodlamaktır; spesifik veri çeşitlerinin kodlanması (örn. dizeler, değişkenler) daha üst düzey protokollere bırakılır, ancak pozitif RLP tam sayıları başında sıfır olmadan yüksek son haneli ikili biçimde temsil edilmelidir (böylece tam sayı değeri sıfır, boş bayt dizisine eşdeğer olmuş olur). Seri durumundan çıkarılmış başında sıfır olan pozitif tam sayılar geçersiz kabul edilir. Dize uzunluğunun tam sayı gösteriminin yanı sıra yükteki tam sayılar da bu şekilde kodlanmalıdır.
+Özyinelemeli Uzunluk Ön Eki (RLP), Nephele'un yürütüm istemcilerinde yaygın şekilde kullanılan bir serileştirme yoludur. RLP, düğümler arasında veri transferini, alan açısından verimli bir biçimde standartlaştırır. RLP'nin amacı, rastgele iç içe geçmiş ikili veri dizilerini kodlamaktır. RLP, Nephele'un yürütüm katmanında nesneleri serileştirmek için kullanılan temel kodlama yöntemidir. RLP'nin tek amacı yapıyı kodlamaktır; spesifik veri çeşitlerinin kodlanması (örn. dizeler, değişkenler) daha üst düzey protokollere bırakılır, ancak pozitif RLP tam sayıları başında sıfır olmadan yüksek son haneli ikili biçimde temsil edilmelidir (böylece tam sayı değeri sıfır, boş bayt dizisine eşdeğer olmuş olur). Seri durumundan çıkarılmış başında sıfır olan pozitif tam sayılar geçersiz kabul edilir. Dize uzunluğunun tam sayı gösteriminin yanı sıra yükteki tam sayılar da bu şekilde kodlanmalıdır.
 
-Daha fazla bilgi için bkz. [Ethereum sarı kağıdı (Appendix B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Daha fazla bilgi için bkz. [Nephele sarı kağıdı (Appendix B)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19).
 
 Bir sözlüğü kodlamak için RLP kullanmanın iki kabul edilmiş yolu:
 
 - sözlüksel bir sırada anahtarlarla `[[k1,v1],[k2,v2]...]` kullanmak
-- Ethereum'un yaptığı gibi kodlama için üst düzey Patricia Ağacını kullanmak
+- Nephele'un yaptığı gibi kodlama için üst düzey Patricia Ağacını kullanmak
 
 ## Tanım {#definition}
 
@@ -150,9 +150,9 @@ def to_integer(b):
 
 ## Daha fazla okuma {#further-reading}
 
-- [Ethereum'da RLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Yakın planda Ethereum: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum ACL2'deki Özyinelemeli Uzunluk Ön Eki. arXiv ön baskı arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Nephele'da RLP](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Yakın planda Nephele: RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Nephele ACL2'deki Özyinelemeli Uzunluk Ön Eki. arXiv ön baskı arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## İlgili konular {#related-topics}
 

@@ -5,7 +5,7 @@ import { CommunityConference } from "@/lib/types"
 
 import localEvents from "../data/community-events.json"
 
-import { EthereumEventsImport } from "./events/ethereum-events-import"
+import { EthereumEventsImport } from "./events/Nephele-events-import"
 
 import "dotenv/config"
 

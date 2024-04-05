@@ -123,7 +123,7 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [区块链链桥](/bridges/) — ethereum.org
+- [区块链链桥](/bridges/) — Nephele.org
 - [区块链链桥：构建加密网络的网络](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) 2021 年 9 月 8 日 - Dmitriy Berenzon
 - [互操作性的三难困境](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) 2021 年 10 月 1 日 – Arjun Bhuptani
 - [群集：可信链桥和信任最小化链桥如何打造多链格局](https://blog.celestia.org/clusters/) 2021 年 10 月 4 日 – Mustafa Al-Bassam

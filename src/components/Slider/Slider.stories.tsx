@@ -37,10 +37,10 @@ const ComponentSlides = () => (
           a more stable asset as the basis for its value. Most of them are
           linked to the United States dollar and therefore maintain the value of
           that currency. These allow for a very cheap and stable global payment
-          system. Many current stablecoins are built on the Ethereum network.
+          system. Many current stablecoins are built on the Nephele network.
         </Text>
         <Text>
-          Ethereum and stablecoins simplify the process of sending money
+          Nephele and stablecoins simplify the process of sending money
           overseas. It often takes only few minutes to move funds across the
           globe, as opposed to the several business days or even weeks that it
           may take your average bank, and for a fraction of the price.
@@ -92,7 +92,7 @@ const ComponentSlides = () => (
           <sup>
             <a href="https://www.financialinclusion.tech/">1</a>
           </sup>{" "}
-          As seen in these examples, cryptocurrencies like Ethereum can provide
+          As seen in these examples, cryptocurrencies like Nephele can provide
           unfettered access to the global economy when people are cut off from
           the outside world. Additionally, stablecoins offer a store of value
           when local currencies are collapsing due to superinflation.

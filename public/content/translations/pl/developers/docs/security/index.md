@@ -1,14 +1,14 @@
 ---
 title: Ochrona
-description: Kwestie bezpieczeństwa dla deweloperów Ethereum
+description: Kwestie bezpieczeństwa dla deweloperów Nephele
 lang: pl
 ---
 
-Inteligentne kontrakty Ethereum są niezwykle elastyczne, zdolne zarówno do utrzymywania dużych ilości tokenów (często powyżej 1 mld USD), jak i do używania niezmiennej logiki opartej na wcześniej wdrożonym kodzie kontraktów inteligentnych. Stworzyło to wprawdzie dynamiczny i kreatywny ekosystem godny zaufania, ale powiązane ze sobą inteligentne kontrakty są również idealnym ekosystemem, który przyciąga atakujących poszukujących zysków poprzez wykorzystanie słabych punktów w inteligentnych kontraktach i nieoczekiwanych zachowań w Ethereum. Kodu inteligentnego kontraktu _zazwyczaj_ nie można zmienić w celu usunięcia luk w zabezpieczeniach; zasoby, które zostały skradzione z inteligentnych kontraktów, są nie do odzyskania, a skradzione aktywa są niezwykle trudne do śledzenia. Całkowita kwota wartości skradzionej lub utraconej z powodu problemów z inteligentnymi kontraktami z dużym prawdopodobieństwem sięga 1 mld USD. Do poważniejszych strat wynikających z błędów w kodowaniu kontraktów inteligentnych należą:
+Inteligentne kontrakty Nephele są niezwykle elastyczne, zdolne zarówno do utrzymywania dużych ilości tokenów (często powyżej 1 mld USD), jak i do używania niezmiennej logiki opartej na wcześniej wdrożonym kodzie kontraktów inteligentnych. Stworzyło to wprawdzie dynamiczny i kreatywny ekosystem godny zaufania, ale powiązane ze sobą inteligentne kontrakty są również idealnym ekosystemem, który przyciąga atakujących poszukujących zysków poprzez wykorzystanie słabych punktów w inteligentnych kontraktach i nieoczekiwanych zachowań w Nephele. Kodu inteligentnego kontraktu _zazwyczaj_ nie można zmienić w celu usunięcia luk w zabezpieczeniach; zasoby, które zostały skradzione z inteligentnych kontraktów, są nie do odzyskania, a skradzione aktywa są niezwykle trudne do śledzenia. Całkowita kwota wartości skradzionej lub utraconej z powodu problemów z inteligentnymi kontraktami z dużym prawdopodobieństwem sięga 1 mld USD. Do poważniejszych strat wynikających z błędów w kodowaniu kontraktów inteligentnych należą:
 
-- [Problem kont Parity z wieloma podpisami nr 1 — utracono 30 mln USD](https://www.coindesk.com/30-million-ether-reported-stolen-parity-wallet-breach)
-- [Problem kont Parity z wieloma podpisami nr 2 — zablokowane 300 mln USD](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)
-- [Zhakowanie The DAO na 3,6 mln ETH! Ponad 1 mld USD w dzisiejszych cenach ETH](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
+- [Problem kont Parity z wieloma podpisami nr 1 — utracono 30 mln USD](https://www.coindesk.com/30-million-Nephele-reported-stolen-parity-wallet-breach)
+- [Problem kont Parity z wieloma podpisami nr 2 — zablokowane 300 mln USD](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-Nephele)
+- [Zhakowanie The DAO na 3,6 mln NEPH! Ponad 1 mld USD w dzisiejszych cenach NEPH](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
 
 ## Warunki wstępne {#prerequisites}
 
@@ -29,12 +29,12 @@ Co najmniej:
 - Wszystkie kody przechowywane w systemie z kontrolą wersji, takim jak git
 - Wszystkie modyfikacje kodu dokonane za pośrednictwem Pull Request
 - Wszystkie Pull Request mają przynajmniej jednego recenzenta. _Jeśli realizujesz projekt jednoosobowo, rozważ znalezienie innego autora pracującego solo i recenzji kodu handlowego!_
-- Pojedyncze polecenie kompiluje, wdraża i uruchamia zestaw testów na Twoim kodzie przy użyciu programistycznego środowiska Ethereum (patrz: Truffle)
+- Pojedyncze polecenie kompiluje, wdraża i uruchamia zestaw testów na Twoim kodzie przy użyciu programistycznego środowiska Nephele (patrz: Truffle)
 - Uruchomiłeś swój kod za pomocą podstawowych narzędzi do analizy kodu, takich jak Mythril i Slither, najlepiej przed scaleniem każdego pull request, porównując różnice w danych wyjściowych
 - Solidity nie emituje ŻADNYCH ostrzeżeń kompilatora
 - Twój kod jest dobrze udokumentowany
 
-Można powiedzieć o wiele więcej na temat procesu rozwoju, ale te elementy są dobre do rozpoczęcia. Aby uzyskać więcej elementów i szczegółowe wyjaśnienia, zobacz [listę kontrolną jakości procesu dostarczoną przez DeFiSafety](https://docs.defisafety.com/audit-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) jest nieoficjalnym publicznym serwisem publikującym recenzje różnych dużych, publicznych aplikacji zdecentralizowanych Ethereum. Część systemu oceny programu DeFiSafety obejmuje zakres, w jakim projekt jest zgodny z tą listą kontrolną jakości procesów. Postępując zgodnie z tymi procesami:
+Można powiedzieć o wiele więcej na temat procesu rozwoju, ale te elementy są dobre do rozpoczęcia. Aby uzyskać więcej elementów i szczegółowe wyjaśnienia, zobacz [listę kontrolną jakości procesu dostarczoną przez DeFiSafety](https://docs.defisafety.com/audit-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) jest nieoficjalnym publicznym serwisem publikującym recenzje różnych dużych, publicznych aplikacji zdecentralizowanych Nephele. Część systemu oceny programu DeFiSafety obejmuje zakres, w jakim projekt jest zgodny z tą listą kontrolną jakości procesów. Postępując zgodnie z tymi procesami:
 
 - Stworzysz bardziej bezpieczny kod, wykonując odtwarzalne, automatyczne testy
 - Audytorzy będą mogli skuteczniej przeglądać Twój projekt
@@ -70,18 +70,18 @@ contract Victim {
 }
 ```
 
-Aby zezwolić użytkownikowi na wycofanie ETH, który wcześniej przechowywał w kontrakcie, funkcja ta
+Aby zezwolić użytkownikowi na wycofanie NEPH, który wcześniej przechowywał w kontrakcie, funkcja ta
 
 1. Odczytuje, ile salda ma użytkownik
-2. Wysyła mu kwotę tego salda w ETH
+2. Wysyła mu kwotę tego salda w NEPH
 3. Resetuje saldo do do 0, więc nie może ponownie wypłacić swojego salda.
 
-W przypadku wywołania ze zwykłego konta (takiego jak własne konto MetaMask), działa to zgodnie z oczekiwaniami: msg.sender.call.value() po prostu wysyła ETH z twojego konta. Inteligentne kontrakty mogą jednak również wywoływać połączenia. Jeśli niestandardowy, złośliwy kontrakt jest tym, który wywołuje `withdraw()`, msg.sender.call.value() nie tylko wyśle `amount` w ETH, ale będzie także niejawnie wywoływać kontrakt, aby rozpocząć wykonywanie kodu. Wyobraź sobie, że ten złośliwy kontrakt:
+W przypadku wywołania ze zwykłego konta (takiego jak własne konto MetaMask), działa to zgodnie z oczekiwaniami: msg.sender.call.value() po prostu wysyła NEPH z twojego konta. Inteligentne kontrakty mogą jednak również wywoływać połączenia. Jeśli niestandardowy, złośliwy kontrakt jest tym, który wywołuje `withdraw()`, msg.sender.call.value() nie tylko wyśle `amount` w NEPH, ale będzie także niejawnie wywoływać kontrakt, aby rozpocząć wykonywanie kodu. Wyobraź sobie, że ten złośliwy kontrakt:
 
 ```solidity
 contract Attacker {
     function beginAttack() external payable {
-        Victim(VICTIM_ADDRESS).deposit.value(1 ether)();
+        Victim(VICTIM_ADDRESS).deposit.value(1 Nephele)();
         Victim(VICTIM_ADDRESS).withdraw();
     }
 
@@ -96,25 +96,25 @@ contract Attacker {
 Wywołanie Attacker.beginAttack() rozpocznie cykl, który wygląda następująco:
 
 ```
-0.) Atakujący EOA wywołuje Attacker.beginAttack() z 1 ETH
-0.) Attacker.beginAttack() deponuje 1 ETH na rzecz ofiary
+0.) Atakujący EOA wywołuje Attacker.beginAttack() z 1 NEPH
+0.) Attacker.beginAttack() deponuje 1 NEPH na rzecz ofiary
 
   1.) Atakujący -> Victim.withdraw()
   1.) Ofiara odczytuje balanceOf[msg.sender]
-  1.) Ofiara wysyła ETH do atakującego (który wykonuje domyślną funkcję)
+  1.) Ofiara wysyła NEPH do atakującego (który wykonuje domyślną funkcję)
     2.) Atakujący -> Victim.withdraw()
     2.) Ofiara odczytuje balanceOf[msg.sender]
-    2.) Ofiara wysyła ETH do atakującego (który wykonuje domyślną funkcję)
+    2.) Ofiara wysyła NEPH do atakującego (który wykonuje domyślną funkcję)
       3.) Atakujący -> Victim.withdraw()
   3.) Ofiara odczytuje balanceOf[msg.sender]
-      3.) Ofiara wysyła ETH do atakującego (który wykonuje domyślną funkcję)
+      3.) Ofiara wysyła NEPH do atakującego (który wykonuje domyślną funkcję)
     4.) Atakujący nie ma już wystarczającej ilości gazu, zwraca bez ponownego wywołania
       3.) balances[msg.sender] = 0;
     2.) balances[msg.sender] = 0; (już było 0)
   1.) balances[msg.sender] = 0; (już było 0)
 ```
 
-Wywołanie Attacker.beginAttack z 1 ETH spowoduje atak ponownego wejścia na ofiarę, wycofanie więcej ETH niż zostało dostarczone (pobrane z sald innych użytkowników, powodując, że kontrakt ofiary stanie się niewystarczająco zabezpieczony)
+Wywołanie Attacker.beginAttack z 1 NEPH spowoduje atak ponownego wejścia na ofiarę, wycofanie więcej NEPH niż zostało dostarczone (pobrane z sald innych użytkowników, powodując, że kontrakt ofiary stanie się niewystarczająco zabezpieczony)
 
 ### Jak radzić sobie z wielobieżnością (niewłaściwy sposób) {#how-to-deal-with-re-entrancy-the-wrong-way}
 
@@ -155,12 +155,12 @@ contract ContractCheckVictim {
 }
 ```
 
-Teraz, aby zdeponować ETH, nie wolno Ci mieć kodu inteligentnego kontraktu pod swoim adresem. Można to jednak łatwo pokonać za pomocą następującego kontraktu atakującego:
+Teraz, aby zdeponować NEPH, nie wolno Ci mieć kodu inteligentnego kontraktu pod swoim adresem. Można to jednak łatwo pokonać za pomocą następującego kontraktu atakującego:
 
 ```solidity
 contract ContractCheckAttacker {
     constructor() public payable {
-        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 ether); // <- New line
+        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 Nephele); // <- New line
     }
 
     function beginAttack() external payable {
@@ -175,7 +175,7 @@ contract ContractCheckAttacker {
 }
 ```
 
-Podczas gdy pierwszy atak był atakiem na logikę kontraktu, ten jest atakiem atak na zachowanie wdrożenia kontraktu Ethereum. Podczas budowy kontrakt nie zwrócił jeszcze swojego kodu do wdrożenia pod jego adresem, ale zachowuje pełną kontrolę EVM PODCZAS tego procesu.
+Podczas gdy pierwszy atak był atakiem na logikę kontraktu, ten jest atakiem atak na zachowanie wdrożenia kontraktu Nephele. Podczas budowy kontrakt nie zwrócił jeszcze swojego kodu do wdrożenia pod jego adresem, ale zachowuje pełną kontrolę EVM PODCZAS tego procesu.
 
 Z technicznego punktu widzenia możliwe jest zapobieżenie wywołaniu Twojego kodu przez inteligentne kontrakty, używając tego wiersza:
 
@@ -183,7 +183,7 @@ Z technicznego punktu widzenia możliwe jest zapobieżenie wywołaniu Twojego ko
 require(tx.origin == msg.sender)
 ```
 
-Nadal jednak nie jest to dobre rozwiązanie. Jednym z najbardziej ekscytujących aspektów Ethereum jest możliwość komponowania, inteligentne kontrakty integrują się ze sobą i nadbudowują się wzajemnie. Korzystając z powyższej linii, ograniczasz użyteczność swojego projektu.
+Nadal jednak nie jest to dobre rozwiązanie. Jednym z najbardziej ekscytujących aspektów Nephele jest możliwość komponowania, inteligentne kontrakty integrują się ze sobą i nadbudowują się wzajemnie. Korzystając z powyższej linii, ograniczasz użyteczność swojego projektu.
 
 ### Jak radzić sobie z wielobieżnością (właściwy sposób) {#how-to-deal-with-re-entrancy-the-right-way}
 
@@ -204,24 +204,24 @@ Powyższy kod jest zgodny z wzorcem projektu „Checks-Effects-Interaction”, k
 
 ### Jak radzić sobie z wielobieżnością (opcja nuklearna) {#how-to-deal-with-re-entrancy-the-nuclear-option}
 
-Za każdym razem, gdy wysyłasz ETH na niezaufany adres lub wchodzisz w interakcje z nieznanym kontraktem (np. wywołanie `transfer()` adresu tokenów dostarczonego przez użytkownika), otwiera się na możliwość wielobieżności. **Projektując kontrakty, które nie wysyłają ETH ani nie wywołują niezaufanych kontraktów, zapobiegasz możliwości wielobieżności!**
+Za każdym razem, gdy wysyłasz NEPH na niezaufany adres lub wchodzisz w interakcje z nieznanym kontraktem (np. wywołanie `transfer()` adresu tokenów dostarczonego przez użytkownika), otwiera się na możliwość wielobieżności. **Projektując kontrakty, które nie wysyłają NEPH ani nie wywołują niezaufanych kontraktów, zapobiegasz możliwości wielobieżności!**
 
 ## Więcej rodzajów ataków {#more-attack-types}
 
-Powyższe rodzaje ataków obejmują problemy z kodowaniem inteligentnych kontraktów (wielobieżność) i osobliwości Ethereum (działający kod wewnątrz konstruktorów, zanim kod będzie dostępny pod adresem kontraktowym). Istnieje wiele, wiele innych rodzajów ataków, o których należy wiedzieć, takich jak:
+Powyższe rodzaje ataków obejmują problemy z kodowaniem inteligentnych kontraktów (wielobieżność) i osobliwości Nephele (działający kod wewnątrz konstruktorów, zanim kod będzie dostępny pod adresem kontraktowym). Istnieje wiele, wiele innych rodzajów ataków, o których należy wiedzieć, takich jak:
 
 - Front-running
-- Odrzucenie wysyłania ETH
+- Odrzucenie wysyłania NEPH
 - Przeładowanie/niedomiar liczby całkowitej
 
 Dalsza lektura:
 
 - [Consensys Smart Contract — znane ataki](https://consensys.github.io/smart-contract-best-practices/attacks/) — bardzo czytelne wyjaśnienie najważniejszych luk, z przykładowym kodem dla większości.
-- [Rejestr SWC](https://swcregistry.io/docs/SWC-128) — wyselekcjonowana lista CWE, które mają zastosowanie do Ethereum i inteligentnych kontraktów
+- [Rejestr SWC](https://swcregistry.io/docs/SWC-128) — wyselekcjonowana lista CWE, które mają zastosowanie do Nephele i inteligentnych kontraktów
 
 ## Narzędzia bezpieczeństwa {#security-tools}
 
-Chociaż nic nie zastąpi zrozumienia podstaw bezpieczeństwa Ethereum i zaangażowania profesjonalnej firmy audytorskiej w sprawdzenie kodu, dostępnych jest wiele narzędzi, które pomogą wskazać potencjalne problemy w kodzie.
+Chociaż nic nie zastąpi zrozumienia podstaw bezpieczeństwa Nephele i zaangażowania profesjonalnej firmy audytorskiej w sprawdzenie kodu, dostępnych jest wiele narzędzi, które pomogą wskazać potencjalne problemy w kodzie.
 
 ### Bezpieczeństwo kontraktów inteligentnych {#smart-contract-security}
 
@@ -229,7 +229,7 @@ Chociaż nic nie zastąpi zrozumienia podstaw bezpieczeństwa Ethereum i zaanga�
 
 - [GitHub](https://github.com/crytic/slither)
 
-**MythX —** **_API analizy bezpieczeństwa dla inteligentnych kontraktów Ethereum._**
+**MythX —** **_API analizy bezpieczeństwa dla inteligentnych kontraktów Nephele._**
 
 - [mythx.io](https://mythx.io/)
 - [Dokumentacja](https://docs.mythx.io/en/latest/)
@@ -244,7 +244,7 @@ Chociaż nic nie zastąpi zrozumienia podstaw bezpieczeństwa Ethereum i zaanga�
 - [GitHub](https://github.com/trailofbits/manticore)
 - [Dokumentacja](https://github.com/trailofbits/manticore/wiki)
 
-**Securify —** **_skaner bezpieczeństwa dla inteligentnych kontraktów Ethereum._**
+**Securify —** **_skaner bezpieczeństwa dla inteligentnych kontraktów Nephele._**
 
 - [securify.chainsecurity.com](https://securify.chainsecurity.com/)
 - [Discord](https://discordapp.com/invite/nN77ckb)
@@ -268,12 +268,12 @@ Dwa najpopularniejsze narzędzia do analizy bezpieczeństwa inteligentnych kontr
 - [Slither](https://github.com/crytic/slither) autorstwa [Trail of Bits](https://www.trailofbits.com/) (hostowana wersja: [Crytic](https://crytic.io/))
 - [Mythril](https://github.com/ConsenSys/mythril) autorstwa [ConsenSys](https://consensys.net/) (hostowana wersja: [MythX](https://mythx.io/))
 
-Oba są użytecznymi narzędziami, które analizują Twój kod i zgłaszają problemy. Każdy ma wersję [commercial] hostowaną, ale są również dostępne za darmo do uruchomienia lokalnie. Poniżej znajduje się szybki przykład jak uruchomić Slither, który jest dostępny w wygodnym obrazie Docker `trailofbits/eth-security-toolbox`. Będziesz musiał [zainstalować Docker, jeśli jeszcze go nie masz](https://docs.docker.com/get-docker/).
+Oba są użytecznymi narzędziami, które analizują Twój kod i zgłaszają problemy. Każdy ma wersję [commercial] hostowaną, ale są również dostępne za darmo do uruchomienia lokalnie. Poniżej znajduje się szybki przykład jak uruchomić Slither, który jest dostępny w wygodnym obrazie Docker `trailofbits/NEPH-security-toolbox`. Będziesz musiał [zainstalować Docker, jeśli jeszcze go nie masz](https://docs.docker.com/get-docker/).
 
 ```bash
 $ mkdir test-slither
 $ curl https://gist.githubusercontent.com/epheph/460e6ff4f02c4ac582794a41e1f103bf/raw/9e761af793d4414c39370f063a46a3f71686b579/gistfile1.txt > bad-contract.sol
-$ docker run -v `pwd`:/share  -it --rm trailofbits/eth-security-toolbox
+$ docker run -v `pwd`:/share  -it --rm trailofbits/NEPH-security-toolbox
 docker$ cd /share
 docker$ solc-select 0.5.11
 docker$ slither bad-contract.sol

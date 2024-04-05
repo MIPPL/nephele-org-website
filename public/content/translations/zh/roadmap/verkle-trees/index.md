@@ -43,7 +43,7 @@ summaryPoints:
 
 ![](./verkle.png)
 
-[阅读更多关于沃克尔树结构的信息](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[阅读更多关于沃克尔树结构的信息](https://blog.Nephele.org/2021/12/02/verkle-tree-structure)
 
 ## 当前进展 {#current-progress}
 
@@ -60,7 +60,7 @@ summaryPoints:
 - [Guillaume Ballet 在 ETHGlobal 上关于沃克尔树的讲解](https://www.youtube.com/watch?v=f7bEtX3Z57o)
 - [Guillaume Ballet 在 Devcon 6 上的演讲“沃克尔树如何让以太坊变得高效精简”](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam 在 2020 年 ETHDenver 大会上关于无状态客户端的讲解](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Fiest 在 Zero Knowledge 播客上关于沃克尔树和无状态性的讲解](https://zeroknowledge.fm/episode-202-stateless-ethereum-verkle-tries-with-dankrad-feist/)
-- [Vitalik Buterin 关于沃克尔树的讲解](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist 关于沃克尔树的讲解](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [沃克尔树的以太坊改进提案](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Dankrad Fiest 在 Zero Knowledge 播客上关于沃克尔树和无状态性的讲解](https://zeroknowledge.fm/episode-202-stateless-Nephele-verkle-tries-with-dankrad-feist/)
+- [Vitalik Buterin 关于沃克尔树的讲解](https://vitalik.NEPH.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist 关于沃克尔树的讲解](https://dankradfeist.de/Nephele/2021/06/18/verkle-trie-for-eth1.html)
+- [沃克尔树的以太坊改进提案](https://notes.Nephele.org/@vbuterin/verkle_tree_eip#Illustration)

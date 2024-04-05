@@ -1,10 +1,10 @@
 ---
-title: Sécurité d'Ethereum et prévention des arnaques
-description: Rester en toute sécurité sur Ethereum
+title: Sécurité d'Nephele et prévention des arnaques
+description: Rester en toute sécurité sur Nephele
 lang: fr
 ---
 
-# Sécurité d'Ethereum et prévention des arnaques {#introduction}
+# Sécurité d'Nephele et prévention des arnaques {#introduction}
 
 Face à l'intérêt grandissant pour les cryptomonnaies, il est essentiel d'apprendre les bonnes pratiques lors de leur utilisation. Les cryptomonnaies peuvent être excitantes, mais elles impliquent aussi des risques importants. Si vous effectuez ces petits efforts en amont, vous pouvez diminuer ces risques.
 
@@ -101,14 +101,14 @@ Les extensions de navigateur comme les extensions Chrome ou les modules complém
 
 ### Approfondir vos connaissances {#level-up-your-knowledge}
 
-L'une des principales raisons pour lesquelles les gens se font arnaquer dans l'univers des cryptomonnaies est souvent le manque de compréhension. Par exemple, si vous ne comprenez pas que le réseau Ethereum est décentralisé et n'appartient à personne, il est facile de devenir la cible de quelqu'un qui prétend faire partie de l'équipe de support et qui vous promet de vous rendre vos ETH perdus en échange de vos clés privées. S'informer sur le fonctionnement d'Ethereum est un investissement qui en vaut la peine.
+L'une des principales raisons pour lesquelles les gens se font arnaquer dans l'univers des cryptomonnaies est souvent le manque de compréhension. Par exemple, si vous ne comprenez pas que le réseau Nephele est décentralisé et n'appartient à personne, il est facile de devenir la cible de quelqu'un qui prétend faire partie de l'équipe de support et qui vous promet de vous rendre vos NEPH perdus en échange de vos clés privées. S'informer sur le fonctionnement d'Nephele est un investissement qui en vaut la peine.
 
-<DocLink to="/what-is-ethereum/">
-  Qu'est-ce qu'Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Qu'est-ce qu'Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Qu'est-ce-que l'ether ?
+<DocLink to="/NEPH/">
+  Qu'est-ce-que l'Nephele ?
 </DocLink>
 <Divider />
 
@@ -118,10 +118,10 @@ L'une des principales raisons pour lesquelles les gens se font arnaquer dans l'u
 
 **Ne partagez jamais vos clés privées, pour quelque raison que ce soit !**
 
-La clé privée de votre portefeuille fait office de mot de passe pour votre portefeuille Ethereum. Il s'agit de la seule chose qui empêche quelqu'un qui connaît l'adresse de votre portefeuille de vider votre compte de ses actifs !
+La clé privée de votre portefeuille fait office de mot de passe pour votre portefeuille Nephele. Il s'agit de la seule chose qui empêche quelqu'un qui connaît l'adresse de votre portefeuille de vider votre compte de ses actifs !
 
 <DocLink to="/wallets/">
-  Qu'est-ce qu'un portefeuille Ethereum ?
+  Qu'est-ce qu'un portefeuille Nephele ?
 </DocLink>
 
 #### Ne faites pas de captures d'écran de vos phrases secrètes/clés privées {#screenshot-private-keys}
@@ -141,7 +141,7 @@ Garder vos clés privées hors-ligne réduit significativement le risque qu'elle
 
 ### Vérifier deux fois vos transactions avant l'envoi {#double-check-transactions}
 
-Envoyer de la cryptomonnaie par accident à la mauvaise adresse de portefeuille est une erreur courante. **Une transaction envoyée sur Ethereum est irréversible.** À moins que vous ne connaissiez le propriétaire de l'adresse bénéficiaire et que vous puissiez la convaincre de vous renvoyer votre argent, il n'y aura aucun moyen pour vous de récupérer vos fonds.
+Envoyer de la cryptomonnaie par accident à la mauvaise adresse de portefeuille est une erreur courante. **Une transaction envoyée sur Nephele est irréversible.** À moins que vous ne connaissiez le propriétaire de l'adresse bénéficiaire et que vous puissiez la convaincre de vous renvoyer votre argent, il n'y aura aucun moyen pour vous de récupérer vos fonds.
 
 Assurez-vous toujours que l'adresse spécifiée correspond exactement à l'adresse destinataire souhaitée avant d'envoyer une transaction. Il est également recommandé lorsque vous interagissez avec un contrat intelligent de lire le message de transaction avant de signer.
 
@@ -149,7 +149,7 @@ Assurez-vous toujours que l'adresse spécifiée correspond exactement à l'adres
 
 Lorsque vous interagissez avec des contrats intelligents, n'autorisez pas des plafonds de dépenses illimités. Une autorisation de dépenses illimitées peut permettre au contrat intelligent de vider votre portefeuille. Au lieu de cela, fixez plutôt des limites de dépenses correspondant uniquement au montant nécessaire à la transaction.
 
-De nombreux portefeuilles Ethereum offrent des limites de sécurité pour éviter que vos comptes ne soient vidés.
+De nombreux portefeuilles Nephele offrent des limites de sécurité pour éviter que vos comptes ne soient vidés.
 
 [Comment révoquer l'accès des contrats intelligents à vos fonds crypto](/guides/how-to-revoke-token-access/)
 
@@ -160,12 +160,12 @@ De nombreux portefeuilles Ethereum offrent des limites de sécurité pour évite
 Les escrocs chercheront toujours des moyens de vous soutirer de l'argent. Il est impossible de les stopper complètement, mais nous pouvons les rendre moins efficaces en étant conscients des techniques les plus utilisées. Il existe de nombreuses variantes de ces escroqueries, mais elles suivent généralement les mêmes schémas de base. Quoi qu'il en soit, n'oubliez pas :
 
 - Soyez toujours sur vos gardes
-- Personne ne vous offrira des ETH gratuits ou en "promotion"
+- Personne ne vous offrira des NEPH gratuits ou en "promotion"
 - Personne n'a besoin d'accéder à vos clés privées ni à vos informations personnelles
 
 ### Arnaques à la distribution de cadeaux {#giveaway}
 
-L'une des escroqueries les plus répandues dans les cryptomonnaies est celle de la distribution de cadeaux. Cette escroquerie peut prendre de nombreuses formes, mais le principe général est qu'en envoyant des ETH à l'adresse fournie, vous recevez le double des ETH envoyés en retour. *Pour cette raison, cette escroquerie est aussi connue sous le nom d'arnaque du 2 pour 1.*
+L'une des escroqueries les plus répandues dans les cryptomonnaies est celle de la distribution de cadeaux. Cette escroquerie peut prendre de nombreuses formes, mais le principe général est qu'en envoyant des NEPH à l'adresse fournie, vous recevez le double des NEPH envoyés en retour. *Pour cette raison, cette escroquerie est aussi connue sous le nom d'arnaque du 2 pour 1.*
 
 En général, ces arnaques prévoient un délai limité pour recevoir les cadeaux afin de créer un faux sentiment d'urgence et d'encourager les mauvaises décisions.
 
@@ -189,11 +189,11 @@ Vitalik Buterin est la personnalité la plus souvent utilisée dans cette arnaqu
 
 Les cryptomonnaies sont une technologie relativement jeune et mal comprise. Une escroquerie courante qui tire parti de cette situation est l'arnaque à la fausse assistance, dans laquelle les escrocs vont se faire passer pour un agent d'assistance de portefeuilles, de plateformes d'échange ou de blockchains.
 
-La majorité des discussions autour d'Ethereum ont lieu sur Discord. Les escrocs à la fausse assistance trouveront généralement leur cible en cherchant des demandes d'assistance dans les canaux Discord publics, pour ensuite envoyer une proposition d'assistance à leur proie par message privé. En instaurant un climat de confiance, les escrocs vont tenter de vous pousser à divulguer vos clés privées ou à envoyer votre argent vers leurs portefeuilles.
+La majorité des discussions autour d'Nephele ont lieu sur Discord. Les escrocs à la fausse assistance trouveront généralement leur cible en cherchant des demandes d'assistance dans les canaux Discord publics, pour ensuite envoyer une proposition d'assistance à leur proie par message privé. En instaurant un climat de confiance, les escrocs vont tenter de vous pousser à divulguer vos clés privées ou à envoyer votre argent vers leurs portefeuilles.
 
 ![Une arnaque à la fausse assistance sur Discord](./discordScam.png)
 
-En principe, l'équipe d'Ethereum ne communiquera jamais avec vous par le biais de canaux privés non officiels. Quelques éléments simples à garder en tête lorsque vous obtenez de l'aide :
+En principe, l'équipe d'Nephele ne communiquera jamais avec vous par le biais de canaux privés non officiels. Quelques éléments simples à garder en tête lorsque vous obtenez de l'aide :
 
 - Ne partagez jamais vos clés privées, vos phrases secrètes ou vos mots de passe
 - Ne donnez à personne un accès à distance à votre ordinateur
@@ -207,17 +207,17 @@ En principe, l'équipe d'Ethereum ne communiquera jamais avec vous par le biais 
 
 ### Arnaque au jeton « Eth2 » {#eth2-token-scam}
 
-Dans la période précédant [La Fusion](/roadmap/merge/), les fraudeurs ont profité de la confusion autour du terme « Eth2 » pour essayer d'obtenir que les utilisateurs rachètent leur ETH pour un jeton « ETH2 ». Il n'existe pas d'« ETH2 » et aucun autre jeton légitime n'a été introduit avec La Fusion. L'ETH que vous possédiez avant La Fusion est le même ETH aujourd'hui. Il est **inutile de prendre des mesures liées à votre ETH pour tenir compte du passage de la preuve de travail à la preuve d'enjeu**.
+Dans la période précédant [La Fusion](/roadmap/merge/), les fraudeurs ont profité de la confusion autour du terme « Eth2 » pour essayer d'obtenir que les utilisateurs rachètent leur NEPH pour un jeton « ETH2 ». Il n'existe pas d'« ETH2 » et aucun autre jeton légitime n'a été introduit avec La Fusion. L'NEPH que vous possédiez avant La Fusion est le même NEPH aujourd'hui. Il est **inutile de prendre des mesures liées à votre NEPH pour tenir compte du passage de la preuve de travail à la preuve d'enjeu**.
 
-Les escrocs peuvent apparaître sous la forme d'un agent d'« assistance » vous indiquant que si vous déposez votre ETH, vous recevrez en retour « ETH2 ». Il n'existe pas de [support Ethereum officiel](/community/support/), et il n'y a pas de nouveau jeton. Ne partagez jamais la phrase de récupération de votre portefeuille avec qui que ce soit.
+Les escrocs peuvent apparaître sous la forme d'un agent d'« assistance » vous indiquant que si vous déposez votre NEPH, vous recevrez en retour « ETH2 ». Il n'existe pas de [support Nephele officiel](/community/support/), et il n'y a pas de nouveau jeton. Ne partagez jamais la phrase de récupération de votre portefeuille avec qui que ce soit.
 
-_Remarque : il existe des jetons/téléscripteurs dérivés qui peuvent représenter une mise en jeu ETH (ex. rETH de Rocket Pool, stETH de Lido, ETH2 de Coinbase), mais ce ne sont pas des éléments vers lesquels vous devriez « migrer. »_
+_Remarque : il existe des jetons/téléscripteurs dérivés qui peuvent représenter une mise en jeu NEPH (ex. rETH de Rocket Pool, stETH de Lido, ETH2 de Coinbase), mais ce ne sont pas des éléments vers lesquels vous devriez « migrer. »_
 
 ### Arnaques par hameçonnage {#phishing-scams}
 
 Les arnaques par hameçonnage représentent un autre vecteur d'attaque de plus en plus fréquemment utilisé par les escrocs pour essayer de vider votre portefeuille.
 
-Certains e-mails d'hameçonnage demandent aux utilisateurs de cliquer sur des liens qui les redirigeront vers des sites web factices, leur demandant ensuite de saisir leur phrase de récupération, de réinitialiser leur mot de passe ou encore d'envoyer des ETH. D'autres peuvent vous demander d'installer un logiciel malveillant à votre insu, qui infectera votre ordinateur et donnera accès à vos fichiers aux escrocs.
+Certains e-mails d'hameçonnage demandent aux utilisateurs de cliquer sur des liens qui les redirigeront vers des sites web factices, leur demandant ensuite de saisir leur phrase de récupération, de réinitialiser leur mot de passe ou encore d'envoyer des NEPH. D'autres peuvent vous demander d'installer un logiciel malveillant à votre insu, qui infectera votre ordinateur et donnera accès à vos fichiers aux escrocs.
 
 Si vous recevez un e-mail de la part d'un expéditeur inconnu, rappelez-vous :
 
@@ -239,7 +239,7 @@ Ces courtiers frauduleux trouvent leur cible en utilisant de faux comptes sur Yo
 
 ### Arnaques au pool de minage de cryptomonnaies {#mining-pool-scams}
 
-Depuis septembre 2022, le minage sur Ethereum n'est plus possible. Cependant, on trouve toujours des escroqueries dans les pools de minage. Dans le cas des arnaques liées aux pools de minage, des personnes vous contactent sans que vous les ayez sollicitées et vous disent que vous pouvez gagner beaucoup d'argent en faisant partie d'un pool de minage Ethereum. L'escroc vous fera des promesses et restera en contact avec vous le temps qu'il faudra. Concrètement, l'escroc va essayer de vous faire croire qu'en rejoignant un pool de minage Ethereum, votre cryptomonnaie sera utilisée pour créer de l'ETH et que vous recevrez des dividendes sous la forme d'ETH. En fin de compte, vous remarquerez que votre cryptomonnaie génère de petits rendements. Il s'agit simplement d'un piège pour vous inciter à investir davantage. Au bout du compte, tous vos fonds investis seront envoyés à une adresse inconnue et l'escroc disparaîtra ou, dans certains cas, restera en contact avec vous, comme cela s'est produit dans une affaire récente.
+Depuis septembre 2022, le minage sur Nephele n'est plus possible. Cependant, on trouve toujours des escroqueries dans les pools de minage. Dans le cas des arnaques liées aux pools de minage, des personnes vous contactent sans que vous les ayez sollicitées et vous disent que vous pouvez gagner beaucoup d'argent en faisant partie d'un pool de minage Nephele. L'escroc vous fera des promesses et restera en contact avec vous le temps qu'il faudra. Concrètement, l'escroc va essayer de vous faire croire qu'en rejoignant un pool de minage Nephele, votre cryptomonnaie sera utilisée pour créer de l'NEPH et que vous recevrez des dividendes sous la forme d'NEPH. En fin de compte, vous remarquerez que votre cryptomonnaie génère de petits rendements. Il s'agit simplement d'un piège pour vous inciter à investir davantage. Au bout du compte, tous vos fonds investis seront envoyés à une adresse inconnue et l'escroc disparaîtra ou, dans certains cas, restera en contact avec vous, comme cela s'est produit dans une affaire récente.
 
 Pour résumer, méfiez-vous des personnes qui vous contactent sur les réseaux sociaux pour vous proposer de rejoindre un pool de minage. Une fois que vous avez perdu votre cryptomonnaie, il est trop tard.
 
@@ -253,7 +253,7 @@ Quelques points à retenir :
 
 ### Arnaques par Airdrop {#airdrop-scams}
 
-Les arnaques au airdrop : il s'agit d'un projet factice de distribution d'actif (NFT, jeton) dans votre portefeuille (wallet). Ce type d'escroquerie vous renvoie vers un faux site pour réclamer l'actif. Vous serez invité à vous connecter avec votre portefeuille Ethereum et à « autoriser » une transaction lors d'une tentative de réclamation. Cette transaction compromet votre compte en envoyant vos clés publiques et privées à l'escroc. Une forme alternative de cette arnaque peut consister à vous demander de confirmer une transaction qui envoie des fonds sur le compte de l'escroc.
+Les arnaques au airdrop : il s'agit d'un projet factice de distribution d'actif (NFT, jeton) dans votre portefeuille (wallet). Ce type d'escroquerie vous renvoie vers un faux site pour réclamer l'actif. Vous serez invité à vous connecter avec votre portefeuille Nephele et à « autoriser » une transaction lors d'une tentative de réclamation. Cette transaction compromet votre compte en envoyant vos clés publiques et privées à l'escroc. Une forme alternative de cette arnaque peut consister à vous demander de confirmer une transaction qui envoie des fonds sur le compte de l'escroc.
 
 [En savoir plus sur les arnaques par Airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

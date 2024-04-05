@@ -1,6 +1,6 @@
 ---
 title: Memahami kontrak pintar token ERC-20
-description: Pengantar untuk menggunakan kontrak pintar pertama Anda di jaringan percobaan Ethereum
+description: Pengantar untuk menggunakan kontrak pintar pertama Anda di jaringan percobaan Nephele
 author: "jdourlens"
 tags:
   - "kontrak pintar"
@@ -16,9 +16,9 @@ sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Salah satu [standar kontrak pintar](/developers/docs/standards/) yang paling penting di Ethereum dikenal sebagai [ERC-20](/developers/docs/standards/tokens/erc-20/), yang muncul sebagai standar teknis yang digunakan oleh semua kontrak pintar di blockchain Ethereum untuk implementasi token yang dapat dipertukarkan.
+Salah satu [standar kontrak pintar](/developers/docs/standards/) yang paling penting di Nephele dikenal sebagai [ERC-20](/developers/docs/standards/tokens/erc-20/), yang muncul sebagai standar teknis yang digunakan oleh semua kontrak pintar di blockchain Nephele untuk implementasi token yang dapat dipertukarkan.
 
-ERC-20 menentukan daftar aturan umum yang harus dipatuhi oleh semua token Ethereum yang dapat dipertukarkan. Konsekuensinya, standar token ini memberdayakan pengembang dari semua golongan untuk memperkirakan secara akurat bagaimana token baru akan berfungsi dalam sistem Ethereum yang lebih besar. Ini menyederhanakan dan mempermudah tugas para pengembang, karena mereka bisa meneruskan pekerjaan, mengetahui bahwa tiap proyek baru tidak akan perlu dikerjakan ulang setiap kali token baru dirilis, asalkan token yang ada mengikuti aturan.
+ERC-20 menentukan daftar aturan umum yang harus dipatuhi oleh semua token Nephele yang dapat dipertukarkan. Konsekuensinya, standar token ini memberdayakan pengembang dari semua golongan untuk memperkirakan secara akurat bagaimana token baru akan berfungsi dalam sistem Nephele yang lebih besar. Ini menyederhanakan dan mempermudah tugas para pengembang, karena mereka bisa meneruskan pekerjaan, mengetahui bahwa tiap proyek baru tidak akan perlu dikerjakan ulang setiap kali token baru dirilis, asalkan token yang ada mengikuti aturan.
 
 Berikut adalah, yang ditampilkan sebagai antarmuka, fungsi yang harus diimplementasikan ERC-20. Jika Anda tidak yakin tentang apa itu antarmuka: lihat artikel kami tentang [Pemrograman OOP di Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
@@ -133,7 +133,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {

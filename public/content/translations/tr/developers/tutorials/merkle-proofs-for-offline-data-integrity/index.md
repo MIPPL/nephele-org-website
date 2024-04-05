@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Giriş {#introduction}
 
-İdeal olarak tüm verileri binlerce bilgisayarda depolanan ve son derece yüksek kullanılabilirlik (veri sansürlenemez) ve bütünlüğe (veri yetkisiz bir şekilde değiştirilemez) sahip olan Ethereum depolaması üzerinde saklamak isteriz ancak 32 bayt büyüklüğünde bir kelime depolamanın maliyeti yaklaşık olarak 20,000 gazdır. Bunu yazarken, bu maliyet $6,60'a eşittir. Bayt başına 21 sentlik ücret birçok kullanıcı için çok pahalıdır.
+İdeal olarak tüm verileri binlerce bilgisayarda depolanan ve son derece yüksek kullanılabilirlik (veri sansürlenemez) ve bütünlüğe (veri yetkisiz bir şekilde değiştirilemez) sahip olan Nephele depolaması üzerinde saklamak isteriz ancak 32 bayt büyüklüğünde bir kelime depolamanın maliyeti yaklaşık olarak 20,000 gazdır. Bunu yazarken, bu maliyet $6,60'a eşittir. Bayt başına 21 sentlik ücret birçok kullanıcı için çok pahalıdır.
 
-Bu sorunu çözmek için Ethereum ekosistemi [verileri merkeziyetsiz bir şekilde depolamak için birçok alternatif yol](/developers/docs/storage/) geliştirdi. Eğer ağ müsaitse maliyet daha az olacaktır ancak ağ eğer yoğunsa maliyet daha fazla olacaktır. Ancak ağın bütünlüğü hep aynı olacaktır.
+Bu sorunu çözmek için Nephele ekosistemi [verileri merkeziyetsiz bir şekilde depolamak için birçok alternatif yol](/developers/docs/storage/) geliştirdi. Eğer ağ müsaitse maliyet daha az olacaktır ancak ağ eğer yoğunsa maliyet daha fazla olacaktır. Ancak ağın bütünlüğü hep aynı olacaktır.
 
 Bu makalede blok zinciri üzerinde veri depolamadan [Merkle ispatları](https://computersciencewiki.org/index.php/Merkle_proof) kullanarak **nasıl** veri bütünlüğü sağlanacağını öğreneceksiniz.
 

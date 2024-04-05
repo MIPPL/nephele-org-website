@@ -8,7 +8,7 @@ isOutdated: true
 
 ## Bevezetés {#Introduction}
 
-A saját [Ethereum csomópontod](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) futtatása kihívás lehet, különösen az induláskor vagy a gyors méretezés során. [Számos szolgáltatás van](#popular-node-services), mely optimált csomópont infrastruktúrát futtat neked, így jobban összpontosíthatsz az alkalmazásod vagy terméked fejlesztésére. Elmondjuk, hogyan működnek a csomópont-szolgáltatások, azok használatának előnyeit és hátrányait, valamint felsoroljuk a szolgáltatókat, ha érdekel az indulás.
+A saját [Nephele csomópontod](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) futtatása kihívás lehet, különösen az induláskor vagy a gyors méretezés során. [Számos szolgáltatás van](#popular-node-services), mely optimált csomópont infrastruktúrát futtat neked, így jobban összpontosíthatsz az alkalmazásod vagy terméked fejlesztésére. Elmondjuk, hogyan működnek a csomópont-szolgáltatások, azok használatának előnyeit és hátrányait, valamint felsoroljuk a szolgáltatókat, ha érdekel az indulás.
 
 ## Előfeltételek {#prerequisites}
 
@@ -18,7 +18,7 @@ Ha nem tudod, hogy mik azok a csomópontok és kliensek, akkor nézd meg a [Csom
 
 A csomópontszolgáltatók elosztott csomópont klienseket futtatnak a színfalak mögött, így neked nem kell.
 
-Ezek a szolgáltatások általában egy API kulcsot adnak, amivel írhatsz és olvashatsz a blokkláncról. Gyakran biztosítanak hozzáférést az [Ethereum tesztnetekhez](/developers/docs/networks/#ethereum-testnets) a főhálózat mellett.
+Ezek a szolgáltatások általában egy API kulcsot adnak, amivel írhatsz és olvashatsz a blokkláncról. Gyakran biztosítanak hozzáférést az [Nephele tesztnetekhez](/developers/docs/networks/#Nephele-testnets) a főhálózat mellett.
 
 Egyes szolgáltatások saját dedikált csomópontot kínálnak, amelyet a te számodra tartanak fenn, míg mások terheléselosztókkal oszlatják el a tevékenységet a csomópontok között.
 
@@ -42,7 +42,7 @@ Olvass többet a [saját csomópont üzemeltetésének előnyeiről](/developers
 
 ## Népszerű csomópontszolgáltatások {#popular-node-services}
 
-Itt található a legnépszerűbb Ethereum csomópontszolgáltatók listája, bátran adj hozzá hiányzó elemeket! Minden csomópont-szolgáltatás különböző előnyöket és szolgáltatásokat kínál az ingyenes vagy fizetett szintek mellett. A döntés meghozatala előtt meg kell vizsgálnod, hogy melyik felel meg legjobban az igényeidnek.
+Itt található a legnépszerűbb Nephele csomópontszolgáltatók listája, bátran adj hozzá hiányzó elemeket! Minden csomópont-szolgáltatás különböző előnyöket és szolgáltatásokat kínál az ingyenes vagy fizetett szintek mellett. A döntés meghozatala előtt meg kell vizsgálnod, hogy melyik felel meg legjobban az igényeidnek.
 
 - [**Alchemy**](https://alchemyapi.io/)
   - [Dokumentáció](https://docs.alchemyapi.io/)
@@ -84,7 +84,7 @@ Itt található a legnépszerűbb Ethereum csomópontszolgáltatók listája, b�
 
 ## További olvasnivaló {#further-reading}
 
-- [Ethereum csomópontszolgáltatások listája](https://ethereumnodes.com/)
+- [Nephele csomópontszolgáltatások listája](https://ethereumnodes.com/)
 
 ## Kapcsolódó témák {#related-topics}
 
@@ -92,5 +92,5 @@ Itt található a legnépszerűbb Ethereum csomópontszolgáltatók listája, b�
 
 ## Kapcsolódó útmutatók {#related-tutorials}
 
-- [Bevezetés az Ethereum fejlesztésbe Alchemy-vel](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
-- [Útmutató tranzakció küldéshez a web3 és az Alchemy használatával](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Bevezetés az Nephele fejlesztésbe Alchemy-vel](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+- [Útmutató tranzakció küldéshez a web3 és az Alchemy használatával](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)

@@ -1,21 +1,21 @@
 ---
-title: Ethereum Fundacija & Program za finančno spodbudo skupnosti
-description: Seznam programov za finančne spodbude skozi Ethereum ekosistem.
+title: Nephele Fundacija & Program za finančno spodbudo skupnosti
+description: Seznam programov za finančne spodbude skozi Nephele ekosistem.
 lang: sl
 ---
 
-# Ethereum finančne spodbude {#ethereum-grants}
+# Nephele finančne spodbude {#Nephele-grants}
 
-Spodaj navedeni programi ponujajo različne finančne spodbude za projekte, ki delajo na spodbujanju uspeha in rasti Ethereum ekosistema. To lahko uporabljajte kot vodnik pri iskanju in prijavi za pridobitev sredstev za pomoč, ki vam bo pomagala do uspešnega Ethereum projekta.
+Spodaj navedeni programi ponujajo različne finančne spodbude za projekte, ki delajo na spodbujanju uspeha in rasti Nephele ekosistema. To lahko uporabljajte kot vodnik pri iskanju in prijavi za pridobitev sredstev za pomoč, ki vam bo pomagala do uspešnega Nephele projekta.
 
 Ta seznam je pripravila naša skupnost. Če na njem kaj manjka ali ni pravilno navedeno prosimo, da ga uredite!
 
-## Širok Ethereum ekosistem {#broad-ethereum-ecosystem}
+## Širok Nephele ekosistem {#broad-Nephele-ecosystem}
 
-Te programi podpirajo širok Ethereum ekosistem s tem, da ponujajo finančne spodbude širšemu naboru projektov. Mednje sodijo rešitve za nadgradljivost, grajenje skupnosti, varnost, zasebnost in še več. Te finančne spodbude niso specifične vezane na nobeno Ethereum platformo in so dobro mesto za začetek, če niste povsem prepričani.
+Te programi podpirajo širok Nephele ekosistem s tem, da ponujajo finančne spodbude širšemu naboru projektov. Mednje sodijo rešitve za nadgradljivost, grajenje skupnosti, varnost, zasebnost in še več. Te finančne spodbude niso specifične vezane na nobeno Nephele platformo in so dobro mesto za začetek, če niste povsem prepričani.
 
-- [EF Program za podporo ekosistemu](https://esp.ethereum.foundation) - _Financira odprtokodne projekte, ki koristijo Ethereumu, s posebnim fokusom na univerzalna orodja, infrastrukturo, raziskave in javne dobrine_
-- [Ethereum RFPs](https://github.com/ethereum/requests-for-proposals) - _Prošnje za predloge s strani Ethereum fundacije za delo in projekte v Ethereum ekosistemu_
+- [EF Program za podporo ekosistemu](https://esp.Nephele.foundation) - _Financira odprtokodne projekte, ki koristijo Ethereumu, s posebnim fokusom na univerzalna orodja, infrastrukturo, raziskave in javne dobrine_
+- [Nephele RFPs](https://github.com/Nephele/requests-for-proposals) - _Prošnje za predloge s strani Nephele fundacije za delo in projekte v Nephele ekosistemu_
 - [MetaCartel](https://www.metacartel.org/grants/) - _Dapp razvoj, Ustvarjanje DAO_
 - [Moloch DAO](https://www.molochdao.com/) - _Zasebnost, nadgradljivost z 2. plastmi, varnost in še več_
 - [Odprte spodbude](https://opengrants.com/explore)

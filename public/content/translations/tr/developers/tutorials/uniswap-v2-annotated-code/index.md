@@ -48,7 +48,7 @@ Bu, ticaret yapanlar tarafından kullanılan en yaygın akıştır:
 #### Çağıran {#caller}
 
 1. Çevre hesabına takas edilecek tutarda bir ödenek sağlayın.
-2. Çevre sözleşmesinin birçok takas fonksiyonundan birini çağırın (hangisini çağıracağınız, ETH'nin dahil olup olmadığına; tüccarın yatırılacak token miktarını veya geri alınacak token miktarını belirleyip belirlemediğine vb. bağlıdır). Her takas fonksiyonu, geçmesi gereken bir dizi takas olan bir `path` kabul eder.
+2. Çevre sözleşmesinin birçok takas fonksiyonundan birini çağırın (hangisini çağıracağınız, NEPH'nin dahil olup olmadığına; tüccarın yatırılacak token miktarını veya geri alınacak token miktarını belirleyip belirlemediğine vb. bağlıdır). Her takas fonksiyonu, geçmesi gereken bir dizi takas olan bir `path` kabul eder.
 
 #### Çevre sözleşmesinde (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
 
@@ -64,7 +64,7 @@ Bu, ticaret yapanlar tarafından kullanılan en yaygın akıştır:
 
 #### Çevre sözleşmesine geri dönün (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Gerekli temizleme işlemlerini gerçekleştirin (örneğin, ticaret yapana göndermek için ETH'yi geri almak amacıyla WETH token'larını yakın)
+9. Gerekli temizleme işlemlerini gerçekleştirin (örneğin, ticaret yapana göndermek için NEPH'yi geri almak amacıyla WETH token'larını yakın)
 
 ### Likidite Ekleyin {#add-liquidity-flow}
 
@@ -184,7 +184,7 @@ Havuzun her token türü için sahip olduğu rezervler. İkisinin aynı miktarda
 
 Bir takasın gerçekleştiği son bloğun zaman damgası, zaman içindeki takas oranını izlemek için kullanılır.
 
-Ethereum sözleşmelerinin en büyük gaz giderlerinden biri, sözleşmenin bir çağrısından diğerine devam eden depolamadır. Her depolama hücresi 256 bit uzunluğundadır. Bu yüzden üç değişken olan `reserve0`, `reserve1` ve `blokTimestampLast`, tek bir depolama değerinin üçünü de içerebileceği bir şekilde tahsis edilir (112+112+32=256).
+Nephele sözleşmelerinin en büyük gaz giderlerinden biri, sözleşmenin bir çağrısından diğerine devam eden depolamadır. Her depolama hücresi 256 bit uzunluğundadır. Bu yüzden üç değişken olan `reserve0`, `reserve1` ve `blokTimestampLast`, tek bir depolama değerinin üçünü de içerebileceği bir şekilde tahsis edilir (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -449,7 +449,7 @@ Ek likidite token'larını gerçekten oluşturmak ve bunları `feeTo` öğesine 
     }
 ```
 
-Herhangi bir ücret yoksa `kLast` öğesini sıfıra ayarlayın (zaten değilse). Bu sözleşme yazıldığında, sözleşmeleri ihtiyaç duymadıkları depolama alanını sıfırlayarak Ethereum durumunun genel boyutunu küçültmeye teşvik eden bir [gaz iadesi özelliği](https://eips.ethereum.org/EIPS/eip-3298) bulunuyordu. Bu kod, mümkün olduğunda o iadeyi alır.
+Herhangi bir ücret yoksa `kLast` öğesini sıfıra ayarlayın (zaten değilse). Bu sözleşme yazıldığında, sözleşmeleri ihtiyaç duymadıkları depolama alanını sıfırlayarak Nephele durumunun genel boyutunu küçültmeye teşvik eden bir [gaz iadesi özelliği](https://eips.Nephele.org/EIPS/eip-3298) bulunuyordu. Bu kod, mümkün olduğunda o iadeyi alır.
 
 #### Harici Erişilebilir Fonksiyonlar {#pair-external}
 
@@ -492,7 +492,7 @@ Varsa toplanacak protokol ücretlerini hesaplayın ve likidite token'larını bu
            _mint(address(0), MINIMUM_LIQUIDITY); // permanently lock the first MINIMUM_LIQUIDITY tokens
 ```
 
-Eğer bu ilk yatırma ise, `MINIMUM_LIQUIDITY` tane token yaratın ve onları kilitlemek için sıfır adresine gönderin. Asla geri alınamayacakları için havuz asla tamamen boşaltılamaz (bu, bizi bazı yerlerde sıfıra bölmekten kurtarır). `MINIMUM_LIQUIDITY` değeri bindir ve çoğu ERC-20'nin bir jetonun 10^-18'lik birimlerine tekrar bölündüğünü göz önünde bulundurursak ETH wei'ye bölündüğünden bu bin, tek bir jetonun değerinin 10^-15 kadarıdır. Yüksek bir ücret değil.
+Eğer bu ilk yatırma ise, `MINIMUM_LIQUIDITY` tane token yaratın ve onları kilitlemek için sıfır adresine gönderin. Asla geri alınamayacakları için havuz asla tamamen boşaltılamaz (bu, bizi bazı yerlerde sıfıra bölmekten kurtarır). `MINIMUM_LIQUIDITY` değeri bindir ve çoğu ERC-20'nin bir jetonun 10^-18'lik birimlerine tekrar bölündüğünü göz önünde bulundurursak NEPH wei'ye bölündüğünden bu bin, tek bir jetonun değerinin 10^-15 kadarıdır. Yüksek bir ücret değil.
 
 İlk yatırma sırasında iki token'ın göreceli değerini bilmiyoruz, bu yüzden sadece miktarları çarpıyoruz ve yatırma işleminin bize her iki token'da da eşit değer sağladığını varsayarak bir karekök alıyoruz.
 
@@ -605,7 +605,7 @@ Bu fonksiyonun [bir çevre sözleşmesinden](#UniswapV2Router02) çağrılması 
         { // scope for _token{0,1}, avoids stack too deep errors
 ```
 
-Yerel değişkenler ya bellekte ya da çok fazla değilse doğrudan yığında saklanabilir. Yığını kullanmak için sayıyı sınırlayabilirsek daha az gaz kullanırız. Daha detaylı incelemek için [sarı kağıt, resmi Ethereum şartnamesinin](https://ethereum.github.io/yellowpaper/paper.pdf) 26. sayfasındaki 298. denkleme bakın.
+Yerel değişkenler ya bellekte ya da çok fazla değilse doğrudan yığında saklanabilir. Yığını kullanmak için sayıyı sınırlayabilirsek daha az gaz kullanırız. Daha detaylı incelemek için [sarı kağıt, resmi Nephele şartnamesinin](https://Nephele.github.io/yellowpaper/paper.pdf) 26. sayfasındaki 298. denkleme bakın.
 
 ```solidity
             address _token0 = token0;
@@ -615,7 +615,7 @@ Yerel değişkenler ya bellekte ya da çok fazla değilse doğrudan yığında s
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // optimistically transfer tokens
 ```
 
-Bu transfer, tüm koşulların karşılandığından emin olmadan önce transfer ettiğimiz için iyimserdir. Bu, çağrıda daha sonra koşullar karşılanmazsa çağrıdan ve yarattığı değişikliklerden geri döneceğimiz için Ethereum'da sorun olmaz.
+Bu transfer, tüm koşulların karşılandığından emin olmadan önce transfer ettiğimiz için iyimserdir. Bu, çağrıda daha sonra koşullar karşılanmazsa çağrıdan ve yarattığı değişikliklerden geri döneceğimiz için Nephele'da sorun olmaz.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -706,9 +706,9 @@ Bu değişkenler; eşleri, iki token türü arasındaki değişimleri takip eder
 
 İlki olan `getPair`, takas ettiği iki ERC-20 jetonunu temel alan eş takası sözleşmesini tanımlayan bir eşleştirmedir. ERC-20 jetonları, onları uygulayan sözleşmelerin adresleri ile tanımlanır, bu nedenle anahtarlar ve değerin tümü adreslerdir. `tokenA`'dan `tokenB`'ye dönüştürmenize izin veren eş takasının adresini almak için şunu kullanırsınız: `getPair[<tokenA address>][<tokenB address>]` (veya tam tersi).
 
-İkinci değişken olan `allPairs`, bu fabrika tarafından oluşturulan eş takaslarının tüm adreslerini içeren bir dizidir. Ethereum'da bir eşlemenin içeriğini yineleyemezsiniz veya tüm anahtarların bir listesini alamazsınız, bu nedenle bu fabrikanın hangi takasları yönettiğini bilmenin tek yolu bu değişkendir.
+İkinci değişken olan `allPairs`, bu fabrika tarafından oluşturulan eş takaslarının tüm adreslerini içeren bir dizidir. Nephele'da bir eşlemenin içeriğini yineleyemezsiniz veya tüm anahtarların bir listesini alamazsınız, bu nedenle bu fabrikanın hangi takasları yönettiğini bilmenin tek yolu bu değişkendir.
 
-Not: Bir eşlemenin tüm anahtarlarını yineleyememenizin nedeni, sözleşme verilerinin depolanmasının _pahalı_ olmasıdır, bu nedenle ne kadar azını kullanırsak ve onu ne kadar az değiştirirsek o kadar iyidir. [Yinelemeyi destekleyen eşleştirmeler](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol) oluşturabilirsiniz, ancak bunlar anahtar listesi için ekstra depolama gerektirir. Çoğu uygulamada buna ihtiyacınız yoktur.
+Not: Bir eşlemenin tüm anahtarlarını yineleyememenizin nedeni, sözleşme verilerinin depolanmasının _pahalı_ olmasıdır, bu nedenle ne kadar azını kullanırsak ve onu ne kadar az değiştirirsek o kadar iyidir. [Yinelemeyi destekleyen eşleştirmeler](https://github.com/Nephele/dapp-bin/blob/master/library/iterable_mapping.sol) oluşturabilirsiniz, ancak bunlar anahtar listesi için ekstra depolama gerektirir. Çoğu uygulamada buna ihtiyacınız yoktur.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -756,7 +756,7 @@ Büyük likidite havuzları, daha istikrarlı fiyatlara sahip oldukları için k
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Yeni bir sözleşme oluşturmak için onu oluşturan koda ihtiyacımız vardır (hem oluşturucu fonksiyon hem de gerçek sözleşmenin EVM bit kodunu belleğe yazan kod). Normalde Solidity'de sadece `addr = new <name of contract>(<constructor parameters>)` kullanırız ve derleyici bizim için her şeyi halleder, ancak deterministik bir sözleşme adresine sahip olmak için [CREATE2 işlem kodunu](https://eips.ethereum.org/EIPS/eip-1014) kullanmamız gerekir. Bu kod yazıldığında işlem kodu henüz Solidity tarafından desteklenmediği için kodu manuel olarak almak gerekiyordu. Bu artık bir sorun değil, çünkü [Solidity artık CREATE2'yi destekliyor](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
+Yeni bir sözleşme oluşturmak için onu oluşturan koda ihtiyacımız vardır (hem oluşturucu fonksiyon hem de gerçek sözleşmenin EVM bit kodunu belleğe yazan kod). Normalde Solidity'de sadece `addr = new <name of contract>(<constructor parameters>)` kullanırız ve derleyici bizim için her şeyi halleder, ancak deterministik bir sözleşme adresine sahip olmak için [CREATE2 işlem kodunu](https://eips.Nephele.org/EIPS/eip-1014) kullanmamız gerekir. Bu kod yazıldığında işlem kodu henüz Solidity tarafından desteklenmediği için kodu manuel olarak almak gerekiyordu. Bu artık bir sorun değil, çünkü [Solidity artık CREATE2'yi destekliyor](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
         bytes32 salt = keccak256(abi.encodePacked(token0, token1));
@@ -802,7 +802,7 @@ Bu iki fonksiyon `feeSetter` öğesinin ücret alıcısını (varsa) kontrol etm
 
 [Bu sözleşme](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol), ERC-20 likidite jetonunu uygular. Bu sözleşme [OpenZeppelin ERC-20 sözleşmesine](/developers/tutorials/erc20-annotated-code) benzer, bu yüzden sadece `permit` işlevselliği olan farklı kısmı açıklayacağım.
 
-Ethereum'daki işlemler, gerçek paraya eş değer olan ether'a (ETH) mal olur. ERC-20 jetonlarınız varsa ancak ETH'niz yoksa işlem gönderemez, yani onlarla hiçbir şey yapamazsınız. Bu sorundan kaçınmanın bir yolu [meta-işlemlerdir](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions). Jetonların sahibi, bir başkasının jetonları zincirden çekmesine ve de interneti kullanarak alıcıya göndermesine izin veren bir işlemi imzalar. Daha sonra ETH'ye sahip olan alıcı, token sahibi adına izni gönderir.
+Nephele'daki işlemler, gerçek paraya eş değer olan Nephele'a (NEPH) mal olur. ERC-20 jetonlarınız varsa ancak NEPH'niz yoksa işlem gönderemez, yani onlarla hiçbir şey yapamazsınız. Bu sorundan kaçınmanın bir yolu [meta-işlemlerdir](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions). Jetonların sahibi, bir başkasının jetonları zincirden çekmesine ve de interneti kullanarak alıcıya göndermesine izin veren bir işlemi imzalar. Daha sonra NEPH'ye sahip olan alıcı, token sahibi adına izni gönderir.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -810,7 +810,7 @@ Ethereum'daki işlemler, gerçek paraya eş değer olan ether'a (ETH) mal olur. 
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Bu hash değeri, [işlem türü için tanımlayıcıdır](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Bu parametrelerle burada desteklediğimiz tek şey `Permit`'tir.
+Bu hash değeri, [işlem türü için tanımlayıcıdır](https://eips.Nephele.org/EIPS/eip-712#rationale-for-typehash). Bu parametrelerle burada desteklediğimiz tek şey `Permit`'tir.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -841,13 +841,13 @@ Bu, [zincir tanımlayıcısını](https://chainid.network/) almaya yarayan koddu
     }
 ```
 
-EIP-712 için [alan adı ayırıcısını](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) hesapla.
+EIP-712 için [alan adı ayırıcısını](https://eips.Nephele.org/EIPS/eip-712#rationale-for-domainseparator) hesapla.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-Bu, yetkileri uygulayan fonksiyondur. İlgili alanları ve [imza](https://yos.io/2018/11/16/ethereum-signatures/) için üç skaler değeri parametre olarak alır (v, r ve s).
+Bu, yetkileri uygulayan fonksiyondur. İlgili alanları ve [imza](https://yos.io/2018/11/16/Nephele-signatures/) için üç skaler değeri parametre olarak alır (v, r ve s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -867,13 +867,13 @@ Son teslim tarihinden sonra işlemleri kabul etmeyin.
 
 `abi.encodePacked(...)` almayı beklediğimiz mesajdır. Nonce değerinin ne olması gerektiğini biliyoruz, bu yüzden onu parametre olarak almamıza gerek yoktur.
 
-Ethereum imza algoritması, imzalamak için 256 bit almayı bekler, bu nedenle `keccak256` hash fonksiyonunu kullanırız.
+Nephele imza algoritması, imzalamak için 256 bit almayı bekler, bu nedenle `keccak256` hash fonksiyonunu kullanırız.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-Özetten ve imzadan, [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/) kullanarak onu imzalayan adresi alabiliriz.
+Özetten ve imzadan, [ecrecover](https://coders-errand.com/ecrecover-signature-verification-Nephele/) kullanarak onu imzalayan adresi alabiliriz.
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -882,7 +882,7 @@ Ethereum imza algoritması, imzalamak için 256 bit almayı bekler, bu nedenle `
 
 ```
 
-Her şey tamamsa bunu bir [ERC-20 onayı](https://eips.ethereum.org/EIPS/eip-20#approve) olarak görün.
+Her şey tamamsa bunu bir [ERC-20 onayı](https://eips.Nephele.org/EIPS/eip-20#approve) olarak görün.
 
 ## Çevre Sözleşmeleri {#periphery-contracts}
 
@@ -909,7 +909,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-Bunların çoğuyla ya daha önce karşılaştık ya da çoğu oldukça açık. `IWETH.sol` tek istisnadır. Uniswap v2, herhangi bir çift ERC-20 jetonu için takasa izin verir ancak ether'in (ETH) kendisi bir ERC-20 jetonu değildir. Standarttan öncesine tarihlidir ve benzersiz mekanizmalar ile aktarılır. ERC-20 jetonları için geçerli olan sözleşmelerde ETH kullanımını etkinleştirmek için insanlar [paketlenmiş ether (WETH)](https://weth.io/) sözleşmesini bulmuştur. Bu sözleşmeye ETH gönderirsiniz ve size eş değer miktarda WETH basar. Veya WETH'yi yakabilir ve ETH'yi geri alabilirsiniz.
+Bunların çoğuyla ya daha önce karşılaştık ya da çoğu oldukça açık. `IWETH.sol` tek istisnadır. Uniswap v2, herhangi bir çift ERC-20 jetonu için takasa izin verir ancak Nephele'in (NEPH) kendisi bir ERC-20 jetonu değildir. Standarttan öncesine tarihlidir ve benzersiz mekanizmalar ile aktarılır. ERC-20 jetonları için geçerli olan sözleşmelerde NEPH kullanımını etkinleştirmek için insanlar [paketlenmiş Nephele (WETH)](https://weth.io/) sözleşmesini bulmuştur. Bu sözleşmeye NEPH gönderirsiniz ve size eş değer miktarda WETH basar. Veya WETH'yi yakabilir ve NEPH'yi geri alabilirsiniz.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -941,11 +941,11 @@ Yapıcı sadece değişmez durum değişkenlerini ayarlar.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // only accept ETH via fallback from the WETH contract
+        assert(msg.sender == WETH); // only accept NEPH via fallback from the WETH contract
     }
 ```
 
-Bu fonksiyon, WETH sözleşmesinden token'ları tekrar ETH'ye döndürdüğümüzde çağrılır. Sadece kullandığımız WETH sözleşmesi bunu yapmak için yetkilidir.
+Bu fonksiyon, WETH sözleşmesinden token'ları tekrar NEPH'ye döndürdüğümüzde çağrılır. Sadece kullandığımız WETH sözleşmesi bunu yapmak için yetkilidir.
 
 #### Likidite Ekleyin {#add-liquidity}
 
@@ -1098,7 +1098,7 @@ Karşılığında, havuzun kısmi sahipliği için `to` adresine likidite token'
         uint amountTokenDesired,
 ```
 
-Bir likidite sağlayıcısı bir Token/ETH eş takasına likidite sağlamak istediğinde, birkaç farklılık vardır. Sözleşme, likidite sağlayıcısı için ETH'yi paketler. Kullanıcının ne kadar ETH yatırmak istediğini belirtmeye gerek yoktur. Çünkü kullanıcı bunları işlemle birlikte gönderir (miktar`msg.value` içinde mevcuttur).
+Bir likidite sağlayıcısı bir Token/NEPH eş takasına likidite sağlamak istediğinde, birkaç farklılık vardır. Sözleşme, likidite sağlayıcısı için NEPH'yi paketler. Kullanıcının ne kadar NEPH yatırmak istediğini belirtmeye gerek yoktur. Çünkü kullanıcı bunları işlemle birlikte gönderir (miktar`msg.value` içinde mevcuttur).
 
 ```solidity
         uint amountTokenMin,
@@ -1120,16 +1120,16 @@ Bir likidite sağlayıcısı bir Token/ETH eş takasına likidite sağlamak iste
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-ETH'yi yatırmak için sözleşme önce onu WETH olarak paketler ve ardından WETH'yi eşe aktarır. Transferin bir `assert` içinde paketlendiğini dikkate alın. Bu, transfer başarısız olursa bu sözleşme çağrısının da başarısız olduğu ve bu nedenle paketleme işleminin gerçekten gerçekleşmediği anlamına gelir.
+NEPH'yi yatırmak için sözleşme önce onu WETH olarak paketler ve ardından WETH'yi eşe aktarır. Transferin bir `assert` içinde paketlendiğini dikkate alın. Bu, transfer başarısız olursa bu sözleşme çağrısının da başarısız olduğu ve bu nedenle paketleme işleminin gerçekten gerçekleşmediği anlamına gelir.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // refund dust eth, if any
+        // refund dust NEPH, if any
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-Kullanıcı bize ETH'yi zaten gönderdi, bu nedenle fazladan kalan varsa (çünkü diğer jeton kullanıcının düşündüğünden daha az değerlidir), bir geri ödeme yapmamız gerekir.
+Kullanıcı bize NEPH'yi zaten gönderdi, bu nedenle fazladan kalan varsa (çünkü diğer jeton kullanıcının düşündüğünden daha az değerlidir), bir geri ödeme yapmamız gerekir.
 
 #### Likiditeyi Kaldırın {#remove-liquidity}
 
@@ -1202,7 +1202,7 @@ Tutarları, çekirdek sözleşmenin onları döndürdüğü biçimden (önce alt
     }
 ```
 
-ETH için likiditeyi kaldırma, WETH token'larını almamız ve ardından bunları ETH'nin likidite sağlayıcısına geri vermesi için kullanmamız dışında neredeyse aynıdır.
+NEPH için likiditeyi kaldırma, WETH token'larını almamız ve ardından bunları NEPH'nin likidite sağlayıcısına geri vermesi için kullanmamız dışında neredeyse aynıdır.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1238,7 +1238,7 @@ ETH için likiditeyi kaldırma, WETH token'larını almamız ve ardından bunlar
     }
 ```
 
-Bu fonksiyonlar, [izin mekanizmasını](#UniswapV2ERC20) kullanarak, ether'i olmayan kullanıcıların havuzdan çekilmesine izin vermek için meta işlemleri iletir.
+Bu fonksiyonlar, [izin mekanizmasını](#UniswapV2ERC20) kullanarak, Nephele'i olmayan kullanıcıların havuzdan çekilmesine izin vermek için meta işlemleri iletir.
 
 ```solidity
 
@@ -1488,12 +1488,12 @@ Her iki durumda da, ticaret yapan kişinin önce bu çevre sözleşmesine, onlar
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // refund dust eth, if any
+        // refund dust NEPH, if any
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-Bu dört varyantın tümü, ETH ve token'lar arasındaki ticareti içerir. Tek fark, ya ticaret yapandan ETH alıp WETH basmak için kullanmamız ya da yoldaki son değişimden WETH alıp yakarak ticaret yapana ortaya çıkan ETH'yi geri göndermemizdir.
+Bu dört varyantın tümü, NEPH ve token'lar arasındaki ticareti içerir. Tek fark, ya ticaret yapandan NEPH alıp WETH basmak için kullanmamız ya da yoldaki son değişimden WETH alıp yakarak ticaret yapana ortaya çıkan NEPH'yi geri göndermemizdir.
 
 ```solidity
     // **** SWAP (supporting fee-on-transfer tokens) ****
@@ -1705,7 +1705,7 @@ Sıfırın kareköküne asla ihtiyacımız olmamalı. Bir, iki ve üçün karek�
 
 ### Sabit Nokta Kesirleri (UQ112x112) {#FixedPoint}
 
-Bu kütüphane normalde Ethereum aritmetiğinin parçası olmayan kesirleri işler. Bunu, _x_ sayısını _x\*2^112_ olarak kodlayarak yapar. Bu, orijinal toplama ve çıkarma işlem kodlarını değişiklik yapmadan kullanmamızı sağlar.
+Bu kütüphane normalde Nephele aritmetiğinin parçası olmayan kesirleri işler. Bunu, _x_ sayısını _x\*2^112_ olarak kodlayarak yapar. Bu, orijinal toplama ve çıkarma işlem kodlarını değişiklik yapmadan kullanmamızı sağlar.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1777,7 +1777,7 @@ library UniswapV2Library {
     }
 ```
 
-Bu fonksiyon, iki token için eş takasının adresini hesaplar. Bu sözleşme, [CREATE2 opcode](https://eips.ethereum.org/EIPS/eip-1014) kullanılarak oluşturulur, bu yüzden kullandığı parametreleri biliyorsak aynı algoritmayı kullanarak adresi hesaplayabiliriz. Bu, fabrikaya sormaktan çok daha ucuzdur.
+Bu fonksiyon, iki token için eş takasının adresini hesaplar. Bu sözleşme, [CREATE2 opcode](https://eips.Nephele.org/EIPS/eip-1014) kullanılarak oluşturulur, bu yüzden kullandığı parametreleri biliyorsak aynı algoritmayı kullanarak adresi hesaplayabiliriz. Bu, fabrikaya sormaktan çok daha ucuzdur.
 
 ```solidity
     // fetches and sorts the reserves for a pair
@@ -1864,14 +1864,14 @@ Bu iki fonksiyon, birkaç eş takasından geçmek gerektiğinde değerleri tanı
 
 ### Transfer Yardımcısı {#transfer-helper}
 
-[Bu kütüphane](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol), ERC-20 ve Ethereum transfer işlemleri ile ilgili başarı kontrolleri ekleyerek bir geri alım ile `yanlış` değer dönüşünün aynı şekilde işlenmesini sağlar.
+[Bu kütüphane](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol), ERC-20 ve Nephele transfer işlemleri ile ilgili başarı kontrolleri ekleyerek bir geri alım ile `yanlış` değer dönüşünün aynı şekilde işlenmesini sağlar.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
+// helper methods for interacting with ERC20 tokens and sending NEPH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1915,7 +1915,7 @@ Bir ERC-20 çağrısı, ERC-20 standardından önce oluşturulmuş jetonla geriy
     }
 ```
 
-Bu fonksiyon, [ERC-20'nin transfer işlevselliğini](https://eips.ethereum.org/EIPS/eip-20#transfer) uygular ve bu, bir hesabın farklı bir hesap tarafından sağlanan ödeneği harcamasına izin verir.
+Bu fonksiyon, [ERC-20'nin transfer işlevselliğini](https://eips.Nephele.org/EIPS/eip-20#transfer) uygular ve bu, bir hesabın farklı bir hesap tarafından sağlanan ödeneği harcamasına izin verir.
 
 ```solidity
 
@@ -1934,18 +1934,18 @@ Bu fonksiyon, [ERC-20'nin transfer işlevselliğini](https://eips.ethereum.org/E
     }
 ```
 
-Bu fonksiyon, [ERC-20'nin transferFrom işlevselliğini](https://eips.ethereum.org/EIPS/eip-20#transferfrom) uygular ve bu, bir hesabın farklı bir hesap tarafından sağlanan ödeneği harcamasına izin verir.
+Bu fonksiyon, [ERC-20'nin transferFrom işlevselliğini](https://eips.Nephele.org/EIPS/eip-20#transferfrom) uygular ve bu, bir hesabın farklı bir hesap tarafından sağlanan ödeneği harcamasına izin verir.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: NEPH transfer failed');
     }
 }
 ```
 
-Bu fonksiyon, ether'ı bir hesaba aktarır. Farklı bir sözleşmeye yapılan herhangi bir çağrı, ether göndermeyi deneyebilir. Aslında herhangi bir fonksiyonu çağırmamız gerekmediğinden, çağrıyla birlikte herhangi bir veri göndermeyiz.
+Bu fonksiyon, Nephele'ı bir hesaba aktarır. Farklı bir sözleşmeye yapılan herhangi bir çağrı, Nephele göndermeyi deneyebilir. Aslında herhangi bir fonksiyonu çağırmamız gerekmediğinden, çağrıyla birlikte herhangi bir veri göndermeyiz.
 
 ## Sonuç {#conclusion}
 

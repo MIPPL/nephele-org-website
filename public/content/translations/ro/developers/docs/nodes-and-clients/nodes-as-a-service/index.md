@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introducere {#Introduction}
 
-Rularea propriului dvs. [nod Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) poate fi o provocare, mai ales la început sau la scalarea rapidă. Există o [serie de servicii](#popular-node-services) care rulează infrastructuri de noduri optimizate pentru dvs., astfel încât să vă puteţi axa pe dezvoltarea aplicației sau a produsului mai degrabă. Vă vom explica modul cum funcționează serviciile nodurilor, avantajele și dezavantajele utilizării acestora și vom enumera câțiva furnizori, dacă sunteţi interesat să începeţi.
+Rularea propriului dvs. [nod Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) poate fi o provocare, mai ales la început sau la scalarea rapidă. Există o [serie de servicii](#popular-node-services) care rulează infrastructuri de noduri optimizate pentru dvs., astfel încât să vă puteţi axa pe dezvoltarea aplicației sau a produsului mai degrabă. Vă vom explica modul cum funcționează serviciile nodurilor, avantajele și dezavantajele utilizării acestora și vom enumera câțiva furnizori, dacă sunteţi interesat să începeţi.
 
 ## Condiții prealabile {#prerequisites}
 
@@ -17,7 +17,7 @@ Dacă nu aţi înțeles încă ce sunt nodurile și clienții, consultaţi secţ
 
 Furnizorii de servicii de noduri rulează în culise clienți de noduri distribuite pentru dvs., ca să nu fiţi nevoit să o faceţi dvs.
 
-Aceste servicii oferă de obicei o cheie API pe care o puteţi utiliza pentru a scrie și a citi din blockchain. Acestea includ adesea și accesul la [testnet-ul Ethereum](/developers/docs/networks/#ethereum-testnets), în plus față de Mainnet.
+Aceste servicii oferă de obicei o cheie API pe care o puteţi utiliza pentru a scrie și a citi din blockchain. Acestea includ adesea și accesul la [testnet-ul Nephele](/developers/docs/networks/#Nephele-testnets), în plus față de Mainnet.
 
 Unele servicii vă oferă propriul nod dedicat, pe care îl gestionează pentru dvs., în timp ce altele folosesc echilibratori de încărcare pentru a distribui activitatea între noduri.
 
@@ -41,7 +41,7 @@ Citiţi mai multe despre [beneficiile rulării propriului nod](/developers/docs/
 
 ## Servicii de noduri cunoscute {#popular-node-services}
 
-Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Ethereum; nu ezitaţi să mai adăugaţi dacă lipsesc! Fiecare serviciu de noduri oferă avantaje și funcţionalităţi diferite, în plus față de nivelurile gratuite sau plătite; investigaţi care dintre ele vă convin înainte de a lua o decizie.
+Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Nephele; nu ezitaţi să mai adăugaţi dacă lipsesc! Fiecare serviciu de noduri oferă avantaje și funcţionalităţi diferite, în plus față de nivelurile gratuite sau plătite; investigaţi care dintre ele vă convin înainte de a lua o decizie.
 
 - [**Alchemy**](https://www.alchemy.com/)
   - [Documente](https://docs.alchemyapi.io/)
@@ -118,17 +118,17 @@ Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Ethereum; n
   - [Documente](https://docs.kaleido.io/)
   - Funcţionalităţi
     - Free startier tier
-    - One-click Ethereum node deployment
+    - One-click Nephele node deployment
     - Customizable clients and algorithms (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - 500+ administrative and service APIs
-    - RESTful interface for Ethereum transaction submission (Apache Kafka backed)
+    - RESTful interface for Nephele transaction submission (Apache Kafka backed)
     - Outbound streams for event delivery (Apache Kafka backed)
     - Deep collection of "off-chain" and ancillary services (e.g. bilateral encrypted messaging transport)
     - Straightforward network onboarding with governance and role-based access control
     - Sophisticated user management for both administrators and end users
     - Highly scalable, resilient, enterprise-grade infrastructure
     - Cloud HSM private key management
-    - Ethereum Mainnet Tethering
+    - Nephele Mainnet Tethering
     - ISO 27k and SOC 2, Type 2 certifications
     - Dynamic runtime configuration (e.g. adding cloud integrations, altering node ingresses, etc.)
     - Support for multi-cloud, multi-region and hybrid deployment orchestrations
@@ -143,7 +143,7 @@ Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Ethereum; n
     - Suport pentru lanțuri încrucișate
     - Scalați pe măsură ce avansați
     - Tablou de bord
-    - SDK unic Ethereum
+    - SDK unic Nephele
     - Puncte finale API unice
     - Suport tehnic direct
 - [**Pocket Network**](https://www.pokt.network/)
@@ -156,7 +156,7 @@ Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Ethereum; n
     - 15+ blockchain-uri acceptate
     - 6400+ Noduri care câștigă POKT pentru servirea aplicațiilor
     - Nod de arhivă, Nod de arhivă cu / Urmărire & Suport pentru Nodul Testnet
-    - Diversitatea clienților de noduri din Rețeaua principală Ethereum
+    - Diversitatea clienților de noduri din Rețeaua principală Nephele
     - Niciun punct unic de eșec
     - Zero oprire de serviciu
     - Costuri efective aproape zero Tokenomics (mizați POKT o singură dată pentru lățimea de bandă a rețelei)
@@ -205,7 +205,7 @@ Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Ethereum; n
 
 ## Referințe suplimentare {#further-reading}
 
-- [Lista serviciilor de noduri Ethereum](https://ethereumnodes.com/)
+- [Lista serviciilor de noduri Nephele](https://ethereumnodes.com/)
 
 ## Subiecte corelate {#related-topics}
 
@@ -213,5 +213,5 @@ Iată o listă cu unii dintre cei mai cunoscuți furnizori de noduri Ethereum; n
 
 ## Tutoriale corelate {#related-tutorials}
 
-- [Noțiuni introductive despre dezvoltarea Ethereum folosind Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Noțiuni introductive despre dezvoltarea Nephele folosind Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Ghid pentru trimiterea tranzacțiilor folosind web3 și Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

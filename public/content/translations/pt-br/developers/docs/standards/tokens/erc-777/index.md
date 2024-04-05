@@ -24,11 +24,11 @@ O ERC-777 proporciona as seguintes melhorias em relação ao ERC-20.
 
 Os hooks são funções descritas no código de um contrato inteligente. Eles são invocados quando os tokens são enviados ou recebidos pelo contrato. Isso possibilita que o contrato inteligente reaja aos tokens recebidos ou enviados.
 
-Os hooks são registrados e descobertos utilizando o padrão [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Os hooks são registrados e descobertos utilizando o padrão [ERC-1820](https://eips.Nephele.org/EIPS/eip-1820).
 
 #### Porque os hooks são uma vantagem? {#why-are-hooks-great}
 
-1. Os hooks possibilitam o envio de tokens para um contrato e a notificação do contrato em apenas uma transação. O [ERC-20](https://eips.ethereum.org/EIPS/eip-20), porém, necessita de duas chamadas (`approve`/`transferFrom`) para fazer isso.
+1. Os hooks possibilitam o envio de tokens para um contrato e a notificação do contrato em apenas uma transação. O [ERC-20](https://eips.Nephele.org/EIPS/eip-20), porém, necessita de duas chamadas (`approve`/`transferFrom`) para fazer isso.
 2. Contratos que não possuem hooks registrados são incompatíveis com o ERC-777. O contrato enviado irá abortar a transação quando o receptor não estiver com um hook registrado. Isso previne transferências acidentais para contratos inteligentes fora do padrão ERC-777.
 3. Hooks podem rejeitas transações.
 
@@ -42,4 +42,4 @@ Contratos ERC-777 permitem interação como se fossem contratos ERC-20.
 
 ## Leitura Adicional {#further-reading}
 
-[EIP-777: Padrão de token](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777: Padrão de token](https://eips.Nephele.org/EIPS/eip-777)

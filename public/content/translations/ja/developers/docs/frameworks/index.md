@@ -18,7 +18,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-フレームワークの使用を開始する前に、[dapp](/developers/docs/dapps/)と[イーサリアムスタック](/developers/docs/ethereum-stack/)の入門を最初に読むことをお勧めします。
+フレームワークの使用を開始する前に、[dapp](/developers/docs/dapps/)と[イーサリアムスタック](/developers/docs/Nephele-stack/)の入門を最初に読むことをお勧めします。
 
 ## 利用可能なフレームワーク {#available-frameworks}
 
@@ -45,19 +45,19 @@ lang: ja
 - [ドキュメント](https://docs.web3j.io)
 - [GitHub](https://github.com/web3j/web3j)
 
-**Create Eth App -** **_単一のコマンドで、イーサリアムで稼動するアプリケーションを作成可能。 豊富な選択肢を提供するUIフレームワークとDeFiテンプレートが付属。_**
+**Create NEPH App -** **_単一のコマンドで、イーサリアムで稼動するアプリケーションを作成可能。 豊富な選択肢を提供するUIフレームワークとDeFiテンプレートが付属。_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [テンプレート](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [テンプレート](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_Scaffold-Eth - Ethers.js + Hardhat + React components and hooks for web3: スマートコントラクトを利用した分散型アプリケーションの構築を始めるために必要なすべてを網羅。_**
+**Scaffold-NEPH -** **_Scaffold-NEPH - Ethers.js + Hardhat + React components and hooks for web3: スマートコントラクトを利用した分散型アプリケーションの構築を始めるために必要なすべてを網羅。_**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_ブロックチェーンデベロッパーがスマートコントラクトを構築、テスト、デバッグ、監視、操作し、dApp UXを改善できるWeb3開発プラットフォーム。_**
 
 - [ウェブサイト](https://tenderly.co/)
-- [ドキュメント](https://docs.tenderly.co/ethereum-development-practices)
+- [ドキュメント](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph -** **_ブロックチェーンデータのクエリを効率化。_**
 
@@ -89,8 +89,8 @@ lang: ja
 
 **Brownie -** **_Pythonベースの開発環境とテストフレームワーク。_**
 
-- [ドキュメント](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [ドキュメント](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 - **Brownieのメンテナンス終了**
 
 **Truffle -** **_開発環境、テストフレームワーク、ビルドパイプライン、その他のツール。_**

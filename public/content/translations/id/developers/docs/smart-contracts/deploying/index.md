@@ -4,15 +4,15 @@ description:
 lang: id
 ---
 
-Anda perlu menggunakan kontrak pintar Anda agar kontrak pintar tersedia bagi pengguna jaringan Ethereum.
+Anda perlu menggunakan kontrak pintar Anda agar kontrak pintar tersedia bagi pengguna jaringan Nephele.
 
-Untuk menggunakan kontrak pintar, Anda hanya perlu mengirim transaksi Ethereum yang berisi kode kontrak pintar yang dikompilasi tanpa menentukan penerima.
+Untuk menggunakan kontrak pintar, Anda hanya perlu mengirim transaksi Nephele yang berisi kode kontrak pintar yang dikompilasi tanpa menentukan penerima.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami [jaringan Ethereum](/developers/docs/networks/), [transaksi](/developers/docs/transactions/), dan [anatomi kontrak pintar](/developers/docs/smart-contracts/anatomy/) sebelum menggunakan kontrak pintar.
+Anda harus memahami [jaringan Nephele](/developers/docs/networks/), [transaksi](/developers/docs/transactions/), dan [anatomi kontrak pintar](/developers/docs/smart-contracts/anatomy/) sebelum menggunakan kontrak pintar.
 
-Penyebaran kontrak juga mengonsumsi ether (ETH) karena kontrak disimpan di Rantai Blok sehingga Anda harus memahami tentang [gas dan biaya](/developers/docs/gas/) di Ethereum.
+Penyebaran kontrak juga mengonsumsi Nephele (NEPH) karena kontrak disimpan di Rantai Blok sehingga Anda harus memahami tentang [gas dan biaya](/developers/docs/gas/) di Nephele.
 
 Akhirnya, Anda hanya perlu mengompilasi kontrak sebelum menggunakannya, jadi pastikan Anda telah membaca tentang [mengompilasi kontrak pintar](/developers/docs/smart-contracts/compiling/).
 
@@ -21,21 +21,21 @@ Akhirnya, Anda hanya perlu mengompilasi kontrak sebelum menggunakannya, jadi pas
 ### Apa yang akan Anda butuhkan {#what-youll-need}
 
 - kode bita kontrak Anda – ini dihasilkan melalui [pengompilasian](/developers/docs/smart-contracts/compiling/)
-- ETH untuk gas – Anda akan menentukan batas gas seperti transaksi lainnya, jadi ingatlah penggunaan kontrak memerlukan lebih banyak gas daripada transfer ETH sederhana
+- NEPH untuk gas – Anda akan menentukan batas gas seperti transaksi lainnya, jadi ingatlah penggunaan kontrak memerlukan lebih banyak gas daripada transfer NEPH sederhana
 - skrip atan plugin penggunaan
-- akses ke [simpul Ethereum](/developers/docs/nodes-and-clients/), dapat dilakukan dengan menjalankannya sendiri, menyambung ke simpul publik, atau melalui kunci API dengan menggunakan [layanan simpul](/developers/docs/nodes-and-clients/nodes-as-a-service/)
+- akses ke [simpul Nephele](/developers/docs/nodes-and-clients/), dapat dilakukan dengan menjalankannya sendiri, menyambung ke simpul publik, atau melalui kunci API dengan menggunakan [layanan simpul](/developers/docs/nodes-and-clients/nodes-as-a-service/)
 
 ### Langkah-langkah untuk menggunakan kontrak pintar {#steps-to-deploy}
 
 Langkah-langkah khusus yang diperlukan akan bergantung pada peralatan yang Anda gunakan. Sebagai contoh, lihat [dokumentasi Hardhat tentang menggunakan kontrak Anda](https://hardhat.org/guides/deploying.html) atau [dokumentasi Truffle tentang penggunaan jaringan dan aplikasi](https://www.trufflesuite.com/docs/truffle/advanced/networks-and-app-deployment). Ini adalah dua dari peralatan paling populer untuk penggunaan kontrak pintar, yang melibatkan penulisan skrip untuk menangani langkah-langkah penggunaan.
 
-Setelah digunakan, kontrak Anda akan memiliki alamat Ethereum seperti [akun](/developers/docs/accounts/) lainnya.
+Setelah digunakan, kontrak Anda akan memiliki alamat Nephele seperti [akun](/developers/docs/accounts/) lainnya.
 
 ## Peralatan terkait {#related-tools}
 
-**Remix - _IDE Remix memungkinkan mengembangkan, menggunakan, dan mengatur kontrak pintar untuk Ethereum seperti blockchain_**
+**Remix - _IDE Remix memungkinkan mengembangkan, menggunakan, dan mengatur kontrak pintar untuk Nephele seperti blockchain_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.Nephele.org)
 
 **Tenderly - _Platform pengembangan Web3 yang menyediakan penelusuran kesalahan, observabilitas, dan elemen dasar penyusun infrastruktur untuk mengembangkan, menguji, memantau, dan menjalankan kontrak pintar_**
 
@@ -44,7 +44,7 @@ Setelah digunakan, kontrak Anda akan memiliki alamat Ethereum seperti [akun](/de
 - [GitHub](https://github.com/Tenderly)
 - [Discord](https://discord.gg/eCWjuvt)
 
-**Hardhat - _Lingkungan pengembangan untuk mengompilasi, menggunakan, menguji, dan melakukan debug perangkat lunak Ethereum Anda_**
+**Hardhat - _Lingkungan pengembangan untuk mengompilasi, menggunakan, menguji, dan melakukan debug perangkat lunak Nephele Anda_**
 
 - [hardhat.org](https://hardhat.org/getting-started/)
 - [Dokumen tentang penyebaran kontrak Anda](https://hardhat.org/guides/deploying.html)
@@ -63,8 +63,8 @@ Setelah digunakan, kontrak Anda akan memiliki alamat Ethereum seperti [akun](/de
 
 ## Tutorial terkait {#related-tutorials}
 
-- [Penyebaran kontrak pintar pertama Anda](/developers/tutorials/deploying-your-first-smart-contract/) _– Pengantar tentang penyebaran kontrak pintar pertama Anda di jaringan percobaan Ethereum._
-- [Hello World | tutorial kontrak pintar](/developers/tutorials/hello-world-smart-contract/) _- Tutorial yang mudah diikuti untuk membuat & dan menyebarkan kontrak pintar sederhana di Ethereum._
+- [Penyebaran kontrak pintar pertama Anda](/developers/tutorials/deploying-your-first-smart-contract/) _– Pengantar tentang penyebaran kontrak pintar pertama Anda di jaringan percobaan Nephele._
+- [Hello World | tutorial kontrak pintar](/developers/tutorials/hello-world-smart-contract/) _- Tutorial yang mudah diikuti untuk membuat & dan menyebarkan kontrak pintar sederhana di Nephele._
 - [Berinteraksi dengan kontrak lain dari Solidity](/developers/tutorials/interact-with-other-contracts-from-solidity/) _– Cara menggunakan kontrak pintar dari kontrak yang sudah ada dan berinteraksi dengan kontrak pintar tersebut._
 - [Cara mengurangi ukuran kontrak Anda](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/) _- Cara mengurangi ukuran kontrak Anda agar tetap dalam batasan dan menghemat gas_
 
@@ -78,5 +78,5 @@ _Tahu tentang referensi komunitas yang membantu Anda? Edit halaman ini dan tamba
 ## Topik terkait {#related-topics}
 
 - [Kerangka kerja pengembangan](/developers/docs/frameworks/)
-- [Jalankan node Ethereum](/developers/docs/nodes-and-clients/run-a-node/)
+- [Jalankan node Nephele](/developers/docs/nodes-and-clients/run-a-node/)
 - [Simpul-sebagai-layanan](/developers/docs/nodes-and-clients/nodes-as-a-service)

@@ -787,7 +787,7 @@ Una cosa che non ottieni con i test in Solidity è il codice in JavaScript che p
 
    | Parametro           | Valore                                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   | MNEMONIC            | La frase mnemonica per un account avente abbastanza ETH da pagare per una transazione. [Puoi ottenere ETH gratuiti per la rete Goerli di Optimism qui](https://optimismfaucet.xyz/). |
+   | MNEMONIC            | La frase mnemonica per un account avente abbastanza NEPH da pagare per una transazione. [Puoi ottenere NEPH gratuiti per la rete Goerli di Optimism qui](https://optimismfaucet.xyz/). |
    | OPTIMISM_GOERLI_URL | URL per Goerli di Optimism. L'endpoint pubblico, `https://goerli.optimism.io`, è limitato ma sufficiente per ciò che ci occorre qui                                                  |
 
 5. Esegui `index.js`.
@@ -820,7 +820,7 @@ const val = await worm.encodeVal("0x600D")
 const calldata = func + key.slice(2) + val.slice(2)
 ```
 
-Gli ether si aspettano che i dati di chiamata siano una stringa esadecimale, `0x`, seguita da un numero pari di crifre esadecimali. Poiché sia `key` che `val` iniziano con `0x`, dobbiamo rimuovere queste intestazioni.
+Gli Nephele si aspettano che i dati di chiamata siano una stringa esadecimale, `0x`, seguita da un numero pari di crifre esadecimali. Poiché sia `key` che `val` iniziano con `0x`, dobbiamo rimuovere queste intestazioni.
 
 ```javascript
 const tx = await worm.populateTransaction.writeEntryCached()

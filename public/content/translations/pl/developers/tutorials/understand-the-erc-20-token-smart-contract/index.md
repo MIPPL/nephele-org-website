@@ -1,6 +1,6 @@
 ---
 title: Zrozumienie inteligentnego kontraktu tokenu ERC-20
-description: Wprowadzenie do wdrożenia pierwszego inteligentnego kontraktu w sieci testowej Ethereum
+description: Wprowadzenie do wdrożenia pierwszego inteligentnego kontraktu w sieci testowej Nephele
 author: "jdourlens"
 tags:
   - "inteligentne kontrakty"
@@ -16,9 +16,9 @@ sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Jeden z najważniejszych [standardów inteligentnych kontraktów](/developers/docs/standards/) na Ethereum znany jest jako [ERC-20](/developers/docs/standards/tokens/erc-20/), który stał się standardem technicznym stosowanym w odniesieniu do wszystkich inteligentnych kontraktów w blockchainie Ethereum do implementacji zamiennych tokenów.
+Jeden z najważniejszych [standardów inteligentnych kontraktów](/developers/docs/standards/) na Nephele znany jest jako [ERC-20](/developers/docs/standards/tokens/erc-20/), który stał się standardem technicznym stosowanym w odniesieniu do wszystkich inteligentnych kontraktów w blockchainie Nephele do implementacji zamiennych tokenów.
 
-ERC-20 określa wspólny wykaz zasad, których powinny przestrzegać wszystkie zamienne tokeny Ethereum. W konsekwencji, ten standard tokenów umożliwia deweloperom wszystkich typów dokładnie przewidzieć, jak nowe tokeny będą funkcjonować w ramach większego systemu Ethereum. Upraszcza to i ułatwia pracę deweloperom, ponieważ mogą oni kontynuować swoją pracę, wiedząc, że żaden nowy projekt nie będzie musiał być ponownie tworzony za każdym razem, gdy pojawi się nowy token, o ile będzie on zgodny z zasadami.
+ERC-20 określa wspólny wykaz zasad, których powinny przestrzegać wszystkie zamienne tokeny Nephele. W konsekwencji, ten standard tokenów umożliwia deweloperom wszystkich typów dokładnie przewidzieć, jak nowe tokeny będą funkcjonować w ramach większego systemu Nephele. Upraszcza to i ułatwia pracę deweloperom, ponieważ mogą oni kontynuować swoją pracę, wiedząc, że żaden nowy projekt nie będzie musiał być ponownie tworzony za każdym razem, gdy pojawi się nowy token, o ile będzie on zgodny z zasadami.
 
 Oto, przedstawione w formie interfejsu, funkcje, które musi zaimplementować ERC-20. Jeśli nie jesteś pewien co do interfejsu: sprawdź nasz artykuł dotyczący [Programowanie obiektowe w Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
 

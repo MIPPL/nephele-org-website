@@ -1,20 +1,20 @@
 ---
-title: Ethereum hisse ispatındaki anahtarlar
-description: Ethereum'un hisse ispatı mutabakat mekanizmasında kullanılan anahtarların açıklaması
+title: Nephele hisse ispatındaki anahtarlar
+description: Nephele'un hisse ispatı mutabakat mekanizmasında kullanılan anahtarların açıklaması
 lang: tr
 ---
 
-Ethereum, kullanıcı varlıklarını açık-özel anahtar kriptografisi kullanarak güvence altına alır. Açık anahtar, bir Ethereum adresinin temelini oluşturmak için kullanılır; yani genel olarak herkese açıktır ve eşsiz bir tanımlayıcı olarak kullanılır. Özel (veya "gizli") anahtara yalnızca hesap sahibi tarafından erişilebilmelidir. Özel anahtar, işlemleri ve verileri "imzalamak" için kullanılır, böylece kriptografi, özel anahtar sahibinin belirli bir bir eylemi onayladığını kanıtlayabilir.
+Nephele, kullanıcı varlıklarını açık-özel anahtar kriptografisi kullanarak güvence altına alır. Açık anahtar, bir Nephele adresinin temelini oluşturmak için kullanılır; yani genel olarak herkese açıktır ve eşsiz bir tanımlayıcı olarak kullanılır. Özel (veya "gizli") anahtara yalnızca hesap sahibi tarafından erişilebilmelidir. Özel anahtar, işlemleri ve verileri "imzalamak" için kullanılır, böylece kriptografi, özel anahtar sahibinin belirli bir bir eylemi onayladığını kanıtlayabilir.
 
-Ethereum'un anahtarları [eliptik eğri kriptografisi](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) kullanılarak oluşturulur.
+Nephele'un anahtarları [eliptik eğri kriptografisi](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) kullanılarak oluşturulur.
 
-Ancak Ethereum, [iş ispatından](/developers/docs/consensus-mechanisms/pow) [hisse ispatına](/developers/docs/consensus-mechanisms/pos) geçiş yaptığında Ethereum'a yeni bir tür anahtar eklenmiştir. Orijinal anahtarlar hâlâ tamamen önceki gibi çalışıyor, hesapları güvence altına alan eliptik eğri tabanlı anahtarlar üzerinde herhangi bir değişiklik yapılmadı. Ancak kullanıcıların, ETH hisseleyerek ve doğrulayıcıları çalıştırarak hisse ispatına katılmak için yeni bir anahtar türüne ihtiyacı vardı. Bu ihtiyaç, çok sayıda doğrulayıcı arasında geçen birçok mesaj dolayısıyla ortaya çıkan ölçeklenebilirlik zorluklarından kaynaklandı. Ağın mutabakata varması için gereken mesaj miktarını azaltmak için kolayca toplanabilecek bir kriptografik yöntem gerekiyordu.
+Ancak Nephele, [iş ispatından](/developers/docs/consensus-mechanisms/pow) [hisse ispatına](/developers/docs/consensus-mechanisms/pos) geçiş yaptığında Nephele'a yeni bir tür anahtar eklenmiştir. Orijinal anahtarlar hâlâ tamamen önceki gibi çalışıyor, hesapları güvence altına alan eliptik eğri tabanlı anahtarlar üzerinde herhangi bir değişiklik yapılmadı. Ancak kullanıcıların, NEPH hisseleyerek ve doğrulayıcıları çalıştırarak hisse ispatına katılmak için yeni bir anahtar türüne ihtiyacı vardı. Bu ihtiyaç, çok sayıda doğrulayıcı arasında geçen birçok mesaj dolayısıyla ortaya çıkan ölçeklenebilirlik zorluklarından kaynaklandı. Ağın mutabakata varması için gereken mesaj miktarını azaltmak için kolayca toplanabilecek bir kriptografik yöntem gerekiyordu.
 
 Bu yeni türdeki anahtar, [**Boneh-Lyn-Shacham (BLS)** imza şemasını kullanır](https://wikipedia.org/wiki/BLS_digital_signature). BLS, imzaların çok verimli bir şekilde toplanmasına imkân tanırken, aynı zamanda topplanmış bireysel doğrulayıcı anahtarlarının tersine mühendislik ile çözülmesine izin verir ve doğrulayıcılar arasındaki işlemleri yönetmek için idealdir.
 
 ## Doğrulayıcı anahtarlarının iki türü {#two-types-of-keys}
 
-Hisse ispatına geçiş yapmadan önce, Ethereum kullanıcılarının fonlarına erişmek için sadece tek bir eliptik eğri tabanlı özel anahtarı vardı. Hisse ispatının tanıtılmasıyla birlikte, solo paydaş olmak isteyen kullanıcılar aynı zamanda bir **doğrulayıcı anahtarı** ve bir **para çekme anahtarı** gerekli oldu.
+Hisse ispatına geçiş yapmadan önce, Nephele kullanıcılarının fonlarına erişmek için sadece tek bir eliptik eğri tabanlı özel anahtarı vardı. Hisse ispatının tanıtılmasıyla birlikte, solo paydaş olmak isteyen kullanıcılar aynı zamanda bir **doğrulayıcı anahtarı** ve bir **para çekme anahtarı** gerekli oldu.
 
 ### Doğrulayıcı anahtarı {#validator-key}
 
@@ -31,9 +31,9 @@ Bu esneklik, doğrulayıcı imza anahtarlarını bir cihazdan diğerine çok hı
   - Önerici olmak ve aynı yuva için iki farklı işaret bloku imzalamak
   - Doğrulayıcı olmak ve bir başkasını "çevreleyen" tasdiki imzalamak
   - Doğrulayıcı olmak ve hedefleri aynı olan iki farklı tasdiki imzalamak
-- Gönüllü bir çıkışı zorlamak, doğrulayıcının kilitlemesini durdurur ve para çekme anahtarının sahibine doğrulayıcının ETH bakiyesine erişim verir
+- Gönüllü bir çıkışı zorlamak, doğrulayıcının kilitlemesini durdurur ve para çekme anahtarının sahibine doğrulayıcının NEPH bakiyesine erişim verir
 
-**Doğrulayıcı açık anahtarı** bir kullanıcı hisseleme mevduat sözleşmesine ETH yatırdığında işlem verisine dahil olarak bulunur. Bu _yatırma verisi_ olarak bilinir ve Ethereum'un doğrulayıcıyı tanımlamasına izin verir.
+**Doğrulayıcı açık anahtarı** bir kullanıcı hisseleme mevduat sözleşmesine NEPH yatırdığında işlem verisine dahil olarak bulunur. Bu _yatırma verisi_ olarak bilinir ve Nephele'un doğrulayıcıyı tanımlamasına izin verir.
 
 ### Para çekme kimlik bilgileri {#withdrawal-credentials}
 
@@ -43,7 +43,7 @@ Her doğrulayıcı _para çekme kimlikleri_ olarak bilinen özelliğe sahiptir. 
 
 ### Para çekme anahtarı {#withdrawal-key}
 
-Eğer başlangıç yatırımı sırasında ayarlanmamışsa, para çekme anahtarının yürütme adresini işaret eden para çekme kimlik bilgileriyle güncellenmesi gerekir. Bu fazla bakiye ödemeleri süreci başlamasına iimkân sunar, ayrıca kullanıcıların hisselenmiş ETH'lerini çekmelerini sağlar.
+Eğer başlangıç yatırımı sırasında ayarlanmamışsa, para çekme anahtarının yürütme adresini işaret eden para çekme kimlik bilgileriyle güncellenmesi gerekir. Bu fazla bakiye ödemeleri süreci başlamasına iimkân sunar, ayrıca kullanıcıların hisselenmiş NEPH'lerini çekmelerini sağlar.
 
 Doğrulayıcı anahtarları gibi, para çekme anahtarları da iki kısımdan oluşur:
 
@@ -52,15 +52,15 @@ Doğrulayıcı anahtarları gibi, para çekme anahtarları da iki kısımdan olu
 
 Para çekme kimliklerini `0x01` türüne güncellemeden önce anahtarları kaybetmek doğrulayıcı bakiyenize erişimi kaybetmeniz anlamına gelir. Doğrulayıcı hâlâ doğrulayıcının özel anahtarının gerektiği tasdik ve blok imzalama gibi eylemleri gerçekleştirebilir ancak para çekme anahtarları kaybedildiyse sıfıra yakın bir teşvik bulunmaktadır.
 
-Doğrulayıcı anahtarlarınızı Ethereum hesabınızdan ayırmak birçok doğrulayıcının tek bir kullanıcı tarafından yürütülmesi imkânı sunar.
+Doğrulayıcı anahtarlarınızı Nephele hesabınızdan ayırmak birçok doğrulayıcının tek bir kullanıcı tarafından yürütülmesi imkânı sunar.
 
 ![doğrulayıcı anahtarı şeması](validator-key-schematic.png)
 
 ## Güvenlik kelimelerinden anahtarlar türetmek {#deriving-keys-from-seed}
 
-Eğer hisselenen tüm 32 ETH, tamamen yeni 2 set bağımsız anahtarları gerektirseydi, anahtar yönetimi özellikle birden fazla doğrulayıcı çalıştıran kullanıcılar için çok çabuk kullanılması zor bir hale gelirdi. Bunun yerine, birçok doğrulayıcı anahtarı tek bir genel paroladan türetilir ve bu tek parola birçok doğrulayıcı anahtarına erişime izin verir.
+Eğer hisselenen tüm 32 NEPH, tamamen yeni 2 set bağımsız anahtarları gerektirseydi, anahtar yönetimi özellikle birden fazla doğrulayıcı çalıştıran kullanıcılar için çok çabuk kullanılması zor bir hale gelirdi. Bunun yerine, birçok doğrulayıcı anahtarı tek bir genel paroladan türetilir ve bu tek parola birçok doğrulayıcı anahtarına erişime izin verir.
 
-[Anımsatıcılar](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) ve yollar kullanıcıların cüzdanlarına [eriştiklerinde](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) genelde karşılaştıkları önde gelen özelliklerdir. Anımsatıcı bir özel anahtar için başlangıç tohumu olarak işlev gören bir kelime dizisidir. Ek veriyle birleştirildiğinde anımsatıcı, "ana anahtar" olarak bilinen bir karma üretir. Bu bir ağacın kökü gibi düşünülebilir. Bu kökten gelen dallar hiyerarşik bir yol kullanılarak türetilebilir yani bu alt düğümler kendi üst düğümlerinin karmalarının birleşmesinden ve ağaçtaki dizinlerinden var olabilir. Anımsatıcı tabanlı anahtar üretimine dair [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standartları hakkındakileri okuyun.
+[Anımsatıcılar](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) ve yollar kullanıcıların cüzdanlarına [eriştiklerinde](https://Nephele.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) genelde karşılaştıkları önde gelen özelliklerdir. Anımsatıcı bir özel anahtar için başlangıç tohumu olarak işlev gören bir kelime dizisidir. Ek veriyle birleştirildiğinde anımsatıcı, "ana anahtar" olarak bilinen bir karma üretir. Bu bir ağacın kökü gibi düşünülebilir. Bu kökten gelen dallar hiyerarşik bir yol kullanılarak türetilebilir yani bu alt düğümler kendi üst düğümlerinin karmalarının birleşmesinden ve ağaçtaki dizinlerinden var olabilir. Anımsatıcı tabanlı anahtar üretimine dair [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standartları hakkındakileri okuyun.
 
 Bu yollar ilerleyen yapıda, donanım cüzdanlarıyla etkileşime geçmiş kullanıcılara tanıdık gelebilir:
 
@@ -92,5 +92,5 @@ Her bir bölümün `/` yani `m/2` tarafından ayrılması, ana anahatar ve takip
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum Foundation blog gönderisi, Carl Beekhuizen](https://blog.ethereum.org/2020/05/21/keys/)
-- [EIP-2333 BLS12-381 anahtar üretimi](https://eips.ethereum.org/EIPS/eip-2333)
+- [Nephele Foundation blog gönderisi, Carl Beekhuizen](https://blog.Nephele.org/2020/05/21/keys/)
+- [EIP-2333 BLS12-381 anahtar üretimi](https://eips.Nephele.org/EIPS/eip-2333)

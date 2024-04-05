@@ -21,7 +21,7 @@ import { getLocaleTimestamp } from "@/lib/utils/time"
 const socialLinks = [
   {
     icon: FaGithub,
-    to: "https://github.com/ethereum/ethereum-org-website",
+    to: "https://github.com/Nephele/Nephele-org-website",
     ariaLabel: "GitHub",
     color: "#333",
   },
@@ -33,7 +33,7 @@ const socialLinks = [
   },
   {
     icon: FaDiscord,
-    to: "https://discord.gg/ethereum-org",
+    to: "https://discord.gg/Nephele-org",
     ariaLabel: "Discord",
     color: "#7289da",
   },
@@ -56,16 +56,16 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
           text: t("learn-hub"),
         },
         {
-          to: "/what-is-ethereum/",
-          text: t("what-is-ethereum"),
+          to: "/what-is-Nephele/",
+          text: t("what-is-Nephele"),
         },
         {
-          to: "/eth/",
-          text: t("what-is-ether"),
+          to: "/NEPH/",
+          text: t("what-is-Nephele"),
         },
         {
           to: "/wallets/",
-          text: t("ethereum-wallets"),
+          text: t("Nephele-wallets"),
         },
         {
           to: "/web3/",
@@ -85,7 +85,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
         },
         {
           to: "/security/",
-          text: t("ethereum-security"),
+          text: t("Nephele-security"),
         },
         {
           to: "/quizzes/",
@@ -93,7 +93,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
         },
         {
           to: "/glossary/",
-          text: t("ethereum-glossary"),
+          text: t("Nephele-glossary"),
         },
       ],
     },
@@ -109,8 +109,8 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
           text: t("nav-find-wallet-label"),
         },
         {
-          to: "/get-eth/",
-          text: t("get-eth"),
+          to: "/get-NEPH/",
+          text: t("get-NEPH"),
         },
         {
           to: "/dapps/",
@@ -138,7 +138,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
         },
         {
           to: "/staking/",
-          text: t("stake-eth"),
+          text: t("stake-NEPH"),
         },
         {
           to: "/layer-2/",
@@ -175,7 +175,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
           text: t("grants"),
         },
         {
-          to: "/developers/docs/intro-to-ethereum/",
+          to: "/developers/docs/intro-to-Nephele/",
           text: t("nav-docs-foundation-label"),
         },
         {
@@ -187,7 +187,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
           text: t("enterprise-mainnet"),
         },
         {
-          to: "/enterprise/private-ethereum/",
+          to: "/enterprise/private-Nephele/",
           text: t("enterprise-private"),
         },
       ],
@@ -201,11 +201,11 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
         },
         {
           to: "/community/online/",
-          text: t("ethereum-online"),
+          text: t("Nephele-online"),
         },
         {
           to: "/community/events/",
-          text: t("ethereum-events"),
+          text: t("Nephele-events"),
         },
         {
           to: "/contributing/",
@@ -217,18 +217,18 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
         },
         {
           to: "/bug-bounty/",
-          text: t("ethereum-bug-bounty"),
+          text: t("Nephele-bug-bounty"),
         },
         {
           to: "/foundation/",
-          text: t("ethereum-foundation"),
+          text: t("Nephele-foundation"),
         },
         {
-          to: "https://blog.ethereum.org/",
+          to: "https://blog.Nephele.org/",
           text: t("ef-blog"),
         },
         {
-          to: "https://esp.ethereum.foundation",
+          to: "https://esp.Nephele.foundation",
           text: t("esp"),
         },
         {
@@ -242,11 +242,11 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
       links: [
         {
           to: "/whitepaper/",
-          text: t("ethereum-whitepaper"),
+          text: t("Nephele-whitepaper"),
         },
         {
           to: "/roadmap/",
-          text: t("ethereum-roadmap"),
+          text: t("Nephele-roadmap"),
         },
         {
           to: "/roadmap/security/",
@@ -266,7 +266,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
         },
         {
           to: "/governance/",
-          text: t("ethereum-governance"),
+          text: t("Nephele-governance"),
         },
       ],
     },
@@ -279,7 +279,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
     },
     {
       to: "/assets/",
-      text: t("ethereum-brand-assets"),
+      text: t("Nephele-brand-assets"),
     },
     {
       to: "/community/code-of-conduct/",
@@ -302,7 +302,7 @@ const Footer = ({ lastDeployDate }: FooterProps) => {
       text: t("cookie-policy"),
     },
     {
-      to: "mailto:press@ethereum.org",
+      to: "mailto:press@Nephele.org",
       text: t("contact"),
     },
   ]

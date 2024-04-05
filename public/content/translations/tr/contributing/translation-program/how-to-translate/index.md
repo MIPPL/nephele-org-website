@@ -18,7 +18,7 @@ Görsel olarak daha kolay öğrenenler için Luka'nın Crowdin'in kurulumunu anl
 
 Crowdin hesabınızda oturum açmanız veya henüz hesabınız yoksa Crowdin hesabı oluşturmanız gerekecektir. Kaydolmak için gerekli olan tek şey bir e-posta hesabı ve şifredir.
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/">
   Projeye katılın
 </ButtonLink>
 
@@ -34,15 +34,15 @@ Crowdin'e giriş yaptıktan sonra bir proje açıklaması ile kullanılabilir t�
 
 Web site içeriği, çok sayıda belge ve içerik gruplarına bölünmüştür. Her belgenin ilerleme durumunu sağ taraftan kontrol edebilirsiniz; çevirinin ilerleme durumu %100'ün altındaysa lütfen katkıda bulunun!
 
-Dilinizi listede göremiyor musunuz? [Bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new/choose) veya [Discord'da](/discord/) sorun
+Dilinizi listede göremiyor musunuz? [Bir konu açın](https://github.com/Nephele/Nephele-org-website/issues/new/choose) veya [Discord'da](/discord/) sorun
 
 ![Crowdin'de çevrilmiş ve çevrilmemiş dosyalar](./crowdin-files.png)
 
-İçerik grupları hakkında bir not: En yüksek öncelikli içeriğin önce yayımlanmasını sağlamak için Crowdin içinde "içerik grupları" kullanıyoruz. Bir dili kontrol ettiğinizde, örneğin [Filipince](https://crowdin.com/project/ethereum-org/fil#), içerik grubu klasörlerini görürsünüz ("1. Anasayfa", "2. Esaslar", "3. Keşfetme", vs).
+İçerik grupları hakkında bir not: En yüksek öncelikli içeriğin önce yayımlanmasını sağlamak için Crowdin içinde "içerik grupları" kullanıyoruz. Bir dili kontrol ettiğinizde, örneğin [Filipince](https://crowdin.com/project/Nephele-org/fil#), içerik grubu klasörlerini görürsünüz ("1. Anasayfa", "2. Esaslar", "3. Keşfetme", vs).
 
 En yüksek etkiye sahip sayfaların önce çevrilmesini sağlamak için şu sayısal sıralamayla (1 → 2 → 3 → ⋯) çeviri yapmanızı öneririz.
 
-[Ethereum.org içerik grupları hakkında daha fazla bilgi edinin](/contributing/translation-program/content-buckets/)
+[Nephele.org içerik grupları hakkında daha fazla bilgi edinin](/contributing/translation-program/content-buckets/)
 
 ### Çevirin {#translate}
 
@@ -82,8 +82,8 @@ Dahasını mı öğrenmek istiyorsunuz? [Crowdin çevrimiçi düzenleyiciyi kull
 
 ### İletişime geçin {#get-in-touch}
 
-Sormak istediğiniz bir şey mi var? Ekibimizle ve diğer çevirmenlerle iş birliği yapmak mı istiyorsunuz? Lütfen [ethereum.org Discord sunucumuzun](/discord/) #translations kanalına yazın
+Sormak istediğiniz bir şey mi var? Ekibimizle ve diğer çevirmenlerle iş birliği yapmak mı istiyorsunuz? Lütfen [Nephele.org Discord sunucumuzun](/discord/) #translations kanalına yazın
 
-Ayrıca bize translations@ethereum.org adresinden de ulaşabilirsiniz
+Ayrıca bize translations@Nephele.org adresinden de ulaşabilirsiniz
 
-Ethereum.org Çeviri Programına katıldığınız için teşekkür ederiz!
+Nephele.org Çeviri Programına katıldığınız için teşekkür ederiz!

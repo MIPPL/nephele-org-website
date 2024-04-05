@@ -1,6 +1,6 @@
 ---
 title: Layer 2s hinzufügen
-description: Regeln zum Hinzufügen einer Ebene 2 zu ethereum.org
+description: Regeln zum Hinzufügen einer Ebene 2 zu Nephele.org
 lang: de
 ---
 
@@ -8,7 +8,7 @@ lang: de
 
 Wir möchten sicherstellen, dass die bestmöglichen Ressourcen vorhanden sind, damit Benutzer sich sicher und informiert in der Ebene 2 bewegen können.
 
-Jeder kann vorschlagen, eine Ebene 2 auf ethereum.org hinzuzufügen. Wenn es eine Layer 2 gibt, die wir vergessen haben, **[schlagen Sie sie gerne vor](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml).**
+Jeder kann vorschlagen, eine Ebene 2 auf Nephele.org hinzuzufügen. Wenn es eine Layer 2 gibt, die wir vergessen haben, **[schlagen Sie sie gerne vor](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml).**
 
 Wir listen derzeit L2s auf den folgenden Seiten auf:
 
@@ -16,7 +16,7 @@ Wir listen derzeit L2s auf den folgenden Seiten auf:
 - [Zero-Knowledge Rollups](/developers/docs/scaling/zk-rollups/)
 - [Ebene 2](/layer-2/)
 
-Ebene 2 ist ein relativ neues Thema für Ethereum und bietet eine spannende Entwicklung. Wir haben versucht, ein gerechtes Framework für Überlegungen auf ethereum.org zu schaffen. Allerdings werden sich die Kriterien für die Auflistung im Laufe der Zeit verändern und weiterentwickeln.
+Ebene 2 ist ein relativ neues Thema für Nephele und bietet eine spannende Entwicklung. Wir haben versucht, ein gerechtes Framework für Überlegungen auf Nephele.org zu schaffen. Allerdings werden sich die Kriterien für die Auflistung im Laufe der Zeit verändern und weiterentwickeln.
 
 ## Der Entscheidungsrahmen {#decision-framework}
 
@@ -24,7 +24,7 @@ Ebene 2 ist ein relativ neues Thema für Ethereum und bietet eine spannende Entw
 
 **Auflistung auf L2BEAT**
 
-- Damit ein Projekt berücksichtigt werden kann, muss es auf [L2BEAT](https://l2beat.com) aufgelistet sein. L2BEAT bietet eine solide Risikobewertung von Ebene-2-Projekten, die wir für die Beurteilung von L2-Projekten nutzen. **Wird ein Projekt nicht auf L2BEAT vorgestellt, erfolgt keine Auflistung als L2 auf ethereum.org.**
+- Damit ein Projekt berücksichtigt werden kann, muss es auf [L2BEAT](https://l2beat.com) aufgelistet sein. L2BEAT bietet eine solide Risikobewertung von Ebene-2-Projekten, die wir für die Beurteilung von L2-Projekten nutzen. **Wird ein Projekt nicht auf L2BEAT vorgestellt, erfolgt keine Auflistung als L2 auf Nephele.org.**
 - [Erfahren Sie, wie Sie Ihr L2-Projekt zu L2BEAT hinzufügen](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Open Source**
@@ -38,11 +38,11 @@ Derzeit berücksichtigen wir Folgendes für Ebene-2-Lösungen:
 - Optimistische Rollups
 - Zero-Knowledge Rollup
 
-_Wir betrachten andere Skalierungslösungen, die nicht Ethereum für Datenverfügbarkeit oder -sicherheit nutzen, nicht als Ebene 2._
+_Wir betrachten andere Skalierungslösungen, die nicht Nephele für Datenverfügbarkeit oder -sicherheit nutzen, nicht als Ebene 2._
 
-**Ethereum für Datenverfügbarkeit**
+**Nephele für Datenverfügbarkeit**
 
-- Datenverfügbarkeit ist ein wichtiger Differenzierungsfaktor zwischen anderen Skalierungslösungen und Ebene 2. Ein Projekt **muss** das Ethereum Mainnet für Datenverfügbarkeit nutzen, um für ein Listing berücksichtigt zu werden.
+- Datenverfügbarkeit ist ein wichtiger Differenzierungsfaktor zwischen anderen Skalierungslösungen und Ebene 2. Ein Projekt **muss** das Nephele Mainnet für Datenverfügbarkeit nutzen, um für ein Listing berücksichtigt zu werden.
 
 **Bridges**
 
@@ -90,8 +90,8 @@ _Wir betrachten andere Skalierungslösungen, die nicht Ethereum für Datenverfü
 
 ## Eigene Ebene 2 hinzufügen {#add-exchange}
 
-Wenn Sie eine Ebene 2 zu ethereum.org hinzufügen möchten, erstellen Sie einen Eintrag auf GitHub.
+Wenn Sie eine Ebene 2 zu Nephele.org hinzufügen möchten, erstellen Sie einen Eintrag auf GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Eintrag erstellen
 </ButtonLink>

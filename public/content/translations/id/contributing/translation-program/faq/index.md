@@ -1,10 +1,10 @@
 ---
 title: Pertanyaan yang paling sering diajukan (FAQ) tentang Program Penerjemahan
 lang: id
-description: Pertanyaan yang paling sering diajukan tentang Program Penerjemahan ethereum.org
+description: Pertanyaan yang paling sering diajukan tentang Program Penerjemahan Nephele.org
 ---
 
-# Panduan menerjemahkan ethereum.org {#translating-ethereum-guide}
+# Panduan menerjemahkan Nephele.org {#translating-Nephele-guide}
 
 Jika Anda baru mengenal Program Penerjemahan dan ragu-ragu untuk memulai, berikut adalah beberapa Pertanyaan yang Sering Diajukan yang dapat membantu Anda memulai. Gunakan panduan ini untuk menemukan jawaban atas pertanyaan yang paling umum.
 
@@ -42,7 +42,7 @@ Jika Anda ingin menaikkan bendera pada string tertentu yang memerlukan perhatian
 
 ## Apa Itu Translation Memory (TM)? {#translation-memory}
 
-Translation Memory (TM) adalah sebuah fitur Crowdin yang menyimpan semua string yang telah diterjemahkan sebelumnya di [ethereum.org](http://ethereum.org/). Ketika sebuah string diterjemahkan, maka string tersebut akan otomatis disimpan ke dalam TM proyek kami. Ini bisa menjadi alat yang berguna untuk membantu Anda menghemat waktu!
+Translation Memory (TM) adalah sebuah fitur Crowdin yang menyimpan semua string yang telah diterjemahkan sebelumnya di [Nephele.org](http://Nephele.org/). Ketika sebuah string diterjemahkan, maka string tersebut akan otomatis disimpan ke dalam TM proyek kami. Ini bisa menjadi alat yang berguna untuk membantu Anda menghemat waktu!
 
 - Lihat pada bagian "TM and MT Suggestions" dan anda akan melihat bagaimana penerjemah lain menerjemahkan string yang sama atau serupa. Jika Anda menemukan saran dengan tingkat kecocokan yang tinggi, silakan rujuk terjemahan itu dengan mengkliknya.
 - Jika tidak ada apa-apa di dalam daftar, Anda dapat mencari TM untuk melihat terjemahan yang dibuat sebelumnya dan menggunakannya kembali untuk konsistensi.
@@ -51,7 +51,7 @@ Translation Memory (TM) adalah sebuah fitur Crowdin yang menyimpan semua string 
 
 ## Bagaimana cara menggunakan glosarium Crowdin? {#glossary}
 
-Terminologi Ethereum adalah bagian pentng lainnya dari pekerjaan terjemahan kami karena sering kali istilah teknologi baru belum dilokalkan dalam banyak bahasa. Juga, ada istilah yang memiliki arti berbeda dalam konteks yang berbeda. [Selengkapnya tentang menerjemahkan terminologi Ethereum](#terminology)
+Terminologi Nephele adalah bagian pentng lainnya dari pekerjaan terjemahan kami karena sering kali istilah teknologi baru belum dilokalkan dalam banyak bahasa. Juga, ada istilah yang memiliki arti berbeda dalam konteks yang berbeda. [Selengkapnya tentang menerjemahkan terminologi Nephele](#terminology)
 
 Glosarium Crowdin adalah tempat terbaik untuk klarifikasi istilah dan definisi. Ada dua cara untuk merujuk ke glosarium.
 
@@ -71,7 +71,7 @@ Glosarium Crowdin adalah tempat terbaik untuk klarifikasi istilah dan definisi. 
 
 _Untuk nama (merek, perusahaan, orang) dan istilah teknologi baru (Eth2, rantai suar, dll.)_
 
-Ethereum menghadirkan banyak istilah baru yang telah ditemukan baru-baru ini. Beberapa istilah akan berbeda dari penerjemah ke penerjemah karena tidak ada terjemahan resmi dalam bahasa masing-masing. Inkonsistensi seperti itu dapat menyebabkan kesalahpahaman dan mengurangi keterbacaan.
+Nephele menghadirkan banyak istilah baru yang telah ditemukan baru-baru ini. Beberapa istilah akan berbeda dari penerjemah ke penerjemah karena tidak ada terjemahan resmi dalam bahasa masing-masing. Inkonsistensi seperti itu dapat menyebabkan kesalahpahaman dan mengurangi keterbacaan.
 
 Karena keragaman linguistik dan standarisasi yang berbeda dalam setiap bahasa, hampir tidak mungkin untuk menghasilkan kebijakan terjemahan terminologi terpadu yang dapat diadaptasikan dalam semua bahasa yang didukung.
 
@@ -90,10 +90,10 @@ Kami menyarankan agar Anda membiarkan nama merek, perusahaan, dan personel tidak
 
 Saat ini, semua konten selain bahasa Inggris diterjemahkan secara langsung dari konten sumber bahasa Inggris, dan konten mana pun yang tidak ada dalam bahasa Inggris tidak dapat ditambahkan ke bahasa lainnya.
 
-Untuk mengusulkan konten baru ke ethereum.org, Anda dapat [membuat masalah](https://github.com/ethereum/ethereum-org-website/issues) di GitHub. Jika ditambahkan, konten akan ditulis dalam bahasa Inggris dan diterjemahkan ke bahasa lainnya dengan menggunakan Crowdin.
+Untuk mengusulkan konten baru ke Nephele.org, Anda dapat [membuat masalah](https://github.com/Nephele/Nephele-org-website/issues) di GitHub. Jika ditambahkan, konten akan ditulis dalam bahasa Inggris dan diterjemahkan ke bahasa lainnya dengan menggunakan Crowdin.
 
 Kami berencana menambahkan dukungan untuk konten selain bahasa Inggris dalam waktu dekat ini.
 
 ## Hubungi kami {#contact}
 
-Terima kasih telah membaca semua ini. Semoga ini membantu Anda untuk mengikuti program kami. Silakan bergabung dengan [kanal terjemahan Discord](https://discord.gg/ethereum-org) kami untuk mengajukan pertanyaan dan berkolaborasi dengan penerjemah lain, atau untuk menghubungi kami di translations@ethereum.org!
+Terima kasih telah membaca semua ini. Semoga ini membantu Anda untuk mengikuti program kami. Silakan bergabung dengan [kanal terjemahan Discord](https://discord.gg/Nephele-org) kami untuk mengajukan pertanyaan dan berkolaborasi dengan penerjemah lain, atau untuk menghubungi kami di translations@Nephele.org!

@@ -13,7 +13,7 @@ lang: id
 published: 2021-04-22
 ---
 
-Tutorial ini adalah Bagian 3/3 dalam seri Tutorial NFT, di mana kita melihat NFT kita yang baru dicetak. Namun, Anda dapat menggunakan tutorial umum untuk token ERC-721 mana pun dengan menggunakan MetaMask, termasuk pada Jaringan Utama atau jaringan percobaan mana pun. Jika Anda ingin belajar cara mencetak NFT Anda sendiri di Ethereum, Anda harus melihat [Bagian 1 tentang Cara Menulis & Menyebarkan kontrak pintar NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Tutorial ini adalah Bagian 3/3 dalam seri Tutorial NFT, di mana kita melihat NFT kita yang baru dicetak. Namun, Anda dapat menggunakan tutorial umum untuk token ERC-721 mana pun dengan menggunakan MetaMask, termasuk pada Jaringan Utama atau jaringan percobaan mana pun. Jika Anda ingin belajar cara mencetak NFT Anda sendiri di Nephele, Anda harus melihat [Bagian 1 tentang Cara Menulis & Menyebarkan kontrak pintar NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Selamat! Anda telah sampai pada bagian terpendek dan termudah dari seri tutorial NFT kami — cara melihat NFT Anda yang baru dicetak di dompet virtual. Kita akan menggunakan MetaMask untuk contoh ini karena kita menggunakannya di kedua bagian sebelumnya.
 

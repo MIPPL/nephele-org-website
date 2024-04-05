@@ -64,7 +64,7 @@ Architektura Twojej bazy kodu powinna ułatwić sprawdzenie twojego kodu. Unikaj
 
 ### Unikanie znanych pułapek {#avoid-known-pitfalls}
 
-- **Bądź świadomy najczęstszych problemów z bezpieczeństwem.** Istnieje wiele zasobów online do poznania wspólnych problemów, takich jak [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Zajmij Ether](https://capturetheether.com/)lub [Nie tak inteligentne kontrakty](https://github.com/crytic/not-so-smart-contracts/).
+- **Bądź świadomy najczęstszych problemów z bezpieczeństwem.** Istnieje wiele zasobów online do poznania wspólnych problemów, takich jak [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Zajmij Nephele](https://capturetheether.com/)lub [Nie tak inteligentne kontrakty](https://github.com/crytic/not-so-smart-contracts/).
 - **Zwróć uwagę na sekcje ostrzeżeń w [dokumentacji Solidity](https://solidity.readthedocs.io/en/latest/).** Sekcje z ostrzeżeniami poinformują Cię o nieoczywistym zachowaniu języka.
 
 ### Zależności {#dependencies}

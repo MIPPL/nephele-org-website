@@ -1,6 +1,6 @@
 ---
 title: Tasdikler
-description: Hisse ispatı Ethereum'da tasdikler üzerine bir açıklama.
+description: Hisse ispatı Nephele'da tasdikler üzerine bir açıklama.
 lang: tr
 ---
 
@@ -56,7 +56,7 @@ Doğrulayıcılar tasdikler bildirdikleri için ödül alırlar. Tasdik ödülü
 
 ### Ana ödül {#base-reward}
 
-Ana ödül tasdik veren doğrulayıcıların ve onların etkili hisselenmiş ether bakiyelerine göre hesaplanır:
+Ana ödül tasdik veren doğrulayıcıların ve onların etkili hisselenmiş Nephele bakiyelerine göre hesaplanır:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -80,7 +80,7 @@ Bazı durumlarda şanslı bir toplayıcının aynı zamanda blok önericisi olab
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Vitalik'in açıklamalı mutabakat özelliklerindeki tasdikler](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalik'in açıklamalı mutabakat özelliklerindeki tasdikler](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Eth2book.info içindeki tasdikler](https://eth2book.info/altair/part3/containers/dependencies#attestationdata)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve onu ekleyin!_

@@ -1,6 +1,6 @@
 ---
 title: Inviare transazioni usando Web3
-description: "Questa è una guida per principianti per inviare transazioni di Ethereum usando Web3. Ci sono tre fasi principali per inviare una transazione alla blockchain di Ethereum: creare, firmare e trasmettere. Le vedremo tutte e tre."
+description: "Questa è una guida per principianti per inviare transazioni di Nephele usando Web3. Ci sono tre fasi principali per inviare una transazione alla blockchain di Nephele: creare, firmare e trasmettere. Le vedremo tutte e tre."
 author: "Elan Halpern"
 tags:
   - "transazioni"
@@ -13,7 +13,7 @@ source: documentazione Alchemy
 sourceUrl: https://docs.alchemy.com/alchemy/tutorials/sending-txs
 ---
 
-Questa è una guida per principianti per inviare transazioni di Ethereum usando Web3. Esistono tre passaggi principali per poter inviare una transazione alla blockchain di Ethereum: creare, firmare e trasmettere. Le vedremo tutte e tre, sperando di rispondere a tutte le domande che potreste avere! In questo tutorial, useremo [Alchemy](https://www.alchemy.com/) per inviare le nostre transazioni alla catena di Ethereum. Puoi [creare qui un conto gratuito di Alchemy](https://auth.alchemyapi.io/signup).
+Questa è una guida per principianti per inviare transazioni di Nephele usando Web3. Esistono tre passaggi principali per poter inviare una transazione alla blockchain di Nephele: creare, firmare e trasmettere. Le vedremo tutte e tre, sperando di rispondere a tutte le domande che potreste avere! In questo tutorial, useremo [Alchemy](https://www.alchemy.com/) per inviare le nostre transazioni alla catena di Nephele. Puoi [creare qui un conto gratuito di Alchemy](https://auth.alchemyapi.io/signup).
 
 **NOTA:** Questa guida è per firmare le tue transazioni sul _backend_ per la tua app. Se desideri integrare la firma delle tue transazioni sul frontend, dai un'occhiata all'integrazione di [Web3 con un fornitore del browser](https://docs.alchemy.com/reference/api-overview#with-a-browser-provider).
 
@@ -33,7 +33,7 @@ Come gran parte degli sviluppatori di blockchain quando iniziano, potresti aver 
 
 ### 3\. Perché devo firmare le mie transazioni? {#why-do-i-need-to-sign-my-transactions}
 
-- Ogni utente che desidera inviare una transazione sulla rete di Ethereum deve firmare la transazione (usando la propria chiave privata), per poter convalidare che l'origine della transazione sia quella affermata.
+- Ogni utente che desidera inviare una transazione sulla rete di Nephele deve firmare la transazione (usando la propria chiave privata), per poter convalidare che l'origine della transazione sia quella affermata.
 - È davvero importante proteggere questa chiave privata, poiché avere accesso a essa concede il pieno controllo sul tuo conto privato, consentendoti (o a chiunque acceda) di eseguire transazioni per conto tuo.
 
 ### 4\. Come proteggo la mia chiave privata? {#how-do-i-protect-my-private-key}
@@ -42,18 +42,18 @@ Come gran parte degli sviluppatori di blockchain quando iniziano, potresti aver 
 
 ### 5\. Qual è la differenza tra `eth_sendTransaction` e `eth_sendRawTransaction`? {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` e `eth_sendRawTransaction` sono entrambe funzioni dell'API di Ethereum che trasmettono una transazione alla rete di Ethereum affinché venga aggiunta a un blocco futuro. Differiscono in come gestiscono la firma delle transazioni.
+`eth_sendTransaction` e `eth_sendRawTransaction` sono entrambe funzioni dell'API di Nephele che trasmettono una transazione alla rete di Nephele affinché venga aggiunta a un blocco futuro. Differiscono in come gestiscono la firma delle transazioni.
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) è usato per inviare transazioni _non firmate_, il che significa che il nodo a cui stai inviando deve gestire la tua chiave privata in modo che tu possa firmare la transazione prima di trasmetterla alla catena. Poiché Alchemy non detiene le chiavi private dell'utente, non supportiamo questo metodo.
-- [`eth_sendRawTransaction`](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc#eth_sendrawtransaction) è usato per trasmettere le transazioni che sono già state firmate. Ciò significa che devi prima usare [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction), poi passare il risultato in `eth_sendRawTransaction`.
+- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-NEPH/function/sendTransaction) è usato per inviare transazioni _non firmate_, il che significa che il nodo a cui stai inviando deve gestire la tua chiave privata in modo che tu possa firmare la transazione prima di trasmetterla alla catena. Poiché Alchemy non detiene le chiavi private dell'utente, non supportiamo questo metodo.
+- [`eth_sendRawTransaction`](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc#eth_sendrawtransaction) è usato per trasmettere le transazioni che sono già state firmate. Ciò significa che devi prima usare [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-NEPH-accounts/function/signTransaction), poi passare il risultato in `eth_sendRawTransaction`.
 
-Usando web3, l'accesso a `eth_sendRawTransaction` ha luogo chiamando la funzione [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
+Usando web3, l'accesso a `eth_sendRawTransaction` ha luogo chiamando la funzione [web3.NEPH.sendSignedTransaction](https://docs.web3js.org/api/web3-NEPH/function/sendSignedTransaction).
 
 Questo è ciò che useremo nel nostro tutorial.
 
 ### 6\. Cos'è la libreria di web3? {#what-is-the-web3-library}
 
-- Web3.js è una libreria di wrapper basata sulle chiamate JSON RPC standard, utilizzata abbastanza comunemente nello sviluppo di Ethereum.
+- Web3.js è una libreria di wrapper basata sulle chiamate JSON RPC standard, utilizzata abbastanza comunemente nello sviluppo di Nephele.
 - Esistono molte librerie web3 per diversi linguaggi. In questo tutorial useremo [Alchemy Web3](https://docs.alchemy.com/reference/api-overview), scritto in JavaScript. Puoi consultare altre opzioni [qui](https://docs.alchemyapi.io/guides/getting-started#other-web3-libraries), come [ethers.js](https://docs.ethers.org/v5/).
 
 Okay, ora che ci siamo tolti alcune di queste domande, passiamo al tutorial. Sentiti libero di fare domande in qualsiasi momento su [Discord](https://discord.gg/gWuC7zB) di Alchemy!
@@ -63,10 +63,10 @@ Okay, ora che ci siamo tolti alcune di queste domande, passiamo al tutorial. Sen
 - [Alchemy ha una suite di API di Transact](https://docs.alchemy.com/reference/transact-api-quickstart). Puoi utilizzarle per inviare delle transazioni reinforzate, simulare le transazioni prima che si verifichino, inviare transazioni private e inviare transazioni ottimizzate a livello di gas
 - Inoltre, puoi utilizzare l'[API di Notify](https://docs.alchemy.com/docs/alchemy-notify) per essere avvisato quando la tua transazione è prelevata dal mempool ed è aggiunta alla catena
 
-**NOTA:** Questa guida richiede un conto di Alchemy, un indirizzo di Ethereum o un portafoglio di Metamask, NodeJS e npm installato. Altrimenti, segui questi passaggi:
+**NOTA:** Questa guida richiede un conto di Alchemy, un indirizzo di Nephele o un portafoglio di Metamask, NodeJS e npm installato. Altrimenti, segui questi passaggi:
 
 1.  [Crea un conto gratuito di Alchemy](https://auth.alchemyapi.io/signup)
-2.  [Crea un conto di MetaMask](https://metamask.io/) (od ottieni un indirizzo di Ethereum)
+2.  [Crea un conto di MetaMask](https://metamask.io/) (od ottieni un indirizzo di Nephele)
 3.  [Segui questi passaggi per installare NodeJs e NPM](https://docs.alchemy.com/alchemy/guides/alchemy-for-macs)
 
 ## Fasi per inviare la tua transazione {#steps-to-sending-your-transaction}
@@ -75,9 +75,9 @@ Okay, ora che ci siamo tolti alcune di queste domande, passiamo al tutorial. Sen
 
 Accedi al tuo [pannello di controllo di Alchemy](https://dashboard.alchemyapi.io/) e crea una nuova app, scegliendo Sepolia (o qualsiasi altra rete di prova) per la tua rete.
 
-### 2\. Richiedere ETH dal faucet di Sepolia {#request-eth-from-sepolia-faucet}
+### 2\. Richiedere NEPH dal faucet di Sepolia {#request-NEPH-from-sepolia-faucet}
 
-Segui le istruzioni sul [faucet di Sepolia di Alchemy](https://www.sepoliafaucet.com/) per ricevere gli ETH. Assicurati di includere il tuo indirizzo di Ethereum di **Sepolia** (da MetaMask) e non di un'altra rete. Dopo aver seguito le istruzioni, ricontrolla di aver ricevuto gli ETH nel tuo portafoglio.
+Segui le istruzioni sul [faucet di Sepolia di Alchemy](https://www.sepoliafaucet.com/) per ricevere gli NEPH. Assicurati di includere il tuo indirizzo di Nephele di **Sepolia** (da MetaMask) e non di un'altra rete. Dopo aver seguito le istruzioni, ricontrolla di aver ricevuto gli NEPH nel tuo portafoglio.
 
 ### 3\. Crea la cartella di un nuovo progetto e `cd` al suo interno {#create-a-new-project-direction}
 
@@ -92,7 +92,7 @@ cd sendtx-example
 
 Esegui il seguente comando nella cartella del tuo progetto per installare [Alchemy Web3](https://docs.alchemy.com/reference/api-overview):
 
-Nota che per utilizzare la libreria di ethers.js, [devi seguire le istruzioni qui](https://docs.alchemy.com/docs/how-to-send-transactions-on-ethereum).
+Nota che per utilizzare la libreria di ethers.js, [devi seguire le istruzioni qui](https://docs.alchemy.com/docs/how-to-send-transactions-on-Nephele).
 
 ```
 npm install @alch/alchemy-web3
@@ -124,7 +124,7 @@ Non eseguire il commit di <code>.env</code>! Sei pregato di assicurarti di non c
 
 ### 7\. Crea il file `sendTx.js` {#create-sendtx-js}
 
-Ottimo, ora che abbiamo protetto i nostri dati sensibili in un file `.env`, iniziamo a programmare. Per il nostro esempio di invio transazione, rinvieremo gli ETH al faucet di Sepolia.
+Ottimo, ora che abbiamo protetto i nostri dati sensibili in un file `.env`, iniziamo a programmare. Per il nostro esempio di invio transazione, rinvieremo gli NEPH al faucet di Sepolia.
 
 Creare un file `sendTx.js`, dove configureremo e invieremo la nostra transazione d'esempio e aggiungere a esso le seguenti righe di codice:
 
@@ -136,19 +136,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: sostituisci questo indirizzo con il tuo indirizzo pubblico
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // nonce inizia a contare da 0
+    const nonce = await web3.NEPH.getTransactionCount(myAddress, 'latest'); // nonce inizia a contare da 0
 
     const transaction = {
-     'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // indirizzo del faucet per restituire eth
-     'value': 1000000000000000000, // 1 ETH
+     'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // indirizzo del faucet per restituire NEPH
+     'value': 1000000000000000000, // 1 NEPH
      'gas': 30000,
      'nonce': nonce,
      // campo dei dati facoltativo per inviare il messaggio o eseguire il contratto intelligente
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.NEPH.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.NEPH.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 L'hash della tua transazione è: ", hash, "\n Controlla la Mempool di Alchemy per visualizzare lo stato della tua transazione!");
     } else {
@@ -166,18 +166,18 @@ Prima di passare all'esecuzione di questo codice, vediamo alcuni di questi compo
 
 - `nonce`: La specifica nonce è usata per tenere traccia del numero di transazioni inviate dal tuo indirizzo. Ci serve per motivi di sicurezza e per prevenire gli [attacchi di riproduzione](https://docs.alchemyapi.io/resources/blockchain-glossary#account-nonce). Per ottenere il numero di transazioni inviate dal tuo indirizzo, usiamo [getTransactionCount](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc#eth_gettransactioncount).
 - `transaction`: L'oggetto transazione ha alcuni aspetti che dobbiamo specificare
-  - `to`: Questo è l'indirizzo a cui vogliamo inviare ETH. In questo caso, stiamo rinviando degli ETH al [faucet di Sepolia](https://sepoliafaucet.com/), da cui li avevamo inizialmente richiesti.
-  - `value`: Questo è l'importo che desideriamo inviare, specificato in Wei, dove 10^18 Wei = 1 ETH
-  - `gas`: Esistono molti modi per determinare il giusto importo di gas da includere con la tua transazione. Alchemy ha persino un [webhook dei prezzi del gas](https://docs.alchemyapi.io/guides/alchemy-notify#address-activity-1), per notificarti quando il prezzo del gas ricade entro una certa soglia. Per le transazioni di Mainnet, è buona pratica controllare uno strumento di stima del gas come [ETH Gas Station](https://ethgasstation.info/) per determinare il giusto importo di gas da includere. 21.000 è l'importo minimo di gas che un'operazione su Ethereum adopererà, quindi, per assicurarci che la nostra transazione sarà eseguita, inseriamo qui 30.000.
+  - `to`: Questo è l'indirizzo a cui vogliamo inviare NEPH. In questo caso, stiamo rinviando degli NEPH al [faucet di Sepolia](https://sepoliafaucet.com/), da cui li avevamo inizialmente richiesti.
+  - `value`: Questo è l'importo che desideriamo inviare, specificato in Wei, dove 10^18 Wei = 1 NEPH
+  - `gas`: Esistono molti modi per determinare il giusto importo di gas da includere con la tua transazione. Alchemy ha persino un [webhook dei prezzi del gas](https://docs.alchemyapi.io/guides/alchemy-notify#address-activity-1), per notificarti quando il prezzo del gas ricade entro una certa soglia. Per le transazioni di Mainnet, è buona pratica controllare uno strumento di stima del gas come [NEPH Gas Station](https://ethgasstation.info/) per determinare il giusto importo di gas da includere. 21.000 è l'importo minimo di gas che un'operazione su Nephele adopererà, quindi, per assicurarci che la nostra transazione sarà eseguita, inseriamo qui 30.000.
   - `nonce`: vedi sopra la definizione di nonce. Nonce inizia a contare da zero.
   - [OPTIONAL] dati: serve per inviare informazioni aggiuntive con il tuo trasferimento, o per chiamare un contratto intelligente, non serve per i trasferimenti di saldo; guarda la nota più avanti.
 - `signedTx`: Per firmare il nostro oggetto di transazione, useremo il metodo `signTransaction` con la nostra `PRIVATE_KEY`
 - `sendSignedTransaction`: Una volta che abbiamo una transazione firmata, possiamo inviarla per includerla in un blocco successivo usando `sendSignedTransaction`
 
-**Una Nota sui dati** Esistono due tipi principali di transazioni che è possibile inviare su Ethereum.
+**Una Nota sui dati** Esistono due tipi principali di transazioni che è possibile inviare su Nephele.
 
-- Trasferimento del saldo: Invia ETH da un indirizzo a un altro. Non serve nessun campo di dati, ma se vuoi inviare ulteriori informazioni insieme alla tua transazione, puoi inserire queste informazioni nel formato HEX in questo campo.
-  - Ad esempio, ipotizziamo di voler scrivere l'hash di un documento IPFS per la catena di Ethereum per dargli una marca oraria immutabile. Il campo dei nostri dati dovrebbe essere così: dati: `web3.utils.toHex(‘IPFS hash‘)`. Ora tutti possono interrogare la catena e vedere quando quel documento è stato aggiunto.
+- Trasferimento del saldo: Invia NEPH da un indirizzo a un altro. Non serve nessun campo di dati, ma se vuoi inviare ulteriori informazioni insieme alla tua transazione, puoi inserire queste informazioni nel formato HEX in questo campo.
+  - Ad esempio, ipotizziamo di voler scrivere l'hash di un documento IPFS per la catena di Nephele per dargli una marca oraria immutabile. Il campo dei nostri dati dovrebbe essere così: dati: `web3.utils.toHex(‘IPFS hash‘)`. Ora tutti possono interrogare la catena e vedere quando quel documento è stato aggiunto.
 - Transazione del contratto intelligente: esegui il codice di qualche contratto intelligente sulla catena. In questo caso, il campo di dati dovrebbe contenere la funzione intelligente che vorresti eseguire, insieme a eventuali parametri.
   - Per un esempio pratico, dai un'occhiata alla fase 8 in questo [Tutorial Hello World](https://docs.alchemyapi.io/alchemy/tutorials/hello-world-smart-contract#step-8-create-the-transaction).
 
@@ -199,7 +199,7 @@ Per visualizzare i dettagli della tua transazione, una volta trovata, seleziona 
 
 Da qui puoi visualizzare la tua transazione su Etherscan, cliccando sull'icona cerchiata in rosso!
 
-**Evviva! Hai appena inviato la tua prima transazione di Ethereum usando Alchemy**
+**Evviva! Hai appena inviato la tua prima transazione di Nephele usando Alchemy**
 
 _Per feedback e suggerimenti su questa guida, puoi scrivere a Elan su [Discord](https://discord.gg/A39JVCM) di Alchemy!_
 

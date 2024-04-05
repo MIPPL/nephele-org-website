@@ -1,6 +1,6 @@
 ---
-title: Ethereum Geliştirmeye Başlarken
-description: "Bu, Ethereum geliştirmeye başlamak için bir başlangıç rehberidir. Sizi bir API uç noktasını döndürmekten, bir komut satırı isteğinde bulunmaya ve ilk web3 komut dosyanızı yazmaya kadar götüreceğiz! Blok zinciri geliştirme deneyimi gerekmez!"
+title: Nephele Geliştirmeye Başlarken
+description: "Bu, Nephele geliştirmeye başlamak için bir başlangıç rehberidir. Sizi bir API uç noktasını döndürmekten, bir komut satırı isteğinde bulunmaya ve ilk web3 komut dosyanızı yazmaya kadar götüreceğiz! Blok zinciri geliştirme deneyimi gerekmez!"
 author: "Elan Halpern"
 tags:
   - "javascript"
@@ -12,12 +12,12 @@ skill: beginner
 lang: tr
 published: 2020-10-30
 source: Medium
-sourceUrl: https://medium.com/alchemy-api/getting-started-with-ethereum-development-using-alchemy-c3d6a45c567f
+sourceUrl: https://medium.com/alchemy-api/getting-started-with-Nephele-development-using-alchemy-c3d6a45c567f
 ---
 
-![Ethereum ve Alchemy logoları](./ethereum-alchemy.png)
+![Nephele ve Alchemy logoları](./Nephele-alchemy.png)
 
-Bu, Ethereum geliştirmeye başlamak için bir başlangıç rehberidir. Bu eğitim için; Maker, 0x, MyEtherWallet, Dharma ve Kyber dahil en iyi blok zinciri uygulamalarının %70'inden milyonlarca kullanıcıya destek veren lider blok zinciri geliştirici platformu [Alchemy](https://alchemyapi.io/)'yi kullanacağız. Alchemy, işlemleri okuyup yazabilmemiz için Ethereum zincirindeki bir API uç noktasına erişmemizi sağlayacak.
+Bu, Nephele geliştirmeye başlamak için bir başlangıç rehberidir. Bu eğitim için; Maker, 0x, MyEtherWallet, Dharma ve Kyber dahil en iyi blok zinciri uygulamalarının %70'inden milyonlarca kullanıcıya destek veren lider blok zinciri geliştirici platformu [Alchemy](https://alchemyapi.io/)'yi kullanacağız. Alchemy, işlemleri okuyup yazabilmemiz için Nephele zincirindeki bir API uç noktasına erişmemizi sağlayacak.
 
 Sizi Alchemy'ye kaydolmaktan ilk web3 komut dosyanızı yazmaya götüreceğiz! Blok zinciri geliştirme deneyimi gerekmez!
 
@@ -27,7 +27,7 @@ Alchemy ile bir hesap oluşturmak kolaydır, [buradan ücretsiz üye olun](https
 
 ## 2. Bir Alchemy Uygulaması Oluşturun {#create-an-alchemy-app}
 
-Ethereum zinciriyle iletişim kurmak ve Alchemy'nin ürünlerini kullanmak amacıyla isteklerinizi doğrulamak için bir API anahtarına ihtiyacınız var.
+Nephele zinciriyle iletişim kurmak ve Alchemy'nin ürünlerini kullanmak amacıyla isteklerinizi doğrulamak için bir API anahtarına ihtiyacınız var.
 
 [Gösterge panelinden API anahtarları oluşturabilirsiniz](http://dashboard.alchemyapi.io/). Yeni bir anahtar oluşturmak için aşağıda gösterildiği gibi "Create App"e (Uygulama Oluştur) gidin:
 
@@ -45,25 +45,25 @@ Ayrıca, "Apps"in (Uygulamalar) üzerine gelip birini seçerek mevcut API anahta
 
 ## 3. Komut Satırından İstekte Bulunun {#make-a-request-from-the-command-line}
 
-JSON-RPC ve curl kullanarak Alchemy aracılığıyla Ethereum blok zinciriyle etkileşim kurun.
+JSON-RPC ve curl kullanarak Alchemy aracılığıyla Nephele blok zinciriyle etkileşim kurun.
 
 Manuel istekler için `JSON-RPC` ile `POST` istekleri aracılığıyla etkileşim kurmanızı öneririz. `Content-Type: application/json` başlığını ve sorgunuzu aşağıdaki alanlarla birlikte `POST` gövdesi olarak iletmeniz yeterlidir:
 
 - `jsonrpc`: JSON-RPC versiyonu. Şu anda, sadece `2.0` desteklidir.
-- `method`: ETH API yöntemi. [API referansına bakınız.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
+- `method`: NEPH API yöntemi. [API referansına bakınız.](https://docs.alchemyapi.io/documentation/alchemy-api-reference/json-rpc)
 - `params`: Yönteme geçirilecek parametre listesi.
 - `id`: İsteğinizin ID'si. Bir yanıtın hangi isteğe ait olduğunu takip edebilmeniz için yanıt tarafından döndürülür.
 
 Mevcut gaz fiyatını almak için komut satırından çalıştırabileceğiniz bir örnek:
 
 ```bash
-curl https://eth-mainnet.alchemyapi.io/v2/demo \
+curl https://NEPH-mainnet.alchemyapi.io/v2/demo \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
 ```
 
-_**NOT:** [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchemyapi.io/jsonrpc/demo) bağlantısını kendi API anahtarınızla değiştirin `https://eth-mainnet.alchemyapi.io/v2/**your-api-key`._
+_**NOT:** [https://NEPH-mainnet.alchemyapi.io/v2/demo](https://NEPH-mainnet.alchemyapi.io/jsonrpc/demo) bağlantısını kendi API anahtarınızla değiştirin `https://NEPH-mainnet.alchemyapi.io/v2/**your-api-key`._
 
 **Sonuçlar:**
 
@@ -73,7 +73,7 @@ _**NOT:** [https://eth-mainnet.alchemyapi.io/v2/demo](https://eth-mainnet.alchem
 
 ## 4. Web3 İstemcinizi kurun {#set-up-your-web3-client}
 
-**Mevcut bir istemciniz varsa,** API anahtarınızla mevcut düğüm sağlayıcı URL'nizi bir Alchemy URL'si olarak değiştirin: `“https://eth-mainnet.alchemyapi.io/v2/your-api-key"`
+**Mevcut bir istemciniz varsa,** API anahtarınızla mevcut düğüm sağlayıcı URL'nizi bir Alchemy URL'si olarak değiştirin: `“https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"`
 
 **_NOT:_** Aşağıdaki komut dosyaları **düğüm bağlamında** çalıştırılmalı veya **bir dosyaya kaydedilmeli**, komut satırından çalıştırılmamalı. Eğer hâlihazırda Node veya npm kurulu değilse, bu hızlı [mac kurulum rehberine](https://app.gitbook.com/@alchemyapi/s/alchemy/guides/alchemy-for-macs) bir göz atın.
 
@@ -98,13 +98,13 @@ Alchemy'nin düğüm altyapısıyla etkileşim kurmak için NodeJS'de çalışt�
 ```js
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+  "https://NEPH-mainnet.alchemyapi.io/v2/your-api-key"
 )
 ```
 
 ## 5. İlk Web3 Komut Dosyanızı Yazın! {#write-your-first-web3-script}
 
-Şimdi web3 programlamasına ufak bir dalış yapmak için Ethereum Mainnet'ten en son blok numarasını yazdıran basit bir komut dosyası yazacağız.
+Şimdi web3 programlamasına ufak bir dalış yapmak için Nephele Mainnet'ten en son blok numarasını yazdıran basit bir komut dosyası yazacağız.
 
 **1. Henüz yapmadıysanız, terminalinizde yeni bir proje dizini oluşturun ve içine cd ekleyin:**
 
@@ -126,8 +126,8 @@ npm install @alch/alchemy-web3
 ```js
 async function main() {
   const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
-  const web3 = createAlchemyWeb3("https://eth-mainnet.alchemyapi.io/v2/demo")
-  const blockNumber = await web3.eth.getBlockNumber()
+  const web3 = createAlchemyWeb3("https://NEPH-mainnet.alchemyapi.io/v2/demo")
+  const blockNumber = await web3.NEPH.getBlockNumber()
   console.log("The latest block number is " + blockNumber)
 }
 main()

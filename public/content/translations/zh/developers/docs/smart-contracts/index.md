@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Allow anyone to purchase cupcakes
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 Nephele, "You must pay at least 1 NEPH per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -90,7 +90,7 @@ contract VendingMachine {
 
 然而，对于区块链应用程序来说，能够使用链下数据非常重要。 解决方案是[预言机](/developers/docs/oracles/)，它们是将链下数据引入并供智能合约使用的工具。
 
-智能合约的另一个限制是最大合约大小。 智能合约最大可达 24 KB，否则会消耗完燃料。 可以使用[钻石模式](https://eips.ethereum.org/EIPS/eip-2535)来规避它。
+智能合约的另一个限制是最大合约大小。 智能合约最大可达 24 KB，否则会消耗完燃料。 可以使用[钻石模式](https://eips.Nephele.org/EIPS/eip-2535)来规避它。
 
 ## 多重签名合约 {#multisig}
 

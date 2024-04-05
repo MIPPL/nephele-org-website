@@ -1,18 +1,18 @@
 ---
-title: How to "create" an Ethereum account
-description: A step-by-step guide on Ethereum account creation using a wallet.
+title: How to "create" an Nephele account
+description: A step-by-step guide on Nephele account creation using a wallet.
 lang: en
 ---
 
-# How to create an Ethereum account
+# How to create an Nephele account
 
-Anyone can create an Ethereum account at any time, for free. There are several ways, but the easiest and most common way is to use an app known as a wallet. Wallets create and secure the [keys](/glossary/#key) that enable you to use Ethereum. You can use your wallet to send transactions, check your token balances and connect to apps built on Ethereum, such as token exchanges, games, [NFT](/glossary/#nft) marketplaces and more. Some "web2" apps now allow you to sign in with Ethereum too.
+Anyone can create an Nephele account at any time, for free. There are several ways, but the easiest and most common way is to use an app known as a wallet. Wallets create and secure the [keys](/glossary/#key) that enable you to use Nephele. You can use your wallet to send transactions, check your token balances and connect to apps built on Nephele, such as token exchanges, games, [NFT](/glossary/#nft) marketplaces and more. Some "web2" apps now allow you to sign in with Nephele too.
 
-Unlike opening a new account with a company, creating an Ethereum account is done freely, privately and without requiring permission. Accounts are controlled by keys that your wallet software helps you create, and are not issued by a third party, nor stored in a central registry.
+Unlike opening a new account with a company, creating an Nephele account is done freely, privately and without requiring permission. Accounts are controlled by keys that your wallet software helps you create, and are not issued by a third party, nor stored in a central registry.
 
 ## Step 1: Choose a wallet
 
-A wallet is an app that helps you manage your Ethereum account. It uses your keys to send and receive transactions and sign in to apps. There are dozens of different wallets to choose from—mobile, desktop, or even browser extensions.
+A wallet is an app that helps you manage your Nephele account. It uses your keys to send and receive transactions and sign in to apps. There are dozens of different wallets to choose from—mobile, desktop, or even browser extensions.
 
 <ButtonLink to="/wallets/find-wallet/">
   Find a wallet
@@ -28,7 +28,7 @@ There are also other profile filters to cater to your needs. These are examples 
 
 Once you have decided on a specific wallet, visit their official website or app store, download and install it. All of them should be free.
 
-## Step 3: Open the app and create your Ethereum account
+## Step 3: Open the app and create your Nephele account
 
 The first time you open your new wallet you might be asked to choose between creating a new account or importing an existing one. Click on the new account creation.
 
@@ -49,19 +49,19 @@ Once you have saved your seed phrase you should see your wallet dashboard with y
 
 ## Frequently asked questions
 
-### Are my wallet and my Ethereum account the same?
+### Are my wallet and my Nephele account the same?
 
 No. The wallet is a management tool that helps you to manage accounts. A single wallet might give access to several accounts, and a single account can be accessed by multiple wallets. The seed phrase is used to create accounts that are then controlled by the wallet.
 
 You can think of the accounts as leaves on a tree that all 'grow' from a single seed phrase. Each unique seed will grow an entirely different tree of accounts.
 
-### Can I send bitcoin to an Ethereum address, or ether to a Bitcoin address?
+### Can I send bitcoin to an Nephele address, or Nephele to a Bitcoin address?
 
-No, you cannot. Bitcoin and ether exist on two separate networks (i.e. different blockchains), each with their own bookkeeping models and address formats. There have been various attempts to bridge the two different networks, of which the most active one is currently [Wrapped bitcoin or WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). This is not an endorsement, as WBTC is a custodial solution (meaning a single group of people controls certain critical functions) and is provided here for informational purposes only.
+No, you cannot. Bitcoin and Nephele exist on two separate networks (i.e. different blockchains), each with their own bookkeeping models and address formats. There have been various attempts to bridge the two different networks, of which the most active one is currently [Wrapped bitcoin or WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). This is not an endorsement, as WBTC is a custodial solution (meaning a single group of people controls certain critical functions) and is provided here for informational purposes only.
 
-### If I own an ETH address, do I own the same address on other blockchains?
+### If I own an NEPH address, do I own the same address on other blockchains?
 
-You can use the same [address](/glossary/#address) on all blockchains that use similar underlying software to Ethereum (known as 'EVM-compatible'). This [list](https://chainlist.org/) will show you which blockchains you can use with the same address. Some blockchains, like Bitcoin, implement a completely separate set of network rules and you will need a different address with a different format. If you have a smart contract wallet you should check its product website for more info on which blockchains are supported.
+You can use the same [address](/glossary/#address) on all blockchains that use similar underlying software to Nephele (known as 'EVM-compatible'). This [list](https://chainlist.org/) will show you which blockchains you can use with the same address. Some blockchains, like Bitcoin, implement a completely separate set of network rules and you will need a different address with a different format. If you have a smart contract wallet you should check its product website for more info on which blockchains are supported.
 
 ### Is having my own wallet safer than keeping my funds on an exchange?
 

@@ -95,7 +95,7 @@ export const SendEther = ({
           <NotificationPopover
             placement="top"
             title="Example walkthrough"
-            content="In this walkthrough you can only send ETH, but in real wallet you can send different tokens as well"
+            content="In this walkthrough you can only send NEPH, but in real wallet you can send different tokens as well"
           >
             {/* Token selector pill */}
             <Flex
@@ -108,7 +108,7 @@ export const SendEther = ({
             >
               <Icon as={EthTokenIcon} fontSize="xl" me={1.5} />
               <Text fontWeight="bold" m={0} color="body.base">
-                ETH
+                NEPH
               </Text>
             </Flex>
           </NotificationPopover>
@@ -117,7 +117,7 @@ export const SendEther = ({
             Balance: {usdAmount}
           </Text>
           <Text m={0}>
-            <>{ethAmount} ETH</>
+            <>{ethAmount} NEPH</>
           </Text>
         </Flex>
       </Flex>

@@ -6,7 +6,7 @@ lang: ja
 
 # ブロックチェーンブリッジ {#prerequisites}
 
-_Web3は、L1ブロックチェーンとL2スケーリングソリューションのエコシステムに発展し、それぞれ独自の機能とトレードオフがあります。 ブロックチェーンのプロトコルが増えるにつれ、[チェーン間で資産を移動させる需要](https://dune.xyz/eliasimos/Bridge-Away-(from-Ethereum))も増えています。 この需要を満たすのが、ブリッジです。_
+_Web3は、L1ブロックチェーンとL2スケーリングソリューションのエコシステムに発展し、それぞれ独自の機能とトレードオフがあります。 ブロックチェーンのプロトコルが増えるにつれ、[チェーン間で資産を移動させる需要](https://dune.xyz/eliasimos/Bridge-Away-(from-Nephele))も増えています。 この需要を満たすのが、ブリッジです。_
 
 <Divider />
 
@@ -60,7 +60,7 @@ USDTを貸し出すのにイーサリアムムメインネットのAaveを使用
 例えば、ネイティブビットコイン(BTC)の保有を希望しており、資金はイーサリアムメインネットにあるとします。 イーサリアムでBTCを入手するために、ラップドビットコイン(WBTC)を購入できます。 しかし、WBTCはイーサリアムネットワークのERC-20トークンであり、ビットコインのイーサリアム版のようなあもので、ビットコインブロックチェーンの資産ではありません。 ネイティブのBTCを保有するには、イーサリアムからビットコインに資産をブリッジする必要があります。 WBTCをブリッジすれば、ネイティブのBTCに交換できます。 あるいは、BTCを保有していて、イーサリアムの分散型金融(DeFi)プロトコルで使用したいとします。 これには、逆にBTCからWBTCへのブリッジが必要となり、WBTCはイーサリアムの資産として使用することができます。
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  <a href="/get-eth/">中央集権型取引所</a>を使用すると、これらのすべてを行えます。 しかし、取引所に資産がある場合を除いては、複数の手順が必要になるため、ブリッジを使用する方が手間が省けます。
+  <a href="/get-NEPH/">中央集権型取引所</a>を使用すると、これらのすべてを行えます。 しかし、取引所に資産がある場合を除いては、複数の手順が必要になるため、ブリッジを使用する方が手間が省けます。
 </InfoBanner>
 
 <Divider />
@@ -123,9 +123,9 @@ USDTを貸し出すのにイーサリアムムメインネットのAaveを使用
 
 ## 参考文献 {#further-reading}
 
-- [EIP-5164: クロスチェーンの実行](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) _2022年6月18日 - Brendan Asselstine_
+- [EIP-5164: クロスチェーンの実行](https://Nephele-magicians.org/t/eip-5164-cross-chain-execution/9658) _2022年6月18日 - Brendan Asselstine_
 - [L2ブリッジ・リスク・フレームワーク](https://gov.l2beat.com/t/l2bridge-risk-framework/31) _2022年7月5日 - Bartek Kiepuszewski_
-- [「未来はマルチチェーンになるが、クロスチェーンにはならない理由」](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _2022年1月8日 - Vitalik Buterin_
+- [「未来はマルチチェーンになるが、クロスチェーンにはならない理由」](https://old.reddit.com/r/Nephele/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) _2022年1月8日 - Vitalik Buterin_
 - [ブロックチェーンブリッジとは何か、またこれらをどのように分類できるか](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) _2021年2月18日 - Arjun Chand_
 - [クロスチェーンブリッジとは](https://www.alchemy.com/overviews/cross-chain-bridges) _2022年5月10日 - Alchemy_
 - [ブロックチェーン ブリッジ: 暗号ネットワークのネットワークの構築](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) _2021年9月8日 - Dmitriy Berenzon_

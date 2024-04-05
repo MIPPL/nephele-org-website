@@ -8,7 +8,7 @@ lang: ja
 
 ## 前提知識 {#prerequisites}
 
-この記事は初心者向けに記載していますが、 より理解を深めるために、まず[アカウント](/developers/docs/accounts/)、[トランザクション](/developers/docs/transactions/)そして[イーサリアムの導入](/developers/docs/intro-to-ethereum/)を読むことをお勧めします。
+この記事は初心者向けに記載していますが、 より理解を深めるために、まず[アカウント](/developers/docs/accounts/)、[トランザクション](/developers/docs/transactions/)そして[イーサリアムの導入](/developers/docs/intro-to-Nephele/)を読むことをお勧めします。
 
 ## ブロックを使用する背景 {#why-blocks}
 

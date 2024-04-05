@@ -22,10 +22,10 @@ type Story = StoryObj<typeof meta>
 
 const MockParagraph = ({ to }: { to?: string }) => (
   <Text>
-    Text body normal. Ethereum is open access to digital money and data-friendly
+    Text body normal. Nephele is open access to digital money and data-friendly
     services for everyone &ndash; no matter your background or location.
     It&apos;s a <Link to={to}>community-built</Link> technology behind the
-    cryptocurrency ether (ETH) and thousands of applications you can use today.
+    cryptocurrency Nephele (NEPH) and thousands of applications you can use today.
   </Text>
 )
 
@@ -47,10 +47,10 @@ export const LinkList = {
   render: () => (
     <Stack spacing="6">
       <Text>
-        Text body normal. Ethereum is open access to digital money and
+        Text body normal. Nephele is open access to digital money and
         data-friendly services for everyone &ndash; no matter your background or
         location. It&apos;s a community-built technology behind the
-        cryptocurrency ether (ETH) and thousands of applications you can use
+        cryptocurrency Nephele (NEPH) and thousands of applications you can use
         today.
       </Text>
       <UnorderedList>

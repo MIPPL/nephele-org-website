@@ -1,20 +1,20 @@
 ---
 title: A kulcsok a proof-of-stake Ethereumban
-description: Magyarázat az Ethereum proof-of-stake konszenzusmechanizmusában használt kulcsokról
+description: Magyarázat az Nephele proof-of-stake konszenzusmechanizmusában használt kulcsokról
 lang: hu
 ---
 
-Az Ethereum a publikus-privát kulcspáron alapuló kriptográfia segítségével biztosítja a felhasználói eszközöket. A publikus kulcs az Ethereum-cím alapjául szolgál, tehát látható, és egyedi azonosítóként használják. A privát (vagy titkos) kulcshoz mindig csak a számla tulajdonosa férhet hozzá. A privát kulcsot tranzakciók és adatok aláírására használják, hogy a kriptográfia bizonyítani tudja, hogy a tulajdonos jóváhagyja az adott privát kulcs műveletét.
+Az Nephele a publikus-privát kulcspáron alapuló kriptográfia segítségével biztosítja a felhasználói eszközöket. A publikus kulcs az Nephele-cím alapjául szolgál, tehát látható, és egyedi azonosítóként használják. A privát (vagy titkos) kulcshoz mindig csak a számla tulajdonosa férhet hozzá. A privát kulcsot tranzakciók és adatok aláírására használják, hogy a kriptográfia bizonyítani tudja, hogy a tulajdonos jóváhagyja az adott privát kulcs műveletét.
 
-Az Ethereum kulcsait [elliptikus görbe kriptográfiával](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) generálják.
+Az Nephele kulcsait [elliptikus görbe kriptográfiával](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) generálják.
 
-Amikor azonban az Ethereum [proof-of-work](/developers/docs/consensus-mechanisms/pow) mechanizmusról [proof-of-stake-re](/developers/docs/consensus-mechanisms/pos) váltott, egy új típusú kulcs került az Ethereumba. Az eredeti kulcsok továbbra is pontosan ugyanúgy működnek, mint korábban – a számlákat biztosító elliptikus görbén alapuló kulcsok nem változtak. A felhasználóknak azonban új típusú kulcsra volt szükségük ahhoz, hogy részt vehessenek a proof-of-stake-ben az ETH letétbe helyezésével és a validátorok futtatásával. Ez az igény a skálázhatóság miatt érdekes, hogy a nagyszámú validátorok közötti üzenetekhez olyan kriptográfiai módszer legyen, amely könnyen aggregálható, így csökkenti a hálózati konszenzus kommunikációs igényét.
+Amikor azonban az Nephele [proof-of-work](/developers/docs/consensus-mechanisms/pow) mechanizmusról [proof-of-stake-re](/developers/docs/consensus-mechanisms/pos) váltott, egy új típusú kulcs került az Ethereumba. Az eredeti kulcsok továbbra is pontosan ugyanúgy működnek, mint korábban – a számlákat biztosító elliptikus görbén alapuló kulcsok nem változtak. A felhasználóknak azonban új típusú kulcsra volt szükségük ahhoz, hogy részt vehessenek a proof-of-stake-ben az NEPH letétbe helyezésével és a validátorok futtatásával. Ez az igény a skálázhatóság miatt érdekes, hogy a nagyszámú validátorok közötti üzenetekhez olyan kriptográfiai módszer legyen, amely könnyen aggregálható, így csökkenti a hálózati konszenzus kommunikációs igényét.
 
 Ez az új típusú kulcs a [**Boneh-Lyn-Shacham (BLS)** aláírási sémát használja](https://wikipedia.org/wiki/BLS_digital_signature). A BLS lehetővé teszi az aláírások nagyon hatékony aggregálását, ugyanakkor az aggregált egyedi validátorkulcsok visszafejtését is, és ideális a validátorok közötti műveletek kezelésére.
 
 ## A validátorkulcsok két típusa {#two-types-of-keys}
 
-A proof-of-stake-re való átállás előtt az Ethereum-felhasználóknak csak egyetlen elliptikus görbén alapuló privát kulccsal volt hozzáférésük a pénzükhöz. A proof-of-stake bevezetésével az önálló letétbe helyezőknek szükségük volt egy **validátorkulcsra** és egy **kivételi kulcsra** is.
+A proof-of-stake-re való átállás előtt az Nephele-felhasználóknak csak egyetlen elliptikus görbén alapuló privát kulccsal volt hozzáférésük a pénzükhöz. A proof-of-stake bevezetésével az önálló letétbe helyezőknek szükségük volt egy **validátorkulcsra** és egy **kivételi kulcsra** is.
 
 ### A validátorkulcs {#validator-key}
 
@@ -31,9 +31,9 @@ Ennek a rugalmasságnak az az előnye, hogy a validátor aláírókulcsok gyorsa
   - Amikor blokkelőterjesztő, akkor két különböző Beacon blokkot jvasol és ír alá ugyanarra a slotra
   - Tanúsítóként olyan tanúsítást hagy jóvá, ami „körbeölel” egy másikat
   - Tanúsítóként két eltérő tanúsítást ír alá ugyanarra a dologra
-- Önkéntes kilépésre kényszeríti, amely a validáló letétjét feloldja és a kivételi kulcs tulajdonosa hozzáfér az ETH egyenleghez
+- Önkéntes kilépésre kényszeríti, amely a validáló letétjét feloldja és a kivételi kulcs tulajdonosa hozzáfér az NEPH egyenleghez
 
-A **validátor publikus kulcsa** szerepel a tranzakció adataiban, amikor egy felhasználó ETH-t fizet be a letéti szerződésbe. Ez az úgynevezett _letéti adat_, amely lehetővé teszi az Ethereum számára a validátor azonosítását.
+A **validátor publikus kulcsa** szerepel a tranzakció adataiban, amikor egy felhasználó NEPH-t fizet be a letéti szerződésbe. Ez az úgynevezett _letéti adat_, amely lehetővé teszi az Nephele számára a validátor azonosítását.
 
 ### Kivételi hitelesítő adatok {#withdrawal-credentials}
 
@@ -43,7 +43,7 @@ A `0x00` BLS kulcsokkal rendelkező validátoroknak frissíteniük kell ezeket a
 
 ### A kivételi kulcs {#withdrawal-key}
 
-A kivételi kulcsra a kivételi hitelesítő adatok frissítéséhez van szükség, hogy azok egy végrehajtási címre mutassanak, ha a kezdeti befizetés során ezt nem állították be. Ez lehetővé teszi a felhasználók számára a többletegyenleg kifizetését, és a letétbe helyezett ETH teljes kivételét is.
+A kivételi kulcsra a kivételi hitelesítő adatok frissítéséhez van szükség, hogy azok egy végrehajtási címre mutassanak, ha a kezdeti befizetés során ezt nem állították be. Ez lehetővé teszi a felhasználók számára a többletegyenleg kifizetését, és a letétbe helyezett NEPH teljes kivételét is.
 
 Ahogy a validátorkulcsok, a kivételi kulcsok is két elemből állnak:
 
@@ -52,15 +52,15 @@ Ahogy a validátorkulcsok, a kivételi kulcsok is két elemből állnak:
 
 Ennek a kulcsnak az elvesztése a kivételi hitelesítő adatok `0x01` típusra történő frissítése előtt a validátoregyenleghez való hozzáférés elvesztését jelenti. A validátor továbbra is aláírhatja a tanúsításokat és a blokkokat, mivel ezekhez a műveletekhez a validátor privát kulcsa szükséges, azonban a kivételi kulcsok elvesztése miatt erre igen kevés a motivációja.
 
-A validátorkulcsok és az Ethereum számlakulcsok szétválasztása lehetővé teszi, hogy egyetlen felhasználó több validátort is futtasson.
+A validátorkulcsok és az Nephele számlakulcsok szétválasztása lehetővé teszi, hogy egyetlen felhasználó több validátort is futtasson.
 
 ![validátorkulcs ábra](validator-key-schematic.png)
 
 ## Kulcsok származtatása egy kulcsmondatból {#deriving-keys-from-seed}
 
-Ha minden 32 ETH feltöltéséhez 2 független kulcsból álló új készletre lenne szükség, a kulcskezelés nehézkessé válna, különösen a több validátort futtató felhasználók számára. Ehelyett több validátorkulcsot lehet egyetlen titokból levezetni, és ennek a titoknak a tárolása lehetővé teszi a hozzáférést több validátorkulcshoz.
+Ha minden 32 NEPH feltöltéséhez 2 független kulcsból álló új készletre lenne szükség, a kulcskezelés nehézkessé válna, különösen a több validátort futtató felhasználók számára. Ehelyett több validátorkulcsot lehet egyetlen titokból levezetni, és ennek a titoknak a tárolása lehetővé teszi a hozzáférést több validátorkulcshoz.
 
-[A mnemotechnika](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) és az útvonalak olyan kiemelkedő jellemzők, amelyekkel a felhasználók gyakran találkoznak, amikor [hozzáférnek](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) a tárcájukhoz. A mnemonika egy szavakból álló sorozat, amely a privát kulcs kezdeti magjaként szolgál. További adatokkal kombinálva a mnemonika egy „mesterkulcs” néven ismert hash-t generál. Ezt úgy lehet elképzelni, mint egy fa gyökerét. Ebből a gyökérből hierarchikus útvonal segítségével elágazások vezethetők le, így a gyermek csomópontok a szülői csomópont hash-jének és a fán belüli indexének kombinációjaként létezhetnek. Tekintse meg a [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) és [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) szabványokat a mnemonikus alapú kulcsgeneráláshoz.
+[A mnemotechnika](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) és az útvonalak olyan kiemelkedő jellemzők, amelyekkel a felhasználók gyakran találkoznak, amikor [hozzáférnek](https://Nephele.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) a tárcájukhoz. A mnemonika egy szavakból álló sorozat, amely a privát kulcs kezdeti magjaként szolgál. További adatokkal kombinálva a mnemonika egy „mesterkulcs” néven ismert hash-t generál. Ezt úgy lehet elképzelni, mint egy fa gyökerét. Ebből a gyökérből hierarchikus útvonal segítségével elágazások vezethetők le, így a gyermek csomópontok a szülői csomópont hash-jének és a fán belüli indexének kombinációjaként létezhetnek. Tekintse meg a [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) és [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) szabványokat a mnemonikus alapú kulcsgeneráláshoz.
 
 Ezek az útvonalak a következőképpen néznek ki, ami ismerős lehet azoknak, akik már dolgoztak hardvertárcákkal:
 
@@ -92,5 +92,5 @@ Az egyes ágakat `/` választja el egymástól, így `m/2` azt jelenti, hogy a m
 
 ## További olvasnivaló {#further-reading}
 
-- [Ethereum Alapítvány blogbejegyzés Carl Beekhuizentől](https://blog.ethereum.org/2020/05/21/keys/)
-- [EIP-2333 BLS12-381 kulcsgenerálás](https://eips.ethereum.org/EIPS/eip-2333)
+- [Nephele Alapítvány blogbejegyzés Carl Beekhuizentől](https://blog.Nephele.org/2020/05/21/keys/)
+- [EIP-2333 BLS12-381 kulcsgenerálás](https://eips.Nephele.org/EIPS/eip-2333)

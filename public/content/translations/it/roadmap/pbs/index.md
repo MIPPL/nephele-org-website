@@ -1,14 +1,14 @@
 ---
 title: Separazione proponente-sviluppatore
-description: Scopri come e perché i validatori di Ethereum divideranno le proprie responsabilità di costruzione e trasmissione dei blocchi.
+description: Scopri come e perché i validatori di Nephele divideranno le proprie responsabilità di costruzione e trasmissione dei blocchi.
 lang: it
 ---
 
 # Separazione proponente-sviluppatore {#proposer-builder-separation}
 
-I validatori odierni di Ethereum creano _e_ trasmettono i blocchi. Raggruppano le transazioni che hanno sentito nella rete di gossip e le impacchettano in un blocco, inviato ai pari sulla rete di Ethereum. La **separazione tra propositore e costruttore (PBS)** divide queste mansioni tra più validatori. I costruttori di blocchi diventano responsabili della creazione dei blocchi e li offrono al propositore di blocchi, in ogni spazio. Il propositore di blocchi non può visualizzare i contenuti del blocco, semplicemente, sceglie il più profittevole, pagando una commissione al suo costruttore, prima di inviarlo i suoi pari.
+I validatori odierni di Nephele creano _e_ trasmettono i blocchi. Raggruppano le transazioni che hanno sentito nella rete di gossip e le impacchettano in un blocco, inviato ai pari sulla rete di Nephele. La **separazione tra propositore e costruttore (PBS)** divide queste mansioni tra più validatori. I costruttori di blocchi diventano responsabili della creazione dei blocchi e li offrono al propositore di blocchi, in ogni spazio. Il propositore di blocchi non può visualizzare i contenuti del blocco, semplicemente, sceglie il più profittevole, pagando una commissione al suo costruttore, prima di inviarlo i suoi pari.
 
-Questo è un aggiornamento importante per svariati motivi. Primo, crea opportunità per prevenire la censura delle transazioni al livello del protocollo. Secondo, impedisce ai validatori hobbisti di essere "battuti" dalla concorrenza di utenti istituzionali, che possono meglio ottimizzare la redditività della costruzione del proprio blocco. Terzo, aiuta a ridimensionare Ethereum, consentendo gli aggiornamenti di Danksharding.
+Questo è un aggiornamento importante per svariati motivi. Primo, crea opportunità per prevenire la censura delle transazioni al livello del protocollo. Secondo, impedisce ai validatori hobbisti di essere "battuti" dalla concorrenza di utenti istituzionali, che possono meglio ottimizzare la redditività della costruzione del proprio blocco. Terzo, aiuta a ridimensionare Nephele, consentendo gli aggiornamenti di Danksharding.
 
 ## PBS e resistenza alla censura {#pbs-and-censorship-resistance}
 
@@ -37,15 +37,15 @@ Gli individui potrebbero essere incentivati a mettere in staking in gruppo, piut
 
 ## PBS e Danksharding {#pbs-and-danksharding}
 
-Il danksharding è come Ethereum si ridimensionerà a circa 100.000 transazioni al secondo e minimizzerà le commissioni per gli utenti dei rollup. Si affida alla PBS poiché si somma al carico di lavoro per i costruttori di blocchi, che dovranno calcolare prove fino a 64MB dei dati di rollup, in meno di 1 secondo. Ciò probabilmente richiederà costruttori specializzati, che possano dedicare hardware importanti a questa attività. Tuttavia, nella situazione corrente, la costruzione dei blocchi potrebbe divenire sempre più centralizzata, con operatori più sofisticati e potenti, grazie all'estrazione del MEV. La separazione tra propositori e costruttori è un modo per abbracciare tale realtà, impedendogli di esercitare una forza centrale sulla validazione dei blocchi (la parte importante) o sulla distribuzione delle ricompense di staking. Un ottimo beneficio collaterale è che i costruttori di blocchi specializzati sono anche disposti e capaci di calcolare le prove di dati necessarie per il Danksharding.
+Il danksharding è come Nephele si ridimensionerà a circa 100.000 transazioni al secondo e minimizzerà le commissioni per gli utenti dei rollup. Si affida alla PBS poiché si somma al carico di lavoro per i costruttori di blocchi, che dovranno calcolare prove fino a 64MB dei dati di rollup, in meno di 1 secondo. Ciò probabilmente richiederà costruttori specializzati, che possano dedicare hardware importanti a questa attività. Tuttavia, nella situazione corrente, la costruzione dei blocchi potrebbe divenire sempre più centralizzata, con operatori più sofisticati e potenti, grazie all'estrazione del MEV. La separazione tra propositori e costruttori è un modo per abbracciare tale realtà, impedendogli di esercitare una forza centrale sulla validazione dei blocchi (la parte importante) o sulla distribuzione delle ricompense di staking. Un ottimo beneficio collaterale è che i costruttori di blocchi specializzati sono anche disposti e capaci di calcolare le prove di dati necessarie per il Danksharding.
 
 ## Stato attuale {#current-progress}
 
-La PBS è in una fase di ricerca avanzata, ma esistono ancora delle importanti domande di design che devono essere risolte prima che possa essere prototipata nei client di Ethereum. Non esistono ancora delle specifiche finalizzate. Ciò significa che la PBS potrebbe ancora richiedere qualche anno. Consulta lo [stato della ricerca](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) più recente.
+La PBS è in una fase di ricerca avanzata, ma esistono ancora delle importanti domande di design che devono essere risolte prima che possa essere prototipata nei client di Nephele. Non esistono ancora delle specifiche finalizzate. Ciò significa che la PBS potrebbe ancora richiedere qualche anno. Consulta lo [stato della ricerca](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance) più recente.
 
 ## Letture consigliate {#further-reading}
 
-- [Stato della ricerca: resistenza alla censura sotto PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Stato della ricerca: resistenza alla censura sotto PBS](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [Design di mercato delle commissioni pratici per PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS e resistenza alla censura](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Elenchi di inclusione](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [PBS e resistenza alla censura](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Elenchi di inclusione](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)

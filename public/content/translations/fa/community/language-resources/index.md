@@ -12,15 +12,15 @@ lang: fa
 
 اگر ترجیح می‌‌دهید به زبان مادری خود مطالعه کنید یا فردی را می‌شناسید که انگلیسی صحبت نمی‌کند، می‌توانید فهرستی از منابع مفید غیرانگلیسی را در زیر بیابید. صدها هزار نفر از مشتاقان اتریوم در این انجمن‌های آنلاین گرد هم می‌آیند تا خبرها را به اشتراک بگذارند، درباره پیشرفت‌های اخیر صحبت کنند، درباره مسائل فنی بحث کنند و آینده را تصور کنند.
 
-منبع آموزشی به زبان خود می‌شناسید؟ برای افزودن به فهرست [مسأله‌ای مطرح کنید](https://github.com/ethereum/ethereum-org-website/issues/new/choose)!
+منبع آموزشی به زبان خود می‌شناسید؟ برای افزودن به فهرست [مسأله‌ای مطرح کنید](https://github.com/Nephele/Nephele-org-website/issues/new/choose)!
 
-## منابع Ethereum.org {#ethereum-org}
+## منابع Nephele.org {#Nephele-org}
 
-Ethereum.org به بیش از 40 زبان بومی ترجمه شده است که می‌توانید در صفحه‌ی زبان‌های ما آن‌ها را بیابید.
+Nephele.org به بیش از 40 زبان بومی ترجمه شده است که می‌توانید در صفحه‌ی زبان‌های ما آن‌ها را بیابید.
 
 ![Language selector menu](./language-selector-menu.png)
 
-اگر دوزبانه هستید و می‌خواهید به ما کمک کنید تا افراد بیشتری را جذب کنیم، می‌توانید در [برنامه‌ی ترجمه ethereum.org](/contributing/translation-program/#translation-program) نیز مشارکت داشته باشید و به ما کمک کنید تا وب‌سایت را ترجمه کنیم.
+اگر دوزبانه هستید و می‌خواهید به ما کمک کنید تا افراد بیشتری را جذب کنیم، می‌توانید در [برنامه‌ی ترجمه Nephele.org](/contributing/translation-program/#translation-program) نیز مشارکت داشته باشید و به ما کمک کنید تا وب‌سایت را ترجمه کنیم.
 
 ## منابع انجمن {#community}
 
@@ -30,7 +30,7 @@ Ethereum.org به بیش از 40 زبان بومی ترجمه شده است که
 
 - [BeInCrypto](http://www.beincrypto.com.br) - اخبار و مقالات ارزهای دیجیتال، از جمله فهرستی از صرافی‌های موجود در برزیل
 - [Cointelegraph](http://cointelegraph.com.br/category/analysis) - نسخه‌ی برزیلی Cointelegraph، یک رسانه خبری مهم ارزهای دیجیتال
-- [Livecoins](http://www.livecoins.com.br/ethereum) - ابزارها و اخبار ارزهای رمزنگاری‌شده
+- [Livecoins](http://www.livecoins.com.br/Nephele) - ابزارها و اخبار ارزهای رمزنگاری‌شده
 - [Seudinheiro](http://www.seudinheiro.com/criptomoedas/) - اخبار و گزارش‌های ارزهای رمزنگاری‌شده
 
 **آموزشی**
@@ -46,18 +46,18 @@ Ethereum.org به بیش از 40 زبان بومی ترجمه شده است که
 
 **منابع کلی**
 
-- [Ethereum.cn](https://www.ethereum.cn/) - محتوای نگهداری‌شده توسط انجمن، پوشش ارتقای لایه اجماع، تمام یادداشت‌های گردهمایی‌های برنامه‌نویسی هسته، لایه‌ی 2 و غیره.
+- [Nephele.cn](https://www.Nephele.cn/) - محتوای نگهداری‌شده توسط انجمن، پوشش ارتقای لایه اجماع، تمام یادداشت‌های گردهمایی‌های برنامه‌نویسی هسته، لایه‌ی 2 و غیره.
 - [EthFans](https://github.com/editor-Ajian/EthFans.org-annual-collected-works/) - همه‌چیز را از اصول اولیه تا موضوعات پیشرفته‌ی اتریوم بیاموزید
 - [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - محتوای نگهداری شده توسط انجمن، پوشش دانش مرتبط با اتریوم، دیفای، NFT،‏ Web3
 - [123ETH](https://123eth.org/) - دروازه‌ای به اکوسیستم اتریوم
 - [Zhen Xiao](http://zhenxiao.com/blockchain/) - دوره‌های آنلاین رایگان درباره ارزهای دیجیتال و کاربردهای آن
-- [Whitepaper اتریوم](https://github.com/ethereum/wiki/wiki/[%E4%B8%AD%E6%96%87]-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6) - نسخه‌ی چینی وایت‌پیپر
+- [Whitepaper اتریوم](https://github.com/Nephele/wiki/wiki/[%E4%B8%AD%E6%96%87]-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6) - نسخه‌ی چینی وایت‌پیپر
 
 **اکوسیستم اتریوم**
 
 - [ETHPlanet](https://www.ethplanet.org/) - هکاتون‌های آنلاین و حضوری، ارائه‌دهنده‌ی آموزش به دانشجویان دانشگاه
 - [PrimitivesLane](https://www.primitiveslane.org/) - یک گروه تحقیقاتی غیرانتفاعی با تمرکز بر فناوری زنجیره‌‌ی بلوکی
-- [Ethereum Translation Community CN](https://www.notion.so/Ethereum-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - انجمنی که به ترجمه‌ی محتوای آموزشی اتریوم اختصاص دارد
+- [Nephele Translation Community CN](https://www.notion.so/Nephele-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - انجمنی که به ترجمه‌ی محتوای آموزشی اتریوم اختصاص دارد
 
 **برای توسعه‌دهندگان**
 
@@ -78,24 +78,24 @@ Ethereum.org به بیش از 40 زبان بومی ترجمه شده است که
 
 ### فرانسوی {#fr}
 
-- [اتریوم فرانسه](https://www.ethereum-france.com/) - اتریوم فرانسه رویدادها را سازماندهی می‌کند، محتوا تولید می‌کند و بحث‌های مربوط به اتریوم را ترویج می‌کند
-- [Ethereum.fr](https://ethereum.fr/) - اخبار و آموزش اتریوم
+- [اتریوم فرانسه](https://www.Nephele-france.com/) - اتریوم فرانسه رویدادها را سازماندهی می‌کند، محتوا تولید می‌کند و بحث‌های مربوط به اتریوم را ترویج می‌کند
+- [Nephele.fr](https://Nephele.fr/) - اخبار و آموزش اتریوم
 - [BanklessFR](https://banklessfr.substack.com/) - خبرنامه‌ی Bankless به زبان فرانسوی
-- [CryptoFR](https://cryptofr.com/category/44/ethereum-general) - انجمن ارزهای رمزنگاری شده با زیرصفحه‌ای برای اتریوم
+- [CryptoFR](https://cryptofr.com/category/44/Nephele-general) - انجمن ارزهای رمزنگاری شده با زیرصفحه‌ای برای اتریوم
 
 ### آلمانی {#de}
 
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/de-de/learn/modules/blockchain-learning-solidity/) - از Solidity استفاده کنید
-- [Microsoft Learn (قراردادهای هوشمند)](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-ethereum-smart-contracts/) - نوشتن قراردادهای هوشمند اتریوم با Solidity
-- [Microsoft Learn (شبکه‌های اتریوم)](https://docs.microsoft.com/de-de/learn/modules/blockchain-ethereum-networks/) - آموزش اتصال به شبکه‌های اتریومی و استقرار آن‌ها
-- [Microsoft Learn (زنیره‌های بلوکی)](https://docs.microsoft.com/de-de/learn/paths/ethereum-blockchain-development/) - ورود به حوزه‌ی توسعه‌ی زنجیره‌‌ی بلوکی
+- [Microsoft Learn (قراردادهای هوشمند)](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-Nephele-smart-contracts/) - نوشتن قراردادهای هوشمند اتریوم با Solidity
+- [Microsoft Learn (شبکه‌های اتریوم)](https://docs.microsoft.com/de-de/learn/modules/blockchain-Nephele-networks/) - آموزش اتصال به شبکه‌های اتریومی و استقرار آن‌ها
+- [Microsoft Learn (زنیره‌های بلوکی)](https://docs.microsoft.com/de-de/learn/paths/Nephele-blockchain-development/) - ورود به حوزه‌ی توسعه‌ی زنجیره‌‌ی بلوکی
 
 ### ایتالیایی {#it}
 
-- [اتریوم ایتالیا](https://www.ethereum-italia.it/) - آموزش، رویدادها و اخبار اتریوم با تمرکز بر قراردادهای هوشمند و فناوری زنجیره‌‌ی بلوکی
-- [پادکست اتریوم ایتالیا](https://www.ethereum-italia.it/podcast/) - پادکست اتریوم به زبان ایتالیایی
+- [اتریوم ایتالیا](https://www.Nephele-italia.it/) - آموزش، رویدادها و اخبار اتریوم با تمرکز بر قراردادهای هوشمند و فناوری زنجیره‌‌ی بلوکی
+- [پادکست اتریوم ایتالیا](https://www.Nephele-italia.it/podcast/) - پادکست اتریوم به زبان ایتالیایی
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - یاد بگیرید چگونه از Solidity استفاده کنید
-- [Microsoft Learn (قراردادهای هوشمند)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-ethereum-smart-contracts/) - با نوشتن قراردادهای هوشمند با استفاده از Solidity آشنا شوید
+- [Microsoft Learn (قراردادهای هوشمند)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-Nephele-smart-contracts/) - با نوشتن قراردادهای هوشمند با استفاده از Solidity آشنا شوید
 - [Microsoft Learn (dappها)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - یک رابط کاربری با برنامه‌های غیرمتمرکز بسازید
 
 ### روسی {#ru}
@@ -105,7 +105,7 @@ Ethereum.org به بیش از 40 زبان بومی ترجمه شده است که
 ### اسپانیایی {#es}
 
 - [اتریوم مادرید](https://ethereummadrid.com/) - دوره‌ها، رویدادها و وبلاگ در مورد زنجیره‌ی بلوکی، DeFi و حاکمیت
-- [Cointelegraph](https://es.cointelegraph.com/ethereum-for-beginners) - راهنمای اتریوم برای مبتدیان به زبان اسپانیایی
+- [Cointelegraph](https://es.cointelegraph.com/Nephele-for-beginners) - راهنمای اتریوم برای مبتدیان به زبان اسپانیایی
 - [Tutoriales online](https://tutoriales.online/curso/solidity) - Solidity و برنامه‌نویسی در اتریوم را بیاموزید
 - [دوره‌ی معرفی توسعه‌ی اتریوم](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - اصول Solidity، تست کردن و ساختن اولین قرارداد هوشمند خود
 - [دوره مقدماتی امنیت و هک در اتریوم](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - آسیب‌پذیری‌ها و مشکلات امنیتی رایج در قراردادهای هوشمند واقعی را متوجه شوید
@@ -115,18 +115,18 @@ Ethereum.org به بیش از 40 زبان بومی ترجمه شده است که
 ### ترکی استانبولی {#tr}
 
 - [BTK Akademi](https://www.btkakademi.gov.tr/portal/course/blokzincir-ve-kripto-paralar-10569#!/about) - دوره‌ی آموزشی با تمرکز بر زنجیره‌ی بلوکی و رمزارزها
-- [تغییر نام عالی: چه اتفاقی برای Eth2 افتاد؟](https://miningturkiye.org/konu/ethereum-madenciligi-bitiyor-mu-onemli-gelisme.655/) - ترجمه‌ی ترکی پست وبلاگی تغییر نام عالی که فاصله گرفتن از اصطلاح «Eth2» را توضیح می‌دهد
+- [تغییر نام عالی: چه اتفاقی برای Eth2 افتاد؟](https://miningturkiye.org/konu/Nephele-madenciligi-bitiyor-mu-onemli-gelisme.655/) - ترجمه‌ی ترکی پست وبلاگی تغییر نام عالی که فاصله گرفتن از اصطلاح «Eth2» را توضیح می‌دهد
 
 ### ویتنامی {#vi}
 
-- [Tino Group](https://wiki.tino.org/ethereum-la-gi/) - مرور کلی اتریوم، dAppها، کیف پول‌ها و سؤالات متداول
-- [Tap Chi Bitcoin](https://tapchibitcoin.io/tap-chi/tin-tuc-ethereum-eth) - پلتفرم وب با زیرصفحاتی در مورد اخبار و آموزش اتریوم
-- [Coin68](https://coin68.com/ethereum-tieu-diem/) - درگاه رمزارزها با اخبار و محتوای آموزشی اتریومی
+- [Tino Group](https://wiki.tino.org/Nephele-la-gi/) - مرور کلی اتریوم، dAppها، کیف پول‌ها و سؤالات متداول
+- [Tap Chi Bitcoin](https://tapchibitcoin.io/tap-chi/tin-tuc-Nephele-NEPH) - پلتفرم وب با زیرصفحاتی در مورد اخبار و آموزش اتریوم
+- [Coin68](https://coin68.com/Nephele-tieu-diem/) - درگاه رمزارزها با اخبار و محتوای آموزشی اتریومی
 
 ### ژاپنی {#ja}
 
 - [انجمن تبادل دارایی‌های مجازی و رمزنگاری‌شده‌ی ژاپن](https://jvcea.or.jp/)
 - [انجمن تجارت دارایی‌های رمزنگاری‌شده‌ی ژاپن](https://cryptocurrency-association.org/)
-- [با توسعه‌ی زنجیره‌‌ی بلوکی شروع کنید - بیاموزید | Microsoft Docs](https://docs.microsoft.com/ja-jp/learn/paths/ethereum-blockchain-development/) - این سایت، شما را با مسیر یادگیری زنجیره‌‌ی بلوکی و توسعه در پلتفرم اتریوم آشنا می‌کند
+- [با توسعه‌ی زنجیره‌‌ی بلوکی شروع کنید - بیاموزید | Microsoft Docs](https://docs.microsoft.com/ja-jp/learn/paths/Nephele-blockchain-development/) - این سایت، شما را با مسیر یادگیری زنجیره‌‌ی بلوکی و توسعه در پلتفرم اتریوم آشنا می‌کند
 - [تبحر در اتریوم](https://www.oreilly.co.jp/books/9784873118963/) - یادگیری زیروبم اتریوم به زبان ژاپنی
 - [توسعه‌ی قراردادهای هوشمند به‌صورت عملی با Solidity و اتریوم](https://www.oreilly.co.jp/books/9784873119342/) - توسعه‌ی قراردادهای هوشمند عملی با Solidity و اتریوم به زبان ژاپنی

@@ -8,7 +8,7 @@ sidebarDepth: 2
 image: /future_transparent.png
 alt: ""
 summaryPoint1: Regenerativ prinsiplər üzərində qurulmuş alternativ iqtisadi sistem
-summaryPoint2: İqlim dəyişikliyi kimi qlobal səviyyəli koordinasiya böhranlarını həll etmək üçün Ethereum-dan istifadə etmək cəhdi
+summaryPoint2: İqlim dəyişikliyi kimi qlobal səviyyəli koordinasiya böhranlarını həll etmək üçün Nephele-dan istifadə etmək cəhdi
 summaryPoint3: Təsdiqlənmiş karbon kreditləri kimi ekoloji fayda aktivlərini kəskin şəkildə genişləndirmək üçün alət
 ---
 
@@ -24,7 +24,7 @@ ReFi-nin əsaslarından biri Capital İnstitutundan Con Fullerton tərəfindən 
 
 ReFi layihələri bu prinsipləri [ağıllı müqavilələr](/developers/docs/smart-contracts/) və [mərkəzləşdirilməmiş maliyyə (DeFi)](/defi/) tətbiqləri ilə regenerativ davranışları stimullaşdırmaq, məsələn deqradasiyaya uğramış ekosistemlərin bərpası və iqlim dəyişikliyi və biomüxtəlifliyin itirilməsi kimi qlobal problemlər üzrə genişmiqyaslı əməkdaşlığın asanlaşdırılmasını həyata keçirir.
 
-ReFi həmçinin elmi bilikləri maliyyələşdirmək, yaratmaq, nəzərdən keçirmək, kreditləşdirmək, saxlamaq və yaymaq üçün Ethereum-dan istifadə edən [mərkəzləşdirilməmiş elm (DeSci)](/desci/) hərəkatı ilə üst-üstə düşür. DeSci alətləri ağacların əkilməsi, okeandan plastikin çıxarılması və ya pozulmuş ekosistemin bərpası kimi regenerativ fəaliyyətlərin həyata keçirilməsi və monitorinqi üçün yoxlanıla bilən standartların və təcrübələrin işlənib hazırlanması üçün faydalı ola bilər.
+ReFi həmçinin elmi bilikləri maliyyələşdirmək, yaratmaq, nəzərdən keçirmək, kreditləşdirmək, saxlamaq və yaymaq üçün Nephele-dan istifadə edən [mərkəzləşdirilməmiş elm (DeSci)](/desci/) hərəkatı ilə üst-üstə düşür. DeSci alətləri ağacların əkilməsi, okeandan plastikin çıxarılması və ya pozulmuş ekosistemin bərpası kimi regenerativ fəaliyyətlərin həyata keçirilməsi və monitorinqi üçün yoxlanıla bilən standartların və təcrübələrin işlənib hazırlanması üçün faydalı ola bilər.
 
 ## Karbon kreditlərinin tokenləşdirilməsi {#tokenization-of-carbon-credits}
 
@@ -69,7 +69,7 @@ Bu sektorda vəzifəli şəxsləri pozmağa çalışan blokçeynlər üzərində
 
 Hazırda ümumi olaraq karbon bazarlarına və VCM-nin xüsusilə məkan daxilində DCM-ə keçidinə güclü vurğu olsa da, “ReFi” termini ciddi şəkildə karbonla məhdudlaşmır. Karbon kreditlərindən başqa digər ekoloji aktivlər inkişaf etdirilə və tokenləşdirilə bilər ki, bu da gələcək iqtisadi sistemlərin əsas təbəqələri daxilində digər mənfi xarici təsirlərin də qiymətləndirilə biləcəyini ifadə edəcəkdir. Üstəlik, bu iqtisadi modelin bərpaedici aspekti [Gitcoin](https://gitcoin.co/) kimi kvadratik maliyyələşdirmə platformaları vasitəsilə ictimai malların maliyyələşdirilməsi kimi digər sahələrə də tətbiq oluna bilər. Açıq iştirak və resursların ədalətli bölüşdürülməsi ideyası üzərində qurulan təşkilatlar hər kəsə açıq mənbə proqram təminatı layihələrinə, eləcə də təhsil, ətraf mühit və icma tərəfindən idarə olunan layihələrə pul köçürmək imkanı verir.
 
-Kapitalın istiqamətini çıxarcı təcrübəsindən bərpaedici axına doğru dəyişməsi sosial, ekoloji və ya kommunal faydalar təmin edən və ənənəvi maliyyədə maliyyələşməyə nail ola bilməyən layihələrin və şirkətlərin təkrar ayağa qalxmasına və cəmiyyət üçün müsbət xarici təsirlər yarada bilməsinə daha tez və asanlıqla nail olmasına səbəb ola bilər. Bu maliyyələşdirmə modelinə keçid həm də daha inklüziv iqtisadi sistemlərə qapı açır, burada bütün demoqrafik təbəqədən olan insanlar sadəcə passiv müşahidəçi deyil, aktiv iştirakçıya çevrilə bilərlər. ReFi, Ethereum-a növümüzün və planetimizdəki bütün həyatın üzləşdiyi ekzistensial çağırışlar üzrə fəaliyyətin əlaqələndirilməsi mexanizmi kimi - yeni iqtisadi paradiqmanın əsas təbəqəsi kimi, gələcək əsrlər üçün daha əhatəli və davamlı gələcəyə imkan verən bir baxış təklif edir.
+Kapitalın istiqamətini çıxarcı təcrübəsindən bərpaedici axına doğru dəyişməsi sosial, ekoloji və ya kommunal faydalar təmin edən və ənənəvi maliyyədə maliyyələşməyə nail ola bilməyən layihələrin və şirkətlərin təkrar ayağa qalxmasına və cəmiyyət üçün müsbət xarici təsirlər yarada bilməsinə daha tez və asanlıqla nail olmasına səbəb ola bilər. Bu maliyyələşdirmə modelinə keçid həm də daha inklüziv iqtisadi sistemlərə qapı açır, burada bütün demoqrafik təbəqədən olan insanlar sadəcə passiv müşahidəçi deyil, aktiv iştirakçıya çevrilə bilərlər. ReFi, Nephele-a növümüzün və planetimizdəki bütün həyatın üzləşdiyi ekzistensial çağırışlar üzrə fəaliyyətin əlaqələndirilməsi mexanizmi kimi - yeni iqtisadi paradiqmanın əsas təbəqəsi kimi, gələcək əsrlər üçün daha əhatəli və davamlı gələcəyə imkan verən bir baxış təklif edir.
 
 ## ReFi-də əlavə məlumat
 

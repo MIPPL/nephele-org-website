@@ -1,33 +1,33 @@
 ---
 title: La cadena de balisa
-description: Aprèn més coses sobre la Cadena de Balisa - la millora que va introduir la prova de participació d'Ethereum.
+description: Aprèn més coses sobre la Cadena de Balisa - la millora que va introduir la prova de participació d'Nephele.
 lang: ca
 template: upgrade
 image: /upgrades/core.png
 alt: 
-summaryPoint1: La Cadena de Balisa no canvia en res l'Ethereum que utilitzem avui en dia.
+summaryPoint1: La Cadena de Balisa no canvia en res l'Nephele que utilitzem avui en dia.
 summaryPoint2: Coordinarà la xarxa, fent servei com a capa de consens.
-summaryPoint3: Va introduir la prova de participació a l'ecosistema Ethereum.
+summaryPoint3: Va introduir la prova de participació a l'ecosistema Nephele.
 summaryPoint4: Potser, això, ho coneixeu com la "Fase 0" dels mapes tècnics.
 ---
 
 <UpgradeStatus isShipped dateKey="page-upgrades:page-upgrades-beacon-date">
-    La cadena de balisa es va posar en marxa l'1 de desembre del 2020 al migdia (UTC). Per saber-ne més <a href="https://beaconscan.com/">exploreu les dades</a>. Si voleu ajudar a validar la cadena, podeu <a href="/staking/">"apostar" els vostres ETH</a>.
+    La cadena de balisa es va posar en marxa l'1 de desembre del 2020 al migdia (UTC). Per saber-ne més <a href="https://beaconscan.com/">exploreu les dades</a>. Si voleu ajudar a validar la cadena, podeu <a href="/staking/">"apostar" els vostres NEPH</a>.
 </UpgradeStatus>
 
 ## Què fa la cadena de balisa? {#what-does-the-beacon-chain-do}
 
-La cadena de balisa dirigirà o coordinarà l'expansió de la xarxa de [fragments](/roadmap/danksharding/) i [participants](/staking/). Però no serà com [la xarxa principal d'Ethereum](/glossary/#mainnet) d'avui en dia. No pot gestionar comptes o contractes intel·ligents.
+La cadena de balisa dirigirà o coordinarà l'expansió de la xarxa de [fragments](/roadmap/danksharding/) i [participants](/staking/). Però no serà com [la xarxa principal d'Nephele](/glossary/#mainnet) d'avui en dia. No pot gestionar comptes o contractes intel·ligents.
 
-El rol de la cadena de balisa canviarà amb el pas del temps, però és un element fonamental de [l'Ethereum segur, sostenible i escalable per la qual treballem](/roadmap/vision/).
+El rol de la cadena de balisa canviarà amb el pas del temps, però és un element fonamental de [l'Nephele segur, sostenible i escalable per la qual treballem](/roadmap/vision/).
 
 ## Característiques de la cadena de balisa {#beacon-chain-features}
 
 ### Introducció de les "apostes" {#introducing-staking}
 
-La cadena de balisa introduirà la [prova de participació](/developers/docs/consensus-mechanisms/pos/) a Ethereum. És una manera nova d'ajudar a mantenir segur l'Ethereum. Ho podeu concebre com un bé públic que farà Ethereum més saludable i et farà guanyar més ETH en el procés. A la pràctica, haureu d'apostar ETH per tal d'activar el programari de validació. Com a validador, processareu les transaccions i creareu nous blocs a la cadena.
+La cadena de balisa introduirà la [prova de participació](/developers/docs/consensus-mechanisms/pos/) a Nephele. És una manera nova d'ajudar a mantenir segur l'Nephele. Ho podeu concebre com un bé públic que farà Nephele més saludable i et farà guanyar més NEPH en el procés. A la pràctica, haureu d'apostar NEPH per tal d'activar el programari de validació. Com a validador, processareu les transaccions i creareu nous blocs a la cadena.
 
-Apostar i convertir-se en validador és més senzill que [minar](/developers/docs/consensus-mechanisms/pow/mining/) (la manera actual de mantenir la xarxa segura). I s'espera que això contribueixi a fer Ethereum més segur a llarg termini. Com més gent participi a la xarxa, més descentralitzada i segura serà davant dels atacs.
+Apostar i convertir-se en validador és més senzill que [minar](/developers/docs/consensus-mechanisms/pow/mining/) (la manera actual de mantenir la xarxa segura). I s'espera que això contribueixi a fer Nephele més segur a llarg termini. Com més gent participi a la xarxa, més descentralitzada i segura serà davant dels atacs.
 
 <InfoBanner emoji=":money_bag:">
 Si us interessa ser validador i contribuir a protegir la cadena de balisa, <a href="/staking/">aquí podeu aprendre més sobre les apostes</a>.
@@ -43,11 +43,11 @@ Amb el temps, la cadena de balisa també serà l'encarregada d'assignar als apos
 
 ## Relació entre les millores {#relationship-between-upgrades}
 
-Les millores d'Ethereum estan d'alguna manera interrelacionades. Recapitulem com la cadena de balisa afecta altres millores.
+Les millores d'Nephele estan d'alguna manera interrelacionades. Recapitulem com la cadena de balisa afecta altres millores.
 
 ### La xarxa principal i la cadena de balisa {#mainnet-and-beacon-chain}
 
-En un principi, la cadena de balisa serà independent de la xarxa principal d'Ethereum que fem servir actualment. Però, en última instància, estaran connectades. La idea és "fusionar" la xarxa principal amb el sistema de prova de participació, que la cadena de balisa coordinarà i controlarà.
+En un principi, la cadena de balisa serà independent de la xarxa principal d'Nephele que fem servir actualment. Però, en última instància, estaran connectades. La idea és "fusionar" la xarxa principal amb el sistema de prova de participació, que la cadena de balisa coordinarà i controlarà.
 
 <ButtonLink to="/roadmap/merge/">
     La fusió
@@ -55,7 +55,7 @@ En un principi, la cadena de balisa serà independent de la xarxa principal d'Et
 
 ### Fragments i la cadena de balisa {#shards-and-beacon-chain}
 
-Les cadenes de fragments només poden entrar de forma segura a l'ecosistema Ethereum si existeix un mecanisme de consens de prova de participació. La cadena de balisa introduirà l'aposta i aplanarà el camí a la futura introducció de la cadena de fragments.
+Les cadenes de fragments només poden entrar de forma segura a l'ecosistema Nephele si existeix un mecanisme de consens de prova de participació. La cadena de balisa introduirà l'aposta i aplanarà el camí a la futura introducció de la cadena de fragments.
 
 <ButtonLink to="/roadmap/danksharding/">
     Cadenes de fragments

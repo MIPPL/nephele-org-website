@@ -11,8 +11,8 @@ type HomeScreenProps = GridProps & SimulatorNavProps
 
 export const HomeScreen = ({ nav, ...props }: HomeScreenProps) => {
   const gridShadow = useColorModeValue(
-    "0 0 7px 0 var(--eth-colors-blackAlpha-800)",
-    "0 0 7px 0 var(--eth-colors-whiteAlpha-800)"
+    "0 0 7px 0 var(--NEPH-colors-blackAlpha-800)",
+    "0 0 7px 0 var(--NEPH-colors-whiteAlpha-800)"
   )
 
   const { step } = nav
@@ -54,7 +54,7 @@ export const HomeScreen = ({ nav, ...props }: HomeScreenProps) => {
             borderColor="body.base"
             boxShadow={gridShadow}
             _hover={{
-              outline: "2px solid var(--eth-colors-primary-hover)",
+              outline: "2px solid var(--NEPH-colors-primary-hover)",
               outlineOffset: "2px",
             }}
           >

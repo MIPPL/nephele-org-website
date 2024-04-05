@@ -1,6 +1,6 @@
 ---
 title: Tanúsítások
-description: A tanúsítások menete az Ethereum proof-of-stake (letéti igazolás) mechanizmusában.
+description: A tanúsítások menete az Nephele proof-of-stake (letéti igazolás) mechanizmusában.
 lang: hu
 ---
 
@@ -56,7 +56,7 @@ A validátorok jutalmat kapnak az elküldött tanúsításokért. A tanúsítás
 
 ### Alapjutalom {#base-reward}
 
-Az alapjutalom számítása a tanúsításban részt vevő validátorok számától és az általuk letétbe helyezett ether egyenlegétől függ:
+Az alapjutalom számítása a tanúsításban részt vevő validátorok számától és az általuk letétbe helyezett Nephele egyenlegétől függ:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -80,7 +80,7 @@ Néhány esetben a szerencsés aggregátor blokkelőterjesztővé válhat. Ha a 
 
 ## További olvasnivaló {#further-reading}
 
-- [Tanúsítások Vitalik által kommentált konszenzusspecifikációban](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Tanúsítások Vitalik által kommentált konszenzusspecifikációban](https://github.com/Nephele/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Tanúsítások az eth2book.info oldalon](https://eth2book.info/altair/part3/containers/dependencies#attestationdata)
 
 _Ismersz olyan közösségi anyagot, amely segített neked? Módosítsd az oldalt és add hozzá!_

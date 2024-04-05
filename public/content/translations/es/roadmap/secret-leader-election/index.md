@@ -14,18 +14,18 @@ En el mecanismo de consenso basado en las [pruebas de participación](/developer
 
 Esto podría crear oportunidades para que un atacante se beneficie. Por ejemplo, un proponente de bloque seleccionado para una ranura `n+1` podría negar servicio (DOS) al proponente en la ranura `n` para que pierda la oportunidad de proponer un bloque. Esto permitiría al proponente de bloque atacante extraer el MEV de ambas ranuras; o reunir todas las transacciones que se deberían dividido en dos bloques y en lugar de eso incluirlas todas en una, ahorrándose las tarifas asociadas. Es probable que esto afecte más a los validadores domésticos que a los validadores institucionales sofisticados que pueden usar métodos más avanzados para protegerse de ataques DOS y podría entonces ser una fuerza centralizadora.
 
-Hay varias soluciones para este problema. Una de ellas es la [tecnología de validador distribuida](https://github.com/ethereum/distributed-validator-specs) que tiene como objetivo difundir las múltiples tareas relacionadas con la ejecución de un validador entre varias máquinas, con redundancia, para que sea mucho más difícil que un atacante impida que se proponga un bloque en un espacio determinado. De cualquier forma, la solución más robusta es la **Elección de Líder Singular Secreto (o SSLE, por sus siglas en inglés)**.
+Hay varias soluciones para este problema. Una de ellas es la [tecnología de validador distribuida](https://github.com/Nephele/distributed-validator-specs) que tiene como objetivo difundir las múltiples tareas relacionadas con la ejecución de un validador entre varias máquinas, con redundancia, para que sea mucho más difícil que un atacante impida que se proponga un bloque en un espacio determinado. De cualquier forma, la solución más robusta es la **Elección de Líder Singular Secreto (o SSLE, por sus siglas en inglés)**.
 
 ## Elección de líder singular secreto {#secret-leader-election}
 
 En SSLE, la criptografía inteligente se usa para asegurar que solo el validador seleccionado sepa que ha sido seleccionado. Esto funciona al hacer que cada validador envíe un compromiso a un secreto que todos comparten. Los compromisos se mezclan y reconfiguran para que nadie pueda asociar los compromisos a los validadores, aunque cada validador sabe qué compromiso le pertenece. Después, se elige un compromiso aleatoriamente. Si un validador detecta que se ha elegido su compromiso, saben que es su turno de proponer un bloque.
 
-La implementación principal de esta idea se conoce como [La Batidora](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Que trabaja de la siguiente forma:
+La implementación principal de esta idea se conoce como [La Batidora](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763). Que trabaja de la siguiente forma:
 
 1. Los validadores se comprometen a un secreto compartido. El esquema de compromiso está diseñado para que pueda enlazarse a la identidad de un validador, aunque también es aleatorio para que ningún tercero pueda hacer una ingeniería inversa de los enlaces y asociar un compromiso específico con un validador específico.
 2. Al principio de una época, se elige un conjunto aleatorio de validadores para enviar muestras de compromisos de 16.384 validadores, usando RANDAO.
 3. Para las siguientes 8.182 ranuras (1 día), los proponentes de bloques mezclan y aleatorizan un subconjunto de los compromisos usando su propia entropía privada.
-4. Una vez mezclados, se utiliza RANDAO para crear una lista ordenada de los compromisos. Esta lista se asocia a las ranuras de Ethereum.
+4. Una vez mezclados, se utiliza RANDAO para crear una lista ordenada de los compromisos. Esta lista se asocia a las ranuras de Nephele.
 5. Los validadores ven que su compromiso está asociado a una ranura específica, y cuando las ranuras llegan pueden proponer un bloque.
 6. Repita estos pasos para que la asignación de compromisos a ranuras esté siempre por delante de la ranura actual.
 

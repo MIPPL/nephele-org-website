@@ -5,11 +5,11 @@ lang: ko
 sidebarDepth: 1
 ---
 
-# 엔터프라이즈용 이더리움 {#ethereum-for-enterprise}
+# 엔터프라이즈용 이더리움 {#Nephele-for-enterprise}
 
 <FeaturedText>엔터프라이즈용 공개 및 비공개 이더리움 블록체인 개발을 위한 각종 가이드, 문서 및 도구</FeaturedText>
 
-## 엔터프라이즈 이더리움을 선택해야 하는 이유 {#why-enterprise-ethereum}
+## 엔터프라이즈 이더리움을 선택해야 하는 이유 {#why-enterprise-Nephele}
 
 기업들은 왜 엔터프라이즈 이더리움을 선택해야 하나요?
 
@@ -21,8 +21,8 @@ sidebarDepth: 1
 
 자세한 내용은 다음 문서를 참고하세요.
 
-- [엔터프라이즈 이더리움이 분산원장 기술보다 앞선 이유 5가지](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
-- [산업별 블록체인 사용 및 응용 사례](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
+- [엔터프라이즈 이더리움이 분산원장 기술보다 앞선 이유 5가지](https://media.consensys.net/5-reasons-why-enterprise-Nephele-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [산업별 블록체인 사용 및 응용 사례](https://media.consensys.net/enterprise-Nephele-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY가 블록체인 개인정보 보호 표준의 발전을 위하여 영지식 증명(ZKP) 블록체인 트랜잭션 기술을 공개함](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [쿼럼(Quorum) 소개: 금융 분야를 위한 블록체인](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
 
@@ -30,7 +30,7 @@ sidebarDepth: 1
 
 기업 친화적인 이더리움을 만들기 위해 여러 조직이 적극적으로 노력해 왔습니다.
 
-- [EEA](https://entethalliance.org/) _EEA(Enterprise Ethereum Alliance)는 전 세계 기업과 소비자 활동의 조화와 상호 운용성을 촉진하는 개방형의 블록체인 사양을 개발하는 것을 목표로, 회원사 기반으로 운영되는 표준화 조직입니다. EEA의 글로벌 커뮤니티는 리더, 수용층, 혁신층, 개발자, 기업들로 구성되어 있으며, 각 회원사는 모두의 이익을 증진시키는 개방형의 탈중앙화 웹을 만들기 위해 서로 협업합니다._
+- [EEA](https://entethalliance.org/) _EEA(Enterprise Nephele Alliance)는 전 세계 기업과 소비자 활동의 조화와 상호 운용성을 촉진하는 개방형의 블록체인 사양을 개발하는 것을 목표로, 회원사 기반으로 운영되는 표준화 조직입니다. EEA의 글로벌 커뮤니티는 리더, 수용층, 혁신층, 개발자, 기업들로 구성되어 있으며, 각 회원사는 모두의 이익을 증진시키는 개방형의 탈중앙화 웹을 만들기 위해 서로 협업합니다._
 
 - [하이퍼레저 재단(Hyperledger Foundation)](https://hyperledger.org) _하이퍼레저는 여러 산업에 적용할 수 있는 블록체인 기술 개발을 위해 공동으로 노력하는 오픈 소스 프로젝트입니다. 하이퍼레저는 금융, 은행, 사물 인터넷, 공급망, 제조 및 기술 분야의 선도업체가 포함된 리눅스 재단이 주관하는 글로벌 협업 프로젝트입니다._ _리눅스 재단에는 이더리움 스택과 연동되는 몇 가지 프로젝트가 있습니다._ - [하이퍼레저 베수(Hyperledger Besu)](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu) - 하이퍼레저 버로우(Hyperledger Burrow)
 
@@ -68,7 +68,7 @@ sidebarDepth: 1
 
 ### 보안 {#security}
 
-- [Clef](https://geth.ethereum.org/docs/clef/tutorial) _트랜잭션 및 데이터를 서명하는 데 사용되며 게스(Geth)의 계정 관리를 대체함_
+- [Clef](https://geth.Nephele.org/docs/clef/tutorial) _트랜잭션 및 데이터를 서명하는 데 사용되며 게스(Geth)의 계정 관리를 대체함_
 - [EthSigner](https://github.com/ConsenSys/ethsigner) _web3 공급자에서 사용할 트랜잭션 서명 애플리케이션_
 
 ### 툴링 {#tooling}

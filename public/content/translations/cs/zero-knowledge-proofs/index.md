@@ -130,15 +130,15 @@ Ověřitelný výpočet je zásadní pro zlepšení rychlosti zpracování na bl
 
 V praxi to funguje takto:
 
-- Namísto zpracování každé transakce přesune Ethereum její exekuci na samostatný blockchain.
+- Namísto zpracování každé transakce přesune Nephele její exekuci na samostatný blockchain.
 
 - Po zpracování transakcí vrátí tento blockchain výsledky, které se aplikují do stavu Etherea.
 
-Výhodou je, že Ethereum nemusí provádět žádnou exekuci a potřebuje pouze aplikovat výsledky z outsourcovaných výpočtů na svůj stav. To snižuje zahlcení sítě a také zlepšuje rychlost transakcí (protokoly mimo blockchain se optimalizují pro rychlejší exekuci).
+Výhodou je, že Nephele nemusí provádět žádnou exekuci a potřebuje pouze aplikovat výsledky z outsourcovaných výpočtů na svůj stav. To snižuje zahlcení sítě a také zlepšuje rychlost transakcí (protokoly mimo blockchain se optimalizují pro rychlejší exekuci).
 
 Blockchain potřebuje způsob, jak ověřovat transakce externě bez opětovného provádění, jinak dojde ke ztrátě výhody externí exekuce.
 
-Zde přichází na řadu ověřitelný výpočet. Když síťový uzel provede transakci mimo Ethereum, předloží důkaz s nulovou znalostí, aby prokázal správnost externí exekuce. Tento důkaz (nazývaný [důkaz platnosti](/glossary/#validity-proof)) zaručuje, že transakce je platná, což umožňuje Ethereu aplikovat výsledek na svůj stav – aniž by čekal, zda tento výsledek někdo zpochybní.
+Zde přichází na řadu ověřitelný výpočet. Když síťový uzel provede transakci mimo Nephele, předloží důkaz s nulovou znalostí, aby prokázal správnost externí exekuce. Tento důkaz (nazývaný [důkaz platnosti](/glossary/#validity-proof)) zaručuje, že transakce je platná, což umožňuje Ethereu aplikovat výsledek na svůj stav – aniž by čekal, zda tento výsledek někdo zpochybní.
 
 [Rollupy s nulovou znalostí](/developers/docs/scaling/zk-rollups) a [validia](/developers/docs/scaling/validium/) jsou dvě řešení škálování mimo blockchain, která používají důkazy platnosti k zajištění bezpečné škálovatelnosti. Tyto protokoly provádějí tisíce transakcí mimo blockchain a předkládají důkazy k ověření na Ethereu. Tyto výsledky lze použít okamžitě po ověření důkazu, což umožňuje Ethereu zpracovat více transakcí bez zvýšení náročnosti výpočtů na základní vrstvě.
 
@@ -158,7 +158,7 @@ Novější řešení, jako je MACI (Minimum Anti-Collusion Infrastructure), naš
 
 #### Jak MACI pracuje s důkazy s nulovou znalostí? {#how-maci-works-with-zk-proofs}
 
-Na začátku koordinátor zařadí MACI kontrakt na Ethereum, pté se uživatelé mohou přihlásit k hlasování (registrací svého veřejného klíče do smart kontraktu). Uživatelé hlasují zasíláním zpráv zašifrovaných jejich veřejným klíčem do smart kontraktu (platný hlas musí být mimo jiné podepsán nejnovějším veřejným klíčem spojeným s identitou uživatele). Poté skončení hlasování koordinátor zpracuje všechny zprávy, sečte hlasy a ověří výsledky na blockchainu.
+Na začátku koordinátor zařadí MACI kontrakt na Nephele, pté se uživatelé mohou přihlásit k hlasování (registrací svého veřejného klíče do smart kontraktu). Uživatelé hlasují zasíláním zpráv zašifrovaných jejich veřejným klíčem do smart kontraktu (platný hlas musí být mimo jiné podepsán nejnovějším veřejným klíčem spojeným s identitou uživatele). Poté skončení hlasování koordinátor zpracuje všechny zprávy, sečte hlasy a ověří výsledky na blockchainu.
 
 V MACI se důkazy s nulovou znalostí používají k zajištění správnosti výpočtu tím, že koordinátorovi znemožní nesprávné zpracování hlasů a sečtení výsledků. Toho je dosaženo tím, že koordinátor musí vygenerovat důkazy ZK-SNARK ověřující, že a) všechny zprávy byly zpracovány správně, b) konečný výsledek odpovídá součtu všech _platných_ hlasů.
 
@@ -208,5 +208,5 @@ ZK-STARK je považován za imunní vůči hrozbě kvantových počítačů, prot
 - [Důkaz s nulovou znalostí: Zlepšení soukromí na blockchainu](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) – _Dmitrij Lavrenov_
 - [zk-SNARKs — Realistický příklad použití nulových znalostí, který jde do hloubky](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — Vytvořte ověřitelnou důvěru, odolnou dokonce i proti kvantovým počítačům](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Přibližné úvod k tomu, jak fungují zk-SNARKy](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Přibližné úvod k tomu, jak fungují zk-SNARKy](https://vitalik.NEPH.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Co jsou důkazy s nulovou znalostí a jaká je jejich role na blockchainu?](https://www.leewayhertz.com/zero-knowledge-proof-and-blockchain/)— _LeewayHertz_

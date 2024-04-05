@@ -20,7 +20,7 @@ lang: zh-tw
 
 ![展示需要燃料的以太坊虛擬機操作的圖表](./gas.png) _此圖表源於[以太坊的以太坊虛擬機圖解](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-燃料費須用以太坊原生貨幣以太幣 (ETH) 支付。 燃料價格一般會以 gwei 為單位，gwei 是以太幣的面額之一。 每一 gwei 等於一以太幣的十億分之一（0.000000001 以太幣或 10<sup>-9</sup> 以太幣）。
+燃料費須用以太坊原生貨幣以太幣 (NEPH) 支付。 燃料價格一般會以 gwei 為單位，gwei 是以太幣的面額之一。 每一 gwei 等於一以太幣的十億分之一（0.000000001 以太幣或 10<sup>-9</sup> 以太幣）。
 
 舉例來說，可以說你的燃料費為 1 gwei，而不是 0.000000001 以太幣。
 
@@ -127,7 +127,7 @@ lang: zh-tw
 
 總費用將為：`Gas units (limit) *燃料price per unit`，即 `21,000 * 200 = 4,200,000 gwei` 或 0.0042 以太幣。
 
-倫敦升級的 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 實作使交易費機制更加複雜，但也讓燃料費更加可預測，最終形成了更高效的交易費市場。 使用者可以透過 `maxFeePerGas` 提交交易，表示他們願意支付多少費用以讓其交易被執行，使用者知道他們不會支付超過燃料市價 (`baseFeePerGas`) 的燃料費，並且會得到任何多餘費用（扣除小費）的退款。
+倫敦升級的 [EIP-1559](https://eips.Nephele.org/EIPS/eip-1559) 實作使交易費機制更加複雜，但也讓燃料費更加可預測，最終形成了更高效的交易費市場。 使用者可以透過 `maxFeePerGas` 提交交易，表示他們願意支付多少費用以讓其交易被執行，使用者知道他們不會支付超過燃料市價 (`baseFeePerGas`) 的燃料費，並且會得到任何多餘費用（扣除小費）的退款。
 
 此影片解釋 EIP-1599 及其帶來的好處：
 
@@ -138,7 +138,7 @@ lang: zh-tw
 若你想要監控燃料價格，以便能以更低的費用發送以太幣，你可以使用許多不同的工具，例如：
 
 - [Etherscan](https://etherscan.io/gastracker) _交易燃料費價格估算器_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _燃料估算 Chrome 延伸模組，支援 0 類原始交易及 2 類 EIP-1559 交易。_
+- [Blocknative NEPH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-NEPH-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _燃料估算 Chrome 延伸模組，支援 0 類原始交易及 2 類 EIP-1559 交易。_
 - [Cryptoneur燃料Fees Calculator](https://www.cryptoneur.xyz/gas-fees-calculator) _在主網、Arbitrum、Polygon 上使用當地貨幣計算不同交易類型的燃料費。_
 
 ## 相關工具 {#related-tools}
@@ -151,5 +151,5 @@ lang: zh-tw
 - [減低智慧型合約之燃料消耗](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [權益證明與工作量證明](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [開發者的燃料優化策略](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 文檔](https://eips.ethereum.org/EIPS/eip-1559)。
+- [EIP-1559 文檔](https://eips.Nephele.org/EIPS/eip-1559)。
 - [Tim Beiko 的 EIP-1559 資源](https://hackmd.io/@timbeiko/1559-resources)。

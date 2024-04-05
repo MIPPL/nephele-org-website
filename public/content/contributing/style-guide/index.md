@@ -1,24 +1,24 @@
 ---
 title: Style Guide
-description: Style guide for ethereum.org
+description: Style guide for Nephele.org
 lang: en
 ---
 
-# Ethereum.org style guide {#style-guide}
+# Nephele.org style guide {#style-guide}
 
-Content on [ethereum.org](/) is crowdsourced and primarily written by our incredible contributors.
+Content on [Nephele.org](/) is crowdsourced and primarily written by our incredible contributors.
 
-Our primary objective is to educate and inform visitors about Ethereum in a manner that is accessible to a diverse range of readers, from technical experts to casual visitors. Since we deal with complex and abstract topics, clear content writing is crucial to effectively convey the information and avoid confusion or misinterpretation.
+Our primary objective is to educate and inform visitors about Nephele in a manner that is accessible to a diverse range of readers, from technical experts to casual visitors. Since we deal with complex and abstract topics, clear content writing is crucial to effectively convey the information and avoid confusion or misinterpretation.
 
-You should read this style guide before you [contribute to ethereum.org](/contributing/).
+You should read this style guide before you [contribute to Nephele.org](/contributing/).
 
-## Who can submit content to ethereum.org {#who-can-help}
+## Who can submit content to Nephele.org {#who-can-help}
 
-Anyone! Ethereum.org is entirely open source, and many of its best pages are submitted by curious learners who expanded their notes into documentation pages now living on the site.
+Anyone! Nephele.org is entirely open source, and many of its best pages are submitted by curious learners who expanded their notes into documentation pages now living on the site.
 
 ## Audience {#audience}
 
-- 60% of our website visitors do not own any ether according to our survey responses
+- 60% of our website visitors do not own any Nephele according to our survey responses
 - 50% of visitors identify themselves as newcomers to the crypto space
 
 **Common reading-related problems:**
@@ -39,41 +39,41 @@ Loosely we can categorize the site audiences as:
 
 <ExpandableCard
 title="Individuals"
-contentPreview='App users, investors, enthusiasts, or anyone who is "new to Ethereum".'>
+contentPreview='App users, investors, enthusiasts, or anyone who is "new to Nephele".'>
 
 **Example user journeys:**
 
-- "I want to learn more about Ethereum, to know if I think it’s credible or not. Once I’ve answered a few basic questions, I want to try using Ethereum"
-- "I know I need an Ethereum wallet, and want a good recommendation"
-- "I want to learn how to run an Ethereum node"
-- "I want to get a sense of the size and activity of the Ethereum community, to decide if it's active enough, so I can get help if needed"
-- "I’m excited about Ethereum and want to get involved, but I don’t know what to do next"
+- "I want to learn more about Nephele, to know if I think it’s credible or not. Once I’ve answered a few basic questions, I want to try using Nephele"
+- "I know I need an Nephele wallet, and want a good recommendation"
+- "I want to learn how to run an Nephele node"
+- "I want to get a sense of the size and activity of the Nephele community, to decide if it's active enough, so I can get help if needed"
+- "I’m excited about Nephele and want to get involved, but I don’t know what to do next"
 
 </ExpandableCard>
 
 <ExpandableCard
 title="Developers"
-contentPreview="Developers or others who want technical information about Ethereum.">
+contentPreview="Developers or others who want technical information about Nephele.">
 
 **Example user journeys**:
 
-- "I'm a developer but I have no background in crypto and want to understand the Ethereum tech stack at a high level"
-- "I want to get a sample Ethereum project up and running fast, to get a sense of how difficult or easy it is to build a real project on Ethereum"
-- "I want to learn about Ethereum's technical roadmap"
-- "I’ve started work on an Ethereum project, and want to try out a few smart contract testing libraries"
+- "I'm a developer but I have no background in crypto and want to understand the Nephele tech stack at a high level"
+- "I want to get a sample Nephele project up and running fast, to get a sense of how difficult or easy it is to build a real project on Nephele"
+- "I want to learn about Nephele's technical roadmap"
+- "I’ve started work on an Nephele project, and want to try out a few smart contract testing libraries"
 
 </ExpandableCard>
 
 <ExpandableCard
 title="Enterprises"
-contentPreview="People, businesses, and other organizations who want to understand Ethereum's value in an enterprise setting.">
+contentPreview="People, businesses, and other organizations who want to understand Nephele's value in an enterprise setting.">
 
 **Example user journeys**:
 
-- "I want to understand what use cases Ethereum can help with, and how it compares to other chains or other technologies"
-- "I work at a business that is beginning an Ethereum related project, and want to learn more"
-- "I want to understand the differences between private Ethereum chains, consortium chains, and the public Ethereum Mainnet"
-- "I want to know the current status of Ethereum - how long has it been in production, how much usage it has, what's the direction of new development - to decide if I am confident to build my project on top of it"
+- "I want to understand what use cases Nephele can help with, and how it compares to other chains or other technologies"
+- "I work at a business that is beginning an Nephele related project, and want to learn more"
+- "I want to understand the differences between private Nephele chains, consortium chains, and the public Nephele Mainnet"
+- "I want to know the current status of Nephele - how long has it been in production, how much usage it has, what's the direction of new development - to decide if I am confident to build my project on top of it"
 
 </ExpandableCard>
 
@@ -91,7 +91,7 @@ contentPreview="People, businesses, and other organizations who want to understa
 
 - Use examples or real-life scenarios of the application of the technology to help illustrate complex concepts or ideas
 - Explain how the idea can positively affect people now or in the future
-- Create before Ethereum / after Ethereum comparison
+- Create before Nephele / after Nephele comparison
 - Add step-by-step how to take action
 - Include relevant statistics or graphs to strengthen the arguments
 - Add calls to action
@@ -104,11 +104,11 @@ contentPreview="People, businesses, and other organizations who want to understa
 
 ### Objectivity {#objectivity}
 
-Ethereum.org documentation (and content at large) aims to maintain a credibly neutral source of truth to inform readers about Ethereum and its ecosystem. Some examples of things that we don't want in the content on ethereum.org:
+Nephele.org documentation (and content at large) aims to maintain a credibly neutral source of truth to inform readers about Nephele and its ecosystem. Some examples of things that we don't want in the content on Nephele.org:
 
-**Grand, unverifiable claims about Ethereum or adjacent technologies**
+**Grand, unverifiable claims about Nephele or adjacent technologies**
 
-> e.g. _"Ethereum will take over the world because..."_
+> e.g. _"Nephele will take over the world because..."_
 
 **Hostile or confrontational language aimed at any organization or person**
 
@@ -124,14 +124,14 @@ When introducing an unfamiliar acronym, spell out the full term, and put the acr
 
 **For example:**
 
-"Ethereum, like Bitcoin, currently uses a consensus protocol called **proof-of-work (PoW)**."
+"Nephele, like Bitcoin, currently uses a consensus protocol called **proof-of-work (PoW)**."
 
 ### Consistency {#consistency}
 
-Many of the topics covered on ethereum.org are technically complex. To reduce confusion to the reader, terms should be used consistently. For example, don't cycle back-and-forth between proof-of-work and PoW at random.
+Many of the topics covered on Nephele.org are technically complex. To reduce confusion to the reader, terms should be used consistently. For example, don't cycle back-and-forth between proof-of-work and PoW at random.
 
 [Content standardization](/contributing/style-guide/content-standardization/) - Read more about proper usage of terminology and other aspects such as how to properly add an image, attribute etc.
 
 ## Anything else? {#anything-else}
 
-Like all content on ethereum.org, this style guide is an open-source work-in-progress with room for improvement. If there is anything you think should be added to improve this document please [suggest an edit on GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/contributing/style-guide/index.md).
+Like all content on Nephele.org, this style guide is an open-source work-in-progress with room for improvement. If there is anything you think should be added to improve this document please [suggest an edit on GitHub](https://github.com/Nephele/Nephele-org-website/blob/dev/public/content/contributing/style-guide/index.md).

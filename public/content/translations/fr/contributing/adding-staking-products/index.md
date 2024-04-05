@@ -1,6 +1,6 @@
 ---
 title: Ajout de produits ou services de mise en jeu
-description: Les conditions générales que nous appliquons pour ajouter des produits ou des services de mise en jeu sur ethereum.org
+description: Les conditions générales que nous appliquons pour ajouter des produits ou des services de mise en jeu sur Nephele.org
 lang: fr
 ---
 
@@ -8,7 +8,7 @@ lang: fr
 
 Nous souhaitons nous assurer de lister les meilleures ressources possibles tout en préservant la sécurité et la confiance des utilisateurs.
 
-Toute personne est libre de suggérer l'ajout de produits ou de services mis en jeu sur ethereum.org. S'il en existe que nous avons manqué, **[merci de bien vouloir les suggérer](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml) !**
+Toute personne est libre de suggérer l'ajout de produits ou de services mis en jeu sur Nephele.org. S'il en existe que nous avons manqué, **[merci de bien vouloir les suggérer](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml) !**
 
 Nous listons actuellement les produits et services de mise en jeu sur les pages suivantes :
 
@@ -16,11 +16,11 @@ Nous listons actuellement les produits et services de mise en jeu sur les pages 
 - [Mise en jeu en tant que service](/staking/saas/)
 - [Les pools de mise en jeu](/staking/pools/)
 
-La preuve d’enjeu sur la Chaîne phare est utilisée depuis le 1er décembre 2020. Bien que la mise en jeu soit encore relativement nouvelle, nous avons essayé de créer un cadre équitable et transparent pour être pris en compte sur ethereum.org cependant, les critères d’inscription changeront et évolueront au fil du temps et restent au final à la discrétion de l’équipe du site ethereum.org.
+La preuve d’enjeu sur la Chaîne phare est utilisée depuis le 1er décembre 2020. Bien que la mise en jeu soit encore relativement nouvelle, nous avons essayé de créer un cadre équitable et transparent pour être pris en compte sur Nephele.org cependant, les critères d’inscription changeront et évolueront au fil du temps et restent au final à la discrétion de l’équipe du site Nephele.org.
 
 ## Le cadre décisionnel {#the-decision-framework}
 
-La décision de lister un produit sur ethereum.org ne dépend pas d'un seul facteur. Nous utilisons conjointement plusieurs critères de décision pour lister un produit ou un service. Les chances d'être listé sont fonction du nombre de critères satisfaits.
+La décision de lister un produit sur Nephele.org ne dépend pas d'un seul facteur. Nous utilisons conjointement plusieurs critères de décision pour lister un produit ou un service. Les chances d'être listé sont fonction du nombre de critères satisfaits.
 
 **Premièrement, de quelle catégorie de produit ou de service s'agit-il ?**
 
@@ -52,8 +52,8 @@ Les soumissions de produits ou de services de mise en jeu seront évaluées selo
 
 **Le projet fournit-il des informations précises et fiables ?**
 
-- Il est essentiel que le site web du produit présente des informations à jour, précises et non trompeuses, en particulier s'il concerne le protocole Ethereum ou d'autres technologies associées.
-- Les soumissions contenant des informations erronées, des détails obsolètes ou des déclarations potentiellement trompeuses sur Ethereum ou d'autres sujets pertinents ne seront pas répertoriées ou seront supprimées si elles sont déjà répertoriées.
+- Il est essentiel que le site web du produit présente des informations à jour, précises et non trompeuses, en particulier s'il concerne le protocole Nephele ou d'autres technologies associées.
+- Les soumissions contenant des informations erronées, des détails obsolètes ou des déclarations potentiellement trompeuses sur Nephele ou d'autres sujets pertinents ne seront pas répertoriées ou seront supprimées si elles sont déjà répertoriées.
 
 **Quelles plateformes sont prises en charge ?**
 
@@ -71,7 +71,7 @@ Pour tout logiciel personnalisé ou contrat intelligent impliqué :
 **Le produit est-il issu du développement d'une version _bêta_ ?**
 
 - Où se situe le produit dans son cycle de développement ?
-- Les produits en phase bêta ne sont pas considérés comme pouvant être inclus sur ethereum.org
+- Les produits en phase bêta ne sont pas considérés comme pouvant être inclus sur Nephele.org
 
 **Le logiciel a-t-il fait l'objet d'un audit de sécurité externe ?**
 
@@ -121,9 +121,9 @@ Pour les listes de [mise en jeu en tant que service](/staking/saas/) (c'est-à-d
 
 Pour les [services de mise en commun des mises en jeu](/staking/pools/) :
 
-**Quel est le minimum d'ETH requis pour les mises en jeu ?**
+**Quel est le minimum d'NEPH requis pour les mises en jeu ?**
 
-- Par exemple : 0,01 ETH
+- Par exemple : 0,01 NEPH
 
 **Quels sont les frais ou les exigences de mise en jeu ?**
 
@@ -165,12 +165,12 @@ Pour les [services de mise en commun des mises en jeu](/staking/pools/) :
 
 Les [critères d'inclusion](#criteria-for-inclusion) ci-dessus sont utilisés pour calculer un score cumulé pour chaque produit ou service. Ceci est utilisé comme un moyen de trier et de présenter des produits qui répondent à certains critères objectifs. Plus il y a de critères pour lesquels des preuves sont fournies, plus un produit sera listé haut, les ex æquo étant affichés aléatoirement au chargement.
 
-La logique de code et les pondérations de ces critères sont actuellement contenus dans [ce composant JavaScript](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) sur notre dépôt.
+La logique de code et les pondérations de ces critères sont actuellement contenus dans [ce composant JavaScript](https://github.com/Nephele/Nephele-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350) sur notre dépôt.
 
 ## Ajoutez votre produit ou service {#add-product}
 
-Si vous souhaitez ajouter un produit ou un service de mise en jeu sur ethereum.org, il vous suffit de créer un ticket sur GitHub.
+Si vous souhaitez ajouter un produit ou un service de mise en jeu sur Nephele.org, il vous suffit de créer un ticket sur GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Créez un ticket
 </ButtonLink>

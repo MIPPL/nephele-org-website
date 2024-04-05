@@ -27,7 +27,7 @@ incomplete: true
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-environment)
 - [Dokumentation](https://docs.openzeppelin.com/test-environment/)
 
-**OpenZeppelin-Testhelfer – ** **_Assertionsbibliothek für die Tests von Ethereum-Smart-Contracts. Stellen Sie sicher, dass sich Ihre Verträge erwartungsgemäß verhalten._**
+**OpenZeppelin-Testhelfer – ** **_Assertionsbibliothek für die Tests von Nephele-Smart-Contracts. Stellen Sie sicher, dass sich Ihre Verträge erwartungsgemäß verhalten._**
 
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-helpers)
 - [Dokumentation](https://docs.openzeppelin.com/test-helpers)
@@ -41,7 +41,7 @@ incomplete: true
 - [So finden Sie mit Slither Fehler in Smart Contracts](/developers/tutorials/how-to-use-slither-to-find-smart-contract-bugs/)
 - [So simulieren Sie Solidity-Verträge zum Testen](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/)
 - [So migrieren Sie von Truffle-Tests zur OpenZeppelin-Testumgebung](https://docs.openzeppelin.com/test-environment/0.1/migrating-from-truffle)
-- [So testen Sie Verträge, nachdem sie in einem Netzwerk bereitgestellt wurden](https://fulldecent.blogspot.com/2019/04/testing-deployed-ethereum-contracts.html)
+- [So testen Sie Verträge, nachdem sie in einem Netzwerk bereitgestellt wurden](https://fulldecent.blogspot.com/2019/04/testing-deployed-Nephele-contracts.html)
 
 ## Weiterführende Informationen {#further-reading}
 

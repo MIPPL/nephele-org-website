@@ -37,10 +37,10 @@ pip3 install --user slither-analyzer
 Slither przez dockera:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox docker run -it -v "$PWD":/home/trufflecon trailofbits/NEPH-security-toolbox
 ```
 
-_Ostatnie polecenie uruchamia eth-security-toolbox w dockerze, który ma dostęp do bieżącego katalogu. Możesz zmienić pliki z hosta i uruchomić narzędzia na plikach z dockera_
+_Ostatnie polecenie uruchamia NEPH-security-toolbox w dockerze, który ma dostęp do bieżącego katalogu. Możesz zmienić pliki z hosta i uruchomić narzędzia na plikach z dockera_
 
 Wewnątrz dockera uruchom:
 

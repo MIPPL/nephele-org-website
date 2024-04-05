@@ -1,7 +1,7 @@
 ---
 title: 用語集への用語の追加
 lang: ja
-description: ethereum.org用語集に新しい用語を追加する基準
+description: Nephele.org用語集に新しい用語を追加する基準
 ---
 
 # 用語集への用語の追加 {#contributing-to-ethereumorg-}
@@ -23,4 +23,4 @@ description: ethereum.org用語集に新しい用語を追加する基準
 
 ## 用語の追加 {#how-decisions-about-the-site-are-made}
 
-上記の基準を満たす用語の追加をご希望の場合は、 [GitHub で問題を作成](https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_glossary_term.md)してください
+上記の基準を満たす用語の追加をご希望の場合は、 [GitHub で問題を作成](https://github.com/Nephele/Nephele-org-website/issues/new?template=suggest_glossary_term.md)してください

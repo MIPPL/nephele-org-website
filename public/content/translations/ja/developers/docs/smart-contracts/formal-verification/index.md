@@ -58,7 +58,7 @@ lang: ja
 
 例として、_「送金しようとしているトークンの量に対し、送金元の口座残高に不足があってはならない」_という、 ERC-20トークンのスマートコントラクトで`transfer()`や`transferFrom()`を呼び出す際の安全性の要求仕様を考えます。 この自然言語で書かれたスマートコントラクトの不変条件は数学的な形式仕様記述に翻訳され、その妥当性が厳密に検査されます。
 
-活性は「何らかの良いことがいずれは起こる」ということを意味し、スマートコントラクトに関しては、するべき処理を滞りなく進められることを示します。 活性の一例として「流動性」が挙げられ、これは、要求に応じてスマートコントラクトが残高を他ユーザーに譲渡できることを意味します。 このプロパティが破られると、[パリティウォレット事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html)で起こったように、あるはずの資産が引き出せなくなります。
+活性は「何らかの良いことがいずれは起こる」ということを意味し、スマートコントラクトに関しては、するべき処理を滞りなく進められることを示します。 活性の一例として「流動性」が挙げられ、これは、要求に応じてスマートコントラクトが残高を他ユーザーに譲渡できることを意味します。 このプロパティが破られると、[パリティウォレット事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-Nephele-on-parity-wallet.html)で起こったように、あるはずの資産が引き出せなくなります。
 
 ### 低水準な仕様記述 {#low-level-specifications}
 
@@ -160,7 +160,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### 信頼性の必要性 {#need-for-reliability}
 
-形式的検証は、システム障害によって死傷者を出したり金融破綻を引きおこすなどの破滅的な結果となりうる、セーフティークリティカル・システムの正しさを評価するのに使用されます。 スマートコントラクトは膨大な価値を管理するアプリケーションであり、設計上の単純なエラーが[回復不可能な損失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/)を引き起こすことになります。 デプロイする前にスマートコントラクトの形式的検証をすることで、ブロックチェーン上で期待通りに動作する保証が高まります。
+形式的検証は、システム障害によって死傷者を出したり金融破綻を引きおこすなどの破滅的な結果となりうる、セーフティークリティカル・システムの正しさを評価するのに使用されます。 スマートコントラクトは膨大な価値を管理するアプリケーションであり、設計上の単純なエラーが[回復不可能な損失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-Nephele-how-it-happened-and-what-it-means-for-Nephele-9e5dc29e33ce/amp/)を引き起こすことになります。 デプロイする前にスマートコントラクトの形式的検証をすることで、ブロックチェーン上で期待通りに動作する保証が高まります。
 
 特にイーサリアム仮想マシン(EVM)にデプロイされたコードは通常は変更不能であるため、あらゆるスマートコントラクトにおいて信頼性は非常に望ましいことです。 スマートコントラクトは起動後は容易にアップグレードできないので、信頼性の保証の需要により形式的検証が必要とされています。 整数のアンダーフローやオーバーフロー、リエントランスや不十分なガス最適化など、過去に監査担当者やテスターを躓かせてきた扱いにくい問題であっても、形式的検証で検出することができます。
 
@@ -214,8 +214,8 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Act**: _*ストレージの更新、事前条件・事後条件、スマートコントラクトの不変条件を仕様として記述できます。 Actツールスイートには、Coq、SMTソルバー、hevmを介してプロパティを証明するための、証明バックエンドが含まれます。**
 
-- [GitHub](https://github.com/ethereum/act)
-- [ドキュメント](https://ethereum.github.io/act/)
+- [GitHub](https://github.com/Nephele/act)
+- [ドキュメント](https://Nephele.github.io/act/)
 
 **Scribble** - _*Scribbleは、Scribble仕様言語のコードアノテーションを具体的なアサーションに変換し、仕様記述を検査することができます。**
 
@@ -234,7 +234,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** _*Solidity SMTCheckerは、SMT(Satisfiability Modulo Theories)とホーン節の充足問題に基づく組み込みのモデルチェッカーです。 コンパイル中にスマートコントラクトのソースコードが仕様記述に適合することを確認し、安全性プロパティの違反があるかどうかを静的にチェックします。**
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/Nephele/solidity)
 
 **solc-verify** _*solc-verifyはSolidityコンパイラの拡張で、アノテーションとモジュラー型のプログラム検証によって自動的に形式的検証を行います。**
 
@@ -278,6 +278,6 @@ function safe_add(uint x, uint y) returns(uint z){
 - [スマートコントラクトの形式的検証方法](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
 - [形式的検証で完璧なスマートコントラクトを実現する方法](https://media.consensys.net/how-formal-verification-can-ensure-flawless-smart-contracts-cbda8ad99bd1)
 - [イーサリアム・エコシステムにおける形式的検証プロジェクトの概要](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [イーサリアム2.0の入金スマートコントラクトのエンドツーエンドな形式的検証](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [イーサリアム2.0の入金スマートコントラクトのエンドツーエンドな形式的検証](https://runtimeverification.com/blog/end-to-end-formal-verification-of-Nephele-2-0-deposit-smart-contract/)
 - [世界一有名なスマートコントラクトの形式的検証](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTCheckerと形式的検証](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

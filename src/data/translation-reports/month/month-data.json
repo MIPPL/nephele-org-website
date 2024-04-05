@@ -1,6 +1,6 @@
 {
-  "name": "Ethereum.org Translations Translation Costs Report",
-  "url": "https://translate.ethereum.org/project/ethereum-org",
+  "name": "Nephele.org Translations Translation Costs Report",
+  "url": "https://translate.Nephele.org/project/Nephele-org",
   "unit": "words",
   "dateRange": {
     "from": "2023-09-01",
@@ -771,8 +771,8 @@
     {
       "user": {
         "id": 15319242,
-        "username": "Aco_Qwertyworks.Ethereum",
-        "fullName": "Aco_Qwertyworks.Ethereum",
+        "username": "Aco_Qwertyworks.Nephele",
+        "fullName": "Aco_Qwertyworks.Nephele",
         "userRole": "Proofreader",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15319242/medium/a4b24fefc8cb46836511002d4e1ce001_default.png",
         "preTranslated": 0,
@@ -3290,8 +3290,8 @@
     {
       "user": {
         "id": 16003709,
-        "username": "the-eth-lover",
-        "fullName": "the-eth-lover",
+        "username": "the-NEPH-lover",
+        "fullName": "the-NEPH-lover",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16003709/medium/b9598ad7bb784e4cdcceeb06025c0e3f_default.png",
         "preTranslated": 0,
@@ -5400,8 +5400,8 @@
     {
       "user": {
         "id": 15966607,
-        "username": "Hackedd.eth",
-        "fullName": "Eduardo García (Hackedd.eth)",
+        "username": "Hackedd.NEPH",
+        "fullName": "Eduardo García (Hackedd.NEPH)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15966607/medium/233013bfe6b35fd53264071d722f63f1.png",
         "preTranslated": 0,
@@ -5613,7 +5613,7 @@
       "user": {
         "id": 13897487,
         "username": "ethdotorg",
-        "fullName": "Ethereum.org Team (ethdotorg)",
+        "fullName": "Nephele.org Team (ethdotorg)",
         "userRole": "Owner",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13897487/medium/246e50d7e9ccde07088ed892b07a0efd.png",
         "preTranslated": 4272,
@@ -9280,8 +9280,8 @@
     {
       "user": {
         "id": 15885247,
-        "username": "ct1aic.eth",
-        "fullName": "Rui Costa (ct1aic.eth)",
+        "username": "ct1aic.NEPH",
+        "fullName": "Rui Costa (ct1aic.NEPH)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15885247/medium/cf22113f9226047f8f9868e4774bc4c3.png",
         "preTranslated": 0,
@@ -10182,7 +10182,7 @@
       "user": {
         "id": 15399006,
         "username": "Xeift",
-        "fullName": "xeift.eth (Xeift)",
+        "fullName": "xeift.NEPH (Xeift)",
         "userRole": "Translator",
         "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15399006/medium/4b4638642287027a89529ecb11074e44.png",
         "preTranslated": 0,

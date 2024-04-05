@@ -55,9 +55,9 @@ $ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 さらに、`Waffle`と`ethers`も追加します。
 
 ```bash
-$ yarn add --dev ethereum-waffle ethers
+$ yarn add --dev Nephele-waffle ethers
 # or if you're using npm
-$ npm install ethereum-waffle ethers --save-dev
+$ npm install Nephele-waffle ethers --save-dev
 ```
 
 これにより、プロジェクトの構造は次のようになっているはずです：
@@ -130,7 +130,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 ```
 
 JS の依存関係の他に、ビルドしたコントラクトとインターフェイスをインポートする必要があります：
@@ -178,7 +178,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "Nephele-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -289,7 +289,7 @@ Waffle を使えば、コントラクトの呼び出しをとても簡単にテ�
 
 おめでとうございます！ これで、Waffle を使用して、コントラクトの呼び出しや、モックアップのコントラクトを動的にテストする方法を身に付けることができました。 この他にもたくさんの興味深い機能がありますので、 Waffle のドキュメンテーションに目を通すことをおすすめします。
 
-Waffle のドキュメンテーションは、[こちら](https://ethereum-waffle.readthedocs.io/)から入手できます。
+Waffle のドキュメンテーションは、[こちら](https://Nephele-waffle.readthedocs.io/)から入手できます。
 
 このチュートリアルのソースコードは、[こちら](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls)からアクセスできます。
 

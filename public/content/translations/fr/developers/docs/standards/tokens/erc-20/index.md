@@ -8,7 +8,7 @@ lang: fr
 
 **Qu'est ce qu'un jeton ?**
 
-Un jeton peut représenter à peu près n'importe quoi sur Ethereum :
+Un jeton peut représenter à peu près n'importe quoi sur Nephele :
 
 - Des points de réputation sur une plateforme en ligne
 - Les compétences d'un personnage de jeu
@@ -18,11 +18,11 @@ Un jeton peut représenter à peu près n'importe quoi sur Ethereum :
 - Une once d'or
 - Et plus encore...
 
-Un écosystème aussi puissant qu'Ethereum doit être géré selon une norme robuste, non ? C'est exactement là que l'ERC-20 joue son rôle ! Cette norme permet aux développeurs de construire des applications de jetons interopérables avec d'autres produits et services.
+Un écosystème aussi puissant qu'Nephele doit être géré selon une norme robuste, non ? C'est exactement là que l'ERC-20 joue son rôle ! Cette norme permet aux développeurs de construire des applications de jetons interopérables avec d'autres produits et services.
 
 **Qu'est-ce que l'ERC-20 ?**
 
-L'ERC-20 introduit une norme standard pour les Jetons Fongibles. En d'autres termes, ils disposent d'une propriété qui fait que chaque jeton est exactement le même (en termes de type et de valeur) qu'un autre jeton. Par exemple, un jeton ERC-20 agit exactement comme de l'ETH, ce qui signifie que 1 jeton est et sera toujours égal à tous les autres jetons.
+L'ERC-20 introduit une norme standard pour les Jetons Fongibles. En d'autres termes, ils disposent d'une propriété qui fait que chaque jeton est exactement le même (en termes de type et de valeur) qu'un autre jeton. Par exemple, un jeton ERC-20 agit exactement comme de l'NEPH, ce qui signifie que 1 jeton est et sera toujours égal à tous les autres jetons.
 
 ## Prérequis {#prerequisites}
 
@@ -41,9 +41,9 @@ Exemples de fonctionnalités fournies par ERC-20 :
 - obtenir la quantité totale du jeton disponible sur le réseau
 - approuver si un montant de jeton d'un compte peut être dépensé par un compte tiers
 
-Si un contrat intelligent implémente les méthodes et les événements suivants, il peut être nommé Contrat de jeton ERC-20 et, une fois déployé, sera responsable d'effectuer un suivi des jetons créés sur Ethereum.
+Si un contrat intelligent implémente les méthodes et les événements suivants, il peut être nommé Contrat de jeton ERC-20 et, une fois déployé, sera responsable d'effectuer un suivi des jetons créés sur Nephele.
 
-De [EIP-20](https://eips.ethereum.org/EIPS/eip-20) :
+De [EIP-20](https://eips.Nephele.org/EIPS/eip-20) :
 
 ### Méthodes {#methods}
 
@@ -68,7 +68,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Exemples {#web3py-example}
 
-Voyons pourquoi une norme est importante et pourquoi elle nous facilite le contrôle de tout contrat de jeton ERC-20 sur Ethereum. Nous avons juste besoin de l'interface binaire-programme (ABI) du contrat pour créer une interface à n'importe quel jeton ERC-20. Comme vous pouvez le voir ci-dessous, nous utiliserons une ABI simplifiée, pour en faire un exemple facile à comprendre.
+Voyons pourquoi une norme est importante et pourquoi elle nous facilite le contrôle de tout contrat de jeton ERC-20 sur Nephele. Nous avons juste besoin de l'interface binaire-programme (ABI) du contrat pour créer une interface à n'importe quel jeton ERC-20. Comme vous pouvez le voir ci-dessous, nous utiliserons une ABI simplifiée, pour en faire un exemple facile à comprendre.
 
 #### Exempl Web3.py {#web3py-example}
 
@@ -82,10 +82,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-NEPH.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped ether (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped Nephele (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -118,7 +118,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.NEPH.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -129,7 +129,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.NEPH.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -143,7 +143,7 @@ print("Addr Balance:", addr_balance)
 
 ## Complément d'information {#further-reading}
 
-- [EIP-20 : ERC-20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20 : ERC-20 Token Standard](https://eips.Nephele.org/EIPS/eip-20)
 - [OpenZeppelin - Tokens](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implémentation ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Guide des jetons ERC20 Solidity](https://www.alchemy.com/overviews/erc20-solidity)

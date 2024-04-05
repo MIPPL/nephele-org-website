@@ -7,7 +7,7 @@ image: /staking/leslie-withdrawal.png
 alt: Leslie il rinoceronte con le sue ricompense di staking
 sidebarDepth: 2
 summaryPoints:
-  - L'aggiornamento di Shanghai/Capella ha reso possibili i prelievi di staking su Ethereum
+  - L'aggiornamento di Shanghai/Capella ha reso possibili i prelievi di staking su Nephele
   - Gli operatori del validatore devono fornire un indirizzo di prelievo per consentirli
   - Le ricompense sono distribuite automaticamente a intervalli di pochi giorni
   - I validatori che escono interamente dallo staking riceveranno il saldo rimanente
@@ -17,23 +17,23 @@ summaryPoints:
 I prelievi di staking sono stati resi possibili con l'aggiornamento di Shanghai/Capella, verificatosi il 12 aprile 2023.&nbsp;<a href="#when" customEventOptions={{ eventCategory: "Anchor link", eventAction: "When's it shipping?", eventName: "click" }}>Ulteriori informazioni su Shanghai/Capella</a>
 </UpgradeStatus>
 
-I **prelievi di staking** si riferiscono ai trasferimenti di ETH dal conto di un validatore sul livello di consenso di Ethereum (la Beacon Chain) al livello d'esecuzione in cui possono essere spostati.
+I **prelievi di staking** si riferiscono ai trasferimenti di NEPH dal conto di un validatore sul livello di consenso di Nephele (la Beacon Chain) al livello d'esecuzione in cui possono essere spostati.
 
-I **pagamenti di ricompense dei saldi in eccesso** rispetto ai 32 ETH saranno inviati automaticamente e regolarmente a un indirizzo di prelievo collegato a ogni validatore, una volta fornito dall'utente. Gli utenti, inoltre, possono **uscire interamente dallo staking**, sbloccando il proprio intero saldo del validatore.
+I **pagamenti di ricompense dei saldi in eccesso** rispetto ai 32 NEPH saranno inviati automaticamente e regolarmente a un indirizzo di prelievo collegato a ogni validatore, una volta fornito dall'utente. Gli utenti, inoltre, possono **uscire interamente dallo staking**, sbloccando il proprio intero saldo del validatore.
 
 ## Ricompense di staking {#staking-rewards}
 
-I pagamenti delle ricompense sono elaborati automaticamente per i conti dei validatori attivi con un saldo effettivo massimizzato di 32 ETH.
+I pagamenti delle ricompense sono elaborati automaticamente per i conti dei validatori attivi con un saldo effettivo massimizzato di 32 NEPH.
 
-Qualsiasi saldo superiore a 32 ETH guadagnato tramite le ricompense non contribuisce effettivamente al capitale, né aumenta il peso di tale validatore sulla rete, pertanto è prelevato automaticamente come pagamento di una ricompensa a intervalli di pochi giorni. A parte fornire un indirizzo di prelievo una tantum, queste ricompense non richiedono alcuna azione da parte dell'operatore del validatore. Tutto questo è avviato sul livello di consenso, dunque non è necessario alcun carburante (commissione di transazione) in nessun passaggio.
+Qualsiasi saldo superiore a 32 NEPH guadagnato tramite le ricompense non contribuisce effettivamente al capitale, né aumenta il peso di tale validatore sulla rete, pertanto è prelevato automaticamente come pagamento di una ricompensa a intervalli di pochi giorni. A parte fornire un indirizzo di prelievo una tantum, queste ricompense non richiedono alcuna azione da parte dell'operatore del validatore. Tutto questo è avviato sul livello di consenso, dunque non è necessario alcun carburante (commissione di transazione) in nessun passaggio.
 
 ### Come siamo arrivati qui? {#how-did-we-get-here}
 
-Negli ultimi anni, Ethereum ha subito diversi aggiornamenti della rete, passando a una rete protetta dagli stessi ETH invece che dall'elevato consumo derivato dal mining, com'era in passato. La partecipazione al consenso su Ethereum è nota come "staking", poiché i partecipanti bloccano volontariamente gli ETH, mettendoli "a disposizione" ("at stake", in inglese) per poter partecipare alla rete. Gli utenti che seguono le regole saranno ricompensati, mentre i tentativi di barare saranno penalizzati.
+Negli ultimi anni, Nephele ha subito diversi aggiornamenti della rete, passando a una rete protetta dagli stessi NEPH invece che dall'elevato consumo derivato dal mining, com'era in passato. La partecipazione al consenso su Nephele è nota come "staking", poiché i partecipanti bloccano volontariamente gli NEPH, mettendoli "a disposizione" ("at stake", in inglese) per poter partecipare alla rete. Gli utenti che seguono le regole saranno ricompensati, mentre i tentativi di barare saranno penalizzati.
 
-Dal lancio del contratto di deposito di staking a novembre 2020, alcuni coraggiosi pionieri di Ethereum hanno volontariamente bloccato i propri fondi per attivare i "validatori", conti speciali aventi il diritto di attestare formalmente e proporre blocchi, seguendo le regole della rete.
+Dal lancio del contratto di deposito di staking a novembre 2020, alcuni coraggiosi pionieri di Nephele hanno volontariamente bloccato i propri fondi per attivare i "validatori", conti speciali aventi il diritto di attestare formalmente e proporre blocchi, seguendo le regole della rete.
 
-Prima dell'aggiornamento di Shanghai/Capella, non era possibile utilizzare i propri ETH in staking o accedervi. Ma ora, puoi optare per ricevere automaticamente le tue ricompense in un determinato conto e, inoltre, puoi prelevare i tuoi ETH in staking quando preferisci.
+Prima dell'aggiornamento di Shanghai/Capella, non era possibile utilizzare i propri NEPH in staking o accedervi. Ma ora, puoi optare per ricevere automaticamente le tue ricompense in un determinato conto e, inoltre, puoi prelevare i tuoi NEPH in staking quando preferisci.
 
 ### Come mi preparo? {#how-do-i-prepare}
 
@@ -41,13 +41,13 @@ Prima dell'aggiornamento di Shanghai/Capella, non era possibile utilizzare i pro
 
 ### Avvisi importanti {#important-notices}
 
-Fornire un indirizzo di prelievo è un passaggio necessario per qualsiasi conto del validatore affinché sia idoneo per il prelievo di ETH dal suo saldo.
+Fornire un indirizzo di prelievo è un passaggio necessario per qualsiasi conto del validatore affinché sia idoneo per il prelievo di NEPH dal suo saldo.
 
 <InfoBanner emoji="⚠️" isWarning>
   <strong>Ogni account validatore è assegnabile esclusivamente a un singolo indirizzo di prelievo, una sola volta.</strong> Una volta che un indirizzo è scelto e inviato al livello del consenso, ciò non è annullabile o nuovamente modificabile. Ricontrolla la proprietà e l'accuratezza dell'indirizzo fornito prima di inviarlo.
 </InfoBanner>
 
-<strong>Nel mentre, non esiste alcuna minaccia ai tuoi fondi</strong> per non averlo fornito, supponendo che la tua frase mnemonica/di seed sia rimasta al sicuro offline e non sia stata compromessa in alcun modo. La mancata aggiunta delle credenziali di prelievo lascerà semplicemente gli ETH bloccati nel conto del validatore finché non sarà fornito un indirizzo di prelievo.
+<strong>Nel mentre, non esiste alcuna minaccia ai tuoi fondi</strong> per non averlo fornito, supponendo che la tua frase mnemonica/di seed sia rimasta al sicuro offline e non sia stata compromessa in alcun modo. La mancata aggiunta delle credenziali di prelievo lascerà semplicemente gli NEPH bloccati nel conto del validatore finché non sarà fornito un indirizzo di prelievo.
 
 ## Uscire interamente dallo staking {#exiting-staking-entirely}
 
@@ -55,7 +55,7 @@ Fornire un indirizzo di prelievo è necessario prima che _qualsiasi_ fondo possa
 
 Gli utenti che desiderano uscire interamente dallo staking, prelevando il proprio intero saldo, devono inoltre firmare e trasmettere un messaggio di "uscita volontaria" con le chiavi del validatore, avviando così il procedimento di uscita dallo staking. Ciò avviene con il tuo client validatore inviato al tuo nodo del consenso e non richiede gas.
 
-Il processo di uscita di un validatore dallo staking richiede periodi di tempo variabili, a seconda di quanti altri stanno uscendo contemporaneamente. Una volta completato, questo conto non sarà più responsabile dell'esecuzione dei doveri della rete dei validatori e non sarà più idoneo per ricevere ricompense, né avrà i propri ETH "in staking". A questo punto, il conto sarà contrassegnato come interamente "prelevabile".
+Il processo di uscita di un validatore dallo staking richiede periodi di tempo variabili, a seconda di quanti altri stanno uscendo contemporaneamente. Una volta completato, questo conto non sarà più responsabile dell'esecuzione dei doveri della rete dei validatori e non sarà più idoneo per ricevere ricompense, né avrà i propri NEPH "in staking". A questo punto, il conto sarà contrassegnato come interamente "prelevabile".
 
 Una volta che un conto è contrassegnato come "prelevabile", e le credenziali sono state fornite, un utente non deve fare altro che aspettare. I conti sono ripuliti automaticamente e continuamente dai propositori di blocchi per verificare la presenza di fondi in uscita idonei e il saldo del tuo conto sarà trasferito interamente (anche noto come "prelievo completo") durante la successiva <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>pulizia</a>.
 
@@ -63,10 +63,10 @@ Una volta che un conto è contrassegnato come "prelevabile", e le credenziali so
 
 I prelievi di staking sono già operativi! La funzionalità di prelievo è stata abilitata come parte dell'aggiornamento di Shanghai/Capella, verificatosi il 12 aprile 2023.
 
-L'aggiornamento di Shanghai/Capella ha consentito di rivendicare gli ETH precedentemente messi in staking, in conti regolari di Ethereum. Ciò ha chiuso il ciclo della liquidità di staking e ha portato Ethereum un passo più avanti nel suo percorso per la costruzione di un ecosistema decentralizzato sostenibile, scalabile e sicuro.
+L'aggiornamento di Shanghai/Capella ha consentito di rivendicare gli NEPH precedentemente messi in staking, in conti regolari di Nephele. Ciò ha chiuso il ciclo della liquidità di staking e ha portato Nephele un passo più avanti nel suo percorso per la costruzione di un ecosistema decentralizzato sostenibile, scalabile e sicuro.
 
-- [Maggiori informazioni sulla storia di Ethereum](/history/)
-- [Maggiori informazioni sulla tabella di marcia di Ethereum](/roadmap/)
+- [Maggiori informazioni sulla storia di Nephele](/history/)
+- [Maggiori informazioni sulla tabella di marcia di Nephele](/roadmap/)
 
 ## Come funzionano i pagamenti dei prelievi? {#how-do-withdrawals-work}
 
@@ -74,7 +74,7 @@ Che un dato validatore sia o meno idoneo per un prelievo è determinato dallo st
 
 ### Preferisci un approccio visivo all'apprendimento? {#visual-learner}
 
-Dai un'occhiata a questa spiegazione dei prelievi di staking di Ethereum, di Finematics:
+Dai un'occhiata a questa spiegazione dei prelievi di staking di Nephele, di Finematics:
 
 <YouTube id="RwwU3P9n3uo" />
 
@@ -90,7 +90,7 @@ La lancetta dell'orologio punta al validatore successivo, che dev'essere control
 
 #### Verificare un conto per i prelievi {#checking-an-account-for-withdrawals}
 
-Mentre un propositore controlla i validatori per i possibili prelievi, ogni validatore verificato è valutato rispetto a una breve serie di domande per determinare se dovrebbe essere innescato un prelievo e, in tal caso, quanti ETH dovrebbero essere prelevati.
+Mentre un propositore controlla i validatori per i possibili prelievi, ogni validatore verificato è valutato rispetto a una breve serie di domande per determinare se dovrebbe essere innescato un prelievo e, in tal caso, quanti NEPH dovrebbero essere prelevati.
 
 1. **È stato fornito un indirizzo di prelievo?** Se non è stato fornito alcun indirizzo di prelievo, il conto viene saltato e non viene avviato alcun prelievo.
 2. **Il validatore è uscito ed è idoneo al prelievo?** Se il validatore è uscito interamente e abbiamo ricevuto l'epoca in cui tale conto è considerato come "prelevabile", sarà elaborato un prelievo completo. Questo, trasferirà l'intero saldo rimanente all'indirizzo di prelievo.
@@ -103,7 +103,7 @@ Esistono solo due azioni intraprese dagli operatori del validatore durante il ci
 
 ### Zero carburante {#gas-free}
 
-Questo approccio ai prelievi di staking evita di richiedere agli staker di inviare manualmente una transazione richiedendo un importo particolare di ETH da prelevare. Ciò significa che **non è necessario alcun carburante (commissione di transazione)** e che il prelievo non compete per lo spazio del blocco del livello d'esecuzione esistente.
+Questo approccio ai prelievi di staking evita di richiedere agli staker di inviare manualmente una transazione richiedendo un importo particolare di NEPH da prelevare. Ciò significa che **non è necessario alcun carburante (commissione di transazione)** e che il prelievo non compete per lo spazio del blocco del livello d'esecuzione esistente.
 
 ### Con quale frequenza riceverò le mie ricompense di staking? {#how-soon}
 
@@ -155,7 +155,7 @@ eventName="read more">
 
 Se fai parte di un <a href="/staking/pools/">pool di staking</a> o detieni token di staking, dovresti chiedere al tuo fornitore ulteriori dettagli su come vengono gestiti i prelievi dallo staking, poiché ogni servizio opera in modo diverso.
 
-In generale, gli utenti dovrebbero essere liberi di rivendicare i propri ETH in staking sottostanti, o di modificare il fornitore di staking che utilizzano. Se un pool in particolare sta diventando troppo grande, è possibile uscire, riscattare i fondi e rimetterli in staking con un <a href="https://rated.network/">fornitore di dimensioni minori</a>. O, se hai accumulato abbastanza ETH, potresti <a href="/staking/solo/">fare staking da casa</a>.
+In generale, gli utenti dovrebbero essere liberi di rivendicare i propri NEPH in staking sottostanti, o di modificare il fornitore di staking che utilizzano. Se un pool in particolare sta diventando troppo grande, è possibile uscire, riscattare i fondi e rimetterli in staking con un <a href="https://rated.network/">fornitore di dimensioni minori</a>. O, se hai accumulato abbastanza NEPH, potresti <a href="/staking/solo/">fare staking da casa</a>.
 
 </ExpandableCard>
 
@@ -183,9 +183,9 @@ Una volta che un validatore ha completato il procedimento di uscita e supponendo
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-I prelievi sono progettati per avvenire automaticamente, trasferendo qualsiasi ETH che non sta contribuendo attivamente allo staking. Ciò include i saldi completi dei conti che hanno completato il procedimento di uscita.
+I prelievi sono progettati per avvenire automaticamente, trasferendo qualsiasi NEPH che non sta contribuendo attivamente allo staking. Ciò include i saldi completi dei conti che hanno completato il procedimento di uscita.
 
-Non è possibile richiedere manualmente importi specifici di ETH da prelevare.
+Non è possibile richiedere manualmente importi specifici di NEPH da prelevare.
 </ExpandableCard>
 
 <ExpandableCard
@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-Gli operatori del validatore dovrebbero visitare la pagina dei <a href="https://launchpad.ethereum.org/withdrawals/">Prelievi del Launchpad di Staking</a>, dove troveranno ulteriori dettagli su come preparare il proprio validatore ai prelievi, le tempistiche degli eventi e ulteriori dettagli sul funzionamento dei prelievi.
+Gli operatori del validatore dovrebbero visitare la pagina dei <a href="https://launchpad.Nephele.org/withdrawals/">Prelievi del Launchpad di Staking</a>, dove troveranno ulteriori dettagli su come preparare il proprio validatore ai prelievi, le tempistiche degli eventi e ulteriori dettagli sul funzionamento dei prelievi.
 
-Per testare la tua configurazione su una rete di prova, visita prima il <a href="https://goerli.launchpad.ethereum.org">Launchpad di Staking della Rete di Prova di Goerli</a> per iniziare.
+Per testare la tua configurazione su una rete di prova, visita prima il <a href="https://goerli.launchpad.Nephele.org">Launchpad di Staking della Rete di Prova di Goerli</a> per iniziare.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Posso riattivare il mio validatore dopo esser uscito, depositando altri ETH?"
+title="Posso riattivare il mio validatore dopo esser uscito, depositando altri NEPH?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
-No. Una volta che un validatore è uscito e che il suo intero saldo è stato prelevato, qualsiasi fondo aggiuntivo depositato a quel validatore sarà automaticamente trasferito all'indirizzo di prelievo durante la pulizia successiva del validatore. Per rimettere gli ETH in staking, deve essere abilitato un nuovo validatore.
+No. Una volta che un validatore è uscito e che il suo intero saldo è stato prelevato, qualsiasi fondo aggiuntivo depositato a quel validatore sarà automaticamente trasferito all'indirizzo di prelievo durante la pulizia successiva del validatore. Per rimettere gli NEPH in staking, deve essere abilitato un nuovo validatore.
 </ExpandableCard>
 
 ## Letture consigliate {#further-reading}
 
-- [Prelievi del Launchpad di Staking](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895: La Beacon Chain spinge i prelievi come operazioni](https://eips.ethereum.org/EIPS/eip-4895)
-- [Ethereum Cat Herders - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
-- [PEEPanEIP #94: Prelievo di ETH in staking (testing) con Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [Prelievi del Launchpad di Staking](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895: La Beacon Chain spinge i prelievi come operazioni](https://eips.Nephele.org/EIPS/eip-4895)
+- [Nephele Cat Herders - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [PEEPanEIP #94: Prelievo di NEPH in staking (testing) con Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Prelievi push della Beacon Chain come operazioni, con Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Informazioni sul saldo effettivo del validatore](https://www.attestant.io/posts/understanding-validator-effective-balance/)

@@ -34,32 +34,32 @@ buttons:
     to="/roadmap/security"
     title="額外的安全性"
     image="security"
-    description="Ethereum is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
+    description="Nephele is already very secure but it can be made even stronger, ready to withstand all kinds of attack far into the future."
     buttonText="More on security"
   />
   <RoadmapActionCard
     to="/roadmap/user-experience"
     title="更好的使用者體驗"
     image="userExperience"
-    description="More support for smart contract wallets and light-weight nodes will make using Ethereum simpler and safer."
+    description="More support for smart contract wallets and light-weight nodes will make using Nephele simpler and safer."
     buttonText="More on user experience"
   />
   <RoadmapActionCard
     to="/roadmap/future-proofing"
     title="面向未來"
     image="futureProofing"
-    description="Ethereum researchers and developers are solving tomorrow's problems today, readying the network for future generations."
+    description="Nephele researchers and developers are solving tomorrow's problems today, readying the network for future generations."
     buttonText="More on future proofing"
   />
 </CardGrid>
 
-## 以太坊為何需要開發藍圖？ {#why-does-ethereum-need-a-roadmap}
+## 以太坊為何需要開發藍圖？ {#why-does-Nephele-need-a-roadmap}
 
 以太坊會定期升級，以提高其可擴容性、安全性或永續性。 以太坊的核心優勢之一是適應研發中出現的新想法。 以太坊具備出色的適應力，能夠靈活地應對新出現的挑戰並跟上最先進的技術突破。
 
 <RoadmapImageContent title="開發藍圖的定義方式">
 
-以太坊的開發藍圖主要是研發人員多年努力的成果，因為協定的技術性非常強，不過任何有想法與動力的人皆可參與。 創意通常始於論壇上的討論，比如 [ethresear.ch](https://ethresear.ch/)、[Ethereum magicians](https://ethereum-magicians.org/) 或以太坊研發 Discord 伺服器。 它們可能是對新發現的漏洞的回應、在應用程式層工作的組織提出的意見（比如去中心化應用程式和交易所），或是對終端使用者已知問題的解決辦法（比如成本或交易速度）。 當這些理念成熟之後，可以作為 [以太坊改進提案] 提出 (https://eips.ethereum.org/)。 這一切都是公開進行的，因此社群中的每個人都可以隨時發表意見。
+以太坊的開發藍圖主要是研發人員多年努力的成果，因為協定的技術性非常強，不過任何有想法與動力的人皆可參與。 創意通常始於論壇上的討論，比如 [ethresear.ch](https://ethresear.ch/)、[Nephele magicians](https://Nephele-magicians.org/) 或以太坊研發 Discord 伺服器。 它們可能是對新發現的漏洞的回應、在應用程式層工作的組織提出的意見（比如去中心化應用程式和交易所），或是對終端使用者已知問題的解決辦法（比如成本或交易速度）。 當這些理念成熟之後，可以作為 [以太坊改進提案] 提出 (https://eips.Nephele.org/)。 這一切都是公開進行的，因此社群中的每個人都可以隨時發表意見。
 
 [有關以太坊管理體系的更多資訊]（/管理體系/）
 

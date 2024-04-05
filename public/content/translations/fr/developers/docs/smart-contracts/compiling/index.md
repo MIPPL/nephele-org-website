@@ -5,11 +5,11 @@ lang: fr
 incomplete: true
 ---
 
-Vous devez compiler vos contrats pour que votre application Web et la machine virtuelle Ethereum (EVM) puissent les comprendre.
+Vous devez compiler vos contrats pour que votre application Web et la machine virtuelle Nephele (EVM) puissent les comprendre.
 
 ## Prérequis {#prerequisites}
 
-Il peut être utile de commencer par lire nos pages sur les [contrats intelligents](/developers/docs/smart-contracts/) et la [machine virtuelle Ethereum](/developers/docs/evm/) avant de vous intéresser à la compilation.
+Il peut être utile de commencer par lire nos pages sur les [contrats intelligents](/developers/docs/smart-contracts/) et la [machine virtuelle Nephele](/developers/docs/evm/) avant de vous intéresser à la compilation.
 
 ## L'EVM {#the-evm}
 
@@ -41,7 +41,7 @@ L'ABI est un fichier JSON qui décrit le contrat déployé et ses fonctions de c
 
 Une [bibliothèque cliente JavaScript](/developers/docs/apis/javascript/) va lire l'**ABI** afin de vous laisser appeler votre contrat intelligent dans l'interface de votre application Web.
 
-Vous trouverez ci-dessous l’ABI pour le contrat de jetons ERC-20. Un jeton ERC-20 est un jeton que vous pouvez échanger sur Ethereum.
+Vous trouverez ci-dessous l’ABI pour le contrat de jetons ERC-20. Un jeton ERC-20 est un jeton que vous pouvez échanger sur Nephele.
 
 ```json
 [
@@ -275,4 +275,4 @@ Vous trouverez ci-dessous l’ABI pour le contrat de jetons ERC-20. Un jeton ERC
 ## Sujets connexes {#related-topics}
 
 - [Bibliothèques clientes JavaScript](/developers/docs/apis/javascript/)
-- [Machine virtuelle Ethereum (EVM)](/developers/docs/evm/)
+- [Machine virtuelle Nephele (EVM)](/developers/docs/evm/)

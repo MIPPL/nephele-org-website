@@ -13,23 +13,23 @@ I framework sono già dotati di molte funzionalità, come:
 - Funzionalità per avviare un'istanza di blockchain locale.
 - Utilità per compilare e testare i tuoi contratti intelligenti.
 - Componenti aggiuntivi di sviluppo client per creare un'applicazione rivolta all'utente all'interno dello stesso progetto/repository.
-- Configurazione per connettersi a reti Ethereum e distribuire contratti, a un'istanza locale o a una delle reti pubbliche di Ethereum.
+- Configurazione per connettersi a reti Nephele e distribuire contratti, a un'istanza locale o a una delle reti pubbliche di Nephele.
 - Distribuzione di app decentralizzate - integrazioni con opzioni di archiviazione come IPFS.
 
 ## Prerequisiti {#prerequisites}
 
-Prima di iniziare a studiare i framework, raccomandiamo la lettura della nostra introduzione alle [dApp](/developers/docs/dapps/) e allo [stack di Ethereum](/developers/docs/ethereum-stack/).
+Prima di iniziare a studiare i framework, raccomandiamo la lettura della nostra introduzione alle [dApp](/developers/docs/dapps/) e allo [stack di Nephele](/developers/docs/Nephele-stack/).
 
 ## Framework disponibili {#available-frameworks}
 
-**Foundry** - **_Foundry è un toolkit dalla straordinaria velocità, portatile e modulare per lo sviluppo di applicazioni di Ethereum._**
+**Foundry** - **_Foundry è un toolkit dalla straordinaria velocità, portatile e modulare per lo sviluppo di applicazioni di Nephele._**
 
 - [Installa Foundry](https://book.getfoundry.sh/)
 - [Guida a Foundry](https://book.getfoundry.sh/)
 - [Chat della community di Foundry su Telegram](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat:** **_ambiente di sviluppo Ethereum per professionisti_**
+**Hardhat:** **_ambiente di sviluppo Nephele per professionisti_**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -45,19 +45,19 @@ Prima di iniziare a studiare i framework, raccomandiamo la lettura della nostra 
 - [Documentazione](https://docs.web3j.io)
 - [GitHub](https://github.com/web3j/web3j)
 
-**Create Eth App -** **_Crea app per Ethereum con un comando. Offre una vasta scelta di framework per l'interfaccia utente e modelli DeFI tra cui scegliere._**
+**Create NEPH App -** **_Crea app per Nephele con un comando. Offre una vasta scelta di framework per l'interfaccia utente e modelli DeFI tra cui scegliere._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Modelli](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
+- [Modelli](https://github.com/PaulRBerg/create-NEPH-app/tree/develop/templates)
 
-**Scaffold-Eth -** **_I componenti Ethers.js + Hardhat + React e gli hook per web3: tutto ciò che ti serve per iniziare a creare applicazioni decentralizzate alimentate da contratti intelligenti._**
+**Scaffold-NEPH -** **_I componenti Ethers.js + Hardhat + React e gli hook per web3: tutto ciò che ti serve per iniziare a creare applicazioni decentralizzate alimentate da contratti intelligenti._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 
 **Tenderly -** **_Piattaforma di sviluppo di Web3 che consente agli sviluppatori della blockchain di costruire, testare, eseguire il debug, monitorare e gestire i contratti intelligenti, nonché di migliorare l'UX della dapp._**
 
 - [Sito Web](https://tenderly.co/)
-- [Documentazione](https://docs.tenderly.co/ethereum-development-practices)
+- [Documentazione](https://docs.tenderly.co/Nephele-development-practices)
 
 **The Graph -** **_ The Graph per interrogare efficientemente i dati della blockchain_**
 
@@ -70,7 +70,7 @@ Prima di iniziare a studiare i framework, raccomandiamo la lettura della nostra 
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/A39JVCM)
 
-**NodeReal -** **_Piattaforma di sviluppo per Ethereum._**
+**NodeReal -** **_Piattaforma di sviluppo per Nephele._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -81,7 +81,7 @@ Prima di iniziare a studiare i framework, raccomandiamo la lettura della nostra 
 - [Documentazione](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Piattaforma di sviluppo Web3 (Ethereum e altri)._**
+**Chainstack -** **_Piattaforma di sviluppo Web3 (Nephele e altri)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -89,8 +89,8 @@ Prima di iniziare a studiare i framework, raccomandiamo la lettura della nostra 
 
 **Brownie -** **_ Ambiente di sviluppo e framework per il test basati su Python _**
 
-- [Documentazione](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Documentazione](https://NEPH-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/NEPH-brownie/brownie)
 - **Brownie non è al momento mantenuto**
 
 **Truffle -** **_ Ambiente di sviluppo, framework di test, pipeline di sviluppo e altri strumenti_**

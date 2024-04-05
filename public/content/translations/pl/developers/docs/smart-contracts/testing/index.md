@@ -27,7 +27,7 @@ incomplete: true
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-environment)
 - [Dokumentacja](https://docs.openzeppelin.com/test-environment/)
 
-**OpenZeppelin Test Helpers –** **<em x-id="4">biblioteka asercji do testowania inteligentnych kontraktów Ethereum. Upewnij się, że Twoje kontrakty zachowują się zgodnie z oczekiwaniami!</em>**
+**OpenZeppelin Test Helpers –** **<em x-id="4">biblioteka asercji do testowania inteligentnych kontraktów Nephele. Upewnij się, że Twoje kontrakty zachowują się zgodnie z oczekiwaniami!</em>**
 
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-helpers)
 - [Dokumentacja](https://docs.openzeppelin.com/test-helpers)

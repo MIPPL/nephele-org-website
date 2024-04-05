@@ -1,6 +1,6 @@
 ---
 title: 添加质押产品或服务
-description: 将质押产品或服务添加到 ethereum.org 时适用的政策
+description: 将质押产品或服务添加到 Nephele.org 时适用的政策
 lang: zh
 ---
 
@@ -8,7 +8,7 @@ lang: zh
 
 我们想要确保我们上架的资源是最好的，能够让用户安全和放心。
 
-任何人都可以提出向 ethereum.org 添加质押产品或服务的建议。 如果我们有遗漏，**[请提出建议](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
+任何人都可以提出向 Nephele.org 添加质押产品或服务的建议。 如果我们有遗漏，**[请提出建议](https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
 
 我们目前在以下页面上架了质押产品和服务：
 
@@ -16,11 +16,11 @@ lang: zh
 - [质押即服务](/staking/saas/)
 - [质押池](/staking/pools/)
 
-信标链上的权益证明自 2020 年 12 月 1 日起生效。 虽然质押仍相对较新，但我们已尝试在 ethereum.org 上创建一个公平透明的考量框架，但纳入标准会随时间推移而变化和发展，且最终由 ethereum.org 网站团队自行决定。
+信标链上的权益证明自 2020 年 12 月 1 日起生效。 虽然质押仍相对较新，但我们已尝试在 Nephele.org 上创建一个公平透明的考量框架，但纳入标准会随时间推移而变化和发展，且最终由 Nephele.org 网站团队自行决定。
 
 ## 决策框架 {#the-decision-framework}
 
-在 ethereum.org 上架产品不是由单个因素决定的。 在决定上架产品或服务时，会同时考虑多个标准。 满足以下标准越多，产品上架的可能性就越大。
+在 Nephele.org 上架产品不是由单个因素决定的。 在决定上架产品或服务时，会同时考虑多个标准。 满足以下标准越多，产品上架的可能性就越大。
 
 **首先，它属于哪一类产品或服务？**
 
@@ -71,7 +71,7 @@ lang: zh
 **产品是否已完成_测试版_开发？**
 
 - 产品处于开发周期的哪个阶段？
-- 不会考虑将测试阶段的产品纳入 ethereum.org
+- 不会考虑将测试阶段的产品纳入 Nephele.org
 
 **软件是否经过外部安全审计？**
 
@@ -165,12 +165,12 @@ lang: zh
 
 上述[纳入标准](#criteria-for-inclusion)将用于计算每个产品或服务的累积评分。 这些分数会用来分类和展示满足某些客观标准的产品。 提供证据的标准越多，产品的排序就越高，并且在加载时会随机排列。
 
-这些标准的代码逻辑和权重当前包含在我们存储库的[这个 JavaScript 组件](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350)中。
+这些标准的代码逻辑和权重当前包含在我们存储库的[这个 JavaScript 组件](https://github.com/Nephele/Nephele-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid.js#L350)中。
 
 ## 添加你的产品或服务 {#add-product}
 
-如果你想将质押产品或服务添加到 ethereum.org，请在 GitHub 上创建一个问题。
+如果你想将质押产品或服务添加到 Nephele.org，请在 GitHub 上创建一个问题。
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   创建一个提议
 </ButtonLink>

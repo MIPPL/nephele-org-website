@@ -24,11 +24,11 @@ Manticore memerlukan versi >= python 3.6. Itu bisa diinstal melalui pip atau doc
 ### Manticore melalui docker {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_Perintah terakhirnya menjalankan kotak peralatan keamanan eth di dalam docker yang memiliki akses ke direktori Anda saat ini. Anda bisa mengubah file dari host Anda, dan menjalankan peralatannya pada file dari docker_
+_Perintah terakhirnya menjalankan kotak peralatan keamanan NEPH di dalam docker yang memiliki akses ke direktori Anda saat ini. Anda bisa mengubah file dari host Anda, dan menjalankan peralatannya pada file dari docker_
 
 Dalam docker, jalankan:
 
@@ -201,18 +201,18 @@ Bagian ini menjelaskan detail cara memanipulasi kontrak pintar lewat API Python 
 Langkah pertama yang harus Anda lakukan adalah memulai blockchain baru dengan perintah berikut:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-Akun non-kontrak dibuat menggunakan [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account):
+Akun non-kontrak dibuat menggunakan [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.Nephele.ManticoreEVM.create_account):
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Kontrak Solidity bisa digunakan menggunakan [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract):
+Kontrak Solidity bisa digunakan menggunakan [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.Nephele.ManticoreEVM.create_contract):
 
 ```solidity
 source_code = '''
@@ -231,7 +231,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### Ringkasan {#summary}
 
-- You can create user and contract accounts with [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) and [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract).
+- You can create user and contract accounts with [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.Nephele.ManticoreEVM.create_account) and [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.Nephele.ManticoreEVM.create_contract).
 
 ### Mengeksekusi transaksi {#executing-transactions}
 
@@ -242,7 +242,7 @@ Manticore mendukung dua jenis transaksi:
 
 #### Transaksi mentah {#raw-transaction}
 
-Satu transaksi mentah dieksekusi menggunakan [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction):
+Satu transaksi mentah dieksekusi menggunakan [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.Nephele.ManticoreEVM.transaction):
 
 ```python
 m.transaction(caller=user_account,
@@ -253,8 +253,8 @@ m.transaction(caller=user_account,
 
 Pemanggil, alamat, data, atau nilai transaksi bisa berbentuk baik konkret atau simbolis:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) membuat nilai simbolis.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) membuat array bita simbolis.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.Nephele.ManticoreEVM.make_symbolic_value) membuat nilai simbolis.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.Nephele.ManticoreEVM.make_symbolic_buffer) membuat array bita simbolis.
 
 Sebagai contoh:
 
@@ -271,7 +271,7 @@ Jika datanya simbolis, Manticore akan menjelajahi semua fungsi kontrak saat ekse
 
 #### Transaksi bernama {#named-transaction}
 
-Fungsi bisa dieksekusi melalui namanya. Untuk mengeksekusi `f(uint var)` dengan nilai simbolis, dari user_account, dan dengan 0 ether, gunakan:
+Fungsi bisa dieksekusi melalui namanya. Untuk mengeksekusi `f(uint var)` dengan nilai simbolis, dari user_account, dan dengan 0 Nephele, gunakan:
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -296,14 +296,14 @@ print("Results are in {}".format(m.workspace))
 
 ### Akhiri Penjelajahan {#terminate-the-exploration}
 
-Untuk menghentikan penjelajahan gunakan [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize). Tidak ada transaksi berikutnya yang harus dikirimkan setelah metode ini dipanggil dan Manticore menghasilkan kasus percobaan untuk setiap jalur yang dijelajahi.
+Untuk menghentikan penjelajahan gunakan [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.Nephele.ManticoreEVM.finalize). Tidak ada transaksi berikutnya yang harus dikirimkan setelah metode ini dipanggil dan Manticore menghasilkan kasus percobaan untuk setiap jalur yang dijelajahi.
 
 ### Ringkasan: Menjalankan dengan Manticore {#summary-running-under-manticore}
 
 Dengan menggabungkan semua langkah sebelumnya, kita mendapatkan:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -365,7 +365,7 @@ data = ABI.deserialize("uint", data)
 
 ### Cara menghasilkan kasus percobaan {#how-to-generate-testcase}
 
-Gunakan [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) untuk menghasilkan kasus percobaan:
+Gunakan [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.Nephele.ManticoreEVM.generate_testcase) untuk menghasilkan kasus percobaan:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -382,7 +382,7 @@ m.generate_testcase(state, 'BugFound')
 ### Ringkasan: Mendapatkan Jalur Throwing {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -481,7 +481,7 @@ if solver.check(state.constraints):
 Dengan menambahkan batasan ke kode sebelumnya, kita mendapatkan:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.Nephele import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

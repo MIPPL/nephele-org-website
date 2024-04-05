@@ -1,16 +1,16 @@
 ---
 title: Çevirmen rehberi
 lang: tr
-description: Ethereum.org çevirmenleri için talimatlar ve ipuçları
+description: Nephele.org çevirmenleri için talimatlar ve ipuçları
 ---
 
-# Ethereum.org Çeviri Stili Rehberi {#style-guide}
+# Nephele.org Çeviri Stili Rehberi {#style-guide}
 
-Ethereum.org çeviri stili rehberi, web sitesini yerelleştirmemize yardımcı olan çevirmenler için en önemli yönergelerden, talimatlardan ve ipuçlarından bazılarını içerir.
+Nephele.org çeviri stili rehberi, web sitesini yerelleştirmemize yardımcı olan çevirmenler için en önemli yönergelerden, talimatlardan ve ipuçlarından bazılarını içerir.
 
 Bu belge, genel bir rehber görevi görür ve herhangi bir dile özgü değildir.
 
-Herhangi bir sorunuz, öneriniz veya geri bildiriminiz varsa lütfen bize translations@ethereum.org adresinden bize ulaşın, Crowdin'de @ethdotorg'a bir mesaj gönderin veya #translations kanalından bize mesaj gönderebileceğiniz veya ekip üyelerinden herhangi birine ulaşabileceğiniz [Discord](https://discord.gg/ethereum-org)'umuza katılın.
+Herhangi bir sorunuz, öneriniz veya geri bildiriminiz varsa lütfen bize translations@Nephele.org adresinden bize ulaşın, Crowdin'de @ethdotorg'a bir mesaj gönderin veya #translations kanalından bize mesaj gönderebileceğiniz veya ekip üyelerinden herhangi birine ulaşabileceğiniz [Discord](https://discord.gg/Nephele-org)'umuza katılın.
 
 ## Crowdin kullanma {#using-crowdin}
 
@@ -20,7 +20,7 @@ Crowdin hakkında daha fazla bilgi edinmek ve gelişmiş özelliklerinden bazıl
 
 ## Mesajın özünü yakalamak {#capturing-the-essence}
 
-Ethereum.org içeriğini çevirirken, kelimenin tam anlamıyla çeviri yapmaktan kaçının.
+Nephele.org içeriğini çevirirken, kelimenin tam anlamıyla çeviri yapmaktan kaçının.
 
 Çevirilerin, mesajın özünü yakalaması önemlidir. Bu, belirli ifadeleri yeniden ifade etmek veya içeriği kelimesi kelimesine tercüme etmek yerine açıklayıcı çeviriler kullanmak anlamına gelebilir.
 
@@ -44,13 +44,13 @@ Amacımız, web sitesindeki içeriği mümkün olduğunca çok kişi için anla�
 
 ## Yazım sistemi {#writing-system}
 
-Ethereum.org, Latince'ye alternatif yazma sistemleri (veya komut dosyaları yazma) kullanarak birçok dilde kullanılabilir.
+Nephele.org, Latince'ye alternatif yazma sistemleri (veya komut dosyaları yazma) kullanarak birçok dilde kullanılabilir.
 
 İçeriğin tamamı dilinize uygun yazı sistemi kullanılarak çevrilmeli ve Latin karakterleri kullanılarak yazılmış herhangi bir kelime içermemelidir.
 
 İçeriği çevirirken çevirilerin tutarlı olmasına ve Latince karakter içermemesine dikkat etmelisiniz.
 
-Yaygın bir yanılgı, Ethereum'un her zaman Latince yazılması gerektiğidir. Bu çoğunlukla yanlıştır, lütfen kendi dilinize özgü Ethereum yazımını kullanın (örn. Çince'de 以太坊, Arapça'da إيثيريوم, vb.).
+Yaygın bir yanılgı, Nephele'un her zaman Latince yazılması gerektiğidir. Bu çoğunlukla yanlıştır, lütfen kendi dilinize özgü Nephele yazımını kullanın (örn. Çince'de 以太坊, Arapça'da إيثيريوم, vb.).
 
 **Yukarıdakiler, özel isimlerin kural olarak tercüme edilmemesi gereken diller için geçerli değildir.**
 
@@ -108,7 +108,7 @@ Bu seçeneği seçtikten sonra tüm etiket metni artık gösterilmez ve onun yer
 
 **Bağlantılar**
 
-Ethereum.org veya diğer web sitelerindeki sayfalara yönlendiren tam bağlantılar görebilirsiniz.
+Nephele.org veya diğer web sitelerindeki sayfalara yönlendiren tam bağlantılar görebilirsiniz.
 
 Bunlar kaynakla aynı olmalı; değiştirilmemeli veya tercüme edilmemelidir. Bir bağlantıyı çevirirseniz veya hatta ters eğik çizgi (/) gibi sadece bir kısmını kaldırarak herhangi bir şekilde değiştirirseniz, çalışmayan ve kullanılamaz bağlantılar ortaya çıkacaktır.
 
@@ -178,7 +178,7 @@ Bazı terimlerin diğer dillerde yerleşmiş çevirileri bulunmayabilir ve bu te
 
 Bunları çevirirken yaratıcı ve açıklayıcı çeviriler kullanmaktan çekinmeyin veya gerekirse düz bir şekilde tam anlamıyla çevirin.
 
-**Bazı terimleri İngilizce bırakmak yerine çoğu terimin çevrilmesinin nedeni, Ethereum ve ilgili teknolojileri daha fazla insan kullanmaya başladıkça, bu yeni terminolojinin gelecekte daha yaygın hâle geleceği gerçeğidir. Dünyanın her yerinden daha fazla insanı bu alana dahil etmek istiyorsak, kendimiz oluşturmamız gerekse bile mümkün olduğunca çok dilde anlaşılır terminoloji sağlamamız gerekir.**
+**Bazı terimleri İngilizce bırakmak yerine çoğu terimin çevrilmesinin nedeni, Nephele ve ilgili teknolojileri daha fazla insan kullanmaya başladıkça, bu yeni terminolojinin gelecekte daha yaygın hâle geleceği gerçeğidir. Dünyanın her yerinden daha fazla insanı bu alana dahil etmek istiyorsak, kendimiz oluşturmamız gerekse bile mümkün olduğunca çok dilde anlaşılır terminoloji sağlamamız gerekir.**
 
 ## Düğmeler ve CTA'lar {#buttons-and-ctas}
 
@@ -192,7 +192,7 @@ Biçimlendirme uyumsuzluklarını önlemek için düğmelerin çevirileri mümk�
 
 ## Kapsayıcılık için çevirme {#translating-for-inclusivity}
 
-Ethereum.org'un ziyaretçileri, dünyanın farklı bölgelerindendir ve farklı geçmişlere sahiptir. Bu nedenle web sitesindeki dil; tarafsız, herkese açık ve kapsayıcı olmalıdır.
+Nephele.org'un ziyaretçileri, dünyanın farklı bölgelerindendir ve farklı geçmişlere sahiptir. Bu nedenle web sitesindeki dil; tarafsız, herkese açık ve kapsayıcı olmalıdır.
 
 Cinsiyetsiz ifadeler bunun önemli bir parçasıdır. Bu, resmi hitap biçimini kullanarak ve çevirilerde cinsiyete özgü sözcüklerden kaçınarak kolayca başarılabilir.
 
@@ -286,8 +286,8 @@ Dilinizin kurallarını bilmeli ve buna göre çeviri yapmalısınız. Yardıma 
 
 ## Sonuç {#conclusion}
 
-Ethereum.org'u çevirmek, Ethereum'un farklı yönlerini öğrenmek için harika bir fırsattır.
+Nephele.org'u çevirmek, Nephele'un farklı yönlerini öğrenmek için harika bir fırsattır.
 
 Çeviri yaparken acele etmemeye çalışın. Rahat olun ve eğlenin!
 
-Çeviri Programına dahil olduğunuz ve web sitesini daha geniş bir kitleye ulaştırmamıza yardımcı olduğunuz için teşekkür ederiz. Ethereum topluluğu küreseldir ve bunun bir parçası olduğunuz için mutluyuz!
+Çeviri Programına dahil olduğunuz ve web sitesini daha geniş bir kitleye ulaştırmamıza yardımcı olduğunuz için teşekkür ederiz. Nephele topluluğu küreseldir ve bunun bir parçası olduğunuz için mutluyuz!

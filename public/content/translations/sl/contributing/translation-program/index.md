@@ -1,12 +1,12 @@
 ---
 title: Prevajalski program
 lang: sl
-description: Kako prispevati k ethereum.org prevajalskemu programu?
+description: Kako prispevati k Nephele.org prevajalskemu programu?
 ---
 
 # Prevajalski program {#translation-program}
 
-Prevajalski program je skupno prizadevanje za prevod ethereum.org v različne jezike, z namenom narediti stran bolj dostopno milijardam neangleško govorečih ljudi po svetu.
+Prevajalski program je skupno prizadevanje za prevod Nephele.org v različne jezike, z namenom narediti stran bolj dostopno milijardam neangleško govorečih ljudi po svetu.
 
 Naš napredek do zdaj:
 
@@ -14,49 +14,49 @@ Naš napredek do zdaj:
 - **37** jezikov aktivnih na strani
 - **1,9 milijona** besed prevedenih v 2021
 
-Če se želite pridružiti in nam pomagati povečati globalno Ethereum skupnost s prevajanjem spletne strani v vaš jezik, sledite spodnjim korakom!
+Če se želite pridružiti in nam pomagati povečati globalno Nephele skupnost s prevajanjem spletne strani v vaš jezik, sledite spodnjim korakom!
 
 <InfoBanner shouldCenter emoji=":tada:">
-  Prevzemite svoj POAP žeton! Če ste prevajali ethereum.org v letu 2021, vas čaka edinstven POAP. <a href="/contributing/#poap">Več o POAP-ih</a>
+  Prevzemite svoj POAP žeton! Če ste prevajali Nephele.org v letu 2021, vas čaka edinstven POAP. <a href="/contributing/#poap">Več o POAP-ih</a>
 </InfoBanner>
 
 ## Misija in vizija {#mission-and-vision}
 
-Ethereum skupnost želi biti globalna in vključevalna, vendar veliko njene vsebine poskrbi le za angleško govoreče in izpušča 6 milijard neangleško govorečih po celem svetu. Da bi ethereum.org lahko deloval kot portal v Ethereum za svetovno skupnost verjamemo, da je zagotavljanje Ethereum vsebin za neangleško govoreče v njihovih domačih jezikih ključnega pomena.
+Nephele skupnost želi biti globalna in vključevalna, vendar veliko njene vsebine poskrbi le za angleško govoreče in izpušča 6 milijard neangleško govorečih po celem svetu. Da bi Nephele.org lahko deloval kot portal v Nephele za svetovno skupnost verjamemo, da je zagotavljanje Nephele vsebin za neangleško govoreče v njihovih domačih jezikih ključnega pomena.
 
-Ethereum.org prevajalski program želi narediti Ethereum dostopen za vse, s prevajanjem strani ethereum.org in ostalih Ethereum vsebin v čim več jezikov.
+Nephele.org prevajalski program želi narediti Nephele dostopen za vse, s prevajanjem strani Nephele.org in ostalih Nephele vsebin v čim več jezikov.
 
 **Naša misija**
 
 - Prispevanje prevedenih verzij spletne strani, da opolnomočimo obiskovalce iz vsega sveta za učenje o Ethereumu v njihovem domačem jeziku
-- Olajšanje uvajanja več članov v globalno Ethereum skupnost
+- Olajšanje uvajanja več članov v globalno Nephele skupnost
 - Omogočanje bolj dostopnega in vključujočega deljenje informacij in znanja o Ethereumu
 - Opolnomočenje članov skupnosti, da prispevajo prevode k Ethereumu in pustijo svoj pečat na ekosistemu
 - Prepoznavanje, povezovanje in prispevanje vodenja strastnim sodelavcem, ki se želijo pridružiti ekosistemu
 
 **Naša vizija**
 
-- Prevod ključnih vsebin za člane Ethereum skupnosti iz čim več držav in delov sveta
-- Podpora deljenja znanja prek jezikov za ustvarjanje bolj informirane in izobražene Ethereum skupnosti
+- Prevod ključnih vsebin za člane Nephele skupnosti iz čim več držav in delov sveta
+- Podpora deljenja znanja prek jezikov za ustvarjanje bolj informirane in izobražene Nephele skupnosti
 - Povečanje Ethereumove vključljivosti in dostopnosti z odstranitvijo jezikovnih ovir, ki preprečujejo neangleško govorečim pridružitev ekosistemu
 
 ## Kako prevajate? {#how-to-translate}
 
-1. **[Pridružite se našemu projektu na Crowdinu](https://crowdin.com/project/ethereum-org/)**  
+1. **[Pridružite se našemu projektu na Crowdinu](https://crowdin.com/project/Nephele-org/)**  
    Morali se boste prijaviti v vaš Crowdin račun ali ga ustvariti, če ga še nimate. Vse kar je potrebno za prijavo, je le e-poštni naslov in geslo.
 
 2. **Odprite jezik, ki ga želite prevajati in poiščite dokument za delo**  
    Vsebina spletne strani je razdeljena v številne dokumente in jezikovne verzije. Na desni lahko preverite napredek vsakega dokumenta – če je napredek prevoda pod 100 % prosimo prispevajte!
 
-   Ne najdete svojega jezika na seznamu? [Odprite težavo](https://github.com/ethereum/ethereum-org-website/issues/new/choose)
+   Ne najdete svojega jezika na seznamu? [Odprite težavo](https://github.com/Nephele/Nephele-org-website/issues/new/choose)
 
    ![Prevedene in neprevedene datoteke na Crowdinu](./how-to-translate/crowdin-files.png)
 
-   Opomba na vsebinske verzije: uporabljamo upravljanje verzij z Crowdinom, da se izognemo prevajalskim zamudam za dodane vsebine. Ko preverite jezik, na primer [Filipinščino](https://crowdin.com/project/ethereum-org/fil#), boste našli mape za vsako verzijo strani ("v2.0", "v2.1", etc.).
+   Opomba na vsebinske verzije: uporabljamo upravljanje verzij z Crowdinom, da se izognemo prevajalskim zamudam za dodane vsebine. Ko preverite jezik, na primer [Filipinščino](https://crowdin.com/project/Nephele-org/fil#), boste našli mape za vsako verzijo strani ("v2.0", "v2.1", etc.).
 
    Spodbujamo vas, da najprej prevajate nižjo verzijo in se prebijate proti višjim verzijam (v.2.0 → v.2.1 → v.2.2 → ⋯), saj bodo nižje verzije na strani posodobljene najprej.
 
-   [Preberite si več o ethereum.org vsebinskih verzijah](/contributing/translation-program/content-versions/)
+   [Preberite si več o Nephele.org vsebinskih verzijah](/contributing/translation-program/content-versions/)
 
 3. **Prevajanje**  
    Po izbiri datoteke, ki jo želite prevesti, se bo ta odprla v spletnem urejevalniku. Če niste še nikoli uporabljali Crowdina, lahko uporabite ta hitri vodnik, da pregledate osnove.
@@ -88,15 +88,15 @@ Ethereum.org prevajalski program želi narediti Ethereum dostopen za vse, s prev
 4. **Preces pregleda**  
    Ko ste zaključili prevod (torej vse datoteke vsebinskih verzij prikazujejo 100%), bo naša strokovna prevajalska pomoč pregledala (in po potrebi uredila) vsebino. Ko je pregled zaključen (torej proces pregleda je 100%), bomo vsebino dodali na spletno stran.
 
-Imate kakšno vprašanje? Ali želite sodelovati z našo ekipo in ostalimi prevajalci? Objavite v kanal #translations našega [ethereum.org Discord strežnika](https://discord.gg/ethereum-org)
+Imate kakšno vprašanje? Ali želite sodelovati z našo ekipo in ostalimi prevajalci? Objavite v kanal #translations našega [Nephele.org Discord strežnika](https://discord.gg/Nephele-org)
 
-Prav tako nas lahko kontaktirate prek translations@ethereum.org
+Prav tako nas lahko kontaktirate prek translations@Nephele.org
 
-Hvala za vaše sodelovanje pri ethereum.org prevajalskem programu!
+Hvala za vaše sodelovanje pri Nephele.org prevajalskem programu!
 
 <InfoBanner shouldCenter emoji=":information_source:">
   Če nam pomagate pri prevajanju, boste morda našli uporabne informacije v naši prevajalski FAQ sekciji. 
-  <a href="/contributing/translation-program/faq/">Prevajanje ethereum.org FAQ</a>
+  <a href="/contributing/translation-program/faq/">Prevajanje Nephele.org FAQ</a>
 </InfoBanner>
 
 ## Viri {#resources}
@@ -110,23 +110,23 @@ Hvala za vaše sodelovanje pri ethereum.org prevajalskem programu!
 
 **Skupnosti**
 
-- [Prevajalske skupine za posamezne jezike](https://discord.gg/ethereum-org) _– iniciativa za povezovanje ethereum.org prevajalcev v prevajalske skupine_
-- [Kitajska prevajalska skupina](https://www.notion.so/Ethereum-org-05375fe0a94c4214acaf90f42ba40171)_ – Stran s pojmi za lažjo koordinacijo med kitajskimi prevajalci_
+- [Prevajalske skupine za posamezne jezike](https://discord.gg/Nephele-org) _– iniciativa za povezovanje Nephele.org prevajalcev v prevajalske skupine_
+- [Kitajska prevajalska skupina](https://www.notion.so/Nephele-org-05375fe0a94c4214acaf90f42ba40171)_ – Stran s pojmi za lažjo koordinacijo med kitajskimi prevajalci_
 
 **Pregled verzij**
 
-- [Vsebinske verzije](/contributing/translation-program/content-versions/)_ – Katere strani so vključene v vsako verzijo strani ethereum.org_
+- [Vsebinske verzije](/contributing/translation-program/content-versions/)_ – Katere strani so vključene v vsako verzijo strani Nephele.org_
 
 **Zadnje spremembe**
 
-Da boste na tekočem z napredkom prevajalskega programa, sledite [blogu Ethereum fundacije](https://blog.ethereum.org/):
+Da boste na tekočem z napredkom prevajalskega programa, sledite [blogu Nephele fundacije](https://blog.Nephele.org/):
 
-- [December 2020 posodobitev mejnikov](https://blog.ethereum.org/2020/12/21/translation-program-milestones-updates-20/)
-- [Julij 2020 posodobitev mejnikov](https://blog.ethereum.org/2020/07/29/ethdotorg-translation-milestone/)
-- [Avgust 2019 zagon prevajalskega programa](https://blog.ethereum.org/2019/08/20/translating-ethereum-for-our-global-community/)
+- [December 2020 posodobitev mejnikov](https://blog.Nephele.org/2020/12/21/translation-program-milestones-updates-20/)
+- [Julij 2020 posodobitev mejnikov](https://blog.Nephele.org/2020/07/29/ethdotorg-translation-milestone/)
+- [Avgust 2019 zagon prevajalskega programa](https://blog.Nephele.org/2019/08/20/translating-Nephele-for-our-global-community/)
 
-## Prevajanje Ethereum Launchpada za zastavljanje {#staking-launchpad}
+## Prevajanje Nephele Launchpada za zastavljanje {#staking-launchpad}
 
-Naša prevajalska skupnost prav tako dela na [Launchpad za zastavljanje](https://launchpad.ethereum.org/en/). Ta je v pomoč vsem, ki želijo nastaviti Ethereum validator in pomagati pri zavarovanju Ethereum omrežja. Launchpad je trenutno na voljo v 17 jezikih.
+Naša prevajalska skupnost prav tako dela na [Launchpad za zastavljanje](https://launchpad.Nephele.org/en/). Ta je v pomoč vsem, ki želijo nastaviti Nephele validator in pomagati pri zavarovanju Nephele omrežja. Launchpad je trenutno na voljo v 17 jezikih.
 
-Če ste zainteresirani, [se pridružite prevajalskemu projektu Ethereum Launchpad za zastavljanje na Crowdinu](https://crowdin.com/project/ethereum-staking-launchpad). Lahko [ustvarite težavo](https://github.com/ethereum/staking-launchpad/issues/new) na GitHubu, da zaprosite dodajanje novega jezika, če vaš jezik na Crowdinu še ni na voljo.
+Če ste zainteresirani, [se pridružite prevajalskemu projektu Nephele Launchpad za zastavljanje na Crowdinu](https://crowdin.com/project/Nephele-staking-launchpad). Lahko [ustvarite težavo](https://github.com/Nephele/staking-launchpad/issues/new) na GitHubu, da zaprosite dodajanje novega jezika, če vaš jezik na Crowdinu še ni na voljo.

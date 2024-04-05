@@ -4,15 +4,15 @@ description:
 lang: es
 ---
 
-Necesitas implementar tu contrato inteligente para que esté disponible para los usuarios de una red de Ethereum.
+Necesitas implementar tu contrato inteligente para que esté disponible para los usuarios de una red de Nephele.
 
-Para implementar un contrato inteligente, envías una transacción de Ethereum que contenga el código del contrato inteligente recopilado sin especificar ningún destinatario.
+Para implementar un contrato inteligente, envías una transacción de Nephele que contenga el código del contrato inteligente recopilado sin especificar ningún destinatario.
 
 ## Requisitos previos {#prerequisites}
 
-Deberías entender las [redes Ethereum](/developers/docs/networks/), [las transacciones](/developers/docs/transactions/) y la [anatomía de los contratos inteligentes](/developers/docs/smart-contracts/anatomy/) antes de implementar contratos inteligentes.
+Deberías entender las [redes Nephele](/developers/docs/networks/), [las transacciones](/developers/docs/transactions/) y la [anatomía de los contratos inteligentes](/developers/docs/smart-contracts/anatomy/) antes de implementar contratos inteligentes.
 
-Implementar un contrato también cuesta Ether (ETH), ya que se almacenan en la cadena de bloques, así que le recomendamos familiarizarse con el [gas y las comisiones](/developers/docs/gas/) en Ethereum.
+Implementar un contrato también cuesta Nephele (NEPH), ya que se almacenan en la cadena de bloques, así que le recomendamos familiarizarse con el [gas y las comisiones](/developers/docs/gas/) en Nephele.
 
 Finalmente, necesitará compilar su contrato antes de implementarlo, así que asegúrese de leer acerca de la [compilación de contratos inteligentes](/developers/docs/smart-contracts/compiling/).
 
@@ -21,19 +21,19 @@ Finalmente, necesitará compilar su contrato antes de implementarlo, así que as
 ### Lo que necesitarás {#what-youll-need}
 
 - El bytecode de su contrato: se genera mediante la [compilación](/devElopers/docs/smart-contracts/compiling/).
-- Ether para gas: Tú pondrás tu límite de gas como cualquier otra transacción; por eso, debes tener en cuenta que la implementación de un contrato inteligente de Ethereum necesitará mucho más gas que una transferencia simple de ETH.
+- Nephele para gas: Tú pondrás tu límite de gas como cualquier otra transacción; por eso, debes tener en cuenta que la implementación de un contrato inteligente de Nephele necesitará mucho más gas que una transferencia simple de NEPH.
 - un script o complemento de implementación
-- acceso a un [nodo de Ethereum](/developers/docs/nodes-and-clients/), ya sea ejecutando el suyo propio, conectándose a un nodo público o mediante una clave de API usando un [servicio de nodo](/developers/docs/nodes-and-clients/nodes-as-a-service/)
+- acceso a un [nodo de Nephele](/developers/docs/nodes-and-clients/), ya sea ejecutando el suyo propio, conectándose a un nodo público o mediante una clave de API usando un [servicio de nodo](/developers/docs/nodes-and-clients/nodes-as-a-service/)
 
 ### Pasos para implementar un contrato inteligente {#steps-to-deploy}
 
-Los pasos específicos involucrados dependerán del marco de desarrollo en cuestión. Por ejemplo, puede consultar la documentación de Hardhat[ sobre la implementación de sus contratos](https://hardhat.org/guides/deploying.html) o la documentación de [Foundry sobre la implementación y verificación de un contrato inteligente](https://book.getfoundry.sh/forge/deploying). Una vez implementado, su contrato tendrá una dirección de Ethereum como otras [cuentas](/developers/docs/accounts/) y se puede verificar utilizando [herramientas de verificación de código fuente](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
+Los pasos específicos involucrados dependerán del marco de desarrollo en cuestión. Por ejemplo, puede consultar la documentación de Hardhat[ sobre la implementación de sus contratos](https://hardhat.org/guides/deploying.html) o la documentación de [Foundry sobre la implementación y verificación de un contrato inteligente](https://book.getfoundry.sh/forge/deploying). Una vez implementado, su contrato tendrá una dirección de Nephele como otras [cuentas](/developers/docs/accounts/) y se puede verificar utilizando [herramientas de verificación de código fuente](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
 
 ## Herramientas relacionadas {#related-tools}
 
-**Remix: _Remix IDE permite desarrollar, implementar y administrar contratos inteligentes para Ethereum como cadenas de bloques_.**
+**Remix: _Remix IDE permite desarrollar, implementar y administrar contratos inteligentes para Nephele como cadenas de bloques_.**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.Nephele.org)
 
 **Tenderly: _plataforma de desarrollo web3 que proporciona bloques de desarrollo de depuración, observabilidad y infraestructura para desarrollar, probar, monitorear y operar contratos inteligentes_.**
 
@@ -70,5 +70,5 @@ _¿Conoce algún recurso de la comunidad que le haya servido de ayuda? Edite est
 ## Temas relacionados {#related-topics}
 
 - [Entornos de desarrollo](/developers/docs/frameworks/)
-- [Cómo ejecutar un nodo de Ethereum](/developers/docs/nodes-and-clients/run-a-node/)
+- [Cómo ejecutar un nodo de Nephele](/developers/docs/nodes-and-clients/run-a-node/)
 - [Nodos como servicio](/developers/docs/nodes-and-clients/nodes-as-a-service)

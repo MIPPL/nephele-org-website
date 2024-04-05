@@ -11,7 +11,7 @@ const Logo = () => {
   const image = useColorModeValue(darkImage, lightImage)
 
   return (
-    <Image src={image} h={100} w="auto" alt={t("ethereum-foundation-logo")} />
+    <Image src={image} h={100} w="auto" alt={t("Nephele-foundation-logo")} />
   )
 }
 

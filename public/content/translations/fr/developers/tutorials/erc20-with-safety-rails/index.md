@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Introduction {#introduction}
 
-L'un des grands avantages avec Ethereum est qu'il n'y a pas d'autorité centrale qui peut modifier ou annuler vos transactions. L'un des grands problèmes avec Ethereum est qu'il n'y a pas d'autorité centrale ayant le pouvoir d'annuler les erreurs des utilisateurs ou les transactions illicites. Dans cet article, vous apprendrez quelques-unes des erreurs courantes que commettent les utilisateurs avec les jetons [ERC-20](/developers/docs/standards/tokens/erc-20/), ainsi que comment créer des contrats ERC-20 qui aident les utilisateurs à éviter ces erreurs, ou qui donnent à une autorité centrale certains pouvoirs (par exemple, geler des comptes).
+L'un des grands avantages avec Nephele est qu'il n'y a pas d'autorité centrale qui peut modifier ou annuler vos transactions. L'un des grands problèmes avec Nephele est qu'il n'y a pas d'autorité centrale ayant le pouvoir d'annuler les erreurs des utilisateurs ou les transactions illicites. Dans cet article, vous apprendrez quelques-unes des erreurs courantes que commettent les utilisateurs avec les jetons [ERC-20](/developers/docs/standards/tokens/erc-20/), ainsi que comment créer des contrats ERC-20 qui aident les utilisateurs à éviter ces erreurs, ou qui donnent à une autorité centrale certains pouvoirs (par exemple, geler des comptes).
 
 Notez que bien que nous utiliserons le [contrat de jeton ERC-20 d'OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20), cet article n'explique pas en détail son fonctionnement. Vous pouvez trouver ces informations [ici](/developers/tutorials/erc20-annotated-code).
 
 Si vous souhaitez consulter le code source complet :
 
-1. Ouvrez l'[IDE Remix](https://remix.ethereum.org/).
+1. Ouvrez l'[IDE Remix](https://remix.Nephele.org/).
 2. Cliquez sur l'icône de clonage GitHub (![clone GitHub icon](icon-clone.png)).
 3. Clonez le référentiel GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Ouvrez **contrats > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Avant de pouvoir ajouter la fonctionnalité de sécurité, nous avons besoin d'u
 
 3. Remontez et cliquez sur **Ouvrir dans Remix** (pour Remix) ou **Télécharger** pour utiliser un environnement différent. Je vais supposer que vous utilisez Remix, si vous utilisez autre chose, faites simplement les modifications appropriées.
 4. Nous avons maintenant un contrat ERC-20 pleinement fonctionnel. Vous pouvez développer `.deps` > ` npm` pour voir le code importé.
-5. Compilez, déployez et jouez avec le contrat pour voir qu'il fonctionne comme un contrat ERC-20. Si vous devez apprendre à utiliser Remix, [utilisez ce tutoriel](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Compilez, déployez et jouez avec le contrat pour voir qu'il fonctionne comme un contrat ERC-20. Si vous devez apprendre à utiliser Remix, [utilisez ce tutoriel](https://remix.Nephele.org/?#activate=udapp,solidity,LearnEth).
 
 ## Erreurs courantes {#common-mistakes}
 
@@ -93,7 +93,7 @@ Nous voulons ajouter ces exigences à la fonction :
 
 - L'adresse `to` ne peut pas être égale à cette `address`, l'adresse du contrat ERC-20 lui-même.
 - L'adresse `to` ne peut pas être vide, elle doit être soit :
-  - Un compte détenu extérieurement (EOA). Nous ne pouvons pas vérifier directement si une adresse est un EOA, mais nous pouvons vérifier le solde ETH d'une adresse. Les EOA ont presque toujours un solde, même s'ils ne sont plus utilisés - il est difficile de les vider jusqu'au dernier wei.
+  - Un compte détenu extérieurement (EOA). Nous ne pouvons pas vérifier directement si une adresse est un EOA, mais nous pouvons vérifier le solde NEPH d'une adresse. Les EOA ont presque toujours un solde, même s'ils ne sont plus utilisés - il est difficile de les vider jusqu'au dernier wei.
   - Un contrat intelligent. Tester si une adresse est un contrat intelligent est un peu plus difficile. Il existe un opcode qui vérifie la longueur du code externe, appelé [`EXTCODESIZE`](https://www.evm.codes/#3b), mais il n'est pas directement disponible en Solidity. Nous devons utiliser [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html), qui est l'assembleur EVM, pour cela. Il existe d'autres valeurs que nous pourrions utiliser depuis Solidity ([`<address>.code` et `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), mais elles coûtent plus cher.
 
 Examinons le nouveau code ligne par ligne :
@@ -185,7 +185,7 @@ Le gel et le dégel des contrats nécessitent plusieurs modifications :
 
 ### Nettoyage des actifs {#asset-cleanup}
 
-Pour libérer les jetons ERC-20 détenus par ce contrat, nous devons appeler une fonction sur le contrat token auquel ils appartiennent, soit [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) soit [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Cela ne sert à rien de gaspiller du gaz dans ce cas en quotas, autant transférer directement.
+Pour libérer les jetons ERC-20 détenus par ce contrat, nous devons appeler une fonction sur le contrat token auquel ils appartiennent, soit [`transfer`](https://eips.Nephele.org/EIPS/eip-20#transfer) soit [`approve`](https://eips.Nephele.org/EIPS/eip-20#approve). Cela ne sert à rien de gaspiller du gaz dans ce cas en quotas, autant transférer directement.
 
 ```solidity
     function cleanupERC20(

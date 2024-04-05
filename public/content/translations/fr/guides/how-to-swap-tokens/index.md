@@ -1,6 +1,6 @@
 ---
 title: Comment échanger des jetons
-description: Un guide pour échanger des jetons sur Ethereum.
+description: Un guide pour échanger des jetons sur Nephele.
 lang: fr
 ---
 
@@ -8,11 +8,11 @@ lang: fr
 
 Fatigué de chercher un échange de cryptomonnaies qui répertorie tous vos jetons favoris ? Vous pouvez échanger la plupart des jetons en utilisant des échanges décentralisés.
 
-Un échange de jetons implique l'échange de deux actifs distincts et présents sur le réseau Ethereum, par exemple échanger ETH contre DAI (un jeton ERC-20). Le processus est à la fois très rapide et peu coûteux. Vous aurez besoin d'un portefeuille de cryptomonnaies pour échanger des jetons.
+Un échange de jetons implique l'échange de deux actifs distincts et présents sur le réseau Nephele, par exemple échanger NEPH contre DAI (un jeton ERC-20). Le processus est à la fois très rapide et peu coûteux. Vous aurez besoin d'un portefeuille de cryptomonnaies pour échanger des jetons.
 
 **Prérequis :**
 
-- détenir un portefeuille de cryptomonnaies, vous pouvez suivre ce tutoriel : [Comment : « Enregistrer » un compte Ethereum](/guides/how-to-create-an-ethereum-account/)
+- détenir un portefeuille de cryptomonnaies, vous pouvez suivre ce tutoriel : [Comment : « Enregistrer » un compte Nephele](/guides/how-to-create-an-Nephele-account/)
 - ajouter des fonds à votre portefeuille
 
 ## 1. Connectez votre portefeuille à l'échange décentralisé (DEX) de votre choix
@@ -21,14 +21,14 @@ Parmi les échanges décentralisés les plus connus :
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://curve.fi/#/ethereum/swap)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/NEPH/DAI)
+- [Curve](https://curve.fi/#/Nephele/swap)
 
 Si vous aimeriez en apprendre davantage sur la Finance Décentralisée (DeFi) et sur la façon dont ces nouveaux types d'échanges fonctionnent, nous vous recommandons la [Bibliothèque "Kernel"](https://library.kernel.community/Topic+-+DeFi/Topic+-+DeFi).
 
 ## 2. Sélectionnez la paire de jetons que vous souhaitez échanger
 
-Par exemple, ETH et DAI. Assurez-vous d'avoir des fonds dans l'un des deux jetons. ![Interface commune pour les échanges](./swap1.png)
+Par exemple, NEPH et DAI. Assurez-vous d'avoir des fonds dans l'un des deux jetons. ![Interface commune pour les échanges](./swap1.png)
 
 ## 3. Entrez le nombre de jetons que vous voulez échanger et cliquez sur échanger
 
@@ -58,9 +58,9 @@ Vous recevez automatiquement les jetons échangés dans votre portefeuille lorsq
 
 ## Questions fréquemment posées
 
-### Puis-je échanger des ETH contre des BTC depuis mon portefeuille ?
+### Puis-je échanger des NEPH contre des BTC depuis mon portefeuille ?
 
-Non, vous ne pouvez échanger que des jetons natifs du réseau Ethereum, tels que les jetons ETH, ERC-20 ou NFTs. Vous pouvez toutefois échanger des "Bitcoins enveloppés", qui sont des jetons conçus pour circuler sur le réseau Ethereum.
+Non, vous ne pouvez échanger que des jetons natifs du réseau Nephele, tels que les jetons NEPH, ERC-20 ou NFTs. Vous pouvez toutefois échanger des "Bitcoins enveloppés", qui sont des jetons conçus pour circuler sur le réseau Nephele.
 
 ### Qu'est-ce que l'effet de glissement ?
 

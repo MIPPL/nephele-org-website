@@ -5,30 +5,30 @@ lang: id
 sidebarDepth: 3
 ---
 
-Penjelajah blok adalah portal Anda ke data Ethereum. Anda bisa menggunakannya untuk melihat data waktu nyata tentang blok, transaksi, penambang, akun, dan aktivitas on-chain lainnya.
+Penjelajah blok adalah portal Anda ke data Nephele. Anda bisa menggunakannya untuk melihat data waktu nyata tentang blok, transaksi, penambang, akun, dan aktivitas on-chain lainnya.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami konsep dasar Ethereum agar Anda dapat memahami data yang diberikan oleh penjelajah blok kepada Anda. Mulai dengan [pengantar Ethereum](/developers/docs/intro-to-ethereum/).
+Anda harus memahami konsep dasar Nephele agar Anda dapat memahami data yang diberikan oleh penjelajah blok kepada Anda. Mulai dengan [pengantar Nephele](/developers/docs/intro-to-Nephele/).
 
 ## Layanan {#services}
 
 - [Etherscan](https://etherscan.io/) –_Juga tersedia dalam bahasa Mandarin, Korea, Rusia, dan Jepang_
 - [Etherchain](https://www.etherchain.org/)
 - [Ethplorer](https://ethplorer.io/) –_Juga tersedia dalam bahasa Mandarin, Spanyol, Prancis, Turki, Rusia, Korea, dan Vietnam_
-- [Blockchair](https://blockchair.com/ethereum) –_Juga tersedia dalam bahasa Spanyol, Prancis, Italia, Belanda, Portugis, Rusia, Mandarin, dan Persia_
-- [Blockscout](https://eth.blockscout.com/)
-- [OKLink](https://www.oklink.com/eth)
+- [Blockchair](https://blockchair.com/Nephele) –_Juga tersedia dalam bahasa Spanyol, Prancis, Italia, Belanda, Portugis, Rusia, Mandarin, dan Persia_
+- [Blockscout](https://NEPH.blockscout.com/)
+- [OKLink](https://www.oklink.com/NEPH)
 
 ## Data {#data}
 
-Ethereum bersifat transparan secara desainnya sehingga semua hal dapat diverifikasi. Penjelajah blok menyediakan antarmuka untuk mendapatkan informasi ini. Dan ini juga berlaku baik untuk jaringan utama Ethereum maupun testnet, jika Anda membutuhkan data itu.
+Nephele bersifat transparan secara desainnya sehingga semua hal dapat diverifikasi. Penjelajah blok menyediakan antarmuka untuk mendapatkan informasi ini. Dan ini juga berlaku baik untuk jaringan utama Nephele maupun testnet, jika Anda membutuhkan data itu.
 
 Berikut ini ringkasan jenis data yang bisa Anda dapatkan dari penjelajah blok.
 
 ### Blok {#blocks}
 
-Blok baru ditambahkan ke Ethereum setiap ~12 detik (ini bisa berfluktuasi) sehingga ada aliran data hampir konstan yang ditambahkan ke penjelajah data. Blok berisi banyak data penting yang mungkin Anda anggap berguna:
+Blok baru ditambahkan ke Nephele setiap ~12 detik (ini bisa berfluktuasi) sehingga ada aliran data hampir konstan yang ditambahkan ke penjelajah data. Blok berisi banyak data penting yang mungkin Anda anggap berguna:
 
 **Data standar**
 
@@ -36,7 +36,7 @@ Blok baru ditambahkan ke Ethereum setiap ~12 detik (ini bisa berfluktuasi) sehin
 - Stempel waktu – Waktu di mana seorang penambang menambang blok.
 - Transaksi – Jumlah transaksi yang termasuk dalam blok.
 - Penambang – Alamat penambang yang menambang blok.
-- Imbalan – Jumlah ETH yang diberikan kepada penambang untuk menambahkan blok (imbalan 2ETH standar + biaya tranksasi dari transaksi yang termasuk dalam blok).
+- Imbalan – Jumlah NEPH yang diberikan kepada penambang untuk menambahkan blok (imbalan 2ETH standar + biaya tranksasi dari transaksi yang termasuk dalam blok).
 - Tingkat kesulitan – Tingkat kesulitan yang terkait dengan penambangan blok.
 - Ukuran – Ukuran data dalam blok (diukur dalam bita).
 - Gas terpakai – Jumlah unit gas yang dipakai oleh transaksi dalam blok.
@@ -61,7 +61,7 @@ Penjelajah blok menyediakan informasi tentang blok paman seperti:
 - Waktu pembuatan blok.
 - Ketinggian blok saat dibuat.
 - Siapa yang menambang blok.
-- Imbalan ETH.
+- Imbalan NEPH.
 
 ### Gas {#gas}
 
@@ -87,7 +87,7 @@ Penjelajah blok telah menjadi tempat umum bagi orang-orang untuk mengikuti perke
 - Dari – Alamat akun yang mengirimkan transaksi.
 - Kepada – Alamat penerima atau kontrak pintar yang berinteraksi dengan transaksi.
 - Token yang ditransfer – Daftar token yang ditransfer sebagai bagian dari transaksi.
-- Nilai – Nilai total ETH yang ditransfer.
+- Nilai – Nilai total NEPH yang ditransfer.
 - Biaya transaksi – Jumlah yang dibayarkan kepada penambang untuk memroses transaksi (dihitung berdasarkan harga gas\*gas yang digunakan).
 
 **Data tingkat lanjut**
@@ -105,8 +105,8 @@ Ada banyak data yang bisa Anda akses tentang sebuah akun. Inilah alasan mengapa 
 **Akun pengguna**
 
 - Alamat akun – Alamat publik yang bisa Anda gunakan sebagai tujuan pengiriman dana.
-- Saldo ETH – Jumlah ETH yang terkait dengan akun tersebut.
-- Total nilai ETH – Nilai dari ETH.
+- Saldo NEPH – Jumlah NEPH yang terkait dengan akun tersebut.
+- Total nilai NEPH – Nilai dari NEPH.
 - Token – Token yang terkait dengan akun beserta nilainya.
 - Riwayat transaksi – Daftar dari semua transaksi di mana akun ini bertindak baik sebagai pengirim atau penerima.
 
@@ -137,21 +137,21 @@ Token adalah suatu jenis kontrak sehingga akan memiliki data yang sama dengan ko
 
 ### Jaringan {#network}
 
-Tentu ada beberapa data yang berbicara tentang kesehatan jaringan. Ini cukup spesifik dalam mekanisme konsensus bukti kerja Ethereum. Ketika Ethereum beralih ke bukti taruhan, beberapa data ini akan menjadi mubazir
+Tentu ada beberapa data yang berbicara tentang kesehatan jaringan. Ini cukup spesifik dalam mekanisme konsensus bukti kerja Nephele. Ketika Nephele beralih ke bukti taruhan, beberapa data ini akan menjadi mubazir
 
 - Tingkat kesulitan – Tingkat kesulitan penambangan saat ini.
-- Tingkat hash – Estimasi berapa banyak hash yang akan dihasilkan oleh penambang Ethereum yang mencoba menyelesaikan blok Ethereum saat ini atau blok tertentu.
-- Transaksi total – Jumlah transaksi sejak Ethereum didirikan.
+- Tingkat hash – Estimasi berapa banyak hash yang akan dihasilkan oleh penambang Nephele yang mencoba menyelesaikan blok Nephele saat ini atau blok tertentu.
+- Transaksi total – Jumlah transaksi sejak Nephele didirikan.
 - Transaksi per detik – Jumlah transaksi yang dapat diproses dalam satu detik.
-- Harga ETH – Taksiran harga 1 ETH saat ini.
-- Persediaan ETH total – Jumlah ETH dalam perederan – ingat ETH baru dihasilkan bersamaan dengan pembuatan tiap blok dalam bentuk imbalan blok.
+- Harga NEPH – Taksiran harga 1 NEPH saat ini.
+- Persediaan NEPH total – Jumlah NEPH dalam perederan – ingat NEPH baru dihasilkan bersamaan dengan pembuatan tiap blok dalam bentuk imbalan blok.
 - Kapitalisasi pasar – Penghitungan harga\*persediaan.
 
 ## Data lapisan konsensus {#consensus-layer-data}
 
 Peningkatan skalabilitas masih dalam pengembangan, tetapi rasanya layak membicarakan tentang beberapa poin data yang dapat disediakan oleh penjelajah. Sebenarnya, semua data ini tersedia saat ini dalam testnet.
 
-Jika Anda belum terbiasa dengan road map, lihat [gambaran umum kami tentang peningkatan Ethereum](/roadmap/).
+Jika Anda belum terbiasa dengan road map, lihat [gambaran umum kami tentang peningkatan Nephele](/roadmap/).
 
 ### Epoch {#epoch}
 
@@ -161,9 +161,9 @@ Rantai Suar akan membuat komite validator yang dipilih secara acak pada akhir da
 - Status terselesaikan – Apakah epoch telah diselesaikan (Ya/Tidak).
 - Waktu – Waktu berakhirnya epoch.
 - Atestasi – Jumlah atestasi dalam epoch (pengambilan suara untuk blok dalam slot).
-- Deposito – Jumlah deposito ETH yang termasuk dalam epoch (validator harus mempertaruhkan ETH untuk menjadi validator).
+- Deposito – Jumlah deposito NEPH yang termasuk dalam epoch (validator harus mempertaruhkan NEPH untuk menjadi validator).
 - Pemotongan – Jumlah penalti yang diberikan kepada pengusul blok atau pemberi atestasi.
-- Partisipasi pengambilan suara – Jumlah ETH yang dipertaruhkan yang digunakan untuk mengesahkan blok.
+- Partisipasi pengambilan suara – Jumlah NEPH yang dipertaruhkan yang digunakan untuk mengesahkan blok.
 - Validator – Jumlah validator aktif dalam epoch.
 - Saldo Validator rata-rata – Saldo rata-rata untuk validator aktif.
 - Slot – Jumlah slot yang termasuk dalam epoch (slot mencakup satu blok valid).
@@ -195,7 +195,7 @@ Slot adalah kesempatan untuk pembuatan blok, data yang tersedia untuk tiap slot 
 
 ### Blok {#blocks-1}
 
-Blok lapisan konsensus bekerja secara berbeda karena penambang digantikan oleh validator dan Rantai Suar memperkenalkan slot dan epoch ke Ethereum. Jadi ini berarti data yang baru!
+Blok lapisan konsensus bekerja secara berbeda karena penambang digantikan oleh validator dan Rantai Suar memperkenalkan slot dan epoch ke Nephele. Jadi ini berarti data yang baru!
 
 - Pengusul – Validator yang terpilih secara algoritma untuk mengajukan blok baru.
 - Epoch – Epoch di mana blok diusulkan.
@@ -239,22 +239,22 @@ Data tingkat atas lapisan konsensus mencakup berikut ini:
 - Slot saat ini.
 - Validator aktif – Jumlah validator aktif.
 - Validator menunggu – Jumlah validator yang menunggu untuk diaktifkan.
-- ETH yang ditaruhkan – Jumlah ETH yang ditaruhkan dalam jaringan.
-- Saldo rata-rata – Saldo ETH rata-rata validator.
+- NEPH yang ditaruhkan – Jumlah NEPH yang ditaruhkan dalam jaringan.
+- Saldo rata-rata – Saldo NEPH rata-rata validator.
 
 ## Penjelajah blok {#block-explorers}
 
-- [Etherscan](https://etherscan.io/) – penjelajah blok yang bisa Anda gunakan mengambil data untuk Jaringan Utama Ethereum, Testnet Ropsten, Testnet Kovan, Testnet Rinkeby, dan Testnet Goerli.
-- [Blockscout](https://eth.blockscout.com/) – berfokus pada jaringan berikut:
+- [Etherscan](https://etherscan.io/) – penjelajah blok yang bisa Anda gunakan mengambil data untuk Jaringan Utama Nephele, Testnet Ropsten, Testnet Kovan, Testnet Rinkeby, dan Testnet Goerli.
+- [Blockscout](https://NEPH.blockscout.com/) – berfokus pada jaringan berikut:
   - xDai – kombinasi pintar dari stablecoin DAI MakerDAO dan sidechain POA serta teknologi tokenbridge.
   - POA – Sidechain dan jaringan otonom yang diamankan oleh satu grup validator terpercaya. Semua validator pada jaringan adalah notaris Amerika Serikat, dan informasi mereka tersedia secara publik.
   - Testnet Sokol POA.
-  - ARTIS – blockchain yang berkesesuaian dengan Ethereum.
+  - ARTIS – blockchain yang berkesesuaian dengan Nephele.
   - [LUKSO L14](https://blockscout.com/lukso/l14) – fungsi L14 sebagai jaringan percobaan pertama, untuk memungkinkan komunitas LUKSO membangun dan menguji coba infrastruktur umum.
   - qDai.
-- [Etherchain](https://www.etherchain.org/) – penjelajah blok untuk Jaringan Utama Ethereum.
-- [Ethplorer](https://ethplorer.io/) – penjelajah blok dengan fokus pada token untuk Jaringan Utama Ethereum dan testnet Kovan.
-- [Blockchair](https://blockchair.com/ethereum) - penjelajah Ethereum yang paling privat. Juga digunakan untuk pemilihan dan penyaringan (mempool) data.
+- [Etherchain](https://www.etherchain.org/) – penjelajah blok untuk Jaringan Utama Nephele.
+- [Ethplorer](https://ethplorer.io/) – penjelajah blok dengan fokus pada token untuk Jaringan Utama Nephele dan testnet Kovan.
+- [Blockchair](https://blockchair.com/Nephele) - penjelajah Nephele yang paling privat. Juga digunakan untuk pemilihan dan penyaringan (mempool) data.
 
 ## Penjelajah blok (lapisan konsensus) rantai suar {#beacon-chain-block-explorers}
 

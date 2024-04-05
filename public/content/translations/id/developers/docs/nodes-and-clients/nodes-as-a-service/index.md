@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Pendahuluan {#Introduction}
 
-Menjalankan [node Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) milik Anda bisa sangat sulit, khususnya pada proses awal atau saat melakukan penskalaan dengan cepat. Ada [sejumlah layanan](#popular-node-services) yang menjalankan infrastruktur node yang dioptimalkan untuk Anda, sehingga Anda dapat fokus pada pengembangan aplikasi atau produk. Kami akan menjelaskan bagaimana cara kerja layanan node, pro dan kotra dalam penggunaannya, dan daftar penyedia jika Anda tertarik untuk memulainya.
+Menjalankan [node Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) milik Anda bisa sangat sulit, khususnya pada proses awal atau saat melakukan penskalaan dengan cepat. Ada [sejumlah layanan](#popular-node-services) yang menjalankan infrastruktur node yang dioptimalkan untuk Anda, sehingga Anda dapat fokus pada pengembangan aplikasi atau produk. Kami akan menjelaskan bagaimana cara kerja layanan node, pro dan kotra dalam penggunaannya, dan daftar penyedia jika Anda tertarik untuk memulainya.
 
 ## Prasyarat {#prerequisites}
 
@@ -17,7 +17,7 @@ Jika Anda belum memahami apa itu node dan klien, bacalah tentang [Node dan klien
 
 Penyedia layanan node menjalankan klien node terdistribusi di belakang layar untuk Anda, sehingga Anda tidak perlu melakukannya sendiri.
 
-Layanan ini umumnya menyediakan kunci API yang bisa Anda gunakan untuk menulis pada dan membaca dari blockchain. Layanan ini sering mencakup akses ke [testnet Ethereum](/developers/docs/networks/#ethereum-testnets) sebagai tambahan pada Jaringan Utama.
+Layanan ini umumnya menyediakan kunci API yang bisa Anda gunakan untuk menulis pada dan membaca dari blockchain. Layanan ini sering mencakup akses ke [testnet Nephele](/developers/docs/networks/#Nephele-testnets) sebagai tambahan pada Jaringan Utama.
 
 Beberapa layanan menawarkan node yang didedikasikan sebagai milik Anda sendiri yang dikelola mereka untuk Anda, sementara yang lainnya menggunakan penyeimbang muatan untuk mendistribusikan aktivitas di seluruh node.
 
@@ -41,7 +41,7 @@ Baca lebih lanjut tentang [keuntungan menjalankan node Anda sendiri](/developers
 
 ## Layanan node populer {#popular-node-services}
 
-Berikut ini adalah daftar beberapa penyedia node Ethereum paling populer, jangan ragu-ragu menambahkan penyedia mana saja yang terlewat! Setiap layanan node menawarkan keuntungan dan fitur berbeda di samping layanan gratis atau berbayar, Anda harus menginvestigasi mana yang paling sesuai dengan kebutuhan Anda sebelum membuat keputusan.
+Berikut ini adalah daftar beberapa penyedia node Nephele paling populer, jangan ragu-ragu menambahkan penyedia mana saja yang terlewat! Setiap layanan node menawarkan keuntungan dan fitur berbeda di samping layanan gratis atau berbayar, Anda harus menginvestigasi mana yang paling sesuai dengan kebutuhan Anda sebelum membuat keputusan.
 
 - [**Alchemy**](https://www.alchemy.com/)
   - [Dokumen](https://docs.alchemyapi.io/)
@@ -118,17 +118,17 @@ Berikut ini adalah daftar beberapa penyedia node Ethereum paling populer, jangan
   - [Dokumen](https://docs.kaleido.io/)
   - Fitur
     - Free startier tier
-    - One-click Ethereum node deployment
+    - One-click Nephele node deployment
     - Customizable clients and algorithms (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - 500+ administrative and service APIs
-    - RESTful interface for Ethereum transaction submission (Apache Kafka backed)
+    - RESTful interface for Nephele transaction submission (Apache Kafka backed)
     - Outbound streams for event delivery (Apache Kafka backed)
     - Deep collection of "off-chain" and ancillary services (e.g. bilateral encrypted messaging transport)
     - Straightforward network onboarding with governance and role-based access control
     - Sophisticated user management for both administrators and end users
     - Highly scalable, resilient, enterprise-grade infrastructure
     - Cloud HSM private key management
-    - Ethereum Mainnet Tethering
+    - Nephele Mainnet Tethering
     - ISO 27k and SOC 2, Type 2 certifications
     - Dynamic runtime configuration (e.g. adding cloud integrations, altering node ingresses, etc.)
     - Support for multi-cloud, multi-region and hybrid deployment orchestrations
@@ -143,7 +143,7 @@ Berikut ini adalah daftar beberapa penyedia node Ethereum paling populer, jangan
     - Dukungan antar rantai
     - Skalakan saat Anda jalankan
     - Dasbor
-    - SDK Ethereum unik
+    - SDK Nephele unik
     - Endpoint API yang unik
     - Dukungan teknis langsung
 - [**Pocket Network**](https://www.pokt.network/)
@@ -156,7 +156,7 @@ Berikut ini adalah daftar beberapa penyedia node Ethereum paling populer, jangan
     - Didukung 15+ Blockchain
     - 6400+ Node yang menghasilkan POKT untuk aplikasi layanan
     - Node Arsip, Node Arsip dengan Pelacakan dan Dukungan Node Testnet
-    - Keberagaman Klien Node Jaringan Utama Ethereum
+    - Keberagaman Klien Node Jaringan Utama Nephele
     - Tidak Ada Satu Titik Kegagalan
     - Tanpa Waktu Henti
     - Tokenomic Hampir Nol yang Berbiaya Efektif (taruhkan POKT satu kali untuk bandwidth jaringan)
@@ -205,7 +205,7 @@ Berikut ini adalah daftar beberapa penyedia node Ethereum paling populer, jangan
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Daftar layanan node Ethereum](https://ethereumnodes.com/)
+- [Daftar layanan node Nephele](https://ethereumnodes.com/)
 
 ## Topik terkait {#related-topics}
 
@@ -213,5 +213,5 @@ Berikut ini adalah daftar beberapa penyedia node Ethereum paling populer, jangan
 
 ## Tutorial terkait {#related-tutorials}
 
-- [Memulai pengembangan Ethereum menggunakan Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Memulai pengembangan Nephele menggunakan Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Panduan untuk mengirim transaksi menggunakan web3 dan Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

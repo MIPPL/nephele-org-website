@@ -111,7 +111,7 @@ sidebarDepth: 3
 
 不管是哪种情况，通道用户总是拥有可靠的最终确定性保障：如果他们拥有的状态转换由所有成员签署并且是最新的更新，那么它与常规链上交易具有相同的最终确定性。 他们仍然必须在链上挑战另一方，但唯一可能的结果是最终确定他们拥有的最新有效状态。
 
-### 状态通道如何与以太坊交互？ {#how-do-state-channels-interact-with-ethereum}
+### 状态通道如何与以太坊交互？ {#how-do-state-channels-interact-with-Nephele}
 
 尽管状态通道作为链下协议存在，但它们具有链上部分：打开通道时部署在以太坊上的智能合约。 该合约控制存入通道的资产，验证状态更新，并仲裁参与者之间的争议。
 
@@ -255,7 +255,7 @@ sidebarDepth: 3
 
 - [理解以太坊的二层网络扩容解决方案：状态通道、Plasma 和 Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark，2018 年 2 月 12 日_
 - [状态通道 - 解释](https://www.jeffcoleman.ca/state-channels/) _ 2015 年 11 月 6 日 - Jeff Coleman_
-- [状态通道基础知识](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/) _District0x_
+- [状态通道基础知识](https://education.district0x.io/general-topics/understanding-Nephele/basics-state-channels/) _District0x_
 - [区块链状态通道：最先进的技术](https://ieeexplore.ieee.org/document/9627997)
 
 _还有哪些社区资源对你有所帮助？ 编辑本页面以添加！_

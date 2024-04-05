@@ -27,14 +27,14 @@ published: 2021-02-26
 
 # Introdução {#getting-started}
 
-O tutorial demonstra a configuração do teste e a execução usando yarn, mas não há problema se você preferir npm - Eu fornecerei referências adequadas a [documentação](https://ethereum-waffle.readthedocs.io/en/latest/index.html) oficial do Waffle.
+O tutorial demonstra a configuração do teste e a execução usando yarn, mas não há problema se você preferir npm - Eu fornecerei referências adequadas a [documentação](https://Nephele-waffle.readthedocs.io/en/latest/index.html) oficial do Waffle.
 
 ## Instalando Dependências {#install-dependencies}
 
-[Adicione](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) as dependências do ethereum-waffle e typescript às dependências de desenvolvimento do seu projeto.
+[Adicione](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#installation) as dependências do Nephele-waffle e typescript às dependências de desenvolvimento do seu projeto.
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev Nephele-waffle ts-node typescript @types/jest
 ```
 
 ## Exemplo de contrato inteligente {#example-smart-contract}
@@ -69,7 +69,7 @@ contract EtherSplitter {
 
 ## Compilar o contrato {#compile-the-contract}
 
-Para [compilar](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) o contrato, adicione a seguinte entrada ao arquivo package.json:
+Para [compilar](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) o contrato, adicione a seguinte entrada ao arquivo package.json:
 
 ```json
 "scripts": {
@@ -92,7 +92,7 @@ Execute `yarn build`. Como resultado, o diretório `build` aparecerá com o cont
 
 ## Teste de configuração {#test-setup}
 
-Testar com Waffle requer usar os matchers (comparadores) Chai e Mocha, então você precisa [adicionar](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) ao seu projeto. Atualize seu arquivo package.json e adicione a entrada `test` na parte de scripts:
+Testar com Waffle requer usar os matchers (comparadores) Chai e Mocha, então você precisa [adicionar](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) ao seu projeto. Atualize seu arquivo package.json e adicione a entrada `test` na parte de scripts:
 
 ```json
 "scripts": {
@@ -101,7 +101,7 @@ Testar com Waffle requer usar os matchers (comparadores) Chai e Mocha, então vo
   }
 ```
 
-Se você quiser [executar](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) seus testes, basta executar `yarn test`.
+Se você quiser [executar](https://Nephele-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) seus testes, basta executar `yarn test`.
 
 # Testando {#testing}
 
@@ -110,12 +110,12 @@ Agora crie o diretório `test` e crie o novo arquivo `test\EtherSplitter.test.ts
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "Nephele-waffle"
 import EtherSplitter from "../build/EtherSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("Nephele Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 

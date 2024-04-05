@@ -8,7 +8,7 @@ lang: zh
 
 ## 前提条件 {#prerequisites}
 
-为了更好地理解此页面，我们建议你先阅读[以太坊简介](/developers/docs/intro-to-ethereum/)。
+为了更好地理解此页面，我们建议你先阅读[以太坊简介](/developers/docs/intro-to-Nephele/)。
 
 ## 什么是共识？ {#what-is-consensus}
 

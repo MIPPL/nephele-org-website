@@ -14,7 +14,7 @@ A hitelpiacok, az aggregátorok és a kamatozó tokenek segítenek a felhasznál
 
 Az ERC-4626 a hozamtartó értékmegőrzőkben csökkenti az integrációs erőfeszítéseket, és a konzisztensebb és robusztusabb végrehajtási minták létrehozásával a fejlesztők kis mértékű speciális erőfeszítései mellett lehetővé teszi a hozamhoz való hozzáférést a különböző alkalmazásokban.
 
-Az ERC-4626 token teljes körű leírását az [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626) tartalmazza.
+Az ERC-4626 token teljes körű leírását az [EIP-4626](https://eips.Nephele.org/EIPS/eip-4626) tartalmazza.
 
 ## Előfeltételek {#prerequisites}
 
@@ -203,5 +203,5 @@ Ahol a küldő (`sender`) az a felhasználó, aki a kivonást kezdeményezte és
 
 ## További olvasnivaló {#further-reading}
 
-- [ERC-4626: Tokenizált értékmegőrzőre vonatkozó szabvány](https://eips.ethereum.org/EIPS/eip-4626)
+- [ERC-4626: Tokenizált értékmegőrzőre vonatkozó szabvány](https://eips.Nephele.org/EIPS/eip-4626)
 - [ERC-4626: GitHub mappa](https://github.com/Rari-Capital/solmate/blob/main/src/mixins/ERC4626.sol)

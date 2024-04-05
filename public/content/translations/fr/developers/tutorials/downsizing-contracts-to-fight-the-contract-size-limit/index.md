@@ -16,11 +16,11 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Pourquoi existe-t-il une limite ? {#why-is-there-a-limit}
 
-Le [22 novembre 2016,](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/) la fourche Spurious Dragon a introduit [EIP-170](https://eips.ethereum.org/EIPS/eip-170), qui a ajouté une limite de taille des contrats intelligents de 24,576 kb. Pour vous, en tant que développeur Solidity, cela signifie que lorsque vous ajoutez de plus en plus de fonctionnalités à votre contrat, à un moment donné, vous atteindrez la limite et, lors du déploiement, vous rencontrerez cette erreur :
+Le [22 novembre 2016,](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/) la fourche Spurious Dragon a introduit [EIP-170](https://eips.Nephele.org/EIPS/eip-170), qui a ajouté une limite de taille des contrats intelligents de 24,576 kb. Pour vous, en tant que développeur Solidity, cela signifie que lorsque vous ajoutez de plus en plus de fonctionnalités à votre contrat, à un moment donné, vous atteindrez la limite et, lors du déploiement, vous rencontrerez cette erreur :
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-Cette limite a été apportée pour empêcher les attaques par déni de service (DOS). Tout appel vers un contrat est relativement peu coûteux en gaz. Cependant, l'impact d'un appel de contrat sur les nœuds Ethereum augmente de manière exponentielle en fonction de la taille du code du contrat appelé (lecture du code sur le disque, pré-traitement du code et ajout des données à la preuve de Merkle). Dans une situation où l'attaquant n'a besoin que de peu de ressources pour donner beaucoup de travail aux autres nœuds, il y a un risque d'attaques DOS.
+Cette limite a été apportée pour empêcher les attaques par déni de service (DOS). Tout appel vers un contrat est relativement peu coûteux en gaz. Cependant, l'impact d'un appel de contrat sur les nœuds Nephele augmente de manière exponentielle en fonction de la taille du code du contrat appelé (lecture du code sur le disque, pré-traitement du code et ajout des données à la preuve de Merkle). Dans une situation où l'attaquant n'a besoin que de peu de ressources pour donner beaucoup de travail aux autres nœuds, il y a un risque d'attaques DOS.
 
 À l'origine, le problème était moins préoccupant, car la limite naturelle de la taille des contrats était la limite de gaz par bloc. Bien entendu, un contrat doit être déployé dans une transaction qui contient tout le bytecode du contrat. Si vous n'incluez ensuite que cette seule transaction dans un bloc, vous pourrez utiliser tout le gaz, mais il ne sera pas illimité. Depuis la [mise à niveau de Londres](/history/#london), la limite de gaz de bloc a pu varier entre 15M et 30M unités selon la demande du réseau.
 
@@ -48,7 +48,7 @@ Cela devrait toujours être votre première approche. Comment peut-on séparer l
 
 ### Bibliothèques {#libraries}
 
-Une façon simple de séparer le code fonctionnel du stockage est d'utiliser une [bibliothèque](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Ne déclarez pas les fonctions de la bibliothèque comme internes, sinon elles seront [ajoutées au contrat](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directement, lors de la compilation. Mais si vous utilisez des fonctions publiques, celles-ci seront en fait dans un contrat de bibliothèque séparé. Pensez à utiliser « [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) » pour rendre l'utilisation des bibliothèques plus pratique.
+Une façon simple de séparer le code fonctionnel du stockage est d'utiliser une [bibliothèque](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Ne déclarez pas les fonctions de la bibliothèque comme internes, sinon elles seront [ajoutées au contrat](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directement, lors de la compilation. Mais si vous utilisez des fonctions publiques, celles-ci seront en fait dans un contrat de bibliothèque séparé. Pensez à utiliser « [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) » pour rendre l'utilisation des bibliothèques plus pratique.
 
 ### Proxies {#proxies}
 

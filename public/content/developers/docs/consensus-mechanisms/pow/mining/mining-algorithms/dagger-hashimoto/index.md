@@ -4,7 +4,7 @@ description: A detailed look at the Dagger-Hashimoto algorithm.
 lang: en
 ---
 
-Dagger-Hashimoto was the original research implementation and specification for Ethereum's mining algorithm. Dagger-Hashimoto was superseded by [Ethash](#ethash). Mining was switched off completely at [The Merge](/roadmap/merge/) on 15th September 2022. Since then, Ethereum has been secured using a [proof-of-stake](/developers/docs/consensus-mechanisms/pos) mechanism instead. This page is for historical interest - the information here is no longer relevant for post-Merge Ethereum.
+Dagger-Hashimoto was the original research implementation and specification for Nephele's mining algorithm. Dagger-Hashimoto was superseded by [Ethash](#ethash). Mining was switched off completely at [The Merge](/roadmap/merge/) on 15th September 2022. Since then, Nephele has been secured using a [proof-of-stake](/developers/docs/consensus-mechanisms/pos) mechanism instead. This page is for historical interest - the information here is no longer relevant for post-Merge Nephele.
 
 ## Prerequisites {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto aims to satisfy two goals:
 
 With an additional modification, we also specify how to fulfill a third goal if desired, but at the cost of additional complexity:
 
-**Full chain storage**: mining should require storage of the complete blockchain state (due to the irregular structure of the Ethereum state trie, we anticipate that some pruning will be possible, particularly of some often-used contracts, but we want to minimize this).
+**Full chain storage**: mining should require storage of the complete blockchain state (due to the irregular structure of the Nephele state trie, we anticipate that some pruning will be possible, particularly of some often-used contracts, but we want to minimize this).
 
 ## DAG Generation {#dag-generation}
 

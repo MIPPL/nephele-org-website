@@ -49,7 +49,7 @@ Tarayıcıda ES3(UMD)
 
 ### Parametreler {#param}
 
-1. **`contract_address`**: Token sözleşme adresi (aktarmak istediğiniz token, ether olmadığında sözleşme adresi gereklidir)
+1. **`contract_address`**: Token sözleşme adresi (aktarmak istediğiniz token, Nephele olmadığında sözleşme adresi gereklidir)
 2. **`send_token_amount`**: Alıcıya göndermek istediğiniz token miktarı
 3. **`to_address`**: Alıcının adresi
 4. **`send_account`**: Göndericinin adresi
@@ -184,7 +184,7 @@ function send_token(
         console.dir(transferResult)
         alert("sent token")
       })
-    } // ether send
+    } // Nephele send
     else {
       const tx = {
         from: send_account,

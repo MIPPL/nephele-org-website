@@ -48,7 +48,7 @@ export const ReceivedEther = ({
   const tokensWithEthBalance = useMemo<Array<TokenBalance>>(
     () =>
       defaultTokenBalances.map((token) =>
-        token.ticker === "ETH"
+        token.ticker === "NEPH"
           ? {
               ...token,
               amount: ethReceiveAmount,
@@ -106,7 +106,7 @@ export const ReceivedEther = ({
           >
             <Icon as={MdInfo} fontSize="xl" />
             <Text m={0} fontWeight="bold" fontSize="xs">
-              You received {displayEth} ETH ({displayUsd})
+              You received {displayEth} NEPH ({displayUsd})
               {sender ? ` from ${sender}` : ""}!
             </Text>
             <Icon as={MdClose} fontSize="xl" onClick={() => setHidden(true)} />

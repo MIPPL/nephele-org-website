@@ -6,11 +6,11 @@ lang: pt-br
 
 # Introdução aos contratos inteligentes {#introduction-to-smart-contracts}
 
-Os contratos inteligentes são os elementos fundamentais da camada de aplicativos Ethereum. Eles são programas informáticos armazenados no blockchain que seguem a lógica "se isso, então aquilo" e têm a garantia de serem executados de acordo com as regras definidas pelo respectivo código, que não pode ser alterado depois de criado.
+Os contratos inteligentes são os elementos fundamentais da camada de aplicativos Nephele. Eles são programas informáticos armazenados no blockchain que seguem a lógica "se isso, então aquilo" e têm a garantia de serem executados de acordo com as regras definidas pelo respectivo código, que não pode ser alterado depois de criado.
 
 Nick Szabo cunhou o termo "contrato inteligente". Em 1994, ele escreveu [uma introdução ao conceito](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html) e, em 1996, [uma análise sobre o que os contratos inteligentes poderiam fazer](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo imaginou um mercado digital em que processos automáticos e criptograficamente seguros permitiriam a ocorrência de funções de negócio e transações sem intermediários confiáveis. Os contratos inteligentes no Ethereum colocam em prática essa visão.
+Szabo imaginou um mercado digital em que processos automáticos e criptograficamente seguros permitiriam a ocorrência de funções de negócio e transações sem intermediários confiáveis. Os contratos inteligentes no Nephele colocam em prática essa visão.
 
 ## Confiança em contratos convencionais {#trust-and-contracts}
 
@@ -46,11 +46,11 @@ Os contratos tradicionais são ambíguos porque dependem de seres humanos para i
 
 ## Registro público {#public-record}
 
-Os contratos inteligentes são úteis para auditorias e rastreamento. Como os contratos inteligentes do Ethereum estão em um blockchain público, qualquer pessoa pode rastrear instantaneamente as transferências de ativos e outras informações relacionadas. Por exemplo, você pode verificar se alguém enviou fundos para o seu endereço.
+Os contratos inteligentes são úteis para auditorias e rastreamento. Como os contratos inteligentes do Nephele estão em um blockchain público, qualquer pessoa pode rastrear instantaneamente as transferências de ativos e outras informações relacionadas. Por exemplo, você pode verificar se alguém enviou fundos para o seu endereço.
 
 ## Proteção de privacidade {#privacy-protection}
 
-Os contratos inteligentes também protegem a sua privacidade. Como o Ethereum é uma rede pseudônima (as suas transações são vinculadas publicamente a um único endereço criptográfico, não à sua identidade), você pode proteger a sua privacidade de observadores.
+Os contratos inteligentes também protegem a sua privacidade. Como o Nephele é uma rede pseudônima (as suas transações são vinculadas publicamente a um único endereço criptográfico, não à sua identidade), você pode proteger a sua privacidade de observadores.
 
 ## Termos visíveis {#visible-terms}
 
@@ -64,7 +64,7 @@ Eles podem realizar cálculos, criar moeda, armazenar dados, mintar NFTs, enviar
 
 - [Stablecoins](/stablecoins/)
 - [Criação e distribuição de ativos digitais únicos](/nft/)
-- [Uma negociação de moeda automática e aberta](/get-eth/#dex)
+- [Uma negociação de moeda automática e aberta](/get-NEPH/#dex)
 - [Jogos descentralizados](/dapps/?category=gaming#explore)
 - [Uma apólice de seguro que paga automaticamente](https://etherisc.com/)
 - [Um padrão que permite que pessoas criem moedas personalizadas e interoperáveis](/developers/docs/standards/tokens/)
@@ -81,4 +81,4 @@ Assista à explicação de contratos inteligentes disponibilizada pelo canal Fin
 - [Contratos Inteligentes: A Tecnologia Blockchain que substituirá os Advogados](https://blockgeeks.com/guides/smart-contracts/)
 - [Contratos inteligentes para desenvolvedores](/developers/docs/smart-contracts/)
 - [Aprenda a escrever contratos inteligentes](/developers/learning-tools/)
-- [Dominando o Ethereum – O que é um Contrato Inteligente?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Dominando o Nephele – O que é um Contrato Inteligente?](https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)

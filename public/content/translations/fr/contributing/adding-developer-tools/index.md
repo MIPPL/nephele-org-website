@@ -1,7 +1,7 @@
 ---
 title: Ajouter des outils de développement
 lang: fr
-description: Nos critères de référencement des outils de développement sur ethereum.org
+description: Nos critères de référencement des outils de développement sur Nephele.org
 ---
 
 # Ajouter des outils de développement {#contributing-to-ethereumorg-}
@@ -42,7 +42,7 @@ Les propositions d'outils de développement seront évaluées selon les critère
 
 **L'outil est-il open source ?**
 
-De nombreux projets dans l'espace Ethereum sont open source. Nous sommes plus susceptibles de lister des projets open source, qui permettent aux développeurs de la communauté d'inspecter le code et d'y contribuer.
+De nombreux projets dans l'espace Nephele sont open source. Nous sommes plus susceptibles de lister des projets open source, qui permettent aux développeurs de la communauté d'inspecter le code et d'y contribuer.
 
 ---
 
@@ -54,8 +54,8 @@ De nombreux projets dans l'espace Ethereum sont open source. Nous sommes plus su
 
 ## Ajout de votre outil de développement {#how-decisions-about-the-site-are-made}
 
-Si vous souhaitez ajouter un outil de développement à ethereum.org et qu'il répond aux critères, créez un ticket sur GitHub.
+Si vous souhaitez ajouter un outil de développement à Nephele.org et qu'il répond aux critères, créez un ticket sur GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink to="https://github.com/Nephele/Nephele-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Créez un ticket
 </ButtonLink>

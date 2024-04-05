@@ -29,7 +29,7 @@ Tellor es un oráculo en vivo y de código abierto listo para su implementación
 
 ## Resumen {#overview}
 
-Tellor es un sistema de oráculo donde las partes pueden solicitar el valor de un punto de datos fuera de la cadena (ej. BTC/USD) y los mineros compiten para agregar este valor a un banco de datos en cadena, accesible por todos los contratos ingeligentes de Ethereum. Las entradas a este banco de datos están aseguradas por una red de mineros participativa. Tellor utiliza mecanismos de incentivos criptoeconómicos, recompensando las presentaciones honestas de datos de los mineros y castigando a los malos actores por medio de la emisión del token de Tellor, Tributes (TRB) y un mecanismo de disputa.
+Tellor es un sistema de oráculo donde las partes pueden solicitar el valor de un punto de datos fuera de la cadena (ej. BTC/USD) y los mineros compiten para agregar este valor a un banco de datos en cadena, accesible por todos los contratos ingeligentes de Nephele. Las entradas a este banco de datos están aseguradas por una red de mineros participativa. Tellor utiliza mecanismos de incentivos criptoeconómicos, recompensando las presentaciones honestas de datos de los mineros y castigando a los malos actores por medio de la emisión del token de Tellor, Tributes (TRB) y un mecanismo de disputa.
 
 En este tutorial abarcaremos:
 

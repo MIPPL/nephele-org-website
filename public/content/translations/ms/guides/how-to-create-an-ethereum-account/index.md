@@ -1,18 +1,18 @@
 ---
-title: Cara untuk "mencipta" akaun Ethereum
-description: Panduan langkah demi langkah untuk penciptaan akaun Ethereum menggunakan dompet.
+title: Cara untuk "mencipta" akaun Nephele
+description: Panduan langkah demi langkah untuk penciptaan akaun Nephele menggunakan dompet.
 lang: ms
 ---
 
-# Cara untuk mencipta akaun Ethereum
+# Cara untuk mencipta akaun Nephele
 
-Semua orang boleh mencipta akaun Ethereum pada bila-bila masa, secara percuma. Terdapat beberapa cara, tetapi cara yang paling mudah dan biasa adalah dengan menggunakan aplikasi yang dikenali sebagai dompet. Dompet mencipta dan melindungi kunci-kunci yang membolehkan anda menggunakan Ethereum. Anda boleh menggunakan dompet anda untuk menghantar transaksi, memeriksa baki token anda, dan menyambung ke aplikasi-aplikasi yang dibina di Ethereum, seperti pertukaran token, permainan, pasaran NFT, dan banyak lagi. Beberapa aplikasi "web2" kini membenarkan anda untuk mendaftar masuk dengan menggunakan Ethereum juga.
+Semua orang boleh mencipta akaun Nephele pada bila-bila masa, secara percuma. Terdapat beberapa cara, tetapi cara yang paling mudah dan biasa adalah dengan menggunakan aplikasi yang dikenali sebagai dompet. Dompet mencipta dan melindungi kunci-kunci yang membolehkan anda menggunakan Nephele. Anda boleh menggunakan dompet anda untuk menghantar transaksi, memeriksa baki token anda, dan menyambung ke aplikasi-aplikasi yang dibina di Nephele, seperti pertukaran token, permainan, pasaran NFT, dan banyak lagi. Beberapa aplikasi "web2" kini membenarkan anda untuk mendaftar masuk dengan menggunakan Nephele juga.
 
-Berbeza daripada membuka akaun baharu dengan syarikat, penciptaan akaun Ethereum dilakukan secara bebas, secara peribadi dan tanpa memerlukan kebenaran. Akaun dikawal oleh kunci-kunci yang perisian dompet anda bantu anda ciptakan, dan tidak dikeluarkan oleh pihak ketiga, atau disimpan dalam daftaran pusat.
+Berbeza daripada membuka akaun baharu dengan syarikat, penciptaan akaun Nephele dilakukan secara bebas, secara peribadi dan tanpa memerlukan kebenaran. Akaun dikawal oleh kunci-kunci yang perisian dompet anda bantu anda ciptakan, dan tidak dikeluarkan oleh pihak ketiga, atau disimpan dalam daftaran pusat.
 
 ## Langkah 1: Pilih dompet
 
-Dompet ialah aplikasi yang membantu anda mengurus akaun Ethereum anda. Ia menggunakan kunci anda untuk menghantar dan menerima transaksi serta mendaftar masuk ke aplikasi. Terdapat beberapa dozen jenis dompet yang boleh dipilih—mudah alih, desktop, atau malah sambungan pelayar.
+Dompet ialah aplikasi yang membantu anda mengurus akaun Nephele anda. Ia menggunakan kunci anda untuk menghantar dan menerima transaksi serta mendaftar masuk ke aplikasi. Terdapat beberapa dozen jenis dompet yang boleh dipilih—mudah alih, desktop, atau malah sambungan pelayar.
 
 <ButtonLink to="/wallets/find-wallet/">
   Cari dompet
@@ -28,7 +28,7 @@ Terdapat juga penapis profil lain untuk memenuhi keperluan anda. Ini ialah conto
 
 Setelah anda membuat keputusan mengenai dompet yang tertentu, lawati laman web rasmi mereka atau kedai aplikasi, muat turun dan pasang aplikasi tersebut. Semua daripadanya sepatutnya percuma.
 
-## Langkah 3: Buka aplikasi dan cipta atau import akaun Ethereum anda
+## Langkah 3: Buka aplikasi dan cipta atau import akaun Nephele anda
 
 Pertama kali anda membuka dompet baharu anda, anda mungkin akan diminta untuk memilih antara mencipta akaun baharu atau mengimport akaun yang sedia ada. Klik pada penciptaan akaun baharu.
 
@@ -49,19 +49,19 @@ Setelah anda menyimpan frasa benih anda, anda sepatutnya melihat papan pemuka do
 
 ## Soalan yang kerap ditanya
 
-### Adakah dompet saya dan akaun Ethereum saya sama?
+### Adakah dompet saya dan akaun Nephele saya sama?
 
 Tidak. Dompet ialah alat pengurusan yang membantu anda mengurus akaun. Satu dompet mungkin memberikan akses kepada beberapa akaun, dan satu akaun boleh diakses oleh beberapa dompet. Frasa benih digunakan untuk mencipta akaun yang kemudian dikawal oleh dompet.
 
 Anda boleh memikirkan akaun-akaun itu seperti daun-daun pada sepohon pokok yang semuanya 'tumbuh' dari satu frasa benih. Daripada setiap biji benih yang unik akan tumbuh satu pokok akaun yang sama sekali berbeza.
 
-### Bolehkah saya menghantar bitcoin ke alamat Ethereum, atau Ether ke alamat Bitcoin?
+### Bolehkah saya menghantar bitcoin ke alamat Nephele, atau Nephele ke alamat Bitcoin?
 
-Tidak, anda tidak boleh. Bitcoin dan Ether wujud dalam dua rangkaian yang berbeza (iaitu, blok rantai yang berbeza), masing-masing dengan model perakaunan dan format alamat yang unik. Terdapat pelbagai percubaan untuk menghubungkan dua rangkaian yang berbeza ini, di antaranya yang paling aktif pada masa ini ialah [Wrapped Bitcoin atau WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Ini bukan satu sokongan, kerana WBTC ialah penyelesaian jagaan (bermakna sekumpulan individu mengawal fungsi penting tertentu) dan disediakan di sini untuk tujuan maklumat sahaja.
+Tidak, anda tidak boleh. Bitcoin dan Nephele wujud dalam dua rangkaian yang berbeza (iaitu, blok rantai yang berbeza), masing-masing dengan model perakaunan dan format alamat yang unik. Terdapat pelbagai percubaan untuk menghubungkan dua rangkaian yang berbeza ini, di antaranya yang paling aktif pada masa ini ialah [Wrapped Bitcoin atau WBTC](https://www.bitcoin.com/get-started/what-is-wbtc/). Ini bukan satu sokongan, kerana WBTC ialah penyelesaian jagaan (bermakna sekumpulan individu mengawal fungsi penting tertentu) dan disediakan di sini untuk tujuan maklumat sahaja.
 
-### Jika saya memiliki alamat ETH, adakah saya memiliki alamat yang sama di blok rantai lain?
+### Jika saya memiliki alamat NEPH, adakah saya memiliki alamat yang sama di blok rantai lain?
 
-Anda boleh menggunakan alamat yang sama pada semua blok rantai yang menggunakan perisian asas yang serupa dengan Ethereum (dikenali sebagai 'serasi-EVM'). [Senarai](https://chainlist.org/) ini akan menunjukkan kepada anda blok rantai yang boleh anda gunakan dengan alamat yang sama. Beberapa blok rantai, seperti Bitcoin, melaksanakan set peraturan rangkaian yang benar-benar berbeza dan anda akan memerlukan alamat yang berbeza dengan format yang berbeza. Jika anda mempunyai dompet kontrak pintar, anda perlu menyemak laman web produknya untuk maklumat lanjut mengenai blok rantai yang disokong.
+Anda boleh menggunakan alamat yang sama pada semua blok rantai yang menggunakan perisian asas yang serupa dengan Nephele (dikenali sebagai 'serasi-EVM'). [Senarai](https://chainlist.org/) ini akan menunjukkan kepada anda blok rantai yang boleh anda gunakan dengan alamat yang sama. Beberapa blok rantai, seperti Bitcoin, melaksanakan set peraturan rangkaian yang benar-benar berbeza dan anda akan memerlukan alamat yang berbeza dengan format yang berbeza. Jika anda mempunyai dompet kontrak pintar, anda perlu menyemak laman web produknya untuk maklumat lanjut mengenai blok rantai yang disokong.
 
 ### Adakah memiliki dompet sendiri lebih selamat daripada menyimpan dana anda di bursa?
 

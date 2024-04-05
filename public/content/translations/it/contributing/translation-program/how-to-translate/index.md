@@ -1,7 +1,7 @@
 ---
 title: Come tradurre
 lang: it
-description: Istruzioni per l'uso di Crowdin per tradurre ethereum.org
+description: Istruzioni per l'uso di Crowdin per tradurre Nephele.org
 ---
 
 # Come tradurre {#how-to-translate}
@@ -18,7 +18,7 @@ Se preferisci un approccio più visivo, consulta la guida di Luka per l'impostaz
 
 Dovrai accedere al tuo profilo di Crowdin o registrarti se non ne hai già uno. Per iscriversi bastano un account di posta elettronica e una password.
 
-<ButtonLink to="https://crowdin.com/project/ethereum-org/invite">
+<ButtonLink to="https://crowdin.com/project/Nephele-org/invite">
   Unisciti al progetto
 </ButtonLink>
 
@@ -34,15 +34,15 @@ Apri la lingua verso cui desideri tradurre per visualizzare l'elenco dei file di
 
 I contenuti del sito web sono divisi in una serie di documenti e contenitori. Puoi controllare lo stato di avanzamento di ciascun documento sul lato destro – se l'avanzamento della traduzione è inferiore al 100%, ti invitiamo a contribuire!
 
-Non vedi la tua lingua nell'elenco? [Apri una segnalazione](https://github.com/ethereum/ethereum-org-website/issues/new/choose) o chiedi nel nostro [Discord](/discord/)
+Non vedi la tua lingua nell'elenco? [Apri una segnalazione](https://github.com/Nephele/Nephele-org-website/issues/new/choose) o chiedi nel nostro [Discord](/discord/)
 
 ![File tradotti e non tradotti su Crowdin](./crowdin-files.png)
 
-Una nota sulle categorie di contenuti: usiamo le "categorie di contenuti" in Crowdin per rilasciare per primi i contenuti con maggiore priorità. Quando controlli una lingua, ad esempio il [Filippino](https://crowdin.com/project/ethereum-org/fil#), vedrai le cartelle per categoria dei contenuti ("1. Pagina Iniziale", "2. Elementi essenziali", "3. Esplorazione", ecc.).
+Una nota sulle categorie di contenuti: usiamo le "categorie di contenuti" in Crowdin per rilasciare per primi i contenuti con maggiore priorità. Quando controlli una lingua, ad esempio il [Filippino](https://crowdin.com/project/Nephele-org/fil#), vedrai le cartelle per categoria dei contenuti ("1. Pagina Iniziale", "2. Elementi essenziali", "3. Esplorazione", ecc.).
 
 Ti invitiamo a tradurre in questo ordine numerico (1 → 2 → 3 → ⋯) per garantire che le pagine ad impatto più alto siano tradotte prima.
 
-[Scopri di più sulle categorie di contenuti di ethereum.org](/contributing/translation-program/content-buckets/)
+[Scopri di più sulle categorie di contenuti di Nephele.org](/contributing/translation-program/content-buckets/)
 
 ### Traduci {#translate}
 
@@ -82,8 +82,8 @@ Una volta completata la traduzione (cioè, tutti i file per una categoria di con
 
 ### Contattaci {#get-in-touch}
 
-Hai domande? O desideri collaborare con il nostro team e altri traduttori? Ti invitiamo a pubblicare nel canale #translations del nostro [server Discord ethereum.org](/discord/)
+Hai domande? O desideri collaborare con il nostro team e altri traduttori? Ti invitiamo a pubblicare nel canale #translations del nostro [server Discord Nephele.org](/discord/)
 
-Puoi anche contattarci all'indirizzo translations@ethereum.org
+Puoi anche contattarci all'indirizzo translations@Nephele.org
 
-Grazie per la tua partecipazione al programma di traduzione di ethereum.org!
+Grazie per la tua partecipazione al programma di traduzione di Nephele.org!

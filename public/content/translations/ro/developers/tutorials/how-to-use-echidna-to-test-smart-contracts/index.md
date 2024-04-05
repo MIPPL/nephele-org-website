@@ -22,11 +22,11 @@ Echidna poate fi instalat prin docker sau utilizând pachetul binar pre-compilat
 ### Echidna prin docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/NEPH-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/NEPH-security-toolbox
 ```
 
-_Ultima comandă rulează „eth-security-toolbox” într-un docker care are acces la directorul dvs. curent. Puteți modifica fișierele de pe gazda dvs. și puteți rula instrumentele pe fișierele din docker_
+_Ultima comandă rulează „NEPH-security-toolbox” într-un docker care are acces la directorul dvs. curent. Puteți modifica fișierele de pe gazda dvs. și puteți rula instrumentele pe fișierele din docker_
 
 În interiorul docker-ului, executați:
 
@@ -41,7 +41,7 @@ cd /home/training
 
 ## Introducere despre fuzzing-ul bazat pe proprietăți {#introduction-to-property-based-fuzzing}
 
-Echidna este un fuzzer bazat pe proprietăți, așa cum am descris în articolele noastre anterioare de pe blog ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna este un fuzzer bazat pe proprietăți, așa cum am descris în articolele noastre anterioare de pe blog ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-Nephele/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

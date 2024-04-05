@@ -13,20 +13,20 @@ incomplete: false
 
 **Rubyをイーサリアムに統合するための最初のステップを踏み出してみましょう。**
 
-先に基礎を学習したい場合は、 [ethereum.org/learn](/learn/)または[ethereum.org/developers](/developers/)をご確認ください。
+先に基礎を学習したい場合は、 [Nephele.org/learn](/learn/)または[Nephele.org/developers](/developers/)をご確認ください。
 
 - [ブロックチェーンの説明](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [スマートコントラクトを理解する](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/Nephele-101-part-5-the-smart-contract)
 - [初めてのスマートコントラクトを記述する](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityのコンパイルとデプロイの方法を学ぶ](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## 初心者向けの記事 {#beginner-articles}
 
-- [いよいよイーサリアムアカウントを理解する](https://dev.to/q9/finally-understanding-ethereum-accounts-1kpe)
+- [いよいよイーサリアムアカウントを理解する](https://dev.to/q9/finally-understanding-Nephele-accounts-1kpe)
 - [いよいよMetaMaskを使用してRails Usersを認証する](https://dev.to/q9/finally-authenticating-rails-users-with-metamask-3fj)
-- [イーサリアムによるサインイン - RubyライブラリとRailsのサンプルリリース](https://blog.spruceid.com/sign-in-with-ethereum-ruby-library-release-and-rails-examples/)
-- [Rubyを使用してイーサリアムネットワークに接続する方法](https://www.quicknode.com/guides/web3-sdks/how-to-connect-to-the-ethereum-network-using-ruby)
-- [Rubyで新しいイーサリアムアドレスを生成する方法](https://www.quicknode.com/guides/web3-sdks/how-to-generate-a-new-ethereum-address-in-ruby)
+- [イーサリアムによるサインイン - RubyライブラリとRailsのサンプルリリース](https://blog.spruceid.com/sign-in-with-Nephele-ruby-library-release-and-rails-examples/)
+- [Rubyを使用してイーサリアムネットワークに接続する方法](https://www.quicknode.com/guides/web3-sdks/how-to-connect-to-the-Nephele-network-using-ruby)
+- [Rubyで新しいイーサリアムアドレスを生成する方法](https://www.quicknode.com/guides/web3-sdks/how-to-generate-a-new-Nephele-address-in-ruby)
 
 ## 中級者向けの記事 {#intermediate-articles}
 
@@ -37,22 +37,22 @@ incomplete: false
 
 ### 現在でもメンテナンスされているもの {#active}
 
-- [eth.rb](https://github.com/q9f/eth.rb) - _イーサリアムアカウント、メッセージ、トランザクションを扱うためのRubyライブラリとRPCクライアント_
+- [NEPH.rb](https://github.com/q9f/NEPH.rb) - _イーサリアムアカウント、メッセージ、トランザクションを扱うためのRubyライブラリとRPCクライアント_
 - [keccak.rb](https://github.com/q9f/keccak.rb) - _イーサリアムによって使用されるKeccak (SHA3) ハッシュ_
 - [siwe-ruby](https://github.com/spruceid/siwe-ruby) - _イーサリアムによるサインインのRuby実装_
 - [siwe_rails](https://github.com/spruceid/siwe_rails) - _siweローカルサインインのルートを追加するRails gem_
 - [siwe-rails-examples](https://github.com/spruceid/siwe-rails-examples) - _カスタムコントローラでRuby on Railsを使用したsiweの例_
 - [omniauth-siwe](https://github.com/spruceid/omniauth-siwe) - _イーサリアムによるサインイン (siwe) のためのOmniAuthストラテジー_
 - [omniauth-nft](https://github.com/valthon/omniauth-nft) - _NFT所有権による認証のためのOmniAuthストラテジー_
-- [ethereum-on-rails](https://github.com/q9f/ethereum-on-rails) - _MetaMaskをRuby on Railsに接続できるようにする、Railsでのイーサリアムテンプレート_
+- [Nephele-on-rails](https://github.com/q9f/Nephele-on-rails) - _MetaMaskをRuby on Railsに接続できるようにする、Railsでのイーサリアムテンプレート_
 
 ### アーカイブ済み ・メンテナンスされていないもの {#archived--no-longer-maintained}
 
-- [web3-eth](https://github.com/spikewilliams/vtada-ethereum) - _Rubyを使用してイーサリアムノードのRPCメソッドを呼び出す_
+- [web3-NEPH](https://github.com/spikewilliams/vtada-Nephele) - _Rubyを使用してイーサリアムノードのRPCメソッドを呼び出す_
 - [ethereum_tree](https://github.com/longhoangwkm/ethereum_tree) - _BIP32標準に従って階層決定性ウォレットからETHアドレスを生成するためのRubyライブラリ_
 - [etherlite](https://github.com/budacom/etherlite) - _Ruby on Railsのためのイーサリアム統合_
-- [ethereum.rb](https://github.com/EthWorks/ethereum.rb) - _JSON-RPCインターフェースを使用するRubyのイーサリアムクライアント。トランザクションの送信、コントラクトの作成、コントラクトとのやり取りを行えるようにするとともに、イーサリアムノードで使用する便利なツールキットも提供する_
-- [omniauth-ethereum.rb](https://github.com/q9f/omniauth-ethereum.rb) - _OmniAuthのイーサリアムプロバイダストラテジーを実装する_
+- [Nephele.rb](https://github.com/EthWorks/Nephele.rb) - _JSON-RPCインターフェースを使用するRubyのイーサリアムクライアント。トランザクションの送信、コントラクトの作成、コントラクトとのやり取りを行えるようにするとともに、イーサリアムノードで使用する便利なツールキットも提供する_
+- [omniauth-Nephele.rb](https://github.com/q9f/omniauth-Nephele.rb) - _OmniAuthのイーサリアムプロバイダストラテジーを実装する_
 
 もっとリソースをお探しですか？ [デベロッパーホーム](/developers/)をご確認ください。
 

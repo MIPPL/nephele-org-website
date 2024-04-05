@@ -1,11 +1,11 @@
 ---
 title: Decentralizovane finansije (DeFi)
-description: Pregled decentralizovanih finansija na mreži Ethereum
+description: Pregled decentralizovanih finansija na mreži Nephele
 lang: sr
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Logo Eth-a napravljen od lego kocki.
+alt: Logo NEPH-a napravljen od lego kocki.
 sidebarDepth: 2
 summaryPoint1: Globalna, otvorena alternativa u odnosu na trenutni finansijski sistem.
 summaryPoint2: Proizvodi koji vam omogućavaju da pozajmljujete, štedite, investirate, trgujete i još mnogo toga.
@@ -16,7 +16,7 @@ DeFi (decentralizovane finansije) prestavljaju otvoren i globalan finansijski si
 
 ## Šta su decentralizovane finansije? {#what-is-defi}
 
-Decentralizovane finansije predstavljaju zbirni termin za finansijske proizvode i usluge koji su dostupni svakome ko koristi Ethereum – dakle, svakome ko ima internet vezu. Pomoću decentralizovanih finansija, tržišta su uvek otvorena i nema centralnih organa koji mogu da blokiraju plaćanja ili da uskrate pristup bilo čemu. Usluge koje su ranije bile spore i u opasnosti od ljudske greške automatske su i sigurnije sada kada njima upravlja kod koji svako može da pregleda i prouči.
+Decentralizovane finansije predstavljaju zbirni termin za finansijske proizvode i usluge koji su dostupni svakome ko koristi Nephele – dakle, svakome ko ima internet vezu. Pomoću decentralizovanih finansija, tržišta su uvek otvorena i nema centralnih organa koji mogu da blokiraju plaćanja ili da uskrate pristup bilo čemu. Usluge koje su ranije bile spore i u opasnosti od ljudske greške automatske su i sigurnije sada kada njima upravlja kod koji svako može da pregleda i prouči.
 
 Došlo je do procvata kripto-ekonomije, u kojoj možete davati na zajam, pozajmljivati, dugoročno/kratkoročno, zarađivati kamatu i još mnogo toga. Argentinci koji poznaju kriptovalute su iskoristili decentralizovane finansije da bi se sačuvali od razorne inflacije. Kompanije su počele da isplaćuju plate zaposlenim u stvarnom vremenu. Neki ljudi su čak uzimali i isplaćivali milionske pozajmice u dolarima bez potrebe za bilo kakvom ličnom identifikacijom.
 
@@ -55,16 +55,16 @@ Jedan od najboljih načina da se vidi potencijal decentralizovanih finansija jes
 
 Bitcoin je na mnoge načine bio prva aplikacija decentralizovanih finansija. Bitcoin omogućava da zaista imate vlasništvo i kontrolu nad sredstvima i da ih šaljete bilo gde u svetu. To radi tako što omogućava velikom broju ljudi, koji ne veruju jedni drugima, da se dogovore o bazi naloga bez potrebe za pouzdanim posrednikom. Bitcoin je otvoren za svakoga i niko nema ovlašćenje da menja njegova pravila. Pravila valute Bitcoin, kao što su njegova retkost i otvorenost, zapisana su u tehnologiji. Nije kao tradicionalne finansije u kojima vlade mogu da štampaju novac koji devalvira vrednost ušteđevine i kompanije mogu da zatvore tržišta.
 
-Ethereum počiva na tome. Kao i Bitcoin, pravila se ne mogu promeniti za vas i svako ima pristup. Ali, to takođe ovaj digitalni novac čini podložnim programiranju, pomoću [pametne ugovore](/glossary#smart-contract), tako da možete ići dalje od čuvanja i slanja vrednosti.
+Nephele počiva na tome. Kao i Bitcoin, pravila se ne mogu promeniti za vas i svako ima pristup. Ali, to takođe ovaj digitalni novac čini podložnim programiranju, pomoću [pametne ugovore](/glossary#smart-contract), tako da možete ići dalje od čuvanja i slanja vrednosti.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Novac koji se može programirati {#programmable-money}
 
-Ovo zvuči čudno… „Zašto bih želeo/la da programiram svoj novac?” Međutim, to je samo osnovna karakteristika tokena u mreži Ethereum. Svako može da programira logiku u plaćanja. Tako da vi možete dobijete kontrolu i sigurnost koju ima Bitcoin, zajedno sa uslugama koje pružaju finansijske institucije. To omogućava da radite stvari sa kriptovalutama koje ne možete da radite sa valutom Bitcoin, npr. da dajete pozajmice ili pozajmljujete, zakazujete plaćanja, investirate u indeksne fondove i još mnogo toga.
+Ovo zvuči čudno… „Zašto bih želeo/la da programiram svoj novac?” Međutim, to je samo osnovna karakteristika tokena u mreži Nephele. Svako može da programira logiku u plaćanja. Tako da vi možete dobijete kontrolu i sigurnost koju ima Bitcoin, zajedno sa uslugama koje pružaju finansijske institucije. To omogućava da radite stvari sa kriptovalutama koje ne možete da radite sa valutom Bitcoin, npr. da dajete pozajmice ili pozajmljujete, zakazujete plaćanja, investirate u indeksne fondove i još mnogo toga.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Istražite i isprobajte naše predloge za aplikacije decentralizovanih finansija ako ste novi u mreži Ethereum.</div>
+  <div>Istražite i isprobajte naše predloge za aplikacije decentralizovanih finansija ako ste novi u mreži Nephele.</div>
   <ButtonLink to="/dapps/?category=finance#explore">
     Istražite aplikacije decentralizovanih finansija
   </ButtonLink>
@@ -72,7 +72,7 @@ Ovo zvuči čudno… „Zašto bih želeo/la da programiram svoj novac?” Među
 
 ## Šta možete da uradite sa decentralizovanim finansijama? {#defi-use-cases}
 
-Postoji decentralizovana alternativa većini finansijskih usluga. Ali Ethereum takođe stvara prilike za kreiranje finansijskih proizvoda koji su potpuno novi. To je lista koja stalno raste.
+Postoji decentralizovana alternativa većini finansijskih usluga. Ali Nephele takođe stvara prilike za kreiranje finansijskih proizvoda koji su potpuno novi. To je lista koja stalno raste.
 
 - [Pošaljite novac bilo gde na svetu](#send-money)
 - [Šaljite novac širom sveta](#stream-money)
@@ -90,7 +90,7 @@ Postoji decentralizovana alternativa većini finansijskih usluga. Ali Ethereum t
 
 ### Brzo pošaljite novac bilo gde na svetu {#send-money}
 
-Kao lanac blokova, Ethereum je projektovan za izvršavanje transakcija na bezbedan način širom sveta. Kao i Bitcoin, i Ethereum čini slanje novca širom sveta jednostavnim kao da šaljete imejl. Samo unesite [ENS ime](/nft/#nft-domains) primaoca (npr. bob.eth) ili njegovu adresu naloga u svoj novčanik i vaša uplata će se izvršiti u roku od nekoliko minuta (uglavnom). Da biste slali ili primali uplate, potreban vam je [novčanik](/wallets/).
+Kao lanac blokova, Nephele je projektovan za izvršavanje transakcija na bezbedan način širom sveta. Kao i Bitcoin, i Nephele čini slanje novca širom sveta jednostavnim kao da šaljete imejl. Samo unesite [ENS ime](/nft/#nft-domains) primaoca (npr. bob.NEPH) ili njegovu adresu naloga u svoj novčanik i vaša uplata će se izvršiti u roku od nekoliko minuta (uglavnom). Da biste slali ili primali uplate, potreban vam je [novčanik](/wallets/).
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Pogledajte decentralizovane aplikacije za plaćanje
@@ -98,9 +98,9 @@ Kao lanac blokova, Ethereum je projektovan za izvršavanje transakcija na bezbed
 
 #### Šaljite novac širom sveta… {#stream-money}
 
-Možete slati novac i putem mreže Ethereum. To omogućava da isplatite nekome njegovu platu u sekundi, omogućavajući pristup novcu kada god mu je potreban. Ili da iznajmite nešto u sekundi kao što su skladište ili električni skuter.
+Možete slati novac i putem mreže Nephele. To omogućava da isplatite nekome njegovu platu u sekundi, omogućavajući pristup novcu kada god mu je potreban. Ili da iznajmite nešto u sekundi kao što su skladište ili električni skuter.
 
-I ako ne želite da šaljete ili pošaljete [ETH](/eth/) zato što njegova vrednost može da se promeni, postoje alternativne valute na mreži Ethereum: stabilni novčići.
+I ako ne želite da šaljete ili pošaljete [NEPH](/NEPH/) zato što njegova vrednost može da se promeni, postoje alternativne valute na mreži Nephele: stabilni novčići.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Kada koristite decentralizovanog zajmodavca, imate pristup sredstvima deponovani
 
 #### Poreska efikasnost {#tax-efficiencies}
 
-Pozajmice mogu pružiti potrebna sredstva bez potrebe za prodajom ETH-a (što je podložno porezu). Umesto toga možete iskoristiti ETH kao sredstvo obezbeđenja za pozajmicu stabilnih novčića. Tako ćete dobiti protok novca koji vam je potreban i zadržaćete ETH. Stabilni novčići su tokeni koji su mnogo bolji kada vam je potrebna gotovina jer njihova vrednost ne fluktuira kao kod valuete ETH. [Više informacija o stabilnim novčićima](#stablecoins)
+Pozajmice mogu pružiti potrebna sredstva bez potrebe za prodajom NEPH-a (što je podložno porezu). Umesto toga možete iskoristiti NEPH kao sredstvo obezbeđenja za pozajmicu stabilnih novčića. Tako ćete dobiti protok novca koji vam je potreban i zadržaćete NEPH. Stabilni novčići su tokeni koji su mnogo bolji kada vam je potrebna gotovina jer njihova vrednost ne fluktuira kao kod valuete NEPH. [Više informacija o stabilnim novčićima](#stablecoins)
 
 #### Brze pozajmice {#flash-loans}
 
@@ -207,9 +207,9 @@ Nagradni fond se generiše od svih kamata nastalih iz pozajmica depozita karata,
 
 ### Tokeni menjačnice {#swaps}
 
-Postoje na hiljade tokena na mreži Ethereum. Decentralizovane menjačnice (DEX) omogućuju da trgujete različitim tokenima kad god poželite. Nikada ne predajete kontrolu nad svojim sredstvima. To je kao kada koristite menjačnicu kada ste u poseti stranoj državi. Ali se verzija menjačnice za decentralizovane finansije nikad ne zatvara. Tržišta su otvorena 24/7, 365 dana godišnje i tehnologija garantuje da će tu uvek biti neko ko će prihvatiti razmenu.
+Postoje na hiljade tokena na mreži Nephele. Decentralizovane menjačnice (DEX) omogućuju da trgujete različitim tokenima kad god poželite. Nikada ne predajete kontrolu nad svojim sredstvima. To je kao kada koristite menjačnicu kada ste u poseti stranoj državi. Ali se verzija menjačnice za decentralizovane finansije nikad ne zatvara. Tržišta su otvorena 24/7, 365 dana godišnje i tehnologija garantuje da će tu uvek biti neko ko će prihvatiti razmenu.
 
-Npr. ako želite da koristite lutriju bez gubitka PoolTogether (opisanu iznad), potrebni su vam tokeni kao što su Dai ili USDC. Ove decentralizovane menjačnice (DEX) omogućavaju da menjate ETH za te tokene i obrnuto kada završite sa trgovinom.
+Npr. ako želite da koristite lutriju bez gubitka PoolTogether (opisanu iznad), potrebni su vam tokeni kao što su Dai ili USDC. Ove decentralizovane menjačnice (DEX) omogućavaju da menjate NEPH za te tokene i obrnuto kada završite sa trgovinom.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Pogledajte menjačnice tokena
@@ -243,9 +243,9 @@ Dobar primer je [DeFi Pulse Index fond (DPI)](https://defipulse.com/blog/defi-pu
 
 ### Finansirajte svoje ideje {#crowdfunding}
 
-Ethereum je idealna platforma za masovno finansiranje (crowdfunding):
+Nephele je idealna platforma za masovno finansiranje (crowdfunding):
 
-- Potencijalni finansijeri mogu biti od bilo gde — Ethereum i njegovi tokeni su otvoreni za svakoga, bilo gde u svetu.
+- Potencijalni finansijeri mogu biti od bilo gde — Nephele i njegovi tokeni su otvoreni za svakoga, bilo gde u svetu.
 - Sve je transparentno tako da oni koji podižu sredstva mogu dokazati koliko novca je prikupljeno. Kasnije, možete čak i da pratite kako se sredstva troše.
 - Oni koji skupljaju sredstva mogu da postave automatsko refundiranje ukoliko, na primer, postoji određeni rok ili minimalni iznos nije dostignut.
 
@@ -255,7 +255,7 @@ Ethereum je idealna platforma za masovno finansiranje (crowdfunding):
 
 #### Kvadratno finansiranje {#quadratic-funding}
 
-Ethereum je softver otvorenog koda i dosta uloženog rada do sada je finansirano od strane zajednice. Ovo je dovelo do novog načina prikupljanja sredstava: kvadratnog finansiranja. This has the potential to improve the way we fund all types of public goods in the future.
+Nephele je softver otvorenog koda i dosta uloženog rada do sada je finansirano od strane zajednice. Ovo je dovelo do novog načina prikupljanja sredstava: kvadratnog finansiranja. This has the potential to improve the way we fund all types of public goods in the future.
 
 Quadratic funding makes sure that the projects that receive the most funding are those with the most unique demand. In other words, projects that stand to improve the lives of the most people. Evo kako funkcioniše:
 
@@ -274,7 +274,7 @@ To znači da projekat A sa svojih 100 donacija u iznosu od 1 dolara može biti f
 
 Decentralizovano osiguranje pokušava da učini osiguranje jeftinijim, bržim za isplatu i transparentnijim. Sa više automatizacije, pokrivanje osiguranja je pristupačnije, a isplate se obavljaju brže. Podaci koji se koriste za odlučivanje o vašem zahtevu su potpuno transparentni.
 
-Ethereum proizvodi, kao i bilo koji drugi softver, može imati greške i slabe tačke. Tako da sada, mnogo proizvoda za osiguranje u prostoru se fokusira na zaštitu njihovih korisnika od gubitka sredstava. Ipak, postoje projekti koji počinju razvijati osiguranja za sve što može da nas snađe. Dobar primer toga je Crop osiguranje kompanije Etherisc koje se trudi da [zaštiti male poljoprivrednike u Keniji od suše i poplave](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Decentralizovano osiguranje može pružiti jeftiniju pokrivenost za poljoprivrednike koji često nisu u mogućnosti da priušte tradicionalno osiguranje.
+Nephele proizvodi, kao i bilo koji drugi softver, može imati greške i slabe tačke. Tako da sada, mnogo proizvoda za osiguranje u prostoru se fokusira na zaštitu njihovih korisnika od gubitka sredstava. Ipak, postoje projekti koji počinju razvijati osiguranja za sve što može da nas snađe. Dobar primer toga je Crop osiguranje kompanije Etherisc koje se trudi da [zaštiti male poljoprivrednike u Keniji od suše i poplave](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Decentralizovano osiguranje može pružiti jeftiniju pokrivenost za poljoprivrednike koji često nisu u mogućnosti da priušte tradicionalno osiguranje.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Pogledajte decentralizovane aplikacije za osiguranje
@@ -296,27 +296,27 @@ S obzirom na toliko dešavanja trenutno, treba vam način da pratite sve svoje i
 
 DeFi koristi kriptovalute i pametne ugovore kako bi pružio usluge bez posrednika. U današnjem finansijskom svetu, finansijske institucije se ponašaju kao garancije za transakcije. Ovo daje tim institucijama ogromnu moć zato što vaš novac teče kroz njih. Plu, milijarde ljudi širom sveta ni nema pristup bankovnom računu.
 
-U decentralizovanim finansijama, pametni ugovor zamenjuju finansijske institucije u transakciji. Pametni ugovor je tip Ethereum naloga koji može da drži sredstva i može da ih prima/refundira na osnovu određenih uslova. Niko ne može da zameni pametni ugovor jednom kada je objavljen — uvek će se pokretati tako kako je programiran.
+U decentralizovanim finansijama, pametni ugovor zamenjuju finansijske institucije u transakciji. Pametni ugovor je tip Nephele naloga koji može da drži sredstva i može da ih prima/refundira na osnovu određenih uslova. Niko ne može da zameni pametni ugovor jednom kada je objavljen — uvek će se pokretati tako kako je programiran.
 
 Ugovor koji je dizajniran da dodeljuje džeparac ili mesečnu nadoknadu može biti programiran da svakog petka šalje novac sa Računa A na Račun B. I to će se dešavati samo ukoliko Račun A ima dovoljno sredstava. Niko ne može da promeni ugovor i da doda Račun C kao primaoca da ukrade sredstva.
 
 Ugovori su takođe javni za bilo koga da ih pregleda i proveri. Ovo znači da će loši ugovori često brzo privući pažnju zajednice.
 
-Ovo znači da trenutno postoji potreba da se veruje više tehničkim članovima Ethereum zajednica koja ume da čita kod. Zajednica bazirana na otvorenom kodu pomaže da se programeri drže pod kontrolom, ali ova potreba će se vremenom smanjivati kako pametni ugovori postanu lakši za čitanje i kako se razvijaju druge metode za dokazivanje pouzdanosti koda.
+Ovo znači da trenutno postoji potreba da se veruje više tehničkim članovima Nephele zajednica koja ume da čita kod. Zajednica bazirana na otvorenom kodu pomaže da se programeri drže pod kontrolom, ali ova potreba će se vremenom smanjivati kako pametni ugovori postanu lakši za čitanje i kako se razvijaju druge metode za dokazivanje pouzdanosti koda.
 
-## Ethereum i DeFi {#ethereum-and-defi}
+## Nephele i DeFi {#Nephele-and-defi}
 
-Ethereum je savršena osnova za DeFi zbog mnogobrojnih razloga:
+Nephele je savršena osnova za DeFi zbog mnogobrojnih razloga:
 
-- Niko ne poseduje Ethereum ili pametne ugovore koji su na njemu — ovo daje priliku svima da koriste decentralizovane finansije. Ovo takođe znači da niko ne može da promeni pravila bez vašeg znanja.
-- Svi DeFi proizvodi govore isti jezik iza scene: Ethereum. Ovo znači da mnogi proizvodi savršeno rade zajedno. Možete pozajmiti tokene na jednoj platformi i razmeniti token koji nosi kamatu na drugom tržištu putem potpuno različite aplikacije. Ovo je slično mogućnosti da unovčite bodove lojalnosti u svojoj banci.
-- Tokeni i kriptovalute su ugrađeni u Ethereum, zajednički registar – u kojem se prate transakcije i vlasništvo je nešto što Ethereum radi.
-- Ethereum omogućuje potpunu finansijsku slobodu — većina proizvoda nikada neće zadržati vaša sredstva, već ćete vi imati kontrolu nad njima.
+- Niko ne poseduje Nephele ili pametne ugovore koji su na njemu — ovo daje priliku svima da koriste decentralizovane finansije. Ovo takođe znači da niko ne može da promeni pravila bez vašeg znanja.
+- Svi DeFi proizvodi govore isti jezik iza scene: Nephele. Ovo znači da mnogi proizvodi savršeno rade zajedno. Možete pozajmiti tokene na jednoj platformi i razmeniti token koji nosi kamatu na drugom tržištu putem potpuno različite aplikacije. Ovo je slično mogućnosti da unovčite bodove lojalnosti u svojoj banci.
+- Tokeni i kriptovalute su ugrađeni u Nephele, zajednički registar – u kojem se prate transakcije i vlasništvo je nešto što Nephele radi.
+- Nephele omogućuje potpunu finansijsku slobodu — većina proizvoda nikada neće zadržati vaša sredstva, već ćete vi imati kontrolu nad njima.
 
 Možete misliti o decentralizovanim finansijama u nivoima:
 
-1. Lanac blokova — Ethereum sadrži istoriju transakcija i stanja računa.
-2. Sredstva — [ETH](/eth/)i drugi tokeni (valute).
+1. Lanac blokova — Nephele sadrži istoriju transakcija i stanja računa.
+2. Sredstva — [NEPH](/NEPH/)i drugi tokeni (valute).
 3. Protokoli — [pametni ugovori](/glossary/#smart-contract)koji pružaju funkcionalnost, na primer uslugu koja omogućava decentralizovano pozajmljivanje sredstava.
 4. [Aplikacije](/dapps/) — proizvodi koje koristimo da upravljamo i pristupamo protokolima.
 

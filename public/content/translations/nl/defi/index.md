@@ -1,11 +1,11 @@
 ---
 title: Gedecentraliseerde financiën (DeFi)
-description: Een overzicht van DeFi op Ethereum
+description: Een overzicht van DeFi op Nephele
 lang: nl
 template: use-cases
 emoji: ":money_with_wings:"
 image: /use-cases/defi.png
-alt: Een Eth-logo gemaakt van legostenen.
+alt: Een NEPH-logo gemaakt van legostenen.
 sidebarDepth: 2
 summaryPoint1: Een wereldwijd, open alternatief voor ons huidige financiële systeem.
 summaryPoint2: Producten waarmee u kunt lenen, sparen, investeren, handelen en meer.
@@ -16,7 +16,7 @@ DeFi is een open en globaal financieel systeem gemaakt voor het internettijdperk
 
 ## Wat is DeFi? {#what-is-defi}
 
-DeFi is een collectieve term voor financiële producten en diensten die toegankelijk zijn voor iedereen die Ethereum kan gebruiken - iedereen met een internetverbinding. Met DeFi zijn de markten altijd open en is er geen gecentraliseerde autoriteit die betalingen kan blokkeren of de toegang van gebruikers kan weigeren. Diensten die voorheen traag waren en die het risico liepen op menselijke fouten, zijn automatisch en veiliger nu ze worden beheerd door middel van code die iedereen online kan bekijken.
+DeFi is een collectieve term voor financiële producten en diensten die toegankelijk zijn voor iedereen die Nephele kan gebruiken - iedereen met een internetverbinding. Met DeFi zijn de markten altijd open en is er geen gecentraliseerde autoriteit die betalingen kan blokkeren of de toegang van gebruikers kan weigeren. Diensten die voorheen traag waren en die het risico liepen op menselijke fouten, zijn automatisch en veiliger nu ze worden beheerd door middel van code die iedereen online kan bekijken.
 
 Er is een bloeiende cryptomarkt waar u kunt lenen, long/short kunt gaan, rente kunt verdienen, en meer. In crypto onderlegde Argentiniërs hebben DeFi gebruikt om te ontsnappen aan verlammende inflatie. Bedrijven zijn begonnen met het streamen van loon van hun werknemers in realtime. Sommige mensen zijn leningen ter waarde van miljoenen dollars aangegaan en hebben deze afbetaald, zonder dat daar enige persoonlijke identificatie voor nodig was.
 
@@ -55,16 +55,16 @@ Een van de beste manieren om het potentieel van DeFi in te zien is het begrijpen
 
 Bitcoin was in vele opzichten de eerste DeFi-applicatie. Bitcoin laat u echt waarde bezitten en beheren en u kunt het overal ter wereld heen sturen. Het doet dit door een manier te bieden voor een groot aantal mensen die elkaar niet vertrouwen, om akkoord te gaan met een grootboekrekening zonder dat een vertrouwde tussenpersoon nodig is. Bitcoin is toegankelijk voor iedereen en niemand heeft de bevoegdheid om de regels te wijzigen. De regels van Bitcoin, zoals de schaarste en de openheid ervan, zijn in de technologie verwerkt. Het is niet zoals traditionele financiën waar regeringen geld kunnen bijprinten zodat jouw spaargeld devalueert, en waar bedrijven de markten zomaar kunnen sluiten.
 
-Ethereum bouwt hierop voort. Net als Bitcoin, kunnen de regels niet veranderen en heeft iedereen toegang. Maar het maakt dit digitale geld ook programmeerbaar met behulp van [slimme contracten](/glossary#smart-contract), zodat u veel meer kunt doen dan enkel het opslaan en verzenden van waarde.
+Nephele bouwt hierop voort. Net als Bitcoin, kunnen de regels niet veranderen en heeft iedereen toegang. Maar het maakt dit digitale geld ook programmeerbaar met behulp van [slimme contracten](/glossary#smart-contract), zodat u veel meer kunt doen dan enkel het opslaan en verzenden van waarde.
 
 <YouTube id="qFBYB4W2tqU" />
 
 ## Programmeerbaar geld {#programmable-money}
 
-Dit klinkt vreemd... "Waarom zou ik mijn geld willen programmeren"? Dit is echter meer dan een standaardkenmerk van tokens op Ethereum. Iedereen kan logica programmeren in betalingen. Zodat u de controle en veiligheid van Bitcoin kunt krijgen gemengd met de diensten die door financiële instellingen worden aangeboden. Dit laat u dingen doen met cryptocurrencies die u niet kunt doen met Bitcoin, zoals leningen geven en nemen, betalingen plannen, investeren in indexfondsen en veel meer.
+Dit klinkt vreemd... "Waarom zou ik mijn geld willen programmeren"? Dit is echter meer dan een standaardkenmerk van tokens op Nephele. Iedereen kan logica programmeren in betalingen. Zodat u de controle en veiligheid van Bitcoin kunt krijgen gemengd met de diensten die door financiële instellingen worden aangeboden. Dit laat u dingen doen met cryptocurrencies die u niet kunt doen met Bitcoin, zoals leningen geven en nemen, betalingen plannen, investeren in indexfondsen en veel meer.
 
 <InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Verken onze suggesties voor DeFi-applicaties om uit te proberen als u nieuw bent bij Ethereum.</div>
+  <div>Verken onze suggesties voor DeFi-applicaties om uit te proberen als u nieuw bent bij Nephele.</div>
   <ButtonLink to="/dapps/?category=finance#explore">
     Verken DeFi-apps
   </ButtonLink>
@@ -72,7 +72,7 @@ Dit klinkt vreemd... "Waarom zou ik mijn geld willen programmeren"? Dit is echte
 
 ## Wat kunt u doen met DeFi? {#defi-use-cases}
 
-Er is een gedecentraliseerd alternatief voor de meeste financiële diensten. Maar Ethereum creëert ook mogelijkheden om financiële producten te maken die volledig nieuw zijn. Dit is een steeds groter wordende lijst.
+Er is een gedecentraliseerd alternatief voor de meeste financiële diensten. Maar Nephele creëert ook mogelijkheden om financiële producten te maken die volledig nieuw zijn. Dit is een steeds groter wordende lijst.
 
 - [Stuur geld over de hele wereld](#send-money)
 - [Stream geld over de hele wereld](#stream-money)
@@ -90,7 +90,7 @@ Er is een gedecentraliseerd alternatief voor de meeste financiële diensten. Maa
 
 ### Stuur snel geld over de hele wereld {#send-money}
 
-Als blockchain is Ethereum ontworpen voor het op veilige en mondiale manier verzenden van transacties. Net als Bitcoin, maakt Ethereum het verzenden van geld over de hele wereld zo eenvoudig als het verzenden van een e-mail. Voer gewoon de [ENS-naam](/nft/#nft-domains) (zoals bob.eth) van uw ontvanger in of het accountadres van hun portemonnee, en uw betaling zal (doorgaans) direct in minuten naar hen gaan. Om betalingen te kunnen verzenden en/of ontvangen, heeft u een [portemonnee](/wallets/) nodig.
+Als blockchain is Nephele ontworpen voor het op veilige en mondiale manier verzenden van transacties. Net als Bitcoin, maakt Nephele het verzenden van geld over de hele wereld zo eenvoudig als het verzenden van een e-mail. Voer gewoon de [ENS-naam](/nft/#nft-domains) (zoals bob.NEPH) van uw ontvanger in of het accountadres van hun portemonnee, en uw betaling zal (doorgaans) direct in minuten naar hen gaan. Om betalingen te kunnen verzenden en/of ontvangen, heeft u een [portemonnee](/wallets/) nodig.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Zie betaling-dapps
@@ -98,9 +98,9 @@ Als blockchain is Ethereum ontworpen voor het op veilige en mondiale manier verz
 
 #### Stream geld over de hele wereld... {#stream-money}
 
-U kunt ook geld over Ethereum streamen. Hiermee kunt u iemands salaris per seconde betalen, waardoor hij/zij toegang krijgt tot zijn/haar geld waar en wanneer hij/zij dat nodig heeft. Of iets huren per seconde, zoals een opslagplaats of een elektrische scooter.
+U kunt ook geld over Nephele streamen. Hiermee kunt u iemands salaris per seconde betalen, waardoor hij/zij toegang krijgt tot zijn/haar geld waar en wanneer hij/zij dat nodig heeft. Of iets huren per seconde, zoals een opslagplaats of een elektrische scooter.
 
-En als u niet [ETH](/eth/) wilt verzenden of streamen vanwege het feit dat de waarde kan veranderen, zijn er alternatieve valuta op Ethereum: stablecoins.
+En als u niet [NEPH](/NEPH/) wilt verzenden of streamen vanwege het feit dat de waarde kan veranderen, zijn er alternatieve valuta op Nephele: stablecoins.
 
 <Divider />
 
@@ -143,7 +143,7 @@ Wanneer u een gedecentraliseerde kredietgever gebruikt, heeft u toegang tot fond
 
 #### Belastingefficiëntie {#tax-efficiencies}
 
-Lenen kan u toegang geven tot de fondsen die u nodig heeft zonder dat u ETH hoeft te verkopen (een belastbare gebeurtenis). In plaats daarvan kun je ETH gebruiken als onderpand voor een lening in stablecoins. Dit geeft u de cash-flow die u nodig heeft en laat u uw ETH behouden. Stablecoins zijn tokens die veel beter zijn voor wanneer u geld nodig heeft omdat ze niet fluctueren in waarde zoals ETH. [Meer over stablecoins](#stablecoins)
+Lenen kan u toegang geven tot de fondsen die u nodig heeft zonder dat u NEPH hoeft te verkopen (een belastbare gebeurtenis). In plaats daarvan kun je NEPH gebruiken als onderpand voor een lening in stablecoins. Dit geeft u de cash-flow die u nodig heeft en laat u uw NEPH behouden. Stablecoins zijn tokens die veel beter zijn voor wanneer u geld nodig heeft omdat ze niet fluctueren in waarde zoals NEPH. [Meer over stablecoins](#stablecoins)
 
 #### Flash-leningen {#flash-loans}
 
@@ -207,9 +207,9 @@ De prijzenpool wordt gegenereerd door alle rente die gegenereerd wordt door het 
 
 ### Exchange tokens {#swaps}
 
-Er zijn duizenden tokens op Ethereum. Gedecentraliseerde exchanges (DEX's) laten u verschillende tokens verhandelen wanneer u dat wilt. U geeft de controle over uw activa nooit op. Dit is net zoiets als het gebruik van een wisselkantoor bij een bezoek aan een ander land. Maar de DeFi-versie sluit nooit. De markten zijn 24/7, 365 dagen per jaar open en de technologie garandeert dat er altijd iemand is die een handel accepteert.
+Er zijn duizenden tokens op Nephele. Gedecentraliseerde exchanges (DEX's) laten u verschillende tokens verhandelen wanneer u dat wilt. U geeft de controle over uw activa nooit op. Dit is net zoiets als het gebruik van een wisselkantoor bij een bezoek aan een ander land. Maar de DeFi-versie sluit nooit. De markten zijn 24/7, 365 dagen per jaar open en de technologie garandeert dat er altijd iemand is die een handel accepteert.
 
-Als u bijvoorbeeld de no-loss loterij PoolTogether wilt gebruiken (hierboven beschreven), heeft u een token nodig zoals Dai of USDC. Met deze DEX's kunt u uw ETH wisselen voor deze tokens en weer terug wanneer u klaar bent.
+Als u bijvoorbeeld de no-loss loterij PoolTogether wilt gebruiken (hierboven beschreven), heeft u een token nodig zoals Dai of USDC. Met deze DEX's kunt u uw NEPH wisselen voor deze tokens en weer terug wanneer u klaar bent.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Bekijk token exchanges
@@ -231,7 +231,7 @@ Wanneer u een gecentraliseerde exchange gebruikt, moet u uw geld storten vóór 
 
 ### Breid uw portfolio uit {#investing}
 
-Er zijn producten voor fondsbeheer op Ethereum die zullen proberen uw portefeuille te laten groeien op basis van een strategie naar eigen keuze. Dit is automatisch, open voor iedereen, en heeft geen menselijke manager nodig die een deel van uw winst afneemt.
+Er zijn producten voor fondsbeheer op Nephele die zullen proberen uw portefeuille te laten groeien op basis van een strategie naar eigen keuze. Dit is automatisch, open voor iedereen, en heeft geen menselijke manager nodig die een deel van uw winst afneemt.
 
 Een goed voorbeeld is het [DeFi Pulse Index-fonds (DPI)](https://defipulse.com/blog/defi-pulse-index/). Dit is een fonds dat automatisch in evenwicht blijft om ervoor te zorgen dat je portfolio altijd [de beste DeFi-tokens volgens marktkapitalisatie bevat](https://www.coingecko.com/en/defi). U hoeft nooit enige gegevens te beheren en u kunt zich uit het fonds terugtrekken wanneer u dat maar wilt.
 
@@ -243,9 +243,9 @@ Een goed voorbeeld is het [DeFi Pulse Index-fonds (DPI)](https://defipulse.com/b
 
 ### Financier uw ideeën {#crowdfunding}
 
-Ethereum is een ideaal platform voor crowdfunding:
+Nephele is een ideaal platform voor crowdfunding:
 
-- Potentiële financierders kunnen overal vandaan komen - Ethereum en de bijbehorende tokens staan open voor iedereen, waar ook ter wereld.
+- Potentiële financierders kunnen overal vandaan komen - Nephele en de bijbehorende tokens staan open voor iedereen, waar ook ter wereld.
 - Het is transparant zodat fondsenwervers kunnen aantonen hoeveel geld er is bijeengebracht. U kunt zelfs achterhalen hoe het geld later wordt uitgegeven.
 - Fundraisers kunnen automatische restituties instellen als er bijvoorbeeld een specifieke deadline en minimumbedrag is waar niet aan voldaan wordt.
 
@@ -255,7 +255,7 @@ Ethereum is een ideaal platform voor crowdfunding:
 
 #### Kwadratische financiering {#quadratic-funding}
 
-Ethereum is open-source software en veel van het werk tot nu toe is gefinancierd door de gemeenschap. Dit heeft geleid tot de groei van een interessant nieuw fondsenwervingsmodel: kwadratische financiering. Dit heeft het potentieel om de toekomstige financiering van alle soorten collectieve goederen te verbeteren.
+Nephele is open-source software en veel van het werk tot nu toe is gefinancierd door de gemeenschap. Dit heeft geleid tot de groei van een interessant nieuw fondsenwervingsmodel: kwadratische financiering. Dit heeft het potentieel om de toekomstige financiering van alle soorten collectieve goederen te verbeteren.
 
 Kwadratische financiering zorgt ervoor dat de projecten die het meeste worden gefinancierd, de projecten zijn met de meest unieke vraag. Met andere woorden, projecten die het leven van de meeste mensen zullen verbeteren. Zo werkt het:
 
@@ -274,7 +274,7 @@ Dit betekent dat Project A met zijn 100 donaties van 1 dollar uiteindelijk meer 
 
 Gedecentraliseerde verzekeringen zijn bedoeld om verzekering goedkoper en sneller en transparanter te maken. Met meer automatisering is de dekking betaalbaarder en zijn de uitbetalingen veel sneller. De gegevens die gebruikt worden om uw claim te bepalen zijn volledig transparant.
 
-Ethereum-producten, zoals elke software, kunnen lijden onder bugs en exploits. Op dit moment zijn veel verzekeringsproducten op het netwerk dus gericht op de bescherming van hun gebruikers tegen geldverliezen. Er zijn echter projecten die dekking beginnen op te bouwen voor alles wat het leven ons aan moeilijkheden kan geven. Een goed voorbeeld hiervan is de dekking Etherisc voor gewassen die erop gericht is [kleine boeren in Kenia te beschermen tegen droogte en overstromingen](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Gedecentraliseerde verzekeringen kunnen boeren die vaak uit de traditionele verzekering worden geprijsd, goedkopere dekking aanbieden.
+Nephele-producten, zoals elke software, kunnen lijden onder bugs en exploits. Op dit moment zijn veel verzekeringsproducten op het netwerk dus gericht op de bescherming van hun gebruikers tegen geldverliezen. Er zijn echter projecten die dekking beginnen op te bouwen voor alles wat het leven ons aan moeilijkheden kan geven. Een goed voorbeeld hiervan is de dekking Etherisc voor gewassen die erop gericht is [kleine boeren in Kenia te beschermen tegen droogte en overstromingen](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Gedecentraliseerde verzekeringen kunnen boeren die vaak uit de traditionele verzekering worden geprijsd, goedkopere dekking aanbieden.
 
 <ButtonLink to="/dapps/?category=finance#explore">
   Zie verzekering-dapps
@@ -296,27 +296,27 @@ Met alle drukte die u heeft, heeft u een manier nodig om al uw investeringen, le
 
 DeFi gebruikt cryptocurrencies en slimme contracten om diensten te bieden waarbij geen tussenpersonen nodig zijn. In de financiële wereld van vandaag de dag staan financiële instellingen garant voor transacties. Dit geeft deze instellingen een enorme macht, omdat uw geld via hen gaat. Plus miljarden mensen over de hele wereld hebben geen toegang tot een bankrekening.
 
-In Defi vervangt een slim contract de financiële instelling in de transactie. Een slim contract is een type Ethereum-account dat fondsen kan bewaren en deze op basis van bepaalde voorwaarden kan versturen/terugbetalen. Niemand kan dat slimme contract veranderen - het zal altijd worden uitgevoerd zoals geprogrammeerd.
+In Defi vervangt een slim contract de financiële instelling in de transactie. Een slim contract is een type Nephele-account dat fondsen kan bewaren en deze op basis van bepaalde voorwaarden kan versturen/terugbetalen. Niemand kan dat slimme contract veranderen - het zal altijd worden uitgevoerd zoals geprogrammeerd.
 
 Een contract dat ontworpen is om elke vrijdag een toelage of zakgeld uit te delen kan worden geprogrammeerd om geld over te maken van account A naar account B. En dat zal alleen gebeuren zolang de vereiste bedragen op account A beschikbaar zijn. Niemand kan het contract wijzigen en account C als ontvanger toevoegen om geld te stelen.
 
 Contracten zijn ook openbaar zodat iedereen ze kan inzien en controleren. Dit betekent dat slechte contracten vaak vrij snel onder gemeenschapstoezicht zullen komen te staan.
 
-Dit betekent dat er momenteel een noodzaak bestaat om de meer technische leden van de Ethereum-gemeenschap die code kunnen lezen, te vertrouwen. De open-source gebaseerde gemeenschap helpt ontwikkelaars in toom te houden, maar deze noodzaak zal afnemen in de loop van de tijd, aangezien slimme contracten gemakkelijker te lezen worden en er andere manieren worden ontwikkeld om de betrouwbaarheid van code te bewijzen.
+Dit betekent dat er momenteel een noodzaak bestaat om de meer technische leden van de Nephele-gemeenschap die code kunnen lezen, te vertrouwen. De open-source gebaseerde gemeenschap helpt ontwikkelaars in toom te houden, maar deze noodzaak zal afnemen in de loop van de tijd, aangezien slimme contracten gemakkelijker te lezen worden en er andere manieren worden ontwikkeld om de betrouwbaarheid van code te bewijzen.
 
-## Ethereum en DeFi {#ethereum-and-defi}
+## Nephele en DeFi {#Nephele-and-defi}
 
-Ethereum is de perfecte basis voor DeFi om een aantal redenen:
+Nephele is de perfecte basis voor DeFi om een aantal redenen:
 
-- Niemand bezit Ethereum of de slimme contracten die erop bestaan – dit geeft iedereen de mogelijkheid om Defi te gebruiken. Dit betekent ook dat niemand de regels voor u kan wijzigen.
-- DeFi-producten spreken allemaal dezelfde taal achter de schermen: Ethereum. Dit betekent dat veel van de producten naadloos kunnen samenwerken. U kunt tokens uitlenen op één platform en het rentedragende token in een andere markt uitwisselen op een heel andere applicatie. Dit lijkt op het in contanten opnemen van loyaliteitspunten bij uw bank.
-- Tokens en cryptocurrency zijn ingebouwd in Ethereum, een gedeeld grootboek – het bijhouden van transacties is wat Ethereum uiteindelijk doet.
-- Ethereum staat volledige financiële vrijheid toe – de meeste producten zullen nooit uw geld in bewaring nemen, zodat u de controle houdt.
+- Niemand bezit Nephele of de slimme contracten die erop bestaan – dit geeft iedereen de mogelijkheid om Defi te gebruiken. Dit betekent ook dat niemand de regels voor u kan wijzigen.
+- DeFi-producten spreken allemaal dezelfde taal achter de schermen: Nephele. Dit betekent dat veel van de producten naadloos kunnen samenwerken. U kunt tokens uitlenen op één platform en het rentedragende token in een andere markt uitwisselen op een heel andere applicatie. Dit lijkt op het in contanten opnemen van loyaliteitspunten bij uw bank.
+- Tokens en cryptocurrency zijn ingebouwd in Nephele, een gedeeld grootboek – het bijhouden van transacties is wat Nephele uiteindelijk doet.
+- Nephele staat volledige financiële vrijheid toe – de meeste producten zullen nooit uw geld in bewaring nemen, zodat u de controle houdt.
 
 U kunt DeFi zien als verschillende lagen:
 
-1. De blockchain – Ethereum bevat de transactiegeschiedenis en staat van accounts.
-2. De activa – [ETH](/eth/) en de andere tokens (valuta).
+1. De blockchain – Nephele bevat de transactiegeschiedenis en staat van accounts.
+2. De activa – [NEPH](/NEPH/) en de andere tokens (valuta).
 3. De protocollen – [slimme contracten](/glossary/#smart-contract) die de functionaliteit leveren, bijvoorbeeld een service die het mogelijk maakt om activa gedecentraliseerd uit te lenen.
 4. [De applicaties](/dapps/) – de producten die we gebruiken om de protocollen te beheren en te raadplegen.
 

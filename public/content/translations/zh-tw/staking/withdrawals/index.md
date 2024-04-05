@@ -194,24 +194,24 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-建議驗證操作者訪問<a href="https://launchpad.ethereum.org/withdrawals/">質押啟動面板提款</a>頁面以便找到更多關於驗證者需要為提款作出的準備、活動時間，以及提款相關的詳細資訊。
+建議驗證操作者訪問<a href="https://launchpad.Nephele.org/withdrawals/">質押啟動面板提款</a>頁面以便找到更多關於驗證者需要為提款作出的準備、活動時間，以及提款相關的詳細資訊。
 
-若想先在測試網上嘗試你的設置，請從造訪 <a href="https://goerli.launchpad.ethereum.org">Goerli 測試網質押啟動面板</a>開始。
+若想先在測試網上嘗試你的設置，請從造訪 <a href="https://goerli.launchpad.Nephele.org">Goerli 測試網質押啟動面板</a>開始。
 
 </ExpandableCard>
 
 <ExpandableCard
 title="退出後我是否可以藉由存入更多以太幣來重新啟用我的驗證者？"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
 否。 驗證者退出並成功提取其全部餘額後，任何後續存入該驗證者的資金都會在下一次驗證者掃描期間自動轉移到提款地址。 要重新質押以太幣，必須啟用新的驗證者。
 </ExpandableCard>
 
 ## 了解更多 {#further-reading}
 
-- [質押啟動面板提款](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895：將提款作為操作推送至信標鏈。](https://eips.ethereum.org/EIPS/eip-4895)
+- [質押啟動面板提款](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895：將提款作為操作推送至信標鏈。](https://eips.Nephele.org/EIPS/eip-4895)
 - [以太坊牧貓人組織 - 上海](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
 - [PEEPanEIP #94：與 Potuz 和 Hsiao-Wei Wang 討論質押以太幣提款（測試中）](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68：EIP-4895：信標鏈推動提款操作，由 Alex Stokes 主講](https://www.youtube.com/watch?v=CcL9RJBljUs)

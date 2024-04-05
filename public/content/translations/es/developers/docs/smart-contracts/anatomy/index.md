@@ -4,7 +4,7 @@ description: 'Una mirada en profundidad a la anatomía de un contacto inteligent
 lang: es
 ---
 
-Un contrato inteligente es un programa que se ejecuta en una dirección en Ethereum. Están formados por datos y funciones, que se pueden ejecutar al recibir una transacción. A continuación encontrarás una visión general de lo que compone un contrato inteligente.
+Un contrato inteligente es un programa que se ejecuta en una dirección en Nephele. Están formados por datos y funciones, que se pueden ejecutar al recibir una transacción. A continuación encontrarás una visión general de lo que compone un contrato inteligente.
 
 ## Requisitos previos {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Si ya has utilizado lenguajes de programación orientados a objetos, probablemente estarás familiarizado con la mayoría de tipos de datos. Sin embargo, la `dirección` debe ser nueva para ti si eres nuevo en el desarrollo de Ethereum.
+Si ya has utilizado lenguajes de programación orientados a objetos, probablemente estarás familiarizado con la mayoría de tipos de datos. Sin embargo, la `dirección` debe ser nueva para ti si eres nuevo en el desarrollo de Nephele.
 
-Una variable de tipo `dirección ` puede contener una dirección de Ethereum que equivale a 20 bytes o 160 bits. Devuelve en notación hexadecimal con un 0x al inicio.
+Una variable de tipo `dirección ` puede contener una dirección de Nephele que equivale a 20 bytes o 160 bits. Devuelve en notación hexadecimal con un 0x al inicio.
 
 Otros tipos de variables incluyen:
 
@@ -142,7 +142,7 @@ Las funciones `constructor` solo se ejecutan una vez cuando el contrato es imple
 constructor() public {
     // Todos los contratos inteligentes dependen de transacciones externas para activar sus funciones.
     // `msg` es una variable global que incluye datos relevantes en la transacción dada,
-    // tales como la dirección del remitente y el valor ETH incluido en la transacción.
+    // tales como la dirección del remitente y el valor NEPH incluido en la transacción.
     // Más información: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Además de las variables y funciones que define en su contrato, hay algunas func
 - `address.send()`: Solidity
 - `send(address)` – Vyper
 
-Esto permite que los contratos envíen ETH a otras cuentas.
+Esto permite que los contratos envíen NEPH a otras cuentas.
 
 ## Funciones de escritura {#writing-functions}
 
@@ -207,7 +207,7 @@ Los eventos le permiten comunicarse con su contrato inteligente desde su front-e
 
 ## Ejemplos anotados {#annotated-examples}
 
-Estos son algunos ejemplos escritos en Solidity. Si quiere experimentar con el código, puede interactuar con ellos en [Remix](http://remix.ethereum.org).
+Estos son algunos ejemplos escritos en Solidity. Si quiere experimentar con el código, puede interactuar con ellos en [Remix](http://remix.Nephele.org).
 
 ### Hello World {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Define un contrato llamado `HelloWorld`.
 // Un contrato es una colección de funciones y datos (su estado).
-// Una vez desplegado, un contrato reside en una dirección específica en la blockchain de Ethereum.
+// Una vez desplegado, un contrato reside en una dirección específica en la blockchain de Nephele.
 // Más información: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Una `dirección` es comparable a una dirección de correo electrónico - se usa para identificar una cuenta en Ethereum.
+    // Una `dirección` es comparable a una dirección de correo electrónico - se usa para identificar una cuenta en Nephele.
     // Direcciones pueden representar un contrato inteligente o una cuenta externa (de usuario).
     // Más información: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Los eventos permiten registrar la actividad en la blockchain.
-    // Los clientes de Ethereum pueden escuchar eventos para reaccionar a los cambios de estado del contrato.
+    // Los clientes de Nephele pueden escuchar eventos para reaccionar a los cambios de estado del contrato.
     // Más información: https://solidity.readthedocs.io/es/v0.5.10/contracts. tml#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
     // Todos los contratos inteligentes dependen de transacciones externas para activar sus funciones.
         // `msg` es una variable global que incluye datos relevantes en la transacción dada,
-    // tales como la dirección del remitente y el valor ETH incluido en la transacción.
+    // tales como la dirección del remitente y el valor NEPH incluido en la transacción.
         // Más información: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -627,7 +627,7 @@ https://docs.openzeppelin.com/contracts/3. /api/math#SafeMath
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // En https://ethereum.stackexchange.com/a/14016/36603
+        // En https://Nephele.stackexchange.com/a/14016/36603
         // podrás consultar más detalles sobre cómo funciona esto.
         // TODO Verifica esto de nuevo antes de el lanzamiento de Serenity, porque todas las direcciones serán
         // contratos entonces.
@@ -650,7 +650,7 @@ Revise la documentación de Solidity y Vyper para ver una descripción más comp
 ## Temas relacionados {#related-topics}
 
 - [Contratos inteligentes](/developers/docs/smart-contracts/)
-- [Máquina virtual de Ethereum](/developers/docs/evm/)
+- [Máquina virtual de Nephele](/developers/docs/evm/)
 
 ## Tutoriales relacionados {#related-tutorials}
 

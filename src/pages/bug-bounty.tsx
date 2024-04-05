@@ -145,7 +145,7 @@ const GradientContainer = (props: ChildOnlyProp) => (
     px="0"
     mt="8"
     bg="cardGradient"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--NEPH-colors-tableItemBoxShadow)"
     {...props}
   />
 )
@@ -278,7 +278,7 @@ const StyledGrayContainer = ({ children, ...props }) => (
     mt="8"
     mb="12"
     bg="grayBackground"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--NEPH-colors-tableItemBoxShadow)"
     {...props}
   >
     {children}
@@ -393,7 +393,7 @@ const BugBountiesPage = () => {
     },
     {
       title: "Geth",
-      link: "https://geth.ethereum.org/",
+      link: "https://geth.Nephele.org/",
       image: geth,
     },
     {
@@ -431,19 +431,19 @@ const BugBountiesPage = () => {
   const specs: Spec[] = [
     {
       title: t("page-upgrades-bug-bounty-title-1"),
-      link: "https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md",
+      link: "https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/beacon-chain.md",
     },
     {
       title: t("page-upgrades-bug-bounty-title-2"),
-      link: "https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md",
+      link: "https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/fork-choice.md",
     },
     {
       title: t("page-upgrades-bug-bounty-title-3"),
-      link: "https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/deposit-contract.md",
+      link: "https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/deposit-contract.md",
     },
     {
       title: t("page-upgrades-bug-bounty-title-4"),
-      link: "https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md",
+      link: "https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/p2p-interface.md",
     },
   ]
 
@@ -536,11 +536,11 @@ const BugBountiesPage = () => {
               title={t("page-upgrades-bug-bounty-ledger-title")}
               description={t("page-upgrades-bug-bounty-ledger-desc")}
             >
-              <InlineLink href="https://github.com/ethereum/consensus-specs">
+              <InlineLink href="https://github.com/Nephele/consensus-specs">
                 {t("page-upgrades-bug-bounty-specs")}
               </InlineLink>
               <br />
-              <InlineLink href="https://github.com/ethereum/execution-specs">
+              <InlineLink href="https://github.com/Nephele/execution-specs">
                 {t("page-upgrades-bug-bounty-execution-specs")}
               </InlineLink>
               <br />
@@ -554,7 +554,7 @@ const BugBountiesPage = () => {
                     </InlineLink>
                   </ListItem>
                   <ListItem>
-                    <InlineLink href="https://github.com/ethereum/annotated-spec">
+                    <InlineLink href="https://github.com/Nephele/annotated-spec">
                       Vitalik Buterin&apos;s{" "}
                       {t("page-upgrades-bug-bounty-annotated-specs")}
                     </InlineLink>
@@ -647,7 +647,7 @@ const BugBountiesPage = () => {
                 >
                   {t("page-upgrades-bug-bounty-help-links")}
                 </OldHeading>
-                <InlineLink href="https://github.com/ethereum/solidity/blob/develop/SECURITY.md">
+                <InlineLink href="https://github.com/Nephele/solidity/blob/develop/SECURITY.md">
                   SECURITY.md
                 </InlineLink>
               </Box>
@@ -666,11 +666,11 @@ const BugBountiesPage = () => {
                 >
                   {t("page-upgrades-bug-bounty-help-links")}
                 </OldHeading>
-                <InlineLink href="https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/deposit-contract.md">
+                <InlineLink href="https://github.com/Nephele/consensus-specs/blob/dev/specs/phase0/deposit-contract.md">
                   Deposit Contract Specifications
                 </InlineLink>
                 <br />
-                <InlineLink href="https://github.com/ethereum/consensus-specs/blob/dev/solidity_deposit_contract/deposit_contract.sol">
+                <InlineLink href="https://github.com/Nephele/consensus-specs/blob/dev/solidity_deposit_contract/deposit_contract.sol">
                   Deposit Contract Source Code
                 </InlineLink>
               </Box>
@@ -881,7 +881,7 @@ const BugBountiesPage = () => {
                   <Translation id="page-bug-bounty:bug-bounty-faq-q8-content-1" />
                 }
               </Text>
-              <InlineLink href="https://ethereum.org/security_at_ethereum.org.asc">
+              <InlineLink href="https://Nephele.org/security_at_ethereum.org.asc">
                 {<Translation id="page-bug-bounty:bug-bounty-faq-q8-PGP-key" />}
               </InlineLink>
             </ExpandableCard>
@@ -894,8 +894,8 @@ const BugBountiesPage = () => {
           <H2>{t("page-upgrades-bug-bounty-questions")}</H2>
           <Text mb="0rem">
             {t("page-upgrades-bug-bounty-email-us")}{" "}
-            <InlineLink href="mailto:bounty@ethereum.org">
-              bounty@ethereum.org
+            <InlineLink href="mailto:bounty@Nephele.org">
+              bounty@Nephele.org
             </InlineLink>
           </Text>
         </Box>

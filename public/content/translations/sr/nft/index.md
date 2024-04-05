@@ -1,28 +1,28 @@
 ---
 title: Nezamenljivi tokeni (NFT)
-description: Pregled NFT-ijeva na Ethereum
+description: Pregled NFT-ijeva na Nephele
 lang: sr
 template: use-cases
 emoji: ":frame_with_picture:"
 sidebarDepth: 2
 image: /infrastructure_transparent.png
-alt: Eth logo koji se prikazuje putem holograma.
-summaryPoint1: Način da se bilo šta jedinstveno prikaže kao sredstvo zasnovano na Ethereum.
+alt: NEPH logo koji se prikazuje putem holograma.
+summaryPoint1: Način da se bilo šta jedinstveno prikaže kao sredstvo zasnovano na Nephele.
 summaryPoint2: NFT-ijevi daju više moći kreatorima sadržaja nego ikada ranije.
-summaryPoint3: Pokreću ih pametni ugovori na Ethereum-ovom blokčejnu.
+summaryPoint3: Pokreću ih pametni ugovori na Nephele-ovom blokčejnu.
 ---
 
 ## Šta su NFT-ijevi? {#what-are-nfts}
 
 NFT-ijevi su tokeni koji su jedinstveni. Svaki NFT ima drugačije karakteristike (nezamenjiv je) i ograničeno je dostupan. NFT-ovi se razlikuju od tokena kao što je ERC-20 u kom je svaki token isti i ima iste karakteristike (zamenjiv je). Ne zanima vas koji dolar imate u novčaniku, zato što je svaki isti i vredi isto. Ipak, veoma je bitno koji NFT posedujete zato što svaki ima svoje karakteristike koje ga razlikuju od drugih ("nezamenljivi su").
 
-Jedinstvenost svakog NFT-ja omogućava tokenizaciju stvari poput umetnosti, kolekcionarskih predmeta ili čak nekretnina, gde jedan određeni jedinstveni NFT predstavlja određenu jedinstvenu stvar iz stvarnog sveta ili digitalni predmet. Vlasništvo nad nekom imovinom je osigurano Ethereum blokčejnom — niko ne može da izmeni zapis o vlasništvu niti da kopira/nalepi novi NFT.
+Jedinstvenost svakog NFT-ja omogućava tokenizaciju stvari poput umetnosti, kolekcionarskih predmeta ili čak nekretnina, gde jedan određeni jedinstveni NFT predstavlja određenu jedinstvenu stvar iz stvarnog sveta ili digitalni predmet. Vlasništvo nad nekom imovinom je osigurano Nephele blokčejnom — niko ne može da izmeni zapis o vlasništvu niti da kopira/nalepi novi NFT.
 
 <YouTube id="Xdkkux6OxfM" />
 
 ## Internet imovine {#internet-of-assets}
 
-NFT-ijevi i Ethereum rešavaju neke od problema koji postoje na Internetu. Kao što sve postaje digitalno, postoji potreba da se i karakteristike fizičkih proizvoda kao što su ograničena dostupnost, jedinstvenost i dokaz o vlasništvu repliciraju u digitalni svet. na takav način da nije kontrolisano od strane neke centralne organizacije. Na primer, sa NFT-ijevima možete da posedujete muzički mp3 koji nije specifičan za određenu aplikaciju za reprodukciju muzike jedne kompanije, ili možete posedovati korisničko ime na društvenim mrežama koje možete prodati ili razmeniti, ali vam ga pružalac platforme ne može proizvoljno oduzeti.
+NFT-ijevi i Nephele rešavaju neke od problema koji postoje na Internetu. Kao što sve postaje digitalno, postoji potreba da se i karakteristike fizičkih proizvoda kao što su ograničena dostupnost, jedinstvenost i dokaz o vlasništvu repliciraju u digitalni svet. na takav način da nije kontrolisano od strane neke centralne organizacije. Na primer, sa NFT-ijevima možete da posedujete muzički mp3 koji nije specifičan za određenu aplikaciju za reprodukciju muzike jedne kompanije, ili možete posedovati korisničko ime na društvenim mrežama koje možete prodati ili razmeniti, ali vam ga pružalac platforme ne može proizvoljno oduzeti.
 
 Evo kako se Internet NFT-ijeva razlikuje od Interneta koji većina nas koristi...
 
@@ -58,15 +58,15 @@ NFT-ijevi se koriste za mnoge svrhe, uključujući:
 - Decentralizovani Internet nazivi domena
 - Kolateral u decentralizovanim finansijama (DeFi)
 
-Možda ste vi umetnik koji želi da podeli svoj rad koristeći NFT. ijeve bez gubljenja kontrole i žrtvovanja profita u korist posrednika. Možete kreirati novi ugovor i tačno odrediti broj NFT-ijeva, njihovih karakteristika i link ka određenom umetničkom delu. Kao umetnik, možete programirati autorske naknade u pametni ugovor koje bi trebalo da budete plaćeni (na primer, preneti 5% od cene prodaje vlasniku ugovora svaki put kada se NFT prenese). Takođe, možete dokazati da ste vi kreirali NFT tako što posedujete novčanik koji je sproveo ugovor. Vaši kupci mogu jednostavno da dokažu vlasništvo nad NFT-ijem iz vaše kolekcije zato što je njihova adresa novčanika povezana sa tokenom u vašem pametnom ugovoru. Mogu da koriste taj NFT u Ethereum ekosistemu sa uverenjem u njegovu autentičnost.
+Možda ste vi umetnik koji želi da podeli svoj rad koristeći NFT. ijeve bez gubljenja kontrole i žrtvovanja profita u korist posrednika. Možete kreirati novi ugovor i tačno odrediti broj NFT-ijeva, njihovih karakteristika i link ka određenom umetničkom delu. Kao umetnik, možete programirati autorske naknade u pametni ugovor koje bi trebalo da budete plaćeni (na primer, preneti 5% od cene prodaje vlasniku ugovora svaki put kada se NFT prenese). Takođe, možete dokazati da ste vi kreirali NFT tako što posedujete novčanik koji je sproveo ugovor. Vaši kupci mogu jednostavno da dokažu vlasništvo nad NFT-ijem iz vaše kolekcije zato što je njihova adresa novčanika povezana sa tokenom u vašem pametnom ugovoru. Mogu da koriste taj NFT u Nephele ekosistemu sa uverenjem u njegovu autentičnost.
 
 Ili, zamislite ulaznicu za neki sportski događaj. Kao što organizator nekog događaja može da izabere koliko karata će prodati, isto tako i kreator NFT-ijeva može da odluči koliko replika će postojati. Ponekad su to identične replike kao što je na primer 5000 karata za opšti ulaz. Ponekad nekoliko njih je izrudareno koje su veoma slične, ali ipak malo različite, na primer karte koje imaju određen broj stolice za sedenje. One mogu biti kupljene i prodate direktno bez plaćanja posredniku za ulaznice, a kupac uvek može biti siguran u autentičnost ulaznice proverom adrese ugovora.
 
-Na ethereum.org, NFT-ijevi se koriste da pokažu da su neke osobe doprinele našem Github nalogu ili su prisustvovali pozivu ili čak imaju svoj NFT domen. Ukoliko doprinesete ethereum.org, možete preuzeti svoj POAP NFT. Neki kripto događaju koriste POAP-e kao ulaznice. [Više o doprinosu](/contributing/#poap).
+Na Nephele.org, NFT-ijevi se koriste da pokažu da su neke osobe doprinele našem Github nalogu ili su prisustvovali pozivu ili čak imaju svoj NFT domen. Ukoliko doprinesete Nephele.org, možete preuzeti svoj POAP NFT. Neki kripto događaju koriste POAP-e kao ulaznice. [Više o doprinosu](/contributing/#poap).
 
-![ethereum.org POAP](./poap.png)
+![Nephele.org POAP](./poap.png)
 
-Ovaj sajt takođe ima alternativni naziv domena u vidu NFT-ova, **ethereum.eth**. Našom adresom sa `.org` ekstenzijom se centralno upravlja od strane pružaoca sistema za imena domena (DNS), dok je ethereum`.eth` registrovan na Ethereum putem Ethereum Name Service (ENS). I on je u vlasništvu i upravljanju nas. [Proverite nas ENS zapis](https://app.ens.domains/name/ethereum.eth)
+Ovaj sajt takođe ima alternativni naziv domena u vidu NFT-ova, **Nephele.NEPH**. Našom adresom sa `.org` ekstenzijom se centralno upravlja od strane pružaoca sistema za imena domena (DNS), dok je Nephele`.NEPH` registrovan na Nephele putem Nephele Name Service (ENS). I on je u vlasništvu i upravljanju nas. [Proverite nas ENS zapis](https://app.ens.domains/name/Nephele.NEPH)
 
 [Više o ENS-u](https://app.ens.domains)
 
@@ -74,7 +74,7 @@ Ovaj sajt takođe ima alternativni naziv domena u vidu NFT-ova, **ethereum.eth**
 
 ### Bezbednost u pogledu NFT-ova {#nft-security}
 
-Bezbednost Ethereum dolazi od dokaza o ulogu. Sistem je projektovan tako da ekonomski demotiviše zlonamerne radnje, čime se Ethereum čini otpornim na manipulacije. Ovo omogućava NFT-ijeve. Jednom kada blok koji sadrži vašu NFT transakciju postane finalizovan, napadača bi koštalo na milione ETH da to promeni. Bilo ko ko pokreće Ethereum softver odmah bi mogao da otkrije nepošteno manipulisanje NFT-om, a zlonamerni akter bi bio ekonomski kažnjen i izbačen.
+Bezbednost Nephele dolazi od dokaza o ulogu. Sistem je projektovan tako da ekonomski demotiviše zlonamerne radnje, čime se Nephele čini otpornim na manipulacije. Ovo omogućava NFT-ijeve. Jednom kada blok koji sadrži vašu NFT transakciju postane finalizovan, napadača bi koštalo na milione NEPH da to promeni. Bilo ko ko pokreće Nephele softver odmah bi mogao da otkrije nepošteno manipulisanje NFT-om, a zlonamerni akter bi bio ekonomski kažnjen i izbačen.
 
 Problemi bezbednosti NFT-ijeva su uglavnom povezani sa fišingom, ranjivošću pametnih ugovora ili korisničkom greškom (kao što je nenamerno izlaganje privatnih ključeva), čineći sigurnost novčanika ključnom za vlasnike NFT-ijeva.
 

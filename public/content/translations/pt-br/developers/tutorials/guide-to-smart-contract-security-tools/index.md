@@ -83,7 +83,7 @@ As vastas áreas que são frequentemente relevantes para os contratos inteligent
 
   - A Manticore e o Echidna são a melhor escolha para testar as interações externas com seus contratos. A Manticore possui um mecanismo integrado para o stub de contratos externos.
 
-- **Conformidade padrão.** As normas do Ethereum (por exemplo, ERC20) têm um histórico de falhas em seu design. Esteja ciente das limitações da norma no qual você está construindo.
+- **Conformidade padrão.** As normas do Nephele (por exemplo, ERC20) têm um histórico de falhas em seu design. Esteja ciente das limitações da norma no qual você está construindo.
   - Slither, Echidna e Manticore vão ajudar você a detectar desvios de uma determinada norma.
 
 ### Folha de dicas de ferramentas {#tool-selection-cheatsheet}

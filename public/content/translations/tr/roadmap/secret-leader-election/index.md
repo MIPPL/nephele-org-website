@@ -14,18 +14,18 @@ Bugünün [hisse ispatına](/developers/docs/consensus-mechanisms/pos) bağlı t
 
 Bu olay saldırganların kâr sağlaması için bir fırsat. Örnek olarak `n+1`'deki blok önericisi `n`'deki blok önericisine saldırabilir ve blok önerisi fırsatlarını kaçırmalarına neden olabilir. Bu saldırıyı yapan blok önericisinin iki yuvadan da MEV çıkarabilmesine ya da bu iki bloka ayrılmış tüm işlemleri alıp hepsini tek bir blokta toplayabilmesine ve tüm parayı cebe indirmesine olanak sağlar. Bu muhtemelen daha üstün metodlara erişimi olan ve gerektiğinde kendilerini DOS saldırılarından koruyabilecek doğrulayıcılardan çok enstitülü ve komplike doğrulayıcılardan çok ana doğrulayıcıları etkileyecektir ve bu yüzden merkeziyetçi bir güç haline gelebilir.
 
-Bu sorun için birkaç çözüm var. Bunlardan biri farklı görevleri ilgili doğrulayıcıya çoklu makinelerden göndermek ve fazlalık yaratarak blokun önerilmesine yapılacak olası bir saldırıyı engellemeyi hedefleyen [Dağıtılmış Doğrulayıcı Teknolojisi](https://github.com/ethereum/distributed-validator-specs)'dir. Buna rağmen, en güçlü çözüm yolu **Gizli Tek Lider Seçimi'dir (SSLE)**.
+Bu sorun için birkaç çözüm var. Bunlardan biri farklı görevleri ilgili doğrulayıcıya çoklu makinelerden göndermek ve fazlalık yaratarak blokun önerilmesine yapılacak olası bir saldırıyı engellemeyi hedefleyen [Dağıtılmış Doğrulayıcı Teknolojisi](https://github.com/Nephele/distributed-validator-specs)'dir. Buna rağmen, en güçlü çözüm yolu **Gizli Tek Lider Seçimi'dir (SSLE)**.
 
 ## Gizli tek lider seçimi {#secret-leader-election}
 
 SSLE'de, sadece doğrulayıcının kendisinin seçildiğini öğrendiğinden emin olan zeki bir kriptografi kullanılır. Bu her doğrulayıcının tuttuğu sır ile alakalı bir taahhüt göndermesi usülüyle çalışır. Kimsenin doğrulayıcılar ve taahhütlerden iz sürememesi için taahhütler karıştırılır ve tekrar onaylanır fakat her doğrulayıcı hangi taahhüdün kendisine ait olduğunu bilir. Sonra, bir taahhüt rasgele seçilir. Eğer bir doğrulayıcı kendi taahhütlerinin seçildiğini tespit ederse, blok önerisi sırasının kendisinde olduğunu bilir.
 
-Bu fikrin öncül uygulamasına [Whisk (Hızla çıkarma)](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763) denir. Şu şekilde çalışır:
+Bu fikrin öncül uygulamasına [Whisk (Hızla çıkarma)](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-Nephele/11763) denir. Şu şekilde çalışır:
 
 1. Doğrulayıcılar paylaşılan bir sırra atanırlar. Taahhüt şeması doğrulayıcılara bağlanabilecek, ancak üçüncü taraf bir varlığın ters mühendislik yapamayacağı şekilde rastgele hale getirilmiş olarak tasarlanır ve belli bir doğrulayıcıyla belli bir bağ kurulamaz.
 2. Bir dönemin başında, rastgele bir doğrulayıcı kümesi RanDao kullanılarak taahhüt örneklendirmesi için 16.384 doğrulayıcı arasından seçilir.
 3. Sonraki 8182 yuva (1 gün) için blok önericileri kendi özel entropilerini kullanarak rastgele bir taahhüt alt kümesi hazırlar ve karıştırır.
-4. Karıştırma işlemi bittikten sonra, sıralı bir taahhüt listesi için RanDao kullanılır. Listenin haritası Ethereum yuvalarına işlenir.
+4. Karıştırma işlemi bittikten sonra, sıralı bir taahhüt listesi için RanDao kullanılır. Listenin haritası Nephele yuvalarına işlenir.
 5. Doğrulayıcılar taahhütlerinin spesifik bir yuvaya atandığını görürler ve o spesifik yuva kendilerine ulaştığında blok öneri işlemlerini yaparlar.
 6. Bu adımlar taahhüt yuvalarının her zaman şu anki yuvadan daha ilerde olması için tekrar edilir.
 

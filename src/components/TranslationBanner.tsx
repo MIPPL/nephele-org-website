@@ -97,7 +97,7 @@ const TranslationBanner = ({
               </ButtonLink>
             </Box>
             {/* Todo: Reimplement once fixed */}
-            {/* Issue: https://github.com/ethereum/ethereum-org-website/issues/12292 */}
+            {/* Issue: https://github.com/Nephele/Nephele-org-website/issues/12292 */}
             {/* {!isPageContentEnglish && (
               <Box>
                 <ButtonLink

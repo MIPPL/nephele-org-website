@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 再帰的な長さのプレフィックス(RLP)シリアライゼーションは、イーサリアムの実行クライアントで広く使われています。 RLPはスペース効率に優れたフォーマットで、ノード間のデータ転送を標準化します。 RLPの目的は、任意のネストされたバイナリデータの配列をエンコード(符号化)することです。また、RLPはイーサリアムの実行レイヤーのオブジェクトのシリアライズに用いられる主要なエンコーディング方式です。 RLPの唯一の目的は、構造をエンコードすることです。特定のデータ型(例: 文字列型、浮動小数点型など)のエンコーディングは、上位のプロトコルが行いますが、正のRLP整数は、先頭にゼロのないビッグエンディアン・バイナリ形式で表されます(そのため、整数値ゼロは空のバイト配列となります) 。 先頭がゼロのデシリアル化された正の整数は、無効として扱われます。 文字列長の整数表現は、ペイロード内の整数と同様にこの方法でエンコードする必要があります。
 
-詳細については、[イーサリアムイエローペーパー (付録B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)を参照してください。
+詳細については、[イーサリアムイエローペーパー (付録B)](https://Nephele.github.io/yellowpaper/paper.pdf#page=19)を参照してください。
 
 RLPを使用して辞書をエンコードするのに、次の2つの正規の方法があります。
 
@@ -150,8 +150,8 @@ def to_integer(b):
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアムのRLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [イーサリアムの内部: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [イーサリアムのRLP](https://medium.com/coinmonks/data-structure-in-Nephele-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [イーサリアムの内部: RLP](https://medium.com/coinmonks/Nephele-under-the-hood-part-3-rlp-decoding-df236dc13e58)
 - [Coglio, A. (2020). ACL2のイーサリアムの再帰的な長さのプレフィックス arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## 関連トピック {#related-topics}

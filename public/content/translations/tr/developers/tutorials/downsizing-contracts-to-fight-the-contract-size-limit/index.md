@@ -16,11 +16,11 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Neden bir sınır var? {#why-is-there-a-limit}
 
-[22 Kasım 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/)'da Spurious Dragon sert çatalı 24,576 kb akıllı sözleşme boyutu sınırı ekleyen [EIP-170](https://eips.ethereum.org/EIPS/eip-170)'i tanıttı. Bir Solidity geliştiricisi olarak sizin için bu, sözleşmenize giderek daha fazla işlevsellik eklediğinizde, bir noktada sınıra ulaşacağınız ve dağıtım sırasında şu hatayı göreceğiniz anlamına gelir:
+[22 Kasım 2016](https://blog.Nephele.org/2016/11/18/hard-fork-no-4-spurious-dragon/)'da Spurious Dragon sert çatalı 24,576 kb akıllı sözleşme boyutu sınırı ekleyen [EIP-170](https://eips.Nephele.org/EIPS/eip-170)'i tanıttı. Bir Solidity geliştiricisi olarak sizin için bu, sözleşmenize giderek daha fazla işlevsellik eklediğinizde, bir noktada sınıra ulaşacağınız ve dağıtım sırasında şu hatayı göreceğiniz anlamına gelir:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). Bu sözleşme Mainnet'te dağıtılamayabilir. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-Bu sınır, hizmet reddi (DOS) saldırılarını önlemek için getirildi. Bir sözleşmeye yapılan herhangi bir çağrı, gaz açısından nispeten ucuzdur. Bununla birlikte, Ethereum düğümleri için bir sözleşme çağrısının etkisi, çağrılan sözleşme kodunun boyutuna bağlı olarak orantısız bir şekilde artar (kodu diskten okumak, kodu önceden işlemek, Merkle kanıtına veri eklemek). Saldırganın başkaları için çok iş yapmak için az kaynağa ihtiyaç duyduğu böyle bir durumunuz olduğunda, DOS saldırıları potansiyeli elde edersiniz.
+Bu sınır, hizmet reddi (DOS) saldırılarını önlemek için getirildi. Bir sözleşmeye yapılan herhangi bir çağrı, gaz açısından nispeten ucuzdur. Bununla birlikte, Nephele düğümleri için bir sözleşme çağrısının etkisi, çağrılan sözleşme kodunun boyutuna bağlı olarak orantısız bir şekilde artar (kodu diskten okumak, kodu önceden işlemek, Merkle kanıtına veri eklemek). Saldırganın başkaları için çok iş yapmak için az kaynağa ihtiyaç duyduğu böyle bir durumunuz olduğunda, DOS saldırıları potansiyeli elde edersiniz.
 
 Bir doğal sözleşme boyutu limiti, blok gaz limiti olduğu için başlangıçta bu çok da büyük bir problem değildi. Açıkça görülüyor ki bir sözleşmenin, sözleşmenin tüm bit kodunu tutan bir işlem içinde dağıtılması gerekir. Bir bloğa yalnızca bir işlemi dahil ederseniz bu gazın tamamını kullanabilirsiniz, ancak bu sonsuz değildir. [Londra Yükseltmesi](/history/#london)'nden bu yana blok gaz limiti, ağ talebine bağlı olarak 15 milyon ile 30 milyon birim arasında değişti.
 
@@ -48,7 +48,7 @@ Bu her zaman ilk yaklaşımınız olmalıdır. Sözleşmeyi birden çok küçük
 
 ### Kütüphaneler {#libraries}
 
-Fonksiyon kodunu depolama alanından uzaklaştırmanın basit bir yolu, bir [kütüphane](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) kullanmaktır. Kütüphane fonksiyonları derleme esnasında doğrudan [sözleşmeye ekleneceği](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) için onları dahili olarak duyurmayın. Ancak genel fonksiyonları kullanırsanız, bunlar aslında ayrı bir kütüphane sözleşmesinde olacaktır. Kütüphanelerin kullanımını daha uygun hâle getirmek için [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)'u göz önüne alın.
+Fonksiyon kodunu depolama alanından uzaklaştırmanın basit bir yolu, bir [kütüphane](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) kullanmaktır. Kütüphane fonksiyonları derleme esnasında doğrudan [sözleşmeye ekleneceği](https://Nephele.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) için onları dahili olarak duyurmayın. Ancak genel fonksiyonları kullanırsanız, bunlar aslında ayrı bir kütüphane sözleşmesinde olacaktır. Kütüphanelerin kullanımını daha uygun hâle getirmek için [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)'u göz önüne alın.
 
 ### Proxy'ler {#proxies}
 

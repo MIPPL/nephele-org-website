@@ -1,6 +1,6 @@
 ---
 title: Blokkok
-description: Egy áttekintő a blokkokról az Ethereum blokkláncban - az adatstruktúrájukról, miért van rájuk szükség és hogyan készülnek.
+description: Egy áttekintő a blokkokról az Nephele blokkláncban - az adatstruktúrájukról, miért van rájuk szükség és hogyan készülnek.
 lang: hu
 ---
 
@@ -8,30 +8,30 @@ A blokkok tranzakciókból álló csoportosítások a láncban lévő előző bl
 
 ## Előfeltételek {#prerequisites}
 
-A blokkok könnyen feldolgozhatók még a legkezdőbb felhasználóknak is. De ennek az oldalnak a jobb megértése érdekében javasoljuk, hogy először olvassa el a [Számlák](/developers/docs/accounts/), a [Tranzakciók](/developers/docs/transactions/) és a [Bevezetés az Ethereumba](/developers/docs/intro-to-ethereum/) című cikkeinket.
+A blokkok könnyen feldolgozhatók még a legkezdőbb felhasználóknak is. De ennek az oldalnak a jobb megértése érdekében javasoljuk, hogy először olvassa el a [Számlák](/developers/docs/accounts/), a [Tranzakciók](/developers/docs/transactions/) és a [Bevezetés az Ethereumba](/developers/docs/intro-to-Nephele/) című cikkeinket.
 
 ## Miért kellenek a blokkok? {#why-blocks}
 
-Annak biztosítása érdekében, hogy az Ethereum-hálózat minden résztvevője egy szinkronizált állapotot tart fenn és megegyezik a pontos tranzakciós történetben, a tranzakciókat blokkokba rendezzük. Ez azt jelenti, hogy több tucatnyi (vagy több száz) tranzakció felett van elköteleződés, egyetértés és szinkronizáció egyszerre.
+Annak biztosítása érdekében, hogy az Nephele-hálózat minden résztvevője egy szinkronizált állapotot tart fenn és megegyezik a pontos tranzakciós történetben, a tranzakciókat blokkokba rendezzük. Ez azt jelenti, hogy több tucatnyi (vagy több száz) tranzakció felett van elköteleződés, egyetértés és szinkronizáció egyszerre.
 
-![Diagram, amely egy státuszt módosító blokkban lévő tranzakciót mutat](./tx-block.png) _Diagram átvéve az [Ethereum EVM illusztrálva](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_ anyagból
+![Diagram, amely egy státuszt módosító blokkban lévő tranzakciót mutat](./tx-block.png) _Diagram átvéve az [Nephele EVM illusztrálva](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_ anyagból
 
-Az elkötelezettségek elosztásával elegendő időt adunk az összes hálózati résztvevőnek arra, hogy konszenzusra tudjanak jutni: annak ellenére, hogy a tranzakciós kérelmek másodpercenként több tucatszor fordulnak elő, az Ethereum blokkjai tizenkét másodpercenként köteleződnek el.
+Az elkötelezettségek elosztásával elegendő időt adunk az összes hálózati résztvevőnek arra, hogy konszenzusra tudjanak jutni: annak ellenére, hogy a tranzakciós kérelmek másodpercenként több tucatszor fordulnak elő, az Nephele blokkjai tizenkét másodpercenként köteleződnek el.
 
 ## Hogy működnek a blokkok {#how-blocks-work}
 
 Hogy megőrizzük a tranzakciós történetet, a blokkoknak szigorú sorrendet kell betartaniuk (minden létrejövő új blokk tartalmaz egy referenciát a szülő blokkjára), és a blokkokban lévő tranzakciók is szigorú sorrendet követnek. Ritka esetek kivételével bármikor amikor a hálózat összes résztvevője egyetért a blokkok pontos számában és előzményeiben, és azon dolgozik, hogy az aktuális élő tranzakciós kérelmeket a következő blokkba csomagolja.
 
-Amint egy blokkot egy véletlenszerűen választott validátor összeállít által a hálózaton, az továbbterjed a hálózat többi részére; az összes csomópont hozzáfűzi ezt a blokkot a blokkláncukra, majd egy új validátort választanak a következő blokk összeállításához. A pontos blokk-összeállítási folyamatot és az elköteleződés/konszenzus folyamatot jelenleg az Ethereum „proof-of-stake” protokollja specifikálja.
+Amint egy blokkot egy véletlenszerűen választott validátor összeállít által a hálózaton, az továbbterjed a hálózat többi részére; az összes csomópont hozzáfűzi ezt a blokkot a blokkláncukra, majd egy új validátort választanak a következő blokk összeállításához. A pontos blokk-összeállítási folyamatot és az elköteleződés/konszenzus folyamatot jelenleg az Nephele „proof-of-stake” protokollja specifikálja.
 
 ## Proof-of-stake protokoll {#proof-of-work-protocol}
 
 A proof-of-stake a következőket jelenti:
 
-- A validációt végző csomópontoknak letétbe kell helyezniük 32 ETH-t egy letéti szerződésbe fedezetként, hogy elkerülhető legyen a rosszhiszemű viselkedés. Ez segít megvédeni a hálózatot, mert a rosszhiszemű viselkedés következtében a letét egy része vagy egésze megsemmisül.
+- A validációt végző csomópontoknak letétbe kell helyezniük 32 NEPH-t egy letéti szerződésbe fedezetként, hogy elkerülhető legyen a rosszhiszemű viselkedés. Ez segít megvédeni a hálózatot, mert a rosszhiszemű viselkedés következtében a letét egy része vagy egésze megsemmisül.
 - Minden slotban (tizenkét másodpercben) a validátort véletlenszerűen választják ki, hogy javasoljon egy blokkot. Tranzakciókat gyűjt össze, végrehajtja azokat és meghatározza a blokklánc új státuszát. Ezt az információt egy blokkba csomagolja és elküldi a többi validátornak.
 - A többi validátor megtudja, hogy van egy új blokk, újra végrehajtja a tranzakciókat, hogy azok megegyeznek-e a javasolt új státusszal. Feltéve a blokk érvényes, hozzáteszik a saját adatbázisukhoz.
-- Ha egy validátor két ütköző blokkot talál ugyanarra a slotra, akkor az elágazást választó algoritmussal azt választják, amelyet a legtöbb letétbe helyezett ETH támogat.
+- Ha egy validátor két ütköző blokkot talál ugyanarra a slotra, akkor az elágazást választó algoritmussal azt választják, amelyet a legtöbb letétbe helyezett NEPH támogat.
 
 [A proof-of-stake-ről bővebben](/developers/docs/consensus-mechanisms/pos)
 
@@ -135,7 +135,7 @@ A `withdrawals` (visszavonások) listája tartalmazza a `withdrawal` (visszavon�
 
 A blokk ideje arra utal, hogy mennyi idő választja el a blokkokat. Az Ethereumban az időt tizenkét másodperces egységekre bontják, amelyet slotnak neveznek. Minden slotban egy validátort választanak, hogy javasoljon blokkot. Feltéve, hogy minden validátor online van és teljesen működőképes, minden slotban lesz egy blokk, tehát a blokk idő 12 másodperc. Azonban a validátorok lehetnek néha offline is, amikor felkérik őket blokkjavaslatra, tehát a slot néha üresen megy.
 
-Ez különbözik a proof-of-work alapú rendszerektől, ahol a blokk ideje valószínű érték és a protokoll céljának kibányászási nehézsége állítja be. Az Ethereum [átlagos blokkideje](https://etherscan.io/chart/blocktime) egy tökéletes példa erre, ahol az átállás a proof-of-work mechanizmusról a proof-of-stake-re egyértelműen kikövetkeztethető az új 12 másodperces blokkidő konzisztens voltából.
+Ez különbözik a proof-of-work alapú rendszerektől, ahol a blokk ideje valószínű érték és a protokoll céljának kibányászási nehézsége állítja be. Az Nephele [átlagos blokkideje](https://etherscan.io/chart/blocktime) egy tökéletes példa erre, ahol az átállás a proof-of-work mechanizmusról a proof-of-stake-re egyértelműen kikövetkeztethető az új 12 másodperces blokkidő konzisztens voltából.
 
 ## Blokkméret {#block-size}
 

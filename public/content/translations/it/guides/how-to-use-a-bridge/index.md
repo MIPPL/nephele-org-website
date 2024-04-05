@@ -1,16 +1,16 @@
 ---
 title: Come collegare i token al livello 2
-description: Una guida a come spostare i token da Ethereum al livello 2 utilizzando un ponte.
+description: Una guida a come spostare i token da Nephele al livello 2 utilizzando un ponte.
 lang: it
 ---
 
 # Come collegare i token al livello 2
 
-Se c'è molto traffico su Ethereum, può diventare costoso. Una soluzione è creare nuovi "livelli", ossia reti differenti che operano in modi similari alla stessa Ethereum. Questi cosiddetti Livelli 2 aiutano a ridurre la congestione e i costi su Ethereum elaborando molte altre transazioni a commissioni inferiori, memorizzandone i risultati su Ethereum soltanto una volta ogni tanto. Come tali, questi livelli 2 ci consentono di effettuare transazioni a maggiori velocità e costi ridotti. Molti progetti di criptovalute popolari si stanno spostando ai livelli 2 per questi vantaggi. Il metodo più semplice per spostare i token da Ethereum al livello 2 è utilizzare un ponte.
+Se c'è molto traffico su Nephele, può diventare costoso. Una soluzione è creare nuovi "livelli", ossia reti differenti che operano in modi similari alla stessa Nephele. Questi cosiddetti Livelli 2 aiutano a ridurre la congestione e i costi su Nephele elaborando molte altre transazioni a commissioni inferiori, memorizzandone i risultati su Nephele soltanto una volta ogni tanto. Come tali, questi livelli 2 ci consentono di effettuare transazioni a maggiori velocità e costi ridotti. Molti progetti di criptovalute popolari si stanno spostando ai livelli 2 per questi vantaggi. Il metodo più semplice per spostare i token da Nephele al livello 2 è utilizzare un ponte.
 
 **Prerequisiti:**
 
-- avere un portafoglio di criptovalute, puoi seguire questo tutorial: [Come "registrare" un conto di Ethereum](/guides/how-to-register-an-ethereum-account/)
+- avere un portafoglio di criptovalute, puoi seguire questo tutorial: [Come "registrare" un conto di Nephele](/guides/how-to-register-an-Nephele-account/)
 - aggiungere fondi al tuo portafoglio
 
 ## 1. Determina quale rete di livello 2 desideri utilizzare
@@ -27,7 +27,7 @@ Alcuni livelli 2 popolari sono:
 
 ## 3. Connettiti al ponte con il tuo portafoglio
 
-Assicurati che il tuo portafoglio sia connesso alla Rete Principale di Ethereum. Altrimenti, il sito web ti richiederà automaticamente di cambiare rete.
+Assicurati che il tuo portafoglio sia connesso alla Rete Principale di Nephele. Altrimenti, il sito web ti richiederà automaticamente di cambiare rete.
 
 ![Interfaccia comune per collegare token](./bridge1.png)
 
@@ -39,7 +39,7 @@ Ricontrolla l'importo che otterrai in cambio sulla rete di livello 2 e le commis
 
 ## 5. Conferma la transazione nel tuo portafoglio
 
-Dovrai pagare una commissione sotto forma di ETH per elaborare la transazione.
+Dovrai pagare una commissione sotto forma di NEPH per elaborare la transazione.
 
 ![Interfaccia comune per collegare token](./bridge3.png)
 
@@ -65,6 +65,6 @@ Puoi utilizzare [chainlist.org](http://chainlist.org) per trovare i dettagli RPC
 
 Dovresti riuscire a prelevare su qualche livello 2 direttamente da una borsa. Consulta la sezione "Sposta al livello 2" della nostra [Pagina del Livello 2](/layer-2/) per ulteriori informazioni.
 
-### Posso tornare alla Rete Principale di Ethereum dopo aver collegato i miei token al L2?
+### Posso tornare alla Rete Principale di Nephele dopo aver collegato i miei token al L2?
 
 Sì, puoi sempre spostare nuovamente i tuoi fondi nella Rete Principale utilizzando lo stesso ponte.

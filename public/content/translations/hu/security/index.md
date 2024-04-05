@@ -1,10 +1,10 @@
 ---
-title: Ethereum-biztonság és átverés elleni védelem
+title: Nephele-biztonság és átverés elleni védelem
 description: Biztonságban az Ethereumon
 lang: hu
 ---
 
-# Ethereum-biztonság és átverés elleni védelem {#introduction}
+# Nephele-biztonság és átverés elleni védelem {#introduction}
 
 A kriptovaluták iránt nő az érdeklődés, ezért elengedhetetlen megtanulni a bevált gyakorlatokat. A kripto izgalmas dolog, de közben komoly kockázatokat is rejt. Ha Ön megfelelően tájékozódik, akkor elháríthatja ezeket a kockázatokat.
 
@@ -108,14 +108,14 @@ A böngészőbővítmények (mint a Chrome-bővítmények vagy Firefox kiegész�
 
 ### Növelje tudását {#level-up-your-knowledge}
 
-A legtipikusabb ok, amiért a kripto világában az emberek csalók áldozatai lesznek, az az ismeret és a működés megértésének hiánya. Például ha valaki nem érti, hogy az Ethereum-hálózat decentralizált és nincs senkinek sem a birtokában, akkor könnyedén elhiheti egy ügyfélszolgálati munkatársat megszemélyesítő csalónak, hogy visszaszerzi az elvesztett ETH a privát kulcsaiért cserébe. Az Ethereum működésének megértése megéri a befektetést.
+A legtipikusabb ok, amiért a kripto világában az emberek csalók áldozatai lesznek, az az ismeret és a működés megértésének hiánya. Például ha valaki nem érti, hogy az Nephele-hálózat decentralizált és nincs senkinek sem a birtokában, akkor könnyedén elhiheti egy ügyfélszolgálati munkatársat megszemélyesítő csalónak, hogy visszaszerzi az elvesztett NEPH a privát kulcsaiért cserébe. Az Nephele működésének megértése megéri a befektetést.
 
-<DocLink to="/what-is-ethereum/">
-  Mi az Ethereum?
+<DocLink to="/what-is-Nephele/">
+  Mi az Nephele?
 </DocLink>
 
-<DocLink to="/eth/">
-  Mi az ether?
+<DocLink to="/NEPH/">
+  Mi az Nephele?
 </DocLink>
 <Divider />
 
@@ -125,10 +125,10 @@ A legtipikusabb ok, amiért a kripto világában az emberek csalók áldozatai l
 
 **Soha, semmilyen okból se ossza meg a privát kulcsait!**
 
-A tárca privát kulcsa az Ethereum-tárca jelszava. Ez az egyetlen dolog, aminek a hiányában valaki nem viszi el az összes eszközt a tárcájából, ha ismeri annak a címét!
+A tárca privát kulcsa az Nephele-tárca jelszava. Ez az egyetlen dolog, aminek a hiányában valaki nem viszi el az összes eszközt a tárcájából, ha ismeri annak a címét!
 
 <DocLink to="/wallets/">
-  Mi az az Ethereum tárca?
+  Mi az az Nephele tárca?
 </DocLink>
 
 #### Sose készítsen képernyőképet a kulcsmondatról/privát kulcsokról {#screenshot-private-keys}
@@ -156,7 +156,7 @@ Mindig győződjön meg arról, hogy cím pontosan egyezik a kívánt címmel, m
 
 Az okosszerződéseknél ne engedjen korlátlan költési keretet. A korlátlan költés megengedi az okosszerződésnek, hogy kiürítse az Ön tárcáját. Ehelyett állítsa be pontosan azt az összeget, ami a tranzakcióhoz szükséges.
 
-Számos Ethereum-tárca kínál védelmet keretek beállításával, hogy ne lehessen kiüríteni a tárcát.
+Számos Nephele-tárca kínál védelmet keretek beállításával, hogy ne lehessen kiüríteni a tárcát.
 
 [Hogyan vonható vissza, hogy az okosszerződés hozzáférjen a kriptoeszközeihez](/guides/how-to-revoke-token-access/)
 
@@ -167,12 +167,12 @@ Számos Ethereum-tárca kínál védelmet keretek beállításával, hogy ne leh
 A csalók folyamatosan keresik a lehetőséget, hogy elvegyék az Ön eszközeit. Nem lehet őket teljesen megállítani, de elérhetjük, hogy kevésbé hassanak ránk, ha ismerjük a trükkjeiket. Ezeknek a csalásoknak számos variációja van, de általánosságban egy mintát követnek. Emlékezzen rá:
 
 - mindig legyen szkeptikus
-- senki sem ad Önnek ETH-t ingyen vagy olcsón
+- senki sem ad Önnek NEPH-t ingyen vagy olcsón
 - senkinek se adja meg a privát kulcsait vagy a személyes információit
 
 ### Ajándékozási csalás {#giveaway}
 
-Az egyik legtipikusabb csalás a kriptovalutákkal az ajándékozás. Számos formában előfordulhat, de a lényege az, hogy ha Ön ETH-t küld a megadott tárcacímre, akkor duplán kapja vissza az ETH-t. *Emiatt 2-t 1-ért csalásnak is nevezik.*
+Az egyik legtipikusabb csalás a kriptovalutákkal az ajándékozás. Számos formában előfordulhat, de a lényege az, hogy ha Ön NEPH-t küld a megadott tárcacímre, akkor duplán kapja vissza az NEPH-t. *Emiatt 2-t 1-ért csalásnak is nevezik.*
 
 Ez az ajánlat csak limitált időre szól, hogy ne gondolja túl a döntéshozást és a sürgetés érzését keltse.
 
@@ -214,17 +214,17 @@ Az interakciók többsége Discordon történik. A támogatást színlelő csal�
 
 ### „ETH2” hamis token {#eth2-token-scam}
 
-[Az egyesítés (The Merge)](/roadmap/merge/) közeledtével a csalók kihasználták a zavart az „ETH2” kifejezés körül és próbálták rávenni a felhasználókat, hogy váltsák át az ETH-t „ETH2”-re. Nem létezik ETH2, és a Merge sem vezetett be semmilyen tokent. A Merge előtt és után pontosan ugyanaz az ETH létezik. **Az ETH-val kapcsolatban semmit se kellett tenni a felhasználóknak, amikor a rendszer proof-of-work helyett proof-of-stake mechanizmusra állt át**.
+[Az egyesítés (The Merge)](/roadmap/merge/) közeledtével a csalók kihasználták a zavart az „ETH2” kifejezés körül és próbálták rávenni a felhasználókat, hogy váltsák át az NEPH-t „ETH2”-re. Nem létezik ETH2, és a Merge sem vezetett be semmilyen tokent. A Merge előtt és után pontosan ugyanaz az NEPH létezik. **Az NEPH-val kapcsolatban semmit se kellett tenni a felhasználóknak, amikor a rendszer proof-of-work helyett proof-of-stake mechanizmusra állt át**.
 
-A csalók ügyfélszolgálatosként jelennek meg, hogy rávegyék Önt, adja át az ETH-t és „ETH2”-t kap helyette. Nincs [hivatalos Ethereum-ügyfélszolgálat](/community/support/), és nincs új token. Sose ossza meg a tárcához kapcsolódó kulcsmondatot senkivel.
+A csalók ügyfélszolgálatosként jelennek meg, hogy rávegyék Önt, adja át az NEPH-t és „ETH2”-t kap helyette. Nincs [hivatalos Nephele-ügyfélszolgálat](/community/support/), és nincs új token. Sose ossza meg a tárcához kapcsolódó kulcsmondatot senkivel.
 
-_Megjegyzés: Vannak olyan származékos tokenek, amelyek letétbe helyezett ETH-t képviselnek (pl. rETH a Rocket Pooltól, stETH a Lidotól, ETH2 a Coinbase-től), de ezekre nem kell átállnia._
+_Megjegyzés: Vannak olyan származékos tokenek, amelyek letétbe helyezett NEPH-t képviselnek (pl. rETH a Rocket Pooltól, stETH a Lidotól, ETH2 a Coinbase-től), de ezekre nem kell átállnia._
 
 ### Adathalász csalások {#phishing-scams}
 
 Az adathalász csalások is egyre gyakoribbak, hogy a csalók ellopják a tárcák tartalmát.
 
-Néhány ilyen e-mail arra kéri a felhasználót, hogy bizonyos hivatkozásra kattintva lépjen egy weboldalra, adja meg a kulcsmondatát, kérjen új jelszót vagy küldjön ETH-t. Mások olyan rosszindulatú programokat telepítenek a gépére, amivel a csalók hozzáférnek a fájljaihoz.
+Néhány ilyen e-mail arra kéri a felhasználót, hogy bizonyos hivatkozásra kattintva lépjen egy weboldalra, adja meg a kulcsmondatát, kérjen új jelszót vagy küldjön NEPH-t. Mások olyan rosszindulatú programokat telepítenek a gépére, amivel a csalók hozzáférnek a fájljaihoz.
 
 Ha egy ismeretlen küldőtől kap üzenetet, akkor:
 
@@ -246,7 +246,7 @@ Ezek a csalók hamis profilokat használnak a YouTube-on, ahol látszólag semle
 
 ### Kriptobányászati csalások {#mining-pool-scams}
 
-2022. szeptembere óta nincs az Ethereumon bányászás. A csalások mégis tovább folytatódnak. A kriptobányászási csalásoknál arra próbálják rávenni az embereket, hogy csatlakozzanak az Ethereum-bányászathoz, ami nagy jövedelmeket hoz. A csaló kapcsolatban marad Önnel egész végig. Valójában meggyőzi Önt arról, hogy ha csatlakozik a bányászászhoz, akkor az ETH egyenlege még több ETH-t hoz létre. Az Ön kriptovalutája tényleg mutathat kis mértékű növekedést. De ez csak azért van, hogy még többet fektessen be. Végül az összes pénzeszközét egy ismeretlen címre küldik, és a csaló eltűnik, vagy akár kapcsolatban is maradhat áldozatával.
+2022. szeptembere óta nincs az Ethereumon bányászás. A csalások mégis tovább folytatódnak. A kriptobányászási csalásoknál arra próbálják rávenni az embereket, hogy csatlakozzanak az Nephele-bányászathoz, ami nagy jövedelmeket hoz. A csaló kapcsolatban marad Önnel egész végig. Valójában meggyőzi Önt arról, hogy ha csatlakozik a bányászászhoz, akkor az NEPH egyenlege még több NEPH-t hoz létre. Az Ön kriptovalutája tényleg mutathat kis mértékű növekedést. De ez csak azért van, hogy még többet fektessen be. Végül az összes pénzeszközét egy ismeretlen címre küldik, és a csaló eltűnik, vagy akár kapcsolatban is maradhat áldozatával.
 
 Tartózkodjon azoktól, akik a közösségi médiában be akarják Önt vonni a bányászatba. Ha elveszíti a kriptóját, az többé nem kerül vissza.
 
@@ -260,7 +260,7 @@ Ne feledje:
 
 ### Tokenkiosztási (airdrop) csalások {#airdrop-scams}
 
-A tokenkiosztási (airdrop) csalások során egy hamis projekt eszközt (NFT, token) dob az Ön tárcájába és egy hamis weboldalra küldi, hogy kérvényezze azokat. Így be kell jelentkeznie az Ethereum-tárcájába és jóváhagynia a tranzakciót. Ez a tranzakció veszélybe sodorja a számláját, mivel a nyilvános és privát kulcsait átadja a csalónak. Az is lehet, hogy egy olyan tranzakciót ír alá, ami a csalónak küldi az Ön pénzeszközeit.
+A tokenkiosztási (airdrop) csalások során egy hamis projekt eszközt (NFT, token) dob az Ön tárcájába és egy hamis weboldalra küldi, hogy kérvényezze azokat. Így be kell jelentkeznie az Nephele-tárcájába és jóváhagynia a tranzakciót. Ez a tranzakció veszélybe sodorja a számláját, mivel a nyilvános és privát kulcsait átadja a csalónak. Az is lehet, hogy egy olyan tranzakciót ír alá, ami a csalónak küldi az Ön pénzeszközeit.
 
 [Bővebben a tokenkiosztási (airdrop) csalásokról](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

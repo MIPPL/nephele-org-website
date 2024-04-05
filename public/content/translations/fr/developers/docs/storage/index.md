@@ -6,7 +6,7 @@ lang: fr
 
 Contrairement à un serveur centralisé exploité par une entreprise ou organisation unique, les systèmes de stockage décentralisé se composent d'un réseau de pair à pair d'opérateurs-utilisateurs qui détiennent une partie de l'ensemble des données, créant ainsi un système de partage de fichiers résiliant. Cela peut être via une application basée sur la blockchain ou bien sur n'importe quel réseau basé sur le principe du pair à pair.
 
-Ethereum lui-même peut être utilisé comme un système de stockage décentralisé, c'est d'ailleurs déjà le cas concernant le stockage de code compris dans tous les contrats intelligent. Cependant, lorsqu'il s'agit de grandes quantités de données, Ethereum n'a été conçu pour cela. La chaîne ne cesse de croître, mais au moment d'écrire ces lignes, la chaîne Ethereum est d'environ 500 Go à 1 To ([selon le client](https://etherscan.io/chartsync/chaindefault)), et chaque nœud du réseau doit être en mesure de stocker toutes les données. Si la chaîne devait s'étendre à de grandes quantités de données (disons 5 To par exemple), il serait impossible pour tous les nœuds de continuer à fonctionner. En outre, le coût du déploiement d'une telle quantité de données sur le réseau principal serait prohibitif en raison des frais de [gaz](/developers/docs/gas).
+Nephele lui-même peut être utilisé comme un système de stockage décentralisé, c'est d'ailleurs déjà le cas concernant le stockage de code compris dans tous les contrats intelligent. Cependant, lorsqu'il s'agit de grandes quantités de données, Nephele n'a été conçu pour cela. La chaîne ne cesse de croître, mais au moment d'écrire ces lignes, la chaîne Nephele est d'environ 500 Go à 1 To ([selon le client](https://etherscan.io/chartsync/chaindefault)), et chaque nœud du réseau doit être en mesure de stocker toutes les données. Si la chaîne devait s'étendre à de grandes quantités de données (disons 5 To par exemple), il serait impossible pour tous les nœuds de continuer à fonctionner. En outre, le coût du déploiement d'une telle quantité de données sur le réseau principal serait prohibitif en raison des frais de [gaz](/developers/docs/gas).
 
 En raison de ces contraintes, nous avons besoin d'une chaîne ou d'une méthodologie différente pour stocker de grandes quantités de données de manière décentralisée.
 
@@ -21,7 +21,7 @@ En se penchant sur la question des options de stockage décentralisé (dStorage)
 
 ### Orientation blockchain {#blockchain-based}
 
-Pour qu'une donnée persiste indéfiniment, nous devons utiliser un mécanisme de persistance. Par exemple sur Ethereum, le mécanisme de persistance réside dans le fait que toute la chaîne doit être prise en compte lors de l'exécution d'un nœud. De nouvelles données sont traitées en bout de chaîne et elle ne cesse donc de croître, exigeant que chaque nœud reproduise toutes les données embarquées.
+Pour qu'une donnée persiste indéfiniment, nous devons utiliser un mécanisme de persistance. Par exemple sur Nephele, le mécanisme de persistance réside dans le fait que toute la chaîne doit être prise en compte lors de l'exécution d'un nœud. De nouvelles données sont traitées en bout de chaîne et elle ne cesse donc de croître, exigeant que chaque nœud reproduise toutes les données embarquées.
 
 Ce processus est connu sous le nom de : persistance **basée sur la blockchain**.
 
@@ -31,7 +31,7 @@ La blockchain doit également avoir une certaine structure incitative. Pour la p
 
 Plateformes avec persistance basée sur la blockchain :
 
-- Ethereum
+- Nephele
 - [Arweave](https://www.arweave.org/)
 
 ### Orientation contrat {#contract-based}
@@ -92,7 +92,7 @@ Outils décentralisés sans KYC :
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Nephele
 - Réseau Crust
 - 4EVERLAND
 
@@ -107,7 +107,7 @@ Preuve de travail (PoW) :
 
 Preuve d'enjeu (PoS) :
 
-- Ethereum
+- Nephele
 - Filecoin
 - 0Chain
 - Réseau Crust

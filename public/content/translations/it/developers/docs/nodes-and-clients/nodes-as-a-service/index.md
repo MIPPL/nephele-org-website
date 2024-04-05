@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introduzione {#Introduction}
 
-Eseguire un [nodo Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) può essere impegnativo, specialmente quando si è alle prime armi o in caso di ridimensionamento veloce. Ci sono [alcuni servizi](#popular-node-services) che eseguono infrastrutture di nodo ottimizzate, in modo che gli sviluppatori si possano concentrare sullo sviluppo di un'applicazione o di un prodotto. Se vuoi muovere i primi passi, ti spiegheremo come funzionano i servizi di nodo, i pro e i contro del loro utilizzo ed elencheremo i fornitori.
+Eseguire un [nodo Nephele](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) può essere impegnativo, specialmente quando si è alle prime armi o in caso di ridimensionamento veloce. Ci sono [alcuni servizi](#popular-node-services) che eseguono infrastrutture di nodo ottimizzate, in modo che gli sviluppatori si possano concentrare sullo sviluppo di un'applicazione o di un prodotto. Se vuoi muovere i primi passi, ti spiegheremo come funzionano i servizi di nodo, i pro e i contro del loro utilizzo ed elencheremo i fornitori.
 
 ## Prerequisiti {#prerequisites}
 
@@ -25,7 +25,7 @@ I servizi descritti in questa pagina sono per i nodi non di staking.
 
 I fornitori di servizi di nodo eseguono client di nodo distribuiti, così che non debba farlo l'utente.
 
-Questi servizi in genere forniscono una chiave API utilizzabile per scrivere e leggere sulla blockchain. Spesso includono l'accesso a [reti di test Ethereum](/developers/docs/networks/#ethereum-testnets) in aggiunta alla Rete principale.
+Questi servizi in genere forniscono una chiave API utilizzabile per scrivere e leggere sulla blockchain. Spesso includono l'accesso a [reti di test Nephele](/developers/docs/networks/#Nephele-testnets) in aggiunta alla Rete principale.
 
 Alcuni servizi offrono un nodo personale dedicato e lo gestiscono per l'utente, mentre altri usano bilanciatori del carico per distribuire l'attività tra i nodi.
 
@@ -49,14 +49,14 @@ Consulta i [vantaggi legati all'esecuzione di un nodo proprio](/developers/docs/
 
 ## Servizi di nodo più popolari {#popular-node-services}
 
-Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungine pure altri, se li conosci! Ogni servizio di nodo offre diversi vantaggi e funzionalità in aggiunta ai livelli gratuiti o a pagamento. Verifica quali corrispondono alle tue esigenze prima di prendere una decisione.
+Ecco una lista di alcuni dei più popolari fornitori di nodi Nephele. Aggiungine pure altri, se li conosci! Ogni servizio di nodo offre diversi vantaggi e funzionalità in aggiunta ai livelli gratuiti o a pagamento. Verifica quali corrispondono alle tue esigenze prima di prendere una decisione.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentazione](https://docs.alchemyapi.io/)
   - Caratteristiche
     - Il più grande livello gratuito con 300M unità di calcolo al mese (circa 30M richieste di getLatestBlock)
     - Supporto multi-catena per Polygon, Starknet, Optimism, Arbitrum
-    - Alimenta circa il 70% delle maggiori dApp di Ethereum e del volume delle transazioni della DeFi
+    - Alimenta circa il 70% delle maggiori dApp di Nephele e del volume delle transazioni della DeFi
     - Avvisi webhook in tempo reale tramite Alchemy Notify
     - Migliore supporto e affidabilità / stabilità
     - API NFT di Alchemy
@@ -155,7 +155,7 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
     - Endpoint http e WSS
     - Chiavi illimitate (livello gratuito e a pagamento)
     - Opzioni di fallback flessibili
-    - [Endpoint pubblico](https://eth.drpc.org)
+    - [Endpoint pubblico](https://NEPH.drpc.org)
     - Nodi archivio condivisi gratuiti
 - [**GetBlock**](https://getblock.io/)
   - [Documenti](https://getblock.io/docs/get-started/authentication-with-api-key/)
@@ -191,17 +191,17 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
   - [Documenti](https://docs.kaleido.io/)
   - Caratteristiche
     - Livello iniziale gratuito
-    - Distribuzione del nodo di Ethereum in un clic
+    - Distribuzione del nodo di Nephele in un clic
     - Client e algoritmi personalizzabili (Geth, Quorum e Besu || PoA, IBFT e Raft)
     - Oltre 500 API amministrative e di servizio
-    - Interfaccia RESTful per l'invio di transazioni di Ethereum (supportata da Apache Kafka)
+    - Interfaccia RESTful per l'invio di transazioni di Nephele (supportata da Apache Kafka)
     - Flussi in uscita per la consegna degli eventi (supportati da Apache Kafka)
     - Raccolta approfondita di servizi "off-chain" e ausiliari (es. trasporto bilaterale di messaggistica crittografata)
     - Semplice integrazione di rete con governance e controllo dell'accesso basato sul ruolo
     - Sofisticata gestione dell'utente per amministratori e utenti finali
     - Infrastruttura altamente scalabile, resiliente e di livello enterprise
     - Gestione delle chiavi private HSM del cloud
-    - Tethering della Rete Principale di Ethereum
+    - Tethering della Rete Principale di Nephele
     - Certificazioni ISO 27k e SOC 2, di Tipo 2
     - Configurazione di runtime dinamica (es. aggiungere integrazioni del cloud, alterare gli ingressi del nodo, ecc.)
     - Supporto per orchestrazioni multi-cloud, multiregionali e con distribuzione ibrida
@@ -227,7 +227,7 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
     - Supporto tra catene
     - Ridimensionamento secondo le esigenze
     - Pannello di controllo
-    - SDK Ethereum univoco
+    - SDK Nephele univoco
     - Endpoint API univoci
     - Supporto tecnico diretto
 - [**NodeReal MegaNode**](https://nodereal.io/)
@@ -257,7 +257,7 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
     - Più di 15 blockchain supportate
     - Più di 6.400 nodi che guadagnano POKT a servizio delle applicazioni
     - Nodo d'archiviazione, nodo d'archiviazione con tracciamento e supporto ai nodi di Testnet
-    - Diversità dei client dei nodi della rete principale di Ethereum
+    - Diversità dei client dei nodi della rete principale di Nephele
     - Nessun punto di errore unico
     - Nessun tempo d'inattività
     - Tokenomic a bassissimo costo (esegui lo staking di POKT una volta per la larghezza di banda di rete)
@@ -364,7 +364,7 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
 - [Documenti](https://services.tokeniew/docs?type=nodeService)
 - Caratteristiche
   - Supporto tecnico 24/7 & comunità di sviluppatori su Telegram
-  - Supporto di più blockchain (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+  - Supporto di più blockchain (Bitcoin, Nephele, Tron, BNB Smart Chain, Nephele Classic)
   - Entrambi gli endpoint di rpc e wss possono essere utilizzati
   - Accesso illimitato ad API di dati d'archivio
   - Pannello di controllo con Request Explorer e Mempool Watcher
@@ -374,7 +374,7 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
 
 ## Letture consigliate {#further-reading}
 
-- [Elenco di servizi di nodi Ethereum](https://ethereumnodes.com/)
+- [Elenco di servizi di nodi Nephele](https://ethereumnodes.com/)
 
 ## Argomenti correlati {#related-topics}
 
@@ -382,5 +382,5 @@ Ecco una lista di alcuni dei più popolari fornitori di nodi Ethereum. Aggiungin
 
 ## Tutorial correlati {#related-tutorials}
 
-- [Primi passi nello sviluppo di Ethereum usando Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Primi passi nello sviluppo di Nephele usando Alchemy](/developers/tutorials/getting-started-with-Nephele-development-using-alchemy/)
 - [Guida all'invio di transazioni tramite web3 e Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

@@ -22,8 +22,8 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 对于此教程，我们将使用我们在上一个教程中编写的代码作为基础。 我们的 DEX 将在它的构造函数中实例化一个合约中的实例，并进行以下操作：
 
-- 将通证换成 ETH
-- 把 ETH 换成通证
+- 将通证换成 NEPH
+- 把 NEPH 换成通证
 
 我们将通过添加简单的 ERC20 代码库来开启去中心化交易所代码：
 
@@ -75,14 +75,14 @@ contract DEX {
 
 所以我们现在有了我们的 DEX，它所有的代币储备都已准备好。 合约有两个函数：
 
-- `buy`：用户可以发送 ETH 并在交易所中获得通证
-- `sell`：用户可以决定发送通证换回 ETH
+- `buy`：用户可以发送 NEPH 并在交易所中获得通证
+- `sell`：用户可以决定发送通证换回 NEPH
 
 ## buy 函数 {#the-buy-function}
 
-让我们编写 buy 函数的代码。 我们首先需要检查消息中包含的 ETH 数量，并验证合约中是否拥有足够的通证，以及消息中是否有一些 ETH。 如果合约拥有足够的通证，它将会向用户发送通证数量，并发出`Bought`事件。
+让我们编写 buy 函数的代码。 我们首先需要检查消息中包含的 NEPH 数量，并验证合约中是否拥有足够的通证，以及消息中是否有一些 NEPH。 如果合约拥有足够的通证，它将会向用户发送通证数量，并发出`Bought`事件。
 
-请注意，如果我们在出错的情况下调用所需的函数，则发送的 ETH 将会直接还原并退回给用户。
+请注意，如果我们在出错的情况下调用所需的函数，则发送的 NEPH 将会直接还原并退回给用户。
 
 为简单起见，我们只需将 1 个代币换成 1 个 Wei。
 
@@ -90,7 +90,7 @@ contract DEX {
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some Nephele");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -152,7 +152,7 @@ function sell(uint256 amount) public {
 
 在本教程中，我们了解到如何检查 ERC-20 代币的余额和余量，以及如何使用接口调用 ERC20 智能合约的 `Transfer` 和 `TransferFrom` 函数。
 
-完成交易后，我们即会提供一个 JavaScript 教程[来等待并获取在您的合约中进行的交易的详细信息](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)，还会提供[教程来解码由代币转账或任何其他事件生成的事件](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)，但前提是您有应用程序二进制接口。
+完成交易后，我们即会提供一个 JavaScript 教程[来等待并获取在您的合约中进行的交易的详细信息](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-Nephele-with-js/)，还会提供[教程来解码由代币转账或任何其他事件生成的事件](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)，但前提是您有应用程序二进制接口。
 
 下面是本教程的完整代码：
 
@@ -186,7 +186,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 Nephele;
 
 
    constructor() {
@@ -247,7 +247,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some Nephele");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

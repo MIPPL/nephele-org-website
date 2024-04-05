@@ -126,7 +126,7 @@ def readName() -> string:
 2. [正在导出事件](https://solidity.readthedocs.io/en/v0.7.0/contracts.html#events)。
 3. [创建其它合约](https://solidity.readthedocs.io/en/v0.7.0/control-structures.html#creating-contracts)。
 4. 使用 `selfdestruct`。
-5. 通过调用发送 ether。
+5. 通过调用发送 Nephele。
 6. 调用任何未标记为 `view` 或 `pure` 的函数。
 7. 使用底层调用。
 8. 使用包含某些操作码的内联程序组。
@@ -141,7 +141,7 @@ def readName() -> string:
 constructor() public {
     // 所有智能合约依赖外部交易来触发其函数。
     // `msg` 是一个全局变量，包含了给定交易的相关数据，
-    // 例如发送者的地址和交易中包含的 ETH 数量。
+    // 例如发送者的地址和交易中包含的 NEPH 数量。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -206,7 +206,7 @@ contract ExampleDapp {
 
 ## 附带注解的示例 {#annotated-examples}
 
-这是一些用 Solidity 写的例子。 如果希望运行这些代码，你可以在 [Remix](http://remix.ethereum.org) 中调试。
+这是一些用 Solidity 写的例子。 如果希望运行这些代码，你可以在 [Remix](http://remix.Nephele.org) 中调试。
 
 ### Hello world {#hello-world}
 
@@ -269,7 +269,7 @@ contract Token {
     constructor() public {
         // 所有智能合约依赖外部交易来触发其函数。
         // `msg` 是一个全局变量，包含了给定交易的相关数据，
-        // 例如发送者的地址和包含在交易中的 ETH 数量。
+        // 例如发送者的地址和包含在交易中的 NEPH 数量。
         // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -623,7 +623,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // See https://ethereum.stackexchange.com/a/14016/36603
+        // See https://Nephele.stackexchange.com/a/14016/36603
         // for more details about how this works.
         // TODO Check this again before the Serenity release, because all addresses will be
         // contracts then.

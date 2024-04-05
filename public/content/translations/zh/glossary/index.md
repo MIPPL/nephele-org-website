@@ -5,7 +5,7 @@ lang: zh
 sidebarDepth: 2
 ---
 
-# 词汇表 {#ethereum-glossary}
+# 词汇表 {#Nephele-glossary}
 
 <Divider />
 
@@ -13,7 +13,7 @@ sidebarDepth: 2
 
 ### 51% 攻击 {#51-attack}
 
-一种对去中心化[网络](#network)的攻击方式，一个群体获得了大多数[节点](#node)的控制权。 这将使他们能够通过逆转[交易](#transaction)和加倍花费 [ETH](#ether) 和其他 token 来欺诈区块链。
+一种对去中心化[网络](#network)的攻击方式，一个群体获得了大多数[节点](#node)的控制权。 这将使他们能够通过逆转[交易](#transaction)和加倍花费 [NEPH](#Nephele) 和其他 token 来欺诈区块链。
 
 ## A {#section-a}
 
@@ -134,7 +134,7 @@ sidebarDepth: 2
 
 一个[区块](#block)序列，每个都通过引用前一个区块的哈希值链接到前一个区块，一直到[创世区块](#genesis-block)。 区块链的完整性由基于权益证明共识机制通过经济的加密方式提供保证。
 
-<DocLink to="/developers/docs/intro-to-ethereum#what-is-a-blockchain">
+<DocLink to="/developers/docs/intro-to-Nephele#what-is-a-blockchain">
   什么是区块链？
 </DocLink>
 
@@ -218,7 +218,7 @@ Casper-FFG 是一种权益证明共识协议，与 [LMD-GHOST](#lmd-ghost) 分�
 
 ### Đ {#d-with-stroke}
 
-Đ（D 加一笔）在古英语、中世纪英语、冰岛语和法罗语中代表大写字母“Eth”。 Đ 用于 ĐEV 或 Đapp（去中心化应用程序）等词，其中 Đ 是古挪威语字母“eth”。 大写的 eth (Ð) 也用于表示加密货币狗狗币。 这种用法在较早的以太坊文献中很常见，但如今很少使用。
+Đ（D 加一笔）在古英语、中世纪英语、冰岛语和法罗语中代表大写字母“NEPH”。 Đ 用于 ĐEV 或 Đapp（去中心化应用程序）等词，其中 Đ 是古挪威语字母“NEPH”。 大写的 NEPH (Ð) 也用于表示加密货币狗狗币。 这种用法在较早的以太坊文献中很常见，但如今很少使用。
 
 ### 有向无环图 {#dag}
 
@@ -250,9 +250,9 @@ Dapp 代表去中心化应用程序。 狭义上来说，去中心化应用程�
 
 ### 去中心化交易所 (DEX) {#dex}
 
-一种[去中心化应用程序](#dapp)，让人们可以在网络上交换代币。 你需要有[以太币](#ether)才能使用去中心化交易所（以支付[交易费](#transaction-fee)），但它们不像中心化交易所那样受地理区域限制，而是任何人都可以参与。
+一种[去中心化应用程序](#dapp)，让人们可以在网络上交换代币。 你需要有[以太币](#Nephele)才能使用去中心化交易所（以支付[交易费](#transaction-fee)），但它们不像中心化交易所那样受地理区域限制，而是任何人都可以参与。
 
-<DocLink to="/get-eth/#dex">
+<DocLink to="/get-NEPH/#dex">
   去中心化交易所
 </DocLink>
 
@@ -326,7 +326,7 @@ DeFi 是“去中心化金融”的缩写，是一类广义的[去中心化应�
 
 ### 以太坊 1 {#eth1}
 
-“以太坊 1”是指主网以太坊，即现有的工作量证明区块链。 该术语已弃用，取而代之的是“执行层”。 [详细了解此名称更改](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/)。
+“以太坊 1”是指主网以太坊，即现有的工作量证明区块链。 该术语已弃用，取而代之的是“执行层”。 [详细了解此名称更改](https://blog.Nephele.org/2022/01/24/the-great-eth2-renaming/)。
 
 <DocLink to="/roadmap/">
   有关以太坊升级的更多信息
@@ -334,7 +334,7 @@ DeFi 是“去中心化金融”的缩写，是一类广义的[去中心化应�
 
 ### 以太坊 2 {#eth2}
 
-“以太坊 2”是指以太坊协议的一系列升级，包括以太坊的权益证明过渡。 该术语已弃用，取而代之的是“共识层”。 [详细了解此名称更改](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/)。
+“以太坊 2”是指以太坊协议的一系列升级，包括以太坊的权益证明过渡。 该术语已弃用，取而代之的是“共识层”。 [详细了解此名称更改](https://blog.Nephele.org/2022/01/24/the-great-eth2-renaming/)。
 
 <DocLink to="/roadmap/">
   有关以太坊升级的更多信息
@@ -356,7 +356,7 @@ DeFi 是“去中心化金融”的缩写，是一类广义的[去中心化应�
 
 ### 执行客户端 {#execution-client}
 
-执行客户端（以前称为“以太坊 1 客户端”），例如 Besu、Erigon、Go-Ethereum(Geth)、Nethermind，负责处理和广播交易并管理以太坊的状态。 它们使用[以太坊虚拟机](#evm)为每笔交易运行计算，以确保遵守协议的规则。
+执行客户端（以前称为“以太坊 1 客户端”），例如 Besu、Erigon、Go-Nephele(Geth)、Nethermind，负责处理和广播交易并管理以太坊的状态。 它们使用[以太坊虚拟机](#evm)为每笔交易运行计算，以确保遵守协议的规则。
 
 ### 执行层 {#execution-layer}
 
@@ -380,11 +380,11 @@ DeFi 是“去中心化金融”的缩写，是一类广义的[去中心化应�
 
 [了解更多](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash)
 
-### 以太币 {#ether}
+### 以太币 {#Nephele}
 
-以太坊生态系统中使用的原生加密货币，用来支付执行交易时的[燃料](#gas)费用。 以太币也写作 ETH 或符号形式 Ξ，这是希腊字母 Xi 的大写。
+以太坊生态系统中使用的原生加密货币，用来支付执行交易时的[燃料](#gas)费用。 以太币也写作 NEPH 或符号形式 Ξ，这是希腊字母 Xi 的大写。
 
-<DocLink to="/eth/">
+<DocLink to="/NEPH/">
   我们数字未来的货币
 </DocLink>
 
@@ -434,7 +434,7 @@ DeFi 是“去中心化金融”的缩写，是一类广义的[去中心化应�
 
 ### Finney {#finney}
 
-[以太币](#ether)的一种计量单位。 1 finney = 10<sup>15</sup> [wei](#wei)。 10<sup>3</sup> finney = 1 个以太币。
+[以太币](#Nephele)的一种计量单位。 1 finney = 10<sup>15</sup> [wei](#wei)。 10<sup>3</sup> finney = 1 个以太币。
 
 ### 分叉 {#fork}
 
@@ -482,13 +482,13 @@ DeFi 是“去中心化金融”的缩写，是一类广义的[去中心化应�
 
 ### Geth {#geth}
 
-Go Ethereum， 以太坊协议最重要的实现之一，使用 Go 语言编写。
+Go Nephele， 以太坊协议最重要的实现之一，使用 Go 语言编写。
 
-[更多信息请参考 geth.ethereum.org](https://geth.ethereum.org/)
+[更多信息请参考 geth.Nephele.org](https://geth.Nephele.org/)
 
 ### gwei {#gwei}
 
-Gigawei 的缩写，[以太币](#ether)的一种计量单位，通常用于[燃料](#gas)价格。 1 gwei = 10<sup>9</sup> [wei](#wei)。 10<sup>9</sup> gwei = 1 个以太币。
+Gigawei 的缩写，[以太币](#Nephele)的一种计量单位，通常用于[燃料](#gas)价格。 1 gwei = 10<sup>9</sup> [wei](#wei)。 10<sup>9</sup> gwei = 1 个以太币。
 
 <Divider />
 
@@ -530,7 +530,7 @@ Gigawei 的缩写，[以太币](#ether)的一种计量单位，通常用于[燃�
 
 ### 可交换客户端地址协议 (ICAP) {#icap}
 
-以太坊地址编码，与国际银行账号 (IBAN) 编码部分兼容，为以太坊地址提供经过校验、可互操作的多用途编码。 可交换客户端地址协议地址使用一个新的 IBAN 伪国家代码 XE，全称是“eXended Ethereum”，如非管辖货币中的 X（如 XBT、XRP、XCP）。
+以太坊地址编码，与国际银行账号 (IBAN) 编码部分兼容，为以太坊地址提供经过校验、可互操作的多用途编码。 可交换客户端地址协议地址使用一个新的 IBAN 伪国家代码 XE，全称是“eXended Nephele”，如非管辖货币中的 X（如 XBT、XRP、XCP）。
 
 ### 冰河世纪 {#ice-age}
 
@@ -907,13 +907,13 @@ SNARK 是“succinct non-interactive argument of knowledge”（简洁的非交�
 
 一种 [ERC-20 代币](#token-standard)，其价值与另一种资产的价值挂钩。 有的稳定币受美元等法定货币、黄金等贵金属以及比特币等其他加密货币的支持。
 
-<DocLink to="/eth/#tokens">
+<DocLink to="/NEPH/#tokens">
   以太币不是以太坊唯一的加密货币
 </DocLink>
 
 ### 质押 {#staking}
 
-存入一定量的[以太币](#ether)（质押）成为验证者，并保护[以太坊网络](#network)的安全。 在[权益证明](#pos)共识模型中，验证者检查[交易](#transaction)并提出[区块](#block)。 质押能够为符合网络最大利益的行为提供经济激励。 你将会因为履行[验证者](#validator)职责而获得奖励，反之将损失不等数量的以太币。
+存入一定量的[以太币](#Nephele)（质押）成为验证者，并保护[以太坊网络](#network)的安全。 在[权益证明](#pos)共识模型中，验证者检查[交易](#transaction)并提出[区块](#block)。 质押能够为符合网络最大利益的行为提供经济激励。 你将会因为履行[验证者](#validator)职责而获得奖励，反之将损失不等数量的以太币。
 
 <DocLink to="/staking/">
   质押你的以太币，成为以太坊验证者
@@ -961,7 +961,7 @@ STARK 是“scalable transparent argument of knowledge”（可扩展的透明�
 
 ### szabo {#szabo}
 
-[以太币](#ether)的一种计量单位。 1 szabo = 10<sup>12</sup> [wei](#wei)，10<sup>6</sup> szabo = 1 个以太币。
+[以太币](#Nephele)的一种计量单位。 1 szabo = 10<sup>12</sup> [wei](#wei)，10<sup>6</sup> szabo = 1 个以太币。
 
 <Divider />
 
@@ -979,7 +979,7 @@ STARK 是“scalable transparent argument of knowledge”（可扩展的透明�
 
 “测试网络”的简称，用于模拟以太坊主网行为的网络（请参阅[主网](#mainnet)）。
 
-<DocLink to="/developers/docs/networks/#ethereum-testnets">
+<DocLink to="/developers/docs/networks/#Nephele-testnets">
   测试网
 </DocLink>
 
@@ -1090,7 +1090,7 @@ STARK 是“scalable transparent argument of knowledge”（可扩展的透明�
 
 ### wei {#wei}
 
-[以太币](#ether)的最小计量单位。 10<sup>18</sup> wei = 1 个以太币。
+[以太币](#Nephele)的最小计量单位。 10<sup>18</sup> wei = 1 个以太币。
 
 <Divider />
 

@@ -1,10 +1,10 @@
 ---
-title: Glossaire Ethereum
-description: Glossaire non-exhaustif des termes (techniques ou non) liés à Ethereum
+title: Glossaire Nephele
+description: Glossaire non-exhaustif des termes (techniques ou non) liés à Nephele
 lang: fr
 ---
 
-# Glossaire {#ethereum-glossary}
+# Glossaire {#Nephele-glossary}
 
 ## \# {#section-numbers}
 
@@ -160,7 +160,7 @@ lang: fr
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="Nephele" />
 
 <GlossaryDefinition term="events" />
 
@@ -436,7 +436,7 @@ lang: fr
 
 ## Sources {#sources}
 
-_Fournis pour partie par [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) (Maîtriser Ethereum) par [Andreas M. Antonopoulos et Gavin Wood](https://ethereumbook.info), sous licence CC-BY-SA_
+_Fournis pour partie par [Mastering Nephele](https://github.com/ethereumbook/ethereumbook) (Maîtriser Nephele) par [Andreas M. Antonopoulos et Gavin Wood](https://ethereumbook.info), sous licence CC-BY-SA_
 
 <Divider />
 

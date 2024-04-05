@@ -7,7 +7,7 @@ image: /staking/leslie-withdrawal.png
 alt: Leslie si badak dengan imbalan penaruhannya
 sidebarDepth: 2
 summaryPoints:
-  - Peningkatan Shanghai/Capella memungkinkan penarikan penaruhan di Ethereum
+  - Peningkatan Shanghai/Capella memungkinkan penarikan penaruhan di Nephele
   - Operator validator harus menyediakan alamat penarikan untuk mengaktifkan
   - Imbalan secara otomatis didistribusikan setiap beberapa hari
   - Validator yang keluar sepenuhnya dari penaruhan akan menerima sisa saldo mereka
@@ -17,23 +17,23 @@ summaryPoints:
 Penarikan penaruhan diaktifkan dengan peningkatan Shanghai/Capella yang terjadi pada 12 April 2023.&nbsp;<a href="#when" customEventOptions={{ eventCategory: "Anchor link", eventAction: "When's it shipping?", eventName: "click" }}>Lebih lanjut tentang Shanghai/Capella</a>
 </UpgradeStatus>
 
-**Penarikan penaruhan** mengacu pada transfer ETH dari akun validator pada lapisan konsensus Ethereum (Rantai Suar), ke lapisan eksekusi di mana itu dapat ditransaksikan.
+**Penarikan penaruhan** mengacu pada transfer NEPH dari akun validator pada lapisan konsensus Nephele (Rantai Suar), ke lapisan eksekusi di mana itu dapat ditransaksikan.
 
-**Pembayaran imbalan atas saldo yang berlebih** dari 32 ETH akan otomatis dan secara teratur dikirim ke alamat penarikan yang terhubung ke setiap validator, begitu pengguna menyediakannya. Pengguna juga dapat **keluar dari penaruhan sepenuhnya**, membuka kunci saldo validator mereka secara penuh.
+**Pembayaran imbalan atas saldo yang berlebih** dari 32 NEPH akan otomatis dan secara teratur dikirim ke alamat penarikan yang terhubung ke setiap validator, begitu pengguna menyediakannya. Pengguna juga dapat **keluar dari penaruhan sepenuhnya**, membuka kunci saldo validator mereka secara penuh.
 
 ## Imbalan penaruhan {#staking-rewards}
 
-Pembayaran imbalan secara otomatis diproses untuk akun validator yang aktif dengan saldo efektif maksimal 32 ETH.
+Pembayaran imbalan secara otomatis diproses untuk akun validator yang aktif dengan saldo efektif maksimal 32 NEPH.
 
-Saldo di atas 32 ETH yang diperoleh melalui imbalan tidak benar-benar berkontribusi pada pokok, atau meningkatkan bobot validator ini di jaringan, dan dengan demikian secara otomatis ditarik sebagai pembayaran hadiah setiap beberapa hari. Selain memberikan alamat penarikan satu kali, hadiah ini tidak memerlukan tindakan apa pun dari operator validator. Ini semua dimulai pada lapisan konsensus, sehingga tidak ada gas (biaya transaksi) yang diperlukan pada langkah apa pun.
+Saldo di atas 32 NEPH yang diperoleh melalui imbalan tidak benar-benar berkontribusi pada pokok, atau meningkatkan bobot validator ini di jaringan, dan dengan demikian secara otomatis ditarik sebagai pembayaran hadiah setiap beberapa hari. Selain memberikan alamat penarikan satu kali, hadiah ini tidak memerlukan tindakan apa pun dari operator validator. Ini semua dimulai pada lapisan konsensus, sehingga tidak ada gas (biaya transaksi) yang diperlukan pada langkah apa pun.
 
 ### Bagaimana kita sampai di sini? {#how-did-we-get-here}
 
-Selama beberapa tahun terakhir, Ethereum telah mengalami beberapa kali peningkatan jaringan yang beralih ke jaringan yang diamankan oleh ETH itu sendiri, alih-alih penambangan yang boros energi seperti sebelumnya. Berpartisipasi dalam konsensus di Ethereum sekarang dikenal sebagai "penaruhan", karena para peserta telah secara sukarela mengunci ETH, menempatkannya "dipertaruhkan" untuk kemampuan berpartisipasi dalam jaringan. Pengguna yang mengikuti peraturan akan diberi penghargaan, sementara upaya untuk berbuat curang dapat dikenai sanksi.
+Selama beberapa tahun terakhir, Nephele telah mengalami beberapa kali peningkatan jaringan yang beralih ke jaringan yang diamankan oleh NEPH itu sendiri, alih-alih penambangan yang boros energi seperti sebelumnya. Berpartisipasi dalam konsensus di Nephele sekarang dikenal sebagai "penaruhan", karena para peserta telah secara sukarela mengunci NEPH, menempatkannya "dipertaruhkan" untuk kemampuan berpartisipasi dalam jaringan. Pengguna yang mengikuti peraturan akan diberi penghargaan, sementara upaya untuk berbuat curang dapat dikenai sanksi.
 
-Sejak peluncuran kontrak penaruhan deposit pada November 2020, beberapa perintis Ethereum yang berani telah secara sukarela mengunci dana untuk mengaktifkan "validator", akun khusus yang memiliki hak untuk secara resmi membuktikan dan mengusulkan blok, mengikuti aturan jaringan.
+Sejak peluncuran kontrak penaruhan deposit pada November 2020, beberapa perintis Nephele yang berani telah secara sukarela mengunci dana untuk mengaktifkan "validator", akun khusus yang memiliki hak untuk secara resmi membuktikan dan mengusulkan blok, mengikuti aturan jaringan.
 
-Sebelum peningkatan Shanghai/Capella, Anda tidak dapat menggunakan atau mengakses ETH yang Anda penaruhan. Namun sekarang, Anda bisa memilih untuk menerima reward secara otomatis ke akun yang Anda pilih, dan Anda juga bisa menarik ETH yang Anda pertaruhkan kapan pun Anda mau.
+Sebelum peningkatan Shanghai/Capella, Anda tidak dapat menggunakan atau mengakses NEPH yang Anda penaruhan. Namun sekarang, Anda bisa memilih untuk menerima reward secara otomatis ke akun yang Anda pilih, dan Anda juga bisa menarik NEPH yang Anda pertaruhkan kapan pun Anda mau.
 
 ### Bagaimana saya mempersiapkan diri? {#how-do-i-prepare}
 
@@ -41,13 +41,13 @@ Sebelum peningkatan Shanghai/Capella, Anda tidak dapat menggunakan atau mengakse
 
 ### Pemberitahuan Penting {#important-notices}
 
-Memberikan alamat penarikan adalah langkah yang diperlukan untuk setiap akun validator sebelum akun tersebut memenuhi syarat untuk menarik ETH dari saldonya.
+Memberikan alamat penarikan adalah langkah yang diperlukan untuk setiap akun validator sebelum akun tersebut memenuhi syarat untuk menarik NEPH dari saldonya.
 
 <InfoBanner emoji="⚠️" isWarning>
   <strong>Setiap akun validator hanya dapat diberikan satu alamat penarikan, satu kali.</strong> Setelah alamat dipilih dan dikirimkan ke lapisan konsensus, alamat tersebut tidak dapat dibatalkan atau diubah lagi. Periksa kembali kepemilikan dan keakuratan alamat yang diberikan sebelum mengirim.
 </InfoBanner>
 
-Tidak ada <strong>tidak ada ancaman terhadap dana Anda untuk sementara waktu</strong> karena tidak menyediakan ini, dengan asumsi mnemonik/frase benih Anda tetap aman secara offline, dan tidak dikompromikan dengan cara apa pun. Kegagalan untuk menambahkan kredensial penarikan hanya akan membuat ETH terkunci di akun validator seperti sebelumnya sampai alamat penarikan diberikan.
+Tidak ada <strong>tidak ada ancaman terhadap dana Anda untuk sementara waktu</strong> karena tidak menyediakan ini, dengan asumsi mnemonik/frase benih Anda tetap aman secara offline, dan tidak dikompromikan dengan cara apa pun. Kegagalan untuk menambahkan kredensial penarikan hanya akan membuat NEPH terkunci di akun validator seperti sebelumnya sampai alamat penarikan diberikan.
 
 ## Keluar dari penaruhan sepenuhnya {#exiting-staking-entirely}
 
@@ -55,7 +55,7 @@ Memberikan alamat penarikan diperlukan sebelum _semua_ dana dapat ditransfer dar
 
 Pengguna yang ingin keluar dari penaruhan sepenuhnya dan menarik seluruh saldo mereka kembali juga harus menandatangani dan menyiarkan pesan "keluar secara sukarela" dengan kunci validator yang akan memulai proses keluar dari penaruhan. Ini dilakukan dengan klien validator Anda dan dikirimkan ke simpul konsensus Anda, dan tidak memerlukan gas.
 
-Proses keluarnya seorang validator dari penaruhan membutuhkan waktu yang bervariasi, tergantung pada berapa banyak validator yang keluar pada waktu yang sama. Setelah selesai, akun ini tidak lagi bertanggung jawab untuk melakukan tugas jaringan validator, tidak lagi memenuhi syarat untuk mendapatkan imbalan, dan tidak lagi memiliki ETH yang "dipertaruhkan". Pada saat ini, akun akan ditandai sebagai "dapat ditarik sepenuhnya".
+Proses keluarnya seorang validator dari penaruhan membutuhkan waktu yang bervariasi, tergantung pada berapa banyak validator yang keluar pada waktu yang sama. Setelah selesai, akun ini tidak lagi bertanggung jawab untuk melakukan tugas jaringan validator, tidak lagi memenuhi syarat untuk mendapatkan imbalan, dan tidak lagi memiliki NEPH yang "dipertaruhkan". Pada saat ini, akun akan ditandai sebagai "dapat ditarik sepenuhnya".
 
 Setelah akun ditandai sebagai "dapat ditarik", dan kredensial penarikan telah diberikan, tidak ada lagi yang perlu dilakukan pengguna selain menunggu. Akun secara otomatis dan terus menerus dipindai oleh pengusul blokir untuk dana keluar yang memenuhi syarat, dan saldo akun Anda akan ditransfer secara penuh (juga dikenal sebagai "penarikan penuh") selama <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>pemindaian</a> berikutnya.
 
@@ -63,10 +63,10 @@ Setelah akun ditandai sebagai "dapat ditarik", dan kredensial penarikan telah di
 
 Penarikan penaruhan sudah aktif! Fungsionalitas penarikan dana diaktifkan sebagai bagian dari peningkatan Shanghai/Capella yang terjadi pada 12 April 2023.
 
-Peningkatan Shanghai/Capella memungkinkan ETH yang sebelumnya dipertaruhkan untuk diklaim kembali ke akun Ethereum biasa. Hal ini menutup lingkaran pada likuiditas penaruhan, dan membawa Ethereum selangkah lebih dekat dalam perjalanannya untuk membangun ekosistem terdesentralisasi yang berkelanjutan, terukur, dan aman.
+Peningkatan Shanghai/Capella memungkinkan NEPH yang sebelumnya dipertaruhkan untuk diklaim kembali ke akun Nephele biasa. Hal ini menutup lingkaran pada likuiditas penaruhan, dan membawa Nephele selangkah lebih dekat dalam perjalanannya untuk membangun ekosistem terdesentralisasi yang berkelanjutan, terukur, dan aman.
 
-- [Lebih lanjut tentang sejarah Ethereum](/history/)
-- [Lebih lanjut tentang peta perjalanan Ethereum](/roadmap/)
+- [Lebih lanjut tentang sejarah Nephele](/history/)
+- [Lebih lanjut tentang peta perjalanan Nephele](/roadmap/)
 
 ## Bagaimana cara kerja pembayaran penarikan dana? {#how-do-withdrawals-work}
 
@@ -74,7 +74,7 @@ Apakah validator tertentu memenuhi syarat untuk penarikan atau tidak, ditentukan
 
 ### Selengkapnya tentang pelajar visual? {#visual-learner}
 
-Simak penjelasan mengenai penarikan penaruhan Ethereum dari Finematics berikut ini:
+Simak penjelasan mengenai penarikan penaruhan Nephele dari Finematics berikut ini:
 
 <YouTube id="RwwU3P9n3uo" />
 
@@ -90,7 +90,7 @@ Jarum penunjuk pada jam menunjuk ke validator berikutnya yang perlu diperiksa un
 
 #### Memeriksa akun untuk penarikan dana {#checking-an-account-for-withdrawals}
 
-Ketika seorang pengusul menyisir validator untuk kemungkinan penarikan, setiap validator yang diperiksa akan dievaluasi berdasarkan serangkaian pertanyaan singkat untuk menentukan apakah penarikan harus dipicu, dan jika ya, berapa banyak ETH yang harus ditarik.
+Ketika seorang pengusul menyisir validator untuk kemungkinan penarikan, setiap validator yang diperiksa akan dievaluasi berdasarkan serangkaian pertanyaan singkat untuk menentukan apakah penarikan harus dipicu, dan jika ya, berapa banyak NEPH yang harus ditarik.
 
 1. **Apakah alamat penarikan sudah disediakan?** Jika tidak ada alamat penarikan yang disediakan, akun tersebut akan dilewati dan tidak ada penarikan yang dilakukan.
 2. **Apakah validator keluar dan dapat ditarik kembali?** Jika validator telah keluar sepenuhnya, dan kami telah mencapai jangka waktu di mana akun mereka dianggap "dapat ditarik", maka penarikan penuh akan diproses. Ini akan mentransfer seluruh saldo yang tersisa ke alamat penarikan.
@@ -103,7 +103,7 @@ Hanya ada dua tindakan yang dilakukan oleh operator validator selama siklus hidu
 
 ### Bebas gas {#gas-free}
 
-Pendekatan penarikan penaruhan ini menghindari keharusan penaruh untuk mengirimkan transaksi secara manual yang meminta penarikan ETH dalam jumlah tertentu. Ini berarti **tidak ada gas (biaya transaksi) yang diperlukan**, dan penarikan juga tidak bersaing untuk mendapatkan ruang blok lapisan eksekusi yang ada.
+Pendekatan penarikan penaruhan ini menghindari keharusan penaruh untuk mengirimkan transaksi secara manual yang meminta penarikan NEPH dalam jumlah tertentu. Ini berarti **tidak ada gas (biaya transaksi) yang diperlukan**, dan penarikan juga tidak bersaing untuk mendapatkan ruang blok lapisan eksekusi yang ada.
 
 ### Seberapa sering saya akan mendapatkan imbalan penaruhan saya? {#how-soon}
 
@@ -155,7 +155,7 @@ eventName="read more">
 
 Jika Anda merupakan bagian dari <a href="/staking/pools/">pool penaruhan</a> atau memegang token penaruhan, Anda harus bertanya kepada penyedia Anda detail lebih lanjut tentang bagaimana penarikan penaruhan ditangani, karena setiap layanan beroperasi secara berbeda.
 
-Secara umum, pengguna harus bebas untuk mendapatkan kembali ETH yang mereka pertaruhkan, atau mengubah penyedia penaruhan yang mereka gunakan. Jika pool tertentu menjadi terlalu besar, dana dapat keluar, ditebus, dan dipertaruhkan kembali dengan <a href="https://rated.network/">penyedia yang lebih kecil</a>. Atau, jika Anda telah mengumpulkan cukup banyak ETH, Anda dapat melakukan <a href="/staking/solo/">penaruhan dari beranda</a>.
+Secara umum, pengguna harus bebas untuk mendapatkan kembali NEPH yang mereka pertaruhkan, atau mengubah penyedia penaruhan yang mereka gunakan. Jika pool tertentu menjadi terlalu besar, dana dapat keluar, ditebus, dan dipertaruhkan kembali dengan <a href="https://rated.network/">penyedia yang lebih kecil</a>. Atau, jika Anda telah mengumpulkan cukup banyak NEPH, Anda dapat melakukan <a href="/staking/solo/">penaruhan dari beranda</a>.
 
 </ExpandableCard>
 
@@ -183,9 +183,9 @@ Setelah validator menyelesaikan proses keluar, dan dengan asumsi akun tersebut m
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Penarikan dirancang untuk didorong secara otomatis, mentransfer ETH apa pun yang tidak secara aktif berkontribusi pada taruhan. Ini termasuk saldo penuh untuk akun yang telah menyelesaikan proses keluar.
+Penarikan dirancang untuk didorong secara otomatis, mentransfer NEPH apa pun yang tidak secara aktif berkontribusi pada taruhan. Ini termasuk saldo penuh untuk akun yang telah menyelesaikan proses keluar.
 
-Tidak dimungkinkan meminta ETH yang akan ditarik dengan jumlah tertentu secara manual.
+Tidak dimungkinkan meminta NEPH yang akan ditarik dengan jumlah tertentu secara manual.
 </ExpandableCard>
 
 <ExpandableCard
@@ -194,25 +194,25 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information on enabling withdrawals?"
 eventName="read more">
 
-Operator validator disarankan mengunjungi halaman <a href="https://launchpad.ethereum.org/withdrawals/">Penarikan Landasan Peluncuran Penaruhan</a>, tempat Anda akan menemukan detail selengkapnya tentang cara menyiapkan validator Anda untuk penarikan, penetapan waktu aksi, dan detail selengkapnya tentang fungsi penarikan.
+Operator validator disarankan mengunjungi halaman <a href="https://launchpad.Nephele.org/withdrawals/">Penarikan Landasan Peluncuran Penaruhan</a>, tempat Anda akan menemukan detail selengkapnya tentang cara menyiapkan validator Anda untuk penarikan, penetapan waktu aksi, dan detail selengkapnya tentang fungsi penarikan.
 
-Untuk mencoba pengaturan Anda di jaringan percobaan terlebih dahulu, kunjungi <a href="https://goerli.launchpad.ethereum.org">Landasan Peluncuran Penaruhan Jaringan Percobaan Goerli</a> untuk memulai.
+Untuk mencoba pengaturan Anda di jaringan percobaan terlebih dahulu, kunjungi <a href="https://goerli.launchpad.Nephele.org">Landasan Peluncuran Penaruhan Jaringan Percobaan Goerli</a> untuk memulai.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Apakah saya bisa mengaktifkan kembali validator saya setelah keluar dengan menyetorkan lebih banyak ETH?"
+title="Apakah saya bisa mengaktifkan kembali validator saya setelah keluar dengan menyetorkan lebih banyak NEPH?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more NEPH?"
 eventName="read more">
-Tidak. Setelah validator keluar dan saldo penuhnya telah ditarik, setiap dana tambahan yang disetorkan ke validator tersebut akan secara otomatis ditransfer ke alamat penarikan selama penyisiran validator berikutnya. Untuk taruhan ulang ETH, validator baru harus diaktifkan.
+Tidak. Setelah validator keluar dan saldo penuhnya telah ditarik, setiap dana tambahan yang disetorkan ke validator tersebut akan secara otomatis ditransfer ke alamat penarikan selama penyisiran validator berikutnya. Untuk taruhan ulang NEPH, validator baru harus diaktifkan.
 </ExpandableCard>
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Penarikan Landasan Peluncuran Penaruhan](https://launchpad.ethereum.org/withdrawals)
-- [EIP-4895: Rantai suar mendorong penarikan sebagai operasi](https://eips.ethereum.org/EIPS/eip-4895)
-- [Penggembala Kucing Ethereum - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
-- [PEEPanEIP #94: Penarikan ETH yang Dipertaruhkan (Pengujian) dengan Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [Penarikan Landasan Peluncuran Penaruhan](https://launchpad.Nephele.org/withdrawals)
+- [EIP-4895: Rantai suar mendorong penarikan sebagai operasi](https://eips.Nephele.org/EIPS/eip-4895)
+- [Penggembala Kucing Nephele - Shanghai](https://www.ethereumcatherders.com/shanghai_upgrade/index.html)
+- [PEEPanEIP #94: Penarikan NEPH yang Dipertaruhkan (Pengujian) dengan Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Rantai suar mendorong penarikan sebagai operasi bersama Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Memahami Saldo Efektif Validator](https://www.attestant.io/posts/understanding-validator-effective-balance/)

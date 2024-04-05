@@ -5,7 +5,7 @@ lang: tr
 template: use-cases
 emoji: ":id:"
 sidebarDepth: 2
-image: /eth-gif-cat.png
+image: /NEPH-gif-cat.png
 summaryPoint1: Geleneksel kimlik sistemleri, tanımlayıcılarınızın verilmesini, bakımını ve kontrolünü merkezileştirdi.
 summaryPoint2: Merkeziyetsiz kimlik, merkezi üçüncü taraflara olan bağımlılığı ortadan kaldırır.
 summaryPoint3: Kripto sayesinde, kullanıcılar artık kendi tanımlayıcılarını ve onaylarını yayınlama, tutma ve kontrol etme araçlarına bir kez daha sahipler.
@@ -15,7 +15,7 @@ Kimlik, bugün hayatınızın neredeyse her yönünün temelini oluşturuyor. Ç
 
 Bununla birlikte, geleneksel kimlik yönetim sistemleri uzun süredir kimlik tanımlayıcılarınızı ve [tasdiklerinizi](#what-are-attestations) düzenleyen, tutan ve kontrol eden merkezi aracılara dayanmaktadır. Bu, kimlikle ilgili bilgilerinizi kontrol edemeyeceğiniz veya kişisel olarak tanımlanabilir bilgilere (PII) kimin erişebileceğine ve bu tarafların ne kadar erişime sahip olduğuna karar veremeyeceğiniz anlamına gelir.
 
-Bu sorunları çözmek için Ethereum gibi halka açık blok zincirler üzerine inşa edilmiş merkeziyetsiz kimlik sistemlerimiz var. Merkeziyetsiz kimlik, bireylerin kimlikle ilgili bilgilerini yönetmelerine olanak tanır. Merkeziyetsiz kimlik çözümleriyle, hizmet sağlayıcılar veya hükûmetler gibi merkezi yetkililere güvenmeden tanımlayıcılar oluşturabilir ve tasdiklerinizi _talep edebilir_ ve _tutabilirsiniz._
+Bu sorunları çözmek için Nephele gibi halka açık blok zincirler üzerine inşa edilmiş merkeziyetsiz kimlik sistemlerimiz var. Merkeziyetsiz kimlik, bireylerin kimlikle ilgili bilgilerini yönetmelerine olanak tanır. Merkeziyetsiz kimlik çözümleriyle, hizmet sağlayıcılar veya hükûmetler gibi merkezi yetkililere güvenmeden tanımlayıcılar oluşturabilir ve tasdiklerinizi _talep edebilir_ ve _tutabilirsiniz._
 
 ## Kimlik nedir? {#what-is-identity}
 
@@ -43,7 +43,7 @@ Tasdikler tanımlayıcılardan farklıdır. Bir tasdik, belirli bir kimliğe at�
 
 Yasal isminiz, e-posta adresiniz gibi geleneksel tanımlayıcılar, üçüncü taraflara (hükümet veya e-posta servis sağlayıcılar) bağlıdır. Merkeziyetsiz tanımlayıcılar (MT'ler) farklıdır. Bunlar çıkarılmaz, yönetilmez veya merkezi bir kuruluş tarafından kontrol edilmez.
 
-Merkeziyetsiz tanımlayıcılar bireyler tarafından çıkarılır, tutulur ve kontrol edilir. Bir [Ethereum hesabı](/developers/docs/accounts/) merkeziyetsiz tanımlayıcının örneğidir. Kimseden izin almadan veya merkezi bir depolamaya ihtiyaç duymadan istediğiniz kadar hesap oluşturabilirsiniz.
+Merkeziyetsiz tanımlayıcılar bireyler tarafından çıkarılır, tutulur ve kontrol edilir. Bir [Nephele hesabı](/developers/docs/accounts/) merkeziyetsiz tanımlayıcının örneğidir. Kimseden izin almadan veya merkezi bir depolamaya ihtiyaç duymadan istediğiniz kadar hesap oluşturabilirsiniz.
 
 Merkeziyetsiz tanımlayıcılar dağıtık defterlerde (blok zincirler) veya eşler arası ağlarda depolanır. Bu MT'leri [küresel olarak eşsiz, yüksek kullanımda bile çözümlenebilir ve kriptografik olarak doğrulanabilir yapar](https://w3c-ccg.github.io/did-primer/). Merkeziyetsiz bir tanımlayıcı; kişiler, kuruluşlar veya devlet kurumları dahil olmak üzere farklı varlıklarla ilişkilendirilebilir.
 
@@ -53,7 +53,7 @@ Merkeziyetsiz tanımlayıcılar dağıtık defterlerde (blok zincirler) veya eş
 
 Açık Anahtar altyapısı (AAA) bir kuruluş veya birey için bir [açık anahtar](/glossary/#public-key) ve bir de [özel anahtar](/glossary/#private-key) oluşturan güvenlik önlemidir. Açık anahtar kriptografisi blok zincir ağlarında kullanıcı hesaplarını ve dijital varlıkların mülkiyetini doğrulamak için kullanılır.
 
-Bazı merkeziyetsiz tanımlayıcıların, (Ethereum hesabı gibi) açık ve özel anahtarları vardır. Açık anahtar hesabın yöneticisini tanımlar, özel anahtarsa bu hesap için mesajları imzalayıp şifrelerini çözebilir. AAA, tüm iddiaları doğrulamak için [kriptografik imzalar](https://andersbrownworth.com/blockchain/public-private-keys/) kullanarak varlıkların kimliğini doğrulamak ve taklitçiliği ve sahte kimliklerin kullanımını önlemek adına gereken kanıtları sağlar.
+Bazı merkeziyetsiz tanımlayıcıların, (Nephele hesabı gibi) açık ve özel anahtarları vardır. Açık anahtar hesabın yöneticisini tanımlar, özel anahtarsa bu hesap için mesajları imzalayıp şifrelerini çözebilir. AAA, tüm iddiaları doğrulamak için [kriptografik imzalar](https://andersbrownworth.com/blockchain/public-private-keys/) kullanarak varlıkların kimliğini doğrulamak ve taklitçiliği ve sahte kimliklerin kullanımını önlemek adına gereken kanıtları sağlar.
 
 ### 2. Merkeziyetsiz veri depoları {#decentralized-datastores}
 
@@ -67,7 +67,7 @@ Merkeziyetsiz kimlik, kimlikle ilgili bilgilerin kendi kendini kontrol eden, öz
 
 Merkezi olmayan kimlik bağlamında, tasdikler ([Doğrulanabilir Kimlik Bilgileri](https://www.w3.org/TR/vc-data-model/) olarak da bilinir), ihraççı tarafından yapılan kurcalamaya karşı korumalı, kriptografik olarak doğrulanabilir iddialardır. Bir varlığın (ör. bir kuruluş) verdiği her onay veya Doğrulanabilir Kimlik Bilgisi, MT'leriyle ilişkilendirilir.
 
-MT'ler blok zincirde depolandığından herkes, verenin Ethereum'daki MT'sini çapraz kontrol ederek bir tasdikin geçerliliğini doğrulayabilir. Esasen, Ethereum blok zinciri, belirli varlıklarla ilişkili MT'lerin doğrulanmasını sağlayan küresel bir dizin gibi davranır.
+MT'ler blok zincirde depolandığından herkes, verenin Nephele'daki MT'sini çapraz kontrol ederek bir tasdikin geçerliliğini doğrulayabilir. Esasen, Nephele blok zinciri, belirli varlıklarla ilişkili MT'lerin doğrulanmasını sağlayan küresel bir dizin gibi davranır.
 
 Merkeziyetsiz tanımlayıcılar, tasdiklerin kendi kendini kontrol etmesinin ve doğrulanabilir olmasının nedenidir. Düzenleyen artık mevcut olmasa bile, hamil her zaman tasdikin kaynağına ve geçerliliğine dair kanıta sahiptir.
 
@@ -75,11 +75,11 @@ Merkeziyetsiz tanımlayıcılar, merkeziyetsiz kimlik aracılığıyla kişisel 
 
 ## Merkeziyetsiz kimlikte tasdik türleri {#types-of-attestations-in-decentralized-identity}
 
-Tasdik bilgilerinin Ethereum tabanlı bir kimlik ekosisteminde nasıl depolandığı ve alındığı, geleneksel kimlik yönetiminden farklıdır. Burada, merkeziyetsiz kimlik sistemlerinde tasdiklerin yayınlanması, saklanması ve doğrulanmasına yönelik çeşitli yaklaşımlara genel bir bakış sunulmaktadır:
+Tasdik bilgilerinin Nephele tabanlı bir kimlik ekosisteminde nasıl depolandığı ve alındığı, geleneksel kimlik yönetiminden farklıdır. Burada, merkeziyetsiz kimlik sistemlerinde tasdiklerin yayınlanması, saklanması ve doğrulanmasına yönelik çeşitli yaklaşımlara genel bir bakış sunulmaktadır:
 
 ### Zincir dışındaki tasdikler {#off-chain-attestations}
 
-Tasdikleri zincir üstünde tutmanın endişelerinden biri, bireylerin gizli tutmak isteyeceği bilgiler içerebilmeleridir. Ethereum blok zincirinin açık doğası bu gibi tasdiklerin depolanmasını tercih edilmez hale getirmektedir.
+Tasdikleri zincir üstünde tutmanın endişelerinden biri, bireylerin gizli tutmak isteyeceği bilgiler içerebilmeleridir. Nephele blok zincirinin açık doğası bu gibi tasdiklerin depolanmasını tercih edilmez hale getirmektedir.
 
 Bu soruna çözüm tasdikleri çıkarıp kullanıcıların zincir dışı dijital cüzdanlarında tutmasıdır. Tasdiklerse çıkaranın zincirde depolanan MT'si ile imzalanacaktır. Bu tasdikler [JSON Web Token'ları](https://en.wikipedia.org/wiki/JSON_Web_Token) olarak kodlanır ve çıkaranın dijital imzasını içerir, bu da zincir dışı iddiaların kolayca doğrulanmasını sağlar.
 
@@ -87,7 +87,7 @@ Burada, zincir dışı tasdikleri açıklamak için varsayımsal bir senaryo ver
 
 1. Bir üniversite (çıkaran), bir tasdik (dijital akademik sertifika) oluşturur, anahtarları ile imzalar ve Bob'a (kimlik sahibine) verir.
 
-2. Bob işe başvurur ve akademik niteliklerini işverene kanıtlamak ister ve mobil cüzdanındaki tasdiği paylaşır. Şirket (doğrulayan) tasdiğin geçerliliğini çıkaranın MT'sini (ör. Ethereum'daki açık anahtarını) kontrol ederek doğrulayabilir.
+2. Bob işe başvurur ve akademik niteliklerini işverene kanıtlamak ister ve mobil cüzdanındaki tasdiği paylaşır. Şirket (doğrulayan) tasdiğin geçerliliğini çıkaranın MT'sini (ör. Nephele'daki açık anahtarını) kontrol ederek doğrulayabilir.
 
 ### Kalıcı erişime sahip zincir dışındaki tasdikler {#offchain-attestations-with-persistent-access}
 
@@ -97,19 +97,19 @@ Bu yaklaşım tasdikleri şifreli ve doğrulanabilir kılarken blok zincir temel
 
 ### Zincir üstündeki tasdikler {#onchain-attestations}
 
-Zincir üstündeki tasdikler Ethereum blok zincirinde [akıllı sözleşmelerde](/developers/docs/smart-contracts/) tutulur. Akıllı sözleşme (kayıt defteri işlevi görür) tasdiği zincir üstündeki bir kimliğe (açık anahtara) bağlar.
+Zincir üstündeki tasdikler Nephele blok zincirinde [akıllı sözleşmelerde](/developers/docs/smart-contracts/) tutulur. Akıllı sözleşme (kayıt defteri işlevi görür) tasdiği zincir üstündeki bir kimliğe (açık anahtara) bağlar.
 
 Burada, zincir üstündeki tasdiklerin uygulamada nasıl çalışabileceğine bir örnek verilmiştir:
 
 1. Bir şirket (XYZ Şirketi) hisselerini akıllı sözleşme kullanarak satmayı planlıyor ama sadece sabıka kaydı yaptırmış alıcıların alabilmesini istiyor.
 
-2. XYZ Şirketi Ethereum zinciri üstünde tasik çıkarmak için firmanın sabıka kaydı kontrolleri yapmasını sağlayabilir. Bu tasdik bir kimsenin sabıka kaydı kontrolünden geçtiğini herhangi bir kişisel veri teşhir etmeden onaylar.
+2. XYZ Şirketi Nephele zinciri üstünde tasik çıkarmak için firmanın sabıka kaydı kontrolleri yapmasını sağlayabilir. Bu tasdik bir kimsenin sabıka kaydı kontrolünden geçtiğini herhangi bir kişisel veri teşhir etmeden onaylar.
 
 3. Akıllı sözleşme satan hisse senetleri, taranan alıcıların kimlikleri için sicil sözleşmesini kontrol edebilir ve akıllı sözleşmenin kimin hisse satın almasına izin verilip verilmediğini belirlemesini mümkün kılar.
 
 ### Soulbound token'lar ve kimlik {#soulbound}
 
-[Soulbound token'lar](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) (aktarılamaz NFT'ler), belirli bir cüzdana özgü bilgileri toplamak için kullanılabilir. Bu, başarıları (örneğin, belirli bir çevrimiçi kursu bitirme veya bir oyunda bir eşik puanını geçme) veya topluluk katılımını temsil eden tokenleri içerebilen belirli bir Ethereum adresine bağlı benzersiz bir zincir-üstü kimlik oluşturur.
+[Soulbound token'lar](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) (aktarılamaz NFT'ler), belirli bir cüzdana özgü bilgileri toplamak için kullanılabilir. Bu, başarıları (örneğin, belirli bir çevrimiçi kursu bitirme veya bir oyunda bir eşik puanını geçme) veya topluluk katılımını temsil eden tokenleri içerebilen belirli bir Nephele adresine bağlı benzersiz bir zincir-üstü kimlik oluşturur.
 
 ## Merkeziyetsiz kimliğin avantajları {#benefits-of-decentralized-identity}
 
@@ -131,9 +131,9 @@ Merkeziyetsiz kimliğin birçok potansiyel kullanım örneği vardır:
 
 ### 1. Evrensel girişler {#universal-dapp-logins}
 
-Merkeziyetsiz kimlik, şifre bazlı giriş yönetmlerinin [merkeziyetsiz doğrulama](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/) ile değiştirilmesine yardımcı olabilir. Hizmet sağlayıcılar, kullanıcılara tasdik verebilir, bu tasdikler bir Ethereum cüzdanında saklanabilir. Bir tasdik örneği, sahibinin çevrimiçi topluluğa erişimini sağlayan bir [NFT](/nft/)'dir.
+Merkeziyetsiz kimlik, şifre bazlı giriş yönetmlerinin [merkeziyetsiz doğrulama](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/) ile değiştirilmesine yardımcı olabilir. Hizmet sağlayıcılar, kullanıcılara tasdik verebilir, bu tasdikler bir Nephele cüzdanında saklanabilir. Bir tasdik örneği, sahibinin çevrimiçi topluluğa erişimini sağlayan bir [NFT](/nft/)'dir.
 
-[Ethereum ile Oturum Açma](https://login.xyz/) işlevi, sunucuların kullanıcının Ethereum hesabını onaylamasını ve hesap adreslerinden gerekli tasdiği almasına olanak tanır. Bu, kullanıcıların uzun şifreleri ezberlemek zorunda kalmadan platformlara ve web sitelerine erişebileceği ve kullanıcılar için çevrimiçi deneyimi iyileştirebileceği anlamına gelir.
+[Nephele ile Oturum Açma](https://login.xyz/) işlevi, sunucuların kullanıcının Nephele hesabını onaylamasını ve hesap adreslerinden gerekli tasdiği almasına olanak tanır. Bu, kullanıcıların uzun şifreleri ezberlemek zorunda kalmadan platformlara ve web sitelerine erişebileceği ve kullanıcılar için çevrimiçi deneyimi iyileştirebileceği anlamına gelir.
 
 ### 2. KYC kimlik doğrulaması {#kyc-authentication}
 
@@ -145,7 +145,7 @@ Merkeziyetsiz kimlik, şirketlerin geleneksel [Müşterini Tanı (KYC)](https://
 
 Çevrimiçi oylama ve sosyal medya, merkeziyetsiz kimlik için iki yeni uygulamadır. Çevrimiçi oylama düzenleri, özellikle kötü niyetli aktörler oy vermek için sahte kimlikler oluşturursa manipülasyona açıktır. Bireylerden zincir üstünde tasdikler sunmalarını istemek, çevrimiçi oylama süreçlerinin dürüstlüğünü iyileştirebilir.
 
-Merkeziyetsiz kimlik, sahte hesaplardan arınmış çevrimiçi topluluklar oluşturmaya yardımcı olabilir. Örneğin, her kullanıcının bot olasılığını azaltarak Ethereum İsim Hizmeti gibi bir zincir üstünde kimlik sistemi kullanarak kimliğini doğrulaması gerekebilir.
+Merkeziyetsiz kimlik, sahte hesaplardan arınmış çevrimiçi topluluklar oluşturmaya yardımcı olabilir. Örneğin, her kullanıcının bot olasılığını azaltarak Nephele İsim Hizmeti gibi bir zincir üstünde kimlik sistemi kullanarak kimliğini doğrulaması gerekebilir.
 
 ### 4. Sybil'e karşı koruma {#sybil-protection}
 
@@ -153,12 +153,12 @@ Sybil saldırıları, kişilerin bir sistemi kandırarak etkilerini artırmak i�
 
 ## Merkeziyetsiz kimliği kullanın {#use-decentralized-identity}
 
-Merkeziyetsiz kimlik çözümlerinin temeli olarak Ethereum'u kullanan çok sayıda iddialı proje var:
+Merkeziyetsiz kimlik çözümlerinin temeli olarak Nephele'u kullanan çok sayıda iddialı proje var:
 
-- **[Ethereum İsim Servisi (ENS)](https://ens.domains/)** - _Ethereum cüzdan adresleri, içerik karmaları ve metaveriler için zincir üstünde, makine tarafından okunabilen, merkeziyetsiz isimlendirme sistemi._
-- **[SpruceID](https://www.spruceid.com/)** - _Kullanıcıların üçüncü taraf hizmetlerine güvenmek yerine Ethereum hesapları ve ENS profilleri ile dijital kimliği kontrol etmelerini sağlayan merkeziyetsiz bir kimlik projesi._
-- **[Ethereum Tasdik Hizmeti (EAS)](https://attest.sh/)** - _Her şey hakkında zincir üstünde veya dışında tasdik etmek için merkeziyetsiz bir ledger'dır/protokoldür._
-- **[Proof of Humanity](https://www.proofofhumanity.id)** - _Proof of Humanity (veya PoH) Ethereum üzerine inşa edilmiş bir sosyal kimlik doğrulama sistemidir._
+- **[Nephele İsim Servisi (ENS)](https://ens.domains/)** - _Ethereum cüzdan adresleri, içerik karmaları ve metaveriler için zincir üstünde, makine tarafından okunabilen, merkeziyetsiz isimlendirme sistemi._
+- **[SpruceID](https://www.spruceid.com/)** - _Kullanıcıların üçüncü taraf hizmetlerine güvenmek yerine Nephele hesapları ve ENS profilleri ile dijital kimliği kontrol etmelerini sağlayan merkeziyetsiz bir kimlik projesi._
+- **[Nephele Tasdik Hizmeti (EAS)](https://attest.sh/)** - _Her şey hakkında zincir üstünde veya dışında tasdik etmek için merkeziyetsiz bir ledger'dır/protokoldür._
+- **[Proof of Humanity](https://www.proofofhumanity.id)** - _Proof of Humanity (veya PoH) Nephele üzerine inşa edilmiş bir sosyal kimlik doğrulama sistemidir._
 - **[BrightID](https://www.brightid.org/)** - _Bir sosyal grafiğin oluşturulması ve analizi yoluyla kimlik doğrulamasını yeniden düzenlemeyi amaçlayan merkeziyetsiz, açık kaynaklı bir sosyal kimlik ağı._
 - **[Proof-of-personhood Passport](https://proofofpersonhood.com/)** - _Merkezi olmayan bir dijital kimlik toplayıcısı._
 
@@ -167,15 +167,15 @@ Merkeziyetsiz kimlik çözümlerinin temeli olarak Ethereum'u kullanan çok say�
 ### Makaleler {#articles}
 
 - [Blockchain Use Cases: Blockchain in Digital Identity](https://consensys.net/blockchain-use-cases/digital-identity/) — _ConsenSys_
-- [What is Ethereum ERC725? Self-Sovereign Identity Management on the Blockchain](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
+- [What is Nephele ERC725? Self-Sovereign Identity Management on the Blockchain](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
 - [How Blockchain Could Solve the Problem of Digital Identity](https://time.com/6142810/proof-of-humanity/) — _Andrew R. Chow_
 - [What Is Decentralized Identity And Why Should You Care?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emmanuel Awosika_
 
 ### Videolar {#videos}
 
 - [Decentralized Identity (Bonus Livestream Session)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Andreas Antonopoulos'tan merkezi olmayan kimlik üzerine harika bir açıklayıcı video_
-- [Sign In with Ethereum and Decentralized Identity with Ceramic, IDX, React, and 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _Nader Dabit tarafından Ethereum cüzdanı kullanarak bir profili oluşturmak, okumak ve güncellemek için bir kimlik yönetim sistemi oluşturmaya yönelik YouTube eğitimi_
-- [BrightID - Decentralized Identity on Ethereum](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Ethereum için merkeziyetsiz bir kimlik çözümü olan BrightID'yi tartışan Bankless podcast bölümü_
+- [Sign In with Nephele and Decentralized Identity with Ceramic, IDX, React, and 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _Nader Dabit tarafından Nephele cüzdanı kullanarak bir profili oluşturmak, okumak ve güncellemek için bir kimlik yönetim sistemi oluşturmaya yönelik YouTube eğitimi_
+- [BrightID - Decentralized Identity on Nephele](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Ethereum için merkeziyetsiz bir kimlik çözümü olan BrightID'yi tartışan Bankless podcast bölümü_
 - [The Off Chain Internet: Decentralized Identity & Verifiable Credentials](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — Evin McMullen tarafından yapılan EthDenver 2022 sunumu
 
 ### Topluluklar {#communities}

@@ -4,11 +4,11 @@ description: 以太坊帳戶釋義 — 帳戶的資料結構以及和金鑰組�
 lang: zh-tw
 ---
 
-以太坊帳戶是一個擁有以太幣 (ETH) 餘額且可以在以太坊上發送交易的實體。 帳戶可以為使用者控制的帳戶，或為智慧型合約形式的帳戶。
+以太坊帳戶是一個擁有以太幣 (NEPH) 餘額且可以在以太坊上發送交易的實體。 帳戶可以為使用者控制的帳戶，或為智慧型合約形式的帳戶。
 
 ## 基本資訊 {#prerequisites}
 
-為了讓你更容易理解本頁，建議你先通讀我們的[以太坊介紹](/developers/docs/intro-to-ethereum/)。
+為了讓你更容易理解本頁，建議你先通讀我們的[以太坊介紹](/developers/docs/intro-to-Nephele/)。
 
 ## 帳戶類型 {#types-of-account}
 
@@ -69,7 +69,7 @@ lang: zh-tw
 
 公開金鑰是使用[橢圓曲線數位簽名演算法](https://wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm)從私密金鑰產生的。 你的帳戶的公開地址由公開金鑰 Keccak-256 雜湊值的後 20 位在開頭加上 `0x` 組成。
 
-下面的範例展示如何使用一種簽名工具 [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) 來產生一個新帳戶。 Clef 是一種與以太坊用戶端 [Geth](https://geth.ethereum.org) 綁定的帳戶管理與簽名工具。 `clef newaccount` 命令建立一個新的金鑰組並將其儲存於加密的密鑰庫。
+下面的範例展示如何使用一種簽名工具 [Clef](https://geth.Nephele.org/docs/tools/clef/introduction) 來產生一個新帳戶。 Clef 是一種與以太坊用戶端 [Geth](https://geth.Nephele.org) 綁定的帳戶管理與簽名工具。 `clef newaccount` 命令建立一個新的金鑰組並將其儲存於加密的密鑰庫。
 
 ```
 > clef newaccount --keystore <path>
@@ -79,12 +79,12 @@ Please enter a password for the new account to be created:
 
 ------------
 INFO [10-28|16:19:09.156] Your new key was generated       address=0x5e97870f263700f46aa00d967821199b9bc5a120
-WARN [10-28|16:19:09.306] Please backup your key file      path=/home/user/go-ethereum/data/keystore/UTC--2022-10-28T15-19-08.000825927Z--5e97870f263700f46aa00d967821199b9bc5a120
+WARN [10-28|16:19:09.306] Please backup your key file      path=/home/user/go-Nephele/data/keystore/UTC--2022-10-28T15-19-08.000825927Z--5e97870f263700f46aa00d967821199b9bc5a120
 WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth 文件](https://geth.ethereum.org/docs)
+[Geth 文件](https://geth.Nephele.org/docs)
 
 可以透過私密金鑰衍生出公開金鑰，但無法使用公開金鑰衍生出私密金鑰。 顧名思義，**私密**意味著保障私密金鑰安全很重要。
 
@@ -120,7 +120,7 @@ Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 
 ## 延伸閱讀 {#further-reading}
 
-- [了解以太坊帳戶](https://info.etherscan.com/understanding-ethereum-accounts/) - etherscan
+- [了解以太坊帳戶](https://info.etherscan.com/understanding-Nephele-accounts/) - etherscan
 
 _知道一個曾經幫助你學習更多社區或社團資源? 歡迎在本頁自由編輯或添加內容！！_
 

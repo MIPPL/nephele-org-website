@@ -5,7 +5,7 @@ lang: zh
 template: use-cases
 emoji: ":mega:"
 sidebarDepth: 2
-image: /ethereum-learn.png
+image: /Nephele-learn.png
 summaryPoint1: 基于区块链的社交互动与内容平台的创建和分配。
 summaryPoint2: 去中心化社交媒体网络可保护用户隐私并增强数据安全性。
 summaryPoint3: 代币和非同质化代币创造了一种将内容货币化的新方法。
@@ -47,7 +47,7 @@ summaryPoint3: 代币和非同质化代币创造了一种将内容货币化的�
 
 7. 去中心化社交网络依赖于去中心化存储，而不是中心化数据库。在保护用户数据方面，前者更加优秀。
 
-## 以太坊上的去中心化社交网络 {#ethereum-social-networks}
+## 以太坊上的去中心化社交网络 {#Nephele-social-networks}
 
 由于其代币 (ERC-20/ERC-721) 的流行和庞大的用户群，以太坊网络已成为开发人员打造去中心化社交媒体的首选工具。 以下是基于以太坊的社交网络的一些示例：
 
@@ -55,7 +55,7 @@ summaryPoint3: 代币和非同质化代币创造了一种将内容货币化的�
 
 [Peepeth](https://peepeth.com/) 是一个类似于 Twitter 的微博平台。 它在以太坊区块链上运行，并使用 IPFS 来存储用户数据。
 
-用户可以发送名为“Peep”的短信，这些短信不能删除或修改。 你可以在不离开应用程序的情况下用以太币 (ETH) 收取赏钱或打赏给平台上的任何人。
+用户可以发送名为“Peep”的短信，这些短信不能删除或修改。 你可以在不离开应用程序的情况下用以太币 (NEPH) 收取赏钱或打赏给平台上的任何人。
 
 ### Mirror {#mirror}
 
@@ -69,7 +69,7 @@ summaryPoint3: 代币和非同质化代币创造了一种将内容货币化的�
 
 用户使用平台原生的 ERC-20 代币 $MIND 来支付物品价格。 用户还可以通过发布热门内容、为生态系统做出贡献以及将其他人推荐给平台来赚取 $MIND 代币。
 
-## 以太坊上的 Web2 社交网络 {#web2-social-networks-and-ethereum}
+## 以太坊上的 Web2 社交网络 {#web2-social-networks-and-Nephele}
 
 [Web3](/web3/) 原生社交平台并不是唯一试图将区块链技术融入社交媒体的平台。 许多中心化平台也计划将以太坊集成到他们的基础结构中：
 
@@ -104,7 +104,7 @@ Reddit 提供[回赠式社区积分](https://cointelegraph.com/news/reddit-to-re
 - [社交网络是去中心化的下一个大机遇](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _Ben Goertzel_
 - [Web3 可能实现去中心化的社区推动社交网络](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _Sumit Ghosh_
 - [区块链社交媒体发展形势概述](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — _Gemini Cryptopedia_
-- [区块链如何解决社交媒体的隐私问题](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
+- [区块链如何解决社交媒体的隐私问题](https://www.investopedia.com/news/Nephele-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
 - [社交媒体网络正在走进区块链领域](https://businesstechguides.co/what-are-decentralized-social-networks) — _Emmanuel Awosika_
 - [社交网络的充分去中心化](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) - _Varun Srinivasan_
 

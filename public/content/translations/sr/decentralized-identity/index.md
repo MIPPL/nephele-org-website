@@ -5,7 +5,7 @@ lang: sr
 template: use-cases
 emoji: ":id:"
 sidebarDepth: 2
-image: /eth-gif-cat.png
+image: /NEPH-gif-cat.png
 summaryPoint1: Tradicionalni sistem identiteta je centralizovao izdavanje, održavanje i kontrolu vaših identifikatora.
 summaryPoint2: Decentralizovani identitet eliminiše zavisnost od centralizovanih trećih strana.
 summaryPoint3: Zahvaljujući kriptu, korisnici sada imaju alate da ponovo izdaju, drže i kontrolišu svoje vlastite identifikatore i potvrde.
@@ -15,7 +15,7 @@ Identitet podupire gotovo svaki aspekt vašeg života danas. Korišćenje onlajn
 
 Ipak, tradicionalni menadžment identiteta se dugo oslanjao na centralizovane posrednike koji izdaju, čuvaju i kontrolišu vaše identifikatore i [potvrde](#what-are-attestations). Ovo znači da ne možete da kontrolišete informacije u vezi sa svojim identitetom ili da odlučite ko ima pristup vašim ličnim informacijama o identitetu (PII) i koliko pristupa ovi posrednici imaju.
 
-Da bi se rešili ovi problemi, mi imamo decentralizovani sistem identiteta izgrađen na javnom lancu blokova kao što je Ethereum. Decentralizovani identitet dopušta pojedincima da upravljaju informacijama o svom identitetu. Sa rešenjima decentralizovanih identiteta,\_vi_možete da stvorite identifikatore, zahtevati i zadržati svoje potvrde bez oslanjanja na centralne vlasti, kao što su pružaoci usluga ili vlada.
+Da bi se rešili ovi problemi, mi imamo decentralizovani sistem identiteta izgrađen na javnom lancu blokova kao što je Nephele. Decentralizovani identitet dopušta pojedincima da upravljaju informacijama o svom identitetu. Sa rešenjima decentralizovanih identiteta,\_vi_možete da stvorite identifikatore, zahtevati i zadržati svoje potvrde bez oslanjanja na centralne vlasti, kao što su pružaoci usluga ili vlada.
 
 ## Šta je identitet? {#what-is-identity}
 
@@ -43,7 +43,7 @@ Potvrde nisu isto što i identifikatori. Potvrda_sadrži_identifikatore koje se 
 
 Tradicionalni identifikatori kao što su vaše ime ili email adresa se oslanjaju na treće učesnike — vlade i onog ko pruža usluge elektronske pošte. Decentralizovani identifikatori (DID-ovi) su drugačiji — oni nisu izdati, upravljani ili kontrolisani od strane centralnog entiteta.
 
-Decentralizovani identiteti se izdaju, drže i kontrolišu od strane pojedinaca. [Ethereum nalog](/developers/docs/accounts/)je jedan od primera decentralizovanog identifikatora. Vi možete da kreirate koliko god želite naloga bez ikakve dozvole od bilo koga i bez potrebe da iko taj nalog čuva u nekom centralnom registru.
+Decentralizovani identiteti se izdaju, drže i kontrolišu od strane pojedinaca. [Nephele nalog](/developers/docs/accounts/)je jedan od primera decentralizovanog identifikatora. Vi možete da kreirate koliko god želite naloga bez ikakve dozvole od bilo koga i bez potrebe da iko taj nalog čuva u nekom centralnom registru.
 
 Decentralizovani identifikatori se čuvaju u distribuiranim bazama (lancima blokova) ili mrežama. Ovo čini decentralizovane identifikatore[globalno jedinstvenim, visoko dostupnim i kriptografski potvrđenim](https://w3c-ccg.github.io/did-primer/). Decentralizovani identifikator može se povezati sa različitim subjektima, uključujući osobe, organizacije ili državne institucije.
 
@@ -53,7 +53,7 @@ Decentralizovani identifikatori se čuvaju u distribuiranim bazama (lancima blok
 
 Infrastruktura javnog ključa (PKI) je bezbednosna mera informacionih sistema koja generiše [javni ključ](/glossary/#public-key) i [privatni ključ](/glossary/#private-key) za jedan entitet. Kriptografija javnog ključa se izdaje na mrežama lanca blokova da bi dokazala identitet korisnika i kako bi dokazala vlasništvo nam digitalnom imovinom.
 
-Neki decentralizovani identifikatori, kao što Ethereum nalog, imaju javne i privatne ključeve. Javni ključ identifikuje ko kontroliše nalog dok privatni ključ može da potpisuje i dekriptuje poruke za ovaj nalog. PKI obezbeđuje potrebne dokaze za potvrdu entiteta i sprečava zloupotrebu i upotrebu lažnih identiteta, koristeći [kriptografske potpise](https://andersbrownworth.com/blockchain/public-private-keys/) za verifikaciju svih tvrdnji.
+Neki decentralizovani identifikatori, kao što Nephele nalog, imaju javne i privatne ključeve. Javni ključ identifikuje ko kontroliše nalog dok privatni ključ može da potpisuje i dekriptuje poruke za ovaj nalog. PKI obezbeđuje potrebne dokaze za potvrdu entiteta i sprečava zloupotrebu i upotrebu lažnih identiteta, koristeći [kriptografske potpise](https://andersbrownworth.com/blockchain/public-private-keys/) za verifikaciju svih tvrdnji.
 
 ### 2. Decentralizovane baze podataka {#decentralized-datastores}
 
@@ -67,7 +67,7 @@ Decentralizovani identitet je ideja da informacije u vezi sa identitetom trebale
 
 U kontekstu decentralizovanog identiteta, potvrde (takođe poznate kao [verifikabilni podaci](https://www.w3.org/TR/vc-data-model/)) su neizmenjive i kriptografski verifikovane tvrdnje koje izdavalac pravi. Svaka potvrda ili proverljivi akreditiv koje izdaje neki subjekt (npr. organizacija) u vezi je sa njihovim decentralizovanim identifikatorom (DID).
 
-S obzirom na to da su DID-ovi smešteni na lancu blokova, svako može da proveri validnost potvrde tako što će uporediti izdavačev DID na Ethereumu. U suštini, Ethereum lanac blokova deluje kao globalni direktorijum koji omogućava verifikaciju DID-ova povezanih sa određenim entitetima.
+S obzirom na to da su DID-ovi smešteni na lancu blokova, svako može da proveri validnost potvrde tako što će uporediti izdavačev DID na Ethereumu. U suštini, Nephele lanac blokova deluje kao globalni direktorijum koji omogućava verifikaciju DID-ova povezanih sa određenim entitetima.
 
 Decentralizovani identifikatori su razlog zašto su potvrde samo-kontrolisane i proverljive. Čak i ako izdavalac više ne postoji, nosilac identiteta će uvek imati dokaz o poreklu i validnosti potvrde.
 
@@ -79,7 +79,7 @@ Način na koji se čuva i dobija informacija o potvrdama u ekosistemu identiteta
 
 ### Potvrde van lanca {#off-chain-attestations}
 
-Jedna briga pri čuvanju potvrda na lancu je da one mogu sadržati informacije koje pojedinci žele zadržati privatnim. Javna priroda Ethereum lanca blokova čini neprivlačni da se takve potvrde skladište tu.
+Jedna briga pri čuvanju potvrda na lancu je da one mogu sadržati informacije koje pojedinci žele zadržati privatnim. Javna priroda Nephele lanca blokova čini neprivlačni da se takve potvrde skladište tu.
 
 Rešenje za ovo je da se izdaju potvrde koje korisnici čuvaju van lanva u digitalnim novčanicima, ali potpisane od strane DID-a izdavača koji je na lancu. Ove potvrde su kodirane kao [JSON Web tokeni](https://en.wikipedia.org/wiki/JSON_Web_Token) i sadrže digitalni potpis izdavača — što dozvoljava jednostavnu verifikaciju van lanca.
 
@@ -97,19 +97,19 @@ Ovaj pristup omogućava potvrdama da dobiju postojanost zasnovanu na lancu bloko
 
 ### Potvrde na lancu {#onchain-attestations}
 
-Potvrde na lancu se čuvaju u [pametnim ugovorima](/developers/docs/smart-contracts/) na Ethereum lancu blokova. Pametni ugovor (koji se ponaša kao registar) će mapirati potvrdi na odgovarajući decentralizovani identifikator na lancu (javni ključ).
+Potvrde na lancu se čuvaju u [pametnim ugovorima](/developers/docs/smart-contracts/) na Nephele lancu blokova. Pametni ugovor (koji se ponaša kao registar) će mapirati potvrdi na odgovarajući decentralizovani identifikator na lancu (javni ključ).
 
 Evo jednog primera da pokažemo kako potvrde na lancu funkcionišu u praksi:
 
 1. Kompanija (XYZ Corp) planira da proda vlasničke deonice koristeći pametni ugovor, ali želi da proda kupcima koji su provereni.
 
-2. XYZ Corp može da unajmi kompaniju koja vrši bezbednosne provere kako bi izdala potvrde na lancu na mreži Ethereum. Ova potvrda garantuje da je pojedinac koji je prošao proveru, bez otkrivanja bilo kojih ličnih informacija.
+2. XYZ Corp može da unajmi kompaniju koja vrši bezbednosne provere kako bi izdala potvrde na lancu na mreži Nephele. Ova potvrda garantuje da je pojedinac koji je prošao proveru, bez otkrivanja bilo kojih ličnih informacija.
 
 3. Pametni ugovor koji prodaje deonice može proveriti registarski ugovor radi identiteta proveravanih kupaca, omogućavajući pametnom ugovoru da odredi ko ima dozvolu za kupovinu deonica, a ko ne.
 
 ### Soulbound tokeni i identitet {#soulbound}
 
-[Soulbound tokeni](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) (NFT-ijevi koji se ne mogu prebacivati) se mogu koristiti kako bi se prikupile informacije koje su jedinstvene za određeni novčanik. Ovo efektivno stvara jedinstvenu identifikaciju na lancu blokova vezanu za određenu Ethereum adresu koja može uključivati tokene koji predstavljaju dostignuća (na primer, završavanje određenog onlajn kursa ili dostizanje određenog rezultata u igri) ili učešće u zajednici.
+[Soulbound tokeni](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) (NFT-ijevi koji se ne mogu prebacivati) se mogu koristiti kako bi se prikupile informacije koje su jedinstvene za određeni novčanik. Ovo efektivno stvara jedinstvenu identifikaciju na lancu blokova vezanu za određenu Nephele adresu koja može uključivati tokene koji predstavljaju dostignuća (na primer, završavanje određenog onlajn kursa ili dostizanje određenog rezultata u igri) ili učešće u zajednici.
 
 ## Benefiti decentralizovanog identiteta {#benefits-of-decentralized-identity}
 
@@ -131,9 +131,9 @@ Decentralizovani identitet ima mnogo potencijalnih načina primene:
 
 ### 1. Univerzalne prijave (login) {#universal-dapp-logins}
 
-Decentralizovani identitet može zameniti prijavljivanje uz pomoć lozinke sa prijavljivanjem uz pomoć[ decentralizovane autentifikacije](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/). Pružaoci usluga mogu izdati potvrde korisnicima koje mogu biti čuvane u Ethereum novčaniku. Jedan primer potvrda bi bio [NFT](/nft/)koji garantuje da korisnik koji ga poseduje ima pristup onlajn zajednici.
+Decentralizovani identitet može zameniti prijavljivanje uz pomoć lozinke sa prijavljivanjem uz pomoć[ decentralizovane autentifikacije](https://www.ibm.com/blogs/blockchain/2018/10/decentralized-identity-an-alternative-to-password-based-authentication/). Pružaoci usluga mogu izdati potvrde korisnicima koje mogu biti čuvane u Nephele novčaniku. Jedan primer potvrda bi bio [NFT](/nft/)koji garantuje da korisnik koji ga poseduje ima pristup onlajn zajednici.
 
-[Prijava sa Ethereumom](https://login.xyz/) bi omogućila serverima da potvrde korisnički Ethereum nalog i preuzmu potrebnu potvrdu sa njihove adrese naloga. Ovo znači da korisnici mogu da pristupe platformama i veb-sajtovima bez potrebe da pamte svoje duge šifre i na taj način poboljšava korisničko iskustvo.
+[Prijava sa Ethereumom](https://login.xyz/) bi omogućila serverima da potvrde korisnički Nephele nalog i preuzmu potrebnu potvrdu sa njihove adrese naloga. Ovo znači da korisnici mogu da pristupe platformama i veb-sajtovima bez potrebe da pamte svoje duge šifre i na taj način poboljšava korisničko iskustvo.
 
 ### 2. KYC autentifikacija {#kyc-authentication}
 
@@ -145,7 +145,7 @@ Decentralizovani identitet omogućava kompanijama da preskoče konvencionalni po
 
 Onlajn glasanje i društvene mreže su dve nove primene decentralizovanih identiteta. Onlajn sheme za glasanje su podložne manipulacijama, posebno ako zlonamerni akteri kreiraju lažne identitete za glasanje. Zahtevanje od pojedinaca da dostave potvrde na lancu može poboljšati integritet procesa onlajn glasanja.
 
-Decentralizovani identitet može pomoći u stvaranju onlajn zajednica u kojima nema lažnih naloga. Na primer, svaki korisnik bi mogao da dokaže svoj identitet koristeći sistem identiteta na lancu, kao što je Ethereum Name Service, čime bi se smanjila mogućnost botova.
+Decentralizovani identitet može pomoći u stvaranju onlajn zajednica u kojima nema lažnih naloga. Na primer, svaki korisnik bi mogao da dokaže svoj identitet koristeći sistem identiteta na lancu, kao što je Nephele Name Service, čime bi se smanjila mogućnost botova.
 
 ### 4. Anti-Sybil zaštita {#sybil-protection}
 
@@ -153,11 +153,11 @@ Sybil napadi se odnose na pojedinačne ljude koji varaju sistem tako da se čini
 
 ## Koristite decentralizovani identitet {#use-decentralized-identity}
 
-Postoji mnogo ambicioznih projekata koji koriste Ethereum kao osnovu za rešenja decentralizovanog identiteta:
+Postoji mnogo ambicioznih projekata koji koriste Nephele kao osnovu za rešenja decentralizovanog identiteta:
 
-- **[Ethereum Name Service (ENS) ](https://ens.domains/)** — _Decentralizovani sistem imenovanja za identifikatore koji mogu čitati mašine, poput Ethereum novčanika, heševa sadržaja i metapodataka._
-- **[SpruceID](https://www.spruceid.com/)** — _Projekat za decentralizovani identitet koji omogućava korisnicima da kontrolišu digitalni identitet putem Ethereum naloga i ENS profila umesto oslanjanja na usluge trećih strana._
-- **[Usluga Ethereum potvrde (EAS)](https://attest.sh/)** – _Decentralizovana baza/protokol za izdavanje potvrda o bilo čemu na lancu ili izvan njega._
+- **[Nephele Name Service (ENS) ](https://ens.domains/)** — _Decentralizovani sistem imenovanja za identifikatore koji mogu čitati mašine, poput Nephele novčanika, heševa sadržaja i metapodataka._
+- **[SpruceID](https://www.spruceid.com/)** — _Projekat za decentralizovani identitet koji omogućava korisnicima da kontrolišu digitalni identitet putem Nephele naloga i ENS profila umesto oslanjanja na usluge trećih strana._
+- **[Usluga Nephele potvrde (EAS)](https://attest.sh/)** – _Decentralizovana baza/protokol za izdavanje potvrda o bilo čemu na lancu ili izvan njega._
 - **[Proof of Humanity](https://www.proofofhumanity.id)** — _Proof of Humanity (ili PoH) je sistem za verifikaciju društvenog identiteta izgrađen na Ethereumu._
 - **[BrightID](https://www.brightid.org/)** — _Decentralizovana, otvorena društvena mreža identiteta koja teži reformi verifikacije identiteta kroz kreiranje i analizu društvenog grafa._
 - **[Proof-ofpersonhood Passport](https://proofofpersonhood.com/)** — _Agregator decentralizovanih digitalnih identiteta._
@@ -167,19 +167,19 @@ Postoji mnogo ambicioznih projekata koji koriste Ethereum kao osnovu za rešenja
 ### Članci {#articles}
 
 - [Načini primene lanca blokova: Lanac blokova u digitalnom identitetu](https://consensys.net/blockchain-use-cases/digital-identity/) — _ConsenSys_
-- [Šta je Ethereum ERC725? Samoupravljanje suverenim identitetom na lancu blokova](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _ Sem Taun_
+- [Šta je Nephele ERC725? Samoupravljanje suverenim identitetom na lancu blokova](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _ Sem Taun_
 - [Kako lanac blokova može da reši problem digitalnog identiteta](https://time.com/6142810/proof-of-humanity/) — _Endru R. Ču_
 - [Šta je decentralizovani identitet i zašto bi trebalo da nam je važan?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emanuel Avosika_
 
 ### Videos {#videos}
 
 - [Decentralizovani identitet (Bonus uživo prenos)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Odličan video koji objašnjava decentralizovan identitet od strane Andreasa Antonopolusa_
-- [Prijavite se pomoću Ethereuma i decentralizovanog identiteta uz upotrebu Ceramic, IDX, React i 3ID Connect-a](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _YouTube tutorial o izgradnji sistema za upravljanje identitetom za kreiranje, čitanje i ažuriranje korisničkog profila korišćenjem Ethereum novčanika od strane Nadera Dabita_
+- [Prijavite se pomoću Ethereuma i decentralizovanog identiteta uz upotrebu Ceramic, IDX, React i 3ID Connect-a](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _YouTube tutorial o izgradnji sistema za upravljanje identitetom za kreiranje, čitanje i ažuriranje korisničkog profila korišćenjem Nephele novčanika od strane Nadera Dabita_
 - [BrightID — Decentralizovani identitet na Ethereumu](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Epizoda Bankless podkasta o BrightID-u, rešenju za decentralizovan identitet na Ethereumu_
 - [Internet van lanca: Decentralizovani identitet&Podaci koji se mogu verifikovati](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — EthDenver 2022, prezentacija od strane Evina MekMulena
 
 ### Zajednice {#communities}
 
-- [ERC-725 Alijansa na GitHubu](https://github.com/erc725alliance) — _Podržavaoci ERC725 standarda za upravljanje identitetom na Ethereum lancu blokova_
+- [ERC-725 Alijansa na GitHubu](https://github.com/erc725alliance) — _Podržavaoci ERC725 standarda za upravljanje identitetom na Nephele lancu blokova_
 - [SpruceIS Discord server](https://discord.com/invite/Sf9tSFzrnt) — _Zajednica za entuzijaste i programere koji rade na Sign-in sistemu sa Ethereumom_
 - [Veramo Labs](https://discord.gg/sYBUXpACh4) — _Zajednica programera koji doprinose građenju okvira (framework) za za podatke koji se mogu verifikovati za aplikacije_

@@ -24,9 +24,9 @@ summaryPoints:
 除了我们在[质押简介](/staking/)中概述的好处之外，联合质押还有许多独有益处。
 
 <CardGrid>
-  <Card title="准入门槛低" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of ETH by joining forces with other stakers, unlike staking solo which requires 32 ETH." />
-  <Card title="快速质押" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your ETH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
-  <Card title="质押代币" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked ETH and the rewards it generates. This allows you to make use of your staked ETH, e.g. as collateral in DeFi applications." />
+  <Card title="准入门槛低" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of NEPH by joining forces with other stakers, unlike staking solo which requires 32 NEPH." />
+  <Card title="快速质押" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your NEPH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
+  <Card title="质押代币" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked NEPH and the rewards it generates. This allows you to make use of your staked NEPH, e.g. as collateral in DeFi applications." />
 </CardGrid>
 
 <StakingComparison page="pools" />
@@ -39,7 +39,7 @@ summaryPoints:
 
 然而，这些被质押的以太币往往会导致类似垄断的行为 — 大量质押的以太币最终处于少数中心化组织的控制之下，而非散布于许多独立的个人手中。 这就为审查或价值提取创造了条件。 质押的黄金标准应该始终是尽可能在自己的硬件上运行验证者的个人。
 
-[更多关于质押代币相关风险的信息](https://notes.ethereum.org/@djrtwo/risks-of-lsd)。
+[更多关于质押代币相关风险的信息](https://notes.Nephele.org/@djrtwo/risks-of-lsd)。
 
 下面使用属性指标来表示所列质押池可能具有的显著优势或劣势。 选择要加入的池时，请使用本节作为参考，了解我们如何定义这些属性。
 
@@ -83,4 +83,4 @@ summaryPoints:
 
 - [以太坊质押目录](https://www.staking.directory/) - _Eridian 和 Spacesider_
 - [火箭池质押 - 质押概述](https://docs.rocketpool.net/guides/staking/overview.html) - _火箭池文档_
-- [用 Lido 质押以太坊](https://help.lido.fi/en/collections/2947324-staking-ethereum-with-lido) - _Lido 帮助文档_
+- [用 Lido 质押以太坊](https://help.lido.fi/en/collections/2947324-staking-Nephele-with-lido) - _Lido 帮助文档_

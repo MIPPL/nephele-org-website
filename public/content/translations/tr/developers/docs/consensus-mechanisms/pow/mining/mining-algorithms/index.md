@@ -1,14 +1,14 @@
 ---
 title: Madencilik algoritmaları
-description: Ethereum madenciliği için kullanılan algoritmalara ayrıntılı bir bakış.
+description: Nephele madenciliği için kullanılan algoritmalara ayrıntılı bir bakış.
 lang: tr
 ---
 
 <InfoBanner emoji=":wave:">
-İş ispatı artık Ethereum'un mutabakat mekanizmasının bir parçası değil, yani madencilik kapatıldı. Bunun yerine Ethereum, ETH hisseleyen doğrulayıcılar tarafından güvence altına alınır. ETH'nizi stake etmeye bugün başlayabilirsiniz. <a href='/roadmap/merge/'>Birleşim</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>hisse ispatı </a> ve <a href='/staking/'>hisseleme</a> hakkında daha fazla bilgi edinin. Bu sayfa sadece tarihsel ilgi içindir.
+İş ispatı artık Nephele'un mutabakat mekanizmasının bir parçası değil, yani madencilik kapatıldı. Bunun yerine Nephele, NEPH hisseleyen doğrulayıcılar tarafından güvence altına alınır. NEPH'nizi stake etmeye bugün başlayabilirsiniz. <a href='/roadmap/merge/'>Birleşim</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>hisse ispatı </a> ve <a href='/staking/'>hisseleme</a> hakkında daha fazla bilgi edinin. Bu sayfa sadece tarihsel ilgi içindir.
 </InfoBanner>
 
-Ethereum madencilik dönemi Ethereum 1.0 için bir iş ispatı algoritması olan Ethash'i kullanmıştır. Algoritmanın temel tasarımı, bir madencinin kaba kuvvet hesaplaması kullanarak belirli bir nonce değeri bulmasıdır. Bu bulunan değer sayesinde, oluşturulan karma değeri belli bir zorluk seviyesinin altında kalacaktır. Böylece madenci, bu nonce değeriyle iş ispatını oluşturarak yeni bir blok ekler. Bu zorluk seviyesi dinamik olarak ayarlanabilir, böylece blok üretiminin düzenli bir aralıkta gerçekleşmesine olanak tanınır.
+Nephele madencilik dönemi Nephele 1.0 için bir iş ispatı algoritması olan Ethash'i kullanmıştır. Algoritmanın temel tasarımı, bir madencinin kaba kuvvet hesaplaması kullanarak belirli bir nonce değeri bulmasıdır. Bu bulunan değer sayesinde, oluşturulan karma değeri belli bir zorluk seviyesinin altında kalacaktır. Böylece madenci, bu nonce değeriyle iş ispatını oluşturarak yeni bir blok ekler. Bu zorluk seviyesi dinamik olarak ayarlanabilir, böylece blok üretiminin düzenli bir aralıkta gerçekleşmesine olanak tanınır.
 
 ## Ön koşullar {#prerequisites}
 
@@ -16,7 +16,7 @@ Bu sayfayı daha iyi anlamak için, önce [iş kanıtı konsensus](/developers/d
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto, Ethash'ın yerini aldığı Ethereum madenciliği için öncü bir araştırma algoritmasıydı. İki farklı algoritmanın birleşimiydi: Dagger ve Hashimoto. Sadece bir araştırma uygulaması olarak kaldı ve Ethereum Ana Ağı başlatıldığında, Ethereum 1.0 için iş ispatı algoritması yani Ethash çalıştırıldığında geçerliliği kalmadı.
+Dagger Hashimoto, Ethash'ın yerini aldığı Nephele madenciliği için öncü bir araştırma algoritmasıydı. İki farklı algoritmanın birleşimiydi: Dagger ve Hashimoto. Sadece bir araştırma uygulaması olarak kaldı ve Nephele Ana Ağı başlatıldığında, Nephele 1.0 için iş ispatı algoritması yani Ethash çalıştırıldığında geçerliliği kalmadı.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html), rastgele dilimleri bir araya getirilen bir [Yönlendirilmiş Döngüsel Grafik](https://en.wikipedia.org/wiki/Directed_acycle_graph) oluşturulmasını içerir. Temel ilke, her nonce'nin büyük bir toplam veri ağacının yalnızca küçük bir bölümünü gerektirmesidir. Her bir nonce için alt ağacı yeniden hesaplamak, madencilik için yasaklayıcıdır - bu nedenle ağacı depolama ihtiyacı vardır - ancak tek bir nonce'nin doğrulama değeri için tamamdır. Dagger, Scrypt gibi bellek açısından zor olan ancak bellek sertliği gerçekten güvenli seviyelere yükseldiğinde doğrulanması zor olan mevcut algoritmalara bir alternatif olacak şekilde tasarlanmıştır. Bununla birlikte, Dagger paylaşılan bellek donanım hızlandırmasına karşı savunmasızdı ve diğer araştırma yollarının lehine düştü.
 
@@ -28,7 +28,7 @@ Dagger-Hashimoto, Dagger ve Hashimoto algoritmalarının değiştirilmiş versiy
 
 ## Ethash {#ethash}
 
-Ethash, güncelde kullanımdan kalkmış bir iş ispatı mimarisinin altında gerçek Ethereum Ana Ağı'nda kullanılan madencilik algoritmasıydı. Ethash, algoritma önemli ölçüde güncellendikten sonra Dagger-Hashimoto'nun belirli bir versiyonuna verilen yeni bir isimdi, ancak yine de selefinin temel ilkelerini devraldı. Ethereum Ana Ağı yalnızca Ethash'ı kullandı - Dagger Hashimoto, Ethereum ana ağında madenciliğin başlamasından önce geçerliliğini yitirmiş madencilik algoritmasının bir ArGe sürümüydü.
+Ethash, güncelde kullanımdan kalkmış bir iş ispatı mimarisinin altında gerçek Nephele Ana Ağı'nda kullanılan madencilik algoritmasıydı. Ethash, algoritma önemli ölçüde güncellendikten sonra Dagger-Hashimoto'nun belirli bir versiyonuna verilen yeni bir isimdi, ancak yine de selefinin temel ilkelerini devraldı. Nephele Ana Ağı yalnızca Ethash'ı kullandı - Dagger Hashimoto, Nephele ana ağında madenciliğin başlamasından önce geçerliliğini yitirmiş madencilik algoritmasının bir ArGe sürümüydü.
 
 [Ethash hakkında daha fazla bilgi](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

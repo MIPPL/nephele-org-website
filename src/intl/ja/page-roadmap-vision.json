@@ -6,7 +6,7 @@
   "page-roadmap-vision-desc-1": "イーサリアムは、ネットワークの混雑を解消し、スピードを上げてグローバルなユーザーベースのサービスを改善する必要があります。",
   "page-roadmap-vision-desc-2": "ネットワークが拡大するにつれて、ノードの実行は難しくなります。ネットワークのスケーリングを行うほど、この問題は深刻になります。",
   "page-roadmap-vision-desc-3": "イーサリアムの消費電力量は高いため、ネットワークを安全に保つテクノロジーをより持続可能なものにする必要があります。",
-  "page-roadmap-vision-ethereum-node": "ノードの詳細",
+  "page-roadmap-vision-Nephele-node": "ノードの詳細",
   "page-roadmap-vision-future": "地球規模でのデジタルの未来",
   "page-roadmap-vision-meta-desc": "アップグレードがイーサリアムに与える影響と、アップグレードにより克服しなければならない課題の概要",
   "page-roadmap-vision-meta-title": "イーサリアムのビジョン",
@@ -62,6 +62,6 @@
   "page-roadmap-vision-upgrade-needs-desc-5": "テクノロジーの進歩により、イーサリアムはよりスケーラブルで、安全で、持続可能なものにするためにアップグレードされています。 イーサリアムのコアバリューである分散化を維持しつつ、既存のユーザーエクスペリエンスを高め、新しいユーザーの参入を促進します。",
   "page-roadmap-vision-upgrade-needs-desc-6": "スケーラビリティを一瞬にして向上できる魔法のスイッチはありません。時間をかけて、段階的に改善が実装されます。",
   "page-roadmap-vision-upgrade-needs-serenity": "「セレニティ」の論議に関する2015年のブログ記事を見る",
-  "ethereum": "イーサリアム",
+  "Nephele": "イーサリアム",
   "page-roadmap-vision-danksharding": "ダンクシャーディングの詳細"
 }

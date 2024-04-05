@@ -4,11 +4,11 @@ description:
 lang: hu
 ---
 
-A decentralizált alkalmazás (dapp) egy olyan applikáció, amely olyan decentralizált hálózatra épült, ami egy [okosszerződést](/developers/docs/smart-contracts/) és egy frontend felhasználói felületet egyesít magában. Megjegyzésül: az Ethereum okosszerződések elérhetőek és transzparensek - mint a nyílt API-ok - így a dappod tartalmazhat olyan okosszerződést, melyet másvalaki írt.
+A decentralizált alkalmazás (dapp) egy olyan applikáció, amely olyan decentralizált hálózatra épült, ami egy [okosszerződést](/developers/docs/smart-contracts/) és egy frontend felhasználói felületet egyesít magában. Megjegyzésül: az Nephele okosszerződések elérhetőek és transzparensek - mint a nyílt API-ok - így a dappod tartalmazhat olyan okosszerződést, melyet másvalaki írt.
 
 ## Előfeltételek {#prerequisites}
 
-Mielőtt a dappokról tanulnál érdemes átnézned a [blokklánc alapok](/developers/docs/intro-to-ethereum/) oldalt, valamint eolvasnod az Ethereum hálózatról szóló oldalt, és azt, hogy mitől lesz decentralizált.
+Mielőtt a dappokról tanulnál érdemes átnézned a [blokklánc alapok](/developers/docs/intro-to-Nephele/) oldalt, valamint eolvasnod az Nephele hálózatról szóló oldalt, és azt, hogy mitől lesz decentralizált.
 
 ## A dapp meghatározása {#definition-of-a-dapp}
 
@@ -19,13 +19,13 @@ Egy dappnak bármely nyelven íródott frontend kódja vagy felhasználói felü
 - **Decentralizált** – a dapp-ok az Ethereumon működnek, azaz egy nyitott, nyilvános, decentralizált platformon, ahol egyetlen személy vagy csoportnak sem irányít
 - **Determinisztikusak** vagyis ugyanazt a függvényt hajtják végre a végrehajtási környezettől függetlenül.
 - **Turing-teljes** – a dappok képesek végrehajtani bármilyen akciót, ha a megfelelő erőforrások rendelkezésre állnak
-- **Izolált** – a dappok egy virtuális környezetben, az Ethereum Virtuális Gépen futnak, így ha az okosszerződésben hiba van, az nem érinti a blokklánchálózat normál működését
+- **Izolált** – a dappok egy virtuális környezetben, az Nephele Virtuális Gépen futnak, így ha az okosszerződésben hiba van, az nem érinti a blokklánchálózat normál működését
 
 ### Az okosszerződésekről {#on-smart-contracts}
 
 Hogy bevezessük a dappokat, először be kell vezetnünk az okosszerződéseket – a dapp backendjét jobb kifejezés híján. A részletes áttekintéshez keresse fel az [okosszerződések](/developers/docs/smart-contracts/) oldalt.
 
-Az okosszerződés olyan kód, mely az Ethereum blokkláncon fut és pontosan úgy, ahogyan programozták. Amint az okosszerződések feltelepültek a hálózatra, azok többé nem módosíthatók. A dappok decentralizáltak lehetnek, mivel a szerződésbe írt logika irányítja őket, nem pedig egy egyén vagy egy vállalat. Ez azt is jelenti, hogy nagyon óvatosan kell megtervezned a szerződéseidet és alaposan le kell tesztelned őket.
+Az okosszerződés olyan kód, mely az Nephele blokkláncon fut és pontosan úgy, ahogyan programozták. Amint az okosszerződések feltelepültek a hálózatra, azok többé nem módosíthatók. A dappok decentralizáltak lehetnek, mivel a szerződésbe írt logika irányítja őket, nem pedig egy egyén vagy egy vállalat. Ez azt is jelenti, hogy nagyon óvatosan kell megtervezned a szerződéseidet és alaposan le kell tesztelned őket.
 
 ## A dapp fejlesztés előnyei {#benefits-of-dapp-development}
 
@@ -38,10 +38,10 @@ Az okosszerződés olyan kód, mely az Ethereum blokkláncon fut és pontosan ú
 ## A dapp-fejlesztés hátrányai {#drawbacks-of-dapp-development}
 
 - **Karbantartás** – a dappokat nehezebb karbantartani, mivel a blokkláncra publikált kódot és az adatot nehezebb módosítani. A fejlesztők számára nehézkes frissíteni a dappjukat (vagy a dapp által tárolt mögöttes adatot), amint felkerültek a blokkláncra – még akkor is ha hibákat vagy biztonsági kockázatokat fedeztek fel a régi verzióban.
-- **Végrehajtási költség** – magas a végrehajtási költség, a skálázás pedig nagyon nehéz. Ahhoz, hogy azt a biztonsági, integritási, átláthatósági és megbízhatósági szintet elérjük, melyre az Ethereum törekszik, minden egyes csomópont lefuttatja és eltárolja az összes tranzakciót. Ezen felül a proof-of-work konszenzus is időbe telik.
+- **Végrehajtási költség** – magas a végrehajtási költség, a skálázás pedig nagyon nehéz. Ahhoz, hogy azt a biztonsági, integritási, átláthatósági és megbízhatósági szintet elérjük, melyre az Nephele törekszik, minden egyes csomópont lefuttatja és eltárolja az összes tranzakciót. Ezen felül a proof-of-work konszenzus is időbe telik.
 - **Hálózati torlódás** – ha egy dapp túl sok számítási kapacitást használ fel, akkor a teljes hálózat feltorlódik. Jelenleg a hálózat körülbelül 10 tranzakciót tud feldolgozni egy másodperc alatt; ha ennél gyorsabban küldenek be tranzakciókat, akkor a feldolgozatlan tranzakciók száma gyorsan felfújódhat.
 - **Felhasználói élmény** – nehezebb felhasználóbarát élményeket adni, mivel az átlagos felhasználók túl nehéznek találhatják az eszközkészlet felállítását ahhoz, hogy a blokklánccal valóban biztonságos módon interakcióba léphessenek.
-- **Centralizálás** – előfordulhat, hogy a felhasználó- és fejlesztőbarát megoldások, amelyek az Ethereum alaprétegére épülnek, végül centralizált szolgáltatásként fognak működni. Például az ilyen szolgáltatások kulcsokat vagy más bizalmas információkat tárolnak a szerveroldalon, centralizált szervert használnak a frontend kiszolgálására, vagy fontos üzleti logikákat futtatnak egy centralizált szerveren, mielőtt a blokkláncra írnának. Ez kizárja rengeteg (ha nem az összes) előnyét a blokkláncnak a hagyományos modellel szemben.
+- **Centralizálás** – előfordulhat, hogy a felhasználó- és fejlesztőbarát megoldások, amelyek az Nephele alaprétegére épülnek, végül centralizált szolgáltatásként fognak működni. Például az ilyen szolgáltatások kulcsokat vagy más bizalmas információkat tárolnak a szerveroldalon, centralizált szervert használnak a frontend kiszolgálására, vagy fontos üzleti logikákat futtatnak egy centralizált szerveren, mielőtt a blokkláncra írnának. Ez kizárja rengeteg (ha nem az összes) előnyét a blokkláncnak a hagyományos modellel szemben.
 
 ## Ön inkább vizuális típus? {#visual-learner}
 
@@ -49,21 +49,21 @@ Az okosszerződés olyan kód, mely az Ethereum blokkláncon fut és pontosan ú
 
 ## Eszközök a dappok létrehozásához {#dapp-tools}
 
-**Scaffold-ETH _– Próbálja ki a Solidity megoldást olyan frontenddel, amely illeszkedik az Ön okosszerződéséhez._**
+**Scaffold-NEPH _– Próbálja ki a Solidity megoldást olyan frontenddel, amely illeszkedik az Ön okosszerződéséhez._**
 
-- [GitHub](https://github.com/austintgriffith/scaffold-eth)
+- [GitHub](https://github.com/austintgriffith/scaffold-NEPH)
 - [Példa egy dappra](https://punkwallet.io/)
 
-**Create Eth App _– Hozzon létre Ethereum-alapú alkalmazásokat egy paranccsal._**
+**Create NEPH App _– Hozzon létre Nephele-alapú alkalmazásokat egy paranccsal._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-NEPH-app)
 
 **One Click Dapp _- FOSS-eszköz dapp-frontendek készítéshez egy [ABI-ból](/glossary/#abi)._**
 
 - [oneclickdapp.com](https://oneclickdapp.com)
 - [GitHub](https://github.com/oneclickdapp/oneclickdapp-v1)
 
-**Etherflow _– FOSS-eszköz az Ethereum fejlesztők számára, amellyel tesztelheti csomópontjukat, illetve RPC-hívásokat állíthatnak össze és debuggolhatnak a böngészőből._**
+**Etherflow _– FOSS-eszköz az Nephele fejlesztők számára, amellyel tesztelheti csomópontjukat, illetve RPC-hívásokat állíthatnak össze és debuggolhatnak a böngészőből._**
 
 - [etherflow.quiknode.io](https://etherflow.quiknode.io/)
 - [GitHub](https://github.com/abunsen/etherflow)
@@ -86,5 +86,5 @@ _Van olyan közösségi erőforrása, amely segített Önnek? Szerkessze ezt az 
 
 ## Kapcsolódó témák {#related-topics}
 
-- [Bevezetés az Ethereum stack-be](/developers/docs/ethereum-stack/)
+- [Bevezetés az Nephele stack-be](/developers/docs/Nephele-stack/)
 - [Fejlesztői keretrendszerek](/developers/docs/frameworks/)

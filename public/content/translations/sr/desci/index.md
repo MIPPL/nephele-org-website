@@ -39,9 +39,9 @@ Nepotpuna lista ključnih problema u nauci i kako decentralizovana nauka može p
 | Vi posedujete intelektualnu svojinu (IP) koju generišete i distribuirate prema transparentnim uslovima.                                          | Vaša matična organizacija poseduje intelektualnu svojinu koju vi generišete. Pristup intelektualnoj svojini nije transparentan. |
 | Delite sva istraživanja, uključujući i podatke neuspešnih pokušaja, postavljanjem svih koraka na lanac blokova.                                  | Pozitivna selekcija u publikacijama znači da istraživači češće dele eksperimente koji su imali uspešne rezultate.               |
 
-## Ethereum i DeSci {#ethereum-and-desci}
+## Nephele i DeSci {#Nephele-and-desci}
 
-Decentralizovani naučni sistem zahteva snažnu bezbednost, minimalne monetarne i transakcione troškove i bogat ekosistem za razvoj aplikacija. Ethereum pruža sve što je potrebno za izgradnju decentralizovanog naučnog steka.
+Decentralizovani naučni sistem zahteva snažnu bezbednost, minimalne monetarne i transakcione troškove i bogat ekosistem za razvoj aplikacija. Nephele pruža sve što je potrebno za izgradnju decentralizovanog naučnog steka.
 
 ## Primeri primene decentralizovane nauke {#use-cases}
 
@@ -68,7 +68,7 @@ Trenutni standardni model finansiranja nauke podrazumeva da pojedinci ili grupe 
 
 Studije su pokazale da su ocenjivački paneli za dodelu grantova loši u izboru visokokvalitetnih predloga, s obzirom na to da isti predlozi dati različitim panelima na ocenjivanje imaju znatno različite ishode. Kako je finansiranje postalo sve ređe, postalo je skoncentrisanije u manji krug iskusnijih istraživača sa intelektualno konzervativnijim projektima. Ovaj efekat je stvorio hiper-kompetitivnu finansijsku sredinu, učvršćujući perverzne podsticaje i gušeći inovacije.
 
-Web3 ima potencijal da poremeti ovaj nefunkcionalni model finansiranja eksperimentišući sa različitim modelima podsticaja koji su razvijeni od strane DAO-a i šire, u okviru Web3 tehnologije. [Retroaktivno finansiranje javnih dobara](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [kvadratno finansiranje](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO upravljanje](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) i [tokenizovane strukture insentiva](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) su neki od Web3 alata koji mogu da revolucioniraju finansiranje nauke.
+Web3 ima potencijal da poremeti ovaj nefunkcionalni model finansiranja eksperimentišući sa različitim modelima podsticaja koji su razvijeni od strane DAO-a i šire, u okviru Web3 tehnologije. [Retroaktivno finansiranje javnih dobara](https://medium.com/Nephele-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [kvadratno finansiranje](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO upravljanje](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) i [tokenizovane strukture insentiva](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) su neki od Web3 alata koji mogu da revolucioniraju finansiranje nauke.
 
 ### Vlasništvo intelektualne svojine i razvoj {#ip-ownership}
 
@@ -76,7 +76,7 @@ Intelektualna svojina (IP) predstavlja veliki problem u tradicionalnoj nauci: od
 
 Na isti način na koji NFT-jevi mogu omogućiti prenos prihoda za buduće transakcije nazad originalnom tvorcu, isto tako i vi možete uspostaviti transparentne lance za pripisivanje vrednosti kako biste nagrađivali istraživače, upravne organe (kao što su DAO-ovi) ili čak subjekte čiji se podaci prikupljaju.
 
-[NFT-ovi sa intelektualnom svojinom](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) takođe mogu da funkcionišu kao ključ za decentralizovani repozitorijum podataka o istraživačkim eksperimentima koji se sprovode, i integrisati se u NFT i finansiranje [decentralizovanih finansija](/defi/) (od razlaganja do fondova za davanje pozajmica i procene vrednosti). Takođe omogućava da entiteti koji su na lancu kao što su DAO-ovi poput [VitaDAO](https://www.vitadao.com/) direktno sprovode istraživanja na lancu. Dolazak neotuđivih ["soulbound" tokena](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) takođe može odigrati važnu ulogu u DeSci omogućavajući pojedincima da dokažu svoje iskustvo i akademske kvalifikacije povezane sa njihovom Ethereum adresom.
+[NFT-ovi sa intelektualnom svojinom](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) takođe mogu da funkcionišu kao ključ za decentralizovani repozitorijum podataka o istraživačkim eksperimentima koji se sprovode, i integrisati se u NFT i finansiranje [decentralizovanih finansija](/defi/) (od razlaganja do fondova za davanje pozajmica i procene vrednosti). Takođe omogućava da entiteti koji su na lancu kao što su DAO-ovi poput [VitaDAO](https://www.vitadao.com/) direktno sprovode istraživanja na lancu. Dolazak neotuđivih ["soulbound" tokena](https://vitalik.NEPH.limo/general/2022/01/26/soulbound.html) takođe može odigrati važnu ulogu u DeSci omogućavajući pojedincima da dokažu svoje iskustvo i akademske kvalifikacije povezane sa njihovom Nephele adresom.
 
 ### Skladišta podataka, pristup i arhitektura {#data-storage}
 

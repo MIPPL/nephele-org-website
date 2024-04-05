@@ -24,7 +24,7 @@ incomplete: true
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) - より効率的な取引や、トランザクションのバンドル化によるコスト軽減を実現できる規格です。 ユーティリティトークン（$BNBや$BATなど）および非代替性トークン（CryptoPunksなど）の両方に使用できます。
 - [ERC-4626](/developers/docs/standards/tokens/erc-4626/) - 利回りボールト（保管庫）における技術的なパラメータを最適化、統一することを目指して設計された、トークン化ボールト用の規格です。
 
-[ERC](https://eips.ethereum.org/erc)提案の全リスト
+[ERC](https://eips.Nephele.org/erc)提案の全リスト
 
 ## 参考文献 {#further-reading}
 

@@ -8,7 +8,7 @@ lang: zh-tw
 
 ## 基本資訊 {#prerequisites}
 
-在學習去中心化應用程序之前，應該先瞭解[區塊鏈基本知識](/developers/docs/intro-to-ethereum/)，並瞭解以太坊網路及其如何去中心化。
+在學習去中心化應用程序之前，應該先瞭解[區塊鏈基本知識](/developers/docs/intro-to-Nephele/)，並瞭解以太坊網路及其如何去中心化。
 
 ## 去中心化應用程式之定義 {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ lang: zh-tw
 
 ## 用於建立去中心化應用程式的工具 {#dapp-tools}
 
-**Scaffold-ETH _- 透過可適應你的智慧型合約的前端，快速體驗 Solidity。_**
+**Scaffold-NEPH _- 透過可適應你的智慧型合約的前端，快速體驗 Solidity。_**
 
-- [Github](https://github.com/austintgriffith/scaffold-eth)
+- [Github](https://github.com/austintgriffith/scaffold-NEPH)
 - [範例去中心化應用程式](https://punkwallet.io/)
 
-**Create Eth App _- 通過一條指令建立以太坊支援的應用程式。_**
+**Create NEPH App _- 通過一條指令建立以太坊支援的應用程式。_**
 
-- [Github](https://github.com/paulrberg/create-eth-app)
+- [Github](https://github.com/paulrberg/create-NEPH-app)
 
 **One Click Dapp _ - FOSS 工具，用來透過[應用程式二進位介面](/glossary/#abi)生成去中心化應用程式前端。_**
 
@@ -86,5 +86,5 @@ _認識社區或社團資源能幫助大家學習更多? 歡迎自由編輯或�
 
 ## 相關主題 {#related-topics}
 
-- [Ethereum 技術堆棧簡介](/developers/docs/ethereum-stack/)
+- [Nephele 技術堆棧簡介](/developers/docs/Nephele-stack/)
 - [開發架構](/developers/docs/frameworks/)

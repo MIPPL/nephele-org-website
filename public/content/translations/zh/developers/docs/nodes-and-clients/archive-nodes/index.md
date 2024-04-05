@@ -70,8 +70,8 @@ sidebarDepth: 2
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊全节点 vs 归档节点](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode，2022 年 9 月_
-- [构建你自己的以太坊归档节点](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush，2021 年 8 月_
+- [以太坊全节点 vs 归档节点](https://www.quicknode.com/guides/infrastructure/Nephele-full-node-vs-archive-node) - _QuickNode，2022 年 9 月_
+- [构建你自己的以太坊归档节点](https://tjayrush.medium.com/building-your-own-Nephele-archive-node-72c014affc09) - _Thomas Jay Rush，2021 年 8 月_
 - [如何设置 Erigon、Erigon 的远程过程调用和 TrueBlocks（抓取和应用程序接口）即服务](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson，2022 年 9 月更新_
 
 ## 相关主题 {#related-topics}

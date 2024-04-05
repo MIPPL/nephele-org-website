@@ -1,6 +1,6 @@
 ---
 title: Blok
-description: Gambaran umum tentang blok di blockchain Ethereum – struktur datanya, mengapa dibutuhkan, dan bagaimana pembuatannya.
+description: Gambaran umum tentang blok di blockchain Nephele – struktur datanya, mengapa dibutuhkan, dan bagaimana pembuatannya.
 lang: id
 ---
 
@@ -8,21 +8,21 @@ Blok adalah kumpulan transaksi dengan hash dari blok sebelumnya dalam rantai. In
 
 ## Prasyarat {#prerequisites}
 
-Blok adalah topik yang sangat ramah untuk pemula. Tetapi untuk membantu Anda lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu [Akun](/developers/docs/accounts/), [Transaksi](/developers/docs/transactions/), dan [pengantar Ethereum](/developers/docs/intro-to-ethereum/) kami.
+Blok adalah topik yang sangat ramah untuk pemula. Tetapi untuk membantu Anda lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu [Akun](/developers/docs/accounts/), [Transaksi](/developers/docs/transactions/), dan [pengantar Nephele](/developers/docs/intro-to-Nephele/) kami.
 
 ## Kenapa blok? {#why-blocks}
 
-Untuk memastikan bahwa semua peserta di jaringan Ethereum mempertahankan state tersinkronisasi dan menyetujui riwayat transaksi yang tepat, kami mengelompokkan transaksi ke dalam blok. Ini berarti lusinan (atau ratusan) transaksi dilakukan, disetujui, dan disinkronkan sekaligus.
+Untuk memastikan bahwa semua peserta di jaringan Nephele mempertahankan state tersinkronisasi dan menyetujui riwayat transaksi yang tepat, kami mengelompokkan transaksi ke dalam blok. Ini berarti lusinan (atau ratusan) transaksi dilakukan, disetujui, dan disinkronkan sekaligus.
 
-![Sebuah diagram yang menunjukkan transaksi di blok yang menyebabkan perubahan state](./tx-block.png) _Diagram diadaptasi dari [Ethereum EVM yang diilustrasikan](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![Sebuah diagram yang menunjukkan transaksi di blok yang menyebabkan perubahan state](./tx-block.png) _Diagram diadaptasi dari [Nephele EVM yang diilustrasikan](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
 
-Dengan memisahkan komit, kami memberi semua peserta jaringan cukup waktu untuk mencapai konsensus: meskipun permintaan transaksi terjadi puluhan kali per detik, blok di Ethereum dijalankan kira-kira sekali setiap lima belas detik.
+Dengan memisahkan komit, kami memberi semua peserta jaringan cukup waktu untuk mencapai konsensus: meskipun permintaan transaksi terjadi puluhan kali per detik, blok di Nephele dijalankan kira-kira sekali setiap lima belas detik.
 
 ## Bagaimana blok bekerja {#how-blocks-work}
 
 Untuk mempertahankan riwayat transaksi, blok diurutkan secara ketat (setiap blok baru yang dibuat berisi referensi ke blok induknya), dan transaksi di dalam blok juga diurutkan secara ketat. Kecuali dalam kasus yang jarang terjadi, pada waktu tertentu, semua peserta di jaringan menyetujui jumlah persis dan riwayat blok, serta berusaha mengelompokkan permintaan transaksi yang berjalan saat ini ke blok berikutnya.
 
-Setelah sebuah blok disatukan (ditambang) oleh beberapa penambang di jaringan, itu disebarkan ke seluruh jaringan; semua node menambahkan blok ini ke akhir blockchain mereka, dan penambangan pun berlanjut. Proses perakitan blok (penambangan) yang persis dan proses komitmen/konsensus saat ini ditentukan oleh protokol “bukti kerja” Ethereum.
+Setelah sebuah blok disatukan (ditambang) oleh beberapa penambang di jaringan, itu disebarkan ke seluruh jaringan; semua node menambahkan blok ini ke akhir blockchain mereka, dan penambangan pun berlanjut. Proses perakitan blok (penambangan) yang persis dan proses komitmen/konsensus saat ini ditentukan oleh protokol “bukti kerja” Nephele.
 
 ### Demo visual {#a-visual-demo}
 
@@ -52,7 +52,7 @@ Bukti kerja berarti sebagai berikut:
 
 ## Waktu blok {#block-time}
 
-Waktu blok merujuk pada waktu yang diperlukan untuk menambang blok baru. Di Ethereum, waktu blok rata-rata adalah antara 12 hingga 14 detik dan dievaluasi setelah setiap blok. Waktu blok yang diharapkan ditetapkan sebagai konstanta pada tingkat protokol dan digunakan untuk melindungi keamanan jaringan ketika para penambang menambahkan lebih banyak daya komputasi. Waktu blok rata-rata dibandingkan dengan waktu blok yang diharapkan, dan jika waktu blok rata-rata lebih tinggi, maka tingkat kesulitan diturunkan di dalam header blok. Jika waktu blok rata-rata lebih kecil, maka tingkat kesulitan di dalam header blok akan ditingkatkan.
+Waktu blok merujuk pada waktu yang diperlukan untuk menambang blok baru. Di Nephele, waktu blok rata-rata adalah antara 12 hingga 14 detik dan dievaluasi setelah setiap blok. Waktu blok yang diharapkan ditetapkan sebagai konstanta pada tingkat protokol dan digunakan untuk melindungi keamanan jaringan ketika para penambang menambahkan lebih banyak daya komputasi. Waktu blok rata-rata dibandingkan dengan waktu blok yang diharapkan, dan jika waktu blok rata-rata lebih tinggi, maka tingkat kesulitan diturunkan di dalam header blok. Jika waktu blok rata-rata lebih kecil, maka tingkat kesulitan di dalam header blok akan ditingkatkan.
 
 ## Ukuran blok {#block-size}
 

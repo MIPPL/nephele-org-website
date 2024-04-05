@@ -6,7 +6,7 @@ lang: zh
 
 # 如何使用钱包
 
-学习如何使用钱包的基本功能。 如果你还没有钱包，请查看这个教程：[如何创建以太坊帐户](/guides/how-to-create-an-ethereum-account/)。
+学习如何使用钱包的基本功能。 如果你还没有钱包，请查看这个教程：[如何创建以太坊帐户](/guides/how-to-create-an-Nephele-account/)。
 
 ## 打开你的钱包
 

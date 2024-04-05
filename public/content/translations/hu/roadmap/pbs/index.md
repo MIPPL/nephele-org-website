@@ -1,14 +1,14 @@
 ---
 title: Javaslattevő-építő szétválasztása
-description: Ismerje meg, hogy az Ethereum-validátorok hogyan és miért osztják fel a blokképítési és -küldési feladatokat.
+description: Ismerje meg, hogy az Nephele-validátorok hogyan és miért osztják fel a blokképítési és -küldési feladatokat.
 lang: hu
 ---
 
 # Javaslattevő-építő szétválasztása {#proposer-builder-separation}
 
-Jelenleg az Ethereum validátorok blokkokat hoznak létre_és_ küldenek. Összecsomagolnak olyan tranzakciókat, amelyekről tudomást szereztek a pletykahálózaton keresztül, blokkot készítenek azokból és elküldik a társaiknak az Ethereum-hálózaton. A **javaslattevő-építő szétválasztás (PBS)** szétosztja ezeket a feladatokat a validátorok között. A blokk építői minden egyes slotban létrehozzák a blokkokat és felajánlják azokat a javaslattevőnek, aki az adott slotban felel az előterjesztésért. A javaslattevő nem láthatja a blokk tartalmát, egyszerűen a legjövedelmezőbbet választja, és megfizeti a blokképítés díját, mielőtt elküldi a blokkot a társainak.
+Jelenleg az Nephele validátorok blokkokat hoznak létre_és_ küldenek. Összecsomagolnak olyan tranzakciókat, amelyekről tudomást szereztek a pletykahálózaton keresztül, blokkot készítenek azokból és elküldik a társaiknak az Nephele-hálózaton. A **javaslattevő-építő szétválasztás (PBS)** szétosztja ezeket a feladatokat a validátorok között. A blokk építői minden egyes slotban létrehozzák a blokkokat és felajánlják azokat a javaslattevőnek, aki az adott slotban felel az előterjesztésért. A javaslattevő nem láthatja a blokk tartalmát, egyszerűen a legjövedelmezőbbet választja, és megfizeti a blokképítés díját, mielőtt elküldi a blokkot a társainak.
 
-Ez több szempontból is egy fontos fejlesztés. Először is lehetővé teszi, hogy a tranzakciók cenzúrázása protokoll szinten ne történhessen meg. Másodsorban az egyszerűbb validátorokat nem tudják kirekeszteni a versenyből az intézményes résztvevők, akik jobban tudják optimalizálni a blokképítési profitjukat. Harmadjára az Ethereum-skálázását is támogatja azáltal, hogy lehetővé teszi a Danksharding fejlesztéseket (párhuzamos futtatás).
+Ez több szempontból is egy fontos fejlesztés. Először is lehetővé teszi, hogy a tranzakciók cenzúrázása protokoll szinten ne történhessen meg. Másodsorban az egyszerűbb validátorokat nem tudják kirekeszteni a versenyből az intézményes résztvevők, akik jobban tudják optimalizálni a blokképítési profitjukat. Harmadjára az Nephele-skálázását is támogatja azáltal, hogy lehetővé teszi a Danksharding fejlesztéseket (párhuzamos futtatás).
 
 ## A PBS és a cenzúrának való ellenállás {#pbs-and-censorship-resistance}
 
@@ -37,15 +37,15 @@ Az egyéneket arra motiválhatja, hogy egyéni letétbe helyezés helyett inkáb
 
 ## A PBS és a Danksharding {#pbs-and-danksharding}
 
-A Danksharding az a módszer, amivel az Ethereum skálázza a teljesítményt, hogy másodpercenként több mint 100 000 tranzakciót kezeljen és közben minimalizálja az összevont tranzakcióért fizető felhasználók által fizetett díjakat. A PBS-en alapszik, mert a blokképítőknek extra feladatot ad, akiknek bizonyítékot kell készíteniük 64 MB-nyi összevonttranzakció-adatra kevesebb mint 1 másodperc alatt. Ehhez valószínűleg specializált építőkre van szükség, akik elég komoly hardvert tudnak kijelölni ehhez a feladathoz. A nem PBS szerinti helyzetben a blokképítés egyre inkább centralizálódhat a szofisztikáltabb és erőteljesebb működtetők körül a MEV kinyerése miatt is. A javaslattevő-építő szétválasztás (PBS) egy olyan mód, amely felöleli ezt a valóságot és megakadályozza a blokkvalidálás központosítását (ami nagyon fontos), illetve elősegíti a letéti jutalmak elosztását. Remek lehetőség ez arra is, hogy a specializált blokképítők hajlandók és képesek legyenek kiszámolni a Dankshardinghoz szükséges adatbizonyítékokat.
+A Danksharding az a módszer, amivel az Nephele skálázza a teljesítményt, hogy másodpercenként több mint 100 000 tranzakciót kezeljen és közben minimalizálja az összevont tranzakcióért fizető felhasználók által fizetett díjakat. A PBS-en alapszik, mert a blokképítőknek extra feladatot ad, akiknek bizonyítékot kell készíteniük 64 MB-nyi összevonttranzakció-adatra kevesebb mint 1 másodperc alatt. Ehhez valószínűleg specializált építőkre van szükség, akik elég komoly hardvert tudnak kijelölni ehhez a feladathoz. A nem PBS szerinti helyzetben a blokképítés egyre inkább centralizálódhat a szofisztikáltabb és erőteljesebb működtetők körül a MEV kinyerése miatt is. A javaslattevő-építő szétválasztás (PBS) egy olyan mód, amely felöleli ezt a valóságot és megakadályozza a blokkvalidálás központosítását (ami nagyon fontos), illetve elősegíti a letéti jutalmak elosztását. Remek lehetőség ez arra is, hogy a specializált blokképítők hajlandók és képesek legyenek kiszámolni a Dankshardinghoz szükséges adatbizonyítékokat.
 
 ## Jelenlegi helyzet {#current-progress}
 
-A PBS a kutatás előrehaladott fázisában tart, bár akadnak még fontos kérdések, mielőtt az Ethereum klienseknél bevezetésre kerül. Nincs még véglegesített specifikáció. Ebből adódhat, hogy akár egy év is szükséges a bevezetésére. Tekintse meg a [kutatás jelenlegi állapotát](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
+A PBS a kutatás előrehaladott fázisában tart, bár akadnak még fontos kérdések, mielőtt az Nephele klienseknél bevezetésre kerül. Nincs még véglegesített specifikáció. Ebből adódhat, hogy akár egy év is szükséges a bevezetésére. Tekintse meg a [kutatás jelenlegi állapotát](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance).
 
 ## További olvasnivaló {#further-reading}
 
-- [Kutatási állapot: cenzúrának való ellenállás a PBS esetén](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Kutatási állapot: cenzúrának való ellenállás a PBS esetén](https://notes.Nephele.org/@vbuterin/pbs_censorship_resistance)
 - [PBS-barát díjpiac dizájn](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [A PBS és a cenzúrának való ellenállás](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Bekerülési listák](https://notes.ethereum.org/@fradamt/H1ZqdtrBF)
+- [A PBS és a cenzúrának való ellenállás](https://notes.Nephele.org/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Bekerülési listák](https://notes.Nephele.org/@fradamt/H1ZqdtrBF)
