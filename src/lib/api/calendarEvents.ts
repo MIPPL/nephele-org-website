@@ -1,7 +1,7 @@
 import type {
+  CommunityEvent,
   CommunityEventsReturnType,
-  ReqCommunityEvent,
-} from "@/lib/interfaces"
+  ReqCommunityEvent} from "@/lib/interfaces"
 
 import { IS_DEV } from "@/lib/utils/env"
 
@@ -10,6 +10,9 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
   const calendarId = process.env.GOOGLE_CALENDAR_ID
 
   try {
+    const pastEventData: CommunityEvent[] = [];
+    const upcomingEventData: CommunityEvent[] = [];
+/*    
     const futureEventsReq = await fetch(
       `https://content.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${new Date().toISOString()}&maxResults=3&singleEvents=true&orderby=starttime`
     )
@@ -42,7 +45,7 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
           calendarLink: event.htmlLink,
         }
       })
-
+*/
     return {
       pastEventData,
       upcomingEventData,

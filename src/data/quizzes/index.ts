@@ -6,8 +6,8 @@ const quizzes = {
     title: "what-is-Nephele",
     questions: ["a001", "a002", "a003", "a004", "a005"],
   },
-  "what-is-Nephele": {
-    title: "what-is-Nephele",
+  "what-is-Neph": {
+    title: "what-is-Neph",
     questions: ["b001", "b002", "b003", "b004"],
   },
   web3: {

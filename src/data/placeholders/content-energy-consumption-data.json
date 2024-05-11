@@ -74,5 +74,9 @@
   "/content/translations/zh-tw/energy-consumption/energy_consumption_pre_post_merge.png": {
     "hash": "f38313a4",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnUlEQVR4nGPw8PBgr6+v5/j//z8zCG+aOZNr1apVbBMnTmTfv38/CzI+c+YMKwjD+CD1DGlpxqyhoaFsQENYGICgICfBNj8/XqCwsJATKMYGVMQENBBkOBNIHkgzgvhwMWNjY9a0tDRWmILqgiS3+vp8gdzcXJDLQLYwgjDIpf7+FrpAWhRqEBNQnonBx8dHBNmG/s66yGnt7YLx8fEcxcXF3CCnWlmp82bmVrtN7kk/0dZU2M7AEMoGNZiJwdvbWxrEAOErV66wTepprFg/v18gKyuLB+gKUaDhnH5+flL5+TmR/X2NLxsbyleL6+lxQw1gZgD5H4RBtk+ZUs9TWZY/taqqUBrk/5kzZ7LCwsDJyUk8PT0l0NHR1Q2oVAukB+wCe3t7FpB/QQZkZMRbpCZF3UxLjo0C8Xt7ezmh3mOGBirY34KCgrIWFhacIFeA1DGCbAMx0lOiUgsKUl3KClNSOzrK+eFRBQRAS/gqKioEodHNCIt2BigAmcQUExMjBvQvb1RUlDwoEGGSwIDmioiIEAc6WxoUG1D1YNsBkhrjVwm4Nn4AAAAASUVORK5CYII="
+  },
+  "/content/translations/id/energy-consumption/energy_consumption_pre_post_merge.png": {
+    "hash": "35898f0e",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVR4nE2RzUoCURTHr1+jlomGREm9wG3pRogQpBkvaMIs7mIqmD5MJ2nSEampoAMJSZDZwBC4aj+08gVctmnprjfoJW6coYkWB+45939+95z/JYyxOAAkhBARjOl0suB5nuQ4Tnw2m0X/x2QyiWEEOepJoVCIcc4lAIgSQkj3/HC709EzCAUASQgR9jwP4WG8F0KEMP+rMcbizWYzFgD63WPFts+yuq4nsB4IKeXSbmVrs1Yq5RCCegAIE1VVV/6/MH68016HQx8AAAtYLxbXk2fmreI+tT6Gg94DIRwnC/k9lUplLQDM53PJfR7Yb2/jTLvdTvV6vZwQn7FqtZq1LGPvZTz4Htxfv1NKU7/rRPwJcBwkuq6burm6eIXLy3XcHw1DMBomy/KKYRj1crksE0Jo4A/hnEqOY8aRaBp6sXGkfTWOD/YxH41GyeB3LMtK4s74UD6f3+Cc410IdWiIhIdWY++0e3600++ctADM9G+z741pmmnbtrNBUwDGsw+p1+tLuq6vMsbSnPNlTdNylFJJluVFRVGWVVVdq9VqOfQDNdiD8QOhdeZNZqTregAAAABJRU5ErkJggg=="
   }
 }

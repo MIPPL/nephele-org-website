@@ -67,7 +67,7 @@ export const getStaticProps = (async ({ locale }) => {
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[2])
 
-  const frameworksListData = await cachedFetchLocalEnvironmentFrameworkData()
+  const frameworksListData: Framework[]  = []; //await cachedFetchLocalEnvironmentFrameworkData()
 
   const lastDeployDate = getLastDeployDate()
 

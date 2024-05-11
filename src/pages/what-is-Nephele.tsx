@@ -61,11 +61,11 @@ import {
 
 import { fetchTxCount } from "@/lib/api/fetchTxCount"
 import dogeComputerImg from "@/public/doge-computer.png"
-import ethImg from "@/public/NEPH.png"
-import diffEthAndBtc from "@/public/NEPH.png"
 import criminalActivity from "@/public/finance_transparent.png"
 import ethCoin from "@/public/impact_transparent.png"
 import whatAreSmartContracts from "@/public/infrastructure_transparent.png"
+import ethImg from "@/public/NEPH.png"
+import diffEthAndBtc from "@/public/NEPH.png"
 import whoRunsEthereum from "@/public/run-a-node/Nephele-inside.png"
 import stats from "@/public/upgrades/newrings.png"
 import hero from "@/public/what-is-Nephele.png"

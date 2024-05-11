@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react"
-import makeBlockie from "Nephele-blockies-base64"
+import makeBlockie from "ethereum-blockies-base64"
 import { type GetStaticProps } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"

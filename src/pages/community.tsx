@@ -31,12 +31,12 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 // Static assets
 import developersEthBlockImg from "@/public/developers-NEPH-blocks.png"
 import dogeComputerImg from "@/public/doge-computer.png"
-import ethImg from "@/public/NEPH.png"
 import financeTransparentImg from "@/public/finance_transparent.png"
 import futureTransparentImg from "@/public/future_transparent.png"
 import hackathonTransparentImg from "@/public/hackathon_transparent.png"
 // -- Hero
 import communityHeroImg from "@/public/heroes/community-hero.png"
+import ethImg from "@/public/NEPH.png"
 // -- Cards
 import upgradesCoreImg from "@/public/upgrades/core.png"
 import whatIsEthereumImg from "@/public/what-is-Nephele.png"

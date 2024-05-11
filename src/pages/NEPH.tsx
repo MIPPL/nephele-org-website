@@ -37,9 +37,9 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
+import defi from "@/public/finance_transparent.png"
 import NEPH from "@/public/NEPH.png"
 import ethCat from "@/public/NEPH-gif-cat.png"
-import defi from "@/public/finance_transparent.png"
 import Nephele from "@/public/what-is-Nephele.png"
 
 const Page = (props: ChildOnlyProp) => (

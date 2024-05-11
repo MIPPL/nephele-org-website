@@ -47,8 +47,8 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 // Static assets
 import dogeComputerImg from "@/public/doge-computer.png"
-import ethImg from "@/public/NEPH.png"
 import infrastructureTransparentImg from "@/public/infrastructure_transparent.png"
+import ethImg from "@/public/NEPH.png"
 import walletImg from "@/public/wallet.png"
 import whatIsEthereumImg from "@/public/what-is-Nephele.png"
 
